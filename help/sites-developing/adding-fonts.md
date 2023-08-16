@@ -1,8 +1,8 @@
 ---
 title: Adicionar fontes para renderização gráfica
 seo-title: Adding Fonts for Graphic-Rendering
-description: O AEM permite gerar gráficos que incorporam texto dinamicamente retirado do seu conteúdo
-seo-description: AEM allows you to generate graphics incorporating text dynamically taken from your content
+description: O AEM permite gerar gráficos incorporando texto dinamicamente retirado do seu conteúdo
+seo-description: AEM lets you generate graphics incorporating text dynamically taken from your content
 uuid: 67d9b10f-e986-4d29-bde2-10e08075fe17
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 6af48ef5-75e6-4b66-bc0d-ecf254b1c4ef
 exl-id: 725c81d0-0258-4118-8b01-29fd7bcaf9b3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 1%
+source-wordcount: '181'
+ht-degree: 0%
 
 ---
 

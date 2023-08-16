@@ -10,9 +10,9 @@ topic-tags: interactive-communications, introduction
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
 feature: Interactive Communication
 exl-id: b20bb719-5686-466e-8dde-279b8471bfe3
-source-git-commit: 471d7f48dc4653000b4852dbbeb886b05e28e644
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '980'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ Para criar uma anatomia para a Comunicação interativa com os seguintes modos d
 * Dados condicionais
 * Imagens
 
-[ ](/help/forms/using/planning-interactive-communications.md)
+[](/help/forms/using/planning-interactive-communications.md)
 
 ## Etapa 2: Criar modelo de dados de formulário {#step-create-form-data-model}
 
@@ -89,7 +89,7 @@ Um modelo de dados de formulário permite conectar uma Comunicação interativa 
 * Editar dados de amostra
 * Testar o modelo de dados do formulário e os serviços configurados com dados de teste
 
-[ ](/help/forms/using/create-form-data-model0.md)
+[](/help/forms/using/create-form-data-model0.md)
 
 ## Etapa 3: Criar fragmentos de documento {#step-create-document-fragments}
 
@@ -103,7 +103,7 @@ Os fragmentos de documento são componentes reutilizáveis de uma correspondênc
 * Criar variáveis
 * Criar e aplicar regras
 
-[ ](/help/forms/using/create-document-fragments.md)
+[](/help/forms/using/create-document-fragments.md)
 
 ## Etapa 4: criar modelos {#step-create-templates}
 
@@ -121,7 +121,7 @@ Os templates para o canal da Web são criados no AEM. Os autores e administrador
 * Fazer upload dos modelos XDP para o servidor do AEM Forms
 * Criar e habilitar modelos para o canal da Web
 
-[ ](/help/forms/using/create-templates-print-web.md)
+[](/help/forms/using/create-templates-print-web.md)
 
 ## Etapa 5: Criar uma comunicação interativa {#step-create-an-interactive-communication}
 
@@ -129,18 +129,18 @@ Os templates para o canal da Web são criados no AEM. Os autores e administrador
 
 Depois de criar todos os blocos de construção, como modelo de dados de formulário, fragmentos de documento e modelos para a versão da Web, você pode começar a criar uma comunicação interativa.
 
-As Comunicações interativas podem ser fornecidas por meio de dois canais: Impressão e Web. Você também pode criar uma Comunicação interativa com o canal Imprimir como o principal. A opção Imprimir como principal para canal da Web garante que o conteúdo, a herança e a associação de dados do canal da Web sejam derivados do canal de impressão.
+As Comunicações interativas podem ser fornecidas por meio de dois canais: Impressão e Web. Você também pode criar uma Comunicação interativa com o canal de impressão como mestre. A opção Print as master para o canal da Web garante que o conteúdo, a herança e a associação de dados do canal da Web sejam derivados do canal de impressão.
 
 **Metas:**
 
 * Criar comunicação interativa para o canal de impressão
 * Criar comunicação interativa para o canal da Web
-* Crie comunicações interativas da Web e com impressão conforme Principal
+* Criar comunicações interativas da Web e de impressão com Imprimir como mestre
 * Criar uma tabela dinâmica na versão da Web da Comunicação interativa
 * Criar um gráfico na versão da Web da Comunicação Interativa
 * Criar hiperlinks na versão da Web da comunicação interativa
 
-[ ](/help/forms/using/create-interactive-communication0.md)
+[](/help/forms/using/create-interactive-communication0.md)
 
 ## Etapa 6: publicar a comunicação interativa {#step-publish-your-interactive-communication}
 

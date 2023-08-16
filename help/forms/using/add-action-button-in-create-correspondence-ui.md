@@ -1,17 +1,13 @@
 ---
 title: Adicionar ação/botão personalizado na interface para Criar correspondência
-seo-title: Add custom action/button in Create Correspondence UI
 description: Saiba como adicionar ação/botão personalizado na interface para Criar correspondência
-seo-description: Learn how to add custom action/button in Create Correspondence UI
-uuid: 1b2b00bb-93ef-4bfe-9fc5-25c45e4cb4b1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '1880'
 ht-degree: 1%
@@ -170,7 +166,7 @@ Depois de fazer cada alteração no lado do servidor, reinicie o pacote de bloco
 >
 >Talvez seja necessário limpar o cache do navegador.
 
-1. Ir para `https://[host]:'port'/system/console/bundles`. Se necessário, efetue login como Administrador.
+1. Acesse `https://[host]:'port'/system/console/bundles`. Se necessário, efetue login como Administrador.
 
 1. Localize o pacote de blocos de construção do Adobe Asset Composer. Reinicie o pacote: clique em Stop e em Start.
 
@@ -192,7 +188,7 @@ Manipular a ação/botão ao clicar na ação/botão inclui lógica para:
 * Ativar/desativar a ação recém-adicionada: feito substituindo a função actionEnabled().
 * Manuseio real da ação quando o usuário clica no botão: feito substituindo a implementação da função handleAction().
 
-1. Ir para `https://'[server]:[port]'/[ContextPath]/crx/de`. Se necessário, efetue login como Administrador.
+1. Acesse `https://'[server]:[port]'/[ContextPath]/crx/de`. Se necessário, efetue login como Administrador.
 
 1. Na pasta de aplicativos, crie uma pasta chamada `js` na ramificação /apps do CRX com estrutura semelhante à seguinte pasta:
 

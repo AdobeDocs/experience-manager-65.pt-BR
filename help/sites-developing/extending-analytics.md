@@ -2,7 +2,7 @@
 title: Estender o rastreamento de eventos
 seo-title: Extending Event Tracking
 description: O AEM Analytics permite rastrear a interação do usuário no seu site
-seo-description: AEM Analytics allows you to track user interaction on your website
+seo-description: AEM Analytics lets you track user interaction on your website
 uuid: 722798ac-4043-4918-a6df-9eda2c85020b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: e0372f4a-fe7b-4526-8391-5bb345b51d70
 exl-id: a71d20e6-0321-4afb-95fe-6de8b7b37245
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Para rastrear eventos que ocorrem depois que uma página é carregada (como inte
 
 * `CQ_Analytics.record({event: 'eventName', values: { valueName: 'VALUE' }, collect: false, options: { obj: this, defaultLinkType: 'X' }, componentPath: '<%=resource.getResourceType()%>'})`
 
-Onde
+Em que
 
 * `events` é uma string ou uma matriz de string (para vários eventos).
 

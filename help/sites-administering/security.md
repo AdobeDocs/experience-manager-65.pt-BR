@@ -10,9 +10,9 @@ discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '5402'
+source-wordcount: '5401'
 ht-degree: 1%
 
 ---
@@ -363,7 +363,7 @@ Essa funcionalidade permite que contas de representantes concluam tarefas como s
 >
 >Páginas não podem ser desbloqueadas representando o usuário que as bloqueou.
 
-### Práticas recomendadas     {#best-practices}
+### Práticas recomendadas {#best-practices}
 
 A tabela a seguir descreve as práticas recomendadas ao trabalhar com permissões e privilégios:
 

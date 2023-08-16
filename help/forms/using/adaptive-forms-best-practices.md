@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 000ab7bc9a686b62fcfc122f9cf09129101ec9a8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4738'
+source-wordcount: '4734'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Depois de configurar o projeto AEM, defina a estratégia de criação e personal
 
 Para obter mais informações, consulte [Criar um formulário adaptável](/help/forms/using/creating-adaptive-form.md).
 
-* Há algumas seções comuns em formulários adaptáveis. Você pode identificá-los e definir uma estratégia para promover a reutilização de conteúdo. Formulários adaptáveis permitem criar fragmentos autônomos e reutilizá-los em formulários. Também é possível salvar um painel em um formulário adaptável como um fragmento. Qualquer alteração em um fragmento é refletida em todos os formulários associados. Ele ajuda a reduzir o tempo de criação e garante a consistência entre formulários. Além disso, o uso de fragmentos torna os formulários adaptáveis mais leves, resultando em uma experiência de criação aprimorada, especialmente de formulários grandes. Para obter mais informações, consulte [Fragmentos de formulário adaptável](/help/forms/using/adaptive-form-fragments.md).
+* Há algumas seções comuns em formulários adaptáveis. Você pode identificá-los e definir uma estratégia para promover a reutilização de conteúdo. Os formulários adaptáveis permitem criar fragmentos autônomos e reutilizá-los em formulários. Também é possível salvar um painel em um formulário adaptável como um fragmento. Qualquer alteração em um fragmento é refletida em todos os formulários associados. Ele ajuda a reduzir o tempo de criação e garante a consistência entre formulários. Além disso, o uso de fragmentos torna os formulários adaptáveis mais leves, resultando em uma experiência de criação aprimorada, especialmente de formulários grandes. Para obter mais informações, consulte [Fragmentos de formulário adaptável](/help/forms/using/adaptive-form-fragments.md).
 
 ### Personalização de formulários e componentes adaptáveis {#customize-components}
 

@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
 exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
-source-git-commit: 84b16dd1a60f731b568dd87ef89699875cb86596
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3149'
+source-wordcount: '3148'
 ht-degree: 1%
 
 ---
@@ -125,7 +125,6 @@ A configuração adicional é necessária somente se você estiver usando organi
 >* A configuração existente continua a funcionar se você estiver usando a mesma organização do Adobe IMS com Experience Manager e CCE.
 
 
-
 **Pré-requisitos**
 
 1. Uma instância Experience Manager ativa e em execução com Autenticação do Portador configurada para AAL.
@@ -179,9 +178,9 @@ As seguintes regras se aplicam aos mapeamentos de grupo no Experience Manager:
 * A associação ao grupo de usuários do Adobe Asset Link é avaliada quando o usuário se autentica e o período em **[!UICONTROL Tempo de expiração do usuário]** propriedade no **[!UICONTROL Manipulador de sincronização padrão do Apache Jackrabbit Oak]** a configuração do expirou. Atualmente, os usuários podem ser adicionados e removidos de grupos no Experience Manager para sincronizar com o que é encontrado no Adobe IMS.
 * Evite conflitos de nome de grupo. Verifique se os nomes usados para grupos criados no Adobe IMS (para gerenciar usuários) são diferentes de todos os nomes de grupos do sistema Experience Manager.
 
-   Por exemplo, verifique se são diferentes da variável `dam-users` e os grupos criados pelo administrador de Experience Manager.
+  Por exemplo, verifique se são diferentes da variável `dam-users` e os grupos criados pelo administrador de Experience Manager.
 
-   Um grupo do Adobe IMS cujo nome conflita com o nome de um grupo do sistema Experience Manager ou de um grupo criado manualmente não é usado para controlar permissões de usuário.
+  Um grupo do Adobe IMS cujo nome conflita com o nome de um grupo do sistema Experience Manager ou de um grupo criado manualmente não é usado para controlar permissões de usuário.
 * Se um usuário do Adobe IMS se conectar a uma instância de Experience Manager, em que o nome do usuário entra em conflito com um usuário de Experience Manager criado anteriormente, o usuário do Adobe IMS receberá outro nome com números adicionados para torná-lo exclusivo.
 
 **Configurar controle de acesso pela primeira vez**
@@ -261,7 +260,7 @@ Experience Manager contém índices que são usados para consulta. Crie o índic
 
 ## Configurar pesquisa visual ou por semelhança {#configure-visual-similarity-search}
 
-O recurso de pesquisa visual permite procurar ativos visualmente semelhantes no repositório do AEM Assets, usando o painel Adobe Asset Link. A funcionalidade está disponível na versão 6.5.0 ou posterior e somente os ativos indexados são pesquisados. Para obter mais informações, consulte [como configurar a pesquisa visual](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html#configvisualsearch).
+O recurso de pesquisa visual permite pesquisar ativos visualmente semelhantes no repositório do AEM Assets, usando o painel Adobe Asset Link. A funcionalidade está disponível na versão 6.5.0 ou posterior e somente os ativos indexados são pesquisados. Para obter mais informações, consulte [como configurar a pesquisa visual](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html#configvisualsearch).
 
 ## Gerar para representações somente de posicionamento para o Adobe InDesign {#fpo-renditions}
 
@@ -291,4 +290,3 @@ Se você enfrentar problemas ao configurar ou usar o Adobe Asset Link, tente o s
 >* [Sobre o Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html)
 >* [Usar o Asset Link no aplicativo de desktop Creative Cloud e gerenciar ativos](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html)
 >* [Configurar o Adobe Experience Manager Assets as a Cloud Service](https://helpx.adobe.com/br/enterprise/using/configure-aem-assets-for-asset-link.html).
-

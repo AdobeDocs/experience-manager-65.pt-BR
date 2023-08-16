@@ -1,8 +1,8 @@
 ---
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 87%
+source-wordcount: '522'
+ht-degree: 78%
 
 ---
 # Contribuição na documentação do Adobe Experience Manager
@@ -40,7 +40,7 @@ Com os tópicos, você pode descrever facilmente sua ideia para aprimorar os doc
 
 ### Criação de um pull request {#create-a-pull-request}
 
-Se você vir um problema e souber exatamente como corrigi-lo, considere a criação de um pull request. Com pull requests é possível fazer edições na documentação, que depois são revisadas e incluídas por um membro da equipe do AEM Docs. Basta clicar no link **Editar esta página** clique em um link na parte superior do painel de navegação direito em qualquer página para fazer as alterações sugeridas e criar o pull request.
+Se você vir um problema e souber exatamente como corrigi-lo, considere a criação de um pull request. Com os pull requests, é possível fazer edições na documentação, que depois são revisadas e incluídas por um membro da equipe do AEM Docs. Basta clicar no link **Editar esta página** clique em um link na parte superior do painel de navegação direito em qualquer página para fazer as alterações sugeridas e criar o pull request.
 
 Todos os pull requests devem estar acompanhados de um [contrato de licença de colaborador ou CLA assinado](https://opensource.adobe.com/cla.html). Isso dá à Adobe a permissão de redistribuir suas contribuições como parte do projeto. É necessário enviar somente um CLA da Adobe por vez. Se já tiver enviado anteriormente, você pode prosseguir.
 

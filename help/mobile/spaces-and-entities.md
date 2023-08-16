@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: ef568577-c74e-4fc2-b66e-eedac2948310
 exl-id: 44591900-b01b-4a33-9910-839564477e7d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1191'
 ht-degree: 1%
 
 ---
@@ -103,7 +103,7 @@ Os espaços podem incluir pastas para ajudar a organizar ainda mais o conteúdo 
 >
 >A Cópia de idioma não está totalmente funcional para esta versão. Ele só configura a estrutura.
 
-A variável **Cópia de idioma** O recurso permite que os autores copiem sua Cópia de idioma principal e criem um Projeto e um Fluxo de trabalho para traduzir automaticamente o conteúdo. A Cópia de idioma cria a estrutura correta. Depois de adicionar uma pasta em um espaço, você pode adicionar uma Cópia de idioma ao espaço.
+A variável **Cópia de idioma** O recurso de permite que os autores copiem a Cópia de idioma principal e criem um Projeto e um Fluxo de trabalho para traduzir automaticamente o conteúdo. A Cópia de idioma cria a estrutura correta. Depois de adicionar uma pasta em um espaço, você pode adicionar uma Cópia de idioma ao espaço.
 
 >[!NOTE]
 >

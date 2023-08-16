@@ -10,7 +10,7 @@ discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 feature: Interactive Communication
 exl-id: b8e84c5d-2ec8-4575-9eed-6b37b04e5d66
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '2477'
 ht-degree: 0%
@@ -58,6 +58,7 @@ O fragmento do documento de texto na Comunicação interativa é compatível com
       * [Copiar e colar texto formatado de outros aplicativos](#paste)
 
       * [Realçar partes do texto](#highlight)
+
    * [Repetir](/help/forms/using/cm-inline-condition.md)
    * [Caracteres especiais](#special)
    * [Pesquisa e substituição de texto](#searching)
@@ -184,7 +185,7 @@ Ao usar o editor de regras em um texto, é possível criar regras para exibir ou
 
    Regra para exibir o texto selecionado se o local do destinatário for EUA de acordo com os dados de origem do FDM
 
-   * Ao criar ou editar uma regra, você também pode tocar em ![icon_resize](assets/icon_resize.png) (Redimensionar) para expandir a caixa de diálogo Criar regra/Editar regra. A caixa de diálogo de janela completa expandida permite arrastar e soltar propriedades e variáveis do modelo de dados de formulário para criar regras. Toque em Redimensionar novamente para voltar à caixa de diálogo Criar regra.
+   * Ao criar ou editar uma regra, você também pode tocar em ![icon_resize](assets/icon_resize.png) (Redimensionar) para expandir a caixa de diálogo Criar regra/Editar regra. A caixa de diálogo expandida em janela cheia permite arrastar e soltar propriedades e variáveis do modelo de dados de formulário para criar regras. Toque em Redimensionar novamente para voltar à caixa de diálogo Criar regra.
    * Você também pode criar várias condições em uma regra.
    * Você também pode criar regras de sobreposição, em que uma regra é aplicada a uma parte de um conteúdo que já tem uma regra aplicada.
 

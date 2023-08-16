@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 5afe864d-5794-4ffa-99e7-a3233f982aff
 docset: aem65
 exl-id: eeff89c1-41b3-403d-b4bf-c79b09b24d4a
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2534'
+source-wordcount: '2531'
 ht-degree: 5%
 
 ---
@@ -112,6 +112,7 @@ Define a altura e a largura da imagem.
 >Você deve inserir informações no **Texto Alternativo** no campo **Avançado** ou a imagem não pode ser salva e você verá a seguinte mensagem de erro:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 O exemplo a seguir mostra um componente de Imagem (Campanha) sendo exibido.
 
@@ -132,8 +133,7 @@ A legenda do link. Esse é o texto que os usuários veem.
 Adiciona mais informações sobre como usar o link.
 
 * **LinkType**
-Na lista suspensa, selecione entre um 
-**URL personalizado** e uma **Documento adaptável**. Este campo é obrigatório. Se você selecionar URL personalizado, poderá fornecer o URL do link. Se você selecionar Documento adaptável, poderá fornecer o caminho do documento.
+Na lista suspensa, selecione entre um **URL personalizado** e uma **Documento adaptável**. Este campo é obrigatório. Se você selecionar URL personalizado, poderá fornecer o URL do link. Se você selecionar Documento adaptável, poderá fornecer o caminho do documento.
 
 * **Parâmetro de URL adicional**
 Adicione quaisquer parâmetros de URL adicionais. Clique em Adicionar item para adicionar vários itens.
@@ -143,6 +143,7 @@ Adicione quaisquer parâmetros de URL adicionais. Clique em Adicionar item para 
 >Você deve inserir informações no **Tipo de link** no campo **Informações de URL** ou o componente não pode ser salvo e você verá a seguinte mensagem de erro:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 O exemplo a seguir mostra um componente Link (Campanha) sendo exibido.
 
@@ -192,6 +193,7 @@ Define a altura e a largura da imagem.
 >A variável **Texto Alternativo** no campo **Avançado** é necessária ou o componente não pode ser salvo e você verá a seguinte mensagem de erro:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 O exemplo a seguir mostra um componente de Texto e imagem (Campanha) sendo exibido.
 
@@ -247,7 +249,7 @@ A tabela a seguir descreve os componentes que estão disponíveis para exibir e 
   <tr>
    <td><p>Caixa de seleção (Campanha)</p> </td>
    <td><p>booleano</p> </td>
-   <td><p>Não entrar mais em contato (por qualquer canal)</p> </td>
+   <td><p>Não contato mais longo (por qualquer canal)</p> </td>
   </tr>
   <tr>
    <td><p>Campo de dados (Campanha)</p> <p>Campo de data/HTML 5 (Campanha)</p> </td>

@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b0a544e2-2ce4-48e2-a721-82f481d36004
 docset: aem65
 exl-id: a096eea0-b2fb-4d86-b729-ca47611135b2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1673'
+source-wordcount: '1672'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Consultas ad-hoc em Relatórios do processo {#ad-hoc-queries-in-process-reporting-1}
 
-Consultas ad-hoc no Process Reporting permitem criar consultas personalizadas que você pode usar para procurar detalhes de processos e tarefas das instâncias de processos AEM Forms definidas no ambiente AEM Forms.
+As consultas ad-hoc no Process Reporting permitem criar consultas personalizadas que você pode usar para procurar detalhes de processos e tarefas das instâncias de processos AEM Forms definidas no ambiente AEM Forms.
 
 Além disso, as consultas ad hoc podem ser definidas usando filtros de propriedade de processo e tarefa. Esses filtros podem ser salvos e usados para executar os relatórios posteriormente.
 
@@ -155,6 +155,7 @@ Use as opções no **Meus filtros** painel para **Adicionar** ![lc_pr_add_filter
    * **Atualizar**: atualiza o relatório com os dados mais recentes armazenados no armazenamento
 
    * **Exportar para CSV**: exporte os dados do relatório para um arquivo separado por vírgulas.
+
    >[!NOTE]
    >
    >Ao exportar um relatório, todo o resultado da pesquisa é exportado para um arquivo CSV e não apenas para a página atual
@@ -248,11 +249,6 @@ Você pode exibir os detalhes de um processo/tarefa específico do AEM Forms:
    * Proprietário da tarefa
    * Data e hora de criação da atribuição de tarefa
    * Data e hora de atualização da tarefa
-
-
-
-
-
 
 1. Clique em **Voltar para Pesquisa de Processo/Tarefa** para voltar ao resultado da pesquisa a partir do qual os detalhes do processo/tarefa foram detalhados.
 

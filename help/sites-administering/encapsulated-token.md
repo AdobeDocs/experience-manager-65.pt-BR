@@ -10,7 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: ed2cb35593780cd627c15f493e58d3b68c55519b
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 0%
@@ -50,6 +50,7 @@ Você pode ver como isso funciona em uma implantação distribuída geograficame
 >Observe que o token encapsulado trata da autenticação. Ela garante que o cookie possa ser validado sem precisar acessar o repositório. No entanto, ainda é necessário que o usuário exista em todas as instâncias e que as informações armazenadas nesse usuário possam ser acessadas por cada instância.
 >
 >Por exemplo, se um novo usuário for criado na instância de publicação número um, devido ao modo como o token encapsulado funciona, ele será autenticado com êxito na publicação número dois. Se o usuário não existir na segunda instância de publicação, a solicitação ainda não será bem-sucedida.
+>
 
 ## Configuração do token encapsulado {#configuring-the-encapsulated-token}
 
@@ -59,7 +60,6 @@ Você pode ver como isso funciona em uma implantação distribuída geograficame
 >* Sessões adesivas estão ativadas ou
 >
 >* Os usuários já são criados no AEM quando a sincronização começa. Isso significa que os tokens encapsulados não serão suportados em situações em que os manipuladores **criar** usuários durante o processo de sincronização.
-
 
 Há algumas coisas que você precisa considerar ao configurar o token encapsulado:
 
@@ -81,7 +81,7 @@ Para replicar a chave em várias instâncias, é necessário:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
 
-1. Copie os arquivos HMAC e principais.
+1. Copie os arquivos HMAC e mestre.
 1. Em seguida, vá para a instância de destino para a qual deseja duplicar a chave HMAC e navegue até a pasta de dados. Por exemplo:
 
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`

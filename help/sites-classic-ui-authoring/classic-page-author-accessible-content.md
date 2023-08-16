@@ -11,9 +11,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 378bc33d-ab6c-4651-9688-102c961561fc
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
-source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '9153'
+source-wordcount: '9152'
 ht-degree: 61%
 
 ---
@@ -30,7 +30,6 @@ ht-degree: 61%
 >* [Um guia rápido para a WCAG 2.1](/help/managing/qg-wcag.md)
 >* [Criação de conteúdo acessível (Conformidade com o WCAG 2.1)](/help/sites-authoring/creating-accessible-content.md)
 
-
 A WCAG 2.0 consiste em um conjunto de diretrizes de tecnologia independentes e critérios de sucesso para ajudar a tornar o conteúdo da Web acessível e utilizável para pessoas com necessidades especiais.
 
 >[!NOTE]
@@ -40,7 +39,6 @@ A WCAG 2.0 consiste em um conjunto de diretrizes de tecnologia independentes e c
 >* [Guia rápido para a WCAG 2.0](/help/managing/qg-wcag.md)
 >* [Configurar o Editor de Rich Text para a produção de conteúdo acessível](/help/sites-administering/rte-accessible-content.md)
 >
-
 
 Essas diretrizes são classificadas de acordo com os três níveis de conformidade: Nível A (o mais baixo), Nível AA e Nível AAA (o mais alto). Em resumo, os níveis são definidos da seguinte maneira:
 
@@ -63,7 +61,6 @@ A seção a seguir apresenta as [Diretrizes da WCAG 2.0](https://www.w3.org/TR/W
 >* os nomes curtos para as [Diretrizes da WCAG 2.0](https://www.w3.org/TR/WCAG20/#guidelines).
 >* a numeração usada nas [Diretrizes da WCAG 2.0](https://www.w3.org/TR/WCAG20/#guidelines) para auxiliar na referência cruzada com o site da WCAG.
 >
-
 
 ## Princípio 1: perceptível    {#principle-perceivable}
 
@@ -226,7 +223,7 @@ Fornecer essas informações em um formato diferente, como texto (ou áudio para
 
    * Forneça um link imediatamente antes ou depois do conteúdo para obter uma transcrição do texto do conteúdo de áudio.
 
-   A transcrição deve ser uma página de HTML com um equivalente em texto de todo o conteúdo falado e não-falado importante. Ele também deve indicar quem está falando, uma descrição do cenário, expressões vocais e uma descrição de qualquer outro áudio significativo.
+  A transcrição deve ser uma página de HTML com um equivalente em texto de todo o conteúdo falado e não-falado importante. Ele também deve indicar quem está falando, uma descrição do cenário, expressões vocais e uma descrição de qualquer outro áudio significativo.
 
 * Se o conteúdo for uma animação ou vídeo pré-gravado sem áudio:
 
@@ -305,8 +302,8 @@ Há duas abordagens que podem ser adotadas para atender a esse critério de suce
 
       * Os usuários podem alternar entre a faixa de áudio existente (que *não* contém uma descrição de áudio) e a nova faixa de áudio (que *faz* contém uma descrição de áudio).
       * Esse método evita a interrupção para usuários que não precisam da descrição adicional.
-   * Crie uma segunda versão do conteúdo de vídeo para permitir descrições de áudio mais extensas. Isso reduz as dificuldades associadas ao fornecimento de descrições de áudio detalhadas dentro das lacunas entre as caixas de diálogo existentes, pausando temporariamente o áudio e o vídeo em pontos apropriados. Como resultado, uma descrição de áudio muito mais longa pode ser fornecida, antes de retornar à ação. Como no exemplo anterior, isso é melhor fornecido como uma faixa de áudio extra opcional para evitar a interrupção para usuários que não precisam da descrição adicional.
 
+   * Crie uma segunda versão do conteúdo de vídeo para permitir descrições de áudio mais extensas. Isso reduz as dificuldades associadas ao fornecimento de descrições de áudio detalhadas dentro das lacunas entre as caixas de diálogo existentes, pausando temporariamente o áudio e o vídeo em pontos apropriados. Como resultado, uma descrição de áudio muito mais longa pode ser fornecida, antes de retornar à ação. Como no exemplo anterior, isso é melhor fornecido como uma faixa de áudio extra opcional para evitar a interrupção para usuários que não precisam da descrição adicional.
 
 1. Forneça uma transcrição de texto que seja um equivalente de texto adequado dos elementos visuais e de áudio do vídeo ou da animação. Ele deve incluir, quando apropriado, uma indicação de quem está falando, uma descrição do cenário, expressões vocais. Dependendo do tamanho, você pode colocar a transcrição na mesma página do vídeo ou animação ou em uma página separada; caso escolha a última opção, forneça um link para a transcrição ao lado do vídeo ou animação.
 
@@ -414,22 +411,23 @@ Use o  elemento ou para indicar ênfase. Não use os cabeçalhos para destacar o
 >
 >* &lt;b> para &lt;strong>
 * &lt;i> para &lt;em>
-  >
+>
 Eles são efetivamente os mesmos, mas  e  são preferíveis, pois são html semanticamente corretos. Sua equipe de desenvolvimento pode configurar o RTE para usar  e  (em vez de  e ), ao desenvolver a instância do projeto.
 
 * **Use listas**: você pode usar o HTML para especificar três diferentes tipos de listas:
 
    * A variável `<ul>` elemento é usado para *desordenado* listas com marcadores. Os itens da lista individual são identificados usando o elemento `<li>`. 
 
-   no RTE, use a variável **Lista com marcadores** ícone.
+  no RTE, use a variável **Lista com marcadores** ícone.
 
    * O elemento `<ol>` é usado para as listas *numeradas*. Os itens da lista individual são identificados usando o elemento `<li>`. 
 
-   No RTE, use o ícone **Lista numerada**.
+  No RTE, use o ícone **Lista numerada**.
 
-Se desejar alterar o conteúdo existente em um tipo de lista específica, destaque o texto e selecione o tipo de lista apropriado. Como no exemplo anterior, que mostra como o texto de parágrafo é inserido, os elementos da lista apropriados são adicionados automaticamente ao HTML, mas você pode exibi-los na exibição de edição de origem.
+Se desejar alterar o conteúdo existente em um tipo de lista específica, destaque o texto e selecione o tipo de lista apropriado. Como no exemplo anterior, que mostra como o texto de parágrafo é inserido, os elementos da lista apropriados são adicionados automaticamente ao HTML, mas você pode visualizá-los na exibição de edição de origem.
 
 >[!NOTE]
+>
 A variável `<dl>` elemento não é suportado pelo RTE.
 
 * **Usar tabelas**:
@@ -442,6 +440,7 @@ As tabelas de dados devem ser identificadas usando os elementos da tabela de HTM
     * a `&lt;td>Elemento ` para cada célula de dados
 
 >[!NOTE]
+>
 As tabelas devem ser realizadas com o **Tabela** componente. Embora as tabelas possam ser criadas no componente de Texto, isso não é recomendado.
 
 Além disso, as tabelas acessíveis usam os seguintes elementos e atributos:
@@ -451,6 +450,7 @@ Além disso, as tabelas acessíveis usam os seguintes elementos e atributos:
     * O atributo &quot;scope&quot; de &quot;&lt;th>O elemento &quot; é usado para indicar se uma célula representa um cabeçalho de uma linha ou de uma coluna específica. Uma abordagem semelhante é a de usar o cabeçalho e os atributos de id em tabelas complexas, onde as células de dados podem ser associadas a um ou mais cabeçalhos.
 
 >[!NOTE]
+>
 Por padrão, esses elementos e atributos não estão diretamente disponíveis, embora o administrador do sistema possa adicionar o suporte para esses valores na caixa de diálogo **Propriedades da tabela** (consulte [Adicionar suporte para outros elementos e atributos de HTML](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 Ao adicionar um **Tabela**, você pode configurar **Propriedades da tabela** usando o diálogo.
@@ -469,9 +469,11 @@ Em seguida, você pode usar o **Propriedades da célula** para escolher se a cé
 Às vezes, quando há tabelas complexas com dois ou mais níveis de cabeçalhos, as Propriedades básicas da tabela podem não ser suficientes para fornecer todas as informações estruturais necessárias. Para esses tipos de tabelas complexas, relações diretas devem ser criadas entre os cabeçalhos e suas células relacionadas usando o **cabeçalho** e **id** atributos. Por exemplo, na tabela abaixo os cabeçalhos e IDs são combinados para fazer uma associação programática para usuários de tecnologia assistiva.
 
 >[!NOTE]
+>
 O atributo de ID não está disponível em uma instalação predefinida. Ele pode ser ativado configurando regras de HTML e o serializador no RTE.
 
 >[!NOTE]
+>
 As tabelas devem ser realizadas com o **Tabela** componente. Embora as tabelas possam ser criadas no componente de Texto, isso não é recomendado.
 
 ```xml
@@ -504,6 +506,7 @@ As tabelas devem ser realizadas com o **Tabela** componente. Embora as tabelas p
 Para fazer isso no AEM, é necessário adicionar a marcação diretamente usando o modo de edição de origem.
 
 >[!NOTE]
+>
 Essa funcionalidade não está imediatamente disponível em uma instalação padrão. Ela requer a configuração das regras de HTML RTE; e do serializador.
 
 #### Mais informações - Informações e Relações (1.3.1) {#more-information-info-and-relationships}
@@ -524,6 +527,7 @@ Ao apresentar as informações, os designers geralmente se concentram nos recurs
 Da mesma forma, as informações que exigem a distinção entre sons diferentes (por exemplo, o conteúdo falado com voz masculina ou feminina) apresentam barreiras de acessibilidade para os indivíduos com deficiência auditiva, se não estiverem refletidas em nenhuma alternativa em texto para o conteúdo de áudio.
 
 >[!NOTE]
+>
 Para os requisitos relacionados às alternativas de cor, consulte [Uso de cor](#use-of-color).
 
 #### Como cumprir - Características sensoriais (1.3.3)       {#how-to-meet-sensory-characteristics}
@@ -534,6 +538,7 @@ Certifique-se de que todas as informações que dependem das características vi
 * Não se baseie no estilo do texto (por exemplo, negrito ou itálico) como a única maneira de transmitir as informações.
 
 >[!NOTE]
+>
 O uso de termos descritivos é aceitável se eles forem entendidos como tendo significado em um contexto não visual. Por exemplo, usando *acima* e *abaixo* seriam geralmente aceitáveis, pois implicam, respectivamente, conteúdo antes e depois de um determinado conteúdo. Ainda faria sentido quando o conteúdo fosse falado em voz alta.
 
 #### Mais informações - Características sensoriais (1.3.3)       {#more-information-sensory-characteristics}
@@ -552,6 +557,7 @@ O uso de termos descritivos é aceitável se eles forem entendidos como tendo si
 * Utilização de cor: a cor não é usada como o único meio visual de transmitir informações, indicar uma ação, solicitar uma resposta ou distinguir um elemento visual.
 
 >[!NOTE]
+>
 Esse critério de sucesso aborda especificamente a percepção da cor. Outras formas de percepção são abordadas na [Adaptável (1.3)](#adaptable), incluindo o acesso programático a cores e outras codificações de apresentação visual.
 
 #### Propósito - Utilização de cor (1.4.1)       {#purpose-use-of-color}
@@ -615,6 +621,7 @@ Indivíduos com certas deficiências visuais podem não conseguir distinguir ent
 * A codificação de cores do texto (como textos que contém um link e textos sem link) é importante na distinção das informações.
 
 >[!NOTE]
+>
 Textos usados exclusivamente para fins decorativos estão excluídos desse critério de sucesso.
 
 #### Como cumprir - Contraste (Mínimo) (1.4.3)       {#how-to-meet-contrast-minimum}
@@ -625,7 +632,7 @@ Verifique se o texto está suficientemente contrastado com o plano de fundo. As 
 * Para textos com pelo menos 18 pontos (ou 14 pontos em negrito) de tamanho, a relação de contraste deve ser de pelo menos 3:1.
 * Se um plano de fundo for estampado, a área ao redor de qualquer texto deverá ser sombreada para que a proporção de 4.5:1 ou 3:1 seja mantida.
 
-Para verificar as relações de contraste, use uma ferramenta de contraste de cores, como o [Color Contrast Analyzer do Paciello Group](https://www.paciellogroup.com/resources/contrast-analyser.html) ou o [Color Contrast Checker do WebAIM](https://webaim.org/resources/contrastchecker/). Essas ferramentas permitem verificar pares de cores e relatar quaisquer problemas de contraste.
+Para verificar as relações de contraste, use uma ferramenta de contraste de cores, como o [Color Contrast Analyzer do Paciello Group](https://www.paciellogroup.com/resources/contrast-analyser.html) ou o [Color Contrast Checker do WebAIM](https://webaim.org/resources/contrastchecker/). Essas ferramentas permitem verificar pares de cores e relatar problemas de contraste.
 
 De maneira alternativa, se não estiver tão preocupado em especificar a aparência de sua página, poderá optar por não especificar as cores do texto de primeiro e segundo plano. Nenhuma verificação de contraste é necessária, já que o navegador do usuário determina as cores do texto e plano de fundo.
 
@@ -646,6 +653,7 @@ Se não for possível atender aos níveis de contraste recomendados, forneça um
    * Essencial: uma apresentação distintiva do texto é essencial para a transmissão das informações.
 
 >[!NOTE]
+>
 Os logotipos (texto que faz parte de um logotipo ou nome de marca) são considerados essenciais.
 
 #### Propósito - Imagens de texto (1.4.5)       {#purpose-images-of-text}
@@ -711,6 +719,7 @@ Dependendo da natureza do conteúdo, você pode aplicar uma ou mais das seguinte
 * Três flashes ou Abaixo do limite: as páginas da Web não incluem qualquer conteúdo com mais de três flashes no período de um segundo ou o flash encontra-se abaixo dos limites de flash universal e flash vermelho.
 
 >[!NOTE]
+>
 Como qualquer conteúdo que não cumpre este critério de sucesso pode interferir na capacidade de um usuário em utilizar a página inteira, todo o conteúdo da página da Web (quer seja ou não utilizado para cumprir outros critérios de sucesso) tem de cumprir este critério. Consulte o [Requisito de conformidade 5: não interferência](https://www.w3.org/TR/WCAG20/#cc5).
 
 #### Finalidade - Três flashes ou Abaixo do limite (2.3.1) {#purpose-three-flashes-or-below-threshold}
@@ -796,6 +805,7 @@ John Smith's publications
 ```
 
 >[!NOTE]
+>
 O trecho acima é uma ilustração; é recomendável usar o componente de **Imagem**.
 
 Embora seja aconselhável fornecer um texto de link que identifique a finalidade do link sem a necessidade de contexto adicional, reconhece-se que isto nem sempre é possível. Link contextuais gratuitos podem ser usados nos casos a seguir, exemplos de HTML que podem ser encontrados em [Como cumprir o Critério de sucesso 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-refs).
@@ -881,6 +891,7 @@ O atributo `lang` pode ser utilizado para identificar alterações no idioma do 
 ```
 
 >[!NOTE]
+>
 Blocos de citação não são suportados em uma instância predefinida. Um componente personalizado pode ser desenvolvido para oferecer suporte ao recurso.
 
 Da mesma forma, o navegador poderá processar uma palavra incomum ou frase corretamente se o elemento `span` for usado da seguinte maneira:
@@ -890,6 +901,7 @@ Da mesma forma, o navegador poderá processar uma palavra incomum ou frase corre
 ```
 
 >[!NOTE]
+>
 Não é necessário seguir este critério de sucesso ao incluir nomes ou cidades em diferentes idiomas, ou ao usar palavras de empréstimo ou frases que se tornaram comuns no idioma padrão (como *schadenfreude* em inglês).
 
 Para adicionar o elemento span, com um idioma apropriado, você pode editar manualmente a sua marcação HTML no modo de edição de fonte da RTE para ser exibido como acima. Como alternativa, o atributo `lang` pode ser incluído na RTE pelo administrador do sistema (consulte [Adicionar suporte para elementos e atributos HTML adicionais](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).

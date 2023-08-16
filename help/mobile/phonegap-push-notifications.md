@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
-source-git-commit: f8643f6118e0bc6bfb2ee0e093155cf0907eb5d3
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3214'
+source-wordcount: '3212'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ O AEM está configurado para usar um dos três serviços para notificações por
 
 *AMAZON SNS* e *Pushwoosh* As configurações do permitem enviar telas enviadas por AEM.
 
-*Adobe Mobile Services* A configuração do permite configurar e enviar notificações por push de dentro do Adobe Mobile Services usando uma conta do Adobe Analytics (mas o aplicativo deve ser criado com esse conjunto de configurações para habilitar notificações por push do AMS).
+*Adobe Mobile Services* a configuração do permite configurar e enviar notificações por push de dentro do Adobe Mobile Services usando uma conta da Adobe Analytics (mas o aplicativo deve ser criado com esse conjunto de configurações para habilitar notificações por push do AMS).
 
 #### Uso do serviço de mensagens Amazon SNS {#using-the-amazon-sns-messaging-service}
 
@@ -272,7 +272,7 @@ Há duas maneiras de criar e implantar seu aplicativo usando o PhoneGap.
 
 **Nota:** Para testes de notificação por push, os emuladores não serão suficientes, pois as notificações por push usam um protocolo distinto entre o provedor de push (Apple ou Google) e o dispositivo. Os emuladores e o hardware atuais do Mac/PC não suportam esse recurso.
 
-1. *PhoneGap Build* O é um serviço oferecido pelo PhoneGap que criará seu aplicativo nos servidores deles e permitirá que você o baixe diretamente no seu dispositivo. Consulte a documentação de PhoneGap Build em `https://build.phonegap.com/` para saber como configurar e usar o PhoneGap Build.
+1. *PhoneGap Build* O é um serviço oferecido pelo PhoneGap que criará seu aplicativo nos servidores deles e permitirá que você o baixe diretamente para seu dispositivo. Consulte a documentação de PhoneGap Build em `https://build.phonegap.com/` para saber como configurar e usar o PhoneGap Build.
 
 1. *Interface de linha de comando do PhoneGap* O (CLI) permite que você use um conjunto avançado de comandos do PhoneGap na linha de comando para criar, depurar e implantar seu aplicativo. Consulte a documentação do desenvolvedor do PhoneGap (`https://docs.phonegap.com/en/edge/guide_cli_index.md.html#The%20Command-Line%20Interface`) para saber como configurar e usar a CLI do PhoneGap.
 

@@ -8,9 +8,9 @@ discoiquuid: e5413fb3-9d50-4f4f-9db8-7e53cd5145d5
 docset: aem65
 feature: Interactive Communication
 exl-id: c8a6037c-46bd-4058-8314-61cb925ba5a8
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2739'
+source-wordcount: '2737'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Este tutorial é uma etapa da [Criar a primeira comunicação interativa](/help/
 
 ## Sobre o tutorial {#about-the-tutorial}
 
-O módulo de integração de dados do AEM Forms permite criar um modelo de dados de formulário a partir de diferentes fontes de dados de back-end, como perfil de usuário AEM, serviços Web RESTful, serviços Web baseados em SOAP, serviços OData e bancos de dados relacionais. Você pode configurar serviços e objetos de modelo de dados em um modelo de dados de formulário e associá-lo a um formulário adaptável. Os campos de formulário adaptável são vinculados às propriedades do objeto de modelo de dados. Os serviços permitem preencher previamente o formulário adaptável e gravar dados do formulário enviado de volta no objeto de modelo de dados.
+O módulo de integração de dados do AEM Forms permite criar um modelo de dados de formulário a partir de diferentes fontes de dados de back-end, como o perfil de usuário AEM, os serviços Web RESTful, os serviços Web baseados em SOAP, os serviços OData e os bancos de dados relacionais. Você pode configurar serviços e objetos de modelo de dados em um modelo de dados de formulário e associá-lo a um formulário adaptável. Os campos de formulário adaptável são vinculados às propriedades do objeto de modelo de dados. Os serviços permitem preencher previamente o formulário adaptável e gravar dados do formulário enviado de volta no objeto de modelo de dados.
 
 Para obter mais informações sobre a integração de dados de formulário e o modelo de dados de formulário, consulte [Integração de dados do AEM Forms](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html).
 
@@ -146,6 +146,7 @@ Faça o seguinte para configurar o banco de dados MySQL:
       * **Consulta de validação:** Especifique uma consulta SQL SELECT para validar as conexões do pool. A consulta deve retornar pelo menos uma linha. Por exemplo, **selecionar &#42; do cliente**.
 
       * **Isolamento de transação**: Defina o valor como **READ_COMMITTED**.
+
    Deixar outras propriedades com o padrão [valores](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) e toque em **Salvar**.
 
    Uma configuração semelhante à seguinte é criada.
@@ -193,6 +194,7 @@ A configuração do modelo de dados de formulário inclui:
       * faturas
       * chamadas
       * cliente
+
    * **Serviços:**
 
       * obter

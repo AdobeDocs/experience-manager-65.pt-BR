@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1797'
 ht-degree: 8%
 
 ---
@@ -127,7 +127,7 @@ Nesse caso, os ativos já estão preenchidos com metadados e as representações
 
 1. Migrar ativos: há duas ferramentas recomendadas para mover ativos de uma [!DNL Experience Manager] implantação em outro:
 
-   * **Cópia remota do Vault** ou vlt rcp, permite usar o vlt em uma rede. Você pode especificar um diretório de origem e destino e o vlt faz o download de todos os dados do repositório de uma instância e os carrega na outra. Vlt rcp está documentado em [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
+   * **Cópia remota do Vault** ou vlt rcp, permite usar vlt em uma rede. Você pode especificar um diretório de origem e destino e o vlt faz o download de todos os dados do repositório de uma instância e os carrega na outra. Vlt rcp está documentado em [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
    * **Grabbit** é uma ferramenta de sincronização de conteúdo de código aberto desenvolvida pela Time Warner Cable para seus [!DNL Experience Manager] execução. Como ele usa fluxos de dados contínuos, em comparação ao vlt rcp, ele tem uma latência menor e alega uma melhoria de velocidade de duas a dez vezes mais rápida que o vlt rcp. O Grabbit também oferece suporte à sincronização somente de conteúdo delta, o que permite sincronizar as alterações após a conclusão de uma passagem de migração inicial.
 
 1. Ativar ativos: siga as instruções para [ativação de ativos](#activating-assets) documentado para a migração inicial para [!DNL Experience Manager].

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e3afffd0-d90c-4bd0-b814-f7aeac6ceb6d
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3246'
+source-wordcount: '3242'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,6 @@ Os modelos de fluxo de trabalho consistem em uma série de etapas de vários tip
 >* [Processamento de ativos usando manipuladores de mídia e fluxos de trabalho](/help/assets/media-handlers.md)
 >
 
-
 ## Propriedades da etapa {#step-properties}
 
 Cada componente da etapa tem um **Propriedades da etapa** caixa de diálogo que permite definir e editar as propriedades necessárias.
@@ -49,20 +48,20 @@ Uma descrição da etapa.
 
 * **Estágio do fluxo de trabalho**
 
-   Um seletor suspenso para aplicar uma [Estágio](/help/sites-developing/workflows.md#workflow-stages) para a etapa.
+  Um seletor suspenso para aplicar uma [Estágio](/help/sites-developing/workflows.md#workflow-stages) para a etapa.
 
 * **Tempo limite**
 
-   O período após o qual a etapa &quot;expira&quot;.
+  O período após o qual a etapa &quot;expira&quot;.
 Você pode selecionar entre: **Desligado**, **Imediato**, **1h**, **6h**, **12h**, **24h**.
 
 * **Tempo limite do Handler**
 
-   O manipulador que controla o fluxo de trabalho quando a etapa expira. Por exemplo, `Auto Advancer`
+  O manipulador que controla o fluxo de trabalho quando a etapa expira. Por exemplo, `Auto Advancer`
 
 * **Handler avançado**
 
-   Selecione essa opção para avançar automaticamente o fluxo de trabalho para a próxima etapa após a execução. Se não for selecionada, o script de implementação deverá lidar com o avanço do fluxo de trabalho.
+  Selecione essa opção para avançar automaticamente o fluxo de trabalho para a próxima etapa após a execução. Se não for selecionada, o script de implementação deverá lidar com o avanço do fluxo de trabalho.
 
 ### Propriedades da etapa - guia Usuário/Grupo {#step-properties-user-group-tab}
 
@@ -97,13 +96,13 @@ Para configurar a divisão:
 
 * Adicione etapas do fluxo de trabalho às ramificações, conforme necessário.
 
-   ![wf-27](assets/wf-27.png)
+  ![wf-27](assets/wf-27.png)
 
 ## Etapa do contêiner {#container-step}
 
 Uma etapa do contêiner inicia outro modelo de fluxo de trabalho que é executado como um fluxo de trabalho secundário.
 
-Esse container pode permitir que você reutilize modelos de fluxo de trabalho para implementar sequências comuns de etapas. Por exemplo, um modelo de fluxo de trabalho de tradução pode ser usado em vários fluxos de trabalho de edição.
+Esse contêiner pode permitir que você reutilize modelos de fluxo de trabalho para implementar sequências comuns de etapas. Por exemplo, um modelo de fluxo de trabalho de tradução pode ser usado em vários fluxos de trabalho de edição.
 
 ![wf-28](assets/wf-28.png)
 
@@ -118,10 +117,10 @@ Para configurar a etapa, edite e use as seguintes guias:
 
 ## Etapa Ir para {#goto-step}
 
-A variável **Etapa Ir para** permite especificar a próxima etapa a ser executada no modelo de fluxo de trabalho. Você pode especificar uma definição de regra, um script externo ou um script ECMA como a expressão de roteamento para avaliar a próxima etapa do modelo de workflow.
+A variável **Etapa Ir para** permite especificar a próxima etapa a ser executada no modelo de workflow. Você pode especificar uma definição de regra, um script externo ou um script ECMA como a expressão de roteamento para avaliar a próxima etapa do modelo de workflow.
 
 * Se a condição especificada for verdadeira, a variável **Etapa Ir para** é concluído e o motor de workflow executa a etapa especificada.
-* Se a condição especificada não for verdadeira, a variável **Etapa Ir para** for concluída e a lógica de roteamento normal determinará a próxima etapa a ser executada.
+* Se a condição especificada não for verdadeira, a variável **Etapa Ir para** for concluído e a lógica de roteamento normal determinar a próxima etapa a ser executada.
 
 A variável **Etapa Ir para** permite implementar estruturas avançadas de roteamento em seus modelos de workflow. Por exemplo, para implementar um loop, a variável **Etapa Ir para** pode ser definido para executar uma etapa anterior no workflow, com a expressão de roteamento avaliando uma condição de loop.
 
@@ -203,6 +202,7 @@ Para configurar a divisão:
    * **Comum**
 
       * Especifique o nome da divisão.
+
    * **Ramificações (*x)***
 
       * **Adicionar ramificação:** Adicione mais ramificações à etapa.
@@ -212,17 +212,18 @@ Para configurar a divisão:
       * **Script**: adicione o script na caixa para avaliar a ramificação ativa se você selecionar **Script ECMA** como a expressão de roteamento.
       * **Rota Padrão**: a ramificação padrão é seguida se houver várias ramificações. Você pode especificar apenas uma ramificação como padrão.
 
-   >[!NOTE]
-   >
-   >    * Uma ramificação é avaliada de cada vez com base na expressão de roteamento.
-   >    * As ramificações são avaliadas de cima para baixo.
-   >    * O primeiro script que é avaliado como true é executado.
-   >    * Se nenhuma ramificação for avaliada como verdadeira, o fluxo de trabalho não avançará.
+  >[!NOTE]
+  >
+  >    * Uma ramificação é avaliada de cada vez com base na expressão de roteamento.
+  >    * As ramificações são avaliadas de cima para baixo.
+  >    * O primeiro script que é avaliado como true é executado.
+  >    * Se nenhuma ramificação for avaliada como verdadeira, o fluxo de trabalho não avançará.
+  >
+  >
 
-
-   >[!NOTE]
-   >
-   >Consulte [Definição de uma regra para uma divisão OU](/help/sites-developing/workflows-models.md#defineruleecmascript).
+  >[!NOTE]
+  >
+  >Consulte [Definição de uma regra para uma divisão OU](/help/sites-developing/workflows-models.md#defineruleecmascript).
 
 * Adicione etapas do fluxo de trabalho às ramificações, conforme necessário.
 
@@ -248,7 +249,6 @@ Para configurar a etapa, edite e use as seguintes guias:
 >* O fluxo de trabalho foi concluído (concluído).
 >* O fluxo de trabalho é interrompido (encerrado).
 >
-
 
 >[!NOTE]
 >
@@ -286,7 +286,7 @@ Você pode armazenar dados do widget na carga do fluxo de trabalho ou nos metada
 * **Armazenar dados com a carga**
 
    * Para armazenar dados do widget como uma propriedade da carga do fluxo de trabalho, use o seguinte formato para o valor da propriedade name do nó do widget:
-      `./jcr:content/nodename`
+     `./jcr:content/nodename`
 
    * Os dados são armazenados no `nodename` propriedade do nó de carga. Se o nó não contiver essa propriedade, a propriedade será criada.
    * Quando armazenado com a carga, os usos subsequentes da caixa de diálogo com a mesma carga substituem o valor da propriedade.
@@ -294,7 +294,7 @@ Você pode armazenar dados do widget na carga do fluxo de trabalho ou nos metada
 * **Armazenar dados com o item de trabalho**
 
    * Para armazenar dados do widget como uma propriedade dos metadados do item de trabalho, use o seguinte formato para o valor da propriedade name:
-      `nodename`
+     `nodename`
 
    * Os dados são armazenados no `nodename` propriedade do item de trabalho `metadata`. Os dados são preservados se a caixa de diálogo for usada posteriormente com a mesma carga.
 
@@ -402,50 +402,51 @@ Crie um serviço OSGi ou um ECMAScript que selecione um usuário ao qual atribui
 
 * **ECMAscript**
 
-   Os scripts devem incluir uma função chamada getParticipant que retorna uma ID de usuário como `String` valor. Armazene seus scripts personalizados em, por exemplo, o `/apps/myapp/workflow/scripts` ou uma subpasta.
+  Os scripts devem incluir uma função chamada getParticipant que retorna uma ID de usuário como `String` valor. Armazene seus scripts personalizados em, por exemplo, o `/apps/myapp/workflow/scripts` ou uma subpasta.
 
-   Um exemplo de script é incluído em uma instância AEM padrão:
+  Um exemplo de script é incluído em uma instância AEM padrão:
 
-   `/libs/workflow/scripts/initiator-participant-chooser.ecma`
+  `/libs/workflow/scripts/initiator-participant-chooser.ecma`
 
-   >[!CAUTION]
-   >
-   >Não altere nada no `/libs` caminho.
-   >
-   >
-   >O motivo é porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode ser substituído ao aplicar um hotfix ou pacote de recursos).
+  >[!CAUTION]
+  >
+  >Não altere nada no `/libs` caminho.
+  >
+  >
+  >O motivo é porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode ser substituído ao aplicar um hotfix ou pacote de recursos).
 
-   Este script seleciona o iniciador do fluxo de trabalho como o participante:
+  Este script seleciona o iniciador do fluxo de trabalho como o participante:
 
-   ```
-   function getParticipant() {
-       return workItem.getWorkflow().getInitiator();
-   }
-   ```
+  ```
+  function getParticipant() {
+      return workItem.getWorkflow().getInitiator();
+  }
+  ```
 
-   >[!NOTE]
-   >
-   >A variável **Seletor do participante iniciador do fluxo de trabalho** O componente estende a **Etapa dinâmica do participante** e usa esse script como a implementação da etapa.
+  >[!NOTE]
+  >
+  >A variável **Seletor do participante iniciador do fluxo de trabalho** O componente estende a **Etapa dinâmica do participante** e usa esse script como a implementação da etapa.
 
 * **Serviço OSGi**
 
-   Os serviços devem implementar a [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) interface. A interface define os seguintes membros:
+  Os serviços devem implementar a [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) interface. A interface define os seguintes membros:
 
    * `SERVICE_PROPERTY_LABEL` campo: Use este campo para especificar o nome do seletor de participantes. O nome aparece em uma lista de seletores de participantes disponíveis na **Etapa dinâmica do participante** propriedades.
 
    * `getParticipant` método: retorna a ID Principal resolvida dinamicamente como um `String` valor.
-   >[!CAUTION]
-   >
-   >A variável `getParticipant` O método retorna a ID Principal resolvida dinamicamente. Essa ID pode ser uma ID de grupo ou de usuário.
-   >
-   >
-   >No entanto, uma ID de grupo só pode ser usada para um **Etapa do participante**, quando uma lista de participantes for retornada. Para um **Etapa dinâmica do participante**, uma lista vazia é retornada e não pode ser usada para delegação.
 
-   Para disponibilizar sua implementação para **Etapa dinâmica do participante** adicione sua classe Java™ a um pacote OSGi que exporta o serviço e implante o pacote no servidor AEM.
+  >[!CAUTION]
+  >
+  >A variável `getParticipant` O método retorna a ID Principal resolvida dinamicamente. Essa ID pode ser uma ID de grupo ou de usuário.
+  >
+  >
+  >No entanto, uma ID de grupo só pode ser usada para um **Etapa do participante**, quando uma lista de participantes for retornada. Para um **Etapa dinâmica do participante**, uma lista vazia é retornada e não pode ser usada para delegação.
 
-   >[!NOTE]
-   >
-   >**Seletor de participante aleatório** é um exemplo de serviço que seleciona um usuário aleatório ( `com.day.cq.workflow.impl.process.RandomParticipantChooser`). A variável **Escolher participante aleatório** r amostra de componente de etapa estende a variável **Etapa dinâmica do participante** e usa esse serviço como a implementação da etapa.
+  Para disponibilizar sua implementação para **Etapa dinâmica do participante** adicione sua classe Java™ a um pacote OSGi que exporta o serviço e implante o pacote no servidor AEM.
+
+  >[!NOTE]
+  >
+  >**Seletor de participante aleatório** é um exemplo de serviço que seleciona um usuário aleatório ( `com.day.cq.workflow.impl.process.RandomParticipantChooser`). A variável **Escolher participante aleatório** r amostra de componente de etapa estende a variável **Etapa dinâmica do participante** e usa esse serviço como a implementação da etapa.
 
 #### Etapa dinâmica do participante - Exemplo de serviço do seletor de participantes {#dynamic-participant-step-example-participant-chooser-service}
 
@@ -524,7 +525,7 @@ Crie um formulário para usar com uma **Etapa do participante do formulário** n
 * A variável **Início do formulário** componente deve ter um valor para o `Form Identifier` propriedade.
 * Os componentes de formulário devem ter a **Nome do elemento** propriedade definida para o caminho do nó onde os dados do campo são armazenados. O caminho deve localizar um nó no conteúdo de carga do fluxo de trabalho. O valor usa o seguinte formato:
 
-   `./jcr:content/path_to_node`
+  `./jcr:content/path_to_node`
 
 * O formulário deve incluir uma **Botão Enviar do fluxo de trabalho** componente. Você não configura nenhuma propriedade do componente.
 
@@ -584,9 +585,9 @@ Para configurar a etapa, edite e use as seguintes guias:
       * Os ECMAScripts padrão e os serviços OSGi, consulte [Processos integrados para etapas do processo](/help/sites-developing/workflows-process-ref.md).
       * Criando ECMAScripts para uma etapa do Processo, consulte [Implementação de uma Etapa do processo com um ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
       * Criação de serviços OSGi para uma etapa do processo, consulte [Implementando uma etapa do processo com uma classe Java™](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
+
    * **Avanço do manipulador**: selecione essa opção para avançar automaticamente o workflow para a próxima etapa após a execução. Se não for selecionada, o script de implementação deverá lidar com o avanço do fluxo de trabalho.
    * **Argumentos**: Argumentos a serem transmitidos para o processo.
-
 
 ## Definir variável {#set-variable}
 
@@ -610,5 +611,6 @@ Para configurar a etapa, edite e use as seguintes guias:
       * **XPATH:** Use a opção para recuperar um valor de uma variável do tipo XML.
       * **Relativo à carga:** Use a opção quando o valor a ser salvo na variável estiver disponível em um caminho relativo à carga.
       * **Caminho absoluto:** Use a opção quando o valor a ser salvo na variável estiver disponível em um caminho absoluto.
+
    * **Especificar valor:** Para associar à variável, especifique um valor. O valor especificado neste campo depende do modo de mapeamento.
    * **Adicionar mapeamento:** Use essa opção para adicionar mais mapeamentos e definir um valor para a variável.

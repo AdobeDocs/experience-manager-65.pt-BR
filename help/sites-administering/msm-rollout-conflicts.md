@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 16db5334-604f-44e2-9993-10d683dee5bb
 feature: Multi Site Manager
 exl-id: e145e79a-c363-4a33-b9f9-99502ed20563
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 31%
+source-wordcount: '906'
+ht-degree: 28%
 
 ---
 
@@ -34,7 +34,7 @@ Para garantir que a implantação não seja bloqueada, as possíveis definiçõe
 * quais páginas serão renomeadas (e como),
 * como isso afetará qualquer conteúdo publicado.
 
-   O comportamento padrão do AEM (pronto para uso) é que o conteúdo publicado não será afetado. Portanto, se uma página que foi criada manualmente na ramificação da live copy tiver sido publicada, esse conteúdo ainda será publicado após o tratamento do conflito e a implantação.
+  O comportamento padrão do AEM (pronto para uso) é que o conteúdo publicado não será afetado. Portanto, se uma página que foi criada manualmente na ramificação da live copy tiver sido publicada, esse conteúdo ainda será publicado após o tratamento do conflito e a implantação.
 
 Além da funcionalidade padrão, os manipuladores de conflito personalizados podem ser adicionados para implementar regras diferentes. Eles também podem permitir a publicação de ações como um processo individual.
 
@@ -44,11 +44,11 @@ Nas seções a seguir, usamos o exemplo de uma nova página `b`, criado na ramif
 
 * blueprint: `/b`
 
-   Uma página principal; com 1 página secundária, nível bp-1.
+  Uma página principal; com 1 página secundária, nível bp-1.
 
 * live copy: `/b`
 
-   Uma página criada manualmente na ramificação da live copy; com 1 página secundária, `lc-level-1`.
+  Uma página criada manualmente na ramificação da live copy; com 1 página secundária, `lc-level-1`.
 
    * Ativado ao publicar como `/b`, junto com a página secundária.
 
@@ -62,14 +62,14 @@ Nas seções a seguir, usamos o exemplo de uma nova página `b`, criado na ramif
    <td><strong>publicar antes da implantação</strong></td>
   </tr>
   <tr>
-   <td><code>b</code> <br /> (criado na ramificação do blueprint, pronto para implantação)<br /> </td>
-   <td><code>b</code> <br /> (criado manualmente na ramificação da live copy)<br /> </td>
-   <td><code>b</code> <br /> (contém o conteúdo da página b que foi criado manualmente na ramificação da live copy)</td>
+   <td><code>b</code><br /> <br /> (criado na ramificação do blueprint, pronto para implantação)<br /> </td>
+   <td><code>b</code><br /> <br /> (criado manualmente na ramificação da live copy)<br /> </td>
+   <td><code>b</code><br /> <br /> (contém o conteúdo da página b que foi criado manualmente na ramificação da live copy)</td>
   </tr>
   <tr>
    <td><code> /bp-level-1</code></td>
-   <td><code> /lc-level-1</code> <br /> (criado manualmente na ramificação da live copy)<br /> </td>
-   <td><code> /lc-level-1</code> <br /> (contém o conteúdo da página)<br /> nível secundário-1 que foi criado manualmente na ramificação da live copy)</td>
+   <td><code> /lc-level-1</code><br /> <br /> (criado manualmente na ramificação da live copy)<br /> </td>
+   <td><code> /lc-level-1</code><br /> <br /> (contém o conteúdo da página)<br /> nível secundário-1 que foi criado manualmente na ramificação da live copy)</td>
   </tr>
  </tbody>
 </table>
@@ -82,9 +82,9 @@ Isso é feito usando a [configuração do OSGi](/help/sites-deploying/configurin
 
 * **Lidar com conflitos com páginas criadas manualmente**:
 
-   ( `rolloutmgr.conflicthandling.enabled`)
+  ( `rolloutmgr.conflicthandling.enabled`)
 
-   Definido como verdadeiro se o gerenciador de implantação deve lidar com conflitos de uma página criada na live copy com um nome que existe no blueprint.
+  Definido como verdadeiro se o gerenciador de implantação deve lidar com conflitos de uma página criada na live copy com um nome que existe no blueprint.
 
 O AEM tem [comportamentos predefinidos quando o gerenciamento de conflitos foi desativado](#behavior-when-conflict-handling-deactivated).
 
@@ -114,13 +114,13 @@ Esse manipulador de conflitos dá prioridade ao blueprint. A página da live cop
 
 * live copy: `/b`
 
-   É movido (dentro da live copy) para `/b_msm_moved`. Isso funciona como um backup e garante que nenhum conteúdo seja perdido.
+  É movido (dentro da live copy) para `/b_msm_moved`. Isso funciona como um backup e garante que nenhum conteúdo seja perdido.
 
    * `lc-level-1` não é movido.
 
 * blueprint: `/b`
 
-   É implantado na página da live copy `/b`.
+  É implantado na página da live copy `/b`.
 
    * `bp-level-1` é implantado na live copy.
 
@@ -137,17 +137,17 @@ Esse manipulador de conflitos dá prioridade ao blueprint. A página da live cop
   </tr>
   <tr>
    <td><code>b</code></td>
-   <td><code>b</code> <br /> (tem o conteúdo da página b do blueprint que foi implantado)<br /> </td>
+   <td><code>b</code><br /> <br /> (tem o conteúdo da página b do blueprint que foi implantado)<br /> </td>
    <td></td>
-   <td><code>b_msm_moved</code> <br /> (tem o conteúdo da página b que foi criado manualmente na ramificação da live copy)</td>
-   <td><code>b</code> <br /> (sem alterações; contém o conteúdo da página original b que foi criado manualmente na ramificação da live copy e agora é chamado de b_msm_moved)<br /> </td>
+   <td><code>b_msm_moved</code><br /> <br /> (tem o conteúdo da página b que foi criado manualmente na ramificação da live copy)</td>
+   <td><code>b</code><br /> <br /> (sem alterações; contém o conteúdo da página original b que foi criado manualmente na ramificação da live copy e agora é chamado de b_msm_moved)<br /> </td>
   </tr>
   <tr>
    <td><code> /bp-level-1</code></td>
    <td><code class="code"> /bp-level-1</code></td>
-   <td><code> /lc-level-1</code> <br /> (sem alteração)</td>
+   <td><code> /lc-level-1</code><br /> <br /> (sem alteração)</td>
    <td><code> </code></td>
-   <td><code> /lc-level-1</code> <br /> (sem alteração)</td>
+   <td><code> /lc-level-1</code><br /> <br /> (sem alteração)</td>
   </tr>
  </tbody>
 </table>
@@ -164,9 +164,9 @@ Os manipuladores de conflito personalizados podem:
 
    * **Classificação do serviço**:
 
-      Define a ordem relacionada a outros manipuladores de conflito ( `service.ranking`).
+     Define a ordem relacionada a outros manipuladores de conflito ( `service.ranking`).
 
-      O valor padrão é 0.
+     O valor padrão é 0.
 
 ### Comportamento quando o manuseio de conflitos é desativado {#behavior-when-conflict-handling-deactivated}
 
@@ -180,11 +180,11 @@ Nesse caso, a live copy tem prioridade efetiva. A página do blueprint `/b` não
 
 * blueprint: `/b`
 
-   Não é copiado, mas é ignorado.
+  Não é copiado, mas é ignorado.
 
 * live copy: `/b`
 
-   Fica igual.
+  Fica igual.
 
 <table>
  <caption>
@@ -198,13 +198,13 @@ Nesse caso, a live copy tem prioridade efetiva. A página do blueprint `/b` não
   </tr>
   <tr>
    <td><code>b</code></td>
-   <td><code>b</code> <br /> (sem alterações; tem o conteúdo da página b que foi criado manualmente na ramificação da live copy)</td>
-   <td><code>b</code> <br /> (sem alterações; contém o conteúdo da página b que foi criado manualmente na ramificação da live copy)<br /> </td>
+   <td><code>b</code><br /> <br /> (sem alterações; tem o conteúdo da página b que foi criado manualmente na ramificação da live copy)</td>
+   <td><code>b</code><br /> <br /> (sem alterações; contém o conteúdo da página b que foi criado manualmente na ramificação da live copy)<br /> </td>
   </tr>
   <tr>
-   <td><code> /bp-level-1</code> </td>
-   <td><code> /lc-level-1</code> <br /> (sem alteração)</td>
-   <td><code> /lc-level-1</code> <br /> (sem alteração)</td>
+   <td><code> /bp-level-1</code><br /> </td>
+   <td><code> /lc-level-1</code><br /> <br /> (sem alteração)</td>
+   <td><code> /lc-level-1</code><br /> <br /> (sem alteração)</td>
   </tr>
  </tbody>
 </table>

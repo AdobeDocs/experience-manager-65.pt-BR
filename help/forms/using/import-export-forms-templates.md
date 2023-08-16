@@ -11,9 +11,9 @@ discoiquuid: 69210727-dde3-495a-87b7-2e8173e6b664
 docset: aem65
 role: Admin
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2516'
+source-wordcount: '2511'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,6 @@ Você pode mover formulários e ativos relacionados, temas, dicionários de dado
 >
 >* No AEM 6.4 Forms, a estrutura e os caminhos do repositório crx foram alterados. Se você importar ativos de uma versão anterior para o AEM 6.4 Forms e o formulário tiver algumas dependências na estrutura mais antiga, será necessário exportar as dependências manualmente. Para obter detalhes sobre as alterações na estrutura e nos caminhos do repositório, consulte [Reestruturação do repositório no AEM](/help/sites-deploying/repository-restructuring.md).
 >
-
 
 ## Baixar ou carregar ativos da Forms e de documentos {#download-or-upload-forms-amp-documents-assets}
 
@@ -66,7 +65,7 @@ Para fazer upload de ativos do Forms e do Documents:
 1. Faça logon na instância do AEM Forms.
 1. Toque em Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) ícone > navegação ![bússola](assets/compass.png) icon> Forms> Forms e documentos.
 1. Toque **Criar** >**Upload de arquivo**. Uma caixa de diálogo Carregar formulários ou pacote é exibida.
-1. Na caixa de diálogo, procure e selecione o pacote ou o arquivo a ser importado. Você também pode selecionar o documento PDF, XSDs, imagens, folhas de estilos e formulários XDP. Toque **Abertura**. A pasta ou o nome de arquivo selecionado não deve incluir caracteres especiais.
+1. Na caixa de diálogo, navegue e selecione o pacote ou o arquivo a ser importado. Você também pode selecionar o documento PDF, XSDs, imagens, folhas de estilos e formulários XDP. Toque **Abertura**. A pasta ou o nome de arquivo selecionado não deve incluir caracteres especiais.
 
    Na caixa de diálogo, verifique os detalhes dos ativos que estão sendo carregados e toque em **Carregar**.
 

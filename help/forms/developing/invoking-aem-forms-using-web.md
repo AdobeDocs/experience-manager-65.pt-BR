@@ -11,9 +11,9 @@ topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '9902'
+source-wordcount: '9901'
 ht-degree: 0%
 
 ---
@@ -444,7 +444,7 @@ Você pode usar JAX-WS para converter um serviço Forms WSDL em classes de proxy
    * Defina o nível de conformidade do compilador Java como 5.0 ou superior.
    * Crie o projeto.
    * Exporte o projeto como um arquivo JAR.
-   * Importe este arquivo JAR no caminho de classe de um projeto do cliente. Além disso, importe todos os arquivos JAR localizados em &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty.
+   * Importe este arquivo JAR no caminho de classe de um projeto cliente. Além disso, importe todos os arquivos JAR localizados em &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty.
 
    >[!NOTE]
    >
@@ -677,7 +677,7 @@ Você pode chamar um serviço AEM Forms usando classes de proxy Java e Base64. P
 
    &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
-   no caminho de classe do seu projeto de cliente Java.
+   no caminho de classe do projeto do cliente Java.
 
 1. Criar um `MyApplicationEncryptDocumentService` usando seu construtor.
 1. Criar um `MyApplicationEncryptDocument` ao invocar o `MyApplicationEncryptDocumentService` do objeto `getEncryptDocument` método.
@@ -872,7 +872,7 @@ Para invocar o `MyApplication/EncryptDocument` processo usando arquivos proxy Ja
 
    &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
-   no caminho de classe do seu projeto de cliente Java.
+   no caminho de classe do projeto do cliente Java.
 
 1. Criar um `MyApplicationEncryptDocumentService` usando seu construtor.
 1. Criar um `MyApplicationEncryptDocument` ao invocar o `MyApplicationEncryptDocumentService` do objeto `getEncryptDocument` método.
@@ -995,7 +995,7 @@ Você pode chamar um serviço AEM Forms usando classes de proxy Java e dados BLO
 
    &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
-   no caminho de classe do seu projeto de cliente Java.
+   no caminho de classe do projeto do cliente Java.
 
 1. Criar um `MyApplicationEncryptDocumentService` usando seu construtor.
 1. Criar um `MyApplicationEncryptDocument` ao invocar o `MyApplicationEncryptDocumentService` do objeto `getEncryptDocument` método.
@@ -1451,7 +1451,7 @@ O código C# a seguir invoca um serviço Forms usando autenticação baseada em 
 
 ### Chamando operações de serviço de forma assíncrona {#invoking-service-operations-asynchronously}
 
-Se você tentar invocar de forma assíncrona uma operação de serviço do AEM Forms, como a operação Gerar PDF `htmlToPDF` operação, uma `SoapFaultException` ocorre. Para resolver esse problema, crie um arquivo XML de vinculação personalizada que mapeie a variável `ExportPDF_Result` elemento e outros elementos em classes diferentes. O XML a seguir representa um arquivo de associação personalizado.
+Se você tentar chamar de forma assíncrona uma operação de serviço do AEM Forms, como Gerar PDF `htmlToPDF` operação, uma `SoapFaultException` ocorre. Para resolver esse problema, crie um arquivo XML de vinculação personalizada que mapeie a variável `ExportPDF_Result` elemento e outros elementos em classes diferentes. O XML a seguir representa um arquivo de associação personalizado.
 
 ```xml
  <bindings

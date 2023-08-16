@@ -6,21 +6,21 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: e1de20b0-6d7a-4bda-b62f-c2808fd0af28
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
 
 # Experimentar a estrutura globalizada de sites no We.Retail{#trying-out-the-globalized-site-structure-in-we-retail}
 
-O We.Retail foi criado com uma estrutura de site globalizada que oferece uma principal de idioma que pode ser copiada para sites específicos de cada país. Tudo é configurado imediatamente para permitir que você experimente essa estrutura e os recursos de tradução integrados.
+O We.Retail foi criado com uma estrutura de site globalizada que oferece um idioma principal que pode ser copiado para sites específicos de cada país. Tudo é configurado imediatamente para permitir que você experimente essa estrutura e os recursos de tradução integrados.
 
 ## Experimentando {#trying-it-out}
 
 1. Abra o console Sites em **Navegação global -> Sites**.
-1. Alterne para a exibição de coluna (se ainda não estiver ativa) e selecione We.Retail. Observe o exemplo de estrutura de país com Suíça, Estados Unidos, França e assim por diante, ao lado do Principal Idioma.
+1. Alterne para a exibição de coluna (se ainda não estiver ativa) e selecione We.Retail. Observe o exemplo de estrutura de país com Suíça, Estados Unidos, França e assim por diante, ao lado do Idioma principal.
 
    ![chlimage_1-87](assets/chlimage_1-87a.png)
 
@@ -32,13 +32,13 @@ O We.Retail foi criado com uma estrutura de site globalizada que oferece uma pri
 
    ![chlimage_1-89](assets/chlimage_1-89a.png)
 
-1. Retorne à exibição de coluna, clique no Idioma Principal e veja as raízes principais do idioma com conteúdo. Somente o inglês tem conteúdo.
+1. Retorne à exibição de coluna, clique no Idioma principal e veja as raízes do idioma principal com conteúdo. Somente o inglês tem conteúdo.
 
    O We.Retail não vem com nenhum conteúdo traduzido, mas a estrutura e a configuração estão em vigor para permitir que você demonstre os serviços de tradução.
 
    ![chlimage_1-90](assets/chlimage_1-90a.png)
 
-1. Com o idioma inglês Principal selecionado, abra a **Referências** no console sites e selecione **Cópias de idioma**.
+1. Com o idioma inglês principal selecionado, abra o **Referências** no console sites e selecione **Cópias de idioma**.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 

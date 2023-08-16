@@ -2,10 +2,10 @@
 title: Saiba mais sobre como usar referências em Fragmentos de conteúdo
 description: Saiba mais sobre como usar referências em Fragmentos de conteúdo para conteúdo, outros fragmentos e outros ativos (mídia). Apresente a necessidade e a mecânica de fragmentos aninhados para a criação de CMS headless.
 exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 98%
+source-wordcount: '726'
+ht-degree: 88%
 
 ---
 
@@ -39,7 +39,7 @@ Algumas referências têm tipos de dados dedicados (por exemplo, Referências de
 
 ## Referências de conteúdo {#content-references}
 
-As Referências de conteúdo fazem exatamente isso: permitem que você faça referência a qualquer outro conteúdo. Isso abrirá um navegador que permite selecionar o item de conteúdo.
+As Referências de conteúdo fazem exatamente isso - elas permitem fazer referência a qualquer outro conteúdo. Isso abrirá um navegador que permite selecionar o item de conteúdo.
 
 ## Referências de ativo/mídia {#assets-media-references}
 
@@ -49,7 +49,7 @@ Os ativos (por exemplo, imagens ou mídia) podem ser referenciados em um bloco d
 
 ## Referências de fragmento {#fragment-references}
 
-Novamente, as Referências de fragmento fazem exatamente isso, permitem que você faça referência a outro fragmento. Por ser relevante, precisa de um pouco mais de explicação.
+Novamente, as Referências de fragmento fazem exatamente isso - elas permitem fazer referência a outro fragmento. Por ser relevante, precisa de um pouco mais de explicação.
 
 Por exemplo, você pode ter os seguintes modelos de fragmento de conteúdo definidos:
 
@@ -75,7 +75,7 @@ Como autor, você não é responsável por definir esses relacionamentos (isso �
 
 ### Como criar fragmentos aninhados {#author-nested-fragment}
 
-A criação de referências de fragmento é bastante direta (embora o campo geralmente não seja rotulado como **Referência de fragmento**). Você pode digitar a referência diretamente ou (provavelmente) selecionar o ícone de pasta para abrir um navegador que permite navegar e selecionar o fragmento necessário.
+A criação de referências de fragmento é bastante direta (embora o campo geralmente não seja rotulado como **Referência de fragmento**). Você pode digitar a referência diretamente ou (mais provavelmente) selecionar o ícone de pasta para abrir um navegador que permita navegar e selecionar o fragmento necessário.
 
 ![Fragmentos de conteúdo: referências](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 
@@ -113,6 +113,7 @@ Agora que você aprendeu sobre referências e estrutura nos Fragmentos de conte�
       * [Aplique a configuração à sua pasta de ativos](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
       * [Criação de um Fragmento de conteúdo](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+
    * [Variações: criação de Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-variations.md)
 
    * [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
@@ -120,7 +121,6 @@ Agora que você aprendeu sobre referências e estrutura nos Fragmentos de conte�
       * [Modelos de fragmento de conteúdo - Tipos de dados](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
       * [Modelos de fragmento de conteúdo: propriedades](/help/assets/content-fragments/content-fragments-models.md#properties)
-
 
 * Guias de introdução
    * [Criação de uma pasta de ativos Guia de início rápido do Headless](/help/sites-developing/headless/getting-started/create-assets-folder.md)

@@ -6,9 +6,9 @@ role: User, Admin
 feature: Asset Management
 exl-id: bc0cfb0e-3f70-4377-8831-326a7cae73bd
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '327'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 | AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
-[!DNL Adobe Experience Manager Assets] O permite adicionar uma marca d&#39;água digital aos ativos que ajuda os usuários a verificar a autenticidade e a propriedade de direitos autorais dos ativos. [!DNL Experience Manager Assets] O suporta texto a ser usado como marca d&#39;água em arquivos PNG e JPEG.
+[!DNL Adobe Experience Manager Assets] O permite adicionar uma marca d&#39;água digital aos ativos da que ajuda os usuários a verificar a autenticidade e a propriedade de direitos autorais dos ativos. [!DNL Experience Manager Assets] O suporta texto a ser usado como marca d&#39;água em arquivos PNG e JPEG.
 
 Para poder aplicar a marca d&#39;água em ativos, adicione a etapa de marca d&#39;água no [!UICONTROL Ativo de atualização DAM] fluxo de trabalho.
 

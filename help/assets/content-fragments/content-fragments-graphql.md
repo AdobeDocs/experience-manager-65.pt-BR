@@ -4,16 +4,16 @@ description: Saiba como usar fragmentos de conteúdo AEM com o GraphQL para entr
 feature: Content Fragments
 role: User
 exl-id: 2debd678-2d73-41f2-b33c-c29d661f6a6b
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 89%
+source-wordcount: '684'
+ht-degree: 80%
 
 ---
 
 # Entrega de conteúdo headless usando fragmentos de conteúdo com GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-Com o Adobe Experience Manager (AEM), você pode usar Fragmentos de conteúdo, juntamente com a API do GraphQL AEM (uma implementação personalizada, com base no GraphQL padrão), para fornecer conteúdo estruturado para uso em seus aplicativos de forma headless. A capacidade de personalizar uma única consulta de API permite recuperar e entregar o conteúdo específico que você deseja/precisa renderizar (como resposta à consulta de API).
+Com o Adobe Experience Manager (AEM), você pode usar Fragmentos de conteúdo, juntamente com a API do GraphQL AEM (uma implementação personalizada, com base no GraphQL padrão), para fornecer conteúdo estruturado para uso em seus aplicativos de forma headless. A capacidade de personalizar uma única consulta de API permite recuperar e fornecer o conteúdo específico que você deseja/precisa renderizar (como resposta à consulta de API única).
 
 <!--
 >[!NOTE]
@@ -28,14 +28,13 @@ Com o Adobe Experience Manager (AEM), você pode usar Fragmentos de conteúdo, j
 >* [O AEM Commerce consome dados de uma plataforma de comércio por meio do GraphQL](/help/commerce/cif/integrating/magento.md).
 >* [Fragmentos de conteúdo do AEM trabalham em conjunto com a API GraphQL do AEM (uma implementação personalizada, com base no GraphQL padrão), para fornecer conteúdo estruturado para uso em seus aplicativos](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
 
-
 ## CMS headless {#headless-cms}
 
 Um sistema de gerenciamento de conteúdo (CMS) headless é:
 
 * “*Um sistema de gerenciamento de conteúdo headless, ou CMS headless, é um sistema de gerenciamento de conteúdo (CMS) de back-end criado desde o início como um repositório de conteúdo que torna o conteúdo acessível por meio de uma API para exibição em qualquer dispositivo“.*
 
-   Consulte a [Wikipédia](https://en.wikipedia.org/wiki/Headless_content_management_system).
+  Consulte a [Wikipédia](https://en.wikipedia.org/wiki/Headless_content_management_system).
 
 Em termos de criação de fragmentos de conteúdo no AEM, isso significa que:
 
@@ -49,13 +48,13 @@ O GraphQL é:
 
 * “*...um idioma de consulta para APIs e um tempo de execução para realizar essas consultas com seus dados existentes.*”.
 
-   Consulte [GraphQL.org](https://graphql.org)
+  Consulte [GraphQL.org](https://graphql.org)
 
-A [API GraphQL do AEM](#aem-graphql-api) permite realizar consultas (complexas) nos [fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md); cada uma dessas consultas está de acordo com um tipo de modelo específico. O conteúdo retornado pode ser usado pelos seus aplicativos.
+A variável [API GraphQL do AEM](#aem-graphql-api) O permite executar consultas (complexas) no [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md); sendo que cada query está de acordo com um tipo de modelo específico. O conteúdo retornado pode ser usado pelos seus aplicativos.
 
 ## API GraphQL do AEM {#aem-graphql-api}
 
-Para a Adobe Experience Platform, foi desenvolvida uma implementação personalizada da API padrão do GraphQL. Consulte [API GraphQL do AEM para uso com fragmentos de conteúdo](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) para obter detalhes.
+Para a Adobe Experience, foi desenvolvida uma implementação personalizada da API padrão do GraphQL. Consulte [API GraphQL do AEM para uso com fragmentos de conteúdo](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) para obter detalhes.
 
 A implementação da API GraphQL do AEM é baseada nas [bibliotecas GraphQL do Java](https://graphql.org/code/#java).
 

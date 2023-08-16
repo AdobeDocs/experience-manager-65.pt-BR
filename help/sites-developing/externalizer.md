@@ -7,9 +7,9 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '492'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Esta página explica como configurar o **Externalizador** e como usá-lo. Para o
 
 ## Configurar o serviço Externalizador {#configuring-the-externalizer-service}
 
-A variável **Externalizador** O serviço de permite definir centralmente vários domínios que podem ser usados para prefixar programaticamente caminhos de recursos. Cada domínio é identificado por um nome exclusivo usado para fazer referência programaticamente ao domínio.
+A variável **Externalizador** o serviço permite definir centralmente vários domínios que podem ser usados para prefixar programaticamente caminhos de recursos. Cada domínio é identificado por um nome exclusivo usado para fazer referência programaticamente ao domínio.
 
 Para definir um mapeamento de domínio para o **Externalizador** serviço:
 

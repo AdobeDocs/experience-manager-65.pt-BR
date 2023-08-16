@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3224'
-ht-degree: 5%
+source-wordcount: '3221'
+ht-degree: 4%
 
 ---
 
@@ -73,6 +73,7 @@ Ao criar um novo modelo editável, você:
    * Os componentes definidos na estrutura do modelo não podem ser movidos em uma página resultante nem excluídos de qualquer página resultante.
 
       * Se você estiver criando um modelo em uma pasta personalizada fora da `We.Retail` conteúdo de amostra, você pode escolher Componentes de base ou usar [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=pt-BR).
+
    * Se você quiser que os autores de página possam adicionar e remover componentes, adicione um sistema de parágrafo ao modelo.
    * Os componentes podem ser desbloqueados e bloqueados novamente para permitir que você defina o conteúdo inicial.
 
@@ -85,6 +86,7 @@ Ao criar um novo modelo editável, você:
    * As políticas de conteúdo definem as propriedades de design de um componente.
 
       * Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima.
+
    * Essas políticas são aplicáveis ao modelo (e páginas criadas com o modelo).
 
    Para obter detalhes sobre como um autor de modelo define políticas, consulte [Criação de modelos de página](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
@@ -253,7 +255,7 @@ A tabela a seguir detalha as permissões necessárias para a edição de modelos
 <table>
  <tbody>
   <tr>
-   <th>Caminho </th>
+   <th>Caminho</th>
    <th>Função/Grupo</th>
    <th>Permissões<br /> </th>
    <th>Descrição</th>
@@ -313,7 +315,7 @@ Não armazenar modelos no `/conf/global`. No entanto, para algumas instalações
 <table>
  <tbody>
   <tr>
-   <th>Caminho </th>
+   <th>Caminho</th>
    <th>Função/Grupo</th>
    <th>Permissões<br /> </th>
    <th>Descrição</th>
@@ -540,13 +542,13 @@ Quando [ao editar um modelo, é possível definir o layout](/help/sites-authorin
 As políticas de conteúdo (ou design) definem as propriedades de design de um componente, como a disponibilidade do componente ou as dimensões mínimas/máximas. Essas políticas são aplicáveis ao modelo (e páginas criadas com o modelo). As políticas de conteúdo podem ser criadas e selecionadas no editor de modelo.
 
 * A propriedade `cq:policy`, no `root` nó
-   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
+  `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 Fornece uma referência relativa à política de conteúdo para o sistema de parágrafos da página.
 
 * A propriedade `cq:policy`, nos nós componente-explícito em `root`, fornecem links para as políticas de componentes individuais.
 
 * As definições de políticas reais são armazenadas em:
-   `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
+  `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
 
 >[!NOTE]
 >
@@ -577,7 +579,7 @@ As políticas de página permitem definir a variável [política de conteúdo](#
    * Definir a propriedade de status na variável `jcr:content` nó.
 
       * Por exemplo, em:
-         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
+        `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Defina a propriedade:
 
@@ -589,9 +591,9 @@ As políticas de página permitem definir a variável [política de conteúdo](#
 
    * [Defina os caminhos do Modelo permitidos no **Propriedades da página**](/help/sites-authoring/templates.md#allowing-a-template-author) da página apropriada ou da página raiz de uma subramificação.
    * Defina a propriedade:
-      `cq:allowedTemplates`
-No 
-`jcr:content` nó da ramificação necessária.
+     `cq:allowedTemplates`
+No `jcr:content` nó da ramificação necessária.
+
    Por exemplo, com um valor de:
 
    `/conf/<your-folder>/settings/wcm/templates/.*`

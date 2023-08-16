@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2112'
+source-wordcount: '2111'
 ht-degree: 1%
 
 ---
@@ -182,7 +182,7 @@ Consulte [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager
 
 ### Configuração do conector de LiveCycle AEM {#configuring-aem-livecycle-connector}
 
-Com o lançamento dos Serviços de Doc AEM e da Segurança de Doc AEM, o AEM agora tem a capacidade de chamar os serviços de doc do LiveCycle para renderizar um formulário XFA, converter um documento em PDF e proteger um documento por meio de políticas. Consulte [Conector do LiveCycle AEM](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) para obter mais detalhes.
+Com o lançamento dos Serviços de Doc AEM e da Segurança de Doc AEM, o AEM agora tem a capacidade de invocar os serviços de doc do LiveCycle para renderizar um formulário XFA, converter um documento em PDF e proteger um documento por meio de políticas. Consulte [Conector do LiveCycle AEM](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) para obter mais detalhes.
 
 ### Descarregamento de Jobs e Administração de Topologia {#job-offloading-and-topology-administration}
 
@@ -273,7 +273,7 @@ Há várias propriedades que controlam o comportamento dos comandos desfazer e r
 
 ### Configuração do componente de vídeo {#configuring-the-video-component}
 
-A variável [Componente de vídeo](/help/sites-authoring/default-components-foundation.md#video) O permite colocar um elemento de vídeo predefinido e pronto para uso na página.
+A variável [Componente de vídeo](/help/sites-authoring/default-components-foundation.md#video) O permite que você coloque um elemento de vídeo predefinido e pronto para uso na página.
 
 Para que ocorra a transcodificação adequada, o administrador deve [Instalar FFmpeg](/help/sites-administering/config-video.md#install-ffmpeg) separadamente. Eles também podem [Configurar seus perfis de vídeo](/help/sites-administering/config-video.md#configure-video-profiles) para uso com elementos html5.
 

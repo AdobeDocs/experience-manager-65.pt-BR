@@ -1,7 +1,7 @@
 ---
-title: Instalar e configurar as Comunicações interativas
+title: Instalar e configurar comunicações interativas
 seo-title: Install and configure Interactive Communications
-description: Instale e configure as Comunicações interativas do AEM Forms para criar correspondências comerciais, documentos, declarações, avisos de benefícios, emails de marketing, contas e kits de boas-vindas.
+description: Instale e configure AEM Forms comunicações interativas para criar correspondências empresariais, documentos, declarações, avisos de benefícios, mensagens de marketing, Bills e kits de boas-vindas.
 seo-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
 uuid: 8acb7f68-0b52-4acd-97e2-af31c9408e8d
 topic-tags: installing
@@ -9,14 +9,14 @@ discoiquuid: 225f2bc1-6842-4c79-a66d-8024a29325c0
 docset: aem65
 role: Admin
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
-source-git-commit: 18cfefb794382b5314b18a62645f1fba28d314a2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1381'
 ht-degree: 7%
 
 ---
 
-# Instalar e configurar as Comunicações interativas{#install-and-configure-interactive-communications}
+# Instalar e configurar comunicações interativas{#install-and-configure-interactive-communications}
 
 ## Introdução {#introduction}
 
@@ -24,13 +24,13 @@ O AEM Form tem a capacidade de centralizar a criação, montagem, gerenciamento 
 
 Você pode usar o recurso de comunicação interativa para produzir comunicação em vários formatos. Por exemplo, web e PDF. É possível integrar a comunicação interativa com o fluxo de trabalho do AEM para processar e entregar a comunicação montada aos clientes no canal de sua escolha. Por exemplo, enviar uma comunicação para o usuário final por email.
 
-Se estiver atualizando de uma versão anterior e já tiver investido no gerenciamento de correspondência, você pode instalar o [pacote de compatibilidade](../../forms/using/installing-configuring-intreactive-communication-correspondence-management.md#install-compatibility-package) para continuar usando o gerenciamento de correspondência. Para obter informações sobre as diferenças entre a comunicação interativa e o gerenciamento de correspondência, consulte [Visão geral da comunicação interativa](/help/forms/using/interactive-communications-overview.md#interactive-communications-vs-correspondence-management).
+Se estiver atualizando de uma versão anterior e já tiver investido no gerenciamento de correspondência, você pode instalar o [pacote de compatibilidade](../../forms/using/installing-configuring-intreactive-communication-correspondence-management.md#install-compatibility-package) para continuar usando o gerenciamento de correspondência. Para obter informações sobre as diferenças entre comunicação interativa e gerenciamento de correspondência, consulte [ visão geral sobre ](/help/forms/using/interactive-communications-overview.md#interactive-communications-vs-correspondence-management) comunicação interativa.
 
 O AEM Forms é uma plataforma poderosa de nível empresarial. A comunicação interativa é apenas um dos recursos do AEM Forms. Para obter a lista completa dos recursos, consulte [Introdução ao AEM Forms](../../forms/using/introduction-aem-forms.md).
 
 ## Topologia de implantação {#deployment-topology}
 
-O pacote complementar do AEM Forms é um aplicativo implantado no AEM. É necessário ter no mínimo uma instância de Autor e Processamento do AEM para executar o recurso de Comunicações interativas. A topologia a seguir é uma topologia indicativa para executar as Comunicações interativas da AEM Forms, o Gerenciamento de correspondência, a captura de dados da AEM Forms e o fluxo de trabalho centrado na Forms em recursos OSGi. Para obter informações detalhadas sobre a topologia, consulte [Arquitetura e topologias de implantação do AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+O pacote complementar do AEM Forms é um aplicativo implantado no AEM. Você precisa de, no mínimo, um Autor e instância de Processamento de AEM para executar o recurso de Comunicações interativas. A topologia a seguir é uma topologia indicativa para executar as Comunicações interativas da AEM Forms, o Gerenciamento de correspondência, a captura de dados da AEM Forms e o fluxo de trabalho centrado na Forms em recursos OSGi. Para obter informações detalhadas sobre a topologia, consulte [Arquitetura e topologias de implantação do AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
 ![topologia recomendada](assets/recommended-topology.png)
 
@@ -46,7 +46,7 @@ Antes de começar a instalar e configurar a comunicação interativa e os recurs
 * Uma instância do AEM está em funcionamento. Na terminologia do AEM, uma &quot;instância&quot; é uma cópia do AEM em execução em um servidor no modo de criação ou publicação. Você precisa de pelo menos uma instância AEM (Autor ou Processamento) para executar a comunicação interativa do AEM Forms e os recursos de gerenciamento de correspondência:
 
    * **Autor**: uma instância do AEM usada para criar, carregar e editar conteúdo e administrar o site. Quando o conteúdo estiver pronto para entrar em funcionamento, ele será replicado para a instância de publicação.
-   * **Processando:** Uma instância de processamento é uma [AEM Author protegido](/help/forms/using/hardening-securing-aem-forms-environment.md) instância. Você pode configurar uma instância de Autor e fortalecê-la após executar a instalação.
+   * **Processando:** Uma instância de processamento é uma [Autor de AEM fortalecido](/help/forms/using/hardening-securing-aem-forms-environment.md) instância. Você pode configurar uma instância de Autor e fortalecê-la após executar a instalação.
 
    * **Publish**: uma instância do AEM que veicula o conteúdo publicado para o público pela Internet ou por uma rede interna.
 
@@ -67,13 +67,13 @@ Antes de começar a instalar e configurar a comunicação interativa e os recurs
   </tr>
   <tr>
    <td>libSM</td>
-   <td>zlib</td>
+   <td>Zlib</td>
    <td>libICE</td>
    <td>libuuid</td>
   </tr>
   <tr>
-   <td>glibc</td>
-   <td>libXext</td>
+   <td>Glibc</td>
+   <td>Libxext</td>
    <td><p>nss-softoken-freebl</p> </td>
    <td>fontconfig</td>
   </tr>
@@ -92,16 +92,16 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
 
 1. Abra a [Distribuição de softwares](https://experience.adobe.com/downloads). Você precisa de uma Adobe ID para fazer logon na Distribuição de softwares.
 1. Clique em **[!UICONTROL Adobe Experience Manager]** disponível no menu de cabeçalho.
-1. No **[!UICONTROL Filtros]** seção:
-   1. Selecionar **[!UICONTROL Forms]** do **[!UICONTROL Solução]** lista suspensa.
-   2. Selecione a versão e o tipo do pacote. Você também pode usar a variável **[!UICONTROL Pesquisar downloads]** para filtrar os resultados.
-1. Toque no nome do pacote aplicável ao seu sistema operacional e selecione **[!UICONTROL Aceitar termos do EULA]** e toque em **[!UICONTROL Baixar]**.
+1. **[!UICONTROL Na seção filtros]** :
+   1. Selecione **[!UICONTROL Forms]** na **[!UICONTROL lista suspensa solução]** .
+   2. Selecione a versão e o tipo para o pacote. Você também pode usar a **[!UICONTROL opção downloads]** do Search para filtrar os resultados.
+1. Toque no nome do pacote aplicável ao seu sistema operacional, selecione **[!UICONTROL aceitar termos]** do EULA e toque em **[!UICONTROL Download]** .
 1. Abra [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) e clique em **[!UICONTROL Fazer upload de pacote]** para fazer upload do pacote.
-1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
+1. Selecione o pacote e clique em **[!UICONTROL instalar]** .
 
-   Também é possível baixar o pacote por meio do link direto listado no [Versões do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR) artigo.
+   Você também pode baixar o pacote por meio da link direta listada no artigo de [ versões ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR) AEM Forms.
 
-1. Após a instalação do pacote, você será solicitado a reiniciar a instância do AEM. **Não reinicie o servidor imediatamente.** Antes de interromper o AEM Forms Server, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no [AEM-Diretório-Instalação]/crx-quickstart/logs/error.log e o log é estável.
+1. Depois que o pacote for instalado, você será solicitado a reiniciar o instância AEM. **Não reinicie imediatamente o servidor.** Antes de interromper o AEM Forms servidor, aguarde até que as mensagens não REGISTRAdas REGISTRAdas e irregulares sejam exibidas no [ arquivo de AEM-Installation-Directory ] /CRX-QuickStart/logs/Error.log e o log seja estável.
 1. Repita as etapas de 1 a 7 em todas as instâncias de Autor e Publicação.
 
 ## Configurações pós-instalação {#post-installation-configurations}
@@ -112,7 +112,7 @@ O AEM Forms tem algumas configurações obrigatórias e opcionais. As configura�
 
 #### Configurar bibliotecas RSA e BouncyCastle  {#configure-rsa-and-bouncycastle-libraries}
 
-Execute as seguintes etapas em todas as instâncias Autor e Publicar para inicializar, delegar as bibliotecas:
+Execute as etapas a seguir em todas as instâncias Autor e Publish para inicializar o bibliotecas:
 
 1. Interrompa a instância subjacente do AEM.
 1. Abra o [Diretório de instalação do AEM]arquivo \crx-quickstart\conf\sling.properties para edição.
@@ -143,7 +143,7 @@ Execute as seguintes etapas em todas as instâncias Autor e Publicar para adicio
 
 A comunicação interativa é a abordagem padrão e recomendada para criar comunicações com o cliente no AEM 6.5 Forms. Se você tiver atualizado ou migrado de uma versão anterior do e planeja continuar usando as cartas (Gerenciamento de correspondência), instale o [Pacote de compatibilidade do AEMFD](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en).
 
-O pacote de compatibilidade do AEMFD permite usar os seguintes ativos do AEM 6.4 Forms, AEM 6.3 Forms AEM e 6.2 Forms AEM no 6.5 Forms:
+O pacote de compatibilidade do AEMFD permite usar os seguintes ativos do AEM 6.4 Forms, AEM 6.3 Forms e AEM 6.2 Forms AEM no 6.5 Forms:
 
 * Fragmentos do documento
 * Cartas

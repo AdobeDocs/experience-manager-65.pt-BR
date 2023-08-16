@@ -7,9 +7,9 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: 0afd721ff02f2c9abeed40c4b8f4fdf169523c35
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '10068'
+source-wordcount: '10067'
 ht-degree: 3%
 
 ---
@@ -337,7 +337,7 @@ Se você fizer upload de muitos ativos para o Adobe Experience Manager, as solic
 
 ### Extrair arquivo ZIP contendo ativos {#extractzip}
 
-Você pode carregar arquivos ZIP como qualquer outro ativo compatível. As mesmas regras de nome de arquivo se aplicam a arquivos ZIP. [!DNL Experience Manager] O permite extrair um arquivo ZIP para um local DAM. Se os arquivos compactados não contiverem ZIP como extensão, habilite a detecção de tipo de arquivo usando conteúdo.
+Você pode carregar arquivos ZIP como qualquer outro ativo compatível. As mesmas regras de nome de arquivo se aplicam a arquivos ZIP. [!DNL Experience Manager] permite extrair um arquivo ZIP para um local DAM. Se os arquivos compactados não contiverem ZIP como extensão, habilite a detecção de tipo de arquivo usando conteúdo.
 
 Selecione um arquivo ZIP de cada vez, clique em **[!UICONTROL Extrair arquivo]** e selecione uma pasta de destino. Selecione uma opção que resolva conflitos, se houver. Se os ativos no arquivo ZIP existirem na pasta de destino, é possível selecionar uma destas opções: ignorar a extração, substituir arquivos existentes, manter ambos os ativos renomeando ou criar uma versão.
 

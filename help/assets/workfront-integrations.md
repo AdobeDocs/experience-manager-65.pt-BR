@@ -5,9 +5,9 @@ role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
 hide: true
-source-git-commit: 6f01f5725ed2b0533756830c1a5e55b7464708f6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1154'
 ht-degree: 5%
 
 ---
@@ -77,8 +77,8 @@ Veja a seguir os detalhes das funcionalidades disponíveis por meio de vários t
 | Envio em tempo real de metadados atualizados do Workfront para AEM | Atualizar automaticamente os metadados do Workfront mapeados para AEM sem recarregar um ativo ou uma nova versão de um ativo. | ✓ | Não | ✓ |
 | Mapear metadados do Workfront para pastas do AEM Assets | Sincronizar metadados de projeto do Workfront com pastas AEM vinculadas. | Não | ✓ | ✓ |
 | Atualizações de metadados AEM com novas versões | Uma configuração no AEM pode ser feita para determinar se um ativo de versão recente no Workfront também envia com qualquer alteração feita em seus metadados. | Não | ✓ | Não |
-| Atualizar automaticamente metadados AEM nas alterações no Forms personalizado no Workfront | O AEM permite que você se inscreva nas atualizações dos formulários de documento no Workfront. Como resultado, qualquer atualização nos metadados de formulário personalizado do documento do Workfront edita os valores dos campos de metadados AEM mapeados. | Não | ✓ | Não |
+| Atualizar automaticamente metadados AEM nas alterações no Forms personalizado no Workfront | O AEM permite que você assine as atualizações nos formulários de documento no Workfront. Como resultado, qualquer atualização nos metadados de formulário personalizado do documento do Workfront edita os valores dos campos de metadados AEM mapeados. | Não | ✓ | Não |
 | **Fluxos de trabalho (prontos para uso)** |
 | Criar nova versão de prova em ativos vinculados | Ao vincular um ativo no Workfront, uma prova pode ser gerada automaticamente. | Não | Personalizado | Não |
 | Definir status em objetos do Workfront | Definir status de objetos do Workfront com base em condições configuráveis usando workflows AEM | Não | ✓ | Próximos |
-| Publicar ativos no ambiente de publicação do AEM ou no Brand Portal | Dê aos usuários do Workfront a opção de publicar automaticamente ativos vinculados em um ambiente de publicação do AEM ou Brand Portal. | Não | ✓ | Próximos |
+| Publicar ativos no ambiente de publicação do AEM ou no Brand Portal | Ofereça aos usuários do Workfront a opção de publicar automaticamente ativos vinculados em um ambiente de publicação do AEM ou no Brand Portal. | Não | ✓ | Próximos |

@@ -2,10 +2,10 @@
 title: Criação de fragmentos de conteúdo do Guia de início rápido do Headless
 description: Saiba como usar fragmentos de conteúdo do AEM para projetar, criar, preparar e usar conteúdo independente de página para entrega headless.
 exl-id: 5787204d-bcce-447e-b98c-2bc1c0d744c3
-source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 91%
+source-wordcount: '385'
+ht-degree: 84%
 
 ---
 
@@ -17,7 +17,7 @@ Saiba como usar fragmentos de conteúdo do AEM para projetar, criar, preparar e 
 
 [Agora que você criou uma pasta de ativos](create-assets-folder.md) onde você pode armazenar os fragmentos de conteúdo, é possível criar os fragmentos.
 
-Os fragmentos de conteúdo permitem projetar, criar, preparar e publicar conteúdo independente de página. Eles permitem que você deixe o conteúdo pronto para uso em vários locais e em vários canais.
+Os fragmentos de conteúdo permitem projetar, criar, preparar e publicar conteúdo independente de página. Eles permitem preparar conteúdo pronto para uso em vários locais e em vários canais.
 
 Fragmentos de conteúdo contêm conteúdo estruturado e podem ser entregues no formato JSON.
 

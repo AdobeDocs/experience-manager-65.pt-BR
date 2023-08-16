@@ -2,7 +2,7 @@
 title: Migrar ativos e documentos do AEM Forms
 seo-title: Migrate AEM Forms assets and documents
 description: O utilitário de Migração permite migrar ativos e documentos do AEM Forms do AEM 6.3 Forms AEM ou de versões anteriores para o 6.4 Forms.
-seo-description: The Migration utility allows you to Migrate AEM Forms assets and documents from AEM 6.3 Forms or prior versions to AEM 6.4 Forms.
+seo-description: The Migration utility lets you Migrate AEM Forms assets and documents from AEM 6.3 Forms or prior versions to AEM 6.4 Forms.
 uuid: a3fdf940-7fc2-441c-91c8-ad66ba47e5f2
 content-type: reference
 topic-tags: correspondence-management, installing
@@ -13,9 +13,9 @@ discoiquuid: 39dfef85-d047-4b6d-a0f5-92bd77df103b
 docset: aem65
 role: Admin
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1743'
+source-wordcount: '1742'
 ht-degree: 1%
 
 ---
@@ -111,9 +111,11 @@ Quando você executa o Utilitário de Migração pela primeira vez, um log é cr
 
       * Componentes personalizados gravados para o Adaptive Forms
       * Sobreposições de componente, se houver.
+
    * Para migrar modelos de formulário adaptáveis, toque em **Migração de modelo adaptável do Forms** e na página Migração de componentes personalizados, toque em **Iniciar migração**. Os itens a seguir são migrados:
 
       * Modelos de formulário adaptável criados em `/apps` ou `/conf` usando o Editor de modelo AEM.
+
    * Migre os serviços de Configuração da nuvem do AEM Forms para aproveitar o novo paradigma de serviço de nuvem com reconhecimento de contexto, que inclui a interface de usuário habilitada para toque (em `/conf`). Ao migrar os serviços de Configuração na nuvem do AEM Forms, os serviços em nuvem no `/etc` são movidos para `/conf`. Se você não tiver nenhuma personalização dos serviços em nuvem que dependa dos caminhos herdados (`/etc`), é recomendável executar o utilitário de migração logo após a atualização para o 6.5 e usar a interface de toque da configuração da nuvem para qualquer trabalho adicional. Se você tiver personalizações existentes do Cloud Services, continue usando a interface clássica na configuração atualizada até que as personalizações sejam atualizadas para se alinharem aos caminhos migrados (`/conf`) e, em seguida, execute o utilitário de migração.
 
    Para migrar **Serviços em nuvem da AEM Forms**, que incluem o seguinte, toque em Migração de configuração do AEM Forms Cloud (a migração de configuração da nuvem é independente do pacote de compatibilidade do AEMFD), toque em Migração de configurações do AEM Forms Cloud e, na página Migração de configuração, toque em **Iniciar migração**:
@@ -122,14 +124,17 @@ Quando você executa o Utilitário de Migração pela primeira vez, um log é cr
 
       * Caminho de origem: `/etc/cloudservices/fdm`
       * Caminho de destino: `/conf/global/settings/cloudconfigs/fdm`
+
    * Recaptcha
 
       * Caminho de origem: `/etc/cloudservices/recaptcha`
       * Caminho de destino: `/conf/global/settings/cloudconfigs/recaptcha`
+
    * Adobe Sign
 
       * Caminho de origem: `/etc/cloudservices/echosign`
       * Caminho de destino: `/conf/global/settings/cloudconfigs/echosign`
+
    * Serviços em nuvem Typekit
 
       * Caminho de origem: `/etc/cloudservices/typekit`
@@ -144,15 +149,6 @@ Quando você executa o Utilitário de Migração pela primeira vez, um log é cr
 
    * **Adiciona as tags aos ativos**: adiciona a tag &quot;Gerenciamento de correspondência: ativos migrados&quot; / &quot;Forms adaptável: ativos migrados&quot;. aos ativos migrados, para que os usuários possam identificar esses ativos. Quando você executa o utilitário de Migração, todos os ativos existentes no sistema são marcados como Migrados.
    * **Gera tags**: as categorias e subcategorias presentes no sistema anterior são criadas como tags e, em seguida, essas tags são associadas aos ativos relevantes do Gerenciamento de correspondência no AEM. Por exemplo, uma Categoria (Declarações) e uma Subcategoria (Declarações) de um modelo de correspondência são geradas como tags.
-
-
-
-
-
-
-
-
-
 
 1. Depois que o utilitário de Migração terminar de ser executado, prossiga para o [tarefas de manutenção](#housekeepingtasks).
 

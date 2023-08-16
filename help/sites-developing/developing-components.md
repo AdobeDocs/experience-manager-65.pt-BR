@@ -12,9 +12,9 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3456'
+source-wordcount: '3454'
 ht-degree: 2%
 
 ---
@@ -202,7 +202,6 @@ Para obter exemplos, consulte:
 >* o código de amostra relacionado abrangido pelo [Amostra de código - Como personalizar campos de diálogo](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 >
 
-
 #### Criação de um novo campo {#creating-a-new-field}
 
 Os dispositivos para a interface habilitada para toque são implementados como componentes de interface do Granite.
@@ -379,7 +378,6 @@ Esse comportamento e a relação necessária entre ativo e componente podem ser 
    * Nome: `cq:authoring`
    * Tipo: `nt:unstructured`
 
-
 1. Em, crie um novo nó para manter todos os mapeamentos de ativo para componente:
 
    * Nome: `assetToComponentMapping`
@@ -396,27 +394,26 @@ Esse comportamento e a relação necessária entre ativo e componente podem ser 
 
       * Tipo: `String`
       * Valor: o grupo ao qual o ativo relacionado pertence; por exemplo, `media`
+
    * `assetMimetype`:
 
       * Tipo: `String`
       * Valor: o tipo MIME do ativo relacionado; por exemplo `image/*`
+
    * `droptarget`:
 
       * Tipo: `String`
       * Valor: o alvo de liberação; por exemplo, `image`
+
    * `resourceType`:
 
       * Tipo: `String`
       * Valor: o recurso componente relacionado; por exemplo, `foundation/components/image`
+
    * `type`:
 
       * Tipo: `String`
       * Valor: o tipo, por exemplo, `Images`
-
-
-
-
-
 
 Para obter exemplos, consulte:
 
@@ -458,7 +455,7 @@ Ao migrar um componente projetado para uso com a interface clássica para um com
 
 * Componentes
 
-   * Migrar [ `cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) código que usa funções específicas da interface clássica
+   * Migrar [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) código que usa funções específicas da interface clássica
    * Plug-in RTE. Para obter mais informações, consulte [Configuração do editor de rich text](/help/sites-administering/rich-text-editor.md).
    * [Migrar `cq:listener` código](#migrating-cq-listener-code) que usa funções específicas para a interface clássica
 

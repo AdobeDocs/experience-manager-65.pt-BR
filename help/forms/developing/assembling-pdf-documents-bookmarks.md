@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 role: Developer
 exl-id: 2b938410-f51b-420b-b5d4-2ed13ec29c5a
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '2558'
 ht-degree: 0%
@@ -160,7 +160,7 @@ Você pode definir opções de tempo de execução que controlam o comportamento
 
 **Montar o documento PDF**
 
-Para montar um documento PDF que contenha novos marcadores, use o do serviço do Assembler `invokeDDX` operação. O motivo pelo qual você deve usar a variável `invokeDDX` operações do Assembler em oposição a outras operações de serviço do Assembler, como `invokeOneDocument` é porque o serviço Assembler requer um documento XML de indicador passado dentro do objeto da coleção Map. Esse objeto é um parâmetro da variável `invokeDDX` operação.
+Para montar um documento PDF que contenha novos marcadores, use o `invokeDDX` operação. O motivo pelo qual você deve usar a variável `invokeDDX` operações do Assembler em oposição a outras operações de serviço do Assembler, como `invokeOneDocument` é porque o serviço Assembler requer um documento XML de indicador passado dentro do objeto da coleção Map. Esse objeto é um parâmetro da variável `invokeDDX` operação.
 
 **Salve o documento PDF que contém marcadores**
 
@@ -209,11 +209,11 @@ Montar um documento PDF com marcadores usando a API de serviço do Assembler (Ja
 
       * Um valor de string que representa o nome da chave. Este valor deve corresponder ao valor do elemento de origem PDF especificado no documento DDX.
       * A `com.adobe.idp.Document` objeto que contém o documento PDF de entrada.
+
    * Adicione o documento XML do marcador chamando o `java.util.Map` do objeto `put` e transmitindo os seguintes argumentos:
 
       * Um valor de string que representa o nome da chave. Este valor deve corresponder ao valor do elemento de origem Marcadores especificado no documento DDX.
       * A `com.adobe.idp.Document` objeto que contém o documento XML do indicador.
-
 
 1. Definir opções de tempo de execução.
 
@@ -323,7 +323,7 @@ Montar um documento PDF com marcadores usando a API de serviço do Assembler (se
    Para obter o documento PDF recém-criado, execute as seguintes ações:
 
    * Acesse o `AssemblerResult` do objeto `documents` que é um `Map` objeto que contém os documentos PDF de resultado.
-   * Repita através do `Map` até encontrar a chave que corresponde ao nome do documento resultante. Em seguida, converta os membros da matriz `value` para um `BLOB`.
+   * Repita através do `Map` até encontrar a chave que corresponde ao nome do documento resultante. Em seguida, converta o membro da matriz `value` para um `BLOB`.
    * Extraia os dados binários que representam o documento PDF acessando seus `BLOB` do objeto `MTOM` campo. Isso retorna uma matriz de bytes que você pode gravar em um arquivo PDF.
 
 **Consulte também**

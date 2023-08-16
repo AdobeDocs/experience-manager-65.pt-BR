@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ca98dc3c-7056-4cdc-b4d3-23e471da5730
 docset: aem65
 exl-id: 3df50303-5cdd-4df0-abec-80831d2ccef7
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Você pode usar o servidor proxy para monitorar toda a interação cliente-servi
 * SMTP para mensagens de email
 * LDAP para gerenciamento de usuários
 
-Por exemplo, você pode posicionar o servidor proxy entre dois aplicativos que se comunicam por meio de uma rede TCP/IP; por exemplo, um navegador da Web e AEM. Isso permite que você monitore exatamente o que acontece quando você solicita uma página AEM.
+Por exemplo, você pode posicionar o servidor proxy entre dois aplicativos que se comunicam por meio de uma rede TCP/IP; por exemplo, um navegador da Web e AEM. Isso permite monitorar exatamente o que acontece quando você solicita uma página AEM.
 
 ## Iniciando a Ferramenta de Servidor Proxy {#starting-the-proxy-server-tool}
 

@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1107'
 ht-degree: 3%
 
 ---
@@ -132,7 +132,7 @@ Para aplicar a configuração do serviço de e-mail a um boletim informativo:
 1. Criar uma configuração do serviço de e-mail.
 1. Abra seu email/informativo.
 1. Abra as configurações de email/informativo clicando em **Configurações** ou clicando em **Propriedades da página em** o ajudante.
-1. Clique em **Adicionar serviço** in **Cloud Services** guia. Você verá a lista de serviços. Selecione a configuração necessária - **ExactTarget** ou **Silverpop** - na lista suspensa.
+1. Clique em **Adicionar serviço** in **Cloud Service** guia. Você verá a lista de serviços. Selecione a configuração necessária - **ExactTarget** ou **Silverpop** - na lista suspensa.
 
    ![chlimage_1-5](assets/chlimage_1-5a.jpeg)
 

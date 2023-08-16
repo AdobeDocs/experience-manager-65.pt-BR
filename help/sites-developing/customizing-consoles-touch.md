@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 61a4e196-bd53-4ef0-816b-c14401462457
 docset: aem65
 exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '669'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 O AEM fornece vários mecanismos para permitir que você personalize os consoles (e o [funcionalidade de criação de página](/help/sites-developing/customizing-page-authoring-touch.md)) da sua instância de criação.
 
-* Clientlibs As clientlibs permitem estender a implementação padrão para obter uma nova funcionalidade, ao mesmo tempo em que reutilizam funções, objetos e métodos padrão. Ao personalizar, você pode criar sua própria clientlib em `/apps.` Por exemplo, ele pode conter o código necessário para o componente personalizado.
+* Clientlibs As clientlibs permitem estender a implementação padrão para obter uma nova funcionalidade, além de reutilizar as funções, os objetos e os métodos padrão. Ao personalizar, você pode criar sua própria clientlib em `/apps.` Por exemplo, ele pode conter o código necessário para o componente personalizado.
 
 * As Sobreposições são baseadas nas definições do nó e permitem sobrepor a funcionalidade padrão (em `/libs`) com sua própria funcionalidade personalizada (no `/apps`). Ao criar uma sobreposição, uma cópia 1:1 do original não é necessária, pois a fusão de recursos do sling permite a herança.
 

@@ -11,9 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: e961ce67e5b1a71e3af6dded304d99cd9e6896bc
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4033'
+source-wordcount: '4032'
 ht-degree: 0%
 
 ---
@@ -284,7 +284,6 @@ As mensagens de email podem conter um link que abre a tarefa no espaço de traba
 >* Para configurar o espaço de trabalho para usar os modelos de e-mail apropriados, consulte a [Guia do administrador do AEM Forms JEE](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
 >
 >* Se os rascunhos forem encaminhados após o envio da tarefa no espaço de trabalho do AEM Forms, as notificações por email serão enviadas. Se os rascunhos forem encaminhados do ponto de partida do espaço de trabalho do AEM Forms, nenhuma notificação será enviada por email.
-
 
 Quando você conclui uma tarefa por email, ela é removida da lista de tarefas pendentes no espaço de trabalho do AEM Forms.
 

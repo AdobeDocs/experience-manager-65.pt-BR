@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
 exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
-source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 16%
+source-wordcount: '797'
+ht-degree: 14%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 16%
 
 Os fluxos de trabalho de projeto disponíveis prontos para uso incluem o seguinte:
 
-* **Fluxo de trabalho para aprovação de projeto** - esse fluxo de trabalho permite atribuir conteúdo a um usuário, analisar esse conteúdo e depois aprová-lo.
+* **Fluxo de trabalho para aprovação de projeto** - Esse fluxo de trabalho permite atribuir conteúdo a um usuário, analisar esse conteúdo e depois aprová-lo.
 * **Solicitar inicialização** - um fluxo de trabalho que solicita uma inicialização.
 * **Solicitar página de aterrissagem** - esse fluxo de trabalho solicita uma página de aterrissagem.
 * **Solicitar email** - Fluxo de trabalho para solicitar um email.
@@ -31,7 +31,7 @@ Os fluxos de trabalho de projeto disponíveis prontos para uso incluem o seguint
 
 Dependendo do Modelo de projeto selecionado, há determinados fluxos de trabalho disponíveis:
 
-|  | **Projeto simples** | **Projeto de mídia** | **Projeto de sessão de fotos do produto** | **Projeto de tradução** |
+|   | **Projeto simples** | **Projeto de mídia** | **Projeto de sessão de fotos do produto** | **Projeto de tradução** |
 |---|:-:|:-:|:-:|:-:|
 | Solicitar cópia |  | x |  |  |
 | Sessão fotográfica do produto |  | x | x |  |

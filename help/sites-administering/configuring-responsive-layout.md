@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1285'
 ht-degree: 3%
 
 ---
@@ -30,11 +30,11 @@ O AEM permite um layout responsivo para suas páginas usando uma combinação de
 
 * Componente [**Contêiner de layout**](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)
 
-   Esse componente fornece um sistema de parágrafo de grade para permitir adicionar e posicionar componentes em uma grade responsiva. Ela pode ser usada como o parsys padrão da página e/ou disponibilizada aos autores no navegador de componentes.
+  Esse componente fornece um sistema de parágrafo de grade para permitir adicionar e posicionar componentes em uma grade responsiva. Ela pode ser usada como o parsys padrão da página e/ou disponibilizada aos autores no navegador de componentes.
 
    * O padrão **Contêiner de layout** O componente é definido em:
 
-      /libs/wcm/foundation/components/responvegrid
+     /libs/wcm/foundation/components/responvegrid
 
    * É possível definir contêineres de layout:
 
@@ -42,11 +42,10 @@ O AEM permite um layout responsivo para suas páginas usando uma combinação de
       * Como o parsys padrão da página.
       * Ambos.
 
-         Você pode ter o contêiner de layout como padrão para a página, permitindo que o usuário adicione mais contêineres de layout aqui; por exemplo, para obter o controle da coluna.
+        Você pode ter o contêiner de layout como padrão para a página, permitindo que o usuário adicione mais contêineres de layout aqui; por exemplo, para obter o controle da coluna.
 
 * **[Modo de layout](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
-Depois que o contêiner de layout é posicionado na página, você pode usar 
-**Layout** para posicionar o conteúdo na grade responsiva.
+Depois que o contêiner de layout é posicionado na página, você pode usar **Layout** para posicionar o conteúdo na grade responsiva.
 
 * [**Emulador**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
 Isso permite criar e editar sites responsivos que reorganizam o layout de acordo com o tamanho do dispositivo ou da janela, redimensionando componentes interativamente. O usuário pode ver como o conteúdo é renderizado usando o Emulador.
@@ -68,7 +67,7 @@ Com esses mecanismos de grade responsivos, você pode:
 
 ## Configurar o emulador responsivo {#configuring-the-responsive-emulator}
 
-Essas tarefas permitem que você veja a resposta **Emulador** no seu site.
+Essa tarefa permite que você veja a mensagem **Emulador** no seu site.
 
 ### Registrar os componentes da página para emulação {#register-your-page-components-for-emulation}
 
@@ -188,15 +187,15 @@ Os dois exemplos a seguir ilustram a definição:
 
 * **HTL:**
 
-   ```xml
-   <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}/>
-   ```
+  ```xml
+  <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}/>
+  ```
 
 * **JSP:**
 
-   ```
-   <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
-   ```
+  ```
+  <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
+  ```
 
 ### Incluir o CSS responsivo {#include-the-responsive-css}
 
@@ -282,11 +281,11 @@ Para permitir que os autores adicionem outras grades responsivas às páginas de
 
 * **Ambiente de criação**
 
-   Uso [Modo de design](/help/sites-authoring/default-components-designmode.md) para ativar o **Contêiner de camada** para uma página.
+  Uso [Modo de design](/help/sites-authoring/default-components-designmode.md) para ativar o **Contêiner de camada** para uma página.
 
 * **Definição de componente**
 
-   Uso `allowedComponent` ou uma inclusão estática ao definir o componente.
+  Uso `allowedComponent` ou uma inclusão estática ao definir o componente.
 
 ### Configurar a grade do contêiner de layout {#configure-the-grid-of-the-layout-container}
 
@@ -309,6 +308,7 @@ Você pode configurar o número de colunas disponíveis para cada instância esp
    * Número de colunas disponíveis:
 
       * `columns="{String}8"`
+
    * Componentes que podem ser adicionados ao componente atual:
 
       * `components="[/libs/wcm/foundation/components/responsivegrid, ...`

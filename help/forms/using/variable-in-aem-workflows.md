@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2230'
+source-wordcount: '2229'
 ht-degree: 0%
 
 ---
@@ -181,7 +181,7 @@ Para obter mais exemplos, consulte [Criar um modelo de fluxo de trabalho](../../
 
 #### Etapa Ir para {#go-to-step}
 
-A variável **Etapa Ir para** permite especificar a próxima etapa no modelo de fluxo de trabalho a ser executada, dependendo do resultado de uma expressão de roteamento.
+A variável **Etapa Ir para** permite especificar a próxima etapa do modelo de fluxo de trabalho a ser executada, dependendo do resultado de uma expressão de roteamento.
 
 Semelhante à etapa OU Split, você pode definir a expressão de roteamento para a etapa Ir para usando uma definição de regra, um script ECMA ou um script externo.
 

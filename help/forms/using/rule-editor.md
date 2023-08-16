@@ -2,7 +2,7 @@
 title: Editor de regras de formulários adaptáveis
 seo-title: Adaptive forms rule editor
 description: O editor de regras de formulários adaptáveis permite adicionar comportamento dinâmico e criar lógica complexa em formulários sem codificação ou script.
-seo-description: Adaptive forms rule editor allows you to add dynamic behavior and build complex logic into forms without coding or scripting.
+seo-description: Adaptive forms rule editor lets you add dynamic behavior and build complex logic into forms without coding or scripting.
 uuid: c1b3d6e4-6f36-4352-ab57-9850d718e47c
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 feature: Adaptive Forms
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '6941'
+source-wordcount: '6929'
 ht-degree: 0%
 
 ---
@@ -81,14 +81,14 @@ Embora seja possível obter a maioria dos casos de uso usando qualquer construç
 * Para acionar uma ação com base em várias condições, é recomendável usar a construção action-condition. Por exemplo, para mostrar e ocultar o campo A avaliando as condições nos campos B, C e D, use Mostrar ou Ocultar tipo de regra no campo A.
 * Use a construção de condição-ação ou condição de ação se a regra contiver uma ação para uma condição.
 * Se uma regra verificar uma condição e executar uma ação imediatamente ao fornecer um valor em um campo ou ao sair de um campo, é recomendável gravar uma regra com construção de condição-ação ou o tipo de regra Quando no campo em que a condição é avaliada.
-* A condição na regra Quando é avaliada quando um usuário altera o valor do objeto no qual a regra Quando é aplicada. No entanto, se você quiser que a ação seja acionada quando o valor for alterado no lado do servidor, como no caso de preenchimento prévio do valor, é recomendável gravar uma regra When que aciona a ação quando o campo é inicializado.
-* Ao escrever regras para objetos de menus suspensos, botões de opção ou caixas de seleção, as opções ou os valores desses objetos de formulário no formulário são preenchidos previamente no editor de regras.
+* A condição na regra Quando é avaliada quando um usuário altera o valor do objeto no qual a regra Quando é aplicada. No entanto, se você quiser que a ação seja acionada quando o valor for alterado no lado do servidor, curtir em caso de preenchê-lo, recomenda-se escrever uma regra quando o campo for inicializado.
+* Ao escrever regras para menus suspensos, botões de opção ou objetos de caixas de seleção, as opções ou os valores desses objetos de formulário no formulário são preenchidos previamente no regra editor.
 
-## Tipos de operadores e eventos disponíveis no editor de regras {#available-operator-types-and-events-in-rule-editor}
+## Tipos de operador e eventos disponíveis no regra editor {#available-operator-types-and-events-in-rule-editor}
 
-O editor de regras fornece os seguintes operadores lógicos e eventos com os quais você pode criar regras.
+O editor regra fornece os seguintes operadores lógicos e eventos que usam as regras que você pode criar.
 
-* **É Igual a**
+* **É igual a**
 * **Não é igual a**
 * **Começa com**
 * **Termina com**
@@ -149,7 +149,7 @@ Para obter mais informações sobre como configurar serviços no modelo de dados
 
 Para obter mais informações sobre como configurar serviços no modelo de dados de formulário, consulte [Integração de dados do AEM Forms](/help/forms/using/data-integration.md).
 
-A variável **Definir propriedade** O tipo de regra permite definir o valor de uma propriedade do objeto especificado com base em uma ação de condição.
+A variável **Definir propriedade** o tipo de regra permite definir o valor de uma propriedade do objeto especificado com base em uma ação de condição.
 
 Ela permite definir regras para adicionar caixas de seleção dinamicamente ao formulário adaptável. Você pode usar uma função personalizada, um objeto de formulário ou uma propriedade de objeto para definir uma regra.
 
@@ -179,13 +179,13 @@ A figura a seguir mostra um exemplo de adição dinâmica de caixas de seleção
 
 **Adicionar instância** Adiciona uma ocorrência da linha de tabela ou painel repetível especificada.
 
-**Remover Instância** Remove uma ocorrência da linha de tabela ou painel repetível especificada.
+**Remover instância** Remove uma instância da linha de tabela ou de painel repetida especificada.
 
-**Navegue até** Navega até outras Comunicações interativas, formulários adaptáveis, outros ativos, como imagens ou fragmentos de documentos, ou um URL externo. Para obter mais informações, consulte [Botão Adicionar à comunicação interativa](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel).
+**Navegue para** navegar para outras comunicações interativas, formulários adaptáveis, outros ativos como imagens ou fragmentos de documento, ou um URL externo. Para obter mais informações, consulte [ adicionar botão à comunicação ](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel) interativa.
 
 ### Definir valor de {#set-value-of}
 
-A variável **[!UICONTROL Definir valor de]** O tipo de regra permite definir o valor de um objeto de formulário dependendo se a condição especificada é atendida ou não. O valor pode ser definido como um valor de outro objeto, uma string literal, um valor derivado de uma expressão matemática ou de uma função, um valor de uma propriedade de outro objeto ou a saída de um serviço de modelo de dados de formulário. Da mesma forma, você pode verificar uma condição em um componente, string, propriedade ou valores derivados de uma função ou expressão matemática.
+O **[!UICONTROL conjunto de valor de]** regra tipo permite definir o valor de um objeto de formulário dependendo se a condição especificada está satisfeita ou não. O valor pode ser definido como um valor de outro objeto, uma sequência de caracteres literal, um valor derivado de uma expressão matemática ou uma função, um valor de uma propriedade de outro objeto ou a saída de um serviço de modelo de dados de formulário. Da mesma forma, você pode verificar uma condição em um componente, string, propriedade ou valores derivados de uma função ou expressão matemática.
 
 Observe que o tipo de regra Definir valor de não está disponível para todos os objetos de formulário, como painéis e botões da barra de ferramentas. Uma regra padrão Definir valor de tem a seguinte estrutura:
 
@@ -197,7 +197,7 @@ Defina o valor do Objeto A como:
 
 Quando (opcional):
 
-(Condição 1 E Condição 2 E Condição 3) é VERDADEIRO;
+(Condition 1 e Condition 2 e Condition 3) são TRUE;
 
 
 
@@ -345,21 +345,21 @@ Para iniciar a interface do usuário do editor de regras:
 
 Vamos analisar cada componente da interface do editor de regras em detalhes.
 
-### A. Exibição de componente-regra {#a-component-rule-display}
+### A. Componente-exibição regra {#a-component-rule-display}
 
-Exibe o título do objeto de formulário adaptável pelo qual você iniciou o editor de regras e o tipo de regra selecionado no momento. No exemplo acima, o editor de regras é iniciado a partir de um objeto de formulário adaptável chamado Salário, e o tipo de regra selecionado é Quando.
+Exibe o título do objeto de formulário adaptável pelo qual você iniciou a regra editor e o tipo de regra selecionado no momento. No exemplo acima, a regra editor é iniciada a partir de um objeto de formulário adaptável intitulado e o tipo de regra selecionado é quando.
 
-### B. Funções e objetos de formulário {#b-form-objects-and-functions-br}
+### B. objetos de formulário e funções {#b-form-objects-and-functions-br}
 
-O painel à esquerda na interface do editor de regras inclui duas guias: **[!UICONTROL Objetos do Forms]** e **[!UICONTROL Funções]**.
+O painel à esquerda na interface regra editor usuário inclui duas guias: **[!UICONTROL Forms objetos]** e **[!UICONTROL funções]** .
 
 A guia Objetos de formulário mostra uma exibição hierárquica de todos os objetos contidos no formulário adaptável. Ele exibe o título e o tipo dos objetos. Ao escrever uma regra, você pode arrastar e soltar objetos de formulário no editor de regras. Ao criar ou editar uma regra ao arrastar e soltar um objeto ou função em um espaço reservado, o espaço reservado automaticamente assume o tipo de valor apropriado.
 
 Os objetos de formulário que têm uma ou mais regras válidas aplicadas são marcados com um ponto verde. Se alguma das regras aplicadas a um objeto de formulário for inválida, o objeto de formulário será marcado com um ponto amarelo.
 
-A guia Funções inclui um conjunto de funções incorporadas, como Soma de, Mín de, Máx de, Média de, Número de e Validar formulário. Você pode usar essas funções para calcular valores em painéis e linhas de tabela repetíveis e usá-los em declarações de ação e condição ao escrever regras. No entanto, você pode criar [funções personalizadas](#custom-functions) também.
+As funções guia incluem um conjunto de funções internas, como soma de, mín., máx, média de, número de e validação de formulário. Você pode usar essas funções para calcular valores em painéis repetíveis e linhas de tabela e usá-los nas declarações de ação e condição ao escrever regras. No entanto, você pode criar [ funções ](#custom-functions) personalizadas também.
 
-![A guia Funções](assets/functions.png)
+![As funções guia](assets/functions.png)
 
 >[!NOTE]
 >
@@ -373,7 +373,7 @@ O botão de alternância, quando tocado, alterna o painel de funções e objetos
 
 ### D. Editor visual de regras {#d-visual-rule-editor}
 
-Editor visual de regras é a área no modo editor visual da interface do usuário do editor de regras em que você escreve regras. Ela permite selecionar um tipo de regra e definir adequadamente condições e ações. Ao definir condições e ações em uma regra, você pode arrastar e soltar objetos e funções de formulário do painel Objetos de formulário e Funções.
+Editor visual de regras é a área no modo editor visual da interface do usuário do editor de regras em que você escreve regras. Ele permite selecionar um tipo de regra e definir adequadamente condições e ações. Ao definir condições e ações em uma regra, você pode arrastar e soltar objetos e funções de formulário do painel Objetos de formulário e Funções.
 
 Para obter mais informações sobre como usar o editor visual de regras, consulte [Regras de gravação](#write-rules).
 
@@ -430,13 +430,13 @@ Execute as seguintes etapas para escrever regras:
 
    No botão de opção Estado Civil, **Casado** e **Solteiro** opções são atribuídas **0** e **1** valores, respectivamente. Você pode verificar os valores atribuídos na guia Título da caixa de diálogo Editar botão de opção, conforme mostrado abaixo.
 
-   ![Valores do botão de opção do editor de regras](assets/radio-button-values.png)
+   ![Valores de botão de rádio do regra editor](assets/radio-button-values.png)
 
-1. No **Insira uma string** na regra, especifique **0**.
+1. **No campo inserir uma String** no regra, especifique **0** .
 
-   ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4.png)
+   ![regras de gravação-Visual-editor-4](assets/write-rules-visual-editor-4.png)
 
-   Você definiu a condição como `When Marital Status is equal to Married`. Em seguida, defina a ação a ser executada se essa condição for True.
+   Você definiu a condição como `When Marital Status is equal to Married`. Próximo, defina a ação a ser executada se essa condição for verdadeira.
 
 1. Na instrução Then, selecione **[!UICONTROL Mostrar]** do **[!UICONTROL Selecionar ação]** menu suspenso.
 
@@ -621,7 +621,7 @@ Sintaxe: `@this currentComponent`
 
 >[!NOTE]
 >
->Os comentários antes da função personalizada são usados para o resumo. O resumo pode ser estendido para várias linhas até que uma tag seja encontrada. Limite o tamanho a um único para obter uma descrição concisa no construtor de regras.
+>Comentários antes da função personalizada são usados para resumo. O resumo pode ser estendido para várias linhas até que uma tag seja encontrada. Limite o tamanho a um único para obter uma descrição concisa no construtor de regras.
 
 **Adição de uma função personalizada**
 

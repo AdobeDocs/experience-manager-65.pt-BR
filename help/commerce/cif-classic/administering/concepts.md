@@ -6,9 +6,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4484'
+source-wordcount: '4478'
 ht-degree: 1%
 
 ---
@@ -198,7 +198,7 @@ Embora a localização real possa depender da sua implementação; por exemplo, 
 
 #### Categorias estruturais versus de marketing {#structural-versus-marketing-categories}
 
-Se as duas categorias a seguir puderem ser diferenciadas, você poderá esclarecer URLs com uma estrutura significativa (árvores de `cq:Page` nós) e, portanto, muito próximo da gestão clássica de conteúdo do AEM):
+Se as duas categorias a seguir puderem ser diferenciadas, isso permitirá definir URLs claros com uma estrutura significativa (árvores de `cq:Page` nós) e, portanto, muito próximo da gestão clássica de conteúdo do AEM):
 
 * *Categorias * estruturais
 
@@ -358,7 +358,7 @@ Esses buckets tomam a forma de pastas fantasmas que são introduzidas na estrutu
 
 Esse cenário envolve a configuração de duas instâncias de autor:
 
-1. Instância de autor principal
+1. Instância do autor principal
 
    Importa dados de produto do PIM, no qual o pós-processamento dos caminhos de ativos está desativado.
 
@@ -418,7 +418,7 @@ Para todas as implementações, os seguintes pontos podem ser considerados:
 
   Quanto mais nós você tiver, mais flexível será seu conteúdo (por exemplo, parsys). No entanto, tudo é uma escolha e você precisa de flexibilidade individual (por padrão) ao manipular (por exemplo) produtos de 30 mil?
 
-* Evite a duplicação o máximo possível (consulte localização). Ou, quando fizer isso, pense em quantos nós a duplicação leva.
+* Evite a duplicação o máximo possível (consulte a localização) ou, quando fizer isso, pense em quantos nós a duplicação leva.
 * Tente marcar seu conteúdo o máximo possível para preparar a otimização da consulta.
 
   Por exemplo:
@@ -642,7 +642,7 @@ Há uma página que permite gerenciar facilmente as informações da sua conta. 
 
 Seu site precisa armazenar uma seleção de endereços, incluindo entrega, cobrança e endereços alternativos. Isso pode ser implementado usando formulários com base no formato de endereço padrão ou você pode usar o componente Catálogo de endereços fornecido pelo AEM.
 
-Este componente do Catálogo de Endereços permite:
+Esse componente do Catálogo de Endereços permite:
 
 * editar endereços no livro
 * selecionar um endereço do livro para o endereço de entrega

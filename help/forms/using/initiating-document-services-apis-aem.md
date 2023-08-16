@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 8b85bdc7-3864-49c9-81b0-cf15b8e986d9
 exl-id: 123087a2-9d09-4579-9185-2ccd7d25bf8d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ O fluxo de trabalho Chamar DDX requer os seguintes documentos de entrada:
 
 #### Opções de ambiente {#environment-options}
 
-A guia Opções de ambiente permite definir várias opções de processamento para a API de chamada.
+A guia Opções de ambiente permite definir várias opções de processamento para a API invoke.
 
 * *Nível de registro da tarefa*: especifica o nível de log para os logs de processamento.
 * *Validar apenas*: verifica a validade do DDX de entrada.

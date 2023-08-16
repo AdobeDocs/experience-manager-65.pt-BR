@@ -4,9 +4,9 @@ description: Descubra como criar ou adicionar facilmente um formulário adaptáv
 Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 feature: Adaptive Forms
 exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
-source-git-commit: 600dcc52829ff2c5e54176bda7631845ef24f986
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2970'
+source-wordcount: '2960'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
 | AEM 6.5 | Este artigo |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=pt-BR) |
 
 Com o AEM Forms, você pode incorporar facilmente formulários adaptáveis em suas páginas da Web. Isso permite que seus visitantes preencham e enviem formulários de maneira conveniente sem nunca sair da página em que estão. Ao fazer isso, eles podem se envolver facilmente com outros elementos do site enquanto interagem ativamente com o formulário.
 
@@ -30,7 +30,7 @@ O AEM Forms fornece o Contêiner de formulário adaptável e os componentes Form
 
 ## Benefícios do uso do componente de Contêiner de formulário adaptável no Editor de páginas AEM ou no Fragmento de experiência
 
-O uso do Contêiner de formulário adaptável no Editor de páginas AEM permite criar experiências de captura de dados contínua em uma página do Sites, usando o potencial dos componentes adaptáveis do Forms, incluindo comportamento dinâmico, validações, integração de dados, geração de documentos de registro e automação do processo comercial. Ele também permite usar vários recursos de páginas do AEM Sites, como controle de versão, direcionamento, tradução e gerenciador de vários sites, aprimorando a experiência geral de criação e gerenciamento de formulários. Vamos explorar alguns destes recursos:
+O uso do Contêiner de formulário adaptável no Editor de páginas AEM permite que você crie experiências de captura de dados perfeitas em uma página do Sites, usando o potencial dos componentes do Forms adaptáveis, incluindo comportamento dinâmico, validações, integração de dados, geração de documentos de registro e automação do processo comercial. Ele também permite usar vários recursos de páginas do AEM Sites, como controle de versão, direcionamento, tradução e gerenciador de vários sites, aprimorando a experiência geral de criação e gerenciamento de formulários. Vamos explorar alguns destes recursos:
 
 * **Controle de versão:** Oferta de páginas do AEM Sites [recursos robustos de controle de versão](/help/sites-authoring/working-with-page-versions.md), permitindo rastrear e gerenciar diferentes versões dos formulários. Isso permite fazer alterações e aprimoramentos nos formulários, mantendo a capacidade de reverter para versões anteriores, se necessário. O controle de versão garante uma abordagem controlada e organizada para o desenvolvimento e evolução da forma.
 * **Direcionamento (integração com o Adobe Target):** Com os recursos de direcionamento de páginas do AEM Sites, você também pode [personalizar a experiência do formulário para públicos diferentes](/help/sites-administering/target.md). Ao utilizar segmentos de usuários e critérios de direcionamento, você pode adaptar o conteúdo, o design ou o comportamento do formulário a grupos específicos de usuários. Isso permite fornecer uma experiência de formulário personalizada e relevante, aumentando as taxas de engajamento e conversão.
@@ -76,7 +76,7 @@ Certifique-se de que o [Os Componentes principais adaptáveis do Forms são ativ
 
 Para ativar a funcionalidade completa do componente de Contêiner adaptável do Forms, adicione as bibliotecas de clientes Customheaderlibs e Customfooterlibs à sua página do AEM Sites usando o pipeline de implantação. Para adicionar as bibliotecas:
 
-1. Faça logon na instância do AEM Author e abra o CRX DE. O URL padrão de uma instância de Autor em execução localmente é `http://localhost:4502/crx/de`.
+1. Faça logon na instância de autor do AEM e abra o CRX DE. O URL padrão de uma instância de Autor em execução localmente é `http://localhost:4502/crx/de`.
 
 1. Abra o `/apps/[your-sites-project]/components/page/customheaderlibs.html` e adicione o seguinte código ao arquivo:
 

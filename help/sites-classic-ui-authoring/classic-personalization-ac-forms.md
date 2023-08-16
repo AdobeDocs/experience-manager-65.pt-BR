@@ -8,9 +8,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 3086a8a1-8d2e-455a-a055-91b07d31ea65
 exl-id: 3f9ed24e-c54b-4bd4-9212-eabc67bb540e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1224'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ O Forms dedicado ao Adobe Campaign tem componentes específicos. Esses component
 Esta seção só detalha links específicos para o Adobe Campaign. Para obter mais informações sobre uma visão geral de como usar formulários no Adobe Experience Manager, consulte [Componentes do modo de edição](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md).
 
 1. Navegue até o formulário que deseja editar.
-1. Na caixa de ferramentas, selecione **Página** > **Página Propriedades...** em seguida, acesse o **Cloud Services** da janela pop-up.
+1. Na caixa de ferramentas, selecione **Página** > **Página Propriedades...** em seguida, acesse o **Cloud Service** da janela pop-up.
 1. Adicione o serviço Adobe Campaign clicando em **Adicionar serviço** e, em seguida, selecionando a configuração que corresponde à sua instância do Adobe Campaign na lista suspensa do serviço. Essa configuração é realizada ao configurar a conexão entre suas instâncias. Para obter mais informações, consulte [Conectar o AEM ao Adobe Campaign](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
 
    >[!NOTE]
@@ -89,7 +89,7 @@ Esta seção só detalha links específicos para o Adobe Campaign. Para obter ma
 
 1. Acesse os parâmetros gerais do formulário usando o **Editar** botão encontrado no início do formulário. A variável **Formulário** permite selecionar uma página de agradecimento para a qual o usuário será redirecionado após validar o formulário.
 
-   A variável **Avançado** permite selecionar o tipo de formulário. A variável **Opções de publicação** fornece a escolha entre três tipos de formulários do Adobe Campaign:
+   A variável **Avançado** form permite selecionar o tipo de formulário. A variável **Opções de publicação** fornece a escolha entre três tipos de formulários do Adobe Campaign:
 
    * **Adobe Campaign: salvar perfil**: permite criar ou atualizar um recipient no Adobe Campaign (valor padrão).
    * **Adobe Campaign: assinar os serviços**: permite gerenciar as assinaturas de um recipient no Adobe Campaign.

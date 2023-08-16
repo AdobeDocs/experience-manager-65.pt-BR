@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
 feature: Configuring
 exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '662'
 ht-degree: 0%
 
 ---
@@ -69,19 +69,19 @@ Esses elementos estão vinculados pelos seguintes parâmetros para os elementos 
 
 * **Logger (Logger de Log)**
 
-   Defina os serviços que geram as mensagens.
+  Defina os serviços que geram as mensagens.
 
 * **Arquivo de log (Logging Logger)**
 
-   Defina o arquivo físico para armazenar as mensagens de log.
+  Defina o arquivo físico para armazenar as mensagens de log.
 
-   Isso é usado para vincular um Logger de Log a um Gravador de Log. O valor deve ser idêntico ao mesmo parâmetro na configuração do Gravador de Log para que a conexão seja estabelecida.
+  Isso é usado para vincular um Logger de Log a um Gravador de Log. O valor deve ser idêntico ao mesmo parâmetro na configuração do Gravador de Log para que a conexão seja estabelecida.
 
 * **Arquivo de Log (Gravador de Log)**
 
-   Defina o arquivo físico no qual as mensagens de log serão gravadas.
+  Defina o arquivo físico no qual as mensagens de log serão gravadas.
 
-   Deve ser idêntico ao mesmo parâmetro na configuração do Gravador de log, caso contrário, a correspondência não será feita. Se não houver correspondência, um Gravador implícito será criado com a configuração padrão (rotação diária de log).
+  Deve ser idêntico ao mesmo parâmetro na configuração do Gravador de log, caso contrário, a correspondência não será feita. Se não houver correspondência, um Gravador implícito será criado com a configuração padrão (rotação diária de log).
 
 ### Registradores e gravadores padrão {#standard-loggers-and-writers}
 
@@ -93,7 +93,7 @@ O primeiro é um caso especial, uma vez que `request.log` e `access.log` arquivo
 
    * Agente de dados de solicitação personalizável do Apache Sling
 
-      (org.apache.sling.engine.impl.log.RequestLoggerService)
+     (org.apache.sling.engine.impl.log.RequestLoggerService)
 
    * Escrever mensagens sobre o conteúdo da solicitação em `request.log`.
 
@@ -101,7 +101,7 @@ O primeiro é um caso especial, uma vez que `request.log` e `access.log` arquivo
 
    * Logger de solicitação do Apache Sling
 
-      (org.apache.sling.engine.impl.log.RequestLogger)
+     (org.apache.sling.engine.impl.log.RequestLogger)
 
    * Grava as mensagens em `request.log` ou `access.log`.
 
@@ -113,7 +113,7 @@ Os outros pares seguem a configuração padrão:
 
    * Configuração do logger de log do Apache Sling
 
-      (org.apache.sling.commons.log.LogManager.fatory.config)
+     (org.apache.sling.commons.log.LogManager.fatory.config)
 
    * Gravações `Information` mensagens para `logs/error.log`.
 
@@ -121,7 +121,7 @@ Os outros pares seguem a configuração padrão:
 
    * Configuração do Apache Sling Logging Writer
 
-      (org.apache.sling.commons.log.LogManager.fatory.writer)
+     (org.apache.sling.commons.log.LogManager.fatory.writer)
 
 * O logger:
 

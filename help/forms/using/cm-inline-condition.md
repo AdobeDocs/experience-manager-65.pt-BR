@@ -11,9 +11,9 @@ discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
 feature: Correspondence Management
 exl-id: bc5d6c5b-c833-4849-aace-e07f8a522b32
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1664'
+source-wordcount: '1659'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Você pode inserir a condição em linha em uma correspondência inserindo a con
 
    Para obter mais informações sobre como criar a expressão, consulte **Criar expressões e funções remotas com o construtor de expressões** in [Construtor de expressões](../../forms/using/expression-builder.md). O valor especificado na expressão deve ser suportado para o elemento no dicionário de dados. Para obter mais informações, consulte [Dicionário de dados](../../forms/using/data-dictionary.md).
 
-   Depois que a condição for inserida, você poderá passar o mouse sobre a alça à esquerda da condição para visualizá-la. Toque na alça para exibir o menu pop-up da condição, o que permite editar ou remover a condição.
+   Depois que a condição for inserida, você poderá passar o mouse sobre a alça à esquerda da condição para visualizá-la. Toque na alça para exibir o menu pop-up da condição, que permite editar ou remover a condição.
 
    ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editconditionremoveconditionpop-up](assets/4_editconditionremoveconditionpopup.png)
 
@@ -97,7 +97,7 @@ Além disso, você pode especificar a regra/condição na construção de repeti
 
 ### Exemplo: usar repetir em uma Comunicação Interativa para formatar, estruturar e exibir uma lista de transações de cartão de crédito {#example-using-repeat-in-an-interactive-communication-to-format-structure-and-display-a-list-of-credit-card-transactions}
 
-O exemplo a seguir fornece as etapas para usar repetir para estruturar e renderizar as transações de cartão de crédito em uma Comunicação Interativa.
+O exemplo a seguir fornece as etapas para usar a opção repetir para estruturar e renderizar as transações de cartão de crédito em uma Comunicação Interativa.
 
 1. Em um fragmento de documento de texto baseado em modelo de dados de formulário, insira os objetos de modelo de dados de formulário relevantes (e o texto incorporado necessário para os rótulos, como neste exemplo):
 
@@ -182,7 +182,7 @@ O exemplo a seguir fornece as etapas para usar repetir para estruturar e renderi
    ${DD_creditcard_TransactionAmount > 0.5}
    ```
 
-   Caso contrário, se você não precisar renderizar as informações (aqui, transações) seletivamente, mantenha a condição vazia ao excluir o seguinte na caixa de diálogo: `${}`. Salvar uma expressão de repetição é ativado quando a janela de expressão de repetição está vazia (sem ${} quando nenhuma repetição é necessária) ou quando contém uma condição válida para repetição.
+   Caso contrário, se você não precisar renderizar as informações (aqui, transações) seletivamente, mantenha a condição vazia ao excluir o seguinte na caixa de diálogo: `${}`. Salvar uma expressão de repetição é permitido quando a janela de expressão de repetição está vazia (sem ${} quando nenhuma repetição é necessária) ou quando contém uma condição válida para repetição.
 
 1. Selecione um separador para formatar o texto dinâmico e toque na marca de seleção para salvar:
 
@@ -206,7 +206,7 @@ O exemplo a seguir fornece as etapas para usar repetir para estruturar e renderi
 
    ![6_repetoutputpreview](assets/6_repeatoutputpreview.png)
 
-   O texto estático se repete com os detalhes da transação. A repetição de texto estático é facilitada pela repetição aplicada ao texto neste procedimento. A condição ${DD_creditcard_TransactionAmount > 0.5} garante que as transações abaixo de USD .5 não sejam renderizadas na carta.
+   O texto estático se repete com os detalhes da transação. A repetição de texto estático é facilitada pela repetição aplicada ao texto neste procedimento. A condição, ${DD_creditcard_TransactionAmount > 0.5}, garante que as transações inferiores a US$ 0,5 não sejam renderizadas na carta.
 
    >[!NOTE]
    >
@@ -220,7 +220,7 @@ Talvez seja necessário usar a repetição em uma condição. O Gerenciamento de
 
 Por exemplo, o seguinte é repetido (formatado em vermelho) em uma condição (formatado em verde).
 
-Enquanto a repetição renderiza as transações de cartão de crédito, a condição ${DD_creditcard_nooftransactions > 0} garante que a construção de repetição seja renderizada somente se houver pelo menos uma transação.
+Enquanto a repetição renderiza as transações de cartão de crédito, a condição ${DD_creditcard_nooftransactions > 0} garante que a construção repeat seja renderizada somente se houver pelo menos uma transação.
 
 ![repetindocondição](assets/repeatwitincondition.png)
 

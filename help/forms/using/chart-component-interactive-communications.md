@@ -11,9 +11,9 @@ discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 feature: Interactive Communication
 exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2613'
+source-wordcount: '2612'
 ht-degree: 2%
 
 ---
@@ -153,7 +153,7 @@ Configure as seguintes propriedades ao criar gráficos para canais de impressão
   </tr>
   <tr>
    <td>Dica</td>
-   <td><p>Formato no qual a dica de ferramenta aparece ao passar o mouse em um ponto de dados no gráfico no canal da Web. O valor padrão é ${x}(${y}). Dependendo do tipo de gráfico, quando você aponta o mouse em um ponto, barra ou fatia no gráfico, as variáveis ${x} e ${y} são substituídas dinamicamente pelos valores correspondentes no eixo X e no eixo Y e exibidas na dica de ferramenta.</p> <p>Para desativar a dica de ferramenta, deixe o <span class="uicontrol">Dica de ferramenta</code> campo em branco. Essa opção não é aplicável para gráficos de linha e de área. Por exemplo, consulte <a href="#chartoutputprintweb">Exemplo 1: saída de gráfico em impressão e Web</a>.</code></p> </td>
+   <td><p>Formato no qual a dica de ferramenta aparece ao passar o mouse em um ponto de dados no gráfico no canal da Web. O valor padrão é ${x}(${y}). Dependendo do tipo de gráfico, quando você aponta o mouse em um ponto, barra ou fatia no gráfico, as variáveis ${x}e ${y} são substituídos dinamicamente pelos valores correspondentes no eixo X e no eixo Y e exibidos na dica de ferramenta.</p> <p>Para desativar a dica de ferramenta, deixe o <span class="uicontrol">Dica de ferramenta</code> campo em branco. Essa opção não é aplicável para gráficos de linha e de área. Por exemplo, consulte <a href="#chartoutputprintweb">Exemplo 1: saída de gráfico em impressão e Web</a>.</p> </td>
    <td>Web</td>
   </tr>
   <tr>
@@ -167,12 +167,12 @@ Configure as seguintes propriedades ao criar gráficos para canais de impressão
      <li><strong>Cor do ponto</strong>: Disponível para gráficos de Ponto e Linha e Ponto para especificar a cor dos pontos no gráfico.<br /> </li>
      <li><strong>Cor da área</strong>: Disponível para gráficos de Área para especificar a cor da área abaixo da linha no gráfico.</li>
      <li><strong>Ponto de referência &gt; Tipo de vínculo: </strong>Disponível para gráficos de Quadrante a<strong> </strong>especifique o tipo de ligação para o ponto de referência. Use texto estático ou a propriedade do objeto de modelo de dados para definir o valor do ponto de referência.</li>
-     <li><strong>Ponto de referência &gt; Eixo X: </strong>Disponível para gráficos de Quadrante se você selecionar <span class="uicontrol">Estático</code> na lista suspensa Tipo de vinculação para especificar o valor do eixo X para o ponto de referência.</code></li>
-     <li><strong>Ponto de referência &gt; eixo Y: </strong>Disponível para gráficos de Quadrante se você selecionar <span class="uicontrol">Estático</code> na lista suspensa Tipo de vinculação para especificar o valor do eixo Y para o ponto de referência.</code></li>
-     <li><strong>Ponto de referência &gt; Objeto de modelo de dados da série: </strong>Disponível para gráficos de várias séries de Quadrantes, se você selecionar <span class="uicontrol">Objeto de modelo de dados</code> na lista suspensa Tipo de vínculo. Defina a propriedade do objeto de modelo de dados de formulário para identificar o conjunto do ponto de referência. </code></li>
-     <li><strong>Ponto de referência &gt; Valor do objeto de modelo de dados da série: </strong>Disponível para gráficos de várias séries de Quadrantes, se você selecionar <span class="uicontrol">Objeto de modelo de dados</code> na lista suspensa Tipo de vínculo. Use a propriedade do objeto de modelo de dados de formulário para a série e o valor definido neste campo para identificar a série do ponto de referência.</code></li>
-     <li><strong>Ponto de referência &gt; Objeto de modelo de dados do ponto de referência: </strong>Disponível para gráficos de Quadrante se você selecionar <span class="uicontrol">Objeto de modelo de dados</code> na lista suspensa Tipo de vínculo. Defina uma propriedade do objeto de modelo de dados de formulário que seja semelhante às propriedades representadas no eixo X e no eixo Y. Além disso, para várias séries, defina uma propriedade do objeto de modelo de dados que seja uma entidade secundária da propriedade do objeto de modelo de dados definida para a série.</code></li>
-     <li><strong>Ponto de referência &gt; Valor do objeto de modelo de dados do ponto de referência: </strong>Disponível para gráficos de Quadrante se você selecionar <span class="uicontrol">Objeto de modelo de dados</code> na lista suspensa Tipo de vínculo. Use a propriedade do objeto de modelo de dados de formulário para o ponto de referência e o valor definido neste campo para identificar o ponto de referência do gráfico.<br /> <strong>Rótulos do quadrante &gt; Parte superior esquerda:</strong> Disponível para gráficos de Quadrante para especificar o nome do quadrante superior esquerdo.</code></li>
+     <li><strong>Ponto de referência &gt; Eixo X: </strong>Disponível para gráficos de Quadrante se você selecionar <span class="uicontrol">Estático</code> na lista suspensa Tipo de vinculação para especificar o valor do eixo X para o ponto de referência.</li>
+     <li><strong>Ponto de referência &gt; eixo Y: </strong>Disponível para gráficos de Quadrante se você selecionar <span class="uicontrol">Estático</code> na lista suspensa Tipo de vinculação para especificar o valor do eixo Y para o ponto de referência.</li>
+     <li><strong>Ponto de referência &gt; Objeto de modelo de dados da série: </strong>Disponível para gráficos de várias séries de Quadrantes, se você selecionar <span class="uicontrol">Objeto de modelo de dados</code> na lista suspensa Tipo de vínculo. Defina a propriedade do objeto de modelo de dados de formulário para identificar o conjunto do ponto de referência. </li>
+     <li><strong>Ponto de referência &gt; Valor do objeto de modelo de dados da série: </strong>Disponível para gráficos de várias séries de Quadrantes, se você selecionar <span class="uicontrol">Objeto de modelo de dados</code> na lista suspensa Tipo de vínculo. Use a propriedade do objeto de modelo de dados de formulário para a série e o valor definido neste campo para identificar a série do ponto de referência.</li>
+     <li><strong>Ponto de referência &gt; Objeto de modelo de dados do ponto de referência: </strong>Disponível para gráficos de Quadrante se você selecionar <span class="uicontrol">Objeto de modelo de dados</code> na lista suspensa Tipo de vínculo. Defina uma propriedade do objeto de modelo de dados de formulário que seja semelhante às propriedades representadas no eixo X e no eixo Y. Além disso, para várias séries, defina uma propriedade do objeto de modelo de dados que seja uma entidade secundária da propriedade do objeto de modelo de dados definida para a série.</li>
+     <li><strong>Ponto de referência &gt; Valor do objeto de modelo de dados do ponto de referência: </strong>Disponível para gráficos de Quadrante se você selecionar <span class="uicontrol">Objeto de modelo de dados</code> na lista suspensa Tipo de vínculo. Use a propriedade do objeto de modelo de dados de formulário para o ponto de referência e o valor definido neste campo para identificar o ponto de referência do gráfico.<br /> <strong>Rótulos do quadrante &gt; Parte superior esquerda:</strong> Disponível para gráficos de Quadrante para especificar o nome do quadrante superior esquerdo.</li>
      <li><strong>Rótulos do quadrante &gt; Parte superior direita:</strong> Disponível para gráficos de Quadrante para especificar o nome do quadrante Superior Direito.</li>
      <li><strong>Rótulos do quadrante &gt; Parte inferior direita: </strong>Disponível para gráficos de Quadrante para especificar o nome do quadrante Inferior Direito.</li>
      <li><strong>Rótulos do quadrante &gt; Parte inferior esquerda: </strong>Disponível para gráficos de Quadrante para especificar o nome do quadrante inferior esquerdo.</li>
@@ -270,7 +270,7 @@ Para fazer isso, especifique as seguintes propriedades:
 * **[!UICONTROL Tipo de gráfico]** - Selecionar **[!UICONTROL Rosca]** na lista suspensa.
 * **[!UICONTROL Objetos do modelo de dados]** - Selecione as propriedades do objeto de modelo de dados para criar associações de dados para o eixo X (Tipo de Despesa) e o eixo Y (Valor da Transação).
 * **[!UICONTROL Raio interno]** - Especifique o valor do Raio Interno como 150 para especificar o raio (em pixels) do círculo interno no gráfico.
-* **[!UICONTROL Dica de ferramenta]** - Use o formato padrão ${x}(${y}) para exibir a dica de ferramenta. A dica de ferramenta é exibida como: Tipo de Despesa (Valor da Transação). Exemplo: Débito para Bitcoin(10000).
+* **[!UICONTROL Dica de ferramenta]** - Use o ${x}(${y}) formato padrão para exibir a dica de ferramenta. A dica de ferramenta é exibida como: Tipo de Despesa (Valor da Transação). Exemplo: Débito para Bitcoin(10000).
 
 ![Gráfico de rosca no canal da Web de uma comunicação interativa](assets/sample_chart_web_new.png)
 

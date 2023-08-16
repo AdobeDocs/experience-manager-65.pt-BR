@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3335'
+source-wordcount: '3333'
 ht-degree: 1%
 
 ---
@@ -217,7 +217,7 @@ Ao configurar qualquer um dos componentes do formulário, as seguintes guias est
 Aqui, é necessário especificar as informações básicas, como o título do componente e qualquer texto que o acompanhe. Quando apropriado, também permite definir outras informações importantes, como se o campo é multisselecionável e se os itens estão disponíveis para seleção.
 
 * **Valores iniciais**
-Permite especificar um valor default.
+Permite especificar um valor padrão.
 
 * **Restrições**
 Aqui você pode especificar se um campo é obrigatório e colocar restrições nesse campo (por exemplo, deve ser numérico e assim por diante).

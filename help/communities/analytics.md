@@ -12,9 +12,9 @@ discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
-source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2694'
+source-wordcount: '2693'
 ht-degree: 4%
 
 ---
@@ -68,23 +68,23 @@ Para configurar os recursos do Analytics for Communities, é necessário trabalh
 
 * **Nome da empresa**
 
-   A empresa associada à conta do Adobe Analytics.
+  A empresa associada à conta do Adobe Analytics.
 
 * **Nome de usuário**
 
-   O nome de usuário de logon do usuário autorizado a gerenciar a conta do Analytics (deve incluir privilégios de Acesso ao serviço da Web).
+  O nome de usuário de logon do usuário autorizado a gerenciar a conta do Analytics (deve incluir privilégios de Acesso ao serviço da Web).
 
 * **Senha**
 
-   A senha de logon do usuário autorizado.
+  A senha de logon do usuário autorizado.
 
 * **Centro de dados do Analytics**
 
-   A URL do data center do Analytics para a conta.
+  A URL do data center do Analytics para a conta.
 
 * **Conjunto de relatórios**
 
-   O nome do conjunto de relatórios do Analytics que será usado.
+  O nome do conjunto de relatórios do Analytics que será usado.
 
 ## Conjunto de relatórios Adobe Analytics para relatórios de vídeo {#adobe-analytics-report-suite-for-video-reporting}
 
@@ -105,8 +105,8 @@ Ao fazer logon no [Adobe Experience Cloud](https://experienceleague.adobe.com/do
    * tipo **`Counter`**
 
       * não **`Counter (no subrelations)`**
-   * Pode redefinir (renomear) eventos existentes ou criar novos para usar nos recursos das Comunidades
 
+   * Pode redefinir (renomear) eventos existentes ou criar novos para usar nos recursos das Comunidades
 
 * [Gerenciamento de vídeo](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
 
@@ -114,11 +114,11 @@ Ao fazer logon no [Adobe Experience Cloud](https://experienceleague.adobe.com/do
 
       * Ativar `Video Core`
       * Selecione Salvar
+
    * Console de medição do vídeo principal
 
       * Selecionar `Use Solution Variables`
       * Selecione Salvar
-
 
 Se estiver usando um **novo conjunto de relatórios**, esteja ciente de que um novo conjunto de relatórios pode ter apenas 4 evars e 6 variáveis de evento, enquanto 11 evars e 7 vars de evento são necessários para as comunidades.
 
@@ -162,7 +162,7 @@ Se não estiver ativado, o código de heartbeat de vídeo nunca será instanciad
 
 Para criar uma nova Integração do Analytics, que integra o Adobe Analytics ao site da comunidade AEM, usando a interface do usuário padrão na instância do autor:
 
-* Na navegação global: **[!UICONTROL Ferramentas]** > **[!UICONTROL Implantação]** > **[!UICONTROL Cloud Services]**
+* Na navegação global: **[!UICONTROL Ferramentas]** > **[!UICONTROL Implantação]** > **[!UICONTROL Cloud Service]**
 * Role para baixo até **[!UICONTROL Adobe Analytics]**
 * Selecionar **[!UICONTROL Configurar agora]** ou **[!UICONTROL Exibir configurações]**
 
@@ -178,17 +178,17 @@ Na caixa de diálogo Criar configuração, os valores a serem inseridos identifi
 
 * **Título**
 
-   (Obrigatório) Um título de exibição para a configuração.
+  (Obrigatório) Um título de exibição para a configuração.
 Por exemplo, insira *Análise da comunidade*
 
 * **Nome**
 
-   (Opcional) Se não for especificado, o nome assumirá como padrão um nome de nó válido derivado do título.
+  (Opcional) Se não for especificado, o nome assumirá como padrão um nome de nó válido derivado do título.
 Por exemplo, insira *comunidades*
 
 * **Modelo**
 
-   Selecionar `Adobe Analytics Configuration`
+  Selecionar `Adobe Analytics Configuration`
 
 * Selecione **Criar**
 
@@ -202,35 +202,35 @@ A criação inicial de uma nova configuração do Analytics resulta na exibiçã
 
 * **Empresa**
 
-   A empresa associada à conta do Adobe Analytics.
+  A empresa associada à conta do Adobe Analytics.
 
 * **Nome de usuário**
 
-   O nome de usuário de logon do usuário autorizado a gerenciar a conta do Analytics.
+  O nome de usuário de logon do usuário autorizado a gerenciar a conta do Analytics.
 
 * **Senha**
 
-   A senha de logon do usuário autorizado.
+  A senha de logon do usuário autorizado.
 
 * **Centro de dados**
 
-   Selecione o data center do Analytics que hospeda o conjunto de relatórios.
+  Selecione o data center do Analytics que hospeda o conjunto de relatórios.
 
 * **Não adicionar a tag de rastreamento à página**
 
-   Deixar como padrão (desmarcado).
+  Deixar como padrão (desmarcado).
 
 * **Usar AppMeasurement**
 
-   Deixar como padrão (desmarcado).
+  Deixar como padrão (desmarcado).
 
 * **Não realizar importações de impressões de página todas as noites (autor)**
 
-   Deixar como padrão (desmarcado).
+  Deixar como padrão (desmarcado).
 
 * **Não realizar importações de impressões de página todas as noites (publicar)**
 
-   Deixar como padrão (desmarcado).
+  Deixar como padrão (desmarcado).
 
 Para salvar as configurações:
 
@@ -243,7 +243,7 @@ Para salvar as configurações:
 
 * Selecionar **OK**.
 
-   ![analytics-settings](assets/analytics-settings1.png)
+  ![analytics-settings](assets/analytics-settings1.png)
 
 ### Criar estrutura {#create-framework}
 
@@ -251,20 +251,20 @@ Após a configuração bem-sucedida da conexão básica com o Adobe Analytics, �
 
 * Selecionar `[+]` ícone ao lado de **[!UICONTROL Estruturas disponíveis]** para criar uma nova estrutura
 
-   ![analytics-framework](assets/analytics-framework.png)
+  ![analytics-framework](assets/analytics-framework.png)
 
 * **Título**
 
-   (Obrigatório) Um título de exibição para a estrutura. Por exemplo, insira *Quadro comunitário*.
+  (Obrigatório) Um título de exibição para a estrutura. Por exemplo, insira *Quadro comunitário*.
 
 * **Nome**
 
-   (Opcional) Se não for especificado, o nome assumirá como padrão um nome de nó válido derivado do título.
+  (Opcional) Se não for especificado, o nome assumirá como padrão um nome de nó válido derivado do título.
 Por exemplo, insira *comunidades*.
 
 * *Modelo*
 
-   Selecionar `Adobe Analytics Framework`.
+  Selecionar `Adobe Analytics Framework`.
 
 * Selecione **Criar**.
 
@@ -283,7 +283,7 @@ Selecione o conjunto de relatórios que foi configurado para o relatório de ví
 Se um conjunto de relatórios ainda não tiver sido criado ou configurado incorretamente, consulte a seção anterior:
 [Conjunto de relatórios Adobe Analytics para relatórios de vídeo](#adobe-analytics-report-suite-for-video-reporting)
 
-O Sidekick não é necessário e pode ser minimizado para não obstruir o acesso às configurações dos conjuntos de relatórios.
+O Sidekick não é necessário e pode ser minimizado para que não obstrua o acesso às configurações dos Conjuntos de relatórios.
 
 #### Caixa de diálogo Conjuntos de relatórios antes e depois de selecionar &quot;Adicionar item&quot; {#report-suites-dialog-before-and-after-selecting-add-item}
 
@@ -441,9 +441,9 @@ Veja a seguir um exemplo de mapeamentos padrão:
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>e)</em></td>
+   <td><em>(e)</em></td>
    <td><em>f)</em></td>
-   <td><em>g)</em></td>
+   <td><em>(g)</em></td>
    <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
@@ -454,9 +454,9 @@ Veja a seguir um exemplo de mapeamentos padrão:
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>e)</em></td>
+   <td><em>(e)</em></td>
    <td><em>f)</em></td>
-   <td><em>g)</em></td>
+   <td><em>(g)</em></td>
    <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
@@ -467,9 +467,9 @@ Veja a seguir um exemplo de mapeamentos padrão:
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>e)</em></td>
+   <td><em>(e)</em></td>
    <td><em>f)</em></td>
-   <td><em>g)</em></td>
+   <td><em>(g)</em></td>
    <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
@@ -480,9 +480,9 @@ Veja a seguir um exemplo de mapeamentos padrão:
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>e)</em></td>
+   <td><em>(e)</em></td>
    <td><em>f)</em></td>
-   <td><em>g)</em></td>
+   <td><em>(g)</em></td>
    <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
@@ -493,9 +493,9 @@ Veja a seguir um exemplo de mapeamentos padrão:
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>e)</em></td>
+   <td><em>(e)</em></td>
    <td><em>f)</em></td>
-   <td><em>g)</em></td>
+   <td><em>(g)</em></td>
    <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
@@ -506,9 +506,9 @@ Veja a seguir um exemplo de mapeamentos padrão:
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>e)</em></td>
+   <td><em>(e)</em></td>
    <td><em>f)</em></td>
-   <td><em>g)</em></td>
+   <td><em>(g)</em></td>
    <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
@@ -527,8 +527,7 @@ Veja a seguir um exemplo de mapeamentos padrão:
 * *Título do componente UGC*: Tópicos sobre caminhada
 * *logon (authorizableId)*: `aaron.mcdonald@mailinator.com`
 * *Caminho SRP para UGC*: `/content/usergenerated/asi/.../forum/jmtz-topic3`
-ou 
-*caminho do componente a seguir*: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
+ou *caminho do componente a seguir*: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
 
 * *caminho para o conteúdo do site da comunidade*: `/content/sites/<site name>/en`
 

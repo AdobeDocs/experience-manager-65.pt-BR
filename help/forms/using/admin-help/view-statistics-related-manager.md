@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8e1b2f7c-2609-474b-a1b2-fa820df74ae3
 exl-id: ce8f7257-bb9a-428d-b816-27b1d1632ee1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1211'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ Quando você executa uma consulta do Work Manager ou executa uma operação em u
 
 Quando você clica em Mais Informações, a caixa de diálogo Detalhes da Operação exibe uma lista dos itens de trabalho ou trabalhos selecionados durante a operação. Você pode clicar em cada item da lista para exibir os Detalhes do Erro na parte inferior da caixa de diálogo.
 
-### Gerenciar os itens de trabalho ou trabalhos {#manage-the-work-items-or-jobs}
+### Gerenciar itens de trabalho ou trabalhos {#manage-the-work-items-or-jobs}
 
 1. Use as ferramentas de operação descritas abaixo para gerenciar os itens de trabalho ou trabalhos na lista.
 

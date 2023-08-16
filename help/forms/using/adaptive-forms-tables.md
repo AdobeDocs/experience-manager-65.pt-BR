@@ -10,9 +10,9 @@ discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 feature: Adaptive Forms
 exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2475'
 ht-degree: 0%
 
 ---
@@ -157,7 +157,7 @@ No tempo de execução, você verá **+** e *-* botões para adicionar ou exclui
 
 ## Expressões em uma tabela {#expressions-in-a-table}
 
-Tabelas em formulários adaptáveis permitem escrever expressões em JavaScript para induzir comportamentos, como mostrar ou ocultar uma tabela ou uma linha, adicionar todos os números e mostrar o total em uma célula, habilitar ou desabilitar uma célula, validar a entrada do usuário e assim por diante. Essas expressões usam APIs de modelo de script de formulários adaptáveis.
+As tabelas em formulários adaptáveis permitem escrever expressões em JavaScript para induzir comportamentos, como mostrar ou ocultar uma tabela ou uma linha, adicionar todos os números e mostrar o total em uma célula, habilitar ou desabilitar uma célula, validar a entrada do usuário e assim por diante. Essas expressões usam APIs de modelo de script de formulários adaptáveis.
 
 Embora tabelas e linhas suportem apenas expressões de visibilidade para controlar sua visibilidade com base no valor retornado por uma expressão, as células suportam as seguintes expressões:
 

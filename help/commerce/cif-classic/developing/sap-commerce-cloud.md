@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2297'
+source-wordcount: '2296'
 ht-degree: 0%
 
 ---
@@ -556,7 +556,7 @@ A integração é fornecida entre o AEM e vários sistemas de comércio eletrôn
 
 * Contas no Hybris
 
-  O AEM cria uma conta correspondente (secundária) no hybris para cada comprador. O nome de usuário dessa conta é igual ao nome de usuário do AEM. Uma senha aleatória criptograficamente é gerada automaticamente e armazenada (criptografada) no AEM.
+  O AEM cria uma conta correspondente (subordinada) em híbridos para cada comprador. O nome de usuário dessa conta é igual ao nome de usuário do AEM. Uma senha aleatória criptograficamente é gerada automaticamente e armazenada (criptografada) no AEM.
 
 #### Usuários pré-existentes {#pre-existing-users}
 

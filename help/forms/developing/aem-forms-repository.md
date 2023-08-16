@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '9117'
+source-wordcount: '9113'
 ht-degree: 0%
 
 ---
@@ -154,7 +154,6 @@ Crie uma pasta usando a API de serviço do Repositório (Java):
    Defina a descrição da pasta usando o `setDescription` e passe no seguinte parâmetro:
 
    * A `String` que descreve a coleção de recursos. Neste exemplo, `"test Folder"` é usada `.`
-
 
 1. Gravar a pasta no repositório
 

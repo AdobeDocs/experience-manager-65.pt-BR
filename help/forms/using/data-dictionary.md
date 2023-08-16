@@ -10,9 +10,9 @@ discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
 docset: aem65
 feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '3838'
+source-wordcount: '3840'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Um dicionário de dados é uma representação independente de metadados que des
 
 O dicionário de dados é composto de elementos de três tipos: Simples, Composto e Elementos de coleção. DDEs simples são elementos primitivos, como sequências, números, datas e valores booleanos que armazenam informações como o nome de uma cidade. Um DDE composto contém outros DDEs, que podem ser do tipo primitivo, composto ou coleção. Por exemplo, um endereço, que consiste em um endereço de rua, cidade, província, país e código postal. Uma coleção é uma lista de DDEs simples ou compostos semelhantes. Por exemplo, um cliente com vários locais ou endereços de cobrança e entrega diferentes.
 
-O Gerenciamento de correspondência usa os dados específicos do back-end, do cliente ou do recipient armazenados de acordo com a estrutura do dicionário de dados para criar correspondência destinada a clientes diferentes. Por exemplo, um documento pode ser criado com nomes amigáveis, como &quot;Prezado(a) {Nome}&quot;,&quot;Sr. {Sobrenome}&quot;.
+O Gerenciamento de correspondência usa os dados específicos do back-end, cliente ou destinatário armazenados de acordo com a estrutura do dicionário de dados para criar correspondência destinada a clientes diferentes. Por exemplo, um documento pode ser criado com nomes amigáveis, como &quot;Prezado(a) {Nome}&quot;,&quot;Sr. {Sobrenome}&quot;.
 
 Normalmente, os usuários empresariais não exigem conhecimento de representações de metadados, como XSD (esquema XML) e classes Java. No entanto, geralmente exigem acesso a essas estruturas de dados e atributos para criar soluções.
 
@@ -417,7 +417,7 @@ Depois de criar um dicionário de dados, você pode baixá-lo como um arquivo de
 1. Selecionar **Baixar dados de amostra XML**.
 1. Toque **OK** na mensagem de alerta.
 
-   O Gerenciamento de correspondências cria um arquivo XML com base na estrutura do dicionário de dados selecionado e o baixa para o computador com o nome &lt;data-dictionary-name>-Dados de amostra. Agora é possível editar esse arquivo em um editor de texto ou XML para fazer entradas de dados enquanto [criação de uma carta](../../forms/using/create-letter.md).
+   O Gerenciamento de correspondências cria um arquivo XML com base na estrutura do dicionário de dados selecionado e faz o download desse arquivo para seu computador com o nome &lt;data-dictionary-name>-Dados de amostra. Agora é possível editar esse arquivo em um editor de texto ou XML para fazer entradas de dados enquanto [criação de uma carta](../../forms/using/create-letter.md).
 
 ## Internacionalização de metadados {#internationalization-of-meta-data}
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: aedf890c-a2f1-412f-8897-2492ffab335a
-source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '924'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ A pesquisa de texto completo permite localizar e listar formulários com base na
 
 Uma caixa de diálogo de pesquisa avançada
 
-A Pesquisa avançada permite pesquisar formulários com base em propriedades de formulário especificadas. Isso fornece um resultado mais específico do que a pesquisa de texto completo. A pesquisa avançada inclui pesquisas baseadas em tags, propriedades (como Autor, Descrição e Título), data de modificação e texto completo.
+A Pesquisa avançada permite pesquisar formulários com base nas propriedades de formulário especificadas. Isso fornece um resultado mais específico do que a pesquisa de texto completo. A pesquisa avançada inclui pesquisas baseadas em tags, propriedades (como Autor, Descrição e Título), data de modificação e texto completo.
 
 A lista exibe formulários com base nos parâmetros de pesquisa. Cada formulário no resultado da pesquisa é exibido com um ícone, que está hipervinculado ao formulário associado. Você pode clicar no ícone para abrir e trabalhar com o formulário associado.
 

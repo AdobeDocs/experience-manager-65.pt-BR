@@ -2,10 +2,10 @@
 title: Introdução ao AEM Headless
 description: Nesta parte da Jornada do desenvolvedor headless do AEM, saiba mais sobre pré-requisitos do AEM headless.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '3031'
-ht-degree: 100%
+source-wordcount: '3024'
+ht-degree: 95%
 
 ---
 
@@ -70,7 +70,7 @@ Os Modelos de fragmento de conteúdo definem a estrutura dos dados e do conteúd
 
 ### Fragmentos de conteúdo {#content-fragments}
 
-Os fragmentos de conteúdo permitem projetar, criar, preparar e publicar conteúdo independente de página. Eles permitem que você deixe o conteúdo pronto para uso em vários locais e em vários canais.
+Os fragmentos de conteúdo permitem projetar, criar, preparar e publicar conteúdo independente de página. Eles permitem preparar conteúdo pronto para uso em vários locais e em vários canais.
 
 Fragmentos de conteúdo contêm conteúdo estruturado e podem ser entregues no formato JSON.
 
@@ -78,8 +78,8 @@ Fragmentos de conteúdo contêm conteúdo estruturado e podem ser entregues no f
 
 Para modificar o conteúdo de forma headless, o AEM oferece duas APIs robustas.
 
-* A API GraphQL permite criar solicitações para acessar e fornecer Fragmentos de conteúdo.
-* A API REST do Assets permite criar e modificar Fragmentos de conteúdo (e outros ativos).
+* A API do GraphQL permite criar solicitações para acessar e entregar Fragmentos de conteúdo.
+* A API REST do Assets permite criar e modificar fragmentos de conteúdo (e outros ativos).
 
 Você aprenderá sobre essas APIs e como usá-las em uma parte posterior da jornada headless do AEM. Ou consulte a seção [recursos adicionais](#additional-resources) para obter a documentação adicional.
 
@@ -141,7 +141,7 @@ Para qualquer projeto bem-sucedido, é importante definir claramente não apenas
 
 É importante ter um escopo claramente definido para o projeto. O escopo informa os critérios de aceitação e permite que você estabeleça uma definição de concluído.
 
-A primeira pergunta que você deve fazer é “O que estou tentando alcançar com AEM Headless?” A resposta deve ser, no geral, que você tem ou terá no futuro um aplicativo de experiência que você criou com suas próprias ferramentas de desenvolvimento e não com o AEM. Esse aplicativo de experiência pode ser um aplicativo móvel, um site ou qualquer outro aplicativo de experiência voltado para o cliente final. O objetivo de usar o AEM Headless é alimentar seu aplicativo de experiência com conteúdo criado, armazenado e gerenciado no AEM com APIs de última geração que chamariam o AEM Headless para buscar conteúdo ou até mesmo conteúdo totalmente CRUD diretamente do seu aplicativo de experiência. Se isto não é o que você pretende fazer, então você provavelmente deve [voltar para a documentação do AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=pt-BR) e encontrar a seção que melhor se adapta ao que você deseja realizar.
+A primeira pergunta que você deve fazer é “O que estou tentando alcançar com AEM Headless?” A resposta geral deve ser que você tem ou terá no futuro um aplicativo de experiência que você criou com suas próprias ferramentas de desenvolvimento, não com AEM. Esse aplicativo de experiência pode ser um aplicativo móvel, um site ou qualquer outro aplicativo de experiência voltado para o cliente final. O objetivo de usar o AEM Headless é alimentar seu aplicativo de experiência com conteúdo criado, armazenado e gerenciado no AEM com APIs de última geração que chamariam o AEM Headless para buscar conteúdo ou até mesmo conteúdo totalmente CRUD diretamente do seu aplicativo de experiência. Se isto não é o que você pretende fazer, então você provavelmente deve [voltar para a documentação do AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=pt-BR) e encontrar a seção que melhor se adapta ao que você deseja realizar.
 
 ### Funções e responsabilidades {#roles-responsibilities}
 
@@ -156,7 +156,7 @@ As funções de qualquer projeto individual variam, mas as funções importantes
 
 O administrador é responsável pelas definições básicas e a configuração do sistema. Por exemplo, o administrador configura sua organização no sistema de gerenciamento de usuários da Adobe, referido ao Identity Management System (IMS). O administrador é o primeiro usuário da organização a receber um convite por email da Adobe depois que sua organização tiver sido criada pela Adobe no IMS. O administrador tem a capacidade de fazer logon no IMS e adicionar usuários de outros perfis.
 
-Depois que os usuários são configurados pelo administrador, eles recebem as permissões para acessar todos os recursos do AEM para realizar seu trabalho como colaboradores na entrega do aplicativo de experiência usando o AEM Headless.
+Depois que os usuários são configurados pelo administrador, eles recebem as permissões para acessar todos os recursos do AEM e realizar seu trabalho como colaboradores para fornecer o aplicativo de experiência usando o AEM Headless.
 
 O administrador deve ser o usuário que configura o AEM e prepara o ambiente de tempo de execução para habilitar os [autores de conteúdo](#content-author) para criar e atualizar conteúdo e [desenvolvedores](#developer) para usar as APIs que buscam ou modificam o conteúdo para seus aplicativos de experiência.
 
@@ -255,7 +255,7 @@ Para entender tráfego e os padrões de tráfego, comece reunindo o que você sa
 
 #### Frequência das atualizações {#update-frequency}
 
-Frequentemente, diferentes seções de experiências têm frequências diferentes de atualizações de conteúdo. Entender isso é importante para ajustar as configurações de CDN e cache. Isso também é importante para o [Arquitetos de conteúdo](#content-architects) conforme criam modelos para representar seu conteúdo. Considere:
+Frequentemente, diferentes seções de experiências têm frequências diferentes de atualizações de conteúdo. Entender isso é importante para poder ajustar as configurações de CDN e cache. Isso também é importante para o [Arquitetos de conteúdo](#content-architects) conforme criam modelos para representar seu conteúdo. Considere:
 
 * Alguns tipos de conteúdo devem expirar após um determinado período?
 * Há elementos que são específicos do usuário e, portanto, não podem ser armazenados em cache?

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 9aa0521f-f321-42e9-b022-7ff968a36212
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '6036'
+source-wordcount: '6026'
 ht-degree: 7%
 
 ---
@@ -95,7 +95,7 @@ Quando a imagem é uma imagem JPEG, o tamanho da janela de visualização també
 
 #### Propriedades {#properties}
 
-A caixa de diálogo permite editar propriedades para a instância do componente de Imagem adaptável, muitas das quais são comuns ao componente de Imagem no qual ele se baseia. As propriedades estão disponíveis em duas guias:
+A caixa de diálogo permite editar as propriedades da instância do componente de Imagem adaptável, muitas das quais são comuns ao componente de Imagem no qual ele se baseia. As propriedades estão disponíveis em duas guias:
 
 * **Imagem**
 
@@ -871,11 +871,11 @@ Ao configurar qualquer um dos componentes de formulário, as seguintes guias est
 
 * **Título e texto**
 
-  Aqui você deve especificar as informações básicas, como o título do formulário e qualquer texto que o acompanhe. Quando apropriado, também permite definir outras informações importantes, como se o campo é multisselecionável e se há itens disponíveis para seleção.
+  Aqui você deve especificar as informações básicas, como o título do formulário e qualquer texto que o acompanhe. Quando apropriado, também permite definir outras informações importantes, como se o campo é multisselecionável e se os itens estão disponíveis para seleção.
 
 * **Valores iniciais**
 
-  Permite especificar um valor default.
+  Permite especificar um valor padrão.
 
 * **Restrições**
 

@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 3e6eba85dbd9e98ac29fed55c1787e5633bafc04
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '10683'
+source-wordcount: '10678'
 ht-degree: 0%
 
 ---
@@ -65,11 +65,11 @@ As configurações a seguir estão disponíveis para o serviço de formulários 
 
 **Caminho do arquivo base:** O caminho do arquivo relativo ao qual os parâmetros do arquivo de entrada e saída em lote para as operações Executar Trabalho de Arquivo XML e Executar Trabalho de Arquivo Simples são resolvidos. Em configurações em cluster, o caminho do arquivo base deve ser um local de sistema de arquivos compartilhado ao qual todos os nós de cluster têm acesso de leitura/gravação.
 
-**Nome da fonte de dados:** O nome da fonte de dados usada para manter informações de estado e histórico sobre trabalhos de processamento em lote. A fonte de dados especificada deve oferecer suporte a transações globais (XA).
+**Nome da fonte de dados:** O nome da fonte de dados usada para manter informações de estado e histórico sobre trabalhos de processamento em lote. A fonte de dados especificada deve suportar transações globais (XA).
 
 ## Configurações do serviço Central Migration Bridge (obsoleto) {#central-migration-bridge-service-settings}
 
-O serviço Central Migration Bridge ( `CentralMigrationBridge`) chama um subconjunto da funcionalidade Adobe Central Pro Output Server (Central), que inclui os comandos JFMERGE, JFTRANS e XMLIMPORT. As operações do serviço Central Migration Bridge permitem reutilizar os seguintes ativos centrais em formulários AEM:
+O serviço Central Migration Bridge ( `CentralMigrationBridge`) chama um subconjunto da funcionalidade Adobe Central Pro Output Server (Central), que inclui os comandos JFMERGE, JFTRANS e XMLIMPORT. As operações de serviço do Central Migration Bridge permitem reutilizar os seguintes ativos centrais em formulários AEM:
 
 * design do modelo (&amp;ast;.ifd)
 * modelos de saída (&amp;ast;.mdf)
@@ -149,9 +149,9 @@ As configurações a seguir estão disponíveis para o serviço Distiller.
 * Menor tamanho de arquivo
 * Padrão
 
-Novas configurações podem ser criadas através da interface do usuário do PDF Generator.
+É possível criar novas configurações por meio da interface do usuário do PDF Generator.
 
-**Configurações de segurança:** Configurações de segurança pré-configuradas que são aplicadas a documentos de PDF gerados. O valor padrão é Sem segurança. Você deve criar as configurações de segurança usando o Gerador de PDF e depois inserir a configuração aqui.
+**Configurações de segurança:** Configurações de segurança pré-configuradas que são aplicadas a documentos de PDF gerados. O valor padrão é Sem segurança. Você deve criar as configurações de segurança usando o PDF Generator e depois inserir a configuração aqui.
 
 **Tamanho do Pool:** O tamanho inicial do pool. Quando o serviço Distiller é implantado, esse número é usado para determinar o número de instâncias de implementação de serviço criadas e alocadas para o pool livre aguardando solicitações de chamada. O contêiner de serviço pode então responder imediatamente às solicitações de chamada sem ter que primeiro inicializar uma instância de serviço.
 
@@ -247,13 +247,13 @@ As configurações a seguir estão disponíveis para o serviço FTP.
 
 O serviço Gerar PDF ( `GeneratePDFService`) converte arquivos em vários formatos nativos para documentos PDF e converte documentos PDF para vários formatos de arquivo.
 
-As configurações a seguir estão disponíveis para o serviço Gerar PDF.
+As seguintes configurações estão disponíveis para o serviço Gerar PDF.
 
-**Configurações do Adobe PDF:** O nome das configurações pré-configuradas do Adobe PDF a serem aplicadas a um trabalho de conversão, se essas configurações não forem especificadas como parte dos parâmetros de invocação da API. As configurações do Adobe PDF são definidas no console de administração, clicando em Serviços > Gerador de PDF > Configurações do Adobe PDF. Essas configurações são aplicáveis somente às conversões baseadas no PDFMaker.
+**Configurações do Adobe PDF:** O nome das configurações pré-configuradas do Adobe PDF a serem aplicadas a um trabalho de conversão, se essas configurações não forem especificadas como parte dos parâmetros de invocação da API. As configurações do Adobe PDF são definidas no console de administração, clicando em Serviços > PDF Generator > Configurações do Adobe PDF. Essas configurações são aplicáveis somente às conversões baseadas no PDFMaker.
 
-**Configurações de segurança:** O nome das configurações de segurança predefinidas a serem aplicadas a um trabalho de conversão, se essas configurações não forem especificadas como parte dos parâmetros de invocação da API. As configurações de segurança são definidas no console de administração, clicando em Serviços > Gerador de PDF > Configurações de segurança.
+**Configurações de segurança:** O nome das configurações de segurança predefinidas a serem aplicadas a um trabalho de conversão, se essas configurações não forem especificadas como parte dos parâmetros de invocação da API. As configurações de segurança são definidas no console de administração, clicando em Serviços > PDF Generator > Configurações de segurança.
 
-**Configurações de tipo de arquivo:** O nome da Configuração de Tipo de Arquivo pré-configurada a ser aplicada a um trabalho de conversão, se essas configurações não forem especificadas como parte dos parâmetros de invocação da API. As configurações de tipo de arquivo são definidas no console de administração, clicando em Serviços > Gerador de PDF > Configurações de tipo de arquivo.
+**Configurações de tipo de arquivo:** O nome da Configuração de Tipo de Arquivo pré-configurada a ser aplicada a um trabalho de conversão, se essas configurações não forem especificadas como parte dos parâmetros de invocação da API. As configurações de tipo de arquivo são definidas no console de administração, clicando em Serviços > PDF Generator > Configurações de tipo de arquivo.
 
 **Usar o Acrobat WebCapture (somente Windows):** Quando esta configuração é verdadeira, o serviço Gerar PDF usa o Acrobat X Pro para todas as conversões de HTML para PDF. Isso pode melhorar a qualidade dos arquivos PDF produzidos a partir do HTML, embora o desempenho possa ser um pouco menor. O valor padrão é false.
 
@@ -283,7 +283,7 @@ Repita a conversão de PDF independentemente de o limite de tempo ter sido ating
 
 **Tentar novamente se o tempo permitir**
 
-Repita a conversão de PDF se o tempo consumido para a primeira tentativa de conversão for menor que a duração de tempo limite especificada. Por exemplo, se a duração do tempo limite for 270s e a primeira tentativa consumir 200s, o Gerador de PDF tentará novamente a conversão. Se a primeira tentativa consumiu 270s, a conversão não será repetida.
+Repita a conversão de PDF se o tempo consumido para a primeira tentativa de conversão for menor que a duração de tempo limite especificada. Por exemplo, se a duração do tempo limite for 270s e a primeira tentativa tiver consumido 200s, o PDF Generator tentará novamente a conversão. Se a primeira tentativa consumiu 270s, a conversão não será repetida.
 
 ## Configurações de serviço dos Utilitários ES4 {#guides-es4-utilities-service-settings}
 
@@ -334,7 +334,7 @@ Se você estiver usando Guides em um cluster de servidores que não usa sessões
 
 O valor macKeySeed é a semente do gerador de números aleatórios usado para gerar os URLs seguros. A definição desse valor faz com que cada nó do cluster inicialize o gerador de números aleatórios da mesma maneira e tenha acesso aos mesmos URLs seguros. Você pode usar qualquer string aleatória para esse valor de seed.
 
-Altere o valor macKeySeed quando precisar atualizar os URLs seguros. Atualizar os URLs seguros depende da sua política de segurança e é semelhante à política de atualização para alterar a senha raiz principal do servidor. O macSeedValue é análogo à senha principal para os URLs seguros, porque é usado para gerar um novo número aleatório exclusivo para uso na geração e recuperação de URL seguros.
+Altere o valor macKeySeed quando precisar atualizar os URLs seguros. Atualizar os URLs seguros depende da sua política de segurança e é semelhante à política de atualização para alterar a senha raiz mestre do servidor. O macSeedValue é análogo à senha mestre para os URLs seguros, porque é usado para gerar um novo número aleatório exclusivo para uso na geração e recuperação de URL seguros.
 
 Você deve reiniciar o cluster porque o macSeedValue é somente leitura na inicialização do sistema. Todos os nós precisam reiniciar para ler o valor, porque eles o usam independentemente para inicializar seus números aleatórios internos com o valor de seed.
 
@@ -484,7 +484,7 @@ As seguintes configurações estão disponíveis para o serviço de configuraç�
 
 **Arquivo de inicialização PS:** O nome do arquivo de inicialização exigido pelo Adobe Acrobat Distiller. O valor padrão é example.ps.
 
-**Tempo limite de conversão do servidor:** O tempo limite máximo de conversão de trabalho (em segundos) para o serviço Generate PDF e o serviço Distiller. Essa configuração limita o tempo limite máximo de conversão que pode ser especificado no arquivo config.xml e nas páginas de console de administração para o Gerador de PDF. O valor padrão é 270.
+**Tempo limite de conversão do servidor:** O tempo limite máximo de conversão de trabalho (em segundos) para o serviço Generate PDF e o serviço Distiller. Essa configuração limita o tempo limite máximo de conversão que pode ser especificado no arquivo config.xml e nas páginas de console de administração para o PDF Generator. O valor padrão é 270.
 
 **Tempo limite global do servidor:** Ao executar conversões de PDF, um servidor de formulários considera o tempo limite. Configure o valor de tempo limite para resolver o problema.
 

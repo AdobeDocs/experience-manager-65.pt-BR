@@ -8,18 +8,18 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1806'
-ht-degree: 56%
+source-wordcount: '1796'
+ht-degree: 50%
 
 ---
 
 # Layout responsivo{#responsive-layout}
 
-O AEM permite ter um layout responsivo para suas páginas usando o **Contêiner de layout** componente.
+O AEM permite que você tenha um layout responsivo para suas páginas usando o **Contêiner de layout** componente.
 
-Isso fornece um sistema de parágrafo que permite posicionar componentes em uma grade responsiva. Essa grade pode reorganizar o layout de acordo com o tamanho e o formato do dispositivo/janela. O componente é utilizado em conjunto com o modo de [**Layout**,](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode) que permite criar e editar o seu layout responsivo dependendo do dispositivo.
+Isso fornece um sistema de parágrafo que permite posicionar componentes em uma grade responsiva. Essa grade pode reorganizar o layout de acordo com o tamanho e o formato do dispositivo/janela. O componente é usado em conjunto com o [**Layout** modo](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), que permite criar e editar o layout responsivo dependendo do dispositivo.
 
 O contêiner de layout:
 
@@ -40,14 +40,14 @@ O AEM permite um layout responsivo para suas páginas usando uma combinação de
 
 * Componente [**Contêiner de layout**](#adding-a-layout-container-and-its-content-edit-mode)
 
-  Este componente está disponível no [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser) e fornece um sistema de parágrafo de grade para que você possa adicionar e posicionar componentes em uma grade responsiva. Ele também pode ser definido como o sistema de parágrafos padrão na sua página.
+  Este componente está disponível no [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser) O e o fornecem um sistema de parágrafo de grade para permitir adicionar e posicionar componentes em uma grade responsiva. Ele também pode ser definido como o sistema de parágrafos padrão na sua página.
 
 * [**Modo de layout**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
   Depois que o contêiner de layout é posicionado na página, você pode usar o modo **Layout** para posicionar conteúdo na grade responsiva.
 
 * [**Emulador**](#selecting-a-device-to-emulate)
-Permite criar e editar sites responsivos que reorganizam o layout de acordo com o tamanho do dispositivo ou da janela, redimensionando componentes interativamente. O usuário pode observar como o conteúdo será renderizado utilizando o Emulador.
+Isso permite criar e editar sites responsivos que reorganizam o layout de acordo com o tamanho do dispositivo ou da janela, redimensionando componentes interativamente. O usuário pode ver como o conteúdo será renderizado usando o emulador.
 
 Com esses mecanismos de grade responsivos, você pode:
 
@@ -109,7 +109,7 @@ Por exemplo, ao selecionar o dispositivo **iPhone 6 Plus** (definido com uma lar
 
    A barra de ferramentas do emulador exibe opções adicionais de layout:
 
-   * **Girar dispositivo** - permite que você gire um dispositivo de orientação vertical (retrato) para a orientação horizontal (paisagem) e vice-versa.
+   * **Girar dispositivo** - Permite girar um dispositivo de orientação vertical (retrato) para a orientação horizontal (paisagem) e vice-versa.
 
      ![Girar dispositivo](do-not-localize/screen_shot_2018-03-23at084612.png) ![Girar dispositivo](do-not-localize/screen_shot_2018-03-23at084637.png)
 
@@ -216,7 +216,7 @@ Quando estiver no modo de layout, você poderá executar várias ações em uma 
   >
   >As proporções e as taxas são mantidas quando os componentes como **Imagens** são redimensionados.
 
-* Clique/toque em um componente de conteúdo, a barra de ferramenta permite que você:
+* Clique/toque em um componente de conteúdo, a barra de ferramentas permite:
 
    * **Pai**
 

@@ -3,16 +3,16 @@ title: Como integrar o AEM Forms com o Adobe Analytics?
 description: O AEM Forms integra-se ao Adobe Analytics para capturar e rastrear métricas de desempenho para seus formulários publicados.
 docset: aem65
 exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
-source-git-commit: 45ca98ffb68e1e31e2f45f352e86f5aa1b6f0f00
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1805'
 ht-degree: 0%
 
 ---
 
 # Analytics usando [!DNL Adobe Launch] {#analyticsusingadobelaunch}
 
-O AEM Forms integra-se com [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) para permitir que você capture e rastreie métricas de desempenho para seus formulários publicados. O objetivo por trás da análise dessas métricas é permitir que os usuários empresariais obtenham insights sobre o comportamento do usuário final e otimizem a experiência de captura de dados. Você pode capturar e rastrear o comportamento de usuários conectados e não conectados (anônimos) por meio do Adobe Analytics para Forms adaptável.
+O AEM Forms integra-se com [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) para permitir capturar e rastrear as métricas de desempenho dos formulários publicados. O objetivo por trás da análise dessas métricas é permitir que os usuários empresariais obtenham insights sobre o comportamento do usuário final e otimizem a experiência de captura de dados. Você pode capturar e rastrear o comportamento de usuários conectados e não conectados (anônimos) por meio do Adobe Analytics para Forms adaptável.
 
 Também é possível executar a análise usando a Estrutura Cloud Service. Para obter mais informações sobre como integrar o AEM Forms com o Cloud Service Framework, consulte [Analytics usando a estrutura Cloud Service](/help/forms/using/configure-analytics-forms-documents.md). A principal vantagem de usar o Adobe Launch em relação ao Analytics usando a Estrutura de Cloud Service é que você também pode definir eventos personalizados, além desses eventos prontos para uso. Os eventos personalizados são definidos usando o editor de regras ou clientlibs do cliente e são mapeados para eventos no [!DNL Adobe Analytics].
 
@@ -143,7 +143,7 @@ Execute as seguintes etapas para criar regras com base na **[!UICONTROL Adobe Ex
 
    * **[!UICONTROL Limpar variáveis]**: use esse tipo de ação para limpar a trilha de dados para que o evento seja registrado apenas uma vez em [!DNL Adobe Analytics].
 
-      A abordagem recomendada é utilizar a **[!UICONTROL Definir variáveis]** tipo de ação para configurar o evento e os elementos de dados, depois use **[!UICONTROL Enviar sinal]** para enviar dados e, em seguida, usar **[!UICONTROL Limpar variáveis]** para limpar a trilha de dados.
+     A abordagem recomendada é utilizar a **[!UICONTROL Definir variáveis]** tipo de ação para configurar o evento e os elementos de dados, depois use **[!UICONTROL Enviar sinal]** para enviar dados e, em seguida, usar **[!UICONTROL Limpar variáveis]** para limpar a trilha de dados.
 
 1. No **[!UICONTROL Props]** mapeie as opções do conjunto de relatórios disponíveis na lista suspensa com os elementos de dados definidos com o [Configurar elementos de dados](#configure-data-elements).
 
@@ -202,7 +202,7 @@ Antes de criar a configuração do Adobe Launch, crie um [Configuração do Adob
 
 Execute as seguintes etapas para criar uma configuração do Adobe Launch:
 
-1. Na instância do autor do AEM Forms, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurações do Adobe Launch]**.
+1. Na instância do autor do AEM Forms, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configurações do Adobe Launch]**.
 
 1. Selecione uma pasta para criar a configuração e toque em **[!UICONTROL Criar]**.
 
@@ -232,6 +232,7 @@ Depois de habilitar [!DNL Adobe Analytics] para um formulário adaptável, é po
 
 >[!NOTE]
 >Se ambos [Analytics usando a estrutura Cloud Service](/help/forms/using/configure-analytics-forms-documents.md) e **Analytics usando o Adobe Launch** recursos são ativados simultaneamente, **Analytics usando o Adobe Launch** terá precedência.
+> 
 
 ### Criar regras para capturar eventos personalizados (Opcional) {#capture-custom-events}
 

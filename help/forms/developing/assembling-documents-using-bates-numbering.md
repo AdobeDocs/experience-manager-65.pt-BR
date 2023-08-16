@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 77e9b895-1313-4a5b-a2d5-cdb65bdc1966
 role: Developer
 exl-id: 2a4e21c4-f2f5-44cd-b8ed-7b572782a2f1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '1922'
 ht-degree: 0%
@@ -249,7 +249,7 @@ Montar um documento PDF que use identificadores de página exclusivos (numeraç�
    Para obter o documento PDF recém-criado, execute as seguintes ações:
 
    * Acesse o `AssemblerResult` do objeto `documents` que é um `Map` objeto que contém os documentos PDF de resultado.
-   * Repita através do `Map` até encontrar a chave que corresponde ao nome do documento resultante. Em seguida, converta os membros da matriz `value` para um `BLOB`.
+   * Repita através do `Map` até encontrar a chave que corresponde ao nome do documento resultante. Em seguida, converta o membro da matriz `value` para um `BLOB`.
    * Extraia os dados binários que representam o documento PDF acessando seus `BLOB` do objeto `MTOM` propriedade. Isso retorna uma matriz de bytes que você pode gravar em um arquivo PDF.
 
 **Consulte também**

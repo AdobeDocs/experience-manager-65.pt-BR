@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1166'
 ht-degree: 7%
 
 ---
@@ -55,7 +55,7 @@ Os principais consoles são:
   </tr>
   <tr>
    <td><strong>Caixa de entrada </strong></td>
-   <td>Muitas vezes, várias pessoas estão envolvidas nas subtarefas de um fluxo de trabalho e cada pessoa deve concluir sua etapa antes de entregar o trabalho para a próxima pessoa. A Caixa de entrada permite visualizar notificações relacionadas a essas tarefas. Consulte <a href="/help/sites-administering/workflows.md">Trabalhar com fluxos de trabalho</a>. <br /> </td>
+   <td>Muitas vezes, várias pessoas estão envolvidas nas subtarefas de um fluxo de trabalho e cada pessoa deve concluir sua etapa antes de entregar o trabalho para a próxima pessoa. A Caixa de entrada permite que você veja notificações relacionadas a essas tarefas. Consulte <a href="/help/sites-administering/workflows.md">Trabalhar com fluxos de trabalho</a>. <br /> </td>
   </tr>
   <tr>
    <td><strong>Marcação com tags</strong></td>

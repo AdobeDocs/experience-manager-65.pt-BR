@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 240ed4d8-b21b-46eb-80a9-9e8093b77235
-source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1050'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ A AEM Forms fornece os seguintes componentes do portal prontos para uso, agrupad
 
 ### Pesquisa e Lister {#search-amp-lister}
 
-O componente de Pesquisa e Listagem permite listar formulários do repositório de formulários na página do portal e fornece opções de configuração para listar formulários com base em critérios especificados. Ela também permite especificar critérios de pesquisa para permitir que os usuários do portal pesquisem na lista de formulários.
+O componente de Pesquisa e Lister permite listar formulários do repositório de formulários na página do portal e fornece opções de configuração para listar formulários com base em critérios especificados. Também permite especificar critérios de pesquisa para permitir que os usuários do portal pesquisem na lista de formulários.
 
 ### Rascunhos e envios {#drafts-amp-submissions}
 

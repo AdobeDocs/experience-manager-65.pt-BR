@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3430'
+source-wordcount: '3429'
 ht-degree: 0%
 
 ---
@@ -318,15 +318,15 @@ Usando o mapeamento de raiz AEM, é possível configurar a interface do usuário
 
 * Para ter a interface habilitada para toque como a interface padrão, **Caminho de destino** A deve apontar para o seguinte:
 
-   ```shell
-      /projects.html
-   ```
+  ```shell
+     /projects.html
+  ```
 
 * Para ter a interface clássica como padrão, a variável **Caminho de destino** A deve apontar para o seguinte:
 
-   ```shell
-      /welcome.html
-   ```
+  ```shell
+     /welcome.html
+  ```
 
 >[!NOTE]
 >
@@ -340,8 +340,7 @@ Várias propriedades de configuração estão disponíveis:
 O caminho para o qual este manipulador de autenticação está ativo. Se esse parâmetro for deixado em branco, o manipulador de autenticação será desativado. Por exemplo, o caminho / faz com que o manipulador de autenticação seja usado para todo o repositório.
 
 * **Classificação do serviço**
-O valor de Classificação do OSGi Framework Service é usado para indicar a ordem usada para chamar esse serviço. Esse valor é um 
-`int` valor em que valores mais altos designam maior precedência.
+O valor de Classificação do OSGi Framework Service é usado para indicar a ordem usada para chamar esse serviço. Esse valor é um `int` valor em que valores mais altos designam maior precedência.
 O valor padrão é `0`.
 
 * **Nomes do cabeçalho**
@@ -354,8 +353,7 @@ Os nomes dos cookies que podem conter uma ID de usuário.
 Os nomes dos parâmetros de solicitação que podem fornecer a ID do usuário.
 
 * **Mapa do usuário**
-Para usuários selecionados, o nome de usuário extraído da solicitação HTTP pode ser substituído por outro no objeto de credenciais. O mapeamento é definido aqui. Se o nome do usuário 
-`admin` for exibido em ambos os lados do mapa, o mapeamento será ignorado. O caractere &quot;=&quot; deve ser escapado com um &quot;\&quot; à esquerda.
+Para usuários selecionados, o nome de usuário extraído da solicitação HTTP pode ser substituído por outro no objeto de credenciais. O mapeamento é definido aqui. Se o nome do usuário `admin` for exibido em ambos os lados do mapa, o mapeamento será ignorado. O caractere &quot;=&quot; deve ser escapado com um &quot;\&quot; à esquerda.
 
 * **Formato**
 Indica o formato em que a ID de usuário é fornecida. Utilização:

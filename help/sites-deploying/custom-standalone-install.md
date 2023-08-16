@@ -6,9 +6,9 @@ seo-description: Learn about the options available when installing a standalone 
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1622'
+source-wordcount: '1620'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Finalmente, se você estiver executando uma instância atualizada do AEM 6.3, ve
 
 ## Modos de execução {#run-modes}
 
-**Modos de execução** O permite ajustar a instância do AEM para uma finalidade específica; por exemplo, criar ou publicar, testar, desenvolver, intranet etc. Esses modos também permitem controlar o uso de conteúdo de amostra. Esse conteúdo de amostra é definido antes que o início rápido seja criado e pode incluir pacotes, configurações etc. Isso pode ser particularmente útil para instalações prontas para produção quando você quiser manter sua instalação enxuta e sem conteúdo de amostra. Para obter mais informações, consulte:
+**Modos de execução** O permite ajustar a instância do AEM para um propósito específico; por exemplo, criar ou publicar, testar, desenvolver, intranet etc. Esses modos também permitem controlar o uso de conteúdo de amostra. Esse conteúdo de amostra é definido antes que o início rápido seja criado e pode incluir pacotes, configurações etc. Isso pode ser particularmente útil para instalações prontas para produção quando você quiser manter sua instalação enxuta e sem conteúdo de amostra. Para obter mais informações, consulte:
 
 * [Modos de execução](/help/sites-deploying/configure-runmodes.md)
 

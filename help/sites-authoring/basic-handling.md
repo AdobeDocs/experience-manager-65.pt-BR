@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3025'
-ht-degree: 44%
+source-wordcount: '3017'
+ht-degree: 43%
 
 ---
 
@@ -188,7 +188,7 @@ O cabeçalho da está sempre presente na parte superior da tela. Embora a maiori
 
   ![Navegações estruturais](assets/bh-05.png)
 
-  Situadas no meio do painel e sempre mostrando a descrição do item atualmente selecionado, as navegações estruturais permitem que você navegue dentro de um console específico. No console Sites, você pode navegar pelos níveis do seu site.
+  Situadas no meio do painel e sempre mostrando a descrição do item selecionado no momento, as navegações estruturais permitem que você navegue dentro de um console específico. No console Sites, você pode navegar pelos níveis do seu site.
 
   Basta clicar no texto da navegação estrutural para exibir uma lista suspensa que lista os níveis da hierarquia do item selecionado no momento. Clique em uma entrada para ir para esse local.
 
@@ -401,7 +401,7 @@ Em todas as visualizações, todos os itens podem ser desmarcados. Para isso, pr
 
 ![Exibição de coluna](assets/bh-16.png)
 
-A exibição de coluna permite uma navegação visual de uma árvore de conteúdo por uma série de colunas em cascata. Essa visualização permite visualizar e percorrer a estrutura em árvore do site.
+A exibição de coluna permite uma navegação visual de uma árvore de conteúdo por uma série de colunas em cascata. Essa visualização permite visualizar e percorrer a estrutura de árvore do site.
 
 Selecionar um recurso na coluna mais à esquerda exibirá os recursos secundários em uma coluna à direita. Selecionar um recurso na coluna direita exibirá os recursos secundários em outra coluna à direita e assim por diante.
 

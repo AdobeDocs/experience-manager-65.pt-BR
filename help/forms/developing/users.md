@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '6228'
+source-wordcount: '6226'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ No XML de configuração exportado pelo Gerenciamento de usuários, o nó raiz q
 
 **Noções básicas sobre valores de objectSID**
 
-Ao usar o Ative Diretory, é importante compreender que uma `objectSID` O valor não é um atributo exclusivo em vários domínios. Esse valor armazena o identificador de segurança de um objeto. Em um ambiente com vários domínios (por exemplo, uma árvore de domínios), `objectSID` pode ser diferente.
+Ao usar o Ative Diretory, é importante compreender que uma `objectSID` o valor não é um atributo exclusivo em vários domínios. Esse valor armazena o identificador de segurança de um objeto. Em um ambiente com vários domínios (por exemplo, uma árvore de domínios), `objectSID` pode ser diferente.
 
 Um `objectSID` O valor será alterado se um objeto for movido de um domínio do Ative Diretory para outro domínio. Alguns objetos têm o mesmo `objectSID` em qualquer lugar no domínio. Por exemplo, grupos como BUILTIN\Administradores, BUILTIN\Usuários Avançados e assim por diante teriam o mesmo `objectSID` independentemente dos domínios. Esses `objectSID` são bem conhecidos.
 
@@ -584,7 +584,7 @@ Para gerenciar de forma programática usuários, grupos e domínios usando a API
 
    >[!NOTE]
    >
-   >Se o número máximo de resultados não for especificado no filtro de pesquisa (por meio da variável `PrincipalSearchFilter.resultsMax` ), serão retornados no máximo 1000 resultados. Esse comportamento é diferente do que ocorre usando a API do Java, na qual 10 resultados é o máximo padrão. Além disso, os métodos de pesquisa como `findGroupMembers` não produzirá resultados a menos que o número máximo de resultados seja especificado no filtro de pesquisa (por exemplo, por meio de `GroupMembershipSearchFilter.resultsMax` campo). Isso se aplica a todos os filtros de pesquisa herdados do `GenericSearchFilter` classe. Para obter mais informações, consulte [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   >Se o número máximo de resultados não for especificado no filtro de pesquisa (por meio da variável `PrincipalSearchFilter.resultsMax` ), serão retornados no máximo 1000 resultados. Esse comportamento é diferente do que ocorre usando a API do Java, na qual 10 resultados é o máximo padrão. Além disso, os métodos de pesquisa como `findGroupMembers` não produzirá resultados, a menos que o número máximo de resultados seja especificado no filtro de pesquisa (por exemplo, por meio de `GroupMembershipSearchFilter.resultsMax` campo). Isso se aplica a todos os filtros de pesquisa herdados do `GenericSearchFilter` classe. Para obter mais informações, consulte [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
    Como o valor de retorno nesse caso é um `object[]` contendo `Principal` objetos, iterar pelo resultado e converter o `Principal` objetos para qualquer um `User` ou `Group` objetos.
 
@@ -666,7 +666,6 @@ Para gerenciar funções e permissões usando a API de serviço do Gerenciador d
    * A `java.lang.String` objeto que contém o identificador de função.
    * Uma matriz de `java.lang.String` objetos que contêm os identificadores principais.
 
-
 **Consulte também**
 
 [Resumo das etapas](users.md#summary-of-steps)
@@ -713,7 +712,6 @@ Gerencie funções e permissões usando a API de serviço do Gerenciador de auto
 
    * A `string` objeto que contém o identificador de função.
    * Uma matriz de `string` objetos que contêm os identificadores principais.
-
 
 **Consulte também**
 

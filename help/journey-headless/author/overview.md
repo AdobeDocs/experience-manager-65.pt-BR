@@ -2,10 +2,10 @@
 title: Jornada do autor de conteúdo headless do AEM
 description: Comece aqui uma jornada guiada pelos recursos headless eficientes e flexíveis do AEM, suas funcionalidades e como criar conteúdo para seu projeto.
 exl-id: b8cdbd0f-c034-4c9f-976f-5e39b1bd33bf
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 91%
+source-wordcount: '848'
+ht-degree: 86%
 
 ---
 
@@ -49,14 +49,14 @@ As informações nesta jornada podem ser úteis para outros perfis, mas algumas 
 
 Muitos tópicos serão explorados nesta jornada. Os artigos a seguir fornecem conhecimento básico sobre headless no AEM e oferecem links para a documentação técnica detalhada.
 
-Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se o tema “headless no AEM” for novidade para você, recomendamos começar do início e avançar sequencialmente.
+Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você é novo no headless no AEM, a Adobe recomenda que você comece do início e avance sequencialmente.
 
 | # | Artigo | Descrição |
 |---|---|---|
 | 0 | Jornada do autor de conteúdo headless do AEM | Este documento |
 | 1 | [Criação para AEM headless - uma introdução](introduction.md) | Uma introdução aos recursos headless do Adobe Experience Manager e como criar conteúdo para o seu projeto. |
 | 2 | [Noções básicas de criação para headless com AEM](basics.md) | Saiba mais sobre os conceitos e os mecanismos de criação de conteúdo para seu CMS headless usando Fragmentos de conteúdo. |
-| 3 | [Saiba mais sobre como usar referências em Fragmentos de conteúdo](references.md) | Saiba mais sobre como usar referências em Fragmentos de conteúdo. Isso também permite que você crie e gerencie vários níveis de estrutura para seu CMS headless usando Fragmentos aninhados. |
+| 3 | [Saiba mais sobre como usar referências em Fragmentos de conteúdo](references.md) | Saiba mais sobre como usar referências em Fragmentos de conteúdo. Isso também permite criar e gerenciar vários níveis de estrutura para seu CMS headless usando fragmentos aninhados. |
 | 4 | [Saiba mais sobre como definir metadados e marcação para Fragmentos de conteúdo](metadata-tagging.md) | Saiba mais sobre como definir metadados e marcação para Fragmentos de conteúdo. |
 
 ## O que vem a seguir {#what-is-next}

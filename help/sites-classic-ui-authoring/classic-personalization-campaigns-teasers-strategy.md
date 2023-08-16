@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 27b8302c-250b-4ce6-b3cf-c938738f2d92
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1195'
 ht-degree: 5%
 
 ---
@@ -28,7 +28,7 @@ As campanhas geralmente usam teasers como um mecanismo para atrair um segmento e
 Os teasers dentro do AEM são compostos de várias partes:
 
 * **Páginas de teaser** são armazenados na página de campanha apropriada e mantêm as definições dos parágrafos do teaser disponíveis para cada campanha específica. Essas definições são usadas ao exibir os parágrafos do teaser; incluindo variações de conteúdo, o segmento a ser usado para selecionar uma variação e um fator de reforço.
-* A variável **Componente de teaser** O está disponível e permite criar uma ocorrência do seu parágrafo de teaser específico em uma página de conteúdo. Você pode arrastar o componente de teaser do sidekick e, em seguida, especificar sua definição de teaser para criar seu próprio parágrafo de teaser. **Nota:** O componente de Teaser agora está obsoleto no AEM 6.2. Use o botão [Componente de direcionamento](/help/sites-authoring/content-targeting-touch.md).
+* A variável **Componente de teaser** O está disponível prontamente e permite criar uma ocorrência do seu parágrafo de teaser específico em uma página de conteúdo. Você pode arrastar o componente de teaser do sidekick e, em seguida, especificar sua definição de teaser para criar seu próprio parágrafo de teaser. **Nota:** O componente de Teaser agora está obsoleto no AEM 6.2. Use o botão [Componente de direcionamento](/help/sites-authoring/content-targeting-touch.md).
 * **Parágrafos de teaser** são instâncias reais do teaser em uma página de conteúdo. Eles atraem um segmento de visitantes para um conteúdo focado em seus interesses.
 * Páginas que contêm o conteúdo da campanha focado em um segmento de visitante específico. Normalmente, os parágrafos do teaser levam o visitante a essas páginas.
 

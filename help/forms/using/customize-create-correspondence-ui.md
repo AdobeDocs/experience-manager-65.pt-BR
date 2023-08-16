@@ -11,9 +11,9 @@ discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1086'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Visão geral {#overview}
 
-O Gerenciamento de correspondência permite alterar a marca do modelo da solução para obter melhor valor da marca e seguir os padrões de marca da sua organização. A reformulação da marca da interface do usuário inclui a alteração do logotipo da organização, que é exibido no canto superior esquerdo da interface Criar correspondência.
+O Gerenciamento de correspondência permite que você renove a marca do modelo da solução para obter melhor valor da marca e aderir aos padrões de marca da sua organização. A reformulação da marca da interface do usuário inclui a alteração do logotipo da organização, que é exibido no canto superior esquerdo da interface Criar correspondência.
 
 Você pode alterar o logotipo na interface de Criar correspondência com o logotipo da sua organização.
 
@@ -116,7 +116,7 @@ Faça upload do seu arquivo de logotipo personalizado para o CRX. As regras de H
 
 Use as seguintes etapas para fazer upload do arquivo de logotipo personalizado para o CRX:
 
-1. Ir para `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessário, efetue login como Administrador.
+1. Acesse `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessário, efetue login como Administrador.
 1. No CRXDE, clique com o botão direito do mouse no **imgs** no seguinte caminho e selecione **Criar > Criar arquivo**:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
@@ -159,7 +159,7 @@ A imagem de logotipo personalizada requer que uma folha de estilos adicional sej
 
 Use as etapas a seguir para configurar a folha de estilos para renderizar o logotipo:
 
-1. Ir para `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessário, efetue login como Administrador.
+1. Acesse `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessário, efetue login como Administrador.
 1. Crie um arquivo chamado customcss.css (você não pode usar um nome de arquivo diferente) no seguinte local:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css/`

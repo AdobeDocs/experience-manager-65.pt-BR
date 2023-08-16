@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: e147605ff4d5c3d2403632285956559db235c084
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1511'
 ht-degree: 1%
 
 ---
@@ -55,49 +55,47 @@ Antes de começar, verifique se você tem o seguinte:
 
 Faça o seguinte para configurar suas [!DNL MySQL] banco de dados:
 
-1. Instale o driver JDBC para [!DNL MySQL] database como um pacote OSGi:
+1. Instale o driver JDBC para [!DNL MySQL] o banco de dados como uma pacote OSGi:
 
-   1. Baixar [!DNL MySQL] Pacote OSGi de driver JDBC de `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`. <!-- This URL is an insecure link but using https is not possible -->
+   1. Baixe [!DNL MySQL] o pacote JDBC Driver OSGi de `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html` . <!-- This URL is an insecure link but using https is not possible -->
    1. Fazer logon no AEM [!DNL Forms] Instância do autor como administrador e acesse pacotes de console da Web AEM. O URL padrão é [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
    1. Toque **[!UICONTROL Instalar/Atualizar]**. Um [!UICONTROL Carregar/instalar pacotes] será exibida.
 
    1. Toque **[!UICONTROL Escolher arquivo]** para procurar e selecionar a variável [!DNL MySQL] Pacote OSGi do driver JDBC. Selecionar **[!UICONTROL Iniciar pacote]** e **[!UICONTROL Atualizar pacotes]** e toque em **[!UICONTROL Instalar ou atualizar]**. Certifique-se de que o [!DNL Oracle Corporation's] Driver JDBC para [!DNL MySQL] está ativo. O driver está instalado.
 
-1. Configurar [!DNL MySQL] banco de dados como fonte de dados:
+1. Configure [!DNL MySQL] o banco de dados como um fonte de dados:
 
-   1. Ir para o console da Web do AEM em [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-   1. Localizar **Fonte de dados agrupada da conexão Apache Sling** configuração. Toque para abrir a configuração no modo de edição.
+   1. Vá para AEM console da Web em [ https://localhost:4502/System/console/configMgr ](https://localhost:4502/system/console/configMgr) .
+   1. Localize **a configuração da fonte** de dados Pooled do Apache sling Connection. Toque para abrir a configuração no modo de edição.
    1. Na caixa de diálogo de configuração, especifique os seguintes detalhes:
 
       * **Nome da fonte de dados:** Você pode especificar qualquer nome. Por exemplo, especifique **WeRetailMySQL**.
       * **Nome da propriedade do serviço DataSource**: especifique o nome da propriedade de serviço que contém o nome da DataSource. É especificado ao registrar a instância da fonte de dados como serviço OSGi. Por exemplo, **datasource.name**.
       * **Classe de driver JDBC**: Especifique o nome da classe Java do driver JDBC. Para [!DNL MySQL] banco de dados, especificar **com.mysql.jdbc.Driver**.
-      * **URI da conexão JDBC**: especifique o URL de conexão do banco de dados. Para [!DNL MySQL] banco de dados executando na porta 3306 e schema weretail, o URL é: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **URI** de conexão JDBC: especifique URL de conexão do banco de dados. Para o banco de [!DNL MySQL] dados em execução no porta 3306 e Schema weretail, o URL é: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
 
       >[!NOTE]
       >
-      > Quando a variável [!DNL MySQL] O banco de dados está protegido por um firewall, então o nome de host do banco de dados não é um DNS Público. O endereço IP do banco de dados precisa ser adicionado à variável */etc/hosts* arquivo da máquina host AEM.
+      > Quando o banco de dados está atrás de um firewall, o nome do host do banco de [!DNL MySQL] dados não é um DNS público. O endereço IP do banco de dados precisa ser adicionado no *arquivo/etc/hosts* da máquina host do AEM.
 
       * **Nome de usuário:** Nome de usuário do banco de dados. É necessário habilitar o driver JDBC para estabelecer uma conexão com o banco de dados.
       * **Senha:** Senha do banco de dados. É necessário habilitar o driver JDBC para estabelecer uma conexão com o banco de dados.
 
       >[!NOTE]
       >
-      >O AEM Forms não oferece suporte à autenticação NT para [!DNL MySQL]. Ir para o console da Web do AEM em [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) e pesquise &quot;Apache Sling Connection Pooled Datasource&quot;. Para a propriedade &quot;JDBC connection URI&quot;, defina o valor de &quot;integratedSecurity&quot; como False e use o nome de usuário e a senha criados para se conectar com [!DNL MySQL] banco de dados.
+      >O AEM Forms não oferece suporte à autenticação NT para [!DNL MySQL]. Vá para AEM console da Web em [ https://localhost:4502/System/console/configMgr ](https://localhost:4502/system/console/configMgr) e pesquisa &quot;fonte de dados em pool de conexões do Apache sling&quot;. Para &quot;URI de conexão JDBC&quot; propriedade valor definido como &quot;integratedSecurity&quot; como false e use o nome de usuário e o senha para se conectar ao [!DNL MySQL] banco de dados.
 
-      * **Teste ao tomar emprestado:** Ativar o **[!UICONTROL Teste ao tomar emprestado]** opção.
-      * **Testar ao retornar:** Ativar o **[!UICONTROL Testar na devolução]** opção.
-      * **Consulta de validação:** Especifique uma consulta SQL SELECT para validar as conexões do pool. A consulta deve retornar pelo menos uma linha. Por exemplo, **selecionar &#42; dos detalhes do cliente**.
+      * **Teste no empréstimo:** ative a **[!UICONTROL opção testar no empréstimo]** .
+      * **Teste no Return:** ative a **[!UICONTROL opção testar ao retornar]** .
+      * **Consulta de validação:** especifique um SQL SELECT Query para validar as conexões do pool. A consulta deve retornar pelo menos uma linha. Por exemplo, **selecionar &#42; dos detalhes do cliente**.
       * **Isolamento de transação**: Defina o valor como **READ_COMMITTED**.
 
-         Deixar outras propriedades com o padrão [valores](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) e toque em **[!UICONTROL Salvar]**.
+        Deixar outras propriedades com o padrão [valores](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) e toque em **[!UICONTROL Salvar]**.
 
-         Uma configuração semelhante à seguinte é criada.
+        Uma configuração semelhante à seguinte é criada.
 
-         ![relacional-database-data-source-configuration](assets/relational-database-data-source-configuration.png)
-
-
+        ![relacional-database-data-source-configuration](assets/relational-database-data-source-configuration.png)
 
 ## Etapa 2: Criar modelo de dados de formulário {#create-fdm}
 
@@ -140,6 +138,7 @@ Faça o seguinte para configurar o modelo de dados de formulário:
       * cidade
       * estado
       * código postal
+
    * **Serviços:**
 
       * obter
@@ -164,29 +163,29 @@ Faça o seguinte para configurar o modelo de dados de formulário:
 
       ![write-default](assets/write-default.png)
 
-      Adicione e configure o **id** como se segue.
+      Adicione e configure o argumento ID **da** seguinte maneira.
 
-      ![id-arg](assets/id-arg.png)
+      ![ID-ARG](assets/id-arg.png)
 
-   1. Toque **[!UICONTROL Concluído]** para salvar as propriedades do objeto de modelo de dados. Em seguida, toque em **[!UICONTROL Salvar]** para salvar o modelo de dados do formulário.
+   1. Toque em **[!UICONTROL concluído]** para salvar as propriedades do objeto de modelo de dados. Em seguida, toque **[!UICONTROL em salvar]** para salvar o modelo de dados de formulário.
 
-      A variável **[!UICONTROL obter]** e **[!UICONTROL atualizar]** serviços são adicionados como serviços padrão para o objeto de modelo de dados.
+      Os **[!UICONTROL serviços get]** e **[!UICONTROL Update]** são adicionados como serviços padrão para o objeto de modelo de dados.
 
       ![modelo de dados-objeto](assets/data-model-object.png)
 
 1. Vá para a **[!UICONTROL Serviços]** guia e configurar **[!UICONTROL obter]** e **[!UICONTROL atualizar]** serviços.
 
-   1. Selecione o **[!UICONTROL obter]** serviço e toque em **[!UICONTROL Editar propriedades]**. A caixa de diálogo de propriedades é aberta.
-   1. Especifique o seguinte na caixa de diálogo Editar propriedades:
+   1. Selecione o **[!UICONTROL serviço get]** e toque **[!UICONTROL Editar propriedades]** . A caixa de diálogo de propriedades é aberta.
+   1. Especifique o seguinte na caixa de diálogo Editar Propriedades:
 
-      * **Título**: especifique o título do serviço. Por exemplo: Recuperar endereço de entrega.
-      * **Descrição**: especifique a descrição que contém o funcionamento detalhado do serviço. Por exemplo:
+      * **Título** : especificar o título do serviço. Por exemplo: recuperar endereço de envio.
+      * **Descrição** : Especifique a descrição que contém o funcionamento detalhado do serviço. Por exemplo:
 
-         Este serviço recupera o endereço de entrega e outros detalhes do cliente de [!DNL MySQL] banco de dados
+        Este serviço recupera o endereço de entrega e outros detalhes do cliente de [!DNL MySQL] banco de dados
 
       * **Objeto de modelo de saída**: Selecione o schema que contém dados do cliente. Por exemplo:
 
-         esquema customerdetail
+        esquema customerdetail
 
       * **Retornar matriz**: Desative a variável **Retornar matriz** opção.
       * **Argumentos**: selecione o argumento chamado **ID**.
@@ -202,20 +201,19 @@ Faça o seguinte para configurar o modelo de dados de formulário:
       * **Título**: especifique o título do serviço. Por exemplo, Atualizar endereço de entrega.
       * **Descrição**: especifique a descrição que contém o funcionamento detalhado do serviço. Por exemplo:
 
-         Este serviço atualiza o endereço de entrega e campos relacionados no banco de dados MySQL
+        Este serviço atualiza o endereço de entrega e campos relacionados no banco de dados MySQL
 
       * **Objeto de modelo de entrada**: Selecione o schema que contém dados do cliente. Por exemplo:
 
-         esquema customerdetail
+        esquema customerdetail
 
       * **Tipo de saída**: Selecionar **BOOLEANO**.
 
       * **Argumentos**: selecione o argumento chamado **ID** e **customerdetails**.
+
       Toque **[!UICONTROL Concluído]**. A variável **[!UICONTROL atualizar]** serviço para atualizar os detalhes do cliente na [!DNL MySQL] banco de dados está configurado.
 
       ![shiping-address-update](assets/shiiping-address-update.png)
-
-
 
 O objeto de modelo de dados e os serviços no modelo de dados de formulário são configurados. Agora você pode testar o modelo de dados do formulário.
 

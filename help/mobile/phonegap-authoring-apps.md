@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 >
 >A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-O Painel do AEM Mobile permite criar, construir e implantar o aplicativo móvel, criar, excluir e editar metadados do aplicativo. Assim que o aplicativo estiver ativo, você poderá analisar as análises do aplicativo, incluindo as métricas de ciclo de vida e uso, para melhorar a conversão do cliente e a fidelidade à marca.
+O Painel do AEM Mobile permite criar, construir e implantar o aplicativo móvel e criar, excluir e editar os metadados do aplicativo. Assim que o aplicativo estiver ativo, você poderá analisar as análises do aplicativo, incluindo as métricas de ciclo de vida e uso, para melhorar a conversão do cliente e a fidelidade à marca.
 
 Para criar seu aplicativo AEM Mobile, consulte [Desenvolvimento de aplicativos móveis](/help/mobile/building-app-mobile-phonegap.md) página.
 

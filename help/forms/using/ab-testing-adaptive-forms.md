@@ -10,9 +10,9 @@ topic-tags: integrations
 discoiquuid: 8f776f30-ff93-4d19-94c6-c4bfe6f1fae2
 docset: aem65
 exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
-source-git-commit: 294d12e7d1b5293f165a164ff1fcc624f7b2b648
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1567'
 ht-degree: 2%
 
 ---
@@ -84,6 +84,7 @@ Além do servidor jboss, você pode adicionar o argumento -Dabtesting.enabled=tr
 >[!NOTE]
 >
 >Se você atualizar os URLs do Target configurados posteriormente, atualize todos os testes A/B em execução para que eles apontem para os URLs atuais. Para obter informações sobre a atualização de testes A/B, consulte [Atualizar teste A/B](/help/forms/using/ab-testing-adaptive-forms.md#p-update-a-b-test-p).
+>
 
 ## Criar públicos-alvo no AEM {#create-audiences-within-aem}
 
@@ -113,7 +114,7 @@ Execute as seguintes etapas para criar um teste A/B para um formulário adaptáv
 1. Clique em **Selecionar** na barra de ferramentas e selecione o formulário adaptável.
 1. Clique em **Mais** na barra de ferramentas e selecione **Configurar o teste A/B**. A página Configurar teste A/B é aberta.
 
-[ ](assets/ab-test-configure-1.png)
+[](assets/ab-test-configure-1.png)
 
 1. Especifique um **Nome da atividade** para o teste A/B.
 
@@ -134,7 +135,7 @@ Execute as seguintes etapas para criar um teste A/B para um formulário adaptáv
 
 1. Vá para a interface do Forms e Documentos, selecione o formulário adaptável e clique em **Mais** e selecione **Iniciar teste A/B**.
 
-Agora o teste A/B está em execução e o público-alvo especificado será disponibilizado aleatoriamente com as experiências com base na distribuição especificada.
+Seu teste A/B agora está em execução e o público-alvo especificado será disponibilizado aleatoriamente com as experiências com base na distribuição especificada.
 
 ## Atualizar teste A/B {#update-a-b-test}
 
@@ -153,7 +154,7 @@ Depois de permitir que o teste A/B seja executado pelo período desejado, você 
 
 1. Selecione o formulário adaptável e clique em **Mais** e clique em **Relatório do teste A/B**. O relatório é exibido.
 
-[ ](assets/ab-test-report-3.png)
+[](assets/ab-test-report-3.png)
 
 1. Analise o relatório e veja se você tem pontos de dados suficientes para declarar uma das experiências de melhor desempenho como vencedora. Você pode optar por continuar com o mesmo teste A/B por mais tempo ou declarar um vencedor e terminar o teste A/B.
 1. Para declarar um vencedor e finalizar o teste A/B, clique em **Encerrar teste A/B** no painel de relatórios. Uma caixa de diálogo solicita que você declare uma das duas experiências como vencedora. Escolha um vencedor e confirme a finalização do teste A/B.

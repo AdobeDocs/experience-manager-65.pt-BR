@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
 feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
-source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 34%
+source-wordcount: '551'
+ht-degree: 35%
 
 ---
 
@@ -119,7 +119,7 @@ Quando você seleciona uma página de live copy, as seguintes ações estão dis
 
 * [Retomar](/help/sites-administering/msm-livecopy.md#resuming-inheritance-for-a-page)
 
-   * Retomar permite que você restaure uma relação suspensa.
+   * Retomar permite restaurar uma relação suspensa.
 
 * [Desconectar](/help/sites-administering/msm.md#detaching-a-live-copy)
 

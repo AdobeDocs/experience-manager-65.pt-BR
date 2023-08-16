@@ -12,10 +12,10 @@ discoiquuid: b7777dc5-a867-4799-9e2c-a1f4bb5dd96a
 docset: aem65
 pagetitle: Components for Content Fragments
 exl-id: f2edd9b2-f231-42f3-a25e-428cd1d96c2a
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 4%
+source-wordcount: '960'
+ht-degree: 3%
 
 ---
 
@@ -69,7 +69,7 @@ Essa biblioteca adiciona recursos, específicos dos fragmentos de conteúdo, ao 
 
 ### Conteúdo intermediário {#in-between-content}
 
-A variável **Fragmento do conteúdo** O componente permite soltar componentes adicionais entre os diferentes parágrafos do exibido [element](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment). Basicamente, o elemento exibido é composto de parágrafos diferentes (cada parágrafo é marcado por um retorno de carro). Entre cada um desses parágrafos, é possível inserir conteúdo usando outros componentes.
+A variável **Fragmento do conteúdo** O componente t permite soltar componentes adicionais entre os diferentes parágrafos do exibido [element](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment). Basicamente, o elemento exibido é composto de parágrafos diferentes (cada parágrafo é marcado por um retorno de carro). Entre cada um desses parágrafos, é possível inserir conteúdo usando outros componentes.
 
 De um ponto de vista técnico, cada parágrafo do elemento exibido * * * vive em seu próprio parsys, e cada componente adicionado entre os parágrafos será (abaixo do capô) inserido no parsys.
 
@@ -124,7 +124,6 @@ Internamente, o Sling Rewriter é usado para essa renderização. A respectiva c
 >em seguida, o `serializerType` **deve** ser atualizado para:
 >
 >* `serializerType="html5-serializer"`
-
 
 A configuração pronta para uso usa os seguintes transformadores:
 

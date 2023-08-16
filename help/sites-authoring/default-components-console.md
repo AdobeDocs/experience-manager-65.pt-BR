@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: b657f95d-7be3-4409-a31b-d47fb2bfa550
 docset: aem65
 exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '262'
 ht-degree: 55%
 
 ---
 
 # Console de componentes{#components-console}
 
-O console Componentes permite navegar em todos os componentes definidos para a instância e exibir as principais informações de cada componente.
+O console Componentes permite navegar em todos os componentes definidos para a instância e visualizar as principais informações de cada componente.
 
 Ele pode ser acessado em **Ferramentas ->** **Geral ->** **Componentes**. No console, as visualizações em Cartão e Lista estão disponíveis. Como não há estrutura em árvore para componentes, a exibição em coluna não está disponível.
 
@@ -75,4 +75,4 @@ Para exibir detalhes sobre um componente específico, toque/clique no recurso de
 
   Se o desenvolvedor tiver fornecido [documentação do componente](/help/sites-developing/developing-components.md#documenting-your-component), ele aparecerá no **Documentação** guia. Se não houver documentação disponível, a guia **Documentação** não será exibida.
 
-  ![Documentação](assets/chlimage_1-171.png).
+  ![Documentação](assets/chlimage_1-171.png)

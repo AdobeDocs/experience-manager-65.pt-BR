@@ -2,9 +2,9 @@
 title: Criação de conteúdo acessível para o Adobe Experience Manager (Conformidade com o WCAG 2.1)
 description: Usar o AEM para ajudar a tornar o conteúdo da Web acessível e utilizável por pessoas com deficiência
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '13818'
+source-wordcount: '13817'
 ht-degree: 85%
 
 ---
@@ -42,7 +42,6 @@ A seção a seguir apresenta as [camadas das Diretrizes da WCAG 2.1](https://www
 >
 >* [Os nomes curtos das Diretrizes da WCAG 2.1](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
 >* [A numeração usada nas Diretrizes da WCAG 2.1](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) para auxiliar na referência cruzada com o site da WCAG.
-
 
 ## Princípio 1: perceptível       {#principle-perceivable}
 
@@ -314,9 +313,9 @@ O AEM facilita a criação de um conteúdo da web semanticamente significativo u
    * O elemento `<ul>` é usado para listas *desordenadas* (com marcadores). Os itens da lista individual são identificados usando o elemento `<li>`. No RTE, use o ícone **Lista de marcadores**.
    * O elemento `<ol>` é usado para as listas *numeradas*. Os itens da lista individual são identificados usando o elemento `<li>`. No RTE, use o ícone **Lista numerada**.
 
-   Se desejar alterar o conteúdo existente em um tipo de lista específica, destaque o texto e selecione o tipo de lista apropriado. Como no exemplo anterior que mostra como o texto do parágrafo é inserido, os elementos de lista apropriados são adicionados automaticamente ao HTML.
+  Se desejar alterar o conteúdo existente em um tipo de lista específica, destaque o texto e selecione o tipo de lista apropriado. Como no exemplo anterior que mostra como o texto do parágrafo é inserido, os elementos de lista apropriados são adicionados automaticamente ao HTML.
 
-   No modo de tela cheia, os ícones **Lista com marcadores** e **Lista numerada** ficam visíveis. Quando não estiver no modo de tela cheia, as duas opções estarão disponíveis no ícone **Listas**.
+  No modo de tela cheia, os ícones **Lista com marcadores** e **Lista numerada** ficam visíveis. Quando não estiver no modo de tela cheia, as duas opções estarão disponíveis no ícone **Listas**.
 
 * **Tabelas**: Tabelas de dados devem ser identificadas usando os elementos da tabela de HTML:
    * um elemento `<table>`
@@ -324,77 +323,76 @@ O AEM facilita a criação de um conteúdo da web semanticamente significativo u
    * um elemento `<th>` para cada linha e cabeçalho da coluna
    * um elemento `<td>` para cada célula de dados
 
-   Além disso, as tabelas acessíveis usam os seguintes elementos e atributos:
+  Além disso, as tabelas acessíveis usam os seguintes elementos e atributos:
 
    * O elemento `<caption>` é usado para fornecer uma legenda visível para a tabela. Por padrão, as legendas são exibidas de forma centralizada acima da tabela, mas podem ser posicionadas adequadamente usando CSS. A legenda é associada à tabela de forma programada, portanto, é um método útil para fornecer uma introdução ao conteúdo.
    * O elemento `<summary>` auxilia os usuários com deficiências visuais a compreender de forma mais fácil as informações apresentadas em uma tabela, fornecendo um resumo do que pode ser visto. Isso é útil quando layouts complexos ou não convencionais são usados (esse atributo não é exibido no navegador, somente é lido nas tecnologias de assistência).
    * O `scope` atributo do elemento `<th>` é usado para indicar se uma célula representa um cabeçalho de uma linha ou de uma coluna específica. Uma abordagem semelhante é a de usar o cabeçalho e os atributos de id em tabelas complexas, onde as células de dados podem ser associadas a um ou mais cabeçalhos.
 
-   >[!NOTE]
-   >
-   >Por padrão, esses elementos e atributos não estão diretamente disponíveis, embora o administrador do sistema possa adicionar o suporte para esses valores na caixa de diálogo **Propriedades da tabela** (consulte [Adicionar suporte para outros elementos e atributos de HTML](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes).
+  >[!NOTE]
+  >
+  >Por padrão, esses elementos e atributos não estão diretamente disponíveis, embora o administrador do sistema possa adicionar o suporte para esses valores na caixa de diálogo **Propriedades da tabela** (consulte [Adicionar suporte para outros elementos e atributos de HTML](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes).
 
-   Para abrir a caixa de diálogo **Tabela** onde é possível selecionar a guia **Propriedades da tabela**:
+  Para abrir a caixa de diálogo **Tabela** onde é possível selecionar a guia **Propriedades da tabela**:
 
    * Defina uma **Legenda** adequada.
    * Remova qualquer valor padrão para **Largura**, **Altura**, **Borda**, **Preenchimento da célula e** **Espaçamento entre células**. já que essas propriedades podem ser definidas em uma planilha de estilos global.
 
-   Em seguida, você pode usar a opção **Propriedades da célula** para escolher entre uma célula de dados ou de cabeçalho:
+  Em seguida, você pode usar a opção **Propriedades da célula** para escolher entre uma célula de dados ou de cabeçalho:
 
 * **Ênfase**: Use o elemento `<strong>` ou `<em>` para indicar ênfase. Não use os cabeçalhos para destacar o texto dentro dos parágrafos.
    * Destaque o texto que deseja enfatizar;
    * Clique em **B** ícone (para `<strong>`) ou o **I** ícone (para `<em>`) mostrada na **Propriedades** (verifique se HTML está selecionado).
 
-      >[!NOTE]
-      >
-      >O RTE em uma instalação padrão do AEM está configurado para usar:
-      >
-      >* `<b>` para `<strong>`
-      >* `<i>` para `<em>`
-
-      >
-      >Eles são efetivamente os mesmos, mas `<strong>` e `<em>` são preferíveis, pois são html semanticamente corretos. Sua equipe de desenvolvimento pode configurar o RTE para usar `<strong>` e `<em>` (em vez de `<b>` e `<i>`), ao desenvolver a instância do projeto.
+     >[!NOTE]
+     >
+     >O RTE em uma instalação padrão do AEM está configurado para usar:
+     >
+     >* `<b>` para `<strong>`
+     >* `<i>` para `<em>`
+     >
+     >Eles são efetivamente os mesmos, mas `<strong>` e `<em>` são preferíveis, pois são html semanticamente corretos. Sua equipe de desenvolvimento pode configurar o RTE para usar `<strong>` e `<em>` (em vez de `<b>` e `<i>`), ao desenvolver a instância do projeto.
 
 * **Tabelas de dados complexos**: às vezes, quando há tabelas complexas com dois ou mais níveis de cabeçalhos, as Propriedades básicas da tabela podem não ser suficientes para fornecer todas as informações estruturais necessárias. Para esses tipos de tabelas complexas, relações diretas devem ser criadas entre os cabeçalhos e suas células relacionadas usando o **cabeçalho** e **id** atributos.
 
-   >[!NOTE]
-   >
-   >O atributo de ID não está disponível em uma instalação predefinida. Ele pode ser ativado configurando regras de HTML e o serializador no RTE.
+  >[!NOTE]
+  >
+  >O atributo de ID não está disponível em uma instalação predefinida. Ele pode ser ativado configurando regras de HTML e o serializador no RTE.
 
-   Por exemplo, na tabela abaixo os cabeçalhos e IDs são combinados para fazer uma associação programática para usuários de tecnologia assistiva.
+  Por exemplo, na tabela abaixo os cabeçalhos e IDs são combinados para fazer uma associação programática para usuários de tecnologia assistiva.
 
-   ```xml
-     <table>
-       <tr>
-         <th rowspan="2" id="h">Homework</th>
-         <th colspan="3" id="e">Exams</th>
-         <th colspan="3" id="p">Projects</th>
-       </tr>
-       <tr>
-         <th id="e1" headers="e">1</th>
-         <th id="e2" headers="e">2</th>
-         <th id="ef" headers="e">Final</th>
-         <th id="p1" headers="p">1</th>
-         <th id="p2" headers="p">2</th>
-         <th id="pf" headers="p">Final</th>
-       </tr>
-       <tr>
-         <td headers="h">15%</td>
-         <td headers="e e1">15%</td>
-         <td headers="e e2">15%</td>
-         <td headers="e ef">20%</td>
-         <td headers="p p1">10%</td>
-         <td headers="p p2">10%</td>
-         <td headers="p pf">15%</td>
-       </tr>
-     </table>
-   ```
+  ```xml
+    <table>
+      <tr>
+        <th rowspan="2" id="h">Homework</th>
+        <th colspan="3" id="e">Exams</th>
+        <th colspan="3" id="p">Projects</th>
+      </tr>
+      <tr>
+        <th id="e1" headers="e">1</th>
+        <th id="e2" headers="e">2</th>
+        <th id="ef" headers="e">Final</th>
+        <th id="p1" headers="p">1</th>
+        <th id="p2" headers="p">2</th>
+        <th id="pf" headers="p">Final</th>
+      </tr>
+      <tr>
+        <td headers="h">15%</td>
+        <td headers="e e1">15%</td>
+        <td headers="e e2">15%</td>
+        <td headers="e ef">20%</td>
+        <td headers="p p1">10%</td>
+        <td headers="p p2">10%</td>
+        <td headers="p pf">15%</td>
+      </tr>
+    </table>
+  ```
 
-   Para obter isso no AEM, adicione a marcação diretamente usando o modo de edição de origem.
+  Para obter isso no AEM, adicione a marcação diretamente usando o modo de edição de origem.
 
-   >[!NOTE]
-   >
-   >Essa funcionalidade não está imediatamente disponível em uma instalação padrão. Ela requer a configuração do RTE, das regras de HTML e do serializador.
+  >[!NOTE]
+  >
+  >Essa funcionalidade não está imediatamente disponível em uma instalação padrão. Ela requer a configuração do RTE, das regras de HTML e do serializador.
 
 #### Mais informações - Informações e Relações (1.3.1) {#more-information-info-and-relationships}
 
@@ -523,9 +521,9 @@ Siga as orientações em [Como cumprir o Critério de sucesso 1.4.2](https://www
    * Incidental: texto ou imagens de texto que fazem parte de um componente de interface de usuário inativo, [decoração pura](https://www.w3.org/TR/WCAG/#dfn-pure-decoration), não visíveis para ninguém ou que fazem parte de uma imagem que contém outro conteúdo visual significativo, não têm requisito de contraste.
    * Logotipos: o texto que faz parte de um logotipo ou marca comercial não tem requisito de contraste.
 
-   >[!NOTE]
-   >
-   >Consulte [Compreensão do contraste não textual](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) para obter mais informações e ajudar a garantir que os autores de conteúdo entendam os requisitos adicionais sobre elementos não textuais (incluindo ícones, elementos de interface, entre outros).
+  >[!NOTE]
+  >
+  >Consulte [Compreensão do contraste não textual](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) para obter mais informações e ajudar a garantir que os autores de conteúdo entendam os requisitos adicionais sobre elementos não textuais (incluindo ícones, elementos de interface, entre outros).
 
 #### Propósito - Contraste (Mínimo) (1.4.3)       {#purpose-contrast-minimum}
 
@@ -560,8 +558,7 @@ Verifique se o texto está suficientemente contrastado com o plano de fundo. As 
 >* Consulte &quot;Conversão de tamanho de fonte: pixel-point-em-rem-percent&quot; em `https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/`
 >* Consulte PMtoEM.com: Conversão de PX em EM simplificada em `http://pxtoem.com/`
 
-
-Para verificar as relações de contraste, use uma ferramenta de contraste de cores, como o [Color Contrast Analyzer do Paciello Group](https://www.paciellogroup.com/resources/contrast-analyser.html) ou o [Color Contrast Checker do WebAIM](https://webaim.org/resources/contrastchecker/). Essas ferramentas permitem verificar pares de cores e relatar quaisquer problemas de contraste.
+Para verificar as relações de contraste, use uma ferramenta de contraste de cores, como o [Color Contrast Analyzer do Paciello Group](https://www.paciellogroup.com/resources/contrast-analyser.html) ou o [Color Contrast Checker do WebAIM](https://webaim.org/resources/contrastchecker/). Essas ferramentas permitem verificar pares de cores e relatar problemas de contraste.
 
 De maneira alternativa, se não estiver tão preocupado em especificar a aparência de sua página, poderá optar por não especificar as cores do texto de primeiro e segundo plano. Nenhuma verificação de contraste é necessária, já que o navegador do usuário determina as cores do texto e plano de fundo.
 
@@ -973,10 +970,10 @@ A finalidade deste critério de sucesso é garantir que o texto e outros conteú
 Para cumprir este critério de sucesso, o idioma padrão de uma página da Web pode ser identificado usando o atributo `lang`dentro do elemento`<html>` no topo da página. Por exemplo:
 
 * Se uma página for escrita em inglês, o elemento `<html>` deverá informar:
-   `<html lang = "en">`
+  `<html lang = "en">`
 
 * Para processar uma página em espanhol, deve ser adotado o seguinte padrão:
-   `<html lang = "es">`
+  `<html lang = "es">`
 
 No AEM, o idioma padrão da sua página é definido ao criar página, mas também pode ser alterado ao editar as [Propriedades da Página](/help/sites-authoring/editing-page-properties.md).
 

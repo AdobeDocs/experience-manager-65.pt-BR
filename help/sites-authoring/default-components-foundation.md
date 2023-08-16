@@ -13,10 +13,10 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '7210'
-ht-degree: 8%
+source-wordcount: '7198'
+ht-degree: 9%
 
 ---
 
@@ -120,7 +120,7 @@ Quando a imagem é uma imagem JPEG, o tamanho da janela de visualização també
 
 #### Propriedades {#properties}
 
-A caixa de diálogo permite editar propriedades para a instância do componente de Imagem adaptável, muitas das quais são comuns ao componente de Imagem no qual ele se baseia. As propriedades estão disponíveis em duas guias:
+A caixa de diálogo permite editar as propriedades da instância do componente de Imagem adaptável, muitas das quais são comuns ao componente de Imagem no qual ele se baseia. As propriedades estão disponíveis em duas guias:
 
 * **Imagem**
 
@@ -1016,11 +1016,11 @@ Ao configurar qualquer um dos componentes de formulário, as seguintes guias est
 
 * **Título e texto**
 
-  Aqui você deve especificar as informações básicas, como o título do formulário e qualquer texto que o acompanhe. Quando apropriado, também permite definir outras informações importantes, como se o campo é multisselecionável e se há itens disponíveis para seleção.
+  Aqui você deve especificar as informações básicas, como o título do formulário e qualquer texto que o acompanhe. Quando apropriado, também permite definir outras informações importantes, como se o campo é multisselecionável e se os itens estão disponíveis para seleção.
 
 * **Valores iniciais**
 
-  Permite especificar um valor default.
+  Permite especificar um valor padrão.
 
 * **Restrições**
 

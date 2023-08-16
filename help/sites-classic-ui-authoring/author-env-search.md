@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 8d32960c-47c3-4e92-b02e-ad4d8fea7b2d
 docset: aem65
 exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '469'
 ht-degree: 10%
 
 ---
@@ -48,7 +48,6 @@ O painel de pesquisa permite pesquisar em todas as páginas do site. Ele contém
 >* [Agrupamento de campos](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping)
 >* [Impulsionando](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
 >
-
 
 Execute a pesquisa clicando em **Pesquisar** na parte inferior do painel. Clique em **Redefinir** para limpar os critérios de pesquisa.
 

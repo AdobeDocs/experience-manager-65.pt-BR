@@ -10,9 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 feature: Mobile Forms
 exl-id: cf86c810-c466-4894-acc2-d4faf49754cc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ No início, o formulário HTML5 renderiza apenas a primeira página do formulár
 
 ## footer.jsp {#footer-jsp}
 
-O módulo footer.jsp é um vazio. Permite adicionar scripts que são usados apenas para interação do usuário.
+O módulo footer.jsp é um vazio. Ela permite adicionar scripts que são usados apenas para interação do usuário.
 
 ## Criação de perfis personalizados {#creating-custom-profiles}
 

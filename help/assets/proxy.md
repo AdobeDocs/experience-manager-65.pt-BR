@@ -4,9 +4,9 @@ description: Um proxy é um [!DNL Experience Manager] instância que usa trabalh
 contentOwner: AG
 role: Admin, Architect
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '843'
 ht-degree: 0%
 
 ---
@@ -27,9 +27,9 @@ Um proxy está disponível por meio do HTTP Servlet quando configurado para acei
 
 * `job`
 
-   **Requisitos**: o parâmetro `jobevent` deve ser definido como um mapa de valores serializado. Isso é usado para criar um `Event` para um processador de tarefas.
+  **Requisitos**: o parâmetro `jobevent` deve ser definido como um mapa de valores serializado. Isso é usado para criar um `Event` para um processador de tarefas.
 
-   **Resultado**: adiciona uma nova tarefa. Se for bem-sucedido, uma ID de tarefa exclusiva será retornada.
+  **Resultado**: adiciona uma nova tarefa. Se for bem-sucedido, uma ID de tarefa exclusiva será retornada.
 
 ```shell
 curl -u admin:admin -F":operation=job" -F"someproperty=xxxxxxxxxxxx"
@@ -38,9 +38,9 @@ curl -u admin:admin -F":operation=job" -F"someproperty=xxxxxxxxxxxx"
 
 * `result`
 
-   **Requisitos**: o parâmetro `jobid` deve ser definido.
+  **Requisitos**: o parâmetro `jobid` deve ser definido.
 
-   **Resultado**: retorna uma representação JSON do Nó de resultado conforme criado pelo processador de trabalhos.
+  **Resultado**: retorna uma representação JSON do Nó de resultado conforme criado pelo processador de trabalhos.
 
 ```shell
 curl -u admin:admin -F":operation=result" -F"jobid=xxxxxxxxxxxx"
@@ -49,9 +49,9 @@ curl -u admin:admin -F":operation=result" -F"jobid=xxxxxxxxxxxx"
 
 * `resource`
 
-   **Requisitos**: o parâmetro jobid deve ser definido.
+  **Requisitos**: o parâmetro jobid deve ser definido.
 
-   **Resultado**: retorna um recurso associado à tarefa especificada.
+  **Resultado**: retorna um recurso associado à tarefa especificada.
 
 ```shell
 curl -u admin:admin -F":operation=resource" -F"jobid=xxxxxxxxxxxx"
@@ -60,9 +60,9 @@ curl -u admin:admin -F":operation=resource" -F"jobid=xxxxxxxxxxxx"
 
 * `remove`
 
-   **Requisitos**: o parâmetro jobid deve ser definido.
+  **Requisitos**: o parâmetro jobid deve ser definido.
 
-   **Resultados**: remove um trabalho, se encontrado.
+  **Resultados**: remove um trabalho, se encontrado.
 
 ```shell
 curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
@@ -115,7 +115,7 @@ As configurações de proxy e proxy worker estão disponíveis por meio das conf
 
 >[!NOTE]
 >
->Consulte [Configuração de Worker do Proxy de InDesign Server](indesign.md#configuring-the-proxy-worker-for-indesign-server) e [configuração do Cloud Services](../sites-developing/extending-cloud-config.md) para obter mais informações.
+>Consulte [Configuração de Worker do Proxy de InDesign Server](indesign.md#configuring-the-proxy-worker-for-indesign-server) e [configuração do Cloud Service](../sites-developing/extending-cloud-config.md) para obter mais informações.
 
 Veja a seguir um exemplo de uso da API:
 

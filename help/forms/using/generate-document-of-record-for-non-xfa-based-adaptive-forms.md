@@ -11,9 +11,9 @@ discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3545'
+source-wordcount: '3544'
 ht-degree: 3%
 
 ---
@@ -216,19 +216,19 @@ Os componentes da tabela de formulários adaptáveis, como cabeçalho, rodapé e
 
 ## Modelo base de um documento de registro {#base-template-of-a-document-of-record}
 
-O modelo base fornece informações de estilo e aparência ao documento de registro. Permite personalizar a aparência padrão do documento de registro gerado automaticamente. Por exemplo, você deseja adicionar o logotipo da empresa no cabeçalho e as informações de direitos autorais no rodapé do documento de registro. A página principal do modelo base é usada como uma página principal para o documento do modelo de registro. A página principal pode ter informações como cabeçalho, rodapé e número de página que podem ser aplicadas ao documento de registro. É possível aplicar essas informações ao documento de registro usando o modelo base para geração automática do documento de registro. O uso do template base permite alterar as propriedades padrão dos campos.
+O modelo base fornece informações de estilo e aparência ao documento de registro. Ele permite personalizar a aparência padrão do documento de registro gerado automaticamente. Por exemplo, você deseja adicionar o logotipo da empresa no cabeçalho e as informações de direitos autorais no rodapé do documento de registro. A página mestra do modelo base é usada como uma página mestra do documento de modelo de registro. A página-mestre pode ter informações como cabeçalho, rodapé e número de página que podem ser aplicadas ao documento de registro. É possível aplicar essas informações ao documento de registro usando o modelo base para geração automática do documento de registro. O uso do template base permite alterar as propriedades padrão dos campos.
 
 Siga [Convenções do modelo base](#base-template-conventions) ao criar o modelo base.
 
 ## Convenções do modelo base {#base-template-conventions}
 
-Um modelo base é usado para definir o cabeçalho, rodapé, estilo e aparência de um documento de registro. O cabeçalho e o rodapé podem incluir informações como o logotipo da empresa e o texto de direitos autorais. A primeira página principal no modelo base é copiada e usada como uma página principal para o documento de registro, que contém o cabeçalho, o rodapé, o número da página ou qualquer outra informação que deve aparecer em todas as páginas no documento de registro. Se você estiver usando um modelo base que não esteja em conformidade com as convenções do modelo base, a primeira página principal do modelo base ainda será usada no documento do modelo de registro. É altamente recomendável que você projete seu modelo base de acordo com suas convenções e o use para a geração automática do documento de registro.
+Um modelo base é usado para definir o cabeçalho, rodapé, estilo e aparência de um documento de registro. O cabeçalho e o rodapé podem incluir informações como o logotipo da empresa e o texto de direitos autorais. A primeira página mestra no modelo base é copiada e usada como página mestra do documento de registro, que contém o cabeçalho, o rodapé, o número da página ou qualquer outra informação que deva aparecer em todas as páginas do documento de registro. Se você estiver usando um modelo base que não esteja em conformidade com as convenções do modelo base, a primeira página mestra do modelo base ainda será usada no documento de modelo de registro. É altamente recomendável que você crie seu modelo base de acordo com suas convenções e o use para a geração automática do documento de registro.
 
-**Convenções de página principal**
+**Convenções da página principal**
 
 * No modelo base, você deve nomear o subformulário raiz como `AF_METATEMPLATE` e a página principal como `AF_MASTERPAGE`.
 
-* A página principal com o nome `AF_MASTERPAGE` localizado abaixo de `AF_METATEMPLATE` o subformulário raiz recebe preferência para extrair informações de cabeçalho, rodapé e estilo.
+* A página mestra com o nome `AF_MASTERPAGE` localizado abaixo de `AF_METATEMPLATE` o subformulário raiz recebe preferência para extrair informações de cabeçalho, rodapé e estilo.
 
 * Se `AF_MASTERPAGE` estiver ausente, a primeira página principal presente no modelo base será usada.
 
@@ -330,11 +330,11 @@ Para localizar as informações de marca inseridas na guia Documento de registro
    * **Excluir campos ocultos do documento de registro**
    * **Ocultar descrição de painéis**
 
-   Se o modelo XDP personalizado selecionado incluir várias páginas principais, as propriedades dessas páginas aparecerão no **[!UICONTROL conteúdo]** seção do **[!UICONTROL Documento do registro]** guia.
+   Se o modelo XDP personalizado selecionado incluir várias páginas mestras, as propriedades dessas páginas aparecerão no **[!UICONTROL conteúdo]** seção do **[!UICONTROL Documento do registro]** guia.
 
    ![Página principal  Propriedades](assets/master-page-properties.png)
 
-   As propriedades principais da página incluem Imagem de logotipo, Texto do cabeçalho, Título do formulário, Rótulo do aviso e Texto do aviso. Você pode aplicar propriedades de formulário adaptável ou modelo XDP ao documento de registro. Por padrão, o AEM Forms aplica as propriedades do modelo ao Documento de registro. Você também pode definir valores personalizados para as propriedades principais da página. Para obter informações sobre como aplicar várias páginas principais em um documento de registro, consulte [Aplicar várias páginas principais a um documento de registro](#apply-multiple-master-pages-dor).
+   As propriedades da página principal incluem Imagem de logotipo, Texto do cabeçalho, Título do formulário, Rótulo do aviso e Texto do aviso. Você pode aplicar propriedades de formulário adaptável ou modelo XDP ao documento de registro. Por padrão, o AEM Forms aplica as propriedades do modelo ao Documento de registro. Você também pode definir valores personalizados para as propriedades da página-mestre. Para obter informações sobre como aplicar várias páginas-mestre em um documento de registro, consulte [Aplicar várias páginas-mestre a um documento de registro](#apply-multiple-master-pages-dor).
 
    >[!NOTE]
    >
@@ -386,9 +386,9 @@ O documento de configurações de registro de um componente está disponível em
    * **[!UICONTROL Local]** > **[!UICONTROL Na área de conteúdo]** > Nome da área de conteúdo: coloca o painel na área de conteúdo especificada.
    * **[!UICONTROL Local]** > **[!UICONTROL Parte superior da próxima área de conteúdo]**: Coloca o painel na parte superior da próxima área de conteúdo.
    * **[!UICONTROL Local]** > **[!UICONTROL Parte superior da área de conteúdo]** > Nome da área de conteúdo: coloca o painel na parte superior da área de conteúdo especificada.
-   * **[!UICONTROL Local]** > **[!UICONTROL Na página]** > Nome da página principal: coloca o painel na página especificada. Se uma quebra de página não for inserida automaticamente, [!DNL AEM Forms] adiciona uma quebra de página.
+   * **[!UICONTROL Local]** > **[!UICONTROL Na página]** > Nome da página-mestre: coloca o painel na página especificada. Se uma quebra de página não for inserida automaticamente, [!DNL AEM Forms] adiciona uma quebra de página.
    * **[!UICONTROL Local]** > **[!UICONTROL Parte superior da próxima página]**: coloca o painel na parte superior da próxima página. Se uma quebra de página não for inserida automaticamente, [!DNL AEM Forms] adiciona uma quebra de página.
-   * **[!UICONTROL Local]** > **[!UICONTROL Início da página]** > Nome da página principal: coloca o painel na parte superior da página, quando a página especificada é renderizada. Se uma quebra de página não for inserida automaticamente, [!DNL AEM Forms] adiciona uma quebra de página.
+   * **[!UICONTROL Local]** > **[!UICONTROL Início da página]** > Nome da página-mestre: coloca o painel na parte superior da página quando a página especificada é renderizada. Se uma quebra de página não for inserida automaticamente, [!DNL AEM Forms] adiciona uma quebra de página.
 * **[!UICONTROL Paginação]** > **[!UICONTROL Depois]**: determina qual área deve ser preenchida depois que um painel é posicionado. Os seguintes campos estão disponíveis na **[!UICONTROL Depois]** seção:
    * **[!UICONTROL Depois]** > **[!UICONTROL Continuar preenchendo o pai]**: continua mesclando os dados de todos os objetos que ainda não foram preenchidos no painel principal.
    * **[!UICONTROL Depois]** > **[!UICONTROL Ir para a próxima área de conteúdo]**: começa a preencher a próxima área de conteúdo depois de posicionar o painel.
@@ -400,7 +400,7 @@ O documento de configurações de registro de um componente está disponível em
    * **[!UICONTROL Estouro]** > **[!UICONTROL Ir para a área de conteúdo]** > Nome da área de conteúdo: começa a preencher a área de conteúdo especificada.
    * **[!UICONTROL Estouro]** > **[!UICONTROL Ir para página]** > Nome da página: começa a preencher a página especificada.
 
-Para obter informações sobre como aplicar quebras de página e aplicar várias páginas principais em um Documento de registro, consulte [Aplicar quebra de página em um documento de registro](#apply-page-breaks-in-dor) e [Aplicar várias páginas principais a um documento de registro](#apply-multiple-master-pages-dor).
+Para obter informações sobre como aplicar quebras de página e aplicar várias páginas-mestre em um documento de registro, consulte [Aplicar quebra de página em um documento de registro](#apply-page-breaks-in-dor) e [Aplicar várias páginas-mestre a um documento de registro](#apply-multiple-master-pages-dor).
 
 **Configurações do nível de formulário**
 
@@ -417,29 +417,29 @@ Para aplicar uma quebra de página a um documento de registro:
 1. Expandir **[!UICONTROL Documento do registro]** para exibir as propriedades.
 
 1. No **[!UICONTROL Paginação]** seção, toque em ![Pasta](/help/forms/using/assets/folder-icon.png) no **[!UICONTROL Local]** campo.
-1. Toque **[!UICONTROL Parte superior da próxima página]** e toque em **[!UICONTROL Selecionar]**. Você também pode tocar em **[!UICONTROL Início da página]**, selecione a página principal e toque em **[!UICONTROL Selecionar]** para aplicar a quebra de página.
+1. Toque **[!UICONTROL Parte superior da próxima página]** e toque em **[!UICONTROL Selecionar]**. Você também pode tocar em **[!UICONTROL Início da página]**, selecione a página mestra e toque em **[!UICONTROL Selecionar]** para aplicar a quebra de página.
 1. Toque ![Salvar](/help/forms/using/assets/save_icon.png) para salvar as propriedades.
 
 O painel selecionado é movido para a próxima página.
 
-## Aplicar várias páginas principais a um documento de registro {#apply-multiple-master-pages-dor}
+## Aplicar várias páginas-mestre a um documento de registro {#apply-multiple-master-pages-dor}
 
-Se o modelo XDP personalizado selecionado incluir várias páginas principais, as propriedades dessas páginas aparecerão no [!UICONTROL conteúdo] seção do [!UICONTROL Documento do registro] guia. Para obter mais informações, consulte [Personalizar as informações de marca no documento de registro](#customize-the-branding-information-in-document-of-record).
+Se o modelo XDP personalizado selecionado incluir várias páginas mestras, as propriedades dessas páginas aparecerão no [!UICONTROL conteúdo] seção do [!UICONTROL Documento do registro] guia. Para obter mais informações, consulte [Personalizar as informações de marca no documento de registro](#customize-the-branding-information-in-document-of-record).
 
-Você pode aplicar várias páginas principais a um documento de registro aplicando diferentes páginas principais aos componentes de um formulário adaptável. Use o [Paginação](#document-of-record-settings) seção das propriedades do documento de registro para aplicar várias páginas principais.
+Você pode aplicar várias páginas-mestre a um documento de registro aplicando páginas-mestre diferentes aos componentes de um formulário adaptável. Use o [Paginação](#document-of-record-settings) seção das propriedades do documento de registro para aplicar várias páginas-mestre.
 
-Este é um exemplo de como aplicar várias páginas principais a um Documento de registro: você faz upload de um modelo XDP que inclui quatro páginas principais para o [!DNL AEM Forms] servidor. [!DNL AEM Forms] O aplica as propriedades do modelo ao Documento de registro por padrão. [!DNL AEM Forms] O também aplica as primeiras propriedades de página principais no modelo ao documento de registro.
+Este é um exemplo de como aplicar várias páginas-mestre a um Documento de registro: você faz upload de um modelo XDP que inclui quatro páginas-mestre para o [!DNL AEM Forms] servidor. [!DNL AEM Forms] O aplica as propriedades do modelo ao Documento de registro por padrão. [!DNL AEM Forms] O também aplica as propriedades da primeira página-mestre no modelo ao documento de registro.
 
-Para aplicar as propriedades da segunda página principal a um painel e as propriedades da terceira página principal aos painéis seguintes, execute as seguintes etapas:
+Para aplicar as propriedades da segunda página-mestre a um painel e as propriedades da terceira página-mestre aos painéis seguintes, execute as seguintes etapas:
 
-1. Toque no painel para aplicar a segunda página principal e selecione ![Configurar](assets/cmppr.png).
+1. Toque no painel para aplicar a segunda página-mestre e selecione ![Configurar](assets/cmppr.png).
 1. No **[!UICONTROL Paginação]** seção, toque em ![Pasta](/help/forms/using/assets/folder-icon.png) no **[!UICONTROL Local]** campo.
-1. Toque **[!UICONTROL Na página]**, selecione a segunda página principal e toque em **[!UICONTROL Selecionar]**.
-O AEM Forms aplica a segunda página principal ao painel e todos os painéis subsequentes no formulário adaptável.
+1. Toque **[!UICONTROL Na página]**, selecione a segunda página-mestre e toque em **[!UICONTROL Selecionar]**.
+O AEM Forms aplica a segunda página-mestre ao painel e a todos os painéis subsequentes no formulário adaptável.
 1. No **[!UICONTROL Paginação]** seção, toque em ![Pasta](/help/forms/using/assets/folder-icon.png) no **[!UICONTROL Depois]** campo.
-1. Toque **[!UICONTROL Ir para página]**, selecione a terceira página principal e toque em **[!UICONTROL Selecionar]**.
+1. Toque **[!UICONTROL Ir para página]**, selecione a terceira página-mestre e toque em **[!UICONTROL Selecionar]**.
 1. Toque ![Salvar](/help/forms/using/assets/save_icon.png) para salvar as propriedades.
-O AEM Forms aplica a terceira página principal ao painel e todos os painéis subsequentes no formulário adaptável.
+O AEM Forms aplica a terceira página-mestre ao painel e a todos os painéis subsequentes no formulário adaptável.
 
 
 ## Considerações principais ao trabalhar com documento de registro {#key-considerations-when-working-with-document-of-record}

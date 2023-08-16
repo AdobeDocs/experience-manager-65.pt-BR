@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '5241'
+source-wordcount: '5239'
 ht-degree: 0%
 
 ---
@@ -1414,7 +1414,7 @@ Elas podem ser visualizadas usando o menu Configuration do console da Web (dispo
 
 ### Configurações de cache (Cache de relatórios do Day CQ) {#cache-settings-day-cq-reporting-cache}
 
-* **Ativar** permite ativar ou desativar o armazenamento em cache dos dados de relatório. Habilitar o cache de relatórios manterá os dados do relatório na memória durante várias solicitações. Isso pode aumentar o desempenho, mas levará a um maior consumo de memória e, em circunstâncias extremas, pode levar a situações de falta de memória.
+* **Ativar** permite habilitar ou desabilitar o armazenamento em cache de dados de relatório. Habilitar o cache de relatórios manterá os dados do relatório na memória durante várias solicitações. Isso pode aumentar o desempenho, mas levará a um maior consumo de memória e, em circunstâncias extremas, pode levar a situações de falta de memória.
 * **TTL** define o tempo (em segundos) durante o qual os dados de relatório são armazenados em cache. Um número mais alto melhorará o desempenho, mas também poderá retornar dados imprecisos se os dados forem alterados dentro do período.
 * **Máximo de entradas** define o número máximo de relatórios a serem armazenados em cache a qualquer momento.
 

@@ -7,9 +7,9 @@ topic-tags: managing-checklist
 content-type: reference
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: f21b0b5cb4246ffb22c9d9a219a622f36741d9b8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '6949'
+source-wordcount: '6948'
 ht-degree: 0%
 
 ---
@@ -491,7 +491,7 @@ Teste completo do sistema de fallback.
 
 ### Aprovação do sistema de fallback das partes interessadas da empresa {#fallback-system-sign-off-from-business-stakeholders}
 
-Aprovação, junto às partes interessadas, de que o sistema de fallback e os procedimentos relacionados garantem as funcionalidades críticas para os negócios.
+Aprovação, junto às partes interessadas, de que o sistema de fallback e os procedimentos relacionados garantem as funcionalidades críticas dos negócios.
 
 ### Confirmação de viabilidade em KPIs {#feasibility-confirmation-on-kpis}
 

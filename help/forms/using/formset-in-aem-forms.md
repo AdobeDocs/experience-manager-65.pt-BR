@@ -11,9 +11,9 @@ discoiquuid: 80e3eec4-95e0-4731-a0e5-a617e9bcb069
 docset: aem65
 feature: Mobile Forms
 exl-id: 039afdf3-013b-41b2-8821-664d28617f61
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2814'
+source-wordcount: '2813'
 ht-degree: 0%
 
 ---
@@ -376,7 +376,7 @@ Os seguintes padrões de dados não são totalmente compatíveis com o conjunto 
   </tr>
   <tr>
    <td>Padrões curtos </td>
-   <td><p>num.integer{},</p> <p>num.decimal{},</p> <p>num.percent{} ou</p> <p>num.currency{}</p> </td>
+   <td><p>num.integer{},</p> <p>num.decimal{},</p> <p>num.percent{}ou</p> <p>num.currency{}</p> </td>
   </tr>
  </tbody>
 </table>

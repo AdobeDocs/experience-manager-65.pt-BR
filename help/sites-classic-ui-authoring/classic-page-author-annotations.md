@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: d60e9601-d15b-4378-a33e-e90961f63195
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '764'
 ht-degree: 8%
 
 ---
@@ -76,7 +76,7 @@ Os três ícones na parte superior esquerda permitem minimizar a anotação (jun
 >* rascunhos existentes, criados em outro navegador, não serão exibidos.
 >
 
-Os rascunhos são um recurso de anotações que permitem criar gráficos de linha simples em qualquer lugar na janela do navegador (parte visível):
+Os rascunhos são um recurso de anotações que permitem criar gráficos de linha simples em qualquer lugar da janela do navegador (parte visível):
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 

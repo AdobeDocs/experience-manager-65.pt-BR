@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2245'
-ht-degree: 40%
+source-wordcount: '2240'
+ht-degree: 39%
 
 ---
 
@@ -22,7 +22,7 @@ O ambiente de criação do AEM fornece vários mecanismos para organização e e
 
 ## Gerenciar o site {#managing-your-site}
 
-A variável **Sites** O console permite navegar e gerenciar o site, usando a barra de cabeçalho, a barra de ferramentas, os ícones de ação (aplicáveis ao recurso selecionado), as navegações estruturais e, quando selecionados, os painéis secundários (por exemplo, linha do tempo e referências).
+A variável **Sites** o console permite navegar e gerenciar o site, usando a barra de cabeçalho, a barra de ferramentas, os ícones de ação (aplicáveis ao recurso selecionado), as navegações estruturais e, quando selecionados, os painéis secundários (por exemplo, linha do tempo e referências).
 
 Por exemplo, exibição de coluna:
 
@@ -292,7 +292,7 @@ Além disso, **Informações da página** O pode fornecer acesso a análises e r
 Há vários modos ao editar uma página que permitem ações diferentes:
 
 * [Editar](/help/sites-authoring/editing-content.md) - o modo a ser usado ao editar o conteúdo da página.
-* [Layout](/help/sites-authoring/responsive-layout.md) - permite que você crie e edite seu layout responsivo dependente do dispositivo (se a página for baseada em um contêiner de layout)
+* [Layout](/help/sites-authoring/responsive-layout.md) - permite criar e editar o layout responsivo dependente do dispositivo (se a página for baseada em um contêiner de layout)
 
 * [Andaime](/help/sites-authoring/scaffolding.md) - ajudá-lo a criar um grande conjunto de páginas que compartilham a mesma estrutura, mas têm conteúdo diferente.
 * [Desenvolvedor](/help/sites-developing/developer-mode.md) - permite executar várias ações (requer privilégios). Isso inclui a inspeção dos detalhes técnicos de uma página e seus componentes.
@@ -302,7 +302,7 @@ Há vários modos ao editar uma página que permitem ações diferentes:
 * [Direcionamento](/help/sites-authoring/content-targeting-touch.md) - aumentar a relevância do conteúdo por meio do direcionamento e da medição em todos os canais.
 * [Activity Map](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor) - mostra os dados do Analytics para a página.
 
-* [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) - permite exibir um estado de páginas em um momento específico.
+* [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) - permite a exibição do estado das páginas em um momento específico.
 * [Status da Live Copy](/help/sites-authoring/editing-content.md#live-copy-status) - permite uma visão geral rápida do status da live copy e de quais componentes não são herdados.
 * [Visualização](/help/sites-authoring/editing-content.md#previewing-pages)- o modo usado para visualizar a página da forma que será exibida no ambiente de publicação; ou navegar usando os links no conteúdo.
 

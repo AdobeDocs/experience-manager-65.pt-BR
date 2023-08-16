@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
 exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '542'
 ht-degree: 9%
 
 ---
@@ -25,13 +25,13 @@ Você pode executar as seguintes ações para processar um item de trabalho:
 
 * **Concluir**
 
-   É possível concluir um item para permitir que o fluxo de trabalho avance para a próxima etapa.
+  É possível concluir um item para permitir que o fluxo de trabalho avance para a próxima etapa.
 
 * **Delegar**
 
-   Se uma etapa tiver sido atribuída a você, mas por qualquer motivo você não puder realizar uma ação, será possível delegar a etapa a outro usuário ou grupo.
+  Se uma etapa tiver sido atribuída a você, mas por qualquer motivo você não puder realizar uma ação, será possível delegar a etapa a outro usuário ou grupo.
 
-   Os usuários disponíveis para delegação dependem de quem recebeu o item de trabalho:
+  Os usuários disponíveis para delegação dependem de quem recebeu o item de trabalho:
 
    * Se o item de trabalho foi atribuído a um grupo, os membros do grupo ficam disponíveis.
    * Se o item de trabalho tiver sido atribuído a um grupo e depois delegado a um usuário, os membros desse grupo e esse usuário estarão disponíveis.
@@ -39,7 +39,7 @@ Você pode executar as seguintes ações para processar um item de trabalho:
 
 * **Retroceder**
 
-   Se você descobrir que uma etapa, ou uma série de etapas, precisa ser repetida, poderá retroceder. Isso permite selecionar uma etapa, ocorrida anteriormente no workflow, para reprocessamento. O fluxo de trabalho retorna à etapa especificada e prossegue a partir dessa etapa.
+  Se você descobrir que uma etapa, ou uma série de etapas, precisa ser repetida, poderá retroceder. Isso permite selecionar uma etapa, ocorrida anteriormente no workflow, para reprocessamento. O fluxo de trabalho retorna à etapa especificada e prossegue a partir dessa etapa.
 
 ## Participar de um fluxo de trabalho {#participating-in-a-workflow}
 
@@ -49,11 +49,11 @@ Quando um item de trabalho é atribuído a você (por exemplo, **Aprovar conteú
 
 * A variável **Status** A coluna do console Sites indica quando uma página está em um workflow:
 
-   ![workflowstatus-1](assets/workflowstatus-1.png)
+  ![workflowstatus-1](assets/workflowstatus-1.png)
 
 * Quando você ou um grupo ao qual você pertence é atribuído a um item de trabalho como parte de um fluxo de trabalho, o item de trabalho aparece na Caixa de entrada do fluxo de trabalho do AEM.
 
-   ![workflowinbox](assets/workflowinbox.png)
+  ![workflowinbox](assets/workflowinbox.png)
 
 ### Concluindo uma etapa do participante {#completing-a-participant-step}
 

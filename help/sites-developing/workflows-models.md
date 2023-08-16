@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2463'
 ht-degree: 2%
 
 ---
@@ -88,8 +88,7 @@ Ao abrir uma [Modelo padrão e/ou herdado](/help/sites-developing/workflows.md#w
 * Inicialmente, o modelo e suas propriedades são apresentados no modo somente leitura como:
    * Os workflows padrão estão localizados em `/libs`
    * Os fluxos de trabalho herdados estão localizados em `/etc`
-Selecionar 
-**Editar** irá:
+Selecionar **Editar** irá:
 * fazer uma cópia do fluxo de trabalho em `/conf`
 * disponibilizar o navegador de Etapas
 * permitir que você faça alterações
@@ -152,6 +151,7 @@ Você pode **Configurar** e personalizar o comportamento de uma etapa do fluxo d
    * Clique/toque na * etapa * no modelo de fluxo de trabalho e selecione **Configurar** na barra de ferramentas do componente.
 
    * Clique duas vezes na etapa.
+
    >[!NOTE]
    >
    >Para obter informações sobre os componentes da etapa principal instalados com AEM, consulte [Referência de etapas do fluxo de trabalho](/help/sites-developing/workflows-step-ref.md).
@@ -416,7 +416,8 @@ Para definir uma regra OR, proceda da seguinte maneira:
    * Defina como o **Rota Padrão** definindo o **Valor** para `true`.
 
    * Como **Regra**, defina o caminho para o script. Por exemplo:
-      `/apps/myapp/workflow/scripts/myscript1.ecma`
+     `/apps/myapp/workflow/scripts/myscript1.ecma`
+
    >[!NOTE]
    >
    >Você pode alternar a ordem da ramificação, se necessário.
@@ -424,7 +425,7 @@ Para definir uma regra OR, proceda da seguinte maneira:
 1. Edite as propriedades do **Ramificação 2** do **OU dividir**.
 
    * Como **Regra**, defina o caminho para o outro script. Por exemplo:
-      `/apps/myapp/workflow/scripts/myscript2.ecma`
+     `/apps/myapp/workflow/scripts/myscript2.ecma`
 
 1. Defina as propriedades das etapas individuais em cada ramificação. Verifique se **Usuário/Grupo** está definido.
 1. Clique em **Sincronizar** (barra de ferramentas do editor) para manter as alterações no modelo de tempo de execução.

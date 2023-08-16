@@ -2,10 +2,10 @@
 title: Uso do GraphiQL IDE no AEM
 description: Saiba como usar o GraphiQL IDE no Adobe Experience Manager.
 exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 96%
+source-wordcount: '788'
+ht-degree: 90%
 
 ---
 
@@ -22,7 +22,7 @@ Uma implementação do [GraphiQL](https://graphql.org/learn/serving-over-http/#g
 >[!NOTE]
 >Você deve [configurar os endpoints](/help/sites-developing/headless/graphql-api/graphql-endpoint.md) no [navegador de configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md) antes de usar o GraphiQL IDE.
 
-A ferramenta **GraphiQL** permite testar e depurar as consultas de GraphQL, possibilitando:
+A variável **GraphiQL** A ferramenta permite testar e depurar as consultas do GraphQL, possibilitando:
 
 * selecionar o **endpoint** apropriado à configuração de Sites que deseja usar para as consultas
 * inserir diretamente novas consultas
@@ -89,7 +89,7 @@ Em ambos os casos, a consulta exibida no painel do editor é a que será executa
 
 <!-- more details needed here? -->
 
-O GraphiQL IDE também permite gerenciar as [Variáveis de consulta](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphql-variables).
+O GraphiQL IDE também permite gerenciar os [Variáveis de consulta](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphql-variables).
 
 Por exemplo:
 
@@ -140,7 +140,7 @@ Depois de selecionar o [consulta persistente](/help/sites-developing/headless/gr
 
 ## Copiar o URL para acessar a consulta diretamente {#copy-url}
 
-A opção **Copiar URL** permite simular uma consulta copiando o URL usado para acessar diretamente a consulta persistente e ver os resultados. Essa opção pode ser usada para testes; por exemplo, acessando em um navegador:
+A variável **Copiar URL** permite simular uma consulta copiando o URL usado para acessar diretamente a consulta persistente e ver os resultados. Essa opção pode ser usada para testes; por exemplo, acessando em um navegador:
 
 <!--
   >[!NOTE]

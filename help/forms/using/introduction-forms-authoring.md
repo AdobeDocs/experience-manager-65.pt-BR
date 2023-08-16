@@ -11,10 +11,10 @@ discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3161'
-ht-degree: 56%
+source-wordcount: '3156'
+ht-degree: 55%
 
 ---
 
@@ -230,7 +230,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
   </tr>
   <tr>
    <td>Texto</td>
-   <td>Permite especificar um texto estático.</td>
+   <td>Permite especificar texto estático.</td>
   </tr>
   <tr>
    <td>Botão Enviar</td>

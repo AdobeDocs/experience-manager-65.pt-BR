@@ -1,16 +1,12 @@
 ---
 title: Adicionar e configurar usuários
-seo-title: Adding and configuring users
 description: As configurações de Gerenciamento de usuários no console de administração permitem criar ou excluir usuários e definir outras configurações de usuário.
-seo-description: The User Management settings in the administration console allow you to create or delete users  and configure other user settings.
-uuid: fe650cdb-7d0d-4f38-9899-e5349559ed32
 contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
-discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1733'
 ht-degree: 0%
 
 ---
@@ -136,7 +132,6 @@ Evite criar nomes de usuário que comecem com um sinal numérico (#). A execuç�
 
    * Para remover o usuário de um grupo, marque a caixa de seleção correspondente, clique em **[!UICONTROL Excluir]** e clique em **[!UICONTROL Salvar]**.
 
-
 1. Para editar as funções do usuário, clique no link **[!UICONTROL Atribuições de Função]** e execute estas tarefas:
 
    * Para exibir uma lista de funções, clique em **[!UICONTROL Procurar Funções]**.
@@ -166,7 +161,7 @@ Se um usuário sem os formulários AEM e as permissões do CQ necessários tenta
 * Solução de gerenciamento de correspondência
 * AEM Forms Workspace
 
-   ***observação **: o Flex Workspace está obsoleto para a versão de formulários AEM.*
+  ***observação **: o Flex Workspace está obsoleto para a versão de formulários AEM.*
 
 * gerenciador de formulários
 * Relatório de processo

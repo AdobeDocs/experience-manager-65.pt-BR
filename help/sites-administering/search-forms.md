@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2067'
 ht-degree: 12%
 
 ---
@@ -226,7 +226,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
     </ul> </td>
   </tr>
   <tr>
-   <td>Caminho  </td>
+   <td>Caminho </td>
    <td>Pesquise ativos localizados em um caminho específico.</td>
    <td>
     <ul>
@@ -500,7 +500,7 @@ O exemplo a seguir (para pesquisar de acordo com o modelo usado para criar uma p
    >
    >O método recomendado para configuração e outras alterações é:
    >
-   >1. Recrie o item necessário, como ele existe em `/libs`, em `/apps`. Nesse caso, de:
+   >1. Recriar o item necessário, como ele existe em `/libs`, em `/apps`. Nesse caso, de:
    >1. `/libs/cq/gui/content/common/options/predicates`
    >1. Fazer alterações em `/apps.`
 
@@ -549,7 +549,7 @@ A tabela a seguir lista as permissões necessárias para executar ações de edi
    <td>Permissões de Leitura, Gravação e Exclusão no <code>/apps</code> nó</td>
   </tr>
   <tr>
-   <td>Visualizar</td>
+   <td>Visualização</td>
    <td>Permissões de Leitura, Gravação e Exclusão no <code>/var/dam/content</code> nó.<br /> Permissões de Leitura e Gravação no <code>/apps</code> nó.</td>
   </tr>
  </tbody>

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 18cfefb794382b5314b18a62645f1fba28d314a2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2232'
+source-wordcount: '2231'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ Diferentes versões do Designer podem coexistir no mesmo sistema, por exemplo, D
   </tr>
   <tr>
    <td><p>Designer (independente)</p> </td>
-   <td><p>Nenhum. <br />A versão do Designer incluída com o Workbench é somente em inglês. <br />O instalador do Workbench não reinstalará uma nova versão do Designer. Em vez disso, uma versão atualizada, fornecida com o instalador do Workbench, será corrigida. Isso também permite usar sua versão localizada do Designer no Workbench.<br /> </p> </td>
+   <td><p>Nenhum. <br />A versão do Designer incluída com o Workbench é somente em inglês. <br />O instalador do Workbench não reinstalará uma nova versão do Designer. Em vez disso, uma versão atualizada, fornecida com o instalador do Workbench, será corrigida. Isso também permite usar a versão localizada do Designer no Workbench.<br /> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -128,7 +128,7 @@ Diferentes versões do Designer podem coexistir no mesmo sistema, por exemplo, D
 ### Para desinstalar o Designer (independente) no Windows 10 {#uninstall-designer-standalone-windows10}
 
 1. Ir para **Painel de controle > Programas > Programas e recursos**
-1. Na lista Programas instalados atualmente, selecione **Adobe Designer**.
+1. Na lista Programas instalados, selecione **Adobe Designer**.
 1. Clique em **Desinstalar** e clique em **Sim**.
 
 ## Instalar o Workbench {#installing-workbench}
@@ -158,11 +158,13 @@ Antes de instalar o Workbench, você deve garantir que seu ambiente inclua o sof
 1. (Opcional) Selecione Instalar o Adobe Designer se precisar dessa ferramenta para criar e modificar formulários.
 
    >[!NOTE]
+   >
    Você pode continuar a usar o Designer instalado com o Acrobat 10 deixando essa opção desmarcada.
 
 1. Aceite o diretório padrão listado ou clique em Escolher e navegue até o diretório onde deseja instalar o Workbench e clique em Próximo.
 
    >[!NOTE]
+   >
    O caminho do diretório de instalação não deve conter os caracteres # (libra) e $ (dólar).
 
 1. Revise o resumo da pré-instalação e clique em Instalar. O programa de instalação mostra o andamento da instalação.
@@ -182,6 +184,7 @@ Os processos do AEM Forms no JEE podem ser atualizados para aplicativos do AEM F
 Para usar o Workbench, você deve ter uma instância do AEM Forms em execução, normalmente em um computador separado. Você deve ter um nome de usuário e senha para fazer logon no AEM Forms e detalhes sobre a localização do servidor.
 
 >[!NOTE]
+>
 Se você tiver configurado o AEM Forms para usar o provedor de repositório do EMC Documentum® ou IBM® FileNet e quiser fazer logon em um repositório diferente do configurado como padrão no console de administração do AEM forms, forneça o nome de usuário como username@Repository.
 
 ### Definição das configurações de tempo limite {#configuring-timeout-settings}
@@ -193,6 +196,7 @@ Por padrão, o Workbench expira após duas horas, independentemente da atividade
 Para conectar o Workbench a um servidor do AEM Forms por HTTPS, você deve garantir que a autoridade de certificação que emitiu a chave pública seja reconhecida como confiável pelo Workbench. Se o certificado não for reconhecido como proveniente de uma fonte confiável, você deverá atualizar o arquivo cacert no [Workbench_HOME]diretório /workbench/jre/lib/security.
 
 >[!NOTE]
+>
 [Workbench_HOME] representa o diretório onde você instalou o Workbench. O local padrão é C:\Program Files (x86)\Adobe Experience Manager Forms Workbench.
 
 Conecte-se ao HTTPS usando o nome especificado no certificado. Normalmente, esse é o nome de host totalmente qualificado.
@@ -201,13 +205,14 @@ Conecte-se ao HTTPS usando o nome especificado no certificado. Normalmente, esse
 1. Verifique se você tem uma cópia do certificado SSL. Entre em contato com o administrador que configurou o servidor SSL ou exporte o certificado usando um navegador da Web.
 
    >[!NOTE]
+   >
    Para exportar o certificado, abra um navegador da Web e faça logon no console de administração, instale o certificado no navegador e exporte o certificado do navegador para um local de armazenamento temporário (ou diretamente para o [Workbench_HOME]/workbench/jre/lib/security).
 
 1. Copie o certificado para a [Workbench_HOME]diretório /workbench/jre/lib/security.
 
 1. Abra uma janela de prompt de comando, navegue até [Workbench_HOME]/workbench/jre/bin e digite o seguinte comando:
    `keytool -import -storepass changeit -file [Workbench_HOME]\workbench\jre\lib\security\ssl_cert_for_certname.cer -keystore [Workbench_HOME]\workbench\jre\lib\security\cacerts -alias example`
-Onde:
+Em que:
    * `changeit` é a senha padrão para o armazenamento de chaves cacerts.
    * certname é o certificado selecionado na etapa 1.
    * exemplo é o alias escolhido para o certificado. Esse valor pode ser alterado.
@@ -226,8 +231,8 @@ Quando o gerador ou a saída de formulários pesquisa ou atualiza entradas no ca
 * **Carimbo de data e hora**: O arquivo de modelo contém um carimbo de data e hora usado para determinar a hora da última atualização do formulário.
 * **UUID do modelo**: O Designer insere em cada modelo um identificador exclusivo (UUID) para o formulário e sua versão. Cada vez que o formulário é atualizado, a UUID incorporada é atualizada. Por exemplo, um modelo XDP pode mostrar o seguinte conteúdo:
 
-   `<?xml version="1.0" encoding="UTF-8"?>`
-   `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=https://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="https://www.xfa.org/schema/xfa-template/2.6/">`
+  `<?xml version="1.0" encoding="UTF-8"?>`
+  `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=https://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="https://www.xfa.org/schema/xfa-template/2.6/">`
 
 * **Opções de renderização**: no cache de formulários renderizado, o conteúdo do cache é armazenado separadamente para cada conjunto de opções de renderização exclusivas.
 

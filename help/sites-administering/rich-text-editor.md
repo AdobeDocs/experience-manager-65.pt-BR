@@ -3,9 +3,9 @@ title: Configure o Editor de Rich Text para criar conteúdo no Adobe Experience 
 description: Saiba como configurar o Editor de rich text do Adobe Experience Manager para criar conteúdo no Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 53a18ec48331f1c25c15e8f7a59bd57e95639895
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2924'
+source-wordcount: '2923'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,6 @@ A interface habilitada para toque é a interface padrão do usuário para Experi
 >* Sobre a descontinuação da interface clássica, consulte [Notas de versão do Experience Manager 6.5](/help/release-notes/deprecated-removed-features.md)
 >* Para saber as diferenças entre as interfaces do usuário, consulte [Interface do usuário para toque e interface do usuário clássica](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
 >* Para entender a interface habilitada para toque em detalhes, consulte [Conceitos da interface do usuário para toque do Experience Manager](/help/sites-developing/touch-ui-concepts.md)
-
 
 ## Vários modos de edição {#editingmodes}
 
@@ -152,9 +151,9 @@ Configure as seguintes propriedades que se aplicam ao modo de edição da caixa 
 
 * `useFixedInlineToolbar`: Defina essa propriedade Booliana definida no nó RTE (uma com sling:resourceType= `cq/gui/components/authoring/dialog/richtext`) para `True`, para tornar a barra de ferramentas do RTE fixa em vez de flutuante.
 
-   Quando essa propriedade é verdadeira, a edição de Richtext é, por padrão, iniciada no evento &quot;foundation-contentloaded&quot;.
+  Quando essa propriedade é verdadeira, a edição de Richtext é, por padrão, iniciada no evento &quot;foundation-contentloaded&quot;.
 
-   Para evitar que isso aconteça, defina a propriedade `customStart` para `True`e acionar o evento &quot;rte-start&quot; para iniciar a edição do RTE. Quando essa propriedade é &#39;true&#39;, o comportamento padrão, rte start on click, não funciona.
+  Para evitar que isso aconteça, defina a propriedade `customStart` para `True`e acionar o evento &quot;rte-start&quot; para iniciar a edição do RTE. Quando essa propriedade é &#39;true&#39;, o comportamento padrão, rte start on click, não funciona.
 
 * `customStart`: Defina essa propriedade Booliana definida no nó RTE como `True`, para controlar quando iniciar o RTE acionando o evento `rte-start`.
 
@@ -196,7 +195,7 @@ Para obter configurações detalhadas dos plug-ins do RTE, consulte [como ativar
 
 ## Configurar a barra de ferramentas do RTE {#dialogfullscreen}
 
-O AEM permite configurar a interface para o Editor de Rich Text de forma diferente para os diferentes modos de edição. As configurações padrão são fornecidas abaixo. Você pode sobrepor esses valores-padrão com base em suas necessidades. Você personaliza apenas os recursos da barra de ferramentas que deseja fornecer aos autores. Não é necessário especificar todas as configurações da barra de ferramentas.
+O AEM permite configurar a interface do Editor de Rich Text de forma diferente para os diferentes modos de edição. As configurações padrão são fornecidas abaixo. Você pode sobrepor esses valores-padrão com base em suas necessidades. Você personaliza apenas os recursos da barra de ferramentas que deseja fornecer aos autores. Não é necessário especificar todas as configurações da barra de ferramentas.
 
 Para configurar a barra de ferramentas para `dialogFullScreen`, use o exemplo de configuração a seguir.
 
@@ -398,4 +397,3 @@ Se as atualizações de configurações da interface forem refletidas para admin
 >* [Configurar o RTE para sites acessíveis](rte-accessible-content.md)
 >* [Paridade de recursos da interface de toque e da interface clássica](../release-notes/touch-ui-features-status.md)
 >* [Exemplo de tutorial para criar componente composto de vários campos](https://experience-aem.blogspot.com/2019/05/aem-65-touchui-composite-multifield-with-coral3-rte-rich-text.html?lang=pt-BR)
-

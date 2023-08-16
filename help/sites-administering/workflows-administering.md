@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 90923d39-3ac5-4028-976c-d011f0404476
-source-git-commit: 25f7218355b7715949273c84eb72ddde3d6a0a65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 84%
+source-wordcount: '993'
+ht-degree: 83%
 
 ---
 
@@ -88,18 +88,16 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
    >* o uso da ação **Encerrar**
    >* quando uma página que está sujeita a um fluxo de trabalho é excluída (à força), o fluxo de trabalho é encerrado
 
-
 1. Selecione um item específico e **Abra o histórico** para ver mais detalhes:
 
    ![wf-99](assets/wf-99.png)
 
 ## Correção de falhas na instância do fluxo de trabalho {#fixing-workflow-instance-failures}
 
-Quando um fluxo de trabalho falha, o AEM fornece o console **Falhas**, que permite investigar e tomar as medidas apropriadas após tratar a causa original:
+Quando um workflow falha, o AEM fornece a variável **Falhas** para permitir que você investigue e tome as medidas apropriadas após tratar a causa original:
 
 * **Detalhes da falha**
-Abre uma janela para mostrar a  
-**Mensagem de falha**, **Etapa**, e **Pilha de falhas**.
+Abre uma janela para mostrar a **Mensagem de falha**, **Etapa**, e **Pilha de falhas**.
 
 * **Abrir histórico**
 Mostra detalhes do histórico do fluxo de trabalho.
@@ -120,7 +118,7 @@ Para investigar falhas e, em seguida, retomar ou encerrar o fluxo de trabalho, u
 
 Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do motor de workflow. Portanto, você pode remover regularmente do repositório as instâncias de fluxo de trabalho concluídas ou em execução.
 
-Configurar **Configuração de limpeza de fluxo de trabalho do Adobe Granite** para remover instâncias de fluxo de trabalho de acordo com sua idade e status. Você também pode remover as instâncias de fluxo de trabalho de todos os modelos ou de um modelo específico.
+Defina a **configuração de limpeza de fluxos de trabalho do Adobe Granite** para remover instâncias de fluxo de trabalho de acordo com sua idade e status. Você também pode remover as instâncias de fluxo de trabalho de todos os modelos ou de um modelo específico.
 
 Você também pode criar várias configurações do serviço para remover as instâncias de fluxo de trabalho que satisfaçam critérios diferentes. Por exemplo, crie uma configuração que remova as instâncias de um modelo de fluxo de trabalho específico quando elas estiverem em execução por muito mais tempo do que o esperado. Crie outra configuração que remova todos os fluxos de trabalho concluídos após um determinado número de dias para minimizar o tamanho do repositório.
 
@@ -186,7 +184,7 @@ Para configurar o serviço, você pode usar o [Console da Web](/help/sites-deplo
 
 ## Uso de variáveis de fluxo de trabalho para armazenamentos de dados de propriedade do cliente {#using-workflow-variables-customer-datastore}
 
-Os dados processados por fluxos de trabalho são armazenados no armazenamento fornecido pela Adobe (JCR). Esses dados podem ser de natureza sensível. É possível salvar todos os metadados/dados definidos pelo usuário em seu próprio armazenamento gerenciado, em vez de usar o armazenamento fornecido pela Adobe. Essas seções descrevem como configurar essas variáveis para armazenamento externo.
+Os dados processados por fluxos de trabalho são armazenados no armazenamento fornecido pela Adobe (JCR). Esses dados podem ser de natureza sensível. É possível salvar todos os metadados/dados definidos pelo usuário em seu próprio armazenamento gerenciado, em vez de usar o armazenamento fornecido pela Adobe. Essas seções descrevem como configurar essas variáveis em um armazenamento externo.
 
 ### Definir o modelo para usar o armazenamento externo de metadados {#set-model-for-external-storage}
 

@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '5530'
+source-wordcount: '5529'
 ht-degree: 2%
 
 ---
@@ -286,7 +286,7 @@ Execute as seguintes etapas para configurar o provedor de soquete IBM® SSL:
 
 ### (Somente para Windows) Definir as configurações de bloco de arquivo do Microsoft® Office {#configure-the-file-block-settings-for-microsoft-office}
 
-Altere as configurações da central de confiança do Microsoft® Office para habilitar o serviço Gerador de PDF para converter arquivos criados com versões mais antigas do Microsoft® Office.
+Altere as configurações da central de confiança do Microsoft® Office para habilitar o serviço PDF Generator para converter arquivos criados com versões mais antigas do Microsoft® Office.
 
 1. Abra um aplicativo do Microsoft® Office. Por exemplo, Microsoft® Word. Navegue até **[!UICONTROL Arquivo]**> **[!UICONTROL Opções]**. A caixa de diálogo de opções é exibida.
 
@@ -360,7 +360,7 @@ Copie a fonte Unicode para qualquer um dos seguintes diretórios, conforme aprop
 >* Exclua todos os arquivos de cache de fontes .lst dos diretórios Html2PdfSvc/bin e /usr/share/fonts.
 >* Verifique se os diretórios /usr/lib/X11/fonts e /usr/share/fonts existem. Se os diretórios não existirem, use o comando ln para criar um link simbólico de /usr/share/X11/fonts para /usr/lib/X11/fonts e outro link simbólico de /usr/share/fonts para /usr/share/X11/fonts. Verifique também se as fontes do courier estão disponíveis em /usr/lib/X11/fonts.
 >* Verifique se todas as fontes (Unicode e não-unicode) estão disponíveis no diretório /usr/share/fonts ou /usr/share/X11/fonts.
->* Quando você executa o serviço PDF Generator como um usuário não-raiz, forneça ao usuário não-raiz acesso de leitura e gravação a todos os diretórios de fontes.
+>* Quando você executa o serviço PDF Generator como um usuário não-raiz, forneça a ele acesso de leitura e gravação a todos os diretórios de fontes.
 >* Sempre que você instalar novas fontes na pasta de fontes, reinicie a instância do AEM Forms.
 >
 
@@ -514,7 +514,7 @@ Antes de configurar os certificados, verifique se você tem:
 
 Execute as seguintes etapas para configurar os certificados:
 
-1. Faça logon na instância do AEM Author como administrador. Ir para **[!UICONTROL Ferramentas]** > **[!UICONTROL Segurança]** > **[!UICONTROL Usuários]**.
+1. Faça logon na instância do autor do AEM como administrador. Ir para **[!UICONTROL Ferramentas]** > **[!UICONTROL Segurança]** > **[!UICONTROL Usuários]**.
 1. Clique em **[!UICONTROL name]** da conta de usuário. A variável **[!UICONTROL Editar configurações de usuário]** é aberta. Na instância do autor do AEM, os certificados residem em um KeyStore. Se você não criou um KeyStore anteriormente, clique em **[!UICONTROL Criar KeyStore]** e defina uma nova senha para o KeyStore. Se o servidor já contiver um KeyStore, ignore esta etapa.  Se você estiver usando o certificado Adobe Reader Extensions, a senha do arquivo do Keystore será sempre a mesma da senha da Chave privada.
 1. No **[!UICONTROL Editar configurações de usuário]** selecione a **[!UICONTROL KeyStore]** guia. Expanda a **[!UICONTROL Adicionar chave de privacidade do arquivo da chave de armazenamento]** e forneça um alias. O alias é usado para executar a operação Reader Extensions.
 1. Para fazer upload do arquivo de certificado, clique em **[!UICONTROL Selecionar arquivo da chave de armazenamento]** e carregar um &lt;filename>arquivo .pfx.
@@ -642,7 +642,7 @@ Antes de executar as verificações a seguir, verifique se [Ferramenta de prepar
 * Garantir somente [versão compatível](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) do Microsoft® Office (32 bits) e do Adobe Acrobat está instalado e a abertura de caixas de diálogo é cancelada.
 * Certifique-se de que o Adobe Acrobat Update Service esteja desativado.
 * Certifique-se de que o [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) o arquivo de lote foi executado com privilégios de administrador.
-* Verifique se um usuário Gerador de PDF foi adicionado na interface do usuário de configuração de PDF.
+* Verifique se um usuário PDF Generator foi adicionado na interface de configuração de PDF.
 * Certifique-se de que o [Substituir um token de nível de processo](#grant-the-replace-a-process-level-token-privilege) permissão é adicionada para o usuário PDF Generator.
 * Verifique se o suplemento Acrobat PDFMaker Office COM está ativado para os aplicativos do Microsoft Office.
 

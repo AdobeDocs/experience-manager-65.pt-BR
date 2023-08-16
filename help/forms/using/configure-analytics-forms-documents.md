@@ -10,16 +10,16 @@ topic-tags: integrations
 discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
-source-git-commit: fef4f47794942b1fca4b30ce518b2faa8951f482
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1532'
+ht-degree: 3%
 
 ---
 
 # Analytics usando a estrutura Cloud Service {#analyticsusingcloudframework}
 
-O AEM Forms integra-se ao Analytics, permitindo capturar e rastrear métricas de desempenho dos formulários e documentos publicados. O objetivo por trás da análise dessas métricas é tomar decisões informadas com base em dados sobre as alterações necessárias para tornar os formulários ou documentos mais utilizáveis.
+O AEM Forms integra-se ao Analytics, o que permite capturar e rastrear as métricas de desempenho dos formulários e documentos publicados. O objetivo por trás da análise dessas métricas é tomar decisões informadas com base em dados sobre as alterações necessárias para tornar os formulários ou documentos mais utilizáveis.
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ Execute as seguintes etapas para criar um conjunto de relatórios.
 Cloud Service é a informação sobre sua conta Adobe Analytics. A configuração permite que o Adobe Experience Manager (AEM) se conecte ao Adobe Analytics. Crie uma configuração separada para cada conta do Analytics que você usa.
 
 1. Faça logon na instância de autor do AEM como administrador.
-1. No canto superior esquerdo, clique em **Adobe Experience Manager** > **Ferramentas** ![ícone de martelo](/help/forms/using/assets/tools.png) > **Cloud Services** > **Cloud Services herdados**.
+1. No canto superior esquerdo, clique em **Adobe Experience Manager** > **Ferramentas** ![ícone de martelo](/help/forms/using/assets/tools.png) > **Cloud Service** > **Cloud Service herdados**.
 1. Localizar **Adobe Analytics** ícone. Clique em **Exibir configurações** e prossiga para o clique **[+]** para adicionar nova configuração.
 
    Se você for um usuário pela primeira vez, clique em **Configurar agora**.
@@ -132,7 +132,7 @@ Cloud Service é a informação sobre sua conta Adobe Analytics. A configuraçã
 
 Uma estrutura Adobe Analytics é um conjunto de mapeamentos entre variáveis Adobe Analytics e variáveis AEM. Use uma estrutura para configurar como seus formulários preenchem dados para relatórios do Adobe Analytics. As estruturas são associadas a uma configuração do Adobe Analytics. É possível criar várias estruturas para cada configuração.
 
-1. No console do AEM Cloud Services, clique em **Mostrar configurações**, em Adobe Analytics.
+1. No console de serviços em nuvem do AEM, clique em **Mostrar configurações**, em Adobe Analytics.
 1. Clique em **[+]** ao lado de sua configuração do Analytics.
 
    ![Configuração do Adobe Analytics](assets/adobe-analytics-cloud-services.png)

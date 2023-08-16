@@ -12,9 +12,9 @@ discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2482'
+source-wordcount: '2481'
 ht-degree: 2%
 
 ---
@@ -205,7 +205,7 @@ Para garantir a sincronização de membros:
 
 ### Acionador de distribuição do Apache Sling - Fábrica de acionadores programados {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
-Essa configuração permite configurar o intervalo de sondagem (após o qual os editores recebem ping e as alterações são obtidas pelo autor) para sincronizar as alterações entre editores.
+Essa configuração permite configurar o intervalo de pesquisa (após o qual os editores recebem ping e as alterações são obtidas pelo autor) para sincronizar as alterações entre editores.
 
 O autor pesquisa editores a cada 30 segundos (padrão). Se houver pacotes na pasta `/var/sling/distribution/packages/  socialpubsync -  vlt /shared`, então ele buscará esses pacotes e os instalará em outros editores.
 

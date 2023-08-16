@@ -2,9 +2,9 @@
 title: Não é possível abrir PDF forms baseados em XFA no Google Chrome, Firefox, Microsoft&reg; Edge, Microsoft&reg; Internet Explorer ou Apple Safari
 seo-title: Unable to open XFA-based PDF forms in Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer, or Apple Safari
 feature: Adaptive Forms
-source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 Muitas versões recentes do navegador incluem seu próprio suporte limitado para PDF forms baseados em XFA. Embora esses navegadores possam abrir PDF forms baseados em XFA, os recursos fornecidos são limitados. Se não conseguir abrir ou enviar um formulário PDF baseado em XFA em um navegador moderno, use um dos seguintes métodos:
 
 * Uso [Adobe® Acrobat®](https://www.adobe.com/acrobat.html) ou [Adobe® Adobe® Reader®](https://get.adobe.com/reader/), versão 8 ou posterior para abrir e enviar PDF forms baseados em XFA.
-* O Acrobat e o Reader, no Microsoft® Windows®, permitem configurar a abertura de PDF no modo de Exibição protegida, o que impede a abertura de PDF forms baseados em XFA. Certifique-se de que o modo Modo de exibição protegida na Acrobat ou Reader está desativado. Para obter mais informações, consulte [Modo de Exibição Protegido (somente Windows)](https://helpx.adobe.com/in/reader/using/protected-mode-windows.html).
+* O Acrobat e o Reader, no Microsoft® Windows®, permitem configurar o para abrir o PDF no modo de Exibição protegida, o que impede a abertura de PDF forms baseados em XFA. Certifique-se de que o modo Modo de exibição protegida na Acrobat ou Reader está desativado. Para obter mais informações, consulte [Modo de Exibição Protegido (somente Windows)](https://helpx.adobe.com/in/reader/using/protected-mode-windows.html).
 * (Para desenvolvedores do Forms) A Adobe Experience Manager Forms também oferece suporte a:
 
    * [renderizar formulários baseados em XFA no HTML5 Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/html5-forms/introduction.html?#key-capabilities-of-html-forms-br) de forma que os formulários possam ser abertos em navegadores compatíveis com o HTML5, incluindo os navegadores executados em dispositivos móveis, como o iPad. A representação em HTML5 dos formulários mantém o layout do design do formulário e é compatível com a maioria da lógica de formulário (como JavaScript, cálculo de formulário e validações de formulário) incorporada ao modelo de formulário XFA.

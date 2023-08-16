@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c04c488b-73f3-49ba-9e89-f97497965757
 docset: aem65
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
-source-git-commit: 75e1697c301dca3a649833a45caa1753fdc81514
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '858'
 ht-degree: 0%
 
 ---
 
 # Exibição e Noções Básicas dos Relatórios de Transação{#viewing-and-understanding-transaction-reports}
 
-Os relatórios de transação permitem capturar e rastrear o número de formulários enviados, documentos processados e documentos renderizados. O objetivo por trás do rastreamento dessas transações é tomar uma decisão informada sobre o uso do produto e reequilibrar os investimentos em hardware e software. Para obter mais informações, consulte [Visão Geral dos Relatórios de Transação do AEM Forms](../../forms/using/transaction-reports-overview.md).
+Relatórios de transação permitem capturar e rastrear o número de formulários enviados, documentos processados e documentos renderizados. O objetivo por trás do rastreamento dessas transações é tomar uma decisão informada sobre o uso do produto e reequilibrar os investimentos em hardware e software. Para obter mais informações, consulte [Visão Geral dos Relatórios de Transação do AEM Forms](../../forms/using/transaction-reports-overview.md).
 
 ## Configuração de relatórios de transações  {#setting-up-transaction-reports}
 
@@ -35,7 +35,6 @@ O recurso Relatórios de transação está disponível como parte do pacote comp
 >* Antes de usar o relatório de transações, verifique se a replicação reversa está ativada para todas as instâncias de publicação.
 >* Os dados da transação são revertidos e replicados de uma instância de publicação para somente o autor ou instância de processamento correspondente. A instância de autoria ou processamento não pode replicar dados para outra instância.
 >
-
 
 ### Habilitar replicação reversa em todas as instâncias de publicação {#enable-reverse-replication-on-all-the-publish-instances}
 

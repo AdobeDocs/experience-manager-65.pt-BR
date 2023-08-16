@@ -12,9 +12,9 @@ discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2041'
 ht-degree: 4%
 
 ---
@@ -108,7 +108,7 @@ A área de conteúdo contém informações para o UGC publicado:
 
 >[!NOTE]
 > 
->A área de conteúdo apresenta um *rolagem infinita*, o que significa que permitirá que você continue rolando até atingir o fim do conteúdo. A barra de ferramentas permanece em uma posição fixa e visível acima da área de conteúdo, mesmo ao rolar a tela.
+>A área de conteúdo apresenta um *rolagem infinita*, o que significa que você continuará rolando até atingir o fim do conteúdo. A barra de ferramentas permanece em uma posição fixa e visível acima da área de conteúdo, mesmo ao rolar a tela.
 
 ### Trilho do filtro {#ootbfilters}
 
@@ -186,8 +186,9 @@ Para adicionar recursos adicionais aos quais filtrar:
 
    * Por exemplo, para filtrar os componentes de Votação incluídos, informe:
 
-      `Voting=social/tally/components/hbs/voting`
-   ![additional-contenttype](assets/additional-contenttype.png)
+     `Voting=social/tally/components/hbs/voting`
+
+  ![additional-contenttype](assets/additional-contenttype.png)
 
 * Selecione Salvar.
 * Atualize o console Comunidades - Moderação.
@@ -246,7 +247,7 @@ Para instalar a amostra do filtro Tags:
 1. Criar o pacote `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` do código Github, e instale e ative o mesmo.
 1. Abra o console de pacotes no AEM Author ( `https://[aem-author]:4502/system/console/bundles`) e AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`).
 1. Criar o pacote (`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`) do Github, e instale e ative o mesmo.
-1. Ir para **/apps/social/moderation/facets** no Autor do AEM (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) e AEM Publish (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`).
+1. Ir para **/apps/social/moderation/facets** nó no autor do AEM (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) e AEM Publish (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`).
 1. Adicionar um usuário técnico **communities-utility-reader** com `jcr:read` permissões.
 
 Para expor os filtros personalizados nos sites da Comunidade existentes:
@@ -255,11 +256,11 @@ Para expor os filtros personalizados nos sites da Comunidade existentes:
 
    * Adicionar nova categoria `cq.social.hbs.moderation.v2.`
 
-1. Ir para `/content/we-retail/us/en/community/moderation/shell3/jcr:content/rails/searchWell/items/filters.`
+1. Acesse `/content/we-retail/us/en/community/moderation/shell3/jcr:content/rails/searchWell/items/filters.`
 
    * Definir como novo componente `sling:resourceType = social/moderation/v2/filters.`
 
-1. Ir para `/content/we-retail/us/en/community/moderation/shell3/jcr:content/views/content/items/modcontainer`.
+1. Acesse `/content/we-retail/us/en/community/moderation/shell3/jcr:content/views/content/items/modcontainer`.
 
    * Definir como novo componente `sling:resourceType = social/moderation/v2/modcontainer`.
 

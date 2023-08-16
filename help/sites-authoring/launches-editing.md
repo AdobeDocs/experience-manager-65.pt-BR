@@ -10,10 +10,10 @@ discoiquuid: 30aa3177-bcf4-4260-8f64-e73bc907942a
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 38%
+source-wordcount: '523'
+ht-degree: 42%
 
 ---
 
@@ -31,7 +31,6 @@ Quando uma inicialização é criada para uma página (ou conjunto de páginas),
 >Você não tem permissão para mover uma página em um lançamento. Tentar esta ação acionará uma mensagem de aviso:
 >
 >* Aviso: esta página é a origem de um lançamento. Não é permitido mover a página.
-
 
 ### Edição de páginas de lançamento sujeitas a uma live copy {#editing-launch-pages-subject-to-a-live-copy}
 
@@ -61,7 +60,7 @@ Para rastrear as alterações feitas, é possível exibir a inicialização em *
 
 1. As duas páginas (inicialização e origem) serão abertas lado a lado.
 
-   Para obter informações completas sobre como usar esse recurso, consulte [Diferença de página](/help/sites-authoring/page-diff.md).
+   Para obter informações completas sobre como usar este recurso, consulte [Diferencial de página](/help/sites-authoring/page-diff.md).
 
 ## Alteração das páginas de origem usadas {#changing-the-source-pages-used}
 
@@ -72,6 +71,7 @@ A qualquer momento, você pode adicionar ou remover páginas ao/do intervalo de 
    * o [Iniciar console](/help/sites-authoring/launches.md#the-launches-console):
 
       * Selecione **Editar**.
+
    * [Referências (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar as ações disponíveis:
 
       * Selecione **Editar lançamento**.
@@ -93,6 +93,7 @@ A qualquer momento, você pode editar as propriedades de um lançamento:
    * o [Iniciar console](/help/sites-authoring/launches.md#the-launches-console):
 
       * Selecionar **Propriedades**.
+
    * [Referências (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar as ações disponíveis:
 
       * Selecione **Editar propriedades**.

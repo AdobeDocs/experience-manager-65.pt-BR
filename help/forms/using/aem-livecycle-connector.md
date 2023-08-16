@@ -1,8 +1,8 @@
 ---
 title: Conectar o AEM Forms com o LiveCycle Adobe
 seo-title: Connecting AEM Forms with Adobe LiveCycle
-description: O conector de LiveCycle AEM permite iniciar os Serviços de documento do LiveCycle AEM ES4 a partir de aplicativos e fluxos de trabalho do.
-seo-description: AEM LiveCycle connector allows you to start LiveCycle ES4 Document Services from within AEM apps and workflows.
+description: O conector de LiveCycle AEM permite iniciar os serviços de documento do LiveCycle AEM ES4 a partir de aplicativos e fluxos de trabalho do.
+seo-description: AEM LiveCycle connector lets you start LiveCycle ES4 Document Services from within AEM apps and workflows.
 uuid: 7dc9d5ec-7b19-4d93-936d-81ceb45dfffa
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 role: Admin
 exl-id: 562f8a22-cbab-4915-bc0d-da9bea7d18fa
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1004'
 ht-degree: 0%
 
 ---
@@ -33,12 +33,12 @@ Embora as propriedades sejam autoexplicativas, as importantes são as seguintes:
 
 * **URL do servidor** - Especifica o URL para o servidor do LiveCycle. Se quiser que o LiveCycle e o AEM se comuniquem por https, inicie o AEM com a seguinte JVM
 
-   ```java
-   argument
-    -Djavax.net.ssl.trustStore=<<em>path to LC keystore</em>>
-   ```
+  ```java
+  argument
+   -Djavax.net.ssl.trustStore=<<em>path to LC keystore</em>>
+  ```
 
-   opção.
+  opção.
 
 * **Nome de usuário**- Especifica o nome de usuário da conta usada para estabelecer a comunicação entre o AEM e o LiveCycle. A conta é uma conta de usuário do LiveCycle que tem permissões para iniciar os Serviços de documento.
 * **Senha**- Especifica a senha.

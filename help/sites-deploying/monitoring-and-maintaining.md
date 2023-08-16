@@ -10,9 +10,9 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: bb27c7dfedd5a16728674f7584b0c462a92646e6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '5934'
+source-wordcount: '5933'
 ht-degree: 1%
 
 ---
@@ -61,15 +61,15 @@ Geralmente, um backup completo é feito em intervalos regulares (por exemplo, di
 
 >[!NOTE]
 >
->Para obter mais informações sobre desempenho de backup, leia a [Desempenho de backup](/help/sites-deploying/configuring-performance.md#backup-performance) seção.
+>Para obter mais informações sobre backup desempenho, leia a [ seção anterior up performance ](/help/sites-deploying/configuring-performance.md#backup-performance) .
 
-### Fazendo backup da instalação do software {#backing-up-your-software-installation}
+### Fazer backup da instalação do software {#backing-up-your-software-installation}
 
-Após a instalação ou após alterações significativas na configuração, crie um backup da instalação do software.
+Após a instalação ou alterações significativas na configuração, crie uma backup da instalação do software.
 
-Para realizar essa tarefa, [fazer backup de todo o repositório](#backing-up-your-repository) e depois:
+Para realizar essa tarefa, [ faça backup de todo o repositório ](#backing-up-your-repository) e, em seguida:
 
-1. Parem o AEM.
+1. Interrupção AEM.
 1. Fazer backup de todo o `<cq-installation-dir>` do seu sistema de arquivos.
 
 >[!CAUTION]
@@ -126,19 +126,19 @@ Para expurgar versões de um site, proceda da seguinte forma:
    ![Configuração de limpeza de versão](assets/version-purge-configuration.png)
 
    * **Limpar caminhos**
-Defina o caminho inicial do conteúdo a ser removido; por exemplo, 
-`/content/wknd`.
+Defina o caminho inicial do conteúdo a ser removido; por exemplo, `/content/wknd`.
 
-      >[!CAUTION]
-      >
-      >A Adobe recomenda que você defina vários caminhos para cada um de seus sites.
-      >
-      >A definição de um caminho com muitos filhos pode aumentar significativamente o tempo para executar a limpeza.
+     >[!CAUTION]
+     >
+     >A Adobe recomenda que você defina vários caminhos para cada um de seus sites.
+     >
+     >A definição de um caminho com muitos filhos pode aumentar significativamente o tempo para executar a limpeza.
 
    * **Limpar versões recursivamente**
 
       * Desmarque se desejar expurgar apenas o nó definido pelo caminho.
       * Selecione se quiser expurgar o nó definido pelo seu caminho e seus descendentes.
+
    * **Número máximo de versões**
 Defina o número máximo de versões (para cada nó) que deseja manter. Deixe em branco para não usar esta configuração.
 
@@ -147,6 +147,7 @@ Defina o número mínimo de versões (para cada nó) que deseja manter. Deixe em
 
    * **Idade máxima da versão**
 Defina o tempo de vida máximo da versão em dias (para cada nó) que você deseja manter. Deixe em branco para não usar esta configuração.
+
    Depois **Salvar**.
 
 1. Navegue/volte para a **Janela de manutenção semanal** e selecione **Executar** para iniciar o processo imediatamente.
@@ -177,7 +178,7 @@ O processo lista todos os nós que foram processados. Durante o processo, um nó
 Além disso, o console fornece informações úteis sobre as versões:
 
 * `V 1.0`: o número da versão.
-* `V 1.0.1`&#42;: a estrela indica que a versão é a versão atual (base) e não pode ser removida.
+* `V 1.0.1`&#42;: a estrela indica que a versão é a versão atual (base) e não pode ser limpa.
 
 * `Thu Mar 15 2012 08:37:32 GMT+0100`: a data da versão.
 
@@ -227,25 +228,23 @@ As ações de moderação são registradas aqui.
    * `error.log`
 Mensagens de erro (de vários níveis de gravidade) são registradas aqui.
 
-   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
+   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
 Este log só será usado se [!DNL Dynamic Media] está ativado. Ele fornece estatísticas e informações analíticas usadas para analisar o comportamento do processo interno do ImageServer.
 
    * `request.log`
 Cada solicitação de acesso é registrada aqui junto com a resposta.
 
-   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
+   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
 Este log só será usado se [!DNL Dynamic Media] está ativado. O registro de acesso s7registra cada solicitação feita ao [!DNL Dynamic Media] até `/is/image` e `/is/content`.
 
    * `stderr.log`
-Mantém mensagens de erro, novamente de diferentes níveis de gravidade, geradas durante a inicialização. Por padrão, o nível de log está definido como 
-`Warning` ( `WARN`)
+Mantém mensagens de erro, novamente de diferentes níveis de gravidade, geradas durante a inicialização. Por padrão, o nível de log está definido como `Warning` ( `WARN`)
 
    * `stdout.log`
 Contém mensagens de registro indicando eventos durante a inicialização.
 
    * `upgrade.log`
-Fornece um log de todas as operações de atualização executadas a partir do 
-`com.day.compat.codeupgrade` e `com.adobe.cq.upgradesexecutor` pacotes.
+Fornece um log de todas as operações de atualização executadas a partir do `com.day.compat.codeupgrade` e `com.adobe.cq.upgradesexecutor` pacotes.
 
 * `<cq-installation-dir>/crx-quickstart/repository/segmentstore`
 
@@ -293,47 +292,50 @@ Em determinadas circunstâncias, talvez você queira criar um arquivo de log per
 
    * Nome: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
 
-      Onde `<identifier>` é substituído por texto livre que você (deve) inserir para identificar a instância (não é possível omitir essas informações).
+     Onde `<identifier>` é substituído por grátis texto que você (deve) inserir para identificar a instância (não é possível omitir essas informações).
 
-      Por exemplo, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
+     Por exemplo, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
    * Tipo: `sling:OsgiConfig`
+
    >[!NOTE]
    >
-   >Embora não seja um requisito técnico, é aconselhável `<identifier>` único.
+   >Embora não seja um requisito técnico, é aconselhável tornar `<identifier>` único.
 
 1. Defina as seguintes propriedades nesse nó:
 
    * Nome: `org.apache.sling.commons.log.file`
 
-      Tipo: String
+     Tipo: String
 
-      Valor: especifique o Arquivo de Log; por exemplo, `logs/myLogFile.log`
+     Valor: especifique o Arquivo de Log; por exemplo, `logs/myLogFile.log`
 
    * Nome: `org.apache.sling.commons.log.names`
 
-      Tipo: String[] (String + Multi)
+     Tipo: String[] (String + Multi)
 
-      Valor: especifique os serviços OSGi para os quais o Logger registrará mensagens; por exemplo, todos os seguintes:
+     Valor: especifique os serviços OSGi para os quais o Logger registrará mensagens; por exemplo, todos os seguintes:
 
       * `org.apache.sling`
       * `org.apache.felix`
       * `com.day`
+
    * Nome: `org.apache.sling.commons.log.level`
 
-      Tipo: String
+     Tipo: String
 
-      Value: especifique o nível de log necessário ( `debug`, `info`, `warn`ou `error`); por exemplo, `debug`
+     Value: especifique o nível de log necessário ( `debug`, `info`, `warn`ou `error`); por exemplo, `debug`
 
    * Configure os outros parâmetros conforme necessário:
 
       * Nome: `org.apache.sling.commons.log.pattern`
 
-         Tipo: `String`
+        Tipo: `String`
 
-         Value: especifique o padrão da mensagem de log conforme necessário; por exemplo,
+        Value: especifique o padrão da mensagem de log conforme necessário; por exemplo,
 
-         `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
+        `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
+
    >[!NOTE]
    >
    >`org.apache.sling.commons.log.pattern` suporta até seis argumentos.
@@ -389,9 +391,10 @@ Em determinadas circunstâncias, talvez você queira criar um arquivo de log per
 
    * Nome: `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (um Escritor)
 
-      Assim como com o Logger, `<identifier>` é substituído por texto livre que você (deve) inserir para identificar a instância (não é possível omitir essas informações). Por exemplo, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
+     Assim como com o Logger, `<identifier>` é substituído por texto livre que você (deve) inserir para identificar a instância (não é possível omitir essas informações). Por exemplo, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
 
    * Tipo: `sling:OsgiConfig`
+
    >[!NOTE]
    >
    >Embora não seja um requisito técnico, é aconselhável `<identifier>` único.
@@ -400,42 +403,41 @@ Em determinadas circunstâncias, talvez você queira criar um arquivo de log per
 
    * Nome: `org.apache.sling.commons.log.file`
 
-      Tipo: `String`
+     Tipo: `String`
 
-      Value: especifique o Arquivo de Log para que ele corresponda ao arquivo especificado no Logger;
+     Value: especifique o Arquivo de Log para que ele corresponda ao arquivo especificado no Logger;
 
-      para este exemplo, `../logs/myLogFile.log`.
+     para este exemplo, `../logs/myLogFile.log`.
 
    * Configure os outros parâmetros conforme necessário:
 
       * Nome: `org.apache.sling.commons.log.file.number`
 
-         Tipo: `Long`
+        Tipo: `Long`
 
-         Valor: especifique o número de arquivos de log que deseja manter; por exemplo, `5`
+        Valor: especifique o número de arquivos de log que deseja manter; por exemplo, `5`
 
       * Nome: `org.apache.sling.commons.log.file.size`
 
-         Tipo: `String`
+        Tipo: `String`
 
-         Valor: especifique conforme necessário para controlar a rotação de arquivos por tamanho/data; por exemplo, `'.'yyyy-MM-dd`
+        Valor: especifique conforme necessário para controlar a rotação de arquivos por tamanho/data; por exemplo, `'.'yyyy-MM-dd`
+
    >[!NOTE]
    >
    >`org.apache.sling.commons.log.file.size` controla a rotação do arquivo de log definindo:
    >
    >* um tamanho máximo de arquivo
    >* um cronograma de hora/data
-
    >
    >para indicar quando um novo arquivo será criado (e o arquivo existente será renomeado de acordo com o padrão de nome).
    >
    >* Um limite de tamanho pode ser especificado com um número. Se nenhum indicador de tamanho for fornecido, ele será considerado como o número de bytes, ou você poderá adicionar um dos indicadores de tamanho: `KB`, `MB`ou `GB` (maiúsculas e minúsculas ignoradas).
-   >* Um cronograma de hora/data pode ser especificado como um `java.util.SimpleDateFormat` padrão. Ele define o período após o qual o arquivo é girado. Além disso, o sufixo anexado ao arquivo girado (para identificação).
-
+   >* Uma programação de hora/data pode ser especificada como um `java.util.SimpleDateFormat` padrão. Ele define a período após a qual o arquivo é girado. Além disso, o sufixo anexado ao arquivo girado (para identificação).
    >
-   >O padrão é &#39;.&#39;dd/MM/yyyy (para rotação diária de logs).
+   >O padrão é &#39;.&#39;aaaa-MM-DD (para a rotação de logs diárias).
    >
-   >Por exemplo, à meia-noite de 20 de janeiro de 2010 (ou quando a primeira mensagem de log após essa data ocorrer para ser precisa), ../logs/error.log será renomeado para ../logs/error.log.2010-01-20. Os registros de 21 de janeiro são enviados para (um novo e vazio) ../logs/error.log até serem transferidos na próxima alteração do dia.
+   >Por exemplo, à meia-noite 20 de janeiro de 2010 (ou quando a primeira mensagem de log após essa data ocorre para ser preciso),.. /logs/Error.log é renomeado como.. /logs/error.log.2010-01-20. O logon em 21 de Janeiro é apresentado para (um novo e vazio).. /logs/Error.log até que seja sobrepostada na próxima alteração do dia.
    >
    >| `'.'yyyy-MM` | Rotação no início de cada mês |
    >|---|---|
@@ -448,11 +450,10 @@ Em determinadas circunstâncias, talvez você queira criar um arquivo de log per
    >Observação: Ao especificar uma data/hora:
    >
    >1. Você deve &quot;escapar&quot; o texto literal dentro de um par de aspas simples (&#39; &#39;);
-      >
-      >    Evita que determinados caracteres sejam interpretados como letras de padrão.
+   >
+   >    Evita que determinados caracteres sejam interpretados como letras de padrão.
    >
    >1. Use somente caracteres permitidos para um nome de arquivo válido em qualquer lugar na opção.
-
 
 1. Leia o novo arquivo de log com a ferramenta escolhida.
 
@@ -546,16 +547,16 @@ A seguir, uma lista de problemas comuns de desempenho que ocorrem, juntamente co
 | Área | Sintoma | Para aumentar a capacidade... | Para reduzir o volume... |
 |---|---|---|---|
 | Client | Alto uso da CPU do cliente. | Instale uma CPU cliente com desempenho mais alto. | Layout Simplificar (HTML). |
-|  | Baixo uso da CPU do servidor. | Atualize para um navegador mais rápido. | Melhore o cache do lado do cliente. |
-|  | Alguns clientes são rápidos, outros lentos. |  |  |
+|   | Baixo uso da CPU do servidor. | Atualize para um navegador mais rápido. | Melhore o cache do lado do cliente. |
+|   | Alguns clientes são rápidos, outros lentos. |  |  |
 | Servidor |  |  |  |
 | Rede | Baixo uso da CPU em servidores e clientes. | Remova todos os gargalos de rede. | Melhorar/otimizar a configuração do cache do cliente. |
-|  | A navegação local no servidor é (comparativamente) rápida. | Aumente a largura de banda da rede. | Reduza o &quot;peso&quot; de suas páginas da Web (por exemplo, menos imagens, HTML otimizado). |
+|   | A navegação local no servidor é (comparativamente) rápida. | Aumente a largura de banda da rede. | Reduza o &quot;peso&quot; de suas páginas da Web (por exemplo, menos imagens, HTML otimizado). |
 | Servidor da Web | O uso da CPU no servidor Web é alto. | Faça cluster dos servidores da Web. | Reduza as ocorrências por página (visita). |
-|  |  | Use um balanceador de carga de hardware. |  |
+|   |  | Use um balanceador de carga de hardware. |  |
 | Aplicativo | O uso da CPU do servidor é alto. | Agrupe suas instâncias de AEM. | Procure e elimine problemas de CPU e memória (use a revisão do código e a saída de tempo). |
-|  | Alto consumo de memória. |  | Melhore o armazenamento em cache em todos os níveis. |
-|  | Tempos de resposta baixos. |  | Otimizar modelos e componentes (por exemplo, estrutura, lógica). |
+|   | Alto consumo de memória. |  | Melhore o armazenamento em cache em todos os níveis. |
+|   | Tempos de resposta baixos. |  | Otimizar modelos e componentes (por exemplo, estrutura, lógica). |
 | Repositório |  |  |  |
 | Cache |  |  |  |
 
@@ -578,8 +579,8 @@ Todas essas informações devem ser obtidas, classificadas e analisadas antes qu
       * o problema ocorre somente em momentos específicos?
       * o problema ocorre somente em páginas específicas?
       * as outras solicitações serão afetadas?
-   * colete o máximo de informações possível para comparar com seu conhecimento do sistema em circunstâncias normais:
 
+   * colete o máximo de informações possível para comparar com seu conhecimento do sistema em circunstâncias normais:
 
 ### Ferramentas para Monitorar e Analisar Desempenho {#tools-for-monitoring-and-analyzing-performance}
 
@@ -1094,13 +1095,14 @@ Repita o procedimento acima na instância de publicação.
 Veja a seguir uma lista de sugestões sobre o que verificar se você começa a enfrentar determinados problemas de desempenho. A lista não é (infelizmente) totalmente abrangente.
 
 >[!NOTE]
+>
 Consulte também os seguintes artigos para obter mais informações:
+>
 * [Despejos de encadeamento](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=pt-BR)
 * [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=pt-BR)
 * [Analisar usando o profiler integrado](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=pt-BR)
 * [Analisar processos lentos e bloqueados](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
-
 
 ### CPU em 100% {#cpu-at}
 
@@ -1132,13 +1134,13 @@ Se o sistema estiver ficando sem espaço em disco ou se você notar hash no disc
 * Se você tiver desativado a coleção de informações de depuração, ela poderá ser configurada em vários locais, incluindo os seguintes:
 
    * [Manipulador de script JSP do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
-   * [Manipulador de JavaScript do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
-   * [Configuração de registro do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
-   * [CQ HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
-   * [Filtro de depuração CQ WCM](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
-   * [Loggers](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
+   * [Manipulador JavaScript do Apache sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
+   * [Configuração de log do Apache sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
+   * [Gerenciador de biblioteca CQ HTML](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
+   * [CQ WCM Debug Filtrar](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
+   * [Registradores](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
-* Se e como você configurou o [Limpeza de versão](/help/sites-deploying/version-purging.md)
+* Se e como a limpeza de Versão foi configurada [](/help/sites-deploying/version-purging.md)
 * Base de conhecimento:
 
    * [Muitos Arquivos Abertos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=pt-BR)
@@ -1146,7 +1148,7 @@ Se o sistema estiver ficando sem espaço em disco ou se você notar hash no disc
 
 ### Degradação regular do desempenho {#regular-performance-degradation}
 
-Se você observar o desempenho da sua instância se deteriorando após cada reinicialização (às vezes, uma semana ou mais tarde), o seguinte pode ser verificado:
+Se você encontrar o desempenho de seu instância deteriorar após cada reinicialização (às vezes uma semana ou mais), o seguinte pode ser marcado:
 
 * [Memória insuficiente](#outofmemory)
 * Base de conhecimento:
@@ -1163,12 +1165,12 @@ Algumas opções comuns são:
 
 * VerboseGC:
 
-   ```
-   -verbose:gc \
-    -Xloggc:$LOGS/verbosegc.log \
-    -XX:+PrintGCDetails \
-    -XX:+PrintGCDateStamps
-   ```
+  ```
+  -verbose:gc \
+   -Xloggc:$LOGS/verbosegc.log \
+   -XX:+PrintGCDetails \
+   -XX:+PrintGCDateStamps
+  ```
 
 O log resultante pode ser assimilado por um visualizador de GC, como:
 
@@ -1178,18 +1180,20 @@ Ou JConsole:
 
 * Estas configurações são para uma conexão JMX &quot;aberta&quot;:
 
-   ```
-   -Dcom.sun.management.jmxremote \
-    -Dcom.sun.management.jmxremote.port=8889 \
-    -Dcom.sun.management.jmxremote.authenticate=false \
-    -Dcom.sun.management.jmxremote.ssl=false
-   ```
+  ```
+  -Dcom.sun.management.jmxremote \
+   -Dcom.sun.management.jmxremote.port=8889 \
+   -Dcom.sun.management.jmxremote.authenticate=false \
+   -Dcom.sun.management.jmxremote.ssl=false
+  ```
 
 * Em seguida, conecte-se à JVM com o JConsole; consulte o seguinte:
-   ` [https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html)`
+  ` [https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html)`
 
 Você pode ver quanta memória está sendo usada, quais algoritmos de GC estão sendo usados, quanto tempo eles levam para serem executados e qual efeito esse processo tem no desempenho do aplicativo. Sem ele, o ajuste é apenas &quot;aleatoriamente girando botões&quot;.
 
 >[!NOTE]
+>
 Para a VM do Oracle, também há informações em:
+>
 [https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)

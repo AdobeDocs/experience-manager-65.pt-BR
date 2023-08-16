@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 5756cb52-dd47-4277-981c-fd0af9a20638
 exl-id: 375cfa95-ac6f-44c4-a736-f5dd55d24195
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ O Gerenciamento de dispositivos móveis (MDM) permite a implantação em larga e
 * Imponha a conformidade de segurança.
 * Acesso móvel seguro a recursos corporativos
 
-Uma solução MDM, juntamente com o Gerenciamento de aplicativos móveis, permite gerenciar aplicativos internos, públicos e adquiridos nos dispositivos móveis de sua empresa.
+Uma solução MDM, juntamente com o Gerenciamento de aplicativos móveis, permite gerenciar aplicativos internos, públicos e adquiridos em todos os dispositivos móveis da empresa.
 
 O administrador do MDM pode fazer upload de arquivos ipa e apk para o servidor MDM e controlar os usuários que podem acessar os arquivos ipa ou apk. O administrador também pode controlar a configuração de perfil correspondente a cada aplicativo.
 

@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: f6d6fcd1f174cc32a172f70ee3da8eff15156c15
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3080'
-ht-degree: 41%
+source-wordcount: '3067'
+ht-degree: 37%
 
 ---
 
@@ -112,7 +112,7 @@ A notificação lista o fluxo de trabalho que está sendo executado na página. 
 
 Concluir e delegar etapas do fluxo de trabalho por meio da barra de notificação funciona da mesma maneira como ao [participar de fluxos de trabalho](/help/sites-authoring/workflows-participating.md) por meio da caixa de entrada de Notificações.
 
-Se a página estiver sujeita a vários fluxos de trabalho, o número de fluxos de trabalho será exibido na extremidade direita da notificação, junto a botões de seta para permitir que você navegue pelos fluxos de trabalho.
+Se a página estiver sujeita a vários workflows, o número de workflows será exibido na extremidade direita da notificação, junto a botões de seta para permitir que você navegue pelos workflows.
 
 ![Notificação para o número de workflows](assets/chlimage_1-122.png)
 
@@ -157,7 +157,7 @@ O placeholder do componente é um indicador para mostrar onde um componente ser�
 
    * Se você estiver em um dispositivo de desktop, clique duas vezes na caixa **Arraste componentes aqui**.
 
-   A caixa de diálogo **Inserir novo componente** será aberta para permitir que você selecione o componente desejado: 
+   A variável **Inserir novo componente** será aberta para permitir que você selecione o componente desejado:
 
    ![Inserir novo componente](assets/screen_shot_2018-03-22at112650.png)
 
@@ -230,13 +230,13 @@ As ações reais disponíveis para o usuário serão mostradas conforme apropria
 
 * **Editar**
 
-  [Dependendo do tipo de componente,](/help/sites-authoring/default-components.md) permitirá a [edição do conteúdo do componente](#edit-content). Muitas vezes será disponibilizada uma barra de ferramentas.
+  [Dependente do tipo de componente](/help/sites-authoring/default-components.md) isso permitirá [editar o conteúdo do componente](#edit-content). Muitas vezes será disponibilizada uma barra de ferramentas.
 
   ![Editar](do-not-localize/screen_shot_2018-03-22at112936.png)
 
 * **Configurar**
 
-  [Dependendo do tipo de componente,](/help/sites-authoring/default-components.md) permitirá a edição e configuração das propriedades do componente. Frequentemente uma caixa de diálogo será aberta.
+  [Dependente do tipo de componente](/help/sites-authoring/default-components.md) isso permitirá editar e configurar as propriedades do componente. Frequentemente uma caixa de diálogo será aberta.
 
   ![Configurar](do-not-localize/screen_shot_2018-03-22at112955.png)
 
@@ -292,13 +292,13 @@ As ações reais disponíveis para o usuário serão mostradas conforme apropria
 
 * **Layout**
 
-  Isso permite modificar a variável [layout](/help/sites-authoring/editing-content.md#edit-component-layout) do componente selecionado. Isso se aplica somente ao componente selecionado e não ativa o [Modo de layout](/help/sites-authoring/author-environment-tools.md#page-modes) para a página inteira.
+  Isso permite modificar o [layout](/help/sites-authoring/editing-content.md#edit-component-layout) do componente selecionado. Isso se aplica somente ao componente selecionado e não ativa o [Modo de layout](/help/sites-authoring/author-environment-tools.md#page-modes) para a página inteira.
 
   ![Layout](do-not-localize/screen_shot_2018-03-22at113044.png)
 
 * **Converta em uma variação de fragmento de experiência**
 
-  Isso permite criar um novo [fragmento de experiência](/help/sites-authoring/experience-fragments.md) do componente selecionado ou adicioná-lo a um fragmento de experiência existente.
+  Isso permite criar um novo [fragmento de experiência](/help/sites-authoring/experience-fragments.md) do componente selecionado ou adicione-o a um fragmento de experiência existente.
 
   ![Converter em variação de Fragmento de experiência](do-not-localize/screen_shot_2018-03-22at113033.png)
 
@@ -427,7 +427,7 @@ Você pode cancelar (e depois reativar) a herança. Dependendo do componente, is
 
   A barra de ferramentas do componente, se o componente estiver em uma página que faz parte de uma live copy ou inicialização (com base em uma live copy). Por exemplo:
 
-  ![Live Copy ](assets/screen_shot_2018-03-22at134339.png)
+  ![Live Copy](assets/screen_shot_2018-03-22at134339.png)
 
   A opção Cancelar herança está disponível:
 
@@ -549,7 +549,7 @@ O menu de Informações da página lista **Desbloquear** como uma opção, e o �
 
 ## Desfazer e refazer edições de página {#undoing-and-redoing-page-edits}
 
-Os ícones a seguir permitem desfazer ou refazer uma ação. Os seguintes itens são mostrados na barra de ferramentas, quando apropriado: 
+Os ícones a seguir permitem desfazer ou refazer uma ação. Eles são mostrados na barra de ferramentas quando apropriado:
 
 ![Desfazer e refazer](do-not-localize/screen_shot_2018-03-23at093614.png)
 

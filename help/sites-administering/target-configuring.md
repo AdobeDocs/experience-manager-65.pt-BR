@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2199'
 ht-degree: 30%
 
 ---
@@ -27,7 +27,7 @@ A variável [Assistente de aceitação](/help/sites-administering/opt-in.md) que
 
 Você também pode configurar o Adobe Target para usar o Adobe Target como fonte de relatórios ao direcionar conteúdo definindo a Configuração do Analytics Cloud A4T.
 
-Para localizar a configuração da nuvem e a estrutura, acesse **Cloud Services** via **Ferramentas** > **Implantação** > **Nuvem**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html)) Abaixo do Adobe Target, clique ou toque em **Exibir configurações**.
+Para localizar a configuração da nuvem e a estrutura, acesse **Cloud Service** via **Ferramentas** > **Implantação** > **Nuvem**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html)) Abaixo do Adobe Target, clique ou toque em **Exibir configurações**.
 
 ### Propriedades de Configuração do Alvo Provisionado {#provisioned-target-configuration-properties}
 
@@ -72,11 +72,11 @@ Você pode configurar o Adobe Target para usar o Adobe Analytics como fonte de r
 
 >[!NOTE]
 >
->A Autenticação de credencial de usuário (herdada) não funciona com o A4T (tanto para o Target quanto para o Analytics). Dessa forma, os clientes devem usar a autenticação IMS em vez da autenticação de credencial do usuário.
+>A Autenticação de credencial de usuário (herdada) não funciona com o A4T (para Target e Analytics). Dessa forma, os clientes devem usar a autenticação IMS em vez da autenticação de credencial do usuário.
 
 Para fazer isso, você especifica com qual configuração de nuvem do A4T deve se conectar à configuração de nuvem do Adobe Target:
 
-1. Navegue até **Cloud Services** por meio da **Logotipo do AEM** > **Ferramentas** > **Implantação** > **Cloud Services**.
+1. Navegue até **Cloud Service** por meio da **Logotipo do AEM** > **Ferramentas** > **Implantação** > **Cloud Service**.
 1. Na seção **Adobe Target**, clique em **Configurar agora**.
 1. Reconecte-se à configuração do Adobe Target.
 1. No **Configuração do A4T Analytics Cloud** selecione a estrutura.
@@ -131,9 +131,9 @@ Você precisa criar a configuração da nuvem do Target apenas uma vez, pois é 
 
 Use o procedimento a seguir para criar uma configuração da nuvem do Target no AEM:
 
-1. Navegue até **Cloud Services** por meio da **Logotipo do AEM** > **Ferramentas** > **Cloud Services** > **Cloud Services herdados**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. Navegue até **Cloud Service** por meio da **Logotipo do AEM** > **Ferramentas** > **Cloud Service** > **Cloud Service herdados**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
-   A variável **Cloud Services** visão geral é aberta.
+   A variável **Cloud Service** visão geral é aberta.
 
 1. Na seção **Adobe Target**, clique em **Configurar agora**.
 1. Na caixa de diálogo **Criar configuração**:
@@ -259,7 +259,7 @@ Quando você associa uma página à estrutura, as páginas secundárias herdam a
 
    >[!NOTE]
    >
-   Se a estrutura anexada à página ainda não tiver sido ativada, um assistente será aberto para que você também possa publicá-la.
+   Se a estrutura anexada à página ainda não tiver sido ativada, um assistente será aberto, permitindo que você também a publique.
 
 ## Resolução de Problemas de Conexão do Target {#troubleshooting-target-connection-problems}
 

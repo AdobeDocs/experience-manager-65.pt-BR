@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1910'
+source-wordcount: '1909'
 ht-degree: 12%
 
 ---
@@ -40,13 +40,13 @@ A seguir, é mostrado um extrato do site do Geometrixx; onde, por exemplo, o `Tr
 
 * Ambiente de autor
 
-   `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
+  `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
 * Ambiente de publicação
 
-   `http://localhost:4503/content/geometrixx/en/products/triangle.html`
+  `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
-   Dependendo da configuração da sua instância, o uso de `/content` pode ser opcional no ambiente de publicação.
+  Dependendo da configuração da sua instância, o uso de `/content` pode ser opcional no ambiente de publicação.
 
 ```xml
   /content
@@ -171,9 +171,11 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, an
 
       * Se você fornecer uma página **Nome** ao criar uma nova página, o AEM [validar o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostos pelo AEM e pelo JCR.
       * Na interface clássica, você **não é possível inserir caracteres inválidos** no **Nome** campo.
+
    * Clique no template que deseja usar para criar a nova página.
 
-      O modelo é usado como a base para a nova página; por exemplo, para determinar o layout básico de uma página de conteúdo.
+     O modelo é usado como a base para a nova página; por exemplo, para determinar o layout básico de uma página de conteúdo.
+
    >[!NOTE]
    >
    >Consulte [Convenções de nomenclatura da página](#page-naming-conventions).
@@ -266,27 +268,28 @@ Para mover ou renomear uma página:
 
    * **Destino**
 
-      Use o mapa de site (disponível por meio do seletor suspenso) para selecionar o local para onde a página deve ser movida.
+     Use o mapa de site (disponível por meio do seletor suspenso) para selecionar o local para onde a página deve ser movida.
 
-      Se você estiver apenas renomeando a página, ignore este campo.
+     Se você estiver apenas renomeando a página, ignore este campo.
 
    * **Mover**
 
-      Especifique a página a ser movida - geralmente, ela é preenchida por padrão, dependendo de como e onde você iniciou a ação de movimentação.
+     Especifique a página a ser movida - geralmente, ela é preenchida por padrão, dependendo de como e onde você iniciou a ação de movimentação.
 
    * **Renomear para**
 
-      O rótulo da página atual é exibido por padrão. Especifique o rótulo da nova página, se necessário.
+     O rótulo da página atual é exibido por padrão. Especifique o rótulo da nova página, se necessário.
 
    * **Ajustar**
 
-      Atualize os links na página listada que apontam para a página movida: por exemplo, se a página A tiver links para a página B, o AEM ajustará os links na página A, caso você mova a página B.
+     Atualize os links na página listada que apontam para a página movida: por exemplo, se a página A tiver links para a página B, o AEM ajustará os links na página A, caso você mova a página B.
 
-      Isso pode ser selecionado/desmarcado para cada página de referência individual.
+     Isso pode ser selecionado/desmarcado para cada página de referência individual.
 
    * **Publicar novamente**
 
-      Republicar a página de referência; novamente, isso pode ser selecionado para cada página individual.
+     Republicar a página de referência; novamente, isso pode ser selecionado para cada página individual.
+
    >[!NOTE]
    >
    >Se a página já tiver sido ativada, movê-la automaticamente a desativará. Por padrão, ele será reativado quando a movimentação for concluída, mas isso pode ser alterado ao desmarcar a opção **Republicar** para a página no campo **Mover** janela.

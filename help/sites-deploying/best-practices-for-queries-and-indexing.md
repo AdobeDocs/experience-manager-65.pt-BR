@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4614'
+source-wordcount: '4613'
 ht-degree: 7%
 
 ---
@@ -469,7 +469,7 @@ Todo o armazenamento de nós é percorrido (conforme especificado pelos caminhos
 
 2-C. O texto extraído é armazenado no sistema de arquivos em um formato assimilável pelo processo de reindexação do Oak (3a)
 
-O texto pré-extraído é identificado no CSV pela impressão digital binária. Se o arquivo binário for o mesmo, o mesmo texto pré-extraído poderá ser usado em instâncias AEM. Como o AEM Publish geralmente é um subconjunto do AEM Author, o texto pré-extraído do AEM Author também pode ser usado para reindexar o AEM Publish (supondo que o AEM Publish tenha acesso ao sistema de arquivos para os arquivos de texto extraídos).
+O texto pré-extraído é identificado no CSV pela impressão digital binária. Se o arquivo binário for o mesmo, o mesmo texto pré-extraído poderá ser usado em instâncias AEM. Como a Publicação do AEM geralmente é um subconjunto do Autor do AEM, o texto pré-extraído do Autor do AEM também pode ser usado para reindexar a Publicação do AEM (supondo que a Publicação do AEM tenha acesso ao sistema de arquivos para os arquivos de texto extraídos).
 
 O texto pré-extraído pode ser adicionado de forma incremental ao ao longo do tempo. A pré-extração de texto ignorará a extração de binários extraídos anteriormente, portanto, é prática recomendada manter o texto pré-extraído para o caso de a reindexação ocorrer novamente no futuro (supondo que o conteúdo extraído não seja muito grande. Se for, avalie o compactação do conteúdo nesse ínterim, já que o texto é bem compactado).
 

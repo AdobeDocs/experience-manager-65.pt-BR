@@ -9,7 +9,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 89f4d3cf-eb2e-4d55-8209-16ecbba03792
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5f4bbad87768cf6bd73771f9eac6e01ab3bf3309
 workflow-type: tm+mt
 source-wordcount: '6171'
 ht-degree: 0%
@@ -19,12 +19,12 @@ ht-degree: 0%
 
 # Definição das configurações de tipo de arquivo {#configuring-file-type-settings}
 
-No PDF Generator, você pode definir as configurações do aplicativo para tipos de arquivos compatíveis. No Windows, você pode definir as configurações do aplicativo para cada tipo de arquivo compatível. No UNIX e Linux, você pode definir as configurações do aplicativo para HTML-para-PDF e OpenOffice.
+No PDF Generator, é possível definir as configurações do aplicativo para tipos de arquivos compatíveis. No Windows, você pode definir as configurações do aplicativo para cada tipo de arquivo compatível. No UNIX e Linux, você pode definir as configurações do aplicativo para HTML-para-PDF e OpenOffice.
 
 Na página Definições de Tipo de Arquivo, você pode executar estas tarefas:
 
 * [Criar ou editar uma configuração de Tipo de arquivo](#create-or-edit-file-type-settings)
-* Especifique quais configurações de tipo de arquivo usar por padrão (consulte [Importação e exportação de arquivos de configuração do Gerador de PDF](https://helpx.adobe.com/aem-forms/6-2/admin-help/importing-exporting-pdf-generator-configuration.html))
+* Especifique quais configurações de tipo de arquivo usar por padrão (consulte [Importação e exportação de arquivos de configuração de PDF Generator](https://helpx.adobe.com/aem-forms/6-2/admin-help/importing-exporting-pdf-generator-configuration.html))
 * [Alterar as configurações padrão](/help/forms/using/admin-help/configuring-file-type-settings1.md#change-the-default-settings)
 * [Habilitar suporte para PDF/A](https://helpx.adobe.com/aem-forms/6-2/admin-help/enable-pdf-a-support.html)
 * [Excluir uma configuração de Tipo de arquivo](https://helpx.adobe.com/aem-forms/6-2/admin-help/enable-pdf-a-support.html)
@@ -37,7 +37,7 @@ Na página Definições de Tipo de Arquivo, você pode executar estas tarefas:
 
 Crie ou edite uma configuração de tipo de arquivo para especificar como o aplicativo lida com a conversão de tipos de arquivo compatíveis. No Windows, você pode definir as configurações do aplicativo para cada tipo de arquivo compatível. No UNIX e Linux, você pode definir as configurações do aplicativo para HTML-para-PDF e OpenOffice.
 
-1. No console de administração, clique em **[!UICONTROL Serviços]** > **[!UICONTROL Gerador de PDF]** > **[!UICONTROL Configurações de tipo de arquivo]**.
+1. No console de administração, clique em **[!UICONTROL Serviços]** > **[!UICONTROL PDF Generator]** > **[!UICONTROL Configurações de tipo de arquivo]**.
 1. Clique em Novo ou clique no nome de uma configuração.
 1. Na caixa Extensões de nome de arquivo, digite as extensões de nome de arquivo, separadas por vírgulas, para os tipos de arquivo aceitos para este aplicativo. Não inclua o ponto anterior nem um espaço entre as extensões. O padrão é `bmp,gif,jpeg,jpg,tif,tiff,png`.
 1. (Opcional) Para usar OCR (reconhecimento óptico de código) de texto em gráficos ou imagens, selecione Usar OCR e defina as seguintes opções:
@@ -50,7 +50,7 @@ Crie ou edite uma configuração de tipo de arquivo para especificar como o apli
 
 1. Preencha as informações necessárias nestas seções:
 
-   [Importação e exportação de arquivos de configuração do Gerador de PDF](https://helpx.adobe.com/aem-forms/6-2/admin-help/importing-exporting-pdf-generator-configuration.html)
+   [Importação e exportação de arquivos de configuração de PDF Generator](https://helpx.adobe.com/aem-forms/6-2/admin-help/importing-exporting-pdf-generator-configuration.html)
 
 [Configurações de exportação do Adobe PDF (somente Windows)](#adobe-pdf-export-settings-windows-only)
 
@@ -90,7 +90,7 @@ O suporte para vários tipos de arquivos pode ser personalizado. (Consulte &quot
 
 Você pode alterar o valor padrão das configurações do Adobe PDF, de segurança e do tipo de arquivo que se aplicam às fontes recém-criadas. A alteração dos padrões não afeta as configurações das fontes existentes.
 
-1. No Console de administração, clique em **[!UICONTROL Serviços > Gerador de PDF]**.
+1. No Console de administração, clique em **[!UICONTROL Serviços > PDF Generator]**.
 1. No **[!UICONTROL Configurações do Adobe PDF]**, **[!UICONTROL Configurações de tipo de arquivo]** ou **[!UICONTROL Configurações de segurança]** clique em **[!UICONTROL Definir configurações padrão]**.
 1. Selecione suas configurações padrão preferidas. Uma ou mais das seguintes configurações estão disponíveis na página Definir configurações padrão:
 
@@ -106,8 +106,8 @@ Você pode alterar o valor padrão das configurações do Adobe PDF, de seguran�
 
 É possível excluir uma configuração de tipo de arquivo que não é mais usada.
 
-1. No console de administração, clique em **[!UICONTROL Serviços > Gerador de PDF > Configurações de Tipo de Arquivo]**.
-1. Marque a caixa de seleção ao lado da configuração a ser excluída. Você pode selecionar várias origens. As configurações que não têm uma caixa de seleção ao lado delas são sempre incluídas com o Gerador de PDF e não podem ser excluídas.
+1. No console de administração, clique em **[!UICONTROL Serviços > PDF Generator > Configurações de tipo de arquivo]**.
+1. Marque a caixa de seleção ao lado da configuração a ser excluída. Você pode selecionar várias origens. As configurações que não têm uma caixa de seleção ao lado delas são sempre incluídas com PDF Generator e não podem ser excluídas.
 1. Clique em **[!UICONTROL Excluir]** e, na página Confirmação de Deleção, clique em **[!UICONTROL Excluir]**.
 
 ## Configurações de imagem para PDF {#image-to-pdf-settings}
@@ -116,7 +116,7 @@ As opções a seguir determinam como os arquivos de imagem são convertidos em P
 
 **Extensões de nome de arquivo:** Lista separada por vírgulas de extensões de nome de arquivo que podem ser convertidas.
 
-**Tentar o Conversor de Fallback:** O PDF Generator pode usar o Java™ ou o Acrobat para converter arquivos de imagem em PDF. Quando essa opção é selecionada e uma conversão falha ou atinge o limite de tempo especificado, o Gerador de PDF tenta a conversão usando o método alternativo. Se o método alternativo falhar ou atingir o tempo limite especificado, uma exceção será gravada no arquivo de log.
+**Tentar o Conversor de Fallback:** O PDF Generator pode usar o Java™ ou o Acrobat para converter arquivos de imagem em PDF. Quando essa opção estiver selecionada e uma conversão falhar ou atingir o limite de tempo limite especificado, o PDF Generator tentará a conversão usando o método alternativo. Se o método alternativo falhar ou atingir o tempo limite especificado, uma exceção será gravada no arquivo de log.
 
 >[!NOTE]
 >
@@ -148,7 +148,7 @@ Para obter instruções sobre como acessar essa configuração, consulte [Criar 
 
 As opções a seguir determinam como os arquivos de HTML são convertidos em PDF. Para obter instruções sobre como acessar essas opções, consulte [Criar ou editar configurações de tipo de arquivo](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
-**Tentar o Conversor de Fallback:** O Gerador de PDF pode usar o Java™ ou o Acrobat para converter arquivos HTML em PDF. Quando essa opção é selecionada e uma conversão falha ou atinge o limite de tempo especificado, o Gerador de PDF tenta a conversão usando o método alternativo. Se o método alternativo falhar ou atingir o tempo limite especificado, uma exceção será gravada no arquivo de log.
+**Tentar o Conversor de Fallback:** O PDF Generator pode usar o Java™ ou o Acrobat para converter arquivos HTML em PDF. Quando essa opção estiver selecionada e uma conversão falhar ou atingir o limite de tempo limite especificado, o PDF Generator tentará a conversão usando o método alternativo. Se o método alternativo falhar ou atingir o tempo limite especificado, uma exceção será gravada no arquivo de log.
 
 **Codificação padrão:** Define a codificação de entrada do texto do arquivo a partir de um menu de sistemas operacionais e alfabetos. Usa a seleção mostrada na opção Codificação padrão somente se o arquivo de origem HTML não especificar um tipo de codificação.
 
@@ -218,7 +218,7 @@ Ative estas opções para especificar a aparência da janela:
 
 ## Flash de vídeos para configurações de PDF {#flash-videos-to-pdf-settings}
 
-O Gerador de PDF suporta a capacidade de enviar um vídeo para o Flash Adobe (SWF ou arquivo FLV) e criar um arquivo PDF com um vídeo para o Flash Adobe incorporado. Essa conversão não requer que o Flash Player Adobe esteja instalado no servidor de formulários. Para obter instruções sobre como acessar essa opção, consulte [Criar ou editar configurações de tipo de arquivo](configuring-file-type-settings.md#create-or-edit-file-type-settings).
+O PDF Generator suporta a capacidade de enviar um vídeo para o Flash Adobe (SWF ou arquivo FLV) e criar um arquivo PDF com um vídeo para o Flash Adobe incorporado. Essa conversão não requer que o Flash Player Adobe esteja instalado no servidor de formulários. Para obter instruções sobre como acessar essa opção, consulte [Criar ou editar configurações de tipo de arquivo](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
 **Extensões de nome de arquivo:** Lista separada por vírgulas de extensões de nome de arquivo que podem ser convertidas.
 
@@ -230,7 +230,7 @@ XML Paper Specification (XPS) é usado na máquina de impressão do Windows. Est
 
 ## configurações do otimizador de PDF {#pdf-optimizer-settings}
 
-O Gerador de PDF suporta a capacidade de reduzir o tamanho de arquivos PDF. Se você usa todas essas configurações ou apenas algumas dependem de como você pretende usar os arquivos e das propriedades essenciais que um arquivo deve ter. Na maioria dos casos, as configurações padrão são apropriadas para eficiência máxima - economizando espaço removendo fontes incorporadas, compactando imagens e removendo itens dos arquivos que não são mais necessários.
+O PDF Generator suporta a capacidade de reduzir o tamanho dos arquivos PDF. Se você usa todas essas configurações ou apenas algumas dependem de como você pretende usar os arquivos e das propriedades essenciais que um arquivo deve ter. Na maioria dos casos, as configurações padrão são apropriadas para eficiência máxima - economizando espaço removendo fontes incorporadas, compactando imagens e removendo itens dos arquivos que não são mais necessários.
 
 >[!NOTE]
 >
@@ -263,7 +263,7 @@ Para obter instruções sobre como acessar essa configuração, consulte [Criar 
 
    >[!NOTE]
    >
-   >*Se estiver usando essa opção em combinação com **Desincorporar algumas fontes**, fontes na **A**Adicionar fontes à lista não incorporada ainda desincorpora completamente a incorporação.*
+   >*Se você estiver usando essa opção em combinação com **Desincorporar algumas fontes**, fontes na **A**Adicionar fontes à lista não incorporada ainda desincorpora completamente a incorporação.*
 
    >[!NOTE]
    >
@@ -410,7 +410,7 @@ Selecione uma das seguintes opções de compactação Flate no menu suspenso:
 
 Essas opções determinam como os arquivos do Microsoft Excel são convertidos. Para obter instruções sobre como acessar essas opções, consulte [Criar ou editar configurações de tipo de arquivo](#create-or-edit-file-type-settings).
 
-**Experimente o OpenOffice como Conversor de Fallback**: Quando essa opção é selecionada e uma conversão usando o Microsoft Excel falha ou atinge o limite de tempo especificado, o Gerador de PDF tenta a conversão usando OpenOffice. Se a conversão usando OpenOffice falhar ou atingir o limite de tempo especificado, uma exceção será gravada no arquivo de log.
+**Experimente o OpenOffice como Conversor de Fallback**: Quando essa opção estiver selecionada e uma conversão usando o Microsoft Excel falhar ou atingir o limite de tempo especificado, o PDF Generator tentará a conversão usando OpenOffice. Se a conversão usando OpenOffice falhar ou atingir o limite de tempo especificado, uma exceção será gravada no arquivo de log.
 
 **Extensões de nome de arquivo**: especifica as extensões de nome de arquivo para tipos de arquivos, separadas por vírgulas, que são aceitas para este aplicativo. O padrão é `xls,xlsx`. Não inclua um ponto anterior ou um espaço entre as extensões.
 
@@ -440,7 +440,7 @@ Essas opções determinam como os arquivos do Microsoft Excel são convertidos. 
 
 Essas opções determinam como os arquivos do Microsoft PowerPoint são convertidos. Para obter instruções sobre como acessar essas opções, consulte [Criar ou editar configurações de tipo de arquivo](/help/forms/using/admin-help/configuring-file-type-settings1.md#create-or-edit-file-type-settings).
 
-**[!UICONTROL Experimente o OpenOffice como Conversor de Fallback]**: Quando essa opção é selecionada e uma conversão usando o Microsoft PowerPoint falha ou atinge o limite de tempo especificado, o Gerador de PDF tenta a conversão usando OpenOffice. Se a conversão usando OpenOffice falhar ou atingir o limite de tempo especificado, uma exceção será gravada no arquivo de log.
+**[!UICONTROL Experimente o OpenOffice como Conversor de Fallback]**: Quando essa opção estiver selecionada e uma conversão usando o Microsoft PowerPoint falhar ou atingir o limite de tempo limite especificado, o PDF Generator tentará a conversão usando o OpenOffice. Se a conversão usando OpenOffice falhar ou atingir o limite de tempo especificado, uma exceção será gravada no arquivo de log.
 
 **[!UICONTROL Extensões de nome de arquivo]**: especifica as extensões de nome de arquivo para tipos de arquivos, separadas por vírgulas, que são aceitas para este aplicativo. O padrão é ppt,pptx. Não inclua um ponto anterior ou um espaço entre as extensões.
 
@@ -485,7 +485,7 @@ Essas opções determinam como os arquivos do Projeto do Microsoft são converti
 
 Essas opções determinam como os arquivos do Microsoft Word são convertidos. Para obter instruções sobre como acessar essas opções, consulte [Criar ou editar configurações de tipo de arquivo](#create-or-edit-file-type-settings).
 
-**[!UICONTROL Experimente o OpenOffice como Conversor de Fallback]**: Quando essa opção é selecionada e uma conversão usando o Microsoft Word falha ou atinge o limite de tempo especificado, o Gerador de PDF tenta a conversão usando OpenOffice. Se a conversão usando OpenOffice falhar ou atingir o limite de tempo especificado, uma exceção será gravada no arquivo de log.
+**[!UICONTROL Experimente o OpenOffice como Conversor de Fallback]**: Quando essa opção estiver selecionada e uma conversão usando o Microsoft Word falhar ou atingir o limite de tempo especificado, o PDF Generator tentará a conversão usando OpenOffice. Se a conversão usando OpenOffice falhar ou atingir o limite de tempo especificado, uma exceção será gravada no arquivo de log.
 
 **[!UICONTROL Extensões de nome de arquivo]**: especifica as extensões de nome de arquivo para tipos de arquivos, separadas por vírgulas, que são aceitas para este aplicativo. O padrão é `doc,docx,rtf,txt`. Não inclua um ponto anterior ou um espaço entre as extensões.
 
@@ -573,7 +573,7 @@ Essas opções determinam como os arquivos do AutoCAD são convertidos. Para obt
 
 **[!UICONTROL Criar arquivo compatível com PDF/A-1b]**: força o uso da configuração PDF/A-1b Adobe PDF.
 
-**[!UICONTROL Converter todas as camadas]**: por padrão, o Gerador de PDF converte somente a camada padrão de arquivos do AutoCAD em PDF em vez de todas as camadas no arquivo. Selecione essa opção para converter todas as camadas do arquivo.
+**[!UICONTROL Converter todas as camadas]**: por padrão, o PDF Generator converte somente a camada padrão dos arquivos do AutoCAD em PDF em vez de todas as camadas no arquivo. Selecione essa opção para converter todas as camadas do arquivo.
 
 **[!UICONTROL Incorporar informações de escala]**: preserva as informações da escala de desenho.
 
@@ -585,7 +585,7 @@ Essas opções determinam como os arquivos do AutoCAD são convertidos. Para obt
 
 Essas opções determinam como os arquivos OpenOffice são convertidos. Para obter instruções sobre como acessar essas opções, consulte [Criar ou editar configurações de tipo de arquivo](/help/forms/using/admin-help/configuring-file-type-settings1.md#create-or-edit-file-type-settings).
 
-**Experimente o PDFMaker como conversor de fallback**: Quando essa opção é selecionada e uma conversão usando OpenOffice falha ou atinge o limite de tempo especificado, o PDF Generator tenta a conversão usando PDFMaker. Se a conversão usando o PDFMaker falhar ou atingir o tempo limite especificado, uma exceção será gravada no arquivo de log.
+**Experimente o PDFMaker como conversor de fallback**: Quando essa opção estiver selecionada e uma conversão usando OpenOffice falhar ou atingir o limite de tempo especificado, o PDF Generator tentará a conversão usando PDFMaker. Se a conversão usando o PDFMaker falhar ou atingir o tempo limite especificado, uma exceção será gravada no arquivo de log.
 
 **Extensões de nome de arquivo**: especifique as extensões de nome de arquivo para os tipos de arquivo, separados por vírgulas, que são aceitos para este aplicativo. O padrão é `odt,odp,ods,odg,odf,sxw,sxi,sxd`. Não inclua um ponto anterior ou um espaço entre as extensões.
 

@@ -2,10 +2,10 @@
 title: Headful e Headless no AEM
 description: Projetos AEM podem ser implementados em um modelo headful e headless, mas a escolha não é binária. O AEM oferece a flexibilidade para explorar as vantagens de ambos os modelos em um projeto.
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
-source-git-commit: ac70fb534a95c9eee6f8340d9b8720a607b9f79f
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '1011'
-ht-degree: 94%
+source-wordcount: '1014'
+ht-degree: 91%
 
 ---
 
@@ -19,7 +19,7 @@ O AEM oferece ferramentas eficientes para gerenciar a criação de conteúdo e s
 
 O AEM também pode ser usado para simplesmente gerenciar o conteúdo, permitindo que a apresentação e a entrega do conteúdo sejam gerenciadas por outra plataforma. Esse é o modelo “headless” de gerenciamento de conteúdo, em que os autores e desenvolvedores de conteúdo trabalham em plataformas diferentes para fornecer experiência aos consumidores de conteúdo.
 
-Mas isso não precisa ser uma escolha binária. O AEM oferece flexibilidade sem precedentes, permitindo explorar as vantagens de ambos os modelos para o seu projeto.
+Mas essa não precisa ser uma escolha binária. O AEM oferece flexibilidade sem precedentes, permitindo explorar as vantagens de ambos os modelos para o seu projeto.
 
 ![Modelos de implementação do AEM](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
 
@@ -27,7 +27,7 @@ Em um modelo com pilha completa ou headful, o conteúdo é gerenciado no reposit
 
 Em um modelo headless, o conteúdo é gerenciado no repositório do AEM, mas entregue por APIs, como REST e GraphQL, a outro sistema para renderizar o conteúdo da experiência do usuário. Neste modelo, o conteúdo é criado no AEM, mas a estilização, a apresentação e a entrega acontecem em outra plataforma.
 
-Aplicativos de página única (SPAs) geralmente são o destino para o conteúdo entregue de forma headless pelo AEM. No entanto, estes SPAs não têm de ser totalmente externos ao AEM. O AEM permite decidir em que grau os SPAs estão integrados ao AEM. Vamos ver um exemplo.
+Aplicativos de página única (SPAs) geralmente são o destino para o conteúdo entregue de forma headless pelo AEM. No entanto, esses SPA não precisam ser totalmente externos ao AEM. AEM permite que você decida em que grau seu SPA é integrado ao AEM. Vamos ver um exemplo.
 
 ## Exemplo de loja virtual {#web-shop-example}
 

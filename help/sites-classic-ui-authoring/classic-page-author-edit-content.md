@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1836'
+source-wordcount: '1832'
 ht-degree: 13%
 
 ---
@@ -83,7 +83,7 @@ Para inserir um novo componente:
 
    Dependendo do ambiente de produção, essas opções podem ser diferentes. Para obter detalhes completos sobre componentes, consulte [Componentes padrão](/help/sites-classic-ui-authoring/classic-page-author-default-components.md).
 
-1. Insira o componente desejado na página. Em seguida, clique duas vezes no parágrafo. Uma janela é aberta permitindo configurar seu parágrafo e adicionar conteúdo.
+1. Insira o componente desejado na página. Em seguida, clique duas vezes no parágrafo. Uma janela é aberta, permitindo configurar seu parágrafo e adicionar conteúdo.
 
 ### Inserir um componente usando o Localizador de conteúdo {#inserting-a-component-using-the-content-finder}
 
@@ -213,7 +213,7 @@ Há dois ícones na borda inferior do sidekick que são importantes para visuali
 
   ![Ícone de edição indicado por um lápis.](do-not-localize/chlimage_1-6.png)
 
-* O ícone de lupa permite selecionar o modo de visualização, em que a página é exibida como será vista no ambiente de publicação (às vezes, também é necessária uma atualização de página):
+* O ícone de lupa permite selecionar o modo de visualização, em que a página é exibida como será vista no ambiente de publicação (às vezes, também é necessária uma atualização da página):
 
   ![Ícone do modo de visualização indicado por um símbolo de lupa.](do-not-localize/chlimage_1-7.png)
 

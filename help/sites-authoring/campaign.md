@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2758'
+source-wordcount: '2755'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Ao criar conteúdo do Adobe Campaign no AEM, você deve vincular a um serviço d
 
 Há dois casos possíveis:
 
-* O conteúdo pode ser sincronizado com um delivery do Adobe Campaign. Isso permite usar conteúdo de AEM em um delivery.
+* O conteúdo pode ser sincronizado com um delivery do Adobe Campaign. Isso permite usar o conteúdo AEM em um delivery.
 * (Somente no Adobe Campaign Classic) O conteúdo pode ser enviado diretamente para o Adobe Campaign, que gera automaticamente um novo delivery de email. Esse modo tem limitações.
 
 As instruções detalhadas estão descritas neste documento.
@@ -159,7 +159,6 @@ Consulte [Componentes do Adobe Campaign](/help/sites-authoring/adobe-campaign-co
 >* Somente os campos do Adobe Campaign **Perfis** targeting dimension são considerados.
 >* Ao visualizar Propriedades de **Sites**, você não tem acesso aos campos de contexto do Adobe Campaign. É possível acessá-los diretamente do email ao editar.
 
-
 Para inserir personalização:
 
 1. Inserir um novo **Informativo** > **Texto e personalização (Campanha)** componente arrastando-o para a página.
@@ -176,7 +175,6 @@ Para inserir personalização:
    >
    >* Os campos de contexto disponíveis correspondem aos **Perfis** targeting dimension no Adobe Campaign.
    >* Consulte [Vinculação de uma página do AEM a um email do Adobe Campaign](#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard).
-
    >
    >**Para o Adobe Campaign Classic:**
    >
@@ -184,7 +182,6 @@ Para inserir personalização:
    >
    >* Para adicionar ou ocultar elementos de personalização, consulte [Gerenciamento de campos e blocos de personalização](/help/sites-administering/campaignonpremise.md#managing-personalization-fields-and-blocks).
    >* **Importante**: todos os campos da tabela de seed também devem estar na tabela de recipients (ou tabela de contatos correspondente).
-
 
 1. Insira texto digitando. Insira campos de contexto ou blocos de personalização clicando nos componentes do Adobe Campaign e selecionando-os. Quando terminar, marque a marca de seleção.
 
@@ -235,6 +232,7 @@ No Adobe Campaign Classic:
 ![chlimage_1-34](assets/chlimage_1-34a.png)
 
 >[!NOTE]
+>
 O conteúdo não aprovado pode ser sincronizado com um delivery no Adobe Campaign, mas o delivery não pode ser executado. Somente o conteúdo aprovado pode ser enviado por meio de deliveries do Campaign.
 
 ## Vinculação do AEM ao Adobe Campaign Standard e ao Adobe Campaign Classic {#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic}
@@ -258,6 +256,7 @@ Isso permite entregar o conteúdo. Você verá se um boletim informativo está v
 ![chlimage_1-35](assets/chlimage_1-35a.png)
 
 >[!NOTE]
+>
 Se um boletim informativo estiver vinculado a vários deliveries, o número de deliveries vinculados (mas nem todas as IDs são exibidas).
 
 Para vincular uma página criada no AEM com um email do Adobe Campaign:
@@ -273,6 +272,7 @@ Para vincular uma página criada no AEM com um email do Adobe Campaign:
 1. Selecionar **Vincular a um conteúdo do Adobe Experience Manager** na barra de ferramentas para acessar a lista de conteúdos disponíveis no AEM.
 
    >[!NOTE]
+   >
    Se a variável **Vincular a uma Adobe Experience Manager** não aparecer na barra de ações, verifique se a opção **Modo de edição de conteúdo** está configurado corretamente definido como **Adobe Experience Manager** nas propriedades de email.
 
    ![chlimage_1-38](assets/chlimage_1-38a.png)
@@ -287,6 +287,7 @@ Para vincular uma página criada no AEM com um email do Adobe Campaign:
    * Qualquer conteúdo já vinculado a um delivery.
 
    >[!NOTE]
+   >
    Por padrão, o conteúdo que já está sincronizado com um delivery fica oculto. No entanto, você pode exibi-lo e usá-lo. Por exemplo, se você deseja usar o conteúdo como um template para vários deliveries.
 
    Quando o email é vinculado a um conteúdo AEM, o conteúdo não pode ser editado no Adobe Campaign.
@@ -295,8 +296,11 @@ Para vincular uma página criada no AEM com um email do Adobe Campaign:
 1. Execute o delivery do email. Durante a análise de delivery, a versão mais atualizada do conteúdo AEM é recuperada.
 
    >[!NOTE]
+   >
    Se o conteúdo for atualizado no AEM enquanto estiver vinculado a um email, ele será atualizado automaticamente no Adobe Campaign durante a análise. A sincronização também pode ser executada manualmente usando **Atualizar conteúdo do Adobe Experience Manager** na barra de ação de conteúdo.
+   >
    É possível cancelar o link entre um email e um conteúdo AEM usando **Excluir o link com o conteúdo do Adobe Experience Manager** na barra de ação de conteúdo. Esse botão só estará disponível se um conteúdo já estiver vinculado ao delivery. Para vincular um conteúdo diferente a um delivery, é necessário excluir o link do conteúdo atual antes de poder estabelecer um novo link.
+   >
    Quando o link é excluído, o conteúdo local é mantido e se torna editável no Adobe Campaign. Se você vincular novamente o conteúdo depois de modificá-lo, todas as alterações serão perdidas.
 
 ### Sincronização do conteúdo criado no AEM com um delivery do Adobe Campaign Classic {#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic}
@@ -315,8 +319,11 @@ No AEM, se um informativo estiver vinculado a um único delivery, o código do d
 ![chlimage_1-39](assets/chlimage_1-39a.png)
 
 >[!NOTE]
+>
 Se o informativo estiver vinculado a vários deliveries, o número de deliveries vinculados (mas não todas as IDs serão exibidas).
+>
 [!NOTE]
+>
 A etapa Fluxo de trabalho **Publicar no Adobe Campaign** está obsoleto no AEM 6.1. Essa etapa era parte da integração do AEM 6.0 com o Adobe Campaign e não é mais necessária.
 
 Para sincronizar o conteúdo criado no AEM com um delivery do Adobe Campaign:
@@ -328,6 +335,7 @@ Para sincronizar o conteúdo criado no AEM com um delivery do Adobe Campaign:
 1. Selecionar **Sincronizar** na barra de ferramentas para acessar a lista de conteúdos disponíveis no AEM.
 
    >[!NOTE]
+   >
    Se a variável **Sincronizar** não aparecer na barra de ferramentas do delivery, verifique se a opção **Modo de edição de conteúdo** O campo está configurado corretamente no **AEM** selecionando **Propriedades** > **Avançado**.
 
    ![chlimage_1-41](assets/chlimage_1-41a.png)
@@ -342,6 +350,7 @@ Para sincronizar o conteúdo criado no AEM com um delivery do Adobe Campaign:
    * Qualquer conteúdo já vinculado a um delivery.
 
    >[!NOTE]
+   >
    Por padrão, o conteúdo que já está sincronizado com um delivery fica oculto. No entanto, você pode exibi-lo e usá-lo. Por exemplo, se você deseja usar o conteúdo como um template para vários deliveries.
 
    ![chlimage_1-42](assets/chlimage_1-42a.png)
@@ -351,9 +360,9 @@ Para sincronizar o conteúdo criado no AEM com um delivery do Adobe Campaign:
 1. Execute o delivery. Durante a análise de delivery, a versão mais atualizada do conteúdo do AEM é recuperada.
 
    >[!NOTE]
+   >
    * Depois que a entrega e o conteúdo são sincronizados, o conteúdo da entrega no Adobe Campaign se torna somente leitura. O assunto do email e seu conteúdo não podem mais ser modificados.
    * Se o conteúdo for atualizado no AEM enquanto estiver vinculado a um delivery no Adobe Campaign, ele será atualizado automaticamente no delivery durante a análise do delivery. A sincronização também pode ser executada manualmente usando o **Atualizar conteúdo agora** botão.
    * Você pode cancelar a sincronização entre um delivery e o conteúdo AEM usando o **Dessincronizar** botão. Isso só estará disponível se um conteúdo já estiver sincronizado com o delivery. Para sincronizar um conteúdo diferente com um delivery, você deve cancelar a sincronização do conteúdo atual antes de poder estabelecer um novo link.
    * Se dessincronizado, o conteúdo local é mantido e se torna editável no Adobe Campaign. Se você ressincronizar o conteúdo depois de modificá-lo, perderá todas as alterações.
    * Para deliveries recorrentes e contínuos, a sincronização com o conteúdo AEM é interrompida toda vez que o delivery é executado.
-

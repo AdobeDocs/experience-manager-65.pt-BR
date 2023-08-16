@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 444c522e-2f33-4f41-846c-8d317e799659
 docset: aem65
 exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '313'
 ht-degree: 71%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 71%
 | AEM 6.5 | Este artigo |
 
 
-A integração do Adobe Analytics e do AEM permite rastrear a atividade da página da Web:
+Integrar o Adobe Analytics e o AEM permite rastrear a atividade da página da Web:
 
 * Uma configuração do Adobe Analytics permite que o AEM faça autenticação com o Adobe Analytics.
 * Uma estrutura identifica os dados enviados para o conjunto de relatórios do Adobe Analytics.

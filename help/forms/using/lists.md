@@ -8,9 +8,9 @@ discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '6908'
+source-wordcount: '6913'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Os fragmentos de documento são partes/componentes reutilizáveis de uma corresp
 
 * **Texto**: um ativo de texto é um conteúdo que consiste em um ou mais parágrafos de texto. Um parágrafo pode ser estático ou dinâmico.
 * **Lista**: Lista é um grupo de fragmentos de documento, incluindo texto, listas, condições e imagens. A ordem dos elementos da lista pode ser fixa ou editável. Ao criar uma correspondência, você pode usar alguns ou todos os elementos da lista para replicar um padrão reutilizável de elementos.
-* **Condição**: As condições permitem definir qual conteúdo é incluído no momento da criação da correspondência, com base nos dados fornecidos. A condição é descrita em termos de variáveis de controle. Uma variável de controle pode ser um elemento do dicionário de dados ou um espaço reservado.
+* **Condição**: As condições permitem definir qual conteúdo é incluído no momento da criação de correspondência, com base nos dados fornecidos. A condição é descrita em termos de variáveis de controle. Uma variável de controle pode ser um elemento do dicionário de dados ou um espaço reservado.
 * **Fragmento de layout**: um fragmento de layout é um layout que pode ser usado com uma ou mais letras. Um fragmento de layout é usado para criar padrões repetíveis, especialmente tabelas dinâmicas. O layout pode conter campos de formulário típicos, como &quot;Endereço&quot; e &quot;Número de referência&quot;. Também contém subformulários vazios que indicam áreas de destino. Os layouts (XDPs) são criados no Designer e, em seguida, são carregados no AEM Forms.
 
 ## Texto {#text}
@@ -76,7 +76,7 @@ A Solução de gerenciamento de correspondência é compatível com dois tipos d
    ![Barra de ferramentas Parágrafo](assets/fonteditingtoolbar.png)
 
    Barra de ferramentas Parágrafo
-   [ ![Barra de ferramentas Alinhamento](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png)Barra de ferramentas Alinhamento
+   [![Barra de ferramentas Alinhamento](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png)Barra de ferramentas Alinhamento
 
    ![Barra de ferramentas Listagem](assets/bulleteditingtoolbar.png)
 
@@ -176,7 +176,7 @@ O recurso Localizar e substituir permite procurar (e substituir) qualquer cadeia
 
 >[!NOTE]
 >
->Se você inserir qualquer caractere especial na caixa de texto Localizar, a opção Palavra inteira será desativada.
+>Se você digitar qualquer caractere especial na caixa de texto Localizar, a opção Palavra Inteira ficará desativada.
 
 **Reg ex:** Pesquisar usando expressões regulares. Por exemplo, a seguinte expressão regular pesquisa endereços de email em um módulo de texto:
 
@@ -461,19 +461,19 @@ Ao lidar com uma combinação de datas, como startDate - endDate, use um único 
 
 Quando um layout contém muitos campos e áreas de destino mapeados para elementos XML únicos, use a vinculação no nível do formulário e crie um nó separado para cada elemento. Os campos vinculados no nível do formulário são ignorados ao mapear dados no Gerenciamento de correspondência.
 
-#### Não usar áreas de destino do subformulário em uma página principal {#do-not-use-subform-target-areas-in-a-master-page}
+#### Não usar áreas de destino de subformulário em uma página mestra {#do-not-use-subform-target-areas-in-a-master-page}
 
-As áreas de público-alvo do subformulário em uma página principal não estão visíveis na interface do usuário Gerenciar ativos e os dados não podem ser mapeados para elas.
+As áreas de destino do subformulário em uma página mestra não estão visíveis na interface do usuário Gerenciar ativos e os dados não podem ser mapeados para elas.
 
 #### Escolha de posições e tipos apropriados para áreas de destino {#choosing-appropriate-positions-and-types-for-target-areas}
 
 Ao criar o layout, tenha cuidado ao escolher subformulários. Se o layout contiver um único subformulário, ele poderá ser um tipo com fluxo. Depois de posicionar campos no subformulário, você pode envolvê-lo em outro subformulário para que o subformulário inserido também flua e o layout não seja perturbado.
 
-#### Inserção de campos em páginas principais {#placing-fields-on-master-pages}
+#### Inserção de campos em páginas-mestre {#placing-fields-on-master-pages}
 
-Observe o seguinte ao colocar um campo em uma página principal:
+Observe o seguinte ao colocar um campo em uma página-mestre:
 
-* Definir a vinculação de campos de página principais para Usar dados globais
+* Definir a associação dos campos da página mestra como Usar dados globais
 * Não coloque o campo diretamente abaixo da PageArea raiz da página principal.
 * Vincule o campo em um subformulário nomeado e verifique se a vinculação do subformulário nomeado está definida como Usar nome.
 
@@ -527,7 +527,7 @@ Para obter mais informações sobre criação de layouts, consulte [Ajuda do Des
 1. Crie um fragmento de layout com base no XDP estático. A guia Table das propriedades exibe que a tabela é estática (campo Configuration For ). O número de linhas (1) e colunas (3) é derivado do XDP/Fragmento de layout.
 
    Você pode alterar o número de colunas e linhas aqui. De acordo com o que você escolhe nesta tela, o número de linhas e colunas de uma tabela estática permanece fixo na letra criada com este layout.
-   [ ![Criar uma tela de fragmento de layout](assets/statictableproperties.png)](assets/statictableproperties-1.png)
+   [![Criar uma tela de fragmento de layout](assets/statictableproperties.png)](assets/statictableproperties-1.png)
 
 1. Criar uma correspondência usando ambos os fragmentos de layout nela. Ao inserir o XDP dinâmico na correspondência, defina a vinculação de seus campos para os elementos de coleção do dicionário de dados.
 

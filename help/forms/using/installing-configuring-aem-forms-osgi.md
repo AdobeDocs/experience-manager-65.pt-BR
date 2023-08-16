@@ -10,9 +10,9 @@ discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1882'
+source-wordcount: '1881'
 ht-degree: 6%
 
 ---
@@ -33,7 +33,7 @@ O AEM Forms é uma plataforma poderosa de nível empresarial e a captura de dado
 
 ## Topologia de implantação {#deployment-topology}
 
-O pacote complementar do AEM Forms é um aplicativo implantado no AEM. Você precisa de, no mínimo, um Autor do AEM e uma instância de Publicação do AEM para executar os recursos de captura de dados do AEM Forms. Sugere-se a seguinte topologia para executar os recursos de captura de dados do AEM Forms AEM Forms. Para obter informações detalhadas sobre a topologia, consulte [Arquitetura e topologias de implantação do AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+O pacote complementar do AEM Forms é um aplicativo implantado no AEM. Você precisa de, no mínimo, um Autor do AEM e uma instância de publicação do AEM para executar os recursos de captura de dados do AEM Forms. Sugere-se a seguinte topologia para executar os recursos de captura de dados do AEM Forms AEM Forms. Para obter informações detalhadas sobre a topologia, consulte [Arquitetura e topologias de implantação do AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
 ![topologia recomendada](assets/recommended-topology.png)
 
@@ -99,7 +99,6 @@ Antes de começar a instalar e configurar o recurso de captura de dados do AEM F
 >* Se o OpenSSL já estiver instalado no servidor, atualize-o para a versão mais recente.
 >* Crie os symlinks libcurl.so, libcrypto.so e libssl.so apontando para a versão mais recente das bibliotecas libcurl, libcrypto e libssl, respectivamente.
 >
-
 
 * Instale o seguinte pacote de 64 bits a partir da mídia de instalação:
 
@@ -226,7 +225,7 @@ Para usar o Adobe Sign com o AEM Forms, [Integrar o Adobe Sign com o AEM Forms](
 
 #### Configurar Adobe Analytics {#configure-adobe-analytics}
 
-O AEM Forms integra-se ao Adobe Analytics, permitindo capturar e rastrear métricas de desempenho dos formulários e documentos publicados. O objetivo por trás da análise dessas métricas é tomar decisões informadas com base em dados sobre as alterações necessárias para tornar os formulários ou documentos mais utilizáveis.
+O AEM Forms integra-se ao Adobe Analytics, o que permite capturar e rastrear as métricas de desempenho dos formulários e documentos publicados. O objetivo por trás da análise dessas métricas é tomar decisões informadas com base em dados sobre as alterações necessárias para tornar os formulários ou documentos mais utilizáveis.
 
 Para usar o Adobe Analytics com o AEM Forms, consulte [Configuração de análises e relatórios](/help/forms/using/configure-analytics-forms-documents.md).
 

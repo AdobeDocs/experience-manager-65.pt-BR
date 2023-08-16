@@ -4,10 +4,10 @@ description: Entenda como as variações podem tornar o conteúdo headless no AE
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2428'
-ht-degree: 96%
+source-wordcount: '2422'
+ht-degree: 93%
 
 ---
 
@@ -192,7 +192,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 #### Novo fragmento de conteúdo {#fragment-references-new-content-fragment}
 
-A opção **Novo fragmento de conteúdo** permitirá criar um fragmento totalmente novo. Para isso, uma variação do assistente de criação de fragmento de conteúdo será aberta no editor.
+A opção **Novo fragmento de conteúdo** O permitirá criar um fragmento completamente novo. Para isso, uma variação do assistente de criação de fragmento de conteúdo será aberta no editor.
 
 Será possível criar um novo fragmento ao:
 
@@ -400,7 +400,7 @@ Existem vários métodos de adicionar [imagens](/help/assets/content-fragments/c
 
 ### Criar uma variação {#creating-a-variation}
 
-As variações permitem selecionar o conteúdo **Principal** e alterá-lo de acordo com a finalidade (se necessário).
+As variações permitem pegar o **Principal** conteúdo e alterá-lo de acordo com a finalidade (se necessário).
 
 Para criar uma nova variação:
 

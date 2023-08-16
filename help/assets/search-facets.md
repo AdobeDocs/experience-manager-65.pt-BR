@@ -6,9 +6,9 @@ role: Admin, Developer
 feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2417'
+source-wordcount: '2416'
 ht-degree: 18%
 
 ---
@@ -45,7 +45,6 @@ Para pesquisas de texto completo, adicione o **[!UICONTROL Texto completo]** par
    >1. Exclua o `type` nó.
    >1. Do caminho `/libs/settings/dam/search/facets/assets/jcr:content/items`, copiar os nós `asset`, `directory`, `typeor`, `excludepaths`, e `searchtype` ao caminho mencionado na etapa 1.
    >1. Salve as alterações.
-
 
 1. No [!UICONTROL Editar Forms de pesquisa] arraste um predicado da caixa de diálogo **[!UICONTROL Selecionar predicado]** para o painel principal. Por exemplo, arrastar **[!UICONTROL Predicado da propriedade]**.
 
@@ -167,13 +166,13 @@ Semelhante à maneira como você adiciona um predicado de Propriedade ou um pred
 |---|---|---|
 | [!UICONTROL Texto completo] | Pesquisar predicado para executar uma pesquisa de texto completo em um nó de ativo inteiro. Ele é mapeado com o operador jcr:contains. Você pode especificar um caminho relativo se quiser executar uma pesquisa de texto completo em uma parte específica do nó do ativo. | <ul><li>Etiqueta</li><li>Espaço reservado</li><li>Nome da propriedade</li><li>Descrição</li></ul> |
 | [!UICONTROL Navegador de caminhos] | Pesquisar predicado para pesquisar ativos em pastas e subpastas em um caminho raiz pré-configurado | <ul><li>Espaço reservado</li><li>Caminho raiz</li><li>Descrição</li></ul> |
-| [!UICONTROL Caminho] | Use-a para filtrar os resultados no local. Você pode especificar caminhos diferentes como opções. | <ul><li>Etiqueta</li><li>Caminho </li><li>Descrição</li></ul> |
+| [!UICONTROL Caminho] | Use-a para filtrar os resultados no local. Você pode especificar caminhos diferentes como opções. | <ul><li>Etiqueta</li><li>Caminho</li><li>Descrição</li></ul> |
 | [!UICONTROL Publicar status] | Pesquisar predicado para pesquisar ativos com base no status de publicação | <ul><li>Etiqueta</li><li>Nome da propriedade</li><li>Descrição</li></ul> |
 | [!UICONTROL Data relativa] | Predicado de pesquisa para pesquisar ativos com base na data relativa de sua criação. Por exemplo, você pode configurar opções, como 2 meses atrás, 3 semanas atrás e assim por diante. | <ul><li>Etiqueta</li><li>Nome da propriedade</li><li>Data relativa</li></ul> |
 | [!UICONTROL Intervalo] | Pesquisar predicado para pesquisar ativos dentro de um intervalo especificado. No painel Pesquisar, é possível especificar valores mínimos e máximos para o intervalo. | <ul><li>Etiqueta</li><li>Nome da propriedade</li><li>Descrição</li></ul> |
 | [!UICONTROL Intervalo de datas] | Pesquisar predicado para pesquisar ativos criados em um intervalo especificado para uma propriedade de data. No painel Pesquisar, é possível especificar datas de Início e Término usando seletores de datas. | <ul><li>Etiqueta</li><li>Espaço reservado</li><li>Nome da propriedade</li><li>Texto do intervalo (de)</li><li>Texto do intervalo (até)</li><li>Descrição</li></ul> |
 | [!UICONTROL Data] | Pesquisar predicado para uma pesquisa com base em controle deslizante de ativos com base em uma propriedade de data. | <ul><li>Etiqueta</li><li>Nome da propriedade</li><li>Descrição</li></ul> |
-| [!UICONTROL Tamanho do arquivo] | Pesquisar predicado para pesquisar ativos com base em seu tamanho. É um predicado baseado em controle deslizante no qual você seleciona as opções de controle deslizante de um nó configurável. As opções padrão são definidas em /libs/dam/options/predicates/filesize no repositório CRXDE. O tamanho do arquivo é fornecido em bytes. | <ul><li>Etiqueta</li><li>Nome da propriedade</li><li>Caminho </li><li>Descrição</li></ul> |
+| [!UICONTROL Tamanho do arquivo] | Pesquisar predicado para pesquisar ativos com base em seu tamanho. É um predicado baseado em controle deslizante no qual você seleciona as opções de controle deslizante de um nó configurável. As opções padrão são definidas em /libs/dam/options/predicates/filesize no repositório CRXDE. O tamanho do arquivo é fornecido em bytes. | <ul><li>Etiqueta</li><li>Nome da propriedade</li><li>Caminho</li><li>Descrição</li></ul> |
 | [!UICONTROL Última modificação do ativo] | Pesquisar predicado para pesquisar ativos modificados recentemente | <ul><li>Nome da propriedade</li><li>Valor da propriedade</li><li>Descrição</li></ul> |
 | [!UICONTROL Publicar status] | Pesquisar predicado para pesquisar ativos com base no status de publicação | <ul><li>Etiqueta</li><li>Nome da propriedade</li><li>Descrição</li></ul> |
 | [!UICONTROL Avaliação] | Pesquisar predicado para pesquisar ativos com base em sua classificação média | <ul><li>Etiqueta</li><li>Nome da propriedade</li><li>Caminho de opção</li><li>Descrição</li></ul> |
@@ -208,4 +207,3 @@ Se você não recebeu uma função de administrador, esta é uma lista de permis
 >
 >* [Estender o recurso de pesquisa de ativos](searchx.md)
 >* [Pesquisar ativos](search-assets.md)
-

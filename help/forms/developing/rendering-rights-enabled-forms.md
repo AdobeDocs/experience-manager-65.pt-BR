@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: d4c2b2f0-613a-409d-b39b-8e37fdb96eea
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1459'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ Renderize um formulário habilitado para direitos usando a API do Forms (Java):
 
    * Criar um `ReaderExtensionSpec` usando seu construtor.
    * Especifique o alias da credencial invocando o `ReaderExtensionSpec` do objeto `setReCredentialAlias` e especifique um valor de string que represente o valor do alias.
-   * Defina cada direito de uso invocando o método correspondente pertencente ao `ReaderExtensionSpec` objeto. No entanto, você só poderá definir um direito de uso se a credencial à qual você faz referência permitir. Ou seja, você não pode definir um direito de uso se a credencial não permitir que você o defina. Por exemplo. para definir o direito de uso que permite ao usuário preencher campos de formulário e salvar o formulário, chame o `ReaderExtensionSpec` do objeto `setReFillIn` e passar `true`.
+   * Defina cada direito de uso invocando o método correspondente pertencente ao `ReaderExtensionSpec` objeto. No entanto, você só poderá definir um direito de uso se a credencial à qual você faz referência permitir. Ou seja, você não pode definir um direito de uso se a credencial não permitir sua definição. Por exemplo. para definir o direito de uso que permite ao usuário preencher campos de formulário e salvar o formulário, chame o `ReaderExtensionSpec` do objeto `setReFillIn` e passar `true`.
 
    >[!NOTE]
    >
@@ -157,7 +157,7 @@ Renderize um formulário habilitado para direitos usando a API do Forms (serviç
 
    * Criar um `ReaderExtensionSpec` usando seu construtor.
    * Especifique o alias da credencial invocando o `ReaderExtensionSpec` do objeto `setReCredentialAlias` e especifique um valor de string que represente o valor do alias.
-   * Defina cada direito de uso invocando o método correspondente pertencente ao `ReaderExtensionSpec` objeto. No entanto, você só poderá definir um direito de uso se a credencial à qual você faz referência permitir. Ou seja, você não pode definir um direito de uso se a credencial não permitir que você o defina. Para definir o direito de uso que permite ao usuário preencher campos de formulário e salvar o formulário, chame o `ReaderExtensionSpec` do objeto `setReFillIn` e passar `true`.
+   * Defina cada direito de uso invocando o método correspondente pertencente ao `ReaderExtensionSpec` objeto. No entanto, você só poderá definir um direito de uso se a credencial à qual você faz referência permitir. Ou seja, você não pode definir um direito de uso se a credencial não permitir sua definição. Para definir o direito de uso que permite ao usuário preencher campos de formulário e salvar o formulário, chame o `ReaderExtensionSpec` do objeto `setReFillIn` e passar `true`.
 
 1. Renderizar um formulário habilitado para direitos
 

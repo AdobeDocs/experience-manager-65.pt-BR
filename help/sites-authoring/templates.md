@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4871'
-ht-degree: 50%
+source-wordcount: '4864'
+ht-degree: 49%
 
 ---
 
@@ -334,7 +334,7 @@ Os seguintes aspectos de um modelo podem ser editados:
 
   Consulte a [documentação do Style System](/help/sites-authoring/style-system.md) para obter mais informações.
 
-O seletor de **Modo** na barra de ferramentas permite selecionar e editar o aspecto apropriado do modelo:
+A variável **Modo** o seletor na barra de ferramentas permite selecionar e editar o aspecto apropriado do modelo:
 
 * [Estrutura](#editingatemplatestructure)
 * [Conteúdo inicial](#editingatemplateinitialcontent)
@@ -342,7 +342,7 @@ O seletor de **Modo** na barra de ferramentas permite selecionar e editar o aspe
 
 ![chlimage_1-133](assets/chlimage_1-133.png)
 
-Já a opção **Política de página** no menu **Informações de página** permite [selecionar as políticas de página necessárias](#editingatemplatepagepolicies):
+Embora a **Política da página** opção no **Informações da página** permite que você [selecionar as políticas de página necessárias](#editingatemplatepagepolicies):
 
 ![screen_shot_2018-03-23at120604](assets/screen_shot_2018-03-23at120604.png)
 
@@ -356,7 +356,7 @@ No modo **Estrutura** você define os componentes e o conteúdo para o modelo, a
 
 * Os componentes definidos na estrutura do modelo não podem ser movidos em uma página resultante nem excluídos de qualquer página resultante.
 * Se você quiser que os autores de página possam adicionar e remover componentes, adicione um sistema de parágrafo ao modelo.
-* Os componentes podem ser desbloqueados e bloqueados novamente para permitir que você defina o [conteúdo inicial](#editingatemplateinitialcontent).
+* Os componentes podem ser desbloqueados e bloqueados novamente para permitir que você defina [conteúdo inicial](#editingatemplateinitialcontent).
 
 * As políticas de design dos componentes e página são definidas.
 
@@ -417,7 +417,7 @@ Entrada **Estrutura** modo do editor de modelos:
 
   As políticas de conteúdo (ou design) definem as propriedades de design de um componente. Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima. Elas são aplicáveis ao modelo (e às páginas criadas com o modelo).
 
-  Crie uma política de conteúdo ou selecione uma existente para um componente. Isso permite que definir os detalhes do design.
+  Crie uma política de conteúdo ou selecione uma existente para um componente. Isso permite que você defina os detalhes do design.
 
   ![chlimage_1-135](assets/chlimage_1-135.png) ![chlimage_1-136](assets/chlimage_1-136.png)
 

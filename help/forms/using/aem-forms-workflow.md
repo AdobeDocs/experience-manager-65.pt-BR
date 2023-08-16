@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3682'
+source-wordcount: '3681'
 ht-degree: 2%
 
 ---
@@ -205,7 +205,7 @@ O aplicativo de workflow que você criou está disponível como um aplicativo na
 
 ### Envio de um aplicativo do aplicativo AEM Forms {#afa}
 
-O aplicativo AEM Forms é sincronizado com um servidor do AEM Forms e permite fazer alterações nos dados do formulário, tarefas, aplicativos de fluxo de trabalho e informações salvas (rascunhos/modelos) na sua conta. Para obter mais informações, consulte [aplicativo AEM Forms](/help/forms/using/aem-forms-app.md) e artigos relacionados.
+O aplicativo AEM Forms é sincronizado com um servidor do AEM Forms e permite fazer alterações nos dados do formulário, nas tarefas, nos aplicativos de fluxo de trabalho e nas informações salvas (rascunhos/modelos) na sua conta. Para obter mais informações, consulte [aplicativo AEM Forms](/help/forms/using/aem-forms-app.md) e artigos relacionados.
 
 ### Envio de um formulário adaptável {#af}
 
@@ -231,7 +231,7 @@ Um administrador (um membro do grupo de administradores de fd) pode configurar u
    <td>Especifique o nome da Pasta monitorada. Este campo aceita somente caracteres alfanuméricos.</td>
   </tr>
   <tr>
-   <td><span class="uicontrol">Caminho </code></td>
+   <td><span class="uicontrol">Caminho</code></td>
    <td>Especifique o local físico da Pasta monitorada. Em um ambiente em cluster, use uma pasta de rede compartilhada que seja acessível a partir do nó de cluster AEM.</td>
   </tr>
   <tr>

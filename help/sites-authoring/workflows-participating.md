@@ -9,9 +9,9 @@ topic-tags: site-features
 discoiquuid: f170613c-329e-446b-9ac3-350615f1bfb6
 docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
-source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1525'
 ht-degree: 34%
 
 ---
@@ -273,7 +273,7 @@ Para abrir um item do fluxo de trabalho e exibir os detalhes:
 
 Você pode exibir detalhes da carga associada à instância do fluxo de trabalho. Inicialmente, os recursos do pacote são mostrados e, em seguida, você pode fazer drill-down para mostrar as páginas individuais.
 
-Para exibir a carga e os recursos da instância de workflow:
+Para exibir a carga e os recursos da instância de fluxo de trabalho:
 
 1. Abra a **[Caixa de entrada do AEM](/help/sites-authoring/inbox.md)**.
 1. Selecione o item do fluxo de trabalho que deseja executar a ação (toque/clique na miniatura).

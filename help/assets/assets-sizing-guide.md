@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1614'
 ht-degree: 0%
 
 ---
@@ -123,4 +123,4 @@ Se as representações forem geradas incorretamente, use a biblioteca Camera Raw
 
 ## Tamanho dos ativos {#size-of-assets}
 
-Por padrão, [!DNL Experience Manager] O permite carregar ativos do tamanho de arquivo de até 2 GB. Para fazer upload de ativos muito grandes no [!DNL Experience Manager], consulte [Configuração para carregar ativos muito grandes](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb).
+Por padrão, [!DNL Experience Manager] permite carregar ativos com tamanho de arquivo de até 2 GB. Para fazer upload de ativos muito grandes no [!DNL Experience Manager], consulte [Configuração para carregar ativos muito grandes](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb).

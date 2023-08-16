@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: b48b7631c501cea7e4ef1133a452fb6984e4547f
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3573'
+source-wordcount: '3572'
 ht-degree: 2%
 
 ---
@@ -492,9 +492,9 @@ Antes da instalação do pacote, o Gerenciador de pacotes cria automaticamente u
 >[!CAUTION]
 >
 >* Se estiver instalando ativos digitais, você deve:
-   >  Primeiro, desative o WorkflowLauncher.
-   >  Use a opção de menu Componentes do console OSGi para desativar
-   >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
+>  Primeiro, desative o WorkflowLauncher.
+>  Use a opção de menu Componentes do console OSGi para desativar
+>  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
 >* Em seguida, quando a instalação estiver concluída, reative o WorkflowLauncher.
 >
 >A desativação do WorkflowLauncher garante que a estrutura do importador do Assets não manipule (involuntariamente) os ativos durante a instalação.

@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '7149'
+source-wordcount: '7148'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,7 @@ Um administrador pode configurar uma pasta de rede, conhecida como Pasta monitor
 Você pode usar um dos seguintes métodos para criar uma Pasta monitorada no sistema de arquivos:
 
 * Ao configurar as propriedades de um nó de configuração Pasta monitorada, digite o caminho completo do diretório pai na propriedade folderPath e anexe o nome da Pasta monitorada a ser criada, como mostrado no exemplo a seguir: `C:/MyPDFs/MyWatchedFolder`
-A variável 
-`MyWatchedFolder`pasta não existe, o AEM Forms tenta criar a pasta no caminho especificado.
+A variável `MyWatchedFolder`pasta não existe, o AEM Forms tenta criar a pasta no caminho especificado.
 
 * Crie uma pasta no sistema de arquivos antes de configurar um endpoint de Pasta monitorada e forneça o caminho completo na propriedade folderPath. Para obter informações detalhadas sobre a propriedade folderPath, consulte [Propriedades da pasta monitorada](#watchedfolderproperties).
 
@@ -143,9 +142,9 @@ Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrõe
    * %R = número aleatório (entre 0 e 9)
    * %P = id do processo ou da tarefa
 
-   Por exemplo, se for 8 PM em 17 de julho de 2009 e você especificar C:/Test/WF0/failure/%Y/%M/%D/%H/, a pasta resultante será C:/Test/WF0/failure/2009/07/17/20
+  Por exemplo, se for 8 PM em 17 de julho de 2009 e você especificar C:/Test/WF0/failure/%Y/%M/%D/%H/, a pasta resultante será C:/Test/WF0/failure/2009/07/17/20
 
-   Se o caminho não for absoluto, mas relativo, a pasta será criada dentro da Pasta monitorada. O valor padrão é result/%Y/%M/%D/, que é a pasta Resultado dentro da Pasta monitorada. Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
+  Se o caminho não for absoluto, mas relativo, a pasta será criada dentro da Pasta monitorada. O valor padrão é result/%Y/%M/%D/, que é a pasta Resultado dentro da Pasta monitorada. Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
 >[!NOTE]
 >
@@ -155,11 +154,11 @@ Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrõe
 * **preserveFolderName (String):** O local onde os arquivos são armazenados após o processamento bem-sucedido. O caminho pode ser um caminho de diretório absoluto, relativo ou nulo. Você pode usar padrões de arquivo, conforme descrito em Pasta de resultados. O valor padrão é preserve/%Y/%M/%D/.
 * **batchSize (Long)**: O número de arquivos ou pastas a serem selecionados por verificação. Use para evitar uma sobrecarga no sistema; a verificação de muitos arquivos de uma vez pode causar uma falha. O valor padrão é 2.
 
-   As configurações Intervalo de pesquisa e Tamanho do lote determinam quantos arquivos a Pasta monitorada coleta em cada verificação. A pasta monitorada usa um pool de threads do Quartz para verificar a pasta de entrada. O pool de threads é compartilhado com outros serviços. Se o intervalo de verificação for pequeno, as threads examinam a pasta de entrada com frequência. Se os arquivos forem soltos com frequência na Pasta monitorada, mantenha o intervalo de verificação pequeno. Se os arquivos forem descartados com pouca frequência, use um intervalo de verificação maior para que os outros serviços possam usar as threads.
+  As configurações Intervalo de pesquisa e Tamanho do lote determinam quantos arquivos a Pasta monitorada coleta em cada verificação. A pasta monitorada usa um pool de threads do Quartz para verificar a pasta de entrada. O pool de threads é compartilhado com outros serviços. Se o intervalo de verificação for pequeno, as threads examinam a pasta de entrada com frequência. Se os arquivos forem soltos com frequência na Pasta monitorada, mantenha o intervalo de verificação pequeno. Se os arquivos forem descartados com pouca frequência, use um intervalo de verificação maior para que os outros serviços possam usar as threads.
 
-   Se houver um grande volume de arquivos sendo descartados, aumente o tamanho do lote. Por exemplo, se o serviço iniciado pelo endpoint Pasta monitorada puder processar 700 arquivos por minuto e os usuários soltarem arquivos na pasta de entrada na mesma taxa, definir o Tamanho do lote como 350 e o Intervalo de pesquisa como 30 segundos ajudará no desempenho da Pasta monitorada sem incorrer no custo de verificar a Pasta monitorada com muita frequência.
+  Se houver um grande volume de arquivos sendo descartados, aumente o tamanho do lote. Por exemplo, se o serviço iniciado pelo endpoint Pasta monitorada puder processar 700 arquivos por minuto e os usuários soltarem arquivos na pasta de entrada na mesma taxa, definir o Tamanho do lote como 350 e o Intervalo de pesquisa como 30 segundos ajudará no desempenho da Pasta monitorada sem incorrer no custo de verificar a Pasta monitorada com muita frequência.
 
-   Quando os arquivos são soltos na Pasta monitorada, ela lista os arquivos na entrada, o que pode reduzir o desempenho se a varredura estiver ocorrendo a cada segundo. O aumento do intervalo de verificação pode melhorar o desempenho. Se o volume de arquivos que está sendo descartado for pequeno, ajuste o Tamanho do lote e o Intervalo de amostragem de acordo. Por exemplo, se 10 arquivos forem descartados a cada segundo, tente definir pollInterval como 1 segundo e o Tamanho do lote como 10
+  Quando os arquivos são soltos na Pasta monitorada, ela lista os arquivos na entrada, o que pode reduzir o desempenho se a varredura estiver ocorrendo a cada segundo. O aumento do intervalo de verificação pode melhorar o desempenho. Se o volume de arquivos que está sendo descartado for pequeno, ajuste o Tamanho do lote e o Intervalo de amostragem de acordo. Por exemplo, se 10 arquivos forem descartados a cada segundo, tente definir pollInterval como 1 segundo e o Tamanho do lote como 10
 
 * **throttleOn (Booleano)**: quando essa opção é selecionada, ela limita o número de trabalhos de Pastas monitoradas que o AEM Forms processa a qualquer momento. O número máximo de trabalhos é determinado pelo valor Tamanho do Lote. O valor padrão é true. (Consulte [Sobre a limitação](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
 
@@ -173,7 +172,7 @@ Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrõe
 >Por design, os workflows são assíncronos. Mesmo que você defina o valor como false, os workflows serão iniciados no modo assíncrono.
 
 * **ativado (Booleano)**: desativa e ativa a verificação de uma Pasta monitorada. Defina ativado como verdadeiro para iniciar a verificação da Pasta monitorada. O valor padrão é true.
-* **payloadMapperFilter:** Quando uma pasta é configurada como pasta monitorada, uma estrutura de pastas é criada dentro da pasta monitorada. A estrutura tem pastas para fornecer entradas, receber saídas (resultados), salvar dados para falhas, preservar dados para processos de longa duração e salvar dados para vários estágios. A estrutura de pastas de uma Pasta monitorada pode servir como uma carga de fluxos de trabalho centrados no Forms. Um mapeador de carga útil permite definir a estrutura de uma carga que usa uma Pasta monitorada para entrada, saída e processamento. Por exemplo, se você usar o mapeador padrão, ele mapeará o conteúdo da Pasta monitorada com [carga útil]\entrada e [carga útil]\pasta de saída. Duas implementações prontas para uso do mapeador de carga estão disponíveis. Se você não tiver [uma implementação personalizada](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), use uma das implementações prontas para uso:
+* **payloadMapperFilter:** Quando uma pasta é configurada como pasta monitorada, uma estrutura de pastas é criada dentro da pasta monitorada. A estrutura tem pastas para fornecer entradas, receber saídas (resultados), salvar dados para falhas, preservar dados para processos de longa duração e salvar dados para vários estágios. A estrutura de pastas de uma Pasta monitorada pode servir como uma carga de fluxos de trabalho centrados no Forms. Um mapeador de carga permite definir a estrutura de uma carga que usa uma Pasta monitorada para entrada, saída e processamento. Por exemplo, se você usar o mapeador padrão, ele mapeará o conteúdo da Pasta monitorada com [carga útil]\entrada e [carga útil]\pasta de saída. Duas implementações prontas para uso do mapeador de carga estão disponíveis. Se você não tiver [uma implementação personalizada](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), use uma das implementações prontas para uso:
 
    * **Mapeador padrão:** Use o mapeador de carga útil padrão para manter os conteúdos de entrada e saída das pastas monitoradas em pastas de entrada e saída separadas na carga útil. Além disso, no caminho de carga de um workflow, use [carga útil]/input/ e [carga útil]/caminhos de saída para recuperar e salvar o conteúdo.
 
@@ -491,7 +490,7 @@ Para um endpoint de Pasta monitorada, os usuários podem iniciar operações de 
 
 Para endpoints de Pasta monitorada, se um trabalho exigir apenas um arquivo de entrada, o usuário poderá copiar esse arquivo para a raiz da Pasta monitorada.
 
-Se o trabalho contiver mais de um arquivo de entrada, o usuário deverá criar uma pasta fora da hierarquia de Pastas monitoradas que contenha todos os arquivos necessários. Essa nova pasta deve incluir os arquivos de entrada (e, opcionalmente, um arquivo DDX, se exigido pelo processo). Depois que a pasta do trabalho for construída, o usuário a copia para a pasta de entrada da Pasta monitorada.
+Se o trabalho contiver mais de um arquivo de entrada, o usuário deverá criar uma pasta fora da hierarquia de Pastas monitoradas que contenha todos os arquivos necessários. Essa nova pasta deve incluir os arquivos de entrada (e, opcionalmente, um arquivo DDX, se exigido pelo processo). Após a construção da pasta de trabalho, o usuário a copia para a pasta de entrada da Pasta monitorada.
 
 >[!NOTE]
 >
@@ -592,11 +591,11 @@ Os mapeamentos de parâmetros de saída também podem especificar padrões adici
 
 Se o padrão de mapeamento do parâmetro de saída terminar com &quot;File.separator&quot; (que é o separador de caminhos), uma pasta será criada e o conteúdo será copiado nessa pasta. Se o padrão não terminar com &quot;File.separator&quot;, o conteúdo (arquivo de resultado ou pasta) será criado com esse nome.
 
-## Utilização do gerador de PDF com uma pasta monitorada {#using-pdf-generator-with-a-watched-folder}
+## Uso do PDF Generator com uma pasta monitorada {#using-pdf-generator-with-a-watched-folder}
 
 Você pode configurar uma Pasta monitorada para iniciar um fluxo de trabalho, serviço ou script para processar os arquivos de entrada. Na seção a seguir, configuraremos uma Pasta monitorada para iniciar um ECMAScript. O ECMAScript usaria o PDF Generator para converter documentos do Microsoft Word (.docx) em documentos PDF.
 
-Execute as seguintes etapas para configurar uma Pasta monitorada com o Gerador de PDF:
+Execute as seguintes etapas para configurar uma Pasta monitorada com PDF Generator:
 
 1. [Criar um ECMAScript](../../forms/using/watched-folder-in-aem-forms.md#p-create-an-ecmascript-p)
 1. [Criar um fluxo de trabalho](../../forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p)
@@ -604,7 +603,7 @@ Execute as seguintes etapas para configurar uma Pasta monitorada com o Gerador d
 
 ### Criar um ECMAScript {#create-an-ecmascript}
 
-O ECMAScript usaria a API createPDF do PDF Generator para converter documentos do Microsoft Word (.docx) em documentos PDF. Execute as seguintes etapas para criar o script:
+O ECMAScript usaria a API PDF Generator createPDF para converter documentos do Microsoft Word (.docx) em documentos PDF. Execute as seguintes etapas para criar o script:
 
 1. Abra o CRXDE lite em uma janela do navegador. O URL é https://&#39;[server]:[porta]&quot;/crx/de.
 
@@ -648,7 +647,7 @@ O ECMAScript usaria a API createPDF do PDF Generator para converter documentos d
 
 1. Selecione o workflow recém-criado e clique em **Editar**. O workflow é aberto em uma nova janela.
 
-1. Exclua a etapa do fluxo de trabalho padrão. Arraste e solte a Etapa do processo do Sidekick no fluxo de trabalho.
+1. Exclua a etapa do fluxo de trabalho padrão. Arraste e solte a Etapa do processo do Sidekick para o fluxo de trabalho.
 
    ![create-a-workflow-pdf2](assets/create-a-workflow-pdf2.png)
 
@@ -674,6 +673,7 @@ inputProcessorType (String): o tipo do processo a ser iniciado. Neste tutorial, 
    * inputProcessorId (String): o comportamento da propriedade inputProcessorId é baseado no valor especificado para a propriedade inputProcessorType. Neste exemplo, o valor da propriedade inputProcessorType é workflow. Portanto, para a propriedade inputProcessorId, especifique o seguinte caminho do workflow PDFG: /etc/workflow/models/pdfg/jcr:content/model
 
    * outputFilePattern (String): padrão do arquivo de saída. Você pode especificar uma pasta ou um padrão de arquivo. Se um padrão de pasta for especificado, os arquivos de saída terão os nomes conforme descrito em workflows. Se um padrão de arquivo for especificado, os arquivos de saída terão nomes conforme descrito no padrão de arquivo.
+
    Além das propriedades obrigatórias mencionadas acima, as Pastas monitoradas também oferecem suporte a algumas propriedades opcionais. Para obter a lista e a descrição completas das propriedades opcionais, consulte [Propriedades da pasta monitorada](#watchedfolderproperties).
 
 ## Problemas conhecidos {#watched-folder-known-issues}

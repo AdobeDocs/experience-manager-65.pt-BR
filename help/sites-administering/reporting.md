@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 7e2b30a3-75ff-4735-8038-5c5391ac36f3
 docset: aem65
 exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
-source-git-commit: 429f3ee859477fb38938fd6b9706c8006623eb03
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2806'
+source-wordcount: '2804'
 ht-degree: 5%
 
 ---
@@ -101,7 +101,7 @@ Os dados podem ser classificados de acordo com uma coluna específica por:
 
 Nas colunas apropriadas, você pode selecionar **Agrupar por esta coluna** do [menu suspenso da coluna](#column-drop-down-menu). Isso agrupará os dados de acordo com cada valor distinto dentro dessa coluna. É possível selecionar mais de uma coluna a ser agrupada. A opção estará esmaecida quando os dados na coluna forem inadequados; ou seja, cada entrada é distinta e exclusiva para que nenhum grupo possa ser formado, por exemplo, a coluna ID do usuário do relatório do usuário.
 
-Depois que pelo menos uma coluna tiver sido agrupada, um gráfico de pizza de **Dados atuais** serão geradas, com base nesse agrupamento. Se várias colunas forem agrupadas, isso também será indicado no gráfico.
+Depois que pelo menos uma coluna tiver sido agrupada, um gráfico de pizza de **Dados atuais** serão gerados, com base nesse agrupamento. Se várias colunas forem agrupadas, isso também será indicado no gráfico.
 
 ![reportuser](assets/reportuser.png)
 
@@ -113,7 +113,7 @@ Nas colunas apropriadas, você também pode configurar **Configurações do filt
 
 #### Filtros {#filters}
 
-As Configurações de filtro permitem especificar os critérios para as entradas a serem exibidas. Os operadores disponíveis são:
+As Configurações de filtro permitem que você especifique os critérios para as entradas a serem exibidas. Os operadores disponíveis são:
 
 * `contains`
 * `equals`
@@ -166,13 +166,13 @@ Depois que a coleta de dados tiver começado, você poderá selecionar:
 
 * **Período**
 
-   Você pode selecionar datas de e até para os dados do relatório a serem mostrados.
+  Você pode selecionar datas de e até para os dados do relatório a serem mostrados.
 
 * **Intervalo**
 
-   Mês, Semana, Dia, Hora podem ser selecionados para a escala e agregação do relatório.
+  Mês, Semana, Dia, Hora podem ser selecionados para a escala e agregação do relatório.
 
-   Por exemplo, se os instantâneos diários estiverem disponíveis para fevereiro de 2011:
+  Por exemplo, se os instantâneos diários estiverem disponíveis para fevereiro de 2011:
 
    * Se o intervalo estiver definido como `Day`, cada instantâneo é mostrado como um valor único no gráfico.
    * Se o intervalo estiver definido como `Month`, todos os snapshots de fevereiro são agregados em um único valor (exibido como um único &quot;ponto&quot; no gráfico).
@@ -185,11 +185,11 @@ Quando os instantâneos estiverem sendo coletados, você poderá:
 
 * Uso **Concluir...** novamente para reinicializar a coleção.
 
-   **Concluir** &quot;congela&quot; a estrutura do relatório (ou seja, as colunas atribuídas ao relatório e que são agrupadas, classificadas, filtradas etc.) e começa a tirar instantâneos.
+  **Concluir** &quot;congela&quot; a estrutura do relatório (ou seja, as colunas atribuídas ao relatório e que são agrupadas, classificadas, filtradas etc.) e começa a tirar instantâneos.
 
 * Abra o **Editar** caixa de diálogo para selecionar **Sem instantâneos de dados** para encerrar a coleta até que seja necessário.
 
-   **Editar** apenas ativa ou desativa a captura de instantâneos. Se tirar instantâneos estiver ativado novamente, ele usa o estado do relatório quando foi concluído pela última vez para tirar mais instantâneos.
+  **Editar** apenas ativa ou desativa a captura de instantâneos. Se tirar instantâneos estiver ativado novamente, ele usa o estado do relatório quando foi concluído pela última vez para tirar mais instantâneos.
 
 >[!NOTE]
 >
@@ -239,29 +239,29 @@ Este é um local onde o período para coleta de snapshots para [Dados histórico
 
 * **Título**
 
-   Você pode definir seu próprio título.
+  Você pode definir seu próprio título.
 
 * **Descrição**
 
-   Você pode definir sua própria descrição.
+  Você pode definir sua própria descrição.
 
 * **Caminho raiz** (*ativo somente para determinados relatórios*)
 
-   Use essa opção para limitar o relatório a uma (sub) seção do repositório.
+  Use essa opção para limitar o relatório a uma (sub) seção do repositório.
 
 * **Processamento de relatório**
 
    * **atualização automática de dados**
 
-      Os dados do relatório serão atualizados toda vez que você atualizar a definição de relatório.
+     Os dados do relatório serão atualizados toda vez que você atualizar a definição de relatório.
 
    * **atualizar dados manualmente**
 
-      Essa opção pode ser usada para evitar atrasos causados por operações automáticas de atualização quando há um grande volume de dados.
+     Essa opção pode ser usada para evitar atrasos causados por operações automáticas de atualização quando há um grande volume de dados.
 
-      Selecionar essa opção indica que os dados do relatório devem ser atualizados manualmente quando qualquer aspecto da configuração do relatório for alterado. Também significa que, assim que você alterar qualquer aspecto da configuração, a tabela de relatório ficará em branco.
+     Selecionar essa opção indica que os dados do relatório devem ser atualizados manualmente quando qualquer aspecto da configuração do relatório for alterado. Também significa que, assim que você alterar qualquer aspecto da configuração, a tabela de relatório ficará em branco.
 
-      Quando essa opção estiver selecionada, a variável **[Carregar dados](#load-data)** será exibido (ao lado de **Editar** relatório). **Carregar dados** carregará os dados e atualizará os dados do relatório mostrados.
+     Quando essa opção estiver selecionada, a variável **[Carregar dados](#load-data)** será exibido (ao lado de **Editar** relatório). **Carregar dados** carregará os dados e atualizará os dados do relatório mostrados.
 
 * **Instantâneos**
 Você pode definir a frequência com que os instantâneos devem ser criados, diariamente, a cada hora ou não.
@@ -312,11 +312,11 @@ Significa que você pode ver, por exemplo:
 
 * Quais componentes são usados, onde.
 
-   Útil, por exemplo, ao testar.
+  Útil, por exemplo, ao testar.
 
 * Como as instâncias de um componente específico são distribuídas.
 
-   Isso pode ser interessante se páginas específicas (ou seja, &quot;páginas pesadas&quot;) estiverem com problemas de desempenho.
+  Isso pode ser interessante se páginas específicas (ou seja, &quot;páginas pesadas&quot;) estiverem com problemas de desempenho.
 
 * Identificar partes do site com alterações frequentes/menos frequentes.
 * Veja como o conteúdo da página se desenvolve ao longo do tempo.
@@ -344,33 +344,33 @@ Para gerar o relatório, você pode especificar:
 
 * **Período (horas)**
 
-   O número de horas (passadas) a serem analisadas.
+  O número de horas (passadas) a serem analisadas.
 
-   Padrão: `24`
+  Padrão: `24`
 
 * **máx. Resultados**
 
-   Número máximo de linhas de saída.
+  Número máximo de linhas de saída.
 
-   Padrão: `50`
+  Padrão: `50`
 
 * **máx. Solicitações**
 
-   Número máximo de solicitações a serem analisadas.
+  Número máximo de solicitações a serem analisadas.
 
-   Padrão: `-1` (todos)
+  Padrão: `-1` (todos)
 
 * **Endereço de e-mail**
 
-   Enviar resultados para um endereço de email.
+  Enviar resultados para um endereço de email.
 
-   Opcional; Padrão: em branco
+  Opcional; Padrão: em branco
 
 * **Executar diariamente às (hh:mm)**
 
-   Especifique um horário para que o relatório seja executado automaticamente diariamente.
+  Especifique um horário para que o relatório seja executado automaticamente diariamente.
 
-   Opcional; Padrão: em branco
+  Opcional; Padrão: em branco
 
 ![reportthealth](assets/reporthealth.png)
 
@@ -460,25 +460,25 @@ No **Definições** é possível definir:
 
 * **Título**
 
-   Seu próprio título para a coluna genérica.
+  Seu próprio título para a coluna genérica.
 
 * **Propriedade**
 
-   O nome da propriedade conforme armazenado no repositório, geralmente no perfil do usuário.
+  O nome da propriedade conforme armazenado no repositório, geralmente no perfil do usuário.
 
 * **Caminho**
 
-   Normalmente, a propriedade é retirada do `profile`.
+  Normalmente, a propriedade é retirada do `profile`.
 
 * **Tipo**
 
-   Selecionar o tipo de campo de `String`, `Number`, `Integer`, `Date`.
+  Selecionar o tipo de campo de `String`, `Number`, `Integer`, `Date`.
 
 * **Agregação Padrão**
 
-   Isso define a agregação usada por padrão se a coluna for desagrupada em um relatório com pelo menos uma coluna agrupada. Selecione a agregação necessária em `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
+  Isso define a agregação usada por padrão se a coluna for desagrupada em um relatório com pelo menos uma coluna agrupada. Selecione a agregação necessária em `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
 
-   Por exemplo, *Contagem* para um `String` campo significa que o número de caracteres distintos `String` valores é exibido para a coluna no estado agregado.
+  Por exemplo, *Contagem* para um `String` campo significa que o número de caracteres distintos `String` valores é exibido para a coluna no estado agregado.
 
 No **Estendido** guia, também é possível definir as agregações e os filtros disponíveis:
 
@@ -534,7 +534,7 @@ Como nenhuma configuração de relatório é permitida no ambiente de publicaç�
 
 >[!CAUTION]
 >
->O acesso a esses relatórios pode ser um problema de segurança; portanto, recomendamos que você configure o Dispatcher para que `/etc/reports` não está disponível para visitantes externos. Consulte a [Lista de verificação de segurança](security-checklist.md) para obter mais detalhes.
+>O acesso a esses relatórios pode ser um problema de segurança; portanto, a Adobe recomenda configurar o Dispatcher para que `/etc/reports` não está disponível para visitantes externos. Consulte a [Lista de verificação de segurança](security-checklist.md) para obter mais detalhes.
 
 ## Permissões necessárias para executar relatórios {#permissions-needed-for-running-reports}
 
@@ -547,22 +547,22 @@ Em uma instalação padrão do AEM, as seguintes permissões são predefinidas p
 
 * **Relatório do usuário**
 
-   `user administrators` - ler e gravar
+  `user administrators` - ler e gravar
 
 * **Relatório de atividades de página**
 
-   `contributors` - ler e gravar
+  `contributors` - ler e gravar
 
 * **Relatório do componente**
 
-   `contributors` - ler e gravar
+  `contributors` - ler e gravar
 
 * **Relatório de conteúdo gerado pelo usuário**
 
-   `contributors` - ler e gravar
+  `contributors` - ler e gravar
 
 * **Relatório de instâncias do fluxo de trabalho**
 
-   `workflow-users` - ler e gravar
+  `workflow-users` - ler e gravar
 
 Todos os membros da `administrators` grupo têm os direitos necessários para criar novos relatórios.

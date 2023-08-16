@@ -11,9 +11,9 @@ discoiquuid: 5855d21b-340c-4139-aabe-c3a534cedb98
 docset: aem65
 feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1312'
 ht-degree: 14%
 
 ---
@@ -40,7 +40,7 @@ Quando você [criar uma comunicação interativa nova ou editar uma existente](.
 
 ![Barra lateral](assets/sidebar-comps-2.png)
 
-**A.** Navegador do canal **B.** Navegador de conteúdo **C** Navegador de propriedades **D.** Navegador de ativos **E** Navegador de componentes **F** Navegador de fontes de dados - Modelo de dados **G.** Navegador de Fontes de dados - Conteúdo Principal
+**A.** Navegador do canal **B.** Navegador de conteúdo **C** Navegador de propriedades **D.** Navegador de ativos **E** Navegador de componentes **F** Navegador de fontes de dados - Modelo de dados **G.** Navegador de Fontes de dados - Conteúdo principal
 
 <!-- Click to enlarge
 
@@ -57,7 +57,7 @@ No navegador de conteúdo, é possível ver a hierarquia de objetos do documento
 
 * **Navegador de propriedades**
 
-   Permite editar as propriedades de um componente. As propriedades mudam de acordo com o componente. Por exemplo, para ver as propriedades do contêiner de documento: selecione um componente e toque em ![nível de campo](assets/field-level.png) > **Contêiner de documentos** e toque em ![cmppr](assets/cmppr.png).
+  Permite editar as propriedades de um componente. As propriedades mudam de acordo com o componente. Por exemplo, para ver as propriedades do contêiner de documento: selecione um componente e toque em ![nível de campo](assets/field-level.png) > **Contêiner de documentos** e toque em ![cmppr](assets/cmppr.png).
 
 * **Navegador de ativos**
 Segrega diferentes tipos de conteúdo, como fragmentos de layout, imagens, documentos, páginas e vídeos. O autor pode arrastar e soltar ativos na Comunicação interativa.
@@ -68,7 +68,7 @@ Inclui componentes que você pode usar para criar os canais de impressão e da W
 | **Componente** | **Canal de impressão** | **Canal da Web** | **Funcionalidade** |
 |---|---|---|---|
 | Gráfico | ✓ | ✓ | Adiciona um gráfico que pode ser usado em uma Comunicação interativa para representação visual de dados bidimensionais recuperados de um item de coleção de modelo de dados de formulário. |
-| Fragmento do documento | ✓ | ✓ | Permite adicionar um componente, texto, lista ou condição reutilizáveis a uma Comunicação interativa. O componente reutilizável adicionado a uma comunicação interativa pode ser baseado em modelo de dados de formulário ou sem um modelo de dados de formulário. |
+| Fragmento do documento | ✓ | ✓ | Permite adicionar um componente, texto, lista ou condição reutilizáveis a uma comunicação interativa. O componente reutilizável adicionado a uma comunicação interativa pode ser baseado em modelo de dados de formulário ou sem um modelo de dados de formulário. |
 | Imagem | ✓ | ✓ | Permite inserir uma imagem. |
 | Painel | - | ✓ | O componente Painel é um espaço reservado para agrupar outros componentes e controla como um grupo de componentes é apresentado em uma Comunicação interativa. Um componente do painel também permite fazer com que um grupo de componentes seja repetível para o usuário final, como em várias entradas necessárias para preencher credenciais educacionais. Também é uma boa prática usar um painel para cada guia de uma comunicação interativa com várias guias. |
 | Tabela | &#42; | ✓ | Adiciona uma tabela que permite organizar dados em linhas e colunas. |
@@ -144,7 +144,7 @@ A barra de ferramentas Página na parte superior fornece opções que permitem v
 
       * Descubra o que a comunicação interativa é composta.
       * Depure onde e quando está acontecendo, o que, por vezes, ajuda a resolver problemas.
-   * Target: permite ativar ou desativar componentes personalizados ou componentes prontos para uso que não estão listados na Barra lateral.
 
+   * Target: permite ativar ou desativar componentes personalizados ou componentes prontos para uso que não estão listados na Barra lateral.
 
 * Visualização: permite que você visualize a aparência da comunicação interativa ao publicá-la.

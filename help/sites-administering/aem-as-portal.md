@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 99528fda-5c8c-4034-bcbe-a4cea42f694b
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '6088'
+source-wordcount: '6086'
 ht-degree: 0%
 
 ---
@@ -562,7 +562,7 @@ Os serviços OSGi opcionais podem ser implementados para personalizar várias pa
  <tbody>
   <tr>
    <td>RequestTracker</td>
-   <td>O rastreador de solicitações é notificado sempre que o conteúdo é exibido pelo portlet. Isso permite que você acompanhe as chamadas do portlet.</td>
+   <td>O rastreador de solicitações é notificado sempre que o conteúdo é exibido pelo portlet. Isso permite que você acompanhe as invocações do portlet.</td>
   </tr>
   <tr>
    <td>InvocationContextListener</td>

@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 discoiquuid: 0bcd7ac4-3071-466d-bd11-701f35ccf5bd
 docset: aem65
 exl-id: 46c1ca14-78f6-4b33-9fdf-1b90a9875f66
-source-git-commit: d8ae63edd71c7d27fe93d24b30fb00a29332658d
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 25%
@@ -28,7 +28,7 @@ ht-degree: 25%
 >
 >Para obter mais informações sobre a resposta do Adobe a problemas de privacidade e o que isso significa para você como cliente do Adobe, consulte [Centro de privacidade do Adobe](https://www.adobe.com/br/privacy.html).
 
-O Adobe está fornecendo documentação e procedimentos (com APIs, quando disponíveis), para o administrador de privacidade do cliente ou administrador de AEM lidar com solicitações de proteção e privacidade de dados. Ele pode ajudá-lo a estar em conformidade com esses regulamentos. Os procedimentos documentados permitem que os clientes executem as solicitações normativas manualmente ou chamando APIs, quando disponíveis, de um portal ou serviço externo.
+O Adobe está fornecendo documentação e procedimentos (com APIs, quando disponíveis), para o administrador de privacidade do cliente ou administrador de AEM lidar com solicitações de proteção e privacidade de dados. Ela pode ajudá-lo a cumprir esses regulamentos. Os procedimentos documentados permitem que os clientes executem as solicitações normativas manualmente ou chamando APIs, quando disponíveis, de um portal ou serviço externo.
 
 >[!CAUTION]
 >

@@ -7,9 +7,9 @@ topic-tags: managing-checklist, introduction
 content-type: reference
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3252'
+source-wordcount: '3251'
 ht-degree: 1%
 
 ---
@@ -341,7 +341,7 @@ O desenvolvimento é uma fase crucial que requer mais do que apenas codificaçã
 
   Garantir que todos os membros da equipe e o pessoal do projeto estejam atualizados, conforme necessário.
 
-* **Documentação**.
+* **Documentação**
 
   Documentar a solução completamente; incluindo:
 

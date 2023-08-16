@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 2ad227de-68a8-446f-8c4f-a33a6f95bec8
 role: Developer
 exl-id: b3c19c82-e26f-4dc8-b846-6aec705cee08
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '2163'
 ht-degree: 0%
@@ -127,19 +127,19 @@ Crie dinamicamente um documento DDX e desmonte um documento PDF usando a API de 
 
 1. Crie o documento DDX.
 
-   * Criar um Java `DocumentBuilderFactory` ao chamar o `DocumentBuilderFactory` class&quot; `newInstance` método.
+   * Criar um Java `DocumentBuilderFactory` ao chamar o `DocumentBuilderFactory` class&#39; `newInstance` método.
    * Criar um Java `DocumentBuilder` ao chamar o `DocumentBuilderFactory` do objeto `newDocumentBuilder` método.
    * Chame o `DocumentBuilder` do objeto `newDocument` método para instanciar um `org.w3c.dom.Document` objeto.
    * Crie o elemento raiz do documento DDX chamando o `org.w3c.dom.Document` do objeto `createElement` método. Este método cria um `Element` objeto que representa o elemento raiz. Transmita um valor de string que represente o nome do elemento para a variável `createElement` método. Converter o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu `setAttribute` método. Finalmente, anexe o elemento ao elemento de cabeçalho chamando o do elemento de cabeçalho `appendChild` e transmita o objeto de elemento filho como um argumento. As linhas de código a seguir mostram essa lógica de aplicação:
-      ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
+     ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
 
-   * Crie o `PDFsFromBookmarks` ao chamar o `Document` do objeto `createElement` método. Transmita um valor de string que represente o nome do elemento para a variável `createElement` método. Converter o valor de retorno em `Element`. Defina um valor para a variável `PDFsFromBookmarks` elemento ao chamar sua `setAttribute` método. Anexe o `PDFsFromBookmarks` elemento para o `DDX` ao chamar o do elemento DDX `appendChild` método. Passe o `PDFsFromBookmarks` objeto de elemento como argumento. As linhas de código a seguir mostram essa lógica de aplicação:
+   * Crie o `PDFsFromBookmarks` ao chamar o `Document` do objeto `createElement` método. Transmita um valor de string que represente o nome do elemento para a variável `createElement` método. Converter o valor de retorno em `Element`. Defina um valor para a variável `PDFsFromBookmarks` elemento ao chamar sua `setAttribute` método. Anexe o `PDFsFromBookmarks` elemento para o `DDX` chamando o do elemento DDX `appendChild` método. Passe o `PDFsFromBookmarks` objeto de elemento como argumento. As linhas de código a seguir mostram essa lógica de aplicação:
 
-      ` Element PDFsFromBookmarks = (Element)document.createElement("PDFsFromBookmarks");  PDFsFromBookmarks.setAttribute("prefix","stmt");  root.appendChild(PDFsFromBookmarks);`
+     ` Element PDFsFromBookmarks = (Element)document.createElement("PDFsFromBookmarks");  PDFsFromBookmarks.setAttribute("prefix","stmt");  root.appendChild(PDFsFromBookmarks);`
 
    * Criar um `PDF` ao chamar o `Document` do objeto `createElement` método. Transmita um valor de string que represente o nome do elemento. Converter o valor de retorno em `Element`. Defina um valor para a variável `PDF` elemento ao chamar sua `setAttribute` método. Anexe o `PDF` elemento para o `PDFsFromBookmarks` ao chamar o `PDFsFromBookmarks` do elemento `appendChild` método. Passe o `PDF` objeto de elemento como argumento. As linhas de código a seguir mostram essa lógica de aplicação:
 
-      ` Element PDF = (Element)document.createElement("PDF");  PDF.setAttribute("source","AssemblerResultPDF.pdf");  PDFsFromBookmarks.appendChild(PDF);`
+     ` Element PDF = (Element)document.createElement("PDF");  PDF.setAttribute("source","AssemblerResultPDF.pdf");  PDFsFromBookmarks.appendChild(PDF);`
 
 1. Converta o documento DDX.
 
@@ -224,15 +224,15 @@ Crie dinamicamente um documento DDX e desmonte um documento PDF usando a API de 
    * Criar um `System.Xml.XmlElement` usando seu construtor.
    * Crie o elemento raiz do documento DDX chamando o `XmlElement` do objeto `CreateElement` método. Este método cria um `Element` objeto que representa o elemento raiz. Transmita um valor de string que represente o nome do elemento para a variável `CreateElement` método. Defina um valor para o elemento DDX chamando seu `SetAttribute` método. Por fim, anexe o elemento ao documento DDX chamando o `XmlElement` do objeto `AppendChild` método. Passe o objeto DDX como argumento. As linhas de código a seguir mostram essa lógica de aplicação:
 
-      ` System.Xml.XmlElement root = ddx.CreateElement("DDX");  root.SetAttribute("xmlns", "https://ns.adobe.com/DDX/1.0/");  ddx.AppendChild(root);`
+     ` System.Xml.XmlElement root = ddx.CreateElement("DDX");  root.SetAttribute("xmlns", "https://ns.adobe.com/DDX/1.0/");  ddx.AppendChild(root);`
 
    * Crie o do documento DDX `PDFsFromBookmarks` ao chamar o `XmlElement` do objeto `CreateElement` método. Transmita um valor de string que represente o nome do elemento para a variável `CreateElement` método. Em seguida, defina um valor para o elemento chamando seu `SetAttribute` método. Anexe o `PDFsFromBookmarks` elemento ao elemento raiz chamando o `DDX` do elemento `AppendChild` método. Passe o `PDFsFromBookmarks` objeto de elemento como argumento. As linhas de código a seguir mostram essa lógica de aplicação:
 
-      ` XmlElement PDFsFromBookmarks = ddx.CreateElement("PDFsFromBookmarks");  PDFsFromBookmarks.SetAttribute("prefix", "stmt");  root.AppendChild(PDFsFromBookmarks);`
+     ` XmlElement PDFsFromBookmarks = ddx.CreateElement("PDFsFromBookmarks");  PDFsFromBookmarks.SetAttribute("prefix", "stmt");  root.AppendChild(PDFsFromBookmarks);`
 
    * Crie o do documento DDX `PDF` ao chamar o `XmlElement` do objeto `CreateElement` método. Transmita um valor de string que represente o nome do elemento para a variável `CreateElement` método. Em seguida, defina um valor para o elemento filho chamando seu `SetAttribute` método. Anexe o `PDF` elemento para o `PDFsFromBookmarks` ao chamar o `PDFsFromBookmarks` do elemento `AppendChild` método. Passe o `PDF` objeto de elemento como argumento. As linhas de código a seguir mostram essa lógica de aplicação:
 
-      ` XmlElement PDF = ddx.CreateElement("PDF");  PDF.SetAttribute("source", "AssemblerResultPDF.pdf");  PDFsFromBookmarks.AppendChild(PDF);`
+     ` XmlElement PDF = ddx.CreateElement("PDF");  PDF.SetAttribute("source", "AssemblerResultPDF.pdf");  PDFsFromBookmarks.AppendChild(PDF);`
 
 1. Converta o documento DDX.
 
@@ -240,7 +240,7 @@ Crie dinamicamente um documento DDX e desmonte um documento PDF usando a API de 
    * Preencha o `MemoryStream` com o documento DDX usando o `XmlElement` objeto que representa o documento DDX. Chame o `XmlElement` do objeto `Save` e transmita o `MemoryStream` objeto.
    * Crie uma matriz de bytes e preencha-a com os dados localizados na `MemoryStream` objeto. O código a seguir mostra essa lógica de aplicação:
 
-      ` int bufLen = Convert.ToInt32(stream.Length);  byte[] byteArray = new byte[bufLen];  stream.Position = 0;  int count = stream.Read(byteArray, 0, bufLen);`
+     ` int bufLen = Convert.ToInt32(stream.Length);  byte[] byteArray = new byte[bufLen];  stream.Position = 0;  int count = stream.Read(byteArray, 0, bufLen);`
 
    * Criar um `BLOB` objeto. Atribua a matriz de bytes à variável `BLOB` do objeto `MTOM` campo.
 

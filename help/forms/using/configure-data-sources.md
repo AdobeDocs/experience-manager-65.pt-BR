@@ -10,9 +10,9 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2112'
+source-wordcount: '2111'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ A Integração de dados do AEM Forms permite configurar e conectar-se a diferent
 * Serviços da Web com base em SOAP
 * Serviços OData
 
-A integração de dados é compatível com OAuth2.0([Código de autorização](https://oauth.net/2/grant-types/authorization-code/), [Credenciais do cliente](https://oauth.net/2/grant-types/client-credentials/)), Autenticação básica e Autenticação de chave de API tipos prontos para uso e permite a implementação de autenticação personalizada para acessar serviços da Web. Enquanto os serviços RESTful, baseados em SOAP e OData são configurados no AEM Cloud Services, o JDBC para bancos de dados relacionais e conector para perfil de usuário AEM são configurados no console da Web AEM.
+A integração de dados é compatível com OAuth2.0([Código de autorização](https://oauth.net/2/grant-types/authorization-code/), [Credenciais do cliente](https://oauth.net/2/grant-types/client-credentials/)), Autenticação básica e Autenticação de chave de API tipos prontos para uso e permite a implementação de autenticação personalizada para acessar serviços da Web. Enquanto os serviços RESTful, baseados em SOAP e OData são configurados no AEM Cloud Service, o JDBC para bancos de dados relacionais e conector para perfil de usuário do AEM AEM são configurados no console da Web do.
 
 ## Configurar banco de dados relacional {#configure-relational-database}
 
@@ -119,11 +119,11 @@ Para definir a pasta de configurações do serviço de nuvem:
 
 ## Configurar serviços Web RESTful {#configure-restful-web-services}
 
-O serviço Web RESTful pode ser descrito usando [Especificações do Swagger](https://swagger.io/specification/) no formato JSON ou YAML em um arquivo de definição do Swagger. Para configurar o serviço Web RESTful nos serviços em nuvem do AEM, verifique se você tem o arquivo Swagger no seu sistema de arquivos ou o URL onde o arquivo está hospedado.
+O serviço Web RESTful pode ser descrito usando [Especificações do Swagger](https://swagger.io/specification/) no formato JSON ou YAML em um arquivo de definição do Swagger. Para configurar o serviço Web RESTful nos serviços em nuvem AEM, certifique-se de que você tenha o arquivo Swagger no seu sistema de arquivos ou o URL onde o arquivo está hospedado.
 
 Faça o seguinte para configurar os serviços RESTful:
 
-1. Ir para **[!UICONTROL Ferramentas > Cloud Services > Fontes de dados]**. Toque para selecionar a pasta na qual deseja criar uma configuração de nuvem.
+1. Ir para **[!UICONTROL Ferramentas > Cloud Service > Fontes de dados]**. Toque para selecionar a pasta na qual deseja criar uma configuração de nuvem.
 
    Consulte [Configurar pasta para configurações do serviço em nuvem](../../forms/using/configure-data-sources.md#cloud-folder) para obter informações sobre como criar e configurar uma pasta para configurações do cloud service.
 
@@ -169,9 +169,9 @@ Execute as seguintes etapas para configurar o cliente HTTP do modelo de dados de
 
 ## Configurar serviços da Web SOAP {#configure-soap-web-services}
 
-Os serviços da Web baseados em SOAP são descritos usando [Especificações da Web Services Description Language (WSDL)](https://www.w3.org/TR/wsdl). Para configurar o serviço da Web com base em SOAP nos serviços em nuvem do AEM, verifique se você tem o URL WSDL para o serviço da Web e faça o seguinte:
+Os serviços da Web baseados em SOAP são descritos usando [Especificações da Web Services Description Language (WSDL)](https://www.w3.org/TR/wsdl). Para configurar o serviço da Web com base em SOAP em serviços na nuvem AEM, verifique se você tem o URL WSDL para o serviço da Web e faça o seguinte:
 
-1. Ir para **[!UICONTROL Ferramentas > Cloud Services > Fontes de dados]**. Toque para selecionar a pasta na qual deseja criar uma configuração de nuvem.
+1. Ir para **[!UICONTROL Ferramentas > Cloud Service > Fontes de dados]**. Toque para selecionar a pasta na qual deseja criar uma configuração de nuvem.
 
    Consulte [Configurar pasta para configurações do serviço em nuvem](../../forms/using/configure-data-sources.md#cloud-folder) para obter informações sobre como criar e configurar uma pasta para configurações do cloud service.
 
@@ -191,14 +191,14 @@ Especifique o alias do KeyStore para o certificado X509 na **[!UICONTROL Alias d
 
 ## Configurar serviços OData {#config-odata}
 
-Um serviço OData é identificado por sua URL raiz de serviço. Para configurar um serviço OData nos serviços em nuvem do AEM, verifique se você tem um URL raiz de serviço para o serviço e faça o seguinte:
+Um serviço OData é identificado por sua URL raiz de serviço. Para configurar um serviço OData nos serviços em nuvem AEM, verifique se você tem o URL raiz do serviço para o serviço e faça o seguinte:
 
 >[!NOTE]
 >
 >Suporte ao modelo de dados de formulário [OData versão 4](https://www.odata.org/documentation/).
 >Para obter um guia passo a passo para configurar o Microsoft Dynamics 365, online ou no local, consulte [Configuração OData do Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
 
-1. Ir para **[!UICONTROL Ferramentas > Cloud Services > Fontes de dados]**. Toque para selecionar a pasta na qual deseja criar uma configuração de nuvem.
+1. Ir para **[!UICONTROL Ferramentas > Cloud Service > Fontes de dados]**. Toque para selecionar a pasta na qual deseja criar uma configuração de nuvem.
 
    Consulte [Configurar pasta para configurações do serviço em nuvem](../../forms/using/configure-data-sources.md#cloud-folder) para obter informações sobre como criar e configurar uma pasta para configurações do cloud service.
 
@@ -210,7 +210,7 @@ Um serviço OData é identificado por sua URL raiz de serviço. Para configurar 
 
    >[!NOTE]
    >
-   >Você deve selecionar o tipo de autenticação OAuth 2.0 para se conectar aos serviços do Microsoft Dynamics usando o ponto de extremidade OData como a raiz de serviço.
+   >Você deve selecionar o tipo de autenticação OAuth 2.0 para se conectar aos serviços do Microsoft Dynamics usando o ponto de extremidade OData como raiz de serviço.
 
 1. Toque **Criar** para criar a configuração de nuvem para o serviço OData.
 

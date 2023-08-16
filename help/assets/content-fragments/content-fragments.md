@@ -4,10 +4,10 @@ description: Saiba como os Fragmentos de conteúdo no Adobe Experience Manager (
 feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 93%
+source-wordcount: '1986'
+ht-degree: 92%
 
 ---
 
@@ -62,7 +62,7 @@ O número de canais de comunicação aumenta anualmente. Normalmente, os canais 
 
 No entanto, você (provavelmente) não deseja usar exatamente o mesmo conteúdo para todos os canais; é necessário otimizar o conteúdo de acordo com o canal específico.
 
-Com os Fragmentos de conteúdo é possível:
+Os fragmentos de conteúdo permitem:
 
 * Considerar como atingir públicos-alvo com eficiência em todos os canais.
 * Criar e gerenciar conteúdo editorial neutro para o canal.

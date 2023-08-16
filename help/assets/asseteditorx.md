@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Developer Tools
 exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '687'
 ht-degree: 13%
 
 ---
@@ -64,7 +64,7 @@ Os componentes de página de exemplo exigem que todos os seletores comecem com `
 
 ### FormChooser: ajustes para recursos eventualmente carregados {#formchooser-adjustments-for-eventually-loaded-resources}
 
-O Editor de ativos usa o Seletor de formulários, que permite editar recursos - neste caso, ativos - na mesma página de formulário simplesmente adicionando um seletor de formulários e o caminho do formulário para o URL do ativo.
+O Editor de ativos usa o Seletor de formulários, que permite editar recursos — neste caso, ativos — na mesma página de formulário simplesmente adicionando um seletor de formulários e o caminho do formulário para o URL do ativo.
 
 Por exemplo:
 

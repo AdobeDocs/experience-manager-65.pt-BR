@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 docset: aem65
 exl-id: 2cadd9c5-4335-48d0-8d1c-941fca717409
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2961'
+source-wordcount: '2959'
 ht-degree: 0%
 
 ---
@@ -233,7 +233,7 @@ Quando a configuração for definida, o conteúdo poderá ser baixado com um nav
 
 ### O Console de sincronização de conteúdo {#the-content-sync-console}
 
-O console de Sincronização de conteúdo lista todas as configurações de Sincronização de conteúdo no repositório (todos os nós do tipo `cq:ContentSyncConfig`) e para cada configuração permite fazer o seguinte:
+O console de Sincronização de conteúdo lista todas as configurações de Sincronização de conteúdo no repositório (todos os nós do tipo `cq:ContentSyncConfig`) e, para cada configuração, permite fazer o seguinte:
 
 * Atualize o cache.
 * Limpe o cache.

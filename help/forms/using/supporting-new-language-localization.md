@@ -2,7 +2,7 @@
 title: Suporte a novos códigos de idiomas para localização de formulários adaptáveis
 seo-title: Supporting new locales for adaptive forms localization
 description: O AEM Forms permite adicionar novas localidades para localizar formulários adaptáveis. Os locais suportados por padrão são inglês, francês, alemão e japonês.
-seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. The supported locales by default are English, French, German, and Japanese.
+seo-description: AEM Forms lets you add new locales for localizing adaptive forms. The supported locales by default are English, French, German, and Japanese.
 uuid: 7f9fab6b-8d93-46bb-8c7c-7b723d5159ea
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,9 +12,9 @@ docset: aem65
 feature: Adaptive Forms
 role: Admin
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
-source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '814'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ Para adicionar suporte para um novo local no tempo de execução dos formulário
 
 ### Adicionar uma localidade ao serviço de Localização do Guia {#add-a-locale-to-the-guide-localization-service-br}
 
-1. Ir para `https://'[server]:[port]'/system/console/configMgr`.
+1. Acesse `https://'[server]:[port]'/system/console/configMgr`.
 1. Clique para editar o **Serviço de localização do guia** componente.
 1. Adicione a localidade que deseja adicionar à lista de localidades suportadas.
 

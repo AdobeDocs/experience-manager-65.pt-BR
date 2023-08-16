@@ -12,9 +12,9 @@ discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
 feature: Upgrading
 exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '521'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 ## Visão geral {#overview}
 
-Esse recurso permite verificar as instâncias de AEM existentes quanto à sua capacidade de atualização, detectando padrões em uso que:
+Esse recurso permite verificar as instâncias AEM existentes quanto à sua capacidade de atualização, detectando padrões em uso que:
 
 1. Violam determinadas regras e são realizadas em áreas que serão afetadas ou substituídas pela atualização
 1. Use um recurso AEM 6.x ou uma API que não seja compatível com versões anteriores no AEM 6.5 e possa ser interrompida após a atualização.

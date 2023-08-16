@@ -3,9 +3,9 @@ title: Ações e recursos de fluxos de trabalho do AEM centrados em formulários
 description: Ações e recursos de fluxos de trabalho do AEM centrados em formulários em fluxos de trabalho OSGi e AEM Forms JEE
 contentOwner: khsingh
 exl-id: 505b8988-b2b3-4222-b3cb-9b3c6259fdd2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '927'
 ht-degree: 22%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 22%
 
 ## Caixa de entrada do AEM e espaço de trabalho do HTML {#aem-inbox-and-html-workspace}
 
-Você pode usar a Caixa de entrada do AEM para executar e monitorar fluxos de trabalho do AEM centrados no Forms no OSGi. Por outro lado, o Espaço de trabalho do HTML permite executar e monitorar fluxos de trabalho do AEM Forms JEE. A tabela a seguir ajuda você a entender várias ações importantes disponíveis na Caixa de entrada do AEM para fluxos de trabalho do AEM centrados no Forms no OSGi e no HTML Workspace para fluxos de trabalho do AEM Forms JEE.
+Você pode usar a Caixa de entrada do AEM para executar e monitorar fluxos de trabalho do AEM centrados no Forms no OSGi. Por outro lado, o HTML Workspace permite executar e monitorar os fluxos de trabalho do AEM Forms JEE. A tabela a seguir ajuda você a entender várias ações importantes disponíveis na Caixa de entrada do AEM para fluxos de trabalho do AEM centrados no Forms no OSGi e no HTML Workspace para fluxos de trabalho do AEM Forms JEE.
 
 <table>
  <tbody>
@@ -253,7 +253,7 @@ Os fluxos de trabalho do AEM centrados em formulários no OSGi e os fluxos de tr
    <td>Compatível</td>
   </tr>
   <tr>
-   <td>Serviço Gerador de PDF</td>
+   <td>Serviço PDF Generator</td>
    <td>Compatível</td>
    <td>Compatível</td>
   </tr>

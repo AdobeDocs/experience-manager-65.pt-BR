@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 4537c1fb-f99c-42e2-a222-b037794bdb52
 docset: aem65
 exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2139'
+source-wordcount: '2137'
 ht-degree: 2%
 
 ---
@@ -61,7 +61,7 @@ O CRXDE Lite oferece a seguinte funcionalidade:
  <tbody>
   <tr>
    <td>Barra do seletor superior</td>
-   <td>Permite alternar rapidamente entre o CRXDE Lite, o Gerenciador de pacotes e o Compartilhamento de pacotes.</td>
+   <td>Permite alternar rapidamente entre CRXDE Lite, Gerenciador de pacotes e Compartilhamento de pacotes.</td>
   </tr>
   <tr>
    <td>Widget de caminho de nó</td>

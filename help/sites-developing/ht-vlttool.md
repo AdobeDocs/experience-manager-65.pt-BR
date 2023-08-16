@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2716'
+source-wordcount: '2715'
 ht-degree: 1%
 
 ---
@@ -869,7 +869,7 @@ Cada pasta de sincronização armazena a configuração e o status em três arqu
 * `.vlt-sync.log`: arquivo de log que contém informações sobre as operações executadas durante a sincronização.
 * `.vlt-sync-filter.xml`: filtros que definem quais partes do repositório são sincronizadas. O formato desse arquivo é descrito pela variável [Execução de um check-out filtrado](#performing-a-filtered-checkout) seção.
 
-A variável `.vlt-sync-config.properties` permite configurar as seguintes propriedades:
+A variável `.vlt-sync-config.properties` file permite configurar as seguintes propriedades:
 
 **desabilitado** Ativa ou desativa a sincronização. Por padrão, esse parâmetro é definido como false para permitir a sincronização.
 

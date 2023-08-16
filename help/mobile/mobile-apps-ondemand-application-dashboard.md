@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 42a38399-f5a7-4d2f-aa6a-d409a7ec60f7
 exl-id: daafc8b8-3c01-4c97-a14b-f1b706600249
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '595'
 ht-degree: 3%
 
 ---
@@ -77,7 +77,7 @@ Cada bloco pode ser expandido para fornecer uma exibição de lista mais detalha
 
 ### O mosaico Gerenciar banners {#the-manage-banners-tile}
 
-A variável **Gerenciar banners** O bloco permite gerenciar o conteúdo de um banner. As seguintes informações são exibidas para um banner:
+A variável **Gerenciar banners** o bloco permite gerenciar o conteúdo de um banner. As seguintes informações são exibidas para um banner:
 
 * imagem
 * **TÍTULO**: nome do banner
@@ -96,7 +96,7 @@ A imagem a seguir mostra o **Gerenciar banners** mosaico no AEM Mobile Applicati
 
 ### O mosaico Gerenciar artigos {#the-manage-articles-tile}
 
-A variável **Gerenciar artigos** permite gerenciar o conteúdo de um artigo. As seguintes informações são exibidas para um artigo:
+A variável **Gerenciar artigos** o bloco permite gerenciar o conteúdo de um artigo. As seguintes informações são exibidas para um artigo:
 
 * imagem
 * **TÍTULO**: nome do artigo
@@ -115,7 +115,7 @@ A imagem a seguir mostra o **Gerenciar artigos** mosaico no AEM Mobile Applicati
 
 ### O Bloco Gerenciar Coleções {#the-manage-collections-tile}
 
-A variável **Gerenciar coleções** O bloco permite gerenciar o conteúdo de uma coleção. As seguintes informações são exibidas para uma coleção:
+A variável **Gerenciar coleções** o bloco permite gerenciar o conteúdo de uma coleção. As seguintes informações são exibidas para uma coleção:
 
 * imagem
 * **TÍTULO**: nome da coleção

@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
 exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 91%
+source-wordcount: '1138'
+ht-degree: 87%
 
 ---
 
@@ -135,7 +135,7 @@ Na caixa de diálogo de configuração apropriada, é possível selecionar os pa
 
 ### Conexão rápida no editor de fragmentos    {#quick-connection-to-fragment-editor}
 
-É possível abrir a origem do fragmento para edição (o ativo) usando o ícone **Editar** na barra de ferramentas do componente. Assim, você pode [editar e gerenciar o fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md).
+É possível abrir a origem do fragmento para edição (o ativo) usando o ícone **Editar** na barra de ferramentas do componente. Isso permitirá que você [editar e gerenciar o fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md).
 
 >[!CAUTION]
 >
@@ -145,7 +145,7 @@ Na caixa de diálogo de configuração apropriada, é possível selecionar os pa
 
 Quando um fragmento de conteúdo específico for adicionado à página, há um espaço reservado para **Arrastar os componentes aqui** entre cada parágrafo HTML (e na parte superior/inferior) do fragmento.
 
-Isso permite incluir um conteúdo [intermediário](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) adicional, isto é, entre o conteúdo do fragmento (em qualquer um dos pontos disponíveis), sem precisar alterar o fragmento raiz.
+Isso permite adicionar conteúdo extra [intermediário (ou seja, conteúdo intermediário)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) o conteúdo do fragmento (em qualquer um dos pontos disponíveis), sem precisar alterar o fragmento raiz.
 
 Quanto ao conteúdo intermediário, é possível:
 

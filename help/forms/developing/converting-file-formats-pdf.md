@@ -11,7 +11,7 @@ topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '7850'
 ht-degree: 0%
@@ -40,13 +40,13 @@ O serviço Generate PDF usa aplicativos nativos para converter os formatos de ar
 
 >[!NOTE]
 >
->O serviço Generate PDF não oferece suporte às versões de 64 bits do OpenOffice.
+O serviço Generate PDF não oferece suporte às versões de 64 bits do OpenOffice.
 
 * Adobe Photoshop® CS2 para converter PSD (somente Windows)
 
 >[!NOTE]
 >
->O Photoshop CS3 e o CS4 não têm suporte porque não são compatíveis com o Windows Server 2003 ou o Windows Server 2008.
+O Photoshop CS3 e o CS4 não têm suporte porque não são compatíveis com o Windows Server 2003 ou o Windows Server 2008.
 
 * Adobe FrameMaker® 7.2 e 8 para converter FM (somente Windows)
 * Adobe PageMaker® 7.0 para converter PMD, PM6, P65 e PM (somente para Windows)
@@ -86,7 +86,7 @@ Você pode realizar essas tarefas usando o serviço Gerar PDF:
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Gerar PDF, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+Para obter mais informações sobre o serviço Gerar PDF, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Convertendo documentos do Word em documentos do PDF {#converting-word-documents-to-pdf-documents}
 
@@ -94,11 +94,11 @@ Esta seção descreve como você pode usar a API Gerar PDF para converter progra
 
 >[!NOTE]
 >
->Para obter mais informações sobre formatos de arquivo adicionais, consulte [Adição de suporte para formatos de arquivo nativos adicionais](converting-file-formats-pdf.md#adding-support-for-additional-native-file-formats).
+Para obter mais informações sobre formatos de arquivo adicionais, consulte [Adição de suporte para formatos de arquivo nativos adicionais](converting-file-formats-pdf.md#adding-support-for-additional-native-file-formats).
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Gerar PDF, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+Para obter mais informações sobre o serviço Gerar PDF, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary-of-steps}
 
@@ -186,7 +186,6 @@ Converta um documento do Microsoft Word em um documento PDF usando a API de gera
    * Chame o `CreatePDFResult` do objeto `getLogDocument` método. Isso retorna um `com.adobe.idp.Document` objeto.
    * Chame o `com.adobe.idp.Document` do objeto `copyToFile` método para extrair o documento de log.
 
-
 **Consulte também**
 
 [Resumo das etapas](converting-file-formats-pdf.md#summary-of-steps)
@@ -207,7 +206,7 @@ Converta um documento do Microsoft Word em um documento PDF usando a API de gera
 
    >[!NOTE]
    >
-   >Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
+   Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
 
 1. Crie um cliente Generate PDF.
 
@@ -265,7 +264,7 @@ Esta seção descreve como você pode usar a API Gerar PDF para converter progra
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Gerar PDF, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+Para obter mais informações sobre o serviço Gerar PDF, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-1}
 
@@ -364,7 +363,7 @@ Converta conteúdo de HTML em um documento de PDF usando a API de geração de P
 
    >[!NOTE]
    >
-   >Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
+   Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
 
 1. Crie um cliente Generate PDF.
 
@@ -415,7 +414,7 @@ Esta seção descreve como você pode usar a API de Java Generate PDF e a API de
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Gerar PDF, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+Para obter mais informações sobre o serviço Gerar PDF, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-2}
 
@@ -515,7 +514,7 @@ Converta um documento PDF em um arquivo RTF usando a API Generate PDF (serviço 
 
    >[!NOTE]
    >
-   >Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
+   Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
 
 1. Crie um cliente Generate PDf.
 
@@ -670,7 +669,7 @@ Hierarquia de XML de script e caixa de diálogo
 
 A *arquivo XML de script* especifica uma série de etapas que direcionam o aplicativo nativo para navegar até determinados elementos de janela e fornecer respostas a esses elementos. A maioria das respostas é texto ou pressionamentos de tecla que correspondem à entrada que um usuário forneceria a um campo, caixa de combinação ou botão na caixa de diálogo correspondente.
 
-O propósito do suporte do serviço Gerar PDF para arquivos XML de script é direcionar um aplicativo nativo para imprimir um arquivo nativo. No entanto, os arquivos XML de script podem ser usados para realizar qualquer tarefa que um usuário possa executar ao interagir com as caixas de diálogo do aplicativo nativo.
+O propósito do serviço Gerar PDF para arquivos XML de script é direcionar um aplicativo nativo para imprimir um arquivo nativo. No entanto, os arquivos XML de script podem ser usados para realizar qualquer tarefa que um usuário possa executar ao interagir com as caixas de diálogo do aplicativo nativo.
 
 As etapas em um arquivo XML de script são executadas em ordem, sem nenhuma oportunidade de ramificação. O único teste condicional compatível é para tempo limite/nova tentativa, o que faz com que um script seja encerrado se uma etapa não for concluída com êxito em um período específico e após um número específico de tentativas.
 
@@ -850,7 +849,7 @@ Se você criar um script para um aplicativo nativo que não era suportado anteri
 
 >[!NOTE]
 >
->Neste contexto, entende-se por &quot;complemento&quot; o conteúdo da `appmon.[applicationname].addition.[locale].xml` arquivo. Esse arquivo especifica substituições e adições ao arquivo XML da caixa de diálogo.
+Neste contexto, entende-se por &quot;complemento&quot; o conteúdo da `appmon.[applicationname].addition.[locale].xml` arquivo. Esse arquivo especifica substituições e adições ao arquivo XML da caixa de diálogo.
 
 Também é possível modificar o arquivo XML da caixa de diálogo adicional para um aplicativo nativo com estas finalidades:
 
@@ -863,7 +862,7 @@ O nome do arquivo XML de diálogo adicional deve usar o formato `appmon.[applica
 
 >[!NOTE]
 >
->Nenhum dos aplicativos genéricos especificados no arquivo de configuração native2pdfconfig.xml tem um arquivo XML primário de diálogo. A seção [Adição ou modificação de suporte para um formato de arquivo nativo](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) descreve essas especificações.
+Nenhum dos aplicativos genéricos especificados no arquivo de configuração native2pdfconfig.xml tem um arquivo XML primário de diálogo. A seção [Adição ou modificação de suporte para um formato de arquivo nativo](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) descreve essas especificações.
 
 Você deve fazer pedidos `windowList` elementos que aparecem como filhos em uma `window` elemento. (Consulte [Ordenação dos elementos window e windowList](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements).)
 
@@ -883,7 +882,7 @@ Este procedimento explica como atualizar o arquivo de configuração do serviço
 
 >[!NOTE]
 >
->O nome do aplicativo é especificado como o valor do `GenericApp` do elemento `name` atributo. Esse valor deve corresponder exatamente ao nome especificado no script desenvolvido para esse aplicativo. Do mesmo modo, a `GenericApp` do elemento `displayName` atributo deve corresponder exatamente ao do script correspondente `expectedWindow` legenda da janela. Essa equivalência é avaliada após resolver quaisquer expressões regulares que apareçam na variável `displayName` ou `caption` atributos.
+O nome do aplicativo é especificado como o valor do `GenericApp` do elemento `name` atributo. Esse valor deve corresponder exatamente ao nome especificado no script desenvolvido para esse aplicativo. Do mesmo modo, a `GenericApp` do elemento `displayName` atributo deve corresponder exatamente ao do script correspondente `expectedWindow` legenda da janela. Essa equivalência é avaliada após resolver quaisquer expressões regulares que apareçam na variável `displayName` ou `caption` atributos.
 
 Neste exemplo, os dados de configuração padrão fornecidos com o serviço Gerar PDF foram modificados para especificar que o Notepad (não o Microsoft Word) deve ser usado para processar arquivos com a extensão de nome de arquivo .txt. Antes dessa modificação, o Microsoft Word era especificado como o aplicativo nativo que deveria processar esses arquivos.
 
@@ -983,7 +982,7 @@ Este exemplo especifica como o serviço Gerar PDF deve interagir com o Bloco de 
 * from Adobe Systems Incorporated.
 *-->
 
-<!-- This file automates printing of text files via notepad to Adobe PDF printer. In order to see the complete hierarchy we recommend using the Microsoft Spy++ which details the properties of windows necessary to write scripts. In this sample there are total of eight steps-->
+<!-- This file automates printing of text files via notepad to Adobe PDF printer. In order to see the complete hierarchy Adobe recommends using the Microsoft Spy++ which details the properties of windows necessary to write scripts. In this sample there are total of eight steps-->
 
 <application name="Notepad" version="9.0" locale="en_US" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="scripts.xsd">
 

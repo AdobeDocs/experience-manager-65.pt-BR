@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
 exl-id: add05d22-3a11-49e9-a554-2315962552d5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Para configurar uma página AEM:
 1. Navegue até a **Sites** guia.
 1. Selecione a página que precisa ser configurada para o serviço. Clique com o botão direito do mouse e selecione **Propriedades**.
 
-1. Selecionar **Cloud Services** depois **Adicionar serviço**. Selecione uma configuração na lista de configurações disponíveis.
+1. Selecionar **Cloud Service** depois **Adicionar serviço**. Selecione uma configuração na lista de configurações disponíveis.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 

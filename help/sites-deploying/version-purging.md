@@ -12,9 +12,9 @@ discoiquuid: fb4d7337-7b94-430b-80d2-f1754f823c2b
 docset: aem65
 feature: Configuring
 exl-id: 6f0b1951-bdda-475f-b6c0-bc18de082b7c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '727'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ O AEM é enviado com vários mecanismos para ajudar você a gerenciar seu reposi
 Isso pode ser configurado para limpar versões antigas quando novas versões são criadas.
 
 * o [Limpar versões](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) ferramenta É usado como parte do monitoramento e da manutenção do repositório.
-Ela permite que você intervenha para remover versões antigas de um nó, ou uma hierarquia de nós, de acordo com estes parâmetros:
+Ela permite intervir para remover versões antigas de um nó, ou uma hierarquia de nós, de acordo com estes parâmetros:
 
    * O número máximo de versões a serem mantidas no repositório.
 Quando esse número é excedido, a versão mais antiga é removida.
@@ -45,7 +45,7 @@ Quando esse número é excedido, a versão mais antiga é removida.
    * A idade máxima de qualquer versão mantida no repositório.
 Quando a idade de uma versão exceder esse valor, ela será removida do repositório.
 
-* o [Tarefa de manutenção de Remoção de Versão](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Você pode programar a tarefa de manutenção Limpeza de versão para excluir versões antigas automaticamente. Como resultado, isso minimiza a necessidade de usar manualmente as ferramentas de Limpeza de versão.
+* o [Tarefa de manutenção de Limpeza de versão](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Você pode programar a tarefa de manutenção Limpeza de versão para excluir versões antigas automaticamente. Como resultado, isso minimiza a necessidade de usar manualmente as ferramentas de Limpeza de versão.
 
 >[!CAUTION]
 >

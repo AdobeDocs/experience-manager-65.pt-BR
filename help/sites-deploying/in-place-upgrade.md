@@ -4,7 +4,7 @@ description: Saiba como executar uma atualização no local.
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: c0574b50f3504a4792405d6fcd8aa3a2e8e6c686
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1244'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Antes de executar a atualização, há várias etapas que devem ser concluídas.
 
 ## Migração do repositório de conteúdo {#content-repository-migration}
 
-Essa migração não é necessária se você estiver atualizando a partir do AEM 6.3. Para versões anteriores à 6.3, o Adobe fornece uma ferramenta que pode ser usada para migrar o repositório para a nova versão do Oak Segment Tar presente no AEM 6.3. Ele é fornecido como parte do pacote de início rápido e é obrigatório para todos os upgrades que usarão TarMK. As atualizações para ambientes que usam MongoMK não exigem migração de repositório. Para obter mais informações sobre quais são os benefícios do novo formato Tar de segmento, consulte a [Perguntas frequentes sobre a migração para o Oak Segment Tar](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
+Essa migração não é necessária se você estiver atualizando a partir do AEM 6.3. Para versões anteriores à 6.3, o Adobe fornece uma ferramenta que pode ser usada para migrar o repositório para a nova versão do Oak Segment Tar presente no AEM 6.3. Ele é fornecido como parte do pacote de início rápido e é obrigatório para todos os upgrades que usarão TarMK. As atualizações para ambientes que usam MongoMK não exigem migração de repositório. Para obter mais informações sobre quais são os benefícios do novo formato Tar de segmento, consulte a [Perguntas frequentes sobre a migração para o Oak Segment TAR](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
 
 A migração real é realizada usando o arquivo jar padrão AEM quickstart, executado com um novo `-x crx2oak` opção que executa a ferramenta crx2oak para simplificar a atualização e torná-la mais robusta.
 
@@ -53,7 +53,6 @@ A migração real é realizada usando o arquivo jar padrão AEM quickstart, exec
 >
 >* `--promote-runmode nosamplecontent`
 >
-
 
 Para determinar o comando que deve ser executado, use o seguinte comando:
 
@@ -104,7 +103,7 @@ Onde `<<YOUR_PROFILE>>` e `<<ADDITIONAL_FLAGS>>` são substituídos pelo perfil 
  </tbody>
 </table>
 
-**Onde:**
+**Em que:**
 
 * `mongo-host` é o IP do servidor MongoDB (por exemplo, 127.0.0.1)
 
@@ -124,7 +123,7 @@ Verifique os arquivos de configuração abaixo de `crx-quickstart/install` pasta
 
 **Uma observação sobre armazenamentos de dados:**
 
-Enquanto `FileDataStore` O é o novo padrão para instalações do AEM 6.3. Não é necessário usar um armazenamento de dados externo. Embora o uso de um armazenamento de dados externo seja recomendado como uma prática recomendada para implantações de produção, não é um pré-requisito para a atualização. Devido à complexidade já presente na atualização do AEM, recomendamos executar a atualização sem fazer uma migração do armazenamento de dados. Se desejar, uma migração de armazenamento de dados pode ser executada posteriormente como um esforço separado.
+Enquanto `FileDataStore` O é o novo padrão para instalações do AEM 6.3. Não é necessário usar um armazenamento de dados externo. Embora o uso de um armazenamento de dados externo seja recomendado como uma prática recomendada para implantações de produção, não é um pré-requisito para a atualização. Devido à complexidade já presente na atualização do AEM, a Adobe recomenda executar a atualização sem fazer uma migração do armazenamento de dados. Se desejar, uma migração de armazenamento de dados pode ser executada posteriormente como um esforço separado.
 
 ## Solução de problemas de migração {#troubleshooting-migration-issues}
 
@@ -168,7 +167,7 @@ Para executar a atualização, é importante iniciar o AEM usando o arquivo jar 
 >
 >Se você estiver executando o Oracle Java 11 (ou versões do Java mais recentes que 8), será necessário adicionar opções adicionais à linha de comando ao iniciar o AEM. Para obter mais informações, consulte [Considerações sobre o Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 
-Observe que iniciar o AEM a partir do script de inicialização não iniciará a atualização. A maioria dos clientes inicia o AEM usando o script de inicialização e personaliza esse script de inicialização para incluir switches para configurações de ambiente, como configurações de memória, certificados de segurança etc. Por isso, recomendamos seguir este procedimento para determinar o comando de atualização adequado:
+Observe que iniciar o AEM a partir do script de inicialização não iniciará a atualização. A maioria dos clientes inicia o AEM usando o script de inicialização e personaliza esse script de inicialização para incluir switches para configurações de ambiente, como configurações de memória, certificados de segurança etc. Por esse motivo, a Adobe recomenda seguir esse procedimento para determinar o comando de atualização adequado:
 
 1. Em uma instância do AEM em execução, execute o seguinte a partir da linha de comando:
 

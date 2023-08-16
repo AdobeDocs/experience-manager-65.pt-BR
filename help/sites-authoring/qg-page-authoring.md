@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1558'
-ht-degree: 46%
+source-wordcount: '1557'
+ht-degree: 45%
 
 ---
 
@@ -75,7 +75,7 @@ Há vários aspectos para localizar uma página; você pode navegar e/ou pesquis
 
    ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
-1. Navegue até a árvore usando a [navegação estrutural do cabeçalho](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs), o que permite retornar ao local selecionado:
+1. Navegue até a árvore usando [a navegação estrutural no cabeçalho](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs), que permite retornar ao local selecionado:
 
    ![qgtap-01](assets/qgtap-01.png)
 

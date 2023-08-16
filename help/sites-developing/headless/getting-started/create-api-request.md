@@ -2,10 +2,10 @@
 title: Acesso e entrega de Fragmentos de conteúdo - Guia de início rápido do Headless
 description: Saiba como usar a API REST do AEM Assets para gerenciar fragmentos de conteúdo e a API do GraphQL para entrega headless do conteúdo do fragmento de conteúdo.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 32%
+source-wordcount: '555'
+ht-degree: 26%
 
 ---
 
@@ -17,9 +17,9 @@ Saiba como usar a API REST do AEM Assets para gerenciar fragmentos de conteúdo 
 
 [Agora que criou alguns fragmentos de conteúdo,](create-content-fragment.md) você pode usar as APIs do AEM para entregá-los de forma headless.
 
-* [A API GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) permite criar solicitações para acessar e fornecer Fragmentos de conteúdo.
+* [A API do GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) O permite criar solicitações para acessar e entregar Fragmentos de conteúdo.
    * Para usar isso, [Os endpoints do devem ser definidos e ativados no AEM](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)e, se necessário, [Interface GraphiQL instalada](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface).
-* [A API REST do Assets](/help/assets/assets-api-content-fragments.md) permite criar e modificar Fragmentos de conteúdo (e outros ativos).
+* [A API REST do Assets](/help/assets/assets-api-content-fragments.md) permite criar e modificar fragmentos de conteúdo (e outros ativos).
 
 O restante deste guia se concentra no acesso ao GraphQL e na entrega de fragmentos de conteúdo.
 

@@ -1,17 +1,13 @@
 ---
 title: Fluxo de trabalho centrado na Forms no OSGi - Referência da etapa
-seo-title: Forms-centric workflow on OSGi - Step Reference
-description: O fluxo de trabalho centrado no Forms em etapas OSGi permite criar rapidamente formulários adaptáveis com base em fluxos de trabalho.
-seo-description: Forms-centric workflow on OSGi steps allow you rapidly build adaptive forms based workflows.
-uuid: 6f791c45-0e35-4c55-9106-5340caab94b7
+description: O fluxo de trabalho centrado na Forms nas etapas do OSGi permite criar rapidamente fluxos de trabalho baseados em formulários adaptáveis.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '7594'
+source-wordcount: '7589'
 ht-degree: 0%
 
 ---
@@ -139,7 +135,7 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
 
 ## Etapa Enviar email {#send-email-step}
 
-Use a etapa de email para enviar um email, por exemplo, um email com um documento de registro, link de um formulário adaptável, link de uma comunicação interativa ou com um documento PDF anexado. Suporte à etapa Enviar email [email do HTML](https://en.wikipedia.org/wiki/HTML_email). Os emails de HTML são responsivos e se adaptam ao cliente de email dos recipients e ao tamanho da tela. Você pode usar um template de email HTML para definir a aparência, o esquema de cores e o comportamento do email.
+Use a etapa do email para enviar um email, por exemplo, um email com um documento de registro, link de um formulário adaptável, link de uma comunicação interativa ou com um documento PDF anexado. Suporte à etapa Enviar email [email do HTML](https://en.wikipedia.org/wiki/HTML_email). Os emails de HTML são responsivos e se adaptam ao cliente de email dos recipients e ao tamanho da tela. Você pode usar um template de email HTML para definir a aparência, o esquema de cores e o comportamento do email.
 
 A etapa de email usa o Day CQ Mail Service para enviar emails. Antes de usar a etapa de email, verifique se [serviço de e-mail](../../forms/using/aem-forms-workflow.md) está configurado. A etapa de email tem as seguintes propriedades:
 

@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1f5eb646-acc7-49d5-b839-e451e68ada9e
 docset: aem65
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1662'
 ht-degree: 57%
 
 ---
@@ -126,7 +126,7 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
    ![pp-02-1](assets/pp-02-1.png)
 
-1. O assistente para **Gerenciar publicação** é iniciado. A primeira etapa, **Opções**, permite fazer o seguinte:
+1. O assistente para **Gerenciar publicação** é iniciado. A primeira etapa, **Opções**, permite:
 
    * Optar por publicar ou desfazer a publicação de páginas selecionadas.
    * Escolha executar essa ação agora ou em uma data posterior.

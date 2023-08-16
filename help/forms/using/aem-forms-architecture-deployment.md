@@ -11,9 +11,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
 role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2481'
+source-wordcount: '2479'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ A arquitetura do AEM Forms inclui os seguintes componentes:
    * **Front-end de representação e envio de formulários**: uma interface direcionada ao usuário final para uso pelos usuários finais do AEM Forms (por exemplo, cidadãos que acessam um site governamental). Isso fornece funcionalidades de representação de formulário (formulário de exibição em um navegador da Web) e envio.
    * **REST APIs**: JSPs e servlets exportam um subconjunto de serviços de formulários para consumo remoto por clientes baseados em HTTP, como o SDK móvel de formulários.
 
-**AEM Forms no OSGi:** Um ambiente do AEM Forms no OSGi é um autor padrão do AEM ou uma publicação do AEM com um pacote do AEM Forms implantado nele. Você pode executar o AEM Forms no OSGi em um [ambiente de servidor único, farm e configurações em cluster](/help/sites-deploying/recommended-deploys.md). A configuração do cluster está disponível somente para instâncias do AEM Author.
+**AEM Forms no OSGi:** Um ambiente AEM Forms no OSGi é o AEM Author padrão ou AEM Publish com pacote do AEM Forms implantado nele. Você pode executar o AEM Forms no OSGi em um [ambiente de servidor único, farm e configurações em cluster](/help/sites-deploying/recommended-deploys.md). A configuração do cluster está disponível somente para instâncias do Autor AEM.
 
 **AEM Forms no JEE:** O AEM Forms no JEE é um servidor do AEM Forms em execução na pilha do JEE. Ele tem o AEM Author com pacotes complementares do AEM Forms e recursos adicionais do AEM Forms JEE implantados em uma única pilha do JEE em execução em um servidor de aplicativos. Você pode executar o AEM Forms no JEE em configurações de servidor único e em cluster. O AEM Forms no JEE é necessário apenas para executar a segurança de documentos, o gerenciamento de processos e para clientes do LiveCycle que estão atualizando para o AEM Forms. Estes são alguns cenários adicionais para usar o AEM Forms no JEE:
 
@@ -125,7 +125,7 @@ Os clientes do AEM Forms que planejam usar os recursos de captura de dados do AE
 Você pode fazer as seguintes alterações/personalizações na topologia sugerida acima:
 
 * O uso do aplicativo HTML Workspace e AEM Forms requer um autor ou instância de processamento de AEM. Você pode usar a instância do autor do AEM integrada ao AEM Forms no servidor JEE em vez de configurar um servidor externo adicional do autor do AEM.
-* Uma instância de Autor ou Processamento do AEM é necessária somente para fluxos de trabalho centrados no Forms em OSGi, formulários adaptáveis, portal de formulários e comunicação interativa.
+* Uma instância de autoria ou processamento do AEM é necessária somente para fluxos de trabalho centrados no Forms em OSGi, formulários adaptáveis, portal de formulários e comunicação interativa.
 * A interface do usuário do agente de comunicação interativa geralmente é executada na organização. Assim, você pode manter um servidor de publicação para a interface do usuário do agente na rede privada.
 * Formulários AEM em instâncias OSGi integradas ao AEM Forms no servidor JEE também podem executar fluxos de trabalho centrados no Forms em OSGi e Pastas monitoradas.
 

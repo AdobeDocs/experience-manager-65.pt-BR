@@ -2,16 +2,16 @@
 title: O exportador da página
 description: Saiba como usar o Exportador de página AEM.
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1063'
 ht-degree: 0%
 
 ---
 
 # O exportador da página{#the-page-exporter}
 
-AEM permite exportar uma página como uma página da Web completa, incluindo imagens, `.js` e `.css` arquivos.
+O AEM permite exportar uma página como uma página da Web completa, incluindo imagens, `.js` e `.css` arquivos.
 
 Depois de configurado, você solicita uma exportação de página do seu navegador, substituindo `html` com `export.zip` no URL. Isso gera um arquivo (zip) contendo a página renderizada em formato html, junto com os ativos referenciados. Todos os caminhos na página (por exemplo, caminhos para imagens) são regravados para apontar para os arquivos incluídos no arquivamento ou para os recursos no servidor. O arquivo compactado (zip) pode ser baixado do navegador.
 
@@ -20,7 +20,6 @@ Depois de configurado, você solicita uma exportação de página do seu navegad
 >Dependendo do navegador e das configurações, o download será:
 >* um arquivo morto (`<page-name>.export.zip`)
 >* uma pasta (`<page-name>`); efetivamente o arquivo já expandido
-
 
 ## Exportar uma página {#exporting-a-page}
 
@@ -47,7 +46,6 @@ Selecione o modelo necessário para o site e confirme com **OK**.
    É acessado via:
    * localhost:4502/content/we-retail/language-masters/en.export.zip
 
-
 1. Baixe o arquivo morto no sistema de arquivos.
 
 1. Em seu sistema de arquivos, descompacte o arquivo, se necessário. Depois de expandida, haverá uma pasta com o mesmo nome da página selecionada. Esta pasta contém:
@@ -55,8 +53,8 @@ Selecione o modelo necessário para o site e confirme com **OK**.
    * a subpasta `content`, que é a raiz de uma série de subpastas que refletem o caminho para a página no repositório
 
       * dentro dessa estrutura há o arquivo html para a página selecionada (`<page-name>.html`)
-   * outros recursos (`.js` arquivos, `.css` arquivos, imagens etc.) estão localizados de acordo com as configurações no modelo de exportação
 
+   * outros recursos (`.js` arquivos, `.css` arquivos, imagens etc.) estão localizados de acordo com as configurações no modelo de exportação
 
 1. Abra o arquivo html da página (`<unzip-dir>/<path>/<to>/<page>/<page-path>.html`) no navegador para verificar a renderização.
 
@@ -73,7 +71,7 @@ Uma instalação pronta para uso do AEM inclui um modelo padrão em `/etc/conten
 * A variável `default` O modelo mostra como uma exportação de página pode ser configurada, para que o possa servir como base para um novo modelo de exportação.
 
 * Para exibir a estrutura de nó do modelo em seu navegador como formato JSON, solicite o seguinte URL:
-   `http://localhost:4502/etc/contentsync/templates/default.json`
+  `http://localhost:4502/etc/contentsync/templates/default.json`
 
 O método mais fácil para criar um modelo de exportador de página é:
 
@@ -121,19 +119,18 @@ O nó da página é usado para copiar o html da página para o arquivo zip. Ele 
    * É definido com a propriedade `Name`definir como `page`.
    * O tipo de nó é `nt:unstructured`
 
-   A variável `page` possui as seguintes propriedades:
+  A variável `page` possui as seguintes propriedades:
 
    * A `type` propriedade definida com o valor `pages`.
 
    * Ele não tem um `path` como o caminho da página atual é copiada dinamicamente para a configuração.
-
-   <!--
+  <!--
   * The other properties are described in the Overview of configuration types section of the Content Sync framework.
   -->
 
 * `rewrite`
 O nó rewrite define como os links são reescritos na página exportada. Os links regravados podem apontar para os arquivos incluídos no arquivo zip ou para os recursos no servidor.
-   <!-- Please refer to the Content Sync page for a complete description of the `rewrite` node. -->
+  <!-- Please refer to the Content Sync page for a complete description of the `rewrite` node. -->
 
 * `design`
 O nó de design é usado para copiar o design usado para a página exportada. Ele tem as seguintes características:
@@ -143,16 +140,14 @@ O nó de design é usado para copiar o design usado para a página exportada. El
    * É definido com a propriedade `Name` definir como `design`.
    * O tipo de nó é `nt:unstructured`.
 
-   A variável `design` possui as seguintes propriedades:
+  A variável `design` possui as seguintes propriedades:
 
    * A `type` propriedade definida com o valor `copy`.
 
    * Ele não tem um `path` propriedade, pois o caminho da página atual é copiado dinamicamente para a configuração.
 
-
 * `generic`
-Um nó genérico é usado para copiar recursos como clientlibs 
-`.js` ou `.css` para o arquivo zip. Ele tem as seguintes características:
+Um nó genérico é usado para copiar recursos como clientlibs `.js` ou `.css` para o arquivo zip. Ele tem as seguintes características:
 
    * É opcional.
    * Está localizado abaixo de `/etc/contentsync/templates/<mysite>`.
@@ -160,16 +155,16 @@ Um nó genérico é usado para copiar recursos como clientlibs
    * O tipo de nó é `nt:unstructured`.
    * Tem um `type` propriedade e `type` propriedades relacionadas. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
 
-   Por exemplo, o nó de configuração a seguir copia a variável `mysite.clientlibs.js` para o arquivo zip:
+  Por exemplo, o nó de configuração a seguir copia a variável `mysite.clientlibs.js` para o arquivo zip:
 
-   ```xml
-   "mysite.clientlibs.js": {
-       "extension": "js",
-       "type": "clientlib",
-       "path": "/etc/designs/mysite/clientlibs",
-       "jcr:primaryType": "nt:unstructured"
-   }
-   ```
+  ```xml
+  "mysite.clientlibs.js": {
+      "extension": "js",
+      "type": "clientlib",
+      "path": "/etc/designs/mysite/clientlibs",
+      "jcr:primaryType": "nt:unstructured"
+  }
+  ```
 
 **Implementar uma configuração personalizada**
 

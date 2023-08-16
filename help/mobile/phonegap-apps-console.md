@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2695'
+source-wordcount: '2692'
 ht-degree: 0%
 
 ---
@@ -265,9 +265,9 @@ Contém um botão Voltar. O sistema de parágrafo permite adicionar componentes.
 
 Ao usar o aplicativo, a página Notícias está disponível no carrossel da página em inglês.
 
-### A página Sobre nós - Aplicativo móvel Geometrixx {#the-about-us-page-geometrixx-mobile-app}
+### A página Quem somos - Aplicativo para dispositivos móveis Geometrixx {#the-about-us-page-geometrixx-mobile-app}
 
-A página Sobre nós contém vários componentes Linha de duas colunas. Cada coluna contém um componente Imagem ou Texto. Os componentes são editáveis e o sistema de parágrafo permite adicionar componentes.
+A página Sobre nós contém vários componentes Linha de duas colunas. Cada coluna contém um componente Imagem ou Texto. Os componentes são editáveis e o sistema de parágrafos permite adicionar componentes.
 
 Ao usar o aplicativo, a página Sobre nós está disponível no carrossel da página em inglês.
 
@@ -279,7 +279,7 @@ Ao usar o aplicativo, a página Locais está disponível na lista de menus da p�
 
 ## Componentes móveis de exemplo {#sample-mobile-components}
 
-Vários componentes estão imediatamente disponíveis no Sidekick ao criar as páginas de um aplicativo para dispositivos móveis. Os componentes pertencem ao grupo de componentes PhoneGap.
+Vários componentes estão imediatamente disponíveis no Sidekick ao criar as páginas de um aplicativo móvel. Os componentes pertencem ao grupo de componentes PhoneGap.
 
 ### Carrossel de troca {#swipe-carousel}
 

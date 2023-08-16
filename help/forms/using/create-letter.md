@@ -9,9 +9,9 @@ topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '3982'
+source-wordcount: '3983'
 ht-degree: 2%
 
 ---
@@ -307,7 +307,6 @@ Ao criar uma correspondência, ao tocar em Abrir, o Gerenciamento de correspond�
    1. **Excluir ativos**: Toque no ícone Excluir ao lado de um ativo para excluí-lo.
    1. **Visualizar ativos**: Toque no ícone Mostrar visualização ( ![showpreview](assets/showpreview.png)) ao lado de um ativo.
 
-
 1. Toque **Próxima**.
 1. A página Dados detalha como os campos de dados e as variáveis são usados no modelo. Os dados podem ser vinculados a fontes de dados, como um dicionário de dados ou uma entrada do usuário. Cada campo define propriedades a partir das quais o dicionário de dados mapeia os dados ou qual legenda é exibida para os campos de entrada do usuário.
 
@@ -331,6 +330,7 @@ Ao criar uma correspondência, ao tocar em Abrir, o Gerenciamento de correspond�
    * **Validador de número**: use o Validador de número para especificar o valor numérico mínimo e máximo inserido em um campo ou variável. Ao criar um Validador de número, certifique-se de especificar parâmetros de validação válidos. Insira valores numéricos para os valores mínimo e máximo.
 
    * **Validador de expressão regular**: use o Validador de expressões regulares para definir uma expressão regular usada para validar o valor de um campo ou variável. Além disso, você pode personalizar a mensagem de erro. Ao criar um Validador de expressão regular, certifique-se de especificar uma expressão regular válida.
+
    >[!NOTE]
    >
    >Os validadores de campo e variável só estão disponíveis em campos ou variáveis com o tipo de vínculo Usuário ou Elementos de dicionário de dados desprotegidos.

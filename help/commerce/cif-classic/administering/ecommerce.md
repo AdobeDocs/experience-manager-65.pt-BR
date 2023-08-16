@@ -5,9 +5,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '749'
 ht-degree: 2%
 
 ---
@@ -160,7 +160,7 @@ O eCommerce AEM oferece:
 
   As duas implementações disponíveis atualmente são criadas na mesma base, com base na API geral (a estrutura). A implementação de uma nova integração envolve apenas a implementação dos recursos necessários à sua integração. Os componentes de front-end podem ser usados por qualquer nova implementação, à medida que usam interfaces (portanto, são independentes da implementação).
 
-* A possibilidade de **comércio orientado por experiência com base em dados e atividades do comprador**. Isso permite que você perceba vários cenários:
+* A possibilidade de **comércio orientado por experiência com base em dados e atividades do comprador**. Isso permite que você realize vários cenários:
 
    * Um exemplo pode ser fornecer reduções nos custos de envio quando o pedido total exceder um valor específico.
    * Outro pode permitir que você forneça ofertas sazonais que usam dados de perfil (por exemplo, localização). Estes podem então ser destacados, novamente dependendo de outros fatores, quando necessário.

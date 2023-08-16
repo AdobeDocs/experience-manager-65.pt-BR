@@ -1,8 +1,8 @@
 ---
 title: Trabalhar com o ambiente de autor
 seo-title: Working with the Author Environment
-description: O ambiente de criação permite executar tarefas relacionadas à criação (incluindo a criação de páginas e o gerenciamento de ativos) e administrar as tarefas necessárias ao gerar e manter o conteúdo no seu site.
-seo-description: The author environment allows you to perform tasks related to authoring (including page authoring and managing assets) and administering tasks you need when generating and maintaining the content on your website.
+description: O ambiente de criação permite executar tarefas relacionadas à criação (incluindo a criação de páginas e o gerenciamento de ativos) e à administração das tarefas necessárias ao gerar e manter o conteúdo em seu site.
+seo-description: The author environment lets you perform tasks related to authoring (including page authoring and managing assets) and administering tasks you need when generating and maintaining the content on your website.
 uuid: ebeaa2c3-05b0-4108-8e84-69b9ba48cfbe
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8c747892-c5ba-4288-b5e7-75fd40d92f5c
 exl-id: 4486c503-21e6-493a-8994-b0f8cd34c85a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '248'
 ht-degree: 1%
 
 ---
@@ -38,6 +38,7 @@ Para isso, são fornecidas duas interfaces gráficas de usuário, que podem ser 
    * Ele foi projetado para uso em dispositivos desktop.
    * Ele não é mais mantido.
    * A documentação a seguir se concentra nessa interface clássica. Para obter informações sobre a criação na interface moderna baseada em toque, consulte [Documentação de criação padrão](/help/sites-authoring/author.md).
+
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
 1. Interface de usuário habilitada para toque
@@ -48,7 +49,9 @@ Para isso, são fornecidas duas interfaces gráficas de usuário, que podem ser 
    * Consulte a [Documentação de criação padrão](/help/sites-authoring/author.md) para obter mais detalhes sobre como criar usando a interface baseada em toque. A documentação a seguir se concentra na interface clássica.
 
    * Desktop:
+
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
    * Dispositivos tablet (ou desktop com menos de 1024 pixels de largura):
+
    ![chlimage_1-7](assets/chlimage_1-7.jpeg)

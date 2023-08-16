@@ -2,9 +2,9 @@
 title: Como gerar e trabalhar com hashes em PDF forms dinâmicos?
 description: Gerar e trabalhar com hashes em PDF forms dinâmicos.
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
-source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1246'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Dependendo da função de hash escolhida, o comprimento do hash varia:
 
 ## Experimentar os PDF forms de amostra {#try-sample-pdf-forms}
 
-Os arquivos de exemplo deste artigo incluem dois PDF forms. A primeira amostra permite digitar uma string e gerar valores de hash MD4, MD5, SHA-1 e SHA-256 para a string. O segundo exemplo é um formulário simples que desbloqueia campos de texto se uma senha correta for inserida.
+Os arquivos de exemplo deste artigo incluem dois PDF forms. A primeira amostra permite digitar uma cadeia de caracteres e gerar valores de hash MD4, MD5, SHA-1 e SHA-256 para a cadeia de caracteres. O segundo exemplo é um formulário simples que desbloqueia campos de texto se uma senha correta for inserida.
 
 ### Exemplo 1: geração de hashes {#generating-dashes}
 

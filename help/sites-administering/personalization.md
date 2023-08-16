@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1685'
 ht-degree: 2%
 
 ---
@@ -164,7 +164,7 @@ Vários componentes são fornecidos com AEM para personalização. Alguns permit
 | Número de telefone principal do perfil | Permite a entrada de um número de telefone. |
 | URL principal do perfil | Permite a entrada de um URL. |
 | Propriedade de perfil de texto geral | Propriedades do perfil. |
-| Fazer logon | Permite submeter um nome de usuário e senha ao efetuar login. |
+| Fazer logon | Permite enviar um nome de usuário e senha ao fazer login. |
 | Sair | Indica o usuário que está logado no momento e fornece um link para desconectar. |
 | Nuvem de tags | Uma nuvem de tags para mostrar uma seleção de tags apresentada graficamente em seu site |
 | Teaser | Um conteúdo (geralmente uma imagem) exibido em uma página principal para &quot;provocar&quot; os usuários para acessarem o conteúdo subjacente. |
@@ -173,7 +173,7 @@ Vários componentes são fornecidos com AEM para personalização. Alguns permit
 
 Recursos da comunidade, como blogs, fóruns e calendários, resultam na criação de conteúdo da comunidade, comumente conhecido como conteúdo gerado pelo usuário (UGC). Quando o UGC é inserido em um ambiente de publicação que consiste em várias instâncias do AEM (uma [publicar farm](/help/communities/topologies.md)), um problema importante tem sido como sincronizar o UGC em todas as instâncias.
 
-Com [AEM Communities 6.1](/help/communities/overview.md) extensão, esse problema é resolvido usando uma [armazenamento comum para UGC](/help/communities/working-with-srp.md). No que diz respeito à personalização, as Comunidades incluem [Logon no Social](/help/communities/social-login.md) - a capacidade de fornecer a opção para visitantes do site entrarem com o Facebook e o Twitter.
+Com [AEM Communities 6.1](/help/communities/overview.md) extensão, esse problema é resolvido usando uma [armazenamento comum para UGC](/help/communities/working-with-srp.md). No que diz respeito à personalização, as Comunidades incluem [Logon no Social](/help/communities/social-login.md) - a capacidade de fornecer a opção para que os visitantes do site façam logon com o Facebook e o Twitter.
 
 Sem a extensão Communities, vários métodos a serem explorados para abordar o problema de consistência da UGC são:
 

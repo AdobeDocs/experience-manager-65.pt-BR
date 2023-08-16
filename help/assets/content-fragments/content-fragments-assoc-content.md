@@ -4,10 +4,10 @@ description: Entenda como o recurso de conteúdo associado ao AEM fornece a cone
 feature: Content Fragments
 role: User
 exl-id: 8b93fd6e-47d1-46fd-901b-621caa25be7b
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '245'
-ht-degree: 60%
+ht-degree: 57%
 
 ---
 
@@ -30,7 +30,7 @@ Para fazer a associação, primeiro é necessário [adicionar ativos de mídia a
 1. Dependendo de alguma coleção já ter sido associada ou não, selecione:
 
    * **Associar conteúdo** — esta será a primeira coleção associada
-   * **Associar Coleção** — as coleções associadas já estão configuradas
+   * **Associar coleção** - coleções associadas que já estão configuradas
 
 1. Selecione a coleção necessária.
 

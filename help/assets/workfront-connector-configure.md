@@ -5,9 +5,9 @@ role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: 6f01f5725ed2b0533756830c1a5e55b7464708f6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1735'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ Assinaturas de eventos são usadas para notificar o AEM sobre eventos que ocorre
 
 Para usar esses recursos, habilite as assinaturas de evento.
 
-* Editar [!UICONTROL Ferramentas do Workfront] configuração do Cloud Services que você criou na etapa 5 e selecione a variável [!UICONTROL Inscrições em eventos] guia.
+* Editar [!UICONTROL Ferramentas do Workfront] configuração do Cloud Service que você criou na etapa 5 e selecione a variável [!UICONTROL Inscrições em eventos] guia.
 * Selecione o [!UICONTROL Integração personalizada do Workfront] você criou na seção 6.
 * Clique em [!UICONTROL Ativar assinaturas de evento do Workfront].
 
@@ -73,7 +73,7 @@ Para se inscrever nos eventos, siga estas etapas:
 
 ### Configurar mapeamento de metadados da pasta {#folder-metadata-mapping}
 
-O mapeamento de metadados entre Projetos Workfront e Pastas AEM é definido nos Esquemas de metadados da pasta AEM. Os esquemas de metadados de pasta devem ser criados e configurados como de costume no AEM. O Workfront Tools adiciona uma lista suspensa de preenchimento automático à guia Configurações de cada campo de formulário de esquema de metadados de pasta. Esse menu suspenso de preenchimento automático permitirá especificar para qual campo do Workfront cada propriedade da pasta AEM deve ser mapeada.
+O mapeamento de metadados entre Projetos Workfront e Pastas AEM é definido nos Esquemas de metadados da pasta AEM. Os esquemas de metadados de pasta devem ser criados e configurados como de costume no AEM. O Workfront Tools adiciona uma lista suspensa de preenchimento automático à guia Configurações de cada campo de formulário de esquema de metadados de pasta. Esse menu suspenso de preenchimento automático permite especificar para qual campo do Workfront cada propriedade da pasta AEM deve ser mapeada.
 
 Para configurar os mapeamentos, siga estas etapas:
 
@@ -148,7 +148,7 @@ No editor de workflow, edite as propriedades de **[!UICONTROL Workfront - Defini
 
 ## Sincronização de comentários {#comments-sync}
 
-1. Entrada [!DNL Experience Manager], acesso **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuração de ferramentas do Workfront]**, selecione a configuração e selecione **[!UICONTROL Propriedades]**.
+1. Entrada [!DNL Experience Manager], acesso **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configuração de ferramentas do Workfront]**, selecione a configuração e selecione **[!UICONTROL Propriedades]**.
 
    ![sincronização de comentários](/help/assets/assets/comments-sync1.png)
 
@@ -168,7 +168,7 @@ Para testar a sincronização de comentários do Workfront com o AEM, siga estas
 
 Para manter o histórico de versões de ativos no AEM, configure o controle de versão de ativos no AEM.
 
-1. No Experience Manager, acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuração de ferramentas do Workfront]** e abra a variável **[!UICONTROL Avançado]** guia.
+1. No Experience Manager, acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configuração de ferramentas do Workfront]** e abra a variável **[!UICONTROL Avançado]** guia.
 
 1. Selecionar opção **[!UICONTROL Armazenar ativos com o mesmo nome que as versões do ativo existente]**. Quando marcada, essa opção permite armazenar ativos carregados com o mesmo nome e no mesmo local que a versão do ativo existente. Se permanecer desmarcada, um novo ativo será criado com um nome diferente (por exemplo, `asset-name.pdf` e `asset-name-1.pdf`).
 
@@ -190,7 +190,7 @@ No editor de workflow do Experience Manager, edite as propriedades da variável 
 
 ## Publicar ativos automaticamente {#auto-publish-assets}
 
-1. No Experience Manager, acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuração de ferramentas do Workfront]** e abra a variável **[!UICONTROL Avançado]** guia.
+1. No Experience Manager, acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configuração de ferramentas do Workfront]** e abra a variável **[!UICONTROL Avançado]** guia.
 
 1. Selecionar **[!UICONTROL Publicar ativos automaticamente quando enviados do Workfront]**. Essa opção permite a publicação automática de ativos quando eles são enviados do Workfront para o AEM. Esse recurso pode ser ativado condicionalmente especificando um campo de formulário personalizado do Workfront e o valor para o qual ele deve ser definido. Sempre que um documento for enviado ao AEM, se ele atender à condição, o ativo será publicado automaticamente.
 

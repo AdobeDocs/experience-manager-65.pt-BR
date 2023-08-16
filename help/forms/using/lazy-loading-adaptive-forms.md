@@ -10,9 +10,9 @@ discoiquuid: a20736b7-f7b4-4da1-aa32-2408049b1209
 docset: aem65
 feature: Adaptive Forms
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: '1090'
 ht-degree: 3%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 3%
 
 ## Introdução ao carregamento lento {#introduction-to-lazy-loading}
 
-Quando os formulários se tornam grandes e complexos, com centenas e milhares de campos, os usuários finais têm um longo tempo de resposta ao renderizar formulários no tempo de execução. Para minimizar o tempo de resposta, os formulários adaptáveis permitem dividir formulários em fragmentos lógicos e configurar para adiar a inicialização ou o carregamento de fragmentos até que o fragmento precise estar visível. É chamado de carregamento lento. Além disso, os fragmentos configurados para carregamento lento são descarregados assim que o usuário navega para outras seções no formulário e os fragmentos não ficam mais visíveis.
+Quando os formulários se tornam grandes e complexos, com centenas e milhares de campos, os usuários finais têm um longo tempo de resposta ao renderizar formulários no tempo de execução. Para minimizar o tempo de resposta, os formulários adaptáveis permitem dividir os formulários em fragmentos lógicos e configurar para adiar a inicialização ou o carregamento dos fragmentos até que o fragmento precise estar visível. É chamado de carregamento lento. Além disso, os fragmentos configurados para carregamento lento são descarregados assim que o usuário navega para outras seções no formulário e os fragmentos não ficam mais visíveis.
 
 Vamos primeiro entender os requisitos e etapas preparatórias antes de configurar o carregamento lento.
 

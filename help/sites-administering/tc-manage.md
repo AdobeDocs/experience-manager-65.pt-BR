@@ -2,10 +2,10 @@
 title: Gerenciamento de projetos de tradução
 description: Saiba como gerenciar projetos de tradução no AEM.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 106fc0e1ef6d65f13bd3875783102da44694581e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3587'
-ht-degree: 55%
+source-wordcount: '3586'
+ht-degree: 56%
 
 ---
 
@@ -31,7 +31,7 @@ Os projetos e os trabalhos de tradução são criados com fluxos de trabalho de 
 
 >[!NOTE]
 >
->A opção 3 não está relacionada com o trabalho/projeto de tradução. Ele permite copiar o conteúdo e as alterações estruturais no idioma principal para as cópias de idioma (não traduzidas). Você pode usar isso para manter seus idiomas principais em sincronia, mesmo sem tradução.
+>A opção 3 não está relacionada com o trabalho/projeto de tradução. Ela permite copiar o conteúdo e as alterações estruturais no idioma principal para as cópias de idioma (não traduzidas). Você pode usar isso para manter seus idiomas principais em sincronia, mesmo sem tradução.
 
 ## Executar traduções iniciais e atualizar traduções existentes {#performing-initial-translations-and-updating-existing-translations}
 
@@ -244,7 +244,7 @@ A tabela a seguir descreve cada status que um trabalho ou um item no trabalho po
 |---|---|
 | Rascunho | O trabalho de tradução não foi iniciado. Os trabalhos de tradução estarão no status de RASCUNHO quando forem criados. |
 | Enviado | Os arquivos no trabalho de tradução têm esse status quando são enviados com sucesso para o serviço de tradução. Esse status pode ser ativado após os comandos Escopo da solicitação ou Iniciar serem executados. |
-| Escopo solicitado | Para o fluxo de trabalho Tradução humana, os arquivos no trabalho foram enviados ao fornecedor de tradução para definição do escopo. Este status aparece após o comando Solicitar escopo ser executado.  |
+| Escopo solicitado | Para o fluxo de trabalho Tradução humana, os arquivos no trabalho foram enviados ao fornecedor de tradução para definição do escopo. Este status aparece após o comando Solicitar escopo ser executado. |
 | Escopo concluído | O fornecedor definiu o escopo do trabalho de tradução. |
 | Enviado para tradução | O proprietário do projeto aceitou o escopo. Esse status indica que o fornecedor de tradução deve começar a traduzir os arquivos na tarefa. |
 | Tradução em andamento | Para uma tarefa, a tradução de um ou mais arquivos ainda não foi concluída. Para um item na tarefa, o item está sendo traduzido. |
@@ -365,18 +365,18 @@ Quando o conteúdo for traduzido para uma cópia de idioma existente, revise as 
 
 ## Comparação de cópias de idioma {#comparing-language-copies}
 
-Para comparar Cópias de idioma ao idioma Principal:
+Para comparar Cópias de idioma ao idioma principal:
 
 1. No **Sites** console, navegue até a cópia de idioma que deseja comparar.
 1. Abra o **[Referências](/help/sites-authoring/basic-handling.md#references)** painel.
 1. No cabeçalho de **Cópias**, selecione **Cópias de idioma.**
-1. Selecione a cópia de idioma específica e clique em **Comparar com Principal **ou **Comparar com anterior **se aplicável.
+1. Selecione a cópia de idioma específica e, em seguida, clique em **Comparar ao principal** ou **Comparar com anterior**, se aplicável.
 
    ![chlimage_1-37](assets/chlimage_1-37.jpeg)
 
 1. As duas páginas (inicialização e origem) serão abertas lado a lado.
 
-   Para obter informações completas sobre como usar esse recurso, consulte [Diferença de página](/help/sites-authoring/page-diff.md).
+   Para obter informações completas sobre como usar este recurso, consulte [Diferencial de página](/help/sites-authoring/page-diff.md).
 
 ## Concluir e arquivar trabalhos de tradução {#completing-and-archiving-translation-jobs}
 

@@ -2,10 +2,10 @@
 title: Como acessar seu conteúdo por meio das APIs de entrega do AEM
 description: Nesta parte da Jornada do desenvolvedor headless do AEM, saiba como usar consultas GraphQL para acessar o conteúdo dos Fragmentos de conteúdo.
 exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1335'
-ht-degree: 96%
+source-wordcount: '1333'
+ht-degree: 93%
 
 ---
 
@@ -79,7 +79,7 @@ GraphQL is used in various locations in AEM; for example:
 
 ## API GraphQL do AEM {#aem-graphql-api}
 
-A API GraphQL do AEM é uma versão personalizada com base na especificação padrão da API GraphQL, especialmente configurada para permitir a execução de consultas (complexas) nos Fragmentos de conteúdo.
+A API GraphQL do AEM é uma versão personalizada com base na especificação padrão da API GraphQL, especialmente configurada para permitir que você execute consultas (complexas) nos Fragmentos de conteúdo.
 
 Fragmentos de conteúdo são usados, pois o conteúdo é estruturado de acordo com Modelos de fragmento de conteúdo. Isso atende a um requisito básico da GraphQL.
 
@@ -133,7 +133,7 @@ A **Referência do fragmento**:
 
 * É um tipo de dados específico disponível ao definir um modelo de fragmento de conteúdo.
 * Faz referência a outro fragmento, dependente de um modelo de fragmento de conteúdo específico.
-* Permite criar e então recuperar dados estruturados.
+* Permite criar e recuperar dados estruturados.
 
    * Quando definido como **multifeed**, vários fragmentos secundários podem ser referenciados (recuperados) pelo fragmento principal.
 

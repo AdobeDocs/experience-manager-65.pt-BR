@@ -11,9 +11,9 @@ discoiquuid: e397c6ce-d73f-4183-8445-1897a8906960
 docset: aem65
 feature: Form Data Model
 exl-id: dd1146e4-952d-4dfa-8084-46c6096c4177
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Depois de criar um modelo de dados de formulário, você pode usá-lo em vários
 
 A primeira etapa para implementar a integração de dados é identificar e configurar fontes de dados que armazenam informações que você deseja aproveitar em formulários adaptáveis e casos de uso de comunicações interativas. Em seguida, crie um modelo de dados de formulário que use o objeto de modelo de dados, as propriedades e os serviços de uma ou mais fontes de dados. Você pode criar formulários adaptáveis e comunicações interativas com base em um modelo de dados de formulário em que os campos de formulário adaptáveis ou espaços reservados em comunicações interativas são vinculados às respectivas propriedades da fonte de dados.
 
-[!DNL AEM Forms] também permite criar um modelo de dados de formulário independente das fontes de dados e associar ou vincular objetos e propriedades do modelo de dados de formulário no modelo de dados de formulário com a fonte de dados posteriormente. Ele elimina qualquer dependência em fontes de dados enquanto você trabalha em um modelo de dados de formulário.
+[!DNL AEM Forms] também permite criar um modelo de dados de formulário independente das fontes de dados e associar ou vincular objetos de modelo de dados e propriedades no modelo de dados de formulário com a fonte de dados posteriormente. Ele elimina qualquer dependência em fontes de dados enquanto você trabalha em um modelo de dados de formulário.
 
 Analise o seguinte para começar, entender e implementar a integração de dados.
 

@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 31%
+source-wordcount: '843'
+ht-degree: 29%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 31%
 
 Os lançamentos permitem desenvolver conteúdo com eficiência para uma versão futura.
 
-Um lançamento é criado para permitir que você faça modificações prontas para futuras publicações (mantendo suas páginas atuais). Após editar e atualizar suas páginas de lançamento, você as promove à origem e ativa as páginas de origem (nível superior). A promoção duplica o conteúdo da inicialização de volta às páginas de origem e pode ser feita manual ou automaticamente (dependendo dos campos definidos ao criar e editar a inicialização).
+Um lançamento é criado para permitir que as alterações sejam preparadas para publicação futura (enquanto você mantém as páginas atuais). Após editar e atualizar suas páginas de lançamento, você as promove à origem e ativa as páginas de origem (nível superior). A promoção duplica o conteúdo da inicialização de volta às páginas de origem e pode ser feita manual ou automaticamente (dependendo dos campos definidos ao criar e editar a inicialização).
 
-Por exemplo, as páginas de produtos sazonais da loja online são atualizadas trimestralmente para que os produtos em destaque se alinhem à temporada atual. Para se preparar para a próxima atualização trimestral, é possível criar uma inicialização das páginas da Web apropriadas. Ao longo do trimestre, as seguintes alterações são acumuladas na cópia de lançamento:
+Por exemplo, as páginas de produtos sazonais da loja online são atualizadas trimestralmente para que os produtos em destaque se alinhem à temporada atual. Para se preparar para a próxima atualização trimestral, é possível criar uma inicialização das páginas da Web apropriadas. Durante todo o trimestre, as seguintes alterações são acumuladas na cópia de lançamento:
 
 * Alterações nas páginas de origem que ocorrem como resultado de tarefas de manutenção normais. Essas alterações são duplicadas automaticamente nas páginas de inicialização.
 * Edições realizadas diretamente nas páginas de lançamento como preparação para o próximo trimestre.
@@ -72,7 +72,7 @@ Os lançamentos permitem:
 
       * O campo **Data de lançamento** (**Data de ativação**):**** pode ser definida ao criar ou editar um lançamento.
 
-      * A variável **Pronto para produção** sinalizador: só pode ser definido ao editar uma inicialização.
+      * A variável **Pronto para produção** sinalizador: só pode ser definido ao editar um lançamento.
       * Se a variável **Pronto para produção** for definido, a inicialização será promovida automaticamente para as páginas de produção no **Launch**(**Ao vivo**) **data**. Após a promoção, as páginas de produção são publicadas automaticamente.\
         Se nenhuma data tiver sido definida, o sinalizador não terá efeito.
 
