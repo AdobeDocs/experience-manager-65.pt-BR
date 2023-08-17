@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 929a298d-7f22-487f-bf7d-8ab2556d0d81
 docset: aem65
 exl-id: 1bc99f3b-3f28-4e74-b259-6ebddc11ffc5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4eb4a15961e7b6e83d9e8a38f34ad92d829cb9b6
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 7%
+source-wordcount: '2084'
+ht-degree: 6%
 
 ---
 
@@ -33,7 +33,7 @@ As APIs de faturamento não levam em conta o número de páginas, o comprimento 
 
 * **Forms enviado:** Quando os dados são enviados de qualquer tipo de formulário criado com o AEM Forms e os dados são enviados para qualquer repositório ou banco de dados de armazenamento de dados, é considerado o envio do formulário. Por exemplo, o envio de um formulário adaptável, o Formulário HTML, os PDF forms e o conjunto de formulários são contabilizados como formulários enviados. Cada formulário em um conjunto de formulários é considerado um envio. Por exemplo, se um conjunto de formulários tiver 5 formulários, quando o conjunto for enviado, o serviço de relatório de transações o contará como 5 envios.
 
-* **Documentos renderizados:** Gerar um documento combinando um modelo e dados, assinando ou certificando digitalmente um documento, usando APIs de serviços de documento faturáveis para serviços de documento ou convertendo um documento de um formato para outro são considerados documentos renderizados.
+* **Documentos renderizados:** Gerar um documento combinando um modelo e dados, assinando ou certificando digitalmente um documento, usando uma API de serviços de documento faturável para serviços de documento ou convertendo um documento de um formato para outro são considerados documentos renderizados.
 
 >[!NOTE]
 >
@@ -107,6 +107,26 @@ As APIs de faturamento não levam em conta o número de páginas, o comprimento 
   </tr>
  </tbody>
 </table>
+
+### Serviço DocAssurance {#DocAssurance-Service}
+
+<table>
+ <tbody>
+  <tr>
+   <td><p>API</p> </td>
+   <td>Descrição</td>
+   <td>Categoria do relatório de transações</td>
+   <td>Informações adicionais</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-" target="_blank">secureDocument</a><br /> </td>
+   <td>Essa API permite que você proteja seu documento. Você pode usar a API para assinar, certificar, estender o leitor ou criptografar um documento PDF.</td>
+   <td>Documentos processados</td>
+   <td>Somente assinar e certificar a operação do secureDocument são cobrados.</td>
+  </tr>
+ </tbody>
+</table>
+
 
 ### Serviço Distiller {#distiller-service}
 
@@ -305,12 +325,16 @@ As APIs de faturamento não levam em conta o número de páginas, o comprimento 
  </tbody>
 </table>
 
+Chamar é considerado uma transação que depende da operação que está sendo executada. É considerada uma transação quando você executa uma ou mais das seguintes operações:
+1. Conversão de formato não-PDF para PDF. Por exemplo, formato XDP para conversão de formato PDF (para comunicação interativa e não interativa), conversão de Word para PDF.
+1. Formato PDF para conversão de formato PDF/A.
+1. Formato PDF para conversão de formato não PDF. Por exemplo, formato PDF para conversão de formato de imagem, formato PDF para conversão de formato de texto.
+
+
 >[!NOTE]
 >
 >* A API de chamada do serviço do montador pode chamar internamente uma API faturável de outro serviço, dependendo da entrada. Portanto, a API invoke pode ser contabilizada como nenhuma, uma única ou várias transações. O número de transações contadas depende da entrada e das APIs internas chamadas.
 >* Um único documento de PDF produzido usando o serviço de montagem pode ser contabilizado como nenhuma, uma única ou várias transações. O número de transações contadas depende do código DDX fornecido.
->
-
 
 ### Serviço do utilitário PDF  {#pdf-utility-service}
 
@@ -477,7 +501,7 @@ Atribua etapas de serviços de tarefa e documento de Workflows do AEM centrados 
 
 ## Registrando APIs faturáveis como transações para código personalizado {#recording-billable-apis-as-transactions-for-custom-code}
 
-Ações como enviar um Formulário PDF, usar a interface do usuário do agente para visualizar uma comunicação interativa, usar o envio de formulários não padrão e implementações personalizadas não são contabilizadas como transações. O AEM Forms fornece uma API para registrar ações como transações. É possível chamar a API a partir das implementações personalizadas para [registrar uma transação](/help/forms/using/record-transaction-custom-implementation.md).
+Ações como enviar um Formulário PDF, usar a interface do usuário do agente para visualizar uma comunicação interativa, usar o envio de formulários não padrão e implementações personalizadas não são contabilizadas como transações. O AEM Forms fornece uma API para registrar ações como transações. Você pode chamar a API de suas implementações personalizadas para [registrar uma transação](/help/forms/using/record-transaction-custom-implementation.md).
 
 ## Artigos relacionados {#related-articles}
 
