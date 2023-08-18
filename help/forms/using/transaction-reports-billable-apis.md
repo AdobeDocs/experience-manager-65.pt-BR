@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 929a298d-7f22-487f-bf7d-8ab2556d0d81
 docset: aem65
 exl-id: 1bc99f3b-3f28-4e74-b259-6ebddc11ffc5
-source-git-commit: 4eb4a15961e7b6e83d9e8a38f34ad92d829cb9b6
+source-git-commit: d636d987f5d62c9169bc4015d7ac50090e362faa
 workflow-type: tm+mt
-source-wordcount: '2084'
+source-wordcount: '2089'
 ht-degree: 6%
 
 ---
@@ -325,11 +325,10 @@ As APIs de faturamento não levam em conta o número de páginas, o comprimento 
  </tbody>
 </table>
 
-Chamar é considerado uma transação que depende da operação que está sendo executada. É considerada uma transação quando você executa uma ou mais das seguintes operações:
-1. Conversão de formato não-PDF para PDF. Por exemplo, formato XDP para conversão de formato PDF (para comunicação interativa e não interativa), conversão de Word para PDF.
-1. Formato PDF para conversão de formato PDF/A.
-1. Formato PDF para conversão de formato não PDF. Por exemplo, formato PDF para conversão de formato de imagem, formato PDF para conversão de formato de texto.
-
+O uso da API de chamada é contado como uma transação, quando você executa uma ou mais das seguintes operações:
+1. Conversão de formatos sem PDF para formatos PDF. Por exemplo, a conversão do formato XDP para o formato PDF, atendendo a formas de comunicação interativas e não interativas e a conversão do Word para o PDF.
+1. Conversão do formato PDF para o formato PDF/A.
+1. Conversão do formato PDF para formatos não PDF. Os exemplos englobam a transformação do formato PDF para o formato Imagem ou a conversão do formato PDF para Texto.
 
 >[!NOTE]
 >
