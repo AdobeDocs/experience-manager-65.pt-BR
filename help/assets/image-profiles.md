@@ -10,7 +10,7 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 16ea73e9e75ddee25d7d348d4220a0e0f96a9ae8
+source-git-commit: d4c2890b92678aff58119e76251b5d181c95a393
 workflow-type: tm+mt
 source-wordcount: '3033'
 ht-degree: 6%
@@ -23,8 +23,8 @@ Ao fazer upload de imagens, você pode cortar automaticamente a imagem após o u
 
 >[!IMPORTANT]
 >
->· O Recorte inteligente está disponível somente no modo Dynamic Media - Scene7.
-· Os perfis de imagem não se aplicam a arquivos PDF, GIF animados ou INDD (Adobe InDesign).
+>* O Recorte inteligente está disponível somente no modo Dynamic Media - Scene7.
+>* Os perfis de imagem não se aplicam a arquivos PDF, animado GIF ou INDD (Adobe InDesign).
 
 ## Opções de corte {#crop-options}
 
@@ -56,8 +56,9 @@ Para manter o uso do Corte inteligente sob controle e otimizar o tempo de proces
 Você tem duas opções de corte de imagem para escolher: Corte de pixels ou Corte inteligente. Também é possível optar por automatizar a criação de amostras de cores e imagens.
 
 >[!IMPORTANT]
-· A Adobe recomenda que você analise todas as culturas e amostras geradas para garantir que sejam apropriadas e relevantes para sua marca e valores.
-· O formato de imagem CMYK não é compatível com o recorte inteligente.
+>
+>* A Adobe recomenda que você analise todas as culturas e amostras geradas para garantir que elas sejam apropriadas e relevantes para sua marca e valores.
+>* O formato de imagem CMYK não é compatível com o recorte inteligente.
 
 | Opção | Quando usar | Descrição |
 | --- | --- | --- |
@@ -70,7 +71,8 @@ Você tem duas opções de corte de imagem para escolher: Corte de pixels ou Cor
 Use a **[!UICONTROL Tirar nitidez da máscara]** para ajustar um efeito de filtro de nitidez na imagem final com resolução reduzida. É possível controlar a intensidade do efeito, o raio do efeito (medido em pixels) e um limite de contraste que é ignorado. Adobe Photoshop Esse efeito usa as mesmas opções que o *Tirar nitidez da máscara* filtro.
 
 >[!NOTE]
-A Tirar nitidez da máscara é aplicada somente a representações em menor escala no PTIFF (tiff de pirâmide) com uma resolução reduzida de mais de 50%. Isso significa que as representações de maior tamanho dentro do ptiff não são afetadas pela Tirar nitidez da máscara, enquanto representações de menor tamanho, como miniaturas, são alteradas (e mostram a Tirar nitidez da máscara).
+>
+>A Tirar nitidez da máscara é aplicada somente a representações em menor escala no PTIFF (tiff de pirâmide) com uma resolução reduzida de mais de 50%. Isso significa que as representações de maior tamanho dentro do ptiff não são afetadas pela Tirar nitidez da máscara, enquanto representações de menor tamanho, como miniaturas, são alteradas (e mostram a Tirar nitidez da máscara).
 
 Entrada **[!UICONTROL Tirar nitidez da máscara]**, você tem as seguintes opções de filtro:
 
@@ -164,18 +166,19 @@ Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo exi
 
    * Navegue até `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` e aplique o perfil apropriado e selecione **[!UICONTROL Salvar]**.
 
-      ![chlimage_1-257](assets/chlimage_1-257.png)
+     ![chlimage_1-257](assets/chlimage_1-257.png)
 
    * Navegue até o CRXDE Lite para o seguinte nó: `/content/dam/jcr:content`.
 
-      Adicionar a propriedade `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` e selecione **[!UICONTROL Salvar tudo]**.
+     Adicionar a propriedade `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` e selecione **[!UICONTROL Salvar tudo]**.
 
-      ![configure_image_profiles](assets/configure_image_profiles.png)
+     ![configure_image_profiles](assets/configure_image_profiles.png)
 
 ## Editar o recorte inteligente ou a amostra inteligente de uma única imagem {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
-· O recorte inteligente está disponível somente no modo Dynamic Media - Scene7.
+>
+>* O recorte inteligente está disponível somente no modo Dynamic Media - Scene7.
 
 Você pode realinhar ou redimensionar manualmente a janela de recorte inteligente de uma imagem para refinar ainda mais seu ponto focal.
 
@@ -205,7 +208,8 @@ Consulte também [Editar o recorte inteligente ou a amostra inteligente de vári
 ## Editar o recorte inteligente ou a amostra inteligente de várias imagens {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
 >[!IMPORTANT]
-· O recorte inteligente está disponível somente no modo Dynamic Media - Scene7.
+>
+>* O recorte inteligente está disponível somente no modo Dynamic Media - Scene7.
 
 Depois de aplicar um Perfil de imagem - contendo Recorte inteligente - a uma pasta, todas as imagens nessa pasta têm um recorte aplicado a elas. Se desejar, é possível *manualmente* realinhar ou redimensionar a janela de recorte inteligente em várias imagens para refinar ainda mais seu ponto focal.
 
@@ -222,37 +226,35 @@ Você pode executar novamente o corte inteligente para gerar os cortes adicionai
 
    * Ajuste o tamanho de exibição das imagens na página.
 
-      À direita da lista suspensa de nomes dos pontos de interrupção, arraste a barra deslizante para a esquerda ou direita para alterar o tamanho da exibição da imagem visível.
+     À direita da lista suspensa de nomes dos pontos de interrupção, arraste a barra deslizante para a esquerda ou direita para alterar o tamanho da exibição da imagem visível.
 
-      ![edit_smart_crop-slibar](assets/edit_smart_crops-sliderbar.png)
+     ![edit_smart_crop-slibar](assets/edit_smart_crops-sliderbar.png)
 
    * Filtrar a lista de imagens visualizáveis com base nos nomes dos pontos de interrupção. No exemplo abaixo, as imagens são filtradas no nome do ponto de interrupção &quot;Médio&quot;.
 
-      Próximo ao canto superior direito da página, na lista suspensa, selecione um nome de ponto de interrupção para filtrar em quais imagens você vê. (Veja a imagem acima.)
+     Próximo ao canto superior direito da página, na lista suspensa, selecione um nome de ponto de interrupção para filtrar em quais imagens você vê. (Veja a imagem acima.)
 
-      ![edit_smart_crop-dropdownlist](assets/edit_smart_crops-dropdownlist.png)
+     ![edit_smart_crop-dropdownlist](assets/edit_smart_crops-dropdownlist.png)
 
    * Redimensionar a caixa de corte inteligente. Siga um destes procedimentos:
 
       * Se a imagem tiver apenas um recorte inteligente ou uma amostra inteligente, arraste a alça do canto da caixa de recorte para ajustar o tamanho da área visível do recorte.
       * Se a imagem tiver um corte inteligente e uma amostra inteligente, arraste a alça do canto da caixa de corte para ajustar o tamanho da área visível do corte. Ou selecione a amostra inteligente abaixo da imagem (as amostras de cores são estáticas) e arraste a alça do canto da caixa de recorte para ajustar o tamanho da área visível da amostra.
 
-      ![Redimensionar o recorte inteligente de uma imagem](assets/edit_smart_crops-resize.png)
+     ![Redimensionar o recorte inteligente de uma imagem](assets/edit_smart_crops-resize.png)
 
    * Mova a caixa de corte inteligente. Siga um destes procedimentos:
 
       * Se a imagem tiver apenas um recorte inteligente ou uma amostra inteligente, arraste a caixa de recorte para um novo local na imagem.
       * Se a imagem tiver um recorte inteligente e uma amostra inteligente, arraste a caixa de recorte inteligente para um novo local na imagem. Ou selecione a amostra inteligente abaixo da imagem (as amostras de cores são estáticas) e arraste a caixa de recorte da amostra inteligente para um novo local.
 
-      ![edit_smart_crop-move](assets/edit_smart_crops-move.png)
+     ![edit_smart_crop-move](assets/edit_smart_crops-move.png)
 
    * Desfazer todas as edições e restaurar o recorte inteligente original ou a amostra inteligente (aplica-se somente à sessão de edição atual).
 
-      Selecionar **[!UICONTROL Reverter]** acima da imagem.
+     Selecionar **[!UICONTROL Reverter]** acima da imagem.
 
-      ![edit_smart_crop-revert](assets/edit_smart_crops-revert.png)
-
-
+     ![edit_smart_crop-revert](assets/edit_smart_crops-revert.png)
 
 1. Próximo ao canto superior direito da página, selecione **[!UICONTROL Salvar]** e selecione **[!UICONTROL Fechar]** para retornar à pasta de ativos.
 
