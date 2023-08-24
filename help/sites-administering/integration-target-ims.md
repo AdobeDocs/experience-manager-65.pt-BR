@@ -2,10 +2,10 @@
 title: Integração com o Adobe Target usando IMS
 description: Saiba mais sobre a integração do AEM com o Adobe Target usando o IMS
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 06ed2329840e151083bd238ee3a4d33663463c9c
 workflow-type: tm+mt
-source-wordcount: '1549'
-ht-degree: 54%
+source-wordcount: '1577'
+ht-degree: 53%
 
 ---
 
@@ -68,6 +68,12 @@ Usando o Console do Adobe Developer, é necessário criar um Projeto (integraç�
 ### Criação do projeto {#creating-the-project}
 
 Abra o Adobe Developer Console para criar um Projeto com o Adobe Target que o AEM usará:
+
+>[!CAUTION]
+>
+>Atualmente, só oferecemos suporte ao console do Adobe Developer **Conta de serviço (JWT)** tipo de credencial.
+>
+>Não use o **Servidor OAuth para servidor** tipo de credencial, que terá suporte no futuro.
 
 1. Abra os projetos do Adobe Developer Console:
 
@@ -200,7 +206,7 @@ Para confirmar que a configuração está funcionando como esperado:
 
 A configuração agora pode ser referenciada para um Cloud Service usar a API do Target Standard:
 
-1. Abra o **Ferramentas** menu. Em seguida, no prazo de **Cloud Services** , selecione **Cloud Services herdados**.
+1. Abra o **Ferramentas** menu. Em seguida, no prazo de **Cloud Service** , selecione **Cloud Service herdados**.
 1. Role para baixo até **Adobe Target** e selecione **Configurar agora**.
 
    A variável **Criar configuração** será aberta.
