@@ -2,10 +2,10 @@
 title: Traduzir conteúdo
 description: Use o conector e as regras de tradução para traduzir o seu conteúdo headless.
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 29fb61f9fdcb72864068662d935bc01779b9e451
 workflow-type: tm+mt
-source-wordcount: '2173'
-ht-degree: 94%
+source-wordcount: '2163'
+ht-degree: 80%
 
 ---
 
@@ -24,10 +24,10 @@ Agora que seu conector e regras de tradução estão configurados, este artigo o
 
 ## Objetivo {#objective}
 
-Este documento ajuda a entender como usar os projetos de tradução do AEM junto com o conector e suas regras de tradução para traduzir conteúdo. Após ler este documento, você deve:
+Este documento ajuda a entender como usar os projetos de tradução do AEM junto com o conector e suas regras de tradução para traduzir conteúdo. Depois de ler este documento, você deverá fazer o seguinte:
 
 * Entender o que é um projeto de tradução.
-* Ser capaz de criar novos projetos de tradução.
+* Criar projetos de tradução.
 * Usar os projetos de tradução para traduzir o conteúdo headless.
 
 ## Criação de um projeto de tradução {#creating-translation-project}
@@ -41,7 +41,7 @@ Projetos de tradução podem ser criados de duas formas:
 1. Selecione a raiz de idioma do conteúdo e o AEM criará automaticamente o projeto de tradução com base no caminho do conteúdo.
 1. Crie um projeto vazio e selecione manualmente o conteúdo a ser adicionado ao projeto de tradução
 
-Ambas as abordagens são válidas e geralmente diferem apenas com base em quem está executando a tradução:
+Ambas as abordagens são válidas e diferem apenas com base na pessoa que está executando a tradução:
 
 * O gerente de projetos de tradução (TPM) geralmente precisa da flexibilidade de selecionar manualmente o conteúdo para o projeto de tradução.
 * Se o proprietário do conteúdo também for responsável pela tradução, permitir que o AEM crie o projeto automaticamente com base no caminho do conteúdo selecionado geralmente é mais fácil.
@@ -53,9 +53,9 @@ Ambas as abordagens são exploradas nas seções a seguir.
 Para proprietários de conteúdo que também são responsáveis pela tradução, geralmente é mais fácil deixar o AEM criar automaticamente o projeto de tradução. Para fazer o AEM criar automaticamente um projeto de tradução com base no caminho do conteúdo:
 
 1. Navegue até **Navegação** -> **Ativos** -> **Arquivos**. Lembre-se de que o conteúdo headless no AEM é armazenado como ativos conhecidos como Fragmentos de conteúdo.
-1. Selecione a raiz do idioma do projeto. Nesse caso, selecionamos `/content/dam/wknd/en`.
+1. Selecione a raiz do idioma do projeto. Nesse caso, `/content/dam/wknd/en` está selecionada.
 1. Toque ou clique no seletor do painel e exiba o painel **Referências**.
-1. Toque ou clique em **Cópias de idioma**.
+1. Toque ou clique **Cópias de idioma**.
 1. Marque a caixa de seleção **Cópias de idioma**.
 1. Expanda a seção **Atualizar cópias de Idioma** na parte inferior do painel de referências.
 1. Na lista suspensa **Projeto**, selecione **Criar projeto(s) de tradução**.
@@ -117,7 +117,7 @@ Para exibir o projeto de tradução:
 O projeto é dividido em vários cartões.
 
 * **Resumo** — este cartão mostra as informações básicas do cabeçalho do projeto, incluindo o proprietário, o idioma e o provedor de tradução.
-* **Tarefa de tradução** — este cartão ou estes cartões apresentam uma visão geral do trabalho de tradução real, incluindo o status, o número de ativos, etc. Geralmente, há uma tarefa por idioma com o código de idioma ISO-2 anexado ao nome da tarefa.
+* **Tarefa de tradução** - Esse cartão ou esses cartões apresentam uma visão geral do trabalho de tradução real, incluindo o status, o número de ativos e assim por diante. Geralmente, há uma tarefa por idioma com o código de idioma ISO-2 anexado ao nome da tarefa.
 * **Equipe** — este cartão mostra os usuários que estão colaborando neste projeto de tradução. Essa jornada não aborda esse tópico.
 * **Tarefas** — tarefas adicionais associadas à tradução do conteúdo, como itens por fazer ou itens de fluxo de trabalho. Essa jornada não aborda esse tópico.
 
@@ -129,7 +129,7 @@ Ao criar automaticamente o projeto de tradução, o AEM avalia o conteúdo headl
 
 Para ver os detalhes do conteúdo headless incluído neste projeto:
 
-1. Toque ou clique no botão de reticências na parte inferior do cartão de **Tarefa de tradução**.
+1. Toque ou clique no botão de reticências, na parte inferior da **Tarefa de tradução** cartão.
 1. A janela **Tarefa de tradução** lista todos os itens na tarefa.
    ![Detalhes do trabalho de tradução](assets/translation-job-detail.png)
 1. Toque ou clique em uma linha para ver os detalhes dela, tendo em mente que uma linha pode representar vários itens de conteúdo a serem traduzidos.
@@ -183,9 +183,9 @@ Para adicionar conteúdo a uma tarefa de tradução:
 >
 >Você pode saber mais sobre o navegador de caminho na [seção recursos adicionais.](#additional-resources)
 
-Você pode usar as etapas anteriores para adicionar o conteúdo necessário a todos os idiomas (tarefas) do projeto. Após selecionar todo o conteúdo, você pode iniciar a tradução.
+Você pode usar as etapas anteriores para adicionar o conteúdo necessário a todos os idiomas (tarefas) do projeto. Depois de selecionar todo o conteúdo, você pode iniciar a tradução.
 
-Normalmente, o conteúdo da tarefa de tradução começa no estado **Rascunho**, conforme indicado pela coluna **Estado** na janela **Tarefa de tradução**.
+Normalmente, o conteúdo do trabalho de tradução começa no estado de **Rascunho**, conforme indicado pela coluna **Estado** na janela **Tarefa de tradução**.
 
 Para iniciar o trabalho de tradução, volte para a visão geral do projeto de tradução e toque ou clique no botão de divisa na parte superior do cartão **Tarefa de tradução** e selecione **Iniciar**.
 
@@ -199,7 +199,7 @@ As traduções automáticas retornam automaticamente com um estado de **Aprovado
 
 ## Revisar conteúdo traduzido {#reviewing}
 
-[Como visto anteriormente,](#using-translation-project) o conteúdo de tradução automática volta ao AEM com o status de **Aprovado**, pois se presume que, devido à utilização de tradução automática, não é necessária qualquer intervenção humana. No entanto, é claro que ainda é possível revisar o conteúdo traduzido.
+[Como visto anteriormente,](#using-translation-project) o conteúdo traduzido por máquina volta ao AEM com o status de **Aprovado** como se presume que, devido à utilização de tradução automática, não é necessária qualquer intervenção humana. No entanto, ainda é possível revisar o conteúdo traduzido.
 
 Basta ir até o trabalho de tradução concluído e selecionar um item da linha tocando ou clicando na caixa de seleção. O ícone **Revelar no Fragmento de conteúdo** é exibido na barra de ferramentas.
 
@@ -209,9 +209,9 @@ Toque ou clique nesse ícone para abrir o fragmento de conteúdo traduzido no co
 
 ![Um fragmento de conteúdo traduzido](assets/translated-content-fragment.png)
 
-Você pode modificar ainda mais o fragmento de conteúdo conforme necessário, desde que tenha a permissão adequada, mas a edição de fragmentos de conteúdo está além do escopo desta jornada. Consulte a seção [Recursos adicionais](#additional-resources) no final deste documento para obter mais informações sobre este tópico.
+Você pode modificar ainda mais o fragmento de conteúdo conforme necessário, desde que tenha a permissão adequada, mas a edição de fragmentos de conteúdo está além do escopo desta jornada. Consulte a [Recursos adicionais](#additional-resources) no final deste documento para obter mais informações sobre este tópico.
 
-O objetivo do projeto é coletar todos os recursos relacionados a uma tradução em um único local para facilitar o acesso e obter uma visão geral clara. No entanto, como você pode ver ao visualizar os detalhes de um item traduzido, as próprias traduções voltam para a pasta de recursos do idioma da tradução. Neste exemplo, a pasta é
+O objetivo do projeto é coletar todos os recursos relacionados a uma tradução em um único local para facilitar o acesso e obter uma visão geral clara. No entanto, como você pode ver ao visualizar os detalhes de um item traduzido, as próprias traduções voltam para a pasta de recursos do idioma da tradução. Neste exemplo, a pasta é:
 
 ```text
 /content/dam/wknd/es
@@ -223,27 +223,27 @@ Se você navegar até esta pasta por meio de **Navegação** -> **Assets** -> **
 
 A estrutura de tradução do AEM recebe as traduções do conector de tradução e cria automaticamente a estrutura de conteúdo, com base na raiz de idioma e usando as traduções fornecidas pelo conector.
 
-É importante entender que esse conteúdo não foi publicado e, portanto, não está disponível para serviços headless. Aprenderemos sobre essa estrutura de criação-publicação e veremos como publicar nosso conteúdo traduzido na próxima etapa da jornada de tradução.
+É importante entender que esse conteúdo não foi publicado e, portanto, não está disponível para serviços headless. Você aprende sobre essa estrutura de criação-publicação e vê como publicar o conteúdo traduzido na próxima etapa da jornada de tradução.
 
 ## Tradução humana {#human-translation}
 
 Se o seu serviço de tradução fornecer tradução humana, o processo de revisão oferecerá mais opções. Por exemplo, as traduções retornam ao projeto com o status de **Rascunho** e devem ser revisadas e aprovadas ou rejeitadas manualmente.
 
-A tradução humana está fora do escopo dessa jornada de localização. Consulte a seção [Recursos adicionais](#additional-resources) no final deste documento para obter mais informações sobre este tópico. No entanto, além das opções de aprovação adicionais, o fluxo de trabalho para traduções humanas é o mesmo das traduções automáticas, conforme descrito nesta jornada.
+A tradução humana está fora do escopo dessa jornada de localização. Consulte a [Recursos adicionais](#additional-resources) no final deste documento para obter mais informações sobre este tópico. No entanto, além das opções de aprovação adicionais, o fluxo de trabalho para traduções humanas é o mesmo das traduções automáticas, conforme descrito nesta jornada.
 
 ## O que vem a seguir {#what-is-next}
 
-Agora que você concluiu esta parte da jornada de tradução headless, você deve:
+Agora que concluiu esta parte da jornada de tradução headless, você pode fazer o seguinte:
 
 * Entender o que é um projeto de tradução.
-* Ser capaz de criar novos projetos de tradução.
+* Criar projetos de tradução.
 * Usar os projetos de tradução para traduzir o conteúdo headless.
 
-Desenvolva esse conhecimento e continue sua jornada de tradução do AEM headless revisando o documento [Publicar conteúdo traduzido](publish-content.md), por meio do qual você aprende a publicar seu conteúdo traduzido e como atualizar essas traduções conforme o conteúdo raiz do idioma se altera.
+Desenvolva esse conhecimento e continue sua jornada de tradução AEM headless revisando o documento a seguir [Publicar conteúdo traduzido](publish-content.md) onde você aprende a publicar seu conteúdo traduzido e como atualizar essas traduções conforme o conteúdo da raiz do idioma mudar.
 
 ## Recursos adicionais {#additional-resources}
 
 Embora seja recomendável seguir para a próxima parte da jornada de tradução headless revisando o documento [Publicar conteúdo traduzido](publish-content.md), os recursos opcionais a seguir fornecerão uma explicação aprofundada dos conceitos mencionados neste documento. Porém, eles não são obrigatórios para continuar na jornada headless.
 
 * [Gerenciamento de projetos de tradução](/help/sites-administering/tc-manage.md) - Saiba mais sobre os detalhes de projetos de tradução e recursos adicionais, como fluxos de trabalho de tradução humana e projetos multilíngues.
-* [Ambiente e ferramentas de criação](/help/sites-authoring/author-environment-tools.md##path-selection) - O AEM fornece vários mecanismos para organização e edição de conteúdo, incluindo um navegador de caminhos robusto.
+* [Ambiente e ferramentas de criação](/help/sites-authoring/author-environment-tools.md#path-selection) - O AEM fornece vários mecanismos para organização e edição de conteúdo, incluindo um navegador de caminhos robusto.

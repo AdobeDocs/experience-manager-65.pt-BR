@@ -10,7 +10,7 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 6ef87e4f86181f83b7c340e4954e9e85e6bb9ab1
+source-git-commit: 29fb61f9fdcb72864068662d935bc01779b9e451
 workflow-type: tm+mt
 source-wordcount: '11269'
 ht-degree: 2%
@@ -449,7 +449,7 @@ Ao mesmo tempo que cria um caso de suporte para Adobe para ter o DASH ativado na
 
 >[!IMPORTANT]
 >
->Qualquer vídeo que você tenha carregado *anterior* para habilitar o suporte a faixas de várias legendas e áudio na sua conta do Dynamic Media, [deve ser reprocessado](/help/assets/processing-profiles.md##reprocessing-assets). Esta etapa de reprocessamento de vídeo é necessária para que o recurso de faixa de várias legendas e áudio esteja disponível para eles. Os URLs do vídeo continuam funcionando e sendo reproduzidos como de costume, após o reprocessamento.
+>Qualquer vídeo que você tenha carregado *anterior* para habilitar o suporte a faixas de várias legendas e áudio na sua conta do Dynamic Media, [deve ser reprocessado](/help/assets/processing-profiles.md#reprocessing-assets). Esta etapa de reprocessamento de vídeo é necessária para que o recurso de faixa de várias legendas e áudio esteja disponível para eles. Os URLs do vídeo continuam funcionando e sendo reproduzidos como de costume, após o reprocessamento.
 
 **Para ativar o suporte a DASH, legendas múltiplas e faixas de áudio múltiplo na sua conta do Dynamic Media:**
 
@@ -625,7 +625,7 @@ Legendas e legendas adicionadas são compatíveis com os formatos WebVTT e Adobe
 
 >[!IMPORTANT]
 >
->Qualquer vídeo que você tenha carregado *anterior* para habilitar o suporte a faixas de várias legendas e áudio na sua conta do Dynamic Media, [deve ser reprocessado](/help/assets/processing-profiles.md##reprocessing-assets). Esta etapa de reprocessamento de vídeo é necessária para que o recurso de faixa de várias legendas e áudio esteja disponível para eles. Os URLs do vídeo continuam funcionando e sendo reproduzidos como de costume, após o reprocessamento.
+>Qualquer vídeo que você tenha carregado *anterior* para habilitar o suporte a faixas de várias legendas e áudio na sua conta do Dynamic Media, [deve ser reprocessado](/help/assets/processing-profiles.md#reprocessing-assets). Esta etapa de reprocessamento de vídeo é necessária para que o recurso de faixa de várias legendas e áudio esteja disponível para eles. Os URLs do vídeo continuam funcionando e sendo reproduzidos como de costume, após o reprocessamento.
 
 **Para adicionar multi-legendas e faixas de áudio ao seu vídeo:**
 
@@ -693,7 +693,7 @@ No cenário em que você configurou o Dynamic Media para publicação imediata, 
 
 >[!CAUTION]
 >
->Ao fazer upload de arquivos de legenda ou de áudio para um vídeo já publicado, esses arquivos serão excluídos se você [*reprocessar*](/help/assets/processing-profiles.md##reprocessing-assets) o vídeo. Somente o áudio original do vídeo permanece intacto. Nesses casos, você deve fazer upload novamente dos arquivos de legenda e de faixa de áudio para o vídeo.
+>Ao fazer upload de arquivos de legenda ou de áudio para um vídeo já publicado, esses arquivos serão excluídos se você [*reprocessar*](/help/assets/processing-profiles.md#reprocessing-assets) o vídeo. Somente o áudio original do vídeo permanece intacto. Nesses casos, você deve fazer upload novamente dos arquivos de legenda e de faixa de áudio para o vídeo.
 
 #### Adicione várias legendas a um vídeo que tenha um URL existente com modificador de legenda
 

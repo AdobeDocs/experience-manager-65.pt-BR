@@ -2,9 +2,9 @@
 title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 8edc6a97e2fc002d6dbbc4ce8b1828616b6c1cc6
+source-git-commit: 2209ab8498072744091f5af22887c8f13dbb3ac6
 workflow-type: tm+mt
-source-wordcount: '3440'
+source-wordcount: '3464'
 ht-degree: 3%
 
 ---
@@ -54,6 +54,10 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 * Para localizar rapidamente um projeto na exibição de Lista, onde você pode ter muitos projetos em seu sistema, o Adobe agora oferece suporte para a classificação do lado do servidor. Os nós de projeto são classificados no backend com base na coluna selecionada pelo usuário antes de renderizá-los na interface. (NPR-41027)
 
 * O AEM 6.5.18.0 é compatível com MongoDB 5.0 para 6.0.
+
+**Recurso obsoleto**
+
+* O AtiveMQ no AEM está obsoleto. O AtiveMQ foi usado para comunicação entre duas instâncias de publicação do AEM. A Adobe recomenda que os clientes agora usem o balanceador de carga.
 
 **Forms**
 
