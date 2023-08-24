@@ -9,14 +9,14 @@ discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
 feature: Adaptive Forms
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: e19a7e617bdabb678bd804cab3fea228ce19acfa
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 2%
+source-wordcount: '2154'
+ht-degree: 4%
 
 ---
 
-# Configuração da ação Enviar{#configuring-the-submit-action}
+# Configuração da ação Enviar {#configuring-the-submit-action}
 
 <span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
@@ -45,6 +45,7 @@ As ações de envio padrão disponíveis com formulários adaptáveis são:
 * Enviar usando modelo de dados do formulário
 * Ação de envio do portal do Forms
 * Chamar um fluxo de trabalho de AEM
+* Enviar para o Power Automate
 
 >[!NOTE]
 >
@@ -155,6 +156,19 @@ As variáveis podem ser usadas independentemente de o modelo de fluxo de trabalh
 * **Anexos**: Você pode usar o **[!UICONTROL Caminho do anexo]** opção para especificar o nome da pasta para armazenar os anexos carregados no Formulário adaptável. A pasta é criada em relação à carga útil. Se o workflow estiver marcado para armazenamento de dados externo, use a opção variable e selecione a variável na lista de variáveis disponíveis para o modelo de workflow.
 
 * **Documento do registro**: contém o Documento de registro gerado para o Formulário adaptável. Você pode usar o **[!UICONTROL Caminho do documento de registro]** opção para especificar o nome do documento de registro e o caminho do arquivo relativo à carga útil. Por exemplo, a variável `/addresschange/DoR.pdf` caminho cria uma pasta chamada `addresschange` relativo à carga útil e coloca o `DoR.pdf` em relação à carga útil. Também é possível especificar somente `DoR.pdf` para salvar somente o Documento de registro sem criar uma hierarquia de pastas. Se o workflow estiver marcado para armazenamento de dados externo, use a opção variable e selecione a variável na lista de variáveis disponíveis para o modelo de workflow.
+
+## Enviar para o Power Automate {#microsoft-power-automate}
+
+Você pode configurar um Formulário adaptável para executar um fluxo da nuvem do Microsoft® Power Automate no envio. O formulário adaptável configurado envia dados capturados, anexos e documentos de registro para processamento no fluxo da nuvem do Power Automate. Ele ajuda você a criar uma experiência personalizada de captura de dados, aproveitando o poder do Microsoft® Power Automate para criar lógicas de negócios sobre dados capturados e automatizar os fluxos de trabalho do cliente. Estes são alguns exemplos do que você pode fazer após integrar um formulário adaptável ao Microsoft® Power Automate:
+
+* Usar dados adaptáveis do Forms em processos de negócios do Power Automate
+* Use o Power Automate para enviar dados capturados para mais de 500 fontes de dados ou qualquer API disponível publicamente
+* Realizar cálculos complexos em dados capturados
+* Salve os dados do Forms adaptável em sistemas de armazenamento em uma programação predefinida
+
+O editor Forms adaptável fornece a **Chamar um fluxo do Microsoft® Power Automate** envie uma ação para enviar dados de formulários adaptáveis, anexos e documentos de registro para o fluxo da nuvem do Power Automate. Para usar a ação Enviar para enviar dados capturados para o Microsoft® Power Automate, [Conecte sua instância do AEM Forms com o Microsoft® Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md)
+
+Após uma configuração bem-sucedida, use o [Chamar um fluxo do Microsoft® Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) ação de envio para enviar dados a um Fluxo do Power Automate.
 
 ## Revalidação do lado do servidor no formulário adaptável {#server-side-revalidation-in-adaptive-form}
 

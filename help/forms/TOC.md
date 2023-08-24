@@ -9,9 +9,9 @@ breadcrumb-title: Guia do Forms
 user-guide-description: Crie, gerencie, publique e atualize formulários digitais.
 role: User
 feature: Forms Service
-source-git-commit: fc148a5f5e0fcaac2980dc73004fa92ac3b91fb3
+source-git-commit: e19a7e617bdabb678bd804cab3fea228ce19acfa
 workflow-type: tm+mt
-source-wordcount: '3889'
+source-wordcount: '3897'
 ht-degree: 4%
 
 ---
@@ -163,6 +163,7 @@ ht-degree: 4%
    + [Associar revisores de envio a um formulário](using/adding-reviewers-form.md)
    + [Criação da ajuda em contexto para campos de formulário](using/authoring-in-field-help.md)
    + [Usar o modo Layout para redimensionar componentes](/help/forms/using/resize-using-layout-mode.md)
+   + [Conectar e enviar dados do formulário adaptável para o Microsoft](/help/forms/using/forms-microsoft-power-automate-integration.md)
 + Forms adaptável - Criação avançada {#adaptive-forms-advanced-authoring}
    + [Criação de formulários adaptáveis usando o esquema JSON](using/adaptive-form-json-schema-form-model.md)
    + [Criação de formulários adaptáveis usando o esquema XML](using/adaptive-form-xml-schema-form-model.md)
@@ -480,12 +481,12 @@ ht-degree: 4%
       + [Definição das configurações do Adobe PDF](/help/forms/using/admin-help/configuring-pdf-settings.md)
       + [Definição das configurações de segurança](/help/forms/using/admin-help/configuring-security-settings.md)
       + [Definição das configurações de tipo de arquivo](/help/forms/using/admin-help/configuring-file-type-settings.md)
-      + [Importação e exportação de arquivos de configuração do Gerador de PDF](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+      + [Importação e exportação de arquivos de configuração de PDF Generator](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
       + [Habilitar suporte para PDF/A](/help/forms/using/admin-help/enable-pdf-a-support.md)
       + [Configuração de uma impressora de rede PDFG (somente Windows)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md)
       + [Configuração de fontes de fallback](/help/forms/using/admin-help/configuring-fallback-fonts.md)
       + [Modificação das configurações de conversão da exportação de PDF](/help/forms/using/admin-help/modifying-pdf-export-conversion-settings.md)
-      + [Conversão de arquivos usando o Gerador de PDF](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)
+      + [Conversão de arquivos usando o PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)
    + Configuração do SSL {#configure-ssl}
       + [Visão geral da configuração do SSL](/help/forms/using/admin-help/overview-6.md)
       + [Configurando o SSL para o servidor da aplicação JBoss](/help/forms/using/admin-help/configuring-ssl-jboss-application-server.md)
