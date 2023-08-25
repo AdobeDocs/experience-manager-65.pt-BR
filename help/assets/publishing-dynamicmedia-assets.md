@@ -10,16 +10,16 @@ discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 role: User, Admin
 exl-id: 750627fc-2a29-43ff-867e-55cb2e371043
 feature: Publishing
-source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
+source-git-commit: 4005e09349d22dbb70a7af378bed2a991ea7218d
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '475'
 ht-degree: 4%
 
 ---
 
 # Publicar ativos do Dynamic Media {#publishing-dynamic-media-assets}
 
-Publique os ativos do Dynamic Media selecionando os ativos que já foram carregados e tocando **[!UICONTROL Publish]** ou **[!UICONTROL Publicação rápida]**. Depois que os ativos do Dynamic Media forem publicados, eles estarão disponíveis para inclusão em uma página da Web por meio de um URL ou pela incorporação do código na página.
+Publique os ativos do Dynamic Media selecionando os ativos que já foram carregados e tocando **[!UICONTROL Publish]** ou **[!UICONTROL Publicação rápida]**. Depois que os ativos do Dynamic Media forem publicados, eles estarão disponíveis para inclusão em uma página da Web por meio de um URL ou pela incorporação do código na página da Web.
 
 Você também pode publicar instantaneamente os ativos que carregou, sem nenhuma intervenção do usuário. Consulte [Configurar o modo Dynamic Media - Scene7](config-dms7.md).
 Ou você pode publicar seletivamente ativos no Dynamic Media ou no Adobe Experience Manager, mutuamente exclusivos entre si, usando **[!UICONTROL Publicação seletiva]** no nível da pasta. Consulte [Trabalhar com publicação seletiva no Dynamic Media](/help/assets/selective-publishing.md).
