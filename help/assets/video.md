@@ -10,9 +10,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 29fb61f9fdcb72864068662d935bc01779b9e451
+source-git-commit: 051e6838bea0be9f826183db935d33725c18386d
 workflow-type: tm+mt
-source-wordcount: '11269'
+source-wordcount: '11313'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ A descrição do fluxo de trabalho passo a passo a seguir foi projetada para aju
 >
 >* Consulte [Configurar o Dynamic Media Cloud Service](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) em Configuração do Dynamic Media - Modo híbrido.
 >
->Problema de reprodução de vídeo conhecido no Dynamic Media *somente no Experience Manager 6.5.9.0*:
+>Problema atual conhecido de reprodução de vídeo no Dynamic Media *somente no Experience Manager 6.5.9.0*:
 >
 >* Se um vídeo publicado for atualizado, ele deverá ser publicado novamente para refletir as alterações no delivery.
 >
@@ -111,7 +111,7 @@ Saiba mais sobre [Práticas recomendadas para organizar ativos digitais para usa
       * Integrar vídeo usando o URL:
         [Vincular URLs ao seu aplicativo web](linking-urls-to-yourwebapplication.md).
 
-      * Integrar vídeo usando o código incorporado na página da Web:
+      * Integrar vídeo usando o código integrado em uma página da Web:
         [Incorporar o visualizador de vídeo em uma página da Web](embed-code.md).
 
    * [Gerar relatórios de vídeo](#viewing-video-reports).
@@ -128,7 +128,7 @@ Além disso, a qualidade do vídeo é comutada automaticamente de forma dinâmic
 
 A lógica que um reprodutor de vídeo usa para determinar qual vídeo codificado reproduzir ou selecionar durante a reprodução se baseia no seguinte algoritmo:
 
-1. O reprodutor de vídeo carrega o fragmento de vídeo inicial com base na taxa de bits mais próxima do valor definido para &quot;taxa de bits inicial&quot; no próprio reprodutor.
+1. O reprodutor de vídeo carrega o fragmento de vídeo inicial com base na taxa de bits mais próxima do valor definido como &quot;taxa de bits inicial&quot; no próprio reprodutor.
 1. O reprodutor de vídeo muda com base nas alterações na velocidade da largura de banda, usando os seguintes critérios:
 
    1. O player escolhe o fluxo de largura de banda mais alto abaixo ou igual à largura de banda estimada.
@@ -449,7 +449,7 @@ Ao mesmo tempo que cria um caso de suporte para Adobe para ter o DASH ativado na
 
 >[!IMPORTANT]
 >
->Qualquer vídeo que você tenha carregado *anterior* para habilitar o suporte a faixas de várias legendas e áudio na sua conta do Dynamic Media, [deve ser reprocessado](/help/assets/processing-profiles.md#reprocessing-assets). Esta etapa de reprocessamento de vídeo é necessária para que o recurso de faixa de várias legendas e áudio esteja disponível para eles. Os URLs do vídeo continuam funcionando e sendo reproduzidos como de costume, após o reprocessamento.
+>Qualquer vídeo que você tenha carregado *antes* habilitar suporte a faixas de várias legendas e áudio na sua conta do Dynamic Media, [deve ser reprocessado](/help/assets/processing-profiles.md#reprocessing-assets). Esta etapa de reprocessamento de vídeo é necessária para que o recurso de faixa de várias legendas e áudio esteja disponível para eles. Os URLs do vídeo continuam funcionando e sendo reproduzidos como de costume, após o reprocessamento.
 
 **Para ativar o suporte a DASH, legendas múltiplas e faixas de áudio múltiplo na sua conta do Dynamic Media:**
 
@@ -625,7 +625,7 @@ Legendas e legendas adicionadas são compatíveis com os formatos WebVTT e Adobe
 
 >[!IMPORTANT]
 >
->Qualquer vídeo que você tenha carregado *anterior* para habilitar o suporte a faixas de várias legendas e áudio na sua conta do Dynamic Media, [deve ser reprocessado](/help/assets/processing-profiles.md#reprocessing-assets). Esta etapa de reprocessamento de vídeo é necessária para que o recurso de faixa de várias legendas e áudio esteja disponível para eles. Os URLs do vídeo continuam funcionando e sendo reproduzidos como de costume, após o reprocessamento.
+>Qualquer vídeo que você tenha carregado *antes* habilitar suporte a faixas de várias legendas e áudio na sua conta do Dynamic Media, [deve ser reprocessado](/help/assets/processing-profiles.md#reprocessing-assets). Esta etapa de reprocessamento de vídeo é necessária para que o recurso de faixa de várias legendas e áudio esteja disponível para eles. Os URLs do vídeo continuam funcionando e sendo reproduzidos como de costume, após o reprocessamento.
 
 **Para adicionar multi-legendas e faixas de áudio ao seu vídeo:**
 
@@ -637,9 +637,14 @@ Legendas e legendas adicionadas são compatíveis com os formatos WebVTT e Adobe
 1. Na página Propriedades do vídeo, selecione a **[!UICONTROL Legendas e faixas de áudio]** guia.
 
    >[!TIP]
-   >Se você não vir a variável **[!UICONTROL Legendas e faixas de áudio]** significa que a pasta na qual o vídeo selecionado reside não tem um perfil de vídeo atribuído a ele. [Aplicar um perfil de vídeo à pasta](/help/assets/video-profiles.md#applying-video-profiles-to-specific-folders), em seguida, retorne a essas etapas.
+   >Se você não vir a variável **[!UICONTROL Legendas e faixas de áudio]** significa uma destas duas coisas:
+   >
+   >* A pasta em que o vídeo selecionado reside não tem um perfil de vídeo atribuído a ele. Nesse caso, consulte [Aplicar um perfil de vídeo à pasta](/help/assets/video-profiles.md#applying-video-profiles-to-specific-folders).
+   >* Ou o vídeo deve ser reprocessado pelo Dynamic Media. Nesse caso, consulte [Reprocessar ativos em uma pasta](/help/assets/processing-profiles.md#reprocessing-assets).
+   >
+   >Quando tiver concluído uma das tarefas acima, retorne a essas etapas.
 
-   ![Guia Legendas e faixas de áudio na página Propriedades.](assets-dm/msma-audiotracks.png)*A guia Legendas e faixas de áudio na página Propriedades do vídeo. Observe que não há faixa de áudio original associada ao vídeo, conforme indicado por uma caixa de listagem Faixas de áudio vazia. Quando o processamento de vídeo for concluído, a faixa é exibida.*
+   ![Guia Legendas e faixas de áudio na página Propriedades.](assets-dm/msma-audiotracks.png)*A guia Legendas e faixas de áudio na página Propriedades do vídeo.*
 
 1. (Opcional) Para adicionar um ou mais arquivos de subtítulo (ou legenda) a um vídeo, faça o seguinte:
    * Selecionar **[!UICONTROL Carregar Legendas]**.
@@ -697,11 +702,7 @@ No cenário em que você configurou o Dynamic Media para publicação imediata, 
 
 #### Adicione várias legendas a um vídeo que tenha um URL existente com modificador de legenda
 
-O Dynamic Media é compatível com a adição de uma única legenda com vídeo por meio de um modificador de URL (consulte [legenda](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=en)).
-
-<!-- IS THE CORRECT LINK THE ONE ABOVE OR IS IT THE LINK BELOW???? -->
-
-Consulte [Veicular conteúdo estático (não imagem)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) no *Ajuda da API de disponibilização e renderização de imagens do Dynamic Media* para obter mais informações sobre como usar a função JSON em um URL.
+O Dynamic Media permite a adição de uma única legenda com vídeo por meio de um modificador de URL. Consulte [Adicionar legendas ao vídeo](#adding-captions-to-video).
 
 Várias alterações de legenda têm precedência sobre uma legenda adicionada por meio de um modificador de URL para vídeos publicados.
 
@@ -725,11 +726,11 @@ Você pode observar o status do ciclo de vida de qualquer arquivo de legenda ou 
 
 | Status da faixa de legenda ou áudio | Descrição |
 | --- | --- |
-| Processamento | O processamento está em andamento. |
-| Processado | O processamento foi concluído. |
-| Publicado | Publicado no Dynamic Media. |
-| Falhou | O processamento não foi concluído. Exclua o arquivo e tente fazer upload novamente. |
-| A página não publicada | Processamento, mas ainda não publicado no Dynamic Media. |
+| Processamento | Quando um novo arquivo de legenda ou faixa de áudio é adicionado e salvo, ele entra em um estado de &quot;Processamento&quot;. O Dynamic Media processa o arquivo anexando o manifesto de transmissão ao vídeo principal. |
+| Processado | Após a conclusão do processamento, o arquivo de legenda ou trilha de áudio, ou a faixa de áudio original associada ao vídeo principal, é exibido no estado &quot;Processado&quot;. Você pode visualizar os arquivos de legenda e faixa de áudio que aparecem como &quot;Processados&quot; *antes* publique o vídeo em tempo real. |
+| Publicado | Um estado &quot;Publicado&quot; representa um estado semelhante a &quot;Publicado&quot; para um vídeo principal. Os ativos são publicados quando o vídeo principal é publicado e ficam disponíveis no URL público do Dynamic Media. |
+| Falhou | Um estado de &quot;falha&quot; significa que o processamento de um arquivo de legenda ou faixa de áudio não foi concluído. Exclua o arquivo de legenda ou faixa de áudio e carregue novamente. |
+| A página não publicada | Quando a publicação de um vídeo principal é cancelada explicitamente, qualquer subtítulo ou arquivo de trilha de áudio adicionado ao vídeo também tem sua publicação cancelada. |
 
 ![Coluna de status realçada para os campos Legendas e Faixas de áudio.](assets-dm/msma-lifecycle-status.png)*Status do ciclo de vida de cada subtítulo e arquivo de trilha de áudio carregados.*
 
@@ -763,7 +764,7 @@ No **Definir como padrão** caixa de diálogo, selecione **[!UICONTROL Substitui
 
 ### Visualizar um vídeo com várias legendas e faixas de áudio{#preview-video-audio-subtitle}
 
-Depois que os arquivos de legenda e de faixa de áudio forem carregados em um vídeo e processados, você poderá usar o visualizador de vídeo do Dynamic Media para visualizar todas as faixas diferentes. Isso ajuda você a ver a aparência e o som do seu vídeo para os clientes e garante que ele esteja se comportando conforme esperado.
+Depois que os arquivos de legenda e de faixa de áudio forem carregados em um vídeo e processados, você poderá usar o visualizador de vídeo do Dynamic Media (ou outros tipos de visualizador, se desejar) para visualizar todas as faixas diferentes. A visualização ajuda você a ver a aparência e o som do seu vídeo para os clientes e garante que ele esteja se comportando conforme esperado.
 
 Quando estiver satisfeito com o vídeo, você poderá [publicar](publishing-dynamicmedia-assets.md) usando qualquer um dos métodos a seguir.
 
@@ -783,7 +784,7 @@ A aba de visualização de Experience Manager padrão não mostra múltiplas fai
 
    ![Lista suspensa que mostra a opção Visualizadores.](assets-dm/msma-selectviewers.png)
 
-1. Na lista Visualizadores, selecione **[!UICONTROL Vídeo]**.
+1. Na lista Visualizadores, selecione um visualizador que deseja usar para a pré-visualização do vídeo. Como exemplo, a captura de tela a seguir mostra o **[!UICONTROL Vídeo]** visualizador sendo selecionado.
 
    ![Seleção do Visualizador de vídeo na lista suspensa Visualizadores.](assets-dm/msma-dmviewerselected.png)
 
@@ -791,7 +792,7 @@ A aba de visualização de Experience Manager padrão não mostra múltiplas fai
 
    ![A lista pop-up Áudio e legendas no visualizador de Vídeo.](assets-dm/msma-selectaudiosubtitle.png)*Simulação de um usuário que seleciona o áudio e a legenda para a reprodução de vídeo.*
 
-1. Selecione o vídeo do **[!UICONTROL Reproduzir]** botão para iniciar a reprodução.
+1. Para iniciar a reprodução, selecione o nome do vídeo **[!UICONTROL Reproduzir]** botão.
 Observe que **[!UICONTROL URL]** e **[!UICONTROL Incorporar]** no canto inferior esquerdo. Use esses botões para [vincule o URL do vídeo ao seu aplicativo web](/help/assets/linking-urls-to-yourwebapplication.md) ou para [incorporar o vídeo em uma página da Web](/help/assets/embed-code.md), respectivamente.
 1. Próximo ao canto superior direito da página de visualização, selecione **[!UICONTROL Fechar]**.
 
@@ -852,7 +853,7 @@ A faixa de áudio original extraída de um arquivo primário não pode ser baixa
 
 >[!IMPORTANT]
 >
-Esse tópico não é mais mantido ativamente. Ele é fornecido como está para usuários herdados do Dynamic Media. O Adobe recomenda que você [habilitar o recurso de faixa de várias legendas e de vários áudio](#enable-dash) na sua conta do Dynamic Media. Isso permite que você aproveite a arquitetura de back-end mais recente do Dynamic Media e um fluxo de trabalho simplificado para adicionar legendas, legendas e faixas de áudio aos seus vídeos.
+O Adobe recomenda que você [habilitar o recurso de faixa de várias legendas e de vários áudio](#enable-dash) na sua conta do Dynamic Media. Isso permite que você aproveite a arquitetura de back-end mais recente do Dynamic Media e um fluxo de trabalho simplificado para adicionar legendas, legendas e faixas de áudio aos seus vídeos.
 
 Você pode estender o alcance de seus vídeos para mercados globais adicionando legendas ocultas a vídeos únicos ou a Conjuntos de vídeos adaptados. Ao adicionar legendas ocultas, você evita a necessidade de dublar o áudio ou a necessidade de usar alto-falantes nativos para regravar o áudio para cada idioma diferente. O vídeo é reproduzido no idioma em que foi gravado. Legendas em idiomas estrangeiros aparecem para que pessoas de diferentes idiomas ainda possam entender a parte de áudio.
 
@@ -915,11 +916,7 @@ Consulte [Veicular conteúdo estático (não imagem)](https://experienceleague.a
 
 ## Adicionar marcadores de capítulo ao vídeo {#adding-chapter-markers-to-video}
 
->[!IMPORTANT]
->
-Esse tópico não é mais mantido ativamente. Ele é fornecido como está para usuários herdados do Dynamic Media. O Adobe recomenda que você [habilitar o recurso de faixa de várias legendas e de vários áudio](#enable-dash) na sua conta do Dynamic Media. Isso permite que você aproveite a arquitetura de back-end mais recente do Dynamic Media e um fluxo de trabalho simplificado para adicionar legendas, legendas e faixas de áudio aos seus vídeos.
-
-Você pode tornar os vídeos de formulário longos mais fáceis de assistir e navegar adicionando marcadores de capítulo a vídeos únicos ou a Conjuntos de vídeos adaptáveis. Quando um usuário reproduz o vídeo, ele pode clicar nos marcadores de capítulo na linha do tempo do vídeo (também conhecido como depurador do vídeo) para navegar facilmente até o ponto de interesse. Ou eles podem acessar imediatamente novos conteúdos, demonstrações e tutoriais.
+Você pode facilitar a visualização e a navegação dos vídeos de formulário longo adicionando marcadores de capítulo a vídeos únicos ou aos Conjuntos de vídeos adaptados. Quando um usuário reproduz o vídeo, ele pode clicar nos marcadores de capítulo na linha do tempo do vídeo (também conhecido como depurador do vídeo) para navegar facilmente até o ponto de interesse. Ou eles podem acessar imediatamente novos conteúdos, demonstrações e tutoriais.
 
 >[!NOTE]
 >
