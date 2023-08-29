@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 2bba1d5209fe64679c6ba6db0028562ff1415a10
 workflow-type: tm+mt
-source-wordcount: '7589'
+source-wordcount: '7690'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,13 @@ Use modelos de fluxo de trabalho para converter uma lógica de negócios em um p
 
 ## Etapas do Forms Workflow {#forms-workflow-steps}
 
-As etapas do fluxo de trabalho do Forms executam operações específicas do AEM Forms em um fluxo de trabalho do AEM. Essas etapas permitem criar rapidamente formulários adaptáveis com base no fluxo de trabalho centrado no Forms no OSGi. Esses workflows podem ser usados para desenvolver workflows básicos de revisão e aprovação, processos comerciais internos e entre firewalls. Você também pode usar as etapas Forms Workflow para iniciar serviços de documentos, integrar com o fluxo de trabalho de assinatura do Adobe Sign e executar outras operações do AEM Forms. Você precisa [Complemento do AEM Forms](https://www.adobe.com/go/learn_aemforms_documentation_63) para usar essas etapas em um workflow.
+As etapas do Forms Workflow executam operações específicas do AEM Forms em um fluxo de trabalho AEM. Essas etapas permitem criar rapidamente formulários adaptáveis com base no fluxo de trabalho centrado no Forms no OSGi. Esses workflows podem ser usados para desenvolver workflows básicos de revisão e aprovação, processos comerciais internos e entre firewalls. Você também pode usar as etapas Forms Workflow para iniciar serviços de documentos, integrar com o fluxo de trabalho de assinatura do Adobe Sign e executar outras operações do AEM Forms. Você precisa [Complemento do AEM Forms](https://www.adobe.com/go/learn_aemforms_documentation_63) para usar essas etapas em um workflow.
 
 As etapas de fluxo de trabalho centradas no Forms executam operações específicas do AEM Forms em um fluxo de trabalho do AEM. Forms Essas etapas permitem criar rapidamente um fluxo de trabalho adaptável baseado em Forms no OSGi. Esses workflows podem ser usados para desenvolver workflows básicos de revisão e aprovação, processos comerciais internos e entre firewalls.
 
 >[!NOTE]
 >
->Se o modelo de fluxo de trabalho for marcado para um armazenamento externo, para todas as etapas do fluxo de trabalho do Forms, será possível selecionar apenas a opção de variável para armazenar ou recuperar arquivos de dados e anexos.
+>Se o modelo de fluxo de trabalho estiver marcado para um armazenamento externo, para todas as etapas de Forms Workflow, será possível selecionar apenas a opção de variável para armazenar ou recuperar arquivos de dados e anexos.
 
 ## Atribuir etapa de tarefa {#assign-task-step}
 
@@ -58,7 +58,7 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
 
 >[!NOTE]
 >
->Você deve ter atribuições de grupo cm-agent-users e workflow-users para acessar a interface do usuário do Agente de comunicações interativas na caixa de entrada do AEM.
+>Você deve ter atribuições de grupo cm-agent-users e workflow-users para acessar a interface do usuário do Agente de comunicações interativas na Caixa de entrada do AEM.
 
 * **Formulário adaptável ou caminho de comunicação interativa**: especifique o caminho do formulário adaptável ou da Comunicação interativa. Você pode usar o formulário adaptável ou a comunicação interativa enviada ao fluxo de trabalho, disponível em um caminho absoluto ou recuperar o formulário adaptável de um caminho armazenado em uma variável do tipo de dados string.
 * **Selecione o PDF de entrada usando:** Especifique o caminho de um documento PDF não interativo. O campo está disponível ao escolher um documento PDF não interativo no campo Tipo. Você pode selecionar o PDF de entrada usando o caminho relativo à carga útil, salvo em um caminho absoluto ou usando uma variável do tipo de dados Documento. Por exemplo, [Payload_Diretory]/Workflow/PDF/credit-card.pdf. O caminho não existe no repositório crx. Um administrador cria o caminho antes de usá-lo. Você precisa de uma opção Documento de registro ativada ou de formulários adaptáveis baseados em modelo de formulário para usar a opção Caminho do PDF.
@@ -277,7 +277,7 @@ A etapa Chamar serviço do modelo de dados de formulário tem os campos listados
 
 A etapa Assinar documento permite usar o Adobe Sign para assinar documentos. A etapa Assinar documento tem as seguintes propriedades:
 
-* **Nome do Contrato:** Especifique o título do contrato. O nome do contrato torna-se parte do assunto e do corpo do texto do email enviado aos signatários. Você pode armazenar o nome em uma variável do tipo de dados String ou selecionar **Literal** para adicionar o nome manualmente.
+* **Nome do Contrato:** Especifique o título do contrato. O nome do contrato torna-se parte do assunto e do corpo do texto do email enviado aos recipients. Você pode armazenar o nome em uma variável do tipo de dados String ou selecionar **Literal** para adicionar o nome manualmente.
 
 * **Localidade:** Especifique o idioma para as opções de email e verificação. Você pode armazenar o local em uma variável do tipo de dados String ou selecionar **Literal** para escolher o local na lista de opções disponíveis. Você deve definir o código do local ao armazenar o valor do local em uma variável. Por exemplo, especifique **pt_BR** para inglês e **fr_FR** para o francês.
 
@@ -293,14 +293,26 @@ A etapa Assinar documento permite usar o Adobe Sign para assinar documentos. A e
 
 * **Dias até o prazo final:** Um documento está marcado como vencido (com prazo excedido) depois que não há nenhuma atividade na tarefa pelo número de dias especificado no **Dias até o prazo** campo. O número de dias é contado depois que o documentado é atribuído a um usuário para assinatura.
 * **Frequência de e-mails de lembrete:** Você pode enviar um email de lembrete em intervalos diários ou semanais. A semana é contada a partir do dia em que o documento é atribuído a um usuário para assinatura.
-* **Processo de assinatura:** Você pode optar por assinar um documento em uma ordem sequencial ou paralela. Em ordem sequencial, um signatário recebe o documento de cada vez para assinar. Depois que o primeiro signatário concluir a assinatura do documento, ele será enviado ao segundo signatário e assim por diante. Em ordem paralela, vários signatários podem assinar um documento de cada vez.
+* **Processo de assinatura:** Você pode optar por assinar um documento em uma ordem sequencial ou paralela. Em ordem sequencial, um destinatário recebe o documento de cada vez para assinar. Depois que o primeiro destinatário concluir a assinatura do documento, o documento será enviado para o segundo destinatário e assim por diante. Em ordem paralela, vários destinatários podem assinar um documento de cada vez.
 * **URL de redirecionamento:** Especifique um URL de redirecionamento. Depois que o documento for assinado, você poderá redirecionar o destinatário para um URL. Normalmente, este URL contém uma mensagem de agradecimento ou mais instruções.
 * **Estágio do fluxo de trabalho:** Um fluxo de trabalho pode ter vários estágios. Esses estágios são exibidos na Caixa de entrada do AEM. É possível definir esses estágios nas propriedades do modelo (Sidekick > Página > Propriedades da página > Estágios).
-* **Selecionar assinantes:** Especifique o método para escolher signatários para o documento. Você pode atribuir dinamicamente o fluxo de trabalho a um usuário ou grupo ou adicionar manualmente os detalhes de um signatário.
-* **Script ou serviço para selecionar assinantes:** A opção estará disponível somente se a opção Dynamically estiver selecionada no campo Select Signers. Você pode especificar um ECMAScript ou um serviço para escolher assinantes e opções de verificação para um documento.
-* **Detalhes do signatário:** A opção estará disponível somente se a opção Manually estiver selecionada no campo Select Signers. Especifique o endereço de email e escolha um mecanismo de verificação opcional. Antes de selecionar um mecanismo de verificação de duas etapas, verifique se a opção de verificação correspondente está habilitada para a conta configurada do Adobe Sign. Você pode usar uma variável do tipo de dados String para definir valores para **[!UICONTROL E-mail]**, **[!UICONTROL Código do país]**, e **[!UICONTROL Número de telefone]** campos. A variável **[!UICONTROL Código do país]** e **[!UICONTROL Número de telefone]** os campos são exibidos somente se você selecionar **[!UICONTROL Verificação de telefone]** do **[!UICONTROL Verificação de 2 etapas]** lista suspensa.
+* **Selecionar Destinatários:** Especifique o método para escolher o destinatário do documento. Você pode atribuir o fluxo de trabalho de maneira dinâmica a um usuário ou grupo ou adicionar manualmente os detalhes de um recipient. Ao selecionar Manualmente na lista suspensa, você adiciona detalhes do recipient, como Email, Função e Método de autenticação.
+
+  >[!NOTE]
+  >
+  >* Na seção Função, você pode especificar a função do destinatário como Signatário, Aprovador, Aceitador, Destinatário certificado, Preenchedor de formulário e Delegador.
+  >* Se você selecionar Delegator na opção Role, o Delegator poderá atribuir a tarefa de assinatura a outros recipients.
+  >* Se você tiver configurado um método de autenticação para [!DNL Adobe Sign], com base em sua configuração, você seleciona um método de autenticação, como autenticação baseada em telefone, autenticação baseada em identidade social, autenticação baseada em conhecimento, autenticação baseada em identidade governamental.
+* **Script ou serviço para selecionar destinatários:** A opção estará disponível somente se a opção Dynamically estiver selecionada no campo Select Recipients. Você pode especificar um ECMAScript ou um serviço para escolher os destinatários e as opções de verificação de um documento.
+* **Detalhes do destinatário:** A opção estará disponível somente se a opção Manually estiver selecionada no campo Select Recipients. Especifique o endereço de email e escolha um mecanismo de verificação opcional. Antes de selecionar um mecanismo de verificação de duas etapas, verifique se a opção de verificação correspondente está habilitada para a conta configurada do Adobe Sign. Você pode usar uma variável do tipo de dados String para definir valores para **[!UICONTROL E-mail]**, **[!UICONTROL Código do país]**, e **[!UICONTROL Número de telefone]** campos. A variável **[!UICONTROL Código do país]** e **[!UICONTROL Número de telefone]** os campos são exibidos somente se você selecionar **[!UICONTROL Verificação de telefone]** do **[!UICONTROL Verificação de 2 etapas]** lista suspensa.
 * **Variável de status:** Um documento habilitado para Adobe Sign armazena o status de assinatura do documento em uma variável do tipo de dados String. Especifique o nome da variável de status (adobeSignStatus). Uma variável de status de uma instância está disponível no CRXDE em /etc/workflow/instances/&lt;server>/&lt;date-time>/&lt;instance of=&quot;&quot; workflow=&quot;&quot; model=&quot;&quot;>/workItems/&lt;node>/metaData contém o status de uma variável.
-* **Salve o documento assinado usando as opções abaixo:** Especifique o local onde manter os documentos assinados. Você pode optar por substituir o arquivo de carga útil, colocar o documento assinado em um local no diretório de carga útil ou armazenar o documento assinado em uma variável do tipo Documento.
+* **[!UICONTROL Documento assinado]**: é possível salvar o status do documento assinado na variável. Para adicionar uma trilha de auditoria de assinatura eletrônica para maior segurança e legalidade ao Documento assinado, você pode Incluir o Relatório de auditoria. Você pode salvar o documento assinado usando a pasta Variável ou Carga.
+  >[!NOTE]
+  >
+  > O relatório de auditoria é anexado à última página do documento assinado.
+<!--
+* **Save signed document using below options:** Specify the location to keep signed documents. You can choose to overwrite the payload file, place the signed document at a location within the payload directory, or store the signed document in a variable of Document type.
+-->
 
 ## Etapas dos serviços de documento {#document-services-steps}
 
@@ -449,7 +461,7 @@ A etapa Gerar Saída Impressa tem as seguintes propriedades:
 
 * **[!UICONTROL Cópias]**: um valor inteiro que especifica o número de cópias para gerar para a saída. O valor padrão é 1.
 
-* **[!UICONTROL Impressão frente e verso]**: um valor de Paginação que especifica se a impressão em frente e verso ou em verso deve ser usada. As impressoras que suportam PostScript e PCL usam este valor.Se você fornecer um valor literal, selecione um destes valores:
+* **[!UICONTROL Impressão frente e verso]**: um valor de Paginação que especifica se a impressão em frente e verso ou em verso deve ser usada. As impressoras que suportam PostScript e PCL usam esse valor. Se você fornecer um valor literal, selecione um destes valores:
    * **[!UICONTROL Borda maior frente e verso]**: use a impressão frente e verso e imprima usando a paginação de borda maior.
    * **[!UICONTROL Borda menor frente e verso]**: use a impressão frente e verso e imprima usando a paginação de borda curta.
    * **[!UICONTROL Simples]**: use a impressão de lado único.
