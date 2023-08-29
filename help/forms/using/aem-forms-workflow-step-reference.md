@@ -5,7 +5,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 2bba1d5209fe64679c6ba6db0028562ff1415a10
+source-git-commit: 3c7b46c20b2f34bd83941649cbff2ac16c3aade2
 workflow-type: tm+mt
 source-wordcount: '7690'
 ht-degree: 0%
@@ -303,6 +303,7 @@ A etapa Assinar documento permite usar o Adobe Sign para assinar documentos. A e
   >* Na seção Função, você pode especificar a função do destinatário como Signatário, Aprovador, Aceitador, Destinatário certificado, Preenchedor de formulário e Delegador.
   >* Se você selecionar Delegator na opção Role, o Delegator poderá atribuir a tarefa de assinatura a outros recipients.
   >* Se você tiver configurado um método de autenticação para [!DNL Adobe Sign], com base em sua configuração, você seleciona um método de autenticação, como autenticação baseada em telefone, autenticação baseada em identidade social, autenticação baseada em conhecimento, autenticação baseada em identidade governamental.
+
 * **Script ou serviço para selecionar destinatários:** A opção estará disponível somente se a opção Dynamically estiver selecionada no campo Select Recipients. Você pode especificar um ECMAScript ou um serviço para escolher os destinatários e as opções de verificação de um documento.
 * **Detalhes do destinatário:** A opção estará disponível somente se a opção Manually estiver selecionada no campo Select Recipients. Especifique o endereço de email e escolha um mecanismo de verificação opcional. Antes de selecionar um mecanismo de verificação de duas etapas, verifique se a opção de verificação correspondente está habilitada para a conta configurada do Adobe Sign. Você pode usar uma variável do tipo de dados String para definir valores para **[!UICONTROL E-mail]**, **[!UICONTROL Código do país]**, e **[!UICONTROL Número de telefone]** campos. A variável **[!UICONTROL Código do país]** e **[!UICONTROL Número de telefone]** os campos são exibidos somente se você selecionar **[!UICONTROL Verificação de telefone]** do **[!UICONTROL Verificação de 2 etapas]** lista suspensa.
 * **Variável de status:** Um documento habilitado para Adobe Sign armazena o status de assinatura do documento em uma variável do tipo de dados String. Especifique o nome da variável de status (adobeSignStatus). Uma variável de status de uma instância está disponível no CRXDE em /etc/workflow/instances/&lt;server>/&lt;date-time>/&lt;instance of=&quot;&quot; workflow=&quot;&quot; model=&quot;&quot;>/workItems/&lt;node>/metaData contém o status de uma variável.
