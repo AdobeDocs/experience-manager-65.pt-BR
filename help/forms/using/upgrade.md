@@ -11,14 +11,14 @@ discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
 role: Admin
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 077208ed8fea6a644487dbb46efb54ea44f303b4
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 4%
+source-wordcount: '341'
+ht-degree: 6%
 
 ---
 
-# Atualização para o AEM 6.5 Forms{#upgrade-to-aem-forms}
+# Atualização para o AEM 6.5 Forms {#upgrade-to-aem-forms}
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -26,7 +26,7 @@ ht-degree: 4%
 | AEM 6.5 | Este artigo |
 
 
-O AEM 6.5 Forms inclui vários novos recursos e melhorias que simplificam a criação, o gerenciamento e as experiências do usuário com formulários e correspondências. Para saber mais sobre todos os novos recursos e melhorias do AEM 6.5 Forms, consulte [Documento de resumo dos novos recursos](../../forms/using/whats-new.md).
+O AEM 6.5 Forms inclui vários novos recursos e melhorias que simplificam a criação, o gerenciamento e as experiências do usuário com formulários e correspondências. Para saber mais sobre todos os novos recursos e aprimoramentos do AEM 6.5 Forms, consulte [Documento de resumo dos novos recursos](../../forms/using/whats-new.md).
 
 Você pode atualizar sua instalação existente do LiveCycle ou do AEM Forms para obter novos recursos e melhorias oferecidos no AEM 6.5 Forms e, ao mesmo tempo, manter intactos os dados, processos e ativos existentes. Na atualização, os metadados e o estado dos processos também são preservados. Você pode escolher um caminho de atualização para começar a atualizar.
 
@@ -49,6 +49,7 @@ O diagrama a seguir exibe os caminhos de atualização disponíveis para o AEM F
 
 ![Atualização do JEE 6.5](do-not-localize/jee-upgrade-6-5.png)
 
+
 Você pode executar uma atualização direta de:
 
 * AEM 6.3 Forms no JEE
@@ -57,16 +58,14 @@ Você pode executar uma atualização direta de:
 
 Você também pode executar uma atualização multi-hop de
 
-* LiveCycle ES2
-* LiveCycle ES3
 * LiveCycle ES4 SP1
 * AEM 6.0 Forms no JEE
 * AEM 6.1 Forms no JEE
 * AEM 6.2 Forms no JEE
 
-O AEM 6.5.12.0 Forms no JEE fornece dois tipos de instaladores: [Instalador completo](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) e [Instalador de patch](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+O AEM 6.5.18.0 Forms no JEE fornece dois tipos de instaladores: [Instalador completo](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) e [Instalador de patch](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
-**Instalador completo**: você pode usar o instalador completo para configurar novas instâncias do AEM Forms ou executar atualizações do AEM 6.3 Forms no JEE, do AEM AEM 6.4 no JEE e atualização imediata do 6.5.x.x Forms AEM no JEE para o 6.5.12.0 Forms no JEE.
+**Instalador completo**: você pode usar o instalador completo para configurar novas instâncias do AEM Forms ou executar atualizações do AEM 6.5.x.x Forms AEM no JEE para o 6.5.18.0 Forms no JEE.
 
 **Instalador de patch**: o instalador de patches é para clientes que já usam as versões do AEM 6.5.x.x. Você pode usar o instalador de patches para atualizar para a versão mais recente do AEM Forms.
 

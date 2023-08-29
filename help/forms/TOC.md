@@ -9,9 +9,9 @@ breadcrumb-title: Guia do Forms
 user-guide-description: Crie, gerencie, publique e atualize formulários digitais.
 role: User
 feature: Forms Service
-source-git-commit: e19a7e617bdabb678bd804cab3fea228ce19acfa
+source-git-commit: 28cc10b79d2ac8cf12ddfd0bf7d1a8e013fe6238
 workflow-type: tm+mt
-source-wordcount: '3897'
+source-wordcount: '3912'
 ht-degree: 4%
 
 ---
@@ -136,6 +136,7 @@ ht-degree: 4%
    + [Ativar os Componentes principais para o seu ambiente](/help/forms/using/enable-adaptive-forms-core-components.md)
    + [Criar um formulário adaptável baseado nos Componentes principais](/help/forms/using/create-an-adaptive-form-core-components.md)
    + [Criar temas para Forms adaptável com base em Componentes principais](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
+   + [Criar e usar manipulador de erros personalizado para Componentes principais com base no Adaptive Forms](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
 + Forms adaptável - Criação básica {#adaptive-forms-basic-authoring}
    + [Práticas recomendadas para trabalhar com formulários adaptáveis](using/adaptive-forms-best-practices.md)
    + [Criação de um formulário adaptável](using/creating-adaptive-form.md)
@@ -188,7 +189,7 @@ ht-degree: 4%
    + [Integrar o Adobe Sign com o AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
    + [Criação e gerenciamento de revisões para ativos em formulários](using/create-reviews-forms.md)
    + [Incorpore um formulário adaptável ou a Comunicação interativa no aplicativo de página única do AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
-   + [Mensagens de erro de validação padrão Forms adaptável](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
+   + [Criar e usar manipulador de erros personalizado para o Adaptive Forms](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
 + Comunicações interativas {#interactive-communications}
    + [Introdução à interface de criação da comunicação interativa](using/introduction-interactive-communication-authoring.md)
    + [Criar uma comunicação interativa](using/create-interactive-communication.md)
