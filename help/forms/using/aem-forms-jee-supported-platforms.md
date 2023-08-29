@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 25d7f93137e2410ecafc22dc4899e0ce5f654083
+source-git-commit: 018ffe71d0186e1eb07e5f59e3d6a48ed316de47
 workflow-type: tm+mt
-source-wordcount: '3639'
+source-wordcount: '3660'
 ht-degree: 1%
 
 ---
@@ -759,6 +759,8 @@ As seguintes plataformas estão marcadas como obsoletas na versão 6.5.10.0 do A
       - Driver JDBC do Microsoft® SQL Server 6.2.1.0
       - Driver JDBC do Microsoft® SQL Server 6.2.2.0
       - Driver Microsoft® JDBC 8.x para SQL Server
+
+   - **Atualizações de plataforma para o serviço PDF Generator**: [!DNL Adobe Experience Manager Forms] no JEE removeu o suporte para as seguintes plataformas para o PDF Generator e em geral:
       - Microsoft® Sharepoint 2016
       - Microsoft® Office 2016
       - Microsoft® Office Visio 2016
