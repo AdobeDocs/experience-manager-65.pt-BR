@@ -2,10 +2,10 @@
 title: Jornada do arquiteto de conteúdo do Adobe Experience Manager Headless
 description: Uma introdução aos recursos headless avançados e flexíveis do Adobe Experience Manager e como modelar conteúdo para seu projeto.
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 88%
+source-wordcount: '731'
+ht-degree: 86%
 
 ---
 
@@ -81,3 +81,6 @@ Agora que você aprendeu os conceitos e a terminologia, o próximo passo é [Sab
 * Jornada do desenvolvedor AEM headless
    * [Saiba mais sobre o desenvolvimento headless do CMS](/help/journey-headless/developer/learn-about.md)
    * [Saiba como modelar seu conteúdo](/help/journey-headless/developer/model-your-content.md)
+* [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
+* [Portal do desenvolvedor de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* [Tutorials para headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)

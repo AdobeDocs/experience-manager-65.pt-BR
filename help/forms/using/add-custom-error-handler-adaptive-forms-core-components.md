@@ -7,9 +7,9 @@ keywords: Adicionar um manipulador de erros personalizado, adicionar um manipula
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 28cc10b79d2ac8cf12ddfd0bf7d1a8e013fe6238
+source-git-commit: f8e0ac45d98d6485ccb60e754657caf9d190c3ea
 workflow-type: tm+mt
-source-wordcount: '2284'
+source-wordcount: '2281'
 ht-degree: 1%
 
 ---
@@ -164,7 +164,7 @@ Algumas das opções para exibir as respostas de erro são:
 
 Antes de usar o manipulador de erros em uma Forms adaptável:
 
-* [Ativar os Componentes principais adaptáveis do Forms para o ambiente do AEM Cloud Service](enable-adaptive-forms-core-components.md).
+* [Ativar os Componentes principais adaptáveis do Forms para o seu ambiente](enable-adaptive-forms-core-components.md).
 * Conhecimento básico para [criar uma função personalizada](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.).
 * Instale a versão mais recente do [Apache Maven](https://maven.apache.org/download.cgi).
 

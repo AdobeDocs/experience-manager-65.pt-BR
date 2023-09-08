@@ -2,10 +2,10 @@
 title: Desenvolvimento headless para sites AEM 6.5
 description: Saiba como os recursos headless avançados do AEM 6.5, como Modelos de conteúdo, Fragmentos de conteúdo e a API do GraphQL, funcionam juntos para permitir gerenciar suas experiências de forma central e distribuí-las entre canais.
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 36%
+source-wordcount: '520'
+ht-degree: 35%
 
 ---
 
@@ -55,3 +55,4 @@ Há vários recursos disponíveis para o começar a usar os recursos headless do
 | [Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md) | **Para usuários novos no AEM e no headless** tecnologias, comece aqui para obter uma introdução abrangente ao AEM e seus recursos headless, desde a teoria do headless até a inauguração do seu primeiro projeto headless. | Guia | Desenvolvedores **novatos no AEM e no headless** | 1 hora |
 | [Guia de introdução do Headless](/help/sites-developing/headless/getting-started/introduction.md) | **Para usuários experientes do AEM** que precisam de um breve resumo dos principais recursos headless do AEM, confira esta visão geral de início rápido. | Início rápido | Desenvolvedores e administradores **com experiência no AEM** | 20 minutos |
 | [Tutorial prático do AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=pt-BR) | **Se preferir uma abordagem prática e estiver familiarizado com o AEM**, este tutorial aborda diretamente a criação de um simples projeto headless. | Tutorial | Desenvolvedores | 2 horas |
+| [Portal do desenvolvedor de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR) | Essa coleção de recursos é fornecida para **novo** e **experiente** desenvolvedores. | Coleta de recursos | Desenvolvedores | |

@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 018ffe71d0186e1eb07e5f59e3d6a48ed316de47
+source-git-commit: 54bed871375ddc9d18af564318ceac95dd1dd2f9
 workflow-type: tm+mt
-source-wordcount: '3660'
+source-wordcount: '3667'
 ht-degree: 1%
 
 ---
@@ -22,8 +22,7 @@ ht-degree: 1%
 <div class="preview">
 
 O Adobe lançou um [instalador completo](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) com AEM 6.5 Forms Service Pack 18 (6.5.18.0) no JEE, juntamente com os instaladores de patch. O instalador completo oferece suporte para novas plataformas, enquanto o instalador de patch inclui apenas correções de erros.
-
-Se você estiver fazendo uma nova instalação ou planejando usar o software mais recente para o seu Forms AEM 6.5 no ambiente JEE, o Adobe recomenda usar [Instalador completo do AEM 6.5.18.0 Forms no JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) lançado em 29 de agosto de 2023, em vez do instalador do Forms AEM 6.5 lançado em 08 de abril de 2019.
+Se você estiver fazendo uma nova instalação ou planejando usar o software mais recente para o seu Forms AEM 6.5 no ambiente JEE, o Adobe recomenda usar [Instalador completo do AEM 6.5.18.0 Forms no JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) lançado em 31 de agosto de 2023 em vez do instalador do Forms AEM 6.5 lançado em 08 de abril de 2019 ou do Forms Installer AEM 6.5.12 lançado em 03 de março de 2022.
 
 </div>
 
@@ -804,4 +803,3 @@ As seguintes plataformas estão marcadas como obsoletas na versão 6.5.10.0 do A
 - 9 de setembro de 2020
 
    - Alteração da versão com suporte do aplicativo iOS para AEM Forms para iOS 12. A versão anterior era iOS 11.
-

@@ -2,10 +2,10 @@
 title: Como executar o aplicativo headless
 description: Nesta parte da Jornada de desenvolvedores sem periféricos do AEM, saiba como implantar um aplicativo sem periféricos em tempo real.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '1846'
-ht-degree: 50%
+source-wordcount: '1873'
+ht-degree: 51%
 
 ---
 
@@ -72,7 +72,7 @@ Um ambiente do AEM completo é composto de um Autor, Publicação e Dispatcher. 
 
 ## O fluxo de trabalho de desenvolvimento local {#the-local-development-workflow}
 
-O projeto de desenvolvimento local é construído no Apache Maven e usa o Git para controle de origem. Para atualizar o projeto, os desenvolvedores podem usar o ambiente de desenvolvimento integrado de sua preferência, como Eclipse, Visual Studio Code ou IntelliJ, entre outros.
+O projeto de desenvolvimento local é construído no Apache Maven e usa o Git para controle de origem. Para atualizar o projeto, a equipe de desenvolvimento pode usar seu ambiente integrado preferido, como Eclipse, Visual Studio Code, IntelliJ, entre outros.
 
 Para testar atualizações de código ou conteúdo assimiladas pelo aplicativo headless, implante as atualizações no tempo de execução do AEM local. Isso inclui instâncias locais dos serviços de autoria e publicação do AEM.
 
@@ -225,3 +225,7 @@ Se esse tipo de flexibilidade for algo que você precisa para seu projeto, conti
    * [Controle de um cache CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
 
    * Configuração do [Reescrita CDN](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html) (*pesquisar Reescritor CDN*)
+
+* [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
+* [Portal do desenvolvedor de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* [Tutorials para headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)

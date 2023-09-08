@@ -10,9 +10,9 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 feature: Adaptive Forms
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: 0985e591df83c7f1604bac37af771e8a7a21e691
+source-git-commit: 517fe7fb8917164ee05b006214055592510d15da
 workflow-type: tm+mt
-source-wordcount: '6983'
+source-wordcount: '6921'
 ht-degree: 0%
 
 ---
@@ -30,21 +30,22 @@ ht-degree: 0%
 
 O recurso do editor de regras no Adobe Experience Manager Forms permite que usuários e desenvolvedores de negócios de formulários gravem regras em objetos de formulário adaptáveis. Essas regras definem as ações a serem acionadas nos objetos de formulário com base nas condições predefinidas, entradas do usuário e ações do usuário no formulário. Isso ajuda a simplificar ainda mais a experiência de preenchimento de formulário, garantindo precisão e velocidade.
 
-O editor de regras fornece uma interface de usuário intuitiva e simplificada para escrever regras. O editor de regras oferece um editor visual para todos os usuários. Além disso, somente para usuários avançados de formulários, o editor de regras fornece um editor de código para escrever regras e scripts. Algumas das principais ações que podem ser executadas em objetos de formulário adaptáveis usando regras do são:
+O editor de regras fornece uma interface de usuário intuitiva e simplificada para escrever regras. O editor de regras oferece um editor visual para todos os usuários. Além disso, apenas para usuários avançados em formulários, regra editor fornece um editor de código para gravar regras e scripts.
+<!-- Some of the key actions that you can perform on adaptive form objects using rules are:
 
-* Mostrar ou ocultar um objeto
-* Ativar ou desativar um objeto
-* Definir um valor para um objeto
-* Validar o valor de um objeto
-* Executar funções para calcular o valor de um objeto
-* Chame um serviço de modelo de dados de formulário e execute uma operação
-* Definir a propriedade de um objeto
+* Show or hide an object
+* Enable or disable an object
+* Set a value for an object
+* Validate the value of an object
+* Execute functions to compute the value of an object
+* Invoke a form data model service and perform an operation
+* Set property of an object -->
 
-O Editor de regras substitui os recursos de script no AEM 6.1 Forms e em versões anteriores. No entanto, os scripts existentes são preservados no novo editor de regras. Para obter mais informações sobre como trabalhar com scripts existentes no editor de regras, consulte [Impacto do editor de regras nos scripts existentes](#impact-of-rule-editor-on-existing-scripts).
+A regra editor substitui os recursos do script em AEM Forms 6.1 e versões anteriores. No entanto, seus scripts existentes são preservados no novo regra editor. Para obter mais informações sobre como trabalhar com scripts existentes no editor de regras, consulte [Impacto do editor de regras nos scripts existentes](#impact-of-rule-editor-on-existing-scripts).
 
-Os usuários adicionados aos grupo de recursos para formulários podem criar novos scripts e editar os existentes. Os usuários na grupo de formulários podem usar os scripts, mas não criar ou editar scripts.
+Os usuários adicionados ao grupo forms-power-users podem criar novos scripts e editar os existentes. Os usuários no grupo formulários-usuários podem usar os scripts, mas não criar ou editar scripts.
 
-## Noções básicas sobre um regra {#understanding-a-rule}
+## Noções básicas sobre uma regra {#understanding-a-rule}
 
 Uma regra é uma combinação de ações e condições. No editor de regras, as ações incluem atividades como ocultar, mostrar, habilitar, desabilitar ou calcular o valor de um objeto em um formulário. As condições são expressões booleanas que são avaliadas executando verificações e operações no estado, valor ou propriedade de um objeto de formulário. As ações são executadas com base no valor ( `True` ou `False`) retornado avaliando uma condição.
 
@@ -52,7 +53,7 @@ O editor de regras fornece um conjunto de tipos de regras predefinidos, como Qua
 
 Uma regra normalmente segue uma das seguintes construções:
 
-**Condição-Ação** Nesta construção, uma regra primeiro define uma condição seguida por uma ação para acionar. A construção é comparável à declaração if-then nas linguagens de programação.
+**Condição-Ação** Nesta construção, uma regra primeiro define uma condição seguida por uma ação para acionar. A construção é comparável à instrução if-then em linguagens de programação.
 
 No editor de regras, a variável **Quando** o tipo de regra impõe a construção condição-ação.
 
@@ -105,11 +106,11 @@ O editor de regras fornece um conjunto de tipos de regras predefinidos que você
 
 ### Quando {#whenruletype}
 
-A variável **Quando** o tipo de regra segue a variável **condição-ação-ação alternativa** regra construir, ou às vezes, apenas a variável **condição-ação** construir. Nesse tipo de regra, primeiro especifique uma condição para avaliação seguida por uma ação para acionar se a condição for atendida ( `True`). Ao usar o tipo de regra Quando, é possível usar vários operadores E e OU para criar [expressões aninhadas](#nestedexpressions).
+A variável **Quando** o tipo de regra segue a variável **condição-ação-ação alternativa** regra construir, ou às vezes, apenas a variável **condição-ação** construir. Nesse tipo de regra, primeiro você especifica uma condição para avaliação seguida de uma ação a ser acionada se a condição estiver atendida ( `True`). Ao usar o tipo Quando regra, você pode usar vários operadores AND e OR para criar [expressões](#nestedexpressions) aninhadas.
 
-Usando o tipo de regra Quando, é possível avaliar uma condição em um objeto de formulário e executar ações em um ou mais objetos.
+Ao usar o tipo Quando regra, é possível avaliar uma condição em um objeto de formulário e executar ações em um ou mais objetos.
 
-Em palavras simples, uma regra When típica é estruturada da seguinte maneira:
+Em palavras simples, um típico de Quando regra está estruturado da seguinte maneira:
 
 `When on Object A:`
 
@@ -123,19 +124,19 @@ Ação 3 no Objeto C;
 
 _
 
-Quando você tem um componente de vários valores, como botões de opção ou lista, ao criar um regra para esse componente, as opções são recuperadas automaticamente e disponibilizadas ao criador do regra. Não é necessário digitar os valores da opção novamente.
+Quando você tem um componente de vários valores, como botões de opção ou lista, ao criar uma regra para esse componente, as opções são automaticamente recuperadas e disponibilizadas para o criador da regra. Não é necessário digitar os valores da opção novamente.
 
-Por exemplo, um lista tem quatro opções: Vermelho, Azul, Verde e Amarelo. Ao criar a regra, as opções (botões de opção) são recuperadas e disponibilizadas automaticamente ao regra criador como a seguir:
+Por exemplo, uma lista tem quatro opções: Vermelho, Azul, Verde e Amarelo. Ao criar a regra, as opções (botões de opção) são recuperadas automaticamente e disponibilizadas ao criador da regra da seguinte maneira:
 
 ![multivaluefcdisplaysoptions](assets/multivaluefcdisplaysoptions.png)
 
-Ao escrever uma regra Quando, é possível acionar a ação Limpar valor de. Limpar valor da ação limpa o valor do objeto especificado. Ter o valor claro de como uma opção na instrução When permite criar condições complexas com vários campos.
+Ao escrever um relatório Quando regra, você pode acionar a ação Limpar Valor de ações. Limpar Valor de ação limpa o valor do objeto especificado. Ter a opção Limpar Valor como opção na declaração Quando permite criar condições complexas com vários campos.
 
 ![clearvalueof](assets/clearvalueof.png)
 
-**Oculta** o objeto especificado.
+**Ocultar** Oculta o objeto especificado.
 
-**** Exibir Mostra o objeto especificado.
+**Mostrar** Mostra o objeto especificado.
 
 **Ativar** Habilita o objeto especificado.
 
@@ -152,6 +153,7 @@ Para obter mais informações sobre como configurar serviços no modelo de dados
 Para obter mais informações sobre como configurar serviços no modelo de dados de formulário, consulte [Integração de dados do AEM Forms](/help/forms/using/data-integration.md).
 
 A variável **[!UICONTROL Definir propriedade]** o tipo de regra permite definir o valor de uma propriedade do objeto especificado com base em uma ação de condição. Você pode definir a propriedade como uma das seguintes opções:
+
 * visível (Booleano)
 * dorExclusion (Booleano)
 * chartType (String)
@@ -201,13 +203,17 @@ A figura a seguir mostra um exemplo de adição dinâmica de caixas de seleção
 
 A variável **[!UICONTROL Definir valor de]** o tipo de regra permite definir o valor de um objeto de formulário dependendo se a condição especificada é atendida ou não. O valor pode ser definido como um valor de outro objeto, uma string literal, um valor derivado de uma expressão matemática ou de uma função, um valor de uma propriedade de outro objeto ou a saída de um serviço de modelo de dados de formulário. Da mesma forma, você pode verificar uma condição em um componente, string, propriedade ou valores derivados de uma função ou expressão matemática.
 
-Observe que o tipo de regra Definir valor de não está disponível para todos os objetos de formulário, como painéis e botões da barra de ferramentas. Uma regra padrão Definir valor de tem a seguinte estrutura:
+Observe que o tipo de regra Definir valor de não está disponível para todos os objetos de formulário, como painéis e botões da barra de ferramentas. Um Conjunto padrão Valor De regra tem a seguinte estrutura:
 
 
 
 Defina o valor do Objeto A como:
 
-(cadeia de caracteres ABC) OR (propriedade do objeto X do objeto C) OR (valor de uma função) OR (valor de uma expressão matemática) OR (valor de saída de um serviço de modelo de dados ou serviço Web);
+(sequência de caracteres ABC) OU
+(objeto propriedade X do objeto C) OU
+(valor de uma função) OU
+(valor de uma expressão matemática) OU
+(valor de saída de um serviço de modelo de dados ou de um serviço da Web);
 
 Quando (opcional):
 
@@ -217,13 +223,13 @@ Quando (opcional):
 
 O exemplo a seguir usa o valor em `dependentid` campo como entrada e define o `Relation` valor do campo para a saída do `Relation` argumento do serviço de modelo de dados de `getDependent` formulário.
 
-![set-value-Web-service](assets/set-value-web-service.png)
+![set-value-web-service](assets/set-value-web-service.png)
 
-Exemplo de Definir Valor regra usando o serviço de modelo de dados de formulário
+Exemplo de regra Definir valor usando o serviço de modelo de dados de formulário
 
 >[!NOTE]
 >
->Além disso, você pode usar Definir Valor de regra para preencher todos os valores em um componente lista suspenso da saída de um serviço de modelo de dados de formulário ou de um serviço da Web. No entanto, certifique-se de que o argumento de saída escolhido é de um tipo de matriz. Todos os valores retornados em uma matriz ficam disponíveis na lista suspensa especificada.
+>Além disso, você pode usar Definir Valor de regra para preencher todos os valores em um componente lista suspenso da saída de um serviço de modelo de dados de formulário ou de um serviço da Web. No entanto, verifique se o argumento de saída escolhido é de um tipo de matriz. Todos os valores retornados em uma matriz ficam disponíveis na lista suspensa especificada.
 
 ### Mostrar {#show}
 
@@ -367,11 +373,11 @@ Exibe o título do objeto de formulário adaptável pelo qual você iniciou o ed
 
 O painel à esquerda na interface do editor de regras inclui duas guias: **[!UICONTROL Objetos do Forms]** e **[!UICONTROL Funções]**.
 
-A guia Objetos de formulário mostra uma exibição hierárquica de todos os objetos contidos no formulário adaptável. Ele exibe o título e o tipo dos objetos. Ao escrever uma regra, você pode arrastar e soltar objetos de formulário no editor de regras. Ao criar ou editar uma regra ao arrastar e soltar um objeto ou função em um espaço reservado, o espaço reservado automaticamente assume o tipo de valor apropriado.
+A guia Objetos de formulário mostra uma exibição hierárquica de todos os objetos contidos no formulário adaptável. Ele exibe o título e o tipo dos objetos. Ao escrever uma regra, você pode arrastar e soltar objetos de formulário no editor de regras. Ao criar ou editar uma regra ao arrastar e soltar um objeto ou função em um espaço reservado, o espaço reservado assume automaticamente o tipo de valor apropriado.
 
-Os objetos de formulário que têm uma ou mais regras válidas aplicadas são marcados com um ponto verde. Se alguma das regras aplicadas a um objeto de formulário for inválida, o objeto de formulário será marcado com um ponto amarelo.
+Os objetos de formulário com uma ou mais regras válidas aplicadas são marcados com um ponto verde. Se qualquer uma das regras aplicadas a um objeto de formulário for inválido, o objeto de formulário será marcado com um ponto amarelo.
 
-A guia Funções inclui um conjunto de funções incorporadas, como Soma de, Mín de, Máx de, Média de, Número de e Validar formulário. Você pode usar essas funções para calcular valores em painéis e linhas de tabela repetíveis e usá-los em declarações de ação e condição ao escrever regras. No entanto, você pode criar [funções personalizadas](#custom-functions) também.
+As Funções guia incluem um conjunto de funções integradas, como Soma de, Mín, Máx. de, Média, Número e Formulário validado. Você pode usar essas funções para calcular valores em painéis e linhas de tabela repetíveis e usá-los em declarações de ação e condição ao escrever regras. No entanto, também é possível criar [funções personalizadas](#custom-functions) .
 
 ![A guia Funções](assets/functions.png)
 

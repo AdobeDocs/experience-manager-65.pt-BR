@@ -2,7 +2,7 @@
 title: Instruções de instalação de patch do AEM Forms para o AEM Forms
 description: Instruções de instalação do pacote de serviços do AEM Forms para ambientes OSGi e JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: d179c45044bbc987d60e180debefb243a5ee7cc6
+source-git-commit: 692193326e0623036ee3834985cfa9dc8d7076d9
 workflow-type: tm+mt
 source-wordcount: '1733'
 ht-degree: 9%
@@ -17,7 +17,7 @@ ht-degree: 9%
 |---|---|
 | Versão | 6.5.18.0 |
 | Tipo | Versão do Service Pack |
-| Data | 29 de agosto de 2023 |
+| Data | 31 de agosto de 2023 |
 | URL de download | [Versões mais recentes do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
 >[!NOTE]
@@ -33,7 +33,7 @@ O Adobe Experience Manager (AEM) Forms Service Pack inclui recursos novos e atua
 
 >[!NOTE]
 >
-> O Adobe lança um instalador completo a cada sexto service pack. O AEM 6.5 Forms Service Pack 18 (6.5.18.0) é o instalador completo mais recente do JEE. O instalador completo oferece suporte para novas plataformas, enquanto o instalador regular de pacotes de serviços inclui novos recursos, correções de erros e melhorias gerais. Se você estiver executando uma nova instalação ou planejando usar o software mais recente para o seu Forms AEM 6.5 no ambiente JEE, o Adobe recomenda usar o instalador completo do 6.5.18.0 Forms no JEE, lançado em 29 de agosto de 2023, em vez do instalador do 6.5 Forms, lançado em 08 de abril de 2019, ou o Instalador do AEM Forms, lançado em 03 de março de 2022, com o AEM 6.5.18.000 ou o AEM 6.5.16.112.12. Depois de usar o instalador completo, instale o pacote de serviços mais recente.
+> O Adobe lança um instalador completo a cada sexto service pack. O AEM 6.5 Forms Service Pack 18 (6.5.18.0) é o instalador completo mais recente do JEE. O instalador completo oferece suporte para novas plataformas, enquanto o instalador regular de pacotes de serviços inclui novos recursos, correções de erros e melhorias gerais. Se você estiver executando uma nova instalação ou planejando usar o software mais recente para o seu Forms AEM 6.5 no ambiente JEE, o Adobe recomenda usar o instalador completo do 6.5.18.0 Forms no JEE, lançado em 31 de agosto de 2023, em vez do instalador do 6.5 Forms AEM Forms, lançado em 08 de abril de 2019, ou o Instalador do AEM, lançado em 03 de março de 2022, com o AEM 6.5.18.18.12. Depois de usar o instalador completo, instale o pacote de serviços mais recente.
 
 ## Baixar e instalar o Service Pack em um formulário AEM no ambiente JEE {#download-and-install-for-jee-service-pack}
 

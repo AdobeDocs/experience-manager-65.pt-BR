@@ -2,10 +2,10 @@
 title: Criação para headless com Adobe Experience Manager
 description: Uma introdução aos recursos headless avançados e flexíveis do Adobe Experience Manager e como criar conteúdo para seu projeto.
 exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 90%
+source-wordcount: '659'
+ht-degree: 88%
 
 ---
 
@@ -81,3 +81,9 @@ Agora que você aprendeu os conceitos e a terminologia, o próximo passo é [Sab
 * [Jornada do arquiteto de conteúdo do AEM Headless](/help/journey-headless/architect/overview.md)
 
 * [Jornada de tradução de conteúdo do AEM Headless](/help/journey-headless/translation/overview.md)
+
+* [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
+
+* [Portal do desenvolvedor de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+
+* [Tutorials para headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)

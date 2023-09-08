@@ -7,7 +7,7 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 hide: true
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bc6a97a55f392cba03131ee3ca7cad35b8c1e69b
 workflow-type: tm+mt
 source-wordcount: '3949'
 ht-degree: 17%
@@ -92,7 +92,7 @@ Para configurar ativos conectados e locais [!DNL Sites] conectividade, siga esta
 1. Acessar um existente [!DNL Sites] implantar ou criar uma implantação usando o seguinte comando:
 
    1. Na pasta do arquivo JAR, execute o seguinte comando em um terminal para criar cada [!DNL Experience Manager] servidor.
-      `java -XX:MaxPermSize=768m -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
+      `java -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
 
    1. Após alguns minutos, a variável [!DNL Experience Manager] o servidor do é iniciado com êxito. Considere isso [!DNL Sites] implantação como a máquina local para a criação de página da Web, digamos no `https://[local_sites]:4502`.
 
