@@ -2,9 +2,9 @@
 title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: d63355e1042f6ad63a848b97c26dc2f29bab47b1
+source-git-commit: 26cea35dcbdbafe622f975bac7920ea5fd5fbd6c
 workflow-type: tm+mt
-source-wordcount: '4459'
+source-wordcount: '4460'
 ht-degree: 2%
 
 ---
@@ -63,7 +63,7 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 
 * **[Tratamento de erros aprimorado com manipuladores de erros personalizados no editor de regras](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html):** Agora é possível chamar uma função personalizada (usando a Biblioteca do cliente) em resposta a um erro retornado por um serviço externo e fornecer uma resposta personalizada aos usuários finais. Como alternativa, você pode realizar ações específicas para erros retornados por um serviço. Por exemplo, você pode acionar um fluxo de trabalho personalizado no back-end para códigos de erro específicos ou informar ao cliente que o serviço está inativo
 
-* **[Etapa de fluxo de trabalho aprimorada do Adobe Sign](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html):** A etapa de fluxo de trabalho do Adobe Sign em fluxos de trabalho do AEM está disponível com as seguintes melhorias.
+* **[Etapa de fluxo de trabalho aprimorada do Adobe Sign](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step):** A etapa de fluxo de trabalho do Adobe Sign em fluxos de trabalho do AEM está disponível com as seguintes melhorias.
 
    * **Segurança aprimorada com autenticação baseada em ID do governo para Adobe Sign:** A Autenticação com base em ID do governo da Adobe Acrobat Sign oferece uma camada adicional de verificação, permitindo que os usuários autentiquem sua identidade usando IDs emitidas pelo governo (CNH, identificação nacional, passaporte). Ao utilizar documentos de identificação confiáveis, esse aprimoramento adiciona um nível extra de confiança ao processo de assinatura, tornando-o ideal para cenários que exigem maior segurança, conformidade e validação do usuário.
 
@@ -160,9 +160,7 @@ Se você estiver executando uma nova instalação ou planejando usar o software 
 
 ### [!DNL Forms]{#forms-6518}
 
-<!--
-Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.18.0 Forms add-on packages release is scheduled for Thursday, August 31, 2023. A list of Forms fixes and enhancements would be added to this section post the release.
--->
+<!-- Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.18.0 Forms add-on packages release is scheduled for Thursday, August 31, 2023. A list of Forms fixes and enhancements would be added to this section post the release. -->
 
 * **Serviços de documento**
    * Quando um usuário usa um serviço transformPDF, ele falha com uma exceção: `java.lang.ClassNotFoundException: default task-158Class name com.adobe.internal.afml.AFMLExceptionInvalidParameter from package com.adobe.internal.afml` (FORMS-9957)
