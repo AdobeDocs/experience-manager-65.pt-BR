@@ -2,9 +2,9 @@
 title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 26cea35dcbdbafe622f975bac7920ea5fd5fbd6c
+source-git-commit: e330d69b7644e8f99498d0ed60afab009c649b40
 workflow-type: tm+mt
-source-wordcount: '4460'
+source-wordcount: '4552'
 ht-degree: 2%
 
 ---
@@ -450,6 +450,8 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 #### Instalação
 
 * Na plataforma JBoss® 7.1.4, quando o usuário instala o Experience Manager 6.5.16.0 ou o service pack posterior, `adobe-livecycle-jboss.ear` falha na implantação. (CQ-4351522, CQDOC-20159)
+* Após instalar o instalador completo do AEM Service Pack 6.5.18.0, a implantação do EAR falha no JEE usando o JBoss Turnkey (CQDOC-20803).
+Para resolver o problema, localize o `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` arquivo e atualização `Adobe_Adobe_JAVA_HOME` para `Adobe_JAVA_HOME` para todas as ocorrências antes de executar o gerenciador de configurações.
 
 #### Adaptive Forms
 
@@ -459,7 +461,12 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 
 #### Comunicações interativas
 
-* Depois de atualizar para o AEM Service Pack 18, não é possível editar cartas de comunicação interativa. (FORMS-10578)
+* Depois de atualizar para o AEM Service Pack 18, não é possível editar cartas de comunicação interativa. (FORMS-10578) Para resolver o problema, execute as seguintes etapas:
+
+   1. Baixar [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) do link SD.
+   1. Extraia o arquivo de Hotfix para obter um pacote de Experience Manager (.zip) e arquivos de pacote (.jar).
+   1. Faça upload e instale o pacote (.zip) por meio do Gerenciador de pacotes.
+   1. Abra os pacotes do gerenciador de configurações `https://server:host/system/console/bundles`, carregue e instale o pacote (.jar).
 
 ## Pacotes OSGi e pacotes de conteúdo incluídos{#osgi-bundles-and-content-packages-included}
 
