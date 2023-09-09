@@ -12,7 +12,7 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 823e756f470b0599f7d53a3e08fdf650b4e892d1
 workflow-type: tm+mt
 source-wordcount: '3454'
 ht-degree: 2%
@@ -228,7 +228,7 @@ Depois de criar o tipo de recurso, é possível instanciar o campo adicionando u
 
 Se quiser definir o estilo e o comportamento do componente, você poderá criar um [biblioteca do cliente](/help/sites-developing/clientlibs.md) que define seus CSS/LESS e JS personalizados.
 
-Para carregar a biblioteca do cliente exclusivamente para a caixa de diálogo do componente (ou seja, ela não será carregada para outro componente), é necessário definir a propriedade `extraClientlibs`** **da caixa de diálogo para o nome da categoria da biblioteca do cliente que você acabou de criar. Isso é aconselhável se a biblioteca do cliente for muito grande e/ou se o campo for específico para essa caixa de diálogo e não for necessário em outras caixas de diálogo.
+Para carregar a biblioteca do cliente exclusivamente para a caixa de diálogo do componente (ou seja, ela não será carregada para outro componente), é necessário definir a propriedade `extraClientlibs` da caixa de diálogo para o nome da categoria da biblioteca do cliente que você acabou de criar. Isso é aconselhável se a biblioteca do cliente for muito grande e/ou se o campo for específico para essa caixa de diálogo e não for necessário em outras caixas de diálogo.
 
 Para carregar a biblioteca do cliente para todas as caixas de diálogo, defina a propriedade category da biblioteca do cliente como `cq.authoring.dialog`. Esse é o nome da categoria da biblioteca do cliente que é incluído por padrão ao renderizar todas as caixas de diálogo. Você deseja fazer isso se a biblioteca do cliente for pequena e/ou seu campo for genérico e puder ser reutilizado em outras caixas de diálogo.
 
