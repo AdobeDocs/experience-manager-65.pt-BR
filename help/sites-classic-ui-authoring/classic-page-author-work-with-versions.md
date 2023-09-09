@@ -1,6 +1,6 @@
 ---
 title: Trabalhar com versões de página
-description: O controle de versão cria um "instantâneo" de uma página em um momento específico.
+description: O controle de versão cria um “instantâneo” de uma página em um momento específico.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -10,13 +10,13 @@ exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1352'
-ht-degree: 15%
+ht-degree: 19%
 
 ---
 
 # Trabalhar com versões de páginas{#working-with-page-versions}
 
-O controle de versão cria um &quot;instantâneo&quot; de uma página em um momento específico. Com o controle de versão, você pode executar as seguintes ações:
+O controle de versão cria um “instantâneo” de uma página em um momento específico. Com o controle de versão, você pode executar as seguintes ações:
 
 * Criar uma versão de uma página.
 * Restaurar uma página para uma versão anterior para desfazer uma alteração feita em uma página, por exemplo.

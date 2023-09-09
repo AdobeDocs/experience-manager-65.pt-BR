@@ -335,7 +335,7 @@ Veja a seguir os detalhes de possíveis problemas, juntamente com as resoluçõe
 
    * Se binários diferentes dos índices Lucene estiverem ausentes, restaurar do backup
    * Caso contrário, [reindexar](#how-to-re-index) *all* índices Lucene
-   * Nota:
+   * Observação:
 
      Essa condição indica um armazenamento de dados configurado incorretamente que pode resultar na ausência DE QUALQUER binário (por exemplo, binários de ativos).
 

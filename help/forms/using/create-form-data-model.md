@@ -55,40 +55,40 @@ Antes de começar, verifique se você tem o seguinte:
 
 Faça o seguinte para configurar suas [!DNL MySQL] banco de dados:
 
-1. Instale o driver JDBC para [!DNL MySQL] o banco de dados como uma pacote OSGi:
+1. Instale o driver JDBC para [!DNL MySQL] o banco de dados como um osGi pacote:
 
-   1. Baixe [!DNL MySQL] o pacote JDBC Driver OSGi de `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html` . <!-- This URL is an insecure link but using https is not possible -->
+   1. Baixe [!DNL MySQL] o pacote JDBC Driver OSGi em `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`. <!-- This URL is an insecure link but using https is not possible -->
    1. Fazer logon no AEM [!DNL Forms] Instância do autor como administrador e acesse pacotes de console da Web AEM. O URL padrão é [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
    1. Toque **[!UICONTROL Instalar/Atualizar]**. Um [!UICONTROL Carregar/instalar pacotes] será exibida.
 
-   1. Toque **[!UICONTROL Escolher arquivo]** para procurar e selecionar a variável [!DNL MySQL] Pacote OSGi do driver JDBC. Selecionar **[!UICONTROL Iniciar pacote]** e **[!UICONTROL Atualizar pacotes]** e toque em **[!UICONTROL Instalar ou atualizar]**. Certifique-se de que o [!DNL Oracle Corporation's] Driver JDBC para [!DNL MySQL] está ativo. O driver está instalado.
+   1. Toque **[!UICONTROL Escolher arquivo]** para procurar e selecionar a variável [!DNL MySQL] Pacote OSGi do driver JDBC. Selecionar **[!UICONTROL Iniciar pacote]** e **[!UICONTROL Atualizar pacotes]** e toque em **[!UICONTROL Instalar ou atualizar]**. Certifique-se de que o [!DNL Oracle Corporation's] Driver JDBC para [!DNL MySQL] está ativo. O motorista está instalado.
 
 1. Configure [!DNL MySQL] o banco de dados como um fonte de dados:
 
-   1. Vá para AEM console da Web em [ https://localhost:4502/System/console/configMgr ](https://localhost:4502/system/console/configMgr) .
-   1. Localize **a configuração da fonte** de dados Pooled do Apache sling Connection. Toque para abrir a configuração no modo de edição.
+   1. Acesse AEM console da Web no [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+   1. Localize **a configuração do DataSource** com conexão Apache Sling. Toque para abrir a configuração no modo de edição.
    1. Na caixa de diálogo de configuração, especifique os seguintes detalhes:
 
       * **Nome da fonte de dados:** Você pode especificar qualquer nome. Por exemplo, especifique **WeRetailMySQL**.
       * **Nome da propriedade do serviço DataSource**: especifique o nome da propriedade de serviço que contém o nome da DataSource. É especificado ao registrar a instância da fonte de dados como serviço OSGi. Por exemplo, **datasource.name**.
       * **Classe de driver JDBC**: Especifique o nome da classe Java do driver JDBC. Para [!DNL MySQL] banco de dados, especificar **com.mysql.jdbc.Driver**.
-      * **URI** de conexão JDBC: especifique URL de conexão do banco de dados. Para o banco de [!DNL MySQL] dados em execução no porta 3306 e Schema weretail, o URL é: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **URI** de conexão JDBC: especifique o URL de conexão do banco de dados. Para [!DNL MySQL] o banco de dados em execução em porta 3306 e o schema foramtail, a URL é: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
 
       >[!NOTE]
       >
-      > Quando o banco de dados está atrás de um firewall, o nome do host do banco de [!DNL MySQL] dados não é um DNS público. O endereço IP do banco de dados precisa ser adicionado no *arquivo/etc/hosts* da máquina host do AEM.
+      > Quando o banco de dados está atrás de um firewall, o [!DNL MySQL] nome do host do banco de dados não é um DNS público. O endereço IP do banco de dados precisa ser adicionado no *arquivo /etc/hosts* da máquina AEM host.
 
       * **Nome de usuário:** Nome de usuário do banco de dados. É necessário habilitar o driver JDBC para estabelecer uma conexão com o banco de dados.
       * **Senha:** Senha do banco de dados. É necessário habilitar o driver JDBC para estabelecer uma conexão com o banco de dados.
 
       >[!NOTE]
       >
-      >O AEM Forms não oferece suporte à autenticação NT para [!DNL MySQL]. Vá para AEM console da Web em [ https://localhost:4502/System/console/configMgr ](https://localhost:4502/system/console/configMgr) e pesquisa &quot;fonte de dados em pool de conexões do Apache sling&quot;. Para &quot;URI de conexão JDBC&quot; propriedade valor definido como &quot;integratedSecurity&quot; como false e use o nome de usuário e o senha para se conectar ao [!DNL MySQL] banco de dados.
+      >O AEM Forms não oferece suporte à autenticação NT para [!DNL MySQL]. Vá para AEM console da Web no [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) e pesquisa &quot;Apache Sling Connection Pooled Datasource&quot;. Para &quot;URI de conexão JDBC&quot;, propriedade defina o valor de &quot;Segurança integrada&quot; como Falso e use o nome de usuário e o senha criados para se conectar ao [!DNL MySQL] banco de dados.
 
-      * **Teste no empréstimo:** ative a **[!UICONTROL opção testar no empréstimo]** .
-      * **Teste no Return:** ative a **[!UICONTROL opção testar ao retornar]** .
-      * **Consulta de validação:** especifique um SQL SELECT Query para validar as conexões do pool. A consulta deve retornar pelo menos uma linha. Por exemplo, **selecionar &#42; dos detalhes do cliente**.
+      * **Testar em Emprestar:** ative a opção **[!UICONTROL Testar em Emprestar]** .
+      * **Teste no retorno:** ative a opção **[!UICONTROL Testar no retorno]** .
+      * **Consulta de validação: especifique** um QUERY SQL SELECT para validar as conexões do pool. A consulta deve retornar pelo menos uma linha. Por exemplo, **selecionar &#42; dos detalhes do cliente**.
       * **Isolamento de transação**: Defina o valor como **READ_COMMITTED**.
 
         Deixar outras propriedades com o padrão [valores](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) e toque em **[!UICONTROL Salvar]**.
@@ -163,23 +163,23 @@ Faça o seguinte para configurar o modelo de dados de formulário:
 
       ![write-default](assets/write-default.png)
 
-      Adicione e configure o argumento ID **da** seguinte maneira.
+      Adicione e configure o argumento da **ID** da seguinte maneira.
 
-      ![ID-ARG](assets/id-arg.png)
+      ![id-arg](assets/id-arg.png)
 
-   1. Toque em **[!UICONTROL concluído]** para salvar as propriedades do objeto de modelo de dados. Em seguida, toque **[!UICONTROL em salvar]** para salvar o modelo de dados de formulário.
+   1. Toque **[!UICONTROL Concluído]** para salvar as propriedades de objetos de modelo de dados. Em seguida, toque **[!UICONTROL Salvar]** para salvar o modelo de dados do formulário.
 
-      Os **[!UICONTROL serviços get]** e **[!UICONTROL Update]** são adicionados como serviços padrão para o objeto de modelo de dados.
+      Os **[!UICONTROL serviços get]** e **[!UICONTROL update]** são adicionados como serviços padrão para o objeto de modelo de dados.
 
       ![modelo de dados-objeto](assets/data-model-object.png)
 
 1. Vá para a **[!UICONTROL Serviços]** guia e configurar **[!UICONTROL obter]** e **[!UICONTROL atualizar]** serviços.
 
-   1. Selecione o **[!UICONTROL serviço get]** e toque **[!UICONTROL Editar propriedades]** . A caixa de diálogo de propriedades é aberta.
+   1. Selecione o **[!UICONTROL serviço obter]** e toque **[!UICONTROL em Editar Propriedades]**. A caixa de diálogo de propriedades é aberta.
    1. Especifique o seguinte na caixa de diálogo Editar Propriedades:
 
-      * **Título** : especificar o título do serviço. Por exemplo: recuperar endereço de envio.
-      * **Descrição** : Especifique a descrição que contém o funcionamento detalhado do serviço. Por exemplo:
+      * **** Título: especifique o título do serviço. Por exemplo: Recuperar endereço de envio.
+      * **** Descrição: especifique uma descrição contendo o funcionamento detalhado do serviço. Por exemplo:
 
         Este serviço recupera o endereço de entrega e outros detalhes do cliente de [!DNL MySQL] banco de dados
 

@@ -363,7 +363,7 @@ Todos os eventos de envio de formulários adaptáveis, HTML5 Forms e conjunto de
 <table>
  <tbody>
   <tr>
-   <td><p>Caso de uso </p> </td>
+   <td><p>Caso de uso</p> </td>
    <td>Descrição</td>
    <td>Categoria do relatório de transações</td>
    <td>Informações adicionais</td>
@@ -386,7 +386,7 @@ Todos os eventos de envio de formulários adaptáveis, HTML5 Forms e conjunto de
 <table>
  <tbody>
   <tr>
-   <td><p>Caso de uso </p> </td>
+   <td><p>Caso de uso</p> </td>
    <td>Descrição </td>
    <td>Categoria do relatório de transações</td>
    <td>Informações adicionais</td>

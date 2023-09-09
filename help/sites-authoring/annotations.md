@@ -11,7 +11,7 @@ exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '641'
-ht-degree: 40%
+ht-degree: 42%
 
 ---
 
@@ -79,7 +79,7 @@ O modo Anotar permite criar, editar, mover ou excluir anotações do seu conteú
 
    Aqui você pode usar o campo e/ou ícone apropriado para:
 
-   * Insira o texto da anotação.
+   * Inserir o texto da anotação.
    * Criar um rascunho (linhas e formas) para realçar uma área do componente.
 
      O cursor se transformará em um fio cruzado ao criar um rascunho. Você pode desenhar várias linhas distintas. A linha de rascunho reflete a cor da anotação e pode ser uma seta, círculo ou forma oval.

@@ -40,7 +40,7 @@ Executar uma série de outras ações, dependendo do tipo de dados que está sen
 
 ## Criação de conteúdo {#authoring-your-content}
 
-Ao abrir o fragmento de conteúdo para edição, a guia **Variações** será aberta por padrão. Aqui é possível criar conteúdo para o Principal ou quaisquer variações que você possua. O fragmento estruturado contém vários campos, de vários tipos de dados, que foram definidos no modelo de conteúdo.
+Ao abrir o fragmento de conteúdo para edição, a guia **Variações** será aberta por padrão. Aqui é possível criar conteúdo para o principal ou quaisquer variações que você possua. O fragmento estruturado contém vários campos, de vários tipos de dados, que foram definidos no modelo de conteúdo.
 
 Por exemplo:
 
@@ -412,7 +412,7 @@ Para criar uma nova variação:
 
    >[!NOTE]
    >
-   Ao criar uma nova variação, é sempre o **Principal** que é copiado, não a variação que está aberta no momento.
+   Ao criar uma nova variação, é sempre o **principal** que é copiado, não a variação que está aberta no momento.
 
    >[!NOTE]
    >

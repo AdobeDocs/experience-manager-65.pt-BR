@@ -11,7 +11,7 @@ exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 1%
+ht-degree: 10%
 
 ---
 
@@ -92,8 +92,8 @@ Para ativar ou desativar um componente:
    No **Componentes permitidos** você define quais componentes estão disponíveis para o parsys.
 
    * Os componentes são agrupados por seus grupos de componentes, que podem ser expandidos e recolhidos.
-   * Um grupo inteiro pode ser selecionado, marcando o nome do grupo, e todos podem ser desmarcados ao desmarcar.
-   * Um sinal de menos representa pelo menos um, mas não todos os itens em um grupo são selecionados.
+   * Um grupo inteiro pode ser selecionado ou desmarcados, marcando ou desmarcando o nome do grupo.
+   * Um sinal de menos representa pelo menos um, mas não todos os itens em um grupo estão selecionados.
    * Há uma pesquisa disponível para filtrar um componente por nome.
    * As contagens listadas à direita do nome do grupo de componentes representam o número total de componentes selecionados nesses grupos, independentemente do filtro.
 

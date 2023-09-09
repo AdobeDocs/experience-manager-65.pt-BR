@@ -12,7 +12,7 @@ exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1832'
-ht-degree: 13%
+ht-degree: 18%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 13%
 
 Assim que a página for criada (nova ou como parte de um lançamento ou uma live copy), você pode editar o conteúdo para fazer as atualizações necessárias.
 
-O conteúdo é adicionado usando [componentes](/help/sites-classic-ui-authoring/classic-page-author-default-components.md) (apropriado ao tipo de conteúdo) que pode ser arrastado para a página. Estes podem então ser editados no local, movidos ou excluídos. 
+O conteúdo é adicionado usando [componentes](/help/sites-classic-ui-authoring/classic-page-author-default-components.md) (apropriado ao tipo de conteúdo) que podem ser arrastados para a página. Estes podem então ser editados no local, movidos ou excluídos. 
 
 >[!NOTE]
 >
@@ -106,11 +106,11 @@ Para criar um componente arrastando um dos tipos de ativos acima:
 
 1. Certifique-se de que a página está no modo de [**edição**](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes).
 1. Abra o [Localizador de conteúdo](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
-1. Arraste o ativo para a posição desejada. O [placeholder do componente](#componentplaceholder) mostra onde o componente será posicionado.
+1. Arraste o ativo desejado para a posição desejada. O [placeholder do componente](#componentplaceholder) mostra onde o componente será posicionado.
 
    Um componente, apropriado para o tipo de ativo, será criado no local necessário; ele conterá o ativo selecionado.
 
-1. [Editar](#editmovecopypastedelete) o componente, se necessário.
+1. [Edite](#editmovecopypastedelete) o componente, se necessário.
 
 ## Editar um componente (conteúdo e propriedades) {#editing-a-component-content-and-properties}
 
@@ -287,11 +287,11 @@ O comportamento dos comandos desfazer e refazer é semelhante ao de outros progr
 >* também usar [Atalhos de teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) para desfazer e refazer.
 >
 
-Você pode desfazer e refazer os seguintes tipos de alterações de página:
+É possível desfazer ou refazer os seguintes tipos de alterações de página:
 
 * Adição, edição, remoção e movimentação de parágrafos
-* Edição no local do conteúdo de parágrafo
-* Copiar, recortar e colar itens em uma página
+* Edição no local do conteúdo do parágrafo
+* Cópia, recorte e colagem de itens em uma página
 * Como copiar, recortar e colar itens entre páginas
 * Adição, remoção e alteração de arquivos e imagens
 * Adição, remoção e alteração de anotações e rascunhos
@@ -303,4 +303,4 @@ Os campos de formulário que os componentes de formulário renderizam não devem
 
 >[!NOTE]
 >
->Permissões especiais são necessárias para desfazer e refazer as alterações nos arquivos e imagens. Além disso, o histórico de desfazer para alterações em arquivos e imagens dura pelo menos algumas horas. Além desse tempo, no entanto, a ação de desfazer as alterações não é garantida. Seu administrador pode fornecer permissões e alterar o tempo padrão de dez horas.
+>Permissões especiais são necessárias para desfazer e refazer as alterações nos arquivos e imagens. Além disso, o histórico de desfazer para alterações em arquivos e imagens dura pelo menos algumas horas. Além desse período, no entanto, a ação de desfazer as alterações não é garantida. Seu administrador pode fornecer permissões e alterar o tempo padrão de dez horas.

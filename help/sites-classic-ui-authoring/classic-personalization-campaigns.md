@@ -24,7 +24,7 @@ Este documento descreve os vários elementos que compõem as campanhas. Informa�
 
 * [Teasers e estratégias](/help/sites-classic-ui-authoring/classic-personalization-campaigns-teasers-strategy.md)
 * [Marketing por email](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email.md)
-* [Landing Pages](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
+* [Página de destino](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
 * [Ofertas do Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
 * [Trabalhar com o gerente de campanha de marketing](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
 * [Noções sobre segmentação](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)

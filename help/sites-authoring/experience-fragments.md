@@ -12,7 +12,7 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1442'
-ht-degree: 66%
+ht-degree: 81%
 
 ---
 
@@ -22,7 +22,7 @@ Um Fragmento de experiência é um grupo de um ou mais componentes, incluindo co
 
 Um fragmento de experiência:
 
-* O faz parte de uma experiência (página).
+* Faz parte de uma experiência (página).
 * Pode ser usado em várias páginas.
 * É baseado em um modelo (somente editável) para definir a estrutura e os componentes.
 * Esse modelo é usado para criar a *página raiz* do Fragmento de experiência.
@@ -40,13 +40,13 @@ Use os Fragmentos de experiência:
 
 >[!NOTE]
 >
->O acesso de gravação para fragmentos de experiência requer que a conta de usuário seja registrada no grupo:
+>O acesso de gravação para fragmentos de experiência exige que a conta de usuário seja registrada no grupo:
 >
 >    `experience-fragments-editors`
 >
 Entre em contato com o administrador do sistema se tiver algum problema.
 
-## Quando você deve usar fragmentos de experiência?   {#when-should-you-use-experience-fragments}
+## Quando usar fragmentos de experiência?   {#when-should-you-use-experience-fragments}
 
 Fragmentos de experiência devem ser usados:
 
@@ -56,7 +56,7 @@ Fragmentos de experiência devem ser usados:
 
 * Ao usar o AEM como uma plataforma de entrega de conteúdo para terceiros.
 
-   * Qualquer solução que queira usar AEM como plataforma de entrega de conteúdo
+   * Qualquer solução que deseje usar AEM como a plataforma de entrega de conteúdo
    * Ao incorporar conteúdo em pontos de contato de terceiros
 
 * Se você tiver uma experiência com diferentes variações ou representações.
@@ -192,7 +192,7 @@ Para criar um fragmento de experiência:
 
 1. Clique em **Criar**.
 
-   Uma mensagem será exibida. Selecionar:
+   Uma mensagem será exibida. Selecione:
 
    * **Concluído** para retornar ao console
 
@@ -219,7 +219,7 @@ O exemplo de procedimento a seguir ilustra como criar um teaser de um produto:
 
 ## Criação de uma variação de Fragmento de experiência {#creating-an-experience-fragment-variation}
 
-Você pode criar variações do Fragmento de experiência, dependendo das suas necessidades:
+É possível criar variações do Fragmento de experiência, dependendo das suas necessidades:
 
 1. Abra o fragmento para [edição](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment).
 1. Abra a guia **Variações**.
@@ -247,7 +247,7 @@ Você pode criar variações do Fragmento de experiência, dependendo das suas n
 
 ## Usar seu fragmento de experiência {#using-your-experience-fragment}
 
-Agora você pode usar seu fragmento de experiência ao criar suas páginas:
+Agora você poderá usar seu fragmento de experiência ao criar suas páginas:
 
 1. Abra qualquer página para edição.
 
@@ -274,7 +274,7 @@ Selecione um ou mais componentes para criar um bloco de construção para recicl
 
 ### Criar um bloco de construção {#creating-a-building-block}
 
-Para criar um novo Bloco de Construção:
+Para criar um novo Bloco de construção:
 
 1. No editor de Fragmento de experiência, selecione os componentes que deseja reutilizar:
 
@@ -294,7 +294,7 @@ Para criar um novo Bloco de Construção:
 
 #### Gerenciar um bloco de construção {#managing-a-building-block}
 
-O bloco de construção está visível na guia **Blocos de construção**. Para cada bloco, as seguintes ações estão disponíveis:
+O bloco de construção está visível na guia **Blocos de construção**. Para cada bloco, as seguintes ações estarão disponíveis:
 
 * Acesse o mestre: abra a variação da página raiz em uma nova guia
 * Renomear
@@ -346,8 +346,8 @@ Os detalhes do fragmento podem ser vistos:
 
       * **Configuração na nuvem**
       * **Configurações do Cloud Service**
-      * **ID da Página do Facebook**
-      * **Pasta do Pinterest**
+      * **ID da página do Facebook**
+      * **Quadro do Pinterest**
 
    * **Referências**
 
@@ -359,7 +359,7 @@ Os detalhes do fragmento podem ser vistos:
 
 ## A representação HTML simples {#the-plain-html-rendition}
 
-Usando o seletor `.plain.` no URL, você poderá acessar a representação HTML simples do navegador.
+Usando o seletor `.plain.` no URL, você poderá acessar a representação HTML simples a partir do navegador.
 
 >[!NOTE]
 >
@@ -367,6 +367,6 @@ Embora isso esteja disponível diretamente no navegador, [o principal objetivo �
 
 ## Exportar fragmentos de experiência {#exporting-experience-fragments}
 
-Por padrão, os Fragmentos de experiência são entregues no formato HTML. Isso pode ser usado por canais AEM e de terceiros.
+Por padrão, os fragmentos de experiência são entregues no formato HTML. Isso pode ser usado por canais AEM e de terceiros.
 
 Para exportar para o Adobe Target, também é possível usar o JSON. Consulte [Integração do Target com os Fragmentos de experiência](/help/sites-administering/experience-fragments-target.md) para obter informações completas.

@@ -14,7 +14,7 @@ exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1557'
-ht-degree: 45%
+ht-degree: 72%
 
 ---
 
@@ -36,7 +36,7 @@ Para obter os detalhes completos sobre a criação com o AEM, consulte:
 
 Antes de dar a visão geral das especificidades, veja uma pequena coleção de dicas gerais que vale a pena considerar.
 
-### Console de sites {#sites-console}
+### Console do Sites {#sites-console}
 
 * **Criar**
 
@@ -44,13 +44,13 @@ Antes de dar a visão geral das especificidades, veja uma pequena coleção de d
 
 * Reorganização de páginas em uma pasta
 
-   * Isso pode ser feito em [Exibição de lista](/help/sites-authoring/basic-handling.md#list-view). As alterações são aplicadas e visíveis em outras exibições.
+   * Isso pode ser feito na [Exibição de lista](/help/sites-authoring/basic-handling.md#list-view). As alterações são aplicadas e visíveis em outras exibições.
 
 #### Criação de página {#page-authoring}
 
 * Links de navegação
 
-   * ***Os links não estão disponíveis para navegação*** quando você estiver em **Editar** modo. Para navegar com links, é necessário [visualizar a página](/help/sites-authoring/editing-content.md#previewing-pages) usando:
+   * ***Os links não estão disponíveis para navegação*** quando você estiver em modo **Editar**. Para navegar com links, é necessário [visualizar a página](/help/sites-authoring/editing-content.md#previewing-pages) usando:
 
       * [Modo de visualização](/help/sites-authoring/editing-content.md#preview-mode)
       * [Exibir como publicado](/help/sites-authoring/editing-content.md#view-as-published)
@@ -61,13 +61,13 @@ Antes de dar a visão geral das especificidades, veja uma pequena coleção de d
 >
 >Há vários atalhos de teclado que podem facilitar a experiência de criação.
 >
->* [Atalhos De Teclado Ao Editar Páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
+>* [Atalhos de teclado ao editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
 >* [Atalhos de teclado para Consoles](/help/sites-authoring/keyboard-shortcuts.md)
 >
 
 ### Encontrar a sua página {#finding-your-page}
 
-Há vários aspectos para localizar uma página; você pode navegar e/ou pesquisar:
+Há vários aspectos para localizar uma página. Você pode navegar e/ou pesquisar:
 
 1. Abra o **Sites** console (usando o **Sites** opção no [Navegação global](/help/sites-authoring/basic-handling.md#global-navigation)) - é acionado (menu suspenso) ao selecionar o link do Adobe Experience Manager (parte superior esquerda).
 
@@ -79,7 +79,7 @@ Há vários aspectos para localizar uma página; você pode navegar e/ou pesquis
 
    ![qgtap-01](assets/qgtap-01.png)
 
-1. Você também pode [Pesquisar](/help/sites-authoring/search.md) por uma página. Você pode selecionar sua página a partir dos resultados mostrados.
+1. Você também pode [Pesquisar](/help/sites-authoring/search.md) por uma página. É possível selecionar sua página a partir dos resultados mostrados.
 
    ![qgtap-03](assets/qgtap-03.png)
 
@@ -88,11 +88,11 @@ Há vários aspectos para localizar uma página; você pode navegar e/ou pesquis
 Para [criar uma página](/help/sites-authoring/managing-pages.md#creating-a-new-page):
 
 1. [Navegue até o local](#finding-your-page) onde você deseja criar a página.
-1. Use o **Criar** e selecione **Página** na lista:
+1. Use o ícone **Criar** e selecione **Página** na lista:
 
    ![qgtap-02](assets/qgtap-02.png)
 
-1. Isso abrirá o assistente que guiará você pela coleta das informações necessárias quando [criar sua nova página](/help/sites-authoring/managing-pages.md#creating-a-new-page). Siga as instruções na tela.
+1. Isso abrirá o assistente que guiará você pela coleta das informações necessárias ao [criar sua nova página](/help/sites-authoring/managing-pages.md#creating-a-new-page). Siga as instruções na tela.
 
 ### Selecionar sua página para mais ações   {#selecting-your-page-for-further-action}
 
@@ -158,19 +158,19 @@ As [ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions) est
 
    * [Editar o conteúdo de um componente existente](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) na página:
 
-      * Abra a barra de ferramentas do componente com um toque ou clique. Use o **Editar** (lápis) ícone para abrir a caixa de diálogo.
-      * Abra o editor local do componente com um clique de toque e segure ou com um clique duplo e lento. As ações disponíveis são exibidas (para alguns componentes, é uma seleção limitada).
-      * Para ver todas as ações disponíveis, entre no modo de tela cheia usando:
+      * Abra a barra de ferramentas do componente com um toque ou clique. Use o ícone de **Editar** (lápis) para abrir a caixa de diálogo.
+      * Abra o editor local do componente clicando e segurando ou com um clique duplo e lento. As ações disponíveis serão exibidas (para alguns componentes, será uma seleção limitada).
+      * Para ver todas as ações disponíveis, entre no modo de tela cheia utilizando:
 
      ![Modo de tela cheia](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [Configurar as propriedades de um componente existente](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
-      * Abra a barra de ferramentas do componente com um toque ou clique. Use o **Configurar** Ícone (chave inglesa) para abrir a caixa de diálogo.
+      * Abra a barra de ferramentas do componente com um toque ou clique. Use o ícone de **Configurar** (chave inglesa) para abrir a caixa de diálogo.
 
-   * [Mover um componente](/help/sites-authoring/editing-content.md#moving-a-component) ou:
+   * [Mover um componente](/help/sites-authoring/editing-content.md#moving-a-component):
 
-      * Arraste o componente para o novo local.
+      * Arrastando o componente desejado para o novo local.
       * Abra a barra de ferramentas do componente com um toque ou clique. Use os ícones **Cortar** e **Colar** conforme necessário.
 
    * [Copiar (e Colar)](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) um componente:
@@ -187,13 +187,13 @@ As [ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions) est
 
    * [Adicionar anotações](/help/sites-authoring/annotations.md#annotations) à página:
 
-      * Selecione o **Anotar** (ícone de balão de fala). Adicionar anotações usando o **Adicionar anotação** (mais). Saia do modo de anotação usando o X na parte superior direita.
+      * Selecione o modo **Anotar** (ícone de balão de fala). Adicione anotações usando o ícone de **Adicionar anotação** (mais). Saia do modo de anotação usando o X na parte superior direita.
 
      ![Anotar](do-not-localize/screen_shot_2018-03-21at160813.png)
 
-   * [Visualizar uma página](/help/sites-authoring/editing-content.md#preview-mode) (para ver como ele aparecerá no ambiente de publicação)
+   * [Visualizar uma página](/help/sites-authoring/editing-content.md#preview-mode) (para ver como ela aparecerá no ambiente de publicação)
 
-      * Selecionar **Visualizar** na barra de ferramentas.
+      * Selecione **Visualizar** na barra de ferramentas.
 
    * Retorne ao modo de edição (ou selecione outro modo) usando o **Editar** seletor suspenso.
 
@@ -203,12 +203,12 @@ As [ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions) est
 
 ### Editar as propriedades da página   {#editing-the-page-properties}
 
-Existem dois (principais) métodos de [editar propriedades da página](/help/sites-authoring/editing-page-properties.md):
+Existem dois métodos (principais) de [editar propriedades da página](/help/sites-authoring/editing-page-properties.md):
 
 * No console **Sites**:
 
    1. [Navegue até a página](#finding-your-page) que deseja publicar.
-   1. Selecione o **Propriedades** ícone de:
+   1. Selecione o ícone de **Propriedades**:
 
       * As [Ações rápidas (apenas a exibição de cartão/área de trabalho)](#quick-actions-card-view-desktop-only) do recurso adequado.
       * A barra de ferramenta quando a sua [página é selecionada](#selectiingyourpageforfurtheraction).
@@ -217,10 +217,10 @@ Existem dois (principais) métodos de [editar propriedades da página](/help/sit
 
    1. As propriedades da página serão exibidas. É possível fazer atualizações conforme necessário, em seguida, usar a opção Salvar para continuar
 
-* Quando [editar sua página](#editing-your-page-content):
+* Ao [editar sua página](#editing-your-page-content):
 
-   1. Abra o **Informações da página** menu.
-   1. Selecionar **Abrir propriedades** para abrir a caixa de diálogo para editar as propriedades.
+   1. Abra o menu de **Informações da página**.
+   1. Selecione **Abrir propriedades** para abrir a caixa de diálogo para editar as propriedades.
 
   ![screen_shot_2018-03-21at160920](assets/screen_shot_2018-03-21at160920.png)
 
@@ -238,10 +238,10 @@ Existem dois métodos principais de [publicar sua página](/help/sites-authoring
 
   ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
 
-* Quando [editar sua página](#editing-your-page-content):
+* Ao [editar sua página](#editing-your-page-content):
 
-   1. Abra o **Informações da página** menu.
-   1. Selecionar **Publicar página**.
+   1. Abra o menu de **Informações da página**.
+   1. Selecione **Publicar página**.
 
   ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
 
@@ -255,9 +255,9 @@ Existem dois métodos principais de [publicar sua página](/help/sites-authoring
 
 ### Mover, copiar e colar ou excluir sua página   {#move-copy-and-paste-or-delete-your-page}
 
-Todas essas ações podem ser acionadas por:
+Essas ações podem ser acionadas por:
 
-1. [Navegue até a página](#finding-your-page) você deseja mover, copiar e colar ou excluir.
+1. [Navegue até a página](#finding-your-page) que deseja mover, copiar e colar ou excluir.
 1. Selecione o ícone copiar (e colar), mover ou excluir, conforme necessário, usando:
 
    * As [Ações rápidas (apenas a exibição de cartão/área de trabalho)](#quick-actions-card-view-desktop-only) do recurso desejado.
@@ -275,7 +275,7 @@ Todas essas ações podem ser acionadas por:
 
    * Exclua:
 
-      * Você deverá confirmar a ação.
+      * Você receberá uma solicitação para confirmar a ação.
 
    >[!NOTE]
    >
@@ -286,7 +286,7 @@ Todas essas ações podem ser acionadas por:
 [Bloquear uma página](/help/sites-authoring/editing-content.md#locking-a-page) impede que outros autores trabalhem nela enquanto você estiver trabalhando. O ícone/botão Bloquear (e Desbloquear) pode ser encontrado:
 
 * A barra de ferramenta quando a sua [página é selecionada](#selecting-your-page-for-further-action).
-* A variável [Menu suspenso Informações da página](#editing-the-page-properties) ao editar uma página.
+* O [menu suspenso Informações da Página](#editing-the-page-properties) ao editar uma página.
 * A barra de ferramentas da página ao editar uma página (quando a página estiver bloqueada)
 
 Por exemplo, o ícone de bloqueio tem a seguinte aparência:
@@ -329,14 +329,14 @@ O mesmo mecanismo básico é usado ao restaurar e/ou comparar as versões da sua
 
    ![screen_shot_2018-03-21at161355-1](assets/screen_shot_2018-03-21at161355-1.png)
 
-   Se uma versão da sua página já foi salva, ela é listada na Linha do tempo.
+   Se uma versão da sua página já foi salva, ela será listada na Linha do tempo.
 
 1. Toque/clique na versão que deseja restaurar - isso revelará botões de ação adicionais:
 
    * **Reverter para essa versão**
 
-      * A versão é restaurada.
+      * A versão foi restaurada.
 
    * **Exibir diferenças**
 
-      * A página é aberta com diferenças (entre as duas versões) destacadas.
+      * A página será aberta com as diferenças (entre as duas versões) destacadas.

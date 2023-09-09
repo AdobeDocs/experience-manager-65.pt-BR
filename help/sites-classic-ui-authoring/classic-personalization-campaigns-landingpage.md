@@ -1,5 +1,5 @@
 ---
-title: Landing Pages
+title: Página de destino
 seo-title: Landing Pages
 description: O recurso de páginas de aterrissagem permite a importação rápida e fácil de um design e conteúdo diretamente em uma página AEM. Um desenvolvedor da Web pode preparar o HTML e os ativos adicionais que podem ser importados como uma página inteira ou apenas como parte de uma página.
 seo-description: The landing pages feature allows quick and easy importing of a design and content right into an AEM page. A web developer can prepare the HTML and additional assets that can be imported as a full page or only a part of a page.
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ---
 
-# Landing Pages{#landing-pages}
+# Página de destino{#landing-pages}
 
 O recurso de páginas de aterrissagem permite a importação rápida e fácil de um design e conteúdo diretamente em uma página AEM. Um desenvolvedor da Web pode preparar o HTML e os ativos adicionais que podem ser importados como uma página inteira ou apenas como parte de uma página. A funcionalidade é útil para criar páginas de aterrissagem de marketing que só estão ativas por um tempo limitado e precisam ser criadas rapidamente.
 

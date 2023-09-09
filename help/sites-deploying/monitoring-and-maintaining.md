@@ -1,5 +1,5 @@
 ---
-title: Monitoramento e manutenção da instância do Adobe Experience Manager
+title: Monitorar e manter seu Adobe Experience Manager instância
 description: Saiba como monitorar o AEM.
 uuid: 14466552-5c92-4730-a427-85675a2b121c
 contentOwner: User
@@ -61,13 +61,13 @@ Geralmente, um backup completo é feito em intervalos regulares (por exemplo, di
 
 >[!NOTE]
 >
->Para obter mais informações sobre backup desempenho, leia a [ seção anterior up performance ](/help/sites-deploying/configuring-performance.md#backup-performance) .
+>Para obter mais informações sobre desempenho de backup, leia a [Desempenho de backup](/help/sites-deploying/configuring-performance.md#backup-performance) seção.
 
-### Fazer backup da instalação do software {#backing-up-your-software-installation}
+### Backup da instalação do software {#backing-up-your-software-installation}
 
 Após a instalação ou alterações significativas na configuração, crie uma backup da instalação do software.
 
-Para realizar essa tarefa, [ faça backup de todo o repositório ](#backing-up-your-repository) e, em seguida:
+Para fazer isso tarefa, [faça backup de toda a sua repositório](#backing-up-your-repository) e, em seguida:
 
 1. Interrupção AEM.
 1. Fazer backup de todo o `<cq-installation-dir>` do seu sistema de arquivos.
@@ -178,13 +178,13 @@ O processo lista todos os nós que foram processados. Durante o processo, um nó
 Além disso, o console fornece informações úteis sobre as versões:
 
 * `V 1.0`: o número da versão.
-* `V 1.0.1`&#42;: a estrela indica que a versão é a versão atual (base) e não pode ser limpa.
+* `V 1.0.1`&#42;: a estrela indica que a versão é a versão atual (base) e não pode ser eliminada.
 
 * `Thu Mar 15 2012 08:37:32 GMT+0100`: a data da versão.
 
-No próximo exemplo:
+No exemplo a seguir:
 
-* A variável **[!DNL Shirts]** As versões são removidas porque a idade da versão é superior a dois dias.
+* As **[!DNL Shirts]** versões são eliminadas porque a idade da versão é maior que dois dias.
 * A variável **[!DNL Tonga Fashions!]** as versões são removidas porque seu número de versões é superior a 5.
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
@@ -300,9 +300,9 @@ Em determinadas circunstâncias, talvez você queira criar um arquivo de log per
 
    >[!NOTE]
    >
-   >Embora não seja um requisito técnico, é aconselhável tornar `<identifier>` único.
+   >Apesar de não ser um requisito técnico, é aconselhável tornar-se `<identifier>` único.
 
-1. Defina as seguintes propriedades nesse nó:
+1. Defina as seguintes propriedades nesta nó:
 
    * Nome: `org.apache.sling.commons.log.file`
 
@@ -433,11 +433,11 @@ Em determinadas circunstâncias, talvez você queira criar um arquivo de log per
    >para indicar quando um novo arquivo será criado (e o arquivo existente será renomeado de acordo com o padrão de nome).
    >
    >* Um limite de tamanho pode ser especificado com um número. Se nenhum indicador de tamanho for fornecido, ele será considerado como o número de bytes, ou você poderá adicionar um dos indicadores de tamanho: `KB`, `MB`ou `GB` (maiúsculas e minúsculas ignoradas).
-   >* Uma programação de hora/data pode ser especificada como um `java.util.SimpleDateFormat` padrão. Ele define a período após a qual o arquivo é girado. Além disso, o sufixo anexado ao arquivo girado (para identificação).
+   >* Um cronograma de hora/data pode ser especificado como um `java.util.SimpleDateFormat` padrão. Ela define a período depois da qual o arquivo é girado. Além disso, o sufixo anexado ao arquivo girado (para identificação).
    >
-   >O padrão é &#39;.&#39;aaaa-MM-DD (para a rotação de logs diárias).
+   >O padrão é &#39;.&#39;dd/MM/aaaa (para rotação diária de log).
    >
-   >Por exemplo, à meia-noite 20 de janeiro de 2010 (ou quando a primeira mensagem de log após essa data ocorre para ser preciso),.. /logs/Error.log é renomeado como.. /logs/error.log.2010-01-20. O logon em 21 de Janeiro é apresentado para (um novo e vazio).. /logs/Error.log até que seja sobrepostada na próxima alteração do dia.
+   >Por exemplo, à meia-noite de 20 de janeiro de 2010 (ou quando ocorre a primeira mensagem de log após essa data), .. /logs/error.log foi renomeado para .. /logs/error.log.2010-01-20. O registro para 21 de janeiro é resultado de (novo e vazio). /logs/error.log até que seja rolado na próxima alteração do dia.
    >
    >| `'.'yyyy-MM` | Rotação no início de cada mês |
    >|---|---|
@@ -1134,13 +1134,13 @@ Se o sistema estiver ficando sem espaço em disco ou se você notar hash no disc
 * Se você tiver desativado a coleção de informações de depuração, ela poderá ser configurada em vários locais, incluindo os seguintes:
 
    * [Manipulador de script JSP do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
-   * [Manipulador JavaScript do Apache sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
-   * [Configuração de log do Apache sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
-   * [Gerenciador de biblioteca CQ HTML](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
-   * [CQ WCM Debug Filtrar](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
+   * [Manipulador JavaScript Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
+   * [Configuração de log do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
+   * [Gerenciador de biblioteca HTML CQ](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
+   * [Filtrar de depuração WCM CQ](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
    * [Registradores](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
-* Se e como a limpeza de Versão foi configurada [](/help/sites-deploying/version-purging.md)
+* Configuração e configuração [Versão limpeza](/help/sites-deploying/version-purging.md)
 * Base de conhecimento:
 
    * [Muitos Arquivos Abertos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=pt-BR)
@@ -1148,7 +1148,7 @@ Se o sistema estiver ficando sem espaço em disco ou se você notar hash no disc
 
 ### Degradação regular do desempenho {#regular-performance-degradation}
 
-Se você encontrar o desempenho de seu instância deteriorar após cada reinicialização (às vezes uma semana ou mais), o seguinte pode ser marcado:
+Se você observar o desempenho da sua instância se deteriorando após cada reinicialização (às vezes, uma semana ou mais tarde), o seguinte pode ser verificado:
 
 * [Memória insuficiente](#outofmemory)
 * Base de conhecimento:

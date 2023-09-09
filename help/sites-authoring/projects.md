@@ -13,20 +13,20 @@ exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1365'
-ht-degree: 14%
+ht-degree: 34%
 
 ---
 
 
 # Projetos {#projects}
 
-Os projetos permitem agrupar recursos em uma entidade. Um ambiente comum e compartilhado facilita o gerenciamento de projetos. Os tipos de recursos que você pode associar a um projeto são chamados no AEM de Blocos. Blocos podem incluir informações do projeto e da equipe, ativos, workflows e outros tipos de informações, conforme descrito detalhadamente em [Blocos de projeto.](#project-tiles)
+Os projetos permitem agrupar recursos em uma entidade. Um ambiente comum e compartilhado facilita o gerenciamento de projetos. Os tipos de recursos que podem ser associados a um projeto são chamados no AEM de Blocos. Blocos podem incluir informações do projeto e da equipe, ativos, workflows e outros tipos de informações, conforme descrito detalhadamente em [Blocos de projeto.](#project-tiles)
 
 Como usuário, você pode:
 
 * Criar e excluir projetos
 * Associar pastas de conteúdo e ativos a um projeto
-* Remover links de conteúdo do projeto
+* Remover links de conteúdo de projetos
 
 ## Requisitos de acesso {#access-requirements}
 
@@ -82,19 +82,19 @@ Exibir os detalhes de um projeto clicando nele para detalhar seus detalhes.
 
 Clique em **Criar** para adicionar um novo projeto.
 
-## Mosaico do projeto {#project-tiles}
+## Blocos do projeto {#project-tiles}
 
 Os projetos são compostos de diferentes tipos de informações que você deseja gerenciar em conjunto. Essas informações são representadas por diferentes **Ladrilhos**.
 
-Você pode ter os seguintes mosaicos associados ao seu projeto.
+É possível ter os seguintes blocos associados ao seu projeto.
 
 * [Assets](#assets)
 * [Coleções de ativos](#asset-collections)
 * [Experiências](#experiences)
 * [Links](#links)
-* [Informações do Projeto](#project-info)
+* [Informações do projeto](#project-info)
 * [Equipe](#team)
-* [Landing Pages](#landing-pages)
+* [Página de destino](#landing-pages)
 * [Emails](#emails)
 * [Fluxos de trabalhos](#workflows)
 * [Lançamentos](#launches)
@@ -106,7 +106,7 @@ Clique no botão de reticências na parte inferior direita de qualquer bloco par
 
 ### Ativos {#assets}
 
-No **Assets** lado a lado, é possível coletar todos os ativos que você usa para um projeto específico.
+No bloco **Ativos**, é possível coletar todos os ativos que você usa para um projeto específico.
 
 ![Bloco de ativos](assets/project-tile-assets.png)
 
@@ -114,7 +114,7 @@ Você faz upload de ativos diretamente no bloco.
 
 ### Coleções de ativos {#asset-collections}
 
-Semelhante aos ativos, você pode adicionar [coleções de ativos](/help/assets/manage-collections.md) diretamente ao seu projeto. As coleções são definidas no Assets.
+Semelhante aos ativos, você pode adicionar [Coleções de ativos](/help/assets/manage-collections.md) diretamente ao seu projeto. As coleções são definidas em Ativos.
 
 ![Mosaico da coleção de ativos](assets/project-tile-asset-collection.png)
 
@@ -141,7 +141,7 @@ Você pode nomear o link com um nome fácil de reconhecer, além de alterar a mi
 
 ### Informações do projeto {#project-info}
 
-A variável **Informações do Projeto** o bloco fornece informações gerais sobre o projeto, incluindo uma descrição, o status do projeto (inativo ou ativo), uma data de vencimento e os membros. Além disso, você pode adicionar uma miniatura do projeto, que é exibida na página Projetos principal.
+A variável **Informações do Projeto** o bloco fornece informações gerais sobre o projeto, incluindo uma descrição, o status do projeto (inativo ou ativo), uma data de vencimento e os membros. Além disso, você pode adicionar uma miniatura do projeto, exibida na página de Projetos principal.
 
 ![Mosaico de informações do projeto](assets/project-tile-info.png)
 
@@ -155,13 +155,13 @@ Para configurar a tradução, consulte o documento [Criação de projetos de tra
 
 ### Equipe {#team}
 
-Neste bloco, você pode especificar os membros da equipe do projeto. Ao editar, você pode inserir o nome do membro da equipe e atribuir a função de usuário.
+Neste bloco, é possível especificar os membros da equipe do projeto. Ao editar, você pode inserir o nome do membro da equipe e atribuir a função de usuário.
 
 ![Bloco da equipe](assets/project-tile-team.png)
 
 É possível adicionar e excluir membros da equipe. Além disso, você pode editar a [função de usuário](#userroles) atribuída ao membro da equipe.
 
-### Landing Pages {#landing-pages}
+### Página de destino {#landing-pages}
 
 A variável **Landing Pages** O bloco permite solicitar uma nova página de aterrissagem.
 
@@ -185,7 +185,7 @@ Você pode iniciar fluxos de trabalho para seu projeto. Se algum workflow estive
 
 Dependendo do projeto criado, há fluxos de trabalho diferentes disponíveis.
 
-Elas são descritas em [Trabalhar com fluxos de trabalho de projeto.](/help/sites-authoring/projects-with-workflows.md)
+Eles são descritas em [Trabalho com fluxos de trabalho de projeto.](/help/sites-authoring/projects-with-workflows.md)
 
 ### Lançamentos {#launches}
 
@@ -195,7 +195,7 @@ A variável **Lançamentos** O bloco mostra todas as inicializações solicitada
 
 ### Tarefas {#tasks}
 
-Tarefas permitem monitorar o status de qualquer tarefa relacionada ao projeto, incluindo fluxos de trabalho. As tarefas são abordadas em detalhes em [Trabalhar com tarefas](/help/sites-authoring/task-content.md).
+O bloco Tarefas permite monitorar o status de qualquer tarefa relacionada ao projeto, incluindo fluxos de trabalho. As tarefas são abordadas em detalhes em [Trabalhar com tarefas](/help/sites-authoring/task-content.md).
 
 ![Mosaico de tarefas](assets/project-tile-tasks.png)
 
@@ -214,14 +214,14 @@ Com base no modelo selecionado, você tem opções diferentes disponíveis no pr
 
 As diferentes funções de usuário são definidas no modelo de projeto e são usadas por dois motivos principais:
 
-1. Permissões: as funções do usuário se encaixam em uma das três categorias listadas: observador, editor, proprietário. Por exemplo, um fotógrafo ou redator terá os mesmos privilégios de um editor. As permissões determinam o que um usuário pode fazer com o conteúdo em um projeto.
+1. Permissões: as funções do usuário se encaixam em uma das três categorias listadas: observador, editor, proprietário. Por exemplo, um fotógrafo ou redator terá os mesmos privilégios de um editor. As permissões determinam o que um usuário pode fazer com o conteúdo de um projeto.
 1. Fluxos de trabalho: os fluxos de trabalho determinam quem recebe as tarefas em um projeto. As tarefas podem ser associadas a uma função de projeto. Por exemplo, uma tarefa pode ser atribuída a fotógrafos para que todos os membros da equipe com a função de fotógrafo recebam a tarefa.
 
 Todos os projetos oferecem suporte às seguintes funções padrão para permitir que você administre permissões de segurança e controle.
 
 | Função | Descrição | Permissões | Associação de Grupo |
 |---|---|---|---|
-| Observador | Um usuário nesta função pode exibir detalhes do projeto, incluindo o status do projeto. | Permissões somente leitura em um projeto | `workflow-users` grupo |
+| Observador | Um usuário nesta função pode visualizar detalhes do projeto, incluindo o status. | Permissões somente leitura em um projeto | `workflow-users` grupo |
 | Editor | Um usuário nesta função pode fazer upload e editar o conteúdo de um projeto. | Acesso de leitura e gravação em um projeto, metadados associados e ativos relacionados<br>Privilégios para fazer upload de uma lista de captura, sessão de fotos e revisar e aprovar ativos<br>Permissão de gravação em `/etc/commerce`<br>Modificar permissões em um projeto específico | `workflow-users` grupo |
 | Proprietário | Um usuário com essa função pode criar um projeto, iniciar um trabalho em um projeto e mover ativos aprovados para a pasta de produção. Todas as outras tarefas no projeto também podem ser visualizadas e executadas pelo proprietário. | Permissão de gravação em `/etc/commerce` | `dam-users` grupo para poder criar um projeto<br>`project-administrators` para poder criar um projeto e mover ativos |
 

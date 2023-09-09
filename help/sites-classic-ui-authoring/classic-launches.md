@@ -1,6 +1,6 @@
 ---
 title: Lançamentos
-description: Crie um lançamento para permitir a atualização de uma nova versão de páginas da Web existentes para ativação futura. Ao criar a inicialização, especifique um título e a página de origem.
+description: Crie um lançamento para permitir a atualização de uma nova versão de páginas da Web para ativação futura. Ao criar a inicialização, especifique um título e a página de origem.
 uuid: b1952b6c-fc44-4e39-80ba-9380a6c66b8c
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +11,7 @@ exl-id: e64a66cb-d56a-4504-8883-609143d0daf8
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '182'
-ht-degree: 19%
+ht-degree: 50%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 19%
 
 Os lançamentos permitem desenvolver conteúdo com eficiência para uma versão futura.
 
-Um lançamento é criado para permitir que as alterações sejam preparadas para publicação futura (enquanto você mantém as páginas atuais). Após editar e atualizar suas páginas de lançamento, você as promove à origem e ativa as páginas de origem (nível superior). A promoção duplica o conteúdo da inicialização de volta às páginas de origem e pode ser feita manual ou automaticamente (dependendo dos campos definidos ao criar e editar a inicialização).
+Um lançamento é criado para permitir que as alterações sejam preparadas para publicação futura (enquanto você mantém as páginas atuais). Após editar e atualizar suas páginas de lançamento, você as promove à origem e ativa as páginas de origem (nível superior). A promoção duplica o conteúdo do lançamento de volta às páginas de origem e pode ser feita manual ou automaticamente (dependendo dos campos definidos ao criar e editar o lançamento).
 
 >[!NOTE]
 >

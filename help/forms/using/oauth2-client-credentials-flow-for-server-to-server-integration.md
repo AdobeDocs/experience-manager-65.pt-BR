@@ -7,7 +7,7 @@ exl-id: 31f2ccf8-1f4f-4d88-8c5f-ef1b7d1bfb4f
 source-git-commit: f11bb43d914a43431cab408ca77690b6ba528a06
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -44,8 +44,8 @@ Antes de definir a comunicação entre um aplicativo do Salesforce e um ambiente
 
 ## Etapas para configurar o Salesforce com o fluxo de credenciais do cliente {#steps-to-create-aem-datasource-configuration}
 
-1. Faça logon na instância do Author.
-1. Ir para **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Fontes de dados]**.
+1. Faça logon na Instância do autor do . 
+1. Ir para **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Fontes de dados]**.
 1. Selecione a pasta de configuração.
 1. Clique em **[!UICONTROL Criar]** e a variável **[!UICONTROL Criar configuração da fonte de dados]** é exibida.
 1. Especifique a **[!UICONTROL Título]** e selecione o **[!UICONTROL Tipo de serviço]** as **[!UICONTROL Serviço RESTful]**.

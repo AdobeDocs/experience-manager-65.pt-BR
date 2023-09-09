@@ -19,7 +19,7 @@ ht-degree: 3%
 
 # Configurar o modo Dynamic Media - Scene7{#configuring-dynamic-media-scene-mode}
 
-Se você usar o Adobe Experience Manager definido para ambientes diferentes, como desenvolvimento, preparo e produção, configure o Dynamic Media Cloud Services para cada um desses ambientes.
+Se você usar o Adobe Experience Manager definido para ambientes diferentes, como desenvolvimento, preparo e produção, configure o Dynamic Media Cloud Service para cada um desses ambientes.
 
 ## Diagrama de arquitetura do modo Dynamic Media - Scene7 {#architecture-diagram-of-dynamic-media-scene-mode}
 
@@ -83,7 +83,7 @@ O Feature Pack 18912 permite assimilar ativos em massa por meio do FTP ou migrar
 
 Consulte [Instalar o pacote de recursos 18912 para migração de ativos em massa](/help/assets/bulk-ingest-migrate.md) para obter mais informações.
 
-## Criar uma configuração do Dynamic Media no Cloud Services {#configuring-dynamic-media-cloud-services}
+## Criar uma configuração do Dynamic Media no Cloud Service {#configuring-dynamic-media-cloud-services}
 
 <!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
@@ -91,7 +91,7 @@ Consulte [Instalar o pacote de recursos 18912 para migração de ativos em massa
 
 **To create a Dynamic Media Configuration in Cloud Services:** -->
 
-1. No modo Experience Manager Author, selecione o logotipo do Experience Manager para acessar o console de navegação global, selecione o ícone Tools e acesse **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuração do Dynamic Media]**.
+1. No modo Experience Manager Author, selecione o logotipo do Experience Manager para acessar o console de navegação global, selecione o ícone Tools e acesse **[!UICONTROL Cloud Service]** > **[!UICONTROL Configuração do Dynamic Media]**.
 1. Na página Navegador de configuração do Dynamic Media, no painel esquerdo, selecione **[!UICONTROL global]** (não selecione o ícone de pasta à esquerda de **[!UICONTROL global]**) e selecione **[!UICONTROL Criar]**.
 1. No **[!UICONTROL Criar configuração do Dynamic Media]** , digite um título, o endereço de email da conta do Dynamic Media, a senha e selecione sua região. Essas informações são fornecidas pelo Adobe no e-mail de provisionamento. Entre em contato com o Suporte ao cliente do Adobe se não receber o email.
 
@@ -121,7 +121,7 @@ Consulte [Instalar o pacote de recursos 18912 para migração de ativos em massa
    * **[!UICONTROL Empresa]** - o nome da conta do Dynamic Media.
      >[!IMPORTANT]
      >
-     Somente uma configuração Dynamic Media no Cloud Services é suportada em uma instância de Experience Manager; não adicione mais de uma configuração. Várias configurações do Dynamic Media em uma instância do Experience Manager são _não_ suportado ou recomendado pelo Adobe.
+     Somente uma configuração Dynamic Media no Cloud Service é suportada em uma instância de Experience Manager; não adicione mais de uma configuração. Várias configurações do Dynamic Media em uma instância do Experience Manager são _não_ suportado ou recomendado pelo Adobe.
 
      <!-- CQDOC-19579 and CQDOC-19612 -->
 
@@ -135,7 +135,7 @@ Consulte [Instalar o pacote de recursos 18912 para migração de ativos em massa
 
         ![Caixa de seleção Replicar metadados após publicação no Dynamic Media](assets-dm/replicate-metadata-setting.png)
 
-      * **[!UICONTROL Publicação seletiva]** Essa opção permite controlar quais pastas são publicadas no Dynamic Media. Ele permite usar recursos como Recorte inteligente ou representações dinâmicas, ou determinar quais pastas são publicadas exclusivamente no Experience Manager para visualização. Esses mesmos ativos são *não* publicado no Dynamic Media para entrega no domínio público.<br>Você pode definir essa opção aqui no **[!UICONTROL Configuração da nuvem do Dynamic Media]** ou, se preferir, você pode optar por definir essa opção no nível da pasta, em um **[!UICONTROL Propriedades]**.<br>Consulte [Trabalhar com publicação seletiva no Dynamic Media](/help/assets/selective-publishing.md).<br>Se posteriormente você alterar essa configuração ou se posteriormente alterá-la no nível da pasta, essas alterações afetarão somente os novos ativos que você fizer upload a partir desse ponto. O estado de publicação dos ativos existentes na pasta permanece como está até que você os altere manualmente de **[!UICONTROL Publicação rápida]** ou o **[!UICONTROL Gerenciar publicação]** caixa de diálogo.
+      * **[!UICONTROL Publicação seletiva]** Essa opção permite controlar quais pastas são publicadas no Dynamic Media. Ele permite usar recursos como Recorte inteligente ou representações dinâmicas, ou determinar quais pastas são publicadas exclusivamente no Experience Manager para visualização. Esses mesmos ativos são *não* publicado no Dynamic Media para entrega no domínio público.<br>Você pode definir essa opção aqui no **[!UICONTROL Configuração da nuvem do Dynamic Media]** ou, se preferir, você pode optar por definir essa opção no nível da pasta, em um **[!UICONTROL Propriedades]**.<br>Consulte [Trabalhar com publicação seletiva no Dynamic Media](/help/assets/selective-publishing.md).<br>Se posteriormente você alterar essa configuração, ou se posteriormente alterá-la no nível da pasta, essas alterações afetarão somente os novos ativos que você fizer upload a partir desse ponto. O estado de publicação dos ativos existentes na pasta permanece como está até que você os altere manualmente de **[!UICONTROL Publicação rápida]** ou o **[!UICONTROL Gerenciar publicação]** caixa de diálogo.
 
    * **[!UICONTROL Servidor de visualização seguro]** - permite especificar o caminho do URL para o servidor de visualização de representações seguras. Ou seja, depois que as representações são geradas, o Experience Manager pode acessar e pré-visualizar com segurança as representações remotas do Dynamic Media (nenhum binário é enviado de volta para a instância do Experience Manager).
 A menos que você tenha uma organização especial para usar o servidor de sua própria empresa ou um servidor especial, a Adobe recomenda que você deixe essa configuração conforme especificado.
@@ -189,7 +189,7 @@ A senha alterada é salva ao selecionar **[!UICONTROL Salvar]** no canto superio
 **Para alterar a senha para Dynamic Media:**
 
 1. No modo Experience Manager Author, selecione o logotipo do Experience Manager para acessar o console de navegação global.
-1. À esquerda do console, selecione o ícone Ferramentas e vá para **[!UICONTROL Cloud Services] > [!UICONTROL Configuração do Dynamic Media]**.
+1. À esquerda do console, selecione o ícone Ferramentas e vá para **[!UICONTROL Cloud Service] > [!UICONTROL Configuração do Dynamic Media]**.
 1. Na página Navegador de configuração do Dynamic Media, no painel esquerdo, selecione **[!UICONTROL global]**. Não selecione o ícone de pasta à esquerda de **[!UICONTROL global]**. Em seguida, selecione **[!UICONTROL Editar]**.
 1. No **[!UICONTROL Editar configuração do Dynamic Media]** página, logo abaixo do **[!UICONTROL Senha]** selecione **[!UICONTROL Alterar senha]**.
 1. No **[!UICONTROL Alterar senha]** faça o seguinte:

@@ -117,7 +117,7 @@ Ao fazer logon no [Adobe Experience Cloud](https://experienceleague.adobe.com/do
 
    * Console de medição do vídeo principal
 
-      * Selecionar `Use Solution Variables`
+      * Selecione `Use Solution Variables`
       * Selecione Salvar
 
 Se estiver usando um **novo conjunto de relatórios**, esteja ciente de que um novo conjunto de relatórios pode ter apenas 4 evars e 6 variáveis de evento, enquanto 11 evars e 7 vars de evento são necessários para as comunidades.
@@ -188,7 +188,7 @@ Por exemplo, insira *comunidades*
 
 * **Modelo**
 
-  Selecionar `Adobe Analytics Configuration`
+  Selecione `Adobe Analytics Configuration`
 
 * Selecione **Criar**
 
@@ -264,7 +264,7 @@ Por exemplo, insira *comunidades*.
 
 * *Modelo*
 
-  Selecionar `Adobe Analytics Framework`.
+  Selecione `Adobe Analytics Framework`.
 
 * Selecione **Criar**.
 

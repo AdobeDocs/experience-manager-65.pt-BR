@@ -6,7 +6,7 @@ exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 source-git-commit: 79fa58e63596301e1669903ce10dd8b2ba7d0a1b
 workflow-type: tm+mt
 source-wordcount: '4774'
-ht-degree: 53%
+ht-degree: 55%
 
 ---
 
@@ -207,7 +207,7 @@ Por exemplo, se você:
 
 1. Instalar um pacote contendo `Content-Fragment-Model-1` e `Content-Fragment-Model-2`:
 
-   1. Tipos de GraphQL para `Model-1` e `Model-2` são geradas.
+   1. Tipos de GraphQL para `Model-1` e `Model-2` são gerados.
 
 1. Em seguida, o `Content-Fragment-Model-2` é modificado:
 
@@ -383,7 +383,7 @@ Consulte [Exemplo de consulta - todas as cidades com uma variável nomeada](/hel
 
 >[!NOTE]
 >
->Se a variação especificada não existir para um Fragmento de conteúdo, os dados originais (também conhecidos como variação mestre) são retornados como padrão (substituta).
+>Se a variação fornecida não existir para um fragmento de conteúdo, os dados originais (também conhecidos como variação principal) serão retornados como um padrão (fallback).
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -855,7 +855,7 @@ A operação básica de consultas com o GraphQL para AEM adere à especificaçã
 
         >[!NOTE]
         >
-        >Se a variação especificada não existir para um Fragmento de conteúdo, a variação principal é retornada como padrão (substituta).
+        >Se a variação especificada não existir para um Fragmento de conteúdo, a variação principal será retornada como padrão (fallback).
 
         >[!CAUTION]
         >O campo `_variation` gerado pelo sistema não pode ser usado junto com o filtro `includeVariations`.
@@ -1005,4 +1005,4 @@ No futuro, o AEM planeja investir na API AEM GraphQL.*&quot;
 
 ## Tutorial - Introdução ao AEM Headless e GraphQL {#tutorial}
 
-Procurando um tutorial prático? Confira [Introdução ao AEM Headless e ao GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=pt-BR) Tutorial completo que ilustra como criar e expor conteúdo usando APIs AEM GraphQL e consumi-lo por um aplicativo externo, em um cenário de CMS headless.
+Procurando um tutorial prático? Veja o tutorial completo de [Introdução ao AEM Headless e GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=pt-BR) que ilustra como criar e expor conteúdo usando as APIs GraphQL do AEM e consumi-lo por meio de um aplicativo externo, em um cenário de CMS headless.

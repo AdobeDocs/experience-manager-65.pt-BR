@@ -33,7 +33,7 @@ Verifique se o Dynamic Media foi configurado corretamente fazendo o seguinte:
 
   Este pacote de recursos opcional é para suporte a FTP ou se você estiver migrando ativos do Dynamic Media Classic para o Dynamic Media.
 
-* Navegue até a interface do usuário do Cloud Services e confirme se a conta provisionada aparece em **[!UICONTROL Configurações disponíveis]**.
+* Navegue até a interface do usuário do Cloud Service e confirme se a conta provisionada aparece em **[!UICONTROL Configurações disponíveis]**.
 * Certifique-se de que o `Dynamic Media Asset Activation (scene7)` o agente de replicação está habilitado.
 
   Esse agente de replicação é encontrado em Agentes no Autor.
@@ -177,7 +177,7 @@ Se tiver problemas com o vídeo, consulte a seguinte orientação para solução
    <td>
     <ol>
      <li>Verifique a instância do Experience Manager com <code>-r dynamicmedia_scene7</code></li>
-     <li>Verifique se a configuração do Dynamic Media em Cloud Services está definida corretamente.</li>
+     <li>Verifique se a configuração do Dynamic Media em Cloud Service está definida corretamente.</li>
      <li>Verifique se a pasta tem um perfil de vídeo. Além disso, verifique o perfil do vídeo.</li>
     </ol> </td>
   </tr>
@@ -255,7 +255,7 @@ Se o trabalho artístico de ativos de amostra ou predefinição do visualizador 
 1. Navegue até o gerenciador de pacotes CRX: `https://localhost:4502/crx/packmgr/`.
 1. Procure o pacote do visualizador na lista; ele começa com `cq-dam-scene7-viewers-content`.
 1. Selecionar **Reinstalar**.
-1. Em Cloud Services, navegue até a página Configuração do Dynamic Media e abra a caixa de diálogo de configuração da sua configuração Dynamic Media - S7.
+1. Em Cloud Service, navegue até a página Configuração do Dynamic Media e abra a caixa de diálogo de configuração da sua configuração Dynamic Media - S7.
 1. Não fazer alterações, selecione **Salvar**.
 Essa ação de salvar aciona a lógica novamente para criar e sincronizar os ativos de amostra, o CSS de predefinição do visualizador e o trabalho artístico.
 
@@ -276,4 +276,4 @@ Essa ação de salvar aciona a lógica novamente para criar e sincronizar os ati
 1. Exclua o `viewer` pasta.
 1. Próximo ao canto superior esquerdo da página CRXDE Lite, selecione **[!UICONTROL Salvar tudo]**.
 1. No canto superior esquerdo da página CRXDE Lite, selecione a **Voltar ao início** ícone.
-1. Recriar um [Configuração do Dynamic Media no Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
+1. Recriar um [Configuração do Dynamic Media no Cloud Service](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).

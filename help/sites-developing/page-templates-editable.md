@@ -12,7 +12,7 @@ exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '3221'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -74,7 +74,7 @@ Ao criar um novo modelo editável, você:
 
       * Se você estiver criando um modelo em uma pasta personalizada fora da `We.Retail` conteúdo de amostra, você pode escolher Componentes de base ou usar [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=pt-BR).
 
-   * Se você quiser que os autores de página possam adicionar e remover componentes, adicione um sistema de parágrafo ao modelo.
+   * Se desejar que os autores de página possam adicionar e remover componentes, adicione um sistema de parágrafo ao modelo.
    * Os componentes podem ser desbloqueados e bloqueados novamente para permitir que você defina o conteúdo inicial.
 
    Para obter detalhes sobre como um autor de modelo define a estrutura, consulte [Criação de modelos de página](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).

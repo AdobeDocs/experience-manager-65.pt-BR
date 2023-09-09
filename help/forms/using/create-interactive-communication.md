@@ -72,7 +72,7 @@ Se você selecionar a variável **[!UICONTROL Usar impressão como principal no 
 
    Para obter mais informações sobre canal de impressão e canal da Web, consulte [Canal de impressão e canal da Web](/help/forms/using/web-channel-print-channel.md).
 
-1. Toque **[!UICONTROL Criar]**. A comunicação interativa é criada e uma caixa de alerta é exibida. Toque **[!UICONTROL Editar]** para começar a criar o conteúdo da comunicação interativa, conforme explicado em [Adicionar conteúdo usando a interface do usuário de criação da Comunicação interativa](#step2). Como alternativa, toque em **[!UICONTROL Concluído]** e escolha editar a Comunicação interativa posteriormente.
+1. Toque em **[!UICONTROL Criar]**. A comunicação interativa é criada e uma caixa de alerta é exibida. Toque **[!UICONTROL Editar]** para começar a criar o conteúdo da comunicação interativa, conforme explicado em [Adicionar conteúdo usando a interface do usuário de criação da Comunicação interativa](#step2). Como alternativa, toque em **[!UICONTROL Concluído]** e escolha editar a Comunicação interativa posteriormente.
 
 ## Adicionar conteúdo à comunicação interativa {#step2}
 

@@ -384,7 +384,7 @@ A inclusão da marcação acima no HTML faz o seguinte:
 * Inicializa o sidekick com componentes padrão. Novos componentes podem ser adicionados à página de aterrissagem arrastando componentes do sidekick para o componente parsys.
 * Dois componentes de título também fazem parte do parsys.
 
-### Destino {#target}
+### Planejado {#target}
 
 O componente de Direcionamento mostra o conteúdo de uma experiência na página. É possível ter muitas experiências criadas em uma campanha e o componente de Direcionamento pode mostrar dinamicamente o conteúdo de diferentes experiências para vários usuários que visitam a página.
 

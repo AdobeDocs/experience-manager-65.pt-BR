@@ -20,7 +20,7 @@ ht-degree: 3%
 
 # Gerar documento de registro para formulários adaptáveis{#generate-document-of-record-for-adaptive-forms}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -418,7 +418,7 @@ Para aplicar uma quebra de página a um documento de registro:
 
 1. No **[!UICONTROL Paginação]** seção, toque em ![Pasta](/help/forms/using/assets/folder-icon.png) no **[!UICONTROL Local]** campo.
 1. Toque **[!UICONTROL Parte superior da próxima página]** e toque em **[!UICONTROL Selecionar]**. Você também pode tocar em **[!UICONTROL Início da página]**, selecione a página mestra e toque em **[!UICONTROL Selecionar]** para aplicar a quebra de página.
-1. Toque ![Salvar](/help/forms/using/assets/save_icon.png) para salvar as propriedades.
+1. Toque em ![Salvar](/help/forms/using/assets/save_icon.png) para salvar as propriedades.
 
 O painel selecionado é movido para a próxima página.
 
@@ -438,7 +438,7 @@ Para aplicar as propriedades da segunda página-mestre a um painel e as propried
 O AEM Forms aplica a segunda página-mestre ao painel e a todos os painéis subsequentes no formulário adaptável.
 1. No **[!UICONTROL Paginação]** seção, toque em ![Pasta](/help/forms/using/assets/folder-icon.png) no **[!UICONTROL Depois]** campo.
 1. Toque **[!UICONTROL Ir para página]**, selecione a terceira página-mestre e toque em **[!UICONTROL Selecionar]**.
-1. Toque ![Salvar](/help/forms/using/assets/save_icon.png) para salvar as propriedades.
+1. Toque em ![Salvar](/help/forms/using/assets/save_icon.png) para salvar as propriedades.
 O AEM Forms aplica a terceira página-mestre ao painel e a todos os painéis subsequentes no formulário adaptável.
 
 

@@ -183,7 +183,7 @@ Toque novamente em Redimensionar para voltar à caixa de diálogo Criar regra\Ed
 
    ![expandeditrulevariables](assets/expandededitrulevariables.png)
 
-1. Toque **[!UICONTROL Criar]**.
+1. Toque em **[!UICONTROL Criar]**.
 
    Criar variáveis é exibido.
 
@@ -194,7 +194,7 @@ Toque novamente em Redimensionar para voltar à caixa de diálogo Criar regra\Ed
    * **[!UICONTROL Tipo]**: selecione um tipo da variável: String, Number, Boolean ou Date.
    * **[!UICONTROL Permitir Somente Valores Específicos]**: para variáveis de string e número, você pode garantir que o agente escolha entre um conjunto específico de valores para um espaço reservado na interface do usuário do agente. Para especificar o conjunto de valores, selecione essa opção e especifique valores separados por vírgula que sejam permitidos na **[!UICONTROL Valores]** campo.
 
-1. Toque **[!UICONTROL Criar]**.
+1. Toque em **[!UICONTROL Criar]**.
 
    A variável é criada e listada no painel Variáveis.
 

@@ -796,7 +796,7 @@ Por exemplo, `https://ims-na1.adobelogin.com/`
 
 ## Configurar a nuvem de tags do Experience Platform para integração {#configuring-adobe-launch-cloud-for-the-integration}
 
-1. No autor do Experience Manager, próximo ao canto superior esquerdo, selecione a **[!UICONTROL Ferramentas]** ícone (martelo), vá para **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurações de tags Experience Platform]**.
+1. No autor do Experience Manager, próximo ao canto superior esquerdo, selecione a **[!UICONTROL Ferramentas]** ícone (martelo), vá para **[!UICONTROL Cloud Service]** > **[!UICONTROL Configurações de tags Experience Platform]**.
 
    ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
 
@@ -855,4 +855,4 @@ No entanto, ela é compatível com o nó de publicação do Experience Manager. 
 
 É possível contornar essa limitação. Especifique o URL de desenvolvimento ou de armazenamento temporário da biblioteca de tags da Platform na configuração da nuvem de tags do Experience Platform para o nó de publicação do Experience Manager acima. Isso faz com que o nó de publicação do Experience Manager use a versão de Desenvolvimento ou Preparo da biblioteca de tags do Experience Platform.
 
-Consulte [Integrar o Experience Manager com tags Experience Platform por meio de [!DNL Adobe Developer Console]](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) para obter mais informações sobre como configurar a configuração da nuvem de tags do Experience Platform.
+Consulte [Integrar o Experience Manager com tags Experience Platform por meio de [!DNL Adobe Developer Console]](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=pt-BR) para obter mais informações sobre como configurar a configuração da nuvem de tags do Experience Platform.

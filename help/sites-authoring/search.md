@@ -12,7 +12,7 @@ exl-id: dd65b308-c449-4f64-9f46-0797b922910f
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '506'
-ht-degree: 57%
+ht-degree: 78%
 
 ---
 
@@ -44,7 +44,7 @@ Com o painel de pesquisa, você pode:
 
 Para pesquisar e filtrar os recursos:
 
-1. Abertura **Pesquisar** (com a lupa na barra de ferramentas) e insira o termo de pesquisa. Serão feitas sugestões e elas poderão ser selecionadas:
+1. Abra **Pesquisar** (com a lupa na barra de ferramentas) e insira o termo de pesquisa. Serão feitas sugestões e elas poderão ser selecionadas:
 
    ![s-01](assets/s-01.png)
 
@@ -101,7 +101,7 @@ Para pesquisar e filtrar os recursos:
 
 Além de pesquisar por uma grande variedade de aspectos, também é possível salvar uma configuração de pesquisa específica para recuperar e usar em um estágio posterior:
 
-1. Defina os critérios de pesquisa e selecione **Salvar**.
+1. Defina seus critérios de pesquisa e clique em **Salvar**.
 
    ![screen-shot_2019-03-05at102613-1](assets/screen-shot_2019-03-05at102613-1.png)
 
@@ -113,9 +113,9 @@ Além de pesquisar por uma grande variedade de aspectos, também é possível sa
 
    ![screen-shot_2019-03-05at102927](assets/screen-shot_2019-03-05at102927.png)
 
-1. Depois de salvo, você pode:
+1. Depois de salvo, é possível:
 
-   * Uso **x** (em relação ao nome da pesquisa salva) para iniciar uma nova consulta (a pesquisa salva em si não será excluída).
+   * Usar o **x** (próximo ao nome da pesquisa salva) para iniciar uma nova consulta (a pesquisa salva em si não será excluída).
    * **Editar pesquisa salva**, alterar as condições de pesquisa e **Salvar** novamente.
 
 As pesquisas salvas podem ser modificadas ao selecionar a pesquisa salva e clicar em **Editar pesquisa salva** na parte inferior do painel de pesquisa.

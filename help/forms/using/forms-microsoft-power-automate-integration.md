@@ -189,7 +189,7 @@ Antes de enviar o formulário adaptável, verifique se `When an HTTP Request is 
 
 ## Consulte também,
 
-* [Criar um Formulário adaptável](create-an-adaptive-form-core-components.md)
+* [Criação de um Formulário adaptável](create-an-adaptive-form-core-components.md)
 * [Configurar uma ação de envio](configuring-submit-actions.md)
 * [Conector Adobe Experience Manager para Microsoft® Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
 

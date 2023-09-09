@@ -13,7 +13,7 @@ exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '523'
-ht-degree: 42%
+ht-degree: 75%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 42%
 
 ## Editar páginas de lançamento {#editing-launch-pages}
 
-Quando uma inicialização é criada para uma página (ou conjunto de páginas), é possível editar o conteúdo na cópia de inicialização da(s) página(s).
+Quando um lançamento é criado para uma página (ou conjunto de páginas), é possível editar o conteúdo na cópia de lançamento da(s) página(s).
 
 1. Acesse [Inicialização a partir de Referências (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar as ações disponíveis.
 1. Selecionar **Ir para a página** para abrir a página para edição.
@@ -41,19 +41,19 @@ Se o seu lançamento se basear em um [live copy](/help/sites-administering/msm.m
 
 Uma livecopy é usada para sincronizar o conteúdo da *ramificação de origem* para a *ramificação de inicialização* (para manter a inicialização atualizada com as alterações feitas na origem).
 
-É possível fazer alterações da mesma maneira que editar uma live copy padrão; por exemplo:
+É possível fazer alterações da mesma maneira que você edita uma live copy padrão; por exemplo:
 
-* Clicar em um cadeado fechado interromperá essa sincronização e permitirá que você faça novas atualizações no conteúdo em sua inicialização. Uma vez desbloqueadas (cadeado aberto) suas alterações não serão substituídas por quaisquer alterações feitas no mesmo local dentro da ramificação de origem.
+* Clicar em um cadeado fechado interromperá essa sincronização e permitirá que você faça novas atualizações no conteúdo em sua inicialização. Uma vez desbloqueadas (cadeado aberto), suas alterações não serão substituídas por quaisquer alterações feitas no mesmo local dentro da ramificação de origem.
 * **Suspender** (e **Retomar**) herança de uma página específica.
 
-Consulte [Alterar conteúdo da Live Copy](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) para obter mais informações.
+Consulte [Alterar conteúdo da live copy](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) para obter mais informações.
 
 ## Comparação de uma página de lançamento à sua página de origem {#comparing-a-launch-page-to-its-source-page}
 
 Para rastrear as alterações feitas, é possível exibir a inicialização em **Referências** e comparar a página de inicialização com a página de origem:
 
 1. No **Sites** console, [navegue até a página de origem do seu lançamento e selecione-o](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources).
-1. Abra o **[Referências](/help/sites-authoring/basic-handling.md#references)** e selecione **Lançamentos**.
+1. Abra o painel de **[Referências](/help/sites-authoring/basic-handling.md#references)** e selecione **Lançamentos**.
 1. Selecione o lançamento específico e **Comparar à origem**:
 
    ![screen-shot_2019-03-05at121952](assets/screen-shot_2019-03-05at121952.png)
@@ -68,7 +68,7 @@ A qualquer momento, você pode adicionar ou remover páginas ao/do intervalo de 
 
 1. Acesse e selecione o lançamento a partir do seguinte:
 
-   * o [Iniciar console](/help/sites-authoring/launches.md#the-launches-console):
+   * o [console Lançamentos](/help/sites-authoring/launches.md#the-launches-console):
 
       * Selecione **Editar**.
 
@@ -84,15 +84,15 @@ A qualquer momento, você pode adicionar ou remover páginas ao/do intervalo de 
    >
    >Para adicionar páginas a um lançamento, elas devem estar abaixo de uma raiz de idioma comum, ou seja, em um único site.
 
-## Editar uma configuração de inicialização {#editing-a-launch-configuration}
+## Editar uma configuração de lançamento {#editing-a-launch-configuration}
 
 A qualquer momento, você pode editar as propriedades de um lançamento:
 
 1. Acesse e selecione o lançamento a partir do seguinte:
 
-   * o [Iniciar console](/help/sites-authoring/launches.md#the-launches-console):
+   * o [console Lançamentos](/help/sites-authoring/launches.md#the-launches-console):
 
-      * Selecionar **Propriedades**.
+      * Selecione **Propriedades**.
 
    * [Referências (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar as ações disponíveis:
 
@@ -106,6 +106,6 @@ A qualquer momento, você pode editar as propriedades de um lançamento:
 
 ## Descobrir o status de lançamento de uma página {#discovering-the-launch-status-of-a-page}
 
-O status é exibido ao selecionar uma inicialização específica na guia Referências (consulte [Lançamentos em referências (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
+O status é exibido ao selecionar um lançamento específico na guia Referências (consulte [Inicialização a partir de Referências (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
 
 ![screen-shot_2019-03-05at121901](assets/screen-shot_2019-03-05at121901.png)

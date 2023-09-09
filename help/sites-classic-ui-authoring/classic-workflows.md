@@ -1,6 +1,6 @@
 ---
 title: Trabalhar com fluxos de trabalho
-description: Os fluxos de trabalho do AEM permitem automatizar uma série de etapas executadas em uma página ou ativo. Por exemplo, ao publicar, um editor precisa revisar o conteúdo, antes que um administrador do site ative a página. Um fluxo de trabalho que automatiza esse exemplo notifica cada participante quando é hora de executar o trabalho necessário.
+description: Os fluxos de trabalho do AEM permitem automatizar uma série de etapas executadas em uma página ou ativo. Por exemplo, ao publicar, um(a) editor(a) precisa revisar o conteúdo, antes que o(a) admin do site ative a página. Um fluxo de trabalho que automatiza esse exemplo notifica cada participante quando é hora de executar o trabalho necessário.
 uuid: 3eb6e790-6589-414a-8e51-33c358f47a73
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,22 +11,22 @@ exl-id: 298fcfeb-dc8d-4edc-8743-83c0e5e5bc08
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '210'
-ht-degree: 23%
+ht-degree: 78%
 
 ---
 
 # Trabalhar com fluxos de trabalho{#working-with-workflows}
 
-Os fluxos de trabalho do AEM permitem automatizar uma série de etapas executadas em uma página ou ativo. Por exemplo, ao publicar, um editor precisa revisar o conteúdo, antes que um administrador do site ative a página. Um fluxo de trabalho que automatiza esse exemplo notifica cada participante quando é hora de executar o trabalho necessário:
+Os fluxos de trabalho do AEM permitem automatizar uma série de etapas executadas em uma página ou ativo. Por exemplo, ao publicar, um(a) editor(a) precisa revisar o conteúdo, antes que o(a) admin do site ative a página. Um fluxo de trabalho que automatiza esse exemplo notifica cada participante quando é hora de executar o trabalho necessário:
 
-1. O autor aplica o fluxo de trabalho à página.
-1. O editor recebe um item de trabalho que indica que ele é necessário para revisar o conteúdo da página. Quando concluído, ele indica que o item de trabalho está concluído.
-1. O administrador do site recebe um item de trabalho que solicita a ativação da página. Quando concluído, ele indica que o item de trabalho está concluído.
+1. O(a) autor(a) aplica o fluxo de trabalho à página.
+1. Editores(as) recebem um item de trabalho que indica que é necessário revisar o conteúdo da página. Ao terminar, é necessário confirmar que o item de trabalho foi concluído.
+1. O administrador do site recebe um item de trabalho que solicita a ativação da página. Ao terminar, é necessário confirmar que o item de trabalho foi concluído.
 
 Normalmente:
 
 * Os autores de conteúdo aplicam fluxos de trabalho a páginas e participam de fluxos de trabalho.
-* Os workflows usados são específicos dos processos de negócios da organização.
+* Os fluxos de trabalho usados são específicos para os processos comerciais da organização.
 
 As seguintes páginas abordam:
 

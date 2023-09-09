@@ -1,7 +1,7 @@
 ---
 title: Diferencial de páginas
 seo-title: Page Diff
-description: O recurso de comparação de página permite a comparação conveniente lado a lado de duas páginas com suas diferenças destacadas.
+description: O recurso de diferencial de páginas permite a comparação conveniente lado a lado de duas páginas com suas diferenças destacadas.
 seo-description: The page diff feature allows for the convenient side-by-side comparison of two pages with their differences highlighted.
 uuid: 5af8b466-5922-4fe6-9eae-7bad99be23e0
 contentOwner: User
@@ -14,7 +14,7 @@ exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '577'
-ht-degree: 31%
+ht-degree: 88%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 31%
 
 ## Introdução {#introduction}
 
-A criação de conteúdo é um processo iterativo. A criação com eficiência requer a capacidade de ver o que foi alterado de uma iteração para outra. Visualizar uma versão da página e, em seguida, a outra é ineficiente e sujeita a erros. Um autor deseja poder comparar facilmente a página atual lado a lado com outra versão.
+A criação de conteúdo é um processo iterativo. A criação com eficiência requer a capacidade de ver o que foi alterado de uma iteração para outra. Visualizar uma versão da página e, em seguida, a outra é ineficiente e sujeita a erros. Um autor deseja poder comparar facilmente a página atual lado a lado com a outra versão.
 
-O recurso de comparação de página permite a comparação conveniente lado a lado de duas páginas com suas diferenças destacadas.
+O recurso de diferencial de páginas permite a comparação conveniente lado a lado de duas páginas com suas diferenças destacadas.
 
 >[!TIP]
 >
@@ -45,8 +45,8 @@ Consulte os respectivos tópicos sobre como iniciar o diferencial nesses context
 
 Independentemente do conteúdo sendo comparado, a apresentação do diferencial permanece a mesma.
 
-* O conteúdo selecionado quando você iniciou a comparação é exibido à esquerda (o ponto de entrada da comparação).
-* O conteúdo de comparação é exibido à direita (em relação ao que o conteúdo selecionado é comparado).
+* O conteúdo selecionado quando você iniciou o diferencial é exibido à esquerda (o ponto de entrada do diferencial).
+* O conteúdo a ser comparado é exibido à direita (ou seja, aquele com o qual o conteúdo selecionado será comparado).
 
 Por exemplo, ao comparar versões, a versão atual é exibida à esquerda e a versão anterior é exibida à direita.
 
@@ -54,21 +54,21 @@ A origem de ambas as páginas é claramente exibida na barra de cabeçalho na pa
 
 ![Fonte mostrada no cabeçalho](assets/chlimage_1-109.png)
 
-O recurso de diferencial detecta alterações no nível do componente e do HTML. Os itens alterados são realçados com cores diferentes.
+O recurso diferencial detecta alterações no nível do componente e do HTML. Os itens alterados serão realçados com cores diferentes.
 
 **Alterações de componente**
 
-* Verde claro - Componente adicionado
+* Verde-claro - Componente adicionado
 * Rosa - Componente removido
 
 **Alterações no HTML**
 
-* Verde escuro - HTML adicionado
+* Verde-escuro - HTML adicionado
 * Vermelho - HTML removido
 
 >[!NOTE]
 >
->Ao comparar cópias de idioma, o realce é desativado, pois em uma tradução, tudo é alterado e o realce não traria benefícios.
+>Ao comparar cópias em idiomas diferentes, o realce é desativado, pois em uma tradução tudo é alterado e o realce não traria benefício algum.
 
 ### Tela cheia e ao sair   {#fullscreen-and-exiting}
 
@@ -84,17 +84,17 @@ Você também pode optar por fechar a visualização em tela cheia clicando no �
 
 ![Fechar tela inteira](do-not-localize/chlimage_1-19.png)
 
-Você pode sair da comparação lado a lado a qualquer momento clicando no botão Fechar no cabeçalho.
+É possível sair do diferencial lado a lado a qualquer momento clicando no botão Fechar no cabeçalho.
 
 ## Limitações   {#limitations}
 
-Há algumas situações em que o recurso de diferencial da página pode não detectar uma diferença conforme esperado.
+Há algumas situações em que o recurso de diferencial de páginas pode não detectar uma diferença conforme esperado.
 
-* Ao comparar versões e inicializações, o diferencial não leva em conta componentes dinâmicos, como navegações estruturais, menus, listas de produtos ou logotipos (componentes que dependem da estrutura do site para renderizar seu conteúdo).
+* Ao comparar versões e inicializações, o diferencial não leva em conta componentes dinâmicos como navegações estruturais, menus, listas de produtos ou logotipos (componentes que dependem da estrutura do site para renderizar seu conteúdo).
 * Para versões, o diferencial não recria a política de controle de acesso e as relações com a Live Copy.
 * Se uma página for movida, não será mais possível fazer uma comparação com nenhuma versão feita antes da movimentação.
 
-   * Se você tiver problemas com um diferencial, verifique a [Linha do tempo](/help/sites-authoring/basic-handling.md#timeline) para ver se a página foi movida.
+   * Se você tiver problemas com um diferencial, verifique a [Linha do tempo](/help/sites-authoring/basic-handling.md#timeline) da página para ver se ela foi movida.
 
 >[!NOTE]
 >

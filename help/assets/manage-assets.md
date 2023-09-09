@@ -251,7 +251,7 @@ Ao fazer upload de arquivos de imagem PostScript (EPS) ou Illustrator (AI), voc�
 
 | Opção | Subopção | Descrição |
 |---|---|---|
-| Processando | | Escolher **[!UICONTROL Rasterizar]** para converter gráficos vetoriais no arquivo para o formato bitmap. |
+| Processamento | | Escolher **[!UICONTROL Rasterizar]** para converter gráficos vetoriais no arquivo para o formato bitmap. |
 | Manter plano de fundo transparente na imagem renderizada | | Mantenha a transparência de fundo do arquivo. |
 | Resolução | | Determina a configuração de resolução. Essa configuração determina quantos pixels são exibidos por polegada no arquivo. |
 | Espaço de cor | | Selecione o menu Espaço de cor e escolha entre as seguintes opções de espaço de cor: |
@@ -298,7 +298,7 @@ Escolha entre as seguintes opções:
 
 | Opção | Subopção | Descrição |
 |---|---|---|
-| Processando | Rasterizar | (Padrão) Extrai as páginas no arquivo PDF e converte gráficos de vetor em imagens de bitmap. Escolha essa opção se desejar criar um eCatalog. |
+| Processamento | Rasterizar | (Padrão) Extrai as páginas no arquivo PDF e converte gráficos de vetor em imagens de bitmap. Escolha essa opção se desejar criar um eCatalog. |
 | Extrair | Pesquisar palavras | Extrai palavras do arquivo PDF para que o arquivo possa ser pesquisado por palavra-chave em um eCatalog Viewer. |
 | | Links | Extrai links dos arquivos PDF e os converte em Mapas de imagem que são usados em um eCatalog Viewer. |
 | Gerar automaticamente eCatalog a partir de PDF de várias páginas | | Cria automaticamente um eCatalog a partir do arquivo PDF. O eCatalog é nomeado com base no arquivo PDF que você carregou. (Essa opção só estará disponível se você rasterizar o arquivo de PDF à medida que fizer upload dele.) |

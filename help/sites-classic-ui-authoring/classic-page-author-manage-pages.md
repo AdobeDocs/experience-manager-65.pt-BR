@@ -11,7 +11,7 @@ exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1909'
-ht-degree: 12%
+ht-degree: 21%
 
 ---
 
@@ -27,7 +27,7 @@ Esta seção descreve como criar e gerenciar páginas com o Adobe Experience Man
 
 ## Organizar seu site {#organizing-your-website}
 
-Como autor, você precisará organizar seu site dentro do AEM. Isso envolve criar e nomear suas páginas de conteúdo para que:
+Como autor, será necessário organizar seu site dentro do AEM. Isso envolve criar e nomear suas páginas de conteúdo de modo que:
 
 * você pode encontrá-los facilmente no ambiente de criação
 * os visitantes do seu site podem navegá-los facilmente no ambiente de publicação
@@ -124,7 +124,7 @@ Na interface clássica, você **não é possível inserir caracteres inválidos*
 
 ### Modelos {#templates}
 
-No AEM, um modelo especifica um tipo de página especializado. Um modelo será usado como a base para qualquer nova página que está sendo criada.
+No AEM, um modelo especifica um tipo especializado de página. Um modelo será usado como a base para qualquer nova página que está sendo criada.
 
 O modelo define a estrutura de uma página, incluindo uma imagem em miniatura e outras propriedades. Por exemplo, você pode ter modelos separados para páginas de produtos, mapas de site e informações de contato. Os modelos são compostos de [componentes](#components).
 
@@ -240,7 +240,7 @@ Ao copiar, é possível copiar:
 
 >[!NOTE]
 >
->A renomeação de uma página também está sujeita à [Convenções de nomenclatura da página](#page-naming-conventions) ao especificar o nome da nova página.
+>A renomeação de uma página também está sujeita às [convenções de nomenclatura de página](#page-naming-conventions) ao especificar o nome da nova página.
 
 O procedimento para mover ou renomear uma página é o mesmo. Com a mesma ação, é possível:
 
@@ -248,7 +248,7 @@ O procedimento para mover ou renomear uma página é o mesmo. Com a mesma ação
 * renomear uma página no mesmo local
 * mover uma página para um novo local e renomeá-la ao mesmo tempo
 
-O AEM oferece a funcionalidade de atualizar links internos para a página que está sendo renomeada ou movida. Isso pode ser feito página por página para oferecer flexibilidade total.
+O AEM oferece a funcionalidade de atualizar links internos para a página que está sendo renomeada ou movida. Isso pode ser feito página por página para proporcionar total flexibilidade.
 
 Para mover ou renomear uma página:
 
@@ -320,13 +320,13 @@ Para mover ou renomear uma página:
 
 ### Bloquear uma página   {#locking-a-page}
 
-Você pode [bloquear/desbloquear uma página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page) de um console ou ao editar uma página individual. As informações sobre o bloqueio de uma página também são mostradas em ambos os locais.
+É possível [bloquear/desbloquear uma página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page) a partir de um console ou ao editar uma página individual. As informações sobre se uma página está bloqueada também são exibidas em ambos os locais.
 
 ### Criação de uma nova pasta {#creating-a-new-folder}
 
 >[!NOTE]
 >
->As pastas também estão sujeitas ao [Convenções de nomenclatura da página](#page-naming-conventions) ao especificar o novo nome da pasta.
+>As pastas também estão sujeitas às [convenções de nomenclatura de página](#page-naming-conventions) ao especificar um novo nome de pasta.
 
 1. Abra o **Sites** e navegue até o local desejado.
 1. No **Novo...** (clique na seta ao lado de **Novo...**), selecione **Nova pasta...**.

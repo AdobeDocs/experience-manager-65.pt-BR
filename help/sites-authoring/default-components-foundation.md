@@ -38,13 +38,13 @@ O uso de componentes de base é compatível, mas eles foram descontinuados e sub
 
 >[!NOTE]
 >
->Esta seção discute apenas os componentes que estão disponíveis prontamente em uma instalação padrão do AEM.
+>Esta seção discute apenas os componentes disponíveis prontos para uso em uma instalação padrão do AEM.
 >
 >Dependendo da sua instância, você pode ter componentes personalizados desenvolvidos explicitamente para suas necessidades. Esses componentes personalizados podem até ter o mesmo nome de alguns dos componentes discutidos aqui.
 
-Os componentes estão disponíveis no **Componentes** do painel lateral do editor de páginas quando [editar uma página](/help/sites-authoring/editing-content.md).
+Os componentes estão disponíveis na guia **Componentes** do painel lateral do editor de páginas ao [editar uma página](/help/sites-authoring/editing-content.md).
 
-Você pode selecionar um componente e arrastá-lo até o local desejado na página. É possível editá-lo usando:
+Você pode selecionar um componente e arrastá-lo até o local desejado na página. A partir daí é possível editá-lo usando:
 
 * [Configurar propriedades](/help/sites-authoring/editing-page-properties.md)
 * [Editar conteúdo](/help/sites-authoring/editing-content.md)

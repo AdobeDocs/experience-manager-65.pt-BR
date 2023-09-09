@@ -11,7 +11,7 @@ role: Admin, Developer
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1973'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
@@ -20,19 +20,19 @@ ht-degree: 3%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=pt-BR) |
 | AEM 6.5 | Este artigo |
 
 
 **Aplicável a:** ❎ Dos Componentes Principais Do Formulário Adaptável [Componentes de base do formulário adaptável](/help/forms/using/themes.md).
 
-No AEM Forms 6.5, um tema é uma biblioteca cliente AEM usada para definir os estilos (aparência e comportamento) de um Formulário adaptável. Um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Quando você aplica um tema, o estilo especificado é refletido nos componentes correspondentes. Um tema é gerenciado de forma independente sem uma referência a um Formulário adaptável e pode ser reutilizado em vários Forms adaptáveis.
+No AEM Forms 6.5, um tema é uma biblioteca cliente AEM usada para definir os estilos (aparência e comportamento) de um Formulário adaptável. Um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Ao aplicar um tema, o estilo especificado é refletido nos componentes correspondentes. Um tema é gerenciado de forma independente sem uma referência a um Formulário adaptável e pode ser reutilizado em vários Forms adaptáveis.
 
 ## Temas disponíveis {#available-theme}
 
 O ambiente AEM 6.5 fornece os temas listados abaixo para o Forms adaptável baseado em Componentes principais:
 
-* [Tema da tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema Tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema CAVALETE](https://github.com/adobe/aem-forms-theme-easel)
 
@@ -54,7 +54,7 @@ Um tema é um pacote que abrange o arquivo CSS, arquivos JavaScript e recursos (
 
 O AEM Forms 6.5 fornece os temas listados abaixo para o Adaptive Forms baseado em Componentes principais.
 
-* [Tema da tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema Tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema CAVALETE](https://github.com/adobe/aem-forms-theme-easel)
 
@@ -109,7 +109,7 @@ Os exemplos fornecidos no documento são baseados no **Tela** tema, mas é poss�
 
 Para clonar um tema para os Componentes principais com base no Adaptive Forms, escolha um dos seguintes temas:
 
-* [Tema da tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema Tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema CAVALETE](https://github.com/adobe/aem-forms-theme-easel)
 
@@ -304,7 +304,7 @@ Os temas do formulário adaptável são usados como parte de um modelo de formul
 
 Para remover temas não utilizados ou indesejados:
 
-1. Faça logon na instância do Author.
+1. Faça logon na Instância do autor do . 
 1. Abrir `http://[Publish Server URL]:[PORT]/crx/de/index.jsp`
 1. Vá até `apps/[AEM Archetype Project Folder]/clientlibs/[yourtheme]`.
 1. Exclua a pasta de tema e salve as alterações.

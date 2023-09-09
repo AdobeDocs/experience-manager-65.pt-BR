@@ -14,7 +14,7 @@ exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '6026'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -26,7 +26,7 @@ Alguns estão imediatamente disponíveis através do sidekick, vários outros ta
 
 >[!CAUTION]
 >
->Esta seção discute apenas os componentes que estão disponíveis prontamente em uma instalação padrão do AEM.
+>Esta seção discute apenas os componentes disponíveis prontos para uso em uma instalação padrão do AEM.
 >
 >Dependendo da sua instância, você pode ter componentes personalizados desenvolvidos explicitamente para suas necessidades. Esses componentes personalizados podem até ter o mesmo nome de alguns dos componentes discutidos aqui.
 

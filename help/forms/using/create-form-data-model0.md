@@ -228,7 +228,7 @@ Execute as seguintes etapas para criar propriedades-filho calculadas para o obje
    ![Criar propriedade secundária](assets/create_child_property_new.png)
 
 1. Toque **Editar regra** para abrir o Editor de regras.
-1. Toque **Criar**. A variável **Definir valor** a janela regra é aberta.
+1. Toque em **Criar**. A variável **Definir valor** a janela regra é aberta.
 1. No menu suspenso Selecionar opção, selecione **Expressão matemática**.
 
    ![Editor de regras de encargos de uso](assets/usage_charges_rule_editor_new.png)
