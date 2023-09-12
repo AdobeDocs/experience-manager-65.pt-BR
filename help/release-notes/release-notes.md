@@ -2,9 +2,9 @@
 title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: e330d69b7644e8f99498d0ed60afab009c649b40
+source-git-commit: aec2eb3303ad9747f6f56ae2eb31c3c7ed7b0c24
 workflow-type: tm+mt
-source-wordcount: '4552'
+source-wordcount: '4417'
 ht-degree: 2%
 
 ---
@@ -355,16 +355,9 @@ Para usar o UberJar em um projeto Maven, consulte [como usar o UberJar](/help/si
 >
 >O UberJar e outros artefatos relacionados estão disponíveis no Repositório central Maven em vez do repositório Maven público do Adobe (`repo.adobe.com`). O arquivo UberJar principal é renomeado para `uber-jar-<version>.jar`. Então, não há `classifier`, com `apis` como o valor, para o `dependency` tag.
 
-## Recursos obsoletos{#removed-deprecated-features}
+## Recursos obsoletos e removidos{#removed-deprecated-features}
 
-Veja abaixo uma lista dos recursos e funcionalidades marcados como obsoletos em [!DNL Experience Manager] 6.5.7.0. Os recursos são marcados como obsoletos inicialmente e removidos posteriormente em uma versão futura. Uma opção alternativa é fornecida.
-
-Revise se se você usa um recurso ou uma funcionalidade em uma implantação. Além disso, planeje alterar a implementação para usar uma opção alternativa.
-
-| Área | Destaque | Substituição |
-|---|---|---|
-| Integrações | A tela **[!UICONTROL Aceitação do Experience Manager Cloud Service]** está obsoleto porque o [!DNL Experience Manager] e [!DNL Adobe Target] a integração é atualizada em [!DNL Experience Manager] 6.5. A integração é compatível com a API do Adobe Target Standard. A API usa autenticação por meio do Adobe IMS e [!DNL Adobe I/O Runtime]. Apoia o crescente papel do Adobe Launch para instrumentar [!DNL Experience Manager] para o analytics e a personalização, o assistente de aceitação é funcionalmente irrelevante. | Configurar conexões do sistema, autenticação do Adobe IMS e [!DNL Adobe I/O Runtime] integrações por meio das respectivas [!DNL Experience Manager] serviços em nuvem. |
-| Conectores | O conector JCR do Adobe para Microsoft® SharePoint 2010 e Microsoft® SharePoint 2013 está obsoleto para [!DNL Experience Manager] 6.5. | N/A |
+Consulte [Recursos obsoletos e removidos](/help/release-notes/deprecated-removed-features.md/).
 
 ## Problemas conhecidos{#known-issues}
 
