@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Developer Tools,Asset Management
 exl-id: 53e310a9-c511-447a-91bd-8c5b2760dc03
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
 workflow-type: tm+mt
-source-wordcount: '2125'
+source-wordcount: '2112'
 ht-degree: 1%
 
 ---
@@ -24,15 +24,15 @@ Este documento descreve o seguinte:
 
 >[!NOTE]
 >
->O Compartilhamento de ativos está disponível como uma implementação de referência de fonte aberta. Consulte [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/). Ele não é oficialmente compatível.
+>O Compartilhamento de ativos está disponível como uma implementação de referência de código aberto. Consulte [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/). Ele não é oficialmente compatível.
 
 ## Por que criar e configurar páginas do Editor de ativos? {#why-create-and-configure-asset-editor-pages}
 
-O Gerenciamento de ativos digitais está sendo usado em cada vez mais cenários. Ao mudar de uma solução de pequena escala para um pequeno grupo de usuários treinados profissionalmente (por exemplo, fotógrafos ou taxonomistas) para grupos de usuários maiores e mais diversificados (por exemplo, usuários empresariais, autores do WCM, jornalistas e assim por diante), a poderosa interface do usuário do [!DNL Adobe Experience Manager Assets] os utilizadores profissionais podem fornecer demasiadas informações e as partes interessadas começam a solicitar interfaces de utilizador ou aplicações específicas para aceder aos ativos digitais que são relevantes para eles.
+O Gerenciamento de ativos digitais está sendo usado em mais cenários. Ao mudar de uma solução em pequena escala para um pequeno grupo de usuários treinados profissionalmente (por exemplo, fotógrafos ou taxonomistas) para grupos de usuários maiores e mais diversificados (por exemplo, usuários empresariais, autores do WCM e jornalistas), a poderosa interface de usuário do [!DNL Adobe Experience Manager Assets] pode fornecer muitas informações. As partes interessadas começam a solicitar interfaces de utilizador ou aplicações específicas para aceder aos ativos digitais que são relevantes para elas.
 
 Esses aplicativos centrados em ativos podem ser galerias de fotos simples em uma intranet em que os funcionários podem fazer upload de fotos de visitas a feiras comerciais ou de um centro de imprensa em um site voltado para o público. Os aplicativos centrados em ativos também podem se estender a soluções completas, incluindo carrinhos de compras, check-out e processos de verificação.
 
-A criação de um aplicativo centrado em ativos torna-se, em grande parte, um processo de configuração que não requer codificação, apenas conhecimento de grupos de usuários e suas necessidades, bem como conhecimento dos metadados que estão sendo usados. Aplicativos centrados em ativos criados com o [!DNL Assets] são extensíveis: com esforço moderado de codificação, os componentes reutilizáveis para pesquisar, visualizar e modificar ativos podem ser criados.
+A criação de um aplicativo centrado em ativos torna-se um processo de configuração que não requer codificação, apenas conhecimento de grupos de usuários e suas necessidades e conhecimento dos metadados que estão sendo usados. Aplicativos centrados em ativos criados com o [!DNL Assets] são extensíveis: com esforço moderado de codificação, os componentes reutilizáveis para pesquisar, visualizar e modificar ativos podem ser criados.
 
 Um aplicativo centrado em ativos no [!DNL Experience Manager] consiste em uma página Editor de ativos, que pode ser usada para obter uma visualização detalhada de um ativo específico. Uma página do Editor de ativos também permite a edição de metadados, desde que o usuário que acessa o ativo tenha as permissões necessárias.
 
@@ -192,11 +192,11 @@ For more information, see the [predicate Javadocs](https://helpx.adobe.com/exper
 
 ## Criar e configurar uma página do Editor de ativos {#creating-and-configuring-an-asset-editor-page}
 
-Personalize o editor de ativos para determinar como os usuários podem visualizar e editar os ativos digitais. Para fazer isso, crie uma nova página do Editor de ativos e personalize as exibições e as ações que os usuários podem executar nessa página.
+Você pode personalizar o Editor de ativos para determinar como os usuários podem visualizar e editar os ativos digitais. Para fazer isso, crie uma página do Editor de ativos e personalize as exibições e as ações que os usuários podem executar nessa página.
 
 >[!NOTE]
 >
->Se quiser adicionar campos personalizados ao editor de ativos DAM, adicione novos `cq:Widget` nós para `/apps/dam/content/asseteditors.`
+>Se quiser adicionar campos personalizados ao Editor de ativos DAM, adicione novos `cq:Widget` nós para `/apps/dam/content/asseteditors.`
 
 ### Criar uma página do Editor de ativos {#creating-the-asset-editor-page}
 
@@ -204,7 +204,7 @@ Ao criar a página do Editor de ativos, uma prática recomendada é criar a pág
 
 Para criar uma página do Editor de ativos:
 
-1. No **[!UICONTROL Sites]** navegue até o local em que deseja criar uma página do editor de ativos e clique em **Novo**.
+1. No **[!UICONTROL Sites]** Navegue até o local em que deseja criar uma página do Editor de ativos e clique em **Novo**.
 1. Selecionar **Editor de ativos Geometrixx** e clique em **Criar**. A nova página é criada e a página é listada no **Sites** guia.
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
@@ -219,7 +219,7 @@ Para personalizar a página do Editor de ativos, use elementos do sidekick. A p�
 
 #### Configurar um editor de ativos para abrir a partir de uma página de compartilhamento de ativos {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
-Depois de criar a página personalizada do Editor de ativos, você precisa garantir que, ao clicar duas vezes nos ativos, o Compartilhamento de ativos personalizado que você criou abra os ativos na página personalizada do Editor.
+Depois de criar a página personalizada do Editor de ativos, certifique-se de que, ao clicar duas vezes nos ativos, o Compartilhamento de ativos personalizado que você criou abra os ativos na página personalizada do Editor.
 
 Para definir a página Editor de ativos:
 
@@ -229,34 +229,34 @@ Para definir a página Editor de ativos:
 
 1. Clique em **Geral** se ainda não estiver selecionada.
 
-1. No **Caminho do editor de ativos** insira o caminho para o editor de ativos no qual você deseja que a página Compartilhamento de ativos abra ativos e clique em **OK**.
+1. No **Caminho do editor de ativos** insira o caminho para o Editor de ativos no qual você deseja que a página Compartilhamento de ativos abra ativos e clique em **OK**.
 
 ![screen_shot_2012-04-23at21653pm](assets/screen_shot_2012-04-23at21653pm.png)
 
 #### Adicionar componentes do Editor de ativos {#adding-asset-editor-components}
 
-Você determina a funcionalidade de um editor de ativos adicionando componentes à página.
+Você determina a funcionalidade que um Editor de ativos tem ao adicionar componentes à página.
 
-Para adicionar componentes do editor de ativos:
+Para adicionar componentes do Editor de ativos:
 
-1. Na página Editor de ativos que deseja personalizar, selecione **Editor de ativos** no ajudante. Todos os componentes disponíveis do editor de ativos são exibidos.
+1. Na página Editor de ativos que deseja personalizar, selecione **Editor de ativos** no ajudante. Todos os componentes disponíveis do Editor de ativos são exibidos.
 
 >[!NOTE]
 >
 >O que você pode personalizar depende de quais componentes estão disponíveis. Para ativar componentes, vá para o modo Design e selecione os componentes que precisam ser ativados.
 
-1. Arraste os componentes do sidekick para o editor de ativos e faça modificações nas caixas de diálogo de componentes. Os componentes são descritos na tabela a seguir e descritos nas instruções detalhadas a seguir.
+1. Arraste os componentes do sidekick para o Editor de ativos e faça edições nas caixas de diálogo de componentes. Os componentes são descritos na tabela a seguir e descritos nas instruções detalhadas a seguir.
 
 >[!NOTE]
 >
->Ao criar a página do editor de ativos, você cria componentes somente leitura ou editáveis. Os usuários sabem que um campo pode ser editado se uma imagem de um lápis for exibida nesse componente. Por padrão, a maioria dos componentes é configurada como somente leitura.
+>Ao criar a página Editor de ativos, você cria componentes que são somente leitura ou editáveis. Os usuários sabem que um campo pode ser editado se uma imagem de um lápis for exibida nesse componente. Por padrão, a maioria dos componentes é configurada como somente leitura.
 
 | Componente | Descrição |
 |---|---|
 | **[!UICONTROL Formulário de metadados] e [!UICONTROL Campo de texto de metadados]** | Permite adicionar metadados adicionais a um ativo e executar uma ação, como enviar, nesse ativo. |
 | **[!UICONTROL Sub-ativos]** | Permite personalizar subativos. |
 | **Tags** | Permite que os usuários selecionem e adicionem tags a um ativo. |
-| **[!UICONTROL Miniatura]** | Mostra uma miniatura do ativo, seu nome de arquivo e permite que você adicione um texto alternativo. Também é possível adicionar ações do editor de ativos aqui. |
+| **[!UICONTROL Miniatura]** | Mostra uma miniatura do ativo, seu nome de arquivo e permite que você adicione um texto alternativo. Também é possível adicionar ações do Editor de ativos aqui. |
 | **[!UICONTROL Título]** | Exibe o título do ativo, que pode ser personalizado. |
 
 ![screen_shot_2012-04-23at22743pm](assets/screen_shot_2012-04-23at22743pm.png)
@@ -265,7 +265,7 @@ Para adicionar componentes do editor de ativos:
 
 O Formulário de metadados é um formulário que inclui uma ação de início e término. Entre eles, você insere **Texto** campos. Consulte [Forms](/help/sites-authoring/default-components-foundation.md#form-component) para obter mais informações sobre como trabalhar com formulários.
 
-1. Criar uma ação inicial clicando em **Editar** na área Início do formulário. É possível inserir um título de Caixa, se desejado. Por padrão, o Título da caixa é **Metadados**. Marque a caixa de seleção Validação de cliente se desejar que o código de cliente java-script para validação seja gerado.
+1. Criar uma ação inicial clicando em **Editar** na área Início do formulário. É possível inserir um título de Caixa, se desejado. Por padrão, o Título da caixa é **Metadados**. Marque a caixa de seleção Validação de cliente se desejar que o código de cliente JavaScript da validação seja gerado.
 
 ![screen_shot_2012-04-23at22911pm](assets/screen_shot_2012-04-23at22911pm.png)
 
@@ -275,7 +275,7 @@ O Formulário de metadados é um formulário que inclui uma ação de início e 
 
 1. Entre as **Início do formulário** e a variável **Fim do formulário**, arraste Campos de texto de metadados para o formulário. Os usuários preenchem metadados nesses campos de texto, para os quais podem enviar ou concluir outra ação.
 
-1. Clique duas vezes no nome do campo, por exemplo, **Título** para abrir o campo de metadados e fazer alterações. No **Geral** guia do **Editar componente** defina o namespace e o rótulo do campo, bem como o tipo, por exemplo, `dc:title`.
+1. Clique duas vezes no nome do campo, por exemplo, **Título** para abrir o campo de metadados e fazer alterações. No **Geral** guia do **Editar componente** defina o namespace e o rótulo e tipo do campo, por exemplo, `dc:title`.
 
 ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
@@ -299,7 +299,7 @@ Na página Editor de ativos, os usuários podem inserir valores nos campos de me
 
 O componente de Subativos é o local em que você pode visualizar e selecionar subativos. Você pode determinar quais nomes aparecem abaixo de [ativo principal](/help/assets/assets.md#what-are-digital-assets) e subativos.
 
-Clique duas vezes no componente Subativos para abrir a caixa de diálogo Subativos, onde é possível alterar os títulos do ativo principal e de quaisquer subativos. Os valores padrão aparecem abaixo do campo correspondente.
+Clique duas vezes no componente Subativos para abrir a caixa de diálogo Subativos, onde é possível alterar os títulos do ativo principal e de qualquer subativo. Os valores padrão aparecem abaixo do campo correspondente.
 
 ![screen_shot_2012-04-23at23907pm](assets/screen_shot_2012-04-23at23907pm.png)
 
@@ -378,7 +378,7 @@ As seguintes ações estão disponíveis:
 | [!UICONTROL Download] | Permite que os usuários baixem ativos selecionados para seus computadores. |
 | [!UICONTROL Editores] | Permite que os usuários editem uma imagem (edição interativa) |
 | [!UICONTROL Lightbox] | Salva ativos em uma &quot;lightbox&quot;, onde é possível executar outras ações neles. Isso é útil ao trabalhar com ativos em várias páginas. |
-| [!UICONTROL Bloqueio] | Permite que os usuários bloqueiem um ativo. Essa funcionalidade não está habilitada por padrão e precisa ser habilitada na lista de componentes. |
+| [!UICONTROL Bloqueio] | Permite que os usuários bloqueiem um ativo. Essa funcionalidade não está habilitada por padrão e deve ser habilitada na lista de componentes. |
 | [!UICONTROL Referências] | Clique nessa opção para mostrar em quais páginas o ativo está sendo usado. |
 | [!UICONTROL Versões] | Permite criar e restaurar versões de um ativo. |
 
@@ -388,10 +388,7 @@ As seguintes ações estão disponíveis:
 
 ## Ativos de edição múltipla com a página Editor de ativos {#multi-editing-assets-with-the-asset-editor-page}
 
-Com [!DNL Experience Manager Assets] é possível fazer alterações em vários ativos de uma só vez. Após selecionar os ativos, é possível alterar simultaneamente suas:
-
-* Tags
-* Metadados
+Com [!DNL Experience Manager Assets], é possível alterar vários ativos de uma só vez. Após selecionar os ativos, é possível alterar as tags e os metadados simultaneamente.
 
 Para editar ativos várias vezes com a página Editor de ativos:
 
@@ -408,7 +405,7 @@ Para editar ativos várias vezes com a página Editor de ativos:
 1. Clique em **Editar metadados** no **Ações** (parte esquerda da página).
 1. A GEOMETRIXX **Editor de ativos do Centro de imprensa** será aberta em uma nova guia. Os metadados dos ativos são exibidos da seguinte maneira:
 
-   * Uma tag, que não se aplica a todos os ativos, mas apenas a alguns, é exibida em itálico.
+   * Uma tag que não se aplica a todos os ativos, mas somente a alguns, é exibida em itálico.
    * Uma tag que se aplica a todos os ativos é exibida com uma fonte normal.
    * Metadados diferentes das tags: o valor do campo só será exibido se for o mesmo para todos os ativos selecionados.
 

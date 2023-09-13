@@ -1,43 +1,39 @@
 ---
 title: Atalhos de teclado do AEM Forms
-seo-title: AEM Forms Keyboard Shortcuts
 description: Este artigo lista os atalhos de teclado que podem ser usados com o Editor de formulário adaptável, o Editor de temas, o Navegador de conteúdo e o Gerenciamento de correspondência para sistemas operacionais Windows e Macintosh.
-seo-description: This article lists the keyboard shortcuts that can be used with Adaptive Form Editor, Theme Editor, Content Browser, and Correspondence Management.
-uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: author, correspondence-management
-discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 feature: Adaptive Forms
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
 workflow-type: tm+mt
-source-wordcount: '1204'
+source-wordcount: '1208'
 ht-degree: 3%
 
 ---
 
 # Atalhos de teclado do AEM Forms {#aem-forms-keyboard-shortcuts}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve uma abordagem mais antiga para a criação do Forms adaptável usando componentes de base. </span>
 
 Este artigo lista os atalhos de teclado que podem ser usados com o Editor de formulário adaptável, o Editor de temas, o Navegador de conteúdo e o Gerenciamento de correspondência para sistemas operacionais Windows e Macintosh.
 
 ## Editor de formulário adaptável {#adaptiveformeditor}
 
-| **Ação** | **Atalho no Windows** | **Atalho no SO Mac** |
+| **Ação** | **Atalho no Windows** | **Atalho no macOS** |
 |---|---|---|
 | Abra o navegador Propriedades do componente de formulário adaptável selecionado | Alt+Enter | Alt+Return |
-| Fechar navegador de propriedades para o componente de formulário adaptável selecionado | Ctrl+Alt+W | Command+Alt+W |
+| Feche o navegador Propriedades do componente de formulário adaptável selecionado | Ctrl+Alt+W | Command+Alt+W |
 | Salve as alterações no navegador Propriedades do componente de formulário adaptável selecionado | Ctrl+S | Command+S |
 | Editar regra para o componente de formulário adaptável selecionado | Ctrl+Alt+Enter | Command+Alt+Return |
-| Alternar entre a Visualização e o modo selecionado atualmente (por exemplo, Editar, Andaime etc.) | Ctrl+Shift+M | Ctrl+Shift+M&amp;ast; |
+| Alternar entre a Visualização e o modo selecionado atualmente (por exemplo, Editar e Andaime) | Ctrl+Shift+M | Ctrl+Shift+M&amp;ast; |
 | Desfazer a última alteração | Ctrl+Z | Ctrl+Z&amp;ast; |
 | Refazer a última alteração | Ctrl+Y | Ctrl+S&amp;ast; |
 | Selecionar vários componentes | Shift + clique | Shift + clique |
 | Copiar componente selecionado | Ctrl-C | Ctrl-C&amp;ast; |
 | Recortar componentes selecionados. O componente recortado não desaparece até que seja colado no novo local. | Ctrl-X | Ctrl-X&amp;ast; |
-| Colar componente(s) | Ctrl+V | Ctrl+V |
+| Colar componentes | Ctrl+V | Ctrl+V |
 | Excluir componentes selecionados | Ctrl+Del | Ctrl+Del&amp;ast; |
 | Excluir componentes selecionados | Ctrl+Barra de espaços | Ctrl+Espaço&amp;Atrasado; |
 | Tornar o texto negrito ao usar o componente Editor de Rich Text no modo Visualização | Ctrl+O | Ctrl+B&amp;ast; |
@@ -46,33 +42,33 @@ Este artigo lista os atalhos de teclado que podem ser usados com o Editor de for
 
 >[!NOTE]
 >
->Os atalhos marcados com um &#39;&amp;ast;&#39; funcionam com as teclas Ctrl e Command no sistema operacional Mac.
+>Os atalhos marcados com um &#39;&amp;ast;&#39; funcionam com as teclas Ctrl e Command no macOS.
 
 >[!NOTE]
 >
 >Seleção múltipla em um dispositivo de desktop:
 >
 >* Windows: pressione Ctrl e clique nos componentes necessários.
->* SO Mac: Command + clique nos componentes necessários.
+>* macOS: Command + clique nos componentes necessários.
 >
 
 ## Editor de temas  {#themeeditor}
 
-| **Ação** | **Atalho no Windows** | **Atalho no SO Mac** |
+| **Ação** | **Atalho no Windows** | **Atalho no macOS** |
 |---|---|---|
-| Abrir o navegador de propriedades do componente selecionado em um tema | Alt+Enter | Alt+Return |
-| Fechar navegador de propriedades para o componente selecionado em um tema | Ctrl+Alt+W | Command+Alt+W |
+| Abrir o navegador Propriedades do componente selecionado em um tema | Alt+Enter | Alt+Return |
+| Fechar o navegador Propriedades do componente selecionado em um tema | Ctrl+Alt+W | Command+Alt+W |
 | Desfazer a última alteração | Ctrl+Z | Ctrl+Z&amp;ast; |
 | Refazer a última alteração | Ctrl+Y | Ctrl+S&amp;ast; |
 | Salvar alterações no navegador Propriedades do componente selecionado em um tema | Ctrl+S | Ctrl+S&amp;ast; |
 
 >[!NOTE]
 >
->Os atalhos marcados com um &#39;&amp;ast;&#39; funcionam com as teclas Ctrl e Command no sistema operacional Mac.
+>Os atalhos marcados com um &#39;&amp;ast;&#39; funcionam com as teclas Ctrl e Command no macOS.
 
 ## Navegador de conteúdo  {#contentbrowser}
 
-| **Ação** | **Atalho no Windows** | **Atalho no SO Mac** |
+| **Ação** | **Atalho no Windows** | **Atalho no macOS** |
 |---|---|---|
 | Expanda todas as opções na árvore Objetos de formulário do navegador de conteúdo quando em foco | Ctrl+A para selecionar todos os acordeões seguidos pela Seta para a Direita para expandir | Command+A para selecionar todas as opções seguidas pela Seta para a direita para expandir |
 | Recolher todos os acordeões na árvore Objetos de formulário do navegador de conteúdo quando em foco | Ctrl+A para selecionar todos os acordeões seguidos por Seta para a Esquerda para recolher | Command+A para selecionar todos os acordeões seguidos pela Seta para a Esquerda para recolher |
@@ -81,8 +77,8 @@ Este artigo lista os atalhos de teclado que podem ser usados com o Editor de for
 | Selecione o próximo item na árvore Objetos do Forms | Seta para baixo | Seta para baixo |
 | Selecione o item anterior na árvore Objetos do Forms | Seta para cima | Seta para cima |
 
-[1] Substitui Ctrl + Seta para a direita no Windows e Command + Seta para a direita no Mac OS.\
-[2] Substitui Ctrl + Seta para a esquerda no Windows e Command + Seta para a esquerda no Mac OS.
+[1] Substitui Ctrl + seta para a direita no Windows e Command + seta para a direita no macOS.\
+[2] Substitui Ctrl + Seta para a esquerda no Windows e Command + Seta para a esquerda no macOS.
 
 ## Gerenciamento de correspondência {#correspondence-management}
 
@@ -98,15 +94,15 @@ Esta seção lista vários teclados e atalhos de acessibilidade que você pode u
   <tr>
    <th><strong>Operação</strong></th> 
    <th><strong>Atalho no Windows</strong></th> 
-   <th><strong>Atalho no SO Mac</strong><br /> </th> 
+   <th><strong>Atalho no macOS</strong><br /> </th> 
   </tr>
   <tr>
-   <td><p>Selecionar palavra atual</p> </td> 
+   <td><p>Selecionar a palavra atual</p> </td> 
    <td><p>Ctrl+Shift+Seta para a direita</p> </td> 
    <td>Command+Shift+seta para a direita</td> 
   </tr>
   <tr>
-   <td><p>Selecionar palavra anterior</p> </td> 
+   <td><p>Selecionar a palavra anterior</p> </td> 
    <td><p>Ctrl+Shift+Seta para a esquerda</p> </td> 
    <td>Command+Shift+seta para a esquerda</td> 
   </tr>
@@ -161,7 +157,7 @@ Esta seção lista vários teclados e atalhos de acessibilidade que você pode u
    <td>Shift+Seta para cima</td> 
   </tr>
   <tr>
-   <td><p>Selecionar texto um por um parágrafo na direção da frente</p> </td> 
+   <td><p>Selecione o texto um por um parágrafo na direção para frente</p> </td> 
    <td><p>Shift+tecla para baixo</p> </td> 
    <td>Shift+Seta para baixo</td> 
   </tr>
@@ -176,12 +172,12 @@ Esta seção lista vários teclados e atalhos de acessibilidade que você pode u
    <td>Fn+Shift+Seta para baixo</td> 
   </tr>
   <tr>
-   <td><p>Mover cursor para o final da página</p> </td> 
+   <td><p>Mover o cursor para o final da página</p> </td> 
    <td><p>Página abaixo</p> </td> 
    <td>Fn+Seta para Baixo</td> 
   </tr>
   <tr>
-   <td><p>Mover cursor para o início da página</p> </td> 
+   <td><p>Mover o cursor para o início da página</p> </td> 
    <td><p>Página acima</p> </td> 
    <td>Fn+Seta para Cima</td> 
   </tr>
@@ -201,7 +197,7 @@ Esta seção lista vários teclados e atalhos de acessibilidade que você pode u
    <td>Command+Seta para cima</td> 
   </tr>
   <tr>
-   <td><p>Mover cursor para a posição final</p> </td> 
+   <td><p>Mover o cursor para a posição final</p> </td> 
    <td><p>Ctrl+Seta</p> </td> 
    <td>Command+Seta para baixo</td> 
   </tr>
@@ -216,10 +212,10 @@ Esta seção lista vários teclados e atalhos de acessibilidade que você pode u
   <tr>
    <th><p><strong>Operação</strong></p> </th> 
    <th><p><strong>Atalho no Windows<br /> </strong></p> </th> 
-   <th><strong>Atalho no SO Mac</strong></th> 
+   <th><strong>Atalho no macOS</strong></th> 
   </tr>
   <tr>
-   <td><p>Alinhar um parágrafo ao centro</p> </td> 
+   <td><p>Criar um parágrafo alinhado ao centro</p> </td> 
    <td><p>Ctrl+E</p> </td> 
    <td>Ctrl+Comando+E</td> 
   </tr>
@@ -229,7 +225,7 @@ Esta seção lista vários teclados e atalhos de acessibilidade que você pode u
    <td>Ctrl+Comando+L</td> 
   </tr>
   <tr>
-   <td><p>Colocar um parágrafo alinhado à direita</p> </td> 
+   <td><p>Criar um parágrafo alinhado à direita</p> </td> 
    <td><p>Ctrl+T</p> </td> 
    <td>Ctrl+Comando+R</td> 
   </tr>
@@ -248,7 +244,7 @@ Esta seção lista vários teclados e atalhos de acessibilidade que você pode u
   <tr>
    <th><strong>Operação</strong></th> 
    <th><strong>Atalho no Windows </strong></th> 
-   <th><strong>Atalho no SO Mac</strong><br /> </th> 
+   <th><strong>Atalho no macOS</strong><br /> </th> 
   </tr>
   <tr>
    <td><p>Desfazer </p> </td> 
@@ -270,7 +266,7 @@ Esta seção lista vários teclados e atalhos de acessibilidade que você pode u
   <tr>
    <th><p><strong>Operação</strong></p> </th> 
    <th><p><strong>Atalho no Windows</strong></p> </th> 
-   <th><strong>Atalho no SO Mac</strong></th> 
+   <th><strong>Atalho no macOS</strong></th> 
   </tr>
   <tr>
    <td><p>Aumentar tamanho da fonte </p> </td> 
@@ -292,7 +288,7 @@ Esta seção lista vários teclados e atalhos de acessibilidade que você pode u
   <tr>
    <th><strong>Operação</strong></th> 
    <th><strong>Atalho no Windows</strong></th> 
-   <th><strong>Atalho no SO Mac</strong></th> 
+   <th><strong>Atalho no macOS</strong></th> 
   </tr>
   <tr>
    <td><p>Excluir palavra à esquerda do cursor</p> </td> 
@@ -314,7 +310,7 @@ Esta seção lista vários teclados e atalhos de acessibilidade que você pode u
   <tr>
    <th><strong>Operação</strong></th> 
    <th><strong>Atalho no Windows<br /> </strong></th> 
-   <th><strong>Atalho no SO Mac</strong></th> 
+   <th><strong>Atalho no macOS</strong></th> 
   </tr>
   <tr>
    <td><p>Colar texto </p> </td> 
@@ -341,7 +337,7 @@ Esta seção lista vários teclados e atalhos de acessibilidade que você pode u
   <tr>
    <th><strong>Operação</strong></th> 
    <th><strong>Atalho no Windows</strong></th> 
-   <th><strong>Atalho no SO Mac</strong></th> 
+   <th><strong>Atalho no macOS</strong></th> 
   </tr>
   <tr>
    <td><p>Colocar letras em negrito</p> </td> 

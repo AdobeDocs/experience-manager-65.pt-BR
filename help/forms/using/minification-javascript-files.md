@@ -1,25 +1,21 @@
 ---
 title: Minificação dos arquivos JavaScript
-seo-title: Minification of the JavaScript files
 description: Instruções para gerar código minificado após as personalizações do espaço de trabalho do AEM Forms para otimizar os arquivos JS para a Web.
-seo-description: Instructions to generate minified code after AEM Forms workspace customizations to optimize the JS files for the web.
-uuid: ad91e380-a988-4740-9534-e09657e0322a
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: c88a3013-5da2-4b09-9f29-ac1fb00822ec
 exl-id: d88c6831-8ae9-426d-acb5-2a7e066ad158
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '188'
 ht-degree: 1%
 
 ---
 
 # Minificação dos arquivos JavaScript {#minification-of-the-javascript-files}
 
-A minificação remove do código-fonte os caracteres redundantes, como espaço em branco, nova linha e comentários. Isso melhora o desempenho ao reduzir o tamanho do código. Embora a minificação não afete a funcionalidade, ela reduz a legibilidade do código.
+A minificação remove do código-fonte os caracteres redundantes, como espaço em branco, novas linhas e comentários. Isso melhora o desempenho ao reduzir o tamanho do código. Embora a minificação não afete a funcionalidade, ela reduz a legibilidade do código.
 
 Para gerar um código minificado para alterações semânticas, siga estas etapas.
 
@@ -69,12 +65,12 @@ Para gerar um código minificado para alterações semânticas, siga estas etapa
    mvn clean install
    ```
 
-   Ele gera uma pasta minified-files, em client-html/src/main/webapp/js com main.js e registry.js minificados.
+   Ele gera uma pasta de arquivos minificados, em client-html/src/main/webapp/js com main.js e registry.js minificados.
 
 >[!NOTE]
 >
->A minificação só funcionará no JVM de 64 bits.
+>A minificação só funciona em uma JVM de 64 bits.
 
 >[!NOTE]
 >
->Se você minificar, a atualização será afetada.
+>Se você minificar, sua atualização será afetada.

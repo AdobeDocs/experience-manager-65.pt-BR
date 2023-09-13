@@ -1,17 +1,13 @@
 ---
 title: Integração de aplicativos de terceiros ao espaço de trabalho do AEM Forms
-seo-title: Integrating third-party applications in AEM Forms workspace
-description: Integre aplicativos de terceiros, como o Gerenciamento de correspondência no espaço de trabalho do AEM Forms.
-seo-description: How-to integrate third-party apps like Correspondence Management in AEM Forms workspace.
-uuid: 7654cf86-b896-4db2-8f5d-6c1b2e6c229f
+description: Integre aplicativos de terceiros, como o Gerenciamento de correspondência, no espaço de trabalho do AEM Forms.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: f70f21e3-3bec-490d-889e-faf496fb738b
 docset: aem65
 exl-id: 39a3f7db-549f-47f3-8d4f-42d583a4532d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
@@ -20,7 +16,7 @@ ht-degree: 0%
 
 O espaço de trabalho do AEM Forms oferece suporte ao gerenciamento de atribuições de tarefas e atividades de conclusão de formulários e documentos. Esses formulários e documentos podem ser XDP Forms, Flex® ou Guias (obsoletos) que foram renderizados nos formatos XDP, PDF, HTML ou Flex.
 
-Esses recursos são aprimorados ainda mais. O AEM Forms agora oferece suporte à colaboração com aplicativos de terceiros que oferecem suporte a funcionalidades semelhantes ao espaço de trabalho do AEM Forms. Uma parte comum dessa funcionalidade é o fluxo de trabalho de atribuição e aprovação subsequente de uma tarefa. O AEM Forms fornece uma única experiência unificada para usuários corporativos do AEM Forms, para que todas essas atribuições de tarefas ou aprovações para os aplicativos compatíveis possam ser tratadas pelo espaço de trabalho do AEM Forms.
+Esses recursos são aprimorados ainda mais. O AEM Forms agora oferece suporte à colaboração com aplicativos de terceiros que oferecem suporte a funcionalidades semelhantes ao espaço de trabalho do AEM Forms. Uma parte comum dessa funcionalidade é o fluxo de trabalho de atribuição e aprovação subsequente de uma tarefa. O AEM Forms fornece uma única experiência unificada para usuários corporativos do AEM Forms, para que todas essas atribuições de tarefas ou aprovações para os aplicativos compatíveis possam ser tratadas por meio do espaço de trabalho do AEM Forms.
 
 Como exemplo, considere o Gerenciamento de correspondência como o candidato de amostra para integração com o espaço de trabalho do AEM Forms. O Gerenciamento de correspondências tem o conceito de uma &quot;Carta&quot;, que pode ser renderizada e permite ações.
 
@@ -30,7 +26,7 @@ Comece criando um modelo de Gerenciamento de correspondência de amostra que é 
 
 Acesse o modelo de Gerenciamento de correspondência em seu URL para verificar se o modelo de Gerenciamento de correspondência pode ser renderizado com sucesso. O URL tem um padrão semelhante a `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
-onde `encodedLetterId` é a ID de letra codificada em URL. Especifique a mesma ID de correspondência ao definir o processo de renderização para a tarefa do espaço de trabalho no Workbench.
+Onde `encodedLetterId` é a ID de letra codificada em URL. Especifique a mesma ID de correspondência ao definir o processo de renderização para a tarefa do espaço de trabalho no Workbench.
 
 ## Criar uma tarefa para renderizar e enviar uma carta no AEM Workspace {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
 
@@ -61,7 +57,7 @@ Use as seguintes etapas para criar uma tarefa para renderizar e enviar uma carta
 1. Clique em Gerenciar perfis de ação. A caixa de diálogo Gerenciar perfil de ação é exibida. Verifique se os processos Renderizar e Enviar estão selecionados corretamente.
 1. Para abrir a carta com um arquivo XML de dados, procure e selecione o arquivo de dados apropriado no processo de preparação de dados.
 1. Clique em OK.
-1. Defina as variáveis para Saída do ponto inicial e Anexos da tarefa. As variáveis definidas conterão dados de Saída do ponto inicial e Anexos da tarefa.
+1. Defina as variáveis para Saída do ponto inicial e Anexos da tarefa. As variáveis definidas contêm dados de Saída do ponto inicial e Anexos da tarefa.
 1. (Opcional) Para adicionar outro usuário no fluxo de trabalho, arraste um seletor de atividade, configure-o e atribua-o a um usuário. Escreva um invólucro personalizado (exemplo fornecido abaixo) ou baixe e instale o DSC (fornecido abaixo) para extrair o modelo de carta, a saída do ponto inicial e o anexo da tarefa.
 
    Um exemplo de invólucro personalizado está listado abaixo:
@@ -102,7 +98,7 @@ Use as seguintes etapas para criar uma tarefa para renderizar e enviar uma carta
    ```
 
    [Obter arquivo](assets/dscsample.zip)
-Baixar DSC: um DSC de amostra está disponível no arquivo DSCSample.zip anexado acima. Baixe e descompacte o arquivo DSCSample.zip. Antes de usar o serviço DSC, é necessário configurá-lo. Para obter informações, consulte [Configurar o serviço DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
+Baixar DSC: um DSC de amostra está disponível no arquivo DSCSample.zip anexado acima. Baixe e descompacte o arquivo DSCSample.zip. Antes de usar o serviço DSC, você deve configurá-lo. Consulte [Configurar o serviço DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
    Na caixa de diálogo Definir atividade, selecione a atividade apropriada, como getLetterInstanceInfo, e clique em **OK**.
 

@@ -7,9 +7,9 @@ topic-tags: manage
 noindex: true
 role: Admin
 exl-id: b87e07b1-4a19-4888-bad0-c0f5327b9ad3
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -30,13 +30,13 @@ Você pode usar o aplicativo para sincronizar arquivos binários AEM Forms dos s
 
 ## Ativar o aplicativo de desktop AEM Forms para AEM {#enable-aem-forms-for-aem-desktop-app}
 
-O aplicativo de desktop AEM usa o protocolo WebDAV no Microsoft Windows e o SMB1 no Mac OS X para se conectar a um servidor AEM Forms. Pronto para uso, o servidor do AEM Forms não é habilitado para sincronizar arquivos binários e outros ativos com um cliente WebDAV ou SMB. Execute as seguintes etapas para habilitar o aplicativo de desktop AEM Forms para AEM:
+O aplicativo de desktop AEM usa o protocolo WebDAV no Microsoft® Windows e SMB1 no macOS X para se conectar a um servidor AEM Forms. Pronto para uso, o AEM Forms Server não é habilitado para sincronizar arquivos binários e outros ativos com um cliente WebDAV ou SMB. Execute as seguintes etapas para habilitar o aplicativo de desktop AEM Forms para AEM:
 
 1. Faça logon no AEM Forms como administrador.
 1. Na instância do autor, clique em ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Ferramentas]** ![martelo](assets/hammer.png) **[!UICONTROL > Implantação > Operações > Console da Web]**. O Console da Web é aberto em uma nova janela.
-1. Na janela do console da Web, localize e abra o **[!UICONTROL Configuração de complemento do FormsManager]** opção.
+1. Na janela do Console da Web, localize e abra o **[!UICONTROL Configuração de complemento do FormsManager]** opção.
 1. Na caixa de diálogo Configuração de complemento do FormsManager, desmarque a **[!UICONTROL Sincronizar recursos de forma assíncrona]** e clique em **[!UICONTROL Salvar]**.
-1. Reinicie o servidor do AEM Forms. Após a reinicialização, o servidor do AEM Forms é ativado para aceitar e compartilhar conteúdo com o aplicativo para desktop AEM.
-1. Abra o aplicativo e conecte-se ao servidor do AEM Forms.
+1. Reinicie o servidor do AEM Forms. Após a reinicialização, o AEM Forms Server é ativado para aceitar e compartilhar conteúdo com o aplicativo de desktop AEM.
+1. Abra o aplicativo e conecte-se ao AEM Forms Server.
 
    Ao se conectar com êxito, o aplicativo preenche o `content/dam` e `content/dam/formsanddocuments` pastas. Além de mover arquivos das pastas acima para pastas locais e vice-versa, você pode usar o aplicativo para mover conteúdo entre pastas preenchidas automaticamente.

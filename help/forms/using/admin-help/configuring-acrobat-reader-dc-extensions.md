@@ -1,29 +1,25 @@
 ---
-title: Configuração de extensões do Acrobat Reader DC para captura de dados
-seo-title: Configuring Acrobat Reader DC extensions for data capture
+title: Configuração das extensões do Acrobat Reader DC para captura de dados
 description: Saiba como configurar extensões do Acrobat Reader DC para captura de dados.
-seo-description: Learn how to configure Acrobat Reader DC extensions for data capture.
-uuid: af6b3c72-601e-4f54-8343-a323eeee5906
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 8f8367fe-a8e9-46ee-a980-1633be02932d
 exl-id: 0f8e1e46-4fc5-43f6-abb1-19a3f20e1f1d
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 0%
+source-wordcount: '318'
+ht-degree: 1%
 
 ---
 
-# Configuração de extensões do Acrobat Reader DC para captura de dados {#configuring-acrobat-reader-dc-extensions-for-data-capture}
+# Configuração das extensões do Acrobat Reader DC para captura de dados {#configuring-acrobat-reader-dc-extensions-for-data-capture}
 
 Se os usuários da instalação do AEM usarem a funcionalidade de captura de dados do Content Services (Obsoleto), é recomendável criar uma função com acesso somente leitura para esses usuários.
 
-***observação **: Adobe® LiveCycle® Content Services ES (Obsoleto) é um sistema de gerenciamento de conteúdo instalado com o LiveCycle. Ele permite que os usuários projetem, gerenciem, monitorem e otimizem processos centrados no ser humano. O suporte aos Content Services (obsoleto) termina em 31/12/2014. Consulte [documento do ciclo de vida do produto Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).*
+***Nota **: Adobe® LiveCycle® Content Services ES (Obsoleto) é um sistema de gerenciamento de conteúdo instalado com o LiveCycle. Ele permite que os usuários projetem, gerenciem, monitorem e otimizem processos centrados no ser humano. O suporte aos Content Services (obsoleto) termina em 31/12/2014. Consulte [documento do ciclo de vida do produto Adobe](https://helpx.adobe.com/br/support/programs/eol-matrix.html).*
 
-A captura de dados exige que você atribua uma função de usuário para acessar SampleReaderExtensionsCredential. Você pode atribuir a função Administrador Confiável padrão, mas considere que essa função concede a usuários gerais não administrativos privilégios de administrador avançados que controlam as configurações Confiável da PKI e gerenciam Credenciais da PKI, o que pode comprometer a segurança da instalação dos formulários AEM em um ambiente de produção. Recomenda-se que o administrador do sistema de formulários AEM crie uma função que conceda somente leitura ao Armazenamento de confiança e atribua essa nova função a usuários não administradores que usem captura de dados.
+A captura de dados exige que você atribua uma função de usuário para acessar SampleReaderExtensionsCredential. Você pode atribuir a função Administrador Confiável padrão. No entanto, considere que essa função oferece privilégios gerais de administrador de usuários não administrativos que controlam as configurações de Confiança da PKI e gerenciam as Credenciais da PKI, o que pode comprometer a segurança da instalação do AEM Forms em um ambiente de produção. Recomenda-se que o administrador do sistema de formulários AEM crie uma função que conceda somente leitura ao Armazenamento de confiança e atribua essa nova função a usuários não administradores que usem captura de dados.
 
 ## Criar uma função para usuários de captura de dados {#create-a-role-for-data-capture-users}
 

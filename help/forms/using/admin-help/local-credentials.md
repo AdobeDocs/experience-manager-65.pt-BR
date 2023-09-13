@@ -1,18 +1,14 @@
 ---
 title: Gerenciar credenciais locais
-seo-title: Managing local credentials
 description: Saiba como gerenciar credenciais locais.
-seo-description: Learn how to manage local credentials.
-uuid: 3c4358e0-aaff-4e94-a6b2-04b463fca260
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 598a9a03-3773-4620-8867-1f754d8ca031
 exl-id: c5905272-7d09-47e4-8b35-4cc25a148477
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -21,11 +17,11 @@ ht-degree: 0%
 
 As credenciais locais são credenciais de chave privada hospedadas no Gerenciamento de Repositório de Confiança. A *credencial local* identifica onde a credencial DES de um usuário é armazenada. Usando o Gerenciamento de Armazenamento de Confiança, você pode importar e gerenciar suas credenciais locais usando, por exemplo, arquivos PFX existentes para poder importar, editar e excluir credenciais locais.
 
-O AEM Forms é compatível com credenciais RSA e DSA de até 4.096 bits no formato PKCS12 padrão (arquivos .pfx e .p12).
+Os formulários AEM são compatíveis com credenciais RSA e DSA de até 4.096 bits no formato PKCS12 padrão (arquivos .pfx e .p12).
 
 É possível importar e exportar qualquer número de credenciais. Se você quiser substituir uma credencial expirada usando o mesmo alias, exclua a credencial e importe a nova credencial com o mesmo alias.
 
-Para obter informações e instruções relacionadas às extensões do Acrobat Reader DC, consulte [Configuração de credenciais para uso com extensões do Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).
+Para obter informações e instruções relacionadas às extensões do Acrobat Reader DC, consulte [Configurar credenciais para usar com extensões do Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).
 
 ## Importar uma credencial {#import-a-credential}
 
@@ -34,11 +30,11 @@ Para obter informações e instruções relacionadas às extensões do Acrobat R
 
    * **Credencial de assinatura de documento:** Uma credencial usada para emitir uma assinatura digital em um documento.
    * **Credencial de extensões do Acrobat Reader DC:** Um certificado digital específico para extensões do Acrobat Reader DC que permite que os direitos de uso do Adobe Reader sejam ativados nos documentos PDF produzidos.
-   * **Padrão:** Indica que essa é a credencial padrão para usar com extensões do Acrobat Reader DC.
+   * **Padrão:** Indica que essa é a credencial padrão para usar com as extensões do Acrobat Reader DC.
 
-   Para obter informações sobre como obter uma credencial, consulte [Preparação para instalar formulários AEM](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
+   Para obter informações sobre como obter uma credencial, consulte [Preparação para instalar formulários AEM](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
 
-1. Na caixa Alias, digite um identificador para a credencial. Esse identificador é usado como o nome de exibição da credencial nas extensões do Acrobat Reader DC e do serviço de assinatura. Esse alias também é usado para acessar a credencial de forma programática usando o SDK de formulários AEM.
+1. Na caixa Alias, digite um identificador para a credencial. Esse identificador é usado como o nome de exibição da credencial nas Extensões da Acrobat Reader DC e no serviço de assinatura. Esse alias também é usado para acessar a credencial de forma programática usando o SDK de formulários AEM.
 
    >[!NOTE]
    >
@@ -53,11 +49,11 @@ Para obter informações e instruções relacionadas às extensões do Acrobat R
 As credenciais são exportadas como arquivos P12 no formato PKCS#12.
 
 1. No console de administração, clique em Configurações > Gerenciamento de armazenamento de confiança > Credenciais locais.
-1. Clique no nome do alias da credencial que deseja exportar e clique em Exportar.
+1. Clique no nome do alias da credencial que você deseja exportar e clique em Exportar.
 1. Na caixa Senha, digite a senha. Essa senha é nova e é usada para criptografar a credencial exportada.
 1. Clique em Exportar, siga as instruções para exportar a credencial e clique em OK.
 
-## Editar o alias de uma credencial ou o tipo de armazenamento de confiança {#edit-a-credential-s-alias-or-trust-store-type}
+## Editar um alias ou tipo de armazenamento de confiança da credencial {#edit-a-credential-s-alias-or-trust-store-type}
 
 Depois que uma credencial for importada, você poderá editar seu nome de alias e tipo de armazenamento de confiança.
 

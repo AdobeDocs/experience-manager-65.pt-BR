@@ -9,10 +9,10 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 44%
+source-wordcount: '384'
+ht-degree: 18%
 
 ---
 
@@ -24,7 +24,7 @@ Uma apresentação em vídeo detalhando as opções para integrar várias visual
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
-Os recursos de gerenciamento de vários sites do AEM para Live Copy e Language Copy são usados junto com a Commerce Integration Framework para gerenciar sites em várias regiões e locales.
+Os recursos de gerenciamento de vários sites do AEM para Live Copy e Language Copy são usados com a Commerce Integration Framework para gerenciar sites em várias regiões e localidades.
 
 A configuração recomendada é usar uma relação 1:1 entre o site do AEM e a exibição da loja da Adobe Commerce.
 
@@ -32,7 +32,7 @@ Para conectar um site de AEM e os Componentes principais da CIF do AEM a uma vis
 
 ## Configuração {#configuration}
 
-1. Configure várias lojas e visualizações de loja de acordo com o padrão descrito em [Sites, lojas e visualizações do Adobe Commerce](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+1. Configure várias lojas e visualizações de loja de acordo com o padrão descrito em [Sites, lojas e visualizações do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
 
 2. Verifique se a conexão entre AEM e Adobe Commerce está funcionando.
 
@@ -40,9 +40,9 @@ Para conectar um site de AEM e os Componentes principais da CIF do AEM a uma vis
 
    * No AEM, acesse Ferramentas -> Geral -> [Navegador de configuração](/help/sites-administering/configurations.md#using-configuration-browser)
    * Selecione a configuração básica que você criou
-   * Criar uma nova configuração usando as etapas descritas no ponto 2 acima
+   * Crie uma configuração usando as etapas descritas no ponto 2 acima
 
-   Essa nova configuração será criada como uma configuração secundária da base. Agora você pode acessar Ferramentas -> Geral -> Navegador de configuração e criar as configurações.
+   Essa nova configuração é criada como uma configuração secundária da base. Agora você pode acessar Ferramentas -> Geral -> Navegador de configuração e criar as configurações.
 
    >[!TIP]
    >
@@ -52,13 +52,13 @@ Para conectar um site de AEM e os Componentes principais da CIF do AEM a uma vis
 
    * Acesse o console do AEM Sites
    * Navegue até a raiz de região ou idioma da estrutura do site, por exemplo /content/venia/us _ou_ /content/venia/us/en para a página de exemplo Venia
-   * Selecione a página e abra as propriedades da página
+   * Selecione a página e abra as propriedades dela
    * Selecione a guia Avançado
-   * Na seção `Configuration` selecione a configuração que você criou na etapa 3
+   * No `Configuration` selecione a configuração que você criou na etapa 3
 
 ## Recursos adicionais
 
-* [Sites, lojas e visualizações do Adobe Commerce](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
-* [Componentes principais da CIF do AEM — Configuração de várias lojas/sites](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
+* [Sites, lojas e visualizações do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
+* [Componentes principais da CIF do AEM — Configuração de várias lojas/sites](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
 * [Usar o gerenciamento de vários sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [Reutilizar conteúdo: gerenciador de vários sites e Live Copy](/help/sites-administering/msm.md)

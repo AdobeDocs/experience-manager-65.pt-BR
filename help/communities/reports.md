@@ -1,20 +1,16 @@
 ---
 title: Console de relatórios
-seo-title: Reports Console
-description: Saiba como acessar relatórios
-seo-description: Learn how to access reports
-uuid: 7bb15a15-077b-4bfb-aaf4-50fddc67f237
+description: Saiba como acessar vários relatórios que podem ser acessados de várias maneiras no ambiente de criação do Adobe Experience Manager.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: fde053ff-b671-456b-869c-81f16ea1f1be
 docset: aem65
 role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
-source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '405'
 ht-degree: 9%
 
 ---
@@ -29,11 +25,11 @@ Em geral, os vários relatórios são:
 
 * [Relatório de exibições](#views-report)
 
-   Fornece um gráfico de exibições de conteúdo por membros da comunidade e visitantes do site para qualquer site da comunidade.
+  Fornece um gráfico de exibições de conteúdo por membros da comunidade e visitantes do site para qualquer site da comunidade.
 
 * [Relatório de publicações](#posts-report)
 
-   Fornece um gráfico de vários tipos de publicações de membros da comunidade para qualquer site da comunidade.
+  Fornece um gráfico de vários tipos de publicações de membros da comunidade para qualquer site da comunidade.
 
 Os relatórios tabulares podem ser exportados no formato .csv para processamento subsequente.
 
@@ -48,20 +44,20 @@ Os relatórios tabulares podem ser exportados no formato .csv para processamento
    * **[!UICONTROL Relatório de atribuições]**
 
       * Gere um relatório para o site da comunidade, usuário ou grupo selecionado e atribuição.
+
    * **[!UICONTROL Relatório de publicações]**
 
       * Gerar um relatório para o site da comunidade, tipo de conteúdo e período de tempo selecionados.
+
    * **[!UICONTROL Relatório de exibições]**
 
       * gere um relatório para o Site da comunidade, Tipo de conteúdo e Período selecionados.
-
-
 
 ![relatórios](assets/reports1.png)
 
 ## Relatório de exibições {#views-report}
 
-O console Exibições permite que os relatórios sejam gerados nas exibições de página pelos recursos da comunidade por um determinado período de tempo.
+O console Exibições permite que os relatórios sejam gerados em exibições de página pelos recursos da comunidade por um determinado período de tempo.
 
 ![exibir-relatório](assets/view-report.png)
 
@@ -69,15 +65,15 @@ Selecione os critérios para o relatório:
 
 * **[!UICONTROL Site]**
 
-   Selecione um site da comunidade.
+  Selecione um site da comunidade.
 
 * **[!UICONTROL Tipo de conteúdo]**
 
-   Pode escolher Todo o conteúdo ou selecionar um dos recursos presentes no site.
+  Pode escolher Todo o conteúdo ou selecionar um dos recursos presentes no site.
 
 * **[!UICONTROL Período de tempo]**
 
-   Selecione um de:
+  Selecione um de:
 
    * Últimos 7 dias
    * Últimos 30 dias
@@ -90,7 +86,7 @@ Selecionar **[!UICONTROL Gerar]** para criar o relatório.
 
 ## Relatório de publicações {#posts-report}
 
-O console de Publicações permite que os relatórios sejam gerados sobre o número de publicações para os recursos da comunidade por um determinado período de tempo.
+O console Postagens permite gerar relatórios sobre o número de postagens para recursos da comunidade em um determinado período de tempo.
 
 ![post-report](assets/posts-report.png)
 
@@ -98,15 +94,15 @@ Selecione os critérios para o relatório:
 
 * **[!UICONTROL Site]**
 
-   Selecione um site da comunidade.
+  Selecione um site da comunidade.
 
 * **[!UICONTROL Tipo de conteúdo]**
 
-   Pode escolher Todo o conteúdo ou selecionar um dos recursos presentes no site.
+  Pode escolher Todo o conteúdo ou selecionar um dos recursos presentes no site.
 
 * **[!UICONTROL Período de tempo]**
 
-   Selecione um de:
+  Selecione um de:
 
    * Últimos 7 dias
    * Últimos 30 dias
@@ -125,6 +121,6 @@ Se nenhum site da comunidade estiver listado, verifique se o Adobe Analytics foi
 
 ### Os relatórios não são exibidos na instância do autor do AEM {#reports-do-not-show-in-aem-author-instance}
 
-Se os relatórios não forem exibidos na instância do AEM Author, verifique as personalizações, como o mapeamento de URL na instância de Publicação. Se o mapeamento de URL for feito somente na instância de publicação do AEM do site das comunidades, verifique se o mesmo foi configurado na instância de autor do AEM no **Fatory do Componente Social do Relatório de Tendências do Site** configuração.
+Se os relatórios não forem exibidos na instância do Autor AEM, verifique as personalizações, como o mapeamento de URL na instância de publicação. Se o mapeamento do URL for feito somente na instância AEM Publish do site das comunidades, verifique se o mesmo foi configurado na instância AEM Author em **Fatory do Componente Social do Relatório de Tendências do Site** configuração.
 
-![Mapeamento de URL no AEM Author](assets/sitetrend.png)
+![Mapeamento de URL no autor do AEM](assets/sitetrend.png)

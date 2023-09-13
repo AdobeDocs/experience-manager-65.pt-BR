@@ -7,10 +7,10 @@ breadcrumb-title: Notas de versão
 user-guide-description: Saiba mais sobre os novos recursos mais recentes do AEM 6.5 nas notas de versão.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 8a7ca99d896fd1ce2ace5b17a91987c6b8535615
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
 source-wordcount: '70'
-ht-degree: 44%
+ht-degree: 42%
 
 ---
 
@@ -19,7 +19,6 @@ ht-degree: 44%
 
 + [Notas de versão do AEM 6.5](home.md)
 + [Notas de versão atuais](release-notes.md)
-+ [Instruções de instalação do AEM Forms Service Pack](aem-forms-current-service-pack-installation-instructions.md)
 + [Notas de versão anteriores]{#service-pack}
    + [6.5.17](previous/6.5.17.md)
    + [6.5.16](previous/6.5.16.md)
@@ -39,6 +38,7 @@ ht-degree: 44%
    + [6.5.2](previous/6.5.2.md)
    + [6.5.1](previous/6.5.1.md)
    + [6.5.0](previous/ga.md)
++ [instruções de instalação do pacote de serviços do AEM Forms](aem-forms-current-service-pack-installation-instructions.md)
 + [Instalador de patch do AEM Forms JEE](jee-patch-installer-65.md)
 + [Recursos obsoletos e removidos](deprecated-removed-features.md)
 + [Status do recurso da interface de toque](touch-ui-features-status.md)

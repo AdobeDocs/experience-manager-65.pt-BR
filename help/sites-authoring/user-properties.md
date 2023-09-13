@@ -1,19 +1,15 @@
 ---
 title: Configurar o ambiente da sua conta
-seo-title: Configuring Your Account Environment
 description: O AEM fornece a capacidade de configurar a sua conta e determinados aspectos do ambiente de criação
-seo-description: AEM provides you with the capability to configure your account and certain aspects of the author environment
-uuid: ef31be29-5c18-4dc9-ad51-fb001588b31e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: b610e19c-f8d9-4ae2-b056-9fd5cf541261
 docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '514'
 ht-degree: 64%
 
 ---
@@ -24,11 +20,11 @@ O AEM fornece a capacidade de configurar a sua conta e determinados aspectos do 
 
 Usando a opção [Usuário](/help/sites-authoring/user-properties.md#user-settings) no [cabeçalho](/help/sites-authoring/basic-handling.md#the-header) e a caixa de diálogo [Minhas preferências](#userpreferences) associada, é possível modificar suas opções de usuário, como as seguintes:
 
-Comece acessando o [Usuário](/help/sites-authoring/user-properties.md#user-settings) no cabeçalho.
+Comece acessando a opção [Usuário](/help/sites-authoring/user-properties.md#user-settings) no cabeçalho.
 
 ## Configurações de usuário {#user-settings}
 
-A variável **Usuário** a caixa de diálogo configurações dá acesso a:
+A caixa de diálogo de configurações do **usuário** concede acesso a:
 
 * Representar como
 
@@ -48,13 +44,13 @@ A variável **Usuário** a caixa de diálogo configurações dá acesso a:
 
 A caixa de diálogo **Minhas preferências** é acessada através da opção [Usuário](/help/sites-authoring/user-properties.md#user-settings) no cabeçalho.
 
-Cada usuário pode definir certas propriedades para si mesmo.
+Cada usuário pode definir determinadas propriedades para si mesmo.
 
 ![screen-shot_2019-03-05at100322](assets/screen-shot_2019-03-05at100322.png)
 
 * **Idioma**
 
-  Isso define o idioma a ser usado para a interface do usuário do ambiente de criação. Selecione o idioma desejado na lista disponível.
+  Isso define o idioma a ser usado na interface do ambiente de criação. Selecione o idioma apropriado na lista.
 
   Essa configuração também é usada para a interface clássica.
 
@@ -62,17 +58,17 @@ Cada usuário pode definir certas propriedades para si mesmo.
 
   Isso define o comportamento ou a abertura de janelas. Selecione um dos seguintes:
 
-   * **Várias janelas** (Padrão)
+   * **Várias janelas** (padrão)
 
-      * As páginas serão abertas em uma nova janela.
+      * As páginas são abertas em uma nova janela.
 
    * **Uma janela**
 
-      * As páginas serão abertas na janela atual.
+      * As páginas são abertas na janela atual.
 
 * **Mostrar ações do desktop para Ativos**
 
-  Essa opção requer o aplicativo de desktop do AEM para uso.
+  Essa opção requer um aplicativo de desktop AEM para uso.
 
 * **Cor da anotação**
 
@@ -83,7 +79,7 @@ Cada usuário pode definir certas propriedades para si mesmo.
 
 * **Apresentação de data relativa**
 
-  Para melhorar a legibilidade, o AEM renderizará datas nos últimos sete dias como datas relativas (por exemplo, três dias atrás) e datas mais antigas como datas exatas (por exemplo, 20 de março de 2017).
+  Para melhorar a legibilidade, o AEM renderiza datas nos últimos sete dias como datas relativas (por exemplo, três dias atrás) e datas mais antigas como datas exatas (por exemplo, 20 de março de 2017).
 
   Essa opção define como as datas no sistema são exibidas. As opções disponíveis são as seguintes:
 
@@ -105,7 +101,7 @@ Cada usuário pode definir certas propriedades para si mesmo.
    * [Atalhos de teclado para editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Atalhos de teclado para os consoles](/help/sites-authoring/keyboard-shortcuts.md)
 
-  Essa opção ativa os atalhos de teclado. Por padrão, eles estão ativados, mas podem ser desativados se um usuário tiver determinados requisitos de acessibilidade.
+  Essa opção habilita os atalhos de teclado. Por padrão, eles são ativados, mas podem ser desativados se, por exemplo, um usuário tiver determinados requisitos de acessibilidade.
 
 * **Usar a experiência de criação clássica**
 
@@ -113,7 +109,7 @@ Cada usuário pode definir certas propriedades para si mesmo.
 
 * **Ativar a Página inicial dos ativos**
 
-  Essa opção só estará disponível se o administrador do sistema tiver ativado a experiência da Página inicial do Ativos para toda a organização.
+  Essa opção só estará disponível se o administrador do sistema tiver ativado a experiência da Página inicial do Assets para toda a organização.
 
 * **Configuração do Stock**
 

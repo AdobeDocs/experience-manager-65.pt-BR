@@ -2,10 +2,10 @@
 title: Notas de versão de 2020 do AEM Content and Commerce
 description: Notas de versão de 2020 do AEM Content and Commerce
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '1328'
-ht-degree: 12%
+source-wordcount: '1352'
+ht-degree: 13%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 12%
 
 ### Novidades {#what-is-new-november}
 
-* Herança de modelo adicionada à página de categoria específica. Esse recurso melhora a eficiência do usuário empresarial porque permite que todas as subcategorias herdem o modelo criado para uma categoria superior específica.
+* Herança de modelo adicionada a uma página de categoria específica. Esse recurso melhora a eficiência do usuário empresarial porque permite que todas as subcategorias herdem o modelo criado para uma categoria superior específica.
 
-* A vitrine de referência Venia foi atualizada para usar o Fragmento de experiência para o rodapé. Usuários empresariais têm a capacidade de editar o rodapé da página usando ferramentas de criação de AEM.
+* A vitrine de referência Venia foi atualizada para usar o Fragmento de experiência para o rodapé. Usuários empresariais podem editar o rodapé da página usando as ferramentas de criação do AEM.
 
 ### O que foi melhorado {#what-is-improved-november}
 
@@ -43,7 +43,7 @@ ht-degree: 12%
 
 ### Novidades {#what-is-new-october}
 
-* Novo componente Carrossel de categoria adicionado para permitir que os usuários empresariais arrastem e soltem esse componente em páginas de conteúdo AEM para enriquecer páginas de conteúdo com dados comerciais.
+* Um novo componente Carrossel de categoria foi adicionado para permitir que os usuários empresariais arrastem e soltem esse componente em páginas de conteúdo AEM para enriquecer páginas de conteúdo com dados comerciais.
 
 * Os componentes principais da CIF foram estendidos para hidratar a Camada de dados de clientes Adobe, enviando dados comerciais. A Camada de dados de clientes Adobe é um método padronizado para coletar dados e comunicá-los aos servidores de análise digital e de relatórios. Para obter mais detalhes, consulte [Camada de dados de clientes Adobe](https://github.com/adobe/adobe-client-data-layer/wiki).
 
@@ -65,11 +65,11 @@ ht-degree: 12%
 
 * Adição de recursos de informações da conta para permitir que os compradores atualizem suas informações pessoais.
 
-* Estilo de paginação de carregamento lento implementado para as páginas Lista de produtos e Resultados da pesquisa para permitir que os desenvolvedores configurem esses componentes para exibir o botão &quot;Carregar mais&quot; como o estilo de paginação.
+* Um estilo de paginação de carregamento lento é implementado nas páginas Lista de produtos e Resultados da pesquisa para permitir que os desenvolvedores configurem esses componentes para exibir o botão &quot;Carregar mais&quot; como o estilo de paginação.
 
-* A página de redefinição de senha foi implementada para permitir que os compradores atualizem/redefinam a senha da conta.
+* A página de redefinição de senha é implementada para permitir que os compradores possam atualizar/redefinir a senha da conta.
 
-* Suporte para tipos de produtos agrupados disponível.
+* O suporte para tipos de produtos agrupados está disponível.
 
 * Os desenvolvedores podem configurar as tags HTML para os componentes Carrossel de produtos, Produtos relacionados e Lista de categorias em destaque para seguir as práticas recomendadas da SEO.
 
@@ -91,13 +91,13 @@ ht-degree: 12%
 
 * A guia Comércio foi adicionada às propriedades da página para expor as propriedades da CIF de páginas iniciais e fragmentos de experiência.
 
-* Componente da barra de pesquisa aprimorado para oferecer suporte à opção de exibir texto de espaço reservado
+* O componente Barra de pesquisa foi aprimorado para oferecer suporte à opção para exibir texto de espaço reservado
 
 * Adição de flexibilidade aos componentes Teaser de produto e produto para facilitar as personalizações.
 
 * Adição de flexibilidade para substituir e configurar o rótulo de botão CTA padrão para o componente Teaser do produto.
 
-* O componente do Catálogo de endereços foi aprimorado para permitir que o comprador registrado escolha os endereços de envio e cobrança salvos no catálogo de endereços durante a finalização da compra.
+* O componente de Catálogo de endereços é aprimorado para permitir que os compradores registrados escolham os endereços de envio e de cobrança salvos no catálogo de endereços durante a finalização da compra.
 
 * Várias correções de erros.
 
@@ -115,7 +115,7 @@ ht-degree: 12%
 
 * Arquétipo da CIF mesclado com o Arquétipo de projeto do AEM. Para novos projetos, use [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype) como ponto de partida.
 
-* Adição do gerenciamento de catálogo de endereços para permitir que os usuários conectados gerenciem seus endereços.
+* O gerenciamento de catálogo de endereços foi adicionado para permitir que os usuários conectados gerenciem seus endereços.
 
 * A interface de configuração da nuvem CIF é compatível com ações de publicação/cancelamento de publicação.
 
@@ -149,7 +149,7 @@ Esta é a primeira versão dos Componentes principais da CIF compatível com o A
 
 * A página Lista de produtos e a página Resultado da pesquisa exibem o número total de itens. O número de itens é atualizado quando o comprador aplicou filtros.
 
-* Pesquisa facetada otimizada combinando consulta de categoria com consulta de pesquisa de produto.
+* A pesquisa facetada é otimizada combinando uma consulta de categoria com uma consulta de pesquisa de produto.
 
 * Seletores de categoria/produto para visualização de página respeitam o cq:catalogPath.
 
@@ -169,7 +169,7 @@ Esta é a primeira versão dos Componentes principais da CIF compatível com o A
 
 * O suporte à Pesquisa facetada foi adicionado à Página de pesquisa e à Página de lista de produtos para permitir que os compradores filtrem os resultados da pesquisa com base nas facetas do produto.
 
-* Novo serviço OSGi adicionado para personalizar URLs PDP/PLP para SEO. Para obter mais detalhes, consulte esta [documentação](https://github.com/adobe/aem-core-cif-components/wiki/configuration).
+* Novo serviço OSGi adicionado para personalizar URLs PDP/PLP para fins de SEO. Para obter mais detalhes, consulte [documentação](https://github.com/adobe/aem-core-cif-components).
 
 * A Associação de produto é criada automaticamente quando uma Configuração na nuvem é criada.
 
@@ -189,7 +189,7 @@ Esta é a primeira versão dos Componentes principais da CIF compatível com o A
 
 ### Novidades {#what-is-new-april}
 
-* As configurações do Conector da CIF foram unificadas e simplificadas. Para obter mais detalhes, confira [Introdução](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html) ou [Configuração de novo projeto da CIF para AEM](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html#!AdobeDocs/commerce-cif-documentation/master/getting-started/02-new-cif-project.md)
+* As configurações do Conector da CIF são unificadas e simplificadas. Para obter mais detalhes, confira [Introdução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=pt-BR) ou [Configuração de novo projeto da CIF para AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=pt-BR)
 
 ### O que foi melhorado {#what-is-improved-april}
 
@@ -197,7 +197,7 @@ Esta é a primeira versão dos Componentes principais da CIF compatível com o A
 
 * Suporte estendido à internacionalização em todos os componentes.
 
-* Suporte para produtos agrupados e produtos virtuais disponíveis.
+* O suporte para produtos agrupados e produtos virtuais está disponível.
 
 * Os componentes Produtos relacionados, Carrossel de produtos e Categoria em destaque foram aprimorados para suportar o título opcional.
 
@@ -223,7 +223,7 @@ Esta é a primeira versão dos Componentes principais da CIF compatível com o A
 
 * Carrinho de compras aprimorado para exibir descontos.
 
-* Os componentes Detalhes do produto, Teaser do produto e Lista de produtos suportam a exibição de informações avançadas sobre preços.
+* Os componentes Detalhes do produto, Teaser do produto e Lista de produtos suportam a exibição de informações de preços avançados.
 
 * Pesquisa de produto no Console do produto e no Seletor de produto aprimorados.
 
@@ -245,7 +245,7 @@ Esta é a primeira versão dos Componentes principais da CIF compatível com o A
 
 * Suporte a i18n para componentes principais do lado do servidor da CIF do AEM.
 
-* Componente genérico do produto relacionado disponível.
+* O componente genérico do produto relacionado está disponível.
 
 ### O que foi melhorado {#what-is-improved-january}
 
