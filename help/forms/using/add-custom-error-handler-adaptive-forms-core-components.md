@@ -7,15 +7,20 @@ keywords: Adicionar um manipulador de erros personalizado, adicionar um manipula
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: f8e0ac45d98d6485ccb60e754657caf9d190c3ea
+source-git-commit: 6d6e74c61b2ecb13e7cc352d5278c40d2677d44d
 workflow-type: tm+mt
-source-wordcount: '2281'
-ht-degree: 1%
+source-wordcount: '2331'
+ht-degree: 2%
 
 ---
 
 
 # Manipuladores de erros no Adaptive Forms (Componentes principais) {#error-handlers-in-adaptive-form}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/add-custom-error-handler-adaptive-forms-core-components.html) |
+| AEM 6.5 | Este artigo |
 
 O AEM Forms fornece manipuladores de sucesso e erro prontos para uso para envios de formulários. Ele também fornece recursos para personalizar funções do manipulador de erros. Por exemplo, você pode acionar um fluxo de trabalho personalizado no back-end para códigos de erro específicos ou informar ao cliente que o serviço está inativo. Os manipuladores são funções do lado do cliente executadas com base na resposta do servidor. Quando um serviço externo é chamado usando APIs, os dados são transmitidos ao servidor para validação, o que retorna uma resposta ao cliente com informações sobre o evento bem-sucedido ou com erro para o envio. As informações são passadas como parâmetros para o manipulador relevante para executar a função. Um manipulador de erros ajuda a gerenciar e exibir erros ou problemas de validação encontrados.
 
@@ -310,3 +315,9 @@ Como resultado dessa regra, os valores inseridos para **ID do animal de estimaç
 Abra o console do navegador e verifique a mensagem de erro de validação na resposta e no cabeçalho, recebidos do ponto de acesso do serviço REST.
 
 A função de manipulador de erros personalizada é responsável por executar ações adicionais, como exibir uma caixa de diálogo modal ou enviar um evento de análise, com base na resposta do erro. Uma função de manipulador de erros personalizada oferece a flexibilidade para adaptar o tratamento de erros aos requisitos específicos do usuário.
+
+## Consulte também {#see-also}
+
+* [Criar um formulário adaptável independente baseado nos Componentes principais](/help/forms/using/create-an-adaptive-form-core-components.md)
+* [Criar estilo ou temas para seus formulários](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
+* [Criar ou adicionar um formulário adaptável à página do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)

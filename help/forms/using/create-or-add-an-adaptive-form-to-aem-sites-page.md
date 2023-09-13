@@ -4,9 +4,9 @@ description: Descubra como criar ou adicionar facilmente um formulário adaptáv
 Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 feature: Adaptive Forms
 exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
-source-git-commit: 3649df0e2a2672bc1742b3c02386f12ff6991935
+source-git-commit: 6d6e74c61b2ecb13e7cc352d5278c40d2677d44d
 workflow-type: tm+mt
-source-wordcount: '2888'
+source-wordcount: '2905'
 ht-degree: 2%
 
 ---
@@ -250,3 +250,8 @@ No envio de um formulário, você pode redirecionar o usuário para outra págin
    * Para configurar um URL de redirecionamento, para na opção Enviar, selecione a opção Redirecionar para URL e forneça um endereço absoluto, um URL de redirecionamento ou um caminho relativo de uma página do AEM Sites.
 
    * Para configurar uma mensagem personalizada ou de agradecimento, para na opção Enviar, selecione a opção Mostrar mensagem e forneça uma mensagem na caixa Conteúdo da mensagem. É uma caixa de rich text, você pode usar a opção de tela cheia para exibir todos os itens de rich text disponíveis.
+
+## Consulte também: {#see-also}
+
+* [Criar um formulário adaptável independente baseado nos Componentes principais](/help/forms/using/create-an-adaptive-form-core-components.md)
+* [Criar estilo ou temas para seus formulários](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
