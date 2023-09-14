@@ -1,20 +1,16 @@
 ---
 title: Personalizar criar interface de correspondência
-seo-title: Customize create correspondence UI
-description: Saiba como personalizar a interface para criar correspondência.
-seo-description: Learn how to customize create correspondence UI.
-uuid: 9dee9b6f-4129-4560-9bf8-db48110b76f7
+description: Saiba como personalizar a interface do usuário de criação de correspondência.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 0%
+source-wordcount: '1084'
+ht-degree: 1%
 
 ---
 
@@ -46,16 +42,16 @@ Crie a estrutura de pastas, conforme explicado abaixo, para hospedar a imagem de
 
 Para qualquer personalização, crie uma estrutura de pastas paralela, conforme explicado abaixo, na ramificação /apps.
 
-A ramificação /apps (estrutura de pastas):
+A variável `/apps` ramificação (estrutura de pastas):
 
-* Garante a segurança dos seus arquivos em caso de atualização do sistema. No caso de atualização, pacote de recursos ou hot fix, a ramificação /libs é atualizada e, se você hospedar suas alterações na ramificação /libs, elas serão substituídas.
-* Ajuda a não perturbar o sistema/ramificação atual, o que pode ser desfeito por engano se você usar os locais padrão para armazenar os arquivos personalizados.
-* Ajuda os seus recursos a terem maior prioridade quando o AEM procura recursos. O AEM é configurado para pesquisar a ramificação /apps primeiro e, em seguida, a ramificação /libs para encontrar um recurso. Esse mecanismo significa que o sistema usa sua sobreposição (e as personalizações definidas lá).
+* Garante a segurança dos arquivos se houver uma atualização do sistema. Se houver uma atualização, um pacote de recursos ou um hot fix, a variável `/libs` A ramificação será atualizada e se você hospedar suas alterações no `/libs` são substituídas.
+* Ajuda a não perturbar o sistema/ramificação atual, o que você pode desfazer por engano se usar os locais padrão para armazenar os arquivos personalizados.
+* Ajuda os seus recursos a obter uma prioridade mais alta quando o AEM procura recursos. O AEM está configurado para pesquisar o `/apps` primeiro e depois o `/libs` para localizar um recurso. Esse mecanismo significa que o sistema usa sua sobreposição (e as personalizações definidas lá).
 
-Use as seguintes etapas para criar a estrutura de pastas necessária na ramificação /apps:
+Use as etapas a seguir para criar a estrutura de pastas necessária no `/apps` filial:
 
 1. Ir para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
-1. Na pasta de aplicativos, crie uma pasta chamada `css` com caminho/estrutura semelhante à pasta css (localizada na pasta ccrui ).
+1. Na pasta de aplicativos, crie uma pasta chamada `css` com caminho/estrutura semelhante à pasta css (na pasta ccrui).
 
    Etapas para criar a pasta css:
 
@@ -65,9 +61,9 @@ Use as seguintes etapas para criar a estrutura de pastas necessária na ramifica
 
    1. Certifique-se de que a caixa de diálogo Sobrepor nó tenha os seguintes valores:
 
-      **Caminho:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
+      **Caminho:** `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
 
-      **Local da sobreposição:** /apps/
+      **Local de sobreposição:** `/apps/`
 
       **Corresponder Tipos de Nó:** Marcado
 
@@ -75,7 +71,7 @@ Use as seguintes etapas para criar a estrutura de pastas necessária na ramifica
 
       >[!NOTE]
       >
-      >Não faça alterações na ramificação /libs. As alterações feitas podem ser perdidas, pois essa ramificação pode sofrer alterações sempre que você:
+      >Não altere o `/libs` filial. As alterações feitas podem ser perdidas, pois essa ramificação pode sofrer alterações sempre que você:
       >
       >    
       >    
@@ -87,7 +83,7 @@ Use as seguintes etapas para criar a estrutura de pastas necessária na ramifica
 
    1. Clique em **OK**. A pasta css é criada no caminho especificado.
 
-1. Na pasta de aplicativos, crie uma pasta chamada `imgs` com caminho/estrutura semelhante à pasta imgs (localizada na pasta ccrui).
+1. Na pasta de aplicativos, crie uma pasta chamada `imgs` com caminho/estrutura semelhante à pasta imgs (na pasta ccrui).
 
    1. Clique com o botão direito do mouse no **imgs** no seguinte caminho e selecione **Sobrepor nó**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Certifique-se de que a caixa de diálogo Sobrepor nó tenha os seguintes valores:
@@ -141,7 +137,7 @@ Use as seguintes etapas para fazer upload do arquivo de logotipo personalizado p
 
    A caixa de diálogo Editar jcr:data é exibida.
 
-   Agora clique na pasta newlogo.png, clique duas vezes em jcr:content (opção dim) e defina type nt:resource. Se não estiver presente, crie uma propriedade com o nome jcr:content.
+   Agora clique na pasta newlogo.png, clique duas vezes em jcr:content (opção dim) e defina o tipo nt:resource. Se não estiver presente, crie uma propriedade com o nome jcr:content.
 
 1. Na caixa de diálogo Editar jcr:dados, clique em **Procurar** e selecione o arquivo de imagem que deseja usar como logotipo (aqui CustomLogo.png).
 
@@ -153,11 +149,11 @@ Use as seguintes etapas para fazer upload do arquivo de logotipo personalizado p
 
 1. Clique em **Salvar tudo**.
 
-## Crie o CSS para integrar o logotipo com a interface do usuário {#createcss}
+## Criar o CSS para renderizar o logotipo com a interface {#createcss}
 
 A imagem de logotipo personalizada requer que uma folha de estilos adicional seja carregada no contexto de conteúdo.
 
-Use as etapas a seguir para configurar a folha de estilos para renderizar o logotipo:
+Use as etapas a seguir para criar a folha de estilos para renderizar o logotipo com a interface do usuário:
 
 1. Acesse `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessário, efetue login como Administrador.
 1. Crie um arquivo chamado customcss.css (você não pode usar um nome de arquivo diferente) no seguinte local:
@@ -178,9 +174,9 @@ Use as etapas a seguir para configurar a folha de estilos para renderizar o logo
 
    1. Clique em **Salvar tudo**.
 
-## Atualize a interface de Criar correspondência para ver o logotipo personalizado {#refreshccrui}
+## Atualize a interface de Criar correspondência para exibir o logotipo personalizado {#refreshccrui}
 
-Limpe o cache do navegador e abra a instância da interface Criar correspondência no navegador. Você deve ver seu logotipo personalizado.
+Limpe o cache do navegador e abra a instância da interface Criar correspondência no navegador para que você possa ver seu logotipo personalizado.
 
 ![Criar interface do usuário de correspondência com logotipo personalizado](assets/0_1_introscreenshot-1.png)
 

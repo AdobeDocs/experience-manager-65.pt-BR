@@ -1,24 +1,22 @@
 ---
 title: Edição de propriedades da página de conteúdo
 description: Definir as propriedades obrigatórias de uma página.
-uuid: d3a2183b-8082-4cfc-aeed-26facbf3f3e6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '1882'
-ht-degree: 61%
+source-wordcount: '1868'
+ht-degree: 44%
 
 ---
 
 # Editar as propriedades da página{#editing-page-properties}
 
-Você pode definir as propriedades desejadas para uma página. Isso pode variar dependendo da natureza da página. Por exemplo, algumas páginas podem estar conectadas a uma Live Copy, enquanto outras não estão, e as informações da Live Copy estarão disponíveis conforme apropriado.
+Você pode definir as propriedades desejadas para uma página. Isso pode variar dependendo da natureza da página. Por exemplo, algumas páginas podem estar conectadas a uma live copy, enquanto outras não, e as informações da live copy ficam disponíveis conforme apropriado.
 
 ## Propriedades da página {#page-properties}
 
@@ -34,15 +32,15 @@ As propriedades são distribuídas por várias guias.
 
 * **Tags**
 
-  Aqui você pode adicionar ou remover as tags da página, atualizando a lista na caixa de seleção:
+  Aqui você pode adicionar ou remover tags da página, atualizando a lista na caixa de seleção:
 
    * Após selecionar uma tag, ela é listada abaixo da caixa de seleção. Você pode remover uma tag dessa lista usando o ícone “x”.
-   * Uma tag totalmente nova pode ser inserida digitando o nome em uma caixa de seleção vazia.
+   * Uma nova tag pode ser inserida digitando o nome em uma caixa de seleção vazia.
 
-      * A nova tag será criada quando você pressionar a tecla Enter.
-      * A nova tag será então exibida com uma pequena estrela à direita, indicando que é uma tag nova.
+      * A nova tag é criada ao pressionar Enter.
+      * A nova tag é mostrada com uma pequena estrela à direita, indicando que é uma nova tag.
 
-   * Com a funcionalidade de menu suspenso, é possível selecionar tags existentes.
+   * Com a funcionalidade suspensa, é possível selecionar entre tags existentes.
    * Um “x” é exibido ao passar o mouse sobre uma entrada de tag na caixa de seleção, e esse ícone pode ser usado para remover a tag desta página.
 
   Para obter mais informações sobre tags, consulte [Uso de tags](/help/sites-authoring/tags.md).
@@ -55,17 +53,17 @@ As propriedades são distribuídas por várias guias.
 
   Aplique uma identidade de marca consistente em todas as páginas, anexando uma descrição da marca a cada título de página. Essa funcionalidade requer o uso do Componente de página da versão 2.14.0 ou posterior do [Componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
 
-   * **Substituir** - marque essa opção para definir a descrição da marca nesta página.
-      * O valor será herdado por qualquer página secundária, a menos que também tenha definidos seus valores para **Substituir**.
+   * **Sobrepor**: marque essa opção para definir a descrição da marca nesta página.
+      * O valor é herdado por todas as páginas secundárias, a menos que elas também tenham seus valores de **Sobreposição** definidos.
    * **Substituir valor** - o texto da descrição da marca a ser anexado ao título da página.
       * O valor é anexado ao título da página após um caractere de barra vertical, como &quot;Cycling Tuscany | Sempre pronto para a WKND&quot;
 * **Título da página**
 
-  Um título a ser usado na página. Normalmente é usado pelos componentes de título. Se estiver vazio, o **Título** da página será usado.
+  Um título a ser usado na página. Normalmente é usado pelos componentes de título. Se estiver vazio, a variável **Título** é usada.
 
 * **Titulo da navegação**
 
-  Você pode especificar um título separado para usar na navegação (por exemplo, se desejar algo mais conciso). Se estiver vazio, a variável **Título** serão usados.
+  Você pode especificar um título separado para usar na navegação (por exemplo, se desejar algo mais conciso). Se estiver vazio, a variável **Título** é usada.
 
 * **Legenda**
 
@@ -77,19 +75,19 @@ As propriedades são distribuídas por várias guias.
 
 * **Em tempo**
 
-  A data e a hora em que a página publicada será ativada. Quando publicada, essa página será mantida inativa até o horário especificado.
+  A data e a hora em que a página publicada é ativada. Quando publicada, essa página permanece inativa até o horário especificado.
 
   Deixe esses campos vazios para páginas que deseja publicar imediatamente (o cenário normal).
 
 * **Tempo desligado**
 
-  A hora em que a página publicada será desativada.
+  A hora em que a página publicada é desativada.
 
   Deixe esses campos vazios novamente para ação imediata.
 
 * **URL personalizada**
 
-  Permite inserir um URL personalizado para esta página, o que pode permitir que você tenha um URL mais curto e/ou mais expressivo.
+  Insira um URL personalizado para esta página, o que pode permitir que você tenha um URL mais curto e/ou mais expressivo.
 
   Por exemplo, se o URL personalizado estiver definido como `welcome`à página identificada pelo caminho `/v1.0/startpage`para o site `http://example.com,` depois `http://example.com/welcome`seria o URL personalizado de `http://example.com/content/v1.0/startpage`
 
@@ -97,12 +95,12 @@ As propriedades são distribuídas por várias guias.
   >
   >URLs personalizadas:
   >
-  >* Ela deve ser exclusiva, portanto, é necessário verificar se o valor já não está sendo usado por outra página.
+  >* Deve ser única. Certifique-se de que o valor ainda não esteja sendo usado por outra página.
   >* Não é compatível com padrões de regex.
   >* Não deve ser definido como uma página existente.
   >
 
-  Você também precisa configurar o Dispatcher para habilitar o acesso a URLs personalizados. Consulte [Ativação do acesso a URLs personalizados](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) para obter mais detalhes.
+  Configure o Dispatcher para ativar o acesso a URLs personalizados. Consulte [Ativação do acesso a URLs personalizados](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) para obter mais detalhes.
 
 * **Redirecionar URL do Vanity**
 
@@ -132,8 +130,8 @@ As propriedades são distribuídas por várias guias.
 
    * Por exemplo: se você definir um pseudônimo de `private` para a página `/content/wknd/us/en/magazine/members-only`, essa página poderá ser acessada por meio de `/content/wknd/us/en/magazine/private`
    * A criação de um pseudônimo define a propriedade de `sling:alias` no nó da página, que afeta apenas o recurso, não o caminho do repositório.
-   * As páginas acessadas por pseudônimos no editor não podem ser publicadas. As [Opções de publicação](/help/sites-authoring/publishing-pages.md) no editor só estão disponíveis para páginas acessadas por meio de seus caminhos de fato.
-   * Para obter mais detalhes, consulte [Nomes de páginas localizados em Práticas recomendadas de gerenciamento de SEO e URL](/help/managing/seo-and-url-management.md#localized-page-names).
+   * Páginas acessadas por pseudônimos no editor não podem ser publicadas. As [Opções de publicação](/help/sites-authoring/publishing-pages.md) no editor só estão disponíveis para páginas acessadas por meio de seus caminhos de fato.
+   * Para obter mais detalhes, consulte [Nomes de página localizados em SEO e Práticas recomendadas de gerenciamento de URL](/help/managing/seo-and-url-management.md#localized-page-names).
 
 * **Herdado de &lt;*caminho*>**
 
@@ -145,11 +143,11 @@ As propriedades são distribuídas por várias guias.
 
 * **Modelos permitidos**
 
-  [Definir a lista de modelos que estará disponível](/help/sites-authoring/templates.md#allowingatemplate) nesta sub-ramificação.
+  [Definir a lista de modelos disponíveis](/help/sites-authoring/templates.md#allowingatemplate) nesta sub-ramificação.
 
 * **Ativar** (Requisito de autenticação)
 
-  Ative (ou desative) o uso de autenticação para acessar a página.
+  Ativar (ou desativar) o uso de autenticação para que você possa acessar a página.
 
   >[!NOTE]
   >
@@ -157,7 +155,7 @@ As propriedades são distribuídas por várias guias.
 
   >[!CAUTION]
   >
-  >A variável **[Permissões](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** permite editar configurações de CUG com base na presença da variável `granite:AuthenticationRequired` mixin. Se as permissões de página forem configuradas usando configurações CUG obsoletas, com base na presença de `cq:cugEnabled` , uma mensagem de aviso será exibida em **Requisitos de autenticação** e a opção não será editável, nem a variável [Permissões](/help/sites-authoring/editing-page-properties.md#permissions) ser editável.
+  >A variável **[Permissões](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** permite a edição de configurações CUG com base na presença da variável `granite:AuthenticationRequired` mixin. Se as permissões de página forem configuradas usando configurações CUG obsoletas, com base na presença de `cq:cugEnabled` propriedade, uma mensagem de aviso será mostrada em **Requisitos de autenticação** e a opção não for editável, nem a variável [Permissões](/help/sites-authoring/editing-page-properties.md#permissions) editável.
   >
   >
   >Nesse caso, as permissões CUG devem ser editadas no [IU clássica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
@@ -176,30 +174,30 @@ Mostra a imagem em miniatura da página. É possível:
 
 * **Gerar pré-visualização**
 
-  Gera uma visualização da página para usar como miniatura.
+  Gere uma visualização da página que você deseja usar como miniatura.
 
 * **Fazer upload de imagem**
 
-  Carregue uma imagem para usar como miniatura.
+  Faça upload de uma imagem que você deseja usar como miniatura.
 
 * **Selecionar imagem**
 
-  Selecione um Ativo existente para usar como miniatura.
+  Selecione um Ativo existente que deseja usar como miniatura.
 
 * **Reverter**
 
-  Essa opção fica disponível após você ter feito uma alteração na miniatura. Se você não quiser manter a alteração, poderá revertê-la antes de salvar.
+  Essa opção fica disponível após alterar a miniatura. Se você não quiser manter a alteração, poderá revertê-la antes de salvar.
 
 ### Redes sociais {#social-media}
 
 * **Compartilhamento em rede social**
 
-  Define as opções de compartilhamento disponíveis na página. Expõe as opções disponíveis para o [Compartilhamento do componente principal](https://helpx.adobe.com/experience-manager/core-components/using/sharing.html).
+  Define as opções de compartilhamento disponíveis na página. Expõe as opções que estão disponíveis para o [Compartilhamento do componente principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html?lang=en).
 
    * **Ativar compartilhamento de usuários para o Facebook**
    * **Ativar compartilhamento de usuários para o Pinterest**
    * **Variação preferida de XF**
-Defina a variação do fragmento de experiência usada para gerar metadados para a página
+Defina a variação do Fragmento de experiência usada para gerar metadados para uma página
 
 ### Cloud Services {#cloud-services}
 
@@ -233,30 +231,30 @@ Defina a variação do fragmento de experiência usada para gerar metadados para
 
   >[!CAUTION]
   >
-  >A variável **Permissões** permite editar configurações de CUG com base na presença da variável `granite:AuthenticationRequired` mixin. Se as permissões de página forem configuradas usando configurações CUG obsoletas, com base na presença de `cq:cugEnabled` , uma mensagem de aviso será exibida e as permissões de CUG não serão editáveis, nem o Requisito de autenticação no [Avançado](/help/sites-authoring/editing-page-properties.md#advanced) ser editável.
+  >A variável **Permissões** permite editar configurações de CUG com base na presença da variável `granite:AuthenticationRequired` mixin. Se as permissões de página forem configuradas usando configurações CUG obsoletas, com base na presença de `cq:cugEnabled` , uma mensagem de aviso será exibida e as permissões de CUG não serão editáveis, nem o Requisito de autenticação da [Avançado](/help/sites-authoring/editing-page-properties.md#advanced) editável por guia.
   >
   >
   >Nesse caso, as permissões CUG devem ser editadas no [IU clássica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
   >[!NOTE]
   >
-  >A guia Permissões não permite a criação de grupos CUG vazios, o que pode ser útil como uma maneira simples de negar acesso a todos os usuários. Para fazer isso, o CRX Explorer deve ser usado. Consulte o documento [Administração de direitos de usuário, grupo e acesso](/help/sites-administering/user-group-ac-admin.md) para obter mais informações.
+  >A guia Permissões não permite a criação de grupos CUG vazios, o que pode ser útil como uma maneira simples de negar acesso a todos os usuários. Para fazer isso, o CRX Explorer deve ser usado. Consulte o documento [Administração de usuários, grupos e direitos de acesso](/help/sites-administering/user-group-ac-admin.md) para obter mais informações.
 
 ### Blueprint {#blueprint}
 
 * **Blueprint**
 
-  Defina as propriedades para uma página do Blueprint no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas no Live Copy.
+  Defina as propriedades para uma página do Blueprint no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações são propagadas no Live Copy.
 
-### Live Copy  {#live-copy}
+### Live Copy {#live-copy}
 
 * **Live Copy**
 
-  Definir propriedades para uma página de Live Copy no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas do Blueprint.
+  Definir propriedades para uma página de Live Copy no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações são propagadas do Blueprint.
 
 ### Estrutura do site  {#site-structure}
 
-* Forneça links para páginas que oferecem funcionalidade em todo o site, como a **Página de inscrição**, a **Página offline**, entre outras.
+* Forneça links para páginas que oferecem funcionalidade em todo o site, como **Página de inscrição**, **Página offline**, entre outros.
 
 ## Editar as propriedades da página {#editing-page-properties-1}
 
@@ -286,15 +284,15 @@ Ao clicar ou tocar em **Propriedades** para definir as propriedades da página:
    * [Ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modo de seleção](/help/sites-authoring/basic-handling.md#selectionmode)
 
-   As propriedades da página serão exibidas usando as guias adequadas.
+   As propriedades da página são exibidas usando as guias adequadas.
 
 1. Exiba ou edite as propriedades conforme necessário.
 
-1. Em seguida, clique em **Salvar** para salvar as atualizações, e em **Fechar** para retornar ao console.
+1. Depois use **Salvar** para salvar suas atualizações, seguido por **Fechar** para que você possa retornar ao console.
 
 ### Ao editar uma página {#when-editing-a-page}
 
-Ao editar uma página, você pode usar as **Informações da página** para definir as propriedades da página:
+Ao editar uma página, você pode usar **Informações da página** para definir as propriedades da página:
 
 1. Abra a página na qual deseja editar as propriedades.
 
@@ -302,7 +300,7 @@ Ao editar uma página, você pode usar as **Informações da página** para defi
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Selecionar **Abrir propriedades** e uma caixa de diálogo será aberta, permitindo editar as propriedades, classificadas pela guia apropriada. Os seguintes botões também estão disponíveis à direita da barra de ferramentas:
+1. Selecionar **Abrir propriedades** e uma caixa de diálogo é aberta, permitindo editar as propriedades, classificadas pela guia apropriada. Os seguintes botões também estão disponíveis à direita da barra de ferramentas:
 
    * **Cancelar**
    * **Salvar e fechar**
@@ -311,13 +309,13 @@ Ao editar uma página, você pode usar as **Informações da página** para defi
 
 ### No console Sites - Várias páginas {#from-the-sites-console-multiple-pages}
 
-No console **Sites**, é possível selecionar várias páginas e usar **Propriedades de exibição** para exibir e/ou editar as propriedades da página. Isso é conhecido como edição em massa das propriedades da página.
+No **Sites** console, é possível selecionar várias páginas e usar **Propriedades da exibição** para exibir e/ou editar as propriedades da página. Isso é conhecido como edição em massa das propriedades da página.
 
 >[!NOTE]
 >
->A edição em massa de propriedades também está disponível no Assets. É muito semelhante, mas difere em alguns pontos. Consulte [Edição de propriedades de vários ativos](/help/assets/metadata.md) para obter detalhes.
+>A edição em massa de propriedades também está disponível no Assets. É semelhante, mas difere em alguns pontos. Consulte [Edição de propriedades de vários ativos](/help/assets/metadata.md) para obter detalhes.
 >
->Há também a [Editor de itens em massa](/help/sites-administering/bulk-editor.md), que permite pesquisar o conteúdo de várias páginas usando o GQL (Google Query Language) e editar o conteúdo diretamente no editor de itens em massa antes de salvar as alterações nas páginas de origem.
+>Há também a [Editor de itens em massa](/help/sites-administering/bulk-editor.md). Esse editor permite que você pesquise o conteúdo de várias páginas usando o GQL (Google Query Language) e, em seguida, edite o conteúdo diretamente usando o Editor de itens em massa antes de salvar as alterações nas páginas de origem.
 
 Você pode selecionar várias páginas para a edição em massa por meio de vários métodos, incluindo:
 
@@ -326,7 +324,7 @@ Você pode selecionar várias páginas para a edição em massa por meio de vár
 
 ![epp-01](assets/epp-01.png)
 
-Após selecionar as páginas e, em seguida, clicar ou tocar na opção **Propriedades**, as propriedades em massa serão mostradas:
+Após selecionar as páginas e clicar ou tocar na **opção Propriedades**, as propriedades em massa serão exibidas:
 
 ![epp-02](assets/epp-02.png)
 
@@ -335,17 +333,17 @@ Só é possível editar em massa as páginas que:
 * Compartilham o mesmo tipo de recurso
 * Não fazem parte de uma live copy
 
-   * Uma mensagem será mostrada quando as propriedades forem abertas, se qualquer página estiver em uma live copy.
+   * Se alguma das páginas estiver em uma live copy, uma mensagem será exibida quando as propriedades forem abertas.
 
-Depois de entrar na edição de itens em massa é possível:
+Depois de entrar na Edição em massa, você pode fazer o seguinte:
 
 * **Exibir**
 
-  Ao visualizar as Propriedades da página para várias páginas, você pode ver:
+  Ao visualizar Propriedades de página para várias páginas, você pode ver o seguinte:
 
    * Uma lista das páginas afetadas
 
-      * Você pode selecionar/desmarcar, se necessário
+      * Você pode marcar/desmarcar se necessário
 
    * Guias
 
@@ -359,7 +357,7 @@ Depois de entrar na edição de itens em massa é possível:
    * Propriedades comuns com um valor comum
 
       * Apenas as propriedades com um valor comum são mostradas no modo de Exibição.
-      * Quando o campo tem vários valores (por exemplo, Tags), eles só serão exibidos quando *todos* forem comuns. Se apenas alguns forem comuns, eles só serão exibidos durante a edição.
+      * Quando o campo tem vários valores (por exemplo, Tags), eles só são exibidos quando *all* são comuns. Se apenas alguns forem comuns, eles só serão exibidos durante a edição.
 
   Quando não existirem propriedades com um valor comum, uma mensagem será exibida.
 
@@ -369,10 +367,10 @@ Depois de entrar na edição de itens em massa é possível:
 
    * Você pode atualizar os valores nos campos disponíveis.
 
-      * Os novos valores serão aplicados a todas as páginas selecionadas ao escolher **Concluído**.
-      * Quando o campo tem vários valores (por exemplo, tags), você pode anexar um novo valor ou remover um valor comum.
+      * Os novos valores são aplicados a todas as páginas selecionadas ao clicar em **Concluído**.
+      * Quando o campo tem vários valores (por exemplo, tags), é possível anexar um novo valor ou remover um valor comum.
 
-   * Os campos que são comuns, mas têm valores diferentes em várias páginas, serão indicados com um valor especial; como o texto `<Mixed Entries>`.
+   * Os campos que são comuns, mas têm valores diferentes em várias páginas, são indicados com um valor especial; como o texto `<Mixed Entries>`.
 
 >[!NOTE]
 >

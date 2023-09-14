@@ -1,26 +1,22 @@
 ---
 title: Conceder acesso ao editor de regras para grupos de usuários selecionados
-seo-title: Grant rule editor access to select user groups
-description: Conceder acesso restrito ao editor de regras para grupos de usuários selecionados.
-seo-description: Grant restricted access to rule editor to select user groups.
-uuid: efa2570a-20ac-4b43-8a0e-38247f84d02f
+description: Conceda acesso restrito ao editor de regras para grupos de usuários selecionados.
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: ab694a93-00d2-44d7-8ded-68ab2ad50693
 docset: aem65
 feature: Adaptive Forms
 exl-id: a1a2b277-3133-404b-a7fc-337cedddb12c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '378'
 ht-degree: 7%
 
 ---
 
 # Conceder acesso ao editor de regras para grupos de usuários selecionados{#grant-rule-editor-access-to-select-user-groups}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve uma abordagem mais antiga para a criação do Forms adaptável usando componentes de base. </span>
 
 ## Visão geral {#overview}
 
@@ -35,7 +31,7 @@ O AEM Forms permite limitar o acesso do editor de regras aos usuários com base 
 
    ![1-2](assets/1-2.png)
 
-1. Na janela Console da Web, localize e clique em **[!UICONTROL Configuração do canal da Web do formulário adaptável e da comunicação interativa]**. **[!UICONTROL Configuração do canal da Web do formulário adaptável e da comunicação interativa]** será exibida. Não altere nenhum valor e clique em **Salvar**.
+1. Na janela Console da Web, localize e clique em **[!UICONTROL Configuração do canal da Web do formulário adaptável e da comunicação interativa]**. **[!UICONTROL Configuração do canal da Web do formulário adaptável e da comunicação interativa]** é exibida. Não altere nenhum valor e clique em **Salvar**.
 
    Ele cria um arquivo /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config no repositório CRX.
 
@@ -50,7 +46,7 @@ O AEM Forms permite limitar o acesso do editor de regras aos usuários com base 
 
    ![Criar usuário](assets/create_user_new.png)
 
-   Agora, quando um usuário que não faz parte de um grupo de usuários especificado (aqui RuleEditorsUserGroup) toca em um campo, o ícone Editar regra ( ![edit-rules1](assets/edit-rules1.png)) não está disponível para ela na barra de ferramentas dos componentes:
+   Agora, quando um usuário que não faz parte do grupo de usuários especificado (aqui RuleEditorsUserGroup) toca em um campo, o ícone Editar regra ( ![edit-rules1](assets/edit-rules1.png)) não está disponível para eles na barra de ferramentas dos componentes:
 
    ![componentstoolbarwithre](assets/componentstoolbarwithre.png)
 

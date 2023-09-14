@@ -2,10 +2,10 @@
 title: Integração com o Adobe Analytics usando IMS
 description: Saiba mais sobre a integração do AEM com o Adobe Analytics usando o IMS
 exl-id: 2833a6df-ef32-48ab-8395-0f26816f8443
-source-git-commit: 06ed2329840e151083bd238ee3a4d33663463c9c
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '1085'
-ht-degree: 63%
+source-wordcount: '1068'
+ht-degree: 54%
 
 ---
 
@@ -28,17 +28,17 @@ A integração do AEM com o Adobe Analytics por meio da API do Analytics Standar
 
 Antes de iniciar este procedimento:
 
-* O [Suporte da Adobe](https://helpx.adobe.com/br/contact/enterprise-support.ec.html) precisa provisionar sua conta com:
+* O [Suporte da Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) precisa provisionar sua conta com:
 
    * Adobe Console
    * Console do desenvolvedor da Adobe
    * Adobe Analytics e
    * Adobe IMS (Identity Management System)
 
-* O administrador de sistema da sua organização deve usar o Admin Console para adicionar os desenvolvedores necessários em sua organização aos perfis de produto relevantes.
+* O administrador de sistemas da sua organização deve usar o Admin Console para adicionar os desenvolvedores necessários em sua organização aos perfis de produto relevantes.
 
    * Isso fornece aos desenvolvedores específicos permissões para ativar integrações no Console do Adobe Developer.
-   * Para obter mais detalhes, consulte [Gerenciar desenvolvedores](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
+   * Consulte [Gerenciar desenvolvedores](https://helpx.adobe.com/enterprise/using/manage-developers.html).
 
 
 ## Configuração de IMS - Geração de uma Chave pública {#configuring-an-ims-configuration-generating-a-public-key}
@@ -46,8 +46,8 @@ Antes de iniciar este procedimento:
 O primeiro estágio da configuração é criar uma configuração do IMS no AEM e gerar a Chave pública.
 
 1. No AEM, abra o menu **Ferramentas**.
-1. Na seção **Segurança**, selecione **Configurações do Adobe IMS**.
-1. Selecione **Criar** para abrir a **Configuração de conta técnica do Adobe IMS**.
+1. No **Segurança** , selecione **Configurações do Adobe IMS**.
+1. Selecione **Criar** para abrir a **Configuração de contas técnicas do Adobe IMS**.
 1. Usando a lista suspensa em **Configuração na nuvem**, selecione **Adobe Analytics**.
 1. Ative **Criar novo certificado** e insira um novo alias.
 1. Confirme com **Criar certificado**.
@@ -58,21 +58,21 @@ O primeiro estágio da configuração é criar uma configuração do IMS no AEM 
 
    >[!CAUTION]
    >
-   >Mantenha essa configuração aberta. Ela será necessária novamente ao [Concluir a configuração do IMS no AEM](#completing-the-ims-configuration-in-aem).
+   >Mantenha essa configuração aberta; ela será necessária novamente quando [Concluir a configuração do IMS no AEM](#completing-the-ims-configuration-in-aem).
 
    ![Caixa de diálogo Informações para adicionar a chave ao Adobe I/O](assets/integrate-analytics-io-02.png)
 
 ## Configurar o IMS para integração do Adobe Analytics com o AEM {#configuring-ims-for-adobe-analytics-integration-with-aem}
 
-Usando o Console do Desenvolvedor da Adobe, é necessário criar um Projeto (integração) com o Adobe Analytics (para o AEM usar) e, em seguida, atribuir os privilégios necessários.
+Usando o Console do Adobe Developer, crie um Projeto (integração) com o Adobe Analytics (para uso do AEM) e, em seguida, atribua os privilégios necessários.
 
 ### Criação do projeto {#creating-the-project}
 
-Abra o Console do desenvolvedor da Adobe para criar um Projeto com o Adobe Analytics que o AEM usará:
+Para criar um projeto com o Adobe Analytics que o AEM possa usar, abra o Adobe Developer Console:
 
 >[!CAUTION]
 >
->Atualmente, só oferecemos suporte ao console do Adobe Developer **Conta de serviço (JWT)** tipo de credencial.
+>No momento, o Adobe só é compatível com o console do Adobe Developer **Conta de serviço (JWT)** tipo de credencial.
 >
 >Não use o **Servidor OAuth para servidor** tipo de credencial, que terá suporte no futuro.
 
@@ -80,11 +80,11 @@ Abra o Console do desenvolvedor da Adobe para criar um Projeto com o Adobe Analy
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. Quaisquer projetos que você tiver serão mostrados. Selecione **Criar novo projeto** - a localização e utilização dependerão:
+1. Quaisquer projetos que você tiver serão mostrados. Selecionar **Criar novo projeto** - a localização e utilização dependem do seguinte:
 
-   * Se você ainda não tiver um projeto, **Criar novo projeto** estará no centro, na parte inferior.
+   * Se você ainda não tiver um projeto, **Criar novo projeto** estará na parte inferior central.
      ![Criar novo projeto - Primeiro projeto](assets/integration-analytics-io-02.png)
-   * Caso já tenha projetos existentes, eles serão listados e **Criar novo projeto** estará no canto superior direito.
+   * Caso já tenha projetos existentes, eles são listados e **Criar novo projeto** está localizado no canto superior direito.
      ![Criar novo projeto - Vários projetos](assets/integration-analytics-io-03.png)
 
 
@@ -96,11 +96,11 @@ Abra o Console do desenvolvedor da Adobe para criar um Projeto com o Adobe Analy
 
    >[!NOTE]
    >
-   >Se você estiver inscrito no Adobe Analytics, mas não o vir listado, verifique a [Pré-requisitos](#prerequisites).
+   >Se você estiver inscrito no Adobe Analytics, mas não o vir listado, verifique os [Pré-requisitos](#prerequisites).
 
    ![Adicionar uma API](assets/integration-analytics-io-12.png)
 
-1. Selecione **Conta de serviço (JWT)** como o tipo de autenticação e clique em **Próximo**:
+1. Selecionar **Conta de serviço (JWT)** como o tipo de autenticação, depois continue com **Próxima**:
 
    ![Selecione o tipo de autenticação](assets/integration-analytics-io-12a.png)
 
@@ -116,11 +116,11 @@ Abra o Console do desenvolvedor da Adobe para criar um Projeto com o Adobe Analy
 
    ![Selecionar perfis de produto necessários](assets/integration-analytics-io-16.png)
 
-1. A configuração será confirmada.
+1. A configuração é confirmada.
 
 ### Atribuir privilégios à integração {#assigning-privileges-to-the-integration}
 
-Agora, você deve atribuir os privilégios necessários à integração:
+Agora atribua os privilégios necessários à integração:
 
 1. Abra o Adobe **Admin Console**:
 
@@ -137,7 +137,7 @@ No de Projetos do Adobe Developer Console, é possível ver uma lista de todos o
 
 * [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-Selecione uma entrada de projeto específica para mostrar mais detalhes sobre a configuração. Dentre elas:
+Para mostrar mais detalhes sobre a configuração, selecione uma entrada de projeto específica. Dentre elas:
 
 * Visão geral do projeto
 * Insights
@@ -148,7 +148,7 @@ Selecione uma entrada de projeto específica para mostrar mais detalhes sobre a 
 * APIS
    * Por exemplo, Adobe Analytics
 
-Em alguns desses, você precisará concluir a integração do Adobe Analytics no AEM.
+Em alguns desses, você deve concluir a integração do Adobe Analytics no AEM.
 
 ## Concluir a configuração do IMS no AEM {#completing-the-ims-configuration-in-aem}
 
@@ -190,7 +190,7 @@ Para confirmar que a configuração está funcionando como esperado:
 
    ![Configuração do IMS — Verificar integridade](assets/integrate-analytics-io-12.png)
 
-1. Se for bem-sucedido, você verá uma mensagem de confirmação.
+1. Se tiver êxito, você verá uma mensagem de confirmação.
 
 ## Configuração do serviço Adobe Analytics Cloud {#configuring-the-adobe-analytics-cloud-service}
 
@@ -199,15 +199,15 @@ A configuração agora pode ser referenciada para um Cloud Service usar a API do
 1. Abra o **Ferramentas** menu. Em seguida, no prazo de **Cloud Service** , selecione **Cloud Service herdados**.
 1. Role para baixo até **Adobe Analytics** e selecione **Configurar agora**.
 
-   A variável **Criar configuração** será aberta.
+   A variável **Criar configuração** é aberta.
 
-1. Insira um **Título** e, se desejar, um **Nome** (se deixado em branco, será gerado a partir do título).
+1. Insira um **Título** e, se desejar, um **Nome** (se deixado em branco, é gerado a partir do título).
 
    Você também pode selecionar o modelo necessário (se mais de um estiver disponível).
 
 1. Confirme com **Criar**.
 
-   A variável **Editar componente** será aberta.
+   A variável **Editar componente** é aberta.
 
 1. Insira os detalhes na **Configurações do Analytics** guia:
 
@@ -215,12 +215,12 @@ A configuração agora pode ser referenciada para um Cloud Service usar a API do
 
    * **Configuração do IMS**: selecione o nome da configuração IMS
 
-1. Clique em **Conectar-se ao Analytics** para inicializar a conexão com o Adobe Analytics.
+1. Para inicializar a conexão com o Adobe Analytics, clique em **Conectar-se ao Analytics**.
 
    Se a conexão for bem-sucedida, a mensagem **Conexão bem-sucedida** será exibida.
 
 1. Selecionar **OK** na mensagem.
 
-1. Preencha outros parâmetros conforme necessário, seguido por **OK** no diálogo para confirmar a configuração.
+1. Preencha outros parâmetros conforme necessário, seguido por **OK** na caixa de diálogo para que você possa confirmar a configuração.
 
-1. Agora você pode prosseguir para [Adicionar uma estrutura do Analytics](/help/sites-administering/adobeanalytics-connect.md) para configurar parâmetros que serão enviados para o Adobe Analytics.
+1. Agora você pode prosseguir para [Adicionar uma estrutura do Analytics](/help/sites-administering/adobeanalytics-connect.md) para configurar parâmetros enviados para o Adobe Analytics.

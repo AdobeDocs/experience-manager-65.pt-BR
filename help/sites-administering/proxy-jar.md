@@ -1,19 +1,15 @@
 ---
 title: Ferramenta de servidor proxy (proxy.jar)
-seo-title: Proxy Server Tool (proxy.jar)
 description: Saiba mais sobre a Ferramenta de servidor proxy no AEM.
-seo-description: Learn about the Proxy Server Tool in AEM.
-uuid: 2fc1df24-8d5a-4be7-83fa-238ae65591b0
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: ca98dc3c-7056-4cdc-b4d3-23e471da5730
 docset: aem65
 exl-id: 3df50303-5cdd-4df0-abec-80831d2ccef7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1156'
 ht-degree: 0%
 
 ---
@@ -47,7 +43,7 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 ### Opções {#options}
 
 * **q (modo silencioso)** Não grava as solicitações na janela do console. Use-a se não quiser retardar a conexão ou se registrar a saída em um arquivo (consulte a opção -logfile ).
-* **b (Modo binário)** Se estiver procurando combinações específicas de bytes no tráfego, ative o modo binário. A saída conterá a saída hexadecimal e de caracteres.
+* **b (Modo binário)** Se estiver procurando combinações específicas de bytes no tráfego, ative o modo binário. A saída contém as saídas hexadecimal e de caractere.
 * **t (entradas do log de carimbo de data e hora)** Adiciona um carimbo de data/hora a cada saída de log. O carimbo de data e hora é expresso em segundos, portanto, pode não ser adequado para a verificação de solicitações únicas. Use-a para localizar eventos que ocorreram em um horário específico se você usar o servidor proxy por um período mais longo.
 * **logfile &lt;filename> (gravar no arquivo de log)** Grava a conversa cliente-servidor em um arquivo de log. Esse parâmetro também funciona no modo silencioso.
 * **i &lt;numindentions> (adicionar recuo)** Cada conexão ativa é recuada para melhorar a leitura. O padrão é 16 níveis. (Novo no proxy.jar versão 1.16).
@@ -58,7 +54,7 @@ Os cenários a seguir ilustram algumas das finalidades para as quais a Ferrament
 
 **Verificar se há cookies e seus valores**
 
-O exemplo de entrada de log a seguir mostra todos os cookies e seus valores enviados pelo cliente na 6ª conexão aberta desde o início do proxy:
+O exemplo de entrada de log a seguir mostra todos os cookies e seus valores enviados pelo cliente na sexta conexão aberta desde o início do proxy:
 
 ```xml
 C-6-#000635 -> [Cookie: cq3session=7e39bc51-ac72-3f48-88a9-ed80dbac0693; Show=ShowMode; JSESSIONID=68d78874-cabf-9444-84a4-538d43f5064d ]
@@ -86,7 +82,7 @@ Para verificar se o keep-alive funciona:
 
 **Localizando solicitações perdidas**
 
-Se você perder solicitações em uma configuração de servidor complexa, por exemplo, com um firewall e um dispatcher, poderá usar o servidor proxy para descobrir onde a solicitação foi perdida. No caso de um firewall:
+Se você perder solicitações em uma configuração de servidor complexa, por exemplo, com um firewall e um Dispatcher, poderá usar o servidor proxy para descobrir onde a solicitação foi perdida. Se houver um firewall:
 
 1. Iniciar um proxy antes de um firewall
 1. Iniciar outro proxy após um firewall
@@ -98,7 +94,7 @@ Se você tiver solicitações de alteração de vez em quando:
 
 1. Inicie um proxy.jar.
 1. Aguarde ou grave o log de acesso em um arquivo - com cada entrada tendo um carimbo de data e hora.
-1. Quando a solicitação for interrompida, você poderá ver quantas conexões estavam abertas e qual solicitação está causando problemas.
+1. Quando a solicitação começa a travar, você pode ver quantas conexões estavam abertas e qual solicitação está causando problemas.
 
 ## O formato das mensagens de registro {#the-format-of-log-messages}
 
@@ -126,11 +122,11 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-Isso mostra o número de bytes transmitidos entre cliente e servidor na 6ª conexão e na velocidade média.
+Isso mostra o número de bytes transmitidos entre cliente e servidor na sexta conexão e na velocidade média.
 
 ## Um exemplo de saída de log {#an-example-of-log-output}
 
-Vamos revisar um template simples que produz o seguinte código quando solicitado:
+Revise um modelo simples que produz o seguinte código quando solicitado:
 
 ```xml
 <html>
@@ -150,7 +146,7 @@ Se o AEM estiver em execução no localhost:4303, inicie o servidor proxy da seg
 java -jar proxy.jar localhost 4303 4444 -logfile test.log
 ```
 
-Você pode acessar o servidor (`localhost:4303`) sem o servidor proxy, mas se você acessá-lo via `localhost:4444`, o servidor proxy registrará a comunicação. Abra um navegador e acesse uma página criada com o modelo acima. Depois disso, verifique o arquivo de log.
+Você pode acessar o servidor (`localhost:4303`) sem o servidor proxy, mas se você acessá-lo via `localhost:4444`, o servidor proxy registra a comunicação. Abra um navegador e acesse uma página criada com o modelo acima. Depois disso, verifique o arquivo de log.
 
 >[!NOTE]
 >
@@ -181,7 +177,7 @@ O cliente solicita uma conexão keep-alive, para que o servidor possa enviar vá
 C-0-#000369 -> [Connection: Keep-Alive ]
 ```
 
-O servidor proxy é uma boa ferramenta para verificar se os cookies estão configurados corretamente ou não. Aqui, vemos o:
+O servidor proxy é uma boa ferramenta para verificar se os cookies estão configurados corretamente ou não. Aqui, você vê o seguinte:
 
 * cookie cq3session gerado por AEM
 * o cookie show mode switch gerado pelo CFC
@@ -281,4 +277,4 @@ O exemplo acima é comparativamente simples, porque as duas conexões ocorrem se
 * primeiro, o servidor retorna o código HTML
 * em seguida, o navegador solicita a imagem e abre uma nova conexão
 
-Na prática, uma página pode gerar muitas solicitações paralelas para imagens, folhas de estilos, arquivos JavaScript etc. Isso significa que os logs têm entradas sobrepostas de conexões abertas paralelas. Nesse caso, recomendamos usar a opção -i para melhorar a legibilidade.
+Na prática, uma página pode gerar muitas solicitações paralelas para imagens, folhas de estilos, arquivos JavaScript e assim por diante. Isso significa que os logs têm entradas sobrepostas de conexões abertas paralelas. Nesse caso, o Adobe recomenda usar a opção -i para melhorar a legibilidade.

@@ -1,26 +1,22 @@
 ---
 title: Consoles Ferramentas
-seo-title: Tools Consoles
 description: Saiba mais sobre os diferentes consoles Ferramentas em todo o AEM.
-seo-description: Learn about the different tools consoles throughout AEM.
-uuid: 44439f8e-7c47-4ea9-afe1-a9a23489a20e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 34%
+source-wordcount: '594'
+ht-degree: 30%
 
 ---
 
 # Consoles Ferramentas{#tools-consoles}
 
-Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especializadas que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo. Atualmente, existem dois tipos de **Ferramentas** console dependente da interface do usuário que você está usando:
+A variável **Ferramentas** Os consoles fornecem acesso a várias ferramentas especializadas que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo. Atualmente, existem dois tipos de **Ferramentas** console dependente da interface do usuário que você está usando:
 
 * [Ferramentas - Interface otimizada para toque](#tools-touch-optimized-ui)
 * [Ferramentas - Interface clássica](#tools-classic-ui)
@@ -47,7 +43,7 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   </tr>
   <tr>
    <td> </td>
-   <td>CRXDE LITE</td>
+   <td>CRXDE Lite</td>
   </tr>
   <tr>
    <td> </td>
@@ -159,7 +155,7 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   </tr>
   <tr>
    <td> </td>
-   <td>Verificador de links externos<br /> </td>
+   <td>Linkchecker externo<br /> </td>
   </tr>
   <tr>
    <td>Ativos</td>
@@ -374,11 +370,11 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   </tr>
   <tr>
    <td>Configurações do ClientContext<br /> </td>
-   <td>O Client Context representa uma coleção de dados do usuário montada dinamicamente. As configurações padrão e da Experience Cloud são mantidas aqui.<br /> </td>
+   <td>O Client Context representa uma coleção de dados do usuário montada dinamicamente. As configurações padrão e Experience Cloud são mantidas aqui.<br /> </td>
   </tr>
   <tr>
    <td>Configurações dos serviços em nuvem<br /> </td>
-   <td>Contém configurações relacionadas à integração com a Adobe Marketing Cloud.</td>
+   <td>Contém configurações relacionadas à integração com a Adobe Experience Cloud.</td>
   </tr>
   <tr>
    <td>Configurações da nuvem<br /> </td>
@@ -390,11 +386,11 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   </tr>
   <tr>
    <td>DAM </td>
-   <td>Fornece acesso a várias opções.</td>
+   <td>Acesso a várias opções.</td>
   </tr>
   <tr>
    <td>Painéis</td>
-   <td>Permite criar painéis de relatórios; eles fornecem uma maneira personalizável de definir páginas que exibem dados consolidados.</td>
+   <td>Crie painéis de relatórios; eles fornecem uma maneira personalizável de definir páginas que exibem dados consolidados.</td>
   </tr>
   <tr>
    <td>Documentação personalizada</td>
@@ -406,11 +402,11 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   </tr>
   <tr>
    <td>Envio de formulários</td>
-   <td>Contém a lista de envios de formulários recebidos.</td>
+   <td>A lista de envios de formulário recebidos.</td>
   </tr>
   <tr>
    <td>Importadores </td>
-   <td>Fornece acesso a várias opções.</td>
+   <td>Acesso a várias opções.</td>
   </tr>
   <tr>
    <td>Linkchecker externo</td>
@@ -426,11 +422,11 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   </tr>
   <tr>
    <td>Replicação - Agentes de replicação</td>
-   <td>Usado para replicar dados do autor para publicar ao publicar páginas, ou com replicação reversa para retornar os comentários do usuário do ambiente de publicação para o autor.</td>
+   <td>Usado para replicar dados da instância do autor para publicação ao publicar páginas, ou com replicação reversa para retornar os comentários do usuário do ambiente de publicação para o autor.</td>
   </tr>
   <tr>
    <td>Relatórios</td>
-   <td>O AEM fornece uma variedade de relatórios personalizados, permite criar relatórios personalizados e/ou desenvolver os seus próprios relatórios.</td>
+   <td>O AEM fornece uma variedade de relatórios personalizados, permitindo que você crie relatórios personalizados ou desenvolva os seus próprios.</td>
   </tr>
   <tr>
    <td>Scaffolding da página padrão </td>
@@ -438,7 +434,7 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   </tr>
   <tr>
    <td>Segurança - Configuração de autoatendimento </td>
-   <td>Permite configurar os emails que os usuários recebem automaticamente quando criam uma conta ou redefinem uma senha e confirmar uma senha que foi redefinida.</td>
+   <td>Configure os emails que os usuários recebem automaticamente ao criar uma conta ou redefinir uma senha e para confirmar uma senha que foi redefinida.</td>
   </tr>
   <tr>
    <td>Segmentação</td>
@@ -454,7 +450,7 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   </tr>
   <tr>
    <td>Controle de versão - Limpar versões</td>
-   <td>Permite limpar as versões de página conforme necessário.</td>
+   <td>Remova as versões da página conforme necessário.</td>
   </tr>
   <tr>
    <td>Fluxo de trabalho</td>

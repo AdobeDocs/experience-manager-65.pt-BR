@@ -1,19 +1,15 @@
 ---
 title: Exibição principal para gerenciamento de permissões
-seo-title: Principal View for Permissions Management
 description: Saiba mais sobre a nova interface de toque que facilita o gerenciamento de permissões.
-seo-description: Learn about the new Touch UI interface that facilitates permissions management.
-uuid: 16c5889a-60dd-4b66-bbc4-74fbdb5fc32f
 contentOwner: sarchiz
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
-discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '764'
 ht-degree: 1%
 
 ---
@@ -29,7 +25,7 @@ O AEM 6.5 apresenta o Gerenciamento de permissões para usuários e grupos. A fu
 
 ### Acesso à interface {#accessing-the-ui}
 
-O novo gerenciamento de permissões com base na interface é acessado por meio do cartão Permissões, em Segurança, conforme mostrado abaixo:
+O novo gerenciamento de permissões com base em interface é acessado por meio do cartão Permissões, em Segurança, conforme mostrado abaixo:
 
 ![Interface do usuário de gerenciamento de permissões](assets/screen_shot_2019-03-17at63333pm.png)
 
@@ -55,15 +51,15 @@ Clicar no nome mostra as permissões atribuídas à direita. O painel de permiss
 
 ### Adicionando uma nova Entrada de Controle de Acesso para um Principal {#adding-new-access-control-entry-for-a-principal}
 
-Para adicionar novas permissões, adicione uma nova Entrada de controle de acesso clicando no botão Adicionar ACE.
+Novas permissões podem ser adicionadas adicionando uma Entrada de controle de acesso. Basta clicar no botão Adicionar ACE.
 
 ![Adicionar nova ACL para um Principal](assets/patru.png)
 
-Isso exibe a janela mostrada abaixo. A próxima etapa é escolher um caminho em que a permissão precise ser configurada.
+Isso exibe a janela mostrada abaixo. A próxima etapa é escolher um caminho em que a permissão deve ser configurada.
 
 ![Configurar caminho de permissões](assets/cinci-1.png)
 
-Aqui selecionamos um caminho para o qual queremos configurar uma permissão para **dam-users**:
+Aqui, um caminho é selecionado onde você pode configurar uma permissão para **dam-users**:
 
 ![Exemplo de configuração para dam-users](assets/sase-1.png)
 
@@ -83,7 +79,7 @@ Depois que a lista de privilégios for selecionada, o usuário poderá escolher 
 
 ### Uso de restrições {#using-restrictions}
 
-Além da lista de privilégios e do Tipo de permissão em um determinado caminho, essa tela também permite adicionar restrições para controle de acesso refinado, conforme mostrado abaixo:
+Além da lista de privilégios e do Tipo de permissão em um determinado caminho, essa tela também permite adicionar restrições para controle de acesso refinado, como mostrado abaixo:
 
 ![Adicionar restrições](assets/image2019-3-21_1-4-14.png)
 
@@ -101,7 +97,7 @@ O novo ACE é refletido na Lista de controle de acesso conforme mostrado abaixo.
 
 As Entradas de controle de acesso podem ser editadas selecionando um principal e escolhendo o ACE que você deseja editar.
 
-Por exemplo, aqui podemos editar a entrada abaixo para **dam-users** clicando no ícone de lápis à direita:
+Por exemplo, aqui você pode editar a entrada abaixo para **dam-users** clicando no ícone de lápis à direita:
 
 ![Adicionar restrição](assets/image2019-3-21_0-35-39.png)
 
@@ -109,7 +105,7 @@ A tela de edição é exibida com ACEs configuradas pré-selecionadas, que podem
 
 ![Editar entrada](assets/noua-1.png)
 
-Aqui, adicionamos a variável `addChildNodes` privilégio para **dam-users** no caminho fornecido.
+Aqui, o `addChildNodes` o privilégio foi adicionado para **dam-users** no caminho fornecido.
 
 ![Adicionar privilégio](assets/image2019-3-21_0-45-35.png)
 
@@ -125,7 +121,7 @@ As Entradas de Controle de Acesso podem ser excluídas para remover todas as per
 
 ### Combinações de Privilégios da Interface Clássica {#classic-ui-privilege-combinations}
 
-Observe que a nova interface de permissões usa explicitamente o conjunto básico de privilégios em vez de combinações predefinidas que não refletiam verdadeiramente os privilégios subjacentes exatos que foram concedidos.
+A nova interface de permissões usa explicitamente o conjunto básico de privilégios em vez de combinações predefinidas que não refletem realmente os privilégios subjacentes exatos que foram concedidos.
 
 Causou confusão sobre o que exatamente está sendo configurado. A tabela a seguir lista o mapeamento entre as combinações de privilégios da interface clássica para os privilégios reais que as constituem:
 

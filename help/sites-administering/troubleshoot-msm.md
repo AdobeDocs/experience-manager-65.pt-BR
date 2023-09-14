@@ -4,10 +4,10 @@ description: Descubra como solucionar os problemas mais comuns relacionados ao M
 feature: Multi Site Manager
 role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 100%
+source-wordcount: '761'
+ht-degree: 59%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 Se você estiver enfrentando o que acredita ser um comportamento incorreto ou um erro no MSM, antes de começar e solucionar problemas detalhados, certifique-se de:
 
 * Verificar as [Perguntas frequentes sobre o MSM](#faq), dado que os seus problemas ou dúvidas podem já ter sido abordados lá.
-* Verificar o [Artigo de práticas recomendadas do MSM](msm-best-practices.md), dado que algumas dicas são oferecidas lá, juntamente com esclarecimentos sobre vários equívocos.
+* Verifique a [Artigo de práticas recomendadas do MSM](msm-best-practices.md) como várias dicas são oferecidas lá, juntamente com esclarecimentos sobre alguns equívocos.
 
 ## Encontrar informações avançadas sobre seu blueprint e status da Live Copy {#advanced-info}
 
@@ -43,7 +43,7 @@ Os servlets anteriores retornavam informações computadas com base nos nós e m
 
 * Tipo de mixin `cq:LiveSync`
    * Isso é configurado em nós `jcr:content` e define páginas raiz da Live Copy.
-   * Essas páginas terão um nó filho `cq:LiveSyncConfig` do tipo `cq:LiveCopy`, que conterá informações básicas e obrigatórias sobre a Live Copy por meio das seguintes propriedades:
+   * Essas páginas têm um `cq:LiveSyncConfig` nó filho do tipo `cq:LiveCopy` que contêm informações básicas e obrigatórias sobre a Live Copy por meio das seguintes propriedades:
       * `cq:master` aponta para a página de blueprint da Live Copy.
       * `cq:rolloutConfigs` indica as configurações de implementação ativas aplicadas à Live Copy.
       * `cq:isDeep` é verdadeiro se as páginas secundárias desta página raiz da Live Copy estiverem incluídas na Live Copy.
@@ -81,14 +81,14 @@ Como alternativa, você pode:
 
 ### Por que vejo páginas da Live Copy com o sufixo “_msm_moved”? {#moved-pages}
 
-Se uma página de blueprint for implantada, ela atualizará sua página da Live Copy ou criará uma nova página da Live Copy se ainda não existir (por exemplo, quando ela for implantada pela primeira vez ou a página da Live Copy for excluída manualmente).
+Se uma página de blueprint for implantada, ela atualizará sua página da Live Copy ou criará uma nova página da Live Copy se ainda não existir. Por exemplo, quando ele é implantado pela primeira vez ou a página da Live Copy é excluída manualmente.
 
-Nesse último caso, no entanto, se uma página sem uma propriedade `cq:LiveRelationship` existir com o mesmo nome, ela será renomeada de acordo, antes que a página da Live Copy seja criada.
+Neste último caso, no entanto, se uma página sem `cq:LiveRelationship` existe com o mesmo nome, essa página é renomeada antes da página da Live Copy ser criada.
 
-Por padrão, a implantação espera uma página vinculada da Live Copy, para a qual as atualizações dos blueprints serão implantadas ou nenhuma página, quando uma página da Live Copy for criada.
+Por padrão, a implantação espera uma página vinculada da Live Copy, para a qual as atualizações dos blueprints são implantadas. Ou não espera nenhuma página quando uma página de Live Copy é criada.
 
 Se uma página “independente” for encontrada, o MSM optará por renomear esta página e criar uma página separada e vinculada da Live Copy.
 
-Essa página independente, em uma subárvore da Live Copy, geralmente é o resultado de uma operação **Desconectar**, ou a antiga página da Live Copy foi excluída manualmente por um autor e depois recriada com o mesmo nome.
+Essa página independente, em uma subárvore da Live Copy, geralmente é o resultado de uma **Desanexar** ou a antiga página da Live Copy foi excluída manualmente por um autor e depois recriada com o mesmo nome.
 
-Para evitar isso, use o recurso **Suspender** da Live Copy, em vez de **Desconectar**. Veja mais detalhes sobre a ação **Desconectar** [neste artigo.](msm-livecopy.md)
+Para evitar isso, use a Live Copy **Suspender** recurso em vez de **Desanexar**. Mais detalhes sobre o **Desanexar** a ação pode ser encontrada em [neste artigo.](msm-livecopy.md)

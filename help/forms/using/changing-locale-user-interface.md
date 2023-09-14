@@ -1,19 +1,15 @@
 ---
 title: Alterando o local da interface do usuário do espaço de trabalho do AEM Forms
-seo-title: Changing the locale of AEM Forms workspace user interface
 description: Como modificar o espaço de trabalho do AEM Forms para localizar texto, categorias recolhidas, filas e processos e o seletor de datas na interface.
-seo-description: How to modify the AEM Forms workspace to localize text, collapsed categories, queues, and processes, and the date picker on the interface.
-uuid: c89ff150-a36e-45cc-99a6-8768dbe58eab
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 89f9d666-28e2-4201-8467-ae90693ca5d2
 docset: aem65
 exl-id: 9a069486-02a8-4058-adfb-4e0e49d8c0cf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 
 O espaço de trabalho do AEM Forms oferece suporte imediato para os idiomas inglês, francês, alemão e japonês. Ela também permite localizar a interface do usuário do AEM Forms Workspace em qualquer outro idioma.
 
-Para traduzir a interface do usuário do AEM Forms Workspace para o idioma de sua escolha:
+Para localizar a interface do usuário do espaço de trabalho do AEM Forms no idioma de sua escolha:
 
 * Localize o texto do espaço de trabalho do AEM Forms.
 * Localizar categorias, filas e processos recolhidos.
@@ -40,7 +36,7 @@ Execute as seguintes etapas para adicionar suporte a um idioma *Novo* e o códig
 
 1. Efetue logon no CRXDE Lite.
 O URL padrão do CRXDE Lite é `https://'[server]:[port]'/lc/crx/de/index.jsp`.
-1. Navegue até o local `apps/ws/locales` e criar uma nova pasta `nw.`
+1. Navegue até o local `apps/ws/locales` e criar uma pasta `nw.`
 1. Copie o arquivo `translation.json`do local `/apps/ws/locales/en-US` para o local `/apps/ws/locales/nw` .
 1. Navegue até `/apps/ws/locales/nw` e aberto `translation.json` para edição. Faça alterações específicas da localidade no arquivo translation.json.
 
@@ -50,9 +46,9 @@ O URL padrão do CRXDE Lite é `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 
 ## Localização de categorias, filas e processos recolhidos {#localizing-collapsed-categories-queues-and-processes}
 
-O AEM Forms workspace usa imagens para exibir cabeçalhos de categorias, filas e processos. É necessário um pacote de desenvolvimento para localizar esses cabeçalhos. Para obter informações detalhadas sobre como criar um pacote de desenvolvimento, consulte [Criação do código do espaço de trabalho do AEM Forms.](introduction-customizing-html-workspace.md#building-html-workspace-code)
+O AEM Forms workspace usa imagens para exibir cabeçalhos de categorias, filas e processos. Você precisa de um pacote de desenvolvimento para localizar esses cabeçalhos. Para obter informações detalhadas sobre como criar um pacote de desenvolvimento, consulte [Criação do código do espaço de trabalho do AEM Forms.](introduction-customizing-html-workspace.md#building-html-workspace-code)
 
-Nas etapas a seguir, presume-se que os novos arquivos de imagem localizados sejam *Categories_nw.png*, *Fila_nw.png*, e *Processes_nw.png*. A largura recomendada das imagens é 19px.
+Nas etapas a seguir, presume-se que os novos arquivos de imagem localizados sejam *Categories_nw.png*, *Fila_nw.png*, e *Processes_nw.png*. A largura recomendada das imagens deve ser definida como 19 pixels.
 
 >[!NOTE]
 >
@@ -60,7 +56,7 @@ Nas etapas a seguir, presume-se que os novos arquivos de imagem localizados seja
 
 ![recolhimento_panels_image](assets/collapsing_panels_image.png)
 
-Execute as seguintes etapas para localizar as imagens:
+Para localizar as imagens, execute as seguintes etapas:
 
 1. Usando um cliente WebDAV, coloque os arquivos de imagem na */apps/ws/images* pasta.
 1. Navegue até */apps/ws/css*. Abertura *newStyle.css* para editar e adicionar as seguintes entradas:
@@ -109,7 +105,7 @@ Execute as seguintes etapas para localizar as imagens:
 
 ## Seletor de Data de Localização {#localizing-date-picker}
 
-É necessário um pacote de desenvolvimento para localizar o *datepicker* API. Para obter informações detalhadas sobre como criar um pacote de desenvolvimento, consulte [Criação do código do espaço de trabalho do AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code).
+Você precisa de um pacote de desenvolvimento para localizar o *datepicker* API. Para obter informações detalhadas sobre como criar um pacote de desenvolvimento, consulte [Criação do código do espaço de trabalho do AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code).
 
 1. Baixe e extraia o [Pacote de interface do usuário jQuery](https://jqueryui.com/download/all/), navegue até *&lt;extracted jquery=&quot;&quot; ui=&quot;&quot; package=&quot;&quot;>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
 1. Copie o arquivo jquery.ui.datepicker-nw.js do código de localidade nw para apps/ws/js/libs/jqueryui e faça alterações específicas de localidade no arquivo.
