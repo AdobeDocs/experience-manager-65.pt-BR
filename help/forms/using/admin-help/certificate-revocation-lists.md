@@ -1,23 +1,19 @@
 ---
-title: Gerenciando listas de revogação de certificados
-seo-title: Managing certificate revocationlists
+title: Gerenciar listas de revogação de certificados
 description: Saiba como gerenciar listas de certificados revogados.
-seo-description: Learn how to manage certificate revocation lists.
-uuid: d8c4b64c-a273-4f5d-8b71-f6ea455c0f0a
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9744cc2d-5e6b-4341-9270-43d479bdca04
 exl-id: 01e966f6-a650-4565-80d1-e2297f25da5c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '153'
 ht-degree: 1%
 
 ---
 
-# Gerenciando listas de revogação de certificados{#managing-certificate-revocationlists}
+# Gerenciar listas de revogação de certificados{#managing-certificate-revocationlists}
 
 Usando o Gerenciamento de Repositório de Confiança, você pode importar, editar e excluir listas de certificados revogados (CRLs). Listas de certificados revogados codificadas em Base64 e DER são suportadas.
 
@@ -30,7 +26,7 @@ Usando o Gerenciamento de Repositório de Confiança, você pode importar, edita
 ## Exportar uma CRL {#export-a-crl}
 
 1. No console de administração, clique em Configurações > Gerenciamento de armazenamento de confiança > Listas de revogação de certificados.
-1. Clique no nome do alias da CRL a ser exportada e clique em Exportar.
+1. Clique no nome do alias da CRL, para poder exportá-la, e clique em Exportar.
 1. Siga as instruções para exportar a CRL. As CRLs são exportadas na codificação Base64.
 1. Clique em OK.
 

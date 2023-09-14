@@ -1,18 +1,14 @@
 ---
-title: Considerações ao executar o Administration Console
-seo-title: Considerations when running AdministrationConsole
+title: Considerações ao executar o Console de administração
 description: Este documento lista alguns pontos a serem considerados ao executar o Administration Console.
-seo-description: This document lists a few points to consider when running Administration Console.
-uuid: e260f187-4728-44f3-a5c1-7388ff3965c4
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 525c4afc-e109-4546-b78c-1efee63edc43
 exl-id: e15dae6f-d30d-4770-a5ca-34f522a01d31
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---
@@ -22,11 +18,11 @@ ht-degree: 0%
 Estes são alguns aspectos a serem considerados ao executar o Administration Console:
 
 * Se você acessar o console de administração usando o URL `https://[hostname]:'port'/adminui`, o nome de host especificado não pode conter caracteres sublinhados. Caso contrário, os links para algumas áreas do console de administração podem não funcionar corretamente.
-* Se você executar o console de administração no Windows Explorer em um sistema operacional japonês, poderá encontrar os seguintes problemas:
+* Se você executar um console de administração no Windows Explorer em um sistema operacional japonês, poderá encontrar os seguintes problemas:
 
    * Clicar em um link o retorna à página de logon em vez do link esperado.
    * Clicar em um link exibe um erro de permissão.
 
-   A prática recomendada é executar o console de administração de outro navegador, como o Mozilla Firefox, para garantir que nenhum link falhe.
+  A prática recomendada é executar o console de administração a partir de outro navegador, como o Mozilla Firefox, para garantir que nenhum link falhe.
 
 * Não use caracteres de barra invertida () ao realizar pesquisas no console de administração.
