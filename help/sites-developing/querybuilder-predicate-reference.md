@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
 workflow-type: tm+mt
-source-wordcount: '2343'
+source-wordcount: '2347'
 ht-degree: 3%
 
 ---
@@ -88,7 +88,7 @@ Ele pode ser usado com qualquer valor para verificar fragmentos de conteúdo.
 
 ### dateComparison {#datecomparison}
 
-Compara duas propriedades JCR DATE entre si. É possível testar se eles são iguais, desiguais, maiores ou maiores ou iguais.
+Compara duas propriedades JCR DATE entre si. Você pode testar se eles são iguais, desiguais, maiores ou maiores ou iguais.
 
 Este é um predicado somente de filtragem e não pode usar um índice de pesquisa.
 
@@ -255,7 +255,7 @@ Verifica se um nó é um ativo principal do DAM e não um subativo. Basicamente,
 
 Este é um predicado somente de filtragem e não pode usar um índice de pesquisa.
 
-Oferece suporte à extração de facetas. Fornece dois buckets para ativos principais e secundários.
+Suporta extração de facetas e fornece dois buckets para ativos principais e secundários.
 
 #### Propriedades {#properties-9}
 
@@ -307,7 +307,7 @@ Suporta extração de facetas da mesma forma que o predicado daterange.
 
 ### orderby {#orderby}
 
-Permite que o resultado seja classificado. Se a ordenação por várias propriedades for necessária, esse predicado deverá ser adicionado várias vezes usando o prefixo numérico, como `1_orderby=first`, `2_oderby=second`.
+Permite que os resultados sejam classificados. Se a ordenação por várias propriedades for necessária, esse predicado deverá ser adicionado várias vezes usando o prefixo numérico, como `1_orderby=first`, `2_oderby=second`.
 
 #### Propriedades {#properties-13}
 
@@ -333,7 +333,7 @@ Não oferece suporte à extração de facetas.
 
 * **caminho**
 
-  Padrão de caminho; dependendo do exato, a subárvore inteira corresponde (como anexar `//*` no xpath, mas observe que isso não inclui o caminho base) (exato=falso, padrão), ou apenas uma correspondência de caminho exato, que pode incluir curingas ( `*`); se self for definido, a subárvore inteira, incluindo o nó base, será pesquisada.
+  Padrão de caminho. Dependendo do exato, a subárvore inteira corresponde (como anexar `//*` no xpath, mas observe que isso não inclui o caminho base) (exato=falso, padrão), ou apenas uma correspondência de caminho exato, que pode incluir curingas ( `*`); se self for definido, a subárvore inteira, incluindo o nó base, será pesquisada.
 
 * **exato**
 
@@ -383,7 +383,7 @@ Oferece suporte à extração de facetas. Fornece intervalos para cada valor de 
 
 Corresponde uma propriedade JCR a um intervalo. Isso se aplica a propriedades com tipos lineares, como `LONG`, `DOUBLE`, e `DECIMAL`. Para `DATE`, consulte o predicado de intervalo de datas que otimizou a entrada de formato de data.
 
-Você pode definir um limite inferior e um limite superior ou apenas um deles. A operação (por exemplo, &quot;menor que&quot; ou &quot;menor ou igual a&quot;) também pode ser especificada para limites inferior e superior individualmente.
+Você pode definir um limite inferior e um limite superior ou apenas um deles. A operação (por exemplo, &quot;menor que&quot; ou &quot;menor ou igual a&quot;) também pode ser especificada para limites inferior e superior, individualmente.
 
 Não oferece suporte à extração de facetas.
 
@@ -451,11 +451,11 @@ O nome &quot;raiz&quot; nunca é usado em uma consulta, ele está implícito.
 
 * **p.offset**
 
-  Número que indica o início da página de resultados, ou seja, quantos itens devem ser ignorados.
+  O número que indica o início da página de resultados, ou seja, quantos itens devem ser ignorados.
 
 * **p.limit**
 
-  Número que indica o tamanho da página.
+  O número que indica o tamanho da página.
 
 * **p.guessTotal**
 
@@ -479,7 +479,7 @@ O nome &quot;raiz&quot; nunca é usado em uma consulta, ele está implícito.
 
    * **seletivo**:
 
-     Somente propriedades especificadas em `p.properties`, que é uma lista de caminhos relativos separados por espaços (use &quot;+&quot; em URLs); se o caminho relativo tiver uma profundidade > 1, eles serão representados como objetos filho; a propriedade especial jcr:path inclui o caminho da ocorrência
+     Somente propriedades especificadas em `p.properties`, que é uma lista de caminhos relativos separada por espaços (use &quot;+&quot; em URLs); se o caminho relativo tiver uma profundidade > 1, eles serão representados como objetos filho; a propriedade especial jcr:path inclui o caminho da ocorrência
 
 ### savedquery {#savedquery}
 
@@ -553,7 +553,7 @@ Oferece suporte à extração de facetas. Fornece compartimentos para cada tag e
 
 ### tagsearch {#tagsearch}
 
-Pesquisa conteúdo marcado com uma ou mais tags, especificando palavras-chave. Isso primeiro pesquisará tags que contenham essas palavras-chave em seus títulos e, em seguida, restringirá o resultado a apenas itens marcados com eles.
+Pesquisa conteúdo marcado com uma ou mais tags, especificando palavras-chave. Primeiro, busca tags que contenham essas palavras-chave em seus títulos, depois restringe o resultado a apenas itens marcados com eles.
 
 Não oferece suporte à extração de facetas.
 

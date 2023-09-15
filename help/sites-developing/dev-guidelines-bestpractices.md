@@ -1,18 +1,14 @@
 ---
 title: Desenvolvimento do AEM - diretrizes e práticas recomendadas
-seo-title: AEM Development - Guidelines and Best Practices
 description: Diretrizes e práticas recomendadas para o desenvolvimento de AEM
-seo-description: Guidelines and best practices for developing on AEM
-uuid: a67de085-4441-4a1d-bec3-2f27892a67ff
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: b4cf0ffc-973a-473b-80c8-7f530d111435
 exl-id: 8eef7e4d-a6f2-4b87-a995-0761447283c6
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1085'
 ht-degree: 0%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 ## Diretrizes para o uso de modelos e componentes {#guidelines-for-using-templates-and-components}
 
-Componentes e modelos do AEM formam um kit de ferramentas muito eficiente. Eles podem ser usados pelos desenvolvedores para fornecer aos usuários empresariais, editores e administradores de sites a funcionalidade de adaptar seus sites às necessidades comerciais em constante mudança (agilidade do conteúdo), além de manter o layout uniforme dos sites (proteção da marca).
+Os componentes e modelos do Adobe Experience Manager (AEM) compõem um poderoso kit de ferramentas. Eles podem ser usados pelos desenvolvedores para fornecer aos usuários empresariais, editores e administradores do site a funcionalidade de adaptar seus sites às necessidades comerciais em constante mudança (agilidade do conteúdo). Tudo isso mantendo o layout uniforme dos sites (proteção da marca).
 
 Um desafio típico para uma pessoa responsável por um site, ou conjunto de sites (por exemplo, em uma filial de uma empresa global), é introduzir um novo tipo de apresentação de conteúdo em seus sites.
 
@@ -29,20 +25,20 @@ Suponhamos que seja necessário adicionar uma página de lista de notícias aos 
 
 A maneira recomendada de abordar esse desafio seria:
 
-* Reutilize um template existente para criar um novo tipo de página. O modelo define grosseiramente a estrutura da página (elementos de navegação, painéis, etc.), que é ajustada ainda mais pelo seu design (CSS, gráficos).
+* Reutilizar um modelo existente para criar um novo tipo de página. O modelo define grosseiramente a estrutura da página (elementos de navegação, painéis, etc.), que é ajustada ainda mais pelo seu design (CSS, gráficos).
 * Use o sistema de parágrafo (parsys/iparsys) nas novas páginas.
 * Defina o direito de acesso ao modo Design dos sistemas de parágrafo, para que somente pessoas autorizadas (geralmente o administrador) possam alterá-las.
-* Defina os componentes permitidos no sistema de parágrafo fornecido para que os editores possam colocar os componentes necessários na página. Em nosso caso, pode ser um componente de lista, que pode percorrer uma subárvore de páginas e extrair as informações de acordo com regras predefinidas.
+* Defina os componentes permitidos no sistema de parágrafo fornecido para que os editores possam colocar os componentes necessários na página. Nesse caso, pode ser um componente de lista, que pode percorrer uma subárvore de páginas e extrair as informações de acordo com regras predefinidas.
 * Os editores adicionam e configuram os componentes permitidos nas páginas pelas quais são responsáveis para fornecer a funcionalidade solicitada (informações) à empresa.
 
-Isso ilustra como essa abordagem permite que os usuários e administradores contribuintes do site respondam rapidamente às necessidades comerciais, sem exigir o envolvimento de equipes de desenvolvimento. Métodos alternativos, como a criação de um novo modelo, geralmente são um exercício dispendioso, exigindo um processo de gerenciamento de alterações e o envolvimento da equipe de desenvolvimento. Isso torna todo o processo muito mais longo e caro.
+Isso ilustra como essa abordagem permite que os usuários e administradores contribuintes do site respondam rapidamente às necessidades comerciais, sem exigir o envolvimento de equipes de desenvolvimento. Métodos alternativos, como a criação de um modelo, geralmente são um exercício dispendioso, exigindo um processo de gerenciamento de alterações e o envolvimento da equipe de desenvolvimento. Isso torna todo o processo mais demorado e caro.
 
 Por conseguinte, os criadores de sistemas baseados no AEM devem utilizar:
 
 * modelos e controle de acesso ao design de sistema de parágrafo para uniformidade e proteção da marca
 * sistema de parágrafo, incluindo suas opções de configuração para obter flexibilidade.
 
-As seguintes regras gerais para desenvolvedores fazem sentido na maioria dos projetos comuns:
+As seguintes regras gerais para desenvolvedores fazem sentido nos projetos mais comuns:
 
 * Mantenha o número de modelos baixo - tão baixo quanto o número de estruturas de página fundamentalmente diferentes nos sites.
 * Forneça a flexibilidade e os recursos de configuração necessários para seus componentes personalizados.
@@ -64,7 +60,7 @@ Por exemplo:
 
   Isso envolvia a sobreposição de uma definição de componente:
 
-   * Criar uma nova pasta de componentes no `/apps/<website-name>/components/<MyComponent>` copiando um componente existente:
+   * Criar uma pasta de componentes no `/apps/<website-name>/components/<MyComponent>` copiando um componente existente:
 
       * Por exemplo, para personalizar a cópia do componente de Texto:
 
@@ -75,16 +71,16 @@ Por exemplo:
 
   Esse caso envolve a sobreposição de um servlet:
 
-   * No repositório, copie o(s) script(s) padrão:
+   * No repositório, copie um ou mais scripts padrão:
 
       * de `/libs/sling/servlet/errorhandler/`
       * para `/apps/sling/servlet/errorhandler/`
 
 >[!CAUTION]
 >
->Você **não deve** alterar qualquer item no `/libs` caminho.
+>**Não** alterar qualquer item no `/libs` caminho.
 >
->Isso ocorre porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode ser substituído ao aplicar um hotfix ou pacote de recursos).
+>O motivo é porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode ser substituído ao aplicar um hotfix ou pacote de recursos).
 >
 >Para configuração e outras alterações:
 >
@@ -96,11 +92,11 @@ Por exemplo:
 As consultas JCR são uma ferramenta poderosa quando empregadas corretamente. Eles são adequados para:
 
 * consultas reais de usuários finais, como pesquisas de texto completo sobre conteúdo.
-* ocasiões em que o conteúdo estruturado precisa ser encontrado em todo o repositório.
+* ocasiões em que o conteúdo estruturado deve ser encontrado em todo o repositório.
 
-  Nesses casos, verifique se as consultas são executadas somente quando absolutamente necessário, por exemplo, na ativação de componentes ou na invalidação de cache (em vez de, por exemplo, Etapas de fluxos de trabalho, Manipuladores de eventos que acionam modificações de conteúdo, Filtros etc.).
+  Nesses casos, certifique-se de que as consultas só sejam executadas quando necessário. Por exemplo, na ativação de componentes ou na invalidação do cache (em vez de, por exemplo, Etapas de fluxos de trabalho, Manipuladores de eventos que acionam modificações de conteúdo e Filtros).
 
-As consultas JCR nunca devem ser usadas para solicitações de renderização puras. Por exemplo, consultas JCR não são apropriadas para
+Nunca use consultas JCR para solicitações de renderização puras. Por exemplo, consultas JCR não são apropriadas para o seguinte:
 
 * navegação de renderização
 * criação de uma visão geral &quot;os 10 itens de notícias mais recentes&quot;
@@ -121,7 +117,7 @@ Para renderizar conteúdo, use o acesso de navegação à árvore de conteúdo e
 
 ### Sessões JCR (Repositório) {#jcr-repository-sessions}
 
-Você deve usar a sessão do usuário, não a sessão administrativa. Isso significa que você deve usar:
+Use a sessão do usuário, não a sessão administrativa. Isso significa que você deve usar:
 
 ```java
 slingRequest.getResourceResolver().adaptTo(Session.class);
@@ -139,7 +135,7 @@ Além disso, um firewall de aplicativo web, como [mod_security para Apache](http
 >
 >O código de exemplo fornecido com o AEM pode não proteger contra esses ataques e geralmente depende da filtragem de solicitações por um firewall de aplicativo da Web.
 
-A folha de características da API XSS contém informações que você precisa saber para usar a API XSS e tornar um aplicativo AEM mais seguro. Você pode baixá-lo aqui:
+A folha de características da API XSS contém informações que você deve saber para usar a API XSS e tornar um aplicativo AEM mais seguro. Você pode baixá-lo aqui:
 
 A folha de características do XSSAPI.
 
@@ -152,7 +148,7 @@ Quanto a qualquer aplicativo da Internet, certifique-se de que, ao transportar i
 * o tráfego está protegido por SSL
 * O POST HTTP é usado se aplicável
 
-Isso se aplica a informações confidenciais para o sistema (como configuração ou acesso administrativo), bem como informações confidenciais para seus usuários (como seus detalhes pessoais)
+Isso se aplica às informações confidenciais para o sistema (como configuração ou acesso administrativo) e às informações confidenciais para seus usuários (como seus detalhes pessoais)
 
 ## Tarefas de desenvolvimento distintas {#distinct-development-tasks}
 
@@ -162,8 +158,8 @@ As páginas de erro podem ser personalizadas para AEM. Isso é aconselhável par
 
 Consulte [Personalização de páginas de erro mostradas pelo Manipulador de erros](/help/sites-developing/customizing-errorhandler-pages.md) para obter detalhes completos.
 
-### Abrir arquivos no processo Java {#open-files-in-the-java-process}
+### Abrir arquivos no processo Java™ {#open-files-in-the-java-process}
 
-Como o AEM pode acessar um grande número de arquivos, recomenda-se que o número de [abrir arquivos para um processo Java](/help/sites-deploying/configuring.md#open-files-in-the-java-process) ser configurados explicitamente para AEM.
+Como o AEM pode acessar muitos arquivos, é recomendável que o número de [abrir arquivos para um processo Java™](/help/sites-deploying/configuring.md#open-files-in-the-java-process) ser configurados explicitamente para AEM.
 
-Para minimizar esse problema, o desenvolvimento deve garantir que qualquer arquivo aberto seja fechado corretamente assim que (de forma significativa) possível.
+Para minimizar esse problema, o desenvolvimento deve garantir que qualquer arquivo aberto seja fechado corretamente quando for possível (de forma significativa).

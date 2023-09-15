@@ -1,35 +1,31 @@
 ---
 title: Limpeza de versão
-seo-title: Version Purging
 description: Este artigo descreve as opções disponíveis para limpeza de versão.
-seo-description: This article describes the available options for version purging.
-uuid: a9fa25c7-e60e-4665-a726-99af9aac8f70
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: fb4d7337-7b94-430b-80d2-f1754f823c2b
 docset: aem65
 feature: Configuring
 exl-id: 6f0b1951-bdda-475f-b6c0-bc18de082b7c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '717'
 ht-degree: 1%
 
 ---
 
 # Limpeza de versão{#version-purging}
 
-Em uma instalação padrão, o AEM cria uma nova versão de uma página ou nó quando você ativa uma página após atualizar o conteúdo.
+Em uma instalação padrão, o Adobe Experience Manager (AEM) cria uma versão de uma página ou nó quando você ativa uma página após atualizar o conteúdo.
 
 >[!NOTE]
 >
->Se nenhuma alteração de conteúdo for feita, você verá a mensagem informando que a página foi ativada, mas nenhuma nova versão será criada
+>Se não houver alterações de conteúdo, você verá a mensagem informando que a página foi ativada, mas nenhuma nova versão será criada.
 
 Você pode criar versões adicionais mediante solicitação usando o **Controle de versão** guia do sidekick. Essas versões são armazenadas no repositório e podem ser restauradas, se necessário.
 
-Essas versões nunca são removidas, portanto, o tamanho do repositório aumentará com o tempo e, portanto, precisará ser gerenciado.
+Essas versões nunca são removidas, portanto, o tamanho do repositório cresce com o tempo e, portanto, deve ser gerenciado.
 
 O AEM é enviado com vários mecanismos para ajudar você a gerenciar seu repositório:
 
@@ -49,7 +45,7 @@ Quando a idade de uma versão exceder esse valor, ela será removida do reposit�
 
 >[!CAUTION]
 >
->Para otimizar o tamanho do repositório, você deve executar a tarefa de limpeza de versão com frequência. A tarefa deve ser agendada fora do horário comercial quando houver uma quantidade limitada de tráfego.
+>Para otimizar o tamanho do repositório, execute a tarefa de limpeza de versão frequentemente. A tarefa deve ser agendada fora do horário comercial quando houver uma quantidade limitada de tráfego.
 
 ## Gerenciador de versão {#version-manager}
 
@@ -67,19 +63,19 @@ Uma versão é criada somente se a ativação ocorrer em um caminho contido em `
 
 * `versionmanager.ivPaths`(String[], padrão: `{"/"}`) Especifica os caminhos nos quais as versões são criadas implicitamente na ativação se `versionmanager.createVersionOnActivation` está definido como verdadeiro.
 
-* `versionmanager.purgingEnabled` (Booleano, padrão: falso) Define se a limpeza será ativada ou não quando novas versões forem criadas.
+* `versionmanager.purgingEnabled` (Booleano, padrão: falso) Define se a limpeza será ativada quando novas versões forem criadas.
 
 * `versionmanager.purgePaths` (String[], padrão: {&quot;/content&quot;}) Especifica em quais caminhos as versões serão removidas quando novas versões forem criadas.
 
-* `versionmanager.maxAgeDays` (int, default: 30) Na limpeza da versão, qualquer versão anterior ao valor configurado será removida. Se o valor for menor que 1, a limpeza não será executada com base na idade da versão.
+* `versionmanager.maxAgeDays` (int, padrão: 30) Na limpeza da versão, qualquer versão anterior ao valor configurado é removida. Se o valor for menor que 1, a limpeza não será executada com base na idade da versão.
 
-* `versionmanager.maxNumberVersions` (int, padrão 5) Na limpeza da versão, qualquer versão anterior à n-ésima versão mais recente será removida. Se o valor for menor que 1, a limpeza não será executada com base no número de versões.
+* `versionmanager.maxNumberVersions` (int, padrão 5) Na limpeza de versão, qualquer versão anterior à n-ésima versão mais recente é removida. Se o valor for menor que 1, a limpeza não será executada com base no número de versões.
 
-* `versionmanager.minNumberVersions` (int, padrão 0) O número mínimo de versões que serão mantidas, independentemente da idade. Se o valor for definido como um valor menor que 1, nenhum número mínimo de versões será retido.
+* `versionmanager.minNumberVersions` (int, padrão 0) O número mínimo de versões que são mantidas independentemente da idade. Se o valor for definido como um valor menor que 1, nenhum número mínimo de versões será retido.
 
 >[!NOTE]
 >
->Não é recomendável manter um grande número de versões no repositório. Portanto, ao configurar a operação de limpeza da versão, tenha cuidado para não excluir muitas versões da limpeza; caso contrário, o tamanho do repositório não será otimizado corretamente. Se você mantiver um grande número de versões devido a requisitos comerciais, entre em contato com o suporte da Adobe para encontrar maneiras alternativas de otimizar o tamanho do repositório.
+>Não é recomendável manter muitas versões no repositório. Portanto, ao configurar a operação de limpeza da versão, lembre-se de não excluir muitas versões da limpeza; caso contrário, o tamanho do repositório não será otimizado corretamente. Se você mantiver um grande número de versões devido a requisitos comerciais, entre em contato com o suporte da Adobe para encontrar maneiras alternativas de otimizar o tamanho do repositório.
 
 ### Combinando Opções de Retenção {#combining-retention-options}
 
@@ -95,12 +91,12 @@ Por exemplo, ao definir o número máximo de versões a serem mantidas E a vers�
 
 * Com:
 
-   * 10 versões feitas nos últimos 60 dias
-   * 3 dessas versões criadas nos últimos 30 dias
+   * Dez versões foram feitas nos últimos 60 dias
+   * Três dessas versões foram criadas nos últimos 30 dias
 
-* Significará que:
+* Isso significa que:
 
-   * As últimas 3 versões serão mantidas
+   * As três últimas versões são mantidas
 
 Por exemplo, ao definir o número mínimo E máximo de versões a serem retidas E a versão mais antiga a ser retida:
 
@@ -112,11 +108,11 @@ Por exemplo, ao definir o número mínimo E máximo de versões a serem retidas 
 
 * Com:
 
-   * 5 versões feitas há 60 dias
+   * Cinco versões foram feitas há 60 dias
 
-* Significará que:
+* Isso significa que:
 
-   * 3 versões serão mantidas
+   * Três versões são mantidas
 
 ## Ferramenta Limpar versões {#purge-versions-tool}
 
