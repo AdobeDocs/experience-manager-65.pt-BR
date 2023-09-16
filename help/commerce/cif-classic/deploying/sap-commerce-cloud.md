@@ -5,7 +5,7 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: ecbd0097-c407-4581-bab2-4729a71df4a3
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 2%
@@ -95,7 +95,7 @@ O uso do servidor hybris requer uma licença hybris separada.
 
 >[!NOTE]
 >
-Para desenvolvedores [Documentação da API](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) O também está disponível para download.
+Para desenvolvedores, [Documentação da API](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) O também está disponível para download.
 
 ### Baixe e crie seu servidor hybris {#download-and-build-your-hybris-server}
 
