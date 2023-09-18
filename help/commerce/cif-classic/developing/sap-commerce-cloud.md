@@ -1,14 +1,14 @@
 ---
 title: Desenvolvimento com Commerce Cloud SAP
-description: A estrutura de integração do SAP Commerce Cloud inclui uma camada de integração com uma API
+description: A estrutura de integração do SAP Commerce Cloud inclui uma camada de integração com uma API.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '2296'
+source-wordcount: '2286'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 A estrutura de integração inclui uma camada de integração com uma API. Isso permite:
 
-* conectar um sistema de comércio eletrônico e extrair dados do produto no AEM
+* conectar um sistema de comércio eletrônico e extrair dados do produto no Adobe Experience Manager (AEM)
 
 * criar componentes do AEM para recursos de comércio, independentemente do mecanismo de comércio eletrônico específico
 
@@ -103,7 +103,7 @@ A extensão hybris da Estrutura de integração de comércio eletrônico foi atu
 
 As configurações padrão no código são ajustadas para Hybris 5.
 
-Para desenvolver para Hybris 4, é necessário o seguinte:
+Para desenvolver o Hybris 4, é necessário o seguinte:
 
 * Ao invocar o maven, adicione o seguinte argumento de linha de comando ao comando
 
@@ -115,7 +115,7 @@ Para desenvolver para Hybris 4, é necessário o seguinte:
 
    * Desative o suporte ao Hybris 5 para o serviço Default Response Parser.
 
-   * Certifique-se de que o serviço Manipulador de Autenticação Básica do Hybris tenha uma classificação de serviço inferior ao serviço Manipulador OAuth do Hybris.
+   * Certifique-se de que o serviço Manipulador de autenticação básica do Hybris tenha uma classificação de serviço inferior ao serviço Manipulador OAuth do Hybris.
 
 ### Tratamento de sessão {#session-handling}
 
@@ -123,7 +123,7 @@ o hybris usa uma sessão de usuário para armazenar informações, como o carrin
 
 * Na primeira solicitação, nenhum cookie é definido na solicitação do comprador; portanto, uma solicitação é enviada para a instância hybris para criar uma sessão.
 
-* Os cookies de sessão são extraídos da resposta e codificados em um novo cookie (por exemplo, `hybris-session-rest`) e definido na resposta ao comprador. A codificação em um novo cookie é necessária, pois o cookie original é válido apenas para um determinado caminho e, caso contrário, não seria enviado de volta do navegador em solicitações subsequentes. As informações de caminho também devem ser adicionadas ao valor do cookie.
+* Os cookies de sessão são extraídos da resposta e codificados em um novo cookie (por exemplo, `hybris-session-rest`) e definido na resposta ao comprador. A codificação em um novo cookie é necessária, pois o cookie original é válido apenas para um determinado caminho e, caso contrário, não seria enviado de volta do navegador em solicitações subsequentes. As informações de caminho devem ser adicionadas ao valor do cookie.
 
 * Em solicitações subsequentes, os cookies são decodificados do `hybris-session-<*xxx*>` e definido no cliente HTTP que é usado para solicitar dados do hybris.
 
@@ -145,16 +145,16 @@ o hybris usa uma sessão de usuário para armazenar informações, como o carrin
 
   `CommerceSession.getUserContext()`
 
-* Também possui o **pagamento** processando conexão
+* É proprietário do **pagamento** processando conexão
 
-* Também possui o **preenchimento** conexão
+* É proprietário do **preenchimento** conexão
 
 ### Sincronização e publicação do produto {#product-synchronization-and-publishing}
 
 Os dados do produto mantidos em híbridos devem estar disponíveis no AEM. O seguinte mecanismo foi implementado:
 
 * Uma carga inicial de IDs é fornecida pelo hybris como um feed. Pode haver atualizações neste feed.
-* o hybris fornecerá informações de atualização por meio de um feed (que o AEM pesquisa).
+* a hybris fornece informações de atualização por meio de um feed (que o AEM pesquisa).
 * Quando o AEM está usando dados do produto, ele envia solicitações de volta para o hybris dos dados atuais (solicitação de obtenção condicional usando a data da última modificação).
 * No Hybris, é possível especificar o conteúdo do feed de maneira declarativa.
 * O mapeamento da estrutura do feed para o modelo de conteúdo de AEM ocorre no adaptador do feed no lado do AEM.
@@ -197,7 +197,7 @@ Os dados do produto mantidos em híbridos devem estar disponíveis no AEM. O seg
 
 * As páginas de produtos ativadas devem acessar o da **Online** versão (d).
 
-* A instância de publicação do AEM requer acesso a híbridos para a recuperação de produtos e dados personalizados (d).
+* A instância de publicação do AEM requer acesso a hybris para a recuperação de produtos e dados personalizados (d).
 
 ### Arquitetura {#architecture}
 
@@ -209,7 +209,7 @@ No entanto, nem todas as propriedades são eixos de variantes. As variações ta
 
 Cada produto e/ou variante é representado por um recurso e, portanto, mapeia 1:1 para um nó de repositório. É um corolário que um produto e/ou variante específica possa ser identificado exclusivamente por seu caminho.
 
-O recurso produto/variante nem sempre mantém os dados reais do produto. Pode ser uma representação dos dados mantidos em outro sistema (como hibris). Por exemplo, descrições de produtos, preços e assim por diante não são armazenadas no AEM, mas recuperadas em tempo real do mecanismo de comércio eletrônico.
+O recurso produto/variante nem sempre mantém os dados reais do produto. Pode ser uma representação dos dados mantidos em outro sistema (como hibris). Por exemplo, as descrições e os preços dos produtos não são armazenados no AEM, mas recuperados em tempo real do mecanismo de comércio eletrônico.
 
 Qualquer recurso do produto pode ser representado por um `Product API`. A maioria das chamadas na API do produto é específica da variação (embora as variações possam herdar valores compartilhados de um ancestral), mas também há chamadas que listam o conjunto de variações ( `getVariantAxes()`, `getVariants()`e assim por diante).
 
@@ -426,7 +426,7 @@ public class AxisFilter implements VariantFilter {
 * Armazenamento
 
    * No caso hybris, o servidor hybris é o proprietário do carrinho.
-   * No caso genérico de AEM, os carrinhos de são armazenados no [ClientContext](/help/sites-administering/client-context.md).
+   * No caso genérico do AEM, os carrinhos de são armazenados no [ClientContext](/help/sites-administering/client-context.md).
 
 **Personalização**
 
@@ -507,12 +507,12 @@ A variável `CommerceSession` O é proprietário dos três elementos:
 
 * A variável `CommerceSession` também é proprietária da conexão de processamento de pagamento.
 
-* Os implementadores precisam adicionar chamadas específicas (ao serviço de processamento de pagamento escolhido) à `CommerceSession` execução.
+* Os implementadores devem adicionar chamadas específicas (ao serviço de processamento de pagamentos escolhido) à `CommerceSession` execução.
 
 **Atendimento de Pedidos**
 
 * A variável `CommerceSession` também é proprietária da conexão de preenchimento.
-* Os implementadores precisarão adicionar chamadas específicas (ao serviço de processamento de pagamentos escolhido) à `CommerceSession` execução.
+* Os implementadores devem adicionar chamadas específicas (para o serviço de processamento de pagamento escolhido) à `CommerceSession` execução.
 
 ### Definição de pesquisa {#search-definition}
 
@@ -524,7 +524,7 @@ Seguindo o modelo padrão de API de serviço, o projeto de comércio eletrônico
 >
 >No entanto, a API de pesquisa é genérica e pode ser implementada por cada CommerceService individualmente.
 
-O projeto de comércio eletrônico contém um componente de pesquisa padrão, localizado em:
+O projeto de comércio eletrônico contém um componente de pesquisa padrão em:
 
 `/libs/commerce/components/search`
 
@@ -538,11 +538,11 @@ Há várias classes genéricas/auxiliares fornecidas pelo projeto principal:
 
 1. `CommerceQuery`
 
-   É usado para descrever uma consulta de pesquisa (contém informações sobre o texto da consulta, página atual, tamanho da página, classificação e aspectos selecionados). Todos os serviços de comércio eletrônico que implementam a API de pesquisa recebem instâncias dessa classe para realizar sua pesquisa. A `CommerceQuery` pode ser instanciado a partir de um objeto de solicitação ( `HttpServletRequest`).
+   Descreve uma consulta de pesquisa (contém informações sobre o texto da consulta, página atual, tamanho da página, classificação e aspectos selecionados). Todos os serviços de comércio eletrônico que implementam a API de pesquisa recebem instâncias dessa classe para realizar sua pesquisa. A `CommerceQuery` pode ser instanciado a partir de um objeto de solicitação ( `HttpServletRequest`).
 
 1. `FacetParamHelper`
 
-   É uma classe de utilitário que fornece um método estático - `toParams` - que é utilizado para gerar `GET` strings de parâmetro de uma lista de facetas e um valor alternado. Isso é útil no lado da interface, em que é necessário exibir um hiperlink para cada valor de cada faceta, de modo que, quando o usuário clicar no hiperlink, o respectivo valor seja alternado (ou seja, se ele foi selecionado, ele é removido da consulta, caso contrário, é adicionado). Isso cuida de toda a lógica de lidar com facetas de vários/valores únicos, substituir valores e assim por diante.
+   É uma classe de utilitário que fornece um método estático - `toParams` - que é utilizado para gerar `GET` strings de parâmetro de uma lista de facetas e um valor alternado. Isso é útil no lado da interface do usuário, em que você deve exibir um hiperlink para cada valor de cada faceta, de modo que, quando o usuário clicar no hiperlink, o respectivo valor seja alternado. Ou seja, se ela foi selecionada, é removida da query; caso contrário, é adicionada. Isso cuida de toda a lógica de lidar com facetas de vários/valores únicos, substituir valores e assim por diante.
 
 O ponto de entrada para a API de pesquisa é o `CommerceService#search` método que retorna um `CommerceResult` objeto. Consulte a [Documentação da API](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) para obter mais informações sobre esse tópico.
 
@@ -566,7 +566,7 @@ Um front-end AEM pode ser posicionado na frente de uma implementação hybris ex
 
    * Ao fazer logon no hybris, se o usuário AEM não existir:
 
-      * criar um novo usuário hybris com uma senha aleatória criptograficamente
+      * criar um usuário hybris com uma senha aleatória criptograficamente
       * armazene o nome de usuário hybris no diretório de usuário do AEM
 
    * Consulte: `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
@@ -576,7 +576,7 @@ Um front-end AEM pode ser posicionado na frente de uma implementação hybris ex
    * Ao fazer logon no AEM, se o sistema reconhecer o usuário:
 
       * tentativa de fazer logon no hybris com o nome de usuário/pwd fornecido
-      * se for bem-sucedido, criar o novo usuário no AEM com a mesma senha (salt específico de AEM resultará em hash específico de AEM)
+      * se for bem-sucedido, criar o usuário no AEM com a mesma senha (salt específico de AEM resulta em hash específico de AEM)
 
    * O algoritmo acima é implementado em um Sling `AuthenticationInfoPostProcessor`
 

@@ -1,38 +1,34 @@
 ---
 title: Personalizar o layout e o posicionamento das mensagens de erro de um formulário adaptável
-seo-title: Customize layout and positioning of error messages of an adaptive form
 description: É possível personalizar o layout e o posicionamento das mensagens de erro de um adaptável para.
-seo-description: You can customize layout and positioning of the error messages of an adaptive for.
-uuid: 6d3490f6-c867-44c9-a527-55f6d7221f99
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 136ac7e3-9d1f-4d58-bd4f-9dbe09eeafee
 docset: aem65
 exl-id: 5cb3ee55-f411-4692-84f7-89bf6ade729d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
 
 # Personalizar o layout e o posicionamento das mensagens de erro de um formulário adaptável{#customize-layout-and-positioning-of-error-messages-of-an-adaptive-form}
 
-É possível personalizar o layout e o posicionamento das mensagens de erro de um formulário adaptável. Você pode executar as seguintes personalizações:
+Você pode personalizar o layout e o posicionamento das mensagens de erro de um formulário adaptável. Você pode executar as seguintes personalizações:
 
-* Personalizar a localização e o layout da legenda de um campo sem fazer qualquer alteração nas propriedades CSS correspondentes
+* Personalizar a localização e o layout da legenda de um campo sem alterar as propriedades CSS correspondentes
 * Personalizar a posição das mensagens de erro em linha
 * Personalizar conteúdo do indicador de ajuda dinâmica
-* Personalize a posição dos componentes do campo (legenda, widget, descrição curta, descrição longa e indicador de ajuda) sem fazer qualquer alteração nas propriedades CSS correspondentes
+* Personalize a posição dos componentes do campo (legenda, widget, descrição curta, descrição longa e indicadores de ajuda) sem alterar as propriedades CSS correspondentes
 
 ## Personalizar o layout dos campos {#customize-layout-of-fields}
 
-É possível personalizar o layout de um único campo ou de todos os campos para alterar a posição da legenda e das mensagens de erro. Execute as seguintes etapas para aplicar um layout personalizado a um campo:
+É possível personalizar o layout de um único campo ou de todos os campos para alterar a posição da legenda e das mensagens de erro.
+
+Para aplicar um layout personalizado a um campo, faça o seguinte:
 
 ### Personalizar o layout de um único campo {#customize-layout-of-a-single-field}
-
-Execute as seguintes etapas para aplicar um layout personalizado a um único campo:
 
 1. Abra o formulário no **Estilo** modo. Para abrir o formulário no modo de estilo, na barra de ferramentas da página, toque em ![tela suspensa](assets/canvas-drop-down.png) > **Estilo**.
 1. Na barra lateral, em **Objetos de formulário**, selecione o campo e toque no botão editar ![botão editar](assets/edit-button.png).
@@ -52,7 +48,7 @@ Crie um tema usando o Editor de temas para personalizar o layout de todos os cam
 
 ## Criar um layout de campo personalizado {#create-a-custom-field-layout}
 
-1. Abra o CRXDE lite. O URL padrão é https://&#39;[server]:[porta]&quot;/crx/de.
+1. Abra o CRXDE Lite. O URL padrão é https://&#39;[server]:[porta]&quot;/crx/de.
 1. Copie um layout de campo do nó /libs/fd/af/layouts/field (Por exemplo, defaultFieldLayout) para o nó /apps (Por exemplo, /apps/af-field-layout).
 1. Renomeie o nó copiado e o arquivo defaultFieldLayout.jsp. Por exemplo, errorOnRight.jsp.
 

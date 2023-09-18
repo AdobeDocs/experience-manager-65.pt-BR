@@ -1,20 +1,16 @@
 ---
 title: Console de selos
-seo-title: Badges Console
-description: O console Selos das comunidades permite adicionar selos personalizados que podem ser exibidos para membros quando obtidos (premiados) ou quando assumem uma função específica na comunidade (atribuídos)
-seo-description: The Communities Badges console lets you add custom badges that can be displayed for members when earned (awarded) or when they take on a specific role in the community (assigned)
-uuid: 7103b133-ef3f-47d6-a2dc-4e6ff92e8fed
+description: O console Selos das comunidades permite adicionar selos personalizados que podem ser exibidos para membros quando obtidos (concedidos) ou quando assumem uma função específica na comunidade (atribuídos)
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 role: Admin
 exl-id: 50ed9ec4-ff04-4f9d-aefb-0837542a9455
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '283'
 ht-degree: 4%
 
 ---
@@ -23,11 +19,11 @@ ht-degree: 4%
 
 ## Sobre selos {#about-badges}
 
-O console Selos de comunidades oferece a capacidade de adicionar selos personalizados que podem ser exibidos para um membro quando ganho (premiado) ou quando ele assume uma função específica na comunidade (atribuído).
+O console Selos das comunidades permite adicionar selos personalizados que podem ser exibidos para um membro quando ganho (premiado) ou quando ele assume uma função específica na comunidade (atribuído).
 
 ### Visibilidade do selo {#badge-visibility}
 
-Atualmente, as medalhas que um membro da comunidade ganha ou é atribuído aparecerão junto com seu nome e avatar nos seguintes locais:
+Atualmente, as medalhas que um membro da comunidade ganha, ou é atribuído, aparecem junto com seu nome e avatar nos seguintes locais:
 
 * Perfis
 * [Fóruns](/help/communities/forum.md)
@@ -45,7 +41,7 @@ Esse console exibe os emblemas disponíveis no momento e a partir dos quais novo
 
 ## Criar selo {#create-badge}
 
-Um selo é criado fazendo upload de uma imagem adequadamente pequena (72 dpi com uma altura variando de 26 a 32 pixels) e fornecendo um nome. A imagem do selo é armazenada no repositório em `/libs/settings/community/badging/images` e é replicado automaticamente para o ambiente de publicação.
+Um símbolo é criado ao fazer upload de uma imagem adequadamente pequena (72 dpi com uma altura variando de 26 a 32 pixels) e fornecer um nome. A imagem do selo é armazenada no repositório em `/libs/settings/community/badging/images` e é replicado automaticamente para o ambiente de publicação.
 
 Se o ambiente de publicação for um farm de editores, será necessário configurar [sincronização de usuário](/help/communities/sync.md).
 
@@ -53,19 +49,19 @@ Se o ambiente de publicação for um farm de editores, será necessário configu
 
 * **Fazer upload de imagem**
 
-   (*Obrigatório*) Uma imagem de selo com tamanho recomendado de 32 x 32 pixels a 72 dpi no formato JPEG ou PNG.
+  (*Obrigatório*) Uma imagem de selo com um tamanho recomendado de 32 x 32 pixels a 72 dpi no formato JPEG ou PNG.
 
 * **Nome**
 
-   (*Obrigatório*) O nome do selo. É o padrão `Display Name` e o nome do nó de repositório. Se a variável `Name` não é um nome de nó de repositório válido, ele será modificado.
+  (*Obrigatório*) O nome do selo. É o padrão `Display Name` e o nome do nó de repositório. Se a variável `Name` não é um nome de nó de repositório válido, ele foi modificado.
 
 * **Nome de exibição**
 
-   (*Opcional*) O nome a ser exibido para o selo na interface do usuário. O padrão é o texto inalterado inserido para o `Name`.
+  (*Opcional*) O nome a ser exibido para o selo na interface. O padrão é o texto inalterado inserido para o `Name`.
 
 * **Descrição**
 
-   (*Opcional*) Uma descrição para o selo.
+  (*Opcional*) Uma descrição para o selo.
 
 ## Informações adicionais {#additional-information}
 

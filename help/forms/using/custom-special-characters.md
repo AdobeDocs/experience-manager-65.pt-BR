@@ -1,19 +1,15 @@
 ---
 title: Caracteres especiais personalizados no Gerenciamento de correspondência
-seo-title: Custom special characters in Correspondence Management
 description: Saiba como adicionar caracteres especiais personalizados no Gerenciamento de correspondência.
-seo-description: Learn how to add custom special characters in Correspondence Management.
-uuid: a1890f6d-8e0c-471f-a9bd-861acf1f17e6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 9f26565c-a7ba-4e9e-bf77-a95eb8e351f2
 docset: aem65
 feature: Correspondence Management
 exl-id: 3e978c3e-12f2-4dc6-801d-8ab4c5df6700
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '652'
 ht-degree: 1%
 
 ---
@@ -44,7 +40,7 @@ O administrador pode adicionar suporte para caracteres especiais adicionais/pers
 Use as seguintes etapas para adicionar suporte a caracteres especiais personalizados:
 
 1. Ir para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
-1. Na pasta de aplicativos, crie uma pasta chamada **[!UICONTROL caracteres especiais]** com caminho/estrutura semelhante à pasta caracteres especiais (localizada na pasta textEditorConfig em libs):
+1. Na pasta de aplicativos, crie uma pasta chamada **[!UICONTROL caracteres especiais]** com caminho/estrutura semelhante à pasta caracteres especiais (na pasta textEditorConfig em libs):
 
    1. Clique com o botão direito do mouse no **caracteres especiais** no seguinte caminho e selecione **Sobrepor nó**:
 
@@ -60,14 +56,15 @@ Use as seguintes etapas para adicionar suporte a caracteres especiais personaliz
 
       >[!NOTE]
       >
-      >Não faça alterações na ramificação /libs. As alterações feitas podem ser perdidas, pois essa ramificação pode sofrer alterações sempre que você:
+      >Não altere a ramificação /libs. As alterações feitas podem ser perdidas, pois essa ramificação pode mudar sempre que você:
       >
       >
       >
       >    * Atualizar na sua instância
       >    * Aplicar um hot fix
       >    * Instalar um pacote de recursos
-
+      >
+      >
 
    1. Clique em **OK** e clique em **Salvar tudo**. A pasta de caracteres especiais é criada no caminho especificado.
 
@@ -86,7 +83,7 @@ Use as seguintes etapas para adicionar suporte a caracteres especiais personaliz
 
 1. Atualize a página Editor de Texto\Criar Interface de Correspondência. O nó adicionado é o último na lista de caracteres especiais na interface do usuário.
 1. Clique em **Salvar tudo**.
-1. Faça as alterações nos caracteres especiais conforme necessário:
+1. Alterações nos caracteres especiais conforme necessário:
 
 <table>
  <tbody>
@@ -100,7 +97,7 @@ Use as seguintes etapas para adicionar suporte a caracteres especiais personaliz
     <ol>
      <li>Adicione um nó secundário em "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters" com propriedades obrigatórias.</li>
      <li>Clique em Salvar tudo</li>
-     <li>Atualize o Editor de texto\Criar interface de correspondência para ver as alterações.</li>
+     <li>Atualize o Editor de texto\Criar interface de correspondência para que você possa ver as alterações.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -110,7 +107,7 @@ Use as seguintes etapas para adicionar suporte a caracteres especiais personaliz
      <li>Sobreponha o nó a ser atualizado conforme explicado acima e verifique as tags e classes.</li>
      <li>Altere quaisquer valores, como caption, value, endValue e multipleCaption. </li>
      <li>Clique em Salvar tudo. </li>
-     <li>Atualize o Editor de texto\Criar interface de correspondência para ver as alterações.</li>
+     <li>Atualize o Editor de texto\Criar interface de correspondência para que você possa ver as alterações.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -120,7 +117,7 @@ Use as seguintes etapas para adicionar suporte a caracteres especiais personaliz
      <li>Sobrepor o nó a ser oculto em "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters"</li>
      <li>Adicione a propriedade sling:hideResource (Booleano) ao nó (em aplicativos) para ser oculta. </li>
      <li>Clique em Salvar tudo. </li>
-     <li>Atualize o Editor de texto\Criar interface de correspondência para ver as alterações.<br /> </li>
+     <li>Atualize o Editor de texto\Criar interface de correspondência para que você possa ver as alterações.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -128,9 +125,9 @@ Use as seguintes etapas para adicionar suporte a caracteres especiais personaliz
    <td>
     <ol>
      <li>Adicione a propriedade "sling:hideChildren (String ou String[])" a "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters". </li>
-     <li>Adicione nomes de nó (caracteres especiais a serem ocultados) como valores da propriedade "sling:hideChildren". </li>
+     <li>Adicione nomes de nó (caracteres especiais a serem ocultados) como valores para a propriedade "sling:hideChildren". </li>
      <li>Clique em Salvar tudo. </li>
-     <li>Atualize o Editor de texto\Criar interface de correspondência para ver as alterações.<br /> </li>
+     <li>Atualize o Editor de texto\Criar interface de correspondência para que você possa ver as alterações.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -139,9 +136,9 @@ Use as seguintes etapas para adicionar suporte a caracteres especiais personaliz
     <ol>
      <li>Adicione um nó secundário em "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters" com propriedades obrigatórias. </li>
      <li>Adicione a propriedade "sling:orderBefore (String)" ao nó filho recém-criado. </li>
-     <li>Adicione o nome do nó como valor antes do qual o caractere especial recém-adicionado deve ser exibido. </li>
+     <li>Adicione o nome do nó como o valor antes do qual o caractere especial recém-adicionado deve ser exibido. </li>
      <li>Clique em Salvar tudo. </li>
-     <li>Atualize o Editor de texto\Criar interface de correspondência para ver as alterações.<br /> </li>
+     <li>Atualize o Editor de texto\Criar interface de correspondência para que você possa ver as alterações.<br /> </li>
     </ol> </td>
   </tr>
  </tbody>

@@ -2,9 +2,9 @@
 title: Compactar e descompactar arquivos usando um AEM Forms no JEE Custom DSC
 description: Saiba como compactar e descompactar arquivos usando um AEM Forms no DSC personalizado JEE
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
-source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,13 @@ Editor Java™, como [Eclipse](https://www.eclipse.org/) ou [Netbeans IDE](https
 
 Intermediário
 
-O AEM Forms no JEE permite que os desenvolvedores criem o DSC (Contêiner de serviço do documento) personalizado para criar recursos prontos para uso aprimorados. A criação desses componentes pode ser conectada ao ambiente de tempo de execução do AEM Forms no JEE e serve ao propósito pretendido. Este artigo explica como criar um serviço ZIP personalizado que pode ser usado para compactar uma lista de arquivos em um arquivo .zip e descompactar um .zip em uma lista de documentos.
+O AEM Forms no JEE permite que os desenvolvedores criem o ASC (Acrobat Services Container) personalizado para criar recursos prontos para uso aprimorados. A criação desses componentes pode ser conectada ao ambiente de tempo de execução do AEM Forms no JEE e serve ao propósito pretendido. Este artigo explica como criar um serviço ZIP personalizado que pode ser usado para compactar uma lista de arquivos em um arquivo .zip e descompactar um .zip em uma lista de documentos.
 
-## Criação de um componente DSC personalizado {#create-custom-dsc-component}
+## Criação de um componente ASC personalizado {#create-custom-dsc-component}
 
-Crie um componente DSC personalizado com duas operações de serviço para compactar e descompactar a lista de documentos. Este componente usa o pacote java.util.zip para compactação e descompactação. Siga as etapas abaixo para criar um componente personalizado:
+Criar um componente ASC personalizado com duas operações de serviço para que você possa compactar e descompactar uma lista de documentos. Este componente usa o pacote java.util.zip para compactação e descompactação.
+
+Para criar um componente ASC personalizado:
 
 1. Adicionar o arquivo adobe-livecycle-client.jar à biblioteca
 1. Adicionar os ícones necessários
@@ -219,4 +221,4 @@ Você pode usar esse serviço ZIP para os seguintes casos de uso:
 
 * A política protege uma lista de documentos e retorna como um arquivo ZIP.
 
-* Permite que os usuários baixem todos os anexos de uma instância do processo como um único arquivo ZIP.
+* Permitir que os usuários baixem todos os anexos de uma instância do processo como um único arquivo ZIP.

@@ -1,19 +1,15 @@
 ---
 title: Criação de grupos aninhados
-seo-title: Authoring Nested Groups
 description: Criar grupos aninhados
-seo-description: Create nested groups
-uuid: b377dc1b-bbb6-41c9-b0fc-8281e1410685
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 752235d2-21ac-46d2-82ed-5fec09c645e9
 docset: aem65
 exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '590'
 ht-degree: 4%
 
 ---
@@ -35,13 +31,13 @@ O resultado é alcançar o objetivo [Console de grupos](/help/communities/groups
 
 ![create-group](assets/create-group.png)
 
-A função de grupos será exibida como uma pasta na qual as instâncias dos grupos são criadas. Selecione a pasta Grupos para abri-la. O grupo criado na publicação está visível.
+A função de grupos é exibida como uma pasta na qual as instâncias dos grupos são criadas. Para abri-lo, selecione a pasta Grupos. O grupo criado em Publicar está visível.
 
 ![create-new-group](assets/create-new-group.png)
 
 ## Criar grupo principal de artes {#create-main-arts-group}
 
-Este grupo pode ser criado porque a estrutura do site para engajamento inclui uma função de grupos. A configuração da função no repositório do site `Reference Template` O padrão é permitir a seleção de qualquer modelo de grupo ativado. Assim, o modelo escolhido para esse novo grupo é o `Reference Group`.
+Este grupo pode ser criado porque a estrutura do site para participação inclui uma função de grupos. A configuração da função no repositório do site `Reference Template` O padrão é permitir a seleção de qualquer modelo de grupo ativado. Assim, o modelo escolhido para esse novo grupo é o `Reference Group`.
 
 Esses consoles são semelhantes ao console Sites de comunidades.
 
@@ -52,7 +48,7 @@ Esses consoles são semelhantes ao console Sites de comunidades.
    * **[!UICONTROL Título do grupo da comunidade]**: Artes
    * **[!UICONTROL Descrição do grupo da comunidade]**: um grupo principal para vários grupos de artes
    * **[!UICONTROL Raiz do grupo da comunidade]**: *deixar como padrão*
-   * **[!UICONTROL Idiomas adicionais disponíveis do Grupo da comunidade]**: use o menu suspenso para selecionar os idiomas do grupo da comunidade disponíveis. O menu exibe todos os idiomas nos quais o site pai da comunidade é criado. Os usuários podem selecionar entre esses idiomas para criar grupos em vários locais nesta única etapa. O mesmo grupo é criado em vários idiomas especificados no console Grupos dos respectivos sites de comunidade.
+   * **[!UICONTROL Idiomas adicionais disponíveis do Grupo da comunidade]**: use o menu suspenso para selecionar os idiomas disponíveis do grupo da comunidade. O menu exibe todos os idiomas nos quais o site pai da comunidade é criado. Os usuários podem selecionar entre esses idiomas para criar grupos em vários locais nesta única etapa. O mesmo grupo é criado em vários idiomas especificados no console Grupos dos respectivos sites de comunidade.
    * **[!UICONTROL Nome do grupo da comunidade]**: artes
    * **[!UICONTROL Modelo]**: selecione na lista suspensa `Reference Group`
    * Selecione **[!UICONTROL Próximo]**
@@ -122,15 +118,15 @@ A variável `arts` O grupo também deve conter uma `groups` pasta, mas uma que e
    * Modelo: `Reference Group`
    * Associação: selecione `Restricted Membership`, um grupo secreto, visível apenas para membros convidados. Como exemplo, convide [usuário de demonstração](/help/communities/tutorials.md#demo-users) `emily.andrews@mailinator.com`.
 
-Atualize a página para ver todos os três grupos aninhados (subcomunidades).
+Atualize a página para que você possa ver todos os três grupos aninhados (subcomunidades).
 
 Para navegar até os grupos aninhados do console Sites de comunidades:
 
-* Selecionar **[!UICONTROL pasta de engajamento]**
+* Selecione o **[!UICONTROL pasta de engajamento]**
 * Selecionar **[!UICONTROL Cartão Tutorial de introdução]**
-* Selecionar **[!UICONTROL Grupos]** pasta
+* Selecione o **[!UICONTROL Grupos]** pasta
 * Selecionar **[!UICONTROL cartão arts]**
-* Selecionar **[!UICONTROL Grupos]** pasta
+* Selecione o **[!UICONTROL Grupos]** pasta
 
 ![create-new-group2](assets/create-new-group2.png)
 
@@ -144,7 +140,7 @@ Depois de publicar o site principal da comunidade:
 
    * Aguardando confirmação de que o grupo foi publicado.
 
-* Publicar grupo pai antes de publicar quaisquer grupos aninhados em:
+* Publique o grupo pai antes de publicar qualquer grupo aninhado em:
 
    * Todos os grupos devem ser publicados de cima para baixo.
 
@@ -154,15 +150,15 @@ Depois de publicar o site principal da comunidade:
 
 É possível experimentar os diferentes grupos quando conectado, por exemplo, com a [usuários de demonstração](/help/communities/tutorials.md#demo-users) usado para:
 
-* Membro do grupo Art/History: emily.andrews@mailinator.com/password
+* Membro do grupo Arte/Histórico: `emily.andrews@mailinator.com/password`
    * O grupo restrito (secreto), artes/história, está visível:
-   * Pode ver grupos opcionais (públicos).
-   * Pode unir grupos restritos (abertos).
+   * É possível ver grupos opcionais (públicos).
+   * Capaz de ingressar em grupos restritos (abertos).
 
-* Gerenciador de grupo: aaron.mcdonald@mailinator.com/password
+* Gerente de grupo: `aaron.mcdonald@mailinator.com/password`
 
-   * Pode ver grupos opcionais (públicos).
-   * Pode unir grupos restritos (abertos).
-   * Não é possível visualizar grupos restritos (secretos).
+   * É possível ver grupos opcionais (públicos).
+   * Capaz de ingressar em grupos restritos (abertos).
+   * Não é possível ver os grupos restritos (secretos).
 
 Acesse as comunidades [Consoles Membros e grupos](/help/communities/members.md) em autor para adicionar outros usuários a vários grupos de membros que correspondem aos grupos da comunidade.

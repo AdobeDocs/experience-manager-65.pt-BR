@@ -1,18 +1,14 @@
 ---
 title: "Tutorial: Criar fragmentos de documento"
-seo-title: Create document fragments for Interactive Communication
 description: Criar fragmentos de documento para comunicação interativa
-seo-description: Create document fragments for Interactive Communication
-uuid: 677d717e-e92e-434e-8266-6fbbf94f3867
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 8ae97a21-83af-4615-9be3-61e2f8065081
 docset: aem65
 feature: Interactive Communication
 exl-id: 81429735-cd52-4621-8dc2-10dd89df3052
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1674'
 ht-degree: 2%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 2%
 
 ![05-criar-formulário-modelo-dados-principal_pequeno](assets/05-create-form-data-model-main_small.png)
 
-Este tutorial é uma etapa da [Criar a primeira comunicação interativa](/help/forms/using/create-your-first-interactive-communication.md) série. É recomendável seguir a série em sequência cronológica para entender, executar e demonstrar o caso de uso completo do tutorial.
+Este tutorial é uma etapa da [Criar a primeira comunicação interativa](/help/forms/using/create-your-first-interactive-communication.md) série. A Adobe recomenda que você siga a série em sequência cronológica para entender, executar e demonstrar o caso de uso tutorial completo.
 
 Os fragmentos de documento são componentes reutilizáveis de uma correspondência usados para compor uma comunicação interativa. Os fragmentos de documento são dos seguintes tipos:
 
@@ -29,7 +25,7 @@ Os fragmentos de documento são componentes reutilizáveis de uma correspondênc
 * Lista - Lista é um grupo de fragmentos de documento, incluindo texto, listas, condições e imagens.
 * Condição - As condições permitem definir qual conteúdo é incluído na Comunicação interativa com base nos dados recebidos do Modelo de dados de formulário.
 
-Este tutorial percorre as etapas para criar vários fragmentos de documento de texto com base na anatomia fornecida em [Planejar a comunicação interativa](/help/forms/using/planning-interactive-communications.md) seção. Ao final deste tutorial, você será capaz de:
+Este tutorial percorre as etapas para criar vários fragmentos de documento de texto com base na anatomia fornecida em [Planejar a comunicação interativa](/help/forms/using/planning-interactive-communications.md) seção. No final deste tutorial, você poderá fazer o seguinte:
 
 * Criar fragmentos de documento
 * Criar variáveis
@@ -52,7 +48,7 @@ Uso **FDM_Create_First_IC**, conforme descrito na seção [Criar modelo de dados
 
 ## Etapa 1: Criar fragmento de documento de texto de Detalhes da Lista {#step-create-bill-details-text-document-fragment}
 
-O fragmento do documento Detalhes da Lista inclui os seguintes campos:
+O Fragmento do Documento Detalhes da Lista inclui os seguintes campos:
 
 | Texto | Fonte de Dados |
 |---|---|
@@ -61,7 +57,7 @@ O fragmento do documento Detalhes da Lista inclui os seguintes campos:
 | Data de Cobrança | IU do agente |
 | Seu plano | Modelo de dados do formulário |
 
-Execute as seguintes etapas para criar variáveis para campos com a interface do usuário do agente como fonte de dados, criar texto estático e usar elementos do modelo de dados de formulário no fragmento do documento:
+Para criar variáveis para campos com a interface do usuário do agente como fonte de dados, criar texto estático e usar elementos do modelo de dados de formulário no fragmento do documento, faça o seguinte:
 
 1. Selecionar **[!UICONTROL Forms]** > **[!UICONTROL Fragmentos do documento]**.
 
@@ -80,8 +76,8 @@ Execute as seguintes etapas para criar variáveis para campos com a interface do
 1. No **Criar variável** seção:
 
    1. Enter **Invoicenumber** como o nome da variável.
-   1. Selecionar **String** como tipo.
-   1. Toque **Criar**.
+   1. Selecionar **String** como o tipo.
+   1. Toque em **Criar**.
 
    ![Criar variável do tipo String](assets/variable_create_string_new.png)
 
@@ -109,11 +105,11 @@ Execute as seguintes etapas para criar variáveis para campos com a interface do
 
    ![bill_details_customerplan_fdm](assets/bill_details_customerplan_fdm.png)
 
-1. Clique em **Salvar** para criar o fragmento de documento de texto Detalhes da Lista.
+1. Clique em **Salvar** para criar o fragmento de documento de texto Detalhes da lista.
 
-## Etapa 2: Criar fragmento de documento de texto de Detalhes do cliente {#step-create-customer-details-text-document-fragment}
+## Etapa 2: Criar texto de Detalhes do cliente Fragmento do documento {#step-create-customer-details-text-document-fragment}
 
-O fragmento do documento Detalhes do cliente inclui os seguintes campos:
+O Fragmento do documento Detalhes do cliente inclui os seguintes campos:
 
 | Texto | Fonte de Dados |
 |---|---|
@@ -126,7 +122,7 @@ O fragmento do documento Detalhes do cliente inclui os seguintes campos:
 | Número do relacionamento | Modelo de dados do formulário |
 | Número de conexões | IU do agente |
 
-Execute as seguintes etapas para criar variáveis para campos com a interface do usuário do agente como fonte de dados, criar texto estático e usar elementos do modelo de dados de formulário no fragmento do documento:
+Para criar variáveis para campos com a interface do usuário do agente como fonte de dados, criar texto estático e usar elementos do modelo de dados de formulário no fragmento do documento, faça o seguinte:
 
 1. Selecionar **[!UICONTROL Forms]** > **[!UICONTROL Fragmentos do documento]**.
 1. Selecionar **Criar** > **Texto**.
@@ -144,14 +140,13 @@ Execute as seguintes etapas para criar variáveis para campos com a interface do
 1. No **Criar variável** seção:
 
    1. Enter **Placesupply** como o nome da variável.
-   1. Selecionar **String** como tipo.
-   1. Toque **Criar**.
+   1. Selecionar **String** como o tipo.
+   1. Toque em **Criar**.
 
    Repita as etapas 4 e 5 para criar as seguintes variáveis:
 
    * Statecode: Tipo numérico
    * Numberconnections: Tipo de número
-
 
 1. Selecione o **Objetos do modelo de dados** coloque o cursor no painel direito e clique duas vezes na guia **cliente** > **name** propriedade.
 1. Pressione Enter para mover o cursor para a próxima linha e clique duas vezes no **cliente** > **endereço** propriedade.
@@ -175,11 +170,11 @@ Execute as seguintes etapas para criar variáveis para campos com a interface do
 
    ![Detalhes do cliente](assets/customer_details_df2_new.png)
 
-1. Clique em **Salvar** para criar o fragmento de documento de texto Detalhes do cliente.
+1. Clique em **Salvar** para criar o Fragmento de documento de texto de Detalhes do cliente.
 
-## Etapa 3: Criar fragmento de documento de texto do Resumo da Lista {#step-create-bill-summary-text-document-fragment}
+## Etapa 3: Criar Fragmento de Documento de Texto de Resumo de Lista {#step-create-bill-summary-text-document-fragment}
 
-O fragmento do documento Resumo da Lista inclui os seguintes campos:
+O Fragmento do Documento Sumariado de Lista inclui os seguintes campos:
 
 | Texto | Fonte de Dados |
 |---|---|
@@ -190,7 +185,7 @@ O fragmento do documento Resumo da Lista inclui os seguintes campos:
 | Valor Devido | IU do agente |
 | Data de vencimento | IU do agente |
 
-Execute as seguintes etapas para criar variáveis para campos com a interface do usuário do agente como fonte de dados, criar texto estático e usar elementos do modelo de dados de formulário no fragmento do documento:
+Para criar variáveis para campos com a interface do usuário do agente como fonte de dados, criar texto estático e usar elementos do modelo de dados de formulário no fragmento do documento, faça o seguinte:
 
 1. Selecionar **[!UICONTROL Forms]** > **[!UICONTROL Fragmentos do documento]**.
 1. Selecionar **Criar** > **Texto**.
@@ -209,7 +204,7 @@ Execute as seguintes etapas para criar variáveis para campos com a interface do
 
    1. Enter **Saldo anterior** como o nome da variável.
    1. Selecionar **Número** como tipo.
-   1. Toque **Criar**.
+   1. Toque em **Criar**.
 
    Repita as etapas 4 e 5 para criar as seguintes variáveis:
 
@@ -217,7 +212,6 @@ Execute as seguintes etapas para criar variáveis para campos com a interface do
    * Ajustes: Tipo de número
    * Valor devido: Tipo de número
    * Duedate: Tipo de data
-
 
 1. Crie texto estático para os seguintes campos usando o painel direito:
 
@@ -227,7 +221,7 @@ Execute as seguintes etapas para criar variáveis para campos com a interface do
    * Cobra o período de faturamento atual
    * Valor Devido
    * Data de vencimento
-   * Encargos de pagamento atrasado depois da Data de Vencimento é $ 20
+   * Encargos de pagamento em atraso após a Data de Vencimento é $ 20
 
    ![Texto estático do Resumo da Lista](assets/bill_summary_static_new.png)
 
@@ -240,11 +234,11 @@ Execute as seguintes etapas para criar variáveis para campos com a interface do
 
    ![Resumo da fatura](assets/bill_summary_static_variables_new.png)
 
-1. Clique em **Salvar** para criar o fragmento de documento de texto Detalhes do cliente.
+1. Clique em **Salvar** para criar o Fragmento de documento de texto de Detalhes do cliente.
 
-## Etapa 4: Criar o resumo do fragmento do documento de texto de encargos {#step-create-summary-of-charges-text-document-fragment}
+## Etapa 4: Criar Sumário de encargos texto Fragmento do Documento {#step-create-summary-of-charges-text-document-fragment}
 
-O fragmento do documento de Resumo de Encargos inclui os seguintes campos:
+O Fragmento do documento do Resumo de encargos inclui os seguintes campos:
 
 | Texto | Fonte de Dados |
 |---|---|
@@ -258,7 +252,7 @@ O fragmento do documento de Resumo de Encargos inclui os seguintes campos:
 | Total de Encargos | Modelo de dados do formulário |
 | TOTAL A PAGAR | Modelo de dados do formulário |
 
-Execute as seguintes etapas para criar texto estático e usar elementos do modelo de dados de formulário no fragmento do documento:
+Para criar texto estático e usar elementos de modelo de dados de formulário no fragmento do documento, faça o seguinte:
 
 1. Selecionar **[!UICONTROL Forms]** > **[!UICONTROL Fragmentos do documento]**.
 1. Selecionar **Criar** > **Texto**.
@@ -311,4 +305,4 @@ Execute as seguintes etapas para criar texto estático e usar elementos do model
 
    ![create_rules_caption](assets/create_rules_caption.gif)
 
-1. Clique em **Salvar** para criar o fragmento de documento de texto Resumo de Encargos.
+1. Clique em **Salvar** para criar o texto Fragmento do documento do Resumo de encargos.

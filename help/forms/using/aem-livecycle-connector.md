@@ -1,31 +1,27 @@
 ---
 title: Conectar o AEM Forms com o LiveCycle Adobe
-seo-title: Connecting AEM Forms with Adobe LiveCycle
-description: O conector de LiveCycle AEM permite iniciar os serviços de documento do LiveCycle AEM ES4 a partir de aplicativos e fluxos de trabalho do.
-seo-description: AEM LiveCycle connector lets you start LiveCycle ES4 Document Services from within AEM apps and workflows.
-uuid: 7dc9d5ec-7b19-4d93-936d-81ceb45dfffa
+description: O conector do LiveCycle Adobe Experience Manager (AEM) permite iniciar os serviços Acrobat AEM do LiveCycle ES4 a partir de aplicativos e workflows.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
-discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 role: Admin
 exl-id: 562f8a22-cbab-4915-bc0d-da9bea7d18fa
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '1026'
 ht-degree: 0%
 
 ---
 
 # Conectar o AEM Forms com o LiveCycle Adobe {#connecting-aem-forms-with-adobe-livecycle}
 
-O conector de LiveCycle do Adobe Experience Manager (AEM) permite a invocação contínua dos Serviços de documento do Adobe LiveCycle AEM ES4 a partir de aplicativos e fluxos de trabalho da Web do. O LiveCycle fornece um SDK cliente avançado, que permite que os aplicativos clientes iniciem serviços do LiveCycle usando APIs Java. O Conector de LiveCycle AEM simplifica o uso dessas APIs no ambiente OSGi.
+O conector do LiveCycle Adobe Experience Manager (AEM) permite a invocação sem problemas do Adobe LiveCycle ES4 Acrobat AEM Services a partir de aplicativos e fluxos de trabalho da Web. O LiveCycle fornece um SDK cliente avançado, que permite que os aplicativos clientes iniciem serviços do LiveCycle usando APIs Java™. O Conector de LiveCycle AEM simplifica o uso dessas APIs no ambiente OSGi.
 
 ## Conectar o servidor AEM ao LiveCycle Adobe {#connecting-aem-server-to-adobe-livecycle}
 
-O Conector do LiveCycle AEM faz parte do [Pacote complementar do AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md). Depois de instalar o pacote complementar do AEM Forms, execute as seguintes etapas para adicionar detalhes do servidor LiveCycle ao Console da Web do AEM.
+O Conector do LiveCycle AEM faz parte do [Pacote complementar do AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md). Depois de instalar o pacote complementar do AEM Forms, siga as etapas abaixo para adicionar detalhes do servidor LiveCycle ao Console da Web do AEM.
 
-1. No gerenciador de configuração do console da web AEM, localize o componente de configuração do SDK do cliente do LiveCycle Adobe.
+1. No gerenciador de configuração do console da Web AEM, localize o componente de configuração do SDK do cliente do LiveCycle Adobe.
 1. Clique no componente para editar o URL do servidor de configuração, nome de usuário e senha.
 1. Revise as configurações e clique em **Salvar**.
 
@@ -40,13 +36,13 @@ Embora as propriedades sejam autoexplicativas, as importantes são as seguintes:
 
   opção.
 
-* **Nome de usuário**- Especifica o nome de usuário da conta usada para estabelecer a comunicação entre o AEM e o LiveCycle. A conta é uma conta de usuário do LiveCycle que tem permissões para iniciar os Serviços de documento.
+* **Nome de usuário**- Especifica o nome de usuário da conta usada para estabelecer a comunicação entre o AEM e o LiveCycle. A conta é uma conta de usuário do LiveCycle que tem permissões para iniciar o Acrobat Services.
 * **Senha**- Especifica a senha.
 * **Nome do serviço** - Especifica os serviços que são iniciados usando as credenciais de usuário fornecidas nos campos Nome de Usuário e Senha. Por padrão, nenhuma credencial é passada ao iniciar os serviços do LiveCycle.
 
 ## Iniciando serviços de documento {#starting-document-services}
 
-Os aplicativos clientes podem iniciar serviços do LiveCycle de forma programática usando uma API Java, Serviços da Web, Comunicação remota e REST. Para clientes Java, o aplicativo pode usar o SDK do LiveCycle. O SDK do LiveCycle fornece uma API Java para iniciar esses serviços remotamente. Por exemplo, para converter um documento do Microsoft Word em PDF, o cliente inicia GeneratePDFService. O fluxo de chamada consiste nas seguintes etapas:
+Os aplicativos clientes podem iniciar serviços do LiveCycle de forma programática usando uma API Java™, Serviços da Web, Comunicação remota e REST. Para clientes Java™, o aplicativo pode usar o SDK do LiveCycle. O SDK do LiveCycle fornece uma API Java™ para iniciar esses serviços remotamente. Por exemplo, para converter um documento do Microsoft® Word em PDF, o cliente inicia GeneratePDFService. O fluxo de chamada consiste nas seguintes etapas:
 
 1. Crie uma instância ServiceClientFactory.
 1. Cada serviço fornece uma classe de cliente. Para iniciar um serviço, crie uma instância do cliente do serviço.
@@ -54,7 +50,7 @@ Os aplicativos clientes podem iniciar serviços do LiveCycle de forma programát
 
 O Conector de LiveCycle AEM simplifica o fluxo ao expor essas instâncias do cliente como serviços OSGi que podem ser acessados usando meios OSGi padrão. O conector do LiveCycle oferece os seguintes recursos:
 
-* Instâncias do cliente como Serviço OSGi: os clientes empacotados como pacotes OSGi são listados na [Lista de serviços de documento](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) seção. Cada jar do cliente registra a instância do cliente como um serviço OSGi com o Registro de serviço OSGi.
+* Instâncias do cliente como Serviço OSGi: os clientes empacotados como pacotes OSGi são listados na [Lista de serviços da Acrobat](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) seção. Cada jar do cliente registra a instância do cliente como um serviço OSGi com o Registro de serviço OSGi.
 * Propagação de credencial do usuário: os detalhes de conexão necessários para se conectar ao servidor do LiveCycle são gerenciados em um local central.
 * ServiceClientFactory Service: Para iniciar os processos, o aplicativo cliente pode acessar a instância ServiceClientFactory.
 
@@ -62,7 +58,7 @@ O Conector de LiveCycle AEM simplifica o fluxo ao expor essas instâncias do cli
 
 Para iniciar um serviço exposto de dentro do AEM, execute as seguintes etapas:
 
-1. Determine as dependências do Maven. Adicione a dependência ao jar do cliente necessário no arquivo maven pom.xml. No mínimo, adicione dependência aos jars adobe-livecycle-client e adobe-usermanager-client.
+1. Determine as dependências do Maven. Adicione a dependência ao jar do cliente necessário em seu arquivo maven pom.xml. No mínimo, adicione dependência aos jars adobe-livecycle-client e adobe-usermanager-client.
 
    ```xml
    <dependency>
@@ -82,7 +78,7 @@ Para iniciar um serviço exposto de dentro do AEM, execute as seguintes etapas:
    </dependency>
    ```
 
-   Para iniciar um serviço, adicione a dependência do Maven correspondente para o serviço. Para obter a lista de dependências, consulte [Lista de serviços de documento](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Por exemplo, para o serviço Gerar PDF, adicione a seguinte dependência:
+   Para iniciar um serviço, adicione uma dependência Maven correspondente para o serviço. Para obter a lista de dependências, consulte [Lista de serviços da Acrobat](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Por exemplo, para o serviço Gerar PDF, adicione a seguinte dependência:
 
    ```xml
    <dependency>
@@ -92,7 +88,7 @@ Para iniciar um serviço exposto de dentro do AEM, execute as seguintes etapas:
    </dependency>
    ```
 
-1. Obter a referência do serviço. Obtenha um identificador para a instância do serviço. Se você estiver gravando uma classe Java, poderá usar as anotações do Declarative Services.
+1. Obter a referência do serviço. Obtenha um identificador para a instância do serviço. Se você estiver gravando uma classe Java™, poderá usar as anotações do Declarative Services.
 
    ```java
    import com.adobe.livecycle.generatepdf.client.GeneratePdfServiceClient;
@@ -138,7 +134,7 @@ Para iniciar um serviço exposto de dentro do AEM, execute as seguintes etapas:
 
 ### Iniciando via ServiceClientFactory {#starting-via-serviceclientfactory}
 
-A classe ServiceClientFactory é necessária em alguns casos. Por exemplo, você precisa de ServiceClientFactory para chamar processos.
+Às vezes, a classe ServiceClientFactory é necessária. Por exemplo, você precisa de ServiceClientFactory para chamar processos.
 
 ```java
 import com.adobe.livecycle.dsc.clientsdk.ServiceClientFactoryProvider;
@@ -154,15 +150,15 @@ ServiceClientFactory scf = scfProvider.getDefaultServiceClientFactory();
 
 ## Suporte a RunAs {#runas-support}
 
-Quase todos os serviços de documento no LiveCycle exigem autenticação. Você pode usar qualquer uma das seguintes opções para iniciar esses serviços sem fornecer credenciais explícitas no código:
+Quase todos os serviços da Acrobat no LiveCycle exigem autenticação. Você pode usar qualquer uma das seguintes opções para iniciar esses serviços sem fornecer credenciais explícitas no código:
 
 ### configurações de Inclui na lista de permissões {#allowlist-configuration}
 
-A configuração do SDK do cliente do LiveCycle contém uma configuração sobre nomes de serviço. Essa configuração é uma lista de serviços para os quais a lógica de invocação usa a credencial do administrador pronta para uso. Por exemplo, se você adicionar serviços do Diretory Manager (parte da API de gerenciamento de usuários) a essa lista, qualquer código de cliente poderá usar diretamente o serviço e a camada de chamada passará automaticamente as credenciais configuradas como parte da solicitação enviada ao servidor do LiveCycle
+A configuração do SDK do cliente do LiveCycle contém uma configuração sobre nomes de serviço. Essa configuração é uma lista de serviços para os quais a lógica de invocação usa uma credencial de administrador pronta para uso. Por exemplo, se você adicionar serviços do DiretoryManager (parte da API de gerenciamento de usuários) a essa lista, qualquer código de cliente poderá usar o serviço diretamente. Além disso, a camada de chamada passa automaticamente as credenciais configuradas como parte da solicitação enviada ao servidor do LiveCycle.
 
 ### RunAsManager {#runasmanager}
 
-Como parte da integração, um novo serviço RunAsManager é fornecido. Ela permite que você controle programaticamente a credencial a ser usada ao fazer uma chamada para o servidor do LiveCycle.
+Como parte da integração, um novo serviço RunAsManager é fornecido. Ela permite controlar programaticamente uma credencial a ser usada ao chamar o servidor do LiveCycle.
 
 ```java
 import com.adobe.livecycle.dsc.clientsdk.security.PasswordCredential;
@@ -213,7 +209,7 @@ ir.setProperty(InvocationProperties.INVOKER_TYPE,InvocationProperties.INVOKER_TY
 InvocationResponse response = serviceClientFactory.getServiceClient().invoke(ir);
 ```
 
-## Lista de serviços de documento {#document-services-list}
+## Lista de serviços da Acrobat {#document-services-list}
 
 ### Pacote de API do SDK do cliente do LiveCycle do Adobe {#adobe-livecycle-client-sdk-api-bundle}
 

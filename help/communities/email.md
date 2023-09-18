@@ -1,21 +1,17 @@
 ---
 title: Configuração de email
-seo-title: Configuring Email
 description: Configuração de email para Comunidades
-seo-description: Email configuration for Communities
-uuid: e8422cc2-1594-43b0-b587-82825636cec1
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '816'
-ht-degree: 4%
+source-wordcount: '815'
+ht-degree: 3%
 
 ---
 
@@ -51,35 +47,35 @@ Por exemplo (preenchido com valores somente para fins ilustrativos):
 
 * **[!UICONTROL Nome do host do servidor SMTP]**
 
-   *(Obrigatório)* O servidor SMTP a ser usado.
+  *(Obrigatório)* O servidor SMTP a ser usado.
 
 * **[!UICONTROL Porta do servidor SMTP]**
 
-   *(Obrigatório)* A porta do servidor SMTP deve ser 25 ou superior.
+  *(Obrigatório)* A porta do servidor SMTP deve ser 25 ou superior.
 
 * **[!UICONTROL Usuário SMTP]**
 
-   *(Obrigatório)* O usuário SMTP.
+  *(Obrigatório)* O usuário SMTP.
 
 * **[!UICONTROL Senha SMTP]**
 
-   *(Obrigatório)* A senha do usuário SMTP.
+  *(Obrigatório)* A senha do usuário SMTP.
 
 * **[!UICONTROL Endereço &quot;De&quot;]**
 
-   Deixe em branco
+  Deixe em branco
 * **[!UICONTROL SMTP usa SSL]**
 
-   Se marcado, enviará um email seguro. Verifique se a porta está definida como 465 ou conforme necessário para o servidor SMTP.
+  Quando marcado, envia um email seguro. Verifique se a porta está definida como 465 ou conforme exigido para um servidor SMTP.
 * **[!UICONTROL Depurar email]**
 
-   Se essa opção estiver marcada, habilita o registro das interações do servidor SMTP.
+  Se essa opção for marcada, ativará o registro das interações do servidor SMTP.
 
 ## Configuração de email do AEM Communities {#aem-communities-email-configuration}
 
 Quando a variável [serviço de e-mail padrão](#default-mail-service-configuration) estiver configurado, as duas instâncias existentes da variável `AEM Communities Email Reply Configuration` A configuração do OSGi, incluída na versão, torna-se funcional.
 
-Somente a instância para assinaturas precisa ser configurada posteriormente ao permitir a resposta por email.
+Somente a instância para assinaturas deve ser configurada posteriormente ao permitir a resposta por email.
 
 1. [E-mail](#configuration-for-notifications) instância:
 
@@ -103,13 +99,13 @@ Para acessar as instâncias de configuração de email das Comunidades:
 
 A instância de `AEM Communities Email Reply Configuration` A configuração OSGi com o email Name é o recurso de notificações diretas. Esse recurso não inclui resposta por email.
 
-Essa configuração não deve ser alterada.
+Não altere esta configuração.
 
 * Localize o `AEM Communities Email Reply Configuration`.
 * Selecione o ícone de edição.
 * Verifique se **Nome** é `email`.
 
-* Verificar **Criar publicação do email de resposta** é `unchecked`.
+* Verifique se **Criar publicação do email de resposta** é `unchecked`.
 
 ![configure-email-reply](assets/configure-email-reply.png)
 
@@ -121,87 +117,87 @@ Para assinaturas Communities, é possível habilitar ou desabilitar a capacidade
 * Selecione o ícone de edição.
 * Verifique se **Nome** é `subscriptions-email`.
 
-   ![configure-email-subscription](assets/configure-email-subscriptions.png)
+  ![configure-email-subscription](assets/configure-email-subscriptions.png)
 
 * **[!UICONTROL Nome]**
 
-   *(Obrigatório)* `subscriptions-email`. Não Editar.
+  *(Obrigatório)* `subscriptions-email`. Não Editar.
 
 * **[!UICONTROL Criar publicação do email de resposta]**
 
-   Se marcado, o destinatário do email de assinatura poderá postar conteúdo enviando uma resposta. O padrão está marcado.
+  Se marcado, o recipient de um email de assinatura poderá postar conteúdo enviando uma resposta. O padrão está marcado.
 * **[!UICONTROL Adicionar id rastreada ao cabeçalho]**
 
-   O padrão é `Reply-To`.
+  O padrão é `Reply-To`.
 
 * **[!UICONTROL Tamanho máximo de]**
 
-   Se a ID do rastreador for adicionada à linha de assunto, esse é o comprimento máximo do assunto, excluindo a ID rastreada, após o qual ele será aparado. Observe que isso deve ser o menor possível para evitar a perda de informações de ID rastreadas. O padrão é 200.
+  Se a ID do rastreador for adicionada à linha de assunto, esse será o comprimento máximo do assunto, excluindo a ID rastreada, após o qual ele será aparado. Deve ser o menor possível para evitar a perda de informações de ID rastreadas. O padrão é 200.
 
 * **[!UICONTROL Endereço de email &quot;Responder para&quot;]**
 
-   Endereço usado como endereço de email de &quot;Resposta&quot;. O padrão é `no-reply@example.com`.
+  Endereço usado como endereço de email de &quot;Resposta&quot;. O padrão é `no-reply@example.com`.
 
 * **[!UICONTROL Delimitador de resposta]**
 
-   Se a ID do rastreador for adicionada ao cabeçalho Reply-to, esse delimitador será usado. O padrão é `+` (sinal de mais).
+  Se a ID do rastreador for adicionada ao cabeçalho Reply-to, esse delimitador será usado. O padrão é `+` (sinal de mais).
 
 * **[!UICONTROL Prefixo da ID do rastreador no assunto]**
 
-   Se a ID do rastreador for adicionada à linha de assunto, esse prefixo será usado. O padrão é `post#`.
+  Se a ID do rastreador for adicionada à linha de assunto, esse prefixo será usado. O padrão é `post#`.
 
 * **[!UICONTROL Prefixo da ID do rastreador no corpo da mensagem]**
 
-   Se a ID do rastreador for adicionada ao corpo da mensagem, esse prefixo será usado. O padrão é `Please do not remove this:`.
+  Se a ID do rastreador for adicionada ao corpo da mensagem, esse prefixo será usado. O padrão é `Please do not remove this:`.
 
-* **[!UICONTROL Enviar por e-mail como HTML]**: Se marcado, o Tipo de conteúdo do email será definido como `"text/html;charset=utf-8"`. O padrão está marcado.
+* **[!UICONTROL Enviar por e-mail como HTML]**: Se marcada, o Content-Type do email será definido como `"text/html;charset=utf-8"`. O padrão está marcado.
 
 * **[!UICONTROL Nome de usuário padrão]**
 
-   Esse nome será usado para usuários sem nome. O padrão é `no-reply@example.com`.
+  Esse nome é usado para usuários sem nome. O padrão é `no-reply@example.com`.
 
 * **[!UICONTROL Caminho raiz dos modelos]**
 
-   O e-mail é criado usando o modelo armazenado neste caminho raiz. O padrão é `/etc/community/templates/subscriptions-email`.
+  O email é criado usando um modelo armazenado nesse caminho raiz. O padrão é `/etc/community/templates/subscriptions-email`.
 
 ## Configurar o importador de pesquisa {#configure-polling-importer}
 
-Para que o email seja trazido para o repositório, é necessário configurar um importador de pesquisa e configurar manualmente suas propriedades no repositório.
+Para que o email seja trazido para o repositório, é necessário configurar um importador de pesquisa e configurar as propriedades no repositório manualmente.
 
 ### Adicionar novo importador de pesquisa {#add-new-polling-importer}
 
 * Faça logon no editor principal com privilégio de administrador e navegue até o console do importador de pesquisa:
 
-   Por exemplo, [http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
+  Por exemplo, [http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
 
 * Selecionar **[!UICONTROL Adicionar]**
 
-   ![polling-import](assets/polling-importer.png)
+  ![polling-import](assets/polling-importer.png)
 
 * **[!UICONTROL Tipo]**
 
-   *(Obrigatório)* Puxe para baixo para selecionar `POP3 (over SSL)`.
+  *(Obrigatório)* Puxe para baixo para selecionar `POP3 (over SSL)`.
 
 * **[!UICONTROL URL]**
 
-   *(Obrigatório)* O servidor de email de saída. Por exemplo, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
+  *(Obrigatório)* O servidor de email de saída. Por exemplo, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
 
 * **[!UICONTROL Importar para caminho]**&amp;ast;
 
-   *(Obrigatório)* Defina como `/content/usergenerated/mailFolder/postEmails`
+  *(Obrigatório)* Defina como `/content/usergenerated/mailFolder/postEmails`
 ao navegar até o `postEmails`e selecione **OK**.
 
 * **[!UICONTROL Ativar o intervalo em segundo]**
 
-   *(Opcional)* O servidor de email configurado para o serviço de email padrão pode ter requisitos relacionados ao valor do intervalo de atualização. Por exemplo, o Gmail pode exigir um intervalo de `300`.
+  *(Opcional)* O servidor de email configurado para o serviço de email padrão pode ter requisitos relacionados ao valor do intervalo de atualização. Por exemplo, o Gmail pode exigir um intervalo de `300`.
 
 * **[!UICONTROL Logon]**
 
-   *(Opcional)*
+  *(Opcional)*
 
 * **[!UICONTROL Senha]**
 
-   *(Opcional)*
+  *(Opcional)*
 
 * Selecionar **[!UICONTROL OK]**.
 

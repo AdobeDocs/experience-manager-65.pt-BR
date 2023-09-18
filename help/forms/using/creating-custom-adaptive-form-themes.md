@@ -1,17 +1,13 @@
 ---
 title: Criação de temas de formulário adaptáveis personalizados
-seo-title: Creating custom adaptive form themes
-description: Um tema de formulário adaptável é uma biblioteca de cliente AEM usada para definir os estilos (aparência) de um formulário adaptável. Saiba como criar temas de formulário adaptáveis personalizados.
-seo-description: An adaptive form theme is an AEM client library that you use to define the styles (look and feel) for an adaptive form. Learn how you can create custom adaptive form themes.
-uuid: b25df10e-b07c-4e9d-a799-30f1c6fb3c44
+description: Um tema de formulário adaptável é uma biblioteca do cliente Adobe Experience Manager usada para definir os estilos (aparência) de um formulário adaptável. Saiba como criar temas de formulário adaptáveis personalizados.
 content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 437e6581-4eb1-4fbd-a6da-86b9c90cec89
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '795'
 ht-degree: 0%
 
 ---
@@ -20,7 +16,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->A AEM Forms fornece a [Editor de temas](/help/forms/using/themes.md) capacidade de criar e modificar formulários adaptáveis [temas](/help/forms/using/themes.md). Execute as etapas listadas neste artigo somente se tiver atualizado de uma versão que não tenha [Editor de temas](/help/forms/using/themes.md) e você tem um investimento existente em temas criados usando arquivos Less/CSS (método do editor de pré-tema).
+>O Adobe Experience Manager (AEM) Forms fornece a [Editor de temas](/help/forms/using/themes.md) capacidade de criar e modificar formulários adaptáveis [temas](/help/forms/using/themes.md). Execute as etapas listadas neste artigo somente se tiver atualizado de uma versão que não tenha [Editor de temas](/help/forms/using/themes.md) e você tem um investimento existente em temas criados usando arquivos Less/CSS (método do editor de pré-tema).
 
 ## Pré-requisitos {#prerequisites}
 
@@ -32,7 +28,7 @@ ht-degree: 0%
 
 Um **tema de formulário adaptável** é uma biblioteca de cliente AEM usada para definir os estilos (aparência e comportamento) de um formulário adaptável.
 
-Você cria um **modelo adaptável** e aplique o tema ao modelo. Use esse modelo personalizado para criar um **formulário adaptável**.
+Você cria um **modelo adaptável** e aplique o tema ao modelo. Você pode usar esse modelo personalizado para criar um **formulário adaptável**.
 
 ![Formulário adaptável e biblioteca do cliente](assets/hierarchy.png)
 
@@ -40,7 +36,7 @@ Você cria um **modelo adaptável** e aplique o tema ao modelo. Use esse modelo 
 
 >[!NOTE]
 >
->O procedimento a seguir é descrito usando nomes de exemplo para objetos AEM, como nó, propriedades e pastas.
+>O procedimento a seguir é descrito usando nomes de exemplo para objetos AEM, como nós, propriedades e pastas.
 >
 >Se você seguir essas etapas usando os nomes, o modelo resultante deverá ser semelhante ao seguinte:
 
@@ -63,11 +59,11 @@ Você cria um **modelo adaptável** e aplique o tema ao modelo. Use esse modelo 
 
    * `less` pasta: Contém o `less` arquivos variáveis nos quais você define a variável `less` variáveis e `less mixins` que são usados para gerenciar os estilos .css.
 
-      Esta pasta consiste em `less` arquivos variáveis, `less` mixin de arquivos, `less` arquivos definindo estilos usando mixins e variáveis. E todos esses menos arquivos são importados em style.less.
+     Esta pasta consiste em `less` arquivos variáveis, `less` mixin de arquivos, `less` arquivos definindo estilos usando mixins e variáveis. E todos esses menos arquivos são importados em style.less.
 
    * `css`pasta: contém os arquivos .css nos quais você define os estilos estáticos a serem usados no tema.
 
-   **Menos arquivos de variáveis**: esses são os arquivos, nos quais você define ou substitui as variáveis usadas na definição de estilos CSS.
+   **Menos arquivos de variáveis**: esses são os arquivos em que você define ou substitui as variáveis usadas na definição de estilos CSS.
 
    Os formulários adaptáveis fornecem variáveis OOTB definidas nos seguintes arquivos .less:
 
@@ -135,7 +131,7 @@ Você cria um **modelo adaptável** e aplique o tema ao modelo. Use esse modelo 
    }
    ```
 
-   **Arquivo Styles.less:** Use esse arquivo para incluir menos arquivos (variáveis, mixins, estilos) que você precisa usar na biblioteca do cliente.
+   **Arquivo Styles.less:** Use esse arquivo para incluir menos arquivos (variáveis, mixins, estilos) que você deve usar na biblioteca do cliente.
 
    Na amostra a seguir `styles.less` a instrução import pode ser colocada em qualquer ordem.
 
@@ -196,7 +192,7 @@ Você cria um **modelo adaptável** e aplique o tema ao modelo. Use esse modelo 
    >
    >O arquivo style.less não é obrigatório. Isso significa que não é necessário criar esse arquivo se você não tiver definido estilos, variáveis ou mixins personalizados.
    >
-   >No entanto, se você não criar um arquivo style.less, no arquivo css.txt, será necessário remover o comentário da seguinte linha:
+   >No entanto, se você não criar um arquivo style.less, no arquivo css.txt, remova o comentário da seguinte linha:
    >
    >**`#base=less`**
    >
@@ -216,9 +212,9 @@ Depois de criar um tema de formulário adaptável, execute as seguintes etapas p
 
       ![Instantâneo do repositório CRX](assets/1-2.png)
 
-   1. Para usar um tema na página, você precisa adicionar um arquivo de substituição library.jsp ao nó.
+   1. Para usar um tema na página, você deve adicionar um arquivo de substituição library.jsp ao nó.
 
-      Em seguida, importe o tema criado na seção Para criar um tema de formulário adaptável deste artigo.
+      Em seguida, você pode importar o tema criado na seção Para criar um tema de formulário adaptável deste artigo.
 
       O trecho de código de amostra a seguir importa o `af.theme.forest` tema.
 
