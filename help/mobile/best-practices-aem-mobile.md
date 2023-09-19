@@ -1,19 +1,19 @@
 ---
 title: Práticas recomendadas para o AEM Mobile On-demand Services
-description: Saiba mais sobre as práticas recomendadas e as diretrizes que ajudam desenvolvedores experientes de AEM em sites que desejam criar modelos e componentes de aplicativos móveis.
+description: Saiba mais sobre as práticas recomendadas e as diretrizes que ajudam os desenvolvedores competentes do Adobe Experience Manager (AEM) para sites que desejam criar modelos e componentes de aplicativos para dispositivos móveis.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: 63ceaba6-b796-4c13-a86d-f0609ec679c9
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '596'
 ht-degree: 1%
 
 ---
 
-# Práticas recomendadas     {#best-practices}
+# Práticas recomendadas {#best-practices}
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Criar um aplicativo AEM Mobile On-demand Services é diferente de criar um aplicativo que é executado diretamente no shell Cordova (ou PhoneGap). Os desenvolvedores devem estar familiarizados com:
 
-* Plug-ins imediatamente compatíveis e plug-ins específicos do AEM Mobile.
+* Plug-ins prontos para uso e plug-ins específicos para dispositivos móveis do Adobe Experience Manager (AEM).
 
 >[!NOTE]
 >
@@ -37,11 +37,11 @@ Criar um aplicativo AEM Mobile On-demand Services é diferente de criar um aplic
 
 ## Diretrizes para desenvolvedores do AEM {#guidelines-for-aem-developers}
 
-As diretrizes a seguir ajudam desenvolvedores experientes de AEM em sites que desejam criar modelos e componentes de aplicativos móveis:
+As seguintes diretrizes ajudam os desenvolvedores de AEM competentes para sites que desejam criar modelos e componentes de aplicativos móveis:
 
 **Estruturar modelos de sites AEM para incentivar a reutilização e a extensibilidade**
 
-* Preferir vários arquivos de script de componentes em vez de um único arquivo monolítico
+* Preferir vários arquivos de script de componente em vez de um único arquivo monolítico
 
    * Vários pontos de extensão vazios são fornecidos, como *customheaderlibs.html* e *customfooterlibs.html*, que permitem que o desenvolvedor altere o modelo da página enquanto duplica o mínimo possível de código principal
    * Os modelos podem ser estendidos e personalizados por meio do *sling:resourceSuperType* mecanismo
@@ -63,7 +63,7 @@ As diretrizes a seguir ajudam desenvolvedores experientes de AEM em sites que de
 **Prefira JS do lado do cliente específico do aplicativo e bibliotecas CSS específicas da Web**
 
 * Para evitar sobrecarga em bibliotecas como jQuery Mobile para lidar com uma grande variedade de dispositivos e navegadores
-* Quando um modelo está em execução na visualização da Web de um aplicativo, você tem controle sobre as plataformas e versões que o aplicativo será compatível e sabe que o suporte ao JavaScript estará presente. Por exemplo, prefira o Ionic (talvez apenas o CSS) ao jQuery Mobile e à interface do usuário do Onsen em vez do Bootstrap.
+* Quando um modelo está em execução na visualização da Web de um aplicativo, você tem controle sobre as plataformas e versões compatíveis com o aplicativo e sabe que o suporte ao JavaScript estará presente. Por exemplo, prefira o Ionic (apenas o CSS) ao jQuery Mobile e à interface do usuário do Onsen ao Bootstrap.
 
 >[!NOTE]
 >
@@ -71,14 +71,14 @@ As diretrizes a seguir ajudam desenvolvedores experientes de AEM em sites que de
 
 **Preferir bibliotecas micro em vez de pilha completa**
 
-* O tempo necessário para colocar seu conteúdo no vidro do dispositivo será reduzido por cada biblioteca da qual seus artigos dependem. Esse atraso é agravado quando uma nova visualização da Web é usada para renderizar cada artigo, de modo que cada biblioteca deve ser inicializada novamente do zero
+* O tempo que leva para colocar seu conteúdo no vidro do dispositivo é reduzido por cada biblioteca da qual seus artigos dependem. Esse atraso é agravado quando uma nova visualização da Web é usada para renderizar cada artigo, de modo que cada biblioteca deve ser inicializada novamente do zero
 * Se seus artigos não forem criados como SPA (aplicativos de página única), você provavelmente não precisará incluir uma biblioteca de pilha completa, como o Angular
-* Prefira bibliotecas menores de uso único para ajudar a adicionar a interatividade exigida por sua página, como [Fastclick](https://github.com/ftlabs/fastclick) ou [Velocity.js](https://velocityjs.org)
+* Prefira bibliotecas menores de uso único que ajudem a adicionar a interatividade exigida pela sua página, como [Fastclick](https://github.com/ftlabs/fastclick) ou [Velocity.js](https://velocityjs.org)
 
 **Minimizar o tamanho da carga do artigo**
 
 * Use os menores ativos possíveis que possam cobrir efetivamente o maior visor que você estiver apoiando, com uma resolução razoável
-* Use uma ferramenta como *ImageOptim* nas imagens para remover qualquer excesso de metadados
+* Use uma ferramenta como *ImageOptim* em suas imagens para que você possa remover qualquer excesso de metadados
 
 ## Avançando {#getting-ahead}
 

@@ -1,41 +1,36 @@
 ---
 title: Estilizar o formulário adaptável
-seo-title: Style your adaptive form
-description: Saiba como criar um tema personalizado, estilizar componentes individuais e usar fontes da Web em um tema
-seo-description: Learn to create a custom theme, style individual components, and use web fonts in a theme
-page-status-flag: de-activated
-uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
+description: Saiba como criar um tema personalizado, estilizar componentes individuais e usar Web Fonts em um tema.
 topic-tags: introduction
-discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
-source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
+source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
 workflow-type: tm+mt
-source-wordcount: '2041'
-ht-degree: 8%
+source-wordcount: '2054'
+ht-degree: 10%
 
 ---
 
 # Estilizar o formulário adaptável {#do-not-publish-style-your-adaptive-form}
 
-Saiba como criar um tema personalizado, estilizar componentes individuais e usar fontes da Web em um tema
+Saiba como criar um tema personalizado, estilizar componentes individuais e usar Web Fonts em um tema.
 
 ![hero-image](do-not-localize/08-style_your_adaptiveformmain.png)
 
-Este tutorial é uma etapa da [Criar O Primeiro Formulário Adaptável](https://helpx.adobe.com/br/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) série. É recomendável seguir a série em sequência cronológica para entender, executar e demonstrar o caso de uso completo do tutorial.
+Este tutorial é uma etapa da [Criar O Primeiro Formulário Adaptável](https://helpx.adobe.com/br/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) série. A Adobe recomenda que você siga a série em sequência cronológica para entender, executar e demonstrar o caso de uso tutorial completo.
 
 ## Sobre o tutorial  {#about-the-tutorial}
 
-É possível usar temas para fornecer uma aparência e um estilo exclusivos a um formulário adaptável. Você pode aplicar temas prontos para uso fornecidos com o editor de formulários adaptáveis ou criar temas personalizados próprios. AEM [!DNL Forms] fornecer um [editor de tema](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html) para criar temas personalizados. Um único tema pode fornecer a aparência diferente para o mesmo formulário adaptável aberto em dispositivos móveis, tablets ou áreas de trabalho. Qualquer conhecimento prévio de CSS ou MENOS não é necessário para usar o editor de temas, mas é desejado.
+É possível usar temas para fornecer uma aparência e um estilo exclusivos a um formulário adaptável. Você pode aplicar temas prontos para uso fornecidos com o editor de formulários adaptáveis ou criar temas personalizados próprios. AEM [!DNL Forms] fornecer um [editor de tema](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html) para criar temas personalizados. Um único tema pode fornecer a aparência diferente para o mesmo formulário adaptável aberto em dispositivos móveis, tablets ou áreas de trabalho. Qualquer conhecimento prévio de CSS ou MENOS não é necessário para usar o editor de temas, mas é desejável.
 
-Ao final do tutorial, você aprenderá a:
+No final do tutorial, você poderá fazer o seguinte:
 
 * Aplicar um tema pronto para uso a um formulário adaptável
 * Criar um tema para formulário adaptável usando o editor de temas
 * Estilizar componentes individuais
-* Seção de Bônus: Usar fontes da Web em um tema personalizado
+* Seção de Bônus: Usar Web Fonts em um tema personalizado
 
-O formulário será semelhante ao seguinte após concluir o tutorial:
+Seu formulário deve ser semelhante ao seguinte após concluir o tutorial:
 
 ![Formulário com um tema personalizado](assets/styled-adaptive-form.png)
 
@@ -49,14 +44,16 @@ Baixe as imagens de estilo de cabeçalho e logotipo fornecidas abaixo em seu com
 
 ## Etapa 1: Aplicar um tema ao formulário adaptável {#step-apply-a-theme-to-your-adaptive-form}
 
-O editor de formulários adaptáveis fornece vários temas prontos para uso. Se você planeja não usar um estilo personalizado para seu formulário adaptável, também pode publicar seus formulários adaptáveis com um tema pronto para uso. Os temas são independentes das formas adaptativas. É possível aplicar o mesmo tema a vários formulários adaptáveis. Para aplicar um tema a um formulário adaptável:
+O editor de formulários adaptáveis fornece vários temas prontos para uso. Se você planeja não usar um estilo personalizado para seu formulário adaptável, também pode publicar seus formulários adaptáveis com um tema pronto para uso. Os temas são independentes das formas adaptativas. É possível aplicar o mesmo tema a vários formulários adaptáveis.
+
+**Para aplicar um tema ao formulário adaptável:**
 
 1. Abra o formulário adaptável para edição.
 
    [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
 1. Abrir propriedades de **[!UICONTROL Contêiner de formulário adaptável]**. No navegador de propriedades, navegue até **[!UICONTROL Básico]** > **[!UICONTROL Tema do formulário adaptável]**. A variável **[!UICONTROL Tema do formulário adaptável]** O campo lista todos os temas prontos para uso e personalizados. Por padrão, o tema Tela de desenho é aplicado.
-1. Selecione um tema no **[!UICONTROL Tema do formulário adaptável]** campo. Por exemplo, **Tema da pesquisa**. Toque ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para aplicar o tema selecionado.
+1. Selecione um tema no **[!UICONTROL Tema do formulário adaptável]** campo. Por exemplo, **Tema da pesquisa**. Toque ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para poder aplicar o tema selecionado.
 
    ![Formulário adaptável com o tema padrão](assets/default-adaptive-form.png)
 
@@ -68,7 +65,9 @@ O editor de formulários adaptáveis fornece vários temas prontos para uso. Se 
 
 ## Etapa 2: atualizar o formulário adaptável {#step-update-your-adaptive-form}
 
-O design exibido acima requer alterações no texto do espaço reservado e no logotipo do formulário adaptável existente. Execute as seguintes etapas para fazer as alterações necessárias:
+O design exibido acima requer alterações no texto do espaço reservado e no logotipo do formulário adaptável existente.
+
+**Para atualizar o formulário adaptável:**
 
 1. Altere o logotipo existente e o texto do cabeçalho. Para remover o logotipo:
 
@@ -93,11 +92,11 @@ O design exibido acima requer alterações no texto do espaço reservado e no lo
 
 ## Etapa 3: criar um tema personalizado para seu formulário adaptável {#step-create-a-custom-theme-for-your-adaptive-form}
 
-Você pode usar [editor de tema](/help/forms/using/themes.md) para criar temas personalizados. O editor de temas é um editor WYSIWYG todo-poderoso. É um método visual para aplicar CSS a vários componentes de um formulário adaptável. Ele fornece controles mais finos para estilizar componentes e painéis de um formulário adaptável.
+Você pode usar o [editor de tema](/help/forms/using/themes.md) para criar temas personalizados. O editor de temas é um editor WYSIWYG todo-poderoso. É um método visual para aplicar CSS a vários componentes de um formulário adaptável. Ele fornece controles mais finos para estilizar componentes e painéis de um formulário adaptável.
 
 Um tema é uma entidade separada como formulários adaptáveis. Ele contém estilos (CSS) para os componentes e painéis de um formulário adaptável. Os estilos incluem propriedades CSS, como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Quando você aplica um tema, o estilo especificado é aplicado aos componentes correspondentes de um formulário adaptável.
 
-Neste tutorial, você estilizará o cabeçalho e o rodapé, os componentes de texto e numéricos, o componente de anexo e os botões. Vamos começar com a criação de um tema:
+Neste tutorial, você estiliza o cabeçalho e o rodapé, os componentes de texto e numéricos, o componente de anexo e os botões. Vamos começar com a criação de um tema:
 
 ### Criar um tema {#create-a-theme}
 
@@ -105,9 +104,9 @@ Neste tutorial, você estilizará o cabeçalho e o rodapé, os componentes de te
 1. Toque **[!UICONTROL Criar]** e selecione **[!UICONTROL Tema]**. A variável [!UICONTROL Criar tema] página com os campos necessários para criar um tema é exibida. A variável **[!UICONTROL Título]** e **[!UICONTROL Nome]** os campos são obrigatórios:
 
    * **Título:** Especifique um título do tema. Por exemplo, **Tema global.** O título ajuda a identificar o tema da lista de temas.
-   * **Nome:** Especifique o nome do tema. Por exemplo, **Tema global.** Um nó com o nome especificado é criado no repositório. Quando você começa a digitar um título, o valor do campo de nome é gerado automaticamente. Você pode alterar o valor sugerido. O campo de nome pode incluir apenas caracteres alfanuméricos, hifens e sublinhados. Todas as entradas inválidas são substituídas por um hífen.
+   * **Nome:** Especifique o nome do tema. Por exemplo, **Tema global.** Um nó com o nome especificado será criado no repositório. Quando você começa a digitar um título, o valor do campo de nome é gerado automaticamente. É possível alterar o valor sugerido. O campo de nome pode incluir apenas caracteres alfanuméricos, hifens e sublinhados. Todas as entradas inválidas são substituídas por um hífen.
 
-1. Toque **[!UICONTROL Criar]**. Um tema é criado e uma caixa de diálogo para abrir o formulário para edição é exibida. Toque **[!UICONTROL Abertura]** para abrir o tema recém-criado em uma nova guia. O tema é aberto no editor de temas. Para o estilo, o editor de temas usa um formulário adaptável pronto para uso enviado com AEM [!DNL Forms].
+1. Toque em **[!UICONTROL Criar]**. Um tema é criado e uma caixa de diálogo para abrir o formulário para edição é exibida. Toque **[!UICONTROL Abertura]** para abrir o tema recém-criado em uma nova guia. O tema é aberto no editor de temas. Para o estilo, o editor de temas usa um formulário adaptável pronto para uso enviado com AEM [!DNL Forms].
 
    Para obter informações sobre como usar a interface do editor de temas, consulte [Sobre o editor de temas](/help/forms/using/themes.md#aboutthethemeeditor).
 
@@ -131,9 +130,9 @@ O cabeçalho e o rodapé fornecem uma aparência consistente e distinta para um 
 
    | Propriedade | Valor |
    |---|---|
-   | Família da fonte | Arial |
+   | Família da fonte | Arial® |
    | Cor da fonte | FFFFFF |
-   | Tamanho da fonte | 54px |
+   | Tamanho da fonte | 54 px |
 
 1. Toque no [!UICONTROL cabeçalho] widget e toque em **[!UICONTROL Cabeçalho]**. As opções para estilizar o widget Cabeçalho são exibidas à esquerda. Expanda a **[!UICONTROL Dimension e Posição]** , defina o **[!UICONTROL Altura]** para `120px`e toque em ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Expanda a **[!UICONTROL Histórico]** do widget cabeçalho, defina o **[!UICONTROL Cor do plano de fundo]** para `F6921E.`
@@ -195,16 +194,16 @@ O cabeçalho e o rodapé fornecem uma aparência consistente e distinta para um 
       <td>Raio da Borda </td> 
       <td> 
        <ul> 
-        <li>Superior: 7px<br /> </li> 
-        <li>À direita: 7px<br /> </li> 
-        <li>Inferior: 7px<br /> </li> 
-        <li>Esquerda: 7px<br /> </li> 
+        <li>Superior: 7 px<br /> </li> 
+        <li>À direita: 7 px<br /> </li> 
+        <li>Inferior: 7 px<br /> </li> 
+        <li>Esquerda: 7 px<br /> </li> 
        </ul> </td> 
      </tr> 
      <tr> 
       <td>Texto</td> 
       <td>Família da fonte</td> 
-      <td>Arial</td> 
+      <td>Arial®</td> 
      </tr> 
      <tr> 
       <td>Texto</td> 
@@ -214,7 +213,7 @@ O cabeçalho e o rodapé fornecem uma aparência consistente e distinta para um 
      <tr> 
       <td>Texto</td> 
       <td>Tamanho da fonte</td> 
-      <td>18px</td> 
+      <td>18 px</td> 
      </tr> 
      <tr> 
       <td>Dimension e Posição</td> 
@@ -226,7 +225,7 @@ O cabeçalho e o rodapé fornecem uma aparência consistente e distinta para um 
       <td>Margem</td> 
       <td> 
        <ul> 
-        <li>À esquerda: 10rem</li> 
+        <li>À esquerda: 10 rem</li> 
        </ul> </td> 
      </tr> 
     </tbody> 
@@ -264,16 +263,16 @@ O cabeçalho e o rodapé fornecem uma aparência consistente e distinta para um 
       <td>Raio da Borda </td> 
       <td> 
        <ul> 
-        <li>Superior: 7px<br /> </li> 
-        <li>À direita: 7px<br /> </li> 
-        <li>Inferior: 7px<br /> </li> 
-        <li>Esquerda: 7px</li> 
+        <li>Superior: 7 px<br /> </li> 
+        <li>À direita: 7 px<br /> </li> 
+        <li>Inferior: 7 px<br /> </li> 
+        <li>Esquerda: 7 px</li> 
        </ul> </td> 
      </tr> 
      <tr> 
       <td>Texto<br /> </td> 
       <td>Família da fonte</td> 
-      <td>Arial</td> 
+      <td>Arial®</td> 
      </tr> 
      <tr> 
       <td>Texto</td> 
@@ -283,7 +282,7 @@ O cabeçalho e o rodapé fornecem uma aparência consistente e distinta para um 
      <tr> 
       <td>Texto</td> 
       <td>Tamanho da fonte</td> 
-      <td>18px</td> 
+      <td>18 px</td> 
      </tr> 
     </tbody> 
    </table>
@@ -332,7 +331,7 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
       <td>Preenchimento</td> 
       <td> 
        <ul> 
-        <li>Esquerda: 10px</li> 
+        <li>Esquerda: 10 px</li> 
        </ul> </td> 
      </tr> 
      <tr> 
@@ -345,8 +344,8 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
       <td>Margem</td> 
       <td><br /> 
        <ul> 
-        <li>Direito: 2rem</li> 
-        <li>À esquerda: 10rem </li> 
+        <li>Direito: 2 rem</li> 
+        <li>À esquerda: 10 rem </li> 
        </ul> </td> 
      </tr> 
      <tr> 
@@ -357,7 +356,7 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
      <tr> 
       <td>Borda</td> 
       <td>Largura da Borda</td> 
-      <td>1px</td> 
+      <td>1 px</td> 
      </tr> 
      <tr> 
       <td>Borda</td> 
@@ -372,12 +371,12 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
      <tr> 
       <td>Borda</td> 
       <td>Raio da Borda</td> 
-      <td>7px</td> 
+      <td>7 px</td> 
      </tr> 
      <tr> 
       <td>Texto</td> 
       <td>Família da fonte</td> 
-      <td>Arial</td> 
+      <td>Arial®</td> 
      </tr> 
      <tr> 
       <td>Texto</td> 
@@ -387,7 +386,7 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
      <tr> 
       <td>Texto</td> 
       <td>Tamanho da fonte</td> 
-      <td>18px</td> 
+      <td>18 px</td> 
      </tr> 
      <tr> 
       <td>Texto</td> 
@@ -417,10 +416,10 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
       <td>Margem</td> 
       <td> 
        <ul> 
-        <li>Superior: 5rem</li> 
-        <li>Direito: 14rem</li> 
-        <li>Inferior: 20px</li> 
-        <li>Esquerda: 20px<br /> </li> 
+        <li>Superior: 5 rem</li> 
+        <li>Direito: 14 rem</li> 
+        <li>Inferior: 20 px</li> 
+        <li>Esquerda: 20 px<br /> </li> 
        </ul> </td> 
      </tr> 
      <tr> 
@@ -438,21 +437,21 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
 
    ![style-adaptive-form-1](assets/styled-adaptive-form-1.png)
 
-## Etapa 5: Seção de bônus: Uso de fontes da Web em um tema personalizado {#step-bonus-section-using-web-fonts-in-a-custom-theme}
+## Etapa 5: Seção de bônus: Uso de Web Fonts em um tema personalizado {#step-bonus-section-using-web-fonts-in-a-custom-theme}
 
 É possível usar várias fontes para criar um formulário adaptável. Todos os dispositivos nos quais o formulário adaptável é exibido podem não ter as fontes usadas para criar o formulário adaptável. Você pode usar um serviço de fontes da Web para fornecer as fontes necessárias ao dispositivo de destino.
 
-[!DNL Adobe Fonts] é um serviço de fontes da web. Você pode configurar e usar o serviço com formulários adaptáveis. Para usar [!DNL Adobe Fonts] em um formulário adaptável:
+[!DNL Adobe Fonts] O é um serviço do Web Fonts. Você pode configurar e usar o serviço com formulários adaptáveis. Para usar [!DNL Adobe Fonts] em um formulário adaptável:
 
 >[!NOTE]
 >
 >![typekit para adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] agora é chamado de Adobe Fonts e está incluído na Creative Cloud e em outras assinaturas. [Saiba mais](https://fonts.adobe.com/).
 
-1. Criar um [Adobe Fonts](https://typekit.com/) , crie um kit, adicione a fonte Myriad Pro ao kit, publique o kit e obtenha a ID do kit. É necessário usar [!DNL Adobe Fonts] (fontes da Web) em um formulário adaptável.
-1. No AEM [!DNL Forms] servidor, navegue até ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Ferramentas]** ![martelo](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. Agora, abra uma pasta de configuração. Se uma configuração já estiver disponível, clique no link **[!UICONTROL Criar]** botão para criar uma nova instância.
+1. Criar um [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com) , crie um kit, adicione a fonte Myriad Pro ao kit, publique o kit e obtenha a ID do kit. É necessário usar [!DNL Adobe Fonts] (Web Fonts) em um formulário adaptável.
+1. No AEM [!DNL Forms] Servidor, navegue até ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Ferramentas]** ![martelo](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. Agora, abra uma pasta de configuração. Se uma configuração já estiver disponível, clique no link **[!UICONTROL Criar]** botão para criar uma instância.
 
    Na caixa de diálogo Criar configuração, especifique uma **Título** para a configuração e clique em **[!UICONTROL Criar]**. Você é redirecionado para a página de configuração. No [!UICONTROL Editar componente] que for exibida, forneça a **ID do kit** e clique em **[!UICONTROL OK]**.
 
-1. Configure seu tema para usar a variável [!DNL Adobe Fonts] configuração. Na instância do autor, abra **[!UICONTROL Tema Global]** no editor de temas. No editor de temas, acesse **[!UICONTROL Opções de tema]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configurar]**. Entrada **[!UICONTROL Configuração do Adobe Fonts]** selecione o kit e clique em **[!UICONTROL Salvar]**.
+1. Configure seu tema para usar a variável [!DNL Adobe Fonts] configuração. Na instância do autor, abra **[!UICONTROL Tema Global]** no editor de temas. No editor de temas, acesse **[!UICONTROL Opções de tema]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configurar]**. No **[!UICONTROL Configuração do Adobe Fonts]** selecione o kit e clique em **[!UICONTROL Salvar]**.
 
    As fontes adicionadas à variável **[!UICONTROL Adobe Fonts]** estão disponíveis para seleção no **[!UICONTROL Texto]** de todos os componentes.
