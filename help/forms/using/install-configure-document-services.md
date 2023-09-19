@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 923ec028679031c9ef9ea6ae2cf827e7a4cd00d8
 workflow-type: tm+mt
-source-wordcount: '5529'
+source-wordcount: '5517'
 ht-degree: 2%
 
 ---
@@ -243,7 +243,7 @@ Defina variáveis de ambiente para o Java Development Kit de 32 bits e 64 bits, 
 >[!NOTE]
 >
 >* Todas as variáveis de ambiente e os respectivos caminhos fazem distinção entre maiúsculas e minúsculas.
->* JAVA_HOME, JAVA_HOME_32 e Acrobat_PATH (somente Windows) são variáveis de ambiente obrigatórias.
+>* JAVA_HOME e Acrobat_PATH (somente Windows) são variáveis de ambiente obrigatórias.
 >* A variável de ambiente OpenOffice_PATH está definida como a pasta de instalação em vez do caminho para o executável.
 >* Não configure variáveis de ambiente para aplicativos do Microsoft® Office como Word, PowerPoint, Excel e Project, ou para AutoCAD. Se esses aplicativos estiverem instalados no servidor, o serviço Gerar PDF iniciará automaticamente esses aplicativos.
 >* Em plataformas baseadas em UNIX, instale o OpenOffice como /root. Se o OpenOffice não estiver instalado como raiz, o serviço PDF Generator não converterá documentos OpenOffice em documentos PDF. Se você precisar instalar e executar o OpenOffice como um usuário não raiz, forneça direitos sudo ao usuário não raiz.
@@ -686,8 +686,6 @@ Antes de executar as verificações a seguir, verifique se [Ferramenta de prepar
   ```
   ldd phantomjs | grep not
   ```
-
-* Certifique-se de que a variável de ambiente JAVA_HOME_32 aponte para o local correto.
 
 **Linux® e Solaris™ (rota de conversão WebKit)**
 
