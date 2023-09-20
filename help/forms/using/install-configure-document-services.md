@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: f41962faa0567ed99c1e2ab189e81fb978781af3
+source-git-commit: fbfe38e9d669cd506b687a3fb81ad4ce9e7d65da
 workflow-type: tm+mt
-source-wordcount: '5515'
+source-wordcount: '5513'
 ht-degree: 2%
 
 ---
@@ -83,7 +83,7 @@ Antes de começar a instalar e configurar os serviços de documento do AEM Forms
 >[!NOTE]
 >
 >* No Microsoft® Windows, o PDF Generator suporta as rotas de conversão WebKit, Acrobat WebCapture e PhantomJS para converter arquivos HTML em documentos PDF.
->* Em sistemas operacionais baseados em UNIX, o PDF Generator suporta rotas de conversão WebKit e PhantomJS para converter arquivos HTML em documentos PDF.
+* Em sistemas operacionais baseados em UNIX, o PDF Generator suporta rotas de conversão WebKit e PhantomJS para converter arquivos HTML em documentos PDF.
 >
 
 ### Requisitos adicionais para o sistema operacional baseado em UNIX {#extrarequirements}
@@ -198,17 +198,17 @@ Se você for usar o serviço PDF Generator para converter formatos de arquivo na
 
 >[!NOTE]
 >
->* Se o AEM Forms Server estiver em um ambiente offline ou seguro e a Internet não estiver disponível para ativar o Adobe Acrobat, consulte [Ativação offline](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en) para obter instruções sobre como ativar essas instâncias do Adobe Acrobat.
->* Adobe Acrobat, Microsoft® Word, Excel e Powerpoint estão disponíveis apenas para Microsoft® Windows. Se você estiver usando o sistema operacional baseado em UNIX, instale o OpenOffice para converter arquivos rich text e arquivos suportados do Microsoft® Office em documentos PDF.
->* Ignore todas as caixas de diálogo exibidas após a instalação do Adobe Acrobat e de software de terceiros para todos os usuários configurados para usar o serviço PDF Generator.
->* Inicie todos os softwares instalados pelo menos uma vez. Ignore todas as caixas de diálogo de todos os usuários configurados para usar o serviço PDF Generator.
->* [Verifique a data de expiração dos números de série da Adobe Acrobat](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) e defina uma data para atualizar a licença ou [migrar seu número de série](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) com base na data de expiração.
+* Se o AEM Forms Server estiver em um ambiente offline ou seguro e a Internet não estiver disponível para ativar o Adobe Acrobat, consulte [Ativação offline](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en) para obter instruções sobre como ativar essas instâncias do Adobe Acrobat.
+* Adobe Acrobat, Microsoft® Word, Excel e Powerpoint estão disponíveis apenas para Microsoft® Windows. Se você estiver usando o sistema operacional baseado em UNIX, instale o OpenOffice para converter arquivos rich text e arquivos suportados do Microsoft® Office em documentos PDF.
+* Ignore todas as caixas de diálogo exibidas após a instalação do Adobe Acrobat e de software de terceiros para todos os usuários configurados para usar o serviço PDF Generator.
+* Inicie todos os softwares instalados pelo menos uma vez. Ignore todas as caixas de diálogo de todos os usuários configurados para usar o serviço PDF Generator.
+* [Verifique a data de expiração dos números de série da Adobe Acrobat](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) e defina uma data para atualizar a licença ou [migrar seu número de série](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) com base na data de expiração.
 
 Após instalar o Acrobat, abra o Microsoft® Word. No **Acrobat** clique em **Criar PDF** e converta um arquivo .doc ou .docx disponível em sua máquina em um Documento PDF. Se a conversão for bem-sucedida, o AEM Forms estará pronto para usar o Acrobat com o serviço PDF Generator.
 
 ### Configurar variáveis de ambiente {#setup-environment-variables}
 
-Defina variáveis de ambiente para o Java Development Kit de 32 bits e 64 bits, aplicativos de terceiros e Adobe Acrobat. As variáveis de ambiente devem conter o caminho absoluto do executável usado para iniciar o aplicativo correspondente. Por exemplo, a tabela abaixo lista as variáveis de ambiente para alguns aplicativos:
+Defina variáveis de ambiente para o Java Development Kit de 64 bits, aplicativos de terceiros e Adobe Acrobat. As variáveis de ambiente devem conter o caminho absoluto do executável usado para iniciar o aplicativo correspondente. Por exemplo, a tabela abaixo lista as variáveis de ambiente para alguns aplicativos:
 
 <table>
  <tbody>
@@ -242,14 +242,14 @@ Defina variáveis de ambiente para o Java Development Kit de 32 bits e 64 bits, 
 
 >[!NOTE]
 >
->* Todas as variáveis de ambiente e os respectivos caminhos fazem distinção entre maiúsculas e minúsculas.
->* JAVA_HOME e Acrobat_PATH (somente Windows) são variáveis de ambiente obrigatórias.
->* A variável de ambiente OpenOffice_PATH está definida como a pasta de instalação em vez do caminho para o executável.
->* Não configure variáveis de ambiente para aplicativos do Microsoft® Office como Word, PowerPoint, Excel e Project, ou para AutoCAD. Se esses aplicativos estiverem instalados no servidor, o serviço Gerar PDF iniciará automaticamente esses aplicativos.
->* Em plataformas baseadas em UNIX, instale o OpenOffice como /root. Se o OpenOffice não estiver instalado como raiz, o serviço PDF Generator não converterá documentos OpenOffice em documentos PDF. Se você precisar instalar e executar o OpenOffice como um usuário não raiz, forneça direitos sudo ao usuário não raiz.
->* Se você estiver usando o OpenOffice em uma plataforma baseada em UNIX, execute o seguinte comando para definir a variável de caminho:
+* Todas as variáveis de ambiente e os respectivos caminhos fazem distinção entre maiúsculas e minúsculas.
+* JAVA_HOME e Acrobat_PATH (somente Windows) são variáveis de ambiente obrigatórias.
+* A variável de ambiente OpenOffice_PATH está definida como a pasta de instalação em vez do caminho para o executável.
+* Não configure variáveis de ambiente para aplicativos do Microsoft® Office como Word, PowerPoint, Excel e Project, ou para AutoCAD. Se esses aplicativos estiverem instalados no servidor, o serviço Gerar PDF iniciará automaticamente esses aplicativos.
+* Em plataformas baseadas em UNIX, instale o OpenOffice como /root. Se o OpenOffice não estiver instalado como raiz, o serviço PDF Generator não converterá documentos OpenOffice em documentos PDF. Se você precisar instalar e executar o OpenOffice como um usuário não raiz, forneça direitos sudo ao usuário não raiz.
+* Se você estiver usando o OpenOffice em uma plataforma baseada em UNIX, execute o seguinte comando para definir a variável de caminho:
 >
->  `export OpenOffice_PATH=/opt/openoffice.org4`
+`export OpenOffice_PATH=/opt/openoffice.org4`
 
 ### (Somente para IBM® WebSphere®) Configurar o provedor de soquete SSL da IBM® {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
 
@@ -336,7 +336,7 @@ O serviço PDF Generator fornece rotas WebKit, WebCapture e PhantomJS ou método
 
 >[!NOTE]
 >
->Sempre que você instalar novas fontes na pasta de fontes, reinicie a instância do AEM Forms.
+Sempre que você instalar novas fontes na pasta de fontes, reinicie a instância do AEM Forms.
 
 ### (Somente plataformas baseadas em UNIX) Configurações extras para conversão de HTML para PDF  {#extra-configurations-for-html-to-pdf-conversion}
 
@@ -356,12 +356,12 @@ Copie a fonte Unicode para qualquer um dos seguintes diretórios, conforme aprop
 
 >[!NOTE]
 >
->* No Red Hat® Enterprise Linux® 6.x e versões posteriores, as fontes courier não estão disponíveis. Para instalar as fontes do courier, baixe o arquivo font-ibm-type1-1.0.3.zip. Extraia o arquivo em /usr/share/fonts. Crie um link simbólico de /usr/share/X11/fonts para /usr/share/fonts.
->* Exclua todos os arquivos de cache de fontes .lst dos diretórios Html2PdfSvc/bin e /usr/share/fonts.
->* Verifique se os diretórios /usr/lib/X11/fonts e /usr/share/fonts existem. Se os diretórios não existirem, use o comando ln para criar um link simbólico de /usr/share/X11/fonts para /usr/lib/X11/fonts e outro link simbólico de /usr/share/fonts para /usr/share/X11/fonts. Verifique também se as fontes do courier estão disponíveis em /usr/lib/X11/fonts.
->* Verifique se todas as fontes (Unicode e não-unicode) estão disponíveis no diretório /usr/share/fonts ou /usr/share/X11/fonts.
->* Quando você executa o serviço PDF Generator como um usuário não-raiz, forneça a ele acesso de leitura e gravação a todos os diretórios de fontes.
->* Sempre que você instalar novas fontes na pasta de fontes, reinicie a instância do AEM Forms.
+* No Red Hat® Enterprise Linux® 6.x e versões posteriores, as fontes courier não estão disponíveis. Para instalar as fontes do courier, baixe o arquivo font-ibm-type1-1.0.3.zip. Extraia o arquivo em /usr/share/fonts. Crie um link simbólico de /usr/share/X11/fonts para /usr/share/fonts.
+* Exclua todos os arquivos de cache de fontes .lst dos diretórios Html2PdfSvc/bin e /usr/share/fonts.
+* Verifique se os diretórios /usr/lib/X11/fonts e /usr/share/fonts existem. Se os diretórios não existirem, use o comando ln para criar um link simbólico de /usr/share/X11/fonts para /usr/lib/X11/fonts e outro link simbólico de /usr/share/fonts para /usr/share/X11/fonts. Verifique também se as fontes do courier estão disponíveis em /usr/lib/X11/fonts.
+* Verifique se todas as fontes (Unicode e não-unicode) estão disponíveis no diretório /usr/share/fonts ou /usr/share/X11/fonts.
+* Quando você executa o serviço PDF Generator como um usuário não-raiz, forneça a ele acesso de leitura e gravação a todos os diretórios de fontes.
+* Sempre que você instalar novas fontes na pasta de fontes, reinicie a instância do AEM Forms.
 >
 
 ## Instalar pacote complementar do AEM Forms {#install-aem-forms-add-on-package}
@@ -410,8 +410,8 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
 
    >[!NOTE]
    >
-   >Seu direito de usar fontes fornecidas por terceiros que não sejam o Adobe é regido pelos contratos de licença fornecidos a você por esses terceiros com essas fontes, e não está coberto pela sua licença para usar o software Adobe. A Adobe recomenda que você analise e garanta que esteja em conformidade com todos os contratos de licença não-Adobe aplicáveis antes de usar fontes não-Adobe com o software Adobe, especialmente no que diz respeito ao uso de fontes em um ambiente de servidor.
-   >Ao instalar novas fontes na pasta fontes, reinicie a instância do AEM Forms.
+   Seu direito de usar fontes fornecidas por terceiros que não sejam o Adobe é regido pelos contratos de licença fornecidos a você por esses terceiros com essas fontes, e não está coberto pela sua licença para usar o software Adobe. A Adobe recomenda que você analise e garanta que esteja em conformidade com todos os contratos de licença não-Adobe aplicáveis antes de usar fontes não-Adobe com o software Adobe, especialmente no que diz respeito ao uso de fontes em um ambiente de servidor.
+Ao instalar novas fontes na pasta fontes, reinicie a instância do AEM Forms.
    >
 
 ### Configurar uma conta de usuário local para executar o serviço PDF Generator  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
@@ -523,7 +523,7 @@ Execute as seguintes etapas para configurar os certificados:
 
    >[!NOTE]
    >
-   >No ambiente de produção, substitua suas credenciais de avaliação pelas credenciais de produção. Exclua suas credenciais antigas de extensões do Reader antes de atualizar uma credencial expirada ou de avaliações.
+   No ambiente de produção, substitua suas credenciais de avaliação pelas credenciais de produção. Exclua suas credenciais antigas de extensões do Reader antes de atualizar uma credencial expirada ou de avaliações.
 
 1. Clique em **[!UICONTROL Salvar e fechar]** no **[!UICONTROL Editar configurações de usuário]** página.
 
@@ -593,7 +593,7 @@ A variável [Ferramenta de disponibilidade do sistema](#srt-configuration) verif
 
    >[!NOTE]
    >
-   >* Se a Ferramenta de preparação do sistema relatar que o arquivo pdfgen.api não está disponível na pasta de plug-ins do Acrobat, copie o arquivo pdfgen.api da `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` diretório para o `[Acrobat_root]\Acrobat\plug_ins` diretório.
+   * Se a Ferramenta de preparação do sistema relatar que o arquivo pdfgen.api não está disponível na pasta de plug-ins do Acrobat, copie o arquivo pdfgen.api da `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` diretório para o `[Acrobat_root]\Acrobat\plug_ins` diretório.
 
 1. Vá até `[Path_of_reports_folder]`. Abra o arquivo SystemReadinessTool.html. Verifique o relatório e corrija os problemas mencionados.
 
