@@ -2,9 +2,9 @@
 title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: aec2eb3303ad9747f6f56ae2eb31c3c7ed7b0c24
+source-git-commit: a15b9dae5cc4405122ee95e036a83fdfbf34f9bd
 workflow-type: tm+mt
-source-wordcount: '4417'
+source-wordcount: '4490'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 2%
 
 ## O que está incluído em [!DNL Experience Manager] 6.5.18.0 {#what-is-included-in-aem-6518}
 
-[!DNL Experience Manager] O 6.5.18.0 inclui novos recursos, importantes melhorias solicitadas por clientes, correções de erros e melhorias de desempenho, estabilidade e segurança lançadas desde a disponibilização inicial do 6.5 em abril de 2019. [Instalar este pacote de serviços](#install) em [!DNL Experience Manager] 6.5.
+[!DNL Experience Manager] O 6.5.18.0 inclui novos recursos, importantes melhorias solicitadas por clientes, correções de erros e melhorias de desempenho, estabilidade e segurança que foram lançadas desde a disponibilização inicial do 6.5 em abril de 2019. [Instalar este pacote de serviços](#install) em [!DNL Experience Manager] 6.5.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -49,7 +49,7 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 
 * O Seletor de polaris de sites em fragmentos de conteúdo melhorou o desempenho. (SITES-14092)
 
-* Ativação do usuário do Editor de páginas do Sites/Componente de imagem para fazer referência a ativos do Cloud Service remoto de ativos. (SITES-13448, SITES-13433)
+* Ativação do usuário do Editor de páginas do Sites/Componente de imagem para fazer referência a ativos do Cloud Service remoto de Ativos. (SITES-13448, SITES-13433)
 
 * Para localizar rapidamente um projeto na exibição de Lista, onde você pode ter muitos projetos em seu sistema, o Adobe agora oferece suporte para a classificação do lado do servidor. Os nós de projeto são classificados no backend com base na coluna selecionada pelo usuário antes de renderizá-los na interface. (NPR-41027)
 
@@ -57,7 +57,7 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 
 **Recurso obsoleto**
 
-* O AtiveMQ no AEM está obsoleto. O AtiveMQ foi usado para comunicação entre duas instâncias de publicação do AEM. A Adobe recomenda que os clientes agora usem o balanceador de carga.
+* O AtiveMQ no AEM está obsoleto. O AtiveMQ foi usado para comunicação entre duas instâncias de publicação do AEM. A Adobe recomenda que os clientes agora usem um balanceador de carga.
 
 **Forms**
 
@@ -65,7 +65,7 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 
 * **[Etapa de fluxo de trabalho aprimorada do Adobe Sign](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step):** A etapa de fluxo de trabalho do Adobe Sign em fluxos de trabalho do AEM está disponível com as seguintes melhorias.
 
-   * **Segurança aprimorada com autenticação baseada em ID do governo para Adobe Sign:** A Autenticação com base em ID do governo da Adobe Acrobat Sign oferece uma camada adicional de verificação, permitindo que os usuários autentiquem sua identidade usando IDs emitidas pelo governo (CNH, identificação nacional, passaporte). Ao utilizar documentos de identificação confiáveis, esse aprimoramento adiciona um nível extra de confiança ao processo de assinatura, tornando-o ideal para cenários que exigem maior segurança, conformidade e validação do usuário.
+   * **Segurança aprimorada com autenticação baseada em ID do governo para Adobe Sign:** A Autenticação com base em ID do governo da Adobe Acrobat Sign oferece uma camada adicional de verificação, permitindo que os usuários autentiquem sua identidade usando IDs emitidas pelo governo (CNH, identificação nacional, passaporte). Ao usar documentos de identificação confiáveis, esse aprimoramento adiciona um nível extra de confiança ao processo de assinatura, tornando-o ideal para cenários que exigem maior segurança, conformidade e validação do usuário.
 
    * **Maior transparência com a trilha de auditoria para documentos do Adobe Sign:** Use o recurso Trilha de auditoria para obter insights detalhados sobre o ciclo de vida dos documentos do Adobe Sign. Com a Trilha de auditoria, agora é possível manter um registro abrangente de todas as ações e interações relacionadas aos documentos. Isso inclui detalhes como quem visualizou, editou ou assinou o documento, além de carimbos de data e hora para cada evento. Esse aprimoramento é fundamental para manter a conformidade, resolver disputas e garantir a integridade de seus contratos digitais.
 
@@ -74,10 +74,10 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 
 
 * **[Instalador completo do AEM Forms no JEE](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms.html)**: o pacote de serviços oferece um instalador completo do AEM Forms no JEE, com suporte para várias combinações de software novas, incluindo:
-   * Microsoft Windows Server 2022
-   * Microsoft Ative Diretory 2022
+   * Microsoft® Windows Server 2022
+   * Diretório ativo Microsoft® 2022
    * Oracle WebLogic 14C no Windows Server 2022
-   * RedHat JBoss 7.4.10
+   * Red Hat® JBoss® 7.4.10
    * MongoDB 4.4
    * Conector JDBC do MySQL 8
 
@@ -110,9 +110,9 @@ Se você estiver executando uma nova instalação ou planejando usar o software 
 #### Componentes principais{#sites-core-components-6518}
 
 * O seletor de ativos não busca uma lista atualizada de ativos quando ela é fechada e reaberta. Se novos ativos forem carregados no repositório, eles não serão exibidos no seletor de ativos até que a página que contém o seletor de ativos seja atualizada. (SITES-14828)
-* A interface do usuário do seletor de ativos, integrada ao Editor de sites (CS), não responde quando a janela é reduzida. (SITES-14127)
+* A interface do usuário do Seletor de ativos, integrada ao Editor de sites (CS), não responde quando a janela é reduzida. (SITES-14127)
 * A configuração do Adobe IMS (Identity Management System) para integração do seletor de ativos aceitava valores incorretos. (SITES-13962)
-* O seletor de ativos, quando integrado ao componente de Imagem do Sites, não deve permitir a seleção de ativos que não sejam de imagem. (SITES-13879)
+* O seletor de ativos, quando integrado ao componente de Imagem de sites, não deve permitir a seleção de ativos que não sejam de imagem. (SITES-13879)
 * Após o logon bem-sucedido, o usuário é redirecionado para o Editor de páginas. O usuário precisa reabrir o Seletor de ativos para escolher Ativos remotos. (SITES-13851)
 * O Seletor de ativos remotos sempre redireciona para o ambiente de Preparo do Adobe IMS (Identity Management System). (SITES-13448, SITES-13433)
 
@@ -137,7 +137,7 @@ Se você estiver executando uma nova instalação ou planejando usar o software 
 * Os leitores de tela não anunciam a finalidade do campo Adicionar usuário ao criar uma coleção. (ASSETS-21736)
 * A variável **Coleções** O rótulo não está localizado na página de propriedades Coleções. (ASSETS-21102)
 * Ao adicionar uma regra ou editar uma regra existente usando o formulário de Esquema de metadados padrão, os idiomas na lista suspensa não são localizados. (ASSETS-21026)
-* O Experience Manager exibe uma mensagem de erro não localizada ao adicionar o caminho JSON no esquema de metadados. (ASSETS-21025)
+* O Experience Manager exibe uma mensagem de erro não localizada ao adicionar um caminho JSON no esquema de metadados. (ASSETS-21025)
 * A opção de linha do tempo na navegação à esquerda não exibe a taxa de contraste apropriada. (ASSETS-17348)
 * Os elementos do calendário não usam os atributos ARIA necessários. (ASSETS-17282)
 * O texto de navegação à esquerda não exibe a taxa de contraste apropriada. (ASSETS-17268)
@@ -164,14 +164,14 @@ Se você estiver executando uma nova instalação ou planejando usar o software 
 
 * **Serviços de documento**
    * Quando um usuário usa um serviço transformPDF, ele falha com uma exceção: `java.lang.ClassNotFoundException: default task-158Class name com.adobe.internal.afml.AFMLExceptionInvalidParameter from package com.adobe.internal.afml` (FORMS-9957)
-   * Se o servidor for desligado durante a geração do documento PDF, erros de processamento de trabalho pós-inicialização do servidor serão gerados. O argumento -Dcom.adobe.livecycle.dsc.deferServiceStart=true precisa ser adicionado durante a inicialização do servidor. (FORMS-9836)
+   * Se o servidor for desligado durante a geração do documento PDF, erros de processamento de trabalho de inicialização pós-servidor serão gerados. O argumento -Dcom.adobe.livecycle.dsc.deferServiceStart=true precisa ser adicionado durante a inicialização do servidor. (FORMS-9836)
    * Se um usuário tentar mesclar PDF usando o método AssemblerService.Invoke, o montador não executará a tarefa. (FORMS-9550)
    * Quando você atualiza para o AEM 6.5.15.0 Service Pack em ambientes OSGI e JEE, o serviço do Assembler usando um modelo específico para de funcionar. (FORMS-9355, FORMS-9445, FORMS-9408)
-   * A coleta de lixo Java não consegue limpar o heap antigo em um servidor OSGi do AEM Forms, pois o Tempo limite global para XMLFormService não está configurado para um valor adequado. (FORMS-9384, FORMS-9035)
-   * Ao renderizar a pré-visualização de PDF de um Formulário adaptável, os despejos de pilha do Java indesejados são exibidos nos logs de erro. (FORMS-8865)
+   * A coleta de lixo do Java™ não pode limpar o heap antigo em um servidor OSGi do AEM Forms, pois o Tempo limite global para XMLFormService não está configurado para um valor adequado. (FORMS-9384, FORMS-9035)
+   * Ao renderizar a pré-visualização de PDF de um Formulário adaptável, os despejos de pilha indesejados do Java™ são exibidos nos registros de erros. (FORMS-8865)
    * Quando um usuário revisa o status de documentos na seção de detalhes do documento, ele não é exibido corretamente. (FORMS-8946, FORMS-10424)
    * Quando um usuário atualiza para o AEM Forms e usa o serviço sendToPrinter, há um aumento contínuo na utilização de heap. (FORMS-10148)
-   * No servidor EAP JBoss 7.4, a funcionalidade de email falha com `java.io.IOException`. (FORMS-10138)
+   * No servidor EAP JBoss® 7.4, a funcionalidade de email falha com `java.io.IOException`. (FORMS-10138)
    * Quando um usuário usa o serviço transformPDF, ele falha com um erro: `java.lang.ClassNotFoundException: default task-158Class name com.adobe.internal.afml.AFMLExceptionInvalidParameter from package com.adobe.internal.afml`(FORMS-9957)
    * Depois de atualizar para o AEM Service Pack 6.5.14.0, o problema surge no serviço de montagem ao usar um template específico. (FORMS-9445, FORMS-9408)
   <!-- *  When a user configures the watched folder endpoint for PDF Generator, it fails to pick documents on JDK 11. (FORMS-10152) -->
@@ -181,13 +181,13 @@ Se você estiver executando uma nova instalação ou planejando usar o software 
       * Quando um usuário tenta usar @param{boolean} com uma função, o editor de regras não permite que valores booleanos sejam transmitidos para uma função.
       * Quando um usuário tenta usar @param{string} com uma função, o editor de regras não passa os valores opcionais e fornece um aviso de regras incompletas. (FORMS-9816, FORMS-9815)
    * O grupo de usuários de formulários falha ao chamar o Editor de regras duas vezes em um formulário adaptável. (FORMS-9051)
-   * No editor visual, quando um usuário seleciona um objeto de formulário, todo o objeto da instância do campo é passado para a função personalizada em vez de apenas para o valor do campo. (FORMS-10015)
+   * Em um editor visual, quando um usuário seleciona um objeto de formulário, todo o objeto da instância de campo é passado para a função personalizada, em vez de apenas para o valor do campo. (FORMS-10015)
    * Quando um usuário cria um Formulário adaptável baseado em componentes principais e adiciona um componente de entrada de texto, `Is Empty` e `Is Not Empty` não funcionam no Editor de regras. (FORMS-10098)
    * Se um campo for marcado como inválido em um componente principal baseado no Formulário adaptável, ele iniciará um evento de alteração no campo. (FORMS-10087)
    * Quando um usuário tenta criar um Formulário adaptável usando um esquema JSON complexo, ele falha. O erro ocorre como:
      `GET /content/forms/af/katezeroone/testaf1.html HTTP/1.1] com.adobe.aemds.guide.service.impl.JsonObjectCreatorImpl Could not emit JSON with context java.lang.ArrayIndexOutOfBoundsException:0`. (FORMS-9639)
-   * Em um Formulário adaptável, quando um usuário desativa a caixa de seleção &quot;Concordo com os termos e condições&quot;, ela é ativada novamente assim que o usuário rola para baixo. (FORMS-9458)
-   * Quando um usuário abre um formulário adaptável em um dispositivo Android usando o Google Chrome/Firefox e insere o máximo de caracteres permitidos em uma caixa de texto, o valor na caixa de texto não é apagado. (FORMS-9354)
+   * Em um Formulário adaptável, quando um usuário desativa a caixa de seleção &quot;Concordo com os termos e condições&quot;, ela é ativada novamente quando o usuário faz a rolagem para baixo. (FORMS-9458)
+   * Quando um usuário abre um formulário adaptável em um dispositivo Android™ usando o Google Chrome/Firefox e insere o máximo de caracteres permitidos em uma caixa de texto, o valor na caixa de texto não é apagado. (FORMS-9354)
    * Quando o rótulo da caixa de seleção inclui caracteres especiais como &#39;,&#39;, &#39;/&#39; ou &#39;.&#39;, clicar no texto/rótulo não seleciona a respectiva caixa de seleção. (FORMS-9313)
    * Quando um usuário tenta validar o componente dos Termos e condições, ocorre uma falha na validação se o componente não estiver em foco enquanto o outro componente é validado. (FORMS-8725, FORMS-8913)
    * Se um formulário adaptável for recarregado após a atualização para o AEM 6.5.16.0 Service Pack, a recuperação do anexo de arquivo falhará. (FORMS-8906)
@@ -195,6 +195,8 @@ Se você estiver executando uma nova instalação ou planejando usar o software 
    * Se um usuário tentar implementar o carregamento lento em um fragmento incorporado em um Formulário adaptável para o ambiente de criação, as regras/lógicas definidas para o fragmento não serão refletidas no formulário. (FORMS-8554, FORMS-9182)
    * Quando você tenta abrir uma caixa de diálogo do Coral no AEM 6.5.16.0 Service Pack, ele gera a variável `error.log: cannot render resource` exceção. (FORMS-8942)
    * Quando um usuário tenta traduzir uma caixa de seleção com uma única opção em um Formulário adaptável, ocorre uma falha. (FORMS-10181)
+   * Não foi possível publicar todos os modelos de Documento de registro (DoR). Somente modelos DoR baseados em localidade em inglês e seus modelos DoR associados baseados em Forms são publicados. (FORMS-10535)
+
 * **Acessibilidade**
    * Ao usar o componente Assinatura escritas em um formulário adaptável, os seguintes erros ocorrem:
       * Após o componente Assinatura Escrita, quando há mais componentes, pressionar a tecla Tab não passa para a caixa de diálogo de assinatura; em vez disso, ele passa para o próximo componente. Somente depois de percorrer todos os componentes, ele finalmente se move para a caixa de diálogo de assinatura.
@@ -233,7 +235,7 @@ Se você estiver executando uma nova instalação ou planejando usar o software 
 #### Platform{#foundation-platform-6518}
 
 * Após um Experience Manager básico, a instalação do Service Pack 17, você verá erros no `stderr.log`. As instalações do Vanilla não devem receber erros. (CQ-4353637)
-* O botão Criar na tela de marcação não respeita a ACL (Lista de controle de acesso). (NPR-40973)
+* O botão Criar na tela de marcação não respeita a ACL (Access Control List, Lista de controle de acesso). (NPR-40973)
 * Não é possível criar, acessar ou ambos os nós de cache do ContextHub no Experience Manager. (NPR-40515)
 
 #### Replicação{#foundation-replication-6518}
@@ -254,7 +256,7 @@ Se você estiver executando uma nova instalação ou planejando usar o software 
 
 #### Interface do usuário{#foundation-ui-6518}
 
-* Conforme descrito na seção [Documentação do Navegador de configuração](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=en#using-configuration-browser), _O Nome se torna o nome do nó no repositório_. No entanto, no Navegador de configuração, o Título da configuração é usado para o Caminho no CRXDE Lite, e o Nome da configuração é ignorado. (NPR-40607)
+* Conforme descrito na seção [Documentação do Navegador de configuração](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=en#using-configuration-browser), _O Nome se torna o nome do nó no repositório_. No entanto, no Navegador de configuração, o Título da configuração é usado para o Caminho no CRXDE Lite e o Nome da configuração é ignorado. (NPR-40607)
 
 <!-- #### WCM{#wcm-6518}
 
@@ -263,7 +265,7 @@ Se você estiver executando uma nova instalação ou planejando usar o software 
 #### Fluxo de trabalho{#foundation-workflow-6518}
 
 * Reverter uma versão de ativo mantém o status do ativo no modo de processamento. (NPR-41029)
-* Classificação de um problema na interface do usuário de Ativos e projetos. Algumas sobrepuseram as colunas personalizadas na interface do usuário do Assets e do Projects de acordo com os requisitos comerciais. Eles implementaram uma classificação usando a propriedade predefinida `sortable=true`. No entanto, elas estão vendo inconsistências na classificação quando há muitas entradas na interface do usuário de Projetos ou Ativos. (NPR-41027)
+* Classificação de um problema na interface do usuário de Ativos e projetos. Algumas sobrepuseram as colunas personalizadas na interface do Assets e Projetos de acordo com os requisitos comerciais. Eles implementaram uma classificação usando a propriedade predefinida `sortable=true`. No entanto, elas estão vendo inconsistências na classificação quando há muitas entradas na interface do usuário de Projetos ou Ativos. (NPR-41027)
 * Os logs estão sendo preenchidos com `NullPointerException` no `EMailNotificationService`, e os emails que os workflows devem enviar não estão sendo enviados. (NPR-40898)
 <!-- REMOVED BY ENGINEERING FROM TOTAL RELEASE CANDIDATE LIST  * The timeline is not providing references to the selected content. (NPR-40806) -->
 
@@ -297,7 +299,7 @@ Se você estiver executando uma nova instalação ou planejando usar o software 
 
 >[!NOTE]
 >
->Às vezes, um diálogo na interface do usuário do Gerenciador de pacotes é fechado durante a instalação do pacote de serviços. A Adobe recomenda que você aguarde a estabilização dos logs de erro antes de acessar a implantação. Aguarde os registros específicos relacionados à desinstalação do pacote do atualizador antes de ter certeza de que a instalação será bem-sucedida. Normalmente, esse problema ocorre em [!DNL Safari] navegador, mas pode ocorrer intermitentemente em qualquer navegador.
+>Às vezes, um diálogo na interface do usuário do Gerenciador de pacotes é fechado durante a instalação do pacote de serviços. A Adobe recomenda que você aguarde a estabilização dos logs de erro antes de acessar a implantação. Aguarde os registros específicos relacionados à desinstalação do pacote do atualizador antes de ter certeza de que a instalação será bem-sucedida. Normalmente, esse problema ocorre no [!DNL Safari] navegador, mas pode ocorrer intermitentemente em qualquer navegador.
 
 **Instalação automática**
 
@@ -436,14 +438,14 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 
 #### Plataformas compatíveis
 
-* A versão do JDK superior a 1.8.0_281 não é compatível com o servidor WebLogic JEE. (FORMS-8498, CQDOC-20383)
-* Como [!DNL Microsoft® Windows Server 2019] não suporta [!DNL MySQL 5.7] e [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] O não oferece suporte a instalações por chave na mão para o [!DNL Experience Manager Forms 6.5.10.0]. (CQDOC-18312)
+* As versões do JDK posteriores à 1.8.0_281 não são compatíveis com o servidor WebLogic JEE. (FORMS-8498, CQDOC-20383)
+* Como [!DNL Microsoft®® Windows Server 2019] não suporta [!DNL MySQL 5.7] e [!DNL JBoss®® EAP 7.1], [!DNL Microsoft®® Windows Server 2019] O não oferece suporte a instalações por chave na mão para o [!DNL Experience Manager Forms 6.5.10.0]. (CQDOC-18312)
 * O JDK 11.0.20 não é compatível com a instalação do AEM Forms no instalador do JEE. Somente o JDK 11.0.19 ou versões anteriores são compatíveis com a instalação do AEM Forms no instalador do JEE. (FORMS-10659)
 
 #### Instalação
 
 * Na plataforma JBoss® 7.1.4, quando o usuário instala o Experience Manager 6.5.16.0 ou o service pack posterior, `adobe-livecycle-jboss.ear` falha na implantação. (CQ-4351522, CQDOC-20159)
-* Após instalar o instalador completo do AEM Service Pack 6.5.18.0, a implantação do EAR falha no JEE usando o JBoss Turnkey (CQDOC-20803).
+* Após instalar o instalador completo do AEM Service Pack 6.5.18.0, a implantação do EAR falha no JEE usando o JBoss® Turnkey (CQDOC-20803).
 Para resolver o problema, localize o `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` arquivo e atualização `Adobe_Adobe_JAVA_HOME` para `Adobe_JAVA_HOME` para todas as ocorrências antes de executar o gerenciador de configurações.
 
 #### Adaptive Forms
@@ -451,6 +453,7 @@ Para resolver o problema, localize o `<AEM_Forms_Installation_dir>\jboss\bin\sta
 * Quando um Formulário adaptável é publicado, todas as suas dependências, incluindo políticas, são republicadas, mesmo que nenhuma modificação tenha sido feita nelas. (FORMS-10454)
 * Quando um usuário opta por configurar um campo pela primeira vez em um formulário adaptável, a opção para salvar uma configuração não é exibida no Navegador de propriedades. Selecionar para configurar algum outro campo do Formulário adaptável no mesmo editor resolve o problema.
 * Quando um URL de redirecionamento é definido no contêiner do guia de um Formulário adaptável, a assinatura em linha para de funcionar. (FORMS-10493)
+* Não foi possível publicar todos os modelos de Documento de registro (DoR). Somente modelos DoR baseados em localidade em inglês e seus modelos DoR associados baseados em Forms são publicados. (FORMS-10535)
 
 #### Comunicações interativas
 
