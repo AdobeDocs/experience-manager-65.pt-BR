@@ -2,9 +2,9 @@
 title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: a15b9dae5cc4405122ee95e036a83fdfbf34f9bd
+source-git-commit: 4f6ef1a6cddec307af64ca888307f19c0450467d
 workflow-type: tm+mt
-source-wordcount: '4490'
+source-wordcount: '4548'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 
 * Assets, Dynamic Media - [Suporte a faixas de várias legendas e áudio para vídeos no Dynamic Media](/help/assets/video.md#about-msma)—Agora é possível adicionar facilmente várias legendas e faixas de áudio a um vídeo principal. Esse recurso significa que os vídeos estão acessíveis em um público-alvo global. Você pode personalizar um único vídeo principal publicado para um público-alvo global em vários idiomas e seguir as diretrizes de acessibilidade para diferentes regiões geográficas. Os autores também podem gerenciar as legendas e faixas de áudio em uma única guia na interface do usuário do.
 
-* Ativos - Nos resultados da Pesquisa, agora é possível navegar até o local da pasta que contém um ativo, permitindo executar várias tarefas de gerenciamento de ativos. (ASSETS-23182)
+* Ativos - Nos resultados da Pesquisa, agora é possível navegar até o local da pasta que contém um ativo para permitir que você execute várias tarefas de gerenciamento de ativos. (ASSETS-23182)
 
 **Principais aprimoramentos**
 
@@ -51,7 +51,7 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 
 * Ativação do usuário do Editor de páginas do Sites/Componente de imagem para fazer referência a ativos do Cloud Service remoto de Ativos. (SITES-13448, SITES-13433)
 
-* Para localizar rapidamente um projeto na exibição de Lista, onde você pode ter muitos projetos em seu sistema, o Adobe agora oferece suporte para a classificação do lado do servidor. Os nós de projeto são classificados no backend com base na coluna selecionada pelo usuário antes de renderizá-los na interface. (NPR-41027)
+* Para localizar rapidamente um projeto na exibição em Lista, onde você pode ter muitos projetos em seu sistema, o Adobe agora é compatível com a classificação do lado do servidor. Os nós de projeto são classificados no backend com base na coluna selecionada pelo usuário antes de renderizá-los na interface. (NPR-41027)
 
 * O AEM 6.5.18.0 é compatível com MongoDB 5.0 para 6.0.
 
@@ -61,19 +61,19 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 
 **Forms**
 
-* **[Tratamento de erros aprimorado com manipuladores de erros personalizados no editor de regras](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html):** Agora é possível chamar uma função personalizada (usando a Biblioteca do cliente) em resposta a um erro retornado por um serviço externo e fornecer uma resposta personalizada aos usuários finais. Como alternativa, você pode realizar ações específicas para erros retornados por um serviço. Por exemplo, você pode acionar um fluxo de trabalho personalizado no back-end para códigos de erro específicos ou informar ao cliente que o serviço está inativo
+* **[Tratamento de erros aprimorado com manipuladores de erros personalizados no editor de regras](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html)** - Agora você pode chamar uma função personalizada (usando a Biblioteca do cliente) em resposta a um erro retornado por um serviço externo. Além disso, você pode fornecer uma resposta personalizada aos usuários finais. Como alternativa, você pode realizar ações específicas para erros retornados por um serviço. Por exemplo, você pode acionar um fluxo de trabalho personalizado no back-end para códigos de erro específicos ou informar ao cliente que o serviço está inativo
 
-* **[Etapa de fluxo de trabalho aprimorada do Adobe Sign](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step):** A etapa de fluxo de trabalho do Adobe Sign em fluxos de trabalho do AEM está disponível com as seguintes melhorias.
+* **[Etapa de fluxo de trabalho aprimorada do Adobe Sign](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step)** - A etapa de fluxo de trabalho do Adobe Sign em fluxos de trabalho de AEM está disponível com as seguintes melhorias.
 
-   * **Segurança aprimorada com autenticação baseada em ID do governo para Adobe Sign:** A Autenticação com base em ID do governo da Adobe Acrobat Sign oferece uma camada adicional de verificação, permitindo que os usuários autentiquem sua identidade usando IDs emitidas pelo governo (CNH, identificação nacional, passaporte). Ao usar documentos de identificação confiáveis, esse aprimoramento adiciona um nível extra de confiança ao processo de assinatura, tornando-o ideal para cenários que exigem maior segurança, conformidade e validação do usuário.
+   * **Segurança aprimorada com autenticação baseada em ID do governo para Adobe Sign** - A Autenticação com ID do governo da Adobe Acrobat Sign oferece uma camada adicional de verificação. Ele permite aos usuários autenticar sua identidade usando IDs emitidas pelo governo (CNH, identificação nacional, passaporte). Ao usar documentos de identificação confiáveis, esse aprimoramento adiciona um nível extra de confiança ao processo de assinatura, tornando-o ideal para cenários que exigem maior segurança, conformidade e validação do usuário.
 
-   * **Maior transparência com a trilha de auditoria para documentos do Adobe Sign:** Use o recurso Trilha de auditoria para obter insights detalhados sobre o ciclo de vida dos documentos do Adobe Sign. Com a Trilha de auditoria, agora é possível manter um registro abrangente de todas as ações e interações relacionadas aos documentos. Isso inclui detalhes como quem visualizou, editou ou assinou o documento, além de carimbos de data e hora para cada evento. Esse aprimoramento é fundamental para manter a conformidade, resolver disputas e garantir a integridade de seus contratos digitais.
-
-
-   * **As funções dos destinatários do Contrato foram estendidas além apenas do Signatário:** A Adobe Acrobat Sign tem a opção de expandir as funções dos recipients do Contrato além apenas do Signatário para melhor corresponder aos requisitos de fluxo de trabalho. Quando habilitado, cada recipient em um Contrato tem sua função configurável individualmente, sendo que Signatário é o padrão.
+   * **Maior transparência com a trilha de auditoria de documentos do Adobe Sign** : use o recurso Trilha de auditoria para obter insights detalhados sobre o ciclo de vida dos documentos do Adobe Sign. Com a Trilha de auditoria, agora é possível manter um registro abrangente de todas as ações e interações relacionadas aos documentos. Isso inclui detalhes como quem visualizou, editou ou assinou o documento, além de carimbos de data e hora para cada evento. Esse aprimoramento é fundamental para manter a conformidade, resolver disputas e garantir a integridade de seus contratos digitais.
 
 
-* **[Instalador completo do AEM Forms no JEE](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms.html)**: o pacote de serviços oferece um instalador completo do AEM Forms no JEE, com suporte para várias combinações de software novas, incluindo:
+   * **As funções dos destinatários do Contrato foram estendidas além apenas do Signatário** - O Adobe Acrobat Sign permite que você expanda as funções dos recipients do Contrato além apenas do Signatário para melhor corresponder aos requisitos de fluxo de trabalho. Quando habilitado, cada recipient em um Contrato tem sua função configurável individualmente, sendo que Signatário é o padrão.
+
+
+* **[Instalador completo do AEM Forms no JEE](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms.html)** - O service pack traz um instalador completo para AEM Forms no JEE que oferece suporte para várias combinações de software novas, incluindo:
    * Microsoft® Windows Server 2022
    * Diretório ativo Microsoft® 2022
    * Oracle WebLogic 14C no Windows Server 2022
@@ -81,7 +81,7 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
    * MongoDB 4.4
    * Conector JDBC do MySQL 8
 
-Se você estiver executando uma nova instalação ou planejando usar o software mais recente para o seu Forms AEM 6.5 no ambiente JEE, o Adobe recomenda usar o instalador completo do Forms AEM 6.5.18.0 no JEE. Para explorar a lista completa de softwares recém-adicionados e obsoletos, consulte a documentação do AEM Forms no JEE ou do AEM Forms no OSGi.
+Se você estiver instalando ou planejando usar o software mais recente para o seu Forms AEM 6.5 no ambiente JEE, o Adobe recomenda o uso do instalador completo do Forms AEM 6.5.18.0 no JEE. Para explorar a lista completa de softwares recém-adicionados e obsoletos, consulte a documentação do AEM Forms no JEE ou do AEM Forms no OSGi.
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
@@ -164,7 +164,7 @@ Se você estiver executando uma nova instalação ou planejando usar o software 
 
 * **Serviços de documento**
    * Quando um usuário usa um serviço transformPDF, ele falha com uma exceção: `java.lang.ClassNotFoundException: default task-158Class name com.adobe.internal.afml.AFMLExceptionInvalidParameter from package com.adobe.internal.afml` (FORMS-9957)
-   * Se o servidor for desligado durante a geração do documento PDF, erros de processamento de trabalho de inicialização pós-servidor serão gerados. O argumento -Dcom.adobe.livecycle.dsc.deferServiceStart=true precisa ser adicionado durante a inicialização do servidor. (FORMS-9836)
+   * Se o servidor for desligado durante a geração do documento PDF, erros de processamento de trabalho de inicialização pós-servidor serão gerados. O argumento -Dcom.adobe.livecycle.dsc.deferServiceStart=true deve ser adicionado durante a inicialização do servidor. (FORMS-9836)
    * Se um usuário tentar mesclar PDF usando o método AssemblerService.Invoke, o montador não executará a tarefa. (FORMS-9550)
    * Quando você atualiza para o AEM 6.5.15.0 Service Pack em ambientes OSGI e JEE, o serviço do Assembler usando um modelo específico para de funcionar. (FORMS-9355, FORMS-9445, FORMS-9408)
    * A coleta de lixo do Java™ não pode limpar o heap antigo em um servidor OSGi do AEM Forms, pois o Tempo limite global para XMLFormService não está configurado para um valor adequado. (FORMS-9384, FORMS-9035)
@@ -179,7 +179,7 @@ Se você estiver executando uma nova instalação ou planejando usar o software 
    * Quando um usuário tenta chamar uma função personalizada sem modificar um campo, como definir o valor de outro campo, ocorre uma falha. (FORMS-9921)
    * Ao trabalhar com a função de erro personalizada para o Editor de regras em um formulário adaptável, os seguintes erros ocorrem:
       * Quando um usuário tenta usar @param{boolean} com uma função, o editor de regras não permite que valores booleanos sejam transmitidos para uma função.
-      * Quando um usuário tenta usar @param{string} com uma função, o editor de regras não passa os valores opcionais e fornece um aviso de regras incompletas. (FORMS-9816, FORMS-9815)
+      * Quando um usuário tenta usar @param{string} com uma função, o editor de regras não passa os valores opcionais e avisa sobre regras incompletas. (FORMS-9816, FORMS-9815)
    * O grupo de usuários de formulários falha ao chamar o Editor de regras duas vezes em um formulário adaptável. (FORMS-9051)
    * Em um editor visual, quando um usuário seleciona um objeto de formulário, todo o objeto da instância de campo é passado para a função personalizada, em vez de apenas para o valor do campo. (FORMS-10015)
    * Quando um usuário cria um Formulário adaptável baseado em componentes principais e adiciona um componente de entrada de texto, `Is Empty` e `Is Not Empty` não funcionam no Editor de regras. (FORMS-10098)
@@ -187,7 +187,7 @@ Se você estiver executando uma nova instalação ou planejando usar o software 
    * Quando um usuário tenta criar um Formulário adaptável usando um esquema JSON complexo, ele falha. O erro ocorre como:
      `GET /content/forms/af/katezeroone/testaf1.html HTTP/1.1] com.adobe.aemds.guide.service.impl.JsonObjectCreatorImpl Could not emit JSON with context java.lang.ArrayIndexOutOfBoundsException:0`. (FORMS-9639)
    * Em um Formulário adaptável, quando um usuário desativa a caixa de seleção &quot;Concordo com os termos e condições&quot;, ela é ativada novamente quando o usuário faz a rolagem para baixo. (FORMS-9458)
-   * Quando um usuário abre um formulário adaptável em um dispositivo Android™ usando o Google Chrome/Firefox e insere o máximo de caracteres permitidos em uma caixa de texto, o valor na caixa de texto não é apagado. (FORMS-9354)
+   * Quando um usuário abre um Formulário adaptável em um dispositivo Android™, usando o Google Chrome/Firefox, e insere o máximo de caracteres permitidos em uma Caixa de texto, o valor na caixa de texto não é apagado. (FORMS-9354)
    * Quando o rótulo da caixa de seleção inclui caracteres especiais como &#39;,&#39;, &#39;/&#39; ou &#39;.&#39;, clicar no texto/rótulo não seleciona a respectiva caixa de seleção. (FORMS-9313)
    * Quando um usuário tenta validar o componente dos Termos e condições, ocorre uma falha na validação se o componente não estiver em foco enquanto o outro componente é validado. (FORMS-8725, FORMS-8913)
    * Se um formulário adaptável for recarregado após a atualização para o AEM 6.5.16.0 Service Pack, a recuperação do anexo de arquivo falhará. (FORMS-8906)
@@ -203,7 +203,7 @@ Se você estiver executando uma nova instalação ou planejando usar o software 
       * Quando um usuário assina na caixa de diálogo de assinatura usando um pincel ou teclado, pressionar a tecla Enter não fecha a caixa de diálogo.
       * A caixa de diálogo de confirmação para limpar assinatura não pode ser acessada pelo teclado.
       * O leitor de tela não lê as informações inseridas em uma caixa de diálogo.
-      * Não é possível limpar a assinatura sem usar o mouse.  (FORMS-9317)
+      * Não é possível limpar a assinatura sem usar o mouse. (FORMS-9317)
    * Quando um usuário envia um Formulário adaptável, o leitor de tela não lê as mensagens de erro dos campos obrigatórios. (FORMS-9316)
    * Quando um leitor de tela lê um formulário HTML, o problema ocorre ao ler o texto com kerning (espaçamento). (FORMS-9258)
    * Em um Formulário adaptável, as referências/notas de rodapé vinculadas ao texto não são chamadas usando o leitor de tela. (FORMS-8920)
@@ -235,7 +235,7 @@ Se você estiver executando uma nova instalação ou planejando usar o software 
 #### Platform{#foundation-platform-6518}
 
 * Após um Experience Manager básico, a instalação do Service Pack 17, você verá erros no `stderr.log`. As instalações do Vanilla não devem receber erros. (CQ-4353637)
-* O botão Criar na tela de marcação não respeita a ACL (Access Control List, Lista de controle de acesso). (NPR-40973)
+* O botão Create na tela Tagging não respeita a ACL (Access Control List, Lista de controle de acesso). (NPR-40973)
 * Não é possível criar, acessar ou ambos os nós de cache do ContextHub no Experience Manager. (NPR-40515)
 
 #### Replicação{#foundation-replication-6518}
@@ -369,7 +369,24 @@ Consulte [Recursos obsoletos e removidos](/help/release-notes/deprecated-removed
 To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
 `<designModelPath>/jcr:content.generate.json`. -->
 
-* Relacionado ao Oak a partir do Service Pack 13 e superior, o seguinte log de erros começou a aparecer, afetando o cache de persistência:
+* **A publicação de páginas não funciona no Editor de páginas após a atualização para o Service Pack 18 (6.5.18.0)**
+
+  <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> Depois de atualizar uma instância de AEM 6.5.0.0—6.5.17.0 para AEM 6.5.18.0, ao clicar em **[!UICONTROL Publicar página]** no Editor de páginas, você é redirecionado para um URL que não existe.
+
+  Para contornar esse problema, siga um destes procedimentos:
+
+   * Remova a seguinte propriedade &quot;path&quot;.
+
+     `/libs/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/publish/granite:data`
+
+   * Cole o URL correto diretamente no navegador.
+
+     `http://localhost:4504/editor.html/libs/wcm/core/content/sites/publishpagewizard.html?item=/content/we-retail/language-masters/en/about-us.html`
+
+
+
+* **Relacionado ao Oak**
+A partir do Service Pack 13 e superior, o seguinte log de erros começou a aparecer, afetando o cache de persistência:
 
   ```shell
   org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
@@ -439,7 +456,7 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 #### Plataformas compatíveis
 
 * As versões do JDK posteriores à 1.8.0_281 não são compatíveis com o servidor WebLogic JEE. (FORMS-8498, CQDOC-20383)
-* Como [!DNL Microsoft®® Windows Server 2019] não suporta [!DNL MySQL 5.7] e [!DNL JBoss®® EAP 7.1], [!DNL Microsoft®® Windows Server 2019] O não oferece suporte a instalações por chave na mão para o [!DNL Experience Manager Forms 6.5.10.0]. (CQDOC-18312)
+* Como [!DNL Microsoft® Windows Server 2019] não suporta [!DNL MySQL 5.7] e [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] O não oferece suporte a instalações por chave na mão para o [!DNL Experience Manager Forms 6.5.10.0]. (CQDOC-18312)
 * O JDK 11.0.20 não é compatível com a instalação do AEM Forms no instalador do JEE. Somente o JDK 11.0.19 ou versões anteriores são compatíveis com a instalação do AEM Forms no instalador do JEE. (FORMS-10659)
 
 #### Instalação
