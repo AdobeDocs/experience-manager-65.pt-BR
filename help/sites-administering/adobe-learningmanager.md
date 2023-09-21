@@ -1,17 +1,15 @@
 ---
-title: Integração com o Adobe Adobe Learning Manager
-seo-title: Integrating with Adobe Learning Manager
+title: Integração com o Adobe Learning Manager
 description: Saiba como integrar o AEM ao Adobe Learning Manager.
-seo-description: Learn how to integrate AEM Adobe Learning Manager.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: b325fc82-01e3-4122-8a86-ed605b135b01
-source-git-commit: 7d0dd5d96ef0174ce2a99c11be83ce2fbabdcb65
+source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
 workflow-type: tm+mt
 source-wordcount: '83'
-ht-degree: 81%
+ht-degree: 68%
 
 ---
 
@@ -19,4 +17,4 @@ ht-degree: 81%
 
 O Adobe Learning Manager (ALM) integra-se aos sites do Adobe Experience Manager (AEM). Isso permite criar seu próprio site e interfaces responsivas para dispositivos móveis para o Adobe Learning Manager com o mínimo esforço de codificação. Com essa integração, é possível criar experiências de aprendizado personalizadas para seus usuários.
 
-Para obter mais informações, consulte [Pacote do site de referência do Adobe Learning Manager (site de referência do ALM) para o AEM Sites.](https://helpx.adobe.com/br/learning-manager/adobe-learning-manager-integration-aem.html)
+Para obter mais informações, consulte [Pacote do site de referência do Adobe Learning Manager (site de referência do ALM) para AEM Sites](https://helpx.adobe.com/br/learning-manager/adobe-learning-manager-integration-aem.html).

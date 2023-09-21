@@ -1,20 +1,16 @@
 ---
 title: Conflitos de implantação do MSM
-seo-title: MSM Rollout Conflicts
 description: Saiba como lidar com conflitos de implementação do Multi Site Manager.
-seo-description: Learn how to deal with Multi Site Manager rollout conflicts.
-uuid: 7a640905-aae2-498e-b95c-2c73008fa1cd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
-discoiquuid: 16db5334-604f-44e2-9993-10d683dee5bb
 feature: Multi Site Manager
 exl-id: e145e79a-c363-4a33-b9f9-99502ed20563
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 28%
+source-wordcount: '905'
+ht-degree: 22%
 
 ---
 
@@ -22,7 +18,7 @@ ht-degree: 28%
 
 Conflitos podem ocorrer se novas páginas com o mesmo nome de página forem criadas na ramificação do blueprint e em uma ramificação dependente da live copy.
 
-Esses conflitos precisam ser tratados e resolvidos na implantação.
+Esses conflitos devem ser tratados e resolvidos na implantação.
 
 ## Tratamento de conflitos {#conflict-handling}
 
@@ -30,25 +26,25 @@ Quando páginas conflitantes existem (nas ramificações do blueprint e da live 
 
 Para garantir que a implantação não seja bloqueada, as possíveis definições podem incluir:
 
-* qual página (blueprint ou live copy) terá prioridade durante a implantação,
-* quais páginas serão renomeadas (e como),
-* como isso afetará qualquer conteúdo publicado.
+* qual página (blueprint ou live copy) tem prioridade durante a implantação,
+* quais páginas são renomeadas (e como),
+* como isso afeta qualquer conteúdo publicado.
 
-  O comportamento padrão do AEM (pronto para uso) é que o conteúdo publicado não será afetado. Portanto, se uma página que foi criada manualmente na ramificação da live copy tiver sido publicada, esse conteúdo ainda será publicado após o tratamento do conflito e a implantação.
+  O comportamento padrão do Adobe Experience Manager (AEM) (pronto para uso) é que o conteúdo publicado não é afetado. Portanto, se uma página que foi criada manualmente na ramificação da live copy tiver sido publicada, esse conteúdo ainda será publicado após o tratamento do conflito e a implantação.
 
 Além da funcionalidade padrão, os manipuladores de conflito personalizados podem ser adicionados para implementar regras diferentes. Eles também podem permitir a publicação de ações como um processo individual.
 
 ### Exemplo de cenário {#example-scenario}
 
-Nas seções a seguir, usamos o exemplo de uma nova página `b`, criado na ramificação do blueprint e da live copy (criado manualmente), para ilustrar os vários métodos de resolução de conflitos:
+Nas seções a seguir, você deve usar o exemplo de uma nova página `b`, criado na ramificação do blueprint e da live copy (criado manualmente), para ilustrar os vários métodos de resolução de conflitos:
 
 * blueprint: `/b`
 
-  Uma página principal; com 1 página secundária, nível bp-1.
+  Uma página principal; com uma página secundária, bp-level-1.
 
 * live copy: `/b`
 
-  Uma página criada manualmente na ramificação da live copy; com 1 página secundária, `lc-level-1`.
+  Uma página criada manualmente na ramificação da live copy; com uma página secundária, `lc-level-1`.
 
    * Ativado ao publicar como `/b`, junto com a página secundária.
 
@@ -78,7 +74,7 @@ Nas seções a seguir, usamos o exemplo de uma nova página `b`, criado na ramif
 
 O gerenciador de implantação permite ativar ou desativar o gerenciamento de conflitos.
 
-Isso é feito usando a [configuração do OSGi](/help/sites-deploying/configuring-osgi.md) do **Gerenciador de implantaçao Day CQ WCM**:
+Isso é feito usando o [Configuração OSGi](/help/sites-deploying/configuring-osgi.md) de **Gerente de implantação do WCM CQ do dia**:
 
 * **Lidar com conflitos com páginas criadas manualmente**:
 
@@ -108,7 +104,7 @@ O manipulador de conflitos padrão:
 * É chamado `ResourceNameRolloutConflictHandler`
 
 * Com esse manipulador, a página do blueprint recebe prioridade.
-* A classificação de serviço para esse manipulador é definida como baixa ( &quot;ou seja, abaixo do valor padrão para o `service.ranking` propriedade ), pois a suposição é que os manipuladores personalizados precisarão de uma classificação mais alta. No entanto, a classificação não é o mínimo absoluto para garantir flexibilidade quando necessária.
+* A classificação de serviço para esse manipulador é definida como baixa (ou seja, abaixo do valor padrão para o `service.ranking` propriedade ), pois a suposição é que os manipuladores personalizados precisam de uma classificação mais alta. No entanto, a classificação não é o mínimo absoluto para garantir flexibilidade quando necessária.
 
 Esse manipulador de conflitos dá prioridade ao blueprint. A página da live copy `/b` é movido (dentro da ramificação da live copy) para `/b_msm_moved`.
 
@@ -156,11 +152,11 @@ Esse manipulador de conflitos dá prioridade ao blueprint. A página da live cop
 
 Os manipuladores de conflito personalizados permitem que você implemente suas próprias regras. Usando o mecanismo de classificação de serviço, você também pode definir como eles interagem com outros manipuladores.
 
-Os manipuladores de conflito personalizados podem:
+Os manipuladores de conflito personalizados podem ter o seguinte:
 
-* Ser nomeados de acordo com suas necessidades.
-* Ser desenvolvidos/configurados de acordo com seus requisitos; por exemplo, você pode desenvolver um manipulador para que a página da Live Copy tenha prioridade.
-* Pode ser projetado para ser configurado usando o [Configuração OSGi](/help/sites-deploying/configuring-osgi.md)em especial:
+* Nomeado de acordo com suas necessidades.
+* Desenvolvido/configurado de acordo com seus requisitos; por exemplo, você pode desenvolver um manipulador para que a página da Live Copy tenha prioridade.
+* Projetado para ser configurado usando o [Configuração OSGi](/help/sites-deploying/configuring-osgi.md)em especial:
 
    * **Classificação do serviço**:
 
@@ -170,7 +166,7 @@ Os manipuladores de conflito personalizados podem:
 
 ### Comportamento quando o manuseio de conflitos é desativado {#behavior-when-conflict-handling-deactivated}
 
-Se você [desativar tratamento de conflitos](#rollout-manager-and-conflict-handling) em seguida, o AEM não executa nenhuma ação em páginas conflitantes (as páginas não conflitantes são implantadas conforme esperado).
+Se você [desativar tratamento de conflitos](#rollout-manager-and-conflict-handling), o AEM não executa nenhuma ação em páginas conflitantes (as páginas não conflitantes são implantadas conforme esperado).
 
 >[!CAUTION]
 >
@@ -184,7 +180,7 @@ Nesse caso, a live copy tem prioridade efetiva. A página do blueprint `/b` não
 
 * live copy: `/b`
 
-  Fica igual.
+  O mesmo.
 
 <table>
  <caption>

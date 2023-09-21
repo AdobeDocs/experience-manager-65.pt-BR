@@ -1,29 +1,30 @@
 ---
 title: O exportador da página
-description: Saiba como usar o Exportador de página AEM.
+description: Saiba como usar o Exportador de página do Adobe Experience Manager (AEM).
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1034'
 ht-degree: 0%
 
 ---
 
 # O exportador da página{#the-page-exporter}
 
-O AEM permite exportar uma página como uma página da Web completa, incluindo imagens, `.js` e `.css` arquivos.
+O Adobe Experience Manager (AEM) permite exportar uma página como uma página da Web completa, incluindo imagens, `.js`, e `.css` arquivos.
 
-Depois de configurado, você solicita uma exportação de página do seu navegador, substituindo `html` com `export.zip` no URL. Isso gera um arquivo (zip) contendo a página renderizada em formato html, junto com os ativos referenciados. Todos os caminhos na página (por exemplo, caminhos para imagens) são regravados para apontar para os arquivos incluídos no arquivamento ou para os recursos no servidor. O arquivo compactado (zip) pode ser baixado do navegador.
+Quando configurado, você solicita uma exportação de página do seu navegador, substituindo `html` com `export.zip` no URL. Isso gera um arquivo (zip) contendo a página renderizada em formato html, junto com os ativos referenciados. Todos os caminhos na página (por exemplo, caminhos para imagens) são regravados para apontar para os arquivos incluídos no arquivamento ou para os recursos no servidor. O arquivo compactado (zip) pode ser baixado do navegador.
 
 >[!NOTE]
 >
->Dependendo do navegador e das configurações, o download será:
+>Dependendo do navegador e das configurações, o download pode ser:
+>
 >* um arquivo morto (`<page-name>.export.zip`)
 >* uma pasta (`<page-name>`); efetivamente o arquivo já expandido
 
 ## Exportar uma página {#exporting-a-page}
 
-As etapas a seguir descrevem como exportar uma página e supor que exista um modelo de exportação para o site. Um modelo de exportação define como uma página é exportada e é específico do site. Para criar um template de exportação, consulte a [Criação de uma configuração do Exportador de página para seu site](#creating-a-page-exporter-configuration-for-your-site) seção.
+As etapas a seguir descrevem como exportar uma página e supor que exista um modelo de exportação para o site. Um modelo de exportação define o modo como uma página é exportada e é específico do site. Para criar um modelo de exportação, consulte [Criação de uma configuração do Exportador de página para seu site](#creating-a-page-exporter-configuration-for-your-site).
 
 Para exportar uma página:
 
@@ -43,26 +44,26 @@ Selecione o modelo necessário para o site e confirme com **OK**.
    Por exemplo:
    * localhost:4502/content/we-retail/language-masters/en.html
 
-   É acessado via:
+   Acessado por meio de:
    * localhost:4502/content/we-retail/language-masters/en.export.zip
 
 1. Baixe o arquivo morto no sistema de arquivos.
 
-1. Em seu sistema de arquivos, descompacte o arquivo, se necessário. Depois de expandida, haverá uma pasta com o mesmo nome da página selecionada. Esta pasta contém:
+1. Em seu sistema de arquivos, descompacte o arquivo, se necessário. Quando expandida, há uma pasta com o mesmo nome da página selecionada. Esta pasta contém:
 
    * a subpasta `content`, que é a raiz de uma série de subpastas que refletem o caminho para a página no repositório
 
       * dentro dessa estrutura há o arquivo html para a página selecionada (`<page-name>.html`)
 
-   * outros recursos (`.js` arquivos, `.css` arquivos, imagens etc.) estão localizados de acordo com as configurações no modelo de exportação
+   * outros recursos (`.js` arquivos, `.css` arquivos, imagens e assim por diante) estão localizados de acordo com as configurações no modelo de exportação
 
-1. Abra o arquivo html da página (`<unzip-dir>/<path>/<to>/<page>/<page-path>.html`) no navegador para verificar a renderização.
+1. Abra o arquivo html da página (`<unzip-dir>/<path>/<to>/<page>/<page-path>.html`) no navegador para que você possa verificar a renderização.
 
 ## Criação de uma configuração do Exportador de página para seu site {#creating-a-page-exporter-configuration-for-your-site}
 
-O exportador da página baseia-se na [Estrutura de sincronização de conteúdo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/package-summary.html). As configurações disponíveis na variável **Propriedades da página** são modelos de exportação que definem as dependências necessárias para uma página.
+O exportador da página baseia-se na [Estrutura de sincronização de conteúdo](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html). As configurações disponíveis na variável **Propriedades da página** são modelos de exportação que definem as dependências necessárias para uma página.
 
-Quando uma exportação de página é acionada, o modelo de exportação é referenciado e o caminho da página e do design são aplicados dinamicamente. O arquivo zip é então criado usando a funcionalidade padrão Sincronização de conteúdo.
+Quando uma exportação de página é acionada, o modelo de exportação é referenciado. O caminho da página e o caminho de design são aplicados dinamicamente. O arquivo zip é então criado usando a funcionalidade padrão Sincronização de conteúdo.
 
 Uma instalação pronta para uso do AEM inclui um modelo padrão em `/etc/contentsync/templates/default`.
 
@@ -93,18 +94,18 @@ Para criar um template completamente novo:
 
 ## Ativar um modelo do exportador da página para suas páginas {#activating-a-page-exporter-configuration-for-your-pages}
 
-Após configurar o template, é necessário disponibilizá-lo:
+Quando seu template estiver configurado, disponibilize-o:
 
 1. No CRXDE, navegue até a página desejada no `/content` filial. Pode ser uma página individual ou a página raiz de uma subárvore.
 
-1. No `jcr:content` da página cria a propriedade:
+1. No `jcr:content` da página, crie a propriedade:
    * `Name`: `cq:exportTemplate`
    * `Type`: `String`
    * `Value`: caminho para o modelo; por exemplo: `/etc/contentsync/templates/mysite`
 
 ### Nós de configuração do exportador da página {#page-exporter-configuration-nodes}
 
-O modelo consiste em uma estrutura de nó, pois usa o [Estrutura de sincronização de conteúdo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/package-summary.html).  Cada nó tem um `type` propriedade que define uma ação específica no processo de criação do arquivo zip.
+O modelo consiste em uma estrutura de nó, pois usa o [Estrutura de sincronização de conteúdo](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html). Cada nó tem um `type` propriedade que define uma ação específica no processo de criação do arquivo zip.
 
 <!-- For more details about the type property, refer to the Overview of configuration types section in the Content Sync framework page.
 -->
@@ -114,9 +115,9 @@ Os seguintes nós podem ser usados para criar um template de exportação:
 * `page`
 O nó da página é usado para copiar o html da página para o arquivo zip. Ele tem as seguintes características:
 
-   * É um nó obrigatório.
-   * Está localizado abaixo de `/etc/contentsync/templates/<mysite>`.
-   * É definido com a propriedade `Name`definir como `page`.
+   * Um nó obrigatório.
+   * Localizado abaixo de `/etc/contentsync/templates/<mysite>`.
+   * Definido com a propriedade `Name`definir como `page`.
    * O tipo de nó é `nt:unstructured`
 
   A variável `page` possui as seguintes propriedades:
@@ -135,9 +136,9 @@ O nó rewrite define como os links são reescritos na página exportada. Os link
 * `design`
 O nó de design é usado para copiar o design usado para a página exportada. Ele tem as seguintes características:
 
-   * É opcional.
-   * Está localizado abaixo de `/etc/contentsync/templates/<mysite>`.
-   * É definido com a propriedade `Name` definir como `design`.
+   * Opcional.
+   * Localizado abaixo de `/etc/contentsync/templates/<mysite>`.
+   * Definido com a propriedade `Name` definir como `design`.
    * O tipo de nó é `nt:unstructured`.
 
   A variável `design` possui as seguintes propriedades:
@@ -149,9 +150,9 @@ O nó de design é usado para copiar o design usado para a página exportada. El
 * `generic`
 Um nó genérico é usado para copiar recursos como clientlibs `.js` ou `.css` para o arquivo zip. Ele tem as seguintes características:
 
-   * É opcional.
-   * Está localizado abaixo de `/etc/contentsync/templates/<mysite>`.
-   * Não tem um nome específico.
+   * Opcional.
+   * Localizado abaixo de `/etc/contentsync/templates/<mysite>`.
+   * Nenhum nome específico.
    * O tipo de nó é `nt:unstructured`.
    * Tem um `type` propriedade e `type` propriedades relacionadas. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
 
@@ -174,14 +175,14 @@ Configurações personalizadas também são possíveis.
 As you may have noticed in the node structure, the **Geometrixx** page export template has a `logo` node with a `type` property set to `image`. This is a special configuration type that has been created to copy the image logo to the zip file. 
 -->
 
-Para atender a alguns requisitos específicos, pode ser necessário implementar uma [manipulador de atualização personalizado](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/handler/package-summary.html).
+Para atender a alguns requisitos específicos, implemente um [manipulador de atualização personalizado](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html).
 
 <!-- To meet some specific requirements, you may need to implement a custom `type` property: to do so, refer to the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## Exportar programaticamente uma página {#programmatically-exporting-a-page}
 
-Para exportar uma página de forma programática, você pode usar o [PageExporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) Serviço OSGI. Esse serviço permite:
+Para exportar uma página de forma programática, você pode usar o [PageExporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) Serviço OSGI. Esse serviço permite:
 
 * Exportar uma página e gravar na resposta do servlet HTTP.
 * Exporte uma página e salve o arquivo zip em um local específico.

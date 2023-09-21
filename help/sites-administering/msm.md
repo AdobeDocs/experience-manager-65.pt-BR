@@ -1,19 +1,15 @@
 ---
 title: "Reutilizar conteúdo: gerenciador de vários sites e Live Copy"
-seo-title: "Reusing Content: Multi Site Manager and Live Copy"
 description: Saiba mais sobre como reutilizar conteúdo com as Live Copies e o Gerenciador de vários sites.
-seo-description: Learn about reusing content with Live Copies and the Multi Site Manager.
-uuid: 9f955226-8fc9-4357-b90c-c6896b0dc4b4
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
-discoiquuid: c21debc3-ecf4-4aa9-ab5a-18ddd5cf2fff
 exl-id: 1e839845-fb5c-4200-8ec5-6ff744a96943
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
 workflow-type: tm+mt
-source-wordcount: '2663'
-ht-degree: 33%
+source-wordcount: '2642'
+ht-degree: 23%
 
 ---
 
@@ -28,8 +24,8 @@ O Gerenciador de vários sites (MSM) permite que você use o mesmo conteúdo de 
 
 * O MSM mantém os relacionamentos (dinâmicos) entre o conteúdo original e as live copies, de modo que:
 
-   * Ao fazer alterações no conteúdo original, elas são sincronizadas com as live copies (para aplicar essas alterações às live copies também).
-   * É possível fazer ajustes no conteúdo das live copies ao desconectar o relacionamento dinâmico de subpáginas e/ou componentes individuais. Ao fazer isso, as alterações na origem não serão mais aplicadas à live copy.
+   * Quando você altera o conteúdo original, o original e as live copies são sincronizadas (para aplicar essas alterações às live copies também).
+   * Você pode ajustar o conteúdo das live copies desconectando o relacionamento dinâmico de subpáginas individuais, componentes ou ambos. Ao fazer isso, as alterações na origem não são mais aplicadas à live copy.
 
 Esta e as seguintes páginas abordam os problemas relacionados:
 
@@ -94,7 +90,7 @@ Há muitos casos de uso para o MSM e as live copies, alguns cenários incluem:
 
 * **Várias versões**
 
-  Ou você pode usar o MSM para criar versões de uma sub-ramificação específica. Por exemplo, um subsite de suporte contendo detalhes das diferentes versões de um produto específico, onde as informações básicas permanecem constantes e apenas os recursos atualizados precisam ser alterados:
+  Ou você pode usar o MSM para criar versões de uma sub-ramificação específica. Por exemplo, um subsite de suporte que contém detalhes das diferentes versões de um produto específico, em que as informações básicas permanecem constantes e apenas os recursos atualizados devem ser alterados:
 
   ```xml
   /content
@@ -109,15 +105,15 @@ Há muitos casos de uso para o MSM e as live copies, alguns cenários incluem:
 
   >[!NOTE]
   >
-  >Em tal cenário, há sempre a questão de se fazer uma cópia simples ou usar as live copies.
+  >Nesse cenário, você deve decidir se faz uma cópia simples ou usa Live Copies.
   >
   >Há um equilíbrio de:
   >
-  >  * Quanto do conteúdo principal precisará ser atualizado nas várias versões.
+  >  * Quanto do conteúdo principal precisa ser atualizado nas várias versões.
   >
   >Contra:
   >
-  >  * Quantas cópias individuais precisarão ser ajustadas.
+  >  * Quantas cópias individuais devem ser ajustadas.
 
 ## MSM a partir da interface {#msm-from-the-ui}
 
@@ -125,16 +121,16 @@ O MSM é diretamente acessível por meio da interface usando várias opções do
 
 * **Criar Site** (**Sites**)
 
-   * O MSM ajuda você a gerenciar vários sites que compartilham conteúdo em comum; por exemplo, sites geralmente são fornecidos para públicos internacionais, de modo que a maior parte do conteúdo é comum em todos os países, com um subconjunto de conteúdo específico para cada país individual. O MSM permite [criar live copies que atualizam automaticamente um ou mais sites com base no site de origem](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Isso também ajuda a impor uma estrutura básica comum, usar o conteúdo em comum nos vários sites, manter uma aparência semelhante e concentrar os esforços no gerenciamento do conteúdo que realmente difere entre os sites.
-   * Requer uma configuração de blueprint predefinida para especificar a origem.
+   * O MSM ajuda você a gerenciar vários sites que compartilham conteúdo em comum. Por exemplo, sites geralmente são fornecidos para públicos internacionais, de modo que a maior parte do conteúdo é comum em todos os países, com um subconjunto de conteúdo específico para cada país individual. O MSM permite [criar live copies que atualizam automaticamente um ou mais sites com base no site de origem](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Isso também ajuda a impor uma estrutura básica comum, usar o conteúdo em comum nos vários sites, manter uma aparência comum e concentrar os esforços no gerenciamento do conteúdo que realmente difere entre os sites.
+   * Ela requer uma configuração de blueprint predefinida para especificar a origem.
    * Cria uma live copy da origem (predefinida).
-   * Fornece ao usuário o botão **Implantação**.
+   * Ele fornece ao usuário a **Implantação** botão.
 
 * **Criar Live Copy** (**Sites**)
 
-   * O MSM permite [criar uma live copy ad-hoc (única) de uma página individual ou sub-ramificação de um site](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page); por exemplo, duplicar uma sub-ramificação para fornecer informações sobre uma versão nova/atualizada de um produto.
+   * O MSM permite [criar uma live copy ad-hoc (única) de uma página ou sub-ramificação individual de um site](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page); por exemplo, duplicar uma subramificação para fornecer informações sobre uma versão nova/atualizada de um produto.
    * Cria uma Live Copy ad-hoc (nenhuma configuração do blueprint é necessária).
-   * Pode ser usado para criar (imediatamente) uma live copy de qualquer página/ramificação.
+   * Ele pode ser usado para criar (imediatamente) uma live copy de qualquer página/ramificação.
    * Requer **sincronização** (não fornece o botão **Implantação**).
 
 * **Visualizar propriedades** (**Sites**)
@@ -155,11 +151,11 @@ O MSM é diretamente acessível por meio da interface usando várias opções do
 
 >[!NOTE]
 >
->Alguns aspectos da funcionalidade do MSM são usados em vários outros recursos do AEM (por exemplo, Inicializações, Catálogo); nesses casos, a live copy é gerenciada por esse recurso.
+>Alguns aspectos da funcionalidade do MSM são usados em vários outros recursos do Adobe Experience Manager (AEM) (por exemplo, Inicializações, Catálogo); nesses casos, a live copy é gerenciada por esse recurso.
 
 ### Termos usados {#terms-used}
 
-Como introdução, a tabela a seguir fornece uma visão geral dos principais termos usados com o MSM; eles serão abordados com mais detalhes nas seções e páginas subsequentes:
+Como introdução, a tabela a seguir fornece uma visão geral dos principais termos usados com o MSM; eles são abordados com mais detalhes nas seções e páginas subsequentes:
 
 <table>
  <tbody>
@@ -191,7 +187,7 @@ Como introdução, a tabela a seguir fornece uma visão geral dos principais ter
   <tr>
    <td><strong>Blueprint</strong></td>
    <td>Sinônimo de Origem.</td>
-   <td>Pode ser definido por uma configuração do blueprint.</td>
+   <td>Ela pode ser definida por uma configuração de blueprint.</td>
   </tr>
   <tr>
    <td><strong>Configuração do blueprint</strong></td>
@@ -205,12 +201,12 @@ Como introdução, a tabela a seguir fornece uma visão geral dos principais ter
   </tr>
   <tr>
    <td><strong>Implantação</strong><br /> </td>
-   <td>Sincroniza desde o original até a live copy.<br /> Pode ser acionado por um autor (em uma página de blueprint) ou por um evento do sistema (conforme definido pela configuração de implantação).</td>
+   <td>Sincroniza desde o original até a live copy.<br /> Ela pode ser acionada por um autor (em uma página do blueprint) ou por um evento do sistema (conforme definido pela configuração de implantação).</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Configuração de implantação</strong></td>
-   <td>Regras que determinam quais propriedades serão sincronizadas, como e quando.</td>
+   <td>Regras que determinam quais propriedades são sincronizadas, como e quando.</td>
    <td> </td>
   </tr>
   <tr>
@@ -239,7 +235,7 @@ Como introdução, a tabela a seguir fornece uma visão geral dos principais ter
     <ul>
      <li>Remover todos os cancelamentos de herança e<br /> </li>
      <li>Retornar a página ao mesmo estado da página de origem.</li>
-    </ul> <p>A redefinição afeta todas as alterações feitas nas propriedades da página, no sistema de parágrafo e nos componentes.</p> </td>
+    </ul> <p>A redefinição afeta todas as alterações feitas nas propriedades da página, no sistema de parágrafos e nos componentes.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -257,7 +253,7 @@ Como introdução, a tabela a seguir fornece uma visão geral dos principais ter
 
 >[!NOTE]
 >
->Consulte [Visão geral da API do Java](/help/sites-developing/extending-msm.md#overview-of-the-java-api) para os nomes dos objetos.
+>Consulte [Visão geral da API do Java™](/help/sites-developing/extending-msm.md#overview-of-the-java-api) para os nomes dos objetos.
 
 ## Live Copies {#live-copies}
 
@@ -270,7 +266,7 @@ Uma live copy do MSM é uma cópia do conteúdo específico do site para o qual 
    * Superficial: uma página única
    * Profunda: a página, junto com suas páginas secundárias
 
-* As regras de sincronização, chamadas de configurações de implantação, determinam quais propriedades são sincronizadas e quando a sincronização ocorre.
+* Regras de sincronização - chamadas de configurações de implantação - determinam quais propriedades são sincronizadas e quando a sincronização ocorre.
 
 No exemplo anterior, `/content/we-retail/language-masters/en` é o site principal global em inglês. Para reutilizar o conteúdo deste site, são criadas live copies do MSM:
 
@@ -278,14 +274,14 @@ No exemplo anterior, `/content/we-retail/language-masters/en` é o site principa
 
 * O conteúdo abaixo `/content/we-retail/language-masters/en` é copiado abaixo de `/content/we-retail/us/en/`, `/content/we-retail/gb/en`, `/content/we-retail/ca/en`, e `/content/we-retail/au/en` nós. Estas são as live copies.
 
-* Os autores fazem alterações nas páginas abaixo de `/content/we-retail/language-masters/en`.
+* Os autores podem alterar as páginas abaixo `/content/we-retail/language-masters/en`.
 * Quando acionado, o MSM sincroniza essas alterações nas live copies.
 
 ### Live Copies - Composição {#live-copies-composition}
 
 >[!NOTE]
 >
->Os diagramas e descrições nesta seção representam instantâneos de possíveis live copies. Eles não são abrangentes, mas fornecem uma visão geral e destacam características específicas.
+Os diagramas e descrições nesta seção representam instantâneos de possíveis live copies. Eles não são abrangentes, mas fornecem uma visão geral e destacam características específicas.
 
 Inicialmente, ao criar uma live copy, as páginas de origem selecionadas são refletidas em uma base de um por um na live copy. Depois disso, novos recursos (páginas e/ou parágrafos) também podem ser criados diretamente na live copy. Portanto, é útil estar ciente dessas variações e de como elas afetam a sincronização. As possíveis composições incluem:
 
@@ -299,7 +295,7 @@ A forma básica da live copy tem:
 * Um relacionamento dinâmico definido para cada recurso:
 
    * Vincular o recurso de live copy ao seu blueprint/origem.
-   * São usados ao realizar a herança e a implantação.
+   * Usado ao realizar a herança e a implantação.
 
 * As alterações podem ser [sincronizadas](/help/sites-administering/msm-livecopy.md#synchronizing-your-live-copy) de acordo com os requisitos.
 
@@ -307,33 +303,33 @@ A forma básica da live copy tem:
 
 #### Live Copy com páginas que não são da Live Copy {#live-copy-with-non-live-copy-pages}
 
-Ao criar uma live copy no AEM, você pode ver e navegar pela ramificação da live copy — e usar a funcionalidade normal do AEM na ramificação da live copy. Isso significa que você (ou um processo) pode criar novos recursos (páginas e/ou parágrafos) dentro da ramificação da live copy (por exemplo, `myCanadaOnlyProduct`).
+Ao criar uma live copy no AEM, você pode ver e navegar pela ramificação da live copy — e usar a funcionalidade normal do AEM na ramificação da live copy. Isso significa que você (ou um processo) pode criar recursos (páginas, parágrafos ou ambos) dentro da ramificação da live copy. Por exemplo, `myCanadaOnlyProduct`.
 
 * Esses recursos não têm um relacionamento dinâmico com as páginas de origem/blueprints e não são sincronizados.
-* Podem ocorrer alguns cenários que o MSM trata como casos especiais. Por exemplo, quando você (ou um processo) cria uma página com a mesma posição e nome nas ramificações da origem/blueprint e da live copy. Para essas situações, consulte [Conflitos de implantação do MSM](/help/sites-administering/msm-rollout-conflicts.md) para obter mais informações.
+* Podem ocorrer cenários que o MSM trata como casos especiais. Por exemplo, quando você (ou um processo) cria uma página com a mesma posição e nome nas ramificações da origem/blueprint e da live copy. Para essas situações, consulte [Conflitos de implantação do MSM](/help/sites-administering/msm-rollout-conflicts.md) para obter mais informações.
 
 ![Conflitos de implantação](assets/chlimage_1-368.png)
 
 #### Live Copies aninhadas {#nested-live-copies}
 
-Quando você (ou um processo) cria um [nova página em uma live copy existente](#live-copy-with-non-live-copy-pages) essa nova página também pode ser configurada como uma live copy de um blueprint diferente. Isso é conhecido como uma Live Copy aninhada, em que o comportamento da segunda live copy (interna) é afetado pela primeira live copy (externa) da seguinte maneira:
+Quando você (ou um processo) cria um [página em uma live copy existente](#live-copy-with-non-live-copy-pages), essa nova página também pode ser configurada como uma live copy de um blueprint diferente. Isso é conhecido como uma Live Copy aninhada, em que o comportamento da segunda live copy (interna) é afetado pela primeira live copy (externa) da seguinte maneira:
 
 * Uma implantação profunda, acionada para a live copy de nível superior, pode continuar na live copy aninhada (por exemplo, se o acionador corresponder).
-* Quaisquer links entre as origens serão regravados nas live copies.
+* Quaisquer links entre as origens são regravados nas live copies.
 
-  Por exemplo, os links do segundo ao primeiro blueprint serão reescritos como links da segunda live copy aninhada para a primeira live copy.
+  Por exemplo, os links do segundo ao primeiro blueprint são regravados como links da segunda live copy aninhada para a primeira live copy.
 
 ![Links entre origens](assets/chlimage_1-369.png)
 
 >[!NOTE]
 >
->Se você mover/renomear uma página na ramificação da live copy, ela será tratada (internamente) como uma live copy aninhada para permitir que o AEM rastreie as relações.
+Se você mover/renomear uma página na ramificação da live copy, ela será tratada (internamente) como uma live copy aninhada para permitir que o AEM rastreie os relacionamentos.
 
 #### Live Copies empilhadas {#stacked-live-copies}
 
 Uma live copy é conhecida como Live Copy empilhada quando é criada como secundária de uma live copy superficial. Comporta-se da mesma forma que uma [Live Copy aninhada](#nested-live-copies).
 
-### Origem, blueprints e configurações do blueprint {#source-blueprints-and-blueprint-configurations}
+### Configurações de origem, blueprints e blueprint {#source-blueprints-and-blueprint-configurations}
 
 Qualquer página ou ramificação de páginas pode ser usada como origem de uma live copy.
 
@@ -362,13 +358,13 @@ A origem forma o blueprint para a live copy. O blueprint é definido quando voc�
 Uma implantação é a ação central do MSM que sincroniza as Live Copies com a origem. É possível executar implantações manualmente ou elas podem ocorrer automaticamente:
 
 * A [configuração de implantação](#rollout-configurations) pode ser definida para que [eventos](/help/sites-administering/msm-sync.md#rollout-triggers) específicos ocasionem uma implantação automaticamente.
-* Ao criar uma página do blueprint, é possível usar o [Implantação](/help/sites-administering/msm-livecopy.md#rolling-out-a-blueprint) comando para enviar alterações para a live copy.
+* Ao criar uma página do blueprint, você pode usar o [Implantação](/help/sites-administering/msm-livecopy.md#rolling-out-a-blueprint) comando para enviar alterações para a live copy.
 
   **O comando Implantação** está disponível em uma página de blueprint referenciada em uma configuração de blueprint.
 
   ![Implantação](assets/chlimage_1-370.png)
 
-* Ao criar uma página de live copy, é possível usar o [Sincronizar](/help/sites-administering/msm-livecopy.md#synchronizing-a-live-copy) comando para extrair as alterações da origem para a live copy.
+* Ao criar uma página de live copy, você pode usar o [Sincronizar](/help/sites-administering/msm-livecopy.md#synchronizing-a-live-copy) comando para extrair as alterações da origem para a live copy.
 
   A variável **Sincronizar** está sempre disponível na página da live copy (independentemente da página de origem/blueprint ser alterada por uma configuração de blueprint).
 
@@ -384,11 +380,11 @@ Uma configuração de implantação define quando e como uma live copy é sincro
 
 * **Ações de sincronização**
 
-  São executadas na live copy para sincronizá-la com a origem. Exemplos de ações são: copiar o conteúdo, ordenar nós secundários e ativar a página de live copy. O MSM fornece várias ações de sincronização.
+  Executado na Live Copy para sincronizá-la com a origem. Exemplos de ações são: copiar o conteúdo, ordenar nós secundários e ativar a página de live copy. O MSM fornece várias ações de sincronização.
 
   >[!NOTE]
   >
-  >É possível criar ações personalizadas para sua instância usando a API do Java.
+  É possível criar ações personalizadas para sua instância usando a API do Java™.
 
 As configurações de implantação podem ser reutilizadas, de modo que mais de uma live copy pode usar a mesma configuração. Várias [configurações de implantação](/help/sites-administering/msm-sync.md#installed-rollout-configurations) estão inclusas em uma instalação padrão.
 
@@ -402,7 +398,7 @@ Cada página e componente em uma live copy é associado à página e ao componen
 
 Você pode **Suspender** a herança da live copy de uma página de live copy para que você possa alterar as propriedades e os componentes da página. Ao suspender a herança, as propriedades e os componentes da página não são mais sincronizados com a origem.
 
-Ao editar uma página individual, os autores podem **cancelar a herança** de um componente. Quando a herança é cancelada, o relacionamento dinâmico é suspenso e a sincronização não ocorre para esse componente. Cancelar a herança e a sincronização são opções úteis quando subseções do conteúdo precisam ser personalizadas.
+Ao editar uma página individual, os autores podem **cancelar a herança** de um componente. Quando a herança é cancelada, o relacionamento dinâmico é suspenso e a sincronização não ocorre para esse componente. Cancelar a herança e a sincronização são opções úteis quando subseções do conteúdo devem ser personalizadas.
 
 ### Desconectar uma Live Copy {#detaching-a-live-copy}
 
@@ -410,13 +406,13 @@ Também é possível [desanexar uma live copy](/help/sites-administering/msm-liv
 
 >[!CAUTION]
 >
->A ação Desconectar é permanente e irreversível.
+A ação Desconectar é permanente e irreversível.
 
 Desanexar remove permanentemente o relacionamento dinâmico entre uma live copy e sua página de blueprint. Todas as propriedades relevantes ao MSM são removidas da live copy e as páginas da live copy se tornam uma cópia independente.
 
 >[!NOTE]
 >
->Consulte [Desconectar uma Live Copy](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy) para obter detalhes completos, incluindo o impacto relacionado em páginas secundárias e principais.
+Consulte [Desconectar uma Live Copy](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy) para obter detalhes completos, incluindo o impacto relacionado em páginas secundárias e principais.
 
 ## Etapas padrão para usar o MSM {#standard-steps-for-using-msm}
 
@@ -425,13 +421,13 @@ As etapas a seguir descrevem o procedimento padrão de uso do MSM para reutiliza
 1. Desenvolva o conteúdo do site de origem.
 1. Determine a configuração de implantação a ser usada.
 
-   1. O MSM [instala várias configurações de implantação](/help/sites-administering/msm-sync.md#installed-rollout-configurations) que satisfazem vários casos de uso.
-   1. Opcionalmente, é possível [criar uma configuração de implantação](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration), se necessário.
+   1. MSM [instala várias configurações de implantação](/help/sites-administering/msm-sync.md#installed-rollout-configurations) que podem atender a vários casos de uso.
+   1. Opcionalmente, é possível [criar uma configuração de implantação](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) se necessário.
 
-1. Determine onde você precisa [especificar as configurações de implantação a serem usadas](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use) e configure conforme necessário.
+1. Determine onde você deve [especifique as configurações de implantação a serem usadas](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use) e configure conforme necessário.
 1. Se necessário, [criar uma configuração de blueprint](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration) que identifica o conteúdo original da live copy.
 1. [Criar uma live copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy).
-1. Faça alterações no conteúdo original, conforme necessário. Você deve utilizar o processo normal de revisão e aprovação de conteúdo estabelecido pela organização.
+1. Altere o conteúdo original, conforme necessário. Empregue o processo normal de revisão e aprovação de conteúdo estabelecido por sua organização.
 1. [Implantar](/help/sites-administering/msm-livecopy.md#rolling-out-a-blueprint) o blueprint, ou [sincronizar a live copy](/help/sites-administering/msm-livecopy.md#synchronizing-a-live-copy) com as alterações.
 
 ## Personalização do MSM {#customizing-msm}
@@ -442,7 +438,7 @@ O MSM fornece ferramentas para que sua implementação possa se adaptar às comp
   [Criar uma configuração de implantação](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) quando as configurações de implantação instaladas não atenderem aos seus requisitos. Você pode usar qualquer acionador de implantação e ação de sincronização disponível.
 
 * **Ações de Sincronização Personalizadas**
-  [Criar uma ação de sincronização personalizada](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) quando as ações instaladas não atenderem aos requisitos específicos do aplicativo. O MSM fornece uma API Java para criar ações de sincronização personalizadas.
+  [Criar uma ação de sincronização personalizada](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) quando as ações instaladas não atenderem aos requisitos específicos do aplicativo. O MSM fornece uma API Java™ para criar ações de sincronização personalizadas.
 
 ## Práticas recomendadas {#best-practices}
 

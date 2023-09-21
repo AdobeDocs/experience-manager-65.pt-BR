@@ -1,24 +1,20 @@
 ---
 title: Administração de direitos de usuário, grupo e acesso
-seo-title: User, Group and Access Rights Administration
-description: Saiba mais sobre a administração de direitos de usuário, grupo e acesso no AEM.
-seo-description: Learn about user, group and access rights administration in AEM.
-uuid: 26d7bb25-5a38-43c6-bd6a-9ddba582c60f
+description: Saiba mais sobre a administração de direitos de usuário, grupo e acesso no Adobe Experience Manager.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 66674e47-d19f-418f-857f-d91cf8660b6d
 docset: aem65
 exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
 feature: Security
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
 workflow-type: tm+mt
-source-wordcount: '3118'
+source-wordcount: '3101'
 ht-degree: 1%
 
 ---
 
-# Administração de direitos de usuário, grupo e acesso{#user-group-and-access-rights-administration}
+# Administração de usuários, grupos e direitos de acesso{#user-group-and-access-rights-administration}
 
 A habilitação do acesso a um repositório CRX envolve vários tópicos:
 
@@ -29,40 +25,40 @@ A habilitação do acesso a um repositório CRX envolve vários tópicos:
 
 Os elementos básicos são:
 
-**Contas de usuário** O CRX autentica o acesso identificando e verificando um usuário (por essa pessoa ou outro aplicativo) de acordo com os detalhes mantidos na conta do usuário.
+**Contas de usuário** - O CRX autentica o acesso identificando e verificando um usuário (por essa pessoa ou outro aplicativo) de acordo com os detalhes mantidos na conta do usuário.
 
 No CRX, cada conta de usuário é um nó no espaço de trabalho. Uma conta de usuário do CRX tem as seguintes propriedades:
 
 * Ele representa um usuário do CRX.
 * Ele contém um nome de usuário e uma senha.
-* É aplicável para esse espaço de trabalho.
+* Aplicável para esse espaço de trabalho.
 * Ele não pode ter subusuários. Para direitos de acesso hierárquicos, você deve usar grupos.
 
 * Você pode especificar direitos de acesso para a conta de usuário.
 
-  No entanto, para simplificar o gerenciamento, o Adobe recomenda que (na maioria dos casos) você atribua direitos de acesso a contas de grupo. A atribuição de direitos de acesso para cada usuário individual torna-se rapidamente muito difícil de gerenciar (as exceções são determinados usuários do sistema quando apenas uma ou duas instâncias existem).
+  No entanto, para simplificar o gerenciamento, a Adobe recomenda que (na maioria dos casos) você atribua direitos de acesso a contas de grupo. A atribuição de direitos de acesso para cada usuário individual torna-se rapidamente difícil de gerenciar (as exceções são determinados usuários do sistema quando apenas uma ou duas instâncias existem).
 
-**Contas de grupo** Contas de grupo são coleções de usuários e/ou outros grupos. Eles são usados para simplificar o gerenciamento, uma vez que os direitos de acesso atribuídos a um grupo são aplicados automaticamente a todos os usuários desse grupo. Um usuário não precisa pertencer a nenhum grupo, mas geralmente pertence a vários.
+**Contas de grupo** - Contas de grupo são coleções de usuários e/ou outros grupos. Eles são usados para simplificar o gerenciamento, uma vez que os direitos de acesso atribuídos a um grupo são aplicados automaticamente a todos os usuários desse grupo. Um usuário não precisa pertencer a nenhum grupo, mas geralmente pertence a vários.
 
 No CRX, um grupo tem as seguintes propriedades:
 
 * Ele representa um grupo de usuários com direitos de acesso comuns. Por exemplo, autores ou desenvolvedores.
-* É aplicável para esse espaço de trabalho.
+* Aplicável para esse espaço de trabalho.
 * Ele pode ter membros; eles podem ser usuários individuais ou outros grupos.
 * O agrupamento hierárquico pode ser obtido com relacionamentos de membros. Não é possível colocar um grupo diretamente abaixo de outro grupo no repositório.
 * Você pode definir os direitos de acesso para todos os membros do grupo.
 
-**Direitos de acesso** O CRX usa Direitos de acesso para controlar o acesso a áreas específicas do repositório.
+**Direitos de acesso** - O CRX usa direitos de acesso para controlar o acesso a áreas específicas do repositório.
 
 Isso é feito atribuindo privilégios para permitir ou negar acesso a um recurso (nó ou caminho) no repositório. Como vários privilégios podem ser atribuídos, eles devem ser avaliados para determinar qual combinação é aplicável para a solicitação atual.
 
-O CRX permite configurar os direitos de acesso para contas de usuários e de grupos. Os mesmos princípios básicos de avaliação são então aplicados a ambos.
+O CRX permite configurar os direitos de acesso para contas de usuário e de grupo. Os mesmos princípios básicos de avaliação são então aplicados a ambos.
 
 ## Como os direitos de acesso são avaliados {#how-access-rights-are-evaluated}
 
 >[!NOTE]
 >
->Implementações do CRX [controle de acesso conforme definido pela JSR-283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
+>Implementações do CRX [controle de acesso conforme definido pela JSR-283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
 >
 >Uma instalação padrão de um repositório CRX é configurada para usar listas de controle de acesso baseadas em recursos. Esta é uma possível implementação do controle de acesso JSR-283 e uma das implementações presentes com Jackrabbit.
 
@@ -87,7 +83,7 @@ O CRX usa dois conceitos principais ao avaliar direitos de acesso:
 
    * Todos os grupos principais associados a esse usuário
 
-     Todos os direitos atribuídos a qualquer um dos grupos aos quais o usuário pertence.
+     Todos os direitos são atribuídos a qualquer um dos grupos aos quais o usuário pertence.
 
   O resultado é usado para permitir ou negar acesso ao recurso solicitado.
 
@@ -195,7 +191,7 @@ A tabela a seguir lista algumas recomendações e práticas recomendadas:
   </tr>
   <tr>
    <td><i>Mantenha a simplicidade</i></td>
-   <td><p>Investir algum tempo e pensar ao configurar uma nova instalação será bem pago.</p> <p>Aplicar uma estrutura clara simplificará a manutenção e a administração contínuas, garantindo que tanto seus colegas atuais quanto seus futuros sucessores possam entender facilmente o que está sendo implementado.</p> </td>
+   <td><p>Investir algum tempo e pensamento ao configurar uma nova instalação é bem pago.</p> <p>A aplicação de uma estrutura clara simplifica a manutenção e a administração contínuas, garantindo que seus colegas atuais e/ou futuros sucessores possam entender facilmente o que está sendo implementado.</p> </td>
   </tr>
   <tr>
    <td><i>Testar</i></td>
@@ -223,7 +219,7 @@ Você deve estar conectado ao espaço de trabalho apropriado e, em seguida, aces
 
 * **UserID**
 
-  Nome curto da conta, usado ao acessar o CRX.
+  O nome curto da conta é usado ao acessar o CRX.
 
 * **Nome principal**
 
@@ -243,17 +239,17 @@ Você deve estar conectado ao espaço de trabalho apropriado e, em seguida, aces
 
 Isso exibe todos os grupos aos quais a conta pertence. A coluna Herdado indica associação que foi herdada como resultado da associação de outro grupo.
 
-Clicar em uma GroupID (quando disponível) abrirá a [Administração de grupo](#group-administration) para esse grupo.
+Clicar em uma GroupID (quando disponível) abre a variável [Administração de grupo](#group-administration) para esse grupo.
 
 **Personificadores**
 
 Com a funcionalidade Representar, um usuário pode trabalhar em nome de outro usuário.
 
-Isso significa que uma conta de usuário pode especificar outras contas (usuário ou grupo) que podem operar com sua conta. Em outras palavras, se o usuário-B tiver permissão para representar o usuário-A, ele poderá realizar ações usando os detalhes completos da conta do usuário-A (incluindo ID, nome e direitos de acesso).
+Isso significa que uma conta de usuário pode especificar outras contas (usuário ou grupo) que podem operar com sua conta. Em outras palavras, se o usuário-B tiver permissão para representar o usuário-A, ele poderá agir usando os detalhes completos da conta do usuário-A (incluindo ID, nome e direitos de acesso).
 
 Isso permite que as contas de personificação concluam tarefas como se estivessem usando a conta que estão representando; por exemplo, durante uma ausência ou para compartilhar uma carga excessiva a curto prazo.
 
-Se uma conta representar outra, é muito difícil visualizar. Os arquivos de log não contêm informações sobre o fato de que a representação ocorreu nos eventos. Portanto, se o usuário B estiver representando o usuário A, todos os eventos serão exibidos como se fossem executados pelo usuário A pessoalmente.
+Se uma conta representar outra, é difícil visualizar. Os arquivos de log não contêm informações sobre o fato de que a representação ocorreu nos eventos. Portanto, se o usuário-B estiver representando o usuário-A, todos os eventos poderão parecer como se fossem executados pelo usuário-A pessoalmente.
 
 ### Criar uma conta de usuário {#creating-a-user-account}
 
@@ -266,8 +262,8 @@ Se uma conta representar outra, é muito difícil visualizar. Os arquivos de log
    * **Nome principal** para fornecer um nome textual completo.
    * **Caminho intermediário** que pode ser usada para formar uma estrutura em árvore.
 
-1. Clique no botão Salvar (símbolo de marca de verificação verde).
-1. A caixa de diálogo será expandida para que você possa:
+1. Clique em Salvar (símbolo de marca de verificação verde).
+1. A caixa de diálogo é expandida para que você possa fazer o seguinte:
 
    1. Configurar **Propriedades**.
    1. Consulte **Associação de grupo**.
@@ -283,17 +279,17 @@ Se uma conta representar outra, é muito difícil visualizar. Os arquivos de log
 
 ### Atualizar uma conta de usuário {#updating-a-user-account}
 
-1. Com o **Administração de usuários** caixa de diálogo abrir a exibição de lista de todas as contas.
+1. Com o **Administração de usuários** , abra a exibição de lista de todas as contas.
 1. Navegue pela estrutura de árvore.
-1. Clique na conta desejada para abri-la para edição.
+1. Clique na conta necessária para abri-la para edição.
 1. Faça uma alteração e clique em Salvar (símbolo de marca de verificação verde) para essa entrada.
 1. Clique em **Fechar** para terminar, ou **Lista...** para retornar à lista de todas as contas de usuário.
 
 ### Remover uma conta de usuário {#removing-a-user-account}
 
-1. Com o **Administração de usuários** caixa de diálogo abrir a exibição de lista de todas as contas.
+1. Com o **Administração de usuários** , abra a exibição de lista de todas as contas.
 1. Navegue pela estrutura de árvore.
-1. Selecione a conta necessária e clique em **Remover usuário**; a conta será excluída imediatamente.
+1. Selecione a conta necessária e clique em **Remover usuário**; a conta é excluída imediatamente.
 
 >[!NOTE]
 >
@@ -313,7 +309,7 @@ Você pode definir **Propriedades** para contas novas ou existentes:
 
 As propriedades existentes podem ser excluídas com o símbolo de lixeira.
 
-Com exceção da Senha, as propriedades não podem ser editadas, mas devem ser excluídas e recriadas.
+Exceto pela Senha, as propriedades não podem ser editadas, elas devem ser excluídas e recriadas.
 
 #### Alterar a senha {#changing-the-password}
 
@@ -363,7 +359,7 @@ Você deve estar conectado ao espaço de trabalho apropriado e, em seguida, aces
 
 Isso exibe todos os grupos aos quais a conta de grupo atual pertence. A coluna Herdado indica associação que foi herdada como resultado da associação de outro grupo.
 
-Clicar em uma ID de grupo abrirá a caixa de diálogo desse grupo.
+Clicar em uma ID de grupo abre a caixa de diálogo desse grupo.
 
 **Membros**
 
@@ -377,15 +373,15 @@ A variável **Herdado** indica a associação que foi herdada como resultado da 
 
 ### Criar uma conta de grupo {#creating-a-group-account}
 
-1. Abra o **Administração de grupo** diálogo.
+1. Abra o **Administração de grupo** caixa de diálogo.
 1. Clique em **Criar grupo**.
 1. Em seguida, você pode inserir as Propriedades:
 
    * **Nome principal** para fornecer um nome textual completo.
    * **Caminho intermediário** que pode ser usada para formar uma estrutura em árvore.
 
-1. Clique no botão Salvar (símbolo de marca de verificação verde).
-1. A caixa de diálogo será expandida para que você possa:
+1. Clique em Salvar (símbolo de marca de verificação verde).
+1. A caixa de diálogo é expandida para que você possa:
 
    1. Configurar **Propriedades**.
    1. Consulte **Associação de grupo**.
@@ -393,17 +389,17 @@ A variável **Herdado** indica a associação que foi herdada como resultado da 
 
 ### Atualizando uma conta de grupo {#updating-a-group-account}
 
-1. Com o **Administração de grupo** caixa de diálogo abrir a exibição de lista de todas as contas.
+1. Com o **Administração de grupo** , abra a exibição de lista de todas as contas.
 1. Navegue pela estrutura de árvore.
-1. Clique na conta desejada para abri-la para edição.
+1. Clique na conta necessária para abri-la para edição.
 1. Faça uma alteração e clique em Salvar (símbolo de marca de verificação verde) para essa entrada.
 1. Clique em **Fechar** para terminar, ou **Lista...** para retornar à lista de todas as contas de grupo.
 
 ### Remover uma conta de grupo {#removing-a-group-account}
 
-1. Com o **Administração de grupo** caixa de diálogo abrir a exibição de lista de todas as contas.
+1. Com o **Administração de grupo** , abra a exibição de lista de todas as contas.
 1. Navegue pela estrutura de árvore.
-1. Selecione a conta necessária e clique em **Remover grupo**; a conta será excluída imediatamente.
+1. Selecione a conta necessária e clique em **Remover grupo**; a conta é excluída imediatamente.
 
 >[!NOTE]
 >
@@ -439,7 +435,7 @@ Ou exclua um membro existente com o símbolo de lixeira.
 
 ## Gerenciamento de direitos de acesso {#access-right-management}
 
-Com o **Controle de acesso** guia do CRXDE Lite você pode definir as políticas de controle de acesso e atribuir os privilégios relacionados.
+Com o **Controle de acesso** do CRXDE Lite, você poderá definir as políticas de controle de acesso e atribuir os privilégios relacionados.
 
 Por exemplo, para **Caminho atual** selecione o recurso desejado no painel esquerdo, a guia Controle de acesso no painel inferior direito:
 
@@ -451,13 +447,13 @@ As políticas são categorizadas de acordo com:
 
   Essas políticas podem ser aplicadas.
 
-  Estas são as políticas disponíveis para criar uma política local. Depois de selecionar e adicionar uma política aplicável, ela se torna uma política local.
+  Estas são as políticas disponíveis para criar uma política local. Quando você seleciona e adiciona uma política aplicável, ela se torna uma política local.
 
 * **Políticas do controle de acesso local**
 
   Estas são as políticas de controle de acesso que você aplicou. Em seguida, você pode atualizá-los, solicitá-los ou removê-los.
 
-  Uma política local substituirá quaisquer políticas herdadas do pai.
+  Uma política local substitui todas as políticas herdadas do pai.
 
 * **Políticas do controle de acesso efetivo**
 
@@ -469,7 +465,7 @@ As políticas podem ser selecionadas para:
 
 * **Caminho atual**
 
-  Como no exemplo acima, selecione um recurso no repositório. As políticas para esse &quot;caminho atual&quot; serão exibidas.
+  Como no exemplo acima, selecione um recurso no repositório. As políticas para esse &quot;caminho atual&quot; são mostradas.
 
 * **Repositório**
 
@@ -479,7 +475,7 @@ As políticas podem ser selecionadas para:
 
   Uma entidade registrada no repositório.
 
-  Você pode digitar a variável **Principal** ou clique no ícone à direita do campo para abrir a variável **Selecionar principal** diálogo.
+  Você pode digitar a variável **Principal** ou clique no ícone à direita do campo para abrir a variável **Selecionar principal** caixa de diálogo.
 
   Isso permite **Pesquisar** para um **Usuário** ou **Grupo**. Selecione o principal necessário na lista resultante e clique em **OK** para trazer o valor de volta para a caixa de diálogo anterior.
 
@@ -507,7 +503,7 @@ Os seguintes privilégios estão disponíveis para seleção ao adicionar uma en
   </tr>
   <tr>
    <td><code>rep:write</code></td>
-   <td>Este é um privilégio agregado específico do jackrabbit de jcr:write e jcr:nodeTypeManagement.<br /> </td>
+   <td>Este é um privilégio agregado específico do Jackrabbit para jcr:write e jcr:nodeTypeManagement.<br /> </td>
   </tr>
   <tr>
    <td><code>jcr:all</code></td>
@@ -583,7 +579,7 @@ Os seguintes privilégios estão disponíveis para seleção ao adicionar uma en
   </tr>
   <tr>
    <td><code>rep:privilegeManagement</code></td>
-   <td>Registrar novo privilégio.</td>
+   <td>Registre um novo privilégio.</td>
   </tr>
  </tbody>
 </table>
@@ -596,11 +592,11 @@ Você também pode registrar novos privilégios:
 
    ![ac_permissions](assets/ac_privileges.png)
 
-1. Use o **Registrar privilégio** ícone (**+**) para abrir a caixa de diálogo e definir um novo privilégio:
+1. Use o **Registrar privilégio** ícone (**+**) para que você possa definir um privilégio:
 
    ![ac_privilegieregister](assets/ac_privilegeregister.png)
 
-1. Clique em **OK** para salvar. O privilégio agora estará disponível para seleção.
+1. Clique em **OK** para salvar. O privilégio agora está disponível para seleção.
 
 ### Adicionando uma entrada de controle de acesso {#adding-an-access-control-entry}
 
@@ -614,7 +610,7 @@ Você também pode registrar novos privilégios:
 
    ![crx_accesscontrol_newlocal](assets/crx_accesscontrol_newlocal.png)
 
-1. Clique em **+** ícone para adicionar uma nova entrada:
+1. Clique em **+** para que você possa adicionar uma entrada:
 
    ![crx_accesscontrol_addentry](assets/crx_accesscontrol_addentry.png)
 
@@ -622,29 +618,29 @@ Você também pode registrar novos privilégios:
    >
    >No momento, é necessária uma solução alternativa para especificar uma cadeia de caracteres vazia.
    >
-   >Para isso, você precisa usar &quot;&quot;.
+   >Para isso, você deve usar `""`.
 
-1. Defina sua política de controle de acesso e clique em **OK** para salvar. Sua nova política irá:
+1. Defina sua política de controle de acesso e clique em **OK** para salvar. Sua nova política é:
 
-   * ser listado em **Política do controle de acesso local**
-   * as alterações serão refletidas na **Políticas do controle de acesso efetivo**.
+   * listado em **Política do controle de acesso local**
+   * as alterações são refletidas na **Políticas do controle de acesso efetivo**.
 
-O CRX validará sua seleção; para um determinado principal, existe (no máximo) 1 negação e 1 entrada de permissão em um determinado nó. A implementação sempre limpa as entradas redundantes e garante que o mesmo privilégio não seja listado nas entradas de permissão e negação.
+O CRX valida sua seleção; para um determinado principal, existe (no máximo) uma negação e uma entrada de permissão em um determinado nó. A implementação sempre limpa as entradas redundantes e garante que o mesmo privilégio não seja listado nas entradas de permissão e negação.
 
 ### Ordenação de Políticas do Controle de Acesso Local {#ordering-local-access-control-policies}
 
 A ordem na lista indica a ordem em que as políticas são aplicadas.
 
-1. No quadro de **Políticas do controle de acesso local** selecione a entrada necessária e arraste-a para a nova posição na tabela.
+1. No quadro de **Políticas do controle de acesso local**, selecione a entrada necessária e arraste-a para a nova posição na tabela.
 
    ![crx_accesscontrol_reorder](assets/crx_accesscontrol_reorder.png)
 
-1. As alterações serão mostradas em ambas as tabelas para o **Local** e a variável **Políticas do controle de acesso efetivo**.
+1. As alterações são mostradas em ambas as tabelas para o **Local** e a variável **Políticas do controle de acesso efetivo**.
 
 ### Remover uma política de controle de acesso {#removing-an-access-control-policy}
 
-1. No quadro de **Políticas do controle de acesso local** clique no ícone vermelho (-) à direita da entrada.
-1. A entrada será removida de ambas as tabelas para o **Local** e a variável **Políticas do controle de acesso efetivo**.
+1. No quadro de **Políticas do controle de acesso local**, clique no ícone vermelho (-) à direita da entrada.
+1. A entrada é removida de ambas as tabelas para a variável **Local** e a variável **Políticas do controle de acesso efetivo**.
 
 ### Teste de uma política de controle de acesso {#testing-an-access-control-policy}
 
