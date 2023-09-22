@@ -1,31 +1,27 @@
 ---
 title: Desenvolvimento com o CRXDE Lite
-seo-title: Developing with CRXDE Lite
-description: o CRXDE Lite é incorporado ao AEM e permite executar tarefas de desenvolvimento padrão no navegador
-seo-description: CRXDE Lite is embedded into AEM and enables you to perform standard development tasks in the browser
-uuid: f4890354-d8b8-4fb9-af2f-3359f931f883
+description: O CRXDE Lite está incorporado ao Adobe Experience Manager (AEM) e permite executar tarefas de desenvolvimento padrão no navegador
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: 4537c1fb-f99c-42e2-a222-b037794bdb52
 docset: aem65
 exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '2137'
+source-wordcount: '2120'
 ht-degree: 2%
 
 ---
 
 # Desenvolvimento com o CRXDE Lite{#developing-with-crxde-lite}
 
-Esta seção descreve como desenvolver seu aplicativo AEM usando o CRXDE Lite.
+Esta seção descreve como desenvolver o aplicativo Adobe Experience Manager (AEM) usando o CRXDE Lite.
 
 Consulte a documentação de visão geral para obter mais informações sobre os diferentes ambientes de desenvolvimento disponíveis.
 
 o CRXDE Lite é incorporado ao AEM e permite executar tarefas de desenvolvimento padrão no navegador. Com o CRXDE Lite, você pode criar um projeto, criar e editar arquivos (como .jsp e .java), pastas, modelos, componentes, caixas de diálogo, nós, propriedades e pacotes ao fazer logon.
-O CRXDE Lite é recomendado quando você não tem acesso direto ao servidor AEM, quando você desenvolve um aplicativo estendendo ou modificando os componentes prontos para uso e pacotes Java ou quando não precisa de um depurador dedicado, autocompletar de código e realce de sintaxe.
+O CRXDE Lite é recomendado quando você não tem acesso direto ao servidor AEM. Ou, quando você desenvolve uma aplicação estendendo ou modificando os componentes prontos para uso e pacotes Java™, ou quando não precisa de um depurador dedicado, autocompletar de código e realce de sintaxe.
 
 >[!NOTE]
 >
@@ -35,7 +31,7 @@ O CRXDE Lite é recomendado quando você não tem acesso direto ao servidor AEM,
 
 >[!NOTE]
 >
->É recomendável usar a variável [Ferramentas de desenvolvedor de AEM para Eclipse](/help/sites-developing/aem-eclipse.md) e a variável [Extensão de colchetes HTL para AEM](/help/sites-developing/aem-brackets.md) durante o desenvolvimento do projeto.
+>O Adobe recomenda que você use o [Ferramentas de desenvolvedor de AEM para Eclipse](/help/sites-developing/aem-eclipse.md) e a variável [Extensão de colchetes HTL para AEM](/help/sites-developing/aem-brackets.md) durante o desenvolvimento do projeto.
 
 ## Introdução ao CRXDE Lite {#getting-started-with-crxde-lite}
 
@@ -61,11 +57,11 @@ O CRXDE Lite oferece a seguinte funcionalidade:
  <tbody>
   <tr>
    <td>Barra do seletor superior</td>
-   <td>Permite alternar rapidamente entre CRXDE Lite, Gerenciador de pacotes e Compartilhamento de pacotes.</td>
+   <td>Alterne rapidamente entre o CRXDE Lite, o Gerenciador de pacotes e o Compartilhamento de pacotes.</td>
   </tr>
   <tr>
    <td>Widget de caminho de nó</td>
-   <td><p>Exibe o caminho para o nó atualmente selecionado.</p> <p>Você também pode usá-lo para pular para um nó, inserindo o caminho manualmente ou colando-o de outro lugar e pressionando Enter.</p> <p>Também oferece suporte para procurar nós com nomes de nó específicos. Insira o nome do nó que deseja localizar e aguarde (ou pressione o símbolo de pesquisa no lado direito). Você pode tentar inserir, por exemplo, a string <em>carvalho</em> no widget para ver como funciona. Se um determinado nó ou nós forem carregados no painel do explorador, a lista será exibida, e você poderá selecionar o caminho e pressionar Enter para navegar até ele. Observe que isso só funciona para os nós atualmente carregados no aplicativo cliente CRXDE no navegador. Se quiser pesquisar todo o repositório, use Ferramentas e, em seguida, Consulta.</p> </td>
+   <td><p>Exibe o caminho para o nó selecionado.</p> <p>Você também pode usá-lo para pular para um nó, inserindo o caminho manualmente ou colando-o de outro lugar e pressionando Enter.</p> <p>Também oferece suporte à procura de nós com um nome de nó específico. Insira o nome do nó que deseja localizar e aguarde (ou pressione o símbolo de pesquisa no lado direito). Você pode tentar inserir, por exemplo, a string <em>carvalho</em> no widget para ver como funciona. Se um determinado nó ou nós forem carregados no painel do explorador, a lista será exibida, e você poderá selecionar o caminho e pressionar Enter para navegar até ele. Ele só funciona para os nós carregados no aplicativo cliente CRXDE no navegador. Se quiser pesquisar todo o repositório, use Ferramentas e, em seguida, Consulta.</p> </td>
   </tr>
   <tr>
    <td>Painel do Explorer</td>
@@ -73,7 +69,7 @@ O CRXDE Lite oferece a seguinte funcionalidade:
   </tr>
   <tr>
    <td>Editar painel</td>
-   <td><p><strong>Início</strong> guia: permite pesquisar conteúdo e/ou documentação e acessar recursos do desenvolvedor (documentação, blog do desenvolvedor, base de conhecimento) e suporte (página inicial e centro de suporte do Adobe).<br /> </p> <p>Clique duas vezes em um arquivo na <strong>Explorer</strong> para exibir seu conteúdo; como por exemplo um arquivo .jsp ou .java. Em seguida, você pode modificá-lo e salvar as alterações.</p> <p>Quando um arquivo for editado na variável <strong>Editar</strong> as seguintes ferramentas estão disponíveis na barra de ferramentas:<br /> </p> - <strong>Mostrar na árvore: </strong>mostra o arquivo na árvore do repositório.<br /> - <strong>Pesquisar/Substituir...</strong>: pesquisar ou substituir.<br /> <br /> Clique duas vezes na linha de status da <strong>Editar</strong> painel abre a <strong>Ir para a linha</strong> para que você possa inserir um número de linha específico para acessar.<br /> </td>
+   <td><p><strong>Início</strong> guia: permite pesquisar conteúdo e/ou documentação e acessar recursos do desenvolvedor (documentação, blog do desenvolvedor, base de conhecimento) e suporte (página inicial e centro de suporte do Adobe).<br /> </p> <p>Clique duas vezes em um arquivo na <strong>Explorer</strong> para que você possa exibir seu conteúdo. Por exemplo, um arquivo .jsp ou .java. Em seguida, você pode modificá-lo e salvar as alterações.</p> <p>Quando um arquivo for editado na variável <strong>Editar</strong> as seguintes ferramentas estão disponíveis na barra de ferramentas:<br /> </p> - <strong>Mostrar na árvore: </strong>mostra o arquivo na árvore do repositório.<br /> - <strong>Pesquisar/Substituir...</strong>: pesquisar ou substituir.<br /> <br /> Clique duas vezes na linha de status da <strong>Editar</strong> painel abre a <strong>Ir para a linha</strong> para que você possa inserir um número de linha específico para acessar.<br /> </td>
   </tr>
   <tr>
    <td>Guia Propriedades<br /> </td>
@@ -81,15 +77,15 @@ O CRXDE Lite oferece a seguinte funcionalidade:
   </tr>
   <tr>
    <td>Guia Controle de acesso</td>
-   <td><p>Exibir permissões com base no caminho, nível de repositório ou principal atual.</p> <p>As permissões são divididas em</p> <p>- <strong>Política do controle de acesso aplicável</strong>: as políticas que podem ser aplicadas à seleção atual.</p> <p>- <strong>Políticas do controle de acesso local</strong>: as políticas atuais aplicadas localmente à seleção atual.</p> <p>- <strong>Políticas do controle de acesso efetivo</strong>: as políticas atuais aplicadas à seleção atual podem ser definidas localmente ou herdadas dos nós principais.</p> <p>Observação. Para poder ver as informações de Controle de acesso, o usuário conectado ao CRXDE Lite deve ter direitos de leitura das entradas de ACL. O usuário anônimo não pode ver essas informações por padrão. Faça logon como, por exemplo, administrador para ver as informações.</p> </td>
+   <td><p>Exibir permissões com base no caminho, nível de repositório ou principal.</p> <p>As permissões são divididas em</p> <p>- <strong>Política do controle de acesso aplicável</strong>: as políticas que podem ser aplicadas à seleção.</p> <p>- <strong>Políticas do controle de acesso local</strong>: as políticas aplicadas localmente à seleção.</p> <p>- <strong>Políticas do controle de acesso efetivo</strong>: as políticas aplicadas para a seleção, podem ser definidas localmente ou herdadas dos nós principais.</p> <p>Observação. Para conseguir ver as informações do Controle de acesso, o usuário conectado ao CRXDE Lite deve ter direitos de leitura para entradas de ACL. O usuário anônimo não pode ver essas informações por padrão: faça logon como administrador para ver as informações, por exemplo.</p> </td>
   </tr>
   <tr>
    <td>Guia Replicação</td>
-   <td><p>Exibir o status de replicação do nó atual. É possível replicar e replicar e excluir o nó atual.</p> </td>
+   <td><p>Exiba o status de replicação do nó. É possível replicar e replicar e excluir o nó.</p> </td>
   </tr>
   <tr>
    <td>Guia Console<br /> </td>
-   <td><p><strong>Logs do servidor</strong>:</p> <p>Exibe mensagens de logs. Você pode configurar o nível de log, limpar o console, fixar na posição de rolagem selecionada e ativar/desativar a exibição de mensagens.<br /> </p> <p><strong>Controle da versão</strong>:</p> <p>Exibe mensagens de controle de versão.<br /> </p> </td>
+   <td><p><strong>Logs do servidor</strong>:</p> <p>Exibe mensagens de logs. Você pode configurar o nível de log, limpar o console, fixar na posição de rolagem selecionada e ativar ou desativar a exibição de mensagens.<br /> </p> <p><strong>Controle da versão</strong>:</p> <p>Exibe mensagens de controle de versão.<br /> </p> </td>
   </tr>
   <tr>
    <td>Guia Criar informações<br /> </td>
@@ -97,11 +93,11 @@ O CRXDE Lite oferece a seguinte funcionalidade:
   </tr>
   <tr>
    <td>Atualizar<br /> </td>
-   <td>Atualiza a seleção atual. As alterações de outros usuários são atualizadas na sua visualização do repositório. As alterações feitas não serão afetadas.<br /> </td>
+   <td>Atualiza a seleção. As alterações de outros usuários são atualizadas na sua visualização do repositório. As alterações feitas não serão afetadas.<br /> </td>
   </tr>
   <tr>
    <td>Salvar Tudo</td>
-   <td><p><strong>Salvar Tudo</strong>:<br /> </p> <p>Salva todas as alterações feitas. Até que você clique em Salvar, as alterações serão temporárias e serão perdidas quando você sair do console.</p> <p><strong>Reverter</strong>:</p> <p>Descarta todas as alterações feitas no nó selecionado desde a última ação de salvamento e, em seguida, recarrega o estado atual do repositório para o nó selecionado.</p> <p><strong>Reverter tudo</strong>:</p> <p>Descarta todas as alterações feitas em todo o repositório desde a última ação de salvamento e recarrega o estado atual do repositório.</p> </td>
+   <td><p><strong>Salvar Tudo</strong>:<br /> </p> <p>Salva todas as alterações feitas. Até que você clique em Salvar, as alterações serão temporárias e serão perdidas quando você sair do console.</p> <p><strong>Reverter</strong>:</p> <p>Descarta todas as alterações feitas no nó selecionado desde a última ação de salvamento e, em seguida, recarrega o estado do repositório para o nó selecionado.</p> <p><strong>Reverter tudo</strong>:</p> <p>Descarta todas as alterações feitas em todo o repositório desde a última ação de salvamento, e recarrega o estado do repositório.</p> </td>
   </tr>
   <tr>
    <td>Criar ...<br /> </td>
@@ -133,11 +129,11 @@ O CRXDE Lite oferece a seguinte funcionalidade:
   </tr>
   <tr>
    <td>Ferramentas<br /> </td>
-   <td><p>Menu suspenso com as seguintes ferramentas:</p> <p>- <strong>Configuração do servidor...</strong>: para acessar o Felix Console.</p> <p>- <strong>Consulta ...</strong>: para consultar o repositório.</p> <p>- <strong>Privilégios ...</strong>: para abrir o gerenciamento de privilégios, onde você pode exibir e adicionar privilégios.</p> <p>- <strong>Testar o controle de acesso...</strong>: um local onde você pode testar a permissão para determinado caminho e/ou principal.</p> <p>- <strong>Exportar tipo de nó</strong>: para exportar tipos de nó no sistema como notação cnd.</p> <p>- <strong>Importar tipo de nó ...</strong>: para importar tipos de nó usando a notação cnd.</p> <p>- <strong>Instalar o SiteCatalyst Debugger...</strong>: instruções sobre como instalar o Analytics Debugger.</p> </td>
+   <td><p>Menu suspenso com as seguintes ferramentas:</p> <p>- <strong>Configuração do servidor...</strong>: para acessar o Felix Console.</p> <p>- <strong>Consulta ...</strong>: para consultar o repositório.</p> <p>- <strong>Privilégios ...</strong>: para abrir o gerenciamento de privilégios, onde você pode exibir e adicionar privilégios.</p> <p>- <strong>Testar o controle de acesso...</strong>: um local onde você pode testar a permissão para um determinado caminho e/ou principal.</p> <p>- <strong>Exportar tipo de nó</strong>: para exportar tipos de nó no sistema como notação cnd.</p> <p>- <strong>Importar tipo de nó ...</strong>: para importar tipos de nó usando a notação cnd.</p> <p>- <strong>Instalar o SiteCatalyst Debugger...</strong>: instruções sobre como instalar o Analytics Debugger.</p> </td>
   </tr>
   <tr>
    <td>Widget de logon<br /> </td>
-   <td><p>Exibe os usuários conectados no momento e o espaço de trabalho no qual eles estão conectados, por exemplo, admin@crx.default.</p> <p>Clique nele para fazer logon ou refazer logon como um usuário específico. Se você não especificar um espaço de trabalho para fazer logon, você será conectado ao espaço de trabalho padrão, crx.default.</p> <p>Se quiser navegar pelo repositório como um usuário anônimo, use <strong>anônimo</strong> como o nome de logon e qualquer senha (por exemplo, um espaço ou um ponto).<br /> </p> <p>Se a sua autorização não for mais válida (por exemplo, se tiver expirado), o widget de login exibirá "<strong>Não autorizado - Login...</strong>". Clique para fazer logon novamente.</p> </td>
+   <td><p>Exibe os usuários conectados e o espaço de trabalho no qual eles estão conectados, por exemplo, admin@crx.default.</p> <p>Clique nele para fazer logon ou refazer logon como um usuário específico. Se você não especificar um espaço de trabalho para fazer logon, estará conectado ao espaço de trabalho padrão, crx.default.</p> <p>Se quiser navegar pelo repositório como um usuário Anônimo, use <strong>anônimo</strong> como o nome de logon e qualquer senha (por exemplo, um espaço ou um ponto).<br /> </p> <p>Se a sua autorização não for mais válida (por exemplo, se tiver expirado), o widget de login exibirá "<strong>Não autorizado - Login...</strong>". Clique para fazer logon novamente.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -147,7 +143,7 @@ O CRXDE Lite oferece a seguinte funcionalidade:
 Para criar uma pasta com o CRXDE Lite:
 
 1. Abra o CRXDE Lite no navegador.
-1. No painel Navegação, clique com o botão direito do mouse na pasta em que deseja criar a nova pasta, selecione **Criar ...**, depois **Criar pasta ...**.
+1. No painel Navegação, clique com o botão direito do mouse na pasta em que deseja criar a pasta e selecione **Criar ...**, depois **Criar pasta ...**.
 
 1. Insira a pasta **Nome** e clique em **OK**.
 
@@ -160,7 +156,7 @@ Para criar um template com CRXDE Lite:
 1. Abra o CRXDE Lite no navegador.
 1. No painel Navegação, clique com o botão direito do mouse na pasta onde deseja criar o modelo e selecione **Criar ...**, depois **Criar modelo ...**.
 
-1. Insira o **Rótulo**, **Título**, **Descrição**, **Tipo de recurso** e **Classificação** do modelo. Clique em **Avançar**.
+1. Insira o **Rótulo**, **Título**, **Descrição**, **Tipo de recurso**, e **Classificação** do modelo. Clique em **Avançar**.
 
 1. Esta etapa é opcional: defina a **Caminhos permitidos**. Clique em **Avançar**
 
@@ -187,9 +183,9 @@ Para criar um componente com CRXDE Lite:
 1. Abra o CRXDE Lite no navegador.
 1. No painel Navegação, clique com o botão direito do mouse na pasta em que deseja criar o componente, selecione **Criar ...**, depois **Criar componente...**.
 
-1. Insira o **Rótulo**, **Título**, **Descrição**, **Tipo de Super Resource** e **Grupo** do componente. Clique em **Avançar**.
+1. Insira o **Rótulo**, **Título**, **Descrição**, **Tipo de Super Resource**, e **Grupo** do componente. Clique em **Avançar**.
 
-1. Esta etapa é opcional: definir as propriedades do componente **É Contêiner,** **Sem decoração**, **Nome da célula** e **Caminho da caixa de diálogo**. Clique em **Avançar**.
+1. Esta etapa é opcional: definir as propriedades do componente **É Contêiner,** **Sem decoração**, **Nome da célula**, e **Caminho da caixa de diálogo**. Clique em **Avançar**.
 
 1. Esta etapa é opcional: defina a propriedade do componente **Pais permitidos**. Clique em **Avançar**.
 
@@ -218,26 +214,26 @@ Ele cria uma caixa de diálogo com a seguinte estrutura:
 
 `dialog[cq:Dialog]/items[cq:Widget]/items[cq:WidgetCollection]/tab1[cq:Panel]`
 
-Agora você pode adaptar a caixa de diálogo às suas necessidades modificando propriedades ou criando novos nós.
+Agora você pode adaptar a caixa de diálogo às suas necessidades modificando propriedades ou criando nós.
 
-Você também pode usar o Editor de diálogo para editar um diálogo. Clicar duas vezes no nó da caixa de diálogo no CRXDE Lite exibirá o editor. Mais informações sobre o Editor de diálogo podem ser encontradas [aqui](/help/sites-developing/dialog-editor.md).
+Você também pode usar o Editor de diálogo para editar um diálogo. Clicar duas vezes no nó da caixa de diálogo no CRXDE Lite exibe o editor. Mais informações sobre o Editor de diálogo podem ser encontradas [aqui](/help/sites-developing/dialog-editor.md).
 
 ## Criando um nó {#creating-a-node}
 
 Para criar um nó com CRXDE Lite:
 
 1. Abra o CRXDE Lite no navegador.
-1. No painel Navegação, clique com o botão direito do mouse no nó em que deseja criar o novo nó, selecione **Criar ...**, depois **Criar nó ...**.
+1. No painel Navegação, clique com o botão direito do mouse no nó em que deseja criar o nó, selecione **Criar ...**, depois **Criar nó ...**.
 1. Insira o **Nome** e a variável **Tipo**. Clique em **OK**.
 1. Clique em **Salvar tudo** para salvar as alterações no servidor.
 
-Agora você pode adaptar o nó às suas necessidades modificando propriedades ou criando novos nós.
+Agora você pode adaptar o nó às suas necessidades modificando propriedades ou criando nós.
 
 >[!NOTE]
 >
 >A maioria das operações de edição, incluindo Criar nó, mantém todas as alterações na memória e só as armazena no repositório após salvar (por meio do botão &quot;Salvar tudo&quot;). No entanto, algumas operações, como mover, são automaticamente mantidas.
 >
->A validação em relação ao fato de o nó recém-criado ser permitido pelo tipo de nó do nó principal também é realizada pelo repositório JCR primeiro ao salvar as alterações. Se você receber uma mensagem de erro ao salvar um nó, verifique se a estrutura do conteúdo é válida (por exemplo, não é possível criar um `nt:unstructured` nó como filho de `nt:folder` nó).
+>A validação sobre se o nó recém-criado é permitido pelo tipo de nó do nó principal também é realizada pelo repositório JCR primeiro ao salvar as alterações. Se você receber uma mensagem de erro ao salvar um nó, verifique se a estrutura do conteúdo é válida (por exemplo, não é possível criar um `nt:unstructured` nó como filho de `nt:folder` nó).
 
 ## Criação de uma propriedade {#creating-a-property}
 
@@ -245,13 +241,13 @@ Para criar uma propriedade com o CRXDE Lite:
 
 1. Abra o CRXDE Lite no navegador.
 1. No painel Navegação, selecione o nó ao qual deseja adicionar a nova propriedade.
-1. No **Propriedades** no painel inferior, digite a **Nome**, o **Tipo** e a variável **Valor**. Clique em **Adicionar**.
+1. No **Propriedades** no painel inferior, digite a **Nome**, o **Tipo**, e o **Valor**. Clique em **Adicionar**.
 
 1. Clique em **Salvar tudo** para salvar as alterações no servidor.
 
 ## Criação de um script {#creating-a-script}
 
-Para criar um novo script:
+Para criar um script:
 
 1. Abra o CRXDE Lite no navegador.
 1. No painel Navegação, clique com o botão direito do mouse no componente em que deseja criar o script, selecione **Criar ...**, depois **Criar arquivo...**.
@@ -272,7 +268,7 @@ Para exportar uma definição de tipo de nó:
 1. Selecione o nó desejado.
 1. Selecionar **Ferramentas** depois **Exportar tipo de nó**.
 
-1. A definição na notação cnd será exibida no navegador. Salve as informações, se necessário.
+1. A definição, em notação de contagem, é exibida no navegador. Salve as informações, se necessário.
 
 Para importar uma definição de tipo de nó:
 
@@ -285,7 +281,7 @@ Para importar uma definição de tipo de nó:
 
 ## Logs {#logging}
 
-Com o CRXDE Lite, é possível exibir o arquivo `error.log` que está localizado no sistema de arquivos em `<crx-install-dir>/crx-quickstart/server/logs` e filtrá-lo com o nível de log apropriado. Proceda da seguinte forma:
+Com o CRXDE Lite, é possível exibir o arquivo `error.log` que está no sistema de arquivos em `<crx-install-dir>/crx-quickstart/server/logs` e filtrá-lo com o nível de log apropriado. Proceda da seguinte forma:
 
 1. Abra o CRXDE Lite no navegador.
 1. No **Console** na parte inferior da janela, no menu suspenso à direita, selecione **Logs do servidor**.
@@ -296,7 +292,7 @@ Com o CRXDE Lite, é possível exibir o arquivo `error.log` que está localizado
 
 * Ajuste os parâmetros de log no Felix Console clicando no ícone **Configurações de registro** ícone.
 * Limpe as mensagens clicando no ícone **Pincel** ícone.
-* Fixar a mensagem na seleção atual clicando no **Fixar** ícone.
+* Fixe a mensagem na seleção clicando no ícone **Fixar** ícone.
 * Ative ou desative a exibição de mensagens clicando no link **Parar** ícone.
 
 ## Controle de acesso {#access-control}

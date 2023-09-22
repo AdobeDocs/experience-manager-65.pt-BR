@@ -1,26 +1,22 @@
 ---
 title: Console da Web no Adobe Experience Manager
-seo-title: Web Console
-description: Saiba como usar o console da Web AEM.
-seo-description: Learn how to use the AEM web console.
-uuid: 7856b2b3-4216-421d-a315-cd9a55936362
+description: Saiba como usar o console da Web do Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
-discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
 feature: Configuring
 exl-id: 9acbf61f-73a8-4998-9421-dd933f30ac8a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '710'
 ht-degree: 1%
 
 ---
 
 # Console da Web{#web-console}
 
-O console da Web no AEM é baseado na variável [Console de gerenciamento Web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). O Apache Felix é um esforço da comunidade para implementar a Plataforma de serviço OSGi R4, que inclui a estrutura OSGi e os serviços padrão.
+O console da Web no Adobe Experience Manager (AEM) é baseado no [Console de gerenciamento Web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). O Apache Felix é um esforço da comunidade para implementar a Plataforma de serviço OSGi R4, que inclui a estrutura OSGi e os serviços padrão.
 
 >[!NOTE]
 >
@@ -58,7 +54,7 @@ A variável **Configuração** A guia pode ser acessada das seguintes maneiras:
 
   `http://localhost:4502/system/console/configMgr`
 
-Uma lista de configurações será exibida:
+Uma lista de configurações é exibida:
 
 ![screen_shot_2012-02-15at52308pm](assets/screen_shot_2012-02-15at52308pm.png)
 
@@ -73,9 +69,9 @@ Permite atualizar as configurações existentes. Eles têm uma Identidade persis
 * **Configurações de fábrica**
 Permite criar uma instância do objeto de funcionalidade necessário.
 
-  Isso receberá uma Identidade persistente e será listado na lista suspensa Configurações.
+  Ele é alocado para uma Identidade persistente e, em seguida, listado na lista suspensa Configurações.
 
-Selecionar qualquer entrada nas listas exibirá os parâmetros relacionados a essa configuração:
+Selecionar qualquer entrada na lista exibe os parâmetros relacionados a essa configuração:
 
 ![chlimage_1-21](assets/chlimage_1-21a.png)
 
@@ -85,7 +81,7 @@ Em seguida, você pode atualizar os parâmetros conforme necessário e:
 
   Salve as alterações feitas.
 
-  Para uma Configuração de fábrica, isso criará uma nova instância com uma Identidade persistente. A nova instância será listada em Configurações.
+  Para uma Configuração de fábrica, isso cria uma instância com uma Identidade persistente. A nova instância é listada em Configurações.
 
 * **Redefinir**
 
@@ -115,7 +111,7 @@ A variável **Pacotes** é o mecanismo para instalar os pacotes OSGi necessário
 
   `http://localhost:4502/system/console/bundles`
 
-Uma lista de pacotes será exibida:
+Uma lista de pacotes é exibida:
 
 ![screen_shot_2012-02-15at44740pm](assets/screen_shot_2012-02-15at44740pm.png)
 
@@ -131,9 +127,9 @@ Usando essa guia, você pode:
 
 * **Atualizar pacotes**
 
-  Isso verificará as referências de todos os pacotes e atualizará conforme necessário.
+  Isso verifica as referências de todos os pacotes e atualiza, conforme necessário.
 
-  Por exemplo, após uma atualização, a versão antiga e a nova ainda podem estar em execução devido a referências anteriores. Essa opção verificará e moverá todas as referências para a nova versão, permitindo que a versão antiga seja interrompida.
+  Por exemplo, após uma atualização, a versão antiga e a nova ainda podem estar em execução devido a referências anteriores. Essa opção verifica e move todas as referências para a nova versão, permitindo que a versão antiga seja interrompida.
 
 * **Início**
 
@@ -149,11 +145,11 @@ Usando essa guia, você pode:
 
 * **ver o status**
 
-  A lista especifica o status atual do pacote; clicando no nome de um pacote específico com informações adicionais.
+  A lista especifica o status do pacote; clicando no nome de um pacote específico com show additional information.
 
 >[!NOTE]
 >
->Depois **Atualizar** é recomendável executar um **Atualizar pacotes**.
+>Depois **Atualizar**, o Adobe recomenda que você execute um **Atualizar pacotes**.
 
 ## Componentes {#components}
 
@@ -167,16 +163,16 @@ A variável **Componentes** permite Ativar e/ou Desativar os vários componentes
 
   `http://localhost:4502/system/console/components`
 
-Uma lista de componentes será exibida. Vários ícones estão disponíveis para permitir que você ative, desative ou (quando apropriado) abra os detalhes de configuração de um componente específico.
+Uma lista de componentes é exibida. Vários ícones estão disponíveis para permitir que você ative, desative ou (quando apropriado) abra os detalhes de configuração de um componente específico.
 
 ![screen_shot_2012-02-15at52144pm](assets/screen_shot_2012-02-15at52144pm.png)
 
-Clicar no nome de um componente específico exibirá mais informações sobre o status. Aqui você também pode ativar, desativar ou recarregar o componente.
+Clicar no nome de um componente específico exibe mais informações sobre o seu status. Aqui você também pode ativar, desativar ou recarregar o componente.
 
 ![chlimage_1-22](assets/chlimage_1-22a.png)
 
 >[!NOTE]
 >
->Ativar ou desativar um componente só será aplicado até que o AEM/CRX seja reiniciado.
+>Ativar ou desativar um componente se aplica somente até que o AEM/CRX seja reiniciado.
 >
 >O estado inicial é definido no descritor do componente, que é gerado durante o desenvolvimento e armazenado no pacote no momento da criação do pacote.

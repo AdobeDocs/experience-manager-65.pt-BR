@@ -1,6 +1,6 @@
 ---
 title: Consultas e indexação do Oak
-description: Saiba como configurar índices no AEM.
+description: Saiba como configurar índices no Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -8,7 +8,7 @@ topic-tags: deploying
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: 2adc33b5f3ecb2a88f7ed2c5ac5cc31f98506989
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
 source-wordcount: '3033'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## Introdução {#introduction}
 
-Ao contrário do Jackrabbit 2, o Oak não indexa o conteúdo por padrão. Os índices personalizados devem ser criados quando necessário, assim como com os bancos de dados relacionais tradicionais. Se não houver índice para uma consulta específica, possivelmente muitos nós serão percorridos. O query ainda pode funcionar, mas provavelmente está bem lento.
+Ao contrário do Jackrabbit 2, o Oak não indexa o conteúdo por padrão. Os índices personalizados devem ser criados quando necessário, assim como com os bancos de dados relacionais tradicionais. Se não houver índice para uma consulta específica, muitos nós possivelmente serão percorridos. A query ainda pode funcionar, mas provavelmente está lenta.
 
 Se o Oak encontrar uma consulta sem um índice, uma mensagem de log de nível WARN será impressa:
 
@@ -84,7 +84,7 @@ O Índice de propriedade é útil para consultas que têm restrições de propri
    * **tipo:**  `property` (do tipo String)
    * **propertyNames:**  `jcr:uuid` (do tipo Nome)
 
-   Este exemplo específico indexará o `jcr:uuid` propriedade, cujo trabalho é expor o identificador exclusivo universalmente (UUID) do nó ao qual ele está anexado.
+   Este exemplo específico indexa a variável `jcr:uuid` propriedade, cujo trabalho é expor o identificador exclusivo universalmente (UUID) do nó ao qual ele está anexado.
 
 1. Salve as alterações.
 
@@ -92,11 +92,11 @@ O Índice de propriedades tem as seguintes opções de configuração:
 
 * A variável **type** A propriedade especifica o tipo de índice e, nesse caso, deve ser definida como **propriedade**
 
-* A variável **propertyNames** propriedade indica a lista das propriedades que serão armazenadas no índice. Caso esteja ausente, o nome do nó é usado como um valor de referência do nome da propriedade. Neste exemplo, a variável **jcr:uuid** A propriedade cujo trabalho é expor o identificador exclusivo (UUID) de seu nó é adicionada ao índice.
+* A variável **propertyNames** propriedade indica a lista das propriedades armazenadas no índice. Caso esteja ausente, o nome do nó é usado como um valor de referência do nome da propriedade. Neste exemplo, a variável **jcr:uuid** A propriedade cujo trabalho é expor o identificador exclusivo (UUID) de seu nó é adicionada ao índice.
 
 * A variável **único** sinalizador que, se definido como **true** adiciona uma restrição de exclusividade no índice de propriedade.
 
-* A variável **declaringNodeTypes** permite especificar um determinado tipo de nó ao qual o índice será aplicado somente.
+* A variável **declaringNodeTypes** A propriedade permite especificar um determinado tipo de nó ao qual o índice se aplica somente.
 * A variável **reindexar** sinalizador que, se definido como **true**, aciona uma reindexação completa de conteúdo.
 
 ### O índice ordenado {#the-ordered-index}
@@ -134,11 +134,11 @@ O Índice Lucene tem as seguintes opções de configuração:
 
 ### Compreensão da pesquisa de texto completo {#understanding-fulltext-search}
 
-A documentação desta seção se aplica ao Apache Lucene, Elasticsearch, bem como índices de texto completo de, por exemplo, PostgreSQL, SQLite, MySQL. O exemplo a seguir é para AEM/Oak/Lucene.
+A documentação desta seção se aplica aos índices Apache Lucene, Elasticsearch e fulltext do PostgreSQL, SQLite e MySQL, por exemplo. O exemplo a seguir é para AEM/Oak/Lucene.
 
 <b>Dados a serem indexados</b>
 
-O ponto inicial são os dados que precisam ser indexados. Considere os seguintes documentos, como exemplo:
+O ponto inicial são os dados que devem ser indexados. Considere os seguintes documentos, como exemplo:
 
 | <b>ID do documento</b> | <b>Caminho</b> | <b>Texto completo</b> |
 | --- | --- | --- |
@@ -151,9 +151,9 @@ O ponto inicial são os dados que precisam ser indexados. Considere os seguintes
 
 O mecanismo de indexação divide o texto completo em palavras chamadas &quot;tokens&quot; e cria um índice chamado &quot;índice invertido&quot;. Este índice contém a lista de documentos onde ele aparece para cada palavra.
 
-Palavras muito curtas e comuns (também chamadas de &quot;palavras irrelevantes&quot;) não são indexadas. Todos os tokens são convertidos em minúsculas e a raiz é aplicada.
+Palavras curtas e comuns (também chamadas de &quot;palavras irrelevantes&quot;) não são indexadas. Todos os tokens são convertidos em minúsculas e a raiz é aplicada.
 
-Observe os caracteres especiais, como *&quot;-&quot;* não são indexados.
+Caracteres especiais, como *&quot;-&quot;* não são indexados.
 
 | <b>Token</b> | <b>IDs de documento</b> |
 | --- | --- |
@@ -161,12 +161,12 @@ Observe os caracteres especiais, como *&quot;-&quot;* não são indexados.
 | marca | ..., 100,... |
 | cubo | ..., 200, 300,... |
 | dimension | 300 |
-| finlandês | ..., 100,... |
+| finish | ..., 100,... |
 | inventar | 200 |
 | objeto | ..., 300,... |
-| rubik | .., 100, 200,... |
+| rubik | ..., 100, 200,... |
 
-A lista de documentos está classificada. Isso se tornará útil ao consultar.
+A lista de documentos está classificada. Isso é útil ao consultar.
 
 <b>Localizando</b>
 
@@ -182,7 +182,7 @@ As palavras são tokenizadas e filtradas da mesma forma que na indexação (pala
 +:fulltext:rubik +:fulltext:cube
 ```
 
-O índice então consultará a lista de documentos para essas palavras. Se houver muitos documentos, as listas podem ser muito grandes. Como exemplo, vamos supor que eles contenham o seguinte:
+O índice consulta a lista de documentos para essas palavras. Se houver muitos documentos, a lista poderá ser grande. Como exemplo, suponha que eles contenham o seguinte:
 
 
 | <b>Token</b> | <b>IDs de documento</b> |
@@ -191,7 +191,7 @@ O índice então consultará a lista de documentos para essas palavras. Se houve
 | cubo | 30, 200, 300, 2000 |
 
 
-A Lucene vai alternar entre as duas listas (ou de forma alternada) `n` listas, ao pesquisar por `n` palavras):
+A Lucene inverte de um lado para o outro entre as duas listas (ou round-robin `n` listas, ao pesquisar por `n` palavras):
 
 * Lido no &quot;rubik&quot; recebe a primeira entrada: encontra 10
 * A leitura no &quot;cubo&quot; obtém a primeira entrada `>` = 10 10 não é encontrado, então o próximo é 30.
@@ -201,7 +201,7 @@ A Lucene vai alternar entre as duas listas (ou de forma alternada) `n` listas, a
 * Lido no &quot;rubik&quot; recebe a próxima entrada: 1000.
 * A leitura no &quot;cubo&quot; obtém a primeira entrada `>` = 1000: encontra 2000.
 * Lido no &quot;rubik&quot; recebe a primeira entrada `>` = 2000: fim da lista.
-* Finalmente, podemos parar de pesquisar.
+* Por fim, você pode interromper a pesquisa.
 
 O único documento encontrado que contém ambos os termos é 200, como no exemplo abaixo:
 
@@ -297,14 +297,14 @@ Se quiser usar qualquer analisador pronto para uso, você poderá configurá-lo 
 
    Se `luceneMatchVersion` não for fornecida, a Oak usará a versão do Lucene com a qual foi enviada.
 
-1. Se quiser adicionar um arquivo de palavras irrelevantes às configurações do analisador, você pode criar um nó sob o `default` um com as seguintes propriedades:
+1. Se quiser adicionar um arquivo de palavras irrelevantes às configurações do analisador, você pode criar um nó sob a `default` um com as seguintes propriedades:
 
    * **Nome:** `stopwords`
    * **Tipo:** `nt:file`
 
-#### Criação de analisadores via composição {#creating-analyzers-via-composition}
+#### Criação de analisadores por meio de composição {#creating-analyzers-via-composition}
 
-Os analisadores também podem ser compostos com base em `Tokenizers`, `TokenFilters` e `CharFilters`. Você pode fazer isso especificando um analisador e criando nós secundários de seus tokenizers e filtros opcionais que serão aplicados na ordem listada. Consulte também [https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
+Os analisadores também podem ser compostos com base em `Tokenizers`, `TokenFilters`, e `CharFilters`. Você pode fazer isso especificando um analisador e criando nós secundários de seus tokenizers e filtros opcionais que são aplicados na ordem listada. Consulte também [https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
 
 Considere essa estrutura de nó como um exemplo:
 
@@ -352,9 +352,9 @@ O nome dos filtros, charFilters e tokenizers são formados pela remoção dos su
 
 * `org.apache.lucene.analysis.core.StopFilterFactory` torna-se `Stop`
 
-Qualquer parâmetro de configuração necessário para a fábrica é especificado como propriedade do nó em questão.
+Qualquer parâmetro de configuração necessário para a fábrica é especificado como a propriedade do nó em questão.
 
-Para casos como carregar palavras de interrupção em que o conteúdo de arquivos externos precisa ser carregado, o conteúdo pode ser fornecido criando um nó filho de `nt:file` tipo para o arquivo em questão.
+Para casos como carregar palavras de interrupção em que o conteúdo de arquivos externos deve ser carregado, o conteúdo pode ser fornecido criando um nó filho de `nt:file` tipo para o arquivo em questão.
 
 ### O índice Solr {#the-solr-index}
 
@@ -368,7 +368,7 @@ Ele pode ser configurado para funcionar como um servidor remoto com a instância
 
 O AEM também pode ser configurado para funcionar com uma instância remota do servidor Solr:
 
-1. Baixe e extraia a versão mais recente do Solr. Para obter mais informações sobre como fazer isso, consulte [Documentação de instalação do Apache Solr](https://cwiki.apache.org/confluence/display/solr/Installing+Solr).
+1. Baixe e extraia a versão mais recente do Solr. Para obter mais informações, consulte a seção [Documentação de instalação do Apache Solr](https://solr.apache.org/guide/6_6/installing-solr.html).
 1. Agora, crie dois fragmentos Solr. Você pode fazer isso criando pastas para cada fragmento na pasta em que o Solr foi desempacotado:
 
    * Para o primeiro fragmento, crie a pasta:
@@ -396,7 +396,7 @@ O AEM também pode ser configurado para funcionar com uma instância remota do s
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre a configuração Solr e ZooKeeper, consulte o [Documentação da configuração Solr](https://wiki.apache.org/solr/ConfiguringSolr) e a variável [Guia de introdução do ZooKeeper](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html).
+   >Para obter mais informações sobre a configuração Solr e ZooKeeper, consulte o [Documentação da configuração Solr](https://cwiki.apache.org/confluence/display/solr/ConfiguringSolr) e a variável [Guia de introdução do ZooKeeper](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html).
 
 1. Inicie o primeiro fragmento com suporte do ZooKeeper acessando `aemsolr1\node1` e executando o seguinte comando:
 
@@ -431,7 +431,7 @@ O AEM também pode ser configurado para funcionar com uma instância remota do s
 
 Veja abaixo um exemplo de uma configuração básica que pode ser usada com todas as três implantações Solr descritas neste artigo. Ele acomoda os índices de propriedade dedicados que já estão presentes no AEM e não devem ser usados com outros aplicativos.
 
-Para usá-lo corretamente, você deve colocar o conteúdo do arquivo diretamente no Diretório Home Solr. No caso de implantações com vários nós, ele deve ir diretamente para a pasta raiz de cada nó.
+Para usá-lo corretamente, você deve colocar o conteúdo do arquivo diretamente no Diretório Home Solr. Se houver implantações com vários nós, ela deverá ir diretamente para a pasta raiz de cada nó.
 
 Arquivos de configuração Solr recomendados
 
@@ -448,7 +448,7 @@ Agora você pode contatá-los acessando **Ferramentas - Operações - Painel - D
 
 Para obter mais informações sobre como usá-los, consulte a [Documentação do Painel de operações](/help/sites-administering/operations-dashboard.md).
 
-#### Criação de índices de propriedade via OSGi {#creating-property-indexes-via-osgi}
+#### Criação de índices de propriedade por meio do OSGi {#creating-property-indexes-via-osgi}
 
 O pacote ACS Commons também expõe as configurações de OSGi que podem ser usadas para criar índices de propriedade.
 
@@ -464,7 +464,7 @@ Esta seção apresenta um conjunto de recomendações sobre o que deve ser feito
 
 #### Preparando informações de depuração para análise {#preparing-debugging-info-for-analysis}
 
-A maneira mais fácil de obter as informações necessárias para a consulta que está sendo executada é por meio da [Ferramenta Explicar consulta](/help/sites-administering/operations-dashboard.md#explain-query). Isso permite coletar as informações precisas necessárias para depurar uma consulta lenta sem a necessidade de consultar as informações de nível de log. Isso é desejável se você souber a query que está sendo depurada.
+A maneira mais fácil de obter as informações necessárias para a consulta que está sendo executada é por meio do [Ferramenta Explicar consulta](/help/sites-administering/operations-dashboard.md#explain-query). Isso permite coletar as informações precisas necessárias para depurar uma consulta lenta sem a necessidade de consultar as informações de nível de log. Isso é desejável se você souber a query que está sendo depurada.
 
 Se isso não for possível por algum motivo, você poderá coletar os logs de indexação em um único arquivo e usá-lo para solucionar seu problema específico.
 
@@ -480,7 +480,7 @@ A variável **com.day.cq.search** A categoria só será aplicável se você esti
 
 >[!NOTE]
 >
->É importante que os logs sejam definidos como DEBUG somente enquanto a consulta que você deseja solucionar problemas estiver sendo executada. Caso contrário, uma grande quantidade de eventos será gerada nos logs ao longo do tempo. Por causa disso, uma vez coletados os registros necessários, volte para o registro em nível INFO para as categorias mencionadas acima.
+>É importante que os logs sejam definidos como DEBUG somente enquanto a consulta que você deseja solucionar problemas estiver sendo executada. Caso contrário, muitos eventos serão gerados nos logs ao longo do tempo. Por causa disso, uma vez coletados os registros necessários, volte para o registro em nível INFO para as categorias mencionadas acima.
 
 Você pode ativar o registro seguindo este procedimento:
 
@@ -516,7 +516,7 @@ Se o índice estiver configurado em um local diferente, altere o caminho de acor
    * Estatísticas de consulta do Oak
    * IndexStats
 
-1. Clique em cada um dos MBeans para obter as estatísticas de desempenho. Crie uma captura de tela ou anote-as caso seja necessário enviar uma captura de tela para suporte.
+1. Clique em cada um dos MBeans para obter estatísticas de desempenho. Crie uma captura de tela ou anote-as caso seja necessário enviar um suporte.
 
 Você também pode obter a variante JSON dessas estatísticas nos seguintes URLs:
 
@@ -525,7 +525,7 @@ Você também pode obter a variante JSON dessas estatísticas nos seguintes URLs
 * `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak/%2522LuceneIndex%2522.tidy.-1.json`
 * `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak/%2522LuceneIndex%2522.tidy.-1.json`
 
-Você também pode fornecer saída JMX consolidada via `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak.tidy.3.json`. Isso incluiria todos os detalhes do MBean relacionado ao Oak no formato JSON.
+Você também pode fornecer saída JMX consolidada por meio de `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak.tidy.3.json`. Isso incluiria todos os detalhes do MBean relacionado ao Oak no formato JSON.
 
 #### Outros detalhes {#other-details}
 

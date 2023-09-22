@@ -1,25 +1,21 @@
 ---
 title: Guia de desempenho de ativos
-seo-title: Assets Performance Guide
 description: Saiba como determinar o dimensionamento ideal de hardware para uma nova configuração do Gerenciamento de ativos digitais (DAM) e como solucionar problemas de desempenho
-seo-description: Learn how to determine the optimal hardware sizing for a new Digital Asset Management (DAM) setup and how to troubleshoot performance issues
-uuid: 8291c5b9-c543-41cf-8754-445826200930
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
-discoiquuid: a79839e2-be39-418b-a3bd-f5457e555172
 exl-id: fbe15e1b-830b-4752-bd02-0d239a90bc68
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
 
 # Guia de desempenho de ativos{#assets-performance-guide}
 
-O gerenciamento de ativos digitais é usado com frequência nos casos em que o desempenho é importante; no entanto, a configuração típica do DAM contém vários componentes de hardware e software que podem afetar o desempenho. Este documento fornece o seguinte:
+O Gerenciamento de ativos digitais (DAM) é usado com frequência nos casos em que o desempenho é importante. No entanto, a configuração típica do DAM contém vários componentes de hardware e software que podem afetar o desempenho. Este documento fornece o seguinte:
 
 * Informações para administradores de sistema sobre como determinar o dimensionamento ideal de hardware para uma nova configuração do Gerenciamento de ativos digitais
 * Informações para desenvolvedores de software que procuram solucionar problemas de instâncias de DAM com problemas de desempenho
@@ -32,9 +28,9 @@ O baixo desempenho do gerenciamento de ativos digitais pode afetar a experiênci
 
 O desempenho interativo é medido em termos de tempo de resposta da página. Esse é o tempo que leva desde o recebimento da solicitação HTTP até o fechamento da resposta HTTP, que pode ser determinado a partir dos arquivos de log da solicitação. O desempenho de destino típico é um tempo de resposta de página abaixo de dois segundos.
 
-**2. Processamento de ativos** Um problema de processamento de ativos ocorre quando os usuários fazem o upload de ativos e leva minutos até que os ativos sejam prontamente convertidos e assimilados no DAM do AEM.
+**2. Processamento de ativos** Um problema de processamento de ativos ocorre quando os usuários fazem o upload de ativos e leva minutos até que os ativos sejam prontamente convertidos e assimilados no DAM do Adobe Experience Manager (AEM).
 
-O desempenho do processamento de ativos é medido em termos de tempo médio de conclusão do processo de fluxo de trabalho. Esse é o tempo que leva desde a chamada do processo de fluxo de trabalho Atualização de ativos até sua conclusão, que pode ser determinado a partir da interface do usuário dos relatórios do fluxo de trabalho. O desempenho típico do público-alvo depende do tamanho e do tipo de ativos processados e do número de representações. Os exemplos de desempenhos alvo podem ser os seguintes:
+O desempenho do processamento de ativos é medido em termos de tempo médio de conclusão do processo de fluxo de trabalho. Esse é o tempo que leva da chamada do processo de fluxo de trabalho Atualização de ativos até sua conclusão, que pode ser determinado a partir da interface do usuário dos relatórios do fluxo de trabalho. O desempenho típico do público-alvo depende do tamanho e do tipo de ativos processados e do número de representações. Exemplos de desempenhos alvo podem ser os seguintes:
 
 * abaixo de dez segundos para imagens menores que 1280x1280 pixels usando representações padrão
 * abaixo de um minuto para imagens menores que 100 MB usando representações padrão
@@ -42,16 +38,16 @@ O desempenho do processamento de ativos é medido em termos de tempo médio de c
 
 **3. Velocidade de download** Um problema de taxa de transferência ocorre ao baixar do DAM do AEM que demora e as miniaturas não são exibidas imediatamente ao navegar pelo administrador do DAM ou pelo Localizador do DAM.
 
-O desempenho da taxa de transferência é medido em termos de taxa de transferência, em kilobits por segundo. O desempenho normal é de 300 kilobits por segundo para 100 downloads simultâneos.
+O desempenho da taxa de transferência é medido em termos de taxa de transferência, em kilobits por segundo. O desempenho normal é de 300 Kbps para 100 downloads simultâneos.
 
 **4. Fatores que influenciam o desempenho do processamento de ativos**
 
-Para estimar qual hardware é necessário para processar ativos, os seguintes aspectos precisam ser levados em consideração:
+Para estimar qual hardware é necessário para processar ativos, os seguintes aspectos devem ser considerados:
 
-* A resolução das imagens em quantidade de pixels
+* A resolução de imagens no número de pixels
 * A pilha atribuída ao processo AEM
 
-A quantidade de pixels contidos na imagem determina o tempo de processamento - mais pixels significa que o processamento leva mais tempo.
+O número de pixels contidos na imagem determina o tempo de processamento - mais pixels significa que o processamento leva mais tempo.
 O tipo de imagem, a taxa de compactação ou o tamanho relacionado do arquivo em que a imagem está armazenada não influenciam significativamente o desempenho geral.
 
 O heap foi identificado como o fator de limitação mais importante. Sempre que o ativo exceder a memória livre disponível, o desempenho do processamento cairá rapidamente.
@@ -66,13 +62,13 @@ Aloque pelo menos 16 GB de heap e configure o [!UICONTROL Ativo de atualização
 
 ## Noções básicas do sistema {#understanding-the-system}
 
-Uma configuração típica do DAM consiste em usuários finais acessando o DAM por meio de um balanceador de carga. A instância do DAM pode fazer parte de uma configuração em cluster, em que cada instância do DAM é executada em um processo de máquina virtual Java em uma máquina física ou virtual. O armazenamento DAM é fornecido por um disco RAID no caso de configurações de uma única máquina ou por um armazenamento conectado à rede gerenciado no caso de configurações em cluster.
+Uma configuração típica do DAM consiste em usuários finais acessando o DAM por meio de um balanceador de carga. A instância do DAM pode fazer parte de uma configuração em cluster, em que cada instância do DAM é executada em um processo de máquina virtual Java™ em uma máquina física ou virtual. O armazenamento DAM é fornecido por um disco RAID, se houver configurações de uma única máquina, ou por um armazenamento gerenciado conectado à rede, se houver configurações em cluster.
 
 A legenda a seguir descreve as possíveis áreas de armadilha de desempenho com algumas soluções, conforme apropriado.
 
-**Conexão de rede para o usuário final** Uma conexão de rede lenta pode causar problemas de taxa de transferência, e em alguns casos raros também problemas de latência. Às vezes, o usuário tem uma conexão lenta do ISP, especialmente em intranets. Este é um sinal de topologia de rede incorreta.
+**Conexão de rede para o usuário final** Uma conexão de rede lenta pode causar problemas de taxa de transferência e, em alguns casos raros, problemas de latência. Às vezes, o usuário tem uma conexão lenta do ISP, especialmente em intranets. Este é um sinal de topologia de rede incorreta.
 
-**Sistema de arquivos temporários** Um sistema de arquivos local lento pode causar problemas de desempenho interativos, especialmente quando se trata de pesquisa, pois os índices de pesquisa são armazenados no disco local. Além disso, poderá causar problemas no processamento de ativos se o processo de linha de comando estiver sendo usado.
+**Sistema de arquivos temporários** Um sistema de arquivos local lento pode causar problemas de desempenho interativos, especialmente durante a pesquisa, pois os índices de pesquisa são armazenados no disco local. Isso também poderá causar problemas no processamento de ativos se o processo de linha de comando estiver sendo usado.
 
 **Localizador de DAM AEM** Problemas de desempenho interativos, geralmente encontrados em pesquisas, são causados pela alta utilização da CPU devido a muitos usuários simultâneos ou outros processos que consomem a CPU na mesma instância. Migrar de máquinas virtuais para máquinas dedicadas e garantir que nenhum outro serviço seja executado na máquina pode ajudar a melhorar o desempenho. Se a alta carga da CPU for causada pelo processamento de ativos e por muitos usuários simultâneos, Day recomenda adicionar outros nós de cluster.
 
@@ -80,12 +76,12 @@ A legenda a seguir descreve as possíveis áreas de armadilha de desempenho com 
 
 **Conectividade NAS** A baixa conectividade de rede com o NAS causa problemas de desempenho interativos, pois o acesso a novos nós durante o processamento de ativos fica lento devido à latência da rede. Além disso, o throughput lento da rede afeta negativamente o throughput, mas também o desempenho do processamento de ativos, pois o carregamento e o salvamento de representações ficam lentos.
 
-Os motivos para latência e throughput ruins em um NAS geralmente são a topologia da rede ou a superutilização do NAS por outros serviços.
+Os motivos para a latência e o throughput ruins em um NAS são a topologia da rede ou a superutilização do NAS por outros serviços.
 
-**Armazenamento de Conexão com a Rede** Sistemas de armazenamento conectado à rede superutilizados podem causar vários problemas:
+**Armazenamento de Conexão com a Rede** Sistemas de armazenamento conectados à rede superutilizados podem causar vários problemas:
 
 * Pouco espaço em disco é um problema encontrado com frequência que pode ser evitado por meio do dimensionamento adequado de um projeto DAM.
-* A alta latência do disco se propagará em tempos de acesso lentos para o CRX e poderá resultar em problemas interativos de desempenho.
+* A alta latência de disco se propaga em tempos de acesso lentos para o CRX e pode resultar em problemas interativos de desempenho.
 * A baixa taxa de transferência de disco pode resultar em baixo desempenho para o DAM CQ5.
 
 ## Teste de desempenho {#testing-for-performance}
@@ -94,11 +90,11 @@ Para cada projeto do DAM, certifique-se de estabelecer um regime de teste de des
 
 1. Testes de desempenho completos usando o JMeter - simulam um exemplo de sessão de pesquisa e navegação para detectar problemas interativos de desempenho.
 1. Testes de taxa de transferência e latência usando o JMeter - A execução em um computador cliente garante que não haja problemas relacionados à topologia.
-1. Testes de processamento de ativos padronizados - Assimile um pequeno número de ativos de exemplo e meça o tempo. Isso deve incluir a integração de workflow externo.
+1. Testes de processamento de ativos padronizados - Assimile alguns ativos de exemplo e meça o tempo. Isso deve incluir a integração de workflow externo.
 1. Monitore a utilização de CPU, Disco e memória de cada nó de cluster.
 1. Diagnóstico de desempenho de leitura/gravação do CRX para identificar problemas relacionados ao não processamento.
 1. Monitore a latência e o throughput da rede do cluster DAM para o NAS.
-1. Teste o desempenho de leitura e gravação, bem como a latência do disco diretamente no NAS, se possível.
+1. Teste, leia e grave o desempenho e a latência de disco diretamente no NAS, se possível.
 
 ## Gargalos de Ajuste {#tweaking-bottlenecks}
 

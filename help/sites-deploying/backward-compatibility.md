@@ -1,20 +1,16 @@
 ---
 title: Compatibilidade com versões anteriores no AEM 6.5
-seo-title: Backward Compatibility in AEM 6.5
-description: Saiba como manter seus aplicativos e configurações compatíveis com o AEM 6.5
-seo-description: Learn how to keep your apps and configurations compatible with AEM 6.5
-uuid: 81dc2771-f59b-4b24-8932-9e938cba05e0
+description: Saiba como manter seus aplicativos e configurações compatíveis com o Adobe Experience Manager (AEM) 6.5
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
-discoiquuid: f3b4ec1d-9054-47d4-afcb-0a0121b94190
 docset: aem65
 feature: Upgrading
 exl-id: c432a014-2dab-4c49-a25b-e4f461d13f9b
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '500'
 ht-degree: 1%
 
 ---
@@ -27,17 +23,17 @@ ht-degree: 1%
 >
 >Para obter uma lista de alterações de conteúdo e configuração que não estão no escopo do Pacote de compatibilidade, consulte [Reestruturação do repositório no AEM](/help/sites-deploying/repository-restructuring.md).
 
-No AEM 6.5, todos os recursos foram desenvolvidos tendo em mente a compatibilidade com versões anteriores.
+No Adobe Experience Manager (AEM) 6.5, todos os recursos foram desenvolvidos tendo em mente a compatibilidade com versões anteriores.
 
-Na maioria dos casos, os clientes que executam o AEM 6.3 não devem precisar alterar o código ou as personalizações ao fazer a atualização. Para clientes do AEM 6.1 e 6.2, não há alterações de interrupção adicionais que seriam enfrentadas durante uma atualização para o 6.3.
+Normalmente, os clientes que executam o AEM 6.3 não devem precisar alterar o código ou as personalizações ao fazer a atualização. Para clientes do AEM 6.1 e 6.2, não há alterações de interrupção adicionais com as quais você se depararia durante uma atualização para o 6.3.
 
-Para exceções em que os recursos não puderam ser mantidos compatíveis com versões anteriores, problemas de incompatibilidade com versões anteriores de pacotes e conteúdo podem ser atenuados pela instalação de um Pacote de compatibilidade para 6.4 (consulte como configurar abaixo para obter detalhes sobre onde baixar). Este pacote de compatibilidade ajudará a restaurar a compatibilidade na maioria dos casos para aplicativos compatíveis com AEM 6.4.
+Para exceções em que os recursos não podiam ser mantidos compatíveis com versões anteriores, problemas de incompatibilidade com versões anteriores para pacotes e conteúdo podem ser atenuados. Para fazer isso, instale um Pacote de compatibilidade para 6.4 (consulte como configurar abaixo para obter detalhes sobre onde baixar). Este pacote de compatibilidade ajuda a tp a restaurar a compatibilidade, geralmente para aplicativos compatíveis com AEM 6.4.
 
 O pacote de compatibilidade permite executar o AEM no modo de compatibilidade e adiar o desenvolvimento personalizado em relação aos novos recursos do AEM:
 
 >[!NOTE]
 >
->Observe que o pacote de compatibilidade é apenas uma solução temporária para adiar o desenvolvimento necessário para ser compatível com o AEM 6.5, sendo recomendado apenas como última opção se você não puder resolver problemas de compatibilidade por meio do desenvolvimento imediatamente após a atualização. É altamente recomendável alternar para o modo nativo e desinstalar o pacote de compatibilidade depois de decidir continuar o desenvolvimento personalizado com base no 6.5 e aproveitar a funcionalidade completa do 6.5.
+>O pacote de compatibilidade é apenas uma solução temporária para adiar o desenvolvimento necessário para ser compatível com o AEM 6.5. A Adobe recomenda isso somente como última opção se você não puder resolver problemas de compatibilidade por meio do desenvolvimento imediatamente após a atualização. Além disso, a Adobe recomenda que você alterne para o modo nativo e desinstale o pacote de compatibilidade depois de decidir continuar o desenvolvimento personalizado com base no 6.5 e aproveitar a funcionalidade completa do 6.5.
 
 ![sase](assets/sase.png)
 
@@ -49,7 +45,7 @@ Isso permite que o AEM 6.5 seja executado em três modos:
 
 O modo nativo é para clientes que desejam usar todos os novos recursos do AEM 6.5 e estão prontos para fazer o desenvolvimento e fazer com que suas personalizações funcionem com todos os novos recursos.
 
-Isso significa que talvez seja necessário fazer ajustes no aplicativo imediatamente após a atualização.
+Isso significa que você deve ajustar seu aplicativo imediatamente após a atualização.
 
 **Modo de Compatibilidade: Pacote de Compatibilidade Instalado com Roteamento Habilitado**
 
@@ -69,4 +65,4 @@ Depois que o Pacote de Compatibilidade é instalado, o roteamento pode ser ativa
 
 ![Switches Compat](assets/compat-switches.png)
 
-Depois que o pacote de compatibilidade for instalado e configurado, os recursos serão usados com base no modo de compatibilidade escolhido.
+Depois que o pacote de compatibilidade é instalado e configurado, os recursos são usados com base no modo de compatibilidade escolhido.

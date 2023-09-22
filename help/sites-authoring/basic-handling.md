@@ -1,18 +1,16 @@
 ---
 title: Manuseio básico ao usar o ambiente de autor do AEM
-description: Acostume-se com a navegação pelo AEM e seu uso básico
-uuid: c78ef9da-e0bd-47be-a410-9cf2ae71749a
+description: Familiarize-se com a navegação no Adobe Experience Manager e seu uso básico.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '3017'
-ht-degree: 64%
+source-wordcount: '2987'
+ht-degree: 47%
 
 ---
 
@@ -20,10 +18,10 @@ ht-degree: 64%
 
 >[!NOTE]
 >
->* Esta página foi projetada para fornecer uma visão geral do manuseio básico ao usar o ambiente de autor do AEM. Usa o console **Sites** como base.
+>* Esta página foi projetada para fornecer uma visão geral do manuseio básico ao usar o ambiente de autor do Adobe Experience Manager (AEM). Usa o console **Sites** como base.
 >
->* Algumas funcionalidades podem ou não estar disponíveis dependendo do console. Informações específicas sobre os consoles individuais e suas funcionalidades relacionadas serão abordadas com mais detalhes em outras páginas.
->* Os atalhos de teclado estão disponíveis em todo o AEM. Principalmente ao [usar páginas de console](/help/sites-authoring/keyboard-shortcuts.md) e [edição](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+>* Algumas funcionalidades podem ou não estar disponíveis dependendo do console. Informações específicas sobre os consoles individuais e suas funcionalidades relacionadas são abordadas com mais detalhes em outras páginas.
+>* Os atalhos de teclado estão disponíveis em todo o AEM, principalmente ao [usar páginas de console](/help/sites-authoring/keyboard-shortcuts.md) e [de edição](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 >
 
 ## Introdução {#getting-started}
@@ -44,21 +42,21 @@ Logo após o logon, você acessa o [painel de Navegação](#navigation-panel). S
 >
 >Para obter uma boa compreensão do uso básico do AEM, este documento se baseia no console de **Sites.**
 >
->Clique ou toque em **Sites** para começar.
+>Para começar, clique ou toque em **Sites**.
 
 ### Navegação do produto   {#product-navigation}
 
-Sempre que um usuário acessa um console pela primeira vez, um tutorial de navegação de produto é iniciado. Reserve um minuto para mexer no programa para obter uma boa visão geral do manuseio básico do AEM.
+Sempre que um usuário acessa um console pela primeira vez, um tutorial de navegação de produto é iniciado. Clique ou toque para obter uma boa visão geral do manuseio básico do AEM.
 
 ![Navegação do produto  ](assets/bh-02.png)
 
-Clique ou toque em **Avançar** para avançar para a próxima página da visão geral. Clique ou toque em **Fechar** ou fora da caixa de diálogo de visão geral para fechar.
+Clique ou toque em **Avançar** para avançar para a próxima página da visão geral. Clique ou toque **Fechar** ou clique ou toque fora da caixa de diálogo de visão geral para fechar.
 
 A visão geral será reiniciada na próxima vez que você acessar um console a menos que visualize todos os slides ou marque a opção **Não mostrar esta mensagem novamente**.
 
 ## Navegação global {#global-navigation}
 
-É possível navegar entre os consoles usando o painel de navegação global. É acionado como um menu suspenso de tela cheia quando você clica ou toca no link do Adobe Experience Manager na parte superior esquerda da tela.
+É possível navegar entre os consoles usando o painel de navegação global. Ele acionado como uma lista suspensa de tela cheia ao clicar ou tocar no link do Adobe Experience Manager na parte superior esquerda da tela.
 
 Você pode fechar o painel de navegação global clicando ou tocando em **Fechar** para retornar ao seu local anterior.
 
@@ -66,7 +64,7 @@ Você pode fechar o painel de navegação global clicando ou tocando em **Fechar
 
 >[!NOTE]
 >
->Ao fazer logon pela primeira vez, você apresentou a **Navegação** painel.
+>Ao fazer logon pela primeira vez, a mensagem **Navegação** painel
 
 A navegação global possui dois painéis, representados por ícones na margem esquerda da tela:
 
@@ -81,7 +79,7 @@ O painel Navegação fornece acesso aos consoles AEM:
 
 ![Navegação](assets/bh-01.png)
 
-O título da guia do navegador será atualizado para refletir sua localização à medida que você navega pelos consoles e conteúdo.
+O título da guia do navegador é atualizado para refletir sua localização à medida que você navega pelos consoles e conteúdo.
 
 Em Navegação, os consoles disponíveis são:
 
@@ -105,7 +103,7 @@ Em Navegação, os consoles disponíveis são:
   </tr>
   <tr>
    <td>Fragmentos de experiência</td>
-   <td>Um <a href="/help/sites-authoring/experience-fragments.md">fragmento de experiência</a> O é uma experiência independente que pode ser reutilizada em vários canais e que apresenta variações, evitando o trabalho de copiar e colar repetidamente as experiências ou partes das experiências.</td>
+   <td>Um <a href="/help/sites-authoring/experience-fragments.md">Fragmento de experiência</a> O é uma experiência independente que pode ser reutilizada em vários canais e que apresenta variações, evitando o trabalho de copiar e colar repetidamente as experiências ou partes das experiências.</td>
   </tr>
   <tr>
    <td>Forms</td>
@@ -121,7 +119,7 @@ Em Navegação, os consoles disponíveis são:
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a> O permitirá que você gerencie todas as suas telas voltadas para o cliente, de qualquer tamanho e em qualquer local.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a> O permite gerenciar todas as suas telas voltadas para o cliente, de qualquer tamanho e em qualquer local.</td>
   </tr>
   <tr>
    <td>Sites</td>
@@ -132,7 +130,7 @@ Em Navegação, os consoles disponíveis são:
 
 ### Painel Ferramentas {#tools-panel}
 
-No painel Ferramentas, cada opção no painel lateral contém uma variedade de submenus. A variável [Console Ferramentas](/help/sites-administering/tools-consoles.md) disponíveis aqui fornecem acesso a uma série de ferramentas e consoles especializados que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo.
+No painel Ferramentas, cada opção no painel lateral contém uma variedade de submenus. A variável [Console Ferramentas](/help/sites-administering/tools-consoles.md) disponíveis aqui fornecem acesso a várias ferramentas e consoles especializados que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo.
 
 ![Painel Ferramentas](assets/bh-04.png)
 
@@ -144,7 +142,7 @@ O cabeçalho está sempre presente na parte superior da tela. Embora a maioria d
 
 * [Navegação global](#navigatingconsolesandtools)
 
-  Selecione o link do **Adobe Experience Manager** para navegar entre consoles.
+  Selecione o **Adobe Experience Manager** link no qual você pode navegar entre consoles.
 
   ![o link do Adobe Experience Manager](assets/screen_shot_2018-03-23at103615.png)
 
@@ -154,7 +152,7 @@ O cabeçalho está sempre presente na parte superior da tela. Embora a maioria d
 
   Você também pode usar a [tecla de atalho](/help/sites-authoring/keyboard-shortcuts.md) `/` (barra) para invocar a pesquisa em qualquer console.
 
-* [Soluções](https://www.adobe.com/br/experience-cloud.html)
+* [Soluções](https://business.adobe.com/)
 
   ![Soluções](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -166,7 +164,7 @@ O cabeçalho está sempre presente na parte superior da tela. Embora a maioria d
 
   ![Notificações](do-not-localize/screen_shot_2018-03-23at103558.png)
 
-  Esse ícone exibirá o número de notificações incompletas atribuídas atualmente.
+  Esse ícone é marcado com o número de notificações incompletas atribuídas no momento.
 
   >[!NOTE]
   >
@@ -180,7 +178,7 @@ O cabeçalho está sempre presente na parte superior da tela. Embora a maioria d
 
   ![Lista de seletores de painéis exibida no lado esquerdo da tela do Adobe Experience Manager.](do-not-localize/screen_shot_2018-03-23at103943.png)
 
-  As opções apresentadas dependem do seu console atual. Por exemplo, em **Sites** você pode selecionar somente o conteúdo (o padrão), a linha do tempo, as referências ou o painel lateral de filtro.
+  As opções apresentadas dependem do seu console atual. Por exemplo, em **Sites**, é possível selecionar somente o conteúdo (o padrão), a linha do tempo, as referências ou o painel lateral de filtros.
 
   ![Seletor de painéis](assets/screen_shot_2018-03-23at104029.png)
 
@@ -188,9 +186,9 @@ O cabeçalho está sempre presente na parte superior da tela. Embora a maioria d
 
   ![Navegações estruturais](assets/bh-05.png)
 
-  Situadas no meio do painel e sempre mostrando a descrição do item selecionado no momento, as navegações estruturais permitem que você navegue dentro de um console específico. No console Sites, você pode navegar pelos níveis do seu site.
+  Aparece no meio do painel e sempre mostra a descrição do item selecionado no momento, as navegações estruturais permitem que você navegue dentro de um console específico. No console Sites, você pode navegar pelos níveis do seu site.
 
-  Basta clicar no texto da navegação estrutural para exibir uma lista suspensa com os níveis da hierarquia do item selecionado no momento. Clique em uma entrada para ir para esse local.
+  Clicar no texto de navegação estrutural abre uma lista suspensa que lista os níveis da hierarquia do item selecionado no momento. Para ir para esse local, clique em uma entrada.
 
   ![Níveis hierárquicos](assets/bh-06.png)
 
@@ -198,7 +196,7 @@ O cabeçalho está sempre presente na parte superior da tela. Embora a maioria d
 
   ![Período do Analytics](assets/screen_shot_2018-03-23at104126.png)
 
-  Isso está disponível somente na exibição em lista. Consulte [exibição de lista](#list-view) para obter mais informações.
+  Isso está disponível somente na exibição em lista. Para obter mais informações, consulte [exibição de lista](#list-view).
 
 * Botão **Criar**
 
@@ -212,7 +210,7 @@ O cabeçalho está sempre presente na parte superior da tela. Embora a maioria d
 
   ![Exibição de coluna](assets/bh-07.png)
 
-  Você pode alternar entre a exibição de coluna, exibição de cartão e exibição de lista; na exibição de lista, também mostra as configurações de exibição.
+  Você pode alternar entre a exibição de coluna, exibição de cartão e exibição de lista. A exibição em lista mostra as configurações de exibição.
 
   ![Alternar Exibições](assets/bh-09.png)
 
@@ -220,7 +218,7 @@ O cabeçalho está sempre presente na parte superior da tela. Embora a maioria d
 
   Você pode navegar por um site usando apenas o teclado. Usa a funcionalidade padrão do navegador do **GUIA** chave (ou **OPT+TAB**) para que você possa percorrer os elementos na página que estão *focalizável*.
 
-  No console do **Sites** há a opção adicionada para **Ir para o conteúdo principal**. Isso se torna visível à medida que você *guia* nas opções de cabeçalho e acelera a navegação, permitindo ignorar os elementos padrão na barra de ferramentas (produto) e direcionar você diretamente ao conteúdo principal.
+  No **Sites** console, há a opção adicionada para  **Ir para o conteúdo principal**. Isso se torna visível à medida que você *guia* nas opções de cabeçalho e acelera a navegação, permitindo ignorar os elementos padrão na barra de ferramentas (produto) e direcionar você diretamente ao conteúdo principal.
 
   ![Ir para o conteúdo principal](assets/bh-30.png)
 
@@ -230,13 +228,13 @@ Há vários recursos de ajuda disponíveis:
 
 * **Barra de ferramentas do console**
 
-  Dependendo da sua localização, o ícone de **Ajuda** abrirá os recursos apropriados:
+  Dependendo da sua localização, a variável **Ajuda** ícone abre os recursos apropriados:
 
   ![Barra de ferramentas do console](assets/bh-10.png)
 
 * **Navegação**
 
-  Na primeira vez que você navega pelo sistema, [uma série de slides apresenta a navegação no AEM](/help/sites-authoring/basic-handling.md#product-navigation).
+  Na primeira vez que você navegar pelo sistema, [uma série de slides apresenta a navegação pelo AEM](/help/sites-authoring/basic-handling.md#product-navigation).
 
 * **Editor de página**
 
@@ -246,11 +244,11 @@ Há vários recursos de ajuda disponíveis:
 
   Navegue por essa visão geral como faria com a [visão geral de navegação do produto](/help/sites-authoring/basic-handling.md#product-navigation) ao acessar qualquer console pela primeira vez.
 
-  No menu [**Informações da página,** é possível selecionar **Ajuda**](/help/sites-authoring/author-environment-tools.md#accessing-help) para exibir isso novamente, a qualquer momento.
+  No **Informações da página** , é possível selecionar [**Ajuda**](/help/sites-authoring/author-environment-tools.md#accessing-help) para mostrar novamente a qualquer momento.
 
 * **Console de ferramentas**
 
-  No console **Ferramentas** é possível acessar os **Recursos** externos:
+  No **Ferramentas** console, você também pode acessar o painel **Recursos**:
 
    * **Documentação**
 Exibir a documentação do Gerenciamento de experiência na Web
@@ -262,7 +260,7 @@ Recursos e downloads do desenvolvedor
   >
   >É possível acessar uma visão geral das teclas de atalho disponíveis a qualquer momento, usando a tecla de atalho `?` (ponto de interrogação) em um console.
   >
-  >Para obter uma visão geral de todos os atalhos de teclado, consulte a seguinte documentação:
+  >Para obter uma visão geral de todos os atalhos de teclado, consulte o seguinte:
   >
   >* [Atalhos de teclado para editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
   >* [Atalhos de teclado para os consoles](/help/sites-authoring/keyboard-shortcuts.md)
@@ -271,15 +269,15 @@ Recursos e downloads do desenvolvedor
 
 Sempre que um recurso é selecionado (por exemplo, uma página ou um ativo), várias ações são indicadas por ícones com texto explicativo na barra de ferramentas. Essas ações dependem do seguinte:
 
-* Do console atual.
-* Do contexto atual.
-* Se você estiver no [modo de seleção](#navigatingandselectionmode).
+* Do console atual
+* Do contexto atual
+* Se você estiver em [modo de seleção](#navigatingandselectionmode) ou não
 
-A ação disponível na barra de ferramentas muda para refletir as ações que você pode realizar nos itens específicos selecionados.
+As ações disponíveis na barra de ferramentas mudam para refletir as ações que você pode realizar nos itens específicos selecionados.
 
 A forma como você [seleciona um recurso](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) depende da exibição.
 
-Devido às restrições de espaço em algumas janelas, a barra de ferramentas pode tornar-se rapidamente maior do que o espaço disponível. Quando isso acontecer, opções adicionais serão exibidas. Clicar ou tocar nas reticências (três pontos ou **...**) abre um seletor suspenso que contém todas as ações restantes. Por exemplo, após selecionar uma página no console **Sites**:
+Devido às restrições de espaço em algumas janelas, a barra de ferramentas pode tornar-se rapidamente maior do que o espaço disponível. Quando isso acontecer, opções adicionais serão exibidas. Ao clicar ou tocar nas reticências (os três pontos ou **..**) abre um seletor suspenso com todas as ações restantes. Por exemplo, após selecionar uma página no console **Sites**:
 
 ![Barra de ferramentas de Ações](assets/bh-12.png)
 
@@ -289,9 +287,9 @@ Devido às restrições de espaço em algumas janelas, a barra de ferramentas po
 
 ## Ações rápidas {#quick-actions}
 
-Entrada [Exibição de cartão](#cardviewquickactions) certas ações estão disponíveis como ícones de ação rápida, bem como na barra de ferramentas. Os ícones de ação rápida estão disponíveis para um único item de cada vez e eliminam a necessidade de pré-seleção.
+Entrada [Exibição de cartão](#cardviewquickactions), determinadas ações estão disponíveis como ícones de ação rápida e na barra de ferramentas. Os ícones de ação rápida estão disponíveis para um único item de cada vez e eliminam a necessidade de pré-seleção.
 
-As ações rápidas ficam visíveis quando você passa o mouse (desktop) sobre um cartão de recursos. As ações rápidas disponíveis podem depender do console e do contexto. Por exemplo, estas são as ações rápidas para uma página no console **Sites**:
+As ações rápidas são visíveis quando você passa o mouse sobre (dispositivo de desktop) um cartão de recursos. As ações rápidas disponíveis podem depender do console e do contexto. Por exemplo, estas são as ações rápidas para uma página no console **Sites**:
 
 ![Ações rápidas](assets/bh-13.png)
 
@@ -326,12 +324,12 @@ Selecionar um recurso específico depende de uma combinação da exibição e do
    <td>
     <ul>
      <li>Área de trabalho:<br /> Clique na miniatura</li>
-     <li>Dispositivo móvel:<br /> Toque na miniatura</li>
+     <li>Dispositivos móveis:<br /> Toque na miniatura</li>
     </ul> </td>
    <td>
     <ul>
      <li>Área de trabalho:<br /> Clique na miniatura</li>
-     <li>Dispositivo móvel:<br /> Toque na miniatura</li>
+     <li>Dispositivos móveis:<br /> Toque na miniatura</li>
     </ul> </td>
   </tr>
   <tr>
@@ -339,12 +337,12 @@ Selecionar um recurso específico depende de uma combinação da exibição e do
    <td>
     <ul>
      <li>Área de trabalho:<br /> Passe o mouse sobre ele e use a ação rápida da marca de seleção</li>
-     <li>Dispositivo móvel:<br /> Toque e segure o cartão</li>
+     <li>Dispositivos móveis:<br /> Toque e segure o cartão</li>
     </ul> </td>
    <td>
     <ul>
      <li>Área de trabalho:<br /> Clique no cartão</li>
-     <li>Dispositivo móvel:<br /> Toque no cartão</li>
+     <li>Dispositivos móveis:<br /> Toque no cartão</li>
     </ul> </td>
   </tr>
   <tr>
@@ -352,12 +350,12 @@ Selecionar um recurso específico depende de uma combinação da exibição e do
    <td>
     <ul>
      <li>Área de trabalho:<br /> Clique na miniatura</li>
-     <li>Dispositivo móvel:<br /> Toque na miniatura</li>
+     <li>Dispositivos móveis:<br /> Toque na miniatura</li>
     </ul> </td>
    <td>
     <ul>
      <li>Área de trabalho:<br /> Clique na miniatura</li>
-     <li>Dispositivo móvel:<br /> Toque na miniatura</li>
+     <li>Dispositivos móveis:<br /> Toque na miniatura</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -367,9 +365,9 @@ Selecionar um recurso específico depende de uma combinação da exibição e do
 
 É possível selecionar todos os itens em qualquer exibição clicando em **Selecionar tudo** no canto superior direito do console.
 
-* Na **Exibição de cartão** todos os cartões serão selecionados.
-* Entrada **Exibição de lista** todos os itens na lista são selecionados.
-* Na **Exibição de coluna**, todos os itens na coluna mais à esquerda são selecionados.
+* Entrada **Exibição de cartão**, todos os cartões serão selecionados.
+* Entrada **Exibição de lista**, todos os itens na lista serão selecionados.
+* Entrada **Exibição de coluna**, todos os itens na coluna mais à esquerda serão selecionados.
 
 ![Selecionar tudo](assets/screen-shot_2019-03-05at094659.png)
 
@@ -377,7 +375,7 @@ Selecionar um recurso específico depende de uma combinação da exibição e do
 
 Em todos os casos, ao selecionar itens, a contagem dos itens selecionados é exibida na parte superior direita da barra de ferramentas.
 
-É possível desmarcar todos os itens e sair do modo de seleção ao:
+Você pode desmarcar todos os itens e sair do modo de seleção ao:
 
 * clicar ou tocar no **X** ao lado da contagem,
 
@@ -385,7 +383,7 @@ Em todos os casos, ao selecionar itens, a contagem dos itens selecionados é exi
 
 ![Desmarcar](assets/bh-14.png)
 
-Em todas as visualizações, todos os itens podem ser desmarcados. Para isso, pressione a tecla Escape no teclado se você estiver usando um dispositivo de desktop.
+Em todas as visualizações, todos os itens podem ser desmarcados. Para isso, pressione a tecla Escape no teclado se você estiver usando um computador desktop.
 
 #### Exemplo de seleção {#selecting-example}
 
@@ -393,9 +391,9 @@ Em todas as visualizações, todos os itens podem ser desmarcados. Para isso, pr
 
    ![Selecionar - exibição de cartão](assets/bh-15.png)
 
-1. Após selecionar um recurso, o cabeçalho superior é coberto pela [barra de ferramentas das ações](#actionstoolbar), que fornece acesso às ações atualmente aplicáveis ao recurso selecionado.
+1. Quando você seleciona um recurso, o cabeçalho superior é coberto pela variável [barra de ferramentas de ações](#actionstoolbar) que fornece acesso às ações atualmente aplicáveis ao recurso selecionado.
 
-   Para sair do modo de seleção, selecione o **X** no canto superior direito, ou use a tecla **escape**.
+   Para sair do modo de seleção, selecione o **X** no canto superior direito, ou use **escape**.
 
 ### Exibição de coluna {#column-view}
 
@@ -403,11 +401,11 @@ Em todas as visualizações, todos os itens podem ser desmarcados. Para isso, pr
 
 A exibição de coluna permite uma navegação visual de uma árvore de conteúdo por uma série de colunas em cascata. Essa visualização permite visualizar e percorrer a estrutura de árvore do site.
 
-Selecionar um recurso na coluna mais à esquerda exibirá os recursos secundários em uma coluna à direita. Selecionar um recurso na coluna à direita exibirá os recursos secundários em outra coluna à direita e assim por diante.
+Selecionar um recurso na coluna mais à esquerda exibe os recursos secundários em uma coluna à direita. Selecionar um recurso na coluna direita exibe os recursos secundários em outra coluna à direita e assim por diante.
 
 * É possível navegar para cima e para baixo na árvore tocando ou clicando no nome do recurso ou na divisa à direita do nome do recurso.
 
-   * O nome e a divisa do recurso serão realçados quando tocados ou clicados.
+   * O nome e a divisa do recurso são realçados quando tocados ou clicados.
 
      ![Exibição de coluna](assets/bh-17.png)
 
@@ -416,9 +414,9 @@ Selecionar um recurso na coluna mais à esquerda exibirá os recursos secundári
 
 * Tocar ou clicar na miniatura seleciona o recurso.
 
-   * Quando selecionada, uma marca de seleção será sobreposta à miniatura, e o nome do recurso também será destacado.
-   * Os detalhes do recurso selecionado serão mostrados na coluna final.
-   * A barra de ferramentas de ação ficará disponível.
+   * Quando selecionada, uma marca de seleção é sobreposta à miniatura e o nome do recurso também é realçado.
+   * Os detalhes do recurso selecionado são mostrados na coluna final.
+   * A barra de ferramentas de ações ficará disponível.
 
      ![Exibição de coluna](assets/bh-18.png)
 
@@ -440,7 +438,7 @@ Selecionar um recurso na coluna mais à esquerda exibirá os recursos secundári
    * Uma representação visual do conteúdo da página.
    * O título da página.
    * Datas importantes (como a última edição/publicação).
-   * Se a página estiver bloqueada, oculta ou fizer parte de uma live copy.
+   * A página está bloqueada, oculta ou faz parte de uma live copy.
    * Se for o caso, quando for necessário tomar medidas como parte de um fluxo de trabalho.
 
       * Marcadores que indicam ações necessárias podem estar relacionados a itens em sua [caixa de entrada](/help/sites-authoring/inbox.md).
@@ -456,7 +454,7 @@ Selecionar um recurso na coluna mais à esquerda exibirá os recursos secundári
 ![Exibição de lista](assets/bh-19.png)
 
 * A exibição de lista apresenta informações para cada recurso no nível atual.
-* É possível navegar para baixo na árvore tocando/clicando no nome do recurso e fazer backup usando a [navegação estrutural no cabeçalho](/help/sites-authoring/basic-handling.md#the-header).
+* É possível navegar para baixo na árvore tocando/clicando no nome do recurso e no backup usando o [navegações estruturais no cabeçalho](/help/sites-authoring/basic-handling.md#the-header).
 
 * Para selecionar facilmente todos os itens na lista, use a caixa de seleção no canto superior esquerdo da lista.
 
@@ -464,14 +462,14 @@ Selecionar um recurso na coluna mais à esquerda exibirá os recursos secundári
 
    * Quando todos os itens da lista forem selecionados, essa caixa de seleção aparecerá marcada.
 
-      * Clique ou toque na caixa de seleção para desmarcar tudo.
+      * Para desmarcar tudo, clique ou toque na caixa de seleção.
 
    * Quando apenas alguns itens são selecionados, ela aparece com um sinal de menos.
 
-      * Clique ou toque na caixa de seleção para selecionar tudo.
-      * Clique ou toque novamente na caixa de seleção para desmarcar tudo.
+      * Para selecionar tudo, clique ou toque na caixa de seleção.
+      * Para desmarcar tudo, clique ou toque novamente na caixa de seleção.
 
-* Selecione as colunas a serem mostradas usando a opção **Configurações de exibição**, localizada abaixo do botão Visualizações. As seguintes colunas estão disponíveis para exibição:
+* Selecione as colunas a serem mostradas usando o **Configurações de exibição** localizada abaixo do botão Exibições. As seguintes colunas estão disponíveis para exibição:
 
    * **Nome**: o nome da página, que pode ser útil em um ambiente de criação multilíngue, pois faz parte do URL da página e não é alterado independentemente do idioma
    * **Modificado**: a última data de modificação e último usuário que modificou
@@ -485,7 +483,7 @@ Selecionar um recurso na coluna mais à esquerda exibirá os recursos secundári
 
   ![Configurações de exibição - Configurar colunas](assets/bh-21.png)
 
-  Por padrão, é exibida a coluna **Nome**, que faz parte do URL da página. Em alguns casos, o autor pode precisar acessar páginas que estão em um idioma diferente, e ver o nome da página (que geralmente é imutável) pode ser de grande ajuda se ele não souber o idioma.
+  Por padrão, é exibida a coluna **Nome**, que faz parte do URL da página. Às vezes, o autor precisa acessar páginas que estão em um idioma diferente. Ver o nome da página (que geralmente é imutável) pode ser de grande ajuda se o autor não souber o idioma da página.
 
 * Altere a ordem dos itens usando a barra vertical pontilhada na extremidade direita de cada item da lista.
 
@@ -499,7 +497,7 @@ Selecionar um recurso na coluna mais à esquerda exibirá os recursos secundári
 
   ![Pedido de alteração - Arrastar](assets/bh-23.png)
 
-* Você pode exibir os Dados do Analytics mostrando as colunas apropriadas usando o **Configurações de exibição** diálogo.
+* Você pode exibir os Dados do Analytics mostrando as colunas apropriadas usando o **Configurações de exibição** caixa de diálogo.
 
   Você pode filtrar os dados do Analytics dos últimos 30, 90 ou 365 dias usando as opções de filtro no lado direito do cabeçalho.
 
@@ -523,7 +521,7 @@ Se somente conteúdo for selecionado, apenas o ícone do painel será exibido. S
 
 A árvore de conteúdo pode ser usada para navegar rapidamente pela hierarquia do site no painel lateral e exibir muitas informações sobre as páginas na pasta atual.
 
-Usando o painel lateral da árvore de conteúdo em conjunto com uma exibição de lista ou exibição de cartões, os usuários podem ver facilmente a estrutura hierárquica do projeto e navegar facilmente pela estrutura de conteúdo com o painel lateral da árvore de conteúdo, bem como visualizar informações de página detalhadas na exibição de lista.
+Usando o painel lateral da árvore de conteúdo com uma exibição em lista ou exibição de cartões, os usuários podem ver facilmente a estrutura hierárquica do projeto. Eles podem navegar facilmente pela estrutura de conteúdo com o painel lateral da árvore de conteúdo e exibir informações detalhadas da página na exibição de lista.
 
 ![Árvore de conteúdo](assets/bh-26.png)
 
@@ -535,7 +533,7 @@ Usando o painel lateral da árvore de conteúdo em conjunto com uma exibição d
 
 ### Linha do tempo {#timeline}
 
-A linha do tempo pode ser usada para exibir e/ou iniciar eventos que ocorreram no recurso selecionado. Para abrir a coluna da linha do tempo use o seletor do painel:
+A linha do tempo pode ser usada para exibir e/ou iniciar eventos que ocorreram no recurso selecionado. Para abrir a coluna da linha do tempo, use o seletor do painel:
 
 A coluna de linha do tempo permite:
 
@@ -550,13 +548,13 @@ A coluna de linha do tempo permite:
       * [Versões](/help/sites-authoring/working-with-page-versions.md)
       * [Fluxos de trabalhos](/help/sites-authoring/workflows-applying.md)
 
-         * com exceção de [workflows transitórios](/help/sites-developing/workflows.md#transient-workflows) como nenhuma informação de histórico é salva para eles
+         * exceto para [workflows transitórios](/help/sites-developing/workflows.md#transient-workflows) porque nenhuma informação de histórico é salva para eles
 
       * e Mostrar tudo
 
-* [Adicionar/exibir comentários sobre o item selecionado. ](#timelineaddingandviewingcomments) A caixa **Comentário** é exibida na parte inferior da lista de eventos. Inserir um comentário seguido por Retornar registrará esse comentário. Ele será mostrado quando a opção **Comentários** ou **Exibir todos** estiver selecionada.
+* [Adicionar/exibir comentários sobre o item selecionado. ](#timelineaddingandviewingcomments) A caixa **Comentário** é exibida na parte inferior da lista de eventos. Digitar um comentário e Retornar registra o comentário. É exibido quando **Comentários** ou **Mostrar tudo** é selecionado.
 
-* Os consoles específicos têm funcionalidade adicional. Por exemplo, no console Sites é possível:
+* Os consoles específicos têm funcionalidade adicional. Por exemplo, no console Sites, é possível fazer o seguinte:
 
    * [Salvar uma versão](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui).
    * [Iniciar um fluxo de trabalho](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
@@ -567,7 +565,7 @@ Essas opções podem ser acessadas por meio da divisa ao lado da **Comentário**
 
 ### Referências {#references}
 
-As **referências** mostram todas as conexões com o recurso selecionado. Por exemplo, no console **Sites**, são mostradas [referências](/help/sites-authoring/author-environment-tools.md#showingpagereferences) para as páginas:
+**Referências** mostrar todas as conexões com o recurso selecionado. Por exemplo, no console **Sites**, são mostradas [referências](/help/sites-authoring/author-environment-tools.md#showingpagereferences) para as páginas:
 
 * [Lançamentos](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
@@ -575,12 +573,12 @@ As **referências** mostram todas as conexões com o recurso selecionado. Por ex
 * Referência de conteúdo:
 
    * links de outras páginas para a página selecionada
-   * conteúdo emprestado de e/ou concedido à página selecionada pelo componente Referência
+   * conteúdo emprestado de, concedido ou ambos à página selecionada pelo componente Referência
 
 ![bh-28](assets/bh-28.png)
 
 ### Filtro {#filter}
 
-Isso abrirá um painel semelhante para [pesquisar](/help/sites-authoring/search.md) usando os filtros de localização apropriados já definidos, que permitem filtrar ainda mais o conteúdo que você deseja exibir.
+Isso abre um painel semelhante a [pesquisa](/help/sites-authoring/search.md), com os filtros de localização apropriados definidos, permitindo filtrar ainda mais o conteúdo que você deseja exibir.
 
 ![Filtro](assets/bh-29.png)

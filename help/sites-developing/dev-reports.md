@@ -1,18 +1,14 @@
 ---
 title: Desenvolvimento de relatórios
-seo-title: Developing Reports
-description: O AEM fornece uma seleção de relatórios padrão com base em uma estrutura de relatórios
-seo-description: AEM provides a selection of standard reports based on a reporting framework
-uuid: 1b406d15-bd77-4531-84c0-377dbff5cab2
+description: O Adobe Experience Manager (AEM) fornece uma seleção de relatórios padrão com base em uma estrutura de relatórios
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '5239'
+source-wordcount: '5182'
 ht-degree: 0%
 
 ---
@@ -20,9 +16,9 @@ ht-degree: 0%
 
 # Desenvolvimento de relatórios {#developing-reports}
 
-O AEM fornece uma seleção de [relatórios padrão](/help/sites-administering/reporting.md) que se baseiam, na sua maioria, num quadro de comunicação.
+O Adobe Experience Manager (AEM) fornece uma seleção de [relatórios padrão](/help/sites-administering/reporting.md) que se baseiam, na sua maioria, num quadro de comunicação.
 
-Usando a estrutura, você pode estender esses relatórios padrão ou desenvolver seu(s) próprio(s) relatório(s) completamente novo(s). A estrutura de relatórios integra-se perfeitamente aos conceitos e princípios existentes do CQ5 para que os desenvolvedores possam usar seu conhecimento existente sobre o CQ5 como um trampolim para o desenvolvimento de relatórios.
+Usando a estrutura, você pode estender esses relatórios padrão ou desenvolver seus próprios novos relatórios. A estrutura de relatórios integra-se perfeitamente aos conceitos e princípios existentes do CQ5 para que os desenvolvedores possam usar seu conhecimento existente sobre o CQ5 como um trampolim para o desenvolvimento de relatórios.
 
 Para os relatórios padrão entregues com AEM:
 
@@ -72,7 +68,7 @@ O quadro de comunicação de informações assenta nos seguintes princípios:
 * O conjunto de resultados define os dados exibidos no relatório. Cada linha no conjunto de resultados corresponde a uma linha na exibição tabular do relatório.
 * As operações disponíveis para execução no conjunto de resultados assemelham-se aos conceitos do RDBMS; principalmente *agrupamento* e *agregação*.
 
-* A maior parte da recuperação e do processamento de dados é feita no lado do servidor.
+* A maioria da recuperação e do processamento de dados é feita no lado do servidor.
 * O cliente é o único responsável pela exibição dos dados pré-processados. Somente tarefas de processamento secundárias (por exemplo, criar links no conteúdo da célula) são executadas no lado do cliente.
 
 A estrutura de relatórios (ilustrada pela estrutura de um relatório padrão) usa os seguintes blocos fundamentais, alimentados pela fila de processamento:
@@ -81,18 +77,18 @@ A estrutura de relatórios (ilustrada pela estrutura de um relatório padrão) u
 
 ### Página do relatório {#report-page}
 
-A página do relatório:
+A página do relatório é:
 
-* É uma página CQ5 padrão.
-* É baseado em um [modelo CQ5 padrão, configurado para o relatório](#report-template).
+* Uma página CQ5 padrão.
+* Com base em uma [modelo CQ5 padrão, configurado para o relatório](#report-template).
 
 ### Base de Relatório {#report-base}
 
-A variável [`reportbase` componente](#report-base-component) constitui a base de qualquer relatório, uma vez que:
+A variável [`reportbase` componente](#report-base-component) constitui a base de qualquer relatório porque:
 
-* Contém a definição do [query](#the-query-and-data-retrieval) que fornece o conjunto subjacente de resultados dos dados.
+* Preserva a definição do [query](#the-query-and-data-retrieval) que fornece o conjunto subjacente de resultados dos dados.
 
-* É um sistema de parágrafo adaptado que conterá todas as colunas ( `columnbase`) adicionado ao relatório.
+* É um sistema de parágrafo adaptado que contém todas as colunas ( `columnbase`) adicionado ao relatório.
 * Define quais tipos de gráfico estão disponíveis e quais estão ativos no momento.
 * Define a caixa de diálogo Editar, que permite ao usuário configurar determinados aspectos do relatório.
 
@@ -101,15 +97,15 @@ A variável [`reportbase` componente](#report-base-component) constitui a base d
 Cada coluna é uma instância da variável [`columnbase` componente](#column-base-component) que:
 
 * É um parágrafo usado pelo parsys ( `reportbase`do respectivo relatório.
-* Define o link para o [conjunto de resultados subjacente](#the-query-and-data-retrieval); ou seja, define os dados específicos referenciados nesse conjunto de resultados e como ele é processado.
-* Contém definições adicionais; como as agregações e os filtros disponíveis, juntamente com quaisquer valores padrão.
+* Define o link para o [conjunto de resultados subjacente](#the-query-and-data-retrieval). Ou seja, define os dados específicos referenciados nesse conjunto de resultados e como ele é processado.
+* Mantém definições adicionais; como as agregações e os filtros disponíveis, juntamente com quaisquer valores padrão.
 
 ### O Query e a Recuperação de Dados {#the-query-and-data-retrieval}
 
 A consulta:
 
 * É definido como parte da [`reportbase`](#report-base) componente.
-* É baseado no [QueryBuilder do CQ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html).
+* É baseado no [QueryBuilder do CQ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/QueryBuilder.html).
 * Recupera os dados usados como base do relatório. Cada linha do conjunto de resultados (tabela) está vinculada a um nó, conforme retornado pela consulta. Informações específicas para [colunas individuais](#column-base-component) é extraído desse conjunto de dados.
 
 * Geralmente consiste em:
@@ -192,7 +188,7 @@ Os itens a seguir são necessários para criar e configurar um relatório:
 
 * a [local para a definição dos componentes do relatório](#location-of-report-components)
 * a [`reportbase` componente](#report-base-component)
-* um ou mais, [`columnbase` componente(s)](#column-base-component)
+* um ou mais, [`columnbase` componentes](#column-base-component)
 * a [componente da página](#page-component)
 * a [design de relatório](#report-design)
 * a [modelo de relatório](#report-template)
@@ -201,7 +197,7 @@ Os itens a seguir são necessários para criar e configurar um relatório:
 
 Os componentes de relatório padrão são mantidos em `/libs/cq/reporting/components`.
 
-No entanto, é altamente recomendável que você não atualize esses nós, mas crie seus próprios nós de componente em `/apps/cq/reporting/components` ou, se mais adequado `/apps/<yourProject>/reports/components`.
+No entanto, é recomendável não atualizar esses nós, mas criar seus próprios nós de componente em `/apps/cq/reporting/components` ou, se mais adequado `/apps/<yourProject>/reports/components`.
 
 Onde (como exemplo):
 
@@ -212,7 +208,7 @@ N:apps
             N:components [sling:Folder]
 ```
 
-Sob isso, você cria a raiz do relatório e, sob isso, o componente base de relatório e os componentes base da coluna:
+Sob isso, você cria a raiz para seu relatório e, sob esse, o componente base de relatório e os componentes base da coluna:
 
 ```
 N:apps
@@ -228,7 +224,7 @@ N:apps
 
 Uma página de relatório deve usar o `sling:resourceType` de `/libs/cq/reporting/components/reportpage`.
 
-Um componente de página personalizado não deve ser necessário (na maioria dos casos).
+Um componente de página personalizado não deve ser necessário (geralmente).
 
 ## Componente base do relatório {#report-base-component}
 
@@ -238,7 +234,7 @@ Este componente atua como um contêiner para o relatório como um todo e fornece
 
 * A variável [definição de consulta](#query-definition).
 * Um [(opcional) caixa de diálogo](#configuration-dialog) para configurar o relatório.
-* Qualquer [Gráficos](#chart-definitions) relatório.
+* Qualquer [Gráficos](#chart-definitions) que estão integrados ao relatório.
 
 ```
 N:<reportname> [cq:Component]
@@ -265,7 +261,7 @@ N:queryBuilder
 
 * `propertyConstraints`
 
-  Pode ser usado para limitar o conjunto de resultados a nós que têm propriedades específicas com valores específicos. Se várias restrições forem especificadas, o nó deverá atender a todas elas (operação AND).
+  Limita o conjunto de resultados a nós que têm propriedades específicas com valores específicos. Se várias restrições forem especificadas, o nó deverá atender a todas elas (operação AND).
 
   Por exemplo:
 
@@ -289,7 +285,7 @@ N:queryBuilder
 
 * `mandatoryProperties`
 
-  Pode ser usado para limitar o conjunto de resultados a nós que têm *all* das propriedades especificadas. O valor das propriedades não é levado em conta.
+  Limita o conjunto de resultados a nós que têm *all* as propriedades especificadas. O valor das propriedades não é considerado.
 
 Todos são opcionais e podem ser combinados conforme necessário, mas você deve definir pelo menos um deles.
 
@@ -326,7 +322,7 @@ N:charting
 
 * `definitions`
 
-  Define os tipos de gráfico que estão potencialmente disponíveis para o relatório. A variável `definitions` a ser utilizado será especificado pelo `active` configurações.
+  Define os tipos de gráfico que estão potencialmente disponíveis para o relatório. A variável `definitions` a ser usado é especificado pela variável `active` configurações.
 
   As definições são especificadas usando uma matriz de nós (mais uma vez com nomes `0`, `1`.. `x`), cada uma com as seguintes propriedades:
 
@@ -372,17 +368,17 @@ padrão: `9` (este também é o máximo permitido)
 
          * `hoverLimit` ( `Long`)
 
-           Número máximo de instantâneos agregados (pontos mostrados em cada linha horizontal, representando valores distintos) para os quais os pop-ups devem ser exibidos, ou seja, quando o usuário passa o mouse sobre um valor distinto ou rótulo correspondente na legenda do gráfico.
+           Número máximo de instantâneos agregados (pontos mostrados em cada linha horizontal, representando valores distintos) para os quais os pop-ups serão exibidos. Ou seja, quando o usuário passa o mouse sobre um valor distinto ou rótulo correspondente na legenda do gráfico.
 
-           padrão: `35` (ou seja, nenhum pop-up será exibido se mais de 35 valores distintos forem aplicáveis às configurações atuais do gráfico).
+           padrão: `35` (ou seja, nenhum pop-up será exibido se mais de 35 valores distintos forem aplicáveis às configurações de gráfico atuais).
 
-           Há um limite adicional de 10 pop-ups que podem ser exibidos em paralelo (vários pop-ups podem ser exibidos quando o mouse sobre os textos da legenda é feito).
+           Há um limite adicional de dez pop-ups que podem ser exibidos em paralelo (vários pop-ups podem ser exibidos quando o mouse sobre os textos da legenda é feito).
 
 ### Caixa de diálogo Configuração {#configuration-dialog}
 
 Cada relatório pode ter uma caixa de diálogo de configuração, permitindo que o usuário especifique vários parâmetros para o relatório. Essa caixa de diálogo pode ser acessada por meio da **Editar** quando a página do relatório estiver aberta.
 
-Este diálogo é um CQ padrão [caixa de diálogo](/help/sites-developing/components-basics.md#dialogs) e podem ser configuradas como tal (consulte [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog) para obter mais informações).
+Este diálogo é um CQ padrão [caixa de diálogo](/help/sites-developing/components-basics.md#dialogs) e podem ser configuradas como tal (consulte [CQ.Dialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Dialog) para obter mais informações).
 
 Uma caixa de diálogo de exemplo pode ter esta aparência:
 
@@ -429,13 +425,13 @@ Vários componentes pré-configurados são fornecidos; eles podem ser referencia
 
   `/libs/cq/reporting/components/commons/title`
 
-  Textfield para definir o título do relatório.
+  Campo de texto para definir o título do relatório.
 
 * **`description`**
 
   `/libs/cq/reporting/components/commons/description`
 
-  Textarea para definir a descrição do relatório.
+  Área de texto para definir a descrição do relatório.
 
 * **`processing`**
 
@@ -476,7 +472,7 @@ Um componente de coluna define uma combinação do seguinte:
 * A variável [Resolvedores e pré-processamento](#resolvers-and-preprocessing).
 * A variável [Definições Específicas de Coluna](#column-specific-definitions) (como filtros e agregados; `definitions` nó filho).
 * [Valores Padrão da Coluna](#column-default-values).
-* A variável [Filtro do cliente](#client-filter) para extrair as informações a serem exibidas dos dados retornados pelo servidor.
+* A variável [Filtro do cliente](#client-filter) para extrair as informações para exibição dos dados retornados pelo servidor.
 * Além disso, um componente de coluna deve fornecer uma instância adequada de `cq:editConfig`. para definir o [Eventos e ações](#events-and-actions) obrigatório.
 * A configuração de [colunas genéricas](#generic-columns).
 
@@ -523,40 +519,40 @@ N:definitions
 
   Define a propriedade a ser usada para calcular o valor real da célula.
 
-  Se a propriedade for definida como String[] várias propriedades são digitalizadas (em sequência) para encontrar o valor real.
+  Se uma propriedade for definida como String[], várias propriedades são digitalizadas (em sequência) para encontrar o valor real.
 
-  Por exemplo, no caso de:
+  Por exemplo, se houver:
 
   `property = [ "jcr:lastModified", "jcr:created" ]`
 
-  O extrator de valor correspondente (que está no controle aqui) irá:
+  O extrator de valor correspondente (que está no controle aqui):
 
-   * Verifique se há uma propriedade jcr:lastModified disponível e, em caso afirmativo, use-a.
+   * Verifica se há uma propriedade jcr:lastModified disponível e, em caso afirmativo, a usa.
    * Se nenhuma propriedade jcr:lastModified estiver disponível, o conteúdo de jcr:created será usado em seu lugar.
 
 * `subPath`
 
-  Se o resultado não estiver localizado no nó retornado pela query, `subPath` define onde a propriedade está realmente localizada.
+  Se o resultado não estiver no nó retornado pela query, `subPath` define onde a propriedade está localizada.
 
 * `secondaryProperty`
 
-  Define uma segunda propriedade que também deve ser usada para calcular o valor real da célula; isso só será usado para certos tipos de coluna (diferente e classificável).
+  Uma segunda propriedade que deve ser usada para calcular o valor real da célula. Essa definição só é usada para determinados tipos de coluna (diferente e classificável).
 
-  Por exemplo, no caso do Relatório de instâncias de fluxo de trabalho, a propriedade especificada é usada para armazenar o valor real da diferença de tempo (em milissegundos) entre as horas de início e de término.
+  Por exemplo, se houver o Relatório de instâncias de fluxo de trabalho, a propriedade especificada será usada para armazenar o valor real da diferença de tempo (em milissegundos) entre as horas de início e término.
 
 * `secondarySubPath`
 
   Semelhante a subPath, quando `secondaryProperty` é usada.
 
-Na maioria dos casos, apenas `property` serão usados.
+Normalmente, apenas `property` é usada.
 
 ### Filtro do cliente {#client-filter}
 
-O filtro do cliente extrai as informações a serem exibidas, dos dados retornados pelo servidor.
+O filtro do cliente extrai as informações a serem exibidas dos dados retornados pelo servidor.
 
 >[!NOTE]
 >
->Esse filtro é executado no lado do cliente, depois que todo o processamento do lado do servidor é aplicado.
+>Esse filtro é executado no lado do cliente, depois que todo o processamento do lado do servidor foi aplicado.
 
 ```xml
 N:definitions
@@ -564,7 +560,7 @@ N:definitions
         P:clientFilter [String]
 ```
 
-`clientFilter` é definida como uma função JavaScript que:
+A variável `clientFilter` é uma função JavaScript que:
 
 * como entrada, recebe um parâmetro; os dados retornados do servidor (pré-processados)
 * como saída, retorna o valor filtrado (processado); os dados extraídos ou derivados das informações de entrada
@@ -621,13 +617,13 @@ N:definitions
 
 * `resolverConfig`
 
-  Fornece definições para o resolvedor; as opções disponíveis dependem do `resolver` selecionado:
+  Fornece definições para o resolvedor. As opções disponíveis dependem do `resolver` selecionado:
 
    * `const`
 
      Use propriedades para especificar as constantes para resolução. O nome da propriedade define a constante a ser resolvida; o valor da propriedade define o valor resolvido.
 
-     Por exemplo, uma propriedade com **Nome**= `1` e **Valor** `=One` resolverá 1 para Um.
+     Por exemplo, uma propriedade com **Nome**= `1` e **Valor** `=One` resolve 1 para Um.
 
    * `default`
 
@@ -681,7 +677,7 @@ Os resolvedores são usados para extrair as informações necessárias. Exemplos
 
 **Const**
 
-O código a seguir resolverá um valor de constante de `VersionCreated` à sequência de caracteres `New version created`.
+O seguinte resolve um valor constante de `VersionCreated` à sequência de caracteres `New version created`.
 
 Consulte `/libs/cq/reporting/components/auditreport/typecol/definitions/data`.
 
@@ -745,7 +741,7 @@ A variável `preprocessing` A definição pode ser aplicada a:
 
   Se necessário, pode ser fornecida uma definição separada para cada agregação.
 
-  Para especificar o pré-processamento explícito para valores agregados, as definições de pré-processamento devem residir em uma respectiva `aggregated` nó filho ( `apply/aggregated`, `applyAfter/aggregated`). Se o pré-processamento explícito para agregações distintas for necessário, a definição de pré-processamento estará localizada em um nó filho com o nome da respectiva agregação (por exemplo `apply/aggregated/min/max` ou outros agregados).
+  Para especificar o pré-processamento explícito para valores agregados, as definições de pré-processamento devem residir em uma respectiva `aggregated` nó filho ( `apply/aggregated`, `applyAfter/aggregated`). Se o pré-processamento explícito para agregações distintas for necessário, a definição de pré-processamento estará em um nó filho com o nome da respectiva agregação (por exemplo `apply/aggregated/min/max` ou outros agregados).
 
 Você pode especificar qualquer um dos seguintes itens a serem usados durante o pré-processamento:
 
@@ -754,7 +750,7 @@ Quando encontrado, o padrão especificado (que é definido como uma expressão r
 
 * [formatadores de tipo de dados](#preprocessing-data-type-formatters)
 
-  Converte um valor numérico em uma cadeia de caracteres relativa; por exemplo, o valor &quot;representando uma diferença de tempo de 1 hora seria resolvido como uma cadeia de caracteres `1:24PM (1 hour ago)`.
+  Converte um valor numérico em uma cadeia de caracteres relativa; por exemplo, o valor &quot;representando uma diferença de tempo de uma hora seria resolvido como uma cadeia de caracteres `1:24PM (1 hour ago)`.
 
 Por exemplo:
 
@@ -779,7 +775,7 @@ Para o pré-processamento, é possível especificar um `pattern` (definido como 
 
 * `replace`
 
-  A sequência, ou representação da sequência, que será usada como substituição da sequência original. Geralmente, isso representa uma substring da string localizada pela expressão regular `pattern`.
+  A sequência, ou representação da sequência, que é usada como substituição da sequência original. Geralmente, isso representa uma substring da string localizada pela expressão regular `pattern`.
 
 Um exemplo de substituição pode ser detalhado como:
 
@@ -792,7 +788,7 @@ Um exemplo de substituição pode ser detalhado como:
 
    * `/content/geometrixx/en/services/jcr:content/par/text`
 
-* Serão divididas em quatro seções:
+* Dividido em quatro seções:
 
    * `$1` - `(.*)` - `/content/geometrixx/en/services`
    * `$2` - `(/jcr:content)` - `/jcr:content`
@@ -807,7 +803,7 @@ Um exemplo de substituição pode ser detalhado como:
 
 Esses formatadores convertem um valor numérico em uma sequência de caracteres relativa.
 
-Por exemplo, pode ser usado para uma coluna de tempo que permite `min`, `avg` e `max` agregados. Como `min`/ `avg`/ `max` agregações são exibidas como um *diferença de tempo* (por exemplo, `10 days ago`), eles exigem um formatador de dados. Para isso, uma `datedelta` o formatador é aplicado ao `min`/ `avg`/ `max` valores agregados. Se um `count` a agregação também estiver disponível, isso não precisará de um formatador, nem o valor original.
+Por exemplo, pode ser usado para uma coluna de tempo que permite `min`, `avg` e `max` agregados. Como `min`/ `avg`/ `max` agregações são exibidas como um *diferença de tempo* (por exemplo, `10 days ago`), eles exigem um formatador de dados. Para isso, uma `datedelta` o formatador é aplicado ao `min`/ `avg`/ `max` valores agregados. Se um `count` agregar também está disponível, isso não precisa de um formatador, nem do valor original.
 
 Atualmente, os formatadores de tipo de dados disponíveis são:
 
@@ -817,15 +813,15 @@ Atualmente, os formatadores de tipo de dados disponíveis são:
 
    * `duration`
 
-     Duração é o intervalo de tempo entre duas datas definidas. Por exemplo, o início e o fim de uma ação de fluxo de trabalho que levou 1 hora, começando em 13/02/11 11:23h e terminando uma hora depois em 13/02/11 12:23h.
+     Duração é o intervalo de tempo entre duas datas definidas. Por exemplo, o início e o fim de uma ação de fluxo de trabalho que levou uma hora, começando em 13/02/11 às 11:23h e terminando uma hora depois às 12:23h de 13/02/11.
 
      Ele converte um valor numérico (interpretado como milissegundos) em uma string de duração; por exemplo, `30000` é formatado como * `30s`.*
 
    * `datedelta`
 
-     Datadelta é o intervalo de tempo entre uma data no passado e &quot;agora&quot; (portanto, terá um resultado diferente se o relatório for visualizado em um momento posterior).
+     Datadelta é o intervalo de tempo entre uma data no passado e &quot;agora&quot; (portanto, tem um resultado diferente se o relatório for visualizado em um momento posterior).
 
-     Ele converte o valor numérico (interpretado como uma diferença de tempo em dias) em uma string de data relativa. Por exemplo, 1 é formatado como 1 dia atrás.
+     Ele converte o valor numérico (interpretado como uma diferença de tempo em dias) em uma string de data relativa. Por exemplo, 1 é formatado como um dia atrás.
 
 O exemplo a seguir define `datedelta` formatação para `min` e `max` agregados:
 
@@ -841,7 +837,7 @@ N:definitions
                         P:format = "datedelta"
 ```
 
-### Definições Específicas de Coluna {#column-specific-definitions}
+### Definições específicas de coluna {#column-specific-definitions}
 
 As definições específicas de coluna definem os filtros e agregações disponíveis para essa coluna.
 
@@ -875,13 +871,13 @@ N:definitions
    * `diff`
    * `timeslot`
 
-     É usado para extrair partes de uma data necessária para agregação (por exemplo, agrupar por ano para obter dados agregados para cada ano).
+     Usado para extrair partes de uma data necessária para agregação (por exemplo, agrupar por ano para obter dados agregados para cada ano).
 
    * `sortable`
 
-     É usado para valores que usam valores diferentes (obtidos de propriedades diferentes) para classificação e exibição.
+     Usado para valores que usam valores diferentes (conforme obtidos de propriedades diferentes) para classificação e exibição.
 
-  Além disso. qualquer uma das opções acima pode ser definida como vários valores; por exemplo, `string[]` define uma matriz de cadeias de caracteres.
+  Além disso, qualquer uma das opções acima pode ser definida como vários valores; por exemplo, `string[]` define uma matriz de cadeias de caracteres.
 
   O extrator de valor é escolhido pelo tipo de coluna. Se um extrator de valor estiver disponível para um tipo de coluna, esse extrator será usado. Caso contrário, o extrator de valor padrão será usado.
 
@@ -924,7 +920,7 @@ N:definitions
 
       * `raw`
 
-        O filtro é aplicado aos dados brutos.
+        O filtro é aplicado em dados brutos.
 
       * `preprocessed`
 
@@ -940,7 +936,7 @@ N:definitions
 
    * `text`
 
-     Nome textual da agregação. Se `text` não for especificado, então a descrição padrão da agregação será usada; por exemplo, `minimum` será utilizado para a `min` agregada.
+     Nome textual da agregação. Se `text` não for especificado, então será usada a descrição padrão da agregação. Por exemplo, `minimum` é usado para o `min` agregada.
 
    * `type`
 
@@ -956,31 +952,31 @@ N:definitions
 
       * `min`
 
-        Fornece o valor mínimo.
+        Ele fornece o valor mínimo.
 
       * `max`
 
-        Fornece o valor máximo.
+        Ele fornece o valor máximo.
 
       * `average`
 
-        Fornece o valor médio.
+        Ele fornece o valor médio.
 
       * `sum`
 
-        Fornece a soma de todos os valores.
+        Ela fornece a soma de todos os valores.
 
       * `median`
 
-        Fornece o valor mediano.
+        Ele fornece o valor mediano.
 
       * `percentile95`
 
-        Obtém o 95º percentil de todos os valores.
+        Usa o 95º percentil de todos os valores.
 
 ### Valores Padrão da Coluna {#column-default-values}
 
-Isso é usado para definir valores padrão para a coluna:
+Define os valores padrão para a coluna:
 
 ```xml
 N:defaults
@@ -1015,9 +1011,9 @@ N:cq:editConfig [cq:EditConfig]
 
 Colunas genéricas são uma extensão em que (a maioria das) definições de coluna são armazenadas na instância do nó da coluna (em vez do nó do componente ).
 
-Eles usam uma caixa de diálogo (padrão) personalizada para o componente genérico individual. Essa caixa de diálogo permite que o usuário do relatório defina as propriedades da coluna de uma coluna genérica na página do relatório (usando a opção de menu **Propriedades da coluna...**).
+Eles usam uma caixa de diálogo (padrão) que pode ser personalizada para o componente genérico individual. Essa caixa de diálogo permite que o usuário do relatório defina as propriedades da coluna de uma coluna genérica na página do relatório (usando a opção de menu **Propriedades da coluna...**).
 
-Um exemplo é o **Genérico** coluna da **Relatório do usuário**; consulte `/libs/cq/reporting/components/userreport/genericcol`.
+Um exemplo é o **Genérico** coluna da **Relatório do usuário**. Consulte `/libs/cq/reporting/components/userreport/genericcol`.
 
 Para tornar uma coluna genérica:
 
@@ -1029,7 +1025,7 @@ Para tornar uma coluna genérica:
 
   Consulte `/libs/cq/reporting/components/userreport/genericcol/definitions/dialog`
 
-   * Os campos da caixa de diálogo devem se referir aos mesmos nomes que a propriedade do componente correspondente (incluindo seu caminho).
+   * Os campos da caixa de diálogo devem se referir aos mesmos nomes que a propriedade do componente correspondente, incluindo seu caminho.
 
      Por exemplo, se você quiser que o tipo de coluna genérica seja configurável por meio da caixa de diálogo, use um campo com o nome de `./definitions/type`.
 
@@ -1041,7 +1037,7 @@ Para tornar uma coluna genérica:
 
 * Use metodologias padrão de AEM para definir propriedades de coluna (adicionais).
 
-  Observe que para propriedades definidas nas instâncias de componente e coluna, o valor na instância de coluna tem prioridade.
+  Para propriedades definidas nas instâncias de componente e coluna, o valor na instância de coluna tem prioridade.
 
   As propriedades disponíveis para uma coluna genérica são:
 
@@ -1053,7 +1049,7 @@ Para tornar uma coluna genérica:
    * `definitions/queryBuilder` - a configuração do construtor de consultas
    * `defaults/aggregate` - a agregação padrão
 
-  No caso de uma nova instância da coluna genérica no **Relatório do usuário** as propriedades definidas com a caixa de diálogo são mantidas em:
+  Se houver uma nova instância da coluna genérica na variável **Relatório do usuário**, as propriedades definidas com a caixa de diálogo são mantidas em:
 
   `/etc/reports/userreport/jcr:content/report/columns/genericcol/settings/generic`
 
@@ -1061,13 +1057,13 @@ Para tornar uma coluna genérica:
 
 O design define quais tipos de coluna estão disponíveis para criar um relatório. Também define o sistema de parágrafo ao qual as colunas são adicionadas.
 
-É altamente recomendável criar um design individual para cada relatório. Isso garante total flexibilidade. Consulte também [Definição do novo relatório](#defining-your-new-report).
+A Adobe recomenda criar um design individual para cada relatório. Isso garante total flexibilidade. Consulte [Definição do novo relatório](#defining-your-new-report).
 
 Os componentes de relatório padrão são mantidos em `/etc/designs/reports`.
 
-O local dos relatórios pode depender de onde você localizou seus componentes:
+O local dos relatórios pode depender de onde seus componentes estão localizados:
 
-* `/etc/designs/reports/<yourReport>` é adequado se o relatório estiver localizado abaixo de `/apps/cq/reporting`
+* `/etc/designs/reports/<yourReport>` é adequado se o relatório estiver sob `/apps/cq/reporting`
 
 * `/etc/designs/<yourProject>/reports/<*yourReport*>` para relatórios que usam o `/apps/<yourProject>/reports` padrão
 
@@ -1105,7 +1101,7 @@ Não é necessário especificar designs para colunas individuais. As colunas dis
 
 >[!NOTE]
 >
->É recomendável não fazer alterações nos designs de relatórios padrão. Isso garante que você não perca nenhuma alteração ao atualizar ou instalar hotfixes.
+>A Adobe recomenda que você não altere os designs de relatórios padrão. Isso garante que você não perca nenhuma alteração ao atualizar ou instalar hotfixes.
 >
 >Copie o relatório e seu design se quiser personalizar um relatório padrão.
 
@@ -1122,7 +1118,7 @@ O template deve:
 * defina o `sling:resourceType` para `cq/reporting/components/reportpage`
 
 * indicar o modelo a utilizar
-* criar um `report` nó filho que faz referência ao contêiner ( `reportbase`) através da `sling:resourceType` propriedade
+* criar um `report` nó filho que faz referência ao contêiner ( `reportbase`) com o componente `sling:resourceType` propriedade
 
 Um exemplo de trecho de modelo (retirado do modelo de relatório do componente) é:
 
@@ -1157,7 +1153,7 @@ Um exemplo de trecho de modelo, mostrando a definição do caminho raiz (retirad
 
 Os modelos de relatórios padrão são mantidos em `/libs/cq/reporting/templates`.
 
-No entanto, é altamente recomendável que você não atualize esses nós, mas crie seus próprios nós de componente em `/apps/cq/reporting/templates` ou, se mais adequado `/apps/<yourProject>/reports/templates`.
+No entanto, o Adobe recomenda que você não atualize esses nós. Em vez disso, crie seus próprios nós de componente em `/apps/cq/reporting/templates` ou, se mais adequado `/apps/<yourProject>/reports/templates`.
 
 Onde, como exemplo (consulte também [Local dos componentes do relatório](#location-of-report-components)):
 
@@ -1168,7 +1164,7 @@ N:apps
             N:templates [sling:Folder]
 ```
 
-Nele, você cria a raiz do modelo:
+Em, crie a raiz para seu modelo:
 
 ```xml
 N:apps
@@ -1182,7 +1178,7 @@ N:apps
 
 ### Definição do novo relatório {#defining-your-new-report}
 
-Para definir um novo relatório, você deve criar e configurar:
+Para definir um relatório, crie e configure:
 
 1. A raiz dos componentes do relatório.
 1. O componente da base de relatório.
@@ -1191,7 +1187,7 @@ Para definir um novo relatório, você deve criar e configurar:
 1. A raiz do seu modelo de relatório.
 1. O template do relatório.
 
-Para ilustrar essas etapas, o exemplo a seguir define um relatório que lista todas as configurações de OSGi no repositório; ou seja, todas as instâncias do `sling:OsgiConfig` nó.
+Para ilustrar essas etapas, o exemplo a seguir define um relatório que lista todas as configurações de OSGi no repositório. Ou seja, todas as instâncias do `sling:OsgiConfig` nó.
 
 >[!NOTE]
 >
@@ -1208,7 +1204,7 @@ Para ilustrar essas etapas, o exemplo a seguir define um relatório que lista to
                N:osgireport [sling:Folder]
    ```
 
-1. Defina sua base de relatórios. Por exemplo `osgireport[cq:Component]` em `/apps/cq/reporting/components/osgireport`.
+1. Defina sua base de relatórios. Por exemplo, `osgireport[cq:Component]` em `/apps/cq/reporting/components/osgireport`.
 
    ```xml
    N:osgireport [sling:Folder]
@@ -1260,7 +1256,7 @@ Para ilustrar essas etapas, o exemplo a seguir define um relatório que lista to
    * exibe ambos `pie` e `lineseries` gráficos
    * fornece uma caixa de diálogo para o usuário configurar o relatório
 
-1. Defina seu primeiro componente de coluna (columnbase). Por exemplo `bundlecol[cq:Component]` em `/apps/cq/reporting/components/osgireport`.
+1. Defina seu primeiro componente de coluna (columnbase). Por exemplo, `bundlecol[cq:Component]` em `/apps/cq/reporting/components/osgireport`.
 
    ```xml
    N:osgireport [sling:Folder]
@@ -1288,7 +1284,7 @@ Para ilustrar essas etapas, o exemplo a seguir define um relatório que lista to
                    P:property [String] = "jcr:path"
    ```
 
-   Isso define um componente de base de coluna que:
+   Isso define um componente columnbase que:
 
    * pesquisa e retorna o valor que recebe do servidor; nesse caso, a propriedade `jcr:path` para cada `sling:OsgiConfig` nó
    * fornece a `count` agregado
@@ -1308,9 +1304,9 @@ Para ilustrar essas etapas, o exemplo a seguir define um relatório que lista to
    >   P:clientFilter [String] = "function(v) { return v; }"
    >```
    >
-   >Onde a função simplesmente retorna o valor que recebe.
+   >Onde a função simplesmente retorna o valor recebido.
 
-1. Defina o design do relatório. Por exemplo `osgireport[cq:Page]` em `/etc/designs/reports`.
+1. Defina o design do relatório. Por exemplo, `osgireport[cq:Page]` em `/etc/designs/reports`.
 
    ```xml
    N:osgireport [cq:Page]
@@ -1335,7 +1331,7 @@ Para ilustrar essas etapas, o exemplo a seguir define um relatório que lista to
                N:osgireport [cq:Template]
    ```
 
-1. Defina seu modelo de relatório. Por exemplo `osgireport[cq:Template]` em `/apps/cq/reporting/templates`.
+1. Defina seu modelo de relatório. Por exemplo, `osgireport[cq:Template]` em `/apps/cq/reporting/templates`.
 
    ```xml
    N:osgireport [cq:Template]
@@ -1367,12 +1363,12 @@ Uma instância do novo relatório agora pode ser criada:
 
 1. Selecionar **Relatórios** no painel à esquerda.
 1. Depois **Novo...** na barra de ferramentas. Definir um **Título** e **Nome**, selecione seu novo tipo de relatório (a variável **Modelo de relatório OSGi**) na lista de modelos, depois clique em **Criar**.
-1. A nova instância do relatório aparecerá na lista. Clique duas vezes para abrir.
+1. A nova instância do relatório aparece na lista. Clique duas vezes para abrir.
 1. Arraste um componente (para este exemplo, **Pacote** no **Relatório OSGi** grupo) do sidekick para criar a primeira coluna e [iniciar a definição de relatório](/help/sites-administering/reporting.md#the-basics-of-report-customization).
 
    >[!NOTE]
    >
-   >Como este exemplo não tem nenhuma coluna agrupável, os gráficos não estarão disponíveis. Para ver gráficos, defina `groupable` para `true`:
+   >Como este exemplo não tem nenhuma coluna agrupável, os gráficos não estão disponíveis. Para ver gráficos, defina `groupable` para `true`:
    >
    >```
    >N:osgireport [sling:Folder]
@@ -1386,23 +1382,23 @@ Uma instância do novo relatório agora pode ser criada:
 
 Esta seção descreve opções avançadas de configuração para os serviços OSGi que implementam a estrutura de relatório.
 
-Elas podem ser visualizadas usando o menu Configuration do console da Web (disponível, por exemplo, em `http://localhost:4502/system/console/configMgr`). Ao trabalhar com AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
+Elas podem ser visualizadas usando o menu Configuration do console da Web (disponível em `http://localhost:4502/system/console/configMgr`, por exemplo). Ao trabalhar com AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
 
 ### Serviço básico (Configuração de relatório do Day CQ) {#basic-service-day-cq-reporting-configuration}
 
 * **Fuso horário** define o fuso horário para o qual os dados do histórico são criados. Isso garante que o gráfico histórico exiba os mesmos dados para cada usuário em todo o mundo.
-* **Localidade** define o local a ser usado junto com o **Fuso horário** para dados de histórico. O local é usado para determinar algumas configurações de calendário específicas do local (por exemplo, se o primeiro dia de uma semana é domingo ou segunda-feira).
+* **Localidade** define a localidade a ser usada com **Fuso horário** para dados de histórico. O local é usado para determinar algumas configurações de calendário específicas do local (por exemplo, se o primeiro dia de uma semana é domingo ou segunda-feira).
 
 * **Caminho do instantâneo** define o caminho raiz onde os instantâneos de gráficos históricos são armazenados.
 * **Caminho para relatórios** define o caminho onde os relatórios estão localizados. Isso é usado pelo serviço de instantâneo para determinar os relatórios para os quais são feitos instantâneos.
 * **Instantâneos diários** define a hora de cada dia em que os instantâneos diários são tirados. A hora especificada está no fuso horário local do servidor.
 * **Instantâneos por hora** define o minuto de cada hora em que os instantâneos são tirados.
-* **Linhas (máximo)** define o número máximo de linhas que são armazenadas para cada snapshot. Esse valor deve ser escolhido de forma razoável; se for muito alto, isso afetará o tamanho do repositório; se for muito baixo, os dados podem não ser precisos devido à maneira como os dados do histórico são tratados.
-* **Dados falsos**, se ativados, dados de históricos falsos podem ser criados usando o `fakedata` seletor; se desativado, use o método `fakedata` seletor lançará uma exceção.
+* **Linhas (máximo)** define o número máximo de linhas que são armazenadas para cada snapshot. Esse valor deve ser escolhido de forma razoável. Se for muito alto, isso afetará o tamanho do repositório. Se for muito baixo, os dados podem não ser precisos por causa da maneira como os dados do histórico são tratados.
+* **Dados falsos**, se ativados, dados de históricos falsos podem ser criados usando o `fakedata` seletor; se desativado, use o método `fakedata` o seletor lança uma exceção.
 
   Como os dados são falsos, eles devem *somente* para fins de teste e depuração.
 
-  Usar o `fakedata` o seletor concluirá o relatório implicitamente, de modo que todos os dados existentes serão perdidos; os dados podem ser restaurados manualmente, mas esse processo pode ser demorado.
+  Usar o `fakedata` o seletor conclui o relatório implicitamente, portanto, todos os dados existentes são perdidos. Os dados podem ser restaurados manualmente, mas isso pode ser um processo demorado.
 
 * **Instantâneo de usuário** define um usuário opcional que pode ser usado para tirar instantâneos.
 
@@ -1410,17 +1406,17 @@ Elas podem ser visualizadas usando o menu Configuration do console da Web (dispo
 
   Além disso, especificar um usuário pode impor um risco de segurança.
 
-* **Impor usuário de instantâneo**, se ativado, todos os instantâneos serão tirados com o usuário especificado em *Instantâneo de usuário*. Isso pode ter sérios impactos na segurança se não for tratado corretamente.
+* **Impor usuário de instantâneo**, se ativado, todos os instantâneos são tirados com o usuário especificado em *Instantâneo de usuário*. Isso pode ter um sério impacto na segurança se não for tratado corretamente.
 
 ### Configurações de cache (Cache de relatórios do Day CQ) {#cache-settings-day-cq-reporting-cache}
 
-* **Ativar** permite habilitar ou desabilitar o armazenamento em cache de dados de relatório. Habilitar o cache de relatórios manterá os dados do relatório na memória durante várias solicitações. Isso pode aumentar o desempenho, mas levará a um maior consumo de memória e, em circunstâncias extremas, pode levar a situações de falta de memória.
-* **TTL** define o tempo (em segundos) durante o qual os dados de relatório são armazenados em cache. Um número mais alto melhorará o desempenho, mas também poderá retornar dados imprecisos se os dados forem alterados dentro do período.
+* **Ativar** permite habilitar ou desabilitar o armazenamento em cache de dados de relatório. A ativação do cache de relatórios mantém os dados do relatório na memória durante várias solicitações. Isso pode aumentar o desempenho, mas leva a um maior consumo de memória e pode, em circunstâncias extremas, levar a situações de falta de memória.
+* **TTL** define o tempo (em segundos) durante o qual os dados de relatório são armazenados em cache. Um número mais alto aumenta o desempenho, mas também pode retornar dados imprecisos se os dados forem alterados dentro do período.
 * **Máximo de entradas** define o número máximo de relatórios a serem armazenados em cache a qualquer momento.
 
 >[!NOTE]
 >
->Os dados do relatório podem ser diferentes para cada usuário e idioma. Portanto, os dados do relatório são armazenados em cache por relatório, usuário e idioma. Isso significa que um **Máximo de entradas** valor de `2` na verdade, o armazena dados em cache para:
+>Os dados do relatório podem ser diferentes para cada usuário e idioma. Portanto, os dados de relatório são armazenados em cache por relatório, usuário e idioma. Isso significa que um **Máximo de entradas** valor de `2` na verdade, o armazena dados em cache para:
 >
 >* um relatório para dois usuários com configurações de idioma diferentes
 >* um usuário e dois relatórios

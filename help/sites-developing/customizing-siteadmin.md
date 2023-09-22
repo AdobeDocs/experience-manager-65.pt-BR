@@ -1,19 +1,15 @@
 ---
 title: Personalização do console Sites (interface clássica)
-seo-title: Customizing the Websites Console (Classic UI)
 description: O console Administração de sites pode ser estendido para exibir colunas personalizadas
-seo-description: The Websites Administration console can be extended to display custom columns
-uuid: 9163fdff-5351-477d-b91c-8a74f8b41d34
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: aeb37103-541d-4235-8a78-980b78c8de66
 docset: aem65
 exl-id: 2b9b4857-821c-4f2f-9ed9-78a1c9f5ac67
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '779'
 ht-degree: 0%
 
 ---
@@ -28,7 +24,7 @@ Este tutorial passo a passo explica como exibir uma nova coluna no console Admin
 
 1. [Criação do serviço OSGI](#creating-the-osgi-service) e implantar o pacote que o contém no servidor AEM.
 1. (opcional) [Teste do novo serviço](#testing-the-new-service) emitindo uma chamada JSON para solicitar o objeto JSON usado para criar o console.
-1. [Exibição da nova coluna](#displaying-the-new-column) estendendo a estrutura dos nós do console no repositório.
+1. [Exibição da nova coluna](#displaying-the-new-column) estendendo a estrutura do nó do console no repositório.
 
 >[!NOTE]
 >
@@ -37,7 +33,6 @@ Este tutorial passo a passo explica como exibir uma nova coluna no console Admin
 >* o console Ativos digitais
 >* o console da Comunidade
 >
-
 
 ### Criação do serviço OSGI {#creating-the-osgi-service}
 
@@ -52,7 +47,7 @@ Os argumentos para ambos os métodos são:
 * `info`, o objeto JSON a ser atualizado, que é, respectivamente, a lista global ou o item de lista atual,
 * `resource`, um recurso do Sling.
 
-O exemplo de implementação abaixo:
+O exemplo de implementação está abaixo:
 
 * Adiciona um *estrelado* para cada item, que é `true` se o nome da página começar com um *e*, e `false` caso contrário.
 
@@ -109,13 +104,13 @@ public class StarredListInfoProvider implements ListInfoProvider {
 >[!CAUTION]
 >
 >* Sua implementação deve decidir, com base na solicitação e/ou recurso fornecido, se deve adicionar as informações ao objeto JSON ou não.
->* Se o seu `ListInfoProvider` A implementação define uma propriedade que já existe no objeto de resposta. O valor será substituído pelo valor fornecido.
+>* Se o seu `ListInfoProvider` A implementação define uma propriedade que existe no objeto de resposta. O valor é substituído pelo valor fornecido.
 >
->  Você pode usar [classificação de serviço](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) para gerenciar a ordem de execução de vários `ListInfoProvider` implementações.
+>  Você pode usar [classificação de serviço](https://docs.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) para gerenciar a ordem de execução de vários `ListInfoProvider` implementações.
 
 ### Testando o novo serviço {#testing-the-new-service}
 
-Ao abrir o console Administração de sites e navegar pelo site, o navegador emite uma chamada ajax para obter o objeto JSON usado para criar o console. Por exemplo, quando você navega até a variável `/content/geometrixx` , a seguinte solicitação é enviada ao servidor AEM para criar o console:
+Quando você abre o console Administração de sites e navega pelo seu site, o navegador emite uma chamada Ajax para obter o objeto JSON usado para criar o console. Por exemplo, quando você navega até a variável `/content/geometrixx` , a seguinte solicitação é enviada ao servidor AEM para criar o console:
 
 [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
@@ -141,7 +136,7 @@ A última etapa consiste em adaptar a estrutura dos nós do console Administraç
    * Remover **pageText**
 
    * Definir **pathRegex** para `/content/geometrixx(/.*)?`
-Isso tornará a configuração de grade ativa para todos os sites geometrixx.
+Isso torna a configuração de grade ativa para todos os sites do Geometrixx.
 
    * Definir **storeProxySuffix** para `.pages.json`
 
@@ -164,7 +159,7 @@ Isso tornará a configuração de grade ativa para todos os sites geometrixx.
 1. (opcional) Solte as colunas que você não deseja exibir em `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
 
 1. `/siteadmin` é um caminho personalizado que, como padrão, aponta para `/libs/wcm/core/content/siteadmin`.
-Para redirecionar para sua versão do siteadmin em `/apps/wcm/core/content/siteadmin` definir a propriedade `sling:vanityOrder` para ter um valor maior que o definido em `/libs/wcm/core/content/siteadmin`. O valor padrão é 300, portanto, qualquer valor maior é adequado.
+Para redirecionar para sua versão do siteadmin em `/apps/wcm/core/content/siteadmin`, defina a propriedade `sling:vanityOrder` para ter um valor maior que o definido em `/libs/wcm/core/content/siteadmin`. O valor padrão é 300, portanto, qualquer valor maior é adequado.
 
 1. Vá para o console Administração de sites e navegue até o site do Geometrixx:
    [https://localhost:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx).
@@ -175,7 +170,7 @@ Para redirecionar para sua versão do siteadmin em `/apps/wcm/core/content/sitea
 
 >[!CAUTION]
 >
->Se várias configurações de grade corresponderem ao caminho solicitado definido pelo **pathRegex** , a primeira será usada e não a mais específica, o que significa que a ordem das configurações é importante.
+>Se várias configurações de grade corresponderem ao caminho solicitado definido pelo **pathRegex** , a primeira é usada e não a mais específica, o que significa que a ordem das configurações é importante.
 
 ### Pacote de exemplo {#sample-package}
 
