@@ -1,19 +1,15 @@
 ---
 title: Etapas genéricas para personalização do espaço de trabalho do AEM Forms
-seo-title: Generic steps for AEM Forms workspace customization
-description: Introdução à personalização da interface do usuário do espaço de trabalho do AEM Forms.
-seo-description: How to get started customizing AEM Forms workspace user interface.
-uuid: da6310b4-1c58-468d-85c6-975fd2c141f9
+description: Introdução à personalização da interface do usuário do espaço de trabalho do Adobe Experience Manager Forms.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: dd3218c4-2bb2-40fc-9141-5823b0ea4224
 docset: aem65
 exl-id: 45e50b47-1b36-4937-9e1a-cc7bfb953861
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '304'
 ht-degree: 1%
 
 ---
@@ -23,9 +19,9 @@ ht-degree: 1%
 As etapas genéricas para executar qualquer personalização são:
 
 1. Faça logon no CRXDE Lite acessando `https://'[server]:[port]'/lc/crx/de/index.jsp`.
-1. Criar um `sling:Folder` pasta chamada `ws` em `/apps`, se não existir. Para criar um `sling:Folder` , clique com o botão direito do mouse na `apps` e selecione **[!UICONTROL Criar]** > **[!UICONTROL Criar nó]**. Especifique o nome como `ws`, selecione tipo como `sling:Folder` e clique em **[!UICONTROL OK]**. Clique em **[!UICONTROL Salvar tudo]**.
+1. Criar um `sling:Folder` pasta nomeada `ws` em `/apps`, se não existir. Para criar um `sling:Folder` , clique com o botão direito do mouse na `apps` e selecione **[!UICONTROL Criar]** > **[!UICONTROL Criar nó]**. Especifique o nome como `ws`, selecione tipo como `sling:Folder`e clique em **[!UICONTROL OK]**. Clique em **[!UICONTROL Salvar tudo]**.
 1. Navegue até `/apps/ws`e navegue até o **[!UICONTROL Controle de acesso]** guia.
-1. Selecione o **[!UICONTROL Repositório]** opção. No **[!UICONTROL Controle de acesso]** clique em **[!UICONTROL +]** para adicionar uma nova entrada. Clique em **[!UICONTROL +]** novamente.
+1. Selecione o **[!UICONTROL Repositório]** opção. No **[!UICONTROL Controle de acesso]** clique em **[!UICONTROL +]** para adicionar uma entrada. Clique em **[!UICONTROL +]** novamente.
 1. Pesquise e selecione o **PERM_WORKSPACE_USER** Principal.
 
    ![Selecione PRINCIPAL PERM_WORKSPACE_USER como parte das etapas genéricas para personalizar o HTML Workspace](assets/perm_workspace_user.png)
@@ -42,9 +38,9 @@ As etapas genéricas para executar qualquer personalização são:
 
 1. Faça o seguinte para personalizações de CSS:
 
-   1. Navegue até a `/apps/ws` e crie uma nova pasta chamada `css`.
+   1. Navegue até a `/apps/ws` e crie uma pasta chamada `css`.
 
-   1. No `css` , crie um novo arquivo com o nome `newStyle.css`.
+   1. No `css` , crie um arquivo chamado `newStyle.css`.
 
    1. Abertura `/apps/ws/html`.jsp e alterar de
 

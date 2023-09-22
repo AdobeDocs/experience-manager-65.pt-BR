@@ -1,15 +1,15 @@
 ---
 title: Admin Console
-description: Saiba como usar os Admin Console disponíveis no AEM.
+description: Saiba como usar os Admin Console disponíveis no Adobe Experience Manager.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '230'
 ht-degree: 2%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 2%
 
 # Admin Console{#admin-consoles}
 
-Por padrão, a capacidade de alternar para a interface clássica por meio dos consoles de administração foi desativada. Portanto, os ícones pop-up que eram vistos ao passar o mouse sobre determinados ícones do console, permitindo acesso à interface clássica, não são mais exibidos.
+Por padrão, a capacidade de alternar para a interface clássica por meio dos consoles de Administração está desativada. Portanto, os ícones pop-up que eram vistos ao passar o mouse sobre determinados ícones do console, permitindo acesso à interface clássica, não são mais exibidos.
 
 Todo console que tenha uma versão da interface clássica no `/libs/cq/core/content/nav` podem ser reativados individualmente para que a variável **Interface clássica** A opção aparece novamente sobre o ícone do console quando é tocada com o mouse.
 
-Neste exemplo, estamos reativando a IU Clássica para o console Sites.
+Neste exemplo, você está reativando a interface clássica para o console Sites.
 
 1. Usando o CRXDE Lite, localize o nó correspondente ao Admin Console para o qual você deseja reativar a interface clássica. Eles são encontrados em:
 
@@ -31,7 +31,7 @@ Neste exemplo, estamos reativando a IU Clássica para o console Sites.
 
    [`https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
 
-1. Selecione o nó correspondente ao console para o qual você deseja reativar a interface clássica. Para nosso exemplo, reativaremos a interface clássica para o console Sites.
+1. Selecione o nó correspondente ao console para o qual você deseja reativar a interface clássica. Neste exemplo, você está reativando a interface clássica para o console Sites.
 
    `/libs/cq/core/content/nav/sites`
 

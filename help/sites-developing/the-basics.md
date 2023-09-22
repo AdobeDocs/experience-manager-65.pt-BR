@@ -1,18 +1,14 @@
 ---
 title: Conceitos principais de AEM
-seo-title: The Basics
-description: Uma visão geral dos conceitos principais de como o AEM é estruturado e como ele se desenvolve, incluindo a compreensão do JCR, Sling, OSGi, o Dispatcher, fluxos de trabalho e o MSM
-seo-description: An overview of the core concepts of how AEM is structured and how to develop on top of it including understanding the JCR, Sling, OSGi, the dispatcher, workflows, and MSM
-uuid: e49f29db-a5d6-48a0-af32-f8785156746e
+description: Uma visão geral dos conceitos principais de como o Adobe Experience Manager (AEM) é estruturado e como desenvolvê-lo, incluindo a compreensão do JCR, Sling, OSGi, o Dispatcher, fluxos de trabalho e MSM.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '3325'
+source-wordcount: '3310'
 ht-degree: 1%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Antes de mergulhar nos conceitos principais do AEM, a Adobe recomenda concluir o Tutorial WKND no [Introdução ao desenvolvimento do AEM Sites](/help/sites-developing/getting-started.md) documento para obter uma visão geral do processo de desenvolvimento do AEM e a introdução aos conceitos principais.
+>Antes de entrar nos conceitos principais do Adobe Experience Manager (AEM), o Adobe recomenda concluir o Tutorial WKND no [Introdução ao desenvolvimento do AEM Sites](/help/sites-developing/getting-started.md) documento. Ele inclui uma visão geral do processo de desenvolvimento do AEM e uma introdução aos conceitos principais.
 
 ## Pré-requisitos para o desenvolvimento no AEM {#prerequisites-for-developing-on-aem}
 
@@ -57,7 +53,7 @@ O Experience Server fornece os Serviços de experiência nos quais o AEM é inco
 
 ### Introdução ao Sling {#introduction-to-sling}
 
-O AEM é construído usando [Sling](https://sling.apache.org/index.html), uma estrutura de aplicativo web baseada em princípios REST que fornece desenvolvimento fácil de aplicativos orientados a conteúdo. O Sling usa um repositório JCR, como o Apache Jackrabbit ou, no caso do AEM, o repositório de conteúdo CRX, como seu armazenamento de dados. O Sling contribuiu para a Apache Software Foundation - mais informações podem ser encontradas na Apache.
+O AEM é construído usando [Sling](https://sling.apache.org/index.html), uma estrutura de aplicativo web baseada em princípios REST que fornece desenvolvimento fácil de aplicativos orientados a conteúdo. O Sling usa um repositório JCR, como o Apache Jackrabbit ou, se houver AEM, o repositório de conteúdo CRX, como seu armazenamento de dados. O Sling contribuiu para a Apache Software Foundation - mais informações podem ser encontradas na Apache.
 
 Usando o Sling, o tipo de conteúdo a ser renderizado não é a primeira consideração de processamento. Em vez disso, a principal consideração é se o URL resolve um objeto de conteúdo para o qual um script pode ser encontrado para executar a renderização. Isso fornece excelente suporte para que os autores de conteúdo da Web criem páginas que são facilmente personalizadas de acordo com suas necessidades.
 
@@ -65,11 +61,11 @@ As vantagens dessa flexibilidade são evidentes em aplicativos com uma grande va
 
 Consulte [Descubra o Sling em 15 minutos](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) para conhecer as primeiras etapas de desenvolvimento com o Sling.
 
-O diagrama a seguir explica a resolução do script Sling: ele mostra como ir da solicitação HTTP para o nó de conteúdo, do nó de conteúdo para o tipo de recurso, do tipo de recurso para o script e quais variáveis de script estão disponíveis.
+O diagrama a seguir explica a resolução do script Sling. Ele mostra como ir da solicitação HTTP ao nó de conteúdo, do nó de conteúdo ao tipo de recurso, do tipo de recurso ao script e quais variáveis de script estão disponíveis.
 
 ![Como entender a resolução do script do Apache Sling](assets/sling-cheatsheet-01.png)
 
-O diagrama a seguir explica todos os parâmetros de solicitação ocultos, mas eficientes, que você pode usar ao lidar com o SlingPostServlet, o manipulador padrão para todas as solicitações de POST que oferece opções infinitas para criar, modificar, excluir, copiar e mover nós no repositório.
+O diagrama a seguir explica todos os parâmetros de solicitação ocultos, mas eficientes, que você pode usar ao lidar com o SlingPostServlet. Ele inclui o manipulador padrão para todas as solicitações do POST, que oferece opções infinitas para criar, modificar, excluir, copiar e mover nós no repositório.
 
 ![Uso do SlingPostServlet](assets/sling-cheatsheet-02.png)
 
@@ -78,13 +74,13 @@ O diagrama a seguir explica todos os parâmetros de solicitação ocultos, mas e
 O Sling está *centrado no conteúdo*. Isso significa que o processamento está focado no conteúdo conforme cada solicitação (HTTP) é mapeada no conteúdo na forma de um recurso JCR (um nó de repositório):
 
 * o primeiro destino é o recurso (nó JCR) que contém o conteúdo
-* em segundo lugar, a representação, ou script, está localizada nas propriedades de recurso combinadas com determinadas partes da solicitação (por exemplo, seletores e/ou a extensão)
+* em segundo lugar, a representação ou script está localizada nas propriedades de recurso combinadas com determinadas partes da solicitação (por exemplo, seletores e/ou a extensão)
 
 ### Sling RESTful {#restful-sling}
 
 Devido à filosofia centrada no conteúdo, o Sling implementa um servidor orientado para REST e, portanto, apresenta um novo conceito em estruturas de aplicações Web. As vantagens são:
 
-* muito RESTful, não apenas na superfície; os recursos e as representações são modelados corretamente dentro do servidor
+* RESTful, não apenas na superfície; os recursos e as representações são modelados corretamente dentro do servidor
 * remove um ou mais modelos de dados
 
    * anteriormente, era necessário o seguinte: estrutura de URL, objetos de negócios, esquema de BD;
@@ -94,15 +90,15 @@ Devido à filosofia centrada no conteúdo, o Sling implementa um servidor orient
 
 No Sling, o processamento é orientado pelo URL da solicitação do usuário. Isso define o conteúdo a ser exibido pelos scripts apropriados. Para fazer isso, as informações são extraídas do URL.
 
-Se analisarmos o seguinte URL:
+Se você analisar o seguinte URL:
 
 ```xml
 https://myhost/tools/spy.printable.a4.html/a/b?x=12
 ```
 
-Podemos dividi-la em suas partes compostas:
+Você pode separá-la em suas partes compostas:
 
-| protocolo | host | caminho do conteúdo | seletor(es) | extensão |  | sufixo |  | parâmetro(s) |
+| protocolo | host | caminho do conteúdo | seletores | extensão |  | sufixo |  | params |
 |---|---|---|---|---|---|---|---|---|
 | https:// | myhost | tools/spy | .imprimível.a4. | html | / | a/b | ? | x=12 |
 
@@ -110,15 +106,15 @@ Podemos dividi-la em suas partes compostas:
 
 **host** Nome do site.
 
-**caminho do conteúdo** Caminho que especifica o conteúdo a ser renderizado. É usado em combinação com a extensão; neste exemplo, eles traduzem para tools/spy.html.
+**caminho do conteúdo** Caminho que especifica o conteúdo a ser renderizado. Usado com a extensão. Neste exemplo, eles traduzem para `tools/spy.html`.
 
-**seletor(es)** Usado para métodos alternativos de renderização do conteúdo; neste exemplo, uma versão compatível com a impressora no formato A4.
+**seletores** Usado para métodos alternativos de renderização do conteúdo; neste exemplo, uma versão compatível com a impressora no formato A4.
 
 **extensão** Formato do conteúdo; também especifica o script a ser usado para renderização.
 
 **sufixo** Pode ser usado para especificar informações adicionais.
 
-**parâmetro(s)** Quaisquer parâmetros necessários para o conteúdo dinâmico.
+**params** Quaisquer parâmetros necessários para o conteúdo dinâmico.
 
 #### Do URL ao conteúdo e scripts {#from-url-to-content-and-scripts}
 
@@ -127,7 +123,7 @@ Usando estes princípios:
 * o mapeamento usa o caminho de conteúdo extraído da solicitação para localizar o recurso
 * quando o recurso apropriado é localizado, o tipo de recurso sling é extraído e usado para localizar o script a ser usado para renderizar o conteúdo
 
-A figura abaixo ilustra o mecanismo usado, que será discutido com mais detalhes nas seções a seguir.
+A imagem abaixo ilustra o mecanismo usado, que é discutido com mais detalhes nas seções a seguir.
 
 ![chlimage_1-86](assets/chlimage_1-86a.png)
 
@@ -150,15 +146,15 @@ Quando o recurso apropriado (nó de conteúdo) for localizado, a variável **tip
 O caminho especificado pelo `sling:resourceType` pode ser:
 
 * absoluto
-* relativo, a um parâmetro de configuração
+* relativo a um parâmetro de configuração
 
   Os caminhos relativos são recomendados pelo Adobe à medida que aumentam a portabilidade.
 
-Todos os scripts Sling são armazenados em subpastas de `/apps` ou `/libs`, que serão pesquisados nesta ordem (consulte [Personalização de Componentes e Outros Elementos](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+Todos os scripts Sling são armazenados em subpastas de `/apps` ou `/libs`, que é pesquisado nesta ordem (consulte [Personalização de Componentes e Outros Elementos](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 Alguns outros pontos a observar são:
 
-* quando o Método (GET, POST) for necessário, ele será especificado em maiúsculas, de acordo com a especificação HTTP, por exemplo, jobs.POST.esp (veja abaixo)
+* quando o Método (GET, POST) é obrigatório, ele é especificado em maiúsculas, de acordo com a especificação HTTP, por exemplo, jobs.POST.esp (veja abaixo)
 * vários mecanismos de script são compatíveis:
 
    * HTL (Linguagem de modelo de HTML - sistema de modelo preferencial e recomendado do Adobe Experience Manager para HTML): `.html`
@@ -187,28 +183,28 @@ Usando o exemplo acima, se a variável `sling:resourceType` é `hr/jobs` depois 
 
   Por exemplo, `../content/corporate/jobs/developer.pdf`
 
-  O script será `/apps/hr/jobs/jobs.pdf.esp`; o sufixo é adicionado ao nome do script.
+  O script é `/apps/hr/jobs/jobs.pdf.esp`; o sufixo é adicionado ao nome do script.
 
 * URLs com seletores
 
   Seletores podem ser usados para exibir o mesmo conteúdo em um formato alternativo. Por exemplo, uma versão para impressão, um feed RSS ou um resumo.
 
-  Se observarmos uma versão compatível com a impressora em que o seletor possa ser *imprimir*; como em `../content/corporate/jobs/developer.print.html`
+  Se você observar uma versão compatível com a impressora na qual o seletor pode estar *imprimir*, como em `../content/corporate/jobs/developer.print.html`
 
-  O script será `/apps/hr/jobs/jobs.print.esp`; o seletor é adicionado ao nome do script.
+  O script é `/apps/hr/jobs/jobs.print.esp`; o seletor é adicionado ao nome do script.
 
-* Se nenhum sling:resourceType tiver sido definido:
+* Se nenhum sling:resourceType estiver definido, então:
 
-   * o caminho do conteúdo será usado para procurar um script apropriado (se o ResourceTypeProvider baseado em caminho estiver ativo).
+   * o caminho do conteúdo é usado para procurar um script apropriado (se o ResourceTypeProvider baseado em caminho estiver ativo).
 
      Por exemplo, o script para `../content/corporate/jobs/developer.html` geraria uma pesquisa em `/apps/content/corporate/jobs/`.
 
-   * o tipo de nó primário será usado.
+   * o tipo de nó primário é usado.
 
 * Se nenhum script for encontrado, o script padrão será usado.
 
-  A representação padrão é atualmente suportada como texto sem formatação (.txt), HTML (.html) e JSON (.json), e todas listarão as propriedades do nó (adequadamente formatadas). A representação padrão da extensão .res, ou solicitações sem uma extensão de solicitação, é fazer spool do recurso (quando possível).
-* Para o tratamento de erros http (códigos 403 ou 404), o Sling procurará um script em:
+  A representação padrão é compatível como texto sem formatação (.txt), HTML (.html) e JSON (.json), e todas listam as propriedades do nó (adequadamente formatadas). A representação padrão da extensão .res, ou solicitações sem uma extensão de solicitação, é fazer spool do recurso (quando possível).
+* Para o tratamento de erros http (códigos 403 ou 404), o Sling procura um script em:
 
    * o local /apps/sling/servlet/errorhandler para [scripts personalizados](/help/sites-developing/customizing-errorhandler-pages.md)
    * ou o local dos scripts padrão /libs/sling/servlet/errorhandler/403.esp ou 404.esp, respectivamente.
@@ -220,7 +216,7 @@ Por exemplo, considere uma solicitação para acessar o recurso
 do tipo
 `sling:resourceType="hr/jobs"`
 
-Supondo que temos a seguinte lista de scripts no local correto:
+Supondo que você tenha a seguinte lista de scripts no local correto:
 
 1. `GET.esp`
 1. `jobs.esp`
@@ -233,7 +229,7 @@ Supondo que temos a seguinte lista de scripts no local correto:
 
 Em seguida, a ordem de preferência seria (8) - (7) - (6) - (5) - (4) - (3) - (2) - (1).
 
-Além dos tipos de recursos (definidos principalmente pelo `sling:resourceType` propriedade) também há o supertipo de recurso. Isso é geralmente indicado pelo `sling:resourceSuperType` propriedade. Esses supertipos também são considerados ao tentar encontrar um script. A vantagem dos supertipos de recursos é que eles podem formar uma hierarquia de recursos em que o tipo de recurso default `sling/servlet/default` (usado pelos servlets padrão) é efetivamente a raiz.
+Além dos tipos de recursos (definidos principalmente pelo `sling:resourceType` ), também há o supertipo de recurso. Isso é indicado pela variável `sling:resourceSuperType` propriedade. Esses supertipos também são considerados ao tentar encontrar um script. A vantagem dos supertipos de recursos é que eles podem formar uma hierarquia de recursos em que o tipo de recurso default `sling/servlet/default` (usado pelos servlets padrão) é efetivamente a raiz.
 
 O supertipo de recurso de um recurso pode ser definido de duas maneiras:
 
@@ -279,7 +275,7 @@ Se você chamar a representação (o script) diretamente, ocultará o recurso de
 
 * tratamento automático de métodos http diferentes do GET, incluindo:
 
-   * POST, PUT, DELETE que são manipulados com uma implementação padrão do sling
+   * POST, PUT, DELETE que é manipulada com uma implementação padrão do sling
    * o `POST.jsp` script no local sling:resourceType
 
 * sua arquitetura de código não é mais tão limpa nem tão claramente estruturada quanto deveria ser; de importância primordial para o desenvolvimento em larga escala
@@ -292,9 +288,9 @@ Usa o pacote da API do Sling, org.apache.sling.Bibliotecas de tags &amp;ast; e.
 
 Uma consideração final é a necessidade de fazer referência aos elementos existentes nos scripts.
 
-Scripts mais complexos (agregação de scripts) podem precisar acessar vários recursos (por exemplo, navegação, barra lateral, rodapé, elementos de uma lista) e fazer isso incluindo o *recurso*.
+Os scripts mais complexos (scripts de agregação) devem acessar vários recursos (navegação, barra lateral, rodapé, elementos de uma lista, por exemplo) e fazer isso incluindo o *recurso*.
 
-Para fazer isso, você pode usar sling:include(&quot;/&lt;path>/&lt;resource>&quot;). Isso incluirá efetivamente a definição do recurso referenciado, como na seguinte instrução que faz referência a uma definição existente para renderizar imagens:
+Para fazer isso, use sling:include(&quot;/&lt;path>/&lt;resource>&quot;). Isso inclui a definição do recurso referenciado, como na instrução a seguir que faz referência a uma definição existente para renderizar imagens:
 
 ```xml
 %><sling:include resourceType="geometrixx/components/image/img"/><%
@@ -302,7 +298,7 @@ Para fazer isso, você pode usar sling:include(&quot;/&lt;path>/&lt;resource>&qu
 
 ## OSGI {#osgi}
 
-O OSGi define uma arquitetura para desenvolver e implantar aplicativos e bibliotecas modulares (também é conhecido como Sistema de Módulos Dinâmicos para Java). Os contêineres OSGi permitem dividir o aplicativo em módulos individuais (são arquivos jar com informações meta adicionais e chamados de pacotes na terminologia OSGi) e gerenciar as dependências cruzadas entre eles com:
+O OSGi define uma arquitetura para desenvolver e implantar aplicativos e bibliotecas modulares (também é conhecido como Sistema de Módulos Dinâmicos para Java™). Os contêineres OSGi permitem dividir o aplicativo em módulos individuais (que são arquivos jar com informações meta adicionais e chamados de pacotes na terminologia OSGi) e gerenciar as dependências cruzadas entre eles com:
 
 * serviços implementados no container
 * um contrato entre o contêiner e seu aplicativo
@@ -326,10 +322,10 @@ Isso permite executar as seguintes ações em qualquer um dos pacotes da sua ins
 * stop
 * atualizar
 * desinstalar
-* ver o status atual
-* acessar informações mais detalhadas (por exemplo, nome simbólico, versão, local etc.) sobre os pacotes específicos
+* ver o status
+* acessar informações mais detalhadas (por exemplo, nome simbólico, versão e local) sobre os pacotes específicos
 
-Consulte [o console da Web](/help/sites-deploying/web-console.md), [Configuração OSGI](/help/sites-deploying/configuring-osgi.md) e [Configurações do OSGi](/help/sites-deploying/osgi-configuration-settings.md) para obter mais informações.
+Consulte [o console da Web](/help/sites-deploying/web-console.md), [Configuração OSGI](/help/sites-deploying/configuring-osgi.md), e [Configurações do OSGi](/help/sites-deploying/osgi-configuration-settings.md) para obter mais informações.
 
 ## Objetos de desenvolvimento no ambiente AEM {#development-objects-in-the-aem-environment}
 
@@ -337,7 +333,7 @@ Os seguintes aspectos são de interesse para o desenvolvimento:
 
 **Item** Um item é um nó ou uma propriedade.
 
-Para obter informações detalhadas sobre como manipular objetos Item, consulte a [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) da interface javax.jcr.Item
+Para obter informações detalhadas sobre como manipular objetos Item, consulte a [Documentos Java™](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) da interface javax.jcr.Item
 
 **Nó (e suas propriedades)** Os nós e suas propriedades são definidos na especificação JCR API 2.0 (JSR 283). Eles armazenam conteúdo, definições de objeto, scripts de renderização e outros dados.
 
@@ -351,9 +347,9 @@ Por exemplo, para obter as propriedades do nó atual, é possível usar o seguin
 
 `PropertyIterator properties = currentNode.getProperties();`
 
-Com currentNode sendo o objeto do nó atual.
+O currentNode é o objeto do nó atual.
 
-Para obter mais informações sobre como manipular objetos Node, consulte a [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
+Para obter mais informações sobre como manipular objetos Node, consulte a [Documentos Java™](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 **Widget** No AEM, todas as entradas de usuários são gerenciadas por widgets. Geralmente, são usados para controlar a edição de um conteúdo.
 
@@ -369,9 +365,9 @@ As caixas de diálogo também são usadas para editar metadados e por várias fe
 
 **Componente** Um componente de software é um elemento do sistema que oferece um serviço ou evento predefinido e é capaz de se comunicar com outros componentes.
 
-No AEM, um componente é frequentemente usado para renderizar o conteúdo de um recurso. Quando o recurso é uma página, a renderização do componente é chamada de Componente de nível superior ou de Componente de página. No entanto, um componente não precisa renderizar o conteúdo, nem estar vinculado a um recurso específico; por exemplo, um componente de navegação exibirá informações sobre vários recursos.
+No AEM, um componente é frequentemente usado para renderizar o conteúdo de um recurso. Quando o recurso é uma página, a renderização do componente é chamada de Componente de nível superior ou de Componente de página. No entanto, um componente não precisa renderizar o conteúdo, nem estar vinculado a um recurso específico. Por exemplo, um componente de navegação exibe informações sobre vários recursos.
 
-A definição de um componente inclui:,
+A definição de um componente inclui o seguinte:
 
 * o código usado para processar o conteúdo
 * uma caixa de diálogo para a entrada do usuário e a configuração do conteúdo resultante.
@@ -388,11 +384,11 @@ Ele define o componente da página usado para renderizar a página e o conteúdo
 
 Uma página tem um nó de hierarquia do tipo cq:Page e um nó de conteúdo do tipo cq:PageContent. A propriedade sling:resourceType do nó de conteúdo aponta para o componente de Página usado para renderizar a página.
 
-Por exemplo, para obter o nome da página atual, você pode usar o seguinte código no script:
+Por exemplo, para obter o nome da página atual, é possível usar o seguinte código no script:
 
 S`tring pageName = currentPage.getName();`
 
-Com currentPage sendo o objeto da página atual. Para obter mais informações sobre como manipular objetos Page, consulte [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
+CurrentPage é o objeto da página atual. Para obter mais informações sobre como manipular objetos Page, consulte [Documentos Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
 
 **Gerenciador de páginas** O gerenciador de páginas é uma interface que fornece métodos para operações em nível de página.
 
@@ -400,7 +396,7 @@ Por exemplo, para obter a página que contém um recurso, é possível usar o se
 
 Página myPage = pageManager.getContainingPage(myResource);
 
-Como pageManager é o objeto do gerenciador de páginas e myResource um objeto de recurso. Para obter mais informações sobre os métodos fornecidos pelo gerenciador de páginas, consulte [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
+O pageManager é o objeto do gerenciador de páginas e o myResource um objeto de recurso. Para obter mais informações sobre os métodos fornecidos pelo gerenciador de páginas, consulte [Documentos Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Estrutura no repositório {#structure-within-the-repository}
 
@@ -414,7 +410,7 @@ A lista a seguir fornece uma visão geral da estrutura que você vê no reposit�
 
 >[!CAUTION]
 >
->Não altere nada no `/libs` caminho. Para configuração e outras alterações, copie o item de `/libs` para `/apps` e fazer alterações no `/apps`.
+>Não altere nada no `/libs` caminho. Para configurações e outras alterações, copie o item de `/libs` para `/apps` e fazer alterações no `/apps`.
 
 * `/apps`
 

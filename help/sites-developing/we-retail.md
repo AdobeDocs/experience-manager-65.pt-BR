@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 9%
+source-wordcount: '759'
+ht-degree: 8%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 9%
 
 We.Retail é uma implementação de referência e conteúdo de amostra que ilustra a maneira recomendada de configurar uma presença online com o Adobe Experience Manager.
 
-O We.Retail usa as tecnologias de AEM mais recentes, como HTL, layouts responsivos, modelos editáveis, componentes principais e muito mais.
+O We.Retail usa as tecnologias mais recentes do Adobe Experience Manager (AEM), como HTL, layouts responsivos, modelos editáveis, componentes principais e muito mais.
 
-Embora ele ilustre um vertical de varejo, a forma como o site é configurado pode ser aplicada a qualquer vertical e somente os recursos do catálogo de produtos e do carrinho são específicos do varejo.
+Embora ele ilustre um vertical de varejo, a forma como o site é configurado pode ser aplicada a qualquer vertical e somente os recursos do catálogo de produtos e do carrinho são específicos de varejo.
 
 ## Recursos {#features}
 
@@ -30,13 +30,13 @@ Como implementação de referência padrão do AEM, o We.Retail apresenta alguns
 | **Destaque** | **Descrição** | **Interessado?** |
 |---|---|---|
 | [Estrutura do site globalizada](/help/sites-administering/tc-bp.md) | O We.Retail inclui matrizes de idioma que são copiadas em tempo real para sites específicos de cada país. | [Experimente!](/help/sites-developing/we-retail-globalized-site-structure.md) |
-| [Layout responsivo](/help/sites-authoring/responsive-layout.md) | Todas as páginas apresentam layout responsivo para adaptar dinamicamente à tela e ao tamanho do dispositivo. | [Experimente!](/help/sites-developing/we-retail-responsive-layout.md) |
+| [Layout responsivo](/help/sites-authoring/responsive-layout.md) | Todas as páginas apresentam um layout responsivo para adaptar dinamicamente à tela e ao tamanho do dispositivo. | [Experimente!](/help/sites-developing/we-retail-responsive-layout.md) |
 | [Modelos editáveis](/help/sites-developing/page-templates-editable.md) | Todas as páginas são baseadas em modelos editáveis, permitindo que não desenvolvedores adaptem e personalizem os modelos. | [Experimente!](/help/sites-developing/we-retail-editable-templates.md) |
 | [Linguagem de modelo HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR) | Todos os componentes são baseados em HTL |  |
 | [Recursos de comércio eletrônico](/help/commerce/cif-classic/developing/ecommerce.md) | Apresenta um catálogo de produtos |  |
 | [Sites de comunidades](/help/communities/overview.md) | Permitir que visitantes participem de discussões da comunidade, leiam blogs e muito mais |  |
 | [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) | Todos os componentes são baseados nos novos componentes principais e são mais utilizáveis e configuráveis pelo usuário, prontos para uso | [Experimente!](/help/sites-developing/we-retail-core-components.md) |
-| [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) | A seção Experiências do We.Retail mostra o poder da reutilização de conteúdo por meio de fragmentos de conteúdo. | [Experimente-os!](/help/sites-developing/we-retail-content-fragments.md) |
+| [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) | A seção Experiências do We.Retail mostra o poder de reutilizar conteúdo por meio de fragmentos de conteúdo. | [Experimente-os!](/help/sites-developing/we-retail-content-fragments.md) |
 | [Fragmentos de experiência](/help/sites-authoring/experience-fragments.md) | Um Fragmento de experiência é um grupo de um ou mais componentes, incluindo conteúdo e layout, que podem ser referenciados nas páginas. | [Experimente-os!](/help/sites-developing/we-retail-experience-fragments.md) |
 
 ## Introdução {#getting-started}
@@ -57,7 +57,7 @@ Embora o We.Retail seja distribuído com a versão do AEM, as atualizações do 
 
 ### Primeiras etapas {#first-steps}
 
-1. Depois que o AEM for iniciado (e/ou que o We.Retail estiver instalado), o site **We.Retail** está disponível no [console de sites](/help/sites-authoring/basic-handling.md#global-navigation).
+1. Depois que o AEM for iniciado (e/ou que o We.Retail estiver instalado), o site **We.Retail** está disponível no [Console de sites](/help/sites-authoring/basic-handling.md#global-navigation).
 1. Por exemplo, a página a seguir pode ser aberta e deve parecer como exibida na [apêndice](#appendix) abaixo:
 
    `https://<server name>:<port number>/editor.html/content/we-retail/language-masters/en.html`
@@ -87,7 +87,7 @@ A tabela a seguir fornece uma visão geral dos principais recursos disponíveis 
 | Screens | Disponível | Não disponível |
 | Móvel | Não disponível | Disponível |
 | Manuscritos | Não disponível | Disponível |
-| Carrossel, download, componentes de gráfico | Não disponível | Disponível |
+| Visualizador do carrossel, downloads e componentes de gráfico | Não disponível | Disponível |
 | Controle de coluna | Substituído pelo contêiner de layout | Disponível |
 | Forms | Não disponível | Disponível |
 | Campaign | Nenhuma amostra de email | Disponível |
@@ -102,7 +102,7 @@ O We.Retail foi lançado como um projeto de código aberto e a versão mais rece
 
 CÓDIGO NO GITHUB
 
-Você pode encontrar o código desta página no GitHub
+Você pode encontrar o código desta página no GitHub.
 
 * [Abra o projeto aem-sample-we-retail no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
 * Baixar o projeto como [um arquivo ZIP](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/zip/refs/heads/master)
@@ -113,7 +113,7 @@ Se encontrar problemas, registre um [Problema do GitHub](https://github.com/Adob
 
 Fique à vontade para bifurcar ou contribuir [pull requests](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/pulls).
 
-## Visualizar {#preview}
+## Visualização {#preview}
 
 Pré-visualização da página de boas-vindas do We.Retail:
 

@@ -1,18 +1,14 @@
 ---
 title: Fundamentos do gráfico social
-seo-title: Social Graph Essentials
-description: seguir o componente e a seguinte visão geral do componente
-seo-description: follow component and following component overview
-uuid: 8ea33760-62b1-4de2-b07f-bc2417ade156
+description: Saiba mais sobre o componente e o componente Seguir.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: f8d85d72-0215-4680-a334-e37a530fba58
 exl-id: c037a788-c943-4f95-a028-1fcb0ef48f86
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '239'
 ht-degree: 2%
 
 ---
@@ -63,10 +59,10 @@ A variável `following` componente lista os membros que estão seguindo o membro
      <li>Tipo: Booleano</li>
      <li>Valor:<br />
       <ul>
-       <li><i>True </i>- A <code>following</code> componente listará os membros que o membro conectado no momento <code>follows</code></li>
-       <li><i>Falso </i>- A <code>following</code> componente listará os membros que <code>follow </code>o membro conectado no momento</li>
+       <li><i>True </i>- A <code>following</code> componente lista os membros que o membro conectado <code>follows</code></li>
+       <li><i>Falso </i>- A <code>following</code> componente lista os membros que <code>follow </code>o membro conectado</li>
       </ul> </li>
-    </ul> <p>O padrão é <i>true</i> se a propriedade estiver ausente. Atualmente, não é possível definir essa propriedade usando a caixa de diálogo de edição no modo de autor. A propriedade deve ser adicionada a uma instância do <code>following </code>nó usando <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
+    </ul> <p>O padrão é <i>true</i> se a propriedade estiver ausente. Não é possível definir essa propriedade usando a caixa de diálogo de edição no modo Autor. A propriedade deve ser adicionada a uma instância do <code>following</code> nó usando <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -83,8 +79,8 @@ A variável `following` componente lista os membros que estão seguindo o membro
 
 ## Essentials para o lado do servidor {#essentials-for-server-side}
 
-* [API do gráfico social](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
+* [API do gráfico social](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
 
-* [Endpoints do gráfico social](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
+* [Endpoints do gráfico social](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
 
 * [Personalizações do lado do servidor](server-customize.md)
