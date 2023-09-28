@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 54bed871375ddc9d18af564318ceac95dd1dd2f9
+source-git-commit: d76fce58973bd011b53a5da41578b57a8e10912e
 workflow-type: tm+mt
-source-wordcount: '3667'
+source-wordcount: '3694'
 ht-degree: 1%
 
 ---
@@ -707,7 +707,7 @@ As seguintes plataformas estão marcadas como obsoletas na versão 6.5.18.0 do A
 - Microsoft® Windows Server 2019 (64 bits)
 - Diretório ativo Microsoft® 2016
 
-As seguintes plataformas estão marcadas como obsoletas na versão 6.5.18.0 do AEM Forms em 2 de junho de 2022:
+As seguintes plataformas estão marcadas como obsoletas na versão 6.5.17.0 do AEM Forms em 2 de junho de 2022:
 
 - Microsoft® SharePoint 2016
 
@@ -731,15 +731,14 @@ As seguintes plataformas estão marcadas como obsoletas na versão 6.5.10.0 do A
 - Microsoft® Office 2016
 - OpenOffice 4.1.2
 
-<!--
+
 >[!NOTE]
 >
->The platforms marked as [deprecated on with AEM Forms 6.5.12.0 and 6.5.10.0 remain in support until AEM Forms 6.5 Service Pack 18 (6.5.18.0) release](https://helpx.adobe.com/support/programs/eol-matrix.html).
--->
+Uma plataforma obsoleta continuará a receber suporte até que a plataforma seja marcada como removida ou o suporte de fornecedor de terceiros para a plataforma atinja seu fim da vida útil, o que ocorrer primeiro.
 
 ## Histórico de revisão {#revision-history}
 
-- 31 de agosto de 2023
+- 6.5.18.0 (31 de agosto de 2023)
    - **Atualizações da plataforma**: [!DNL Adobe Experience Manager Forms] O no JEE adicionou suporte para as seguintes plataformas:
       - MongoDB Enterprise 4.4
       - Oracle WebLogic Server 14c
@@ -768,7 +767,7 @@ As seguintes plataformas estão marcadas como obsoletas na versão 6.5.10.0 do A
       - OpenOffice 4.1.2
       - Acrobat 2017 (faixa clássica) versão 17.011.30078 ou posterior
 
-- 1 de setembro de 2022
+- 6.5.10.0 (1º de setembro de 2022)
 
    - Adição de suporte ao SDK do Oracle Java™ SE 11 (64 bits) para o servidor de aplicativos JBoss® EAP 7.4.
 
