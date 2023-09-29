@@ -38,7 +38,7 @@ ht-degree: 70%
       + [Desenvolvimento com AEM](cif/develop.md)
       + [Alterar estilo de componentes da CIF](cif/customizing/style-cif-component.md)
       + [Personalizar componentes da CIF](cif/customizing/customize-cif-components.md)
-      + [Uso de seletores de catálogo CIF](cif/customizing/use-cif-pickers.md)
+      + [Uso de seletores de catálogo de CIF](cif/customizing/use-cif-pickers.md)
 + [PWA Studio do Adobe Commerce](cif/pwa-studio/getting-started.md)
 + [Migração](cif/migration.md)
 + Notas de versão {#release-notes}
@@ -47,7 +47,7 @@ ht-degree: 70%
    + [2020](cif/release-notes/release-notes-2020.md)
    + [2019](cif/release-notes/release-notes-2019.md)
 + [Perguntas frequentes](cif/faq.md)
-+ CIF clássica do AEM {#classic}
++ AEM CIF Classic {#classic}
    + [Visão geral](/help/commerce/cif-classic/home.md)
    + Implantação {#deploying}
       + [Visão geral de comércio eletrônico](/help/commerce/cif-classic/deploying/ecommerce.md)

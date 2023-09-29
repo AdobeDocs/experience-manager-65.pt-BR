@@ -41,7 +41,7 @@ ht-degree: 10%
    + [Nós e propriedades de conteúdo](content-properties.md)
    + [Criação da Configuração de Exportação de Recursos Compartilhados](creating-shared-resources-export-configuration.md)
    + [Criação e adição de modelos e componentes](mobile-ondemand-app-templates.md)
-   + [Práticas recomendadas    ](best-practices-aem-mobile.md)
+   + [Práticas recomendadas](best-practices-aem-mobile.md)
    + [Criação da configuração de exportação do artigo](creating-article-export-configuration.md)
    + [Dispositivo móvel com sincronização de conteúdo](mobile-ondemand-contentsync.md)
    + [Modelos de página para aplicativos móveis](apps-architecture.md)

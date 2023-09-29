@@ -45,7 +45,7 @@ ht-degree: 64%
    + [Criação de uma página para dispositivos móveis  ](mobile.md)
    + [Solucionar problemas do AEM durante a criação  ](troubleshooting.md)
    + [Atalhos de teclado ao editar páginas](page-authoring-keyboard-shortcuts.md)
-   + [Práticas recomendadas    ](best-practices.md)
+   + [Práticas recomendadas](best-practices.md)
 + Recursos do site e da página {#siteandpage}
    + [Uso de tags](tags.md)
    + [Criação de modelos de páginas  ](templates.md)

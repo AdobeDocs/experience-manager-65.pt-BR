@@ -11,7 +11,7 @@ role: Admin
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 35%
+ht-degree: 36%
 
 ---
 
@@ -87,7 +87,7 @@ ht-degree: 35%
    + [Como auditar operações de gerenciamento de usuários no AEM](audit-user-management-operations.md)
    + [SSL por padrão](ssl-by-default.md)
    + [Manipulador de autenticação SAML 2.0](saml-2-0-authenticationhandler.md)
-   + [Grupos de usuários fechados no AEM](closed-user-groups.md)
+   + [Grupos de Usuários Fechados no AEM](closed-user-groups.md)
    + [Operações do Granite - Administração de usuários e grupos](granite-user-group-admin.md)
    + [CRXDE Lite no AEM](enabling-crxde-lite.md)
    + [Configuração do LDAP com AEM 6](ldap-config.md)
@@ -150,7 +150,7 @@ ht-degree: 35%
    + [Práticas recomendadas para modelos de email](best-practices-for-email-templates.md)
    + [Integração com o Livefyre](livefyre.md)
 + Práticas recomendadas     {#bestpractices}
-   + [Práticas recomendadas    ](administer-best-practices.md)
+   + [Práticas recomendadas](administer-best-practices.md)
    + [Práticas recomendadas de tradução](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-bp.html)
    + [Práticas recomendadas do MSM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-best-practices.html)
    + [AEM Sites - Disponibilidade do GDPR](gdpr-compliance-sites.md)

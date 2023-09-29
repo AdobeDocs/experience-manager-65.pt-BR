@@ -42,7 +42,7 @@ ht-degree: 37%
    + [Bibliotecas de tags](taglib.md)
    + Modelos{#templates}
       + [Modelos](templates.md)
-      + [Modelos de página - Editável ](page-templates-editable.md)
+      + [Modelos de página - Editável](page-templates-editable.md)
       + [Modelos de página - Estáticos](page-templates-static.md)
       + [Modelos de fragmentos do conteúdo](content-fragment-templates.md)
       + [Renderização adaptável do modelo](templates-adaptive-rendering.md)
@@ -78,7 +78,7 @@ ht-degree: 37%
    + [Desenvolvimento de componentes do AEM - Amostras de código](developing-components-samples.md)
    + [Exportador JSON para serviços de conteúdo](json-exporter.md)
    + [Ativação de exportação em JSON para um componente](json-exporter-components.md)
-   + [Editor de imagem ](image-editor.md)
+   + [Editor de imagem](image-editor.md)
    + [Tag de decoração](decoration-tag.md)
    + [Uso de condições de ocultação](hide-conditions.md)
    + [Configuração de vários editores no local](multiple-inplace-editors.md)
@@ -246,7 +246,7 @@ ht-degree: 37%
    + [Listas de verificação](checklists.md)
    + [Dia difícil](tough-day.md)
    + [Teste da interface do usuário](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/hobbes.html)
-+ Práticas recomendadas    {#bestpractices}
++ Práticas recomendadas{#bestpractices}
    + [Visão geral das práticas recomendadas](best-practices.md)
    + [Diretrizes e práticas recomendadas de desenvolvimento do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/dev-guidelines-bestpractices.html?lang=pt-BR)
    + [Práticas recomendadas de desenvolvimento](development-practices.md)

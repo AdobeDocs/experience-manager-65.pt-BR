@@ -45,7 +45,7 @@ ht-degree: 10%
    + [Pontuação e medalhas das comunidades](implementing-scoring.md)
    + [Gerenciar usuários e grupos de usuários](users.md)
    + [Console de grupos da comunidade](groups.md)
-   + [Logon social com a Facebook e o Twitter](social-login.md)
+   + [Logon social com o Facebook e o Twitter](social-login.md)
    + [SRP - Armazenamento de conteúdo da comunidade](working-with-srp.md)
    + [Console de sites das comunidades](sites-console.md)
    + [Consoles de gerenciamento de membros e grupos](members.md)
