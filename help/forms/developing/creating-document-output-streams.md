@@ -1,17 +1,13 @@
 ---
 title: Criando Fluxos de Saída de Documento
-seo-title: Creating Document Output Streams
 description: Use o serviço Output para converter documentos como formatos de etiquetas PDF (incluindo documentos PDF/A), PostScript, Printer Control Language (PCL) e Zebra - ZPL, Intermec - IPL, Datamax - DPL e TecToshiba - TPCL.
-seo-description: Use the Output service to convert documents as PDF (including PDF/A documents), PostScript, Printer Control Language (PCL), and Zebra - ZPL, Intermec - IPL, Datamax - DPL, and TecToshiba - TPCL label formats.
-uuid: 80c28efa-35ce-4073-9ca6-2d93bcd67fdd
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '19016'
 ht-degree: 0%
@@ -37,7 +33,7 @@ Há duas maneiras de passar um design de formulário (um arquivo XDP) para o ser
 
 >[!NOTE]
 >
->O serviço de Saída não é compatível com documentos do PDF do AcroForm que contenham scripts específicos de objetos de aplicativo. Os documentos de PDF de acroforma que contêm scripts específicos de objeto de aplicativo não são renderizados.
+>O serviço de saída não é compatível com documentos do PDF do AcroForm que contenham scripts específicos de objetos de aplicativo. Os documentos de PDF de acroforma que contêm scripts específicos de objeto de aplicativo não são renderizados.
 
 As seções a seguir mostram como passar um design de formulário para o serviço de Saída usando um valor de URI:
 
@@ -389,7 +385,7 @@ Você pode usar o Serviço de saída para criar um documento PDF/A. Como PDF/A �
 
 A especificação PDF/A-1 consiste em dois níveis de conformidade, a saber, a e b. A principal diferença entre os dois está relacionada ao suporte de estrutura lógica (acessibilidade), que não é necessário para o nível de conformidade b. Independentemente do nível de conformidade, o PDF/A-1 determina que todas as fontes sejam incorporadas no documento PDF/A gerado.
 
-Embora PDF/A seja o padrão para o arquivamento de documentos de PDF, não é obrigatório usar PDF/A para arquivamento se um documento de PDF padrão atender às necessidades da sua empresa. O objetivo do padrão PDF/A é estabelecer um arquivo PDF que possa ser armazenado por um longo período de tempo, bem como atender aos requisitos de preservação de documentos. Por exemplo, um URL não pode ser incorporado em um PDF/A porque, com o tempo, o URL pode se tornar inválido.
+Embora PDF/A seja o padrão para o arquivamento de documentos de PDF, não é obrigatório que PDF/A seja usado para arquivamento se um documento de PDF padrão atender às necessidades da sua empresa. O objetivo do padrão PDF/A é estabelecer um arquivo PDF que possa ser armazenado por um longo período de tempo, bem como atender aos requisitos de preservação de documentos. Por exemplo, um URL não pode ser incorporado em um PDF/A porque, com o tempo, o URL pode se tornar inválido.
 
 Sua empresa deve avaliar suas próprias necessidades, o tempo que pretende manter o documento, as considerações sobre o tamanho do arquivo e determinar sua própria estratégia de arquivamento. Você pode determinar programaticamente se um documento de PDF é compatível com PDF/A usando o serviço DocConverter. (Consulte [Determinação Programática Da Conformidade Com PDF/A](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
 
@@ -772,6 +768,7 @@ Envie um documento recuperado do Content Services (desaprovado) usando o Serviç
       * Atribuir o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
       * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+
    * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
    >[!NOTE]
@@ -1029,7 +1026,6 @@ Crie um documento PDF com base em fragmentos usando a API de serviço de saída 
    * Repita através do `java.util.Map` até encontrar o resultado `com.adobe.idp.Document` objeto.
    * Chame o `com.adobe.idp.Document` do objeto `copyToFile` para extrair o documento XDP montado.
 
-
 1. Use o Serviço de saída para gerar o documento PDF.
 
    Chame o `OutputClient` do objeto `generatePDFOutput2` e passe os seguintes valores:
@@ -1096,6 +1092,7 @@ Crie um documento PDF com base em fragmentos usando a API de serviço de saída 
       * Atribua o nome de usuário dos formulários AEM à `OutputServiceClient.ClientCredentials.UserName.UserName`campo.
       * Atribua o valor de senha correspondente ao `OutputServiceClient.ClientCredentials.UserName.Password`campo.
       * Atribuir o valor constante `HttpClientCredentialType.Basic` para o `BasicHttpBindingSecurity.Transport.ClientCredentialType`campo.
+
    * Atribua a `BasicHttpSecurityMode.TransportCredentialOnly` valor constante para o `BasicHttpBindingSecurity.Security.Mode`campo.
 
    >[!NOTE]
@@ -1113,8 +1110,7 @@ Crie um documento PDF com base em fragmentos usando a API de serviço de saída 
    A variável `invokeDDX` o método retorna um `AssemblerResult` objeto que contém os resultados do trabalho e quaisquer exceções que ocorreram. Para obter o documento XDP recém-criado, execute as seguintes ações:
 
    * Acesse o `AssemblerResult` do objeto `documents` que é um `Map` objeto que contém os documentos PDF resultantes.
-   * Repita através do `Map` objeto para recuperar o design do formulário montado. Transmitir o do membro da matriz `value` para um `BLOB`. Passar este `BLOB` para o Serviço de saída.
-
+   * Repita através do `Map` objeto para recuperar o design do formulário montado. Transmitir do membro da matriz `value` para um `BLOB`. Passar este `BLOB` para o Serviço de saída.
 
 1. Use o Serviço de saída para gerar o documento PDF.
 
@@ -1550,10 +1546,9 @@ Envie um fluxo de impressão para uma impressora de rede usando a API de saída 
       * A variável `PrintedOutputOptionsSpec` objeto que contém as opções de tempo de execução necessárias para imprimir em um arquivo.
       * A variável `com.adobe.idp.Document` objeto que representa a fonte de dados XML que contém dados de formulário a serem mesclados com o design do formulário.
 
-      Este método retorna um valor de `OutputResult` objeto que contém os resultados da operação.
+     Este método retorna um valor de `OutputResult` objeto que contém os resultados da operação.
 
-   * Criar um `com.adobe.idp.Document` para enviar à impressora invocando o `OutputResult` object&#39;s `getGeneratedDoc` método. Este método retorna um valor de `com.adobe.idp.Document` objeto.
-
+   * Criar um `com.adobe.idp.Document` para enviar à impressora invocando o `OutputResult` do objeto `getGeneratedDoc` método. Este método retorna um valor de `com.adobe.idp.Document` objeto.
 
 1. Enviar o fluxo de impressão para uma impressora de rede
 
@@ -1622,8 +1617,8 @@ Envie um fluxo de impressão para uma impressora de rede usando a API de saída 
       * A `BLOB` objeto que é preenchido pelo `generatePrintedOutput` método. A variável `generatePrintedOutput` O método preenche esse objeto com metadados gerados que descrevem o documento. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
       * A `BLOB` objeto que é preenchido pelo `generatePrintedOutput` método. A variável `generatePrintedOutput` O método preenche este objeto com os dados do resultado. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
       * Um `OutputResult` objeto que contém os resultados da operação. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
-   * Criar um `BLOB` para enviar à impressora obtendo o valor do parâmetro `OutputResult` object&#39;s `generatedDoc` método. Este método retorna um valor de `BLOB` objeto que contém dados PostScript retornados pelo `generatePrintedOutput` método.
 
+   * Criar um `BLOB` para enviar à impressora obtendo o valor do parâmetro `OutputResult` do objeto `generatedDoc` método. Este método retorna um valor de `BLOB` objeto que contém dados PostScript retornados pelo `generatePrintedOutput` método.
 
 1. Envie o fluxo de impressão para uma impressora de rede.
 
@@ -2052,7 +2047,6 @@ Crie regras de pesquisa usando a API de saída (Java):
    * Criar um `java.util.List` usando um `java.util.ArrayList` construtor.
    * Para cada `Rule` objeto que você criou, chame o `java.util.List` do objeto `add` e transmita o `Rule` objeto.
 
-
 1. Defina as opções de tempo de execução de PDF.
 
    * Criar um `PDFOutputOptionsSpec` usando seu construtor.
@@ -2141,7 +2135,6 @@ Crie regras de pesquisa usando a API de saída (serviço Web):
 
    * Criar um `MyArrayOf_xsd_anyType` objeto que armazena as regras.
    * Atribuir cada `Rule` a um elemento da variável `MyArrayOf_xsd_anyType` matriz. Chame o `MyArrayOf_xsd_anyType` do objeto `Add` para cada `Rule` objeto.
-
 
 1. Definir opções de tempo de execução de PDF
 

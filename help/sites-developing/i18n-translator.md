@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: components
 discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2327'
 ht-degree: 0%
@@ -251,7 +251,7 @@ Use o procedimento a seguir para exportar todas ou algumas das strings em inglê
 
 1. Abra a ferramenta Tradução. `http://<host>:<port>/libs/cq/i18n/translator.html`
 1. Use o menu suspenso Dicionários para selecionar o dicionário a ser exportado.
-1. Se estiver exportando um subconjunto das cadeias de caracteres, selecione os itens do dicionário que serão exportados. Selecionar nenhum item exporta todos os itens.
+1. Se você estiver exportando um subconjunto das cadeias de caracteres, selecione os itens do dicionário que serão exportados. Selecionar nenhum item exporta todos os itens.
 1. Clique em Exportar > Exportar seleção como Xliff (somente strings).
 1. Na caixa de diálogo exibida, copie o texto e cole-o em um arquivo de texto.
 

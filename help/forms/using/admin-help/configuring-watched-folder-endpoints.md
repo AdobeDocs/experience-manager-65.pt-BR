@@ -1,16 +1,12 @@
 ---
 title: Configurando pontos de extremidade de pasta monitorada
-seo-title: Configuring watched folder endpoints
 description: Saiba como configurar os pontos de extremidade de pastas monitoradas.
-seo-description: Learn how to configure watched folder endpoints.
-uuid: 01fb5ff8-2071-44bd-9241-7d5d41a5b26e
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-discoiquuid: 761e7909-43ba-4642-bcfc-8d76f139b9a3
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '7163'
 ht-degree: 0%
@@ -23,7 +19,7 @@ Um administrador pode configurar uma pasta de rede, conhecida como *pasta monito
 
 ## Configurar o serviço Pasta monitorada {#configuring-the-watched-folder-service}
 
-Antes de configurar um endpoint de pasta monitorada, configure o serviço Pasta monitorada. Os parâmetros de configuração do serviço de Pasta monitorada têm duas finalidades:
+Antes de configurar um endpoint de pasta monitorada, configure o serviço Pasta monitorada. Os parâmetros de configuração do serviço Pasta monitorada têm duas finalidades:
 
 * Para configurar atributos que são comuns para todos os endpoints de pasta monitorados
 * Para fornecer valores padrão para todos os pontos de extremidade da pasta monitorada
@@ -35,7 +31,7 @@ Depois de configurar o serviço Pasta monitorada, você adiciona um terminal Pas
 Você pode criar uma pasta monitorada das duas seguintes maneiras:
 
 * Ao definir as configurações para um endpoint de pasta monitorada, digite o caminho completo para o diretório principal na caixa Caminho e anexe o nome da pasta monitorada a ser criada, como mostrado neste exemplo:
-   `  C:\MyPDFs\MyWatchedFolder`Como a pasta MyWatchedFolder ainda não existe, os formulários AEM tentam criá-la nesse local.
+  `  C:\MyPDFs\MyWatchedFolder`Como a pasta MyWatchedFolder ainda não existe, os formulários AEM tentam criá-la nesse local.
 
 * Crie uma pasta no sistema de arquivos antes de configurar um endpoint de pasta monitorada e digite o caminho completo na caixa Caminho.
 
@@ -352,6 +348,7 @@ Quando a Pasta monitorada não puder processar os arquivos de origem na pasta de
 
    * Em Aplicativos e Serviços, altere o parâmetro Incluir Padrão do Arquivo do endpoint da pasta monitorada para algo que não corresponda a nenhum dos novos arquivos de entrada (por exemplo, insira `NOMATCH`).
    * Suspenda o processo que está criando novos arquivos de entrada.
+
    Aguarde até que o AEM recupere e e processe todos os arquivos. A maioria dos arquivos deve ser recuperada e os novos arquivos de entrada processados corretamente. O tempo de espera pela Pasta monitorada para recuperar e processar os arquivos dependerá da duração da operação a ser chamada e do número de arquivos a serem recuperados.
 
 1. Determine quais arquivos não podem ser processados. Se você esperou um tempo apropriado e concluiu a etapa anterior e ainda há arquivos não processados na pasta de preparo, vá para a próxima etapa.
@@ -383,7 +380,7 @@ Estas são algumas dicas e truques ao configurar o endpoint da Pasta monitorada:
 * Use a duração da limpeza para manter a pasta de resultados limpa. A Pasta monitorada limpa todos os arquivos mais antigos que a duração mencionada na duração da limpeza. A duração é em dias.
 * Ao adicionar um endpoint de Pasta monitorada, após selecionar o nome da operação, o mapeamento do parâmetro de entrada é preenchido. Para cada entrada da operação, um campo de mapeamento de parâmetro de entrada é gerado. Estes são exemplos de mapeamentos de parâmetro de entrada:
 
-   * Para `com.adobe.idp.Document` input: Se a operação de serviço tiver uma entrada do tipo `Document`, o administrador poderá especificar o tipo de mapeamento como `Variable`. A Pasta monitorada coletará a entrada da pasta de entrada da pasta monitorada com base no padrão de arquivo especificado para o parâmetro de entrada. Se o administrador especificar `*.pdf` como parâmetro, cada arquivo com extensão .pdf será selecionado, convertido em `com.adobe.idp.Document`e o serviço chamado.
+   * Para `com.adobe.idp.Document` input: Se a operação de serviço tiver uma entrada do tipo `Document`, o administrador poderá especificar o tipo de mapeamento como `Variable`. A Pasta monitorada coletará a entrada da pasta de entrada monitorada com base no padrão de arquivo especificado para o parâmetro de entrada. Se o administrador especificar `*.pdf` como parâmetro, cada arquivo com extensão .pdf será selecionado, convertido em `com.adobe.idp.Document`e o serviço chamado.
    * Para `java.util.Map` input: Se a operação de serviço tiver uma entrada do tipo `Map`, o administrador poderá especificar o tipo de mapeamento como `Variable` e insira um valor de mapeamento com um padrão como `*.pdf`. Por exemplo, um serviço precisa de um mapa de dois `com.adobe.idp.Document` objetos que representam dois arquivos na pasta de entrada, como 1.pdf e 2.pdf. A pasta monitorada criará um mapa com a chave como o nome do arquivo e o valor como `com.adobe.idp.Document`.
    * Para `java.util.List` input: Se a operação de serviço tiver uma entrada do tipo Lista, o administrador poderá especificar o tipo de mapeamento como `Variable` e insira um valor de mapeamento com um padrão como `*.pdf`. Quando os arquivos PDF forem soltos na pasta de entrada, a Pasta monitorada criará uma lista das `com.adobe.idp.Document` objetos que representam esses arquivos e chamam o serviço de destino.
    * Para `java.lang.String`: O administrador tem duas opções. Primeiro, o administrador pode especificar o tipo de mapeamento como `Literal` e insira um valor de mapeamento como uma string, como `hello.` A pasta monitorada chamará o serviço com a cadeia de caracteres `hello`. Em segundo lugar, o administrador pode especificar o tipo de mapeamento como `Variable` e insira um valor de mapeamento com um padrão como `*.txt`. Nesse último caso, os arquivos com a extensão .txt serão lidos como um documento forçado como uma sequência de caracteres para invocar o serviço.
@@ -400,12 +397,12 @@ Estas são algumas dicas e truques ao configurar o endpoint da Pasta monitorada:
       1. Especifique um padrão para Excluir padrão de arquivo, como temp&amp;ast;.ps.
       1. Copie os arquivos que começam com temp (por exemplo, temp1.ps) para a pasta monitorada.
       1. Depois que o arquivo tiver sido completamente copiado para a pasta monitorada, renomeie-o para corresponder ao padrão especificado em Incluir padrão de arquivo. A Pasta monitorada move o arquivo concluído para o estágio.
+
    * Solução alternativa 2
 
-      Se você souber o tempo máximo necessário para copiar os arquivos para uma pasta monitorada, especifique o tempo em segundos para o Tempo de espera. A Pasta monitorada aguarda o período especificado antes de mover o arquivo para o preparo.
+     Se você souber o tempo máximo necessário para copiar os arquivos para uma pasta monitorada, especifique o tempo em segundos para o Tempo de espera. A Pasta monitorada aguarda o período especificado antes de mover o arquivo para o preparo.
 
-      Isso não é um problema para arquivos no Windows porque o Windows bloqueia um arquivo quando um thread está gravando. No entanto, esse é um problema para pastas no Windows. Para pastas, você deve seguir as etapas da Solução alternativa 1.
-
+     Isso não é um problema para arquivos no Windows porque o Windows bloqueia um arquivo quando um thread está gravando. No entanto, esse é um problema para pastas no Windows. Para pastas, você deve seguir as etapas da Solução alternativa 1.
 
 * Se o atributo de ponto de extremidade Preservar nome da pasta para a pasta monitorada estiver definido como um caminho de diretório nulo, o diretório de preparo não será limpo como deveria ser. O diretório ainda contém o arquivo processado e a pasta temporária.
 

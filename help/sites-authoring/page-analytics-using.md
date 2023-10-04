@@ -1,20 +1,16 @@
 ---
 title: Visualização dos dados de análise da página para medir a eficácia do conteúdo da página
-seo-title: Seeing Page Analytics Data
 description: Usar dados de análise de página para medir a eficácia do conteúdo da página
-seo-description: Use page analytics data to gauge the effectiveness of their page content
-uuid: 5398a5d5-0239-4194-a403-77f5e6fcd741
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 5d192a48-c86f-4803-bb0d-0411ac7470f5
 docset: aem65
 legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '447'
 ht-degree: 11%
 
 ---
@@ -29,7 +25,7 @@ Use os dados de análise da página para medir a eficácia do conteúdo da pági
 
 Os dados de análise da página são exibidos em [Exibição de lista](/help/sites-authoring/basic-handling.md#list-view) do console Sites. Quando as páginas são exibidas no formato de lista, as seguintes colunas estão disponíveis por padrão:
 
-* Exibições da página
+* Visualizações de página
 * Visitantes únicos
 * Tempo na página
 

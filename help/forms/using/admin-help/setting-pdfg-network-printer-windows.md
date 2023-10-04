@@ -1,17 +1,13 @@
 ---
 title: Configuração de uma impressora de rede PDFG (somente Windows)
-seo-title: Setting up a PDFG Network Printer (Windows only)
 description: Saiba como configurar uma impressora de rede PDFG (somente Windows )
-seo-description: Learn how to set up a PDFG Network Printer ( Windows only )
-uuid: 13b8481e-5ef0-4a07-9602-7bc4d9e05dd4
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 7620e5e4-022e-49b2-8cfe-d5eec8ab99d7
 feature: PDF Generator
 exl-id: c3fc159e-2677-4b71-b0b2-2feaf69e1a32
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%
@@ -22,7 +18,7 @@ ht-degree: 0%
 
 A impressora de rede PDFG permite que os usuários gerem um documento PDF a partir de qualquer aplicativo que suporte impressão. Depois que um usuário instala a impressora de rede PDFG, uma nova impressora chamada *gerador de PDF* é exibido na seção Impressoras do Painel de Controle do Windows. Se já existir uma impressora com o mesmo nome, o usuário será solicitado a fornecer outro nome.
 
-A impressão nessa impressora a partir de qualquer aplicativo envia o documento (no formato PostScript) para o PDF Generator, que converte o arquivo PostScript em PDF. Dependendo de como você configurou o Gerador de PDF, ele envia o documento de PDF para o usuário como anexo a uma mensagem de email, encaminha o documento de PDF AEM para um serviço ou processo de formulários especificado ou executa ambas as ações.
+A impressão nessa impressora a partir de qualquer aplicativo envia o documento (no formato PostScript) para o PDF Generator, que converte o arquivo PostScript em PDF. Dependendo de como você configurou o PDF Generator, ele envia o documento PDF para o usuário como um anexo de uma mensagem de email, encaminha o documento PDF AEM para um serviço ou processo de formulários especificado ou executa ambas as ações.
 
 As seguintes etapas são necessárias para configurar uma impressora de rede PDFG:
 
@@ -39,7 +35,7 @@ As seguintes etapas são necessárias para configurar uma impressora de rede PDF
 
 ## Definir as configurações de impressora de rede PDFG {#configure-the-pdfg-network-printer-settings}
 
-1. No console de administração, clique em Services > PDF Generator > PDFG Network Printer
+1. No console de administração, clique em Serviços > PDF Generator > Impressora de rede PDFG
 1. Nas listas Configurações do Adobe PDF e Configurações de segurança, selecione as opções a serem aplicadas ao PDF gerado. Para obter detalhes sobre essas configurações, consulte [Definição das configurações do Adobe PDF](/help/forms/using/admin-help/configuring-pdf-settings.md#configuring-adobe-pdf-settings) e [Definição das configurações de segurança](/help/forms/using/admin-help/configuring-security-settings.md#configuring-security-settings).
 1. Para enviar os PDF convertidos de volta aos usuários, selecione a opção Enviar o arquivo de PDF convertido de volta para o usuário e especifique as seguintes informações:
 
@@ -61,12 +57,12 @@ Se quiser reverter para o texto de email padrão original, clique em Restaurar c
 
 Usuários que possuem as funções de Administrador do PDFG ou Usuário do PDFG podem instalar uma impressora de rede PDFG. Você deve ter um JDK de 32 bits instalado no computador.
 
-1. (Administradores de PDFG) No console de administração, clique em Serviços > Gerador de PDF > Impressora de rede PDFG.
+1. (Administradores de PDFG) No console de administração, clique em Serviços > PDF Generator > Impressora de rede PDFG.
 
    (Usuários PDFG) Vá para `http(s)://[host]:'port'/pdfgui` e clique no link em Instalação da impressora de rede PDFG.
 
 1. Em Instalação da impressora de rede PDFG, clique no link. Quando forem solicitadas informações da conta do usuário, especifique o nome de usuário e a senha usados na etapa 1 para efetuar login. Será exibida uma mensagem informando que a impressora foi instalada com êxito.
 
-   ***observação **: se a senha do usuário for alterada, os usuários precisarão reinstalar a impressora de rede PDFG em seus computadores. Não é possível atualizar a senha no console de administração.*
+   ***observação **: Se a senha do usuário for alterada, os usuários precisarão reinstalar a impressora de rede PDFG em seus computadores. Não é possível atualizar a senha no console de administração.*
 
 1. Clique em OK.

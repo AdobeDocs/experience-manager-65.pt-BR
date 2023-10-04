@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1431'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Para criar um novo andaime, vá para a **Ferramentas** console, depois **Scaffol
 
 Vá para a **Propriedades da página** da nova página e defina o *Texto do título*, *Descrição*, *Modelo de destino*, e *Caminho de destino*, conforme descrito acima.
 
-Em seguida, é necessário definir a estrutura da página que esse scaffolding criará. Para fazer isso, acesse **[modo de design](/help/sites-authoring/page-authoring.md#sidekick)** na página de andaime. Um link será exibido, permitindo editar o scaffold na **editor de diálogo**.
+Em seguida, é necessário definir a estrutura da página que esse scaffolding criará. Para fazer isso, acesse **[modo de design](/help/sites-authoring/page-authoring.md#sidekick)** na página de andaime. Um link é exibido, permitindo que você edite o scaffolding no **editor de diálogo**.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 

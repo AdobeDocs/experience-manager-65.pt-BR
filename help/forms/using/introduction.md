@@ -1,25 +1,22 @@
 ---
 title: Introdução aos formulários HTML5
 seo-title: Introduction to HTML5 forms
-description: O HTML5 Forms é um novo recurso do software Adobe Experience Manager 6.0 (AEM 6.0) que oferece renderização de modelos de formulário XFA no formato HTML5.
-seo-description: HTML5 forms is a new capability in Adobe Experience Manager 6.0 (AEM 6.0) software that offers rendering of XFA form templates in HTML5 format.
-uuid: 63a2f000-c4c5-40e8-ab3f-c7c44c79ec09
+description: O HTML5 Forms é um novo recurso do software Adobe Experience Manager 6.0 (AEM 6.0) que pode renderizar modelos de formulário XFA no formato HTML5.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 672ee050-63d1-46ed-bef2-f55800208d78
 docset: aem65
 feature: Mobile Forms
 exl-id: 0facca18-ffa1-420c-859a-6f1f2c449d71
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
 
 # Introdução aos formulários HTML5{#introduction-to-html-forms}
 
-O HTML5 Forms é um novo recurso do software Adobe Experience Manager 6.0 (AEM 6.0) que oferece renderização de modelos de formulário XFA no formato HTML5. Esse recurso permite a renderização de formulários em dispositivos móveis e navegadores de desktop nos quais o PDF baseado em XFA não é compatível. Os formulários HTML5 não só são compatíveis com os recursos existentes dos modelos de formulário XFA, como também adicionam novos recursos, como a assinatura à mão, para dispositivos móveis.
+O HTML5 Forms é um novo recurso do software Adobe Experience Manager 6.0 (AEM 6.0) que pode renderizar modelos de formulário XFA no formato HTML5. Esse recurso permite a renderização de formulários em dispositivos móveis e navegadores de desktop nos quais o PDF baseado em XFA não é compatível. Os formulários HTML5 não só são compatíveis com os recursos existentes dos modelos de formulário XFA, como também adicionam novos recursos, como a assinatura à mão, para dispositivos móveis.
 
 Os formulários HTML5 geram documentos baseados em construções HTML5 padrão. Você pode ver formulários de HTML5 em todos os navegadores modernos com suporte para HTML5. Não é necessário instalar plug-ins adicionais do navegador para os navegadores. Para obter mais informações sobre os navegadores compatíveis, consulte [Plataformas de cliente compatíveis](https://adobe.com/go/learn_aemforms_supportedplatforms_63).
 

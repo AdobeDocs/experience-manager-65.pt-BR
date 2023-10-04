@@ -1,16 +1,12 @@
 ---
 title: Tabelas em formulários adaptáveis
-seo-title: Tables in adaptive forms
 description: O componente Tabela no AEM Forms permite criar tabelas em formulários adaptáveis que são responsivos a layouts móveis e também permite usar componentes de tabela XDP.
-seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
-uuid: 03436c81-42f0-430f-9e52-14a4ab0e877d
 topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 feature: Adaptive Forms
 exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2475'
 ht-degree: 0%

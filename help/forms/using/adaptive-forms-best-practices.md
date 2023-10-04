@@ -1,15 +1,11 @@
 ---
 title: Práticas recomendadas para trabalhar com formulários adaptáveis
-seo-title: Best practices for working with adaptive forms
 description: Explica as práticas recomendadas para configurar um projeto do AEM Forms, desenvolver formulários adaptáveis e otimizar o desempenho do sistema AEM Forms.
-seo-description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
-uuid: ed95fc64-56b3-4ea1-a5ba-2e96953fca56
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '4734'
 ht-degree: 0%
@@ -293,7 +289,7 @@ Algumas práticas recomendadas ao localizar formulários adaptáveis são as seg
 
 * Use fragmentos de formulário adaptáveis para elementos comuns em formulários e localizar fragmentos. Ela garante que você localize um fragmento uma vez e reflita em todas as formas em que o fragmento localizado é usado.
 * Quaisquer modificações como adicionar um novo componente ou aplicar um script em um formulário localizado não são localizadas automaticamente. Portanto, você deve finalizar um formulário antes de localizá-lo para evitar vários ciclos de localização.
-* Uso `afAcceptLang` parâmetro de solicitação para substituir a localidade do navegador e renderizar o formulário na localidade especificada. Por exemplo, a URL a seguir forçará a renderização do formulário no local japonês, independentemente do local especificado na configuração do navegador:
+* Uso `afAcceptLang` parâmetro de solicitação para substituir a localidade do navegador e renderizar o formulário na localidade especificada. Por exemplo, a URL a seguir é forçada a renderizar o formulário na localidade japonesa, independentemente da localidade especificada na configuração do navegador:
 
   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 

@@ -1,16 +1,12 @@
 ---
 title: Arquivos para backup e recuperação
-seo-title: Files to back up and recover
 description: Este documento descreve o aplicativo e os arquivos de dados dos quais deve ser feito backup.
-seo-description: This document describes the application and data files that must be backed up.
-uuid: ba04adb9-675a-48f2-ad52-39c1266e423b
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2072'
 ht-degree: 0%
@@ -100,7 +96,7 @@ Configure seu banco de dados DB2 para ser executado no modo de log de arquivamen
 
 >[!NOTE]
 >
->Se o ambiente do AEM Forms foi atualizado de uma versão anterior do AEM Forms e usa DB2, não há suporte para backup online. Nesse caso, você deve desligar os formulários AEM e executar um backup offline. Versões futuras do AEM oferecerão suporte ao backup on-line para clientes de atualização.
+Se o ambiente do AEM Forms foi atualizado de uma versão anterior do AEM Forms e usa DB2, não há suporte para backup online. Nesse caso, você deve desligar os formulários AEM e executar um backup offline. Versões futuras do AEM oferecerão suporte ao backup on-line para clientes de atualização.
 
 A IBM tem um conjunto de ferramentas e sistemas de ajuda para ajudar os administradores de bancos de dados a gerenciar suas tarefas de backup e recuperação:
 
@@ -136,7 +132,7 @@ Use MySQLAdmin ou modifique os arquivos INI no Windows para configurar seu banco
 
 >[!NOTE]
 >
->O modo de log binário padrão do MySQL é &quot;Instrução&quot;, que é incompatível com as tabelas usadas pelo Content Services (obsoleto). Usar o registro binário nesse modo padrão faz com que os Serviços de conteúdo (obsoletos) falhem. Se o seu sistema inclui os Serviços de conteúdo (obsoleto), use o modo de registro &quot;Misto&quot;. Para ativar o registro &quot;Misto&quot;, adicione o seguinte argumento ao arquivo my.ini: `binlog_format=mixed log-bin=logname`
+O modo de log binário padrão do MySQL é &quot;Instrução&quot;, que é incompatível com as tabelas usadas pelo Content Services (obsoleto). Usar o registro binário nesse modo padrão faz com que os Serviços de conteúdo (obsoletos) falhem. Se o seu sistema inclui os Serviços de conteúdo (obsoleto), use o modo de registro &quot;Misto&quot;. Para ativar o registro &quot;Misto&quot;, adicione o seguinte argumento ao arquivo my.ini: `binlog_format=mixed log-bin=logname`
 
 Você pode usar o utilitário mysqldump para obter o backup completo do banco de dados. Backups completos são necessários, mas nem sempre são convenientes. Eles produzem grandes arquivos de backup e demoram para serem gerados. Para fazer um backup incremental, inicie o servidor com - `log-bin` conforme descrito na seção anterior. Cada vez que o servidor MySQL é reiniciado, ele para de gravar no log binário atual, cria um novo e, a partir de então, o novo se torna o atual. Você pode forçar um switch manualmente com o `FLUSH LOGS SQL` comando. Após o primeiro backup completo, os backups incrementais subsequentes são feitos usando o utilitário mysqladmin com o `flush-logs` , que cria o próximo arquivo de log.
 
@@ -197,6 +193,6 @@ Se você instalou fontes adicionais no ambiente de formulários AEM, é necessá
 
 >[!NOTE]
 >
->Por padrão, as fontes de Adobe instaladas com o AEM estão localizadas no `[aem-forms root]/fonts` diretório.
+Por padrão, as fontes de Adobe instaladas com o AEM estão localizadas no `[aem-forms root]/fonts` diretório.
 
 Se você estiver reinicializando o sistema operacional no computador host e quiser usar fontes do sistema operacional anterior, o conteúdo do diretório de fontes do sistema também deverá ser submetido a backup. (Para obter instruções específicas, consulte a documentação do seu sistema operacional).

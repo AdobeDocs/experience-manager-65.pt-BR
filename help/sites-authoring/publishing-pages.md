@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 1f5eb646-acc7-49d5-b839-e451e68ada9e
 docset: aem65
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1662'
-ht-degree: 72%
+source-wordcount: '1660'
+ht-degree: 70%
 
 ---
 
@@ -87,7 +87,7 @@ Se você estiver editando uma página, ela poderá ser publicada diretamente do 
 
 >[!NOTE]
 >
->Páginas acessadas por [pseudônimos](/help/sites-authoring/editing-page-properties.md#advanced) no editor não podem ser publicadas. As opções de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
+>Páginas acessadas por [aliases](/help/sites-authoring/editing-page-properties.md#advanced) no editor não pode ser publicado. As opções de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
 
 ### Publicação por meio do Console {#publishing-from-the-console}
 
@@ -216,7 +216,7 @@ Ao editar uma página, se quiser desfazer a publicação, selecione **Desfazer a
 
 >[!NOTE]
 >
->Páginas acessadas por [pseudônimos](/help/sites-authoring/editing-page-properties.md#advanced) no editor não podem ter a publicação desfeita. As opções de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
+>Páginas acessadas por [aliases](/help/sites-authoring/editing-page-properties.md#advanced) no editor não pode ter a publicação desfeita. As opções de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
 
 ### Desfazer a publicação por meio do Console  {#unpublishing-from-the-console}
 

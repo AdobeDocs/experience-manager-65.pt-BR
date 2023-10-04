@@ -1,19 +1,15 @@
 ---
 title: Assinatura digital e documentos de certificação
-seo-title: Digitally Signing and Certifying Documents
 description: Use o serviço de assinatura para adicionar e excluir campos de assinatura digital a um documento PDF, recuperar os nomes dos campos de assinatura localizados em um documento PDF, modificar campos de assinatura, assinar digitalmente documentos PDF, certificar documentos PDF, validar assinaturas digitais localizadas em um documento PDF, validar todas as assinaturas digitais localizadas em um documento PDF e remover uma assinatura digital de um campo de assinatura.
-seo-description: Use the Signature service to add and delete digital signature fields to a PDF document, retrieve the names of signature fields located in a PDF document, modify signature fields, digitally sign PDF documents, certify PDF documents, validate digital signatures located in a PDF document, validate all digital signatures located in a PDF document, and remove a digital signature from a signature field.
-uuid: 6331de8a-2a9c-45bf-89d2-29f1ad5cc856
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '17046'
+source-wordcount: '17047'
 ht-degree: 0%
 
 ---
@@ -34,7 +30,7 @@ O serviço de Assinatura permite que sua organização proteja a segurança e a 
 
 Algumas operações do Serviço de assinatura exigem que você especifique o nome do campo de assinatura no qual uma operação é executada. Por exemplo, ao assinar um documento PDF, você especifica o nome do campo de assinatura a ser assinado. Suponha que o nome completo de um campo de assinatura seja `form1[0].Form1[0].SignatureField1[0]`. Você pode especificar `SignatureField1[0]` em vez de `form1[0].Form1[0].SignatureField1[0]`.
 
-Às vezes, um conflito faz com que o serviço de Assinatura assine (ou execute outra operação que exija o nome do campo de assinatura) o campo errado. Este conflito é o resultado do nome `SignatureField1[0]` que apareçam em dois ou mais locais no mesmo documento PDF. Por exemplo, considere um documento PDF que contém dois campos de assinatura chamados `form1[0].Form1[0].SignatureField1[0]` e `form1[0].Form1[0].SubForm1[0].SignatureField1[0]` e você especificar `SignatureField1[0]`. Nessa situação, o serviço de Assinatura assina o primeiro campo de assinatura encontrado ao iterar todos os campos de assinatura no documento.
+Às vezes, um conflito faz com que o serviço de Assinatura assine (ou execute outra operação que exija o nome do campo de assinatura) o campo errado. Este conflito é o resultado do nome `SignatureField1[0]` aparecerem em dois ou mais lugares no mesmo documento PDF. Por exemplo, considere um documento PDF que contém dois campos de assinatura chamados `form1[0].Form1[0].SignatureField1[0]` e `form1[0].Form1[0].SubForm1[0].SignatureField1[0]` e você especificar `SignatureField1[0]`. Nessa situação, o serviço de Assinatura assina o primeiro campo de assinatura encontrado ao iterar todos os campos de assinatura no documento.
 
 Se houver vários campos de assinatura localizados em um documento PDF, é recomendável especificar os nomes completos dos campos de assinatura. Ou seja, especifique `form1[0].Form1[0].SignatureField1[0]`em vez de `SignatureField1[0]`.
 
@@ -138,9 +134,11 @@ Adicione um campo de assinatura usando a API de assinatura (Java):
       * A `java.lang.Integer` valor que representa o número da página à qual um campo de assinatura é adicionado.
       * A `PositionRectangle` objeto que especifica o local do campo de assinatura.
       * A `FieldMDPOptions` objeto que especifica campos no documento PDF que são bloqueados depois que uma assinatura digital é aplicada ao campo de assinatura. Esse valor de parâmetro é opcional, e você pode passar `null`.
+
    * A `PDFSeedValueOptions` objeto que especifica vários valores de tempo de execução. Esse valor de parâmetro é opcional, e você pode passar `null`.
 
-      A variável `addSignatureField` o método retorna um `com.adobe.idp`. `Document` objeto que representa um documento PDF que contém um campo de assinatura.
+     A variável `addSignatureField` o método retorna um `com.adobe.idp`. `Document` objeto que representa um documento PDF que contém um campo de assinatura.
+
    >[!NOTE]
    >
    >Você pode chamar a variável `SignatureServiceClient` do objeto `addInvisibleSignatureField` para adicionar um campo de assinatura invisível.
@@ -557,7 +555,7 @@ Modifique um campo de assinatura usando a API de assinatura (serviço da Web):
 
 As assinaturas digitais podem ser aplicadas a documentos PDF para fornecer um nível de segurança. As assinaturas digitais, como as assinaturas manuscritas, fornecem um meio pelo qual os signatários se identificam e fazem declarações sobre um documento. A tecnologia usada para assinar documentos digitalmente ajuda a garantir que tanto o signatário quanto os recipients estejam claros sobre o que foi assinado e confiantes de que o documento não foi alterado desde que foi assinado.
 
-Os documentos PDF são assinados por meio de tecnologia de chave pública. Um signatário tem duas chaves: uma chave pública e uma chave privada. A chave privada é armazenada na credencial de um usuário que deve estar disponível no momento da assinatura. A chave pública é armazenada no certificado do usuário que deve estar disponível aos recipients para validar a assinatura. Informações sobre certificados revogados são encontradas nas listas de certificados revogados (CRLs) e respostas do Protocolo de Status de Certificados Online (OCSP) distribuídas pelas Autoridades de Certificação (CAs). A hora da assinatura pode ser obtida de uma fonte confiável conhecida como Autoridade de carimbo de data e hora.
+Os documentos PDF são assinados por meio de tecnologia de chave pública. Um signatário tem duas chaves: uma chave pública e uma chave privada. A chave privada é armazenada na credencial de um usuário que deve estar disponível no momento da assinatura. A chave pública é armazenada no certificado do usuário que deve estar disponível para os recipients validarem a assinatura. Informações sobre certificados revogados são encontradas nas listas de certificados revogados (CRLs) e respostas do Protocolo de Status de Certificados Online (OCSP) distribuídas pelas Autoridades de Certificação (CAs). A hora da assinatura pode ser obtida de uma fonte confiável conhecida como Autoridade de carimbo de data e hora.
 
 >[!NOTE]
 >
@@ -929,10 +927,9 @@ Assine digitalmente um formulário interativo usando o Forms e a API de assinatu
       * A `URLSpec` objeto que contém valores de URI exigidos pelo serviço do Forms. Você pode especificar `null` para este valor de parâmetro.
       * A `java.util.HashMap` objeto que armazena anexos de arquivo. Este é um parâmetro opcional e você pode especificar `null` se não quiser anexar arquivos ao formulário.
 
-      A variável `renderPDFForm2` o método retorna um `FormsResult` objeto que contém um fluxo de dados de formulário
+     A variável `renderPDFForm2` o método retorna um `FormsResult` objeto que contém um fluxo de dados de formulário
 
    * Recupere o formulário PDF invocando o `FormsResult` do objeto `getOutputContent` método. Este método retorna um valor de `com.adobe.idp.Document` objeto que representa o formulário interativo.
-
 
 1. Assinar o formulário interativo
 
@@ -994,6 +991,7 @@ Assine digitalmente um formulário interativo usando o Forms e a API de assinatu
       * Atribuir o nome de usuário dos formulários AEM ao campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `SignatureServiceClient.ClientCredentials.UserName.Password`.
       * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+
    * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
    >[!NOTE]
@@ -1023,8 +1021,8 @@ Assine digitalmente um formulário interativo usando o Forms e a API de assinatu
       * Um parâmetro de saída longo usado para armazenar o número de páginas no formulário.
       * Um parâmetro de saída de string que é usado para o valor do local.
       * A `FormResult` valor que é um parâmetro de saída usado para armazenar o formulário interativo.
-   * Recupere o formulário PDF invocando o `FormsResult` do objeto `outputContent` campo. Este campo armazena um `BLOB` objeto que representa o formulário interativo.
 
+   * Recupere o formulário PDF invocando o `FormsResult` do objeto `outputContent` campo. Este campo armazena um `BLOB` objeto que representa o formulário interativo.
 
 1. Assinar o formulário interativo
 
@@ -1287,7 +1285,7 @@ Certifique um documento PDF usando a API de assinatura (serviço da Web):
 
 As assinaturas digitais podem ser verificadas para garantir que um documento PDF assinado não foi modificado e que a assinatura digital é válida. Ao verificar uma assinatura digital, você pode verificar o status da assinatura e suas propriedades, como a identidade do assinante. Antes de confiar em uma assinatura digital, é recomendável verificá-la. Ao verificar uma assinatura digital, consulte um documento PDF que contenha uma assinatura digital.
 
-Suponha que a identidade do signatário seja desconhecida. Ao abrir o documento PDF no Acrobat, uma mensagem de aviso informa que a identidade do signatário é desconhecida, como mostrado na ilustração a seguir.
+Suponha que a identidade do signatário seja desconhecida. Quando você abre o documento PDF no Acrobat, uma mensagem de aviso declara que a identidade do signatário é desconhecida, como mostrado na ilustração a seguir.
 
 ![vd_vd_verifysig](assets/vd_vd_verifysig.png)
 
@@ -1339,7 +1337,7 @@ Defina estas opções de tempo de execução de PKI que o serviço de Assinatura
 * Verificação de revogação
 * Valores de carimbo de data e hora
 
-Como parte da configuração dessas opções, você pode especificar o tempo de verificação. Por exemplo, você pode selecionar a hora atual (a hora no computador do validador), o que indica a utilização da hora atual. Para obter informações sobre os diferentes valores de tempo, consulte `VerificationTime` valor de enumeração em [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Como parte da configuração dessas opções, você pode especificar o tempo de verificação. Por exemplo, você pode selecionar a hora atual (a hora no computador do validador), que indica a utilização da hora atual. Para obter informações sobre os diferentes valores de tempo, consulte `VerificationTime` valor de enumeração em [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 Você também pode especificar se deseja executar a verificação de revogação como parte do processo de verificação. Por exemplo, você pode executar uma verificação de revogação para determinar se o certificado foi revogado. Para obter informações sobre as opções de verificação de revogação, consulte `RevocationCheckStyle` valor de enumeração em [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
@@ -1434,8 +1432,8 @@ Verifique uma assinatura digital usando a API do serviço de assinatura (Java):
 
 1. Determinar a identidade do signatário
 
-   * Determine a identidade do signatário invocando o `PDFSignatureVerificationInfo` do objeto `getSigner` método. Este método retorna um valor de `IdentityInformation` objeto.
-   * Chame o `IdentityInformation` do objeto `getStatus` para determinar a identidade do signatário. Este método retorna um valor de `IdentityStatus` valor de enumeração que especifica a identidade. Por exemplo, se o signatário for confiável, esse método retornará `IdentityStatus.TRUSTED`.
+   * Determine a identidade do signatário chamando o `PDFSignatureVerificationInfo` do objeto `getSigner` método. Este método retorna um valor de `IdentityInformation` objeto.
+   * Chame o `IdentityInformation` do objeto `getStatus` método para determinar a identidade do signatário. Este método retorna um valor de `IdentityStatus` valor de enumeração que especifica a identidade. Por exemplo, se o signatário for confiável, esse método retornará `IdentityStatus.TRUSTED`.
 
 **Consulte também**
 
@@ -1516,7 +1514,7 @@ Verifique uma assinatura digital usando a API do Serviço de assinatura (serviç
 
 ## Verificação de várias assinaturas digitais {#verifying-multiple-digital-signatures}
 
-O AEM Forms fornece os meios de verificar todas as assinaturas digitais localizadas em um documento PDF. Suponha que um documento PDF contenha várias assinaturas digitais como resultado de um processo comercial que requer assinaturas de vários signatários. Por exemplo, considere uma transação financeira que exige a assinatura de um gerente de empréstimo e de um gerente. Você pode usar a API Java do serviço de assinatura ou a API do serviço da Web para verificar todas as assinaturas no documento do PDF. Ao verificar várias assinaturas digitais, você pode verificar o status e as propriedades de cada assinatura. Antes de confiar em uma assinatura digital, é recomendável verificá-la. É recomendável que você esteja familiarizado com a verificação de uma única assinatura digital.
+O AEM Forms fornece os meios de verificar todas as assinaturas digitais localizadas em um documento PDF. Suponha que um documento PDF contenha várias assinaturas digitais como resultado de um processo comercial que requer assinaturas de vários signatários. Por exemplo, considere uma transação financeira que requer a assinatura de um gerente e de um gerente de empréstimo. Você pode usar a API Java do serviço de assinatura ou a API do serviço da Web para verificar todas as assinaturas no documento do PDF. Ao verificar várias assinaturas digitais, você pode verificar o status e as propriedades de cada assinatura. Antes de confiar em uma assinatura digital, é recomendável verificá-la. É recomendável que você esteja familiarizado com a verificação de uma única assinatura digital.
 
 >[!NOTE]
 >
@@ -1563,7 +1561,7 @@ Defina estas opções de tempo de execução de PKI que o serviço de Assinatura
 * Verificação de revogação
 * Valores de carimbo de data e hora
 
-Como parte da configuração dessas opções, você pode especificar o tempo de verificação. Por exemplo, você pode selecionar a hora atual (a hora no computador do validador), o que indica a utilização da hora atual. Para obter informações sobre os diferentes valores de tempo, consulte `VerificationTime` valor de enumeração em [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Como parte da configuração dessas opções, você pode especificar o tempo de verificação. Por exemplo, você pode selecionar a hora atual (a hora no computador do validador), que indica a utilização da hora atual. Para obter informações sobre os diferentes valores de tempo, consulte `VerificationTime` valor de enumeração em [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 Você também pode especificar se deseja executar a verificação de revogação como parte do processo de verificação. Por exemplo, você pode executar uma verificação de revogação para determinar se o certificado foi revogado. Para obter informações sobre as opções de verificação de revogação, consulte `RevocationCheckStyle` valor de enumeração em [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 

@@ -5,9 +5,9 @@ content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -59,13 +59,13 @@ Você cria um **modelo adaptável** e aplique o tema ao modelo. Você pode usar 
 
    * `less` pasta: Contém o `less` arquivos variáveis nos quais você define a variável `less` variáveis e `less mixins` que são usados para gerenciar os estilos .css.
 
-     Esta pasta consiste em `less` arquivos variáveis, `less` mixin de arquivos, `less` arquivos definindo estilos usando mixins e variáveis. E todos esses menos arquivos são importados em style.less.
+     Esta pasta consiste em `less` arquivos variáveis, `less` mixin de arquivos, `less` arquivos definindo estilos usando mixins e variáveis. E tudo isso `less` os arquivos são importados no style.less.
 
    * `css`pasta: contém os arquivos .css nos quais você define os estilos estáticos a serem usados no tema.
 
    **Menos arquivos de variáveis**: esses são os arquivos em que você define ou substitui as variáveis usadas na definição de estilos CSS.
 
-   Os formulários adaptáveis fornecem variáveis OOTB definidas nos seguintes arquivos .less:
+   Os formulários adaptáveis fornecem variáveis OOTB definidas no seguinte `.less` arquivos:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
@@ -74,7 +74,7 @@ Você cria um **modelo adaptável** e aplique o tema ao modelo. Você pode usar 
 
    `/apps/clientlibs/fd/af/third-party/less/variables.less`
 
-   Você pode usar menos variáveis fornecidas com formulários adaptáveis, pode substituir essas variáveis ou pode criar novas menos variáveis.
+   Você pode usar o `less` fornecidas com formulários adaptáveis, você pode substituir essas variáveis ou criar novas `less` variáveis.
 
    >[!NOTE]
    >
@@ -131,11 +131,11 @@ Você cria um **modelo adaptável** e aplique o tema ao modelo. Você pode usar 
    }
    ```
 
-   **Arquivo Styles.less:** Use esse arquivo para incluir menos arquivos (variáveis, mixins, estilos) que você deve usar na biblioteca do cliente.
+   **Arquivo Styles.less:** Use este arquivo para incluir todas as `less` arquivos (variáveis, mixins, estilos) que você deve usar na biblioteca do cliente.
 
    Na amostra a seguir `styles.less` a instrução import pode ser colocada em qualquer ordem.
 
-   As instruções para importar os seguintes arquivos .less são obrigatórias:
+   As instruções para importar o seguinte `.less` os arquivos são obrigatórios:
 
    * `globalvariables.less`
    * `layoutvariables.less`

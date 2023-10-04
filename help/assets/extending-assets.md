@@ -5,16 +5,16 @@ contentOwner: AG
 role: Developer
 feature: Developer Tools
 exl-id: 0271c528-23b0-4a3a-b5e8-5baf6cdeecc7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
 
 # Personalizar e estender [!DNL Assets] {#customizing-and-extending-assets}
 
-O Editor de Ativos é o principal ponto de acesso que os usuários de um website do Adobe Enterprise Manager usarão para localizar, exibir e manipular os ativos digitais no seu repositório.
+O Editor de Ativos é o principal ponto de acesso que os usuários de um site do Adobe Enterprise Manager usam para localizar, exibir e manipular os ativos digitais no seu repositório.
 
 Como um [!DNL Experience Manager] desenvolvedor, você pode personalizar e estender o Editor de ativos de várias maneiras, apresentando aos usuários uma interface e um conjunto de funcionalidades especificamente adaptados.
 

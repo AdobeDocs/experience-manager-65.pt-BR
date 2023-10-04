@@ -10,9 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
 feature: Mobile Forms
 exl-id: a9879445-d626-4279-8a95-a9009294b483
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '299'
 ht-degree: 5%
 
 ---
@@ -23,7 +23,7 @@ Você pode salvar um formulário HTML5 como rascunho e retomar o preenchimento d
 
 ## Perfil personalizado para permitir o recurso Salvar como rascunho {#custom-profile-to-allow-save-as-draft-feature}
 
-Pronto para uso, o AEM Forms fornece uma **Salvar como rascunho** perfil. Você pode renderizar um formulário com o perfil Salvar como rascunho para ativar a funcionalidade de rascunho para um formulário HTML5. Você pode especificar o perfil de renderização do HTML para um formulário em [Forms Manager](/help/forms/using/introduction-managing-forms.md).
+Pronto para uso, a AEM Forms fornece um **Salvar como rascunho** perfil. Você pode renderizar um formulário com o perfil Salvar como rascunho para ativar a funcionalidade de rascunho para um formulário HTML5. Você pode especificar o perfil de renderização do HTML para um formulário em [Forms Manager](/help/forms/using/introduction-managing-forms.md).
 
 Para ativar a funcionalidade Salvar como rascunho para o seu [perfil personalizado](/help/forms/using/custom-profile.md), adicione as seguintes propriedades ao nó de perfil personalizado:
 

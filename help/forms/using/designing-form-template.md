@@ -1,17 +1,13 @@
 ---
 title: Criação de modelos de formulário para formulários HTML5
-seo-title: Designing form templates for HTML5 forms
-description: O AEM Forms oferece renderização do modelo de formulário XFA para o formato HTML5. Os designers de formulário podem criar modelos de formulário usando o Designer e usar o recurso de representação HTML5.
-seo-description: AEM Forms offers rendering XFA form template to HTML5 format. Form designers can design form templates using Designer and use the HTML5 rendition capability.
-uuid: 4f6b7231-4479-400a-adcd-c68064f06b4e
+description: O AEM Forms pode renderizar o modelo de formulário XFA para o formato HTML5. Os designers de formulário podem criar modelos de formulário usando o Designer e usar o recurso de representação HTML5.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: f2e9dbe4-e210-41f3-8878-2fc4d166e63c
 docset: aem65
 feature: Mobile Forms
 exl-id: 7c8d501f-c953-495e-8bac-1f66fd99c783
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 1%
@@ -20,7 +16,7 @@ ht-degree: 1%
 
 # Criação de modelos de formulário para formulários HTML5{#designing-form-templates-for-html-forms}
 
-O componente de formulários HTML5 no AEM oferece renderização do modelo de formulário XFA para o formato HTML5. Os designers de formulários podem criar modelos de formulário usando [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_pt) e use o recurso de representação HTML5. Esses modelos de formulário, juntamente com seus ativos, podem residir no repositório AEM, no sistema de arquivos ou ser expostos via http. No entanto, se você planeja gerenciar seus formulários usando o Forms Manager, os modelos e os ativos devem residir no repositório AEM.
+O componente de formulários HTML5 no AEM pode renderizar o modelo de formulário XFA para o formato HTML5. Os designers de formulários podem criar modelos de formulário usando [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_pt) e use o recurso de representação HTML5. Esses modelos de formulário, juntamente com seus ativos, podem residir no repositório AEM, no sistema de arquivos ou ser expostos via http. No entanto, se você planeja gerenciar seus formulários usando o Forms Manager, os modelos e os ativos devem residir no repositório AEM.
 
 Embora os formulários HTML5 correspondam ao comportamento dos PDF forms em grande medida, há alguns recursos em ambos os formatos que não são aplicáveis ao outro formato. Por exemplo, como os códigos de barras são aplicados em um formulário PDF no Adobe Reader varia de um formulário para dispositivo móvel ou como um formulário é assinado digitalmente também varia entre os formatos. Para obter mais informações sobre essas variações, consulte [Diferenciação de recursos entre formulários HTML e PDF forms](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 

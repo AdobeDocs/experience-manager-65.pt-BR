@@ -1,19 +1,15 @@
 ---
 title: Configuração das opções de cliente e servidor
-seo-title: Configuring client and server optionsn
 description: Saiba como você pode configurar as várias opções de cliente e servidor, como as definições de configuração do servidor, as funções de segurança de documentos e a auditoria de eventos.
-seo-description: Learn how you can configure the various client and server options, such as server configuration settings, document security roles, and event auditing.
-uuid: 1f9f9886-726e-4fad-9ff8-0ff11eef653e
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '10242'
+source-wordcount: '10243'
 ht-degree: 0%
 
 ---
@@ -212,7 +208,7 @@ Ao habilitar a auditoria do servidor, você pode exibir os eventos auditados na 
    * Para auditar todos os eventos na categoria, selecione Todos.
    * Para auditar apenas alguns eventos, desmarque Tudo e marque as caixas de seleção ao lado dos eventos que deseja auditar.
 
-      (Consulte [Opções de auditoria de evento](configuring-client-server-options.md#event-auditing-options).)
+     (Consulte [Opções de auditoria de evento](configuring-client-server-options.md#event-auditing-options).)
 
 1. Clique em OK.
 
@@ -362,7 +358,7 @@ Você pode ativar e desativar a auditoria de eventos e especificar os tipos de e
 
 **Sincronização de Diretórios Concluída:** Essas informações não estão disponíveis na página Eventos. As informações de sincronização de diretórios atuais, incluindo o estado e o horário da última sincronização, são exibidas na página Gerenciamento de Domínio. Para acessar a página Gerenciamento de domínio no console de administração, clique em Configurações > Gerenciamento de usuário > Gerenciamento de domínio.
 
-**Habilitar Acesso Offline de Cliente:** Um acesso off-line ativado pelo usuário a documentos protegidos contra o servidor no computador do usuário.
+**Habilitar Acesso Offline de Cliente:** Um usuário habilitou o acesso off-line a documentos protegidos contra o servidor no computador do usuário.
 
 **Cliente Sincronizado** O aplicativo cliente deve sincronizar informações com o servidor para permitir acesso offline.
 
@@ -493,7 +489,7 @@ Alguns aplicativos clientes podem não suportar marcas d&#39;água dinâmicas. C
    * Selecione os tipos de marca d&#39;água a serem incluídos. Se você selecionar Texto personalizado, na caixa adjacente, digite o texto a ser exibido para a marca d&#39;água. Lembre-se do comprimento do texto que será exibido como marca d&#39;água.
    * Especifique as propriedades de formatação do texto, como nome da fonte, tamanho da fonte, cor do primeiro plano e cor do plano de fundo, para o conteúdo do texto da marca d&#39;água. Especifique a cor do primeiro plano e do plano de fundo como valores hexadecimais.
 
-      ***observação **: se você selecionar a opção de dimensionamento como Ajustar à página, a propriedade de tamanho da fonte não estará disponível para edição.*
+     ***observação **: se você selecionar a opção de dimensionamento como Ajustar à página, a propriedade de tamanho da fonte não estará disponível para edição.*
 
 1. Se você selecionou PDF para opções de marca d&#39;água avançada, clique em **Procurar** ao lado de Selecionar PDF de marca d&#39;água para selecionar o documento PDF que deseja usar como marca d&#39;água.
 
@@ -665,7 +661,7 @@ As configurações a seguir estão localizadas na área Configuração de email 
 
 ### Configurar um email de redefinição de senha {#configure-a-password-reset-email}
 
-Se for necessário redefinir a senha de um usuário convidado, será gerado um email de confirmação convidando o usuário a escolher uma nova senha. A senha de um usuário não pode ser determinada; se o usuário a esquecer, você deverá redefini-la.
+Se você precisar redefinir a senha de um usuário convidado, será gerado um email de confirmação convidando o usuário a escolher uma nova senha. A senha de um usuário não pode ser determinada; se o usuário a esquecer, você deverá redefini-la.
 
 As configurações a seguir estão localizadas na área Redefinir e-mail de senha da página Registro de usuário convidado.
 
@@ -673,7 +669,7 @@ As configurações a seguir estão localizadas na área Redefinir e-mail de senh
 
 **Assunto:** Assunto padrão da mensagem de email de redefinição.
 
-**Mensagem:** O texto que aparece no corpo da mensagem é uma mensagem indicando que a senha do usuário externo do recipient foi redefinida.
+**Mensagem:** O texto que aparece no corpo da mensagem uma mensagem indicando que a senha do usuário externo do recipient foi redefinida.
 
 ## Permitir que usuários e grupos criem políticas {#enable-users-and-groups-to-create-policies}
 

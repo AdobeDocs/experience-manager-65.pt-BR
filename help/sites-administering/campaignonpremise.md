@@ -1,14 +1,12 @@
 ---
 title: Integração do AEM 6.5 com o Adobe Campaign Classic
 description: Saiba como integrar o AEM 6.5 com o Adobe Campaign Classic
-uuid: 3c998b0e-a885-4aa9-b2a4-81b86f9327d3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: df94dd1b-1b65-478b-a28d-81807a8084b1
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
-source-git-commit: 8db2cadc83b26e04f9931e18c53db3bf0be03796
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '1583'
 ht-degree: 67%
@@ -152,9 +150,9 @@ Agora, o AEM pode se comunicar com o Adobe Campaign.
 
 >[!NOTE]
 >
->Certifique-se de que o servidor do Adobe Campaign possa ser acessado pela Internet. O AEM não pode acessar redes privadas.
+>Certifique-se de que o servidor do Adobe Campaign possa ser acessado pela Internet. O AEM não consegue acessar redes privadas.
 
-## Configurar replicação para a instância de publicação do AEM {#replication}
+## Configurar Replicação para Instância de Publicação AEM {#replication}
 
 O conteúdo da campanha é criado por autores de conteúdo na instância de criação do AEM. Normalmente, essa instância só está disponível internamente em sua organização. Para que conteúdo como imagens e ativos seja acessível aos recipients da sua campanha, é necessário publicar esse conteúdo.
 

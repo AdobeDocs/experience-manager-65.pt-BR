@@ -1,19 +1,15 @@
 ---
 title: Protegendo documentos com políticas
-seo-title: Protecting Documents with Policies
 description: Use o serviço de Segurança de documentos para aplicar dinamicamente configurações de confidencialidade a documentos do Adobe PDF e manter o controle sobre os documentos. O serviço de Segurança de documentos também permite que os usuários mantenham controle sobre como os recipients usam o documento PDF protegido por política.
-seo-description: Use the Document Security service to dynamically apply confidentiality settings to Adobe PDF documents and to maintain control over the documents. The Document Security service also enables the users to maintain control over how recipients use the policy-protected PDF document.
-uuid: 6feb69ef-7b61-4d0b-8c87-d65d98bae9b5
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '15514'
+source-wordcount: '15513'
 ht-degree: 0%
 
 ---
@@ -229,10 +225,10 @@ Crie uma política usando a API de segurança de documentos (Java):
 1. Defina os atributos da política.
 
    * Criar um `Policy` ao invocar o `InfomodelObjectFactory` estática do objeto `createPolicy` método. Este método retorna um valor de `Policy` objeto.
-   * Defina o atributo name da política chamando o `Policy` do objeto `setName` e transmitindo um valor de string que especifica o nome da política.
+   * Defina o atributo de nome da política chamando o `Policy` do objeto `setName` e transmitindo um valor de string que especifica o nome da política.
    * Defina a descrição da política chamando o `Policy` do objeto `setDescription` e transmitindo um valor de string que especifica a descrição da política.
-   * Defina o conjunto de políticas ao qual a nova política pertence chamando o `Policy` do objeto `setPolicySetName` e transmitindo um valor de string que especifica o nome do conjunto de políticas. (Você pode especificar `null` para esse valor de parâmetro que resulta na adição da política ao *Minhas Políticas* definição de políticas.)
-   * Crie o período de validade da política invocando o `InfomodelObjectFactory` estática do objeto `createValidityPeriod` método. Este método retorna um valor de `ValidityPeriod` objeto.
+   * Especifique o conjunto de políticas ao qual a nova política pertence, chamando o `Policy` do objeto `setPolicySetName` e transmitindo um valor de string que especifica o nome do conjunto de políticas. (Você pode especificar `null` para esse valor de parâmetro que resulta na adição da política ao *Minhas Políticas* definição de políticas.)
+   * Crie o período de validade da política chamando o `InfomodelObjectFactory` estática do objeto `createValidityPeriod` método. Este método retorna um valor de `ValidityPeriod` objeto.
    * Defina o número de dias durante os quais um documento protegido por política estará acessível chamando o `ValidityPeriod` do objeto `setRelativeExpirationDays` e transmitindo um valor inteiro que especifica o número de dias.
    * Defina o período de validade da política invocando o `Policy` do objeto `setValidityPeriod` e transmitindo o `ValidityPeriod` objeto.
 
@@ -251,6 +247,7 @@ Crie uma política usando a API de segurança de documentos (Java):
    * Registre a política invocando o `PolicyManager` do objeto `registerPolicy` e transmitindo os seguintes valores:
 
       * A variável `Policy` objeto que representa a política a ser registrada.
+
    * Um valor de string que representa o conjunto de políticas ao qual a política pertence.
 
    Se você usar uma conta de administrador de formulários AEM nas configurações de conexão para criar a variável `DocumentSecurityClient` e, em seguida, especifique o nome do conjunto de políticas quando chamar o `registerPolicy` método. Se você passar um `null` para o conjunto de políticas, a política é criada nos administradores *Minhas Políticas* conjunto de políticas.
@@ -288,15 +285,15 @@ Crie uma política usando a API de segurança de documentos (serviço da Web):
       * Atribuir o nome de usuário dos formulários AEM ao campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Defina os atributos da política.
 
    * Criar um `PolicySpec` usando seu construtor.
    * Defina o nome da política atribuindo um valor de string ao `PolicySpec` do objeto `name` membro de dados.
    * Defina a descrição da política atribuindo um valor de string ao `PolicySpec` do objeto `description` membro de dados.
-   * Defina o conjunto de políticas ao qual a política pertencerá atribuindo um valor de string ao `PolicySpec` do objeto `policySetName` membro de dados. Especifique um nome de conjunto de políticas existente. (Você pode especificar `null` para este valor de parâmetro que resulta na política sendo adicionada a *Minhas Políticas*.)
+   * Especifique o conjunto de políticas ao qual a política pertence, atribuindo um valor de string ao `PolicySpec` do objeto `policySetName` membro de dados. Especifique um nome de conjunto de políticas existente. (Você pode especificar `null` para este valor de parâmetro que resulta na política sendo adicionada a *Minhas Políticas*.)
    * Defina o período de concessão offline da política atribuindo um valor inteiro ao `PolicySpec` do objeto `offlineLeasePeriod` membro de dados.
    * Defina o `PolicySpec` do objeto `policyXml` membro de dados com um valor de string que representa dados XML PDRL. Para executar esta tarefa, crie um .NET `StreamReader` usando seu construtor. Transmita o local de um arquivo XML PDRL que representa a política para o `StreamReader` construtor. Em seguida, chame o `StreamReader` do objeto `ReadLine` e atribua o valor de retorno a uma variável de string. Repita através do `StreamReader` até que o `ReadLine` o método retorna nulo. Atribua a variável de string ao `PolicySpec` do objeto `policyXml` membro de dados.
 
@@ -395,7 +392,7 @@ Modifique uma política existente usando a API de segurança de documentos (Java
 
 1. Defina os atributos da política.
 
-   Altere os atributos da política para atender aos requisitos da empresa. Por exemplo, para alterar o período de concessão offline da política, chame o `Policy` do objeto `setOfflineLeasePeriod` método.
+   Altere os atributos da política para atender às necessidades dos negócios. Por exemplo, para alterar o período de concessão offline da política, chame o `Policy` do objeto `setOfflineLeasePeriod` método.
 
 1. Atualize a política.
 
@@ -428,8 +425,8 @@ Modifique uma política existente usando a API de segurança de documentos (serv
       * Atribuir o nome de usuário dos formulários AEM ao campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recuperar uma política existente.
 
@@ -440,7 +437,7 @@ Modifique uma política existente usando a API de segurança de documentos (serv
 
 1. Defina os atributos da política.
 
-   Altere os atributos da política para atender aos requisitos da empresa.
+   Altere os atributos da política para atender às necessidades dos negócios.
 
 1. Atualize a política.
 
@@ -531,8 +528,8 @@ Exclua uma política usando a API de segurança de documentos (serviço da Web):
       * Atribuir o nome de usuário dos formulários AEM ao campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Exclua a política.
 
@@ -629,8 +626,7 @@ Aplique uma política a um documento PDF usando a API de segurança de documento
       * Um valor de string que representa o nome canônico do usuário gerente do usuário que é o editor do documento. Esse valor de parâmetro é opcional e pode ser `null` (se este parâmetro for nulo, o valor do parâmetro anterior deverá ser `null`).
       * A `com.adobe.livecycle.rightsmanagement.Locale` que representa a localidade usada para selecionar o modelo do MS Office. Esse valor de parâmetro é opcional e não é usado para documentos PDF. Para proteger um documento PDF, especifique `null`.
 
-      A variável `protectDocument` o método retorna um `RMSecureDocumentResult` objeto que contém o documento PDF protegido por política.
-
+     A variável `protectDocument` o método retorna um `RMSecureDocumentResult` objeto que contém o documento PDF protegido por política.
 
 1. Salve o documento PDF.
 
@@ -674,8 +670,8 @@ Aplique uma política a um documento PDF usando a API de segurança de documento
       * Atribuir o nome de usuário dos formulários AEM ao campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere um documento PDF.
 
@@ -819,8 +815,8 @@ Remova uma política de um documento PDF protegido por política usando a API de
       * Atribuir o nome de usuário dos formulários AEM ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere um documento PDF protegido por política.
 
@@ -962,8 +958,8 @@ Revogue o acesso a um documento de PDF protegido por política usando a API de s
       * Atribuir o nome de usuário dos formulários AEM ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recuperar um documento PDF protegido por política
 
@@ -1094,8 +1090,8 @@ Restaure o acesso a um documento revogado usando a API de segurança de document
       * Atribuir o nome de usuário dos formulários AEM ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere o identificador de licença do documento de PDF revogado.
 
@@ -1228,8 +1224,8 @@ O Inspect é um documento PDF protegido por política usando a API do serviço d
       * Atribuir o nome de usuário dos formulários AEM ao campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere um documento protegido por política para inspecionar.
 
@@ -1383,7 +1379,7 @@ Todos os outros atributos são opcionais.
 
 **Registrar a marca d&#39;água**
 
-Uma nova marca d&#39;água deve ser registrada no serviço de Segurança de documentos antes de ser usada. Depois de registrar uma marca d&#39;água, você pode usá-la nas políticas.
+Uma nova marca d&#39;água deve ser registrada no serviço de Segurança de documentos antes de ser usada. Depois de registrar uma marca d&#39;água, você pode usá-la em políticas.
 
 **Consulte também**
 
@@ -1448,14 +1444,14 @@ Crie uma marca d&#39;água usando a API de segurança de documentos (serviço da
       * Atribuir o nome de usuário dos formulários AEM ao campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Defina os atributos da marca d&#39;água.
 
    * Criar um `WatermarkSpec` ao invocar o `WatermarkSpec` construtor.
    * Defina o nome da marca d&#39;água atribuindo um valor de string ao `WatermarkSpec` do objeto `name` membro de dados.
-   * Defina as marcas d&#39;água `id` atribuindo um valor de string à variável `WatermarkSpec` do objeto `id` membro de dados.
+   * Definir a marca d&#39;água `id` atribuindo um valor de string à variável `WatermarkSpec` do objeto `id` membro de dados.
    * Para cada propriedade de marca d&#39;água a ser definida, crie uma `MyMapOf_xsd_string_To_xsd_anyType_Item` objeto.
    * Defina o valor da chave atribuindo um valor ao `MyMapOf_xsd_string_To_xsd_anyType_Item` do objeto `key` membro de dados (por exemplo, `WaterBackCmd:OPACITY)`.
    * Defina o valor atribuindo um valor ao `MyMapOf_xsd_string_To_xsd_anyType_Item` do objeto `value` membro de dados (por exemplo, `.25`).
@@ -1595,8 +1591,8 @@ Modifique uma marca d&#39;água usando a API de segurança de documentos (servi�
       * Atribuir o nome de usuário dos formulários AEM ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere a marca d&#39;água a ser modificada.
 
@@ -1723,8 +1719,8 @@ Procure eventos usando a API do Rights Management (serviço da Web):
       * Atribuir o nome de usuário dos formulários AEM ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Especifique os eventos a serem pesquisados
 
@@ -2030,8 +2026,7 @@ Aplique uma política a um documento do Word usando a API de segurança de docum
       * Um valor de string que representa o nome canônico do usuário gerente do usuário que é o editor do documento. Esse valor de parâmetro é opcional e pode ser `null` (se este parâmetro for `null`, o valor do parâmetro anterior deverá ser `null`).
       * A `com.adobe.livecycle.rightsmanagement.Locale` que representa a localidade usada para selecionar o modelo do MS Office. Esse valor de parâmetro é opcional e você pode especificar `null`.
 
-      A variável `protectDocument` o método retorna um `RMSecureDocumentResult` objeto que contém o documento do Word protegido por política.
-
+     A variável `protectDocument` o método retorna um `RMSecureDocumentResult` objeto que contém o documento do Word protegido por política.
 
 1. Salve o documento do Word.
 
@@ -2068,8 +2063,8 @@ Aplique uma política a um documento do Word usando a API de segurança de docum
       * Atribuir o nome de usuário dos formulários AEM ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere um documento do Word.
 
@@ -2212,8 +2207,8 @@ Remova uma política de um documento do Word protegido por política usando a AP
       * Atribuir o nome de usuário dos formulários AEM ao campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recuperar um documento do Word protegido por política
 

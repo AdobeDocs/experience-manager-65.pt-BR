@@ -10,7 +10,7 @@ discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 feature: Adaptive Forms
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2111'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Criação de formulários adaptáveis acessíveis{#creating-accessible-adaptive-forms}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 ## Introdução {#introduction}
 
@@ -93,7 +93,7 @@ Depois de aplicar um tema acessível, execute as correções adicionais listadas
 
 1. Defina o texto de acessibilidade personalizado para o componente seletor de datas. Por exemplo, insira sua data de nascimento. Os leitores de tela leem esses textos de acessibilidade personalizados.
 
-1. Use descrição curta em vez de descrição longa para componentes de formulário adaptáveis. Uma descrição longa adiciona o botão de ajuda. Verifique se o formulário adaptável não tem nenhum botão de ajuda.
+1. Use descrição curta em vez de descrição longa para componentes de formulário adaptáveis. Uma descrição longa adiciona o botão de ajuda. Verifique se a área adaptável não tem nenhum botão de ajuda.
 
 1. Adicione um texto de acessibilidade personalizado a todas as células somente leitura das tabelas. Além disso, desative todas as células somente leitura das tabelas.
 
@@ -157,7 +157,7 @@ Os seguintes atalhos de teclado estão disponíveis no AEM Forms.
 
 | Ação | Atalho de teclado |
 |---|---|
-| Mover o cursor para frente em um formulário | Guia |
+| Mover o cursor adiante através de um formulário | Guia |
 | Mover o cursor para trás em um formulário | Shift+Tab |
 | Mover para o próximo painel | Alt+Seta para a Direita |
 | Mover para o painel anterior | Alt+Seta para a esquerda |

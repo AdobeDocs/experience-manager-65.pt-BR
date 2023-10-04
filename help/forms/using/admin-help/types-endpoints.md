@@ -1,16 +1,12 @@
 ---
 title: Tipos de endpoints
-seo-title: Types of endpoints
 description: Saiba mais sobre os diferentes tipos de endpoints do.
-seo-description: Learn about the different types of endpoints.
-uuid: c899245c-14cc-4035-9440-95a5b6c1e47f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 8fe572e0-8a53-4129-940f-3fdb990073fe
 exl-id: 380cab7f-e7f7-4cb7-bd20-ea530a349fac
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%

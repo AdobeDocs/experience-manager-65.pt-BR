@@ -12,10 +12,10 @@ discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1516'
-ht-degree: 1%
+source-wordcount: '1515'
+ht-degree: 2%
 
 ---
 
@@ -40,11 +40,11 @@ A moderação da UGC é útil para reconhecer contribuições positivas, bem com
 
 * [Console de moderação em massa](moderation.md)
 
-   O console Moderação pode ser acessado por administradores e [moderadores da comunidade](/help/communities/users.md) no ambiente público, bem como por administradores no ambiente de autor. Isso é possível quando o conteúdo da comunidade é armazenado em um [armazenamento comum](/help/communities/working-with-srp.md).
+  O console Moderação pode ser acessado por administradores e [moderadores da comunidade](/help/communities/users.md) no ambiente público, bem como por administradores no ambiente de autor. Isso é possível quando o conteúdo da comunidade é armazenado em um [armazenamento comum](/help/communities/working-with-srp.md).
 
 * [Moderação no contexto](in-context.md)
 
-   A moderação no ambiente de publicação pode ser executada por administradores e moderadores da comunidade diretamente na página em que o conteúdo foi publicado.
+  A moderação no ambiente de publicação pode ser executada por administradores e moderadores da comunidade diretamente na página em que o conteúdo foi publicado.
 
 ## Ações de moderação {#moderation-actions}
 
@@ -52,29 +52,29 @@ As ações que podem ser executadas no conteúdo postado (UGC) variam dependendo
 
 * `Admin`
 
-   Um usuário que é membro de [administradores da comunidade](users.md) grupo.
+  Um usuário que é membro de [administradores da comunidade](users.md) grupo.
 
 * `Moderator`
 
-   Um membro de um [moderadores da comunidade](users.md#publishenvironmentusersandgroups) grupo (tem [permissões do moderador](in-context.md#moderatorpermissions)).
+  Um membro de um [moderadores da comunidade](users.md#publishenvironmentusersandgroups) grupo (tem [permissões do moderador](in-context.md#moderatorpermissions)).
 
 * `Creator`
 
-   O usuário que publicou o conteúdo.
+  O usuário que publicou o conteúdo.
 
 * `Member`
 
-   Um usuário conectado sem permissões especiais.
+  Um usuário conectado sem permissões especiais.
 
 * `Visitor`
 
-   Um usuário anônimo.
+  Um usuário anônimo.
 
 <table>
  <tbody>
   <tr>
    <td> </td>
-   <td><strong>Admin.</strong></td>
+   <td><strong>Administrador</strong></td>
    <td><strong>Moderador</strong></td>
    <td><strong>Criador</strong></td>
    <td><strong>Membro</strong></td>
@@ -183,7 +183,7 @@ A ação Fechar/Reabrir pode ser executada por administradores ou moderadores da
 
 ### Sinalizar / Remover Sinalizador {#flag-unflag}
 
-Sinalizar é um meio para qualquer membro conectado, exceto para o criador do conteúdo, para indicar que há um problema com o conteúdo de uma publicação. Depois de sinalizado, um ícone de cancelar sinalizador será exibido, permitindo que o mesmo membro remova o sinalizador do conteúdo.
+Sinalizar é um meio para qualquer membro conectado, exceto para o criador do conteúdo, para indicar que há um problema com o conteúdo de uma publicação. Depois de sinalizado, um ícone de não sinalizar é exibido, permitindo que o mesmo membro remova o sinalizador do conteúdo.
 
 A moderação do contexto interno pode ser configurada para permitir que os membros selecionem um motivo ao sinalizar uma publicação. A lista de motivos de sinalizador selecionáveis pode ser configurada, incluindo se um motivo personalizado pode ou não ser inserido. O motivo do sinalizador é salvo com o UGC, mas o motivo não aciona nenhuma ação específica. Somente o número de sinalizadores aciona uma notificação. O conteúdo sinalizado é anotado como tal, para que os moderadores possam agir nele.
 
@@ -276,19 +276,19 @@ Para configurar o sentimento e as palavras de observação:
 
 * **Watchwords positivas**
 
-   Uma lista separada por vírgulas de palavras que contribuem para um sentimento positivo que substitui os padrões. O padrão é uma lista vazia.
+  Uma lista separada por vírgulas de palavras que contribuem para um sentimento positivo que substitui os padrões. O padrão é uma lista vazia.
 
 * **Watchwords Negativas**
 
-   Uma lista separada por vírgulas de palavras que contribuem para um sentimento negativo que substitui os padrões. O padrão é uma lista vazia.
+  Uma lista separada por vírgulas de palavras que contribuem para um sentimento negativo que substitui os padrões. O padrão é uma lista vazia.
 
 * **Caminho explícito para o nó Watchwords**
 
-   O local de repositório de um nó que contém o padrão `positive` e `negative` propriedades que especificam palavras-chave padrão. O padrão é `/libs/settings/community/watchwords/default`.
+  O local de repositório de um nó que contém o padrão `positive` e `negative` propriedades que especificam palavras-chave padrão. O padrão é `/libs/settings/community/watchwords/default`.
 
 * **Regras de sentimento**
 
-   A localização no repositório das regras para calcular o sentimento com base em palavras de observação positivas e negativas. O padrão é `/libs/cq/workflow/components/workflow/social/sentiments/rules` (no entanto, não há mais nenhum workflow envolvido).
+  A localização no repositório das regras para calcular o sentimento com base em palavras de observação positivas e negativas. O padrão é `/libs/cq/workflow/components/workflow/social/sentiments/rules` (no entanto, não há mais nenhum workflow envolvido).
 
 Veja a seguir um exemplo de uma entrada personalizada para as palavras de observação padrão, quando `Explicit Path to Watchwords Node` está definida como `/libs/settings/community/watchwords/default`.
 

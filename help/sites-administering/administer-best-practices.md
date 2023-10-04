@@ -8,14 +8,14 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '529'
 ht-degree: 7%
 
 ---
 
-# Práticas recomendadas    {#best-practices}
+# Práticas recomendadas{#best-practices}
 
 As práticas recomendadas descrevem como desenvolver, administrar ou usar o AEM da maneira mais eficiente e eficaz possível. Essa lista crescente de tópicos inclui uma variedade de áreas no AEM.
 
@@ -46,7 +46,7 @@ As práticas recomendadas para o Assets, incluindo o recurso do Dynamic Media e 
   <tr>
    <td>Como organizar seu conteúdo (hierarquia de pastas)</td>
    <td><a href="/help/assets/organize-assets.md">Práticas recomendadas para gerenciamento de arquivos</a></td>
-   <td>Grande parte dos perfis de processamento é baseada em pastas, já que vídeo, metadados e processamento de imagens são sempre aplicados a pastas. Este documento de prática recomendada descreve como definir e configurar a hierarquia de pastas, pois ela tem um impacto significativo em como o conteúdo é processado. </td>
+   <td>A maioria dos perfis de processamento é baseada em pastas, já que vídeo, metadados e processamento de imagem são sempre aplicados a pastas. Este documento de prática recomendada descreve como definir e configurar a hierarquia de pastas, pois ela tem um impacto significativo em como o conteúdo é processado. </td>
   </tr>
   <tr>
    <td>Integração do Scene7 e do AEM</td>

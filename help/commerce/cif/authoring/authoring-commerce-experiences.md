@@ -2,9 +2,9 @@
 title: Criação de experiências de comércio
 description: Experiências comerciais de trabalho
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '705'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Os seletores de produto e categoria são caixas de diálogo da interface modal q
 
 ### Seletor de produtos {#product-picker}
 
-Esse seletor oferece navegação pela estrutura do catálogo ou pesquisa de texto completo para encontrar o produto. Os produtos com variação oferecem um ícone de pasta na coluna &quot;Tipo&quot;. Clicar no ícone de pasta abre as variações do produto selecionado.
+Esse seletor pode oferecer navegação pela estrutura do catálogo ou pesquisa de texto completo para encontrar o produto. Os produtos com variação oferecem um ícone de pasta na coluna &quot;Tipo&quot;. Clicar no ícone de pasta abre as variações do produto selecionado.
 
 ![Seletor de produto](/help/commerce/cif/assets/authoring/product-picker.png)
 
@@ -33,13 +33,13 @@ Clicar na categoria principal levará o autor de volta ao nível do produto.
 
 ![Componente de teaser sem seleção](/help/commerce/cif/assets/authoring/teaser_component_without_selection.png)
 
-A caixa de diálogo de configuração deste componente requer um produto. A CIF usa o SKU como o identificador do produto. Os autores podem inserir o SKU manualmente ou clicar no ícone de pasta para abrir o seletor de produtos. Após selecionar e fechar o seletor, a caixa de diálogo de componentes mostra o nome do produto selecionado
+A caixa de diálogo de configuração deste componente requer um produto. O CIF usa o SKU como o identificador do produto. Os autores podem inserir o SKU manualmente ou clicar no ícone de pasta para abrir o seletor de produtos. Após selecionar e fechar o seletor, a caixa de diálogo de componentes mostra o nome do produto selecionado
 
 ![Componente de teaser com seleção](/help/commerce/cif/assets/authoring/teaser_component_with_selection.png)
 
 ### Seletor de Categoria {#category-picker}
 
-Esse seletor oferece navegação pela estrutura do catálogo para localizar a categoria.
+Esse seletor pode oferecer navegação pela estrutura do catálogo para localizar a categoria.
 
 ![Seletor de categoria](/help/commerce/cif/assets/authoring/category-picker.png)
 
@@ -47,7 +47,7 @@ Esse seletor oferece navegação pela estrutura do catálogo para localizar a ca
 
 ![Componente Carrossel sem seleção](/help/commerce/cif/assets/authoring/carousel_component_without_selection.png)
 
-A caixa de diálogo de configuração deste componente requer categorias 1 : n. A CIF usa UID/ID como o identificador da categoria. Os autores podem inserir o UID manualmente ou clicar no ícone de pasta para abrir o seletor de categorias. Depois de selecionar e fechar o seletor, a caixa de diálogo de componentes mostra o nome da categoria selecionada.
+A caixa de diálogo de configuração deste componente requer categorias 1 : n. O CIF usa a UID/ID como o identificador da categoria. Os autores podem inserir o UID manualmente ou clicar no ícone de pasta para abrir o seletor de categorias. Depois de selecionar e fechar o seletor, a caixa de diálogo de componentes mostra o nome da categoria selecionada.
 
 ![Componente Carrossel com seleção](/help/commerce/cif/assets/authoring/carousel_component_with_selection.png)
 
@@ -65,7 +65,7 @@ Analogamente aos ativos, os produtos podem ser colocados em uma página (o que c
 
 ### Adição de links em campos de texto usando o RTE {#rte}
 
-As páginas do catálogo de produtos da CIF são páginas virtuais que são renderizadas em tempo real. Assim, não é possível incorporar hiperlinks como para páginas AEM comuns. A CIF adiciona uma nova ação &quot;Links de comércio&quot; ao RTE (editor de rich text). Essa ação funciona exatamente como a ação normal de &quot;Hiperlink&quot;, mas permite que os autores selecionem um produto ou categoria usando os seletores.
+Páginas de catálogo de produtos CIF são páginas virtuais que são renderizadas em tempo real. Assim, não é possível incorporar hiperlinks como para páginas AEM comuns. O CIF adiciona uma nova ação &quot;Links de comércio&quot; ao RTE (Rich Text Editor, Editor de Rich Text). Essa ação funciona exatamente como a ação normal de &quot;Hiperlink&quot;, mas permite que os autores selecionem um produto ou categoria usando os seletores.
 
 ![RTE](/help/commerce/cif/assets/authoring/RTE.png)
 

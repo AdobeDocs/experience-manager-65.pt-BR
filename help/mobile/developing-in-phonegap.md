@@ -1,15 +1,15 @@
 ---
 title: PhoneGap
-description: Esta página serve como ponto de partida para o desenvolvimento de aplicativos usando o PhoneGap Enterprise com AEM. O AEM se integra ao PhoneGap para que você possa criar aplicativos facilmente usando páginas AEM. O PhoneGap permite que o usuário crie aplicativos de utilitários que permitem que o usuário trabalhe com o conteúdo.
+description: Esta página serve como ponto de partida para o desenvolvimento de aplicativos usando o PhoneGap Enterprise com AEM. O AEM se integra ao PhoneGap para que você possa criar aplicativos facilmente usando páginas AEM. O PhoneGap permite que o usuário crie aplicativos de utilitário que permitem que os usuários trabalhem com o conteúdo.
 uuid: c6ac02fa-d41c-4b57-95d8-171a96540dd6
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: bc61e495-b53b-49c5-99e5-c2e35873e6bd
 exl-id: 9a97e11b-a683-490a-ab7b-158de32984ef
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '248'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 >
 >A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-O AEM se integra ao PhoneGap para que você possa criar aplicativos facilmente usando páginas AEM. O PhoneGap permite que o usuário crie aplicativos de utilitários que permitem que o usuário trabalhe com o conteúdo. A Sincronização de conteúdo permite criar arquivos com versão de páginas para empacotamento com aplicativos.
+O AEM se integra ao PhoneGap para que você possa criar aplicativos facilmente usando páginas AEM. O PhoneGap permite que o usuário crie aplicativos de utilitário que permitem que os usuários trabalhem com o conteúdo. A Sincronização de conteúdo permite criar arquivos com versão de páginas para empacotamento com aplicativos.
 
 >[!NOTE]
 >

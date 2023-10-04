@@ -1,18 +1,14 @@
 ---
 title: Recurso de pesquisa
-seo-title: Search Feature
 description: Adicionando e configurando a Pesquisa em um site de Comunidades
-seo-description: Adding and configuring Search to a Communities site
-uuid: ca633456-911f-447f-881e-653533125d5f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 exl-id: e252b0e5-a2f8-468e-ac8c-951a5b0f2e32
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '455'
 ht-degree: 2%
 
 ---
@@ -57,8 +53,7 @@ Ao adicionar caminhos de pesquisa usando o botão Adicionar item, a pesquisa de 
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
 * **[!UICONTROL Página de resultado]**
-Os resultados aparecerão em uma página separada especificada usando o navegador para selecionar uma página contendo os 
-`Search Results` componente.
+Os resultados aparecerão em uma página separada especificada usando o navegador para selecionar uma página contendo os `Search Results` componente.
 
 ## Resultados da pesquisa {#search-results}
 
@@ -90,11 +85,11 @@ No **[!UICONTROL Configurações dos resultados de pesquisa]** é possível espe
 
 * **[!UICONTROL Resultados de busca por página]**
 
-   Defina o número de tópicos/postagens exibidos por página. O padrão é 10.
+  Defina o número de tópicos/postagens exibidos por página. O padrão é 10.
 
 * **[!UICONTROL Caminhos de pesquisa]**
 
-   Ao adicionar caminhos de pesquisa usando o botão Adicionar item, a pesquisa de conteúdo é limitada.
+  Ao adicionar caminhos de pesquisa usando o botão Adicionar item, a pesquisa de conteúdo é limitada.
 
 ## Informações adicionais {#additional-information}
 

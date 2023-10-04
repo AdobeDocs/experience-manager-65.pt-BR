@@ -1,17 +1,13 @@
 ---
 title: Chamar o AEM Forms usando serviços da Web
-seo-title: Invoking AEM Forms using Web Services
 description: Chame processos AEM Forms usando serviços da Web com suporte total para geração de WSDL.
-seo-description: Invoke AEM Forms processes using web services with full support for WSDL generation.
-uuid: 66bcd010-c476-4b66-831d-a48307d8d67a
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
-discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '9901'
 ht-degree: 0%
@@ -648,7 +644,7 @@ Você pode chamar a variável `MyApplication/EncryptDocument` serviço (que foi 
 1. Crie um assembly cliente Microsoft .NET que consuma o `MyApplication/EncryptDocument` WSDL de serviço.
 1. Crie um projeto Microsoft .NET do cliente. Referencie o assembly do cliente Microsoft .NET no projeto do cliente. Também referenciar `System.Web.Services`.
 1. Usando o assembly cliente Microsoft .NET, crie um `MyApplication_EncryptDocumentService` chamando seu construtor padrão.
-1. Defina o `MyApplication_EncryptDocumentService` do objeto `Credentials` propriedade com um `System.Net.NetworkCredential` objeto. No prazo de `System.Net.NetworkCredential` , especifique um nome de usuário de formulários AEM e a senha correspondente. Defina valores de autenticação para permitir que o aplicativo cliente .NET troque mensagens SOAP com o AEM Forms com êxito.
+1. Defina o `MyApplication_EncryptDocumentService` do objeto `Credentials` propriedade com um `System.Net.NetworkCredential` objeto. No prazo de `System.Net.NetworkCredential` especifique um nome de usuário de formulário AEM e a senha correspondente. Defina valores de autenticação para permitir que o aplicativo cliente .NET troque mensagens SOAP com o AEM Forms com êxito.
 1. Criar um `BLOB` usando seu construtor. A variável `BLOB` objeto é usado para armazenar um documento PDF passado para o `MyApplication/EncryptDocument` processo.
 1. Criar um `System.IO.FileStream` invocando seu construtor. Transmita um valor de string que represente o local do arquivo do documento PDF e o modo no qual o arquivo será aberto.
 1. Crie uma matriz de bytes que armazene o conteúdo da variável `System.IO.FileStream` objeto. Você pode determinar o tamanho da matriz de bytes obtendo o `System.IO.FileStream` do objeto `Length` propriedade.
@@ -964,7 +960,7 @@ Você pode chamar a variável `MyApplication/EncryptDocument` serviço (que foi 
 1. Crie o assembly do cliente .NET.
 1. Referencie o assembly do cliente Microsoft .NET. Crie um projeto Microsoft .NET do cliente. Referencie o assembly do cliente Microsoft .NET no projeto do cliente. Também referenciar `System.Web.Services`.
 1. Usando o assembly cliente Microsoft .NET, crie um `MyApplication_EncryptDocumentService` chamando seu construtor padrão.
-1. Defina o `MyApplication_EncryptDocumentService` do objeto `Credentials` propriedade com um `System.Net.NetworkCredential` objeto. No prazo de `System.Net.NetworkCredential` , especifique um nome de usuário de formulários AEM e a senha correspondente. Defina valores de autenticação para permitir que o aplicativo cliente .NET troque mensagens SOAP com o AEM Forms com êxito.
+1. Defina o `MyApplication_EncryptDocumentService` do objeto `Credentials` propriedade com um `System.Net.NetworkCredential` objeto. No prazo de `System.Net.NetworkCredential` especifique um nome de usuário de formulário AEM e a senha correspondente. Defina valores de autenticação para permitir que o aplicativo cliente .NET troque mensagens SOAP com o AEM Forms com êxito.
 1. Criar um `BLOB` usando seu construtor. A variável `BLOB` objeto é usado para enviar dados para o `MyApplication/EncryptDocument` processo.
 1. Atribua um valor de string ao `BLOB` do objeto `remoteURL` membro de dados que especifica o local URI de um documento PDF a ser passado para o `MyApplication/EncryptDocument`serviço.
 1. Chame o `MyApplication/EncryptDocument` processo chamando o `MyApplication_EncryptDocumentService` do objeto `invoke` e transmitindo o `BLOB` objeto. Esse processo retorna um documento PDF criptografado em um `BLOB` objeto.
@@ -1231,7 +1227,7 @@ Um aplicativo cliente pode recuperar a asserção de qualquer API Authentication
 * Autenticar o usuário usando qualquer um dos métodos de autenticação expostos pela API do AuthenticationManager. Normalmente, é usado o nome de usuário e a senha; no entanto, também é possível usar a autenticação de certificado.
 * Usar o `AuthenticationManager.getAuthResultOnBehalfOfUser` método. Este método permite que um aplicativo cliente obtenha uma `AuthResult` para qualquer usuário do AEM Forms.
 
-um usuário de formulários AEM pode ser autenticado usando um token SAML obtido. Essa asserção SAML (fragmento xml) pode ser enviada como parte do cabeçalho WS-Security com a chamada de serviço da Web para autenticação de usuário. Normalmente, um aplicativo cliente autenticou um usuário, mas não armazenou as credenciais do usuário. (Ou o usuário fez logon nesse cliente por meio de um mecanismo diferente do uso de um nome de usuário e senha.) Nessa situação, o aplicativo cliente tem que invocar o AEM Forms e representar um usuário específico que tem permissão para invocar o AEM Forms.
+Um usuário de formulários AEM pode ser autenticado usando um token SAML obtido. Essa asserção SAML (fragmento xml) pode ser enviada como parte do cabeçalho WS-Security com a chamada de serviço da Web para autenticação de usuário. Normalmente, um aplicativo cliente autenticou um usuário, mas não armazenou as credenciais do usuário. (Ou o usuário fez logon nesse cliente por meio de um mecanismo diferente do uso de um nome de usuário e senha.) Nessa situação, o aplicativo cliente tem que invocar o AEM Forms e representar um usuário específico que tem permissão para invocar o AEM Forms.
 
 Para representar um usuário específico, chame o `AuthenticationManager.getAuthResultOnBehalfOfUser` usando um serviço web. Este método retorna um valor de `AuthResult` instância que contém a asserção SAML para esse usuário.
 

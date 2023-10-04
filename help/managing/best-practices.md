@@ -1,22 +1,22 @@
 ---
 title: Gerenciamento de projetos - Lista de verificação de práticas recomendadas
-description: O gerenciamento de um projeto para implementar o Adobe Experience Manager (AEM) requer planejamento e compreensão. As Listas de verificação do projeto são um conjunto de práticas recomendadas para a entrega do projeto. Elas orientam você em todas as fases do ciclo de vida do projeto e fornecem monitoramento de alto nível do status atual.
+description: O gerenciamento de um projeto para implementar o Adobe Experience Manager (AEM) requer planejamento e compreensão. As Listas de verificação do projeto são um conjunto de práticas recomendadas para a entrega do projeto. Elas orientam você em todas as fases do ciclo de vida do projeto e fornecem monitoramento de alto nível do seu status.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist, introduction
 content-type: reference
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '3251'
+source-wordcount: '3240'
 ht-degree: 1%
 
 ---
 
 # Gerenciamento de projetos - Lista de verificação de práticas recomendadas{#managing-projects-best-practices-checklist}
 
-O gerenciamento de um projeto para implementar o Adobe Experience Manager (AEM) requer planejamento e compreensão para garantir que você esteja ciente dos problemas e das decisões (relacionadas) que devem ser tomadas antes e durante a implementação do seu projeto.
+O gerenciamento de um projeto para implementar o Adobe Experience Manager (AEM) requer planejamento e compreensão, para que você esteja ciente dos problemas e decisões (relacionadas) que devem ser tomados antes e durante a implementação do projeto.
 
 Para ajudá-lo, as práticas recomendadas consistem em:
 
@@ -25,7 +25,7 @@ Para ajudá-lo, as práticas recomendadas consistem em:
    * Define entradas e entregáveis de acordo com fase, marco e persona.
    * Fornece visões gerais automatizadas (qualidade, integridade e integridade) para indicar o progresso e a integridade do projeto.
 
-* Documentação, com base no [lista de verificação](/help/managing/best-practices-checklist.md), que detalha:
+* Documentação baseada no [lista de verificação](/help/managing/best-practices-checklist.md) que detalha:
 
    * [Project Heartbeat](#projectheartbeat) análise.
    * [Status por Função](#status-by-role) visão geral.
@@ -117,7 +117,7 @@ Os quatro fatores:
 
 ### Planejamento {#planning}
 
-O planejamento de seu projeto consolida a preparação. Aqui, você precisa começar a converter as metas e as expectativas em um roteiro bem definido que consiste em tarefas concretas, vinculadas a uma comunicação clara, com revisões rigorosas para medir o progresso.
+O planejamento de seu projeto consolida a preparação. Aqui, você deve começar a converter os objetivos e as expectativas em um roteiro bem definido que consiste em tarefas concretas, vinculadas a uma comunicação clara, com revisões rigorosas para medir o progresso.
 
 #### Etapas {#milestones-1}
 
@@ -135,7 +135,7 @@ O planejamento de seu projeto consolida a preparação. Aqui, você precisa come
 
 * **Comunicação**
 
-  A comunicação é sempre a chave para o sucesso de qualquer projeto. Você precisa se comunicar de forma clara e eficiente para garantir que todos estejam:
+  A comunicação é sempre a chave para o sucesso de qualquer projeto. Comunicar de forma clara e eficiente para garantir que todos estejam:
 
    * Trabalhar para os mesmos objetivos básicos
    * Da mesma base de informações
@@ -195,7 +195,7 @@ O planejamento do desenvolvimento é fundamental para garantir que seu projeto s
 
   Tem como foco:
 
-   * Como eles vão interagir entre si e com os usuários.
+   * Como eles interagem entre si e com os usuários.
    * Os dados a serem consumidos e produzidos pelos aplicativos, em vez de sua estrutura interna.
 
   As definições devem abranger:
@@ -211,8 +211,8 @@ O planejamento do desenvolvimento é fundamental para garantir que seu projeto s
 
   A integração do sistema exige que você planeje (e depois implemente):
 
-   * Como todos os subsistemas e [integrações da solução](/help/sites-administering/integration.md) serão agrupados para funcionar como um sistema coerente
-   * Como qualquer sistema de terceiros será integrado; juntamente com quaisquer considerações especiais, como offline/online, do lado do cliente/do lado do navegador ou tratamento de fallover quando um sistema de terceiros estiver inativo
+   * Como todos os subsistemas e [integrações da solução](/help/sites-administering/integration.md) são agrupados para funcionar como um sistema coerente
+   * Como qualquer sistema de terceiros é integrado; juntamente com considerações especiais, como offline/online, do lado do cliente/do lado do navegador ou tratamento de fallover quando um sistema de terceiros estiver inativo
 
 * **Conceito de teste**
 
@@ -570,7 +570,7 @@ O líder de segurança:
 
 * Autores e usuários finais
 
-   * As pessoas que usarão o sistema para criar e manter o conteúdo do site.
+   * As pessoas que usam o sistema para criar e manter o conteúdo do site.
 
 ## Documentos necessários e materiais de entrega {#required-documents-and-deliverables}
 

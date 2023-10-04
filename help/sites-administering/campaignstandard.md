@@ -1,17 +1,15 @@
 ---
 title: Integração do AEM 6.5 com o Adobe Campaign Standard
 description: Saiba como integrar o AEM 6.5 ao Adobe Campaign Standard.
-uuid: ef31339e-d925-499c-b8fb-c00ad01e38ad
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 5c0fec99-7b1e-45d6-a115-e498d288e9e1
 exl-id: caa43d80-1f38-46fc-a8b9-9485c235c0ca
-source-git-commit: 8db2cadc83b26e04f9931e18c53db3bf0be03796
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1834'
-ht-degree: 17%
+source-wordcount: '1833'
+ht-degree: 18%
 
 ---
 
@@ -34,7 +32,7 @@ A configuração da integração entre o AEM e o Adobe Campaign Standard requer 
 1. [Verifique se ](#resource-type-filter)
 1. [Criar um template do delivery de email específico para AEM no Campaign](#aem-email-delivery-template)
 1. [Configurar a integração do Campaign no AEM](#campaign-integration)
-1. [Configurar replicação para a instância de publicação do AEM](#replication)
+1. [Configurar Replicação para Instância de Publicação AEM](#replication)
 1. [Configurar o externalizador do AEM](#externalizer)
 1. [Configure o ](#campaign-remote-user)
 1. [Configurar a conta externa do AEM no Campaign](#acc-external-user)
@@ -61,7 +59,7 @@ O Adobe Campaign Standard, por padrão, vem com uma `aemserver` usuário que o A
 
    ![usuário aemserver no Adobe Campaign](assets/acs-aemserver-user.png)
 
-1. Toque ou clique **Salvar** para salvar as alterações.
+1. Toque ou clique em **Salvar** para salvar as alterações.
 
 Seu `aemserver` Agora o usuário do tem os direitos necessários para que o AEM possa usá-lo para se comunicar com o Adobe Campaign.
 
@@ -87,7 +85,7 @@ Essa opção vem pré-configurada. No entanto, talvez seja necessário atualizá
 
    ![AEMResourceTypeFilter](assets/acs-aem-resource-type-filter.png)
 
-1. Toque ou clique **Salvar** para salvar as alterações.
+1. Toque ou clique em **Salvar** para salvar as alterações.
 
 Seu `AEMResourceTypeFilter` O agora está configurado para recuperar o conteúdo correto do AEM.
 
@@ -153,9 +151,9 @@ Agora, o AEM pode se comunicar com o Adobe Campaign.
 
 >[!NOTE]
 >
->Certifique-se de que o servidor do Adobe Campaign possa ser acessado pela Internet. O AEM não pode acessar redes privadas.
+>Certifique-se de que o servidor do Adobe Campaign possa ser acessado pela Internet. O AEM não consegue acessar redes privadas.
 
-## Configurar replicação para a instância de publicação do AEM {#replication}
+## Configurar Replicação para Instância de Publicação AEM {#replication}
 
 O conteúdo da campanha é criado por autores de conteúdo na instância de criação do AEM. Normalmente, essa instância só está disponível internamente em sua organização. Para que conteúdo como imagens e ativos seja acessível aos recipients da sua campanha, é necessário publicar esse conteúdo.
 

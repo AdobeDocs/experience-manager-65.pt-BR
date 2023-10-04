@@ -9,9 +9,9 @@ docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
-source-git-commit: d3c40d1452217983b01245ec1c81111a3c4e7295
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2853'
+source-wordcount: '2852'
 ht-degree: 2%
 
 ---
@@ -443,7 +443,7 @@ SocialEvent `topic`= com/adobe/cq/social/calendar
 |---|---|
 | POST | membro cria um evento de calendário |
 | ADICIONAR | comentários de membros em um evento de calendário |
-| ATUALIZAR | comentário ou evento de calendário do membro editado |
+| ATUALIZAR | o comentário ou evento de calendário do membro foi editado |
 | EXCLUIR | o evento de calendário ou comentário do membro foi excluído |
 
 **[Componente de comentários](/help/communities/comments.md)**
@@ -577,7 +577,7 @@ Se o recurso não estiver funcionando como esperado, verifique se os dados foram
    * Selecionar **Multi**
    * Selecionar **Adicionar**
    * Insira `/libs/settings/community/badging/rules/forums-badging`
-   * Selecionar **+**
+   * Selecione **+**
    * Insira `/libs/settings/community/badging/rules/comments-badging`
    * Selecionar **OK**
 
@@ -588,7 +588,7 @@ Se o recurso não estiver funcionando como esperado, verifique se os dados foram
    * Selecionar **Multi**
    * Selecionar **Adicionar**
    * Insira `/libs/settings/community/scoring/rules/forums-scoring`
-   * Selecionar **+**
+   * Selecione **+**
    * Insira `/libs/settings/community/scoring/rules/comments-scoring`
    * Selecionar **OK**
 

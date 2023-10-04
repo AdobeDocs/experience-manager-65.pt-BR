@@ -2,7 +2,7 @@
 title: Edição de um SPA externo no Adobe Experience Manager
 description: Este documento descreve as etapas recomendadas para fazer upload de um SPA independente em uma instância do Adobe Experience Manager, adicionar seções editáveis de conteúdo e ativar a criação.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2440'
 ht-degree: 1%
@@ -237,7 +237,7 @@ A variável `TestPage` é semelhante ao seguinte depois de adicionar o component
 >
 >Assegure a `AEMText` o componente tem sua `resourceType` definido na configuração para habilitar este recurso.
 
-Agora você pode implantar as alterações no AEM seguindo as etapas da seção [Verificar edição de conteúdo de texto no AEM](#verify-text-edit). Um espaço reservado é exibido para o item atualmente não existente `text_20` nó.
+Agora você pode implantar as alterações no AEM seguindo as etapas da seção [Verificar edição de conteúdo de texto no AEM](#verify-text-edit). Um espaço reservado é exibido para o item não existente no momento `text_20` nó.
 
 ![O nó text_20 no aem](assets/external-spa-text20-aem.png)
 

@@ -11,9 +11,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
 role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2479'
+source-wordcount: '2478'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ A imagem a seguir exibe várias configurações de servidor do Formulário AEM e
 **Autor:** Uma instância do autor é um servidor do AEM Forms executado no modo padrão de execução do autor. Pode ser AEM Forms no JEE ou AEM Forms no ambiente OSGi. Destina-se a usuários internos, designers de formulários e comunicações interativas e desenvolvedores. Ela permite as seguintes funcionalidades:
 
 * **Criação e gerenciamento de formulários e comunicações interativas:** Os designers e desenvolvedores podem criar e editar formulários adaptáveis e comunicações interativas, fazer upload de outros tipos de formulários criados externamente, por exemplo, formulários criados no Adobe Forms Designer, e gerenciar esses ativos usando o console do Forms Manager.
-* **Publicação de formulários e comunicações interativas:** Os ativos hospedados em uma instância de autor podem ser publicados em uma instância de publicação para executar operações de tempo de execução. A publicação de ativos usa os recursos de replicação do AEM. O Adobe recomenda que um agente de replicação seja configurado em todas as instâncias do autor para enviar manualmente formulários publicados para instâncias de processamento e outro agente de replicação seja configurado nas instâncias de processamento com o *No recebimento* acionador ativado para replicar automaticamente os formulários recebidos para publicar instâncias.
+* **Publicação de formulários e comunicações interativas:** Os ativos hospedados em uma instância de autor podem ser publicados em uma instância de publicação para executar operações de tempo de execução. A publicação de ativos usa recursos de replicação do AEM. O Adobe recomenda que um agente de replicação seja configurado em todas as instâncias do autor para enviar manualmente formulários publicados para instâncias de processamento e outro agente de replicação seja configurado nas instâncias de processamento com o *No recebimento* acionador ativado para replicar automaticamente os formulários recebidos para publicar instâncias.
 
 **Publicar:** Uma instância de publicação é um servidor do AEM Forms em execução no modo de execução padrão Publicar. As instâncias de publicação destinam-se aos usuários finais de aplicativos baseados em formulário, por exemplo, usuários que acessam um site público e enviam formulários. Ela permite as seguintes funcionalidades:
 

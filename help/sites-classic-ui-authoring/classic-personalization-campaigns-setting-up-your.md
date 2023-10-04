@@ -1,17 +1,13 @@
 ---
 title: Configuração da campanha
-seo-title: Setting up your campaign
 description: A configuração de uma nova campanha exige a criação de uma marca para manter suas campanhas, a criação de uma campanha para manter experiências e, finalmente, a definição das propriedades da nova campanha.
-seo-description: Setting up a new campaign requires creating a brand to hold your campaigns, creating a campaign to hold experiences, and finally defining the properties for your new campaign.
-uuid: 244a150e-7b5e-4eff-bd15-e3b04be6a3e9
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 19ad4751-1d5d-49de-b76b-3501b3e98e62
 docset: aem65
 exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
-source-git-commit: a2623df38bcd683a6a43bdaf3483e11e40ac4a68
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2257'
 ht-degree: 0%
@@ -95,13 +91,13 @@ Configure as propriedades de campanha que controlam o comportamento:
 * **Prioridade:** A prioridade desta campanha em relação a outras campanhas. Quando várias campanhas estão simultaneamente Ativada, a campanha com a maior prioridade controla a experiência do visitante.
 * **Horário ligado e desligado:** Essas propriedades controlam o período em que a campanha controla a experiência do visitante. A propriedade No prazo controla o horário em que a campanha começa a controlar a experiência. A propriedade Momento de desligar controla quando as campanhas param de controlar a experiência.
 * **Imagem:** A imagem que representa a campanha no AEM.
-* **Cloud Services:** As configurações de Cloud Service com as quais a campanha está integrada. (Consulte [Integração com o Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md).)
+* **Cloud Service:** As configurações de Cloud Service com as quais a campanha está integrada. (Consulte [Integração com o Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md).)
 
 * **Adobe Target:** Propriedades que configuram campanhas integradas ao Adobe Target. (Consulte [Integração com o Adobe Target](/help/sites-administering/target.md).)
 
 1. De **Campanhas**, selecione sua marca. No painel direito, selecione sua campanha e clique em **Propriedades**.
 
-   É possível inserir várias propriedades, incluindo uma **Título**, **Descrição** e qualquer **Cloud Services** você quer.
+   É possível inserir várias propriedades, incluindo uma **Título**, **Descrição** e qualquer **Cloud Service** você quer.
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
@@ -224,7 +220,6 @@ Para importar clientes em potencial de uma lista separada por vírgulas:
    >* No Painel, clique em **Importar clientes em potencial** no **Listas** painel
    >* Clique em **Listas** e no **Ferramentas** selecione **Importar clientes em potencial**.
 
-
 1. No **Ferramentas** selecione **Importar** **Clientes potenciais**.
 
 1. Insira as informações conforme descrito em Dados de amostra. Os seguintes campos podem ser importados: email,familyName,givenName,gender,aboutMe,city,country,phoneNumber,postalCode,region,streetAddress
@@ -235,6 +230,8 @@ Para importar clientes em potencial de uma lista separada por vírgulas:
    >
    >
    >`email,givenName,familyName` - se escrito como `givenname`Por exemplo, o sistema não o reconhecerá.
+   >
+   >
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 

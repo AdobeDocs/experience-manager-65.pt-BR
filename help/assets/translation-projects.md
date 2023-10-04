@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1873'
 ht-degree: 15%
 
 ---
@@ -136,7 +136,7 @@ Se você usar essa opção, o fluxo de trabalho de tradução será executado pa
 
    ![chlimage_1-80](assets/chlimage_1-80.png)
 
-1. Clique nas reticências na parte inferior do **Tarefa de tradução** mosaico para exibir os ativos no fluxo de trabalho de tradução. A lista de tarefas de tradução também exibe entradas para metadados e tags de ativos. Essas entradas indicam que metadados e tags de ativos também são traduzidos.
+1. Clique nas reticências na parte inferior da **Tarefa de tradução** mosaico para exibir os ativos no fluxo de trabalho de tradução. A lista de tarefas de tradução também exibe entradas para metadados e tags de ativos. Essas entradas indicam que metadados e tags de ativos também são traduzidos.
 
    >[!NOTE]
    >
@@ -243,7 +243,7 @@ Quando você executa um fluxo de trabalho de tradução para atualizar uma cópi
 1. No [!DNL Assets] selecione um ativo que você já traduziu e clique em **[!UICONTROL Editar]** na barra de ferramentas para abrir o ativo no modo de edição.
 1. Edite o ativo e salve as alterações.
 1. Execute as etapas 2 a 14 do [Adicionar ao projeto de tradução existente](#add-to-existing-translation-project) procedimento para atualizar a cópia de idioma.
-1. Clique nas reticências na parte inferior do **[!UICONTROL Tarefa de tradução]** bloco. Na lista de ativos na lista **[!UICONTROL Tarefa de tradução]** é possível visualizar claramente o local temporário onde a versão traduzida do ativo está armazenada.
+1. Clique nas reticências na parte inferior da **[!UICONTROL Tarefa de tradução]** bloco. Na lista de ativos na lista **[!UICONTROL Tarefa de tradução]** é possível visualizar claramente o local temporário onde a versão traduzida do ativo está armazenada.
 
    ![chlimage_1-101](assets/chlimage_1-101.png)
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1193'
 ht-degree: 1%
 
 ---
@@ -56,7 +56,7 @@ Uma limitação conhecida expõe o conteúdo do site da comunidade para visitant
 
 Para proteger o conteúdo do site da comunidade do acesso de usuários anônimos por meio de conteúdo jcr e json, siga estas etapas:
 
-1. Na instância do AEM Author, acesse https:// hostname:port/editor.html/content/site/sitename.html.
+1. Na instância do autor do AEM, acesse https:// hostname:port/editor.html/content/site/sitename.html.
 
    >[!NOTE]
    >
@@ -79,7 +79,7 @@ Para proteger o conteúdo do site da comunidade do acesso de usuários anônimos
 
 Essa experiência assume que [Aaron McDonald](/help/communities/tutorials.md#demo-users) foi atribuído às funções de [gerente e moderador da comunidade](/help/communities/create-site.md#roles). Caso contrário, retorne ao ambiente de criação para [modificar as configurações do site](/help/communities/sites-console.md#modifying-site-properties) e selecione Aaron McDonald como gerente da comunidade e moderador.
 
-No canto superior direito, selecione `Log in`, e assine com o nome de usuário (aaron.mcdonald@mailinator.com) e a senha (senha). Observe a capacidade de fazer logon com credenciais do Twitter ou da Facebook.
+No canto superior direito, selecione `Log in`, e assine com o nome de usuário (aaron.mcdonald@mailinator.com) e a senha (senha). Observe a capacidade de fazer logon com as credenciais do Twitter ou da Facebook.
 
 ![fazer logon](assets/login.png)
 
@@ -145,7 +145,7 @@ Criar um grupo de referência:
 
    ![creategroup](assets/creategroup.png)
 
-Depois que um novo grupo for criado, **selecionar o novo grupo Esportes** para criar dois grupos (aninhados) dentro dele. Como uma estrutura de site não pode começar com a função groups, depois de abrir o grupo Sports, é necessário selecionar o link Groups:
+Depois que um novo grupo for criado, **selecionar o novo grupo Esportes** para criar dois grupos (aninhados) dentro dele. Como a estrutura de um site não pode começar com a função groups, depois de abrir o grupo Sports, é necessário selecionar o link Groups:
 
 ![grouplink1](assets/grouplink1.png)
 
@@ -196,7 +196,7 @@ Faça logon como Weston McCall (weston.mccall@dodgit.com / password) e navegue a
 
 Exiba a página da Web básica incluída no site selecionando o link Página da Web. As ferramentas de criação padrão do AEM podem ser usadas para adicionar conteúdo a esta página no ambiente de criação.
 
-Por exemplo, vá para **autor** , abra a variável `engage` pasta na [Console de sites das comunidades](/help/communities/sites-console.md), selecione o **Abrir site** ícone para entrar no modo de edição do autor. Em seguida, selecione o modo de visualização para selecionar a `Web Page` e selecione o modo de edição para adicionar os componentes Título e Texto. Por último, publique novamente apenas a página ou todo o site.
+Por exemplo, vá para **autor** instância, abra a variável `engage` pasta na [Console de sites das comunidades](/help/communities/sites-console.md), selecione o **Abrir site** ícone para entrar no modo de edição do autor. Em seguida, selecione o modo de visualização para selecionar a `Web Page` e selecione o modo de edição para adicionar os componentes Título e Texto. Por último, publique novamente apenas a página ou todo o site.
 
 ![webpagelink](assets/webpagelink.png)
 
@@ -212,8 +212,8 @@ Use o botão Voltar do navegador para retornar ao site publicado. A maioria dos 
 
 Depois de fazer logout, é possível criar um novo registro de usuário.
 
-* Selecionar `Log In`
-* Selecionar `Sign up for a new account`
+* Selecione `Log In`
+* Selecione `Sign up for a new account`
 
 ![registro](assets/registration.png)
 

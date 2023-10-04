@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: fbcdea8a-72e9-431b-9c32-dc02d4cdb9c8
 exl-id: d989e235-5993-4738-8523-5b9a5f6bf712
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '487'
 ht-degree: 1%
 
 ---
@@ -23,17 +23,17 @@ ht-degree: 1%
 >
 >A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-O AEM se integra ao PhoneGap para que você possa criar aplicativos facilmente usando páginas AEM. O PhoneGap permite que o usuário crie aplicativos de utilitários que permitem que o usuário trabalhe com o conteúdo. A Sincronização de conteúdo permite criar arquivos com versão de páginas para empacotamento com aplicativos.
+O AEM se integra ao PhoneGap para que você possa criar aplicativos facilmente usando páginas AEM. O PhoneGap permite que o usuário crie aplicativos de utilitário que permitem que os usuários trabalhem com o conteúdo. A Sincronização de conteúdo permite criar arquivos com versão de páginas para empacotamento com aplicativos.
 
 Normalmente, um ***Administrador AEM*** O é responsável por adicionar um novo aplicativo ao catálogo do AEM Mobile, criando um novo aplicativo usando o assistente de criação ou importando um aplicativo existente.
 
-Aqui, um ***AEM Author*** (ou *Profissional de marketing*) agora pode usar os modelos e componentes prontos para uso para adicionar e editar páginas, arrastar e soltar componentes e adicionar mídia de todos os tipos no DAM, incluindo imagens, vídeos e fragmentos de texto (fragmentos de conteúdo).
+Aqui, um ***Autor do AEM*** (ou *Profissional de marketing*) agora pode usar os modelos e componentes prontos para uso para adicionar e editar páginas, arrastar e soltar componentes e adicionar mídia de todos os tipos no DAM, incluindo imagens, vídeos e fragmentos de texto (fragmentos de conteúdo).
 
-O verdadeiro poder do AEM Mobile é que um *experiente* ***Desenvolvedor de AEM*** pode estender e criar modelos e componentes personalizados da Web para habilitar a *AEM Author* para criar experiências móveis atraentes e atraentes. Esses modelos e componentes não são apenas otimizados para o mundo do aplicativo móvel, mas também se comunicam com o dispositivo e com o servidor AEM (qualquer servidor remoto) para pontos finais de serviço omnicanal.
+O verdadeiro poder do AEM Mobile é que um *experiente* ***Desenvolvedor de AEM*** pode estender e criar modelos e componentes personalizados da Web para habilitar a *Autor do AEM* para criar experiências móveis atraentes e atraentes. Esses modelos e componentes não são apenas otimizados para o mundo do aplicativo móvel, mas também se comunicam com o dispositivo e com o servidor AEM (qualquer servidor remoto) para pontos finais de serviço omnicanal.
 
 >[!NOTE]
 >
->Quando a variável *AEM Author* acredita que o aplicativo está pronto, primeiro as partes interessadas podem baixá-lo com **[Verificação de Adobe](/help/mobile/phonegap-mobile-quickstart.md)** (disponível na AppStore e na PlayStore) para revisão e aprovação. Depois de receber a luz verde, eles podem lançar esse conteúdo novo ou atualizado diretamente para os usuários por meio do painel de gerenciamento de lançamento de conteúdo do AEM Mobile ContentSync. Uma pessoa pode assumir qualquer número de funções, depende de você e de suas políticas de governança.
+>Quando a variável *Autor do AEM* acredita que o aplicativo está pronto, primeiro as partes interessadas podem baixá-lo com **[Verificação de Adobe](/help/mobile/phonegap-mobile-quickstart.md)** (disponível na AppStore e na PlayStore) para revisão e aprovação. Depois de receber a luz verde, eles podem lançar esse conteúdo novo ou atualizado diretamente para os usuários por meio do painel de gerenciamento de lançamento de conteúdo do AEM Mobile ContentSync. Uma pessoa pode assumir qualquer número de funções, depende de você e de suas políticas de governança.
 
 ## Pré-requisitos {#prerequisites}
 

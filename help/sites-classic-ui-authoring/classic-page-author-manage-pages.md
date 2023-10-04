@@ -1,17 +1,15 @@
 ---
 title: Criação e organização de páginas
 description: Esta seção descreve como criar e gerenciar páginas com AEM para depois criar o conteúdo nessas páginas.
-uuid: 47ce137a-7a85-4b79-b4e0-fdf08a9e77bd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1909'
-ht-degree: 21%
+source-wordcount: '1906'
+ht-degree: 20%
 
 ---
 
@@ -320,7 +318,7 @@ Para mover ou renomear uma página:
 
 ### Bloquear uma página   {#locking-a-page}
 
-É possível [bloquear/desbloquear uma página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page) a partir de um console ou ao editar uma página individual. As informações sobre se uma página está bloqueada também são exibidas em ambos os locais.
+É possível [bloquear/desbloquear uma página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page) a partir de um console ou ao editar uma página individual. As informações sobre páginas bloqueadas também são mostradas em ambos os locais.
 
 ### Criação de uma nova pasta {#creating-a-new-folder}
 

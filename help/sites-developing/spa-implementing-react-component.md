@@ -7,10 +7,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 6%
+source-wordcount: '551'
+ht-degree: 10%
 
 ---
 
@@ -35,7 +35,7 @@ Você deve conhecer o [estrutura de um pedido de AEM para SPA](/help/sites-devel
 >[!CAUTION]
 >Este documento usa o [Aplicativo We.Retail Journal](https://github.com/adobe/aem-sample-we-retail-journal) apenas para fins de demonstração. Não o use para nenhum trabalho de projeto.
 >
->Qualquer projeto AEM deve usar o [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que oferece suporte a projetos SPA usando o React ou o Angular e usa o SDK do SPA.
+>Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que aceita projetos SPA que usam o React ou o Angular e utiliza o SDK de SPA.
 
 ## O componente de Tempo {#the-weather-component}
 
@@ -59,7 +59,7 @@ A alteração é persistente e o componente se atualiza automaticamente com os n
 
 ### Implementação do componente de tempo {#weather-component-implementation}
 
-O componente meteorológico é baseado em um componente do React disponível publicamente, chamado [React Open Weather](https://www.npmjs.com/package/react-open-weather). Ele foi adaptado para funcionar como um componente no aplicativo de SPA de amostra We.Retail Journal.
+A componente meteorológica é baseada em um componente do React disponível publicamente, chamado [React Open Weather](https://www.npmjs.com/package/react-open-weather). Ele foi adaptado para funcionar como um componente no aplicativo de SPA de amostra We.Retail Journal.
 
 A seguir estão trechos da documentação do NPM sobre o uso do componente de tempo aberto do React.
 

@@ -1,16 +1,12 @@
 ---
 title: Como usar a ferramenta VLT
-seo-title: How to use the VLT Tool
 description: A ferramenta Jackrabbit FileVault (VLT) é desenvolvida pela Apache Foundation, que mapeia o conteúdo de uma instância Jackrabbit/AEM para o seu sistema de arquivos
-seo-description: The Jackrabbit FileVault tool (VLT) is developed by The Apache Foundation that maps the content of a Jackrabbit/AEM instance to your file system
-uuid: 579e7785-8b50-4366-b562-8e79b6451464
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2715'
 ht-degree: 1%
@@ -746,7 +742,7 @@ vlt rcp http://localhost:4502/crx/-/jcr:root/content  https://admin:admin@localh
 
 ### Sincronizar {#sync}
 
-Permite controlar o serviço de sincronização do Vault. Sem nenhum argumento, este comando tenta colocar o diretório de trabalho atual sob controle de sincronização. Se for executado em uma finalização de verificação vlt, ele usará o respectivo filtro e host para configurar a sincronização. Se for executado fora de um check-out vlt, ele registrará a pasta atual para sincronização somente se o diretório estiver vazio.
+Permite controlar o serviço de sincronização do Vault. Sem nenhum argumento, este comando tenta colocar o diretório de trabalho atual sob controle de sincronização. Se executado em uma finalização de compra do vlt, ele usa o respectivo filtro e host para configurar a sincronização. Se for executado fora de um check-out vlt, ele registrará a pasta atual para sincronização somente se o diretório estiver vazio.
 
 #### Sintaxe {#syntax-18}
 

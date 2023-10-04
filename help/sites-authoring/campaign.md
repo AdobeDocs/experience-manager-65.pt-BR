@@ -1,18 +1,14 @@
 ---
 title: Trabalho com o Adobe Campaign Classic e Adobe Campaign Standard
-seo-title: Working with Adobe Campaign 6.1 and Adobe Campaign Standard
 description: Você pode criar conteúdo de email no AEM e processá-lo em emails do Adobe Campaign
-seo-description: You can create email content in AEM and process it in Adobe Campaign emails
-uuid: 23195f0b-71c0-4554-8c8b-b0e7704d71d7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2755'
+source-wordcount: '2753'
 ht-degree: 0%
 
 ---
@@ -149,7 +145,7 @@ Para editar conteúdo de e-mail:
 
 Ao editar seu conteúdo, você pode inserir:
 
-* Campos de contexto do Adobe Campaign. Esses são campos que você pode inserir no texto que serão adaptados de acordo com os dados do recipient (por exemplo, nome, sobrenome ou quaisquer dados da dimensão de destino).
+* Campos de contexto do Adobe Campaign. São campos que você pode inserir no texto que se adaptam de acordo com os dados do recipient (por exemplo, nome, sobrenome ou quaisquer dados da dimensão de destino).
 * Blocos de personalização do Adobe Campaign. Esses são blocos de conteúdo predefinido que não estão relacionados aos dados do recipient, como um logotipo de marca ou um link para uma mirror page.
 
 Consulte [Componentes do Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) para obter uma descrição completa dos componentes do Campaign.

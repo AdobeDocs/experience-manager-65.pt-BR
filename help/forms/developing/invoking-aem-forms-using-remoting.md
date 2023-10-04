@@ -1,17 +1,13 @@
 ---
 title: Chamar o AEM Forms usando comunicação remota
-seo-title: Invoking AEM Forms using Remoting
 description: Use o Remoting para chamar um processo do AEM Forms para chamar processos criados no Workbench. Você pode chamar um processo do AEM Forms de um aplicativo cliente criado com o Flex.
-seo-description: Use Remoting to invoke an AEM Forms process to invoke processes created in Workbench. You can invoke a AEM Forms process from a client application built with Flex.
-uuid: 592d1519-c38b-4b33-8cf3-61e2bff81501
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
-discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '4597'
 ht-degree: 0%

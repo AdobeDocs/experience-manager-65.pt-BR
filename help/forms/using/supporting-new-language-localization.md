@@ -1,20 +1,16 @@
 ---
 title: Suporte a novos códigos de idiomas para localização de formulários adaptáveis
-seo-title: Supporting new locales for adaptive forms localization
 description: O AEM Forms permite adicionar novas localidades para localizar formulários adaptáveis. Os locais suportados por padrão são inglês, francês, alemão e japonês.
-seo-description: AEM Forms lets you add new locales for localizing adaptive forms. The supported locales by default are English, French, German, and Japanese.
-uuid: 7f9fab6b-8d93-46bb-8c7c-7b723d5159ea
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
-discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 feature: Adaptive Forms
 role: Admin
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '813'
 ht-degree: 2%
 
 ---
@@ -43,7 +39,7 @@ Há dois métodos para identificar o local do formulário adaptável. Quando um 
 * observando os seguintes parâmetros na ordem especificada:
 
    * Parâmetro de solicitação `afAcceptLang`
-Para substituir a localidade do navegador dos usuários, você pode transmitir a `afAcceptLang` parâmetro de solicitação para forçar a localidade. Por exemplo, a URL a seguir forçará a renderização do formulário no local japonês:
+Para substituir a localidade do navegador dos usuários, você pode transmitir a `afAcceptLang` parâmetro de solicitação para forçar a localidade. Por exemplo, a URL a seguir foi forçada a renderizar o formulário no local japonês:
      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
    * A localidade do navegador definida para o usuário, que é especificada na solicitação usando o `Accept-Language` cabeçalho.

@@ -1,16 +1,12 @@
 ---
 title: Gerenciamento de credenciais HSM
-seo-title: Managing HSM credentials
 description: Saiba como gerenciar credenciais HSM.
-seo-description: Learn how to manage HSM credentials.
-uuid: 30ddcd4a-f771-44d5-bdef-4826adcd0c44
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: e5f17ba8-8aab-4449-811a-20ad33de1c6f
 exl-id: facbeab2-de95-4778-894c-faa771d3391e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 0%
@@ -56,7 +52,7 @@ As assinaturas digitais de formulários AEM podem usar credenciais armazenadas e
    * **Nome do token:** Corresponde a um nome de partição (por exemplo, HSMPART1).
    * **ID do Slot:** A ID do slot é um número inteiro que corresponde ao slot, que por sua vez corresponde a uma partição. Por exemplo, o cliente (servidor de formulários) registrou-se primeiro com a partição HSMPART1. Isso mapeia o slot 1 para a partição HSMPART1 deste cliente. Como HSMPART1 é a primeira partição registrada, a ID do Slot é 1 e você definiria Informações do Slot como 1.
 
-      A ID do slot é definida cliente por cliente. Se você registrou uma segunda máquina em uma partição diferente (por exemplo, HSMPART2 no mesmo dispositivo HSM), o slot 1 seria associado à partição HSMPART2 desse cliente.
+     A ID do slot é definida cliente por cliente. Se você registrou uma segunda máquina em uma partição diferente (por exemplo, HSMPART2 no mesmo dispositivo HSM), o slot 1 seria associado à partição HSMPART2 desse cliente.
 
    * **Índice de Slot:** Se você selecionar Índice de slot, defina as Informações do slot para um número inteiro que corresponda ao slot. Este é um índice baseado em 0, o que significa que se o cliente for registrado primeiro com a partição HSMPART1, o slot 1 será mapeado para o HSMPART1 deste cliente. Como HSMPART1 é a primeira partição registrada, o Índice de Slot é 0.
 

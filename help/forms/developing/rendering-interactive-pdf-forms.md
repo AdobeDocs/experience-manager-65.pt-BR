@@ -1,18 +1,14 @@
 ---
 title: Renderização de PDF forms interativos
-seo-title: Rendering Interactive PDF Forms
 description: Use o serviço Forms para renderizar PDF forms interativos em dispositivos clientes, geralmente navegadores da Web, para coletar informações dos usuários. Você pode usar o serviço Forms para renderizar formulários interativos usando a API Java e a API do serviço da Web.
-seo-description: Use the Forms service to render interactive PDF forms to client devices, typically web browsers, to collect information from users. You can use Forms service to render interactive forms using the Java API and Web Service API.
-uuid: df2a4dc8-f19e-49de-850f-85a204102631
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 3cb307ec-9b7b-4f03-b860-48553ccee746
 role: Developer
 exl-id: d9f32939-c2c0-4531-b15e-f63941c289e3
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2487'
 ht-degree: 0%
@@ -70,7 +66,7 @@ A tabela a seguir descreve as etapas deste diagrama.
 
 **Formulário de empréstimo**
 
-Este formulário de empréstimo interativo é renderizado pela amostra do aplicativo de empréstimo `GetLoanForm` Servlet Java.
+Este formulário de empréstimo interativo é renderizado pelo aplicativo de empréstimo de amostra do `GetLoanForm` Servlet Java.
 
 ![ri_ri_loanform](assets/ri_ri_loanform.png)
 
@@ -80,7 +76,7 @@ Este formulário é renderizado pela amostra do aplicativo de empréstimo `Handl
 
 ![ri_ri_confirm](assets/ri_ri_confirm.png)
 
-A variável `HandleData` O Java Servlet preenche esse formulário com o nome e o sobrenome do usuário, bem como a quantidade. Depois que o formulário é pré-preenchido, ele é enviado para o navegador da Web do cliente. (Consulte [Pré-preenchimento do Forms com layouts fluíveis](/help/forms/developing/prepopulating-forms-flowable-layouts.md))
+A variável `HandleData` O Java Servlet preenche este formulário com o nome e sobrenome do usuário, bem como a quantidade. Depois que o formulário é pré-preenchido, ele é enviado para o navegador da Web do cliente. (Consulte [Pré-preenchimento do Forms com layouts fluíveis](/help/forms/developing/prepopulating-forms-flowable-layouts.md))
 
 **Servlets Java**
 
@@ -206,6 +202,7 @@ Renderize um formulário PDF interativo usando a API do Forms (Java):
    * Chame o `java.util.HashMap` do objeto `put` para cada arquivo a ser anexado ao formulário renderizado. Transmita os seguintes valores para este método:
 
       * Um valor de string que especifica o nome do anexo de arquivo, incluindo a extensão do nome do arquivo.
+
    * A `com.adobe.idp.Document` objeto que contém o anexo de arquivo.
 
    >[!NOTE]
@@ -226,7 +223,7 @@ Renderize um formulário PDF interativo usando a API do Forms (Java):
 
 1. Gravar o fluxo de dados do formulário no navegador Web cliente
 
-   * Criar um `com.adobe.idp.Document` ao invocar o `FormsResult` object&#39;s `getOutputContent` método.
+   * Criar um `com.adobe.idp.Document` ao invocar o `FormsResult` do objeto `getOutputContent` método.
    * Obter o tipo de conteúdo do `com.adobe.idp.Document` ao invocar seu `getContentType` método.
    * Defina o `javax.servlet.http.HttpServletResponse` tipo de conteúdo do objeto chamando seu `setContentType` e transmitindo o tipo de conteúdo do `com.adobe.idp.Document` objeto.
    * Criar um `javax.servlet.ServletOutputStream` objeto usado para gravar o fluxo de dados de formulário no navegador da web cliente, chamando o `javax.servlet.http.HttpServletResponse` do objeto `getOutputStream` método.
@@ -260,6 +257,7 @@ Renderize um formulário PDF interativo usando a API (serviço da Web) do Forms:
    * Chame o `java.util.HashMap` do objeto `put` para cada arquivo a ser anexado ao formulário renderizado. Transmita os seguintes valores para este método:
 
       * Um valor de string que especifica o nome do anexo de arquivo, incluindo a extensão do nome do arquivo
+
    * A `BLOB` objeto que contém o anexo de arquivo
 
    >[!NOTE]
