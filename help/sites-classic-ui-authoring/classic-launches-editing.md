@@ -1,6 +1,6 @@
 ---
 title: Edição de inicializações
-description: Quando uma inicialização é criada para uma página (ou conjunto de páginas), é possível editar o conteúdo na cópia de inicialização da(s) página(s).
+description: Quando um lançamento é criado para uma página (ou conjunto de páginas), é possível editar o conteúdo na cópia de lançamento da(s) página(s).
 uuid: 3a310eeb-553d-4d2b-98b5-c5bc523b2aca
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 21776f42-cd81-459d-b4b9-1d92e0aec164
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '291'
-ht-degree: 3%
+ht-degree: 27%
 
 ---
 
@@ -20,10 +20,10 @@ ht-degree: 3%
 
 ## Editar páginas de lançamento {#editing-launch-pages}
 
-Quando uma inicialização é criada para uma página (ou conjunto de páginas), é possível editar o conteúdo na cópia de inicialização da(s) página(s).
+Quando um lançamento é criado para uma página (ou conjunto de páginas), é possível editar o conteúdo na cópia de lançamento da(s) página(s).
 
 1. Abra a página para edição.
-1. No Sidekick, selecione o **Controle de versão** e expanda a guia **Lançamentos** grupo. O título do lançamento que está sendo editado no momento usa uma fonte em negrito.
+1. No Sidekick, selecione a variável **Controle de versão** e expanda a guia **Lançamentos** grupo. O título do lançamento que está sendo editado no momento usa uma fonte em negrito.
 
    ![chlimage_1-13](assets/chlimage_1-13.jpeg)
 
@@ -34,7 +34,7 @@ Quando uma inicialização é criada para uma página (ou conjunto de páginas),
    >
    >Você pode usar o **Página** guia do sidekick para executar ações como **Criar página secundária**, entre outros.
 
-## Editar uma configuração de inicialização {#editing-a-launch-configuration}
+## Editar uma configuração de lançamento {#editing-a-launch-configuration}
 
 Depois de criar um lançamento, é possível alterar o nome do lançamento e a data do lançamento. Você também pode especificar uma imagem para associar ao lançamento.
 
@@ -48,10 +48,9 @@ Depois de criar um lançamento, é possível alterar o nome do lançamento e a d
       * **Data de ativação**: é equivalente à data de lançamento
       * **Pronto para produção**
 
-      Consulte [Inicializações - a ordem dos eventos](/help/sites-authoring/launches.md#launches-the-order-of-events) para obter informações sobre a finalidade e interação desses campos.
+     Consulte [Inicializações - a ordem dos eventos](/help/sites-authoring/launches.md#launches-the-order-of-events) para obter informações sobre a finalidade e interação desses campos.
 
    * No **Imagem** é possível fazer upload de um arquivo de imagem.
-
 
 1. Clique em **Salvar**.
 

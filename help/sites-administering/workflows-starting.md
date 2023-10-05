@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 exl-id: 84a1964c-4121-4763-b946-9eee6093747d
-source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 6%
@@ -39,7 +39,6 @@ Ao administrar workflows, você pode iniciá-los usando vários métodos:
 >* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [Projetos de tradução](/help/sites-administering/tc-manage.md)
 >
-
 
 ## Modelos do fluxo de trabalho {#workflow-models}
 
@@ -101,15 +100,16 @@ Um pacote de workflow:
 
    * **Carga**
 
-      Pode ser uma página, nó, ativo, pacote, entre outros recursos.
+     Pode ser uma página, nó, ativo, pacote, entre outros recursos.
 
    * **Título**
 
-      Um título opcional para ajudar a identificar esta instância.
+     Um título opcional para ajudar a identificar esta instância.
 
    * **Comentar**
 
-      Um comentário opcional para ajudar a indicar detalhes desta instância.
+     Um comentário opcional para ajudar a indicar detalhes desta instância.
+
    ![wf-104](assets/wf-104.png)
 
 ## Criação de uma configuração do iniciador {#creating-a-launcher-configuration}
@@ -121,32 +121,33 @@ Um pacote de workflow:
 
    * **Tipo de evento**
 
-      O tipo de evento que iniciará o fluxo de trabalho:
+     O tipo de evento que iniciará o fluxo de trabalho:
 
       * Criado
       * Modificado
       * Removido
+
    * **Nodetype**
 
-      O tipo de nó ao qual o inicializador do fluxo de trabalho se aplica.
+     O tipo de nó ao qual o inicializador do fluxo de trabalho se aplica.
 
    * **Caminho**
 
-      O caminho ao qual o inicializador do fluxo de trabalho se aplica.
+     O caminho ao qual o inicializador do fluxo de trabalho se aplica.
 
    * **Modo(s) de execução**
 
-      O tipo de servidor ao qual o inicializador do fluxo de trabalho se aplica. Selecionar **Autor**, **Publish** ou **Autor e publicação**.
+     O tipo de servidor ao qual o inicializador do fluxo de trabalho se aplica. Selecionar **Autor**, **Publish** ou **Autor e publicação**.
 
    * **Condições**
 
-      Uma lista de condições para valores de nó que, quando avaliados, determinam se o workflow é iniciado. Por exemplo, a seguinte condição faz com que o fluxo de trabalho seja iniciado quando o nó tem um nome de propriedade com o valor User:
+     Uma lista de condições para valores de nó que, quando avaliados, determinam se o workflow é iniciado. Por exemplo, a seguinte condição faz com que o fluxo de trabalho seja iniciado quando o nó tem um nome de propriedade com o valor User:
 
-      name==Usuário
+     name==Usuário
 
    * **Recursos**
 
-      Uma lista de recursos a serem habilitados. Selecione os recursos necessários usando o seletor da lista suspensa.
+     Uma lista de recursos a serem habilitados. Selecione os recursos necessários usando o seletor da lista suspensa.
 
    * **Recursos desativados**
 
@@ -154,38 +155,35 @@ Um pacote de workflow:
 
    * **Modelo de fluxo de trabalho**
 
-      O fluxo de trabalho a ser iniciado quando o Tipo de evento ocorrer no Tipo de nó e/ou Caminho na Condição definida.
+     O fluxo de trabalho a ser iniciado quando o Tipo de evento ocorrer no Tipo de nó e/ou Caminho na Condição definida.
 
    * **Descrição**
 
-      Seu próprio texto para descrever e identificar a configuração do iniciador.
+     Seu próprio texto para descrever e identificar a configuração do iniciador.
 
    * **Ativar**
 
-      Controla se o inicializador do fluxo de trabalho está ativado:
+     Controla se o inicializador do fluxo de trabalho está ativado:
 
       * Selecionar **Ativar** para iniciar workflows quando as propriedades de configuração são satisfeitas.
       * Selecionar **Desativar** quando o workflow não deve ser executado (nem mesmo quando as propriedades de configuração são satisfeitas).
+
    * **Excluir lista**
 
-      Especifica todos os eventos JCR a serem excluídos (ou seja, ignorados) ao determinar se um fluxo de trabalho deve ser acionado.
+     Especifica todos os eventos JCR a serem excluídos (ou seja, ignorados) ao determinar se um fluxo de trabalho deve ser acionado.
 
-      Esta propriedade do inicializador é uma lista de itens separados por vírgulas: &quot;
+     Esta propriedade do inicializador é uma lista de itens separados por vírgulas: &quot;
 
       * `property-name` ignorar qualquer `jcr` evento que disparou no nome de propriedade especificado. &quot;
-      * `event-user-data:<*someValue*>` ignora qualquer evento que contenha a variável `*<someValue*`> `user-data` definido por meio do [ `ObservationManager` API]https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String.
+      * `event-user-data:<*someValue*>` ignora qualquer evento que contenha a variável `*<someValue*`> `user-data` definido por meio do [`ObservationManager` API]https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String.
 
-      Por exemplo:
+     Por exemplo:
 
-      `jcr:lastModified,dc:modified,dc:format,jcr:lastModifiedBy,imageMap,event-user-data:changedByWorkflowProcess`
+     `jcr:lastModified,dc:modified,dc:format,jcr:lastModifiedBy,imageMap,event-user-data:changedByWorkflowProcess`
 
-      Esse recurso pode ser usado para ignorar qualquer alteração acionada por outro processo de fluxo de trabalho adicionando o item de exclusão:
+     Esse recurso pode ser usado para ignorar qualquer alteração acionada por outro processo de fluxo de trabalho adicionando o item de exclusão:
 
-      `event-user-data:changedByWorkflowProcess`
-
-
-
-
+     `event-user-data:changedByWorkflowProcess`
 
 1. Selecionar **Criar**, para criar o inicializador e retornar ao console.
 

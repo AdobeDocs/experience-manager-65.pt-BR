@@ -1,5 +1,5 @@
 ---
-title: Grupos de usuários fechados no AEM
+title: Grupos de Usuários Fechados no AEM
 description: Saiba mais sobre Grupos de usuários fechados no AEM.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,14 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '6845'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Grupos de usuários fechados no AEM{#closed-user-groups-in-aem}
+# Grupos de Usuários Fechados no AEM{#closed-user-groups-in-aem}
 
 ## Introdução {#introduction}
 
@@ -81,7 +81,7 @@ A avaliação de permissão para políticas CUG e a interação com o modelo de 
 As seguintes características se aplicam à avaliação de permissão associada ao modelo de autorização criado para manipular e avaliar as políticas CUG:
 
 * Ela só lida com permissões de leitura para nós e propriedades regulares, mas não lida com o conteúdo de controle de acesso
-* Ele não lida com permissões de gravação nem com qualquer tipo de permissões necessárias para modificação de conteúdo JCR protegido (controle de acesso, informações de tipo de nó, controle de versão, bloqueio ou gerenciamento de usuários, entre outros); essas permissões não são afetadas por uma política CUG e não serão avaliadas pelo modelo de autorização associado. A concessão ou não dessas permissões depende dos outros modelos configurados na configuração de segurança.
+* Ele não lida com permissões de gravação nem com qualquer tipo de permissões necessárias para a modificação de conteúdo JCR protegido (controle de acesso, informações de tipo de nó, controle de versão, bloqueio ou gerenciamento de usuários, entre outros); essas permissões não são afetadas por uma política CUG e não serão avaliadas pelo modelo de autorização associado. A concessão ou não dessas permissões depende dos outros modelos configurados na configuração de segurança.
 
 O efeito de uma única política CUG na avaliação da permissão pode ser resumido da seguinte maneira:
 

@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '761'
-ht-degree: 31%
+ht-degree: 29%
 
 ---
 
@@ -176,7 +176,7 @@ As propriedades são distribuídas por várias guias:
 
 ### Estrutura do site  {#site-structure}
 
-* Forneça links para páginas que oferecem funcionalidade em todo o site, como a **Página de inscrição**, a **Página offline**, entre outras.
+* Forneça links para páginas que oferecem funcionalidade em todo o site, como **Página de inscrição**, **Página offline**, entre outros.
 
 ## Editar as propriedades da página {#editing-page-properties-2}
 

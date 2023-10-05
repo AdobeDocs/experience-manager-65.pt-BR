@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '1920'
 ht-degree: 1%
@@ -56,7 +56,7 @@ O AEM pode permitir que vários threads de fluxo de trabalho sejam executados si
 
 Nos casos em que os workflows que estão sendo executados exigem recursos do sistema, isso pode significar que pouco resta para o AEM usar para outras tarefas, como renderizar a interface do usuário de criação. Como resultado, o sistema pode ficar lento durante atividades como carregamento de imagens em massa.
 
-Para resolver esse problema, o Adobe recomenda configurar o número de **Máximo de Trabalhos Paralelos** ser de metade a três quartos do número de núcleos de processador no sistema. Isso deve permitir capacidade suficiente para que o sistema permaneça responsivo ao processar esses workflows.
+Para resolver esse problema, o Adobe recomenda configurar o número de **Máximo de Trabalhos Paralelos** ser de metade a três quartos do número de núcleos de processadores no sistema. Isso deve permitir capacidade suficiente para que o sistema permaneça responsivo ao processar esses workflows.
 
 Para configurar **Máximo de Trabalhos Paralelos**, é possível:
 
@@ -100,35 +100,34 @@ Os modelos de fluxo de trabalho são armazenados no repositório de acordo com o
 
 * Os designs de workflow prontos para uso são mantidos no seguinte caminho:
 
-   `/libs/settings/workflow/models/`
+  `/libs/settings/workflow/models/`
 
-   >[!CAUTION]
-   >
-   >Não:
-   >
-   >* coloque qualquer um dos modelos de fluxo de trabalho personalizados nesta pasta
-   >* editar qualquer item em `/libs`
-
-   >
-   >Como qualquer alteração pode ser substituída na atualização ou ao instalar hot fixes, cumulative fix packs ou service packs.
+  >[!CAUTION]
+  >
+  >Não:
+  >
+  >* coloque qualquer um dos modelos de fluxo de trabalho personalizados nesta pasta
+  >* editar qualquer item em `/libs`
+  >
+  >Como qualquer alteração pode ser substituída na atualização ou ao instalar hot fixes, cumulative fix packs ou service packs.
 
 * Os designs personalizados de fluxo de trabalho são mantidos em:
 
-   ```
-   /conf/global/settings/workflow/models/...
-   ```
+  ```
+  /conf/global/settings/workflow/models/...
+  ```
 
 * Os designs do fluxo de trabalho de tempo de execução (prontos para uso e personalizados) são mantidos no seguinte caminho:
 
-   `/var/workflow/models/`
+  `/var/workflow/models/`
 
 * Os designs de fluxo de trabalho herdados (tempo de design e tempo de execução) são mantidos no seguinte caminho:
 
-   `/etc/workflow/models/`
+  `/etc/workflow/models/`
 
-   >[!NOTE]
-   >
-   >Se esses designs forem editados *uso da interface do AEM*, os detalhes serão copiados para os novos locais.
+  >[!NOTE]
+  >
+  >Se esses designs forem editados *uso da interface do AEM*, os detalhes serão copiados para os novos locais.
 
 #### Locais - Iniciadores de fluxo de trabalho {#locations-workflow-launchers}
 
@@ -136,31 +135,30 @@ As definições do iniciador de fluxo de trabalho também são armazenadas no re
 
 * Os iniciadores de fluxos de trabalho prontos para uso são mantidos no seguinte caminho:
 
-   `/libs/settings/workflow/launcher/`
+  `/libs/settings/workflow/launcher/`
 
-   >[!CAUTION]
-   >
-   >Não:
-   >
-   >* coloque qualquer um dos iniciadores de fluxo de trabalho personalizados nesta pasta
-   >* editar qualquer item em `/libs`
-
-   >
-   >Como qualquer alteração pode ser substituída na atualização ou ao instalar hot fixes, cumulative fix packs ou service packs.
+  >[!CAUTION]
+  >
+  >Não:
+  >
+  >* coloque qualquer um dos iniciadores de fluxo de trabalho personalizados nesta pasta
+  >* editar qualquer item em `/libs`
+  >
+  >Como qualquer alteração pode ser substituída na atualização ou ao instalar hot fixes, cumulative fix packs ou service packs.
 
 * Os iniciadores de fluxo de trabalho personalizados são mantidos em:
 
-   ```
-   /conf/global/settings/workflow/launcher/...
-   ```
+  ```
+  /conf/global/settings/workflow/launcher/...
+  ```
 
 * Os iniciadores de fluxos de trabalho herdados são mantidos no seguinte caminho:
 
-   `/etc/workflow/launcher/`
+  `/etc/workflow/launcher/`
 
-   >[!NOTE]
-   >
-   >Se essas definições forem editadas, *uso da interface do AEM*, os detalhes serão copiados para os novos locais.
+  >[!NOTE]
+  >
+  >Se essas definições forem editadas, *uso da interface do AEM*, os detalhes serão copiados para os novos locais.
 
 #### Locais - Scripts de fluxo de trabalho {#locations-workflow-scripts}
 
@@ -168,27 +166,26 @@ Os scripts de fluxo de trabalho também são armazenados no repositório de acor
 
 * Os scripts de workflow prontos para uso são mantidos no seguinte caminho:
 
-   `/libs/workflow/scripts/`
+  `/libs/workflow/scripts/`
 
-   >[!CAUTION]
-   >
-   >Não:
-   >
-   >* coloque qualquer um dos scripts de fluxo de trabalho personalizados nesta pasta
-   >* editar qualquer item em `/libs`
-
-   >
-   >Como qualquer alteração pode ser substituída na atualização ou ao instalar hot fixes, cumulative fix packs ou service packs.
+  >[!CAUTION]
+  >
+  >Não:
+  >
+  >* coloque qualquer um dos scripts de fluxo de trabalho personalizados nesta pasta
+  >* editar qualquer item em `/libs`
+  >
+  >Como qualquer alteração pode ser substituída na atualização ou ao instalar hot fixes, cumulative fix packs ou service packs.
 
 * Os scripts de fluxo de trabalho personalizados são mantidos em:
 
-   ```
-   /apps/workflow/scripts/...
-   ```
+  ```
+  /apps/workflow/scripts/...
+  ```
 
 * Os scripts de workflow herdados são mantidos no seguinte caminho:
 
-   `/etc/workflow/scripts/`
+  `/etc/workflow/scripts/`
 
 #### Locais - Notificações de fluxo de trabalho {#locations-workflow-notifications}
 
@@ -196,34 +193,33 @@ As notificações de fluxo de trabalho também são armazenadas no repositório 
 
 * As definições de notificação de workflow prontas para uso são mantidas no seguinte caminho:
 
-   `/libs/settings/workflow/notification/`
+  `/libs/settings/workflow/notification/`
 
-   >[!CAUTION]
-   >
-   >Não:
-   >
-   >* colocar qualquer uma das definições de notificação de fluxo de trabalho personalizadas nesta pasta
-   >* editar qualquer item em `/libs`
-
-   >
-   >Como qualquer alteração pode ser substituída na atualização ou ao instalar hot fixes, cumulative fix packs ou service packs.
+  >[!CAUTION]
+  >
+  >Não:
+  >
+  >* colocar qualquer uma das definições de notificação de fluxo de trabalho personalizadas nesta pasta
+  >* editar qualquer item em `/libs`
+  >
+  >Como qualquer alteração pode ser substituída na atualização ou ao instalar hot fixes, cumulative fix packs ou service packs.
 
 * As definições de notificação de workflow personalizadas são mantidas em:
 
-   ```
-   /conf/global/settings/workflow/notification/...
-   ```
+  ```
+  /conf/global/settings/workflow/notification/...
+  ```
 
-   >[!NOTE]
-   >
-   >Se quiser substituir um texto de notificação de workflow, crie um caminho sobreposto em:
-   >
-   >
-   >`/conf/global/settings/workflow/notification/<path-under-libs>`
+  >[!NOTE]
+  >
+  >Se quiser substituir um texto de notificação de workflow, crie um caminho sobreposto em:
+  >
+  >
+  >`/conf/global/settings/workflow/notification/<path-under-libs>`
 
 * As definições de notificação de workflow herdadas são mantidas no seguinte caminho:
 
-   `/etc/workflow/notification/`
+  `/etc/workflow/notification/`
 
 ### Sessões de Processo {#process-sessions}
 
