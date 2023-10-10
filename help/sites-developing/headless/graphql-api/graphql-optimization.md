@@ -2,9 +2,9 @@
 title: Otimização de consultas de GraphQL
 description: Saiba como otimizar suas consultas do GraphQL ao filtrar, paginar e classificar os fragmentos de conteúdo no Adobe Experience Manager as a Cloud Service para entrega de conteúdo headless.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: 2ba17c43e84ad449ec858de57812f3ef82fca3e1
+source-git-commit: c0570d6c0d624d950ddbb5c0d2ce38ff7c3756a4
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '1935'
 ht-degree: 60%
 
 ---
@@ -89,7 +89,10 @@ Consulte:
 
 Ao usar consultas persistentes do GraphQL com um CDN, é recomendável definir cabeçalhos de controle de cache HTTP apropriados.
 
-Cada consulta persistente pode ter seu próprio conjunto específico de cabeçalhos de controle de cache. Os cabeçalhos podem ser definidos no [API do GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) ou o [IDE GraphiQL do AEM](/help/sites-developing/headless/graphql-api/graphiql-ide.md).
+Cada consulta persistente pode ter seu próprio conjunto específico de cabeçalhos de controle de cache. Os cabeçalhos podem ser definidos no [API do GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
+
+<!-- or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache). 
+-->
 
 **Referência adicional**
 
