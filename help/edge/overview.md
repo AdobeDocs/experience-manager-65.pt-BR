@@ -1,14 +1,15 @@
 ---
-title: Introdução ao Edge Delivery Services
-description: Introdução ao Edge Delivery Services.
-source-git-commit: cac0e6f7483fed9c1b245aa7f00ff36fdcfaea31
+title: Introdução aos serviços de entrega de borda
+description: Introdução aos serviços de entrega de borda.
+exl-id: 8d2b2d6c-ae11-4829-842e-b186f5491713
+source-git-commit: d989f83b51ed1c957b63b5d71e2afe027abcd330
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 0%
+source-wordcount: '823'
+ht-degree: 2%
 
 ---
 
-# Introdução ao Edge Delivery Services {#getstart-edge}
+# Introdução aos serviços de entrega de borda {#getstart-edge}
 
 Com o Edge Delivery Services, o AEM oferece experiências excepcionais que impulsionam o engajamento e as conversões. O AEM faz isso fornecendo experiências de alto impacto que são rápidas de serem criadas e desenvolvidas. É um conjunto combinável de serviços que permite um ambiente de desenvolvimento rápido, em que os autores podem atualizar e publicar rapidamente e novos sites são lançados rapidamente. Dessa forma, com os Edge Delivery Services você pode melhorar a conversão, reduzir custos e fornecer velocidade de conteúdo extrema.
 
@@ -58,7 +59,7 @@ O Adobe fornece três canais para ajudá-lo com Edge Delivery Services:
 
 ### Acessar recursos da comunidade {#community-resource}
 
-O Adobe tem dois recursos da comunidade para ajudá-lo com o Edge Delivery, [Comunidade Experience League](https://adobe.ly/3Q6kTKl) e uma [Canal de discórdia](https://discord.gg/YFTKQK8M).
+O Adobe tem dois recursos da comunidade para ajudá-lo com o Edge Delivery, [Comunidade Experience League](https://adobe.ly/3Q6kTKl) e uma [Canal de discórdia](https://discord.gg/aem-live).
 
 ### Como acessar o canal de colaboração do produto {#collab-channel}
 
