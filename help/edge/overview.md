@@ -2,9 +2,9 @@
 title: Introdução aos serviços de entrega de borda
 description: Introdução aos serviços de entrega de borda.
 exl-id: 8d2b2d6c-ae11-4829-842e-b186f5491713
-source-git-commit: d989f83b51ed1c957b63b5d71e2afe027abcd330
+source-git-commit: 6b60deb47f4a07b48156ce8f449d49ebaf29abde
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '868'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ O Adobe fornece três canais para ajudá-lo com Edge Delivery Services:
 
 ### Acessar recursos da comunidade {#community-resource}
 
-O Adobe tem dois recursos da comunidade para ajudá-lo com o Edge Delivery, [Comunidade Experience League](https://adobe.ly/3Q6kTKl) e uma [Canal de discórdia](https://discord.gg/aem-live).
+O Adobe tem o compromisso de capacitá-lo com o melhor envolvimento e suporte da comunidade para o Edge Delivery Services e a Criação baseada em documentos. Participar de [Comunidade Experience League](https://adobe.ly/3Q6kTKl) fazer perguntas, compartilhar feedback, iniciar discussões, buscar assistência de especialistas em Adobe e AEM Advisors/Champs, e conectar-se com indivíduos que pensam da mesma maneira em tempo real. E junte-se aos nossos [Canal de discórdia](https://discord.gg/aem-live), uma plataforma mais casual para interações em tempo real e trocas rápidas de ideias.
 
 ### Como acessar o canal de colaboração do produto {#collab-channel}
 
