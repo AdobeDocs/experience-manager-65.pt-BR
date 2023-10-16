@@ -1,13 +1,13 @@
 ---
 title: Usar AEM com Commerce Cloud SAP
-description: Saiba como usar o AEM com o SAP Commerce Cloud.
+description: Saiba como usar o Adobe Experience Manager com o SAP Commerce Cloud.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1704'
 ht-degree: 1%
 
 ---
