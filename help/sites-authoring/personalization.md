@@ -1,19 +1,11 @@
 ---
 title: Personalização e direcionamento de conteúdo
-seo-title: Personalization and Content Targeting
-description: Saiba como o AEM pode criar conteúdo personalizado
-seo-description: Learn how AEM can create personalized content
-uuid: 3a1aaa3d-5f57-4fb7-a4be-523f0d274b79
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: personalization
-discoiquuid: 850da0da-f7c3-4dd7-bb06-404c14a2a791
+description: Saiba como o Adobe Experience Manager 6.5 pode criar conteúdo personalizado.
 exl-id: be34760a-875b-419d-9fa4-2359b314a3b7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 35%
+source-wordcount: '521'
+ht-degree: 40%
 
 ---
 
@@ -67,7 +59,7 @@ O AEM fornece um mecanismo de direcionamento integrado que processa solicitaçõ
 
 O mecanismo de direcionamento do Adobe Target faz com que as informações coletadas das visitas às páginas sejam rastreadas no Adobe Target.
 
-* Ao usar esse mecanismo de direcionamento, use os segmentos importados da Adobe Target para definir os públicos das suas experiências.
-* As atividades que usam o mecanismo do Adobe Target são [sincronizado com o Target](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).
+* Ao usar esse mecanismo de direcionamento, você utilizará os segmentos importados do Adobe Target para definir os públicos-alvo das suas experiências.
+* As atividades que usam o mecanismo do Adobe Target são [sincronizadas com o Target](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).
 
 Você pode usar esse mecanismo quando tiver [integrado com o Adobe Target](/help/sites-administering/opt-in.md).

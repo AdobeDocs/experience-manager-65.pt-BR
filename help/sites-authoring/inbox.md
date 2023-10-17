@@ -1,17 +1,11 @@
 ---
 title: Sua Caixa de entrada para gerenciar tarefas
-description: Gerenciar suas tarefas com a caixa de entrada.
-uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
-discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
+description: Gerenciamento de tarefas com a caixa de entrada no Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 28%
+source-wordcount: '1148'
+ht-degree: 42%
 
 ---
 
@@ -32,7 +26,7 @@ Você pode receber notificações de várias áreas do AEM, incluindo fluxos de 
 
    * itens de falha, para permitir que os administradores tentem novamente a etapa que falhou.
 
-Você recebe essas notificações em sua própria Caixa de entrada, onde pode visualizá-las e tomar medidas.
+Você recebe essas notificações em sua própria caixa de entrada, onde pode visualizá-las e executar ações.
 
 >[!NOTE]
 >
@@ -43,14 +37,14 @@ Você recebe essas notificações em sua própria Caixa de entrada, onde pode vi
 >Para obter mais informações sobre os tipos de item, consulte também:
 >
 >* [Projetos](/help/sites-authoring/touch-ui-managing-projects.md)
->* [Projetos - trabalhar com tarefas](/help/sites-authoring/task-content.md)
+>* [Projetos: trabalhar com tarefas](/help/sites-authoring/task-content.md)
 >* [Fluxos de trabalhos](/help/sites-authoring/workflows.md)
 >* [Forms](/help/forms/home.md)
 >
 
 ## Caixa de entrada no cabeçalho {#inbox-in-the-header}
 
-Em qualquer um dos consoles, o número atual de itens na sua caixa de entrada é mostrado no cabeçalho. O indicador também pode ser aberto para fornecer acesso rápido às páginas que exigem ação(ões) ou acesso à caixa de entrada:
+Em qualquer um dos consoles, o número atual de itens na sua caixa de entrada é mostrado no cabeçalho. O indicador também pode ser aberto para fornecer acesso rápido às páginas que necessitam de ações ou acesso à caixa de entrada:
 
 ![wf-80](assets/wf-80.png)
 
@@ -109,11 +103,11 @@ Esta exibição apresenta os itens de acordo com sua posição no calendário e 
 
 ### Caixa de entrada - configurações {#inbox-view-settings}
 
-Para ambas as exibições (Lista e Calendário), é possível definir as configurações:
+Para ambas as visualizações (Lista e Calendário), é possível definir certas configurações:
 
 * **Exibição de calendário**
 
-  Para **Exibição de calendário** você pode configurar:
+  Para a **visualização de Calendário**, você pode configurar:
 
    * **Agrupar por**
    * **Agendamento** ou **Nenhum**
@@ -123,7 +117,7 @@ Para ambas as exibições (Lista e Calendário), é possível definir as configu
 
 * **Exibição de lista**
 
-  Para **Exibição de lista** você pode configurar o mecanismo de classificação:
+  Para a **visualização de Lista**, você pode configurar o mecanismo de classificação:
 
    * **Classificar campo**
    * **Ordem de classificação**
@@ -211,7 +205,7 @@ A opção Admin Control está visível somente para os membros da `administrator
 
 Na caixa de entrada, é possível criar tarefas:
 
-1. Selecionar **Criar**, depois **Tarefa**.
+1. Selecione **Criar**, depois **Tarefa**.
 1. Preencha os campos necessários no **Básico** e **Avançado** guias; somente o **Título** é obrigatório, todos os outros são opcionais:
 
    * **Básico**:
@@ -239,7 +233,7 @@ Na caixa de entrada, é possível criar tarefas:
 
 Para determinadas tarefas, você pode criar um [Projeto](/help/sites-authoring/projects.md) com base nessa tarefa:
 
-1. Selecione a tarefa apropriada, tocando/clicando na miniatura.
+1. Selecione a tarefa apropriada tocando/clicando na miniatura.
 
    >[!NOTE]
    >
@@ -248,7 +242,7 @@ Para determinadas tarefas, você pode criar um [Projeto](/help/sites-authoring/p
    >Itens de trabalho (de um fluxo de trabalho) não podem ser usados para criar um projeto.
 
 1. Selecione **Criar projeto** na barra de ferramentas para abrir o assistente.
-1. Selecione o modelo apropriado e, em seguida, **Próxima**.
+1. Selecione o modelo obrigatório e clique em **Próximo**.
 1. Especifique as propriedades necessárias:
 
    * **Básico**
@@ -265,9 +259,9 @@ Para determinadas tarefas, você pode criar um [Projeto](/help/sites-authoring/p
 
    >[!NOTE]
    >
-   >Consulte [Criação de um projeto](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) para obter informações completas.
+   >Consulte [Criar um projeto](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) para obter todas as informações.
 
-1. Selecionar **Criar** para confirmar a ação
+1. Selecione **Criar** para confirmar a ação.
 
 ## Filtrar itens na Caixa de entrada do AEM {#filtering-items-in-the-aem-inbox}
 

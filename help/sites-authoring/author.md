@@ -1,16 +1,11 @@
 ---
 title: Criação
-description: Conceitos de criação no Adobe Experience Manager
-contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
-docset: aem65
+description: Conceitos de criação e publicação no Adobe Experience Manager 6.5.
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 20%
+source-wordcount: '553'
+ht-degree: 35%
 
 ---
 
@@ -32,7 +27,7 @@ O ambiente de criação oferece os mecanismos para criação, atualização e an
 
 ![Visão geral dos ambientes](assets/chlimage_1-132.png)
 
-No ambiente de criação, a funcionalidade do AEM é disponibilizada por meio de duas interfaces do usuário. Para o ambiente de publicação, você projeta toda a aparência e comportamento da interface disponibilizada para os usuários.
+No ambiente de criação, a funcionalidade do AEM é disponibilizada por meio de duas interfaces do usuário. No ambiente de publicação, você projeta toda a aparência da interface disponibilizada aos usuários.
 
 ### Ambiente de criação {#author-environment}
 
@@ -40,9 +35,9 @@ O autor trabalha no que é conhecido como **ambiente do autor**. Isso oferece um
 
 >[!NOTE]
 >
->Sua conta precisa dos direitos de acesso apropriados para criar, editar ou publicar conteúdo.
+>Sua conta precisa ter os direitos de acesso necessários para criar, editar ou publicar conteúdo.
 
-Dependendo de como sua instância e seus direitos de acesso pessoal estão configurados, você pode executar muitas tarefas no conteúdo, incluindo (entre outras):
+Dependendo de como sua instância e seus direitos de acesso pessoal estão configurados, é possível executar muitas tarefas no conteúdo, incluindo (entre outras):
 
 * gerar novo conteúdo ou editar conteúdo existente em uma página
 * usar modelos predefinidos para criar novas páginas de conteúdo
@@ -53,7 +48,7 @@ Dependendo de como sua instância e seus direitos de acesso pessoal estão confi
 * mover, copiar ou excluir páginas de conteúdo, ativos e assim por diante
 * publicar (ou desfazer a publicação) páginas, ativos e assim por diante
 
-Além disso, há tarefas administrativas que ajudam você a gerenciar seu conteúdo:
+Além disso, há tarefas administrativas que ajudam a gerenciar o conteúdo:
 
 * fluxos de trabalho que controlam como as alterações são gerenciadas; por exemplo, impor uma revisão antes da publicação
 * projetos que coordenam tarefas individuais
@@ -86,4 +81,4 @@ Quando o site AEM é um [site da comunidade](/help/communities/overview.md), ou 
 
 #### Dispatcher {#dispatcher}
 
-Para otimizar o desempenho para os visitantes do seu site, a variável **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR)** O implementa o balanceamento de carga e o cache.
+Para otimizar o desempenho para os visitantes do seu site, o **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) implementa o balanceamento de carga e o armazenamento em cache.**

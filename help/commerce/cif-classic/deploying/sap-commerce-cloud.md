@@ -1,13 +1,13 @@
 ---
 title: Implantação do comércio eletrônico com o SAP Commerce Cloud
-description: Saiba como implantar o comércio eletrônico com o SAP Commerce Cloud.
+description: Saiba como implantar o Adobe Experience Manager eCommerce com Commerce Cloud SAP.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: ecbd0097-c407-4581-bab2-4729a71df4a3
-source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '717'
 ht-degree: 2%
 
 ---

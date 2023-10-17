@@ -1,16 +1,11 @@
 ---
 title: Edição de propriedades da página de conteúdo
-description: Definir as propriedades obrigatórias de uma página.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
-docset: aem65
+description: Defina as propriedades necessárias para uma página no Adobe Experience Manager.
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '1868'
-ht-degree: 44%
+source-wordcount: '1872'
+ht-degree: 43%
 
 ---
 

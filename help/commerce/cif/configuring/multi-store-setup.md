@@ -6,10 +6,8 @@ doc-type: technical-video
 activity: setup
 audience: administrator
 feature: Commerce Integration Framework
-kt: 3046
-thumbnail: 28952.jpg
 exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 18%
@@ -18,13 +16,13 @@ ht-degree: 18%
 
 # Configuração de várias lojas do Commerce {#multi-store}
 
-Os Componentes principais da CIF do AEM podem ser usados em várias estruturas de site do AEM e a implementação de cliente subjacente do GraphQL pode se conectar a diferentes lojas/visualizações de loja da Adobe Commerce. Assim, os projetos podem implementar configurações complexas de várias lojas/vários sites.
+AEM Os Componentes principais do CIF podem ser usados em várias estruturas de site do AEM e a implementação de cliente GraphQL subjacente pode se conectar a diferentes lojas/visualizações de loja da Adobe Commerce. Assim, os projetos podem implementar configurações complexas de várias lojas/vários sites.
 
 Uma apresentação em vídeo detalhando as opções para integrar várias visualizações da Adobe Commerce Store ao Adobe Experience Manager Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
-Os recursos de gerenciamento de vários sites do AEM para Live Copy e Language Copy são usados com a Commerce Integration Framework para gerenciar sites em várias regiões e localidades.
+Os recursos de Gerenciamento de vários sites do AEM para Live Copy e Language Copy são usados com o Commerce integration framework para gerenciar sites globalmente em regiões e localidades.
 
 A configuração recomendada é usar uma relação 1:1 entre o site do AEM e a exibição da loja da Adobe Commerce.
 

@@ -1,10 +1,8 @@
 ---
 title: Práticas recomendadas do AEM 6.5
-seo-title: AEM 6.5 Best Practices
-description: Recursos para práticas recomendadas, solução de problemas e treinamento para AEM 6.5
-seo-description: Resources for best practices, troubleshooting and training for AEM 6.5
+description: Recursos para práticas recomendadas, solução de problemas e treinamento para AEM 6.5.
 exl-id: 077c00b9-f2ec-49a3-8d85-a3d3ecf287bb
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 3%
@@ -23,7 +21,7 @@ O Adobe tem vários recursos-chave para ajudá-lo a tirar o melhor proveito do A
 A Comunidade AEM está constantemente produzindo exemplos de fluxos de trabalho, tutoriais e amostras de código de conteúdo a partir de sugestões e trabalho colaborativo.
 
 * [Uma lista completa de tutoriais e vídeos sobre o AEM 6.5 está aqui](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html).
-* [Uma lista completa de artigos de instruções da comunidade AEM está aqui](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
+* [Uma lista completa de artigos de instruções da comunidade AEM está aqui](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=pt).
 
 ## Práticas recomendadas para AEM {#best-practices}
 

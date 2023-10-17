@@ -1,13 +1,11 @@
 ---
 title: Saiba mais sobre os recursos do Adobe Experience Manager 6.5
-seo-title: Learn about Adobe Experience Manager 6.5 Capabilities
-description: Saiba mais sobre os recursos essenciais do Adobe Experience Manager 6.5
-seo-description: An description of the essential capabilities of Adobe Experience Manager 6.5
+description: Saiba mais sobre os recursos essenciais do Adobe Experience Manager 6.5.
 exl-id: dc3b8690-f664-4ffa-993b-7a8634e6fe6b
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
@@ -15,7 +13,7 @@ ht-degree: 3%
 
 ## Experience Manager Sites {#aem-sites}
 
-O Experience Manager Sites é um sistema de gerenciamento de conteúdo no Adobe Experience Manager. Ele oferece um local para criar, gerenciar e fornecer experiências digitais em sites, sites móveis e telas no site para torná-los globais em alcance, mas pessoalmente relevantes e envolventes. [Saiba mais](https://business.adobe.com/products/experience-manager/sites/web-content-management.html) ou [consulte tutoriais sobre novos recursos de vídeo.](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=en)
+O Experience Manager Sites é um sistema de gerenciamento de conteúdo no Adobe Experience Manager. Ele oferece um local para criar, gerenciar e fornecer experiências digitais em sites, sites móveis e telas no site para torná-los globais em alcance, mas pessoalmente relevantes e envolventes. [Saiba mais](https://business.adobe.com/products/experience-manager/sites/web-content-management.html) ou [consulte tutoriais sobre novos recursos de vídeo.](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=pt-BR)
 
 ## Experience Manager Assets {#aem-assets}
 

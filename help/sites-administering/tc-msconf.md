@@ -1,18 +1,13 @@
 ---
 title: Conectar ao Microsoft&reg; Translator
-description: Saiba como conectar o AEM ao Microsoft&reg; Translator.
-uuid: 5e3916ec-36a0-4d31-94ff-c340a462411a
+description: Saiba como conectar o Adobe Experience Manager ao Microsoft&reg; Translator.
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: a7958411-b509-428e-bbe2-42efe8fd1add
 feature: Language Copy
 exl-id: ca575a30-fc3e-4f38-9aa7-dbecbc089f87
-source-git-commit: 95638b6dd9527c567b38d8cd9da14633bd4142b5
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 11%
+source-wordcount: '608'
+ht-degree: 13%
 
 ---
 
@@ -31,13 +26,13 @@ Depois de criar a configuração, você deve [ativar](/help/sites-administering/
 
 O procedimento a seguir usa a interface otimizada para toque para criar uma configuração do Microsoft® Translator.
 
-1. No painel, clique ou toque em Ferramentas > Cloud Services.
+1. No painel, clique ou toque em Ferramentas > Cloud Service.
 1. Na área Microsoft® Translator, selecione Mostrar configurações.
 1. Clique no link + ao lado de Configurações disponíveis.
 
    ![chlimage_1-382](assets/chlimage_1-382.png)
 
-1. Digite um título para sua configuração. O título identifica a configuração no console do Cloud Services e nas listas suspensas de propriedade da página. O nome padrão é baseado no título. Opcionalmente, digite um nome a ser usado para o nó do repositório que armazena a configuração. Use o valor padrão para a propriedade Configuração pai, que é o caminho do nó do repositório.
+1. Digite um título para sua configuração. O título identifica a configuração no console do Cloud Services bem como nas listas suspensas de propriedades da página. O nome padrão é baseado no título. Opcionalmente, digite um nome a ser usado para o nó do repositório que armazena a configuração. Use o valor padrão para a propriedade Configuração pai, que é o caminho do nó do repositório.
 1. Clique em Criar.
 1. Na caixa de diálogo exibida, digite os valores das propriedades e clique em OK.
 
@@ -59,7 +54,7 @@ Esta configuração do Microsoft® Translator é otimizada para uso com o tipo d
 
 As páginas de configuração do Microsoft® Translation fornecem um link para o site da Microsoft®, onde é possível obter uma assinatura de conta adequada para sistemas de produção.
 
-1. No painel, clique ou toque em Ferramentas > Operações > Nuvem > Cloud Services.
+1. No painel, clique ou toque em Ferramentas > Operações > Nuvem > Cloud Service.
 1. Na área do Microsoft® Translator, clique ou toque em Mostrar configurações e, em seguida, clique ou toque em Licença de avaliação do Microsoft® Translator (Configuração do Microsoft® Translator).
 
    ![chlimage_1-383](assets/chlimage_1-383.png)
@@ -72,7 +67,7 @@ As páginas de configuração do Microsoft® Translation fornecem um link para o
 
 As páginas de configuração do Microsoft® Translation fornecem um link para o site Microsoft®, onde é possível personalizar o mecanismo do Microsoft® Translator. ([https://www.microsoft.com/en-us/research/project/microsoft-translator-hub/](https://www.microsoft.com/en-us/research/project/microsoft-translator-hub/))
 
-1. No painel, clique ou toque em Ferramentas > Operações > Nuvem > Cloud Services.
+1. No painel, clique ou toque em Ferramentas > Operações > Nuvem > Cloud Service.
 1. Na área do Microsoft® Translator, clique ou toque em Mostrar configurações e, em seguida, clique ou toque na configuração que deseja personalizar.
 1. Na página de configuração, clique em Personalizar tradutor. Use a página da Microsoft® na Web que é aberta para personalizar seu serviço.
 

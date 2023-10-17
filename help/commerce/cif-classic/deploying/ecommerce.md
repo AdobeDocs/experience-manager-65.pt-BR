@@ -1,15 +1,9 @@
 ---
 title: Visão geral de comércio eletrônico
-seo-title: eCommerce Overview
 description: O eCommerce genérico do AEM está disponível como parte da instalação padrão e fornece a funcionalidade completa da estrutura de eCommerce.
-seo-description: AEM generic eCommerce is available as part of the standard installation and provides you with the full functionality of the eCommerce framework.
-contentOwner: Guillaume Carlino
-topic-tags: e-commerce
-content-type: reference
-docset: aem65
 feature: Commerce Integration Framework
 exl-id: 3567bd28-73aa-401a-8aa9-a62a99d2a613
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 3%
@@ -20,7 +14,7 @@ ht-degree: 3%
 
 O eCommerce genérico do AEM está disponível como parte de uma instalação padrão e fornece a funcionalidade completa da estrutura de eCommerce.
 
-O Adobe fornece duas versões da Commerce Integration Framework:
+O Adobe fornece duas versões do Commerce integration framework:
 
 |                         | CIF no local | Nuvem da CIF |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
@@ -36,7 +30,7 @@ O Adobe fornece duas versões da Commerce Integration Framework:
 
 ## Implantar outras implementações {#deploying-other-implementations}
 
-Para AEM e Adobe Commerce, consulte [Integração entre AEM e Adobe Commerce](/help/commerce/cif/integrating/magento.md) usando o [Estrutura de integração do Commerce](/help/commerce/cif/introduction.md).
+Para AEM e Adobe Commerce, consulte [Integração entre AEM e Adobe Commerce](/help/commerce/cif/integrating/magento.md) usando o [Commerce integration framework](/help/commerce/cif/introduction.md).
 
 >[!NOTE]
 >

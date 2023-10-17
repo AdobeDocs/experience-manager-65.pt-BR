@@ -3,9 +3,8 @@ title: Introdução à extensão AEM para PWA Studio
 description: Saiba como implantar um projeto de comércio e conteúdo sem periféricos de AEM com o PWA Studio.
 topics: Commerce
 feature: Commerce Integration Framework
-thumbnail: 37843.jpg
 exl-id: de7b8f05-b6b7-4105-84a5-940c16ebf2b4
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 0%
@@ -93,15 +92,15 @@ Siga a documentação dos Fragmentos de conteúdo do AEM para configurar um endp
 
 * Política de compartilhamento de recursos entre origens do Adobe Granite (com.adobe.granite.cors.impl.CORSPolicyImpl)
 
-   Defina o `allowedorigin` para o nome completo do host do aplicativo PWA.
+  Defina o `allowedorigin` para o nome completo do host do aplicativo PWA.
 
-   Exemplo:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
+  Exemplo:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Filtro referenciador do Apache Sling (org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 
-   Defina a propriedade allow.hosts com o nome de host do aplicativo PWA.
+  Defina a propriedade allow.hosts com o nome de host do aplicativo PWA.
 
-   Exemplo: pwa-studio-test-vflyn.local.pwadev
+  Exemplo: pwa-studio-test-vflyn.local.pwadev
 
 Você pode encontrar exemplos completos de ambas as configurações aqui: <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 
