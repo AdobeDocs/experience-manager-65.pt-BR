@@ -1,19 +1,15 @@
 ---
 title: Administração de instâncias do fluxo de trabalho
-seo-title: Administering Workflow Instances
-description: Saiba como administrar instâncias de fluxo de trabalho.
-seo-description: Lear how to administer Workflow Instances.
-uuid: 81e53ef5-fe62-4ed4-b2d4-132aa986d5aa
+description: Saiba como o console de fluxo de trabalho fornece várias ferramentas para administrar instâncias de fluxo de trabalho e garantir que elas estejam sendo executadas conforme esperado.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 90923d39-3ac5-4028-976c-d011f0404476
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 84%
+source-wordcount: '1003'
+ht-degree: 65%
 
 ---
 
@@ -37,7 +33,7 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
 ## Monitorar o status de instâncias de fluxo de trabalho {#monitoring-the-status-of-workflow-instances}
 
 1. Usando a navegação, selecione **Ferramentas** e, em seguida, **Fluxo de trabalho**.
-1. Selecione **Instâncias** para exibir a lista de instâncias de fluxo de trabalho em andamento.
+1. Selecionar **Instâncias** para que seja possível exibir a lista de instâncias de fluxo de trabalho em andamento.
 
    ![wf-96](assets/wf-96.png)
 
@@ -66,7 +62,7 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
 ## Suspensão, retomada e encerramento de uma instância de fluxo de trabalho {#suspending-resuming-and-terminating-a-workflow-instance}
 
 1. Usando a navegação, selecione **Ferramentas** e, em seguida, **Fluxo de trabalho**.
-1. Selecione **Instâncias** para exibir a lista de instâncias de fluxo de trabalho em andamento.
+1. Selecionar **Instâncias** para que seja possível exibir a lista de instâncias de fluxo de trabalho em andamento.
 
    ![wf-96-1](assets/wf-96-1.png)
 
@@ -77,7 +73,7 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
 ## Visualização de fluxos de trabalho arquivados {#viewing-archived-workflows}
 
 1. Usando a navegação, selecione **Ferramentas** e, em seguida, **Fluxo de trabalho**.
-1. Selecione **Arquivo** para exibir a lista de instâncias de fluxo de trabalho concluídas com sucesso.
+1. Selecionar **Arquivar** para que você possa exibir a lista de instâncias de fluxo de trabalho concluídas com sucesso.
 
    ![wf-98](assets/wf-98.png)
 
@@ -102,14 +98,14 @@ Abre uma janela para mostrar a **Mensagem de falha**, **Etapa**, e **Pilha de fa
 * **Abrir histórico**
 Mostra detalhes do histórico do fluxo de trabalho.
 
-* **Repetir etapa** Executa a instância do componente Etapa do script novamente. Use o comando Repetir etapa após corrigir a causa do erro original. Por exemplo, repita a etapa depois de corrigir um erro no script que a Etapa do processo executa.
-* **Encerrar** Encerra o fluxo de trabalho se o erro tiver gerado uma situação irreparável para o fluxo de trabalho. Por exemplo, o fluxo de trabalho pode depender de condições ambientais, como informações no repositório que não são mais válidas para a instância do fluxo de trabalho.
-* **Encerrar e repetir** Semelhante a **Encerrar**, exceto que uma nova instância de fluxo de trabalho é iniciada usando a carga, o título e a descrição originais.
+* **Tentar etapa novamente** - Executa a instância do componente Etapa do script novamente. Use o comando Repetir etapa após corrigir a causa do erro original. Por exemplo, repita a etapa depois de corrigir um erro no script que a Etapa do processo executa.
+* **Encerrar** - Encerra o workflow se o erro tiver gerado uma situação irreparável para o workflow. Por exemplo, o fluxo de trabalho pode depender de condições ambientais, como informações no repositório que não são mais válidas para a instância do fluxo de trabalho.
+* **Encerrar e tentar novamente** - Semelhante **Encerrar** exceto que uma nova instância de fluxo de trabalho é iniciada usando a carga, o título e a descrição originais.
 
 Para investigar falhas e, em seguida, retomar ou encerrar o fluxo de trabalho, use as seguintes etapas:
 
 1. Usando a navegação, selecione **Ferramentas** e, em seguida, **Fluxo de trabalho**.
-1. Selecione **Falhas** para exibir a lista de instâncias de fluxo de trabalho que não foram concluídas com sucesso.
+1. Selecionar **Falhas** para exibir a lista de instâncias de fluxo de trabalho que não foram concluídas com sucesso.
 1. Selecione um item específico e, em seguida, a ação apropriada:
 
    ![wf-47](assets/wf-47.png)
@@ -120,7 +116,7 @@ Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do 
 
 Defina a **configuração de limpeza de fluxos de trabalho do Adobe Granite** para remover instâncias de fluxo de trabalho de acordo com sua idade e status. Você também pode remover as instâncias de fluxo de trabalho de todos os modelos ou de um modelo específico.
 
-Você também pode criar várias configurações do serviço para remover as instâncias de fluxo de trabalho que satisfaçam critérios diferentes. Por exemplo, crie uma configuração que remova as instâncias de um modelo de fluxo de trabalho específico quando elas estiverem em execução por muito mais tempo do que o esperado. Crie outra configuração que remova todos os fluxos de trabalho concluídos após um determinado número de dias para minimizar o tamanho do repositório.
+Você também pode criar várias configurações do serviço para remover as instâncias de fluxo de trabalho que satisfaçam critérios diferentes. Por exemplo, crie uma configuração que remova as instâncias de um modelo de fluxo de trabalho específico quando elas estiverem em execução por mais tempo do que o esperado. Crie outra configuração que remova todos os fluxos de trabalho concluídos após um determinado número de dias para minimizar o tamanho do repositório.
 
 Para configurar o serviço, você pode usar o [Console da Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou [adicionar uma configuração OSGi ao repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). A tabela a seguir descreve as propriedades necessárias para qualquer método.
 
@@ -163,7 +159,7 @@ Para configurar o serviço, você pode usar o [Console da Web](/help/sites-deplo
   <tr>
    <td>Idade do fluxo de trabalho</td>
    <td>scheduledpurge.daysold</td>
-   <td>A idade das instâncias de fluxo de trabalho a serem removidas, em dias.</td>
+   <td>A idade das instâncias de fluxo de trabalho a serem removidas em dias.</td>
   </tr>
  </tbody>
 </table>
@@ -184,11 +180,11 @@ Para configurar o serviço, você pode usar o [Console da Web](/help/sites-deplo
 
 ## Uso de variáveis de fluxo de trabalho para armazenamentos de dados de propriedade do cliente {#using-workflow-variables-customer-datastore}
 
-Os dados processados por fluxos de trabalho são armazenados no armazenamento fornecido pela Adobe (JCR). Esses dados podem ser de natureza sensível. É possível salvar todos os metadados/dados definidos pelo usuário em seu próprio armazenamento gerenciado, em vez de usar o armazenamento fornecido pela Adobe. Essas seções descrevem como configurar essas variáveis em um armazenamento externo.
+Os dados processados por fluxos de trabalho são armazenados no armazenamento fornecido pela Adobe (JCR). Esses dados podem ser de natureza sensível. É recomendado salvar todos os metadados/dados definidos pelo usuário em seu próprio armazenamento gerenciado, em vez de usar o armazenamento fornecido pela Adobe. Essas seções descrevem como configurar essas variáveis em um armazenamento externo.
 
 ### Definir o modelo para usar o armazenamento externo de metadados {#set-model-for-external-storage}
 
-No nível do modelo de fluxo de trabalho, um sinalizador é fornecido para indicar que o modelo e suas instâncias de tempo de execução têm acesso ao armazenamento externo de metadados. As variáveis de fluxo de trabalho não serão mantidas no JCR para as instâncias de fluxo de trabalho cujos modelos foram marcados para armazenamento externo.
+No nível do modelo de fluxo de trabalho, um sinalizador é fornecido para indicar que o modelo e suas instâncias de tempo de execução têm acesso ao armazenamento externo de metadados. As variáveis de fluxo de trabalho não são mantidas no JCR para as instâncias de fluxo de trabalho dos modelos marcados para armazenamento externo.
 
 A propriedade *userMetadataPersistenceEnabled* será armazenada no *nó jcr:content* do modelo de fluxo de trabalho. Esse sinalizador será mantido nos metadados do fluxo de trabalho como *cq:userMetaDataCustomPersistenceEnabled*.
 
@@ -198,7 +194,7 @@ A ilustração abaixo mostra como definir o sinalizador em um fluxo de trabalho.
 
 ### APIs de metadados no armazenamento externo {#apis-for-metadata-external-storage}
 
-Para armazenar as variáveis externamente, você deve implementar as APIs que o fluxo de trabalho expõe.
+Para armazenar as variáveis externamente, implemente as APIs que o fluxo de trabalho expõe.
 
 UserMetaDataPersistenceContext
 

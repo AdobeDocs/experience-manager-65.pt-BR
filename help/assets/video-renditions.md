@@ -1,14 +1,14 @@
 ---
 title: Representações de vídeo
-description: Representações de vídeo
+description: Saiba como usar o Adobe Experience Manager Assets para gerar representações de vídeo para ativos de vídeo de vários formatos, incluindo OGG, FLV e assim por diante.
 uuid: a02f9ec1-30d9-4cbb-8746-8391ac614f0a
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 1601b473-7227-4a56-bb7c-289de2987e4b
 exl-id: a644558e-5be9-4ba2-b560-fc300497fbdf
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -43,4 +43,4 @@ Depois de configurar o servidor proxy e criar perfis de vídeo, você pode inclu
 >
 >A reprodução de áudio não funciona para arquivos OGG e WAV no Microsoft® Internet Explorer 11. Um erro `Invalid Source` é exibido na página de detalhes do ativo para ativos com extensão OGG ou WAV.
 >
->No MS® Edge e no iPad, os arquivos OGG não são reproduzidos e geram um erro de formato não suportado.
+No MS® Edge e no iPad, os arquivos OGG não são reproduzidos e geram um erro de formato não suportado.

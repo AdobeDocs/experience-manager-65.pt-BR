@@ -1,12 +1,12 @@
 ---
 title: Adobe Experience Manager Mobile - Disponibilidade do GDPR
-description: Adobe Experience Manager Mobile - Disponibilidade do GDPR
+description: Saiba mais sobre como o Adobe Experience Manager está pronto para ajudá-lo com suas obrigações de conformidade com o GDPR.
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '694'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Para não confundir o AEM Mobile com o produto mais antigo do Digital Publishing
 
 Entre em contato com o Atendimento ao cliente do Adobe para que você possa iniciar uma solicitação de GDPR para a Digital Publishing Suite.
 
-As seguintes IDs são necessárias para localizar dados do cliente. Qualquer subconjunto recebido implicará que as outras IDs não se aplicam a este usuário.
+As seguintes IDs são necessárias para localizar dados do cliente. Qualquer subconjunto recebido implica que as outras IDs não eram aplicáveis a esse usuário.
 
 Obrigatório:
 
@@ -49,11 +49,11 @@ Forneça pelo menos 1 dos seguintes itens:
 
 ### Perguntas frequentes {#frequently-asked-questions-faq}
 
-**O Adobe excluirá minhas compras do App Store ao iniciar uma solicitação DELETE?**
+**O Adobe exclui minhas compras do App Store ao iniciar uma solicitação DELETE?**
 
-O Adobe exclui informações que tem de compras da App Store (assinaturas e assim por diante), mas as compras ainda estão registradas nas App Store. Se o aplicativo (usuário final) estiver conectado à App Store, esses recibos serão coletados novamente e enviados para o Adobe e depois, eles serão considerados como novas compras e serão restaurados pelo aplicativo para terem acesso novamente.
+O Adobe exclui informações que tem de compras da App Store (assinaturas e assim por diante), mas as compras ainda estão registradas nas App Store. Se o aplicativo (usuário final) estiver conectado à App Store, esses recibos serão coletados novamente e enviados ao Adobe. Posteriormente, elas são consideradas novas compras e são restauradas pelo aplicativo, com acesso novamente.
 
-**O Adobe excluirá os direitos fornecidos pelo cliente ao iniciar uma solicitação DELETE?**
+**O Adobe está excluindo os direitos fornecidos pelo cliente ao iniciar uma solicitação DELETE?**
 
 O Adobe exclui informações que possui sobre as bonificações diretas adicionais do cliente. Se o aplicativo (usuário final) fizer logon no mecanismo OAuth usado pelo cliente, ele enviará informações para o Adobe e os serviços coletarão os direitos adicionais novamente.
 

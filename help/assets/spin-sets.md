@@ -1,6 +1,6 @@
 ---
 title: Conjuntos de rotação
-description: Saiba como trabalhar com conjuntos de rotação no Dynamic Media
+description: Saiba como criar um conjunto de rotação no Dynamic Media para simular o ato do mundo real de girar um objeto e visualizá-lo de qualquer ângulo para que você possa ver os detalhes.
 uuid: 379a20a3-6a17-499a-b0f1-3a835b97aa7b
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,9 +11,9 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '1952'
+source-wordcount: '1974'
 ht-degree: 8%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 8%
 
 Um Conjunto de rotação simula o ato do mundo real de virar um objeto para examiná-lo. Os Conjuntos de rotação permitem a visualização de itens de qualquer ângulo, obtendo os principais detalhes visuais de qualquer ângulo.
 
-Um Conjunto de rotação simula uma experiência de visualização de 360°. O Dynamic Media oferece Conjuntos de rotação de eixo único nos quais os visualizadores podem girar um item. Além disso, os usuários podem aplicar o zoom de forma &quot;livre&quot; e deslocar qualquer uma das visualizações com apenas alguns cliques. Dessa forma, os usuários podem examinar um item mais detalhadamente de um ponto de vista específico.
+Um Conjunto de rotação simula uma experiência de visualização de 360 graus. O Dynamic Media oferece Conjuntos de rotação de eixo único nos quais os visualizadores podem girar um item. Além disso, os usuários podem aplicar o zoom de forma &quot;livre&quot; e deslocar qualquer uma das visualizações com apenas alguns cliques. Dessa forma, os usuários podem examinar um item mais detalhadamente de um ponto de vista específico.
 
 Os conjuntos de rotação são designados por um banner com a palavra **[!UICONTROL SPINSET]**. Além disso, se o Conjunto de rotação for publicado, a data de publicação, indicada pela variável **[!UICONTROL Mundo]** está no banner junto com a última data de modificação, indicada pela variável **[!UICONTROL Lápis]** é exibido.
 
@@ -32,7 +32,7 @@ Os conjuntos de rotação são designados por um banner com a palavra **[!UICONT
 >
 >Para obter informações sobre a interface do Assets, consulte [Gerenciar ativos](/help/assets/manage-assets.md).
 
-Ao criar um Conjunto de rotação, o Adobe recomenda a seguinte prática recomendada e impõe o seguinte limite:
+Ao criar um Conjunto de rotação, o Adobe recomenda a seguinte prática recomendada e impõe os seguintes limites:
 
 | Tipo de limite | Prática recomendada | Limite imposto |
 | --- | --- | --- |
@@ -100,7 +100,7 @@ Consulte [Dynamic Media - Formatos de imagem rasterizada compatíveis](/help/ass
 
 ### Diretrizes para captura de imagens para seu Spin Set {#guidelines-for-shooting-spin-set-images}
 
-Estas são algumas das práticas recomendadas para imagens do conjunto de rotação. Em geral, quanto mais imagens você tiver em um Conjunto de rotação, melhor será o efeito de rotação da imagem. No entanto, a inclusão de muitas imagens no conjunto também aumenta a quantidade de tempo que as imagens levam para serem carregadas. O Experience Manager recomenda estas diretrizes para fotografar imagens para uso em Conjuntos de rotação:
+Veja a seguir algumas práticas recomendadas para imagens do conjunto de rotação. Em geral, quanto mais imagens você tiver em um Conjunto de rotação, melhor será o efeito de rotação da imagem. No entanto, a inclusão de muitas imagens no conjunto também aumenta a quantidade de tempo que as imagens levam para serem carregadas. O Experience Manager recomenda estas diretrizes para fotografar imagens para uso em Conjuntos de rotação:
 
 * No mínimo, use 8 a 12 imagens em um conjunto de rotação unidimensional e 16 a 24 imagens em um Conjunto de rotação bidimensional. É necessário um mínimo de 8 imagens para girar 360°. Os Conjuntos de rotação unidimensionais são mais comuns, pois criar Conjuntos de rotação bidimensionais é uma tarefa trabalhosa.
 * Use um formato sem perdas; TIFF e PNG são recomendados.
@@ -117,12 +117,13 @@ Esta seção descreve como criar um Conjunto de rotação no Experience Manager.
 >Também é possível criar conjuntos de rotação automaticamente por meio de [predefinições de conjuntos em lotes](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). **Importante:** Os conjuntos em lotes são criados pelo IPS (Sistema de produção de imagem) como parte da assimilação de ativos e estão disponíveis somente no modo Dynamic Media - Scene7.
 >
 >Consulte &quot;Criação de predefinições de conjunto de lotes para gerar automaticamente Conjuntos de imagens e Conjuntos de rotação&quot; em [Configurar o modo Dynamic Media - Scene7](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+>
 
 >[!NOTE]
 >
->A ordem em que as imagens aparecem em um conjunto de rotação é importante. Certifique-se de ordená-los para que a rotação seja uma vista suave de 360°.
+>A ordem em que as imagens aparecem em um conjunto de rotação é importante. Certifique-se de ordená-los para que a rotação seja uma visualização suave de 360 graus.
 
-Ao criar um Conjunto de rotação, o Adobe recomenda a seguinte prática recomendada e impõe o seguinte limite:
+Ao criar um Conjunto de rotação, o Adobe recomenda a seguinte prática recomendada e impõe os seguintes limites:
 
 | Tipo de limite | Prática recomendada | Limitado imposto |
 | --- | --- | --- |
@@ -149,6 +150,7 @@ Consulte também [Limitações do Dynamic Media](/help/assets/limitations.md).
    * Próximo ao canto superior esquerdo da página Editor de conjunto de rotação, selecione **[!UICONTROL Adicionar ativo]**.
 
    * Próximo ao meio da página Editor do grupo de rotação, selecione **[!UICONTROL Toque para abrir o Seletor de ativos]**.
+
    Toque para selecionar os ativos que deseja incluir no Spin Set. Os ativos selecionados têm um ícone de marca de seleção sobre eles. Quando terminar, próximo ao canto superior direito da página, selecione **[!UICONTROL Selecionar]**.
 
    Com o Seletor de ativos, procure por ativos ao digitar uma palavra-chave e tocar em **[!UICONTROL Retornar]**. Aplique filtros para refinar os resultados da pesquisa. Filtre por caminho, coleção, tipo de arquivo e tag. Selecione o filtro e, em seguida, selecione a variável **[!UICONTROL Filtro]** na barra de ferramentas. Altere a exibição ao tocar no ícone Exibir e selecionar **[!UICONTROL Exibição em coluna]**, **[!UICONTROL Exibição de cartão]** ou **[!UICONTROL Exibição em lista]**.
@@ -159,7 +161,7 @@ Consulte também [Limitações do Dynamic Media](/help/assets/limitations.md).
 
 1. Ao adicionar ativos ao conjunto, eles são automaticamente adicionados em ordem alfanumérica. Você pode reordenar ou classificar manualmente os ativos depois de adicioná-los.
 
-   Se necessário, arraste o ícone Reordenar de um ativo à direita do nome do arquivo do ativo para reordenar imagens para cima ou para baixo na lista definida.
+   Se necessário, arraste o ícone Reordenar de um ativo à direita do nome do arquivo do ativo para reordenar as imagens para cima, para baixo ou para cima na lista definida.
 
    ![Reordene o Quadro 11 no conjunto de rotação arrastando-o para um novo local](assets/6_5_spinset-reorderassets.png).
 
@@ -225,7 +227,6 @@ Se você excluir a imagem que o Experience Manager usa para a miniatura substitu
    * Para excluir um ativo, selecione-o e **[!UICONTROL Excluir ativo]**.
    * Para aplicar uma predefinição, selecione o ícone Predefinição e selecione uma predefinição.
    * Para excluir um Conjunto de rotação inteiro, navegue até o Conjunto de rotação, selecione-o e **[!UICONTROL Excluir]**
-
    >[!NOTE]
    >
    >É possível editar as imagens em um Conjunto de imagens ao navegar até o conjunto e selecionar **[!UICONTROL Definir membros]** no painel à esquerda e selecione o ícone Lápis em um ativo individual para abrir a janela de edição.

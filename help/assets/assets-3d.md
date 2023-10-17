@@ -1,6 +1,6 @@
 ---
 title: Trabalhar com ativos 3D no Dynamic Media
-description: Saiba como trabalhar com ativos 3D no Dynamic Media
+description: Saiba como fazer upload, gerenciar, visualizar e fornecer ativos 3D no Dynamic Media como uma experiência imersiva.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
@@ -8,9 +8,9 @@ content-type: reference
 feature: 3D Assets,Asset Management
 role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '2348'
+source-wordcount: '2354'
 ht-degree: 3%
 
 ---
@@ -54,9 +54,9 @@ A descrição do fluxo de trabalho passo a passo a seguir foi projetada para aju
 >
 >Os ativos 3D não são compatíveis com o Dynamic Media - modo híbrido.
 
-Antes de trabalhar com ativos 3D no Dynamic Media, verifique se o administrador do Experience Manager já ativou e configurou o Dynamic Media Cloud Services no modo Dynamic Media - Scene7.
+Antes de trabalhar com ativos 3D no Dynamic Media, verifique se o administrador do Experience Manager já ativou e configurou o Dynamic Media Cloud Service no modo Dynamic Media - Scene7.
 
-Consulte [Configurar o Dynamic Media Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) em Configuração do Dynamic Media - modo Scene7 e [Solução de problemas do modo Dynamic Media - Scene7](/help/assets/troubleshoot-dms7.md).
+Consulte [Configurar o Dynamic Media Cloud Service](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) em Configuração do Dynamic Media - modo Scene7 e [Solução de problemas do modo Dynamic Media - Scene7](/help/assets/troubleshoot-dms7.md).
 
 1. **Fazer upload de ativos 3D**
 

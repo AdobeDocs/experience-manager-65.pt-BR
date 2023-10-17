@@ -1,18 +1,14 @@
 ---
 title: Gerenciamento de acesso a workflows
-seo-title: Managing Access to Workflows
-description: Saiba como gerenciar o acesso a Workflows.
-seo-description: Learn how to manage access to Workflows.
-uuid: 58f79b89-fe56-4565-a869-8179c1ac68de
+description: Saiba como configurar Listas de controle de acesso de acordo com contas de usuário para permitir (ou desativar) a inicialização e a participação em fluxos de trabalho.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 5150867a-02a9-45c9-b2fd-e536b60ffa8c
 exl-id: cc54d637-d66c-49d2-99ee-00d96f1a74e0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '575'
 ht-degree: 3%
 
 ---
@@ -53,7 +49,7 @@ Os modelos de workflow herdam uma lista de controle de acesso (ACL) padrão para
 
 ### Aplicar uma ACL para o modelo de fluxo de trabalho específico a /var/workflow/models {#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models}
 
-Se o modelo de fluxo de trabalho for armazenado em `/var/workflow/models` em seguida, é possível atribuir uma ACL específica, relevante somente para esse workflow, na pasta:
+Se o modelo de fluxo de trabalho for armazenado em `/var/workflow/models`, é possível atribuir uma ACL específica, relevante somente para esse fluxo de trabalho, na pasta:
 
 1. Abra o CRXDE Lite no navegador da Web (por exemplo, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Na árvore do nó, selecione o nó da pasta de modelos de fluxo de trabalho:
@@ -62,7 +58,7 @@ Se o modelo de fluxo de trabalho for armazenado em `/var/workflow/models` em seg
 
 1. Clique em **Controle de acesso** guia.
 1. No **Políticas do controle de acesso local** (**Lista de controle de acesso**), clique no ícone de adição para **Adicionar entrada**.
-1. No **Adicionar nova entrada** adicionar uma nova ACE com as seguintes propriedades:
+1. No **Adicionar nova entrada** adicione uma ACE com as seguintes propriedades:
 
    * **Principal**: `content-authors`
    * **Tipo**: `Deny`
@@ -81,7 +77,7 @@ Se o modelo de fluxo de trabalho for armazenado em `/var/workflow/models` em seg
 
 ### Crie uma subpasta em /var/workflow/models e aplique a ACL a ela {#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that}
 
-Seu [a equipe de desenvolvimento pode criar os fluxos de trabalho em uma subpasta](/help/sites-developing/workflows-models.md#creating-a-new-workflow) de
+Seu [a equipe de desenvolvimento pode criar os workflows em uma subpasta](/help/sites-developing/workflows-models.md#creating-a-new-workflow) de
 
 `/var/workflow/models`
 
@@ -99,7 +95,7 @@ Em seguida, você pode adicionar uma ACL à própria pasta.
 1. Clique em **Controle de acesso** guia.
 1. No **Política do controle de acesso aplicável** clique no ícone de adição para **Adicionar** uma entrada.
 1. No **Políticas do controle de acesso local** (**Lista de controle de acesso**), clique no ícone de adição para **Adicionar entrada**.
-1. No **Adicionar nova entrada** adicionar uma nova ACE com as seguintes propriedades:
+1. No **Adicionar nova entrada** adicione uma ACE com as seguintes propriedades:
 
    * **Principal**: `content-authors`
    * **Tipo**: `Deny`

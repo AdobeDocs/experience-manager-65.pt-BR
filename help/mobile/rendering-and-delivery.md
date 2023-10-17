@@ -1,13 +1,13 @@
 ---
 title: Renderização e entrega
-description: Renderização e entrega
+description: Saiba como renderizar conteúdo do Adobe Experience Manager por meio dos Servlets padrão do Sling para renderizar o JSON e outros formatos.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '596'
 ht-degree: 6%
 
 ---
@@ -42,7 +42,7 @@ Uso **&lt;resource.caas span=&quot;&quot; id=&quot;1&quot; translate=&quot;no&qu
   </tr>
   <tr>
    <td>EXPORT-CONFIG</td>
-   <td><p><strong>OPCIONAL</strong><br /> </p> <p>uma configuração de exportação foi encontrada em /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> Se omitido, a configuração de exportação padrão será aplicada </p> </td>
+   <td><p><strong>OPCIONAL</strong><br /> </p> <p>uma configuração de exportação foi encontrada em /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> Se omitido, a configuração de exportação padrão é aplicada </p> </td>
   </tr>
   <tr>
    <td>DEPTH-INT</td>

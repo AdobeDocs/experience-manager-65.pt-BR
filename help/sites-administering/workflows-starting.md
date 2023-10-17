@@ -1,18 +1,14 @@
 ---
 title: Inicialização de workflows
-seo-title: Starting Workflows
-description: Saiba como iniciar fluxos de trabalho no AEM.
-seo-description: Learn how to start Workflows in AEM.
-uuid: 0648d335-ecce-459d-95fd-3d4d76181b32
+description: Saiba como administrar workflows no Adobe Experience Manager para iniciá-los usando vários métodos, manual ou automaticamente.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 exl-id: 84a1964c-4121-4763-b946-9eee6093747d
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '799'
 ht-degree: 6%
 
 ---
@@ -87,16 +83,16 @@ Um pacote de workflow:
 ## Iniciar um fluxo de trabalho a partir do console Modelos {#starting-a-workflow-from-the-models-console}
 
 1. Navegue até a **Modelos** console usando **Ferramentas**, **Fluxo de trabalho**, depois **Modelos**.
-1. Selecione o fluxo de trabalho (de acordo com a exibição do console); você também pode usar Pesquisar (parte superior esquerda), se necessário:
+1. Selecione o fluxo de trabalho (de acordo com a exibição do console); também é possível usar Pesquisar (parte superior esquerda), se necessário:
 
    ![wf-103](assets/wf-103.png)
 
    >[!NOTE]
    >
-   >A variável **[Temporário](/help/sites-developing/workflows.md#transient-workflows)** O indicador mostra workflows para os quais o histórico do workflow não será persistente.
+   >A variável **[Temporário](/help/sites-developing/workflows.md#transient-workflows)** O indicador mostra workflows para os quais o histórico do workflow não é persistente.
 
 1. Selecionar **Iniciar fluxo de trabalho** na barra de ferramentas.
-1. A caixa de diálogo Executar fluxo de trabalho será aberta, permitindo especificar:
+1. A caixa de diálogo Executar fluxo de trabalho é aberta, permitindo especificar:
 
    * **Carga**
 
@@ -121,7 +117,7 @@ Um pacote de workflow:
 
    * **Tipo de evento**
 
-     O tipo de evento que iniciará o fluxo de trabalho:
+     O tipo de evento que inicia o fluxo de trabalho:
 
       * Criado
       * Modificado
@@ -147,11 +143,11 @@ Um pacote de workflow:
 
    * **Recursos**
 
-     Uma lista de recursos a serem habilitados. Selecione os recursos necessários usando o seletor da lista suspensa.
+     Uma lista de recursos a serem habilitados. Selecione os recursos necessários usando o seletor suspenso.
 
    * **Recursos desativados**
 
-   Uma lista de recursos a serem desabilitados. Selecione os recursos necessários usando o seletor da lista suspensa.
+   Uma lista de recursos a serem desabilitados. Selecione os recursos necessários usando o seletor suspenso.
 
    * **Modelo de fluxo de trabalho**
 
@@ -170,12 +166,12 @@ Um pacote de workflow:
 
    * **Excluir lista**
 
-     Especifica todos os eventos JCR a serem excluídos (ou seja, ignorados) ao determinar se um fluxo de trabalho deve ser acionado.
+     Isso especifica todos os eventos JCR a serem excluídos (ou seja, ignorados) ao determinar se um fluxo de trabalho deve ser acionado.
 
      Esta propriedade do inicializador é uma lista de itens separados por vírgulas: &quot;
 
       * `property-name` ignorar qualquer `jcr` evento que disparou no nome de propriedade especificado. &quot;
-      * `event-user-data:<*someValue*>` ignora qualquer evento que contenha a variável `*<someValue*`> `user-data` definido por meio do [`ObservationManager` API]https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String.
+      * `event-user-data:<*someValue*>` ignora qualquer evento que contenha a variável `*<someValue*`> `user-data` definido por meio do [`ObservationManager` API]https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
      Por exemplo:
 
@@ -187,7 +183,7 @@ Um pacote de workflow:
 
 1. Selecionar **Criar**, para criar o inicializador e retornar ao console.
 
-   Quando o evento apropriado ocorrer, o inicializador será acionado e o fluxo de trabalho será iniciado.
+   Quando o evento apropriado ocorre, o inicializador é acionado e o fluxo de trabalho é iniciado.
 
 ## Gerenciamento de uma configuração do iniciador {#managing-a-launcher-configuration}
 

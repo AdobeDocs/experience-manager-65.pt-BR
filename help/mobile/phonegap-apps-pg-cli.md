@@ -1,16 +1,14 @@
 ---
 title: Desenvolvimento de aplicativos com a CLI do PhoneGap
-description: Saiba mais sobre como desenvolver aplicativos com a CLI do PhoneGap.
-uuid: 9a66171d-19af-40db-9c07-f5dd9561e1b5
+description: Saiba como desenvolver aplicativos para dispositivos móveis com a CLI do PhoneGap usando um ambiente de desenvolvimento inicializado.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
@@ -23,7 +21,7 @@ ht-degree: 0%
 
 A qualquer momento, como desenvolvedor, você pode executar o aplicativo em um dispositivo ou em um emulador, desde que tenha configurado o ambiente de desenvolvimento.
 
-Para executar os exemplos a seguir, é necessário um sistema que execute o OS X (Mac) com Xcode ou um sistema Mac/Win/Linux com o Android™ SDK instalado.
+Para executar os exemplos a seguir, é necessário um sistema que execute o macOS X com Xcode ou um sistema Mac/Win/Linux com o Android™ SDK instalado.
 
 ## Bootstrap do ambiente de desenvolvimento {#bootstrap-your-development-environment}
 
@@ -41,7 +39,7 @@ Para Android™: para desenvolver iPhones e iPads, é necessário o Android™ S
 
 ## Baixar a Origem {#download-the-source}
 
-Depois de inicializar seu ambiente de desenvolvimento com êxito, baixe a origem do Bloco de build de aplicativo AEM:
+Quando você inicializar seu ambiente de desenvolvimento com êxito, baixe a origem do Bloco de build do aplicativo AEM:
 
 * Clique na divisa suspensa do bloco PhoneGap Build.
 
@@ -153,7 +151,7 @@ Você pode definir pontos de interrupção em qualquer lugar na sua origem. Quan
 
 >[!NOTE]
 >
-Para ver os valores das variáveis, no método atual, passe o mouse sobre ele.
+Para ver os valores das variáveis no método atual, passe o mouse.
 
 ## Próximas etapas {#the-next-steps}
 

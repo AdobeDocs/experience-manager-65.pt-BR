@@ -1,18 +1,14 @@
 ---
 title: Visualização com simulação
-seo-title: Previewing with Preflight
-description: Esta página explica a visualização com o aplicativo Comprovação.
-seo-description: With the Mobile On Demand Preflight app, you can view all projects to which you have access. Follow this page to learn more about this.
-uuid: bea83055-8172-4634-88ec-5d3f163ad8e0
+description: Saiba como usar o aplicativo Comprovação móvel por demanda para visualizar todos os projetos aos quais você tem acesso.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
-discoiquuid: c08729f6-1512-4aee-82bb-7cc05749a72f
 exl-id: 5d2b9743-9601-46e6-9d73-3bf734e04a30
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '271'
 ht-degree: 1%
 
 ---
@@ -27,7 +23,7 @@ Esta página explica a visualização com o aplicativo Comprovação.
 
 As ações a seguir são executadas no aplicativo como um todo.
 
-Com o aplicativo Comprovação por demanda para dispositivo móvel, é possível visualizar todos os projetos aos quais você tem acesso. Depois de selecionar um projeto, você pode pré-visualizar o conteúdo do aplicativo, incluindo navegar pelas páginas e artigos para ter uma ideia de como o aplicativo é exibido e executado em vários dispositivos.
+Com o aplicativo Comprovação por demanda para dispositivos móveis, é possível visualizar todos os projetos aos quais você tem acesso. Depois de selecionar um projeto, você pode pré-visualizar o conteúdo do aplicativo, incluindo navegar pelas páginas e artigos para ter uma ideia de como o aplicativo é exibido e executado em vários dispositivos.
 
 >[!NOTE]
 >
@@ -39,7 +35,7 @@ Com o aplicativo Comprovação por demanda para dispositivo móvel, é possível
 1. Clique nas reticências (...) da **Gerenciar artigos** (ou Banners/Coleções).
 1. Selecionar **Comprovação** na barra de ações.
 1. Clique em **Ativar simulação** da caixa de diálogo.
-1. Seu aplicativo estará pronto para visualização no aplicativo de simulação por demanda para dispositivos móveis.
+1. Seu aplicativo está pronto para visualização no aplicativo de simulação por demanda móvel.
 
 ![chlimage_1-8](assets/chlimage_1-8.gif)
 

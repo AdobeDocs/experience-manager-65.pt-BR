@@ -1,16 +1,12 @@
 ---
 title: Administração de fluxos de trabalho
-seo-title: Administering Workflows
-description: Saiba como administrar workflows no AEM.
-seo-description: Learn how to administer workflows in AEM.
-uuid: d000a13c-97cb-4b1b-809e-6c3eb0d675e8
+description: Saiba como automatizar atividades do Adobe Experience Manager usando workflows.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
 exl-id: 10eecfb8-d43d-4f01-9778-87c752dee64c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 2%
@@ -42,7 +38,6 @@ Os processos de negócios que sua organização estabeleceu podem ser representa
 >* Criação de modelos de workflow e extensão da funcionalidade do workflow: [Desenvolvimento e extensão de workflows](/help/sites-developing/workflows.md).
 >* Melhorar o desempenho de workflows que usam recursos significativos do servidor: [Processamento de fluxo de trabalho simultâneo](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
 >
-
 
 ## Modelos e instâncias de fluxo de trabalho {#workflow-models-and-instances}
 
@@ -85,7 +80,7 @@ Um usuário ou serviço executa etapas de fluxo de trabalho, dependendo do tipo 
 
 >[!NOTE]
 >
->Se ocorrer um erro, a implementação de serviço/etapa deve lidar com o comportamento de um cenário de erro. O próprio mecanismo de fluxo de trabalho repetirá o trabalho, registrará um erro e interromperá a instância.
+>Se ocorrer um erro, a implementação de serviço/etapa deve lidar com o comportamento de um cenário de erro. O próprio motor de workflow tenta a tarefa novamente, registra um erro e interrompe a instância.
 
 ## Status e ações do fluxo de trabalho {#workflow-status-and-actions}
 
@@ -94,7 +89,7 @@ Um workflow pode ter um dos seguintes status:
 * **EM EXECUÇÃO**: a instância do workflow está em execução.
 * **CONCLUÍDO**: a instância do fluxo de trabalho foi encerrada com êxito.
 
-* **SUSPENSO**: marca o workflow como suspenso. No entanto, consulte a nota de advertência abaixo sobre um problema conhecido nesse estado.
+* **SUSPENSO**: marca o workflow como suspenso. No entanto, consulte a Nota de advertência abaixo sobre um problema conhecido nesse estado.
 * **ANULADO**: a instância do workflow foi encerrada.
 * **OBSOLETO**: a progressão da instância de fluxo de trabalho exige que um trabalho em segundo plano seja executado, no entanto, o trabalho não pode ser encontrado no sistema. Essa situação pode ocorrer quando ocorre um erro ao executar o workflow.
 
@@ -102,13 +97,13 @@ Um workflow pode ter um dos seguintes status:
 >
 >Quando a execução de uma Etapa do processo resulta em erros, a etapa é exibida na Caixa de entrada do administrador e o status do fluxo de trabalho é **EM EXECUÇÃO**.
 
-Dependendo do status atual, você pode executar ações em instâncias de fluxo de trabalho em execução quando precisar intervir no progresso normal de uma instância de fluxo de trabalho:
+Dependendo do status, você pode executar ações em instâncias de fluxo de trabalho em execução quando é necessário intervir no progresso normal de uma instância de fluxo de trabalho:
 
 * **Suspender**: a suspensão altera o estado do workflow para Suspenso. Consulte Cuidado abaixo:
 
 >[!CAUTION]
 >
->Marcar um estado de workflow como &quot;Suspender&quot; tem um problema conhecido. Nesse estado, é possível realizar ações em itens de fluxo de trabalho suspensos em uma Caixa de entrada.
+>Marcar um estado de workflow como &quot;Suspender&quot; tem um problema conhecido. Nesse estado, é possível agir em itens de fluxo de trabalho suspensos em uma Caixa de entrada.
 
 * **Retomar**: reinicia um workflow suspenso no mesmo ponto de execução em que ele foi suspenso, usando a mesma configuração.
 * **Encerrar**: encerra a execução do workflow e altera o estado para **ANULADO**. Uma instância de fluxo de trabalho anulada não pode ser reiniciada.

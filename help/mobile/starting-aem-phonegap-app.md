@@ -1,14 +1,14 @@
 ---
 title: Iniciando o AEM PhoneGap
-description: Saiba mais sobre o starterkit para desenvolvedores.
+description: Saiba como usar o starterkit para ajudá-lo a começar com as noções básicas de desenvolvimento do Adobe Experience Manager Mobile.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 7d56b9f0-5aa5-4b68-a85e-7e80415cbc76
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '413'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Para desenvolvedores, o melhor lugar para começar é observar o Adobe Experienc
 
 https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit
 
-O starterkit ajuda você a começar rapidamente, orientando-o pelas noções básicas de desenvolvimento do AEM Mobile, começando com a criação e a governança do projeto, instalando as ferramentas necessárias, definindo um arquétipo Maven, criando, implantando e depois criando sua própria experiência.
+O starterkit ajuda você a começar rapidamente, orientando você pelas noções básicas de desenvolvimento do AEM Mobile. Ele começa com a criação e o controle de projetos, a instalação das ferramentas necessárias, a definição de um arquétipo Maven, a criação, a implantação e a criação de sua própria experiência.
 
 Os desenvolvedores podem usar esse exemplo como ponto de partida para experimentar um aplicativo do AEM Mobile usando o PhoneGap. Executar o starterkit e o aplicativo de referência proporciona uma sólida compreensão das noções básicas para a criação de aplicativos móveis avançados.
 
@@ -38,7 +38,7 @@ Os desenvolvedores podem usar esse exemplo como ponto de partida para experiment
 
 ## Modelos e componentes {#templates-and-components}
 
-AEM *Modelos* e *Componentes* permitir que os proprietários de linhas de negócios criem experiências personalizadas. Ambos *Modelos *e *Componentes* estão disponíveis prontas para uso ou podem ser desenvolvidas de forma personalizada por você, o desenvolvedor, estendendo os componentes existentes ou criando um campo verde (avançado). *Modelos* e *Componentes* são o que permitem que o autor do AEM arraste e solte para criar experiências envolventes e relevantes.
+AEM *Modelos* e *Componentes* permitir que os proprietários de linhas de negócios criem experiências personalizadas. Ambos *Modelos *e *Componentes* estão disponíveis prontas para uso ou podem ser desenvolvidas de forma personalizada por você, o desenvolvedor, estendendo os componentes existentes ou criando um campo verde (avançado). *Modelos* e *Componentes* São o que permite ao autor do AEM arrastar e soltar para criar experiências envolventes e relevantes.
 
 1. [Criar componentes](/help/sites-developing/components.md)
 1. [Criação de modelos](/help/sites-developing/templates.md)

@@ -1,14 +1,14 @@
 ---
 title: Criação para o Adobe PhoneGap Enterprise no Adobe Experience Manager
-description: PhoneGap
+description: Saiba mais sobre a criação para o Adobe PhoneGap Enterprise usando modelos e componentes para adicionar e editar páginas, arrastar e soltar componentes e adicionar mídia.
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 930a6950-150a-4670-ab48-250b655132fb
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 4%
+source-wordcount: '228'
+ht-degree: 5%
 
 ---
 
@@ -28,9 +28,9 @@ Para iniciar uma nova experiência de aplicativo AEM Mobile, é necessário ter 
 
 ## Criação de aplicativos PhoneGap {#authoring-phonegap-applications}
 
-Um ***AEM Author* (ou *Profissional de marketing*)**O é capaz de usar os modelos e componentes prontos para uso para adicionar e editar páginas, arrastar e soltar componentes e adicionar mídia de todos os tipos no DAM, incluindo imagens, vídeos e fragmentos de texto (fragmentos de conteúdo).
+Um ***Autor do AEM* (ou *Profissional de marketing*)**O pode usar os modelos e componentes prontos para uso para adicionar e editar páginas. Você pode arrastar e soltar componentes e adicionar mídias de todos os tipos do DAM, incluindo imagens, vídeos e fragmentos de texto (fragmentos de conteúdo).
 
-Consulte os seguintes recursos para começar:
+Consulte os seguintes recursos:
 
 * [Criação de aplicativos móveis](/help/mobile/phonegap-authoring-apps.md)
 * [Criação e gerenciamento de conteúdo do aplicativo](/help/mobile/phonegap-manage-app-content.md)

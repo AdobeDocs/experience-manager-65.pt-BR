@@ -1,13 +1,13 @@
 ---
 title: Entrega de conteúdo
-description: Entrega de conteúdo
+description: Saiba mais sobre como usar todo o conteúdo do Adobe Experience Manager para fornecer a experiência direcionada do aplicativo.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Isso inclui o uso de ativos, conteúdo do site, conteúdo do CaaS (ao ar) e cont
 
 >[!NOTE]
 >
->**Conteúdo Over-the-Air** pode vir de qualquer um dos itens acima por meio de manipuladores ContentSync. Ele pode ser usado para empacotar e entregar em lote por meio de zips e manter atualizações desses pacotes.
+>**Conteúdo Over-the-Air** pode vir de qualquer uma das opções acima por meio de manipuladores ContentSync. Ele pode ser usado para empacotar e entregar em lote por meio de zips e manter atualizações desses pacotes.
 
 Há três tipos principais de material que os Serviços de conteúdo fornecem:
 
@@ -47,7 +47,7 @@ Uma coleção de ativos pode ser exposta por meio dos Serviços de conteúdo. Ch
 
 Um valor importante dos Content Services é a capacidade de retornar ativos otimizados para o dispositivo. Isso reduz as necessidades de armazenamento do dispositivo local e melhora o desempenho do aplicativo.
 
-A otimização de ativos é uma função do lado do servidor, com base nas informações fornecidas na solicitação da API. Sempre que possível, as representações de ativos devem ser armazenadas em cache para que solicitações semelhantes não exijam uma regeneração da representação de ativos.
+A otimização de ativos é uma função do lado do servidor, com base nas informações fornecidas na solicitação da API. Sempre que possível, as representações de ativos devem ser armazenadas em cache para que solicitações semelhantes não exijam a regeneração da representação do ativo.
 
 ### Fluxo de trabalho dos ativos {#assets-workflow}
 
@@ -70,7 +70,7 @@ Os Content Services fornecem acesso a ativos gerenciados pelo AEM que podem não
 
 #### Ativos gerenciados existentes {#existing-managed-assets}
 
-Um usuário do AEM Sites e do Assets está usando o AEM Assets para gerenciar todo o seu material digital para todos os canais. Eles estão desenvolvendo um aplicativo móvel nativo e precisam usar vários ativos gerenciados pela AEM Assets. Por exemplo, logotipos, imagens de fundo e ícones de botão.
+Um usuário do AEM Sites e do Assets está usando o AEM Assets para gerenciar todo o seu material digital para todos os canais. Eles estão desenvolvendo um aplicativo móvel nativo e devem usar vários ativos gerenciados pela AEM Assets. Por exemplo, logotipos, imagens de fundo e ícones de botão.
 
 Atualmente, eles estão distribuídos pelo repositório de ativos. Os arquivos que o aplicativo deve mencionar estão no seguinte:
 
@@ -127,15 +127,15 @@ Essas entidades de conteúdo são geradas usando um modelo de conteúdo para tra
 
 O conteúdo pode chegar ao aplicativo de várias maneiras.
 
-1. GET ZIPS via AEM Over-the-Air
+1. GET ZIPS por meio de AEM Over-the-Air
 
    * Os manipuladores de sincronização de conteúdo podem atualizar o pacote zip diretamente ou chamando renderizadores de conteúdo existentes
 
       * Manipuladores de plataforma
-      * Manipuladores do AEM
+      * Manipuladores de AEM
       * Manipuladores personalizados
 
-1. Conteúdo do GET diretamente pelos renderizadores de conteúdo
+1. GET conteúdo diretamente por meio de renderizadores de conteúdo
 
    * Renderizadores Sling padrão prontos para uso
    * AEM Mobile/Renderizadores de conteúdo do Content Services

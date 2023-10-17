@@ -1,25 +1,21 @@
 ---
 title: Configuração para aplicativos AEM
-seo-title: Configuring for AEM Apps
-description: Saiba como configurar aplicativos AEM.
-seo-description: Learn how to configure AEM Apps.
-uuid: ab9acd93-da7f-4bb7-8d26-224044899068
+description: Saiba como usar os aplicativos Adobe Experience Manager para atualizar o conteúdo do OTA do seu aplicativo (no ar).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 34f24837-f5e2-41f0-a359-fdb695e1b8f2
 exl-id: f7aa5ac0-3d03-4c04-b9c2-1bda427b0588
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '153'
 ht-degree: 0%
 
 ---
 
 # Configuração para aplicativos AEM{#configuring-for-aem-apps}
 
-Os Aplicativos Adobe Experience Manager oferecem a capacidade de atualizar o conteúdo do seu aplicativo OTA (Over the Air). O conteúdo atualizado é armazenado na instância de publicação. Para permitir que o aplicativo no dispositivo se conecte à instância de publicação e verifique se há atualizações, a instância de publicação precisa ser configurada para permitir um cabeçalho de referenciador vazio.
+O Adobe Experience Manager Apps permite atualizar o conteúdo do OTA do seu aplicativo (no ar). O conteúdo atualizado é armazenado na instância de publicação. Para permitir que o aplicativo no dispositivo se conecte à instância de publicação e verifique se há atualizações, a instância de publicação deve ser configurada para permitir um cabeçalho de referenciador vazio.
 
 ## Configurar cabeçalho de referenciador vazio {#configuring-empty-referrer-header}
 

@@ -1,15 +1,15 @@
 ---
 title: O Editor de itens em massa
-description: Saiba como usar o Editor de itens em massa.
+description: Saiba como usar o Editor de itens em massa para uma edição eficiente quando o contexto visual da página não é necessário.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1159'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ Por exemplo, se você precisar de todos os nomes e endereços de email de usuár
 Um exemplo para ilustrar esse caso de uso está incluído no site do Geometrixx:
 
 1. Navegue até a **Suporte** e, em seguida, para a **Satisfação do Atendimento ao Cliente** pesquisa.
-1. **Editar** o **Início do formulário** parágrafo. Na caixa de diálogo, clique no link **Avançado** , expanda a **Configuração de ação** e, em seguida, clique em **Exibir Dados...**.
+1. **Editar** o **Início do formulário** parágrafo. Na caixa de diálogo, clique na guia **Avançado** , expanda a **Configuração de ação** e, em seguida, clique em **Exibir Dados...**.
 
    ![Exemplo de pesquisa de satisfação do cliente](assets/custsatsurvey.png)
 
@@ -63,7 +63,7 @@ O Editor de itens em massa permite:
 Para usar o Editor de itens em massa para editar vários itens simultaneamente:
 
 1. No **Ferramentas** clique no link **Importadores** pasta para expandi-la.
-1. Clique duas vezes no ícone **Editor de itens em massa** para abri-lo.
+1. Clique duas vezes no ícone **Editor de itens em massa**.
 1. Insira os requisitos de seleção:
 
 <table>
@@ -78,11 +78,11 @@ Para usar o Editor de itens em massa para editar vários itens simultaneamente:
   </tr>
   <tr>
    <td>Parâmetros de consulta</td>
-   <td>Usando parâmetros GQL, insira a sequência de pesquisa que o Editor de itens em massa deve procurar no repositório; por exemplo, <code>type:Page</code> procura todas as páginas no caminho raiz, <code>text:professional</code> procura todas as páginas que contenham a palavra "profissional", e <code>"jcr:title":English</code> O procura todas as páginas cujo título seja "inglês". Você só pode pesquisar por cadeias de caracteres.</td>
+   <td>Usando parâmetros GQL, insira a sequência de pesquisa que o Editor de itens em massa deve procurar no repositório. Por exemplo, <code>type:Page</code> procura todas as páginas no caminho raiz, <code>text:professional</code> procura todas as páginas que contenham a palavra "profissional", e <code>"jcr:title":English</code> O procura todas as páginas cujo título seja "inglês". Você só pode pesquisar por cadeias de caracteres.</td>
   </tr>
   <tr>
    <td>Caixa de seleção Modo de conteúdo</td>
-   <td>Marque esta caixa de seleção para ler as propriedades na <code>jcr:content</code> subnó dos resultados da pesquisa, se existir. Use somente para páginas. Os nomes de propriedades recebem o prefixo <code>"jcr:content/"</code></td>
+   <td>Marque esta caixa de seleção para poder ler as propriedades na <code>jcr:content</code> subnó dos resultados da pesquisa, se existir. Use somente para páginas. Os nomes de propriedades recebem o prefixo <code>"jcr:content/"</code></td>
   </tr>
   <tr>
    <td>Propriedades / Colunas</td>
@@ -104,11 +104,11 @@ Para o exemplo acima, todas as páginas que atendem aos seus critérios de pesqu
 
    ![Resultados do editor em massa](assets/chlimage_1-39.png)
 
-1. Faça as alterações necessárias clicando duas vezes em uma célula.
+1. Clique duas vezes em uma célula para fazer alterações.
 
    ![Edição em massa](assets/srchresultedit.png)
 
-1. Clique em **Salvar** para salvar as alterações (a variável **Salvar** será ativado assim que você editar uma célula).
+1. Clique em **Salvar** para salvar as alterações (a variável **Salvar** é ativado depois de ter editado uma célula).
 
    >[!CAUTION]
    >
@@ -117,18 +117,18 @@ Para o exemplo acima, todas as páginas que atendem aos seus critérios de pesqu
 #### Parâmetros de consulta GQL adicionais {#additional-gql-query-parameters}
 
 * **caminho:** pesquisar somente nós abaixo deste caminho. Se você especificar mais de um termo com um prefixo de caminho, somente o último será considerado.
-* **tipo:** retorna somente nós dos tipos de nó fornecidos. Isso inclui os tipos primário e mixin. Você pode especificar vários tipos de nó separados por vírgula. O GQL retorna nós que sejam de qualquer um dos tipos especificados.
+* **tipo:** retorna somente nós do tipo de nó fornecido. Isso inclui os tipos primário e mixin. Você pode especificar vários tipos de nó separados por vírgula. O GQL retorna nós que sejam de qualquer um dos tipos especificados.
 * **pedido:** ordenar o resultado pelas propriedades fornecidas. Você pode especificar vários nomes de propriedades separados por vírgulas. Para ordenar o resultado em ordem decrescente, basta adicionar um prefixo ao nome da propriedade com um sinal de menos. Por exemplo, order:-name. Usar um sinal de mais retorna o resultado em ordem crescente, que também é o padrão.
 * **limite:** limita o número de resultados usando um intervalo. Por exemplo, limit:10..20 O intervalo é baseado em zero, start é inclusivo e end é exclusivo. Você também pode especificar um intervalo aberto:limit:10. ou limite:..20 Se os pontos forem omitidos e somente um valor for especificado, o GQL retornará no máximo esse número de resultados. Por exemplo, limit:10 (retorna os primeiros dez resultados).
 
 ### Exportar conteúdo {#exporting-content}
 
-Talvez seja necessário exportar o conteúdo e alterá-lo em uma planilha do Excel. Por exemplo, você pode exportar uma lista de endereçamento e alterar o código de área de todos os números de telefone listados diretamente no Excel, ou adicionar linhas adicionais, e assim por diante.
+Se necessário, exporte o conteúdo para uma planilha do Excel para fazer alterações. Por exemplo, talvez você queira exportar uma lista de endereçamento e alterar o código de área de todos os números de telefone listados diretamente no Excel ou adicionar outras linhas.
 
 Para exportar conteúdo:
 
 1. Pesquise o conteúdo conforme descrito em [Pesquisar e editar conteúdo](#searching-and-editing-content).
-1. Clique em **Exportar** para exportar as alterações para uma planilha do Excel separada por tabulação. O AEM WCM pergunta onde você deseja baixar o arquivo.
+1. Clique em **Exportar** para que você possa exportar as alterações em uma planilha do Excel separada por tabulação. O AEM WCM pergunta onde você deseja baixar o arquivo.
 
    >[!NOTE]
    >
