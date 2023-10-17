@@ -1,20 +1,16 @@
 ---
 title: Pontuação avançada e medalhas
-seo-title: Advanced Scoring and Badges
-description: Configurar pontuação avançada
-seo-description: Setting up advanced scoring
-uuid: 48caca57-43d3-4f2f-adf3-257428ba54d5
+description: Saiba como configurar a pontuação avançada para permitir a atribuição de medalhas para identificar membros como especialistas.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
-source-git-commit: 07f8a9f629122102d30676926b225d57e542147d
+source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1069'
 ht-degree: 1%
 
 ---
@@ -23,13 +19,13 @@ ht-degree: 1%
 
 ## Visão geral {#overview}
 
-A pontuação avançada permite a atribuição de medalhas para identificar membros como especialistas. A pontuação avançada atribui pontos com base na quantidade *e* qualidade do conteúdo criado por um membro, enquanto a pontuação básica atribui pontos simplesmente com base na quantidade de conteúdo criado.
+A pontuação avançada permite a atribuição de medalhas para identificar membros como especialistas. A pontuação avançada atribui pontos com base na quantidade *e* qualidade do conteúdo criado por um membro, enquanto a pontuação básica atribui pontos com base na quantidade de conteúdo criado.
 
 Essa diferença se deve ao mecanismo de pontuação usado para calcular as pontuações. O mecanismo de pontuação básico aplica matemática simples. O mecanismo de pontuação avançado é um algoritmo adaptável que recompensa os membros ativos que contribuem com conteúdo valioso e relevante, deduzido por meio do processamento de linguagem natural (NLP) de um tópico.
 
-Além da relevância do conteúdo, os algoritmos de pontuação levam em conta as atividades dos membros, como votação e porcentagem de respostas. Embora a pontuação básica os inclua quantitativamente, a pontuação avançada os usa de forma algorítmica.
+Além da relevância do conteúdo, os algoritmos de pontuação contabilizam as atividades dos membros, como votação e porcentagem de respostas. Embora a pontuação básica os inclua quantitativamente, a pontuação avançada os usa de forma algorítmica.
 
-Portanto, o mecanismo de pontuação avançado requer dados suficientes para tornar a análise significativa. O limite de realizações para se tornar um especialista é constantemente reavaliado à medida que o algoritmo se ajusta continuamente ao volume e à qualidade do conteúdo criado. Existe também um conceito de *decaimento* de postagens mais antigas de um membro. Se um perito deixar de participar na matéria em que obteve o estatuto de perito, num determinado momento [configuração do mecanismo de pontuação](#configurable-scoring-engine)) podem perder o estatuto de perito.
+Portanto, o mecanismo de pontuação avançado requer dados suficientes para tornar a análise significativa. O limite de conquista para se tornar um especialista é constantemente reavaliado à medida que o algoritmo se ajusta continuamente ao volume e à qualidade do conteúdo criado. Existe também um conceito de *decaimento* de postagens mais antigas de um membro. Se um perito deixar de participar na matéria em que obteve o estatuto de perito, num determinado momento [configuração do mecanismo de pontuação](#configurable-scoring-engine)) podem perder o estatuto de perito.
 
 Configurar a pontuação avançada é praticamente o mesmo que a pontuação básica:
 
@@ -51,7 +47,7 @@ As diferenças na configuração das regras de pontuação e medalha são:
 
    * `badgingType` definir como `advanced`
    * `badgingLevels` definir como **número de níveis de especialistas a serem concedidos**
-   * Exige `badgingPaths` matriz de selos em vez de limites, mapeia a matriz de pontos para selos.
+   * Exige `badgingPaths` matriz de selos em vez de limites, o mapeamento de matriz aponta para selos.
 
 >[!NOTE]
 >
@@ -65,27 +61,27 @@ O mecanismo de pontuação avançado fornece uma configuração OSGi com parâme
 
 * **Pontuações e pesos**
 
-   Para um tópico, especifique o verbo que deve ter a maior prioridade ao calcular a pontuação. Um ou mais tópicos podem ser inseridos, mas limitados a **um verbo por tópico**. Consulte [Tópicos e verbos](/help/communities/implementing-scoring.md#topics-and-verbs).
+  Para um tópico, especifique o verbo que deve ter a maior prioridade ao calcular a pontuação. Um ou mais tópicos podem ser inseridos, mas limitados a **um verbo por tópico**. Consulte [Tópicos e verbos](/help/communities/implementing-scoring.md#topics-and-verbs).
 Inserido como `topic,verb` com a vírgula escapada. Por exemplo:
-   `/social/forum/hbs/social/forum\,ADD`
+  `/social/forum/hbs/social/forum\,ADD`
 O padrão é definido como ADICIONAR verbo para componentes de QnA e fórum.
 
 * **Intervalo de pontuação**
 
-   O intervalo das pontuações avançadas é definido por este valor (pontuação máxima possível) e 0 (pontuação mais baixa possível).
+  O intervalo das pontuações avançadas é definido por esse valor (pontuação máxima) e 0 (pontuação mais baixa possível).
 
-   O valor padrão é 100, de modo que o intervalo de pontuação seja de 0 a 100.
+  O valor padrão é 100, de modo que o intervalo de pontuação seja de 0 a 100.
 
 * **Intervalo de tempo de decaimento da entidade**
 
-   Esse parâmetro representa o número de horas após o qual todas as pontuações da entidade são decaídas. Isso é necessário para não incluir mais conteúdo antigo nas pontuações de um site da comunidade.
+  Esse parâmetro representa o número de horas após o qual todas as pontuações da entidade são decaídas. Isso é necessário para não incluir mais conteúdo antigo nas pontuações de um site da comunidade.
 
-   O valor padrão é de 216.000 horas (~24 anos).
+  O valor padrão é de 216.000 horas (~24 anos).
 
 * **Pontuação da taxa de crescimento**
 Isso especifica a pontuação entre 0 e o intervalo de pontuação, além do qual o crescimento diminui para limitar o número de especialistas.
 
-   O valor padrão é 50.
+  O valor padrão é 50.
 
 ## Regras de pontuação avançadas {#advanced-scoring-rules}
 
@@ -97,7 +93,7 @@ Se um membro ganhou uma medalha de especialista em um tópico que não está mai
 
 ### scoringType {#scoringtype}
 
-Uma regra de pontuação é um conjunto de sub-regras de pontuação, cada uma das quais declara o `scoringType`.
+Uma regra de pontuação é um conjunto de subregras de pontuação, cada uma das quais declara o `scoringType`.
 
 Para chamar o mecanismo de pontuação avançado, a variável `scoringType`deve ser definido como `advanced`.
 
@@ -150,7 +146,7 @@ Em vez de associar pontos a uma imagem de selo, é necessário apenas identifica
   <tr>
    <td>scoringRules</td>
    <td>String[]</td>
-   <td><em>(Opcional)</em> Uma string de vários valores para restringir a regra de notificação aos eventos de pontuação identificados pelas regras de pontuação listadas.<br /> Exemplo de entrada:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> O padrão é sem restrição.</td>
+   <td><em>(Opcional)</em> Uma string de vários valores para restringir a regra de selo aos eventos de pontuação identificados por uma ou mais regras de pontuação listadas.<br /> Exemplo de entrada:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> O padrão é sem restrição.</td>
   </tr>
  </tbody>
 </table>
@@ -163,7 +159,7 @@ Incluído nesta versão beta está um selo de especialista baseado em recompensa
 
 * `expert`
 
-   `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
+  `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
 ![selo de especialista](assets/included-badge.png)
 
@@ -205,7 +201,7 @@ Estão incluídas na versão beta duas regras de pontuação avançadas para o [
 * Ambos `rules` e `sub-rules` os nós são do tipo `cq:Page`.
 * `subRules` é um atributo do tipo String`[]` no campo de `jcr:content` nó.
 * `sub-rules` podem ser compartilhados entre várias regras de pontuação.
-* `rules` O deve estar localizado em um local de repositório com permissão de leitura para todos.
+* `rules` deve estar em um local de repositório com permissão de leitura para todos.
 * Os nomes das regras devem ser exclusivos independentemente da localização.
 
 ### Regras de insígnia incluídas {#included-badging-rules}
@@ -218,5 +214,5 @@ Estão incluídas na versão duas regras avançadas de criação de tags que cor
 **Notas:**
 
 * `rules` Os nós são do tipo cq:Page.
-* `rules` O deve estar localizado em um local de repositório com permissão de leitura para todos.
+* `rules` deve estar em um local de repositório com permissão de leitura para todos.
 * Os nomes das regras devem ser exclusivos independentemente da localização.

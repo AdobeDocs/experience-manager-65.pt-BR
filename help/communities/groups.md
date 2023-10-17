@@ -1,21 +1,17 @@
 ---
 title: Console de grupos da comunidade
-seo-title: Community Groups Console
-description: O console Grupos permite criar grupos da comunidade
-seo-description: Groups console lets you create Community groups
-uuid: 21e2bde3-7354-4193-bcb3-c672c6342252
+description: Saiba mais sobre o console Grupos da comunidade que permite criar grupos da comunidade quando a estrutura de modelo de um site da comunidade inclui a função de grupos.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
 role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1688'
 ht-degree: 2%
 
 ---
@@ -39,7 +35,7 @@ As diferentes facetas dos grupos da comunidade são:
 <!-- This is a 404 on helpx. Please update or remove.
 >[!NOTE]
 >
->Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), will not be listed in the Community Groups console, and thus, are not modifiable using the console.
+>Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), is not listed in the Community Groups console, and thus, are not modifiable using the console.
 -->
 
 >[!NOTE]
@@ -52,19 +48,19 @@ As diferentes facetas dos grupos da comunidade são:
 
 Para acessar o console Grupos:
 
-* Na criação, faça logon com privilégios de administrador.
+* Em Autor, faça logon com privilégios de administrador.
 * Na navegação global: **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
-* Selecione uma pasta existente do site da comunidade para abri-la.
+* Selecione uma pasta existente do site da comunidade para que você possa abri-la.
 * Selecione uma instância de um site da comunidade dentro da pasta.
 
    * A estrutura do site da comunidade deve incluir uma função de grupos.
-   * Estas capturas de tela são do tutorial de Introdução após [criação de grupos ao publicar](/help/communities/published-site.md).
+   * Estas capturas de tela são do tutorial Introdução após [criação de grupos ao publicar](/help/communities/published-site.md).
 
   ![create-group](assets/create-group.png)
 
-* Selecione o **Pasta Grupos** para abri-lo.
+* Selecione o **Pasta Grupos** para que você possa abri-lo.
 
-  Quando abertos, todos os grupos existentes, sejam eles criados no autor ou na publicação, são exibidos.
+  Quando abertos, todos os grupos existentes, sejam eles criados em Autor ou Publicação, são exibidos.
 
   Nesse console Grupos, é possível criar novos grupos.
 
@@ -92,14 +88,14 @@ A raiz padrão é o site pai, mas a raiz pode ser movida para qualquer local no 
 
 * **Idiomas adicionais disponíveis do Grupo da comunidade** menu
 
-  Use o menu suspenso para selecionar os idiomas do grupo da comunidade disponíveis. O menu exibe todos os idiomas nos quais o site pai da comunidade é criado. Os usuários podem selecionar entre esses idiomas para criar grupos em vários locais nesta única etapa. O mesmo grupo é criado em vários idiomas especificados no console Grupos dos respectivos sites de comunidade.
+  Use o menu suspenso para selecionar os idiomas disponíveis do grupo da comunidade. O menu exibe todos os idiomas nos quais o site pai da comunidade é criado. Os usuários podem selecionar entre esses idiomas para criar grupos em vários locais nesta única etapa. O mesmo grupo é criado em vários idiomas especificados no console Grupos dos respectivos sites de comunidade.
 
 * **Nome do grupo da comunidade**
 
   O nome da página raiz do grupo que aparece no URL. Evite usar caracteres de sublinhado (_) e palavras-chave, como recursos e configuração no nome do grupo.
 
    * Verifique novamente o nome, pois ele não pode ser facilmente alterado após a criação do grupo.
-   * O URL base será exibido abaixo do `Community Group Name`.
+   * O URL base é exibido abaixo do `Community Group Name`.
    * Para um URL válido, anexe &quot;.html&quot;
      *por exemplo*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
@@ -115,7 +111,7 @@ A raiz padrão é o site pai, mas a raiz pode ser movida para qualquer local no 
 
 A estrutura utiliza `Twitter Bootstrap` para oferecer um design responsivo e flexível ao site. Um dos muitos temas de Bootstrap pré-carregados pode ser selecionado para estilizar o modelo de grupo da comunidade selecionado, ou um tema de Bootstrap pode ser carregado.
 
-Quando selecionado, o tema será sobreposto por uma marca de seleção azul opaca.
+Quando selecionado, o tema é sobreposto por uma marca de seleção azul opaca.
 
 É possível selecionar um tema que difere do tema do site principal.
 
@@ -131,12 +127,12 @@ A imagem deve ser dimensionada para ter a largura esperada da página no navegad
 
 Ao criar ou selecionar uma imagem, lembre-se:
 
-* A altura da imagem será cortada para 120 pixels, medidos a partir da borda superior da imagem
+* A altura da imagem é cortada para 120 pixels, medidos a partir da borda superior da imagem
 * A imagem é fixada na borda esquerda da janela do navegador
 * Não há redimensionamento da imagem, de modo que, quando a largura da imagem for:
 
-   * Menor que a largura do navegador, a imagem será repetida horizontalmente.
-   * Maior que a largura do navegador, a imagem parecerá estar cortada.
+   * Menor que a largura do navegador, a imagem é repetida horizontalmente.
+   * Maior que a largura do navegador, a imagem aparece cortada.
 
 ### Etapa 3: Configurações {#step-settings}
 
@@ -148,7 +144,7 @@ Ao criar ou selecionar uma imagem, lembre-se:
 
 Por padrão, a lista de moderadores do site da comunidade principal é herdada.
 
-É possível adicionar moderadores específicos ao grupo. Procurar por membros (do ambiente de publicação) para adicioná-los como moderadores
+É possível adicionar moderadores especificamente ao grupo. Procurar por membros (do ambiente de publicação) para adicioná-los como moderadores
 
 **Agrupar administradores**
 
@@ -170,7 +166,7 @@ A configuração de associação permite a seleção de uma das três maneiras d
 
 * **Associação necessária**
 
-  Se selecionado, o grupo da comunidade será aberto. Os membros do site da comunidade podem exibir o conteúdo do grupo, mas precisam ingressar no grupo para publicar conteúdo. Os membros se juntam selecionando o `Join` no ambiente de publicação. O padrão não está selecionado.
+  Se selecionado, o grupo da comunidade será aberto. Os membros do site da comunidade podem exibir o conteúdo do grupo, mas devem ingressar no grupo para publicar conteúdo. Os membros se juntam selecionando o `Join` no ambiente de publicação. O padrão não está selecionado.
 
 * **Associação restrita**
 
@@ -196,7 +192,7 @@ Se algum ajuste for necessário, use o **Voltar** botão para criá-los.
 
 Uma vez **Criar** for selecionada e iniciada, o processo de criação do grupo não poderá ser interrompido.
 
-Quando o processo for concluído, o cartão do novo site da subcomunidade (grupo) será exibido no console Grupos do Sites de comunidades, no qual os autores podem adicionar conteúdo da página, ou os administradores podem modificar as propriedades do site.
+Quando o processo for concluído, o cartão do novo site da subcomunidade (grupo) será exibido no console Grupos do Sites de comunidades, no qual os autores podem adicionar conteúdo à página, ou os administradores podem modificar as propriedades do site.
 
 ![criar grupo da comunidade](assets/create-community-groups.png)
 
@@ -229,7 +225,7 @@ O painel BÁSICO permite a modificação de
 
 O Nome do grupo da comunidade não pode ser modificado.
 
-Escolher um modelo de grupo da comunidade diferente não afetaria um site de grupo da comunidade existente, pois nenhuma conexão permanece entre modelos e sites.
+Escolher um modelo de grupo da comunidade diferente não teria efeito em um site de grupo da comunidade existente, pois nenhuma conexão permanece entre modelos e sites.
 
 Em vez disso, a variável [ESTRUTURA](#modify-structure) da subcomunidade pode ser modificada.
 
@@ -253,7 +249,7 @@ Modifique a ordem das funções conforme exibidas na barra de navegação de ní
 >
 >Embora o título de exibição possa ser alterado sem efeitos colaterais, não é recomendável editar o nome do URL de uma função da comunidade que pertence a um site da comunidade.
 >
->Por exemplo, renomear o URL não moverá o UGC existente, tendo o efeito de &quot;perder&quot; o UGC.
+>Por exemplo, renomear o URL não move o UGC existente, portanto, tem o efeito de &quot;perder&quot; o UGC.
 
 >[!CAUTION]
 >
@@ -272,7 +268,7 @@ O painel DESIGN permite a modificação do tema:
 * [Tema do grupo da comunidade](#community-group-theme)
 * [Marca de grupo da comunidade](#community-group-branding)
 
-   * Role a tela até a parte inferior do painel para alterar a imagem da marca.
+   * Role até a parte inferior do painel para que você possa alterar a imagem da marca.
 
 ### Modificar configurações {#modify-settings}
 
@@ -284,7 +280,7 @@ A variável [ASSOCIAÇÃO](#membership) O painel é apenas informativo. Não é 
 
 ### Modificar miniatura {#modify-thumbnail}
 
-A variável [MINIATURA](#thumbnail) permite que uma imagem seja carregada para representar o grupo da comunidade para os visitantes do site no ambiente de publicação, bem como no console Grupos do site Communities no ambiente de criação.
+A variável [MINIATURA](#thumbnail) permite que uma imagem seja carregada para representar o grupo da comunidade para os visitantes do site no ambiente de publicação e no console Grupos do site das comunidades no ambiente de criação.
 
 ## Publicar o grupo {#publish-the-group}
 
@@ -292,7 +288,7 @@ A variável [MINIATURA](#thumbnail) permite que uma imagem seja carregada para r
 
 Depois que um grupo da comunidade tiver sido recém-criado ou modificado, é possível publicar (ativar) o grupo selecionando o `Publish Site` ícone.
 
-Depois que o grupo for publicado com êxito, uma mensagem será exibida:
+Depois que o grupo for publicado com êxito, a seguinte mensagem será exibida:
 
 ![publicado pelo grupo](assets/group-published.png)
 
