@@ -1,20 +1,16 @@
 ---
 title: Moderação de conteúdo da comunidade
-seo-title: Moderating Community Content
-description: Conceitos e ações de moderação
-seo-description: Moderation concepts and actions
-uuid: 5c991d3a-0037-4d78-8f91-bb62e44441fa
+description: Saiba como moderar conteúdo gerado pelo usuário para que você possa reconhecer contribuições positivas e limitar as negativas, como spam e linguagem abusiva.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '1515'
+source-wordcount: '1516'
 ht-degree: 2%
 
 ---
@@ -34,13 +30,13 @@ O conteúdo da comunidade, também conhecido como conteúdo gerado pelo usuário
 * [QnA](/help/communities/working-with-qna.md): os membros criam uma pergunta ou respondem a uma pergunta.
 * [Resenhas](/help/communities/reviews.md): os membros postam um comentário ao classificar um item.
 
-A moderação da UGC é útil para reconhecer contribuições positivas, bem como limitar as negativas (como spam e linguagem abusiva). O UGC pode ser moderado a partir de vários ambientes:
+A moderação de UGC é útil para reconhecer contribuições positivas e limitar as negativas (como spam e linguagem abusiva). O UGC pode ser moderado a partir de vários ambientes:
 
 * [Armazenamento de conteúdo da comunidade](working-with-srp.md)
 
 * [Console de moderação em massa](moderation.md)
 
-  O console Moderação pode ser acessado por administradores e [moderadores da comunidade](/help/communities/users.md) no ambiente público, bem como por administradores no ambiente de autor. Isso é possível quando o conteúdo da comunidade é armazenado em um [armazenamento comum](/help/communities/working-with-srp.md).
+  O console Moderação pode ser acessado por administradores e [moderadores da comunidade](/help/communities/users.md) no ambiente público e pelos administradores no ambiente de criação. Isso é possível quando o conteúdo da comunidade é armazenado em um [armazenamento comum](/help/communities/working-with-srp.md).
 
 * [Moderação no contexto](in-context.md)
 
@@ -185,19 +181,19 @@ A ação Fechar/Reabrir pode ser executada por administradores ou moderadores da
 
 Sinalizar é um meio para qualquer membro conectado, exceto para o criador do conteúdo, para indicar que há um problema com o conteúdo de uma publicação. Depois de sinalizado, um ícone de não sinalizar é exibido, permitindo que o mesmo membro remova o sinalizador do conteúdo.
 
-A moderação do contexto interno pode ser configurada para permitir que os membros selecionem um motivo ao sinalizar uma publicação. A lista de motivos de sinalizador selecionáveis pode ser configurada, incluindo se um motivo personalizado pode ou não ser inserido. O motivo do sinalizador é salvo com o UGC, mas o motivo não aciona nenhuma ação específica. Somente o número de sinalizadores aciona uma notificação. O conteúdo sinalizado é anotado como tal, para que os moderadores possam agir nele.
+A moderação do contexto interno pode ser configurada para permitir que os membros selecionem um motivo ao sinalizar uma publicação. A lista de motivos de sinalizador selecionáveis pode ser configurada, incluindo se um motivo personalizado pode ser inserido. O motivo do sinalizador é salvo com o UGC, mas o motivo não aciona nenhuma ação específica. Somente o número de sinalizadores aciona uma notificação. O conteúdo sinalizado é anotado como tal, para que os moderadores possam agir nele.
 
 O sistema rastreia todos os sinalizadores, quem sinalizou, o motivo do sinalizador e envia um evento quando o limite é atingido. Se o UGC for Permitido por um moderador da comunidade, esses sinalizadores serão arquivados. Após permitir e arquivar, se houver sinalizadores subsequentes, eles serão arquivados como se não houvesse sinalizadores anteriores.
 
 ### Permitir {#allow}
 
-A ação Permitir é uma opção para UGC que foi sinalizada, negada ou não foi aprovada em um sistema pré-moderado. A ação Permitir limpará todos os status sinalizados ou negados/spam presentes e arquivará todos os dados sinalizados.
+A ação Permitir é uma opção para UGC que foi sinalizada, negada ou não foi aprovada em um sistema pré-moderado. A ação Permitir limpa todos os status sinalizados ou negados/spam presentes e arquiva todos os dados sinalizados.
 
 ## Conceitos comuns de moderação {#common-moderation-concepts}
 
 ### Pré-moderação {#premoderation}
 
-Quando o UGC for pré-moderado, a publicação não aparecerá no site publicado até ser aprovada por uma ação de moderação. Durante a criação de um [site da comunidade](/help/communities/sites-console.md), marcando a caixa [O conteúdo é pré-moderado](sites-console.md#moderation) habilitará a pré-moderação para todo o site. Depois que os componentes forem colocados em uma página, os componentes que oferecem suporte à moderação poderão ser configurados para pré-moderação usando uma configuração na caixa de diálogo de edição:
+Quando o UGC é pré-moderado, a publicação não aparece no site publicado até ser aprovada por uma ação de moderação. Durante a criação de um [site da comunidade](/help/communities/sites-console.md), marcando a caixa [O conteúdo é pré-moderado](sites-console.md#moderation) permite a pré-moderação para todo o site. Quando os componentes são colocados em uma página, os componentes que oferecem suporte à moderação podem ser configurados para pré-moderação usando uma configuração na caixa de diálogo de edição:
 
 * [Comentários](comments.md) e [análises](reviews.md)
 in **[!UICONTROL Moderação de usuário]** > **[!UICONTROL Pré-moderação]**.
@@ -207,11 +203,11 @@ in **[!UICONTROL Configurações]** > **[!UICONTROL Moderado]**.
 
 ### Detecção de spam {#spam-detection}
 
-A detecção de spam é uma funcionalidade de moderação automática que filtra partes indesejáveis do conteúdo gerado pelo usuário enviado, marcando-as como spam. Depois de habilitado, ele identifica se um conteúdo gerado pelo usuário é spam ou não, com base em uma coleção pré-configurada de palavras de spam. As palavras de spam padrão são fornecidas em
+A detecção de spam é uma funcionalidade de moderação automática que filtra partes indesejáveis de conteúdo enviado gerado pelo usuário, marcando-as como spam. Depois de habilitado, ele identifica se um conteúdo gerado pelo usuário é spam ou não com base em uma coleção pré-configurada de palavras de spam. As palavras de spam padrão são fornecidas em
 
 `/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`.
 
-No entanto, para personalizar ou estender as palavras de spam padrão, crie um conjunto de palavras no diretório /apps seguindo a estrutura das palavras de spam padrão por meio de [sobreposição](/help/communities/overlay-comments.md).
+No entanto, para personalizar ou estender as palavras de spam padrão, crie um conjunto de palavras no diretório /apps seguindo a estrutura das palavras de spam padrão com [sobreposição](/help/communities/overlay-comments.md).
 
 Uma publicação gerada pelo usuário (em todos os tipos de conteúdo, por exemplo, blogs, fóruns e comentários) contendo palavras de spam é marcada com o texto &quot;Esta publicação foi classificada como spam&quot; acima da publicação.
 
@@ -230,13 +226,13 @@ Para ativar o mecanismo de detecção de spam, siga estas etapas:
 
 >[!NOTE]
 >
->A detecção de spam é implementada somente para o idioma inglês.
+>A detecção de spam é implementada somente para locais em inglês.
 
 ### Sentimento {#sentiment}
 
 O sentimento é calculado com base no número de palavras-chave positivas e negativas ([watchwords](#configuringwatchwords)) presente em uma publicação (UGC).
 
-A análise de sentimentos usa um conjunto de regras pré-configuradas e calcula o sentimento do UGC. As regras padrão estão localizadas em: `/libs/cq/workflow/components/workflow/social/sentiments/rules.`
+A análise de sentimentos usa um conjunto de regras pré-configuradas e calcula o sentimento do UGC. As regras padrão estão em `/libs/cq/workflow/components/workflow/social/sentiments/rules`.
 
 O valor que as regras geram é de 1 (todas negativas, sem palavras positivas) a 10 (todas positivas, sem palavras negativas). Um valor de sentimento de 5 é um sentimento neutro e é o padrão.
 
@@ -247,7 +243,7 @@ As regras definidas no componente /libs são:
 * Regra 3: defina o valor como 3 se houver mais palavras negativas do que palavras positivas.
 * Regra 4: defina o valor como 8 se houver mais palavras positivas do que palavras negativas.
 
-Para substituir ou adicionar regras, crie um conjunto de regras no diretório /apps seguindo a estrutura das regras padrão. Edite a configuração do sentimento para identificar o local das regras.
+Para substituir ou adicionar regras, crie um conjunto de regras no diretório /apps seguindo a estrutura das regras padrão. Edite a configuração do sentimento para poder identificar o local das regras.
 
 Depois de analisado, o sentimento é armazenado com o UGC.
 
@@ -255,7 +251,7 @@ No [console de moderação em massa](/help/communities/moderation.md)No entanto,
 
 #### Watchwords {#watchwords}
 
-As comunidades AEM fornecem uma *analisador de palavra-chave* como uma etapa no processo para avaliar [sentimento](#sentiment). A contribuição para o valor do sentimento fornecida pelas palavras de observação é devido a uma comparação de palavras de observação negativas e positivas usadas no conteúdo publicado, bem como palavras proibidas.
+O AEM Communities fornece uma *analisador de palavra-chave* como uma etapa no processo para avaliar [sentimento](#sentiment). A contribuição para o valor do sentimento fornecida pelas palavras de observação é devido a uma comparação de palavras de observação negativas e positivas usadas no conteúdo publicado e palavras proibidas.
 
 #### Configurar o sentimento e as palavras-chave {#configure-sentiment-and-watchwords}
 
@@ -270,7 +266,7 @@ Para configurar o sentimento e as palavras de observação:
 * Faça logon na instância do autor como administrador.
 * Abertura [Console da Web](https://localhost:4502/system/console/configMgr).
 * Localizar `sentimentprocess.name`.
-* Selecione a configuração a ser aberta no modo de edição.
+* Selecione a configuração para abri-la no modo de edição.
 
 ![sentimentprocess](assets/sentimentprocess.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Console de sites das comunidades
-description: Como acessar o console Sites de comunidades
+description: Saiba como acessar o console Sites de comunidades para criação, edição e gerenciamento de sites.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '3082'
+source-wordcount: '3089'
 ht-degree: 4%
 
 ---
@@ -49,7 +49,7 @@ A prática recomendada para garantir que o site esteja preparado para suportar m
 
 ## Acesso ao console Sites de comunidades {#accessing-communities-sites-console}
 
-No ambiente de criação, para acessar o console Sites de comunidades:
+No ambiente Autor, para acessar o console Sites de comunidades:
 
 * Na navegação global: **[!UICONTROL Communities]** > **[!UICONTROL Sites]**
 

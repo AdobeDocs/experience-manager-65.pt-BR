@@ -1,19 +1,15 @@
 ---
 title: Configuração de armazenamento
-seo-title: Storage Configuration
-description: Como acessar o console de configuração de armazenamento
-seo-description: How to access the Storage Configuration Console
-uuid: 6a5a71d5-6aaa-4635-8852-4dae33c497a9
+description: Saiba mais sobre o console Configuração de armazenamento como um meio de identificar o armazenamento escolhido para o conteúdo da comunidade, também conhecido como conteúdo gerado pelo usuário.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
 role: Admin
 exl-id: 67de7e26-3f93-4034-9e3a-5c127f7447bc
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '210'
 ht-degree: 4%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 4%
 
 A configuração de armazenamento é o meio de identificar o armazenamento escolhido para o conteúdo da comunidade, também conhecido como conteúdo gerado pelo usuário (UGC).
 
-Essa configuração informa o código AEM Communities sobre qual implementação do SRP (Storage Resource Provider, provedor de recursos de armazenamento) deve ser usada ao acessar o UGC e deve refletir a topologia estabelecida quando o AEM foi implantado.
+Essa configuração informa o código AEM Communities sobre qual implementação do SRP (provedor de recursos de armazenamento) é usada ao acessar o UGC. Deve refletir a topologia estabelecida quando o Adobe Experience Manager (AEM) foi implantado.
 
 Para uma discussão sobre opções de armazenamento e topologias de implantação, visite:
 
@@ -33,7 +29,7 @@ Para uma discussão sobre opções de armazenamento e topologias de implantaçã
 
 ![jsrp-configuration](assets/jsrp-configuration.png)
 
-No ambiente de criação, para acessar o console de configuração de armazenamento.
+No ambiente do Author, para acessar o console de configuração de armazenamento.
 
 * Na navegação global, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Communities]** > **[!UICONTROL Configuração de armazenamento]**
 
@@ -50,9 +46,9 @@ Para selecionar uma opção de armazenamento diferente do JCR padrão:
 
 ### Sobre o armazenamento JCR {#about-jcr-storage}
 
-Observe que, se nenhuma seleção for feita, o padrão será o repositório AEM, JCR.
+Se nenhuma seleção for feita, o padrão será o repositório AEM, JCR.
 
-O JCR é *não* um armazenamento comum compartilhado pelos ambientes do autor e de publicação. O conteúdo da comunidade será visível somente no ambiente de autor ou publicação em que foi criado.
+O JCR é *não* um armazenamento comum compartilhado pelos ambientes Autor e Publicação. O conteúdo da comunidade é visível somente no ambiente de Autor ou Publicação em que foi criado.
 
 Visita [Armazenamento JCR](jsrp.md) para obter informações adicionais.
 

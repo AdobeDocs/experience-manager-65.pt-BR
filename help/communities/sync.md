@@ -1,20 +1,16 @@
 ---
 title: Sincronização de usuários das comunidades
-seo-title: Communities User Synchronization
-description: Como a sincronização de usuários funciona
-seo-description: How user synchronization works
-uuid: 772b82bd-a66c-4c1d-b80b-dcff77c873a3
+description: Saiba como a sincronização de usuários funciona no Adobe Experience Manager Communities.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '2481'
+source-wordcount: '2471'
 ht-degree: 2%
 
 ---
@@ -23,65 +19,63 @@ ht-degree: 2%
 
 ## Introdução {#introduction}
 
-No AEM Communities, no ambiente de publicação (dependendo das permissões configuradas), *visitantes do site* pode tornar-se *membros*, criar *grupos de usuários*, e edite seus *perfil do membro* .
+Nas comunidades Adobe Experience Manager (AEM), no ambiente Publicar (dependendo das permissões configuradas), *visitantes do site* pode tornar-se *membros*, criar *grupos de usuários*, e edite seus *perfil do membro* .
 
-*Dados do usuário* é um termo usado para se referir a *usuários*, *perfis de usuário* e *grupos de usuários*.
+*Dados do usuário* refere-se a *usuários*, *perfis de usuário*, e *grupos de usuários*.
 
-*Membros* é um termo usado para se referir a *usuários* registrados no ambiente de publicação, em vez de usuários registrados no ambiente de autor.
+*Membros* consulte *usuários* registrados no ambiente de publicação, em vez de usuários registrados no ambiente de autor.
 
 Para obter mais informações sobre dados do usuário, visite [Gerenciar usuários e grupos de usuários](/help/communities/users.md).
 
 ## Sincronização de usuários em um farm de publicação {#synchronizing-users-across-a-publish-farm}
 
-Por design, os dados do usuário criados no ambiente de publicação não aparecem no ambiente de autor.
+Por design, os dados do usuário criados no ambiente de Publicação não aparecem no ambiente de Autor.
 
-A maioria dos dados do usuário criados no ambiente de criação destina-se a permanecer no ambiente de criação e não é sincronizada nem replicada para instâncias de publicação.
+A maioria dos dados do usuário criados no ambiente do Autor deve permanecer no ambiente do Autor e não é sincronizada nem replicada para instâncias de Publicação.
 
-Quando a variável [topologia](/help/communities/topologies.md) é um [publicar farm](/help/sites-deploying/recommended-deploys.md#tarmk-farm), o registro e as modificações feitas em uma instância de publicação precisam ser sincronizados com outras instâncias de publicação. Os membros precisam fazer logon e ver os dados em qualquer nó de publicação.
+Quando a variável [topologia](/help/communities/topologies.md) é um [publicar farm](/help/sites-deploying/recommended-deploys.md#tarmk-farm), o registro e as modificações feitas em uma instância de publicação devem ser sincronizados com outras instâncias de publicação. Os membros devem ser capazes de fazer logon e ver seus dados em qualquer nó Publicar.
 
-Quando a sincronização de usuários está habilitada, os dados do usuário são sincronizados automaticamente nas instâncias de publicação no farm.
+Quando a sincronização de usuários está habilitada, os dados do usuário são sincronizados automaticamente nas instâncias de Publicação no farm.
 
 ### Instruções de Configuração da Sincronização de Usuário {#user-sync-setup-instructions}
 
-Para obter instruções detalhadas, passo a passo, sobre como habilitar a sincronização em um farm de publicação, consulte:
+Para obter instruções detalhadas e passo a passo sobre como habilitar a sincronização em um farm de publicação, consulte [Sincronização de usuário](/help/sites-administering/sync.md).
 
-* [Sincronização de usuário](/help/sites-administering/sync.md)
-
-## Sincronização do usuário em segundo plano  {#user-sync-in-the-background}
+## Sincronização do usuário em segundo plano {#user-sync-in-the-background}
 
 ![sling-dist-workflow](assets/sling-dist-workflow.png)
 
 * **pacote vlt**
 
-  É um arquivo zip de todas as alterações feitas em um editor e precisam ser distribuídas entre editores. As alterações em um publicador geram eventos que são escolhidos pelo ouvinte de eventos de alteração. Isso cria um pacote vlt que contém todas as alterações.
+  É um arquivo zip de todas as alterações feitas em um Editor e deve ser distribuído entre os editores. As alterações em um publicador geram eventos que são escolhidos pelo ouvinte de eventos de alteração. Isso cria um pacote vlt que contém todas as alterações.
 
 * **pacote de distribuição**
 
-  Ele contém informações de distribuição do Sling. Essa é a informação sobre onde o conteúdo precisa ser distribuído e quando foi distribuído por último.
+  Ele contém informações de distribuição do Sling. Essas são as informações sobre onde o conteúdo deve ser distribuído e quando ele foi distribuído por último.
 
 ## O Que Acontece Quando... {#what-happens-when}
 
 ### Publicar site no console Sites de comunidades {#publish-site-from-communities-sites-console}
 
-Na criação, quando um site da comunidade é publicado do [Console de sites das comunidades](/help/communities/sites-console.md), o efeito é [replicar](/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) as páginas associadas e o Sling distribuem os grupos de usuários da comunidade criados dinamicamente, incluindo a associação.
+Em Autor, quando um site da comunidade é publicado do [Console de sites das comunidades](/help/communities/sites-console.md), o efeito é [replicar](/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) as páginas associadas e o Sling distribuem os grupos de usuários da comunidade criados dinamicamente, incluindo a associação.
 
 ### O usuário é criado ou edita o perfil ao publicar {#user-is-created-or-edits-profile-on-publish}
 
-Por design, os usuários e perfis criados no ambiente de publicação (como por autorregistro, logon social, autenticação LDAP) não aparecem no ambiente de criação.
+Por design, os usuários e perfis criados no ambiente de publicação (como por autorregistro, logon social, autenticação LDAP) não aparecem no ambiente de autor.
 
 Quando a topologia é uma [publicar farm](/help/communities/topologies.md) e a sincronização do usuário tiver sido configurada corretamente, a variável *usuário* e *perfil do usuário* é sincronizado no farm de publicação usando a Distribuição Sling.
 
 ### O novo grupo da comunidade é criado em Publicar {#new-community-group-is-created-on-publish}
 
-Embora iniciada de uma instância de publicação, a criação do grupo da comunidade, que resulta em novas páginas do site e um novo grupo de usuários, na verdade ocorre na instância de autor.
+Embora iniciada de uma instância de Publicação, a criação do grupo da comunidade, que resulta em novas páginas do site e um novo grupo de usuários, ocorre na instância de Autor.
 
-Como parte do processo, as novas páginas do site são replicadas para todas as instâncias de publicação. O grupo de usuários da comunidade criado dinamicamente e sua associação são Sling distribuídos para todas as instâncias de publicação.
+Como parte do processo, as novas páginas do site são replicadas para todas as instâncias de Publicação. O grupo de usuários da comunidade criado dinamicamente e sua associação são Sling distribuídos para todas as instâncias de publicação.
 
 ### Usuários ou grupos de usuários são criados usando o Console de segurança {#users-or-user-groups-are-created-using-security-console}
 
-Por design, os dados do usuário criados no ambiente de publicação não aparecem no ambiente de criação e vice-versa.
+Por design, os dados do usuário criados no ambiente de publicação não aparecem no ambiente do Autor e vice-versa.
 
-Quando a variável [Administração e segurança do usuário](/help/sites-administering/security.md) O console é usado para adicionar novos usuários no ambiente de publicação. A sincronização de usuários sincronizará os novos usuários e sua associação de grupo com outras instâncias de publicação, se necessário. A sincronização de usuários também sincronizará grupos de usuários criados por meio do console de segurança.
+Quando a variável [Administração e segurança do usuário](/help/sites-administering/security.md) o console é usado para adicionar novos usuários no ambiente de publicação, a sincronização de usuários sincroniza os novos usuários e sua associação de grupo para outras instâncias de publicação, se necessário. A sincronização de usuários também sincroniza grupos de usuários criados por meio do console de segurança.
 
 ### O usuário publica conteúdo ao publicar {#user-posts-content-on-publish}
 
@@ -97,7 +91,7 @@ A sincronização de usuários depende do ambiente do autor para gerenciar as di
 
 1. Se usuários e grupos de usuários já tiverem sido criados em um editor, é recomendável [sincronizar manualmente](/help/sites-administering/sync.md#manually-syncing-users-and-user-groups) os dados do usuário para todos os editores antes de configurar e ativar a sincronização do usuário.
 
-   Quando a sincronização do usuário estiver habilitada, somente os usuários e grupos recém-criados serão sincronizados.
+   Depois que a sincronização de usuários estiver habilitada, somente os usuários e grupos recém-criados serão sincronizados.
 
 1. Verifique se o código mais recente foi instalado:
 
@@ -207,7 +201,7 @@ Para garantir a sincronização de membros:
 
 Essa configuração permite configurar o intervalo de pesquisa (após o qual os editores recebem ping e as alterações são obtidas pelo autor) para sincronizar as alterações entre editores.
 
-O autor pesquisa editores a cada 30 segundos (padrão). Se houver pacotes na pasta `/var/sling/distribution/packages/  socialpubsync -  vlt /shared`, então ele buscará esses pacotes e os instalará em outros editores.
+O autor pesquisa editores a cada 30 segundos (padrão). Se houver pacotes na pasta `/var/sling/distribution/packages/  socialpubsync -  vlt /shared`, então, ele busca esses pacotes e os instala em outros editores.
 
 Para alterar o intervalo de pesquisa:
 
@@ -257,7 +251,7 @@ Em cada instância de publicação do AEM:
 
    `sling:OrderedFolder`
 
-   Os tipos de nó especificados nesta propriedade serão sincronizados, e as informações de notificações (blogs e configurações seguidas) serão sincronizadas entre editores diferentes.
+   Os tipos de nó especificados nesta propriedade são sincronizados, e as informações de notificações (blogs e configurações seguidas) são sincronizadas entre editores diferentes.
 
 1. Adicione todas as pastas para sincronizar no **PastasDistribuídas**. Por exemplo,
 
@@ -283,16 +277,16 @@ A instância do autor AEM usa a Sling ID para identificar de onde os dados estã
 
 Verifique se todos os editores em um farm de publicação têm uma ID do Sling exclusiva. Se a ID do Sling for a mesma para várias instâncias de publicação em um farm de publicação, a sincronização do usuário falhará. Como o autor não saberá de onde buscar o pacote e onde instalá-lo.
 
-Para garantir uma ID de Sling exclusiva de editores no farm de publicação, em cada instância de publicação:
+Para garantir um Sling ID exclusivo de editores no farm de publicação, em cada instância de publicação:
 
 1. Navegue até [https://_host:porta_/system/console/status-slingsettings](https://localhost:4503/system/console/status-slingsettings).
 1. Verifique o valor de **ID do Sling**.
 
    ![slingid](assets/slingid.png)
 
-   Se a Sling ID de uma instância de publicação corresponder à Sling ID de qualquer outra instância de publicação, então:
+   Se a ID do Sling de uma instância de publicação corresponder à ID do Sling de qualquer outra instância de publicação, então:
 
-1. Pare uma das instâncias de publicação que tenha uma Sling ID correspondente.
+1. Pare uma das instâncias de Publicação que tenha uma Sling ID correspondente.
 1. No `crx-quickstart/launchpad/felix` diretório, procure e exclua o arquivo chamado *sling.id.file*
 
    Por exemplo, em um sistema Linux:
@@ -303,7 +297,7 @@ Para garantir uma ID de Sling exclusiva de editores no farm de publicação, em 
 
    Usar o windows explorer e pesquisar `sling.id.file`
 
-1. Inicie a instância de publicação. Na inicialização, ele receberá uma nova ID do Sling.
+1. Inicie a instância de publicação. Na inicialização, uma nova ID do Sling é atribuída a ele.
 1. Validar que o **ID do Sling** agora é única.
 
 Repita essas etapas até que todas as instâncias de publicação tenham uma Sling ID exclusiva.
@@ -357,7 +351,7 @@ Se a distribuição do Sling falhar, tente as seguintes etapas de depuração:
 
 1. **Verifique a configuração do Ouvinte de sincronização de usuário do AEM Communities.** Se os usuários criados estiverem sincronizados, mas as assinaturas e os itens a seguir não estiverem funcionando, verifique se a configuração do Ouvinte de sincronização de usuário do AEM Communities:
 
-   * Tipos de nó - definir como **rep:User, nt :unstructured**, **nt :resource**, **rep:ACL**, **sling:Folder**, e **sling:OrderedFolder**.
+   * Tipos de nó - definir como **rep:usuário, nt:não estruturado**, **nt:resource**, **rep:ACL**, **sling:Folder**, e **sling:OrderedFolder**.
    * Nós ignoráveis - definir como **.tokens**, **sistema**, e **rep :cache**.
    * Pastas distribuídas - defina as pastas que deseja distribuir.
 
@@ -388,13 +382,13 @@ Para depurar:
    1. Localize a configuração **Apache Sling Distribution Agent - Fábrica de agentes de sincronização**.
    1. Desmarque a opção **Ativado** caixa de seleção
 
-      Ao desativar a sincronização de usuários na instância do autor, os endpoints (exportador e importador) são desativados e a instância do autor é estática. A variável **vlt** os pacotes não recebem ping nem são obtidos pelo autor.
+      Ao desativar a sincronização de usuário na instância do autor (exportador e importador), os endpoints são desativados e a instância do autor é estática. A variável **vlt** os pacotes não recebem ping nem são obtidos pelo autor.
 
       Agora, se um usuário for criado na instância de publicação, a variável **vlt** o pacote é criado em */var/sling/distribution/packages/ socialpubsync - vlt /data* nó. E se esses pacotes forem encaminhados pelo autor para outro serviço. Você pode baixar e extrair esses dados para verificar quais propriedades são enviadas para outros serviços.
 
 1. Ir para um editor e criar um usuário no editor. Como resultado, eventos são criados.
-1. Verifique a [ordem dos logs](/help/communities/sync.md#troubleshoot-sling-distribution-in-aem-communities), criado na criação do usuário.
+1. Verifique a [ordem dos logs](/help/communities/sync.md#troubleshoot-sling-distribution-in-aem-communities) criado na criação do usuário.
 1. Verificar se um **vlt** o pacote é criado em **/var/sling/distribution/packages/socialpubsync-vlt/data**.
 1. Agora, ative a sincronização do usuário na instância do autor AEM.
 1. No editor, altere os pontos de extremidade do exportador ou importador no **Apache Sling Distribution Agent - Fábrica de agentes de sincronização**.
-Podemos baixar e extrair dados do pacote para verificar quais propriedades são enviadas para outros editores e quais dados são perdidos.
+Podemos baixar e extrair dados do pacote para verificar todas as propriedades que são enviadas para outros editores e quais dados são perdidos.

@@ -1,15 +1,15 @@
 ---
 title: Modelos de site
-description: Como acessar o console Modelos de site
+description: Saiba como acessar o console Modelos de site para criar um site da comunidade.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 05a944a3-adb1-47b4-b4a5-15bac91c995e
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '450'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ O console Modelos de site é semelhante ao [Modelos de grupo](tools-groups.md) q
 
 ## Console de modelos de site {#site-templates-console}
 
-No ambiente de criação, para acessar o console de sites da comunidade:
+No ambiente Autor, para acessar o console de sites da comunidade:
 
 * Na navegação global: **[!UICONTROL Ferramentas > Comunidades > Modelos de site]**
 
