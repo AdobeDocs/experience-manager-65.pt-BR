@@ -3,7 +3,7 @@ title: Assistente de cópia de Idioma
 description: Saiba mais sobre como usar o Assistente de cópia de idioma no Adobe Experience Manager.
 feature: Language Copy
 exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 2d87022aa2223df261e245fba65df054c041cd69
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 30%
@@ -16,7 +16,7 @@ O assistente de Cópia de idioma é uma experiência guiada para criar e instrum
 
 >[!NOTE]
 >
->O usuário precisa ser membro do grupo de administradores de projeto para criar a Cópia de idioma de um site.
+>O usuário precisa ser membro do grupo de administradores de projetos para criar a Cópia de idioma de um site.
 
 Para acessar este assistente:
 

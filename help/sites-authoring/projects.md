@@ -1,16 +1,8 @@
 ---
 title: Projetos
-seo-title: Projects
 description: Os projetos permitem agrupar recursos em uma entidade cujo ambiente comum e compartilhado facilita o gerenciamento de projetos.
-seo-description: Projects let you group resources into one entity whose common, shared environment makes it easy to manage your projects
-uuid: 4b5b9d78-d515-46af-abe2-882da0a1c8ae
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: projects
-content-type: reference
-discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
-docset: aem65
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1d64a9a6d6dfbc7606d7c222ef50a21bf9b902d6
 workflow-type: tm+mt
 source-wordcount: '1365'
 ht-degree: 34%
@@ -223,7 +215,7 @@ Todos os projetos oferecem suporte às seguintes funções padrão para permitir
 |---|---|---|---|
 | Observador | Um usuário nesta função pode visualizar detalhes do projeto, incluindo o status. | Permissões somente leitura em um projeto | `workflow-users` grupo |
 | Editor | Um usuário nesta função pode fazer upload e editar o conteúdo de um projeto. | Acesso de leitura e gravação em um projeto, metadados associados e ativos relacionados<br>Privilégios para fazer upload de uma lista de captura, sessão de fotos e revisar e aprovar ativos<br>Permissão de gravação em `/etc/commerce`<br>Modificar permissões em um projeto específico | `workflow-users` grupo |
-| Proprietário | Um usuário com essa função pode criar um projeto, iniciar um trabalho em um projeto e mover ativos aprovados para a pasta de produção. Todas as outras tarefas no projeto também podem ser visualizadas e executadas pelo proprietário. | Permissão de gravação em `/etc/commerce` | `dam-users` grupo para poder criar um projeto<br>`project-administrators` para poder criar um projeto e mover ativos |
+| Proprietário | Um usuário com essa função pode criar um projeto, iniciar um trabalho em um projeto e mover ativos aprovados para a pasta de produção. Todas as outras tarefas no projeto também podem ser visualizadas e executadas pelo proprietário. | Permissão de gravação em `/etc/commerce` | `dam-users` grupo para poder criar um projeto<br>`projects-administrators` para poder criar um projeto e mover ativos |
 
 Para projetos criativos, também são fornecidas funções adicionais, como fotógrafos. Você pode usar essas funções para derivar funções personalizadas para um projeto específico.
 

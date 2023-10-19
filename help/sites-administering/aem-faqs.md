@@ -1,14 +1,8 @@
 ---
 title: Perguntas frequentes sobre AEM
-seo-title: AEM 6.4 frequently asked questions
 description: Use essas Perguntas frequentes para entender, configurar e solucionar problemas ou fluxos de trabalho comuns no AEM.
-seo-description: Use these FAQs to understand, configure, and troubleshoot common workflows or issues in AEM.
-uuid: 17d34923-f1ce-463b-8e9d-a713edcce51b
-contentOwner: jsyal
-discoiquuid: a3bb5695-6593-413d-9c2f-4c164e663b15
-docset: aem65
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
+source-git-commit: f7bfbfab9fb9ec00304f2889735c70be924cc217
 workflow-type: tm+mt
 source-wordcount: '1096'
 ht-degree: 0%
@@ -42,7 +36,7 @@ Exibir o `Initiator` para determinar qual foi o iniciador de uma solicitação. 
 
 Para criar o recurso de cópia de idioma, os autores de conteúdo precisam de permissões em `/content/projects` localização.
 
-Se for necessário que os autores gerenciem projetos também, a solução alternativa é adicionar o autor ao `project-administrators` grupo.
+Se for necessário que os autores gerenciem projetos também, a solução alternativa é adicionar o autor ao `projects-administrators` grupo.
 
 #### Como alterar o formato ao criar uma Cópia de idioma para um projeto? {#how-to-change-the-format-while-creating-language-copy-for-a-project}
 
@@ -97,7 +91,7 @@ Se o usuário, que faz upload dos arquivos de filme, não tiver permissões de e
 Ao criar uma cópia de idioma por meio da interface para toque (**Referências** -> **Atualizar cópia de idioma**), uma nova pasta do DAM será criada no novo idioma e os ativos serão referenciados a partir daí.
 
 Essa é a configuração padrão para configurações OOTB. Você pode definir **Traduzir ativos da página** = **Não traduzir** em Configurações de tradução.
-Para AEM 6.4, **Ferramentas** > **Cloud Services** > **Serviços de tradução em nuvem**.
+Para AEM 6.4, **Ferramentas** > **Cloud Service** > **Serviços de tradução em nuvem**.
 
 #### Como desativar um componente AEM que causa crescimento exponencial do AEM SegmentStore (AEM 6.3.1.1)? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
 

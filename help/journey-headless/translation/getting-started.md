@@ -2,7 +2,7 @@
 title: Introdução à tradução do AEM headless
 description: Saiba como organizar seu conteúdo headless e como funcionam as ferramentas de tradução do AEM.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 947b17a82f704a244e7fdc710cfa9df50c64f46b
 workflow-type: tm+mt
 source-wordcount: '1495'
 ht-degree: 92%
@@ -50,7 +50,7 @@ Existe um número de requerimentos antes que você comece a traduzir seu conteú
 
 * Acesso à sandbox para testes de tradução do conteúdo
 * Credenciais para se conectar ao serviço de tradução de sua preferência
-* Ser membro do grupo `project-administrators` no AEM
+* Ser membro do grupo `projects-administrators` no AEM
 
 ## Estrutura é fundamental {#content-structure}
 
