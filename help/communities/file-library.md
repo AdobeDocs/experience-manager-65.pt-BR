@@ -1,15 +1,13 @@
 ---
 title: Recurso Biblioteca de Arquivos
-description: O recurso Biblioteca de arquivos permite que visitantes do site conectados façam upload, gerenciem e baixem arquivos
-uuid: e78a90bd-f1d3-44f8-98eb-1498a55e8217
+description: O recurso Biblioteca de arquivos permite que visitantes do site conectados façam upload, gerenciem e baixem arquivos.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
 exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
-source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 9%
@@ -101,7 +99,7 @@ No **Comentários** especifique se e como os comentários dos arquivos carregado
 
   Se marcado, inclui o seguinte recurso para artigos de blog, que permite que membros sejam [notificado](/help/communities/notifications.md) de novos posts. O padrão está desmarcado.
 
-* **Ativar a menção**
+* **Habilitar a menção**
 
   Se ativado, permite que os usuários registrados da comunidade identifiquem outros membros registrados (usando nome, sobrenome, nome de usuário) e marquem-nos usando a sintaxe comum @user-name. Os usuários marcados recebem notificações sobre suas menções.
 

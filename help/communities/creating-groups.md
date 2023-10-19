@@ -1,15 +1,15 @@
 ---
 title: Grupos de comunidades
-description: Criação de grupos da comunidade
+description: Saiba como o recurso de grupos da comunidade permite que você crie dinamicamente uma subcomunidade em um site da comunidade por usuários autorizados em Publicar e Autor.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: edcda6cb-df47-4afe-8a9a-82d8e386fe05
-source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '555'
 ht-degree: 3%
 
 ---

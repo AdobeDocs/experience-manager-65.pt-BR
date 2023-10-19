@@ -1,19 +1,15 @@
 ---
 title: Recurso de mensagens
-seo-title: Messaging Feature
-description: Configurar componentes de mensagens
-seo-description: Configuring Messaging components
-uuid: 8b99ded1-aec2-40c9-82d5-e2e404f614ca
+description: Saiba como configurar o recurso de Mensagens do AEM Communities para permitir que os membros da comunidade interajam entre si de forma mais privada.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 9d952604-f9ef-498f-937b-871817c80226
 docset: aem65
 exl-id: d121dc05-7d15-44ba-8d2d-b59d6c6480c8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '954'
 ht-degree: 5%
 
 ---
@@ -24,7 +20,7 @@ Além das interações visíveis publicamente que ocorrem em fóruns e comentár
 
 Esse recurso pode ser incluído quando um [site da comunidade](/help/communities/overview.md#communitiessites) é criado.
 
-O recurso de mensagens oferece a capacidade de:
+O recurso de mensagens permite fazer o seguinte:
 
 **A** - enviar uma mensagem para um ou mais membros da comunidade
 
@@ -77,27 +73,27 @@ Quando a herança for cancelada, é possível selecionar o ícone de configuraç
 
 * **Seletor de serviços**
 
-   (*Obrigatório*) Definir com o valor da propriedade **`serviceSelector.name`** do [Serviço de operações de mensagens do AEM Communities](/help/communities/messaging.md#messaging-operations-service).
+  (*Obrigatório*) Definir com o valor da propriedade **`serviceSelector.name`** do [Serviço de operações de mensagens do AEM Communities](/help/communities/messaging.md#messaging-operations-service).
 
 * **Compor página**
 
-   (*Obrigatório*) A página a ser aberta quando um membro clicar no **`Reply`** botão. A página de destino deve conter as **Compor mensagem** formulário.
+  (*Obrigatório*) A página a ser aberta quando um membro clicar no **`Reply`** botão. A página de destino deve conter as **Compor mensagem** formulário.
 
 * **Responder/Exibir como recurso**
 
-   Se marcado, o URL de resposta e o URL de exibição farão referência a um recurso, caso contrário os dados serão passados como parâmetros de consulta no URL.
+  Se marcados, o URL de resposta e o URL de exibição fazem referência a um recurso, caso contrário, os dados são passados como parâmetros de consulta no URL.
 
 * **Formulário de exibição de perfil**
 
-   O formulário de perfil a ser usado para exibir o perfil dos remetentes.
+  O formulário de perfil a ser usado para exibir o perfil dos remetentes.
 
 * **Pasta Lixeira**
 
-   Se marcado, este componente Lista de mensagens exibe somente as mensagens sinalizadas como excluídas (lixeira).
+  Se marcado, este componente Lista de mensagens exibe somente as mensagens sinalizadas como excluídas (lixeira).
 
 * **Caminhos de pasta**
 
-   (*Obrigatório*) Fazendo referência aos valores definidos para **inbox.path.name** e **sentiitems.path.name** no [Serviço de operações de mensagens do AEM Communities](/help/communities/messaging.md#messaging-operations-service). Ao configurar para um `Inbox`, adicione uma entrada usando o valor de **inbox.path.name**. Ao configurar para um `Outbox`, adicione uma entrada usando o valor de **sentiitems.path.name**. Ao configurar para `Trash`, adicione duas entradas com ambos os valores.
+  (*Obrigatório*) Fazendo referência aos valores definidos para **inbox.path.name** e **sentiitems.path.name** no [Serviço de operações de mensagens do AEM Communities](/help/communities/messaging.md#messaging-operations-service). Ao configurar para um `Inbox`, adicione uma entrada usando o valor de **inbox.path.name**. Ao configurar para um `Outbox`, adicione uma entrada usando o valor de **sentiitems.path.name**. Ao configurar para `Trash`, adicione duas entradas com ambos os valores.
 
 #### Guia Exibir {#display-tab}
 
@@ -105,31 +101,31 @@ Quando a herança for cancelada, é possível selecionar o ícone de configuraç
 
 * **Botão Marcar como lido**
 
-   Se essa opção estiver marcada, exibe uma `Read`botão que permite marcar uma mensagem como lida.
+  Se essa opção estiver marcada, exibe uma `Read`botão que permite marcar uma mensagem como lida.
 
 * **Botão Marcar como não lido**
 
-   Se essa opção estiver marcada, exibe uma `Mark Unread` botão que permite marcar uma mensagem como lida.
+  Se essa opção estiver marcada, exibe uma `Mark Unread` botão que permite marcar uma mensagem como lida.
 
 * **Botão Excluir**
 
-   Se essa opção estiver marcada, exibe uma `Delete` botão que permite marcar uma mensagem como lida. Irá duplicar a funcionalidade de exclusão se **`Message Options`** também está marcada.
+  Se essa opção estiver marcada, exibe uma `Delete` botão que permite marcar uma mensagem como lida. Duplica a funcionalidade de exclusão se **`Message Options`** também está marcada.
 
 * **Opções de mensagem**
 
-   Se essa opção estiver marcada, exibe **`Reply`**, **`Reply All`**, **`Forward`** e **`Delete`** botões que permitem que uma mensagem seja reenviada ou excluída. Irá duplicar a funcionalidade de exclusão se **`Delete Button`** também está marcada.
+  Se essa opção estiver marcada, exibe **`Reply`**, **`Reply All`**, **`Forward`**, e **`Delete`** botões que permitem que uma mensagem seja reenviada ou excluída. Duplica a funcionalidade de exclusão se **`Delete Button`** também está marcada.
 
 * **Mensagens por página**
 
-   O número especificado é o número máximo de mensagens exibidas por página em um esquema de paginação. Se nenhum número for especificado (deixado em branco), todas as mensagens serão exibidas e não haverá paginação.
+  O número especificado é o número máximo de mensagens exibidas por página em um esquema de paginação. Se nenhum número for especificado (deixado em branco), todas as mensagens serão exibidas e não haverá paginação.
 
 * **Padrões de data e hora**
 
-   Forneça padrões de carimbo de data e hora para um ou mais idiomas. O padrão é para en, de, fr, it, es, ja, zh_CN, ko_KR.
+  Forneça padrões de carimbo de data e hora para um ou mais idiomas. O padrão é para en, de, fr, it, es, ja, zh_CN, ko_KR.
 
 * **Exibir o usuário**
 
-   Escolha um **`Sender`** ou **`Recipients`** para determinar se o Remetente ou os Destinatários devem ser exibidos.
+  Escolha um **`Sender`** ou **`Recipients`** para que você possa determinar se deseja exibir o Remetente ou os Destinatários.
 
 ### Configurar Compor Mensagem {#configure-compose-message}
 
@@ -151,23 +147,23 @@ Quando a herança for cancelada, é possível selecionar o ícone de configuraç
 
 * **URI de redirecionamento**
 
-   Digite o URL da página exibida após o envio da mensagem. Por exemplo, `../messaging.html`.
+  Digite o URL da página exibida após o envio da mensagem. Por exemplo, `../messaging.html`.
 
 * **URL de cancelamento**
 
-   Digite o URL da página exibida se o remetente cancelar a mensagem. Por exemplo, `../messaging.html`.
+  Digite o URL da página exibida se o remetente cancelar a mensagem. Por exemplo, `../messaging.html`.
 
 * **Tamanho máximo do assunto da mensagem**
 
-   O número máximo de caracteres permitidos no campo Assunto. Por exemplo, 500. O padrão é sem limite.
+  O número máximo de caracteres permitidos no campo Assunto. Por exemplo, 500. O padrão é sem limite.
 
 * **Tamanho máximo do corpo da mensagem**
 
-   O número máximo de caracteres permitidos no campo Conteúdo. Por exemplo, 10000. O padrão é sem limite.
+  O número máximo de caracteres permitidos no campo Conteúdo. Por exemplo, 10000. O padrão é sem limite.
 
 * **Seletor de serviços**
 
-   (*Obrigatório*) Definir com o valor da propriedade **`serviceSelector.name`** do [Serviço de operações de mensagens do AEM Communities](/help/communities/messaging.md#messaging-operations-service).
+  (*Obrigatório*) Definir com o valor da propriedade **`serviceSelector.name`** do [Serviço de operações de mensagens do AEM Communities](/help/communities/messaging.md#messaging-operations-service).
 
 #### Guia Exibir {#display-tab-1}
 
@@ -175,32 +171,32 @@ Quando a herança for cancelada, é possível selecionar o ícone de configuraç
 
 * **Mostrar campo de assunto**
 
-   Se essa opção estiver marcada, mostrar a `Subject` e permite adicionar um assunto à mensagem. O padrão não está marcado.
+  Se essa opção estiver marcada, mostrar a `Subject` e permite adicionar um assunto à mensagem. O padrão não está marcado.
 
 * **Rótulo do assunto**
 
-   Insira o texto a ser exibido ao lado da `Subject` campo. O padrão é `Subject`.
+  Insira o texto que você deseja exibir ao lado da `Subject` campo. O padrão é `Subject`.
 
 * **Mostrar campo Anexar arquivo**
 
-   Se essa opção estiver marcada, mostrar a `Attachment` e habilitar a adição de anexos de arquivo à mensagem. O padrão não está marcado.
+  Se essa opção estiver marcada, mostrar a `Attachment` e habilitar a adição de anexos de arquivo à mensagem. O padrão não está marcado.
 
 * **Anexar etiqueta de arquivo**
 
-   Insira o texto a ser exibido ao lado da `Attachment` campo. O padrão é **`Attach File`**.
+  Insira o texto que você deseja exibir ao lado da `Attachment` campo. O padrão é **`Attach File`**.
 
 * **Mostrar campo de conteúdo**
 
-   Se essa opção estiver marcada, mostrar a `Content` e habilitar a adição de um corpo de mensagem. O padrão não está marcado.
+  Se essa opção estiver marcada, mostrar a `Content` e habilitar a adição de um corpo de mensagem. O padrão não está marcado.
 
 * **Rótulo de conteúdo**
 
-   Insira o texto a ser exibido ao lado da `Content` campo. O padrão é **`Body`**.
+  Insira o texto que você deseja exibir ao lado da `Content` campo. O padrão é **`Body`**.
 
 * **Com Rich Text Editor**
 
-   Se marcado, indica o uso de uma caixa de texto de Conteúdo personalizada com seu próprio editor de rich text. O padrão não está marcado.
+  Se marcado, indica o uso de uma caixa de texto de Conteúdo personalizada com seu próprio editor de rich text. O padrão não está marcado.
 
 * **Padrões de data e hora**
 
-   Forneça padrões de carimbo de data e hora para um ou mais idiomas. O padrão é para en, de, fr, it, es, ja, zh_CN, ko_KR.
+  Forneça padrões de carimbo de data e hora para um ou mais idiomas. O padrão é para en, de, fr, it, es, ja, zh_CN, ko_KR.

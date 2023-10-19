@@ -1,17 +1,15 @@
 ---
 title: Recurso de blog
-description: Informações da comunidade em um formato de diário
-uuid: 7323063f-81e8-45c3-9035-bf7df6124830
+description: Saiba como o recurso de blog permite o fornecimento de informações da comunidade em um formato de registro no diário. As entradas são feitas no ambiente de Publicação por usuários autorizados.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
-source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1670'
 ht-degree: 7%
 
 ---
@@ -83,7 +81,7 @@ No **Configurações** especifique os recursos básicos do blog:
 
 * **Tamanho mínimo de imagem para a miniatura**
 
-  Tamanho mínimo (em bytes) da imagem para gerar a miniatura para imagens integradas. O valor padrão é 100000 bytes (100 kb).
+  Tamanho mínimo (em bytes) da imagem para gerar a miniatura para imagens integradas. O valor padrão é 100.000 bytes (100 kb).
 
 * **Tamanho máximo da miniatura**
 
@@ -133,7 +131,7 @@ No **Configurações** especifique os recursos básicos do blog:
 
 * **Permitir marcação**
 
-  Se marcados, permitem que os membros adicionem rótulos de tag à sua publicação (consulte **Campo de tag** guia ). O padrão está desmarcado.
+  Se marcados, permitem que os membros adicionem rótulos de tag às suas publicações (consulte **Campo de tag** guia ). O padrão está desmarcado.
 
 * **Permitir carregamento de arquivos**
 
@@ -161,7 +159,7 @@ No **Configurações** especifique os recursos básicos do blog:
 
 * **Permitir que usuários excluam comentários e tópicos**
 
-  Se marcados, permitem que os membros excluam os comentários e as entradas de blog postados. O padrão está desmarcado.
+  Se marcado, permite que os membros excluam os comentários e as entradas de blog que postaram. O padrão está desmarcado.
 
 * **Permitir monitoramento**
 
@@ -181,7 +179,7 @@ No **Configurações** especifique os recursos básicos do blog:
 
   Se marcada, a ideia é identificada como [conteúdo em destaque](/help/communities/featured.md). O padrão está desmarcado.
 
-* **Ativar a menção**
+* **Habilitar a menção**
 
   Se ativado, permite que os usuários registrados da comunidade identifiquem outros membros registrados (usando nome, sobrenome, nome de usuário) e marquem-nos usando a sintaxe comum @user-name. Os usuários marcados recebem notificações sobre suas próprias menções.
 
@@ -227,7 +225,7 @@ No **Moderação de usuário** especifique as configurações de moderação:
 
 #### Guia Campo de tag {#tag-field-tab}
 
-No **Campo de tag** especifique quais tags podem ser aplicadas se **Permitir marcação** é verificar no **Configurações** Guia:
+No **Campo de tag** especifique quais tags podem ser aplicadas se **Permitir marcação** está marcado no **Configurações** Guia:
 
 * **Namespaces permitidos**
 
@@ -241,7 +239,7 @@ No **Campo de tag** especifique quais tags podem ser aplicadas se **Permitir mar
 
 Ao clicar duas vezes no ícone `Blog Sidebar` componente, uma caixa de diálogo de edição é aberta.
 
-No **Configurações da barra lateral do diário** especifique o formato de data para os arquivos e o tipo de entradas a serem exibidas na barra lateral:
+No **Configurações da barra lateral do diário** especifique o formato de data dos arquivos e o tipo de entradas a serem exibidas na barra lateral:
 
 ![barra lateral de componentes do blog](assets/blog-component-sidebar.png)
 

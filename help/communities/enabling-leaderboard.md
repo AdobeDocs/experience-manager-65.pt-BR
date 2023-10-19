@@ -1,20 +1,16 @@
 ---
 title: Recurso de quadro de classificação
-seo-title: Leaderboard Feature
-description: Adicionar um componente de Quadro de classificação a uma página
-seo-description: Adding a Leaderboard component to a page
-uuid: c4633919-75d3-4bc7-830c-ef9c28cc1cba
+description: Saiba como o componente de Quadro de classificação permite ver como os membros interagem na comunidade, classificando os membros com base em pontos ganhos e experiência.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 exl-id: 8b4d56d9-ba73-4eda-9773-3daaa9237abe
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 10%
+source-wordcount: '417'
+ht-degree: 9%
 
 ---
 
@@ -22,7 +18,7 @@ ht-degree: 10%
 
 ## Introdução {#introduction}
 
-A variável `Leaderboard` o componente oferece a capacidade de obter uma noção de como os membros estão interagindo na comunidade, classificando-os de acordo com os pontos ganhos (pontuação básica) ou sua experiência (pontuação avançada).
+A variável `Leaderboard` o componente ajuda você a ter uma ideia de como os membros estão interagindo na comunidade, classificando-os de acordo com os pontos ganhos (pontuação básica) ou sua experiência (pontuação avançada).
 
 Antes de incluir o componente de quadro de classificação em uma página, é necessário configurar [Pontuação e medalhas das comunidades](/help/communities/implementing-scoring.md).
 
@@ -37,7 +33,7 @@ Para adicionar um `Leaderboard` para uma página no modo de autor, localize o co
 
 * `Communities / Leaderboard`
 
-e arraste-o para o local em uma página.
+E arraste-o para o local em uma página.
 
 Para obter as informações necessárias, visite [Noções básicas sobre componentes das comunidades](/help/communities/basics.md).
 
@@ -47,7 +43,7 @@ Quando colocado pela primeira vez em uma página de um site da comunidade, é as
 
 ### Configurar quadro de classificação {#configuring-leaderboard}
 
-Selecione o colocado `Leaderboard` para acessar e selecionar a variável `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o colocado `Leaderboard` para que você possa acessar e selecionar o `Configure` ícone que abre a caixa de diálogo de edição.
 
 ![configure-new](assets/configure-new.png)
 
@@ -59,22 +55,22 @@ No **[!UICONTROL Configurações]** especifique quais informações relacionadas
 
 * **Nome de exibição**
 
-   Um nome descritivo a ser exibido para o quadro, refletindo as regras selecionadas para exibir selos e pontuações.
-O padrão é `Leaderboard`, se nada tiver sido inserido.
+  Um nome descritivo a ser exibido para o quadro, refletindo as regras selecionadas para exibir selos e pontuações.
+O padrão é `Leaderboard` se nada for inserido.
 
 * **Insígnia**
 
-   Se marcada, uma coluna para ícones de selo é incluída no quadro de classificação.
+  Se marcada, uma coluna para ícones de selo é incluída no quadro de classificação.
 O padrão está desmarcado.
 
 * **Nome da insígnia**
 
-   Se marcada, uma coluna para o nome do selo é incluída no quadro de classificação.
+  Se marcada, uma coluna para o nome do selo é incluída no quadro de classificação.
 O padrão está desmarcado.
 
 * **Usar Avatar**
 
-   Se marcada, a imagem do avatar do membro é incluída no quadro de classificação, ao lado do link de nome para o perfil do membro.
+  Se marcada, a imagem do avatar do membro é incluída no quadro de classificação, ao lado do link de nome para o perfil do membro.
 O padrão está desmarcado.
 
 #### Guia Regras {#rules-tab}
@@ -83,19 +79,19 @@ No **Regras** , o site da comunidade e suas regras de pontuação e criação de
 
 * **Local da regra**
 
-   (Obrigatório) Local onde a regra de Pontuação/Inscrição está configurada.
+  (Obrigatório) Local onde a regra de Pontuação/Inscrição está configurada.
 
 * **Regra de pontuação**
 
-   (Obrigatório) Regra específica que gera as pontuações a serem exibidas.
+  (Obrigatório) Regra específica que gera as pontuações a serem exibidas.
 
 * **Regra para insígnias**
 
-   (Obrigatório) Regra específica que gera o símbolo a ser exibido.
+  (Obrigatório) Regra específica que gera o símbolo a ser exibido.
 
 * **Limite de exibição**
 
-   Número de membros a serem exibidos por página. O padrão é 10.
+  Número de membros a serem exibidos por página. O padrão é 10.
 
 ### Exemplo: Quadro de classificação de participantes {#example-participants-leaderboard}
 

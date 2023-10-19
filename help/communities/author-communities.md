@@ -1,20 +1,16 @@
 ---
 title: Componentes das comunidades
-seo-title: Communities Components
-description: Adicionar recursos da comunidade a qualquer site AEM
-seo-description: Adding community features to any AEM site
-uuid: 76824820-81e9-4192-8df3-dff55eaf144e
+description: Saiba mais sobre quando o AEM Communities é licenciado, é possível adicionar recursos do Communities a qualquer site AEM usando ferramentas de criação padrão do AEM.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
 exl-id: 4a49d14c-e6f0-4791-904e-8f30e47f7cde
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 30%
+source-wordcount: '293'
+ht-degree: 27%
 
 ---
 
@@ -80,8 +76,8 @@ Consulte também a seção [Guia de componentes da comunidade](/help/communities
 
 ## Documentação de comunidades relacionadas {#related-communities-documentation}
 
-* Visita [Implantação de comunidades](/help/communities/deploy-communities.md) para saber mais sobre implantações recomendadas.
+* Visita [Implantação de comunidades](/help/communities/deploy-communities.md) onde você pode saber mais sobre implantações recomendadas.
 
 * Visita [Administração dos sites das comunidades](/help/communities/administer-landing.md) para saber mais sobre como criar um site da comunidade, configurar modelos de site da comunidade, moderar o conteúdo da comunidade, gerenciar membros e configurar mensagens.
 
-* Visita [Comunidades de desenvolvimento](/help/communities/communities.md) para saber mais sobre a estrutura de componente social (SCF) e a personalização de componentes e recursos do Communities.
+* Visita [Comunidades de desenvolvimento](/help/communities/communities.md) onde você pode saber mais sobre a estrutura do componente social (SCF) e personalização de componentes e recursos do Communities.
