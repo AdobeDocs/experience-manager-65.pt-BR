@@ -1,15 +1,15 @@
 ---
 title: Implantação de comunidades
-description: Como implantar o AEM Communities
+description: Saiba como implantar comunidades e recursos da comunidade no Adobe Experience Manager.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1712'
 ht-degree: 2%
 
 ---
@@ -84,7 +84,7 @@ O AEM 6.5 Communities GA inclui o pacote Communities. Para saber mais sobre as a
 
 A partir do AEM 6.4, as atualizações das Comunidades são fornecidas como parte do AEM Cumulative Fix Packs e Service Packs.
 
-Para obter as atualizações mais recentes para o AEM 6.5, consulte [Adobe Experience Manager 6.4 Cumulative Fix Packs e Service Packs](https://helpx.adobe.com/br/experience-manager/aem-releases-updates.html).
+Para obter as atualizações mais recentes para o AEM 6.5, consulte [Adobe Experience Manager 6.4 Cumulative Fix Packs e Service Packs](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=pt-BR).
 
 ### Histórico da versão {#version-history}
 
@@ -132,7 +132,7 @@ Mais informações sobre a instalação de pacotes estão disponíveis no [Conso
 
 Para que a coleção SRP (MSRP ou DSRP) seja compatível com a pesquisa multilíngue avançada (MLS), novos plug-ins Solr são necessários, além de um esquema personalizado e uma configuração Solr. Todos os itens necessários são empacotados em um arquivo zip para download.
 
-O download do MLS avançado (também conhecido como &quot;phasetwo&quot;) está disponível no repositório Adobe:
+O download do MLS avançado (também conhecido como `phasetwo`) está disponível no repositório de Adobe:
 
 * AEM-SOLR-MLS-phasetwo
 
@@ -298,13 +298,11 @@ Para copiar o material principal do Autor para todas as outras instâncias, é n
 
 #### Replicação do repositório {#repository-replication}
 
-Ter o material principal armazenado no repositório, como foi o caso do AEM 6.2 e anterior, pode ser preservado. Especifique a seguinte propriedade do sistema na primeira inicialização de cada instância do AEM (que cria o repositório inicial):
-
-* `-Dcom.adobe.granite.crypto.file.disable=true`
+Ter o material principal armazenado no repositório, como foi o caso do AEM 6.2 e anterior, pode ser preservado. Especificar a propriedade do sistema `-Dcom.adobe.granite.crypto.file.disable=true` na primeira inicialização de cada instância AEM (que cria o repositório inicial).
 
 >[!NOTE]
 >
->É importante verificar se as [agente de replicação no Autor](#replication-agents-on-author) está configurado corretamente.
+>Verifique se [agente de replicação no Autor](#replication-agents-on-author) está configurado corretamente.
 
 Com o material principal armazenado no repositório, a maneira de replicar a chave criptográfica do autor para outras instâncias é a seguinte:
 

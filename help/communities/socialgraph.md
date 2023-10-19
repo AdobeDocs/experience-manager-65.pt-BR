@@ -1,18 +1,14 @@
 ---
 title: Uso do gráfico social
-seo-title: Using Social Graph
-description: Adicionar um componente seguinte a uma página
-seo-description: Adding a Following component to a page
-uuid: 8be6334b-e6c9-40bc-90a8-750b98419470
+description: Saiba como adicionar um componente Seguinte a uma página que permite que membros da comunidade conectados sigam atividades ou sejam seguidos.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 0ce57ab1-e4c6-4c38-963d-556eef8757f2
 exl-id: 2cd1436b-3727-4757-b28e-70756be78a4e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '197'
 ht-degree: 1%
 
 ---
@@ -33,7 +29,7 @@ Se desejar adicionar um `Following` para uma página no modo de autor, localize 
 
 Para obter as informações necessárias, visite [Noções básicas sobre componentes das comunidades](basics.md).
 
-Quando a variável [bibliotecas obrigatórias do lado do cliente](essentials-socialgraph.md#essentials-for-client-side) são incluídos, é assim que a variável `Following` componente aparecerá:
+Quando a variável [bibliotecas obrigatórias do lado do cliente](essentials-socialgraph.md#essentials-for-client-side) são incluídos, é assim que a variável `Following` é exibido:
 
 ![seguindo](assets/following.png)
 

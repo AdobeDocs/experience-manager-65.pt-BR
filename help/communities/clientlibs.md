@@ -1,15 +1,15 @@
 ---
 title: Clientlibs para componentes das comunidades
-description: Bibliotecas do lado do cliente para comunidades
+description: Saiba como adicionar bibliotecas do lado do cliente (clientlibs) a uma página para que você possa coletar detalhes de uso e usar ferramentas de depuração para componentes do Communities.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 94415926-a273-4f03-b7b6-57fdac12c741
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Esta seção da documentação descreve como adicionar bibliotecas do lado do cliente (clientlibs) a uma página para componentes de Comunidades.
 
-Para informações básicas, visite:
+Para obter informações básicas, consulte o seguinte:
 
 * [Uso de bibliotecas do lado do cliente](/help/sites-developing/clientlibs.md) que fornece detalhes de uso e ferramentas de depuração
 * [Clientlibs para SCF](/help/communities/client-customize.md#clientlibs) que fornece informações úteis ao personalizar componentes SCF
@@ -30,7 +30,7 @@ Para informações básicas, visite:
 
 As bibliotecas de clientes são necessárias para o funcionamento adequado (JavaScript) e o estilo (CSS) de um componente.
 
-Quando existe uma [função da comunidade](/help/communities/functions.md) para um recurso, todos os componentes e configurações necessários, incluindo as clientlibs necessárias, estão presentes no site da comunidade. Somente se os componentes adicionais estiverem disponíveis para os autores, as bibliotecas de clientes adicionais precisarão ser adicionadas.
+Quando existe uma [função da comunidade](/help/communities/functions.md) para um recurso, todos os componentes e configurações necessários, incluindo as clientlibs necessárias, estão presentes no site da comunidade. Somente se os componentes adicionais estiverem disponíveis para os autores, é necessário adicionar mais clientlibs.
 
 Quando as clientlibs necessárias estiverem ausentes, [adição de um componente Comunidades a uma página](/help/communities/author-communities.md) poderia resultar em erros de JavaScript e uma aparência inesperada.
 
@@ -61,7 +61,7 @@ Quando quiser adicionar um componente Comunidades a uma página, será necessár
 
 Uso [CRXDE|Lite](#using-crxde-lite) para modificar uma clientlibslist existente para uma página de site da comunidade.
 
-Para adicionar uma clientlib para um site da comunidade usando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
+Para adicionar uma clientlib a um site da comunidade usando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Navegue até [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de).
 * Localize o `clientlibslist` para a página em que deseja adicionar o componente:
@@ -71,7 +71,7 @@ Para adicionar uma clientlib para um site da comunidade usando [CRXDE Lite](/hel
 * Com `clientlibslist` nó selecionado:
 
    * Localize a string[] propriedade `scg:requiredClientLibs`.
-   * Selecionar sua `Value` para acessar a caixa de diálogo Matriz de string.
+   * Selecionar sua `Value` para poder acessar a caixa de diálogo Matriz de string.
 
       * Role para baixo, se necessário.
       * Selecione + para inserir uma nova biblioteca do cliente.

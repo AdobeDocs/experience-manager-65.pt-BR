@@ -1,17 +1,15 @@
 ---
 title: Alterar a aparência
-description: Modificar o script
-uuid: 30555b9f-da29-4115-9ed5-25f80a247bd6
+description: Saiba como editar o script comment.hbs responsável pela criação do HTML geral para cada comentário nas comunidades do Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 exl-id: cb8f6967-216c-46d3-a7ba-068b0f5e3b94
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -20,15 +18,15 @@ ht-degree: 0%
 
 ## Modificar o script {#modify-the-script}
 
-O script comment.hbs é responsável pela criação do HTML geral para cada comentário.
+A variável `comment.hbs` O script é responsável pela criação do HTML geral para cada comentário.
 
 Para não exibir o avatar ao lado de cada comentário publicado:
 
 1. Copiar `comment.hbs`de `libs`para `apps`
 
-   1. Selecionar `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
+   1. Selecione `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
    1. Selecionar **[!UICONTROL Copiar]**
-   1. Selecionar `/apps/social/commons/components/hbs/comments/comment`
+   1. Selecione `/apps/social/commons/components/hbs/comments/comment`
    1. Selecionar **[!UICONTROL Colar]**
 
 1. Abrir a sobreposta `comment.hbs`

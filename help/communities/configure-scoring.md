@@ -1,19 +1,15 @@
 ---
 title: Fundamentos de pontuação e medalhas
-seo-title: Scoring and Badges Essentials
-description: Visão geral do recurso Pontuação e medalhas
-seo-description: Scoring and Badges feature overview
-uuid: 6e3af071-04e8-4dc1-977a-0da711b72961
+description: Saiba mais sobre como o recurso de pontuação e medalhas das comunidades Adobe Experience Manager identifica e recompensa os membros da comunidade.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 exl-id: 470a382a-2aa7-449e-bf48-b5a804c5b114
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '946'
 ht-degree: 2%
 
 ---
@@ -68,15 +64,15 @@ Por exemplo, pesquisar por `this.isAssigned` in `/libs/social/forum/components/h
 {{/each}}
 ```
 
-Se verdadeiro, isAssigned indica que o selo foi atribuído a uma função e o selo deve ser exibido como texto.
+Se verdadeiro, `isAssigned` indica que o selo foi atribuído a uma função e deve ser exibido como texto.
 
-Se false, isAssigned indica que o selo foi concedido para uma pontuação recebida e o selo deve ser exibido como uma imagem.
+Se falso, `isAssigned` indica que a medalha foi concedida por uma pontuação obtida e a medalha deve ser exibida como uma imagem.
 
 Qualquer alteração nesse comportamento deve ser feita em um script personalizado (substituição ou sobreposição). Consulte [Personalização do lado do cliente](/help/communities/client-customize.md).
 
 ## Log de depuração para pontuação e medalha {#debug-log-for-scoring-and-badging}
 
-Para ajudar a depurar a pontuação e o símbolo, um arquivo de log personalizado pode ser configurado. O conteúdo desse arquivo de log poderá ser fornecido ao suporte ao cliente se forem encontrados problemas com o recurso.
+Para ajudar a depurar a pontuação e o símbolo, é possível configurar um arquivo de log personalizado. O conteúdo desse arquivo de log poderá ser fornecido ao suporte ao cliente se forem encontrados problemas com o recurso.
 
 Para obter instruções detalhadas, visite [Criar um arquivo de log personalizado](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
 
@@ -93,13 +89,13 @@ Para configurar rapidamente um arquivo de log do Sling:
    1. Digite um nome para **Arquivo de log**, por exemplo
 
       * logs/scoring-debug.log
+
    1. Insira dois **Logger** entradas (classe) (usando `+` ícone)
 
       * `com.adobe.cq.social.scoring`
       * `com.adobe.cq.social.badging`
+
    1. Selecione **Salvar**
-
-
 
 ![debug-scoring-log](assets/debug-scoring-log.png)
 
@@ -127,7 +123,7 @@ As descrições para acessar dados de pontuação e badging usam JSRP, pois o UG
 
 **JSRP no autor**: experimentar no ambiente do autor resulta em uma UGC que só é visível do ambiente do autor.
 
-**JSRP em publicação**: da mesma forma, se estiver testando no ambiente de publicação, será necessário acessar o CRXDE Lite com privilégios administrativos em uma instância de publicação. Se a instância de publicação estiver em execução no [modo de produção](/help/sites-administering/production-ready.md) (nosamplecontent runmode), é necessário [ativar o CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
+**JSRP em publicação**: da mesma forma, se estiver testando no ambiente de publicação, será necessário acessar o CRXDE Lite com privilégios administrativos em uma instância de publicação. Se a instância de publicação estiver em execução no [modo de produção](/help/sites-administering/production-ready.md) (modo de execução nosamplecontent), é necessário [ativar o CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
 A localização básica do UGC no JSRP é `/content/usergenerated/asi/jcr/`.
 
@@ -151,7 +147,7 @@ As capturas de tela dos dados do repositório vêm da configuração de pontuaç
    * Uso do site Tutorial de introdução (engajamento) criado durante o [tutorial de introdução](/help/communities/getting-started.md)
    * Localize o nó da página do fórum
 
-      `/content/sites/engage/en/forum/jcr:content`
+     `/content/sites/engage/en/forum/jcr:content`
 
    * Adicionar propriedades de pontuação e medalha
 
@@ -167,22 +163,21 @@ As capturas de tela dos dados do repositório vêm da configuração de pontuaç
 
    * Localize o nó do componente do fórum
 
-      `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
+     `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
    * Para exibir selos, adicione a propriedade
 
-      `allowBadges = true`
+     `allowBadges = true`
 
    * Um usuário se conecta, cria um tópico do fórum e recebe um selo bronze
-
 
 1. Um site de AEM *sem* uma id exclusiva:
 
    * Usar o [Guia de componentes da comunidade](/help/communities/components-guide.md)
    * Localize o nó da página do fórum
 
-      `/content/community-components/en/forum/jcr:content`
+     `/content/community-components/en/forum/jcr:content`
 
    * Adicionar propriedades de pontuação e medalha
 
@@ -198,15 +193,14 @@ As capturas de tela dos dados do repositório vêm da configuração de pontuaç
 
    * Localize o nó do componente do fórum
 
-      `/content/community-components/en/forum/jcr:content/content/forum`
+     `/content/community-components/en/forum/jcr:content/content/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
    * Para exibir selos, adicione a propriedade
 
-      `allowBadges = true`
+     `allowBadges = true`
 
    * Um usuário se conecta, cria um tópico do fórum e recebe um selo bronze
-
 
 1. Um usuário recebe um selo de moderador usando cURL:
 
@@ -230,7 +224,6 @@ As capturas de tela dos dados do repositório vêm da configuração de pontuaç
 >  /libs/settings/community/scoring/rules/site2/forums-scoring
 >
 >* Criação de imagens exclusivas de crachás para diferentes sites de AEM
-
 
 ### UGC de pontuação de acesso {#access-scoring-ugc}
 

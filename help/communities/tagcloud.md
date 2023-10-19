@@ -1,18 +1,14 @@
 ---
 title: Uso da Social Tag Cloud
-seo-title: Using Social Tag Cloud
-description: Adicionar um componente da Social Tag Cloud a uma página
-seo-description: Adding a Social Tag Cloud component to a page
-uuid: 8c400030-976c-457a-bb5f-e473909647a9
+description: Saiba como adicionar um componente do Social Tag Cloud a uma página que permite que os membros da comunidade conectados identifiquem rapidamente os tópicos de tendência e localizem o conteúdo marcado.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
 exl-id: 56af5362-78de-4308-8958-63a45e8573cc
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '569'
 ht-degree: 5%
 
 ---
@@ -29,7 +25,7 @@ Esta página documenta a `Social Tag Cloud` configurações da caixa de diálogo
 
 Para obter informações detalhadas para desenvolvedores, consulte [Fundamentos de tags](tag.md).
 
-Consulte [Administração de tags](../../help/sites-administering/tags.md) para obter informações sobre como criar e gerenciar tags e sobre quais tags de conteúdo foram aplicadas.
+Consulte [Administração de tags](../../help/sites-administering/tags.md) para obter informações sobre como criar e gerenciar tags e às quais tags de conteúdo foram aplicadas.
 
 ## Adicionar uma nuvem de tag social {#adding-a-social-tag-cloud}
 
@@ -37,13 +33,13 @@ Para adicionar um `Social Tag Cloud` para uma página no modo de autor, use o na
 
 Para obter as informações necessárias, visite [Noções básicas sobre componentes das comunidades](basics.md).
 
-Quando a variável [bibliotecas obrigatórias do lado do cliente](tag.md#essentials-for-client-side) são incluídos, é assim que a variável `Social Tag Cloud` componente aparecerá:
+Quando a variável [bibliotecas obrigatórias do lado do cliente](tag.md#essentials-for-client-side) são incluídos, é assim que a variável `Social Tag Cloud` é exibido:
 
 ![social-tag](assets/social-tag.png)
 
 ## Configuração da Social Tag Cloud {#configuring-social-tag-cloud}
 
-Selecione o colocado `Social Tag Cloud` para acessar e selecionar a variável `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o colocado `Social Tag Cloud` para que você possa acessar e selecionar o `Configure` ícone que abre a caixa de diálogo de edição.
 
 ![configurar](assets/configure-new.png)
 
@@ -100,12 +96,12 @@ Usar o **[!UICONTROL Tags em nuvem do Social (Design)]** especifique como as tag
 
   `Geometrixx Media: Gadgets / Cars`
 
-  Há 3 tags que podem ser aplicadas:
+  Há três tags que podem ser aplicadas:
 
   `Geometrixx Media (the namespace)`, `Gadgets`, e `Cars`
 
-   * Marcado: somente `Cars` será exibida, se aplicada.
-   * Desmarcado: `Geometrixx Media` e `Gadgets`bem como `Cars` será exibida, se aplicada.
+   * Marcado: somente `Cars` são exibidos, se aplicados.
+   * Desmarcado: `Geometrixx Media`, `Gadgets`, e `Cars` são exibidos, se aplicados.
 
   Uma tag simples é uma tag folha.
 

@@ -1,19 +1,15 @@
 ---
 title: Fundamentos do blog
-seo-title: Blog Essentials
-description: Visão geral do blog
-seo-description: Blog overview
-uuid: 714cf70c-76a0-4be6-9163-a31ac6bd1643
+description: Saiba como adicionar o recurso Blog a uma página para que os membros da comunidade conectados possam postar artigos no blog.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: eece7b8f-6ccd-4037-8713-0cd36cfd9e73
 docset: aem65
 exl-id: 51f616e8-4aba-47f6-b948-d5147d84bbb6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '451'
 ht-degree: 2%
 
 ---
@@ -79,22 +75,22 @@ O recurso de blog é composto por dois componentes principais que estão dispon�
 
 ## Essentials para o lado do servidor {#essentials-for-server-side}
 
-* [API do blog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
+* [API do blog](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
 
-* [Endpoints do blog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
+* [Endpoints do blog](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
 
 * [Personalizações do lado do servidor](/help/communities/server-customize.md)
 
 ### Função do blog {#blog-function}
 
-Uma estrutura de site da comunidade que inclui o [Função de blog](/help/communities/functions.md#blog-function) terá configurado `Blog` e `Blog Sidebar` componentes. A função Blog suporta a identificação de um [grupo de usuários membro privilegiado](/help/communities/users.md#privileged-members-group).
+Uma estrutura de site da comunidade que inclui o [Função de blog](/help/communities/functions.md#blog-function) tem `Blog` e `Blog Sidebar` componentes configurados. A função Blog suporta a identificação de um [grupo de usuários membro privilegiado](/help/communities/users.md#privileged-members-group).
 
 ### Acessar entradas do blog (UGC) {#accessing-blog-entries-ugc}
 
 A UGC deve ser moderada usando um dos métodos padrão para moderação.
 Consulte [Moderação de conteúdo gerado pelo usuário](/help/communities/moderate-ugc.md).
 
-A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](/help/communities/working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](/help/communities/working-with-srp.md) O para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso**.
 
@@ -107,7 +103,7 @@ Consulte :
 
 ## Editor primário {#primary-publisher}
 
-Quando a implantação é um farm de publicação, é necessário identificar um editor principal que sondará os artigos agendados para publicação.
+Quando a implantação é um farm de publicação, é necessário identificar um publicador principal que pesquisa os artigos agendados para publicação.
 
 Consulte [Editor primário](/help/communities/deploy-communities.md#primary-publisher) para obter mais detalhes.
 

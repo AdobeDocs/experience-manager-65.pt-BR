@@ -1,15 +1,15 @@
 ---
 title: Adicionar Clientlibs
-description: Adicionar uma ClientLibraryFolder
+description: Saiba como adicionar uma ClientLibraryFolder (clientlibs) usada para conter as Folhas de estilo em cascata e JavaScript usadas para renderizar as páginas do site.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '701'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 ## Adicionar uma ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
-Crie uma ClientLibraryFolder chamada `clientlibs` que conterá o JS e o CSS usados para renderizar as páginas do site.
+Crie uma ClientLibraryFolder chamada `clientlibs` que contém o JavaScript (JS) e as folhas de estilos em cascata (CSS) usadas para renderizar as páginas do site.
 
 A variável `categories` o valor da propriedade fornecido a esta biblioteca do cliente é o identificador usado para incluir diretamente esta clientlib de uma página de conteúdo ou para incorporá-la a outras clientlibs.
 
@@ -106,7 +106,7 @@ Nesse caso, incluindo todos eles e, portanto, os clientlibs SCF mais básicos qu
 
 ### Incluir clientlibs no modelo PlayPage {#include-clientlibs-in-playpage-template}
 
-Sem incluir o `apps.an-scf-sandbox` ClientLibraryFolder na página, os componentes do SCF não são funcionais nem estilizados, pois o JavaScript necessário e os estilos não estão disponíveis.
+Sem incluir o `apps.an-scf-sandbox` ClientLibraryFolder na página, os componentes SCF não são funcionais nem estilizados, pois os estilos JavaScript e CSS necessários não estão disponíveis.
 
 Por exemplo, sem incluir as clientlibs, o componente de comentários do SCF aparece sem estilo:
 
@@ -123,9 +123,9 @@ A instrução include pertence a `head` seção do `html` script. O padrão **`f
 1. Usar **CRXDE Lite**, selecione **`/libs/foundation/components/page/headlibs.jsp`**
 
 1. Clique com o botão direito e selecione **Copiar** (ou selecione Copiar na barra de ferramentas)
-1. Selecionar **`/apps/an-scf-sandbox/components/playpage`**
+1. Selecione **`/apps/an-scf-sandbox/components/playpage`**
 1. Clique com o botão direito e selecione **Colar** (ou selecione Colar na barra de ferramentas)
-1. Clique duas vezes **`headlibs.jsp`** para abri-lo
+1. Clique duas vezes **`headlibs.jsp`** para que você possa abri-lo
 1. Acrescentar a seguinte linha ao final do arquivo
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
 
@@ -149,7 +149,7 @@ Carregue seu site no navegador e veja se o plano de fundo não é um tom de azul
 
 ### Salvando seu trabalho até agora {#saving-your-work-so-far}
 
-Neste ponto, existe uma sandbox minimalista e pode valer a pena salvar como um pacote para que, durante a reprodução, se o repositório ficar corrompido e você desejar começar novamente, você pode desativar o servidor, renomear ou excluir a pasta crx-quickstart/, ativar o servidor, carregar e instalar este pacote salvo e não precisar repetir essas etapas mais básicas.
+Neste ponto, existe uma sandbox minimalista. Pode valer a pena salvar como um pacote para que, durante a reprodução, se o repositório for corrompido e você desejar recomeçar, possa desativar o servidor. Em seguida, renomeie ou exclua a pasta crx-quickstart/, ative o servidor, carregue e instale este pacote salvo e não precise repetir as etapas mais básicas.
 
 Este pacote existe no [Criar uma página de exemplo](/help/communities/create-sample-page.md) tutorial para quem não pode esperar para saltar em e começar a jogar!...
 

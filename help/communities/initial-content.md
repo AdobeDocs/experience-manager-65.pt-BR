@@ -1,15 +1,15 @@
 ---
 title: Conteúdo inicial da sandbox
-description: Criar conteúdo
+description: Saiba como usar o modelo de Página na sandbox para criar uma página principal para uma versão em inglês de um site e uma página secundária da página principal.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 068a0fff-ca48-4847-ba3f-d78416c97f6d
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 4%
+source-wordcount: '490'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,7 @@ Nesta seção, você cria as seguintes páginas, todas usando o [modelo de pági
 
    * SCF Play - Filho da página principal na qual jogar.
 
-Embora este tutorial não aborde [cópias de idioma](../../help/sites-administering/tc-prep.md), foi projetada para que a página raiz possa implementar a detecção do idioma preferencial para o usuário por meio do cabeçalho de HTML e redirecionar para a página principal apropriada do idioma. A convenção é usar o código de país de duas letras para o nome do nó da página, por exemplo, &quot;en&quot; para inglês e &quot;fr&quot; para francês.
+Este tutorial não aborda [cópias de idioma](../../help/sites-administering/tc-prep.md). Em vez disso, ele é projetado para que a página raiz possa implementar a detecção do idioma preferencial para o usuário por meio do cabeçalho de HTML e redirecionar para a página principal apropriada do idioma. A convenção é usar o código de país de duas letras para o nome do nó da página, por exemplo, &quot;en&quot; para inglês e &quot;fr&quot; para francês.
 
 ## Criar primeiras páginas {#create-first-pages}
 

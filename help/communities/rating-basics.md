@@ -1,18 +1,14 @@
 ---
 title: Fundamentos de classificação
-seo-title: Rating Essentials
-description: Visão geral do componente de classificação
-seo-description: Rating component overview
-uuid: 48ef61ad-be7a-4a6b-a284-23e5bb4f1671
+description: Saiba como o componente de Classificação, uma subclasse Tally, permite que os membros da comunidade conectados avaliem um recurso no site.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 7dc3ef57-05c3-45d4-ace3-bb3ba6ea768b
 exl-id: 49456944-ff0d-4507-b3b8-143c90067573
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '287'
 ht-degree: 1%
 
 ---
@@ -60,9 +56,9 @@ Não há suporte para postagem anônima de uma classificação. Os visitantes do
 
 ## Essentials para o lado do servidor {#essentials-for-server-side}
 
-* [APIs Tally](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [APIs Tally](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Endpoints Tally](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Endpoints Tally](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizações do lado do servidor](server-customize.md)
 
@@ -71,7 +67,7 @@ Não há suporte para postagem anônima de uma classificação. Os visitantes do
 A UGC deve ser moderada usando um dos métodos padrão para moderação.
 Consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
 
-A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) O para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso**.
 

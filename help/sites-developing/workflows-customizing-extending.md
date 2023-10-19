@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
 source-wordcount: '3582'
 ht-degree: 2%
@@ -37,7 +37,7 @@ Um componente da etapa do fluxo de trabalho define a aparência e o comportament
 * A caixa de diálogo de edição para configurar propriedades do componente.
 * O serviço ou script que é executado no tempo de execução.
 
-Assim como com [todos os componentes](/help/sites-developing/components.md), os componentes da etapa do fluxo de trabalho herdam do componente especificado para o `sling:resourceSuperType` propriedade. O diagrama a seguir mostra a hierarquia de `cq:component` nós que formam a base de todos os componentes da etapa do fluxo de trabalho. O diagrama também inclui a variável **Etapa do processo**, **Etapa do participante**, e **Etapa dinâmica do participante** componentes, pois esses são os pontos de partida mais comuns (e básicos) para desenvolver componentes de etapa personalizados.
+Assim como com [todos os componentes](/help/sites-developing/components.md), os componentes da etapa do fluxo de trabalho herdam do componente especificado para a `sling:resourceSuperType` propriedade. O diagrama a seguir mostra a hierarquia de `cq:component` nós que formam a base de todos os componentes da etapa do fluxo de trabalho. O diagrama também inclui a variável **Etapa do processo**, **Etapa do participante**, e **Etapa dinâmica do participante** componentes, pois esses são os pontos de partida mais comuns (e básicos) para desenvolver componentes de etapa personalizados.
 
 ![aem_wf_componentinherit](assets/aem_wf_componentinherit.png)
 

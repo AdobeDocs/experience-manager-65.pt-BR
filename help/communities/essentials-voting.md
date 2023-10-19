@@ -1,19 +1,15 @@
 ---
 title: Fundamentos para votação
-seo-title: Voting Essentials
-description: Visão geral do componente de votação
-seo-description: Voting component overview
-uuid: ed0a771d-1c14-4fbf-ab6a-a028e5ee2e2a
+description: Saiba como usar o componente de Votação, que permite que os membros classifiquem um conteúdo específico selecionando setas para cima ou para baixo para indicar sua opinião.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 1a947a06-6a5c-4be9-b2fa-e5fa809ff3b8
 exl-id: e8ff751f-404a-498d-8e90-62a13ab593ff
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 1%
+source-wordcount: '301'
+ht-degree: 0%
 
 ---
 
@@ -60,9 +56,9 @@ Não há suporte para postagem anônima de um voto. Os visitantes do site devem 
 
 ## Essentials para o lado do servidor {#essentials-for-server-side}
 
-* [APIs Tally](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [APIs Tally](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Endpoints Tally](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Endpoints Tally](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizações do lado do servidor](server-customize.md)
 
@@ -71,7 +67,7 @@ Não há suporte para postagem anônima de um voto. Os visitantes do site devem 
 A UGC deve ser moderada usando um dos métodos padrão para moderação.
 Consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
 
-A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) O para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso**.
 

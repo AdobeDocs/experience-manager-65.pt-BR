@@ -1,25 +1,21 @@
 ---
 title: Fundamentos da biblioteca de arquivos
-seo-title: File Library Essentials
-description: Trabalhar com o recurso de biblioteca de arquivos
-seo-description: Working with the file library feature
-uuid: 0630f13e-97b4-4f93-9dce-07f559287c29
+description: Saiba mais sobre os fundamentos do trabalho com o recurso Biblioteca de arquivos nas comunidades do Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 9019b967-fff8-4dda-bc5a-fd4a3e14a4ef
 exl-id: 6d653331-c1ce-4ccb-bb45-656b6413ac3e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '260'
 ht-degree: 2%
 
 ---
 
 # Fundamentos da biblioteca de arquivos {#file-library-essentials}
 
-Esta página fornece as informações essenciais para trabalhar com o recurso de biblioteca de arquivos.
+Esta página fornece as informações fundamentais para trabalhar com o recurso de biblioteca de arquivos.
 
 ## Essentials para o lado do cliente {#essentials-for-client-side}
 
@@ -56,9 +52,9 @@ Esta página fornece as informações essenciais para trabalhar com o recurso de
 
 ## Essentials para o lado do servidor {#essentials-for-server-side}
 
-* [API da biblioteca de arquivos](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/filelibrary/client/api/package-summary.html)
+* [API da biblioteca de arquivos](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/filelibrary/client/api/package-summary.html)
 
-* [Endpoints da biblioteca de arquivos](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
+* [Endpoints da biblioteca de arquivos](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
 
 * [Personalizações do lado do servidor](server-customize.md)
 
@@ -71,7 +67,7 @@ Uma estrutura de site da comunidade que inclui o [Função Biblioteca de Arquivo
 A UGC deve ser moderada usando um dos métodos padrão para moderação.
 Consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
 
-A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) O para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso**.
 

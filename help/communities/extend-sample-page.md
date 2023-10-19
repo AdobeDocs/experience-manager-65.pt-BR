@@ -1,19 +1,15 @@
 ---
 title: Adicionar comentário à página de exemplo
-seo-title: Add Comment to Sample Page
-description: Adicionar comentários personalizados a uma página
-seo-description: Add Custom Comments to a page
-uuid: ab258960-6de2-4943-80a7-e72904c0fd8e
+description: Saiba como uma instância do sistema de comentários de um site deve definir seu resourceType como o sistema de comentários personalizado e incluir todas as bibliotecas de clientes necessárias.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: a5040371-3bc2-43bc-a103-7175c4c6252d
 docset: aem65
 exl-id: d4295a77-b931-4bc8-b3b4-eec42fdcfc56
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -30,13 +26,13 @@ A variável [Guia de componentes da comunidade](/help/communities/components-gui
 
 [https://localhost:4502/content/community-components/en/comments.html](https://localhost:4502/content/community-components/en/comments.html)
 
-Observe as três bibliotecas de clientes necessárias para que os Comentários sejam renderizados e funcionem corretamente. Eles precisarão ser incluídos onde os Comentários estendidos forem referenciados e a variável [biblioteca cliente de comentários estendidos](/help/communities/extend-create-components.md#create-a-client-library-folder) ( `apps.custom.comments`).
+Observe as três bibliotecas de clientes necessárias para que os Comentários sejam renderizados e funcionem corretamente. Eles devem ser incluídos onde os Comments estendidos são mencionados e a variável [biblioteca cliente de comentários estendidos](/help/communities/extend-create-components.md#create-a-client-library-folder) ( `apps.custom.comments`).
 
 ![comments-component1](assets/comments-component1.png)
 
 ### Adicionar comentários personalizados a uma página {#add-custom-comments-to-a-page}
 
-Como só pode haver um sistema de Comentários por página, é mais simples criar uma página de exemplo, conforme descrito no resumo [Criar uma página de exemplo](/help/communities/create-sample-page.md) tutorial.
+Como só pode haver um sistema de Comentários por página, é mais simples criar uma página de exemplo, conforme descrito no resumo [criar uma página de exemplo](/help/communities/create-sample-page.md) tutorial.
 
 Depois de criado, entre no modo Design e disponibilize o grupo de componentes Personalizado para permitir que o `Alt Comments` componente a ser adicionado à página.
 

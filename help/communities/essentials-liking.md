@@ -1,20 +1,16 @@
 ---
 title: Fundamentos para curtidas
-seo-title: Liking Essentials
-description: Visão geral do componente de curtidas
-seo-description: Liking component overview
-uuid: 89f16859-c901-4090-8e16-363b95c508de
+description: Saiba como usar o componente Curtir, uma ferramenta útil que permite aos membros expressar uma opinião positiva sobre algum conteúdo selecionando o ícone do coração.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: f176c42b-b16b-42c9-af22-4b6421de5a90
 pagetitle: Liking Essentials
 exl-id: ef314385-cd5c-411c-91df-83691a81c1bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 1%
+source-wordcount: '306'
+ht-degree: 0%
 
 ---
 
@@ -61,9 +57,9 @@ Não há suporte para postagem anônima de uma curtida. Os visitantes do site de
 
 ## Essentials para o lado do servidor {#essentials-for-server-side}
 
-* [APIs Tally](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [APIs Tally](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Endpoints Tally](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Endpoints Tally](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizações do lado do servidor](server-customize.md)
 
@@ -72,7 +68,7 @@ Não há suporte para postagem anônima de uma curtida. Os visitantes do site de
 A UGC deve ser moderada usando um dos métodos padrão para moderação.
 Consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
 
-A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) O para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso**.
 

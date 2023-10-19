@@ -1,30 +1,26 @@
 ---
 title: Criar os componentes
-seo-title: Create the Components
-description: Criar o componente de Comentários
-seo-description: Create the Comments component
-uuid: ea6e00d4-1db7-40ef-ae49-9ec55df58adf
+description: Saiba como estender componentes usando o sistema de comentários composto por componentes Comentários e Comentários.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 exl-id: 2e02db9f-294d-4d4a-92da-3ab1d38416ab
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '634'
 ht-degree: 5%
 
 ---
 
 # Criar os componentes  {#create-the-components}
 
-O exemplo de extensão de componentes usa o sistema de comentários, que na verdade é composto por dois componentes
+O exemplo de extensão de componentes usa o sistema de comentários, que é composto por dois componentes.
 
 * Comentários - o sistema de comentários abrangente que é o componente colocado em uma página.
 * Comentário - O componente que captura uma instância de um comentário publicado.
 
-Ambos os componentes precisam ser implementados, especialmente se você personalizar a aparência de um comentário publicado.
+Ambos os componentes devem ser implementados, especialmente se você personalizar a aparência de um comentário publicado.
 
 >[!NOTE]
 >
@@ -36,7 +32,7 @@ Ambos os componentes precisam ser implementados, especialmente se você personal
 
 Estas direções especificam uma **Grupo** valor diferente de `.hidden` assim, o componente pode ser disponibilizado no navegador de componentes (sidekick).
 
-A exclusão do arquivo JSP criado automaticamente ocorre porque o arquivo HBS padrão será usado.
+A exclusão do arquivo JSP criado automaticamente ocorre porque o arquivo HBS padrão é usado em seu lugar.
 
 1. Navegue até **CRXDE|Lite** ([http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp))
 
@@ -45,10 +41,10 @@ A exclusão do arquivo JSP criado automaticamente ocorre porque o arquivo HBS pa
    * Selecione o `/apps` nó
 
       * **Criar pasta** nomeado **[!UICONTROL personalizado]**
+
    * Selecione o `/apps/custom` nó
 
       * **Criar pasta** nomeado **[!UICONTROL componentes]**
-
 
 1. Selecione o `/apps/custom/components` nó
 
@@ -59,13 +55,13 @@ A exclusão do arquivo JSP criado automaticamente ocorre porque o arquivo HBS pa
       * **Descrição**: *Estilo alternativo de comentários*
       * **Super Type**: *social/commons/components/hbs/comments*
       * **Grupo**: *Personalizado*
+
    * Selecione **[!UICONTROL Próximo]**
    * Selecione **[!UICONTROL Próximo]**
    * Selecione **[!UICONTROL Próximo]**
    * Selecionar **[!UICONTROL OK]**
 
-
-1. Expanda o nó recém-criado: `/apps/custom/components/comments`
+1. Expanda o nó que foi criado: `/apps/custom/components/comments`
 1. Selecionar **[!UICONTROL Salvar tudo]**
 1. Clique com o botão direito do mouse `comments.jsp`
 1. Selecione **[!UICONTROL Excluir]**
@@ -77,7 +73,7 @@ A exclusão do arquivo JSP criado automaticamente ocorre porque o arquivo HBS pa
 
 Essas direções definem **Grupo** para `.hidden` já que somente o componente principal deve ser incluído em uma página.
 
-A exclusão do arquivo JSP criado automaticamente ocorre porque o arquivo HBS padrão será usado.
+A exclusão do arquivo JSP criado automaticamente ocorre porque o arquivo HBS padrão é usado em seu lugar.
 
 1. Navegue até a `/apps/custom/components/comments` nó
 1. Clique com o botão direito do mouse no nó
@@ -89,13 +85,13 @@ A exclusão do arquivo JSP criado automaticamente ocorre porque o arquivo HBS pa
       * **Descrição**: *Estilo de comentário alternativo*
       * **Super Type**: *social/commons/components/hbs/comments/comment*
       * **Grupo**: `*.hidden*`
+
    * Selecione **[!UICONTROL Próximo]**
    * Selecione **[!UICONTROL Próximo]**
    * Selecione **[!UICONTROL Próximo]**
    * Selecionar **[!UICONTROL OK]**
 
-
-1. Expanda o nó recém-criado: `/apps/custom/components/comments/comment`
+1. Expanda o nó que foi criado: `/apps/custom/components/comments/comment`
 1. Selecionar **[!UICONTROL Salvar tudo]**
 1. Clique com o botão direito do mouse `comment.jsp`
 1. Selecione **[!UICONTROL Excluir]**
@@ -120,11 +116,11 @@ Usar [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
       * De `social/commons/components/hbs/comments`
       * Para `/apps/custom/components/comments`
+
    * Modifique para incluir o componente de comentário personalizado (~linha 75):
 
       * Substituir `{{include this resourceType='social/commons/components/hbs/comments/comment'}}`
       * Com `{{include this resourceType='/apps/custom/components/comments/comment'}}`
-
 
 * Copiar `comment.hbs`
 
@@ -143,7 +139,7 @@ Usar [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 ## Criar uma pasta da biblioteca do cliente {#create-a-client-library-folder}
 
-Para evitar a necessidade de incluir explicitamente essa biblioteca do cliente, o valor das categorias para a clientlib do sistema de comentários padrão pode ser usado ( `cq.social.author.hbs.comments`), mas essa clientlib também seria incluída para todas as instâncias do componente padrão.
+Para evitar a necessidade de incluir essa biblioteca do cliente, o valor das categorias para a clientlib do sistema de comentários padrão pode ser usado ( `cq.social.author.hbs.comments`). No entanto, essa clientlib também teria que ser incluída para todas as instâncias do componente padrão.
 
 Usar [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
@@ -158,7 +154,7 @@ Usar [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
       * **Nome** `dependencies` **Tipo** `String` **Valor** `cq.social.scf` `Multi`
 
 * Selecionar **[!UICONTROL Salvar tudo]**
-* Com `/apps/custom/components/comments/clientlib`Como nó selecionado, criar 3 arquivos:
+* Com `/apps/custom/components/comments/clientlib`Como nó selecionado, crie três arquivos:
 
    * **Nome**: `css.txt`
    * **Nome**: `js.txt`

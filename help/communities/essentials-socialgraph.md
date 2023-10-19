@@ -1,14 +1,14 @@
 ---
 title: Fundamentos do gráfico social
-description: Saiba mais sobre o componente e o componente Seguir.
+description: Saiba mais sobre os fundamentos do Gráfico social usando os componentes Seguir e Seguir em um site da comunidade.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: c037a788-c943-4f95-a028-1fcb0ef48f86
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '249'
 ht-degree: 2%
 
 ---
@@ -62,7 +62,7 @@ A variável `following` componente lista os membros que estão seguindo o membro
        <li><i>True </i>- A <code>following</code> componente lista os membros que o membro conectado <code>follows</code></li>
        <li><i>Falso </i>- A <code>following</code> componente lista os membros que <code>follow </code>o membro conectado</li>
       </ul> </li>
-    </ul> <p>O padrão é <i>true</i> se a propriedade estiver ausente. Não é possível definir essa propriedade usando a caixa de diálogo de edição no modo Autor. A propriedade deve ser adicionada a uma instância do <code>following</code> nó usando <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
+    </ul> <p>O padrão é <i>true</i> se a propriedade estiver ausente. Não é possível definir essa propriedade usando a caixa de diálogo de edição no modo Autor. A propriedade deve ser adicionada a uma instância do <code>following</code> usando <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
   </tr>
  </tbody>
 </table>

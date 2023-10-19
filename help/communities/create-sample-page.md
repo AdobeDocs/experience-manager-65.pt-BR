@@ -1,14 +1,14 @@
 ---
 title: Criar uma página de exemplo
-description: Criar um site da comunidade de exemplo
+description: Saiba como criar um modelo de site da comunidade que contenha apenas a função Página, que pode ajudá-lo a criar um site da comunidade simples.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: developing
 exl-id: d66fc1ff-a669-4a2c-b45a-093060facd97
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '426'
 ht-degree: 2%
 
 ---

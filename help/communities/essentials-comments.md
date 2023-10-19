@@ -1,14 +1,14 @@
 ---
 title: Fundamentos de comentários
-description: Visão geral do componente Comentários
+description: Saiba mais sobre como trabalhar com o sistema de comentários (componente Comentários) e gerenciar o conteúdo gerado pelo usuário (UGC) em publicações de membros da comunidade.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 8b4034f7-2f97-45ad-96d4-51cfbeae5991
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '351'
 ht-degree: 4%
 
 ---

@@ -1,15 +1,15 @@
 ---
 title: Fundamentos do fórum
-description: Visão geral do fórum
+description: Saiba mais sobre os fundamentos do trabalho com o recurso Fórum nas comunidades do Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 622cf6ca-f119-4310-ad14-537576bd6f6d
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 2%
+source-wordcount: '259'
+ht-degree: 1%
 
 ---
 

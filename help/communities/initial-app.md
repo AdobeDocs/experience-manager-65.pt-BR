@@ -1,28 +1,24 @@
 ---
 title: Aplicativo de sandbox inicial
-seo-title: Initial Sandbox Application
-description: Criar modelo, componente e script
-seo-description: Create template, component, and script
-uuid: b0d03376-d8bc-4e98-aea2-a01744c64ccd
+description: Saiba como usar o modelo de conteúdo usado para criar páginas de conteúdo e um componente e script usado para renderizar páginas do site.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 exl-id: cbf9ce36-53a2-4f4b-a96f-3b05743f6217
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '626'
 ht-degree: 2%
 
 ---
 
 # Aplicativo de sandbox inicial {#initial-sandbox-application}
 
-Nesta seção, você criará o seguinte:
+Nesta seção, você cria o seguinte:
 
-* A variável **[modelo](#createthepagetemplate)** que será usado para criar páginas de conteúdo no site de exemplo.
-* A variável **[componente e script](#create-the-template-s-rendering-component)** que será usado para renderizar as páginas do site.
+* A variável **[modelo](#createthepagetemplate)** que é usado para criar páginas de conteúdo no site de exemplo.
+* A variável **[componente e script](#create-the-template-s-rendering-component)** que é usado para renderizar as páginas do site.
 
 ## Criar o modelo de conteúdo {#create-the-content-template}
 
@@ -32,7 +28,7 @@ Neste exercício, todas as páginas se baseiam em um modelo simples.
 
 1. No painel do explorador do CRXDE Lite:
 
-   * Selecionar `/apps/an-scf-sandbox/templates`
+   * Selecione `/apps/an-scf-sandbox/templates`
    * **[!UICONTROL Criar]** > **[!UICONTROL Criar modelo]**
 
 1. Na caixa de diálogo Criar modelo, digite os seguintes valores e clique em **[!UICONTROL Próxima]**:
@@ -45,7 +41,7 @@ Neste exercício, todas as páginas se baseiam em um modelo simples.
 
    O Label é usado para o nome do nó.
 
-   O Tipo de recurso é exibido na `playpage`do nó jcr:content como a propriedade `sling:resourceType`. Ele identifica o componente (recurso) que renderiza o conteúdo quando solicitado por um navegador.
+   O Tipo de recurso é exibido na `playpage`do `jcr:content` como a propriedade `sling:resourceType`. Ele identifica o componente (recurso) que renderiza o conteúdo quando solicitado por um navegador.
 
    Nesse caso, todas as páginas criadas usando o `playpage` modelo são renderizados pelo `an-scf-sandbox/components/playpage` componente. Por convenção, o caminho para o componente é relativo, permitindo que o Sling pesquise o recurso primeiro na variável `/apps` pasta e, se não for encontrada, no `/libs` pasta.
 
@@ -61,9 +57,9 @@ Neste exercício, todas as páginas se baseiam em um modelo simples.
 
    Observação: o valor da propriedade de caminho permitida é um *expressão regular*. As páginas de conteúdo que têm um caminho que corresponde à expressão podem usar o modelo. Nesse caso, a expressão regular corresponde ao caminho do **/content** pasta e todas as suas subpáginas.
 
-   Quando um autor cria uma página abaixo de `/content`, o `playpage` O modelo chamado &quot;Um modelo de página de sandbox do SCF&quot; aparece em uma lista de modelos disponíveis para uso.
+   Quando um autor cria uma página abaixo de `/content`, o `playpage` O modelo chamado &quot;Um modelo de página de sandbox SCF&quot; aparece em uma lista de modelos disponíveis para uso.
 
-   Depois que a página raiz é criada a partir do template, o acesso ao template pode ser restrito a esse site modificando a propriedade para incluir o caminho raiz na expressão regular, ou seja,
+   Depois que a página raiz é criada a partir do modelo, o acesso ao modelo pode ser restrito a este site editando a propriedade para incluir o caminho raiz na expressão regular.
 
    `/content/an-scf-sandbox(/.&ast;)?`
 
@@ -73,11 +69,11 @@ Neste exercício, todas as páginas se baseiam em um modelo simples.
 
    Clique em **[!UICONTROL Próxima]** no **[!UICONTROL Pais permitidos]** painel.
 
-   Clique em **[!UICONTROL Próxima]** no **[!UICONTROL Filhos permitidos]** painéis.
+   Clique em **[!UICONTROL Próxima]** no **[!UICONTROL Filhos permitidos]** painel.
 
    Clique em **[!UICONTROL OK]**.
 
-1. Depois de clicar em OK e terminar de criar o modelo, você observará triângulos vermelhos sendo exibidos nos cantos dos valores da guia Propriedades para o novo `playpage` modelo. Esses triângulos vermelhos indicam edições que não foram salvas.
+1. Depois de clicar em OK e terminar de criar o modelo, observe os triângulos vermelhos que são exibidos nos cantos dos valores da guia Propriedades para o novo `playpage` modelo. Esses triângulos vermelhos indicam edições que não foram salvas.
 
    Clique em **[!UICONTROL Salvar tudo]** para salvar o novo modelo no repositório.
 
@@ -113,6 +109,6 @@ Crie o *componente* que define o conteúdo e renderiza todas as páginas criadas
 
    >[!CAUTION]
    >
-   >A correspondência entre o caminho para o componente de página de reprodução e a propriedade sling:resourceType do modelo de página de reprodução é essencial para o funcionamento correto do site.
+   >A correspondência entre o caminho para o componente de página de reprodução e o `sling:resourceType` do modelo de página de reprodução é crucial para o correto funcionamento do site.
 
    ![verify-template-component](assets/verify-template-component.png)
