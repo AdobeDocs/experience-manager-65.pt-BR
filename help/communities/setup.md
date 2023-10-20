@@ -1,18 +1,14 @@
 ---
 title: Configuração inicial
-seo-title: Initial Setup
-description: Configuração de comunidades
-seo-description: Setting up Communities
-uuid: c53d280c-c5ae-47cf-8038-f0dea68e15ff
+description: Saiba como configurar inicialmente as Comunidades do Adobe Experience Manager.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 exl-id: 6bda0f09-7ae5-4540-b035-9dd249ac3186
-source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '684'
 ht-degree: 2%
 
 ---
@@ -21,16 +17,16 @@ ht-degree: 2%
 
 ## Iniciar instâncias de criação e publicação {#start-author-and-publish-instances}
 
-Para fins de desenvolvimento e demonstração, será necessário executar um autor e uma instância de publicação.
+Para fins de desenvolvimento e demonstração, é necessário executar um autor e uma instância de publicação.
 
-Para isso, siga o AEM básico [Introdução](../../help/sites-deploying/deploy.md#getting-started) instruções, o que resultará em:
+Para fazer isso, siga o Adobe Experience Manager básico (AEM) [Introdução](../../help/sites-deploying/deploy.md#getting-started) instruções, que resultam no seguinte:
 
 * Ambiente de autor em [localhost:4502](http://localhost:4502/)
 * Publicar ambiente em [localhost:4503](http://localhost:4503/)
 
 Para o AEM Communities,
 
-* O ambiente de criação do é para:
+* O ambiente do Autor destina-se a:
 
    * Desenvolvimento de sites, modelos e componentes.
    * Tarefas administrativas e de configuração.
@@ -54,7 +50,7 @@ Para verificar se o pacote de recursos mais recente está instalado, visite:
 
 ## Configurar Analytics {#configure-analytics}
 
-Quando [O Adobe Analytics está configurado para o site da comunidade](analytics.md)No entanto, informações sobre a atividade da comunidade estão disponíveis para aprimorar a experiência do membro da comunidade e para fornecer feedback aos administradores do site.
+Quando [O Adobe Analytics está configurado para o site da comunidade](analytics.md)No entanto, informações sobre a atividade da comunidade estão disponíveis para aprimorar a experiência do membro da comunidade e fornecer feedback aos administradores do site.
 
 A integração com o Adobe Analytics é opcional.
 
@@ -68,11 +64,11 @@ Consulte [Configuração de email](email.md).
 
 ## Habilitar o serviço de túnel {#enable-the-tunnel-service}
 
-Ao criar um site da comunidade no ambiente de criação, o serviço de túnel possibilita atribuir funções a membros confiáveis da comunidade registrados no ambiente de publicação. O serviço de túnel também permite acesso a membros da comunidade a partir do [Consoles Membros e grupos](members.md) no ambiente de criação.
+Ao criar um site da comunidade no ambiente do Autor, o serviço de túnel possibilita atribuir funções a membros confiáveis da comunidade registrados no ambiente de Publicação. O serviço de túnel também permite acesso a membros da comunidade a partir do [Consoles Membros e grupos](members.md) no ambiente de criação.
 
-A convenção é para membros e grupos de membros criados no ambiente de publicação para *não* ser recriado no ambiente de criação. Para obter mais informações, consulte [Gerenciar usuários e grupos de usuários](users.md).
+A convenção é para membros e grupos de membros criados no ambiente de Publicação para *não* ser recriado no ambiente de criação. Para obter mais informações, consulte [Gerenciar usuários e grupos de usuários](users.md).
 
-Para obter instruções simples para habilitar o serviço de túnel em um **autor** instância, consulte [Serviço de túnel](deploy-communities.md#tunnel-service-on-author).
+Para obter instruções simples para habilitar o serviço de túnel em um **Autor** instância, consulte [Serviço de túnel](deploy-communities.md#tunnel-service-on-author).
 
 ## Função de administrador da comunidade {#community-administrator-role}
 
@@ -108,8 +104,8 @@ Role para baixo até `Add User to Groups`:
 
 * Digite &quot;C&quot; para pesquisar
 
-   * Selecionar `Community Administrators`
-   * Selecionar `Community Enablement Managers`
+   * Selecione `Community Administrators`
+   * Selecione `Community Enablement Managers`
 
 * Selecione **[!UICONTROL Salvar]**.
 
@@ -124,11 +120,11 @@ Antes que as versões de demonstração do logon social com Facebook e Twitter p
 
 Para servidores de produção, é necessário criar os serviços em nuvem necessários para fornecer logon social.
 
-Consulte [Logon social com a Facebook e o Twitter](social-login.md).
+Consulte [Logon social com o Facebook e o Twitter](social-login.md).
 
 ## Criar tags do tutorial {#create-tutorial-tags}
 
-Crie tags para usar nos tutoriais do engage, usando o namespace de tag de `Tutorial`.
+Criar tags para que você possa usá-las para os tutoriais de participação, usando o namespace da tag de `Tutorial`.
 
 Use o [Console de marcação](../../help/sites-administering/tags.md#tagging-console) para criar as seguintes tags:
 

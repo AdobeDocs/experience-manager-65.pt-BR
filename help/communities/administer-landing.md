@@ -1,19 +1,15 @@
 ---
 title: Sites de comunidades
-seo-title: Communities Sites
-description: Visão geral da documentação do AEM Communities
-seo-description: Overview of the AEM Communities documentation
-uuid: 9842ce6c-1af8-4b27-b199-07410e797ab2
+description: Saiba mais sobre os fundamentos das comunidades Adobe Experience Manager (AEM) para administradores que já estão familiarizados com seus recursos básicos.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
 role: Admin
 exl-id: e3ffc73e-2bc5-492d-b64b-750cc7d8ab9b
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '449'
 ht-degree: 4%
 
 ---
@@ -38,10 +34,10 @@ Para obter uma visão geral e tutoriais de introdução, visite:
    * [Sites](sites-console.md)
 
       * [Grupos (subcomunidades)](groups.md)
+
    * [Moderação](moderation.md)
    * [Gerenciamento de Membros e Grupos](members.md)
    * [Relatórios](reports.md)
-
 
 * Communities [*ferramentas*](tools.md):
 
@@ -70,8 +66,8 @@ Um recurso importante do AEM Communities é a geração de conteúdo gerado pelo
 * [Serviço de túnel](deploy-communities.md#tunnel-service-on-author): permite que membros do lado da publicação e grupos de membros sejam acessados do ambiente de criação.
 * [Consoles Membros e grupos](members.md): permite que membros do lado da publicação e grupos de membros sejam criados e gerenciados no ambiente de criação.
 * [Sincronização de usuário](sync.md): para sincronizar membros e grupos de membros em várias instâncias de publicação.
-* [Logon social com a Facebook e o Twitter](social-login.md): capacidade dos visitantes do site de se tornarem membros da comunidade usando suas credenciais do Facebook ou do Twitter.
-* [Pontuação e medalhas](implementing-scoring.md): a capacidade de atribuir medalhas para identificar as funções de um membro e de os membros ganharem medalhas por meio de sua participação na comunidade.
+* [Social Faça logon com o Facebook e o Twitter](social-login.md): capacidade dos visitantes do site de se tornarem membros da comunidade usando suas credenciais do Facebook ou do Twitter.
+* [Pontuação e medalhas](implementing-scoring.md): capacidade de atribuir medalhas para identificar funções de um membro e de os membros ganharem medalhas por meio de sua participação na comunidade.
 * [Notificação](notifications.md): capacidade de os membros serem notificados sobre a atividade que seguem.
 * [Assinaturas](subscriptions.md): capacidade de os membros interagirem com a comunidade usando email externo.
 * [Mensagens](messaging.md): capacidade dos membros de interagir com a comunidade usando mensagens internas.
@@ -88,12 +84,12 @@ A natureza do trabalho com conteúdo da comunidade influencia a estrutura da imp
 
 * [Pacote de recursos mais recente do Communities](deploy-communities.md#latestfeaturepack)
 
-Consulte a página de implantação para obter outras informações específicas das comunidades, como para [Atualizando](upgrade.md), [Dispatcher](dispatcher.md) e [Replicação](deploy-communities.md#replication-agents-on-author).
+Consulte a página de implantação para outras informações específicas das comunidades, como para [Atualizando](upgrade.md), [Dispatcher](dispatcher.md), e [Replicação](deploy-communities.md#replication-agents-on-author).
 
 ## Documentação de comunidades relacionadas {#related-communities-documentation}
 
-* Visita [Implantação de comunidades](deploy-communities.md) para saber mais sobre implantações recomendadas.
+* Visita [Implantação de comunidades](deploy-communities.md) onde você pode saber mais sobre implantações recomendadas.
 
-* Visita [Comunidades de desenvolvimento](communities.md) para saber mais sobre a estrutura de componente social (SCF) e a personalização de componentes e recursos do Communities.
+* Visita [Comunidades de desenvolvimento](communities.md) onde você pode saber mais sobre a estrutura do componente social (SCF) e personalização de componentes e recursos do Communities.
 
-* Visita [Criação de componentes das comunidades](author-communities.md) para saber como criar com e configurar componentes das Comunidades.
+* Visita [Criação de componentes das comunidades](author-communities.md) onde você pode aprender a criar com e configurar componentes de Comunidades.

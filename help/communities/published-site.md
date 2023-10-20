@@ -1,19 +1,15 @@
 ---
 title: Experimente o site publicado
-seo-title: Experience the Published Site
-description: Navegar até um site publicado
-seo-description: Browse to a published site
-uuid: 44594e9e-27ad-475d-953d-3611b04f0df8
+description: Saiba como navegar até o URL exibido ao criar um site, mas no servidor de publicação.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
-discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1205'
 ht-degree: 1%
 
 ---
@@ -29,7 +25,7 @@ Agora que o site de comunidades recém-criado foi publicado, navegue até o URL 
 
 Para minimizar a confusão sobre qual membro está conectado no autor e na publicação, é recomendável usar navegadores diferentes para cada instância.
 
-Ao chegar ao site publicado pela primeira vez, normalmente o visitante do site ainda não estava conectado e era anônimo.
+Ao chegar ao site publicado pela primeira vez, em geral, o visitante do site ainda não estaria conectado e seria anônimo.
 
 `https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}`
 
@@ -48,7 +44,7 @@ Um visitante anônimo do site vê o seguinte na interface do usuário:
 * O banner da marca
 * Links de menu para os componentes incluídos no Modelo de site de referência.
 
-Se selecionar vários links, você os verá no modo somente leitura.
+Se você selecionar vários links, descobrirá que eles estão no modo somente leitura.
 
 ### Impedir acesso anônimo no JCR {#prevent-anonymous-access-on-jcr}
 
@@ -86,7 +82,7 @@ No canto superior direito, selecione `Log in`, e assine com o nome de usuário (
 Depois de fazer logon como membro registrado da comunidade, observe os seguintes itens de menu para clicar e explorar seu site da comunidade:
 
 * **Perfil** permite visualizar e editar o perfil.
-* [Mensagens](/help/communities/configure-messaging.md) direciona você para a seção de mensagens diretas, onde é possível:
+* [Mensagens](/help/communities/configure-messaging.md) A opção direciona você para a seção de mensagens diretas, onde é possível fazer o seguinte:
 
    1. Exibir as mensagens diretas recebidas (Caixa de entrada), enviadas (Itens enviados) e excluídas (Lixeira).
    1. Redija novas mensagens diretas para enviar a indivíduos e grupos.
@@ -119,7 +115,7 @@ Os visitantes do site podem visualizar publicações e classificá-las de vária
 
 ### Link Grupos {#groups-link}
 
-Como Aaron é um administrador de grupo, selecionar o link Grupos permitirá que Aaron crie um novo grupo da comunidade selecionando um modelo de grupo, imagem, seja o grupo aberto ou secreto, e convidando membros.
+Como Aaron é um administrador de grupo, a seleção do link Grupos permite que Aaron crie um grupo da comunidade selecionando um modelo de grupo, imagem, seja o grupo aberto ou secreto, e convidando membros.
 
 Este é um exemplo em que um grupo é criado no ambiente de publicação.
 
@@ -166,7 +162,7 @@ Como exemplo, adicione dois `new groups`.
 **Aviso**:
 
 * Pode ser necessário atualizar a página antes que ambos os grupos sejam exibidos.
-* Esse modelo não *não* incluir a função groups, portanto, não será possível fazer mais aninhamento de grupos.
+* Esse modelo não *não* inclua a função groups, para que não seja possível fazer mais aninhamento de grupos.
 * No autor, a variável [Console de grupos](/help/communities/groups.md) fornece uma terceira opção - uma `Public Group` (associação opcional).
 
 Depois que ambos os grupos forem criados, selecione o grupo Beisebol, um grupo aberto e observe seus links:
@@ -186,7 +182,7 @@ Continuando a publicar, saia como Aaron McDonald e visualize os grupos no Sports
 * Selecionar `Sports` link
 * Selecione o &#39;Esportes&#39; `Groups` link
 
-Somente o grupo Beisebol estará visível.
+Somente o grupo Beisebol é visível.
 
 Faça logon como Weston McCall (weston.mccall@dodgit.com / password) e navegue até o mesmo local. Observe que a Weston pode `Join` a abertura `Baseball` agrupar e `enter or Leave` o privado `Gymnastics` grupo.
 
@@ -196,13 +192,13 @@ Faça logon como Weston McCall (weston.mccall@dodgit.com / password) e navegue a
 
 Exiba a página da Web básica incluída no site selecionando o link Página da Web. As ferramentas de criação padrão do AEM podem ser usadas para adicionar conteúdo a esta página no ambiente de criação.
 
-Por exemplo, vá para **autor** instância, abra a variável `engage` pasta na [Console de sites das comunidades](/help/communities/sites-console.md), selecione o **Abrir site** ícone para entrar no modo de edição do autor. Em seguida, selecione o modo de visualização para selecionar a `Web Page` e selecione o modo de edição para adicionar os componentes Título e Texto. Por último, publique novamente apenas a página ou todo o site.
+Por exemplo, vá para **autor** instância, abra a variável `engage` pasta na [Console de sites das comunidades](/help/communities/sites-console.md), selecione o **Abrir site** ícone para entrar no modo de edição do autor. Em seguida, selecione o modo de visualização para poder selecionar o `Web Page` e selecione o modo de edição para adicionar os componentes Título e Texto. Por último, publique novamente apenas a página ou todo o site.
 
 ![webpagelink](assets/webpagelink.png)
 
 ### Link de moderação {#moderationlink}
 
-Quando o membro da comunidade tiver privilégios de moderação, o link Moderação ficará visível e sua seleção exibirá o conteúdo da comunidade publicado e permitirá que ele seja [moderado](/help/communities/moderate-ugc.md) de uma forma semelhante à [console de moderação](/help/communities/moderation.md) no ambiente de criação.
+Quando o membro da comunidade tem privilégios de moderação, o link Moderação fica visível. Selecionar o link exibe o conteúdo da comunidade que é publicado e permite que seja [moderado](/help/communities/moderate-ugc.md) de uma forma semelhante à [console de moderação](/help/communities/moderation.md) no ambiente de criação.
 
 Use o botão Voltar do navegador para retornar ao site publicado. A maioria dos consoles não pode ser acessada a partir da navegação global no ambiente de publicação.
 
@@ -210,7 +206,7 @@ Use o botão Voltar do navegador para retornar ao site publicado. A maioria dos 
 
 ## Autorregistro {#self-registration}
 
-Depois de fazer logout, é possível criar um novo registro de usuário.
+Depois de fazer logoff, é possível criar um registro de usuário.
 
 * Selecione `Log In`
 * Selecione `Sign up for a new account`
@@ -221,7 +217,7 @@ Depois de fazer logout, é possível criar um novo registro de usuário.
 
 Por padrão, o endereço de email é a ID de logon. Se estiver desmarcada, o visitante poderá inserir sua própria ID de logon (nome de usuário). O nome de usuário deve ser exclusivo no ambiente de publicação.
 
-Depois de especificar o nome do usuário, email e senha, selecione `Sign Up` criará o usuário e permitirá que ele assine.
+Depois de especificar o nome do usuário, email e senha, selecione `Sign Up` cria o usuário e permite que ele assine.
 
 Depois de fazer logon, a primeira página apresentada é a delas `Profile` página, que eles podem personalizar.
 

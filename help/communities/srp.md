@@ -1,14 +1,14 @@
 ---
 title: Visão geral do provedor de recursos de armazenamento
-description: Armazenamento comum para comunidades
+description: Saiba como o conteúdo da comunidade, conhecido como conteúdo gerado pelo usuário (UGC), é armazenado em um armazenamento simples e comum fornecido por um provedor de recursos de armazenamento (SRP).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 5f313274-1a2a-4e83-9289-60a4729b99b4
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1140'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Depois de desenvolver o conteúdo do site no ambiente de autor privado, ele deve
 
 Para UGC, o conteúdo é inserido por visitantes registrados do site (membros da comunidade) no ambiente de publicação público. Isso acontece aleatoriamente.
 
-Para fins de gerenciamento e relatórios, é útil ter acesso ao UGC do ambiente de autor privado. Com o SRP, o acesso ao UGC do autor é mais consistente e eficiente, pois a replicação reversa de publicação para autor não é necessária.
+Para fins de gerenciamento e relatórios, é útil ter acesso ao UGC do ambiente de autor privado. Com o SRP, o acesso ao UGC do autor é mais consistente e eficiente, pois a replicação reversa de Publicar para Autor não é necessária.
 
 ## Sobre o SRP {#about-srp}
 
@@ -91,9 +91,9 @@ JSRP é o provedor padrão para acessar todo o UGC em uma única instância do A
 
 Consulte [JSRP - Provedor de recurso de armazenamento JCR](jsrp.md).
 
-Se houver JSRP, enquanto o UGC estiver armazenado em JCR e acessível por meio da API CRXDE Lite e JCR, é recomendável nunca usar a API JCR para fazer isso, caso contrário, alterações futuras poderão afetar o código personalizado.
+Se houver JSRP enquanto o UGC estiver armazenado em JCR e estiver acessível na API CRXDE Lite e JCR, a Adobe recomenda que você nunca use a API JCR para fazer isso. Se você fizer isso, alterações futuras poderão afetar o código personalizado.
 
-Além disso, o repositório dos ambientes de criação e publicação não é compartilhado. Embora um cluster de instâncias de publicação resulte em um repositório de publicação compartilhado, o UGC inserido na publicação não estará visível no autor, portanto, não será capaz de gerenciar o UGC do autor. O UGC só é mantido no repositório AEM (JCR) da instância em que foi inserido.
+Além disso, o repositório dos ambientes Autor e Publicação não é compartilhado. Embora um cluster de instâncias de publicação resulte em um repositório de publicação compartilhado, o UGC inserido em Publicar não está visível no Autor, portanto, não há capacidade de gerenciar o UGC do Autor. O UGC só é mantido no repositório AEM (JCR) da instância em que foi inserido.
 
 O JSRP usa os índices Oak para consultas.
 
@@ -104,7 +104,7 @@ Os nós de sombra, que simulam o caminho para UGC, existem no repositório local
 1. [Controle de acesso (ACLs)](#for-access-control-acls)
 1. [Recursos não existentes (NER)](#for-non-existing-resources-ners)
 
-Independentemente da implementação do SRP, o UGC real *não * ficará visível no mesmo local que o nó de sombra.
+Independentemente da implementação do SRP, o UGC real é *não* visível no mesmo local que o nó de sombra.
 
 ### Para ACLs (Access Control, controle de acesso) {#for-access-control-acls}
 

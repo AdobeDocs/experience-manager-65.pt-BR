@@ -1,18 +1,14 @@
 ---
 title: Fundamentos de tags
-seo-title: Tag Essentials
-description: Visão geral da tag
-seo-description: Tag overview
-uuid: a5d52319-f821-4608-b0ab-abc8a1374343
+description: Saiba mais sobre quando os componentes das Comunidades são configurados com a marcação ativada, os membros da comunidade podem marcar o conteúdo que publicam no ambiente de publicação.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
 exl-id: 6e8af8cf-1239-46f9-b2fe-4aa80abc86ea
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '262'
 ht-degree: 3%
 
 ---
@@ -25,7 +21,7 @@ A infraestrutura subjacente das tags aplicadas no ambiente de publicação é a 
 
 * Consulte [Administração de tags](../../help/sites-administering/tags.md) e [Marcação do conteúdo gerado pelo usuário](tag-ugc.md) (UGC) para obter informações sobre como criar e gerenciar tags.
 
-* Consulte [Marcação para desenvolvedores](../../help/sites-developing/tags.md) para obter informações sobre o [estrutura de marcação](../../help/sites-developing/framework.md) bem como incluir e estender tags na [aplicativos personalizados](../../help/sites-developing/building.md).
+* Consulte [Marcação para desenvolvedores](../../help/sites-developing/tags.md) para obter informações sobre o [estrutura de marcação](../../help/sites-developing/framework.md) e inclusão e extensão de tags no [aplicativos personalizados](../../help/sites-developing/building.md).
 
 * Consulte [Uso da Social Tag Cloud](tagcloud.md) para obter informações para autores sobre como adicionar uma `social tag cloud` componente a uma página para realçar as tags aplicadas a UGC no ambiente de publicação.
 
@@ -74,9 +70,9 @@ A marcação de UGC pode ser ativada ao configurar um [site da comunidade](sites
 
 ## Essentials para o lado do servidor {#essentials-for-server-side}
 
-* [API da nuvem de tag social](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
+* [API da nuvem de tag social](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
 
-* [Gerenciador de tags sociais](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
+* [Gerenciador de tags sociais](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
 
 * [Personalizações do lado do servidor](server-customize.md)
 

@@ -1,15 +1,15 @@
 ---
 title: Criação de grupos aninhados
-description: Criar grupos aninhados
+description: Saiba como criar grupos aninhados para um site do Adobe Experience Manager Communities.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '600'
 ht-degree: 4%
 
 ---
@@ -37,7 +37,7 @@ A função de grupos é exibida como uma pasta na qual as instâncias dos grupos
 
 ## Criar grupo principal de artes {#create-main-arts-group}
 
-Este grupo pode ser criado porque a estrutura do site para participação inclui uma função de grupos. A configuração da função no repositório do site `Reference Template` O padrão é permitir a seleção de qualquer modelo de grupo ativado. Assim, o modelo escolhido para esse novo grupo é o `Reference Group`.
+Este grupo pode ser criado porque a estrutura do site para participação inclui a função de um grupo. A configuração da função no repositório do site `Reference Template` O padrão é permitir a seleção de qualquer modelo de grupo ativado. Assim, o modelo escolhido para esse novo grupo é o `Reference Group`.
 
 Esses consoles são semelhantes ao console Sites de comunidades.
 

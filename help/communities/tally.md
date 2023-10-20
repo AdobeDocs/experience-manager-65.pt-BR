@@ -1,25 +1,21 @@
 ---
 title: Fundamentos Tally
-seo-title: Tally Essentials
-description: Visão geral da classe Tally
-seo-description: Tally class overview
-uuid: c369c6a1-9ced-4b5c-af43-8c03236eaa52
+description: Saiba como Tally é uma classe abstrata que fornece um método padrão de coletar feedback dos membros sobre como eles valorizam produtos e serviços específicos.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 9941ba90-3d40-4c90-bca8-5db49603cbfa
 exl-id: 0b508df9-1a24-4728-a254-f913eeb9b391
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
 
 # Fundamentos Tally {#tally-essentials}
 
-Tally é uma classe abstrata que fornece um método padrão de coletar feedback dos membros sobre como eles valorizam produtos e serviços específicos. Não há suporte para comentários anônimos. O visitante do site deve se registrar e fazer logon para participar e fazer logon para alterar seus comentários. O requisito para fazer logon facilita a moderação e aumenta o valor do feedback, evitando várias publicações.
+Tally é uma classe abstrata que fornece um método padrão de coletar feedback dos membros sobre como eles valorizam produtos e serviços específicos. Não há suporte para comentários anônimos. Os visitantes do site devem se registrar e fazer logon para participar e fazer logon para alterar seus comentários. O requisito para fazer logon facilita a moderação e aumenta o valor do feedback, evitando várias publicações.
 
 Um componente tally personalizado pode ser criado estendendo a classe tally abstrata.
 
@@ -39,9 +35,9 @@ A partir do AEM 6.1, o componente de pesquisa não está mais disponível.
 
 ## Essentials para o lado do servidor {#essentials-for-server-side}
 
-* [APIs Tally](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [APIs Tally](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Endpoints Tally](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Endpoints Tally](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizações do lado do servidor](server-customize.md)
 
@@ -50,7 +46,7 @@ A partir do AEM 6.1, o componente de pesquisa não está mais disponível.
 A UGC deve ser moderada usando um dos métodos padrão para moderação.
 Consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
 
-A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) O para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso**.
 

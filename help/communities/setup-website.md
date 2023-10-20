@@ -1,18 +1,14 @@
 ---
 title: Configurar estrutura do site
-seo-title: Setup Website Structure
-description: Configurar diretórios
-seo-description: Set up directories
-uuid: a31edcd5-dab8-4a42-953b-1d076c2182b2
+description: Saiba como configurar a estrutura do site, incluindo as pastas a serem criadas.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
 exl-id: 1f60a0d4-a272-45e8-9742-4b706be8502e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '555'
 ht-degree: 1%
 
 ---
@@ -23,17 +19,17 @@ Para configurar seu site, as instruções abaixo descrevem as pastas a serem cri
 
 * `/apps/an-scf-sandbox`
 
-   É aqui que residem os aplicativos e modelos personalizados.
+  É aqui que residem os aplicativos e modelos personalizados.
 
 * `/etc/designs/an-scf-sandbox`
 
-   É aqui que ficam os elementos de design baixáveis.
+  É aqui que ficam os elementos de design baixáveis.
 
 * `/content/an-scf-sandbox`
 
-   É aqui que as páginas da Web disponíveis para download residem.
+  É aqui que as páginas da Web disponíveis para download residem.
 
-O código deste tutorial dependerá do nome da pasta principal ser o mesmo para o aplicativo, design e conteúdo. Se você escolher algum outro nome para o seu site, sempre substitua `an-scf-sandbox` com o nome escolhido.
+O código deste tutorial depende do nome da pasta principal ser o mesmo para o aplicativo, design e conteúdo. Se você escolher algum outro nome para o seu site, sempre substitua `an-scf-sandbox` com o nome escolhido.
 
 >[!NOTE]
 >
@@ -41,11 +37,10 @@ O código deste tutorial dependerá do nome da pasta principal ser o mesmo para 
 >
 >* Os nomes vistos no CRXDE são nomes de nó que formam o caminho para o conteúdo endereçável.
 >* Os nomes de nós podem conter espaços, mas quando usados em um URI, o espaço deve ser codificado como &#39;%20&#39; ou &#39;+&#39;.
->* Os nomes de nó podem conter hifens e sublinhados, mas devem ser codificados quando referenciados como um nome de pacote em um arquivo Java. Os hifens e sublinhados são escapados com um sublinhado seguido pelo valor unicode:
-   >
-   >   * o hífen se torna &#39;_002d&#39;
-   >   * sublinhado torna-se &#39;_005f&#39;
-
+>* Os nomes de nó podem conter hifens e sublinhados, mas devem ser codificados quando referenciados como um nome de pacote em um arquivo Java™. Os hifens e sublinhados são escapados com um sublinhado seguido pelo valor Unicode:
+>
+* o hífen se torna &#39;_002d&#39;
+* sublinhado torna-se &#39;_005f&#39;
 
 ## Configurar o Diretório de Aplicativos (/apps) {#setup-the-application-directory-apps}
 
@@ -79,7 +74,7 @@ O diretório /apps está protegido e não está acessível publicamente, assim c
    1. Selecionar novamente `/apps/an-scf-sandbox`.
    1. Selecionar **[!UICONTROL Salvar tudo]**.
 
-   Como em qualquer processo de edição, salve com frequência. Se você tiver problemas ao inserir dados, talvez o tempo limite do seu logon tenha expirado ou você precise salvar as edições anteriores.
+   Como em qualquer processo de edição, você deve salvar com frequência. Se você tiver problemas ao inserir dados, talvez o tempo limite do seu logon tenha expirado ou você precise salvar as edições anteriores.
 
 1. A estrutura no painel do explorador do CRXDE Lite agora deve ser semelhante a esta:
 
@@ -87,7 +82,7 @@ O diretório /apps está protegido e não está acessível publicamente, assim c
 
 ## Configurar o Diretório de design (/etc/designs) {#setup-the-design-directory-etc-designs}
 
-O diretório /etc/designs contém as imagens, scripts e folhas de estilos a serem baixados junto com o conteúdo da página.
+O diretório /etc/designs contém as imagens, os scripts e as folhas de estilos a serem baixados junto com o conteúdo da página.
 
 1. Para usar a ferramenta Designer na interface clássica, navegue até [https://&lt;server>:&lt;port>/miscadmin](http://localhost:4502/miscadmin).
 

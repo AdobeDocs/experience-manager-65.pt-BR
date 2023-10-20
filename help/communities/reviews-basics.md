@@ -1,18 +1,14 @@
 ---
 title: Fundamentos das análises
-seo-title: Reviews Essentials
-description: Revisões e componentes do Resumo da revisão
-seo-description: Reviews and Review Summary components
-uuid: 540c106e-ee3b-4261-82b2-a909d254dbf7
+description: Saiba mais sobre como as Revisões no AEM Communities são um componente composto baseado em um sistema de comentários que contém um ou mais componentes de classificação (tally).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 62669a9d-2107-4644-a4bf-143d0ac148b3
 exl-id: 91e0e245-a2f1-4bd7-b38f-7641fd94a547
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '332'
 ht-degree: 1%
 
 ---
@@ -72,9 +68,9 @@ Não há suporte para postagem anônima de uma revisão. Os visitantes do site d
 
 ## Essentials para o lado do servidor {#essentials-for-server-side}
 
-* [API de revisão](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/review/client/api/package-summary.html)
+* [API de revisão](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/review/client/api/package-summary.html)
 
-* [Revisar Pontos de Extremidade](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/review/client/endpoints/package-summary.html)
+* [Revisar Pontos de Extremidade](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/review/client/endpoints/package-summary.html)
 
 * [Personalizações do lado do servidor](server-customize.md)
 
@@ -83,7 +79,7 @@ Não há suporte para postagem anônima de uma revisão. Os visitantes do site d
 A UGC deve ser moderada usando um dos métodos padrão para moderação.
 Consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
 
-A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) O para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso**.
 

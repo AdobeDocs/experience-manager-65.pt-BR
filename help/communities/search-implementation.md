@@ -1,14 +1,14 @@
 ---
 title: Search Essentials
-description: Pesquisar nas comunidades
+description: Saiba mais sobre o recurso de pesquisa que é um recurso essencial do AEM Communities. As comunidades também fornecem a API de pesquisa para conteúdo gerado pelo usuário.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 8af5ee58-19d7-47b6-b45d-e88006703a5d
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1189'
 ht-degree: 4%
 
 ---
@@ -45,7 +45,7 @@ A variável [Armazenamento comum de UGC](working-with-srp.md) O é fornecido por
 
 ### Pesquisas ASRP {#asrp-searches}
 
-Para [ASRP](asrp.md), o UGC é armazenado na nuvem de Adobe. Embora o UGC não esteja visível no CRX, [moderação](moderate-ugc.md) O está disponível nos ambientes autor e publicação. A utilização dos [API de pesquisa UGC](#ugc-search-api) funciona para ASRP da mesma forma que para outros SRPs.
+Para [ASRP](asrp.md), o UGC é armazenado na nuvem de Adobe. Embora o UGC não esteja visível no CRX, [moderação](moderate-ugc.md) O está disponível nos ambientes do autor e Publicação. A utilização dos [API de pesquisa UGC](#ugc-search-api) funciona para ASRP da mesma forma que para outros SRPs.
 
 No momento, não existem ferramentas para gerenciar pesquisas ASRP.
 
@@ -53,7 +53,7 @@ Ao criar propriedades personalizadas que podem ser pesquisadas, é necessário a
 
 ### Pesquisas MSRP {#msrp-searches}
 
-Para [MSRP](msrp.md), O UGC é armazenado no MongoDB configurado para usar Solr para pesquisa. O UGC não está visível no CRX, mas [moderação](moderate-ugc.md) O está disponível nos ambientes autor e publicação.
+Para [MSRP](msrp.md), O UGC é armazenado no MongoDB configurado para usar Solr para pesquisa. O UGC não está visível no CRX, mas [moderação](moderate-ugc.md) O está disponível nos ambientes do autor e Publicação.
 
 Quanto ao MSRP e ao Solr:
 
@@ -68,11 +68,11 @@ Ao criar propriedades personalizadas que podem ser pesquisadas, é necessário a
 
 ### Pesquisas JSRP {#jsrp-searches}
 
-Para [JSRP](jsrp.md), o UGC é armazenado em [Oak](../../help/sites-deploying/platform.md) e é visível somente no repositório do autor ou instância de publicação do AEM no qual foi inserido.
+Para [JSRP](jsrp.md), o UGC é armazenado em [Oak](../../help/sites-deploying/platform.md) e é visível somente no repositório da instância de Autor ou Publicação do AEM no qual foi inserido.
 
 Como o UGC geralmente é inserido no ambiente de publicação, para sistemas de produção de vários editores, é necessário configurar um [publicar cluster](topologies.md), não um farm de publicação, para que o conteúdo inserido fique visível de todos os editores.
 
-Para JSRP, o UGC inserido no ambiente de publicação nunca fica visível no ambiente de autor. Por conseguinte, todas as [moderação](moderate-ugc.md) as tarefas ocorrem no ambiente de publicação.
+Para JSRP, o UGC inserido no ambiente de publicação nunca é visível no ambiente de autor. Por conseguinte, todas as [moderação](moderate-ugc.md) as tarefas ocorrem no ambiente de publicação.
 
 Os recursos de pesquisa personalizada devem usar o [API de pesquisa UGC](#ugc-search-api).
 
