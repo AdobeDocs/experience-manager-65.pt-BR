@@ -1,7 +1,7 @@
 ---
 title: Backup e restauração
 seo-title: Backup and Restore
-description: Saiba como fazer backup e restaurar o conteúdo do AEM.
+description: Saiba como fazer backup e restaurar o conteúdo e as configurações do AEM.
 seo-description: Learn how to backup and restore your AEM content.
 uuid: 446a466f-f508-4430-9e50-42cd4463760e
 contentOwner: Guillaume Carlino
@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: eb8bbb85-ca2f-4877-8ee0-bb1ee8b7d8de
 exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2285'
 ht-degree: 0%
 
 ---
@@ -219,7 +219,7 @@ O backup on-line utiliza o seguinte algoritmo:
    * Se estiver fazendo backup em um arquivo zip, um diretório temporário será criado. O nome do diretório começa com `backup.` e termina com `.temp`; por exemplo `backup.f4d3.temp`.
    * Se estiver fazendo backup em um diretório, o nome especificado no caminho de destino será usado. Um diretório existente pode ser usado, caso contrário, um novo diretório será criado.
 
-      Um arquivo vazio chamado `backupInProgress.txt` é criado no diretório de destino quando o backup é iniciado. Este arquivo é excluído quando o backup é concluído.
+     Um arquivo vazio chamado `backupInProgress.txt` é criado no diretório de destino quando o backup é iniciado. Este arquivo é excluído quando o backup é concluído.
 
 1. Os arquivos são copiados do diretório de origem para o diretório de destino (ou diretório temporário ao criar um arquivo zip). O armazenamento de segmentos é copiado antes do armazenamento de dados para evitar a corrupção do repositório. Os dados de índice e cache são omitidos ao criar o backup. Como resultado, dados de `crx-quickstart/repository/cache` e `crx-quickstart/repository/index` não está incluído no backup. O indicador da barra de progresso do processo está entre 0% - 70% ao criar um arquivo zip, ou 0% - 100% se nenhum arquivo zip for criado.
 
