@@ -1,12 +1,12 @@
 ---
 title: Suporte a cookie Same Site para AEM 6.5
-description: Suporte a cookie Same Site para AEM 6.5
+description: Saiba mais sobre o Suporte a cookies do mesmo site para AEM 6.5.
 topic-tags: security
 exl-id: e1616385-0855-4f70-b787-b01701929bbc
-source-git-commit: f7a4907ca6ce8ecaff9ef1fdf99ec0951ff497e0
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 74%
+source-wordcount: '222'
+ht-degree: 73%
 
 ---
 
