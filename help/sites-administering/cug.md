@@ -2,7 +2,7 @@
 title: Criação de um grupo fechado de usuários
 seo-title: Creating a Closed User Group
 description: Saiba como criar um Grupo de usuários fechado.
-seo-description: Learn how to create a Closed User Group.
+seo-description: Learn how to work with Closed User Groups in Adobe Experience Manager.
 uuid: dc3c7dbd-2e86-43f9-9377-3b75053203b3
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
-source-git-commit: 64d174cc824c8bf200cece4e29f60f946ee5560e
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
 source-wordcount: '753'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -92,7 +92,7 @@ Isso é opcional. Se permanecer em branco, a página de logon padrão será usad
 
    >[!NOTE]
    >
-   >Os CUGs na guia Permissões não podem ser implantados em Live Copies de blueprints. Planeje isso ao configurar a Live Copy.
+   >Observe que os CUGs na guia Permissões não podem ser implantados em Live Copies de blueprints. Planeje isso ao configurar a Live Copy.
    >
    >Para obter mais informações, consulte [esta página](closed-user-groups.md#aem-livecopy).
 
