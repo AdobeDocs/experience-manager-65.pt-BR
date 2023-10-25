@@ -1,6 +1,6 @@
 ---
 title: Configuração do LDAP com AEM 6
-description: Saiba como configurar o LDAP com AEM.
+description: Saiba como usar e configurar serviços LDAP com AEM.
 uuid: 0007def4-86f0-401d-aa37-c8d49d5acea1
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,9 +8,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 5faf6ee5-9242-48f4-87a8-ada887a3be1e
 exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '1625'
+source-wordcount: '1628'
 ht-degree: 0%
 
 ---
@@ -222,6 +222,7 @@ As seguintes opções de configuração estão disponíveis:
 | **Nome do Manipulador de Sincronização** | Nome do manipulador de sincronização. |
 
 >[!NOTE]
+>
 Se você planeja ter mais de uma configuração LDAP com sua instância AEM, provedores de identidade e manipuladores de sincronização separados devem ser criados para cada configuração.
 
 ## Configurar LDAP sobre SSL {#configure-ldap-over-ssl}
