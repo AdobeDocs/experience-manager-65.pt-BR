@@ -1,7 +1,7 @@
 ---
 title: Suporte de criptografia para propriedades de configuração
 seo-title: Encryption Support for Configuration Properties
-description: Suporte de criptografia para propriedades de configuração
+description: Saiba mais sobre o suporte de criptografia para propriedades de configuração fornecido no AEM.
 seo-description: null
 uuid: 26dc5e46-9332-4d9b-8874-895b90391e8c
 contentOwner: User
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: security
 discoiquuid: 4e08c297-aa4b-44cf-84c8-1e11582d9ebb
 exl-id: 3c3db1c8-5b22-45dd-aeaf-5cf830a9486b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Visão geral {#overview}
 
-Esse recurso permite que todas as propriedades de configuração do OSGi sejam armazenadas em um formulário criptografado protegido, em vez de texto não criptografado. O formulário na interface do usuário do Console da Web é usado para criar texto criptografado de texto não criptografado usando a chave principal de criptografia em todo o sistema.
+Esse recurso permite que todas as propriedades de configuração do OSGi sejam armazenadas em um formulário criptografado protegido, em vez de texto não criptografado. O formulário na interface do usuário do Console da Web é usado para criar texto criptografado a partir de texto não criptografado usando a chave mestra de criptografia em todo o sistema.
 
 O suporte ao OSGi Configuration Plugin foi adicionado para descriptografar a propriedade antes que ela fosse usada por um serviço.
 
