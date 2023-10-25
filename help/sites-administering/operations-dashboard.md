@@ -1,7 +1,7 @@
 ---
 title: Painel de operações
 seo-title: Operations Dashboard
-description: Saiba como usar o Painel de operações.
+description: Saiba como usar o Painel de operações no Adobe Experience Manager.
 seo-description: Learn how to use the Operations Dashboard.
 uuid: ef24813f-a7a8-4b26-a496-6f2a0d9efef6
 contentOwner: Guillaume Carlino
@@ -12,9 +12,9 @@ discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '6053'
+source-wordcount: '6057'
 ht-degree: 2%
 
 ---
@@ -111,6 +111,7 @@ A criação de uma verificação de integridade individual envolve duas etapas: 
 
       * **Tipo:** `String`
       * **Valor:** `granite/operations/components/mbean`
+
    * **Nome:** `resource`
 
       * **Tipo:** `String`
@@ -173,6 +174,7 @@ A função de uma Verificação de integridade composta é agregar várias Verif
 
       * **Tipo:** `String`
       * **Valor:** `granite/operations/components/mbean`
+
    * **Nome:** `resource`
 
       * **Tipo:** `String`

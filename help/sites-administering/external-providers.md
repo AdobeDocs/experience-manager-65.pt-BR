@@ -1,15 +1,15 @@
 ---
 title: Analytics com provedores externos
-description: Saiba mais sobre o Analytics com provedores externos.
+description: Saiba como configurar sua própria instância de trechos de análise genérica para definir uma nova configuração de serviço.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '446'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ Esses snippets permitem que os dados sejam coletados e os relatórios gerados. O
 Para a configuração básica:
 
 1. Abra o **Ferramentas** console.
-1. No painel esquerdo, expanda **Configurações do Cloud Services**.
+1. No painel esquerdo, expanda **Configurações do Cloud Service**.
 1. Clique duas vezes **Fragmento da análise genérica** para abrir a página:
 
    ![Fragmento da análise genérica](assets/analytics_genericoverview.png)
@@ -84,13 +84,13 @@ Para a configuração básica:
 Após criar a configuração do serviço, agora é necessário configurar as páginas necessárias para usá-lo:
 
 1. Navegue até a página.
-1. Abra o **Propriedades da página** no sidekick, depois o **Cloud Services** guia.
+1. Abra o **Propriedades da página** no sidekick, depois o **Cloud Service** guia.
 1. Clique em **Adicionar serviço** e, em seguida, selecione o serviço necessário. Por exemplo, a variável **Fragmento da análise genérica**:
 
    ![Adicionar um serviço em nuvem](assets/analytics_selectservice.png)
 
 1. Clique em **OK** para salvar.
-1. Você retornará à janela **Cloud Services** guia. A variável **Fragmento da análise genérica** agora está listado com a mensagem `Configuration reference missing`. Use a lista suspensa para selecionar sua instância de serviço específica. Por exemplo, google-analytics:
+1. Você retornará à janela **Cloud Service** guia. A variável **Fragmento da análise genérica** agora está listado com a mensagem `Configuration reference missing`. Use a lista suspensa para selecionar sua instância de serviço específica. Por exemplo, google-analytics:
 
    ![Adicionar configuração do serviço em nuvem](assets/analytics_selectspecificservice.png)
 

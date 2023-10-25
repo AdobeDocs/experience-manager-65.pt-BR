@@ -1,20 +1,20 @@
 ---
-title: Exportar fragmentos de experiência para o Adobe Target
-description: Exportar fragmentos de experiência para o Adobe Target
+title: Exportar Fragmentos de experiência para o Adobe Target
+description: Saiba como exportar fragmentos de experiência do Adobe Experience Manager (AEM) para o Adobe Target.
 contentOwner: carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: c6eee2e647a0c5e6f5a8dd7a1a13d18218fdf10b
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 43%
+source-wordcount: '1540'
+ht-degree: 42%
 
 ---
 
-# Exportar fragmentos de experiência para o Adobe Target{#exporting-experience-fragments-to-adobe-target}
+# Exportar Fragmentos de experiência para o Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
 >[!CAUTION]
 >

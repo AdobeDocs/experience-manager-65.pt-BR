@@ -1,15 +1,15 @@
 ---
 title: Console da Web no Adobe Experience Manager
-description: Saiba como usar o console da Web do Adobe Experience Manager.
+description: Saiba como usar o console da Web do Adobe Experience Manager (AEM).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 9acbf61f-73a8-4998-9421-dd933f30ac8a
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '711'
 ht-degree: 1%
 
 ---
@@ -121,7 +121,7 @@ Usando essa guia, você pode:
 
   Você pode **Procurar** para localizar o arquivo que contém o pacote e especificar se ele deve **Início** imediatamente e em que **Nível inicial**.
 
-* **Recarregar**
+* **Recargar**
 
   Atualiza a lista exibida.
 
