@@ -1,7 +1,7 @@
 ---
 title: Administração de tags
 seo-title: Administering Tags
-description: Saiba como administrar tags no AEM.
+description: Saiba como gerenciar e administrar tags na Adobe Experience Manager.
 seo-description: Learn how to administer Tags in AEM.
 uuid: 77e1280a-feea-4edd-94b6-4fb825566c42
 contentOwner: Chiradeep Majumdar
@@ -10,10 +10,10 @@ topic-tags: content
 content-type: reference
 discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 exl-id: ff041ef0-e566-4373-818e-76680ff668d8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1760'
-ht-degree: 1%
+source-wordcount: '1764'
+ht-degree: 2%
 
 ---
 
@@ -76,7 +76,7 @@ Para acessar o console de Marcação:
 
 ![managing_tags_usingthetagasministrationconsole](assets/managing_tags_usingthetagasministrationconsolea.png)
 
-### Criação de um namespace {#creating-a-namespace}
+### Criar um namespace {#creating-a-namespace}
 
 Para criar um novo namespace, selecione a variável **`Create Namespace`** ícone.
 
@@ -85,15 +85,13 @@ O namespace é, em si, uma tag e não precisa conter nenhuma subtag. No entanto,
 ![chlimage_1-183](assets/chlimage_1-183a.png) ![creating_tags_andnamespaces](assets/creating_tags_andnamespacesa.png)
 
 * **Título**
-
-   *(obrigatório)* Um título de exibição para o namespace.
+  *(obrigatório)* Um título de exibição para o namespace.
 
 * **Nome**
-   *(opcional)* Nome do namespace. Se não for especificado, um nome de nó válido será criado a partir do Título. Consulte [TagID](/help/sites-developing/framework.md#tagid).
+  *(opcional)* Nome do namespace. Se não for especificado, um nome de nó válido será criado a partir do Título. Consulte [TagID](/help/sites-developing/framework.md#tagid).
 
 * **Descrição**
-
-   *(opcional)* Uma descrição do namespace.
+  *(opcional)* Uma descrição do namespace.
 
 Quando as informações necessárias forem inseridas
 
@@ -197,15 +195,13 @@ Quando um namespace ou outra tag é selecionada, a seleção do **`Move`** O íc
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
 * **Caminho**
-
-   *(somente leitura)* O caminho atual para a tag selecionada.
+  *(somente leitura)* O caminho atual para a tag selecionada.
 
 * **Mover para**
 Navegue até o novo caminho no qual mover a tag.
 
 * **Renomear para**
-Exibe inicialmente o atual 
-`name`da tag. Um novo `name`podem ser inseridos.
+Exibe inicialmente o atual `name`da tag. Um novo `name`podem ser inseridos.
 
 * selecionar **Salvar**
 
@@ -220,8 +216,7 @@ Quando um namespace ou outra tag é selecionada, a seleção do **Mesclar** O í
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
 * **Caminho**
-
-   *(somente leitura)* O caminho da tag selecionada para mesclagem em outra tag.
+  *(somente leitura)* O caminho da tag selecionada para mesclagem em outra tag.
 
 * **Mesclar para**
 Procure para selecionar o caminho da tag na qual mesclar.
@@ -262,14 +257,14 @@ As permissões de tag são [&#39;seguro (por padrão)&#39;](/help/sites-administ
    * acesse o [Console de segurança](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
 
       * por exemplo, navegue até http://localhost:4502/useradmin
+
    * no painel esquerdo, selecione o grupo (ou usuário) para o qual [permissão de leitura](/help/sites-administering/security.md#permissions) deve ser concedido
    * no painel direito, localize o **Caminho **para o namespace da tag
 
       * por exemplo, `/content/cq:tags/mycommunity`
+
    * selecione o `checkbox`no **Ler** coluna
    * selecionar **Salvar**
-
-
 
 ![chlimage_1-204](assets/chlimage_1-204.png)
 
@@ -278,10 +273,10 @@ As permissões de tag são [&#39;seguro (por padrão)&#39;](/help/sites-administ
    * uma abordagem é [criar um pacote](/help/sites-administering/package-manager.md#package-manager) do namespace no autor
 
       * em `Advanced` guia, para `AC Handling` selecionar `Overwrite`
+
    * replicar o pacote
 
       * escolher `Replicate` do gerenciador de pacotes
-
 
 ## Gerenciamento de tags em diferentes idiomas {#managing-tags-in-different-languages}
 
@@ -301,7 +296,7 @@ Depois que todas as traduções forem inseridas, selecione **Salvar** para sair 
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
-Em geral, o idioma escolhido para a tag é retirado do idioma da página, quando disponível. Quando a variável [ `tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) for usada em outros casos (por exemplo, em formulários ou caixas de diálogo), a linguagem da tag dependerá do contexto.
+Em geral, o idioma escolhido para a tag é retirado do idioma da página, quando disponível. Quando a variável [`tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) for usada em outros casos (por exemplo, em formulários ou caixas de diálogo), a linguagem da tag dependerá do contexto.
 
 Em vez de usar a configuração de idioma da página, o console Marcação usa a configuração de idioma do usuário. No console de marcação, para a tag &quot;Animais&quot;, &quot;Animaux&quot; seria exibido para um usuário que define o idioma para francês em suas propriedades de usuário.
 
@@ -315,6 +310,6 @@ Para adicionar um novo idioma à caixa de diálogo, consulte [Adicionar um novo 
 
 * [Marcação para desenvolvedores](/help/sites-developing/tags.md)
 
-   Informações sobre a estrutura de marcação e sobre a extensão e inclusão de tags em aplicativos personalizados.
+  Informações sobre a estrutura de marcação e sobre a extensão e inclusão de tags em aplicativos personalizados.
 
 * [Console de marcação da interface clássica](/help/sites-administering/classic-console.md)

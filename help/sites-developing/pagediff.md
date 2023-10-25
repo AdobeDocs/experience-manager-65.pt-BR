@@ -1,16 +1,16 @@
 ---
 title: Desenvolvimento e diff de página
-description: Desenvolvimento e diff de página
+description: Saiba como desenvolver e utilizar o recurso de comparação de páginas no Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: b07134b2-074a-4d52-8d0c-7e7abe51fc3a
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 1%
+source-wordcount: '380'
+ht-degree: 10%
 
 ---
 

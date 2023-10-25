@@ -1,14 +1,14 @@
 ---
 title: Adicionar rastreamento do Adobe Analytics aos componentes
-description: Adicionar rastreamento do Adobe Analytics aos componentes
+description: Saiba como adicionar o Adobe Analytics Tracking a componentes no Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: e6c1258c-81d5-48e4-bdf1-90d7cc13a22d
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1273'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 ## Inclusão do módulo Adobe Analytics em um componente de Página {#including-the-adobe-analytics-module-in-a-page-component}
 
-Componentes do modelo de página (por exemplo, `head.jsp, body.jsp`) precisa de JSP para carregar o ContextHub e a integração do Adobe Analytics (que faz parte do Cloud Services). Tudo inclui carregar arquivos JavaScript.
+Componentes do modelo de página (por exemplo, `head.jsp, body.jsp`) precisa de JSP para carregar o ContextHub e a integração do Adobe Analytics (que faz parte do Cloud Service). Tudo inclui carregar arquivos JavaScript.
 
-A entrada do ContextHub deve ser incluída imediatamente abaixo de `<head>` tag, enquanto os Cloud Services devem ser incluídos na variável `<head>` e antes da `</body>` seção; por exemplo:
+A entrada do ContextHub deve ser incluída imediatamente abaixo de `<head>` tag, enquanto os Cloud Service devem ser incluídos na variável `<head>` e antes da `</body>` seção; por exemplo:
 
 ```xml
 <head>
@@ -36,7 +36,7 @@ A entrada do ContextHub deve ser incluída imediatamente abaixo de `<head>` tag,
 
 A variável `contexthub` script que você insere após a variável `<head>` O elemento adiciona os recursos do ContextHub à página.
 
-A variável `cloudservices` scripts adicionados na variável `<head>` e a variável `<body>` as seções se aplicam às configurações dos serviços em nuvem adicionadas à página. (Se a página usar mais de uma configuração Cloud Services, você deverá incluir a jsp do ContextHub e a jsp Cloud Services apenas uma vez.)
+A variável `cloudservices` scripts adicionados na variável `<head>` e a variável `<body>` as seções se aplicam às configurações dos serviços em nuvem adicionadas à página. (Se a página usar mais de uma configuração Cloud Service, você deverá incluir a jsp do ContextHub e a jsp Cloud Service apenas uma vez.)
 
 Quando uma estrutura Adobe Analytics é adicionada à página, a variável `cloudservices` Os scripts geram JavaScript relacionado à Adobe Analytics e referências a bibliotecas do lado do cliente, semelhantes ao seguinte exemplo:
 

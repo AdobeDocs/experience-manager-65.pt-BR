@@ -1,7 +1,7 @@
 ---
 title: Solução de problemas de consultas lentas
 seo-title: Troubleshooting Slow Queries
-description: Solução de problemas de consultas lentas
+description: Saiba como solucionar problemas de consultas lentas no Adobe Experience Manager.
 seo-description: null
 uuid: ad09546a-c049-44b2-99a3-cb74ee68f040
 contentOwner: User
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
-source-git-commit: a296e459461973fc2dbd0641c6fdda1d89d8d524
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '2262'
+source-wordcount: '2269'
 ht-degree: 0%
 
 ---
@@ -81,15 +81,15 @@ Antes de adicionar a regra de índice cq:tags
 
 * **Consulta do Construtor de consultas**
 
-   ```js
-   type=cq:Page
-   property=jcr:content/cq:tags
-   property.value=my:tag
-   ```
+  ```js
+  type=cq:Page
+  property=jcr:content/cq:tags
+  property.value=my:tag
+  ```
 
 * **Plano de consulta**
 
-   `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* where [a].[jcr:content/cq:tags] = 'my:tag' */`
+  `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* where [a].[jcr:content/cq:tags] = 'my:tag' */`
 
 Essa consulta resolve para o `cqPageLucene` índice, mas porque não existe nenhuma regra de índice de propriedade para `jcr:content` ou `cq:tags`, quando essa restrição for avaliada, cada registro no `cqPageLucene` índice é verificado para determinar uma correspondência. Como tal, se o índice contiver 1 milhão de `cq:Page` nós, então 1 milhão de registros são verificados para determinar o conjunto de resultados.
 
@@ -97,23 +97,23 @@ Depois de adicionar a regra de índice cq:tags
 
 * **cq:regra de índice de tags**
 
-   ```js
-   /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
-   @name=jcr:content/cq:tags
-   @propertyIndex=true
-   ```
+  ```js
+  /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
+  @name=jcr:content/cq:tags
+  @propertyIndex=true
+  ```
 
 * **Consulta do Construtor de consultas**
 
-   ```js
-   type=cq:Page
-   property=jcr:content/cq:tags
-   property.value=myTagNamespace:myTag
-   ```
+  ```js
+  type=cq:Page
+  property=jcr:content/cq:tags
+  property.value=myTagNamespace:myTag
+  ```
 
 * **Plano de consulta**
 
-   `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) jcr:content/cq:tags:my:tag where [a].[jcr:content/cq:tags] = 'my:tag' */`
+  `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) jcr:content/cq:tags:my:tag where [a].[jcr:content/cq:tags] = 'my:tag' */`
 
 A adição de indexRule para `jcr:content/cq:tags` no `cqPageLucene` o índice permite `cq:tags` dados a serem armazenados de forma otimizada.
 
@@ -186,113 +186,114 @@ O exemplo a seguir usa o Query Builder como a linguagem de consulta mais comum u
 
 * **Consulta não otimizada**
 
-   ```js
-   property=jcr:content/contentType
-   property.value=article-page
-   ```
+  ```js
+  property=jcr:content/contentType
+  property.value=article-page
+  ```
 
 * **Consulta otimizada**
 
-   ```js
-   type=cq:Page
-   property=jcr:content/contentType
-   property.value=article-page
-   ```
+  ```js
+  type=cq:Page
+  property=jcr:content/contentType
+  property.value=article-page
+  ```
 
-   Consultas sem uma restrição de tipo de nó forçam o AEM a assumir o `nt:base` Nodetype, que todos os nós no AEM são um subtipo de, resultando efetivamente em nenhuma restrição de nodetype.
+  Consultas sem uma restrição de tipo de nó forçam o AEM a assumir o `nt:base` Nodetype, que todos os nós no AEM são um subtipo de, resultando efetivamente em nenhuma restrição de nodetype.
 
-   Configuração `type=cq:Page` restringe esta consulta a apenas `cq:Page` e resolve a consulta para AEM cqPageLucene, limitando os resultados a um subconjunto de nós (somente `cq:Page` nós) no AEM.
+  Configuração `type=cq:Page` restringe esta consulta a apenas `cq:Page` e resolve a consulta para AEM cqPageLucene, limitando os resultados a um subconjunto de nós (somente `cq:Page` nós) no AEM.
 
 1. Ajuste a restrição nodetype da consulta para que a consulta seja resolvida como um Índice de propriedade Lucene existente.
 
 * **Consulta não otimizada**
 
-   ```js
-   type=nt:hierarchyNode
-   property=jcr:content/contentType
-   property.value=article-page
-   ```
+  ```js
+  type=nt:hierarchyNode
+  property=jcr:content/contentType
+  property.value=article-page
+  ```
 
 * **Consulta otimizada**
 
-   ```js
-   type=cq:Page
-   property=jcr:content/contentType
-   property.value=article-page
-   ```
+  ```js
+  type=cq:Page
+  property=jcr:content/contentType
+  property.value=article-page
+  ```
 
-   `nt:hierarchyNode` é o nodetipo pai de `cq:Page`. Presumindo `jcr:content/contentType=article-page` é aplicado somente a `cq:Page` nós por meio do aplicativo personalizado Adobe, essa consulta só retorna `cq:Page` nós onde `jcr:content/contentType=article-page`. No entanto, esse fluxo é uma restrição abaixo do ideal, pois:
+  `nt:hierarchyNode` é o nodetipo pai de `cq:Page`. Presumindo `jcr:content/contentType=article-page` é aplicado somente a `cq:Page` nós por meio do aplicativo personalizado Adobe, essa consulta só retorna `cq:Page` nós onde `jcr:content/contentType=article-page`. No entanto, esse fluxo é uma restrição abaixo do ideal, pois:
 
    * Outro nó herdado de `nt:hierarchyNode` (por exemplo, `dam:Asset`) adicionando desnecessariamente ao conjunto de resultados potenciais.
    * Não existe índice fornecido pelo AEM para `nt:hierarchyNode`, no entanto, uma vez que existe um índice `cq:Page`.
-   Configuração `type=cq:Page` restringe esta consulta a apenas `cq:Page` e resolve a consulta para AEM cqPageLucene, limitando os resultados a um subconjunto de nós (somente nós cq:Page) no AEM.
+
+  Configuração `type=cq:Page` restringe esta consulta a apenas `cq:Page` e resolve a consulta para AEM cqPageLucene, limitando os resultados a um subconjunto de nós (somente nós cq:Page) no AEM.
 
 1. Ou ajuste as restrições de propriedade para que a consulta seja resolvida como um Índice de propriedade existente.
 
 * **Consulta não otimizada**
 
-   ```js
-   property=jcr:content/contentType
-   property.value=article-page
-   ```
+  ```js
+  property=jcr:content/contentType
+  property.value=article-page
+  ```
 
 * **Consulta otimizada**
 
-   ```js
-   property=jcr:content/sling:resourceType
-   property.value=my-site/components/structure/article-page
-   ```
+  ```js
+  property=jcr:content/sling:resourceType
+  property.value=my-site/components/structure/article-page
+  ```
 
-   Alteração da restrição de propriedade de `jcr:content/contentType` (um valor personalizado) para a propriedade bem conhecida `sling:resourceType` permite que a consulta resolva para o índice de propriedade `slingResourceType` que indexa todo o conteúdo por `sling:resourceType`.
+  Alteração da restrição de propriedade de `jcr:content/contentType` (um valor personalizado) para a propriedade bem conhecida `sling:resourceType` permite que a consulta resolva para o índice de propriedade `slingResourceType` que indexa todo o conteúdo por `sling:resourceType`.
 
-   Os índices de propriedade (em oposição aos índices de propriedade Lucene) são usados melhor quando a consulta não discerne por nodetype e uma única restrição de propriedade domina o conjunto de resultados.
+  Os índices de propriedade (em oposição aos índices de propriedade Lucene) são usados melhor quando a consulta não discerne por nodetype e uma única restrição de propriedade domina o conjunto de resultados.
 
 1. Adicione a restrição de caminho mais estreita possível à consulta. Por exemplo, prefira `/content/my-site/us/en` sobre `/content/my-site`ou `/content/dam` sobre `/`.
 
 * **Consulta não otimizada**
 
-   ```js
-   type=cq:Page
-   path=/content
-   property=jcr:content/contentType
-   property.value=article-page
-   ```
+  ```js
+  type=cq:Page
+  path=/content
+  property=jcr:content/contentType
+  property.value=article-page
+  ```
 
 * **Consulta otimizada**
 
-   ```js
-   type=cq:Page
-   path=/content/my-site/us/en
-   property=jcr:content/contentType
-   property.value=article-page
-   ```
+  ```js
+  type=cq:Page
+  path=/content/my-site/us/en
+  property=jcr:content/contentType
+  property.value=article-page
+  ```
 
-   Escopo da restrição de caminho de `path=/content`para `path=/content/my-site/us/en` permite que os índices reduzam o número de entradas de índice que devem ser inspecionadas. Quando a consulta pode restringir bem o caminho, além de apenas `/content` ou `/content/dam`, verifique se o índice `evaluatePathRestrictions=true`.
+  Escopo da restrição de caminho de `path=/content`para `path=/content/my-site/us/en` permite que os índices reduzam o número de entradas de índice que devem ser inspecionadas. Quando a consulta pode restringir bem o caminho, além de apenas `/content` ou `/content/dam`, verifique se o índice `evaluatePathRestrictions=true`.
 
-   Observação usando `evaluatePathRestrictions` aumenta o tamanho do índice.
+  Observação usando `evaluatePathRestrictions` aumenta o tamanho do índice.
 
 1. Quando possível, evite funções de consulta e operações de consulta como: `LIKE` e `fn:XXXX` à medida que seus custos são escalonados com o número de resultados baseados em restrições.
 
 * **Consulta não otimizada**
 
-   ```js
-   type=cq:Page
-   property=jcr:content/contentType
-   property.operation=like
-   property.value=%article%
-   ```
+  ```js
+  type=cq:Page
+  property=jcr:content/contentType
+  property.operation=like
+  property.value=%article%
+  ```
 
 * **Consulta otimizada**
 
-   ```js
-   type=cq:Page
-   fulltext=article
-   fulltext.relPath=jcr:content/contentType
-   ```
+  ```js
+  type=cq:Page
+  fulltext=article
+  fulltext.relPath=jcr:content/contentType
+  ```
 
-   A condição LIKE é lenta para ser avaliada porque nenhum índice pode ser usado se o texto começar com um curinga (&quot;%...&#39;). A condição jcr:contains permite o uso de um índice de texto completo e, portanto, é preferível. É necessário que o Índice de Propriedade Lucene resolvido tenha indexRule para `jcr:content/contentType` com `analayzed=true`.
+  A condição LIKE é lenta para ser avaliada porque nenhum índice pode ser usado se o texto começar com um curinga (&quot;%...&#39;). A condição jcr:contains permite o uso de um índice de texto completo e, portanto, é preferível. É necessário que o Índice de Propriedade Lucene resolvido tenha indexRule para `jcr:content/contentType` com `analayzed=true`.
 
-   Usar funções de consulta como `fn:lowercase(..)` pode ser mais difícil de otimizar, pois não há equivalentes mais rápidos (fora de configurações mais complexas e invasivas do analisador de índice). É melhor identificar outras restrições de escopo para melhorar o desempenho geral da consulta, exigindo que as funções operem no menor conjunto possível de resultados em potencial.
+  Usar funções de consulta como `fn:lowercase(..)` pode ser mais difícil de otimizar, pois não há equivalentes mais rápidos (fora de configurações mais complexas e invasivas do analisador de índice). É melhor identificar outras restrições de escopo para melhorar o desempenho geral da consulta, exigindo que as funções operem no menor conjunto possível de resultados em potencial.
 
 1. ***Esse ajuste é específico do Construtor de consultas e não se aplica a JCR-SQL2 ou XPath.***
 
@@ -300,18 +301,19 @@ O exemplo a seguir usa o Query Builder como a linguagem de consulta mais comum u
 
    * **Consulta não otimizada**
 
-      ```js
-      type=cq:Page
-      path=/content
-      ```
+     ```js
+     type=cq:Page
+     path=/content
+     ```
 
    * **Consulta otimizada**
 
-      ```js
-      type=cq:Page
-      path=/content
-      p.guessTotal=100
-      ```
+     ```js
+     type=cq:Page
+     path=/content
+     p.guessTotal=100
+     ```
+
    Para casos em que a execução da consulta é rápida, mas o número de resultados é grande, p. `guessTotal` é uma otimização crítica para consultas do Construtor de consultas.
 
    `p.guessTotal=100` instrui o Query Builder a coletar apenas os primeiros 100 resultados. E, para definir um sinalizador booleano indicando se pelo menos mais um resultado existe (mas não quantos mais, já que contar esse número resulta em lentidão). Essa otimização é excelente para casos de uso de paginação ou carregamento infinito, em que apenas um subconjunto de resultados é exibido de forma incremental.
@@ -324,20 +326,20 @@ O exemplo a seguir usa o Query Builder como a linguagem de consulta mais comum u
 
    * **Consulta do Construtor de consultas**
 
-      ```js
-      query type=cq:Page
-      path=/content/my-site/us/en
-      property=jcr:content/contentType
-      property.value=article-page
-      orderby=@jcr:content/publishDate
-      orderby.sort=desc
-      ```
+     ```js
+     query type=cq:Page
+     path=/content/my-site/us/en
+     property=jcr:content/contentType
+     property.value=article-page
+     orderby=@jcr:content/publishDate
+     orderby.sort=desc
+     ```
 
    * **XPath gerado a partir da consulta do Construtor de Consultas**
 
-      ```js
-      /jcr:root/content/my-site/us/en//element(*, cq:Page)[jcr:content/@contentType = 'article-page'] order by jcr:content/@publishDate descending
-      ```
+     ```js
+     /jcr:root/content/my-site/us/en//element(*, cq:Page)[jcr:content/@contentType = 'article-page'] order by jcr:content/@publishDate descending
+     ```
 
 1. Forneça o XPath (ou JCR-SQL2) ao Gerador de definição de índice do Oak em `https://oakutils.appspot.com/generate/index` para que você possa gerar a definição otimizada do Índice de propriedades Lucene. <!-- The above URL is 404 as of April 24, 2023 -->
 
@@ -373,17 +375,17 @@ O exemplo a seguir usa o Query Builder como a linguagem de consulta mais comum u
 
    * **Consulta do Construtor de consultas**
 
-      ```js
-      type=myApp:Author
-      property=firstName
-      property.value=ira
-      ```
+     ```js
+     type=myApp:Author
+     property=firstName
+     property.value=ira
+     ```
 
    * **XPath gerado a partir da consulta do Construtor de Consultas**
 
-      ```js
-      //element(*, myApp:Page)[@firstName = 'ira']
-      ```
+     ```js
+     //element(*, myApp:Page)[@firstName = 'ira']
+     ```
 
 1. Forneça o XPath (ou JCR-SQL2) ao Gerador de definição de índice do Oak em `https://oakutils.appspot.com/generate/index` para que você possa gerar a definição otimizada do Índice de propriedades Lucene. <!-- The above URL is 404 as of April 24, 2023 -->
 
@@ -447,10 +449,10 @@ Portanto, verifique se os índices atendem a consultas, exceto se a combinação
    * Log do Construtor de consultas
 
       * `DEBUG @ com.day.cq.search.impl.builder.QueryImpl`
+
    * Log de execução de consulta do Oak
 
       * `DEBUG @ org.apache.jackrabbit.oak.query`
-
 
 * **Configurações de OSGi do mecanismo de consulta do Apache Jackrabbit**
 

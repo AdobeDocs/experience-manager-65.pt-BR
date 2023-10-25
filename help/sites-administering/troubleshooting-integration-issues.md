@@ -1,7 +1,7 @@
 ---
 title: Solução de problemas de integração
 seo-title: Troubleshooting Integration Issues
-description: Saiba como solucionar problemas de integração.
+description: Saiba como solucionar problemas ao integrar com o Adobe Experience Manager.
 seo-description: Learn how to troubleshoot integration issues.
 uuid: fe080e58-a855-4308-a611-f72eb47ba82d
 contentOwner: raiman
@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 422ee332-23ae-46bd-8394-a4e0915beaa2
 exl-id: 11b0023e-34bd-4dfe-8173-5466db9fbe34
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1101'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,7 @@ Para obter mais detalhes sobre como criar serviços de importador de dados perso
 
 ### O encerramento leva muito tempo devido ao Importador de buscas {#shutdown-takes-a-long-time-due-to-the-pollingimporter}
 
-O Analytics foi projetado tendo em mente um mecanismo de herança. Normalmente, você habilita o Analytics para um site adicionando uma referência a uma configuração do Analytics nas propriedades da página [Cloud Services](/help/sites-developing/extending-cloud-config.md) guia. A configuração é herdada para todas as subpáginas automaticamente, sem a necessidade de referenciá-la novamente, a menos que uma página exija uma configuração diferente. Adicionar uma referência a um site também cria automaticamente vários nós (12 para AEM 6.3 e anterior ou 6 para AEM 6.4 e posterior) do tipo `cq;PollConfig` que instancia os PollingImporters usados para importar os dados do Analytics para o AEM. Como resultado:
+O Analytics foi projetado tendo em mente um mecanismo de herança. Normalmente, você habilita o Analytics para um site adicionando uma referência a uma configuração do Analytics nas propriedades da página [Cloud Service](/help/sites-developing/extending-cloud-config.md) guia. A configuração é herdada para todas as subpáginas automaticamente, sem a necessidade de referenciá-la novamente, a menos que uma página exija uma configuração diferente. Adicionar uma referência a um site também cria automaticamente vários nós (12 para AEM 6.3 e anterior ou 6 para AEM 6.4 e posterior) do tipo `cq;PollConfig` que instancia os PollingImporters usados para importar os dados do Analytics para o AEM. Como resultado:
 
 * Ter muitas páginas referenciando o Analytics resulta em uma grande quantidade de Importadores de buscas.
 * Além disso, copiar e colar páginas com uma referência a uma configuração do Analytics leva a uma duplicação de PollingImporters.
@@ -91,7 +91,7 @@ Para obter mais detalhes sobre como criar serviços de importador de dados perso
 
 ### A tag do script do DTM não é renderizada na origem da página {#the-dtm-script-tag-is-not-rendered-in-the-page-source}
 
-A variável [DTM](/help/sites-administering/dtm.md) a tag de script não está incluída corretamente na página mesmo que a configuração tenha sido referenciada nas propriedades da página [Cloud Services](/help/sites-developing/extending-cloud-config.md) guia.
+A variável [DTM](/help/sites-administering/dtm.md) a tag de script não está incluída corretamente na página mesmo que a configuração tenha sido referenciada nas propriedades da página [Cloud Service](/help/sites-developing/extending-cloud-config.md) guia.
 
 #### Solução {#solution-2}
 

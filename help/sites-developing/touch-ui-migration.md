@@ -1,15 +1,15 @@
 ---
 title: Migração para a interface de toque
-description: Migração para a interface de toque
+description: Saiba mais sobre a migração do Adobe Experience Manager para a interface para toque e como ela afeta você.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '669'
 ht-degree: 5%
 
 ---

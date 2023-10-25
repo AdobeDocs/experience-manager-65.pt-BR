@@ -1,19 +1,19 @@
 ---
-title: Pacotes OSGI
-description: Dicas para gerenciar seus pacotes OSGi
+title: Pacotes OSGi
+description: Saiba mais sobre algumas dicas para gerenciar seus pacotes OSGi no Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: e18065c7-75b9-4b37-8294-cf94122a4dcf
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
 
-# Pacotes OSGI{#osgi-bundles}
+# Pacotes OSGi{#osgi-bundles}
 
 ## Usar controle de versão semântico {#use-semantic-versioning}
 
@@ -21,7 +21,7 @@ As práticas recomendadas acordadas para a numeração semântica de versão pod
 
 ## Não incorpore mais classes e jars do que o estritamente necessário em pacotes OSGi {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
 
-Bibliotecas comuns devem ser fatoradas em pacotes separados. Isso permite que eles sejam reutilizados em seus pacotes. Ao envolver um *JAR* em um pacote OSGI, verifique as fontes online para ver se alguém já fez isso antes. Alguns locais comuns para encontrar wrappers de pacote existentes são: Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes e SpringSource Enterprise Bundle Repository.
+Bibliotecas comuns devem ser fatoradas em pacotes separados. Isso permite que eles sejam reutilizados em seus pacotes. Ao envolver um *JAR* em um pacote OSGi, verifique as fontes online para ver se alguém já fez isso antes. Alguns locais comuns para encontrar wrappers de pacote existentes são: Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes e SpringSource Enterprise Bundle Repository.
 
 ## Depende das versões mais baixas necessárias do pacote {#depend-on-the-lowest-needed-bundle-versions}
 

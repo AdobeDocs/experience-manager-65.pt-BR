@@ -1,15 +1,15 @@
 ---
 title: Ferramentas de desenvolvedor do AEM para Eclipse
-description: Ferramentas de desenvolvedor do AEM para Eclipse
+description: Saiba mais sobre as ferramentas de desenvolvedor do Adobe Experience Manager para Eclipse.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 00473769-c447-4966-a71e-117c669e0151
-source-git-commit: 8336a7257d3c5e75cd37381b0124c227c2d55dca
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 4%
+source-wordcount: '792'
+ht-degree: 3%
 
 ---
 

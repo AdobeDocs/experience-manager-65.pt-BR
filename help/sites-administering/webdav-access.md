@@ -1,7 +1,7 @@
 ---
 title: Acesso ao WebDAV
 seo-title: WebDAV Access
-description: Saiba mais sobre o acesso ao WebDAV no AEM.
+description: Saiba mais sobre como acessar o Adobe Experience Manager usando WebDAV.
 seo-description: Learn about WebDAV access in AEM.
 uuid: b0ecaa5d-5454-42df-8453-404ece734c32
 contentOwner: Chiradeep Majumdar
@@ -10,9 +10,9 @@ topic-tags: content
 content-type: reference
 discoiquuid: 1eaf7afe-a181-45df-8766-bd564b1ad22a
 exl-id: 891ee66c-e49c-4561-8fef-e6e448a8aa1c
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1101'
 ht-degree: 0%
 
 ---
@@ -181,6 +181,7 @@ Não há etapas de configuração necessárias para se conectar por meio do WebD
 1. No **Conectar-se ao servidor** digite o local do AEM:
 
    * `http://localhost:4502`
+
    >[!NOTE]
    >
    >Se o AEM estiver em outra porta, use esse número de porta em vez de 4502. Além disso, se você não estiver executando o repositório de conteúdo em sua máquina local, substitua `localhost` com o respectivo nome de servidor ou endereço IP.

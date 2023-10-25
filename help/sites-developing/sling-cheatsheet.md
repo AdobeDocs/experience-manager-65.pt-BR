@@ -1,7 +1,7 @@
 ---
 title: Folha de características do Sling
 seo-title: Sling Cheatsheet
-description: Uma referência fácil do Sling
+description: Saiba mais sobre o Apache Sling, uma tecnologia fundamental da Adobe Experience Manager, usando este diagrama de referência.
 seo-description: An easy Sling reference
 uuid: 8e5e90da-2e97-45a4-be06-91e5e07e5bed
 contentOwner: Guillaume Carlino
@@ -10,10 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: c5ce62ad-ce9f-4681-bf85-78f7e72e1506
 exl-id: ea97ac1f-84d1-4707-892d-b2249ee1cab5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '30'
-ht-degree: 13%
+source-wordcount: '40'
+ht-degree: 10%
 
 ---
 

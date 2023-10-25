@@ -1,14 +1,14 @@
 ---
 title: Experimentar os Componentes principais no We.Retail
-description: Experimentar os Componentes principais no We.Retail
+description: Saiba como experimentar os Componentes principais no Adobe Experience Manager usando o We.Retail.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: b5f2be67-c93c-4dbc-acc0-3edd8f1a282f
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '540'
 ht-degree: 3%
 
 ---
