@@ -1,7 +1,7 @@
 ---
 title: Atualização de código e personalizações
 seo-title: Upgrading Code and Customizations
-description: Saiba mais sobre como atualizar o código personalizado no AEM.
+description: Saiba mais sobre como atualizar código e personalizações no AEM.
 seo-description: Learn more about upgrading custom code in AEM.
 uuid: dec11ef0-bf85-4e4e-80ac-dcb94cc3c256
 contentOwner: sarchiz
@@ -13,9 +13,9 @@ docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: a36a310d-5943-4ff5-8ba9-50eaedda98c5
-source-git-commit: a296e459461973fc2dbd0641c6fdda1d89d8d524
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '2115'
+source-wordcount: '2116'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Antes de continuar com uma atualização, você deve ter uma base de código de 
 Além de atualizar opcionalmente sua base de código e as personalizações para funcionar com a nova versão do AEM, o 6.5 também ajuda a gerenciar suas personalizações com mais eficiência com o recurso Compatibilidade com versões anteriores, conforme descrito na seção [esta página](/help/sites-deploying/backward-compatibility.md).
 
 Como mencionado acima e mostrado no diagrama abaixo, executar o [Detector de padrões](/help/sites-deploying/pattern-detector.md) a primeira etapa pode ajudá-lo a avaliar a complexidade geral da atualização. Ele também pode ajudá-lo a decidir se você deseja executar no modo de compatibilidade ou atualizar suas personalizações para usar todos os novos recursos do AEM 6.5. Consulte a [Compatibilidade com versões anteriores no AEM 6.5](/help/sites-deploying/backward-compatibility.md) para obter mais detalhes.
-[ ![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
+[![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
 
 ## Atualizar a base de código {#upgrade-code-base}
 
@@ -111,7 +111,7 @@ Os Aspectos de pesquisa personalizados exigem alguns ajustes manuais após a atu
 >
 >Este procedimento é necessário apenas para atualizações de versões anteriores ao AEM 6.2.
 
-As instâncias que personalizaram implantações de ativos devem ser preparadas para a atualização. Essa ação é necessária para garantir que todo o conteúdo personalizado seja compatível com a nova estrutura de nós 6.4.
+As instâncias que personalizaram implantações de ativos devem ser preparadas para a atualização. Essa ação é necessária para garantir que todo o conteúdo personalizado seja compatível com a nova estrutura de nó 6.4.
 
 Você pode preparar personalizações para a interface do usuário do Assets fazendo o seguinte:
 
