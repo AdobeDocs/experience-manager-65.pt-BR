@@ -1,7 +1,7 @@
 ---
 title: Tarefas de Manutenção de Pré-Atualização
 seo-title: Pre-Upgrade Maintenance Tasks
-description: Saiba mais sobre as tarefas de pré-atualização no AEM.
+description: Saiba mais sobre as tarefas de pré-atualização recomendadas para o AEM.
 seo-description: Learn about the pre-upgrade tasks in AEM.
 uuid: 5da1cfc7-8a10-47b1-aafb-2cd112e3f818
 contentOwner: sarchiz
@@ -12,9 +12,9 @@ discoiquuid: 291c91e5-65ff-473d-ac11-3da480239e76
 docset: aem65
 feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
-source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '2031'
 ht-degree: 1%
 
 ---
@@ -245,7 +245,6 @@ Abaixo está uma lista de todos os métodos disponíveis que o `PreUpgradeTasksM
 >* cURL
 >
 
-
 ## Desativar módulos de logon personalizados {#disable-custom-login-modules}
 
 >[!NOTE]
@@ -339,7 +338,6 @@ Para evitar que esse cenário aconteça, atualize o esquema fazendo o seguinte:
 >* Você está atualizando de versões do AEM anteriores ao AEM 6.3
 >* Você encontra qualquer um dos erros mencionados abaixo durante a atualização.
 >
-
 
 Há casos excepcionais em que os usuários de serviço podem acabar sendo marcados incorretamente como usuários regulares em uma versão mais antiga do AEM.
 
