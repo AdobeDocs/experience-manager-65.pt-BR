@@ -1,12 +1,12 @@
 ---
 title: Execução de uma atualização no local
-description: Saiba como executar uma atualização no local.
+description: Saiba como executar uma atualização no local para o AEM 6.5.
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1246'
 ht-degree: 0%
 
 ---
