@@ -5,9 +5,9 @@ role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: a07765f95f01f05a30dce14138f75e7edbe94ae2
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1740'
 ht-degree: 1%
 
 ---
@@ -77,6 +77,7 @@ O mapeamento de metadados entre Projetos Workfront e Pastas AEM é definido nos 
 
 Para configurar os mapeamentos, siga estas etapas:
 
+1. Adicionar `jcr:read` permissões para `/conf/global/settings/dam/adminui-extension/foldermetadataschema` para `wf-workfront-users` grupo.
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadados de pasta]**.
 1. Selecione o formulário de esquema de metadados da pasta que deseja editar e clique em Editar.
 1. Selecione o campo de formulário de esquema de metadados da pasta que deseja editar e selecione a guia Configurações no painel direito.
