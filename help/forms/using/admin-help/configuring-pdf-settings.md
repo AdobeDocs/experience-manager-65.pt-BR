@@ -1,8 +1,6 @@
 ---
 title: Definição das configurações do Adobe PDF
-seo-title: Configuring Adobe PDF settings
-description: Saiba como definir configurações do Adobe PDF.
-seo-description: Learn how to configure Adobe PDF settings.
+description: Saiba como definir as configurações do Adobe PDF visíveis na página Configurações do Adobe PDF. Você pode usar qualquer uma das configurações de PDF predefinidas ou criar as suas próprias configurações.
 uuid: 980c9d6a-f75e-4e7d-b050-d2d07a10ef33
 contentOwner: admin
 content-type: reference
@@ -11,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab018b6d-0233-4439-bb75-58c5421d769a
 feature: PDF Generator
 exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '7265'
+source-wordcount: '7285'
 ht-degree: 0%
 
 ---
@@ -45,7 +43,7 @@ As configurações do Adobe PDF são aplicáveis somente às conversões baseada
 
 ## Sobre as configurações de PDF predefinidas {#about-the-predefined-pdf-settings}
 
-O Gerador de PDF fornece várias configurações de PDF predefinidas para seu uso. Não é possível modificar essas configurações predefinidas; no entanto, você pode criar uma configuração com base em uma existente editando a configuração e salvando-a com um novo nome.
+O PDF Generator fornece várias configurações de PDF predefinidas para seu uso. Não é possível modificar essas configurações predefinidas; no entanto, você pode criar uma configuração com base em uma existente editando a configuração e salvando-a com um novo nome.
 
 **Impressão de alta qualidade:** Cria arquivos PDF para saída de alta qualidade. Esta configuração:
 
@@ -87,7 +85,7 @@ Os trabalhos de impressão falharão se tiverem fontes que não podem ser incorp
 
 As configurações de PDF determinam precisamente como os arquivos são convertidos e sua estrutura e recursos de PDF resultantes. Defina uma nova configuração de PDF ou edite uma criada anteriormente. Não é possível modificar configurações predefinidas, mas você pode criar uma configuração com base em uma existente editando a configuração e salvando-a com um novo nome.
 
-1. No console de administração, clique em Serviços > Gerador de PDF > Configurações do Adobe PDF.
+1. No console de administração, clique em Serviços > PDF Generator > Configurações do Adobe PDF.
 1. Clique em Novo ou clique no nome de uma configuração existente.
 1. Na página Nova/Editar configuração do Adobe PDF, preencha as informações necessárias nestas seções:
 
@@ -111,9 +109,9 @@ As configurações de PDF determinam precisamente como os arquivos são converti
 
 ## Fazer upload das configurações de PDF {#upload-pdf-settings}
 
-Você pode ter as configurações de PDF disponíveis no servidor do Gerador de PDF carregando-as de um computador local ou de um local de rede.
+Você pode ter as configurações de PDF disponíveis no servidor de PDF Generator fazendo upload delas de um computador local ou de um local de rede.
 
-1. No console de administração, clique em Serviços > Gerador de PDF > Configurações do Adobe PDF e clique em Fazer upload.
+1. No console de administração, clique em Serviços > PDF Generator > Configurações do Adobe PDF e clique em Fazer upload.
 1. Na página Fazer upload da configuração do Adobe PDF, clique em Procurar, localize o arquivo de configurações do PDF e clique em Abrir.
 1. Clique em OK e em OK novamente.
 
@@ -121,7 +119,7 @@ Você pode ter as configurações de PDF disponíveis no servidor do Gerador de 
 
 É possível excluir permanentemente as configurações de PDF se elas não forem mais necessárias.
 
-1. No console de administração, clique em Serviços > Gerador de PDF > Configurações do Adobe PDF.
+1. No console de administração, clique em Serviços > PDF Generator > Configurações do Adobe PDF.
 1. Marque a caixa de seleção ao lado da configuração a ser excluída. Você pode selecionar várias configurações.
 1. Clique em Excluir e, na página Confirmação de exclusão, clique novamente em Excluir.
 
@@ -220,7 +218,7 @@ As opções de Imagens especificam a compactação e a redefinição da resoluç
 
 Essas opções configuram imagens coloridas, em tons de cinza e monocromáticas:
 
-**Redução da resolução:** Defina um valor para cada tipo de imagem. Para diminuir a resolução de imagens coloridas, em tons de cinza ou monocromáticas, o Gerador de PDF combina pixels em uma área de amostra para criar um pixel maior. Forneça a resolução do dispositivo de saída em pontos por polegada (dpi) e insira uma resolução em dpi na caixa Para imagens acima. Para imagens com uma resolução acima desse limite, o Gerador de PDF combina pixels, conforme necessário, para reduzir a resolução da imagem (pixels por polegada) para a configuração de dpi especificada. Para desativar a redução de resolução, selecione Desativado. Estas são as opções:
+**Redução da resolução:** Defina um valor para cada tipo de imagem. Para diminuir a resolução de imagens coloridas, monocromáticas ou em tons de cinza, o PDF Generator combina pixels em uma área de amostra para criar um pixel maior. Forneça a resolução do dispositivo de saída em pontos por polegada (dpi) e insira uma resolução em dpi na caixa Para imagens acima. Para imagens com uma resolução acima desse limite, o PDF Generator combina pixels, conforme necessário, para reduzir a resolução da imagem (pixels por polegada) para a configuração de dpi especificada. Para desativar a redução de resolução, selecione Desativado. Estas são as opções:
 
 **Redução da resolução média para:** Calcula a média dos pixels em uma área de amostra e substitui toda a área pela cor média dos pixels na resolução especificada.
 
@@ -291,19 +289,19 @@ As opções de Fontes especificam quais fontes devem ser incorporadas em um arqu
 
 >[!NOTE]
 >
->Quando você combina arquivos de PDF com o mesmo subconjunto de fontes, o Gerador de PDF tenta combinar os subconjuntos de fontes.
+>Quando você combina arquivos de PDF com o mesmo subconjunto de fontes, o PDF Generator tenta combinar os subconjuntos de fontes.
 
 **Incorporar todas as fontes:** Incorpora todas as fontes usadas no arquivo. A incorporação de fontes é necessária para a conformidade com o PDF/X.
 
-**Subconjunto De Fontes Inseridas Quando A Porcentagem De Caracteres Usados For Menor Que:** Se você selecionar essa opção, especifique uma porcentagem limite para incorporar apenas um subconjunto das fontes. Por exemplo, se o limite for de 35 e menos de 35% dos caracteres forem usados, o Gerador de PDF incorporará apenas esses caracteres. Somente fontes com bits de permissão apropriados são incorporadas.
+**Subconjunto De Fontes Inseridas Quando A Porcentagem De Caracteres Usados For Menor Que:** Se você selecionar essa opção, especifique uma porcentagem limite para incorporar apenas um subconjunto das fontes. Por exemplo, se o limite for de 35 e menos de 35% dos caracteres forem usados, o PDF Generator incorporará somente esses caracteres. Somente fontes com bits de permissão apropriados são incorporadas.
 
-**Quando a incorporação falhar:** Especifica como o Gerador de PDF responderá se não encontrar uma fonte a ser incorporada ao processar um arquivo. Você pode fazer com que o PDF Generator ignore a solicitação e substitua a fonte, avise e substitua a fonte ou cancele o processamento do trabalho atual.
+**Quando a incorporação falhar:** Especifica como o PDF Generator responderá se não conseguir localizar uma fonte a ser incorporada durante o processamento de um arquivo. Você pode fazer com que o PDF Generator ignore a solicitação e substitua a fonte, avise-o e substitua a fonte ou cancele o processamento do trabalho atual.
 
-**Fonte:** A localização das fontes que o Gerador de PDF usa.
+**Fonte:** A localização das fontes que o PDF Generator usa.
 
 ### Especificar quais fontes serão incorporadas {#specify-which-fonts-to-embed}
 
-1. No console de administração, clique em Serviços > Gerador de PDF > Configurações do Adobe PDF.
+1. No console de administração, clique em Serviços > PDF Generator > Configurações do Adobe PDF.
 1. Clique em Novo ou clique no nome de uma configuração.
 1. Clique em Fontes e desmarque Incorporar todas as fontes.
 1. Na lista Origem da fonte, selecione uma origem de fonte e clique em Ir para atualizar a lista de fontes na caixa à esquerda.
@@ -321,7 +319,7 @@ As opções de Fontes especificam quais fontes devem ser incorporadas em um arqu
 
 ## Opções de cores {#color-options}
 
-As opções de Cores definem todas as informações de gerenciamento de cores para o Gerador de PDF. Para obter instruções sobre como acessar as opções de Cor, consulte [Adicionar ou editar configurações de PDF](configuring-pdf-settings.md#add-or-edit-pdf-settings).
+As opções de Cores definem todas as informações de gerenciamento de cores do PDF Generator. Para obter instruções sobre como acessar as opções de Cor, consulte [Adicionar ou editar configurações de PDF](configuring-pdf-settings.md#add-or-edit-pdf-settings).
 
 ### Configurações do Adobe Color {#adobe-color-settings}
 
@@ -329,7 +327,7 @@ As opções de Cores definem todas as informações de gerenciamento de cores pa
 
 ### Políticas de gerenciamento de cores {#color-management-policies}
 
-Se você selecionou Nenhum para o Arquivo de configurações, a área Políticas de gerenciamento de cores especifica como o Gerador de PDF converte cores não gerenciadas em um arquivo PostScript.
+Se você selecionou Nenhum para o Arquivo de configurações, a área Políticas de gerenciamento de cores especifica como o PDF Generator converte cores não gerenciadas em um arquivo PostScript.
 
 **Deixar cor inalterada:** Deixa as cores dependentes de dispositivo inalteradas e preserva as cores independentes de dispositivo como o equivalente mais próximo possível no PDF. Essa opção é útil para imprimir lojas que calibraram todos os seus dispositivos, usaram essas informações para especificar cores no arquivo e saída apenas para esses dispositivos.
 
@@ -403,9 +401,9 @@ Ao trabalhar com as opções Avançadas, é útil compreender a linguagem PostSc
 
 * compactação de texto e gráficos
 * redução da resolução e codificação de imagens amostradas
-* incorporação de fontes Type 1 e instâncias de Type 1 Várias fontes Principais
+* incorporação de fontes Type 1 e instâncias de fontes Type 1 Multiple Master
 
-**Permitir XObjects PostScript:** Os PostScript XObjects armazenam informações que aparecem em muitas páginas do mesmo arquivo, como uma imagem de fundo ou informações de cabeçalho e rodapé. O uso de PostScript XObjects pode resultar em uma impressão mais rápida, mas requer mais memória de impressora. Para impedir a criação de PostScript XObjects, desmarque essa opção se criar arquivos de PDF com compatibilidade com o Acrobat 5 (PDF 1.4) ou posterior.
+**Permitir XObjects PostScript:** Os PostScript XObjects armazenam informações que aparecem em muitas páginas do mesmo arquivo, como uma imagem de fundo ou informações de cabeçalho e rodapé. O uso de PostScript XObjects pode resultar em uma impressão mais rápida, mas requer mais memória de impressora. Para impedir a criação de PostScript XObjects, desmarque essa opção se criar arquivos PDF com compatibilidade com o Acrobat 5 (PDF 1.4) ou posterior.
 
 **Converter Gradientes em Sombras Suaves:** Converte mesclagens em sombras suaves para Acrobat 4 e versões posteriores, tornando os arquivos PDF menores e melhorando potencialmente a qualidade da saída final. O PDF Generator converte gradientes do Adobe Illustrator, Adobe InDesign, Adobe FreeHand MX, CorelDraw, Quark Xpress e Microsoft PowerPoint.
 
@@ -419,7 +417,7 @@ Ao trabalhar com as opções Avançadas, é útil compreender a linguagem PostSc
 
 **Salve As Configurações Do Adobe PDF No Arquivo PDF:** Incorpora o arquivo de configurações usado para criar o arquivo PDF. Você pode abrir e exibir o arquivo de configurações (que tem uma extensão de arquivo .joboptions) na caixa de diálogo Anexos de arquivo no Acrobat. O arquivo de configurações do Adobe PDF se torna um item na árvore EmbeddedFiles dentro do arquivo PDF.
 
-**Se Possível, Salve As Imagens Do JPEG Original No PDF:** Processa quaisquer imagens de JPEG compactadas (imagens que já estão compactadas usando a codificação DCT) sem recompactá-las. Se essa opção estiver selecionada, o Gerador de PDF descompacta imagens de JPEG para garantir que elas não estejam corrompidas. No entanto, ela não faz a recompressão de imagens válidas, processando a imagem original intocada. Com essa opção selecionada, o desempenho melhora porque ocorre somente a descompactação (e não a descompactação), e os dados e metadados da imagem são preservados.
+**Se Possível, Salve As Imagens Do JPEG Original No PDF:** Processa quaisquer imagens de JPEG compactadas (imagens que já estão compactadas usando a codificação DCT) sem recompactá-las. Se essa opção estiver selecionada, o PDF Generator descompacta imagens de JPEG para garantir que elas não estejam corrompidas. No entanto, ela não faz a recompressão de imagens válidas, processando a imagem original intocada. Com essa opção selecionada, o desempenho melhora porque ocorre somente a descompactação (e não a descompactação), e os dados e metadados da imagem são preservados.
 
 **Salvar Tíquete de Trabalho Portátil no Arquivo PDF:** Preserva um tíquete de tarefa PostScript em um arquivo PDF. O ticket de tarefa contém informações sobre o arquivo PostScript, como tamanho da página, resolução e informações de interrupção, em vez de informações sobre o conteúdo. Essas informações podem ser usadas posteriormente em um fluxo de trabalho ou para imprimir o PDF.
 
@@ -435,11 +433,11 @@ Ao trabalhar com as opções Avançadas, é útil compreender a linguagem PostSc
 
 **Preservar informações do documento do DSC:** Mantém informações como título, data de criação e hora. Quando você abre um arquivo PDF no Acrobat, essas informações são exibidas no painel Descrição das propriedades do documento.
 
-**Redimensionar página e centralizar arte para arquivos EPS:** Centraliza uma imagem do EPS e redimensiona a página para ajustá-la ao redor da imagem. Essa opção se aplica somente a tarefas que consistem em um único arquivo EPS.
+**Redimensionar página e centralizar arte para arquivos EPS:** Centraliza uma imagem do EPS e redimensiona a página para ajustá-la ao redor da imagem. Essa opção se aplica somente a tarefas que consistem em um único arquivo do EPS.
 
 ## Opções de conformidade e emissão de relatórios de padrões {#standards-reporting-and-compliance-options}
 
-O Gerador de PDF pode verificar o conteúdo do documento em um arquivo PostScript para garantir que ele atenda aos critérios padrão de PDF/X-1a, PDF/X-3 ou PDF/A antes de criar o arquivo PDF. Para arquivos compatíveis com PDF/X, também é possível exigir que o arquivo PostScript atenda a critérios adicionais, selecionando outras opções em &quot;Relatórios e conformidade padrão&quot;. A disponibilidade das opções depende do padrão selecionado.
+O PDF Generator pode verificar o conteúdo do documento em um arquivo PostScript para garantir que ele atenda aos critérios padrão de PDF/X-1a, PDF/X-3 ou PDF/A antes de criar o arquivo PDF. Para arquivos compatíveis com PDF/X, também é possível exigir que o arquivo PostScript atenda a critérios adicionais, selecionando outras opções em &quot;Relatórios e conformidade padrão&quot;. A disponibilidade das opções depende do padrão selecionado.
 
 Arquivos compatíveis com PDF/X são usados principalmente como um formato padronizado para a troca de arquivos PDF que são destinados à produção de impressão de alta resolução. A menos que você esteja criando um documento PDF para produção de impressão, poderá ignorar os padrões de conformidade PDF/X.
 
@@ -465,7 +463,7 @@ Para obter instruções sobre como acessar as opções de conformidade e emissã
 
 **Continuar:** Cria um arquivo PDF.
 
-**Cancelar tarefa:** Cria um arquivo PDF somente se o arquivo PostScript atender aos requisitos de PDF/X das opções de relatório selecionadas e for válido. Se ambas as opções de relatório de PDF/X forem selecionadas e o arquivo PostScript atender apenas a um conjunto de critérios de PDF/X (por exemplo, PDF/X-3), o Gerador de PDF criará o arquivo compatível.
+**Cancelar tarefa:** Cria um arquivo PDF somente se o arquivo PostScript atender aos requisitos de PDF/X das opções de relatório selecionadas e for válido. Se ambas as opções de relatório de PDF/X forem selecionadas e o arquivo PostScript atender apenas a um conjunto de critérios de PDF/X (por exemplo, PDF/X-3), o PDF Generator criará o arquivo compatível.
 
 **Se TrimBox E ArtBox Não Forem Especificadas:** Disponível quando o Padrão de Conformidade na página Padrões, Geração de Relatórios e Conformidade estiver definido como uma opção diferente de Nenhum.
 
@@ -481,7 +479,7 @@ Para obter instruções sobre como acessar as opções de conformidade e emissã
 
 **Valores Padrão Se Não Especificados No Documento:** Esta opção está disponível quando o Padrão de Conformidade na página Padrões, Geração de Relatórios e Conformidade é definido como uma opção diferente de Nenhum.
 
-**Nome do perfil de intenção de saída:** Indica a condição de impressão caracterizada para a qual o documento está preparado. Se um documento não especificar um nome OutputIntent, o Gerador de PDF usará o valor selecionado nesse menu. Você pode selecionar um dos nomes fornecidos ou inserir um nome no espaço fornecido. Se o fluxo de trabalho exigir que o documento especifique o propósito de saída, selecione Nenhum. Qualquer documento que não atenda aos requisitos falha na verificação de conformidade.
+**Nome do perfil de intenção de saída:** Indica a condição de impressão caracterizada para a qual o documento está preparado. Se um documento não especificar um nome OutputIntent, o PDF Generator usará o valor selecionado nesse menu. Você pode selecionar um dos nomes fornecidos ou inserir um nome no espaço fornecido. Se o fluxo de trabalho exigir que o documento especifique o propósito de saída, selecione Nenhum. Qualquer documento que não atenda aos requisitos falha na verificação de conformidade.
 
 **Identificador de Condição de Saída:** Indica o nome de referência especificado pelo Registro do nome do perfil de intenção de saída.
 
@@ -561,14 +559,14 @@ Esses arquivos têm muitos propósitos. Por exemplo, os arquivos de perfil podem
 
 ### Baixar um arquivo de prólogo ou epílogo {#download-a-prologue-or-epilogue-file}
 
-1. No console de administração, clique em Serviços > Gerador de PDF > Configurações do Adobe PDF.
+1. No console de administração, clique em Serviços > PDF Generator > Configurações do Adobe PDF.
 1. Clique em Novo ou clique no nome de uma configuração.
 1. Clique em Avançado e, em seguida, ao lado da opção Usar Prolog.ps e Epilog.ps, clique em Download.
 1. Na página Baixar arquivos de Prolog e Epilog, clique em Prolog.ps ou Epilog.ps e clique em Salvar.
 
 ### Carregar um arquivo de prólogo ou epílogo {#upload-a-prologue-or-epilogue-file}
 
-1. No console de administração, clique em Serviços > Gerador de PDF > Configurações do Adobe PDF.
+1. No console de administração, clique em Serviços > PDF Generator > Configurações do Adobe PDF.
 1. Clique em Novo ou clique no nome de uma configuração.
 1. Clique em Avançado e, em seguida, ao lado da opção Usar Prolog.ps e Epilog.ps, clique em Fazer upload.
 1. Na página Fazer upload dos arquivos de prólogo e epílogo, clique em Procurar para selecionar um arquivo de prólogo ou de epílogo.

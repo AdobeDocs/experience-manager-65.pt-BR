@@ -1,14 +1,14 @@
 ---
 title: Importar e gerenciar aplicativos
-description: Saiba como importar e gerenciar aplicativos.
+description: Saiba como importar e gerenciar aplicativos. Um aplicativo é um container para armazenar ativos necessários à implementação de uma solução de formulários AEM.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: f17726c0-3591-4d25-a8b5-3a7024249a56
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '838'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Nos formulários AEM, um *aplicativo* O é um container para armazenar ativos ne
 
 Quando um aplicativo está concluído e pronto para implantação em um servidor de produção, o usuário do Workbench compacta o aplicativo em um *Arquivo de aplicativo de formulários AEM* (.lca). Em seguida, um administrador usa o console de administração para importar e implantar o arquivo de aplicativo, usando a guia Aplicativos na página Gerenciamento de aplicativos.
 
-Você também pode usar a guia Arquivos na página Gerenciamento de aplicativos para importar LCAs que foram criadas usando o Workbench 8.x.
+Você também pode usar a guia arquivos na página Gerenciamento de aplicativos para importar LCAs que foram criadas usando o Workbench 8.x.
 
 >[!NOTE]
 >

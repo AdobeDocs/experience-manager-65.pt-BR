@@ -1,14 +1,14 @@
 ---
 title: Gerenciar credenciais locais
-description: Saiba como gerenciar credenciais locais.
+description: Saiba como gerenciar credenciais locais usando o Gerenciamento de armazenamento de confiança. Os formulários AEM são compatíveis com credenciais RSA e DSA no formulário PKCS12 padrão.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: c5905272-7d09-47e4-8b35-4cc25a148477
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---

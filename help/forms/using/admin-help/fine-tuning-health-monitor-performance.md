@@ -1,8 +1,7 @@
 ---
 title: Ajustando o desempenho do Monitor de Integridade
 seo-title: Fine-tuning Health Monitor performance
-description: Saiba como ajustar o desempenho do Monitor de integridade
-seo-description: Learn how to fine-tune Health Monitor performance
+description: Saiba como ajustar o desempenho do Monitor de integridade. Controlar as estatísticas do sistema que afetam o desempenho do ambiente de formulários usando a opção de configuração JAVA.
 uuid: 770b10cb-065f-41b5-9594-a291e4311151
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
 exl-id: 41042e08-5e14-4809-89b7-16d98a72d1b4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '422'
 ht-degree: 1%
 
 ---
@@ -91,4 +90,4 @@ Coletar as estatísticas do sistema que preenchem o Health Monitor tem algum imp
 1. Em Infraestrutura do servidor, clique em Fluxo de trabalho de formulários e Java > Definição de processo.
 1. Em Propriedades adicionais, clique em Java Virtual Machine.
 1. Na caixa Generic JVM arguments, digite os argumentos necessários.
-1. Clique em OK ou em Aplicar e, em seguida, clique em Salvar diretamente na configuração principal.
+1. Clique em OK ou em Aplicar e, em seguida, clique em Salvar diretamente na configuração-mestre.

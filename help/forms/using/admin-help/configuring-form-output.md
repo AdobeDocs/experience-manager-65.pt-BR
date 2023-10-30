@@ -1,8 +1,6 @@
 ---
 title: Configuração da saída de formulário
-seo-title: Configuring form output
-description: Saiba como configurar a saída de formulários.
-seo-description: Learn how to configure form output.
+description: Saiba como configurar a saída de formulários. Para configurar a saída do formulário e habilitar o recurso, use os scripts personalizados antes de enviar o formulário.
 uuid: 70aad14e-c845-4ef3-a751-ad8860d5d505
 contentOwner: admin
 content-type: reference
@@ -10,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 17c9b69a-3c6f-47e3-a828-841bb90eba8b
 exl-id: d739806c-ce72-40fd-b304-3262a0988d96
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '244'
 ht-degree: 1%
 
 ---

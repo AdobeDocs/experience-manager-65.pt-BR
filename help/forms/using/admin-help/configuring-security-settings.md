@@ -1,8 +1,6 @@
 ---
 title: Definição das configurações de segurança
-seo-title: Configuring security settings
-description: Saiba como definir configurações de segurança.
-seo-description: Learn how to configure security settings.
+description: Saiba como definir configurações de segurança. Você pode proteger documentos do PDF limitando o acesso. Você pode criptografar, certificar ou proteger o documento por senha.
 uuid: 9747f268-3551-4064-8dba-e1de4a577843
 contentOwner: admin
 content-type: reference
@@ -11,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a89ab508-173f-4b1c-88d9-ef944af4d9ae
 feature: PDF Generator
 exl-id: be076477-2681-4570-953d-6c44d3c30843
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1384'
 ht-degree: 0%
 
 ---
@@ -28,7 +26,7 @@ Na página Configurações de segurança, é possível executar as seguintes tar
 
 A *configuração de segurança* controla a segurança e as permissões para arquivos convertidos com essa configuração de segurança.
 
-1. No console de administração, clique em Serviços > Gerador de PDF > Configurações de segurança.
+1. No console de administração, clique em Serviços > PDF Generator > Configurações de segurança.
 1. Clique em Novo ou clique no nome de uma configuração de segurança.
 1. Na página Novo/Editar configuração de segurança, preencha as informações necessárias para a configuração de segurança. (Consulte [Definição das configurações de tipo de arquivo](/help/forms/using/admin-help/configuring-file-type-settings.md#configuring-file-type-settings).)
 1. Clique em Salvar e, na caixa de diálogo exibida, digite um nome para a configuração e clique em OK.
@@ -119,6 +117,6 @@ Essas opções configuram as permissões:
 
 É possível excluir uma configuração de segurança se ela não for mais necessária. No entanto, as configurações de segurança pré-definidas não podem ser excluídas.
 
-1. No console de administração, clique em **[!UICONTROL Serviços > Gerador de PDF > Configurações de segurança]**.
+1. No console de administração, clique em **[!UICONTROL Serviços > PDF Generator > Configurações de segurança]**.
 1. Marque a caixa de seleção ao lado da configuração a ser excluída. Você pode selecionar várias configurações.
 1. Clique em **[!UICONTROL Excluir]** e no **[!UICONTROL Confirmação de exclusão]** clique em **[!UICONTROL Excluir]** novamente.

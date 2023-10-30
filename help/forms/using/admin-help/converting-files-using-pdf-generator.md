@@ -1,8 +1,6 @@
 ---
-title: Conversão de arquivos usando o Gerador de PDF
-seo-title: Converting files using PDF Generator
-description: Saiba como converter arquivos usando o Gerador de PDF.
-seo-description: Learn how to convert files using PDF Generator.
+title: Conversão de arquivos usando o PDF Generator
+description: O serviço PDF Generator converte formatos de arquivo nativos em PDF. Ele também converte o PDF para outros formatos de arquivo e otimiza o tamanho dos documentos PDF.
 uuid: 295afb8f-130a-44f5-b0ab-e4c93c0c9e52
 contentOwner: admin
 content-type: reference
@@ -11,31 +9,31 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 feature: PDF Generator
 exl-id: 0e2c12b5-24c8-4aca-8826-cb661051ce4f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 22d9b22a0fc0bc5f753f2e11ca66e2627e1a8405
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1184'
 ht-degree: 0%
 
 ---
 
-# Conversão de arquivos usando o Gerador de PDF{#converting-files-using-pdf-generator}
+# Conversão de arquivos usando o PDF Generator{#converting-files-using-pdf-generator}
 
-Você pode usar as páginas da Web do Gerador de PDF para converter arquivos.
+Você pode usar as páginas da Web do PDF Generator para converter arquivos.
 
 ## Criar um arquivo PDF {#create-a-pdf-file}
 
-1. No console de administração, clique em Serviços > Gerador de PDF > Criar PDF.
+1. No console de administração, clique em Serviços > PDF Generator > Criar PDF.
 1. Clique em Procurar para localizar e selecionar o arquivo.
 
    >[!NOTE]
    >
-   >O PDF Generator é capaz de detectar automaticamente o tipo de arquivo de arquivos .doc, .xls, .ppt e .rtf, mesmo quando o nome do arquivo não tem a extensão. Esse recurso não funciona com arquivos .docx, .xlsx e .pptx.
+   >O PDF Generator é capaz de detectar automaticamente o tipo de arquivo .doc, .xls, .ppt e .rtf, mesmo quando o nome do arquivo não tem a extensão. Esse recurso não funciona com arquivos .docx, .xlsx e .pptx.
 
 1. Em Configurações, selecione Usar configurações personalizadas ou Fazer upload do arquivo de configurações.
 
    * Se você estiver usando configurações personalizadas, selecione uma configuração do Adobe PDF, uma configuração de segurança e uma configuração de tipo de arquivo e especifique um tempo limite.
 
-      As configurações do Adobe PDF são aplicáveis somente às conversões de PS para PDF, EPS para PDF, PRN para PDF, Imagem para PDF com OCR ativado e Nativo para PDF. A configuração de tempo limite especifica o tempo máximo que a conversão leva para ser concluída. O padrão é 270 segundos. Essas configurações não são usadas durante as conversões de imagem para PDF e de OpenOffice para PDF.
+     As configurações do Adobe PDF são aplicáveis somente às conversões de PS para PDF, EPS para PDF, PRN para PDF, Imagem para PDF com OCR ativado e Nativo para PDF. A configuração de tempo limite especifica o tempo máximo que a conversão leva para ser concluída. O padrão é 270 segundos. Essas configurações não são usadas durante as conversões de imagem para PDF e de OpenOffice para PDF.
 
    * Se você estiver fazendo upload de um arquivo de configurações, digite o caminho e o nome na caixa ou clique em Procurar para localizar e selecionar o arquivo.
 
@@ -45,7 +43,7 @@ Você pode usar as páginas da Web do Gerador de PDF para converter arquivos.
 
 ### Sobre arquivos XMP {#about-xmp-files}
 
-Os documentos de PDF que o PDF Generator cria no Acrobat 5.0 ou posterior contêm metadados de documento no formato XML. *Metadados* inclui informações sobre o documento e seu conteúdo, como nome do autor, palavras-chave e informações de copyright que os utilitários de pesquisa podem usar.
+os documentos PDF criados pelo PDF Generator no Acrobat 5.0 ou posterior contêm metadados de documento no formato XML. *Metadados* inclui informações sobre o documento e seu conteúdo, como nome do autor, palavras-chave e informações de copyright que os utilitários de pesquisa podem usar.
 
 Os metadados do documento contêm (mas não se limitam a) informações que também aparecem na guia Descrição da caixa de diálogo Propriedades do documento no Acrobat. As alterações feitas na guia Descrição são refletidas nos metadados do documento. Os metadados de documentos podem ser estendidos e modificados usando produtos de terceiros.
 
@@ -55,7 +53,7 @@ Você pode criar arquivos XMP no Acrobat.
 
 ## Converter um arquivo HTML ou ZIP em PDF {#convert-an-html-file-or-zip-file-to-pdf}
 
-Você pode usar o Gerador de PDF para converter os seguintes tipos de arquivos para o Adobe PDF:
+Você pode usar o PDF Generator para converter os seguintes tipos de arquivos para o Adobe PDF:
 
 * arquivos HTML, que podem ser convertidos por upload de um arquivo HTML ou especificando o URL de uma página da Web ou site.
 * Arquivos compactados (ZIP), que podem conter arquivos HTML, arquivos de imagem ou ambos.
@@ -79,8 +77,7 @@ Se o arquivo ZIP contiver mais de um arquivo HTML no nível mais baixo de sua hi
 >
 >* Para fazer upload de um arquivo do sistema de arquivos local, use a opção Fazer upload de arquivo na página HTML para PDF.
 
-
-1. No console de administração, clique em Serviços > Gerador de PDF > HTML para PDF.
+1. No console de administração, clique em Serviços > PDF Generator > HTML para PDF.
 1. Especifique o arquivo a ser convertido executando uma das seguintes tarefas:
 
    * Em Fazer upload do arquivo, digite o caminho e o nome do arquivo HTML ou ZIP, ou clique em Procurar para localizá-lo e selecioná-lo.
@@ -93,12 +90,12 @@ Se o arquivo ZIP contiver mais de um arquivo HTML no nível mais baixo de sua hi
 1. Especifique as definições de configuração:
 
    * Para usar configurações personalizadas, selecione Usar configurações personalizadas, especifique as configurações de segurança e de tipo de arquivo e especifique um valor de tempo limite. O valor padrão é de 270 segundos.
+
    >[!NOTE]
    >
    >Se você tiver configurado o serviço Gerar PDF para usar o Acrobat WebCapture, as Configurações de Tipo de Arquivo selecionadas nesta página não afetarão o PDF produzido. Em vez disso, faça as alterações apropriadas na versão do Acrobat instalada no servidor.
 
    * Para usar um arquivo de configurações existente, selecione Fazer upload do arquivo de configurações e clique em Procurar para ir para o local do arquivo.
-
 
 1. Para fazer upload de um arquivo XMP, clique em Procurar e vá para o local do arquivo. Um arquivo XMP pode ser usado para incluir informações de metadados padrão. (Consulte [Sobre arquivos XMP](converting-files-using-pdf-generator.md#about-xmp-files).)
 1. Clique em Criar. Quando o arquivo é criado, um link para o arquivo PDF é exibido.
@@ -108,7 +105,7 @@ Se o arquivo ZIP contiver mais de um arquivo HTML no nível mais baixo de sua hi
 
 É possível exportar arquivos de PDF para vários formatos de arquivo, conforme descrito no capítulo Gerar serviço de PDF de [Referência de serviços](https://www.adobe.com/go/learn_aemforms_services_63).
 
-1. No console de administração, clique em Serviços > Gerador de PDF > Export PDF.
+1. No console de administração, clique em Serviços > PDF Generator > Export PDF.
 1. Clique em Procurar para localizar o arquivo de PDF a ser exportado.
 1. Na lista Export PDF arquivo para, selecione o formato para o qual o arquivo de PDF será exportado.
 1. Na caixa Especificar um tempo limite, digite o tempo de espera antes que o aplicativo expire. O valor padrão é de 270 segundos.
@@ -121,13 +118,13 @@ Se o arquivo ZIP contiver mais de um arquivo HTML no nível mais baixo de sua hi
 
 ## Otimizar um PDF (somente Windows) {#optimize-a-pdf}
 
-O Gerador de PDF suporta a redução do tamanho de arquivos PDF.
+O PDF Generator suporta a redução do tamanho de arquivos PDF.
 
 >[!NOTE]
 >
 >A otimização de um documento assinado digitalmente remove e invalida as assinaturas digitais.
 
-1. No console de administração, clique em Serviços > Gerador de PDF > Optimize PDF.
+1. No console de administração, clique em Serviços > PDF Generator > Optimize PDF.
 1. Clique em Procurar para localizar o arquivo de PDF a ser otimizado.
 1. Especifique as definições de configuração:
 

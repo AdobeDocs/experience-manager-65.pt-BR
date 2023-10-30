@@ -1,11 +1,11 @@
 ---
 title: Criando um Manipulador de Usuários Externos para Convidar
-description: Criando um Manipulador de Usuários Externos para Convidar
+description: Saiba como criar um Manipulador de usuários externos para convite. Ele permite que o serviço Rights Management convide usuários externos para se tornarem usuários Rights Management.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1135'
 ht-degree: 0%
 
 ---
