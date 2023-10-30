@@ -1,7 +1,6 @@
 ---
 title: Noções básicas sobre processos do AEM Forms
-seo-title: Understanding AEM Forms Processes
-description: Noções básicas sobre processos do AEM Forms
+description: Os processos do AEM Forms abrangem criação de formulários, envio, manipulação de dados, validação, integração, automação de fluxos de trabalho e gerenciamento de saídas.
 uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 role: Developer
 exl-id: 434ac316-8a01-43a6-844b-1b792f60fa21
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -31,9 +30,9 @@ No entanto, há situações em que um processo não pode ser concluído de forma
 
 * Um processo pode se estender por um período significativo.
 * Um processo pode ultrapassar os limites organizacionais.
-* Um processo precisa de entrada externa para ser concluído. Por exemplo, considere uma situação em que um formulário é enviado para um gerente que está fora do escritório. Nessa situação, o processo não é concluído até que o gerente retorne e preencha o formulário.
+* Um processo precisa de entrada externa para ser concluído. Por exemplo, considere uma situação em que um formulário é enviado a um gerente que está fora do escritório. Nessa situação, o processo não é concluído até que o gerente retorne e preencha o formulário.
 
-   Esses tipos de processos são conhecidos como processos de longa duração. Um processo de longa duração é executado de forma assíncrona, permitindo que os sistemas interajam conforme os recursos permitem e permitindo o rastreamento e o monitoramento da operação. Quando um processo de longa duração é chamado, o AEM Forms cria um valor de identificador de invocação como parte de um registro que rastreia o status do processo de longa duração. O registro é armazenado no banco de dados do AEM Forms. Você pode limpar registros de processos de longa duração quando eles não são mais necessários.
+  Esses tipos de processos são conhecidos como processos de longa duração. Um processo de longa duração é executado de forma assíncrona, permitindo que os sistemas interajam conforme os recursos permitem e permitindo o rastreamento e o monitoramento da operação. Quando um processo de longa duração é chamado, o AEM Forms cria um valor de identificador de invocação como parte de um registro que rastreia o status do processo de longa duração. O registro é armazenado no banco de dados do AEM Forms. Você pode limpar registros de processos de longa duração quando eles não são mais necessários.
 
 >[!NOTE]
 >

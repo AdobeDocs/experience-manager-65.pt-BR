@@ -1,7 +1,6 @@
 ---
 title: QuickStart da API Java do serviço de criptografia (SOAP)
-seo-title: Encryption Service Java API QuickStart(SOAP)
-description: QuickStart da API Java do serviço de criptografia (SOAP)
+description: Criptografe, remova a criptografia baseada em senha/certificado, desbloqueie e determine o tipo de criptografia para documentos PDF usando a API Java no modo SOAP.
 uuid: 3e29b3e9-340b-4b35-80cc-f0aff4180892
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ topic-tags: develop
 discoiquuid: f12c10c3-1ce6-4415-ba9d-5349d1888237
 role: Developer
 exl-id: e8b2aa43-ac27-410d-a809-56bfd1c2fcb1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -39,7 +38,7 @@ As operações do AEM Forms podem ser executadas usando a API altamente tipada d
 
 ## Início rápido (modo SOAP): criptografia de um documento PDF usando a API Java {#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api}
 
-O exemplo de código Java a seguir criptografa um documento PDF chamado *Loan.pdf* com um valor de senha de `OpenPassword`. A senha principal é `PermissionPassword`. O documento de PDF protegido é salvo como um arquivo de PDF chamado *EncryptLoan.pdf*. (Consulte [Criptografar documentos PDF com senha](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
+O exemplo de código Java a seguir criptografa um documento PDF chamado *Loan.pdf* com um valor de senha de `OpenPassword`. A senha mestra é `PermissionPassword`. O documento de PDF protegido é salvo como um arquivo de PDF chamado *EncryptLoan.pdf*. (Consulte [Criptografar documentos PDF com senha](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
 
 ```java
  /*
@@ -159,7 +158,7 @@ O exemplo de código Java a seguir criptografa um documento PDF chamado *Loan.pd
 
 ## Início rápido (modo SOAP): remoção da criptografia baseada em senha usando a API Java {#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api}
 
-O exemplo de código Java a seguir remove a criptografia baseada em senha de um documento PDF chamado *EncryptLoan.pdf*. O principal valor de senha usado para remover a criptografia baseada em senha é *PermissionPassword*. O documento PDF não seguro é salvo como um arquivo PDF chamado *noEncryptionLoan.pdf*. (Consulte [Remoção da criptografia de senha](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption).)
+O exemplo de código Java a seguir remove a criptografia baseada em senha de um documento PDF chamado *EncryptLoan.pdf*. O valor da senha mestra usada para remover a criptografia baseada em senha é *PermissionPassword*. O documento PDF não seguro é salvo como um arquivo PDF chamado *noEncryptionLoan.pdf*. (Consulte [Remoção da criptografia de senha](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption).)
 
 ```java
  /*

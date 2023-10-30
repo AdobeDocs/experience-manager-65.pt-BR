@@ -1,16 +1,15 @@
 ---
 title: Gerenciamento de correspondência | Manipulação de dados do usuário
-seo-title: Correspondence Management | Handling user data
-description: Gerenciamento de correspondência | Manipulação de dados do usuário
+description: Gerenciamento de correspondência e manuseio de dados do usuário no ambiente do AEM Forms.
 uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 role: Admin
 exl-id: a0c6a02c-47a3-4e70-a14c-953ee016b8e4
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -41,7 +40,7 @@ Dependendo da persistência do armazenamento de dados configurada para a implant
   <tr>
    <td><p>Padrão</p> </td>
    <td><p>Repositório AEM da instância de publicação e instâncias do autor especificadas na configuração de replicação reversa</p> </td>
-   <td><p><code>/content/apps/cm/letterInstances/[yyyy]/[mm]/[dd]/[node-id]/[letter-instance-name]/</code> </p> </td>
+   <td><p><code>/content/apps/cm/letterInstances/[yyyy]/[mm]/[dd]/[node-id]/[letter-instance-name]/</code><br /> </p> </td>
   </tr>
   <tr>
    <td><p>Remoto</p> </td>

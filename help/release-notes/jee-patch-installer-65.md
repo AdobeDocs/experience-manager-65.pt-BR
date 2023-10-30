@@ -1,13 +1,13 @@
 ---
 title: Instalador de patch do AEM Forms JEE
-description: Instalador de patch do AEM Forms JEE
+description: AEM Forms JEE Patch Installer para corrigir problemas em componentes AEM 6.5 Forms.
 uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '529'
 ht-degree: 20%
 
 ---
@@ -38,9 +38,9 @@ Navegue até o diretório apropriado na mídia ou pasta de instalação no disco
 
       * (Windows de 32 bits) `Windows\Disk1\InstData\VM`
       * (Windows de 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
+
    * **Linux**
-Navegue até o diretório apropriado e, em um prompt de comando, digite 
-`./aem65_cfp_install.bin`.
+Navegue até o diretório apropriado e, em um prompt de comando, digite `./aem65_cfp_install.bin`.
 
       * (Linux) `Linux/Disk1/InstData/NoVM`
 
@@ -56,8 +56,12 @@ Navegue até o diretório apropriado e, em um prompt de comando, digite
    * Desmarque a opção **Iniciar o Gerenciador de Configurações** antes de clicar em **[!UICONTROL Concluído]**. Executar **Gerenciador de configurações** usando o **ConfigurationManager.bat** arquivo localizado em `[aem-forms root]\configurationManager\bin`.
 
    * Ou desmarque a opção **Iniciar o Gerenciador de Configurações** antes de clicar em **[!UICONTROL Concluído]**. Antes de executar **Gerenciador de configurações** usar **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, navegue até *`<AEMForms_Install_Dir>\configurationManager\bin`* direcionar e substituir [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) e [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) arquivos.
-   >[!NOTE]
-   >Usar **ConfigurationManager.bat** ajuda a evitar a atualização manual do nome de arquivos .lax.
+
+   >>
+   [!NOTE]
+   >>
+   Usar **ConfigurationManager.bat** ajuda a evitar a atualização manual do nome de arquivos .lax.
+   >
 
 1. **[Somente para Unix]:**
 

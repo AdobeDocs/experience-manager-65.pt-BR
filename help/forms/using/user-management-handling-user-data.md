@@ -1,16 +1,15 @@
 ---
 title: Gerenciamento de usuários do Forms | Manipulação de dados do usuário
-seo-title: Forms user management | Handling user data
-description: Gerenciamento de usuários do Forms | Manipulação de dados do usuário
+description: O componente de Gerenciamento de usuários do AEM Forms JEE permite a criação, autorização e gerenciamento de usuários para acessar o AEM Forms.
 uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
 role: Admin
 exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '895'
 ht-degree: 0%
 
 ---
@@ -68,7 +67,7 @@ O gerenciamento de usuários armazena dados do usuário nas seguintes tabelas de
    <td>Contém entradas de todos os usuários de domínios locais, corporativos e híbridos. Ele contém IDs de email do usuário.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code> (bancos de dados Oracle e MS SQL)</p> </td>
+   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code><br /> (bancos de dados Oracle e MS SQL)</p> </td>
    <td>Armazena o mapeamento entre usuários e grupos.</td>
   </tr>
   <tr>
@@ -80,7 +79,7 @@ O gerenciamento de usuários armazena dados do usuário nas seguintes tabelas de
    <td>Armazena o mapeamento entre a entidade de segurança e as permissões para usuários e grupos.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code> (bancos de dados Oracle e MS SQL)</p> </td>
+   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code><br /> (bancos de dados Oracle e MS SQL)</p> </td>
    <td>Armazena valores de atributo antigos e novos correspondentes a um principal.<br /> </td>
   </tr>
  </tbody>
@@ -122,7 +121,6 @@ Execute os seguintes comandos de banco de dados para exportar dados de gerenciam
 >
 >* Substituir `EdcPrincipalGrpCtmntEntity` com `EdcPrincipalGrpCtmntEnti`
 >
-
 
 ```sql
 Select * from EdcPrincipalLocalAccountEntity where refuserprincipalid in (Select id from EdcPrincipalUserEntity where refprincipalid in (Select id from EDCPRINCIPALENTITY where id='<principal_id>'));

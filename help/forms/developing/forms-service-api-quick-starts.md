@@ -1,8 +1,6 @@
 ---
 title: Início rápido da API de serviço do Forms
-seo-title: Forms Service API Quick Starts
-description: Use os Quick Starts para a API de serviço do Forms.
-seo-description: Use the Quick Starts for the Forms Service API.
+description: Renderize PDF interativo, HTML Forms, Fragmentos usando a API JAVA.
 uuid: dfce259a-e392-4929-ad7e-6d902faceaeb
 contentOwner: admin
 content-type: reference
@@ -11,7 +9,7 @@ topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 role: Developer
 exl-id: acb33000-25b3-4471-9df9-b6e039ab2bda
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 0%
@@ -2626,7 +2624,7 @@ O início rápido do Java a seguir renderiza um formulário PDF interativo basea
 
 ## Início rápido (modo SOAP): passar documentos para o serviço Forms usando a API Java {#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api}
 
-O início rápido do Java a seguir recupera o arquivo Loan.xdp do Content Services (desaprovado). Este arquivo XDP está localizado no espaço `/Company Home/Form Designs`. O arquivo XDP é retornado em uma `com.adobe.idp.Document` instância. A variável `com.adobe.idp.Document` é passada para o serviço Forms. O formulário interativo é gravado em um navegador da Web cliente. (Consulte [Passar documentos para o serviço da Forms](/help/forms/developing/passing-documents-forms-service.md).)
+O início rápido do Java a seguir recupera o arquivo Loan.xdp do Content Services (desaprovado). Este arquivo XDP está localizado no espaço `/Company Home/Form Designs`. O arquivo XDP é retornado em uma `com.adobe.idp.Document` instância. A variável `com.adobe.idp.Document` é passada para o serviço Forms. O formulário interativo é gravado em um navegador cliente da Web. (Consulte [Passar documentos para o serviço da Forms](/help/forms/developing/passing-documents-forms-service.md).)
 
 ```java
  /*

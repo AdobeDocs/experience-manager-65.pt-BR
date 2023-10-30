@@ -1,7 +1,6 @@
 ---
 title: QuickStart da API Java do serviço DocConverter (SOAP)
-seo-title: DocConverter Service Java API QuickStart(SOAP)
-description: QuickStart da API Java do serviço DocConverter (SOAP)
+description: Converta um documento em um documento PDF/A e gerencie a conformidade usando o Java API Quick Start (SOAP).
 uuid: a02e13a5-4557-4c8a-a4be-e8d017127128
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ topic-tags: develop
 discoiquuid: ea4b26c8-b9cf-42c2-b4da-2884336014a9
 role: Developer
 exl-id: 554b19d6-47c3-4171-b59d-343f1ad935b2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---

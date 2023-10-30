@@ -1,16 +1,15 @@
 ---
 title: Fluxos de trabalho do Forms JEE | Manipulação de dados do usuário
-seo-title: Forms JEE workflows | Handling user data
-description: Fluxos de trabalho do Forms JEE | Manipulação de dados do usuário
+description: Workflows do AEM Forms JEE para projetar, criar e gerenciar processos de negócios.
 uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 role: Admin
 exl-id: 847fa303-8d1e-4a17-b90d-5f9da5ca2d77
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1370'
 ht-degree: 0%
 
 ---
@@ -165,6 +164,7 @@ Depois de ter as IDs de tarefa, faça o seguinte para limpar os arquivos e dados
       No sistema de arquivos GDS:
 
       1. Procure arquivos com as seguintes cadeias de caracteres de ID de sessão como suas extensões:
+
       * `_wfattach<task_id>`
       * `_wftask<fd_id>`
       * `_wftaskformid<fd_id>`
@@ -174,6 +174,7 @@ Depois de ter as IDs de tarefa, faça o seguinte para limpar os arquivos e dados
       `<file_name_guid>.session<session_id_string>`
 
       1. Exclua todos os arquivos marcadores e outros arquivos com o nome exato de arquivo como `<file_name_guid>` do sistema de arquivos.
+
    1. **GDS no banco de dados**
 
       Execute os seguintes comandos para cada ID de sessão:
@@ -183,9 +184,6 @@ Depois de ter as IDs de tarefa, faça o seguinte para limpar os arquivos e dados
       delete from tb_dm_session_reference where sessionid=<session_id>
       delete from tb_dm_deletion where sessionid=<session_id>
       ```
-
-
-
 
 1. Execute os seguintes comandos para excluir dados de IDs de tarefas do banco de dados do servidor do AEM Forms:
 

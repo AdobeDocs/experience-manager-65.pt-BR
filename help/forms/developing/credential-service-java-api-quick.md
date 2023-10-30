@@ -1,7 +1,6 @@
 ---
 title: QuickStart(SOAP) da API Java do Serviço de Credenciais
-seo-title: Credential Service Java API QuickStart(SOAP)
-description: QuickStart(SOAP) da API Java do Serviço de Credenciais
+description: Importe e exclua credenciais no AEM Forms usando o Java API Quick Start (SOAP).
 uuid: a00eabfa-3a52-41dd-bcba-c60d00394384
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ topic-tags: develop
 discoiquuid: b624e255-ae71-4d9c-8554-d48f3e77b799
 role: Developer
 exl-id: 0ea00ef5-9923-4c03-a724-32f9ebdc650f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---

@@ -1,8 +1,6 @@
 ---
 title: Personalização de modelos para componentes do portal de formulários
-seo-title: Customizing templates for forms portal components
-description: Exibir metadados personalizados na listagem de formulários
-seo-description: Display custom metadata in form listing
+description: A interface do usuário do AEM Forms permite que os usuários adicionem metadados a formulários. Os metadados personalizados melhoram a experiência do usuário na listagem de formulários e na pesquisa por sua organização.
 uuid: 212109ca-85c8-4915-82e5-a18a0443be1b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +9,9 @@ discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1243'
 ht-degree: 0%
 
 ---
@@ -45,6 +43,7 @@ Execute as etapas a seguir para criar um modelo personalizado para vários compo
 
       * Seção Rascunhos: /libs/fd/fp/draftsTemplate
       * Seção de envios: /libs/fd/fp/submissionsTemplate
+
    * Componente do link: /libs/fd/fp/linkTemplate
 
    Adicione um título que você deseja exibir ao selecionar modelos de layout.
@@ -91,7 +90,7 @@ Para incluir uma entrada repetível, configure o valor do atributo **dados repet
 
 *No exemplo discutido, dois elementos Div estão presentes na parte superior do modelo personalizado. O primeiro, com a classe CSS &quot;__FP_boxes-container&quot;, funciona como um elemento de contêiner para os formulários listados. O segundo, com a classe CSS &quot;__FP_boxes&quot;, é um modelo para as entidades básicas, neste caso um Formulário. A variável **dados repetíveis**o atributo presente no elemento Div tem o valor **true**.*
 
-Cada espaço reservado tem um conjunto exclusivo de metadados OOTB. Para exibir metadados personalizados em um local específico no formulário, adicione o **propriedade ${metadata_prop}** no lugar.
+Cada espaço reservado tem um conjunto exclusivo de metadados OOTB. Para exibir metadados personalizados em um local específico no formulário, adicione o **${metadata_prop} propriedade** no lugar.
 
 *No exemplo, a propriedade de metadados é usada em várias instâncias. Por exemplo, é usado em **descrição**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**, e **caminho**do modo prescrito.*
 
@@ -149,7 +148,7 @@ Por exemplo, para o cabeçalho &quot;Título&quot; na exibição de grade, o val
 * **Hoje**: Data de criação do rascunho ou envio em DD:MM:formato AAAA.
 * **TimeNow**: Hora de criação do rascunho ou envio em HH:MM:SS formato de 24 horas
 
-*Nota:*
+*Observação:*
 
 1. Para a opção de exclusão na seção Rascunhos, no componente Rascunhos e envios, nomeie a classe CSS &quot;__FP_deleteDraft&quot;. Além disso, inclua o atributo &quot;draftID&quot; com o valor **${draftID}**, que é a id de rascunho do rascunho correspondente.
 
