@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
 exl-id: 187f3cde-a0db-4c02-9e8b-08272987a67d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 245d501d4124d9aaa3f2b12bdb06a5bdd1661e8c
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,10 @@ Consulte [Abrir o Analytics e o Recommendations em uma página](/help/sites-auth
 ## Período do relatório
 
 Os relatórios mostram dados de um período de tempo que você controla. Quando você ajusta o período do relatório, os relatórios são atualizados automaticamente com os dados desse período. As dicas visuais indicam o tempo em que as versões da página foram alteradas, para que você possa comparar o desempenho de cada versão.
+
+>[!NOTE]
+>
+>A linha do tempo do painel Content Insight está em `GMT`.
 
 Você também pode especificar a granularidade dos dados reportados, por exemplo, pode ver dados diários, semanais, mensais ou anuais.
 
