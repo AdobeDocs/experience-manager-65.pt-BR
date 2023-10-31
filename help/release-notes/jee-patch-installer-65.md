@@ -57,11 +57,11 @@ Navegue até o diretório apropriado e, em um prompt de comando, digite `./aem65
 
    * Ou desmarque a opção **Iniciar o Gerenciador de Configurações** antes de clicar em **[!UICONTROL Concluído]**. Antes de executar **Gerenciador de configurações** usar **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, navegue até *`<AEMForms_Install_Dir>\configurationManager\bin`* direcionar e substituir [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) e [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) arquivos.
 
-   >>
-   [!NOTE]
-   >>
-   Usar **ConfigurationManager.bat** ajuda a evitar a atualização manual do nome de arquivos .lax.
+   
+   >[!NOTE]
    >
+   >Usar **ConfigurationManager.bat** ajuda a evitar a atualização manual do nome de arquivos .lax.
+   
 
 1. **[Somente para Unix]:**
 
