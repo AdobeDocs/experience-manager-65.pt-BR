@@ -2,10 +2,10 @@
 title: Trabalhos assíncronos
 description: O Adobe Experience Manager otimiza o desempenho ao concluir de modo assíncrono algumas tarefas que consomem muitos recursos.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: cc63291c32f7a234398ebe8bf67ab53aaf8fa90f
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 96%
+source-wordcount: '800'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,6 @@ Essas operações incluem:
 * Movimentação de muitos ativos ou ativos com muitas referências
 * Exportação/importação de metadados de ativos em massa
 * Busca de ativos acima do limite definido a partir de uma implantação remota do Experience Manager
-* Mover páginas
 * Implantação de Live Copy
 
 Você pode visualizar o status de trabalhos assíncronos no painel **[!UICONTROL Status de trabalhos assíncronos]** em **Navegação global** -> **Ferramentas** -> **Operações** -> **Trabalhos**.
@@ -113,19 +112,6 @@ Se o número de ativos/pastas ou referências que serão movidos exceder o limit
 1. Na caixa **[!UICONTROL Limite de ativos/referências]**, especifique o limite de ativos/pastas ou referências para o processamento assíncrono de operações de movimentação.
 
    ![Limite de movimentação do ativo](assets/async-move-threshold.png)
-
-1. Marque a opção **Habilitar notificação por email** para receber notificações por email sobre o status do trabalho. por exemplo, sucesso, falha.
-1. Salve as alterações.
-
-### Configurar operações assíncronas de movimentação de página {#configuring-asynchronous-page-move-operations}
-
-Se o número de referências às páginas que serão movidas exceder o número limite, a operação de movimentação será executada de modo assíncrono.
-
-1. Na Navegação global, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
-1. No console da Web, abra a **[!UICONTROL Configuração do processamento assíncrono da operação de movimentação de página.]**
-1. No campo **[!UICONTROL Limite de referências]**, especifique o número de referências para o processamento assíncrono de operações de movimentação de página.
-
-   ![Limite da movimentação da página](assets/async-page-move.png)
 
 1. Marque a opção **Habilitar notificação por email** para receber notificações por email sobre o status do trabalho. por exemplo, sucesso, falha.
 1. Salve as alterações.
