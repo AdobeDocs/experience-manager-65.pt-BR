@@ -2,10 +2,10 @@
 title: Configurar regras de tradução
 description: Saiba como definir regras de tradução para identificar o conteúdo a ser traduzido.
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
 workflow-type: tm+mt
 source-wordcount: '871'
-ht-degree: 92%
+ht-degree: 83%
 
 ---
 
@@ -15,12 +15,12 @@ Saiba como definir regras de tradução para identificar o conteúdo a ser tradu
 
 ## A história até agora {#story-so-far}
 
-No documento anterior da jornada de tradução do AEM Headless, [Configurar o conector de tradução](configure-connector.md), você aprendeu como instalar e configurar seu conector de tradução. Agora você deve:
+No documento anterior da jornada de tradução AEM headless, [Configurar integração de tradução](configure-connector.md) você aprendeu a instalar e configurar sua integração de tradução e agora deve:
 
 * Compreender os parâmetros fundamentais da estrutura de integração de tradução no AEM.
 * Ser capaz de configurar sua própria conexão com o serviço de tradução.
 
-Agora que seu conector está configurado, este artigo o conduzirá até a próxima etapa de identificação do conteúdo que deve ser traduzido.
+Agora que sua integração está configurada, este artigo o orienta pela próxima etapa de identificação do conteúdo que deve ser traduzido.
 
 ## Objetivo {#objective}
 
@@ -92,7 +92,7 @@ Agora que você concluiu esta parte da jornada de tradução headless, você dev
 * Entenda o que as regras de tradução fazem.
 * Ser capaz de definir suas próprias regras de tradução.
 
-Use esse conhecimento como base e continue sua jornada de tradução headless do AEM revisando o documento [Traduzir conteúdo](translate-content.md), onde você aprenderá como o conector e as regras funcionam juntos para traduzir conteúdo headless.
+Desenvolva esse conhecimento e continue sua jornada de tradução AEM headless revisando o documento a seguir [Traduzir conteúdo](translate-content.md) onde você aprenderá como sua integração e regras funcionam juntas para traduzir conteúdo headless.
 
 ## Recursos adicionais {#additional-resources}
 

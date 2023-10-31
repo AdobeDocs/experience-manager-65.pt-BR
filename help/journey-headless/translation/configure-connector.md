@@ -1,15 +1,15 @@
 ---
-title: Configurar o conector de tradução
+title: Configurar a integração da tradução
 description: Saiba como conectar o AEM a um serviço de tradução.
 exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
 workflow-type: tm+mt
 source-wordcount: '1164'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
-# Configurar o conector de tradução {#configure-connector}
+# Configurar a integração da tradução {#configure-integration}
 
 Saiba como conectar o AEM a um serviço de tradução.
 
@@ -25,7 +25,7 @@ Este artigo se baseia nesses fundamentos para que você possa realizar a primeir
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender como configurar um conector do AEM para o serviço de tradução escolhido. Depois de ler esse documento, você deverá:
+Este documento ajuda você a entender como configurar uma integração do AEM com o serviço de tradução escolhido. Depois de ler esse documento, você deverá:
 
 * Compreender os parâmetros fundamentais da estrutura de integração de tradução no AEM.
 * Ser capaz de configurar sua própria conexão com o serviço de tradução.
