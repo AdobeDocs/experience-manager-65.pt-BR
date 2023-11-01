@@ -13,9 +13,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Image Presets
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '3839'
+source-wordcount: '3837'
 ht-degree: 8%
 
 ---
@@ -206,7 +206,6 @@ O dimensionamento de miniatura é definido no seguinte formato: **[!UICONTROL la
 >* Os tamanhos de miniatura de vídeos são configurados no **[!UICONTROL Miniaturas de FFmpeg]** etapa, na guia **[!UICONTROL Processo]** em **[!UICONTROL Argumentos]**.
 >
 
-
 **Para configurar o tamanho da miniatura da imagem:**
 
 1. Toque **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]** > **[!UICONTROL Ativo de atualização DAM]** > **[!UICONTROL Editar]**.
@@ -286,7 +285,7 @@ Deixá-los em branco informa ao Experience Manager que essa predefinição de im
 
 >[!NOTE]
 >
->Para ver as **[!UICONTROL URL]** e **[!UICONTROL RESS]** ao aplicar uma predefinição de imagem a um ativo, o ativo deve ser publicado.
+>O ativo deve ser publicado para ver os botões **[!UICONTROL URL]** e **[!UICONTROL RESS]** ao aplicar uma predefinição de imagem a um ativo.
 >
 >![chlimage_1-79](assets/chlimage_1-498.png)
 >
@@ -334,7 +333,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
      <strong>Quantização de cor do GIF</strong> opções:
     </div>
     <ul>
-     <li><strong>Tipo </strong>- Selecionar <strong>Adaptável</strong> (o padrão), <strong>Web</strong>ou <strong>Macintosh</strong>. Se você selecionar <strong>GIF com alfa</strong>, a opção Macintosh não está disponível.</li>
+     <li><strong>Tipo </strong>- Selecionar <strong>Adaptável</strong> (o padrão), <strong>Web</strong>ou <strong>Macintosh</strong>. Se você selecionar <strong>GIF com Alpha</strong>, a opção Macintosh não está disponível.</li>
      <li><strong>Pontilhamento</strong> - Selecionar <strong>Difuso</strong> ou <strong>Desligado</strong>.</li>
      <li><strong>Número de cores </strong>- Insira um número de 2 a 256.</li>
      <li><strong>Lista de cores</strong> - Insira uma lista separada por vírgulas. Por exemplo, para branco, cinza e preto, insira <code>000000,888888,ffffff</code>.</li>
@@ -347,7 +346,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
     </div>
     <ul>
      <li><strong>Compactação</strong> - Selecione um algoritmo de compactação. As opções de algoritmo para PDF são <strong>Nenhum</strong>, <strong>Zip</strong>, e <strong>Jpeg</strong>; para o TIFF, as opções são <strong>Nenhum</strong>, <strong>LZW</strong>, <strong>Jpeg</strong>, e <strong>Zip</strong>; e para TIFF com Alpha são <strong>Nenhum</strong>, <strong>LZW</strong>, e <strong>Zip</strong>.</li>
-    </ul> <p>Escolhendo <strong>PNG</strong>, <strong>PNG com Alfa,</strong> ou <strong>EPS</strong> O não fornece opções adicionais.</p> </td>
+    </ul> <p>Escolhendo <strong>PNG</strong>, <strong>PNG com Alpha,</strong> ou <strong>EPS</strong> O não fornece opções adicionais.</p> </td>
   </tr>
   <tr>
    <td><strong>Nitidez</strong></td>
@@ -453,43 +452,43 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 
 * [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html#image-serving-api) - Inverte cada componente de cor para obter um efeito de imagem negativo.
 
-   ```xml
-   &op_invert=1
-   ```
+  ```xml
+  &op_invert=1
+  ```
 
-   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
+  ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
 * [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html#image-serving-api) - Aplica um filtro de desfoque à imagem.
 
-   ```xml
-   &op_blur=7
-   ```
+  ```xml
+  &op_blur=7
+  ```
 
-   ![6_5_imagepreset-edit-blur](assets/6_5_imagepreset-edit-blur.png)
+  ![6_5_imagepreset-edit-blur](assets/6_5_imagepreset-edit-blur.png)
 
 * Comandos combinados - op_blur e op-invert
 
-   ```xml
-   &op_invert=1&op_blur=7
-   ```
+  ```xml
+  &op_invert=1&op_blur=7
+  ```
 
-   ![chlimage_1-80](assets/chlimage_1-501.png)
+  ![chlimage_1-80](assets/chlimage_1-501.png)
 
 * [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html#image-serving-api) - Diminui ou aumenta o brilho.
 
-   ```xml
-   &op_brightness=58
-   ```
+  ```xml
+  &op_brightness=58
+  ```
 
-   ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
+  ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
 * [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html#image-serving-api) - Ajusta a opacidade da imagem. Permite diminuir a opacidade do primeiro plano.
 
-   ```xml
-   opac=29
-   ```
+  ```xml
+  opac=29
+  ```
 
-   ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
+  ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
 ## Edição de predefinições da imagem {#modifying-image-presets}
 

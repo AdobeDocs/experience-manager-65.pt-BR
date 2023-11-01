@@ -10,9 +10,9 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '3855'
+source-wordcount: '3853'
 ht-degree: 0%
 
 ---
@@ -179,8 +179,6 @@ Na guia content, gerencie o conteúdo, como fragmentos de documentos e variávei
 
    * Um campo de variável numérica é padronizado como *0 (zero)*. No entanto, a variável é considerada não preenchida. Isso implica que a contagem de variáveis inclua todos os campos de variável numérica com valor *0 (zero)*.
 
-
-
 #### Ações e informações disponíveis na guia Criar conteúdo de correspondência {#actions-and-info-available-in-the-create-correspondence-content-tab}
 
 **Área de destino**
@@ -239,7 +237,7 @@ Você pode fazer alterações no layout e no conteúdo para garantir que a corre
 
    Para obter mais informações sobre as ações disponíveis para vários módulos na interface do usuário Criar correspondência, consulte [Ações e informações disponíveis na interface de usuário Criar correspondência](#actions-and-info-available-in-the-create-correspondence-content-tab).
 
-1. Para adicionar uma quebra de página à carta, toque em onde deseja inserir uma quebra de página e selecione Quebra de página antes ou Quebra de página depois ( ![pagebreakbefore after](assets/pagebreakbeforeafter.png)).
+1. Para adicionar uma quebra de página à correspondência, toque em onde deseja inserir uma quebra de página e selecione Quebra de página antes ou Quebra de página depois ( ![pagebreakbefore after](assets/pagebreakbeforeafter.png)).
 
    Um espaço reservado para quebra de página explícita é inserido na correspondência. Para ver como uma quebra de página explícita afeta a correspondência, consulte a pré-visualização de PDF nivelado.
 
@@ -293,7 +291,7 @@ Essas instâncias só podem ser salvas quando a carta está sendo exibida na ins
 
 Antes de publicar cartas ou salvar rascunhos na instância de publicação, execute as seguintes etapas na instância de criação e publicação para ativar o recurso Salvar como rascunho:
 
-A variável *cq:lastReplicationAction*, *cq:last replicated* e *cq:lastReplicatedBy* as propriedades não são transferidas para a instância de publicação por padrão. A fim de assegurar a *cq:lastReplicationAction*, *cq:last replicated* e *cq:lastReplicatedBy* propriedades para publicar instância, desative a variável [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] componente. Para desativar o componente:
+A variável *cq:lastReplicationAction*, *cq:last replicated* e *cq:lastReplicatedBy* as propriedades não são transferidas para a instância de publicação por padrão. Para transferir *cq:lastReplicationAction*, *cq:last replicated* e *cq:lastReplicatedBy* propriedades para publicar instância, desative a variável [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] componente. Para desativar o componente:
 
 1. Na instância do autor, abra o console Componentes do Adobe Experience Manager Web Console. O URL padrão é `http://author-server:port/system/console/components`
 

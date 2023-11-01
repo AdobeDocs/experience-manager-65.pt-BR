@@ -1,18 +1,14 @@
 ---
 title: Reestruturação do repositório de sites no AEM 6.5
-seo-title: Sites Repository Restructuring in AEM 6.5
-description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura de repositório no AEM 6.5 para Sites.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 for Sites.
-uuid: 6dc5f8bd-1680-40af-9b8f-26c1f4bc3304
+description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura do repositório no AEM 6.5 para Sites.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 3eccb2d5-c325-43a6-9c03-5f93f7e30712
 feature: Upgrading
 exl-id: b4531792-06dd-4545-9dbb-57224be20dc7
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1462'
+source-wordcount: '1460'
 ht-degree: 1%
 
 ---
@@ -36,7 +32,6 @@ Conforme descrito no pai [Reestruturação do repositório no AEM 6.5](/help/sit
 * [Scaffolding da página](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-scaffolding)
 * [Grade responsiva LESS](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#responsive-grid-less)
 * [Designs de modelos estáticos](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#static-template-designs)
-
 <!-- Search&Promote is end-of-life September 1, 2022 * [Adobe Search and Promote Integration Client Libraries](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#adobe-search-and-promote-integration-client-libraries) -->
 * [Bibliotecas de clientes de integração do Adobe Target](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#adobe-target-integration-client-libraries)
 * [Bibliotecas de clientes do WCM Foundation](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#wcm-foundation-client-libraries)
@@ -53,7 +48,7 @@ Conforme descrito no pai [Reestruturação do repositório no AEM 6.5](/help/sit
   </tr>
   <tr>
    <td><strong>Novos locais</strong></td>
-   <td><p><code>/apps/settings/wcm/segments</code> </p> <p><code>/conf/settings/settings/wcm/segments</code> </p> <p><code>/conf/&lt;tenant&gt;/settings/wcm/segments</code></p> </td>
+   <td><p><code>/apps/settings/wcm/segments</code><br /> </p> <p><code>/conf/settings/settings/wcm/segments</code><br /> </p> <p><code>/conf/&lt;tenant&gt;/settings/wcm/segments</code></p> </td>
   </tr>
   <tr>
    <td><strong>Orientações em matéria de reestruturação</strong></td>

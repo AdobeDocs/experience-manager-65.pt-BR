@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 role: Developer
 exl-id: 419335b2-2aae-4e83-98ff-18e61b7efa9c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2904'
+source-wordcount: '2902'
 ht-degree: 0%
 
 ---
@@ -222,11 +222,9 @@ Manipule um formulário enviado usando a API do Forms (Java):
       * Um valor de string que especifica a `HTTP_USER_AGENT` valor do cabeçalho, por exemplo, . `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Esse valor de parâmetro é opcional.
       * A `RenderOptionsSpec` objeto que armazena opções de tempo de execução.
 
-      A variável `processFormSubmission` o método retorna um `FormsResult` objeto que contém os resultados do envio do formulário.
+     A variável `processFormSubmission` o método retorna um `FormsResult` objeto que contém os resultados do envio do formulário.
 
    * Determine se o serviço Forms terminou de processar os dados do formulário invocando o `FormsResult` do objeto `getAction` método. Se esse método retornar o valor `0`, os dados estão prontos para serem processados.
-
-
 
 1. Determine se o envio do formulário contém anexos de arquivo
 
@@ -247,12 +245,12 @@ Manipule um formulário enviado usando a API do Forms (Java):
       * Criar um `org.w3c.dom.DocumentBuilder` ao invocar o `org.w3c.dom.DocumentBuilderFactory` do objeto `newDocumentBuilder` método.
       * Criar um `org.w3c.dom.Document` ao invocar o `org.w3c.dom.DocumentBuilder` do objeto `parse` e transmitindo o `java.io.InputStream` objeto.
       * Recupere o valor de cada nó no documento XML. Uma maneira de realizar essa tarefa é criar um método personalizado que aceite dois parâmetros: o `org.w3c.dom.Document` e o nome do nó cujo valor você deseja recuperar. Esse método retorna um valor de string que representa o valor do nó. No exemplo de código que segue esse processo, esse método personalizado é chamado de `getNodeText`. O corpo desse método é mostrado.
+
    * Se o tipo de conteúdo de dados for `application/pdf`, crie uma lógica de aplicativo para salvar os dados de PDF enviados como um arquivo PDF.
 
       * Criar um `com.adobe.idp.Document` ao invocar o `FormsResult` do objeto `getOutputContent` método.
       * Criar um `java.io.File` usando seu construtor público. Certifique-se de especificar PDF como a extensão do nome do arquivo.
       * Preencha o arquivo PDF chamando o `com.adobe.idp.Document` do objeto `copyToFile` e transmitindo o `java.io.File` objeto.
-
 
 **Consulte também**
 
@@ -302,10 +300,9 @@ Manipule um formulário enviado usando a API do Forms (serviço da Web):
       * Um vazio `MyArrayOf_xsd_anyTypeHolder` objeto preenchido pelo método. Esse parâmetro é usado para armazenar anexos de arquivo enviados junto com o formulário.
       * Um vazio `FormsResultHolder` objeto que é preenchido pelo método com o formulário enviado.
 
-      A variável `processFormSubmission` O método preenche o `FormsResultHolder` com os resultados do envio do formulário.
+     A variável `processFormSubmission` O método preenche o `FormsResultHolder` com os resultados do envio do formulário.
 
    * Determine se o serviço Forms terminou de processar os dados do formulário invocando o `FormsResult` do objeto `getAction` método. Se esse método retornar o valor `0`, os dados do formulário estão prontos para serem processados. Você pode obter um `FormsResult` obtendo o valor do `FormsResultHolder` do objeto `value` membro de dados.
-
 
 1. Determine se o envio do formulário contém anexos de arquivo
 
@@ -322,6 +319,7 @@ Manipule um formulário enviado usando a API do Forms (serviço da Web):
       * Criar um `org.w3c.dom.DocumentBuilder` ao invocar o `org.w3c.dom.DocumentBuilderFactory` do objeto `newDocumentBuilder` método.
       * Criar um `org.w3c.dom.Document` ao invocar o `org.w3c.dom.DocumentBuilder` do objeto `parse` e transmitindo o `java.io.InputStream` objeto.
       * Recupere o valor de cada nó no documento XML. Uma maneira de realizar essa tarefa é criar um método personalizado que aceite dois parâmetros: o `org.w3c.dom.Document` e o nome do nó cujo valor você deseja recuperar. Esse método retorna um valor de string que representa o valor do nó. No exemplo de código que segue esse processo, esse método personalizado é chamado de `getNodeText`. O corpo desse método é mostrado.
+
    * Se o tipo de conteúdo de dados for `application/pdf`, crie uma lógica de aplicativo para salvar os dados de PDF enviados como um arquivo PDF.
 
       * Criar um `BLOB` ao invocar o `FormsResult` do objeto `getOutputContent` método.
@@ -329,7 +327,6 @@ Manipule um formulário enviado usando a API do Forms (serviço da Web):
       * Criar um `java.io.File` usando seu construtor público. Certifique-se de especificar PDF como a extensão do nome do arquivo.
       * Criar um `java.io.FileOutputStream` usando seu construtor e transmitindo o `java.io.File` objeto.
       * Preencha o arquivo PDF chamando o `java.io.FileOutputStream` do objeto `write` e transmitindo a matriz de bytes.
-
 
 **Consulte também**
 

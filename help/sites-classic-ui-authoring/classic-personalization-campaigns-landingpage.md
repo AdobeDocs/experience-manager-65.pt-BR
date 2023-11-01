@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '3333'
+source-wordcount: '3329'
 ht-degree: 1%
 
 ---
@@ -355,7 +355,7 @@ Antes de importar o design da Landing page, é necessário criar uma página de 
 
 >[!NOTE]
 >
->Por padrão, uma Página do importador só pode ser criada em campanhas, mas você também pode sobrepor esse template para criar uma landing page em `/content/mysite`.
+>Por padrão, uma página de Importador só pode ser criada em campanhas, mas você também pode sobrepor esse template para criar uma landing page em `/content/mysite`.
 
 Para criar uma nova landing page:
 

@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: 6fa3679429527e026313b22d953267503598d1a9
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '844'
 ht-degree: 2%
 
 ---
@@ -40,12 +40,11 @@ A variável [Console da Web](/help/sites-deploying/configuring-osgi.md) fornece 
 
 >[!NOTE]
 >
->O Manipulador de autenticação SAML 2.0 é desativado por padrão. Você deve definir pelo menos uma das seguintes propriedades para habilitar o manipulador:
+>O Manipulador de autenticação SAML 2.0 é desativado por padrão. Você deve definir pelo menos uma das seguintes propriedades para ativar o manipulador:
 >
 >* O URL POST do provedor de identidade ou URL do IDP.
 >* A ID da entidade do provedor de serviços.
 >
-
 
 >[!NOTE]
 >
@@ -133,7 +132,7 @@ As asserções SAML são assinadas e podem, opcionalmente, ser criptografadas. P
 
 ## Configurar um agente de log para SAML {#configure-a-logger-for-saml}
 
-Você pode configurar um Logger para depurar quaisquer problemas que possam surgir da configuração incorreta do SAML. Você pode fazer isso ao:
+Você pode configurar um Logger para depurar quaisquer problemas que possam surgir ao configurar incorretamente o SAML. Você pode fazer isso ao:
 
 1. Acessando o console da Web, em *http://localhost:4502/system/console/configMgr*
 1. Procure e clique na entrada chamada **Configuração do logger de log do Apache Sling**

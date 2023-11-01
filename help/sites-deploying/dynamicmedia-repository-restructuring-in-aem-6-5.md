@@ -1,16 +1,14 @@
 ---
 title: Restruturação do repositório do Dynamic Media no Adobe Experience Manager 6.5
 description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura de repositório no Experience Manager 6.5 para Dynamic Media.
-uuid: e26d61a4-47b6-493a-9ba2-4c58b200ddd9
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
 feature: Upgrading
 exl-id: 4e736924-74ea-431a-be19-1c4ff022f464
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '409'
 ht-degree: 4%
 
 ---

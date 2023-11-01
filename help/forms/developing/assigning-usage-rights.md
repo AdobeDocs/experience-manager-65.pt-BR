@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
 role: Developer
 exl-id: 6af148eb-427a-4b54-9c5f-8750736882d8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '3926'
+source-wordcount: '3918'
 ht-degree: 0%
 
 ---
@@ -128,11 +128,13 @@ Aplique direitos de uso a um documento PDF usando a API de extensões do Acrobat
 
       * A variável `UsageRights` objeto que contém os direitos de uso a serem aplicados ao documento.
       * Um valor de string que especifica uma mensagem que um usuário vê quando o documento PDF com direitos ativados é aberto no Adobe Reader 7.x. Esta mensagem não é exibida no Adobe Reader 8.0.
+
    * Aplique direitos de uso ao documento PDF invocando o `ReaderExtensionsServiceClient` do objeto `applyUsageRights` e transmitindo os seguintes valores:
 
       * A variável `com.adobe.idp.Document` objeto que contém o documento PDF ao qual os direitos de uso são aplicados.
       * Um valor de string que especifica o alias da credencial que permite aplicar direitos de uso.
       * Um valor de string que especifica o valor de senha correspondente. (Atualmente, esse parâmetro é ignorado. Você pode passar `null`.)
+
    * A variável `ReaderExtensionsOptionSpec` objeto que contém opções de tempo de execução.
 
    A variável `applyUsageRights` o método retorna um `com.adobe.idp.Document` objeto que contém o documento PDF habilitado para direitos.
@@ -200,6 +202,7 @@ Aplique direitos de uso a um documento PDF usando a API de extensões do Acrobat
       * A variável `BLOB` objeto que contém o documento PDF ao qual os direitos de uso são aplicados.
       * Um valor de string que especifica o alias da credencial que permite aplicar direitos de uso.
       * Um valor de string que especifica o valor de senha correspondente. (Atualmente, esse parâmetro é ignorado. Você pode passar `null`.)
+
    * A variável `ReaderExtensionsOptionSpec` objeto que contém opções de tempo de execução.
 
    A variável `applyUsageRights` o método retorna um `BLOB` objeto que contém o documento PDF habilitado para direitos.
@@ -221,7 +224,7 @@ Aplique direitos de uso a um documento PDF usando a API de extensões do Acrobat
 
 ## Remoção de direitos de uso de documentos do PDF {#removing-usage-rights-from-pdf-documents}
 
-Você pode remover direitos de uso de um documento habilitado para direitos. A remoção de direitos de uso de um documento de PDF habilitado para direitos também é necessária para executar outras operações do AEM Forms nele. Por exemplo, você deve assinar digitalmente (ou certificar) um documento PDF antes de definir os direitos de uso. Portanto, se você quiser executar operações em um documento habilitado para direitos, remova os direitos de uso do documento PDF, execute as outras operações, como assinar digitalmente o documento e reaplique os direitos de uso ao documento.
+Você pode remover direitos de uso de um documento habilitado para direitos. A remoção de direitos de uso de um documento de PDF habilitado para direitos também é necessária para executar outras operações do AEM Forms. Por exemplo, você deve assinar digitalmente (ou certificar) um documento PDF antes de definir os direitos de uso. Portanto, se você quiser executar operações em um documento habilitado para direitos, remova os direitos de uso do documento PDF, execute as outras operações, como assinar digitalmente o documento e reaplique os direitos de uso ao documento.
 
 >[!NOTE]
 >
@@ -247,7 +250,7 @@ Antes de executar programaticamente uma operação de serviço de extensões da 
 
 **Recuperar um documento PDF habilitado para direitos**
 
-Recupere um documento PDF habilitado para direitos para remover os direitos de uso.
+Recupere um documento PDF habilitado para direitos para remover direitos de uso.
 
 **Remover direitos de uso do documento PDF**
 

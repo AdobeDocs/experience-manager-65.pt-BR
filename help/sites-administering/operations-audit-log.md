@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
 exl-id: 1e05faf5-619a-4ea3-acbf-2fd37c71e6d2
 feature: Operations
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Cada uma pode ser configurada criando regras no console da Web do AEM. Após a c
 
 ## Configurar a limpeza do log de auditoria da página {#configure-page-audit-log-purging}
 
-Siga estas etapas para configurar a Limpeza de Log de Auditoria:
+Siga estas etapas para configurar a Expurgação de Log de Auditoria:
 
 1. Vá para o Administrador do console da Web apontando seu navegador para `http://localhost:4502/system/console/configMgr/`
 

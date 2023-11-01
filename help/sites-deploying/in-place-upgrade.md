@@ -4,9 +4,9 @@ description: Saiba como executar uma atualização no local para o AEM 6.5.
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1242'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,7 @@ Pule esta seção se estiver atualizando do 6.3. Embora os perfis do crx2oak for
 
 **Os pontos de verificação não serão copiados porque nenhum armazenamento de dados externo foi especificado. Isso resultará na reindexação completa do repositório na primeira inicialização. Use —skip-checkpoints para forçar a migração ou consulte https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration para obter mais informações.**
 
-Por algum motivo, o processo de migração precisa acessar binários no armazenamento de dados e não pode encontrá-los. Para especificar a configuração do armazenamento de dados, inclua os seguintes sinalizadores no `<<ADDITIONAL_FLAGS>>` parte do comando de migração:
+Por algum motivo, o processo de migração precisa acessar binários no armazenamento de dados e não pode encontrá-los. Para especificar a configuração do armazenamento de dados, inclua os seguintes sinalizadores na `<<ADDITIONAL_FLAGS>>` parte do comando de migração:
 
 **Para armazenamentos de dados S3:**
 

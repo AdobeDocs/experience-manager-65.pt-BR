@@ -5,9 +5,9 @@ role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: a07765f95f01f05a30dce14138f75e7edbe94ae2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1740'
+source-wordcount: '1727'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Um usuário com acesso de administrador no [!DNL Adobe Experience Manager] confi
 
 ## Configurar assinaturas de evento {#event-subscriptions}
 
-Assinaturas de eventos são usadas para notificar o AEM sobre eventos que ocorrem em [!DNL Adobe Workfront]. Há três [!DNL Workfront for Experience Manager enhanced connector] os recursos que precisam de assinaturas de evento para funcionar são:
+Assinaturas de eventos são usadas para notificar o AEM sobre eventos que ocorrem em [!DNL Adobe Workfront]. Há três [!DNL Workfront for Experience Manager enhanced connector] recursos que precisam de assinaturas de evento para funcionar:
 
 * Criação automática de pastas vinculadas ao projeto.
 * Sincronização de alterações nos valores de formulário personalizado do documento do Workfront com os metadados de ativos AEM.
@@ -62,7 +62,7 @@ Para se inscrever nos eventos, siga estas etapas:
 1. Estrutura de pasta vinculada: insira valores separados por vírgula. Cada valor deve ser `DE:<some-project-custom-form-field>`, Portfolio, Programa, Ano, Nome ou algum &quot;Valor de string literal&quot; (este último com aspas). No momento, está definido como Portfolio, Program, Year, DE:Project Type, Name.
 1. Criar título de pasta vinculado no Workfront usando a caixa de seleção de nomes de estrutura de pastas deve ser marcada se o título da pasta no Workfront deve incluir todas as pastas na estrutura. Caso contrário, será o título da última pasta.
 1. Sub-folders multifield permite especificar uma lista de pastas que devem ser criadas como uma pasta filho da pasta vinculada.
-1. Status do projeto: selecione o status para o qual o projeto deve ser definido para criar a pasta vinculada.
+1. Status do projeto: selecione o status do projeto para criar a pasta vinculada.
 1. Criar uma pasta vinculada em projetos com portfólio: lista de Portfolio aos quais o projeto deve pertencer para criar a pasta vinculada. Deixe essa lista vazia para criar a pasta vinculada para todos os portfólios de projetos.
 1. Criar uma pasta vinculada em projetos com campo de formulário personalizado: o campo de formulário personalizado e seu valor correspondente que o projeto deve ter para criar a pasta vinculada. Essa configuração será ignorada se permanecer vazia. Selecionar `CUSTOM FORMS: Create DAM Linked Folder` para o campo e a entrada `Yes` para o valor.
 1. Clique em Habilitar criação automática de pastas vinculadas. Volte para a guia Inscrições em eventos e você verá que agora há um evento de criação.

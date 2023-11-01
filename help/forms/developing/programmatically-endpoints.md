@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '10805'
+source-wordcount: '10801'
 ht-degree: 1%
 
 ---
@@ -951,8 +951,8 @@ Adicione um endpoint TaskManager usando a API Java:
 
       * Um valor de string que especifica o valor do identificador da categoria
       * Um valor de string que especifica a descrição da categoria
-   * Crie a categoria chamando o `EndpointRegistryClient` do objeto `createEndpointCategory` e transmitindo o `CreateEndpointCategoryInfo` objeto. Este método retorna um valor de `EndpointCategory` objeto que representa a nova categoria.
 
+   * Crie a categoria chamando o `EndpointRegistryClient` do objeto `createEndpointCategory` e transmitindo o `CreateEndpointCategoryInfo` objeto. Este método retorna um valor de `EndpointCategory` objeto que representa a nova categoria.
 
 1. Defina os atributos do ponto de extremidade do TaskManager.
 
@@ -1071,8 +1071,8 @@ Modifique um endpoint usando a API Java:
 
       * Um valor de string que especifica o nome do valor de configuração. Por exemplo, para definir a variável `url` valor de configuração, especifique `url`.
       * Um valor de string que especifica o valor do valor de configuração. Para definir um valor para a variável `url` valor de configuração, especifique o local da pasta monitorada.
-   * Chame o `EndpointRegistryClient` do objeto `modifyEndpoint` e transmita o `ModifyEndpointInfo` objeto.
 
+   * Chame o `EndpointRegistryClient` do objeto `modifyEndpoint` e transmita o `ModifyEndpointInfo` objeto.
 
 **Consulte também**
 

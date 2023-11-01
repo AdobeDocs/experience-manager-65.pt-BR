@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1489'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Depois de identificar como os formulários AEM são usados, determine quais arqu
 
 >[!NOTE]
 >
->Como em qualquer outro aspecto da implementação de formulários AEM, sua estratégia de backup e recuperação deve ser desenvolvida e testada em um ambiente de desenvolvimento ou de preparo antes de ser usada na produção, a fim de garantir que toda a solução funcione como esperado sem perda de dados.
+>Como em qualquer outro aspecto da implementação de formulários AEM, sua estratégia de backup e recuperação deve ser desenvolvida e testada em um ambiente de desenvolvimento ou de preparo antes de ser usada na produção, para garantir que toda a solução funcione como esperado sem perda de dados.
 
 O Adobe Experience Manager (AEM) é parte integrante das formas AEM. Portanto, é necessário fazer backup do AEM também em sincronia com o backup de formulários AEM, pois a Solução de gerenciamento de correspondência e os serviços, como o gerenciador de formulários, baseiam-se em dados armazenados na parte do AEM dos formulários.Para evitar a perda de dados, o backup dos dados específicos dos formulários deve ser feito de forma a garantir que o GDS e o (repositório) estejam correlacionados com as referências do banco de dados.O banco de dados, o GDS, o AEM AEM AEM AEM e os diretórios Raiz de armazenamento de conteúdo devem ser restaurados para um computador com o mesmo nome DNS do original.
 

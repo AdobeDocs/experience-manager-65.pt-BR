@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: 66d351e1-87f1-4006-bf8a-3cbbd33db9ed
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1792'
+source-wordcount: '1782'
 ht-degree: 0%
 
 ---
@@ -178,7 +178,7 @@ Um conjunto de pré-requisitos e recomendações está disponível se você esti
 **Pré-requisitos obrigatórios para implantações do MongoDB:**
 
 1. A arquitetura e o dimensionamento da implantação do MongoDB devem fazer parte da implementação do projeto com a ajuda da Adobe Consulting ou dos arquitetos do MongoDB familiarizados com o AEM;
-1. A experiência do MongoDB deve estar presente no parceiro ou na equipe do cliente, a fim de ter confiança na capacidade de sustentar e manter um ambiente MongoDB existente ou novo;
+1. A experiência do MongoDB deve estar presente no parceiro ou na equipe do cliente para ter confiança na capacidade de sustentar e manter um ambiente MongoDB existente ou novo;
 1. Você pode optar por implantar a versão comercial ou de código aberto do MongoDB (AEM suporta ambos), mas deve comprar um contrato de Manutenção e Suporte do MongoDB diretamente da MongoDB Inc;
 1. Em geral, as arquiteturas e infraestruturas do AEM e do MongoDB devem ser bem definidas e validadas por um Arquiteto do Adobe AEM;
 1. Você deve revisar o modelo de suporte para implantações de AEM que incluem MongoDB.

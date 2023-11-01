@@ -1,18 +1,14 @@
 ---
 title: Reestruturação do repositório para o AEM Communities no 6.4
-seo-title: Repository Restructuring for AEM Communities in 6.4
-description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura de repositório no AEM 6.4 for Communities.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for Communities.
-uuid: d161655f-4074-44a7-8d69-38e80934c58b
+description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura de repositório no AEM 6.4 para Comunidades.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 7383265b-0ed4-4ea7-b741-0a417d187bdd
 feature: Upgrading
 exl-id: 4d2bdd45-a29a-4936-b8da-f7e011d81e83
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1009'
 ht-degree: 3%
 
 ---
@@ -35,7 +31,7 @@ Conforme descrito no pai [Reestruturação do repositório no AEM 6.4](/help/sit
 
 * [Configurações de logon social do pinterest](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#pinterest-social-login-configurations)
 * [Configurações de pontuação](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#scoring-configurations)
-* [Configurações de logon social do twitter](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#twitter-social-login-configurations)
+* [Configurações de logon social do Twitter](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#twitter-social-login-configurations)
 * [Diversos](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#misc)
 
 ## Com atualização para 6.5 {#with-upgrade}
@@ -187,7 +183,7 @@ Conforme descrito no pai [Reestruturação do repositório no AEM 6.4](/help/sit
     <ol>
      <li>Migre as configurações existentes no local anterior para o novo local.
       <ol>
-       <li>Recriar manualmente novas configurações de logon social do Facebook por meio da interface de criação do AEM em <strong>Ferramentas &gt; Cloud Services &gt; Configuração de logon social do Facebook</strong>.<br /> ou <br /> </li>
+       <li>Recriar manualmente novas configurações de logon social do Facebook por meio da interface de criação do AEM em <strong>Ferramentas &gt; Cloud Service &gt; Configuração de logon social do Facebook</strong>.<br /> ou <br /> </li>
        <li>Copie quaisquer novas configurações de nuvem do Facebook do local anterior para o novo local apropriado, em <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
      <li>Atualize qualquer raiz do site do AEM Communities para fazer referência à nova Configuração de logon social do Facebook definindo o <code>[cq:Page]/jcr:content@cq:conf</code> para o caminho absoluto no Novo local.</li>
@@ -243,7 +239,7 @@ Conforme descrito no pai [Reestruturação do repositório no AEM 6.4](/help/sit
     <ol>
      <li>Migre as configurações existentes no local anterior para o novo local.
       <ol>
-       <li>Recriar manualmente novas configurações de logon social do Pinterest por meio da interface de criação do AEM em <strong>Ferramentas &gt; Cloud Services &gt; Configuração de logon social do Pinterest</strong>.<br /> ou</li>
+       <li>Recriar manualmente novas configurações de logon social do Pinterest por meio da interface de criação do AEM em <strong>Ferramentas &gt; Cloud Service &gt; Configuração de logon social do Pinterest</strong>.<br /> ou</li>
        <li>Copie quaisquer novas configurações de nuvem do Pinterest do local anterior para o novo local apropriado em <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
      <li>Atualize qualquer raiz do site do AEM Communities para fazer referência à nova Configuração de logon social do Pinterest por meio das configurações de <code>[cq:Page]/jcr:content@cq:conf</code> para o caminho absoluto no Novo local.</li>
@@ -290,7 +286,7 @@ Conforme descrito no pai [Reestruturação do repositório no AEM 6.4](/help/sit
  </tbody>
 </table>
 
-### Configurações de logon social do twitter {#twitter-social-login-configurations}
+### Configurações de logon social do Twitter {#twitter-social-login-configurations}
 
 <table>
  <tbody>
@@ -305,15 +301,15 @@ Conforme descrito no pai [Reestruturação do repositório no AEM 6.4](/help/sit
   </tr>
   <tr>
    <td><strong>Orientações em matéria de reestruturação</strong></td>
-   <td><p>Quaisquer novas Configurações de nuvem do Twitter devem ser migradas para o Novo local.</p>
+   <td><p>Quaisquer novas configurações da nuvem do Twitter devem ser migradas para o novo local.</p>
     <ol>
      <li>Migre as configurações existentes no local anterior para o novo local.
       <ol>
-       <li>Recriar manualmente novas configurações de logon social do Twitter por meio da interface de criação do AEM em <strong>Ferramentas &gt; Cloud Services &gt; Configuração de logon social do Twitter</strong>.<br /> ou <br /> </li>
+       <li>Recriar manualmente novas configurações de logon social do Twitter por meio da interface de criação do AEM em <strong>Ferramentas &gt; Cloud Service &gt; Configuração de logon social do Twitter</strong>.<br /> ou <br /> </li>
        <li>Copie quaisquer novas configurações de nuvem do Twitter do local anterior para o novo local apropriado, em <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
      <li>Atualize qualquer raiz do site do AEM Communities para fazer referência à nova Configuração de logon social do Twitter definindo o <code>[cq:Page]/jcr:content@cq:conf</code> para o caminho absoluto no Novo local.</li>
-     <li>Desassocie o Cloud Service Twitter Connect herdado de qualquer raiz de site AEM Communities atualizada para fazer referência ao novo local.</li>
+     <li>Desassocie o Cloud Service de conexão do Twitter herdado de qualquer raiz do site AEM Communities atualizada para fazer referência ao novo local.</li>
     </ol> </td>
   </tr>
   <tr>

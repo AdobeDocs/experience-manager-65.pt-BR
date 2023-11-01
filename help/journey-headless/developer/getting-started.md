@@ -2,10 +2,10 @@
 title: Introdução ao AEM Headless
 description: Nesta parte da Jornada do desenvolvedor headless do AEM, saiba mais sobre pré-requisitos do AEM headless.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '3042'
-ht-degree: 95%
+source-wordcount: '3038'
+ht-degree: 94%
 
 ---
 
@@ -87,7 +87,7 @@ Você aprenderá sobre essas APIs e como usá-las em uma parte posterior da jorn
 
 O AEM oferece suporte aos modelos headless completo e tradicional de pilha completa ou headful de um CMS. No entanto, o AEM oferece não apenas essas duas opções exclusivas, mas também a capacidade de oferecer suporte a modelos híbridos que combinam as vantagens de ambos, oferecendo flexibilidade exclusiva para seu projeto headless.
 
-Para garantir a compreensão dos conceitos headless, esta Jornada do desenvolvedor headless do AEM concentra-se no modelo headless puro para colocá-lo em funcionamento o mais rápido possível, sem codificação no AEM.
+Para garantir sua compreensão dos conceitos headless, esta Jornada do desenvolvedor headless do AEM se concentra no modelo headless puro para colocá-lo em funcionamento o mais rápido possível, sem codificação no AEM.
 
 No entanto, você deve estar ciente das possibilidades híbridas adicionais abertas a você depois de entender os recursos headless do AEM. Esses casos são descritos abaixo para sua percepção. No final da jornada, você será apresentado a esses conceitos com mais detalhes caso essa flexibilidade seja necessária para o seu projeto.
 
@@ -195,7 +195,7 @@ As pastas também podem ser restritas para permitir apenas determinados tipos de
 * Impede que os autores de conteúdo criem conteúdo que não pertence à pasta.
 * Otimiza o processo de criação de conteúdo filtrando os tipos de conteúdo permitidos na pasta durante a criação para mostrar apenas tipos válidos de conteúdo.
 
-Ao criar uma estrutura de conteúdo apropriada, torna-se mais fácil coordenar a criação de conteúdo headless em todos os canais para maximizar a reutilização do conteúdo. O aproveitamento do conteúdo em vários canais melhora muito a eficiência da produção de conteúdo e o gerenciamento de alterações.
+Ao criar uma estrutura de conteúdo apropriada, fica mais fácil coordenar a criação de conteúdo headless entre canais para maximizar a reutilização do conteúdo. O aproveitamento do conteúdo em vários canais melhora muito a eficiência da produção de conteúdo e o gerenciamento de alterações.
 
 ##### Estabeleça boas convenções de nomenclatura {#naming-conventions}
 

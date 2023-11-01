@@ -2,10 +2,10 @@
 title: Configurar regras de tradução
 description: Saiba como definir regras de tradução para identificar o conteúdo a ser traduzido.
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
-source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 83%
+source-wordcount: '869'
+ht-degree: 81%
 
 ---
 
@@ -68,7 +68,7 @@ Na interface da **Configuração de tradução**, há várias opções disponív
 1. O AEM salva a configuração.
 1. Você deve selecionar o contexto que acabou de criar e tocar ou clicar em **Editar**. Isso abre o **editor de regras de tradução** para configurar as propriedades.
    ![Editor de regras de tradução](assets/translation-rules-editor.png)
-1. Por padrão, todas as configurações são herdadas do caminho principal, neste caso: `/content/dam`. Desmarque a opção **Herdar de`/content/dam`** para adicionar novos campos à configuração.
+1. Por padrão, todas as configurações são herdadas do caminho principal, neste caso: `/content/dam`. Desmarque a opção **Herdar de`/content/dam`** para adicionar outros campos à configuração.
 1. Depois de desmarcar a opção, na seção **Geral** da lista, adicione os nomes das propriedades do(s) modelo(s) de fragmento de conteúdo que você [anteriormente identificou como campos que devem ser traduzidos.](getting-started.md#content-models)
    1. Insira o nome da propriedade no campo **Nova propriedade**.
    1. As opções **Traduzir** e **Herdar** são marcadas automaticamente.

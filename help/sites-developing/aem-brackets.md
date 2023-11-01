@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '936'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ Entre parênteses&#39; **Arquivo** escolha **Abrir pasta...** e escolha a opçã
 
 ### Configurações do projeto {#project-settings}
 
-Para sincronizar seu conteúdo de e para uma instância de desenvolvimento do AEM, é necessário definir as Configurações do projeto. Isso pode ser feito acessando o **AEM** e escolhendo **Configurações do projeto...**
+Para sincronizar seu conteúdo de e para uma instância de desenvolvimento AEM, é necessário definir as Configurações do projeto. Isso pode ser feito acessando o **AEM** e escolhendo **Configurações do projeto...**
 
 ![chlimage_1-55](assets/chlimage_1-55a.png)
 

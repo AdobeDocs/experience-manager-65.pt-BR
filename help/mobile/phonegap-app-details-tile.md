@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1248'
 ht-degree: 1%
 
 ---
@@ -86,7 +86,7 @@ Nesta seção, você define o URL do Servidor de atualização de conteúdo, a p
 
 #### Metadados da plataforma {#platform-metadata}
 
-Todas as plataformas definidas no config.xml do PhoneGap podem conter propriedades de plataforma personalizadas. Um desenvolvedor do AEM deve contribuir com a estrutura de conteúdo para capturar essas propriedades. Um exemplo fornecido de propriedades específicas da plataforma pode ser encontrado para o iOS.
+Todas as plataformas definidas no config.xml do PhoneGap podem conter propriedades de plataforma personalizadas. Um desenvolvedor de AEM deve contribuir com a estrutura de conteúdo para capturar essas propriedades. Um exemplo fornecido de propriedades específicas da plataforma pode ser encontrado para o iOS.
 
 Os metadados de todas as plataformas configuradas agora são exibidos ao mesmo tempo na guia Avançado do bloco Gerenciar aplicativo.
 

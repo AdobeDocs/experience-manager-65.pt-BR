@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '7850'
+source-wordcount: '7848'
 ht-degree: 0%
 
 ---
@@ -592,7 +592,7 @@ Este documento usa o termo *aplicativo nativo* para indicar o aplicativo usado p
 1. Abrir a caixa de diálogo Imprimir selecionando Arquivo > Imprimir
 1. Verificando se a caixa de diálogo Imprimir é exibida
 
-O AppMon usa APIs Win32 padrão para interagir com aplicativos de terceiros, a fim de transferir eventos de interface do usuário, como pressionamentos de tecla e cliques de mouse, o que é útil para controlar esses aplicativos para produzir arquivos PDF a partir deles.
+O AppMon usa APIs Win32 padrão para interagir com aplicativos de terceiros para transferir eventos da interface do usuário, como pressionamentos de tecla e cliques de mouse, o que é útil para controlar esses aplicativos para produzir arquivos PDF a partir deles.
 
 Devido a uma limitação com essas APIs Win32, o AppMon não pode despachar esses eventos de interface do usuário para alguns tipos específicos de janelas, como barras de menu flutuantes (encontradas em alguns aplicativos, como TextPad), e determinados tipos de caixas de diálogo cujo conteúdo não pode ser recuperado usando as APIs Win32.
 
@@ -982,7 +982,7 @@ Este exemplo especifica como o serviço Gerar PDF deve interagir com o Bloco de 
 * from Adobe Systems Incorporated.
 *-->
 
-<!-- This file automates printing of text files via notepad to Adobe PDF printer. In order to see the complete hierarchy Adobe recommends using the Microsoft Spy++ which details the properties of windows necessary to write scripts. In this sample there are total of eight steps-->
+<!-- This file automates printing of text files via notepad to Adobe PDF printer. To see the complete hierarchy Adobe recommends using the Microsoft Spy++ which details the properties of windows necessary to write scripts. In this sample there are total of eight steps-->
 
 <application name="Notepad" version="9.0" locale="en_US" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="scripts.xsd">
 

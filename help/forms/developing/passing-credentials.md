@@ -2,9 +2,9 @@
 title: Transmitir credenciais usando cabeçalhos de segurança WS
 description: Saiba como transmitir credenciais usando cabeçalhos de segurança WS
 exl-id: 519d57ad-81ab-4caf-ae25-4390ae2eee13
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,8 @@ Este documento abrange os seguintes tópicos:
 
 ## Requisitos {#requirements}
 
-Para aproveitar ao máximo esse documento, você precisa ter uma sólida compreensão do AEM Forms no software JEE.
+Para aproveitar ao máximo este documento, você precisa ter uma sólida compreensão do AEM Forms no software JEE.
 
 >[!MORELIKETHIS]
 >
 >* [Transmitindo credenciais usando cabeçalhos de Segurança WS](assets/passing-credentials-using-ws-security-headers.pdf)
-

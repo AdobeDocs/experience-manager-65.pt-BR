@@ -4,9 +4,9 @@ description: Instale, configure e personalize um pacote de demonstração do AEM
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '4626'
+source-wordcount: '4622'
 ht-degree: 3%
 
 ---
@@ -175,7 +175,7 @@ Esta seção contém detalhes sobre como configurar o SSL na instância do AEM p
 **Notas:**
 
 1. Navegue até https://&lt;aemserver>:&lt;port>/aem/inbox onde você pode concluir o processo explicado no link da documentação de referência acima.
-1. A variável `we-gov-forms.pkg.all-[version].zip` inclui um exemplo de chave SSL e certificado que pode ser acessado ao extrair o `we-gov-forms.pkg.all-[version].zip/ssl` pasta que faz parte do pacote.
+1. A variável `we-gov-forms.pkg.all-[version].zip` inclui um exemplo de chave SSL e certificado que pode ser acessado extraindo o `we-gov-forms.pkg.all-[version].zip/ssl` pasta que faz parte do pacote.
 
 1. Certificado SSL e detalhes da chave:
 
@@ -436,7 +436,7 @@ Os dados do AEM Forms Analytics estão disponíveis offline ou sem uma configura
 
 1. No mesmo menu, selecione &quot;Configuração de exibição&quot; e selecione as colunas que deseja exibir na seção &quot;Analytics&quot;.
 
-   ![Configurar colunas](assets/configure_columns.jpg)
+   ![Configuração de colunas](assets/configure_columns.jpg)
 
 1. Clique em &quot;Atualizar&quot; para disponibilizar as novas colunas.
 
@@ -548,7 +548,7 @@ Quando a configuração IMS estiver concluída, você poderá prosseguir para re
 
 1. Abra o navegador e navegue até o URL do sistema https://&lt;domain_name>:&lt;system_port>
 
-1. Clique em Adobe Experience Manager no canto superior esquerdo da tela > Ferramentas > Cloud Services > Configuração do Automated Forms Conversation.
+1. Clique em Adobe Experience Manager no canto superior esquerdo da tela > Ferramentas > Cloud Service > Configuração do Automated Forms Conversation.
 
 1. Selecione a pasta de configuração na qual você deseja colocar a configuração.
 
@@ -578,7 +578,7 @@ Quando a configuração IMS estiver concluída, poderemos continuar a criar a co
 
 1. Abra o navegador e navegue até o URL do sistema https://&lt;domain_name>:&lt;system_port>
 
-1. Clique em Adobe Experience Manager no canto superior esquerdo da tela > Ferramentas > Cloud Services > Configuração do Automated Forms Conversation.
+1. Clique em Adobe Experience Manager no canto superior esquerdo da tela > Ferramentas > Cloud Service > Configuração do Automated Forms Conversation.
 
 1. Selecione a pasta de configuração na qual você deseja colocar a configuração.
 

@@ -7,9 +7,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
-source-git-commit: 59e182c165f6fd4b822eaf0e34f6e4b3bb18eb14
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1682'
+source-wordcount: '1678'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Se não precisar de um fluxo de trabalho ou controle de versão para seus ativos
 
 ### Configurar integração com o Dynamic Media Classic Video {#configuring-integration-with-scene-video}
 
-1. Entrada **[!UICONTROL Cloud Services]**, navegue até o **[!UICONTROL Dynamic Media Classic]** e selecione **[!UICONTROL Editar]**.
+1. Entrada **[!UICONTROL Cloud Service]**, navegue até o **[!UICONTROL Dynamic Media Classic]** e selecione **[!UICONTROL Editar]**.
 1. Selecione o **[!UICONTROL Vídeo]** guia.
 
    >[!NOTE]
@@ -117,6 +117,7 @@ A matriz a seguir explica quando você deve usar qual componente:
 >[!NOTE]
 >
 >Pronto para uso, o componente de vídeo do Dynamic Media Classic usa o perfil de vídeo universal. Entretanto, é possível obter o reprodutor de vídeo baseado em HTML para uso pelo Experience Manager. No Dynamic Media Classic, copie o código incorporado do reprodutor de vídeo HTML5 pronto para uso e coloque-o na página Experience Manager.
+>
 
 ## Componente de vídeo do Experience Manager {#aem-video-component}
 
@@ -126,7 +127,7 @@ Mesmo que o uso do componente de Vídeo do Dynamic Media Classic seja recomendad
 
 A tabela a seguir fornece uma comparação de alto nível de recursos compatíveis entre o componente de Vídeo de base do Experience Manager e o componente de Vídeo do Dynamic Media Classic:
 
-|  | Vídeo do Experience Manager Foundation | Vídeo do Dynamic Media Classic |
+|   | Vídeo do Experience Manager Foundation | Vídeo do Dynamic Media Classic |
 |---|---|---|
 | Abordagem | HTML5 primeira abordagem. O Flash é usado somente para fallback não HTML 5. | Flash na maioria dos desktops. O HTML5 é usado para dispositivos móveis e tablets. |
 | Entrega | Progressivo | Streaming adaptável |
@@ -173,7 +174,7 @@ O componente de vídeo de base deve saber quais perfis de vídeo usar para criar
 
 >[!NOTE]
 >
->As alterações feitas no design exigem a ativação do design para entrarem em vigor na publicação.
+>As alterações feitas no design exigem a ativação do design para entrar em vigor na publicação.
 
 1. Abra a caixa de diálogo de design do componente de vídeo de base e altere para a **[!UICONTROL Perfis]** guia. Em seguida, exclua os perfis prontos para uso e adicione os novos perfis de vídeo do Dynamic Media Classic. A ordem da lista de perfis na caixa de diálogo de design também define a ordem do elemento de fontes de vídeo durante a renderização.
 1. Para navegadores não compatíveis com o HTML5, o componente de Vídeo permite configurar um fallback flash. Abra a caixa de diálogo de design dos componentes de vídeo e altere para a **[!UICONTROL Flash]** guia. Defina as configurações do flash player e atribua um perfil de fallback para o flash player.

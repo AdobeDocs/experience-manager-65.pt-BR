@@ -4,10 +4,10 @@ description: Este artigo apresenta os conceitos de um SPA e aborda o uso de um S
 topic-tags: spa
 content-type: reference
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1967'
-ht-degree: 70%
+source-wordcount: '1965'
+ht-degree: 71%
 
 ---
 
@@ -50,7 +50,7 @@ O passo a passo é baseado na funcionalidade padrão do AEM e no aplicativo de e
 
 ### O que é um SPA? {#what-is-a-spa}
 
-Um aplicativo de página única (SPA) difere de uma página convencional na medida em que é renderizado no lado do cliente e é principalmente orientado por JavaScript, dependendo de chamadas Ajax para carregar dados e atualizar dinamicamente a página. A maior parte ou todo o conteúdo é recuperado uma vez em um único carregamento de página, com os recursos adicionais sendo carregados de forma assíncrona conforme necessário, com base na interação do usuário com a página.
+Um aplicativo de página única (SPA) é diferente de uma página convencional, no sentido de que ele é renderizado no lado do cliente e orientado principalmente por Javascript, dependendo das chamadas Ajax para carregar dados e atualizar dinamicamente a página. A maior parte ou todo o conteúdo é recuperado uma vez em um único carregamento de página, com os recursos adicionais sendo carregados de forma assíncrona conforme necessário, com base na interação do usuário com a página.
 
 Isso reduz a necessidade de atualizações de página e apresenta uma experiência ao usuário que é contínua, rápida e se parece mais com uma experiência de aplicativo nativo.
 

@@ -11,9 +11,9 @@ docset: aem65
 feature: Carousel Banners
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
-source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '4730'
+source-wordcount: '4726'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ Reproduzir uma apresentação sobre [como os banners do carrossel são criados](
 
 >[!NOTE]
 >
->Os usuários não administrativos devem ser adicionados ao **[!UICONTROL dam-users]** para poder criar ou editar banners do carrossel. Se você tiver problemas para criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao **[!UICONTROL dam-users]** grupo.
+>Os usuários não administrativos devem ser adicionados ao **[!UICONTROL dam-users]** para criar ou editar banners do carrossel. Se você tiver problemas para criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao **[!UICONTROL dam-users]** grupo.
 
 ## Início rápido: banners do Carousel {#quick-start-carousel-banners}
 
@@ -90,8 +90,8 @@ Para começar a usar rapidamente os banners do carrossel:
    * [Adicione um banner de carrossel à página do site](#adding-a-carousel-banner-to-your-website-page) É possível adicionar o URL do banner do carrossel ou o código incorporado copiado na página do site.
 
       * [Integre o banner do carrossel a uma visualização rápida existente](#integrating-the-carousel-banner-with-an-existing-quickview). Se você usa um sistema de gerenciamento de conteúdo da Web de terceiros, é necessário integrar o novo banner do carrossel com a implementação do Quickview existente em seu site.
-   * [Adicione um banner de carrossel ao seu site no Experience Manager](/help/assets/adding-dynamic-media-assets-to-pages.md) Se você for um cliente do Experience Manager Sites, poderá adicionar o conjunto de carrossel diretamente à página no Experience Manager, usando o componente de Mídia interativa.
 
+   * [Adicione um banner de carrossel ao seu site no Experience Manager](/help/assets/adding-dynamic-media-assets-to-pages.md) Se você for um cliente do Experience Manager Sites, poderá adicionar o conjunto de carrossel diretamente à página no Experience Manager, usando o componente de Mídia interativa.
 
 Para editar Conjuntos de carrossel, consulte [edição de conjuntos de carrossel](#editing-carousel-sets). Além disso, é possível exibir e editar [Propriedades do conjunto de carrossel](manage-assets.md#editing-properties).
 
@@ -199,6 +199,7 @@ Para carregar banners de imagem, consulte [Fazer upload de ativos](/help/assets/
    * Próximo ao canto superior esquerdo da página, selecione **[!UICONTROL Adicionar slide]** ícone.
 
    * Próximo ao meio da página, selecione **[!UICONTROL Toque para abrir o Seletor de ativos]**.
+
    Selecione para selecionar os ativos que deseja incluir no Conjunto de carrosséis. Os ativos selecionados têm um ícone de marca de seleção sobre eles. Quando terminar, próximo ao canto superior direito da página, selecione **[!UICONTROL Selecionar]**.
 
    Com o Seletor de ativos, procure por ativos ao digitar uma palavra-chave e tocar ou clicar em **[!UICONTROL Retornar]**. Aplique filtros para refinar os resultados da pesquisa. Filtre por caminho, coleção, tipo de arquivo e tag. Selecione o filtro e, em seguida, selecione a variável **[!UICONTROL Filtro]** na barra de ferramentas. Altere a exibição ao tocar no ícone Exibir e selecionar **[!UICONTROL Exibição em coluna]**, **[!UICONTROL Exibição de cartão]** ou **[!UICONTROL Exibição em lista]**.
@@ -212,6 +213,7 @@ Para carregar banners de imagem, consulte [Fazer upload de ativos](/help/assets/
    * Para excluir uma imagem, selecione-a e, em seguida, **[!UICONTROL Excluir slide]** na barra de ferramentas.
 
    * Para aplicar uma predefinição, próximo ao canto superior direito da página, selecione a lista suspensa predefinição e, em seguida, selecione uma predefinição para aplicar simultaneamente ao conjunto.
+
    Para excluir um slide, selecione-o e, na barra de ferramentas, selecione **[!UICONTROL Excluir slide]**. Para mover um slide, selecione o ícone de reordenação, mantenha pressionada a tecla e mova-o para o local desejado.
 
 1. Depois de adicionar as imagens aos slides, é possível adicionar um ponto de acesso, um mapa de imagem ou ambos à imagem. Consulte [Adicionar pontos de acesso ou mapas de imagem a um banner de imagem](#adding-hotspots-or-image-maps-to-an-image-banner).
@@ -226,7 +228,6 @@ Para carregar banners de imagem, consulte [Fazer upload de ativos](/help/assets/
    >    * Estilo dos botões. Os usuários podem girar pelos banners tocando cada ponto ou número. É possível alterar o local em que os botões indicadores definidos são exibidos (e se são numéricos ou de um estilo pontilhado) e o tamanho deles.
    >    * Altere o estilo de destaque de um mapa de imagem ou do ícone usado para pontos de acesso.
    >    * Antes de editar uma predefinição do visualizador, escolha o estilo no qual deseja basear a predefinição. Se você não escolher um estilo, ao começar a editar a predefinição do visualizador, perderá todas as alterações se decidir alterá-la para uma predefinição diferente.
-
    >
    >Consulte [Considerações especiais para banners do carrossel](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-a-carousel-banner-viewer-preset) para obter instruções detalhadas e mais informações sobre o editor do visualizador.
 
@@ -257,9 +258,11 @@ Consulte [(Opcional) Visualizar banners do carrossel](#optional-previewing-carou
 >[!NOTE]
 >
 >Quando você adiciona pontos de acesso a uma imagem em um [Imagem interativa](/help/assets/interactive-images.md) Para um banner de carrossel, as informações do ponto de acesso são armazenadas no mesmo local de metadados. Esse local é relativo ao local da imagem, independentemente de ser uma Imagem interativa ou um banner de carrossel. Essa funcionalidade significa que você pode reutilizar facilmente a mesma imagem, juntamente com seus dados de ponto de acesso definidos, em qualquer visualizador.
+>
 No entanto, esteja ciente de que os banners do carrossel são compatíveis com mapas de imagem em imagens que também podem conter pontos de acesso; uma Imagem interativa não é compatível. Lembre-se dessa regra se você pretende criar uma Imagem interativa ou um banner de carrossel que use a mesma imagem. Considere a criação de Imagens interativas e banners do carrossel usando cópias separadas da mesma imagem.
 
 >[!NOTE]
+>
 Se você estiver editando imagens interativas com pontos de acesso e recortar a imagem, os pontos de acesso serão removidos.
 
 Consulte também [Adicionar mapas de imagem](/help/assets/image-maps.md).
@@ -292,11 +295,13 @@ Consulte também [Adicionar mapas de imagem](/help/assets/image-maps.md).
          * (Opcional) Se houver outras variáveis na Visualização rápida que você deve usar para identificar melhor um produto, selecione **[!UICONTROL Adicionar variável genérica]**. No campo de texto, especifique uma variável extra. Por exemplo, category=Mens é uma variável adicionada.
 
          * Consulte [Trabalhar com seletores](/help/assets/working-with-selectors.md) para obter mais informações.
+
    * Selecionar **[!UICONTROL Hiperlink]**.
 
       * Se você for um cliente do Experience Manager Sites, selecione o ícone Seletor de sites (pasta) para navegar até um URL.
-         >[!NOTE]
-         O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do Experience Manager Sites.
+        >[!NOTE]
+        >
+        O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do Experience Manager Sites.
 
       * Se você for um cliente independente, no campo de texto HREF, especifique o caminho completo do URL para uma página da Web vinculada.
 
@@ -311,9 +316,12 @@ Consulte [Fragmentos de experiência](/help/sites-authoring/experience-fragments
 
       * Especifique a largura e a altura do Fragmento de experiência conforme ele aparece no banner.
 
-         >[!NOTE]
-         As ferramentas de compartilhamento de redes sociais no banner do carrossel não são compatíveis quando você incorpora o visualizador em um Fragmento de experiência.
-         Para contornar esse problema, crie predefinições do visualizador que não tenham ferramentas de compartilhamento de redes sociais. Essas predefinições do visualizador permitem incorporá-lo com sucesso aos Fragmentos de experiência.
+        >[!NOTE]
+        >
+        As ferramentas de compartilhamento de redes sociais no banner do carrossel não são compatíveis quando você incorpora o visualizador em um Fragmento de experiência.
+        >
+        Para contornar esse problema, crie predefinições do visualizador que não tenham ferramentas de compartilhamento de redes sociais. Essas predefinições do visualizador permitem incorporá-lo com sucesso aos Fragmentos de experiência.
+
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
    Você também pode visualizar como o banner do carrossel é exibido. Consulte [(Opcional) Visualização de banners do carrossel](#optional-previewing-carousel-banners).
@@ -328,7 +336,8 @@ Consulte [Fragmentos de experiência](/help/sites-authoring/experience-fragments
 ## Editar conjuntos de carrossel {#editing-carousel-sets}
 
 >[!NOTE]
-Os usuários não administrativos devem ser adicionados ao **[!UICONTROL dam-users]** para poder criar ou editar banners do carrossel. Se você tiver problemas para criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao **[!UICONTROL dam-users]** grupo.
+>
+Os usuários não administrativos devem ser adicionados ao **[!UICONTROL dam-users]** para criar ou editar banners do carrossel. Se você tiver problemas para criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao **[!UICONTROL dam-users]** grupo.
 
 É possível executar várias tarefas de edição em Conjuntos de carrosséis, como as seguintes:
 
@@ -360,7 +369,10 @@ Os usuários não administrativos devem ser adicionados ao **[!UICONTROL dam-use
    * Para excluir um Conjunto de carrossel inteiro, navegue até o Conjunto de carrossel, selecione-o e, em seguida, **[!UICONTROL Excluir]**.
 
    >[!NOTE]
+   >
    Se você estiver editando imagens interativas com pontos de acesso e recortar a imagem, os pontos de acesso serão removidos.
+   >
+   >
 
 ## (Opcional) Visualizar banners do carrossel {#optional-previewing-carousel-banners}
 
@@ -381,7 +393,7 @@ Você pode visualizar banners do carrossel no Editor do carrossel (método prefe
 
    ![experience_fragment-carouselbanner-viewdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. Selecionar **[!UICONTROL Visualizar]**.
+1. Selecione **[!UICONTROL Visualizar]**.
 1. Selecione os pontos de acesso ou mapas de imagem na imagem para testar as ações associadas a eles.
 
 **Para visualizar banners do carrossel na lista Visualizadores:**
@@ -396,7 +408,9 @@ Você pode visualizar banners do carrossel no Editor do carrossel (método prefe
 Publique o carrossel para usá-lo. A publicação de um Conjunto de carrossel ativa o URL e o Código incorporado. Ele também publica o carrossel na nuvem do Dynamic Media, que é integrada a um CDN para entrega escalável e com desempenho.
 
 >[!NOTE]
+>
 Se você usar uma imagem interativa existente com pontos de acesso para o banner do carrossel, será necessário publicar a imagem interativa separadamente após publicar o banner do carrossel.
+>
 Além disso, se você modificar uma imagem interativa publicada pré-existente que esteja usando em um banner do carrossel, será necessário publicar a imagem interativa antes que essas alterações sejam refletidas no banner do carrossel.
 
 Consulte [Publicar ativos do Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md) para obter informações sobre como publicar banners do carrossel.
@@ -406,6 +420,7 @@ Consulte [Publicar ativos do Dynamic Media](/help/assets/publishing-dynamicmedia
 Depois de carregar as imagens do banner para criar um carrossel, adicionar pontos de acesso e/ou mapas de imagem ao banner e publicar o conjunto de carrossel, você estará pronto para adicioná-lo à página do site existente.
 
 >[!NOTE]
+>
 Se você for um cliente do Experience Manager Sites, poderá adicionar o banner do carrossel diretamente à sua página arrastando o componente de Mídia interativa para sua página. Consulte [Adicionar ativos do Dynamic Media a páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 No entanto, se você for um cliente independente do Experience Manager Assets, poderá adicionar manualmente o banner do carrossel à landing page do seu site, conforme descrito nesta seção.
@@ -419,6 +434,7 @@ O código incorporado copiado é responsivo, portanto, deve se ajustar automatic
 ## Integre o banner do carrossel a uma visualização rápida existente {#integrating-the-carousel-banner-with-an-existing-quickview}
 
 >[!NOTE]
+>
 Essa etapa se aplica somente se você for um cliente independente do Experience Manager Assets.
 
 A última etapa deste processo é integrar o banner do carrossel a uma implementação do Quickview existente no seu site. Cada implementação do Quickview é única e é necessária uma abordagem específica que envolva a assistência de um profissional de TI de front-end.

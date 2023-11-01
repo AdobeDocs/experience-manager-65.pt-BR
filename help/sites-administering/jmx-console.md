@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '4956'
+source-wordcount: '4950'
 ht-degree: 1%
 
 ---
@@ -375,7 +375,7 @@ Informações sobre o repositório CRX
   </tr>
   <tr>
    <td>crx.cluster.preferredMaster</td>
-   <td>true indica que este nó de cluster é o principal preferencial do cluster.</td>
+   <td>true indica que este nó de cluster é o mestre preferencial do cluster.</td>
   </tr>
   <tr>
    <td>option.transactions.supported</td>
@@ -440,7 +440,7 @@ Informações sobre o repositório CRX
   </tr>
   <tr>
    <td>crx.cluster.master</td>
-   <td>true indica que este nó de repositório é o nó principal do cluster.</td>
+   <td>true indica que este nó de repositório é o nó mestre do cluster.</td>
   </tr>
   <tr>
    <td>level.1.supported</td>
@@ -505,7 +505,7 @@ Informações sobre o repositório CRX
 
 **BackupResult** O status do backup atual. Os seguintes valores são possíveis:
 
-* Backup em andamento: um backup está em execução no momento.
+* Backup em andamento: um backup está sendo executado no momento.
 * Backup cancelado: o backup foi cancelado.
 * Backup concluído com erro: erro durante o backup. A mensagem de erro fornece informações sobre a causa.
 * Backup concluído: o backup foi bem-sucedido.
@@ -523,7 +523,7 @@ Somente leitura.
 
 **ClusterId** O identificador deste cluster de repositório. Somente leitura.
 
-**ClusterMasterId** O identificador do nó principal deste cluster de repositório. Somente leitura.
+**ClusterMasterId** O identificador do nó mestre deste cluster de repositório. Somente leitura.
 
 **ClusterNodeId** O identificador deste nó do cluster do repositório. Somente leitura.
 
@@ -597,12 +597,12 @@ Somente leitura.
 
 * Valor retornado: nenhum
 
-**makeClusterMaster** Define este nó de repositório como o nó principal do cluster. Se ainda não estiver principal, esse comando interrompe o ouvinte da instância principal atual e inicia um ouvinte principal no nó atual. Esse nó é então definido como o nó principal e reiniciado, fazendo com que todos os outros nós no cluster (ou seja, aqueles que são controlados pelo principal) se conectem a essa instância.
+**makeClusterMaster** Define este nó de repositório como o nó mestre do cluster. Se ainda não tiver sido mestre, este comando interrompe o listener da instância mestre atual e inicia um listener mestre no nó atual. Em seguida, esse nó é definido como o nó principal e reiniciado, fazendo com que todos os outros nós no cluster (ou seja, aqueles que são controlados pelo mestre) se conectem a essa instância.
 
 * Argumentos: nenhum
 * Valor retornado: nenhum
 
-**joinCluster** Adiciona este repositório a um cluster como um nó controlado pelo principal de cluster. Você deve fornecer um nome de usuário e senha para fins de autenticação. A conexão usa autenticação básica. As credenciais de segurança são codificadas na base 64 antes de serem enviadas ao servidor.
+**joinCluster** Adiciona este repositório a um cluster como um nó controlado pelo cluster mestre. Você deve fornecer um nome de usuário e senha para fins de autenticação. A conexão usa autenticação básica. As credenciais de segurança são codificadas na base 64 antes de serem enviadas ao servidor.
 
 * Argumentos:
 
@@ -915,7 +915,7 @@ O JConsole exibirá uma lista de processos locais da Java Virtual Machine. A lis
 
 ### Conectando-se a um processo CRX remoto {#connecting-to-a-remote-crx-process}
 
-Para se conectar a um processo CRX remoto, a JVM que hospeda o processo CRX remoto precisará ser ativada para aceitar conexões JMX remotas.
+Para conectar-se a um processo CRX remoto, a JVM que hospeda o processo CRX remoto precisará ser ativada para aceitar conexões JMX remotas.
 
 Para ativar conexões JMX remotas, a seguinte propriedade do sistema deve ser definida ao iniciar a JVM:
 

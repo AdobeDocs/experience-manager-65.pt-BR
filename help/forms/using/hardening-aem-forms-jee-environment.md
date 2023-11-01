@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '7669'
+source-wordcount: '7667'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Conheça uma variedade de configurações de fortalecimento de segurança para melhorar a segurança do AEM Forms no JEE executado em uma intranet corporativa.
 
-O artigo descreve recomendações e práticas recomendadas para proteger servidores que executam o AEM Forms no JEE. Este não é um documento abrangente de fortalecimento do host para seu sistema operacional e servidores de aplicativos. Em vez disso, este artigo descreve uma variedade de configurações que fortalecem a segurança que você deve implementar para melhorar a segurança do AEM Forms no JEE que está sendo executado em uma intranet corporativa. No entanto, para garantir que o AEM Forms nos servidores de aplicativos JEE permaneça seguro, você também deve implementar procedimentos de monitoramento de segurança, detecção e resposta.
+O artigo descreve recomendações e práticas recomendadas para proteger servidores que executam o AEM Forms no JEE. Este não é um documento abrangente de fortalecimento do host para o seu sistema operacional e servidores de aplicativos. Em vez disso, este artigo descreve uma variedade de configurações que fortalecem a segurança que você deve implementar para melhorar a segurança do AEM Forms no JEE que está sendo executado em uma intranet corporativa. No entanto, para garantir que o AEM Forms nos servidores de aplicativos JEE permaneça seguro, você também deve implementar procedimentos de monitoramento de segurança, detecção e resposta.
 
 O artigo descreve técnicas de proteção que devem ser aplicadas durante os seguintes estágios durante o ciclo de vida de instalação e configuração:
 
@@ -687,7 +687,7 @@ O processo de Filtragem de referenciador pode ser descrito da seguinte maneira:
    1. Se for POST, o servidor de formulários executará a verificação do cabeçalho Referenciador.
    1. Se for GET, o servidor de formulários ignorará a verificação do Referenciador, a menos que *CSRF_CHECK_GETS* está definido como verdadeiro, nesse caso, ele executa a verificação do cabeçalho Referenciador. *CSRF_CHECK_GETS* é especificado na variável *web.xml* arquivo para seu aplicativo.
 
-1. Lista de permissões O servidor de formulários verifica se o URI solicitado existe no arquivo de pesquisa:
+1. Incluir na lista de permissões O servidor de formulários verifica se o URI solicitado existe no arquivo de pesquisa:
 
    1. Incluir na lista de permissões Se o URI for selecionado, o servidor aceitará a solicitação.
    1. Incluir na lista de permissões Se o URI solicitado não for reconhecido, o servidor recuperará o Referenciador da solicitação.
@@ -745,7 +745,7 @@ Inclua o `-Dlc.um.csrffilter.disabled=true` Argumento JAVA no script de iniciali
 
 **Filtragem de referenciador para arquivos WAR personalizados**
 
-Você pode ter criado arquivos WAR personalizados para trabalhar com o AEM Forms no JEE a fim de atender aos requisitos da sua empresa. Para ativar a Filtragem de referenciador para seus arquivos WAR personalizados, inclua ***adobe-usermanager-client.jar*** no caminho de classe para o WAR e inclua uma entrada de filtro no arquivo * web.xml* com os seguintes parâmetros:
+Você pode ter criado arquivos WAR personalizados para trabalhar com o AEM Forms no JEE para atender aos requisitos da sua empresa. Para ativar a Filtragem de referenciador para seus arquivos WAR personalizados, inclua ***adobe-usermanager-client.jar*** no caminho de classe para o WAR e inclua uma entrada de filtro no arquivo * web.xml* com os seguintes parâmetros:
 
 **CSRF_CHECK_GETS** controla a verificação do Referenciador nas solicitações do GET. Se esse parâmetro não estiver definido, o valor padrão será definido como false. Inclua esse parâmetro somente se desejar filtrar suas solicitações do GET.
 

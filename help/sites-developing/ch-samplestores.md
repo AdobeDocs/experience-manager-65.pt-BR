@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: d8d9a799-3e30-442a-843b-d4d7ba70c557
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '471'
 ht-degree: 1%
 
 ---
@@ -109,7 +109,7 @@ O armazenamento usa uma árvore de dados semelhante ao seguinte exemplo:
 
 >[!NOTE]
 >
->Uma política de segurança introduzida no Chrome 50.x exige que todas as chamadas relacionadas à geolocalização sejam feitas em uma conexão segura. Portanto, o AEM força o uso de https para chamadas de API de geolocalização se o AEM também estiver em execução em https. Caso contrário, http é usado para estar em conformidade com a política da mesma origem. Consulte [esta publicação do blog do Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) para obter mais detalhes sobre a alteração no Chrome.
+>Uma política de segurança introduzida no Chrome 50.x exige que todas as chamadas relacionadas à geolocalização sejam feitas em uma conexão segura. Portanto, o AEM força o uso de https para chamadas de API de geolocalização se o AEM também estiver em execução em https. Caso contrário, o http é usado para estar em conformidade com a política da mesma origem. Consulte [esta publicação do blog do Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) para obter mais detalhes sobre a alteração no Chrome.
 
 ## contexthub.surferinfo Candidato da loja de amostra {#contexthub-surferinfo-sample-store-candidate}
 

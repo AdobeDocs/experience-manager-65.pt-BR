@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 99528fda-5c8c-4034-bcbe-a4cea42f694b
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '6100'
+source-wordcount: '6098'
 ht-degree: 0%
 
 ---
@@ -395,7 +395,7 @@ Para abrir a página de administração do site ou editar uma página do portlet
 
 ### Privilégios {#privileges}
 
-Algumas funções do portlet são protegidas por privilégios. O usuário atual precisa ter esse privilégio para poder acessar essa função. Há os seguintes privilégios predefinidos:
+Algumas funções do portlet são protegidas por privilégios. O usuário atual precisa ter esse privilégio para acessar esta função. Há os seguintes privilégios predefinidos:
 
 * &quot;toolbar&quot; : este é o privilégio geral para ver/usar a barra de ferramentas no portlet.
 * &quot;prefs&quot; : se o usuário tiver esse privilégio, ele poderá ver/alterar as preferências do portlet.

@@ -12,9 +12,9 @@ discoiquuid: 6a754d42-da30-4c2f-8b9c-369e1f1f92b5
 docset: aem65
 feature: Configuring
 exl-id: 1e34c5ca-9e08-4b2a-901c-ab28aeb4a807
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,7 @@ Quando os pacotes estiverem em vigor, siga as etapas abaixo para configurar o AE
 1. Configure a fonte de dados e os parâmetros JDBC criando outro arquivo de configuração com o seguinte nome no `crx-quickstart\install` pasta:
 
    * `org.apache.sling.datasource.DataSourceFactory-oak.config`
+
    >[!NOTE]
    >
    >Para obter informações detalhadas sobre a configuração da fonte de dados para cada banco de dados compatível, consulte [Opções de configuração da fonte de dados](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options).

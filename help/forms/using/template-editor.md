@@ -11,16 +11,16 @@ discoiquuid: b21a48ba-eccd-4bb5-9b92-3039026ddf2a
 docset: aem65
 feature: Adaptive Forms
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2044'
+source-wordcount: '2042'
 ht-degree: 1%
 
 ---
 
 # Modelos de formulário adaptável{#adaptive-form-templates}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -195,7 +195,7 @@ Execute as seguintes etapas para mostrar e ocultar modelos:
 1. Localize e abra o **Configuração do FormsManager** configurações:
 
    * Para mostrar ou ocultar o modelo de formulários adaptáveis pronto para uso, marque ou desmarque a opção **Incluir modelos AF e AD prontos para uso** opção.
-   * Para mostrar ou ocultar modelos de formulário adaptável prontos para uso que foram adicionados nas versões do AEM 6.0 Forms ou do AEM 6.1 Forms, mas que agora estão obsoletas, marque ou desmarque a opção **Incluir modelos de AF do AEM 6.0** opção. Se esta opção estiver marcada, para entrar em vigor, ela exigirá a **Incluir modelos AF e AD prontos para uso** a ser habilitada.
+   * Para mostrar ou ocultar modelos de formulário adaptável prontos para uso que foram adicionados nas versões do AEM 6.0 Forms ou do AEM 6.1 Forms, mas que agora estão obsoletas, marque ou desmarque a opção **Incluir modelos de AF do AEM 6.0** opção. Se essa opção estiver marcada, para ter efeito, ela exigirá a **Incluir modelos AF e AD prontos para uso** a ser habilitada.
 
 1. Clique em **Salvar**. As opções de exibição para os templates prontos para uso são alteradas.
 

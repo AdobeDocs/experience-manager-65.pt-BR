@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 7%
+source-wordcount: '985'
+ht-degree: 23%
 
 ---
 
@@ -43,22 +43,22 @@ Siga estas etapas para criar um novo projeto.
 
    ![Assistente Criar projeto](assets/create-project-wizard.png)
 
-1. Defina o **Título** e a **Descrição** e adicione uma imagem de **Miniatura** se necessário. Também é possível adicionar ou excluir usuários e a qual grupo eles pertencem.
+1. Defina o **Título** e a **Descrição** e adicione uma imagem de **Miniatura** se necessário. Também é possível adicionar ou excluir usuários, bem como sua associação com um grupo.
 
    ![Etapa de propriedades do assistente](assets/create-project-wizard-properties.png)
 
-1. Toque/clique em **Criar**. A confirmação pergunta se você deseja abrir seu novo projeto ou retornar ao console.
+1. Toque/clique em **Criar**. Você é solicitado(a) a confirmar se deseja abrir o novo projeto ou retornar ao console.
 
 O procedimento para criar um projeto é o mesmo para todos os modelos de projeto. A diferença entre os tipos de projetos refere-se aos projetos [funções de usuário](/help/sites-authoring/projects.md) e [fluxos de trabalho.](/help/sites-authoring/projects-with-workflows.md)
 
 ### Associando recursos ao seu projeto {#associating-resources-with-your-project}
 
-Os projetos permitem agrupar recursos em uma entidade para gerenciá-los como um todo. Portanto, é necessário associar recursos ao projeto. Esses recursos são agrupados no projeto como **Ladrilhos**. Os tipos de recursos que você pode adicionar estão descritos em [Mosaico do projeto](/help/sites-authoring/projects.md#project-tiles).
+Os projetos permitem agrupar recursos em uma entidade para gerenciá-los como um todo. Portanto, é necessário associar recursos ao projeto. Esses recursos são agrupados no projeto como **Ladrilhos**. Os tipos de recursos que você pode adicionar estão descritos em [Blocos de projeto](/help/sites-authoring/projects.md#project-tiles).
 
 Para associar recursos ao projeto:
 
-1. Abra o projeto na **Projetos** console.
-1. Toque/clique **Adicionar mosaico** e selecione o bloco que deseja vincular ao projeto. É possível selecionar vários tipos de mosaicos.
+1. Abra o projeto no console **Projetos**.
+1. Toque/clique em **Adicionar bloco** e selecione o bloco que deseja vincular ao seu projeto. É possível selecionar vários tipos de mosaicos.
 
    ![Adicionar mosaico](assets/project-add-tile.png)
 
@@ -66,7 +66,7 @@ Para associar recursos ao projeto:
 
 ### Adicionar itens a um bloco {#adding-items-to-a-tile}
 
-Em alguns blocos, talvez você queira adicionar mais de um item. Por exemplo, é possível ter mais de um workflow em execução de uma vez ou mais de uma experiência.
+Talvez você queira adicionar mais de um item em alguns blocos. Por exemplo, você pode ter mais de um fluxo de trabalho em execução ao mesmo tempo ou mais de uma experiência.
 
 Para adicionar itens a um bloco:
 
@@ -76,17 +76,17 @@ Para adicionar itens a um bloco:
 
    ![Divisa em mosaico](assets/project-tile-create-task.png)
 
-1. Adicione o item ao bloco da mesma maneira que você faria ao criar um novo bloco. Os mosaicos do projeto estão descritos [aqui.](/help/sites-authoring/projects.md#project-tiles)
+1. Adicione o item ao bloco da mesma maneira que você faria ao criar um novo bloco. Os blocos do projeto estão descritos [aqui.](/help/sites-authoring/projects.md#project-tiles)
 
 ## Exibindo Informações do Projeto {#viewing-project-info}
 
 O principal objetivo dos projetos é agrupar informações associadas em um local para torná-las mais acessíveis e acionáveis. Há várias maneiras de acessar essas informações.
 
-### Abrir um mosaico {#opening-a-tile}
+### Abrir um bloco {#opening-a-tile}
 
-Talvez você queira ver quais itens estão incluídos em um bloco atual ou modificar ou excluir itens no bloco.
+Você pode querer ver quais itens estão incluídos no bloco atual, ou modificar e excluir itens no bloco.
 
-Para abrir um bloco para exibir ou modificar itens:
+Para abrir um bloco e visualizar ou modificar itens:
 
 1. Toque ou clique no ícone de reticências, na parte inferior direita do bloco.
 

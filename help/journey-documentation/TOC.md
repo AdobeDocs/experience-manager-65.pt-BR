@@ -2,13 +2,13 @@
 sub-product: AEM Documentation Journeys
 user-guide-title: Jornadas de documentação do AEM
 breadcrumb-title: Jornadas de documentação do AEM
-user-guide-description: As jornadas de documentação fornecem uma estrutura narrativa dentro da documentação do AEM, unindo recursos complexos e diferentes e permitindo resolver uma meta empresarial da maneira recomendada. As jornadas foram desenvolvidas para auxiliar os iniciantes no AEM, apresentando os conceitos e recursos que permitem atingir uma meta de A a Z.
+user-guide-description: As Jornadas de documentação fornecem uma estrutura narrativa dentro da documentação do AEM, unindo recursos complexos e diferentes para resolver uma meta comercial da maneira recomendada. As jornadas foram desenvolvidas para auxiliar os iniciantes no AEM, apresentando os conceitos e recursos que permitem atingir uma meta de A a Z.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 0b8b517607f305ad82caf6ba766cad5a46021439
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 53%
+source-wordcount: '527'
+ht-degree: 48%
 
 ---
 

@@ -1,19 +1,15 @@
 ---
 title: Descarregamento de trabalhos
-seo-title: Offloading Jobs
 description: Saiba como configurar e usar instâncias de AEM em uma topologia para executar tipos específicos de processamento.
-seo-description: Learn how to configure and use AEM instances in a topology in order to perform specific types of processing.
-uuid: e971d403-dfd2-471f-b23d-a67e35f1ed88
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
-source-git-commit: 08a6777bf1ff3abf62f45fe1e164ef2027996848
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2362'
 ht-degree: 1%
 
 ---

@@ -12,10 +12,10 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2701'
-ht-degree: 28%
+source-wordcount: '2699'
+ht-degree: 37%
 
 ---
 
@@ -28,7 +28,7 @@ Execute as seguintes tarefas para controlar como e quando as live copies são si
 
 ## Configurações de implantação instaladas e personalizadas {#installed-and-custom-rollout-configurations}
 
-Esta seção fornece informações sobre as configurações de implantação instaladas e as ações de sincronização que elas usam, e como criar configurações personalizadas, se necessário.
+Esta seção fornece informações sobre as configurações de implantação instaladas e as ações de sincronização que elas usam, bem sobre como criar configurações personalizadas se necessário.
 
 >[!CAUTION]
 >
@@ -94,7 +94,7 @@ A tabela a seguir lista as configurações de implantação instaladas com AEM. 
   </tr>
   <tr>
    <td>Promover lançamento</td>
-   <td>Configuração de implementação padrão para a promoção de páginas de inicialização.</td>
+   <td>Configuração de implantação padrão para a promoção de páginas de lançamento.</td>
    <td>Na implantação</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> orderChildren<br /> markLiveRelationship</td>
   </tr>
@@ -162,7 +162,7 @@ A tabela a seguir lista as ações de sincronização instaladas com o AEM. Se a
   </tr>
   <tr>
    <td>notificar</td>
-   <td>Envia um evento de página informando que a página foi implantada. Para ser notificado, é necessário primeiro assinar eventos de distribuição.</td>
+   <td>Envia um evento de página informando que a página foi implantada. Para ser notificado, é necessário primeiro assinar os eventos de implantação.</td>
    <td> </td>
   </tr>
   <tr>
@@ -271,7 +271,7 @@ Você pode configurar vários serviços OSGi que suportam ações de sincroniza�
 
 Ao trabalhar com AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
 
-A tabela a seguir lista as ações de sincronização para as quais você pode especificar os nós a serem excluídos. A tabela fornece os nomes dos serviços a serem configurados usando o Console da Web e o PID para configurar usando um nó de repositório.
+A tabela a seguir lista as ações de sincronização para as quais você pode especificar os nós a serem excluídos. A tabela fornece os nomes dos serviços a serem configurados usando o console da Web e o PID para configurar usando um nó de repositório.
 
 | Ação de sincronização | Nome do serviço no Console da web | PID do serviço |
 |---|---|---|
@@ -316,9 +316,9 @@ A tabela a seguir descreve as propriedades que você pode configurar:
 >
 >Na interface otimizada para toque, consulte também [Configuração de bloqueios do MSM nas propriedades da página (interface otimizada para toque)](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-pagep-roperties-touch-optimized-ui).
 
-#### Ação de atualização de conteúdo MSM CQ - Exclusões {#cq-msm-content-update-action-exclusions}
+#### Ação de atualização de conteúdo do MSM CQ - Exclusões {#cq-msm-content-update-action-exclusions}
 
-Várias propriedades e tipos de nó são excluídos por padrão, eles são definidos na configuração OSGi de **Ação de atualização de conteúdo MSM CQ**, em **Propriedades da página excluída**.
+Várias propriedades e tipos de nó são excluídos por padrão. Eles são definidos na configuração OSGi da **Ação de atualização de conteúdo do MSM CQ**, em **Propriedades da página excluída**.
 
 Por padrão, as propriedades que correspondem às seguintes expressões regulares são excluídas (ou seja, não atualizadas) na implantação:
 
@@ -336,7 +336,7 @@ Você pode configurar vários serviços OSGi que oferecem suporte às ações de
 
 Ao trabalhar com AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
 
-A tabela a seguir lista as ações de sincronização para as quais você pode especificar a atualização de referência. A tabela fornece os nomes dos serviços a serem configurados usando o Console da Web e o PID para configurar usando um nó de repositório.
+A tabela a seguir lista as ações de sincronização para as quais você pode especificar a atualização de referência. A tabela fornece os nomes dos serviços a serem configurados usando o console da Web e o PID para configurar usando um nó de repositório.
 
 <table>
  <tbody>
@@ -388,19 +388,19 @@ Você também pode definir as configurações de implantação para uma página 
 
 1. Se necessário, ajuste o sinalizador de **Herança da Live Copy**. Se essa opção for marcada, a configuração da live copy terá efeito em todas as tarefas derivadas.
 
-1. Limpe a **Herdar configurações de implantação do primário** e selecione uma ou mais configurações de implantação na lista.
+1. Limpe a propriedade **Herdar configurações de implantação da página principal** e selecione uma ou mais configurações de implantação na lista.
 
    As configurações de implantação selecionadas aparecem abaixo da lista suspensa.
 
    ![Configurações de implantação selecionadas](assets/chlimage_1-2.png)
 
-1. Clique ou toque **Salvar**.
+1. Clique ou toque em **Salvar**.
 
 ### Definir a configuração de implantação de uma página do blueprint {#setting-the-rollout-configuration-for-a-blueprint-page}
 
 Configure uma página de blueprint com as configurações de implantação a serem usadas quando a página de blueprint for implantada.
 
-Observe que as páginas secundárias da página do blueprint herdam a configuração. Ao definir a configuração de implantação a ser usada, você pode substituir a configuração que a página herda da página principal.
+Observe que as páginas derivadas da página de blueprint herdam a configuração. Ao definir a configuração de implantação a ser usada, você pode estar substituindo a configuração que a página herdará da página principal.
 
 1. Use o console **Sites** para selecionar a página raiz do blueprint.
 1. Selecione **Propriedades** na barra de ferramentas.

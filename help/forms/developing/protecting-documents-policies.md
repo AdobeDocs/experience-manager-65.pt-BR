@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '15513'
+source-wordcount: '15485'
 ht-degree: 0%
 
 ---
@@ -744,7 +744,7 @@ Você pode recuperar um documento de PDF protegido por política para remover um
 
 **Remover a política do documento PDF**
 
-Você pode remover uma política de um documento PDF protegido por política desde que um administrador seja especificado nas configurações de conexão. Caso contrário, a política usada para proteger um documento deve conter a `SWITCH_POLICY` para remover uma política de um documento PDF. Além disso, o usuário especificado nas configurações de conexão do AEM Forms também deve ter essa permissão. Caso contrário, uma exceção será lançada.
+Você pode remover uma política de um documento PDF protegido por política desde que um administrador seja especificado nas configurações de conexão. Caso contrário, a política usada para proteger um documento deve conter a `SWITCH_POLICY` permissão para remover uma política de um documento PDF. Além disso, o usuário especificado nas configurações de conexão do AEM Forms também deve ter essa permissão. Caso contrário, uma exceção será lançada.
 
 **Salve o documento PDF não seguro**
 
@@ -2136,7 +2136,7 @@ Você deve recuperar um documento do Word protegido por política para remover u
 
 **Remover a política do documento do Word**
 
-Você pode remover uma política de um documento do Word protegido por política desde que um administrador seja especificado nas configurações de conexão. Caso contrário, a política usada para proteger um documento deve conter a `SWITCH_POLICY` para remover uma política de um documento do Word. Além disso, o usuário especificado nas configurações de conexão do AEM Forms também deve ter essa permissão. Caso contrário, uma exceção será lançada.
+Você pode remover uma política de um documento do Word protegido por política desde que um administrador seja especificado nas configurações de conexão. Caso contrário, a política usada para proteger um documento deve conter a `SWITCH_POLICY` permissão para remover uma política de um documento do Word. Além disso, o usuário especificado nas configurações de conexão do AEM Forms também deve ter essa permissão. Caso contrário, uma exceção será lançada.
 
 **Salvar o documento do Word não protegido**
 

@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '795'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Há algumas coisas que você precisa considerar ao configurar o token encapsulad
 
 ### Replicação da chave HMAC {#replicating-the-hmac-key}
 
-Para replicar a chave em várias instâncias, é necessário:
+Para replicar a chave entre instâncias, é necessário:
 
 1. Acesse a instância do AEM, normalmente uma instância de autor, que contém o material principal a ser copiado;
 1. Localize o `com.adobe.granite.crypto.file` no sistema de arquivos local. Por exemplo, neste caminho:

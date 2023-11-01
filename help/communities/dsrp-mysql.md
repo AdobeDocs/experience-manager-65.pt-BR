@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 role: Admin
 exl-id: eafb60be-2963-4ac9-8618-50fd9bc6fe6c
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '726'
 ht-degree: 2%
 
 ---
@@ -33,8 +33,8 @@ Essas instruções descrevem como se conectar ao servidor MySQL e estabelecer o 
    * [Servidor MySQL](https://dev.mysql.com/downloads/mysql/) Community Server versão 5.6 ou posterior
 
       * Pode ser executado no mesmo host que o AEM ou remotamente
-   * [Workbench do MySQL](https://dev.mysql.com/downloads/tools/workbench/)
 
+   * [Workbench do MySQL](https://dev.mysql.com/downloads/tools/workbench/)
 
 ## Instalar o MySQL {#installing-mysql}
 
@@ -49,7 +49,7 @@ Por exemplo, para especificar todos os nomes de tabela em minúsculas em um sist
 * Editar arquivo `/etc/my.cnf`
 * No `[mysqld]` adicione a seguinte linha:
 
-   `lower_case_table_names = 1`
+  `lower_case_table_names = 1`
 
 ### Conjunto de caracteres UTF8 {#utf-character-set}
 
@@ -64,11 +64,11 @@ Altere o banco de dados MySQL para o padrão UTF8:
 * Editar arquivo `/etc/my.cnf`
 * No `[client]` adicione a seguinte linha:
 
-   `default-character-set=utf8`
+  `default-character-set=utf8`
 
 * No `[mysqld]` adicione a seguinte linha:
 
-   `character-set-server=utf8`
+  `character-set-server=utf8`
 
 ## Instalando o MySQL Workbench {#installing-mysql-workbench}
 
@@ -109,7 +109,7 @@ Quando o MySQL Workbench é iniciado pela primeira vez, a menos que já esteja e
 
 ## Configuração do Banco de Dados {#database-setup}
 
-Abra a conexão Comunidades para instalar o banco de dados.
+Abra a conexão Communities para instalar o banco de dados.
 
 ![install-database](assets/install-database.png)
 
@@ -179,24 +179,24 @@ Quando o MySQL é executado em um servidor diferente do AEM, o nome do host do s
 * Localize o `Day Commons JDBC Connections Pool`
 * Selecione o `+` ícone para criar uma nova configuração de conexão.
 
-   ![configure-jdbc-connection](assets/configure-jdbc-connection.png)
+  ![configure-jdbc-connection](assets/configure-jdbc-connection.png)
 
 * Insira os seguintes valores:
 
    * **[!UICONTROL Classe de driver JDBC]**: `com.mysql.jdbc.Driver`
    * **[!UICONTROL URI da conexão JDBC]**: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
 
-      Especificar servidor no lugar de localhost se o servidor MySQL não for o mesmo que &#39;este&#39; servidor AEM *comunidades* é o nome do banco de dados padrão (esquema).
+     Especificar servidor no lugar de localhost se o servidor MySQL não for o mesmo que &#39;este&#39; servidor AEM *comunidades* é o nome do banco de dados padrão (esquema).
 
    * **[!UICONTROL Nome de usuário]**: `root`
 
-      Ou insira o Nome de usuário configurado para o servidor MySQL, se não for &#39;root&#39;.
+     Ou insira o Nome de usuário configurado para o servidor MySQL, se não for &#39;root&#39;.
 
    * **[!UICONTROL Senha]**:
 
-      Limpar este campo se nenhuma senha for definida para o MySQL,
+     Limpar este campo se nenhuma senha for definida para o MySQL,
 
-      caso contrário, digite a senha configurada para o Nome de usuário do MySQL.
+     caso contrário, digite a senha configurada para o Nome de usuário do MySQL.
 
    * **[!UICONTROL Nome da fonte de dados]**: nome inserido para o [Conexão MySQL](#new-connection-settings), por exemplo, &quot;comunidades&quot;.
 

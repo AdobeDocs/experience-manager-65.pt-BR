@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 9f883483-b81e-42c6-a4a1-eb499dd112e7
 role: Developer
 exl-id: 5a746c6c-bf6e-4b25-ba7c-a35edb1f55f3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1431'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Antes de executar programaticamente uma operação da API do cliente de serviço
 Você pode definir as seguintes opções de tempo de execução de desempenho para melhorar o desempenho do serviço Forms:
 
 * **Cache de formulários**: Você pode armazenar em cache um formulário que é renderizado como PDF no cache do servidor. Cada formulário é armazenado em cache após ser gerado pela primeira vez. Em um renderizador subsequente, se o formulário em cache for mais recente que o carimbo de data e hora do design do formulário, o formulário será recuperado do cache. Ao armazenar formulários em cache, você melhora o desempenho do serviço Forms, pois ele não precisa recuperar o design do formulário de um repositório.
-* As Guias de formulário (obsoletas) podem levar mais tempo para serem renderizadas do que outros tipos de transformação. É recomendável armazenar em cache os Guias de formulário (obsoleto) para melhorar o desempenho.
+* As Guias de formulário (obsoletas) podem levar mais tempo para serem renderizadas do que outros tipos de transformação. É recomendável armazenar em cache os Guias de formulário (obsoletos) para melhorar o desempenho.
 * **Opção independente**: se você não precisar que o serviço Forms execute cálculos no lado do servidor, poderá definir a opção Independente como `true`, que resulta em formulários sendo renderizados sem informações de estado. As informações de estado são necessárias se você quiser renderizar um formulário interativo para um usuário final que, em seguida, insere informações no formulário e o envia de volta para o serviço Forms. O serviço Forms executa uma operação de cálculo e renderiza o formulário de volta para o usuário com os resultados exibidos no formulário. Se um formulário sem informações de estado for enviado de volta para o serviço Forms, somente os dados XML estarão disponíveis e os cálculos do lado do servidor não serão executados.
 * **PDF linearizado**: um arquivo PDF linearizado é organizado para permitir o acesso incremental eficiente em um ambiente de rede. O arquivo PDF é um PDF válido em todos os aspectos e é compatível com todos os visualizadores existentes e outros aplicativos PDF. Ou seja, um PDF linearizado pode ser visualizado enquanto estiver sendo baixado.
 * Essa opção não melhora o desempenho quando um formulário PDF é renderizado no cliente.

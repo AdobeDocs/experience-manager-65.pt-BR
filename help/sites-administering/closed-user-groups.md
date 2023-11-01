@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '6854'
+source-wordcount: '6836'
 ht-degree: 1%
 
 ---
@@ -129,7 +129,7 @@ Como esse tipo de requisito de autenticação deve ser limitado a determinados m
 
 A configuração padrão do AEM agora usa essa configuração, permitindo definir o mixin no modo de execução do autor, mas apenas tem efeito após a replicação para a instância de publicação. Consulte [esta página](https://sling.apache.org/documentation/the-sling-engine/authentication/authenticationframework.html) para obter detalhes sobre como o Sling impõe o requisito de autenticação.
 
-Adicionar o `granite:AuthenticationRequired` O tipo de mixin nos caminhos suportados configurados fará com que o registro OSGi do manipulador responsável seja atualizado contendo uma entrada nova e adicional com o `sling.auth.requirements` propriedade. Se um determinado requisito de autenticação especificar a `granite:loginPath` , o valor também é registrado com o Autenticador com um prefixo &quot;-&quot; para ser excluído do requisito de autenticação.
+Adicionar o `granite:AuthenticationRequired` O tipo de mixin nos caminhos suportados configurados fará com que o registro OSGi do manipulador responsável seja atualizado contendo uma entrada nova e adicional com o `sling.auth.requirements` propriedade. Se um determinado requisito de autenticação especificar a `granite:loginPath` , o valor também é registrado com o Autenticador com um prefixo &quot;-&quot; a ser excluído do requisito de autenticação.
 
 #### Avaliação e herança do requisito de autenticação {#evaluation-and-inheritance-of-the-authentication-requirement}
 
@@ -753,7 +753,7 @@ Há uma limitação da replicação de políticas CUG. Se uma determinada polít
 
 O manipulador de autenticação **Manipulador de autenticação de cabeçalho HTTP do Adobe Granite** enviado com o `com.adobe.granite.auth.authhandler` o pacote contém uma referência ao `CugSupport` definida pelo mesmo módulo. É usado para calcular o &quot;realm&quot; em determinadas circunstâncias, recorrendo ao realm configurado com o manipulador.
 
-Esta alteração foi adaptada para fazer referência à `CugSupport` opcional para garantir o máximo de compatibilidade com versões anteriores se uma determinada configuração decidir reativar a implementação obsoleta. As instalações que usam a implementação não obterão mais o realm extraído da implementação CUG, mas sempre exibirão o realm conforme definido com **Manipulador de autenticação de cabeçalho HTTP do Adobe Granite**.
+Esta alteração foi adaptada para fazer referência à `CugSupport` opcional para garantir a compatibilidade máxima com versões anteriores se uma determinada configuração decidir reativar a implementação obsoleta. As instalações que usam a implementação não obterão mais o realm extraído da implementação CUG, mas sempre exibirão o realm conforme definido com **Manipulador de autenticação de cabeçalho HTTP do Adobe Granite**.
 
 >[!NOTE]
 >
@@ -794,7 +794,7 @@ Com a nova implementação, a configuração do controle de acesso do modelo de 
 
 **Editando Políticas CUG no Gerenciamento de Controle de Acesso**
 
-Essa mudança de propriedades residuais do JCR para uma política dedicada de controle de acesso tem um impacto na permissão necessária para criar ou modificar a parte de autorização do recurso CUG. Como isso é considerado uma modificação no conteúdo de controle de acesso, requer `jcr:readAccessControl` e `jcr:modifyAccessControl` para ser gravado no repositório. Portanto, somente os autores de conteúdo com direito a modificar o conteúdo de controle de acesso de uma página podem configurar ou modificar esse conteúdo. Isso contrasta com a implementação antiga, em que a capacidade de gravar propriedades JCR regulares era suficiente, resultando em um aumento de privilégio.
+Essa mudança de propriedades residuais do JCR para uma política dedicada de controle de acesso tem um impacto na permissão necessária para criar ou modificar a parte de autorização do recurso CUG. Como isso é considerado uma modificação no conteúdo de controle de acesso, requer `jcr:readAccessControl` e `jcr:modifyAccessControl` privilégios a serem gravados no repositório. Portanto, somente os autores de conteúdo com direito a modificar o conteúdo de controle de acesso de uma página podem configurar ou modificar esse conteúdo. Isso contrasta com a implementação antiga, em que a capacidade de gravar propriedades JCR regulares era suficiente, resultando em um aumento de privilégio.
 
 **Nó de Destino Definido pela Política**
 

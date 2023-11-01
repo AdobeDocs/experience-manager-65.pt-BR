@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '8189'
+source-wordcount: '8187'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ Você deve obter um documento PDF não criptografado para criptografar o documen
 
 **Definir opções de tempo de execução de criptografia**
 
-Para criptografar um documento PDF com uma senha, você especifica quatro valores, incluindo dois valores de senha. O primeiro valor de senha é usado para criptografar o documento PDF e deve ser especificado ao abrir o documento PDF. O segundo valor de senha, chamado de valor de senha principal, é usado para remover a criptografia do documento PDF. Os valores de senha fazem distinção entre maiúsculas e minúsculas, e esses dois valores não podem ser os mesmos.
+Para criptografar um documento PDF com uma senha, você especifica quatro valores, incluindo dois valores de senha. O primeiro valor de senha é usado para criptografar o documento PDF e deve ser especificado ao abrir o documento PDF. O segundo valor de senha, chamado de valor de senha mestre, é usado para remover a criptografia do documento PDF. Os valores de senha fazem distinção entre maiúsculas e minúsculas, e esses dois valores não podem ser os mesmos.
 
 Você deve especificar os recursos do documento PDF para criptografar. Você pode criptografar todo o documento PDF, tudo exceto os metadados do documento ou apenas os anexos do documento. Se você criptografar somente os anexos do documento, será solicitada uma senha ao usuário quando ele tentar acessar os anexos do arquivo.
 
@@ -145,7 +145,7 @@ Criptografe um documento PDF com uma senha usando a API de criptografia (Java):
    * Especifique uma permissão invocando o `java.util.List` object&#39;s `add` e transmitindo um valor de enumeração que corresponde à permissão que você deseja definir. Por exemplo, para definir a permissão que permite a um usuário copiar dados localizados no documento PDF, especifique `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. (Repita essa etapa para cada permissão a ser definida).
    * Especifique a opção de compatibilidade do Acrobat chamando o `PasswordEncryptionOptionSpec` do objeto `setCompatability` e transmitindo um valor de enumeração que especifica o nível de compatibilidade do Acrobat. Por exemplo, você pode especificar `PasswordEncryptionCompatability.ACRO_7`.
    * Especifique o valor da senha que permite que um usuário abra o documento de PDF criptografado invocando o `PasswordEncryptionOptionSpec` do objeto `setDocumentOpenPassword` e transmitindo um valor de string que representa a senha aberta.
-   * Especifique o valor da senha principal que permite que um usuário remova a criptografia do documento PDF chamando o `PasswordEncryptionOptionSpec` do objeto `setPermissionPassword` e transmitindo um valor de string que representa a senha principal.
+   * Especifique o valor da senha mestre que permite que um usuário remova a criptografia do documento PDF, chamando o `PasswordEncryptionOptionSpec` do objeto `setPermissionPassword` e transmitindo um valor de string que representa a senha mestre.
 
 1. Adicione a senha.
 
@@ -210,7 +210,7 @@ Criptografe um documento PDF com uma senha usando a API de criptografia (serviç
    * Especificar os recursos do documento PDF a serem criptografados atribuindo um `PasswordEncryptionOption` valor de enumeração para o `PasswordEncryptionOptionSpec` do objeto `encryptOption` membro de dados. Para criptografar o PDF inteiro, incluindo seus metadados e anexos, atribua `PasswordEncryptionOption.ALL` para esse membro de dados.
    * Especifique a opção de compatibilidade do Acrobat atribuindo um `PasswordEncryptionCompatability` valor de enumeração para o `PasswordEncryptionOptionSpec` do objeto `compatability` membro de dados. Por exemplo, atribuir `PasswordEncryptionCompatability.ACRO_7` para esse membro de dados.
    * Especifique o valor da senha que permite que um usuário abra o documento de PDF criptografado atribuindo um valor de sequência de caracteres que representa a senha aberta à `PasswordEncryptionOptionSpec` do objeto `documentOpenPassword` membro de dados.
-   * Especifique o valor da senha que permite que um usuário remova a criptografia do documento PDF, atribuindo um valor de sequência de caracteres que representa a senha principal à `PasswordEncryptionOptionSpec` do objeto `permissionPassword` membro de dados.
+   * Especifique o valor da senha que permite que um usuário remova a criptografia do documento PDF, atribuindo um valor de sequência de caracteres que representa a senha mestra à `PasswordEncryptionOptionSpec` do objeto `permissionPassword` membro de dados.
 
 1. Adicione a senha.
 
@@ -664,7 +664,7 @@ Você deve obter um documento PDF criptografado para remover a criptografia base
 
 **Remover a senha**
 
-Para remover a criptografia baseada em senha de um documento de PDF criptografado, você precisa de um documento de PDF criptografado e um valor de senha principal usado para remover a criptografia do documento de PDF. A senha usada para abrir um documento de PDF criptografado por senha não pode ser usada para remover a criptografia. Uma senha principal é especificada quando o documento PDF é criptografado com uma senha. (Consulte [Criptografar documentos PDF com senha](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
+Para remover a criptografia baseada em senha de um documento PDF criptografado, você precisa de um documento PDF criptografado e um valor de senha mestre usado para remover a criptografia do documento PDF. A senha usada para abrir um documento de PDF criptografado por senha não pode ser usada para remover a criptografia. Uma senha mestra é especificada quando o documento PDF é criptografado com uma senha. (Consulte [Criptografar documentos PDF com senha](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
 
 **Salve o documento PDF**
 
@@ -703,7 +703,7 @@ Remova a criptografia baseada em senha de um documento PDF usando a API de cript
    Remova a criptografia baseada em senha do documento PDF chamando o `EncryptionServiceClient` do objeto `removePDFPasswordSecurity` e transmitindo os seguintes valores:
 
    * A `com.adobe.idp.Document` objeto que contém o documento PDF criptografado.
-   * Um valor de string que especifica o valor da senha principal usada para remover a criptografia do documento PDF.
+   * Um valor de string que especifica o valor da senha mestre usado para remover a criptografia do documento PDF.
 
    A variável `removePDFPasswordSecurity` o método retorna um `com.adobe.idp.Document` objeto que contém um documento PDF não seguro.
 

@@ -11,9 +11,9 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Video
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1559'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ Se não precisar de um fluxo de trabalho ou controle de versão para seus ativos
 
 ## Configurar integração com o Scene7 Video {#configuring-integration-with-scene-video}
 
-1. Entrada **[!UICONTROL Cloud Services]**, navegue até o **[!UICONTROL Scene7]** e selecione **[!UICONTROL Editar]**.
+1. Entrada **[!UICONTROL Cloud Service]**, navegue até o **[!UICONTROL Scene7]** e selecione **[!UICONTROL Editar]**.
 1. Selecione o **[!UICONTROL Vídeo]** guia.
 
    ![chlimage_1-363](assets/chlimage_1-363.png)
@@ -131,7 +131,7 @@ Mesmo que o uso do componente de vídeo do Scene7 seja recomendado para visualiz
 
 A tabela a seguir fornece uma comparação de alto nível de recursos compatíveis entre o componente de Vídeo de base do Experience Manager e o componente de Vídeo do Scene7:
 
-|  | Vídeo do Experience Manager Foundation | Vídeo do Scene7 |
+|   | Vídeo do Experience Manager Foundation | Vídeo do Scene7 |
 |---|---|---|
 | Abordagem | HTML5 primeira abordagem. O Flash é usado somente para fallback não HTML 5. | Flash na maioria dos desktops. O HTML5 é usado para dispositivos móveis e tablets. |
 | Entrega | Progressivo | Streaming adaptável |
@@ -169,7 +169,7 @@ As várias codificações de vídeo são criadas de acordo com as predefiniçõe
 
 #### Configurar design {#configuring-design}
 
-A variável **[!UICONTROL Vídeo do Foundation]** O componente deve saber quais perfis de vídeo usar para criar a lista de fontes de vídeo. Abra a caixa de diálogo design de componentes de vídeo e configure o design de componentes para usar os novos perfis de vídeo.
+A variável **[!UICONTROL Vídeo do Foundation]** O componente de deve saber quais perfis de vídeo usar para criar a lista de fontes de vídeo. Abra a caixa de diálogo design de componentes de vídeo e configure o design de componentes para usar os novos perfis de vídeo.
 
 >[!NOTE]
 >
@@ -177,7 +177,7 @@ A variável **[!UICONTROL Vídeo do Foundation]** O componente deve saber quais 
 
 >[!NOTE]
 >
->As alterações feitas no design exigem a ativação do design para entrarem em vigor na publicação.
+>As alterações feitas no design exigem a ativação do design para entrar em vigor na publicação.
 
 1. Abra o **[!UICONTROL Vídeo do Foundation]** caixa de diálogo design do componente e altere para a **[!UICONTROL Perfis]** guia. Em seguida, exclua os perfis prontos para uso e adicione os novos perfis de vídeo S7. A ordem da lista de perfis na caixa de diálogo design define a ordem do elemento de fontes de vídeo durante a renderização.
 1. Para navegadores que não aceitam o HTML5, o componente de vídeo permite configurar um fallback de Flash. Abra a caixa de diálogo design de componentes de vídeo e altere para a **[!UICONTROL Flash]** guia. Defina as configurações do reprodutor Flash e atribua um perfil de fallback para o reprodutor flash.
