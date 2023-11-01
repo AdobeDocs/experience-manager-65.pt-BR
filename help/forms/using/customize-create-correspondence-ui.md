@@ -7,7 +7,7 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 1%
@@ -71,7 +71,7 @@ Use as etapas a seguir para criar a estrutura de pastas necessária no `/apps` f
 
       >[!NOTE]
       >
-      >Não altere o `/libs` filial. As alterações feitas podem ser perdidas, pois essa ramificação pode sofrer alterações sempre que você:
+      >Não altere o `/libs` filial. As alterações feitas podem ser perdidas, pois essa ramificação é responsável por qualquer alteração sempre que você:
       >
       >    
       >    
@@ -83,7 +83,7 @@ Use as etapas a seguir para criar a estrutura de pastas necessária no `/apps` f
 
    1. Clique em **OK**. A pasta css é criada no caminho especificado.
 
-1. Na pasta de aplicativos, crie uma pasta chamada `imgs` com caminho/estrutura semelhante à pasta imgs (na pasta ccrui).
+1. Na pasta de aplicativos, crie uma pasta chamada `imgs` com caminho/estrutura semelhante ao `imgs` pasta (na pasta ccrui).
 
    1. Clique com o botão direito do mouse no **imgs** no seguinte caminho e selecione **Sobrepor nó**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Certifique-se de que a caixa de diálogo Sobrepor nó tenha os seguintes valores:

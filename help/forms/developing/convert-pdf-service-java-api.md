@@ -1,36 +1,34 @@
 ---
-title: Converter PDF Service Java API QuickStart (SOAP)
-description: O serviço Convert PDF converte documentos PDF para PostScript ou arquivos de imagem (JPEG, JPEG 2000, PNG e TIFF).
-uuid: 97253ac7-f0c1-4766-a7bd-c19af52adf51
+title: Converter PDF Service Java&trade; API QuickStart (SOAP)
+description: Saiba como o serviço Converter PDF converte documentos PDF em PostScript ou arquivos de imagem (JPEG, JPEG 2000, PNG e TIFF).
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: bdd9bb56-14f6-448b-be4a-7c11f670e901
 role: Developer
 exl-id: 8974c468-ff2b-431d-96fb-e987698619bc
-source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
 
-# Converter INÍCIO rápido da API Java do serviço de PDF (SOAP) {#convert-pdf-service-java-api-quickstart-soap}
+# Converter INÍCIO rápido da API Java™ do serviço de PDF (SOAP) {#convert-pdf-service-java-api-quickstart-soap}
 
 Os seguintes Quick Starts estão disponíveis para a API de serviço Converter PDF.
 
-[Início rápido (modo SOAP): conversão de um documento PDF em PostScript usando a API do Java](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
+[Início rápido (modo SOAP): conversão de um documento PDF em PostScript usando o Java](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
 
-[Início rápido (modo SOAP): conversão de um documento PDF em arquivos JPEG usando a API Java](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
+[Início rápido (modo SOAP): conversão de um documento PDF em arquivos JPEG usando o Java](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
 
 As operações do AEM Forms podem ser executadas usando a API altamente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
->O Início rápido, localizado em Programação com formulários AEM, é baseado no Forms Server que está sendo implantado no JBoss Application Server e no sistema operacional Microsoft Windows. No entanto, se você estiver usando outro sistema operacional, como o UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicações J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+>Os Quick Starts na programação com formulários AEM são baseados no Forms Server sendo implantado no JBoss® Application Server e no sistema operacional Microsoft® Windows. No entanto, se você estiver usando outro sistema operacional, como o UNIX®, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicações J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Início rápido (modo SOAP): conversão de um documento PDF em PostScript usando a API do Java {#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api}
+## Início rápido (modo SOAP): conversão de um documento PDF em PostScript usando a API Java™ {#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api}
 
 O exemplo de código a seguir converte um documento PDF chamado *Loan.pdf* para um documento PostScript chamado *Empréstimo.ps*. (Consulte [Conversão de documentos PDF em PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript).)
 
@@ -145,9 +143,9 @@ O exemplo de código a seguir converte um documento PDF chamado *Loan.pdf* para 
  }
 ```
 
-## Início rápido (modo SOAP): conversão de um documento PDF em arquivos JPEG usando a API Java {#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api}
+## Início rápido (modo SOAP): conversão de um documento PDF em arquivos JPEG usando a API Java™ {#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api}
 
-O exemplo de código Java a seguir converte um documento PDF chamado *Loan.pdf* para um conjunto de arquivos JPEG e os armazena no diretório C:\Adobe. Cada arquivo é nomeado `tempFile[index].jpg`, onde o primeiro arquivo de imagem é nomeado *tempFile0.jpg*. (Consulte [Conversão de documentos PDF em formatos de imagem](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats).)
+O exemplo de código Java™ a seguir converte um documento PDF chamado *Loan.pdf* para um conjunto de arquivos JPEG e os armazena no diretório C:\Adobe. Cada arquivo é nomeado `tempFile[index].jpg`, onde o primeiro arquivo de imagem é nomeado *tempFile0.jpg*. (Consulte [Conversão de documentos PDF em formatos de imagem](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats).)
 
 ```java
  /*

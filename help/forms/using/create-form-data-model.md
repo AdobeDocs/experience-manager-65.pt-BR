@@ -1,15 +1,13 @@
 ---
 title: "Tutorial: Criar modelo de dados de formulário"
-description: Configure o MySQL como fonte de dados, crie o modelo de dados de formulário (FDM), configure-o e teste para o AEM Forms.
-uuid: b9d2bb1b-90f0-44f4-b1e3-0603cdf5f5b8
+description: Saiba como configurar o MySQL como fonte de dados, criar o modelo de dados de formulário (FDM), configurá-lo e testar o AEM Forms.
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
-discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1528'
 ht-degree: 1%
 
 ---
@@ -18,7 +16,7 @@ ht-degree: 1%
 
 ![04-criar-formulário-modelo-dados-principal](assets/04-create-form-data-model-main.png)
 
-Este tutorial é uma etapa da [Criar O Primeiro Formulário Adaptável](../../forms/using/create-your-first-adaptive-form.md) série. É recomendável seguir a série em sequência cronológica para entender, executar e demonstrar o caso de uso completo do tutorial.
+Este tutorial é uma etapa da [Criar O Primeiro Formulário Adaptável](../../forms/using/create-your-first-adaptive-form.md) série. A Adobe recomenda que você siga a série em sequência cronológica para entender, executar e demonstrar o caso de uso tutorial completo.
 
 ## Sobre o tutorial {#about-the-tutorial}
 
@@ -49,7 +47,7 @@ Antes de começar, verifique se você tem o seguinte:
 
 ## Etapa 1: configurar o banco de dados MySQL como fonte de dados {#config-database}
 
-É possível configurar diferentes tipos de fontes de dados para criar um modelo de dados de formulário. Para este tutorial, configuraremos o banco de dados MySQL que você configurou e preencheu com dados de amostra. Para obter informações sobre outras fontes de dados compatíveis e como configurá-las, consulte [Integração de dados do AEM Forms](../../forms/using/data-integration.md).
+É possível configurar diferentes tipos de fontes de dados para criar um modelo de dados de formulário. Para este tutorial, você configura o banco de dados MySQL que configurou e preencheu com dados de amostra. Para obter informações sobre outras fontes de dados compatíveis e como configurá-las, consulte [Integração de dados do AEM Forms](../../forms/using/data-integration.md).
 
 Faça o seguinte para configurar suas [!DNL MySQL] banco de dados:
 
@@ -60,7 +58,7 @@ Faça o seguinte para configurar suas [!DNL MySQL] banco de dados:
 
    1. Toque **[!UICONTROL Instalar/Atualizar]**. Um [!UICONTROL Carregar/instalar pacotes] será exibida.
 
-   1. Toque **[!UICONTROL Escolher arquivo]** para procurar e selecionar a variável [!DNL MySQL] Pacote OSGi do driver JDBC. Selecionar **[!UICONTROL Iniciar pacote]** e **[!UICONTROL Atualizar pacotes]** e toque em **[!UICONTROL Instalar ou atualizar]**. Certifique-se de que o [!DNL Oracle Corporation's] Driver JDBC para [!DNL MySQL] está ativo. O motorista está instalado.
+   1. Toque **[!UICONTROL Escolher arquivo]** para procurar e selecionar a variável [!DNL MySQL] Pacote OSGi do driver JDBC. Selecionar **[!UICONTROL Iniciar pacote]** e **[!UICONTROL Atualizar pacotes]** e toque em **[!UICONTROL Instalar ou atualizar]**. Certifique-se de que o [!DNL Oracle Corporation's] Driver [!DNL MySQL] JDBC esteja ativo. O motorista está instalado.
 
 1. Configure [!DNL MySQL] o banco de dados como um fonte de dados:
 
@@ -70,23 +68,23 @@ Faça o seguinte para configurar suas [!DNL MySQL] banco de dados:
 
       * **Nome da fonte de dados:** Você pode especificar qualquer nome. Por exemplo, especifique **WeRetailMySQL**.
       * **Nome da propriedade do serviço DataSource**: especifique o nome da propriedade de serviço que contém o nome da DataSource. É especificado ao registrar a instância da fonte de dados como serviço OSGi. Por exemplo, **datasource.name**.
-      * **Classe de driver JDBC**: Especifique o nome da classe Java do driver JDBC. Para [!DNL MySQL] banco de dados, especificar **com.mysql.jdbc.Driver**.
-      * **URI** de conexão JDBC: especifique o URL de conexão do banco de dados. Para [!DNL MySQL] o banco de dados em execução em porta 3306 e o schema foramtail, a URL é: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **Classe de driver JDBC**: especifique o nome da classe Java™ do driver JDBC. Para [!DNL MySQL] banco de dados, especificar **com.mysql.jdbc.Driver**.
+      * **URI** de conexão JDBC: especifique o URL de conexão do banco de dados. Para [!DNL MySQL] o banco de dados em execução em porta 3306 e schema `weretail`, a URL é: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
 
       >[!NOTE]
       >
-      > Quando o banco de dados está atrás de um firewall, o [!DNL MySQL] nome do host do banco de dados não é um DNS público. O endereço IP do banco de dados precisa ser adicionado no *arquivo /etc/hosts* da máquina AEM host.
+      > Quando o banco de dados está atrás de um firewall, o [!DNL MySQL] nome do host do banco de dados não é um DNS público. O endereço IP do banco de dados deve ser adicionado ao *arquivo /etc/hosts* da máquina AEM host.
 
       * **Nome de usuário:** Nome de usuário do banco de dados. É necessário habilitar o driver JDBC para estabelecer uma conexão com o banco de dados.
       * **Senha:** Senha do banco de dados. É necessário habilitar o driver JDBC para estabelecer uma conexão com o banco de dados.
 
       >[!NOTE]
       >
-      >O AEM Forms não oferece suporte à autenticação NT para [!DNL MySQL]. Vá para AEM console da Web no [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) e pesquisa &quot;Apache Sling Connection Pooled Datasource&quot;. Para &quot;URI de conexão JDBC&quot;, propriedade defina o valor de &quot;Segurança integrada&quot; como Falso e use o nome de usuário e o senha criados para se conectar ao [!DNL MySQL] banco de dados.
+      >O AEM Forms não oferece suporte à autenticação NT para [!DNL MySQL]. Vá para AEM console da Web no [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) e pesquisa &quot;Apache Sling Connection Pooled Datasource&quot;. Para &quot;URI de conexão JDBC&quot; propriedade, defina o valor de &quot;Segurança integrada&quot; como Falso e use o nome de usuário e o senha criados para conexão com [!DNL MySQL] o banco de dados.
 
       * **Testar em Emprestar:** ative a opção **[!UICONTROL Testar em Emprestar]** .
       * **Teste no retorno:** ative a opção **[!UICONTROL Testar no retorno]** .
-      * **Consulta de validação: especifique** um QUERY SQL SELECT para validar as conexões do pool. A consulta deve retornar pelo menos uma linha. Por exemplo, **selecionar &#42; dos detalhes do cliente**.
+      * **Consulta de validação:** Especifique uma consulta SQL SELECT para validar as conexões do pool. A consulta deve retornar pelo menos uma linha. Por exemplo, **selecionar &#42; dos detalhes do cliente**.
       * **Isolamento de transação**: Defina o valor como **READ_COMMITTED**.
 
         Deixar outras propriedades com o padrão [valores](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) e toque em **[!UICONTROL Salvar]**.
@@ -97,7 +95,7 @@ Faça o seguinte para configurar suas [!DNL MySQL] banco de dados:
 
 ## Etapa 2: Criar modelo de dados de formulário {#create-fdm}
 
-AEM [!DNL Forms] O oferece uma interface intuitiva para [criar um modelo de dados de formulário](data-integration.md) de fontes de dados configuradas. É possível usar várias fontes de dados em um modelo de dados de formulário. No nosso caso de uso, usaremos o configurado [!DNL MySQL] fonte de dados.
+AEM [!DNL Forms] O oferece uma interface intuitiva para [criar um modelo de dados de formulário](data-integration.md) de fontes de dados configuradas. É possível usar várias fontes de dados em um modelo de dados de formulário. Para esse caso de uso, é possível usar o configurado [!DNL MySQL] fonte de dados.
 
 Faça o seguinte para criar o modelo de dados de formulário:
 
@@ -126,7 +124,7 @@ Faça o seguinte para configurar o modelo de dados de formulário:
 
    ![default-fdm](assets/default-fdm.png)
 
-1. Expanda a árvore da fonte de dados WeRailMySQL. Selecione os seguintes serviços e objetos de modelo de dados em **weretail** > **customerdetails** esquema para formar o modelo de dados:
+1. Expanda a árvore da fonte de dados WeRailMySQL. Selecione os seguintes serviços e objetos de modelo de dados em **weretail** > **customerdetails** para que você possa formar o modelo de dados:
 
    * **Objetos do modelo de dados**:
 
@@ -167,19 +165,19 @@ Faça o seguinte para configurar o modelo de dados de formulário:
 
    1. Toque **[!UICONTROL Concluído]** para salvar as propriedades de objetos de modelo de dados. Em seguida, toque **[!UICONTROL Salvar]** para salvar o modelo de dados do formulário.
 
-      Os **[!UICONTROL serviços get]** e **[!UICONTROL update]** são adicionados como serviços padrão para o objeto de modelo de dados.
+      A variável **[!UICONTROL obter]** e **[!UICONTROL atualizar]** serviços são adicionados como serviços padrão para o objeto de modelo de dados.
 
       ![modelo de dados-objeto](assets/data-model-object.png)
 
 1. Vá para a **[!UICONTROL Serviços]** guia e configurar **[!UICONTROL obter]** e **[!UICONTROL atualizar]** serviços.
 
-   1. Selecione o **[!UICONTROL serviço obter]** e toque **[!UICONTROL em Editar Propriedades]**. A caixa de diálogo de propriedades é aberta.
+   1. Selecione o **[!UICONTROL obter]** serviço e toque em **[!UICONTROL Editar propriedades]**. A caixa de diálogo de propriedades é aberta.
    1. Especifique o seguinte na caixa de diálogo Editar Propriedades:
 
       * **** Título: especifique o título do serviço. Por exemplo: Recuperar endereço de envio.
-      * **** Descrição: especifique uma descrição contendo o funcionamento detalhado do serviço. Por exemplo:
+      * **Descrição**: especifique a descrição que contém o funcionamento detalhado do serviço. Por exemplo:
 
-        Este serviço recupera o endereço de entrega e outros detalhes do cliente de [!DNL MySQL] banco de dados
+        Este serviço recupera o endereço de entrega e outros detalhes do cliente do [!DNL MySQL] banco de dados
 
       * **Objeto de modelo de saída**: Selecione o schema que contém dados do cliente. Por exemplo:
 
@@ -207,7 +205,7 @@ Faça o seguinte para configurar o modelo de dados de formulário:
 
       * **Tipo de saída**: Selecionar **BOOLEANO**.
 
-      * **Argumentos**: selecione o argumento chamado **ID** e **customerdetails**.
+      * **Argumentos**: selecione o nome do argumento **ID** e **customerdetails**.
 
       Toque **[!UICONTROL Concluído]**. A variável **[!UICONTROL atualizar]** serviço para atualizar os detalhes do cliente na [!DNL MySQL] banco de dados está configurado.
 

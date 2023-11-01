@@ -1,11 +1,11 @@
 ---
 title: Desabilitar UAC para Configuração PDFG aplicável a JEE e OSGI
-description: Etapas para desativar o UAC para Configuração de PDFG para corrigir a conversão do Word em PDF.
+description: Saiba mais sobre as etapas para desativar a configuração de UAC para PDFG a fim de corrigir a conversão do Word em PDF.
 exl-id: 785b7bb4-7158-45ea-a1e5-eebf3dc3ebc3
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 3%
+source-wordcount: '262'
+ht-degree: 4%
 
 ---
 
@@ -13,14 +13,16 @@ ht-degree: 3%
 
 ## Problema {#issue}
 
-Quando o usuário tenta converter arquivos do Word ou Excel em PDF no Microsoft Windows Server, o seguinte erro é encontrado como:
+Quando o usuário tenta converter arquivos do Word ou Excel para o PDF no Microsoft® Windows Server, o seguinte erro é encontrado como:
 
-*Mensagem de erro do conversor primário: ALC-PDG-015-003-O sistema não pode abrir o arquivo de entrada. Envie seu arquivo novamente ou contate o administrador do sistema.*
+*Mensagem de erro do conversor primário:*
+*ALC-PDG-015-003-O sistema não pode abrir o arquivo de entrada. Envie seu arquivo novamente ou contate o administrador do sistema.*
 
 
 ## Solução {#solution}
 
-Execute as seguintes etapas para resolver o problema:
+Faça o seguinte:
+
 1. Para acessar o Utilitário de configuração do sistema, vá para **[!UICONTROL Iniciar > Executar]** e insira **[!UICONTROL MSCONFIG]**.
 1. Clique em **[!UICONTROL Ferramentas]** e role para baixo e selecione **[!UICONTROL Alterar Configurações de UAC]**. Clique em **[!UICONTROL Launch]** para executar o comando em uma nova janela.
 1. Ajuste o controle deslizante para o nível Nunca notificar. Quando terminar, feche a janela de comando e a janela Configuração do sistema.
@@ -35,6 +37,4 @@ Execute as seguintes etapas para resolver o problema:
 
 ## Aplica-se a {#appliesto}
 
-Essa solução aplica-se ao seguinte:
-* AEM Forms no servidor JEE
-* AEM Forms no servidor OSGi
+Essa solução se aplica ao AEM Forms no servidor JEE e ao AEM Forms no servidor OSGi.

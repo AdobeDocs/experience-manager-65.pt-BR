@@ -1,15 +1,13 @@
 ---
 title: Segurança de documentos | Manipulação de dados do usuário
-description: A Segurança de documentos do AEM Forms permite gerenciar dados do usuário e armazenamentos de dados, bem como acessar, excluir e exportar dados do usuário.
-uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
+description: Saiba mais sobre como a Segurança de documentos do AEM Forms permite gerenciar dados de usuários e armazenamentos de dados, além de acessar, excluir e exportar dados de usuários.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
 role: Admin
 exl-id: 00c01a12-1180-4f35-9179-461bf177c787
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '973'
 ht-degree: 0%
 
 ---
@@ -22,7 +20,7 @@ A segurança de documentos do AEM Forms permite criar, armazenar e aplicar confi
 
 ## Dados do usuário e armazenamentos de dados {#user-data-and-data-stores}
 
-A segurança de documentos armazena políticas e dados relacionados a documentos protegidos, incluindo dados do usuário em um banco de dados, como My Sql, Oracle, MS SQL Server e IBM DB2. Além disso, os dados de usuários autorizados em uma política do são armazenados no gerenciamento de usuários. Para obter informações sobre dados armazenados no gerenciamento de usuários, consulte [Gerenciamento de usuários do Forms: lidando com dados do usuário](/help/forms/using/user-management-handling-user-data.md).
+A segurança de documentos armazena políticas e dados relacionados a documentos protegidos, incluindo dados do usuário em um banco de dados, como My Sql, Oracle, MS® SQL Server e IBM® DB2®. Além disso, os dados de usuários autorizados em uma política do são armazenados no gerenciamento de usuários. Para obter informações sobre dados armazenados no gerenciamento de usuários, consulte [Gerenciamento de usuários do Forms: lidando com dados do usuário](/help/forms/using/user-management-handling-user-data.md).
 
 A tabela a seguir mapeia como a segurança de documentos organiza os dados nas tabelas do banco de dados.
 
@@ -38,7 +36,7 @@ A tabela a seguir mapeia como a segurança de documentos organiza os dados nas t
   </tr>
   <tr>
    <td><code>EdcAuditEntity</code></td>
-   <td>Armazena informações sobre eventos de auditoria, como eventos de usuário, eventos de documento e eventos de política.</td>
+   <td>Armazena informações sobre eventos de auditoria como eventos de usuário, eventos de documento e eventos de política.</td>
   </tr>
   <tr>
    <td><p><code>EdcLicenseEntity</code></p> </td>
@@ -69,7 +67,7 @@ A tabela a seguir mapeia como a segurança de documentos organiza os dados nas t
    <td>Armazena informações sobre políticas arquivadas. Uma política arquivada contém seu XML de política armazenado como um objeto Blob.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPolicySetPrincipalEntity</code></p> <p><code>EdcPolicySetPrincipalEnt</code><br /> (bancos de dados Oracle e MS SQL)</p> </td>
+   <td><p><code>EdcPolicySetPrincipalEntity</code></p> <p><code>EdcPolicySetPrincipalEnt</code><br /> (Oracle e bancos de dados MS® SQL)</p> </td>
    <td>Armazena o mapeamento entre o conjunto de políticas e os usuários.</td>
   </tr>
   <tr>
@@ -83,7 +81,7 @@ A tabela a seguir mapeia como a segurança de documentos organiza os dados nas t
 
 É possível acessar e exportar dados de segurança de documentos de usuários nos bancos de dados e, se necessário, excluí-los permanentemente.
 
-Para exportar ou excluir dados do usuário de um banco de dados, você precisa se conectar ao banco de dados usando um cliente de banco de dados e descobrir a ID principal com base em algumas informações de identificação pessoal do usuário. Por exemplo, para recuperar a ID principal de um usuário usando uma ID de logon, execute o seguinte `select` comando no banco de dados.
+Para exportar ou excluir dados do usuário de um banco de dados, você deve se conectar ao banco de dados usando um cliente de banco de dados e descobrir a ID principal com base em algumas informações de identificação pessoal do usuário. Por exemplo, para recuperar a ID principal de um usuário usando uma ID de logon, execute o seguinte `select` comando no banco de dados.
 
 No `select` , substitua o `<user_login_id>` com o ID de logon do usuário cuja ID principal você deseja recuperar da variável `EdcPrincipalUserEntity` tabela de banco de dados.
 
@@ -95,11 +93,11 @@ Depois de saber a ID principal, é possível exportar ou excluir os dados do usu
 
 ### Exportar dados do usuário {#export-user-data}
 
-Execute os seguintes comandos do banco de dados para exportar dados do usuário para uma ID principal das tabelas do banco de dados. No `select` comando, substituir `<principal_id>` com a ID principal do usuário cujos dados você deseja exportar.
+Execute os seguintes comandos de banco de dados para que você possa exportar dados do usuário para uma ID principal de tabelas de banco de dados. No `select` comando, substituir `<principal_id>` com a ID principal do usuário cujos dados você deseja exportar.
 
 >[!NOTE]
 >
->Os comandos a seguir usam nomes de tabelas de bancos de dados em bancos de dados My SQL e IBM DB2. Ao executar esses comandos em bancos de dados Oracle e MS SQL, substitua `EdcPolicySetPrincipalEntity` com `EdcPolicySetPrincipalEnt` nos comandos.
+>Os comandos a seguir usam nomes de tabelas de bancos de dados em My SQL e bancos de dados IBM® DB2®. Ao executar esses comandos em bancos de dados Oracle e MS® SQL, substitua `EdcPolicySetPrincipalEntity` com `EdcPolicySetPrincipalEnt` nos comandos.
 
 ```sql
 Select * from EdcPrincipalKeyEntity where principalid = '<principal_id>';
@@ -125,7 +123,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 >[!NOTE]
 >
->Para exportar dados do `EdcAuditEntity` tabela, use o [EventManager.exportEvents](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API que leva [FiltroDePesquisaDeEventos](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) como parâmetro para exportar dados de auditoria com base em `principalId`, `policyId`ou `licenseId`.
+Para exportar dados do `EdcAuditEntity` tabela, use o [EventManager.exportEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API que leva [FiltroDePesquisaDeEventos](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) como parâmetro para exportar dados de auditoria com base em `principalId`, `policyId`ou `licenseId`.
 
 Para obter dados completos sobre um usuário no sistema, acesse e exporte dados do banco de dados de gerenciamento de usuários. Para obter mais informações, consulte [Gerenciamento de usuários do Forms: tratamento de dados do usuário](/help/forms/using/user-management-handling-user-data.md).
 
@@ -134,7 +132,7 @@ Para obter dados completos sobre um usuário no sistema, acesse e exporte dados 
 Faça o seguinte para excluir dados de segurança de documentos para uma ID principal das tabelas do banco de dados.
 
 1. Desligue o servidor do AEM Forms.
-1. Execute os seguintes comandos de banco de dados para excluir dados da ID principal das tabelas de banco de dados para segurança de documentos. No `Delete` comando, substituir `<principal_id>` com a ID principal do usuário cujos dados você deseja excluir.
+1. Execute os seguintes comandos de banco de dados para que você possa excluir dados da ID principal das tabelas de banco de dados para segurança de documentos. No `Delete` comando, substituir `<principal_id>` com a ID principal do usuário cujos dados você deseja excluir.
 
    ```sql
    Delete from EdcPrincipalKeyEntity where principalid = '<principal_id>';
@@ -150,17 +148,17 @@ Faça o seguinte para excluir dados de segurança de documentos para uma ID prin
 
    >[!NOTE]
    >
-   >Para excluir dados do `EdcAuditEntity` tabela, use o [EventManager.deleteEvents](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API que leva [FiltroDePesquisaDeEventos](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) como parâmetro para excluir dados de auditoria com base em `principalId`, `policyId`ou `licenseId`.
+   Para excluir dados do `EdcAuditEntity` tabela, use o [EventManager.deleteEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API que leva [FiltroDePesquisaDeEventos](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) como parâmetro para excluir dados de auditoria com base em `principalId`, `policyId`ou `licenseId`.
 
 1. Os arquivos XML da política ativa e arquivada são armazenados no `EdcPolicyXmlEntity` e `EdcPolicyArchiveEntity` tabelas de banco de dados, respectivamente. Para excluir dados de um usuário dessas tabelas, faça o seguinte:
 
    1. Abra o blob XML de cada linha no `EdcPolicyXMLEntity` ou `EdcPolicyArchiveEntity` e extrair o arquivo XML. O arquivo XML é semelhante ao mostrado abaixo.
-   1. Edite o arquivo XML para remover o blob da ID principal.
+   1. Edite o arquivo XML para que você possa remover o blob da ID principal.
    1. Repita as etapas 1 e 2 para o outro arquivo.
 
    >[!NOTE]
    >
-   >Você deve remover o blob completo dentro do `Principal` para uma ID principal ou o XML da política pode ficar corrompido ou inutilizável.
+   Remova o blob completo dentro do `Principal` para uma ID principal ou o XML da política pode ficar corrompido ou inutilizável.
 
    ```xml
    <ns2:Principal PrincipalNameType="USER">
@@ -193,7 +191,7 @@ Faça o seguinte para excluir dados de segurança de documentos para uma ID prin
 
    **Uso do console de administração**
 
-   1. Como administrador, faça logon no console de administração do Forms JEE, em https://[*server*]:[*porta*]/adminui
+   1. Como administrador, faça logon no console de administração do Forms JEE em https://[*server*]:[*porta*]/adminui
    1. Navegue até **[!UICONTROL Serviços > Segurança de documentos > Conjuntos de políticas]**.
    1. Abra um conjunto de políticas e exclua o usuário da política.
 
@@ -207,7 +205,7 @@ Faça o seguinte para excluir dados de segurança de documentos para uma ID prin
 
    >[!NOTE]
    >
-   >Os administradores podem pesquisar, acessar e excluir dados de usuários a partir de políticas pessoais de outros usuários no **[!UICONTROL Serviços > Segurança de documentos > Minhas políticas]** usando o console de administração.
+   Os administradores podem pesquisar, acessar e excluir dados de usuários a partir de políticas pessoais de outros usuários no **[!UICONTROL Serviços > Segurança de documentos > Minhas políticas]** usando o console de administração.
 
 1. Excluir os dados da ID da entidade de segurança do banco de dados de gerenciamento de usuários. Para obter etapas detalhadas, consulte [Gerenciamento de usuários do Forms | Manipulação de dados do usuário](/help/forms/using/user-management-handling-user-data.md).
 1. Inicie o servidor do AEM Forms.

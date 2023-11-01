@@ -1,17 +1,15 @@
 ---
 title: Noções básicas sobre processos do AEM Forms
-description: Os processos do AEM Forms abrangem criação de formulários, envio, manipulação de dados, validação, integração, automação de fluxos de trabalho e gerenciamento de saídas.
-uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
+description: Saiba como os processos do AEM Forms incluem criação de formulários, envio, manipulação de dados, validação, integração, automação de fluxo de trabalho e gerenciamento de saídas.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: development-tools, coding
-discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 role: Developer
 exl-id: 434ac316-8a01-43a6-844b-1b792f60fa21
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '814'
 ht-degree: 0%
 
 ---
@@ -63,7 +61,7 @@ Quando esse processo de vida curta é chamado, ele executa as seguintes ações:
    *Programação com formulários AEM* A descreve as seguintes maneiras de invocar programaticamente esse processo de curta duração:
 
    * [Chamar um processo de vida curta transmitindo um documento não seguro usando o AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (Usando um aplicativo do Flex)
-   * [Chamar um processo de vida curta usando a API de chamada](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (API de chamada Java)
+   * [Chamar um processo de vida curta usando a API de chamada](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (API de chamada Java™)
    * [Chamada de AEM Forms usando codificação Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) (exemplo de serviço da web)
    * [Chamar o AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (exemplo de serviço da web)
    * [Chamar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref) (exemplo de serviço da web)

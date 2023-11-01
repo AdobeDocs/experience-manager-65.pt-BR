@@ -1,14 +1,12 @@
 ---
 title: Uso de um formulário adaptável no HTML Workspace
-description: Saiba como usar um Formulário adaptável no HTML Workspace para permitir que os trabalhadores de campo acessem o formulário em seus dispositivos.
-uuid: 473d5daf-a3ed-449f-9136-585755b59922
+description: Saiba como usar um Formulário adaptável no HTML Workspace que permite que os trabalhadores de campo acessem o formulário em seus dispositivos.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 2b6875cd-2ee7-4aa8-90c7-d33583dc2f0e
 docset: aem65
 exl-id: 15b9ae98-059f-4bf7-bfdd-9cfeb8eb30a4
-source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
 source-wordcount: '704'
 ht-degree: 0%
@@ -19,7 +17,7 @@ ht-degree: 0%
 
 O AEM Forms no JEE fornece a capacidade de usar um formulário adaptável no HTML Workspace.
 
-Como é possível selecionar um XDP durante o design do processo, a capacidade de navegar a partir de um repositório AEM de formulário adaptável existente foi adicionada. A capacidade fornece ao Designer de processos a capacidade de configurar um formulário adaptável no Ponto inicial, bem como na Tarefa.
+Como é possível selecionar um XDP durante o design do processo, a capacidade de navegar a partir de um repositório AEM de formulário adaptável existente foi adicionada. O recurso oferece ao Designer de processos a capacidade de configurar um formulário adaptável no Ponto inicial e na Tarefa.
 
 ## Experiência de design de processos {#process-design-experience}
 
@@ -47,7 +45,7 @@ O HTML Workspace fornece alguns controles específicos para formulários adaptá
 
 1. **Controles de navegação do Workspace para o Adaptive Forms**: os botões Next/Previous estão disponíveis junto com os botões Save, Submit e Route Action para um formulário adaptável no HTML Workspace. Clique em Botões Avançar/Anterior para navegar pelos painéis de formulários adaptáveis no HTML Workspace. Os botões Próximo/Anterior fornecem navegação profunda, semelhante aos controles de navegação na exibição Móvel de formulários adaptáveis.
 
-1. **Serviços eSign e Componente de Resumo do Formulário adaptável**: o componente de Resumo não está operacional no HTML Workspace. Em outras palavras, se um formulário adaptável tiver um componente Resumo, ele não estará visível no espaço de trabalho. Em vez de Enviar automaticamente no componente de Design, o usuário do espaço de trabalho clica na ação Enviar ou em uma ação de rota no HTML Workspace. Depois que um documento é assinado, ele fica visível como um documento simples assinado. Clique em **Enviar** ou uma ação de rota para fechar/concluir a tarefa ou o Ponto Inicial.\
+1. **Serviços eSign e Componente de Resumo do Formulário adaptável**: o componente de Resumo não está operacional no HTML Workspace. Em outras palavras, se um formulário adaptável tiver um componente Resumo, ele não estará visível no espaço de trabalho. Em vez de Enviar automaticamente no componente E-sign, o usuário do espaço de trabalho clica na ação Enviar ou em uma ação de rota no HTML Workspace. Depois que um documento é assinado, ele fica visível como um documento simples assinado. Clique em **Enviar** ou uma ação de rota para que você possa fechar/concluir a tarefa ou o Ponto Inicial.\
    O documento assinado é coletado do servidor de serviços do eSign e o arquivo xml de dados é encaminhado para a próxima etapa do processo.
 
 ## Etapas para usar formulários adaptáveis no design do processo {#steps-to-use-adaptive-forms-in-process-design}
@@ -58,13 +56,13 @@ O HTML Workspace fornece alguns controles específicos para formulários adaptá
 
    ![Criar novo aplicativo](assets/create_new_appl.png)
 
-   Criar novo aplicativo
+   Criar aplicativo
 
 1. Crie um processo ou use um processo existente no aplicativo.
 
    ![Criar novo processo](assets/create_new_process.png)
 
-   Criar novo processo
+   Criar processo
 
 1. Crie um Ponto de Início ou Atribuir Tarefa e clique duas vezes nele.
 1. No **[!UICONTROL Apresentação e dados]** , selecione **[!UICONTROL usar um ativo CRX]** e clique nas reticências antes do ativo.

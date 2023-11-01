@@ -1,16 +1,14 @@
 ---
 title: Configurar uma solução de gerenciamento de correspondência
-description: Configure uma solução de Gerenciamento de correspondência no ambiente do AEM Forms.
-uuid: 76b25004-fe47-44d7-9bed-7c0fd963306b
+description: Saiba como configurar uma solução de Gerenciamento de correspondência em um ambiente do AEM Forms.
 topic-tags: correspondence-management
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
-discoiquuid: 186ca75c-638b-4057-826e-cd5d56aa0397
 feature: Correspondence Management
 exl-id: f7f5eb0d-a283-45ea-84d3-d6375d2bb95b
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '301'
 ht-degree: 1%
 
 ---
@@ -37,7 +35,7 @@ Use as etapas a seguir para definir um URL da instância do autor para a restaur
 
 ## Definição do URL da instância de publicação para AtivationManagerImpl (gerenciador de ativação da instância pública) {#defining-the-publish-instance-url-for-activationmanagerimpl-public-instance-activation-manager}
 
-Siga estas etapas para definir o URL da instância de publicação para o gerenciador de ativação da instância pública:
+Siga estas etapas para poder definir o URL da instância de publicação para o gerenciador de ativação da instância pública:
 
 1. Ir para *https://:&lt;authorhost>:&lt;authorport>/lc/system/console/configMgr*. Faça logon com as credenciais de usuário do Console de gerenciamento OSGi. As credenciais padrão são admin/admin.
 1. Localize e clique no link **[!UICONTROL Editar]** ícone ao lado do **[!UICONTROL com.adobe.livecycle.content.ativate.impl.AtivationManagerImpl.name]** configuração.

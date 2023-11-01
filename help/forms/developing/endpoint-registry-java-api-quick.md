@@ -1,56 +1,54 @@
 ---
-title: QuickStart da API Java do Registro de Ponto de Extremidade (SOAP)
-description: Adicione endpoints como EJB, SOAP, Pasta monitorada, endpoint de email, endpoint de comunicação remota e muito mais. Além disso, modifique, remova e recupere um endpoint usando a API Java.
-uuid: 986c55d0-e199-46f8-a3cc-a6baf5cce316
+title: Registro de ponto de extremidade Java&trade; API QuickStart(SOAP)
+description: Saiba como adicionar endpoints como EJB, SOAP, Pasta monitorada, endpoint de email e endpoint de comunicação remota e editar, remover e recuperar endpoints usando a API Java&trade;.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 role: Developer
 exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
-source-git-commit: 1917989005a98469776befc967e40ab7b40c31f5
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
 
-# Início Rápido da API Java do Registro de Ponto de Extremidade (SOAP) {#endpoint-registry-java-api-quickstart-soap}
+# Início Rápido da API Java™ do Registro de Ponto de Extremidade (SOAP) {#endpoint-registry-java-api-quickstart-soap}
 
-O Java API Quick Start (SOAP) está disponível para o Endpoint Registry.
+O Java™ API Quick Start (SOAP) está disponível para o Registro de endpoint.
 
-[QuickStart: adicionando um endpoint EJB usando a API Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
+[QuickStart: Adicionando um endpoint de EJB usando o Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
 
-[QuickStart: adicionando um endpoint SOAP usando a API Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
+[QuickStart: adicionando um endpoint SOAP usando o Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
-[QuickStart: adicionando um endpoint de pasta monitorada usando a API Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
+[QuickStart: adicionando um endpoint de pasta monitorada usando o Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
 
-[QuickStart: adicionando um endpoint de email usando a API Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)
+[QuickStart: adicionando um endpoint de email usando o Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)
 
-[QuickStart: adicionando um endpoint de comunicação remota usando a API Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
+[QuickStart: adicionando um endpoint de comunicação remota usando o Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
 
-[QuickStart: adicionando um endpoint TaskManager usando a API Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
+[QuickStart: adicionando um endpoint TaskManager usando o Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
 
-[QuickStart: modificando um endpoint usando a API Java](endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
+[QuickStart: modificando um endpoint usando o Java](endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
 
-[QuickStart: removendo um endpoint usando a API Java](endpoint-registry-java-api-quick.md#quickstart-removing-an-endpoint-using-the-java-api)
+[QuickStart: removendo um endpoint usando o Java](endpoint-registry-java-api-quick.md#quickstart-removing-an-endpoint-using-the-java-api)
 
-[QuickStart: recuperando informações do conector de ponto de extremidade usando a API Java](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
+[QuickStart: recuperando informações do conector de ponto de extremidade usando o Java](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
 As operações do AEM Forms podem ser executadas usando a API altamente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
->O início rápido, localizado em Programação com formulários AEM, é baseado no Forms se você estiver usando outro sistema operacional, como Unix, substituir caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicações J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Os Quick Starts na programação com formulários AEM são baseados no Forms se você estiver usando outro sistema operacional, como o UNIX®, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicações J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
->Não é possível trabalhar com endpoints usando um serviço da Web.
+Não é possível trabalhar com endpoints usando um serviço da Web.
 
-## QuickStart: adicionando um endpoint EJB usando a API Java {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
+## QuickStart: adicionando um endpoint EJB usando a API Java™ {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
 
-O exemplo de código Java a seguir adiciona um terminal EJB a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionando pontos finais EJB](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints).)
+O exemplo de código Java™ a seguir adiciona um terminal EJB a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionando pontos finais EJB](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints).)
 
 ```java
  /*
@@ -147,9 +145,9 @@ O exemplo de código Java a seguir adiciona um terminal EJB a um serviço chamad
  
 ```
 
-## QuickStart: adicionando um endpoint SOAP usando a API Java {#quickstart-adding-a-soap-endpoint-using-the-java-api}
+## QuickStart: adicionando um endpoint SOAP usando a API Java™ {#quickstart-adding-a-soap-endpoint-using-the-java-api}
 
-O exemplo de código Java a seguir adiciona um terminal SOAP a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionando pontos de extremidade SOAP](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
+O exemplo de código Java™ a seguir adiciona um terminal SOAP a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionando pontos de extremidade SOAP](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
 
 ```java
  /*
@@ -247,13 +245,13 @@ O exemplo de código Java a seguir adiciona um terminal SOAP a um serviço chama
  
 ```
 
-## QuickStart: adicionando um endpoint de pasta monitorada usando a API Java {#quickstart-adding-a-watched-folder-endpoint-using-the-java-api}
+## QuickStart: adicionando um endpoint de pasta monitorada usando a API Java™ {#quickstart-adding-a-watched-folder-endpoint-using-the-java-api}
 
-O exemplo de código Java a seguir adiciona um terminal Pasta monitorada a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionar pontos de extremidade da pasta monitorada](/help/forms/developing/programmatically-endpoints.md#adding-watched-folder-endpoints).)
+O exemplo de código Java™ a seguir adiciona um terminal Pasta monitorada a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionar pontos de extremidade da pasta monitorada](/help/forms/developing/programmatically-endpoints.md#adding-watched-folder-endpoints).)
 
 >[!NOTE]
 >
->Você deve incluir o arquivo WatchedFolderEndpointConfigConstants.java no projeto para compilar e executar o início rápido a seguir. (Consulte [Arquivo constante de valores de configuração da pasta monitorada](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
+Inclua o arquivo WatchedFolderEndpointConfigConstants.java no projeto para que você possa compilar e executar o início rápido a seguir. (Consulte [Arquivo constante de valores de configuração da pasta monitorada](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
 
 ```java
  /*
@@ -382,13 +380,13 @@ O exemplo de código Java a seguir adiciona um terminal Pasta monitorada a um se
  
 ```
 
-## QuickStart: adicionando um endpoint de email usando a API Java {#quickstart-adding-an-email-endpoint-using-the-java-api}
+## QuickStart: adicionando um endpoint de email usando a API Java™ {#quickstart-adding-an-email-endpoint-using-the-java-api}
 
-O exemplo de código Java a seguir adiciona um terminal de email a um serviço chamado *MyApplication/EncryptDocument* t. (Consulte [Adicionar pontos de extremidade de email](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints).)
+O exemplo de código Java™ a seguir adiciona um terminal de email a um serviço chamado *MyApplication/EncryptDocument* t. (Consulte [Adicionar pontos de extremidade de email](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints).)
 
 >[!NOTE]
 >
->Você deve incluir o arquivo EmailEndpointConfigConstants.java no projeto para compilar e executar o início rápido a seguir. (Consulte [Arquivo de constante de valores de configuração de email](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
+Inclua o arquivo EmailEndpointConfigConstants.java no projeto para que você possa compilar e executar o início rápido a seguir. (Consulte [Arquivo de constante de valores de configuração de email](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
 
 ```java
  /*
@@ -525,9 +523,9 @@ O exemplo de código Java a seguir adiciona um terminal de email a um serviço c
  
 ```
 
-## QuickStart: adicionando um endpoint de comunicação remota usando a API Java {#quickstart-adding-a-remoting-endpoint-using-the-java-api}
+## QuickStart: adicionando um endpoint de comunicação remota usando a API Java™ {#quickstart-adding-a-remoting-endpoint-using-the-java-api}
 
-O exemplo de código Java a seguir adiciona um terminal de Comunicação Remota a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionando Pontos de Extremidade de Comunicação Remota](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints).)
+O exemplo de código Java™ a seguir adiciona um terminal de Comunicação Remota a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionando Pontos de Extremidade de Comunicação Remota](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints).)
 
 ```java
  /*
@@ -630,9 +628,9 @@ O exemplo de código Java a seguir adiciona um terminal de Comunicação Remota 
  
 ```
 
-## QuickStart: adicionando um endpoint TaskManager usando a API Java {#quickstart-adding-a-taskmanager-endpoint-using-the-java-api}
+## QuickStart: adicionando um endpoint TaskManager usando a API Java™ {#quickstart-adding-a-taskmanager-endpoint-using-the-java-api}
 
-O exemplo de código Java a seguir adiciona um ponto de extremidade TaskManager a um serviço chamado *MyApplication/EncryptDocument*. Observe que o nome da categoria é *EncryptProcess*. (Consulte [Adicionando pontos finais do Gerenciador de Tarefas](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints).)
+O exemplo de código Java™ a seguir adiciona um ponto de extremidade TaskManager a um serviço chamado *MyApplication/EncryptDocument*. Observe que o nome da categoria é *EncryptProcess*. (Consulte [Adicionando pontos finais do Gerenciador de Tarefas](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints).)
 
 ```java
  /*
@@ -739,9 +737,9 @@ O exemplo de código Java a seguir adiciona um ponto de extremidade TaskManager 
  
 ```
 
-## QuickStart: modificando um endpoint usando a API Java {#quickstart-modifying-an-endpoint-using-the-java-api}
+## QuickStart: modificando um endpoint usando a API Java™ {#quickstart-modifying-an-endpoint-using-the-java-api}
 
-O exemplo de código Java a seguir modifica um ponto de extremidade de Pasta monitorada. O ponto de extremidade é para a *MyApplication/EncryptDocument* processo. A pasta monitorada foi alterada para `C:\NewWatchedFolder`. (Consulte [Modificação de Pontos de Extremidade](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints).)
+O código Java™ a seguir modifica um ponto de extremidade de Pasta monitorada. O endpoint é para a variável *MyApplication/EncryptDocument* processo. A pasta monitorada foi alterada para `C:\NewWatchedFolder`. (Consulte [Modificação de Pontos de Extremidade](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints).)
 
 ```java
  /*
@@ -889,9 +887,9 @@ O exemplo de código Java a seguir modifica um ponto de extremidade de Pasta mon
  
 ```
 
-## QuickStart: removendo um endpoint usando a API Java {#quickstart-removing-an-endpoint-using-the-java-api}
+## QuickStart: removendo um endpoint usando a API Java™ {#quickstart-removing-an-endpoint-using-the-java-api}
 
-O código Java a seguir remove um ponto de extremidade EJB de um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Removendo Pontos de Extremidade](/help/forms/developing/programmatically-endpoints.md#removing-endpoints).)
+O código Java™ a seguir remove um ponto de extremidade EJB de um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Removendo Pontos de Extremidade](/help/forms/developing/programmatically-endpoints.md#removing-endpoints).)
 
 ```java
  /*
@@ -1008,9 +1006,9 @@ O código Java a seguir remove um ponto de extremidade EJB de um serviço chamad
  
 ```
 
-## QuickStart: recuperando informações do conector de ponto de extremidade usando a API Java {#quickstart-retrieving-endpoint-connector-information-using-the-java-api}
+## QuickStart: recuperando informações do conector de ponto de extremidade usando a API Java™ {#quickstart-retrieving-endpoint-connector-information-using-the-java-api}
 
-O código Java a seguir recupera informações sobre um ponto de extremidade de pasta monitorada. As informações sobre cada valor de configuração são recuperadas e exibidas. Esta lista de códigos especifica se cada valor de configuração é obrigatório ou opcional. Além disso, o nome e o valor de cada valor de configuração são exibidos. (Consulte [Recuperando Informações do Conector do Ponto de Extremidade](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information).)
+O código Java™ a seguir recupera informações sobre um ponto de extremidade de pasta monitorada. As informações sobre cada valor de configuração são recuperadas e exibidas. Esta lista de códigos especifica se cada valor de configuração é obrigatório ou opcional. Além disso, o nome e o valor de cada valor de configuração são exibidos. (Consulte [Recuperando Informações do Conector do Ponto de Extremidade](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information).)
 
 ```java
  /*

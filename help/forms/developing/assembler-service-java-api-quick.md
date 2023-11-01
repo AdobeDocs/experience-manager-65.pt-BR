@@ -1,20 +1,20 @@
 ---
-title: QuickStart (SOAP) da API Java do serviço do Assembler
-description: Montar, desmontar e criar dinamicamente um documento PDF usando o serviço de Assembler Java API QuickStart(SOAP).
+title: Java&trade; API QuickStart (SOAP) do serviço Assembler
+description: Saiba como Montar, Desmontar e criar dinamicamente um documento PDF usando o Java&trade; API QuickStart (SOAP) do Serviço de Assembler.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 306cd40b-1831-45aa-9f58-3ab1983a68c5
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
 
-# QuickStart (SOAP) da API Java do serviço do Assembler {#assembler-service-java-api-quickstart-soap}
+# QuickStart (SOAP) da API Java™ do serviço do Assembler {#assembler-service-java-api-quickstart-soap}
 
 O Java API Quick Start (SOAP) está disponível para o serviço Assembler
 
@@ -44,7 +44,7 @@ As operações do AEM Forms podem ser executadas usando a API altamente tipada d
 
 >[!NOTE]
 >
->O Início rápido, localizado em Programação com o AEM Forms, é baseado no Forms Server que está sendo implantado no JBoss Application Server e no sistema operacional Microsoft Windows. No entanto, se você estiver usando outro sistema operacional, como o UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicações J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+>Os Quick Starts na programação com o AEM Forms são baseados no Forms Server que está sendo implantado no JBoss® Application Server e no sistema operacional Microsoft® Windows. No entanto, se você estiver usando outro sistema operacional, como o UNIX®, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicações J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Início rápido (modo SOAP): montagem de um documento PDF usando a API Java {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
 
@@ -1683,11 +1683,11 @@ O exemplo de código Java a seguir monta fragmentos XDP baseados nos seguintes a
 
 ## Início rápido (modo SOAP): Redação de um documento PDF usando a API Java {#quick-start-soap-mode-redacting-a-pdf-document-using-the-java-api}
 
-O exemplo de código a seguir redige um documento PDF usando `PDFUtility`.
+O exemplo de código a seguir redige um documento PDF usando o `PDFUtility`.
 
 >[!NOTE]
 >
->`PDFUtility` O pode redigir somente os PDF marcados para redação usando o Acrobat.
+A variável `PDFUtility` O pode redigir somente os PDF marcados para redação usando o Acrobat.
 
 ```java
 /*

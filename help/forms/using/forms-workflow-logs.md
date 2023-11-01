@@ -1,23 +1,21 @@
 ---
 title: Fazer logon em workflows do AEM Forms
-description: Depurar problemas de fluxo de trabalho do AEM Forms e ativar o log de depuração para fluxos de trabalho do AEM Forms para exibir os logs.
-uuid: 869d0271-c7e3-4b6d-8e63-893dc6af8b8a
+description: Saiba como depurar problemas de fluxo de trabalho do AEM Forms e habilitar o log de depuração para fluxos de trabalho do AEM Forms para visualizar os logs.
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 14bb521a-42ea-4fe2-90fb-202e7ddf917a
 docset: aem65
 exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '292'
 ht-degree: 5%
 
 ---
 
 # Fazer logon em workflows do AEM Forms{#logging-in-aem-forms-workflows}
 
-As etapas de fluxo de trabalho do Forms fornecem logs detalhados para depurar problemas relacionados ao fluxo de trabalho convenientemente. Habilite o log de depuração para workflows do AEM Forms para visualizar os logs.
+As etapas de Forms Workflow fornecem registros detalhados para depurar problemas relacionados ao fluxo de trabalho convenientemente. Habilite o log de depuração para workflows do AEM Forms para visualizar os logs.
 
 Por padrão, todas as informações de registro estão disponíveis no **error.log** arquivo no */crx-repository/logs/* diretório.
 
@@ -76,7 +74,7 @@ Se houver uma exceção, você poderá exibir o rastreamento de pilha completo p
 
 ## Habilitar log de depuração para workflows do AEM Forms {#enable-debug-logging-for-aem-forms-workflows}
 
-Execute as seguintes etapas para ativar o log de depuração para workflows do AEM Forms:
+Faça o seguinte para ativar o log de depuração para workflows do AEM Forms:
 
 1. Vá para o gerenciador de configuração do console da Web do AEM em:
 

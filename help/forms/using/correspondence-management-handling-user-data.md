@@ -1,15 +1,13 @@
 ---
 title: Gerenciamento de correspondência | Manipulação de dados do usuário
-description: Gerenciamento de correspondência e manuseio de dados do usuário no ambiente do AEM Forms.
-uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
+description: Saiba mais sobre o Gerenciamento de correspondência e como lidar com dados do usuário em um ambiente do Adobe Experience Manager Forms.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 role: Admin
 exl-id: a0c6a02c-47a3-4e70-a14c-953ee016b8e4
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -73,7 +71,7 @@ Você pode acessar dados de correspondência de rascunho e enviados nos armazena
 
 O Gerenciamento de correspondência fornece APIs que podem ser usadas para localizar e acessar instâncias de rascunho e de carta enviada. Usando as APIs, você pode localizar e abrir instâncias de cartas usando a ID de instância de cartas ou o usuário que salvou ou enviou a correspondência. Para obter mais informações, consulte [APIs para acessar instâncias de cartas](/help/forms/using/cm-apis-to-access-letter-instances.md).
 
-Como alternativa, você pode navegar até a ocorrência de carta no repositório AEM usando o CRX DELite. Consulte [Dados do usuário e armazenamentos de dados](/help/forms/using/correspondence-management-handling-user-data.md#data) para obter informações sobre os dados armazenados e o local do repositório.
+Como alternativa, você pode navegar até a ocorrência de correspondência no repositório AEM usando CRXDE Lite. Consulte [Dados do usuário e armazenamentos de dados](/help/forms/using/correspondence-management-handling-user-data.md#data) para obter informações sobre os dados armazenados e o local do repositório.
 
 ### Excluir dados do usuário {#delete-user-data}
 

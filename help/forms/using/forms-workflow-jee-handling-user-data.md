@@ -1,15 +1,13 @@
 ---
 title: Fluxos de trabalho do Forms JEE | Manipulação de dados do usuário
-description: Workflows do AEM Forms JEE para projetar, criar e gerenciar processos de negócios.
-uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
+description: Saiba como usar workflows do AEM Forms JEE para projetar, criar e gerenciar processos comerciais.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 role: Admin
 exl-id: 847fa303-8d1e-4a17-b90d-5f9da5ca2d77
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '1370'
+source-wordcount: '1388'
 ht-degree: 0%
 
 ---
@@ -44,7 +42,7 @@ No entanto, não é possível identificar a ID da instância do processo para um
 
 Execute as seguintes etapas para identificar IDs de instância de processo para um iniciador de fluxo de trabalho ou um participante:
 
-1. Execute o seguinte comando no banco de dados do servidor do AEM Forms para recuperar a ID principal do iniciador ou participante do fluxo de trabalho `edcprincipalentity` tabela de banco de dados.
+1. Execute o seguinte comando no banco de dados do AEM Forms Server para recuperar a ID principal do iniciador ou participante do workflow `edcprincipalentity` tabela de banco de dados.
 
    ```sql
    select id from edcprincipalentity where canonicalname='user_ID'
@@ -75,7 +73,7 @@ Execute as seguintes etapas para identificar IDs de instância de processo para 
 
    Para tarefas órfãs ou tarefas em que a `process_instance_id` é 0 (zero), anote as IDs de tarefa correspondentes e consulte [Trabalhar com tarefas órfãs](#orphan).
 
-1. Siga as instruções em [Limpar dados do usuário das instâncias de fluxo de trabalho com base nas IDs de instância de processo](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) seção para excluir dados do usuário para IDs de instância de processo identificadas.
+1. Siga as instruções em [Limpar dados do usuário das instâncias de fluxo de trabalho com base nas IDs de instância de processo](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) para que você possa excluir os dados do usuário referentes às IDs de instância de processo identificadas.
 
 ### Identificar IDs de instância de processo quando os dados do usuário são armazenados em variáveis primitivas {#primitive}
 
@@ -111,13 +109,13 @@ Execute as seguintes etapas para determinar se um workflow que armazena dados em
 
    A consulta retorna todas as IDs de instância de processo associadas à instância especificada `user_ID`.
 
-1. Siga as instruções em [Limpar dados do usuário das instâncias de fluxo de trabalho com base nas IDs de instância de processo](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) seção para excluir dados do usuário para IDs de instância de processo identificadas.
+1. Siga as instruções em [Limpar dados do usuário das instâncias de fluxo de trabalho com base nas IDs de instância de processo](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) para que você possa excluir os dados do usuário referentes às IDs de instância de processo identificadas.
 
 ### Limpar dados do usuário das instâncias de fluxo de trabalho com base nas IDs de instância de processo {#purge}
 
 Agora que você identificou as IDs de instância de processo associadas a um usuário, faça o seguinte para excluir os dados do usuário das respectivas instâncias de processo.
 
-1. Execute o seguinte comando para recuperar a ID de invocação de longa vida e o status de uma instância de processo do `tb_process_instance` tabela.
+1. Execute o comando a seguir para recuperar a ID de invocação de longa vida e o status de uma instância de processo do `tb_process_instance` tabela.
 
    ```sql
    select long_lived_invocation_id, status from tb_process_instance where id='process_instance_id'
@@ -127,7 +125,7 @@ Agora que você identificou as IDs de instância de processo associadas a um usu
 
 1. Criar uma instância do público `ProcessManager` cliente ( `com.adobe.idp.workflow.client.ProcessManager`) usando um `ServiceClientFactory` com as configurações de conexão corretas.
 
-   Para obter mais informações, consulte Referência da API Java para [Gerenciador de Processos de Classe](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
+   Para obter mais informações, consulte Referência da API Java™ para [Gerenciador de Processos de Classe](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
 
 1. Verifique o status da instância do workflow. Se o status for diferente de 2 (CONCLUÍDO) ou 4 (ENCERRADO), encerre a instância primeiro chamando o seguinte método:
 
@@ -137,15 +135,15 @@ Agora que você identificou as IDs de instância de processo associadas a um usu
 
    `ProcessManager.purgeProcessInstance(<long_lived_invocation_id>)`
 
-   A variável `purgeProcessInstance` O método exclui completamente todos os dados da ID de invocação especificada do banco de dados do servidor do AEM Forms e do GDS, se configurado.
+   A variável `purgeProcessInstance` O método exclui completamente todos os dados da ID de invocação especificada do banco de dados do AEM Forms Server e do GDS, se configurado.
 
 ### Trabalhar com tarefas órfãs {#orphan}
 
-Tarefas órfãs são as tarefas cujo processo de contenção foi iniciado, mas ainda não foi enviado. neste caso, a `process_instance_id` é **0** (zero). Portanto, não é possível rastrear dados do usuário armazenados para tarefas órfãs usando IDs de instância de processo. No entanto, é possível rastreá-la usando a ID da tarefa para uma tarefa órfã. É possível identificar as IDs das tarefas na `tb_task` para um usuário, conforme descrito em [Identificar IDs de instância de processo quando o iniciador ou participante do fluxo de trabalho for conhecido](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant).
+Tarefas órfãs são as tarefas cujo processo de contenção foi iniciado, mas ainda não foi enviado. Neste caso, o `process_instance_id` é **0** (zero). Portanto, não é possível rastrear dados do usuário armazenados para tarefas órfãs usando IDs de instância de processo. No entanto, é possível rastreá-la usando a ID da tarefa para uma tarefa órfã. É possível identificar as IDs das tarefas na `tb_task` para um usuário, conforme descrito em [Identificar IDs de instância de processo quando o iniciador ou participante do fluxo de trabalho for conhecido](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant).
 
 Depois de ter as IDs de tarefa, faça o seguinte para limpar os arquivos e dados associados a uma tarefa órfã do GDS e do banco de dados.
 
-1. Execute o seguinte comando no banco de dados do servidor do AEM Forms para recuperar IDs para as IDs da tarefa identificadas.
+1. Execute o seguinte comando no banco de dados do AEM Forms Server para que você possa recuperar IDs para as IDs de tarefas identificadas.
 
    ```sql
    select id from tb_form_data where task_id=<task_id>
@@ -185,7 +183,7 @@ Depois de ter as IDs de tarefa, faça o seguinte para limpar os arquivos e dados
       delete from tb_dm_deletion where sessionid=<session_id>
       ```
 
-1. Execute os seguintes comandos para excluir dados de IDs de tarefas do banco de dados do servidor do AEM Forms:
+1. Execute os seguintes comandos para que você possa excluir dados de IDs de tarefas do banco de dados do AEM Forms Server:
 
    ```sql
    delete from tb_task_acl where task_id=<task_id>

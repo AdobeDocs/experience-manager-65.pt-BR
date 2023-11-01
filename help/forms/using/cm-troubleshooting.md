@@ -1,17 +1,15 @@
 ---
 title: "Gerenciamento de correspondência: solução de problemas"
-description: Manipular erros que possam surgir durante o processo de salvar uma correspondência em um ambiente do AEM Forms.
-uuid: 25828cdd-110e-4a84-8f31-d82cd610a54f
+description: Saiba como lidar com erros que surgem durante o processo de salvar uma correspondência em um ambiente do AEM Forms.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
 feature: Correspondence Management
 exl-id: cf06796b-bb8c-4a65-8f42-02fb0cfa3ebd
-source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 5%
+source-wordcount: '215'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +22,7 @@ ht-degree: 5%
 Um dos seguintes erros é exibido ao salvar uma correspondência:
 
 * Vinculação de dados ausente para o módulo de texto
-* Forneça a informação de propriedade necessária para o seguinte
+* Forneça as informações de propriedade necessárias para o seguinte
 
 ### Motivo {#reason}
 
@@ -50,5 +48,5 @@ Redefina o cache de cartas na instância de publicação usando as seguintes eta
 1. Ir para **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** e faça logon como Administrador.
 1. Selecionar **Configurações do gerenciamento de correspondência**.
 1. Entrada **Configurações do gerenciamento de correspondência**, desativar **Ativar cache de cartas** e clique em **Salve.**
-1. Ativar **Ativar cache de cartas** e clique em **Salvar**.
+1. Marcar **Ativar cache de cartas** e clique em **Salvar**.
 1. Tente novamente visualizar a carta.

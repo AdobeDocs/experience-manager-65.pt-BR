@@ -1,13 +1,13 @@
 ---
 title: Instalador de patch do AEM Forms JEE
-description: AEM Forms JEE Patch Installer para corrigir problemas em componentes AEM 6.5 Forms.
+description: Saiba como usar o Instalador de patch do AEM Forms JEE para corrigir problemas em componentes do AEM 6.5 Forms.
 uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '535'
 ht-degree: 20%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 20%
 
 >[!NOTE]
 >
->[Entrar em contato com o suporte](https://www.adobe.com/account/sign-in.supportportal.html) para obter mais informações ou obter o patch.
+>[Entrar em contato com o suporte](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) para obter mais informações ou obter o patch.
 
 ## Sobre o instalador de patch {#about-the-patch-installer}
 
@@ -39,10 +39,10 @@ Navegue até o diretório apropriado na mídia ou pasta de instalação no disco
       * (Windows de 32 bits) `Windows\Disk1\InstData\VM`
       * (Windows de 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
 
-   * **Linux**
+   * **Linux®**
 Navegue até o diretório apropriado e, em um prompt de comando, digite `./aem65_cfp_install.bin`.
 
-      * (Linux) `Linux/Disk1/InstData/NoVM`
+      * (Linux®) `Linux/Disk1/InstData/NoVM`
 
    Isso inicia um assistente de instalação que o guiará durante a instalação.
 
@@ -52,8 +52,8 @@ Navegue até o diretório apropriado e, em um prompt de comando, digite `./aem65
 1. Leia as informações no Resumo de pré-instalação e clique em **[!UICONTROL Instalar]**.
 1. Quando a instalação estiver concluída, clique em **[!UICONTROL Próximo]** para aplicar as atualizações de correção rápida aos arquivos instalados.
 
-1. **[Somente para Windows]:** Execute uma das seguintes etapas:
-   * Desmarque a opção **Iniciar o Gerenciador de Configurações** antes de clicar em **[!UICONTROL Concluído]**. Executar **Gerenciador de configurações** usando o **ConfigurationManager.bat** arquivo localizado em `[aem-forms root]\configurationManager\bin`.
+1. **[Somente para Windows]:** Faça o seguinte:
+   * Desmarque a opção **Iniciar o Gerenciador de Configurações** antes de clicar em **[!UICONTROL Concluído]**. Executar **Gerenciador de configurações** usando o **ConfigurationManager.bat** arquivo em `[aem-forms root]\configurationManager\bin`.
 
    * Ou desmarque a opção **Iniciar o Gerenciador de Configurações** antes de clicar em **[!UICONTROL Concluído]**. Antes de executar **Gerenciador de configurações** usar **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, navegue até *`<AEMForms_Install_Dir>\configurationManager\bin`* direcionar e substituir [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) e [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) arquivos.
 
@@ -69,16 +69,16 @@ Navegue até o diretório apropriado e, em um prompt de comando, digite `./aem65
 
 1. Dependendo do servidor de aplicativos, escolha um dos seguintes documentos e siga as instruções na *Configuração e implantação de formulários AEM* seção.
 
-   * [Instalação e implantação de formulários AEM para JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
-   * [Instalação e implantação de formulários AEM para WebSphere](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+   * [Instalação e implantação de formulários AEM para JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+   * [Instalação e implantação de formulários AEM para WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
-1. (Somente JBoss) Após instalar o patch e configurar o servidor, exclua os diretórios de trabalho e tmp do servidor de aplicativos JBoss.
+1. (Somente JBoss®) Após instalar o patch e configurar o servidor, exclua tmp e diretórios de trabalho do servidor de aplicativos JBoss®.
 
 ## Configurações pós-implantação {#post-deployment-configurations}
 
 ### Configurações de SAML {#saml-configurations}
 
-Se você tiver configurado a autenticação SAML e estiver enfrentando problemas com grandes metadados IDP, faça o seguinte após instalar o patch:
+Se você tiver a autenticação SAML configurada e estiver enfrentando problemas com grandes metadados IDP, faça o seguinte após instalar o patch:
 
 1. Defina a seguinte propriedade do sistema no servidor de aplicativos:\
    `um.saml.enable.large.xml=true`
@@ -91,4 +91,4 @@ Se você tiver configurado a autenticação SAML e estiver enfrentando problemas
 * Segurança de documentos
 * Foundation JEE
 
-[Entrar em contato com o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
+[Entrar em contato com o suporte](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)

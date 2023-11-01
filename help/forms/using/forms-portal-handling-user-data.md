@@ -1,32 +1,32 @@
 ---
 title: Portal Forms | Manipulação de dados do usuário
-description: Gerenciar dados do usuário, como acesso, exclusão e armazenamento de dados no portal do AEM Forms.
+description: Saiba mais sobre como gerenciar dados do usuário, como acesso, exclusão e armazenamento de dados no AEM Forms Portal.
 contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
 exl-id: 791524a4-a8bb-4632-a68d-e96864e139a9
-source-git-commit: bb1e1790b8b9e6d6224c62b1f51d8af50a82e975
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
 
 # Portal Forms | Manipulação de dados do usuário {#forms-portal-handling-user-data}
 
-[!DNL AEM Forms] o portal fornece componentes que você pode usar para listar formulários adaptáveis, formulários HTML5 e outros ativos do Forms no [!DNL AEM Sites] página. Além disso, você pode configurá-lo para exibir rascunhos e formulários adaptáveis enviados, bem como formulários HTML5 para um usuário conectado. Para obter mais informações sobre o portal de formulários, consulte [Introdução à publicação de formulários em um portal](/help/forms/using/introduction-publishing-forms.md).
+[!DNL AEM Forms] O portal fornece componentes que você pode usar para listar formulários adaptáveis, formulários HTML5 e outros ativos do Forms no [!DNL AEM Sites] página. Além disso, você pode configurá-lo para exibir rascunhos e formulários adaptáveis enviados, bem como formulários HTML5 para um usuário conectado. Para obter mais informações sobre o Forms Portal, consulte [Introdução à publicação de formulários em um portal](/help/forms/using/introduction-publishing-forms.md).
 
-Quando um usuário conectado salva um formulário adaptável como rascunho ou o envia, eles são exibidos nas guias Rascunhos e envios no portal de formulários. Os dados de formulários em rascunho ou enviados são armazenados no armazenamento de dados configurado para implantação do AEM. Os rascunhos e envios de usuários anônimos não são exibidos na página do portal de formulários; no entanto, os dados são armazenados no armazenamento de dados configurado. Consulte [Configuração de serviços de armazenamento para rascunhos e envios](/help/forms/using/configuring-draft-submission-storage.md).
+Quando um usuário conectado salva um formulário adaptável como rascunho ou o envia, eles são exibidos nas guias Rascunhos e envios no Portal do Forms. Os dados de formulários em rascunho ou enviados são armazenados no armazenamento de dados configurado para implantação do AEM. Os rascunhos e envios de usuários anônimos não são exibidos na página do Forms Portal; no entanto, os dados são armazenados no armazenamento de dados configurado. Consulte [Configuração de serviços de armazenamento para rascunhos e envios](/help/forms/using/configuring-draft-submission-storage.md).
 
 ## Dados do usuário e armazenamentos de dados {#user-data-and-data-stores}
 
-O portal do Forms armazena dados para formulários de rascunho e enviados nos seguintes cenários:
+O Forms Portal armazena dados para formulários de rascunho e enviados nos seguintes cenários:
 
 * A ação de envio configurada no formulário adaptável é **Ação de envio do portal do Forms**.
-* Para ações de envio diferentes de **Ação de envio do portal do Forms**, o **[!UICONTROL Armazenar dados no portal de formulários]** está ativada na variável **[!UICONTROL Envio]** propriedades do contêiner de formulário adaptável.
+* Para ações de envio diferentes de **Ação de envio do portal do Forms**, o **[!UICONTROL Armazenar dados no Forms Portal]** está ativada na variável **[!UICONTROL Envio]** propriedades do contêiner de formulário adaptável.
 
-Para cada rascunho e formulário enviado para usuários conectados e anônimos, o portal de formulários armazena os seguintes dados:
+Para cada rascunho e formulário enviado para usuários conectados e anônimos, o Portal do Forms armazena os seguintes dados:
 
 * Metadados de formulário, como nome do formulário, caminho do formulário, ID de rascunho ou envio, caminho de anexos e ID de dados do usuário
 * Anexo de formulário como bytes de dados
@@ -43,12 +43,12 @@ Dependendo da persistência do armazenamento de dados configurado, os dados de r
   </tr>
   <tr>
    <td><p>Padrão</p> </td>
-   <td><p>Repositório AEM das instâncias de criação e publicação</p> </td>
+   <td><p>Repositório AEM das instâncias Autor e Publicação</p> </td>
    <td><p><code>/content/forms/fp/</code></p> </td>
   </tr>
   <tr>
    <td><p>Remoto</p> </td>
-   <td><p>Repositório AEM de instâncias de AEM remotas e de autoria</p> </td>
+   <td><p>Repositório de AEM de instâncias de Author e remote AEM</p> </td>
    <td><p><code>/content/forms/fp/</code></p> </td>
   </tr>
   <tr>
@@ -69,7 +69,7 @@ Todos os rascunhos e dados de formulários enviados em instâncias AEM (autor, p
 
 #### Acessar dados do usuário {#access-user-data}
 
-Quando um usuário conectado salva um rascunho ou envia um formulário, um nó secundário é criado com a ID do usuário. Por exemplo, dados de rascunhos e envios de Sarah Rose cuja ID de usuário é `srose` são armazenados em `/content/forms/fp/srose/` no repositório AEM. No nó da ID de usuário, os dados são organizados em uma estrutura hierárquica.
+Quando um usuário conectado salva um rascunho ou envia um formulário, um nó secundário é criado com sua ID de usuário. Por exemplo, dados de rascunhos e envios de Sarah Rose cuja ID de usuário é `srose` são armazenados em `/content/forms/fp/srose/` no repositório AEM. No nó da ID de usuário, os dados são organizados em uma estrutura hierárquica.
 
 A tabela a seguir explica como os dados de todos os rascunhos de `srose` é armazenado no repositório do AEM.
 
@@ -97,7 +97,7 @@ Os rascunhos e dados de envio de todos os usuários anônimos são armazenados n
 
 ### Banco de dados {#database}
 
-Quando o AEM é configurado para armazenar dados em um banco de dados, os dados de rascunho e envio do portal de formulários são armazenados nas seguintes tabelas do banco de dados para usuários conectados e anônimos:
+Quando o AEM é configurado para armazenar dados em um banco de dados, os dados de rascunho e envio do Forms Portal são armazenados nas seguintes tabelas do banco de dados para usuários conectados e anônimos:
 
 * dados
 * metadados

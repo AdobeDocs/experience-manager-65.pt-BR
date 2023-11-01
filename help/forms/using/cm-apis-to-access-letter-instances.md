@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
-source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '597'
 ht-degree: 1%
 
 ---
@@ -134,8 +134,8 @@ Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName )
 
 A Instância da Carta pode ser do tipo Enviado ou Rascunho. A abertura de ambos os tipos de ocorrência de letra mostra comportamentos diferentes:
 
-* No caso de uma ocorrência de carta enviada, um PDF que representa a ocorrência de carta é aberto. A instância de carta enviada persistida no servidor também contém o XML de dados e o XDP processado, que podem ser usados para realizar e personalizar ainda mais o uso de um caso, como a criação de um PDF/A.
-* No caso de uma ocorrência de carta de Rascunho, a interface de criação de correspondência é recarregada para o estado anterior exato como estava durante o tempo em que o rascunho foi criado
+* Se houver uma ocorrência de carta enviada, um PDF que representa a ocorrência de carta será aberto. A instância de carta enviada persistida no servidor também contém o XML de dados e o XDP processado, que podem ser usados para realizar e personalizar ainda mais o uso de um caso, como a criação de um PDF/A.
+* Se houver uma ocorrência de carta de Rascunho, a interface de criação de correspondência será recarregada para o estado anterior exato como estava durante o tempo em que o rascunho foi criado
 
 ### Abrindo Instância de Carta de Rascunho  {#opening-draft-letter-instance-nbsp}
 

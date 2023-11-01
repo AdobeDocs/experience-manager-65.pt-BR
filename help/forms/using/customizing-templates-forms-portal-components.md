@@ -1,22 +1,20 @@
 ---
-title: Personalização de modelos para componentes do portal de formulários
-description: A interface do usuário do AEM Forms permite que os usuários adicionem metadados a formulários. Os metadados personalizados melhoram a experiência do usuário na listagem de formulários e na pesquisa por sua organização.
-uuid: 212109ca-85c8-4915-82e5-a18a0443be1b
+title: Personalização de modelos para componentes do Forms Portal
+description: Saiba como a interface do usuário do AEM Forms permite que os usuários adicionem metadados a formulários. Os metadados personalizados melhoram a experiência do usuário na listagem e pesquisa de formulários.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1250'
 ht-degree: 0%
 
 ---
 
-# Personalização de modelos para componentes do portal de formulários{#customizing-templates-for-forms-portal-components}
+# Personalização de modelos para componentes do Forms Portal{#customizing-templates-for-forms-portal-components}
 
 ## Pré-requisitos {#prerequisites}
 
@@ -30,7 +28,7 @@ A interface do usuário do AEM Forms permite adicionar metadados a qualquer form
 
 O Forms Portal permite usar metadados personalizados em listagens de formulários. Ao criar modelos personalizados para ativos, você pode modificar o layout e usar metadados personalizados com o conjunto de estilos CSS.
 
-Execute as etapas a seguir para criar um modelo personalizado para vários componentes do Forms Portal.
+Faça o seguinte para poder criar um modelo personalizado para vários componentes do Forms Portal.
 
 ## Criação de um modelo personalizado {#creating-a-nbsp-custom-template}
 
@@ -55,7 +53,7 @@ Execute as etapas a seguir para criar um modelo personalizado para vários compo
    A imagem a seguir descreve a configuração do componente de Pesquisa e Lister.
    ![Criação de um sling:Folder](assets/1.png)
 
-1. Crie um arquivo template.html nesta pasta para servir como modelo personalizado.
+1. Crie um arquivo template.html nesta pasta para que ele possa servir como modelo personalizado.
 1. Grave o modelo personalizado e use os metadados personalizados conforme descrito abaixo.
 
 ## Exemplo de trabalho {#working-example}
@@ -105,7 +103,7 @@ Vários componentes do Forms Portal fornecem conjuntos exclusivos de metadados O
 * **descrição**: Descrição do formulário
 * **formUrl**: URL para renderizar o formulário como HTML
 * **pdfUrl**: URL para renderizar o formulário como PDF
-* **assetType**: Tipo do ativo. Os valores válidos incluem **Formulário**,**Formulário PDF**, **Imprimir formulário**, e **Formulário adaptável**
+* **assetType**: Tipo do ativo. Os valores válidos incluem **Formulário**, **Formulário PDF**, **Imprimir formulário**, e **Formulário adaptável**
 
 * **htmlStyle**&amp; **pdfStyle**: Estilo de exibição dos ícones HTML e PDF, respectivamente, usados para renderização. Os valores válidos são &quot;**__FP_display_none**&quot; ou em branco.
 
@@ -120,7 +118,7 @@ Suporte para localização, classificação e uso de propriedades de configuraç
 1. **Suporte à localização**: Para localizar qualquer texto estático, use o atributo `${localize-YOUR_TEXT}` e disponibilize o valor localizado, se ainda não existir.
    *No exemplo discutido, os atributos `${localize-Apply}` e `${localize-Download}` são usados para localizar o texto Aplicar e Baixar.*
 
-1. **Suporte para classificação**: Clique no elemento HTML para classificar os resultados da pesquisa. Para implementar a classificação em um layout apresentado, adicione o atributo &quot;data-sortKey&quot; ao cabeçalho de tabela específico. Além disso, adicione seu valor como os metadados para os quais deseja classificar.
+1. **Suporte para classificação**: Clique no elemento HTML para classificar os resultados da pesquisa. Para implementar a classificação em um layout de tabela, adicione o atributo &quot;data-sortKey&quot; ao cabeçalho de tabela específico. Além disso, adicione seu valor como os metadados para os quais deseja classificar.
 Por exemplo, para o cabeçalho &quot;Título&quot; na exibição de grade, o valor do cabeçalho &quot;data-sortKey&quot; é &quot;título&quot;. Clique no cabeçalho para classificar os valores em uma coluna específica.
 
 1. **Uso das propriedades de configuração**: o componente de Pesquisa e Lister tem várias configurações que você pode usar na interface do usuário. Por exemplo, para exibir o texto de Dica de ferramenta do HTML salvo por meio da caixa de diálogo de edição, use o `${config-htmlLinkText}` atributo. **Da mesma forma, para o texto da dica de ferramenta PDF, use o** `${config-pdfLinkText}` atributo.
@@ -134,7 +132,7 @@ Por exemplo, para o cabeçalho &quot;Título&quot; na exibição de grade, o val
 
 ### Rascunhos e componentes de envios {#drafts-amp-submissions-component}
 
-* **Caminho**: Caminho do nó de metadados de rascunho/envios. Use-o com a extensão .HTML como um URL para abrir um rascunho ou envio.
+* **Caminho**: Caminho do nó de metadados de rascunho/envios. Use-a com a extensão .HTML como um URL para que você possa abrir um rascunho ou envio.
 * **contextPath**: caminho de contexto da instância AEM
 * **firstLetter**: Primeira letra (maiúscula) do título do formulário adaptável, que foi salvo como rascunho ou enviado.
 * **formName**: o título do formulário adaptável, que foi salvo como Rascunho ou enviado.
@@ -142,7 +140,7 @@ Por exemplo, para o cabeçalho &quot;Título&quot; na exibição de grade, o val
 * **submitID**: ID do envio listado (use somente no modelo para a seção Envio ).
 * **status**: Status do formulário enviado. (Use somente no modelo para a seção Envio).
 * **descrição**: Descrição do formulário adaptável associado ao rascunho ou ao envio.
-* **diffTime**: Diferença entre a hora atual e a última ação de salvamento do rascunho. Como alternativa, a diferença entre a hora atual e a última ação de envio para o envio.
+* **diffTime**: Diferença entre a hora atual e a última ação de salvamento do rascunho. Como alternativa, a diferença entre a hora atual e a última ação enviada para o envio.
 * **iconClass**: classe CSS usada para exibir a primeira letra do rascunho/envio. O Forms Portal inclui as seguintes classes, que fornecem vários planos de fundo coloridos.
 * **proprietário**: usuário que criou o rascunho/envio.
 * **Hoje**: Data de criação do rascunho ou envio em DD:MM:formato AAAA.
@@ -162,7 +160,7 @@ Por exemplo, para o cabeçalho &quot;Título&quot; na exibição de grade, o val
 
 **C** Atributo de repetição de dados usado para a seção de modelo para cada formulário
 
-**D.** Para localizar a string &quot;Aplicar&quot;
+**D.** Localizar a sequência de caracteres &quot;Aplicar&quot;
 
 **E** Uso da propriedade de configuração pdfLinkText
 
@@ -177,11 +175,11 @@ Por exemplo, para o cabeçalho &quot;Título&quot; na exibição de grade, o val
 
 ## Artigos relacionados
 
-* [Habilitar componentes do portal de formulários](/help/forms/using/enabling-forms-portal-components.md)
-* [Criar página do portal de formulários](/help/forms/using/creating-form-portal-page.md)
+* [Habilitar componentes do Forms Portal](/help/forms/using/enabling-forms-portal-components.md)
+* [Criar página do portal do Forms](/help/forms/using/creating-form-portal-page.md)
 * [Listar formulários em uma página da Web usando APIs](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Usar componente de rascunhos e envios](/help/forms/using/draft-submission-component.md)
 * [Personalizar o armazenamento de rascunhos e formulários enviados](/help/forms/using/draft-submission-component.md)
 * [Amostra para integrar o componente de rascunhos e envios ao banco de dados](/help/forms/using/integrate-draft-submission-database.md)
-* [Personalização de modelos para componentes do portal de formulários](/help/forms/using/customizing-templates-forms-portal-components.md)
+* [Personalização de modelos para componentes do Forms Portal](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Introdução à publicação de formulários em um portal](/help/forms/using/introduction-publishing-forms.md)

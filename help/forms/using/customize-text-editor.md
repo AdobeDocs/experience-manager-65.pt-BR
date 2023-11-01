@@ -1,17 +1,15 @@
 ---
 title: Personalizar editor de texto
-description: Saiba como personalizar o editor de texto no ambiente AEM Forms.
-uuid: 598246fe-8f15-49b6-b6d3-9154bebcd27e
+description: Saiba como personalizar o editor de texto em um ambiente do Adobe Experience Manager Forms.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
 feature: Correspondence Management
 exl-id: 1dd3f55c-24f7-4331-a9a3-c9223e613fec
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -29,7 +27,7 @@ Você pode personalizar o para alterar o seguinte nas configurações de fonte:
 * Valores padrão de família de fontes e tamanho, altura, espaçamento entre letras e formato de data
 * Recuos com marcadores
 
-Para fazer isso, é necessário:
+Faça o seguinte:
 
 1. [Personalizar fontes editando o arquivo tbxeditor-config.xml no CRX](#customizefonts)
 1. [Adicionar fontes personalizadas ao computador cliente](#addcustomfonts)
@@ -159,14 +157,14 @@ Para personalizar fontes editando o arquivo tbxeditor-config.xml, faça o seguin
       </editorConfig>
       ```
 
-   1. Faça as alterações necessárias no arquivo para alterar o seguinte nas configurações de fonte:
+   1. Faça as alterações necessárias no arquivo para que você possa alterar o seguinte nas configurações de fonte:
 
       * Adicionar ou remover a família e o tamanho da fonte
       * Propriedades como altura e espaçamento entre letras
       * Valores padrão de família de fontes e tamanho, altura, espaçamento entre letras e formato de data
       * Recuos com marcadores
 
-      Por exemplo, para adicionar uma fonte japonesa chamada Sazanami Mincho Medium, é necessário fazer a seguinte entrada no arquivo XML: `<font>Sazanami Mincho Medium</font>`. Também é necessário ter essa fonte instalada na máquina cliente usada para acessar e trabalhar com a personalização de fontes. Para obter mais informações, consulte [Adicionar fontes personalizadas ao computador cliente](#addcustomfonts).
+      Por exemplo, para adicionar uma fonte japonesa chamada Sazanami Mincho Medium, você deve fazer a seguinte entrada no arquivo XML: `<font>Sazanami Mincho Medium</font>`. Você também deve ter essa fonte instalada na máquina cliente usada para acessar e trabalhar com a personalização da fonte. Para obter mais informações, consulte [Adicionar fontes personalizadas ao computador cliente](#addcustomfonts).
 
       Também é possível alterar os padrões de vários aspectos do texto e, removendo as entradas, remover as fontes do editor de texto.
 
@@ -174,7 +172,7 @@ Para personalizar fontes editando o arquivo tbxeditor-config.xml, faça o seguin
 
 ## Adicionar fontes personalizadas ao computador cliente {#addcustomfonts}
 
-Quando você acessa uma fonte no editor de texto do Gerenciamento de correspondência, ela precisa estar presente na máquina cliente que você está usando para acessar o Gerenciamento de correspondência. Para poder usar uma fonte personalizada no editor de texto, primeiro é necessário instalar a mesma na máquina cliente.
+Quando você acessa uma fonte no editor de texto do Gerenciamento de correspondência, ela deve estar presente na máquina cliente que você está usando para acessar o Gerenciamento de correspondência. Para poder usar uma fonte personalizada no editor de texto, primeiro você deve instalar a mesma na máquina cliente.
 
 Para obter mais informações sobre a instalação de fontes, consulte o seguinte:
 
@@ -183,7 +181,7 @@ Para obter mais informações sobre a instalação de fontes, consulte o seguint
 
 ## Acessar personalizações de fonte {#access-font-customizations}
 
-Depois de fazer alterações nas fontes no arquivo tbxeditor-config.xml no CRX e instalar as fontes necessárias na máquina cliente usada para acessar o AEM Forms, as alterações serão exibidas no editor de texto.
+Depois de alterar as fontes na variável `tbxeditor-config.xml` no CRX e instalou as fontes necessárias na máquina cliente usada para acessar o AEM Forms, as alterações são exibidas no editor de texto.
 
 Por exemplo, a fonte Sazanami Mincho Medium adicionada na variável [Personalizar fontes editando o arquivo tbxeditor-config.xml no CRX](#customizefonts) O procedimento aparece na interface do editor de texto da seguinte maneira:
 
@@ -191,4 +189,4 @@ Por exemplo, a fonte Sazanami Mincho Medium adicionada na variável [Personaliza
 
 >[!NOTE]
 >
->Para ver o texto em japonês, primeiro é necessário inserir o texto com caracteres japoneses. A aplicação de uma fonte japonesa personalizada só formata o texto de uma determinada maneira. A aplicação de uma fonte japonesa personalizada não altera o inglês ou outros caracteres para caracteres japoneses.
+>Para ver o texto em japonês, você deve primeiro inserir o texto com caracteres japoneses. A aplicação de uma fonte japonesa personalizada só formata o texto de uma determinada maneira. A aplicação de uma fonte japonesa personalizada não altera o inglês ou outros caracteres para caracteres japoneses.

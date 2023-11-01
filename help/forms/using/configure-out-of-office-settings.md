@@ -1,11 +1,10 @@
 ---
 title: Definir configurações de Ausência Temporária
-description: Defina as configurações de Ausência Temporária para sua instância do AEM Forms.
-seo-description: Configure Out of Office settings
+description: Saiba como definir as configurações de Ausência Temporária para sua instância do Adobe Experience Manager Forms.
 exl-id: e4c9d74c-e08d-4675-91f2-4f9fc2f1bcea
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '832'
 ht-degree: 1%
 
 ---
@@ -19,7 +18,7 @@ ht-degree: 1%
 
 Se você planeja ficar fora do escritório, é possível especificar o que acontece com os itens atribuídos a você nesse período.
 
-Você tem a opção de especificar uma data e hora de início e uma data e hora de término para que suas configurações de ausência temporária entrem em vigor. Se você estiver localizado em um fuso horário diferente do servidor, o fuso horário usado será o do cliente.
+Você tem a opção de especificar uma data e hora de início e uma data e hora de término para que suas configurações de ausência temporária entrem em vigor. Se você estiver em um fuso horário diferente do servidor, o fuso horário usado será o do cliente.
 
 Você pode definir uma pessoa padrão para a qual todos os seus itens serão enviados. Você também pode especificar exceções para itens de processos específicos a serem enviados para um usuário diferente ou para permanecer em sua Caixa de entrada até retornar. Se a pessoa designada também estiver fora do escritório, o item vai para o usuário designado. Se o item não puder ser atribuído a um usuário que não esteja ausente, o item permanecerá em sua Caixa de entrada.
 
@@ -43,7 +42,7 @@ Execute as seguintes etapas para Ativar a configuração Ausência Temporária p
 1. Toque no **[!UICONTROL Ativar/desativar]** botão para ativar a configuração Out of Office.
 1. Especifique a **[!UICONTROL Hora de início]**  e **[!UICONTROL Hora de término]** para a configuração. Os itens são delegados somente durante o período especificado. Deixe a **[!UICONTROL Hora de término]** campo vazio para delegar itens por um período indefinido.
 1. Selecione o **[!UICONTROL Encaminhar meus itens durante este período]** caixa de seleção Se você não selecionar a opção e não especificar um destinatário, seus itens não serão encaminhados a nenhum usuário. Embora você esteja ausente e a configuração esteja ativada, os itens permanecem na sua Caixa de entrada.
-1. Toque **[!UICONTROL Adicionar atribuidor]**. Especifique um usuário no **[!UICONTROL Destinatário]** campo ao qual os itens serão delegados. Especifique a **[!UICONTROL Modelo de fluxo de trabalho]** para delegar ao usuário especificado. É possível selecionar mais de um modelo de fluxo de trabalho.
+1. Toque **[!UICONTROL Adicionar atribuidor]**. Especifique um usuário no **[!UICONTROL Destinatário]** para poder delegar os itens. Especifique a **[!UICONTROL Modelo de fluxo de trabalho]** para que você possa delegar ao usuário especificado. É possível selecionar mais de um modelo de fluxo de trabalho.
 
    Além disso, para atribuir todos os itens, independentemente do modelo de workflow, a um usuário específico, selecione **[!UICONTROL Todos os fluxos de trabalho]** na lista suspensa Workflow Model. <br>
 
@@ -63,7 +62,7 @@ Agora, os itens atribuídos a você durante o período de Ausência Temporária 
 
 >[!NOTE]
 >
->(Somente para itens de fluxo de trabalho centrados no Forms) Ative a opção **Permitir que o destinatário delegue usando as configurações &quot;Ausente&quot;** opção do **Atribuir tarefa** etapa no fluxo de trabalho. Somente os itens que têm a opção acima ativada são delegados a outros usuários.
+>(Somente para itens de fluxo de trabalho centrados no Forms) Ative a opção **Permitir que o destinatário delegue usando as configurações &quot;Ausente&quot;** opção do **Atribuir tarefa** etapa no fluxo de trabalho. Somente os itens que têm a opção mencionada anteriormente ativada são delegados a outros usuários.
 
 ## Limitações {#limitations}
 
