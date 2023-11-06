@@ -1,20 +1,18 @@
 ---
 title: Como ativar os Componentes principais do Forms adaptável no AEM 6.5 Forms?
-seo-title: How to enable Adaptive Forms Core Components on AEM 6.5 Forms?
 description: Guia passo a passo para ajudá-lo a ativar os Componentes principais do Forms adaptável em um ambiente de Forms AEM 6.5.
-seo-description: Step-by-Step guide to help you enable Adaptive Forms Core Components on an AEM 6.5 Forms environment.
 keywords: Ativar componentes principais, componentes principais Forms adaptável, componentes principais no 6.5, componentes principais Forms adaptáveis no AEM 6.5, componentes principais AF no AEM AEM 6.5, 6.5, componentes principais Forms do 6.5
 contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
+source-git-commit: 1da3abac8a7f09d41127818a5abacf29524f1365
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 7%
+source-wordcount: '990'
+ht-degree: 6%
 
 ---
-
 
 # Ativar os componentes principais adaptáveis do Forms no AEM 6.5 Forms {#enable-adaptive-forms-core-components}
 
@@ -27,10 +25,9 @@ ht-degree: 7%
 
 Habilitar os Componentes principais adaptáveis do Forms permite que você comece a criar, publicar e fornecer [Forms adaptável baseado em componentes principais](create-an-adaptive-form-core-components.md) e [Forms adaptável headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=pt-BR) do seu ambiente AEM 6.5 Forms.
 
-Para ativar os Componentes principais do Forms HAdaptive em seu ambiente Forms AEM 6.5, configure e implante um [Arquétipo AEM 41 ou posterior](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) projeto baseado em (com as opções de formulários ativadas) em todas as instâncias do Autor e de Publicação.
+Para ativar os Componentes principais do Adaptive Forms no ambiente AEM 6.5 Forms, configure e implante um [Arquétipo AEM 41 ou posterior](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) projeto baseado em (com as opções de formulários ativadas) em todas as instâncias do Autor e de Publicação.
 
-Este artigo fornece instruções detalhadas para configurar e implantar o Arquétipo AEM 41 ou posterior com base em seu ambiente AEM 6.5 Forms para ativar os Componentes principais adaptáveis do Forms.
-
+Este artigo fornece instruções detalhadas para configurar e implantar o Arquétipo AEM 41 ou posterior com base em seu ambiente AEM 6.5 Forms para ativar os Componentes principais adaptáveis do Forms. Consulte a lista abaixo para obter **AEM 6.5** versões compatíveis para ativar os Componentes principais do Forms:
 
 ## Pré-requisitos {#prerequisites}
 
@@ -107,7 +104,16 @@ Para criar um Arquétipo AEM 41 ou [posteriormente](https://github.com/adobe/aem
 1. Atualize o projeto para incluir a versão mais recente dos Componentes principais do Forms:
 
    1. Abra o [Pasta de projeto do arquétipo AEM]/pom.xml para edição.
-   1. Definir versão de `core.forms.components.version` e `core.forms.components.af.version` para [Componentes principais mais recentes do Forms](https://github.com/adobe/aem-core-forms-components/tree/release/650) versão.
+   1. Definir versão de `core.forms.components.version` e `core.forms.components.af.version` para [Componentes principais mais recentes do Forms](https://github.com/adobe/aem-core-forms-components/tree/release/650#system-requirements) e garantir que ambas tenham a mesma versão que **Componentes principais do Forms** mencionado na tabela e defina a versão de `core.wcm.components.version` conforme indicado na **Componentes principais do WCM**.
+
+      >[!WARNING]
+      >
+      >* Ao criar um projeto do Arquétipo com o `version 45`, o [Pasta de projeto do arquétipo AEM]/pom.xml define inicialmente a versão dos componentes principais de formulários como `1.1.28`. Antes de criar ou implantar o projeto Arquétipo, atualize a versão dos componentes principais de formulários para `1.1.26`.
+
+
+      >[!NOTE]
+      >
+      >* Se você configurar qualquer outra topologia, adicione o envio, o preenchimento prévio e outros URLs ao arquivo de inclui na lista de permissões na camada do Dispatcher.
 
    1. Salvar e fechar o arquivo.
 
