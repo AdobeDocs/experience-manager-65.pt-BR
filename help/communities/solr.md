@@ -1,17 +1,13 @@
 ---
 title: Configuração Solr para SRP
-seo-title: Solr Configuration for SRP
 description: Uma instalação do Apache Solr pode ser compartilhada entre o armazenamento de nós (Oak) e o armazenamento comum (SRP) usando coleções diferentes
-seo-description: An Apache Solr installation may be shared between the node store (Oak) and common store (SRP) by using different collections
-uuid: 7356343d-073c-4266-bdcb-c7e999281476
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 role: Admin
 exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 2a97935a81cf9c0a1a832dd27b62d388805863e0
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 2%
@@ -110,7 +106,7 @@ Uso: sh ./scripts/cloud-scripts/zkcli.sh \
 
 A Pesquisa multilíngue (MLS) para o AEM Communities foi criada para a plataforma Solr, a fim de fornecer pesquisa aprimorada em todos os idiomas compatíveis, incluindo inglês.
 
-O MLS para AEM Communities está disponível como MLS Padrão ou MLS Avançado. O MLS padrão inclui apenas as definições de configuração Solr e exclui todos os plug-ins ou arquivos de recurso. O MLS avançado é a solução mais abrangente e inclui configurações e plug-ins Solr e recursos relacionados
+O MLS para AEM Communities está disponível como MLS Padrão ou MLS Avançado. O MLS padrão inclui apenas as definições de configuração Solr e exclui todos os plug-ins ou arquivos de recurso. O MLS avançado é a solução mais abrangente e inclui definições e plug-ins de configuração Solr e recursos relacionados
 
 O MLS padrão inclui aprimoramentos para a pesquisa de conteúdo nos seguintes idiomas:
 
