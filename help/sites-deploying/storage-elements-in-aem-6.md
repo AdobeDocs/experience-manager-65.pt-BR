@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 0aa2c22f-32bb-4e50-8328-63ed73c0f19e
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/microkernels-in-aem-6-0
 exl-id: 52437eb5-f9fb-4945-9950-5a1562fe878d
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '707'
 ht-degree: 2%
 
 ---
@@ -122,7 +122,6 @@ O Red Hat® Linux® usa um algoritmo de gerenciamento de memória chamado THP (T
 >* Para obter mais informações sobre páginas grandes transparentes no Red Hat® Linux®, consulte esta [artigo](https://access.redhat.com/solutions/46111).
 * Para obter dicas de ajuste do Linux®, consulte esta [artigo](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR).
 >
-
 
 ## Manutenção do repositório {#maintaining-the-repository}
 

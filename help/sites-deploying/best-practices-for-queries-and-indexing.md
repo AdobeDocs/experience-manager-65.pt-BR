@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4609'
+source-wordcount: '4602'
 ht-degree: 7%
 
 ---
@@ -85,7 +85,7 @@ Embora todas as consultas sejam convertidas para o SQL2 antes de serem executada
 
 ### A Ferramenta Explicar Consulta {#the-explain-query-tool}
 
-Como em qualquer linguagem de consulta, a primeira etapa para otimizar uma consulta é entender como ela será executada. Para habilitar esta atividade, você pode usar o [Ferramenta Explicar consulta](/help/sites-administering/operations-dashboard.md#explain-query) que faz parte do Painel de operações. Com essa ferramenta, um query pode ser conectado e explicado. Um aviso será exibido se a consulta causar problemas com um repositório grande e o tempo de execução e os índices que serão usados. A ferramenta também pode carregar uma lista de consultas lentas e populares que podem ser explicadas e otimizadas.
+Como em qualquer linguagem de consulta, a primeira etapa para otimizar uma consulta é entender como ela será executada. Para habilitar esta atividade, você pode usar o [Ferramenta Explicar consulta](/help/sites-administering/operations-dashboard.md#explain-query) que faz parte do Painel de operações. Com essa ferramenta, um query pode ser conectado e explicado. Um aviso será exibido se a consulta causar problemas com um repositório grande e o tempo de execução e os índices usados. A ferramenta também pode carregar uma lista de consultas lentas e populares que podem ser explicadas e otimizadas.
 
 ### Log de DEPURAÇÃO para consultas {#debug-logging-for-queries}
 
@@ -166,7 +166,7 @@ Em geral, é recomendável usar índices Lucene, a menos que haja uma necessidad
 
 ### Indexação Solr {#solr-indexing}
 
-O AEM também oferece suporte à indexação Solr por padrão. Ele é usado para oferecer suporte à pesquisa de texto completo, mas também pode ser usado para qualquer tipo de consulta JCR. O Solr deve ser considerado quando as instâncias AEM não têm a capacidade de CPU para lidar com o número de consultas necessárias em implantações intensivas de pesquisa, como sites orientados por pesquisa com um alto número de usuários simultâneos. Como alternativa, o Solr pode ser implementado em uma abordagem baseada em crawler para usar alguns dos recursos mais avançados da plataforma.
+O AEM também oferece suporte à indexação Solr por padrão. Isso é usado para oferecer suporte à pesquisa de texto completo, mas também pode ser usado para qualquer tipo de consulta JCR. O Solr deve ser considerado quando as instâncias AEM não têm a capacidade de CPU para lidar com o número de consultas necessárias em implantações intensivas de pesquisa, como sites orientados por pesquisa com um alto número de usuários simultâneos. Como alternativa, o Solr pode ser implementado em uma abordagem baseada em crawler para usar alguns dos recursos mais avançados da plataforma.
 
 Os índices Solr podem ser configurados para execução incorporada no servidor AEM para ambientes de desenvolvimento ou podem ser descarregados em uma instância remota para melhorar a escalabilidade de pesquisa nos ambientes de produção e preparo. Embora a descarga de pesquisa melhore a escalabilidade, ela introduz latência e, por causa disso, não é recomendada, a menos que seja necessária. Para obter mais informações sobre como configurar a integração Solr e como criar índices Solr, consulte o [Documentação de consultas e indexação do Oak](/help/sites-deploying/queries-and-indexing.md#the-solr-index).
 
@@ -189,7 +189,7 @@ A documentação do Oak para índices Lucene lista várias considerações a ser
 * Em um índice de propriedade, ter um nome de propriedade exclusivo ajudaria a reduzir o tamanho em um índice, mas para índices Lucene, o uso de `nodeTypes` e `mixins` para obter índices coesos. Consulta de um específico `nodeType` ou `mixin` terá melhor desempenho do que consultar `nt:base`. Ao usar essa abordagem, defina `indexRules` para o `nodeTypes` em questão.
 
 * Se as consultas estiverem sendo executadas somente em determinados caminhos, crie esses índices nesses caminhos. Os índices não precisam estar localizados na raiz do repositório.
-* É recomendável usar um único índice quando todas as propriedades que estão sendo indexadas estão relacionadas para permitir que Lucene avalie quantas restrições de propriedade forem possíveis nativamente. Além disso, uma consulta usará apenas um índice, mesmo ao executar uma associação.
+* Use um único índice quando todas as propriedades que estão sendo indexadas estiverem relacionadas para permitir que Lucene avalie quantas restrições de propriedade forem possíveis nativamente. Além disso, uma consulta usará apenas um índice, mesmo ao executar uma associação.
 
 ### CopyOnRead {#copyonread}
 
@@ -297,7 +297,7 @@ Veja a seguir os detalhes de possíveis problemas, juntamente com as resoluçõe
 
       * Senão, [reindexar](#how-to-re-index) o índice lucene
 
-         * Observação: o estado do índice da última reindexação válida (ou indexação inicial) será usado até que uma nova reindexação seja acionada
+         * Observação: o estado do índice a partir da última reindexação válida (ou indexação inicial) é usado até que uma nova reindexação seja acionada
 
 ### Situações de erro e excepcionais {#erring-and-exceptional-situations}
 

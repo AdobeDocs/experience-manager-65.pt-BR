@@ -11,7 +11,7 @@ discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3935'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Usar [!DNL Adobe Sign] em um formulário adaptável{#using-adobe-sign-in-an-adaptive-form}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -43,7 +43,7 @@ Em um [!DNL Adobe Sign] e o cenário de formulários adaptáveis, um usuário pr
 * Workflows de assinatura sequencial e simultânea
 * Experiências de assinatura no formulário e fora do formulário
 * Assinatura de formulários como usuário anônimo ou conectado
-* Processos dinâmicos de assinatura (integração com o AEM) [!DNL Forms] workflow)
+* Processos dinâmicos de assinatura (integração com AEM) [!DNL Forms] workflow)
 * Autenticação por meio de uma base de conhecimento, telefone e perfis sociais
 
 Saiba mais sobre [práticas recomendadas de uso do Adobe Sign com formulários adaptáveis](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684) para criar melhores experiências de assinatura.
@@ -97,7 +97,7 @@ Execute as seguintes etapas para criar um formulário adaptável habilitado para
 
    * Selecione o **[!UICONTROL Gerar documento de registro]** opção. Se você usar um formulário adaptável com a opção Documento de registro ativada, o documento enviado para assinatura exibirá todos os campos do formulário adaptável.
 
-1. Toque **[!UICONTROL Criar.]** Um formulário adaptável habilitado para assinatura é criado, e pode ser usado para adicionar [!DNL Adobe Sign] campos.
+1. Toque em **[!UICONTROL Criar.]** Um formulário adaptável habilitado para assinatura é criado, e pode ser usado para adicionar [!DNL Adobe Sign] campos.
 
 #### Editar um formulário adaptável para [!DNL Adobe Sign] {#editafsign}
 
@@ -171,11 +171,11 @@ Execute as seguintes etapas para selecionar um serviço em nuvem e a ordem de as
 
 1. No Navegador de conteúdo, toque em **[!UICONTROL Contêiner de formulário]** e toque no **[!UICONTROL Configurar]** ![configurar](assets/configure.png) ícone. Ela abre as propriedades do navegador e exibe as propriedades do contêiner do Formulário adaptável.
 1. No navegador de propriedades, expanda a variável **[!UICONTROL Assinatura eletrônica]** e selecione a opção **[!UICONTROL Ativar o Adobe Sign]** opção. Ele permite [!DNL Adobe Sign] para um formulário adaptável.
-1. Selecione um serviço em nuvem na lista já configurada de [!DNL Adobe Sign] Cloud Services.
+1. Selecione um serviço em nuvem na lista já configurada de [!DNL Adobe Sign] Cloud Service.
 
    Se a variável **[!UICONTROL Adobe Sign Cloud Service]** estiver vazia, siga as instruções [Configurar o Adobe Sign com o AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md) artigo para configurar o serviço.
 
-   A lista suspensa lista os serviços de nuvem existentes no `global` pasta em Ferramentas > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. Além disso, a lista suspensa também lista os serviços de nuvem que existem na pasta selecionada no **[!UICONTROL Contêiner de configuração]** ao criar um formulário adaptável.
+   A lista suspensa lista os serviços de nuvem existentes no `global` pasta em Ferramentas > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. Além disso, a lista suspensa também lista os serviços de nuvem que existem na pasta selecionada no **[!UICONTROL Contêiner de configuração]** ao criar um formulário adaptável.
 
 1. Selecione a ordem de assinatura na **[!UICONTROL Os signatários podem assinar]** caixa de diálogo. [!DNL Adobe Sign] os cantores podem assinar um formulário adaptável **[!UICONTROL Sequencialmente]** - um após o outro signatário, ou **[!UICONTROL Simultaneamente]** - em qualquer ordem.
 
@@ -201,7 +201,7 @@ Você pode ter apenas um ou vários signatários para um formulário adaptável.
 
    * **[!UICONTROL A pessoa que assina e que preenche o formulário são a mesma pessoa?]:** Selecionar **Sim**, se o preenchimento do formulário e o primeiro signatário forem a mesma pessoa. Se a opção estiver definida como **Não,** em seguida, não use o componente etapa de assinatura no formulário adaptável. Se o formulário contiver um componente Etapa de assinatura, o campo será automaticamente definido como Sim.
 
-   * **[!UICONTROL Endereço de e-mail do assinante]:** Especifique o endereço de email do signatário. O signatário recebe para ser assinados documentos/formulários no endereço de email especificado. Você pode optar por usar um endereço de email fornecido em um campo de formulário, no perfil de usuário AEM do usuário conectado ou inserir manualmente um endereço de email. É uma etapa obrigatória. Verifique se o endereço de email do primeiro signatário ou do único signatário (no caso de um signatário único) não é idêntico a [!DNL Adobe Sign] conta usada para configurar os serviços em nuvem do AEM.
+   * **[!UICONTROL Endereço de e-mail do assinante]:** Especifique o endereço de email do signatário. O signatário recebe para ser assinados documentos/formulários no endereço de email especificado. Você pode optar por usar um endereço de email fornecido em um campo de formulário, no perfil de usuário AEM do usuário conectado ou inserir manualmente um endereço de email. É uma etapa obrigatória. Verifique se o endereço de email do primeiro signatário ou do único signatário (no caso de um signatário único) não é idêntico a [!DNL Adobe Sign] conta usada para configurar os serviços em nuvem AEM.
 
    * **[!UICONTROL Método de autenticação do assinante]:** Especifique o método para autenticar um usuário antes de abrir um formulário para assinatura. Você pode escolher entre telefone, base de conhecimento e autenticação com base na identidade social. Para o Adobe Acrobat Sign Solutions for Government, somente as opções de autenticação por telefone e com base em conhecimento estão disponíveis.
 
@@ -228,7 +228,7 @@ Além disso, um [!DNL Adobe Sign] o formulário adaptável ativado é enviado so
 <!-- Remove when forms portal goes live
 >[!NOTE]
 >
->Data of the adaptive form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
+>Data of the adaptive form is stored temporarily on Forms Portal. Use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
 Sua experiência de assinatura de formulário está pronta. Você pode visualizar o formulário para verificar a experiência de assinatura. No formulário publicado, [!DNL Adobe Sign] Os campos de bloco são exibidos quando um signatário recebe o formulário para assinar por meio de um email. Essa experiência também é conhecida como experiência de assinatura fora de formulário. Você também pode configurar uma experiência de assinatura no formulário para o primeiro signatário. Para obter etapas detalhadas, consulte [Criar experiência de assinatura no formulário](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience).
@@ -355,7 +355,7 @@ Quando [!DNL Adobe Sign] for configurado para um formulário adaptável, o servi
 * Verifique se o aplicativo da API está ativado [!DNL Adobe Sign] servidor usado para configurar [!DNL Adobe Sign] O serviço em nuvem tem as permissões necessárias.
 * Se você estiver usando vários [!DNL Adobe Sign] Cloud Services, aponte para **[!UICONTROL URL do OAuth]** de todos os serviços para a mesma **[!UICONTROL Fragmento do Adobe Sign]**.
 
-* Use endereços de email separados para configurar [!DNL Adobe Sign] e para o primeiro signatário e o signatário único. O endereço de email do primeiro signatário ou do único signatário (no caso do signatário único) não pode ser idêntico a [!DNL Adobe Sign] conta usada para configurar os serviços em nuvem do AEM.
+* Use endereços de email separados para configurar [!DNL Adobe Sign] e para o primeiro signatário e o signatário único. O endereço de email do primeiro signatário ou do único signatário (no caso do signatário único) não pode ser idêntico a [!DNL Adobe Sign] conta usada para configurar os serviços em nuvem AEM.
 
 ### AEM [!DNL Forms] fluxo de trabalho configurado para um [!DNL Adobe Sign] o formulário adaptável ativado não inicia {#adobe-sign-aem-form-workflow-failures}
 

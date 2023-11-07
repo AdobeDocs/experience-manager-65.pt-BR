@@ -2,9 +2,9 @@
 title: Cabeçalhos HTTP personalizados
 description: Saiba como configurar cabeçalhos HTTP personalizados no Adobe Experience Manager Commerce.
 exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '273'
 ht-degree: 5%
 
 ---
@@ -26,11 +26,11 @@ Para configurar os cabeçalhos HTTP personalizados, é necessário primeiro defi
 
 Você pode configurar os valores dos cabeçalhos HTTP na página Configuração de Cloud Service do seu projeto:
 
-1. Acesse a página de configuração do Cloud Service em Ferramentas -> Cloud Services -> Configuração do CIF
-1. Abrir uma configuração existente ou criar uma nova
+1. Vá para a página de configuração do Cloud Service em Ferramentas > Cloud Services > Configuração do CIF.
+1. Abra uma configuração existente ou crie uma.
 1. Vá para a guia &quot;Avançado&quot; e localize o multicampo &quot;Cabeçalhos HTTP personalizados&quot;. Você pode selecionar os cabeçalhos definidos anteriormente e atribuir valores a eles.
 
-Os componentes que usam a configuração do Cloud Service acima enviarão esses cabeçalhos HTTP com cada solicitação do GraphQL.
+Os componentes que usam a configuração do Cloud Service acima enviam esses cabeçalhos HTTP com cada solicitação do GraphQL.
 
 ## Restrições {#restrictions}
 

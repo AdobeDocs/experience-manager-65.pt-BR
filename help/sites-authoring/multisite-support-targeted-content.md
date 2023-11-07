@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
 exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2869'
-ht-degree: 95%
+source-wordcount: '2855'
+ht-degree: 89%
 
 ---
 
@@ -34,7 +34,7 @@ Este documento descreve o seguinte:
 
 Para configurar como seus sites compartilham conteúdo personalizado, é necessário executar as seguintes etapas:
 
-1. [Criar uma nova área](#creating-new-areas) ou [criar uma nova área como live copy](#creating-new-areas). Uma área inclui todas as atividades disponíveis para uma *área* da página, ou seja, o local na página onde o componente é direcionado. A criação de uma nova área cria uma área vazia, enquanto a criação de uma nova área como uma live copy permite herdar o conteúdo das estruturas do site.
+1. [Criar uma área](#creating-new-areas) ou [criar uma área como live copy](#creating-new-areas). Uma área inclui todas as atividades disponíveis para uma *área* da página, ou seja, o local na página onde o componente é direcionado. A criação de uma área cria uma área vazia, enquanto a criação de uma área como uma live copy permite herdar o conteúdo nas estruturas do site.
 
 1. [Vincule seu site ou página](#linking-sites-to-an-area) a uma área.
 
@@ -60,7 +60,7 @@ Um site ou uma live copy é vinculado a uma área que contém as atividades que 
 
 ## Casos de uso {#use-cases}
 
-É possível configurar o suporte a vários sites para conteúdo direcionado de várias maneiras, dependendo do seu caso de uso. Esta seção descreve como isso funcionaria teoricamente com uma marca. Além disso, em [Exemplo: direcionamento de conteúdo com base na localização geográfica](#example-targeting-content-based-on-geography)No entanto, você pode ver uma aplicação real do direcionamento de conteúdo em vários sites.
+Você pode configurar o suporte multissite para conteúdo direcionado de várias maneiras, dependendo do seu caso de uso. Esta seção descreve como isso funcionaria teoricamente com uma marca. Além disso, em [Exemplo: direcionamento de conteúdo com base na localização geográfica](#example-targeting-content-based-on-geography)No entanto, você pode ver uma aplicação real do direcionamento de conteúdo em vários sites.
 
 O conteúdo direcionado é envolvido nas chamadas áreas, que definem o escopo de sites ou páginas. Essas áreas são definidas no nível da marca. Uma marca pode conter várias áreas. As áreas podem ser distintas entre marcas. Enquanto uma marca pode conter apenas a área principal e, portanto, ser compartilhada por todas as marcas, outra marca pode conter várias marcas (por exemplo, por região). As marcas, portanto, não precisam refletir o conjunto de áreas entre elas.
 
@@ -130,11 +130,11 @@ A qualquer momento, é possível suspender a herança ou desanexá-la completame
 >
 >Para obter uma visão mais técnica desse recurso, consulte [Como é estruturado o gerenciamento de vários sites para conteúdo direcionado](/help/sites-authoring/technical-multisite-targeted.md).
 
-### Criação de uma nova área em vez da criação de uma nova área como live copy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
+### Criação de uma área versus criação de uma área como live copy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
-No AEM, existe a opção de criar uma nova área ou de criar uma nova área como live copy. A criação de uma nova área agrupa atividades e qualquer coisa que pertença a essas atividades, como ofertas, experiências e assim por diante. Você deverá criar uma nova área quando quiser criar um conjunto completamente distinto de conteúdo direcionado ou compartilhar um conjunto de conteúdo direcionado.
+No AEM, você tem a opção de criar uma área ou uma área como livecopy. A criação de uma área agrupa atividades e qualquer coisa que pertença a essas atividades, como ofertas, experiências e assim por diante. Uma área é criada quando você deseja criar um conjunto completamente distinto de conteúdo direcionado ou compartilhar um conjunto de conteúdo direcionado.
 
-No entanto, se você tiver a herança configurada através do MSM entre os dois sites, convém herdar as atividades. Nesse caso, você cria uma nova área como uma live copy, onde Y é uma live copy de X e, portanto, herda todas as suas atividades também.
+No entanto, se você tiver a herança configurada através do MSM entre os dois sites, convém herdar as atividades. Nesse caso, você cria uma área como uma live copy, onde Y é uma live copy de X e, portanto, herda todas as atividades também.
 
 >[!NOTE]
 >
@@ -159,7 +159,7 @@ As áreas podem abranger atividades e ofertas. Depois de criar uma área em qual
 >
 >A área padrão chamada Área mestre é recolhida por padrão ao tocar ou clicar no nome de uma marca **até** criar outra área. Em seguida, ao selecionar uma marca no console **Atividade** ou **Ofertas**, você verá o console **Área**.
 
-Para criar uma nova área:
+Para criar uma área:
 
 1. Navegue até **Personalização** > **Atividades** ou **Ofertas** e, em seguida, acesse sua marca.
 1. Toque ou clique em **Criar área**.

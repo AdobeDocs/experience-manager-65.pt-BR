@@ -12,9 +12,9 @@ discoiquuid: 291c91e5-65ff-473d-ac11-3da480239e76
 docset: aem65
 feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2031'
+source-wordcount: '2029'
 ht-degree: 1%
 
 ---
@@ -60,7 +60,7 @@ Ao iniciar o AEM a partir do arquivo jar, uma variável `quickstart.properties` 
 
 A variável `WorkflowPurgeTask` e `com.day.cq.audit.impl.AuditLogMaintenanceTask` As tarefas do exigem configurações OSGi separadas e não podem funcionar sem elas. Se eles falharem durante a execução da tarefa de pré-atualização, a falta de configurações será o motivo mais provável. Portanto, adicione configurações OSGi para essas tarefas ou remova-as completamente da lista de tarefas de otimização de pré-atualização se não quiser executá-las. A documentação para configurar as tarefas de limpeza de fluxo de trabalho pode ser encontrada em [Administração de instâncias de fluxo de trabalho](/help/sites-administering/workflows-administering.md) e a configuração da tarefa de manutenção de log de auditoria podem ser encontradas em [Manutenção do registro de auditoria no AEM 6](/help/sites-administering/operations-audit-log.md).
 
-Para limpeza de fluxo de trabalho e log de auditoria no CQ 5.6, bem como limpeza de log de auditoria no AEM 6.0, consulte [Limpar fluxo de trabalho e nós de auditoria](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html).
+Para limpeza de fluxo de trabalho e log de auditoria no CQ 5.6 e limpeza de log de auditoria no AEM 6.0, consulte [Limpar fluxo de trabalho e nós de auditoria](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html).
 
 ## Instalar, Configurar e Executar as Tarefas de Pré-Atualização {#install-configure-run-pre-upgrade-tasks}
 

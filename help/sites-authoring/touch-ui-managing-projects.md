@@ -10,9 +10,9 @@ topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '981'
 ht-degree: 23%
 
 ---
@@ -36,7 +36,7 @@ A maneira mais fácil de fazer isso é dar a **projetos-usuários** acesso de le
 
 ## Criação de um projeto {#creating-a-project}
 
-Siga estas etapas para criar um novo projeto.
+Siga estas etapas para criar um projeto.
 
 1. No **Projetos** toque ou clique em **Criar** para abrir o **Criar projeto** assistente.
 1. Selecione um modelo e clique em **Próximo**. Você pode saber mais sobre os modelos de projeto padrão [aqui.](/help/sites-authoring/projects.md#project-templates)
@@ -76,7 +76,7 @@ Para adicionar itens a um bloco:
 
    ![Divisa em mosaico](assets/project-tile-create-task.png)
 
-1. Adicione o item ao bloco da mesma maneira que você faria ao criar um novo bloco. Os blocos do projeto estão descritos [aqui.](/help/sites-authoring/projects.md#project-tiles)
+1. Adicione o item ao bloco da mesma maneira que você faria ao criar um bloco. Os blocos do projeto estão descritos [aqui.](/help/sites-authoring/projects.md#project-tiles)
 
 ## Exibindo Informações do Projeto {#viewing-project-info}
 

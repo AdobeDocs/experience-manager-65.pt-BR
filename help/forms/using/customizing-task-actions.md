@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 exl-id: d17863fb-7950-493d-b378-16861c4af176
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 0%
@@ -120,7 +120,7 @@ Para personalizar as imagens, adicione o seguinte fragmento de código na `/apps
 
 >[!NOTE]
 >
->Adicione estilos separados para exibir imagens diferentes ou imagens de diferentes resoluções para as ações Lista de tarefas e Detalhes da tarefa. Por exemplo, para alterar a ação &#39;lock&#39;:
+>Adicione estilos separados para exibir imagens diferentes ou imagens de diferentes resoluções para as ações Lista de tarefas e Detalhes da tarefa. Por exemplo, para alterar a ação &#39;bloquear&#39;:
 
 ```css
 #taskarea .taskActionsPopUp .lock{

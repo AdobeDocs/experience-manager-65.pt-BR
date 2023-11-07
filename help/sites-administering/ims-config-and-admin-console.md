@@ -7,10 +7,10 @@ topic-tags: Security
 content-type: reference
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 9%
+source-wordcount: '1668'
+ht-degree: 11%
 
 ---
 
@@ -54,7 +54,7 @@ O fluxo de logon do usuário é mostrado abaixo. O usuário será redirecionado 
 
 A integração do cliente ao [!DNL Admin Console] O é um pré-requisito para o uso do Adobe IMS para autenticação AEM.
 
-Como primeira etapa, os clientes devem ter uma Organização provisionada no Adobe IMS. Os clientes do Adobe Enterprise são representados como Organizações do IMS na [Adobe [!DNL Admin Console]](https://helpx.adobe.com/br/enterprise/using/admin-console.html).
+Como primeira etapa, os clientes devem ter uma Organização provisionada no Adobe IMS. Os clientes do Adobe Enterprise são representados como Organizações IMS no [Adobe [!DNL Admin Console]](https://helpx.adobe.com/br/enterprise/using/admin-console.html).
 
 Os clientes do AEM Managed Services já devem ter uma organização provisionada e, como parte do provisionamento do IMS, as instâncias do cliente serão disponibilizadas no [!DNL Admin Console] para gerenciar direitos e acesso do usuário.
 
@@ -116,7 +116,7 @@ A Sincronização de usuários é distribuída pelo repositório do GitHub Adobe
 
 Observe que uma versão de pré-lançamento 2.4RC1 está disponível com suporte à criação de grupos dinâmicos e pode ser encontrada aqui: [https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)
 
-Os principais recursos desta versão são a capacidade de mapear dinamicamente novos grupos LDAP para associação de usuários na [!DNL Admin Console], bem como a criação dinâmica de grupos de usuários.
+Os principais recursos desta versão são a capacidade de mapear dinamicamente novos grupos LDAP para associação de usuários na [!DNL Admin Console]e a criação dinâmica de grupos de usuários.
 
 Mais informações sobre os novos recursos do grupo podem ser encontradas aqui:
 
@@ -124,7 +124,7 @@ Mais informações sobre os novos recursos do grupo podem ser encontradas aqui:
 
 >[!NOTE]
 >
->Para obter mais informações sobre a Ferramenta de sincronização de usuários, consulte [página da documentação](https://adobe-apiplatform.github.io/user-sync.py/bp/).
+>Para obter mais informações sobre a Ferramenta de sincronização de usuários, consulte a [página da documentação](https://adobe-apiplatform.github.io/user-sync.py/bp/).
 >
 >
 >A Ferramenta de sincronização de usuários precisa se registrar como uma UMAPI de cliente Adobe I/O usando o procedimento descrito [aqui](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
@@ -136,7 +136,7 @@ Mais informações sobre os novos recursos do grupo podem ser encontradas aqui:
 
 >[!NOTE]
 >
->A configuração do IMS do AEM será gerenciada pela equipe do Adobe Managed Services. No entanto, o administrador do cliente pode modificá-lo de acordo com seus requisitos (por exemplo, Associação de grupo automática ou Mapeamento de grupo). O cliente IMS também será registrado pela equipe do Managed Services.
+>A configuração IMS do AEM será feita pela equipe do Adobe Managed Services. No entanto, o administrador do cliente pode modificá-lo de acordo com seus requisitos (por exemplo, Associação de grupo automática ou Mapeamento de grupo). O cliente IMS também será registrado pela equipe do Managed Services.
 
 ## Como usar {#how-to-use}
 
@@ -146,7 +146,7 @@ Quando o administrador do produto do cliente fizer logon no [!DNL Admin Console]
 
 ![screen_shot_2018-09-17at105804pm](assets/screen_shot_2018-09-17at105804pm.png)
 
-Neste exemplo, a organização *AEM-MS-onboard* O tem 32 instâncias que abrangem topologias e ambientes diferentes, como Preparo, Produção etc.
+Neste exemplo, a organização *AEM-MS-onboard* O tem 32 instâncias que abrangem topologias e ambientes diferentes, como Preparo, Produção e assim por diante.
 
 ![screen_shot_2018-09-17at105517pm](assets/screen_shot_2018-09-17at105517pm.png)
 

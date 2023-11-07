@@ -4,7 +4,7 @@ description: Saiba como criar uma raiz de idioma no Adobe Experience Manager usa
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 1ae21d80-0683-4ab9-afaa-4d733ff47720
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%
@@ -19,7 +19,7 @@ O procedimento a seguir usa a interface clássica do usuário para criar uma rai
 1. Adicione uma nova página secundária que represente a versão de idioma do site:
 
    1. Clique em Nova > Nova página.
-   1. Na caixa de diálogo, especifique o Título e o Nome. O Nome precisa estar no formato de `<language-code>` ou `<language-code>_<country-code>`, por exemplo en, en_US, en_us, en_GB, en_gb.
+   1. Na caixa de diálogo, especifique o Título e o Nome. O Nome precisa estar no formato de `<language-code>` ou `<language-code>_<country-code>`, por exemplo, en, en_US, en_us, en_GB, en_gb.
 
       * O código de idioma compatível é o código de duas letras em minúsculas, conforme definido pela ISO-639-1
       * O código do país compatível é o código de duas letras em minúsculas ou maiúsculas, conforme definido pela norma ISO 3166

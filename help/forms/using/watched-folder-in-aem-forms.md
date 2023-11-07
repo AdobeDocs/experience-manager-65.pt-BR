@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7148'
+source-wordcount: '7146'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Você pode configurar as seguintes propriedades para uma Pasta monitorada.
 
 >[!NOTE]
 >
->Mesmo quando uma entrada é marcada como tendo ultrapassado o tempo limite usando esse mecanismo, ela ainda pode estar sendo processada em segundo plano, mas apenas levando mais tempo do que o esperado. Se o conteúdo de entrada foi consumido antes do início do mecanismo de tempo limite, o processamento pode até prosseguir para a conclusão mais tarde e a saída ser despejada na pasta de resultados. Se o conteúdo não foi consumido antes do tempo limite, é muito provável que o processamento expire posteriormente ao tentar consumir o conteúdo, e esse erro também será registrado na pasta de falha para a mesma entrada. Por outro lado, se o processamento da entrada nunca for ativado devido a um erro de disparo intermitente de trabalho/fluxo de trabalho (que é o cenário que o mecanismo de expiração visa resolver), é claro que nenhuma dessas duas eventualidades ocorrerá. Assim, para quaisquer entradas na pasta de falha que foram marcadas como falhas devido a um tempo limite (procure mensagens do formulário &quot;Arquivo não processado após um período significativo, marcando como falha!&quot; no registro de falhas), é aconselhável examinar a pasta de resultados (e também a própria pasta de falhas para outra entrada para a mesma entrada) para verificar se alguma das eventualidades descritas anteriormente realmente ocorreu.
+>Mesmo quando uma entrada é marcada como tendo ultrapassado o tempo limite usando esse mecanismo, ela ainda pode estar sendo processada em segundo plano, mas apenas levando mais tempo do que o esperado. Se o conteúdo de entrada foi consumido antes do início do mecanismo de tempo limite, o processamento pode até prosseguir para a conclusão mais tarde e a saída ser despejada na pasta de resultados. Se o conteúdo não foi consumido antes do tempo limite, é muito provável que o processamento expire posteriormente ao tentar consumir o conteúdo, e esse erro também será registrado na pasta de falha para a mesma entrada. Por outro lado, se o processamento da entrada nunca for ativado devido a um erro intermitente de trabalho/fluxo de trabalho (que é o cenário que o mecanismo de expiração visa resolver), nenhuma dessas duas eventualidades ocorrerá. Assim, para quaisquer entradas na pasta de falha que foram marcadas como falhas devido a um tempo limite (procure mensagens do formulário &quot;Arquivo não processado após um período significativo, marcando como falha!&quot; no registro de falhas), é aconselhável examinar a pasta de resultados (e também a própria pasta de falhas para outra entrada para a mesma entrada) para verificar se alguma das eventualidades descritas anteriormente realmente ocorreu.
 
 * **deleteExpiredStageFileOnlyWhenThrottled (Booleano, padrão verdadeiro):** Se o mecanismo de expiração deve ser ativado somente quando a pasta observada estiver limitada. O mecanismo é mais relevante para pastas de observação limitadas, pois um pequeno número de arquivos que persistem em um estado não processado (devido a falhas de disparo intermitentes de tarefas/fluxos de trabalho) tem o potencial de obstruir o processamento de todo o lote quando a limitação estiver ativada. Se essa propriedade for mantida como true (o padrão), o mecanismo de expiração não será ativado para pastas de observação que não estão limitadas. Se a propriedade for mantida como false, o mecanismo sempre será ativado, desde que a propriedade stageFileExpirationDuration seja um número positivo.
 

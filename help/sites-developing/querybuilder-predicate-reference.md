@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2347'
 ht-degree: 3%
@@ -68,7 +68,7 @@ Oferece suporte à extração de facetas. Fornece intervalos para cada `true` ou
 #### Propriedades {#properties}
 
 * **boolproperty**
-Caminho relativo para a propriedade, por exemplo `myFeatureEnabled` ou `jcr:content/myFeatureEnabled`.
+O caminho relativo para a propriedade, por exemplo, `myFeatureEnabled` ou `jcr:content/myFeatureEnabled`.
 
 * **value**
 Valor para verificar a propriedade, &quot; `true`&quot; ou &quot; `false`&quot;.
@@ -120,11 +120,11 @@ Não oferece suporte à filtragem.
 
 * **propriedade**
 
-  Caminho relativo para um `DATE` propriedade, por exemplo `jcr:lastModified`.
+  Caminho relativo para um `DATE` propriedade, por exemplo, `jcr:lastModified`.
 
 * **lowerBound**
 
-  Data inferior vinculada para verificar a propriedade, por exemplo `2014-10-01`.
+  Data inferior vinculada para verificar a propriedade para, por exemplo, `2014-10-01`.
 
 * **lowerOperation**
 
@@ -132,7 +132,7 @@ Não oferece suporte à filtragem.
 
 * **upperBound**
 
-  Limite superior para verificar a propriedade, por exemplo `2014-10-01T12:15:00`.
+  Limite superior para verificar a propriedade, por exemplo, `2014-10-01T12:15:00`.
 
 * **upperOperation**
 
@@ -247,7 +247,7 @@ Oferece suporte à extração de facetas. Fornece intervalos para cada código d
 
 * **idioma**
 
-  Código de idioma ISO, por exemplo &quot; `de`&quot;
+  Código de idioma ISO, por exemplo, &quot;`de`&quot;
 
 ### principal ativo {#mainasset}
 
@@ -313,7 +313,7 @@ Permite que os resultados sejam classificados. Se a ordenação por várias prop
 
 * **orderby**
 
-  O nome da propriedade do JCR é indicado por um @ à esquerda, por exemplo `@jcr:lastModified` ou `@jcr:content/jcr:title`, ou outro predicado na consulta, por exemplo `2_property`, no qual classificar.
+  O nome da propriedade do JCR é indicado por um @ à esquerda, por exemplo, `@jcr:lastModified` ou `@jcr:content/jcr:title`, ou outro predicado na consulta, por exemplo, `2_property`, no qual classificar.
 
 * **classificar**
 
@@ -357,7 +357,7 @@ Oferece suporte à extração de facetas. Fornece intervalos para cada valor de 
 
 * **propriedade**
 
-  Caminho relativo para a propriedade, por exemplo `jcr:title`.
+  O caminho relativo para a propriedade, por exemplo, `jcr:title`.
 
 * **valor**
 
@@ -521,7 +521,7 @@ Oferece suporte à extração de facetas. Fornece intervalos para cada tag exclu
 
 * **tag**
 
-  O caminho do título da tag a ser procurado, por exemplo &quot;Propriedades dos ativos : Orientação / Paisagem&quot;.
+  O caminho do título da tag a ser procurada, por exemplo, &quot;Propriedades dos ativos : Orientação / Paisagem&quot;.
 
 * **Valor_N**
 
@@ -541,7 +541,7 @@ Oferece suporte à extração de facetas. Fornece compartimentos para cada tag e
 
 * **tagid**
 
-  ID da tag para que você possa procurar, por exemplo &quot; `properties:orientation/landscape`&quot;.
+  ID da tag para que você possa procurar, por exemplo, &quot; `properties:orientation/landscape`&quot;.
 
 * **Valor_N**
 
@@ -585,4 +585,4 @@ Oferece suporte à extração de facetas. Fornece intervalos para cada tipo excl
 
 * **tipo**
 
-  Tipo de nó ou nome de mixin a ser pesquisado, por exemplo `cq:Page`.
+  Tipo de nó ou nome de mixin a ser pesquisado, por exemplo, `cq:Page`.

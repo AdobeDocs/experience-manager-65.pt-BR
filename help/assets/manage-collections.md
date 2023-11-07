@@ -7,10 +7,10 @@ role: User
 feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2203'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
 
@@ -166,7 +166,6 @@ Os metadados da coleção incluem dados sobre a coleção, incluindo tags adicio
    >* No [!UICONTROL Propriedades] você pode remover coleções da lista cancelando a seleção. A lista de coleções tem todas as coleções selecionadas por padrão. [!DNL Experience Manager] O não atualiza os metadados das coleções removidas.
    >* Na parte superior da lista, marque a caixa de seleção ao lado de **[!UICONTROL Título]** para alternar entre selecionar as coleções e limpar a lista.
 
-
 1. Clique em **[!UICONTROL Salvar e fechar]** na barra de ferramentas e feche a caixa de diálogo de confirmação.
 1. Para anexar os novos metadados aos existentes, selecione **[!UICONTROL Modo anexar]**. Se você não selecionar essa opção, os novos metadados substituirão os existentes nos campos. Clique em **[!UICONTROL Enviar]**.
 
@@ -278,4 +277,3 @@ Você pode executar um fluxo de trabalho para os ativos em uma coleção. Se a c
 >
 >* [Configurar notificações por email do Experience Manager Assets](/help/sites-administering/notification.md#assetsconfig)
 >* [Criar uma tarefa de revisão para Coleções](bulk-approval.md)
-

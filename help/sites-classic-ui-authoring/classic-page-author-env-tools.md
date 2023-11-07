@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '898'
 ht-degree: 6%
 
 ---
@@ -182,7 +182,7 @@ A variável **Log de auditoria** pode ser acessado no **Informações** guia do 
 
 ## Informações da página {#page-information}
 
-O console do site também [fornece informações sobre o status atual da página](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) como publicação, modificação, bloqueado, livecopy etc.
+O console do site também [fornece informações sobre o status atual da página](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) como publicação, modificação, bloqueado, livecopy e assim por diante.
 
 ## Modos de página   {#page-modes}
 
@@ -207,7 +207,7 @@ Nesse modo, é possível editar o design da página configurando os componentes 
 >
 >* [Andaime](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
 >* [ClientContext](/help/sites-administering/client-context.md)
->* Sites - abrirá o console Sites.
+>* Sites - abre o console Sites.
 >* Recarregar - atualizará a página.
 
 ## Atalhos de teclado {#keyboard-shortcuts}

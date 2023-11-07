@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 role: Developer
 exl-id: 7d6fd230-e477-4286-9fb3-18a3474e3e48
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2124'
+source-wordcount: '2123'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Depois de criar o cliente de serviço, fazer referência a um arquivo DDX, criar
 
 O serviço Assembler retorna um `java.util.Map` objeto, que pode ser obtido do `AssemblerResult` e que contém os resultados da operação. O resultado `java.util.Map` objeto contém os documentos resultantes e quaisquer exceções.
 
-A tabela a seguir resume alguns dos valores-chave e tipos de objeto que podem ser localizados no `java.util.Map` objeto.
+A tabela a seguir resume alguns dos valores-chave e tipos de objeto que podem estar na variável retornada `java.util.Map` objeto.
 
 <table>
  <thead>

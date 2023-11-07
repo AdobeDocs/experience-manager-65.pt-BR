@@ -12,7 +12,7 @@ discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
 feature: Mobile Forms
 exl-id: 76bd1e2d-9e65-452c-8cef-123d28886a62
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Um exemplo de widget padrão e personalizado
 
 Você pode criar um perfil ou escolher um perfil existente para adicionar um widget personalizado. Para obter mais informações sobre a criação de perfis, consulte [Criar perfil personalizado](/help/forms/using/custom-profile.md).
 
-### Criar um widget {#create-a-widget}
+### Criar um dispositivo {#create-a-widget}
 
 Os formulários HTML5 fornecem uma implementação da estrutura de widgets que pode ser estendida para criar novos widgets. A implementação é um widget jQuery *abstractWidget* que pode ser estendido para criar um novo widget. O novo widget pode se tornar funcional somente estendendo/substituindo as funções mencionadas abaixo.
 

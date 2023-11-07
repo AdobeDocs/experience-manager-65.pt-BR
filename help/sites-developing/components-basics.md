@@ -7,9 +7,9 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4913'
+source-wordcount: '4907'
 ht-degree: 1%
 
 ---
@@ -157,7 +157,7 @@ A definição de um componente pode ser dividida da seguinte forma:
 
    * propriedades jcr:
 
-     Uma lista de propriedades jcr; elas são variáveis e algumas podem ser opcionais, embora a estrutura básica de um nó de componente, suas propriedades e subnós sejam definidos pelo `cq:Component` definição
+     Uma lista de propriedades jcr; elas são variáveis e algumas podem ser opcionais, por meio da estrutura básica de um nó de componente, suas propriedades e subnós são definidos pelo `cq:Component` definição
 
    * Recursos:
 
@@ -210,7 +210,7 @@ O ícone ou a abreviação do componente é definido por meio das propriedades J
 1. `abbreviation` - Propriedade de string para personalizar a abreviação do nome do componente no navegador de componentes
    * A abreviação deve ser limitada a dois caracteres.
    * O fornecimento de uma cadeia de caracteres vazia cria a abreviação a partir dos dois primeiros caracteres do `jcr:title` propriedade.
-      * Por exemplo &quot;Im&quot; para &quot;Image&quot;
+      * Por exemplo, &quot;Im&quot; para &quot;Image&quot;
       * O título localizado é usado para criar a abreviação.
    * A abreviação só é traduzida se o componente tiver uma `abbreviation_commentI18n` que é usada como dica de tradução.
 1. `cq:icon.png` ou `cq:icon.svg` - Ícone para este componente, que é mostrado no navegador de componentes
@@ -710,7 +710,7 @@ A variável `cq:layout` propriedade ( `String`) define como o componente pode se
   </tr>
   <tr>
    <td><code>editbar</code></td>
-   <td>A edição do componente é acessível por meio de uma barra de ferramentas.<br /> Para uso avançado, observe que o objeto do lado do cliente correspondente é: <code>CQ.wcm.EditBar</code>.</td>
+   <td>A edição do componente é acessível por meio de uma barra de ferramentas.<br /> Para uso avançado, o objeto do lado do cliente correspondente é: <code>CQ.wcm.EditBar</code>.</td>
   </tr>
   <tr>
    <td><code>auto</code></td>
@@ -1026,7 +1026,7 @@ A variável `cq:listeners` nó (tipo de nó `cq:EditListenersConfig`) define o q
 >  * `aftermove`
 >  * `aftercopy`
 
-O manipulador de eventos pode ser implementado com uma implementação personalizada. Por exemplo (onde `project.customerAction` é um método estático):
+O manipulador de eventos pode ser implementado com uma implementação personalizada. Por exemplo, (onde `project.customerAction` é um método estático):
 
 `afteredit = "project.customerAction"`
 
@@ -1036,7 +1036,7 @@ O exemplo a seguir é equivalente ao `REFRESH_INSERTED` configuração:
 
 >[!NOTE]
 >
->Para a interface clássica, para ver quais parâmetros podem ser usados nos manipuladores, consulte `before<action>` e `after<action>` seção eventos da [`CQ.wcm.EditBar`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) e [`CQ.wcm.EditRollover`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover) documentação do widget.
+>Para a interface clássica, consulte os parâmetros que podem ser usados nos manipuladores `before<action>` e `after<action>` seção eventos da [`CQ.wcm.EditBar`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) e [`CQ.wcm.EditRollover`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover) documentação do widget.
 
 Com a seguinte configuração, a página é atualizada depois que o componente é excluído, editado, inserido ou movido:
 

@@ -1,17 +1,13 @@
 ---
 title: Recuperando Variáveis de Tarefa no URL de Resumo
-seo-title: Getting Task Variables in Summary URL
 description: Como reutilizar as informações sobre uma tarefa e gerar um URL de resumo para resumir ou descrever uma tarefa.
-seo-description: How-to reuse the information about a task and generate a Summary URL to summarize or describe a task.
-uuid: 9eab3a6a-a99a-40ae-b483-33ec7d21c5b6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 exl-id: b5e27b54-d141-48dd-a4ed-dd0a691319a5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -63,7 +59,7 @@ Nesta orquestração de exemplo, um funcionário envia um formulário de inscri�
    1. Criar um processo **criar resumo de PTO** e use-o como um subprocesso antes da variável **Atribuir tarefa** operação na sua orquestração.
    1. Definir **employeeName**, **employeeID**, **ptoReason**, **totalDays**, e **nodeName** como variáveis de entrada no novo processo. Essas variáveis serão transmitidas como dados de formulário enviados.
 
-      Definir também uma variável de saída **ptoNodePath** que será usado ao definir o URL de resumo.
+      Definir também uma variável de saída **ptoNodePath** que é usado ao definir o URL de resumo.
 
    1. No **criar resumo de PTO** processo, use o **definir valor** para definir os detalhes de entrada em um **nodeProperty**(**nodeProps**) mapa.
 
@@ -78,8 +74,8 @@ Nesta orquestração de exemplo, um funcionário envia um formulário de inscri�
       * **Caminho da pasta**: o caminho onde o novo nó CRX é criado. Definir o caminho como **/content**.
       * **Nome do nó**: atribua a variável de entrada nodeName a esse campo. É uma string exclusiva de nome de nó.
       * **Tipo de nó**: Defina o tipo como **nt:não estruturado**. A saída desse processo é nodePath. O nodePath é o caminho CRX do nó recém-criado. O nodePath seria a saída final do **criar PTO** processo de resumo.
-   1. Transmita os dados do formulário enviado (**employeeName**, **employeeID**, **ptoReason**, e **totalDays**) como entrada para o novo processo **criar resumo de PTO**. Usar a saída como **ptoSummaryNodePath**.
 
+   1. Transmita os dados do formulário enviado (**employeeName**, **employeeID**, **ptoReason**, e **totalDays**) como entrada para o novo processo **criar resumo de PTO**. Usar a saída como **ptoSummaryNodePath**.
 
 1. Defina a Url do resumo como uma expressão XPath contendo os detalhes do servidor junto com **ptoSummaryNodePath**.
 

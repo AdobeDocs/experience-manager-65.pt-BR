@@ -1,17 +1,15 @@
 ---
 title: Componentes do Adobe Campaign
 description: Ao integrar com o Adobe Campaign, você tem componentes disponíveis para o ao trabalhar com boletins informativos e formulários.
-uuid: cc9417c9-4cc1-4554-858e-2ecd682dc92f
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 5afe864d-5794-4ffa-99e7-a3233f982aff
 docset: aem65
 exl-id: eeff89c1-41b3-403d-b4bf-c79b09b24d4a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2531'
+source-wordcount: '2530'
 ht-degree: 5%
 
 ---
@@ -24,7 +22,7 @@ Ao integrar com o Adobe Campaign, você tem componentes disponíveis para o ao t
 >
 >Os componentes de email do AEM foram descontinuados. Devido à natureza do email, que mescla conteúdo e estilo, os componentes de email fornecidos prontos para uso pelo AEM tornam-se de reutilização limitada para os clientes, devido à necessidade de implementar estilos personalizados em quaisquer componentes que sejam necessários para projetos.
 >
->Os componentes de email podem ser implementados no nível do projeto, e os componentes de email do AEM obsoletos ilustram como isso pode ser feito. No entanto, esses componentes obsoletos não devem ser usados em projetos do.
+>Os componentes de email podem ser implementados no nível do projeto, e os componentes de email do AEM obsoletos ilustram como isso pode ser feito. No entanto, não use esses componentes obsoletos em projetos.
 
 ## Componentes do informativo do Adobe Campaign {#adobe-campaign-newsletter-components}
 
@@ -174,7 +172,7 @@ Arraste uma imagem do localizador de conteúdo ou clique em para navegar até um
 * **Propriedades da imagem** (**Propriedades avançadas da imagem**) Permite especificar o seguinte:
 
    * **Título**
-O título do bloco; será mostrado com o mouse.
+O título do bloco; é mostrado por mouseover.
 
    * **Texto Alternativo**
 Texto alternativo a ser mostrado se a imagem não puder ser exibida.
@@ -326,7 +324,7 @@ O exemplo a seguir mostra um componente Caixa de seleção (Campanha) sendo exib
 
 ### Campo de data (Campanha) e Campo de data/HTML 5 (Campanha) {#date-field-campaign-and-date-field-html-campaign}
 
-Use o campo de data para permitir que os destinatários definam uma data; por exemplo, talvez você queira que os destinatários especifiquem suas datas de nascimento. O formato de data corresponde ao formato usado na instância do Adobe Campaign.
+Use o campo de data para permitir que os destinatários definam uma data; por exemplo, você pode desejar que os destinatários especifiquem suas datas de nascimento. O formato de data corresponde ao formato usado na instância do Adobe Campaign.
 
 Além de [configurações comuns à maioria dos componentes do Adobe Campaign](#settings-common-to-most-components), você pode configurar o seguinte:
 

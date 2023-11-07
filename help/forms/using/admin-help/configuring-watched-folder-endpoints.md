@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 22d9b22a0fc0bc5f753f2e11ca66e2627e1a8405
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7181'
+source-wordcount: '7177'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Você pode criar uma pasta monitorada das duas seguintes maneiras:
 
 * Crie uma pasta no sistema de arquivos antes de configurar um endpoint de pasta monitorada e digite o caminho completo na caixa Caminho.
 
-Em um ambiente em cluster, a pasta que será usada como uma pasta monitorada deve ser acessível, gravável e compartilhada no sistema de arquivos ou na rede. Nesse cenário, cada instância do servidor de aplicativos do cluster deve ter acesso à mesma pasta compartilhada.
+Em um ambiente em cluster, a pasta usada como uma pasta monitorada deve ser acessível, gravável e compartilhada no sistema de arquivos ou na rede. Nesse cenário, cada instância do servidor de aplicativos do cluster deve ter acesso à mesma pasta compartilhada.
 
 No Windows, se o servidor de aplicativos estiver sendo executado como um serviço, ele deverá ser iniciado com acesso apropriado à pasta compartilhada de uma das seguintes maneiras:
 
@@ -62,7 +62,7 @@ Se o trabalho contiver mais de um arquivo de entrada, o usuário deverá criar u
 
 ## Saída da pasta monitorada {#watched-folder-output}
 
-Quando a entrada é uma pasta e a saída consiste em vários arquivos, os formulários AEM criam uma pasta de saída com o mesmo nome da pasta de entrada e copiam os arquivos de saída nessa pasta. Quando a saída consiste em um mapa de documentos contendo um par de valores chave, como a saída de um processo de Saída, a chave será usada como o nome do arquivo de saída.
+Quando a entrada é uma pasta e a saída consiste em vários arquivos, os formulários AEM criam uma pasta de saída com o mesmo nome da pasta de entrada e copiam os arquivos de saída nessa pasta. Quando a saída consiste em um mapa de documentos contendo um par de valores chave, como a saída de um processo de Saída, a chave é usada como o nome do arquivo de saída.
 
 Os nomes de arquivo de saída que resultam de um processo de ponto de extremidade não podem conter caracteres diferentes de letras, números e um ponto final (.) antes da extensão do arquivo. Formulários AEM convertem outros caracteres em seus valores hexadecimais.
 
@@ -386,7 +386,7 @@ Estas são algumas dicas e truques ao configurar o endpoint da Pasta monitorada:
    * Para `java.lang.String`: O administrador tem duas opções. Primeiro, o administrador pode especificar o tipo de mapeamento como `Literal` e insira um valor de mapeamento como uma string, como `hello.` A pasta monitorada chamará o serviço com a cadeia de caracteres `hello`. Em segundo lugar, o administrador pode especificar o tipo de mapeamento como `Variable` e insira um valor de mapeamento com um padrão como `*.txt`. Nesse último caso, os arquivos com a extensão .txt serão lidos como um documento forçado como uma sequência de caracteres para invocar o serviço.
    * Tipo primitivo de Java: o administrador pode especificar o tipo de mapeamento como `Literal` e forneça o valor. A Pasta monitorada chamará o serviço com o valor especificado.
 
-* A Pasta monitorada deve funcionar com documentos. As saídas suportadas são `com.adobe.idp.Document`, `org.w3c.Document`, `org.w3c.Node`, bem como uma lista e um mapa desses tipos. Qualquer outro tipo resultará em uma saída com falha na pasta de falha.
+* A Pasta monitorada deve funcionar com documentos. As saídas suportadas são `com.adobe.idp.Document`, `org.w3c.Document`, `org.w3c.Node`, e uma lista e um mapa desses tipos. Qualquer outro tipo resultará em uma saída com falha na pasta de falha.
 * Se os resultados não estiverem na pasta de resultados, verifique a pasta com falha para ver se ocorreu uma falha.
 * A pasta monitorada funciona melhor se usada no modo assíncrono. Nesse modo, a Pasta monitorada coloca a solicitação de chamada na fila e retorna a chamada. A fila é processada de forma assíncrona. Quando a opção Assíncrono não está definida, a Pasta monitorada chama o serviço de destino de forma síncrona e o Mecanismo do processo aguarda até que o serviço seja concluído com a solicitação e os resultados sejam produzidos. Se o serviço de destino levar muito tempo para processar a solicitação, a Pasta monitorada poderá receber erros de tempo limite.
 * A criação de pastas monitoradas para operações de importação e exportação não permite a abstração da extensão do nome de arquivo. Ao chamar o serviço de Integração de Dados de Formulário usando pastas monitoradas, o tipo de extensão do nome de arquivo para o arquivo de saída pode não corresponder ao formato de saída pretendido para o tipo de objeto do documento. Por exemplo, se o arquivo de entrada para uma pasta monitorada que chama a operação de exportação for um formulário XFA que contém dados, a saída deverá ser um arquivo de dados XDP. Para obter um arquivo de saída com a extensão de nome de arquivo correta, você pode especificá-lo no mapeamento do parâmetro de saída. Neste exemplo, você pode usar %F.xdp para o mapeamento do parâmetro de saída.

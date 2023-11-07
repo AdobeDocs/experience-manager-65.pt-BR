@@ -12,9 +12,9 @@ discoiquuid: a644978e-5736-4771-918a-dfefe350a4a1
 docset: aem65
 feature: Mobile Forms
 exl-id: ed8349a1-f761-483f-9186-bf435899df7d
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2011'
+source-wordcount: '2010'
 ht-degree: 1%
 
 ---
@@ -174,7 +174,7 @@ Perfis são os nós de Recurso no sling que representam um formulário ou uma Fa
 
 #### Renderizadores de perfis {#profile-renderers}
 
-O nó de Perfil tem uma propriedade **sling:resourceSuperType** com valor **xfaforms/profile**. Essa propriedade envia internamente solicitações de encaminhamento ao script sling para nós de Perfil localizados na **/libs/xfaforms/profile** pasta. Esses scripts são páginas JSP, que são containers para reunir os formulários de HTML e os artefatos JS/CSS necessários. As páginas incluem referências a:
+O nó de Perfil tem uma propriedade **sling:resourceSuperType** com valor **xfaforms/profile**. Essa propriedade envia internamente solicitações de encaminhamento ao script sling para nós de Perfil na **/libs/xfaforms/profile** pasta. Esses scripts são páginas JSP, que são containers para reunir os formulários de HTML e os artefatos JS/CSS necessários. As páginas incluem referências a:
 
 * **xfaforms.I18N&lt;locale>**: Esta biblioteca contém dados localizados.
 * **xfaforms.profile**: esta biblioteca contém implementação para script XFA e mecanismo de layout.

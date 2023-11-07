@@ -1,19 +1,15 @@
 ---
 title: Portais e portlets AEM
-seo-title: AEM Portals and Portlets
 description: Saiba como configurar e administrar o AEM como um portal e como configurar e exibir conteúdo de AEM em um portlet.
-seo-description: Learn how to configure and administer AEM as a portal and how to configure and display AEM content in a portlet.
-uuid: 7f9e316d-277e-4a1e-b6f3-cd89addc897b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 99528fda-5c8c-4034-bcbe-a4cea42f694b
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6098'
+source-wordcount: '6093'
 ht-degree: 0%
 
 ---
@@ -193,7 +189,7 @@ Para configurar um agente de replicação para o portal:
 
    ![screen_shot_2012-02-15at40817pm](assets/screen_shot_2012-02-15at40817pm.png)
 
-1. Clique duas vezes no agente de replicação recém-criado. É exibido como inválido, pois ainda não foi configurado.
+1. Clique duas vezes no agente de replicação criado. É exibido como inválido, pois ainda não foi configurado.
 
    ![screen_shot_2012-02-15at41001pm](assets/screen_shot_2012-02-15at41001pm.png)
 
@@ -247,7 +243,7 @@ As opções de configuração de autenticação que o portlet usa nas instância
 
 >[!NOTE]
 >
->Ao trabalhar com o AEM há vários métodos de gerenciamento das definições de configuração para serviços OSGi (nós do console ou do repositório).
+>Ao trabalhar com o AEM, há vários métodos de gerenciamento das definições de configuração para serviços OSGi (nós do console ou do repositório).
 >
 >Consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos.
 
@@ -548,7 +544,7 @@ O portlet de conteúdo AEM tem um recurso de localização integrado, que garant
 Isso é feito em duas etapas:
 
 1. O Detector de Localidade do Diretório de Portal detecta a localidade do usuário do portal obtendo a configuração de localidade do portal. Esse serviço deve ser configurado com a lista de idiomas disponíveis no AEM.
-1. O Manipulador de localidade do Director do Portal lida com a localização da solicitação atual. Ela seleciona o caminho do conteúdo solicitado, por exemplo `/content/geometrixx/en/company.html`e, de acordo com a configuração, ele reescreve a variável **en** com o local real do usuário.
+1. O Manipulador de localidade do Director do Portal lida com a localização da solicitação atual. Ele seleciona o caminho do conteúdo solicitado, por exemplo, `/content/geometrixx/en/company.html`e, de acordo com a configuração, ele reescreve a variável **en** com o local real do usuário.
 
 O Manipulador de localidade do Portal Director pode ser configurado com os caminhos para verificar informações de localidade - geralmente isso inclui tudo em `/content` e com a posição das informações de local no caminho. Por padrão, o manipulador de local segue a recomendação de estruturar sites multilíngues no AEM.
 
@@ -616,7 +612,7 @@ Ao implementar esse serviço, defina as **classificação.serviço** propriedade
 | **Nome** | **Descrição** | **Comportamento padrão** |
 |---|---|---|
 | Autenticador | Fornece as informações de autenticação para AEM | Usa um usuário técnico configurável para criar e publicar. Ou SSO pode ser usado. |
-| HTMLRewriter | Substitui links, imagens etc. | Substitui links AEM para links de portal, pode ser estendido por um UrlMapper e um TextMapper |
+| HTMLRewriter | Substitui links, imagens, etc | Substitui links AEM para links de portal, pode ser estendido por um UrlMapper e um TextMapper |
 | HttpClientService | Gerencia todas as conexões http | Implementação padrão |
 | LocaleHandler | Gerencia as informações de local | Substitui um link para o conteúdo em relação ao local. |
 | LocaleDetector | Detecta a localidade do usuário. | Usa o local fornecido pelo portal. |
@@ -731,7 +727,7 @@ Use o componente Portal para adicionar uma janela de portlet à página da Web. 
 
 Para acessar o conteúdo fornecido pelo AEM WCM, o servidor do portal precisa ser equipado com o AEM Portal Director Portlet. Para fazer isso, instale, configure e adicione o portlet à página do portal usando as etapas fornecidas nesta seção.
 
-Por padrão, o portlet se conecta à instância de publicação em localhost:4503 e à instância de autor em localhost:4502. Esses valores podem ser alterados durante a implantação do portlet. O diretor do portal está disponível como conteúdo no repositório em /libs/portal/diretory. Será necessário baixar o arquivo WAR do aplicativo antes de usá-lo.
+Por padrão, o portlet se conecta à instância de publicação em localhost:4503 e à instância de autor em localhost:4502. Esses valores podem ser alterados durante a implantação do portlet. O diretor do portal está disponível como conteúdo no repositório em /libs/portal/diretory. Você deve baixar o arquivo WAR do aplicativo antes de usá-lo.
 
 ### Baixando o arquivo WAR {#downloading-the-war-file}
 
@@ -799,7 +795,7 @@ Normalmente, o caminho de início aponta diretamente para o conteúdo no AEM. No
 Para adicionar o portlet à página do portal:
 
 1. Verifique se você está na janela de administração do servidor de aplicativos e navegue até o local onde gerencia as páginas. (por exemplo, no WebSphere 6.1, clique em **Gerenciar páginas**).
-1. Selecione o nome do portlet e, em seguida, selecione uma página existente ou crie uma nova página.
+1. Selecione o nome do portlet e uma página existente ou crie uma página.
 1. Edite o layout da página.
 1. Selecione o portlet e adicione-o a um container.
 1. Salve as alterações.

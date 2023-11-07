@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 exl-id: bf69de86-2ca6-4d21-936c-07c1debacfa0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
@@ -46,11 +46,11 @@ Você pode criar quantos modelos de pesquisa forem necessários.
 
    * Na parte superior da guia Critérios, selecione um Elemento de Processo ou Elemento de Tarefa.
 
-      **Dica**: *Se você tiver selecionado anteriormente o elemento Nome do Processo e especificado um processo, quaisquer Variáveis do Processo definidas nesse processo também estarão disponíveis para seleção.*
+     **Dica**: *Se você tiver selecionado anteriormente o elemento Nome do Processo e especificado um processo, quaisquer Variáveis do Processo definidas nesse processo também estarão disponíveis para seleção.*
 
-      **Dica**: *Se você selecionar o elemento Tarefa visível, os usuários poderão remover tarefas concluídas dos resultados da pesquisa.*
+     **Dica**: *Se você selecionar o elemento Tarefa visível, os usuários poderão remover tarefas concluídas dos resultados da pesquisa.*
 
-      Os campos de critérios de pesquisa para o elemento selecionado aparecem na parte inferior da guia Critérios.
+     Os campos de critérios de pesquisa para o elemento selecionado aparecem na parte inferior da guia Critérios.
 
    * Para cada Elemento do Processo, Elemento da Tarefa e Variável do Processo que você selecionar, preencha os campos de pesquisa correspondentes na parte inferior da guia Critérios:
 
@@ -58,10 +58,9 @@ Você pode criar quantos modelos de pesquisa forem necessários.
       * (Opcional) Para permitir que os usuários alterem o valor do operando no Workspace, selecione Permitir que o usuário altere o operando.
       * (Opcional) Para permitir que os usuários alterem o operador relacional, selecione Permitir que o usuário selecione outro operador relacional. Na lista exibida, selecione os operadores que estarão disponíveis para o usuário.
 
-      **Dica**: *Se você selecionou Nome do processo como o elemento, é possível clicar no ícone ao lado do campo de operando para exibir uma lista onde é possível selecionar um processo que está sendo executado no servidor de formulários. Depois de selecionar um processo, todas as variáveis de processo definidas nesse processo estarão disponíveis para seleção em Variáveis de processo, na seção superior da guia Critérios.*
+     **Dica**: *Se você selecionou Nome do processo como o elemento, é possível clicar no ícone ao lado do campo de operando para exibir uma lista onde é possível selecionar um processo que está sendo executado no servidor de formulários. Depois de selecionar um processo, todas as variáveis de processo definidas nesse processo estarão disponíveis para seleção em Variáveis de processo, na seção superior da guia Critérios.*
 
-      **Dica**: *Você pode excluir um elemento do modelo de pesquisa clicando no ícone Excluir ao lado dos critérios de pesquisa do elemento.*
-
+     **Dica**: *Você pode excluir um elemento do modelo de pesquisa clicando no ícone Excluir ao lado dos critérios de pesquisa do elemento.*
 
 1. (Opcional) Para cada cabeçalho de coluna ser exibido nos resultados da pesquisa, clique na guia Layout e execute as seguintes etapas:
 
@@ -80,7 +79,7 @@ Você pode criar quantos modelos de pesquisa forem necessários.
    * (Opcional) Para classificar uma coluna em ordem decrescente, marque a caixa de seleção ao lado do nome do elemento. Se a caixa de seleção não estiver marcada, a coluna será classificada em ordem crescente.
 
 1. Clique na guia Save.
-1. (Opcional) Ao criar um novo modelo de pesquisa, dê a ele um nome exclusivo. Se você não especificar um nome exclusivo, poderá substituir um template existente.
+1. (Opcional) Se estiver criando um modelo de pesquisa, dê a ele um nome exclusivo. Se você não especificar um nome exclusivo, poderá substituir um template existente.
 1. Clique no botão Save.
 
 ## Excluir um modelo de pesquisa {#delete-a-search-template}

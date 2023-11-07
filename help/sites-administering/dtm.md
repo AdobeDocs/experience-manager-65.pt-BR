@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: b8c7a20a-7694-4a49-b66a-060720f17dad
 exl-id: 1e0821f5-627f-4262-ba76-62303890e112
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2208'
+source-wordcount: '2206'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,6 @@ Após configurar a integração, as alterações nas ferramentas e regras de imp
 >* A 3.x está configurada com [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* A 4.x está configurada com [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
-
 
 ## Opções de implantação {#deployment-options}
 
@@ -145,7 +144,7 @@ Ao hospedar as bibliotecas do Dynamic Tag Management no AEM, o AEM configura aut
   </tr>
   <tr>
    <td>Download do fluxo de trabalho</td>
-   <td><p>O modelo de fluxo de trabalho a ser usado para baixar e instalar a biblioteca Tag Management dinâmica. O modelo padrão é o Download do pacote de DTM padrão. Use este modelo, a menos que tenha criado um modelo personalizado.</p> <p>Observe que o workflow de download padrão ativa automaticamente as bibliotecas quando são baixadas.</p> </td>
+   <td><p>O modelo de fluxo de trabalho a ser usado para baixar e instalar a biblioteca Tag Management dinâmica. O modelo padrão é o Download do pacote de DTM padrão. Use este modelo, a menos que tenha criado um modelo personalizado.</p> <p>O fluxo de trabalho de download padrão ativa automaticamente as bibliotecas quando elas são baixadas.</p> </td>
   </tr>
   <tr>
    <td>Dica de domínio</td>
@@ -160,7 +159,7 @@ Ao hospedar as bibliotecas do Dynamic Tag Management no AEM, o AEM configura aut
    <td><p>(Opcional) O segredo compartilhado a ser usado para descriptografar o download. Obtenha esse valor no campo Segredo compartilhado da página Download de biblioteca do Dynamic Tag Management.</p> <p><strong>Nota:</strong> Você deve ter o <a href="https://www.openssl.org/docs/apps/openssl.html">OpenSSL</a> bibliotecas instaladas no computador em que o AEM está instalado para que o AEM possa descriptografar as bibliotecas baixadas.</p> </td>
   </tr>
   <tr>
-   <td>Ativar o importador de pesquisa</td>
+   <td>Habilitar o importador de pesquisa</td>
    <td><p>(Opcional) Selecione para baixar e instalar periodicamente a biblioteca Tag Management dinâmica e garantir que você esteja usando uma versão atualizada. Quando selecionada, o Dynamic Tag Management não envia solicitações HTTP POST para o URL do gancho de implantação.</p> <p>O AEM configura automaticamente a propriedade Implantar URL do gancho das propriedades Download da biblioteca para a propriedade da Web do Dynamic Tag Management. Quando selecionada, a propriedade é configurada sem valor. Quando não selecionada, a propriedade é configurada com o URL da sua configuração do Dynamic Tag Management.</p> <p>Ative o importador de pesquisa quando o gancho de implantação do Dynamic Tag Management não puder se conectar ao AEM, por exemplo, quando o AEM estiver atrás de um firewall.</p> </td>
   </tr>
   <tr>
@@ -201,7 +200,7 @@ Você define as seguintes propriedades para a configuração do Dynamic Tag Mana
 
 O procedimento a seguir usa a interface otimizada para toque para configurar a integração com o Dynamic Tag Management.
 
-1. No painel, clique em Ferramentas > Operações > Nuvem > Cloud Services.
+1. No painel, clique em Ferramentas > Operações > Nuvem > Cloud Service.
 1. Na área Dynamic Tag Management, um dos links a seguir é exibido para adicionar uma configuração:
 
    * Clique em Configurar agora se esta for a primeira configuração que você está adicionando.
@@ -229,7 +228,7 @@ O procedimento a seguir usa a interface otimizada para toque para configurar a i
 
 Baixe manualmente as bibliotecas Tag Management dinâmicas para atualizá-las imediatamente no AEM. Por exemplo, baixe manualmente quando quiser testar uma biblioteca atualizada antes que o importador de pesquisa seja agendado para baixar automaticamente a biblioteca.
 
-1. No painel, clique em Ferramentas > Operações > Nuvem > Cloud Services.
+1. No painel, clique em Ferramentas > Operações > Nuvem > Cloud Service.
 1. Na área Dynamic Tag Management, clique em Mostrar configurações e, em seguida, clique na configuração.
 1. Na área Configurações de armazenamento temporário ou Configurações de produção, clique no botão Acionar fluxo de trabalho de download para baixar e implantar o pacote de biblioteca.
 
@@ -247,7 +246,6 @@ Baixe manualmente as bibliotecas Tag Management dinâmicas para atualizá-las im
 >* `servertype`
 >
 
-
 ## Associar uma configuração do Dynamic Tag Management ao seu site {#associating-a-dynamic-tag-management-configuration-with-your-site}
 
 Associe sua configuração do Dynamic Tag Management às páginas do seu site para que AEM adicione o script necessário às páginas. Associe a página raiz do site à configuração. Todos os descendentes dessa página herdam a associação. Se necessário, é possível substituir a associação em uma página descendente.
@@ -255,8 +253,8 @@ Associe sua configuração do Dynamic Tag Management às páginas do seu site pa
 Use o procedimento a seguir para associar uma página e os descendentes a uma configuração do Dynamic Tag Management.
 
 1. Abra a página raiz do site na interface clássica.
-1. Use o Sidekick para abrir as propriedades da página.
-1. Na guia Cloud Services, clique em Adicionar serviço, selecione Tag Management dinâmico e clique em OK.
+1. Use Sidekick para abrir as propriedades da página.
+1. Na guia Cloud Service, clique em Adicionar serviço, selecione Tag Management dinâmico e clique em OK.
 
    ![chlimage_1-357](assets/chlimage_1-357.png)
 
@@ -265,8 +263,8 @@ Use o procedimento a seguir para associar uma página e os descendentes a uma co
 Use o procedimento a seguir para substituir a associação de configuração herdada de uma página. A substituição afeta a página e todos os descendentes da página.
 
 1. Abra a página na interface clássica.
-1. Use o Sidekick para abrir as propriedades da página.
-1. Na guia Cloud Services, clique no ícone de cadeado ao lado da propriedade Herdado de e, em seguida, clique em Sim na caixa de diálogo de confirmação.
+1. Use Sidekick para abrir as propriedades da página.
+1. Na guia Cloud Service, clique no ícone de cadeado ao lado da propriedade Herdado de e, em seguida, clique em Sim na caixa de diálogo de confirmação.
 
    ![chlimage_1-358](assets/chlimage_1-358.png)
 

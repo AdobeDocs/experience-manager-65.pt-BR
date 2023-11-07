@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management
 role: Architect, Admin
 exl-id: 6b50f1b3-9c1c-47c8-a43e-6f40c42a41cc
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '505'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Dependendo de como você posicionou [!DNL Assets] para sua organização e os re
 Depois de revisar os guias a seguir, você terá o conhecimento e as ferramentas para criar e gerenciar um sistema de gerenciamento de ativos da empresa que atenda às suas necessidades:
 
 * A variável [Guia de ajuste de desempenho do Assets](/help/assets/performance-tuning-guidelines.md): este guia inclui um conjunto de práticas recomendadas que podem ser seguidas em qualquer ponto da implementação, mesmo após a ativação, para garantir que você obtenha o máximo do seu sistema.
-* A variável [Guia de dimensionamento de ativos](/help/assets/assets-sizing-guide.md): Ao elaborar as previsões de receitas e despesas de [!DNL Assets] implementação, é importante garantir que haja recursos suficientes disponíveis em termos de armazenamento de ativos, CPU, memória, E/S e throughput de rede. O dimensionamento de muitos desses itens requer a compreensão de quantos ativos estão sendo carregados no sistema. Este guia inclui práticas recomendadas que ajudam a determinar métricas eficientes para estimar a infraestrutura e os recursos necessários para a implantação [!DNL Assets] bem como uma ferramenta de dimensionamento.
+* A variável [Guia de dimensionamento de ativos](/help/assets/assets-sizing-guide.md): Ao elaborar as previsões de receitas e despesas de [!DNL Assets] implementação, é importante garantir que haja recursos suficientes disponíveis em termos de armazenamento de ativos, CPU, memória, E/S e throughput de rede. O dimensionamento de muitos desses itens requer a compreensão de quantos ativos estão sendo carregados no sistema. Este guia inclui práticas recomendadas que ajudam a determinar métricas eficientes para estimar a infraestrutura e os recursos necessários para a implantação [!DNL Assets] e uma ferramenta de dimensionamento.
 * A variável [Guia de migração de ativos](/help/assets/assets-migration-guide.md): se você quiser migrar ativos do sistema herdado para o Assets, há várias etapas a serem consideradas para simplificar o processo de migração. O guia de Migração inclui práticas recomendadas sobre as tarefas executadas para trazer os ativos para o [!DNL Experience Manager] de forma faseada. Isso inclui aplicar metadados, gerar representações e ativar os ativos para publicar instâncias.
 * A variável [Documento de considerações de rede do Assets](/help/assets/assets-network-considerations.md): ao manusear [!DNL Experience Manager] a implantação, a compreensão da topologia de rede é importante para entender o desempenho da rede, identificar pontos de bloqueio e descrever a experiência esperada do usuário. A variável [!DNL Assets] documento de considerações de rede discute considerações de rede ao projetar a implantação do seu ativo.
 * A variável [Guia de monitoramento de ativos](/help/assets/assets-monitoring-best-practices.md): depois do [!DNL Experience Manager] implantação for implantada, você deverá monitorar determinadas tarefas e o sistema em geral para garantir a integridade do sistema e a eficiência das operações. O Guia de monitoramento inclui práticas recomendadas para monitorar vários aspectos do sistema.

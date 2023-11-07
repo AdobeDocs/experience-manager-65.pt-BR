@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1f15f028-aa81-478e-97eb-f83a4dc0418c
 exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
-source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3227'
+source-wordcount: '3226'
 ht-degree: 0%
 
 ---
@@ -307,7 +307,7 @@ Após definir as definições de diretório e criar as entradas VLV LDAP para us
     [21/Nov/2007:16:47:29 +051800] - userRoot: Finished indexing.
    ```
 
-   A ferramenta vlvindex está presente no diretório da instância do servidor de diretórios. Se o Sun ONE Server tiver duas instâncias que executam server1 e server2, a ferramenta vlvindex estará localizada em *Diretório do servidor Sun ONE* diretório \server1. O valor do parâmetro `-T` é o valor de `cn` atributo da entrada vlvindex criada anteriormente no LDIF de amostra. No caso em apreço, `lcuser`.
+   A ferramenta vlvindex está presente no diretório da instância do servidor de diretórios. Se o Sun ONE Server tiver duas instâncias executando server1 e server2, a ferramenta vlvindex estará em *Diretório do servidor Sun ONE* diretório \server1. O valor do parâmetro `-T` é o valor de `cn` atributo da entrada vlvindex criada anteriormente no LDIF de amostra. No caso em apreço, `lcuser`.
 
 1. Se a VLV também estiver ativada para grupos, crie o índice correspondente para os grupos. Verifique se os índices foram criados executando o seguinte comando:
 

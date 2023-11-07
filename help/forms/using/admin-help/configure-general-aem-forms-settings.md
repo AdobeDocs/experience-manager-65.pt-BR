@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_je
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bd648c38-731b-420e-973d-a4728b69868e
 exl-id: e1519477-b5a8-4947-8597-26b945a3b819
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1707'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Se você não especificar um diretório raiz GDS, o diretório assumirá como de
 
 >[!NOTE]
 >
->A alteração do valor da configuração do diretório raiz GDS deve ser feita com especial cuidado. O diretório GDS é usado para armazenar arquivos de longa duração usados em um processo, bem como componentes críticos do produto de formulários AEM. A alteração do local do diretório GDS é uma grande alteração do sistema. A configuração incorreta da localização do diretório GDS tornará os formulários AEM inoperantes e poderá exigir a reinstalação completa dos formulários AEM. Se você especificar um novo local para o diretório GDS, o servidor de aplicativos precisará ser desligado e os dados migrados antes que o servidor possa ser reiniciado. O administrador do sistema deve mover todos os arquivos do local antigo para o novo local, mas manter a estrutura do diretório interno.
+>A alteração do valor da configuração do diretório raiz GDS deve ser feita com especial cuidado. O diretório GDS é usado para armazenar arquivos de longa duração usados em um processo e componentes críticos do produto de formulários AEM. A alteração do local do diretório GDS é uma grande alteração do sistema. A configuração incorreta da localização do diretório GDS tornará os formulários AEM inoperantes e poderá exigir a reinstalação completa dos formulários AEM. Se você especificar um novo local para o diretório GDS, o servidor de aplicativos precisará ser desligado e os dados migrados antes que o servidor possa ser reiniciado. O administrador do sistema deve mover todos os arquivos do local antigo para o novo local, mas manter a estrutura do diretório interno.
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ Para obter informações adicionais sobre o diretório GDS, consulte [Preparaç�
 
 **Localização do diretório de Fontes do Sistema** Digite o caminho para o diretório de fontes fornecido pelo seu sistema operacional. É possível adicionar vários diretórios, separados por ponto e vírgula **;**.
 
-**Local do arquivo de configuração dos serviços de dados** Especifica o local do arquivo services-config.xml. Por padrão, esse arquivo é incorporado ao arquivo adobe-core-appserver.ear e não é acessível ao usuário. Uma cópia do arquivo services-config.xml padrão está localizada em [raiz de aem-forms]\sdk\misc\DataServices\Server-Configuration. Se você alterou este arquivo e o moveu, digite o novo local neste campo.
+**Local do arquivo de configuração dos serviços de dados** Especifica o local do arquivo services-config.xml. Por padrão, esse arquivo é incorporado ao arquivo adobe-core-appserver.ear e não é acessível ao usuário. Uma cópia do arquivo services-config.xml padrão está em [raiz de aem-forms]\sdk\misc\DataServices\Server-Configuration. Se você alterou este arquivo e o moveu, digite o novo local neste campo.
 
 O arquivo de configuração do Data Services permite a personalização das configurações do Data Services, como tipo de autenticação e saída de depuração.
 
@@ -91,7 +91,7 @@ Esta configuração é obrigatória. O valor padrão é 65536 bytes.
 
 Esta configuração é obrigatória. O valor padrão é de 600 segundos.
 
-**Intervalo de varredura do documento (segundos)** O tempo, em segundos, entre tentativas de excluir arquivos que não são mais necessários e que foram usados para transmitir dados de documento entre serviços.
+**Intervalo de varredura do documento (segundos)** O tempo, em segundos, entre tentativas de excluir arquivos que não são mais necessários e que foram usados para transmitir dados do documento entre serviços.
 
 Esta configuração é obrigatória. O valor padrão é de 30 segundos.
 

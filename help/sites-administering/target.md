@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 454854f8-6053-406c-888d-f427777bf570
 exl-id: 2b17d8cd-a43c-4d54-b990-a6f0cb1db22b
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '600'
 ht-degree: 66%
 
 ---
@@ -34,7 +34,7 @@ Para integrar com o Target, execute as seguintes tarefas:
 
 1. Ou:
 
-   1. [Aceitar o Adobe Target](/help/sites-administering/opt-in.md): o assistente de aceitação pega as informações da conta do Target e cria uma configuração da nuvem do Adobe Target e uma estrutura do Target. O assistente também associa seus sites à Estrutura do Target. Se o assistente não puder se conectar ao target, consulte o [solução de problemas de conexão](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) seção. Você pode então [Modificar as configurações de nuvem padrão](/help/sites-administering/target-configuring.md#modifying-the-opt-in-wizard-configurations): se necessário, modifique a configuração e a estrutura da nuvem criadas pelo assistente de aceitação. Por exemplo, modifique a estrutura para enviar dados de contexto adicionais ao Target. Se quiser usar o Adobe Analytics como uma fonte de relatórios para o Adobe Target, será necessário modificar a configuração da nuvem para apontar para a configuração A4T.
+   1. [Aceitar o Adobe Target](/help/sites-administering/opt-in.md): o assistente de aceitação pega as informações da conta do Target e cria uma configuração da nuvem do Adobe Target e uma estrutura do Target. O assistente também associa seus sites à Estrutura do Target. Se o assistente não puder se conectar ao Target, consulte a [solução de problemas de conexão](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) seção. Você pode então [Modificar as configurações de nuvem padrão](/help/sites-administering/target-configuring.md#modifying-the-opt-in-wizard-configurations): se necessário, modifique a configuração e a estrutura da nuvem criadas pelo assistente de aceitação. Por exemplo, modifique a estrutura para enviar dados de contexto adicionais ao Target. Se quiser usar o Adobe Analytics como uma fonte de relatórios para o Adobe Target, será necessário modificar a configuração da nuvem para apontar para a configuração A4T.
    1. [Integração manual com o Adobe Target](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target).
 
 1. [Configurar atividades](/help/sites-authoring/activitylib.md): associe suas atividades à configuração de nuvem do Target.

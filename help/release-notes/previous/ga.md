@@ -2,7 +2,7 @@
 title: Notas de versão gerais do [!DNL Adobe Experience Manager] 6.5
 description: "[!DNL Adobe Experience Manager] 6.5 notas descrevendo as informações da versão, as novidades, como instalar e as listas de alterações detalhadas."
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '4675'
 ht-degree: 5%
@@ -88,7 +88,7 @@ Várias melhorias foram feitas na interface do usuário para torná-la mais prod
 
 >[!CAUTION]
 >
->A nova versão do Oak Segment Tar, presente desde o AEM 6.3, requer uma migração de repositório. Esta etapa é obrigatória se você estiver atualizando de uma versão mais antiga do TarMK ou quiser alternar o novo Tar de segmento de outro tipo de persistência. Para obter mais informações sobre quais são os benefícios da nova TAR de segmento, consulte a [Perguntas frequentes sobre a migração para o Oak Segment Tar](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
+>A nova versão do Oak Segment Tar, presente desde o AEM 6.3, requer uma migração de repositório. Esta etapa é obrigatória se você estiver atualizando de uma versão mais antiga do TarMK ou quiser alternar o novo Tar de segmento de outro tipo de persistência. Para obter mais informações sobre quais são os benefícios da nova TAR de segmento, consulte a [Perguntas frequentes sobre a migração para o Oak Segment TAR](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
 
 #### OSGI {#osgi}
 
@@ -147,25 +147,25 @@ Para obter mais detalhes sobre as alterações no AEM Screens, consulte as Notas
 
    * operador &quot;in&quot; para sequências, matrizes e objetos:
 
-      ```html
-      ${'a' in 'abc'}
-      ${100 in myArray}
-      ${'a' in myObject}
-      ```
+     ```html
+     ${'a' in 'abc'}
+     ${100 in myArray}
+     ${'a' in myObject}
+     ```
 
    * Declarações de variável com data-sly-set :
-      `<sly data-sly-set.title="${currentPage.title}"/>${title}`
+     `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
    * Listar e repetir parâmetros de controle: início, etapa, fim:
-      `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
+     `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
    * Identificadores para data-sly-unwrap:
 
-      ```html
-      <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
-      text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
-      </div>
-      ```
+     ```html
+     <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
+     text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
+     </div>
+     ```
 
    * Suporte para números negativos
 
@@ -220,7 +220,7 @@ Para obter mais detalhes sobre as alterações no AEM Screens, consulte as Notas
 
 * Para configurações de implantação que usam PushOnModify, melhor manipulação da operação de movimentação de página para evitar estado inconsistente.
 * A criação de uma página dentro da estrutura do livecopy cria uma página independente por padrão.
-* Usar recursos do MSM em aplicativos de página única que estão usando o SDK JS (também chamado de Editor de SPA)
+* Usar recursos do MSM em aplicativos de página única que estejam usando o SDK JS (também chamado de Editor de SPA)
 
 #### Lançamentos {#launches}
 
@@ -241,7 +241,6 @@ Para obter mais detalhes sobre as alterações no AEM Screens, consulte as Notas
 >
 >* Ambos `at.js. 1.x` e `at.js 2.x` são compatíveis se você estiver usando a exportação de Fragmento de experiência para o Target e estiver executando atividades no console do Target.
 
-
 * A integração do Adobe Target agora usa a API do Target Standard. As versões anteriores do AEM usam a API HTTP do Target Classic, que agora está obsoleta.
 * Adobe Target `mbox.js` A versão 63 está incluída. A Adobe recomenda que você alterne a implementação para `at.js` v1.x
 * `at.js` A versão 1.5.0 já está incluída. O Adobe recomenda usar [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) para provisionar `at.js` v1.x no site.
@@ -253,7 +252,7 @@ Para obter mais detalhes sobre as alterações no AEM Screens, consulte as Notas
 
 #### AEM e comércio {#aem-commerce}
 
-As melhorias na Commerce Integration Framework estão em um ciclo de lançamento mais rápido desde o AEM 6.4. [Saiba mais aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html).
+As melhorias no Commerce integration framework estão em um ciclo de liberação mais rápido desde o AEM 6.4. [Saiba mais aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html).
 
 #### Complemento de comunidades {#communities-add-on}
 
@@ -522,20 +521,20 @@ Para [!DNL Adobe Experience Manager] 6.5 [leia a lista de recursos obsoletos e r
 
 * Um problema é relatado em que o CRX-Quickstart e seu conteúdo são excluídos.
 
-   Em cada uma dessas ações, verifique se a propriedade `htmllibmanager.fileSystemOutputCacheLocation` não é uma cadeia de caracteres vazia:
+  Em cada uma dessas ações, verifique se a propriedade `htmllibmanager.fileSystemOutputCacheLocation` não é uma cadeia de caracteres vazia:
 
    1. Chamando `/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true`.
    2. Atualização para o AEM 6.5.
    3. Execução de &quot;migração de conteúdo lento&quot; no AEM 6.5.
 
-   A [Knowledge base](https://helpx.adobe.com/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) O artigo está disponível com mais detalhes e a solução alternativa para esse problema.
+  A [Knowledge base](https://helpx.adobe.com/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) O artigo está disponível com mais detalhes e a solução alternativa para esse problema.
 
 * Se você estiver usando o JDK 11 com a instância AEM 6.5, algumas páginas podem ser exibidas em branco após a implantação de alguns pacotes. A seguinte mensagem de erro é exibida no arquivo de log:
 
-   ```java
-   *ERROR* [OsgiInstallerImpl] org.apache.sling.scripting.sightly bundle org.apache.sling.scripting.sightly:1.1.2.1_4_0 (558)[org.apache.sling.scripting.sightly.impl.engine.extension.use.JavaUseProvider(3345)] : Error during instantiation of the implementation object (java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl)
-   java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl
-   ```
+  ```java
+  *ERROR* [OsgiInstallerImpl] org.apache.sling.scripting.sightly bundle org.apache.sling.scripting.sightly:1.1.2.1_4_0 (558)[org.apache.sling.scripting.sightly.impl.engine.extension.use.JavaUseProvider(3345)] : Error during instantiation of the implementation object (java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl)
+  java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl
+  ```
 
 Para resolver esse erro:
 
@@ -571,7 +570,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 * Em um formulário adaptável, quando um serviço de modelo de dados de formulário é chamado do editor de regras para atualizar dinamicamente valores do componente de escolha de imagem, os valores do componente de escolha de imagem não são atualizados. (CQ-4254754)
 * O instalador do AEM Forms Designer requer a versão de 32 bits do [Pacote de tempo de execução redistribuível do Visual C++ 2012](https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170) e [Pacotes de tempo de execução redistribuíveis do Visual C++ 2013](https://support.microsoft.com/en-us/topic/update-for-visual-c-2013-and-visual-c-redistributable-package-5b2ac5ab-4139-8acc-08e2-9578ec9b2cf1). Verifique se os pacotes de tempo de execução redistribuíveis mencionados anteriormente estão instalados antes de iniciar a instalação. (CQ-4265668)
 
-* O Gerador de PDF não dá suporte à autenticação baseada em cartão inteligente. Quando um administrador habilita a Diretiva de Grupo `Interactive Logon: Require Smart card` em um servidor Windows, todos os usuários existentes do PDF Generator são invalidados.
+* O PDF Generator não oferece suporte à autenticação baseada em cartão inteligente. Quando um administrador habilita a Diretiva de Grupo `Interactive Logon: Require Smart card` em um servidor Windows, todos os usuários de PDF Generator existentes são invalidados.
 
 * Quando um formulário adaptável é configurado para atualizar dinamicamente os valores de um componente e a instância de publicação que hospeda o formulário é acessada por meio do Dispatcher, a funcionalidade para atualizar dinamicamente os valores de um campo deixa de funcionar. Para resolver o problema, na instância de publicação, abra o CRXDE, navegue até `/libs/fd/af/runtime/clientlibs/guideChartReducer`e crie a propriedade listada abaixo.
 
@@ -583,7 +582,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
    * Múltiplo: Falso
    * Criado Automaticamente: Falso
 
-   A propriedade permite que as bibliotecas de clientes na pasta de tempo de execução acessem proxies. (CQ-4268679)
+  A propriedade permite que as bibliotecas de clientes na pasta de tempo de execução acessem proxies. (CQ-4268679)
 
 * Quando o AEM Forms for iniciado, a variável `SAX Security Manager could not be setup` é exibido.
 * Ao abrir um PDF protegido com o AEM Forms Document Security em um Apple iOS ou iPadOS executando a versão 20.10.00 do Adobe Acrobat Reader

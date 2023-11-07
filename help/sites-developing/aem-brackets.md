@@ -1,18 +1,14 @@
 ---
 title: Extensão de Colchetes AEM
-seo-title: AEM Brackets Extension
 description: Saiba como usar a extensão Adobe Experience Manager para Colchetes.
-seo-description: null
-uuid: 2f0dfa42-eb34-44ae-90eb-b5f321c03b79
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '935'
 ht-degree: 1%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 1%
 
 ## Visão geral {#overview}
 
-A extensão AEM Brackets fornece um fluxo de trabalho suave para editar componentes AEM e bibliotecas de clientes e aproveita o potencial do [Colchetes](https://brackets.io/) editor de código, que dá acesso a arquivos e camadas do Photoshop a partir do editor de código. A fácil sincronização fornecida pela extensão (sem a necessidade de Maven ou File Vault) aumenta a eficiência do desenvolvedor e também ajuda desenvolvedores de front-end com conhecimento limitado em AEM a participar de projetos. Essa extensão também fornece suporte para o [Linguagem de modelo HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR), que elimina a complexidade do JSP para tornar o desenvolvimento de componentes mais fácil e seguro.
+A extensão AEM Brackets fornece um fluxo de trabalho suave para editar componentes AEM e bibliotecas de clientes e usa o poder do [Colchetes](https://brackets.io/) editor de código, que dá acesso a arquivos e camadas do Photoshop a partir do editor de código. A fácil sincronização fornecida pela extensão (sem a necessidade de Maven ou File Vault) aumenta a eficiência do desenvolvedor e também ajuda desenvolvedores de front-end com conhecimento limitado em AEM a participar de projetos. Essa extensão também fornece suporte para o [Linguagem de modelo HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR), que elimina a complexidade do JSP para tornar o desenvolvimento de componentes mais fácil e seguro.
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 
@@ -71,7 +67,7 @@ O projeto deve conter pelo menos:
 
 1. a `jcr_root` pasta (por exemplo, `myproject/jcr_root`)
 
-1. a `filter.xml` arquivo (por exemplo, `myproject/META-INF/vault/filter.xml`); para obter mais detalhes sobre a estrutura do `filter.xml` arquivo, consulte o [Definição de filtro do Workspace](https://jackrabbit.apache.org/filevault/filter.html).
+1. a `filter.xml` arquivo (por exemplo, `myproject/META-INF/vault/filter.xml`); para obter mais detalhes sobre a estrutura do `filter.xml` arquivo consulte o [Definição de filtro do Workspace](https://jackrabbit.apache.org/filevault/filter.html).
 
 Entre parênteses&#39; **Arquivo** escolha **Abrir pasta...** e escolha a opção `jcr_root` ou a pasta do projeto principal.
 
@@ -127,7 +123,7 @@ A extensão AEM Brackets apresenta um ícone de notificação na barra de ferram
 * amarelo - alguns dos arquivos não foram sincronizados
 * vermelho - nenhum dos arquivos foi sincronizado
 
-Clicar no ícone de notificação abrirá a caixa de diálogo do relatório Status de sincronização, que lista todos os status de cada arquivo sincronizado.
+Clicar no ícone de notificação abre a caixa de diálogo Status da sincronização, que lista todos os status de cada arquivo sincronizado.
 
 ![chlimage_1-58](assets/chlimage_1-58a.png)
 

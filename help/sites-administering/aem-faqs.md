@@ -2,9 +2,9 @@
 title: Perguntas frequentes sobre AEM
 description: Use essas Perguntas frequentes para entender, configurar e solucionar problemas ou fluxos de trabalho comuns no AEM.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: f7bfbfab9fb9ec00304f2889735c70be924cc217
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1085'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ O Adobe Experience Manager (AEM) 6.4 é fornecido com o assistente para SSL e of
 
 Para habilitar o SSL por padrão, consulte [SSL por padrão](/help/sites-administering/ssl-by-default.md).
 
-#### Qual é a arquitetura recomendada ao usar os Serviços de conteúdo do AEM de um aplicativo móvel, idealmente o React Native? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
+#### Qual é a arquitetura recomendada ao usar o AEM Content Services de um aplicativo móvel, idealmente o React Native? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
 
 Os Content Services são baseados nos Modelos Sling e os desenvolvedores do AEM devem fornecer um pojo Modelo Sling para cada componente exportado.
 

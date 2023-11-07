@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 5ca58bc3-8505-4d91-9cd1-6b2e2671f1be
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1477'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Para personalizar ou estender os componentes, grave somente as sobreposições e
 * Para adicionar processamento personalizado durante operações:
    * Escreva um [OperationExtension](server-customize.md#operationextension-class).
 * Para adicionar uma operação personalizada:
-   * Criar um novo [Sling Post Operation](server-customize.md#postoperation-class).
+   * Criar um [Sling Post Operation](server-customize.md#postoperation-class).
    * Usar existente [ServiçosDeOperação](server-customize.md#operationservice-class) conforme necessário.
    * Adicione o código JavaScript para chamar sua operação do lado do cliente, conforme necessário.
 

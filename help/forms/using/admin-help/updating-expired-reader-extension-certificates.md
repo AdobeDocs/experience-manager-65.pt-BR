@@ -2,7 +2,7 @@
 title: Expiração dos certificados de extensões Reader e seu impacto
 description: Expiração dos certificados de extensões Reader e seu impacto
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
-source-git-commit: 6e9a7f3307ed05f887d60c7c7310100cd4596b23
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1121'
 ht-degree: 2%
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Expiração dos certificados de extensões Reader e seu impacto {#expiration-of-reader-extensions-certificates-and-its-impact}
 
-Os clientes do Adobe Experience Manager Forms (AEM Forms) com licenças do Adobe Managed Services ou Enterprise Base no local estão autorizados a usar o serviço Acrobat Reader DC Extensions. O serviço permite que uma organização compartilhe facilmente documentos PDF interativos, estendendo a funcionalidade do Acrobat Reader com direitos de uso adicionais. O serviço adiciona direitos de uso a um documento PDF e ativa recursos que não estão disponíveis quando um documento PDF é aberto usando o Adobe Acrobat Reader, como adicionar comentários a um documento, preencher formulários e salvar o documento. Usuários de terceiros não precisam de software ou plug-ins adicionais para trabalhar com documentos habilitados por direitos. Os documentos PDF que possuem direitos de uso adicionados são chamados de documentos habilitados para direitos. Um usuário que abre um documento PDF habilitado para direitos no Acrobat Reader pode executar as operações habilitadas para esse documento.
+Os clientes do Adobe Experience Manager Forms (AEM Forms) com licenças Adobe Managed Services ou Enterprise Base no local estão autorizados a usar o serviço Acrobat Reader DC Extensions. O serviço permite que uma organização compartilhe facilmente documentos PDF interativos, estendendo a funcionalidade do Acrobat Reader com direitos de uso adicionais. O serviço adiciona direitos de uso a um documento PDF e ativa recursos que não estão disponíveis quando um documento PDF é aberto usando o Adobe Acrobat Reader, como adicionar comentários a um documento, preencher formulários e salvar o documento. Usuários de terceiros não precisam de software ou plug-ins adicionais para trabalhar com documentos habilitados por direitos. Os documentos PDF que possuem direitos de uso adicionados são chamados de documentos habilitados para direitos. Um usuário que abre um documento PDF habilitado para direitos no Acrobat Reader pode executar as operações habilitadas para esse documento.
 
 O Adobe usa uma infraestrutura de chave pública (PKI) para emitir certificados digitais para uso no licenciamento e na ativação de recursos. Adobe tem emitido certificados sob a autoridade de certificação **CA Raiz Adobe**, que deve expirar em 7 de janeiro de 2023. A expiração do certificado não afeta documentos PDF estendidos usando certificados de produção emitidos pelo **CA Raiz Adobe** certificados baseados (certificados antigos). Todos os documentos de PDF, Reader estendidos usando os certificados antigos antes de 7 de janeiro de 2023, incluindo os baixados pelos clientes, continuariam a funcionar com todos os direitos de uso aplicados a eles e não exigem atualizações.
 
@@ -178,7 +178,7 @@ The following command list the details of the pfx file. Before running the comma
 
 `keytool -v -list -storetype pkcs12 -keystore [name of your .pfx file]`
 
-For example keytool -v -list -storetype pkcs12 -keystore 1005566.pfx where 1005566.pfx is the name of my pfx file
+For example, keytool -v -list -storetype pkcs12 -keystore 1005566.pfx where 1005566.pfx is the name of my pfx file
 
 <!-- ### Remove usage rights from existing rights-enabled PDF documents
 

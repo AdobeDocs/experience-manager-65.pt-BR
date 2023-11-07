@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
-source-git-commit: 066a61a332aa620078740d36bd7f8689282fbf14
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '621'
 ht-degree: 1%
 
 ---
@@ -61,8 +61,7 @@ Para todas as instâncias de autor e publicação do AEM 6.3:
 
          * Selecione **Salvar**
 
-      ![utilitários](assets/utilities.png)
-
+     ![utilitários](assets/utilities.png)
 
 ### Armazenamento no local {#on-premise-storage}
 
@@ -83,7 +82,7 @@ Consulte também [Uso do Maven para comunidades](/help/communities/maven.md).
 
 A variável [estrutura da componente social](/help/communities/scf.md) (SCF) utiliza o [HandlebarsJS](https://handlebarsjs.com/) (HBS) linguagem de modelo no lugar do Java Server Pages (JSP) usada antes do AEM 6.0.
 
-No AEM 6.0, os componentes JSP permaneceram ao lado dos novos componentes da estrutura HBS no mesmo local, com os componentes HBS normalmente localizados em subpastas chamadas &quot;hbs&quot;.
+No AEM 6.0, os componentes JSP permaneceram junto com os novos componentes da estrutura HBS no mesmo local, com os componentes HBS normalmente em subpastas chamadas de &quot;hbs&quot;.
 
 A partir do AEM 6.1, os componentes JSP foram completamente removidos. Para Comunidades, é recomendável substituir todo o uso de componentes JSP por componentes SCF.
 
@@ -97,7 +96,7 @@ Além de mover o UGC de versões anteriores, também é possível usar a ferrame
 
 Conceitualmente, há três gerações de componentes de comunidades:
 
-**Ger 1**: Aproximadamente CQ 5.4 a AEM 5.6.0, esses são os **collab** componentes que armazenaram o UGC no repositório local usando a replicação como meio de sincronizar o UGC entre plataformas. Outras diferenças envolvem a implementação usando Java Server Pages (JSP), bem como o recurso de blog que consiste em criar somente no ambiente de criação.
+**Ger 1**: Aproximadamente CQ 5.4 a AEM 5.6.0, esses são os **collab** componentes que armazenaram o UGC no repositório local usando a replicação como meio de sincronizar o UGC entre plataformas. Outras diferenças envolvem a implementação usando Java Server Pages (JSP) e o recurso de blog que consiste em criar somente no ambiente de autor.
 
 **Ger 2**: Do AEM 5.6.1 ao AEM 6.1, esta é uma combinação de **collab** e **social** componentes. O AEM 6.0 apresentou o novo [estrutura da componente social](/help/communities/scf.md) (SCF) e o AEM 6.2 introduziram um [armazenamento de UGC comum](/help/communities/working-with-srp.md) em que o UGC é acessado usando um [provedor de recursos de armazenamento](/help/communities/srp.md) (SRP)
 

@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 15%
@@ -15,7 +15,7 @@ ht-degree: 15%
 
 # Criação de um Cloud Service personalizado{#creating-a-custom-cloud-service}
 
-O conjunto padrão de Cloud Services pode ser estendido com tipos de Cloud Service personalizados. Isso permite inserir marcação personalizada na página de forma estruturada. Isso é usado principalmente para provedores de análises de terceiros, por exemplo Google Analytics, Chartbeat e assim por diante. Os Cloud Service são herdados das páginas principais para as páginas secundárias com a capacidade de interromper a herança em qualquer nível.
+O conjunto padrão de Cloud Services pode ser estendido com tipos de Cloud Service personalizados. Isso permite inserir marcação personalizada na página de forma estruturada. Isso é usado principalmente para provedores de análises de terceiros, por exemplo, Google Analytics, Chartbeat e assim por diante. Os Cloud Service são herdados das páginas principais para as páginas secundárias com a capacidade de interromper a herança em qualquer nível.
 
 >[!NOTE]
 >
@@ -208,6 +208,6 @@ O conjunto padrão de Cloud Services pode ser estendido com tipos de Cloud Servi
 
    Escolher **Configuração do Google Analytics** e clique em **Criar**.
 
-1. Insira um **ID da conta**, por exemplo `AA-11111111-1`. Clique em **OK**.
+1. Insira um **ID da conta**, por exemplo, `AA-11111111-1`. Clique em **OK**.
 1. Navegue até uma página e adicione a configuração recém-criada nas propriedades da página, na seção **Cloud Service** guia.
 1. A página terá a marcação personalizada adicionada a ela.

@@ -10,9 +10,9 @@ discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
 feature: Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '830'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,7 @@ Para permitir que o Designer gere a pré-visualização de HTML de formulários 
 
       * -/content/xfaforms
       * -/etc/clientlibs
+
    * AEM Forms no OSGi
 
       * -/content/xfaforms
@@ -78,6 +79,7 @@ A variável [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) est
       * `/content/xfaforms/profiles/default.html` (AEM Forms no OSGi)
 
       * `/lc/content/xfaforms/profiles/default.html` (AEM Forms no JEE)
+
    * **Contexto do Forms Manager:** Caminho de contexto no qual a interface do usuário do Forms Manager é implantada. Os valores padrão são:
 
       * `/aem/forms` (AEM Forms no OSGi)
@@ -100,7 +102,8 @@ A variável [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) est
    >
    >    * Se a guia HTML Preview for fechada, pressione F4 para abrir a guia Preview HTML. Você também pode selecionar Visualizar HTML no menu Exibir para abrir a guia Visualizar HTML.
    >    * A visualização de HTML não é compatível com documentos de PDF, a visualização de HTML é somente para documentos XDP.
-
+   >
+   >
 
    >[!CAUTION]
    >
@@ -120,6 +123,6 @@ Testar o formulário usando uma fonte de dados de amostra garante que os dados e
 
 1. Clique em **OK**. Na próxima vez que você visualizar o formulário no **Visualizar HTML** , os valores de dados do arquivo XML de amostra aparecerão nos respectivos objetos.
 
-## Visualizar formulários localizados em um repositório {#html-preview-of-forms-in-forms-manager}
+## Visualizar formulários em um repositório {#html-preview-of-forms-in-forms-manager}
 
-No AEM Forms, é possível visualizar formulários e documentos em um repositório. A Pré-visualização ajuda a saber exatamente como os formulários são exibidos e se comportam conforme serão usados pelos usuários finais.
+No AEM Forms, é possível visualizar formulários e documentos em um repositório. A Pré-visualização ajuda a saber exatamente como os formulários aparecem e se comportam são usados pelos usuários finais.

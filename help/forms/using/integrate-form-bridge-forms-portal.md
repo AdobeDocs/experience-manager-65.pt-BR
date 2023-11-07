@@ -11,9 +11,9 @@ discoiquuid: bd9bf095-d74d-458c-afe7-fab04050849d
 docset: aem65
 feature: Mobile Forms
 exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ FormBridge é uma API de ponte de formulários HTML5 que permite interagir com u
 
 Você pode usar a API FormBridge para obter ou definir os valores dos campos de formulário na página HTML e enviar o formulário. Por exemplo, você pode usar a API para criar uma experiência semelhante a um assistente.
 
-Um aplicativo HTML existente pode aproveitar a API FormBridge para interagir com um formulário e incorporá-lo na página HTML. Você pode usar as seguintes etapas para definir o valor de um campo usando a API do Form Bridge.
+Um aplicativo HTML existente pode usar a API FormBridge para interagir com um formulário e incorporá-lo na página HTML. Você pode usar as seguintes etapas para definir o valor de um campo usando a API do Form Bridge.
 
 ## Integração de formulários HTML5 a uma página da Web {#integrating-html-forms-to-a-web-page}
 
@@ -34,7 +34,7 @@ Um aplicativo HTML existente pode aproveitar a API FormBridge para interagir com
    1. Faça logon com credenciais de administrador.
    1. Crie um perfil ou escolha um perfil existente.
 
-      Para obter detalhes sobre como criar um perfil, consulte [Criar um novo perfil](/help/forms/using/custom-profile.md).
+      Para obter detalhes sobre como criar um perfil, consulte [Criar um perfil](/help/forms/using/custom-profile.md).
 
 1. **Modificar o perfil do HTML**
 

@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2720'
+source-wordcount: '2718'
 ht-degree: 9%
 
 ---
@@ -160,7 +160,7 @@ Os metadados específicos do aplicativo incluem metadados técnicos e descritivo
 
 ## Referência do esquema de metadados {#metadata-schemata-reference}
 
-A referência a seguir inclui informações sobre um esquema de metadados específico (em ordem alfabética), bem como uma lista de propriedades e suas definições.
+A referência a seguir inclui informações sobre um esquema de metadados específico (em ordem alfabética) e uma lista de propriedades e suas definições.
 
 ### Dublin Core {#dublin-core}
 

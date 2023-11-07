@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8a07dddf-1281-45ac-a55e-4333b860a261
 exl-id: 6b57d00e-5ba0-41ee-8497-49ecfec5b9ed
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1608'
+source-wordcount: '1606'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ O serviço Forms sempre armazena em cache designs de formulário no disco. Se os
 
 O serviço do Forms armazena formulários renderizados em cache para que ele não precise resolver e renderizar o mesmo formulário em solicitações subsequentes. Os formulários renderizados são armazenados em cache no disco e na memória.
 
-Essas configurações estão localizadas no **Cache de renderização do formulário de memória** área. Se você alterar qualquer uma dessas configurações, reinicie o serviço Forms para que a alteração tenha efeito. Para reiniciar esse serviço, use o Workbench ou consulte [Iniciar ou parar os serviços associados aos módulos de formulários AEM](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obter instruções.
+Essas configurações estão no **Cache de renderização do formulário de memória** área. Se você alterar qualquer uma dessas configurações, reinicie o serviço Forms para que a alteração tenha efeito. Para reiniciar esse serviço, use o Workbench ou consulte [Iniciar ou parar os serviços associados aos módulos de formulários AEM](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obter instruções.
 
 **Tamanho do Cache:** Especifica o número máximo de formulários renderizados que podem residir no cache de memória. O valor padrão é 100. Essa configuração não afeta o cache de disco.
 
@@ -123,7 +123,7 @@ Essas configurações estão localizadas no **Cache de renderização do formul�
 
 O serviço do Forms armazena em cache fragmentos e imagens usadas em designs de formulário no disco. Isso melhora o desempenho porque os fragmentos e as imagens são lidos somente no repositório na primeira solicitação. Em seguida, em solicitações subsequentes, o serviço Forms lê fragmentos e imagens do cache de disco. Os fragmentos e as imagens são armazenados em cache somente no disco, e não na memória.
 
-Você pode usar as configurações a seguir para controlar o armazenamento em cache de fragmentos e imagens no disco. Essas configurações estão localizadas no **Configurações do Cache de Recursos de Modelo** área:
+Você pode usar as configurações a seguir para controlar o armazenamento em cache de fragmentos e imagens no disco. Essas configurações estão no **Configurações do Cache de Recursos de Modelo** área:
 
 **Armazenamento em cache de recursos** Selecione uma das seguintes opções na lista:
 

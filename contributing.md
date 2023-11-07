@@ -1,15 +1,15 @@
 ---
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 78%
+source-wordcount: '516'
+ht-degree: 62%
 
 ---
 # Contribuição na documentação do Adobe Experience Manager
 
 Agradecemos sua colaboração com a documentação do Adobe Experience Manager. O Adobe recebe contribuições de conteúdo de toda a comunidade de leitores e de outros funcionários do Adobe.
 
-Esse arquivo descreve como colaborar, além de apontar as diretrizes que devem ser seguidas ao fazer suas contribuições.
+Esse arquivo descreve como você pode contribuir e aponta as diretrizes que devem ser seguidas ao fazer suas contribuições.
 
 ## Código de conduta de código aberto da Adobe
 
@@ -17,7 +17,7 @@ Este projeto adotou o [Código de conduta de código aberto da Adobe](code-of-co
 
 ## Diretrizes de contribuição
 
-Embora qualquer contribuição para aprimorar a documentação do AEM seja bem-vinda, pedimos que as contribuições sigam algumas diretrizes e normas sempre que possível. Consulte as [Diretrizes de contribuição na documentação do AEM](guidelines.md) para obter mais informações.
+Embora qualquer contribuição para aprimorar a documentação do AEM seja bem-vinda, pedimos que as contribuições sigam algumas diretrizes e normas sempre que possível. Revise o [Diretrizes para contribuir com a documentação do AEM](guidelines.md) para obter mais informações.
 
 ## Como colaborar
 
@@ -54,7 +54,7 @@ Assista ao vídeo a seguir para obter uma visão geral rápida de como criar tó
 
 Se você for funcionário da Adobe e tiver uma contribuição, use o `AdobeDocs` org no git corporativo.
 
-Apesar de qualquer contribuição ser bem-vinda e analisada quando feita no repositório público, os pull requests de funcionários da Adobe são mais fáceis de processar e podem ser aprovados com mais rapidez no repositório corporativo. Certifique-se de que qualquer informação de propriedade seja discutida somente no repositório corporativo.
+Estamos felizes por qualquer contribuição e analisaremos a sua contribuição se ela for feita no repositório público. No entanto, os pull requests de funcionários da Adobe são mais fáceis de processar e podem ser aprovados mais rapidamente no repositório corporativo. Certifique-se de que qualquer informação de propriedade seja discutida somente no repositório corporativo.
 
 ## Informações adicionais
 

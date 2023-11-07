@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
 exl-id: 187f3cde-a0db-4c02-9e8b-08272987a67d
-source-git-commit: 245d501d4124d9aaa3f2b12bdb06a5bdd1661e8c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Os relatórios mostram dados de um período de tempo que você controla. Quando 
 >
 >A linha do tempo do painel Content Insight está em `GMT`.
 
-Você também pode especificar a granularidade dos dados reportados, por exemplo, pode ver dados diários, semanais, mensais ou anuais.
+Você também pode especificar a granularidade dos dados relatados, por exemplo, ver dados diários, semanais, mensais ou anuais.
 
 Consulte [Alteração do Período de Geração de Relatórios](/help/sites-authoring/ci-analyze.md#changing-the-reporting-period).
 

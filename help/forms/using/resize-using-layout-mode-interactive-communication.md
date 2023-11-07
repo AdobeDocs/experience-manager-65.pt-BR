@@ -3,7 +3,7 @@ title: Use o modo de layout para redimensionar componentes para a comunicação 
 description: Definir a posição dos componentes usando a grade responsiva disponível no modo Layout
 feature: Interactive Communication
 exl-id: 9534fcb2-4260-4dd0-9f7e-779b10fd3a22
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 1%
@@ -18,14 +18,14 @@ Você pode usar o modo Layout para redimensionar componentes para todos os tipos
 
 >[!NOTE]
 >
->Se estiver criando o canal da Web usando [Imprimir canal como principal](../../forms/using/create-interactive-communication.md) para uma Comunicação interativa, os componentes disponíveis para redimensionamento também incluem os subformulários e campos que são gerados automaticamente no canal da Web usando o canal de impressão. O canal da Web retém o layout dos elementos do canal de impressão no modo Layout.
+>Se estiver criando o canal da Web usando [Imprimir canal como mestre](../../forms/using/create-interactive-communication.md) para uma Comunicação interativa, os componentes disponíveis para redimensionamento também incluem os subformulários e campos que são gerados automaticamente no canal da Web usando o canal de impressão. O canal da Web retém o layout dos elementos do canal de impressão no modo Layout.
 
 ## Modo de layout de acesso {#access-layout-mode}
 
 Selecionar **Layout** na lista suspensa que aparece na parte superior da interface de criação Comunicação interativa ao lado da **Visualizar** opção. O formulário é exibido no modo Layout.
 
 1. Faça logon na instância de autor do AEM e acesse **Adobe Experience Manager** > **Forms** > **Forms e documentos**.
-1. Criar um novo ou abrir um existente [Comunicação interativa](../../forms/using/create-interactive-communication.md).
+1. Criar um [Comunicação interativa](../../forms/using/create-interactive-communication.md) ou abra um existente.
 1. Selecionar **Layout** na lista suspensa que aparece na parte superior ao lado da guia **Visualizar** opção. O formulário é exibido no modo Layout.
 
    ![Modo de layout para comunicações interativas](assets/layout_mode_ic_new.png)
@@ -81,7 +81,7 @@ Execute as seguintes etapas para definir o número de colunas para um painel:
 
 1. Entrada **[!UICONTROL Editar]** , toque no painel e selecione ![Configurar](assets/configure_icon.png)e selecione **[!UICONTROL Responsivo - tudo na página sem navegação]** opção no **[!UICONTROL Layout do painel]** lista suspensa.
 
-1. Toque ![Salvar](assets/save_icon.svg) para salvar as propriedades.
+1. Toque em ![Salvar](assets/save_icon.svg) para salvar as propriedades.
 
 1. No **[!UICONTROL Layout]** , toque em qualquer um dos componentes no painel, selecione ![Selecionar pai](assets/select_parent_icon.svg)e selecione o painel.
 

@@ -1,16 +1,14 @@
 ---
 title: Direcionamento do seu Adobe Campaign
 description: A configuração da segmentação inclui a criação de segmentos, uma marca, uma campanha e experiências.
-uuid: 520cd006-0aa8-43f3-b754-efb7397bb92f
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: bbc2aac9-ccf1-40c3-be4f-d59c2d0d8a6c
 exl-id: e56986b2-397e-4802-992b-05a9ea7b2e36
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '811'
 ht-degree: 0%
 
 ---
@@ -32,9 +30,9 @@ A configuração da segmentação inclui a criação de segmentos, uma marca, um
 Para criar segmentos:
 
 1. Abra o [console de segmentação](http://localhost:4502/miscadmin#/etc/segmentation) em **&lt;host>:&lt;port>/miscadmin#/etc/segmentation**.
-1. Crie uma nova página e insira um título - por exemplo, **Segmentos CA** - e selecione o **Segmento (Adobe Campaign)** modelo.
+1. Crie uma página e insira um título - por exemplo, **Segmentos CA** - e selecione o **Segmento (Adobe Campaign)** modelo.
 1. Selecione a página criada na visualização de árvore no lado esquerdo.
-1. Crie um segmento, por exemplo, direcionando usuários do sexo masculino, criando uma nova página no segmento criado chamado Masculino e selecione a **Segmento (Adobe Campaign)** modelo.
+1. Crie um segmento, por exemplo, direcionando usuários do sexo masculino, criando uma página no segmento criado chamado Masculino e selecione a **Segmento (Adobe Campaign)** modelo.
 1. Abra a página de segmento criada e arraste e solte uma **ID do segmento** do sidekick para a página.
 1. Clique duas vezes na característica, insira a ID que representa, nesse caso, o segmento masculino definido no Adobe Campaign - por exemplo, **MACHO** - e clique em **OK**. A seguinte mensagem deve ser exibida: `targetData.segmentCode == "MALE"`
 1. Repita as etapas para outro segmento, por exemplo, um segmento direcionado a usuários do sexo feminino.
@@ -44,24 +42,24 @@ Para criar segmentos:
 Para criar uma marca:
 
 1. Entrada **Sites**, navegue até o **Campanhas** pasta (por exemplo, em We.Retail).
-1. Clique em **Criar página** e insira um título para a página, por exemplo, We.Retail Brand, e selecione o **Marca** modelo.
+1. Clique em **Criar página** e insira um título para a página, por exemplo, We.Retail Brand e selecione o **Marca** modelo.
 
 ### Criar uma campanha {#creating-a-campaign}
 
 Para criar uma campanha:
 
-1. Abra o **Marca** página que acabou de criar.
+1. Abra o **Marca** página criada.
 1. Clique em **Criar página** e insira um título para a sua página, por exemplo, Campanha We.Retail, e selecione o **Campaign** e clique em **Criar**.
 
 ### Criação de experiências {#creating-experiences}
 
 Para criar experiências para segmentos:
 
-1. Abra o **Campaign** página que acabou de criar.
+1. Abra o **Campaign** página criada.
 1. Crie experiências para seus segmentos clicando em **Criar página** e inserir um título para a página, por exemplo, Masculino, enquanto cria uma experiência para o segmento Masculino, e selecione a variável **Experiência** modelo.
 1. Abra a página Experiência criada.
 1. Clique em **Editar** e, abaixo de Segmentos, clique em **Adicionar item**.
-1. Insira o caminho para o segmento masculino, por exemplo `/etc/segmentation/ac-segments/male` e clique em **OK**. A seguinte mensagem deve ser exibida: *A experiência está direcionada para: Masculino*
+1. Insira o caminho para o segmento masculino, por exemplo, `/etc/segmentation/ac-segments/male` e clique em **OK**. A seguinte mensagem deve ser exibida: *A experiência está direcionada para: Masculino*
 1. Repita as etapas anteriores para criar uma experiência para todos os segmentos, por exemplo, o público-alvo feminino.
 
 ## Criação de informativo com conteúdo direcionado {#creating-a-newsletter-with-targeted-content}

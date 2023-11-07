@@ -11,7 +11,7 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 11%
@@ -87,7 +87,7 @@ Todos os tipos de formulários são compatíveis com os seguintes recursos:
 
 Depois que os dados de formulário são enviados, o Adobe Experience Manager conecta os dados de formulário com os sistemas existentes, as regras de negócios e as pessoas necessárias.
 
-A AEM Forms fornece o Forms Workspace, um aplicativo móvel que estende seus processos de negócios digitais para dispositivos móveis. Usando o Forms Workspace, você pode coletar e registrar dados mesmo quando estiver offline. O Forms Workspace aproveita os recursos do seu dispositivo móvel e permite capturar fotos, vídeos e coletar dados, como carimbos de data e hora e outras informações. Na próxima vez que você se conectar a uma rede, poderá sincronizar os dados coletados.
+A AEM Forms fornece o Forms Workspace, um aplicativo móvel que estende seus processos de negócios digitais para dispositivos móveis. Usando o Forms Workspace, você pode coletar e registrar dados mesmo quando estiver offline. O Forms Workspace usa os recursos do seu dispositivo móvel e permite capturar fotos, vídeos e coletar dados, como carimbos de data e hora e outras informações. Na próxima vez que você se conectar a uma rede, poderá sincronizar os dados coletados.
 
 Capturar dados offline e sincronizá-los na próxima vez que você voltar online é especialmente útil para as pessoas no campo. Aumenta a produtividade e reduz erros.
 
@@ -97,7 +97,7 @@ Capturar dados offline e sincronizá-los na próxima vez que você voltar online
 * Arrastar e soltar o ambiente de design do fluxo de trabalho
 * Conectores de gerenciamento de conteúdo corporativo (ECM)
 * Suporte a padrões abertos, incluindo XML e SOAP para conectar dados de formulários a sistemas corporativos
-* Relatórios de HTML prontos para uso monitoram backlogs, filas de trabalho e KPIs (Indicadores-chave de desempenho)
+* Relatórios de HTML prontos para uso monitoram backlogs, filas de trabalho e Indicadores-chave de desempenho (KPIs)
 * Painéis personalizáveis para obter insights em tempo real sobre as operações de negócios
 * API para conexão com ferramentas de relatórios de terceiros
 

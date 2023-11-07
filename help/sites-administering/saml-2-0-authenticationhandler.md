@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '842'
 ht-degree: 2%
 
 ---
@@ -40,7 +40,7 @@ A variável [Console da Web](/help/sites-deploying/configuring-osgi.md) fornece 
 
 >[!NOTE]
 >
->O Manipulador de autenticação SAML 2.0 é desativado por padrão. Você deve definir pelo menos uma das seguintes propriedades para ativar o manipulador:
+>O Manipulador de autenticação SAML 2.0 é desativado por padrão. Defina pelo menos uma das seguintes propriedades para ativar o manipulador:
 >
 >* O URL POST do provedor de identidade ou URL do IDP.
 >* A ID da entidade do provedor de serviços.

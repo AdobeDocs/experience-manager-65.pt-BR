@@ -11,9 +11,9 @@ topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 role: Developer
 exl-id: 7f1f49e6-028c-47b6-a24d-a83bed40242e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1796'
+source-wordcount: '1795'
 ht-degree: 0%
 
 ---
@@ -672,7 +672,7 @@ O código a seguir representa o arquivo progress.mxml.
 
 ### Criando o arquivo remoting.mxml {#creating-the-remoting-mxml-file}
 
-O código a seguir representa o arquivo remoting.mxml que invoca o `MyApplication/EncryptDocument` processo. Como um documento é transmitido ao processo, a lógica do aplicativo responsável por transmitir um documento seguro ao AEM Forms está localizada nesse arquivo. (Consulte [Enviar documentos seguros para invocar processos usando comunicação remota](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
+O código a seguir representa o arquivo remoting.mxml que invoca o `MyApplication/EncryptDocument` processo. Como um documento é transmitido ao processo, a lógica do aplicativo responsável por transmitir um documento seguro ao AEM Forms está nesse arquivo. (Consulte [Enviar documentos seguros para invocar processos usando comunicação remota](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
 ```xml
  <?xml version="1.0" encoding="utf-8"?>

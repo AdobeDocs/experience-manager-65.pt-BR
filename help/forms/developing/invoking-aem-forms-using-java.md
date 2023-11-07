@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '5396'
+source-wordcount: '5393'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 O AEM Forms pode ser chamado usando a API Java do AEM Forms. Ao usar a API Java do AEM Forms, você pode usar a API de chamada ou as bibliotecas de cliente Java. As bibliotecas de cliente Java estão disponíveis para serviços como o serviço Rights Management. Essas APIs altamente tipificadas permitem desenvolver aplicativos Java que chamam o AEM Forms.
 
-A API de Invocação são classes localizadas no `com.adobe.idp.dsc` pacote. Usando essas classes, você pode enviar uma solicitação de chamada diretamente para um serviço e lidar com uma resposta de chamada retornada. Use a API de Invocação para chamar processos de vida curta ou longa criados com o Workbench.
+A API de Invocação são classes que estão no estado `com.adobe.idp.dsc` pacote. Usando essas classes, você pode enviar uma solicitação de chamada diretamente para um serviço e lidar com uma resposta de chamada retornada. Use a API de Invocação para chamar processos de vida curta ou longa criados com o Workbench.
 
 A maneira recomendada de chamar um serviço programaticamente é usar uma biblioteca de cliente Java que corresponda ao serviço, em vez da API de chamada. Por exemplo, para chamar o Serviço de criptografia, use a biblioteca do cliente do Serviço de criptografia. Para executar uma operação do Serviço de criptografia, chame um método que pertença ao objeto cliente do Serviço de criptografia. Você pode criptografar um documento PDF com uma senha chamando o `EncryptionServiceClient` do objeto `encryptPDFUsingPassword` método.
 
@@ -632,7 +632,7 @@ Nesse cenário, um aplicativo cliente é executado em sua própria JVM e chama o
 
 ### Aplicativo cliente que invoca instâncias AEM Forms clusterizadas {#client-application-invoking-clustered-aem-forms-instances}
 
-O diagrama a seguir mostra uma aplicação cliente sendo executada em sua própria JVM e chamando instâncias do AEM Forms localizadas em um cluster.
+O diagrama a seguir mostra uma aplicação cliente sendo executada em sua própria JVM e chamando instâncias do AEM Forms em um cluster.
 
 Esse cenário é semelhante a um aplicativo cliente que chama uma instância AEM Forms independente. No entanto, o URL do provedor é diferente. Se um aplicativo cliente quiser se conectar a um servidor de aplicativos J2EE específico, o aplicativo deverá alterar o URL para fazer referência ao servidor de aplicativos J2EE específico.
 
@@ -789,7 +789,7 @@ O código de exemplo a seguir cria um `com.adobe.idp.Document` objeto que é bas
 
 #### Criação de um documento baseado em um arquivo {#creating-a-document-based-on-a-file}
 
-O código de exemplo a seguir cria um `com.adobe.idp.Document` objeto baseado em um arquivo de PDF chamado *map.pdf*. Esse arquivo está localizado na raiz do disco rígido C. Esse construtor tenta definir o tipo de conteúdo MIME do `com.adobe.idp.Document` usando a extensão de nome de arquivo.
+O código de exemplo a seguir cria um `com.adobe.idp.Document` objeto baseado em um arquivo de PDF chamado *map.pdf*. Esse arquivo está na raiz do disco rígido C. Esse construtor tenta definir o tipo de conteúdo MIME do `com.adobe.idp.Document` usando a extensão de nome de arquivo.
 
 A variável `com.adobe.idp.Document` construtor que aceita um `java.io.File` O objeto também aceita um parâmetro booleano. Ao definir esse parâmetro como `true`, o `com.adobe.idp.Document` O objeto exclui o arquivo. Essa ação significa que não é necessário remover o arquivo após passá-lo para o `com.adobe.idp.Document` construtor.
 

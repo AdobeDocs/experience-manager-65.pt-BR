@@ -7,7 +7,7 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 hide: true
-source-git-commit: bc6a97a55f392cba03131ee3ca7cad35b8c1e69b
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3949'
 ht-degree: 17%
@@ -32,7 +32,7 @@ A funcionalidade Connected Assets é compatível com os casos de uso acima ao in
 
 ## Visão geral do Connected Assets {#overview-of-connected-assets}
 
-Ao editar páginas no [!UICONTROL Editor de páginas] como destino, os autores podem pesquisar, navegar e incorporar facilmente ativos de uma [!DNL Assets] implantação que atua como uma fonte de ativos. Os administradores criam uma integração única de uma implantação do [!DNL Experience Manager] com [!DNL Sites] com outra implantação do [!DNL Experience Manager] com [!DNL Assets] capacidade. Os autores de site também podem usar imagens do Dynamic Media nas páginas da Web do site por meio do Connected Assets e aproveitar as funcionalidades do Dynamic Media, como recorte inteligente e predefinições de imagem.
+Ao editar páginas no [!UICONTROL Editor de páginas] como destino, os autores podem pesquisar, navegar e incorporar facilmente ativos de uma [!DNL Assets] implantação que atua como uma fonte de ativos. Os administradores criam uma integração única de uma implantação do [!DNL Experience Manager] com [!DNL Sites] com outra implantação do [!DNL Experience Manager] com [!DNL Assets] capacidade. Os autores de site também podem usar imagens do Dynamic Media nas páginas da Web do site por meio do Connected Assets e usar as funcionalidades do Dynamic Media, como recorte inteligente e predefinições de imagem.
 
 Para o [!DNL Sites] autores, os ativos remotos estão disponíveis como ativos locais somente leitura. A funcionalidade suporta pesquisa e acesso ininterruptos a ativos remotos no Editor de sites. Para quaisquer outros casos de uso que possam exigir que o conjunto completo de ativos esteja disponível no Sites, considere migrar os ativos em massa em vez de usar os Ativos conectados. Consulte [Guia de migração do Experience Manager Assets](/help/assets/assets-migration-guide.md).
 
@@ -145,7 +145,7 @@ Você pode verificar a conectividade entre as [!DNL Sites] implantações e [!DN
 ## Usar ativos do Dynamic Media {#dynamic-media-assets}
 
 
-Com o Connected Assets, você pode usar ativos de imagem processados pelo [!DNL Dynamic Media] da implantação remota do DAM em páginas do Sites e aproveite as funcionalidades do Dynamic Media, como predefinições de recorte inteligente e de imagem.
+Com o Connected Assets, você pode usar ativos de imagem processados pelo [!DNL Dynamic Media] da implantação remota do DAM em páginas do Sites, e usar funcionalidades do Dynamic Media, como predefinições de recorte inteligente e de imagem.
 
 Para usar [!DNL Dynamic Media] com Connected Assets:
 

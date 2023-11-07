@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
 exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '1901'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Por exemplo, um lembrete de tarefa é configurado para ocorrer três dias úteis
 
 >[!NOTE]
 >
->Ao calcular datas e horas usando calendários comerciais, os formulários AEM usam a data e a hora do servidor em que estão sendo executados e não se ajustam para a diferença entre fusos horários. Por exemplo, se um lembrete de tarefa estiver programado para ocorrer às 10h em um servidor em execução em Londres, mas o usuário que recebe o lembrete estiver localizado em Nova York, o usuário receberá o lembrete às 5h da hora local.
+>Ao calcular datas e horas usando calendários comerciais, os formulários AEM usam a data e a hora do servidor em que estão sendo executados e não se ajustam para a diferença entre fusos horários. Por exemplo, se um lembrete de tarefa estiver programado para ocorrer às 10h em um servidor em execução em Londres, mas o usuário que recebe o lembrete estiver em Nova York, o usuário receberá o lembrete às 5h da hora local.
 
 ## Uso do calendário comercial padrão {#using-the-default-business-calendar}
 
@@ -65,7 +65,7 @@ Se sua organização contiver diferentes conjuntos de usuários com diferentes d
 
 >[!NOTE]
 >
->Se você não criar um novo calendário comercial, será usado o calendário padrão.
+>Se você não criar um calendário comercial, será usado o calendário padrão.
 
 1. No console de administração, clique em Serviços > Fluxo de trabalho do Forms > Calendários de negócios.
 1. Para adicionar um novo calendário comercial, clique em ![bus_cal_plus](assets/bus_cal_plus.png). O texto *Novo calendário* é exibida na lista suspensa. Selecione o texto e digite outro nome para o calendário.
@@ -90,7 +90,7 @@ Se sua organização contiver diferentes conjuntos de usuários com diferentes d
 
    >[!NOTE]
    >
-   >Se você não habilitar o calendário, o calendário padrão será usado.
+   >Se você não habilitar o calendário, será usado o calendário padrão.
 
 ## Mapeamento de usuários e grupos a um calendário comercial {#mapping-users-and-groups-to-a-business-calendar}
 

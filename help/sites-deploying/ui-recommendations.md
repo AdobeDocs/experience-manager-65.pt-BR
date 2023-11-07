@@ -11,9 +11,9 @@ topic-tags: best-practices
 discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
 docset: aem65
 exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Esta é uma lista de recomendações do Gerenciamento de produtos do Adobe Exper
     </ol> <p>Em seguida, em uma segunda fase:</p>
     <ol>
      <li>Atualize as caixas de diálogo dos componentes para usar o formato da caixa de diálogo Coral 3. O Adobe recomenda o uso de <a href="/help/sites-developing/modernization-tools.md">Ferramentas de modernização do AEM</a> para atualizar os componentes.</li>
-     <li>Configure o ContextHub (a substituição do ClientContext) e atualize os modelos de página para usar o ContextHub. Observe que o ContextHub tem um modo de compatibilidade que permite carregar armazenamentos de ClientContexts personalizados.</li>
+     <li>Configure o ContextHub (a substituição do ClientContext) e atualize os modelos de página para usar o ContextHub. O ContextHub tem um modo de compatibilidade que permite carregar armazenamentos de ClientContexts personalizados.</li>
     </ol> </td>
   </tr>
   <tr>

@@ -1,18 +1,14 @@
 ---
 title: Configuração da notificação por e-mail
-seo-title: Configuring Email Notification
 description: Saiba como configurar a notificação por email no Adobe Experience Manager.
-seo-description: Learn how to configure Email Notification in AEM.
-uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2069'
+source-wordcount: '2067'
 ht-degree: 12%
 
 ---
@@ -279,7 +275,7 @@ Você pode configurar o OAuth para vários provedores de email, conforme descrit
    * `https://mail.google.com/`
    * `https://www.googleapis.com//auth/gmail.send`
 1. Depois de adicionar os escopos, volte para **Credenciais** no menu à esquerda, vá para **Criar credenciais** - **ID do cliente OAuth** - **Aplicativo de desktop**
-1. Uma nova janela será aberta contendo a ID do cliente e o Segredo do cliente.
+1. Uma nova janela é aberta contendo a ID do cliente e o Segredo do cliente.
 1. Salve essas credenciais.
 
 **Configurações no lado do AEM**
@@ -361,7 +357,7 @@ Por fim, confirme a configuração ao:
 1. Em seguida, vá em **Certificados e segredos**, clique em **Novo segredo de cliente** e siga as etapas na tela para criar um segredo. Anote este segredo para uso posterior
 1. Pressione **Visão geral** no painel esquerdo e copie os valores de **ID do aplicativo (cliente)** e **ID do diretório (locatário)** para uso posterior
 
-Para recapitular, você precisará das seguintes informações para configurar o OAuth2 para o serviço Mailer no lado do AEM:
+Para recapitular, você deve ter as seguintes informações para configurar o OAuth2 para o serviço Mailer no lado do AEM:
 
 * O URL de autenticação, que será construído com a ID do locatário. Ele terá este formato: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
 * O URL do token, que será construído com a ID do locatário. Ele terá este formato: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`

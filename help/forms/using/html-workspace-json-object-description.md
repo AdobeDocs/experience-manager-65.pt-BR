@@ -1,17 +1,13 @@
 ---
 title: Descrição do objeto JSON do espaço de trabalho do AEM Forms
-seo-title: AEM Forms workspace JSON object description
 description: Informações conceituais sobre os objetos JSON JavaScript usados no espaço de trabalho do LiveCycle AEM Forms para personalização, extensão, modificação e reutilização.
-seo-description: Conceptual information about the JSON JavaScript objects used in LiveCycle AEM Forms workspace for customization, extension, modification, and reuse.
-uuid: 91c923c8-144a-4453-ba91-6a5193f1c4c4
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
 exl-id: f837a2b3-4650-4261-84c6-291bb2a46dc7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2113'
 ht-degree: 2%
 
 ---
@@ -274,7 +270,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>taskFormType<br /> </td>
    <td>T</td>
-   <td>Ele contém o tipo de formulário de tarefa. Usando esse campo, a tarefa é renderizada no cliente como pdf para, formulário swf etc.<br /> </td>
+   <td>Ele contém o tipo de formulário de tarefa. Usando esse campo, a tarefa é renderizada no cliente como pdf para, formulário swf e assim por diante.<br /> </td>
   </tr>
   <tr>
    <td>showDirectActions<br /> </td>
@@ -634,7 +630,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
 
 1. Objeto ACL de Tarefa
 
-   O objeto de ACL da tarefa contém informações sobre permissões como encaminhar, compartilhar, consultar etc. de uma tarefa. A seguir estão as propriedades da ACL da tarefa.
+   O objeto de ACL da tarefa contém informações sobre permissões como encaminhamento, compartilhamento, consulta e assim por diante de uma tarefa. A seguir estão as propriedades da ACL da tarefa.
 
 <table>
  <tbody>

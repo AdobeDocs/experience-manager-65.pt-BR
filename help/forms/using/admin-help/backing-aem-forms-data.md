@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1533'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ Você pode usar a interface de linha de comando para tirar o AEM Forms do modo d
 
    >[!NOTE]
    >
-   >Você deve definir o diretório JAVA_HOME conforme descrito no capítulo apropriado para o seu servidor de aplicativos em [Preparação para instalar o AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*.*
+   >Defina o diretório JAVA_HOME conforme descrito no capítulo apropriado para seu servidor de aplicativos em [Preparação para instalar o AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*.*
 
 1. Execute o seguinte comando em uma única linha:
 

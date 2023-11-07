@@ -2,10 +2,10 @@
 title: Criação de uma pasta de ativos Guia de início rápido do Headless
 description: Use os modelos de fragmento de conteúdo do AEM para definir a estrutura dos fragmentos de conteúdo, a base do seu conteúdo headless.
 exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
-source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 87%
+source-wordcount: '375'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +19,7 @@ Use os modelos de fragmento de conteúdo do AEM para definir a estrutura dos fra
 
 No entanto, primeiro será necessário criar uma pasta de ativos na qual você os armazenará.
 
-As pastas de ativos são usadas para [organizar ativos de conteúdo tradicionais](/help/assets/manage-assets.md), como imagens e vídeos ou fragmentos de conteúdo.
+As pastas de ativos são usadas para [organizar ativos de conteúdo tradicionais](/help/assets/manage-assets.md) como imagens, vídeos e fragmentos de conteúdo.
 
 ## Como criar uma pasta de ativos {#how-to-create-an-assets-folder}
 
@@ -34,17 +34,16 @@ Um administrador só precisaria criar pastas ocasionalmente para organizar o con
       * Ele pode ser ajustado, se necessário.
 
    ![Criar pasta](assets/assets-folder-create.png)
-1. Selecione a pasta que acabou de criar e selecione **Propriedades** na barra de ferramentas (ou use o `p` [atalho de teclado.](/help/sites-authoring/keyboard-shortcuts.md))
+1. Selecione a pasta criada e selecione **Propriedades** na barra de ferramentas (ou use o `p` [atalho de teclado.](/help/sites-authoring/keyboard-shortcuts.md))
 1. Na janela **Propriedades**, selecione a guia **Serviços em nuvem**.
 1. Para a **Configuração na nuvem**, selecione a [configuração criada anteriormente.](create-configuration.md)
-
    ![Configurar pasta de ativos](assets/assets-folder-configure.png)
 1. Toque ou clique em **Salvar e fechar**.
 1. Toque ou clique em **OK** na janela de confirmação.
 
    ![Janela de confirmação](assets/assets-folder-confirmation.png)
 
-É possível criar subpastas adicionais dentro da pasta que acabou de criar. As subpastas herdarão a **Configuração na nuvem** da pasta principal. Isso pode ser alterado, no entanto, se você quiser usar modelos de outra configuração.
+É possível criar subpastas adicionais dentro da pasta criada. As subpastas herdarão a **Configuração na nuvem** da pasta principal. Isso pode ser alterado, no entanto, se você quiser usar modelos de outra configuração.
 
 Se estiver usando uma estrutura de site localizada, é possível [criar uma raiz de idioma](/help/assets/multilingual-assets.md) abaixo da nova pasta.
 

@@ -11,10 +11,10 @@ topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
-source-git-commit: c4045313200ffecbf05abfacd67aabc80ad67e7f
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3892'
-ht-degree: 6%
+source-wordcount: '3888'
+ht-degree: 7%
 
 ---
 
@@ -36,7 +36,7 @@ As propriedades JavaScript, FormCalc e os métodos compatíveis com formulários
    <td>Especifica o conteúdo do campo antes de ele ser alterado em resposta às ações de um usuário. Esse valor pode ser recuperado, de modo semelhante a um recurso de desfazer.</td>
    <td><p>Não funciona para caixas suspensas e de listagem. <code>PrevText </code>não funciona corretamente nos seguintes casos:</p>
     <ul>
-     <li>Ao digitar algumas chaves de caracteres especiais (por exemplo $, (,), &amp;, @ e mais) em campos Numéricos no iPad e </li>
+     <li>Ao digitar algumas chaves de caracteres especiais (por exemplo, $, (,), &amp;, @ e mais) em campos Numéricos no iPad e </li>
      <li>Para o campo Date (quando a data é inserida por meio do calendário).<br /> </li>
     </ul> <p>Não há suporte para a configuração de valor por meio do script.</p> </td>
   </tr>
@@ -52,7 +52,7 @@ As propriedades JavaScript, FormCalc e os métodos compatíveis com formulários
     <ul>
      <li>Na seleção e substituição de textos</li>
      <li>Sobre exclusão, cópia e colagem de textos.</li>
-     <li>Ao digitar algumas chaves de caracteres especiais (por exemplo $, (, ), &amp;, @ e mais) em campos Numéricos<br /> </li>
+     <li>Ao digitar algumas chaves de caracteres especiais (por exemplo, $, (, ), &amp;, @ e mais) em campos Numéricos<br /> </li>
      <li>Ao usar a combinação shift+alfanumeric. </li>
      <li>Sobre o uso de campos de data/hora.</li>
     </ul>
@@ -67,7 +67,7 @@ As propriedades JavaScript, FormCalc e os métodos compatíveis com formulários
     <ul>
      <li>Na seleção e substituição de textos</li>
      <li>Sobre exclusão, cópia e colagem de textos.</li>
-     <li>Ao digitar algumas chaves de caracteres especiais (por exemplo $, (,), &amp;, @ e mais) em campos Numéricos<br /> </li>
+     <li>Ao digitar algumas chaves de caracteres especiais (por exemplo, $, (,), &amp;, @ e mais) em campos Numéricos<br /> </li>
      <li>Ao usar a combinação shift+alfanumeric. </li>
      <li>Sobre o uso de campos de data/hora.</li>
     </ul> <p>Não há suporte para a configuração de valor por meio do script.</p> </td>
@@ -1179,13 +1179,13 @@ FormCalc é uma linguagem específica do XFA para criar lógica centrada no form
 
    1. Abs()
    1. Avg()
-   1. Ceil()
+   1. Célula()
    1. Contagem()
-   1. Floor()
+   1. Piso()
    1. Max()
    1. Mín()
    1. Mod()
-   1. Round()
+   1. Arrendondar()
    1. Soma()
 
 1. **Funções científicas**
@@ -1353,4 +1353,4 @@ Os seguintes eventos XFA do lado do cliente são compatíveis:
 
 >[!NOTE]
 >
->Os formulários HTML5 são renderizados no lado do cliente (navegador). É recomendável usar o lado do cliente **validar** e **calcular** scripts em vez de scripts do lado do servidor.
+>Os formulários HTML5 são renderizados no lado do cliente (navegador). Usar do lado do cliente **validar** e **calcular** scripts em vez de scripts do lado do servidor.

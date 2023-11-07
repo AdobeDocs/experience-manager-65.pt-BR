@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2460'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Ele tem os seguintes atributos opcionais:
 
 **tagName** - Nome do elemento que envolverá uma saída não vazia. O padrão é DIV.
 
-**espaço reservado** - Valor padrão a ser usado para texto nulo ou vazio no modo de edição, ou seja, o espaço reservado. Observe que a verificação padrão é executada após a formatação e o escape opcionais, ou seja, ela é gravada como está na saída. O padrão é:
+**espaço reservado** - Valor padrão a ser usado para texto nulo ou vazio no modo de edição, ou seja, o espaço reservado. A verificação padrão é executada após a formatação e o escape opcionais, ou seja, ela é gravada como está na saída. O padrão é:
 
 `<div><span class="cq-text-placeholder">&para;</span></div>`
 
@@ -545,7 +545,7 @@ Ela tem os seguintes atributos:
 
 >[!NOTE]
 >
->A resolução do recurso e o script incluídos com o `<sling:include>` A tag é igual à resolução normal de um URL do sling. Por padrão, os seletores, a extensão e assim por diante da solicitação atual também são usados para o script incluído. Eles podem ser modificados por meio dos atributos de tag: por exemplo `replaceSelectors="foo.bar"` permite substituir os seletores.
+>A resolução do recurso e o script incluídos com o `<sling:include>` A tag é igual à resolução normal de um URL do sling. Por padrão, os seletores, a extensão e assim por diante da solicitação atual também são usados para o script incluído. Eles podem ser modificados por meio dos atributos de tag: por exemplo, `replaceSelectors="foo.bar"` permite substituir os seletores.
 
 Exemplos:
 

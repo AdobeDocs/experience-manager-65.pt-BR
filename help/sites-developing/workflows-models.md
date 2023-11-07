@@ -1,19 +1,15 @@
 ---
 title: Criação de modelos de fluxo de trabalho
-seo-title: Creating Workflow Models
 description: Crie um modelo de fluxo de trabalho para definir a série de etapas executadas quando um usuário inicia o fluxo de trabalho.
-seo-description: You create a workflow model to define the series of steps executed when a user starts the workflow.
-uuid: 31071d3a-d6d5-4476-9ac0-7b335de406d9
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2463'
+source-wordcount: '2451'
 ht-degree: 2%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->Para usar a interface clássica, consulte a [Documentação do AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/workflows-models.html) para referência.
+>Para uso da interface clássica, consulte a [Documentação do AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/workflows-models.html) para referência.
 
 Você cria um [modelo de fluxo de trabalho](/help/sites-developing/workflows.md#model) para definir a série de etapas executadas quando um usuário inicia o workflow. Você também pode definir propriedades do modelo, como se o fluxo de trabalho é transitório ou usa vários recursos.
 
@@ -30,14 +26,14 @@ Quando um usuário inicia um workflow, uma instância é iniciada; esse é o mod
 
 ## Criação de um novo fluxo de trabalho {#creating-a-new-workflow}
 
-Ao criar um novo modelo de fluxo de trabalho pela primeira vez, ele contém:
+Ao criar um modelo de fluxo de trabalho pela primeira vez, ele contém:
 
 * As etapas, **Início do fluxo** e **Fim do fluxo**.
 Eles representam o início e o fim do workflow. Essas etapas são obrigatórias e não podem ser editadas/removidas.
 * Um exemplo **Participante** etapa chamada **Etapa 1**.
 Esta etapa é configurada para atribuir um item de trabalho ao iniciador do fluxo de trabalho. Edite ou exclua esta etapa e adicione etapas conforme necessário.
 
-Para criar um novo workflow com o editor:
+Para criar um workflow com o editor:
 
 1. Abra o **Modelos de fluxo de trabalho** console; via **Ferramentas**, **Fluxo de trabalho**, **Modelos** ou, por exemplo: [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
 1. Selecionar **Criar**, depois **Criar modelo**.
@@ -75,7 +71,7 @@ Quando você (ou qualquer outro usuário) faz alterações no fluxo de trabalho,
 
 Quando as alterações são sincronizadas com o modelo de tempo de execução (salvo), **Sincronizado** é exibido em vez disso.
 
-Algumas etapas têm campos obrigatórios e/ou validação integrada. Quando essas condições não forem satisfeitas, um erro será mostrado ao tentar **Sincronizar** o modelo. Por exemplo, quando nenhum participante tiver sido definido para um **Participante** etapa:
+Algumas etapas têm campos obrigatórios e/ou validação integrada. Quando essas condições não forem satisfeitas, um erro será exibido ao tentar **Sincronizar** o modelo. Por exemplo, quando nenhum participante tiver sido definido para um **Participante** etapa:
 
 ![wf-21](assets/wf-21.png)
 
@@ -86,8 +82,8 @@ Ao abrir uma [Modelo padrão e/ou herdado](/help/sites-developing/workflows.md#w
 * O navegador de Etapas não está disponível (lado esquerdo).
 * Existe uma **Editar** ação disponível na barra de ferramentas (lado direito).
 * Inicialmente, o modelo e suas propriedades são apresentados no modo somente leitura como:
-   * Os workflows padrão estão localizados em `/libs`
-   * Os fluxos de trabalho herdados estão localizados em `/etc`
+   * Os workflows padrão estão em `/libs`
+   * Os fluxos de trabalho herdados estão em `/etc`
 Selecionar **Editar** irá:
 * fazer uma cópia do fluxo de trabalho em `/conf`
 * disponibilizar o navegador de Etapas
@@ -101,7 +97,7 @@ Selecionar **Editar** irá:
 
 ### Adicionar uma etapa a um modelo {#adding-a-step-to-a-model}
 
-Será necessário adicionar etapas ao modelo para representar a atividade a ser executada - cada etapa executa uma atividade específica. Uma seleção de componentes da etapa está disponível em uma instância padrão do AEM.
+Você deve adicionar etapas ao modelo para representar a atividade a ser executada - cada etapa executa uma atividade específica. Uma seleção de componentes da etapa está disponível em uma instância padrão do AEM.
 
 Ao editar um modelo, as etapas disponíveis aparecem nos vários grupos da **Navegador de etapas**. Por exemplo:
 
@@ -167,7 +163,7 @@ Você pode **Configurar** e personalizar o comportamento de uma etapa do fluxo d
 
 ### Criar um fluxo de trabalho temporário {#creating-a-transient-workflow}
 
-Você pode criar um [Temporário](/help/sites-developing/workflows.md#transient-workflows) modelo de fluxo de trabalho ao criar um novo modelo ou ao editar um existente:
+Você pode criar um [Temporário](/help/sites-developing/workflows.md#transient-workflows) modelo de fluxo de trabalho ao criar um modelo ou ao editar um existente:
 
 1. Abrir o modelo de fluxo de trabalho para [edição](#editinganexistingworkflow).
 1. Selecionar **Propriedades do modelo de fluxo de trabalho** na barra de ferramentas.
@@ -207,7 +203,7 @@ Se um modelo de fluxo de trabalho estiver presente na interface clássica, mas a
 
 ### Configuração de um fluxo de trabalho para suporte a vários recursos {#configuring-a-workflow-for-multi-resource-support}
 
-É possível configurar um modelo de fluxo de trabalho para [Suporte a vários recursos](/help/sites-developing/workflows.md#multi-resource-support) ao criar um novo modelo ou ao editar um modelo existente:
+É possível configurar um modelo de fluxo de trabalho para [Suporte a vários recursos](/help/sites-developing/workflows.md#multi-resource-support) ao criar um modelo ou editar um existente:
 
 1. Abrir o modelo de fluxo de trabalho para [edição](#editinganexistingworkflow).
 1. Selecionar **Propriedades do modelo de fluxo de trabalho** na barra de ferramentas.
@@ -264,7 +260,7 @@ Para definir **Estágios** para o seu workflow:
 
 Para exportar um modelo de fluxo de trabalho em um pacote:
 
-1. Crie um novo pacote usando o [Gerenciador de pacotes](/help/sites-administering/package-manager.md#package-manager):
+1. Criar um pacote usando o [Gerenciador de pacotes](/help/sites-administering/package-manager.md#package-manager):
 
    1. Navegue até o Gerenciador de pacotes via **Ferramentas**, **Implantação**, **Pacotes**.
 
@@ -299,7 +295,7 @@ Você pode configurar um formulário a ser processado pelo workflow selecionado.
 
 Para configurar o workflow a ser usado com seu formulário:
 
-1. Crie uma nova página e abra-a para edição.
+1. Crie uma página e abra-a para edição.
 1. Adicionar um **Formulário** componente à página.
 1. **Configurar** o **Início do formulário** componente que apareceu na página.
 1. Uso **Iniciar fluxo de trabalho** para selecionar o fluxo de trabalho desejado entre os disponíveis:
@@ -328,7 +324,7 @@ Também é possível configurar o AEM para exibir **DEPURAR** nos arquivos de lo
 
 Para ilustrar algumas das possibilidades de criação de um workflow, o exemplo a seguir cria uma variação do `Publish Example` fluxo de trabalho.
 
-1. [Criar um novo modelo de fluxo de trabalho](#creating-a-new-workflow).
+1. [Criar um modelo de fluxo de trabalho](#creating-a-new-workflow).
 
    O novo workflow conterá:
 

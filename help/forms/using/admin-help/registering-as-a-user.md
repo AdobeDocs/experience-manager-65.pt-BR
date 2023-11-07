@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
 feature: Document Security
 exl-id: 320d8fa4-e200-4993-b018-a9718cddc5c1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '699'
 ht-degree: 6%
 
 ---
@@ -24,13 +24,13 @@ Você pode usar documentos protegidos por política que recebe de um usuário de
 * Um usuário de segurança de documentos que deseja enviar a você um documento protegido por política o adiciona a uma política.
 * Um administrador de segurança de documentos cria uma conta para você.
 
-   Depois de registrar e ativar sua conta, você pode usar documentos protegidos por política que você está autorizado a usar por meio de uma política. Se o administrador da segurança de documentos habilitar esses recursos para usuários convidados, talvez você tenha permissão para realizar estas tarefas:
+  Depois de registrar e ativar sua conta, você pode usar documentos protegidos por política que você está autorizado a usar por meio de uma política. Se o administrador da segurança de documentos habilitar esses recursos para usuários convidados, talvez você tenha permissão para realizar estas tarefas:
 
 * Documentos do Protect usando políticas de segurança de documentos.
 * Crie suas próprias políticas de usuário que podem ser aplicadas aos documentos.
 * Convide outros usuários externos a usar um documento protegido por política adicionando-os à política.
 
-   Além disso, ao se registrar, não é necessário se registrar novamente para usar outros documentos protegidos por política. Sua conta permanece ativa até que um administrador de políticas a desative ou exclua.
+  Além disso, ao se registrar, não é necessário se registrar novamente para usar outros documentos protegidos por política. Sua conta permanece ativa até que um administrador de políticas a desative ou exclua.
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Sua conta permanece ativa até que o administrador a desative ou exclua.
 
 ## Redefinir sua senha {#reset-your-password}
 
-Se você esquecer sua senha, o administrador da política poderá redefini-la para você. A redefinição de uma senha gera um email com convite para fazer logon usando uma senha temporária. Você poderá então criar uma nova senha.
+Se você esquecer sua senha, o administrador da política poderá redefini-la para você. A redefinição de uma senha gera um email com convite para fazer logon usando uma senha temporária. Em seguida, você poderá criar outra senha.
 
 Para obter informações sobre como entrar em contato com um administrador de segurança de documentos para obter uma nova senha, verifique seu aviso de email de ativação ou outros avisos da organização que convidou você para se registrar.
 

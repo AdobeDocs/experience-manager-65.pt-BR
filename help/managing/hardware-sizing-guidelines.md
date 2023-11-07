@@ -7,9 +7,9 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2796'
+source-wordcount: '2798'
 ht-degree: 1%
 
 ---
@@ -291,7 +291,7 @@ Aloque pelo menos 16 GB de heap e configure o [!UICONTROL Ativo de atualização
 
 >[!NOTE]
 >
->Um throughput de imagens mais alto significa que os recursos de computação precisam acompanhar o ritmo da E/S do sistema e vice-versa. Por exemplo, se os workflows forem iniciados pela importação de imagens, o upload de muitas imagens via WebDAV poderá causar um backlog de workflows.
+>Um throughput mais alto de imagens significa que os recursos de computação precisam acompanhar o ritmo da E/S do sistema e vice-versa. Por exemplo, se os workflows forem iniciados pela importação de imagens, o upload de muitas imagens via WebDAV poderá causar um backlog de workflows.
 >
 >O uso de discos separados para TarPM, armazenamento de dados e índice de pesquisa pode ajudar a otimizar o comportamento de I/O do sistema (no entanto, geralmente faz sentido manter o índice de pesquisa localmente).
 

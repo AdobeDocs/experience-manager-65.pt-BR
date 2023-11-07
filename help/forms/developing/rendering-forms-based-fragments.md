@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
 role: Developer
 exl-id: febf5350-3fc5-48c0-8bc5-198daff15936
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2205'
+source-wordcount: '2199'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 O serviço Forms pode renderizar formulários com base em fragmentos criados usando o Designer. A *fragmento* é uma parte reutilizável de um formulário e é salva como um arquivo XDP separado que pode ser inserido em vários designs de formulário. Por exemplo, um fragmento pode incluir um bloco de endereço ou texto legal.
 
-O uso de fragmentos simplifica e acelera a criação e a manutenção de um grande número de formulários. Ao criar um novo formulário, você insere uma referência ao fragmento necessário e o fragmento aparece no formulário. A referência do fragmento contém um subformulário que aponta para o arquivo XDP físico. Para obter informações sobre como criar designs de formulário com base em fragmentos, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_pt)
+O uso de fragmentos simplifica e acelera a criação e a manutenção de um grande número de formulários. Ao criar um formulário, você insere uma referência ao fragmento necessário e o fragmento aparece no formulário. A referência do fragmento contém um subformulário que aponta para o arquivo XDP físico. Para obter informações sobre como criar designs de formulário com base em fragmentos, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_pt)
 
 Um fragmento pode incluir vários subformulários que são envolvidos em um conjunto de subformulários de escolha. Os conjuntos de subformulários de escolha controlam a exibição de subformulários com base no fluxo de dados de uma conexão de dados. Use declarações condicionais para determinar qual subformulário do conjunto aparece no formulário entregue. Por exemplo, cada subformulário em um conjunto pode incluir informações de uma localização geográfica específica, e o subformulário exibido pode ser determinado com base na localização do usuário.
 
@@ -77,7 +77,7 @@ Antes de executar programaticamente uma operação da API do cliente de serviço
 
 Para renderizar com êxito um formulário com base em fragmentos, você deve garantir que o serviço do Forms possa localizar o formulário e os fragmentos (os arquivos XDP) aos quais o design do formulário faz referência. Por exemplo, suponha que o formulário seja chamado PO.xdp e esse formulário use dois fragmentos chamados FooterUS.xdp e FooterCanada.xdp. Nessa situação, o serviço Forms deve ser capaz de localizar todos os três arquivos XDP.
 
-Você pode organizar um formulário e seus fragmentos colocando o formulário em um local e os fragmentos em outro local, ou pode colocar todos os arquivos XDP no mesmo local. Para os fins desta seção, considere que todos os arquivos XDP estão localizados no repositório do AEM Forms. Para obter informações sobre como colocar arquivos XDP no repositório do AEM Forms, consulte [Recursos de gravação](/help/forms/developing/aem-forms-repository.md#writing-resources).
+Você pode organizar um formulário e seus fragmentos colocando o formulário em um local e os fragmentos em outro local, ou pode colocar todos os arquivos XDP no mesmo local. Para os fins desta seção, considere que todos os arquivos XDP estão no repositório do AEM Forms. Para obter informações sobre como colocar arquivos XDP no repositório do AEM Forms, consulte [Recursos de gravação](/help/forms/developing/aem-forms-repository.md#writing-resources).
 
 Ao renderizar um formulário com base em fragmentos, você deve fazer referência somente ao próprio formulário e não aos fragmentos. Por exemplo, você deve fazer referência a PO.xdp e não a FooterUS.xdp ou FooterCanada.xdp. Certifique-se de colocar os fragmentos em um local em que o serviço do Forms possa localizá-los.
 
@@ -122,7 +122,7 @@ Renderize um formulário com base em fragmentos usando a API do Forms (Java):
 
    * Criar um `URLSpec` objeto que armazena valores URI usando seu construtor.
    * Chame o `URLSpec` do objeto `setApplicationWebRoot` e transmita um valor de string que represente a raiz da web do aplicativo.
-   * Chame o `URLSpec` do objeto `setContentRootURI` e transmita um valor de string que especifique o valor do URI raiz do conteúdo. Verifique se o design do formulário e os fragmentos estão localizados no URI da raiz de conteúdo. Caso contrário, o serviço Forms acionará uma exceção. Para referenciar o repositório, especifique `repository://`.
+   * Chame o `URLSpec` do objeto `setContentRootURI` e transmita um valor de string que especifique o valor do URI raiz do conteúdo. Verifique se o design do formulário e os fragmentos estão no URI da raiz de conteúdo. Caso contrário, o serviço Forms acionará uma exceção. Para referenciar o repositório, especifique `repository://`.
    * Chame o `URLSpec` do objeto `setTargetURL` e transmitem um valor de string que especifica o valor da URL de destino para onde os dados de formulário são publicados. Se você definir o URL de destino no design do formulário, será possível passar uma cadeia de caracteres vazia. Você também pode especificar a URL para onde um formulário é enviado para realizar cálculos.
 
 1. Renderizar o formulário
@@ -174,7 +174,7 @@ Renderize um formulário com base em fragmentos usando a API do Forms (serviço 
 
    * Criar um `URLSpec` objeto que armazena valores URI usando seu construtor.
    * Chame o `URLSpec` do objeto `setApplicationWebRoot` e transmita um valor de string que represente a raiz da web do aplicativo.
-   * Chame o `URLSpec` do objeto `setContentRootURI` e transmita um valor de string que especifique o valor do URI raiz do conteúdo. Verifique se o design do formulário está localizado no URI da raiz do conteúdo. Caso contrário, o serviço Forms acionará uma exceção. Para referenciar o repositório, especifique `repository://`.
+   * Chame o `URLSpec` do objeto `setContentRootURI` e transmita um valor de string que especifique o valor do URI raiz do conteúdo. Verifique se o design do formulário está no URI da raiz do conteúdo. Caso contrário, o serviço Forms acionará uma exceção. Para referenciar o repositório, especifique `repository://`.
    * Chame o `URLSpec` do objeto `setTargetURL` e transmitem um valor de string que especifica o valor da URL de destino para onde os dados de formulário são publicados. Se você definir o URL de destino no design do formulário, será possível passar uma cadeia de caracteres vazia. Você também pode especificar a URL para onde um formulário é enviado para realizar cálculos.
 
 1. Renderizar o formulário
@@ -183,7 +183,7 @@ Renderize um formulário com base em fragmentos usando a API do Forms (serviço 
 
    * Um valor de cadeia de caracteres que especifica o nome de design do formulário, incluindo a extensão de nome de arquivo. Se você fizer referência a um design de formulário que faz parte de um aplicativo do Forms, certifique-se de especificar o caminho completo, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * A `BLOB` objeto que contém dados a serem mesclados com o formulário. Se não quiser mesclar dados, transmita `null`.
-   * A `PDFFormRenderSpec` objeto que armazena opções de tempo de execução. Observe que a opção PDF com tags não pode ser definida se o documento de entrada for um documento PDF. Se o arquivo de entrada for um arquivo XDP, a opção PDF com tags poderá ser definida.
+   * A `PDFFormRenderSpec` objeto que armazena opções de tempo de execução. A opção PDF marcado não poderá ser definida se o documento de entrada for um documento PDF. Se o arquivo de entrada for um arquivo XDP, a opção PDF com tags poderá ser definida.
    * A `URLSpec` objeto que contém valores de URI exigidos pelo serviço Forms.
    * A `java.util.HashMap` objeto que armazena anexos de arquivo. Este é um parâmetro opcional e você pode especificar `null` se não quiser anexar arquivos ao formulário.
    * Um vazio `com.adobe.idp.services.holders.BLOBHolder` objeto preenchido pelo método. Esse parâmetro é usado para armazenar o formulário renderizado.

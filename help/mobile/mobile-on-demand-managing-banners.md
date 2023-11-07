@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: fb1abaa0-9c02-4f20-aa7c-073def067452
 exl-id: c65a24e6-3041-4774-aeed-8e188ea19b78
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '661'
 ht-degree: 1%
 
 ---
@@ -123,7 +123,7 @@ O fluxo de trabalho geral para excluir um banner:
 1. Selecione o banner a ser excluído na **Gerenciar banners** bloco.
 1. Verifique se ele está selecionado na lista (selecione outros para excluir conforme necessário).
 1. Clique em **Excluir** na barra de ações.
-1. Verifique se você deseja excluir do AEM e do Mobile On-Demand.
+1. Marque se deseja excluir do AEM e do Mobile On-Demand.
 1. Clique em **Excluir**.
 1. Seu banner foi removido da lista.
 

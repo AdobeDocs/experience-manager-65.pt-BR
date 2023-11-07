@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 role: Admin
 exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
-source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1422'
 ht-degree: 2%
 
 ---
@@ -110,7 +110,7 @@ Uso: sh ./scripts/cloud-scripts/zkcli.sh \
 
 A Pesquisa multilíngue (MLS) para o AEM Communities foi criada para a plataforma Solr, a fim de fornecer pesquisa aprimorada em todos os idiomas compatíveis, incluindo inglês.
 
-O MLS para AEM Communities está disponível como MLS Padrão ou MLS Avançado. O MLS padrão inclui apenas as definições de configuração Solr e exclui todos os plug-ins ou arquivos de recurso. O MLS avançado é a solução mais abrangente e inclui definições de configuração do Solr, bem como plug-ins e recursos relacionados
+O MLS para AEM Communities está disponível como MLS Padrão ou MLS Avançado. O MLS padrão inclui apenas as definições de configuração Solr e exclui todos os plug-ins ou arquivos de recurso. O MLS avançado é a solução mais abrangente e inclui configurações e plug-ins Solr e recursos relacionados
 
 O MLS padrão inclui aprimoramentos para a pesquisa de conteúdo nos seguintes idiomas:
 
@@ -187,8 +187,8 @@ Os arquivos MLS padrão são armazenados no repositório AEM.
 
       * Para Solr4: copy `solr-install-dir/example/solr/collection1/conf/`
       * Para Solr5: copy `solr-install-dir/server/solr/configsets/data_driven_schema_configs/`
-   1. Copie o baixado **schema.xml** e **solrconfig.xml** para *new-config-dir* para substituir arquivos existentes.
 
+   1. Copie o baixado **schema.xml** e **solrconfig.xml** para *new-config-dir* para substituir arquivos existentes.
 
 1. [Fazer upload da nova configuração](#upload-a-configuration-to-zookeeper) para o ZooKeeper.
 1. [Criar uma coleção](#create-a-collection) especificar os parâmetros necessários, como número de fragmentos, número de réplicas e nome da configuração.
@@ -244,15 +244,15 @@ Instruções de instalação - observe as poucas diferenças para Solr4 e Solr5:
 
       * Tais como `solr-install-dir/myconfig/`
       * Criar subpastas `stopwords/` e `lang/`
+
    1. Copiar o conteúdo do diretório de configuração Solr existente para *new-config-dir*
 
       * Para Solr4: Copiar `solr-install-dir/example/solr/collection1/conf/`
       * Para Solr5: Copiar `solr-install-dir/server/solr/configsets/data_driven_schema_configs/`
+
    1. Copiar o extraído **schema.xml** e **solrconfig.xml** para *new-config-dir* para substituir arquivos existentes.
    1. Para Solr5: Copiar `solr_install_dir/server/solr/configsets/sample_techproducts_configs/conf/lang/*.txt` para `new-config-dir/lang/`
    1. Copiar o extraído **palavras irrelevantes/** pasta para *new-config-dir* resultando em `new-config-dir/stopwords/*.txt`
-
-
 
 1. [Fazer upload da nova configuração](#upload-a-configuration-to-zookeeper) para o ZooKeeper
 1. Copie o novo **profiles/** pasta ...
@@ -296,19 +296,19 @@ em que:
 
    * - d solrhome
 
-      Diretório de instalação Solr
+     Diretório de instalação Solr
 
    * -c caminho de coleção
 
-      Caminho da coleção em solr
+     Caminho da coleção em solr
 
    * --ajuda
 
-      Imprimir opções da linha de comando
+     Imprimir opções da linha de comando
 
    * -v [4|5]
 
-      Definir versão para solr
+     Definir versão para solr
 
 * Exemplo para Solr 4.10.4:
 
@@ -318,7 +318,7 @@ em que:
 
    * Install.sh -v 5 -d /tmp/solr-5.4.0 -c /tmp/solr-5.4.0/server/solr/collection1
 
-**Nota**:
+**Observação**:
 
 * O script de instalação faz backup de schema.xml e solrconfig.xml antes de instalar novas versões anexando &quot;.orig&quot;
 

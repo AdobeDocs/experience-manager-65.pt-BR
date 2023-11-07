@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1250'
 ht-degree: 2%
 
 ---
@@ -76,7 +76,7 @@ O componente de logon pode ser usado para coletar as informações de logon e at
 
 Isso fornece ao visitante os campos padrão de **Nome de usuário** e **Senha**, com um **Logon** botão para ativar o processo de logon quando as credenciais forem inseridas.
 
-Por exemplo, os usuários podem fazer logon ou criar uma nova conta usando o **Conectar** na barra de ferramentas do Geometrixx, que usa a página:
+Por exemplo, os usuários podem fazer logon ou criar uma conta usando a **Conectar** na barra de ferramentas do Geometrixx, que usa a página:
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
@@ -163,7 +163,7 @@ Isso é feito com:
 
   Para gerenciar ações relacionadas aos estados.
 
-Vários estados podem ser definidos; por exemplo, no Geometrixx, eles incluem:
+Vários estados podem ser definidos; por exemplo, em Geometrixx, eles incluem:
 
 * assinatura (ou cancelamento de assinatura) de notificações em informativos ou threads de comentários
 * adicionar e remover uma conexão com um amigo

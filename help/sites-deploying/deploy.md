@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1766'
+source-wordcount: '1765'
 ht-degree: 3%
 
 ---
@@ -49,7 +49,7 @@ Depois de se familiarizar com essas noções básicas, você pode encontrar info
 * [Artigos de instruções sobre configuração](/help/sites-deploying/ht-deploy.md)
 * [Console da Web](/help/sites-deploying/web-console.md)
 * [Solução de problemas de replicação](/help/sites-deploying/troubleshoot-rep.md)
-* [Práticas recomendadas    ](/help/sites-deploying/best-practices.md)
+* [Práticas recomendadas](/help/sites-deploying/best-practices.md)
 * [Implantação de comunidades](/help/communities/deploy-communities.md)
 * [Introdução à plataforma AEM](/help/sites-deploying/platform.md)
 * [Diretrizes de desempenho](/help/sites-deploying/performance-guidelines.md)
@@ -113,7 +113,7 @@ O AEM Managed Services é uma solução completa para o gerenciamento de experi�
 
 Com o AEM, os clientes da Managed Services podem obter os seguintes benefícios:
 
-**Lançamento mais rápido:** Com a infraestrutura de nuvem flexível do Adobe Managed Services, as organizações podem planejar, iniciar e otimizar rapidamente experiências digitais bem-sucedidas. O Adobe gerencia a arquitetura de nuvem sem necessidade de capital adicional, hardware ou software e os engenheiros de soluções para clientes do Adobe, ajudam na arquitetura do AEM, no provisionamento, na personalização para conexão com aplicativos de back-end e nas práticas recomendadas de ativação.
+**Lançamento mais rápido:** Com a infraestrutura de nuvem flexível do Adobe Managed Services, as organizações podem planejar, lançar e otimizar rapidamente experiências digitais bem-sucedidas. O Adobe gerencia a arquitetura de nuvem sem necessidade de capital adicional, hardware ou software e os engenheiros de soluções para clientes do Adobe, ajudam na arquitetura do AEM, no provisionamento, na personalização para conexão com aplicativos de back-end e nas práticas recomendadas de ativação.
 
 **Maior desempenho:** Fornece experiências digitais confiáveis para sua empresa com quatro opções de disponibilidade de serviço: 99,5%, 99,9%, 99,95% e 99,99%. Além disso, permite o backup automático e modelos de recuperação de desastres multimodo para ajudar a garantir a confiabilidade e o gerenciamento de contingências.
 
@@ -155,7 +155,7 @@ Na seção a seguir, descrevemos o **instalação independente**. Para obter det
 
    Local de instalação do Windows: **`C:\Program Files\aem`**
 
-   Da mesma forma, é comum instalar instâncias de amostra em uma pasta logo na área de trabalho. Em qualquer caso, nos referimos a esse local genericamente como:
+   Da mesma forma, é comum instalar instâncias de amostra em uma pasta logo na área de trabalho. Em qualquer caso, Adobe refere-se a esse local genericamente como:
 
    `<aem-install>`
 
@@ -304,7 +304,7 @@ A seção acima deve fornecer uma boa compreensão das noções básicas da inst
 * [Artigos de instruções sobre configuração](/help/sites-deploying/ht-deploy.md)
 * [Console da Web](/help/sites-deploying/web-console.md)
 * [Solução de problemas de replicação](/help/sites-deploying/troubleshoot-rep.md)
-* [Práticas recomendadas    ](/help/sites-deploying/best-practices.md)
+* [Práticas recomendadas](/help/sites-deploying/best-practices.md)
 * [Implantação de comunidades](/help/communities/deploy-communities.md)
 * [Introdução à plataforma AEM](/help/sites-deploying/platform.md)
 * [Diretrizes de desempenho](/help/sites-deploying/performance-guidelines.md)

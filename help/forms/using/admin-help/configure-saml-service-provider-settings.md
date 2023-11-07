@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1169d0d1-cbfb-486b-acca-9b9de3d410dc
 exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '598'
 ht-degree: 0%
 
 ---
@@ -51,13 +51,13 @@ Para obter uma explicação sobre SAML, consulte [Visão geral técnica da Secur
 
    * Você pode configurar formulários AEM para emitir uma asserção SAML para um período de validade que corresponda ao período de validade de uma asserção de terceiros. Para respeitar o tempo limite de asserção SAML de terceiros, adicione a seguinte linha em Propriedades personalizadas:
 
-      `saml.sp.honour.idp.assertion.expiry=true`
+     `saml.sp.honour.idp.assertion.expiry=true`
 
    * Adicione a seguinte propriedade personalizada para usar RelayState para determinar a URL para a qual o usuário será redirecionado após a autenticação bem-sucedida.
 
-      `saml.sp.use.relaystate=true`
+     `saml.sp.use.relaystate=true`
 
-   * Adicione a seguinte propriedade personalizada para configurar o URL para as Java Server Pages (JSPs) personalizadas, que serão usadas para renderizar a lista registrada de provedores de identidade. Se você não tiver implantado uma aplicação web personalizada, ela usará a página padrão Gerenciamento de usuários para renderizar a lista.
+   * Adicione a seguinte propriedade personalizada para configurar o URL para as Java Server Pages (JSP) personalizadas, que são usadas para renderizar a lista registrada de provedores de identidade. Se você não tiver implantado uma aplicação web personalizada, ela usará a página padrão Gerenciamento de usuários para renderizar a lista.
 
    `saml.sp.discovery.url=/custom/custom.jsp`
 

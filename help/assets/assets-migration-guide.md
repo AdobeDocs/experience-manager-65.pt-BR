@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1795'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,7 @@ Ao migrar ativos para o [!DNL Adobe Experience Manager], há várias etapas a se
 
 ## Pré-requisitos {#prerequisites}
 
-Antes de realmente executar qualquer uma das etapas desta metodologia, revise e implemente as orientações em [Dicas de ajuste de desempenho do Assets](performance-tuning-guidelines.md). Muitas das etapas, como configurar o máximo de trabalhos simultâneos, melhoram muito a estabilidade e o desempenho do servidor sob carga. Outras etapas, como configurar um Armazenamento de dados de arquivo, são muito mais difíceis de executar depois que o sistema é carregado com ativos.
+Antes de realmente executar qualquer uma das etapas desta metodologia, revise e implemente as orientações em [Dicas de ajuste de desempenho do Assets](performance-tuning-guidelines.md). Muitas das etapas, como a configuração do máximo de tarefas simultâneas, melhoram muito a estabilidade e o desempenho do servidor sob carga. Outras etapas, como configurar um Armazenamento de dados de arquivo, são muito mais difíceis de executar depois que o sistema é carregado com ativos.
 
 >[!NOTE]
 >
@@ -55,13 +55,13 @@ Talvez você já tenha uma taxonomia de tags em vigor que está aplicando às su
 
 ### Assimilar ativos {#ingesting-assets}
 
-O desempenho e a estabilidade são preocupações importantes ao assimilar ativos no sistema. Como você está carregando uma grande quantidade de dados no sistema, é necessário ter certeza de que o sistema funciona da melhor maneira possível, para minimizar o tempo necessário e evitar sobrecarga do sistema, o que pode causar uma falha, especialmente em sistemas que já estão em produção.
+O desempenho e a estabilidade são preocupações importantes ao assimilar ativos no sistema. Como você está carregando uma grande quantidade de dados no sistema, você quer ter certeza de que o sistema funciona e que pode minimizar o tempo necessário e evitar sobrecarga do sistema, o que pode levar a uma falha do sistema, especialmente em sistemas que já estão em produção.
 
 Há duas abordagens para carregar os ativos no sistema: uma abordagem baseada em push usando HTTP ou uma abordagem baseada em pull usando APIs JCR.
 
 #### Enviar por HTTP {#pushing-through-http}
 
-A equipe do Managed Services do Adobe usa uma ferramenta chamada Glutton para carregar dados nos ambientes do cliente. Glutton é uma pequena aplicação Java que carrega todos os ativos de um diretório para outro diretório em um [!DNL Experience Manager] implantação. Em vez de Glutton, você também pode usar ferramentas como scripts Perl para publicar os ativos no repositório.
+A equipe do Adobe Managed Services usa uma ferramenta chamada Glutton para carregar dados em ambientes do cliente. Glutton é uma pequena aplicação Java que carrega todos os ativos de um diretório para outro diretório em um [!DNL Experience Manager] implantação. Em vez de Glutton, você também pode usar ferramentas como scripts Perl para publicar os ativos no repositório.
 
 Há duas desvantagens principais em usar a abordagem de envio por https:
 
@@ -82,7 +82,7 @@ Após carregar os ativos no sistema, é necessário processá-los por meio da va
 
 Após configurar o workflow de acordo com suas necessidades, você tem duas opções para executá-lo:
 
-1. A abordagem mais simples [ACS Commons&#39;s Bulk Workflow Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Essa ferramenta permite executar um query e processar os resultados do query por meio de um workflow. Também há opções para definir tamanhos de lote.
+1. A abordagem mais simples [Gerenciador de fluxos de trabalho em massa do ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Essa ferramenta permite executar um query e processar os resultados do query por meio de um workflow. Também há opções para definir tamanhos de lote.
 1. Use o [ACS Commons Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) em conjunto com [Fluxos de trabalho sintéticos](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html). Embora essa abordagem seja muito mais abrangente, ela permite remover a sobrecarga do [!DNL Experience Manager] ao mesmo tempo em que otimiza o uso dos recursos do servidor. Além disso, o Fast Action Manager aumenta ainda mais o desempenho, monitorando dinamicamente os recursos do servidor e diminuindo a carga colocada no sistema. Os exemplos de scripts foram fornecidos na página de recursos ACS Commons.
 
 ### Ativar ativos {#activating-assets}

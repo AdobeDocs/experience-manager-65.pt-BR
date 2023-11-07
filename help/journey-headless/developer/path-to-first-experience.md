@@ -2,10 +2,10 @@
 title: Caminho para sua primeira experiência usando o AEM Headless
 description: Nesta parte da jornada de desenvolvedor do AEM Headless, você entenderá as etapas para implementar sua primeira experiência headless no AEM, incluindo considerações de planejamento e práticas recomendadas para facilitar ao máximo o seu percurso.
 exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1992'
-ht-degree: 98%
+source-wordcount: '1988'
+ht-degree: 93%
 
 ---
 
@@ -52,7 +52,7 @@ Você deseja oferecer uma experiência consistente e gerenciar campanhas persona
 
 Em vez disso, você deve considerar como o conteúdo em diferentes superfícies está relacionado com base no princípio de organização, como hierarquias de marca e produto, categorias de mercadorias ou superfícies, ou etapas na jornada do cliente. Por exemplo, se você tiver um conjunto de superfícies compatíveis com uma marca específica de carros que você fabrica, talvez queira começar com um modelo de conteúdo para informações gerais que sejam relevantes para o carro inteiro, e então utilizar alguns elementos mais específicos, como o conteúdo necessário para quando o carro estiver dando partida ou quando houver problemas de manutenção. Tal modelo imporá a herança do conteúdo geral da marca de carro e permitirá mudanças com base no contexto específico necessário. Isso também ajuda na gestão de futuras atualizações desse conteúdo, pois é possível impor o controle com base em funções, como o profissional de marketing geral ou o gerente de produto da marca de carro, em comparação com um autor responsável pela experiência de “dar a partida no carro”.
 
-Depois de ter o modelo de conteúdo e uma visão nítida dos vários clientes aos quais o conteúdo precisa ser exibido, é necessário garantir que as APIs GraphQL que permitem o acesso a vários modelos de conteúdo sejam publicadas para todos os clientes que precisam desse conteúdo. Há diferentes opções para se acessar um determinado conteúdo. Você pode solicitar um conteúdo específico que seja estático, o que permite o armazenamento em cache do conteúdo e melhor desempenho. Você também pode solicitar um conteúdo gerado dinamicamente, o que exigirá mais processamento. Certifique-se de que os clientes estejam utilizando as APIs que sejam mais eficientes para suas necessidades empresariais.
+Depois de ter o modelo de conteúdo e uma visão nítida dos vários clientes aos quais o conteúdo precisa ser exibido, é necessário garantir que as APIs GraphQL que permitem o acesso a vários modelos de conteúdo sejam publicadas para todos os clientes que precisam desse conteúdo. Há diferentes opções para se acessar um determinado conteúdo. Você pode solicitar um conteúdo específico que seja estático, o que permite o armazenamento em cache do conteúdo e melhor desempenho. Você também pode solicitar um conteúdo gerado dinamicamente, o que exigirá mais processamento. Certifique-se de que os clientes estejam usando as APIs mais eficientes para suas necessidades comerciais.
 
 ## Entender os ambientes {#understanding-environments}
 
@@ -68,15 +68,15 @@ Durante o estágio de desenvolvimento, é recomendável trabalhar com um ambient
 
 ### Cooperação de desenvolvedores e autores de conteúdo {#cooperation}
 
-Os desenvolvedores precisam de um ambiente de desenvolvimento do AEM configurado com os modelos de conteúdo preenchidos. O desenvolvedor cria o cliente que consumirá conteúdo do AEM Headless enquanto os autores de conteúdo ainda estão criando o conteúdo. É por isso que as definições de API são realmente importantes. Ao utilizar o SDK do AEM, o desenvolvedor pode criar um gancho de teste para que os testes de unidade e do cliente possam ser gerados, permitindo que o cliente renderize corretamente o conteúdo.
+Os desenvolvedores precisam de um ambiente de desenvolvimento do AEM configurado com os modelos de conteúdo preenchidos. O desenvolvedor cria o cliente que consumirá conteúdo do AEM Headless enquanto os autores de conteúdo ainda estão criando o conteúdo. É por isso que as definições de API são realmente importantes. Ao usar o SDK do AEM, o desenvolvedor pode criar um gancho de teste para que testes de cliente e unidade possam ser criados para garantir que o cliente possa renderizar o conteúdo corretamente.
 
-Os autores de conteúdo criam conteúdo com base nos modelos de conteúdo que foram definidos no ambiente de preparo. Usando a ferramenta de criação de fragmento de conteúdo, o autor criaria um novo fragmento de conteúdo ou editaria um já existente. Antes de publicá-lo, o autor pode visualizar como será a aparência no cliente, trabalhando com o desenvolvedor para mover o modelo de conteúdo para o desenvolvimento ou configurar um ambiente de desenvolvedor apenas para que os autores visualizem a aparência dele no cliente.
+Os autores de conteúdo criam conteúdo com base nos modelos de conteúdo que foram definidos no ambiente de preparo. Usando a ferramenta de criação de fragmento de conteúdo, o autor criaria um fragmento de conteúdo ou editaria um fragmento de conteúdo existente. Antes de publicá-lo, o autor pode visualizar como será a aparência no cliente, trabalhando com o desenvolvedor para mover o modelo de conteúdo para o desenvolvimento ou configurar um ambiente de desenvolvedor apenas para que os autores visualizem a aparência dele no cliente.
 
 ## Configurar {#setup}
 
 Antes de começar a usar o headless no AEM, você precisa garantir que todos os recursos necessários estejam habilitados. Esta seção descreve o que é necessário. As etapas serão mais detalhadas posteriormente na [Jornada do desenvolvedor do AEM Headless.](#overview.md)
 
-Também é possível consultar os [recursos adicionais](#additional-resources) para obter mais informações sobre tópicos individuais.
+Opcionalmente, também é possível visualizar as [recursos adicionais](#additional-resources) para obter mais informações sobre tópicos individuais.
 
 ### Configuração {#configuration}
 
@@ -94,7 +94,7 @@ Esta é uma visão geral do que é necessário para implementar seu primeiro apl
 
 ## Práticas recomendadas     {#best-practices}
 
-Um projeto headless não é bem-sucedido apenas devido à tecnologia implementada, mas também por conta do bom planejamento e governança do projeto. Veja a seguir uma série de práticas recomendadas que autores de conteúdo e desenvolvedores devem manter em mente ao planejar seu projeto.
+Um projeto headless não é bem-sucedido apenas devido à tecnologia implementada, mas também por conta do bom planejamento e governança do projeto. A seguir estão várias práticas recomendadas para que os autores e desenvolvedores de conteúdo se lembrem ao planejar o projeto.
 
 ### Organizar seu conteúdo {#organizing-content}
 

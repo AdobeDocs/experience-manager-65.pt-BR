@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 feature: Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1645'
+source-wordcount: '1639'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ A estrutura de marcação também fornece a capacidade de restringir autores e v
 * Ao conter nós filhos, a tag do é chamada de [tag container.](#container-tags)
 * A tag é armazenada no repositório abaixo de um caminho base chamado de [nó raiz de taxonomia.](#taxonomy-root-node)
 
-Como as tags são simplesmente nós JCR, os nomes dos nós devem, é claro, seguir as [Convenção de nomenclatura JCR.](naming-conventions.md)
+Como as tags são simplesmente nós JCR, os nomes dos nós devem obedecer à [Convenção de nomenclatura JCR.](naming-conventions.md)
 
 ### TagID {#tagid}
 
@@ -223,4 +223,4 @@ Veja a seguir uma descrição dos efeitos no repositório ao mover ou mesclar ta
 
 A partir do Adobe Experience Manager 6.4, as tags são armazenadas no `/content/cq:tags` Considerando que as versões anteriores armazenavam tags em `/etc/tags`.
 
-Sempre que atualizar um sistema AEM de uma versão anterior à 6.4, as tags devem ser migradas para `/content/cq:tags`. Consulte o documento [Reestruturação do repositório comum no AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags) para obter mais informações.
+Sempre que atualizar um sistema AEM de uma versão anterior à 6.4, as tags devem ser migradas para `/content/cq:tags`. Consulte [Reestruturação do repositório comum no AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags) para obter mais informações.

@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
 exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
-source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2989'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -62,10 +62,10 @@ Para iniciar uma solicitação de sessão de fotos, toque ou clique em um projet
 
 A **Projeto de sessão de fotos do produto** O inclui os seguintes workflows prontos para uso:
 
-* **Fluxo de trabalho da sessão fotográfica do produto (integração com comércio)**: esse fluxo de trabalho aproveita a integração comercial com o sistema de gerenciamento de informações de produto (PIM) para gerar automaticamente uma lista de captura para os produtos selecionados (hierarquia). Você pode visualizar os dados do produto como parte dos metadados do ativo depois que o fluxo de trabalho for concluído.
+* **Fluxo de trabalho da sessão fotográfica do produto (integração com comércio)**: esse fluxo de trabalho usa a integração comercial com o sistema de gerenciamento de informações do produto (PIM) para gerar automaticamente uma lista de captura para os produtos selecionados (hierarquia). Você pode visualizar os dados do produto como parte dos metadados do ativo depois que o fluxo de trabalho for concluído.
 * **Fluxo de trabalho da sessão fotográfica do produto**: esse workflow permite fornecer uma lista de captura em vez de depender da integração comercial. Ele mapeia as imagens carregadas para um arquivo CSV na pasta de ativos do projeto.
 
-Use o **Sessão fotográfica do produto (integração com o Commerce)** fluxo de trabalho para mapear ativos de imagem com os produtos no AEM. Esse fluxo de trabalho aproveita a integração comercial para vincular as imagens aprovadas aos dados existentes do produto no local `/etc/commerce`.
+Use o **Sessão fotográfica do produto (integração com o Commerce)** fluxo de trabalho para mapear ativos de imagem com os produtos no AEM. Esse fluxo de trabalho usa a integração comercial para vincular as imagens aprovadas aos dados existentes do produto no local `/etc/commerce`.
 
 A variável **Sessão fotográfica do produto (integração com o Commerce)** O fluxo de trabalho do inclui as seguintes tarefas:
 
@@ -93,7 +93,7 @@ Ambos os fluxos de trabalho incluem etapas para vincular produtos a seus ativos 
 * Iniciar um fluxo de trabalho de projeto: explica como iniciar uma sessão fotográfica de produto
 * Detalhes das tarefas do fluxo de trabalho: fornece detalhes das tarefas disponíveis no fluxo de trabalho
 
-## Acompanhamento do progresso do projeto {#tracking-project-progress}
+## Monitoramento do progresso do projeto {#tracking-project-progress}
 
 Você pode acompanhar o progresso de um projeto monitorando as tarefas ativas/concluídas em um projeto.
 

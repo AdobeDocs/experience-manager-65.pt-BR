@@ -7,9 +7,9 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1351'
 ht-degree: 3%
 
 ---
@@ -43,7 +43,7 @@ Para personalizar o Gerenciamento de correspondência para permitir que seus usu
 
 1. Ir para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
 
-1. Na pasta aplicativos, crie uma pasta chamada itens com caminho/estrutura semelhante à pasta itens localizada na pasta seleção usando as seguintes etapas:
+1. Na pasta aplicativos, crie uma pasta chamada itens com caminho/estrutura semelhante à pasta itens na pasta seleção usando as seguintes etapas:
 
    1. Clique com o botão direito do mouse no **itens** no seguinte caminho e selecione **Sobrepor nó**:
 
@@ -136,7 +136,7 @@ Para personalizar o Gerenciamento de correspondência para permitir que seus usu
         </tbody>
        </table>
 
-1. Na pasta aplicativos, crie uma pasta chamada js com caminho/estrutura semelhante à pasta itens localizada na pasta admin usando as seguintes etapas:
+1. Na pasta aplicativos, crie uma pasta chamada js com caminho/estrutura semelhante à pasta itens na pasta do administrador usando as seguintes etapas:
 
    1. Clique com o botão direito do mouse no **js** no seguinte caminho e selecione **Sobrepor nó**:
 
@@ -226,7 +226,7 @@ Para personalizar o Gerenciamento de correspondência para permitir que seus usu
 
       O código acima é para tratamento de ação específico de letras do comando criado neste procedimento. Para o manuseio de ações de outros ativos, modifique o código JavaScript.
 
-1. Na pasta aplicativos, crie uma pasta chamada itens com caminho/estrutura semelhante à pasta itens localizada na pasta actionhandlers seguindo as etapas a seguir:
+1. Na pasta aplicativos, crie uma pasta chamada itens com caminho/estrutura semelhante à pasta itens na pasta actionhandlers seguindo as seguintes etapas:
 
    1. Clique com o botão direito do mouse no **itens** no seguinte caminho e selecione **Sobrepor nó**:
 

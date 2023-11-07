@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 2ad227de-68a8-446f-8c4f-a33a6f95bec8
 role: Developer
 exl-id: b3c19c82-e26f-4dc8-b846-6aec705cee08
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2163'
+source-wordcount: '2162'
 ht-degree: 0%
 
 ---
@@ -238,7 +238,7 @@ Crie dinamicamente um documento DDX e desmonte um documento PDF usando a API de 
 
    * Criar um `System.IO.MemoryStream` usando seu construtor.
    * Preencha o `MemoryStream` com o documento DDX usando o `XmlElement` objeto que representa o documento DDX. Chame o `XmlElement` do objeto `Save` e transmita o `MemoryStream` objeto.
-   * Crie uma matriz de bytes e preencha-a com os dados localizados na `MemoryStream` objeto. O código a seguir mostra essa lógica de aplicação:
+   * Crie uma matriz de bytes e preencha-a com dados na variável `MemoryStream` objeto. O código a seguir mostra essa lógica de aplicação:
 
      ` int bufLen = Convert.ToInt32(stream.Length);  byte[] byteArray = new byte[bufLen];  stream.Position = 0;  int count = stream.Read(byteArray, 0, bufLen);`
 

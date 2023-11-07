@@ -8,10 +8,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
 exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 53%
+source-wordcount: '382'
+ht-degree: 48%
 
 ---
 
@@ -81,7 +81,7 @@ Além disso, os atalhos de teclado são os mesmos para todos os locais e layouts
 
 ## Desativar atalhos de teclado {#deactivating-keyboard-shortcuts}
 
-O AEM fornece atalhos de teclado para alguns dos recursos de uso geral (editar, propriedades, copiar/colar, mostrar vários menus do painel lateral etc.).
+O AEM fornece atalhos de teclado para alguns dos recursos usados com frequência (editar, propriedades, copiar/colar, mostrar vários menus do painel lateral e assim por diante).
 
 Para usuários que não usam atalhos de teclado ou que têm determinados requisitos de acessibilidade, todos os atalhos de teclado podem ser desativados.
 

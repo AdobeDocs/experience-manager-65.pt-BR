@@ -10,10 +10,10 @@ topic-tags: forms-manager
 discoiquuid: 2a8f4380-8d0f-4354-b2da-4e0c02a545e3
 role: Admin
 exl-id: f8af1ac3-6a95-4f91-8979-6b41a7e02ca4
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 0%
+source-wordcount: '392'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ Você pode criar uma pasta no AEM Forms de uma das seguintes maneiras:
 
 * Faça upload de um arquivo ZIP contendo ativos na estrutura de pastas desejada (Consulte [Obtenção de documentos XDP e PDF no AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md))
 
-* Criar uma nova pasta vazia
+* Criar uma pasta vazia
 
 1. Faça logon na interface do usuário do AEM Forms em `https://<server>:<port>/aem/forms.html`.
 1. Navegue até o local em que deseja criar uma pasta.

@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1832'
 ht-degree: 18%
@@ -79,7 +79,7 @@ Para inserir um novo componente:
 
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
-1. Tanto no sidekick como no **Inserir novo componente** barra de ferramentas, você verá uma lista dos componentes disponíveis (tipos de parágrafo). Elas podem ser divididas em várias seções (por exemplo, Geral, Colunas etc.), que podem ser expandidas conforme necessário.
+1. Tanto no sidekick como no **Inserir novo componente** barra de ferramentas, você verá uma lista dos componentes disponíveis (tipos de parágrafo). Eles podem ser divididos em várias seções (por exemplo, Geral, Colunas e assim por diante), que podem ser expandidas conforme necessário.
 
    Dependendo do ambiente de produção, essas opções podem ser diferentes. Para obter detalhes completos sobre componentes, consulte [Componentes padrão](/help/sites-classic-ui-authoring/classic-page-author-default-components.md).
 
@@ -87,7 +87,7 @@ Para inserir um novo componente:
 
 ### Inserir um componente usando o Localizador de conteúdo {#inserting-a-component-using-the-content-finder}
 
-Você também pode adicionar um novo componente à página arrastando um ativo da página [Localizador de conteúdo](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Isso criará automaticamente um novo componente do tipo apropriado que contém o ativo.
+Você também pode adicionar um novo componente à página arrastando um ativo da página [Localizador de conteúdo](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Isso cria automaticamente um componente do tipo apropriado que contém o ativo.
 
 Isso é válido para os seguintes tipos de ativos (alguns dependerão do sistema de página/parágrafo):
 

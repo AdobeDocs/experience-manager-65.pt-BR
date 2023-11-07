@@ -11,7 +11,7 @@ feature: Dynamic Media Classic
 role: User, Admin
 mini-toc-levels: 3
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: d947bd98b3a0f6fd79cde5b5b2fca23487077da3
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2845'
 ht-degree: 0%
@@ -53,6 +53,7 @@ Você pode publicar ativos digitais no Dynamic Media Classic da seguinte maneira
 >[!NOTE]
 >
 >O Experience Manager publica no Dynamic Media Classic de forma assíncrona. Depois de selecionar **[!UICONTROL Publish]**, leva vários segundos para seu ativo ser publicado no Dynamic Media Classic.
+>
 
 ## Componentes do Dynamic Media Classic {#scene-components}
 
@@ -111,7 +112,7 @@ Consulte também [Design responsivo para páginas da Web](/help/sites-developing
 
 **Para adicionar uma experiência de visualização interativa a um site responsivo:**
 
-1. Efetue logon no Experience Manager e verifique se você [Adobe Dynamic Media Classic Cloud Services configurado](/help/sites-administering/scene7.md#configuring-scene-integration) e que os componentes do Dynamic Media Classic estão disponíveis.
+1. Efetue logon no Experience Manager e verifique se você [Adobe Dynamic Media Classic Cloud Service configurado](/help/sites-administering/scene7.md#configuring-scene-integration) e que os componentes do Dynamic Media Classic estão disponíveis.
 
    >[!NOTE]
    >
@@ -175,7 +176,7 @@ O DYNAMIC MEDIA CLASSIC **[!UICONTROL Imagem]** O componente permite adicionar a
 
 **[!UICONTROL Predefinição de imagem]** - Selecione uma predefinição de imagem existente no menu suspenso. Se a predefinição de imagem que você está procurando não estiver visível, será necessário torná-la visível. Consulte [Gerenciar predefinições de imagem](/help/assets/managing-image-presets.md). Não é possível selecionar uma predefinição do visualizador se você estiver usando uma predefinição de imagem e vice-versa.
 
-**[!UICONTROL Formato de saída]** - Selecione o formato de saída da imagem, por exemplo jpeg. Dependendo do formato de saída selecionado, há opções de configuração adicionais. Consulte [Práticas recomendadas de predefinição de imagem](/help/assets/managing-image-presets.md#image-preset-options).
+**[!UICONTROL Formato de saída]** - Selecione o formato de saída da imagem, por exemplo, jpeg. Dependendo do formato de saída selecionado, há opções de configuração adicionais. Consulte [Práticas recomendadas de predefinição de imagem](/help/assets/managing-image-presets.md#image-preset-options).
 
 **[!UICONTROL Nitidez]** - Selecione como deseja tornar a imagem mais nítida. A nitidez é explicada em detalhes em [Práticas recomendadas de predefinição de imagem](/help/assets/managing-image-presets.md#image-preset-options) e [Práticas recomendadas de nitidez](/help/assets/assets/sharpening_images.pdf).
 
@@ -267,11 +268,10 @@ Se você tiver várias configurações, o Experience Manager, por padrão, exibi
 >* Quando [A Visualização Segura está ativada](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), os ativos publicados e não publicados no Dynamic Media Classic aparecem no navegador de conteúdo do Dynamic Media Classic.
 >* Se você não vir **[!UICONTROL Dynamic Media Classic]** ou o **[!UICONTROL S7]** ícone como uma opção no navegador de conteúdo, você deve [configurar o Dynamic Media Classic para funcionar com o Experience Manager](/help/sites-administering/scene7.md).
 >* Para vídeo, o navegador de conteúdo do Dynamic Media Classic é compatível com:
-   >
-   >   * Conjuntos de vídeos adaptados: contêiner de todas as representações de vídeo necessárias para a reprodução contínua em várias telas
-   >   * Vídeo MP4 único
-   >   * Vídeo F4V único
-
+>
+>   * Conjuntos de vídeos adaptados: contêiner de todas as representações de vídeo necessárias para a reprodução contínua em várias telas
+>   * Vídeo MP4 único
+>   * Vídeo F4V único
 
 ### Procurar conteúdo na interface otimizada para toque {#browsing-content-in-the-touch-optimized-ui}
 
@@ -286,7 +286,6 @@ Procurar ativos do Dynamic Media Classic selecionando **[!UICONTROL Dynamic Medi
 >* O navegador de conteúdo do Dynamic Media Classic carrega cerca de 100 ativos e os classifica por nome.
 >* Se você tiver um servidor de visualização seguro definido, o navegador usará esse servidor de visualização para renderizar miniaturas e ativos.
 >
-
 
 ![chlimage_1-240](assets/chlimage_1-240.png)
 
@@ -321,7 +320,7 @@ Por padrão, o Experience Manager pesquisa a pasta selecionada e todas as subpas
 
 ![chlimage_1-244](assets/chlimage_1-244.png)
 
-**[!UICONTROL Configuração]** - Se você tiver mais de uma configuração Dynamic Media Classic definida em [!UICONTROL Cloud Services], você pode selecioná-lo aqui. Como resultado, a pasta muda com base na configuração escolhida.
+**[!UICONTROL Configuração]** - Se você tiver mais de uma configuração Dynamic Media Classic definida em [!UICONTROL Cloud Service], você pode selecioná-lo aqui. Como resultado, a pasta muda com base na configuração escolhida.
 
 ![chlimage_1-245](assets/chlimage_1-245.png)
 
@@ -336,7 +335,6 @@ Por padrão, o Experience Manager pesquisa a pasta selecionada e todas as subpas
 >* Ao pesquisar vídeos, você pesquisa uma única representação. Os resultados retornam a representação original (somente &amp;ast;.mp4) e a representação codificada.
 >* Ao pesquisar um conjunto de vídeos adaptáveis, você pesquisa a pasta e todas as subpastas, mas somente se tiver adicionado uma palavra-chave à pesquisa. Se você não tiver adicionado uma palavra-chave, o Experience Manager não pesquisará nas subpastas.
 >
-
 
 **[!UICONTROL Publicar status]** - Você pode filtrar por ativos com base no status da publicação: **[!UICONTROL Não publicado]** ou **[!UICONTROL Publicado]**. Se você não selecionar nenhuma **[!UICONTROL Publicar status]**, o Experience Manager pesquisa por padrão todos os status de publicação.
 

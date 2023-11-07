@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 06ad343a-f74d-41f5-b3c8-b85bb723ceeb
 role: Developer
 exl-id: 744df8b2-0c61-410f-89e9-20b8adddbf45
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1323'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Antes de executar programaticamente uma operação de serviço Distiller, você 
 
 **Recuperar o arquivo para converter**
 
-Você deve recuperar o arquivo que deseja converter. Por exemplo, para converter um arquivo PS em um documento PDF, você deve recuperar o arquivo PS.
+Recupere o arquivo que deseja converter. Por exemplo, para converter um arquivo PS em um documento PDF, você deve recuperar o arquivo PS.
 
 **Chame a operação de criação de PDF**
 
@@ -113,7 +113,7 @@ Converta um arquivo PostScript em um documento PDF usando a API de serviço do D
    * Uma opção `com.adobe.idp.Document` objeto que contém configurações a serem aplicadas durante a geração do documento PDF
    * Uma opção `com.adobe.idp.Document` objeto que contém informações de metadados a serem aplicadas ao documento PDF
 
-   A variável `createPDF` o método retorna um `CreatePDFResult` objeto que contém o novo documento PDF e um arquivo de log que pode ser gerado. O arquivo de log normalmente contém mensagens de erro ou aviso geradas pela solicitação de conversão.
+   A variável `createPDF` o método retorna um `CreatePDFResult` objeto que contém o novo documento PDF e um arquivo de log que pode ser gerado. O arquivo de log geralmente contém mensagens de erro ou aviso que são geradas pela solicitação de conversão.
 
 1. Salve o documento PDF.
 
@@ -126,7 +126,6 @@ Converta um arquivo PostScript em um documento PDF usando a API de serviço do D
 
    * Chame o `CreatePDFResult` do objeto `getLogDocument` método. Isso retorna um `com.adobe.idp.Document` objeto.
    * Chame o `com.adobe.idp.Document` do objeto `copyToFile` método para extrair o documento de log.
-
 
 **Consulte também**
 

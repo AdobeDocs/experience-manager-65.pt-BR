@@ -10,9 +10,9 @@ discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1879'
 ht-degree: 6%
 
 ---
@@ -231,7 +231,7 @@ Para usar o Adobe Analytics com o AEM Forms, consulte [Configuração de anális
 
 #### Integrar o Adobe Target {#integrate-adobe-target}
 
-Seus clientes provavelmente abandonarão um formulário se a experiência que ele oferece não for cativante. Embora seja frustrante para os clientes, também pode aumentar o volume de suporte e o custo para a sua organização. É essencial, bem como desafiador identificar e fornecer a experiência do cliente certa que aumenta a taxa de conversão. A AEM Forms é a chave para esse problema.
+Seus clientes provavelmente abandonarão um formulário se a experiência que ele oferece não for cativante. Embora seja frustrante para os clientes, também pode aumentar o volume de suporte e o custo para a sua organização. É crítico e desafiador identificar e fornecer a experiência certa ao cliente que aumente a taxa de conversão. A AEM Forms é a chave para esse problema.
 
 O AEM forms é integrado ao Adobe Target, uma solução da Adobe Marketing Cloud, para fornecer experiências personalizadas e envolventes ao cliente em vários canais digitais. Para usar o Adobe Target para testar formulários adaptáveis, [Integrar o Adobe Target com o AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
 

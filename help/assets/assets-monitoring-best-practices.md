@@ -5,7 +5,7 @@ contentOwner: AG
 role: Admin, Architect
 feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
-source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1670'
 ht-degree: 1%
@@ -59,7 +59,7 @@ Monitorização a longo prazo de um [!DNL Experience Manager] a implantação en
 
 ### Agregação e relatórios de logs {#log-aggregation-and-reporting}
 
-Há várias ferramentas disponíveis para agregar logs, por exemplo Splunk(TM) e Elastic Search, Logstash e Kabana (ELK). Para avaliar o tempo de atividade do seu [!DNL Experience Manager] implantação, é importante que você entenda os eventos de registro específicos do seu sistema e crie alertas com base neles. Um bom conhecimento de suas práticas de desenvolvimento e operações pode ajudá-lo a entender melhor como ajustar o processo de agregação de logs para gerar alertas críticos.
+Há várias ferramentas disponíveis para agregar logs, por exemplo, Splunk(TM) e Elastic Search, Logstash e Kabana (ELK). Para avaliar o tempo de atividade do seu [!DNL Experience Manager] implantação, é importante que você entenda os eventos de registro específicos do seu sistema e crie alertas com base neles. Um bom conhecimento de suas práticas de desenvolvimento e operações pode ajudá-lo a entender melhor como ajustar o processo de agregação de logs para gerar alertas críticos.
 
 ### Monitoramento de ambiente {#environment-monitoring}
 
@@ -72,7 +72,7 @@ O monitoramento do ambiente inclui o monitoramento do seguinte:
 * MBeans JMX
 * Sites externos
 
-São necessárias ferramentas externas, como NewRelic(TM) e AppDynamics(TM), para monitorar cada item. Com essas ferramentas, você pode definir alertas específicos ao seu sistema, por exemplo, alta utilização do sistema, backup do fluxo de trabalho, falhas na verificação de integridade ou acesso não autenticado ao seu site. O Adobe não recomenda nenhuma ferramenta em particular em relação a outras. Encontre a ferramenta que funciona para você e aproveite-a para monitorar os itens discutidos.
+São necessárias ferramentas externas, como NewRelic(TM) e AppDynamics(TM), para monitorar cada item. Com essas ferramentas, você pode definir alertas específicos ao seu sistema, por exemplo, alta utilização do sistema, backup do fluxo de trabalho, falhas na verificação de integridade ou acesso não autenticado ao seu site. O Adobe não recomenda nenhuma ferramenta em particular em relação a outras. Encontre a ferramenta que funciona para você e use-a para monitorar os itens discutidos.
 
 #### Monitoramento interno de aplicativos {#internal-application-monitoring}
 

@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6836'
-ht-degree: 1%
+source-wordcount: '6818'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ Desde o AEM 6.3, há uma nova implementação de Grupo de usuários fechado dest
 
 >[!NOTE]
 >
->Por uma questão de simplicidade, a abreviação do CUG será usada em toda esta documentação.
+>Por uma questão de simplicidade, a abreviação CUG é usada em toda esta documentação.
 
 O objetivo da nova implementação é cobrir a funcionalidade existente onde for necessário, ao mesmo tempo em que aborda os problemas e as limitações de design das versões mais antigas. O resultado é um novo design CUG com as seguintes características:
 
@@ -207,7 +207,7 @@ O novo tipo de políticas de controle de acesso para restringir o acesso de leit
 
 #### Definir uma nova política CUG {#set-a-new-cug-policy}
 
-Código para aplicar uma nova política CUG em um nó que não tinha um CUG definido antes. Observe que `getApplicablePolicies` retornará somente novas políticas que não tenham sido definidas anteriormente. No final, a política precisa ser recuperada e as alterações precisam ser persistentes.
+Código para aplicar uma nova política CUG em um nó que não tinha um CUG definido antes. Observe que `getApplicablePolicies` retorna somente as novas políticas que não tenham sido definidas anteriormente. No final, a política precisa ser recuperada e as alterações precisam ser persistentes.
 
 ```java
 String path = [...] // needs to be a supported, absolute path
@@ -243,7 +243,7 @@ session.save();
 
 #### Editar uma política CUG existente {#edit-an-existing-cug-policy}
 
-As etapas a seguir são necessárias para editar uma política CUG existente. Observe que a política modificada precisa ser gravada e as alterações precisam ser persistentes usando `javax.jcr.Session.save()`.
+As etapas a seguir são necessárias para editar uma política CUG existente. A política modificada precisa ser gravada e as alterações precisam ser persistentes usando `javax.jcr.Session.save()`.
 
 ```java
 String path = [...] // needs to be a supported, absolute path
@@ -281,7 +281,7 @@ O gerenciamento de controle de acesso JCR define um método de melhor esforço p
 
 >[!NOTE]
 >
->Observe a diferença entre `getEffectivePolicies` e o exemplo de código subsequente que percorre a hierarquia para descobrir se um determinado caminho já faz parte de um CUG existente.
+>A diferença entre `getEffectivePolicies` e o exemplo de código subsequente que percorre a hierarquia para descobrir se um determinado caminho já faz parte de um CUG existente.
 
 ```java
 String path = [...] // needs to be a supported, absolute path
@@ -338,7 +338,7 @@ A criação, modificação ou remoção de um novo requisito de autenticação �
 
 #### Adicionando um Novo Requisito de Autenticação {#adding-a-new-auth-requirement}
 
-As etapas para criar um novo requisito de autenticação são detalhadas abaixo. Observe que o requisito só será registrado com o Apache Sling Authenticator se a variável `RequirementHandler` foi configurado para a árvore que contém o nó de destino.
+As etapas para criar um requisito de autenticação são detalhadas abaixo. O requisito só será registrado com o Apache Sling Authenticator se o `RequirementHandler` foi configurado para a árvore que contém o nó de destino.
 
 ```java
 Node targetNode = [...]
@@ -349,7 +349,7 @@ session.save();
 
 #### Adicionar um novo requisito de autenticação com caminho de logon {#add-a-new-auth-requirement-with-login-path}
 
-Etapas para criar um novo requisito de autenticação, incluindo um caminho de logon. Observe que o requisito e a exclusão do caminho de logon só serão registrados com o Apache Sling Authenticator se a variável `RequirementHandler` foi configurado para a árvore que contém o nó de destino.
+Etapas para criar um requisito de autenticação, incluindo um caminho de logon. Observe que o requisito e a exclusão do caminho de logon só serão registrados com o Apache Sling Authenticator se a variável `RequirementHandler` foi configurado para a árvore que contém o nó de destino.
 
 ```java
 Node targetNode = [...]
@@ -582,7 +582,7 @@ As opções de configuração disponíveis associadas ao módulo de autorizaçã
 
 #### Excluindo entidades da avaliação CUG {#excluding-principals-from-cug-evaluation}
 
-A isenção de princípios individuais da avaliação CUG foi adotada a partir da implementação anterior. A nova autorização CUG cobre isso com uma interface dedicada chamada CugExclude. O Apache Jackrabbit Oak 1.4 vem com uma implementação padrão que exclui um conjunto fixo de principais, bem como uma implementação estendida que permite configurar nomes principais individuais. O último é configurado em instâncias de publicação do AEM.
+A isenção de princípios individuais da avaliação CUG foi adotada a partir da implementação anterior. A nova autorização CUG cobre isso com uma interface dedicada chamada CugExclude. O Apache Jackrabbit Oak 1.4 vem com uma implementação padrão que exclui um conjunto fixo de principais e uma implementação estendida que permite configurar nomes principais individuais. O último é configurado em instâncias de publicação do AEM.
 
 O padrão desde o AEM 6.3 impede que os seguintes principais sejam afetados pelas políticas CUG:
 
@@ -772,7 +772,7 @@ Portanto, os grupos CUG não podem ser implantados em Live Copies de blueprints.
 
 ## Alterações com a nova implementação de CUG {#changes-with-the-new-cug-implementation}
 
-O objetivo desta seção é fornecer uma visão geral das alterações feitas no recurso CUG, bem como uma comparação entre a implementação antiga e a nova implementação. Ele lista as alterações que afetam a forma como o suporte a CUG é configurado e descreve como e por quem os CUGs são gerenciados no conteúdo do repositório.
+O objetivo desta seção é fornecer uma visão geral das alterações feitas no recurso CUG e uma comparação entre a implementação antiga e a nova implementação. Ele lista as alterações que afetam a forma como o suporte a CUG é configurado e descreve como e por quem os CUGs são gerenciados no conteúdo do repositório.
 
 ### Diferenças na instalação e configuração do CUG {#differences-in-cug-setup-and-configuration}
 

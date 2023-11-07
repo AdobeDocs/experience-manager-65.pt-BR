@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: eb8bbb85-ca2f-4877-8ee0-bb1ee8b7d8de
 exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2285'
+source-wordcount: '2283'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Para criar um backup:
 1. Faça logon no AEM como administrador.
 
 1. Ir para **Ferramentas - Operações - Backup.**
-1. Clique em **Criar**. O console de backup será aberto.
+1. Clique em **Criar**. O console de backup se abre.
 
    ![chlimage_1-1](assets/chlimage_1-1a.png)
 
@@ -216,7 +216,7 @@ O backup on-line utiliza o seguinte algoritmo:
 
 1. Ao criar um arquivo zip, a primeira etapa é criar ou localizar o diretório de destino.
 
-   * Se estiver fazendo backup em um arquivo zip, um diretório temporário será criado. O nome do diretório começa com `backup.` e termina com `.temp`; por exemplo `backup.f4d3.temp`.
+   * Se estiver fazendo backup em um arquivo zip, um diretório temporário será criado. O nome do diretório começa com `backup.` e termina com `.temp`; por exemplo, `backup.f4d3.temp`.
    * Se estiver fazendo backup em um diretório, o nome especificado no caminho de destino será usado. Um diretório existente pode ser usado, caso contrário, um novo diretório será criado.
 
      Um arquivo vazio chamado `backupInProgress.txt` é criado no diretório de destino quando o backup é iniciado. Este arquivo é excluído quando o backup é concluído.

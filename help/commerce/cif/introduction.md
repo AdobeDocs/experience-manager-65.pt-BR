@@ -3,9 +3,9 @@ title: Introdução e visão geral
 description: Introdução e visão geral do Content and Commerce. A Estrutura de Integração do Commerce (CIF) do Experience Manager é o padrão recomendado da Adobe para integrar e estender os serviços comerciais do Adobe Commerce e outras soluções comerciais de terceiros com a Experience Cloud.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '869'
 ht-degree: 94%
 
 ---
@@ -18,7 +18,7 @@ Com o Adobe Experience Manager Content and Commerce, as marcas podem dimensionar
 
 Com as expectativas cada vez maiores dos clientes em experiências comerciais online, as marcas são pressionadas a oferecer experiências diferenciadas e mais conteúdo com mais rapidez. No entanto, a implementação de uma plataforma de gerenciamento de conteúdo geralmente requer investimentos em tempo e orçamento pesados no desenvolvimento de elementos fundamentais, como componentes personalizados e ferramentas de criação, e acumula custos em manutenção e atualizações. O Experience Manager Sites oferece o Content and Commerce como um módulo complementar para o Experience Manager que fornece componentes principais de comércio prontos para uso, ferramentas de criação e uma loja de referência para acelerar o lançamento, permitir colaboração perfeita entre equipes e impulsionar a conversão.
 
-As marcas podem integrar o Experience Manager com o Adobe Commerce, parte da Adobe Experience Cloud, bem como qualquer mecanismo de comércio preferido. Com o Experience Manager Content and Commerce, as marcas podem:
+As marcas podem integrar o Experience Manager com o Adobe Commerce (que faz parte da Adobe Experience Cloud), ou qualquer mecanismo de comércio de sua preferência. Com o Experience Manager Content and Commerce, as marcas podem:
 
 * Expandir e inovar mais rápido
 * Personalizar experiências para impulsionar a conversão

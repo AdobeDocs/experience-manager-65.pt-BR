@@ -3,7 +3,7 @@ title: Configurar os plug-ins do Editor de Rich Text
 description: Saiba como configurar os plug-ins do Editor de Rich Text do Adobe Experience Manager para ativar funcionalidades individuais.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '4395'
 ht-degree: 4%
@@ -95,7 +95,7 @@ Você pode fornecer alguns, todos ou nenhum desses três ícones aos autores na 
 
 Para configurar o RTE para exibir os ícones necessários, siga estas etapas.
 
-1. Navegue até o componente, por exemplo `/apps/<myProject>/components/text`.
+1. Navegue até o componente, por exemplo, `/apps/<myProject>/components/text`.
 1. Navegue até o nó `rtePlugins/edit`. Consulte [ativar um plug-in](#activateplugin) se o nó não existir.
 1. Crie o `features` propriedade no `edit` e adicione um ou mais recursos. Salve todas as alterações.
 
@@ -226,7 +226,7 @@ Isso é feito ativando o plug-in de estilo.
 
 Em seguida, especifique os locais das folhas de estilos que você deseja referenciar:
 
-1. Navegue até o nó raiz do componente de texto, por exemplo `/apps/<myProject>/components/text`.
+1. Navegue até o nó raiz do componente de texto, por exemplo, `/apps/<myProject>/components/text`.
 1. Adicionar a propriedade `externalStyleSheets` ao nó principal de `<rtePlugins-node>`:
 
    * **Nome** `externalStyleSheets`

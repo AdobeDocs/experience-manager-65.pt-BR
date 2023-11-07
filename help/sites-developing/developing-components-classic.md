@@ -7,9 +7,9 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2385'
+source-wordcount: '2384'
 ht-degree: 1%
 
 ---
@@ -196,7 +196,7 @@ Para desenvolver novos componentes para AEM com base em um componente existente,
    * utilização do CRXDE Lite para adicionar o valor `<path-to-component>` (por exemplo, `/apps/geometrixx/components/myComponent`) para os componentes de propriedade do nó `/etc/designs/geometrixx/jcr:content/contentpage/par`
    * seguindo as instruções em [Adicionar novos componentes a sistemas de parágrafos](#adding-a-new-component-to-the-paragraph-system-design-mode)
 
-1. No WCM do AEM, abra uma página no seu site e insira um parágrafo do tipo que você acabou de criar para garantir que o componente esteja funcionando corretamente.
+1. No WCM do AEM, abra uma página no seu site e insira um parágrafo do tipo criado para verificar se o componente está funcionando corretamente.
 
 >[!NOTE]
 >
@@ -206,7 +206,7 @@ Para desenvolver novos componentes para AEM com base em um componente existente,
 
 Depois que o componente tiver sido desenvolvido, você o adiciona ao sistema de parágrafo, o que permite aos autores selecionar e usar o componente ao editar uma página.
 
-1. Acesse uma página em seu ambiente de criação que use o sistema de parágrafos, por exemplo `<contentPath>/Test.html`.
+1. Acesse uma página em seu ambiente de criação que use o sistema de parágrafos, por exemplo, `<contentPath>/Test.html`.
 1. Alterne para o modo Design por meio de:
 
    * adicionando `?wcmmode=design` ao final do URL e acessando novamente, por exemplo:

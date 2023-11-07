@@ -1,19 +1,15 @@
 ---
 title: Página de destino
-seo-title: Landing Pages
 description: O recurso de páginas de aterrissagem permite a importação rápida e fácil de um design e conteúdo diretamente em uma página AEM. Um desenvolvedor da Web pode preparar o HTML e os ativos adicionais que podem ser importados como uma página inteira ou apenas como parte de uma página.
-seo-description: The landing pages feature allows quick and easy importing of a design and content right into an AEM page. A web developer can prepare the HTML and additional assets that can be imported as a full page or only a part of a page.
-uuid: b294c43f-63ae-4b5b-bef0-04566e350b63
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3329'
+source-wordcount: '3323'
 ht-degree: 1%
 
 ---
@@ -357,7 +353,7 @@ Antes de importar o design da Landing page, é necessário criar uma página de 
 >
 >Por padrão, uma página de Importador só pode ser criada em campanhas, mas você também pode sobrepor esse template para criar uma landing page em `/content/mysite`.
 
-Para criar uma nova landing page:
+Para criar uma landing page:
 
 1. Vá para a **Sites** console.
 1. Selecione a campanha no painel esquerdo.
@@ -417,7 +413,7 @@ Ao importar o pacote de design, **Limpar design** e **Baixar o zip importado** e
 
 ### Download do pacote de design importado {#downloading-the-imported-design-package}
 
-Baixar o arquivo zip permite registrar qual zip foi importado com uma página de aterrissagem específica. Observe que as alterações feitas em uma página não são adicionadas ao zip.
+Baixar o arquivo zip permite registrar qual zip foi importado com uma página de aterrissagem específica. As alterações feitas em uma página não são adicionadas ao zip.
 
 Para baixar o pacote de design importado, clique em **Fazer download do zip** na barra de ferramentas da Landing page.
 
@@ -439,7 +435,7 @@ Ao limpar a landing page, você pode remover as alterações de conteúdo. Se vo
 
 >[!NOTE]
 >
->Se decidir remover as alterações de conteúdo, todas as alterações feitas na página de destino importada, bem como todas as propriedades da página, serão perdidas quando você clicar em **Limpar**.
+>Se decidir remover as alterações de conteúdo, todas as alterações feitas na página de destino importada e todas as propriedades da página serão perdidas quando você clicar em **Limpar**.
 
 ### Modificação e adição de componentes em uma página de aterrissagem {#modifying-and-adding-components-on-a-landing-page}
 

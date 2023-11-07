@@ -1,19 +1,15 @@
 ---
 title: SPA Introdução ao AEM - React
-seo-title: Getting Started with SPAs in AEM - React
 description: Este artigo apresenta uma amostra de aplicativo SPA, explica como ele é montado e permite que você comece a usar seu próprio SPA rapidamente usando a estrutura do React.
-seo-description: This article presents a sample SPA application, explains how it is put together, and lets you get up-and-running with your own SPA quickly using the React framework.
-uuid: 2beca277-a381-4482-99f6-85005d826d06
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: cc1e5c20-cc9c-4222-8a11-ec5a963d4466
 docset: aem65
 exl-id: 552649e7-6054-4ae8-b570-5ba7230e6f19
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1161'
 ht-degree: 5%
 
 ---
@@ -52,7 +48,7 @@ Este documento abordará a estrutura de um SPA simplificado criado usando a estr
 
 ## Dependências, configuração e criação {#dependencies-configuration-and-building}
 
-Além da dependência esperada do React, a amostra de SPA pode aproveitar bibliotecas adicionais para tornar a criação do SPA mais eficiente.
+Além da dependência esperada do React, o SPA de amostra pode usar bibliotecas adicionais para tornar a criação do SPA mais eficiente.
 
 ### Dependências {#dependencies}
 
@@ -73,7 +69,7 @@ react
  react-dom
 ```
 
-A variável `aem-clientlib-generator` O é aproveitado para tornar a criação de bibliotecas de clientes automática como parte do processo de criação.
+A variável `aem-clientlib-generator` O é usado para tornar a criação de bibliotecas de clientes automática como parte do processo de criação.
 
 `"aem-clientlib-generator": "^1.4.1",`
 
@@ -114,7 +110,7 @@ module.exports = {
 
 ### Criando {#building}
 
-Criar o aplicativo realmente aproveita [Webpack](https://webpack.js.org/) para tradução, além do aem-clientlib-generator para criação automática da biblioteca do cliente. Portanto, o comando build será semelhante a:
+Criar realmente os usos do aplicativo [Webpack](https://webpack.js.org/) para tradução, além do aem-clientlib-generator para criação automática da biblioteca do cliente. Portanto, o comando build será semelhante a:
 
 `"build": "webpack && clientlib --verbose"`
 
@@ -122,7 +118,7 @@ Depois de criado, o pacote pode ser carregado para uma instância AEM.
 
 ### Arquétipo de projeto do AEM {#aem-project-archetype}
 
-Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que aceita projetos SPA que usam o React ou Angular e utiliza o SDK do SPA.
+Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que aceita projetos SPA que usam o React ou o Angular e utiliza o SDK de SPA.
 
 ## Estrutura do aplicativo {#application-structure}
 
@@ -134,7 +130,7 @@ Um componente de imagem simplificado é usado como exemplo, mas todos os compone
 
 ### index.js {#index-js}
 
-O ponto de entrada no SPA é, naturalmente, o `index.js` O arquivo mostrado aqui foi simplificado para se concentrar no conteúdo importante.
+O ponto de entrada no SPA é o `index.js` O arquivo mostrado aqui foi simplificado para se concentrar no conteúdo importante.
 
 ```
 import ReactDOM from 'react-dom';
@@ -151,7 +147,7 @@ ReactDOM.render(
 });
 ```
 
-A principal função do `index.js` é utilizar o `ReactDOM.render` para determinar onde inserir o aplicativo no DOM.
+A principal função do `index.js` é usar o `ReactDOM.render` para determinar onde inserir o aplicativo no DOM.
 
 Este é um uso padrão dessa função, não exclusivo deste aplicativo de exemplo.
 
@@ -285,4 +281,4 @@ Para obter mais informações sobre como se organizar para desenvolver SPA para 
 
 SPA Para mais detalhes sobre o modelo dinâmico para mapeamento de componentes e como ele funciona dentro do AEM, consulte o artigo [Modelo dinâmico para mapeamento de componentes para SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Se você quiser implementar o SPA no AEM para uma estrutura diferente do React ou do Angular SPA AEM ou simplesmente quiser se aprofundar em como o SDK do para o funciona, consulte o [Blueprint SPA](/help/sites-developing/spa-blueprint.md) artigo.
+Se você quiser implementar o SPA no AEM para uma estrutura diferente do React ou do Angular SPA AEM ou simplesmente quiser se aprofundar em como funciona o SDK do para o, consulte o [Blueprint SPA](/help/sites-developing/spa-blueprint.md) artigo.

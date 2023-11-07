@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Developer Tools, Asset Management
 role: Admin, User
 exl-id: 042bd959-256a-4794-a34d-0848a6b8840d
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 1%
@@ -74,7 +74,7 @@ Esta seção aparece abaixo da seção Bem-vindo e exibe widgets prontos para us
 
 Para ativar a limpeza de dados de atividade do usuário, ative a opção **[!UICONTROL Serviço de limpeza de eventos do DAM]** do Gerenciador de configurações. Após habilitar este serviço, as atividades do usuário conectado que excedem um número especificado são excluídas pelo sistema.
 
-A tela de boas-vindas fornece ajudas de navegação fáceis, como ícones na barra de ferramentas para acessar pastas, coleções e catálogos.
+A tela de boas-vindas fornece ajudas de navegação fáceis, por exemplo, ícones na barra de ferramentas para acessar pastas, coleções e catálogos.
 
 >[!NOTE]
 >

@@ -2,10 +2,10 @@
 title: Sua Caixa de entrada para gerenciar tarefas
 description: Gerenciamento de tarefas com a caixa de entrada no Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 42%
+source-wordcount: '1144'
+ht-degree: 43%
 
 ---
 
@@ -67,7 +67,7 @@ Para abrir a caixa de entrada de notificação do AEM:
 
 1. Clique/toque no indicador na barra de ferramentas.
 
-1. Selecione **Exibir todos**. A **Caixa de entrada do AEM** será aberta. A caixa de entrada mostra itens de fluxos de trabalho, projetos e tarefas.
+1. Selecione **Exibir todos**. A variável **Caixa de entrada AEM** é aberto. A caixa de entrada mostra itens de fluxos de trabalho, projetos e tarefas.
 1. A exibição padrão é [Exibição em lista](#inbox-list-view), mas você também pode alternar para [Exibição de calendário](#inbox-calendar-view). Isso é feito com o seletor de visualização (barra de ferramentas, parte superior direita).
 
    Para ambas as exibições também é possível definir [Configurações de exibição](#inbox-view-settings); as opções disponíveis dependem da exibição atual.
@@ -161,7 +161,7 @@ A opção Admin Control está visível somente para os membros da `administrator
 >Embora seja possível selecionar mais de um item, ações só podem ser executadas em um item de cada vez.
 
 
-1. Para realizar uma ação em um item, selecione a miniatura do item apropriado. Os ícones das ações aplicáveis a esse item serão mostrados na barra de ferramentas:
+1. Para realizar uma ação em um item, selecione a miniatura do item apropriado. Os ícones das ações aplicáveis a esse item são mostrados na barra de ferramentas:
 
    ![wf-84](assets/wf-84.png)
 
@@ -191,7 +191,7 @@ A opção Admin Control está visível somente para os membros da `administrator
    * um assistente de ação será iniciado.
    * uma página de documentação será aberta.
 
-   Por exemplo, **Reatribuir** abrirá uma caixa de diálogo:
+   Por exemplo, **Reatribuir** abre uma caixa de diálogo:
 
    ![wf-85](assets/wf-85.png)
 
@@ -223,7 +223,7 @@ Na caixa de entrada, é possível criar tarefas:
 
    * **Avançado**
 
-      * **Nome**: isso será usado para formar o URL; se estiver vazio, será baseado no **Título**.
+      * **Nome**: isso é usado para formar o URL; se estiver vazio, será baseado no **Título**.
 
    ![wf-87](assets/wf-87.png)
 

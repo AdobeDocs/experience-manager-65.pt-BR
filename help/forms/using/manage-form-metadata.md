@@ -11,9 +11,9 @@ discoiquuid: ba571f8e-8bd3-48eb-82e1-c93b14ffe44a
 docset: aem65
 role: Admin
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1995'
+source-wordcount: '1994'
 ht-degree: 2%
 
 ---
@@ -296,7 +296,7 @@ O AEM Forms expõe os esquemas de metadados dos tipos de formulários compatíve
 
 1. Clique em um componente que você acabou de arrastar. Na guia Configurações que é aberta no painel direito, preencha as informações dos seguintes campos:
 
-   1. Especifique um Rótulo de campo que será usado como um nome de exibição acima do campo colocado no esquema (Por exemplo: Departamento)
+   1. Especifique um Rótulo de campo que seja usado como um nome de exibição acima do campo colocado no esquema (Por exemplo: Departamento)
    1. No campo Mapear para propriedade, é possível ver um valor pré-preenchido **&#39;./jcr:content/metadata/default&#39;**. Altere o ‘**padrão**&quot; para um nome de propriedade desejado, que é usado para armazenar a propriedade no repositório crx (Por exemplo: &#39;./jcr:content/metadata/department&#39;)
 
       >[!NOTE]

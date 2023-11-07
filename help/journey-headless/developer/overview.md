@@ -1,17 +1,17 @@
 ---
 title: Jornada do desenvolvedor AEM headless
-description: Documentação de CMS do AEM sem periféricos. Comece aqui para obter uma jornada guiada sobre os recursos headless avançados e flexíveis do AEM, suas capacidades e como aproveitá-las em seu primeiro projeto.
+description: Documentação de CMS do AEM sem periféricos. Comece aqui uma jornada guiada sobre os recursos headless avançados e flexíveis do AEM, suas capacidades e como usá-las em seu primeiro projeto.
 exl-id: f24fb308-daa7-426f-ba45-37a236b5a500
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1230'
-ht-degree: 76%
+source-wordcount: '1225'
+ht-degree: 73%
 
 ---
 
 # Jornada do desenvolvedor AEM headless {#aem-headless-developer-journey}
 
-Comece aqui para obter uma jornada guiada sobre os recursos headless avançados e flexíveis do AEM, suas capacidades e como aproveitá-las em seu primeiro projeto de desenvolvimento headless. Esta jornada fornece toda a documentação do AEM Headless necessária para desenvolver seu primeiro aplicativo headless.
+Comece aqui para obter uma jornada guiada sobre os recursos headless avançados e flexíveis do AEM, suas capacidades e como usá-las em seu primeiro projeto de desenvolvimento headless. Esta jornada fornece toda a documentação do AEM Headless necessária para desenvolver seu primeiro aplicativo headless.
 
 ## Introdução {#introduction}
 
@@ -75,7 +75,7 @@ Agora você está pronto para começar a usar a jornada headless da Adobe. Recom
 
 ### Escolha sua própria aventura {#choose-your-path}
 
-No entanto, a Adobe quer que você tenha sucesso ao começar com seu projeto AEM Headless, independentemente do seu estilo de aprendizado. Portanto, por favor, considerem essas duas opções.
+No entanto, a Adobe quer que você tenha sucesso ao começar com seu projeto AEM Headless, independentemente do seu estilo de aprendizado. Portanto, considere essas duas opções.
 
 * Se quiser **saber mais sobre conceitos headless e as tecnologias AEM headless**, continue sua jornada AEM headless, ao revisar, em seguida, o documento [Como modelar seu conteúdo como modelos de conteúdo AEM](model-your-content.md), por meio do qual você aprende a modelar sua estrutura de conteúdo no AEM.
 * Se quiser **aprender na prática**, pule para o [Tutorial prático Introdução ao AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=pt-BR), que o levará diretamente ao desenvolvimento AEM Headless, implementando um projeto simples para expor o conteúdo AEM headless.
@@ -84,7 +84,7 @@ No entanto, a Adobe quer que você tenha sucesso ao começar com seu projeto AEM
 
 As jornadas de documentação mostram como o AEM soluciona um problema empresarial fornecendo uma narrativa que o orienta por processos e recursos complexos e inter-relacionados. Uma jornada ilustra como vários recursos trabalham juntos para atender a uma única necessidade empresarial.
 
-Como tal, as jornadas são projetadas para se sustentarem sozinhas. No entanto, algumas delas podem estar relacionadas entre si. Confira essas jornadas adicionais para obter mais informações sobre como os eficientes recursos do AEM funcionam juntos.
+Como tal, as jornadas são projetadas para se manterem sozinhas. No entanto, vários deles podem estar relacionados entre si. Confira essas jornadas adicionais para obter mais informações sobre como os eficientes recursos do AEM funcionam juntos.
 
 * [Tutoriais do AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - se você prefere aprender na prática e tem conhecimento técnico, utilize nossos tutoriais práticos organizados por API e estrutura, que exploram a criação e o uso de aplicativos incorporados no AEM Headless.
 * [Jornada de tradução do AEM headless](/help/journey-headless/translation/overview.md) - essa jornada de documentação oferece uma ampla compreensão sobre a tecnologia headless, como o AEM fornece conteúdo headless e como você pode traduzi-lo.

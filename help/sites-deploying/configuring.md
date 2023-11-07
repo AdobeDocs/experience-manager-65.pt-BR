@@ -7,7 +7,7 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2116'
 ht-degree: 1%
@@ -89,11 +89,11 @@ Isso significa que quando um endereço IP precisar ser especificado, você poder
 
 * um endereço IPv6
 
-  por exemplo `https://[ab12::34c5:6d7:8e90:1234]:4502`
+  por exemplo, `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
 * um endereço IPv4
 
-  por exemplo `https://123.1.1.4:4502`
+  por exemplo, `https://123.1.1.4:4502`
 
 * um nome de servidor
 

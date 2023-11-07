@@ -8,9 +8,9 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: b777fdca-e7a5-427a-9e86-688dd7cac636
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Em versões anteriores do Adobe Experience Manager (AEM), muitas APIs eram expos
 
 * As APIs públicas são compatíveis com a instalação de um pacote de compatibilidade.
 * O pacote de compatibilidade contém um Uber JAR compatível para garantir a compatibilidade com versões anteriores
-* APIs Java™ marcadas como `Private` destinam-se a ser usados apenas por pacotes internos AEM e não devem ser usados por pacotes personalizados.
+* APIs Java™ marcadas como `Private` destinam-se a ser usados somente por pacotes internos AEM, não por pacotes personalizados.
 
 >[!NOTE]
 >

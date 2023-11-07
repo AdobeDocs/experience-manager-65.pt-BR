@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7d0d4f96-fc72-4e2b-a2cc-5741b0a30f74
 exl-id: b7461d5c-95d1-4da2-9d2a-f54c410a87f9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Os pontos de extremidade podem ser adicionados somente a serviços. Um ponto de 
 
 ## Ativar ou desativar um ponto de extremidade {#enable-or-disable-an-endpoint}
 
-Por padrão, novos endpoints são habilitados automaticamente. Mas se você tiver desativado um endpoint, será necessário ativá-lo para que ele fique operacional.
+Por padrão, novos endpoints são habilitados automaticamente. Mas se você desativou um endpoint, é necessário ativá-lo para que ele fique operacional.
 
 Se você estiver tendo problemas com os serviços do, desative os endpoints associados para solucionar melhor o problema. Você também pode desativar os pontos de extremidade durante a manutenção regular do sistema ou ao atualizar um serviço.
 

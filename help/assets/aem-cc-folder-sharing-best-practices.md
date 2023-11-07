@@ -5,7 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Collaboration
 exl-id: 130cec6d-1cdd-4304-94bb-65e6bb573e55
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 0%
@@ -66,7 +66,7 @@ Práticas recomendadas para usar o [!DNL Experience Manager] para [!DNL Creative
 * **Considerações sobre volume:** [!DNL Experience Manager] e [!DNL Creative Cloud] O Compartilhamento de pastas deve ser usado para compartilhar um número menor de arquivos, por exemplo, relevantes para uma campanha ou atividade específica. Para compartilhar conjuntos maiores de ativos, como todos os ativos aprovados na organização, use outros métodos de distribuição (por exemplo, [!DNL Assets Brand Portal]ou [!DNL Experience Manager] aplicativo de desktop.
 * **Evite compartilhar hierarquias profundas:** O compartilhamento funciona de forma recursiva e não permite o descompartilhamento seletivo. Normalmente, somente as pastas sem subpastas ou com uma hierarquia superficial, como um nível de subpasta, devem ser consideradas para compartilhamento.
 * **Pastas separadas para compartilhamento unidirecional:** Pastas separadas devem ser usadas para compartilhar ativos finais de [!DNL Assets] para [!DNL Creative Cloud] arquivos e para compartilhar ativos prontos para criação de volta do [!DNL Creative Cloud] arquivos para [!DNL Assets]. Juntamente com uma boa convenção de nomenclatura para essas pastas, cria um ambiente de trabalho mais fácil de entender para [!DNL Assets] e [!DNL Creative Cloud] usuários.
-* **Evitar Trabalho em andamento na pasta compartilhada:** A pasta compartilhada não deve ser usada para Trabalho em andamento - use uma pasta separada em Arquivos Creative Cloud para realizar trabalhos que exigem alterações frequentes no arquivo.
+* **Evitar Trabalho em andamento na pasta compartilhada:** Não use uma pasta compartilhada para o Trabalho em andamento - use uma pasta separada nos Arquivos Creative Cloud para realizar trabalhos que exigem alterações frequentes no arquivo.
 * **Iniciar novo trabalho fora da pasta compartilhada:** Os novos designs (arquivos criativos) devem ser iniciados na pasta WIP separada em Arquivos Creative Cloud e quando estiverem prontos para serem compartilhados com [!DNL Assets] usuários, eles devem ser movidos ou salvos na pasta compartilhada.
 * **Simplifique a estrutura de compartilhamento:** Para uma configuração operacional mais gerenciável, pense em simplificar a estrutura de compartilhamento. Em vez de compartilhar com todos os usuários criativos, [!DNL Assets] as pastas devem ser compartilhadas somente com representantes da equipe, como um diretor criativo ou gerente de equipe. O gerente do lado criativo receberia os ativos finais, decidiria as atribuições de trabalho e deixaria os designers trabalharem em suas próprias contas do Creative Cloud em ativos do WIP. Eles podem usar os recursos de colaboração do Creative Cloud para coordenar o trabalho e, finalmente, selecionar e colocar os ativos que estão prontos para serem compartilhados no [!DNL Assets] na pasta compartilhada criativa.
 

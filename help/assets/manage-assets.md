@@ -7,7 +7,7 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '10067'
 ht-degree: 3%
@@ -112,7 +112,7 @@ Para configurar a tarefa de limpeza para os trabalhos de upload de partes não c
 
 Se você fizer upload de um ativo com o mesmo nome de um ativo que já está disponível no local em que você está fazendo upload do ativo, uma caixa de diálogo de aviso será exibida.
 
-É possível optar por substituir um ativo existente, criar outra versão ou manter ambos renomeando o novo ativo que é carregado. Se você substituir um ativo existente, os metadados do ativo e qualquer modificação anterior (por exemplo, anotar ou cortar) feita no ativo existente serão excluídos. Se você optar por manter ambos os ativos, o novo ativo será renomeado com um número `1` anexado ao seu nome.
+É possível optar por substituir um ativo existente, criar outra versão ou manter ambos renomeando o novo ativo que é carregado. Se você substituir um ativo existente, os metadados do ativo e qualquer modificação anterior (por exemplo, anotação ou recorte) feita no ativo existente serão excluídos. Se você optar por manter ambos os ativos, o novo ativo será renomeado com um número `1` anexado ao seu nome.
 
 ![Caixa de diálogo Conflito de nome para resolver conflito de nome de ativos](assets/resolve-naming-conflict.png)
 

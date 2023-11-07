@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4734'
+source-wordcount: '4725'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Depois de configurar o projeto AEM, defina a estratégia de criação e personal
    * **Modelo de formulário XFA**: é um modelo de formulário ideal se você tiver investimentos em formulários HTML5 baseados em XFA. Ele fornece uma maneira direta de converter seus formulários baseados em XFA em formulários adaptáveis. Quaisquer regras XFA existentes são mantidas nos formulários adaptáveis associados. Os formulários adaptáveis resultantes são compatíveis com construções XFA, como validações, eventos, propriedades e padrões.
    * **Modelo de dados do formulário**: é um modelo de formulário preferencial se você estiver procurando integrar seus sistemas de back-end, como bancos de dados, serviços da Web e perfil de usuário AEM, para preencher previamente formulários adaptáveis e gravar dados de formulário enviados de volta nos sistemas de back-end. Um editor de modelo de dados de formulário permite definir e configurar entidades e serviços em um modelo de dados de formulário que você pode usar para criar formulários adaptáveis. Para obter mais informações, consulte [Integração de dados do AEM Forms](/help/forms/using/data-integration.md).
 
-É importante escolher cuidadosamente o modelo de dados que não apenas atenda aos seus requisitos, mas que estenda seus investimentos existentes em ativos XFA e XSD, se houver. É recomendável usar o Modelo XSD para criar modelos de formulário porque o XML gerado contém dados de acordo com o XPATH definido pelo esquema. Usar o Modelo XSD como uma opção padrão para o Modelo de dados de formulário também ajuda, pois ele dissocia o design do formulário do sistema de back-end que processa e consome dados e melhora o desempenho do formulário devido ao mapeamento de um para um do campo de formulário. Além disso, BindRef do campo pode se tornar o XPATH de seu valor de dados em XML.
+É importante escolher cuidadosamente o modelo de dados que não apenas atenda aos seus requisitos, mas que estenda seus investimentos existentes em ativos XFA e XSD, se houver. Use o Modelo XSD para criar modelos de formulário porque o XML gerado contém dados de acordo com o XPATH definido pelo esquema. Usar o Modelo XSD como uma opção padrão para o Modelo de dados de formulário também ajuda, pois ele dissocia o design do formulário do sistema de back-end que processa e consome dados e melhora o desempenho do formulário devido ao mapeamento de um para um do campo de formulário. Além disso, BindRef do campo pode se tornar o XPATH de seu valor de dados em XML.
 
 Para obter mais informações, consulte [Criar um formulário adaptável](/help/forms/using/creating-adaptive-form.md).
 
@@ -103,7 +103,7 @@ Os modelos de formulário também podem ser carregados de pacotes de formulário
 * A variável **nosamplecontent** o modo de execução é recomendado somente para o autor e não para os nós de publicação.
 * A criação de ativos, como formulário adaptável, temas, modelos ou configurações de nuvem, é executada somente nos nós Autor, que podem ser publicados nos nós Publicar configurados.
 Para obter mais informações, consulte [Publicação e cancelamento de publicação de formulários e documentos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
-* O pacote complementar do Forms é necessário para a criação, bem como para a publicação, para oferecer suporte às operações de serviço de documento. Portanto, pode ser considerado uma dependência.
+* O pacote complementar do Forms é necessário para que a Criação e a Publicação sejam compatíveis com as operações de serviço de documento, portanto, pode ser considerado uma dependência.
 Se você quiser apenas templates de amostra, temas e pacotes DOR relacionados ao Forms, é possível baixá-los em [aemforms-references-* pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en).
 
 Para obter mais informações, consulte as práticas recomendadas em [Introdução à criação de formulários adaptáveis](/help/forms/using/introduction-forms-authoring.md).
@@ -187,7 +187,7 @@ O editor de regras fornece um editor visual e um editor de código para escrever
 
 ### Trabalhar com temas {#working-with-themes}
 
-Adaptável para temas permite criar estilos reutilizáveis que podem ser aplicados em formulários para obter uma aparência e um estilo consistentes. É recomendável usar Temas para definir o estilo de componentes de formulário e painéis. Algumas práticas recomendadas sobre temas são as seguintes:
+Adaptável para temas permite criar estilos reutilizáveis que podem ser aplicados em formulários para obter uma aparência e um estilo consistentes. Use Temas para definir o estilo de componentes de formulário e painéis. Algumas práticas recomendadas sobre temas são as seguintes:
 
 * Use a biblioteca de ativos para aplicar rapidamente estilos de texto, plano de fundo e imagens. Quando adicionado na biblioteca de ativos, o estilo fica disponível para outros temas e no modo de estilo do editor de formulários.
 * Aplique configurações globais como fonte e plano de fundo da página usando o seletor no nível da página.
@@ -241,7 +241,7 @@ Formulários adaptáveis exigem ações Enviar para processar dados especificado
 * Você poderá escrever uma ação de envio personalizada se as ações de envio padrão não atenderem ao seu caso de uso. Para obter mais informações, consulte [Gravação da ação enviar personalizada para formulários adaptáveis](/help/forms/using/custom-submit-action-form.md).
 * Inclua validações do lado do servidor para impedir o envio de dados inválidos.
 
-Você pode aproveitar a experiência de vários sinais do Adobe Sign em formulários adaptáveis. Considere o seguinte ao configurar o Adobe Sign em formulários adaptáveis. Para obter detalhes, consulte [Uso do Adobe Sign em um formulário adaptável](/help/forms/using/working-with-adobe-sign.md).
+Você pode usar a experiência de vários sinais do Adobe Sign em formulários adaptáveis. Considere o seguinte ao configurar o Adobe Sign em formulários adaptáveis. Para obter detalhes, consulte [Uso do Adobe Sign em um formulário adaptável](/help/forms/using/working-with-adobe-sign.md).
 
 * O formulário adaptável habilitado para Adobe Sign é enviado somente após todos os signatários terem assinado o formulário. O Forms é exibido no estado Assinatura pendente até que o formulário seja assinado por todos os signatários.
 * Você pode configurar a experiência de assinatura no formulário ou redirecionar os signatários para uma página de assinatura no envio.

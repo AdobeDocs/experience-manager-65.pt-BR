@@ -3,7 +3,7 @@ title: Use o modo Layout para redimensionar componentes para formulários adapt�
 description: Definir a posição dos componentes usando a grade responsiva disponível no modo Layout
 feature: Adaptive Forms
 exl-id: 5cf76cb1-c92c-4aed-9945-37494fef2d29
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 3%
@@ -29,7 +29,7 @@ Você pode usar o modo Layout para redimensionar componentes para todos os tipos
 Selecionar **Layout** na lista suspensa que aparece na parte superior da interface de criação do formulário adaptável ao lado da guia **Visualizar** opção. O formulário é exibido no modo Layout.
 
 1. Faça logon na instância de autor do AEM e acesse **Adobe Experience Manager** > **Forms** > **Forms e documentos**.
-1. Criar um novo ou abrir um existente [formulário adaptável](../../forms/using/creating-adaptive-form.md).
+1. Criar um [formulário adaptável](../../forms/using/creating-adaptive-form.md) ou abra um existente.
 1. Selecionar **Layout** na lista suspensa que aparece na parte superior ao lado da guia **Visualizar** opção. O formulário é exibido no modo Layout.
 
    ![Modo de layout](assets/layout_mode_ic_new.png)

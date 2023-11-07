@@ -3,7 +3,7 @@ title: Implantação de comunidades
 description: Como implantar o AEM Communities
 content-type: reference
 topic-tags: deploying
-source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1761'
 ht-degree: 2%
@@ -150,7 +150,7 @@ Para instalar os pacotes visíveis em `adobeaemcloud.com` em uma instância de A
 * Selecione o **Assets** guia
 * Selecionar **baixar em disco**
 
-Na instância local do AEM, use um Gerenciador de pacotes (por exemplo [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)), para carregar no repositório de pacotes AEM local.
+Na instância local do AEM, use um Gerenciador de pacotes (por exemplo, [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)), para carregar no repositório de pacotes AEM local.
 
 Como alternativa, acessar o pacote usando o Compartilhamento de pacotes da instância local do AEM (por exemplo, [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)), o `Download` botão é baixado para o repositório de pacotes da instância AEM local.
 

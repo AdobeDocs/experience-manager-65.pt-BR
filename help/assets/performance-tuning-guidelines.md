@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2746'
+source-wordcount: '2740'
 ht-degree: 0%
 
 ---
@@ -157,11 +157,11 @@ Por padrão, [!DNL Experience Manager] O executa um número máximo de trabalhos
 
 1. Ligado [!DNL Experience Manager] Autor, acesso `https://[aem_server]:[port]/system/console/slingevent`.
 
-1. Clique em **[!UICONTROL Editar]** em cada fila de workflow relevante para sua implementação, por exemplo **[!UICONTROL Fila de fluxo de trabalho transitório do Granite]**.
+1. Clique em **[!UICONTROL Editar]** em cada fila de workflow relevante para sua implementação, por exemplo, **[!UICONTROL Fila de fluxo de trabalho transitório do Granite]**.
 
 1. Atualize o valor de **[!UICONTROL Máximo de Trabalhos Paralelos]** e clique em **[!UICONTROL Salvar]**.
 
-Para começar, definir uma fila como metade dos processadores disponíveis é uma solução viável. No entanto, talvez seja necessário aumentar ou diminuir esse número para atingir o throughput máximo e ajustá-lo por ambiente. Há filas separadas para fluxos de trabalho transitórios e não transitórios, bem como outros processos, como fluxos de trabalho externos. Se várias filas definidas para 50% dos processadores estiverem ativas simultaneamente, o sistema pode ficar sobrecarregado rapidamente. As filas muito usadas variam muito entre as implementações do usuário. Portanto, talvez seja necessário configurá-los cuidadosamente para obter o máximo de eficiência sem sacrificar a estabilidade do servidor.
+Para começar, definir uma fila como metade dos processadores disponíveis é uma solução viável. No entanto, talvez seja necessário aumentar ou diminuir esse número para atingir o throughput máximo e ajustá-lo por ambiente. Há filas separadas para fluxos de trabalho transitórios e não transitórios e outros processos, como fluxos de trabalho externos. Se várias filas definidas para 50% dos processadores estiverem ativas simultaneamente, o sistema pode ficar sobrecarregado rapidamente. As filas muito usadas variam muito entre as implementações do usuário. Portanto, talvez seja necessário configurá-los cuidadosamente para obter o máximo de eficiência sem sacrificar a estabilidade do servidor.
 
 ### Configuração do ativo de atualização DAM {#dam-update-asset-configuration}
 

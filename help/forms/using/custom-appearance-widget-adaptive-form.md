@@ -1,18 +1,14 @@
 ---
 title: Criar aparências personalizadas para campos de formulário adaptáveis
-seo-title: Create custom appearances for adaptive form fields
 description: Personalize a aparência dos componentes prontos para uso no Adaptive Forms.
-seo-description: Customize appearance of out-of-the-box components in Adaptive Forms.
-uuid: 1aa36443-774a-49fb-b3d1-d5a2d5ff849a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: d388acef-7313-4e68-9395-270aef6ef2c6
 docset: aem65
 exl-id: 770e257a-9ffd-46a4-9703-ff017ce9caed
-source-git-commit: 8a24ca02762e7902b7d0033b36560629ee711de1
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1712'
 ht-degree: 0%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 ## Introdução {#introduction}
 
-Os formulários adaptáveis aproveitam o [estrutura de aparência](/help/forms/using/introduction-widgets.md) para ajudá-lo a criar aparências personalizadas para campos de formulário adaptáveis e fornecer uma experiência do usuário diferente. Por exemplo, substitua botões de opção e caixas de seleção por botões de alternância ou use plug-ins personalizados do jQuery para restringir as entradas dos usuários em campos como números de telefone ou ID de email.
+Formulários adaptáveis usam o [estrutura de aparência](/help/forms/using/introduction-widgets.md) para ajudá-lo a criar aparências personalizadas para campos de formulário adaptáveis e fornecer uma experiência do usuário diferente. Por exemplo, substitua botões de opção e caixas de seleção por botões de alternância ou use plug-ins personalizados do jQuery para restringir as entradas dos usuários em campos como números de telefone ou ID de email.
 
 Este documento explica como usar um plug-in jQuery para criar essas experiências alternativas para campos de formulário adaptáveis. Além disso, mostra um exemplo para criar uma aparência personalizada para que o componente de campo numérico apareça como um seletor ou passo numérico.
 
@@ -61,7 +57,7 @@ Execute o seguinte comando para criar um projeto local com base no arquétipo:
 
 `mvn archetype:generate -DarchetypeRepository=https://repo1.maven.org/maven2/com/adobe/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
 
-O comando baixa as informações dos plug-ins Maven e do arquétipo do repositório e gera um projeto com base nas seguintes informações:
+O comando baixa as informações dos plug-ins Maven e do arquétipo no repositório e gera um projeto com base nas seguintes informações:
 
 * **groupId**: ID de grupo usada pelo projeto Maven gerado
 * **artifactId**: ID de artefato usada pelo projeto Maven gerado.
@@ -320,4 +316,4 @@ Agora vamos ver um exemplo para criar uma aparência personalizada para que um c
 
    1. Na guia Estilo, atualize a **[!UICONTROL Classe CSS]** propriedade a adicionar `widget_numericStepper`.
 
-A nova aparência que você acabou de criar está disponível para uso.
+A nova aparência criada agora está disponível para uso.

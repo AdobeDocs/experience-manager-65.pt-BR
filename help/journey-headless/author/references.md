@@ -2,10 +2,10 @@
 title: Saiba mais sobre como usar referências em Fragmentos de conteúdo
 description: Saiba mais sobre como usar referências em Fragmentos de conteúdo para conteúdo, outros fragmentos e outros ativos (mídia). Apresente a necessidade e a mecânica de fragmentos aninhados para a criação de CMS headless.
 exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 88%
+source-wordcount: '722'
+ht-degree: 86%
 
 ---
 
@@ -39,11 +39,11 @@ Algumas referências têm tipos de dados dedicados (por exemplo, Referências de
 
 ## Referências de conteúdo {#content-references}
 
-As Referências de conteúdo fazem exatamente isso - elas permitem fazer referência a qualquer outro conteúdo. Isso abrirá um navegador que permite selecionar o item de conteúdo.
+As Referências de conteúdo fazem exatamente isso - elas permitem fazer referência a qualquer outro conteúdo. Isso abre um navegador que permite selecionar o item de conteúdo.
 
 ## Referências de ativo/mídia {#assets-media-references}
 
-Os ativos (por exemplo, imagens ou mídia) podem ser referenciados em um bloco de texto usando a opção **Inserir ativo**. Isso abrirá um navegador que permite selecionar o ativo.
+Os ativos (por exemplo, imagens ou mídia) podem ser referenciados em um bloco de texto usando a opção **Inserir ativo**. Isso abre um navegador que permite selecionar o ativo.
 
 ![Fragmentos de conteúdo: inserir ativo](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
@@ -58,7 +58,7 @@ Por exemplo, você pode ter os seguintes modelos de fragmento de conteúdo defin
 * Pessoa
 * Prêmios
 
-Parece muito simples, porém é claro que uma empresa conta com um CEO, mas também com funcionários....e todos são definidos como uma Pessoa.
+Parece muito simples, mas uma empresa tem um CEO e funcionários...e todos são definidos como uma Pessoa.
 
 E uma pessoa pode ter um prêmio (ou talvez dois).
 

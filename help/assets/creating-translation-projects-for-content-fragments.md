@@ -8,9 +8,9 @@ content-type: reference
 feature: Content Fragments
 role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
@@ -36,14 +36,14 @@ Quando o fragmento de conteúdo de origem é atualizado ou modificado, o fragmen
 O fluxo de trabalho Create and translate inclui as seguintes opções. As etapas processuais associadas a cada opção são semelhantes às associadas à opção correspondente para ativos.
 
 * Somente criar estrutura: Para etapas de procedimento, consulte [Criar estrutura somente para ativos](translation-projects.md#create-structure-only).
-* Criar um novo projeto de tradução: para etapas de procedimento, consulte [Criar um novo projeto de tradução para ativos](translation-projects.md#create-a-new-translation-project).
+* Criar um projeto de tradução: para etapas de procedimento, consulte [Criar um projeto de tradução para ativos](translation-projects.md#create-a-new-translation-project).
 * Adicionar ao projeto de tradução existente: para etapas de procedimento, consulte [Adicionar ao projeto de tradução existente para ativos](translation-projects.md#add-to-existing-translation-project).
 
 ## Atualizar fluxo de trabalho de cópias de idioma {#update-language-copies-workflow}
 
 O fluxo de trabalho Atualizar cópias de idioma inclui as seguintes opções. As etapas processuais associadas a cada opção são semelhantes às associadas à opção correspondente para ativos.
 
-* Criar um novo projeto de tradução: para etapas de procedimento, consulte [Criar um novo projeto de tradução para ativos](translation-projects.md#create-a-new-translation-project) (atualizar fluxo de trabalho).
+* Criar um projeto de tradução: para etapas de procedimento, consulte [Criar um projeto de tradução para ativos](translation-projects.md#create-a-new-translation-project) (atualizar fluxo de trabalho).
 * Adicionar ao projeto de tradução existente: para etapas de procedimento, consulte [Adicionar ao projeto de tradução existente para ativos](translation-projects.md#add-to-existing-translation-project) (atualizar fluxo de trabalho).
 
 Também é possível criar cópias temporárias de idioma para fragmentos semelhantes à maneira como você cria cópias temporárias para ativos. Para obter detalhes, consulte [Criação de cópias temporárias de idioma para ativos](translation-projects.md#creating-temporary-language-copies).

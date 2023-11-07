@@ -2,10 +2,10 @@
 title: Trabalhos assíncronos
 description: O Adobe Experience Manager otimiza o desempenho ao concluir de modo assíncrono algumas tarefas que consomem muitos recursos.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
-source-git-commit: cc63291c32f7a234398ebe8bf67ab53aaf8fa90f
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 97%
+source-wordcount: '798'
+ht-degree: 91%
 
 ---
 
@@ -55,7 +55,7 @@ Para visualizar o status das operações assíncronas em detalhes, acesse a pág
 
    ![stop_icon](assets/async-stop-icon.png)
 
-1. Para visualizar mais detalhes, por exemplo, descrição e registros, selecione a operação e clique em **[!UICONTROL Abrir]** na barra de ferramentas.
+1. Para exibir detalhes adicionais, por exemplo, descrição e logs, selecione a operação e clique em **[!UICONTROL Abertura]** na barra de ferramentas.
 
    ![open_icon](assets/async-open-icon.png)
 
@@ -88,7 +88,7 @@ Você pode modificar a programação da limpeza e a duração da retenção dos 
 
 ## Configurar o processamento assíncrono {#configuring-asynchronous-processing}
 
-Você pode configurar o limite de ativos, páginas ou referências para que o AEM processe uma operação específica de modo assíncrono, bem como ativar notificações por email para quando os trabalhos forem processados.
+É possível configurar o limite de ativos, páginas ou referências para que o AEM processe uma operação específica de forma assíncrona e alterne as notificações por email para quando os trabalhos forem processados.
 
 ### Configurar operações assíncronas de exclusão de ativos {#configuring-synchronous-delete-operations}
 

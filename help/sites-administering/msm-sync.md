@@ -12,9 +12,9 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2699'
+source-wordcount: '2695'
 ht-degree: 37%
 
 ---
@@ -52,7 +52,7 @@ Cada configuração de implantação usa um acionador de implantação que ocasi
 
 ### Configurações de implantação instaladas {#installed-rollout-configurations}
 
-A tabela a seguir lista as configurações de implantação instaladas com AEM. A tabela inclui as ações de acionador e de sincronização de cada configuração de implementação. Se as ações de configuração de implantação instaladas não atenderem aos seus requisitos, você poderá [criar uma nova configuração de implantação](#creating-a-rollout-configuration).
+A tabela a seguir lista as configurações de implantação instaladas com AEM. A tabela inclui as ações de acionador e de sincronização de cada configuração de implementação. Se as ações de configuração de implantação instaladas não atenderem aos seus requisitos, você poderá [criar uma configuração de implantação](#creating-a-rollout-configuration).
 
 <table>
  <tbody>
@@ -400,12 +400,12 @@ Você também pode definir as configurações de implantação para uma página 
 
 Configure uma página de blueprint com as configurações de implantação a serem usadas quando a página de blueprint for implantada.
 
-Observe que as páginas derivadas da página de blueprint herdam a configuração. Ao definir a configuração de implantação a ser usada, você pode estar substituindo a configuração que a página herdará da página principal.
+As páginas secundárias da página do blueprint herdam a configuração. Ao definir a configuração de implantação a ser usada, você pode estar substituindo a configuração que a página herdará da página principal.
 
 1. Use o console **Sites** para selecionar a página raiz do blueprint.
 1. Selecione **Propriedades** na barra de ferramentas.
 1. Abra a guia **Blueprint.**
-1. Selecione uma ou mais **configurações de implementação** usando o seletor suspenso.
+1. Selecione uma ou mais **configurações de implantação** usando o seletor suspenso.
 1. Mantenha suas atualizações com **Salvar**.
 
 ### Definir a configuração de implementação padrão do sistema {#setting-the-system-default-rollout-configuration}

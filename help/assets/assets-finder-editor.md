@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Developer Tools,Asset Management
 exl-id: 53e310a9-c511-447a-91bd-8c5b2760dc03
-source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2112'
+source-wordcount: '2110'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 Este documento descreve o seguinte:
 
 * Por que você criaria páginas personalizadas do Editor de ativos?
-* Como criar e personalizar páginas do Editor de ativos, que são páginas WCM que permitem visualizar e editar metadados, bem como executar ações no ativo.
+* Como criar e personalizar páginas do Editor de ativos, que são páginas WCM que permitem visualizar e editar metadados e executar ações no ativo.
 * Como editar vários ativos simultaneamente.
 
 <!-- TBD: Add UICONTROL tags. Need PM review. Flatten the structure a bit. Re-write to remove Geometrixx mentions and to adhere to 6.5 default samples. -->
@@ -39,7 +39,7 @@ Um aplicativo centrado em ativos no [!DNL Experience Manager] consiste em uma p�
 <!--
 ## Create and configure an Asset Share page {#creating-and-configuring-an-asset-share-page}
 
-You customize the DAM Finder functionality and create pages that have all the functionality you require, which are called Asset Share pages. To create a new Asset Share page, you add the page using the Geometrixx Asset Share template and then you customize the actions users can perform on that page, determine how viewers see the assets, and decide how users can build their queries.
+You customize the DAM Finder functionality and create pages that have all the functionality you require, which are called Asset Share pages. To create an Asset Share page, you add the page using the Geometrixx Asset Share template and then you customize the actions users can perform on that page, determine how viewers see the assets, and decide how users can build their queries.
 
 Here are some use cases for creating a customized Asset Share page:
 
@@ -50,7 +50,7 @@ Here are some use cases for creating a customized Asset Share page:
 
 ### Create an Asset Share page {#creating-an-asset-share-page}
 
-To create a new Asset Share page, you can either create it when you are working on web sites or from the digital asset manager.
+To create an Asset Share page, you can either create it when you are working on web sites or from the digital asset manager.
 
 >[!NOTE]
 >
@@ -72,7 +72,7 @@ To customize your Asset Share page, you use elements from the sidekick and you a
 
 ![screen_shot_2012-04-19at123048pm](assets/screen_shot_2012-04-19at123048pm.png)
 
-To create a new asset share page via the digital asset manager:
+To create an asset share page by way of the digital asset manager:
 
 1. In the digital asset manager, in **New**, select **New Asset Share**.
 1. In the **Title**, enter the name of the asset share page. If desired, enter a name for the URL.
@@ -162,7 +162,7 @@ To customize the query builder:
 
 #### Add predicates {#adding-predicates}
 
-Experience Manager Assets includes a number of predicates that you can add to the Asset Share page. These let your users further narrow searches. In some cases, they may override a query builder parameter (for example, the Path parameter).
+Experience Manager Assets includes several predicates that you can add to the Asset Share page. These let your users further narrow searches. In some cases, they may override a query builder parameter (for example, the Path parameter).
 
 To add predicates:
 
@@ -179,7 +179,7 @@ The following predicates are available:
 | Predicate | Description |
 |---|---|
 | **[!UICONTROL Date Predicate]** |Lets users search for assets that were modified before and after certain dates. |
-| **[!UICONTROL Options Predicate]** |The site owner can specify a property to search for (as in the property predicate, for example cq:tags) and a content tree to populate the options from (for example the tag tree). Doing so generates a list of options where the users can select the values (tags) that the selected property (tag property) should have. This predicate lets you build list controls like the list of tags, file types, image orientations, and so on. It is great for a fixed set of options. |
+| **[!UICONTROL Options Predicate]** |The site owner can specify a property to search for (as in the property predicate, for example, cq:tags) and a content tree to populate the options from (for example, the tag tree). Doing so generates a list of options where the users can select the values (tags) that the selected property (tag property) should have. This predicate lets you build list controls like the list of tags, file types, image orientations, and so on. It is great for a fixed set of options. |
 | **[!UICONTROL Path Predicate]** |Lets users define the path and subfolders, if desired. |
 | **[!UICONTROL Property Predicate]** |The site owner specifies a property to search for, for example, tiff:ImageLength and the user can then enter a value, for example, 800. This returns all images that are 800 pixels high. Useful predicate if your property can have arbitrary values. |
 
@@ -423,7 +423,7 @@ Para editar ativos várias vezes com a página Editor de ativos:
 
    Clique em **OK** para gravar as alterações no formulário. A caixa ao lado do **Tags** é automaticamente marcado.
 
-1. Edite o campo Descrição. Por exemplo, defina-o como:
+1. Edite o campo Descrição. Por exemplo, defina como:
 
    `This is a common description`
 

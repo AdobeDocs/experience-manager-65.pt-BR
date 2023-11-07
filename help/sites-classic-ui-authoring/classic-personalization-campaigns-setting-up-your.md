@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2257'
+source-wordcount: '2223'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Configurar uma nova campanha inclui as seguintes etapas (genéricas):
 1. [Criar uma campanha](#creating-a-new-campaign) para manter experiências; por exemplo, páginas de teaser ou um boletim informativo.
 1. Se necessário, você pode [definir as propriedades da nova campanha](#defining-the-properties-for-your-new-campaign).
 
-Em seguida, dependendo do tipo de experiência(s) que está criando, será necessário [criar uma experiência](#creating-a-new-experience). Os detalhes da experiência e as ações que seguem sua criação dependem do tipo de experiência que você deseja criar:
+Em seguida, dependendo do tipo de experiências criadas, é necessário [criar uma experiência](#creating-a-new-experience). Os detalhes da experiência e as ações que seguem sua criação dependem do tipo de experiência que você deseja criar:
 
 * Se estiver criando um Teaser:
 
@@ -50,15 +50,13 @@ Em seguida, dependendo do tipo de experiência(s) que está criando, será neces
 
 ## Criação de uma nova marca {#creating-a-new-brand}
 
-Para criar uma nova marca:
-
 1. Abra o **MCM** e selecione **Campanhas** no painel esquerdo.
 
 1. Selecionar **Novo...** para inserir o **Título** e **Nome** e o modelo a ser usado para sua nova marca:
 
    ![chlimage_1-17](assets/chlimage_1-17.png)
 
-1. Clique em **Criar**. Sua nova marca será exibida no MCM (com um ícone padrão).
+1. Clique em **Criar**. A nova marca é mostrada no MCM (com um ícone padrão).
 
 ### Definição das propriedades da sua nova marca {#defining-the-properties-for-your-new-brand}
 
@@ -72,17 +70,15 @@ Para criar uma nova marca:
 
 ### Criar uma nova campanha {#creating-a-new-campaign}
 
-Para criar uma nova campanha:
-
 1. De **Campanhas**, selecione a nova marca no painel esquerdo ou clique duas vezes no ícone no painel direito.
 
-   A visão geral será exibida (vazio se a marca for nova).
+   A visão geral é exibida (vazio se a marca for nova).
 
 1. Clique em **Novo...** e especificar a **Título**, **Nome** e o template a ser usado para sua nova campanha.
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
-1. Clique em **Criar**. Sua nova campanha será mostrada no MCM.
+1. Clique em **Criar**. Sua nova campanha é mostrada no MCM.
 
 ### Definição das propriedades da nova campanha {#defining-the-properties-for-your-new-campaign}
 
@@ -105,7 +101,7 @@ Configure as propriedades de campanha que controlam o comportamento:
 
 ### Criar uma nova experiência {#creating-a-new-experience}
 
-O procedimento para criar uma nova experiência depende do tipo de experiência:
+O procedimento para criar uma experiência depende do tipo de experiência:
 
 * [Criar um teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaser)
 * [Criação de informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletter)
@@ -154,7 +150,7 @@ Se você tiver experiências existentes, poderá adicionar um ponto de contato d
 >[!NOTE]
 >
 >A Adobe não está planejando aprimorar ainda mais esse recurso (Gerenciando clientes em potencial).
->A recomendação é [aproveitar o Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
+>A recomendação é usar [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
 No AEM MCM, é possível organizar e adicionar leads inserindo-os manualmente ou importando uma lista separada por vírgulas, por exemplo, uma lista de mala direta. Outras maneiras de gerar leads são: inscrições em newsletters ou inscrições em comunidades (se configuradas, elas podem acionar um workflow que preenche leads).
 
@@ -172,7 +168,7 @@ No Painel, acesse todos os leads clicando em **Clientes potenciais** no painel e
 
 Depois de criar novos leads, certifique-se de [ativá-los](#activating-or-deactivating-leads) para que você possa rastrear a atividade deles na instância de publicação e personalizar a experiência deles.
 
-Para criar um novo lead manualmente:
+Para criar um cliente potencial manualmente:
 
 1. No AEM, navegue até o MCM. No Painel, clique em **Clientes potenciais**.
 1. Clique em **Novo**. A variável **Criar novo** é aberta.
@@ -207,7 +203,7 @@ Para leads ativos ou desativos:
 
 ### Importar novos leads {#importing-new-leads}
 
-Ao importar novos leads, você pode adicioná-los automaticamente a uma lista existente ou criar uma nova lista para incluí-los.
+Ao importar novos leads, você pode adicioná-los automaticamente a uma lista existente ou criar uma lista para incluí-los.
 
 Para importar clientes em potencial de uma lista separada por vírgulas:
 
@@ -302,7 +298,7 @@ Para excluir clientes potenciais existentes no MCM, marque a caixa de seleção 
 >[!NOTE]
 >
 >A Adobe não está planejando aprimorar ainda mais esse recurso (gerenciamento de listas).
->A recomendação é [aproveitar o Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
+>A recomendação é usar [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
 As listas permitem organizar seus leads em grupos. Com listas, você pode direcionar suas campanhas de marketing para um grupo selecionado de pessoas; por exemplo, é possível enviar um informativo direcionado para uma lista. As listas estão visíveis no MCM, no Painel ou clicando em **Listas**. Ambos fornecem o nome da lista e o número de membros.
 
@@ -314,8 +310,6 @@ Se você clicar em **Listas**, também é possível visualizar se a lista é um 
 
 ### Criação de novas listas {#creating-new-lists}
 
-Para criar uma nova lista (grupo):
-
 1. No painel MCM, clique em **Nova lista ...** ou em **Listas**, clique em **Novo** .. A janela Criar lista é aberta.
 
    ![screen_shot_2012-02-21at125147pm](assets/screen_shot_2012-02-21at125147pm.png)
@@ -325,8 +319,6 @@ Para criar uma nova lista (grupo):
    ![screen_shot_2012-02-21at125320pm](assets/screen_shot_2012-02-21at125320pm.png)
 
 ### Modificação de listas existentes {#modifying-existing-lists}
-
-Para modificar uma lista existente:
 
 1. No MCM, clique em **Listas**.
 
@@ -384,7 +376,7 @@ Para mesclar listas existentes:
 
 A qualquer momento, você pode visualizar quais leads pertencem a uma lista específica navegando ou procurando por membros.
 
-Para exibir os clientes em potencial que pertencem a uma lista:
+Para exibir os clientes em potencial em listas:
 
 1. No MCM, clique em **Listas**.
 

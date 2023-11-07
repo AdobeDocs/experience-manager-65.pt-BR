@@ -5,10 +5,10 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
-source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3678'
-ht-degree: 65%
+source-wordcount: '3677'
+ht-degree: 67%
 
 ---
 
@@ -49,9 +49,8 @@ Estas são algumas dicas gerais sobre como criar os URLs para SEO:
    * Ao usar seletores em uma página, os seletores que fornecem valor semântico são preferenciais.
    * Se um humano não conseguir ler o URL, um mecanismo de pesquisa também não poderá.
    * Por exemplo:
-      `mybrand.com/products/product-detail.product-category.product-name.html`
-é preferível a 
-`mybrand.com/products/product-detail.1234.html`
+     `mybrand.com/products/product-detail.product-category.product-name.html`
+é preferível a `mybrand.com/products/product-detail.1234.html`
 
 * Evite subdomínios sempre que possível, já que os mecanismos de pesquisa os tratam como entidades diferentes, fragmentando o valor SEO do site.
 
@@ -189,20 +188,20 @@ Se um autor desejar que uma página seja acessível de um segundo local para fin
 Talvez você queira exibir nomes de página localizados para usuários de conteúdo traduzido. Por exemplo:
 
 * Em vez de um usuário de língua espanhola navegar até:
-   `www.mydomain.com/es/home.html`
+  `www.mydomain.com/es/home.html`
 
 * Seria melhor que o URL fosse:
-   `www.mydomain.com/es/casa.html`.
+  `www.mydomain.com/es/casa.html`.
 
-O desafio de localizar o nome da página é que muitas das ferramentas de localização disponíveis na plataforma AEM dependem que os nomes das páginas correspondam às localidades para manter o conteúdo sincronizado.
+O desafio em traduzir o nome da página é que muitas das ferramentas de tradução disponíveis na plataforma do AEM dependem da correspondência dos nomes das páginas entre os locais para manter o conteúdo sincronizado.
 
 A variável `sling:alias` a propriedade permite ter o Adobe bolo e comê-lo também. Você pode adicionar `sling:alias` como uma propriedade a qualquer recurso para permitir um nome de alias para o recurso. No exemplo anterior, você teria o seguinte:
 
 * Uma página no JCR em:
-   `…/es/home`
+  `…/es/home`
 
 * Em seguida, adicione uma propriedade a ela:
-   `sling:alias` = `casa`
+  `sling:alias` = `casa`
 
 Esse fluxo permite que as ferramentas de tradução do AEM, como o gerente de vários sites, continuem a manter uma relação entre:
 
@@ -221,12 +220,11 @@ Ao mesmo tempo, permitiria que os usuários finais interagissem com o nome da p�
 Em uma instalação padrão do AEM:
 
 * para a configuração do OSGi
-   **Apache Sling Resource Resolver Factory**
-( 
-`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
+  **Apache Sling Resource Resolver Factory**
+( `org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
 
 * a propriedade
-   **Localização do mapeamento** ( `resource.resolver.map.location`)
+  **Localização do mapeamento** ( `resource.resolver.map.location`)
 
 * toma como padrão `/etc/map`
 
@@ -255,8 +253,8 @@ No entanto, há também uma maneira mais simples de gerenciar esse problema:
    Usando o console da Web (por exemplo, localhost:4502/system/console/configMgr), você pode configurar o Sling Resource Resolver:
 
    * **Apache Sling Resource Resolver Factory**
+     `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
-      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
    O Adobe recomenda que você crie os mapeamentos necessários para encurtar URLs como expressões regulares e, em seguida, defina essas configurações em um nó OsgiConfig, `config.publish` que está incluído na sua build.
 
    Em vez de definir os mapeamentos no `/etc/map`, eles podem ser atribuídos diretamente à propriedade **Mapeamentos de URL** ( `resource.resolver.mapping`):
@@ -382,7 +380,7 @@ Por exemplo, considere um site que define uma raiz de mapa de site de nível sup
 
 Na configuração padrão, a caixa de diálogo Propriedades da página fornece uma opção para marcar uma página como uma raiz do mapa de site e, portanto, conforme descrito acima, gerar um mapa de site próprio e seus descendentes. Esse comportamento é implementado pelas implementações da interface `SitemapGenerator` e pode ser estendido adicionando implementações alternativas. No entanto, como a frequência na qual os mapas de site XML são regenerados depende dos fluxos de trabalho e cargas de trabalho de criação de conteúdo, o produto não envia nenhum `SitemapScheduler` configuração. Dessa forma, o recurso é efetivamente aceito.
 
-Para habilitar o trabalho em segundo plano que gera os mapas de site XML, `SitemapScheduler` deve ser configurado. Para fazer isso, crie uma configuração OSGI para o PID `org.apache.sling.sitemap.impl.SitemapScheduler`. A expressão do scheduler `0 0 0 * * ?` pode ser usada como ponto de partida para regenerar todos os mapas de site XML uma vez por dia, à meia-noite.
+Para habilitar o processo em segundo plano que gera os mapas de site XML, um `SitemapScheduler` precisa ser configurado. Para fazer isso, crie uma configuração OSGI para o PID `org.apache.sling.sitemap.impl.SitemapScheduler`. A expressão do scheduler `0 0 0 * * ?` pode ser usada como ponto de partida para regenerar todos os mapas de site XML uma vez por dia, à meia-noite.
 
 ![Apache Sling Sitemap - Scheduler](assets/sling-sitemap-scheduler.png)
 

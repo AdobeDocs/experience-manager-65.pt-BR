@@ -2,9 +2,9 @@
 title: Projetos
 description: Os projetos permitem agrupar recursos em uma entidade cujo ambiente comum e compartilhado facilita o gerenciamento de projetos.
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 1d64a9a6d6dfbc7606d7c222ef50a21bf9b902d6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1359'
 ht-degree: 34%
 
 ---
@@ -34,7 +34,7 @@ O console de projetos é onde você acessa e gerencia os projetos no AEM.
 
 ![O console de projetos](assets/screen-shot_2019-03-05at125110.png)
 
-O console de Projetos é semelhante a outros consoles no AEM, permite várias ações em projetos individuais, bem como ajustar a visualização dos projetos.
+O console de Projetos é semelhante a outros consoles no AEM, permite várias ações em projetos individuais e ajusta a visualização dos projetos.
 
 ### Alternar o modo {#modes}
 
@@ -129,7 +129,7 @@ A variável **Links** o bloco permite associar links externos ao projeto.
 
 ![Mosaico de links](assets/project-tile-links.png)
 
-Você pode nomear o link com um nome fácil de reconhecer, além de alterar a miniatura.
+É possível nomear o link com um nome fácil de reconhecer, além de alterar a miniatura.
 
 ### Informações do projeto {#project-info}
 

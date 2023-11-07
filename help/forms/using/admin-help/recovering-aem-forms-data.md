@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1121'
 ht-degree: 0%
 
 ---
@@ -71,15 +71,15 @@ Se um único nó de um cluster de vários nós falhar e os nós restantes do clu
 
    * (JBoss®) Renomear `[appserver root]/server/'server'/svcnative/DocumentStorage/backup` para:
 
-      `[appserver root]/server/'server'/svcnative/DocumentStorage/restore`.
+     `[appserver root]/server/'server'/svcnative/DocumentStorage/restore`.
 
    * (WebLogic) Renomear `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/backup` para:
 
-      `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/restore`.
+     `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/restore`.
 
    * Renomear (WebSphere®) `[appserver root]/installedApps/adobe/'server'/DocumentStorage/backup` para:
 
-      `[appserver root]/installedApps/adobe/'server'/DocumentStorage/restore`.
+     `[appserver root]/installedApps/adobe/'server'/DocumentStorage/restore`.
 
 1. Recupere o diretório raiz de armazenamento de conteúdo primeiro excluindo o conteúdo do diretório raiz de armazenamento de conteúdo na instalação existente do AEM Forms e, em seguida, recuperando o conteúdo seguindo as tarefas para ambientes independentes ou em cluster:
 
@@ -99,13 +99,13 @@ Se um único nó de um cluster de vários nós falhar e os nós restantes do clu
 
    * **Independente**
 
-      *Restaurar instâncias de criação e publicação*: Se ocorrer um desastre, você poderá restaurar o repositório para o último estado de backup executando as etapas descritas em [Backup e restauração.](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)
+     *Restaurar instâncias de criação e publicação*: Se ocorrer um desastre, você poderá restaurar o repositório para o último estado de backup executando as etapas descritas em [Backup e restauração.](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)
 
-      A restauração completa do nó Autor determina a restauração dos dados do Forms Manager e do AEM Forms Workspace também.
+     A restauração completa do nó Autor determina a restauração dos dados do Forms Manager e do AEM Forms Workspace também.
 
    * **Clusterizado**
 
-      Para restauração em um ambiente em cluster, consulte [Estratégia de backup e restauração em um ambiente em cluster](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
+     Para restauração em um ambiente em cluster, consulte [Estratégia de backup e restauração em um ambiente em cluster](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
 
 1. Exclua todos os arquivos temporários de formulários AEM criados no diretório java.io.temp ou no diretório temporário de Adobe.
 1. Inicie formulários AEM (consulte [Iniciar e parar serviços](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/help/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
@@ -124,7 +124,7 @@ Se o GDS for restaurado para um local diferente do local original, execute o scr
 
 >[!NOTE]
 >
->A implantação do componente falhará no Windows se o diretório GDS estiver na raiz da unidade (por exemplo, D:\). Para GDS, você deve verificar se o diretório não está localizado na raiz da unidade, mas está localizado em um subdiretório. Por exemplo, o diretório deve ser D:\GDS e não apenas D:\.
+>A implantação do componente falhará no Windows se o diretório GDS estiver na raiz da unidade (por exemplo, D:\). Para GDS, você deve verificar se o diretório não está localizado na raiz da unidade, mas está em um subdiretório. Por exemplo, o diretório deve ser D:\GDS e não apenas D:\.
 
 ## Recuperação do GDS em um ambiente em cluster {#recovering-the-gds-to-a-clustered-environment}
 

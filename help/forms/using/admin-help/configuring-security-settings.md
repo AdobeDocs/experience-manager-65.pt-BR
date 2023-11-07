@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a89ab508-173f-4b1c-88d9-ef944af4d9ae
 feature: PDF Generator
 exl-id: be076477-2681-4570-953d-6c44d3c30843
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1381'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Essas opções configuram as permissões:
 
 **Usar Uma Senha Para Restringir A Impressão E A Edição Do Documento E Suas Configurações De Segurança:** Ativa as restrições nas permissões.
 
-**Senha de permissões:** Restringe a impressão e edição de usuários. Os usuários não podem alterar essas configurações de segurança, a menos que digitem a senha especificada. Não é possível usar a mesma senha usada para a Senha para abrir o documento. Ao definir uma senha de permissões, somente as pessoas que digitarem essa senha poderão alterar as configurações de segurança. Se o documento PDF tiver os dois tipos de senha, qualquer uma delas o abrirá. No entanto, um usuário só pode definir ou alterar os recursos restritos com a senha de permissões. Se o documento PDF tiver somente a senha de permissão ou se um usuário abrir o documento usando a senha de abertura do documento, o aviso de senha será exibido quando o usuário tentar alterar as configurações de segurança.
+**Senha de permissões:** Restringe a impressão e edição de usuários. Os usuários não podem alterar essas configurações de segurança, a menos que digitem a senha especificada. Não é possível usar a mesma senha usada para a Senha para abrir o documento. Ao definir uma senha de permissões, somente as pessoas que digitarem essa senha poderão alterar as configurações de segurança. Se o documento PDF tiver os dois tipos de senha, qualquer senha o abrirá. No entanto, um usuário só pode definir ou alterar os recursos restritos com a senha de permissões. Se o documento PDF tiver somente a senha de permissão ou se um usuário abrir o documento usando a senha de abertura do documento, o aviso de senha será exibido quando o usuário tentar alterar as configurações de segurança.
 
 **Digite a senha das permissões novamente:** Verifique se a senha das permissões está correta.
 
@@ -99,7 +99,7 @@ Essas opções configuram as permissões:
 
 **Nenhum:** Impede que os usuários alterem o documento, incluindo o preenchimento de campos de assinatura e formulário.
 
-**Inserir, Excluir E Girar Páginas:** Permite que os usuários insiram, excluam e girem páginas, bem como criar marcadores e páginas de miniaturas. Essa opção só estará disponível se um nível de criptografia alto (Acrobat 5.0, 6.0, 7.0 ou 9.0) for selecionado.
+**Inserir, Excluir E Girar Páginas:** Permite que os usuários insiram, excluam e girem páginas e criem marcadores e páginas em miniatura. Essa opção só estará disponível se um nível de criptografia alto (Acrobat 5.0, 6.0, 7.0 ou 9.0) for selecionado.
 
 **Preencher Campos De Formulário E Assinar Campos De Assinatura Existentes:** Permite que os usuários preencham formulários e adicionem assinaturas digitais. No entanto, os usuários não podem adicionar comentários ou criar campos de formulário. Essa opção só estará disponível se um nível de criptografia alto (Acrobat 5.0, 6.0, 7.0 ou 9.0) for selecionado.
 

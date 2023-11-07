@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '5375'
 ht-degree: 0%
@@ -528,7 +528,7 @@ A classe usa anotações Felix SCR para configurar o tipo de recurso e a extens�
 })
 ```
 
-O servlet usa a anotação SCR de propriedade para definir a qualidade e as dimensões de imagem padrão compatíveis.
+O servlet usa a anotação SCR de propriedade para definir a qualidade e as dimensões de imagem padrão suportadas.
 
 ```java
 @Property(value = {
@@ -628,7 +628,7 @@ A classe usa anotações Felix SCR para configurar o tipo de recurso e a extens�
 })
 ```
 
-O servlet usa a anotação SCR de propriedade para definir a qualidade e as dimensões de imagem padrão compatíveis.
+O servlet usa a anotação SCR de propriedade para definir a qualidade e as dimensões de imagem padrão suportadas.
 
 ```java
 @Property(label = "Image Quality",
@@ -929,20 +929,20 @@ O CSS inclui uma série de consultas de mídia que usam a seguinte estrutura:
 
 Use o algoritmo a seguir como ponto de partida para desenvolver as classes de elemento e os estilos CSS para as suas páginas.
 
-1. Defina um nome de classe para o elemento div que contém todas as linhas, por exemplo `content.`
+1. Defina um nome de classe para o elemento div que contém todas as linhas, por exemplo, `content.`
 1. Defina uma classe CSS para elementos div que representam linhas, como `row-fluid`.
 1. Defina nomes de classe para elementos de bloco de conteúdo. Uma classe é necessária para todas as larguras possíveis, em termos de extensões de coluna. Por exemplo, use o `span3` classe para `div` elementos que abrangem três colunas, use `span4` classes para extensões de quatro colunas. Defina quantas classes houver colunas na grade.
 
 1. Para cada tamanho de visor que você está direcionando, adicione a consulta de mídia correspondente ao arquivo CSS. Adicione os seguintes itens em cada consulta de mídia:
 
-   * Um seletor para o `content` classe, por exemplo `.content{}`.
-   * Seletores para cada classe de span, por exemplo `.span3{ }`.
-   * Um seletor para o `row-fluid` classe, por exemplo `.row-fluid{ }`
-   * Seletores para classes span que estão dentro de classes de fluido de linha, por exemplo `.row-fluid span3 { }`.
+   * Um seletor para o `content` classe, por exemplo, `.content{}`.
+   * Seletores para cada classe de span, por exemplo, `.span3{ }`.
+   * Um seletor para o `row-fluid` classe, por exemplo, `.row-fluid{ }`
+   * Seletores para classes span que estão dentro de classes de fluido de linha, por exemplo, `.row-fluid span3 { }`.
 
 1. Adicionar estilos de largura para cada seletor:
 
-   1. Definir a largura de `content` ao tamanho absoluto da página, por exemplo `width:480px`.
+   1. Definir a largura de `content` seletores para o tamanho absoluto da página, por exemplo, `width:480px`.
    1. Defina a largura de todos os seletores de fluido de linha para 100%.
    1. Defina a largura de todos os seletores de extensão com a largura absoluta do bloco de conteúdo. Uma grade trivial usa colunas distribuídas uniformemente com a mesma largura: `(absolute width of page)/(number of columns)`.
    1. Defina a largura do `.row-fluid .span` seletores como uma porcentagem da largura total. Calcule essa largura usando o `(absolute span width)/(absolute page width)*100` fórmula.

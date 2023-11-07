@@ -8,9 +8,9 @@ topic-tags: publish
 discoiquuid: 2ad4b7b5-2162-4599-af3f-9476f1256de6
 docset: aem65
 exl-id: d4035c91-ee8d-4f12-bdac-e3912be732d7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '521'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Você pode usar a etapa Atribuir tarefa para criar e atribuir tarefas a um usuá
 
 ![Notificação por email com modelo pronto para uso](do-not-localize/default_email_template_new.png)
 
-Você pode personalizar a aparência e usar metadados personalizados em uma notificação por email. A AEM Forms fornece um modelo pronto para uso para notificações por email. É possível personalizar o modelo pronto para uso ou criar um novo modelo do zero.
+Você pode personalizar a aparência e usar metadados personalizados em uma notificação por email. A AEM Forms fornece um modelo pronto para uso para notificações por email. É possível personalizar o modelo pronto para uso ou criar um modelo do zero.
 
 Os modelos de notificação por email são baseados em [email do HTML](https://en.wikipedia.org/wiki/HTML_email). Esses emails se adaptam a diferentes clientes de email e tamanhos de tela. Além disso, o estilo do email é definido no template.
 
@@ -57,7 +57,7 @@ Por padrão, o AEM Forms fornece um modelo para notificações por email. O mode
 
 1. Adicione o código de HTML personalizado ao arquivo.
 
-   Um modelo de notificação por e-mail é um [email do HTML](https://en.wikipedia.org/wiki/HTML_email). Você pode adicionar um código de HTML personalizado ao arquivo para criar um novo modelo.
+   Um modelo de notificação por e-mail é um [email do HTML](https://en.wikipedia.org/wiki/HTML_email). Você pode adicionar um código de HTML personalizado ao arquivo para criar um modelo.
 
 1. Salve o arquivo. O modelo está pronto para uso na etapa Atribuir tarefa.
 

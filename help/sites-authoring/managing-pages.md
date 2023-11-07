@@ -2,10 +2,10 @@
 title: Criação e organização de páginas com AEM
 description: Saiba como criar e gerenciar páginas com o Adobe Experience Manager.
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2434'
-ht-degree: 78%
+source-wordcount: '2412'
+ht-degree: 70%
 
 ---
 
@@ -21,11 +21,11 @@ Esta seção descreve como criar e gerenciar páginas com o Adobe Experience Man
 
 >[!NOTE]
 >
->Há vários [atalhos de teclado](/help/sites-authoring/keyboard-shortcuts.md) que você pode usar no console Sites que tornam a organização das suas páginas mais eficiente.
+>Há vários [atalhos de teclado](/help/sites-authoring/keyboard-shortcuts.md) que você pode usar no console sites, que torna a organização das suas páginas mais eficiente.
 
 ## Organizar seu site {#organizing-your-website}
 
-Como autor, será necessário organizar seu site dentro do AEM. Isso envolve criar e nomear suas páginas de conteúdo de modo que:
+Como autor, organize seu site no AEM. Isso envolve criar e nomear suas páginas de conteúdo de modo que:
 
 * Você pode encontrá-las facilmente no ambiente de criação
 * Os visitantes do seu site possam navegar facilmente por elas no ambiente de publicação
@@ -78,7 +78,7 @@ De qualquer ponto, você pode visualizar a ramificação ascendente da navegaç�
 
 ### Convenções de nomenclatura da página {#page-naming-conventions}
 
-Ao criar uma nova página, existem dois campos principais:
+Ao criar uma página, há dois campos principais:
 
 * **[Título](#title)**:
 
@@ -104,7 +104,7 @@ O **Título** da página e o **Nome** podem ser criados separadamente, mas estã
 >
 >Lembre-se também de que alguns navegadores (por exemplo, versões mais antigas do IE) só podem aceitar URLs com um limite de comprimento, por isso também há um motivo técnico para manter os nomes de página curtos.
 
-Ao criar uma nova página, o AEM [validará o nome da página de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR.
+Ao criar uma página, AEM [valida o nome da página de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostos pelo AEM e pelo JCR.
 
 Os caracteres mínimos permitidos são:
 
@@ -122,7 +122,7 @@ Detalhes completos sobre todos os caracteres permitidos podem ser encontrados na
 
 #### Título {#title}
 
-Quando você fornece apenas um **Título** de página ao criar uma nova página, o AEM deriva o **Nome** de página desta cadeia de caracteres e o valida[ de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR. Um campo de **Título** que contém caracteres inválidos será aceito, mas o nome derivado terá os caracteres inválidos substituídos. Por exemplo:
+Se você fornecer apenas uma página **Título** ao criar uma página, o AEM deriva a página **Nome** desta cadeia de caracteres e [validar o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostos pelo AEM e pelo JCR. Um campo de **Título** que contém caracteres inválidos será aceito, mas o nome derivado terá os caracteres inválidos substituídos. Por exemplo:
 
 | Título | Nome derivado |
 |---|---|
@@ -131,7 +131,7 @@ Quando você fornece apenas um **Título** de página ao criar uma nova página,
 
 #### Nome {#name}
 
-Quando você fornece um **Nome** de página ao criar uma nova página, o AEM valida[ o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR. Não é possível inserir caracteres inválidos no campo **Nome**. Quando o AEM detecta caracteres inválidos, o campo é realçado com uma mensagem explicativa.
+Quando você fornece uma página **Nome** ao criar uma página, AEM [valida o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostos pelo AEM e pelo JCR. Não é possível inserir caracteres inválidos no campo **Nome**. Quando o AEM detecta caracteres inválidos, o campo é realçado com uma mensagem explicativa.
 
 ![caop-02](assets/caop-02.png)
 
@@ -143,7 +143,7 @@ Quando você fornece um **Nome** de página ao criar uma nova página, o AEM val
 
 ### Modelos {#templates}
 
-No AEM, um modelo especifica um tipo especializado de página. Um modelo será usado como a base para qualquer nova página que está sendo criada.
+No AEM, um modelo especifica um tipo especializado de página. Um modelo é usado como a base para qualquer nova página que está sendo criada.
 
 O modelo define a estrutura de uma página, incluindo uma imagem em miniatura e outras propriedades. Por exemplo, você pode ter modelos separados para páginas de produtos, mapas de site e informações de contato. Os modelos são compostos de [componentes](#components).
 
@@ -183,7 +183,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, an
 
 1. Abra o console Sites (por exemplo, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
 1. Navegue até o local onde deseja criar a nova página.
-1. Abra o seletor suspenso usando **Criar** na barra de ferramentas e, em seguida, selecione **Página** na lista:
+1. Abra o seletor suspenso usando **Criar** na barra de ferramentas e selecione **Página** na lista:
 
    ![caop-03](assets/caop-03.png)
 
@@ -210,7 +210,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, an
    * **Nome**:
 
       * Usado para gerar o URI. Se não especificado, o nome é derivado do título.
-      * Quando você fornece um **Nome** de página ao criar uma nova página, o AEM valida[ esse nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR.
+      * Se você fornecer uma página **Nome** ao criar uma página, AEM [valida o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostos pelo AEM e pelo JCR.
 
       * **Não é possível inserir caracteres inválidos** no campo **Nome**. Quando o AEM detectar caracteres inválidos, o campo será realçado e uma mensagem explicativa será exibida para indicar os caracteres que precisam ser removidos/substituídos.
 
@@ -218,7 +218,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, an
    >
    >Consulte [Convenções de nomenclatura da página](#page-naming-conventions).
 
-   A informação mínima necessária para criar uma nova página é o **Título**.
+   As informações mínimas necessárias para criar uma página são **Título**.
 
    ![caop-05](assets/caop-05.png)
 
@@ -228,7 +228,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, an
 
    >[!NOTE]
    >
-   >Caso crie uma página usando um nome que já existe no local, o sistema vai gerar automaticamente uma variação do nome, ao anexar um número. Por exemplo, se `winter` já existir, uma nova página se tornará `winter0`.
+   >Caso crie uma página usando um nome que já existe no local, o sistema vai gerar automaticamente uma variação do nome, ao anexar um número. Por exemplo, se `winter` já existe uma nova página se tornará `winter0`.
 
 1. Caso volte ao console, você verá em sua nova página:
 
@@ -278,17 +278,17 @@ Você pode copiar uma página e todas as suas subpáginas para um novo local:
    >Se você estiver no modo de seleção, isso será encerrado automaticamente assim que a página for copiada.
 
 1. Navegue até o local para a nova cópia da página.
-1. O ícone **Colar** está disponível com uma seta suspensa à direita:
+1. A variável **Colar** O ícone está disponível com uma seta suspensa à direita:
 
    ![Colar](assets/paste-without-children.png)
 
    Você pode:
    * Selecionar o próprio ícone **Colar**: uma cópia da página original e qualquer página secundária serão criadas neste local.
-   * Selecione a seta suspensa para revelar a opção **Colar sem filhos**. Será criada uma cópia da página original neste local; páginas secundárias não serão copiadas.
+   * Selecione a seta suspensa para revelar a **Colar sem filhos** opção. Será criada uma cópia da página original neste local; páginas secundárias não serão copiadas.
 
    >[!NOTE]
    >
-   >Se você copiar a página para um local onde uma página com o mesmo nome que a original já existir, o sistema gerará automaticamente uma variação do nome anexando um número. Por exemplo, se `winter` já existir, `winter` se tornará `winter1`.
+   >Se você copiar a página para um local onde uma página com o mesmo nome que a original já existir, o sistema gerará automaticamente uma variação do nome anexando um número. Por exemplo, se `winter` já existe `winter` se tornará `winter1`.
 
 ### Mover ou renomear uma página {#moving-or-renaming-a-page}
 
@@ -318,7 +318,7 @@ O AEM oferece a funcionalidade de atualizar todos os links internos que se refer
 
    ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
 
-   Isso abrirá o assistente para mover a página.
+   Isso abre o assistente para mover página.
 
 1. No estágio **Renomear** do assistente, é possível:
 
@@ -332,7 +332,7 @@ O AEM oferece a funcionalidade de atualizar todos os links internos que se refer
 
    >[!NOTE]
    >
-   >Se você mover uma página para um local onde uma página com o mesmo nome já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `winter` já existir, `winter` se tornará `winter1`.
+   >Se você mover uma página para um local onde uma página com o mesmo nome já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `winter` já existe `winter` se tornará `winter1`.
 
 1. No estágio **Selecionar destino** do assistente, é possível:
 
@@ -351,7 +351,7 @@ O AEM oferece a funcionalidade de atualizar todos os links internos que se refer
 
    >[!NOTE]
    >
-   >Se você mover uma página para um local onde uma página com o mesmo nome já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `winter` já existir, `winter` se tornará `winter1`.
+   >Se você mover uma página para um local onde uma página com o mesmo nome já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `winter` já existe `winter` se tornará `winter1`.
 
 1. Se a página estiver vinculada ou referenciada, ou tiver sido publicada, os detalhes serão listados na etapa **Ajustar/Republicar**.
 

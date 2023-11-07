@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 exl-id: e3f018e6-563e-456f-99d5-d232f1a4aa55
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '883'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,7 @@ cURL é uma ferramenta de linha de comando de código aberto usada para executar
 
 O cURL é uma ferramenta bem estabelecida e amplamente usada para obter ou enviar dados usando a sintaxe de URL e foi lançado originalmente em 1997. O nome cURL originalmente significava &quot;ver URL&quot;.
 
-Devido à natureza RESTful da estrutura do Sling no qual o AEM é criado, a maioria das tarefas pode ser reduzida a uma chamada de URL, que pode ser executada com cURL. [Tarefas de manipulação de conteúdo](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) como ativar páginas e iniciar workflows, e [tarefas operacionais](/help/sites-administering/curl.md#common-operational-aem-curl-commands) como gerenciamento de pacotes e gerenciamento de usuários podem ser automatizados usando cURL. Além disso, você pode [criar seu próprio cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) para a maioria das tarefas no AEM.
+Devido à natureza RESTful da estrutura do Sling no qual o AEM é criado, a maioria das tarefas pode ser reduzida a uma chamada de URL, que pode ser executada com cURL. [Tarefas de manipulação de conteúdo](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) como ativar páginas e iniciar workflows e [tarefas operacionais](/help/sites-administering/curl.md#common-operational-aem-curl-commands) como gerenciamento de pacotes e gerenciamento de usuários podem ser automatizados usando cURL. Além disso, você pode [criar seu próprio cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) para a maioria das tarefas no AEM.
 
 >[!NOTE]
 >

@@ -1,26 +1,22 @@
 ---
 title: Criação e uso de temas
-seo-title: Creating and using themes
 description: Você pode usar temas para estilizar e fornecer uma identidade visual a um formulário adaptável ou comunicação interativa. Você pode compartilhar um tema em qualquer número de formulários adaptáveis ou comunicações interativas.
-seo-description: You can use themes to stylize and provide a visual identity to an adaptive form or interactive communication. You can share a theme across any number of adaptive forms or interactive communications.
-uuid: 88b6b6fd-181b-48c5-ac15-2b37592bd14b
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, interactive-communications
 content-strategy: max-2018
-discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 feature: Adaptive Forms
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '6106'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # Criação e uso de temas {#creating-and-using-themes}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -170,7 +166,7 @@ Lista de metapropriedades de um tema (encontrada na página de propriedades de u
    <td>
     <ul>
      <li>Contém a seção "Referenciado por". Lista os formulários que usam o tema.</li>
-     <li>Como o tema não se refere a nenhum outro ativo, não há seção "Referências".</li>
+     <li>Como o tema não se refere a nenhum outro ativo, não há seção "Indica".</li>
     </ul> </td>
   </tr>
   <tr>
@@ -498,8 +494,8 @@ Agora é possível usar fontes disponíveis em um serviço da Web em um formulá
 
 Execute as seguintes etapas para configurar o Adobe Fonts no AEM:
 
-1. Na instância do autor, clique em ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Ferramentas ![martelo](assets/hammer.png) > Implantação > Cloud Services.
-1. No **Cloud Services** , navegue até e abra a **Adobe Fonts** opção. Abra a pasta de configuração e clique em **Criar**.
+1. Na instância do autor, clique em ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Ferramentas ![martelo](assets/hammer.png) > Implantação > Cloud Service.
+1. No **Cloud Service** , navegue até e abra a **Adobe Fonts** opção. Abra a pasta de configuração e clique em **Criar**.
 1. No **Criar configuração** , especifique um título para a configuração e clique em **Criar**.
 
    Você é redirecionado para a página de configuração.
@@ -624,11 +620,11 @@ Por exemplo, a cor de fundo de uma caixa de texto é azul na biblioteca base do 
 
 ## Depuração de estilos {#debugging-styles}
 
-Quando você especifica estilos para componentes no Editor de temas, um CSS é gerado. Ao estilizar um componente genérico, vários componentes incluídos nele também são estilizados. Por exemplo, ao estilizar um campo, a caixa de texto e o rótulo nele também são estilizados. Quando você estiliza a caixa de texto dentro do campo, ela recebe seu próprio CSS. Se você quiser depurar o CSS gerado para o campo e o componente, o Editor de temas fornece opções que permitem exibir CSS.
+Quando você especifica estilos para componentes no Editor de temas, um CSS é gerado. Ao estilizar um componente genérico, vários componentes incluídos nele também são estilizados. Por exemplo, ao estilizar um campo, a caixa de texto e o rótulo nele também são estilizados. Quando você estiliza a caixa de texto dentro do campo, ele obtém seu próprio CSS. Se você quiser depurar o CSS gerado para o campo e o componente, o Editor de temas fornece opções que permitem exibir CSS.
 
 Você pode ver o CSS gerado usando as seguintes opções:
 
-* **Exibir CSS** opção na barra lateral: Ao selecionar um componente no Tema, você pode ver a opção VISUALIZAR CSS na barra lateral. Ela mostra o CSS gerado, incluindo o CSS de `::before` e `::after` pseudo elementos.
+* **Exibir CSS** opção na barra lateral: Ao selecionar um componente no Tema, você pode ver a opção VISUALIZAR CSS na barra lateral. Ela mostra o CSS gerado, incluindo o CSS de `::before` e `::after` pseudoelementos.
 * **Exibir tema CSS** opção na barra de ferramentas da tela de desenho: na barra de ferramentas da tela de desenho, clique em ![theme-options](assets/theme-options.png) > **Exibir tema CSS**. Você pode ver todo o tema CSS gerado pelas propriedades definidas no Editor de temas.
 
 ## Resolução de problemas, recomendações e práticas recomendadas {#troubleshooting-recommendations-and-best-practices}

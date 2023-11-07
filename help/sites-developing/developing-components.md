@@ -12,10 +12,10 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 823e756f470b0599f7d53a3e08fdf650b4e892d1
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3454'
-ht-degree: 2%
+source-wordcount: '3446'
+ht-degree: 1%
 
 ---
 
@@ -206,13 +206,13 @@ Para obter exemplos, consulte:
 
 Os dispositivos para a interface habilitada para toque são implementados como componentes de interface do Granite.
 
-Para criar um novo widget para usar em uma caixa de diálogo de componente para a interface habilitada para toque, é necessário [criar um novo componente de campo da interface de usuário do Granite](/help/sites-developing/granite-ui-component.md).
+Para criar um widget para usar em uma caixa de diálogo de componente para a interface habilitada para toque, é necessário [criar um componente de campo da interface de usuário do Granite](/help/sites-developing/granite-ui-component.md).
 
 >[!NOTE]
 >
 >Para obter detalhes completos sobre a interface do Granite, consulte a [Documentação da interface de usuário do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
-Se você considerar sua caixa de diálogo como um contêiner simples para um elemento de formulário, também poderá ver o conteúdo principal do seu conteúdo da caixa de diálogo como campos de formulário. A criação de um novo campo de formulário requer a criação de um tipo de recurso; isso é equivalente à criação de um novo componente. Para ajudá-lo nessa tarefa, a interface do usuário do Granite oferece um componente de campo genérico do qual herdar (usando `sling:resourceSuperType`):
+Se você considerar sua caixa de diálogo como um contêiner simples para um elemento de formulário, também poderá ver o conteúdo principal do seu conteúdo da caixa de diálogo como campos de formulário. A criação de um campo de formulário requer a criação de um tipo de recurso; é equivalente à criação de um componente. Para ajudá-lo nessa tarefa, a interface do usuário do Granite oferece um componente de campo genérico do qual herdar (usando `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
@@ -228,7 +228,7 @@ Depois de criar o tipo de recurso, é possível instanciar o campo adicionando u
 
 Se quiser definir o estilo e o comportamento do componente, você poderá criar um [biblioteca do cliente](/help/sites-developing/clientlibs.md) que define seus CSS/LESS e JS personalizados.
 
-Para carregar a biblioteca do cliente exclusivamente para a caixa de diálogo do componente (ou seja, ela não será carregada para outro componente), é necessário definir a propriedade `extraClientlibs` da caixa de diálogo para o nome da categoria da biblioteca do cliente que você acabou de criar. Isso é aconselhável se a biblioteca do cliente for muito grande e/ou se o campo for específico para essa caixa de diálogo e não for necessário em outras caixas de diálogo.
+Para carregar a biblioteca do cliente exclusivamente para a caixa de diálogo do componente (ou seja, ela não será carregada para outro componente), é necessário definir a propriedade `extraClientlibs` da caixa de diálogo para o nome da categoria da biblioteca do cliente que você criou. Isso é aconselhável se a biblioteca do cliente for muito grande e/ou se o campo for específico para essa caixa de diálogo e não for necessário em outras caixas de diálogo.
 
 Para carregar a biblioteca do cliente para todas as caixas de diálogo, defina a propriedade category da biblioteca do cliente como `cq.authoring.dialog`. Esse é o nome da categoria da biblioteca do cliente que é incluído por padrão ao renderizar todas as caixas de diálogo. Você deseja fazer isso se a biblioteca do cliente for pequena e/ou seu campo for genérico e puder ser reutilizado em outras caixas de diálogo.
 
@@ -346,13 +346,13 @@ Se o novo componente fizer referência ao conteúdo de outras páginas, você po
 
 O AEM pronto para uso verifica apenas o componente de Referência. Para adicionar seu componente, é necessário configurar o pacote OSGi **Configuração de referência de conteúdo de criação do WCM**.
 
-Crie uma nova entrada na definição, especificando seu componente, juntamente com a propriedade a ser verificada. Por exemplo:
+Crie uma entrada na definição, especificando seu componente, juntamente com a propriedade a ser verificada. Por exemplo:
 
 `/apps/<*your-Project*>/components/reference@parentPath`
 
 >[!NOTE]
 >
->Ao trabalhar com o AEM há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas
+>Ao trabalhar com o AEM, há vários métodos de gerenciamento das definições de configuração desses serviços. Consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
 
 ## Ativação e adição do componente ao sistema de parágrafos {#enabling-and-adding-your-component-to-the-paragraph-system}
 
@@ -373,12 +373,12 @@ Esse comportamento e a relação necessária entre ativo e componente podem ser 
 
    * `/etc/designs/<myApp>/page/par`
 
-   Criar um novo nó:
+   Criar um nó:
 
    * Nome: `cq:authoring`
    * Tipo: `nt:unstructured`
 
-1. Em, crie um novo nó para manter todos os mapeamentos de ativo para componente:
+1. Em, crie um nó para manter todos os mapeamentos de ativo para componente:
 
    * Nome: `assetToComponentMapping`
    * Tipo: `nt:unstructured`
@@ -398,7 +398,7 @@ Esse comportamento e a relação necessária entre ativo e componente podem ser 
    * `assetMimetype`:
 
       * Tipo: `String`
-      * Valor: o tipo MIME do ativo relacionado; por exemplo `image/*`
+      * Valor: o tipo MIME do ativo relacionado; por exemplo, `image/*`
 
    * `droptarget`:
 

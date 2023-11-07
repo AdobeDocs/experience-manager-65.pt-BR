@@ -3,9 +3,9 @@ title: Criando um Manipulador de Usuários Externos para Convidar
 description: Saiba como criar um Manipulador de usuários externos para convite. Ele permite que o serviço Rights Management convide usuários externos para se tornarem usuários Rights Management.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1132'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Para desenvolver um Handler de Usuários Externos do Convite, você deve executa
 
 ## Configurar o ambiente de desenvolvimento {#setting-up-development-environment}
 
-Para configurar seu ambiente de desenvolvimento, você deve criar um novo projeto Java, como um projeto Eclipse. A versão do Eclipse compatível é `3.2.1` ou posteriormente.
+Para configurar seu ambiente de desenvolvimento, você deve criar um projeto Java, como um projeto Eclipse. A versão do Eclipse compatível é `3.2.1` ou posteriormente.
 
 O Rights Management SPI exige o `edc-server-spi.jar` arquivo a ser definido no caminho de classe do projeto. Se você não fizer referência a esse arquivo JAR, não poderá usar o SPI do Rights Management no projeto Java. Esse arquivo JAR é instalado com o SDK do AEM Forms no `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi` pasta.
 

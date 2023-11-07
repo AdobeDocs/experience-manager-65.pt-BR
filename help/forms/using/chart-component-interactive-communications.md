@@ -11,9 +11,9 @@ discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 feature: Interactive Communication
 exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2612'
+source-wordcount: '2608'
 ht-degree: 2%
 
 ---
@@ -161,7 +161,7 @@ Configure as seguintes propriedades ao criar gráficos para canais de impressão
    <td><p>Além das configurações comuns, as seguintes configurações específicas do gráfico estão disponíveis:</p>
     <ul>
      <li><strong>Mostrar legenda: </strong>Mostra uma legenda para o gráfico de pizza ou rosca quando habilitado.</li>
-     <li><strong>Posição da legenda: </strong>Especifica a posição da legenda em relação ao gráfico. As opções disponíveis são Direita, Esquerda, Superior e Inferior. É recomendável usar a legenda do lado direito no canal de impressão.</li>
+     <li><strong>Posição da legenda: </strong>Especifica a posição da legenda em relação ao gráfico. As opções disponíveis são Direita, Esquerda, Superior e Inferior. Use a legenda do lado direito no canal de impressão.</li>
      <li><strong>Raio interno</strong>: Disponível para gráficos de rosca para especificar o raio (em pixels) do círculo interno no gráfico.</li>
      <li><strong>Cor da linha</strong>: Disponível para gráficos de Linha, Linha e Ponto e Área para especificar a cor da linha no gráfico.</li>
      <li><strong>Cor do ponto</strong>: Disponível para gráficos de Ponto e Linha e Ponto para especificar a cor dos pontos no gráfico.<br /> </li>

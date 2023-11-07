@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '953'
 ht-degree: 4%
 
 ---
@@ -29,7 +29,7 @@ Os consoles de administração de usuários e grupos do Granite estão disponív
 
 ![Console Ferramentas](assets/chlimage_1-72a.png)
 
-Escolhendo um **Usuários** ou **Grupos** no console Ferramentas, o console apropriado será aberto. Em ambos, é possível realizar ações usando a caixa de cliques e, em seguida, as ações na barra de ferramentas, ou abrindo os detalhes da conta por meio do link em **Nome**.
+Escolhendo um **Usuários** ou **Grupos** no console Ferramentas abre o console apropriado. Em ambos, é possível realizar ações usando a caixa de cliques e, em seguida, as ações na barra de ferramentas, ou abrindo os detalhes da conta por meio do link em **Nome**.
 
 * [Administração de usuários](#user-administration)
 
@@ -59,7 +59,7 @@ Escolhendo um **Usuários** ou **Grupos** no console Ferramentas, o console apro
 
    ![Ícone Adicionar usuário](do-not-localize/chlimage_1-1.png)
 
-1. A variável **Criar usuário** O formulário será aberto:
+1. A variável **Criar usuário** abertura do formulário:
 
    ![Formulário Detalhes do usuário](assets/chlimage_1-75a.png)
 
@@ -176,7 +176,7 @@ Você pode sinalizar a conta como **ativo** ou **inativo**.
 
    ![Adicionar um novo grupo](do-not-localize/chlimage_1-4.png)
 
-1. A variável **Criar grupo** O formulário será aberto:
+1. A variável **Criar grupo** abertura do formulário:
 
    ![Formulário Detalhes do grupo](assets/chlimage_1-79a.png)
 
@@ -188,7 +188,7 @@ Você pode sinalizar a conta como **ativo** ou **inativo**.
 
    * **Nome**
 
-     Um nome para o grupo; ele será mostrado no console Grupos.
+     Um nome para o grupo; ele é mostrado no console Grupos.
 
    * **Descrição**
 

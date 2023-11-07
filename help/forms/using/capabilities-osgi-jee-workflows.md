@@ -3,10 +3,10 @@ title: Ações e recursos de fluxos de trabalho do AEM centrados em formulários
 description: Ações e recursos de fluxos de trabalho do AEM centrados em formulários em fluxos de trabalho OSGi e AEM Forms JEE
 contentOwner: khsingh
 exl-id: 505b8988-b2b3-4222-b3cb-9b3c6259fdd2
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 22%
+source-wordcount: '925'
+ht-degree: 23%
 
 ---
 
@@ -396,7 +396,7 @@ Os fluxos de trabalho do AEM centrados em formulários no OSGi e os fluxos de tr
 
 ## Diferenças entre a Caixa de entrada do AEM e os recursos do aplicativo AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Duas das principais maneiras de iniciar um fluxo de trabalho centrado no Forms são usar [Caixa de entrada AEM](../../forms/using/manage-applications-inbox.md) e AEM Forms. No entanto, os recursos da Caixa de entrada AEM e do aplicativo AEM Forms são diferentes. A Caixa de entrada AEM funciona somente com [Fluxos de trabalho centrados na Forms](../../forms/using/aem-forms-workflow.md) enquanto o aplicativo AEM Forms funciona com fluxos de trabalho centrados no Forms e também com gerenciamento de processos.
+Duas das principais maneiras de iniciar um fluxo de trabalho centrado no Forms são usar [Caixa de entrada AEM](../../forms/using/manage-applications-inbox.md) e AEM Forms. No entanto, os recursos da Caixa de entrada AEM e do aplicativo AEM Forms são diferentes. A Caixa de entrada AEM funciona somente com [Fluxos de trabalho centrados na Forms](../../forms/using/aem-forms-workflow.md) enquanto o aplicativo AEM Forms funciona com fluxos de trabalho e gerenciamento de processos centrados na Forms.
 
 A tabela a seguir lista os recursos da Caixa de entrada AEM e do aplicativo AEM Forms:
 

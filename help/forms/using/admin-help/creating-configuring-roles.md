@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 737fb4d1-adef-47e1-9a0d-8cddd13132cb
 exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2525'
+source-wordcount: '2523'
 ht-degree: 0%
 
 ---
@@ -201,7 +201,7 @@ Você também pode atribuir funções usando a página Gerenciamento de funçõe
 
 **Controle de configurações principais:** Gerencie as configurações na página Configurações principais do sistema no Console de administração
 
-**CREATE_VERSION_PERM:** Criar uma nova versão de um serviço
+**CREATE_VERSION_PERM:** Criar uma versão de um serviço
 
 **Modificação de credencial:** Modificar qualquer credencial de assinatura no Armazenamento de Confiança
 
@@ -291,7 +291,7 @@ Você também pode atribuir funções usando a página Gerenciamento de funçõe
 
 **Coordenador de Adição do Conjunto de Políticas do Rights Management:** Adicionar, remover e alterar permissões para coordenadores de definições de políticas
 
-**Política Rights Management Definir Criar Política:** Criar uma nova política para um conjunto de políticas
+**Política Rights Management Definir Criar Política:** Criar uma política para um conjunto de políticas
 
 **Política Rights Management Definir Política de Exclusão:** Remover uma política de um conjunto de políticas
 

@@ -6,10 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: b0786b52-879e-4a24-9cc9-bd9dcb2473cc
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1225'
-ht-degree: 0%
+source-wordcount: '1222'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ Esta seção inclui as seguintes etapas para configurar o SSL com seu IBM WebSph
 
 Para habilitar o SSL, o WebSphere precisa acessar uma conta de usuário no registro de usuário do SO local que tenha permissão para administrar o sistema:
 
-* (Windows) Crie um novo usuário do Windows que faça parte do grupo Administradores e tenha o privilégio de atuar como parte do sistema operacional. (Consulte [Criar um usuário do Windows para o WebSphere](configuring-ssl-websphere-application-server.md#create-a-windows-user-for-websphere).)
+* (Windows) Crie um usuário do Windows que faça parte do grupo Administradores e tenha o privilégio de atuar como parte do sistema operacional. (Consulte [Criar um usuário do Windows para o WebSphere](configuring-ssl-websphere-application-server.md#create-a-windows-user-for-websphere).)
 * (Linux, UNIX) O usuário pode ser um usuário root ou outro usuário que tenha privilégios root. Ao habilitar o SSL no WebSphere, use a identificação e a senha do servidor desse usuário.
 
 ### Criar um usuário Linux ou UNIX para o WebSphere {#create-a-linux-or-unix-user-for-websphere}
@@ -37,7 +37,7 @@ Para habilitar o SSL, o WebSphere precisa acessar uma conta de usuário no regis
 
    >[!NOTE]
    >
-   >(Linux e Solaris) Para que o registro de segurança do sistema operacional local do WebSphere Application Server funcione, um arquivo de senha sombra deve existir. O arquivo de senha sombra geralmente é nomeado **/etc/shadow** e é baseado no arquivo /etc/passwd. Se a sombra senha arquivo não existir, ocorrerá um erro após ativar a segurança global e configurar o registro de usuário como sistema operacional local.
+   >(Linux e Solaris) Para que o registro de segurança do SO local do WebSphere Application Server funcione, um arquivo de senha de sombra deve existir. O arquivo de senha sombra geralmente é nomeado **/etc/shadow** e é baseado no arquivo /etc/passwd. Se a sombra senha arquivo não existir, ocorrerá um erro após ativar a segurança global e configurar o registro de usuário como sistema operacional local.
 
 1. Abra o arquivo de grupo do diretório /etc em um editor de texto.
 1. Adicione a usuário criada na etapa 2 à `root` grupo.
@@ -51,7 +51,7 @@ Para habilitar o SSL, o WebSphere precisa acessar uma conta de usuário no regis
 1. Clique com o botão direito do mouse em Usuários e selecione **Novo usuário**.
 1. Digite um nome de usuário e senha nas caixas apropriadas e digite quaisquer outras informações necessárias nas caixas restantes.
 1. Desmarcar **O Usuário Deve Alterar A Senha No Próximo Logon**, clique em **Criar** e clique em **Fechar**.
-1. Clique em **Usuários**, clique com o botão direito do mouse no usuário recém-criado e selecione **Propriedades**.
+1. Clique em **Usuários**, clique com o botão direito do mouse no usuário criado e selecione **Propriedades**.
 1. Clique em **Membro de** e clique em **Adicionar**.
 1. Na caixa Inserir os Nomes de Objeto a Serem Selecionados, digite `Administrators`, clique em Verificar nomes para garantir que o nome do grupo esteja correto.
 1. Clique em **OK** e clique em **OK** novamente.
@@ -104,7 +104,7 @@ Truststores e keystores podem ser criados usando o utilitário ikeyman ou o Admi
 
    1. Selecione **Criar > certificado** autoassinado.
    1. Especifique os valores apropriados no formulário de certificado. Certifique-se de manter o Alias e o nome comum como nome de domínio totalmente qualificado da máquina.
-   1. Clique **Aplicar**.
+   1. Clique em **Aplicar**.
 
 1. Repita as etapas de 2 a 10 para criar um truststore.
 
@@ -126,7 +126,7 @@ Truststores e keystores podem ser criados usando o utilitário ikeyman ou o Admi
 
 1. No Console administrativo do WebSphere, selecione **Segurança > Segurança global**.
 1. Na seção Autenticação, expanda **Segurança RMI/IIOP** e clique em **Comunicações de entrada CSIv2**.
-1. Assegure que **Compatível com SSL** é selecionada na lista suspensa Transport.
+1. Assegure que **Compatível com SSL** está selecionado na lista suspensa Transport.
 1. Reinicie o perfil do WebSphere.
 
 ## Configuração do WebSphere para converter URLs que começam com https {#configuring-websphere-to-convert-urls-that-begins-with-https}

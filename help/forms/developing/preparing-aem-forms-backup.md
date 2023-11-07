@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 role: Developer
 exl-id: aeab003d-ba64-4760-9c56-44638501e9ff
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2520'
+source-wordcount: '2519'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Você entra no modo de backup para permitir backups dinâmicos de um servidor do
 * O tempo para a conclusão do procedimento de backup.
 * Um sinalizador para indicar se deve estar no modo de backup contínuo, que é útil somente se você estiver executando backups contínuos.
 
-Antes de gravar aplicativos para entrar no modo de backup, é recomendável compreender os procedimentos de backup que serão usados depois que você colocar o servidor de formulários no modo de backup. Para obter mais informações sobre o que considerar ao executar backups para o AEM Forms, consulte [ajuda administrativa](https://www.adobe.com/go/learn_aemforms_admin_63).
+Antes de gravar aplicativos para entrar no modo de backup, é recomendável compreender os procedimentos de backup que são usados depois de colocar o servidor de formulários no modo de backup. Para obter mais informações sobre o que considerar ao executar backups para o AEM Forms, consulte [ajuda administrativa](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
@@ -135,7 +135,7 @@ Entre no modo de backup usando a API de serviço de backup e restauração:
    * Um `int` valor que especifica o número de minutos para permanecer no modo de backup. Você pode especificar um valor de `1` para `10080` (o número de minutos em uma semana). Esse valor é ignorado quando se usa o modo de backup contínuo.
    * A `Boolean` valor que especifica se deve estar no modo de backup contínuo. Um valor de `True` especifica que deve estar no modo de backup contínuo. Quando estiver no modo de backup contínuo, o valor especificado para o número de minutos a permanecer no modo de backup será ignorado.
 
-      Modo de backup contínuo significa que uma nova sessão de modo de backup é iniciada depois que a atual é concluída. Um valor de `False` significa que o modo de backup contínuo não é usado e, depois de sair do modo de backup, a limpeza dos arquivos do GDS é retomada.
+     Modo de backup contínuo significa que uma nova sessão de modo de backup é iniciada depois que a atual é concluída. Um valor de `False` significa que o modo de backup contínuo não é usado e, depois de sair do modo de backup, a limpeza dos arquivos do GDS é retomada.
 
 1. Recuperar informações sobre a sessão de modo de backup no servidor
 
@@ -170,7 +170,7 @@ Entre no modo de backup usando o serviço Web fornecido pela API do Serviço de 
    * A `Uint32` valor que especifica o número de minutos para permanecer no modo de backup. Você pode especificar um valor de `1` para `10080` (número de minutos em uma semana). Esse valor é ignorado quando se usa o modo de backup contínuo.
    * A `Boolean` valor que especifica se deve estar no modo de backup contínuo. Um valor de `True` especifica que deve estar no modo de backup contínuo. Quando estiver no modo de backup contínuo, o valor especificado para o número de minutos a permanecer no modo de backup será ignorado. Modo de backup contínuo significa que uma nova sessão de modo de backup é iniciada depois que a atual é concluída.
 
-      Um valor de `False` significa que o modo de backup contínuo não é usado e, depois de sair do modo de backup, a limpeza dos arquivos do GDS é retomada.
+     Um valor de `False` significa que o modo de backup contínuo não é usado e, depois de sair do modo de backup, a limpeza dos arquivos do GDS é retomada.
 
 1. Recuperar informações sobre a sessão de modo de backup no servidor
 

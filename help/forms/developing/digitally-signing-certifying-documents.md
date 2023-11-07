@@ -1,15 +1,15 @@
 ---
 title: Assinatura digital e documentos de certificação
-description: Use o serviço de assinatura para adicionar e excluir campos de assinatura digital a um documento PDF, recuperar os nomes dos campos de assinatura localizados em um documento PDF, modificar campos de assinatura, assinar digitalmente documentos PDF, certificar documentos PDF, validar assinaturas digitais localizadas em um documento PDF, validar todas as assinaturas digitais localizadas em um documento PDF e remover uma assinatura digital de um campo de assinatura.
+description: Use o serviço de assinatura para adicionar e excluir campos de assinatura digital a um documento PDF, recuperar os nomes de campos de assinatura em um documento PDF, modificar campos de assinatura, assinar digitalmente documentos PDF, certificar documentos PDF, validar assinaturas digitais em um documento PDF, validar todas as assinaturas digitais em um documento PDF e remover uma assinatura digital de um campo de assinatura.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '17045'
+source-wordcount: '17029'
 ht-degree: 0%
 
 ---
@@ -37,12 +37,12 @@ Se houver vários campos de assinatura localizados em um documento PDF, é recom
 Você pode realizar essas tarefas usando o serviço de Assinatura:
 
 * Adicione e exclua campos de assinatura digital a um documento PDF. (Consulte [Adição de campos de assinatura](digitally-signing-certifying-documents.md#adding-signature-fields).)
-* Recupere os nomes dos campos de assinatura localizados em um documento PDF. (Consulte [Recuperando nomes de campos de assinatura](digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
+* Recupere os nomes dos campos de assinatura em um documento PDF. (Consulte [Recuperando nomes de campos de assinatura](digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
 * Modifique os campos de assinatura. (Consulte [Modificação de campos de assinatura](digitally-signing-certifying-documents.md#modifying-signature-fields).)
 * Assinar digitalmente os documentos do PDF. (Consulte [Assinatura digital de documentos PDF](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 * Certificar documentos do PDF. (Consulte [Documentos de PDF de certificação](digitally-signing-certifying-documents.md#certifying-pdf-documents).)
-* Validar assinaturas digitais localizadas em um documento PDF. (Consulte [Verificação de assinaturas digitais](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
-* Valide todas as assinaturas digitais localizadas em um documento PDF. (Consulte [Verificação de várias assinaturas digitais](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
+* Validar assinaturas digitais em um documento PDF. (Consulte [Verificação de assinaturas digitais](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
+* Valide todas as assinaturas digitais em um documento PDF. (Consulte [Verificação de várias assinaturas digitais](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
 * Remova uma assinatura digital de um campo de assinatura. (Consulte [Remoção de assinaturas digitais](digitally-signing-certifying-documents.md#removing-digital-signatures).)
 
 >[!NOTE]
@@ -213,7 +213,7 @@ Para adicionar um campo de assinatura usando a API de assinatura (serviço da We
 
 ## Recuperando nomes de campos de assinatura {#retrieving-signature-field-names}
 
-Você pode recuperar os nomes de todos os campos de assinatura localizados em um documento PDF que você deseja assinar ou certificar. Se não tiver certeza dos nomes dos campos de assinatura localizados em um documento do PDF ou se quiser verificar os nomes, você poderá recuperá-los programaticamente. O serviço de Assinatura retorna o nome totalmente qualificado do campo de assinatura, como `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+Você pode recuperar os nomes de todos os campos de assinatura que estão em um documento PDF que você deseja assinar ou certificar. Se não tiver certeza dos nomes dos campos de assinatura que estão em um documento PDF ou se quiser verificar os nomes, você poderá recuperá-los programaticamente. O serviço de Assinatura retorna o nome totalmente qualificado do campo de assinatura, como `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 >[!NOTE]
 >
@@ -347,7 +347,7 @@ Recuperar nomes de campos de assinatura usando a API de assinatura (serviço da 
 
 ## Modificação de campos de assinatura {#modifying-signature-fields}
 
-Você pode modificar campos de assinatura localizados em um documento PDF usando a API Java e a API de serviço da Web. A modificação de um campo de assinatura envolve a manipulação de seus valores de dicionário de bloqueio de campo de assinatura ou valores de dicionário de valor de seed.
+Você pode modificar campos de assinatura que estão em um documento PDF usando a API Java e a API de serviço da Web. A modificação de um campo de assinatura envolve a manipulação de seus valores de dicionário de bloqueio de campo de assinatura ou valores de dicionário de valor de seed.
 
 A *dicionário de bloqueio de campo* especifica uma lista de campos que são bloqueados quando o campo de assinatura é assinado. Um campo bloqueado impede que os usuários façam alterações no campo. A *dicionário de valor de seed* contém informações de restrição usadas no momento em que a assinatura é aplicada. Por exemplo, você pode alterar permissões que controlam as ações que podem ocorrer sem invalidar uma assinatura.
 
@@ -361,7 +361,7 @@ Esta seção explica como modificar um campo de assinatura alterando os valores 
 
 ### Resumo das etapas {#summary_of_steps-2}
 
-Para modificar campos de assinatura localizados em um documento PDF, execute as seguintes tarefas:
+Para modificar campos de assinatura em um documento PDF, execute as seguintes tarefas:
 
 1. Incluir arquivos de projeto.
 1. Criar um cliente de assinatura.
@@ -601,7 +601,7 @@ Ao certificar e assinar o mesmo documento de PDF, se a assinatura de certificaç
 
 **Assinar documentos que são formulários baseados em XFA**
 
-Se você tentar assinar um formulário baseado em XFA usando a API do serviço de assinatura, os dados podem estar ausentes na variável `View` `Signed` `Version` localizado na Acrobat. Por exemplo, considere o seguinte workflow:
+Se você tentar assinar um formulário baseado em XFA usando a API do serviço de assinatura, os dados podem estar ausentes na variável `View` `Signed` `Version` no Acrobat. Por exemplo, considere o seguinte workflow:
 
 * Usando um arquivo XDP criado com o Designer, você mescla um design de formulário que contém um campo de assinatura e dados XML que contêm dados de formulário. Você usa o serviço Forms para gerar um documento PDF interativo.
 * Você assina o documento PDF usando a API de serviço de assinatura.
@@ -816,7 +816,7 @@ Para assinar digitalmente um documento PDF usando a API de assinatura (serviço 
 
 Você pode assinar um formulário interativo criado pelo serviço Forms. Por exemplo, considere o seguinte workflow:
 
-* Você mescla um formulário PDF baseado em XFA criado usando o Designer e os dados de formulário localizados em um documento XML usando o serviço Forms. O servidor do Forms renderiza um formulário interativo.
+* Você mescla um formulário PDF baseado em XFA criado usando o Designer e os dados de formulário em um documento XML usando o serviço Forms. O servidor do Forms renderiza um formulário interativo.
 * Você assina o formulário interativo usando a API do serviço de assinatura.
 
 O resultado é um formulário PDF interativo assinado digitalmente. Ao assinar um formulário de PDF baseado em um formulário XFA, salve o arquivo de PDF como um formulário de PDF Estático de Adobe. Se você tentar assinar um formulário de PDF salvo como um formulário de PDF dinâmico de Adobe, ocorrerá uma exceção. Como você está assinando o formulário retornado pelo serviço Forms, verifique se ele contém um campo de assinatura.
@@ -1514,7 +1514,7 @@ Verifique uma assinatura digital usando a API do Serviço de assinatura (serviç
 
 ## Verificação de várias assinaturas digitais {#verifying-multiple-digital-signatures}
 
-O AEM Forms fornece os meios de verificar todas as assinaturas digitais localizadas em um documento PDF. Suponha que um documento PDF contenha várias assinaturas digitais como resultado de um processo comercial que requer assinaturas de vários signatários. Por exemplo, considere uma transação financeira que requer a assinatura de um gerente e de um gerente de empréstimo. Você pode usar a API Java do serviço de assinatura ou a API do serviço da Web para verificar todas as assinaturas no documento do PDF. Ao verificar várias assinaturas digitais, você pode verificar o status e as propriedades de cada assinatura. Antes de confiar em uma assinatura digital, é recomendável verificá-la. É recomendável que você esteja familiarizado com a verificação de uma única assinatura digital.
+O AEM Forms fornece o meio de verificar todas as assinaturas digitais que estão em um documento PDF. Suponha que um documento PDF contenha várias assinaturas digitais como resultado de um processo comercial que requer assinaturas de vários signatários. Por exemplo, considere uma transação financeira que requer a assinatura de um gerente e de um gerente de empréstimo. Você pode usar a API Java do serviço de assinatura ou a API do serviço da Web para verificar todas as assinaturas no documento do PDF. Ao verificar várias assinaturas digitais, você pode verificar o status e as propriedades de cada assinatura. Antes de confiar em uma assinatura digital, é recomendável verificá-la. É recomendável que você esteja familiarizado com a verificação de uma única assinatura digital.
 
 >[!NOTE]
 >
@@ -1585,7 +1585,7 @@ Carimbo de data e hora é o processo de rastrear a hora em que um documento assi
 
 **Recuperar todas as assinaturas digitais**
 
-Para verificar todas as assinaturas digitais localizadas em um documento PDF, recupere as assinaturas digitais do documento PDF. Todas as assinaturas são retornadas em uma lista. Como parte da verificação de uma assinatura digital, verifique o status da assinatura.
+Para verificar todas as assinaturas digitais em um documento PDF, recupere as assinaturas digitais do documento PDF. Todas as assinaturas são retornadas em uma lista. Como parte da verificação de uma assinatura digital, verifique o status da assinatura.
 
 >[!NOTE]
 >
@@ -1641,7 +1641,7 @@ Verifique várias assinaturas digitais usando a API de serviço de assinatura (J
    * A `PKIOptions` objeto que contém opções de tempo de execução de PKI.
    * A `VerifySPIOptions` instância que contém informações de SPI. Você pode especificar `null` para este parâmetro.
 
-   A variável `verifyPDFDocument` o método retorna um `PDFDocumentVerificationInfo` objeto que contém informações sobre todas as assinaturas digitais localizadas no documento PDF.
+   A variável `verifyPDFDocument` o método retorna um `PDFDocumentVerificationInfo` objeto que contém informações sobre todas as assinaturas digitais no documento PDF.
 
 1. Iterar em todas as assinaturas
 
@@ -1707,7 +1707,7 @@ Verificar várias assinaturas digitais usando a API de Serviço de Assinatura (s
    * A `PKIOptions` objeto que contém opções de tempo de execução de PKI.
    * A `VerifySPIOptions` instância que contém informações de SPI. Você pode especificar nulo para este parâmetro.
 
-   A variável `verifyPDFDocument` o método retorna um `PDFDocumentVerificationInfo` objeto que contém informações sobre todas as assinaturas digitais localizadas no documento PDF.
+   A variável `verifyPDFDocument` o método retorna um `PDFDocumentVerificationInfo` objeto que contém informações sobre todas as assinaturas digitais no documento PDF.
 
 1. Iterar em todas as assinaturas
 

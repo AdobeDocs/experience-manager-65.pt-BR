@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1106'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ Você pode publicar informativos em serviços de email, como ExactTarget e Silve
 
 Para publicar seu email no provedor de serviços de email, é necessário executar as seguintes etapas:
 
-1. Crie um email.
+1. Criar um email.
 1. Aplicar a configuração do Serviço de email ao email.
 1. Publique o email.
 
@@ -39,7 +39,7 @@ Para publicar seu email no provedor de serviços de email, é necessário execut
 
 Um email ou informativo que você deseja publicar em um serviço de email pode ser criado em uma campanha usando o **Informativo do Geometrixx** modelo. Você também pode usar a variável **Email do Geometrixx Outdoors** modelo. Exemplo de email/informativo com base no **Email do Geometrixx Outdoors** estão disponíveis em `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
 
-Para criar um novo email publicado no serviço de email configurado:
+Para criar um email publicado no serviço de email configurado:
 
 1. Ir para **Sites** e depois **Campanhas**. Selecione uma campanha.
 1. Clique em **Novo** para abrir o **Criar página** janela.

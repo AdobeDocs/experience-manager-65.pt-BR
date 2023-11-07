@@ -7,9 +7,9 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2856'
+source-wordcount: '2853'
 ht-degree: 2%
 
 ---
@@ -122,7 +122,7 @@ O cliente Web deve ter permissões para acessar o `cq:ClientLibraryFolder` nó. 
 
 ### Substituição de bibliotecas em /lib {#overriding-libraries-in-lib}
 
-Pastas da biblioteca do cliente localizadas abaixo `/apps` têm precedência sobre pastas com o mesmo nome que estejam localizadas de forma semelhante em `/libs`. Por exemplo, `/apps/cq/ui/widgets` tem precedência sobre `/libs/cq/ui/widgets`. Quando essas bibliotecas pertencem à mesma categoria, a biblioteca abaixo `/apps` é usada.
+Pastas da biblioteca do cliente localizadas abaixo `/apps` têm precedência sobre pastas com o mesmo nome que estejam de forma semelhante em `/libs`. Por exemplo, `/apps/cq/ui/widgets` tem precedência sobre `/libs/cq/ui/widgets`. Quando essas bibliotecas pertencem à mesma categoria, a biblioteca abaixo `/apps` é usada.
 
 ### Localizar uma pasta de bibliotecas de clientes e usar o servlet de bibliotecas de clientes proxy {#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet}
 
@@ -134,7 +134,7 @@ Em versões anteriores, as pastas da biblioteca do cliente estavam localizadas a
 
 >[!NOTE]
 >
->Para isolar melhor o código do conteúdo e da configuração, é recomendável localizar as bibliotecas de clientes em `/apps` e expô-los via `/etc.clientlibs` aproveitando o `allowProxy` propriedade.
+>Para isolar melhor o código do conteúdo e da configuração, é recomendável localizar as bibliotecas de clientes em `/apps` e expô-los via `/etc.clientlibs` usando o `allowProxy` propriedade.
 
 Para que as bibliotecas de clientes em `/apps` para ser acessível, um servlet proxy é usado. As ACLs ainda são aplicadas na pasta da biblioteca do cliente, mas o servlet permite que o conteúdo seja lido via `/etc.clientlibs/` se a variável `allowProxy` propriedade está definida como `true`.
 
@@ -197,7 +197,7 @@ Em seguida, defina o `allowProxy` propriedade em `foo` para verdadeiro.
 
 ### Vinculação a Dependências {#linking-to-dependencies}
 
-Quando o código na pasta da biblioteca do cliente fizer referência a outras bibliotecas, identifique as outras bibliotecas como dependências. No JSP, a variável `ui:includeClientLib` A tag que faz referência à pasta da biblioteca do cliente faz com que o código HTML inclua um link para o arquivo de biblioteca gerado, bem como as dependências.
+Quando o código na pasta da biblioteca do cliente fizer referência a outras bibliotecas, identifique as outras bibliotecas como dependências. No JSP, a variável `ui:includeClientLib` a tag que faz referência à pasta da biblioteca do cliente faz com que o código HTML inclua um link para o arquivo de biblioteca gerado e as dependências.
 
 As dependências devem ser outras `cq:ClientLibraryFolder`. Para identificar dependências, adicione uma propriedade à `cq:ClientLibraryFolder` com os seguintes atributos:
 

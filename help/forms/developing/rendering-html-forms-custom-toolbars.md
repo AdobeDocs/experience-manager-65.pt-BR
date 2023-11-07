@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
 role: Developer
 exl-id: 0b992b1c-3878-447a-bccc-7034aa3e98bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2345'
+source-wordcount: '2340'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ O serviço Forms permite personalizar uma barra de ferramentas que é renderizad
 
 >[!NOTE]
 >
->Esse local do URI está localizado no arquivo adobe-forms-core.jar, que está localizado no arquivo adobe-forms-dsc.jar. O arquivo adobe-forms-dsc.jar está localizado na pasta C:\Adobe\Adobe_Experience_Manager_forms\ (C:\ é o diretório de instalação). Você pode usar uma ferramenta de extração de arquivos, como Win RAR, para abrir o Adobe.
+>Esse local do URI está no arquivo adobe-forms-core.jar, que está no arquivo adobe-forms-dsc.jar. O arquivo adobe-forms-dsc.jar está na pasta C:\Adobe\Adobe_Experience_Manager_forms\ (C:\ é o diretório de instalação). Você pode usar uma ferramenta de extração de arquivos, como Win RAR, para abrir o Adobe.
 
 Você pode copiar o arquivo fscmenu.xml desse local, modificá-lo para atender aos seus requisitos e, em seguida, colocá-lo em um local URI personalizado. Em seguida, usando a API de serviço do Forms, defina as opções de tempo de execução que fazem com que o serviço do Forms use o arquivo fscmenu.xml do local especificado. Essas ações resultam na renderização, pelo serviço Forms, de um formulário HTML com uma barra de ferramentas personalizada.
 
@@ -56,7 +56,7 @@ Você também pode especificar os locais absolutos desses arquivos JS e CSS, com
 >
 >Não é recomendável misturar as maneiras pelas quais esses arquivos são referenciados. Ou seja, todos os URIs devem ser referenciados usando o `FSToolBarURI` palavra-chave ou um local absoluto.
 
-Você pode obter os arquivos JS e CSS abrindo o&lt;appserver>arquivo .ear. Neste arquivo, abra o adobe-forms-res.war. Todos esses arquivos estão localizados no arquivo WAR. Os formulários adobe-&lt;appserver>O arquivo .ear está localizado na pasta de instalação dos formulários AEM (C:\ é o diretório de instalação). Você pode abrir os formulários adobe-&lt;appserver>.ear usando uma ferramenta de extração de arquivos, como o WinRAR.
+Você pode obter os arquivos JS e CSS abrindo o&lt;appserver>arquivo .ear. Neste arquivo, abra o adobe-forms-res.war. Todos esses arquivos estão no arquivo WAR. Os formulários adobe-&lt;appserver>O arquivo .ear está na pasta de instalação dos formulários AEM (C:\ é o diretório de instalação). Você pode abrir os formulários adobe-&lt;appserver>.ear usando uma ferramenta de extração de arquivos, como o WinRAR.
 
 A sintaxe XML a seguir mostra um arquivo fscmenu.xml de exemplo.
 

@@ -2,9 +2,9 @@
 title: Integração com o Adobe Target usando IMS
 description: Saiba mais sobre a integração do AEM com o Adobe Target usando IMS.
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1557'
+source-wordcount: '1556'
 ht-degree: 42%
 
 ---
@@ -105,7 +105,7 @@ Para criar um projeto com o Adobe Target que o AEM possa usar, abra o Adobe Deve
 
 1. Revise as credenciais e continue com **Próximo**:
 
-   ![Criação de um novo projeto](assets/integration-target-io-15.png)
+   ![Criação de um projeto](assets/integration-target-io-15.png)
 
 1. Selecione os perfis de produto necessários e continue com **Salvar API configurada**:
 

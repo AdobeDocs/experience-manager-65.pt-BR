@@ -1,23 +1,19 @@
 ---
 title: Configure o Microsoft Dynamics 365 para o fluxo de trabalho de hipoteca da página inicial do site de referência We.Finance
-seo-title: Configure Microsoft Dynamics 365 for the home mortgage workflow of the We.Finance reference site
-description: Saiba como aproveitar os serviços do Microsoft® Dynamics 365 por meio de formulários adaptáveis para o fluxo de trabalho de hipoteca do site de referência We.Finance
-seo-description: Learn how to leverage the Microsoft® Dynamics 365 services through adaptive forms for the home mortgage workflow of the We.Finance Reference site
-uuid: a0656d90-84c7-46d1-9a16-dadcc19ff9ef
+description: Saiba como usar os serviços do Microsoft&reg; Dynamics 365 por meio de formulários adaptáveis para o fluxo de trabalho de hipoteca da página de referência do We.Finance.
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: develop, Configuration
-discoiquuid: 6b31397a-fb06-4043-9368-59fb4fce8afa
 exl-id: 2ac37dc5-d88d-4f98-8576-cd2ca6f0ea3a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
 
 # Configure o Microsoft Dynamics 365 para o fluxo de trabalho de hipoteca da página inicial do site de referência We.Finance {#configure-microsoft-dynamics-for-the-home-mortgage-workflow-of-the-we-finance-reference-site}
 
-Saiba como aproveitar os serviços do Microsoft® Dynamics 365 por meio de formulários adaptáveis para o fluxo de trabalho de hipoteca do site de referência We.Finance
+Saiba como usar os serviços do Microsoft® Dynamics 365 por meio de formulários adaptáveis para o fluxo de trabalho de hipoteca do site de referência We.Finance
 
 ## Visão geral {#overview}
 

@@ -2,9 +2,9 @@
 title: Desenvolvimento headless para sites AEM 6.5
 description: Saiba como os recursos headless avançados do AEM 6.5, como Modelos de conteúdo, Fragmentos de conteúdo e a API do GraphQL, funcionam juntos para permitir gerenciar suas experiências de forma central e distribuí-las entre canais.
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '518'
 ht-degree: 35%
 
 ---
@@ -48,7 +48,7 @@ O AEM 6.5 é uma ferramenta flexível para o modelo de implementação headless,
 
 ## Primeiros passos no AEM Headless {#first-steps}
 
-Há vários recursos disponíveis para o começar a usar os recursos headless do AEM. Eles são destinados a casos de uso diferentes, mas todos fornecem uma visão geral sólida dos recursos headless do AEM.
+Há vários recursos disponíveis para o seu para começar a usar os recursos headless do AEM. Eles são destinados a casos de uso diferentes, mas todos fornecem uma visão geral sólida dos recursos headless do AEM.
 
 | Recurso | Descrição | Tipo | Público | Est. Hora |
 |---|---|---|---|---|

@@ -11,9 +11,9 @@ discoiquuid: 5855d21b-340c-4139-aabe-c3a534cedb98
 docset: aem65
 feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1310'
 ht-degree: 14%
 
 ---
@@ -25,7 +25,7 @@ A interface de usuário para criação [Comunicação interativa](/help/forms/us
 * Editor de documento de arrastar e soltar WYSIWYG
 * Repositório integrado para ativos - os ativos carregados e criados no servidor estão disponíveis no navegador de ativos da interface de criação da Comunicação interativa
 
-Quando você [criar uma comunicação interativa nova ou editar uma existente](../../forms/using/create-interactive-communication.md), você usa os seguintes elementos de interface do usuário:
+Quando você [criar ou editar uma comunicação interativa existente](../../forms/using/create-interactive-communication.md), você usa os seguintes elementos de interface do usuário:
 
 * [Barra lateral](#sidebar)
 * [Barra de ferramentas da página](#page-toolbar)

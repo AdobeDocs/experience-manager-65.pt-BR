@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2625'
+source-wordcount: '2623'
 ht-degree: 0%
 
 ---
@@ -179,7 +179,7 @@ As páginas Notificações de Tarefa e Notificações do Administrador fornecem 
 
 ### Editor de Rich Text {#rich-text-editor}
 
-A área Modelo de notificação é um editor de rich text que permite gerar HTML para as mensagens de notificação por email. Ela fornece opções de formatação de fonte e parágrafo, que são encontradas abaixo da caixa Modelo de notificação. As opções incluem tipo de fonte, tamanho, estilo e cor, bem como alinhamento de parágrafo e marcadores.
+A área Modelo de notificação é um editor de rich text que permite gerar HTML para as mensagens de notificação por email. Ela fornece opções de formatação de fonte e parágrafo, que são encontradas abaixo da caixa Modelo de notificação. As opções incluem tipo de fonte, tamanho, estilo e cor, além de alinhamento de parágrafo e marcadores.
 
 ### Geração de URL {#url-generation}
 
@@ -187,11 +187,11 @@ Somente para Notificações de Tarefas, o workflow do Forms inclui duas configur
 
 * OpenTask está disponível para os tipos de notificação Lembrete e Atribuição de tarefa. Esse URL fornece um link para a tarefa no Workspace, permitindo que o usuário acesse a tarefa rapidamente a partir da notificação por email. Quando você arrasta o URL OpenTask para a caixa Modelo de notificação, o URL está no seguinte formato:
 
-   `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
+  `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
 
 * ClaimTask está disponível para os tipos de notificação Grupo - Lembrete e Grupo - Atribuição de tarefa. Esse URL fornece um link para a página de detalhes da tarefa no Workspace, onde o usuário pode reivindicar ou reivindicar e abrir o item de trabalho. Quando você arrasta o URL da Tarefa de Declaração para a caixa Modelo de Notificação, o URL está no seguinte formato:
 
-   `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
+  `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
 
 >[!NOTE]
 >
@@ -290,5 +290,5 @@ Na página Definições de Configuração do BAM, você define as conexões com 
 1. Na caixa Porta BAM, digite a porta a ser usada para conectar ao servidor que executa o BAM. A porta BAM padrão para JBoss é 8080, WebLogic é 7001 e WebSphere é 9080.
 1. Na caixa Host do servidor, digite o nome ou o endereço IP do servidor do forms do host. O valor padrão é localhost.
 1. Na caixa Porta do servidor, digite o número da porta usada pelo servidor do Forms.
-1. Nas caixas Nome do usuário e Senha, digite o ID do usuário e a senha apropriados para acessar o servidor BAM. O nome de usuário padrão é CognosNowAdmin e a senha padrão é manager.
+1. Nas caixas Nome do usuário e Senha, digite o ID do usuário e a senha apropriados para acessar o Servidor BAM. O nome de usuário padrão é CognosNowAdmin e a senha padrão é manager.
 1. Clique em Salvar.

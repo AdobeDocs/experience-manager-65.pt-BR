@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: ea6c8aa3-f86e-4878-8550-fe1662f10696
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '677'
 ht-degree: 1%
 
 ---
@@ -120,7 +120,7 @@ O workflow geral para excluir um artigo:
 1. Selecione o artigo a ser excluído na **Gerenciar artigos** bloco.
 1. Verifique se está selecionado na lista (selecione outros para excluir conforme necessário).
 1. Clique em **Excluir** na barra de ações.
-1. Verifique se você deseja excluir do AEM e do Mobile On-Demand.
+1. Marque se deseja excluir do AEM e do Mobile On-Demand.
 1. Clique em **Excluir**.
 1. O artigo foi removido da lista.
 

@@ -8,9 +8,9 @@ content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6177'
+source-wordcount: '6176'
 ht-degree: 0%
 
 ---
@@ -188,7 +188,7 @@ Ative essas opções para especificar como exibir conteúdo, como exibir página
 
 **Layout da página:** Selecione o tipo de layout de página para o documento PDF.
 
-**Ampliação:** Escolha a ampliação predefinida para a exibição inicial do documento de PDF ou selecione um valor personalizado. Escolher uma configuração padrão indica que a ampliação padrão do Acrobat será usada.
+**Ampliação:** Escolha a ampliação predefinida para a exibição inicial do documento de PDF ou selecione um valor personalizado. A escolha de uma configuração padrão indica que a ampliação padrão do Acrobat é usada.
 
 **Número da Página de Destino:** Especifique o número da página para a qual o PDF será aberto.
 

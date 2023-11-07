@@ -2,9 +2,9 @@
 title: Introdução aos serviços de entrega de borda
 description: Introdução ao Edge Delivery Services (EDS).
 exl-id: 8d2b2d6c-ae11-4829-842e-b186f5491713
-source-git-commit: 6a1d96125ca6647770718fff74ec21afb5c91a68
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '865'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Com o Edge Delivery Services, o AEM oferece experiências excepcionais que impulsionam o engajamento e as conversões. O AEM faz isso fornecendo experiências de alto impacto que são rápidas de serem criadas e desenvolvidas. É um conjunto combinável de serviços que permite um ambiente de desenvolvimento rápido, em que os autores podem atualizar e publicar rapidamente e novos sites são lançados rapidamente. Dessa forma, com os Edge Delivery Services você pode melhorar a conversão, reduzir custos e fornecer velocidade de conteúdo extrema.
 
-Ao aproveitar o Edge Delivery, você pode:
+Ao usar o Edge Delivery, você pode:
 
 * Crie sites rápidos com uma pontuação Lighthouse perfeita e monitore continuamente o desempenho do site por meio do monitoramento de usuários reais (RUM).
 * Aumente a eficiência da criação desvinculando as fontes de conteúdo. Pronto para uso, você pode usar a criação de AEM e a criação baseada em documentos. Dessa forma, você pode trabalhar com várias fontes de conteúdo no mesmo site.
@@ -29,7 +29,7 @@ O Edge Delivery é um conjunto combinável de serviços que permite um alto grau
 
 Por exemplo, você pode usar o conteúdo diretamente do Microsoft Word ou do Google Docs. Isso significa que os documentos dessas fontes podem se tornar páginas do site. Além disso, cabeçalhos, listas, imagens e elementos de fonte podem ser transferidos da fonte inicial para o site. O novo conteúdo será adicionado instantaneamente, sem um processo de reconstrução.
 
-O Edge Delivery aproveita o GitHub para que os clientes possam gerenciar e implantar código diretamente de seu repositório GitHub. Por exemplo, você pode gravar conteúdo no Google Docs ou no Microsoft Word e a funcionalidade do site pode ser desenvolvida usando CSS e JavaScript no GitHub. Quando estiver pronto, você poderá usar a extensão do navegador Sidekick para visualizar e publicar atualizações de conteúdo.
+O Edge Delivery usa o GitHub para que os clientes possam gerenciar e implantar o código diretamente do repositório do GitHub. Por exemplo, você pode gravar conteúdo no Google Docs ou no Microsoft Word e a funcionalidade do site pode ser desenvolvida usando CSS e JavaScript no GitHub. Quando estiver pronto, você poderá usar a extensão do navegador Sidekick para visualizar e publicar atualizações de conteúdo.
 
 Leitura adicional:
 
@@ -49,7 +49,7 @@ Também é possível usar os Edge Delivery Services em combinação com o Adobe 
 
 ## Obtendo ajuda do Adobe {#adobe-gethelp}
 
-É possível entrar em contato com as equipes de produtos Adobe por meio do canal de colaboração provisionado com produtos (veja abaixo os detalhes de acesso) para responder às perguntas sobre o uso de produtos ou práticas recomendadas. Observe que não há Termos de Nível de Serviço (SLT) associados às conversas pelo canal de colaboração do produto. Se um problema do produto exigir investigação e solução de problemas adicionais e precisar atender aos SLTs de resposta, você poderá enviar um tíquete de suporte seguindo o [processo de suporte](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support).
+É possível entrar em contato com as equipes de produtos Adobe por meio do canal de colaboração provisionado com produtos (veja abaixo os detalhes de acesso) para responder às perguntas sobre o uso de produtos ou práticas recomendadas. Não há Termos de Nível de Serviço (SLT) associados às conversas pelo canal de colaboração do produto. Se um problema do produto exigir investigação e solução de problemas adicionais e precisar atender aos SLTs de resposta, você poderá enviar um tíquete de suporte seguindo o [processo de suporte](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support).
 
 O Adobe fornece três canais para ajudá-lo com Edge Delivery Services:
 

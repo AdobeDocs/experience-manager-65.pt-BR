@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '10239'
+source-wordcount: '10229'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Se você estiver usando IPv6, insira o URL de base como o nome do computador ou 
 
 >[!NOTE]
 >
->O URL base é incorporado em arquivos protegidos por política. Os aplicativos clientes usam o URL de base para se conectar de volta ao servidor. Os arquivos protegidos continuarão a conter o URL básico, mesmo que ele seja alterado posteriormente. Se você alterar o URL de base, as informações de configuração precisarão ser atualizadas para todos os clientes que estão se conectando.
+>O URL base é incorporado em arquivos protegidos por política. Os aplicativos clientes usam o URL de base para se conectar de volta ao servidor. Os arquivos protegidos continuarão a conter o URL básico, mesmo que ele seja alterado posteriormente. Se você alterar o URL de base, as informações de configuração deverão ser atualizadas para todos os clientes que estão se conectando.
 
 **Período de concessão offline padrão:** O período de tempo padrão em que um usuário pode usar um documento protegido off-line. Essa configuração determina o valor inicial da configuração Período de concessão offline automático ao criar uma política. (Consulte Criação e edição de políticas.) Quando o período de concessão expirar, o recipient deverá sincronizar o documento novamente para continuar a usá-lo.
 
@@ -573,7 +573,7 @@ Por padrão, o processo de registro do usuário convidado é desativado. Você p
 
 É possível restringir o registro com segurança de documentos para determinados usuários externos ou grupos de usuários. Essa opção é útil, por exemplo, para permitir o acesso a um determinado grupo de usuários, mas excluir indivíduos específicos que fazem parte do grupo.
 
-As configurações a seguir estão localizadas na área Filtro de restrição de email da página Registro de usuário convidado.
+As configurações a seguir estão na área Filtro de restrição de email da página Registro de usuário convidado.
 
 **Exclusão:** Digite o endereço de email de um usuário ou grupo a ser excluído. Para excluir vários usuários ou grupos, digite cada endereço de email em uma nova linha. Para excluir todos os usuários que pertencem a um domínio específico, digite um curinga e o nome do domínio. Por exemplo, para excluir todos os usuários no domínio example.com, digite &amp;ast;.example.com.
 
@@ -581,7 +581,7 @@ As configurações a seguir estão localizadas na área Filtro de restrição de
 
 ### Parâmetros da conta de registro e do servidor {#server-and-registration-account-parameters}
 
-As configurações a seguir estão localizadas na área Configurações gerais da página Registro de usuário convidado.
+As configurações a seguir estão na área Configurações gerais da página Registro de usuário convidado.
 
 **Host SMTP:** O nome do host do servidor SMTP. O servidor SMTP gerencia os avisos de email de saída para registrar e ativar contas de usuários convidados.
 
@@ -625,11 +625,11 @@ Se exigido pelo host SMTP, digite as informações necessárias nas caixas Nome 
 
 ### Configurações de email do convite de registro {#registration-invitation-email-settings}
 
-A Segurança de documentos emite automaticamente um email de convite de registro quando você cria uma nova conta de usuário convidado ou quando um usuário existente adiciona um destinatário externo que não se registrou anteriormente ou que foi convidado a se registrar em uma política. O email contém um link que o destinatário pode usar para acessar a página de registro e inserir informações pessoais da conta, incluindo nome de usuário e senha. A senha pode ser qualquer combinação de oito caracteres.
+A Segurança de documentos emite automaticamente um email de convite de registro quando você cria uma conta de usuário convidado ou quando um usuário existente adiciona um destinatário externo que não se registrou anteriormente ou foi convidado a se registrar em uma política. O email contém um link que o destinatário pode usar para acessar a página de registro e inserir informações pessoais da conta, incluindo nome de usuário e senha. A senha pode ser qualquer combinação de oito caracteres.
 
 Quando o recipient ativa a conta, o usuário se torna um usuário local.
 
-As configurações a seguir estão localizadas na área Configuração de email de convite da página Registro de usuário convidado.
+As configurações a seguir estão na área Configuração de email de convite da página Registro de usuário convidado.
 
 **De:** O endereço de email do qual o email de convite é enviado. O formato padrão do endereço de email Do é postmaster@[your_installation_domain].com
 
@@ -645,7 +645,7 @@ Depois que os usuários convidados se registrarem, a segurança de documentos en
 
 Quando o recipient ativa a conta do usuário, ele se torna um usuário local.
 
-As configurações a seguir estão localizadas na área Configuração de email de ativação da página Registro de usuário convidado.
+As configurações a seguir estão na área Configuração de email de ativação da página Registro de usuário convidado.
 
 >[!NOTE]
 >
@@ -663,7 +663,7 @@ As configurações a seguir estão localizadas na área Configuração de email 
 
 Se você precisar redefinir a senha de um usuário convidado, será gerado um email de confirmação convidando o usuário a escolher uma nova senha. A senha de um usuário não pode ser determinada; se o usuário a esquecer, você deverá redefini-la.
 
-As configurações a seguir estão localizadas na área Redefinir e-mail de senha da página Registro de usuário convidado.
+As configurações a seguir estão na área Redefinir e-mail de senha da página Registro de usuário convidado.
 
 **De:** O endereço de email do qual o email de redefinição de senha é enviado. O formato padrão do endereço de email Do é postmaster@[your_installation_domain].com
 
@@ -706,7 +706,7 @@ Os usuários e grupos selecionados agora têm permissão para criar políticas p
 
 ### Especificar usuários e grupos que estão visíveis em pesquisas {#specify-users-and-groups-that-are-visible-in-searches}
 
-Quando os usuários estão gerenciando suas políticas personalizadas, eles podem pesquisar usuários e grupos para adicionar às suas políticas. Você deve especificar os domínios a partir dos quais os usuários e grupos ficam visíveis nessas pesquisas.
+Quando os usuários estão gerenciando suas políticas personalizadas, eles podem pesquisar usuários e grupos para adicionar às suas políticas. Especifique os domínios a partir dos quais os usuários e grupos ficam visíveis nessas pesquisas.
 
 1. Na página Segurança de documentos, clique em Configuração > Minhas políticas.
 1. Na página Minhas políticas, clique na guia Usuários e grupos visíveis.

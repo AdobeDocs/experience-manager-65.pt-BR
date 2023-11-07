@@ -2,10 +2,10 @@
 title: Saiba mais sobre o desenvolvimento headless do CMS
 description: Nesta parte da Jornada de desenvolvedores headless do AEM, saiba mais sobre a tecnologia headless e por que usá-la.
 exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1612'
-ht-degree: 92%
+ht-degree: 87%
 
 ---
 
@@ -23,7 +23,7 @@ Este documento ajuda você a entender a entrega de conteúdo headless e por que 
 
 ## Entregar conteúdo em pilha completa {#full-stack}
 
-Desde o aumento dos sistemas de gerenciamento de conteúdo (CMSs) fáceis de usar e em larga escala, as organizações os estão aproveitando como um local central para gerenciar mensagens, identidade visual e comunicações. Usar o CMS como ponto central para administrar experiências melhorou a eficiência, eliminando a necessidade de duplicar tarefas em sistemas diferentes.
+Desde a ascensão dos sistemas de gerenciamento de conteúdo (CMS) de larga escala e fácil utilização, as organizações estão usando-os como um local central para gerenciar mensagens, comunicações e a identidade visual de sua marca. Usar o CMS como ponto central para administrar experiências melhorou a eficiência, eliminando a necessidade de duplicar tarefas em sistemas diferentes.
 
 ![O CMS clássico de pilha completa](assets/full-stack.png)
 
@@ -56,13 +56,13 @@ Os usuários esperam engajamento independentemente da plataforma ou do ponto de 
 
 A interface de qualquer sistema é geralmente o renderizador de saída, normalmente na forma de uma GUI ou outra saída gráfica.
 
-Um servidor headless, por exemplo, provavelmente está em um rack em uma sala de servidor em algum lugar e não tem monitor conectado. Para acessá-lo, você precisa se conectar remotamente a ele. Nesse caso, o monitor é a interface, à medida que resolve a renderização da saída do servidor. Como consumidor do serviço, forneça sua própria interface (o monitor) ao se conectar remotamente a ele.
+Um servidor headless, por exemplo, provavelmente está em um rack em uma sala de servidores em algum lugar e não tem nenhum monitor conectado. Para acessá-lo, você precisa se conectar remotamente a ele. Nesse caso, o monitor é a interface, à medida que resolve a renderização da saída do servidor. Como consumidor do serviço, forneça sua própria interface (o monitor) ao se conectar remotamente a ele.
 
 Quando falamos de um CMS headless, o CMS gerencia o conteúdo e continua a entregá-lo aos consumidores. No entanto, apenas entregando o **conteúdo** de forma padronizada, um CMS headless omite a renderização final de saída, deixando a **apresentação** do conteúdo para o serviço de consumo.
 
 ![CMS headless](assets/headless-cms.png)
 
-Os serviços que consomem, sejam experiências de AR, um webshop, experiências móveis, aplicativos web progressivos (PWAs) etc., absorvem conteúdo do CMS headless e fornecem sua própria renderização. Eles fornecem suas próprias interfaces para o conteúdo.
+Os serviços de consumo, sejam experiências de RA, uma loja na Web, experiências móveis, aplicativos web progressivos (PWA) e assim por diante, recebem conteúdo do CMS headless e fornecem sua própria renderização. Eles fornecem suas próprias interfaces para o conteúdo.
 
 Omitir a interface simplifica o CMS ao remover a complexidade. Isso também altera a responsabilidade de renderizar o conteúdo para os serviços que realmente precisam do conteúdo e que geralmente são mais adequados para essa renderização.
 
@@ -84,7 +84,7 @@ Ainda há necessidade de APIs REST robustas. No entanto, as solicitações REST 
 
 A entrega de conteúdo headless geralmente usa APIs GraphQL. O GraphQL permite uma transferência sem estado semelhante, mas possibilita consultas mais direcionadas, reduzindo o número total de consultas necessárias e melhorando o desempenho. É comum ver soluções que usam uma mistura de REST e GraphQL, escolhendo a melhor ferramenta de acordo com a tarefa.
 
-Independentemente da API escolhida, ao definir um sistema headless com base em APIs comuns, você pode aproveitar o navegador mais recente e outras tecnologias da Web, como aplicativos web progressivos (PWA). As APIs criam uma interface padrão que é facilmente extensível e adaptável.
+Independentemente da API escolhida, ao definir um sistema headless com base em APIs comuns, você pode aproveitar o navegador mais recente e outras tecnologias da web, como aplicativos web progressivos (PWA). As APIs criam uma interface padrão que é facilmente extensível e adaptável.
 
 Normalmente, o conteúdo é renderizado no lado do cliente. Isso normalmente significa que alguém chama seu conteúdo em um dispositivo móvel, seu CMS entrega o conteúdo e, em seguida, o dispositivo móvel (o cliente) é responsável pela renderização do conteúdo que você serviu. Se o dispositivo for antigo ou estiver lento, sua experiência digital também será lenta.
 
@@ -96,7 +96,7 @@ O headless abre um mundo de flexibilidade para fornecer suas experiências digit
 
 Ter muitos canais diferentes pode significar que cada um tem seus próprios sistemas de apresentação. Mesmo que todos consumam o mesmo conteúdo por meio das mesmas APIs, a experiência pode não ser a mesma por causa das diferentes apresentações. Preocupação e cuidado devem ser dados para assegurar a consistência da experiência do cliente.
 
-Ao implementar sistemas de design cuidadosos, compartilhar bibliotecas de padrões e aproveitar componentes de design reutilizáveis, bem como estruturas estabelecidas e abertas do lado do cliente, é possível garantir experiências consistentes; no entanto, isso deve ser planejado.
+Ao implementar sistemas de design cuidadosos, compartilhar bibliotecas de padrões e usar componentes de design reutilizáveis e estruturas estabelecidas e abertas do lado do cliente, experiências consistentes podem ser garantidas, mas isso deve ser planejado.
 
 ## O futuro é headless e o futuro é agora {#future}
 
@@ -110,7 +110,7 @@ As experiências digitais continuarão a definir como as marcas interagem com os
 
 Como líder da indústria em gerenciamento de experiência digital, a Adobe percebe que a solução ideal para os desafios do mundo real que os criadores de experiências enfrentam raramente é uma escolha binária. É por isso que o AEM não apenas oferece suporte a ambos os modelos, mas também permite de forma única a combinação híbrida perfeita dos dois, misturando as vantagens da pilha completa e da tecnologia headless, para ajudá-lo a atender melhor os consumidores do seu conteúdo, onde quer que estejam.
 
-Essa jornada se concentra exclusivamente no modelo headless de entrega de conteúdo. No entanto, uma vez que você tenha esse conhecimento fundamental, poderá explorar ainda mais como utilizar o potencial de ambos os modelos.
+Essa jornada se concentra exclusivamente no modelo headless de entrega de conteúdo. No entanto, uma vez que tenha esse conhecimento fundamental, você poderá explorar ainda mais como utilizar o potencial de ambos os modelos.
 
 ## O que vem a seguir {#what-is-next}
 

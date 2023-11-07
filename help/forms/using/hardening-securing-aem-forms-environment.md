@@ -8,9 +8,9 @@ topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
 role: Admin
 exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1440'
 ht-degree: 0%
 
 ---
@@ -145,7 +145,7 @@ Por padrão, a ação enviar do portal de formulários adaptáveis salva os dado
 
 Você pode configurar o serviço de armazenamento para enviar pelo cabo ao cluster de processamento sem salvar nada localmente no nó de publicação. O cluster de processamento reside em uma zona segura atrás do firewall privado e os dados permanecem seguros.
 
-Use as credenciais do servidor de processamento para o serviço de configurações do AEM DS para postar dados do nó de publicação no servidor de processamento. É recomendável usar credenciais de um usuário não administrativo restrito com acesso de leitura e gravação ao repositório do servidor de processamento. Para obter mais informações, consulte [Configuração de serviços de armazenamento para rascunhos e envios](/help/forms/using/configuring-draft-submission-storage.md).
+Use as credenciais do servidor de processamento para o serviço de configurações do AEM DS para postar dados do nó de publicação no servidor de processamento. Use as credenciais de um usuário não administrativo restrito com acesso de leitura e gravação ao repositório do servidor de processamento. Para obter mais informações, consulte [Configuração de serviços de armazenamento para rascunhos e envios](/help/forms/using/configuring-draft-submission-storage.md).
 
 ### Dados seguros tratados pelo modelo de dados de formulário (FDM) {#secure-data-handled-by-form-data-model-fdm}
 
@@ -176,12 +176,12 @@ Um conjunto diferente de personalidades de usuário é necessário para as inst�
       * O não pode criar um formulário adaptável baseado em XDP.
       * não têm permissões para gravar scripts para formulários adaptáveis.
       * não é possível importar XDP ou qualquer pacote que contenha XDP
+
    * Um usuário do grupo de usuários avançados de formulários cria, preenche, publica e envia todos os tipos de formulários, grava scripts para formulários adaptáveis e importa pacotes que contêm XDP.
    * Um usuário de autores de modelo e usuário avançado de modelo pode visualizar e criar um modelo.
    * Um usuário de autores do fdm pode criar e modificar um modelo de dados de formulário.
    * Um usuário do grupo cm-user-agent pode criar, pré-visualizar e publicar cartas de gerenciamento de correspondência.
    * Um usuário do grupo de editores de workflow pode criar um aplicativo de caixa de entrada e um modelo de workflow.
-
 
 **No processamento do autor:**
 

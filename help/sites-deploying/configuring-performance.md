@@ -9,7 +9,7 @@ topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '6503'
 ht-degree: 12%
@@ -43,7 +43,6 @@ Esse ambiente contém conteúdo que você disponibiliza para os usuários. Aqui,
 >* Após configurar o para otimização de desempenho, siga os procedimentos em [Dia difícil](/help/sites-developing/tough-day.md) para testar o ambiente sob carga pesada.
 >* Consulte também [Dicas para melhorar o desempenho.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR)
 
-
 ## Metodologia de otimização de desempenho {#performance-optimization-methodology}
 
 Uma metodologia de otimização de desempenho para projetos AEM pode ser resumida em cinco regras simples que podem ser seguidas para evitar problemas de desempenho desde o início:
@@ -64,7 +63,7 @@ Planeje cerca de 10% do esforço do projeto para a fase de otimização de desem
 
 Sempre que possível, um projeto deve primeiro ser lançado de forma flexível para um público limitado para coletar experiência na vida real e executar outras otimizações, sem a pressão adicional que se segue a um anúncio completo.
 
-Depois que você estiver &quot;ao vivo&quot;, a otimização do desempenho não acaba. Agora é quando você enfrenta a carga &quot;real&quot; em seu sistema. É importante planejar ajustes adicionais após o lançamento.
+Depois que você estiver &quot;ao vivo&quot;, a otimização do desempenho não termina. Agora é quando você enfrenta a carga &quot;real&quot; em seu sistema. É importante planejar ajustes adicionais após o lançamento.
 
 Como a carga do seu sistema muda e os perfis de desempenho do seu sistema mudam com o tempo, um &quot;ajuste&quot; ou &quot;verificação de integridade&quot; de desempenho deve ser programado em intervalos de 6 a 12 meses.
 
@@ -82,7 +81,7 @@ Simular a realidade é difícil e quanto esforço você quer investir para ficar
 
 Não se deve subestimar a importância de estabelecer corretamente os objetivos de desempenho. Muitas vezes, depois que as pessoas se concentram em metas de desempenho específicas, é difícil alterar essas metas posteriormente, mesmo que elas se baseiem em suposições.
 
-Estabelecer metas de desempenho boas e sólidas é realmente uma das áreas mais complicadas. Geralmente, é melhor coletar registros e benchmarks da vida real de um site comparável (por exemplo, o antecessor do novo site).
+Estabelecer metas de desempenho boas e sólidas é realmente uma das áreas mais complicadas. Geralmente, é melhor coletar logs da vida real e benchmarks de um site comparável (por exemplo, o antecessor do novo site).
 
 ### Permanecer relevante {#stay-relevant}
 
@@ -387,9 +386,9 @@ Em ambos os casos, você pode definir o número esperado de transações por seg
 | Componente | Tipo de teste | Não. de usuários | Tx/s (esperado) | Tx/s (testado) | Descrição |
 |---|---|---|---|---|---|
 | Usuário único da página inicial | Média | 1 | 1 |  |  |
-|  | Pico | 1 | 3 |  |  |
+|   | Pico | 1 | 3 |  |  |
 | Página inicial de 100 usuários | Média | 100 | 3 |  |  |
-|  | Pico | 100 | 3 |  |
+|   | Pico | 100 | 3 |  |
 
 #### Testes de componente combinado {#combined-component-tests}
 
@@ -398,15 +397,15 @@ Testar os componentes em combinação faz com que o comportamento dos aplicativo
 | Cenário | Componente | Não. de usuários | Tx/s (esperado) | Tx/s (testado) | Descrição |
 |---|---|---|---|---|---|
 | Média mista | Página inicial | 10 | 1 |  |  |
-|  | Pesquisar | 10 | 1 |  |  |
-|  | Notícias | 10 | 2 |  |  |
-|  | Eventos | 10 | 1 |  |  |
-|  | Ativações | 10 | 3 |  | Simulação do comportamento do autor. |
+|   | Pesquisar | 10 | 1 |  |  |
+|   | Notícias | 10 | 2 |  |  |
+|   | Eventos | 10 | 1 |  |  |
+|   | Ativações | 10 | 3 |  | Simulação do comportamento do autor. |
 | Pico misto | Página inicial | 100 | 5 |  |  |
-|  | Pesquisar | 50 | 5 |  |  |
-|  | Notícias | 100 | 10 |  |  |
-|  | Eventos | 100 | 10 |  |  |
-|  | Ativações | 20 | 20 |  | Simulação do comportamento do autor. |
+|   | Pesquisar | 50 | 5 |  |  |
+|   | Notícias | 100 | 10 |  |  |
+|   | Eventos | 100 | 10 |  |  |
+|   | Ativações | 20 | 20 |  | Simulação do comportamento do autor. |
 
 #### Testes de ativação {#going-live-tests}
 
@@ -415,10 +414,10 @@ Durante os primeiros dias após o site ser disponibilizado, você pode esperar u
 | Cenário | Tipo de teste | Não. de usuários | Tx/s (esperado) | Tx/s (testado) | Descrição |
 |---|---|---|---|---|---|
 | Pico de ativação | Página inicial | 200 | 20 |  |  |
-|  | Pesquisar | 100 | 10 |  |  |
-|  | Notícias | 200 | 20 |  |  |
-|  | Eventos | 200 | 20 |  |  |
-|  | Ativações | 20 | 20 |  | Simulação do comportamento do autor. |
+|   | Pesquisar | 100 | 10 |  |  |
+|   | Notícias | 200 | 20 |  |  |
+|   | Eventos | 200 | 20 |  |  |
+|   | Ativações | 20 | 20 |  | Simulação do comportamento do autor. |
 
 #### Testes de Cenário de Erro {#error-scenario-tests}
 
@@ -432,9 +431,9 @@ Ao conceber estes testes, deve-se lembrar que nem todos os cenários ocorrem reg
 | Cenário de erro | Tipo de erro | Não. de usuários | Tx/s (esperado) | Tx/s (testado) | Descrição |
 |---|---|---|---|---|---|
 | Sobrecarga do componente de pesquisa | Pesquisar no curinga global (asterisco) | 10 | 1 |  | Somente &amp;ast;&amp;ast;&amp;ast; são pesquisados. |
-|  | Palavra de interrupção | 20 | 2 |  | Procurando uma palavra de interrupção. |
-|  | String vazia | 10 | 1 |  | Procurando uma cadeia de caracteres vazia. |
-|  | Caracteres especiais | 10 | 1 |  | Procurando caracteres especiais. |
+|   | Palavra de interrupção | 20 | 2 |  | Procurando uma palavra de interrupção. |
+|   | String vazia | 10 | 1 |  | Procurando uma cadeia de caracteres vazia. |
+|   | Caracteres especiais | 10 | 1 |  | Procurando caracteres especiais. |
 
 #### Testes de resistência {#endurance-tests}
 
@@ -443,10 +442,10 @@ Certos problemas só são encontrados depois que o sistema é executado por um p
 | Cenário | Tipo de teste | Não. de usuários | Tx/s (esperado) | Tx/s (testado) | Descrição |
 |---|---|---|---|---|---|
 | Ensaio de resistência (72 horas) | Página inicial | 10 | 1 |  |  |
-|  | Pesquisar | 10 | 1 |  |  |
-|  | Notícias | 20 | 2 |  |  |
-|  | Eventos | 10 | 1 |  |  |
-|  | Ativações | 1 | 3 |  | Simulação do comportamento do autor. |
+|   | Pesquisar | 10 | 1 |  |  |
+|   | Notícias | 20 | 2 |  |  |
+|   | Eventos | 10 | 1 |  |  |
+|   | Ativações | 1 | 3 |  | Simulação do comportamento do autor. |
 
 ### Otimização {#optimization}
 
@@ -496,6 +495,7 @@ O Dispatcher oferece vários mecanismos integrados que você pode usar para otim
 >Em geral, várias estratégias de armazenamento em cache envolvem selecionar bons URLs e não depender desses dados adicionais.
 >
 >Com a versão do Dispatcher 4.1.11, também é possível armazenar em cache cabeçalhos de resposta, consulte [Armazenamento em cache de cabeçalhos de resposta HTTP](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache).
+>
 
 ### Cálculo da proporção de cache do Dispatcher {#calculating-the-dispatcher-cache-ratio}
 

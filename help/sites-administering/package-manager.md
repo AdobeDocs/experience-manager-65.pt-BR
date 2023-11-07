@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3570'
+source-wordcount: '3568'
 ht-degree: 2%
 
 ---
@@ -68,7 +68,7 @@ O Gerenciador de pacotes está dividido em quatro áreas funcionais principais:
 * **Log de atividades** - Esse painel é minimizado no início e expande-se para detalhar a atividade do Gerenciador de pacotes, como quando um pacote é criado ou instalado. Há botões adicionais na guia Registro de atividades para:
    * **Limpar registro**
    * **Exibir / Ocultar**
-* **Barra de ferramentas** - A barra de ferramentas contém botões de atualização para o Painel de navegação esquerdo e a lista Pacote, bem como botões para pesquisar, criar e fazer upload de pacotes.
+* **Barra de ferramentas** - A barra de ferramentas contém botões de atualização para o Painel de navegação esquerdo e a lista Pacote e botões para pesquisar, criar e fazer upload de pacotes.
 
 ![Interface do usuário do Gerenciador de pacotes](assets/package-manager-ui.png)
 
@@ -275,7 +275,7 @@ Talvez seja necessário [recriar o pacote](#building-a-package) para atualizar s
 
 ### Reencapsulamento de um pacote {#rewrapping-a-package}
 
-Depois que um pacote é criado, ele pode ser empacotado novamente. O reempacotamento altera as informações do pacote sem, como miniatura, descrição etc., sem alterar o conteúdo do pacote.
+Depois que um pacote é criado, ele pode ser empacotado novamente. Reajustar altera as informações do pacote sem alterar a miniatura, a descrição etc., sem alterar o conteúdo do pacote.
 
 1. [Acesse o Gerenciador de pacotes.](#accessing)
 
@@ -581,7 +581,7 @@ Os pacotes AEM podem ser usados para criar e compartilhar conteúdo em ambientes
 
 [Distribuição de software](https://downloads.experiencecloud.adobe.com) O é um serviço centralizado projetado para simplificar a pesquisa e o download de pacotes AEM.
 
-Para obter mais informações, consulte o [Documentação de Distribuição de software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-br)
+Para obter mais informações, consulte [Documentação de Distribuição de software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-br)
 
 >[!NOTE]
 >

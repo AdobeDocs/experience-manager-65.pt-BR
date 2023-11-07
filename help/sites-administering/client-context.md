@@ -1,19 +1,15 @@
 ---
 title: ClientContext
-seo-title: Client Context
 description: Saiba como usar o Client Context para ver informações sobre a página atual e o visitante no Adobe Experience Manager.
-seo-description: Learn how to use the Client Context in AEM.
-uuid: 82b2f976-cb41-42f8-ad4b-3a5cd23cc5f5
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1978'
+source-wordcount: '1979'
 ht-degree: 0%
 
 ---
@@ -42,7 +38,7 @@ Os ícones (disponíveis apenas no ambiente de criação) permitem configurar os
 ![Os ícones Editar, Carregar e Redefinir da janela Contexto do cliente](do-not-localize/clientcontext_icons.png)
 
 * **Editar**
-Uma nova página será aberta, permitindo que você [editar, adicionar ou remover uma propriedade de perfil](#editingprofiledetails).
+Uma nova página é aberta, permitindo que você [editar, adicionar ou remover uma propriedade de perfil](#editingprofiledetails).
 
 * **Carregar**
 Você pode [selecione em uma lista de perfis e carregue o perfil](#loading-a-new-user-profile) você quer testar.
@@ -70,7 +66,7 @@ O Client Context pode mostrar as seguintes propriedades ([dependendo do que foi 
 
 A resolução da campanha normalmente é baseada na propriedade priority da campanha. Normalmente, a experiência é selecionada com base na segmentação.
 
-**Carrinho** Mostra informações do carrinho de compras, incluindo entradas de produto (título, quantidade, priceFormatted etc.), promoções resolvidas (título, mensagem etc.) e vouchers (código, descrição, etc.).
+**Carrinho** Mostra informações do carrinho de compras, incluindo entradas de produto (título, quantidade, priceFormatted etc.), promoções resolvidas (título, mensagem etc.) e vouchers (código, descrição etc.).
 
 O armazenamento de sessão do carrinho também notifica o servidor sobre alterações promocionais resolvidas (com base em alterações de segmentação) usando o ClientContextCartServlet.
 
@@ -154,7 +150,7 @@ Quando terminar, você poderá [redefinir o perfil](#resetting-the-profile-to-th
 
    ![O ícone Carregar perfil do Client Context](do-not-localize/clientcontext_loadprofile.png)
 
-1. Isso abrirá a caixa de diálogo, onde é possível selecionar o perfil que deseja carregar:
+1. Isso abre a caixa de diálogo, onde é possível selecionar o perfil que deseja carregar:
 
    ![A caixa de diálogo Carregador de perfil mostrando o menu suspenso para selecionar um perfil](assets/clientcontext_profileloader.png)
 
@@ -164,7 +160,7 @@ Quando terminar, você poderá [redefinir o perfil](#resetting-the-profile-to-th
 
 Também é possível selecionar um perfil com o controle deslizante de seleção:
 
-1. Clique duas vezes no ícone que representa o usuário atual. O seletor será aberto, use as setas para navegar e ver os perfis disponíveis:
+1. Clique duas vezes no ícone que representa o usuário atual. O seletor é aberto, use as setas para navegar e ver os perfis disponíveis:
 
    ![O seletor de usuários](assets/clientcontext_profileselector.png)
 
@@ -178,7 +174,7 @@ Também é possível selecionar um perfil com o controle deslizante de seleção
 
 ### Alterar a plataforma do navegador {#changing-the-browser-platform}
 
-1. Clique duas vezes no ícone que representa a plataforma do navegador. O seletor será aberto, use as setas para navegar e ver as plataformas/navegadores disponíveis:
+1. Clique duas vezes no ícone que representa a plataforma do navegador. O seletor é aberto, use as setas para navegar e ver as plataformas/navegadores disponíveis:
 
    ![Seletor de plataforma do navegador](assets/clientcontext_browserplatform.png)
 
@@ -186,7 +182,7 @@ Também é possível selecionar um perfil com o controle deslizante de seleção
 
 ### Alterar a geolocalização {#changing-the-geolocation}
 
-1. Clique duas vezes no ícone de localização geográfica. Um mapa expandido será aberto, onde você pode arrastar o marcador para um novo local:
+1. Clique duas vezes no ícone de localização geográfica. Um mapa expandido é aberto, onde você pode arrastar o marcador para um novo local:
 
    ![Detalhes de geolocalização](assets/clientcontext_geomocationrelocate.png)
 
@@ -194,7 +190,7 @@ Também é possível selecionar um perfil com o controle deslizante de seleção
 
 ### Alteração da seleção de tags {#changing-the-tag-selection}
 
-1. Clique duas vezes na seção Nuvem de tags do Contexto do cliente. A caixa de diálogo será aberta, onde é possível selecionar tags:
+1. Clique duas vezes na seção Nuvem de tags do Contexto do cliente. A caixa de diálogo é aberta, onde é possível selecionar tags:
 
    ![Caixa de diálogo Nuvem de tags](assets/clientcontext_tagselection.png)
 

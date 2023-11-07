@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1619'
 ht-degree: 0%
 
 ---
@@ -92,9 +92,9 @@ Use o procedimento a seguir para adicionar variáveis à lista:
 
 1. Na página da estrutura do Adobe Analytics, expanda a variável **Configurações gerais do Analytics** área.
 1. Abaixo da lista de variáveis, clique em Adicionar item para adicionar uma nova variável à lista.
-1. Na célula à esquerda, digite um nome para a variável, por exemplo `prop10`.
+1. Na célula à esquerda, digite um nome para a variável, por exemplo, `prop10`.
 
-1. Na coluna à direita, insira um valor para a variável, por exemplo `CONSTANT`.
+1. Na coluna à direita, insira um valor para a variável, por exemplo, `CONSTANT`.
 
 1. Para remover uma variável, clique no botão (-) ao lado dela.
 
@@ -199,7 +199,7 @@ Portanto, seu JavaScript deve definir `s.usePlugins` para `true` para que qualqu
    1. Especificar `cq` como o nome da pasta e clique em OK.
    1. Da mesma forma, crie o `analytics` e `components` pastas.
 
-1. Clique com o botão direito do mouse no `components` que você acabou de criar e clique em Criar > Criar componente. Especifique os seguintes valores de propriedade:
+1. Clique com o botão direito do mouse no `components` que você criou e clique em Criar > Criar componente. Especifique os seguintes valores de propriedade:
 
    * Etiqueta: `sitecatalyst`
    * Título: `sitecatalyst`
@@ -301,7 +301,7 @@ Use o procedimento a seguir para obter o código do plug-in, armazená-lo no rep
 
 1. Abra o arquivo js.txt da pasta da biblioteca do cliente.
 
-1. Em uma nova linha, adicione o nome do arquivo que contém o plug-in, por exemplo getQueryParam.js. Em seguida, clique em Salvar tudo e feche o arquivo.
+1. Em uma nova linha, adicione o nome do arquivo que contém o plugin, por exemplo, getQueryParam.js. Em seguida, clique em Salvar tudo e feche o arquivo.
 
 >[!NOTE]
 >

@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7667'
+source-wordcount: '7665'
 ht-degree: 1%
 
 ---
@@ -430,7 +430,7 @@ Você pode definir o número de tentativas com falha e o tempo de bloqueio subse
 
 ### Auditoria e registro {#auditing-and-logging}
 
-O uso adequado e seguro da auditoria e do registro de aplicativos pode ajudar a garantir que eventos de segurança e outros eventos anômalos sejam rastreados e detectados o mais rápido possível. O uso eficaz de auditoria e registro em um aplicativo inclui itens como rastreamento de logons bem-sucedidos e com falha, bem como eventos-chave do aplicativo, como a criação ou exclusão de registros-chave.
+O uso adequado e seguro da auditoria e do registro de aplicativos pode ajudar a garantir que eventos de segurança e outros eventos anômalos sejam rastreados e detectados o mais rápido possível. O uso eficiente da auditoria e do registro em um aplicativo inclui itens como rastreamento de logons bem-sucedidos e com falha e eventos-chave do aplicativo, como a criação ou a exclusão de registros-chave.
 
 Você pode usar a auditoria para detectar muitos tipos de ataques, incluindo estes:
 
@@ -662,7 +662,7 @@ Determinados URLs são destacados como aplicações Web voltadas para o usuário
 
 Um ataque de falsificação de solicitação entre sites (CSRF) explora a confiança que um site tem para o usuário, para transmitir comandos não autorizados e não intencionais pelo usuário. O ataque é configurado incluindo um link ou um script em uma página da Web, ou um URL em uma mensagem de email, para acessar outro site para o qual o usuário já foi autenticado.
 
-Por exemplo, você pode estar conectado ao Console de administração enquanto navega simultaneamente por outro site. Uma das páginas da Web pode incluir uma tag de imagem de HTML com um `src` que direciona um script do lado do servidor no site da vítima. Ao utilizar o mecanismo de autenticação de sessão baseado em cookies fornecido pelos navegadores da Web, o site atacante pode enviar solicitações mal-intencionadas para esse script do lado do servidor vítima, disfarçado de usuário legítimo. Para obter mais exemplos, consulte [https://owasp.org/www-community/attacks/csrf#Examples](https://owasp.org/www-community/attacks/csrf#Examples).
+Por exemplo, você pode estar conectado ao Console de administração enquanto navega simultaneamente por outro site. Uma das páginas da Web pode incluir uma tag de imagem de HTML com um `src` que direciona um script do lado do servidor no site da vítima. Ao usar o mecanismo de autenticação de sessão baseado em cookies fornecido pelos navegadores da Web, o site de ataque pode enviar solicitações mal-intencionadas para esse script do lado do servidor vítima, disfarçado de usuário legítimo. Para obter mais exemplos, consulte [https://owasp.org/www-community/attacks/csrf#Examples](https://owasp.org/www-community/attacks/csrf#Examples).
 
 As seguintes características são comuns ao CSRF:
 
@@ -932,7 +932,7 @@ Esta seção descreve as portas default (e intervalos de configuração alternat
     <ul> 
      <li><p>Porta de escuta do Admin Server: o padrão é 7001</p> </li> 
      <li><p>Porta de escuta SSL do Admin Server: o padrão é 7002</p> </li> 
-     <li><p>Porta configurada para o Servidor gerenciado, por exemplo 8001</p> </li> 
+     <li><p>Porta configurada para o servidor gerenciado, por exemplo, 8001</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 

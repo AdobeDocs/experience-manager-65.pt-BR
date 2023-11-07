@@ -1,18 +1,14 @@
 ---
 title: Suporte a token encapsulado
-seo-title: Encapsulated Token Support
 description: Saiba mais sobre o suporte a token encapsulado no AEM.
-seo-description: Learn about the Encapsulated Token support in AEM.
-uuid: a7c6f269-bb5a-49ba-abef-ea029202ab6d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '792'
 ht-degree: 0%
 
 ---
@@ -47,7 +43,7 @@ Você pode ver como isso funciona em uma implantação distribuída geograficame
 
 >[!NOTE]
 >
->Observe que o token encapsulado trata da autenticação. Ela garante que o cookie possa ser validado sem precisar acessar o repositório. No entanto, ainda é necessário que o usuário exista em todas as instâncias e que as informações armazenadas nesse usuário possam ser acessadas por cada instância.
+>O token encapsulado é sobre autenticação. Ela garante que o cookie possa ser validado sem precisar acessar o repositório. No entanto, ainda é necessário que o usuário exista em todas as instâncias e que as informações armazenadas nesse usuário possam ser acessadas por cada instância.
 >
 >Por exemplo, se um novo usuário for criado na instância de publicação número um, devido ao modo como o token encapsulado funciona, ele será autenticado com êxito na publicação número dois. Se o usuário não existir na segunda instância de publicação, a solicitação ainda não será bem-sucedida.
 >

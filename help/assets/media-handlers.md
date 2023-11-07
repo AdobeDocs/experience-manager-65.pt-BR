@@ -6,9 +6,9 @@ contentOwner: AG
 role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: acc4b78f551e0e0694f41149fff7e24d855f504f
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2161'
+source-wordcount: '2156'
 ht-degree: 4%
 
 ---
@@ -83,9 +83,9 @@ Para ativar/desativar um manipulador de mídia:
 1. Atualizar a página: um ícone é exibido ao lado do manipulador de mídia indicando que o recurso está desativado.
 1. Para ativar o manipulador de mídia, clique em **[!UICONTROL Ativar]** ao lado do nome do manipulador de mídia.
 
-### Criar um novo manipulador de mídia {#creating-a-new-media-handler}
+### Criar um manipulador de mídia {#creating-a-new-media-handler}
 
-Para suportar um novo tipo de mídia ou executar tarefas específicas em um ativo, é necessário criar um novo manipulador de mídia. Esta seção descreve como proceder.
+Para suportar um novo tipo de mídia ou executar tarefas específicas em um ativo, é necessário criar um manipulador de mídia. Esta seção descreve como proceder.
 
 #### Classes e interfaces importantes {#important-classes-and-interfaces}
 
@@ -151,8 +151,8 @@ Depois de executar o procedimento a seguir, ao fazer upload de um arquivo TXT no
       * ID do artefato: myBundle.
       * Nome: Meu [!DNL Experience Manager] pacote.
       * Descrição: Este é meu [!DNL Experience Manager] pacote.
-   1. Clique em **[!UICONTROL Concluir]**.
 
+   1. Clique em **[!UICONTROL Concluir]**.
 
 1. Defina o [!DNL Java] compilador para a versão 1.5:
 
@@ -162,8 +162,8 @@ Depois de executar o procedimento a seguir, ao fazer upload de um arquivo TXT no
       * Nível de conformidade do compilador
       * Compatibilidade de arquivos .class gerados
       * Compatibilidade de origem
-   1. Clique em **[!UICONTROL OK]**. Na janela de diálogo, clique em **[!UICONTROL Sim]**.
 
+   1. Clique em **[!UICONTROL OK]**. Na janela de diálogo, clique em **[!UICONTROL Sim]**.
 
 1. Substitua o código na `pom.xml` com o seguinte código:
 
@@ -438,7 +438,7 @@ Depois de executar o procedimento a seguir, ao fazer upload de um arquivo TXT no
    1. Clique com o botão direito do mouse no `myBundle` projeto, selecione **[!UICONTROL Executar como]**, depois **[!UICONTROL Instalação do Maven]**.
    1. O pacote `myBundle-0.0.1-SNAPSHOT.jar` (contendo a classe compilada) é criado em `myBundle/target`.
 
-1. No CRX Explorer, crie um novo nó em `/apps/myApp`. Nome = `install`, Tipo = `nt:folder`.
+1. No CRX Explorer, crie um nó em `/apps/myApp`. Nome = `install`, Tipo = `nt:folder`.
 1. Copiar o pacote `myBundle-0.0.1-SNAPSHOT.jar` e armazená-lo em `/apps/myApp/install` (por exemplo, com WebDAV). O novo manipulador de texto agora está ativo no [!DNL Experience Manager].
 1. No navegador, abra o [!UICONTROL Console de gerenciamento Web Apache Felix]. Selecione o [!UICONTROL Componentes] e desativar o manipulador de texto padrão `com.day.cq.dam.core.impl.handler.TextHandler`.
 
@@ -494,7 +494,7 @@ Instalar [!DNL ImageMagick] no disco que hospeda o [!DNL Experience Manager] ser
 Para testar o fluxo de trabalho modificado, adicione um ativo ao `/content/dam`.
 
 1. No sistema de arquivos, obtenha uma imagem TIFF de sua escolha. Renomear para `myImage.tiff` e copiá-lo em `/content/dam`, por exemplo, usando WebDAV.
-1. Vá para a **[!UICONTROL DAM CQ5]** console, por exemplo `https://localhost:4502/libs/wcm/core/content/damadmin.html`.
+1. Vá para a **[!UICONTROL DAM CQ5]** console, por exemplo, `https://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Abrir o ativo **[!UICONTROL myImage.tiff]** e verifique se a imagem virada e as três miniaturas foram criadas.
 
 #### Configurar a etapa do processo CommandLineProcess {#configuring-the-commandlineprocess-process-step}
@@ -507,7 +507,7 @@ Separe os valores de [!UICONTROL Argumentos do processo] usando vírgula e não 
 |---|---|
 | mime:&lt;mime-type> | Argumento opcional. O processo é aplicado se o ativo tiver o mesmo tipo MIME que o do argumento. <br>Vários tipos MIME podem ser definidos. |
 | tn:&lt;width>:&lt;height> | Argumento opcional. O processo cria uma miniatura com as dimensões definidas no argumento. <br>Várias miniaturas podem ser definidas. |
-| cmd &lt;command> | Define o comando que é executado. A sintaxe depende da ferramenta de linha de comando. Somente um comando pode ser definido. <br>As variáveis a seguir podem ser usadas para criar o comando:<br>`${filename}`: nome do arquivo de entrada, por exemplo original.jpg <br> `${file}`: nome do caminho completo do arquivo de entrada, por exemplo `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: diretório do arquivo de entrada, por exemplo `/tmp/cqdam0816.tmp` <br>`${basename}`: nome do arquivo de entrada sem sua extensão, por exemplo, original <br>`${extension}`: extensão do arquivo de entrada, por exemplo, JPG. |
+| cmd &lt;command> | Define o comando que é executado. A sintaxe depende da ferramenta de linha de comando. Somente um comando pode ser definido. <br>As variáveis a seguir podem ser usadas para criar o comando:<br>`${filename}`: nome do arquivo de entrada, como original.jpg <br> `${file}`: nome do caminho completo do arquivo de entrada, por exemplo, `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: diretório do arquivo de entrada, por exemplo, `/tmp/cqdam0816.tmp` <br>`${basename}`: nome do arquivo de entrada sem sua extensão, por exemplo, original <br>`${extension}`: extensão do arquivo de entrada, por exemplo, JPG. |
 
 Por exemplo, se [!DNL ImageMagick] O está instalado no disco que hospeda o [!DNL Experience Manager] e se você criar uma etapa do processo usando [!UICONTROL ProcessoDeLinhaDeComando] como Implementação e os seguintes valores como [!UICONTROL Argumentos do processo]:
 
@@ -530,4 +530,3 @@ Use o seguinte [!UICONTROL Argumentos do processo] para criar a representação 
 >[!MORELIKETHIS]
 >
 >* [Processar ativos](assets-workflow.md)
-

@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2784'
+source-wordcount: '2793'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ Dependendo do tipo de fragmento, modelos ou modelos também são usados:
    * Os modelos de fragmento de conteúdo definem a estrutura de um fragmento de conteúdo quando ele é criado.
    * Um fragmento faz referência ao modelo; portanto, as alterações no modelo podem/afetarão qualquer fragmento dependente.
    * Os modelos são compostos de tipos de dados.
-   * As funções para adicionar novas variações etc. precisam atualizar o fragmento de acordo.
+   * As funções para adicionar novas variações, e assim por diante, precisam atualizar o fragmento de acordo.
 
   >[!CAUTION]
   >
@@ -62,8 +62,8 @@ Dependendo do tipo de fragmento, modelos ou modelos também são usados:
    * Usado para definir fragmentos de conteúdo simples.
    * Os modelos definem a estrutura (básica, somente texto) de um fragmento de conteúdo quando ele é criado.
    * O modelo é copiado para o fragmento quando é criado; portanto, outras alterações no modelo não serão refletidas nos fragmentos existentes.
-   * As funções para adicionar novas variações etc. precisam atualizar o fragmento de acordo.
-   * [Modelos de fragmento de conteúdo](/help/sites-developing/content-fragment-templates.md) operar de maneira diferente da de outros mecanismos de modelos dentro do ecossistema AEM (por exemplo, modelos de página etc.). Por conseguinte, devem ser consideradas separadamente.
+   * As funções para adicionar novas variações, e assim por diante, precisam atualizar o fragmento de acordo.
+   * [Modelos de fragmento de conteúdo](/help/sites-developing/content-fragment-templates.md) operar de maneira diferente daquela de outros mecanismos de modelos dentro do ecossistema AEM (por exemplo, modelos de página e assim por diante). Por conseguinte, devem ser consideradas separadamente.
    * Quando baseado em um modelo, o tipo MIME do conteúdo é gerenciado no conteúdo real; isso significa que cada elemento e variação pode ter um tipo MIME diferente.
 
 ### Integração com o Assets {#integration-with-assets}
@@ -72,7 +72,7 @@ O Gerenciamento de fragmentos de conteúdo (CFM) faz parte do AEM Assets como:
 
 * Fragmentos de conteúdo são ativos.
 * Eles usam a funcionalidade existente do Assets.
-* Eles são totalmente integrados ao Assets (consoles de administração etc.).
+* Eles são totalmente integrados ao Assets (consoles de administração e assim por diante).
 
 #### Mapeamento de fragmentos de conteúdo estruturado para ativos {#mapping-structured-content-fragments-to-assets}
 
@@ -138,7 +138,7 @@ Os fragmentos de conteúdo podem ser referenciados a partir de páginas AEM, com
 * Além disso, um intervalo de parágrafos pode ser selecionado para restringir a saída; por exemplo, isso pode ser usado para saída de várias colunas.
 * O componente permite [conteúdo intermediário](/help/sites-developing/components-content-fragments.md#in-between-content):
 
-   * Aqui, o componente permite colocar outros ativos (imagens etc.) entre os parágrafos do fragmento referenciado.
+   * Aqui, o componente permite colocar outros ativos (imagens e assim por diante) entre os parágrafos do fragmento referenciado.
    * Para conteúdo intermediário, é necessário:
 
       * esteja ciente da possibilidade de referências instáveis; o conteúdo intermediário (adicionado ao criar uma página) não tem relação fixa com o parágrafo ao lado do qual está posicionado, inserindo um novo parágrafo (no editor de fragmento de conteúdo) antes que a posição do conteúdo intermediário possa perder a posição relativa
@@ -182,7 +182,7 @@ Ainda há algumas diretrizes que você deve seguir para garantir que seu compone
 
 * Se a saída de vários elementos for suportada (usando `elementNames` para especificar vários elementos), o modo de exibição real é definido pela propriedade `displayMode`:
 
-   * Se o valor for `singleText` (e há apenas um elemento configurado), então o elemento é renderizado como um texto com conteúdo intermediário, suporte de layout etc. Esse é o padrão para fragmentos em que apenas um único elemento é renderizado.
+   * Se o valor for `singleText` (e há apenas um elemento configurado), então o elemento é renderizado como um texto com conteúdo intermediário, suporte de layout e assim por diante. Esse é o padrão para fragmentos em que apenas um único elemento é renderizado.
    * Caso contrário, uma abordagem muito mais simples será usada (pode ser chamada de &quot;exibição de formulário&quot;), em que nenhum conteúdo intermediário é compatível e o conteúdo do fragmento é renderizado &quot;como está&quot;.
 
 * Se o fragmento for renderizado para `displayMode` == `singleText` (implícita ou explicitamente) as seguintes propriedades adicionais entram em ação:
@@ -254,7 +254,7 @@ As três interfaces a seguir podem servir como pontos de entrada:
 
 * **Modelo de fragmento** ([ModeloFragmento](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
-  Uso `FragmentTemplate.createFragment()` para criar um novo fragmento.
+  Uso `FragmentTemplate.createFragment()` para criar um fragmento.
 
   ```
   Resource templateOrModelRsc = resourceResolver.getResource("...");
@@ -492,9 +492,9 @@ if (fragmentResource != null) {
 }
 ```
 
-### Exemplo: Criação de um novo fragmento de conteúdo {#example-creating-a-new-content-fragment}
+### Exemplo: Criação de um fragmento de conteúdo {#example-creating-a-new-content-fragment}
 
-Para criar um novo fragmento de conteúdo de forma programática, é necessário usar:
+Para criar um fragmento de conteúdo de forma programática, é necessário usar:
 
 `com.adobe.cq.dam.cfm.ContentFragmentManager#create`
 

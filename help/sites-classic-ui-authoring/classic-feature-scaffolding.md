@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1427'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ O corpo do andaime é a forma. Quando um usuário deseja criar uma página usand
 
 ### Criação de um scaffold {#creating-a-scaffold}
 
-Para criar um novo andaime, vá para a **Ferramentas** console, depois **Scaffolding da página padrão** e crie uma página. Um tipo de modelo de página única está disponível, o *Modelo de andaime.*
+Para criar um scaffold, vá para a **Ferramentas** console, depois **Scaffolding da página padrão** e crie uma página. Um tipo de modelo de página única está disponível, o *Modelo de andaime.*
 
 Vá para a **Propriedades da página** da nova página e defina o *Texto do título*, *Descrição*, *Modelo de destino*, e *Caminho de destino*, conforme descrito acima.
 
@@ -163,4 +163,4 @@ Depois de desbloquear, você pode restaurar a herança clicando no símbolo de c
 
 >[!NOTE]
 >
->Se a herança for cancelada no nível da página (na guia Live Copy das Propriedades da página), todos os componentes poderão ser editados no **Andaime** (serão mostrados no estado desbloqueado).
+>Se a herança for cancelada no nível da página (na guia Live Copy das Propriedades da página), todos os componentes poderão ser editados no **Andaime** (são mostrados em um estado desbloqueado).

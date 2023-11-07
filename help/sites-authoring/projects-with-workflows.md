@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
 exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 40%
+source-wordcount: '795'
+ht-degree: 42%
 
 ---
 
@@ -125,7 +125,7 @@ Esse workflow permite solicitar um email. É o mesmo workflow que aparece no **E
 
 1. Em um projeto simples, toque ou clique na divisa para baixo na parte superior direita do **Fluxos de trabalho** mosaico e selecionar **Iniciar fluxo de trabalho**.
 1. No assistente do workflow, selecione **Solicitar email** e clique em **Próxima**.
-1. Insira um título de email, bem como os caminhos da campanha e do template. Além disso, você pode fornecer um nome, uma descrição e uma data de ativação.
+1. Insira um título de email e os caminhos da campanha e do template. Além disso, você pode fornecer um nome, uma descrição e uma data de ativação.
 
    ![Solicitar fluxo de trabalho de email](assets/project-request-email-workflow.png)
 

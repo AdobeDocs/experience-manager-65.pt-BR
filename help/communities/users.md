@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1916'
+source-wordcount: '1912'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Para gerenciar usuários e grupos de usuários registrados no ambiente de criaç
 
 | Se Membro do Grupo... | Função Primária |
 |---|---|
-| administradores | O grupo de administradores consiste em administradores do sistema que têm todas as habilidades de um Administrador da comunidade, bem como a capacidade de gerenciar o grupo de Administradores da comunidade. |
+| administradores | O grupo de administradores consiste em administradores do sistema que têm todas as habilidades de um Administrador da comunidade e a capacidade de gerenciar o grupo de Administradores da comunidade. |
 | Administradores da comunidade | O grupo Administradores da comunidade se torna automaticamente membro de todos os sites da comunidade e de quaisquer grupos criados no site. Um membro inicial do grupo Administradores da comunidade é o grupo de administradores. No ambiente de criação, os administradores da comunidade podem criar sites da comunidade, gerenciar sites, gerenciar membros (eles podem proibir membros da comunidade) e moderar conteúdo. |
 | Comunidade &lt;*nome do site*> Sitecontentmanager | O Gerenciador de conteúdo do site da comunidade é capaz de criar páginas de AEM tradicionais, criar conteúdo e modificar páginas para um site da comunidade. |
 | Nenhum | Um visitante anônimo do site pode não acessar o ambiente do autor. |
@@ -200,7 +200,7 @@ Siga as mesmas etapas que a criação e atribuição de um usuário à função 
 
 ### Integração de LDAP {#ldap-integration}
 
-O AEM suporta o uso do LDAP para autenticação de usuários, bem como a criação de contas de usuários. Isso é detalhado em [Configuração do LDAP com AEM 6](../../help/sites-administering/ldap-config.md).
+O AEM suporta o uso do LDAP para autenticação de usuários e criação de contas de usuário. Isso é detalhado em [Configuração do LDAP com AEM 6](../../help/sites-administering/ldap-config.md).
 
 A seguir estão alguns detalhes de configuração específicos para membros da comunidade e grupos de membros.
 

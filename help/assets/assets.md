@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Leader, Architect, User
 exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
-source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 0%
@@ -18,7 +18,7 @@ AEM [!DNL Assets] é uma ferramenta de Gerenciamento de ativos digitais (DAM) qu
 
 ## O que é o Gerenciamento de ativos digitais? {#what-is-digital-asset-management}
 
-[!DNL Assets] O oferece compartilhamento e distribuição em toda a empresa dos principais ativos digitais de uma organização. Os usuários em uma organização podem armazenar, gerenciar e acessar ativos digitais como imagens, gráficos, áudio, vídeo e documentos por meio de uma interface da Web (ou uma pasta CIFS ou WebDAV).
+[!DNL Assets] O oferece compartilhamento e distribuição em toda a empresa dos principais ativos digitais de uma organização. Os usuários em uma organização podem armazenar, gerenciar e acessar ativos digitais como imagens, gráficos, áudio, vídeo e documentos por meio de uma interface da Web (ou uma pasta CIF ou WebDAV).
 
 [!DNL Assets] capacidade de [!DNL Experience Manager] permite fazer o seguinte:
 
@@ -26,7 +26,7 @@ AEM [!DNL Assets] é uma ferramenta de Gerenciamento de ativos digitais (DAM) qu
 * Gerencie ativos agrupando-os por tags, lightbox ou estrelas (seus favoritos). Adicionar anotações aos ativos.
 * Localize ativos pesquisando nomes de arquivos, texto completo de documentos e pesquisando datas, tipo de documento e tags.
 * Adicione ou edite informações de metadados para ativos. Os metadados são versionados automaticamente junto com o ativo correspondente. É possível importar ou exportar metadados de ativos.
-* Execute funções de edição de imagens, como dimensionamento e adição de filtros de imagem. Importe e exporte vários ativos digitais simultaneamente usando uma pasta WebDAV ou CIFS.
+* Execute funções de edição de imagens, como dimensionamento e adição de filtros de imagem. Importe e exporte vários ativos digitais simultaneamente usando uma pasta WebDAV ou CIF.
 * Use fluxos de trabalho e notificações para permitir o processamento e o download em conjunto de qualquer conjunto de ativos e gerenciar direitos de acesso a ativos.
 
 ### [!DNL Experience Manager Assets] está integrado com [!DNL Experience Manager Sites] {#aem-assets-fully-integrated-in-cq-wcm}
@@ -66,7 +66,7 @@ Ao trabalhar com ativos digitais no [!DNL Experience Manager], será útil se vo
 
 * **Marcação**: [!DNL Assets] podem ser marcadas e classificadas. Consulte [organização de ativos](/help/assets/organize-assets.md).
 
-* **Representações**: uma representação é a representação binária de um ativo. [!DNL Assets] sempre tem uma representação primária, que é a do arquivo carregado. Elas podem ter qualquer número de representações adicionais criadas, por exemplo, por etapas de fluxo de trabalho personalizadas ou quando um ativo é carregado. As representações podem ser de um tamanho diferente, com uma resolução diferente, com uma marca d&#39;água adicionada ou alguma outra característica alterada.
+* **Representações**: uma representação é a representação binária de um ativo. [!DNL Assets] sempre tem uma representação primária, que é a do arquivo carregado. Elas podem ter qualquer número de representações adicionais criadas, por exemplo, por etapas personalizadas de fluxo de trabalho ou quando um ativo é carregado. As representações podem ser de um tamanho diferente, com uma resolução diferente, com uma marca d&#39;água adicionada ou alguma outra característica alterada.
 
 * **Versões**: o controle de versão cria um instantâneo dos ativos digitais em um ponto específico do tempo. Você pode restaurar ativos para versões anteriores. Consulte [controle de versão em [!DNL Assets]](manage-assets.md#asset-versioning).
 

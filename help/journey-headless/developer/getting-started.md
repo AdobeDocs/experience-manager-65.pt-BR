@@ -2,10 +2,10 @@
 title: Introdução ao AEM Headless
 description: Nesta parte da Jornada do desenvolvedor headless do AEM, saiba mais sobre pré-requisitos do AEM headless.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3038'
-ht-degree: 94%
+source-wordcount: '3032'
+ht-degree: 92%
 
 ---
 
@@ -81,7 +81,7 @@ Para modificar o conteúdo de forma headless, o AEM oferece duas APIs robustas.
 * A API GraphQL permite criar solicitações para acessar e fornecer Fragmentos de conteúdo.
 * A API REST do Assets permite criar e modificar fragmentos de conteúdo (e outros ativos).
 
-Você aprenderá sobre essas APIs e como usá-las em uma parte posterior da jornada headless do AEM. Ou consulte a seção [recursos adicionais](#additional-resources) para obter a documentação adicional.
+Você aprenderá sobre essas APIs e como usá-las em uma parte posterior da jornada headless do AEM. Ou consulte a [recursos adicionais](#additional-resources) abaixo para obter a documentação adicional.
 
 ## Níveis de integração headless {#integration-levels}
 
@@ -113,13 +113,13 @@ Esse nível de integração baseia-se no nível dois, permitindo que a maioria d
 
 ### Você ainda não tem um consumidor externo do conteúdo headless, como um aplicativo de página única (SPA). {#do-not-have-a-spa}
 
-Se o objetivo for criar um novo SPA que consuma de forma headless conteúdo do AEM, você pode usar recursos como os Fragmentos de conteúdo para gerenciar seu conteúdo headless e também criar um SPA com estrutura de edição de SPA do AEM.
+Se o objetivo for criar um SPA que consuma conteúdo sem periféricos do AEM, você poderá usar recursos como Fragmentos de conteúdo para gerenciar seu conteúdo sem periféricos e também criar um SPA AEM SPA com Editor de estrutura.
 
 Usando o Editor de SPA, o SPA não apenas consome conteúdo do AEM, como também é totalmente editável dentro do AEM pelos autores de conteúdo, proporcionando a flexibilidade da entrega headless e da edição no contexto dentro do AEM.
 
 ## Requisitos e pré-requisitos {#requirements-prerequisites}
 
-Há vários requisitos antes de começar o seu projeto do AEM headless.
+Há vários requisitos antes de começar seu projeto de AEM headless.
 
 ### Conhecimento {#knowledge}
 
@@ -177,7 +177,7 @@ Crie um plano sobre qual tradução de conteúdo você precisa.
 
 Seja claro sobre o fluxo de trabalho de atualização de conteúdo. Qual é o processo de aprovação que o sistema deve oferecer suporte? Os fluxos de trabalho do AEM podem ser aproveitados para automatizar esse processo?
 
-Observe que a [hierarquia de conteúdo](#content-hierarchy) pode ser aproveitada para facilitar a tradução.
+Observe que sua [hierarquia de conteúdo](#content-hierarchy) pode ser usada para facilitar a tradução.
 
 Consulte a seção [recursos adicionais](#additional-resources) para obter a documentação adicional sobre fluxos de trabalho do AEM e ferramentas de tradução, incluindo links para a Jornada de tradução headless do AEM.
 
@@ -186,7 +186,7 @@ Consulte a seção [recursos adicionais](#additional-resources) para obter a doc
 A hierarquia de pastas pode atender a duas principais preocupações com relação à gestão de conteúdo:
 
 * [Tradução](#translation): o AEM gerencia a tradução de conteúdo mantendo cópias do conteúdo em pastas específicas da localidade.
-* Organização: as pastas são usadas para definir uma hierarquia de conteúdo necessária para suportar as necessidades de tradução, bem como para gerenciar logicamente os Fragmentos de conteúdo.
+* Organização: as pastas são usadas para definir uma hierarquia de conteúdo necessária para atender às necessidades da tradução e gerenciar logicamente os fragmentos de conteúdo.
 
 O AEM permite uma estrutura de conteúdo flexível e uma hierarquia pode ser arbitrariamente grande. No entanto, é importante perceber que qualquer alteração na estrutura de pastas pode ter consequências não intencionais para consultas existentes que [dependem do caminho do conteúdo.](#developer) Portanto, uma hierarquia bem definida, claramente definida previamente, pode ser útil para os autores de conteúdo.
 

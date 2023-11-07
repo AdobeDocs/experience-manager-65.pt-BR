@@ -2,9 +2,9 @@
 title: Adicionar o ContextHub a páginas e acessar lojas
 description: Adicione o ContextHub às suas páginas para ativar os recursos do ContextHub e para vincular às bibliotecas de JavaScript do ContextHub
 exl-id: ae745af9-b49f-46b9-ab48-2fd256e9a681
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Use os armazenamentos do ContextHub para manter os dados de contexto. O ContextH
 * [Armazenamento JSON](contexthub-api.md#contexthub-store-persistedjsonpstore)
 * [JSONPStorePersistente](contexthub-api.md#contexthub-store-persistedstore)
 
-Todos os tipos de lojas são extensões da [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) classe. Para obter informações sobre como criar um novo tipo de loja, consulte [Criar lojas personalizadas](ch-extend.md#creating-custom-store-candidates). Para obter informações sobre tipos de armazenamento de exemplo, consulte [Amostra de candidatos da loja do ContextHub](ch-samplestores.md).
+Todos os tipos de lojas são extensões da [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) classe. Para obter informações sobre como criar um tipo de armazenamento, consulte [Criar lojas personalizadas](ch-extend.md#creating-custom-store-candidates). Para obter informações sobre tipos de armazenamento de exemplo, consulte [Amostra de candidatos da loja do ContextHub](ch-samplestores.md).
 
 ### Modos de persistência {#persistence-modes}
 
@@ -139,7 +139,7 @@ As regras usadas para resolver esses segmentos são resumidas da seguinte maneir
 
 >[!WARNING]
 >
->Os segmentos instalados são fornecidos como configurações de referência para ajudar você a criar sua própria configuração dedicada para o projeto e, como tal, não devem ser usados diretamente.
+>Os segmentos instalados são fornecidos como configurações de referência para ajudar você a criar sua própria configuração dedicada para o projeto. Não os utilize diretamente.
 
 ## Depuração do ContextHub {#debugging-contexthub}
 

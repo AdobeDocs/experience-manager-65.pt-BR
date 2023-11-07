@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: f5025f64-d3ce-43e8-9666-5c7c162536c7
 exl-id: e3488c9d-035f-4165-ad32-21103ec7e581
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '151'
 ht-degree: 0%
 
 ---
@@ -23,4 +23,4 @@ Com o andaime, você pode criar um formulário (um andaime) com campos que refle
 
 >[!NOTE]
 >
->Embora haja um andaime [modo](/help/sites-authoring/author-environment-tools.md#page-modes) disponível, a manutenção e a criação de scaffolds, bem como a criação de novas páginas a partir de scaffolds são feitas na interface clássica. Consulte [Andaime](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) na documentação de criação da interface clássica para obter mais detalhes.
+>Embora haja um andaime [modo](/help/sites-authoring/author-environment-tools.md#page-modes) disponível, a manutenção e a criação de scaffolds e a criação de novas páginas a partir de scaffolds são feitas na interface clássica. Consulte [Andaime](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) na documentação de criação da interface clássica para obter mais detalhes.

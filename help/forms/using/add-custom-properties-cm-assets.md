@@ -11,9 +11,9 @@ discoiquuid: 79437b96-7b57-4581-b7e7-fcaedc3d05de
 docset: aem65
 feature: Correspondence Management
 exl-id: ba2e145d-51ee-4844-a9e1-9927971d25a1
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4435'
+source-wordcount: '4428'
 ht-degree: 4%
 
 ---
@@ -47,7 +47,7 @@ Esse cenário mostra como adicionar uma propriedade personalizada a todos os tip
 Conclua as etapas a seguir para adicionar uma propriedade personalizada a todos os tipos de ativos e cartas:
 
 1. Ir para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
-1. Na pasta apps, crie uma pasta chamada css com caminho/estrutura semelhante à pasta css (localizada na pasta ccrui) usando as seguintes etapas:
+1. Na pasta apps, crie uma pasta chamada css com caminho/estrutura semelhante à pasta css (na pasta ccrui) usando as seguintes etapas:
 
    1. Clique com o botão direito do mouse na pasta items no seguinte caminho e selecione **Sobrepor nó**:
 
@@ -105,7 +105,7 @@ Conclua as etapas a seguir para adicionar uma propriedade personalizada a todos 
 
    >[!NOTE]
    >
-   >As propriedades comuns de todos os ativos adicionados aparecem na guia básico das propriedades dos ativos. Por padrão, as propriedades comuns adicionadas a todos os ativos aparecem na página de propriedades, bem como na página de criação de ativos. Para ocultar as propriedades comuns, é necessário <!--link to show / hide properties]-->.
+   >As propriedades comuns de todos os ativos adicionados aparecem na guia básico das propriedades dos ativos. Por padrão, as propriedades comuns adicionadas para todos os ativos aparecem nas páginas de propriedades e criação de ativos. Para ocultar as propriedades comuns, é necessário <!--link to show / hide properties]-->.
 
 ### Cenário: adicionar listas suspensas e valores personalizados a uma propriedade/campo personalizado {#scenario-add-custom-drop-down-and-values-to-a-custom-property-field}
 
@@ -189,7 +189,7 @@ Esse cenário mostra como adicionar uma guia personalizada, Recipients, a todos 
 Usando o procedimento a seguir, é possível adicionar uma guia com um campo a todos os ativos:
 
 1. Ir para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
-1. Na pasta de aplicativos, crie uma pasta chamada cmmetadataproperties com caminho/estrutura semelhante à pasta cmmetadataproperties (localizada na pasta de conteúdo) usando as seguintes etapas:
+1. Na pasta de aplicativos, crie uma pasta chamada cmmetadataproperties com caminho/estrutura semelhante à pasta cmmetadataproperties (na pasta de conteúdo) usando as seguintes etapas:
 
    1. Clique com o botão direito do mouse na pasta cmmetadataproperties no seguinte caminho e selecione **Sobrepor nó**:
 
@@ -846,7 +846,7 @@ Para permitir a indexação de propriedades personalizadas, conclua as seguintes
 ## Alterar exibição padrão da página de pesquisa {#change-default-view-of-the-search-page}
 
 1. Ir para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
-1. Na pasta apps, crie uma pasta chamada list com caminho/estrutura semelhante à pasta da lista localizada em /libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views:
+1. Na pasta de aplicativos, crie uma pasta chamada lista com caminho/estrutura semelhante à pasta da lista em /libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views:
 
    1. Clique com o botão direito do mouse na pasta items no seguinte caminho e selecione **Sobrepor nó**:
 
@@ -890,7 +890,7 @@ Para permitir a indexação de propriedades personalizadas, conclua as seguintes
 >Essas etapas alteram a exibição padrão de todos os consoles, como Forms e Documentos, Ativos e Sites.
 
 1. Ir para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
-1. Na pasta de aplicativos, crie uma pasta chamada lista com caminho/estrutura semelhante à pasta da lista localizada em:
+1. Na pasta de aplicativos, crie uma pasta chamada lista com caminho/estrutura semelhante à pasta da lista em:
 
    /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/
 
@@ -933,7 +933,7 @@ Para permitir a indexação de propriedades personalizadas, conclua as seguintes
 
 Para mostrar ou ocultar as propriedades personalizadas, conclua as seguintes etapas:
 
-1. No nó de propriedade personalizada, como geographicallocation, crie um novo nó com o nome &quot;granite:rendercondition&quot; do tipo &quot;nt:unstructured&quot;.
+1. No nó de propriedade personalizada, como geographicallocation, crie um nó com o nome &quot;granite:rendercondition&quot; do tipo &quot;nt:unstructured&quot;.
 1. Adicione a seguinte propriedade ao nó e clique em **Salvar tudo**:
 
    <table>

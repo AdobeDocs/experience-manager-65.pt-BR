@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a07a4690-0e47-4a76-84cb-96abdc70b835
 exl-id: e57198cb-8fd9-43e2-b416-e40e462561c8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
@@ -31,11 +31,11 @@ O caminho para o componente é exclusivo e faz referência ao componente padrão
 
 Suponha que o cabeçalho do componente de comentário deve ser exibido com uma aparência alternativa em um site da instância do AEM, enquanto aparece com a exibição padrão em outro site. Em vez de sobrepor o comentário padrão, que altera o componente de comentário para todas as instâncias, uma solução melhor é garantir que haja vários componentes de comentário disponíveis para uso em vários sites.
 
-Para implementar esta solução, crie um novo componente que estenda (substitua) o existente e modifique o script Handlebars. A área do site que usa os novos comentários pode usar o estendido, enquanto os sites que usam a aparência padrão permanecem inalterados.
+Para implementar esta solução, crie um componente que estenda (substitua) o existente e modifique o script Handlebars. A área do site que usa os novos comentários pode usar o estendido, enquanto os sites que usam a aparência padrão permanecem inalterados.
 
 O componente de comentários é, na verdade, um dos dois componentes que compõem o sistema de comentários. Portanto, há dois componentes a serem estendidos: *comentários* e *comentário*. O script a ser editado está na *comentário* do componente `header.hbs` arquivo, enquanto o pai *comentários* O componente (o sistema de comentários) é o que um autor realmente adiciona à página.
 
-Para estender comentários, é necessário:
+Para estender comentários, você deve:
 
 1. [Criar os componentes](extend-create-components.md)
 1. [Adicionar comentário à página de exemplo](extend-sample-page.md)

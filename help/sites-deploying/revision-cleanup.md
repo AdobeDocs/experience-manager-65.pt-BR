@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '5814'
+source-wordcount: '5811'
 ht-degree: 0%
 
 ---
@@ -240,7 +240,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>O Author e o Publish normalmente têm diferentes janelas de Limpeza de Revisão Online?</strong></td>
-   <td>Isso depende do horário comercial e dos padrões de tráfego da presença online do cliente. As janelas de manutenção devem ser configuradas fora dos tempos de produção principais para permitir a melhor eficiência de limpeza. Para várias instâncias de publicação do AEM (farm TarMK), as janelas de manutenção da Limpeza de revisão online devem ser escalonadas.</td>
+   <td>Isso depende do horário comercial e dos padrões de tráfego da presença online do cliente. As janelas de manutenção devem ser configuradas fora dos tempos de produção principais para permitir a melhor eficiência de limpeza. Para várias instâncias de publicação do AEM (farm TarMK), as janelas de manutenção para a Limpeza de revisão online devem ser escalonadas.</td>
    <td> </td>
   </tr>
   <tr>
@@ -266,7 +266,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>Quais são os requisitos mínimos de espaço em disco e memória heap ao executar a Limpeza de revisão online?</strong></td>
-   <td><p>O espaço em disco é continuamente monitorado durante a Limpeza de revisão on-line. Se o espaço disponível em disco ficar abaixo de um valor crítico, o processo será cancelado. O valor crítico é 25% do espaço em disco atual do repositório e não é configurável.</p> <p><strong>A Adobe recomenda que você dimensione o disco pelo menos duas ou três vezes maior que o tamanho estimado do repositório.</strong></p> <p>O espaço livre em heap é continuamente monitorado durante o processo de limpeza. Se o espaço livre do heap cair abaixo de um valor crítico, o processo será cancelado. O valor crítico é configurado por meio de org.apache.jackrabbit.oak.segment.SegmentNodeStoreService#MEMORY_THRESHOLD. O valor padrão é 15%.</p> <p>O Recommendations para dimensionamento mínimo de heap de compactação não é separado das recomendações de dimensionamento de memória do AEM. Geralmente: <strong>Se uma instância de AEM for dimensionada o suficiente para lidar com os casos de uso e a carga esperada, o processo de limpeza obterá memória suficiente.</strong></p> </td>
+   <td><p>O espaço em disco é continuamente monitorado durante a Limpeza de revisão on-line. Se o espaço em disco disponível ficar abaixo de um valor crítico, o processo será cancelado. O valor crítico é 25% do espaço em disco atual do repositório e não é configurável.</p> <p><strong>A Adobe recomenda que você dimensione o disco pelo menos duas ou três vezes maior que o tamanho estimado do repositório.</strong></p> <p>O espaço livre em heap é continuamente monitorado durante o processo de limpeza. Se o espaço livre do heap cair abaixo de um valor crítico, o processo será cancelado. O valor crítico é configurado por meio de org.apache.jackrabbit.oak.segment.SegmentNodeStoreService#MEMORY_THRESHOLD. O valor padrão é 15%.</p> <p>O Recommendations para dimensionamento mínimo de heap de compactação não é separado das recomendações de dimensionamento de memória do AEM. Geralmente: <strong>Se uma instância de AEM for dimensionada o suficiente para lidar com os casos de uso e a carga esperada, o processo de limpeza obterá memória suficiente.</strong></p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -426,7 +426,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>Quais informações são expostas na Verificação de integridade da Limpeza de revisão? Como e quando eles contribuem para os níveis de status codificados por cores? </strong></td>
-   <td><p>A Verificação de integridade da limpeza da revisão faz parte da <a href="/help/sites-administering/operations-dashboard.md#health-reports" target="_blank">Painel de operações</a>.<br /> </p> <p>O status é <strong>VERDE</strong> se a última execução da tarefa de manutenção Limpeza de revisão online foi concluída com êxito.</p> <p>É necessário <strong>AMARELO</strong> se a tarefa de manutenção Limpeza de revisão online foi cancelada uma vez.<br /> </p> <p>É necessário <strong>VERM</strong> se a tarefa de manutenção Limpeza de revisão online foi cancelada três vezes seguidas. <strong>Nesse caso, é necessária a interação manual</strong> ou a Limpeza de revisão on-line provavelmente falhará novamente. Para obter mais informações, leia a <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-online-revision-cleanup">Solução de problemas</a> abaixo.<br /> </p> <p>Observe também que o status da Verificação de integridade será redefinido após a reinicialização do sistema. Portanto, uma instância recém-reiniciada mostra um status verde na Verificação de integridade da limpeza de revisão. Ferramentas de monitoramento externas podem ser usadas para manter os dados além do tempo de atividade do AEM. Consulte <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios">a documentação do AEM para anexar verificações de integridade ao Nagios como exemplo para uma ferramenta de monitoramento externa</a>.</p> </td>
+   <td><p>A Verificação de integridade da limpeza da revisão faz parte da <a href="/help/sites-administering/operations-dashboard.md#health-reports" target="_blank">Painel de operações</a>.<br /> </p> <p>O status é <strong>VERDE</strong> se a última execução da tarefa de manutenção Limpeza de revisão online foi concluída com êxito.</p> <p>É necessário <strong>AMARELO</strong> se a tarefa de manutenção Limpeza de revisão online foi cancelada uma vez.<br /> </p> <p>É necessário <strong>VERM</strong> se a tarefa de manutenção Limpeza de revisão online foi cancelada três vezes seguidas. <strong>Nesse caso, é necessária a interação manual</strong> ou a Limpeza de revisão on-line provavelmente falhará novamente. Para obter mais informações, leia a <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-online-revision-cleanup">Solução de problemas</a> abaixo.<br /> </p> <p>Além disso, o status da Verificação de integridade é redefinido após a reinicialização do sistema. Assim, uma instância recém-reiniciada mostra um status verde na Verificação de integridade da limpeza de revisão. Ferramentas de monitoramento externas podem ser usadas para manter os dados além do tempo de atividade do AEM. Consulte <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios">a documentação do AEM para anexar verificações de integridade ao Nagios como exemplo para uma ferramenta de monitoramento externa</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>

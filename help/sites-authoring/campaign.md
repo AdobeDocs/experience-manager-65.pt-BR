@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2753'
+source-wordcount: '2749'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Você pode criar conteúdo de email no AEM e processá-lo em emails do Adobe Campaign. Para fazer isso, você deve:
 
-1. Crie um novo boletim informativo no AEM a partir de um modelo específico do Adobe Campaign.
+1. Crie um boletim informativo no AEM a partir de um modelo específico do Adobe Campaign.
 1. Selecionar [um serviço do Adobe Campaign](#selecting-the-adobe-campaign-cloud-service-and-template) antes de editar o conteúdo para acessar todas as funcionalidades.
 1. Editar o conteúdo.
 1. Validar o conteúdo.
@@ -187,7 +187,7 @@ Para inserir personalização:
 
 ### Visualização de informativo {#previewing-a-newsletter}
 
-Você pode visualizar como o informativo será exibido, bem como visualizar a personalização.
+Você pode visualizar como o informativo será exibido e visualizar a personalização.
 
 1. Com o informativo aberto, clique em **Visualizar** no canto superior direito do AEM. O AEM exibe a aparência do informativo quando os usuários o recebem.
 
@@ -257,7 +257,7 @@ Se um boletim informativo estiver vinculado a vários deliveries, o número de d
 
 Para vincular uma página criada no AEM com um email do Adobe Campaign:
 
-1. Crie um novo email com base em um template de email específico para AEM. Consulte [Criação de emails no Adobe Campaign Standard](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html) para obter mais informações.
+1. Crie um email com base em um modelo de email específico do AEM. Consulte [Criação de emails no Adobe Campaign Standard](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html) para obter mais informações.
 
    ![chlimage_1-36](assets/chlimage_1-36a.png)
 
@@ -351,8 +351,8 @@ Para sincronizar o conteúdo criado no AEM com um delivery do Adobe Campaign:
 
    ![chlimage_1-42](assets/chlimage_1-42a.png)
 
-1. Especifique os outros parâmetros do seu delivery (target etc.)
-1. Se necessário, inicie o processo de aprovação de delivery no Adobe Campaign. A aprovação de conteúdo no AEM é necessária além das aprovações configuradas no Adobe Campaign (orçamento, target etc.). A aprovação de conteúdo no Adobe Campaign só é possível se o conteúdo já estiver aprovado no AEM.
+1. Especificar os outros parâmetros do delivery (target e assim por diante)
+1. Se necessário, inicie o processo de aprovação de delivery no Adobe Campaign. A aprovação de conteúdo no AEM é necessária além das aprovações configuradas no Adobe Campaign (orçamento, público-alvo e assim por diante). A aprovação de conteúdo no Adobe Campaign só é possível se o conteúdo já estiver aprovado no AEM.
 1. Execute o delivery. Durante a análise de delivery, a versão mais atualizada do conteúdo do AEM é recuperada.
 
    >[!NOTE]

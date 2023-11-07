@@ -10,9 +10,9 @@ discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6169'
+source-wordcount: '6168'
 ht-degree: 1%
 
 ---
@@ -157,7 +157,7 @@ Toque no fragmento do documento e toque em ![configure_icon](assets/configure_ic
 
    Navegue até [Objetos de modelo de dados e variáveis](../../forms/using/create-interactive-communication.md#hiddenvariables) para configurar a vinculação de variáveis ocultas no fragmento do documento.
 
-   Você também pode arrastar e soltar elementos de origem de dados ou fragmentos de documento de texto para configurar a vinculação de variáveis.  Para criar uma ligação com qualquer um dos elementos da fonte de dados, selecione a **Fontes de dados** e arraste e solte o elemento no nome da variável. O elemento de fonte de dados e a variável devem ser do mesmo tipo para configurar a associação com êxito. Se você arrastar e soltar um elemento de fonte de dados em uma variável já vinculada, o novo elemento substituirá o anterior para criar uma nova vinculação com a variável. Da mesma forma, selecione o **Assets** e arraste e solte o fragmento do documento de texto no nome da variável para configurar a vinculação entre eles. O fragmento do documento de texto não deve conter nenhuma variável.
+   Você também pode arrastar e soltar elementos de origem de dados ou fragmentos de documento de texto para configurar a vinculação de variáveis.  Para criar uma ligação com qualquer um dos elementos da fonte de dados, selecione a **Fontes de dados** e arraste e solte o elemento no nome da variável. O elemento de fonte de dados e a variável devem ser do mesmo tipo para configurar a associação com êxito. Se você arrastar e soltar um elemento de fonte de dados em uma variável já vinculada, o novo elemento substituirá o anterior para criar uma vinculação com a variável. Da mesma forma, selecione o **Assets** e arraste e solte o fragmento do documento de texto no nome da variável para configurar a vinculação entre eles. O fragmento do documento de texto não deve conter nenhuma variável.
 
 1. Para adicionar uma tabela, com o canal de impressão selecionado, no campo **[!UICONTROL Assets]** Aplique o filtro para exibir somente os Fragmentos de layout. Arraste e solte o fragmento de layout necessário na Comunicação interativa. Um fragmento de layout é baseado em um XDP e pode ser usado para criar layouts gráficos ou tabelas estáticas e dinâmicas na Comunicação interativa que são preenchidas com dados dinâmicos.
 

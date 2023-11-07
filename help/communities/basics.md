@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '359'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ## Visão geral {#overview}
 
-A seção de criação da documentação descreve a adição de recursos das Comunidades ao sites AEM no modo de edição do autor, bem como a descrição das configurações de componentes.
+A seção de criação da documentação descreve a adição de recursos das Comunidades a sites AEM no modo de edição do autor e a descrição das configurações de componentes.
 
 Componentes podem ser explorados usando uma instância AEM e o mecanismo de [Guia de componentes da comunidade](components-guide.md).
 

@@ -9,9 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 89f4d3cf-eb2e-4d55-8209-16ecbba03792
-source-git-commit: 5f4bbad87768cf6bd73771f9eac6e01ab3bf3309
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6171'
+source-wordcount: '6170'
 ht-degree: 0%
 
 ---
@@ -190,7 +190,7 @@ Ative essas opções para especificar como exibir conteúdo, como exibir página
 
 **Layout da página:** Selecione o tipo de layout de página para o documento PDF.
 
-**Ampliação:** Escolha a ampliação predefinida para a exibição inicial do documento de PDF ou selecione um valor personalizado. Escolher uma configuração padrão indica que a ampliação padrão do Acrobat será usada.
+**Ampliação:** Escolha a ampliação predefinida para a exibição inicial do documento de PDF ou selecione um valor personalizado. A escolha de uma configuração padrão indica que a ampliação padrão do Acrobat é usada.
 
 **Número da Página de Destino:** Especifique o número da página para a qual o PDF será aberto.
 

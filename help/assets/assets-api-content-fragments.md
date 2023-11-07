@@ -5,9 +5,9 @@ feature: Content Fragments,Assets HTTP API
 role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1956'
+source-wordcount: '1959'
 ht-degree: 24%
 
 ---
@@ -204,7 +204,7 @@ A resposta conterá informações de paginação como parte da variável `proper
 
 As pastas atuam como containers para ativos e outras pastas. Elas refletem a estrutura do repositório de conteúdo do AEM.
 
-A API REST do Assets expõe o acesso às propriedades de uma pasta; por exemplo, seu nome, título etc. Os ativos são expostos como entidades filhas de pastas e subpastas.
+A API REST do Assets expõe o acesso às propriedades de uma pasta; por exemplo, seu nome, título e assim por diante. Os ativos são expostos como entidades filhas de pastas e subpastas.
 
 >[!NOTE]
 >
@@ -235,9 +235,9 @@ Fragmentos de conteúdo:
 
 #### Modelos de conteúdo e fragmentos de conteúdo {#content-models-and-content-fragments}
 
-Atualmente, os modelos que definem a estrutura de um fragmento de conteúdo não são expostos por meio de uma API HTTP. Por conseguinte, a *consumidor* precisa saber sobre o modelo de um fragmento (pelo menos um mínimo), embora a maioria das informações possa ser inferida a partir da carga, como tipos de dados etc. fazem parte da definição.
+Atualmente, os modelos que definem a estrutura de um fragmento de conteúdo não são expostos por meio de uma API HTTP. Por conseguinte, a *consumidor* precisa saber sobre o modelo de um fragmento (pelo menos um mínimo), embora a maioria das informações possa ser inferida da carga, como tipos de dados e assim por diante. fazem parte da definição.
 
-Para criar um novo fragmento de conteúdo, o caminho (repositório interno) do modelo deve ser fornecido.
+Para criar um fragmento de conteúdo, o caminho (repositório interno) do modelo deve ser fornecido.
 
 #### Conteúdo associado {#associated-content}
 
@@ -307,7 +307,7 @@ O uso é feito via:
 
 Existem algumas limitações:
 
-* **Os modelos de fragmento de conteúdo não são compatíveis no momento**: elas não podem ser lidas ou criadas. Para criar um fragmento de conteúdo novo ou atualizar um existente, os desenvolvedores precisam saber o caminho correto para o modelo do fragmento de conteúdo. Atualmente, o único método para obter uma visão geral é por meio da interface de administração.
+* **Os modelos de fragmento de conteúdo não são compatíveis no momento**: elas não podem ser lidas ou criadas. Para criar um fragmento de conteúdo ou atualizar um existente, os desenvolvedores precisam saber o caminho correto para o modelo do fragmento de conteúdo. Atualmente, o único método para obter uma visão geral é por meio da interface de administração.
 * **As referências são ignoradas**. Atualmente, não há verificações sobre se um fragmento de conteúdo existente é referenciado. Portanto, por exemplo, excluir um fragmento de conteúdo pode resultar em problemas em uma página que contém uma referência ao fragmento de conteúdo excluído.
 * **Tipo de dados JSON** A saída da API REST do *Tipo de dados JSON* está no momento *saída baseada em string*.
 

@@ -5,9 +5,9 @@ role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1723'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ Para se inscrever nos eventos, siga estas etapas:
 1. Sub-folders multifield permite especificar uma lista de pastas que devem ser criadas como uma pasta filho da pasta vinculada.
 1. Status do projeto: selecione o status do projeto para criar a pasta vinculada.
 1. Criar uma pasta vinculada em projetos com portfólio: lista de Portfolio aos quais o projeto deve pertencer para criar a pasta vinculada. Deixe essa lista vazia para criar a pasta vinculada para todos os portfólios de projetos.
-1. Criar uma pasta vinculada em projetos com campo de formulário personalizado: o campo de formulário personalizado e seu valor correspondente que o projeto deve ter para criar a pasta vinculada. Essa configuração será ignorada se permanecer vazia. Selecionar `CUSTOM FORMS: Create DAM Linked Folder` para o campo e a entrada `Yes` para o valor.
+1. Criar uma pasta vinculada em projetos com campo de formulário personalizado: o campo de formulário personalizado e seu valor correspondente que o projeto deve ter para criar a pasta vinculada. Essa configuração será ignorada se for deixada vazia. Selecionar `CUSTOM FORMS: Create DAM Linked Folder` para o campo e a entrada `Yes` para o valor.
 1. Clique em Habilitar criação automática de pastas vinculadas. Volte para a guia Inscrições em eventos e você verá que agora há um evento de criação.
 
 ![configuração de pasta vinculada](/help/assets/assets/wf-linked-folder-config.png)
@@ -95,7 +95,7 @@ O mapeamento de metadados entre documentos e ativos do Adobe Workfront é defini
 Para configurar os mapeamentos, siga estas etapas:
 
 1. Navegue até **Ferramentas** > **Assets** > **Esquemas de metadados**.
-1. Selecione o formulário de esquema de metadados que deseja editar e clique em **Editar** ou crie um novo esquema de metadados do zero.
+1. Selecione o formulário de esquema de metadados que deseja editar e clique em **Editar** ou crie um esquema de metadados do zero.
 1. Selecione o campo de formulário de esquema de metadados que deseja editar e selecione **Configurações** no painel direito.
 1. Entrada [!DNL Workfront] Campo de formulário personalizado selecione o nome do [!DNL Workfront] que você deseja mapear para a propriedade AEM selecionada. As opções disponíveis são:
 
@@ -173,7 +173,7 @@ Para manter o histórico de versões de ativos no AEM, configure o controle de v
 
 1. Selecionar opção **[!UICONTROL Armazenar ativos com o mesmo nome que as versões do ativo existente]**. Quando marcada, essa opção permite armazenar ativos carregados com o mesmo nome e no mesmo local que a versão do ativo existente. Se permanecer desmarcada, um novo ativo será criado com um nome diferente (por exemplo, `asset-name.pdf` e `asset-name-1.pdf`).
 
-1. Selecionar opção **[!UICONTROL Atualizar metadados de ativos ao criar uma nova versão]**. Quando marcada, essa opção atualiza os metadados do ativo sempre que uma nova versão do ativo é criada. Se desmarcado, o ativo manterá os metadados que tinha antes da criação da nova versão.
+1. Selecionar opção **[!UICONTROL Atualizar metadados de ativos ao criar uma versão]**. Quando marcada, essa opção atualiza os metadados do ativo sempre que uma nova versão do ativo é criada. Se desmarcado, o ativo manterá os metadados que tinha antes da criação da nova versão.
 
 ![configurar controle de versão de ativos](/help/assets/assets/wf-config-versioning.png)
 

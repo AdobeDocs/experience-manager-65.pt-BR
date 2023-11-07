@@ -2,10 +2,10 @@
 title: Jornadas de documentação do AEM
 description: As Jornadas de documentação fornecem uma estrutura narrativa dentro da documentação do AEM, unindo recursos complexos e diferentes para resolver uma meta comercial da maneira recomendada. As jornadas foram desenvolvidas para auxiliar os iniciantes no AEM, apresentando os conceitos e recursos que permitem atingir uma meta de A a Z.
 exl-id: bb0a26e2-5686-4fb7-bb6e-231dafc8268b
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 91%
+source-wordcount: '1223'
+ht-degree: 87%
 
 ---
 
@@ -17,7 +17,7 @@ As Jornadas de documentação fornecem uma estrutura narrativa dentro da documen
 
 Uma jornada de documentação une vários tópicos e recursos diferentes e talvez complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema empresarial do começo ao fim, mesmo que ele tenha o mínimo de conhecimento prévio sobre o tópico ou o AEM.
 
-As jornadas de documentação contrastam com os documentos técnicos existentes do AEM, que se concentram principalmente em um único recurso e documentação de tarefas e que são destinados àqueles que já estão familiarizados com o AEM. Ao se concentrar nos conceitos e deixar os detalhes minuciosos para a documentação técnica existente, as jornadas de documentação oferecem aos leitores novos no AEM um lugar para começar a entender como a plataforma pode ser aproveitada usando as práticas recomendadas que atendem às necessidades e fluxos de trabalho empresariais comuns. Por esse motivo, as jornadas de documentação servem como um complemento e não como substitutas da [documentação técnica existente do AEM.](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=pt-BR)
+As jornadas de documentação contrastam com os documentos técnicos existentes do AEM, que se concentram principalmente em um único recurso e documentação de tarefas e que são destinados àqueles que já estão familiarizados com o AEM. Ao se concentrar nos conceitos e deixar os detalhes minuciosos para a documentação técnica existente, as jornadas de documentação oferecem aos leitores novos no AEM um lugar para começar a entender como a plataforma pode ser aproveitada utilizando as práticas recomendadas que atendem às necessidades e fluxos de trabalho empresariais comuns. Por esse motivo, as jornadas de documentação servem como um complemento e não como substitutas da [documentação técnica existente do AEM.](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=pt-BR)
 
 ### Aprendizagem por narrativa {#narrative}
 
@@ -76,12 +76,12 @@ As jornadas de documentação são um complemento da documentação técnica e d
 |---|---|---|---|---|---|---|
 | Jornada de documentação | Uma jornada define como o AEM pode resolver um problema geral de negócios por meio de uma narrativa que orienta os leitores por processos e recursos complexos e inter-relacionados. Ela ilustra como vários recursos trabalham juntos para resolver uma necessidade empresarial de acordo com as práticas recomendadas. | Leitores novos no AEM | Familiaridade geral do CMS | Opções e configurações detalhadas | Texto | Ca. 1 hora |
 | Documentação técnica | A documentação técnica se concentra em recursos individuais, detalhando o funcionamento técnico do recurso e cada opção disponível para o usuário. | Usuários experientes do AEM | Experiência do AEM | Contexto e histórico | Texto | Varia |
-| Tutorial | Um tutorial oferece informações detalhadas sobre um tópico e apresenta um passo a passo de como um desenvolvedor ou administrador pode atingir um objetivo técnico (geralmente relacionado à programação ou configuração do sistema). São fornecidos exemplos específicos e amostras de código, geralmente utilizando um conjunto limitado de recursos. | Desenvolvedores ou administradores do AEM | Experiência do AEM | Histórico e teoria | Vídeo | >1 hora |
+| Tutorial | Um tutorial oferece informações detalhadas sobre um tópico e apresenta um passo a passo de como um desenvolvedor ou administrador pode atingir um objetivo técnico (geralmente relacionado à programação ou configuração do sistema). São fornecidos exemplos específicos e código de exemplo, geralmente usando um conjunto limitado de recursos. | Desenvolvedores ou administradores do AEM | Experiência do AEM | Histórico e teoria | Vídeo | >1 hora |
 | Guia de introdução | Um guia de introdução é uma apresentação rápida de um novo recurso específico do AEM. Ele fornece uma visão geral rápida de um recurso individual, apresentando ao usuário as etapas importantes (mas não todas) para configurar e utilizar um caso de uso simples. | Administradores do AEM | Experiência do AEM | Histórico, teoria, opções detalhadas | Texto | &lt;1 hora |
 
 ## Quais são as jornadas existentes? {#journeys}
 
-Há várias jornadas de documentação disponíveis para você. Como cada jornada é projetada como uma narrativa, comece com a introdução e leia tudo para obter um entendimento completo do tópico no contexto do AEM.
+Há várias Jornadas de documentação disponíveis para você. Como cada jornada é projetada como uma narrativa, comece com a introdução e leia tudo para obter um entendimento completo do tópico no contexto do AEM.
 
 | Jornada | Descrição |
 |---|---|

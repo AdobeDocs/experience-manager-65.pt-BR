@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1929'
+source-wordcount: '1923'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Ao configurar processos de fluxo de trabalho (personalizados e/ou prontos para u
 
 Para otimizar cargas de assimilação altas, é possível definir um [workflow como temporário](/help/sites-developing/workflows.md#transient-workflows).
 
-Quando um fluxo de trabalho é transitório, os dados de tempo de execução relacionados às etapas de trabalho intermediárias não são mantidos no JCR quando são executados (as representações de saída são mantidas, é claro).
+Quando um workflow é transitório, os dados de tempo de execução relacionados às etapas de trabalho intermediárias não são mantidos no JCR quando executados (as representações de saída são mantidas).
 
 As vantagens podem incluir:
 
@@ -255,7 +255,7 @@ Salvando uma sessão:
 
 >[!CAUTION]
 >
->Se, apesar das recomendações aqui, você criar sua própria sessão jcr, ela precisará ser salva.
+>Se, apesar das recomendações aqui, você criar sua própria sessão jcr, ela deverá ser salva.
 
 ### Minimizar o número/escopo de iniciadores {#minimize-the-number-scope-of-launchers}
 

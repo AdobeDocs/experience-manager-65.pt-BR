@@ -1,19 +1,15 @@
 ---
 title: Pré-requisitos para integração com o Adobe Target
-seo-title: Prerequisites for Integrating with Adobe Target
 description: Saiba mais sobre os pré-requisitos para integração com o Adobe Target.
-seo-description: Find out about the prerequisites for integrating with Adobe Target.
-uuid: 55d87a96-5fe7-4f7e-93c1-fdf7fbb7c971
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: ae4a6e97-c0d7-472d-a25f-b89b1abf4df3
 docset: aem65
 exl-id: 30813c44-51ac-4e6e-8ee6-4e8baacb1ff9
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '549'
 ht-degree: 7%
 
 ---
@@ -47,13 +43,13 @@ O teste e o target [agente de replicação](/help/sites-deploying/replication.md
    >
    >Ao configurar o agente de replicação de Teste e Destino, na variável **Transporte** , o URI é definido por padrão como **tnt:///**. Não substituir este URI por **https://admin.testandtarget.omniture.com**.
    >
-   >Observe que, se você tentar testar a conexão com o **tnt:///**, isso gerará um erro. Este comportamento é esperado, pois este URI é somente para uso interno e não deve ser usado com **Testar conexão**.
+   >Se você tentar testar a conexão com o **tnt:///**, ele emite um erro. Esse comportamento é esperado, pois esse URI é somente para uso interno; não use com **Testar conexão**.
 
 ## Protegendo o nó de configurações da atividade {#securing-the-activity-settings-node}
 
 Você deve proteger o nó de configurações de atividade **cq:ActivitySettings** na instância de publicação para que ele fique inacessível aos usuários normais. O nó de configurações de atividade só deve estar acessível ao serviço que lida com a sincronização de atividades com o Adobe Target.
 
-A variável **cq:ActivitySettings** O nó está disponível no CRXDE lite em `/content/campaigns/*nameofbrand*`* *no nó activities jcr:content;* *por exemplo `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Esse nó só é criado depois de direcionar um componente.
+A variável **cq:ActivitySettings** O nó está disponível no CRXDE lite em `/content/campaigns/*nameofbrand*`* *no nó activities jcr:content;* *por exemplo, `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Esse nó só é criado depois de direcionar um componente.
 
 A variável **cq:ActivitySettings** no jcr:content da atividade é protegido pelas seguintes ACLs:
 

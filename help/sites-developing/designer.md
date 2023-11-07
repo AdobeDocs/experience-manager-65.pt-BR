@@ -1,18 +1,14 @@
 ---
 title: Designs e o Designer
-seo-title: Designs and the Designer
-description: Você precisará criar um design para o seu site e no AEM, faça isso usando o Designer
-seo-description: You will need to create a design for your website and in AEM, you do so by using the Designer
-uuid: b880ab49-8bea-4925-9b7b-e911ebda14ee
+description: Saiba como criar um design para seu site e no AEM usando o Designer.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: f9bcb6eb-1df4-4709-bcec-bef0931f797a
 exl-id: c81c5910-b6c9-41bd-8840-a6782792701f
-source-git-commit: adbdff9ff5b5bd8f5f6b22fb724a0e5273072de2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Este artigo descreve como criar um site com base na interface clássica. A Adobe recomenda aproveitar as tecnologias de AEM mais recentes para seus sites, conforme descrito detalhadamente no artigo [Introdução ao desenvolvimento do AEM Sites](/help/sites-developing/getting-started.md).
+>Este artigo descreve como criar um site com base na interface clássica. A Adobe recomenda o uso das tecnologias mais recentes de AEM para seus sites, conforme descrito detalhadamente no artigo [Introdução ao desenvolvimento do AEM Sites](/help/sites-developing/getting-started.md).
 
 O Designer é usado para criar um design para o seu site usando o [Interface clássica](/help/release-notes/touch-ui-features-status.md) no AEM.
 

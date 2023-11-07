@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1840'
+source-wordcount: '1835'
 ht-degree: 2%
 
 ---
@@ -52,7 +52,7 @@ Atualmente, o modo Edição no local está ativado para elementos de página ger
 
 >[!NOTE]
 >
->A variável [!UICONTROL Título] O componente foi projetado para conter um texto curto sem quebras de linha. Ao editar um título no Modo de edição local, inserir uma quebra de linha abrirá uma nova **Texto** abaixo do título.
+>A variável [!UICONTROL Título] O componente foi projetado para conter um texto curto sem quebras de linha. Ao editar um título no Modo de edição local, inserir uma quebra de linha abre uma nova **Texto** abaixo do título.
 
 ## Recursos do Editor de Rich Text {#features-of-the-rich-text-editor}
 
@@ -353,7 +353,7 @@ Selecione uma única célula para dividi-la:
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
-A criação de uma tabela aninhada criará uma nova tabela independente na célula atual.
+A criação de uma tabela aninhada cria uma tabela independente dentro da célula atual.
 
 >[!NOTE]
 >

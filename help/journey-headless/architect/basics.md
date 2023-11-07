@@ -2,10 +2,10 @@
 title: Conheça as noções básicas da modelagem de conteúdo
 description: Conheça as noções básicas da modelagem de conteúdo do seu CMS headless usando fragmentos de conteúdo.
 exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 89%
+source-wordcount: '896'
+ht-degree: 87%
 
 ---
 
@@ -105,7 +105,7 @@ Isso fornece referências a outros Fragmentos de conteúdo.
 Esse tipo de referência é usado para criar conteúdo aninhado, introduzindo as relações necessárias para modelar o conteúdo.
 O tipo de dados pode ser configurado para permitir que os autores de fragmento:
    * Editem o fragmento referenciado diretamente.
-   * Criem um novo fragmento de conteúdo, com base no modelo apropriado
+   * Crie um fragmento de conteúdo, com base no modelo apropriado
 
 >[!NOTE]
 >
@@ -130,7 +130,7 @@ Por exemplo, você pode ter os seguintes modelos de fragmento de conteúdo defin
 * Pessoa
 * Prêmios
 
-Parece muito simples, porém é claro que uma empresa conta com um CEO, mas também com funcionários....e todos são definidos como uma Pessoa.
+Parece muito simples, mas uma empresa tem um CEO e funcionários...e todos são definidos como uma Pessoa.
 
 E uma pessoa pode ter um prêmio (ou talvez dois).
 

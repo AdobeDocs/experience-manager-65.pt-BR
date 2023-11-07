@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3532'
 ht-degree: 0%
@@ -105,7 +105,7 @@ A Adobe recomenda publicar ativos no Dynamic Media Classic (Scene7) somente de a
 
 1. No sidekick, selecione a variável **[!UICONTROL Página]** e selecione **[!UICONTROL Propriedades da página]**.
 
-1. Selecionar **[!UICONTROL Cloud Services]**.
+1. Selecionar **[!UICONTROL Cloud Service]**.
 1. Selecionar **[!UICONTROL Adicionar serviços]**.
 1. Selecionar **[!UICONTROL Dynamic Media Classic (Scene7)]**.
 1. No **[!UICONTROL Adobe Dynamic Media Classic (Scene7)]** selecione a configuração desejada e selecione **[!UICONTROL OK]**.
@@ -175,7 +175,7 @@ O design responsivo para seus ativos significa que seus ativos se adaptam depend
 
 Para adicionar uma experiência de visualização interativa a um site responsivo na interface clássica:
 
-1. Efetue logon no Experience Manager e verifique se você [Cloud Services do Adobe Dynamic Media Classic (Scene7) configurado](/help/sites-administering/scene7.md#configuring-scene-integration) e que os componentes do Dynamic Media Classic (Scene7) estão disponíveis.
+1. Efetue logon no Experience Manager e verifique se você [Cloud Service do Adobe Dynamic Media Classic (Scene7) configurado](/help/sites-administering/scene7.md#configuring-scene-integration) e que os componentes do Dynamic Media Classic (Scene7) estão disponíveis.
 
    >[!NOTE]
    >
@@ -238,7 +238,7 @@ O componente de Imagem do Dynamic Media Classic (Scene7) permite adicionar a fun
 
 **Predefinição de imagem** - Selecione uma predefinição de imagem existente no menu suspenso. Se a predefinição de imagem que você está procurando não estiver visível, será necessário torná-la visível. Consulte Gerenciamento de predefinições de imagem. Não é possível selecionar uma predefinição do visualizador se você estiver usando uma predefinição de imagem e vice-versa.
 
-**Formato de saída** - Selecione o formato de saída da imagem, por exemplo jpeg. Dependendo do formato de saída selecionado, talvez você tenha opções de configuração adicionais. Consulte Práticas recomendadas de predefinição de imagem.
+**Formato de saída** - Selecione o formato de saída da imagem, por exemplo, jpeg. Dependendo do formato de saída selecionado, talvez você tenha opções de configuração adicionais. Consulte Práticas recomendadas de predefinição de imagem.
 
 **Nitidez** - Selecione como deseja tornar a imagem mais nítida. A nitidez é explicada em detalhes em Práticas recomendadas de predefinição de imagem e Práticas recomendadas de nitidez.
 
@@ -344,7 +344,7 @@ Você pode alterar a configuração que está acessando selecionando a configura
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-Assim como no localizador de conteúdo para Ativos, você pode pesquisar por ativos e filtrar resultados. No entanto, ao contrário do localizador de Ativos, ao inserir uma palavra-chave na variável **S7** guia, o nome do arquivo **começa com** a sequência inserida, em vez de **contendo** a palavra-chave no nome do arquivo.
+Assim como no localizador de conteúdo para Ativos, você pode pesquisar por ativos e filtrar resultados. No entanto, ao contrário do localizador de Ativos, ao inserir uma palavra-chave no **S7** guia, o nome do arquivo **começa com** a sequência inserida, em vez de **contendo** a palavra-chave no nome do arquivo.
 
 Por padrão, os ativos são exibidos por nome de arquivo. No entanto, também é possível filtrar os resultados por tipo de ativo.
 
@@ -381,7 +381,7 @@ Por padrão, o Experience Manager pesquisa a pasta selecionada e todas as subpas
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-**Configuração** - Se você tiver mais de uma configuração do Dynamic Media Classic (Scene7) definida nos Cloud Services, é possível selecioná-la aqui. Como resultado, a pasta muda com base na configuração escolhida.
+**Configuração** - Se você tiver mais de uma configuração do Dynamic Media Classic (Scene7) definida em Cloud Service, é possível selecioná-la aqui. Como resultado, a pasta muda com base na configuração escolhida.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 

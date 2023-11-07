@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
 exl-id: 1eed754e-9a7d-4b65-a929-757fc962614d
-source-git-commit: c07fa148054b69b0da7bb402ef96a50d0895abfa
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1253'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ As metas para usar a Fusão de recursos do Sling no AEM são:
 * certifique-se de que as alterações de personalização não sejam feitas no `/libs`.
 * reduzir a estrutura que é replicada de `/libs`.
 
-   Ao usar a Fusão de recursos do Sling, não é recomendável copiar toda a estrutura de `/libs` como isso resultaria em muitas informações mantidas na personalização (geralmente `/apps`). Duplicar informações aumenta desnecessariamente a chance de problemas quando o sistema é atualizado de alguma forma.
+  Ao usar a Fusão de recursos do Sling, não é recomendável copiar toda a estrutura de `/libs` como isso resultaria em muitas informações mantidas na personalização (geralmente `/apps`). Duplicar informações aumenta desnecessariamente a chance de problemas quando o sistema é atualizado de alguma forma.
 
 >[!NOTE]
 >
@@ -65,9 +65,7 @@ As metas para usar a Fusão de recursos do Sling no AEM são:
 >1. Recriar o item necessário (ou seja, como ele existe em `/libs`) em `/apps`
 >
 >1. Fazer alterações em `/apps`
-
 >
-
 
 ### Propriedades {#properties}
 
@@ -75,23 +73,23 @@ A fusão de recursos oferece as seguintes propriedades:
 
 * `sling:hideProperties` ( `String` ou `String[]`)
 
-   Especifica a propriedade, ou lista de propriedades, a ser ocultada.
+  Especifica a propriedade, ou lista de propriedades, a ser ocultada.
 
-   O curinga `*` oculta tudo.
+  O curinga `*` oculta tudo.
 
 * `sling:hideResource` ( `Boolean`)
 
-   Indica se os recursos devem ser completamente ocultos, incluindo seus filhos.
+  Indica se os recursos devem ser completamente ocultos, incluindo seus filhos.
 
 * `sling:hideChildren` ( `String` ou `String[]`)
 
-   Contém o nó filho, ou lista de nós filhos, a ser ocultado. As propriedades do nó serão mantidas.
+  Contém o nó filho, ou lista de nós filhos, a ser ocultado. As propriedades do nó serão mantidas.
 
-   O curinga `*` oculta tudo.
+  O curinga `*` oculta tudo.
 
 * `sling:orderBefore` ( `String`)
 
-   Contém o nome do nó irmão no qual o nó atual deve ser posicionado.
+  Contém o nome do nó irmão no qual o nó atual deve ser posicionado.
 
 Essas propriedades afetam como os recursos/propriedades correspondentes/originais (de `/libs`) são usados pela sobreposição/substituição (geralmente em `/apps`).
 
@@ -103,23 +101,23 @@ Para criar uma sobreposição ou sobreposição, é necessário recriar o nó or
 
    * A definição da entrada de navegação do console Sites, como mostrado no painel, é definida em:
 
-      `/libs/cq/core/content/nav/sites/jcr:title`
+     `/libs/cq/core/content/nav/sites/jcr:title`
 
    * Para sobrepor isso, crie o seguinte nó:
 
-      `/apps/cq/core/content/nav/sites`
+     `/apps/cq/core/content/nav/sites`
 
-      Em seguida, atualize a propriedade `jcr:title` conforme necessário.
+     Em seguida, atualize a propriedade `jcr:title` conforme necessário.
 
 * Substituir
 
    * A definição da caixa de diálogo habilitada para toque do console de Textos está definida em:
 
-      `/libs/foundation/components/text/cq:dialog`
+     `/libs/foundation/components/text/cq:dialog`
 
    * Para substituir isso, crie o seguinte nó - por exemplo:
 
-      `/apps/the-project/components/text/cq:dialog`
+     `/apps/the-project/components/text/cq:dialog`
 
 Para criar qualquer uma dessas opções, basta recriar a estrutura do esqueleto. Para simplificar a recriação da estrutura, todos os nós intermediários podem ser do tipo `nt:unstructured` (elas não precisam refletir o tipo de nó original; por exemplo, em `/libs`).
 
@@ -144,14 +142,14 @@ Eles, juntamente com a funcionalidade padrão, permitem:
 
 * **Adicionar uma propriedade do**
 
-   A propriedade não existe no `/libs` definição, mas é obrigatório na variável `/apps` sobrepor/substituir.
+  A propriedade não existe no `/libs` definição, mas é obrigatório na variável `/apps` sobrepor/substituir.
 
    1. Crie o nó correspondente em `/apps`
    1. Criar a nova propriedade neste nó &quot;
 
 * **Redefinir uma propriedade (não propriedades criadas automaticamente)**
 
-   A propriedade é definida em `/libs`, mas um novo valor é necessário no `/apps` sobrepor/substituir.
+  A propriedade é definida em `/libs`, mas um novo valor é necessário no `/apps` sobrepor/substituir.
 
    1. Crie o nó correspondente em `/apps`
    1. Crie a propriedade correspondente neste nó (em / `apps`)
@@ -159,14 +157,15 @@ Eles, juntamente com a funcionalidade padrão, permitem:
       * A propriedade terá uma prioridade com base na configuração do Sling Resource Resolver.
       * Não há suporte para a alteração do tipo de propriedade.
 
-         Se você usar um tipo de propriedade diferente daquele usado em `/libs`, o tipo de propriedade definido será usado.
-   >[!NOTE]
-   >
-   >Não há suporte para a alteração do tipo de propriedade.
+        Se você usar um tipo de propriedade diferente daquele usado em `/libs`, o tipo de propriedade definido será usado.
+
+  >[!NOTE]
+  >
+  >Não há suporte para a alteração do tipo de propriedade.
 
 * **Redefinir uma propriedade criada automaticamente**
 
-   Por padrão, as propriedades criadas automaticamente `jcr:primaryType`) não estão sujeitos a uma sobreposição/substituição para garantir que o tipo de nó atualmente em `/libs` é respeitado. Para impor uma sobreposição/substituição, é necessário recriar o nó em `/apps`, oculte explicitamente a propriedade e redefina-a:
+  Por padrão, as propriedades criadas automaticamente `jcr:primaryType`) não estão sujeitos a uma sobreposição/substituição para garantir que o tipo de nó atualmente em `/libs` é respeitado. Para impor uma sobreposição/substituição, é necessário recriar o nó em `/apps`, oculte explicitamente a propriedade e redefina-a:
 
    1. Crie o nó correspondente em `/apps` com o desejado `jcr:primaryType`
    1. Criar a propriedade `sling:hideProperties` nesse nó, com o valor definido como aquele da propriedade criada automaticamente; por exemplo, `jcr:primaryType`
@@ -175,7 +174,7 @@ Eles, juntamente com a funcionalidade padrão, permitem:
 
 * **Redefinir um nó e seus filhos**
 
-   O nó e seus filhos são definidos em `/libs`, mas uma nova configuração é necessária na variável `/apps` sobrepor/substituir.
+  O nó e seus filhos são definidos em `/libs`, mas uma nova configuração é necessária na variável `/apps` sobrepor/substituir.
 
    1. Combine as ações de:
 
@@ -184,7 +183,7 @@ Eles, juntamente com a funcionalidade padrão, permitem:
 
 * **Ocultar uma propriedade**
 
-   A propriedade é definida em `/libs`, mas não obrigatório no `/apps` sobrepor/substituir.
+  A propriedade é definida em `/libs`, mas não obrigatório no `/apps` sobrepor/substituir.
 
    1. Crie o nó correspondente em `/apps`
    1. Criar uma propriedade do `sling:hideProperties` do tipo `String` ou `String[]`. Use esta opção para especificar as propriedades que devem ser ocultas/ignoradas. Curingas também podem ser usados. Por exemplo:
@@ -196,7 +195,7 @@ Eles, juntamente com a funcionalidade padrão, permitem:
 
 * **Ocultar um nó e seus filhos**
 
-   O nó e seus filhos são definidos em `/libs`, mas não obrigatório no `/apps` sobrepor/substituir.
+  O nó e seus filhos são definidos em `/libs`, mas não obrigatório no `/apps` sobrepor/substituir.
 
    1. Crie o nó correspondente em /apps
    1. Criar uma propriedade do `sling:hideResource`
@@ -206,7 +205,7 @@ Eles, juntamente com a funcionalidade padrão, permitem:
 
 * **Ocultar filhos de um nó (enquanto mantém as propriedades do nó)**
 
-   O nó, suas propriedades e seus filhos são definidos em `/libs`. O nó e suas propriedades são necessários na variável `/apps` sobrepor/substituir, mas alguns ou todos os nós secundários não são necessários no `/apps` sobrepor/substituir.
+  O nó, suas propriedades e seus filhos são definidos em `/libs`. O nó e suas propriedades são necessários na variável `/apps` sobrepor/substituir, mas alguns ou todos os nós secundários não são necessários no `/apps` sobrepor/substituir.
 
    1. Crie o nó correspondente em `/apps`
    1. Criar a propriedade `sling:hideChildren`:
@@ -216,10 +215,9 @@ Eles, juntamente com a funcionalidade padrão, permitem:
 
       O curinga &amp;ast; pode ser usado para ocultar/ignorar todos os nós filhos.
 
-
 * **Reordenar nós**
 
-   O nó e seus irmãos são definidos em `/libs`. Uma nova posição é necessária para que o nó seja recriado na `/apps` sobrepor/substituir, onde a nova posição é definida em referência ao nó irmão apropriado em `/libs`.
+  O nó e seus irmãos são definidos em `/libs`. Uma nova posição é necessária para que o nó seja recriado na `/apps` sobrepor/substituir, onde a nova posição é definida em referência ao nó irmão apropriado em `/libs`.
 
    * Use o `sling:orderBefore` propriedade:
 

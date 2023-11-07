@@ -1,23 +1,19 @@
 ---
-title: Criação de um novo aplicativo AEM Mobile usando o assistente de criação
-seo-title: Creating a new AEM Mobile app using create wizard
-description: Os aplicativos do AEM Mobile são baseados em um blueprint que define a estrutura e as propriedades da página. Siga esta página para saber como criar um novo aplicativo com base em um modelo de aplicativo.
-seo-description: AEM Mobile apps are based on a blueprint that defines a page structure and properties. Follow this page to learn about how to create a new app based on an app template.
-uuid: c2bd63a5-3dff-4a72-b1fb-0c776e0afa33
+title: Criação de um aplicativo do AEM Mobile usando o assistente de criação
+description: Os aplicativos do AEM Mobile são baseados em um blueprint que define a estrutura e as propriedades da página. Siga esta página para saber como criar um aplicativo com base em um modelo de aplicativo.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
-discoiquuid: 27605eb7-59b2-42d4-8cc5-02cfa52b4491
 exl-id: be093025-b19f-4499-a7b5-aae5ab74f966
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '632'
 ht-degree: 1%
 
 ---
 
-# Criação de um novo aplicativo AEM Mobile usando o assistente de criação{#creating-a-new-aem-mobile-app-using-create-wizard}
+# Criação de um aplicativo do AEM Mobile usando o assistente de criação{#creating-a-new-aem-mobile-app-using-create-wizard}
 
 >[!NOTE]
 >
@@ -41,16 +37,16 @@ Existem guias adicionais (e opcionais) para o serviço de nuvem de build e para 
 
 ## Utilização de modelos de aplicativo {#using-app-templates}
 
-Os modelos de aplicativo fornecem uma maneira fácil de aproveitar os designs existentes criados por desenvolvedores, usados para a criação de novos aplicativos no AEM.
+Os modelos de aplicativo oferecem uma maneira fácil de usar os designs existentes criados pelos desenvolvedores, usados para a criação de novos aplicativos no AEM.
 
 O que é um modelo de aplicativo? Pense nisso como uma coleção de modelos de página e componentes que representam uma linha de base ou base de um aplicativo.
-Ao criar um novo aplicativo com base no modelo de outro aplicativo, você obterá um aplicativo que tem um ponto de partida representativo do aplicativo no qual ele foi criado.
+Ao criar um aplicativo com base no modelo de outro aplicativo, você obterá um aplicativo que tem um ponto de partida representativo do aplicativo no qual ele foi criado.
 
 Você deve ter um modelo de aplicativo móvel existente (ou um aplicativo instalado que tenha um modelo de aplicativo) para usar esse recurso.
 
 O pacote de amostras mais recente dos aplicativos AEM inclui uma versão atualizada do aplicativo Geometrixx com um modelo de aplicativo. Como alternativa, você pode instalar o [StarterKit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) que também fornece um template.
 
-Etapas para criar um novo aplicativo com base em um modelo de aplicativo:
+Etapas para criar um aplicativo com base em um modelo de aplicativo:
 
 1. Navegue até o catálogo de aplicativos do AEM Mobile: &lt;*server-url*>aem/apps.html/content/mobileapps
 1. Selecionar **Criar** e escolha **Aplicativo** conforme mostrado abaixo

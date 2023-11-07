@@ -2,10 +2,10 @@
 title: Saiba mais sobre as noções básicas de criação
 description: Saiba mais sobre os conceitos e os mecanismos de criação de conteúdo para seu CMS headless usando Fragmentos de conteúdo.
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 81%
+source-wordcount: '1688'
+ht-degree: 78%
 
 ---
 
@@ -41,7 +41,7 @@ Para obter mais detalhes, consulte os Conceitos de criação.
 
 ### Fazer logon {#signing-in}
 
-Assim como na maioria dos sistemas, você precisará fazer logon. Como autor, você receberá:
+Assim como na maioria dos sistemas, você deve fazer logon. Como autor, você receberá:
 
 * Nome do usuário (conta)
 * Senha
@@ -102,7 +102,7 @@ Você pode fazer isso criando uma série de pastas na seção **Arquivos** do co
 
 ![Opção Criar pasta](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-Uma caixa de diálogo será aberta em que você pode inserir os detalhes e, em seguida, confirmar clicando em **Criar**:
+Uma caixa de diálogo é aberta, onde você pode inserir os detalhes e confirmar com **Criar**:
 
 ![Caixa de diálogo Criar pasta](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -201,7 +201,7 @@ Os Modelos de fragmentos de conteúdo são essenciais para os Fragmentos de cont
 
   Esta é bastante óbvia, já que é uma guia no editor.
 
-  Fragmentos de conteúdo foram disponibilizados no AEM há algumas versões. Originalmente, eles eram disponibilizados para uso “tradicional” durante a criação de páginas....e ainda são usados nesse contexto. Isso pode envolver a associação de ativos (por exemplo, imagens) que, embora não estejam incorporados ao fragmento, precisam estar disponíveis para o autor ao criar uma página.
+  Fragmentos de conteúdo foram disponibilizados no AEM há algumas versões. Originalmente, eles eram disponibilizados para uso “tradicional” durante a criação de páginas....e ainda são usados nesse contexto. Isso pode envolver a associação de ativos (por exemplo, imagens) que, embora não incorporados ao fragmento, precisam estar disponíveis para o autor ao criar uma página.
 
 * **Visualização**
 

@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4150'
+source-wordcount: '4143'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Quando um design de formulário é renderizado como um formulário HTML, cada su
 
 Quando os designs de formulário são renderizados como formulários de HTML, os painéis não são restritos a nenhum tamanho de página específico. Se você tiver subformulários dinâmicos, eles devem ser aninhados dentro do subformulário do painel. Os subformulários dinâmicos podem se expandir para um número infinito de páginas de HTML.
 
-Quando um formulário é renderizado como um formulário HTML, os tamanhos de página (necessários para paginar formulários renderizados como PDF) não têm significado. Como um formulário com um layout fluível pode se expandir para um número infinito de páginas de HTML, é importante evitar rodapés na página principal. Um rodapé abaixo da área de conteúdo em uma página principal pode substituir o conteúdo de HTML que flui além de um limite de página.
+Quando um formulário é renderizado como um formulário HTML, os tamanhos de página (necessários para paginar formulários renderizados como PDF) não têm significado. Como um formulário com layout fluível pode se expandir para um número infinito de páginas de HTML, é importante evitar rodapés na página principal. Um rodapé abaixo da área de conteúdo em uma página-mestre pode substituir o conteúdo de HTML que flui além de um limite de página.
 
 Você deve mover-se explicitamente de painel a painel usando o `xfa.host.pageUp` e `xfa.host.pageDown` métodos. Você altera páginas enviando um formulário para o serviço Forms e fazendo com que o serviço Forms renderize o formulário de volta para o dispositivo cliente, normalmente um navegador da Web.
 
@@ -89,9 +89,9 @@ O serviço Forms pode executar scripts enquanto o formulário está sendo render
 
 É recomendável não atribuir às variáveis de script e aos campos de formulário os mesmos nomes, como item. Alguns navegadores da Web, como o Internet Explorer, podem não inicializar uma variável com o mesmo nome de um campo de formulário que resulta na ocorrência de um erro de script. É uma boa prática fornecer nomes diferentes para campos de formulário e variáveis de script.
 
-Ao renderizar formulários de HTML que contêm a funcionalidade de navegação de página e scripts de formulário (por exemplo, suponha que um script recupere dados de campo de um banco de dados sempre que o formulário for renderizado), verifique se o script de formulário está localizado no form:calculate event em vez do form:readyevent.
+Ao renderizar formulários de HTML que contêm a funcionalidade de navegação de página e scripts de formulário (por exemplo, suponha que um script recupere dados de campo de um banco de dados sempre que o formulário for renderizado), verifique se o script de formulário está no formato:calcular evento em vez de no formulário:readyevent.
 
-Os scripts de formulário localizados no evento form:ready são executados apenas uma vez durante a renderização inicial do formulário e não são executados para recuperações de páginas subsequentes. Por outro lado, o evento form:calculate é executado para cada navegação de página em que o formulário é renderizado.
+Os scripts de formulário que estão no evento form:ready são executados apenas uma vez durante a renderização inicial do formulário e não são executados para recuperações de páginas subsequentes. Por outro lado, o evento form:calculate é executado para cada navegação de página em que o formulário é renderizado.
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ Ao criar designs de formulário para renderizar como HTML, você deve restringir
 
 Os scripts executados no cliente ou no servidor devem ser gravados no subconjunto XFA. Os scripts executados no servidor podem usar o modelo de script XFA completo e também usar FormCalc. Para obter informações sobre o uso do JavaScript, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_pt).
 
-Ao executar scripts no cliente, somente o painel atual que está sendo exibido pode usar script; por exemplo, você não pode criar scripts para campos localizados no painel A quando o painel B é exibido. Ao executar scripts no servidor, todos os painéis podem ser acessados.
+Ao executar scripts no cliente, somente o painel atual que está sendo exibido pode usar script; por exemplo, você não pode criar scripts para campos que estão no painel A quando o painel B é exibido. Ao executar scripts no servidor, todos os painéis podem ser acessados.
 
 Você também deve ter cuidado ao usar expressões de modelo de objeto de script (SOM) em scripts executados no cliente. Somente um subconjunto simplificado de expressões SOM é suportado por scripts executados no cliente.
 
@@ -158,7 +158,7 @@ Um navegador da Web compatível apenas com o HTML 4.0 não pode oferecer suporte
 
 À medida que você se move entre páginas HTML (painéis), somente o estado dos dados é mantido. Configurações como cor de fundo ou configurações de campo obrigatório não são mantidas (se forem diferentes das configurações iniciais). Para manter o estado de apresentação, você deve criar campos (geralmente ocultos) que representem o estado de apresentação dos campos. Se você adicionar um script a um campo de `Calculate` caso altere a apresentação com base em valores de campo ocultos, você poderá preservar o estado de apresentação conforme avança e volta entre páginas HTML (painéis).
 
-O script a seguir mantém o `fillColor` de um campo com base no valor de `hiddenField`. Suponha que esse script esteja localizado em um campo `Calculate` evento.
+O script a seguir mantém o `fillColor` de um campo com base no valor de `hiddenField`. Suponha que este script esteja em um campo `Calculate` evento.
 
 ```java
      If (hiddenField.rawValue == 1)
@@ -188,7 +188,7 @@ Você pode renderizar um formulário de HTML completo que esteja em conformidade
 
 ## Validação de dados do formulário {#validating-form-data}
 
-É recomendável limitar o uso das regras de validação para campos de formulário ao renderizar o formulário como um formulário HTML. Algumas regras de validação podem não ser compatíveis com formulários HTML. Por exemplo, quando um padrão de validação de MM-DD-AAAA é aplicado a um `Date/Time` que esteja localizado em um design de formulário renderizado como um formulário HTML, ele não funciona corretamente, mesmo que a data seja digitada corretamente. No entanto, esse padrão de validação funciona corretamente para formulários renderizados como PDF.
+É recomendável limitar o uso das regras de validação para campos de formulário ao renderizar o formulário como um formulário HTML. Algumas regras de validação podem não ser compatíveis com formulários HTML. Por exemplo, quando um padrão de validação de MM-DD-AAAA é aplicado a um `Date/Time` que está em um design de formulário renderizado como um formulário HTML, ele não funciona corretamente, mesmo se a data for digitada corretamente. No entanto, esse padrão de validação funciona corretamente para formulários renderizados como PDF.
 
 >[!NOTE]
 >

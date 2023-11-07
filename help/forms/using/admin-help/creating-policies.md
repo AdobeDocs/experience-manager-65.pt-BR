@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fa054d30-c7dc-4b64-acf1-cbcbe8827df5
 feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4718'
+source-wordcount: '4715'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Os usuários convidados também poderão criar, editar, copiar e excluir políti
 
 Os administradores e coordenadores de definições de políticas criam políticas compartilhadas com base nos requisitos de confidencialidade que sua organização identifica para diferentes tipos de documentos e usuários. As políticas compartilhadas estão contidas em conjuntos de políticas e estão disponíveis a todos os usuários autorizados (editores de documentos, coordenadores de definições de políticas e destinatários de documentos) para um conjunto de políticas específico. Os administradores e coordenadores de definições de políticas podem ativar e desativar políticas compartilhadas. As políticas compartilhadas aparecem nos conjuntos de políticas na guia Conjuntos de políticas da página Políticas.
 
-Quando você instala a segurança de documentos pela primeira vez, ela contém uma política compartilhada, chamada *Restringir a todas as entidades de segurança*. Quando essa política é aplicada a um documento, qualquer usuário que possa fazer logon na segurança de documentos pode acessar o documento. Esta política está localizada no conjunto de políticas denominado *Conjunto de Políticas Globais*. Por padrão, essa política não está ativada. Você pode ativá-lo se ele atender às necessidades de sua organização.
+Quando você instala a segurança de documentos pela primeira vez, ela contém uma política compartilhada, chamada *Restringir a todas as entidades de segurança*. Quando essa política é aplicada a um documento, qualquer usuário que possa fazer logon na segurança de documentos pode acessar o documento. Esta política está no conjunto de políticas chamado *Conjunto de Políticas Globais*. Por padrão, essa política não está ativada. Você pode ativá-lo se ele atender às necessidades de sua organização.
 
 **Políticas geradas automaticamente pelo Microsoft Outlook**
 
@@ -64,7 +64,7 @@ Os usuários podem criar ou editar políticas pessoais para uso próprio. Os adm
 
 ### Considerações para a edição de políticas {#considerations-for-editing-policies}
 
-Quando você edita uma política, as alterações afetam documentos que a política protege atualmente, bem como documentos que a política protege posteriormente. Por exemplo, se você remover destinatários de uma política aplicada atualmente a um documento, os destinatários não poderão mais abrir o documento.
+Quando você edita uma política, as alterações afetam documentos que a política protege atualmente e documentos que a política protege posteriormente. Por exemplo, se você remover destinatários de uma política aplicada atualmente a um documento, os destinatários não poderão mais abrir o documento.
 
 O status do documento determina quando a alteração entra em vigor:
 
@@ -286,7 +286,7 @@ A área Configurações avançadas inalteráveis contém as seguintes configura�
 * AES de 256 bits. Somente o Acrobat 9.0 e posterior é compatível com essa opção. Para usar a criptografia AES 256 para arquivos PDF, obtenha e instale os arquivos de Política de Jurisdição de Força Ilimitada Java Cryptography Extension (JCE). Esses arquivos substituem os arquivos local_policy.jar e US_export_policy.jar na [JAVE_HOME]pasta /lib/security. Por exemplo, se você estiver usando o Sun JDK 1.6, copie os arquivos baixados para o [raiz profunda]pasta /Java/jdk1.6.0_26/lib/security. Você pode baixar esses arquivos em [Downloads do Java SE](https://java.sun.com/javase/downloads/index.jsp).
 * Sem criptografia. Atualmente, o Acrobat 9.0 e versões posteriores oferecem suporte a essa opção. Se você selecionar essa opção, as opções de Restrições de documento serão desativadas. Essa opção pode ser útil se você quiser usar a segurança de documentos para auditoria de documentos ou controle de versão, mas não quiser criptografar o documento.
 
-**Restrições de documento:** Selecione os componentes do documento PDF a serem criptografados. Outros aplicativos clientes criptografam o documento inteiro, mas não os arquivos vinculados ou incorporados. Você pode escolher entre estas opções:
+**Restrições de documento:** Selecione os componentes do documento PDF a serem criptografados. Outros aplicativos clientes criptografam todo o documento, mas não os arquivos vinculados ou incorporados. Você pode escolher entre estas opções:
 
 * O documento inteiro, incluindo anexos e metadados. *Metadados* são informações sobre o documento e seu conteúdo que podem ser visualizadas na caixa de diálogo Propriedades do documento ou no menu Avançado do Acrobat. No Acrobat, é possível anexar arquivos de diferentes tipos (por exemplo, arquivos de texto, áudio e vídeo) a documentos PDF.
 * O documento e seus anexos, mas não os metadados.

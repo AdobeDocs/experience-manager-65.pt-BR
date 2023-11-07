@@ -2,10 +2,10 @@
 title: Gerenciar endpoints de GraphQL no AEM
 description: Saiba como gerenciar endpoints do GraphQL no Adobe Experience Manager para entrega de conteúdo headless.
 exl-id: a59a5e50-0787-4c1c-a83d-bb3eac1479a8
-source-git-commit: a8616b3b30ac04ea24c4a869cabd47518af1a35f
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 97%
+source-wordcount: '510'
+ht-degree: 93%
 
 ---
 
@@ -61,7 +61,7 @@ Para habilitar o endpoint correspondente:
 
 1. Navegue até **Ferramentas**, **Ativos** e, em seguida, selecione **GraphQL**.
 1. Selecione **Criar**.
-1. A caixa de diálogo **Criar novo endpoint de GraphQL** será aberta. Aqui, é possível especificar:
+1. A caixa de diálogo **Criar novo ponto de acesso de GraphQL** será aberta. Aqui, é possível especificar:
    * **Nome**: nome do endpoint; é possível inserir qualquer texto.
    * **Usar o esquema de GraphQL fornecido por**: use a lista suspensa para selecionar o site/projeto necessário.
 
@@ -70,7 +70,6 @@ Para habilitar o endpoint correspondente:
    >O seguinte aviso é mostrado na caixa de diálogo:
    >
    >* *Os endpoints de GraphQL podem causar problemas de segurança e desempenho de dados se não forem gerenciados com cuidado. Defina as permissões apropriadas após criar um endpoint.*
-
 
 1. Confirme com **Criar**.
 1. A caixa de diálogo **Próximas etapas** fornecerá um link direto até o console de Segurança, para que você possa garantir que o endpoint recém-criado tenha as permissões adequadas.
@@ -91,4 +90,4 @@ Selecione o novo endpoint e escolha **Publicar** para disponibilizá-lo completa
 >
 >Isso pode causar uma preocupação de segurança em instâncias de publicação, já que as consultas de GraphQL podem colocar uma carga pesada sobre o servidor.
 >
->Você deve configurar ACLs apropriadas ao seu caso de uso no endpoint.
+>Configure ACLs apropriadas ao seu caso de uso no endpoint.

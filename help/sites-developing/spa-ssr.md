@@ -7,9 +7,9 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: a80bc883-e0f6-4714-bd28-108262f96d77
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1724'
+source-wordcount: '1723'
 ht-degree: 2%
 
 ---
@@ -172,7 +172,7 @@ Para obter um exemplo simples, consulte [Aplicativo We.Retail Journal](https://g
 
 >[!CAUTION]
 >
->A variável [Aplicativo We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) O é somente para fins de demonstração e, portanto, usa Node.js como um exemplo simples, em vez do Adobe I/O Runtime recomendado. Este exemplo não deve ser usado para nenhum trabalho do projeto.
+>A variável [Aplicativo We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) O é somente para fins de demonstração e, portanto, usa Node.js como um exemplo simples, em vez do Adobe I/O Runtime recomendado. Não use este exemplo para nenhum trabalho do projeto.
 
 >[!NOTE]
 >

@@ -7,7 +7,7 @@ feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2359'
 ht-degree: 11%
@@ -22,7 +22,7 @@ ht-degree: 11%
 | AEM 6.5 | Este artigo |
 
 <!-- Scope of metadata articles:
-* metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
+* metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
@@ -41,7 +41,7 @@ Os métodos a seguir podem ser usados para adicionar metadados a ativos digitais
 
 * Entrada [!DNL Experience Manager Assets], é possível adicionar ou editar metadados de ativos manualmente na [!UICONTROL Propriedades] página.
 
-* Você pode aproveitar [perfis de metadados](/help/assets/metadata-config.md#metadata-profiles) funcionalidade do [!DNL Experience Manager Assets] para adicionar metadados automaticamente quando os ativos são carregados no DAM.
+* Você pode usar [perfis de metadados](/help/assets/metadata-config.md#metadata-profiles) funcionalidade do [!DNL Experience Manager Assets] para adicionar metadados automaticamente quando os ativos são carregados no DAM.
 
 ## Adicionar ou editar metadados no [!DNL Experience Manager Assets] {#add-edit-metadata}
 
@@ -242,7 +242,6 @@ Remova um perfil de metadados de uma pasta da **[!UICONTROL Ferramentas]** ou no
 >* [Editar propriedades de metadados de várias coleções](manage-collections.md#editing-collection-metadata-in-bulk)
 >* [Importação e exportação de metadados no Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
-
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
 
 ## Where to find metadata of an asset or folder {#find-metadata}
@@ -257,7 +256,7 @@ Describe the journey of an assets' metadata. What all happens to metadata when a
 
 * To begin with, assets come with some metadata. The applications that create digital assets add some metadata to the assets created. Before uploading an asset to Experience Manager, you can edit and modify metadata using either the native application used to create an asset or using some other metadata editing application. When you upload an asset to Experience Manager, the metadata is processed.
 
-* Link to PS, ID, AI, PDF, etc. metadata-related help articles.
+* Link to PS, ID, AI, PDF, and so on, metadata-related help articles.
 
 * Link to XMP writeback.
 
@@ -281,7 +280,7 @@ Link to metadata handling of collections.
 
 * Before ingesting assets: Metadata editors
 
-* After ingesting assets: Properties of an asset, folder, collection, etc.
+* After ingesting assets: Properties of an asset, folder, collection, and so on.
 
 * Any supported programmatic method to bulk edit metadata directly in JCR?
 

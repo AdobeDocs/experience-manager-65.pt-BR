@@ -2,10 +2,10 @@
 title: Gerenciamento de projetos de tradução
 description: Saiba como gerenciar projetos de tradução no Adobe Experience Manager.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 9438868191961404e9e18cb0dd2e844985ac9db0
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3588'
-ht-degree: 55%
+source-wordcount: '3578'
+ht-degree: 52%
 
 ---
 
@@ -123,7 +123,7 @@ Depois de criar um projeto de tradução, é possível usar o painel Recursos pa
 
 Ao adicionar páginas a um projeto de tradução, elas são incluídas em um novo trabalho de tradução. Também é possível [adicionar páginas a um trabalho existente](#adding-pages-assets-to-a-translation-job).
 
-Assim como ao criar um novo projeto, ao adicionar páginas, cópias das páginas são adicionadas a uma inicialização quando necessário, para evitar a substituição de cópias de idioma existentes. (Consulte [Criação de projetos de tradução para cópias de idioma existentes](#performing-initial-translations-and-updating-existing-translations).)
+Assim como ao criar um projeto, ao adicionar páginas, cópias das páginas são adicionadas a uma inicialização quando necessário, para evitar a substituição de cópias de idioma existentes. (Consulte [Criação de projetos de tradução para cópias de idioma existentes](#performing-initial-translations-and-updating-existing-translations).)
 
 1. Use o console de sites para selecionar a página que você está adicionando ao projeto de tradução.
 
@@ -234,7 +234,7 @@ Quando um projeto é criado usando o painel Recursos de uma página, essas propr
 
 ## Monitorar o status de um trabalho de tradução {#monitoring-the-status-of-a-translation-job}
 
-O bloco Tarefa de tradução de um projeto fornece o status de um trabalho, bem como o número de páginas e ativos no trabalho.
+O bloco Tarefa de tradução de um projeto fornece o status de um trabalho de tradução e o número de páginas e ativos no trabalho.
 
 ![chlimage_1-259](assets/chlimage_1-259.png)
 
@@ -412,7 +412,7 @@ Preencha sua cópia de idioma para que ela tenha conteúdo do idioma principal q
 
 ## Mover ou renomear uma página de origem {#move-source}
 
-Se uma página de origem já traduzida precisar ser [renomeada ou movida](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), traduzir a página novamente após a movimentação criará uma nova cópia de idioma com base no novo nome/local da página. A cópia de idioma antiga baseada no nome/local anterior ainda estará lá. Para evitar isso, você pode usar a funcionalidade de cópia de idioma de atualização após a movimentação:
+Se uma página de origem já traduzida precisar ser [renomeado ou movido](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), traduzindo a página novamente depois da movimentação, cria uma cópia de idioma com base no novo nome/local da página. A cópia de idioma antiga baseada no nome/local anterior ainda existe. Para evitar isso, você pode usar a funcionalidade de cópia de idioma de atualização após a movimentação:
 
 1. Mova uma página que tenha uma cópia de idioma.
 1. Selecione a raiz da cópia de idioma.
@@ -423,9 +423,9 @@ Se uma página de origem já traduzida precisar ser [renomeada ou movida](/help/
 1. Clique em **Atualizar**. A [Launch](/help/sites-authoring/launches-promoting.md) será criado.
 1. Navegue até a raiz de idioma necessária e selecione-a.
 1. Usar o **Referências** , selecione **Lançamentos**.
-1. Clique no lançamento que acabou de ser criado e clique em **Promover lançamento**.
+1. Clique no lançamento criado e clique em **Promover lançamento**.
 
-Agora, a página de origem foi movida, bem como a cópia de idioma associada.
+Agora, a página de origem foi movida e a cópia de idioma associada.
 
 ## Criação de um projeto de tradução usando o Console de projetos {#creating-a-translation-project-using-the-projects-console}
 
@@ -458,7 +458,7 @@ Ao criar manualmente um projeto de tradução, você deve fornecer valores para 
 
 ## Importar um trabalho de tradução {#importing-a-translation-job}
 
-Você pode importar conteúdo traduzido para o AEM, por exemplo, quando seu provedor de tradução o envia para você porque não está integrado ao AEM por meio de um conector.
+Você pode importar conteúdo traduzido para AEM, por exemplo, quando seu provedor de tradução o envia para você porque não está integrado ao AEM por meio de um conector.
 
 1. No menu suspenso do bloco Tarefa de tradução, clique ou toque em Importar.
 1. Use a caixa de diálogo do navegador da web para selecionar o arquivo a ser importado.

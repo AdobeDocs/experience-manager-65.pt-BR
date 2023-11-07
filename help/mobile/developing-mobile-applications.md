@@ -1,16 +1,12 @@
 ---
 title: Desenvolvimento de aplicativos móveis no AEM
-seo-title: Developing Mobile Applications in AEM
 description: Siga esta página para começar a desenvolver aplicativos para dispositivos móveis no AEM usando o Adobe PhoneGap Enterprise.
-seo-description: Follow this page to start developing mobile application in AEM using Adobe PhoneGap Enterprise.
-uuid: d8442447-ee04-4bb2-a0d7-17dcc8979dba
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: fd7bcf17-af7e-4bd6-8137-48401d9743c5
 exl-id: cf8ba05c-6dcd-4880-b8bf-72382118cd80
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 1%
@@ -23,7 +19,7 @@ ht-degree: 1%
 >
 >A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-O AEM aproveita as soluções de publicação do Adobe PhoneGap e do Adobe, permitindo que você crie e gerencie aplicativos móveis ricos em conteúdo e baseados em utilitários em várias plataformas:
+O AEM usa as soluções de publicação do Adobe PhoneGap e do Adobe, permitindo criar e gerenciar aplicativos móveis ricos em conteúdo e baseados em utilitários:
 
 * Gerencie todos os aplicativos móveis de suas empresas em um único local.
 * Analise os aplicativos em ambientes de desenvolvimento e de preparo sem as complexidades dos perfis de provisionamento e o esforço extra para criar e carregar seu aplicativo para compartilhamento.

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4950'
+source-wordcount: '4962'
 ht-degree: 1%
 
 ---
@@ -355,7 +355,7 @@ Informações sobre o repositório CRX
   </tr>
   <tr>
    <td>option.shareable.nodes.supported</td>
-   <td>true indica que o repositório aceita a criação de nós compartilháveis.</td>
+   <td>true indica que o repositório oferece suporte à criação de nós compartilháveis.</td>
   </tr>
   <tr>
    <td>crx.cluster.id</td>
@@ -379,7 +379,7 @@ Informações sobre o repositório CRX
   </tr>
   <tr>
    <td>option.transactions.supported</td>
-   <td>true indica que o repositório aceita transações.</td>
+   <td>true indica que o repositório suporta transações.</td>
   </tr>
   <tr>
    <td>jcr.repository.vendor.url</td>
@@ -428,7 +428,7 @@ Informações sobre o repositório CRX
   </tr>
   <tr>
    <td>node.type.management.same.name.siblings.supported</td>
-   <td>true indica que o repositório aceita nós irmãos (nós com o mesmo pai) com os mesmos nomes.</td>
+   <td>true indica que o repositório suporta nós irmãos (nós com o mesmo pai) com os mesmos nomes.</td>
   </tr>
   <tr>
    <td>node.type.management.residual.definitions.supported</td>
@@ -436,7 +436,7 @@ Informações sobre o repositório CRX
   </tr>
   <tr>
    <td>node.type.management.autocreated.definitions.supported</td>
-   <td>true indica que o repositório aceita a criação automática de itens secundários (nós ou propriedades) de um nó quando ele é criado.</td>
+   <td>true indica que o repositório oferece suporte à criação automática de itens secundários (nós ou propriedades) de um nó quando ele é criado.</td>
   </tr>
   <tr>
    <td>crx.cluster.master</td>
@@ -448,7 +448,7 @@ Informações sobre o repositório CRX
   </tr>
   <tr>
    <td>option.unfiled.content.supported</td>
-   <td>true indica que o repositório aceita conteúdo não arquivado. Nós não arquivados não fazem parte da hierarquia do repositório.</td>
+   <td>true indica que o repositório suporta conteúdo não arquivado. Nós não arquivados não fazem parte da hierarquia do repositório.</td>
   </tr>
   <tr>
    <td>jcr.specification.name</td>
@@ -484,7 +484,7 @@ Informações sobre o repositório CRX
   </tr>
   <tr>
    <td>option.lifecycle.supported</td>
-   <td>true indica que o repositório aceita o gerenciamento de ciclo de vida.</td>
+   <td>true indica que o repositório é compatível com o gerenciamento do ciclo de vida.</td>
   </tr>
  </tbody>
 </table>
@@ -894,7 +894,7 @@ A página principal do console JMX inclui uma tabela de serviços. Cada linha na
 
 ## Usando aplicações JMX externas para monitoramento {#using-external-jmx-applications-for-monitoring}
 
-O CRX permite que aplicativos externos interajam com Beans gerenciados (MBeans) via [Java Management Extensions (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Usar consoles genéricos, como [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) ou aplicativos de monitoramento específicos do domínio, permite obter e definir configurações e propriedades de CRX, bem como o monitoramento do desempenho e do uso de recursos.
+O CRX permite que aplicativos externos interajam com Beans gerenciados (MBeans) via [Java Management Extensions (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Usar consoles genéricos, como [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) ou aplicativos de monitoramento específicos do domínio, permite obter e definir configurações e propriedades de CRX, além de monitorar o desempenho e o uso de recursos.
 
 ### Utilização do JConsole para se conectar ao CRX {#using-jconsole-to-connect-to-crx}
 
@@ -915,7 +915,7 @@ O JConsole exibirá uma lista de processos locais da Java Virtual Machine. A lis
 
 ### Conectando-se a um processo CRX remoto {#connecting-to-a-remote-crx-process}
 
-Para conectar-se a um processo CRX remoto, a JVM que hospeda o processo CRX remoto precisará ser ativada para aceitar conexões JMX remotas.
+Para conectar-se a um processo CRX remoto, a JVM que hospeda o processo CRX remoto deve ser ativada para aceitar conexões JMX remotas.
 
 Para ativar conexões JMX remotas, a seguinte propriedade do sistema deve ser definida ao iniciar a JVM:
 

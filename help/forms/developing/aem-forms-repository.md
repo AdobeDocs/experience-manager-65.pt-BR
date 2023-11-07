@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '9109'
+source-wordcount: '9095'
 ht-degree: 0%
 
 ---
@@ -30,13 +30,13 @@ Por exemplo, considere o seguinte aplicativo do Forms chamado *Aplicativos/Formu
 
 ![ww_ww_formrepository](assets/ww_ww_formrepository.png)
 
-Observe que há um arquivo chamado Loan.xdp localizado em FormsFolder. Para acessar este design de formulário, especifique o caminho completo (incluindo a versão): `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+Observe que há um arquivo chamado Loan.xdp na FormsFolder. Para acessar este design de formulário, especifique o caminho completo (incluindo a versão): `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
 
 >[!NOTE]
 >
 >Para obter informações sobre como criar um aplicativo Forms usando o Workbench, consulte [Ajuda do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
-O caminho para um recurso localizado no repositório do AEM Forms é:
+O caminho para um recurso no repositório do AEM Forms é:
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
@@ -305,7 +305,7 @@ Grave um recurso usando a API de serviço do Repositório (Java):
 
 1. Gravar o recurso na pasta de destino
 
-   Chame o `ResourceRepositoryClient` do objeto `writeResource` e passe no URI da pasta, bem como no campo `Resource` objeto.
+   Chame o `ResourceRepositoryClient` do objeto `writeResource` e transmita o URI da pasta, e a variável `Resource` objeto.
 
 **Consulte também**
 
@@ -354,7 +354,7 @@ Grave um recurso usando a API de serviço do Repositório (serviço Web):
 
 1. Gravar o recurso na pasta de destino
 
-   Chame o `RepositoryServiceService` do objeto `writeResource` e passe no URI da pasta, bem como no campo `Resource` objeto. Aprovado `null` para os outros dois parâmetros.
+   Chame o `RepositoryServiceService` do objeto `writeResource` e transmita o URI da pasta, e a variável `Resource` objeto. Aprovado `null` para os outros dois parâmetros.
 
 **Consulte também**
 
@@ -542,7 +542,7 @@ Leia um recurso usando a API de serviço do repositório (Java):
 
 1. Especifique o URI do recurso a ser lido
 
-   Especifique um valor de string que represente o URI do recurso a ser recuperado. Por exemplo, supondo que o recurso seja nomeado como *testResource* que está localizado em uma pasta chamada *testFolder*, especificar `/testFolder/testResource`.
+   Especifique um valor de string que represente o URI do recurso a ser recuperado. Por exemplo, supondo que o recurso seja nomeado como *testResource* que está em uma pasta chamada *testFolder*, especificar `/testFolder/testResource`.
 
 1. Ler o recurso
 
@@ -716,7 +716,7 @@ Você pode recuperar recursos relacionados para determinar as dependências entr
 
 **Instruções de consulta**
 
-A *query* contém uma ou mais instruções logicamente unidas com condições. A *instrução* consiste em um operando à esquerda, um operador e um operando à direita. Além disso, você pode especificar a ordem de classificação a ser usada para os resultados da pesquisa. A variável *ordem de classificação* contém informações equivalentes a um SQL `ORDER BY` e é composto de elementos que contêm os atributos nos quais a pesquisa foi baseada, bem como um valor que indica se a ordem crescente ou decrescente deve ser usada.
+A *query* contém uma ou mais instruções logicamente unidas com condições. A *instrução* consiste em um operando à esquerda, um operador e um operando à direita. Além disso, você pode especificar a ordem de classificação a ser usada para os resultados da pesquisa. A variável *ordem de classificação* contém informações equivalentes a um SQL `ORDER BY` e é composto de elementos que contêm os atributos nos quais a pesquisa foi baseada e um valor indicando se a ordem crescente ou decrescente deve ser usada.
 
 Você pode pesquisar recursos de forma programática usando a API Java do serviço de repositório. No momento, não é possível usar a API do serviço Web para pesquisar recursos.
 
@@ -921,7 +921,7 @@ Para criar recursos de relacionamento usando a API Java do serviço de Repositó
 
 1. Especifique os URIs dos recursos que serão relacionados
 
-   Especifique os URIs dos recursos que serão relacionados. Nesse caso, porque os recursos são nomeados como `testResource1` e `testResource2` e estiverem localizados na pasta chamada `testFolder`, seus URIs são `"/testFolder/testResource1"` e `"/testFolder/testResource2"`. Os URIs são armazenados como um `java.lang.String` objetos. Neste exemplo, os recursos são gravados pela primeira vez no repositório e seus URIs são recuperados. Para obter mais informações sobre como gravar um recurso, consulte [Recursos de gravação](aem-forms-repository.md#writing-resources).
+   Especifique os URIs dos recursos que serão relacionados. Nesse caso, porque os recursos são nomeados como `testResource1` e `testResource2` e estão na pasta chamada `testFolder`, seus URIs são `"/testFolder/testResource1"` e `"/testFolder/testResource2"`. Os URIs são armazenados como um `java.lang.String` objetos. Neste exemplo, os recursos são gravados pela primeira vez no repositório e seus URIs são recuperados. Para obter mais informações sobre como gravar um recurso, consulte [Recursos de gravação](aem-forms-repository.md#writing-resources).
 
 1. Criar o relacionamento
 
@@ -965,7 +965,7 @@ Crie recursos de relacionamento usando a API do repositório (serviço da Web):
 
 1. Especifique os URIs dos recursos que serão relacionados
 
-   Especifique os URIs dos recursos que serão relacionados. Nesse caso, porque os recursos são nomeados como `testResource1` e `testResource2` e estiverem localizados na pasta chamada `testFolder`, seus URIs são `"/testFolder/testResource1"` e `"/testFolder/testResource2"`. Ao usar uma linguagem compatível com o Microsoft .NET Framework (por exemplo, C#), os URIs são armazenados como um `System.String` objetos. Neste exemplo, os recursos são gravados pela primeira vez no repositório e seus URIs são recuperados. Para obter mais informações sobre como gravar um recurso, consulte [Recursos de gravação](aem-forms-repository.md#writing-resources).
+   Especifique os URIs dos recursos que serão relacionados. Nesse caso, porque os recursos são nomeados como `testResource1` e `testResource2` e estão na pasta chamada `testFolder`, seus URIs são `"/testFolder/testResource1"` e `"/testFolder/testResource2"`. Ao usar uma linguagem compatível com o Microsoft .NET Framework (por exemplo, C#), os URIs são armazenados como um `System.String` objetos. Neste exemplo, os recursos são gravados pela primeira vez no repositório e seus URIs são recuperados. Para obter mais informações sobre como gravar um recurso, consulte [Recursos de gravação](aem-forms-repository.md#writing-resources).
 
 1. Criar o relacionamento
 
@@ -999,7 +999,7 @@ Crie recursos de relacionamento usando a API do repositório (serviço da Web):
 
 É possível bloquear um recurso ou conjunto de recursos para uso exclusivo por um usuário específico ou para uso compartilhado entre mais de um usuário. Um bloqueio compartilhado é uma indicação de que algo acontecerá com o recurso, mas não impede que outra pessoa execute ações com esse recurso. Um bloqueio compartilhado deve ser considerado um mecanismo de sinalização. Um bloqueio exclusivo significa que o usuário que bloqueou o recurso vai alterar o recurso, e o bloqueio garante que ninguém mais possa fazer isso até que o usuário não precise mais de acesso ao recurso e tenha liberado o bloqueio. Se um administrador do repositório desbloquear um recurso, todos os bloqueios exclusivos e compartilhados nesse recurso serão removidos automaticamente. Esse tipo de ação se destina a situações em que um usuário não está mais disponível e não desbloqueou o recurso.
 
-Quando um recurso é bloqueado, um ícone de bloqueio é exibido quando você exibe a guia Recursos localizada na Bancada, conforme mostrado na ilustração a seguir.
+Quando um recurso é bloqueado, um ícone de bloqueio é exibido quando você exibe a guia Recursos na Bancada, conforme mostrado na ilustração a seguir.
 
 ![lr_lr_lockrepository](assets/lr_lr_lockrepository.png)
 

@@ -6,18 +6,18 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2707'
 ht-degree: 1%
 
 ---
 
 # Como usar a ferramenta VLT {#how-to-use-the-vlt-tool}
 
-A ferramenta Jackrabbit FileVault (VLT) é uma ferramenta desenvolvida pela [A Fundação Apache](https://www.apache.org/) que mapeia o conteúdo de uma instância Jackrabbit/AEM para o seu sistema de arquivos. A ferramenta VLT tem funções semelhantes às do cliente do sistema de controle de origem (como um cliente Subversion (SVN)), fornecendo operações normais de check-in, check-out e gerenciamento, bem como opções de configuração para representação flexível do conteúdo do projeto.
+A ferramenta Jackrabbit FileVault (VLT) é uma ferramenta desenvolvida pela [A Fundação Apache](https://www.apache.org/) que mapeia o conteúdo de uma instância Jackrabbit/AEM para o seu sistema de arquivos. A ferramenta VLT tem funções semelhantes às do cliente do sistema de controle de origem (como um cliente SVN), fornecendo operações normais de check-in, check-out e gerenciamento, além de opções de configuração para representação flexível do conteúdo do projeto.
 
-Execute a ferramenta VLT a partir da linha de comando. Este documento descreve como usar a ferramenta, incluindo como começar e obter ajuda, bem como uma lista de todos os [comandos](#vlt-commands) e disponíveis [opções](#vlt-global-options).
+Execute a ferramenta VLT a partir da linha de comando. Este documento descreve como usar a ferramenta, incluindo como começar e obter ajuda, e uma lista de todos os [comandos](#vlt-commands) e disponíveis [opções](#vlt-global-options).
 
 ## Conceitos e arquitetura {#concepts-and-architecture}
 
@@ -440,7 +440,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 |  |  |
 |--- |--- |
-| `-l (--linkFormat) <format>` | formato printf para links de hotfix (name,id), por exemplo `[CQ520_HF_%s|%s]` |
+| `-l (--linkFormat) <format>` | formato printf para links de hotfix (name,id), por exemplo, `[CQ520_HF_%s|%s]` |
 | `-v (--verbose)` | saída detalhada |
 | `-q (--quiet)` | imprime o mínimo possível |
 | `<localPaths> [<localPaths> ...]` | caminho local |
@@ -781,7 +781,7 @@ O serviço de sincronização do Vault é usado para sincronizar o conteúdo do 
 
 >[!NOTE]
 >
->O serviço de sincronização do Vault é uma ferramenta de desenvolvimento e não é recomendável usá-lo em um sistema produtivo. Observe também que o serviço só pode ser sincronizado com o sistema de arquivos local e não pode ser usado para desenvolvimento remoto.
+>O serviço de sincronização do Vault é uma ferramenta de desenvolvimento e não é recomendável usá-lo em um sistema produtivo. Além disso, o serviço só pode ser sincronizado com o sistema de arquivos local e não pode ser usado para desenvolvimento remoto.
 
 ### Instalando o serviço usando vlt {#installing-the-service-using-vlt}
 

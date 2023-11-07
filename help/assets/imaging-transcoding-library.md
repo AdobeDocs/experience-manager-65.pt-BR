@@ -5,7 +5,7 @@ contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools,Asset Processing
 exl-id: b67465f9-177c-49c4-b4eb-a1d6e09ac9a2
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Os argumentos de linha de comando para a Biblioteca de transcodificação de ima
 Você pode configurar as seguintes opções para a variável `-resize` parâmetro:
 
 * `X`: Funciona de forma semelhante a [!DNL Experience Manager]. Por exemplo, -resize 319.
-* `WxH`: a proporção não é mantida. Por exemplo `-resize 319x319`.
+* `WxH`: a taxa de proporção não é mantida. Por exemplo, `-resize 319x319`.
 * `Wx`: corrige a largura e calcula a altura mantendo a proporção. Por exemplo, `-resize 319x`.
 * `xH`: corrige a altura e calcula a largura mantendo a proporção. Por exemplo, `-resize x319`.
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 8eef7e4d-a6f2-4b87-a995-0761447283c6
-source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Suponhamos que seja necessário adicionar uma página de lista de notícias aos 
 
 A maneira recomendada de abordar esse desafio seria:
 
-* Reutilizar um modelo existente para criar um novo tipo de página. O modelo define grosseiramente a estrutura da página (elementos de navegação, painéis, etc.), que é ajustada ainda mais pelo seu design (CSS, gráficos).
+* Reutilizar um modelo existente para criar um tipo de página. O modelo define grosseiramente a estrutura da página (elementos de navegação, painéis, etc.), que é ajustada ainda mais pelo seu design (CSS, gráficos).
 * Use o sistema de parágrafo (parsys/iparsys) nas novas páginas.
 * Defina o direito de acesso ao modo Design dos sistemas de parágrafo, para que somente pessoas autorizadas (geralmente o administrador) possam alterá-las.
 * Defina os componentes permitidos no sistema de parágrafo fornecido para que os editores possam colocar os componentes necessários na página. Nesse caso, pode ser um componente de lista, que pode percorrer uma subárvore de páginas e extrair as informações de acordo com regras predefinidas.

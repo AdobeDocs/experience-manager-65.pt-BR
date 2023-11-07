@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: d5dac1db-2dde-4b75-a31b-e057b447f6e2
 exl-id: bce6c586-9962-4217-82cb-c837e479abc0
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Depois de criar a tabela de eventos, execute o **Assistente para atualização d
 
 ### Extensão da Seed Table {#extending-the-seed-table}
 
-No Adobe Campaign, toque/clique **Adicionar** para criar uma nova extensão do **Seed addresses (nms)** tabela.
+No Adobe Campaign, selecione **Adicionar** para criar uma extensão do **Seed addresses (nms)** tabela.
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 

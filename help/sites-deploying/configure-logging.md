@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
 feature: Configuring
 exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -135,13 +135,13 @@ Os outros pares seguem a configuração padrão:
 
 Você pode definir seu próprio par de Logger/Gravador:
 
-1. Criar uma nova instância da Configuração de fábrica [Configuração do logger de log do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md).
+1. Criar uma instância da Configuração de Fábrica [Configuração do logger de log do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md).
 
    1. Especifique o Arquivo de log.
    1. Especifique o Logger.
    1. Configure os outros parâmetros conforme necessário.
 
-1. Criar uma nova instância da Configuração de fábrica [Configuração do Apache Sling Logging Writer](/help/sites-deploying/osgi-configuration-settings.md).
+1. Criar uma instância da Configuração de Fábrica [Configuração do Apache Sling Logging Writer](/help/sites-deploying/osgi-configuration-settings.md).
 
    1. Especifique o Arquivo de log - deve corresponder ao especificado para o Logger.
    1. Configure os outros parâmetros conforme necessário.

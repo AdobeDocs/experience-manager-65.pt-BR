@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
 exl-id: 0d36160a-29fa-4cc4-a0ff-fc681d3e040e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1089'
 ht-degree: 2%
 
 ---
@@ -155,9 +155,9 @@ As estratégias a seguir podem minimizar a perda de dados da pasta de saída e d
 * Faça backup das pastas de saída e de falha com frequência, por exemplo, a cada hora, para evitar a perda de arquivos de resultado e de falha.
 * Fazer backup dos arquivos de entrada em uma pasta diferente da pasta monitorada. Isso garante a disponibilidade do arquivo após a recuperação, caso não seja possível encontrar os arquivos na pasta de saída ou de falha. Verifique se o esquema de nomenclatura de arquivo é consistente.
 
-   Por exemplo, se você estiver salvando a saída com `%F.`*extensão*, o arquivo de saída terá o mesmo nome que o arquivo de entrada. Isso ajuda a determinar quais arquivos de entrada são manipulados e quais devem ser reenviados. Se você vir somente o arquivo file1_out na pasta de resultados e não file2_out, file3_out e file4_out, deverá reenviar o arquivo2, file3 e file4.
+  Por exemplo, se você estiver salvando a saída com `%F.`*extensão*, o arquivo de saída terá o mesmo nome que o arquivo de entrada. Isso ajuda a determinar quais arquivos de entrada são manipulados e quais devem ser reenviados. Se você vir somente o arquivo file1_out na pasta de resultados e não file2_out, file3_out e file4_out, deverá reenviar o arquivo2, file3 e file4.
 
-* Se o backup da pasta monitorada disponível for anterior ao tempo necessário para processar o trabalho, você deverá permitir que o sistema crie uma nova pasta monitorada e coloque automaticamente os arquivos na pasta de entrada.
+* Se o backup de pasta monitorada disponível for mais antigo do que o tempo necessário para processar o trabalho, você deverá permitir que o sistema crie uma pasta monitorada e coloque automaticamente os arquivos na pasta de entrada.
 * Se o último backup disponível não for suficientemente recente, o tempo de backup for menor que o tempo necessário para processar os arquivos e a pasta monitorada for restaurada, o arquivo será manipulado em um dos seguintes estágios diferentes:
 
    * **Fase 1:** Na pasta de entrada
@@ -166,11 +166,11 @@ As estratégias a seguir podem minimizar a perda de dados da pasta de saída e d
    * **Fase 4:** Manipulação em andamento
    * **Fase 5:** Resultados retornados
 
-   Se os arquivos estiverem no Estágio 1, eles serão manipulados. Se os arquivos estiverem no Estágio 2 ou 3, coloque-os na pasta de entrada para que a manipulação ocorra novamente.
+  Se os arquivos estiverem no Estágio 1, eles serão manipulados. Se os arquivos estiverem no Estágio 2 ou 3, coloque-os na pasta de entrada para que a manipulação ocorra novamente.
 
-   >[!NOTE]
-   >
-   >Se a manipulação de um arquivo ocorrer mais de uma vez, a perda de dados será evitada, mas os resultados poderão ser duplicados.
+  >[!NOTE]
+  >
+  >Se a manipulação de um arquivo ocorrer mais de uma vez, a perda de dados será evitada, mas os resultados poderão ser duplicados.
 
 ## Conclusão {#conclusion}
 

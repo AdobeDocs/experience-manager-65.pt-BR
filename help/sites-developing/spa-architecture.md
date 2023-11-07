@@ -7,10 +7,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2056'
-ht-degree: 4%
+source-wordcount: '2055'
+ht-degree: 6%
 
 ---
 
@@ -29,7 +29,7 @@ Este artigo apresenta perguntas importantes a serem consideradas ao envolver um 
 O desenvolvimento de aplicativos de página única no AEM parte do princípio de que o desenvolvedor de front-end segue as práticas recomendadas padronizadas ao criar um SPA. Se, como desenvolvedor de front-end, você seguir essas práticas recomendadas gerais e alguns princípios específicos do AEM, seu SPA estará funcional com [AEM e seus recursos de criação de conteúdo](/help/sites-developing/spa-walkthrough.md#content-editing-experience-with-spa).
 
 * **[Portabilidade](/help/sites-developing/spa-architecture.md#portability) -** Assim como com qualquer componente, os componentes devem ser criados para serem o mais portáteis possível. O SPA deve ser desenvolvido com componentes portáteis e reutilizáveis.
-* **[AEM direciona a estrutura do site](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)** - O desenvolvedor de front-end cria componentes e tem sua estrutura interna, mas depende do AEM para definir a estrutura de conteúdo do site.
+* **[AEM controla a estrutura do site](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)** - O desenvolvedor de front-end cria componentes e tem a propriedade de sua estrutura interna, mas depende do AEM para definir a estrutura de conteúdo do site.
 * **[Renderização dinâmica](/help/sites-developing/spa-architecture.md#dynamic-rendering)** - Todas as renderizações devem ser dinâmicas.
 * **[Roteamento Dinâmico](#dynamic-routing) -** O SPA é responsável pelo roteamento e o AEM o escuta e busca com base nele. Qualquer roteamento também deve ser dinâmico.
 
@@ -63,7 +63,7 @@ Qualquer roteamento estático funciona contra o [princípio da portabilidade](/h
 
 ## Arquétipo de projeto do AEM {#aem-project-archetype}
 
-Qualquer projeto AEM deve usar o [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que oferece suporte a projetos SPA usando o React ou o Angular e usa o SDK do SPA.
+Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que aceita projetos SPA que usam o React ou o Angular e utiliza o SDK de SPA.
 
 ## Modelos de design SPA {#spa-design-models}
 
@@ -89,7 +89,7 @@ Pode haver casos em que isso não seja totalmente necessário. A tabela a seguir
    <td><p>Os autores de conteúdo estão restritos a um conjunto limitado de experiências de criação de conteúdo no AEM.</p> <p>O código corre o risco de não ser portátil nem reutilizável se contiver referências estáticas ou roteamento.</p> <p>Não permite o uso do editor de modelos, portanto, o desenvolvedor de front-end deve manter modelos editáveis por meio do JCR.</p> </td>
   </tr>
   <tr>
-   <td>O projeto aproveita totalmente o SDK do Editor de SPA, e os componentes de front-end são desenvolvidos como uma biblioteca e a estrutura de conteúdo do aplicativo é delegada ao AEM.</td>
+   <td>O projeto usa totalmente o SDK do Editor de SPA, e os componentes de front-end são desenvolvidos como uma biblioteca e a estrutura de conteúdo do aplicativo é delegada ao AEM.</td>
    <td><p>O aplicativo é reutilizável e portátil.</p> <p>O autor de conteúdo pode editar o aplicativo usando a experiência de criação de conteúdo AEM.<br /> </p> <p>O SPA é compatível com o editor de modelos.</p> </td>
    <td><p>O desenvolvedor não controla a estrutura do aplicativo e a parte do conteúdo delegada ao AEM.</p> <p>O desenvolvedor ainda pode reservar áreas do aplicativo para o conteúdo que não deve ser criado usando AEM.</p> </td>
   </tr>
@@ -190,7 +190,7 @@ A arquitetura geral do AEM, incluindo ambientes de desenvolvimento, criação e 
   É aqui que a origem do aplicativo SPA e a origem do componente são verificadas.
 
    * O gerador de clientlib do NPM cria uma biblioteca do cliente a partir do projeto SPA.
-   * Essa biblioteca é retirada pelo Maven e implantada pelo plug-in Maven Build junto com o componente no autor do AEM.
+   * Essa biblioteca é retirada pelo Maven e implantada pelo plug-in Maven Build, juntamente com o componente, no autor do AEM.
 
 * **Autor do AEM**
 
@@ -212,7 +212,7 @@ A arquitetura geral do AEM, incluindo ambientes de desenvolvimento, criação e 
 
   O Dispatcher serve como a camada de armazenamento em cache do AEM para os visitantes do site.
 
-   * As solicitações são processadas de forma semelhante à do Autor do AEM, no entanto, não há solicitação de informações da página, pois elas são necessárias somente para o editor.
+   * As solicitações são processadas de forma semelhante à do autor AEM. No entanto, não há solicitação de informações da página, pois elas são necessárias somente para o editor.
    * JavaScript, CSS, JSON e HTML são armazenados em cache, otimizando a página para entrega rápida.
 
 >[!NOTE]
@@ -227,4 +227,4 @@ Para obter um guia passo a passo sobre como criar seu próprio SPA, consulte o [
 
 SPA Para mais detalhes sobre o modelo dinâmico para mapeamento de componentes e como ele funciona dentro do AEM, consulte o artigo [Modelo dinâmico para mapeamento de componentes para SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Se você quiser implementar o SPA no AEM para uma estrutura diferente do React ou do Angular SPA AEM ou simplesmente quiser se aprofundar em como o SDK do para o funciona, consulte o [Blueprint SPA](/help/sites-developing/spa-blueprint.md) artigo.
+Se você quiser implementar o SPA no AEM para uma estrutura diferente do React ou do Angular SPA AEM ou simplesmente quiser se aprofundar em como funciona o SDK do para o, consulte o [Blueprint SPA](/help/sites-developing/spa-blueprint.md) artigo.

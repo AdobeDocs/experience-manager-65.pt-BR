@@ -1,18 +1,14 @@
 ---
 title: Administração de tags
-seo-title: Administering Tags
 description: Saiba como gerenciar e administrar tags na Adobe Experience Manager.
-seo-description: Learn how to administer Tags in AEM.
-uuid: 77e1280a-feea-4edd-94b6-4fb825566c42
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
-discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 exl-id: ff041ef0-e566-4373-818e-76680ff668d8
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1761'
 ht-degree: 2%
 
 ---
@@ -78,7 +74,7 @@ Para acessar o console de Marcação:
 
 ### Criar um namespace {#creating-a-namespace}
 
-Para criar um novo namespace, selecione a variável **`Create Namespace`** ícone.
+Para criar um namespace, selecione a variável **`Create Namespace`** ícone.
 
 O namespace é, em si, uma tag e não precisa conter nenhuma subtag. No entanto, para continuar criando uma taxonomia, [criar subtags](#creating-tags), que por sua vez podem ser tags de folha ou tags de container.
 
@@ -211,7 +207,7 @@ Exibe inicialmente o atual `name`da tag. Um novo `name`podem ser inseridos.
 
 A mesclagem de tags pode ser usada quando uma taxonomia tem duplicatas. Quando a tag A é mesclada à tag B, todas as páginas marcadas com a tag A são marcadas com a tag B e a tag A não está mais disponível para os autores.
 
-Quando um namespace ou outra tag é selecionada, a seleção do **Mesclar** O ícone abrirá um painel onde o caminho para mesclar pode ser selecionado.
+Quando um namespace ou outra tag é selecionada, a seleção do **Mesclar** ícone abre um painel onde o caminho para mesclar no pode ser selecionado.
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
@@ -296,7 +292,7 @@ Depois que todas as traduções forem inseridas, selecione **Salvar** para sair 
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
-Em geral, o idioma escolhido para a tag é retirado do idioma da página, quando disponível. Quando a variável [`tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) for usada em outros casos (por exemplo, em formulários ou caixas de diálogo), a linguagem da tag dependerá do contexto.
+Em geral, o idioma escolhido para a tag é retirado do idioma da página, quando disponível. Quando a variável [`tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) for usada em outros casos (por exemplo, em formulários ou caixas de diálogo), o idioma da tag dependerá do contexto.
 
 Em vez de usar a configuração de idioma da página, o console Marcação usa a configuração de idioma do usuário. No console de marcação, para a tag &quot;Animais&quot;, &quot;Animaux&quot; seria exibido para um usuário que define o idioma para francês em suas propriedades de usuário.
 
@@ -310,6 +306,6 @@ Para adicionar um novo idioma à caixa de diálogo, consulte [Adicionar um novo 
 
 * [Marcação para desenvolvedores](/help/sites-developing/tags.md)
 
-  Informações sobre a estrutura de marcação e sobre a extensão e inclusão de tags em aplicativos personalizados.
+  Informações sobre a estrutura de marcação e a extensão e inclusão de tags em aplicativos personalizados.
 
 * [Console de marcação da interface clássica](/help/sites-administering/classic-console.md)

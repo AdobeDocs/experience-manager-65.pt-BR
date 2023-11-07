@@ -12,9 +12,9 @@ discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 role: Admin
 exl-id: 2395c895-c611-43ac-abb6-c2bc4b4a41f4
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2224'
+source-wordcount: '2220'
 ht-degree: 6%
 
 ---
@@ -55,11 +55,11 @@ Quando uma função da comunidade é adicionada a um modelo de site da comunidad
 
 * **Título**
 
-   (*Obrigatório*) O texto que aparece no menu de recursos do site
+  (*Obrigatório*) O texto que aparece no menu de recursos do site
 
 * **URL**
 
-   (*Obrigatório*) O nome usado para gerar o URI. O nome deve estar em conformidade com o [convenções de nomenclatura](/help/sites-developing/naming-conventions.md) impostos pelo AEM e pelo JCR.
+  (*Obrigatório*) O nome usado para gerar o URI. O nome deve estar em conformidade com o [convenções de nomenclatura](/help/sites-developing/naming-conventions.md) impostos pelo AEM e pelo JCR.
 
 Por exemplo, usar o site criado a partir do seguinte [Introdução](/help/communities/getting-started.md) tutorial, se
 
@@ -86,15 +86,15 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
 * **Mostrar a exibição &quot;Minhas atividades&quot;**
 
-   Se selecionada, a página Atividades incluirá uma guia que filtra as atividades com base naquelas geradas dentro da comunidade pelo membro atual. O padrão está selecionado.
+  Se selecionada, a página Atividades incluirá uma guia que filtra as atividades com base naquelas geradas dentro da comunidade pelo membro atual. O padrão está selecionado.
 
 * **Mostrar a exibição &quot;Todas as atividades&quot;**
 
-   Se selecionada, a página Atividades inclui uma guia que inclui todas as atividades geradas na comunidade à qual o membro atual tem acesso. O padrão está selecionado.
+  Se selecionada, a página Atividades inclui uma guia que inclui todas as atividades geradas na comunidade à qual o membro atual tem acesso. O padrão está selecionado.
 
 * **Mostrar a exibição &quot;Feed de notícias&quot;**
 
-   Se for selecionada, as páginas Atividades incluirão uma guia que filtra as atividades com base naquelas que o membro atual está seguindo. O padrão está selecionado.
+  Se for selecionada, as páginas Atividades incluirão uma guia que filtra as atividades com base naquelas que o membro atual está seguindo. O padrão está selecionado.
 
 ### Função do blog {#blog-function}
 
@@ -108,19 +108,19 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
 * **Permitir membros privilegiados**
 
-   Se selecionado, o blog permitirá que apenas membros privilegiados criem artigos, permitindo a seleção de um [grupo de membros privilegiados](/help/communities/users.md#privileged-members-group). Se não for selecionada, todos os membros da comunidade poderão criar. O padrão está desmarcado.
+  Se selecionado, o blog permitirá que apenas membros privilegiados criem artigos, permitindo a seleção de um [grupo de membros privilegiados](/help/communities/users.md#privileged-members-group). Se não for selecionada, todos os membros da comunidade poderão criar. O padrão está desmarcado.
 
 * **Permitir carregamento de arquivos**
 
-   Se selecionado, o blog incluirá a capacidade de os membros fazerem upload de arquivos. O padrão está selecionado.
+  Se selecionado, o blog incluirá a capacidade de os membros fazerem upload de arquivos. O padrão está selecionado.
 
 * **Permitir respostas encadeadas**
 
-   Se não for selecionada, o blog permitirá respostas (comentários) a um artigo, mas respostas a comentários não serão permitidas. O padrão está selecionado.
+  Se não for selecionada, o blog permitirá respostas (comentários) a um artigo, mas respostas a comentários não serão permitidas. O padrão está selecionado.
 
 * **Ativar conteúdo em destaque**
 
-   Se selecionado, o blog é identificado como [conteúdo em destaque](/help/communities/featured.md). O padrão está selecionado.
+  Se selecionado, o blog é identificado como [conteúdo em destaque](/help/communities/featured.md). O padrão está selecionado.
 
 ### Função do calendário {#calendar-function}
 
@@ -134,23 +134,23 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
 * **Permitir fixação**
 
-   Se selecionada, o fórum permitirá que as respostas de tópico sejam fixadas no início da lista de comentários. O padrão está selecionado.
+  Se selecionada, o fórum permitirá que as respostas de tópico sejam fixadas no início da lista de comentários. O padrão está selecionado.
 
 * **Permitir membros privilegiados**
 
-   Se selecionado, o blog permitirá que apenas membros privilegiados criem artigos, permitindo a seleção de um [grupo de membros privilegiados](/help/communities/users.md#privileged-members-group). Se não for selecionada, todos os membros da comunidade poderão criar. O padrão está desmarcado.
+  Se selecionado, o blog permitirá que apenas membros privilegiados criem artigos, permitindo a seleção de um [grupo de membros privilegiados](/help/communities/users.md#privileged-members-group). Se não for selecionada, todos os membros da comunidade poderão criar. O padrão está desmarcado.
 
 * **Permitir carregamento de arquivos**
 
-   Se selecionado, o blog incluirá a capacidade de os membros fazerem upload de arquivos. O padrão está selecionado.
+  Se selecionado, o blog incluirá a capacidade de os membros fazerem upload de arquivos. O padrão está selecionado.
 
 * **Permitir respostas encadeadas**
 
-   Se não for selecionada, o blog permitirá respostas (comentários) a um artigo, mas respostas a comentários não serão permitidas. O padrão está selecionado.
+  Se não for selecionada, o blog permitirá respostas (comentários) a um artigo, mas respostas a comentários não serão permitidas. O padrão está selecionado.
 
 * **Ativar conteúdo em destaque**
 
-   Se selecionado, seu conteúdo é identificado como [conteúdo em destaque](/help/communities/featured.md). O padrão está selecionado.
+  Se selecionado, seu conteúdo é identificado como [conteúdo em destaque](/help/communities/featured.md). O padrão está selecionado.
 
 ### Função de conteúdo em destaque {#featured-content-function}
 
@@ -180,23 +180,23 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
 * **Permitir fixação**
 
-   Se selecionada, o fórum permitirá que as respostas de tópico sejam fixadas no início da lista de comentários. O padrão está selecionado.
+  Se selecionada, o fórum permitirá que as respostas de tópico sejam fixadas no início da lista de comentários. O padrão está selecionado.
 
 * **Permitir membros privilegiados**
 
-   Se selecionado, o fórum só permitirá que membros privilegiados publiquem tópicos, permitindo a seleção de um [grupo de membros privilegiados](/help/communities/users.md#privileged-members-group). Se não for selecionada, todos os membros da comunidade poderão publicar. O padrão está desmarcado.
+  Se selecionado, o fórum só permitirá que membros privilegiados publiquem tópicos, permitindo a seleção de um [grupo de membros privilegiados](/help/communities/users.md#privileged-members-group). Se não for selecionada, todos os membros da comunidade poderão publicar. O padrão está desmarcado.
 
 * **Permitir carregamento de arquivos**
 
-   Se selecionado, o fórum incluirá a capacidade de os membros fazerem upload de arquivos. O padrão está selecionado.
+  Se selecionado, o fórum incluirá a capacidade de os membros fazerem upload de arquivos. O padrão está selecionado.
 
 * **Permitir respostas encadeadas**
 
-   Se não for selecionada, o fórum permitirá comentários sobre um tópico, mas as respostas a esses comentários não serão permitidas. O padrão está selecionado.
+  Se não for selecionada, o fórum permitirá comentários sobre um tópico, mas as respostas a esses comentários não serão permitidas. O padrão está selecionado.
 
 * **Ativar conteúdo em destaque**
 
-   Se selecionado, o conteúdo do componente é identificado como [conteúdo em destaque](/help/communities/featured.md). O padrão está selecionado.
+  Se selecionado, o conteúdo do componente é identificado como [conteúdo em destaque](/help/communities/featured.md). O padrão está selecionado.
 
 ### Função Grupos {#groups-function}
 
@@ -222,22 +222,22 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
 * **Selecionar modelos de grupo**
 
-   Uma lista suspensa que permite a seleção de um ou mais modelos de grupo ativados, a partir dos quais o criador futuro de um novo grupo da comunidade (no ambiente de publicação) poderá escolher.
+  Uma lista suspensa que permite a seleção de um ou mais modelos de grupo ativados, a partir dos quais o criador futuro de um novo grupo da comunidade (no ambiente de publicação) poderá escolher.
 
 * **Permitir membros privilegiados**
 
-   Se selecionado, o fórum só permitirá que membros privilegiados publiquem tópicos, permitindo a seleção de um [grupo de segurança de membros privilegiados](/help/communities/users.md#privileged-members-group). Se não for selecionada, todos os membros da comunidade poderão publicar. O padrão está desmarcado.
+  Se selecionado, o fórum só permitirá que membros privilegiados publiquem tópicos, permitindo a seleção de um [grupo de segurança de membros privilegiados](/help/communities/users.md#privileged-members-group). Se não for selecionada, todos os membros da comunidade poderão publicar. O padrão está desmarcado.
 
 * **Permitir a publicação da criação**
 
-   Se essa opção for selecionada, os membros autorizados da comunidade poderão criar um grupo no ambiente de publicação. Se desmarcado, novos grupos (subcomunidades) só poderão ser criados no ambiente de criação do console Grupos de sites de comunidades.
+  Se essa opção for selecionada, os membros autorizados da comunidade poderão criar um grupo no ambiente de publicação. Se desmarcado, novos grupos (subcomunidades) só poderão ser criados no ambiente de criação do console Grupos de sites de comunidades.
 O padrão está selecionado.
 
 ### Função de ideação {#ideation-function}
 
 A função de ideação é uma página com uma [Componente de ideação](/help/communities/ideation-feature.md).
 
-Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta, especificando o Título padrão e os nomes de URL, bem como as configurações de exibição padrão do modelo:
+Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta, especificando o Título padrão, os nomes de URL e as configurações de exibição padrão do modelo:
 
 ![ideação-função](assets/ideation-function.png)
 
@@ -245,19 +245,19 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta, especific
 
 * **Permitir membros privilegiados**
 
-   Se selecionado, o fórum só permitirá que membros privilegiados publiquem tópicos, permitindo a seleção de um [grupo de segurança de membros privilegiados](/help/communities/users.md#privileged-members-group). Se não for selecionada, todos os membros da comunidade poderão publicar. O padrão está desmarcado.
+  Se selecionado, o fórum só permitirá que membros privilegiados publiquem tópicos, permitindo a seleção de um [grupo de segurança de membros privilegiados](/help/communities/users.md#privileged-members-group). Se não for selecionada, todos os membros da comunidade poderão publicar. O padrão está desmarcado.
 
 * **Permitir carregamento de arquivos**
 
-   Se selecionada, a ideia inclui a capacidade de os membros fazerem upload de arquivos. O padrão está selecionado.
+  Se selecionada, a ideia inclui a capacidade de os membros fazerem upload de arquivos. O padrão está selecionado.
 
 * **Permitir respostas encadeadas**
 
-   Se não for selecionada, a ideia permitirá respostas (comentários) a um tópico, mas respostas a comentários não serão permitidas. O padrão está selecionado.
+  Se não for selecionada, a ideia permitirá respostas (comentários) a um tópico, mas respostas a comentários não serão permitidas. O padrão está selecionado.
 
 * **Ativar conteúdo em destaque**
 
-   Se selecionado, seu conteúdo é identificado como [conteúdo em destaque](/help/communities/featured.md). O padrão está selecionado.
+  Se selecionado, seu conteúdo é identificado como [conteúdo em destaque](/help/communities/featured.md). O padrão está selecionado.
 
 ### Função do Placar de líderes {#leaderboard-function}
 
@@ -265,7 +265,7 @@ A função de placar de líderes é uma página com uma [Componente do quadro de
 
 **NOTA**: o componente de Quadro de classificação precisa de mais configuração *após* um site da comunidade é criado a partir de um modelo da comunidade que inclui a função Placar de líderes. Especificar o do componente de Quadro de classificação [regras](/help/communities/enabling-leaderboard.md#rules-tab), que dependem da configuração de [pontuação e medalhas](/help/communities/implementing-scoring.md) para o site da comunidade.
 
-Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta, especificando o Título padrão e os nomes de URL, bem como as configurações de exibição padrão do modelo:
+Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta, especificando o Título padrão, os nomes de URL e as configurações de exibição padrão do modelo:
 
 ![quadro de classificação-diálogo](assets/leaderboard-dialog.png)
 
@@ -273,17 +273,17 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta, especific
 
 * **Exibir insígnia**
 
-   Se selecionada, uma coluna para ícones de selo será incluída no quadro de classificação.
+  Se selecionada, uma coluna para ícones de selo será incluída no quadro de classificação.
 O padrão está desmarcado.
 
 * **Exibir nome da insígnia**
 
-   Se selecionada, uma coluna para o nome da medalha é incluída no quadro de classificação.
+  Se selecionada, uma coluna para o nome da medalha é incluída no quadro de classificação.
 O padrão está desmarcado.
 
 * **Exibir avatar**
 
-   Se selecionada, a imagem do avatar do membro será incluída no quadro de classificação, ao lado do link de nome para o perfil do membro.
+  Se selecionada, a imagem do avatar do membro será incluída no quadro de classificação, ao lado do link de nome para o perfil do membro.
 O padrão está desmarcado.
 
 ### Função da página {#page-function}
@@ -304,23 +304,23 @@ Quando adicionada a um modelo, a configuração permite a restrição a membros 
 
 * **Permitir fixação**
 
-   Se selecionada, o fórum permitirá que as respostas de tópico sejam fixadas no início da lista de comentários. O padrão está selecionado.
+  Se selecionada, o fórum permitirá que as respostas de tópico sejam fixadas no início da lista de comentários. O padrão está selecionado.
 
 * **Permitir membros privilegiados**
 
-   Se selecionado, o fórum QnA só permitirá que membros privilegiados postem perguntas, permitindo a seleção de um [grupo de membros privilegiados](/help/communities/users.md#privileged-members-group). Se não for selecionada, todos os membros da comunidade poderão publicar. O padrão está desmarcado.
+  Se selecionado, o fórum QnA só permitirá que membros privilegiados postem perguntas, permitindo a seleção de um [grupo de membros privilegiados](/help/communities/users.md#privileged-members-group). Se não for selecionada, todos os membros da comunidade poderão publicar. O padrão está desmarcado.
 
 * **Permitir carregamento de arquivos**
 
-   Se selecionado, o fórum QnA incluirá a capacidade de os membros fazerem upload de arquivos. O padrão está selecionado.
+  Se selecionado, o fórum QnA incluirá a capacidade de os membros fazerem upload de arquivos. O padrão está selecionado.
 
 * **Permitir respostas encadeadas**
 
-   Se não for selecionada, o fórum QnA permitirá comentários (respostas) para uma pergunta publicada, mas as respostas às respostas não serão permitidas. O padrão está selecionado.
+  Se não for selecionada, o fórum QnA permitirá comentários (respostas) para uma pergunta publicada, mas as respostas às respostas não serão permitidas. O padrão está selecionado.
 
 * **Ativar conteúdo em destaque**
 
-   Se selecionado, seu conteúdo é identificado como [conteúdo em destaque](/help/communities/featured.md). O padrão está selecionado.
+  Se selecionado, seu conteúdo é identificado como [conteúdo em destaque](/help/communities/featured.md). O padrão está selecionado.
 
 ## Criar função da comunidade {#create-community-function}
 
@@ -336,15 +336,15 @@ No painel Nome da função da comunidade, um nome, uma descrição e se a funç�
 
 * **Nome da função da comunidade**
 
-   O nome da função usada para exibição e armazenamento.
+  O nome da função usada para exibição e armazenamento.
 
 * **Descrição da função da comunidade**
 
-   A descrição da função para exibição.
+  A descrição da função para exibição.
 
 * **Desativado/Ativado**
 
-   Um switch que controla se a função é referenciável.
+  Um switch que controla se a função é referenciável.
 
 ### Blueprint AEM {#aem-blueprint}
 

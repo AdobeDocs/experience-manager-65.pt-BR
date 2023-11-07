@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 88%
+source-wordcount: '1304'
+ht-degree: 85%
 
 ---
 
@@ -24,7 +24,7 @@ Isso elimina a necessidade de desenvolver um componente personalizado para cada 
 
 ## Caso de uso  {#use-case}
 
-Autores(as) de modelos não precisam apenas configurar como os componentes funcionam para autores(as) de conteúdo, mas também configurar diversas variações visuais de um componente.
+Os autores de modelo não precisam apenas da capacidade de configurar como os componentes funcionam para os autores de conteúdo, mas também de configurar várias variações visuais alternativas de um componente.
 
 Da mesma forma, autores(as) de conteúdo precisam não apenas da capacidade de estruturar e organizar seu conteúdo, mas também de escolher como ele será apresentado visualmente.
 
@@ -111,7 +111,7 @@ Se você desejar usar o Sistema de estilos em seus próprios componentes, faça 
 
 >[!CAUTION]
 >
->As classes CSS (bem como qualquer JavaScript necessário) configuradas como propriedades de estilo da política de um componente devem ser implantadas como [Bibliotecas de clientes](/help/sites-developing/clientlibs.md) para trabalhar.
+>As classes CSS (e qualquer JavaScript necessário) configuradas como propriedades de estilo da política de um componente devem ser implantadas como [Bibliotecas de clientes](/help/sites-developing/clientlibs.md) para trabalhar.
 
 ## Configurar {#setup}
 
@@ -160,4 +160,4 @@ Essa propriedade é definida no nó `cq:Component`. Por exemplo:
 
 Essa capacidade de definir nomes de estilo é útil para componentes muito genéricos, como o Contêiner de layout ou o componente de Fragmento do conteúdo, para oferecer-lhes significado adicional.
 
-Por exemplo, isso permite que um container de layout receba uma semântica como `<main>`, `<aside>`, `<nav>` etc.
+Por exemplo, permite que um Contêiner de layout receba uma semântica como `<main>`, `<aside>`, `<nav>`e assim por diante.

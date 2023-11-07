@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
 exl-id: 1e05faf5-619a-4ea3-acbf-2fd37c71e6d2
 feature: Operations
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Siga estas etapas para configurar a Expurgação de Log de Auditoria:
    >O caminho do conteúdo se aplica somente aos filhos de `/var/audit/com.day.cq.wcm.core.page` no repositório.
 
 1. Salve a regra.
-1. A regra que você acabou de criar precisa ser exposta no Painel de operações para ser executada. Para fazer isso, acesse **Ferramentas - Operações - Manutenção** na tela de boas-vindas AEM.
+1. A regra criada precisa ser exposta no Painel de operações para ser executada. Para fazer isso, acesse **Ferramentas - Operações - Manutenção** na tela de boas-vindas AEM.
 
 1. Pressione a **Janela de manutenção semanal** cartão.
 

@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7848'
+source-wordcount: '7847'
 ht-degree: 0%
 
 ---
@@ -619,7 +619,7 @@ Esta tabela lista o tipo de informação usada na impressão de formatos de arqu
   <tr>
    <td><p>Script </p></td>
    <td><p>Especifica as interações entre o serviço Generate PDF e um aplicativo nativo. Essas interações geralmente direcionam o aplicativo para imprimir um arquivo no driver do Adobe PDF. </p><p>O script contém instruções que direcionam o aplicativo nativo para abrir caixas de diálogo específicas e que fornecem respostas específicas a campos e botões nessas caixas de diálogo. </p></td>
-   <td><p>O serviço Generate PDF inclui arquivos de script para todos os aplicativos nativos com suporte. Você pode modificar esses arquivos usando um aplicativo de edição XML.</p><p>Para adicionar suporte a um novo aplicativo nativo, você deve criar um novo arquivo de script. (Consulte <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Criando ou modificando um arquivo XML de diálogo adicional para um aplicativo nativo</a>.) </p></td>
+   <td><p>O serviço Generate PDF inclui arquivos de script para todos os aplicativos nativos com suporte. Você pode modificar esses arquivos usando um aplicativo de edição XML.</p><p>Para adicionar suporte a um novo aplicativo nativo, você deve criar um arquivo de script. (Consulte <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Criando ou modificando um arquivo XML de diálogo adicional para um aplicativo nativo</a>.) </p></td>
   </tr>
   <tr>
    <td><p>Instruções da caixa de diálogo genérica </p></td>

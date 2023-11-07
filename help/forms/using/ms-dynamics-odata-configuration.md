@@ -1,18 +1,14 @@
 ---
 title: Configuração OData do Microsoft Dynamics
-seo-title: Microsoft Dynamics ODtata configuration
-description: Aproveite, integre e trabalhe com serviços online e no local do Microsoft Dynamics por meio de um modelo de dados de formulário.
-seo-description: Learn how to leverage integrate and work with online and on-premises Microsoft Dynamics services through form data model.
-uuid: 37e59633-484b-4a20-808d-2a0bc0d336cc
+description: Saiba como usar, integrar e trabalhar com serviços online e no local do Microsoft Dynamics por meio do modelo de dados de formulário.
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 627507f5-1ffc-48f8-8cc9-5dbc5e409ae3
 docset: aem65
 feature: Form Data Model
 exl-id: 90cc9452-e107-4e57-80a3-f44f0bde132e
-source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1230'
 ht-degree: 1%
 
 ---
@@ -121,7 +117,7 @@ Faça o seguinte para registrar um cliente OAuth em um computador do Ative Diret
 
 A variável **CLOUD SERVICE OData do MS Dynamics (Serviço OData)** A configuração do vem com a configuração OData padrão. Para configurá-lo para se conectar com o serviço Microsoft Dynamics, faça o seguinte.
 
-1. Navegue até **[!UICONTROL Ferramentas > Cloud Services > Fontes de dados]** e toque no `global` pasta de configuração.
+1. Navegue até **[!UICONTROL Ferramentas > Cloud Service > Fontes de dados]** e toque no `global` pasta de configuração.
 1. Selecionar **CLOUD SERVICE OData do MS Dynamics (Serviço OData)** configuração e toque em **[!UICONTROL Propriedades]**. A caixa de diálogo de propriedade de configuração do Cloud Service é aberta.
 
    No **Configurações de autenticação** guia:

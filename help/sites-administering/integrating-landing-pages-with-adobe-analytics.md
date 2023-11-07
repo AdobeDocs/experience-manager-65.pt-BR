@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 8ae7ccec-489b-4d20-ac56-6101402fb18a
 exl-id: da3f7b7e-87e5-446a-9a77-4b12b850a381
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ No caso do AEM, a **Chamada para ação** componentes - **ClickThroughLink** e *
 
 Para mapear componentes da página de aterrissagem para o Adobe Analytics:
 
-1. Depois de criar a configuração do Adobe Analytics e uma nova estrutura, selecione o conjunto de relatórios apropriado no menu suspenso. Isso resulta na busca das variáveis do Adobe Analytics e sua exibição no localizador de conteúdo.
+1. Depois de criar a configuração do Adobe Analytics e uma estrutura, selecione o conjunto de relatórios apropriado no menu suspenso. Isso resulta na busca das variáveis do Adobe Analytics e sua exibição no localizador de conteúdo.
 1. Arraste e solte os componentes de Chamada para ação (CTA) do sidekick na área de mapeamento no meio da página, conforme apropriado.
 
 <table>
@@ -89,7 +89,7 @@ Para mapear componentes da página de aterrissagem para o Adobe Analytics:
 </table>
 
 1. Mapeie esses atributos expostos com qualquer variável do Adobe Analytics no localizador de conteúdo. A estrutura agora está pronta para uso.
-1. Agora você pode criar uma nova página de aterrissagem ou abrir uma página de aterrissagem existente com componentes CTA existentes e clicar em **Cloud Services** guia em **Propriedades da página** no sidekick (na interface otimizada para toque, selecione **Abrir propriedades** e clique em **Cloud Services**) e configurar a estrutura para usar com a landing page. Selecione a estrutura na lista suspensa.
+1. Agora você pode criar uma página de aterrissagem ou abrir uma página de aterrissagem existente com componentes CTA existentes e clicar em **Cloud Service** guia em **Propriedades da página** no sidekick (na interface otimizada para toque, selecione **Abrir propriedades** e clique em **Cloud Service**) e configurar a estrutura para usar com a landing page. Selecione a estrutura na lista suspensa.
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 

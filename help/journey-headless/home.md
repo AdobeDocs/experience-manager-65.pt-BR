@@ -2,10 +2,10 @@
 title: Jornadas do AEM Headless
 description: Uma coleção de jornadas de documentação que descrevem como usar o Adobe Experience Manager as a Headless CMS.
 exl-id: 369f79ab-c8ae-4d49-9b0b-e3a2e423b40f
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 65%
+source-wordcount: '457'
+ht-degree: 59%
 
 ---
 
@@ -35,7 +35,7 @@ As Jornadas headless foram projetadas para diversos perfis, apresentando os requ
 
 A jornada individual é definida para um perfil ou público específico, mas também define perfis adicionais com os quais o leitor interage.
 
-As informações nas jornadas podem, é claro, ser úteis para vários perfis, mas uma jornada é direcionada a um perfil específico e algumas informações podem ser supérfluas para determinadas funções.
+As informações nas jornadas podem ser úteis para vários perfis, mas uma jornada é direcionada a um perfil específico e algumas informações podem ser supérfluas para determinadas funções.
 
 ## Jornadas headless {#headless-journeys}
 

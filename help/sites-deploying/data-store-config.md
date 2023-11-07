@@ -6,9 +6,9 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 2ed19ac8c60dbf49422b8f1f665be4004689e00e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3550'
+source-wordcount: '3549'
 ht-degree: 2%
 
 ---
@@ -90,7 +90,7 @@ O armazenamento de nós de documentos é a base da implementação AEM MongoMK. 
 
 * `changesSize`: Tamanho em MB da coleção limitada usada no Mongo para armazenar a saída do diff em cache. O padrão é `256`
 
-* `customBlobStore`: Valor booliano que indica que um armazenamento de dados personalizado será usado. O padrão é `false`.
+* `customBlobStore`: valor booliano que indica que um armazenamento de dados personalizado é usado. O padrão é `false`.
 
 Veja a seguir um exemplo `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config` arquivo:
 

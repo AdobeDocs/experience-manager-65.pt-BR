@@ -9,9 +9,9 @@ docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2852'
+source-wordcount: '2851'
 ht-degree: 2%
 
 ---
@@ -285,7 +285,7 @@ Estão incluídas na versão duas regras de pontuação para o [Função do fór
 * `subRules` é um atributo do tipo String[] no campo de `jcr:content` nó.
 
 * `sub-rules` podem ser compartilhados entre várias regras de pontuação.
-* `rules` O deve estar localizado em um local de repositório com permissão de leitura para todos.
+* `rules` deve estar em um local de repositório com permissão de leitura para todos.
 
    * Os nomes das regras devem ser exclusivos independentemente da localização.
 
@@ -385,15 +385,15 @@ cURL -i -X POST -H *cabeçalho* -u *fazer logon* -F *operação* -F *selo* *memb
 
 *cabeçalho* = cabeçalho personalizado &quot;Accept:application/json&quot; para passar para o servidor (obrigatório)
 
-*fazer logon* = administrator-id:password por exemplo : admin:admin
+*fazer logon* = administrator-id:password por exemplo, admin:admin
 
 *operação* = &quot;:operation=social:assignBadge&quot; OR &quot;:operation=social:deleteBadge&quot;
 
 *selo* = &quot;badgeContentPath=*badge-image-file*&quot;
 
-*badge-image-file* = o local do arquivo de imagem do selo no repositório, por exemplo : /libs/settings/community/badging/images/moderator/jcr:content/moderator.png
+*badge-image-file* = o local do arquivo de imagem do selo no repositório, por exemplo, /libs/settings/community/badging/images/moderator/jcr:content/moderator.png
 
-*member-profile-url* = o endpoint do perfil do membro em publicar, por exemplo: https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
+*member-profile-url* = o endpoint do perfil do membro em publicar, por exemplo, https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
 
 >[!NOTE]
 >
@@ -616,7 +616,7 @@ Em seguida, [republicar](/help/communities/sites-console.md#publishing-the-site)
 Finalmente,
 
 * Navegue até o componente na instância de publicação.
-* Faça logon como um membro da comunidade (por exemplo: weston.mccall@dodgit.com / senha).
+* Faça logon como um membro da comunidade (por exemplo, weston.mccall@dodgit.com / senha).
 * Publique um novo tópico do fórum.
 * A página deve ser atualizada para que o selo seja exibido.
 

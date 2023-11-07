@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
 exl-id: 05586b17-35d4-496e-8f0e-293c755eb066
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '294'
 ht-degree: 42%
 
 ---
@@ -46,8 +46,8 @@ A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o
 
       * `http://localhost:4502/sites.html/content?`
       * Isso solicitará a página diretamente do AEM e ignorará o Dispatcher. Se você receber a página atualizada, isso será uma indicação de que é necessário limpar o cache do Dispatcher.
-   * Entre em contato com o administrador do sistema se houver problemas com as filas de replicação.
 
+   * Entre em contato com o administrador do sistema se houver problemas com as filas de replicação.
 
 ## Ações de componentes não visíveis na barra de ferramentas {#component-actions-not-visible-on-toolbar}
 

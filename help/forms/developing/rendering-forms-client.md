@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 08d36e9f-cafc-478e-9781-8fc29ac6262e
 role: Developer
 exl-id: e485980d-f200-46b7-9284-c9996003aa47
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1694'
 ht-degree: 0%
 
 ---
@@ -53,13 +53,13 @@ Antes de executar programaticamente uma operação da API do cliente de serviço
 
 **Definir opções de tempo de execução de renderização do cliente**
 
-Você deve definir a opção de tempo de execução de renderização do cliente para renderizar um formulário no cliente definindo o `RenderAtClient` opção de tempo de execução para `true`. Isso resulta no formulário ser entregue ao dispositivo cliente onde é renderizado. Se `RenderAtClient` é `auto` (o valor padrão), o design do formulário determina se ele é renderizado no cliente. O design do formulário deve ser um design de formulário com layout fluível.
+Defina a opção de tempo de execução de renderização do cliente para renderizar um formulário no cliente definindo o `RenderAtClient` opção de tempo de execução para `true`. Isso resulta no formulário ser entregue ao dispositivo cliente onde é renderizado. Se `RenderAtClient` é `auto` (o valor padrão), o design do formulário determina se ele é renderizado no cliente. O design do formulário deve ser um design de formulário com layout fluível.
 
 Uma opção opcional de tempo de execução que você pode definir é a `SeedPDF` opção. A variável `SeedPDF` A opção combina o contêiner PDF (documento de PDF de propagação) com o design do formulário e os dados XML. O design do formulário e os dados XML são entregues no Acrobat ou Adobe Reader, onde o formulário é renderizado. A variável `SeedPDF` A opção pode ser usada quando o computador cliente não tem fontes que são usadas no formulário, como quando um usuário final não está licenciado para usar uma fonte que o proprietário do formulário está licenciado a usar.
 
 Você pode usar o Designer para criar um arquivo PDF dinâmico simples para usar como um arquivo PDF de seed. As seguintes etapas são necessárias para executar essa tarefa:
 
-1. Determine se é necessário incorporar fontes no arquivo de seed PDF. O arquivo de PDF de propagação precisará conter fontes adicionais exigidas pelo formulário que está sendo renderizado. Ao incorporar fontes no arquivo seed PDF, certifique-se de que você não esteja violando nenhum contrato de licenciamento de fontes. No Designer, é possível determinar se as fontes podem ser incorporadas legalmente. Ao salvar, se houver fontes que não podem ser incorporadas ao formulário, o Designer exibirá uma mensagem listando as fontes que não podem ser incorporadas. Esta mensagem não é exibida no Designer para documentos de PDF estáticos.
+1. Determine se é necessário incorporar fontes no arquivo de seed PDF. O arquivo de PDF de propagação deve conter fontes adicionais exigidas pelo formulário que está sendo renderizado. Ao incorporar fontes no arquivo seed PDF, certifique-se de que você não esteja violando nenhum contrato de licenciamento de fontes. No Designer, é possível determinar se as fontes podem ser incorporadas legalmente. Ao salvar, se houver fontes que não podem ser incorporadas ao formulário, o Designer exibirá uma mensagem listando as fontes que não podem ser incorporadas. Esta mensagem não é exibida no Designer para documentos de PDF estáticos.
 1. Se você estiver criando o arquivo de PDF de propagação no Designer, é recomendável que, no mínimo, você adicione um campo de texto que contenha uma mensagem. A mensagem deve ser direcionada a usuários de versões anteriores do Adobe Reader informando que precisam do Acrobat 7.0 ou posterior, ou do Adobe Reader 7.0 ou posterior, para visualizar o documento.
 1. Salve o arquivo de PDF de seed como um arquivo de PDF dinâmico com a extensão de nome de arquivo de PDF.
 

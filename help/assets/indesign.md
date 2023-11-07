@@ -5,9 +5,9 @@ contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: 67e145e250bbe386168ab2c0f8967f91aa9d8a36
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1591'
+source-wordcount: '1589'
 ht-degree: 4%
 
 ---
@@ -44,6 +44,7 @@ Este script de comando irá:
       * A estrutura, o texto e quaisquer arquivos de mídia são extraídos.
       * As representações de PDF e JPG são geradas.
       * As representações HTML e IDML são geradas.
+
    * Postar os arquivos resultantes de volta para [!DNL Experience Manager Assets].
 
    >[!NOTE]
@@ -52,7 +53,7 @@ Este script de comando irá:
 
    >[!CAUTION]
    >
-   >Se a variável [!DNL InDesign Server] não estiver instalado ou não estiver configurado, você ainda poderá carregar um arquivo INDD no [!DNL Experience Manager]. No entanto, as representações geradas serão limitadas a PNG e JPEG. Não será possível gerar HTML, .idml ou as representações de página.
+   >Se a variável [!DNL InDesign Server] não estiver instalado ou não estiver configurado, você ainda poderá carregar um arquivo INDD no [!DNL Experience Manager]. No entanto, as representações geradas são limitadas a PNG e JPEG. Não será possível gerar HTML, .idml ou as representações de página.
 
 1. Após a geração da extração e da representação:
 
@@ -152,7 +153,7 @@ Para personalizar, edite a guia **[!UICONTROL Argumentos]** da etapa **[!UICONTR
 >
 >O trabalhador reside na instância do proxy.
 
-1. No console Ferramentas, expanda **[!UICONTROL Configurações do Cloud Services]** no painel esquerdo. Em seguida, expandir **[!UICONTROL Configuração de proxy de nuvem]**.
+1. No console Ferramentas, expanda **[!UICONTROL Configurações do Cloud Service]** no painel esquerdo. Em seguida, expandir **[!UICONTROL Configuração de proxy de nuvem]**.
 
 1. Clique duas vezes no **[!UICONTROL trabalhador IDS]** para abrir a configuração.
 
@@ -231,11 +232,10 @@ Para [!DNL InDesign Server] 10.0 ou superior, execute as etapas a seguir para at
 
 Você pode alterar as credenciais de administrador padrão (nome de usuário e senha) para acessar o [!DNL InDesign Server] do seu [!DNL Experience Manager] implantação sem romper a integração com o [!DNL InDesign Server].
 
-1. Ir para `/etc/cloudservices/proxy.html`.
+1. Acesse `/etc/cloudservices/proxy.html`.
 1. Na caixa de diálogo, especifique o novo nome de usuário e a senha.
 1. Salve as credenciais.
 
 >[!MORELIKETHIS]
 >
 >* [Sobre o Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)
-

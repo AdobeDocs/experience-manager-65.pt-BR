@@ -1,19 +1,15 @@
 ---
 title: Gerenciamento de usuários
-seo-title: Managing Users
-description: Use a API de gerenciamento de usuários para criar aplicativos clientes que podem gerenciar funções, permissões e principais (que podem ser usuários ou grupos), bem como autenticar usuários.
-seo-description: Use the User Management API to create client applications that can manage roles, permissions, and principals (which can be users or groups), as well as authenticate users.
-uuid: 68d8a0bc-6e3d-4286-ba5c-534dcf58cb84
+description: Use a API de gerenciamento de usuários para criar aplicativos clientes que podem gerenciar funções, permissões e principais (que podem ser usuários ou grupos) e autenticar usuários.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6226'
+source-wordcount: '6218'
 ht-degree: 0%
 
 ---
@@ -24,7 +20,7 @@ ht-degree: 0%
 
 **Sobre o gerenciamento de usuários**
 
-Você pode usar a API de gerenciamento de usuários para criar aplicativos clientes que podem gerenciar funções, permissões e principais (que podem ser usuários ou grupos), bem como autenticar usuários. A API de gerenciamento de usuários consiste nas seguintes APIs do AEM Forms:
+Você pode usar a API de gerenciamento de usuários para criar aplicativos clientes que podem gerenciar funções, permissões e principais (que podem ser usuários ou grupos) e autenticar usuários. A API de gerenciamento de usuários consiste nas seguintes APIs do AEM Forms:
 
 * API de serviço do Gerenciador de diretórios
 * API de serviço do Authentication Manager
@@ -66,7 +62,7 @@ A tabela a seguir descreve cada etapa do processo de autenticação.
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p>O Gerenciamento de usuários envia o nome de usuário e a senha, bem como informações de configuração, para o provedor de autenticação.</p></td>
+   <td><p>O Gerenciamento de usuários envia o nome de usuário, a senha e as informações de configuração ao provedor de autenticação.</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
@@ -476,7 +472,7 @@ Crie um grupo usando a API de serviço do Gerenciador de diretórios (Java):
    * Criar um `PrincipalSearchFilter` usando seu construtor.
    * Defina o valor do identificador do usuário chamando o `PrincipalSearchFilter` do objeto `setUserId` método. Transmita um valor de string que represente o valor do identificador do usuário.
    * Chame o `DirectoryManagerServiceClient` do objeto `findPrincipals` e transmita o `PrincipalSearchFilter` objeto. Este método retorna um valor de `java.util.List` instância, onde cada elemento é um `User` objeto. Repita através do `java.util.List` para localizar o usuário.
-   * Adicione um usuário ao grupo invocando o `DirectoryManagerServiceClient` do objeto `addPrincipalToLocalGroup` método. Transmita o valor de retorno do `User` do objeto `getOid` método. Transmita o valor de retorno do `Group` objetos `getOid` (use o `Group` que representa o novo grupo).
+   * Adicione um usuário ao grupo invocando o `DirectoryManagerServiceClient` do objeto `addPrincipalToLocalGroup` método. Transmita o valor de retorno do `User` do objeto `getOid` método. Transmita o valor de retorno do `Group` do object `getOid` (use o `Group` que representa o novo grupo).
 
 **Consulte também**
 
@@ -547,7 +543,7 @@ Para gerenciar de forma programática usuários, grupos e domínios usando o (Ja
 
 1. Chame as operações de usuário ou grupo apropriadas.
 
-   Para localizar um usuário ou grupo, chame um dos `DirectoryManagerServiceClient` métodos do objeto para encontrar principais (já que um principal pode ser um usuário ou um grupo). No exemplo abaixo, a variável `findPrincipals` é chamado usando um filtro de pesquisa (uma variável `PrincipalSearchFilter` objeto).
+   Para localizar um usuário ou grupo, chame um dos `DirectoryManagerServiceClient` métodos do objeto para localizar principais (já que um principal pode ser um usuário ou um grupo). No exemplo abaixo, a variável `findPrincipals` é chamado usando um filtro de pesquisa (uma variável `PrincipalSearchFilter` objeto).
 
    Como o valor de retorno nesse caso é um `java.util.List` contendo `Principal` objetos, iterar pelo resultado e converter o `Principal` objetos para qualquer um `User` ou `Group` objetos.
 
@@ -555,7 +551,7 @@ Para gerenciar de forma programática usuários, grupos e domínios usando o (Ja
 
    Para excluir um usuário local, chame o `DirectoryManagerServiceClient` do objeto `deleteLocalUser` e transmita o identificador do usuário.
 
-   Para excluir um grupo local, chame o `DirectoryManagerServiceClient` do objeto `deleteLocalGroup` e transmitem o identificador do grupo.
+   Para excluir um grupo local, chame o `DirectoryManagerServiceClient` do objeto `deleteLocalGroup` e transmita o identificador do grupo.
 
 **Consulte também**
 
@@ -580,7 +576,7 @@ Para gerenciar de forma programática usuários, grupos e domínios usando a API
 
 1. Chame as operações de usuário ou grupo apropriadas.
 
-   Para localizar um usuário ou grupo, chame um dos `DirectoryManagerServiceService` métodos do objeto para encontrar principais (já que um principal pode ser um usuário ou um grupo). No exemplo abaixo, a variável `findPrincipalsWithFilter` é chamado usando um filtro de pesquisa (uma variável `PrincipalSearchFilter` objeto). Ao usar uma `PrincipalSearchFilter` objeto, as entidades locais só serão retornadas se a variável `isLocal` propriedade está definida como `true`. Esse comportamento é diferente do que ocorreria com a API Java.
+   Para localizar um usuário ou grupo, chame um dos `DirectoryManagerServiceService` métodos do objeto para localizar principais (já que um principal pode ser um usuário ou um grupo). No exemplo abaixo, a variável `findPrincipalsWithFilter` é chamado usando um filtro de pesquisa (uma variável `PrincipalSearchFilter` objeto). Ao usar uma `PrincipalSearchFilter` objeto, as entidades locais só serão retornadas se a variável `isLocal` propriedade está definida como `true`. Esse comportamento é diferente do que ocorreria com a API Java.
 
    >[!NOTE]
    >
@@ -592,7 +588,7 @@ Para gerenciar de forma programática usuários, grupos e domínios usando a API
 
    Para excluir um usuário local, chame o `DirectoryManagerServiceService` do objeto `deleteLocalUser` e transmita o identificador do usuário.
 
-   Para excluir um grupo local, chame o `DirectoryManagerServiceService` do objeto `deleteLocalGroup` e transmitem o identificador do grupo.
+   Para excluir um grupo local, chame o `DirectoryManagerServiceService` do objeto `deleteLocalGroup` e transmita o identificador do grupo.
 
 **Consulte também**
 
@@ -781,7 +777,7 @@ Antes de autenticar programaticamente um usuário, você deve criar um cliente A
 
 **Chamar a operação de autenticação**
 
-Depois de criar o cliente de serviço, você pode chamar a operação de autenticação. Esta operação precisará de informações sobre o usuário, como nome do usuário e senha. Se o usuário não se autenticar, uma exceção será lançada.
+Depois de criar o cliente de serviço, você pode chamar a operação de autenticação. Esta operação necessitará de informações sobre o usuário, como o nome e a senha do usuário. Se o usuário não se autenticar, uma exceção será lançada.
 
 **Recuperar o contexto de autenticação**
 
@@ -853,7 +849,7 @@ Autentique um usuário usando a API de serviço do Authentication Manager (servi
 
 ## Sincronização programática de usuários {#programmatically-synchronizing-users}
 
-Você pode sincronizar usuários de forma programática usando a API de gerenciamento de usuários. Ao sincronizar usuários, você está atualizando o AEM Forms com dados do usuário localizados no repositório do usuário. Por exemplo, suponha que você adicione novos usuários ao repositório de usuários. Após executar uma operação de sincronização, os novos usuários se tornam usuários de formulários AEM. Além disso, os usuários que não estão mais no repositório de usuários são removidos do AEM Forms.
+Você pode sincronizar usuários de forma programática usando a API de gerenciamento de usuários. Ao sincronizar usuários, você está atualizando o AEM Forms com dados do usuário que estão no repositório do usuário. Por exemplo, suponha que você adicione novos usuários ao repositório de usuários. Após executar uma operação de sincronização, os novos usuários se tornam usuários de formulários AEM. Além disso, os usuários que não estão mais no repositório de usuários são removidos do AEM Forms.
 
 O diagrama a seguir mostra a sincronização do AEM Forms com um repositório de usuário.
 
@@ -912,7 +908,7 @@ Antes de executar uma operação de sincronização usando a API de Gerenciament
 
 **Chame a operação de sincronização**
 
-Após especificar um ou mais domínios enterprise, você pode executar a operação de sincronização. O tempo necessário para executar essa operação depende do número de registros de usuários localizados no repositório do usuário.
+Após especificar um ou mais domínios enterprise, você pode executar a operação de sincronização. O tempo necessário para executar essa operação depende do número de registros de usuários que estão no repositório do usuário.
 
 **Determine se a operação de sincronização foi concluída**
 

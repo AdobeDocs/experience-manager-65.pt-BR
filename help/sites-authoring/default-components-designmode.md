@@ -2,9 +2,9 @@
 title: Configuração de componentes padrão no modo de design
 description: Configuração de componentes do Adobe Experience Manager no modo de design.
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '914'
 ht-degree: 10%
 
 ---
@@ -66,7 +66,7 @@ Para ativar ou desativar um componente:
 
    Isso selecionará o sistema de parágrafo que contém o componente atual.
 
-1. A variável **Configurar** O ícone do sistema de parágrafo será mostrado na barra de ação do pai.
+1. A variável **Configurar** O ícone do sistema de parágrafo é mostrado na barra de ação do pai.
 
    ![Configurar](do-not-localize/screen_shot_2018-03-22at103256.png)
 
@@ -95,7 +95,7 @@ Para ativar ou desativar um componente:
 
    >[!NOTE]
    >
-   >Os componentes do formulário adaptável são projetados para funcionar dentro do Contêiner de formulário adaptável para aproveitar o ecossistema do Forms. Portanto, esses componentes devem ser usados somente no editor de formulário adaptável e não funcionarão no editor de páginas do Sites.
+   >Os componentes do formulário adaptável são projetados para funcionar dentro do Contêiner de formulário adaptável para usar o ecossistema do Forms. Portanto, esses componentes devem ser usados somente no editor de formulário adaptável e não funcionarão no editor de páginas do Sites.
 
    **Configurações**
 

@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 88b634bb-8f6c-4830-ad01-821668609615
 exl-id: 35f9acbf-7a82-43b1-9e17-9be4de666212
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Você pode informar atributos específicos para executar uma pesquisa detalhada.
    * Na lista Filtro, selecione um operador.
    * Na caixa Valor, digite um valor apropriado para o atributo selecionado.
 
-1. Para adicionar outra linha, selecione Mais filtros. É exibido outro conjunto de listas de Atributo, Filtro e Valor, bem como uma lista de Condições.
+1. Para adicionar outra linha, selecione Mais filtros. É exibido outro conjunto de listas de Atributo, Filtro e Valor e uma lista de Condições.
 1. Em Condição, selecione AND ou OR. Repita as etapas de 1 a 3, conforme necessário, para restringir ainda mais sua pesquisa.
 1. Para adicionar ou remover linhas, clique em Mais filtros ou Menos filtros. Você pode ter de uma a quatro linhas.
 1. Clique em Pesquisar. A página Instância do processo é exibida, listando as instâncias encontradas.

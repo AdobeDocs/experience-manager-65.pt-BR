@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: cf140483-470f-4bff-8870-304207508aab
 exl-id: 23a65be4-3277-4c73-9189-a9b4d7be73cd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '115'
 ht-degree: 0%
 
 ---
@@ -21,19 +21,19 @@ ht-degree: 0%
 
 Eventos como erros de tempo de execução ou de inicialização são registrados nos arquivos de log do servidor de aplicativos. Se você tiver problemas ao implantar no servidor de aplicativos, poderá usar os arquivos de log para ajudá-lo a encontrar o problema. Você pode abrir os arquivos de log usando qualquer editor de texto.
 
-(JBoss) Os seguintes arquivos de log estão localizados na `[appserver root]/server/'server'/log` diretório:
+(JBoss) Os seguintes arquivos de log estão na `[appserver root]/server/'server'/log` diretório:
 
 * boot.log
 * server.log.*[aaaa-mm-dd]*
 * server.log
 
-(WebLogic) Os arquivos de log de domínio estão localizados na `[appserverdomain]` diretório e os arquivos de log do servidor estão localizados no `[appserverdomain]/servers/[appserver name]/logs` diretório:
+(WebLogic) Os arquivos de log de domínio estão na `[appserverdomain]` diretório e os arquivos de log do servidor estão no `[appserverdomain]/servers/[appserver name]/logs` diretório:
 
 * `access.log`
 * `[appserver name].log`
 * `[appserver name].out.[incremental number]`
 
-(WebSphere) Os seguintes arquivos de log estão localizados na `[appserver root]/profiles/default/logs/[appserver name]` diretório:
+(WebSphere) Os seguintes arquivos de log estão na `[appserver root]/profiles/default/logs/[appserver name]` diretório:
 
 * SystemErr.log
 * SystemOut.log

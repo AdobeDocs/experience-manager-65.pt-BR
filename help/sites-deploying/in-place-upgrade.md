@@ -4,9 +4,9 @@ description: Saiba como executar uma atualização no local para o AEM 6.5.
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1238'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Antes de executar a atualização, há várias etapas que devem ser concluídas. Consulte [Atualização de código e personalizações](/help/sites-deploying/upgrading-code-and-customizations.md) e [Tarefas de Manutenção de Pré-Atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) para obter mais informações. Além disso, verifique se o seu sistema atende aos requisitos da nova versão do AEM. Veja como o Detector de padrões pode ajudar você a estimar a complexidade da atualização e também veja a seção Escopo e requisitos de atualização do [Planejando sua atualização](/help/sites-deploying/upgrade-planning.md) para obter mais informações.
 
-<!--Finally, note that the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
+<!--Finally, the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## Pré-requisitos de migração {#migration-prerequisites}
 
@@ -161,11 +161,11 @@ Onde `/path/to/datastore` representa o caminho para o armazenamento de dados de 
 
 ### Determinando o comando de início de atualização correto {#determining-the-correct-upgrade-start-command}
 
-Para executar a atualização, é importante iniciar o AEM usando o arquivo jar para ativar a instância. Para atualizar para a versão 6.5, consulte também outras opções de migração e reestruturação de conteúdo em [Migração de conteúdo lento](/help/sites-deploying/lazy-content-migration.md) que você pode escolher com o comando upgrade.
+Para executar a atualização, é importante iniciar o AEM usando o arquivo jar para ativar a instância. Para atualizar para a versão 6.5, consulte outras opções de reestruturação e migração de conteúdo em [Migração de conteúdo lento](/help/sites-deploying/lazy-content-migration.md) que você pode escolher com o comando upgrade.
 
 >[!IMPORTANT]
 >
->Se você estiver executando o Oracle Java 11 (ou versões do Java mais recentes que 8), será necessário adicionar opções adicionais à linha de comando ao iniciar o AEM. Para obter mais informações, consulte [Considerações sobre o Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
+>Se você estiver executando o Oracle Java 11 (ou versões do Java mais recentes que 8), é necessário adicionar opções adicionais à linha de comando ao iniciar o AEM. Para obter mais informações, consulte [Considerações sobre o Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 
 Observe que iniciar o AEM a partir do script de inicialização não iniciará a atualização. A maioria dos clientes inicia o AEM usando o script de inicialização e personaliza esse script de inicialização para incluir switches para configurações de ambiente, como configurações de memória, certificados de segurança etc. Por esse motivo, a Adobe recomenda seguir esse procedimento para determinar o comando de atualização adequado:
 

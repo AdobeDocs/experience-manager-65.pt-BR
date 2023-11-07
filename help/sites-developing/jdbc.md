@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
 exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
-source-git-commit: 061af6f3318d68b50c5f606ad50db7a39da0f4fd
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Acesse um banco de dados SQL externo no para que seus aplicativos de CQ possam i
 
 ## Agrupando o driver do banco de dados JDBC {#bundling-the-jdbc-database-driver}
 
-Alguns fornecedores de banco de dados fornecem drivers JDBC em um pacote OSGi, por exemplo [MySQL](https://dev.mysql.com/downloads/connector/j/). Se o driver JDBC do seu banco de dados não estiver disponível como um pacote OSGi, obtenha o JAR do driver e coloque-o em um pacote OSGi. O pacote deve exportar os pacotes necessários para interagir com o servidor de banco de dados. O pacote também deve importar os pacotes aos quais faz referência.
+Alguns fornecedores de banco de dados fornecem drivers JDBC em um pacote OSGi, por exemplo, [MySQL](https://dev.mysql.com/downloads/connector/j/). Se o driver JDBC do seu banco de dados não estiver disponível como um pacote OSGi, obtenha o JAR do driver e coloque-o em um pacote OSGi. O pacote deve exportar os pacotes necessários para interagir com o servidor de banco de dados. O pacote também deve importar os pacotes aos quais faz referência.
 
 O exemplo a seguir usa o [Plug-in de pacote para Maven](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html) para envolver o driver HSQLDB em um pacote OSGi. O POM instrui o plug-in a incorporar o arquivo hsqldb.jar identificado como uma dependência. Todos os pacotes org.hsqldb são exportados.
 
@@ -94,21 +94,21 @@ Os links a seguir abrem as páginas de download de alguns produtos de banco de d
 
 Adicione uma configuração para o serviço Pool de Conexões JDBC que usa o driver JDBC para criar objetos de origem de dados. O código do aplicativo usa esse serviço para obter o objeto e conectar-se ao banco de dados.
 
-Pool de Conexões JDBC ( `com.day.commons.datasource.jdbcpool.JdbcPoolService`) é um serviço de fábrica. Se você precisar de conexões que usam propriedades diferentes, por exemplo, acesso somente leitura ou de leitura/gravação, crie várias configurações.
+Pool de Conexões JDBC ( `com.day.commons.datasource.jdbcpool.JdbcPoolService`) é um serviço de fábrica. Se você precisar de conexões que usem propriedades diferentes, por exemplo, acesso somente leitura ou de leitura/gravação, crie várias configurações.
 
 Ao trabalhar com o CQ, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos.
 
 As seguintes propriedades estão disponíveis para configurar um serviço de conexão em pool. Os nomes das propriedades são listados à medida que aparecem no Console da Web. O nome correspondente de um `sling:OsgiConfig` aparece entre parênteses. Os valores de exemplo são mostrados para um servidor HSQLDB e um banco de dados que tem um alias de `mydb`:
 
-* Classe de driver JDBC ( `jdbc.driver.class`): A classe Java™ a ser usada que implementa a interface java.sql.Driver, por exemplo `org.hsqldb.jdbc.JDBCDriver`. O tipo de dados é `String`.
+* Classe de driver JDBC ( `jdbc.driver.class`): A classe Java™ a ser usada que implementa a interface java.sql.Driver, por exemplo, `org.hsqldb.jdbc.JDBCDriver`. O tipo de dados é `String`.
 
-* URI da conexão JDBC ( `jdbc.connection.uri`): O URL do banco de dados a ser usado para criar a conexão, por exemplo `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`. O formato do URL deve ser válido para uso com o método getConnection da classe java.sql.DriverManager. O tipo de dados é `String`.
+* URI da conexão JDBC ( `jdbc.connection.uri`): O URL do banco de dados que será usado para criar a conexão, por exemplo, `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`. O formato do URL deve ser válido para uso com o método getConnection da classe java.sql.DriverManager. O tipo de dados é `String`.
 
 * Nome de usuário ( `jdbc.username`): O nome de usuário a ser usado para autenticar com o servidor de banco de dados. O tipo de dados é `String`.
 
 * Senha ( `jdbc.password`): A senha a ser usada para autenticação do usuário. O tipo de dados é `String`.
 
-* Consulta de validação ( `jdbc.validation.query`): A instrução SQL a ser usada para verificar se a conexão foi bem-sucedida, por exemplo `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. O tipo de dados é `String`.
+* Consulta de validação ( `jdbc.validation.query`): A instrução SQL a ser usada para verificar se a conexão foi bem-sucedida, por exemplo, `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. O tipo de dados é `String`.
 
 * Somente leitura por padrão (default.readonly): selecione essa opção quando quiser que a conexão forneça acesso somente leitura. O tipo de dados é `Boolean`.
 * Autocommit Por Padrão ( `default.autocommit`): Selecione esta opção para criar transações separadas para cada comando SQL enviado ao banco de dados e cada transação é automaticamente submetida a commit. Não selecione essa opção quando estiver confirmando transações explicitamente no código. O tipo de dados é `Boolean`.

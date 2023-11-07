@@ -7,7 +7,7 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: b941b5e0-f768-4393-9a9d-ded2cd7d10c4
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 2%
@@ -114,7 +114,7 @@ Uma estrutura de site da comunidade, criada usando o assistente, inclui o recurs
 
 ### Código de exemplo: Notificação de mensagem recebida {#sample-code-message-received-notification}
 
-O recurso Social Messaging lança eventos para operações, por exemplo `send`, `marking read`, `marking delete`. Esses eventos podem ser capturados e as ações tomadas nos dados contidos no evento.
+O recurso Social Messaging lança eventos para operações, por exemplo, `send`, `marking read`, `marking delete`. Esses eventos podem ser capturados e as ações tomadas nos dados contidos no evento.
 
 O exemplo a seguir é de um manipulador de eventos que escuta a `message sent` evento e envia um email a todos os recipients de mensagem usando o `Day CQ Mail Service`.
 

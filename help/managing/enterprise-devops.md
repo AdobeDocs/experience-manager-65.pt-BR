@@ -6,19 +6,19 @@ products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing
 content-type: reference
 exl-id: e67f848a-a8cd-4585-a734-e6b1de8a8d74
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 60%
+source-wordcount: '982'
+ht-degree: 72%
 
 ---
 
-# DevOps empresarial {#enterprise-devops}
+# DevOps empresarial{#enterprise-devops}
 
 O DevOps abrange os processos, os métodos e a comunicação necessários para:
 
 * Facilitar a implantação do seu software nos vários ambientes.
-* Simplifique a colaboração entre as equipes de desenvolvimento, teste e implantação.
+* Simplificar a colaboração entre as equipes de desenvolvimento, teste e implantação.
 
 O DevOps tem como objetivo evitar problemas como:
 
@@ -43,7 +43,7 @@ Uma implantação do Adobe Experience Manager (AEM) geralmente consiste em vári
 
 ### Desenvolvimento {#development}
 
-Os desenvolvedores são responsáveis por desenvolver e personalizar o projeto proposto (seja site, aplicativos móveis, implementação de DAM e assim por diante), com todas as funcionalidades necessárias. Eles:
+Desenvolvedores(as) são responsáveis por desenvolver e personalizar o projeto proposto (sejam sites, aplicativos móveis, implementação de DAM etc.), com todas as funcionalidades necessárias. Eles:
 
 * desenvolvem e personalizam os elementos necessários, como modelos, componentes, fluxos de trabalho, aplicativos
 * realizam o design
@@ -54,7 +54,7 @@ A configuração da variável [desenvolvimento](/help/sites-developing/best-prac
 * Um sistema de desenvolvimento integrado com controle de versão para fornecer uma base de código integrada. Isso é usado para mesclar e consolidar o código dos ambientes de desenvolvimento individuais usados por cada desenvolvedor.
 * Um ambiente pessoal para cada desenvolvedor; geralmente residente em sua máquina local. Em intervalos adequados, o código é sincronizado com o sistema de controle de versão
 
-Dependendo da escala do seu sistema, o ambiente de desenvolvimento pode ter instâncias de autor e de publicação.
+Dependendo da escala do seu sistema, o ambiente de desenvolvimento pode ter instâncias de criação e de publicação.
 
 ### Controle de qualidade {#quality-assurance}
 
@@ -62,11 +62,11 @@ Esse ambiente é usado pela equipe de controle de qualidade para [test](/help/si
 
 ### Estágios {#staging}
 
-O ambiente de preparo deve ser um espelho do ambiente de produção — configuração, código e conteúdo:
+O ambiente de preparo deve ser um espelho do ambiente de produção, incluindo a configuração, o código e o conteúdo:
 
 * Ele é usado para testar os scripts usados para implementar a implantação real.
-* Ele pode ser usado para testes finais (design, funcionalidade e interfaces) antes da implantação nos ambientes de produção.
-* Embora nem sempre seja possível ter o ambiente de armazenamento temporário idêntico ao ambiente de produção, ele deve ser o mais semelhante possível para permitir testes de carga e desempenho.
+* Ele pode ser usado para testes finais (design, funcionalidade e interfaces) antes da implantação em ambientes de produção.
+* Embora nem sempre seja possível manter o ambiente de preparo idêntico ao ambiente de produção, ele deve ser o mais semelhante possível para permitir testes de carga e desempenho.
 
 ### Produção - Autor e publicação {#production-author-and-publish}
 
@@ -94,7 +94,7 @@ Para fazer a replicação reversa dos dados gerados em um ambiente de publicaç�
 
 #### Publicação {#publish}
 
-Um ambiente de publicação está localizado na Zona desmilitarizada (DMZ). Trata-se do ambiente em que os visitantes acessam seu conteúdo (por exemplo, por meio de um site ou de um aplicativo móvel) e interagem com ele, seja publicamente ou dentro da sua intranet. Um ambiente de publicação:
+Um ambiente de publicação está na Zona desmilitarizada (DMZ). Trata-se do ambiente em que os visitantes acessam seu conteúdo (por exemplo, por meio de um site ou de um aplicativo móvel) e interagem com ele, seja publicamente ou dentro da sua intranet. Um ambiente de publicação:
 
 * mantém o conteúdo replicado do ambiente de autor
 * disponibiliza esse conteúdo para os visitantes
@@ -107,17 +107,17 @@ O ambiente de publicação gera seu conteúdo dinamicamente em tempo real, e o c
 
 Sempre propagar o código de baixo para cima:
 
-* o código é desenvolvido inicialmente nos ambientes de desenvolvimento locais e depois integrados
+* o código é desenvolvido inicialmente nos ambientes de desenvolvimento locais e depois nos integrados
 * seguido de testes completos nos ambientes de controle de qualidade
 * depois testado novamente nos ambientes de preparo
 * somente então esse código deve ser implantado nos ambientes de produção
 
-O código (por exemplo, funcionalidade de aplicativo web personalizado e modelos de design) é transferido por meio da exportação e da importação de pacotes entre os diferentes repositórios de conteúdo. Quando significativo, essa replicação pode ser configurada como um processo automático.
+O código (por exemplo, funcionalidade de aplicativo web personalizado e modelos de design) é transferido por meio da exportação e da importação de pacotes entre os diferentes repositórios de conteúdo. Quando necessário, essa replicação pode ser configurada como um processo automático.
 
 Projetos AEM geralmente acionam a implantação de código:
 
 * Automaticamente: para transferência aos ambientes de desenvolvimento e controle de qualidade.
-* Manualmente: as implantações nos ambientes de preparo e produção são feitas de maneira mais controlada, geralmente manual, embora a automação seja possível, se necessário.
+* Manualmente: as implantações nos ambientes de preparação e produção são feitas de maneira mais controlada (geralmente, de forma manual), embora uma automação seja possível, se necessário.
 
 ![chlimage_1](assets/chlimage_1.png)
 
@@ -135,7 +135,7 @@ O conteúdo de produção deve ser transferido do ambiente de produção ao ambi
 
 O conteúdo pode ser transferido:
 
-* Entre os diferentes ambientes - exportando e importando pacotes.
+* Entre os diferentes ambientes, exportando e importando pacotes.
 * Entre instâncias diferentes - por replicação direta ([Replicação do AEM](/help/sites-deploying/replication.md)), o conteúdo (usando uma conexão HTTP ou HTTPS).
 
 ![chlimage_1-1](assets/chlimage_1-1.png)

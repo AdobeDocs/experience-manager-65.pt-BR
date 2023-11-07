@@ -2,10 +2,10 @@
 title: Como executar o aplicativo headless
 description: Nesta parte da Jornada de desenvolvedores sem periféricos do AEM, saiba como implantar um aplicativo sem periféricos em tempo real.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1873'
-ht-degree: 51%
+ht-degree: 50%
 
 ---
 
@@ -151,7 +151,7 @@ Depois que as atualizações forem carregadas no Cloud Manager, implante-as no A
 
 <!-- Can't find a parallel link -->
 <!--
-You can start deploying your code by leveraging the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
+You can start deploying your code by using the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
 -->
 
 ## Monitoramento de desempenho {#performance-monitoring}
@@ -167,7 +167,7 @@ Para que os usuários tenham a melhor experiência possível ao usar o aplicativ
       * Verificar número de usuários, solicitações e carga
 * Relatórios de desempenho específicos do Access App e Space
    * Quando o servidor estiver ativo, verifique se as métricas gerais estão verdes/laranjas/vermelhas, então identifique problemas específicos do aplicativo
-   * Abra os mesmos relatórios acima filtrados para o aplicativo ou espaço (por exemplo, desktop do Photoshop, paywall)
+   * Abra os mesmos relatórios acima filtrados para o aplicativo ou espaço (por exemplo, desktop Photoshop, paywall)
    * Use APIs de log do Splunk para acessar o desempenho do serviço e do aplicativo
    * Entre em contato com o Suporte ao cliente em caso de outros problemas.
 

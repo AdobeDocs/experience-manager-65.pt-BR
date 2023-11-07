@@ -8,9 +8,9 @@ content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
@@ -147,7 +147,7 @@ Siga as instruções na página principal da documentação: [MSRP - Armazenamen
 
 ## Testar {#test}
 
-Para testar e verificar o armazenamento comum do MongoDB, publique um comentário na instância de publicação e exiba-o na instância de autor, bem como exiba o UGC no MongoDB e no Solr:
+Para testar e verificar o armazenamento comum do MongoDB, publique um comentário na instância de publicação, exiba-o na instância de autor e exiba o UGC no MongoDB e no Solr:
 
 1. Na instância de publicação, navegue até o [Guia de componentes da comunidade](http://localhost:4503/content/community-components/en/comments.html) e selecione o componente Comentários.
 1. Faça logon para publicar um comentário:
@@ -169,8 +169,8 @@ Para testar e verificar o armazenamento comum do MongoDB, publique um comentári
 
    * Navegue até o painel Solr: [http://localhost:8983/solr/](http://localhost:8983/solr/).
    * Usuário `core selector` para selecionar `collection1`.
-   * Selecionar `Query`.
-   * Selecionar `Execute Query`.
+   * Selecione `Query`.
+   * Selecione `Execute Query`.
 
    ![ugc-solr](assets/ugc-solr.png)
 

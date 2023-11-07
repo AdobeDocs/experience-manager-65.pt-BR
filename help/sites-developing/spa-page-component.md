@@ -1,20 +1,16 @@
 ---
 title: Componente de página SPA
-seo-title: SPA Page Component
 description: Em um SPA, o componente página não fornece os elementos HTML de seus componentes filhos, mas delega isso à estrutura SPA. Este documento explica como isso torna o componente de página de um SPA exclusivo.
-seo-description: In an SPA the page component doesn't provide the HTML elements of its child components, but instead delegates this to the SPA framework. This document explains how this makes the page component of an SPA unique.
-uuid: d444527a-e883-4873-a55b-c2bc140d8d7f
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 6329301c-1a26-4a46-99ae-1b7cc15b08be
 docset: aem65
 exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 9%
+source-wordcount: '730'
+ht-degree: 8%
 
 ---
 
@@ -91,9 +87,9 @@ As propriedades do meta recursos que descrevem o conteúdo SPA:
 
 >[!CAUTION]
 >
->Este documento usa o aplicativo We.Retail Journal somente para fins de demonstração. Ele não deve ser utilizado ao trabalhar em projetos.
+>Este documento usa o aplicativo We.Retail Journal somente para fins de demonstração. Não use para nenhum trabalho de projeto.
 >
->Qualquer projeto AEM deve aproveitar a [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que apoia projetos de SPA usando o React ou o Angular e aproveita o SDK do SPA.Todos os projetos de SPA AEM SPA no devem ser baseados no Arquétipo Maven para o Kit inicial do.
+>Qualquer projeto AEM deve usar o [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que apoia projetos de SPA usando o React ou o Angular e usa o SDK do SPA.Todos os projetos de SPA AEM SPA no devem ser baseados no Arquétipo Maven para o Kit de Início do.
 
 ## Sincronização de sobreposição do editor de páginas {#page-editor-overlay-synchronization}
 

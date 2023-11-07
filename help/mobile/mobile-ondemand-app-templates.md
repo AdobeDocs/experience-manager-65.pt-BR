@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1154'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ O AEM Mobile On-Demand fornece um modelo de aplicativo totalmente configurado, u
 
 O aplicativo We.Unlimited é um modelo de amostra que representa o shell de um aplicativo AEM Mobile On-Demand totalmente configurável e gerenciável.
 
-Selecionar esse modelo de amostra ao criar um novo aplicativo fornece um painel avançado de recursos do AEM Mobile.
+Selecionar esse modelo de amostra ao criar um aplicativo fornece um painel avançado de recursos do AEM Mobile.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
 
@@ -36,13 +36,13 @@ Selecionar esse modelo de amostra ao criar um novo aplicativo fornece um painel 
 
 ## Criação de modelos de aplicativo {#creating-app-templates}
 
-Um modelo de aplicativo é usado para criar um novo aplicativo e atua como uma coleção de modelos de página e componentes que representam uma linha de base ou base de um aplicativo. O modelo elimina algumas propriedades fundamentais para liderar o aplicativo da maneira apropriada. Em geral, um cliente não criaria muitos aplicativos no total.
+Um modelo de aplicativo é usado para criar um aplicativo e atua como uma coleção de modelos de página e componentes que representam uma linha de base ou base de um aplicativo. O modelo elimina algumas propriedades fundamentais para liderar o aplicativo da maneira apropriada. Em geral, um cliente não criaria muitos aplicativos no total.
 
-Os modelos de aplicativo fornecem uma maneira fácil de aproveitar os designs existentes criados por desenvolvedores, usados para a criação de novos aplicativos no AEM.
+Os modelos de aplicativo oferecem uma maneira fácil de usar os designs existentes criados pelos desenvolvedores, usados para a criação de novos aplicativos no AEM.
 
-Ao criar um novo aplicativo com base no modelo de outro aplicativo, você obterá um aplicativo que tem um ponto de partida representativo do aplicativo no qual ele foi criado.
+Ao criar um aplicativo com base no modelo de outro aplicativo, você obterá um aplicativo que tem um ponto de partida representativo do aplicativo no qual ele foi criado.
 
-Etapas para criar um novo aplicativo com base em um modelo de aplicativo:
+Etapas para criar um aplicativo com base em um modelo de aplicativo:
 
 1. Navegue até o catálogo de aplicativos do AEM Mobile: *&lt;server-url>/aem/apps.html/content/mobileapps*
 1. Selecionar **Criar** —> **Aplicativo** conforme mostrado abaixo
@@ -51,7 +51,7 @@ Depois de criar um aplicativo usando esse modelo, você pode adicionar artigos, 
 
 >[!NOTE]
 >
->Como alternativa, você também pode selecionar um modelo de aplicativo de amostra, por exemplo **We.Unlimited** aplicativo, disponibilizado a você por um desenvolvedor de AEM. Se você usar esse modelo de amostra para o seu aplicativo, obterá alguns artigos e coleções de exemplo para trabalhar. Você terá a opção de usar modelos e componentes de amostra, personalizar os existentes ou criar novos para seu aplicativo.
+>Como alternativa, você também pode selecionar um modelo de aplicativo de amostra, por exemplo, **We.Unlimited** aplicativo, disponibilizado a você por um desenvolvedor de AEM. Se você usar esse modelo de amostra para o seu aplicativo, obterá alguns artigos e coleções de exemplo para trabalhar. Você terá a opção de usar modelos e componentes de amostra, personalizar os existentes ou criar novos para seu aplicativo.
 
 >[!CAUTION]
 >
@@ -75,7 +75,7 @@ Cada tipo de entidade tem dois templates prontos para uso. São eles:
 
 O Unlimited Article é um modelo de amostra representando um layout de artigo típico do AEM Mobile On-Demand.
 
-1. Clique em **+** in **Gerenciar artigos** para criar um novo artigo. Você pode escolher um **Artigo Unlimited** ou um **Artigo de rich text**. A imagem abaixo mostra a opção que permite escolher qualquer um desses dois modelos de artigo.
+1. Entrada **Gerenciar artigos**, selecione **+**  para criar um artigo. Você pode escolher um **Artigo Unlimited** ou um **Artigo de rich text**. A imagem abaixo mostra a opção que permite escolher qualquer um desses dois modelos de artigo.
 
 1. Clique em **Próxima** para definir metadados de artigo, como Nome/Título do artigo, Descrição, Autor, Resumo, Departamento, Imagem em miniatura, Acesso ao artigo e assim por diante.
 1. Clique em **Próxima** para preencher as Propriedades do anúncio.

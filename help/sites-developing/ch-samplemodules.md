@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: df28180f-7af4-437d-8e91-bfd305f73113
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
@@ -183,7 +183,7 @@ A origem do módulo da interface do usuário está localizada em /libs/granite/c
 
 ### Configuração {#configuration-5}
 
-As instâncias do módulo de interface do usuário contexthub.screen-orientation não exigem um valor para a Configuração detalhada. O texto JSON a seguir representa a configuração padrão do módulo. Observe que `clickable` propriedade é `false` por padrão. Se você substituir a configuração padrão para definir `clickable` para `true`, clicar no módulo revela um pop-up no qual você pode selecionar a orientação.
+As instâncias do módulo de interface do usuário contexthub.screen-orientation não exigem um valor para a Configuração detalhada. O texto JSON a seguir representa a configuração padrão do módulo. A variável `clickable` propriedade é `false` por padrão. Se você substituir a configuração padrão para definir `clickable` para `true`, clicar no módulo revela um pop-up no qual você pode selecionar a orientação.
 
 ```xml
 {

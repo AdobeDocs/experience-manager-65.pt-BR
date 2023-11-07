@@ -7,9 +7,9 @@ topic-tags: development-tools
 content-type: reference
 docset: aem65
 exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2119'
 ht-degree: 2%
 
 ---
@@ -172,7 +172,7 @@ Ele cria:
 
 * Um nó filho do tipo `cq:PageContent` com propriedades de Conteúdo da página
 
-É possível adicionar propriedades ao template: consulte a [Criação de uma propriedade](#creating-a-property) seção.
+É possível adicionar propriedades ao modelo: consulte a [Criação de uma propriedade](#creating-a-property) seção.
 
 ## Criação de um componente {#creating-a-component}
 

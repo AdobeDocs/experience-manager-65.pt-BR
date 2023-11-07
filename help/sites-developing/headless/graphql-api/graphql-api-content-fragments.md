@@ -3,7 +3,7 @@ title: API GraphQL do AEM para uso com Fragmentos de conteúdo
 description: Saiba como usar Fragmentos de conteúdo no Adobe Experience Manager (AEM) com a API do AEM GraphQL para entrega de conteúdo headless.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 79fa58e63596301e1669903ce10dd8b2ba7d0a1b
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '4774'
 ht-degree: 55%
@@ -421,7 +421,7 @@ No GraphQL, há uma possibilidade de alterar o query com base em variáveis, cha
 
 Por exemplo, é possível incluir o campo `adventurePrice` em uma consulta para todos os `AdventureModels`, com base em uma variável `includePrice`.
 
-![Diretivas de GraphQL](assets/cfm-graphqlapi-04.png "Diretivas de GraphQL")
+![Diretivas do GraphQL](assets/cfm-graphqlapi-04.png "Diretivas do GraphQL")
 
 ```graphql
 ### query

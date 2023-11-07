@@ -8,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '10699'
+source-wordcount: '10694'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ O valor padrão dessa configuração é `/LiveCycleES/ConnectorforIBMFileNet/Ass
 
 ## Converter configurações do serviço PDF {#convert-pdf-service-settings}
 
-O serviço de conversão de PDF ( `ConvertPdfService`) converte documentos PDF em PostScript e em vários formatos de imagem (JPEG, JPEG 2000, PNG e TIFF). A conversão de um documento PDF em PostScript é útil para impressão autônoma baseada em servidor em qualquer impressora PostScript. A conversão de um documento de PDF em um arquivo de TIFF de várias páginas é prática ao arquivar documentos em sistemas de gerenciamento de conteúdo que não aceitam documentos de PDF.
+O serviço de conversão de PDF ( `ConvertPdfService`) converte documentos PDF para PostScript e para vários formatos de imagem (JPEG, JPEG 2000, PNG e TIFF). A conversão de um documento PDF em PostScript é útil para impressão autônoma baseada em servidor em qualquer impressora PostScript. A conversão de um documento de PDF em um arquivo de TIFF de várias páginas é prática ao arquivar documentos em sistemas de gerenciamento de conteúdo que não aceitam documentos de PDF.
 
 As configurações a seguir estão disponíveis para o serviço Converter PDF.
 
@@ -326,7 +326,7 @@ Os valores padrão para o serviço Utilitários guia suportam a maioria dos caso
 
 ### Usando Guias em um cluster de servidores {#using-guides-in-a-server-cluster}
 
-A renderização de um Guia em um cluster de servidores que não usa sessões aderentes falha com uma exceção de ponteiro nulo. Uma solicitação do Guides aproveita URLs seguros que, por padrão, são exclusivos do servidor em que são gerados. Em um cluster que usa sessões aderentes, depois que uma solicitação atinge um nó no cluster, todas as solicitações subsequentes dessa sessão ou usuário são roteadas exclusivamente para esse servidor e tudo está OK. Em um cluster que não usa sessões aderentes, as solicitações subsequentes podem atingir qualquer servidor no cluster. Se o servidor que as solicitações atingiram não for o servidor original, eles não resolverão o URL seguro.
+A renderização de um Guia em um cluster de servidores que não usa sessões aderentes falha com uma exceção de ponteiro nulo. Uma solicitação do Guides usa URLs seguros que, por padrão, são exclusivos do servidor em que são gerados. Em um cluster que usa sessões aderentes, depois que uma solicitação atinge um nó no cluster, todas as solicitações subsequentes dessa sessão ou usuário são roteadas exclusivamente para esse servidor e tudo está OK. Em um cluster que não usa sessões aderentes, as solicitações subsequentes podem atingir qualquer servidor no cluster. Se o servidor que as solicitações atingiram não for o servidor original, eles não resolverão o URL seguro.
 
 Se você estiver usando Guides em um cluster de servidores que não usa sessões adesivas, defina o valor macKeySeed para o serviço GuidesUtility e, em seguida, pare e inicie o cluster.
 
@@ -826,7 +826,7 @@ Os perfis de segurança padrão são instalados, que podem ser configurados para
    * **SUPERVISOR_PERM:** Para exibir dados da instância do processo para um serviço criado a partir de um processo
    * **START_STOP_PERM:** Para iniciar e parar um serviço
    * **ADD_REMOVE_ENDPOINTS_PERM:** Para adicionar, remover e modificar endpoints de um serviço
-   * **CREATE_VERSION_PERM:** Para criar uma nova versão do serviço
+   * **CREATE_VERSION_PERM:** Para criar uma versão do serviço
    * **DELETE_VERSION_PERM:** Para excluir uma versão do serviço
    * **MODIFY_VERSION_PERM:** Para modificar uma versão do serviço
    * **READ_PERM:** Para exibir o serviço

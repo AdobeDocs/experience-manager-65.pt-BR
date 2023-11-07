@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
 role: Developer
 exl-id: 6af148eb-427a-4b54-9c5f-8750736882d8
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3918'
+source-wordcount: '3914'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Para executar programaticamente uma operação do serviço de extensões da Acro
 
 **Recuperar um documento PDF**
 
-Você deve recuperar um documento PDF para aplicar os direitos de uso. Os documentos de PDF ativados por direitos contêm um dicionário de direitos de uso. Quando o Adobe Reader abre um documento contendo esse dicionário, ele ativa os direitos de uso especificados no dicionário somente para esse documento. Se o documento não contiver um dicionário de direitos de uso, o serviço de extensões da Acrobat Reader DC criará um. Se já contiver um dicionário, o serviço de extensões da Acrobat Reader DC substituirá os direitos de uso existentes pelos que você especificar. O dicionário especifica quais direitos de uso estão ativados. Quando um usuário abre o documento no Adobe Reader, somente os direitos de uso especificados no dicionário são permitidos.
+Recupere um documento PDF para aplicar direitos de uso. Os documentos de PDF ativados por direitos contêm um dicionário de direitos de uso. Quando o Adobe Reader abre um documento contendo esse dicionário, ele ativa os direitos de uso especificados no dicionário somente para esse documento. Se o documento não contiver um dicionário de direitos de uso, o serviço de extensões da Acrobat Reader DC criará um. Se já contiver um dicionário, o serviço de extensões da Acrobat Reader DC substituirá os direitos de uso existentes pelos que você especificar. O dicionário especifica quais direitos de uso estão ativados. Quando um usuário abre o documento no Adobe Reader, somente os direitos de uso especificados no dicionário são permitidos.
 
 **Especificar direitos de uso a serem aplicados**
 
@@ -388,7 +388,7 @@ Antes de executar programaticamente uma operação de serviço de extensões da 
 
 **Recuperar um documento PDF habilitado para direitos**
 
-Você deve recuperar um documento de PDF habilitado para direitos para recuperar informações sobre a credencial. Você também pode recuperar informações sobre uma credencial especificando seu alias; no entanto, se quiser recuperar informações sobre uma credencial usada para aplicar direitos de uso a um documento de PDF habilitado para direitos específicos, você deverá recuperar o documento.
+Recupere um documento de PDF habilitado para direitos para recuperar informações sobre a credencial. Você também pode recuperar informações sobre uma credencial especificando seu alias; no entanto, se quiser recuperar informações sobre uma credencial usada para aplicar direitos de uso a um documento de PDF habilitado para direitos específicos, você deverá recuperar o documento.
 
 **Recuperar informações sobre a credencial**
 

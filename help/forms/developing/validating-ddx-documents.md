@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 693859b0-a0c3-43f1-95c0-be48a90d7d8d
 role: Developer
 exl-id: 1f5a2cf3-ef6b-45b4-8fa8-b300e492fee1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1525'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Ao validar um documento DDX, você deve definir opções de tempo de execução 
 
 Depois de criar o cliente de serviço do Assembler, fazer referência ao documento DDX e definir as opções de tempo de execução, você poderá chamar o `invokeDDX` operação para validar o documento DDX. Ao validar o documento DDX, você pode enviar `null` como o parâmetro de mapa (este parâmetro geralmente armazena documentos de PDF que o Assembler requer para executar a(s) operação(ões) especificada(s) no documento DDX).
 
-Se a validação falhar, uma exceção será lançada e o arquivo de log conterá detalhes que explicam por que o documento DDX é inválido e podem ser obtidos no `OperationException` instância. Depois da análise XML básica e da verificação do esquema, a validação em relação à especificação DDX é executada. Todos os erros localizados no documento DDX são especificados no log.
+Se a validação falhar, uma exceção será lançada e o arquivo de log conterá detalhes que explicam por que o documento DDX é inválido e podem ser obtidos no `OperationException` instância. Depois da análise XML básica e da verificação do esquema, a validação em relação à especificação DDX é executada. Todos os erros do documento DDX estão especificados no log.
 
 **Salvar os resultados da validação em um arquivo de log**
 

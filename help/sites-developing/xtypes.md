@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 exl-id: 06ca4e6d-9ab7-4c5b-905c-07c448632f2b
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6384'
+source-wordcount: '6381'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Esta página descreve todos os xtypes disponíveis com o Adobe Experience Manage
 
 Na linguagem ExtJS, um xtype é um nome simbólico dado a uma classe. Você pode ler o parágrafo &quot;Tipos XTypes de componente&quot; do [Visão geral do ExtJS 2](https://www.sencha.com/learn/overview-of-extjs-2) para obter uma explicação detalhada sobre o que é um xtype e como ele pode ser usado.
 
-Para obter informações completas sobre todos os dispositivos disponíveis no AEM, consulte [documentação da API do widget](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
+Para obter informações completas sobre todos os widgets disponíveis no AEM, consulte [documentação da API do widget](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
 Para descobrir em quais componentes um determinado xtype é usado no AEM, você pode usar a seguinte consulta Xpath no CRXDE substituindo &quot;caixa de seleção&quot; pelo xtype em que está interessado:
 
@@ -245,7 +245,7 @@ Listados abaixo estão os xtypes disponíveis no Adobe Experience Manager:
 
   [CQ.wcm.CreateVersionDialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.CreateVersionDialog)
 
-  CreateVersionDialog é uma caixa de diálogo que permite criar uma nova versão de uma página.
+  CreateVersionDialog é uma caixa de diálogo que permite criar uma versão de uma página.
 
 * customcontentpanel
 

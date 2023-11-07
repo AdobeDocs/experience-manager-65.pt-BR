@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '15485'
+source-wordcount: '15469'
 ht-degree: 0%
 
 ---
@@ -325,7 +325,7 @@ Para obter exemplos de código usando o serviço Segurança de documentos, consu
 
 Você pode modificar uma política existente usando a API Java de Segurança de documentos ou a API de serviço da Web. Para fazer alterações em uma política existente, você a recupera, modifica e atualiza a política no servidor. Por exemplo, suponha que você recupere uma política existente e estenda seu período de validade. Antes da alteração entrar em vigor, você deve atualizar a política.
 
-É possível modificar uma política quando os requisitos de negócios mudam e a política não reflete mais esses requisitos. Em vez de criar uma nova política, você pode simplesmente atualizar uma política existente.
+É possível modificar uma política quando os requisitos de negócios mudam e a política não reflete mais esses requisitos. Em vez de criar uma política, você pode simplesmente atualizar uma política existente.
 
 Para modificar atributos de política usando um serviço Web (por exemplo, usando classes de proxy Java que foram criadas com JAX-WS), você deve garantir que a política esteja registrada no serviço de Segurança de documentos. É possível fazer referência à política existente usando o `PolicySpec.getPolicyXml` e modificar os atributos da política usando os métodos aplicáveis. Por exemplo, você pode modificar o período de concessão offline chamando a opção `PolicySpec.setOfflineLeasePeriod` método.
 
@@ -353,7 +353,7 @@ Antes de executar programaticamente uma operação de serviço de Segurança de 
 
 **Recuperar uma política existente**
 
-Você deve recuperar uma política existente para modificá-la. Para recuperar uma política, especifique o nome da política e o conjunto de políticas ao qual a política pertence. Se você especificar um `null` para o nome do conjunto de políticas, a política é recuperada da variável *Minhas Políticas* conjunto de políticas.
+Recupere uma política existente para modificá-la. Para recuperar uma política, especifique o nome da política e o conjunto de políticas ao qual a política pertence. Se você especificar um `null` para o nome do conjunto de políticas, a política é recuperada da variável *Minhas Políticas* conjunto de políticas.
 
 **Definir os atributos da política**
 
@@ -878,9 +878,9 @@ Antes de executar programaticamente uma operação de serviço de Segurança de 
 
 **Recuperar um documento PDF protegido por política**
 
-Você deve recuperar um documento de PDF protegido por política para revogá-lo. Não é possível revogar um documento que já tenha sido revogado ou que não seja um documento protegido por política.
+Recupere um documento PDF protegido por política para revogá-lo. Não é possível revogar um documento que já tenha sido revogado ou que não seja um documento protegido por política.
 
-Se você souber o valor do identificador de licença do documento protegido por política, não será necessário recuperar o documento PDF protegido por política. No entanto, na maioria dos casos, será necessário recuperar o documento PDF para obter o valor do identificador de licença.
+Se você souber o valor do identificador de licença do documento protegido por política, não será necessário recuperar o documento PDF protegido por política. No entanto, na maioria dos casos, você deve recuperar o documento PDF para obter o valor do identificador de licença.
 
 **Revogar o documento protegido por política**
 
@@ -1020,7 +1020,7 @@ Antes de executar programaticamente uma operação de serviço de Segurança de 
 
 **Recuperar o identificador de licença do documento PDF revogado**
 
-Você deve recuperar o identificador de licença do documento de PDF revogado para restaurar um documento de PDF revogado. Após obter o valor do identificador de licença, é possível restaurar um documento revogado. Se você tentar restabelecer um documento que não foi revogado, causará uma exceção.
+Recupere o identificador de licença do documento de PDF revogado para restaurar um documento de PDF revogado. Após obter o valor do identificador de licença, é possível restaurar um documento revogado. Se você tentar restabelecer um documento que não foi revogado, causará uma exceção.
 
 **Restaurar o acesso ao documento de PDF revogado**
 
@@ -1287,7 +1287,7 @@ Antes de executar programaticamente uma operação de serviço de Segurança de 
 
 **Definir os atributos de marca d&#39;água**
 
-Para criar uma nova marca d&#39;água, você deve definir atributos de marca d&#39;água. O atributo name deve ser sempre definido. Além do atributo name, você deve definir pelo menos um dos seguintes atributos:
+Para criar uma marca d&#39;água, você deve definir atributos de marca d&#39;água. O atributo name deve ser sempre definido. Além do atributo name, você deve definir pelo menos um dos seguintes atributos:
 
 * Texto personalizado
 * DateIncluded
@@ -1622,9 +1622,9 @@ O serviço Rights Management rastreia ações específicas à medida que ocorrem
 
 Os eventos se enquadram em uma das seguintes categorias:
 
-* Eventos de administrador são ações relacionadas a um administrador, como a criação de uma nova conta de administrador.
+* Eventos de administrador são ações relacionadas a um administrador, como a criação de uma conta de administrador.
 * Eventos de documento são ações relacionadas a um documento, como fechar um documento protegido por política.
-* Eventos de política são ações relacionadas a uma política, como a criação de uma nova política.
+* Eventos de política são ações relacionadas a uma política, como a criação de uma política.
 * Eventos de serviço são ações relacionadas ao serviço Rights Management, como sincronização com o diretório de usuário.
 
 Você pode pesquisar eventos específicos usando a API Java do Rights Management ou a API de serviço da Web. Ao pesquisar eventos, você pode executar tarefas, como criar um arquivo de log de determinados eventos.
@@ -1652,7 +1652,7 @@ Antes de executar programaticamente uma operação de serviço de Rights Managem
 
 **Especifique os eventos a serem pesquisados**
 
-Você deve especificar o evento a ser pesquisado. Por exemplo, você pode pesquisar pelo evento de criação de política, que ocorre quando uma nova política é criada.
+Especifique o evento a ser pesquisado. Por exemplo, você pode pesquisar pelo evento de criação de política, que ocorre quando uma nova política é criada.
 
 **Pesquisar o evento**
 
@@ -1977,7 +1977,7 @@ Antes de executar programaticamente uma operação de serviço de Segurança de 
 
 **Recuperar um documento do Word**
 
-Você deve recuperar um documento do Word para aplicar uma política. Depois de aplicar uma política ao documento do Word, os usuários ficam restritos ao usar o documento. Por exemplo, se a política não permitir que o documento seja aberto offline, os usuários deverão estar online para abrir o documento.
+Recupere um documento do Word para aplicar uma política. Depois de aplicar uma política ao documento do Word, os usuários ficam restritos ao usar o documento. Por exemplo, se a política não permitir que o documento seja aberto offline, os usuários deverão estar online para abrir o documento.
 
 **Aplicar uma política existente ao documento do Word**
 
@@ -2132,7 +2132,7 @@ Antes de executar programaticamente uma operação do serviço de Segurança de 
 
 **Recuperar um documento do Word protegido por política**
 
-Você deve recuperar um documento do Word protegido por política para remover uma política. Se você tentar remover uma política de um documento do Word que não esteja protegido por uma política, causará uma exceção.
+Recupere um documento do Word protegido por política para remover uma política. Se você tentar remover uma política de um documento do Word que não esteja protegido por uma política, causará uma exceção.
 
 **Remover a política do documento do Word**
 

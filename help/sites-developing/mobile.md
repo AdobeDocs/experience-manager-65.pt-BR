@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3787'
+source-wordcount: '3786'
 ht-degree: 0%
 
 ---
@@ -365,7 +365,7 @@ A variável `PageVariantsProvider` O serviço OSGi é capaz de gerar links alter
 A variável `cq:siteVariant` deve ter as seguintes propriedades:
 
 * `cq:childNodesMapTo` - determina para qual atributo do elemento do link os nós filhos serão mapeados; é recomendável organizar o conteúdo do site de forma que os filhos do nó raiz representem a raiz de uma variante de idioma do site global (por exemplo, `/content/mysite/en`, `/content/mysite/de`), caso em que o valor de `cq:childNodesMapTo` deve ser `hreflang`;
-* `cq:variantDomain` - indica o que `Externalizer` o domínio será usado para gerar os URLs absolutos das variantes de página; se esse valor não for definido, as variantes de página serão geradas usando links relativos;
+* `cq:variantDomain` - indica o que `Externalizer` o domínio é usado para gerar os URLs absolutos das variantes de página; se esse valor não for definido, as variantes de página serão geradas usando links relativos;
 * `cq:variantFamily` - indica a qual família de sites este site pertence; várias representações específicas de dispositivos do mesmo site devem pertencer à mesma família;
 * `media` - armazena os valores do atributo media do elemento link; é recomendável usar o nome do `BrowserMap` registrado `DeviceGroups`, para que o `BrowserMap` A biblioteca do pode encaminhar os clientes automaticamente para a variante correta do site.
 
@@ -391,7 +391,7 @@ Para obter mais detalhes, consulte [Mapa de navegador personalizado](#creatingac
 
 Se nenhum dos mecanismos anteriores tiver sido empregado para indicar um local alternativo para `BrowserMap`, em seguida, os seletores que usarão os nomes das `DeviceGroups` será adicionado à `URL`s, nesse caso, você deve fornecer seus próprios servlets que lidarão com as solicitações.
 
-Por exemplo, uma navegação de dispositivo `www.example.com/index.html` identificado como `smartphone` por Mapa de navegador é encaminhado para `www.example.com/index.smartphone.html.`
+Por exemplo, um dispositivo que navega `www.example.com/index.html` identificado como `smartphone` por Mapa de navegador é encaminhado para `www.example.com/index.smartphone.html.`
 
 ### Utilização Do Mapa De Navegador Em Suas Páginas {#using-browsermap-on-your-pages}
 
@@ -569,7 +569,7 @@ A variável **Estatísticas** é criada na primeira vez que um dispositivo móve
 
 Se você precisar gerar uma entrada nas estatísticas, proceda da seguinte maneira:
 
-1. Use um dispositivo móvel ou um emulador (como por exemplo https://chrispederick.com/work/user-agent-switcher/ no Firefox).
+1. Use um dispositivo móvel ou um emulador (como por exemplo, https://chrispederick.com/work/user-agent-switcher/ no Firefox).
 1. Solicite uma página móvel na instância do autor desativando o modo de criação, por exemplo:
    `https://localhost:4502/content/geometrixx_mobile/en/products.html?wcmmode=disabled`
 
@@ -577,7 +577,7 @@ A variável **Estatísticas** agora está disponível.
 
 ### Cache de página de suporte para links &quot;enviar link para um amigo&quot; {#supporting-page-caching-for-send-link-to-a-friend-links}
 
-As páginas móveis são armazenadas em cache no Dispatcher, pois as páginas renderizadas para um grupo de dispositivos são diferenciadas no URL da página pelo seletor de grupo de dispositivos, por exemplo `/content/mobilepage.touch.html`. Uma solicitação para uma página móvel sem um seletor nunca é armazenada em cache, como neste caso, a detecção de dispositivo opera e finalmente redireciona para o grupo de dispositivos correspondente (ou &quot;nomatch&quot; para esse assunto). Uma página móvel renderizada com um seletor de grupo de dispositivos é processada pelo reescritor de links, que reescreve todos os links dentro da página para também conter o seletor de grupo de dispositivos, impedindo a repetição da detecção de dispositivos para cada clique em uma página já qualificada.
+As páginas móveis são armazenadas em cache no Dispatcher, pois as páginas renderizadas para um grupo de dispositivos são diferenciadas no URL da página pelo seletor de grupo de dispositivos, por exemplo, `/content/mobilepage.touch.html`. Uma solicitação para uma página móvel sem um seletor nunca é armazenada em cache, como nesse caso, a detecção de dispositivo opera e finalmente redireciona para o grupo de dispositivos correspondente (ou &quot;nomatch&quot; por sinal). Uma página móvel renderizada com um seletor de grupo de dispositivos é processada pelo reescritor de links, que reescreve todos os links dentro da página para também conter o seletor de grupo de dispositivos, impedindo a repetição da detecção de dispositivos para cada clique em uma página já qualificada.
 
 Portanto, você pode encontrar o seguinte cenário:
 

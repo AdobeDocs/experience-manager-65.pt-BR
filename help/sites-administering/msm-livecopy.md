@@ -3,10 +3,10 @@ title: Criação e sincronização de Live Copies
 description: Saiba como criar e sincronizar Live Copies no Adobe Experience Manager.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4233'
-ht-degree: 47%
+source-wordcount: '4226'
+ht-degree: 46%
 
 ---
 
@@ -123,8 +123,8 @@ Para criar uma live copy:
    * Selecionado: cria uma live copy somente da página selecionada (live copy superficial)
    * Não selecionado: cria uma live copy que inclui todos os descendentes da página selecionada (live copy profunda)
 
-1. (Opcional) Para especificar uma ou mais configurações de implantação a serem usadas para a live copy, use o **Configurações de implantação** para selecioná-las; as configurações selecionadas serão mostradas abaixo do seletor suspenso.
-1. Clique ou toque em **Criar**. Uma mensagem de confirmação será exibida e aqui é possível selecionar **Abrir** ou **Concluído**.
+1. (Opcional) Para especificar uma ou mais configurações de implantação a serem usadas para a live copy, use o **Configurações de implantação** para selecioná-las; as configurações selecionadas são mostradas abaixo do seletor suspenso.
+1. Clique ou toque em **Criar**. Uma mensagem de confirmação será exibida, e daqui será possível selecionar **Abrir** ou **Concluído**.
 
 ### Criação de uma Live Copy de um site a partir de uma configuração de blueprint {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
@@ -149,7 +149,7 @@ Ao criar o site, forneça valores para as seguintes propriedades:
 
 Para criar uma Live Copy de um site a partir de uma configuração de blueprint:
 
-1. No console do **Sites**, selecione **Criar** e, em seguida, selecione **Site** no seletor da lista suspensa.
+1. No console dos **Sites**, selecione **Criar** e, em seguida, **Site** no seletor da lista suspensa.
 1. Selecione a configuração de blueprint a ser usada como origem da live copy e prossiga com **Próxima**:
 
    ![Selecione a configuração de blueprint como origem da live copy](assets/blueprint-configuration-select.png)
@@ -325,7 +325,7 @@ Para alterar o conteúdo da live copy, é possível:
 
 >[!NOTE]
 >
->Se você criar manualmente uma nova página na live copy, ela será local para a live copy, o que significa que não terá uma página de origem correspondente à qual anexar.
+>Se você criar manualmente uma página na live copy, ela será local para a live copy, o que significa que não terá uma página de origem correspondente à qual anexar.
 >
 >A prática recomendada para criar uma página local que faça parte do relacionamento seria criá-la na origem e fazer uma implantação (profunda). Isso criará a página localmente como Live Copies.
 
@@ -412,13 +412,13 @@ Uma vez [suspensa](#suspending-inheritance-from-page-properties), a ação **Ret
 
 ![Retomar](assets/chlimage_1-229.png)
 
-Quando selecionada, a caixa de diálogo será exibida. É possível selecionar uma sincronização, se necessário, e confirmar a ação.
+Quando selecionada, a caixa de diálogo é exibida. É possível selecionar uma sincronização, se necessário, e confirmar a ação.
 
 #### Retomar uma página de Live Copy na visão geral da Live Copy {#resume-a-live-copy-page-from-the-live-copy-overview}
 
 A [ação Retomar também está disponível na visão geral da Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), quando uma página de Live Copy é selecionada.
 
-1. Abra o [Visão geral da Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) e selecione uma Página de Live Copy que foi suspensa; será exibido como **HERANÇA CANCELADA**.
+1. Abra o [Visão geral da Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) e selecione uma Página de Live Copy que foi suspensa; ela será exibida como **HERANÇA CANCELADA**.
 1. Selecione **Retomar** na barra de ferramentas.
 1. Indique se você deseja sincronizar a página após reverter a herança e, em seguida, confirme a ação **Retomar** na caixa de diálogo **Retomar Live Copy**.
 
@@ -624,7 +624,7 @@ Há implicações com relação ao local na árvore em que você usa **Desanexar
 
       * Isso ocorre porque o MSM as considera como páginas criadas manualmente que causam um conflito, pois têm o mesmo nome das páginas de live copy que ele está tentando criar.
 
-   1. Crie uma nova página (live copy) com o nome original, contendo as alterações da implantação.
+   1. Crie uma página (live copy) com o nome original, contendo as alterações da implantação.
 
   >[!NOTE]
   >
@@ -640,7 +640,7 @@ Para desanexar uma live copy:
 
    ![Desconectar](assets/chlimage_1-236.png)
 
-1. Uma caixa de diálogo de confirmação será exibida, selecione **Desconectar** para concluir a ação.
+1. Uma caixa de diálogo de confirmação é exibida, selecione **Desanexar** para concluir a ação.
 
 ### Desconectar uma página de Live Copy da visão geral da Live Copy {#detach-a-live-copy-page-from-the-live-copy-overview}
 

@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 01d5677f-5c87-4a6e-987b-8eda9acc0b27
 role: Developer
 exl-id: cff65f74-ba95-438e-88a4-5ec7d22aafba
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1404'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Você pode realizar essas tarefas usando o serviço Utilitários XMP:
 
 ## Importação de metadados para documentos PDF {#importing-metadata-into-pdf-documents}
 
-Você pode usar o Java Utilitários XMP e APIs de serviço da web para importar programaticamente metadados XMP em um documento PDF. Os metadados fornecem informações sobre um documento PDF, como o autor do documento e palavras-chave relacionadas ao documento. Os metadados podem ser localizados na caixa de diálogo Propriedades do documento do documento, conforme mostrado na ilustração a seguir.
+Você pode usar o Java Utilitários XMP e APIs de serviço da web para importar programaticamente metadados XMP em um documento PDF. Os metadados fornecem informações sobre um documento PDF, como o autor do documento e palavras-chave relacionadas ao documento. Os metadados podem ser exibidos na caixa de diálogo Propriedades do documento do documento, conforme mostrado na ilustração a seguir.
 
 ![ww_ww_metadatadialog](assets/ww_ww_metadatadialog.png)
 

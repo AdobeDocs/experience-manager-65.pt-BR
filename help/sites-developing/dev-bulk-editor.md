@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1836'
+source-wordcount: '1835'
 ht-degree: 2%
 
 ---
@@ -570,4 +570,4 @@ O servlet precisa saber onde a propriedade catalogCode está armazenada.
 
 Uma implementação padrão para Salvar servlet está disponível em /libs/wcm/bulkeditor/save/POST.jsp e é usada no componente Lista de produtos. São necessários todos os parâmetros da solicitação (com um &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;> format) e grava as propriedades nos nós usando a API JCR. Também cria nó se eles não existirem (linhas inseridas na grade).
 
-O código padrão não deve ser usado como está, pois ele reimplementa o que o servidor faz nativamente (um POST em &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>) e, portanto, é apenas um bom ponto de partida para criar um servlet Save que possa gerenciar um modelo de herança de propriedade.
+Não use o código padrão como está, pois ele reimplementa o que o servidor faz nativamente (um POST em &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>) e, portanto, é apenas um bom ponto de partida para criar um servlet Save que possa gerenciar um modelo de herança de propriedade.

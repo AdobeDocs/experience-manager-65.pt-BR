@@ -9,9 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Em seguida, configure o WebLogic para que ele use o keystore de Identidade perso
 
 ## Criação de uma credencial SSL para uso no WebLogic Server {#creating-an-ssl-credential-for-use-on-weblogic-server}
 
-O comando keytool geralmente está localizado no diretório jre/bin do Java e deve incluir várias opções e valores de opção, que estão listados na tabela a seguir.
+O comando keytool geralmente está no diretório jre/bin do Java e deve incluir várias opções e valores de opção, que estão listados na tabela a seguir.
 
 <table>
  <thead>

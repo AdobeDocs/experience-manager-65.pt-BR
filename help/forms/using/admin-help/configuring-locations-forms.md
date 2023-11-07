@@ -8,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3d2b7cfb-228c-4cc2-8fcd-d500f0010010
 exl-id: 0d9eb7fe-28a6-444e-957d-023687158c61
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ O exemplo a seguir aponta para o mesmo conteúdo (usando o URI da raiz do conte�
 
 `(BaseURL)/subdir/image1.jpg`
 
-**URI da Raiz da Web FS:** O URL do aplicativo web do Forms. Você pode deixar essa caixa vazia se o aplicativo Web do Forms e o aplicativo cliente forem implantados no mesmo servidor de aplicativos; o URL da raiz da Web da API do Forms será usado.
+**URI da Raiz da Web FS:** O URL do aplicativo web do Forms. Você pode deixar essa caixa vazia se o aplicativo Web do Forms e o aplicativo cliente forem implantados no mesmo servidor de aplicativos; o URL da raiz da Web da API do Forms é usado.
 
 Se o aplicativo web do Forms e o aplicativo cliente não forem implantados no mesmo servidor de aplicativos, forneça o URL para o aplicativo web do Forms nesta caixa, como mostrado neste exemplo:
 

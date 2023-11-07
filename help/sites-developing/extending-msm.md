@@ -1,19 +1,15 @@
 ---
 title: Extensão do gerenciador de vários sites
-seo-title: Extending the Multi Site Manager
 description: Esta página ajuda a estender as funcionalidades do Gerenciador de vários sites
-seo-description: This page helps you extend the functionalities of the Multi Site Manager
-uuid: dfa7d050-29fc-4401-8d4d-d6ace6b49bea
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2585'
+source-wordcount: '2578'
 ht-degree: 2%
 
 ---
@@ -23,7 +19,7 @@ ht-degree: 2%
 Esta página ajuda a estender as funcionalidades do Gerenciador de vários sites:
 
 * Saiba mais sobre os principais membros da API Java do MSM.
-* Crie uma nova ação de sincronização que possa ser usada em uma configuração de implantação.
+* Crie uma ação de sincronização que possa ser usada em uma configuração de implantação.
 * Modifique os códigos de idioma e país padrão.
 
 <!-- * Remove the "Chapters" step in the Create Site wizard. -->
@@ -111,7 +107,7 @@ A variável `LiveActionFactory` cria instâncias do `LiveAction` classe para uma
 
 * `LiveAction` As classes de incluem os seguintes métodos:
 
-   * `getName`: retorna o nome da ação. O nome é usado para fazer referência à ação, por exemplo, em configurações de implantação.
+   * `getName`: retorna o nome da ação. O nome é usado para se referir à ação, por exemplo, em configurações de implantação.
    * `execute`: Executa as tarefas da ação.
 
 * `LiveActionFactory` as classes incluem os seguintes membros:
@@ -182,8 +178,6 @@ A nova configuração de implantação está então disponível ao definir confi
 
 ### Criar a configuração de implantação {#create-the-rollout-configuration}
 
-Para criar uma nova configuração de implantação:
-
 1. CRXDE Lite aberto; por exemplo:
    [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
@@ -206,7 +200,7 @@ Para criar uma nova configuração de implantação:
 
 1. Neste **Criar** um nó com as seguintes propriedades:
 
-   * **Nome**: o nome do nó da configuração de implantação. md#installed-synchronization-actions), por exemplo `contentCopy` ou `workflow`.
+   * **Nome**: o nome do nó da configuração de implantação. md#installed-synchronization-actions), por exemplo, `contentCopy` ou `workflow`.
    * **Tipo**: `cq:RolloutConfig`
 
 1. Adicione as seguintes propriedades a este nó:
@@ -240,7 +234,7 @@ Adicionar nós filhos do tipo `cq:LiveSyncAction` para adicionar ações de sinc
 1. **Criar** um nó com as seguintes propriedades de nó:
 
    * **Nome**: o nome do nó da ação de sincronização.
-O nome deve ser igual ao **Nome da ação** no quadro abaixo [Ações de sincronização](/help/sites-administering/msm-sync.md#installed-synchronization-actions), por exemplo `contentCopy` ou `workflow`.
+O nome deve ser igual ao **Nome da ação** no quadro abaixo [Ações de sincronização](/help/sites-administering/msm-sync.md#installed-synchronization-actions), por exemplo, `contentCopy` ou `workflow`.
    * **Tipo**: `cq:LiveSyncAction`
 
 1. Adicione e configure quantos nós de ação de sincronização forem necessários. Reorganize os nós de ação para que sua ordem corresponda à ordem em que você deseja que eles ocorram. O nó de ação mais acima ocorre primeiro.
@@ -600,7 +594,7 @@ In some cases, the **Chapters** selection is not required in the create site wiz
 1. In CRX Explorer, remove the node:
    `/etc/blueprints/weretail-english/jcr:content/dialog/items/tabs/items/tab_chap`.
 
-1. Navigate to `/libs/wcm/msm/templates/blueprint/defaults/livecopy_tab/items` and create a new node:
+1. Navigate to `/libs/wcm/msm/templates/blueprint/defaults/livecopy_tab/items` and create a node:
 
     1. **Name** = `chapters`; **Type** = `cq:Widget`.
 

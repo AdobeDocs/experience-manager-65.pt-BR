@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b41de64a-7d27-4633-a8d5-ac91d47eb1bb
 docset: aem65
 exl-id: c2fbf858-8815-426e-a2e5-f92bcf909ad0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Para criar uma landing page efetiva do boletim informativo, faça o seguinte:
 >[!NOTE]
 >
 >A Adobe não pretende aprimorar ainda mais esse recurso (Gerenciamento de clientes em potencial e listas).
->A recomendação é aproveitar [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
+>A recomendação é usar [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
 ## Criação de uma lista para o informativo {#creating-a-list-for-the-newsletter}
 

@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1611'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Por fim, os recursos de controle de versão do [!DNL Experience Manager] armazen
 
 Considerando esses fatores, você precisa de uma metodologia para calcular um espaço de armazenamento aceitável e preciso para armazenar os ativos do usuário.
 
-1. Determine o tamanho e o número de ativos que serão carregados no sistema.
+1. Determine o tamanho e o número de ativos carregados no sistema.
 1. Obtenha uma amostra representativa dos ativos a serem carregados no [!DNL Experience Manager]. Por exemplo, se você planeja carregar arquivos de PSD, JPG, AI e PDF no sistema, são necessárias várias imagens de amostra de cada formato de arquivo. Além disso, essas amostras devem ser representativas dos diferentes tamanhos de arquivo e complexidades de imagens.
 1. Defina as representações que serão usadas.
 1. Criar as representações no [!DNL Experience Manager] usar [!DNL ImageMagick] ou [!DNL Adobe Creative Cloud] aplicativos. Além das representações especificadas pelos usuários, crie representações predefinidas. Para usuários que implementam o Dynamic Media, é possível usar o binário IC para gerar as representações PTIFF a serem armazenadas no Experience Manager.

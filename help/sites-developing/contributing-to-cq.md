@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2672'
+source-wordcount: '2670'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ Também é possível combinar várias instâncias do repositório de conteúdo p
 
 Em essência, o JCR é um sistema de nós e propriedades, em que os nós podem herdar de outros nós e todo o conteúdo é armazenado como propriedade *valores*. Observe que, além da herança comum, o JCR permite um conceito de nós de &quot;mixin&quot;, que permite a modelagem de herança múltipla.
 
-O JCR tem vários tipos de nó e tipos de propriedade predefinidos, mas em geral o sistema de digitação é flexível e (na verdade) um dos pontos fortes do JCR é que ele permite que conteúdo estruturado e não estruturado seja armazenado/gerenciado com a mesma facilidade. Ou seja, o JCR pode acomodar dados altamente estruturados, mas também pode acomodar estruturas de dados dinâmicos arbitrárias sem restrições de esquema.
+O JCR tem vários tipos de nó e tipos de propriedade predefinidos, mas em geral o sistema de digitação é flexível e (na verdade) um dos pontos fortes do JCR é que ele permite que o conteúdo estruturado e não estruturado seja armazenado/gerenciado com a mesma facilidade. Ou seja, o JCR pode acomodar dados altamente estruturados, mas também pode acomodar estruturas de dados dinâmicos arbitrárias sem restrições de esquema.
 
 O JavaDoc para a API Java™ do JCR é [aqui](https://jackrabbit.apache.org/jcr/jcr-api.html).
 

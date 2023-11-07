@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 2%
@@ -69,7 +69,7 @@ Para a configuração básica:
 
    ![Fragmento da análise genérica](assets/analytics_genericoverview.png)
 
-1. Clique em + para adicionar uma nova configuração usando a caixa de diálogo. No mínimo, atribua um nome, por exemplo Google Analytics:
+1. Clique em + para adicionar uma nova configuração usando a caixa de diálogo. No mínimo, atribua um nome, por exemplo, Google Analytics:
 
    ![Criar configuração](assets/analytics_addconfig.png)
 

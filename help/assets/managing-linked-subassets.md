@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1421'
+source-wordcount: '1420'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Esse procedimento é semelhante ao [adicionar ativos digitais como referências 
 
 ### Criar referências a ativos exportando um arquivo ZIP {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
-1. Execute as etapas em [Criar modelos de fluxo de trabalho](/help/sites-developing/workflows-models.md) para criar um novo workflow.
+1. Execute as etapas em [Criar modelos de fluxo de trabalho](/help/sites-developing/workflows-models.md) para criar um workflow.
 1. Use o [Recurso de pacote](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) de [!DNL Adobe InDesign] para exportar o documento. [!DNL Adobe InDesign] O pode exportar um documento e os ativos vinculados como um pacote. Nesse caso, a pasta exportada contém uma `Links` pasta que contém subativos na [!DNL InDesign] arquivo. A variável `Links` pasta está presente na mesma pasta que o arquivo INDD.
 1. Crie um arquivo ZIP e faça upload dele para a [!DNL Experience Manager] repositório.
 1. Inicie o `Unarchiver` fluxo de trabalho.

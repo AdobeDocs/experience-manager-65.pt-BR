@@ -10,9 +10,9 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4184'
+source-wordcount: '4181'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Para criar um objeto de modelo de dados sem origens de dados:
 
 1. Faça logon na instância de autor do AEM, navegue até **[!UICONTROL Forms > Integrações de dados]** e abra o modelo de dados de formulário no qual deseja criar um objeto ou entidade de modelo de dados.
 1. Toque **[!UICONTROL Criar entidade]**.
-1. Na caixa de diálogo Criar modelo de dados, especifique um nome para o objeto de modelo de dados e toque em **[!UICONTROL Adicionar]**. Um objeto de modelo de dados é adicionado ao modelo de dados de formulário. Observe que o objeto de modelo de dados recém-adicionado não está vinculado a uma fonte de dados e não tem propriedades como mostrado na imagem a seguir.
+1. Na caixa de diálogo Criar modelo de dados, especifique um nome para o objeto de modelo de dados e toque em **[!UICONTROL Adicionar]**. Um objeto de modelo de dados é adicionado ao modelo de dados de formulário. O objeto de modelo de dados recém-adicionado não está vinculado a uma fonte de dados e não tem propriedades conforme mostrado na imagem a seguir.
 
    ![nova entidade](assets/new-entity.png)
 
@@ -317,7 +317,7 @@ Uma propriedade calculada é aquela cujo valor é calculado com base em uma regr
 
 Por exemplo, você pode criar uma propriedade calculada **FullName** cujo valor é resultado da concatenação do valor existente **Nome** e **Sobrenome** propriedades. Para fazer isso:
 
-1. Criar uma nova propriedade com o nome `FullName` cujo tipo de dados é String.
+1. Criar uma propriedade com o nome `FullName` cujo tipo de dados é String.
 1. Ativar **[!UICONTROL Calculado]** e toque em **[!UICONTROL Concluído]** para criar a propriedade.
 
    ![calculado](assets/computed.png)

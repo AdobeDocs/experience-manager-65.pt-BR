@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1581'
-ht-degree: 67%
+source-wordcount: '1573'
+ht-degree: 62%
 
 ---
 
@@ -41,12 +41,12 @@ Este documento aborda detalhadamente cada uma dessas etapas.
 
 * Acesso de administrador ao Adobe Campaign Classic
    * Para executar a integração, é necessário ter uma instância do Adobe Campaign Classic em funcionamento, incluindo um banco de dados configurado.
-   * Se você precisar de detalhes adicionais sobre como definir e configurar o Adobe Campaign Classic, consulte a [documentação do Adobe Campaign Classic,](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=pt-BR) em particular, o Guia de instalação e configuração.
+   * Se precisar de detalhes adicionais sobre como instalar e configurar o Adobe Campaign Classic, consulte [Documentação do Adobe Campaign Classic,](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=pt-BR) particularmente o guia Instalação e configuração.
 * Acesso de administrador ao AEM
 
 ## Instalar o pacote de integração do AEM no Campaign {#install-package}
 
-O pacote de **Integração do AEM** no Adobe Campaign inclui várias configurações padrão necessárias para se conectar ao AEM.
+A variável **Integração com o AEM** no Adobe Campaign inclui várias configurações padrão necessárias para se conectar ao AEM.
 
 1. Como administrador, faça logon na instância do Adobe Campaign usando o console do cliente.
 

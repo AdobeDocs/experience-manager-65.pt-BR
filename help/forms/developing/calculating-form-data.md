@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1882'
+source-wordcount: '1878'
 ht-degree: 1%
 
 ---
@@ -80,13 +80,13 @@ Para ilustrar o uso de um script de design de formulário, esta seção examina 
 
 **A.** Um campo chamado NumericField1 **B.** Um campo chamado NumericField2 **C** Um campo chamado NumericField3
 
-A sintaxe do script localizado nesse design de formulário é a seguinte:
+A sintaxe do script nesse design de formulário é a seguinte:
 
 ```javascript
      NumericField3 = NumericField2 + NumericField1
 ```
 
-Neste design de formulário, o botão Calcular é um botão de comando e o script está localizado no `Click` evento. Quando um usuário insere valores nos dois primeiros campos (NumericField1 e NumericField2) e clica no botão Calcular, o formulário é enviado ao serviço do Forms, onde o script é executado. O serviço Forms renderiza o formulário de volta para o dispositivo cliente com os resultados do cálculo exibidos no campo NumericField3.
+Neste design de formulário, o botão Calcular é um botão de comando, e o script está no do `Click` evento. Quando um usuário insere valores nos dois primeiros campos (NumericField1 e NumericField2) e clica no botão Calcular, o formulário é enviado ao serviço do Forms, onde o script é executado. O serviço Forms renderiza o formulário de volta para o dispositivo cliente com os resultados do cálculo exibidos no campo NumericField3.
 
 >[!NOTE]
 >
@@ -152,14 +152,13 @@ Calcule dados de formulário usando a API do Forms (Java):
    * Chame o `FormsServiceClient` do objeto `processFormSubmission` e passe os seguintes valores:
 
       * A variável `com.adobe.idp.Document` objeto que contém os dados de formulário.
-      * Um valor de string que especifica variáveis de ambiente, incluindo todos os cabeçalhos HTTP relevantes. Você deve especificar o tipo de conteúdo a ser manipulado especificando um ou mais valores para o `CONTENT_TYPE` variável de ambiente. Por exemplo, para manipular dados XML e PDF, especifique o seguinte valor de string para esse parâmetro: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
+      * Um valor de string que especifica variáveis de ambiente, incluindo todos os cabeçalhos HTTP relevantes. Especifique o tipo de conteúdo a ser manipulado especificando um ou mais valores para o `CONTENT_TYPE` variável de ambiente. Por exemplo, para manipular dados XML e PDF, especifique o seguinte valor de string para esse parâmetro: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
       * Um valor de string que especifica a `HTTP_USER_AGENT` valor do cabeçalho; por exemplo, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * A `RenderOptionsSpec` objeto que armazena opções de tempo de execução.
 
-      A variável `processFormSubmission` o método retorna um `FormsResult` objeto que contém os resultados do envio do formulário.
+     A variável `processFormSubmission` o método retorna um `FormsResult` objeto que contém os resultados do envio do formulário.
 
    * Verificar se o estado de processamento associado a um formulário enviado é `1` ao invocar o `FormsResult` do objeto `getAction` método. Se esse método retornar o valor `1`, o cálculo foi executado e os dados podem ser gravados no navegador da web do cliente.
-
 
 1. Gravar o fluxo de dados do formulário de volta no navegador da Web do cliente
 
@@ -211,10 +210,9 @@ Calcule dados de formulário usando a API do Forms (serviço da Web):
       * Um vazio `MyArrayOf_xsd_anyTypeHolder` objeto preenchido pelo método. Esse parâmetro é usado para armazenar anexos de arquivo enviados junto com o formulário.
       * Um vazio `FormsResultHolder` objeto que é preenchido pelo método com o formulário enviado.
 
-      A variável `processFormSubmission` O método preenche o `FormsResultHolder` com os resultados do envio do formulário. A variável `processFormSubmission` o método retorna um `FormsResult` objeto que contém os resultados do envio do formulário.
+     A variável `processFormSubmission` O método preenche o `FormsResultHolder` com os resultados do envio do formulário. A variável `processFormSubmission` o método retorna um `FormsResult` objeto que contém os resultados do envio do formulário.
 
    * Verificar se o estado de processamento associado a um formulário enviado é `1` ao invocar o `FormsResult` do objeto `getAction` método. Se esse método retornar o valor `1`, o cálculo foi executado e os dados podem ser gravados no navegador da web do cliente.
-
 
 1. Gravar o fluxo de dados do formulário de volta no navegador da Web do cliente
 

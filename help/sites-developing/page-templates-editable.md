@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3219'
 ht-degree: 6%
 
 ---
@@ -56,7 +56,7 @@ A criação de modelos editáveis é feita principalmente com o [console de mode
 
 Para obter informações sobre como usar modelos editáveis em um projeto AEM, consulte [Criação de um projeto AEM usando Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478).
 
-Ao criar um novo modelo editável, você:
+Ao criar um modelo editável, você:
 
 1. Criar um [pasta dos modelos](#template-folders). Esta pasta não é obrigatória, mas é uma prática recomendada.
 1. Selecione um [tipo de modelo](#template-type). Este tipo é copiado para criar o [definição do modelo](#template-definitions).
@@ -416,7 +416,7 @@ A variável [grupos de dispositivos](/help/sites-developing/mobile.md#device-gro
 * No tipo de modelo editável
 * No modelo editável
 
-Ao criar um novo modelo editável, o valor é copiado do tipo de modelo para o modelo individual. Se o valor não estiver definido no tipo, ele poderá ser definido no template. Depois que um modelo é criado, não há herança do tipo para o modelo.
+Ao criar um modelo editável, o valor é copiado do tipo de modelo para o modelo individual. Se o valor não estiver definido no tipo, ele poderá ser definido no template. Depois que um modelo é criado, não há herança do tipo para o modelo.
 
 >[!CAUTION]
 >

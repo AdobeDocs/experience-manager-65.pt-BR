@@ -2,10 +2,10 @@
 title: Configurar a integração da tradução
 description: Saiba como conectar o AEM a um serviço de tradução.
 exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 95%
+source-wordcount: '1159'
+ht-degree: 94%
 
 ---
 
@@ -68,7 +68,7 @@ Depois que o pacote do conector do seu serviço de tradução de preferência fo
 * Se deve ser realizada tradução humana ou automática
 * Se outros conteúdos associados ao Fragmento de conteúdo, como tags, devem ou não ser traduzidos
 
-Para criar uma nova configuração de tradução:
+Para criar uma configuração de tradução:
 
 1. No menu de navegação global, clique ou toque em **Ferramentas** -> **Cloud Services** -> **Serviços de tradução em nuvem**.
 1. Navegue até o local em que deseja criar a configuração na estrutura do conteúdo. Geralmente, ela é baseada em um projeto específico, mas também pode ser global.
@@ -78,7 +78,7 @@ Para criar uma nova configuração de tradução:
 
 1. Forneça as seguintes informações nos campos e, em seguida, clique ou toque em **Criar**.
    1. Selecione o **Tipo de configuração** no menu suspenso. Selecione **Integração de tradução** na lista.
-   1. Insira um **Título** para sua configuração. O **Título** identifica a configuração no console do **Cloud Services**, bem como nas listas suspensas de propriedade da página.
+   1. Insira um **Título** para sua configuração. O **Título** identifica a configuração no console dos **Cloud Services**, bem como nas listas suspensas de propriedades da página.
    1. Opcionalmente, insira um **Nome** para o nó do repositório que armazena a configuração.
 
    ![Criar configuração de tradução](assets/create-translation-configuration.png)

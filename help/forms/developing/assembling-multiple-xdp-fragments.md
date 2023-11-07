@@ -13,9 +13,9 @@ discoiquuid: c4706632-02e5-4510-ad9c-4f732d5fbdad
 docset: aem65
 role: Developer
 exl-id: 54d98c69-2b2e-46cb-9f6a-7e9bdbe5c378
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1887'
+source-wordcount: '1883'
 ht-degree: 0%
 
 ---
@@ -74,9 +74,9 @@ O documento DDX contém um XDP `result` tag que especifica o nome do resultado. 
  }
 ```
 
-A variável `XDP source` A tag especifica o arquivo XDP que representa um documento XDP completo que pode ser usado como um container para adicionar fragmentos XDP ou como um entre vários documentos anexados em ordem. Nessa situação, o documento XDP é usado somente como um container (a primeira ilustração mostrada na *Montagem de vários fragmentos XDP*). Ou seja, os outros arquivos XDP são colocados no contêiner XDP.
+A variável `XDP source` A tag especifica o arquivo XDP que representa um documento XDP completo que pode ser usado como um container para adicionar fragmentos XDP ou como um dos vários documentos anexados em ordem. Nessa situação, o documento XDP é usado somente como um container (a primeira ilustração mostrada na *Montagem de vários fragmentos XDP*). Ou seja, os outros arquivos XDP são colocados no contêiner XDP.
 
-Para cada subformulário, é possível adicionar um `XDPContent` elemento (este elemento é opcional). No exemplo acima, observe que há três subformulários: `subPatientContact`, `subPatientPhysical`, e `subPatientHealth`. Ambos os `subPatientPhysical` subformulário e o `subPatientHealth` Os subformulários estão localizados no mesmo arquivo XDP, tuc018_paciente.xdp. O elemento do fragmento especifica o nome do subformulário, conforme definido no Designer.
+Para cada subformulário, é possível adicionar um `XDPContent` elemento (este elemento é opcional). No exemplo acima, observe que há três subformulários: `subPatientContact`, `subPatientPhysical`, e `subPatientHealth`. Ambos os `subPatientPhysical` subformulário e o `subPatientHealth` Os subformulários estão no mesmo arquivo XDP, tuc018_paciente.xdp. O elemento do fragmento especifica o nome do subformulário, conforme definido no Designer.
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Para montar vários documentos XDP, consulte todos os arquivos XDP usados para m
  <XDPContent insertionPoint="ddx_fragment" source="tuc018_contact.xdp" fragment="subPatientContact" required="false"/>
 ```
 
-O subformulário chamado *subPatientContact* deve estar localizado no arquivo XDP chamado *tuc018_contact.xdp*.
+O subformulário chamado *subPatientContact* deve estar no arquivo XDP chamado *tuc018_contact.xdp*.
 
 **Definir opções de tempo de execução**
 

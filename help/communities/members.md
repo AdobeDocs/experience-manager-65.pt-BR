@@ -7,9 +7,9 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '956'
 ht-degree: 4%
 
 ---
@@ -145,7 +145,7 @@ O membro pode ser adicionado a um ou mais grupos de membros. Comece inserindo te
 
 ### Guia SELOS {#badges-tab}
 
-A variável `BADGES` fornece a capacidade de atribuir selos manualmente, bem como de revogá-los. As medalhas podem ser para funções atribuídas, bem como medalhas normalmente obtidas.
+A variável `BADGES` fornece a capacidade de atribuir selos manualmente e revogá-los. As medalhas podem ser para funções atribuídas e medalhas normalmente obtidas.
 
 Consulte também [Pontuação e medalhas](implementing-scoring.md).
 
@@ -174,7 +174,7 @@ Selecionar `Add Group` para criar um grupo no ambiente de publicação.
 
 ![A janela Criar novo grupo](assets/group-console1.png)
 
-Os campos obrigatórios para criar um novo grupo de membros do lado da publicação são:
+Os campos obrigatórios para criar um grupo de membros do lado da publicação são:
 
 * **[!UICONTROL ID]**
 

@@ -7,9 +7,9 @@ topic-tags: managing-checklist
 content-type: reference
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6948'
+source-wordcount: '6946'
 ht-degree: 0%
 
 ---
@@ -289,7 +289,7 @@ Um rascunho inicial do contrato legal.
 
 ### Estrutura e formato do conteúdo atual {#current-content-structure-and-format}
 
-Documentação da arquitetura e do formato do conteúdo atual. Ele será usado para gerar a futura arquitetura de conteúdo. Ele também será usado para o Conceito de migração.
+Documentação da arquitetura e do formato do conteúdo atual. Isso é usado para gerar a arquitetura de conteúdo futura. Ele também será usado para o Conceito de migração.
 
 ### Política de backup e restauração do cliente {#customer-backup-and-restore-policy}
 
@@ -666,7 +666,7 @@ Os detalhes do sistema herdado devem ser coletados para que você saiba o que po
 
 ### Lista de ferramentas de desenvolvimento a serem usadas {#list-of-development-tools-to-be-used}
 
-Uma descrição das ferramentas que serão usadas na implementação; as ferramentas devem incluir:
+Uma descrição das ferramentas usadas na implementação; as ferramentas devem incluir:
 
 * ferramentas de documentação
 * ferramentas de rastreamento de problemas

@@ -12,9 +12,9 @@ discoiquuid: db22f775-fab1-4a78-b334-a9c4fa613e43
 docset: aem65
 feature: Mobile Forms
 exl-id: 62ff6306-9989-43b0-abaf-b0a811f0a6a4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1416'
 ht-degree: 0%
 
 ---
@@ -83,4 +83,4 @@ Os formulários Adobe Experience Manager (AEM) podem ajudar você a transformar 
 ## Cartão de referência rápida {#quick-reference-card}
 
 Você pode imprimir o seguinte cartão (clique no cartão para baixar uma versão de alta resolução) e mantê-lo em sua mesa para uma referência rápida:
-[ ![Cartão de referência rápida de práticas recomendadas do HTML5 Forms](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
+[![Cartão de referência rápida de práticas recomendadas do HTML5 Forms](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)

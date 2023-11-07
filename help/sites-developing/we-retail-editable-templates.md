@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 9%
+source-wordcount: '480'
+ht-degree: 10%
 
 ---
 
@@ -29,7 +29,7 @@ Todas as páginas no We.Retail são baseadas em modelos editáveis, permitindo q
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
-1. Observe que o seletor de modo não oferece mais um modo Design. Todas as páginas para We.Retail são baseadas em modelos editáveis e, para alterar o design dos modelos editáveis, elas devem ser editadas no editor de modelos.
+1. O seletor de modo não oferece mais um modo Design. Todas as páginas para We.Retail são baseadas em modelos editáveis e, para alterar o design dos modelos editáveis, elas devem ser editadas no editor de modelos.
 1. No **Informações da página** menu selecionar **Editar modelo**.
 1. Agora você está editando o modelo da Página principal.
 
@@ -45,7 +45,7 @@ Todas as páginas no We.Retail são baseadas em modelos editáveis, permitindo q
 
 1. Na caixa de diálogo de design do contêiner de layout, é possível
 
-   * Selecione uma política existente ou crie uma nova política para o container
+   * Selecionar uma política existente ou criar uma política para o container
    * Selecionar quais componentes são permitidos no contêiner
    * Definir os componentes padrão a serem colocados quando um ativo é arrastado para o contêiner
 
@@ -55,7 +55,7 @@ Todas as páginas no We.Retail são baseadas em modelos editáveis, permitindo q
 
    Isso permite:
 
-   * Selecione uma política existente ou crie uma nova política para o container
+   * Selecionar uma política existente ou criar uma política para o container
    * Defina os recursos disponíveis para o autor da página ao usar esse componente, como
 
       * Fontes de colagem permitidas

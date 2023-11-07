@@ -9,9 +9,9 @@ docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: 5242600c-2281-46f9-a347-d985b4e319b3
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >A atualização requer tempo de inatividade para o nível de Autor, pois a maioria das atualizações do Adobe Experience Manager (AEM) é realizada no local. Seguindo essas práticas recomendadas, você pode minimizar ou eliminar o tempo de inatividade do nível de publicação.
 
-Ao atualizar os ambientes do AEM, você deve considerar as diferenças na abordagem entre atualizar os ambientes do autor ou de publicação para minimizar o tempo de inatividade dos autores e usuários finais. Esta página descreve o procedimento de alto nível para atualizar uma topologia de AEM em execução atualmente em uma versão do AEM 6.x. Como o processo difere entre os níveis de criação e publicação, bem como implantações baseadas em Mongo e TarMK, cada nível e microkernel foi listado em uma seção separada. Ao executar a implantação, o Adobe recomenda primeiro atualizar o ambiente do autor, determinar o sucesso e prosseguir para os ambientes de publicação.
+Ao atualizar os ambientes do AEM, você deve considerar as diferenças na abordagem entre atualizar os ambientes do autor ou de publicação para minimizar o tempo de inatividade dos autores e usuários finais. Esta página descreve o procedimento de alto nível para atualizar uma topologia de AEM em execução atualmente em uma versão do AEM 6.x. Como o processo difere entre os níveis de criação e publicação e implantações baseadas em Mongo e TarMK, cada nível e microkernel foi listado em uma seção separada. Ao executar a implantação, o Adobe recomenda primeiro atualizar o ambiente do autor, determinar o sucesso e prosseguir para os ambientes de publicação.
 
 <!--
 >[!IMPORTANT]
@@ -83,7 +83,7 @@ A topologia presumida para esta seção consiste em um servidor de Autores em ex
 
 ### Topologia Inicial {#starting-topology-1}
 
-A topologia presumida para esta seção consiste em um cluster de Autores MongoMK com pelo menos duas instâncias de Autor do AEM, apoiadas por pelo menos dois bancos de dados MongoMK. Todas as instâncias de Autor compartilham um armazenamento de dados. Essas etapas devem se aplicar aos armazenamentos de dados S3 e File. A replicação ocorre dos servidores do autor para o farm de publicação TarMK.
+A topologia presumida para esta seção consiste em um cluster de Autores MongoMK com pelo menos duas instâncias de Autores AEM, apoiadas por pelo menos dois bancos de dados MongoMK. Todas as instâncias de Autor compartilham um armazenamento de dados. Essas etapas devem se aplicar aos armazenamentos de dados S3 e File. A replicação ocorre dos servidores do autor para o farm de publicação TarMK.
 
 ![topologia de mongo](assets/mongo-topology.jpg)
 
@@ -93,7 +93,7 @@ A topologia presumida para esta seção consiste em um cluster de Autores MongoM
 
 1. Interrompa a criação de conteúdo.
 1. Clonar o armazenamento de dados para backup.
-1. Pare todas as instâncias de autor do AEM, exceto uma instância de autor principal.
+1. Interrompa todas as instâncias de autor do AEM, exceto uma instância de autor principal.
 1. Remova todos os nós MongoDB, exceto um do conjunto de réplicas, sua instância Mongo primária.
 1. Atualize o `DocumentNodeStoreService.cfg` no Autor principal para refletir seu único conjunto de réplicas do membro.
 1. Reinicie o Author principal para garantir que ele seja reiniciado corretamente.

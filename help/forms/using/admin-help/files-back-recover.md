@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2072'
+source-wordcount: '2065'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ O DB2 tem recursos integrados para fazer backup de um banco de dados no Tivoli S
 
 Use backups de snapshot ou configure o banco de dados do Oracle para ser executado no modo de log de arquivamento. (Consulte [Backup do Oracle: uma introdução](https://www.databasedesign-resource.com/oracle-backup.md).) Para obter mais informações sobre backup e recuperação do banco de dados do Oracle, acesse estes sites:
 
-[Backup e recuperação do Oracle:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Explica os conceitos de backup e recuperação e as técnicas mais comuns de uso do Recovery Manager (RMAN) para backup, recuperação e emissão de relatórios com mais detalhes, além de fornecer mais informações sobre como planejar uma estratégia de backup e recuperação.
+[Backup e recuperação do Oracle:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Explica os conceitos de backup e recuperação e as técnicas mais comuns de uso do Recovery Manager (RMAN) para backup, recuperação e emissão de relatórios com mais detalhes e fornece mais informações sobre como planejar uma estratégia de backup e recuperação.
 
 [Oracle Database Backup and Recovery User&#39;s Guide (Guia do Usuário para Backup e Recuperação do Banco de Dados do):](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) Fornece informações detalhadas sobre a arquitetura RMAN, conceitos e mecanismos de backup e recuperação, técnicas avançadas de recuperação, como recursos de recuperação point-in-time e flashback de banco de dados, além de ajuste do desempenho de backup e recuperação. Ele também abrange backup e recuperação gerenciados pelo usuário, usando instalações do sistema operacional do host em vez de RMAN. Esse volume é essencial para backup e recuperação de implantações de bancos de dados mais sofisticadas e para cenários avançados de recuperação.
 
@@ -153,7 +153,7 @@ O diretório raiz do armazenamento de conteúdo é criado quando o Content Servi
 
 O local padrão para o diretório raiz de armazenamento de conteúdo é `[aem-forms root]/lccs_data`.
 
-Faça backup dos seguintes diretórios localizados no diretório Raiz de armazenamento de conteúdo:
+Faça backup dos seguintes diretórios no diretório raiz do armazenamento de conteúdo:
 
 /audit.contentstore
 
@@ -163,7 +163,7 @@ Faça backup dos seguintes diretórios localizados no diretório Raiz de armazen
 
 /backup-lucene-indexes
 
-Se o diretório /backup-lucene-indexes não estiver presente, faça backup do diretório /lucene-indexes, também localizado no diretório Raiz de armazenamento de conteúdo. Se o diretório /backup-lucene-indexes estiver presente, não faça backup do diretório /lucene-indexes porque isso pode causar erros.
+Se o diretório /backup-lucene-indexes não estiver presente, faça backup do diretório /lucene-indexes, também no diretório raiz de armazenamento de conteúdo. Se o diretório /backup-lucene-indexes estiver presente, não faça backup do diretório /lucene-indexes porque isso pode causar erros.
 
 ### Local raiz do armazenamento de conteúdo (ambiente em cluster) {#content-storage-root-location-clustered-environment}
 
@@ -173,7 +173,7 @@ Quando você instala o Content Services (Obsoleto) em um ambiente em cluster, o 
 
 **Diretório raiz do índice:** Um diretório criado em cada nó do cluster, sempre com o mesmo caminho e nome de diretório
 
-O local padrão para o diretório raiz de armazenamento de conteúdo é `[GDS root]/lccs_data`, onde `[GDS root]` é a localização descrita em [Localização do GDS](files-back-recover.md#gds-location). Faça backup dos seguintes diretórios localizados no diretório Raiz de armazenamento de conteúdo:
+O local padrão para o diretório raiz de armazenamento de conteúdo é `[GDS root]/lccs_data`, onde `[GDS root]` é a localização descrita em [Localização do GDS](files-back-recover.md#gds-location). Faça backup dos seguintes diretórios no diretório raiz do armazenamento de conteúdo:
 
 /audit.contentstore
 
@@ -183,7 +183,7 @@ O local padrão para o diretório raiz de armazenamento de conteúdo é `[GDS ro
 
 /backup-lucene-indexes
 
-Se o diretório /backup-lucene-indexes não estiver presente, faça backup do diretório /lucene-indexes, também localizado no diretório Raiz de armazenamento de conteúdo. Se o diretório /backup-lucene-indexes estiver presente, não faça backup do diretório /lucene-indexes porque isso pode causar erros.
+Se o diretório /backup-lucene-indexes não estiver presente, faça backup do diretório /lucene-indexes, também no diretório raiz de armazenamento de conteúdo. Se o diretório /backup-lucene-indexes estiver presente, não faça backup do diretório /lucene-indexes porque isso pode causar erros.
 
 O local padrão para o diretório Raiz de Índice é `[aem-forms root]/lucene-indexes` em cada nó.
 
@@ -193,6 +193,6 @@ Se você instalou fontes adicionais no ambiente de formulários AEM, é necessá
 
 >[!NOTE]
 >
-Por padrão, as fontes de Adobe instaladas com o AEM estão localizadas no `[aem-forms root]/fonts` diretório.
+Por padrão, as fontes de Adobe instaladas com o AEM estão no estado `[aem-forms root]/fonts` diretório.
 
 Se você estiver reinicializando o sistema operacional no computador host e quiser usar fontes do sistema operacional anterior, o conteúdo do diretório de fontes do sistema também deverá ser submetido a backup. (Para obter instruções específicas, consulte a documentação do seu sistema operacional).

@@ -1,18 +1,14 @@
 ---
 title: Gerenciamento de assinaturas
-seo-title: Managing Subscriptions
 description: Os usuários podem ser solicitados a assinar as listas de correspondência do provedor de serviços de email com a ajuda do componente de Formulário usado em uma página da Web AEM. Para preparar uma página AEM com um formulário de inscrição para inscrição nas listas de endereçamento do seu serviço de email, você deve aplicar a configuração de serviço correspondente à página AEM que o assinante potencial visitará.
-seo-description: Users can be asked to subscribe to Email Service Provider's mailing lists with the help of the Form component used on an AEM web page. To prepare an AEM page with a sign-up form for subscription to your e-mail service mailing lists, you must apply the corresponding service configuration to the AEM page that the potential subscriber will visit.
-uuid: b2578a3d-dba1-4114-b21a-5f34c0cccc5a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
 exl-id: add05d22-3a11-49e9-a554-2315962552d5
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >O Adobe não planeja aprimorar ainda mais esse recurso (Gerenciamento de clientes em potencial e listas).
->A recomendação é aproveitar [Adobe Campaign e sua integração com o AEM](/help/sites-administering/campaign.md).
+>A recomendação é usar [Adobe Campaign e sua integração com o AEM](/help/sites-administering/campaign.md).
 
 Os usuários podem ser solicitados a assinar **do provedor de serviços de e-mail** listas de endereçamento com a ajuda do **Formulário** componente usado em uma página da Web AEM. Para preparar uma página AEM com um formulário de inscrição para inscrição nas listas de endereçamento do seu serviço de email, você deve aplicar a configuração de serviço correspondente à página AEM que o assinante potencial visitará.
 
@@ -72,7 +68,7 @@ Para criar um formulário de inscrição e configurá-lo para assinaturas das li
 Para que a assinatura e o cancelamento de assinatura do serviço de e-mail funcionem por meio do formulário de inscrição na instância de publicação, é necessário seguir estas etapas:
 
 1. Na instância do autor, navegue até o Gerenciador de pacotes.
-1. Crie um novo pacote. Definir o filtro como `/etc/key`.
+1. Criar um pacote. Definir o filtro como `/etc/key`.
 1. Crie e baixe o pacote.
 1. Navegue até o Gerenciador de pacotes na instância de publicação e faça upload deste pacote.
 1. Navegue até o console Publicar osgi e reinicie o pacote chamado **Suporte à criptografia do Adobe Granite**.

@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) e as diretrizes de acessibilidade na Web
 description: Uma introdução ao Adobe Experience Manager (AEM) e às diretrizes de acessibilidade na Web
 exl-id: db8785b9-09eb-444a-addc-74c520e710a9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 69%
+source-wordcount: '412'
+ht-degree: 67%
 
 ---
 
@@ -19,7 +19,7 @@ Criar sites e conteúdo acessíveis com impactos do AEM:
 
 * Autores que usam esses recursos para criar sites acessíveis.
 
-   A criação de conteúdo acessível é um processo. O AEM fornece os recursos, mas os criadores de conteúdo precisam garantir que sigam as técnicas necessárias para criar conteúdo acessível.
+  A criação de conteúdo acessível é um processo. O AEM fornece os recursos, mas os criadores de conteúdo precisam garantir que sigam as técnicas necessárias para criar conteúdo acessível.
 
 * Os desenvolvedores de modelos também devem estar cientes desses problemas ao implementar o design do site.
 
@@ -59,4 +59,4 @@ O Adobe Experience Manager (AEM) inclui vários recursos e funcionalidades que m
 
 ## Acessibilidade na Adobe {#accessibility-at-adobe}
 
-Para obter informações adicionais, visite o [Centro de recursos de acessibilidade da Adobe](https://www.adobe.com/accessibility/).
+Para obter mais informações, visite o [Centro de recursos de acessibilidade do Adobe](https://www.adobe.com/accessibility/).

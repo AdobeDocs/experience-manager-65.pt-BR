@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 exl-id: 171754a2-1ba5-42dc-b6d2-3d730807cc31
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2450'
+source-wordcount: '2448'
 ht-degree: 2%
 
 ---
@@ -123,7 +123,7 @@ Consulte [Uso do salvamento automático no aplicativo AEM Forms](/help/forms/usi
 
 ## Diferenças entre a Caixa de entrada do AEM e os recursos do aplicativo AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Duas das principais maneiras de iniciar um fluxo de trabalho centrado no Forms são usar [Caixa de entrada AEM](/help/forms/using/manage-applications-inbox.md) e AEM Forms. No entanto, os recursos da Caixa de entrada AEM e do aplicativo AEM Forms são diferentes. A Caixa de entrada AEM funciona somente com [Fluxos de trabalho centrados na Forms](/help/forms/using/aem-forms-workflow.md) enquanto o aplicativo AEM Forms funciona com fluxos de trabalho centrados no Forms e também com gerenciamento de processos. Para obter mais informações sobre as diferenças entre os recursos da Caixa de entrada AEM e do aplicativo AEM Forms, consulte [Ações e recursos de fluxos de trabalho do AEM centrados em formulários em fluxos de trabalho OSGi e AEM Forms JEE](capabilities-osgi-jee-workflows.md).
+Duas das principais maneiras de iniciar um fluxo de trabalho centrado no Forms são usar [Caixa de entrada AEM](/help/forms/using/manage-applications-inbox.md) e AEM Forms. No entanto, os recursos da Caixa de entrada AEM e do aplicativo AEM Forms são diferentes. A Caixa de entrada AEM funciona somente com [Fluxos de trabalho centrados na Forms](/help/forms/using/aem-forms-workflow.md) enquanto o aplicativo AEM Forms funciona com fluxos de trabalho e gerenciamento de processos centrados na Forms. Para obter mais informações sobre as diferenças entre os recursos da Caixa de entrada AEM e do aplicativo AEM Forms, consulte [Ações e recursos de fluxos de trabalho do AEM centrados em formulários em fluxos de trabalho OSGi e AEM Forms JEE](capabilities-osgi-jee-workflows.md).
 
 ## Formulários suportados {#supported-forms}
 
@@ -218,4 +218,4 @@ Você pode atualizar o aplicativo diretamente da Play Store.
 
 * **Se uma versão anterior do aplicativo for criada e instalada usando o código-fonte (aplicável para iOS e Android)**:
 
-   Antes de instalar o novo aplicativo, sincronize todos os dados com o servidor do AEM Forms. Depois que os dados forem sincronizados, desinstale a versão anterior do aplicativo e instale o novo aplicativo.
+  Antes de instalar o novo aplicativo, sincronize todos os dados com o servidor do AEM Forms. Depois que os dados forem sincronizados, desinstale a versão anterior do aplicativo e instale o novo aplicativo.

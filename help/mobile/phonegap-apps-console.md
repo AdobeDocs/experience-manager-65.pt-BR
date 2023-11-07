@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2692'
+source-wordcount: '2688'
 ht-degree: 0%
 
 ---
@@ -169,16 +169,16 @@ Execute o procedimento a seguir na instância em que deseja atualizar o cache. P
 
 ### Utilização de modelos de aplicativo {#using-app-templates}
 
-Este é um recurso que está disponível no Feature Pack 2 do Apps 6.1 e fornece uma maneira fácil de aproveitar os modelos de aplicativo existentes para a criação de novos aplicativos no AEM.
+Este é um recurso que está disponível no Feature Pack 2 do Apps 6.1 e fornece uma maneira fácil de usar os modelos de aplicativo existentes para a criação de novos aplicativos no AEM.
 
 O que é um modelo de aplicativo? Pense nisso como uma coleção de modelos de página e componentes que representam uma linha de base ou base de um aplicativo.
-Ao criar um novo aplicativo com base no modelo de outro aplicativo, você obterá um aplicativo que tem um ponto de partida representativo do aplicativo no qual ele foi criado.
+Ao criar um aplicativo com base no modelo de outro aplicativo, você obterá um aplicativo que tem um ponto de partida representativo do aplicativo no qual ele foi criado.
 
 Você deve ter um modelo de aplicativo móvel existente (ou um aplicativo instalado que tenha um modelo de aplicativo) para usar esse recurso.
 
 O pacote de amostras mais recente do AEM Apps 6.1 inclui uma versão atualizada do Geometrixx com um modelo de aplicativo. Como alternativa, você pode instalar o StarterKit, que também fornece um template.
 
-Etapas para criar um novo aplicativo com base em um modelo de aplicativo:
+Etapas para criar um aplicativo com base em um modelo de aplicativo:
 
 1. Verifique se você tem o pacote de recursos e os pacotes de amostras de referência do AEM Apps 6.1 mais recentes instalados
 1. Clique em Aplicativos no painel esquerdo.
@@ -219,7 +219,7 @@ Para abrir o aplicativo, no painel, clique em Aplicativos móveis e selecione Ge
 
 Cada página do aplicativo móvel inclui os seguintes recursos:
 
-* Um botão Voltar para retornar à página principal. Observe que o botão Voltar não é exibido na página inicial.
+* Um botão Voltar para retornar à página principal. O botão Voltar não é exibido na página inicial.
 * Um painel dispensável que oferece um menu de comandos e links:
 
    * Abra a página Locais.

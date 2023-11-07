@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: d370d772-ef4d-4f38-826c-e90d07735822
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Para que o conteúdo direcionado funcione nos aplicativos móveis, há dois serv
 
 ## Cloud Service Adobe Target {#adobe-target-cloud-service}
 
-No Painel do AEM Mobile, localize Gerenciar Cloud Services e clique no botão +.
+No Painel do AEM Mobile, localize Gerenciar Cloud Service e clique no botão +.
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
@@ -69,7 +69,7 @@ Agora que o código do cliente foi associado ao aplicativo móvel, quando o serv
 
 ### Serviço Móvel Adobe Pode Servir {#adobe-mobile-service-could-service}
 
-Agora que o AMS foi configurado, é hora de associar o aplicativo móvel no Painel do Adobe Mobile. No Painel do AEM Mobile, localize Gerenciar Cloud Services e clique no botão +.
+Agora que o AMS foi configurado, é hora de associar o aplicativo móvel no Painel do Adobe Mobile. No Painel do AEM Mobile, localize Gerenciar Cloud Service e clique no botão +.
 
 ![chlimage_1-12](assets/chlimage_1-12.png)
 
@@ -79,7 +79,7 @@ Selecione o cartão Adobe Mobile Services e clique em Avançar.
 
 Na etapa Criar ou selecionar assistente, selecione o menu suspenso Mobile Service e selecione a entrada Criar configuração. Forneça o título, a empresa, o nome de usuário, a senha e selecione o data center apropriado. Se você não souber esses valores, entre em contato com o administrador do Adobe Mobile Service para obtê-los. Depois que todos os campos forem preenchidos, clique em **Verificar**. O processo de verificação vai para o AMS e verifica as credenciais da conta. Após a validação bem-sucedida, uma lista de Aplicativos móveis será preenchida, onde você selecionará o aplicativo móvel associado na lista suspensa. Clique no botão Enviar para concluir o assistente. O processo pode levar algum tempo para obter os dados de configuração e qualquer análise associada ao aplicativo. Após a conclusão do processo, clique em **Concluído** no modal para retornar ao Painel do Adobe Mobile.
 
-Voltando ao Painel de publicação de conteúdo para dispositivos móveis, o bloco Gerenciar Cloud Services contém o serviço de nuvem AMS. Observe também que o bloco Analisar métricas é preenchido com relatórios de ciclo de vida.
+Voltando ao Painel de publicação de conteúdo para dispositivos móveis, o bloco Gerenciar Cloud Service contém o serviço de nuvem AMS. Além disso, o bloco Analisar métricas é preenchido com relatórios de ciclo de vida.
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
 

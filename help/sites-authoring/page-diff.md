@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 86%
+source-wordcount: '571'
+ht-degree: 91%
 
 ---
 
@@ -48,7 +48,7 @@ Independentemente do conteúdo sendo comparado, a apresentação do diferencial 
 * O conteúdo selecionado quando você iniciou o diferencial é exibido à esquerda (o ponto de entrada do diferencial).
 * O conteúdo a ser comparado é exibido à direita (ou seja, aquele com o qual o conteúdo selecionado será comparado).
 
-Por exemplo, ao comparar versões, a versão atual é exibida à esquerda e a versão anterior é exibida à direita.
+Por exemplo, ao comparar versões, a versão atual será exibida à esquerda e a versão anterior será exibida à direita.
 
 A origem de ambas as páginas é claramente exibida na barra de cabeçalho na parte superior da janela do navegador.
 
@@ -102,4 +102,4 @@ Há algumas situações em que o recurso de diferencial de páginas pode não de
 
 >[!NOTE]
 >
->Para obter mais detalhes sobre a operação do mecanismo diff da página, bem como limitações que podem afetar o diff da página, consulte a [documentação do desenvolvedor](/help/sites-developing/pagediff.md) deste recurso.
+>Para obter mais detalhes sobre a operação do mecanismo diff da página e as limitações que podem afetar o diff da página, consulte a [documentação do desenvolvedor](/help/sites-developing/pagediff.md) deste recurso.

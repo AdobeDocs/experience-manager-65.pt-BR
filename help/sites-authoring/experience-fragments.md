@@ -2,10 +2,10 @@
 title: Fragmentos de experiência
 description: Fragmentos de experiência na criação do Adobe Experience Manager Sites.
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 81%
+source-wordcount: '1440'
+ht-degree: 80%
 
 ---
 
@@ -234,7 +234,7 @@ O exemplo de procedimento a seguir ilustra como criar um teaser de um produto:
 
    ![xf-06](assets/xf-06.png)
 
-1. Confirmar com **Concluído** (ícone de marca de verificação), a nova variação será mostrada no painel:
+1. Confirmar com **Concluído** (ícone de marca de verificação), a nova variação é mostrada no painel:
 
    ![xf-07](assets/xf-07.png)
 
@@ -267,7 +267,7 @@ Selecione um ou mais componentes para criar um bloco de construção para recicl
 
 ### Criar um bloco de construção {#creating-a-building-block}
 
-Para criar um novo Bloco de construção:
+Para criar um Bloco de Construção:
 
 1. No editor de Fragmento de experiência, selecione os componentes que deseja reutilizar:
 
@@ -281,7 +281,7 @@ Para criar um novo Bloco de construção:
 
    ![xf-11](assets/xf-11.png)
 
-1. O **Bloco de construção** será mostrado na guia e poderá ser selecionado no sistema de parágrafos:
+1. A variável **Bloco de construção** é exibido na guia e pode ser selecionado no sistema de parágrafos:
 
    ![xf-12](assets/xf-12.png)
 

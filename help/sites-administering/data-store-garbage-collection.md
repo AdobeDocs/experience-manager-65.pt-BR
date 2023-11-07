@@ -11,20 +11,20 @@ content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1889'
+source-wordcount: '1885'
 ht-degree: 0%
 
 ---
 
 # Coleta de lixo do armazenamento de dados {#data-store-garbage-collection}
 
-Quando um ativo WCM convencional é removido, a referência ao registro de armazenamento de dados subjacente pode ser removida da hierarquia do nó, mas o próprio registro de armazenamento de dados permanece. Esse registro de armazenamento de dados não referenciado torna-se &quot;lixo&quot;, que não precisa ser retido. Nos casos em que existem vários ativos de lixo, é útil eliminá-los para preservar espaço e otimizar o desempenho de backup e manutenção do sistema de arquivos.
+Quando um ativo WCM convencional é removido, a referência ao registro de armazenamento de dados subjacente pode ser removida da hierarquia do nó, mas o próprio registro de armazenamento de dados permanece. Esse registro de armazenamento de dados não referenciado torna-se &quot;lixo&quot;, que não precisa ser retido. Nos casos em que existem vários ativos de lixo, é benéfico eliminá-los para preservar espaço e otimizar o desempenho de backup e manutenção do sistema de arquivos.
 
 Na maioria das vezes, um aplicativo WCM tende a coletar informações, mas não a excluí-las com quase frequência. Embora novas imagens sejam adicionadas, mesmo substituindo versões antigas, o sistema de controle de versão ainda retém a antiga e permite a reversão para ela, se necessário. Dessa forma, a maior parte do conteúdo que adicionamos ao sistema é armazenada permanentemente. Então, qual é a fonte típica de &quot;lixo&quot; no repositório que podemos querer limpar?
 
-O AEM usa o repositório como armazenamento para várias atividades internas e de manutenção:
+O AEM usa o repositório como armazenamento para várias atividades internas e de manutenção do sistema:
 
 * Pacotes criados e baixados
 * Arquivos temporários criados para replicação de publicação

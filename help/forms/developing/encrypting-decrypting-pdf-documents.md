@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '8187'
+source-wordcount: '8184'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Você deve obter um documento PDF não criptografado para criptografar o documen
 
 Para criptografar um documento PDF com uma senha, você especifica quatro valores, incluindo dois valores de senha. O primeiro valor de senha é usado para criptografar o documento PDF e deve ser especificado ao abrir o documento PDF. O segundo valor de senha, chamado de valor de senha mestre, é usado para remover a criptografia do documento PDF. Os valores de senha fazem distinção entre maiúsculas e minúsculas, e esses dois valores não podem ser os mesmos.
 
-Você deve especificar os recursos do documento PDF para criptografar. Você pode criptografar todo o documento PDF, tudo exceto os metadados do documento ou apenas os anexos do documento. Se você criptografar somente os anexos do documento, será solicitada uma senha ao usuário quando ele tentar acessar os anexos do arquivo.
+Especifique os recursos do documento PDF a serem criptografados. Você pode criptografar todo o documento PDF, tudo exceto os metadados do documento ou apenas os anexos do documento. Se você criptografar somente os anexos do documento, será solicitada uma senha ao usuário quando ele tentar acessar os anexos do arquivo.
 
 Ao criptografar um documento PDF, você pode especificar permissões associadas ao documento protegido. Especificando permissões, você pode controlar as ações que um usuário que abre um documento PDF criptografado por senha pode executar. Por exemplo, para extrair dados de formulário com êxito, você deve definir as seguintes permissões:
 
@@ -142,7 +142,7 @@ Criptografe um documento PDF com uma senha usando a API de criptografia (Java):
    * Criar um `PasswordEncryptionOptionSpec` invocando seu construtor.
    * Especifique os recursos do documento PDF a serem criptografados chamando o `PasswordEncryptionOptionSpec` do objeto `setEncryptOption` e passar um `PasswordEncryptionOption` valor de enumeração que especifica os recursos do documento a serem criptografados. Por exemplo, para criptografar todo o documento PDF, incluindo seus metadados e anexos, especifique `PasswordEncryptionOption.ALL`.
    * Criar um `java.util.List` objeto que armazena as permissões de criptografia usando o `ArrayList` construtor.
-   * Especifique uma permissão invocando o `java.util.List` object&#39;s `add` e transmitindo um valor de enumeração que corresponde à permissão que você deseja definir. Por exemplo, para definir a permissão que permite a um usuário copiar dados localizados no documento PDF, especifique `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. (Repita essa etapa para cada permissão a ser definida).
+   * Especifique uma permissão invocando o `java.util.List` object&#39;s `add` e transmitindo um valor de enumeração que corresponde à permissão que você deseja definir. Por exemplo, para definir a permissão que permite a um usuário copiar dados no documento PDF, especifique `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. (Repita essa etapa para cada permissão a ser definida).
    * Especifique a opção de compatibilidade do Acrobat chamando o `PasswordEncryptionOptionSpec` do objeto `setCompatability` e transmitindo um valor de enumeração que especifica o nível de compatibilidade do Acrobat. Por exemplo, você pode especificar `PasswordEncryptionCompatability.ACRO_7`.
    * Especifique o valor da senha que permite que um usuário abra o documento de PDF criptografado invocando o `PasswordEncryptionOptionSpec` do objeto `setDocumentOpenPassword` e transmitindo um valor de string que representa a senha aberta.
    * Especifique o valor da senha mestre que permite que um usuário remova a criptografia do documento PDF, chamando o `PasswordEncryptionOptionSpec` do objeto `setPermissionPassword` e transmitindo um valor de string que representa a senha mestre.

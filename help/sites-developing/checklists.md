@@ -1,25 +1,21 @@
 ---
 title: Listas de verificação
-seo-title: Checklists
 description: A lista de verificação a seguir destaca alguns dos principais problemas de teste
-seo-description: The following checklist highlights some of the main testing issues
-uuid: 0456c98c-779f-415d-9641-b17ac141698b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
-discoiquuid: 8f94c22d-5f08-4a8b-8bb5-5ec757c44bc8
 exl-id: 16c5f9aa-024d-4d8a-ba08-22b073289cfd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '156'
 ht-degree: 3%
 
 ---
 
 # Listas de verificação{#checklists}
 
-A lista de verificação a seguir destaca alguns dos principais problemas. Leia as outras seções relacionadas a Testes para obter detalhes completos.
+A lista de verificação a seguir destaca alguns dos principais problemas: leia as outras seções relacionadas a Testes para obter detalhes completos.
 
 | Verificar | Resposta | Ação | Proprietário | O prazo é |
 |---|---|---|---|---|

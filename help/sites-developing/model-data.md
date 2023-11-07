@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1775'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Outras restrições de dados, como restrições obrigatórias ou restrições de
 
 #### Exemplo {#example-1}
 
-O exemplo acima de uso de um `lastModified` A propriedade Date, por exemplo, no nó &quot;blog post&quot; não significa que haja necessidade de um tipo de nó especial. Eu definitivamente usaria `nt:unstructured` para os nós de postagem de blog, pelo menos inicialmente. Como no meu aplicativo de blog, tudo o que vou fazer é exibir a última data modificada de qualquer maneira (possivelmente &quot;pedir por&quot;), mal me importo se é uma data. Como eu implicitamente confio em meu aplicativo de escrita de blog para colocar uma &quot;data&quot; lá de qualquer maneira, realmente não há necessidade de declarar a presença de um `lastModified` de um tipo de nó.
+O exemplo acima de uso de um `lastModified` A propriedade Date, por exemplo, no nó &quot;publicação do blog&quot;, não significa que haja necessidade de um tipo de nó especial. Eu definitivamente usaria `nt:unstructured` para os nós de postagem de blog, pelo menos inicialmente. Como no meu aplicativo de blog, tudo o que vou fazer é exibir a última data modificada de qualquer maneira (possivelmente &quot;pedir por&quot;), mal me importo se é uma data. Como eu implicitamente confio em meu aplicativo de escrita de blog para colocar uma &quot;data&quot; lá de qualquer maneira, realmente não há necessidade de declarar a presença de um `lastModified` de um tipo de nó.
 
 ### Regra #2: Direcione a hierarquia de conteúdo; não deixe que isso aconteça. {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
 

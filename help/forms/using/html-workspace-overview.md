@@ -10,9 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 866cd9cb-6661-4b0f-a3af-e39453e6e51b
 docset: aem65
 exl-id: 0bedcbd9-2cf8-47da-9440-c773982e550c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1042'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ O mapeamento entre vários tipos de personalizações em ambos os espaços de tr
    <td>
     <ol>
      <li><a href="/help/forms/using/description-reusable-components.md">Trabalho com componentes reutilizáveis</a></li>
-     <li><a href="/help/forms/using/creating-new-login-screen.md">Criando uma nova tela de login</a></li>
+     <li><a href="/help/forms/using/creating-new-login-screen.md">Tela de criação de logon</a></li>
      <li>O contêiner de aprovação está obsoleto.</li>
     </ol> </td>
   </tr>

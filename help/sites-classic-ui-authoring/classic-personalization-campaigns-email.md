@@ -1,19 +1,15 @@
 ---
 title: Marketing por email
-seo-title: E-mail Marketing
-description: O marketing por email (por exemplo, boletins informativos) é uma parte importante de qualquer campanha de marketing, pois é usado para enviar conteúdo aos seus clientes potenciais. No AEM, é possível criar informativos a partir de conteúdo existente do AEM, além de adicionar novo conteúdo, específico para os informativos.
-seo-description: E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content as well as add new content, specific to the newsletters.
-uuid: 565943bf-fe37-4d5c-98c3-7c629c4ba264
+description: O marketing por email (por exemplo, boletins informativos) é uma parte importante de qualquer campanha de marketing, pois é usado para enviar conteúdo aos seus clientes potenciais. No AEM, você pode criar informativos a partir de conteúdo existente do AEM e adicionar novo conteúdo, específico para os informativos.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
 exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
-source-git-commit: 1ba34f95cf3ce3f136482075802d2e4372f28917
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1770'
+source-wordcount: '1764'
 ht-degree: 1%
 
 ---
@@ -24,9 +20,9 @@ ht-degree: 1%
 >[!NOTE]
 >
 >A Adobe não planeja aprimorar ainda mais o rastreamento de e-mails de rejeições/aberturas (não entregues) enviadas pelo serviço AEM SMTP.
->A recomendação é [aproveitar o Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
+>A recomendação é usar [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
-O marketing por email (por exemplo, boletins informativos) é uma parte importante de qualquer campanha de marketing, pois é usado para enviar conteúdo aos seus clientes potenciais. No AEM, é possível criar informativos a partir de conteúdo existente do AEM, além de adicionar novo conteúdo, específico para os informativos.
+O marketing por email (por exemplo, boletins informativos) é uma parte importante de qualquer campanha de marketing, pois é usado para enviar conteúdo aos seus clientes potenciais. No AEM, você pode criar informativos a partir de conteúdo existente do AEM e adicionar novo conteúdo, específico para os informativos.
 
 Depois de criado, é possível enviar informativos para o grupo específico de usuários imediatamente ou em outro horário agendado (por meio do uso de um fluxo de trabalho). Além disso, os usuários podem assinar informativos no formato que escolherem.
 
@@ -67,7 +63,7 @@ Este documento descreve as noções básicas para a criação de boletins inform
 
 1. Clique em **Criar**.
 
-1. Uma nova caixa de diálogo será aberta imediatamente. Aqui você pode inserir propriedades para o informativo.
+1. Uma nova caixa de diálogo é aberta imediatamente. Aqui você pode inserir propriedades para o informativo.
 
    A variável **Lista de destinatários padrão** é um campo obrigatório, pois forma o ponto de contato para o informativo (consulte [Trabalhar com listas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) para obter mais informações sobre listas).
 
@@ -173,7 +169,7 @@ Para alternar entre clientes, clique no ícone correspondente para exibir o info
 Embora somente usuários autorizados possam enviar informativos, você deve personalizar o seguinte:
 
 * A linha de assunto, para que os usuários queiram abrir seu email e também para garantir que seu informativo não acabe marcado como spam.
-* O endereço De, por exemplo, noreply@geometrixx.com, para que os usuários recebam emails de um endereço especificado.
+* O endereço De, por exemplo, `noreply@geometrixx.com`, para que os usuários recebam emails de um endereço especificado.
 
 Para personalizar as configurações do informativo:
 
@@ -223,7 +219,7 @@ Para enviar boletins informativos de testes de voo:
 >[!NOTE]
 >
 >A Adobe não planeja aprimorar ainda mais o rastreamento de e-mails de rejeições/aberturas (não entregues) enviadas pelo serviço AEM SMTP.
->A recomendação é [aproveitar o Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
+>A recomendação é usar [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
 Você pode enviar um informativo do informativo ou da lista. Ambos os procedimentos são descritos.
 

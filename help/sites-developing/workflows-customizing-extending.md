@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3588'
 ht-degree: 2%
@@ -467,7 +467,7 @@ public class MyProcess implements WorkflowProcess {
 
 ### Utilização do ECMAScript {#using-ecmascript}
 
-Os scripts ECMA permitem que os desenvolvedores de script implementem etapas de processo. Os scripts estão localizados no repositório JCR e são executados nele.
+Os scripts ECMA permitem que os desenvolvedores de script implementem etapas de processo. Os scripts estão no repositório JCR e são executados nele.
 
 A tabela a seguir lista as variáveis que estão imediatamente disponíveis para processar scripts, fornecendo acesso aos objetos da API Java do workflow.
 
@@ -619,7 +619,7 @@ Para definir uma etapa do participante como um componente de serviço OSGI (clas
 
 Você pode criar um script ECMA que selecione o usuário atribuído ao item de trabalho que o **Etapa do participante** gera. O script deve incluir uma função chamada `getParticipant` que não requer argumentos e retorna um `String` que contém a ID de um usuário ou grupo.
 
-Os scripts estão localizados no repositório JCR e são executados nele.
+Os scripts estão no repositório JCR e são executados nele.
 
 A tabela a seguir lista as variáveis que fornecem acesso imediato aos objetos Java do workflow nos scripts.
 
@@ -825,7 +825,7 @@ Uma maneira fácil de começar a criar sua própria etapa personalizada é copia
 
      Deve herdar de uma etapa existente.
 
-     Neste exemplo, estamos herdando da etapa base em `cq/workflow/components/model/step`, mas você pode usar outros supertipos como `participant`, `process`, etc.
+     Neste exemplo, estamos herdando da etapa base em `cq/workflow/components/model/step`, mas você pode usar outros supertipos como `participant`, `process`e assim por diante.
 
    * `jcr:title`
 
@@ -1042,4 +1042,4 @@ A variável `_cq_dialog/.content.xml` exemplo usado neste exemplo:
 >* `/libs/wcm/workflow/components/autoassign`
 >* `/libs/cq/projects`
 >
->  Você não deve modificar nada no `/libs`, basta usá-los como exemplos. Se quiser aproveitar qualquer uma das etapas existentes, copie-as para o `/apps` e modificá-los lá.
+>  Você não deve modificar nada no `/libs`, basta usá-los como exemplos. Se quiser usar qualquer uma das etapas existentes, copie-as para `/apps` e modificá-los lá.

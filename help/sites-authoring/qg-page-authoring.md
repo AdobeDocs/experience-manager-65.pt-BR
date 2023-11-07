@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 72%
+source-wordcount: '1553'
+ht-degree: 73%
 
 ---
 
@@ -69,7 +69,7 @@ Antes de dar a visão geral das especificidades, veja uma pequena coleção de d
 
 Há vários aspectos para localizar uma página. Você pode navegar e/ou pesquisar:
 
-1. Abra o **Sites** console (usando o **Sites** opção no [Navegação global](/help/sites-authoring/basic-handling.md#global-navigation)) - é acionado (menu suspenso) ao selecionar o link do Adobe Experience Manager (parte superior esquerda).
+1. Abra o **Sites** console (usando o **Sites** opção no [Navegação global](/help/sites-authoring/basic-handling.md#global-navigation)) - é acionado (lista suspensa) ao selecionar o link do Adobe Experience Manager (parte superior esquerda).
 
 1. Navegue para baixo na árvore, tocando/clicando na página apropriada. A forma como os recursos da página são apresentados depende da exibição usada ([Cartão, Lista ou Coluna](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)):
 
@@ -128,7 +128,7 @@ Como selecionar uma página depende da exibição usada no console:
 As [ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions) estão disponíveis:
 
 1. [Navegue até a página](#finding-your-page) que deseja realizar a ação.
-1. Passe o mouse sobre o cartão que representa o recurso desejado; as ações rápidas serão mostradas:
+1. Passe o mouse sobre o cartão que representa o recurso desejado; as ações rápidas são mostradas:
 
    ![screen_shot_2018-03-21at160503-1](assets/screen_shot_2018-03-21at160503-1.png)
 
@@ -195,7 +195,7 @@ As [ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions) est
 
       * Selecione **Visualizar** na barra de ferramentas.
 
-   * Retorne ao modo de edição (ou selecione outro modo) usando o **Editar** seletor suspenso.
+   * Retorne ao modo de edição (ou selecione outro modo) usando o seletor suspenso **Editar**.
 
    >[!NOTE]
    >

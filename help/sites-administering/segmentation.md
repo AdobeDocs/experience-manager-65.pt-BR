@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1783'
-ht-degree: 78%
+source-wordcount: '1774'
+ht-degree: 75%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 78%
 
 A segmentação é uma consideração importante ao criar uma campanha. Consulte [Gerenciamento de públicos](/help/sites-authoring/managing-audiences.md) para obter informações sobre como a segmentação funciona e os termos principais.
 
-Dependendo das informações que você já coletou sobre os visitantes do seu site e das metas que deseja alcançar, será necessário definir os segmentos e as estratégias necessárias para o seu conteúdo direcionado.
+Dependendo das informações que você já coletou sobre os visitantes do seu site e das metas que deseja alcançar, é necessário definir os segmentos e as estratégias necessárias para o seu conteúdo direcionado.
 
 Esses segmentos são usados para fornecer conteúdo direcionado especificamente a um visitante. Esse conteúdo é mantido no [Personalização](/help/sites-authoring/personalization.md) seção do site. As [atividades](/help/sites-authoring/activitylib.md) definidas aqui podem ser incluídas em qualquer página e definem para qual segmento de visitante o conteúdo especializado se aplica.
 
@@ -34,7 +34,7 @@ O AEM permite personalizar facilmente a experiência dos usuários. Ela também 
 
 ## Acessar segmentos {#accessing-segments}
 
-A variável [Públicos-alvo](/help/sites-authoring/managing-audiences.md) O console do é usado para gerenciar segmentos do ContextHub ou do Client Context, bem como públicos-alvo da sua conta do Adobe Target. Esta documentação abrange o gerenciamento de segmentos para o ContextHub. Para [Segmentos de ClientContext](/help/sites-administering/campaign-segmentation.md) e Adobe Target, consulte a documentação relevante.
+A variável [Públicos-alvo](/help/sites-authoring/managing-audiences.md) O console é usado para gerenciar segmentos do ContextHub ou do Client Context e públicos-alvo da sua conta do Adobe Target. Esta documentação abrange o gerenciamento de segmentos para o ContextHub. Para [Segmentos de ClientContext](/help/sites-administering/campaign-segmentation.md) e Adobe Target, consulte a documentação relevante.
 
 Para acessar os segmentos, é necessário selecionar a configuração. Na navegação global, selecione **Navegação > Personalização > Públicos-alvo**. Você verá as configurações disponíveis:
 
@@ -141,7 +141,7 @@ Para definir seu novo segmento:
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. No **Novo segmento do ContextHub**, insira um título para o segmento, bem como um valor de reforço, se necessário, e toque ou clique em **Criar**.
+1. Em **Novo segmento do ContextHub**, insira um título para o segmento e um valor de reforço, se necessário, e toque ou clique em **Criar**.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
@@ -323,7 +323,7 @@ Ou se não for resolvido:
 
 Esses testes também podem ser executados em páginas de conteúdo e em combinação com conteúdo direcionado e **Atividades** e **Experiências** relacionadas.
 
-Se você configurou uma atividade e uma experiência usando o exemplo de segmento de grupo de idade principal acima, é possível testar facilmente seu segmento com a atividade. Para obter detalhes sobre como configurar uma atividade, consulte a [documentação sobre a criação de conteúdo direcionado](/help/sites-authoring/content-targeting-touch.md) relacionada.
+Se você configurou uma atividade e uma experiência usando o exemplo de segmento de grupo de idade principal acima, é possível testar facilmente seu segmento com a atividade. Para obter detalhes sobre como configurar uma atividade, consulte as [documentação sobre criação de conteúdo direcionado](/help/sites-authoring/content-targeting-touch.md).
 
 1. No modo de edição de uma página em que você configurou o conteúdo direcionado, é possível ver que o conteúdo é direcionado por meio do ícone de seta no conteúdo.
 

@@ -4,10 +4,10 @@ description: Saiba como usar o console de Ativos para gerenciar os fragmentos de
 feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1724'
-ht-degree: 80%
+source-wordcount: '1714'
+ht-degree: 77%
 
 ---
 
@@ -78,7 +78,7 @@ O método para criar um fragmento de conteúdo é:
 
       * **Nome**
 
-        O nome; será usado para formar o URL.
+        O name; é usado para formar o URL.
 
         Obrigatório; será derivado automaticamente do título, mas pode ser atualizado.
 
@@ -130,11 +130,11 @@ Para abrir o fragmento para edição:
 
 >[!CAUTION]
 >
->Para editar um fragmento de conteúdo, você precisa [das permissões apropriadas](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Entre em contato com o administrador do sistema em caso de problemas.
+>Para editar um fragmento de conteúdo, você precisa [das permissões apropriadas](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Entre em contato com o(a) administrador(a) do sistema em caso de problemas.
 
 >[!CAUTION]
 >
->Para editar um fragmento de conteúdo, você precisa das permissões apropriadas. Entre em contato com o administrador do sistema em caso de problemas.
+>Para editar um fragmento de conteúdo, você precisa das permissões apropriadas. Entre em contato com o(a) administrador(a) do sistema em caso de problemas.
 
 1. Use o **Assets** para navegar até o local do fragmento de conteúdo.
 1. Abra o fragmento para edição ao:
@@ -142,7 +142,7 @@ Para abrir o fragmento para edição:
    * Clicar/tocar no link do fragmento ou fragmento (depende da exibição do console).
    * Selecionar o fragmento e **Editar** na barra de ferramentas.
 
-1. O editor de fragmentos será aberto. Faça as alterações necessárias:
+1. O editor de fragmento é aberto. Faça as alterações necessárias:
 
    ![editor de fragmento](assets/cfm-managing-03.png)
 
@@ -186,7 +186,7 @@ Alguns recursos na barra de ferramentas superior estão disponíveis em vários 
 
 * Abaixo do nome do fragmento, você pode ver o nome do [Modelo de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-models.md) usado para criar o fragmento atual:
 
-   * O nome também é um link que abrirá o editor de modelo.
+   * O nome também é um link que abre o editor de modelo.
 
 * Veja o status do fragmento; por exemplo, informações sobre quando ele foi criado, modificado ou publicado.
 
@@ -227,7 +227,7 @@ O editor tem várias opções:
 
   >[!CAUTION]
   >
-  >Para editar um fragmento de conteúdo, você precisa [das permissões apropriadas](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Entre em contato com o administrador do sistema em caso de problemas.
+  >Para editar um fragmento de conteúdo, você precisa [das permissões apropriadas](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Entre em contato com o(a) administrador(a) do sistema em caso de problemas.
 
   >[!NOTE]
   >
@@ -237,7 +237,7 @@ O editor tem várias opções:
   >
   >Além de simplesmente salvar suas alterações, as ações também atualizam quaisquer referências e garantem que o Dispatcher seja liberado conforme necessário. Essas alterações podem levar tempo para serem processadas. Devido a isso, pode haver um impacto no desempenho de um sistema grande/complexo/com bastante conteúdo.
   >
-  >Lembre-se disso ao usar a opção **Salvar e fechar** e, logo em seguida, entrar novamente no editor de fragmentos para fazer mais alterações e salvá-las.
+  >Lembre-se disso ao usar **Salvar e fechar** e, em seguida, entre novamente no editor de fragmentos rapidamente para fazer mais alterações e salvá-las.
 
 * **Fechar**
 
@@ -319,7 +319,7 @@ Por exemplo:
 
 A ação **Comparar com atual** fica disponível na [Linha de tempo](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) após selecionar uma versão específica.
 
-Isso abrirá:
+Isso abre:
 
 * a versão (à esquerda) **Atual** (mais recente)
 

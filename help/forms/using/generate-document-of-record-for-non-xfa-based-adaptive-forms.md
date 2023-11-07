@@ -1,19 +1,15 @@
 ---
 title: Gerar documento de registro para formulários adaptáveis
-seo-title: Generate Document of Record for adaptive forms
 description: Explica como gerar um modelo para um documento de registro (DoR) para formulários adaptáveis.
-seo-description: Explains how you can generate a template for a document of record (DoR) for adaptive forms.
-uuid: 2dc7e0de-fff9-43fa-9426-e9b047eb2595
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3544'
+source-wordcount: '3545'
 ht-degree: 3%
 
 ---
@@ -218,7 +214,7 @@ Os componentes da tabela de formulários adaptáveis, como cabeçalho, rodapé e
 
 O modelo base fornece informações de estilo e aparência ao documento de registro. Ele permite personalizar a aparência padrão do documento de registro gerado automaticamente. Por exemplo, você deseja adicionar o logotipo da empresa no cabeçalho e as informações de direitos autorais no rodapé do documento de registro. A página mestra do modelo base é usada como uma página mestra do documento de modelo de registro. A página-mestre pode ter informações como cabeçalho, rodapé e número de página que podem ser aplicadas ao documento de registro. É possível aplicar essas informações ao documento de registro usando o modelo base para geração automática do documento de registro. O uso do template base permite alterar as propriedades padrão dos campos.
 
-Siga [Convenções do modelo base](#base-template-conventions) ao criar o modelo base.
+Certifique-se de seguir [Convenções do modelo base](#base-template-conventions) ao criar o modelo base.
 
 ## Convenções do modelo base {#base-template-conventions}
 
@@ -234,7 +230,7 @@ Um modelo base é usado para definir o cabeçalho, rodapé, estilo e aparência 
 
 **Convenções de estilo para campos**
 
-* Para aplicar estilo nos campos no documento de registro, o modelo base fornece campos localizados na variável `AF_FIELDSSUBFORM` subde sob o `AF_METATEMPLATE` subformulário raiz.
+* Para aplicar estilo aos campos no documento de registro, o modelo base fornece campos no `AF_FIELDSSUBFORM` subde sob o `AF_METATEMPLATE` subformulário raiz.
 
 * As propriedades desses campos são aplicadas aos campos no documento de registro. Esses campos devem seguir o `AF_<name of field in all caps>_XFO` convenção de nomenclatura. Por exemplo, o nome do campo da caixa de seleção deve ser `AF_CHECKBOX_XFO`.
 

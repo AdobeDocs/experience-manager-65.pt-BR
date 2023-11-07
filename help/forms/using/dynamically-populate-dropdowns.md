@@ -10,7 +10,7 @@ topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
 docset: aem65
 exl-id: 64b88423-aaae-4258-bf48-73df5c9353ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
@@ -150,7 +150,7 @@ Considere um cenário em que você deseja preencher o **Estado** lista suspensa 
 
    ![Criar um nó suspenso](assets/dropdown-node.png)
 
-1. Empacote o nó de conteúdo e incorpore o arquivo .jar em um local específico (por exemplo /apps/myfolder/demo/install/). Implante o mesmo arquivo no servidor.
+1. Empacotar o nó de conteúdo e incorporar o arquivo .jar em um local específico (por exemplo, /apps/myfolder/demo/install/). Implante o mesmo arquivo no servidor.
 1. Crie um formulário adaptável e adicione duas listas suspensas, País e Estado a ele. A lista de países pode incluir os nomes dos países. A lista Estado pode preencher dinamicamente os nomes dos estados do país selecionado na primeira lista.
 
    Adicione os nomes dos países a serem exibidos na lista de Países. Na lista Estado, adicione um script para preenchê-lo com base no nome do país na lista País.

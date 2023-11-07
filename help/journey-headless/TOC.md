@@ -2,13 +2,13 @@
 sub-product: AEM Headless Journeys
 user-guide-title: Jornadas do AEM Headless
 breadcrumb-title: Jornadas do AEM Headless
-user-guide-description: Comece aqui uma jornada guiada pelos recursos avançados e flexíveis do AEM Headless, suas funcionalidades e como aproveitá-las em seu projeto.
+user-guide-description: Comece aqui uma jornada guiada sobre os recursos headless avançados e flexíveis do AEM, suas capacidades e como usá-las em seu projeto.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 2523d9dcdbbfd9107e43ca53e2bb586452be1cb8
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 

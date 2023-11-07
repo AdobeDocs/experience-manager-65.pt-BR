@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1487'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ Em um cluster, se você usar o cache TCP em vez de UDP, atualize a configuraçã
 
 ### Alteração dos caminhos do sistema de arquivos do nó de formulários AEM {#changing-the-aem-forms-node-file-system-paths}
 
-Se você alterar os caminhos do sistema de arquivos para um nó independente, deverá atualizar as referências apropriadas nas preferências, em outras configurações do sistema, em aplicativos personalizados e em aplicativos de formulários AEM implantados. Por outro lado, para um cluster, todos os nós devem usar a mesma configuração de caminho do sistema de arquivos. Você deve definir o diretório raiz do Armazenamento de Documentos Globais (GDS) e garantir que ele aponte para uma cópia do GDS recuperado que esteja sincronizada com o banco de dados recuperado. A definição do caminho GDS é importante porque o GDS pode conter dados destinados a persistir durante reinicializações do servidor de aplicativos.
+Se você alterar os caminhos do sistema de arquivos para um nó independente, deverá atualizar as referências apropriadas nas preferências, em outras configurações do sistema, em aplicativos personalizados e em aplicativos de formulários AEM implantados. Por outro lado, para um cluster, todos os nós devem usar a mesma configuração de caminho do sistema de arquivos. Defina o diretório raiz do Armazenamento de Documentos Globais (GDS) e verifique se ele aponta para uma cópia do GDS recuperado que esteja sincronizada com o banco de dados recuperado. A definição do caminho GDS é importante porque o GDS pode conter dados destinados a persistir durante reinicializações do servidor de aplicativos.
 
 Em um ambiente em cluster, a configuração do caminho do sistema de arquivos do repositório deve ser a mesma para todos os nós de cluster antes do backup e depois da recuperação.
 

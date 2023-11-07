@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3681'
 ht-degree: 2%
@@ -121,7 +121,7 @@ O exemplo cria um modelo de fluxo de trabalho para uma solicitação de hipoteca
 
    Para o exemplo de hipoteca, adicione um gerar documento de registro, duas etapas atribuir tarefa e uma etapa assinar documento à Ramificação 1 do modelo, conforme exibido na imagem abaixo. Uma etapa de atribuição de tarefa é exibir e enviar **Documentos de empréstimo a assinar ao requerente** e outro componente da tarefa atribuída é **para exibir documentos assinados**. Além disso, adicione um componente Atribuir tarefa à ramificação 2. Ela é ativada quando um usuário toca em Rejeitar na Caixa de entrada do AEM.
 
-   Para o conjunto completo de valores de todos os campos das etapas atribuir tarefa, etapa documento de registro e etapa assinar documento configurada por exemplo aplicativo de hipoteca, importe o pacote de exemplo, disponível para download no início desta seção.
+   Para o conjunto completo de valores de todos os campos das etapas atribuir tarefa, etapa documento de registro e etapa assinar documento configuradas, por exemplo, aplicativo de hipoteca, importar o pacote de exemplo, disponível para download no início desta seção.
 
    O modelo de fluxo de trabalho está pronto. É possível iniciar o workflow por meio de vários métodos. Para obter detalhes, consulte [Inicie um fluxo de trabalho centrado no Forms no OSGi](#launch).
 
@@ -279,7 +279,7 @@ Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do 
 
 Quaisquer dados enviados de formulários adaptáveis para o [!DNL Experience Manager] Os workflows podem ter PII (Informações de identificação pessoal) ou SPD (Dados pessoais confidenciais) dos usuários finais da sua empresa. No entanto, não é obrigatório ter seus dados armazenados no [!DNL Adobe Experience Manager] [Repositório JCR](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html). Você pode externalizar o armazenamento de dados do usuário final para seu armazenamento de dados gerenciado (por exemplo, armazenamento Azure Blob) parametrizando as informações em [variáveis de fluxo de trabalho](/help/forms/using/variable-in-aem-workflows.md).
 
-Em um [!DNL Adobe Experience Manager] No fluxo de trabalho do Forms, os dados são processados e transmitidos por uma série de etapas do fluxo de trabalho por meio de variáveis de fluxo de trabalho. Essas variáveis são propriedades nomeadas ou pares de valores chave armazenados no nó de metadados das instâncias de fluxo de trabalho; por exemplo `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. Essas variáveis de fluxo de trabalho podem ser externalizadas em um repositório separado que não seja o JCR e processadas pelo [!DNL Adobe Experience Manager] fluxos de trabalho. [!DNL Adobe Experience Manager] fornece API `[!UICONTROL UserMetaDataPersistenceProvider]` para armazenar as variáveis de workflow no armazenamento externo gerenciado. Para saber mais sobre o Uso de variáveis de fluxo de trabalho para armazenamentos de dados de propriedade do cliente no [!DNL Adobe Experience Manager], consulte [Administrar variáveis de fluxo de trabalho para armazenamentos de dados externos](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+Em um [!DNL Adobe Experience Manager] No fluxo de trabalho do Forms, os dados são processados e transmitidos por uma série de etapas do fluxo de trabalho por meio de variáveis de fluxo de trabalho. Essas variáveis são propriedades nomeadas ou pares de valores chave que são armazenados no nó de metadados das instâncias de fluxo de trabalho; por exemplo, `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. Essas variáveis de fluxo de trabalho podem ser externalizadas em um repositório separado que não seja o JCR e processadas pelo [!DNL Adobe Experience Manager] fluxos de trabalho. [!DNL Adobe Experience Manager] fornece API `[!UICONTROL UserMetaDataPersistenceProvider]` para armazenar as variáveis de workflow no armazenamento externo gerenciado. Para saber mais sobre o Uso de variáveis de fluxo de trabalho para armazenamentos de dados de propriedade do cliente no [!DNL Adobe Experience Manager], consulte [Administrar variáveis de fluxo de trabalho para armazenamentos de dados externos](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
 [!DNL Adobe] fornece o seguinte [amostra](https://github.com/adobe/workflow-variable-externalizer) para armazenar variáveis do mapa de metadados de fluxo de trabalho para o armazenamento de blobs do Azure, usando a API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md). Nas linhas semelhantes, você pode usar a amostra como um guia para usar [UserMetaDataPersistenceProvider] API para externalizar as variáveis de workflow em qualquer outro armazenamento de dados externo a [!DNL Adobe Experience Manager] e gerenciar o mesmo.
 
 >[!NOTE]
@@ -313,11 +313,11 @@ Estas são as finalidades (e exemplos) dessas propriedades:
 
 * **accountName** é a conta do azure na qual os dados devem ser armazenados.
 
-* **endpointSuffix**, por exemplo `core.windows.net`.
+* **endpointSuffix**, por exemplo, `core.windows.net`.
 
 * **containerName** é o container na conta em que os dados precisam ser armazenados. A amostra presume que o contêiner existe.
 
-* **protocolo**, por exemplo `https` ou `http`.
+* **protocolo**, por exemplo, `https` ou `http`.
 
 1. Configurar o modelo de fluxo de trabalho no [!DNL Adobe Experience Manager]. Para saber como configurar o modelo de workflow para um armazenamento externo, consulte [Configurar o modelo de fluxo de trabalho](#configure-aem-wf-model).
 

@@ -13,9 +13,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
-source-git-commit: 05af34f8be6a4e32c3488ec05bc0133154caff7f
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7792'
+source-wordcount: '7791'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Saiba mais sobre como trabalhar com [vídeo](/help/assets/video.md) no Dynamic M
 
 >[!NOTE]
 >
->Se você usar o Adobe Experience Manager configurado para ambientes diferentes, como um para desenvolvimento, armazenamento temporário e produção em tempo real, configure o Dynamic Media Cloud Services para cada ambiente.
+>Se você usar o Adobe Experience Manager configurado para ambientes diferentes, como um para desenvolvimento, armazenamento temporário e produção em tempo real, configure o Dynamic Media Cloud Service para cada ambiente.
 
 >[!NOTE]
 >
@@ -84,7 +84,7 @@ Você pode optar por implementar o Dynamic Media somente para criação de image
    <td>
     <ol>
      <li>No Experience Manager <strong>autor</strong> nó, <a href="#enabling-dynamic-media">ativar o Dynamic Media</a>.</li>
-     <li>Configuração de imagens no <a href="#configuring-dynamic-media-cloud-services">Dynamic Media Cloud Services</a>.</li>
+     <li>Configuração de imagens no <a href="#configuring-dynamic-media-cloud-services">Dynamic Media Cloud Service</a>.</li>
      <li><a href="#configuring-image-replication">Configurar replicação de imagem</a>.</li>
      <li><a href="#replicating-catalog-settings">Replicar configurações do catálogo</a>.</li>
      <li><a href="#replicating-viewer-presets">Replicar predefinições do visualizador</a>.</li>
@@ -113,7 +113,7 @@ Você pode optar por implementar o Dynamic Media somente para criação de image
     <ol>
      <li>No Experience Manager <strong>autor</strong> nó, <a href="#enabling-dynamic-media">ativar o Dynamic Media</a>.</li>
      <li>No Experience Manager <strong>publicar</strong> nó, <a href="#enabling-dynamic-media">ativar o Dynamic Media</a> (a instância de publicação disponibiliza a imagem do pôster do vídeo e fornece metadados para a reprodução do vídeo).</li>
-     <li>Configurar vídeo no <a href="#configuring-dynamic-media-cloud-services">Cloud Services do Dynamic Media.</a></li>
+     <li>Configurar vídeo no <a href="#configuring-dynamic-media-cloud-services">Cloud Service do Dynamic Media.</a></li>
      <li><a href="#replicating-viewer-presets">Replicar predefinições do visualizador</a>.</li>
      <li>Configurar <a href="#setting-up-asset-filters-for-video-only-deployments">filtro de ativos somente para vídeo</a>.</li>
      <li><a href="#delivering-assets">Entregar ativos.</a></li>
@@ -125,8 +125,8 @@ Você pode optar por implementar o Dynamic Media somente para criação de image
    <td>
     <ol>
      <li>No Experience Manager <strong>autor</strong> nó, <a href="#enabling-dynamic-media">ativar o Dynamic Media</a>.</li>
-     <li>Configurar vídeo no <a href="#configuring-dynamic-media-cloud-services">Cloud Services do Dynamic Media.</a></li>
-     <li>Configuração de imagens no <a href="#configuring-dynamic-media-cloud-services">Cloud Services do Dynamic Media.</a></li>
+     <li>Configurar vídeo no <a href="#configuring-dynamic-media-cloud-services">Cloud Service do Dynamic Media.</a></li>
+     <li>Configuração de imagens no <a href="#configuring-dynamic-media-cloud-services">Cloud Service do Dynamic Media.</a></li>
      <li><a href="#configuring-image-replication">Configurar replicação de imagem</a>.</li>
      <li><a href="#replicating-catalog-settings">Replicar configurações do catálogo</a>.</li>
      <li><a href="#replicating-viewer-presets">Replicar predefinições do visualizador</a>.</li>
@@ -180,10 +180,11 @@ Para ativar o Dynamic Media, você deve ativar o modo de execução do Dynamic M
    >Para solucionar problemas com o Dynamic Media, consulte os seguintes registros no `crx-quickstart/logs/` diretório:
    >
    >* ImageServer-&lt;portid>-&lt;yyyy>&lt;mm>&lt;dd>.log - O log do ImageServer fornece estatísticas e informações analíticas usadas para analisar o comportamento do processo interno do ImageServer.
-
+   >
    Exemplo de um nome de arquivo de log do Servidor de imagens: `ImageServer-57346-2020-07-25.log`
+   >
    * s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - O log de acesso s7registra cada solicitação feita ao Dynamic Media por meio do `/is/image` e `/is/content`.
-
+   >
    Esses logs são usados somente quando o Dynamic Media está ativado. Eles não estão incluídos na variável **Download completo** pacote gerado pelo `system/console/status-Bundlelist` ; ao ligar para o Suporte ao cliente se tiver um problema com o Dynamic Media, anexe esses registros ao problema.
 
 ### Se você instalou o Experience Manager em uma porta ou caminho de contexto diferente ... {#if-you-installed-aem-to-a-different-port-or-context-path}
@@ -202,6 +203,7 @@ Experience Manager:
 Em uma implantação do Experience Manager QuickStart WAR, o número da porta e o caminho do contexto não podem ser derivados, portanto, você deve configurar um **autodomínio**. Consulte [Documentação do externalizador](/help/sites-developing/externalizer.md) sobre como configurar o **autodomínio**.
 
 >[!NOTE]
+>
 Em um [Implantação independente do Experience Manager Quickstart](/help/sites-deploying/deploy.md), um **autodomínio** O geralmente não precisa ser configurado porque o número da porta e o caminho do contexto podem ser configurados automaticamente. No entanto, se todas as interfaces de rede estiverem desativadas, você deverá configurar o **autodomínio**.
 
 ## Desativar Dynamic Media  {#disabling-dynamic-media}
@@ -223,7 +225,9 @@ Para desativar o Dynamic Media após ativá-lo, remova a variável `-r dynamicme
 1. Solicitação `https://localhost:4502/is/image`. Você receberá uma mensagem informando que o Dynamic Media está desativado.
 
    >[!NOTE]
+   >
    Depois que o modo de execução do Dynamic Media é desativado, a etapa do fluxo de trabalho que gera o `cqdam.pyramid.tiff` a representação é ignorada automaticamente. Também desativa o suporte à representação dinâmica e outros recursos do Dynamic Media.
+   >
    Observe também que quando o modo de execução do Dynamic Media é desativado após a configuração do servidor Experience Manager, todos os ativos que foram carregados nesse modo de execução agora são inválidos.
 
 ## (Opcional) Migração de predefinições e configurações do Dynamic Media de 6.3 para 6.5, sem tempo de inatividade {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
@@ -231,6 +235,7 @@ Para desativar o Dynamic Media após ativá-lo, remova a variável `-r dynamicme
 Se estiver atualizando o Experience Manager - Dynamic Media de 6.3 para 6.5 (que agora inclui a capacidade de implantações com tempo de inatividade zero), você deve executar o seguinte comando curl. O comando migra todas as predefinições e configurações do `/etc` para `/conf` em CRXDE Lite.
 
 >[!NOTE]
+>
 Se você executar a instância do Experience Manager no modo de compatibilidade, ou seja, se tiver o pacote de compatibilidade instalado, não será necessário executar esses comandos.
 
 Para todas as atualizações, com ou sem o pacote de compatibilidade, você pode copiar as predefinições do visualizador padrão prontas para uso que vieram originalmente com o Dynamic Media executando o seguinte comando curl do Linux®:
@@ -255,9 +260,13 @@ O Agente de replicação publica ativos do Dynamic Media, como imagens, metadado
 Após configurar o agente de replicação, você deve [validar e testar se ela foi configurada com êxito](#validating-the-replication-agent-for-dynamic-media). Esta seção descreve esses procedimentos.
 
 >[!NOTE]
+>
 O limite de memória padrão para a criação de PTIFF é de 3 GB em todos os fluxos de trabalho. Por exemplo, você pode processar uma imagem que requer 3 GB de memória enquanto outros fluxos de trabalho estão pausados ou processar 10 imagens em paralelo que exigem 300 MB de memória cada.
+>
 O limite de memória é configurável e se ajusta à disponibilidade de recursos do sistema e ao tipo de conteúdo de imagem que está sendo processado. Se você tiver muitos ativos grandes e memória suficiente no sistema, poderá aumentar esse limite para garantir que as imagens sejam processadas em paralelo.
+>
 Uma imagem que requer mais do que o limite máximo de memória é rejeitada.
+>
 Para alterar o limite de memória para criação de PTIFF, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]** > **[!UICONTROL Adobe CQ Scene7 PTiffManager]** e altere o **[!UICONTROL maxMemory]** valor.
 
 ### Configurar autenticação {#setting-up-authentication}
@@ -281,6 +290,7 @@ Configure a autenticação de replicação no autor para replicar imagens para o
 1. Digite uma senha e confirme-a na caixa **[!UICONTROL Definir senha de acesso do KeyStore]** caixa de diálogo.
 
    >[!NOTE]
+   >
    Lembre-se da senha porque você deve digitá-la novamente quando configurar o Agente de Replicação posteriormente.
 
    ![chlimage_1-508](assets/chlimage_1-508.png)
@@ -339,11 +349,12 @@ Replication test succeeded
 ```
 
 >[!NOTE]
+>
 Você também pode verificar executando um dos procedimentos a seguir:
+>
 * Verifique os logs de replicação para garantir que o ativo seja replicado.
 * Publique uma imagem. Selecione a imagem e **[!UICONTROL Visualizadores]** no menu suspenso, selecione uma predefinição do visualizador. Selecionar **[!UICONTROL URL]**. Para verificar se você pode ver a imagem, copie e cole o caminho do URL no navegador.
 >
-
 
 ### Solução de problemas de autenticação {#troubleshooting-authentication}
 
@@ -480,7 +491,7 @@ A Adobe recomenda executar um teste completo da configuração.
 Certifique-se de já ter feito o seguinte antes de iniciar este teste:
 
 * Predefinições de imagem adicionadas.
-* Configurar **[!UICONTROL Configuração do Dynamic Media (Pré 6.3)]** em Cloud Services. A URL do Serviço de Imagem é necessária para este teste
+* Configurar **[!UICONTROL Configuração do Dynamic Media (Pré 6.3)]** em Cloud Service. A URL do Serviço de Imagem é necessária para este teste
 
 **Para testar a configuração:**
 
@@ -497,18 +508,19 @@ Certifique-se de já ter feito o seguinte antes de iniciar este teste:
 
 Outra maneira de testar se seus ativos foram entregues é anexar req=exists ao seu URL.
 
-## Configurar o Dynamic Media Cloud Services {#configuring-dynamic-media-cloud-services}
+## Configurar o Dynamic Media Cloud Service {#configuring-dynamic-media-cloud-services}
 
 O Cloud Service do Dynamic Media é compatível com publicação e entrega híbridas de imagens e vídeo, análise de vídeo e codificação de vídeo, entre outras coisas.
 
 Como parte da configuração, você deve inserir uma ID de registro, um URL de serviço de vídeo, um URL de serviço de imagem, um URL de serviço de replicação e configurar a autenticação. Essas informações foram enviadas por email para você como parte do processo de provisionamento de conta. Se você não recebeu essas informações, entre em contato com o administrador da Adobe Experience Manager ou com o Suporte ao cliente do Adobe para obter as informações.
 
 >[!NOTE]
-Antes de configurar o Dynamic Media Cloud Services, certifique-se de configurar sua instância de publicação. Você também deve ter a replicação configurada antes de configurar o Dynamic Media Cloud Services.
+>
+Antes de configurar o Dynamic Media Cloud Service, certifique-se de configurar sua instância de publicação. Você também deve ter a replicação configurada antes de configurar o Dynamic Media Cloud Service.
 
-**Para configurar o Dynamic Media Cloud Services:**
+**Para configurar o Dynamic Media Cloud Service:**
 
-1. Em Experience Manager, selecione o logotipo Experience Manager para acessar o console de navegação global e, em seguida, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuração do Dynamic Media (Pré-6.3)]**.
+1. Em Experience Manager, selecione o logotipo Experience Manager para acessar o console de navegação global e, em seguida, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configuração do Dynamic Media (Pré-6.3)]**.
 1. Na página Navegador de configuração do Dynamic Media, no painel esquerdo, selecione **[!UICONTROL global]** e selecione **[!UICONTROL Criar]**.
 1. No **[!UICONTROL Criar configuração do Dynamic Media]** no campo Título, digite um título.
 1. Se estiver configurando o Dynamic Media para vídeo,
@@ -552,7 +564,7 @@ Certifique-se de concluir esta tarefa ***antes*** Defina a Configuração do Dyn
 
 Verifique se o pacote de predefinição do Video Analytics do primeiro nó Autor está acessível no novo nó Autor.
 
-1. Carregue o pacote predefinido do Video Analytics criado anteriormente no Gerenciador de pacotes.
+1. Carregue o pacote de predefinição do Video Analytics criado anteriormente no Gerenciador de pacotes.
 1. Instale o pacote de predefinição do Video Analytics.
 1. Definir A Configuração Do Dynamic Media (Pré 6.3).
 
@@ -563,34 +575,35 @@ Verifique se o pacote de predefinição do Video Analytics do primeiro nó Autor
    * **Verifique a predefinição do Video Analytics por meio do JCR**
 Para verificar a predefinição do Video Analytics por meio do JCR, é necessário ter acesso ao CRXDE Lite.
 
-      Experience Manager - No CRXDE Lite, navegue até `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
+     Experience Manager - No CRXDE Lite, navegue até `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
-      Como em `https://localhost:4502/crx/de/index.jsp#/conf/global/settings/dam/dm/presets/analytics/jcr%3Acontent/userdata`
+     Como em `https://localhost:4502/crx/de/index.jsp#/conf/global/settings/dam/dm/presets/analytics/jcr%3Acontent/userdata`
 
-      Se você não tiver acesso ao CRXDE Lite no nó Autor, poderá verificar a predefinição por meio do Servidor de publicação.
+     Se você não tiver acesso ao CRXDE Lite no nó Autor, poderá verificar a predefinição por meio do Servidor de publicação.
 
    * **Verifique a predefinição do Video Analytics por meio do servidor de imagens**
 
-      É possível validar a predefinição do Video Analytics diretamente fazendo uma solicitação req=userdata do servidor de imagens.
+     É possível validar a predefinição do Video Analytics diretamente fazendo uma solicitação req=userdata do servidor de imagens.
 Por exemplo, para ver a predefinição do Analytics no nó Autor, é possível fazer a seguinte solicitação:
 
-      `https://localhost:4502/is/image/conf/global/settings/dam/dm/presets/analytics?req=userdata`
+     `https://localhost:4502/is/image/conf/global/settings/dam/dm/presets/analytics?req=userdata`
 
-      Para validar a predefinição nos servidores de publicação, é possível fazer uma solicitação direta semelhante ao servidor de publicação. As respostas são as mesmas nos nós Autor e Publicar. A resposta é semelhante ao seguinte:
+     Para validar a predefinição nos servidores de publicação, é possível fazer uma solicitação direta semelhante ao servidor de publicação. As respostas são as mesmas nos nós Autor e Publicar. A resposta é semelhante ao seguinte:
 
-      ```
-      marketingCloudOrgId=0FC4E86B573F99CC7F000101
-       reportSuite=aemaem6397618-2018-05-23
-       trackingNamespace=aemvideodal
-       trackingServer=aemvideodal.d2.sc.omtrdc.net
-      ```
+     ```
+     marketingCloudOrgId=0FC4E86B573F99CC7F000101
+      reportSuite=aemaem6397618-2018-05-23
+      trackingNamespace=aemvideodal
+      trackingServer=aemvideodal.d2.sc.omtrdc.net
+     ```
 
    * **Verifique a predefinição do Video Analytics por meio da ferramenta Relatório de vídeo no Experience Manager**
 Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Relatório de vídeo]**
 
-      `https://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
+     `https://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
-      Caso veja a seguinte mensagem de erro, o conjunto de relatórios está disponível, mas não preenchido. Esse erro está correto e é desejado em uma nova instalação antes que o sistema colete dados.
+     Caso veja a seguinte mensagem de erro, o conjunto de relatórios está disponível, mas não preenchido. Esse erro está correto e é desejado em uma nova instalação antes que o sistema colete dados.
+
    ![screen_shot_2018-05-23at52254pm](assets/screen_shot_2018-05-23at52254pm.png)
 
    Para gerar dados de relatório, carregue e publique um vídeo. Uso **[!UICONTROL Copiar URL]** e execute o vídeo pelo menos uma vez.
@@ -611,7 +624,7 @@ Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONT
 
 ### Sobre a predefinição do Video Analytics {#about-the-video-analytics-preset}
 
-A predefinição do Video Analytics, às vezes conhecida simplesmente como predefinição de análise, é armazenada ao lado das predefinições do Visualizador no Dynamic Media. É basicamente o mesmo que uma predefinição do visualizador, mas com informações usadas para configurar o AppMeasurement e os relatórios do Video Heartbeat.
+A predefinição do Video Analytics, às vezes conhecida simplesmente como predefinição de análise, é armazenada ao lado das predefinições do Visualizador no Dynamic Media. É basicamente o mesmo que uma predefinição do visualizador, mas com informações usadas para configurar os relatórios do AppMeasurement e do Video Heartbeat.
 
 As propriedades da predefinição são as seguintes:
 
@@ -643,6 +656,7 @@ Para entregar *um ativo com uma predefinição do visualizador, é necessário r
 Consulte [Publicar predefinições do visualizador](/help/assets/managing-viewer-presets.md#publishing-viewer-presets) para obter mais informações.
 
 >[!NOTE]
+>
 Por padrão, o sistema mostra várias representações ao selecionar **[!UICONTROL Representações]** e várias predefinições do visualizador ao selecionar **[!UICONTROL Visualizadores]** na visualização detalhada do ativo. Você pode aumentar ou diminuir o número visto. Consulte [Aumentar o número de predefinições de imagens exibidas](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) ou [Aumentar o número de predefinições do visualizador exibidas](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 ## Filtrar ativos para replicação {#filtering-assets-for-replication}
@@ -705,6 +719,7 @@ Se você usa o Dynamic Media para (1) criação de imagens em produção *ou* (2
 </table>
 
 >[!NOTE]
+>
 Os filtros se aplicam aos tipos MIME e não podem ser específicos de caminho.
 
 ### Configurar filtros de ativos para implantações somente de vídeo {#setting-up-asset-filters-for-video-only-deployments}
@@ -746,7 +761,9 @@ Se você estiver usando o Dynamic Media para criação de imagens em implantaç�
 Essas etapas configuram a instância de publicação do Experience Manager para fornecer as imagens para o ambiente de não produção. O filtro também exclui da replicação a imagem original e as representações estáticas, que não são necessárias na instância de publicação.
 
 >[!NOTE]
+>
 Se houver vários filtros diferentes em um autor, cada agente precisará de um usuário diferente atribuído a ele. O código granite impõe o modelo de um filtro por usuário. Sempre tenha um usuário diferente para cada configuração de filtro.
+>
 Você está usando mais de um filtro em um servidor? Por exemplo, um filtro para publicação da replicação e um segundo filtro para s7delivery. Em caso afirmativo, você deve garantir que esses dois filtros tenham uma **userId** atribuído a eles no `jcr:content` nó. Veja a imagem a seguir:
 
 ![image-2018-01-16-10-26-28-465](assets/image-2018-01-16-10-26-28-465.png)
@@ -797,6 +814,7 @@ Você está usando mais de um filtro em um servidor? Por exemplo, um filtro para
 A configuração do Dynamic Media Image Server envolve a edição do pacote Adobe CQ Scene7 ImageServer e do pacote Adobe CQ Scene7 PlatformServer.
 
 >[!NOTE]
+>
 O Dynamic Media funciona pronto para uso [depois de ser ativado](#enabling-dynamic-media). No entanto, você pode optar por ajustar a instalação configurando o Dynamic Media Image Server para atender a determinadas especificações ou requisitos.
 
 **Pré-requisito** - *Antes* Se você configurar o Dynamic Media Image Server, certifique-se de que sua VM do Windows® inclua uma instalação das bibliotecas Microsoft® Visual C++. As bibliotecas são necessárias para executar o Dynamic Media Image Server. Você pode [faça o download do Pacote redistribuível do Microsoft® Visual C++ 2010 (x64) aqui](https://www.microsoft.com/en-us/download/details.aspx?id=26999).
@@ -815,6 +833,7 @@ Para definir as configurações do Dynamic Media Image Server:
 1. Na caixa de diálogo Adobe CQ Scene7 ImageServer, defina os seguintes valores de configuração:
 
    >[!NOTE]
+   >
    Normalmente, não há necessidade de alterar os valores padrão. No entanto, se você alterar os valores padrão, deverá reiniciar o pacote para que as alterações entrem em vigor.
 
    | Propriedade | Valor padrão | Descrição |
@@ -831,6 +850,7 @@ Para definir as configurações do Dynamic Media Image Server:
 1. Na caixa de diálogo Adobe CQ Scene7 PlatformServer, defina as seguintes opções de valor padrão:
 
    >[!NOTE]
+   >
    O Dynamic Media Image Server usa seu próprio cache de disco para armazenar em cache respostas. O cache HTTP do Experience Manager e o Dispatcher não podem ser usados para armazenar em cache respostas do Dynamic Media Image Server.
 
    | Propriedade | Valor padrão | Descrição |
@@ -889,6 +909,7 @@ Casos de uso avançados podem usar uma configuração manual `icc=` modificador 
 * `iccEmbed` - [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
 
 >[!NOTE]
+>
 O conjunto padrão de perfis de cores de Adobe só estará disponível se você tiver [Pacote de recursos 12445 da Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) instalado. Todos os pacotes de recursos e service packs estão disponíveis em [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html). O Feature Pack 12445 fornece perfis de cores de Adobe.
 
 
@@ -990,6 +1011,7 @@ Após instalar o pacote de recursos, configure os perfis de cor padrão apropria
 </table>
 
 >[!NOTE]
+>
 Os nomes de propriedades fazem distinção entre maiúsculas e minúsculas e devem ser todos em minúsculas.
 
 **Tabela de perfil de cores**
@@ -1156,7 +1178,7 @@ Os seguintes perfis de cores estão instalados:
   <tr>
    <td>WebNão revestida</td>
    <td>CMYK</td>
-   <td>U.S. Web sem revestimento v2</td>
+   <td>Web sem revestimento dos EUA v2</td>
   </tr>
   <tr>
    <td>WideGamutRGB</td>

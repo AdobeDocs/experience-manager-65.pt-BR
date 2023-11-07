@@ -1,13 +1,13 @@
 ---
-source-git-commit: 41011e538104405c954761d9adc270e774e8a9a1
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 69%
+source-wordcount: '83'
+ht-degree: 73%
 
 ---
 # Documentação do Adobe Experience Manager 6.5
 
-Este é o repositório para a documentação do Adobe Experience Manager 6.5. Esta documentação abrange a instalação, administração, uso de criação e como personalizar o AEM.
+Este é o repositório da documentação do Adobe Experience Manager 6.5. Esta documentação abrange a instalação, administração, uso de criação e como personalizar o AEM.
 
 Suas contribuições para a documentação são bem-vindas. Consulte os seguintes recursos:
 

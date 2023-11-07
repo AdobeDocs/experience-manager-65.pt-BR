@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3501'
+source-wordcount: '3498'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ Antes de importar, observe as seguintes limitações:
 
 ### Qualquer atributo como classe ou id aplicado na tag &amp;lt;body> não é preservado {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
-Se qualquer atributo, como id ou classe, for aplicado na tag body, por exemplo `<body id="container">` então, não será preservado após a importação. Portanto, o design que está sendo importado não deve ter dependências nos atributos aplicados na `<body>` tag.
+Se qualquer atributo, como id ou classe, for aplicado na tag body, por exemplo, `<body id="container">` então, não será preservado após a importação. Portanto, o design que está sendo importado não deve ter dependências nos atributos aplicados na `<body>` tag.
 
 ### Arrastar e soltar zip {#drag-and-drop-zip}
 
@@ -321,7 +321,7 @@ Um formulário de cliente potencial é um formulário usado para coletar informa
 
 * Campos de leads predefinidos - nome, sobrenome, endereço, data, gênero, sobre, userId, emailId, botão enviar estão disponíveis no sidekick. Basta arrastar/soltar o componente desejado em seu formulário de lead.
 * Com a ajuda desses componentes, o autor pode criar um formulário de cliente potencial independente, esses campos correspondem a campos de formulário de cliente potencial. Em aplicativos zip independentes ou importados, o usuário pode adicionar campos extras usando campos de formulário de cliente em potencial cq:form ou cta, nomeá-los e projetá-los de acordo com os requisitos.
-* Mapeie campos de formulário de cliente potencial usando nomes predefinidos específicos do formulário de cliente potencial CTA, por exemplo - firstName para o nome no formulário de cliente potencial e assim por diante.
+* Mapeie campos de formulário de cliente potencial usando nomes predefinidos específicos do formulário de cliente potencial CTA, por exemplo, - firstName para o nome no formulário de cliente potencial e assim por diante.
 * Os campos que não estão mapeados para formulários de cliente potencial são mapeados para cq:componentes de formulário - texto, rádio, caixa de seleção, lista suspensa, oculto, senha.
 * O usuário pode fornecer o título usando a tag &quot;label&quot; e o estilo usando o atributo de estilo &quot;class&quot; (disponível somente para componentes de formulário de lead CTA).
 * A página de agradecimento e a lista de assinaturas podem ser fornecidas como um parâmetro oculto do formulário (presente no index.htm) ou podem ser adicionadas/editadas na barra de edição do &quot;Início do formulário de cliente potencial&quot;
@@ -438,9 +438,9 @@ Se nenhuma codificação for especificada no HTML importado, a codificação pad
 
 ### Sobrepondo modelo {#overlaying-template}
 
-O modelo de página de aterrissagem em branco pode ser sobreposto ao criar um novo em: `/apps/<appName>/designimporter/templates/<templateName>`
+O modelo de página de aterrissagem em branco pode ser sobreposto ao criar um em: `/apps/<appName>/designimporter/templates/<templateName>`
 
-As etapas para criar um novo modelo no AEM são explicadas [aqui](/help/sites-developing/templates.md).
+As etapas para criar um modelo no AEM são explicadas [aqui](/help/sites-developing/templates.md).
 
 ### Referência a um componente da landing page {#referring-a-component-from-landing-page}
 

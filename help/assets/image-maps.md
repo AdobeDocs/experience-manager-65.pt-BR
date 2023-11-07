@@ -5,7 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Management
 exl-id: 77da4917-47ce-4f2e-b062-73cee312a7ea
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
@@ -20,9 +20,9 @@ Os mapas de imagem permitem adicionar uma ou mais áreas com hiperlink que funci
 
    * Usando as Ações rápidas, clique em **[!UICONTROL Editar]** que aparece em um ativo na **[!UICONTROL Cartão]** exibição. Na exibição em Lista, selecione o ativo e clique em **[!UICONTROL Editar]** opção na barra de ferramentas.
 
-      >[!NOTE]
-      >
-      >As Ações rápidas não estão disponíveis na **[!UICONTROL Lista]** exibição.
+     >[!NOTE]
+     >
+     >As Ações rápidas não estão disponíveis na **[!UICONTROL Lista]** exibição.
 
    * No **[!UICONTROL Cartão]** ou **[!UICONTROL Lista]** selecione o ativo e clique em **[!UICONTROL Editar]** na barra de ferramentas.
    * Clique em **[!UICONTROL Editar]** na página do ativo.

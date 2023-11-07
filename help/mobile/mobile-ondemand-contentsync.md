@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: a6e59334-09e2-4bb8-b445-1868035da556
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2974'
+source-wordcount: '2973'
 ht-degree: 0%
 
 ---
@@ -215,7 +215,7 @@ A listagem abaixo mostra um exemplo de configuração para a Sincronização de 
 
 **events.plist** - Essa entrada é um pouco especial. Conforme mencionado na introdução, o aplicativo deve fornecer uma visualização de mapa com marcadores dos locais dos eventos. As informações de localização necessárias serão fornecidas como um arquivo separado no formato PLIST. Para que isso funcione, o componente Lista de eventos que é usado na página índice, tem um script chamado plist.jsp. Esse script é executado quando o recurso do componente é solicitado com o `.plist` extensão. Como de costume, o caminho dos componentes é fornecido na propriedade path e o tipo é definido como content, porque você deseja usar [Processamento de solicitação do Sling](/help/sites-developing/the-basics.md#sling-request-processing).
 
-**events.touch.html** - Em seguida, vêm as páginas reais que serão exibidas no aplicativo. A propriedade path é definida como a página raiz dos eventos. Todas as páginas de eventos abaixo dessa página também serão incluídas, pois o padrão da propriedade deep é true. As páginas são usadas como tipo de configuração, para que todas as imagens ou outros arquivos que possam ser referenciados de uma imagem ou componente de download em uma página sejam incluídos. Além disso, definir o seletor de toque nos fornece uma versão móvel das páginas. A configuração no pacote de recursos contém mais entradas desse tipo, mas elas são deixadas de fora para simplificar aqui.
+**events.touch.html** - Em seguida, vêm as páginas reais que são mostradas no aplicativo. A propriedade path é definida como a página raiz dos eventos. Todas as páginas de eventos abaixo dessa página também serão incluídas, pois o padrão da propriedade deep é true. As páginas são usadas como tipo de configuração, para que todas as imagens ou outros arquivos que possam ser referenciados de uma imagem ou componente de download em uma página sejam incluídos. Além disso, definir o seletor de toque nos fornece uma versão móvel das páginas. A configuração no pacote de recursos contém mais entradas desse tipo, mas elas são deixadas de fora para simplificar aqui.
 
 **logotipo** - O tipo de configuração de logotipo não foi mencionado até o momento e não é nenhum dos tipos incorporados. No entanto, a estrutura de sincronização de conteúdo é extensível em algum grau, e este é um exemplo disso, que será abordado na próxima seção.
 

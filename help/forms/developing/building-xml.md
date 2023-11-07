@@ -2,9 +2,9 @@
 title: Como usar o serviço de execução de script no AEM Forms no JEE Workbench para criar dados XML?
 description: Usar o serviço de script de execução no AEM Forms no JEE Workbench para criar dados XML
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ O resultado desse script simples é um novo documento XML com um nó de variáve
 
 **Usando um loop iterativo para adicionar nós ao XML**
 
-Os nós também podem ser adicionados a uma variável XML existente no processo. A variável, nó, contém o objeto XML que acabou de ser criado.
+Os nós também podem ser adicionados a uma variável XML existente no processo. A variável, nó, contém o objeto XML criado.
 
 ```xml
 Document document = patExecContext.getProcessDataValue("/process_data/node");

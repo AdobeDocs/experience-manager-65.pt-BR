@@ -5,9 +5,9 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: ab4f1c61-be83-420e-a339-02cf1f33efed
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2682'
 ht-degree: 0%
 
 ---
@@ -58,9 +58,9 @@ O corpo de uma página de Angular é renderizado de forma diferente dependendo d
 
 No modo de criação, cada página individual é renderizada separadamente. O Angular não lida com o roteamento entre páginas, nem uma ng-view é usada para carregar um modelo parcial que contém os componentes da página. Em vez disso, o conteúdo do modelo de página (template.jsp) é incluído no lado do servidor por meio do `cq:include` tag.
 
-Essa estratégia ativa os recursos do autor (como adicionar e editar componentes no sistema de parágrafo, Sidekick, modo de design etc.) para funcionar sem modificação. As páginas que dependem da renderização do lado do cliente, como aquelas para aplicativos, não têm bom desempenho no modo de autor AEM.
+Essa estratégia permite que os recursos do autor (como adicionar e editar componentes no sistema de parágrafo, Sidekick, modo de design e assim por diante) funcionem sem modificação. As páginas que dependem da renderização do lado do cliente, como aquelas para aplicativos, não têm bom desempenho no modo de autor AEM.
 
-Observe que a inclusão template.jsp é encapsulada em um `div` elemento que contém o `ng-controller` diretiva. Essa estrutura permite a vinculação do conteúdo DOM com o controlador. Portanto, embora as páginas que se renderizam no lado do cliente falhem, os componentes individuais que o fazem funcionam bem (consulte a seção Componentes abaixo).
+A inclusão template.jsp é encapsulada em um `div` elemento que contém o `ng-controller` diretiva. Essa estrutura permite a vinculação do conteúdo DOM com o controlador. Portanto, embora as páginas que se renderizam no lado do cliente falhem, os componentes individuais que o fazem funcionam bem (consulte a seção Componentes abaixo).
 
 ```xml
 <div ng-controller="<c:out value="${controllerNameStripped}"/>">
@@ -143,7 +143,7 @@ O script controller.js.jsp gera o fragmento de controlador para cada página. Es
 ])
 ```
 
-Observe que `data` é atribuída à variável a promessa retornada pelo Angular `$http.get` método. Cada componente incluído nesta página pode, se desejado, disponibilizar conteúdo .json (por meio do script angular.json.jsp) e agir de acordo com o conteúdo dessa solicitação quando ela for resolvida. A solicitação é muito rápida em dispositivos móveis porque simplesmente acessa o sistema de arquivos.
+A variável `data` é atribuída à variável a promessa retornada pelo Angular `$http.get` método. Cada componente incluído nesta página pode, se desejado, disponibilizar conteúdo .json (por meio do script angular.json.jsp) e agir de acordo com o conteúdo dessa solicitação quando ela for resolvida. A solicitação é muito rápida em dispositivos móveis porque simplesmente acessa o sistema de arquivos.
 
 Para que um componente faça parte da controladora dessa maneira, ele deve estender o componente /libs/mobileapps/components/angular/ng-component e incluir o parâmetro `frameworkType: angular` propriedade.
 
@@ -366,7 +366,7 @@ O diretório www contém todo o conteúdo da Web (arquivos HTML, JS e CSS) que i
 
 #### www/config.xml {#www-config-xml}
 
-A documentação do PhoneGap (`https://docs.phonegap.com`) refere-se a esse arquivo como um &quot;arquivo de configuração global&quot;. O config.xml contém muitas propriedades do aplicativo, como o nome do aplicativo, as &quot;preferências&quot; do aplicativo (por exemplo, se uma visualização da Web do iOS permite ou não a rolagem excessiva) e as dependências de plug-in que são *somente* consumido pelo PhoneGap build.
+A documentação do PhoneGap (`https://docs.phonegap.com`) refere-se a esse arquivo como um &quot;arquivo de configuração global&quot;. O config.xml contém muitas propriedades do aplicativo, como o nome do aplicativo, as &quot;preferências&quot; do aplicativo (por exemplo, se uma visualização da Web do iOS permite a rolagem excessiva) e as dependências de plug-in que são *somente* consumido pelo PhoneGap build.
 
 O arquivo config.xml é um arquivo estático no AEM e é exportado como está pela Sincronização de conteúdo.
 

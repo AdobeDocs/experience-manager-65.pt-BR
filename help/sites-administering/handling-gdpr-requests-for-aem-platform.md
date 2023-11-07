@@ -3,10 +3,10 @@ title: Lidar com solicitações do GDPR para o Adobe Experience Manager Foundati
 description: Lidar com solicitações do GDPR para o Adobe Experience Manager Foundation
 contentOwner: sarchiz
 exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 43%
+source-wordcount: '438'
+ht-degree: 48%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 43%
 
 >[!IMPORTANT]
 >
->O GDPR é usado como exemplo nas seções abaixo, mas os detalhes abordados se aplicam a todas as regulamentações de proteção e privacidade de dados; como o GDPR, CCPA etc.
+>O GDPR é usado como exemplo nas seções abaixo, mas os detalhes abordados se aplicam a todas as regulamentações de proteção e privacidade de dados; como o GDPR, CCPA e assim por diante.
 
 ## Suporte ao GDPR da Fundação AEM {#aem-foundation-gdpr-support}
 
@@ -38,7 +38,7 @@ No nível da Fundação AEM, os Dados Pessoais armazenados são o Perfil do Usu�
 
 ### API HTTP {#http-api}
 
-Como mencionado, o Adobe fornece APIs para acessar dados do usuário, para facilitar a automação. Há vários tipos de APIs que você pode usar:
+Como mencionado, a Adobe fornece APIs para acessar dados do usuário, a fim de facilitar a automação. Há vários tipos de APIs que você pode usar:
 
 **API UserProperties**
 
@@ -124,7 +124,7 @@ curl -X POST -u user:password -FdisableUser="describe the reasons for disabling 
 
 * *Exclusão de perfis de usuário*
 
-Usando o caminho do nó da propriedade home da carga JSON retornada do comando de descoberta de conta e os locais dos nós de perfil, conhecidos e prontos para uso:
+Usando o caminho do nó da propriedade página inicial do conteúdo JSON retornada a partir do comando de descoberta de conta e os locais de nós de perfil conhecidos e prontos para uso:
 
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'

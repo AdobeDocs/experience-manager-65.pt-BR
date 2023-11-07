@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 7e358660-bc2f-4d8f-8d74-6cdb6c1ea7b5
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1051'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Clicar no ícone de engrenagem no bloco Analisar métricas abre a caixa de diál
 
 Para criar um serviço em nuvem do Adobe Mobile Service, há duas etapas envolvidas: a conexão com o serviço e a seleção do conjunto de relatórios a ser atribuído à configuração.
 
-Para começar, clique no botão &quot;+&quot; no bloco Gerenciar Cloud Services no painel.
+Para começar, clique no botão &quot;+&quot; no bloco Gerenciar Cloud Service no painel.
 
 ![chlimage_1-126](assets/chlimage_1-126.png)
 
@@ -76,7 +76,7 @@ Depois de clicar no ícone &#39;**+** botão &#39;, o botão **Adicionar Cloud S
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
-Selecione ou crie uma nova configuração de serviço para dispositivos móveis preenchendo os campos obrigatórios conforme mostrado abaixo. O administrador do AEM requer essas informações para criar com êxito a conexão com o Adobe Mobile Services.
+Selecione ou crie uma configuração de serviço para dispositivos móveis preenchendo os campos obrigatórios conforme mostrado abaixo. O administrador do AEM requer essas informações para criar com êxito a conexão com o Adobe Mobile Services.
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 

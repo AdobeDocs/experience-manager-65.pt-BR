@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 role: Developer
 exl-id: dd32808e-b773-48a2-90e1-7a277d349493
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '1915'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Para obter mais informações sobre o serviço de formulários com código de ba
 
 ## Decodificação de dados de formulário com código de barras {#decoding-barcoded-form-data}
 
-Você pode usar a API do serviço de formulários com código de barras para decodificar dados de um formulário PDF ou imagem que contenha um código de barras. Decodificar dados do formulário significa extrair dados que estão localizados no código de barras. Antes que os dados possam ser decodificados de um formulário (ou imagem) PDF, um usuário precisa preencher o formulário com dados.
+Você pode usar a API do serviço de formulários com código de barras para decodificar dados de um formulário PDF ou imagem que contenha um código de barras. Decodificar dados do formulário significa extrair dados que estão no código de barras. Antes que os dados possam ser decodificados de um formulário (ou imagem) PDF, um usuário precisa preencher o formulário com dados.
 
 >[!NOTE]
 >
@@ -60,9 +60,9 @@ Os seguintes arquivos JAR devem ser adicionados ao classpath do projeto:
 * adobe-barcodedforms-client.jar
 * adobe-utilities.jar (obrigatório se o AEM Forms for implantado no JBoss)
 * jbossall-client.jar (obrigatório se o AEM Forms for implantado no JBoss)
-* xercesImpl.jar (localizado em &lt;install directory=&quot;&quot;>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty)
+* xercesImpl.jar (in &lt;install directory=&quot;&quot;>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty)
 
-Se o AEM Forms for implantado em um servidor de aplicativos J2EE compatível que não seja JBOSS, será necessário substituir adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos para o servidor de aplicativos J2EE no qual o AEM Forms é implantado. Para obter informações sobre a localização de todos os arquivos JAR do AEM Forms, consulte [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Se o AEM Forms for disponibilizado em um servidor de aplicativos J2EE compatível que não seja JBOSS, você deverá substituir adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos para o servidor de aplicativos J2EE no qual o AEM Forms é disponibilizado. Para obter informações sobre a localização de todos os arquivos JAR do AEM Forms, consulte [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Criar um objeto de API do cliente de formulários com código de barras**
 
@@ -160,7 +160,7 @@ Decodifique dados de formulário usando a API de formulários com código de bar
 
 1. Processar os dados decodificados
 
-   * Repita através do `java.util.List` objeto para obter cada `org.w3c.dom.Document` objeto localizado na lista.
+   * Repita através do `java.util.List` objeto para obter cada `org.w3c.dom.Document` objeto que está na lista.
    * Para cada elemento na lista, converta o `org.w3c.dom.Document` objeto a um `com.adobe.idp.Document` objeto. (A lógica da aplicação que converte um `org.w3c.dom.Document` em um `com.adobe.idp.Document` é mostrado na página Decodificação de dados de formulário com código de barras (usando o exemplo da API Java).
    * Salve os dados XML como um arquivo XML chamando o `com.adobe.idp.Document` do objeto `copyToFile`e transmitindo um objeto File que representa o arquivo XML.
 

@@ -11,9 +11,9 @@ topic-tags: personalization
 discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '5388'
+source-wordcount: '5385'
 ht-degree: 86%
 
 ---
@@ -93,7 +93,7 @@ Para adicionar uma atividade:
 
    >[!NOTE]
    >
-   >Quando você cria uma nova atividade e tem uma configuração da nuvem do Adobe Target anexada à página ou a uma página principal, o AEM assume automaticamente o Adobe Target como mecanismo.
+   >Ao criar uma atividade e ter uma configuração de nuvem do Adobe Target anexada à página ou a uma página principal, o AEM assume automaticamente o Adobe Target como mecanismo.
 
 1. No menu suspenso do mecanismo de **Direcionamento**, selecione o mecanismo direcionamento.
 
@@ -440,7 +440,7 @@ Se tiver uma atividade de teste A/B, os públicos-alvo estarão à esquerda, a p
 
 ## Metas e Configurações: configuração da atividade e definição de metas {#goals-settings-configuring-the-activity-and-setting-goals}
 
-A etapa Metas e configurações do [processo de direcionamento](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) envolve a configuração do comportamento da atividade da marca. Especifique quando a atividade começa e termina, bem como a prioridade da atividade. Além disso, você também acompanha metas. Especificamente, você pode decidir o que deseja medir com suas atividades.
+A etapa Metas e configurações do [processo de direcionamento](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) envolve a configuração do comportamento da atividade da marca. Especifique quando a atividade começa e termina e sua prioridade. Além disso, você também acompanha metas. Especificamente, você pode decidir o que deseja medir com suas atividades.
 
 As Métricas de Meta só estarão disponíveis se você usar o Adobe Target como seu mecanismo de direcionamento. É necessário ter, pelo menos, uma métrica de meta. Se o Adobe Analytics estiver configurado e você tiver uma configuração de nuvem A4T do Analytics, será possível selecionar se deseja que a fonte de relatórios seja o Adobe Target ou o Adobe Analytics.
 

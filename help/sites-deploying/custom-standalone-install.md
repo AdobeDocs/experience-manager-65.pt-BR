@@ -1,14 +1,12 @@
 ---
 title: Instalação Personalizada Independente
-seo-title: Custom Standalone Install
 description: Saiba mais sobre as opções disponíveis ao instalar uma instância independente do AEM.
-seo-description: Learn about the options available when installing a standalone AEM instance.
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1618'
 ht-degree: 0%
 
 ---
@@ -45,7 +43,7 @@ Há várias regras a serem seguidas ao renomear o arquivo jar de início rápido
 
 ### Considerações sobre o Java 11 {#java-considerations}
 
-Se você estiver executando o Oracle Java 11 (ou versões do Java mais recentes que 8), será necessário adicionar opções adicionais à linha de comando ao iniciar o AEM.
+Se você estiver executando o Oracle Java 11 (ou versões do Java mais recentes que 8), é necessário adicionar opções adicionais à linha de comando ao iniciar o AEM.
 
 * A seguir - `-add-opens` interruptores devem ser adicionados para evitar mensagens de AVISO de acesso à reflexão relacionada na `stdout.log`
 
@@ -67,7 +65,7 @@ Finalmente, se você estiver executando uma instância atualizada do AEM 6.3, ve
 
 ## Modos de execução {#run-modes}
 
-**Modos de execução** O permite ajustar a instância do AEM para um propósito específico; por exemplo, criar ou publicar, testar, desenvolver, intranet etc. Esses modos também permitem controlar o uso de conteúdo de amostra. Esse conteúdo de amostra é definido antes que o início rápido seja criado e pode incluir pacotes, configurações etc. Isso pode ser particularmente útil para instalações prontas para produção quando você quiser manter sua instalação enxuta e sem conteúdo de amostra. Para obter mais informações, consulte:
+**Modos de execução** O permite ajustar a instância do AEM para um propósito específico; por exemplo, criar ou publicar, testar, desenvolver, intranet e assim por diante. Esses modos também permitem controlar o uso de conteúdo de amostra. Esse conteúdo de amostra é definido antes que o início rápido seja criado e pode incluir pacotes, configurações e assim por diante. Isso pode ser particularmente útil para instalações prontas para produção quando você quiser manter sua instalação enxuta e sem conteúdo de amostra. Para obter mais informações, consulte:
 
 * [Modos de execução](/help/sites-deploying/configure-runmodes.md)
 

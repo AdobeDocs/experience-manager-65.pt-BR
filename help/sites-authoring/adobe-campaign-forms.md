@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: d53ef3e2-14ca-4444-b563-be67be15c040
 exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1286'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Primeiro, verifique se a conexão entre as instâncias de autor e publicação e
 >Verifique se **acMapping** na página do **jcr:content** o nó está definido como **mapRecipient** ou **perfil** ao usar o Adobe Campaign Classic ou o Adobe Campaign Standard, respectivamente
 >
 
-1. No AEM, no Sites, navegue até o local em que deseja criar uma nova página.
+1. No AEM, no Sites, navegue até o local em que deseja criar uma página.
 1. Crie uma página e selecione **Perfil do Adobe Campaign Classic** ou **Perfil do Adobe Campaign Standard** e clique em **Próxima**.
 
    ![chlimage_1-43](assets/chlimage_1-43a.png)
@@ -95,7 +95,7 @@ Esta seção só detalha links específicos para o Adobe Campaign. Para obter ma
    * **Adobe Campaign: assinar os serviços**: permite gerenciar as assinaturas de um recipient no Adobe Campaign.
    * **Adobe Campaign: cancelar a assinatura dos serviços**: permite cancelar as subscrições de um recipient no Adobe Campaign.
 
-1. Você deve ter um **Chave primária criptografada** em cada formulário. Esse componente define qual parâmetro de URL será usado para aceitar a chave primária criptografada de um perfil do Adobe Campaign. Em Componentes, selecione Adobe Campaign para que somente os componentes fiquem visíveis.
+1. Você deve ter um **Chave primária criptografada** em cada formulário. Esse componente define qual parâmetro de URL é usado para aceitar a chave primária criptografada de um perfil do Adobe Campaign. Em Componentes, selecione Adobe Campaign para que somente os componentes fiquem visíveis.
 1. Arraste o componente **Chave primária criptografada** ao formulário (em qualquer lugar) e clique ou toque no **Configuração** ícone. No **Adobe Campaign** especifique qualquer nome para o parâmetro de URL. Clique ou toque na marca de seleção para salvar as alterações.
 
    Os links gerados para este formulário precisam usar este parâmetro de URL e atribuir a ele a chave primária criptografada de um perfil do Adobe Campaign. A chave primária criptografada deve ser corretamente codificada no URL (porcentagem).

@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1796'
-ht-degree: 67%
+source-wordcount: '1795'
+ht-degree: 65%
 
 ---
 
@@ -24,7 +24,7 @@ Isso fornece um sistema de parágrafo que permite posicionar componentes em uma 
 O container de layout:
 
 * Fornece a opção de encaixe horizontal na grade, juntamente com a capacidade de posicionar componentes lado a lado na grade e definir quando devem ser recolhidos/refluídos.
-* Usa pontos de interrupção predefinidos (por exemplo para telefone, tablet etc.) para permitir que você defina o comportamento necessário do conteúdo para dispositivos/orientação relacionados.
+* Usa pontos de interrupção predefinidos (por exemplo, para telefone, tablet e assim por diante) para permitir que você defina o comportamento necessário do conteúdo para dispositivos/orientações relacionadas.
 
    * Por exemplo, você pode personalizar o tamanho do componente ou se ele pode ser visualizado em dispositivos específicos.
 
@@ -61,7 +61,7 @@ Dependendo do projeto, o Contêiner de layout pode ser usado como o sistema de p
 
 >[!NOTE]
 >
->A Adobe fornece uma [documentação de GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) do layout responsivo como uma referência que pode ser fornecida para desenvolvedores front-end permitindo que usem a grade do AEM fora do AEM, por exemplo, ao criar modelos HTML estáticos para um site futuro do AEM.
+>Adobe fornece [Documentação do GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) do layout responsivo como uma referência que pode ser fornecida para desenvolvedores de front-end permitindo que usem a grade AEM fora do AEM, por exemplo, ao criar modelos de HTML estáticos para um futuro site de AEM.
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ Por exemplo, ao selecionar o dispositivo **iPhone 6 Plus** (definido com uma lar
 
    ![Emulador](do-not-localize/screen_shot_2018-03-23at084256.png)
 
-1. A barra de ferramentas do emulador abre.
+1. A barra de ferramentas do emulador se abre.
 
    ![screen_shot_2018-03-23at084551](assets/screen_shot_2018-03-23at084551.png)
 
@@ -182,7 +182,7 @@ Assim como em outros componentes, você pode selecionar e executar ações (reco
 
    ![screen_shot_2018-03-23at085636](assets/screen_shot_2018-03-23at085636.png)
 
-1. Essa ação destacará a grade inteira e seu conteúdo. A barra de ferramentas da ação será exibida e aqui você pode selecionar uma ação, como **Excluir.**
+1. Essa ação destacará a grade inteira e seu conteúdo. A barra de ferramentas da ação será exibida, na qual é possível selecionar uma ação, como **Excluir.**
 
    ![screen_shot_2018-03-23at085724](assets/screen_shot_2018-03-23at085724.png)
 
@@ -208,7 +208,7 @@ O modo **Layout** pode ser iniciado de duas maneiras.
 
 Quando estiver no modo de layout, você poderá executar várias ações em uma grade:
 
-* Redimensione os componentes de conteúdo usando os pontos azuis. O redimensionamento sempre se ajustará à grade. Ao redimensionar a grade de plano de fundo, será mostrado para auxiliar o alinhamento:
+* Redimensione os componentes de conteúdo usando os pontos azuis. O redimensionamento sempre se ajustará à grade. Ao redimensionar, a grade de plano de fundo é mostrada para auxiliar o alinhamento:
 
   ![screen_shot_2018-03-23at090140](assets/screen_shot_2018-03-23at090140.png)
 

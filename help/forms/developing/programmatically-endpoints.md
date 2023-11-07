@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '10801'
+source-wordcount: '10790'
 ht-degree: 1%
 
 ---
@@ -108,7 +108,7 @@ Após definir atributos de endpoint EJB, você pode criar um endpoint EJB para u
 
 **Habilitar o endpoint**
 
-Depois de criar um novo endpoint, você deve habilitá-lo. Depois de habilitar o endpoint, ele poderá ser usado para chamar o serviço. Após habilitar o endpoint, é possível visualizá-lo no console de administração.
+Depois de criar um endpoint, você deve habilitá-lo. Depois de habilitar o endpoint, ele poderá ser usado para chamar o serviço. Após habilitar o endpoint, é possível visualizá-lo no console de administração.
 
 **Consulte também**
 
@@ -213,7 +213,7 @@ Após definir os atributos do ponto de extremidade SOAP, você pode criar um pon
 
 **Habilitar o endpoint**
 
-Depois de criar um novo endpoint, você deve habilitá-lo. Quando o endpoint está habilitado, ele pode ser usado para chamar o serviço. Depois de habilitar o endpoint, você pode visualizá-lo no console de administração.
+Depois de criar um endpoint, você deve habilitá-lo. Quando o endpoint está habilitado, ele pode ser usado para chamar o serviço. Depois de habilitar o endpoint, você pode visualizá-lo no console de administração.
 
 **Consulte também**
 
@@ -319,7 +319,7 @@ Para criar um ponto final de Pasta monitorada para um serviço, especifique os s
 
 **Especificar valores de configuração**
 
-Você deve especificar valores de configuração para um ponto de extremidade de Pasta monitorada ao adicionar programaticamente um ponto de extremidade de Pasta monitorada a um serviço. Esses valores de configuração são especificados por um administrador se um endpoint de Pasta monitorada for adicionado usando o console de administração.
+Especifique os valores de configuração para um ponto de extremidade de Pasta monitorada ao adicionar programaticamente um ponto de extremidade de Pasta monitorada a um serviço. Esses valores de configuração são especificados por um administrador se um endpoint de Pasta monitorada for adicionado usando o console de administração.
 
 A lista a seguir especifica os valores de configuração que são definidos quando você adiciona programaticamente um ponto de extremidade de Pasta monitorada a um serviço:
 
@@ -552,7 +552,7 @@ Para criar um terminal de email para um serviço, especifique os seguintes valor
 
 **Especificar valores de configuração**
 
-Você deve especificar valores de configuração para um endpoint de email ao adicionar programaticamente um endpoint de email a um serviço. Esses valores de configuração são especificados por um administrador se um endpoint de email for adicionado usando o console de administração.
+Especifique os valores de configuração para um endpoint de email ao adicionar programaticamente um endpoint de email a um serviço. Esses valores de configuração são especificados por um administrador se um endpoint de email for adicionado usando o console de administração.
 
 >[!NOTE]
 >
@@ -811,7 +811,7 @@ Após definir os atributos do ponto de extremidade Remoting, você pode criar um
 
 **Habilitar o endpoint**
 
-Depois de criar um novo endpoint, você deve habilitá-lo. Quando um endpoint de Comunicação Remota está habilitado, ele permite que um cliente Flex chame o serviço.
+Depois de criar um endpoint, você deve habilitá-lo. Quando um endpoint de Comunicação Remota está habilitado, ele permite que um cliente Flex chame o serviço.
 
 **Consulte também**
 
@@ -899,7 +899,7 @@ Antes de adicionar programaticamente um ponto de extremidade TaskManager, você 
 
 **Criar uma categoria para o ponto de extremidade**
 
-As categorias são usadas para organizar serviços no Espaço de trabalho. Ou seja, um usuário do Workspace pode chamar um serviço que tenha um terminal TaskManager selecionando uma categoria no Workspace. Ao criar um endpoint do TaskManager, você pode fazer referência a uma categoria existente ou criar programaticamente uma nova categoria.
+As categorias são usadas para organizar serviços no Espaço de trabalho. Ou seja, um usuário do Workspace pode chamar um serviço que tenha um terminal TaskManager selecionando uma categoria no Workspace. Ao criar um endpoint do TaskManager, você pode fazer referência a uma categoria existente ou criar uma categoria de forma programática.
 
 >[!NOTE]
 >
@@ -922,7 +922,7 @@ Após definir os atributos de um ponto de extremidade do TaskManager, você pode
 
 **Habilitar o endpoint**
 
-Depois de criar um novo endpoint, você deve habilitá-lo. Quando o endpoint está habilitado, ele pode ser usado para chamar o serviço no Espaço de trabalho. Após habilitar o endpoint, é possível visualizá-lo no console de administração.
+Depois de criar um endpoint, você deve habilitá-lo. Quando o endpoint está habilitado, ele pode ser usado para chamar o serviço no Espaço de trabalho. Após habilitar o endpoint, é possível visualizá-lo no console de administração.
 
 **Consulte também**
 
@@ -1034,7 +1034,7 @@ Ao modificar um endpoint, especifique novos valores de configuração. Por exemp
 
 >[!NOTE]
 >
->Não é possível modificar o serviço chamado pelo ponto de extremidade. Se você tentar modificar o serviço, uma exceção será lançada. Para modificar o serviço associado a um determinado ponto de extremidade, remova o ponto de extremidade e crie um novo. (Consulte [Removendo Pontos de Extremidade](programmatically-endpoints.md#removing-endpoints).)
+>Não é possível modificar o serviço chamado pelo ponto de extremidade. Se você tentar modificar o serviço, uma exceção será lançada. Para modificar o serviço associado a um determinado ponto de extremidade, remova o ponto de extremidade e crie um. (Consulte [Removendo Pontos de Extremidade](programmatically-endpoints.md#removing-endpoints).)
 
 **Consulte também**
 
@@ -1128,7 +1128,7 @@ Você pode recuperar um ponto de extremidade recuperando uma lista de pontos de 
 
 **Remover o ponto de extremidade**
 
-Depois de criar um novo endpoint, você deve habilitá-lo. Quando o endpoint está habilitado, ele pode ser usado para chamar o serviço. Após habilitar o endpoint, é possível visualizá-lo no console de administração.
+Depois de criar um endpoint, você deve habilitá-lo. Quando o endpoint está habilitado, ele pode ser usado para chamar o serviço. Após habilitar o endpoint, é possível visualizá-lo no console de administração.
 
 **Consulte também**
 

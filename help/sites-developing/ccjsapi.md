@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a6e5810b-dac5-4137-93cf-5d8d53cacc49
 feature: Context Hub
 exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3159'
+source-wordcount: '3157'
 ht-degree: 2%
 
 ---
@@ -72,7 +72,7 @@ Por exemplo, um armazenamento de sessão é baseado em um objeto JSON e recupera
 * O armazenamento é pré-preenchido com valores padrão (propriedades init), mas a solicitação falha (tempo limite). Há apenas uma inicialização com valores padrão.
 * O armazenamento é preenchido previamente
 
-Quando o atraso estiver definido como `true` Para um número de milissegundos, o método aguarda antes de chamar o método de retorno de chamada. Se outro evento de inicialização for acionado antes que o atraso seja passado, ele aguardará até que o tempo de atraso seja excedido sem nenhum evento de inicialização. Isso permite aguardar um segundo evento de inicialização ser acionado e chama a função de retorno de chamada no caso ideal.
+Quando o atraso estiver definido como `true` Por vários milissegundos, o método aguarda antes de chamar o método de retorno de chamada. Se outro evento de inicialização for acionado antes que o atraso seja passado, ele aguardará até que o tempo de atraso seja excedido sem nenhum evento de inicialização. Isso permite aguardar um segundo evento de inicialização ser acionado e chama a função de retorno de chamada no caso ideal.
 
 **Parâmetros**
 

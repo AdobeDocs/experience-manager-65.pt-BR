@@ -10,9 +10,9 @@ topic-tags: document_services
 discoiquuid: 6a99042f-79c7-494b-bca0-73f2b5725b58
 docset: aem65
 exl-id: 2acd6b19-0fe8-4994-b0f4-c9d5b9f3fdf1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2115'
 ht-degree: 6%
 
 ---
@@ -35,7 +35,7 @@ A ilustração a seguir mostra três documentos de origem sendo mesclados em um 
 
 Montagem de um documento PDF simples a partir de vários documentos PDF
 
-O exemplo a seguir é um documento DDX simples usado para montar o documento. Especifica os nomes dos documentos de origem usados para produzir o documento resultante, bem como o nome do documento resultante:
+O exemplo a seguir é um documento DDX simples usado para montar o documento. Especifica os nomes dos documentos de origem usados para produzir o documento resultante e o nome do documento resultante:
 
 ```xml
 <PDF result="Doc4">
@@ -86,15 +86,15 @@ Se um ou mais documentos de entrada estiverem criptografados, forneça uma senha
 
 Ao montar um documento, você pode usar a numeração de Bates para aplicar um identificador de página exclusivo a cada página. Quando você usa a numeração de Bates, cada página no documento (ou conjunto de documentos) recebe um número que identifica exclusivamente a página. Por exemplo, os documentos de fabricação que contêm informações sobre a lista de materiais e estão associados à produção de uma montagem podem conter um identificador. Um número Bates contém um valor numérico incrementado sequencialmente e um prefixo e sufixo opcionais. O prefixo + valor numérico + sufixo é chamado de padrão bates.
 
-A ilustração a seguir mostra um documento PDF que contém um identificador exclusivo localizado no cabeçalho do documento.
+A ilustração a seguir mostra um documento PDF que contém um identificador exclusivo no cabeçalho do documento.
 
-![Um documento PDF que contém um identificador exclusivo localizado no cabeçalho do documento](do-not-localize/as_batesnumber.png)
+![Um documento PDF que contém um identificador exclusivo no cabeçalho do documento](do-not-localize/as_batesnumber.png)
 
-Um documento PDF que contém um identificador exclusivo localizado no cabeçalho do documento
+Um documento PDF que contém um identificador exclusivo no cabeçalho do documento
 
 ### Nivelar e reunir documentos {#flatten-and-assemble-documents}
 
-Você pode usar o serviço Assembler para transformar um documento PDF interativo (por exemplo, um formulário) em um documento PDF não interativo. Um documento PDF interativo permite aos usuários inserir ou modificar dados localizados nos campos do documento PDF. O processo de transformação de um documento PDF interativo em um documento PDF não interativo é chamado de nivelamento. Quando um documento PDF é nivelado, os campos de formulário mantêm sua aparência gráfica, mas não são mais interativos. Um motivo para nivelar um documento PDF é garantir que os dados não possam ser modificados. Além disso, os scripts associados aos campos não funcionam mais.
+Você pode usar o serviço Assembler para transformar um documento PDF interativo (por exemplo, um formulário) em um documento PDF não interativo. Um documento PDF interativo permite que os usuários insiram ou modifiquem dados nos campos do documento PDF. O processo de transformação de um documento PDF interativo em um documento PDF não interativo é chamado de nivelamento. Quando um documento PDF é nivelado, os campos de formulário mantêm sua aparência gráfica, mas não são mais interativos. Um motivo para nivelar um documento PDF é garantir que os dados não possam ser modificados. Além disso, os scripts associados aos campos não funcionam mais.
 
 Quando você cria um documento PDF que é montado a partir de documentos PDF interativos, o serviço do Assembler nivela esses formulários antes de montá-los no documento resultante.
 
@@ -311,11 +311,11 @@ Você pode usar o serviço Assembler para obter as seguintes informações sobre
    * Frases em cada parágrafo de cada página do documento
 
 * Marcadores, incluindo número da página, título, destino e aparência. Você pode exportar isto\
-   dados de um documento PDF e importe-os para um documento PDF.
+  dados de um documento PDF e importe-os para um documento PDF.
 
 * Anexos de arquivo, incluindo informações de arquivo. Para anexos no nível da página, também inclui a variável\
-   local da anotação do anexo de arquivo. É possível exportar esses dados de um documento PDF e\
-   importe-o em um documento PDF.
+  local da anotação do anexo de arquivo. É possível exportar esses dados de um documento PDF e\
+  importe-o em um documento PDF.
 
 * Arquivos de pacote, incluindo informações de arquivo, pastas, pacote, esquema e dados de campo. Você pode exportar esses dados de um documento PDF e importá-los para um documento PDF.
 

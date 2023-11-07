@@ -4,9 +4,9 @@ description: Saiba como identificar o conteúdo que precisa ser traduzido no Ado
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1152'
 ht-degree: 66%
 
 ---
@@ -160,7 +160,7 @@ A partir daqui, você pode **Adicionar contexto**. Isso permite adicionar um cam
 
 ![chlimage_1-57](assets/chlimage_1-57.jpeg)
 
-Em seguida, é necessário selecionar o contexto e clicar em **Editar**. Isso abrirá o Editor de regras de tradução.
+Em seguida, é necessário selecionar o contexto e clicar em **Editar**. Isso abre o Editor de regras de tradução.
 
 ![chlimage_1-58](assets/chlimage_1-58.jpeg)
 
@@ -192,7 +192,7 @@ Na interface, você pode marcar/desmarcar **Herdar** na guia **Propriedades**.
 
 Na interface, você pode marcar/desmarcar **Traduzir** na guia **Propriedades**.
 
-**updateDestinationLanguage** Esse atributo é usado para propriedades que não têm texto, e sim códigos de idioma. Por exemplo: jcr:language. O usuário não está traduzindo o texto, e sim convertendo a localidade do idioma da origem para o destino. Essas propriedades não são enviadas para tradução.
+**updateDestinationLanguage** Esse atributo é usado para propriedades que não têm texto, e sim códigos de idioma. Por exemplo, jcr:language. O usuário não está traduzindo o texto, e sim convertendo a localidade do idioma da origem para o destino. Essas propriedades não são enviadas para tradução.
 
 Na interface, você pode marcar/desmarcar **Traduza** no **Propriedades** , mas para as propriedades específicas que têm códigos de idioma como valor.
 

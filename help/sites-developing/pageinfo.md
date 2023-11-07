@@ -10,7 +10,7 @@ topic-tags: components
 content-type: reference
 discoiquuid: 505bf3e3-ce3c-40aa-9619-e1b9f6634deb
 exl-id: 7c856e87-9f90-435d-aceb-994f10ea6f50
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 2%
@@ -476,6 +476,7 @@ Configure o serviço Day CQ WCM Workflow Package Info Provider para que ele reto
 >[!NOTE]
 >
 >A guia Fluxo de trabalho do Sidekick usa o servlet PageInfo para obter uma lista de pacotes de fluxo de trabalho. Na lista, é possível selecionar o pacote ao qual adicionar a página atual. Os filtros criados afetam essa lista.
+>
 
 A ID do serviço é `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`. Para criar um filtro, especifique um valor para um `workflowpackageinfoprovider.filter` propriedade.
 
@@ -494,7 +495,7 @@ O serviço aplica o resultado cumulativo de todos os filtros. Por exemplo, os se
 
 >[!NOTE]
 >
->Ao trabalhar com o AEM há vários métodos de gerenciamento das definições de configuração desses serviços. Consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos.
+>Ao trabalhar com o AEM, há vários métodos de gerenciamento das definições de configuração desses serviços. Consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos.
 
 Por exemplo, para configurar o serviço usando o CRXDE Lite:
 
@@ -516,7 +517,7 @@ Para configurar o serviço no código-fonte do projeto:
 
 1. Localize ou crie a pasta de configuração do aplicativo AEM no código-fonte do projeto.
 
-   Por exemplo, se você usou o arquétipo multimódulo do Plug-in Maven do pacote de conteúdo para criar seu projeto, o caminho da pasta será `<projectroot>/content/src/ for example content/src/main/content/jcr_root/apps/<appname>/config`.
+   Por exemplo, se você usou o arquétipo multimódulo do Plug-in Maven do pacote de conteúdo para criar seu projeto, o caminho da pasta será `<projectroot>/content/src/ for example, content/src/main/content/jcr_root/apps/<appname>/config`.
 1. Na pasta de configuração, crie um arquivo de texto chamado com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml
 1. Copie o texto a seguir para o arquivo:
 

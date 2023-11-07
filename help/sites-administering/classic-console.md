@@ -1,19 +1,15 @@
 ---
 title: Console de marcação da interface clássica
-seo-title: Classic UI Tagging Console
 description: Saiba mais sobre o Console de marcação da interface do usuário do Adobe Experience Manager Classic.
-seo-description: Learn about the Classic UI Tagging Console.
-uuid: 51e29422-f967-424b-a7fd-4ca2ddc6b8a3
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
-discoiquuid: b279c033-bc93-4e62-81ad-123c40b9fdd2
 docset: aem65
 exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '891'
 ht-degree: 1%
 
 ---
@@ -41,7 +37,7 @@ Para acessar o console de Marcação da Interface Clássica:
 
    ![Caixa de diálogo Criando um namespace](assets/creating_tags_andnamespaces.png)
 
-   Se selecionar um namespace (por exemplo, **Demonstração**), você pode criar uma tag nesse namespace:
+   Se você selecionar um namespace (por exemplo, **Demonstração**), você pode criar uma tag nesse namespace:
 
    ![Caixa de diálogo Criação de uma tag](assets/creating_tags_andnamespacesinnewnamespace.png)
 
@@ -176,7 +172,7 @@ Por padrão, a tag `titles`nas propriedades da página são exibidas no idioma d
 
 Por padrão, a caixa de diálogo Propriedades da página exibe a tag `titles`de acordo com o idioma da página.
 
-Em geral, o idioma da tag é retirado do idioma da página se o idioma da página estiver disponível. Quando a variável [`tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) for usada em outros casos (por exemplo, em formulários ou caixas de diálogo), a linguagem da tag dependerá do contexto.
+Em geral, o idioma da tag é retirado do idioma da página se o idioma da página estiver disponível. Quando a variável [`tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) for usada em outros casos (por exemplo, em formulários ou caixas de diálogo), o idioma da tag dependerá do contexto.
 
 >[!NOTE]
 >

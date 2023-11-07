@@ -1,18 +1,14 @@
 ---
 title: Trabalhar com o Adobe Campaign 6.1 e o Adobe Campaign Standard
-seo-title: Working with Adobe Campaign 6.1 and Adobe Campaign Standard
 description: Você pode criar conteúdo de email no AEM e processá-lo em emails do Adobe Campaign.
-seo-description: You can create email content in AEM and process it in Adobe Campaign emails.
-uuid: 439df7fb-590b-45b8-9768-565b022a808b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1163'
 ht-degree: 0%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 Você pode criar conteúdo de email no AEM e processá-lo em emails do Adobe Campaign. Para fazer isso, você deve:
 
-1. Crie um novo boletim informativo no AEM a partir de um modelo específico do Adobe Campaign.
+1. Crie um boletim informativo no AEM a partir de um modelo específico do Adobe Campaign.
 1. Selecionar [um serviço do Adobe Campaign](#selectingtheadobecampaigncloudservice) antes de editar o conteúdo para acessar todas as funcionalidades.
 1. Editar o conteúdo.
 1. Validar o conteúdo.
@@ -147,7 +143,7 @@ Consulte [Componentes do Adobe Campaign](/help/sites-classic-ui-authoring/classi
 
 ### Visualização de informativo {#previewing-a-newsletter}
 
-Você pode visualizar como o informativo será exibido, bem como visualizar a personalização.
+Você pode visualizar como o informativo será exibido e visualizar a personalização.
 
 1. Abra o informativo que deseja visualizar e clique em Visualizar (lupa) para diminuir o sidekick.
 1. Clique em um dos ícones de cliente de email para ver a aparência do informativo em cada cliente de email.

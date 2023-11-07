@@ -4,10 +4,10 @@ description: Saiba como preparar conteúdo para tradução no Adobe Experience M
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 81978733-89a6-4436-bcf1-4bde962ed54f
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 65%
+source-wordcount: '683'
+ht-degree: 61%
 
 ---
 
@@ -47,11 +47,11 @@ Crie uma raiz de idioma como a página raiz de uma cópia de idioma que identifi
 
 Para criar a raiz do idioma, crie uma página e use um código de idioma ISO como o valor da propriedade Nome. O código de idioma deve estar em um dos seguintes formatos:
 
-* `<language-code>`O código de idioma compatível é um código de duas letras, conforme definido pela ISO-639-1, como por exemplo `en`.
+* `<language-code>`O código de idioma compatível é um código de duas letras, conforme definido pela ISO-639-1, como por exemplo, `en`.
 
-* `<language-code>_<country-code>` ou `<language-code>-<country-code>`O código do país compatível é um código de duas letras em minúsculas ou maiúsculas, conforme definido pela norma ISO 3166, por exemplo `en_US`, `en_us`, `en_GB`, `en-gb`.
+* `<language-code>_<country-code>` ou `<language-code>-<country-code>`O código do país compatível é um código de duas letras em minúsculas ou maiúsculas, conforme definido pela norma ISO 3166, por exemplo, `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-É possível usar qualquer um dos formatos, de acordo com a estrutura escolhida para o site global.  Por exemplo, a página raiz da cópia em francês do site do Geometrixx tem `fr` como a propriedade Nome. Observe que a propriedade Nome é usada como o nome do nó da página no repositório e, portanto, determina o caminho da página. (http://localhost:4502/content/geometrixx/fr.html)
+É possível usar qualquer um dos formatos, de acordo com a estrutura escolhida para o site global.  Por exemplo, a página raiz da cópia em francês do site do Geometrixx tem `fr` como a propriedade Nome. A propriedade Nome é usada como o nome do nó da página no repositório e, portanto, determina o caminho da página. (http://localhost:4502/content/geometrixx/fr.html)
 
 O procedimento a seguir usa a interface otimizada para toque para criar uma cópia de idioma de um site. Para obter instruções que usam a interface clássica, consulte [Criação de uma raiz de idioma usando a interface clássica](/help/sites-administering/tc-lroot-classic.md).
 
@@ -65,7 +65,7 @@ O procedimento a seguir usa a interface otimizada para toque para criar uma cóp
    ![chlimage_1-21](assets/chlimage_1-21a.png)
 
 1. Selecione o modelo de página e clique ou toque em Próximo.
-1. No campo Nome, digite o código do país no formato de `<language-code>` ou `<language-code>_<country-code>`, como por exemplo `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Digite um título para a página.
+1. No campo Nome, digite o código do país no formato de `<language-code>` ou `<language-code>_<country-code>`, como por exemplo, `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Digite um título para a página.
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 

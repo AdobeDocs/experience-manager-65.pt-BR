@@ -1,18 +1,14 @@
 ---
 title: Backup e recuperação do repositório EMC Documentum
-seo-title: Backing up and recovering the EMC Documentum repository
 description: Este documento descreve as tarefas necessárias para fazer backup e recuperar o repositório do EMC Documentum configurado para seu ambiente de formulários AEM.
-seo-description: This document describes the tasks required to back up and recover the EMC Documentum repository configured for your AEM forms environment.
-uuid: ab3b1fb1-25b3-4c95-801f-82d4b58f05ff
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 exl-id: bc21659f-88d6-4dff-8baf-12746e1b3ed9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '802'
 ht-degree: 0%
 
 ---
@@ -67,7 +63,7 @@ Esta seção descreve a instalação e configuração do software EMC NetWorker 
     #
     # Parameters not shown can be set in this file (as per site customisation) #or from the command-line.
     #
-    # Please refer to the user Guides for details on all parameters, including
+    # See the user Guides for details on all parameters, including
     # those not listed below.
     # Note: DCTM environment for D6 is slightly different from D5, refer to D6
     # Installation Guide to update the values.
@@ -198,29 +194,29 @@ Esta seção descreve a instalação e configuração do software EMC NetWorker 
 
    * Backup completo do banco de dados (nsrnmddbf.bat):
 
-      `NetWorker_database_module_root` `-s`*&lt;networker_server_name>* `-U``[username]` `-P`*[senha ]*`-l full`*&lt;database_name>*
+     `NetWorker_database_module_root` `-s`*&lt;networker_server_name>* `-U``[username]` `-P`*[senha ]*`-l full`*&lt;database_name>*
 
    * Backup incremental do banco de dados (nsrnmddbi.bat):
 
-      `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
 
    * Backup de log do banco de dados (nsrnmddbl.bat):
 
-      `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;database_name>*
 
-      Onde:
+     Em que:
 
-      `[NetWorker_database_module_root]` é o diretório de instalação do módulo NetWorker. Por exemplo, o diretório de instalação padrão do NetWorker Module for SQL Server é C:\Program Files\Legato\nsr\bin\nsrsqlsv.
+     `[NetWorker_database_module_root]` é o diretório de instalação do módulo NetWorker. Por exemplo, o diretório de instalação padrão do NetWorker Module for SQL Server é C:\Program Files\Legato\nsr\bin\nsrsqlsv.
 
-      `NetWorker_Server_Name` é o servidor no qual o NetWorker está instalado.
+     `NetWorker_Server_Name` é o servidor no qual o NetWorker está instalado.
 
-      `username` &amp; `password` são o nome de usuário e a senha do usuário administrador do banco de dados.
+     `username` &amp; `password` são o nome de usuário e a senha do usuário administrador do banco de dados.
 
-      `database_name` é o nome do banco de dados do qual se fará backup.
+     `database_name` é o nome do banco de dados do qual se fará backup.
 
 **Criar um dispositivo de backup**
 
-1. Crie um novo diretório no servidor EMC Documentum e compartilhe a pasta dando direitos completos a todos os usuários.
+1. Crie um diretório no servidor EMC Documentum e compartilhe a pasta dando direitos completos a todos os usuários.
 1. Inicie o EMC NetWorker Administrator e clique em Media Management > Devices.
 1. Clique com o botão direito do mouse em Dispositivos e selecione Criar.
 1. Insira os seguintes valores e clique em OK:

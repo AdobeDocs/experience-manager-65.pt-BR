@@ -10,7 +10,7 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 2%
@@ -67,7 +67,7 @@ A personalização pode ser usada em muitos casos, por exemplo:
 
 ### Grupos De Usuários Específicos, Limitados E Alvo - Extranets {#extranets}
 
-* Os usuários exigem um logon para autorização; isso será vinculado a um perfil que fornece as informações necessárias para personalização; possivelmente detalhes como localização, relacionamento com o produto, histórico de uso, responsabilidades orçamentárias etc.
+* Os usuários exigem um logon para autorização; isso será vinculado a um perfil que fornece as informações necessárias para personalização; possivelmente detalhes como localização, relacionamento com o produto, histórico de uso, responsabilidades orçamentárias e assim por diante.
 * Essas instâncias podem variar em sites como:
 * Empresas que fornecem sites para uma seção altamente especializada de seu mercado, por exemplo, uma empresa farmacêutica que fornece um site especializado para médicos.
 * Empresas que fornecem sites que permitem que seus clientes visualizem informações atuais de conta e faturamento; por exemplo, provedores de telefone.
@@ -180,4 +180,4 @@ Sem a extensão Communities, vários métodos a serem explorados para abordar o 
 * Sincronizar as várias instâncias de publicação quando necessário
 * Envie o UGC da instância de publicação para o ambiente de criação, de onde ele pode ser publicado de uma maneira semelhante à publicação do conteúdo da página
 
-O método usado para obter consistência de UGC em um ambiente de publicação que consiste em várias instâncias de publicação deve ser cuidadosamente projetado e testado para fins de desempenho e consistência.
+O método usado para obter consistência de UGC em um ambiente de publicação que consiste em várias instâncias de publicação deve ser cuidadosamente projetado e testado para desempenho e consistência.

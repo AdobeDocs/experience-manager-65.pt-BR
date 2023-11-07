@@ -4,10 +4,10 @@ description: Descubra as práticas recomendadas compiladas pelas equipes de enge
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1614'
-ht-degree: 42%
+source-wordcount: '1609'
+ht-degree: 40%
 
 ---
 
@@ -52,7 +52,7 @@ Os benefícios adicionais de usar configurações de blueprint são que elas:
 
 No caso de uma configuração de blueprint não ser mencionada, as implantações só podem ser iniciadas a partir das próprias live copies, essencialmente obtendo conteúdo da origem.
 
-Ao criar um novo site com a live copy, é vantajoso criar configurações de blueprint para garantir a disponibilidade do conjunto completo de recursos do MSM.
+Ao criar um site com live copy, é vantajoso criar configurações de blueprint para garantir a disponibilidade do conjunto completo de recursos do MSM.
 
 >[!NOTE]
 >
@@ -87,7 +87,7 @@ Observe que o AEM tem duas abordagens principais para a criação de live copies
 
 Estas são algumas considerações que devem ser levadas em conta ao criar um site:
 
-* Para criar um novo site, você precisa de uma [configuração de blueprint](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
+* Para criar um site, você precisa de um [configuração do blueprint](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
 * Para permitir a seleção de caminhos de idioma para criar em um novo site, as raízes de idioma correspondentes devem existir no blueprint (origem).
 * Uma vez a [o novo site foi criado como uma live copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (usando **Criar**, depois **Site**), os dois primeiros níveis dessa live copy são *superficial*. Os filhos da página não pertencem ao relacionamento dinâmico, mas uma implantação ainda descerá se um relacionamento dinâmico que corresponda ao acionador for encontrado.
 

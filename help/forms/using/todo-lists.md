@@ -11,9 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4032'
+source-wordcount: '4031'
 ht-degree: 0%
 
 ---
@@ -374,7 +374,7 @@ Se você tiver acesso à lista de tarefas pendentes de outro usuário, não pode
 
 Se você planeja ficar fora do escritório, é possível especificar o que acontece com as tarefas atribuídas a você nesse período.
 
-Você tem a opção de especificar uma data e hora de início e uma data e hora de término para que suas configurações de ausência temporária entrem em vigor. Se você estiver localizado em um fuso horário diferente do servidor, o fuso horário usado será o do servidor.
+Você tem a opção de especificar uma data e hora de início e uma data e hora de término para que suas configurações de ausência temporária entrem em vigor. Se você estiver em um fuso horário diferente do servidor, o fuso horário usado será o do servidor.
 
 Você pode definir uma pessoa padrão para a qual todas as suas tarefas serão enviadas. Você também pode especificar exceções para tarefas de processos específicos a serem enviadas para um usuário diferente ou para permanecer na lista de tarefas pendentes até retornar. Se a pessoa designada também estiver fora do escritório, a tarefa será encaminhada ao usuário designado. Se a tarefa não puder ser atribuída a um usuário que não esteja fora do escritório, ela permanecerá na lista de tarefas pendentes.
 

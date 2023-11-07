@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
-source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1497'
 ht-degree: 6%
 
 ---
@@ -111,7 +111,7 @@ Para a ID do conjunto de relatórios (RSID) que você está usando, é possível
 >
 >Por exemplo, uma estrutura é configurada para usar a variável *diiweretail* o conjunto de relatórios e o autor são a instância de servidor selecionada. Quando as páginas são publicadas junto com a estrutura, as chamadas ainda são feitas para o Adobe Analytics, no entanto, essas chamadas não contêm a RSID. Somente as chamadas da instância do autor incluem a RSID.
 
-1. Usar **Navegação**, selecione **Ferramentas**, **Cloud Services**, depois **Cloud Services herdados**.
+1. Usar **Navegação**, selecione **Ferramentas**, **Cloud Service**, depois **Cloud Service herdados**.
 1. Navegue até **Adobe Analytics** e selecione **Exibir configurações**.
 1. Clique em **[+]** ao lado da configuração do Adobe Analytics.
 
@@ -169,15 +169,15 @@ Comece abrindo o painel. Pressione a seta para baixo ao lado de **Servidores**:
 
 ## Associar uma página a uma estrutura do Adobe Analytics {#associating-a-page-with-a-adobe-analytics-framework}
 
-Quando uma página é associada a uma estrutura Adobe Analytics, a página envia dados para a Adobe Analytics quando a página é carregada. As variáveis que a página preenche são mapeadas e recuperadas das variáveis do Adobe Analytics na estrutura. Por exemplo, as exibições de página são recuperadas do Adobe Analytics.
+Quando uma página é associada a uma estrutura do Adobe Analytics, a página envia dados para o Adobe Analytics quando a página é carregada. As variáveis que a página preenche são mapeadas e recuperadas das variáveis do Adobe Analytics na estrutura. Por exemplo, as exibições de página são recuperadas do Adobe Analytics.
 
 Os descendentes da página herdam a associação com a estrutura. Por exemplo, ao associar a página raiz do site a uma estrutura, todas as páginas do site são associadas à estrutura.
 
 1. No **Sites** selecione a página que deseja configurar com o rastreamento.
 1. Abra o **[Propriedades da página](/help/sites-authoring/editing-page-properties.md)**, diretamente do console ou do editor de páginas.
-1. Abra a guia ** Cloud Services**.
+1. Abra a guia ** Cloud Service**.
 
-1. Use o **Adicionar configuração** selecione **Adobe Analytics** nas opções disponíveis. Se a herança for colocada, desative-a antes que o seletor fique disponível.
+1. Use o **Adicionar configuração** para selecionar **Adobe Analytics** nas opções disponíveis. Se a herança for colocada, desative-a antes que o seletor fique disponível.
 
 1. O seletor suspenso de **Adobe Analytics** está anexado às opções disponíveis. Selecione a configuração de estrutura necessária.
 
@@ -187,7 +187,7 @@ Os descendentes da página herdam a associação com a estrutura. Por exemplo, a
 1. Você pode verificar as chamadas feitas ao Adobe Analytics usando uma ferramenta apropriada; por exemplo, [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html).
 1. Usando o exemplo fornecido, a chamada deve conter o valor inserido (ou seja, berinjela) em eVar7 e a lista de eventos deve conter event3.
 
-### Exibições da página {#page-views}
+### Visualizações de página {#page-views}
 
 Quando uma página é associada a uma estrutura do Adobe Analytics, o número de exibições de página pode ser mostrado na exibição em Lista do console Sites.
 
@@ -206,7 +206,7 @@ Para configurar esse serviço OSGi, você pode usar o [Console da Web](/help/sit
 
 ## Editar configurações e/ou estruturas do Adobe Analytics {#editing-adobe-analytics-configurations-and-or-frameworks}
 
-Como ocorre ao criar uma configuração ou estrutura do Adobe Analytics, navegue até o (herdado) **Cloud Services** tela. Selecionar **Exibir configurações**, em seguida, clique no link para a configuração específica que deseja atualizar.
+Como ocorre ao criar uma configuração ou estrutura do Adobe Analytics, navegue até o (herdado) **Cloud Service** tela. Selecionar **Exibir configurações**, em seguida, clique no link para a configuração específica que deseja atualizar.
 
 Ao editar uma configuração do Adobe Analytics, pressione **Editar** quando estiver na própria página de configuração para abrir a variável **Editar componente** diálogo.
 

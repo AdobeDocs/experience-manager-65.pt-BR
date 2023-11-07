@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1947'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Além de [desenvolvimento de novos componentes](/help/sites-developing/developin
 
 >[!NOTE]
 >
->Este documento se concentra no desenvolvimento de formulários usando o [Componentes de base](/help/sites-authoring/default-components-foundation.md) na interface clássica. A Adobe recomenda aproveitar o novo [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e [Ocultar condições](/help/sites-developing/hide-conditions.md) para desenvolvimento de formulários na interface habilitada para toque.
+>Este documento se concentra no desenvolvimento de formulários usando o [Componentes de base](/help/sites-authoring/default-components-foundation.md) na interface clássica. O Adobe recomenda usar o novo [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e [Ocultar condições](/help/sites-developing/hide-conditions.md) para desenvolvimento de formulários na interface habilitada para toque.
 
 ## Pré-carregando Valores de Formulário {#preloading-form-values}
 
@@ -68,7 +68,7 @@ Uma lista suspensa pode ser configurada com o intervalo de valores para seleçã
 
 A variável **Caminho de carregamento de itens** O pode ser usado para acessar uma lista de uma pasta no repositório e pré-carregá-la no campo:
 
-1. Criar uma nova pasta do sling ( `sling:Folder`) por exemplo, `/etc/designs/<myDesign>/formlistvalues`
+1. Criar uma pasta do sling ( `sling:Folder`) por exemplo, `/etc/designs/<myDesign>/formlistvalues`
 
 1. Adicione uma nova propriedade (por exemplo, `myList`) do tipo sequência de caracteres de vários valores ( `String[]`) para conter a lista de itens suspensos. O conteúdo também pode ser importado usando um script, como com um script JSP ou cURL em um script de shell.
 
@@ -78,7 +78,7 @@ Observe que se os valores no campo `String[]` são do formato assim:
 
 * `AL=Alabama`
 * `AK=Alaska`
-* etc.
+* e assim por diante
 
 em seguida, o AEM gerará a lista como:
 
@@ -208,7 +208,7 @@ Você pode adicionar suas próprias restrições para um campo individual (em `/
 
    * `sling:resourceType` - defina como `foundation/components/form/constraint`
 
-   * `constraintMessage` - uma mensagem personalizada que será exibida se o campo não for válido, de acordo com a restrição, quando o formulário for enviado
+   * `constraintMessage` - uma mensagem personalizada que é mostrada se o campo não for válido, de acordo com a restrição, quando o formulário for enviado
 
    * Opcionalmente:
 

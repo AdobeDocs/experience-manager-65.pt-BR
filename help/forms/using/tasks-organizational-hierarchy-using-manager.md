@@ -1,17 +1,13 @@
 ---
 title: Gerenciando tarefas em uma hierarquia organizacional usando a Exibição do Gerente
-seo-title: Managing tasks in an organizational hierarchy using Manager View
 description: Como os gerentes e chefes de organização podem acessar e trabalhar nas tarefas de seus relatórios diretos e indiretos na guia Tarefas no espaço de trabalho do AEM Forms.
-seo-description: How managers and organization heads can access and work on the tasks of their direct and indirect reports in the To-do tab in AEM Forms workspace.
-uuid: c44c55e6-6cc1-417d-8e89-c8d5c32914c8
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 2e60df86-d8ff-4cf9-b801-9559857b5ff4
 docset: aem65
 exl-id: e50974a7-01ac-4a08-bea2-df9cc975c69e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -32,7 +28,7 @@ No espaço de trabalho do AEM Forms, os gerentes agora podem acessar as tarefas 
 
 O AEM Forms restringe o acesso de um usuário somente às tarefas para as quais o usuário tem controle de acesso (ACL). Essa verificação garante que um usuário possa buscar somente as tarefas nas quais tem permissões de acesso. Usando serviços da Web e implementações de terceiros para definir a hierarquia, uma organização pode personalizar a definição de gerente e subordinados diretos para atender às suas necessidades.
 
-1. Crie um DSC. Para obter mais informações, consulte o tópico &quot;Desenvolvimento de componentes para o AEM Forms&quot; no [Programação com o AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guia.
+1. Crie um DSC. Para obter mais informações, consulte o tópico &quot;Desenvolvimento de componentes para o AEM Forms&quot; em [Programação com o AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guia.
 1. No DSC, defina uma nova SPI para gerenciamento de hierarquia para definir subordinados diretos e hierarquia dentro dos usuários do AEM Forms. Veja a seguir um exemplo de trecho de código Java™.
 
    ```java
@@ -68,7 +64,7 @@ O AEM Forms restringe o acesso de um usuário somente às tarefas para as quais 
    }
    ```
 
-1. Crie um arquivo component.xml. Certifique-se de que a spec-id seja igual à mostrada no trecho de código abaixo. A seguir está um exemplo de trecho de código que você pode redefinir.
+1. Crie um arquivo component.xml. Certifique-se de que a spec-id seja a mesma mostrada no trecho de código abaixo. Este é um exemplo de trecho de código que você pode redefinir.
 
    ```xml
    <component xmlns="https://adobe.com/idp/dsc/component/document">

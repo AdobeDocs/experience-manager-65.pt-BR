@@ -5,7 +5,7 @@ contentOwner: AG
 role: User
 feature: Asset Management,Developer Tools
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1544'
 ht-degree: 0%
@@ -27,7 +27,7 @@ A capacidade de editar [!DNL Adobe InDesign] Os templates da interface da web aj
 É possível obter os seguintes resultados com modelos de ativos:
 
 * Modifique campos de modelo editáveis na interface da Web.
-* Controla o estilo básico do texto, por exemplo, tamanho da fonte, estilo e tipo no nível da tag.
+* Controle o estilo básico do texto, por exemplo, tamanho da fonte, estilo e tipo no nível da tag.
 * Altere imagens no modelo usando o Seletor de conteúdo.
 * Visualizar edições de modelo.
 * Mescle vários arquivos de modelo para criar um artefato de várias páginas.
@@ -120,13 +120,11 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
    >
    >* As imagens não estão incorporadas à base [!DNL InDesign] modelo.
    >* As imagens são vinculadas a partir do sistema de arquivos local.
-
    >
    >Para habilitar [!DNL Experience Manager] para resolver imagens, faça o seguinte:
    >
    >* Incorporar imagens ao criar [!DNL InDesign] modelos (Consulte [Sobre links e gráficos incorporados](https://helpx.adobe.com/indesign/using/graphics-links.html)).
    >* Montagem [!DNL Experience Manager] para o sistema de arquivos local e, em seguida, mapear os ícones ausentes com os ativos existentes no [!DNL Experience Manager].
-
    >
    >Para obter mais informações sobre como trabalhar com [!DNL InDesign] documentos, consulte [práticas recomendadas para trabalhar com documentos do InDesign no Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 

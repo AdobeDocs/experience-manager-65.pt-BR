@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 20%
+source-wordcount: '1892'
+ht-degree: 17%
 
 ---
 
@@ -25,7 +25,7 @@ Esta seção descreve como criar e gerenciar páginas com o Adobe Experience Man
 
 ## Organizar seu site {#organizing-your-website}
 
-Como autor, será necessário organizar seu site dentro do AEM. Isso envolve criar e nomear suas páginas de conteúdo de modo que:
+Como autor, você deve organizar seu site dentro do AEM. Isso envolve criar e nomear suas páginas de conteúdo de modo que:
 
 * você pode encontrá-los facilmente no ambiente de criação
 * os visitantes do seu site podem navegá-los facilmente no ambiente de publicação
@@ -72,7 +72,7 @@ Essa estrutura pode ser exibida no console Sites, que pode ser usado para [naveg
 
 ### Convenções de nomenclatura da página {#page-naming-conventions}
 
-Ao criar uma nova página, existem dois campos principais:
+Ao criar uma página, há dois campos principais:
 
 * **[Título](#title)**:
 
@@ -84,7 +84,7 @@ Ao criar uma nova página, existem dois campos principais:
    * Usado para gerar o URI.
    * A entrada do usuário para este campo é opcional. Se não especificado, o nome é derivado do título.
 
-Ao criar uma nova página, o AEM [validar o nome da página de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostos pelo AEM e pelo JCR.
+Ao criar uma página, AEM [valida o nome da página de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostos pelo AEM e pelo JCR.
 
 A implementação e a lista de caracteres permitidos diferem ligeiramente de acordo com a interface do usuário (é mais extensa para a interface habilitada para toque), mas o mínimo permitido é:
 
@@ -98,7 +98,7 @@ Use apenas estes caracteres se quiser ter certeza de que serão aceitos/usados (
 
 #### Título {#title}
 
-Quando você fornece apenas um **Título** de página ao criar uma nova página, o AEM deriva o **Nome** de página desta cadeia de caracteres e o valida[ de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR. Em ambas as interfaces, um **Título** um campo contendo caracteres inválidos será aceito, mas o nome derivado terá os caracteres inválidos substituídos. Por exemplo:
+Se você fornecer apenas uma página **Título** ao criar uma página, o AEM deriva a página **Nome** desta cadeia de caracteres e [validar o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostos pelo AEM e pelo JCR. Em ambas as interfaces, um **Título** um campo contendo caracteres inválidos será aceito, mas o nome derivado terá os caracteres inválidos substituídos. Por exemplo:
 
 | Título | Nome derivado |
 |---|---|
@@ -107,7 +107,7 @@ Quando você fornece apenas um **Título** de página ao criar uma nova página,
 
 #### Nome {#name}
 
-Quando você fornece um **Nome** de página ao criar uma nova página, o AEM valida[ esse nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR.
+Se você fornecer uma página **Nome** ao criar uma página, AEM [valida o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostos pelo AEM e pelo JCR.
 
 Na interface clássica, você **não é possível inserir caracteres inválidos** no **Nome** campo.
 
@@ -122,7 +122,7 @@ Na interface clássica, você **não é possível inserir caracteres inválidos*
 
 ### Modelos {#templates}
 
-No AEM, um modelo especifica um tipo especializado de página. Um modelo será usado como a base para qualquer nova página que está sendo criada.
+No AEM, um modelo especifica um tipo especializado de página. Um modelo é usado como a base para qualquer nova página que está sendo criada.
 
 O modelo define a estrutura de uma página, incluindo uma imagem em miniatura e outras propriedades. Por exemplo, você pode ter modelos separados para páginas de produtos, mapas de site e informações de contato. Os modelos são compostos de [componentes](#components).
 
@@ -152,7 +152,7 @@ Depois de criar e abrir uma página, você pode [adicionar conteúdo usando os c
 
 A menos que todas as páginas tenham sido criadas antecipadamente para você, antes de começar a criar conteúdo, você deve criar uma página:
 
-1. No **Sites** selecione o nível no qual deseja criar uma nova página.
+1. No **Sites** selecione o nível no qual deseja criar uma página.
 
    No exemplo a seguir, você está criando uma página no nível **Produtos** - exibido no painel à esquerda; o painel à direita mostra páginas que já existem no nível em **Produtos**.
 
@@ -167,7 +167,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, an
    * Forneça um **Título**; isso é exibido ao usuário.
    * Forneça um **Nome**; usado para gerar o URI. Se não especificado, o nome será derivado do título.
 
-      * Se você fornecer uma página **Nome** ao criar uma nova página, o AEM [validar o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostos pelo AEM e pelo JCR.
+      * Se você fornecer uma página **Nome** ao criar uma página, AEM [valida o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostos pelo AEM e pelo JCR.
       * Na interface clássica, você **não é possível inserir caracteres inválidos** no **Nome** campo.
 
    * Clique no template que deseja usar para criar a nova página.
@@ -178,7 +178,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, an
    >
    >Consulte [Convenções de nomenclatura da página](#page-naming-conventions).
 
-   As informações mínimas necessárias para criar uma nova página são **Título** e o template necessário.
+   As informações mínimas necessárias para criar uma página são **Título** e o template necessário.
 
    ![screen_shot_2012-02-15at114845am](assets/screen_shot_2012-02-15at114845am.png)
 
@@ -192,7 +192,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, an
 
    >[!NOTE]
    >
-   >Você também pode criar uma página ao editar uma página existente. Utilização de **Criar página secundária **do **Página** do sidekick, criará uma nova página diretamente na página que está sendo editada.
+   >Você também pode criar uma página ao editar uma página existente. Usar **Criar página secundária** do **Página** A guia do sidekick cria uma página diretamente abaixo da página que está sendo editada.
 
 ### Abrir uma página para edição {#opening-a-page-for-editing}
 
@@ -232,7 +232,7 @@ Ao copiar, é possível copiar:
 
    >[!NOTE]
    >
-   >Também é possível usar **Copiar página** do **Página** guia do sidekick. Isso abrirá uma caixa de diálogo onde é possível especificar o destino etc.
+   >Também é possível usar **Copiar página** do **Página** guia do sidekick. Isso abre uma caixa de diálogo onde você pode especificar o destino e assim por diante.
 
 ### Mover ou renomear página {#moving-or-renaming-page}
 
@@ -328,7 +328,7 @@ Para mover ou renomear uma página:
 
 1. Abra o **Sites** e navegue até o local desejado.
 1. No **Novo...** (clique na seta ao lado de **Novo...**), selecione **Nova pasta...**.
-1. A variável **Criar pasta** será aberta. Aqui você pode inserir o **Nome** e o **Título**:
+1. A variável **Criar pasta** é aberta. Aqui você pode inserir o **Nome** e o **Título**:
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 

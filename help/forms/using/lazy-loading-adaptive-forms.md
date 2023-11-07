@@ -6,9 +6,9 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1084'
 ht-degree: 3%
 
 ---
@@ -45,7 +45,7 @@ As transações baseadas em Forms envolvem elementos dinâmicos para capturar da
 * **Escrever regras para controlar a visibilidade dos campos**
 O Forms inclui alguns campos e seções que não se aplicam a todos os usuários e em todas as condições. Os autores e desenvolvedores do Forms usam as regras de visibilidade ou mostrar-ocultar para controlar sua visibilidade com base nas entradas do usuário. Por exemplo, o campo Endereço Comercial não é exibido para os usuários que escolhem Desempregado no campo Status do Emprego em um formulário. Para obter mais informações sobre como escrever regras, consulte [Uso do editor de regras](../../forms/using/rule-editor.md).
 
-  Você pode aproveitar as regras de visibilidade nos fragmentos carregados lentamente para que os campos condicionais sejam exibidos somente quando forem necessários. Além disso, marque o campo condicional como global para fazer referência a ele na expressão de visibilidade do fragmento carregado lentamente.
+  Você pode usar regras de visibilidade nos fragmentos carregados lentamente para que os campos condicionais sejam exibidos somente quando forem necessários. Além disso, marque o campo condicional como global para fazer referência a ele na expressão de visibilidade do fragmento carregado lentamente.
 
 ## Configuração de carregamento lento {#configuring-lazy-loading}
 
@@ -73,7 +73,7 @@ Você pode marcar os valores de objetos no fragmento carregado lentamente como g
 
 Algumas limitações, recomendações e pontos importantes a serem considerados ao trabalhar com carregamento lento são os seguintes:
 
-* É recomendável usar formulários adaptáveis baseados em esquema XSD em vez de formulários adaptáveis baseados em XFA para configurar o carregamento lento em formulários grandes. O ganho de desempenho devido à implementação de carregamento lento em formulários adaptáveis baseados em XFA é relativamente menor do que o ganho em formulários adaptáveis baseados em XSD.
+* Use formulários adaptáveis baseados em esquema XSD em vez de formulários adaptáveis baseados em XFA para configurar o carregamento lento em formulários grandes. O ganho de desempenho devido à implementação de carregamento lento em formulários adaptáveis baseados em XFA é relativamente menor do que o ganho em formulários adaptáveis baseados em XSD.
 * Não configure o carregamento lento em fragmentos em um formulário adaptável que usa **[!UICONTROL Responsivo - tudo em uma página sem navegação]** para o painel raiz. Como resultado da configuração de Layout responsivo, todos os fragmentos são carregados simultaneamente em um formulário adaptável. Isso também pode resultar em redução do desempenho.
 * É recomendável não configurar o carregamento lento no primeiro fragmento em um formulário adaptável.
 * É recomendável não configurar o carregamento lento em fragmentos no primeiro painel que é renderizado ao carregar o formulário adaptável.
@@ -87,7 +87,7 @@ Algumas limitações, recomendações e pontos importantes a serem considerados 
 Os pontos importantes que você deve ter em mente ao desenvolver scripts para painéis de carregamento lentos são os seguintes:
 
 * Certifique-se de que os scripts de inicialização e cálculo usados nos campos de um fragmento carregado lento sejam de natureza idempotente. Scripts idempotentes são aqueles que têm o mesmo efeito mesmo após várias execuções.
-* Use a propriedade de campos disponível globalmente para disponibilizar o valor dos campos localizados em um painel de carregamento lento para todos os outros painéis de um formulário.
+* Use a propriedade de campos disponível globalmente para disponibilizar o valor dos campos em um painel de carregamento lento para todos os outros painéis de um formulário.
 * Não encaminhe o valor de referência de um campo dentro de um painel lento independentemente de o campo estar marcado globalmente entre fragmentos ou não.
 * Use o recurso de redefinição de painel para redefinir tudo o que está visível no painel usando a seguinte expressão de clique.\
   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})).resetData()

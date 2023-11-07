@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '5182'
 ht-degree: 0%
@@ -741,7 +741,7 @@ A variável `preprocessing` A definição pode ser aplicada a:
 
   Se necessário, pode ser fornecida uma definição separada para cada agregação.
 
-  Para especificar o pré-processamento explícito para valores agregados, as definições de pré-processamento devem residir em uma respectiva `aggregated` nó filho ( `apply/aggregated`, `applyAfter/aggregated`). Se o pré-processamento explícito para agregações distintas for necessário, a definição de pré-processamento estará em um nó filho com o nome da respectiva agregação (por exemplo `apply/aggregated/min/max` ou outros agregados).
+  Para especificar o pré-processamento explícito para valores agregados, as definições de pré-processamento devem residir em uma respectiva `aggregated` nó filho ( `apply/aggregated`, `applyAfter/aggregated`). Se o pré-processamento explícito para agregações distintas for necessário, a definição de pré-processamento estará em um nó filho com o nome da respectiva agregação (por exemplo, `apply/aggregated/min/max` ou outros agregados).
 
 Você pode especificar qualquer um dos seguintes itens a serem usados durante o pré-processamento:
 
@@ -1336,7 +1336,7 @@ Para ilustrar essas etapas, o exemplo a seguir define um relatório que lista to
    ```xml
    N:osgireport [cq:Template]
        P:allowedPaths [String[]] = "/etc/reports(/.*)?"
-       P:jcr:description [String] = "Use this report generator to create a new OSGi report."
+       P:jcr:description [String] = "Use this report generator to create an OSGi report."
        P:jcr:title [String] = "OSGi Report Template"
        P:ranking [Long] = 100
        P:shortTitle [String] = "OSGi Report"

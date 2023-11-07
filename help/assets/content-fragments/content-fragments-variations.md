@@ -4,9 +4,9 @@ description: Entenda como as variações podem tornar o conteúdo headless no AE
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2391'
+source-wordcount: '2388'
 ht-degree: 61%
 
 ---
@@ -183,7 +183,7 @@ Se o Modelo do fragmento de conteúdo contiver Referências de fragmento, os aut
 A opção **Editar fragmento de conteúdo** abre esse fragmento em uma nova guia da janela.
 
 <!--
-The option **Edit Content Fragment** will open that fragment in a new editor tab (within the same browser tab).
+The option **Edit Content Fragment** opens that fragment in a new editor tab (within the same browser tab).
 
 Selecting the original tab again (for example, **Little Pony Inc.**), will close this secondary tab (in this case, **Adam Smith**).
 
@@ -435,7 +435,7 @@ Para renomear uma variação existente:
 
 1. Abra o fragmento e selecione **Variações** no painel lateral.
 1. Selecione a variação necessária.
-1. Selecione **Renomear** no menu suspenso **Ações**.
+1. Selecione **Renomear** no menu suspenso de **Ações**.
 
 1. Digite o novo **Título** e/ou **Descrição** na caixa de diálogo resultante.
 
@@ -481,7 +481,7 @@ A transferência de alterações *de uma variação para o **Principal*** não e
 
 1. Selecione uma variação específica e, em seguida, a ação de sincronização apropriada:
 
-   * no seletor suspenso de **Ações** — **Sincronizar elemento atual com o Principal**
+   * no seletor suspenso de **Ações** - **Sincronizar elemento atual com o principal**
 
      ![sincronização com o Principal](assets/cfm-variations-11a.png)
 

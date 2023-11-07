@@ -11,9 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 021c6606-8cd3-472c-a80b-b1bcace7e87f
 docset: aem65
 exl-id: b183d42f-343c-4acb-bc73-f80ad72e54df
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1763'
+source-wordcount: '1760'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ As etapas mais comumente aplicáveis são abordadas em [Etapas genéricas para p
 
 Antes de personalizar o espaço de trabalho, familiarize-se com a folha de estilos padrão fornecida com o AEM Forms em /libs/ws/css/style.css.
 
-Para personalizar o espaço de trabalho, é recomendável que você se familiarize com a folha de estilos existente, style.css, localizada na pasta /libs/ws/css. Alguns componentes proeminentes são descritos abaixo.
+Para personalizar o espaço de trabalho, é recomendável que você se familiarize com a folha de estilos existente, style.css, na pasta /libs/ws/css. Alguns componentes proeminentes são descritos abaixo.
 
 <table>
  <tbody>
@@ -203,7 +203,7 @@ Destina-se principalmente a personalizações, pois fornece a capacidade de gera
       * js:
 
          * libs - contém todas as bibliotecas de terceiros usadas no AEM Forms workspace.
-         * licenças - Contém licenças para arquivos HTML e JS, bem como código para prefixar essas licenças aos respectivos arquivos de origem.
+         * licenças - Contém licenças para arquivos HTML e JS e código para prefixar essas licenças aos respectivos arquivos de origem.
          * minificador - Usado para combinação, minificação e unificação do código JavaScript personalizado.
          * resourcejs_otimizer - usado para combinação, minificação e unificação da origem do JavaScript.
          * resource_generator - Usado para gerar register.js e modelcontrollerpath.js.
@@ -216,8 +216,10 @@ Destina-se principalmente a personalizações, pois fornece a capacidade de gera
             * modelos - Contém todos os modelos, ou seja, arquivos HTML de todas as exibições no AEM Forms workspace.
             * util - Contém todos os arquivos de utilitários (javascript) usados no espaço de trabalho do AEM Forms.
             * exibições - Contém exibições de backbone de todos os componentes no espaço de trabalho do AEM Forms.
+
          * main.js
          * router.js
+
       * libs/ws: pdf.html e pluginPing.pdf são usados para carregar PDF forms no espaço de trabalho do AEM Forms e WSNextAdapter.swf é usado para carregar formulários e guias de SWF no espaço de trabalho do AEM Forms.
       * códigos de idiomas:
 
@@ -226,11 +228,9 @@ Destina-se principalmente a personalizações, pois fornece a capacidade de gera
          * fr-FR - Contém translation.json para francês.
          * ja-JP - Contém translation.json para japonês.
          * html.jsp - Contém o código para descobrir a localidade atual do navegador.
+
       * html.jsp
       * GET.jsp
-
-
-
 
 ### Pacote CRX {#crx-package}
 
@@ -261,13 +261,13 @@ Esse pacote pode ser criado usando os três perfis descritos abaixo.
 
       * require - Contém require.js.
       * jqueryui - Contém jquery.ui.datepicker.ja.js.
+
    * tempo de execução:
 
       * modelos - contém todos os modelos, ou seja, arquivos HTML de todos os componentes no espaço de trabalho do AEM Forms.
+
    * main.js (combinado, minificado e unificado).
    * registry.js
-
-
 
 * bibliotecas:
 
@@ -306,13 +306,13 @@ Esse pacote pode ser criado usando os três perfis descritos abaixo.
 
       * require - Contém require.js.
       * jqueryui - Contém jquery.ui.datepicker.ja.js.
+
    * tempo de execução:
 
       * modelos - contém todos os modelos, ou seja, arquivos HTML de todos os componentes no espaço de trabalho do AEM Forms.
+
    * main.js (combinado).
    * registry.js
-
-
 
 * bibliotecas:
 
@@ -358,10 +358,10 @@ mvn clean -P Dev install no client-pkg
       * modelos - contém todos os modelos, ou seja, arquivos HTML de todos os componentes no espaço de trabalho do AEM Forms.
       * util - Contém todos os arquivos de utilitários (JavaScript) usados no espaço de trabalho do AEM Forms.
       * exibições - Contém exibições de todos os componentes no espaço de trabalho do AEM Forms.
+
    * main.js
    * registry.js
    * router.js
-
 
 * bibliotecas:
 

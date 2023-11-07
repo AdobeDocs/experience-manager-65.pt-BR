@@ -1,19 +1,15 @@
 ---
 title: Conversão de PDF em arquivos Postscript e de imagem
-seo-title: Converting PDF to Postscript andImage Files
-description: Use o serviço Converter PDF para converter documentos PDF em PostScript e em vários formatos de imagem (JPEG, JPEG 2000, PNG e TIFF) usando a API Java e a API de serviço da Web.
-seo-description: Use the Convert PDF service to convert PDF documents to PostScript and to a number of image formats (JPEG, JPEG 2000, PNG, and TIFF) using the Java API and Web Service API.
-uuid: 07da0391-7180-4197-aaa6-ae753d753b84
+description: Use o serviço Converter PDF para converter documentos PDF para PostScript e para vários formatos de imagem (JPEG, JPEG 2000, PNG e TIFF) usando a API Java e a API de serviço da Web.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: f8707752-2c83-461a-b83d-708754b0f3f6
 role: Developer
 exl-id: 31730c24-46c3-4111-9391-ccd4342740e9
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2809'
+source-wordcount: '2801'
 ht-degree: 0%
 
 ---
@@ -240,11 +236,11 @@ Antes de executar programaticamente uma operação de serviço Converter PDF, vo
 
 **Recuperar o documento PDF para converter**
 
-Você deve recuperar o documento PDF para converter em uma imagem. Não é possível converter um documento PDF interativo em uma imagem. Se você tentar fazer isso, uma exceção será lançada. Para converter um documento PDF interativo em um arquivo de imagem, é necessário nivelar o documento PDF antes de convertê-lo. (Consulte [Nivelamento de documentos PDF](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents).)
+Recupere o documento PDF para converter em uma imagem. Não é possível converter um documento PDF interativo em uma imagem. Se você tentar fazer isso, uma exceção será lançada. Para converter um documento PDF interativo em um arquivo de imagem, é necessário nivelar o documento PDF antes de convertê-lo. (Consulte [Nivelamento de documentos PDF](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents).)
 
 **Definir opções de tempo de execução**
 
-Você deve definir opções de tempo de execução, como o formato da imagem e os valores de resolução. Para obter informações sobre os valores de tempo de execução, consulte `ToImageOptionsSpec` referência de classe em [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Defina opções de tempo de execução, como o formato da imagem e os valores de resolução. Para obter informações sobre os valores de tempo de execução, consulte `ToImageOptionsSpec` referência de classe em [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Conversão do PDF em uma imagem**
 

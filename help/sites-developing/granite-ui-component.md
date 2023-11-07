@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: e4820330-2ee6-4eca-83fd-462aa0b83647
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Seu campo personalizado deve substituir apenas o `render.jsp` script, em que voc
    vm.get("value, String.class");
    ```
 
-   Para obter mais detalhes, consulte a implementação dos campos de interface do usuário do Granite prontos para uso; por exemplo, `/libs/granite/ui/components/foundation/form/textfield`.
+   Para obter mais detalhes, consulte a implementação de campos de interface do usuário do Granite prontos para uso; por exemplo, `/libs/granite/ui/components/foundation/form/textfield`.
 
    >[!NOTE]
    >

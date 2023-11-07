@@ -1,32 +1,28 @@
 ---
 title: Criação de modelos de páginas
-seo-title: Creating Page Templates
 description: O modelo define a estrutura da página resultante e, com o editor de modelos, criar e manter modelos não é mais uma tarefa somente para desenvolvedores
-seo-description: The template defines the structure of the resultant page and with the template editor, creating and maintaining templates is no longer a developer-only task
-uuid: e14cd298-289f-43f0-aacb-314ed5d56c12
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4862'
-ht-degree: 79%
+source-wordcount: '4840'
+ht-degree: 76%
 
 ---
 
 # Criação de modelos de páginas  {#creating-page-templates}
 
-Ao criar uma página, você deve selecionar um modelo, que será usado como base para a criação da nova página. O modelo define a estrutura da página resultante, todo conteúdo inicial e os componentes que podem ser usados.
+Ao criar uma página, você deve selecionar um modelo, que é usado como base para a criação da nova página. O modelo define a estrutura da página resultante, todo conteúdo inicial e os componentes que podem ser usados.
 
 Com o **Editor de modelos**, criar e manter modelos não é mais uma tarefa somente para desenvolvedores. Um tipo de usuário avançado, chamado de **autor de modelo**, também pode ser envolvido. Os desenvolvedores ainda são necessários para configurar o ambiente, criar bibliotecas de clientes e criar os componentes a serem usados, mas uma vez que essas noções básicas estejam em vigor, o **autor do modelo** terá a flexibilidade de criar e configurar modelos sem um projeto de desenvolvimento.
 
 O **Console de Modelos** permite que os autores de modelo:
 
-* Criem um novo modelo ou copiem um modelo existente.
+* Criar um modelo ou copiar um modelo existente.
 * Gerencie o ciclo de vida do modelo.
 
 O **Editor de Modelos** permite que os autores de modelo:
@@ -55,13 +51,13 @@ Para obter informações detalhadas sobre como os modelos editáveis funcionam e
 
 É importante considerar os seguintes pontos antes de iniciar:
 
-* A criação de um novo modelo requer colaboração. Por esse motivo, a [Função](#roles) é indicada para cada tarefa.
+* A criação de um modelo requer colaboração. Por esse motivo, a [Função](#roles) é indicada para cada tarefa.
 
 * Dependendo de como sua instância é configurada, pode ser útil estar ciente de que o AEM agora oferece [dois tipos básicos de modelo](/help/sites-authoring/templates.md#editable-and-static-templates). Isso não afeta a maneira como você [usar um modelo para criar uma página](#using-a-template-to-create-a-page), mas afeta o tipo de modelo que você pode criar e como uma página se relaciona com seu modelo.
 
 ### Funções {#roles}
 
-A criação de um novo modelo usando o **Console de modelos** e o **Editor de modelos** exige a colaboração entre as seguintes funções:
+Criação de um template usando o **Console de modelos** e a variável **Editor de modelo** O requer colaboração entre as seguintes funções:
 
 * **Administrador**:
 
@@ -116,18 +112,18 @@ Por definição, o console de modelo e o editor de modelo permitem apenas a cria
 
 ### Utilização de um modelo para criar uma página {#using-a-template-to-create-a-page}
 
-Ao usar um modelo para [criar uma nova página](/help/sites-authoring/managing-pages.md#creating-a-new-page) não há diferença visível e nenhuma indicação entre modelos estáticos e editáveis. Para o autor da página, o processo é transparente.
+Ao usar um modelo para [criar uma página](/help/sites-authoring/managing-pages.md#creating-a-new-page) não há diferença visível e nenhuma indicação entre modelos estáticos e editáveis. Para o autor da página, o processo é transparente.
 
 ## Criação e gerenciamento de modelos {#creating-and-managing-templates}
 
-Ao criar um novo modelo editável, você:
+Ao criar um modelo editável, você:
 
 * Use o console **Modelo**. Isso está disponível na seção **Geral** do console **Ferramentas**.
 
    * Ou diretamente em: [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * É possível [criar uma pasta para os modelos](#creating-a-template-folder-admin) se necessário
-* [Criar um novo modelo](#creatinganewtemplateauthor), inicialmente vazio 
+* [Criar um modelo](#creatinganewtemplateauthor), que está inicialmente vazio
 
 * [Definir propriedades adicionais](#definingtemplatepropertiesauthor) para o modelo, se necessário
 * [Editar o modelo](#editingtemplates) para definir o:
@@ -200,7 +196,7 @@ Um modelo pode ter as seguintes propriedades:
 
 * Descrição
 
-   * Uma descrição opcional para fornecer mais informações sobre o modelo e seu uso, que pode ser visualizada, por exemplo, no assistente **Criar página**.
+   * Uma descrição opcional para fornecer mais informações sobre o modelo e seu uso, que pode ser visualizada, por exemplo, no **Criar página** assistente.
 
 Para exibir e/ou editar as propriedades:
 
@@ -251,7 +247,7 @@ Um modelo pode ser habilitado ou desabilitado para torná-lo disponível ou indi
 
 1. No **console Modelos**, selecione o modelo.
 1. Selecione **Habilitar** ou **Desabilitar** da barra de ferramentas e depois na caixa de diálogo de confirmação.
-1. Agora é possível usar o modelo ao [criar uma nova página](/help/sites-authoring/managing-pages.md#creating-a-new-page), embora você provavelmente queira [editar o modelo](#editingatemplate) de acordo com seus requisitos.
+1. Agora você pode usar seu modelo quando [criação de uma página](/help/sites-authoring/managing-pages.md#creating-a-new-page), embora você provavelmente queira [editar o modelo](#editingatemplate) de acordo com suas próprias necessidades.
 
 >[!NOTE]
 >
@@ -318,7 +314,7 @@ Os seguintes aspectos de um modelo podem ser editados:
 
   >[!NOTE]
   >
-  >No modo de **conteúdo inicial**, bem como nas páginas resultantes, todos os componentes desbloqueados que tenham um pai acessível (isto é, componentes dentro de um contêiner de layout) podem ser excluídos.
+  >Entrada **Conteúdo inicial** e nas páginas resultantes, todos os componentes desbloqueados que tenham um pai acessível (isto é, componentes dentro de um contêiner de layout) podem ser excluídos.
 
 * [Layout](#editingatemplatelayout)
 
@@ -384,7 +380,7 @@ Entrada **Estrutura** modo do editor de modelos:
   >Ao adicionar um componente de **Título** pronto ao modelo, ele conterá **estrutura** de texto padrão.
   >
   >
-  >Se alterar e adicionar seu próprio texto, esse texto atualizado será usado quando uma página for criada a partir do modelo.
+  >Se você alterar isso e adicionar seu próprio texto, esse texto atualizado será usado quando uma página for criada a partir do modelo.
   >
   >
   >Se deixar o texto padrão (estrutura) como está, o título será padrão para o nome da página subsequente.
@@ -559,7 +555,7 @@ Entrada **Estrutura** modo do editor de modelos:
 
   ![chlimage_1-146](assets/chlimage_1-146.png)
 
-  Isso inclui desbloquear componentes de contêiner para que outros componentes possam ser adicionados, no modo **Conteúdo inicial** ou nas páginas resultantes. Se você já tiver adicionado componentes/conteúdo ao contêiner antes de desbloqueá-lo, eles não serão mais exibidos quando estiverem no modo **Estrutura**, mas serão exibidos no modo **Conteúdo inicial**. No **modo Estrutura**, apenas o componente do contêiner será mostrado com sua lista de **Componentes permitidos**.
+  Isso inclui desbloquear componentes de contêiner para que outros componentes possam ser adicionados, no modo **Conteúdo inicial** ou nas páginas resultantes. Se você já tiver adicionado componentes/conteúdo ao contêiner antes de desbloqueá-lo, eles não serão mais exibidos quando em **Estrutura** , mas são mostrados na **Conteúdo inicial** modo. No **modo Estrutura**, somente o componente de container será exibido com a lista de **Componentes permitidos**.
 
   ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -682,7 +678,7 @@ Usando as propriedades de página, é possível definir as bibliotecas do lado d
 
 >[!NOTE]
 >
->Como o autor do modelo pode especificar a política de página no modelo, ele precisará obter detalhes das bibliotecas do lado do cliente apropriadas do desenvolvedor.
+>Embora o autor do modelo possa especificar a política de página no modelo, ele deve obter detalhes das bibliotecas do lado do cliente apropriadas do desenvolvedor.
 
 ### Editar um modelo - Propriedades da página inicial - Criação {#editing-a-template-initial-page-properties-author}
 

@@ -5,7 +5,7 @@ contentOwner: AG
 role: Architect, Admin
 feature: Developer Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Neste exemplo, a empresa tem um uplink de 10 Gbps. Ele deve ser grande o suficie
 
 Esse é o menor ponto de bloqueio orientado ao cliente. No entanto, você pode avaliar se há uma alteração ou configuração de uma lista de permissões com o grupo de operações de rede responsável por esse firewall.
 
-A partir dos diagramas de amostra, é possível concluir que seis dispositivos compartilham um canal conceitual de 10 Mbps. Dependendo do tamanho dos ativos aproveitados, isso pode ser inadequado para atender às expectativas do usuário.
+A partir dos diagramas de amostra, é possível concluir que seis dispositivos compartilham um canal conceitual de 10 Mbps. Dependendo do tamanho dos ativos usados, isso pode ser inadequado para atender às expectativas do usuário.
 
 ## Topologia do [!DNL Experience Manager] ambiente {#topology-of-the-aem-environment}
 

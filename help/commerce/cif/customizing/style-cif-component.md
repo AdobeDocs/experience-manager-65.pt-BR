@@ -1,6 +1,6 @@
 ---
-title: Estilizar os Componentes principais da CIF do Adobe Experience Manager
-description: Saiba como estilizar os Componentes principais da CIF do Adobe Experience Manager. O tutorial aborda como as bibliotecas do lado do cliente ou clientlibs são usadas para implantar e gerenciar o CSS e o JavaScript para uma implementação do Commerce do Adobe Experience Manager (AEM). Este tutorial também abordará como o módulo ui.frontend e um projeto de webpack são integrados no processo de build completo.
+title: Estilos dos componentes principais do Adobe Experience Manager CIF
+description: Saiba como estilizar os Componentes principais do Adobe Experience Manager CIF. O tutorial aborda como as bibliotecas do lado do cliente ou clientlibs são usadas para implantar e gerenciar o CSS e o JavaScript para uma implementação do Commerce do Adobe Experience Manager (AEM). Este tutorial também abordará como o módulo ui.frontend e um projeto de webpack são integrados no processo de build completo.
 sub-product: Commerce
 topics: Development
 version: Cloud Service
@@ -9,16 +9,16 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2535'
+source-wordcount: '2533'
 ht-degree: 20%
 
 ---
 
 # Alterar estilo dos Componentes principais da CIF do AEM {#style-aem-cif-core-components}
 
-A variável [Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) é uma base de código de referência para o uso de [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components). Neste tutorial, você inspeciona o projeto de referência Venia e entende como o CSS e o JavaScript usados pelos componentes principais CIF do AEM são organizados. Você também criará um estilo usando CSS para atualizar o estilo padrão do **Teaser do produto** componente.
+A variável [Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) é uma base de código de referência para o uso de [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components). AEM Neste tutorial, você inspeciona o projeto de referência Venia e entende como o CSS e o JavaScript usados pelos componentes principais CIF são organizados. Você também criará um estilo usando CSS para atualizar o estilo padrão do **Teaser do produto** componente.
 
 >[!TIP]
 >
@@ -26,7 +26,7 @@ A variável [Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) �
 
 ## O que você vai criar
 
-Neste tutorial, um novo estilo é implementado para o Teaser do produto que se assemelha a um cartão. As lições aprendidas no tutorial podem ser aplicadas a outros Componentes principais da CIF.
+Neste tutorial, um novo estilo é implementado para o Teaser do produto que se assemelha a um cartão. As lições aprendidas no tutorial podem ser aplicadas a outros Componentes principais do CIF.
 
 ![O que você vai criar](../assets/style-cif-component/what-you-will-build.png)
 
@@ -40,7 +40,7 @@ Clonizamos o [Projeto Venia](https://github.com/adobe/aem-cif-guides-venia) e su
 
 >[!NOTE]
 >
->**Você pode usar um projeto existente** (com base no Arquétipo de projeto AEM incluído na CIF) e ignore esta seção.
+>**Você pode usar um projeto existente** (baseado no Arquétipo de projeto AEM com CIF incluído) e pule esta seção.
 
 1. Execute o seguinte comando git para clonar o projeto:
 
@@ -67,7 +67,7 @@ Clonizamos o [Projeto Venia](https://github.com/adobe/aem-cif-guides-venia) e su
 
 O CSS e o JavaScript responsáveis pela renderização de temas/estilos da loja são gerenciados no AEM por um [biblioteca do cliente](/help/sites-developing/clientlibs.md) ou clientlibs para abreviar. As bibliotecas de clientes fornecem um mecanismo para organizar o CSS e o JavaScript no código de um projeto e, em seguida, na página.
 
-Estilos específicos da marca podem ser aplicados aos Componentes principais da CIF do AEM adicionando e substituindo o CSS gerenciado por essas bibliotecas de clientes. Entender como as bibliotecas de clientes são estruturadas e incluídas na página é essencial.
+AEM Estilos específicos da marca podem ser aplicados aos Componentes principais do CIF adicionando e substituindo o CSS gerenciado por essas bibliotecas de clientes. Entender como as bibliotecas de clientes são estruturadas e incluídas na página é essencial.
 
 A variável [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) é uma dedicada [webpack](https://webpack.js.org/) projeto para gerenciar todos os ativos de front-end de um projeto. Isso permite que desenvolvedores de front-end usem qualquer número de linguagens e tecnologias, como [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) e muito mais.
 
@@ -261,7 +261,7 @@ Há várias opções para incluir uma biblioteca do lado do cliente. Em seguida,
 
    ![Editar o modelo](../assets/style-cif-component/edit-template.png)
 
-   Isso abrirá o **Landing Page** modelo o **Início** página é baseada em.
+   Isso abre o **Landing Page** modelo o **Início** página é baseada em.
 
    >[!NOTE]
    >
@@ -334,7 +334,7 @@ As imagens proxies webpack-dev-server e algumas das imagens CSS/JavaScript da in
 
    ![Servidor de desenvolvimento do Webpack na porta 80](../assets/style-cif-component/webpack-dev-server-port80.png)
 
-   Deixe o webpack-dev-server em execução. Ele será usado no próximo exercício.
+   Deixe o webpack-dev-server em execução. É usado no próximo exercício.
 
 ## Implementar estilo de cartão para Teaser do produto {#update-css-product-teaser}
 
@@ -467,7 +467,7 @@ O AEM também tenta armazenar as bibliotecas de clientes em cache para melhorar 
 
 ## Parabéns {#congratulations}
 
-Você atribuiu um estilo ao seu primeiro Componente principal da CIF do AEM e usou um servidor de desenvolvimento de webpack!
+AEM Você estilizou seu primeiro Componente principal CIF e usou um servidor de desenvolvimento de webpack!
 
 ## Desafio extra {#bonus-challenge}
 

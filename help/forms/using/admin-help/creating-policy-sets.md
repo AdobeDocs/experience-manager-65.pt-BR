@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a4fb1a11-8fe3-4092-a036-1c079aea1250
 feature: Document Security
 exl-id: 736926af-ae41-4da3-b181-444de72407bd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1294'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ Agora é possível adicionar políticas ao seu conjunto de políticas. (Consulte
 1. Na guia Políticas, procure por políticas a serem adicionadas ao conjunto de políticas e crie novas políticas:
 
    * Para pesquisar uma política, selecione ID da Política ou Nome da Política, digite o valor correspondente, selecione o número de itens a serem exibidos e clique em Localizar.
-   * Para obter detalhes sobre como criar uma nova política, consulte [Criação e edição de políticas](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
+   * Para obter detalhes sobre como criar uma política, consulte [Criação e edição de políticas](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
 
 ## Excluir um conjunto de políticas {#delete-a-policy-set}
 

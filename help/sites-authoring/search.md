@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 78%
+source-wordcount: '507'
+ht-degree: 73%
 
 ---
 
@@ -33,7 +33,7 @@ A pesquisa está disponível na barra de ferramentas superior:
 Com o painel de pesquisa, você pode:
 
 * Pesquise por uma palavra-chave, um caminho ou uma tag específica.
-* Filtre de acordo com os critérios específicos dos recursos, como datas modificadas, status da página, tamanho do arquivo, etc.
+* Filtre de acordo com os critérios específicos dos recursos, como datas modificadas, status da página, tamanho do arquivo e assim por diante.
 * Defina e use uma [pesquisa salva](#saved-searches) - com base nos critérios acima.
 
 >[!NOTE]
@@ -53,9 +53,9 @@ Para pesquisar e filtrar os recursos:
    ![screen_shot_2018-03-23at101445](assets/screen_shot_2018-03-23at101445.png)
 
 1. Se necessário, é possível remover o filtro de localização (selecione **X** no filtro que deseja remover) para pesquisar em todos os consoles/tipos de recursos.
-1. Os resultados serão mostrados, agrupados de acordo com o console e o tipo de recurso relacionado.
+1. Os resultados são mostrados, agrupados de acordo com o console e o tipo de recurso relacionado.
 
-   Você pode selecionar um recurso específico (para a ação adicional) ou detalhar selecionando o tipo de recurso desejado; por exemplo, **Exibir todos os sites**: 
+   Você pode selecionar um recurso específico (para a ação adicional) ou detalhar selecionando o tipo de recurso desejado; por exemplo, **Exibir todos os sites**:
 
    ![screen-shot_2019-03-05at101900](assets/screen-shot_2019-03-05at101900.png)
 

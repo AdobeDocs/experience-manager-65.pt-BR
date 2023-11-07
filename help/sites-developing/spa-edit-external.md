@@ -2,9 +2,9 @@
 title: Edição de um SPA externo no Adobe Experience Manager
 description: Este documento descreve as etapas recomendadas para fazer upload de um SPA independente em uma instância do Adobe Experience Manager, adicionar seções editáveis de conteúdo e ativar a criação.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2440'
+source-wordcount: '2432'
 ht-degree: 1%
 
 ---
@@ -247,7 +247,7 @@ Quando o autor de conteúdo atualizar esse componente, um novo `text_20` o nó �
 
 #### Requisitos e limitações {#limitations}
 
-Há vários requisitos para adicionar componentes de folha virtual, bem como algumas limitações.
+Há vários requisitos para adicionar componentes de folha virtual e algumas limitações.
 
 * A variável `pagePath` é obrigatória para criar um componente virtual.
 * O nó da página fornecido no caminho em `pagePath` deve existir no projeto AEM.
@@ -286,7 +286,7 @@ Mais componentes e conteúdo podem ser adicionados ao contêiner agora, conforme
 
 #### Requisitos e limitações {#container-limitations}
 
-Há vários requisitos para adicionar contêineres virtuais, bem como algumas limitações.
+Há vários requisitos para adicionar contêineres virtuais e algumas limitações.
 
 * A política para determinar quais componentes podem ser adicionados será herdada do container principal.
 * O pai imediato do contêiner a ser criado já deve existir no AEM.
@@ -314,9 +314,9 @@ Por exemplo, suponha que tenhamos um SPA no qual o aplicativo é renderizado den
 
 1. No corpo do componente da página do aplicativo AEM, por meio de duas etapas:
 
-   1. Criar um novo `body.html` para o componente de página.
+   1. Criar um `body.html` para o componente de página.
 
-   ![Criar um novo arquivo body.html](assets/external-spa-update-body.gif)
+   ![Criar um arquivo body.html](assets/external-spa-update-body.gif)
 
    1. Adicione o novo elemento raiz no novo `body.html` arquivo.
 
@@ -336,9 +336,9 @@ Para habilitar a edição no AEM para este exemplo SPA, as seguintes etapas são
 
    * Para nossa amostra, consideramos `wknd-spa-react/us/en` como a raiz do SPA. Isso significa que tudo antes desse caminho é somente páginas/conteúdo AEM.
 
-1. Crie uma nova página no nível necessário.
+1. Crie uma página no nível necessário.
 
-   * Neste exemplo, a página a ser editada é `mydomain.com/test`. `test` está no caminho raiz do aplicativo. Isso também precisa ser preservado ao criar a página no AEM. Portanto, podemos criar uma nova página no nível raiz definido na etapa anterior.
+   * Neste exemplo, a página a ser editada é `mydomain.com/test`. `test` está no caminho raiz do aplicativo. Isso também precisa ser preservado ao criar a página no AEM. Portanto, é possível criar uma página no nível raiz definido na etapa anterior.
    * A nova página criada deve ter o mesmo nome da página a ser editada. Neste exemplo para `mydomain.com/test`, a nova página criada deve ser `/path/to/aem/root/test`.
 
 1. Adicione auxiliares no roteamento SPA.

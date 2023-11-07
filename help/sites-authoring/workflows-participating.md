@@ -1,17 +1,15 @@
 ---
 title: Participação no fluxo de trabalho
 description: Os fluxos de trabalho normalmente incluem etapas que exigem que uma pessoa execute uma atividade em uma página ou ativo.
-uuid: 15d56bcc-1e84-4cc0-8b71-7fb906cd7ff7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: f170613c-329e-446b-9ac3-350615f1bfb6
 docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1519'
 ht-degree: 90%
 
 ---
@@ -41,12 +39,12 @@ Quando um item de trabalho é atribuído a você (por exemplo, **Aprovar conteú
 
 * Ao usar o editor de páginas, a barra de status será exibida:
 
-   * Os nomes dos fluxos de trabalho que estão sendo aplicados à página, por exemplo, Solicitação de ativação.
+   * O nome do(s) fluxo(s) de trabalho que está sendo aplicado(s) à página; por exemplo, Solicitação de ativação.
    * Quaisquer ações disponíveis para o usuário atual para a etapa atual do fluxo de trabalho, por exemplo, Concluir, Delegar, Exibir detalhes.
    * O número de fluxos de trabalho aos quais a página está sujeita. É possível:
 
       * use as setas para a esquerda/direita para navegar pelas informações de status dos vários workflows.
-      * clique/toque no número real para abrir uma lista suspensa de todos os fluxos de trabalho aplicáveis e selecione o fluxo de trabalho que deseja exibir na barra de status.
+      * clique/toque no número em si para abrir uma lista suspensa de todos os fluxos de trabalho aplicáveis e selecione o fluxo de trabalho que deseja exibir na barra de status.
 
   ![wf-59](assets/wf-59.png)
 
@@ -57,7 +55,7 @@ Quando um item de trabalho é atribuído a você (por exemplo, **Aprovar conteú
   >
   >As ações são exibidas quando o usuário atual está diretamente envolvido na etapa atual do fluxo de trabalho.
 
-* Quando **Linha do tempo** estiver aberta para o recurso, a etapa do fluxo de trabalho será mostrada. Ao clicar/tocar no banner do alerta, as ações disponíveis também serão exibidas:
+* Quando a **Linha do tempo** é aberta para o recurso, a etapa do fluxo de trabalho é exibida. Ao clicar/tocar no banner do alerta, as ações disponíveis também serão exibidas:
 
   ![screen-shot_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
 
@@ -84,7 +82,7 @@ Use o procedimento a seguir para concluir o item de trabalho:
 1. Abra a **[Caixa de entrada do AEM](/help/sites-authoring/inbox.md)**.
 1. Selecione o item do fluxo do trabalho no qual deseja executar a ação (toque/clique na miniatura).
 1. Selecione **Concluído** na barra de ferramentas.
-1. A caixa de diálogo **Item de trabalho concluído** será aberta. Selecione a **Próxima etapa** no seletor suspenso e adicione um **Comentário**, se necessário.
+1. A variável **Item de trabalho concluído** é aberta. Selecione a **Próxima etapa** no seletor suspenso e adicione um **Comentário**, se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Conclusão de uma etapa do participante - Editor de páginas {#completing-a-participant-step-page-editor}
@@ -93,7 +91,7 @@ Use o procedimento a seguir para concluir o item de trabalho:
 
 1. Abra a [página para edição](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Selecione **Concluído** na barra de status na parte superior.
-1. A caixa de diálogo **Item de trabalho concluído** será aberta. Selecione a **Próxima etapa** no seletor suspenso e adicione um **Comentário**, se necessário.
+1. A variável **Item de trabalho concluído** é aberta. Selecione a **Próxima etapa** no seletor suspenso e adicione um **Comentário**, se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Conclusão de uma etapa do participante - Linha do tempo {#completing-a-participant-step-timeline}
@@ -143,7 +141,7 @@ Use o procedimento a seguir para delegar um item de trabalho:
 1. Abra a **[Caixa de entrada do AEM](/help/sites-authoring/inbox.md)**.
 1. Selecione o item do fluxo do trabalho no qual deseja executar a ação (toque/clique na miniatura).
 1. Selecione **Delegar** na barra de ferramentas.
-1. Uma caixa de diálogo será aberta. Especifique o **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário**, se necessário.
+1. A caixa de diálogo se abre. Especifique o **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário**, se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Delegação de uma etapa do participante - Editor de páginas {#delegating-a-participant-step-page-editor}
@@ -152,7 +150,7 @@ Use o procedimento a seguir para delegar um item de trabalho:
 
 1. Abra a [página para edição](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Selecione **Delegar** na barra de status na parte superior.
-1. Uma caixa de diálogo será aberta. Especifique o **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário**, se necessário.
+1. A caixa de diálogo se abre. Especifique o **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário**, se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Delegação de uma etapa do participante - Linha do tempo {#delegating-a-participant-step-timeline}

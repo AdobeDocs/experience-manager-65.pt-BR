@@ -6,10 +6,10 @@ role: User, Admin
 feature: Metadata
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2000'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 4%
 | AEM 6.5 | Este artigo |
 
 <!-- Scope of metadata articles:
-* metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
+* metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
@@ -56,7 +56,7 @@ Um perfil de metadados permite aplicar metadados padrão a ativos em uma pasta. 
 ### Adicionar um perfil de metadados {#adding-a-metadata-profile}
 
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfis de metadados]** e clique em **[!UICONTROL Criar]**.
-1. Insira um título para o perfil, por exemplo `Sample Metadata`e clique em **[!UICONTROL Criar]**. A variável [!UICONTROL Editar formulário] para o perfil de metadados.
+1. Insira um título para o perfil, por exemplo, `Sample Metadata`e clique em **[!UICONTROL Criar]**. A variável [!UICONTROL Editar formulário] para o perfil de metadados.
 
    ![Editar um formulário de metadados](assets/metadata-edit-form.png)
 
@@ -185,11 +185,11 @@ A variável **[!UICONTROL Formulário de criação]** A guia lista os itens de f
 | Nome do componente | Descrição |
 |---|---|
 | [!UICONTROL Cabeçalho da seção] | Adicione um cabeçalho de seção para obter uma lista de componentes comuns. |
-| [!UICONTROL Texto em linha única] | Adicione uma propriedade de texto de linha única. Ele é armazenado como uma string. |
-| [!UICONTROL Texto multivalor] | Adicione uma propriedade de texto de vários valores. Ele é armazenado como uma matriz de sequência. |
-| [!UICONTROL Número] | Adicione um componente de número. |
-| [!UICONTROL Data] | Adicione um componente de data. |
-| [!UICONTROL Lista suspensa] | Adicione uma lista suspensa. |
+| [!UICONTROL Texto em linha única] | Adiciona uma propriedade de texto em linha única. Ele é armazenado como uma string. |
+| [!UICONTROL Texto multivalor] | Adiciona uma propriedade de texto multivalor. Ele é armazenado como uma matriz de sequência. |
+| [!UICONTROL Número] | Adiciona um componente de número. |
+| [!UICONTROL Data] | Adiciona um componente de data. |
+| [!UICONTROL Lista suspensa] | Adiciona uma lista suspensa. |
 | [!UICONTROL Tags padrão] | Adicionar uma tag. |
 | [!UICONTROL Campo oculto] | Adicione um campo oculto. Ele é enviado como um parâmetro POST quando o ativo é salvo. |
 
@@ -281,4 +281,3 @@ Insira os valores de metadados nos vários campos e clique em **[!UICONTROL Salv
 >* [Perfis para processar metadados, imagens e vídeos](processing-profiles.md).
 >* [Práticas recomendadas para organizar ativos digitais para usar perfis de processamento](/help/assets/organize-assets.md).
 >* [Writeback XMP](/help/assets/xmp-writeback.md).
-

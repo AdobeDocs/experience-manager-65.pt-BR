@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aa58cfb8-ec15-4698-a8f0-97683b0de51c
 exl-id: 9d421599-0417-4329-a528-9cda4e3716f5
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -133,4 +133,4 @@ Para que isso funcione:
 
    >[!NOTE]
    >
-   >Se você incluir `/libs/foundation/global.jsp` ou outros JSPs no `/libs`, será necessário copiá-lo para o projeto para que o Eclipse possa resolver a inclusão. Ao mesmo tempo, você precisa garantir que ele não seja incluído no seu pacote de conteúdo pelo Maven. Como fazer isso é descrito em [Como construir projetos AEM usando o Apache Maven](/help/sites-developing/ht-projects-maven.md).
+   >Se você incluir `/libs/foundation/global.jsp` ou outros JSPs no `/libs`, você deve copiá-lo para o seu projeto para que o Eclipse possa resolver a inclusão. Ao mesmo tempo, você precisa garantir que ele não seja incluído no seu pacote de conteúdo pelo Maven. Como fazer isso é descrito em [Como construir projetos AEM usando o Apache Maven](/help/sites-developing/ht-projects-maven.md).

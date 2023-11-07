@@ -6,9 +6,9 @@ role: User
 feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1030'
 ht-degree: 6%
 
 ---
@@ -27,7 +27,6 @@ ht-degree: 6%
 >* Você precisa `Edit ACL` na pasta ou no ativo que você deseja compartilhar como um link.
 >* Para enviar emails aos usuários, configure os detalhes do servidor SMTP no [Serviço de email Day CQ](#configmailservice).
 
-
 ## Compartilhar ativos {#share-assets}
 
 Para gerar o URL para ativos que você deseja compartilhar com os usuários, use o [!UICONTROL Compartilhamento de link] diálogo.
@@ -37,7 +36,7 @@ Para gerar o URL para ativos que você deseja compartilhar com os usuários, use
 
 1. No [!DNL Assets] selecione o ativo a ser compartilhado como um link.
 
-1. Na barra de ferramentas, clique na guia **[!UICONTROL Compartilhar link]** ![ícone compartilhar ativos](assets/do-not-localize/assets_share.png). O link que será criado depois de clicar em **[!UICONTROL Compartilhar]** é exibido com antecedência no [!UICONTROL Compartilhar link] campo. O link não é criado até que você selecione **[!UICONTROL Enviar]**.
+1. Na barra de ferramentas, clique na guia **[!UICONTROL Compartilhar link]** ![ícone compartilhar ativos](assets/do-not-localize/assets_share.png). O link criado após clicar em **[!UICONTROL Compartilhar]** é exibido com antecedência no [!UICONTROL Compartilhar link] campo. O link não é criado até que você selecione **[!UICONTROL Enviar]**.
 
    ![Caixa de diálogo com o compartilhamento de link](assets/share-assets-as-link.png)
 
@@ -117,4 +116,5 @@ Ao baixar ativos do link compartilhado usando o recurso Compartilhamento de link
    * `http://[aem_server]:[port]/linkshare.html`
    * `http://[aem_server]:[port]/linksharepreview.html`
    * `http://[aem_server]:[port]/linkexpired.html`
-   Entrada [!DNL Experience Manager] interface, acesso **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**. Abra o **[!UICONTROL Day CQ Link Externalizer]** configure e modifique as seguintes propriedades na variável **[!UICONTROL Domínios]** campo com os valores mencionados em relação a `local`, `author`, e `publish`. Para o `local` e `author` propriedades, forneça o URL para as instâncias local e do Autor, respectivamente. Se você executar um único [!DNL Experience Manager] Instância do autor, use o mesmo valor para `local` e `author` propriedades. Para instâncias de Publicação, forneça o URL do [!DNL Experience Manager] Instância de publicação.
+
+  Entrada [!DNL Experience Manager] interface, acesso **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**. Abra o **[!UICONTROL Day CQ Link Externalizer]** configure e modifique as seguintes propriedades na variável **[!UICONTROL Domínios]** campo com os valores mencionados em relação a `local`, `author`, e `publish`. Para o `local` e `author` propriedades, forneça o URL para as instâncias local e do Autor, respectivamente. Se você executar um único [!DNL Experience Manager] Instância do autor, use o mesmo valor para `local` e `author` propriedades. Para instâncias de Publicação, forneça o URL do [!DNL Experience Manager] Instância de publicação.

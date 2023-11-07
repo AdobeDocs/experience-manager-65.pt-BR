@@ -8,9 +8,9 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: 0dea2b3e-fd7c-4811-a04a-6852ffc1e6d6
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2399'
+source-wordcount: '2397'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Abaixo você encontrará uma lista de áreas afetadas em um projeto típico de a
  </tbody>
 </table>
 
-É importante garantir que você esteja executando um sistema operacional compatível, Java™ runtime, httpd e versão do Dispatcher. Para obter mais informações, consulte [Página de requisitos técnicos do AEM 6.5](/help/sites-deploying/technical-requirements.md). A atualização desses componentes precisará ser contabilizada no plano do projeto e deverá ocorrer antes da atualização do AEM.
+É importante garantir que você esteja executando um sistema operacional compatível, Java™ runtime, httpd e versão do Dispatcher. Para obter mais informações, consulte [Página de requisitos técnicos do AEM 6.5](/help/sites-deploying/technical-requirements.md). A atualização desses componentes deve ser considerada no plano do projeto e deve ocorrer antes da atualização do AEM.
 
 ## Fases do projeto {#project-phases}
 
@@ -135,7 +135,7 @@ Revise os Requisitos técnicos para o AEM 6.5 e certifique-se de que seu hardwar
 
 #### Considerações sobre a reestruturação de conteúdo {#content-restructuring-considerations}
 
-O AEM introduziu alterações na estrutura do repositório que ajudarão a facilitar as atualizações. As alterações envolvem mover o conteúdo da pasta /etc para pastas, incluindo /libs, /apps e /content, com base no fato de o Adobe ou um cliente possuir o conteúdo, limitando assim as chances de substituir o conteúdo durante os lançamentos. A reestruturação do repositório foi feita de maneira que não deve exigir alterações de código no momento da atualização da versão 6.5, embora seja recomendável analisar os detalhes em [Reestruturação do repositório no AEM](/help/sites-deploying/repository-restructuring.md) ao planejar uma atualização.
+O AEM introduziu alterações na estrutura do repositório que ajudarão a facilitar as atualizações. As alterações envolvem mover o conteúdo da pasta /etc para pastas, incluindo /libs, /apps e /content, com base no Adobe ou em um cliente possuir o conteúdo, limitando assim as chances de substituir o conteúdo durante os lançamentos. A reestruturação do repositório foi feita de maneira que não deve exigir alterações de código no momento da atualização da versão 6.5, embora seja recomendável analisar os detalhes em [Reestruturação do repositório no AEM](/help/sites-deploying/repository-restructuring.md) ao planejar uma atualização.
 
 ### Avaliando a complexidade da atualização {#assessing-upgrade-complexity}
 

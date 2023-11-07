@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: PDF Generator
 exl-id: c3fc159e-2677-4b71-b0b2-2feaf69e1a32
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ As seguintes etapas são necessárias para configurar uma impressora de rede PDF
 
    * O nome do serviço a ser chamado
    * O nome da operação do serviço a ser chamado
-   * O nome do parâmetro de entrada, conforme especificado no arquivo component.xml do serviço ou processo. O documento PDF será usado como um valor para esse parâmetro de entrada.
+   * O nome do parâmetro de entrada, conforme especificado no arquivo component.xml do serviço ou processo. O documento PDF é usado como um valor para esse parâmetro de entrada.
 
 1. Clique em Salvar.
 
@@ -63,6 +63,6 @@ Usuários que possuem as funções de Administrador do PDFG ou Usuário do PDFG 
 
 1. Em Instalação da impressora de rede PDFG, clique no link. Quando forem solicitadas informações da conta do usuário, especifique o nome de usuário e a senha usados na etapa 1 para efetuar login. Será exibida uma mensagem informando que a impressora foi instalada com êxito.
 
-   ***observação **: Se a senha do usuário for alterada, os usuários precisarão reinstalar a impressora de rede PDFG em seus computadores. Não é possível atualizar a senha no console de administração.*
+   ***observação **: Se a senha do usuário for alterada, os usuários deverão reinstalar a impressora de rede PDFG em seus computadores. Não é possível atualizar a senha no console de administração.*
 
 1. Clique em OK.

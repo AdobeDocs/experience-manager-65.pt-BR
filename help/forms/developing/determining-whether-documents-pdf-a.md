@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: c429d6e1-7847-43c8-bf75-cb0078dbb9d5
 role: Developer
 exl-id: 096fd2ac-616f-484a-b093-9d98b2f87093
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2082'
+source-wordcount: '2081'
 ht-degree: 2%
 
 ---
@@ -145,7 +145,7 @@ Determine se um documento de PDF é compatível com PDF/A usando a API de servi�
    * Criar um `java.util.Map` objeto usado para armazenar o documento de PDF de entrada usando um `HashMap` construtor.
    * Adicione uma entrada à `java.util.Map` ao invocar seu `put` e transmitindo os seguintes argumentos:
 
-      * Um valor de string que representa o nome da chave. Este valor deve corresponder ao valor do elemento de origem especificado no documento DDX. Por exemplo, o valor do elemento de origem localizado no documento DDX introduzido nesta seção é Loan.pdf.
+      * Um valor de string que representa o nome da chave. Este valor deve corresponder ao valor do elemento de origem especificado no documento DDX. Por exemplo, o valor do elemento de origem no documento DDX introduzido nesta seção é Loan.pdf.
       * A `com.adobe.idp.Document` objeto que contém o documento PDF de entrada.
 
 1. Definir opções de tempo de execução.

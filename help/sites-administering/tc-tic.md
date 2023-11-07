@@ -4,10 +4,10 @@ description: Saiba como configurar a estrutura de integração de tradução no 
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1573'
-ht-degree: 50%
+source-wordcount: '1571'
+ht-degree: 48%
 
 ---
 
@@ -196,7 +196,7 @@ Para configurar a tradução das páginas de origem para outros idiomas, associe
 * A configuração de nuvem que conecta o AEM ao seu provedor de tradução.
 * A estrutura de integração de tradução que configura os detalhes da tradução.
 
-Observe que a configuração de nuvem da estrutura de integração de tradução identifica a configuração de nuvem a ser usada para conexão com o provedor de serviços. Quando você associa uma página de origem a uma configuração de nuvem da estrutura, a página deve ser associada à configuração de nuvem do provedor de serviços definido na configuração da estrutura.
+A configuração da nuvem da estrutura de integração de tradução identifica a configuração da nuvem a ser usada para a conexão com o provedor de serviços. Quando você associa uma página de origem a uma configuração de nuvem da estrutura, a página deve ser associada à configuração de nuvem do provedor de serviços definido na configuração da estrutura.
 
 Quando você associa uma página a uma configuração de nuvem, os descendentes da página herdam a associação. Por exemplo, se você associar a página /content/geometrixx/en/products a uma estrutura de integração de tradução, a página Produtos e todas as páginas abaixo dela serão traduzidas de acordo com a estrutura.
 

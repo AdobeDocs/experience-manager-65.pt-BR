@@ -8,10 +8,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 7cb99618-d903-4cfb-b0d9-b23d189f6e78
 exl-id: 7383d590-c6b7-440a-a33d-196dce9736ef
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 13%
+source-wordcount: '178'
+ht-degree: 74%
 
 ---
 
@@ -19,16 +19,16 @@ ht-degree: 13%
 
 Os fluxos de trabalho do AEM permitem automatizar uma série de etapas executadas em (uma ou mais) páginas e/ou ativos.
 
-Por exemplo, ao publicar, um editor precisa revisar o conteúdo, antes que um administrador do site ative a página. Um fluxo de trabalho que automatiza esse exemplo notifica cada participante quando é hora de executar o trabalho necessário:
+Por exemplo, ao publicar, um(a) editor(a) precisa revisar o conteúdo, antes que o(a) admin do site ative a página. Um fluxo de trabalho que automatiza esse exemplo notifica cada participante quando é hora de executar o trabalho necessário:
 
-1. O autor aplica o fluxo de trabalho à página.
-1. O editor recebe um item de trabalho que indica que ele é necessário para revisar o conteúdo da página. Quando concluído, ele indica que o item de trabalho está concluído.
-1. O administrador do site recebe um item de trabalho que solicita a ativação da página. Quando concluído, ele indica que o item de trabalho está concluído.
+1. O(a) autor(a) aplica o fluxo de trabalho à página.
+1. Editores(as) recebem um item de trabalho que indica que é necessário revisar o conteúdo da página. Ao terminar, é necessário confirmar que o item de trabalho foi concluído.
+1. O administrador do site recebe um item de trabalho que solicita a ativação da página. Ao terminar, é necessário confirmar que o item de trabalho foi concluído.
 
 Normalmente:
 
-* Os autores de conteúdo aplicam fluxos de trabalho a páginas e participam de fluxos de trabalho.
-* Os workflows usados são específicos dos processos de negócios da organização.
+* Autores(as) de conteúdo aplicam fluxos de trabalho às páginas e participam de fluxos de trabalho.
+* Os fluxos de trabalho usados são específicos para os processos comerciais da organização.
 
 As seguintes páginas abordam:
 

@@ -2,10 +2,10 @@
 title: Headful e Headless no AEM
 description: Os Projetos do AEM podem ser implementados em um modelo headful ou headless, mas a escolha não precisa ser binária. O AEM oferece a flexibilidade para explorar as vantagens de ambos os modelos em um projeto.
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 94%
+source-wordcount: '1013'
+ht-degree: 88%
 
 ---
 
@@ -23,7 +23,7 @@ Mas essa não precisa ser uma escolha binária. O AEM oferece flexibilidade sem 
 
 ![Modelos de implementação do AEM](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
 
-Em um modelo com pilha completa ou headful, o conteúdo é gerenciado no repositório do AEM, e os componentes do AEM com base em Java, HTL etc. são usados para renderizar o conteúdo da experiência do usuário. Neste modelo, a criação de conteúdo, o estilo, a apresentação e a entrega acontecem no AEM.
+Em um modelo headful ou de pilha completa, o conteúdo é gerenciado no repositório AEM e os componentes AEM com base em Java, HTL e assim por diante são usados para renderizar o conteúdo para a experiência do usuário. Neste modelo, a criação de conteúdo, o estilo, a apresentação e a entrega acontecem no AEM.
 
 Em um modelo headless, o conteúdo é gerenciado no repositório do AEM, mas entregue por APIs, como REST e GraphQL, a outro sistema para renderizar o conteúdo da experiência do usuário. Neste modelo, o conteúdo é criado no AEM, mas a estilização, a apresentação e a entrega acontecem em outra plataforma.
 
@@ -43,7 +43,7 @@ A próxima seção explora esses níveis de integração com mais detalhes.
 
 >[!NOTE]
 >
->É claro que você também poderia reimplementar o SPA da loja virtual como um SPA totalmente funcional do AEM [usando a estrutura do Editor de SPA do AEM.](/help/sites-developing/spa-walkthrough.md) Se você já tem o AEM e quer criar uma nova loja virtual ou outro SPA, esse é o método recomendado, mas ele está fora do escopo deste documento.
+>É claro que você também poderia reimplementar o SPA da loja virtual como um SPA totalmente funcional do AEM [usando a estrutura do Editor de SPA do AEM.](/help/sites-developing/spa-walkthrough.md) Se você já tem AEM e deseja criar uma loja na web ou outro SPA, esse é o método recomendado, mas está fora do escopo deste documento.
 
 ## Níveis de integração de SPA {#integration-levels}
 
