@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1795'
+source-wordcount: '1791'
 ht-degree: 8%
 
 ---
@@ -55,7 +55,7 @@ Talvez você já tenha uma taxonomia de tags em vigor que está aplicando às su
 
 ### Assimilar ativos {#ingesting-assets}
 
-O desempenho e a estabilidade são preocupações importantes ao assimilar ativos no sistema. Como você está carregando uma grande quantidade de dados no sistema, você quer ter certeza de que o sistema funciona e que pode minimizar o tempo necessário e evitar sobrecarga do sistema, o que pode levar a uma falha do sistema, especialmente em sistemas que já estão em produção.
+O desempenho e a estabilidade são preocupações importantes ao assimilar ativos no sistema. Como você está carregando uma grande quantidade de dados no sistema, é necessário ter certeza de que o sistema funciona bem para minimizar o tempo necessário e evitar sobrecarga do sistema, o que pode causar uma falha, especialmente em sistemas que já estão em produção.
 
 Há duas abordagens para carregar os ativos no sistema: uma abordagem baseada em push usando HTTP ou uma abordagem baseada em pull usando APIs JCR.
 

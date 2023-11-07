@@ -1,6 +1,6 @@
 ---
 title: Personalizar os Componentes principais da CIF
-description: Saiba como personalizar os Componentes principais da CIF do Adobe Experience Manager. O tutorial aborda como estender com segurança um Componente principal da CIF para atender aos requisitos específicos da empresa. Saiba como estender uma consulta do GraphQL para retornar um atributo personalizado e exibir o novo atributo em um Componente principal da CIF.
+description: Saiba como personalizar os Componentes principais do Adobe Experience Manager CIF. O tutorial aborda como estender com segurança um Componente principal CIF para atender aos requisitos específicos da empresa. Saiba como estender uma consulta do GraphQL para retornar um atributo personalizado e exibir o novo atributo em um Componente principal CIF.
 sub-product: Commerce
 topics: Development
 version: Cloud Service
@@ -11,16 +11,16 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
-source-git-commit: 1d914b12c3279bacaf5cabb3b1953e927c04bad1
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2571'
+source-wordcount: '2567'
 ht-degree: 15%
 
 ---
 
-# Personalizar os Componentes principais da CIF do Adobe Experience Manager {#customize-cif-components}
+# Personalizar os componentes principais do Adobe Experience Manager CIF {#customize-cif-components}
 
-A variável [Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) é uma base de código de referência para o uso de [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components). Neste tutorial, você estenderá ainda mais a [Teaser do produto](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) para exibir um atributo personalizado do Adobe Commerce. Você também aprenderá mais sobre a integração do GraphQL entre o Adobe Experience Manager (AEM) e o Adobe Commerce e os ganchos de extensão fornecidos pelos Componentes principais da CIF.
+A variável [Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) é uma base de código de referência para o uso de [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components). Neste tutorial, você estenderá ainda mais a [Teaser do produto](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) para exibir um atributo personalizado do Adobe Commerce. Você também aprenderá mais sobre a integração do GraphQL entre o Adobe Experience Manager (AEM) e o Adobe Commerce CIF e os ganchos de extensão fornecidos pelos Componentes principais do.
 
 >[!TIP]
 >
@@ -44,7 +44,7 @@ Você clonará o [Projeto Venia](https://github.com/adobe/aem-cif-guides-venia) 
 
 >[!NOTE]
 >
->**Você pode usar um projeto existente** (com base no Arquétipo de projeto AEM incluído na CIF) e ignore esta seção.
+>**Você pode usar um projeto existente** (baseado no Arquétipo de projeto AEM com CIF incluído) e pule esta seção.
 
 1. Execute o seguinte comando git para clonar o projeto:
 
@@ -137,7 +137,7 @@ Os produtos e os dados do produto exibidos no AEM são armazenados no Adobe Comm
 
 ## Usar um GraphQL IDE para verificar o atributo {#use-graphql-ide}
 
-Antes de pular para o código AEM, é útil explorar a [Adobe Commerce GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) usando um GraphQL IDE. A integração do Adobe Commerce com o AEM é feita principalmente por meio de uma série de queries do GraphQL. Entender e modificar as consultas do GraphQL é uma das principais maneiras de estender os Componentes principais da CIF.
+Antes de pular para o código AEM, é útil explorar a [Adobe Commerce GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) usando um GraphQL IDE. A integração do Adobe Commerce com o AEM é feita principalmente por meio de uma série de queries do GraphQL. Entender e modificar as consultas do GraphQL é uma das principais maneiras de estender os Componentes principais do CIF.
 
 Em seguida, use um GraphQL IDE para verificar se o `eco_friendly` O atributo foi adicionado ao conjunto de atributos do produto. As capturas de tela deste tutorial estão usando o [Cliente Altair GraphQL](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja).
 
@@ -196,7 +196,7 @@ Uso [o IDE de sua escolha](https://experienceleague.adobe.com/docs/experience-ma
 
    ![IDE do local principal](../assets/customize-cif-components/core-location-ide.png)
 
-   `MyProductTeaser.java` é uma interface Java™ que estende a CIF [ProductTeaser](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/models/productteaser/ProductTeaser.java) interface.
+   `MyProductTeaser.java` é uma interface Java™ que estende o CIF [ProductTeaser](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/models/productteaser/ProductTeaser.java) interface.
 
    Já foi adicionado um novo método chamado `isShowBadge()` para exibir um selo se o produto for considerado &quot;Novo&quot;.
 
@@ -225,7 +225,7 @@ Este é um novo método para encapsular a lógica para indicar se o produto tem 
    private ProductTeaser productTeaser;
    ```
 
-   Para todos os métodos que não são substituídos ou alterados, você pode retornar o valor que a variável `ProductTeaser` retorna. Por exemplo:
+   Para todos os métodos que não são substituídos ou alterados, você pode retornar o valor que `ProductTeaser` retorna. Por exemplo:
 
    ```java
    @Override
@@ -236,7 +236,7 @@ Este é um novo método para encapsular a lógica para indicar se o produto tem 
 
    Isso minimiza a quantidade de código Java™ que uma implementação deve gravar.
 
-1. Um dos pontos de extensão adicionais fornecidos pelos Componentes principais da CIF do AEM é o `AbstractProductRetriever` que fornece acesso a atributos específicos do produto. INSPECT o `initModel()` método:
+1. AEM Um dos pontos de extensão adicionais fornecidos pelos componentes principais do CIF é o `AbstractProductRetriever` que fornece acesso a atributos específicos do produto. INSPECT o `initModel()` método:
 
    ```java
    import javax.annotation.PostConstruct;
@@ -336,7 +336,7 @@ Nesse caso, renderize um banner sobre o teaser para indicar que o produto é &qu
 
 >[!NOTE]
 >
->Se você personalizar um componente usando os seletores de produto e categoria da CIF, como este Teaser do produto ou o componente da página da CIF, certifique-se de incluir os itens necessários `cif.shell.picker` clientlib para as caixas de diálogo do componente. Consulte [Uso do seletor de produto e categoria da CIF](use-cif-pickers.md) para obter detalhes.
+>Se você personalizar um componente usando os seletores de produto e categoria de CIF, como este Teaser do produto ou o componente da página CIF, inclua o necessário `cif.shell.picker` clientlib para as caixas de diálogo do componente. Consulte [Uso do seletor de categoria e produto para CIF](use-cif-pickers.md) para obter detalhes.
 
 1. No IDE, navegue e expanda a janela `ui.apps` e expandir a hierarquia de pastas para: `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` e inspecionar o `.content.xml` arquivo.
 
@@ -352,9 +352,9 @@ Nesse caso, renderize um banner sobre o teaser para indicar que o produto é &qu
        componentGroup="Venia - Commerce"/>
    ```
 
-   A definição de componente para o Teaser do produto neste projeto está acima. Observe a propriedade `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. Este é um exemplo de criação de um [componente Proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). Em vez de copiar e colar todos os scripts HTL do Teaser do produto dos Componentes principais da CIF do AEM, você pode usar `sling:resourceSuperType` para herdar toda a funcionalidade.
+   A definição de componente para o Teaser do produto neste projeto está acima. Observe a propriedade `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. Este é um exemplo de criação de um [componente Proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). AEM Em vez de copiar e colar todos os scripts HTL do Teaser do produto dos Componentes principais CIF, você pode usar o `sling:resourceSuperType` para herdar todas as funcionalidades.
 
-1. Abra o arquivo `productteaser.html`. Esta é uma cópia do `productteaser.html` arquivo do [Teaser do produto da CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)
+1. Abra o arquivo `productteaser.html`. Esta é uma cópia do `productteaser.html` arquivo do [Teaser do produto CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)
 
    ```html
    <!--/* productteaser.html */-->
@@ -471,7 +471,7 @@ Nesse ponto, a lógica de quando exibir a variável **Eco Friendly** o símbolo 
 
    >[!NOTE]
    >
-   >Confira [Estilizar os Componentes principais da CIF](./style-cif-component.md) para obter mais detalhes sobre fluxos de trabalho de front-end.
+   >Confira [Estilização dos Componentes principais do CIF](./style-cif-component.md) para obter mais detalhes sobre fluxos de trabalho de front-end.
 
 1. Salve as alterações e implante as atualizações no AEM usando suas habilidades em Maven em um terminal de linha de comando:
 
@@ -486,7 +486,7 @@ Nesse ponto, a lógica de quando exibir a variável **Eco Friendly** o símbolo 
 
 ## Parabéns {#congratulations}
 
-Você personalizou seu primeiro componente da CIF do AEM! Baixe o [arquivos de solução concluídos aqui](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
+AEM Você personalizou seu primeiro componente CIF! Baixe o [arquivos de solução concluídos aqui](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
 
 ## Desafio extra {#bonus-challenge}
 
@@ -501,4 +501,4 @@ Revise a funcionalidade do **Novo** Selo que já foi implementado no Teaser do p
 - [Personalizar os Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components)
 - [Personalizar os Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=pt-BR)
 - [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)
-- [Uso do seletor de produto e categoria da CIF](use-cif-pickers.md)
+- [Uso do seletor de categoria e produto para CIF](use-cif-pickers.md)

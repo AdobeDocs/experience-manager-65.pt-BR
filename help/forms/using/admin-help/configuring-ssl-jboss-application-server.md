@@ -1,18 +1,14 @@
 ---
 title: Configurando o SSL para o servidor da aplicação JBoss
-seo-title: Configuring SSL for JBoss Application Server
 description: Saiba como configurar o SSL para o JBoss Application Server.
-seo-description: Learn how to configure SSL for JBoss Application Server.
-uuid: 7c13cf00-ea89-4894-a4fc-aaeec7ae9f66
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 exl-id: 8eb4f691-a66b-498e-8114-307221f63718
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '907'
 ht-degree: 0%
 
 ---
@@ -145,6 +141,7 @@ Neste procedimento:
       * Selecione Ação > Parar.
       * Aguarde até que o status do serviço apareça como interrompido.
       * Selecione Ação > Iniciar.
+
    * Para instalações do JBoss pré-configuradas ou configuradas manualmente pelo Adobe:
 
       * Em um prompt de comando, navegue até *`[appserver root]`*/bin.
@@ -152,13 +149,12 @@ Neste procedimento:
 
          * (Windows) `shutdown.bat -S`
          * (Linux) `./shutdown.sh -S`
+
       * Aguarde até que o processo JBoss tenha sido totalmente desligado (quando o processo JBoss retornar o controle para o terminal em que foi iniciado).
       * Inicie o servidor digitando o seguinte comando:
 
          * (Windows) `run.bat -c <profile>`
          * (Linux) `./run.sh -c <profile>`
-
-
 
 1. Para acessar o console de administração usando SSL, digite `https://[host name]:'port'/adminui` em um navegador da web:
 
@@ -200,6 +196,5 @@ Neste procedimento:
    >
    >* Substituir `[JAVA_HOME]` com o diretório onde o JDK está instalado e substitua o texto em itálico por valores que correspondam ao seu ambiente.
    >* O certificado assinado CA importado substituirá um certificado público autoassinado, se ele existir.
-
 
 1. Conclua as etapas 13 a 18 de Criar uma credencial SSL.

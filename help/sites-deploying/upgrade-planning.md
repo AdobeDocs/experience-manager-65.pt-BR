@@ -8,9 +8,9 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: 0dea2b3e-fd7c-4811-a04a-6852ffc1e6d6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2397'
+source-wordcount: '2395'
 ht-degree: 0%
 
 ---
@@ -151,7 +151,7 @@ O Detector de padrões introduzido recentemente no deve fornecer uma estimativa 
 
 ### Criação do Runbook de Atualização e Reversão {#building-the-upgrade-and-rollback-runbook}
 
-Embora o Adobe tenha documentado o processo de upgrade de uma instância AEM, o layout de rede, a arquitetura de implantação e as personalizações de cada cliente exigem o ajuste e a personalização dessa abordagem. Por esse motivo, o Adobe incentiva você a revisar toda a documentação fornecida e usá-la para informar um runbook específico do projeto que descreve os procedimentos específicos de atualização e reversão que você seguirá no ambiente. Se estiver atualizando do CRX2, avalie quanto tempo a migração de conteúdo levará ao mudar do CRX2 para o Oak. Para repositórios grandes, isso pode ser substancial.
+Embora o Adobe tenha documentado o processo de upgrade de uma instância AEM, o layout de rede, a arquitetura de implantação e as personalizações de cada cliente exigem o ajuste e a personalização dessa abordagem. Por esse motivo, a Adobe incentiva você a revisar toda a documentação fornecida e usá-la para informar um runbook específico do projeto que descreve os procedimentos específicos de atualização e reversão que você seguirá no seu ambiente. Se estiver atualizando do CRX2, avalie quanto tempo a migração de conteúdo levará ao mudar do CRX2 para o Oak. Para repositórios grandes, isso pode ser substancial.
 
 ![diagrama-runbook](assets/runbook-diagram.png)
 

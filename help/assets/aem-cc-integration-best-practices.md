@@ -7,9 +7,9 @@ role: User, Admin
 feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '3264'
+source-wordcount: '3263'
 ht-degree: 15%
 
 ---
@@ -43,7 +43,7 @@ Leia para saber quais integrações escolher entre o desktop e o DAM de nível e
 
 | Proposta de valor para os perfis envolvidos | oferta de Adobe | Superfícies envolvidas |
 |---|---|---|
-| Os usuários de criação descobrem ativos do [!DNL Experience Manager], abra e use-as, edite e faça upload de alterações para [!DNL Experience Manager]e carregar novos arquivos no [!DNL Experience Manager], sem sair [!DNL Creative Cloud] aplicativos. | [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) | .[!DNL Adobe Photoshop], [!DNL Adobe Illustrator], e [!DNL Adobe InDesign]. |
+| Os usuários de criação descobrem ativos do [!DNL Experience Manager], abra e use-os, edite e faça upload de alterações no [!DNL Experience Manager]e carregar novos arquivos no [!DNL Experience Manager], sem sair [!DNL Creative Cloud] aplicativos. | [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) | .[!DNL Adobe Photoshop], [!DNL Adobe Illustrator], e [!DNL Adobe InDesign]. |
 | Usuários empresariais simplificam a abertura e o uso de ativos, a edição e o upload de alterações no [!DNL Experience Manager]e carregando novos arquivos no [!DNL Experience Manager] do ambiente de desktop. Eles usam uma integração genérica para abrir qualquer tipo de ativo no aplicativo de desktop nativo, incluindo aqueles não-Adobe. | [aplicativo de desktop do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | [!DNL Experience Manager] aplicativo de desktop no Win e no desktop Mac |
 | Profissionais de marketing e usuários empresariais descobrem, visualizam, licenciam, salvam e gerenciam a [!DNL Adobe Stock] ativos no [!DNL Experience Manager]. Os ativos licenciados e salvos fornecem [!DNL Adobe Stock] metadados para uma melhor governação. | [Integração de Experience Manager e Adobe Stock](aem-assets-adobe-stock.md) | [!DNL Experience Manager] interface da web |
 

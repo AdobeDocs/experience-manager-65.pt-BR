@@ -1,16 +1,14 @@
 ---
 title: Definir configurações de serviço
 description: Saiba como definir configurações de serviço. Você pode usar a página Gerenciamento de serviços para definir as configurações de cada um dos serviços que fazem parte dos formulários AEM.
-uuid: e95425a4-62f6-473e-b21b-d081c432e02d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '10694'
+source-wordcount: '10692'
 ht-degree: 0%
 
 ---
@@ -223,7 +221,7 @@ As configurações a seguir estão disponíveis para o serviço de Criptografia.
 
 >[!NOTE]
 >
->Usar autenticação simples (nome de usuário e senha) somente quando a conexão estiver protegida por SSL (usando LDAPS).
+Usar autenticação simples (nome de usuário e senha) somente quando a conexão estiver protegida por SSL (usando LDAPS).
 
 **Modo de compatibilidade:**
 
@@ -259,7 +257,7 @@ As seguintes configurações estão disponíveis para o serviço Gerar PDF.
 
 **Ativar conversões do AutoCAD com base em Acrobat (somente Windows):** Quando esta configuração é verdadeira, o serviço Gerar PDF usa o Acrobat X Pro para todas as conversões DWG para PDF. Essa configuração é útil somente se o AutoCAD não estiver instalado no servidor ou se o mecanismo de conversão do AutoCAD não puder converter arquivos com êxito.
 
-**Expressões Regulares Para Descobrir Caracteres Especiais Proibidos No Nome De Usuário (Somente Windows):** Especifica caracteres que interferem nas operações Export PDF e Optimize PDF quando os caracteres aparecem no nome de um usuário.
+**Expressões Regulares Para Descobrir Caracteres Especiais Proibidos No Nome De Usuário (Somente Windows):** Especifica caracteres que interferem nas operações Export PDF e Optimize PDF quando os caracteres são exibidos no nome de um usuário.
 
 **Tamanho do pool ImageToPDF:** O tamanho do pool do conversor de imagem para PDF padrão (Java puro) no serviço Gerar PDF. Esta configuração controla o número máximo de conversões simultâneas Imagem-para-PDF que o serviço Gerar PDF pode executar. O valor padrão dessa configuração (recomendada para sistemas com um único processador) é 3, que pode ser aumentado em sistemas com vários processadores.
 
@@ -431,7 +429,7 @@ As seguintes configurações estão disponíveis para o serviço de configuraç�
 
 >[!NOTE]
 >
->Se o suporte Offline tiver sido habilitado e você desabilitá-lo, os perfis de provisionamento dos usuários serão atualizados imediatamente ou assim que estiverem online. Se um usuário estiver trabalhando offline, todas as tarefas pendentes serão retornadas à lista Tarefas e todos os itens em sua Fila, incluindo formulários, tarefas e formulários pendentes com erros de validação, serão excluídos da Fila.
+Se o suporte Offline tiver sido habilitado e você desabilitá-lo, os perfis de provisionamento dos usuários serão atualizados imediatamente ou assim que estiverem online. Se um usuário estiver trabalhando offline, todas as tarefas pendentes serão retornadas à lista Tarefas e todos os itens em sua Fila, incluindo formulários, tarefas e formulários pendentes com erros de validação, serão excluídos da Fila.
 
 **Android:** Permite que dispositivos Android se conectem ao servidor.
 
@@ -733,7 +731,7 @@ Se o caminho não for absoluto, mas relativo, a pasta será criada dentro da pas
 
 >[!NOTE]
 >
->Quanto menor o tamanho das pastas de resultados, melhor será o desempenho das Pastas monitoradas. Por exemplo, se a carga estimada para a pasta monitorada for de 1000 arquivos a cada hora, tente um padrão como `result/%Y%M%D%H` para que uma nova subpasta seja criada a cada hora. Se a carga for menor (por exemplo, 1000 arquivos por dia), você poderá usar um padrão como `result/%Y%M%D`.
+Quanto menor o tamanho das pastas de resultados, melhor será o desempenho das Pastas monitoradas. Por exemplo, se a carga estimada para a pasta monitorada for de 1000 arquivos a cada hora, tente um padrão como `result/%Y%M%D%H` para que uma nova subpasta seja criada a cada hora. Se a carga for menor (por exemplo, 1000 arquivos por dia), você poderá usar um padrão como `result/%Y%M%D`.
 
 **Pasta de Preparo:** O nome padrão da pasta de preparo dentro da pasta monitorada.
 
@@ -747,7 +745,7 @@ Se o caminho não for absoluto, mas relativo, a pasta será criada dentro da pas
 
 O serviço Web ( `WebService`) permite que os processos chamem operações de serviço da web.
 
-O serviço Web permite que processos chamem operações de serviço Web. Por exemplo, uma organização pode querer integrar um processo para armazenar e recuperar informações como contato e detalhes da conta, chamando os serviços Web expostos de um provedor de serviços. O serviço da Web chama um serviço da Web especificado e transmite valores para cada um de seus parâmetros. Em seguida, salva os valores de retorno da operação em uma variável designada em um processo.
+O serviço Web permite que processos chamem operações de serviço Web. Por exemplo, uma organização pode querer integrar um processo para armazenar e recuperar informações como contato e detalhes da conta, chamando os serviços da Web expostos de um provedor de serviços. O serviço da Web chama um serviço da Web especificado e transmite valores para cada um de seus parâmetros. Em seguida, salva os valores de retorno da operação em uma variável designada em um processo.
 
 O serviço Web interage com os serviços Web enviando e recebendo mensagens SOAP. O serviço também oferece suporte ao envio de anexos MIME, MTOM e SwaRef com mensagens SOAP usando o protocolo WS-Attachment. As interações do serviço Web são compatíveis com os sistemas SAP e os serviços Web .NET.
 
@@ -815,7 +813,7 @@ Os perfis de segurança padrão são instalados, que podem ser configurados para
 
    >[!NOTE]
    >
-   >Os serviços de renderização e envio usados com as variáveis xfaForm, Document Form e Form são sempre executados usando a conta de usuário Sistema.
+   Os serviços de renderização e envio usados com as variáveis xfaForm, Document Form e Form são sempre executados usando a conta de usuário Sistema.
 
 1. Clique em Adicionar Principal para especificar as permissões que os usuários e grupos têm para este serviço.
 1. A tela Selecionar principal exibe os usuários e grupos configurados no Gerenciamento de usuários. Se o usuário ou grupo desejado não for exibido, use a função de pesquisa para localizá-lo. Clique em um nome de usuário ou de grupo.

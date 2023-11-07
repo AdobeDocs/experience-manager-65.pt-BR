@@ -1,18 +1,14 @@
 ---
 title: Configuração de calendários de negócios
-seo-title: Configuring Business Calendars
 description: Os calendários comerciais definem dias úteis e não úteis para sua organização. Saiba como configurar os calendários comerciais.
-seo-description: Business calendars define business and non-business days for your organization. Learn how to configure the business calendars.
-uuid: 0ba610b8-72a8-480c-8783-70d98cbe890a
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
 exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1898'
 ht-degree: 0%
 
 ---
@@ -29,7 +25,7 @@ Por exemplo, um lembrete de tarefa é configurado para ocorrer três dias úteis
 
 ## Uso do calendário comercial padrão {#using-the-default-business-calendar}
 
-Os formulários AEM fornecem um calendário comercial padrão (chamado de *Calendário interno*) que designa sábados e domingos como dias não úteis. Se todos os usuários da sua organização tiverem os mesmos dias não-úteis, você poderá atualizar o calendário padrão para se adequar à sua organização. Ao usar apenas o calendário de negócios padrão, não é necessário ativar os calendários de negócios no Gerenciamento de Usuários nem fornecer mapeamentos. Quando nenhum outro calendário comercial é definido, os formulários AEM usam o calendário comercial padrão.
+Os formulários AEM fornecem um calendário comercial padrão (chamado de *Calendário interno*) que designa sábados e domingos como dias não úteis. Se todos os usuários da sua organização tiverem os mesmos dias não-úteis, você poderá atualizar o calendário padrão de negócios para se adequar à sua organização. Ao usar apenas o calendário de negócios padrão, não é necessário ativar os calendários de negócios no Gerenciamento de Usuários nem fornecer mapeamentos. Quando nenhum outro calendário comercial é definido, os formulários AEM usam o calendário comercial padrão.
 
 ## Configuração de vários calendários de negócios {#setting-up-multiple-business-calendars}
 
@@ -128,7 +124,7 @@ O AEM Forms permite exportar e importar seus calendários de negócios como arqu
 
 >[!NOTE]
 >
->Esse recurso exporta e importa todos os calendários comerciais definidos, incluindo o calendário comercial padrão fornecido por formulários AEM. Um calendário comercial importado com o mesmo nome de um calendário existente substituirá o calendário existente.
+>Esse recurso exporta e importa todos os calendários comerciais definidos, incluindo o calendário comercial padrão fornecido por formulários AEM. Um calendário comercial importado com o mesmo nome de um calendário existente substitui o calendário existente.
 
 ### Exportar calendários de negócios {#export-business-calendars}
 

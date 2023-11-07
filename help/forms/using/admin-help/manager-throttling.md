@@ -1,18 +1,14 @@
 ---
 title: Gerenciador de trabalho e limitação
-seo-title: Work Manager and throttling
 description: Este documento fornece informações de fundo sobre o Work Manager e fornece instruções sobre a configuração das opções de limitação do Work Manager.
-seo-description: This document provides background information on Work Manager, and provides instructions on configuring Work Manager throttling options.
-uuid: b90998bc-e3d4-493a-9371-55ccb44da20d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9a8b4e3a-f416-4dc6-a90a-9018df5c844e
 exl-id: 1f765de2-1362-4318-9302-c5036e6fa7d6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
@@ -104,4 +100,4 @@ Você pode configurar a limitação para o Work Manager, de modo que os itens de
 1. Em Infraestrutura do servidor, clique em Fluxo de trabalho de formulários e Java > Definição de processo.
 1. Em Propriedades adicionais, clique em Java Virtual Machine.
 1. Na caixa Generic JVM arguments, digite os argumentos necessários.
-1. Clique em OK ou em Aplicar e, em seguida, clique em Salvar diretamente na configuração principal.
+1. Clique em OK ou em Aplicar e, em seguida, clique em Salvar diretamente na configuração-mestre.
