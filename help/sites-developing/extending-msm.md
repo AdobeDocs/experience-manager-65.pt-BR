@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2577'
+source-wordcount: '2582'
 ht-degree: 2%
 
 ---
@@ -195,7 +195,7 @@ A nova configuração de implantação está então disponível ao definir confi
    >Isso ocorre porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode ser substituído ao aplicar um hotfix ou pacote de recursos).
    >O método recomendado para configuração e outras alterações é:
    >
-   >* Recriar o item necessário (ou seja, como ele existe em `/libs`) em `/apps`
+   >* Recrie o item necessário (ou seja, como ele existe em `/libs`) em `/apps`
    >* Fazer alterações em `/apps`
 
 1. Neste **Criar** um nó com as seguintes propriedades:
@@ -655,11 +655,11 @@ Por exemplo, se duas novas propriedades de página estiverem sendo adicionadas:
 
 * Email de contato:
 
-   * Não é necessário implantar esta propriedade, pois ela será diferente em cada país (ou marca etc.).
+   * Não é necessário implantar esta propriedade, pois ela será diferente em cada país (ou marca e assim por diante).
 
 * Estilo visual da chave:
 
-   * O requisito do projeto é que essa propriedade seja implementada, pois é (geralmente) comum a todos os países (ou marcas, etc.).
+   * O requisito do projeto é que essa propriedade seja implementada, pois é (geralmente) comum a todos os países (ou marcas e assim por diante).
 
 Em seguida, é necessário garantir que:
 

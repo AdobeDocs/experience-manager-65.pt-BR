@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 0%
@@ -61,11 +61,11 @@ Para evitar a perda de dados, o backup dos dados específicos dos formulários A
 
 Use as diretrizes a seguir se for necessário recuperar formulários AEM em um ambiente diferente devido às seguintes alterações:
 
-* Alteração no endereço IP, nome do host ou porta do servidor de formulários AEM
+* Alteração no endereço IP, no nome do host ou na porta do AEM Forms Server
 * Alteração nas letras de unidade ou no caminho do diretório
 * Alterar para outro host de banco de dados, porta ou nome
 
-Normalmente, esses cenários de recuperação são causados por falha de hardware do servidor que hospeda o servidor de aplicativos, o servidor de banco de dados ou o servidor de formulários. Além das configurações específicas dos formulários AEM descritas nesta seção, você também deve fazer as alterações necessárias para outras partes da implantação dos formulários AEM, como balanceadores de carga e firewalls, se o nome do host ou endereço IP de um servidor do AEM Forms for alterado.
+Normalmente, esses cenários de recuperação são causados por falha de hardware do servidor que hospeda o servidor de aplicativos, o servidor de banco de dados ou o Forms Server. Além das configurações específicas dos formulários AEM descritas nesta seção, você também deve fazer as alterações necessárias para outras partes da implantação dos formulários AEM, como balanceadores de carga e firewalls, se o nome do host ou endereço IP de um servidor do AEM Forms for alterado.
 
 ### O que não pode ser alterado {#what-cannot-be-changed}
 
@@ -73,7 +73,7 @@ Mesmo que você possa alterar o servidor de banco de dados e muitos outros parâ
 
 ### Reiniciando após uma recuperação {#restarting-after-a-recovery}
 
-Antes de reiniciar o servidor de formulários após uma recuperação, faça o seguinte:
+Antes de reiniciar o Forms Server após uma recuperação, faça o seguinte:
 
 1. Inicie o sistema no modo de manutenção.
 1. Faça o seguinte para garantir que o Gerenciador de formulários esteja sincronizado com formulários AEM no modo de manutenção:
@@ -104,4 +104,4 @@ Use o `LCSetGDS`script no `[*aem-forms root]*\sdk\misc\Foundation\SetGDSCommandl
 >
 >Essa circunstância é a única sob a qual você deve usar esse script para alterar a localização do GDS. Para alterar a localização do GDS enquanto os formulários AEM estiverem em execução, use o Console de administração. (Consulte [Definir configurações gerais de formulários AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*.) *
 
-Depois de definir o caminho GDS, inicie o servidor de formulários no modo de manutenção e use o console de administração para atualizar os caminhos restantes do sistema de arquivos para o novo nó. Depois de verificar se todas as configurações necessárias estão atualizadas, reinicie e teste os formulários AEM.
+Depois de definir o caminho GDS, inicie o Forms Server no modo de manutenção e use o console de administração para atualizar os caminhos restantes do sistema de arquivos para o novo nó. Depois de verificar se todas as configurações necessárias estão atualizadas, reinicie e teste os formulários AEM.

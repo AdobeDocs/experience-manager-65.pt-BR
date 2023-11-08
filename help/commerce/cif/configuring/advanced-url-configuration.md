@@ -9,9 +9,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '896'
 ht-degree: 29%
 
 ---
@@ -28,11 +28,11 @@ Os [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-
 
 ## Configuração {#configuration}
 
-Para configurar o `UrlProvider` de acordo com os requisitos e necessidades de SEO, um projeto deve fornecer uma configuração OSGI para a &quot;Configuração do provedor de URL da CIF&quot;.
+Para configurar o `UrlProvider` de acordo com os requisitos e necessidades de SEO, um projeto deve fornecer uma configuração OSGI para a &quot;configuração do Provedor de URL CIF&quot;.
 
 >[!NOTE]
 >
->Desde a versão 2.0.0 dos Componentes principais da CIF do AEM, a configuração do Provedor de URL fornece apenas formatos de URL predefinidos, em vez dos formatos configuráveis de texto livre conhecidos das versões 1.x. Além disso, o uso de seletores para transmitir dados em URLs foi substituído por sufixos.
+>AEM Desde a versão 2.0.0 dos Componentes principais do CIF, a configuração do Provedor de URL fornece apenas formatos de URL predefinidos, em vez dos formatos configuráveis de texto livre conhecidos das versões 1.x. Além disso, o uso de seletores para transmitir dados em URLs foi substituído por sufixos.
 
 ### Formato do URL da página do produto {#product}
 
@@ -44,7 +44,7 @@ O modelo configura os URLs das páginas de produto e oferece suporte às seguint
 * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}`
 
-No caso do [Loja de referência Venia](https://github.com/adobe/aem-cif-guides-venia):
+Se houver [Loja de referência Venia](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` é substituída por `/content/venia/us/en/products/product-page`
 * `{{sku}}` é substituído pelo SKU do produto, por exemplo, `VP09`
@@ -63,7 +63,7 @@ O modelo configura os URLs das páginas de categoria ou lista de produtos e ofer
 * `{{page}}.html/{{url_path}}.html` (default)
 * `{{page}}.html/{{url_key}}.html`
 
-No caso do [Loja de referência Venia](https://github.com/adobe/aem-cif-guides-venia):
+Se houver [Loja de referência Venia](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` é substituída por `/content/venia/us/en/products/category-page`
 * `{{url_key}}` é substituído pelo nome da `url_key` propriedade
@@ -81,7 +81,7 @@ Com os dados de exemplo acima, uma URL de página de categoria formatada usando 
 
 A variável `UrlProvider` O é pré-configurado para gerar deep links para essas páginas nas instâncias do nível do autor. Isso é útil para editores que navegam em um site usando o modo de Visualização, navegam até uma página de produto ou categoria específica e voltam ao modo de Edição para editar a página.
 
-Por outro lado, em instâncias do nível de publicação, os urls de páginas de catálogos devem ser mantidos estáveis para não perder ganhos nas classificações do mecanismo de pesquisa, por exemplo. Por causa disso, as instâncias de nível de publicação não renderizarão deep links para páginas de catálogo específicas por padrão. Para alterar esse comportamento, a variável _Estratégia de página específica do provedor de URL da CIF_ O pode ser configurado para sempre gerar urls de página específicos.
+Por outro lado, em instâncias do nível de publicação, os urls de páginas de catálogos devem ser mantidos estáveis para não perder ganhos nas classificações do mecanismo de pesquisa, por exemplo. Por causa disso, as instâncias de nível de publicação não renderizarão deep links para páginas de catálogo específicas por padrão. Para alterar esse comportamento, a variável _Estratégia de página específica do provedor de URL do CIF_ O pode ser configurado para sempre gerar urls de página específicos.
 
 ## Formatos personalizados de URL {#custom-url-format}
 

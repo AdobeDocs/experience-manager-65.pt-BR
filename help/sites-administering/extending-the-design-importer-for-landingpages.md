@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '3498'
+source-wordcount: '3493'
 ht-degree: 0%
 
 ---
@@ -598,4 +598,4 @@ Depois `box img` for usada no importador de design, a landing page resultante pa
 
 >[!NOTE]
 >
->Além disso, os designers devem estar cientes de que somente o código dentro do **id=cqcanvas** for reconhecida pelo importador, caso contrário, o design não será preservado.
+>Os designers devem codificar somente dentro do **id=cqcanvas** for reconhecida pelo importador, caso contrário, o design não será preservado.

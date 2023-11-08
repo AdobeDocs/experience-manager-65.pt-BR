@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ee54d9d4-190d-4665-925a-9740ac65fbd5
 exl-id: 89561ed0-d094-4ef7-9bc1-bde11f3c5bc3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '1520'
 ht-degree: 0%
@@ -41,13 +41,13 @@ Você também pode ativar o SSO usando o SPNEGO. (Consulte [Habilitar SSO usando
    * **Cabeçalho HTTP para o domínio:** (Não obrigatório) Nome do cabeçalho cujo valor contém o nome de domínio. Use essa configuração somente se nenhum único cabeçalho HTTP identificar exclusivamente o usuário. Use essa configuração para casos em que existem vários domínios e o identificador exclusivo é exclusivo somente em um domínio. Nesse caso, especifique o nome do cabeçalho nessa caixa de texto e especifique o mapeamento de domínio para os vários domínios na caixa Mapeamento de domínio. (Consulte [Edição e conversão de domínios existentes](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).)
    * **Mapeamento de domínio:** (Obrigatório) Especifica o mapeamento para vários domínios no formato *valor do cabeçalho=nome do domínio*.
 
-      Por exemplo, considere uma situação em que o cabeçalho HTTP de um domínio é domainName e pode ter valores de domain1, domain2 ou domain3. Nesse caso, use o mapeamento de domínio para mapear os valores de domainName para nomes de domínio do User Management. Cada mapeamento deve estar em uma linha diferente:
+     Por exemplo, considere uma situação em que o cabeçalho HTTP de um domínio é domainName e pode ter valores de domain1, domain2 ou domain3. Nesse caso, use o mapeamento de domínio para mapear os valores de domainName para nomes de domínio do User Management. Cada mapeamento deve estar em uma linha diferente:
 
-      domain1=UMdomain1
+     domain1=UMdomain1
 
-      domain2=UMdomain2
+     domain2=UMdomain2
 
-      domain3=UMdomain3
+     domain3=UMdomain3
 
 ### Configurar referenciadores permitidos {#configure-allowed-referers}
 
@@ -63,8 +63,8 @@ Você também pode ativar o SSO usando cabeçalhos HTTP. (Consulte [Habilitar SS
 >
 >O AEM Forms no JEE não é compatível com a configuração do SSO usando Kerberos/SPNEGO em vários ambientes de domínio filho.
 
-1. Decida qual domínio usar para habilitar o SSO. O servidor AEM Forms e os usuários devem fazer parte do mesmo domínio do Windows ou domínio confiável.
-1. No Ative Diretory, crie um usuário que represente o servidor de formulários AEM. (Consulte [Criar uma conta de usuário](enabling-single-sign-on-aem.md#create-a-user-account).) Se você estiver configurando mais de um domínio para usar o SPNEGO, certifique-se de que as senhas de cada um desses usuários sejam diferentes. Se as senhas não forem diferentes, o SPNEGO SSO não funcionará.
+1. Decida qual domínio usar para habilitar o SSO. O AEM Forms Server e os usuários devem fazer parte do mesmo domínio do Windows ou domínio confiável.
+1. No Ative Diretory, crie um usuário que represente o AEM Forms Server. (Consulte [Criar uma conta de usuário](enabling-single-sign-on-aem.md#create-a-user-account).) Se você estiver configurando mais de um domínio para usar o SPNEGO, certifique-se de que as senhas de cada um desses usuários sejam diferentes. Se as senhas não forem diferentes, o SPNEGO SSO não funcionará.
 1. Mapeie o nome da entidade de serviço. (Consulte [Mapear um SPN (Nome da Entidade de Serviço)](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn).)
 1. Configure o controlador de domínio. (Consulte [Evitar falhas de verificação de integridade Kerberos](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures).)
 1. Adicione ou edite um domínio enterprise conforme descrito em [Adicionar domínios](/help/forms/using/admin-help/adding-domains.md#adding-domains) ou [Edição e conversão de domínios existentes](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains). Ao criar ou editar o domínio enterprise, execute estas tarefas:
@@ -109,7 +109,7 @@ Você também pode ativar o SSO usando cabeçalhos HTTP. (Consulte [Habilitar SS
 
    Os valores que você deve fornecer são descritos a seguir:
 
-   **host:** Nome totalmente qualificado do servidor de formulários ou qualquer URL exclusivo. Neste exemplo, ele é definido como lcserver.um.lc.com.
+   **host:** Nome totalmente qualificado do servidor do Forms ou qualquer URL exclusivo. Neste exemplo, ele é definido como lcserver.um.lc.com.
 
    **REALM:** O realm do Ative Diretory para o controlador de domínio. Neste exemplo, ele é definido como UM.LC.COM. Certifique-se de informar o realm em caracteres maiúsculos. Para determinar o realm do Windows 2003, conclua as seguintes etapas:
 
@@ -150,9 +150,9 @@ Se o servidor for acessado usando o nome do computador, como https://lcserver:80
 
 1. Vá para Ferramentas > Opções da Internet e clique na guia Segurança.
 1. Clique no ícone Intranet local e em Sites.
-1. Clique em Avançado e, na caixa Adicionar este site à zona, digite a URL do servidor de formulários. Por exemplo, digite `https://lcserver.um.lc.com`
+1. Clique em Avançado e, na caixa Adicionar este site à zona, digite o URL do servidor do Forms. Por exemplo, digite `https://lcserver.um.lc.com`
 1. Clique em OK até que todas as caixas de diálogo sejam fechadas.
-1. Teste a configuração acessando o URL do servidor de formulários AEM. Por exemplo, na caixa URL do navegador, digite `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`
+1. Teste a configuração acessando o URL do servidor do AEM Forms. Por exemplo, na caixa URL do navegador, digite `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`
 
 **Configurar o Mozilla Firefox**
 

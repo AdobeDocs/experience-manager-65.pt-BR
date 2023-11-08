@@ -2,9 +2,9 @@
 title: Criação de conteúdo acessível para o Adobe Experience Manager (Conformidade com o WCAG 2.1)
 description: Usar o AEM para ajudar a tornar o conteúdo da Web acessível e utilizável por pessoas com deficiência
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '13810'
+source-wordcount: '13806'
 ht-degree: 84%
 
 ---
@@ -1144,7 +1144,7 @@ Siga as orientações em [Como cumprir o Critério de sucesso 3.2.4](https://www
 
 #### Propósito - Identificação de erro (3.3.1) {#purpose-error-identification}
 
-O propósito deste Critério de sucesso é garantir que os usuários estejam cientes de que ocorreu um erro e possam determinar o que está errado. A mensagem de erro deve ser o mais específica possível. No caso de um envio de formulário malsucedido, a reexibição do formulário e a indicação dos campos com erro são insuficientes para que alguns usuários percebam que ocorreu um erro. Usuários de leitor de tela, por exemplo, não saberão que houve um erro até encontrarem um dos indicadores. Eles podem abandonar o formulário completamente antes de encontrar o indicador de erro, achando que a página simplesmente não está funcionando. De acordo com a definição na WCAG, um [erro de entrada](https://www.w3.org/TR/WCAG/#dfn-input-error) são informações fornecidas pelo usuário que não são aceitas. Isso inclui o seguinte.
+O propósito deste Critério de sucesso é garantir que os usuários estejam cientes de que ocorreu um erro e possam determinar o que está errado. A mensagem de erro deve ser o mais específica possível. Se houver um envio de formulário malsucedido, a reexibição do formulário e a indicação dos campos com erro serão insuficientes para que alguns usuários percebam que ocorreu um erro. Usuários de leitor de tela, por exemplo, não saberão que houve um erro até encontrarem um dos indicadores. Eles podem abandonar o formulário completamente antes de encontrar o indicador de erro, achando que a página simplesmente não está funcionando. De acordo com a definição na WCAG, um [erro de entrada](https://www.w3.org/TR/WCAG/#dfn-input-error) são informações fornecidas pelo usuário que não são aceitas. Isso inclui o seguinte.
 
 Informações exigidas pela página da Web, mas omitidas pelo usuário ou informações fornecidas pelo usuário, mas que não estejam no formato de dados necessário ou valores permitidos.
 Por exemplo:
@@ -1223,7 +1223,7 @@ Em formas simples com funcionalidade limitada, rotular adequadamente uma `Submit
 
 O propósito deste Critério de sucesso é garantir que os usuários recebam sugestões adequadas para a correção de um erro de entrada, se possível. A definição de [erro de entrada](https://www.w3.org/TR/WCAG/#dfn-input-error) da WCAG diz &quot;informações fornecidas pelo usuário que não são aceitas&quot; pelo sistema. Alguns exemplos de informações que não são aceitas incluem informações obrigatórias, mas omitidas pelo usuário, e informações fornecidas pelo usuário, mas que não estão no formato de dados necessário ou valores permitidos.
 
-O Critério de sucesso 3.3.1 prevê a notificação de erros. Mas as pessoas com limitações cognitivas podem ter dificuldade para entender como corrigir os erros. Pessoas com deficiências visuais podem não ser capazes de descobrir exatamente como corrigir o erro. No caso de um envio de formulário malsucedido, os usuários podem abandonar o formulário por não ter certeza de como corrigir o erro, mesmo sabendo que ele ocorreu.
+O Critério de sucesso 3.3.1 prevê a notificação de erros. Mas as pessoas com limitações cognitivas podem ter dificuldade para entender como corrigir os erros. Pessoas com deficiências visuais podem não ser capazes de descobrir exatamente como corrigir o erro. Se o envio do formulário não for bem-sucedido, os usuários poderão abandonar o formulário por não ter certeza de como corrigir o erro, mesmo sabendo que ele ocorreu.
 
 O autor do conteúdo pode fornecer a descrição do erro, ou o agente do usuário pode fornecer a descrição do erro com base em informações específicas da tecnologia, determinadas de forma programática.
 

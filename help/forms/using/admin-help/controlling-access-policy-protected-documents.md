@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f34058c3-384a-4b73-a386-5bc9125acbf8
 feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2169'
+source-wordcount: '2168'
 ht-degree: 0%
 
 ---
@@ -184,7 +184,7 @@ Você pode classificar a lista de documentos por cabeçalho de coluna. Os ícone
 
 ## Adicionar página de capa a documentos protegidos por política {#add-cover-page-to-policy-protected-documents}
 
-No caso da maioria dos visualizadores que não são do Adobe PDF, se você abrir um documento protegido por segurança de documento, a primeira página será exibida como uma página em branco ou o aplicativo será anulado sem abrir o documento.
+Se houver a maioria dos visualizadores que não são da Adobe PDF, se você abrir um documento protegido por segurança de documento, a primeira página será exibida como uma página em branco ou o aplicativo será anulado sem abrir o documento.
 
 Você pode usar o suporte à Página 0 (Documento envolvedor) para permitir que visualizadores que não sejam do Adobe PDF abram um documento protegido e exibam uma página de capa no documento.
 

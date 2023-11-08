@@ -1,20 +1,18 @@
 ---
 title: Como criar ou personalizar temas do Formulário adaptável?
-seo-title: How to create a theme for Adaptive Forms Core Components?
 description: Saiba como criar ou personalizar temas para os Componentes principais do Forms adaptável usando especificações do BEM
-seo-description: Learn to create or customize themes for Adaptive Forms Core Components using BEM specifications
 keywords: criar tema dos componentes principais dos formulários adaptáveis, criar novo tema, personalizar tema, carregar novo tema, usar tema em formulários, excluir um tema, criar um tema em formulários AEM 6.5
 contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1973'
+source-wordcount: '1971'
 ht-degree: 6%
 
 ---
-
 
 # Criar ou personalizar um tema de formulário adaptável {#introduction-to-theme}
 
@@ -62,7 +60,7 @@ Você pode [personalizar qualquer um desses temas para criar um tema](#customize
 
 ## Personalizar um tema {#customize-a-theme-core-components-based-adaptive-forms}
 
-A personalização de um tema refere-se ao processo de modificação e personalização da aparência de um tema. Ao personalizar um tema, você faz alterações em seus elementos de design, layout, cores, tipografia e, às vezes, no código subjacente. Isso permite criar uma aparência exclusiva e personalizada para seu site ou aplicativo, mantendo a estrutura básica e a funcionalidade fornecidas pelo tema.
+A personalização de um tema refere-se ao processo de modificação e personalização da aparência de um tema. Ao personalizar um tema, você altera seus elementos de design, layout, cores, tipografia e, às vezes, o código subjacente. Isso permite criar uma aparência exclusiva e personalizada para seu site ou aplicativo, mantendo a estrutura básica e a funcionalidade fornecidas pelo tema.
 
 >[!NOTE]
 >
@@ -339,4 +337,3 @@ Para remover temas não utilizados ou indesejados:
 * [Criar um modelo para os Componentes principais com base no Forms adaptável](template-editor.md)
 * [Criar ou adicionar um formulário adaptável a uma página do AEM Sites ou a um fragmento de experiência](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Modelos de temas de amostra e modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
-

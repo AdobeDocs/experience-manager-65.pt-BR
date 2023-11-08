@@ -1,16 +1,14 @@
 ---
 title: Criação e edição de aplicativos usando o console Aplicativos
 description: Siga esta página para saber como criar e editar aplicativos usando o console de aplicativos.
-uuid: 4f7db978-ae2b-4ca6-89f1-26e091d9140a
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2687'
+source-wordcount: '2685'
 ht-degree: 0%
 
 ---
@@ -174,7 +172,7 @@ Este é um recurso que está disponível no Feature Pack 2 do Apps 6.1 e fornece
 O que é um modelo de aplicativo? Pense nisso como uma coleção de modelos de página e componentes que representam uma linha de base ou base de um aplicativo.
 Ao criar um aplicativo com base no modelo de outro aplicativo, você obterá um aplicativo que tem um ponto de partida representativo do aplicativo no qual ele foi criado.
 
-Você deve ter um modelo de aplicativo móvel existente (ou um aplicativo instalado que tenha um modelo de aplicativo) para usar esse recurso.
+Você deve ter um modelo de aplicativo móvel existente (ou um aplicativo instalado que tenha um modelo de aplicativo) para usar este recurso.
 
 O pacote de amostras mais recente do AEM Apps 6.1 inclui uma versão atualizada do Geometrixx com um modelo de aplicativo. Como alternativa, você pode instalar o StarterKit, que também fornece um template.
 

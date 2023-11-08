@@ -8,7 +8,7 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
 exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '3775'
 ht-degree: 0%
@@ -116,11 +116,11 @@ Para que o fluxo de trabalho de formulários receba e manipule mensagens de emai
 
 **SMTP SSL Habilitado:** Quando selecionada, habilita SSL em SMTP.
 
-**Incluir O Corpo Do Email Original Como Um Anexo:** Por padrão, ao enviar um email para o servidor de formulários, o texto original da mensagem é incluído no corpo da mensagem. Para incluir o texto como um anexo, selecione essa opção.
+**Incluir O Corpo Do Email Original Como Um Anexo:** Por padrão, ao enviar um email para o Forms Server, o texto original da mensagem é incluído no corpo dela. Para incluir o texto como um anexo, selecione essa opção.
 
 **Usar A Linha De Assunto Original Para Emails De Resultado:** Por padrão, o servidor do Forms usa os valores especificados nas configurações Assunto do email de sucesso e Assunto do email de erro como a linha de assunto ao enviar as mensagens de email de resultado. Para usar a mesma linha de assunto do email original enviado ao servidor, selecione essa opção.
 
-**Assunto do email de sucesso:** Depois de enviar um email para um endpoint de email para iniciar ou continuar um processo, você receberá uma mensagem de email de retorno do servidor de formulários AEM. Se o email for bem-sucedido, você receberá um email de sucesso. Se seu email falhar, você receberá um email de falha informando por que ele falhou. Essa configuração permite especificar a linha de assunto das mensagens de email de sucesso enviadas para esse endpoint.
+**Assunto do email de sucesso:** Depois de enviar um email a um endpoint de email para iniciar ou continuar um processo, você receberá uma mensagem de email de retorno do servidor do AEM Forms. Se o email for bem-sucedido, você receberá um email de sucesso. Se seu email falhar, você receberá um email de falha informando por que ele falhou. Essa configuração permite especificar a linha de assunto das mensagens de email de sucesso enviadas para esse endpoint.
 
 **Corpo do email de sucesso:** Permite especificar o corpo de texto das mensagens de email de sucesso enviadas para esse endpoint.
 
@@ -130,9 +130,9 @@ Para que o fluxo de trabalho de formulários receba e manipule mensagens de emai
 
 **Corpo do email de erro:** Permite especificar a primeira linha do corpo de texto das mensagens de email de falha enviadas para esse endpoint.
 
-**Informações de resumo de email:** Cada mensagem de sucesso ou falha inclui uma seção contendo o texto do email original enviado ao servidor de formulários. Essa configuração especifica o texto que aparece acima dessa seção.
+**Informações de resumo de email:** Cada mensagem de sucesso ou falha inclui uma seção contendo o texto original do email enviado ao Forms Server. Essa configuração especifica o texto que aparece acima dessa seção.
 
-**Validar Caixa De Entrada Antes De Criar/Atualizar Este Ponto De Extremidade:** Quando essa opção é selecionada, o servidor de formulários verifica se as configurações SMTP/POP3 estão corretas antes de criar o ponto de extremidade. Quando você clica em Adicionar, é exibida uma mensagem informando se a conta da caixa de entrada é válida. Se essa opção não estiver selecionada, o servidor de formulários AEM criará o endpoint sem validar a caixa de entrada.
+**Validar Caixa De Entrada Antes De Criar/Atualizar Este Ponto De Extremidade:** Quando essa opção é selecionada, o Forms Server verifica se as configurações SMTP/POP3 estão corretas antes de criar o endpoint. Quando você clica em Adicionar, é exibida uma mensagem informando se a conta da caixa de entrada é válida. Se essa opção não estiver selecionada, o AEM Forms Server criará o endpoint sem validar a caixa de entrada.
 
 **Codificação do conjunto de caracteres:** O formato de codificação a ser usado para a mensagem de email. O padrão é UTF-8, que a maioria dos usuários fora do Japão usará. Os usuários em um ambiente japonês podem escolher ISO2022-JP.
 
@@ -206,11 +206,11 @@ Por exemplo, um terminal de email é criado para um serviço que pega um único 
 
 O valor padrão é assíncrono.
 
-**Incluir o corpo do email original como um anexo:** Por padrão, ao enviar um email para o servidor de formulários, o texto original da mensagem é incluído no corpo da mensagem. Para incluir o texto como um anexo, selecione essa opção.
+**Incluir o corpo do email original como um anexo:** Por padrão, ao enviar um email para o Forms Server, o texto original da mensagem é incluído no corpo dela. Para incluir o texto como um anexo, selecione essa opção.
 
 **Usar a linha de assunto original para emails de resultado:** Por padrão, o servidor do Forms usa os valores especificados nas configurações Assunto do email de sucesso e Assunto do email de erro como a linha de assunto ao enviar as mensagens de email de resultado. Para usar a mesma linha de assunto do email original enviado ao servidor, selecione essa opção.
 
-**Assunto do email de sucesso:** Depois de enviar um email para um endpoint de email para iniciar ou continuar um processo, você receberá uma mensagem de email de retorno do servidor de formulários AEM. Se o email for bem-sucedido, você receberá um email de sucesso. Se seu email falhar, você receberá um email de falha informando por que ele falhou. Essa configuração permite especificar a linha de assunto das mensagens de email de sucesso enviadas para esse endpoint.
+**Assunto do email de sucesso:** Depois de enviar um email a um endpoint de email para iniciar ou continuar um processo, você receberá uma mensagem de email de retorno do servidor do AEM Forms. Se o email for bem-sucedido, você receberá um email de sucesso. Se seu email falhar, você receberá um email de falha informando por que ele falhou. Essa configuração permite especificar a linha de assunto das mensagens de email de sucesso enviadas para esse endpoint.
 
 **Corpo do email de sucesso:** Permite especificar o corpo de texto das mensagens de email de sucesso enviadas para esse endpoint.
 
@@ -220,9 +220,9 @@ O valor padrão é assíncrono.
 
 **Corpo do email de erro:** Permite especificar a primeira linha do corpo de texto das mensagens de email de falha enviadas para esse endpoint.
 
-**Informações de resumo de email:** Cada mensagem de sucesso ou falha inclui uma seção contendo o texto do email original enviado ao servidor de formulários. Essa configuração especifica o texto que aparece acima dessa seção.
+**Informações de resumo de email:** Cada mensagem de sucesso ou falha inclui uma seção contendo o texto original do email enviado ao Forms Server. Essa configuração especifica o texto que aparece acima dessa seção.
 
-**Valide a Caixa de entrada antes de criar/atualizar este endpoint:** Quando essa opção é selecionada, o servidor de formulários verifica se as configurações SMTP/POP3 estão corretas antes de criar o ponto de extremidade. Quando você clica em Adicionar, é exibida uma mensagem informando se a conta da caixa de entrada é válida. Se essa opção não estiver selecionada, o servidor de formulários AEM criará o endpoint sem validar a caixa de entrada.
+**Valide a Caixa de entrada antes de criar/atualizar este endpoint:** Quando essa opção é selecionada, o Forms Server verifica se as configurações SMTP/POP3 estão corretas antes de criar o endpoint. Quando você clica em Adicionar, é exibida uma mensagem informando se a conta da caixa de entrada é válida. Se essa opção não estiver selecionada, o AEM Forms Server criará o endpoint sem validar a caixa de entrada.
 
 **Nome da operação:** Esta configuração é obrigatória. Uma lista de operações que podem ser atribuídas ao endpoint de email. A operação selecionada aqui determina quais campos são exibidos nas seções Mapeamentos de Parâmetro de Entrada e Mapeamentos de Parâmetro de Saída.
 

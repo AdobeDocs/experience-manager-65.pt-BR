@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '7661'
+source-wordcount: '7662'
 ht-degree: 1%
 
 ---
@@ -153,7 +153,7 @@ Esta seção descreve técnicas que você pode usar durante o processo de instal
 
 Depois de instalar o AEM Forms no JEE com êxito, é importante manter o ambiente periodicamente de uma perspectiva de segurança.
 
-A seção a seguir descreve em detalhes as diferentes tarefas recomendadas para proteger o servidor de formulários implantado.
+A seção a seguir descreve em detalhes as diferentes tarefas recomendadas para proteger o Forms Server implantado.
 
 ### Segurança do AEM Forms {#aem-forms-security}
 
@@ -169,7 +169,7 @@ O AEM Forms no JEE instala um serviço, por padrão, usando a conta LocalSystem.
 
 Para executar o servidor de aplicativos no qual o AEM Forms no JEE é implantado, usando uma conta não administrativa específica, siga estas instruções:
 
-1. No Microsoft Management Console (MMC), crie um usuário local para o serviço do servidor de formulários para fazer logon como:
+1. No Microsoft Management Console (MMC), crie um usuário local para o serviço Forms Server para fazer logon como:
 
    * Selecionar **Usuário não pode alterar senha**.
    * No **Membro de** , verifique se **Usuários** grupo está listado.
@@ -182,7 +182,7 @@ Para executar o servidor de aplicativos no qual o AEM Forms no JEE é implantado
 1. Clique duas vezes no JBoss para AEM Forms no JEE e interrompa o serviço.
 1. No **Fazer Logon** selecione **Esta conta**, procure a conta de usuário que você criou e digite a senha da conta.
 1. No MMC, abra **Configurações de segurança locais** e selecione **Políticas Locais** > **Atribuição de direitos do usuário**.
-1. Atribua os seguintes direitos à conta de usuário sob a qual o servidor de formulários está sendo executado:
+1. Atribua os seguintes direitos à conta de usuário em que o Forms Server está sendo executado:
 
    * Negar logon pelos Serviços de Terminal
    * Negar logon local
@@ -273,7 +273,7 @@ Você pode desabilitar o acesso remoto a todos os serviços de Armazenamento Con
 
 **Desabilitar todo o acesso anônimo não essencial**
 
-Alguns serviços do servidor de formulários têm operações que podem ser invocadas por um chamador anônimo. Se o acesso anônimo a esses serviços não for necessário, desative-o seguindo as etapas em [Desabilitação de acesso anônimo não essencial a serviços](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
+Alguns serviços do Forms Server têm operações que podem ser chamadas por um chamador anônimo. Se o acesso anônimo a esses serviços não for necessário, desative-o seguindo as etapas em [Desabilitação de acesso anônimo não essencial a serviços](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
 
 #### Alterar a senha padrão do administrador {#change-the-default-administrator-password}
 
@@ -401,7 +401,7 @@ No WebSphere, você pode configurar a segurança integrada somente quando usar u
 
 ### Proteção do acesso a conteúdo confidencial no banco de dados {#protecting-access-to-sensitive-content-in-the-database}
 
-O schema do banco de dados do AEM Forms contém informações confidenciais sobre a configuração do sistema e os processos comerciais e deve estar oculto atrás do firewall. O banco de dados deve ser considerado dentro do mesmo limite de confiança que o servidor de formulários. Para evitar a divulgação de informações e o roubo de dados de negócios, o banco de dados deve ser configurado pelo administrador do banco de dados (DBA) para permitir o acesso somente por administradores autorizados.
+O schema do banco de dados do AEM Forms contém informações confidenciais sobre a configuração do sistema e os processos comerciais e deve estar oculto atrás do firewall. O banco de dados deve ser considerado dentro do mesmo limite de confiança que o Forms Server. Para evitar a divulgação de informações e o roubo de dados de negócios, o banco de dados deve ser configurado pelo administrador do banco de dados (DBA) para permitir o acesso somente por administradores autorizados.
 
 Como precaução adicional, você deve considerar o uso de ferramentas específicas do fornecedor do banco de dados para criptografar colunas em tabelas que contenham os seguintes dados:
 
@@ -537,13 +537,13 @@ Determinados URLs são destacados como aplicações Web voltadas para o usuário
   </tr> 
   <tr> 
    <td><p>/soap/*</p> </td> 
-   <td><p>Página de informações para serviços Web do servidor de formulários</p> </td> 
+   <td><p>Página de informações dos serviços Web do Forms Server</p> </td> 
    <td><p>Não</p> </td> 
    <td><p>Não</p> </td> 
   </tr> 
   <tr> 
    <td><p>/soap/services/*</p> </td> 
-   <td><p>URL do serviço Web para todos os serviços do servidor de formulários</p> </td> 
+   <td><p>URL do serviço da Web para todos os serviços do Forms Server</p> </td> 
    <td><p>Não</p> </td> 
    <td><p>Não</p> </td> 
   </tr> 
@@ -674,7 +674,7 @@ As seguintes características são comuns ao CSRF:
 O AEM Forms no JEE usa o recurso Filtro referenciador para bloquear ataques CSRF. Os termos a seguir são usados nesta seção para descrever o mecanismo de Filtragem do referenciador:
 
 * **Referenciador permitido:** Referenciador é o endereço da página de origem que envia uma solicitação ao servidor. Para páginas ou formulários JSP, os Referenciadores são geralmente a página anterior no histórico de navegação. Normalmente, o referenciador de imagens são as páginas nas quais as imagens são exibidas. Você pode identificar o Referenciador que tem acesso permitido aos recursos do servidor, adicionando-o à lista Referenciador permitido.
-* **Exceções de referenciador permitidas:** Talvez você queira restringir o escopo de acesso de um determinado Referenciador na sua lista de Referenciadores permitidos. Para impor essa restrição, você pode adicionar caminhos individuais desse Referenciador à lista de Exceções permitidas do Referenciador. As solicitações originadas de caminhos na lista Exceções de referenciador permitidas não podem invocar nenhum recurso no servidor de formulários. Você pode definir Exceções de referenciador permitidas para um aplicativo específico e também usar uma lista global de exceções que se aplicam a todos os aplicativos.
+* **Exceções de referenciador permitidas:** Talvez você queira restringir o escopo de acesso de um determinado Referenciador na sua lista de Referenciadores permitidos. Para impor essa restrição, você pode adicionar caminhos individuais desse Referenciador à lista de Exceções permitidas do Referenciador. As solicitações originadas de caminhos na lista Exceções de referenciador permitidas são impedidas de invocar qualquer recurso no Forms Server. Você pode definir Exceções de referenciador permitidas para um aplicativo específico e também usar uma lista global de exceções que se aplicam a todos os aplicativos.
 * **URIs permitidos:** Esta é uma lista de recursos que devem ser atendidos sem verificar o Cabeçalho do referenciador. Recursos, por exemplo, páginas de ajuda, que não resultam em alterações de estado no servidor, podem ser adicionados a esta lista. Os recursos na lista de URIs permitidos nunca são bloqueados pelo Filtro referenciador independentemente de quem seja o Referenciador.
 * **Referenciador nulo:** Uma solicitação de servidor que não está associada a ou não se origina de uma página da Web pai é considerada uma solicitação de um Referenciador nulo. Por exemplo, ao abrir uma nova janela do navegador, digitar um endereço e pressionar Enter, o Referenciador enviado ao servidor será nulo. Um aplicativo de desktop (.NET ou SWING) que faz uma solicitação HTTP para um servidor Web também envia um Referenciador nulo para o servidor.
 
@@ -682,12 +682,12 @@ O AEM Forms no JEE usa o recurso Filtro referenciador para bloquear ataques CSRF
 
 O processo de Filtragem de referenciador pode ser descrito da seguinte maneira:
 
-1. O servidor de formulários verifica o método HTTP usado para invocação:
+1. O Forms Server verifica o método HTTP usado para invocação:
 
-   1. Se for POST, o servidor de formulários executará a verificação do cabeçalho Referenciador.
-   1. Se for GET, o servidor de formulários ignorará a verificação do Referenciador, a menos que *CSRF_CHECK_GETS* está definido como verdadeiro, nesse caso, ele executa a verificação do cabeçalho Referenciador. *CSRF_CHECK_GETS* é especificado na variável *web.xml* arquivo para seu aplicativo.
+   1. Se for POST, o Forms Server executará a verificação do cabeçalho do Referenciador.
+   1. Se for GET, o Forms Server ignorará a verificação do Referenciador, a menos que *CSRF_CHECK_GETS* está definido como verdadeiro, nesse caso, ele executa a verificação do cabeçalho Referenciador. *CSRF_CHECK_GETS* é especificado na variável *web.xml* arquivo para seu aplicativo.
 
-1. Incluir na lista de permissões O servidor de formulários verifica se o URI solicitado existe no arquivo de pesquisa:
+1. O Forms Server verifica se o URI solicitado existe na inclui na lista de permissões:
 
    1. Incluir na lista de permissões Se o URI for selecionado, o servidor aceitará a solicitação.
    1. Incluir na lista de permissões Se o URI solicitado não for reconhecido, o servidor recuperará o Referenciador da solicitação.
@@ -706,7 +706,7 @@ O processo de Filtragem de referenciador pode ser descrito da seguinte maneira:
 
 O AEM Forms no JEE fornece um Filtro referenciador para especificar o Referenciador que tem acesso permitido aos recursos do servidor. Por padrão, o filtro Referenciador não filtra solicitações que usam um método HTTP seguro, por exemplo, GET, a menos que *CSRF_CHECK_GETS* está definido como verdadeiro. Se o número da porta de uma entrada Referenciador permitido for definido como 0, o AEM Forms no JEE permitirá todas as solicitações com Referenciador desse host, independentemente do número da porta. Se nenhum número de porta for especificado, somente as solicitações da porta padrão 80 (HTTP) ou porta 443 (HTTPS) serão permitidas. A Filtragem de referenciador será desativada se todas as entradas na lista Referenciador permitido forem excluídas.
 
-Quando você instala os Serviços de documento pela primeira vez, a lista Referenciador permitido é atualizada com o endereço do servidor no qual os Serviços de documento estão instalados. As entradas do servidor incluem o nome do servidor, o endereço IPv4, o endereço IPv6, se IPv6 estiver habilitado, o endereço de loopback e uma entrada de host local. Os nomes adicionados à lista Referenciador permitido são retornados pelo sistema operacional Host. Por exemplo, um servidor com endereço IP 10.40.54.187 incluirá as seguintes entradas: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Para qualquer nome não qualificado retornado pelo sistema operacional do Host (nomes que não têm endereço IPv4, endereço IPv6 ou nome de domínio qualificado), a inclui na lista de permissões não é atualizada. Modifique a lista Referenciador permitido para se adequar ao seu ambiente empresarial. Não implante o servidor de formulários no ambiente de produção com a lista de Referenciadores permitidos padrão. Após modificar qualquer um dos Referenciadores Permitidos, Exceções de Referenciador ou URIs, reinicie o servidor para que as alterações entrem em vigor.
+Quando você instala os Serviços de documento pela primeira vez, a lista Referenciador permitido é atualizada com o endereço do servidor no qual os Serviços de documento estão instalados. As entradas do servidor incluem o nome do servidor, o endereço IPv4, o endereço IPv6, se IPv6 estiver habilitado, o endereço de loopback e uma entrada de host local. Os nomes adicionados à lista Referenciador permitido são retornados pelo sistema operacional Host. Por exemplo, um servidor com endereço IP 10.40.54.187 incluirá as seguintes entradas: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Para qualquer nome não qualificado retornado pelo sistema operacional do Host (nomes que não têm endereço IPv4, endereço IPv6 ou nome de domínio qualificado), a inclui na lista de permissões não é atualizada. Modifique a lista Referenciador permitido para se adequar ao seu ambiente empresarial. Não implante o Forms Server no ambiente de produção com a lista de Referenciadores permitidos padrão. Após modificar qualquer um dos Referenciadores Permitidos, Exceções de Referenciador ou URIs, reinicie o servidor para que as alterações entrem em vigor.
 
 **Gerenciar lista de referenciadores permitidos**
 
@@ -727,7 +727,7 @@ O AEM Forms no JEE fornece APIs para gerenciar a lista Exceção de referenciado
 
 Consulte * AEM Forms na Referência da API JEE * para obter mais informações sobre as APIs.
 
-Use o ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** lista para Exceções de referenciador permitidas em nível global, ou seja, para definir exceções que são aplicáveis a todos os aplicativos. Esta lista contém apenas URIs com um caminho absoluto (por exemplo, `/index.html`) ou um caminho relativo (por exemplo, `/sample/`). Você também pode anexar uma expressão regular ao final de um URI relativo, por exemplo, `/sample/(.)*`.
+Use o ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** lista para Exceções de Referenciador Permitidas no nível global, ou seja, para definir exceções que sejam aplicáveis a todos os aplicativos. Esta lista contém apenas URIs com um caminho absoluto (por exemplo, `/index.html`) ou um caminho relativo (por exemplo, `/sample/`). Você também pode anexar uma expressão regular ao final de um URI relativo, por exemplo, `/sample/(.)*`.
 
 A variável ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** a ID da lista é definida como uma constante na variável `UMConstants` classe do `com.adobe.idp.um.api` namespace, encontrado em `adobe-usermanager-client.jar`. Você pode usar as APIs do AEM Forms para criar, modificar ou editar essa lista. Por exemplo, para criar a lista Exceções globais permitidas do referenciador, use:
 
@@ -739,7 +739,7 @@ Use o ***CSRF_ALLOWED_REFERER_EXCEPTIONS*** para exceções específicas do apli
 
 **Desabilitar o filtro referenciador**
 
-Se o Filtro referenciador bloquear completamente o acesso ao servidor de formulários e você não puder editar a lista Referenciador permitido, será possível atualizar o script de inicialização do servidor e desativar a Filtragem do referenciador.
+Caso o Filtro referenciador bloqueie completamente o acesso ao Servidor do Forms e você não possa editar a lista Referenciador permitido, é possível atualizar o script de inicialização do servidor e desativar a Filtragem do referenciador.
 
 Inclua o `-Dlc.um.csrffilter.disabled=true` Argumento JAVA no script de inicialização e reinicie o servidor. Certifique-se de excluir o argumento JAVA depois de reconfigurar apropriadamente a lista Referenciador permitido.
 
@@ -749,7 +749,7 @@ Você pode ter criado arquivos WAR personalizados para trabalhar com o AEM Forms
 
 **CSRF_CHECK_GETS** controla a verificação do Referenciador nas solicitações do GET. Se esse parâmetro não estiver definido, o valor padrão será definido como false. Inclua esse parâmetro somente se desejar filtrar suas solicitações do GET.
 
-**CSRF_ALLOWED_REFERER_EXCEPTIONS** é a ID da lista de Exceções do Referenciador Permitido. O Filtro referenciador impede que solicitações originadas de referenciadores na lista identificada pela ID da lista chamem qualquer recurso no servidor de formulários.
+**CSRF_ALLOWED_REFERER_EXCEPTIONS** é a ID da lista de Exceções do Referenciador Permitido. O Filtro referenciador impede que as solicitações originadas de referenciadores na lista identificada pela ID da lista chamem qualquer recurso no Forms Server.
 
 **CSRF_ALLOWED_URIS_LIST_NAME** é a ID da lista de URIs permitidos. O Filtro referenciador não bloqueia solicitações para qualquer um dos recursos na lista identificados pela ID da lista, independentemente do valor do cabeçalho Referenciador na solicitação.
 
@@ -835,7 +835,7 @@ Ao configurar uma arquitetura de rede segura conforme descrito na seção anteri
     <ul> 
      <li><p>Aplicativos cliente de serviços Web, como aplicativos .NET</p> </li> 
      <li><p>Adobe Reader® usa SOAP para AEM Forms em serviços Web JEE</p> </li> 
-     <li><p>Adobe Flash® applications usa SOAP para serviços Web do servidor de formulários</p> </li> 
+     <li><p>Adobe Os aplicativos do Flash® usam SOAP para os serviços Web do Forms Server</p> </li> 
      <li><p>Chamadas de SDK do AEM Forms no JEE quando usadas no modo SOAP</p> </li> 
      <li><p>Ambiente de design do Workbench</p> </li> 
     </ul> </td> 
@@ -995,7 +995,7 @@ A instalação completa do AEM Forms no JEE configura uma conta de serviço, por
 
 #### Executar o servidor de aplicativos usando uma conta não administrativa {#run-the-application-server-using-a-non-administrative-account}
 
-1. No Microsoft Management Console (MMC), crie um usuário local para o serviço do servidor de formulários para fazer logon como:
+1. No Microsoft Management Console (MMC), crie um usuário local para o serviço Forms Server para fazer logon como:
 
    * Selecionar **Usuário não pode alterar senha**.
    * No **Membro de** verifique se o grupo Usuários está listado.
@@ -1003,7 +1003,7 @@ A instalação completa do AEM Forms no JEE configura uma conta de serviço, por
 1. Selecionar **Configurações** > **Ferramentas administrativas** > **Serviços**.
 1. Clique duas vezes no serviço do servidor de aplicativos e pare o serviço.
 1. No **Fazer Logon** selecione **Esta conta**, procure a conta de usuário que você criou e digite a senha da conta.
-1. Na janela Configurações de segurança locais, em Atribuição de direitos de usuário, conceda os seguintes direitos à conta de usuário na qual o servidor de formulários está sendo executado:
+1. Na janela Configurações de segurança locais, em Atribuição de direitos de usuário, conceda os seguintes direitos à conta de usuário na qual o Forms Server está sendo executado:
 
    * Negar logon pelos Serviços de Terminal
    * Negar logon no locallyxx
@@ -1040,7 +1040,7 @@ O AEM Forms no JEE usa o sistema de arquivos das seguintes maneiras:
 * Armazena arquivos no repositório de arquivamento global que são usados para dar suporte aos componentes da solução que estão instalados
 * As pastas monitoradas armazenam arquivos soltos que são usados como entrada para um serviço a partir de um local de pasta do sistema de arquivos
 
-Ao usar pastas monitoradas como uma maneira de enviar e receber documentos com um serviço de servidor de formulários, tome precauções adicionais com a segurança do sistema de arquivos. Quando um usuário solta o conteúdo na pasta monitorada, esse conteúdo é exposto por meio da pasta monitorada. Nesse caso, o serviço não autentica o usuário final real. Em vez disso, ele depende da segurança de nível de ACL e Compartilhamento para ser definida no nível da pasta a fim de determinar quem pode efetivamente chamar o serviço.
+Ao usar pastas monitoradas como uma maneira de enviar e receber documentos com um serviço do Forms Server, tome precauções adicionais com a segurança do sistema de arquivos. Quando um usuário solta o conteúdo na pasta monitorada, esse conteúdo é exposto por meio da pasta monitorada. Nesse caso, o serviço não autentica o usuário final real. Em vez disso, ele depende da segurança de nível de ACL e Compartilhamento para ser definida no nível da pasta a fim de determinar quem pode efetivamente chamar o serviço.
 
 ## Recomendações de segurança específicas para JBoss {#jboss-specific-security-recommendations}
 

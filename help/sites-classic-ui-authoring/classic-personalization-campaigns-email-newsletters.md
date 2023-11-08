@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1105'
 ht-degree: 3%
 
 ---
@@ -152,7 +152,7 @@ Emails/Boletins informativos podem ser publicados em seu serviço de e-mail segu
 
    Se bem-sucedido, o AEM confirma que você pode visualizar o email no ExactTarget ou no Silverpop Engage.
 
-   No caso do ExactTarget, o email publicado pode ser visualizado ao clicar em **Exibir e-mail publicado**. Isso leva você diretamente ao informativo publicado no ExactTarget ([https://members.exacttarget.com/](https://members.exacttarget.com/).).
+   Se houver ExactTarget, o email publicado pode ser visualizado ao clicar em **Exibir e-mail publicado**. Isso leva você diretamente ao informativo publicado no ExactTarget ([https://members.exacttarget.com/](https://members.exacttarget.com/).).
 
 >[!NOTE]
 >

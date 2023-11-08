@@ -2,10 +2,10 @@
 title: Tag de decoração
 description: Quando um componente em uma página da Web é renderizado, um elemento HTML pode ser gerado, vinculando o componente renderizado dentro de si mesmo. Para desenvolvedores, o AEM oferece lógica simples e clara controlando as tags de decoração que envolvem componentes incluídos.
 exl-id: d049ebf1-7fa6-4d2c-86f9-b18e107092ea
-source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 9%
+source-wordcount: '878'
+ht-degree: 10%
 
 ---
 
@@ -22,7 +22,7 @@ Quando um componente em uma página da Web é renderizado, um elemento HTML pode
 Para desenvolvedores, o AEM oferece lógica simples e clara controlando as tags de decoração que envolvem componentes incluídos. Se e como a tag de decoração é renderizada é definida pela combinação de dois fatores, nos quais essa página se aprofundará:
 
 * O próprio componente pode configurar a tag de decoração com um conjunto de propriedades.
-* Os scripts que incluem componentes (HTL, JSP, dispatcher etc.) podem definir os aspectos da tag de decoração com parâmetros de inclusão.
+* Os scripts que incluem componentes (HTL, JSP, dispatcher e assim por diante) podem definir os aspectos da tag de decoração com parâmetros de inclusão.
 
 ## Recomendações {#recommendations}
 

@@ -12,7 +12,7 @@ discoiquuid: db22f775-fab1-4a78-b334-a9c4fa613e43
 docset: aem65
 feature: Mobile Forms
 exl-id: 62ff6306-9989-43b0-abaf-b0a811f0a6a4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '1416'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Assim, reduzir o tamanho dos recursos externos e usar apenas recursos absolutame
 
 * Uso [imagens compactadas](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md). Reduz a atividade de rede e a quantidade de memória necessária para renderizar um formulário. Portanto, o tempo de carregamento do formulário diminui substancialmente.
 * Use a opção de minificação no Gerenciador de configuração do AEM (Gerenciador de biblioteca HTML Day CQ) para compactar arquivos JavaScript e CSS. Para obter detalhes, consulte [Configurações do OSGi](/help/sites-deploying/osgi-configuration-settings.md).
-* Habilitar compactação da Web. Reduz o tamanho das solicitações e respostas originadas de um formulário. Para obter detalhes, consulte [Ajuste de desempenho do servidor de formulários AEM](https://helpx.adobe.com/aem-forms/6-3/performance-tuning-aem-forms.html).
+* Habilitar compactação da Web. Reduz o tamanho das solicitações e respostas originadas de um formulário. Para obter detalhes, consulte [Ajuste de desempenho do AEM Forms Server](https://helpx.adobe.com/aem-forms/6-3/performance-tuning-aem-forms.html).
 
 ## Manter o interesse ativo, mostrar apenas campos obrigatórios  {#keep-the-interest-alive-show-only-required-fields}
 

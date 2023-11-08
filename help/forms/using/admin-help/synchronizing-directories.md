@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7ec0698a-9e6e-48d4-bba2-5a6eee313900
 exl-id: cb642289-4137-4ba7-8bde-0e458c8c94fe
-source-git-commit: 2a2f8538b6554540b546f4d345c0b3c0d3e706f3
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Para sincronizar domínios, você pode optar por fazer uma sincronização manua
 
 A sincronização de diretórios é usada para extrair detalhes dos servidores de diretórios especificados nas configurações de diretório para o banco de dados de Gerenciamento de Usuários. Posteriormente, você também poderá fazer uma sincronização manual se ocorrerem alterações ou atualizações nos servidores de diretório. Por exemplo, você pode fazer uma sincronização manual se usuários e grupos forem adicionados ou se forem feitas alterações na conta de um usuário.
 
-Você também pode definir uma programação de sincronização diária para sincronizar automaticamente o banco de dados do User Management com alterações ou atualizações nos servidores de diretório de origem. No entanto, esteja ciente de que esse processo usa recursos de rede e de servidor. Escolha períodos de pouco uso e evite a programação de sincronizações desnecessárias que imobilizam os recursos do sistema e da rede. Para minimizar sincronizações desnecessárias, use a opção de sincronização imediata.
+Você também pode definir uma programação de sincronização diária para sincronizar automaticamente o banco de dados do User Management com alterações ou atualizações nos servidores de diretório de origem. No entanto, esse processo usa recursos de rede e de servidor. Escolha períodos de pouco uso e evite a programação de sincronizações desnecessárias que imobilizam os recursos do sistema e da rede. Para minimizar sincronizações desnecessárias, use a opção de sincronização imediata.
 
 Você também pode especificar se deseja enviar informações de usuário e grupo para o Adobe LiveCycle Content Services 9 (obsoleto) ao sincronizar domínios.
 

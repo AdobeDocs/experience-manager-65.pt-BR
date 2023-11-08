@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '10692'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Você pode usar a página Gerenciamento de Serviços para definir configuraçõe
 
 ## Configurações do serviço de Fluxo de Trabalho de Auditoria {#audit-workflow-service-settings}
 
-O Workbench oferece a capacidade de registrar instâncias de processos como são executadas em tempo de execução e, em seguida, reproduzi-las para observar o comportamento do processo. (Consulte [Ajuda do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).) Para conservar espaço no sistema de arquivos do servidor de formulários, você pode limitar a quantidade de dados de gravação de processo que está armazenada. Você pode configurar as seguintes propriedades do serviço de Fluxo de trabalho de auditoria ( `AuditWorkflowService`):
+O Workbench oferece a capacidade de registrar instâncias de processos como são executadas em tempo de execução e, em seguida, reproduzi-las para observar o comportamento do processo. (Consulte [Ajuda do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).) Para conservar espaço no sistema de arquivos do Forms Server, você pode limitar a quantidade de dados de gravação de processo armazenados. Você pode configurar as seguintes propriedades do serviço de Fluxo de trabalho de auditoria ( `AuditWorkflowService`):
 
 **maxNumberOfRecordingInstances:** O número máximo de gravações armazenadas. Quando o número máximo é armazenado, a gravação mais antiga é removida do sistema de arquivos quando uma nova gravação é criada. Essa propriedade é útil se você tende a criar muitas gravações e deseja remover gravações antigas automaticamente. O valor padrão é 50.
 
@@ -265,7 +265,7 @@ As seguintes configurações estão disponíveis para o serviço Gerar PDF.
 
 **Tamanho do Pool de OCR:** O tamanho do pool do PaperCaptureService que o PDF Generator usa para OCR. O valor padrão dessa configuração (recomendada para sistemas com um único processador) é 3, que pode ser aumentado em sistemas com vários processadores. Esta configuração é válida somente em sistemas Windows.
 
-**Família De Fontes De Fallback Para Conversões De HTML Para PDF:** O nome da família de fontes a ser usada em documentos PDF quando a fonte usada no HTML original não estiver disponível para o servidor de formulários AEM. Especifique uma família de fontes se você espera converter páginas de HTML que usam fontes indisponíveis. Por exemplo, as páginas criadas em idiomas regionais podem usar fontes indisponíveis.
+**Família De Fontes De Fallback Para Conversões De HTML Para PDF:** O nome da família de fontes a ser usada nos documentos do PDF quando a fonte usada no HTML original não estiver disponível para o AEM Forms Server. Especifique uma família de fontes se você espera converter páginas de HTML que usam fontes indisponíveis. Por exemplo, as páginas criadas em idiomas regionais podem usar fontes indisponíveis.
 
 **Tentar novamente lógica para conversões nativas** Controla as tentativas de geração de PDF se a primeira tentativa de conversão falhar:
 
@@ -283,7 +283,7 @@ Repita a conversão de PDF se o tempo consumido para a primeira tentativa de con
 
 ## Configurações de serviço dos Utilitários ES4 {#guides-es4-utilities-service-settings}
 
-Quando você cria um Guia, alguns recursos, como a definição do Guia, são incorporados ao Guia. Os recursos também podem existir como referências a ativos de aplicativos armazenados localmente ou no servidor de formulários AEM. O Guia não contém dados, e os valores para o local de envio e as entradas não são adequados para todos os ambientes externos.
+Quando você cria um Guia, alguns recursos, como a definição do Guia, são incorporados ao Guia. Os recursos também podem existir como referências aos ativos de aplicativos armazenados localmente ou no servidor do AEM Forms. O Guia não contém dados, e os valores para o local de envio e as entradas não são adequados para todos os ambientes externos.
 
 Na maioria dos casos, os serviços de renderização de Guias padrão são suficientes para preparar um Guia para uso no Workspace ou em outros ambientes externos. (Na visualização Serviços, no Workbench, o serviço padrão é Guias (sistema)/Processos/Guia de renderização - 1.0.) O serviço do Guia de utilitários ( `GuidesUtility`) permite criar um processo personalizado para renderizar um Guia, se necessário.
 
@@ -340,7 +340,7 @@ O serviço JDBC ( `JdbcService`) permite que os processos interajam com bancos d
 
 A configuração a seguir está disponível para o serviço JDBC.
 
-**datasourceName:** Um valor de string que representa o nome JNDI da origem de dados a ser usada para conexão com o servidor de banco de dados. A fonte de dados deve ser definida no servidor de aplicativos que hospeda o servidor de formulários. O valor padrão é o nome JNDI da fonte de dados para o banco de dados de formulários AEM.
+**datasourceName:** Um valor de string que representa o nome JNDI da origem de dados a ser usada para conexão com o servidor de banco de dados. A fonte de dados deve ser definida no servidor de aplicativos que hospeda o Forms Server. O valor padrão é o nome JNDI da fonte de dados para o banco de dados de formulários AEM.
 
 ## Configurações do serviço JMS {#jms-service-settings}
 
@@ -482,7 +482,7 @@ As seguintes configurações estão disponíveis para o serviço de configuraç�
 
 **Tempo limite de conversão do servidor:** O tempo limite máximo de conversão de trabalho (em segundos) para o serviço Generate PDF e o serviço Distiller. Essa configuração limita o tempo limite máximo de conversão que pode ser especificado no arquivo config.xml e nas páginas de console de administração para o PDF Generator. O valor padrão é 270.
 
-**Tempo limite global do servidor:** Ao executar conversões de PDF, um servidor de formulários considera o tempo limite. Configure o valor de tempo limite para resolver o problema.
+**Tempo limite global do servidor:** Ao executar conversões de PDF, um servidor Forms considera o tempo limite. Configure o valor de tempo limite para resolver o problema.
 
 **Prefixo das opções de trabalho:** Um prefixo usado pelo serviço Gerar PDF para anexar uma pequena string aos arquivos de opções de trabalho criados temporariamente para uso pelo Acrobat Distiller. O valor padrão é pdfg.
 
@@ -704,7 +704,7 @@ Em uma configuração de cluster, o tamanho do lote de um endpoint de pasta moni
 
 **Substituir nomes de arquivo duplicados:** Uma string booleana que especifica se a pasta monitorada substitui nomes de arquivo de resultados duplicados e se os documentos preservados com o mesmo nome devem ser substituídos.
 
-**Preservar pasta:** O valor padrão para a pasta de preservação. Esta pasta é usada para copiar os arquivos de origem em caso de processamento bem-sucedido da entrada. Esse valor pode ser um caminho vazio, relativo ou absoluto com um padrão de arquivo, conforme descrito na configuração Pasta de resultados.
+**Preservar pasta:** O valor padrão para a pasta de preservação. Esta pasta é usada para copiar os arquivos de origem em se houver um processamento bem-sucedido da entrada. Esse valor pode ser um caminho vazio, relativo ou absoluto com um padrão de arquivo, conforme descrito na configuração Pasta de resultados.
 
 **Pasta com falha:** O nome da pasta onde os arquivos com falha são copiados. Esse valor pode ser um caminho vazio, relativo ou absoluto com um padrão de arquivo, conforme descrito na configuração Pasta de resultados.
 
@@ -751,11 +751,11 @@ O serviço Web interage com os serviços Web enviando e recebendo mensagens SOAP
 
 As configurações a seguir estão disponíveis para o serviço Web.
 
-**Armazenamento de chaves:** O caminho completo do arquivo de armazenamento de chaves que contém a chave privada a ser usada para autenticação. O servidor de formulários deve poder acessar o arquivo.
+**Armazenamento de chaves:** O caminho completo do arquivo de armazenamento de chaves que contém a chave privada a ser usada para autenticação. O Forms Server deve ser capaz de acessar o arquivo.
 
 **Senha da chave de armazenamento:** A senha do arquivo de armazenamento de chaves.
 
-**Tipo de armazenamento de chave:** O tipo de armazenamento de chaves. Não forneça nenhum valor para usar o tipo de armazenamento de chaves padrão que está configurado para a JVM que executa o servidor de formulários. Caso contrário, forneça um dos seguintes valores:
+**Tipo de armazenamento de chave:** O tipo de armazenamento de chaves. Não forneça nenhum valor para usar o tipo de armazenamento de chaves padrão configurado para a JVM que executa o Forms Server. Caso contrário, forneça um dos seguintes valores:
 
 * jks
 * pkcs12
@@ -766,7 +766,7 @@ As configurações a seguir estão disponíveis para o serviço Web.
 
 **Senha do armazenamento de confiança:** A senha do arquivo truststore.
 
-**Tipo de armazenamento de confiança:** O tipo de truststore. Não forneça nenhum valor para usar o tipo de armazenamento de chaves padrão que está configurado para a JVM que executa o servidor de formulários. Caso contrário, forneça um dos seguintes valores:
+**Tipo de armazenamento de confiança:** O tipo de truststore. Não forneça nenhum valor para usar o tipo de armazenamento de chaves padrão configurado para a JVM que executa o Forms Server. Caso contrário, forneça um dos seguintes valores:
 
 * jks
 * pkcs12
@@ -779,11 +779,11 @@ O serviço de transformação XSLT ( `XSLTService`) permite que os processos apl
 
 A configuração a seguir está disponível para o serviço de transformação XSLT.
 
-**Nome da fábrica:** O nome totalmente qualificado da classe Java a ser usada para executar transformações XSLT. Se nenhum valor for especificado, a fábrica padrão configurada na Java Virtual Machine que executa o servidor de formulários será usada.
+**Nome da fábrica:** O nome totalmente qualificado da classe Java a ser usada para executar transformações XSLT. Se nenhum valor for especificado, a fábrica padrão configurada na Java Virtual Machine que executa o Forms Server será usada.
 
 ## Modificando configurações de segurança para um serviço {#modifying-security-settings-for-a-service}
 
-o servidor do forms permite definir configurações de segurança para cada serviço, o que permite configurar o controle de acesso refinado em um nível de serviço por serviço.
+O Forms Server permite definir configurações de segurança para cada serviço, o que permite configurar o controle de acesso refinado em um nível de serviço por serviço.
 
 Os perfis de segurança padrão são instalados, que podem ser configurados para atender às necessidades do sistema. Cada perfil de segurança tem um domínio associado e é criado no nível do usuário ou no nível do grupo.
 

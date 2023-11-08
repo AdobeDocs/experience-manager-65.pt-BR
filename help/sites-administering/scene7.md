@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '5484'
+source-wordcount: '5483'
 ht-degree: 1%
 
 ---
@@ -383,7 +383,7 @@ Quando um ativo é adicionado ao Experience Manager Assets, ele é automaticamen
 
 1. Selecione o ícone de Experience Manager e navegue até **[!UICONTROL Implantação]** > **[!UICONTROL Cloud Service]**.
 1. No cabeçalho Dynamic Media, em Configurações disponíveis, selecione **[!UICONTROL dms7 (Dynamic Media)]**).
-1. Selecione o **[!UICONTROL Avançado]** , selecione a **[!UICONTROL Ativar carregamento automático]** e selecione **[!UICONTROL OK]**. Agora é necessário configurar o fluxo de trabalho do Ativo DAM para incluir o upload para o Dynamic Media Classic.
+1. Selecione o **[!UICONTROL Avançado]** , selecione a **[!UICONTROL Ativar carregamento automático]** e selecione **[!UICONTROL OK]**. Você deve configurar o fluxo de trabalho do Ativo DAM para incluir o upload para o Dynamic Media Classic.
 
    >[!NOTE]
    >

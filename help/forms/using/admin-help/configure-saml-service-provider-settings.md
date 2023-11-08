@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1169d0d1-cbfb-486b-acca-9b9de3d410dc
 exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Para obter uma explicação sobre SAML, consulte [Visão geral técnica da Secur
 
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Configuração > Configurações do Provedor de serviço SAML.
 1. Na caixa ID de entidade do provedor de serviços, digite um ID exclusivo para usar como um identificador para a implementação do provedor de serviços dos formulários AEM. Você também especifica esse identificador exclusivo ao configurar seu IDP (por exemplo, `um.lc.com`.) Você também pode usar o URL usado para acessar formulários AEM (por exemplo, `https://AEMformsserver`).
-1. Na caixa URL de base do provedor de serviços, digite o URL de base do seu servidor de formulários (por exemplo, `https://AEMformsserver:8080`).
+1. Na caixa URL de base do provedor de serviços, digite o URL de base do seu servidor Forms (por exemplo, `https://AEMformsserver:8080`).
 1. (Opcional) Para permitir que os formulários AEM enviem solicitações de autenticação assinadas ao IDP, execute as seguintes tarefas:
 
    * Use o Gerenciador de Confiança para importar uma credencial no formato PKCS #12 com a Credencial de assinatura de documento selecionada como o Tipo de armazenamento de confiança. (Consulte [Gerenciar credenciais locais](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials).)

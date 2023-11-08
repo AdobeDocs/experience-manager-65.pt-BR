@@ -1,20 +1,16 @@
 ---
 title: Cálculo de dados de formulário
-seo-title: Calculating Form Data
 description: Use o serviço Forms para calcular os valores que um usuário insere em um formulário e exibir os resultados. O serviço Forms calcula os valores usando a API Java e a API de serviço da Web.
-seo-description: Use the Forms service to calculate values that a user enters into a form and display the results. Forms service calculates the values using the Java API and Web Service API.
-uuid: ccd85bc7-8ccc-44d9-9424-dfc1f603e688
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
-discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1876'
 ht-degree: 1%
 
 ---
@@ -86,7 +82,7 @@ A sintaxe do script nesse design de formulário é a seguinte:
      NumericField3 = NumericField2 + NumericField1
 ```
 
-Neste design de formulário, o botão Calcular é um botão de comando, e o script está no do `Click` evento. Quando um usuário insere valores nos dois primeiros campos (NumericField1 e NumericField2) e clica no botão Calcular, o formulário é enviado ao serviço do Forms, onde o script é executado. O serviço Forms renderiza o formulário de volta para o dispositivo cliente com os resultados do cálculo exibidos no campo NumericField3.
+Neste design de formulário, o botão Calcular é um botão de comando e o script está no `Click` evento. Quando um usuário insere valores nos dois primeiros campos (NumericField1 e NumericField2) e clica no botão Calcular, o formulário é enviado ao serviço do Forms, onde o script é executado. O serviço Forms renderiza o formulário de volta para o dispositivo cliente com os resultados do cálculo exibidos no campo NumericField3.
 
 >[!NOTE]
 >
@@ -163,7 +159,7 @@ Calcule dados de formulário usando a API do Forms (Java):
 1. Gravar o fluxo de dados do formulário de volta no navegador da Web do cliente
 
    * Criar um `javax.servlet.ServletOutputStream` objeto usado para enviar um fluxo de dados de formulário para o navegador da web cliente.
-   * Criar um `com.adobe.idp.Document` ao invocar o `FormsResult` object&#39;s `getOutputContent` método.
+   * Criar um `com.adobe.idp.Document` ao invocar o `FormsResult` do objeto `getOutputContent` método.
    * Criar um `java.io.InputStream` ao invocar o `com.adobe.idp.Document` do objeto `getInputStream` método.
    * Crie uma matriz de bytes e preencha-a com o fluxo de dados de formulário chamando o `InputStream` do objeto `read` e transmitindo a matriz de bytes como um argumento.
    * Chame o `javax.servlet.ServletOutputStream` do objeto `write` para enviar o fluxo de dados de formulário para o navegador web cliente. Passe a matriz de bytes para o `write` método.

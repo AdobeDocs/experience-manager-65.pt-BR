@@ -7,10 +7,10 @@ activity: setup
 audience: administrator
 feature: Commerce Integration Framework
 exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '384'
-ht-degree: 18%
+ht-degree: 14%
 
 ---
 
@@ -36,11 +36,11 @@ Para conectar um site de AEM e os Componentes principais da CIF do AEM a uma vis
 
 3. Crie uma configuração secundária da configuração do CIF Cloud Service seguindo estas etapas:
 
-   * No AEM, acesse Ferramentas -> Geral -> [Navegador de configuração](/help/sites-administering/configurations.md#using-configuration-browser)
+   * No AEM, acesse Ferramentas > Geral > [Navegador de configuração](/help/sites-administering/configurations.md#using-configuration-browser)
    * Selecione a configuração básica que você criou
    * Crie uma configuração usando as etapas descritas no ponto 2 acima
 
-   Essa nova configuração é criada como uma configuração secundária da base. Agora você pode acessar Ferramentas -> Geral -> Navegador de configuração e criar as configurações.
+   Essa nova configuração é criada como uma configuração secundária da base. Agora você pode acessar Ferramentas > Geral > Navegador de configuração e criar as configurações.
 
    >[!TIP]
    >

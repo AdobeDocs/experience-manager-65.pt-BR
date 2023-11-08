@@ -9,9 +9,9 @@ content-strategy: max-2018
 docset: aem65
 role: Admin
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
-source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1734'
 ht-degree: 2%
 
 ---
@@ -27,19 +27,19 @@ O utilitário de Migração converte as variáveis [Ativos adaptáveis do Forms]
 
 >[!NOTE]
 >
->No caso de um upgrade fora do local, para ativos do Gerenciamento de correspondências, é possível executar a migração toda vez que você importar os ativos. Para a migração do Gerenciamento de correspondência, é necessário ter o Pacote de compatibilidade do Forms instalado.
+>Se houver uma atualização fora do local, para ativos do Gerenciamento de correspondências, você poderá executar a migração toda vez que importar os ativos. Para a migração do Gerenciamento de correspondência, é necessário ter o Pacote de compatibilidade do Forms instalado.
 
 ## Abordagem da migração {#approach-to-migration}
 
 Você pode [atualização](../../forms/using/upgrade.md) para a versão mais recente do AEM Forms 6.5 do AEM Forms 6.4, 6.3 ou 6.2, ou uma nova instalação. Dependendo de você ter atualizado sua instalação anterior ou executado uma nova instalação, é necessário executar um dos seguintes procedimentos:
 
-**No caso de uma atualização no local**
+**Se houver uma atualização no local**
 
 Se você tiver executado uma atualização no local, a instância atualizada já terá os ativos e os documentos. No entanto, antes de usar os ativos e documentos, instale o [Pacote de compatibilidade do AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR) (inclui pacote de Compatibilidade do Gerenciamento de correspondência)
 
 Em seguida, você deve atualizar os ativos e documentos de [execução do utilitário de Migração](#runningmigrationutility).
 
-**No caso de uma instalação fora do local**
+**Se houver uma instalação fora do local**
 
 Se for uma instalação fora do local (nova), antes de usar os ativos e documentos, você deverá instalar o [Pacote de compatibilidade do AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR) (inclui o pacote de Compatibilidade do Gerenciamento de correspondência).
 

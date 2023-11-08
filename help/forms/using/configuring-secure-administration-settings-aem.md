@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 role: Admin
 exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -68,7 +68,7 @@ Conclua este procedimento usando a página da Web Aplicativos e Serviços no Con
 
 ## Desabilitação de acesso anônimo não essencial a serviços {#disabling-non-essential-anonymous-access-to-services}
 
-Alguns serviços do servidor de formulários permitem a invocação não autenticada (anônima) para algumas operações. Isso significa que uma ou mais operações expostas pelo serviço podem ser chamadas como qualquer usuário autenticado ou como nenhum usuário autenticado.
+Alguns serviços do Forms Server permitem a invocação não autenticada (anônima) para algumas operações. Isso significa que uma ou mais operações expostas pelo serviço podem ser chamadas como qualquer usuário autenticado ou como nenhum usuário autenticado.
 
 1. Faça logon no console de administração digitando o seguinte URL em um navegador da Web:
 

@@ -2,10 +2,10 @@
 title: Sua Caixa de entrada para gerenciar tarefas
 description: Gerenciamento de tarefas com a caixa de entrada no Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 43%
+source-wordcount: '1143'
+ht-degree: 41%
 
 ---
 
@@ -44,7 +44,7 @@ Você recebe essas notificações em sua própria caixa de entrada, onde pode vi
 
 ## Caixa de entrada no cabeçalho {#inbox-in-the-header}
 
-Em qualquer um dos consoles, o número atual de itens na sua caixa de entrada é mostrado no cabeçalho. O indicador também pode ser aberto para fornecer acesso rápido às páginas que necessitam de ações ou acesso à caixa de entrada:
+Em qualquer um dos consoles, o número atual de itens na sua caixa de entrada é mostrado no cabeçalho. O indicador também pode ser aberto para fornecer acesso rápido às páginas que exigem ações ou acesso à caixa de entrada:
 
 ![wf-80](assets/wf-80.png)
 

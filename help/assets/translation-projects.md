@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1869'
+source-wordcount: '1867'
 ht-degree: 14%
 
 ---
@@ -234,7 +234,7 @@ Se você usar essa opção, o conjunto de ativos será adicionado a um projeto d
 
 ## Criar cópias temporárias de idioma {#creating-temporary-language-copies}
 
-Quando você executa um fluxo de trabalho de tradução para atualizar uma cópia de idioma com versões editadas de ativos originais, a cópia de idioma existente é preservada até que você aprove o(s) ativo(s) traduzido(s). [!DNL Adobe Experience Manager Assets] O armazena os ativos recém-traduzidos em um local temporário e atualiza a cópia de idioma existente depois que você aprova explicitamente os ativos. Se você rejeitar os ativos, a cópia de idioma permanecerá inalterada.
+Ao executar um fluxo de trabalho de tradução para atualizar uma cópia de idioma com versões editadas de ativos originais, a cópia de idioma existente é preservada até que você aprove os ativos traduzidos. [!DNL Adobe Experience Manager Assets] O armazena os ativos recém-traduzidos em um local temporário e atualiza a cópia de idioma existente depois que você aprova explicitamente os ativos. Se você rejeitar os ativos, a cópia de idioma permanecerá inalterada.
 
 1. Clique na pasta raiz de código-fonte em **[!UICONTROL Cópias de idioma]** para o qual você já criou uma cópia de idioma e clique em **[!UICONTROL Revelar no Assets]** para abrir a pasta no [!DNL Experience Manager Assets].
 

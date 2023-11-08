@@ -12,10 +12,10 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2693'
-ht-degree: 37%
+source-wordcount: '2694'
+ht-degree: 38%
 
 ---
 
@@ -320,7 +320,7 @@ A tabela a seguir descreve as propriedades que você pode configurar:
 
 Várias propriedades e tipos de nó são excluídos por padrão. Eles são definidos na configuração OSGi da **Ação de atualização de conteúdo do MSM CQ**, em **Propriedades da página excluída**.
 
-Por padrão, as propriedades que correspondem às seguintes expressões regulares são excluídas (ou seja, não atualizadas) na implantação:
+Por padrão, as propriedades que correspondem às seguintes expressões regulares são excluídas (ou seja, não são atualizadas) na implantação:
 
 ![Ação de atualização de conteúdo do MSM CQ](assets/chlimage_1.png)
 

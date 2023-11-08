@@ -2,10 +2,10 @@
 title: Publicação de páginas de conteúdo
 description: Saiba como publicar páginas de conteúdo no Adobe Experience Manager 6.5.
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 69%
+source-wordcount: '1662'
+ht-degree: 70%
 
 ---
 
@@ -76,7 +76,7 @@ Se você estiver editando uma página, ela poderá ser publicada diretamente do 
 
 >[!NOTE]
 >
->A publicação por meio do editor é um processo superficial, ou seja, apenas as páginas selecionadas são publicadas, sem incluir páginas filhas.
+>A publicação por meio do editor é um processo superficial, ou seja, somente as páginas selecionadas são publicadas, sem incluir páginas filhas.
 
 >[!NOTE]
 >
@@ -107,7 +107,7 @@ Para publicar uma página com a Publicação rápida:
 
 >[!NOTE]
 >
->A Publicação rápida é uma publicação superficial, ou seja, apenas as páginas selecionadas são publicadas, sem incluir páginas secundárias.
+>A Publicação rápida é uma publicação superficial, ou seja, somente a(s) página(s) selecionada(s) é(são) publicada(s), mas qualquer página secundária que houver não será.
 
 #### Gerenciar publicação    {#manage-publication}
 

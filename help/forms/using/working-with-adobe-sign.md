@@ -11,9 +11,9 @@ discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3935'
+source-wordcount: '3936'
 ht-degree: 1%
 
 ---
@@ -201,7 +201,7 @@ Você pode ter apenas um ou vários signatários para um formulário adaptável.
 
    * **[!UICONTROL A pessoa que assina e que preenche o formulário são a mesma pessoa?]:** Selecionar **Sim**, se o preenchimento do formulário e o primeiro signatário forem a mesma pessoa. Se a opção estiver definida como **Não,** em seguida, não use o componente etapa de assinatura no formulário adaptável. Se o formulário contiver um componente Etapa de assinatura, o campo será automaticamente definido como Sim.
 
-   * **[!UICONTROL Endereço de e-mail do assinante]:** Especifique o endereço de email do signatário. O signatário recebe para ser assinados documentos/formulários no endereço de email especificado. Você pode optar por usar um endereço de email fornecido em um campo de formulário, no perfil de usuário AEM do usuário conectado ou inserir manualmente um endereço de email. É uma etapa obrigatória. Verifique se o endereço de email do primeiro signatário ou do único signatário (no caso de um signatário único) não é idêntico a [!DNL Adobe Sign] conta usada para configurar os serviços em nuvem AEM.
+   * **[!UICONTROL Endereço de e-mail do assinante]:** Especifique o endereço de email do signatário. O signatário recebe para ser assinados documentos/formulários no endereço de email especificado. Você pode optar por usar um endereço de email fornecido em um campo de formulário, no perfil de usuário AEM do usuário conectado ou inserir manualmente um endereço de email. É uma etapa obrigatória. Verifique se o endereço de email do primeiro signatário ou do único signatário (se houver um único signatário) não é idêntico a [!DNL Adobe Sign] conta usada para configurar os serviços em nuvem AEM.
 
    * **[!UICONTROL Método de autenticação do assinante]:** Especifique o método para autenticar um usuário antes de abrir um formulário para assinatura. Você pode escolher entre telefone, base de conhecimento e autenticação com base na identidade social. Para o Adobe Acrobat Sign Solutions for Government, somente as opções de autenticação por telefone e com base em conhecimento estão disponíveis.
 
@@ -355,7 +355,7 @@ Quando [!DNL Adobe Sign] for configurado para um formulário adaptável, o servi
 * Verifique se o aplicativo da API está ativado [!DNL Adobe Sign] servidor usado para configurar [!DNL Adobe Sign] O serviço em nuvem tem as permissões necessárias.
 * Se você estiver usando vários [!DNL Adobe Sign] Cloud Services, aponte para **[!UICONTROL URL do OAuth]** de todos os serviços para a mesma **[!UICONTROL Fragmento do Adobe Sign]**.
 
-* Use endereços de email separados para configurar [!DNL Adobe Sign] e para o primeiro signatário e o signatário único. O endereço de email do primeiro signatário ou do único signatário (no caso do signatário único) não pode ser idêntico a [!DNL Adobe Sign] conta usada para configurar os serviços em nuvem AEM.
+* Use endereços de email separados para configurar [!DNL Adobe Sign] e para o primeiro signatário e o signatário único. O endereço de email do primeiro signatário ou do único signatário (se houver um signatário único) não pode ser idêntico a [!DNL Adobe Sign] conta usada para configurar os serviços em nuvem AEM.
 
 ### AEM [!DNL Forms] fluxo de trabalho configurado para um [!DNL Adobe Sign] o formulário adaptável ativado não inicia {#adobe-sign-aem-form-workflow-failures}
 

@@ -1,16 +1,12 @@
 ---
 title: Adicionando anexos
-seo-title: Adding attachments
 description: Adicione fotografias e anotações como anotações à sua tarefa no aplicativo AEM Forms
-seo-description: Add photographs and scribble notes as annotations to your task in the AEM Forms app
-uuid: 3d2738b4-fd43-44ec-8eaf-a2ad4b7e5af5
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: d5976ed2-4482-495c-bf77-6d192379cfef
 docset: aem65
 exl-id: 82282e2d-63a1-47e9-b2ec-f50a4bd32bd3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 0%
@@ -34,6 +30,7 @@ As opções são:
 >[!NOTE]
 >
 >Os anexos adicionados por um usuário ficam visíveis para outros usuários do aplicativo AEM Forms. Outros usuários não podem excluir anexos adicionados por um usuário.
+>
 
 ### A tela Attachments {#the-attachments-screen}
 
@@ -88,4 +85,4 @@ Os anexos para formulários móveis sincronizados com os servidores OSGi da AEM 
 
 Os anexos no nível do formulário não são compatíveis com formulários adaptáveis carregados no aplicativo de um servidor OSGi do AEM Forms. Para anexar imagens ou notas de texto, ative os anexos em nível de campo no formulário ao criá-lo. Arraste e solte o componente de anexo de arquivo do navegador de componentes no campo.
 
-No caso de formulários adaptáveis, é possível visualizar os arquivos anexados no documento de registro (DoR). Consulte [Gerar documento de registro para formulários adaptáveis não XFA](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+Se houver formulários adaptáveis, você poderá visualizar os arquivos anexados no documento de registro (DoR). Consulte [Gerar documento de registro para formulários adaptáveis não XFA](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).

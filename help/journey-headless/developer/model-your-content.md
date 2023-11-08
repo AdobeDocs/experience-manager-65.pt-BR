@@ -2,10 +2,10 @@
 title: Como modelar seu conteúdo
 description: Nesta parte da jornada do desenvolvedor do AEM Headless, saiba como modelar o conteúdo para a entrega do AEM Headless usando a modelagem de conteúdo com modelos de fragmento de conteúdo e fragmentos de conteúdo.
 exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1809'
-ht-degree: 69%
+ht-degree: 68%
 
 ---
 
@@ -206,7 +206,7 @@ O tipo de dados pode ser configurado para permitir que os autores de fragmento:
 
 ### Criar Modelos de fragmentos do conteúdo {#creating-content-fragment-models}
 
-No início, você deve ativar os Modelos de fragmentos de conteúdo no site. Essa ativação é feita no Navegador de configuração; em Ferramentas -> Geral -> Navegador de configuração. Você pode optar por configurar a entrada global ou criar uma configuração. Por exemplo:
+No início, você deve ativar os Modelos de fragmentos de conteúdo no site. Essa ativação é feita no Navegador de configuração; em Ferramentas > Geral > Navegador de configuração. Você pode optar por configurar a entrada global ou criar uma configuração. Por exemplo:
 
 ![Definir configuração](assets/cfm-configuration.png)
 
@@ -214,7 +214,7 @@ No início, você deve ativar os Modelos de fragmentos de conteúdo no site. Ess
 >
 >Consulte Recursos adicionais - Fragmentos de conteúdo no navegador de configuração
 
-Em seguida, os Modelos de fragmentos de conteúdo podem ser criados e a estrutura definida. Isso pode ser feito em Ferramentas -> Ativos -> Modelos de fragmento de conteúdo. Por exemplo:
+Em seguida, os Modelos de fragmentos de conteúdo podem ser criados e a estrutura definida. Isso pode ser feito em Ferramentas > Ativos > Modelos de fragmento de conteúdo. Por exemplo:
 
 ![Modelo de fragmentos do conteúdo](assets/cfm-model.png)
 
@@ -228,7 +228,7 @@ Fragmentos de conteúdo são sempre baseados em um Modelo de fragmento de conte�
 
 ### Seleção do modelo apropriado {#select-model}
 
-A primeira etapa para realmente criar o conteúdo é criar um Fragmento de conteúdo. Isso é feito usando Criar -> Fragmento de conteúdo, na pasta requerida em Ativos -> Arquivos. O assistente orienta você pelas etapas.
+A primeira etapa para realmente criar o conteúdo é criar um Fragmento de conteúdo. Isso é feito usando Criar > Fragmento de conteúdo na pasta necessária em Ativos > Arquivos. O assistente orienta você pelas etapas.
 
 Um Fragmento de conteúdo é baseado em um Modelo de fragmento de conteúdo específico, que pode ser selecionado como a primeira etapa do processo de criação.
 

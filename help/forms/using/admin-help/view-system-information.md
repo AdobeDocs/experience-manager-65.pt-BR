@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d51460d9-c96c-4661-b93e-e015427878ab
 exl-id: 27a2e81c-47b0-4de8-95bd-7cb34b9450da
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 0%
@@ -51,9 +51,9 @@ O painel esquerdo da guia Sistema exibe as seguintes informações sobre o servi
 
 **Tempo de compilação:** O tempo gasto na compilação.
 
-**Número de Threads Ativos:** O número total de threads presentes atualmente no sistema de formulários AEM.
+**Número de Threads ao vivo:** O número total de threads presentes atualmente no sistema de formulários AEM.
 
-**Número de Pico de Threads:** Maior número de threads ativos já registrados no sistema.
+**Número de pico de Threads:** Maior número de threads ativos já registrados no sistema.
 
 **Número de classes carregadas:** Número de classes carregadas na JVM.
 
@@ -63,9 +63,9 @@ O painel esquerdo da guia Sistema exibe as seguintes informações sobre o servi
 
 **Heap máximo:** A quantidade máxima de heap que foi usada.
 
-**Nome do sistema operacional:** O nome do sistema operacional em execução no servidor de formulários AEM.
+**Nome do sistema operacional:** O nome do sistema operacional em execução no servidor do AEM Forms.
 
-**Versão do sistema operacional:** Número da versão do sistema operacional em execução no servidor de formulários AEM.
+**Versão do sistema operacional:** Número da versão do sistema operacional em execução no AEM Forms Server.
 
 **Arco do sistema operacional:** A arquitetura do sistema operacional em que a JVM está sendo executada.
 

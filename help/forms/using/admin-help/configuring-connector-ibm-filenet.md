@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: be4994de-12f8-436e-926a-49a6783b006e
 exl-id: f4045df5-a35b-41d7-910e-971017148597
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 1%
@@ -48,7 +48,7 @@ O IBM FileNet P8 Content Engine fornece serviços de software para gerenciar con
 1. Na caixa Local do Arquivo de Criptografia, digite o caminho para o arquivo de criptografia:
 
    * Se você selecionou Limpar como o esquema de proteção de credencial, essa palavra-chave e seu valor serão ignorados.
-   * Se você selecionou Simétrico como esquema de proteção de credencial, o caminho inserido aponta para o local de um arquivo de criptografia no servidor de formulários que contém as chaves criptográficas a serem usadas.
+   * Se você selecionou Simétrico como esquema de proteção de credencial, o caminho inserido aponta para o local de um arquivo de criptografia no Forms Server que contém as chaves criptográficas a serem usadas.
 
 1. Na caixa Armazenamento de objetos padrão, digite o conector de armazenamento de objetos ao qual o AEM Forms se conecta por padrão.
 1. Na caixa Nome do Usuário, informe o nome de um usuário que tenha direitos de acesso ao armazenamento de objetos default especificado na etapa anterior.

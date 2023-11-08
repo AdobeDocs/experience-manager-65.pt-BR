@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
 exl-id: 1eed754e-9a7d-4b65-a929-757fc962614d
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1255'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ O Sling Resource Merger fornece serviços para acessar e mesclar recursos. Ela f
 
 Com o Sling Resource Merger, os recursos e/ou propriedades de sobreposição/substituição são mesclados com os recursos/propriedades originais:
 
-* O conteúdo da definição personalizada tem uma prioridade mais alta que a do original (ou seja, ela *sobreposições* ou *sobreposições* it).
+* O conteúdo da definição personalizada tem uma prioridade mais alta do que a original (ou seja, ela *sobreposições* ou *sobreposições* it).
 
 * Se necessário, [propriedades](#properties) definido na personalização, indique como o conteúdo mesclado do original deve ser usado.
 
@@ -62,7 +62,7 @@ As metas para usar a Fusão de recursos do Sling no AEM são:
 >
 >O método recomendado para configuração e outras alterações é:
 >
->1. Recriar o item necessário (ou seja, como ele existe em `/libs`) em `/apps`
+>1. Recrie o item necessário (ou seja, como ele existe em `/libs`) em `/apps`
 >
 >1. Fazer alterações em `/apps`
 >

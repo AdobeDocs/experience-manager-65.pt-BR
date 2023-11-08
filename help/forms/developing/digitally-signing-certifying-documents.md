@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '17029'
+source-wordcount: '17027'
 ht-degree: 0%
 
 ---
@@ -351,7 +351,7 @@ Você pode modificar campos de assinatura que estão em um documento PDF usando 
 
 A *dicionário de bloqueio de campo* especifica uma lista de campos que são bloqueados quando o campo de assinatura é assinado. Um campo bloqueado impede que os usuários façam alterações no campo. A *dicionário de valor de seed* contém informações de restrição usadas no momento em que a assinatura é aplicada. Por exemplo, você pode alterar permissões que controlam as ações que podem ocorrer sem invalidar uma assinatura.
 
-Ao modificar um campo de assinatura existente, você pode fazer alterações no documento PDF para refletir as necessidades comerciais em alteração. Por exemplo, um novo requisito comercial pode exigir o bloqueio de todos os campos do documento depois que ele for assinado.
+Ao modificar um campo de assinatura existente, você pode alterar o documento PDF para refletir as necessidades comerciais em alteração. Por exemplo, um novo requisito comercial pode exigir o bloqueio de todos os campos do documento depois que ele for assinado.
 
 Esta seção explica como modificar um campo de assinatura alterando os valores do dicionário de bloqueio de campo e do dicionário de valor de seed. As alterações feitas no dicionário de bloqueio de campo de assinatura resultam no bloqueio de todos os campos no documento PDF quando um campo de assinatura é assinado. As alterações feitas no dicionário do valor de propagação proíbem tipos específicos de alterações no documento.
 

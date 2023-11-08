@@ -1,19 +1,15 @@
 ---
 title: Criação de conteúdo direcionado usando o modo Direcionar
-seo-title: Authoring Targeted Content Using Targeting Mode
 description: O modo de direcionamento e o componente do Target fornecem ferramentas para a criação de conteúdo para experiências
-seo-description: Targeting mode and the Target component provide tools for creating content for experiences
-uuid: cea85c1b-1bc3-4498-9eaa-4ad10dc58ea4
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '5385'
+source-wordcount: '5383'
 ht-degree: 86%
 
 ---
@@ -635,7 +631,7 @@ Para simular a experiência do visitante, use as seguintes ferramentas:
 
    A página é alterada para mostrar o conteúdo que é direcionado para o contexto atual.
 
-1. Para fazer alterações nas ofertas exibidas, alterne para o modo Direcionamento. Com a atividade de simulação selecionada, edite as ofertas para o contexto que você configurou no modo Visualização.
+1. Para alterar as ofertas exibidas, alterne para o modo Direcionamento. Com a atividade de simulação selecionada, edite as ofertas para o contexto que você configurou no modo Visualização.
 
 ## Configuração das opções do componente do Target {#configuring-target-component-options}
 

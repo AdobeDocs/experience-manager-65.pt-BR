@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c303e967-944d-40b0-96ca-f91e2f42a0d0
 exl-id: 05f8b430-141e-4921-98b1-a0d8f636e478
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
@@ -28,7 +28,7 @@ O Health Monitor fornece informações críticas sobre o sistema de formulários
 
 A página Monitor de integridade no console de administração tem três guias:
 
-* A guia Sistema exibe gráficos de monitoramento de recursos e informações sobre o servidor de formulários (ou nó em um ambiente clusterizado). (Consulte [Exibir informações do sistema](/help/forms/using/admin-help/view-system-information.md#view-system-information).)
+* A guia Sistema exibe gráficos de monitoramento de recursos e informações sobre o Forms Server (ou nó em um ambiente em cluster). (Consulte [Exibir informações do sistema](/help/forms/using/admin-help/view-system-information.md#view-system-information).)
 * A guia Gerenciador de trabalho exibe dados relacionados ao Gerenciador de trabalho, como o número de itens de trabalho na fila do Gerenciador de trabalho. Você pode filtrar as informações usando vários critérios ou gerenciar itens de trabalho individuais usando as ferramentas de operação. (Consulte [Exibir estatísticas relacionadas ao Gerenciador de Trabalho](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
 * A guia Programador de Expurgação do Job permite que você expurgue registros obsoletos do banco de dados do Gerenciador de Jobs. (Consulte [Expurgar registros do banco de dados do Gerenciador de Jobs](/help/forms/using/admin-help/purge-records-job-manager-database.md#purge-records-from-the-job-manager-database).)
 

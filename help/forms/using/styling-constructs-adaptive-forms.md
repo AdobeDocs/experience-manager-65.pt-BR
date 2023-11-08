@@ -1,18 +1,15 @@
 ---
 title: Construtores de estilo para formulários adaptáveis
-seo-title: Styling constructs for adaptive forms
 description: Use a estrutura LESS para personalizar a aparência de formulários adaptáveis.
-seo-description: Use LESS framework to customize appearance of adaptive forms.
-uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
 feature: Adaptive Forms
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2363'
+source-wordcount: '2361'
 ht-degree: 4%
 
 ---
@@ -58,7 +55,7 @@ Atualmente, as variáveis LESS são definidas apenas para essas propriedades dos
 
 ## Alteração do estilo do componente {#changing-component-style}
 
-É possível fazer alterações na aparência, no layout, no posicionamento e na visibilidade dos elementos. Para realizar essa tarefa, crie ou atualize seus arquivos .css personalizados para incluir as construções de estilo listadas neste artigo.
+É possível alterar a aparência, o layout, o posicionamento e a visibilidade dos elementos. Para realizar essa tarefa, crie ou atualize seus arquivos .css personalizados para incluir as construções de estilo listadas neste artigo.
 
 Para aplicar um estilo a um formulário adaptável, abra o formulário adaptável no para edição, abra as propriedades do contêiner de formulário adaptável e especifique o caminho do Arquivo CSS personalizado na guia básico. Construtores de estilo padrão do formulário adaptável e substituídos pelas construções listadas no arquivo .css personalizado.
 

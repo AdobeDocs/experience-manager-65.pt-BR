@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '15468'
+source-wordcount: '15464'
 ht-degree: 0%
 
 ---
@@ -323,7 +323,7 @@ Para obter exemplos de código usando o serviço Segurança de documentos, consu
 
 ## Modificação de Políticas {#modifying-policies}
 
-Você pode modificar uma política existente usando a API Java de Segurança de documentos ou a API de serviço da Web. Para fazer alterações em uma política existente, você a recupera, modifica e atualiza a política no servidor. Por exemplo, suponha que você recupere uma política existente e estenda seu período de validade. Antes da alteração entrar em vigor, você deve atualizar a política.
+Você pode modificar uma política existente usando a API Java de Segurança de documentos ou a API de serviço da Web. Para alterar uma política existente, você a recupera, modifica e atualiza a política no servidor. Por exemplo, suponha que você recupere uma política existente e estenda seu período de validade. Antes da alteração entrar em vigor, você deve atualizar a política.
 
 É possível modificar uma política quando os requisitos de negócios mudam e a política não reflete mais esses requisitos. Em vez de criar uma política, você pode simplesmente atualizar uma política existente.
 
@@ -1477,7 +1477,7 @@ Para obter exemplos de código usando o serviço Segurança de documentos, consu
 
 ## Modificação de Marcas D&#39;Água {#modifying-watermarks}
 
-Você pode modificar uma marca d&#39;água existente usando a API Java de Segurança de documentos ou a API de serviço da Web. Para fazer alterações em uma marca d&#39;água existente, você a recupera, modifica seus atributos e a atualiza no servidor. Por exemplo, suponha que você recupere uma marca d&#39;água e modifique seu atributo de opacidade. Antes da alteração entrar em vigor, você deve atualizar a marca d&#39;água.
+Você pode modificar uma marca d&#39;água existente usando a API Java de Segurança de documentos ou a API de serviço da Web. Para alterar uma marca d&#39;água existente, você a recupera, modifica seus atributos e a atualiza no servidor. Por exemplo, suponha que você recupere uma marca d&#39;água e modifique seu atributo de opacidade. Antes da alteração entrar em vigor, você deve atualizar a marca d&#39;água.
 
 Quando você modifica uma marca d&#39;água, a alteração afeta documentos futuros que têm a marca d&#39;água aplicada a eles. Ou seja, os documentos PDF existentes que contêm a marca d&#39;água não são afetados.
 

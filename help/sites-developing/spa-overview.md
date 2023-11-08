@@ -7,7 +7,7 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1651'
 ht-degree: 86%
@@ -178,7 +178,7 @@ Seletores personalizados adicionais podem ser definidos e usados como parte de u
 
 Se você quiser usar o editor local de um componente de texto criado no SPA, há uma configuração adicional necessária.
 
-1. Defina um atributo (pode ser qualquer um), no elemento wrapper do container, que contém o HTML de texto. No caso do conteúdo de amostra do diário WKND, é uma `<div>` e o seletor que foi usado é `data-rte-editelement`.
+1. Defina um atributo (pode ser qualquer um), no elemento wrapper do container, que contém o HTML de texto. Se houver conteúdo de amostra do WKND Journal, ele será um `<div>` e o seletor que foi usado é `data-rte-editelement`.
 1. Defina a configuração `editElementQuery` no `cq:InplaceEditingConfig` do componente de texto AEM correspondente que aponta para esse seletor, por exemplo, `data-rte-editelement`. Isso permite que o editor saiba qual elemento HTML envolve o texto HTML.
 
 Para obter um exemplo de como isso é feito, consulte [Conteúdo de amostra do diário WKND.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)

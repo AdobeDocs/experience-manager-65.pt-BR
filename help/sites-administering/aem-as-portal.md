@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '6092'
+source-wordcount: '6087'
 ht-degree: 0%
 
 ---
@@ -405,7 +405,7 @@ Além disso, é possível definir esse acesso baseado em função em uma base de
 
 ### Personalização do aplicativo portlet AEM {#customizing-the-aem-portlet-application}
 
-O aplicativo de portlet AEM fornecido inicia um contêiner OSGi dentro do aplicativo da Web da mesma forma que o AEM. Essa arquitetura permite que você use todos os benefícios do OSGi:
+O aplicativo de portlet AEM fornecido inicia um contêiner OSGi dentro do aplicativo da Web da mesma forma que o AEM. Essa arquitetura permite usar todos os benefícios do OSGi:
 
 * Fácil de atualizar e estender
 * Fornece atualizações do portlet sem nenhuma interação do servidor do portal
@@ -737,7 +737,7 @@ Por padrão, o portlet se conecta à instância de publicação em localhost:450
 
 >[!NOTE]
 >
->Esses procedimentos usam o portal Websphere como exemplo, embora sejam o mais genéricos possível; esteja ciente de que os procedimentos variam para outros portais da web. Embora as etapas sejam essencialmente idênticas para todos os portais da Web, é necessário redefinir as etapas de um portal da Web específico.
+>Esses procedimentos usam o portal Websphere como exemplo, embora sejam o mais genéricos possível; os procedimentos variam para outros portais da web. Embora as etapas sejam essencialmente idênticas para todos os portais da Web, é necessário redefinir as etapas de um portal da Web específico.
 
 #### Instalar o portlet {#installing-the-portlet}
 

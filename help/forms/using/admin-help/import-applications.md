@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: f17726c0-3591-4d25-a8b5-3a7024249a56
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Use a guia Aplicativos para importar e gerenciar aplicativos criados no Workbenc
 
    A guia Propriedades à direita exibe as propriedades do nó CRX selecionado.
 
-   A variável **syncState** indica o estado de sincronização de dados entre o servidor de formulários AEM e o repositório CRX. Assim que o processo de importação começar, esse estado é definido como 0 (zero). Este estado indica que os dados não estão sincronizados no momento. Quando os dados são sincronizados, o estado é definido como 1.
+   A variável **syncState** indica o estado de sincronização de dados entre o AEM Forms Server e o repositório CRX. Assim que o processo de importação começar, esse estado é definido como 0 (zero). Este estado indica que os dados não estão sincronizados no momento. Quando os dados são sincronizados, o estado é definido como 1.
 
 ## Implantar um aplicativo {#deploy-an-application}
 

@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3588'
+source-wordcount: '3589'
 ht-degree: 2%
 
 ---
@@ -49,7 +49,7 @@ Assim como com [todos os componentes](/help/sites-developing/components.md), os 
 >
 >O método recomendado para configuração e outras alterações é:
 >
->1. Recriar o item necessário (ou seja, como ele existe em `/libs` em `/apps`
+>1. Recrie o item necessário (ou seja, como ele existe em `/libs` em `/apps`
 >2. Fazer alterações em `/apps`
 
 A variável `/libs/cq/workflow/components/model/step` é o ancestral comum mais próximo do **Etapa do processo**, **Etapa do participante**, e **Etapa dinâmica do participante**, que herdam os seguintes itens:

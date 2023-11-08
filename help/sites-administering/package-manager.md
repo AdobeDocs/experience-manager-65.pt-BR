@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3568'
+source-wordcount: '3570'
 ht-degree: 2%
 
 ---
@@ -174,7 +174,7 @@ Ao criar filtros, você pode definir um caminho ou usar uma expressão regular p
 | Tipo de regra | Descrição |
 |---|---|
 | include | A inclusão de um diretório incluirá esse diretório e todos os arquivos e pastas nele (ou seja, toda a subárvore), mas **não** incluir outros arquivos ou pastas de sob o caminho raiz especificado. |
-| excluir | Excluir um diretório excluirá esse diretório e todos os arquivos e pastas nele (ou seja, toda a subárvore). |
+| excluir | Excluir um diretório excluirá esse diretório e todos os arquivos e pastas nesse diretório (ou seja, toda a subárvore). |
 
 Os filtros de pacote são definidos com mais frequência quando você [crie o pacote.](#creating-a-new-package) No entanto, eles também podem ser editados posteriormente, após o que o pacote deve ser recriado para atualizar seu conteúdo com base nas novas definições de filtro.
 

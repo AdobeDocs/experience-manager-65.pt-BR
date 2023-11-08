@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '4840'
-ht-degree: 76%
+source-wordcount: '4834'
+ht-degree: 77%
 
 ---
 
@@ -53,7 +53,7 @@ Para obter informações detalhadas sobre como os modelos editáveis funcionam e
 
 * A criação de um modelo requer colaboração. Por esse motivo, a [Função](#roles) é indicada para cada tarefa.
 
-* Dependendo de como sua instância é configurada, pode ser útil estar ciente de que o AEM agora oferece [dois tipos básicos de modelo](/help/sites-authoring/templates.md#editable-and-static-templates). Isso não afeta a maneira como você [usar um modelo para criar uma página](#using-a-template-to-create-a-page), mas afeta o tipo de modelo que você pode criar e como uma página se relaciona com seu modelo.
+* Dependendo de como sua instância está configurada, o AEM agora fornece [dois tipos básicos de modelo](/help/sites-authoring/templates.md#editable-and-static-templates). Isso não afeta a maneira como você [usar um modelo para criar uma página](#using-a-template-to-create-a-page), mas afeta o tipo de modelo que você pode criar e como uma página se relaciona com seu modelo.
 
 ### Funções {#roles}
 
@@ -314,7 +314,7 @@ Os seguintes aspectos de um modelo podem ser editados:
 
   >[!NOTE]
   >
-  >Entrada **Conteúdo inicial** e nas páginas resultantes, todos os componentes desbloqueados que tenham um pai acessível (isto é, componentes dentro de um contêiner de layout) podem ser excluídos.
+  >No modo de **conteúdo inicial**, e nas páginas resultantes, qualquer componente desbloqueado que tenha uma página principal acessível (ou seja, componentes dentro de um container de layout) pode ser excluído.
 
 * [Layout](#editingatemplatelayout)
 

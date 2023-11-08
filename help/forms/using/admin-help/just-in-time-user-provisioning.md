@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
 exl-id: 7bde0a09-192a-44a8-83d0-c18e335e9afa
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 0%
@@ -89,7 +89,7 @@ public Boolean assign(User user);
 ### Criar um domínio habilitado para just-in-time {#create-a-just-in-time-enabled-domain}
 
 1. Escreva um DSC implementando as APIs na seção &quot;APIs para provisionamento just-in-time&quot;.
-1. Implante o DSC no servidor de formulários.
+1. Implante o DSC no servidor do Forms.
 1. Criar um domínio habilitado para just-in-time:
 
    * No Console de Administração, clique em Configurações > Gerenciamento de usuários > Gerenciamento de domínio > Novo domínio corporativo.

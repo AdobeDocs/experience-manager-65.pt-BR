@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1244'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ As plataformas exibidas são orientadas pelo conteúdo config.xml do PhoneGap:
 </widget>
 ```
 
-Cada loja de aplicativos de fornecedor — por exemplo, Apple App Store ou Google Play Store — requer uma ou mais capturas de tela do aplicativo móvel para exibir os detalhes do aplicativo aos clientes. Essas capturas de tela podem ter requisitos rigorosos em relação a dimensões e conteúdo (basicamente, elas devem realmente representar o aplicativo). Os aplicativos AEM oferecem suporte para selecionar e gerenciar essas capturas de tela para as plataformas compatíveis e visualizar dimensões de porta conforme exigido pela loja de aplicativos de cada fornecedor.
+Cada loja de aplicativos de fornecedor — por exemplo, Apple App Store ou Google Play Store — requer uma ou mais capturas de tela do aplicativo móvel para exibir os detalhes do aplicativo aos clientes. Essas capturas de tela podem ter requisitos rigorosos em relação a dimensões e conteúdo (basicamente, elas devem realmente representar o aplicativo). O aplicativo AEM é compatível com a seleção e o gerenciamento dessas capturas de tela para as plataformas compatíveis e a visualização de dimensões de porta conforme exigido pela loja de aplicativos de cada fornecedor.
 
 >[!NOTE]
 >

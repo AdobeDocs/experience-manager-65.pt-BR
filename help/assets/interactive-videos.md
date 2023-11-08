@@ -9,9 +9,9 @@ docset: aem65
 feature: Interactive Videos
 role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '6036'
+source-wordcount: '6035'
 ht-degree: 2%
 
 ---
@@ -533,7 +533,7 @@ O código incorporado copiado é definido para um ambiente responsivo, de modo q
 >
 Nesse momento, se você tiver adicionado interatividade somente com páginas da Web com hiperlink, está concluído.
 >
-No entanto, se você adicionou qualquer interatividade para acionar uma Visualização rápida, as miniaturas ao lado do vídeo interativo serão somente para fins de exibição; elas ainda não estão integradas à Visualização rápida existente. Nesse caso, agora você deve integrar o vídeo interativo ao Quickview existente em seu site.
+No entanto, se você adicionou qualquer interatividade para acionar uma Visualização rápida, as miniaturas ao lado do vídeo interativo serão somente para fins de exibição; elas ainda não estão integradas à Visualização rápida existente. Nesse caso, você deve integrar o vídeo interativo ao Quickview existente em seu site.
 
 **Exemplo**
 

@@ -5,9 +5,9 @@ feature: Content Fragments,Assets HTTP API
 role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1959'
+source-wordcount: '1961'
 ht-degree: 24%
 
 ---
@@ -231,7 +231,7 @@ Fragmentos de conteúdo:
 * Não exponha dados binários.
 * Estão completamente contidos na saída JSON (dentro do `properties` propriedade).
 
-* Também são considerados atômicos, ou seja, os elementos e as variações são expostos como parte das propriedades do fragmento e não como links ou entidades filhas. Isso permite acesso eficiente à carga útil de um fragmento.
+* Também são considerados atômicos, ou seja, os elementos e as variações são expostos como parte das propriedades do fragmento e não como links ou entidades secundárias. Isso permite acesso eficiente à carga útil de um fragmento.
 
 #### Modelos de conteúdo e fragmentos de conteúdo {#content-models-and-content-fragments}
 

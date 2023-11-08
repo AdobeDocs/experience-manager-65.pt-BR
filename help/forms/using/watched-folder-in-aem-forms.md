@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '7144'
 ht-degree: 0%
@@ -79,7 +79,7 @@ Você pode configurar as seguintes propriedades para uma Pasta monitorada.
 
 >[!NOTE]
 >
->Se o servidor que hospeda a Pasta monitorada não tiver nenhum dos modos de execução especificados, a Pasta monitorada sempre será ativada independentemente dos modos de execução no servidor.
+>Se o servidor que hospeda a Pasta monitorada não tiver nenhum dos modos de execução especificados, a Pasta monitorada sempre será ativada, independentemente dos modos de execução no servidor.
 
 * **outputFilePattern (String)**: Padrão do arquivo de saída. Você pode especificar uma pasta ou um padrão de arquivo. Se um padrão de pasta for especificado, os arquivos de saída terão os nomes conforme descrito em workflows. Se um padrão de arquivo for especificado, os arquivos de saída terão nomes conforme descrito no padrão de arquivo. [Padrão de arquivo e pasta](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) O também pode especificar uma estrutura de diretório para os arquivos de saída. É uma propriedade obrigatória.
 
@@ -159,7 +159,7 @@ Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrõe
 * **throttleOn (Booleano)**: quando essa opção é selecionada, ela limita o número de trabalhos de Pastas monitoradas que o AEM Forms processa a qualquer momento. O número máximo de trabalhos é determinado pelo valor Tamanho do Lote. O valor padrão é true. (Consulte [Sobre a limitação](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
 
 * **overwriteDuplicateFilename (Booleano)**: quando definido como Verdadeiro, os arquivos na pasta de resultados e na pasta de preservação são substituídos. Quando definido como False, os arquivos e as pastas com um sufixo de índice numérico são usados para o nome. O valor padrão é Falso.
-* **preserveOnFailure (Booleano)**: preserva os arquivos de entrada em caso de falha ao executar a operação em um serviço. O valor padrão é true.
+* **preserveOnFailure (Booleano)**: preserva os arquivos de entrada se houver falha ao executar a operação em um serviço. O valor padrão é true.
 * **inputFilePattern (String)**: especifica o padrão dos arquivos de entrada para uma Pasta monitorada. Cria um arquivo de inclui na lista de permissões dos arquivos.
 * **assíncrono (Booleano)**: identifica o tipo de invocação como assíncrono ou síncrono. O valor padrão é true (assíncrono). O processamento de arquivos é uma tarefa que consome recursos, mantenha o valor do sinalizador assíncrono como verdadeiro para evitar a obstrução do thread principal do trabalho de verificação. Em um ambiente em cluster, é essencial manter o sinalizador true para permitir o balanceamento de carga para os arquivos que estão sendo processados nos servidores disponíveis. Se o sinalizador for falso, o trabalho de verificação tentará executar o processamento para cada arquivo/pasta de nível superior sequencialmente em seu próprio thread. Não defina o sinalizador como false sem um motivo específico, como processamento baseado em fluxo de trabalho em uma configuração de servidor único.
 

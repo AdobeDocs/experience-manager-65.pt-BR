@@ -8,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3d2b7cfb-228c-4cc2-8fcd-d500f0010010
 exl-id: 0d9eb7fe-28a6-444e-957d-023687158c61
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '822'
 ht-degree: 1%
 
 ---
@@ -82,11 +82,11 @@ O valor padrão é uma string vazia.
 **Local padrão:** Esta é a seleção padrão. Quando essa opção é selecionada, o cache é criado em um local dependente do servidor de aplicativos que você está usando:
 
 * **JBoss:** [Início: JBoss]\server\[tipo de instalação]\svcdata\FormServer\Cache
-* **WebLogic:** [Página inicial do WebLogic]\user_projects\domains\[nome de domínio do aem-forms]\adobe\[nome de servidor do forms]\FormServer\Cache
+* **WebLogic:** [Página inicial do WebLogic]\user_projects\domains\[nome de domínio do aem-forms]\adobe\[nome de servidor do Forms]\FormServer\Cache
 * **WebSphere:** [Página inicial do IBM]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
 
 **Diretório Temp LC:** O cache é criado em um subdiretório do diretório temporário dos formulários AEM, que é especificado no console de administração em Settings > Core System Settings > Configurations > Location of Temp Diretory. O subdiretório é nomeado como adobeform_[servername].
 
 >[!NOTE]
 >
->Se você estiver usando um utilitário de limpeza temporário, esteja ciente de que a exclusão desses diretórios não afeta a funcionalidade, ela pode afetar significativamente o desempenho por um curto período até que o novo cache seja criado. Para evitar esse problema, não exclua esses diretórios enquanto limpa o diretório temporário dos formulários AEM.
+>Se você estiver usando um utilitário de limpeza temporário, embora a exclusão desses diretórios não afete a funcionalidade, ele pode afetar significativamente o desempenho por um curto período até que o novo cache seja criado. Para evitar esse problema, não exclua esses diretórios enquanto limpa o diretório temporário dos formulários AEM.

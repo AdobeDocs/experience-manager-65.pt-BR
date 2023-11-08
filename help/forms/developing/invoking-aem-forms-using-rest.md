@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2505'
+source-wordcount: '2503'
 ht-degree: 0%
 
 ---
@@ -117,9 +117,9 @@ Se a tarefa for descartada com êxito, esse URL retornará uma mensagem vazia.
 
 ## Relatório de erros {#error-reporting}
 
-Se uma solicitação de invocação síncrona ou assíncrona não puder ser concluída devido a uma exceção lançada no servidor, a exceção será relatada como parte da mensagem de resposta HTTP. Se o URL de invocação (ou a variável `async_result` O URL no caso de uma invocação assíncrona) não tem um sufixo .xml, o provedor REST retorna o código HTTP `500 Internal Server Error` seguido por uma mensagem de exceção.
+Se uma solicitação de invocação síncrona ou assíncrona não puder ser concluída devido a uma exceção lançada no servidor, a exceção será relatada como parte da mensagem de resposta HTTP. Se o URL de invocação (ou a variável `async_result` URL se houver uma invocação assíncrona) não tiver um sufixo .xml, o Provedor REST retornará o código HTTP `500 Internal Server Error` seguido por uma mensagem de exceção.
 
-Se o URL de invocação (ou a variável `async_result` O URL no caso de uma invocação assíncrona) tiver um sufixo .xml, o provedor REST retornará o código HTTP `200 OK`seguido por um documento XML que descreve a exceção no formato a seguir.
+Se o URL de invocação (ou a variável `async_result` URL se houver uma invocação assíncrona) tiver um sufixo .xml, o Provedor REST retornará o código HTTP `200 OK`seguido por um documento XML que descreve a exceção no formato a seguir.
 
 ```xml
  <exception>
@@ -143,7 +143,7 @@ A variável `DSCError` elemento é opcional e está presente somente se a exceç
 
 ## Segurança e autenticação {#security-and-authentication}
 
-Para fornecer invocações REST com um transporte seguro, um administrador de formulários AEM pode ativar o protocolo HTTPS no servidor de aplicativos J2EE que hospeda o AEM Forms. Essa configuração é específica do servidor de aplicativos J2EE; ela não faz parte da configuração do servidor de formulários.
+Para fornecer invocações REST com um transporte seguro, um administrador de formulários AEM pode ativar o protocolo HTTPS no servidor de aplicativos J2EE que hospeda o AEM Forms. Essa configuração é específica do servidor de aplicativos J2EE; ela não faz parte da configuração do Forms Server.
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: Notas de versão de 2020 do AEM Content and Commerce
 description: Notas de versão de 2020 do Adobe Experience Manager Content and Commerce.
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1352'
 ht-degree: 13%
 
 ---
@@ -143,7 +143,7 @@ Esta é a primeira versão dos Componentes principais do CIF compatível com o A
 
 * Adição da filtragem de categoria como uma faceta para permitir que os compradores filtrem com base na categoria.
 
-* Foi adicionado o mapeamento do usuário de serviço como parte do requisito de segurança para garantir o acesso a /conf por meio dos usuários de serviço, e não manipulando diretamente ACLs. Os Componentes principais do CIF agora devem usar um usuário de serviço para acessar as configurações.
+* Foi adicionado o mapeamento do usuário de serviço como parte do requisito de segurança para garantir o acesso a /conf por meio dos usuários de serviço, e não manipulando diretamente ACLs. Os Componentes principais do CIF devem usar um usuário de serviço para acessar as configurações.
 
 ### O que foi melhorado {#what-is-improved-june}
 

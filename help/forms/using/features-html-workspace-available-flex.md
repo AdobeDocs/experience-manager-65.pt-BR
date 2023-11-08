@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 66c3cdc4-0e4c-4597-a107-f457dd0cc166
 exl-id: 4235e0ce-f1c4-432e-b486-2d72c390f320
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '378'
 ht-degree: 0%
 
 ---
@@ -41,4 +41,4 @@ A capacidade de integrar o com aplicativos de terceiros pode ser usada para traz
 
 ## Suporte para renderização de tarefa personalizada com base no dispositivo do usuário final {#support-for-custom-task-rendering-based-on-end-user-s-device}
 
-O espaço de trabalho do AEM Forms oferece suporte para a representação em HTML de formulários XDP. Esse suporte, quando usado em um processo de renderização que roteia para diferentes representações de XDP com base no dispositivo ou agente do usuário, permite que os usuários visualizem um formulário XDP como HTML nos dispositivos móveis e como PDF em um desktop. Isso ajuda a fornecer uma cobertura perfeita do Gerenciamento de processos para usuários que trabalham em ambientes variados em dispositivos diferentes.
+O espaço de trabalho do AEM Forms é compatível com a representação em HTML de formulários XDP. Esse suporte, quando usado em um processo de renderização que roteia para diferentes representações de XDP com base no dispositivo ou agente do usuário, permite que os usuários visualizem um formulário XDP como HTML nos dispositivos móveis e como PDF em um desktop. Isso ajuda a fornecer uma cobertura perfeita do Gerenciamento de processos para usuários que trabalham em ambientes variados em dispositivos diferentes.

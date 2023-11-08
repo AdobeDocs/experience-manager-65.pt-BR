@@ -6,9 +6,9 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2074'
+source-wordcount: '2075'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Para permitir que o autor use o Editor de SPA AEM para editar o conteúdo de um 
 
 ## Introdução {#introduction}
 
-Este documento descreve o contrato geral que qualquer estrutura SPA deve cumprir (ou seja, o tipo de camada de suporte de AEM) para implementar componentes SPA editáveis dentro do AEM.
+Este documento descreve o contrato geral que qualquer estrutura do SPA deve cumprir (ou seja, o tipo de camada de suporte do AEM) para implementar componentes do SPA editáveis dentro do AEM.
 
 >[!NOTE]
 >

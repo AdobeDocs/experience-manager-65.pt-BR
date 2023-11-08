@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 2aef9048-9d6e-4f5d-b443-5e73f8066d76
 docset: aem65
 exl-id: 9ef9ae75-cd8c-4adb-9bcb-e951d200d492
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '461'
 ht-degree: 6%
 
 ---
@@ -41,7 +41,7 @@ Isso é feito configurando o [Serviço OSGi - Configuração do componente de fr
 
 Os serviços que exigem o registro de um componente são:
 
-* Determinar as dependências corretamente durante a publicação (ou seja, verifique se os fragmentos e modelos podem ser publicados automaticamente com uma página se tiverem sido alterados desde a última publicação).
+* Determinar as dependências corretamente durante a publicação (ou seja, verifique se os fragmentos e modelos podem ser publicados automaticamente com uma página se foram alterados desde a última publicação).
 * Suporte para fragmentos de conteúdo na pesquisa de texto completo.
 * A gestão/gestão dos *conteúdo intermediário.*
 * A gestão/gestão dos *ativos de mídia mista.*

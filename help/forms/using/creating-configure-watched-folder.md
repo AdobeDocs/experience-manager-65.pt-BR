@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 0ce7b338-6686-49b3-b58b-e7ab6b670708
 exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1820'
 ht-degree: 0%
@@ -63,13 +63,13 @@ Execute as seguintes etapas para criar uma pasta monitorada:
 
    * **Padrão do arquivo de saída**: especifique uma lista de padrões delimitada por ponto e vírgula (;) que uma pasta monitorada usa para determinar o nome e o local dos arquivos e pastas de saída. Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
 
-
 1. Toque **Avançado**. A guia Advanced contém mais campos. A maioria desses campos contém um valor padrão.
 
    * **Filtro do mapeador de carga útil:** Quando você cria uma pasta monitorada, ela cria uma estrutura de pastas dentro da pasta que está sendo monitorada. A estrutura de pastas tem pastas de preparo, resultado, preservação, entrada e falha. A estrutura de pastas pode servir como carga de entrada para o fluxo de trabalho e aceitar a saída de um fluxo de trabalho. Ele também pode listar pontos de falha, se houver. A estrutura de uma carga é diferente da estrutura de uma pasta monitorada. Você pode gravar scripts personalizados para mapear a estrutura de uma pasta monitorada para a carga útil. Esse script é chamado de filtro de mapeador de carga útil. Duas implementações prontas para uso do mapeador de carga estão disponíveis. Se você não tiver [uma implementação personalizada](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), use uma das implementações prontas para uso:
 
       * **Mapeador padrão:** Use o mapeador de carga útil padrão para manter os conteúdos de entrada e saída das pastas monitoradas em pastas de entrada e saída separadas na carga útil.
       * **Mapeador de conteúdo simples baseado em arquivo:** Use o mapeador de carga útil baseado em arquivo simples para manter o conteúdo de entrada e saída diretamente na pasta de carga útil. Ela não cria nenhuma hierarquia extra, como o mapeador padrão.
+
    * **Modo de execução**: especifique a lista separada por vírgulas de modos de execução permitidos para a execução do workflow.
    * **Arquivos por etapa expirados após**: especifique o número de segundos de espera antes que um arquivo/pasta de entrada que já foi selecionado para processamento seja tratado como tendo ultrapassado o tempo limite e marcado como uma falha. O mecanismo de tempo limite só é ativado quando o valor dessa propriedade é um número positivo.
    * **Excluir arquivos do Palco expirados quando sincronizados**: Se ativada, a variável **Arquivos por etapa expirados após** o mecanismo é ativado somente quando a limitação está ativada para a pasta monitorada.
@@ -78,7 +78,7 @@ Execute as seguintes etapas para criar uma pasta monitorada:
    * **Incluir Padrão do Arquivo**: especifique uma lista de padrões delimitada por ponto e vírgula (;) que a pasta monitorada usa para determinar quais pastas e arquivos serão verificados e selecionados. Por exemplo, se o Padrão de arquivo de inclusão for input&amp;ast;, todos os arquivos e pastas que corresponderem a input&amp;ast; serão selecionados. O valor padrão é &amp;ast; e indica todos os arquivos e pastas. Para obter mais informações sobre padrões de arquivo, consulte [Sobre Padrões de Arquivo](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
    * **Tempo de espera:** Especifique o tempo, em milissegundos, a ser aguardado antes de examinar uma pasta ou um arquivo após sua criação. Por exemplo, se o tempo de espera for de 3.600.000 milissegundos (uma hora) e o arquivo tiver sido criado há um minuto, esse arquivo será selecionado após 59 minutos ou mais. O valor padrão é 0.
 
-      Essa configuração é útil para garantir que todo o conteúdo do arquivo ou pasta seja copiado para a pasta de entrada. Por exemplo, se você tiver um arquivo grande para processar e ele levar dez minutos para ser baixado, defina o tempo de espera como 10&amp;ast;60 &amp;ast;1000 milissegundos. Esse intervalo impede que a pasta monitorada verifique o arquivo se ele não tiver dez minutos.
+     Essa configuração é útil para garantir que todo o conteúdo do arquivo ou pasta seja copiado para a pasta de entrada. Por exemplo, se você tiver um arquivo grande para processar e ele levar dez minutos para ser baixado, defina o tempo de espera como 10&amp;ast;60 &amp;ast;1000 milissegundos. Esse intervalo impede que a pasta monitorada verifique o arquivo se ele não tiver dez minutos.
 
    * **Excluir Resultados Mais Antigos Que:** Especifique o tempo, em número de dias, de espera antes de excluir os arquivos e pastas anteriores ao valor especificado. Essa configuração é útil para garantir que a pasta de resultados não fique cheia. Um valor de -1 dias indica que a pasta de resultados nunca deve ser excluída. O valor padrão é -1.
    * **Nome da pasta de resultado:** Especifique o nome da pasta onde os resultados serão armazenados. Se os resultados não aparecerem nessa pasta, verifique a pasta de falha. Arquivos somente leitura não são processados e são salvos na pasta de falha. Você pode usar um caminho absoluto ou relativo com os seguintes padrões de arquivo:
@@ -99,20 +99,19 @@ Execute as seguintes etapas para criar uma pasta monitorada:
       * %P = id do processo ou da tarefa
       * Por exemplo, se for 8 PM em 17 de julho de 2009 e você especificar C:/Test/WF0/failure/%Y/%M/%D/%H/, a pasta resultante será C:/Test/WF0/failure/2009/07/17/20.
       * Se o caminho não for absoluto, mas relativo, a pasta será criada dentro da pasta monitorada. O valor padrão é result/%Y/%M/%D/, que é a pasta Result dentro da pasta monitorada. Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
+
    * **Falha no nome da pasta:** Especifique a pasta onde os arquivos com falha são salvos. Este local é sempre relativo à pasta monitorada. Você pode usar padrões de arquivo, conforme descrito em Pasta de resultados.
    * **Preservar nome da pasta:** Especifique a pasta onde os arquivos são armazenados após a verificação e a coleta bem-sucedidas. O caminho pode ser um diretório absoluto, relativo ou nulo. Você pode usar padrões de arquivo, conforme descrito em Pasta de resultados. O valor padrão é preserve/%Y/%M/%D/.
    * **Tamanho do lote:** Especifique o número de arquivos ou pastas a serem selecionados por varredura. Isso evita uma sobrecarga no sistema; a varredura de muitos arquivos de uma vez pode causar travamento. O valor padrão é 2.
 
-      Se o intervalo de verificação for pequeno, as threads examinam a pasta de entrada com frequência. Se os arquivos forem colocados com frequência na pasta monitorada, mantenha o intervalo de verificação pequeno. Se os arquivos forem descartados com pouca frequência, use um intervalo de verificação maior para que os outros serviços possam usar as threads.
+     Se o intervalo de verificação for pequeno, as threads examinam a pasta de entrada com frequência. Se os arquivos forem colocados com frequência na pasta monitorada, mantenha o intervalo de verificação pequeno. Se os arquivos forem descartados com pouca frequência, use um intervalo de verificação maior para que os outros serviços possam usar as threads.
 
-   * **Acelerador Ligado:** Quando essa opção está ativada, ela limita o número de trabalhos de pastas monitoradas que o AEM forma a qualquer momento. O valor Tamanho do Lote determina o número máximo de trabalhos. Para obter mais informações, consulte [limitação](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-throttling)
+   * **Acelerador Ligado:** Quando essa opção está ativada, ela limita o número de trabalhos de pastas monitoradas que os formulários AEM processam a qualquer momento. O valor Tamanho do Lote determina o número máximo de trabalhos. Para obter mais informações, consulte [limitação](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-throttling)
    * **Substituir arquivos existentes com nome semelhante**: quando definido como Verdadeiro, os arquivos na pasta de resultados e na pasta de preservação são substituídos. Quando definido como False, os arquivos e as pastas com um sufixo de índice numérico são usados para o nome. O valor padrão é Falso.
-   * **Preservar os arquivos na falha:** Quando definido como Verdadeiro, os arquivos de entrada são preservados em caso de falha. O valor padrão é true.
+   * **Preservar os arquivos na falha:** Quando definido como Verdadeiro, os arquivos de entrada são preservados se houver falha. O valor padrão é true.
    * **Incluir arquivos com o padrão:** Especifique uma lista delimitada por ponto e vírgula (;) de padrões que a pasta monitorada usa para determinar quais pastas e arquivos serão verificados e selecionados. Por exemplo, se Incluir padrão de arquivo for entrada, todos os arquivos e pastas que correspondem à entrada serão coletados. Para obter mais informações, consulte [Ajuda de administração](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
    * **Chame a pasta monitorada de forma assíncrona:** Identifica o tipo de invocação como assíncrono ou síncrono. O valor padrão é assíncrono. O assíncrono é recomendado para processos de longa duração, enquanto o síncrono é recomendado para processos transitórios ou de curta duração.
    * **Ativar a pasta monitorada:** Quando esta opção está habilitada, a pasta observada é habilitada. O valor padrão é True.
-
-
 
 ## Modificar propriedades de uma pasta monitorada existente {#modify-properties-of-an-existing-watched-folder}
 

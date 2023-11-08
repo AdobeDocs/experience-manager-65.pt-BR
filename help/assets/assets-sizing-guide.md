@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1609'
 ht-degree: 0%
 
 ---
@@ -80,11 +80,11 @@ Para operações AWS, a implementação de um único local central (via Amazon S
 
 #### Questões de desempenho {#performance-concerns}
 
-Um armazenamento de dados compartilhado exige que os binários sejam armazenados em uma unidade montada em rede que seja compartilhada entre todas as instâncias. Como esses binários são acessados em uma rede, o desempenho do sistema é afetado negativamente. Você pode reduzir parcialmente o impacto usando uma conexão de rede rápida a uma matriz rápida de discos. Mas essa é uma proposta cara. No caso de operações AWS, todos os discos são remotos e exigem conectividade de rede. Volumes efêmeros perdem dados quando a instância é iniciada ou interrompida.
+Um armazenamento de dados compartilhado exige que os binários sejam armazenados em uma unidade montada em rede que seja compartilhada entre todas as instâncias. Como esses binários são acessados em uma rede, o desempenho do sistema é afetado negativamente. Você pode reduzir parcialmente o impacto usando uma conexão de rede rápida a uma matriz rápida de discos. Mas essa é uma proposta cara. Se houver operações AWS, todos os discos serão remotos e exigirão conectividade de rede. Volumes efêmeros perdem dados quando a instância é iniciada ou interrompida.
 
 #### Latência {#latency}
 
-A latência em implementações S3 é introduzida pelas threads de gravação em segundo plano. Os procedimentos de backup devem levar em conta essa latência. Além disso, os índices Lucene podem permanecer incompletos ao fazer um backup. Ela se aplica a qualquer arquivo com detecção de tempo gravado no armazenamento de dados S3 e acessado de outra instância.
+A latência em implementações S3 é introduzida pelas threads de gravação em segundo plano. Os procedimentos de backup devem considerar essa latência. Além disso, os índices Lucene podem permanecer incompletos ao fazer um backup. Ela se aplica a qualquer arquivo com detecção de tempo gravado no armazenamento de dados S3 e acessado de outra instância.
 
 ### Armazenamento de nó ou armazenamento de documento {#node-store-document-store}
 

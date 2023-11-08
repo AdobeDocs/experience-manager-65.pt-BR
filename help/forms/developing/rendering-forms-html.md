@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '4143'
 ht-degree: 0%
@@ -67,13 +67,13 @@ Você deve mover-se explicitamente de painel a painel usando o `xfa.host.pageUp`
 >
 >Se você quiser personalizar a aparência do botão HTML Digital Signature em um formulário HTML, altere as seguintes propriedades no arquivo fscdigsig.css (no arquivo adobe-forms-ds.ear > adobe-forms-ds.war):
 
-**.fsc-ds-ssb**: esta folha de estilos é aplicável no caso de um campo de sinal em branco.
+**.fsc-ds-ssb**: esta folha de estilos é aplicável se houver um campo de sinal em branco.
 
-**.fsc-ds-ssv**: esta folha de estilos é aplicável no caso de um campo Valid sign.
+**.fsc-ds-ssv**: esta folha de estilos será aplicável se houver um campo Valid sign.
 
-**.fsc-ds-ssc**: esta folha de estilos é aplicável no caso de um campo Valid sign, mas os dados foram alterados.
+**.fsc-ds-ssc**: esta folha de estilos será aplicável se houver um campo Valid sign, mas os dados tiverem sido alterados.
 
-**.fsc-ds-ssi**: esta folha de estilos é aplicável no caso de um campo de sinal inválido.
+**.fsc-ds-ssi**: esta folha de estilos é aplicável se houver um campo de sinal inválido.
 
 **.fsc-ds-popup-bg**: esta propriedade da folha de estilos não está sendo usada.
 

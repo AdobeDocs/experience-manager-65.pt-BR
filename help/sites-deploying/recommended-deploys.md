@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1780'
+source-wordcount: '1779'
 ht-degree: 0%
 
 ---
@@ -157,7 +157,7 @@ Uma implantação mínima com MongoDB normalmente envolve a seguinte topologia:
 
 Além disso, é altamente recomendável configurar o armazenamento de dados em um sistema de arquivos compartilhado ou no Amazon S3, de modo que os ativos ou binários não sejam armazenados no MongoDB. Isso garantirá o desempenho ideal na implantação.
 
-Um dos benefícios adicionais de implantar um conjunto de réplicas do MongoDB com um cluster de duas ou mais instâncias de autor é ter um cenário de recuperação automatizada com tempo de inatividade mínimo no caso de instâncias de um autor, réplica do MongoDB ou uma falha completa do data center. No entanto, a escolha de MongoMK em vez de TarMK não deve ser orientada exclusivamente pelo requisito de recuperação, já que o TarMK também pode fornecer uma solução de tempo de inatividade mínimo com um mecanismo de failover controlado.
+Um dos benefícios adicionais de implantar um conjunto de réplicas do MongoDB com um cluster de duas ou mais instâncias de autor é ter um cenário de recuperação automatizada com tempo de inatividade mínimo se houver instâncias de autor, réplica do MongoDB ou uma falha completa do data center. No entanto, a escolha de MongoMK em vez de TarMK não deve ser orientada exclusivamente pelo requisito de recuperação, já que o TarMK também pode fornecer uma solução de tempo de inatividade mínimo com um mecanismo de failover controlado.
 
 Se os critérios acima não forem esperados durante os primeiros dezoito meses da implantação, é recomendável primeiro implantar o AEM usando TarMK, reavaliar sua configuração posteriormente quando os critérios acima se aplicarem e, finalmente, determinar se deve permanecer no TarMK ou migrar para MongoMK.
 

@@ -1,20 +1,16 @@
 ---
 title: Diferencial de páginas
-seo-title: Page Diff
 description: O recurso de diferencial de páginas permite a comparação conveniente lado a lado de duas páginas com suas diferenças destacadas.
-seo-description: The page diff feature allows for the convenient side-by-side comparison of two pages with their differences highlighted.
-uuid: 5af8b466-5922-4fe6-9eae-7bad99be23e0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 91%
+source-wordcount: '570'
+ht-degree: 85%
 
 ---
 
@@ -90,7 +86,7 @@ Você também pode optar por fechar a visualização em tela cheia clicando no �
 
 Há algumas situações em que o recurso de diferencial de páginas pode não detectar uma diferença conforme esperado.
 
-* Ao comparar versões e inicializações, o diferencial não leva em conta componentes dinâmicos como navegações estruturais, menus, listas de produtos ou logotipos (componentes que dependem da estrutura do site para renderizar seu conteúdo).
+* Ao comparar versões e inicializações, o diferencial não leva em conta componentes dinâmicos, como navegações estruturais, menus, listas de produtos ou logotipos (componentes que dependem da estrutura do site para renderizar seu conteúdo).
 * Para versões, o diferencial não recria a política de controle de acesso e as relações com a Live Copy.
 * Se uma página for movida, não será mais possível fazer uma comparação com nenhuma versão feita antes da movimentação.
 

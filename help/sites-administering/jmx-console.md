@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '4962'
+source-wordcount: '4963'
 ht-degree: 1%
 
 ---
@@ -597,7 +597,7 @@ Somente leitura.
 
 * Valor retornado: nenhum
 
-**makeClusterMaster** Define este nó de repositório como o nó mestre do cluster. Se ainda não tiver sido mestre, este comando interrompe o listener da instância mestre atual e inicia um listener mestre no nó atual. Em seguida, esse nó é definido como o nó principal e reiniciado, fazendo com que todos os outros nós no cluster (ou seja, aqueles que são controlados pelo mestre) se conectem a essa instância.
+**makeClusterMaster** Define este nó de repositório como o nó mestre do cluster. Se ainda não tiver sido mestre, este comando interrompe o listener da instância mestre atual e inicia um listener mestre no nó atual. Em seguida, esse nó é definido como o nó mestre e reiniciado, fazendo com que todos os outros nós do cluster (ou seja, aqueles que são controlados pelo nó mestre) se conectem a essa instância.
 
 * Argumentos: nenhum
 * Valor retornado: nenhum

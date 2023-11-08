@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1795'
-ht-degree: 65%
+source-wordcount: '1797'
+ht-degree: 63%
 
 ---
 
@@ -81,13 +81,13 @@ O AEM permite definir layouts dependendo da largura do dispositivo:
    * O alcance do ponto de interrupção se estende da esquerda até o próximo ponto de interrupção.
    * Não é possível selecionar um ponto de interrupção específico, pois o ponto de interrupção apropriado é selecionado quando você seleciona um dispositivo e uma orientação.
 
-O dispositivo **Desktop** sem uma largura específica e que está relacionado ao ponto de interrupção padrão (isto é, todos os itens acima do último ponto de interrupção configurado).
+Um dispositivo de **desktop** que não possui uma largura específica utiliza o ponto de interrupção padrão (isto é, todos os itens acima do último ponto de interrupção configurado).
 
 >[!NOTE]
 >
 >Seria possível definir pontos de interrupção para cada dispositivo individual, mas isso aumentaria consideravelmente o trabalho necessário para a definição e a manutenção do layout.
 
-Ao usar o emulador, você seleciona um dispositivo específico para emulação e definição de layout e o ponto de interrupção relacionado também será destacado. Quaisquer alterações de layout efetuadas serão aplicáveis a outros dispositivos em que o ponto de interrupção se aplica, isto é, quaisquer dispositivos posicionados à esquerda do marcador do ponto de interrupção ativo, mas antes do próximo marcador do ponto de interrupção.
+Ao usar o emulador, você seleciona um dispositivo específico para emulação e definição de layout e o ponto de interrupção relacionado também será destacado. Quaisquer alterações de layout efetuadas serão aplicáveis a outros dispositivos aos quais o ponto de interrupção se aplica, isto é, quaisquer dispositivos posicionados à esquerda do marcador do ponto de interrupção ativo, mas antes do próximo marcador do ponto de interrupção.
 
 Por exemplo, ao selecionar o dispositivo **iPhone 6 Plus** (definido com uma largura de 540 pixels) para emulação e layout, o ponto de interrupção **Telefone** (definido como 768 pixels) também será ativado. Quaisquer alterações de layout feitas na **IPHONE 6** serão aplicáveis a outros dispositivos no âmbito do **Telefones** ponto de interrupção, como **IPHONE 5** (definido como 320 pixels).
 

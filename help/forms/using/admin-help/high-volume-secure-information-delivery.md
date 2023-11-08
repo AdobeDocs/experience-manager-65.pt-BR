@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b76d7d93-23a5-4c08-81f5-a56267b1556a
 feature: Document Security
 exl-id: 616e8821-ca96-4471-9120-0e1076a06178
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Uma vantagem dessa abordagem é que o tamanho do banco de dados de segurança de
 
 A segurança de documentos também oferece suporte a Políticas abstratas. Políticas abstratas são modelos de política que contêm todos os atributos de política, como configurações de segurança de documentos e direitos de uso, mas não contêm uma lista de principais. Os administradores podem criar qualquer número de políticas a partir da política abstrata com princípios diferentes que devem ter acesso aos documentos. As alterações feitas na política abstrata não afetam as políticas reais geradas pelas políticas abstratas.
 
-No caso de geração de fatura mensal para uma empresa de telecomunicações, você cria uma política abstrata, cria usuários e gera licenças exclusivas para cada usuário. As licenças são aplicadas posteriormente a documentos para cada usuário.
+Se houver uma geração de fatura mensal para uma empresa de telecomunicações, você criará uma política abstrata, criará usuários e, em seguida, gerará licenças exclusivas para cada usuário. As licenças são aplicadas posteriormente a documentos para cada usuário.
 
 A criação de uma política abstrata é suportada somente por meio do SDK Java de segurança de documentos. No entanto, você pode administrar as políticas criadas a partir da política abstrata das páginas da Web de segurança de documentos. As políticas criadas usando esse método são idênticas em comportamento às criadas nas páginas da Web de segurança de documentos.
 

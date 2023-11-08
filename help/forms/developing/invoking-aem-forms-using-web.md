@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '9887'
 ht-degree: 0%
@@ -1735,4 +1735,4 @@ O código C# a seguir assina um formulário interativo que é renderizado pelo s
 
 ### Serviços que começam com a letra I produzem arquivos de proxy inválidos {#services-starting-with-the-letter-i-produce-invalid-proxy-files}
 
-O nome de algumas classes de proxy geradas pela AEM Forms está incorreto ao usar o Microsoft .Net 3.5 e o WCF. Esse problema ocorre quando classes de proxy são criadas para IBMFilenetContentRepositoryConnector, IDPSchedulerService ou qualquer outro serviço cujo nome comece com a letra I. Por exemplo, o nome do cliente gerado no caso de IBMFileNetContentRepositoryConnector é `BMFileNetContentRepositoryConnectorClient`. A letra I está ausente na classe de proxy gerada.
+O nome de algumas classes de proxy geradas pela AEM Forms está incorreto ao usar o Microsoft .Net 3.5 e o WCF. Esse problema ocorre quando classes de proxy são criadas para IBMFilenetContentRepositoryConnector, IDPSchedulerService ou qualquer outro serviço cujo nome comece com a letra I. Por exemplo, o nome do cliente gerado se houver IBMFileNetContentRepositoryConnector será `BMFileNetContentRepositoryConnectorClient`. A letra I está ausente na classe de proxy gerada.

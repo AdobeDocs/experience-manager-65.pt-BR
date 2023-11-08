@@ -1,18 +1,14 @@
 ---
 title: Criar uma comunicação interativa
-seo-title: Create an Interactive Communication
 description: Crie uma comunicação interativa usando o editor de comunicação interativa. Use a funcionalidade arrastar e soltar para criar a Comunicação interativa e visualizar as saídas de impressão e da Web em diferentes tipos de dispositivo.
-seo-description: Create an Interactive Communication using the Interactive Communication editor. Use drag-and-drop functionality to build the Interactive Communication, and preview both print and web outputs on different device types.
-uuid: d524a3de-00b4-444f-b3c7-be443fa24ec8
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '6168'
+source-wordcount: '6163'
 ht-degree: 1%
 
 ---
@@ -141,7 +137,7 @@ A interface de criação permite distinguir entre os campos e variáveis desvinc
 
 Além disso, ao passar o mouse sobre esses elementos, uma dica de ferramenta é exibida com a mensagem Campo (não vinculado) ou Variável (não vinculado).
 
-Às vezes, uma variável não vinculada usada em um fragmento de documento pode não ser exibida na interface de criação. Isso pode acontecer devido a uma regra de texto em linha em um fragmento de documento ou no caso de um fragmento de condição. Nesses casos, uma dica de ferramenta, realçada em azul, é exibida como parte do fragmento do documento. A dica de ferramenta exibe o número de variáveis não vinculadas usadas em um fragmento de documento.
+Às vezes, uma variável não vinculada usada em um fragmento de documento pode não ser exibida na interface de criação. Isso pode acontecer devido a uma regra de texto em linha em um fragmento de documento ou se houver um fragmento de condição. Nesses casos, uma dica de ferramenta, realçada em azul, é exibida como parte do fragmento do documento. A dica de ferramenta exibe o número de variáveis não vinculadas usadas em um fragmento de documento.
 
 ![Variável não vinculada](assets/df_unbound_variable_new.png)
 
@@ -562,7 +558,7 @@ Toque **[!UICONTROL Sim]**.
 
 ### Sincronizar {#synchronize-1}
 
-Se você estiver usando a opção Imprimir como Principal do Canal da Web e fizer alterações no canal Imprimir, será possível sincronizar o conteúdo para trazer as alterações recém-feitas para o canal da Web.
+Se você estiver usando a opção Imprimir como Principal do Canal da Web e alterar o canal Imprimir, será possível sincronizar o conteúdo para trazer as alterações recém-feitas para o canal da Web.
 
 1. Para sincronizar o canal da Web com o canal de impressão, alterne para o canal da Web e toque no ícone More options.
 

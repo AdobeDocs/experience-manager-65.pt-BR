@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
 exl-id: 0d36160a-29fa-4cc4-a0ff-fc681d3e040e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 2%
@@ -174,4 +174,4 @@ As estratégias a seguir podem minimizar a perda de dados da pasta de saída e d
 
 ## Conclusão {#conclusion}
 
-Devido à natureza dinâmica e em constante mudança de uma pasta monitorada, a restauração de pastas monitoradas deve ser feita com arquivos cujo backup seja feito em um dia. Uma prática recomendada seria fazer backup dos resultados, armazenar a pasta de entrada em um servidor e rastrear arquivos de entrada para que você possa reenviar o trabalho em caso de falha.
+Devido à natureza dinâmica e em constante mudança de uma pasta monitorada, a restauração de pastas monitoradas deve ser feita com arquivos cujo backup seja feito em um dia. Uma prática recomendada seria fazer backup dos resultados, armazenar a pasta de entrada em um servidor e rastrear arquivos de entrada para que você possa reenviar o trabalho se houver uma falha.

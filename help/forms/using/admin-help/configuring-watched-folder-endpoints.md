@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '7176'
+source-wordcount: '7174'
 ht-degree: 0%
 
 ---
@@ -211,7 +211,7 @@ Arquivos somente leitura não são processados e serão salvos na pasta de falha
 
 O valor padrão é failure/%Y/%M/%D/.
 
-**Preservar na Falha:** Preserva os arquivos de entrada em caso de falha ao executar a operação em um serviço. O valor padrão é true.
+**Preservar na Falha:** Preserva os arquivos de entrada se houver uma falha ao executar a operação em um serviço. O valor padrão é true.
 
 **Substituir nomes de arquivo duplicados:** Quando definido como Verdadeiro, os arquivos na pasta de resultados e na pasta de preservação são substituídos. Quando definido como False, os arquivos e as pastas com um sufixo de índice numérico são usados para o nome. O valor padrão é Falso.
 
@@ -225,7 +225,7 @@ Um valor de -1 dias indica que a pasta de resultados nunca deve ser excluída. O
 
 **Literal:** A pasta monitorada usa o valor inserido no campo como é exibido. Todos os tipos básicos de Java são compatíveis. Por exemplo, se uma API usar entradas como String, long, int e Boolean, a cadeia de caracteres será convertida no tipo adequado e o serviço será chamado.
 
-**Variável:** O valor inserido é um padrão de arquivo que a pasta monitorada usa para escolher a entrada. Por exemplo, no caso do serviço de criptografia de senhas, em que o documento de entrada deve ser um arquivo PDF, o usuário pode usar &amp;ast;.pdf como padrão de arquivo. A pasta monitorada capturará todos os arquivos na pasta monitorada que correspondam a este padrão e chamará o serviço para cada arquivo. Quando uma variável é usada, todos os arquivos de entrada são convertidos em documentos. Somente APIs que usam Documento como tipo de entrada são compatíveis.
+**Variável:** O valor inserido é um padrão de arquivo que a pasta monitorada usa para escolher a entrada. Por exemplo, se houver o serviço de criptografia de senhas, em que o documento de entrada deve ser um arquivo PDF, o usuário poderá usar &amp;ast;.pdf como padrão de arquivo. A pasta monitorada capturará todos os arquivos na pasta monitorada que correspondam a este padrão e chamará o serviço para cada arquivo. Quando uma variável é usada, todos os arquivos de entrada são convertidos em documentos. Somente APIs que usam Documento como tipo de entrada são compatíveis.
 
 **Mapeamentos de Parâmetros de Saída:** Usado para configurar as saídas do serviço e da operação. As configurações disponíveis dependem do serviço que está usando o ponto de extremidade da pasta monitorada.
 
@@ -271,7 +271,7 @@ Se o padrão de mapeamento do parâmetro de saída terminar com &quot;File.separ
 
 ## Sobre a limitação {#about-throttling}
 
-Quando a limitação é ativada para um endpoint de pasta observada, ela limita o número de trabalhos de pasta observados que podem ser processados a qualquer momento. O número máximo de trabalhos é determinado pelo valor Tamanho do lote, também configurável no endpoint Pasta monitorada. Os documentos de entrada no diretório de entrada da pasta monitorada não serão sondados quando o limite de limitação for atingido. Os documentos também permanecerão no diretório de entrada até que outros trabalhos de pasta observados sejam concluídos e outra tentativa de enquete seja feita. No caso do processamento síncrono, todos os trabalhos processados em uma única enquete serão contados para o limite de limitação, mesmo que os trabalhos sejam processados consecutivamente em um único thread.
+Quando a limitação é ativada para um endpoint de pasta observada, ela limita o número de trabalhos de pasta observados que podem ser processados a qualquer momento. O número máximo de trabalhos é determinado pelo valor Tamanho do lote, também configurável no endpoint Pasta monitorada. Os documentos de entrada no diretório de entrada da pasta monitorada não serão sondados quando o limite de limitação for atingido. Os documentos também permanecerão no diretório de entrada até que outros trabalhos de pasta observados sejam concluídos e outra tentativa de enquete seja feita. Se houver processamento síncrono, todos os trabalhos processados em uma única enquete serão contados para o limite de limitação, mesmo que os trabalhos sejam processados consecutivamente em um único thread.
 
 >[!NOTE]
 >
@@ -284,15 +284,15 @@ A Pasta monitorada verifica a pasta de entrada em cada Intervalo de repetição,
 A limitação impede que a Pasta monitorada chame novos trabalhos quando os trabalhos anteriores não estiverem concluídos. A pasta monitorada detectará trabalhos em andamento e processará novos trabalhos com base no tamanho do lote menos os trabalhos em andamento. Por exemplo, na segunda invocação, se o número de trabalhos concluídos for apenas três e um trabalho ainda estiver em andamento, a Pasta monitorada chamará apenas mais três trabalhos.
 
 * A Pasta monitorada depende do número de arquivos presentes na pasta de preparo para descobrir quantos trabalhos estão em andamento. Se os arquivos permanecerem não processados na pasta de preparo, a Pasta monitorada não chamará mais tarefas. Por exemplo, se o tamanho do lote for quatro e três trabalhos estiverem paralisados, a Pasta monitorada chamará apenas um trabalho em invocações subsequentes. Há vários cenários que podem fazer com que os arquivos permaneçam não processados na pasta de preparo. Quando os trabalhos são interrompidos, o administrador pode encerrar o processo na página de administração do fluxo de trabalho de formulários para que a Pasta monitorada mova os arquivos para fora da pasta de preparo.
-* Se o servidor do Forms ficar inativo antes que a Pasta monitorada possa chamar os trabalhos, o administrador poderá mover os arquivos para fora da pasta de preparo. Para obter informações, consulte [Pontos de falha e recuperação](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
-* Se o servidor do Forms estiver em execução, mas a Pasta monitorada não estiver em execução quando o serviço Gerenciador de Jobs retornar as chamadas, o que ocorre quando os serviços não iniciam na sequência ordenada, o administrador poderá mover os arquivos para fora da pasta de preparo. Para obter informações, consulte [Pontos de falha e recuperação](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+* Se o Forms Server ficar inativo antes que a Pasta monitorada possa chamar os trabalhos, o administrador poderá mover os arquivos para fora da pasta de preparo. Para obter informações, consulte [Pontos de falha e recuperação](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+* Se o Servidor do Forms estiver em execução, mas a Pasta monitorada não estiver em execução quando o serviço Gerenciador de trabalhos chamar de volta, o que ocorre quando os serviços não iniciam na sequência ordenada, o administrador poderá mover os arquivos para fora da pasta de preparo. Para obter informações, consulte [Pontos de falha e recuperação](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
 
 ## Desempenho e escalabilidade {#performance-and-scalability}
 
-A pasta monitorada pode atender a 100 pastas no total em um único nó. O desempenho da Pasta monitorada depende do desempenho do servidor de formulários. Para invocação assíncrona, o desempenho é mais dependente da carga do sistema e dos trabalhos que estão na fila do Gerenciador de trabalhos.
+A pasta monitorada pode atender a 100 pastas no total em um único nó. O desempenho da Pasta monitorada depende do desempenho do Servidor do Forms. Para invocação assíncrona, o desempenho é mais dependente da carga do sistema e dos trabalhos que estão na fila do Gerenciador de trabalhos.
 
-O desempenho da Pasta monitorada pode ser aprimorado adicionando nós ao cluster. Os trabalhos de Pastas monitoradas são distribuídos pelos nós do cluster em virtude do Quartz scheduler e, no caso de solicitações assíncronas, pelo serviço Gerenciador de trabalhos. Todos os trabalhos são mantidos no banco de dados.
+O desempenho da Pasta monitorada pode ser aprimorado adicionando nós ao cluster. Os trabalhos de Pastas monitoradas são distribuídos pelos nós do cluster em virtude do Quartz scheduler e, se houver solicitações assíncronas, pelo serviço Gerenciador de trabalhos. Todos os trabalhos são mantidos no banco de dados.
 
 A Pasta monitorada depende do serviço Agendador para agendamento, cancelamento de agendamento e reagendamento dos trabalhos. Outros serviços, como o serviço de Gerenciamento de Eventos, o serviço do Gerenciador de Usuários e o serviço do Provedor de Email, estão disponíveis e compartilham o pool de threads do serviço do Agendador. Isso pode afetar o desempenho da Pasta monitorada. O ajuste do pool de threads do serviço Agendador será necessário quando todos os serviços começarem a usá-lo.
 
@@ -408,7 +408,7 @@ Estas são algumas dicas e truques ao configurar o endpoint da Pasta monitorada:
 
 ## Recomendações específicas de serviço para pastas monitoradas {#service-specific-recommendations-for-watched-folders}
 
-Para todos os serviços, você deve ajustar o tamanho do lote e o intervalo de repetição da pasta monitorada para que a taxa na qual a pasta monitorada coleta novos arquivos e pastas para processamento não exceda a taxa de trabalhos que podem ser processados pelo servidor de formulários AEM. Os parâmetros reais a serem usados podem variar dependendo da quantidade de pastas monitoradas configuradas, dos serviços que estão usando pastas monitoradas e da intensidade dos trabalhos no processador.
+Para todos os serviços, você deve ajustar o tamanho do lote e o intervalo de repetição da pasta monitorada para que a taxa na qual a pasta monitorada seleciona novos arquivos e pastas para processamento não exceda a taxa de tarefas que podem ser processadas pelo servidor do AEM Forms. Os parâmetros reais a serem usados podem variar dependendo da quantidade de pastas monitoradas configuradas, dos serviços que estão usando pastas monitoradas e da intensidade dos trabalhos no processador.
 
 ### Gerar recomendações de serviço do PDF {#generate-pdf-service-recommendations}
 

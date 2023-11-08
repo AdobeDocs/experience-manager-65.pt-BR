@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '745'
 ht-degree: 1%
 
 ---
@@ -69,11 +69,11 @@ Os modos de execução personalizados também podem ser selecionados em cada ini
 
 ## Uso de samplecontent e nosamplecontent {#using-samplecontent-and-nosamplecontent}
 
-Esses modos permitem controlar o uso de conteúdo de amostra. O conteúdo de amostra é definido antes que o início rápido seja criado e pode incluir pacotes, configurações etc.:
+Esses modos permitem controlar o uso de conteúdo de amostra. O conteúdo de amostra é definido antes que o início rápido seja criado e pode incluir pacotes, configurações e assim por diante:
 
-* A variável `samplecontent` o modo de execução instalará esse conteúdo (o modo padrão).
+* A variável `samplecontent` modo de execução instala esse conteúdo (o modo padrão).
 
-* A variável `nosamplecontent` não instalará o conteúdo de amostra.
+* A variável `nosamplecontent` não instala o conteúdo de amostra.
 
 O modo de execução nosamplecontent foi projetado para instalações de produção.
 

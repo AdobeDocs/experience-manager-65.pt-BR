@@ -2,7 +2,7 @@
 title: Como usar o serviço de execução de script no AEM Forms no JEE Workbench para criar dados XML?
 description: Usar o serviço de script de execução no AEM Forms no JEE Workbench para criar dados XML
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 0%
@@ -124,7 +124,7 @@ if (currentChild.getNodeType() == Node.ELEMENT_NODE)
 
 {
 
-// found the top level node
+// found the top-level node
 
 Element newResource = document.createElement("resource");
 

@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 docset: aem65
 exl-id: e50974a7-01ac-4a08-bea2-df9cc975c69e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 No espaço de trabalho do AEM Forms, os gerentes agora podem acessar as tarefas atribuídas a qualquer pessoa em sua hierarquia — relatórios diretos ou indiretos — e executar várias ações neles. As tarefas estão disponíveis na guia Tarefa no espaço de trabalho do AEM Forms. As ações compatíveis com as tarefas de subordinados diretos são:
 
-**Encaminhar** Encaminhar uma tarefa de subordinado direto a qualquer usuário.
+**Encaminhar** - Encaminhar uma tarefa do subordinado direto para qualquer usuário.
 
-**Reclamação** Reclamar uma tarefa de um subordinado direto.
+**Reclamação** - Reclamar uma tarefa de subordinação direta.
 
-**Reclamação e abertura** Reclamar uma tarefa de um subordinado direto e abri-la automaticamente na lista de tarefas pendentes do gerente.
+**Reclamação e abertura** - Reclamar uma tarefa de um subordinado direto e abri-la automaticamente na lista de tarefas pendentes do gerente.
 
-**Rejeitar** Rejeitar uma tarefa encaminhada a um subordinado direto por algum outro usuário. Essa opção está disponível para as tarefas encaminhadas por outros usuários a um subordinado direto.
+**Rejeitar** - Rejeitar uma tarefa encaminhada a um subordinado direto por algum outro usuário. Essa opção está disponível para as tarefas encaminhadas por outros usuários a um subordinado direto.
 
 O AEM Forms restringe o acesso de um usuário somente às tarefas para as quais o usuário tem controle de acesso (ACL). Essa verificação garante que um usuário possa buscar somente as tarefas nas quais tem permissões de acesso. Usando serviços da Web e implementações de terceiros para definir a hierarquia, uma organização pode personalizar a definição de gerente e subordinados diretos para atender às suas necessidades.
 

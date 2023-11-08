@@ -4,9 +4,9 @@ description: Descubra as práticas recomendadas compiladas pelas equipes de enge
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1604'
 ht-degree: 40%
 
 ---
@@ -160,7 +160,7 @@ As modificações na estrutura de conteúdo em um blueprint/árvore de origem s�
 
 ## Personalização de implantações {#customizing-rollouts}
 
-As configurações de implantação do MSM são altamente personalizáveis. Você deve estar ciente de que a automatização de implantações pode ter consequências abrangentes. Como prática recomendada, você deve planejar *muito* cuidadosamente antes, por exemplo:
+As configurações de implantação do MSM são altamente personalizáveis. A automatização de implantações pode ter consequências abrangentes. Como prática recomendada, você deve planejar *muito* cuidadosamente antes, por exemplo:
 
 * automação de implantações; por exemplo, com [onModify acionadores](#onmodify),
 * personalização [tipos/propriedades de nó](#node-types-properties),

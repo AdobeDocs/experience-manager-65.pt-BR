@@ -11,7 +11,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 feature: Adaptive Forms
 exl-id: 54a76d5c-d19b-4026-b71c-7b9e862874bc
-source-git-commit: 2b1daa1dcd7b5d81c0012ca0de65e9e9043fd4dc
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '2416'
 ht-degree: 2%
@@ -93,8 +93,8 @@ Com as melhorias nos recursos e atualizações subsequentes nas versões do AEM 
     
             }
         ],
-        "originCode": <Origin http status code>, (optional - in case of SERVER_SIDE_VALIDATION)
-        "originMessage" : "<unstructured error message returned by service>" (optional - in case of SERVER_SIDE_VALIDATION)
+        "originCode": <Origin http status code>, (optional - if there is SERVER_SIDE_VALIDATION)
+        "originMessage" : "<unstructured error message returned by service>" (optional - if there is SERVER_SIDE_VALIDATION)
     }
 ```
 

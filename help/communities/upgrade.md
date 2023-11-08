@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '618'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ Para essa finalidade, uma ferramenta de migração de código aberto está dispo
 
 ### APIs Java {#java-apis}
 
-Ao atualizar de comunidades sociais do AEM 6.0 para comunidades do AEM 6.3, esteja ciente de que muitas APIs foram reorganizadas em pacotes diferentes. A maioria deve ser facilmente resolvida ao usar um IDE para personalização de recursos de Comunidades.
+Ao atualizar de comunidades sociais do AEM 6.0 para comunidades do AEM 6.3, muitas APIs foram reorganizadas em diferentes pacotes. A maioria deve ser facilmente resolvida ao usar um IDE para personalização de recursos de Comunidades.
 
 Para obter detalhes sobre o pacote SocialUtils obsoleto, visite [Refatoração de SocialUtils](/help/communities/socialutils.md).
 

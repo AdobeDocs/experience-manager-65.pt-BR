@@ -1,16 +1,14 @@
 ---
 title: Criação de aplicativos móveis
 description: O Painel do AEM Mobile permite criar, construir e implantar o aplicativo móvel, criar, excluir e editar metadados do aplicativo. Siga esta página para saber mais.
-uuid: 293b5d29-df7e-42dd-ae64-8c677317e7a5
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
-discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1011'
 ht-degree: 0%
 
 ---
@@ -67,7 +65,7 @@ O conteúdo pode ser criado, atualizado e excluído no AEM Mobile da mesma manei
 
 Depois de adicionar ou modificar o conteúdo por meio do Bloco Gerenciar conteúdo da página, você pode enviar essas alterações para os clientes com uma atualização de Versão de conteúdo.
 
-O pacote de conteúdo permite que o autor do aplicativo AEM gerencie o conteúdo da página no AEM e solicite que sua equipe de desenvolvimento faça alterações no aplicativo PhoneGap Shell (ou seja, estrutura ou infraestrutura do aplicativo) e, em seguida, envie essas alterações para seus clientes rapidamente e sem precisar solicitar que um desenvolvedor envie novamente para as várias lojas para distribuição.
+O Pacote de conteúdo permite que o autor do aplicativo AEM gerencie o conteúdo da página no AEM e que sua equipe de desenvolvimento altere o aplicativo PhoneGap Shell (ou seja, a estrutura ou a infraestrutura do aplicativo) e, em seguida, envie essas alterações para seus clientes rapidamente e sem precisar solicitar que um desenvolvedor envie novamente para as várias lojas para distribuição.
 
 O Pacote de conteúdo cria um arquivo ZIP, considerado um Pacote de versão de conteúdo, para cada atualização. Esses pacotes contêm recursos html e páginas html que são gerados durante a renderização do aplicativo e são inteligentes o suficiente para empacotar apenas os arquivos que foram modificados desde a última atualização.
 

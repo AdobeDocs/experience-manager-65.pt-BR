@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab018b6d-0233-4439-bb75-58c5421d769a
 feature: PDF Generator
 exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '7285'
+source-wordcount: '7282'
 ht-degree: 0%
 
 ---
@@ -226,7 +226,7 @@ Essas opções configuram imagens coloridas, em tons de cinza e monocromáticas:
 
 **Subamostragem para:** Seleciona um pixel no centro da área de amostra e substitui toda a área por esse pixel na resolução especificada. A subamostragem reduz significativamente o tempo de conversão em comparação à redução da resolução, mas resulta em imagens menos suaves e contínuas.
 
-A configuração de resolução para cores e tons de cinza deve ser de 1,5 a 2 vezes maior que a linha de controle da tela em que o arquivo será impresso. (Desde que você não fique abaixo dessa configuração de resolução recomendada, imagens sem linhas retas ou padrões geométricos ou repetitivos não serão afetadas por uma resolução mais baixa.) A resolução para imagens monocromáticas deve ser a mesma que o dispositivo de saída. Entretanto, lembre-se de que salvar uma imagem monocromática em uma resolução superior a 1500 dpi aumenta o tamanho do arquivo sem melhorar a qualidade da imagem.
+A configuração de resolução para cores e tons de cinza deve ser de 1,5 a 2 vezes maior que a linha de controle da tela em que o arquivo será impresso. (Desde que você não fique abaixo dessa configuração de resolução recomendada, imagens sem linhas retas ou padrões geométricos ou repetitivos não serão afetadas por uma resolução mais baixa.) A resolução para imagens monocromáticas deve ser a mesma que o dispositivo de saída. Entretanto, salvar uma imagem monocromática em uma resolução superior a 1500 dpi aumenta o tamanho do arquivo sem melhorar significativamente a qualidade da imagem.
 
 Considere também se os usuários precisam ampliar uma página. Por exemplo, se estiver criando um documento PDF de um mapa, considere usar uma resolução de imagem mais alta para que os usuários possam ampliar o mapa.
 

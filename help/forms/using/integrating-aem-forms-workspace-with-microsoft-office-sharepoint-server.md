@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: 8990b422-f4f6-4080-871a-33cdf7ca6455
 docset: aem65
 exl-id: d080932f-d5fb-482d-9329-62da5df10362
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Execute as seguintes etapas para integrar o AEM Forms Workspace a uma Web Part:
 
 1. Na página Visualizador de páginas, execute as seguintes tarefas:
 
-   1. Na caixa Link, digite o URL do AEM Forms Workspace, como `https://[AEM_forms_Server]:8080/lc/ws` onde `[AEM_forms_Server]` representa o IP ou o Nome do servidor de formulários AEM.
+   1. Na caixa Link, digite o URL do AEM Forms Workspace, como `https://[AEM_forms_Server]:8080/lc/ws` onde `[AEM_forms_Server]` representa o IP ou o Nome do AEM Forms Server.
    1. Clique em **Aparência** e modificar a altura, a largura e o título para que você possa ver toda a interface do usuário do Workspace. Por exemplo, você pode definir a altura e a largura como 6 polegadas e 11 polegadas, respectivamente.
    1. Clique em **Link de teste**. Uma nova janela do navegador da Web é exibida com o Espaço de trabalho nela.
    1. (Opcional) Clique em **Layout** e modificar o layout do Espaço de Trabalho na Web Part.

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '635'
 ht-degree: 1%
 
 ---
@@ -118,7 +118,7 @@ Quando o componente de página depende do componente de página móvel ( `/libs/
 
   `deviceGroup.drawHead(pageContext);`
 
-* O método `DeviceGroup.drawHead(pageContext)` inclui o componente init do emulador, ou seja, chama o `init.html.jsp` do componente do emulador. Se o componente do emulador não tiver o seu próprio `init.html.jsp` e depende do emulador base móvel ( `wcm/mobile/components/emulators/base)`, o script de inicialização do emulador base móvel é chamado de ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
+* O método `DeviceGroup.drawHead(pageContext)` inclui o componente de inicialização do emulador, ou seja, chama o `init.html.jsp` do componente do emulador. Se o componente do emulador não tiver o seu próprio `init.html.jsp` e depende do emulador base móvel ( `wcm/mobile/components/emulators/base)`, o script de inicialização do emulador base móvel é chamado de ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
 
 * O script de inicialização do emulador base móvel é definido pelo JavaScript:
 

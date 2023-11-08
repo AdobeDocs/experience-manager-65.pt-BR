@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a975ea2e-5e24-4a96-bd62-63bb98836ff2
 docset: aem65
 exl-id: 1b75721c-b223-41f0-88d9-bd855b529f31
-source-git-commit: a2b1bd5462ae1837470e31cfeb87a95af1c69be5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '675'
 ht-degree: 4%
 
 ---
@@ -56,12 +56,10 @@ A ordem de precedência é (em ordem decrescente) `/conf`, `/apps`, `/libs`.
 >
 >O método recomendado para configuração e outras alterações é:
 >
->1. Recriar o item necessário (ou seja, como ele existe em `/libs`) em `/apps`
+>1. Recrie o item necessário (ou seja, como ele existe em `/libs`) em `/apps`
 >
 >1. Fazer alterações em `/apps`
-
 >
-
 
 A estrutura básica de um modelo é mantida em:
 
@@ -109,7 +107,7 @@ Mais detalhes sobre os nós e suas propriedades são:
 
 * **Modelo**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>Nome</th>
@@ -151,7 +149,7 @@ Mais detalhes sobre os nós e suas propriedades são:
 
 * **Elementos**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>Nome</th>
@@ -159,7 +157,7 @@ Mais detalhes sobre os nós e suas propriedades são:
      <th>Valor</th>
     </tr>
     <tr>
-     <td><code>elements</code> </td>
+     <td><code>elements</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>obrigatório</p> </td>
      <td><p>Nó que contém a definição dos elementos do fragmento de conteúdo. É obrigatório e precisa conter pelo menos um nó secundário para o <strong>Principal</strong> elemento, mas pode conter [1..n] nós-filhos.</p> <p>Quando o modelo é usado, a sub-ramificação dos elementos é copiada para a sub-ramificação do modelo do fragmento.</p> <p>O primeiro elemento (conforme visualizado em CRXDE Lite) é automaticamente considerado como sendo o <i>main</i> elemento; o nome do nó é irrelevante e o nó em si não tem um significado especial, exceto o fato de que é representado pelo ativo principal; os outros elementos são tratados como subativos.</p> </td>
     </tr>
@@ -168,7 +166,7 @@ Mais detalhes sobre os nós e suas propriedades são:
 
 * **Nome do elemento**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>Nome</th>
@@ -210,7 +208,7 @@ Mais detalhes sobre os nós e suas propriedades são:
 
 * **Variações**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>Nome</th>
@@ -218,7 +216,7 @@ Mais detalhes sobre os nós e suas propriedades são:
      <th>Valor</th>
     </tr>
     <tr>
-     <td><code>variations</code> </td>
+     <td><code>variations</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>opcional</p> </td>
      <td>Esse nó opcional contém a definição das variações iniciais do fragmento de conteúdo.</td>
     </tr>
@@ -227,7 +225,7 @@ Mais detalhes sobre os nós e suas propriedades são:
 
 * **Nome da variação**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>Nome</th>
@@ -235,7 +233,7 @@ Mais detalhes sobre os nós e suas propriedades são:
      <th>Valor</th>
     </tr>
     <tr>
-     <td><code>&lt;<i>variation-name</i>&gt;</code> </td>
+     <td><code>&lt;<i>variation-name</i>&gt;</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>obrigatório se um nó de variação estiver presente</p> </td>
      <td><p>Define uma variação inicial.<br /> A variação é adicionada a todos os elementos do fragmento de conteúdo por padrão.</p> <p>A variação terá o mesmo conteúdo inicial que o respectivo elemento (consulte <code class="code">defaultContent/
        initialContentType</code>)</p> </td>

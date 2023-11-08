@@ -1,19 +1,15 @@
 ---
 title: Design do layout
-seo-title: Layout Design
 description: Detalhes do design de layout explica como você pode criar layouts a serem usados para suas cartas ou comunicações interativas.
-seo-description: Layout Design Details explains how you can create layouts to be used for your letters or Interactive Communications.
-uuid: 469a8a71-88f7-4102-bb02-38ed05390f6c
 content-type: reference
 topic-tags: correspondence-management, interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 683809ac-089b-49bf-a72c-67d32439081f
 docset: aem65
 feature: Correspondence Management
 exl-id: 9e1b0067-c7dc-4bbb-a209-d674592be858
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2170'
+source-wordcount: '2171'
 ht-degree: 0%
 
 ---
@@ -37,12 +33,12 @@ Um layout define o layout gráfico de um canal de carta/impressão de uma comuni
 
 Siga estas etapas para criar layouts para letras/canais de impressão de Comunicações interativas:
 
-1. Analise o layout e determine o conteúdo que está sendo repetido em todas as páginas; geralmente, o cabeçalho e o rodapé da página se encaixam nesta categoria. Esse conteúdo é colocado em páginas principais do layout. O conteúdo restante vai para o corpo das páginas do layout. Em uma jaqueta de política, o logotipo e o endereço da empresa podem ser adicionados ao cabeçalho e ao rodapé da página principal. Por exemplo, Aviso de cancelamento usa o mesmo layout.
+1. Analise o layout e determine o conteúdo que está sendo repetido em todas as páginas; geralmente, o cabeçalho e o rodapé da página se encaixam nesta categoria. Esse conteúdo é colocado nas páginas mestras do layout. O conteúdo restante vai para o corpo das páginas do layout. Em uma jaqueta de política, o logotipo e o endereço da empresa podem ser adicionados ao cabeçalho e ao rodapé da página principal. Por exemplo, Aviso de cancelamento usa o mesmo layout.
 1. Ao criar páginas de corpo, divida o conteúdo da página em seções. Cada seção é projetada como um subformulário incorporado no próprio layout ou como um layout de fragmento. Se a seção contiver tabela, modele a seção como um fragmento de layout.
 1. Um layout pode ser criado da seguinte maneira:
 
    1. Torne cada seção um subformulário separado que contenha todos os elementos da seção.
-   1. Tornar cada subformulário de seção filho do mesmo subformulário pai. O layout do subformulário pai é definido como fluxo para permitir que as seções sejam deslocadas abaixo caso dados grandes sejam mesclados nas seções anteriores.
+   1. Tornar cada subformulário de seção filho do mesmo subformulário pai. O layout do subformulário pai é definido como fluxo para permitir que as seções sejam deslocadas abaixo se houver dados grandes mesclados nas seções anteriores.
    1. Seção A residência principal também pode ser reutilizada em outros layouts. Crie-o como um layout de fragmento.
    1. Seção Detalhes adicionais de interesse contém apenas dois elementos posicionados um abaixo do outro, podem conter dados grandes e foram projetados como fluídos.
    1. Outras seções contêm elementos em posições específicas para que sejam projetadas como layout posicionado.
@@ -182,7 +178,7 @@ Um campo relacionável não deve:
 * têm a vinculação definida como &quot;nenhum&quot;
 * ser filho de um &lt;exclgroup> element
 
-Desde que um campo relacionável atenda aos critérios descritos acima, ele pode estar em qualquer local e em qualquer profundidade de aninhamento no layout. Você pode usar campos relacionáveis em páginas principais.
+Desde que um campo relacionável atenda aos critérios descritos acima, ele pode estar em qualquer local e em qualquer profundidade de aninhamento no layout. Você pode usar campos relacionáveis nas páginas-mestre.
 
 Os campos são mais flexíveis em sua configuração de layout do que os subformulários de área de destino; no entanto, estão vinculados a um único tipo de valor. Você pode tornar um campo grande ou defini-lo como uma largura e altura fixas, e assim por diante. O módulo resolvido ou o resultado da regra é enviado para o campo.
 
@@ -190,7 +186,7 @@ Os campos são mais flexíveis em sua configuração de layout do que os subform
 
 Use um subformulário se desejar capturar vários conteúdos do módulo em um layout de fluxo vertical de cima para baixo (vários parágrafos ou imagens). Seu layout deve lidar com o fato de que o subformulário cresce em altura para acomodar seu conteúdo. Se não puder ter certeza de que o comprimento do conteúdo associado ao subformulário/destino nunca excede o espaço reservado para o subformulário no layout, crie o subformulário como filho em um contêiner de subformulário fluído. Esse processo garante que os objetos de layout abaixo do subformulário fluam para baixo à medida que o subformulário cresce.
 
-Use um campo se desejar capturar os dados do módulo ou os dados do elemento do dicionário de dados no esquema do layout (porque os campos estão vinculados aos dados) ou exibir o conteúdo do módulo em uma página principal. Lembre-se de que o conteúdo de uma página principal não pode fluir com o conteúdo da página de corpo, portanto, é necessário garantir que o campo de imagem seja usado como logotipo do cabeçalho. Esta tabela fornece mais critérios para decidir quando usar um subformulário ou um campo em um layout.
+Use um campo se quiser capturar os dados do módulo ou os dados do elemento do dicionário de dados no esquema do layout (porque os campos estão vinculados aos dados) ou exibir o conteúdo do módulo em uma página-mestre. Lembre-se de que o conteúdo de uma página-mestre não pode fluir com o conteúdo da página de corpo, portanto, é necessário garantir que o campo de imagem seja usado como logotipo do cabeçalho. Esta tabela fornece mais critérios para decidir quando usar um subformulário ou um campo em um layout.
 
 <table>
  <tbody>
@@ -208,11 +204,11 @@ Use um campo se desejar capturar os dados do módulo ou os dados do elemento do 
   </tr>
   <tr>
    <td><p>Os grupos de dados repetitivos, opcionais e condicionais são vinculados aos subformulários para reduzir o risco de erros de design que podem ocorrer se os scripts forem usados para atingir os mesmos resultados</p> </td>
-   <td><p>Elementos como o logotipo e o endereço de sua organização são exibidos em todas as páginas de uma correspondência/Comunicação interativa. Nesse caso, crie campos de formulário para esses elementos e coloque-os na página principal. Se você definir a vinculação de campo como "Sem vinculação de dados", os campos não aparecerão como campos relacionáveis no Editor de carta/comunicação interativa. Se você quiser relacionar algum tipo de conteúdo a esses campos, eles devem ter vinculação.</p> <p>Se o endereço da sua empresa contiver mais de uma linha de dados, use o campo de texto com a opção "Permitir várias linhas" para representar o endereço no layout.</p> <p>Se o tipo de dados de um campo de texto for definido como texto sem formatação, a versão de texto sem formatação da saída do módulo será usada em vez da versão de rich text (toda a formatação será descartada). Para preservar a formatação, defina o tipo de dados do campo de texto como rich text.</p> </td>
+   <td><p>Elementos como o logotipo e o endereço de sua organização são exibidos em todas as páginas de uma correspondência/Comunicação interativa. Nesse caso, crie campos de formulário para esses elementos e coloque-os na página mestre. Se você definir a vinculação de campo como "Sem vinculação de dados", os campos não aparecerão como campos relacionáveis no Editor de carta/comunicação interativa. Se você quiser relacionar algum tipo de conteúdo a esses campos, eles devem ter vinculação.</p> <p>Se o endereço da sua empresa contiver mais de uma linha de dados, use o campo de texto com a opção "Permitir várias linhas" para representar o endereço no layout.</p> <p>Se o tipo de dados de um campo de texto for definido como texto sem formatação, a versão de texto sem formatação da saída do módulo será usada em vez da versão de rich text (toda a formatação será descartada). Para preservar a formatação, defina o tipo de dados do campo de texto como rich text.</p> </td>
   </tr>
   <tr>
    <td><p>O texto flui</p> </td>
-   <td><p>Campos de texto e de imagem são usados em páginas principais. Páginas principais não podem usar subformulários como áreas de destino.</p> </td>
+   <td><p>Campos de texto e de imagem são usados em páginas-mestre. Páginas-mestre não podem usar subformulários como áreas de destino.</p> </td>
   </tr>
   <tr>
    <td><p>Os objetos são agrupados e organizados sem vincular o subformulário a um elemento de dados</p> </td>
@@ -227,7 +223,7 @@ Use um campo se desejar capturar os dados do módulo ou os dados do elemento do 
 
 ## Configurar elementos repetitivos {#setting-up-repetitive-elements}
 
-Quando elementos como o logotipo e o endereço de sua organização aparecem em todas as páginas de uma correspondência/Comunicação interativa, crie campos de formulário para esses elementos e os coloque na página principal. Use a vinculação de Nome (Nome do campo) para esses campos.
+Quando elementos como o logotipo e o endereço de sua organização aparecem em todas as páginas de uma correspondência/comunicação interativa, crie campos de formulário para esses elementos e coloque-os na página principal. Use a vinculação de Nome (Nome do campo) para esses campos.
 
 ## Especificar o formato de renderização do servidor {#specify-the-server-nbsp-render-format}
 

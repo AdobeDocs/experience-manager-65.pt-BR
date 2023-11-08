@@ -11,7 +11,7 @@ topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '9095'
 ht-degree: 0%
@@ -593,7 +593,7 @@ Quando você atualiza um recurso, a nova versão é criada com base nos atributo
 
 Por exemplo, se você atualizar um arquivo XDP e ele contiver referências a outros recursos, essas referências adicionais também serão registradas. Suponha que o form.xdp versão 1.0 tenha duas referências externas: um logotipo e uma folha de estilos, e você atualiza subsequentemente o form.xdp para que ele agora tenha três referências: um logotipo, uma folha de estilos e um arquivo de esquema. Durante a atualização, o repositório adicionará a terceira relação (ao arquivo de esquema) à tabela de relação pendente. Quando o arquivo de esquema estiver presente no repositório, a relação será formada automaticamente. No entanto, se a versão 2.0 do form.xdp não usar mais o logotipo, a versão 2.0 do form.xdp não terá uma relação com o logotipo.
 
-Todas as operações de atualização são atômicas e transacionais. Por exemplo, se dois usuários lerem o mesmo recurso e decidirem atualizar a versão 1.0 para a versão 2.0, um deles terá êxito e um deles falhará, a integridade do repositório será mantida e ambos receberão uma mensagem confirmando o sucesso ou a falha. Se a transação não for confirmada, ela será revertida no caso de falha do banco de dados e expirará ou reverterá dependendo do servidor de aplicativos.
+Todas as operações de atualização são atômicas e transacionais. Por exemplo, se dois usuários lerem o mesmo recurso e decidirem atualizar a versão 1.0 para a versão 2.0, um deles terá êxito e um deles falhará, a integridade do repositório será mantida e ambos receberão uma mensagem confirmando o sucesso ou a falha. Se a transação não for submetida a commit, ela será revertida caso haja uma falha no banco de dados e sofrerá timeout ou rollback, dependendo do servidor de aplicativos.
 
 Você pode atualizar recursos de forma programática usando a API Java do serviço de repositório ou a API do serviço da Web.
 

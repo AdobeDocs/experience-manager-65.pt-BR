@@ -1,18 +1,14 @@
 ---
 title: Criar correspondência
-seo-title: Create Correspondence
 description: Depois de criar um modelo de correspondência, você pode usá-lo para criar correspondência no AEM Forms gerenciando dados, conteúdo e anexos.
-seo-description: After you have created a letter template, you can use it to create correspondence in AEM Forms by managing data, content, and attachments.
-uuid: 48cf2b26-c9b4-4127-9ea0-1b36addbff60
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3853'
+source-wordcount: '3849'
 ht-degree: 0%
 
 ---
@@ -261,7 +257,7 @@ Você pode fazer alterações no layout e no conteúdo para garantir que a corre
    >
    >Se você estiver usando o Mozilla Firefox e o tipo de representação HTML, para visualizar a letra como PDF nivelado, certifique-se de usar o plug-in do navegador nativo e não o plug-in do Acrobat. Para selecionar o plug-in do navegador nativo, vá para as configurações do Mozilla Firefox e, para o tipo de conteúdo PDF, selecione Visualizar no Firefox.
 
-1. Se você achar que a visualização de PDF nivelado é satisfatória, toque em **Enviar** para enviar a carta. Ou, para fazer alterações na carta, toque em **Sair da visualização** para voltar para a visualização Criar interface de correspondência da carta para fazer alterações nela. Ao tocar em Enviar, se a configuração Gerenciar instância de carta estiver habilitada na instância de Publicação, a instância de carta de envio será gerada.
+1. Se você achar que a visualização de PDF nivelado é satisfatória, toque em **Enviar** para enviar a carta. Ou, para alterar a letra, toque em **Sair da visualização** para voltar para a visualização Criar interface de correspondência da carta para fazer alterações nela. Ao tocar em Enviar, se a configuração Gerenciar instância de carta estiver habilitada na instância de Publicação, a instância de carta de envio será gerada.
 
    Para obter mais informações, consulte Instância de rascunho em Salvar rascunhos e enviar instâncias de cartas.
 

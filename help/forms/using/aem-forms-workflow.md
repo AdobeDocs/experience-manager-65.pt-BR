@@ -1,17 +1,13 @@
 ---
 title: Fluxo de trabalho centrado no Forms no OSGi
-seo-title: Rapidly build adaptive forms-based processes, automate document services operations, and use Adobe Sign with AEM workflows
 description: Use o fluxo de trabalho do AEM Forms para automatizar e criar rapidamente revisões e aprovações, iniciando serviços de documento
-seo-description: Use AEM Forms Workflow to automate and rapidly build review and approvals, to start document services (For example, to convert a PDF document to another format), integrate with Adobe Sign signature workflow, and more.
-uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3681'
+source-wordcount: '3679'
 ht-degree: 2%
 
 ---
@@ -205,7 +201,7 @@ O aplicativo de workflow que você criou está disponível como um aplicativo na
 
 ### Envio de um aplicativo do aplicativo AEM Forms {#afa}
 
-O aplicativo AEM Forms é sincronizado com um servidor do AEM Forms e permite fazer alterações nos dados do formulário, nas tarefas, nos aplicativos de fluxo de trabalho e nas informações salvas (rascunhos/modelos) na sua conta. Para obter mais informações, consulte [aplicativo AEM Forms](/help/forms/using/aem-forms-app.md) e artigos relacionados.
+O aplicativo AEM Forms é sincronizado com um servidor do AEM Forms e permite alterar os dados do formulário, as tarefas, os aplicativos de fluxo de trabalho e as informações salvas (rascunhos/modelos) na sua conta. Para obter mais informações, consulte [aplicativo AEM Forms](/help/forms/using/aem-forms-app.md) e artigos relacionados.
 
 ### Envio de um formulário adaptável {#af}
 

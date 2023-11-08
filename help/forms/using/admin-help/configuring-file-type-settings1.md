@@ -9,9 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 89f4d3cf-eb2e-4d55-8209-16ecbba03792
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '6170'
+source-wordcount: '6167'
 ht-degree: 0%
 
 ---
@@ -218,7 +218,7 @@ Ative estas opções para especificar a aparência da janela:
 
 ## Flash de vídeos para configurações de PDF {#flash-videos-to-pdf-settings}
 
-O PDF Generator suporta a capacidade de enviar um vídeo para o Flash Adobe (SWF ou arquivo FLV) e criar um arquivo PDF com um vídeo para o Flash Adobe incorporado. Essa conversão não requer que o Flash Player Adobe esteja instalado no servidor de formulários. Para obter instruções sobre como acessar essa opção, consulte [Criar ou editar configurações de tipo de arquivo](configuring-file-type-settings.md#create-or-edit-file-type-settings).
+O PDF Generator suporta a capacidade de enviar um vídeo para o Flash Adobe (SWF ou arquivo FLV) e criar um arquivo PDF com um vídeo para o Flash Adobe incorporado. Essa conversão não requer que o Flash Player Adobe esteja instalado no servidor do Forms. Para obter instruções sobre como acessar essa opção, consulte [Criar ou editar configurações de tipo de arquivo](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
 **Extensões de nome de arquivo:** Lista separada por vírgulas de extensões de nome de arquivo que podem ser convertidas.
 
@@ -253,7 +253,7 @@ Para obter instruções sobre como acessar essa configuração, consulte [Criar 
 
    * Se necessário, selecione um diretório de fontes diferente do **Fonte** menu suspenso. Esse menu suspenso lista os diretórios de fontes especificados em **Início > Configurações > Sistema principal > Configurações principais**.
    * Selecione uma ou mais fontes na **Fontes disponíveis** e clique em **Adicionar**. Essas fontes são adicionadas à variável **Fontes a serem desincorporadas** lista.
-   * Se quiser desincorporar algumas fontes que não existem no servidor de formulários, insira os nomes dessas fontes na **Adicionar fontes para desincorporar** caixa. Clique em **Adicionar**.
+   * Se quiser desincorporar algumas fontes que não existem no Forms Server, insira os nomes dessas fontes na **Adicionar fontes para desincorporar** caixa. Clique em **Adicionar**.
 
    >[!NOTE]
    >
@@ -315,7 +315,7 @@ Preservar superimposição: mescla a cor do trabalho artístico transparente com
 
 A tabela a seguir mostra tipos comuns de impressoras e sua resolução medida em dpi, sua regra de tela padrão medida em linhas por polegada (lpi) e uma resolução de reamostragem para imagens medidas em pixels por polegada (ppi). Por exemplo, se você estivesse imprimindo em uma impressora a laser de 600 dpi, insira 170 para a resolução na qual as imagens serão reamostradas.
 
-**Imagens** Selecione Imagens para especificar as opções de compactação e reamostragem para imagens coloridas, em tons de cinza e monocromáticas. Talvez você queira experimentar essas opções para encontrar um equilíbrio adequado entre o tamanho do arquivo e a qualidade da imagem.A configuração de resolução para imagens coloridas e em tons de cinza deve ser de 1,5 a 2 vezes maior que a regra da tela de linha na qual o arquivo será impresso. A resolução para imagens monocromáticas deve ser a mesma do dispositivo de saída, mas lembre-se de que salvar uma imagem monocromática em uma resolução superior a 1500 dpi aumenta o tamanho do arquivo sem melhorar a qualidade da imagem de forma notável. Imagens que serão ampliadas, como mapas, podem exigir resoluções mais altas.
+**Imagens** Selecione Imagens para especificar as opções de compactação e reamostragem para imagens coloridas, em tons de cinza e monocromáticas. Talvez você queira experimentar essas opções para encontrar um equilíbrio adequado entre o tamanho do arquivo e a qualidade da imagem.A configuração de resolução para imagens coloridas e em tons de cinza deve ser de 1,5 a 2 vezes maior que a regra da tela de linha na qual o arquivo será impresso. A resolução para imagens monocromáticas deve ser a mesma do dispositivo de saída, mas salvar uma imagem monocromática em uma resolução superior a 1500 dpi aumenta o tamanho do arquivo sem melhorar notavelmente a qualidade da imagem. Imagens que serão ampliadas, como mapas, podem exigir resoluções mais altas.
 
 >[!NOTE]
 >

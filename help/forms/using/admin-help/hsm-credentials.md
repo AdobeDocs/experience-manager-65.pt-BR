@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: facbeab2-de95-4778-894c-faa771d3391e
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1323'
 ht-degree: 0%
@@ -23,7 +23,7 @@ As assinaturas digitais de formulários AEM podem usar credenciais armazenadas e
 
 >[!NOTE]
 >
->Depois de alterar a configuração do HSM, reinicie o servidor de formulários AEM.
+>Depois de alterar a configuração do HSM, reinicie o AEM Forms Server.
 
 ## Criar um alias para uma credencial HSM quando o dispositivo HSM estiver online {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-online}
 
@@ -50,7 +50,7 @@ As assinaturas digitais de formulários AEM podem usar credenciais armazenadas e
 1. Na lista Tipo de slot, selecione ID do slot, Índice do slot ou Nome do token e especifique um valor na caixa Informações do slot. Os formulários AEM usam essas configurações para determinar onde as credenciais são armazenadas no HSM.
 
    * **Nome do token:** Corresponde a um nome de partição (por exemplo, HSMPART1).
-   * **ID do Slot:** A ID do slot é um número inteiro que corresponde ao slot, que por sua vez corresponde a uma partição. Por exemplo, o cliente (servidor de formulários) registrou-se primeiro com a partição HSMPART1. Isso mapeia o slot 1 para a partição HSMPART1 deste cliente. Como HSMPART1 é a primeira partição registrada, a ID do Slot é 1 e você definiria Informações do Slot como 1.
+   * **ID do Slot:** A ID do slot é um número inteiro que corresponde ao slot, que por sua vez corresponde a uma partição. Por exemplo, o cliente (Forms Server) registrou-se primeiro com a partição HSMPART1. Isso mapeia o slot 1 para a partição HSMPART1 deste cliente. Como HSMPART1 é a primeira partição registrada, a ID do Slot é 1 e você definiria Informações do Slot como 1.
 
      A ID do slot é definida cliente por cliente. Se você registrou uma segunda máquina em uma partição diferente (por exemplo, HSMPART2 no mesmo dispositivo HSM), o slot 1 seria associado à partição HSMPART2 desse cliente.
 
@@ -73,7 +73,7 @@ As assinaturas digitais de formulários AEM podem usar credenciais armazenadas e
 1. No console de administração, clique em Configurações > Gerenciamento de armazenamento de confiança > Credenciais HSM.
 1. Clique na caixa de seleção ao lado da credencial que você deseja verificar e clique em Verificar status.
 
-A coluna Status reflete o status atual da credencial. Em caso de falha, um X vermelho é exibido na coluna Status. Passe o mouse sobre o X para exibir uma dica de ferramenta contendo o motivo da falha.
+A coluna Status reflete o status atual da credencial. Se houver uma falha, um X vermelho será exibido na coluna Status. Passe o mouse sobre o X para exibir uma dica de ferramenta contendo o motivo da falha.
 
 ## Atualizar propriedades de alias de credencial HSM {#update-hsm-credential-alias-properties}
 
@@ -83,7 +83,7 @@ A coluna Status reflete o status atual da credencial. Em caso de falha, um X ver
 
 ## Redefinir todas as conexões HSM {#reset-all-hsm-connections}
 
-Redefina as conexões abertas para um dispositivo HSM após qualquer interrupção na sessão de rede entre o servidor de formulários e o dispositivo HSM. Por exemplo, podem ocorrer interrupções devido a uma interrupção da rede ou ao dispositivo HSM ser colocado off-line para uma atualização de software. Após uma interrupção, as conexões existentes ficam obsoletas e qualquer solicitação de assinatura nessas conexões falha. Usar a opção Redefinir todas as conexões HSM apaga as conexões antigas.
+Redefina as conexões abertas para um dispositivo HSM após qualquer interrupção na sessão de rede entre o servidor Forms e o dispositivo HSM. Por exemplo, podem ocorrer interrupções devido a uma interrupção da rede ou ao dispositivo HSM ser colocado off-line para uma atualização de software. Após uma interrupção, as conexões existentes ficam obsoletas e qualquer solicitação de assinatura nessas conexões falha. Usar a opção Redefinir todas as conexões HSM apaga as conexões antigas.
 
 1. No console de administração, clique em Configurações > Gerenciamento de armazenamento de confiança > Credenciais HSM.
 1. Clique em Redefinir todas as conexões HSM.

@@ -1,19 +1,15 @@
 ---
 title: Configuração da segmentação com o ContextHub
-seo-title: Configuring Segmentation with ContextHub
 description: Saiba como configurar a segmentação com o Context Hub.
-seo-description: Learn how to configure segmentation with Context Hub.
-uuid: 196cfb18-317c-443d-b6f1-f559e4221baa
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 75%
+source-wordcount: '1772'
+ht-degree: 73%
 
 ---
 
@@ -52,7 +48,7 @@ A variável **Editor de segmentos** O permite modificar facilmente um segmento. 
 
 Usando o navegador de componentes, você pode adicionar contêineres **AND** e **OR** para definir a lógica do segmento e, em seguida, adicionar componentes adicionais para comparar propriedades e valores ou scripts de referência e outros segmentos para definir os critérios de seleção (consulte [Criar um novo segmento](#creating-a-new-segment)) para definir o cenário exato para selecionar o segmento.
 
-Quando a declaração inteira for avaliada como verdadeira, o segmento será resolvido. Caso vários segmentos sejam aplicáveis, o fator de **reforço** também é usado. Consulte [Criar um novo segmento](#creating-a-new-segment)[ para obter detalhes sobre o fator de reforço.](/help/sites-administering/campaign-segmentation.md#boost-factor)
+Quando a declaração inteira for avaliada como verdadeira, o segmento será resolvido. Se houver vários segmentos aplicáveis, a variável **Aumentar** também é usado. Consulte [Criar um novo segmento](#creating-a-new-segment)[ para obter detalhes sobre o fator de reforço.](/help/sites-administering/campaign-segmentation.md#boost-factor)
 
 >[!CAUTION]
 >
@@ -106,7 +102,7 @@ As comparações de segmentos a seguir estão disponíveis prontas para uso para
 
 >[!NOTE]
 >
->Ao comparar valores, se o tipo de dados da comparação não estiver definido (ou seja, definido para detecção automática), o mecanismo de segmentação do ContextHub simplesmente comparará os valores, como o javascript faria. Não converte valores em seus tipos esperados, o que pode levar a resultados enganosos. Por exemplo:
+>Ao comparar valores, se o tipo de dados da comparação não estiver definido (ou seja, configurado para detecção automática), o mecanismo de segmentação do ContextHub simplesmente comparará os valores, como o Javascript faria. Não converte valores em seus tipos esperados, o que pode levar a resultados enganosos. Por exemplo:
 >
 >`null < 30 // will return true`
 >

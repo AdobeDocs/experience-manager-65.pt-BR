@@ -12,9 +12,9 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3446'
+source-wordcount: '3447'
 ht-degree: 1%
 
 ---
@@ -181,7 +181,7 @@ newComponent (cq:Component)
             description
 ```
 
-A personalização de uma caixa de diálogo é semelhante ao desenvolvimento de um componente, pois a caixa de diálogo é um componente em si (ou seja, uma marcação renderizada por um script de componente junto com o comportamento/estilo fornecido por uma biblioteca do cliente).
+A personalização de uma caixa de diálogo é semelhante ao desenvolvimento de um componente, pois a caixa de diálogo é, em si, um componente (ou seja, uma marcação renderizada por um script de componente juntamente com o comportamento/estilo fornecido por uma biblioteca do cliente).
 
 Para obter exemplos, consulte:
 
@@ -243,7 +243,7 @@ Para ver um exemplo, consulte:
 Dependendo das suas necessidades, você pode:
 
 * Estender um determinado campo da interface do usuário do Granite por herança de componente ( `sling:resourceSuperType`)
-* Estender um determinado widget da biblioteca de widgets subjacente (no caso da interface do Granite, essa é a interface do Coral), seguindo a API da biblioteca de widgets (herança JS/CSS)
+* Estender um determinado widget da biblioteca de widgets subjacente (se houver uma interface de usuário do Granite, essa é a Coral UI), seguindo a API da biblioteca de widgets (herança JS/CSS)
 
 #### Acesso aos campos da caixa de diálogo {#access-to-dialog-fields}
 

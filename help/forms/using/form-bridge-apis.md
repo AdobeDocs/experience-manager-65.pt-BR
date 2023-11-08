@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 exl-id: b598ef47-49ff-4806-8cc7-4394aa068eaa
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 0%
@@ -89,39 +89,38 @@ Retorna o número da versão da biblioteca de Scripts
 
       * **widgetConfig:** Permite que o usuário substitua os widgets padrão do formulário por widgets personalizados. A configuração é substituída da seguinte maneira:
 
-         *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
+        *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
 
       * **pagingConfig:** Permite que o usuário substitua o comportamento padrão de renderização somente da primeira página. A configuração é substituída da seguinte maneira:
 
-         *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true false=&quot;&quot;>, shrinkPageDisabled: &lt;true false=&quot;&quot;> }).*
+        *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true false=&quot;&quot;>, shrinkPageDisabled: &lt;true false=&quot;&quot;> }).*
 
       * **LoggingConfig:** Permite que o usuário substitua o nível de registro, desative o registro em uma categoria ou exiba o console de registros ou envie para o servidor. A configuração pode ser substituída da seguinte maneira:
 
-      ```javascript
-      formBridge.registerConfig{
-        "LoggerConfig" : {
-      {
-      "on":`<true *| *false>`,
-      "category":`<array of categories>`,
-      "level":`<level of categories>`, "
-      type":`<"console"/"server"/"both">`
-      }
-        }
-      ```
+     ```javascript
+     formBridge.registerConfig{
+       "LoggerConfig" : {
+     {
+     "on":`<true *| *false>`,
+     "category":`<array of categories>`,
+     "level":`<level of categories>`, "
+     type":`<"console"/"server"/"both">`
+     }
+       }
+     ```
 
       * **SubmitServiceProxyConfig:** Permitir que os usuários registrem serviços de proxy de envio e log.
 
-         ```javascript
-         window.formBridge.registerConfig("submitServiceProxyConfig",
-         {
-         "submitServiceProxy" : "`<submitServiceProxy>`",
-         "logServiceProxy": "`<logServiceProxy>`",
-         "submitUrl" : "`<submitUrl>`"
-         });
-         ```
+        ```javascript
+        window.formBridge.registerConfig("submitServiceProxyConfig",
+        {
+        "submitServiceProxy" : "`<submitServiceProxy>`",
+        "logServiceProxy": "`<logServiceProxy>`",
+        "submitUrl" : "`<submitUrl>`"
+        });
+        ```
+
    * **config:** Valor da configuração
-
-
 
 * **Saída:** Objeto que contém o valor original da configuração em *dados* propriedade.
 
@@ -176,7 +175,7 @@ Retorna o número da versão da biblioteca de Scripts
 
 * **Entrada:** Alguma expressão do campo para definir o foco
 * **Saída:** Nenhum
-* **Erro:** Gera uma exceção em caso de expressão Som incorreta
+* **Erro:** Gera uma exceção se houver uma expressão Som incorreta
 
 **setFieldValue (som, valor)** Define o valor dos campos para as expressões Som fornecidas
 
@@ -186,7 +185,7 @@ Retorna o número da versão da biblioteca de Scripts
    * **valor:** Matriz que contém valores correspondentes a Algumas expressões fornecidas em uma **som** matriz. Se o tipo de dados do valor não for o mesmo que fieldType, o valor não será modificado.
 
 * **Saída:** Nenhum
-* **Erro:** Gera uma Exceção no caso de uma expressão Som incorreta
+* **Erro:** Gera uma Exceção se houver uma expressão Som incorreta
 
 **getFieldValue (som)** Retorna o valor dos campos para as expressões Som fornecidas
 

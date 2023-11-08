@@ -3,9 +3,9 @@ title: Configure o Editor de Rich Text para criar páginas da Web e sites acess�
 description: Configure o Editor de Rich Text para criar páginas da Web e sites acessíveis.
 contentOwner: AG
 exl-id: d2451710-5abf-4816-8052-57d8f04a228e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---

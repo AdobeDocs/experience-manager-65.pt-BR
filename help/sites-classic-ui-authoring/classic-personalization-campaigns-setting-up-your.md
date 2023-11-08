@@ -7,7 +7,7 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '2223'
 ht-degree: 0%
@@ -304,7 +304,7 @@ As listas permitem organizar seus leads em grupos. Com listas, você pode direci
 
 ![screen_shot_2012-02-21at125021pm](assets/screen_shot_2012-02-21at125021pm.png)
 
-Se você clicar em **Listas**, também é possível visualizar se a lista é um membro de outra lista e ver uma descrição.
+Se você clicar em **Listas**, você também poderá verificar se a lista é um membro de outra lista e ver uma descrição.
 
 ![screen_shot_2012-02-21at124828pm](assets/screen_shot_2012-02-21at124828pm.png)
 

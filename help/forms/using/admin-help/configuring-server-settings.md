@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '2623'
 ht-degree: 0%
@@ -27,7 +27,7 @@ A página Configurações do servidor fornece acesso a várias configurações p
 
 ## Definição das configurações de email {#configuring-email-settings}
 
-Você pode especificar uma conta de email para o servidor de formulários, por meio da qual ele envia mensagens de email para usuários e administradores de formulários AEM. Essas mensagens de email são usadas para notificar e lembrar os usuários sobre as tarefas que eles devem concluir, notificar o usuário sobre tarefas que atingiram um prazo final e notificar o administrador sobre erros de processo que ocorram.
+Você pode especificar uma conta de email para o Forms Server, por meio da qual ele envia mensagens de email para usuários e administradores de formulários AEM. Essas mensagens de email são usadas para notificar e lembrar os usuários sobre as tarefas que eles devem concluir, notificar o usuário sobre tarefas que atingiram um prazo final e notificar o administrador sobre erros de processo que ocorram.
 
 Para habilitar o envio de mensagens de email entre formulários AEM e usuários, defina as configurações de email de saída na página Configurações de email. O email de saída deve usar um servidor SMTP.
 
@@ -288,7 +288,7 @@ Na página Definições de Configuração do BAM, você define as conexões com 
 1. No console de administração, clique em Serviços > Fluxo de trabalho do Forms > Configurações do servidor > Configurações do BAM.
 1. Na caixa Host BAM, digite o nome do servidor que executa o BAM. O padrão é localhost.
 1. Na caixa Porta BAM, digite a porta a ser usada para conectar ao servidor que executa o BAM. A porta BAM padrão para JBoss é 8080, WebLogic é 7001 e WebSphere é 9080.
-1. Na caixa Host do servidor, digite o nome ou o endereço IP do servidor do forms do host. O valor padrão é localhost.
+1. Na caixa Host do Servidor, digite o nome ou o endereço IP do Forms Server do host. O valor padrão é localhost.
 1. Na caixa Porta do servidor, digite o número da porta usada pelo servidor do Forms.
 1. Nas caixas Nome do usuário e Senha, digite o ID do usuário e a senha apropriados para acessar o Servidor BAM. O nome de usuário padrão é CognosNowAdmin e a senha padrão é manager.
 1. Clique em Salvar.

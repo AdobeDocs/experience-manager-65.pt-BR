@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '18965'
+source-wordcount: '18956'
 ht-degree: 0%
 
 ---
@@ -257,7 +257,7 @@ Crie um documento PDF usando a API de saída (Java):
 
    >[!NOTE]
    >
-   >Ao gerar um documento PDF chamando o `generatePDFOutput` esteja ciente de que não é possível mesclar dados com um formulário PDF XFA assinado ou certificado. (Consulte [Assinatura digital e documentos de certificação ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >Ao gerar um documento PDF chamando o `generatePDFOutput` não é possível mesclar dados com um formulário PDF XFA assinado ou certificado. (Consulte [Assinatura digital e documentos de certificação ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
@@ -354,7 +354,7 @@ Crie um documento PDF usando a API de saída (serviço Web):
 
    >[!NOTE]
    >
-   >Ao gerar um documento PDF chamando o `generatePDFOutput` esteja ciente de que não é possível mesclar dados com um formulário PDF XFA assinado ou certificado. (Consulte [Assinatura digital e documentos de certificação ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >Ao gerar um documento PDF chamando o `generatePDFOutput` não é possível mesclar dados com um formulário PDF XFA assinado ou certificado. (Consulte [Assinatura digital e documentos de certificação ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
@@ -1505,7 +1505,7 @@ Depois de recuperar um documento para impressão, você pode chamar o Serviço d
 
 >[!NOTE]
 >
->Se o PDFG estiver instalado no servidor de formulários e o servidor for executado no Windows Server 2008, não será possível usar a propriedade SharedPrinter. Nessa situação, use um protocolo de impressora diferente.
+>Se o PDFG estiver instalado no Forms Server e o servidor for executado no Windows Server 2008, não será possível usar a propriedade SharedPrinter. Nessa situação, use um protocolo de impressora diferente.
 
 >[!NOTE]
 >
@@ -2173,7 +2173,7 @@ Crie regras de pesquisa usando a API de saída (serviço Web):
 
    >[!NOTE]
    >
-   >Ao gerar um documento PDF chamando o `generatePDFOutput` esteja ciente de que não é possível mesclar dados com um formulário PDF XFA que esteja assinado, certificado ou contenha direitos de uso. Para obter informações sobre direitos de uso, consulte [Aplicação de direitos de uso a documentos PDF](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
+   >Ao gerar um documento PDF chamando o `generatePDFOutput` , não será possível mesclar dados com um formulário PDF XFA que esteja assinado, certificado ou contenha direitos de uso. Para obter informações sobre direitos de uso, consulte [Aplicação de direitos de uso a documentos PDF](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
 
 1. Recuperar os resultados da operação
 

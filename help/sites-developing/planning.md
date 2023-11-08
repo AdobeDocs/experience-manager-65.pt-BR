@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 exl-id: ed662279-0679-4ba3-b744-6649fb8dda17
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Embora os números futuros não possam ser previstos com 100% de precisão, obse
 
 É responsabilidade do Gerente de projetos decidir e iniciar ações dependendo dos resultados.
 
-**Envolva-se** - Embora seja responsabilidade do gerente de projeto garantir que todas as partes estejam totalmente envolvidas em qualquer reunião (status, workshops etc.), você também deve tentar se envolver o mais rápido possível no ciclo do projeto, incluindo os processos de coleta de informações e análise de requisitos.
+**Envolva-se** - Embora seja responsabilidade do gerente de projeto garantir que todas as partes estejam totalmente envolvidas em qualquer reunião (status, workshops, etc.), você também deve tentar se envolver o mais rápido possível no ciclo do projeto, incluindo a coleta de informações e os processos de análise de requisitos.
 
 **Envolver o cliente** - Em um tema semelhante, tente envolver o cliente (quando possível) ao definir seus casos de teste e planejar.
 

@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '10228'
+source-wordcount: '10221'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Para obter uma discussão sobre como a concessão e a sincronização offline fu
 
 **Permitir autenticação estendida** Selecione para habilitar a autenticação estendida e, em seguida, insira o URL de aterrissagem da autenticação estendida.
 
-A seleção dessa opção permite que os aplicativos clientes usem autenticação estendida. A autenticação estendida fornece processos de autenticação personalizados e diferentes opções de autenticação configuradas no servidor de formulários AEM. Por exemplo, agora os usuários podem experimentar a autenticação baseada em SAML em vez de nome de usuário/senha de formulários AEM do Acrobat e do Reader Client. Por padrão, o URL inicial contém *localhost* como o nome do servidor. Substitua o nome do servidor por um nome de host totalmente qualificado. O nome do host no URL de aterrissagem é preenchido automaticamente a partir do URL base, se a Autenticação estendida ainda não estiver ativada. Consulte [Adicionar o provedor de autenticação estendida](configuring-client-server-options.md#add-the-extended-authentication-provider).
+A seleção dessa opção permite que os aplicativos clientes usem autenticação estendida. A autenticação estendida oferece processos de autenticação personalizados e diferentes opções de autenticação configuradas no servidor do AEM Forms. Por exemplo, agora os usuários podem experimentar a autenticação baseada em SAML em vez de nome de usuário/senha de formulários AEM do Acrobat e do Reader Client. Por padrão, o URL inicial contém *localhost* como o nome do servidor. Substitua o nome do servidor por um nome de host totalmente qualificado. O nome do host no URL de aterrissagem é preenchido automaticamente a partir do URL base, se a Autenticação estendida ainda não estiver ativada. Consulte [Adicionar o provedor de autenticação estendida](configuring-client-server-options.md#add-the-extended-authentication-provider).
 
 ***observação **: a autenticação estendida é compatível com o Apple Mac OS X com o Adobe Acrobat versão 11.0.6 e superior.*
 
@@ -99,7 +99,7 @@ Os formulários AEM fornecem uma amostra da configuração que você pode person
 >A autenticação estendida é compatível com o Apple Mac OS X com o Adobe Acrobat versão 11.0.6 e superior.
 
 1. Obtenha o arquivo WAR de amostra para implantá-lo. Consulte o guia de instalação apropriado para o seu servidor de aplicativos.
-1. Certifique-se de que o servidor de formulários tenha um nome totalmente qualificado em vez de endereços IP como URL de base e que seja um URL HTTPS. Consulte [Definições de configuração do servidor](configuring-client-server-options.md#server-configuration-settings).
+1. Certifique-se de que o servidor do Forms tenha um nome totalmente qualificado em vez de endereços IP como o URL base e que seja um URL HTTPS. Consulte [Definições de configuração do servidor](configuring-client-server-options.md#server-configuration-settings).
 1. Habilite a Autenticação Estendida na página Configuração do Servidor. Consulte [Definições de configuração do servidor](configuring-client-server-options.md#server-configuration-settings).
 1. Adicione os URLs de redirecionamento de SSO necessários no arquivo de configuração do Gerenciamento de usuários. Consulte [Adicionar URLs de redirecionamento de SSO para autenticação estendida](configuring-client-server-options.md#add-sso-redirect-urls-for-extended-authentication).
 
@@ -154,7 +154,7 @@ Para abrir um documento protegido por política offline, o computador do usuári
 
 Uma maneira de diminuir a ameaça aos documentos off-line é evitar permitir o acesso off-line a documentos particularmente confidenciais. Outro método é rolar periodicamente sobre as chaves principais. Quando a segurança de documentos transferir a chave, as chaves existentes não poderão mais acessar os documentos protegidos por política. Por exemplo, se um autor obtiver uma chave principal de um notebook roubado, essa chave não poderá ser usada para acessar os documentos protegidos após a substituição. Se você suspeitar que uma chave principal específica tenha sido comprometida, poderá passar manualmente sobre a chave.
 
-No entanto, você também precisa estar ciente de que uma sobreposição de chave afeta todas as chaves principais, não apenas uma. Também reduz a escalabilidade do sistema, pois os clientes devem armazenar mais chaves para acesso off-line. A frequência padrão de substituição de chave é de 20 dias. É recomendável não definir esse valor para menos de 14 dias, pois as pessoas podem ser impedidas de visualizar documentos offline e o desempenho do sistema pode ser afetado.
+No entanto, uma substituição de chaves afeta todas as chaves principais, não apenas uma. Também reduz a escalabilidade do sistema, pois os clientes devem armazenar mais chaves para acesso off-line. A frequência padrão de substituição de chave é de 20 dias. É recomendável não definir esse valor para menos de 14 dias, pois as pessoas podem ser impedidas de visualizar documentos offline e o desempenho do sistema pode ser afetado.
 
 No exemplo a seguir, Key1 é a mais antiga das duas chaves principais, e Key2 é a mais recente. Quando você clica no botão Sobrepor chaves agora na primeira vez, Key1 se torna inválida e uma chave principal válida mais recente (Key3) é gerada. Os usuários obterão a chave 3 ao sincronizarem com a segurança de documentos, normalmente abrindo um documento protegido online. No entanto, os usuários não são forçados a sincronizar com a segurança de documentos até que atinjam o período máximo de concessão offline especificado em uma política. Após a primeira substituição de chave, os usuários que permanecerem offline ainda poderão abrir documentos offline, incluindo aqueles protegidos pela Chave 3, até atingirem o período máximo de concessão offline. Quando você clica no botão Teclas de sobreposição agora uma segunda vez, a tecla 2 se torna inválida e a tecla 4 é criada. Os usuários que permanecem offline durante as duas sobreposições de chave não podem abrir documentos protegidos com Key3 ou Key4 até que eles sincronizem com a segurança do documento.
 
@@ -258,7 +258,7 @@ Você pode exportar eventos de auditoria para um arquivo para fins de arquivamen
 
    * a idade mínima dos eventos de auditoria a serem exportados
    * o número máximo de eventos de auditoria a serem incluídos em um único arquivo. O servidor gera um ou mais arquivos com base nesse valor.
-   * a pasta onde o arquivo será criado. Esta pasta está no servidor de formulários. Se o caminho da pasta for relativo, ele será relativo ao diretório raiz do servidor de aplicativos.
+   * a pasta onde o arquivo será criado. Esta pasta está no servidor do Forms. Se o caminho da pasta for relativo, ele será relativo ao diretório raiz do servidor de aplicativos.
    * o prefixo de arquivo a ser usado para os arquivos de eventos de auditoria
    * o formato do arquivo, um arquivo CSV (valores separados por vírgula) compatível com o Microsoft Excel ou um arquivo XML.
 

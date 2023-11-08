@@ -9,9 +9,9 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Viewers
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: 05af34f8be6a4e32c3488ec05bc0133154caff7f
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1050'
 ht-degree: 1%
 
 ---
@@ -78,7 +78,7 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
     </tbody>
    </table>
 
-1. O visualizador que você está usando agora deve saber como usar o Quickview.
+1. O visualizador que você está usando deve saber como usar o Quickview.
 
    O visualizador usa um manipulador chamado `QuickViewActive`.
 
@@ -109,7 +109,7 @@ Suponha que você use o seguinte exemplo de código incorporado do na sua págin
    * Visualizador de imagens interativo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * Visualizador de vídeo interativo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. Agora você deve configurar o `quickViewActivate` manipulador.
+1. Você deve configurar o `quickViewActivate` manipulador.
 
    A variável `quickViewActivate` O manipulador controla o Quickview no visualizador. O manipulador contém a lista de variáveis e chamadas de função para uso com o Quickview. O código incorporado fornece o mapeamento para a variável SKU definida na Visualização rápida e uma amostra `loadQuickView` função.
 
@@ -148,9 +148,10 @@ O manipulador também requer uma chamada de função para que o Quickview funcio
    * Mapeie quaisquer variáveis adicionais contidas na Quickview.
 
       * Atualize o `loadQuickView(sku,*var1*,*var2*)` chame se você estiver adicionando variáveis adicionais.
+
    * Criar uma `loadQuickView` () na página, fora do visualizador.
 
-      Por exemplo, o código a seguir grava o valor do SKU no console do navegador:
+     Por exemplo, o código a seguir grava o valor do SKU no console do navegador:
 
    ```xml
    function loadQuickView(sku){
@@ -160,9 +161,7 @@ O manipulador também requer uma chamada de função para que o Quickview funcio
 
    * Carregue uma página de HTML de teste em um servidor da Web e abra.
 
-      Com as variáveis do Quickview mapeadas e a chamada de função estabelecida, o console do navegador grava o valor da variável no console do navegador usando a função de exemplo fornecida.
-
-
+     Com as variáveis do Quickview mapeadas e a chamada de função estabelecida, o console do navegador grava o valor da variável no console do navegador usando a função de exemplo fornecida.
 
 1. Agora você pode usar uma função para chamar um pop-up simples no Quickview. O exemplo a seguir usa um `DIV` para um pop-up.
 1. Estilo do pop-up `DIV` da seguinte forma. Adicione seu próprio estilo adicional, conforme desejado.

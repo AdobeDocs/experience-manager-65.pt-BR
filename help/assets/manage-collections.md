@@ -7,9 +7,9 @@ role: User
 feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '2203'
+source-wordcount: '2202'
 ht-degree: 15%
 
 ---
@@ -183,7 +183,7 @@ Para personalizar os metadados [!UICONTROL Propriedades] incluindo adição, mod
 
 Você pode pesquisar coleções no console Coleções. Quando você pesquisa com palavras-chave na caixa Omnisearch, [!DNL Assets] O pesquisa por nomes de coleções, metadados e tags adicionados às coleções.
 
-Se você pesquisar por coleções no nível superior, somente coleções individuais serão retornadas nos resultados da pesquisa. [!DNL Assets] As pastas ou dentro das coleções são excluídas. Em todos os outros casos (por exemplo, em uma coleção individual ou em uma hierarquia de pastas), todos os ativos, pastas e coleções relevantes são retornados.
+Se você pesquisar coleções no nível superior, somente coleções individuais serão retornadas nos resultados da pesquisa. [!DNL Assets] As pastas ou dentro das coleções são excluídas. Em todos os outros casos (por exemplo, em uma coleção individual ou em uma hierarquia de pastas), todos os ativos, pastas e coleções relevantes são retornados.
 
 ## Pesquisar em coleções {#searching-within-collections}
 

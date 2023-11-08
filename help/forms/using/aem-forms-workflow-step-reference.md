@@ -5,7 +5,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
 source-wordcount: '7687'
 ht-degree: 0%
@@ -45,8 +45,8 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
 * **Prioridade:** A prioridade selecionada é exibida na Caixa de entrada AEM. As opções disponíveis são Alta, Média e Baixa. O valor padrão é Médio.
 * **Prazo:** Especifique o número de dias ou horas após o qual a tarefa será marcada como vencida. Se você selecionar **Desligado**, a tarefa nunca será marcada como vencida. Você também pode especificar um manipulador de tempo limite para executar tarefas específicas depois que a tarefa estiver vencida.
 
-* **Dias:** O número de dias antes dos quais a tarefa deve ser concluída. O número de dias é contado depois que a tarefa é atribuída a um usuário. Se uma tarefa não estiver concluída e ultrapassar o número de dias especificado no campo Dias, então, se selecionado, um manipulador de tempo limite será acionado após a data de vencimento.
-* **Horas:** O número de horas antes das quais a tarefa deve ser concluída. O número de horas é contado depois que a tarefa é atribuída a um usuário. Se uma tarefa não estiver concluída e ultrapassar o número de horas especificado no campo Horas, então, se selecionado, um manipulador de tempo limite será acionado após as horas de vencimento.
+* **Dias:** O número de dias antes dos quais a tarefa deve ser concluída. O número de dias é contado depois que a tarefa é atribuída a um usuário. Se uma tarefa não estiver concluída e ultrapassar o número de dias especificado no campo Dias, se selecionado, um manipulador de tempo limite será acionado após a data de vencimento.
+* **Horas:** O número de horas antes das quais a tarefa deve ser concluída. O número de horas é contado depois que a tarefa é atribuída a um usuário. Se uma tarefa não estiver concluída e ultrapassar o número de horas especificado no campo Horas, se selecionado, um manipulador de tempo limite será acionado após as horas de vencimento.
 * **Tempo limite após a data de vencimento:** Selecione esta opção para ativar o campo de seleção Manipulador de tempo limite.
 * **Manipulador de tempo limite:** Selecione o script a ser executado quando a etapa de atribuição da tarefa ultrapassar a data de vencimento. Scripts colocados no repositório CRX em [aplicativos]/fd/dashboard/scripts/timeoutHandler estão disponíveis para seleção. O caminho especificado não existe no repositório crx. Um administrador cria o caminho antes de usá-lo.
 * **Realçar a ação e o comentário da última tarefa em Detalhes da tarefa:** Selecione essa opção para exibir a última ação realizada e o comentário recebido na seção de detalhes da tarefa de uma tarefa.

@@ -1,35 +1,31 @@
 ---
 title: Envio assíncrono de formulários adaptáveis
-seo-title: Asynchronous submission of adaptive forms
 description: Saiba como configurar o envio assíncrono para formulários adaptáveis.
-seo-description: Learn to configure asynchronous submission for adaptive forms.
-uuid: 6555ac63-4d99-4b39-a2d0-a7e61909106b
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 0a0d2109-ee1f-43f6-88e5-1108cd215da6
 docset: aem65
 feature: Adaptive Forms
 exl-id: bd0589e2-b15a-4f0e-869c-2da4760b1ff4
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '795'
 ht-degree: 2%
 
 ---
 
 # Envio assíncrono de formulários adaptáveis{#asynchronous-submission-of-adaptive-forms}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/asynchronous-submissions-adaptive-forms.html) |
 | AEM 6.5 | Este artigo |
 
-Tradicionalmente, os formulários web são configurados para enviar de forma síncrona. No envio síncrono, quando os usuários enviam um formulário, eles são redirecionados para uma página de confirmação, uma página de agradecimento ou, em caso de falha no envio, uma página de erro. No entanto, experiências da Web modernas, como aplicativos de página única, estão ganhando popularidade, onde a página da Web permanece estática enquanto a interação cliente-servidor acontece em segundo plano. Agora você pode fornecer essa experiência com formulários adaptáveis configurando o envio assíncrono.
+Tradicionalmente, os formulários web são configurados para enviar de forma síncrona. No envio síncrono, quando os usuários enviam um formulário, eles são redirecionados para uma página de confirmação, uma página de agradecimento ou, se houver falha de envio, uma página de erro. No entanto, experiências da Web modernas, como aplicativos de página única, estão ganhando popularidade, onde a página da Web permanece estática enquanto a interação cliente-servidor acontece em segundo plano. Agora você pode fornecer essa experiência com formulários adaptáveis configurando o envio assíncrono.
 
-No envio assíncrono, quando um usuário envia um formulário, o desenvolvedor do formulário conecta uma experiência separada, como redirecionar para outro formulário ou uma seção separada do site. O autor também pode conectar serviços separados, como enviar dados para um armazenamento de dados diferente ou adicionar um mecanismo de análise personalizado.No caso de envio assíncrono, um formulário adaptável se comporta como um aplicativo de página única, pois o formulário não é recarregado ou sua URL não é alterada quando os dados de formulário enviados são validados no servidor.
+No envio assíncrono, quando um usuário envia um formulário, o desenvolvedor do formulário conecta uma experiência separada, como redirecionar para outro formulário ou uma seção separada do site. O autor também pode conectar serviços separados, como enviar dados para um armazenamento de dados diferente ou adicionar um mecanismo de análise personalizado. Se houver envio assíncrono, um formulário adaptável se comporta como um aplicativo de página única, pois o formulário não é recarregado ou sua URL não é alterada quando os dados do formulário enviado são validados no servidor.
 
 Leia para obter detalhes sobre envio assíncrono em formulários adaptáveis.
 
@@ -67,7 +63,7 @@ A estrutura da resposta do servidor para o evento de sucesso de envio é a segui
 }
 ```
 
-A resposta do servidor em caso de envio de formulário bem-sucedido inclui:
+A resposta do servidor se o envio de um formulário for bem-sucedido inclui:
 
 * Tipo de formato de dados de formulário: XML ou JSON
 * Dados de formulário em formato XML ou JSON
@@ -93,7 +89,7 @@ A estrutura da resposta do servidor para o evento de erro de envio é a seguinte
  }
 ```
 
-A resposta do servidor em caso de erro no envio do formulário inclui:
+A resposta do servidor se houver um erro no envio do formulário inclui:
 
 * Motivo do erro, falha no CAPTCHA ou validação no lado do servidor
 * Lista de objetos de erro, que inclui a expressão SOM do campo cuja validação falhou e a mensagem de erro correspondente

@@ -1,19 +1,15 @@
 ---
 title: Gerenciando Endpoints Programaticamente
-seo-title: Programmatically Managing Endpoints
 description: Use o serviço de Registro de Ponto de Extremidade para adicionar pontos de extremidade EJB, adicionar ponto de extremidade SOAP, adicionar pontos de extremidade de Pasta monitorada, adicionar pontos de extremidade de Email, adicionar pontos de extremidade de Comunicação Remota, adicionar pontos de extremidade do Gerenciador de Tarefas, modificar pontos de extremidade, remover pontos de extremidade e recuperar informações do conector do ponto de extremidade.
-seo-description: Use the Endpoint Registry service to add EJB endpoints, add SOAP endpoint, add Watched Folder endpoints, add Email endpoints, add  Remoting endpoints, add Task Manager endpoints, modify endpoints, remove endpoints, and retrieve endpoint connector information.
-uuid: 5dc50946-3323-4c5d-a43b-31c1c980bd04
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '10790'
+source-wordcount: '10791'
 ht-degree: 1%
 
 ---
@@ -251,7 +247,7 @@ Adicionar um ponto de extremidade SOAP a um serviço usando a API Java:
 
 1. Ative o endpoint.
 
-   Ative o endpoint chamando o botão `EndpointRegistryClient` método enable do objeto e transmitem o `Endpoint` objeto que foi retornado pelo `createEndpoint` método.
+   Ative o endpoint chamando o botão `EndpointRegistryClient` método enable do objeto e transmita o `Endpoint` objeto que foi retornado pelo `createEndpoint` método.
 
 **Consulte também**
 
@@ -339,7 +335,7 @@ A lista a seguir especifica os valores de configuração que são definidos quan
 * **resultFolderName**: a pasta onde os resultados salvos são armazenados. Esse local pode ser um caminho de diretório absoluto ou relativo. Se os resultados não aparecerem nessa pasta, verifique a pasta de falha. Arquivos somente leitura não são processados e serão salvos na pasta de falha. O valor padrão é `result/%Y/%M/%D/`. Esta é a pasta de resultados dentro da pasta monitorada.
 * **preserveFolderName**: o local onde os arquivos são armazenados após a verificação e a coleta bem-sucedidas. Esse local pode ser um caminho de diretório absoluto, relativo ou nulo. O valor padrão é `preserve/%Y/%M/%D/`.
 * **failureFolderName**: a pasta onde os arquivos de falha são salvos. Este local é sempre relativo à pasta monitorada. Arquivos somente leitura não são processados e serão salvos na pasta de falha. O valor padrão é `failure/%Y/%M/%D/`.
-* **preserveOnFailure**: preserva os arquivos de entrada em caso de falha ao executar a operação em um serviço. O valor padrão é true.
+* **preserveOnFailure**: preserva os arquivos de entrada se houver uma falha ao executar a operação em um serviço. O valor padrão é true.
 * **overwriteDuplicateFilename**: quando definido como verdadeiro, os arquivos na pasta de resultados e na pasta de preservação são substituídos. Quando definido como false, os arquivos e as pastas que têm um sufixo de índice numérico são usados para o nome. O valor padrão é false.
 
 **Definir valores de parâmetro de entrada**
@@ -377,7 +373,7 @@ Para definir um valor de parâmetro de saída necessário para um endpoint de Pa
 
 **Criar um ponto de extremidade de Pasta monitorada**
 
-Depois de definir os atributos do ponto de extremidade, os valores de configuração e os valores dos parâmetros de entrada e saída, você deve criar o ponto de extremidade da Pasta monitorada.
+Depois de definir os atributos do endpoint, os valores de configuração e os valores de parâmetro de entrada e saída, você deve criar o endpoint Pasta monitorada.
 
 **Habilitar o endpoint**
 
@@ -556,7 +552,7 @@ Especifique os valores de configuração para um endpoint de email ao adicionar 
 
 >[!NOTE]
 >
->A conta de email monitorada é uma conta especial usada somente para o endpoint de email. Esta conta não é uma conta de email de usuário comum. A conta de email de um usuário comum não deve ser configurada como a conta usada pelo provedor de email, pois o provedor exclui mensagens de email da caixa de entrada após concluir a configuração das mensagens.
+>A conta de email monitorada é uma conta especial usada somente para o endpoint de email. Esta conta não é uma conta de email de usuário comum. A conta de email de um usuário comum não deve ser configurada como a conta que o provedor de email usa, pois o provedor exclui mensagens de email da caixa de entrada após concluir a configuração das mensagens.
 
 Os seguintes valores de configuração são definidos ao adicionar programaticamente um endpoint de email a um serviço:
 

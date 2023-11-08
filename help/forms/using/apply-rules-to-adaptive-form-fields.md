@@ -8,7 +8,7 @@ uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
 exl-id: 0202ca65-21ef-4477-b704-7b52314a7d7b
-source-git-commit: 63bc43bba88a42d62fb574bc8ce42470ac61d693
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 0%
@@ -102,7 +102,7 @@ Depois que os detalhes do cliente forem recuperados do banco de dados, você pod
 
 ## Etapa 3: (seção de bônus) usar o editor de código do para executar validações e exibir mensagens de erro {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}
 
-Você deve executar a validação no formulário para garantir que os dados inseridos nele estejam corretos e uma mensagem de erro seja exibida no caso de dados incorretos. Por exemplo, se uma ID de cliente não existente for inserida no formulário, uma mensagem de erro será exibida.
+Você deve executar a validação no formulário para garantir que os dados inseridos nele estejam corretos e uma mensagem de erro seja exibida se houver dados incorretos. Por exemplo, se uma ID de cliente não existente for inserida no formulário, uma mensagem de erro será exibida.
 
 Os formulários adaptáveis fornecem vários componentes com validações integradas, por exemplo, email e campos numéricos que você pode usar para casos de uso comuns. Use o editor de regras para casos de uso avançados, por exemplo, para exibir uma mensagem de erro quando o banco de dados retornar zero (0) registros (sem registros).
 

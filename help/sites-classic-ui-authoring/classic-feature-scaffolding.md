@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1427'
+source-wordcount: '1426'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ A definição da caixa de diálogo de um scaffold funciona de forma semelhante �
 
 * As definições de diálogo de componente são renderizadas como caixas de diálogo normais (como mostrado no painel central do editor de diálogo, por exemplo), enquanto as definições de diálogo de scaffold, embora apareçam como caixas de diálogo normais no editor de diálogo, são renderizadas na página de scaffold como um formulário de scaffold (como mostrado no **Notícias** andaime acima).
 * As caixas de diálogo do componente fornecem campos apenas para os valores necessários para definir o conteúdo de um único componente específico. Uma caixa de diálogo de scaffold deve fornecer campos para cada propriedade em cada parágrafo da página que será criada.
-* No caso de caixas de diálogo de componente, o componente usado para renderizar o conteúdo especificado é implícito e, portanto, o `sling:resourceType` A propriedade do parágrafo é preenchida automaticamente quando o parágrafo é criado. Com um scaffolding, todas as informações que definem o conteúdo e o componente atribuído para um determinado parágrafo devem ser fornecidas pela própria caixa de diálogo. Nas caixas de diálogo de scaffold, essas informações devem ser fornecidas usando *Oculto* para enviar essas informações sobre a criação da página.
+* Se houver caixas de diálogo de componente, o componente usado para renderizar o conteúdo especificado será implícito e, portanto, o `sling:resourceType` A propriedade do parágrafo é preenchida automaticamente quando o parágrafo é criado. Com um scaffolding, todas as informações que definem o conteúdo e o componente atribuído para um determinado parágrafo devem ser fornecidas pela própria caixa de diálogo. Nas caixas de diálogo de scaffold, essas informações devem ser fornecidas usando *Oculto* para enviar essas informações sobre a criação da página.
 
 Veja o exemplo **Notícias** a caixa de diálogo scaffold no editor de diálogo ajuda a explicar como isso funciona. Vá para o modo de design na página do andaime e clique no link do editor de diálogo.
 
