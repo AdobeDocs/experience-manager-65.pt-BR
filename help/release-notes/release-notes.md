@@ -3,9 +3,9 @@ title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: d0dc5dfb-25a3-4388-a1d4-abba70081cc3
-source-git-commit: 61f3079a88e39c02b29bfafc7b2b9d4d098cef6b
+source-git-commit: 31bc86f81620bdc6fe9877cdc96f4004a80d60f9
 workflow-type: tm+mt
-source-wordcount: '4640'
+source-wordcount: '4641'
 ht-degree: 2%
 
 ---
@@ -419,10 +419,19 @@ Novas pastas de `cache` e `diff-cache` são criadas automaticamente e você não
 
 * Uma consulta do GraphQL pode usar o `damAssetLucene` índice em vez de `fragments` índice. Essa ação pode resultar em consultas GraphQL que falham ou demorar muito para ser executada.
 
-  Para corrigir o problema, `damAssetLucene` O deve ser configurado para incluir as duas propriedades a seguir:
+  Para corrigir o problema, `damAssetLucene` deve ser configurado para incluir as duas propriedades a seguir em `/indexRules/dam:Asset/properties`:
 
    * `contentFragment`
+      * `jcr:primaryType="nt:unstructured"`
+      * `name="jcr:content/contentFragment"`
+      * `propertyIndex="{Boolean}true"`
+      * `type="Boolean"`
    * `model`
+      * `jcr:primaryType="nt:unstructured"`
+      * `name="jcr:content/data/cq:model"`
+      * `ordered="{Boolean}true"`
+      * `propertyIndex="{Boolean}true"`
+      * `type="String"`
 
   Depois que a definição do índice é alterada, é necessária uma reindexação (`reindex` = `true`).
 
