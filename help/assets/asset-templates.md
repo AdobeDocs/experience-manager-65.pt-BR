@@ -5,7 +5,7 @@ contentOwner: AG
 role: User
 feature: Asset Management,Developer Tools
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1544'
 ht-degree: 0%
@@ -160,7 +160,7 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
    É possível aplicar vários filtros para pesquisar os modelos desejados. Por exemplo, você pode pesquisar modelos com base no tipo de arquivo ou nas tags.
 
 1. Clique em **[!UICONTROL Próxima]** na barra de ferramentas.
-1. No **[!UICONTROL Visualizar e reordenar]** , reorganize os modelos, se necessário, e visualize a seleção de modelos a serem mesclados. Em seguida, clique em **[!UICONTROL Próxima]** na barra de ferramentas.
+1. No **[!UICONTROL Visualizar e reordenar]** , reorganize os modelos se necessário e visualize a seleção de modelos a serem mesclados. Em seguida, clique em **[!UICONTROL Próxima]** na barra de ferramentas.
 
    ![chlimage_1-126](assets/chlimage_1-331.png)
 

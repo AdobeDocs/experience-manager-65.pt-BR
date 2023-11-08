@@ -12,9 +12,9 @@ discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '2005'
+source-wordcount: '2003'
 ht-degree: 0%
 
 ---
@@ -116,7 +116,7 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo dos fo
 
 1. Por que os formulários HTML são maiores que os PDF forms?
 
-   Resposta: Muitas estruturas de dados intermediárias e objetos como form dom, data dom e layout dom são necessários para renderizar um XDP para um formulário HTML.
+   Resposta: Várias estruturas de dados intermediários e objetos como form dom, data dom e layout dom são necessários para renderizar um XDP para um formulário HTML.
 
    Para PDF forms, o Adobe Acrobat tem um mecanismo XTG integrado para criar estruturas de dados e objetos intermediários. A Acrobat também cuida do layout e dos scripts.
 

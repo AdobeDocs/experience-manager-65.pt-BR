@@ -9,7 +9,7 @@ topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 7%
@@ -56,7 +56,7 @@ Para criar uma Comunicação interativa, faça com que [elementos](#buildingbloc
    1. [Gráficos](/help/forms/using/chart-component-interactive-communications.md)
    1. [Fragmentos do documento](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
-1. Pré-visualize canais de impressão e da Web e, se necessário, edite a Comunicação interativa.
+1. Visualize canais de impressão e da Web e, se necessário, edite a Comunicação interativa.
 1. O agente usa a interface do usuário do agente para [preparar a comunicação interativa](/help/forms/using/prepare-send-interactive-communication.md) para enviá-lo ao processo de destinatário/publicação.
 
 ### Blocos de construção {#buildingblocks}

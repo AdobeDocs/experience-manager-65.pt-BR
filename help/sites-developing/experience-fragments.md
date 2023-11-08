@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1785'
+source-wordcount: '1782'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ Por exemplo:
 
 >[!NOTE]
 >
->Os links sempre fazem referência à instância de publicação. Eles devem ser consumidos por terceiros, portanto, o link sempre será chamado da instância de publicação, não do autor.
+>Os links sempre fazem referência à instância de publicação. Eles são consumidos por terceiros, portanto, o link é sempre chamado da instância de Publicação, não da instância do Autor.
 >
 >Para obter mais informações, consulte [Externalizar URLs](/help/sites-developing/externalizer.md).
 

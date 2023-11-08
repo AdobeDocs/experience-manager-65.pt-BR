@@ -6,9 +6,9 @@ content-type: reference
 topic-tags: repo_restructuring
 feature: Upgrading
 exl-id: b4531792-06dd-4545-9dbb-57224be20dc7
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: '1457'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ Conforme descrito no pai [Reestruturação do repositório no AEM 6.5](/help/sit
   </tr>
   <tr>
    <td><strong>Orientações em matéria de reestruturação</strong></td>
-   <td><p>Se algum segmento novo ou modificado do ContextHub tiver que ser editado no controle de origem em vez de ser editado no AEM, ele deverá ser migrado para o novo local:</p>
+   <td><p>Se algum segmento novo ou modificado do ContextHub for editado no controle do código-fonte em vez de ser editado no AEM, ele deverá ser migrado para o novo local:</p>
     <ol>
      <li>Copie todos os segmentos do ContextHub novos ou modificados do local anterior para o novo local apropriado (/<code>apps</code>, <code>/conf/global</code> ou <code>/conf/&lt;tenant&gt;</code>)</li>
      <li>Atualizar referências a segmentos do ContextHub no local anterior para os segmentos do ContextHub migrados nos novos locais (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>

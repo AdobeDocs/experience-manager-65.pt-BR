@@ -7,9 +7,9 @@ role: User, Admin
 feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 hide: true
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '3263'
+source-wordcount: '3260'
 ht-degree: 15%
 
 ---
@@ -199,7 +199,7 @@ O Adobe Asset Link oferece um bom suporte para este caso de uso:
 * Além disso, como o ativo está na conta Creative Cloud, ele também está disponível em outros dispositivos que o usuário pode ter (por exemplo, pode ser aberto ou editado em um aplicativo móvel Creative Cloud dedicado) e pode ser compartilhado com outros usuários Creative Cloud para fins de colaboração.
 * Quando o usuário criativo conclui as alterações, ele pode executar uma operação de Check-in nesse arquivo no aplicativo Creative Cloud com um comentário opcional. O ativo correspondente no [!DNL Experience Manager] são versionados e atualizados para com o novo binário. [!DNL Experience Manager] usuários como profissionais de marketing ou usuários de LOB têm acesso a grandes alterações de ativos ou marcos, por meio de [!DNL Experience Manager] interface de linha do tempo do ativo.
 
-[!DNL Experience Manager] o aplicativo de desktop fornece um compartilhamento de rede para ativos abertos no aplicativo nativo. Por padrão, todas as alterações feitas localmente são carregadas em [!DNL Experience Manager] automaticamente após um breve período. Com essa configuração, salvamentos frequentes durante a fase de trabalho em andamento seriam carregados para [!DNL Experience Manager] e versões, criando muito tráfego de rede e possíveis desafios de escalabilidade - sem mencionar as versões desnecessárias no [!DNL Experience Manager].
+[!DNL Experience Manager] o aplicativo de desktop fornece um compartilhamento de rede para ativos abertos no aplicativo nativo. Por padrão, todas as alterações feitas localmente são carregadas em [!DNL Experience Manager] automaticamente após um breve período. Com essa configuração, salvamentos frequentes durante a fase de trabalho em andamento seriam carregados para [!DNL Experience Manager] e versões, criando um grande número de tráfego de rede e possíveis desafios de escalabilidade - sem mencionar as versões desnecessárias no [!DNL Experience Manager].
 
 A abordagem recomendada aqui é usar uma opção no [!DNL Experience Manager] aplicativo de desktop para desativar atualizações automáticas e fazer upload de alterações em ativos para [!DNL Experience Manager] manualmente, usando a ação carregar alterações na interface do usuário de status do ativo do aplicativo.
 

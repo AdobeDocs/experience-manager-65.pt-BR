@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ A estrutura usa tokens para garantir que a solicitação do cliente seja legíti
 
 ### Dependências {#dependencies}
 
-Qualquer componente que dependa da variável `granite.jquery` A dependência se beneficiará automaticamente da Estrutura de proteção CSRF. Se esse não for o caso de nenhum de seus componentes, você deve declarar uma dependência para `granite.csrf.standalone` antes de usar a estrutura.
+Qualquer componente que dependa da variável `granite.jquery` A dependência pode se beneficiar automaticamente da Estrutura de proteção CSRF. Caso contrário, para qualquer um dos componentes, é necessário declarar uma dependência para `granite.csrf.standalone` antes de usar a estrutura.
 
 ### Replicação da chave de criptografia {#replicating-crypto-keys}
 

@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '6816'
+source-wordcount: '6808'
 ht-degree: 0%
 
 ---
@@ -798,7 +798,7 @@ Essa mudança de propriedades residuais do JCR para uma política dedicada de co
 
 **Nó de Destino Definido pela Política**
 
-Espera-se que as políticas CUG sejam criadas no nó JCR que define a subárvore para estar sujeita a acesso de leitura restrito. Essa provavelmente será uma página de AEM caso o CUG afete toda a árvore.
+Crie políticas CUG no nó JCR definindo a subárvore para estar sujeita a acesso restrito de leitura. Essa provavelmente será uma página de AEM caso o CUG afete toda a árvore.
 
 Observe que a inserção da política CUG somente no nó jcr:content localizado abaixo de uma determinada página restringirá o acesso ao conteúdo s.str de uma determinada página, mas não terá efeito em nenhum irmão ou página secundária. Esse pode ser um caso de uso válido e é possível obtê-lo com um editor de repositório que permite a aplicação de conteúdo de acesso refinado. No entanto, contrasta com a implementação anterior, em que a inserção de uma propriedade cq:cugEnabled no nó jcr:content era remapeada internamente para o nó da página. Esse mapeamento não é mais executado.
 
@@ -839,7 +839,7 @@ No que diz respeito à `granite:loginPath` está relacionado ao mesmo privilégi
 
 #### Nó de Destino Definido pelo Tipo de Mixin {#target-node-defined-by-mixin-type}
 
-Espera-se que os requisitos de autenticação sejam criados no nó JCR que define a subárvore para estar sujeita a logon imposto. Essa provavelmente será uma página AEM caso o CUG afete toda a árvore e a interface do usuário para a nova implementação adicionará o tipo de mixin de requisito de autenticação no nó da página.
+Crie requisitos de autenticação no nó JCR definindo a subárvore para estar sujeita a logon imposto. Essa provavelmente será uma página AEM caso o CUG afete toda a árvore e a interface do usuário para a nova implementação adicionará o tipo de mixin de requisito de autenticação no nó da página.
 
 Colocar a política CUG somente no nó jcr:content localizado abaixo de uma determinada página restringirá o acesso ao conteúdo, mas não terá efeito no próprio nó da página nem em nenhuma página secundária.
 

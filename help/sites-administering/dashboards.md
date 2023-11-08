@@ -1,25 +1,21 @@
 ---
 title: Painéis
-seo-title: Dashboards
 description: Saiba como criar, configurar e desenvolver novos painéis de AEM.
-seo-description: Learn how to create, configure and develop new AEM dashboards.
-uuid: 3eadbba2-0ce1-41be-a9f8-e6cafa109893
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 exl-id: 5b934e3a-f554-46ec-a913-8d570abb1503
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '825'
 ht-degree: 3%
 
 ---
 
 # Painéis{#dashboards}
 
-Ao usar o AEM, você é capaz de gerenciar muito conteúdo de diferentes tipos (por exemplo, páginas, ativos). Os painéis de AEM fornecem uma maneira fácil de usar e personalizável de definir páginas que exibem dados consolidados.
+Ao usar o AEM, é possível gerenciar vários conteúdos de diferentes tipos (por exemplo, páginas, ativos). Os painéis de AEM fornecem uma maneira fácil de usar e personalizável de definir páginas que exibem dados consolidados.
 
 >[!NOTE]
 >

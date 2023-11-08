@@ -2,10 +2,10 @@
 title: Criação de um guia de início rápido do headless de configuração
 description: Crie uma configuração como um primeiro passo para começar a usar o headless no AEM 6.5.
 exl-id: f1df97a1-164f-4ed4-bb63-34caf35ae27c
-source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 69%
+ht-degree: 67%
 
 ---
 
@@ -38,7 +38,7 @@ Um administrador só precisaria criar uma configuração uma vez ou, muito raram
 
 1. Toque ou clique em **Criar**
 
-É possível criar várias configurações, se necessário. As configurações também podem ser aninhadas.
+Você pode criar várias configurações, se necessário. As configurações também podem ser aninhadas.
 
 >[!NOTE]
 >

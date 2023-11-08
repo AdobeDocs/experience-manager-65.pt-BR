@@ -10,7 +10,7 @@ discoiquuid: fe59d260-d392-4d6f-bb7e-2f2a1d701f51
 docset: aem65
 feature: Interactive Communication
 exl-id: 0c0dc6a2-b889-4516-8e08-1e9d31be2cce
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1498'
 ht-degree: 0%
@@ -201,4 +201,4 @@ Toque novamente em Redimensionar para voltar à caixa de diálogo Criar regra\Ed
 1. Para inserir uma variável na regra, arraste e solte a variável em um espaço reservado para obter uma opção na regra.
 1. Depois de criar uma regra válida, toque em **[!UICONTROL Concluído]**.
 
-   Continue fazendo mais alterações, se necessário, na condição e salvando-a.
+   Faça mais alterações, se necessário, na condição e salve-a.

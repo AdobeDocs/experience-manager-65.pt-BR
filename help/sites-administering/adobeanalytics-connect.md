@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e3a3511a5854432b9c01748f7f5ffaf9182180f8
 workflow-type: tm+mt
-source-wordcount: '1497'
-ht-degree: 6%
+source-wordcount: '1523'
+ht-degree: 7%
 
 ---
 
@@ -195,14 +195,18 @@ Consulte [Visualização de dados de análise de página](/help/sites-authoring/
 
 ### Configuração do intervalo de importação {#configuring-the-import-interval}
 
-Configure a instância apropriada do **Configuração de sondagem gerenciada por Adobe AEM** serviço:
+Configure a instância apropriada do **Importador de Sling de relatório do Adobe AEM Analytics** serviço:
 
-* **Intervalo de Sondagem**: o intervalo, em segundos, no qual o serviço recupera dados de exibição de página do Adobe Analytics.
-O intervalo padrão é 43200000 ms (12 horas).
+* **Tentativas de busca**: Número de tentativas de buscar um relatório em fila.
+O padrão é `6`.
 
-* **Ativar**: ativar ou desativar o serviço. Por padrão, o serviço é ativado.
+* **Atraso de busca**: o número de milissegundos entre tentativas de buscar um relatório na fila.
+O padrão é `10000`. Como está em milissegundos, corresponde a 10 segundos.
 
-Para configurar esse serviço OSGi, você pode usar o [Console da Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou um [Nó osgiConfig no repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) (o serviço PID é `com.day.cq.polling.importer.impl.ManagedPollConfigImpl`).
+* **Frequência de busca**: A `cron` para determinar a frequência de busca do Relatório do Analytics.
+O padrão é `0 0 0/12 * * ?`; isso corresponde a 12 buscas a cada hora.
+
+Para configurar esse serviço OSGi, você pode usar o [Console da Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou um [Nó osgiConfig no repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) (o serviço PID é `com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`).
 
 ## Editar configurações e/ou estruturas do Adobe Analytics {#editing-adobe-analytics-configurations-and-or-frameworks}
 

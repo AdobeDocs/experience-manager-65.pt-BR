@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: da92d751-6f14-4512-9d77-7ecf098bd58e
 docset: aem65
 exl-id: ab4fc41f-e0e9-4577-aab2-f0b4298f9a59
-source-git-commit: 2f3168c9bd39926ee8cf86b48cc0daef9d783a1c
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '250'
 ht-degree: 3%
 
 ---
@@ -45,7 +45,7 @@ Para ativar o nível de log DEBUG, use o CRX Explorer para definir o
 /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level
 ```
 
-propriedade a ser depurada. Não deixe o log no nível de log DEBUG por mais tempo do que o necessário, pois ele gera muitos logs.
+propriedade a ser depurada. Não deixe o log no nível de log DEBUG mais tempo do que o necessário, pois ele gera vários logs.
 
 Uma linha no arquivo de depuração geralmente começa com DEBUG e, em seguida, fornece o nível de log, a ação do instalador e a mensagem de log. Por exemplo:
 

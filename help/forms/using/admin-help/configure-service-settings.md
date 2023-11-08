@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '10692'
 ht-degree: 0%
@@ -610,9 +610,9 @@ As configurações a seguir estão disponíveis para o serviço de Assinatura.
 
 **URL do servidor TSP:** O URL do provedor de carimbo de data e hora padrão. Usado somente se algum valor válido for fornecido. Nenhum valor padrão.
 
-**Nome de usuário do servidor TSP:** O nome do usuário, se exigido pelo provedor de carimbo de data e hora. Usado somente se algum valor válido for fornecido para o URL. Nenhum valor padrão.
+**Nome de usuário do servidor TSP:** O nome do usuário, se necessário, pelo provedor de carimbo de data e hora. Usado somente se algum valor válido for fornecido para o URL. Nenhum valor padrão.
 
-**Senha do servidor TSP:** A senha do nome de usuário acima, se exigido pelo provedor de carimbo de data e hora. Usado somente se algum valor válido for fornecido para o URL e o nome de usuário. Nenhum valor padrão.
+**Senha do servidor TSP:** A senha do nome de usuário acima, se necessário, pelo provedor de carimbo de data e hora. Usado somente se algum valor válido for fornecido para o URL e o nome de usuário. Nenhum valor padrão.
 
 **Algoritmo de hash de solicitação:** Especifica o algoritmo de hash a ser usado ao criar a solicitação para o provedor de carimbo de data/hora. O valor padrão é SHA1.
 

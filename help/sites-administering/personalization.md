@@ -1,18 +1,14 @@
 ---
 title: Personalização
-seo-title: Personalization
 description: Saiba mais sobre a personalização no Adobe Experience Manager para fornecer ao usuário um ambiente personalizado que exibe conteúdo dinâmico.
-seo-description: Learn about personalization in AEM.
-uuid: 5790a3e0-f0ec-4785-b915-330a10dea30c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1696'
 ht-degree: 2%
 
 ---

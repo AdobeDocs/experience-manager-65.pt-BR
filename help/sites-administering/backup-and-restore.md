@@ -1,18 +1,14 @@
 ---
 title: Backup e restauração
-seo-title: Backup and Restore
 description: Saiba como fazer backup e restaurar o conteúdo e as configurações do AEM.
-seo-description: Learn how to backup and restore your AEM content.
-uuid: 446a466f-f508-4430-9e50-42cd4463760e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: eb8bbb85-ca2f-4877-8ee0-bb1ee8b7d8de
 exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2282'
 ht-degree: 0%
 
 ---
@@ -232,7 +228,7 @@ Os arquivos são copiados para o diretório de destino em quatro estágios:
    * Fase A - tudo é copiado, exceto o armazenamento de dados (com atraso).
    * Fase B — somente o armazenamento de dados é copiado (com atraso).
 
-1. No segundo estágio de cópia (indicador de progresso 63% - 65,8% ao criar um arquivo zip ou 90% - 94% se nenhum arquivo zip for criado), somente os arquivos que foram criados ou modificados no diretório de origem desde que o primeiro estágio de cópia foi iniciado são copiados. Dependendo da atividade do repositório, isso pode variar de nenhum arquivo até um número significativo de arquivos (porque o primeiro estágio de cópia de arquivo geralmente leva muito tempo). O processo de cópia é semelhante ao primeiro estágio (Fases A e B com atraso).
+1. No segundo estágio de cópia (indicador de progresso 63% - 65,8% ao criar um arquivo zip ou 90% - 94% se nenhum arquivo zip for criado), somente os arquivos que foram criados ou modificados no diretório de origem desde que o primeiro estágio de cópia foi iniciado são copiados. Dependendo da atividade do repositório, pode variar de nenhum arquivo até um número significativo de arquivos (porque o primeiro estágio de cópia de arquivo geralmente leva mais tempo). O processo de cópia é semelhante ao primeiro estágio (Fases A e B com atraso).
 1. Na terceira etapa de cópia (indicador de andamento 65,8% - 68,6% ao criar um arquivo zip ou 94% - 98% se nenhum arquivo zip for criado), somente os arquivos criados ou modificados no diretório de origem desde que a segunda etapa de cópia foi iniciada são copiados. Dependendo da atividade do repositório, pode não haver arquivos a serem copiados ou um número muito pequeno de arquivos (porque o segundo estágio de cópia de arquivo geralmente é rápido). O processo de cópia é semelhante ao segundo estágio - Fase A e Fase B, mas sem demora.
 1. Os estágios de cópia de arquivo, de um a três, são todos feitos simultaneamente enquanto o repositório está em execução. Somente os arquivos que foram criados ou modificados no diretório de origem desde o início do terceiro estágio de cópia são copiados. Dependendo da atividade do repositório, pode não haver arquivos para copiar ou um número muito, muito pequeno de arquivos (porque o segundo estágio de cópia de arquivos geralmente é muito rápido). Indicador de progresso 68,6% - 70% ao criar um arquivo zip ou 98% - 100% se nenhum arquivo zip for criado. O processo de cópia é semelhante ao terceiro estágio.
 1. Dependendo do público alvo:

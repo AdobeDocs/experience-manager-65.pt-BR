@@ -12,10 +12,10 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '2694'
-ht-degree: 38%
+ht-degree: 36%
 
 ---
 
@@ -28,7 +28,7 @@ Execute as seguintes tarefas para controlar como e quando as live copies são si
 
 ## Configurações de implantação instaladas e personalizadas {#installed-and-custom-rollout-configurations}
 
-Esta seção fornece informações sobre as configurações de implantação instaladas e as ações de sincronização que elas usam, bem sobre como criar configurações personalizadas se necessário.
+Esta seção fornece informações sobre as configurações de implantação instaladas e as ações de sincronização que elas usam, e como criar configurações personalizadas, se necessário.
 
 >[!CAUTION]
 >
@@ -386,7 +386,7 @@ Você também pode definir as configurações de implantação para uma página 
 
    ![Configuração](assets/chlimage_1-1.png)
 
-1. Se necessário, ajuste o sinalizador de **Herança da Live Copy**. Se essa opção for marcada, a configuração da live copy terá efeito em todas as tarefas derivadas.
+1. Se necessário, ajuste a variável **Herança da Live Copy** sinalizador. Se essa opção for marcada, a configuração da live copy terá efeito em todas as tarefas derivadas.
 
 1. Limpe a propriedade **Herdar configurações de implantação da página principal** e selecione uma ou mais configurações de implantação na lista.
 

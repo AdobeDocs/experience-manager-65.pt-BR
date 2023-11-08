@@ -3,10 +3,10 @@ title: Criação e sincronização de Live Copies
 description: Saiba como criar e sincronizar Live Copies no Adobe Experience Manager.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '4227'
-ht-degree: 46%
+ht-degree: 45%
 
 ---
 
@@ -412,7 +412,7 @@ Uma vez [suspensa](#suspending-inheritance-from-page-properties), a ação **Ret
 
 ![Retomar](assets/chlimage_1-229.png)
 
-Quando selecionada, a caixa de diálogo é exibida. É possível selecionar uma sincronização, se necessário, e confirmar a ação.
+Quando selecionada, a caixa de diálogo é exibida. Você pode selecionar uma sincronização, se necessário, e confirmar a ação.
 
 #### Retomar uma página de Live Copy na visão geral da Live Copy {#resume-a-live-copy-page-from-the-live-copy-overview}
 

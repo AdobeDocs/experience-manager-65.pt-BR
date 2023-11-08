@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '7174'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Para um endpoint de pasta monitorada, os usuários podem chamar copiando ou arra
 
 Para endpoints de pasta monitorada, se o trabalho exigir apenas um arquivo de entrada, o usuário poderá copiar esse arquivo para a raiz da pasta monitorada.
 
-Se o trabalho contiver mais de um arquivo de entrada, o usuário deverá criar uma pasta fora da hierarquia de pastas monitoradas que contenha todos os arquivos necessários. Essa nova pasta deve incluir os arquivos de entrada (e, opcionalmente, um arquivo DDX, se exigido pelo processo). Após a construção da pasta de trabalho, o usuário a copia para a pasta de entrada da pasta monitorada.
+Se o trabalho contiver mais de um arquivo de entrada, o usuário deverá criar uma pasta fora da hierarquia de pastas monitoradas que contenha todos os arquivos necessários. Essa nova pasta deve incluir os arquivos de entrada (e, opcionalmente, um arquivo DDX, se necessário, pelo processo). Após a construção da pasta de trabalho, o usuário a copia para a pasta de entrada da pasta monitorada.
 
 >[!NOTE]
 >

@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1519'
-ht-degree: 90%
+ht-degree: 82%
 
 ---
 
@@ -82,7 +82,7 @@ Use o procedimento a seguir para concluir o item de trabalho:
 1. Abra a **[Caixa de entrada do AEM](/help/sites-authoring/inbox.md)**.
 1. Selecione o item do fluxo do trabalho no qual deseja executar a ação (toque/clique na miniatura).
 1. Selecione **Concluído** na barra de ferramentas.
-1. A variável **Item de trabalho concluído** é aberta. Selecione a **Próxima etapa** no seletor suspenso e adicione um **Comentário**, se necessário.
+1. A variável **Item de trabalho concluído** é aberta. Selecione o **Próxima etapa** no seletor suspenso e adicione um **Comentário** se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Conclusão de uma etapa do participante - Editor de páginas {#completing-a-participant-step-page-editor}
@@ -91,7 +91,7 @@ Use o procedimento a seguir para concluir o item de trabalho:
 
 1. Abra a [página para edição](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Selecione **Concluído** na barra de status na parte superior.
-1. A variável **Item de trabalho concluído** é aberta. Selecione a **Próxima etapa** no seletor suspenso e adicione um **Comentário**, se necessário.
+1. A variável **Item de trabalho concluído** é aberta. Selecione o **Próxima etapa** no seletor suspenso e adicione um **Comentário** se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Conclusão de uma etapa do participante - Linha do tempo {#completing-a-participant-step-timeline}
@@ -141,7 +141,7 @@ Use o procedimento a seguir para delegar um item de trabalho:
 1. Abra a **[Caixa de entrada do AEM](/help/sites-authoring/inbox.md)**.
 1. Selecione o item do fluxo do trabalho no qual deseja executar a ação (toque/clique na miniatura).
 1. Selecione **Delegar** na barra de ferramentas.
-1. A caixa de diálogo se abre. Especifique o **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário**, se necessário.
+1. A caixa de diálogo se abre. Especifique a **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário** se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Delegação de uma etapa do participante - Editor de páginas {#delegating-a-participant-step-page-editor}
@@ -150,7 +150,7 @@ Use o procedimento a seguir para delegar um item de trabalho:
 
 1. Abra a [página para edição](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Selecione **Delegar** na barra de status na parte superior.
-1. A caixa de diálogo se abre. Especifique o **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário**, se necessário.
+1. A caixa de diálogo se abre. Especifique a **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário** se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Delegação de uma etapa do participante - Linha do tempo {#delegating-a-participant-step-timeline}
@@ -192,7 +192,7 @@ Use o procedimento a seguir para retroceder:
 1. Selecione o item do fluxo do trabalho no qual deseja executar a ação (toque/clique na miniatura).
 1. Selecione **Retroceder** para abrir a caixa de diálogo.
 
-1. Especifique a **Etapa anterior** e adicione um **Comentário**, se necessário.
+1. Especifique a **Etapa anterior** e adicionar um **Comentário** se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Retrocesso em uma etapa do participante - Editor de páginas {#performing-step-back-on-a-participant-step-page-editor}
@@ -201,7 +201,7 @@ Use o procedimento a seguir para retroceder:
 
 1. Abra a [página para edição](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Selecione **Retroceder** na barra de status na parte superior.
-1. Especifique a **Etapa anterior** e adicione um **Comentário**, se necessário.
+1. Especifique a **Etapa anterior** e adicionar um **Comentário** se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Retrocesso em uma etapa do participante - Linha do tempo {#performing-step-back-on-a-participant-step-timeline}

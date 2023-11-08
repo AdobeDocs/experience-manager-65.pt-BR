@@ -2,10 +2,10 @@
 title: Saiba mais sobre as noções básicas de criação
 description: Saiba mais sobre os conceitos e os mecanismos de criação de conteúdo para seu CMS headless usando Fragmentos de conteúdo.
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1688'
-ht-degree: 78%
+source-wordcount: '1689'
+ht-degree: 76%
 
 ---
 
@@ -108,7 +108,7 @@ Uma caixa de diálogo é aberta, onde você pode inserir os detalhes e confirmar
 
 #### Uso de caminhos e tags para limitar os Modelos de fragmentos de conteúdo disponíveis na pasta {#tags-paths-for-models-in-folder}
 
-Esta seção é um pouco mais avançada. Você realmente não precisa dela se você está começando e apenas testando as coisas, mas é *muito* útil quando você tem muitos fragmentos. Por isso é bom saber - mesmo que ainda não o utilize.
+Esta seção é um pouco mais avançada. Na verdade, você não precisa se estiver apenas começando e tentando coisas, mas isso é mais útil quando há muitos fragmentos. Portanto, é bom saber sobre o - mesmo que você ainda não o use.
 
 Seu Arquiteto de conteúdo terá criado todos os Modelos de fragmentos de conteúdo necessários para seu projeto atual e talvez alguns outros projetos também. Para ajudar a simplificar as coisas para você mesmo e para outros autores, você pode limitar a lista de modelos disponíveis para uma pasta específica.
 

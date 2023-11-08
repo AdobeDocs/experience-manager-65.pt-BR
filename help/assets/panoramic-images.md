@@ -1,26 +1,24 @@
 ---
 title: Imagens panorâmicas
 description: Saiba como trabalhar com imagens panorâmicas no Dynamic Media.
-uuid: ced3e5bd-93c8-4d5f-a397-1380d4d0a5e7
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
-discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
 feature: Panoramic Images,Asset Management
 role: User, Admin
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
 
 # Imagens panorâmicas{#panoramic-images}
 
-Esta seção descreve como trabalhar com o visualizador de imagens panorâmicas para renderizar imagens panorâmicas esféricas para uma experiência de visualização imersiva de 360° em uma sala, propriedade, localização ou paisagem.
+Esta seção descreve como trabalhar com o Visualizador de imagens panorâmicas para renderizar imagens panorâmicas esféricas para obter uma experiência de visualização imersiva em 360 graus de uma sala, propriedade, localização ou paisagem.
 
 Consulte também [Gerenciar predefinições do visualizador](/help/assets/managing-viewer-presets.md).
 
@@ -32,7 +30,7 @@ Para que um ativo carregado seja qualificado como uma imagem panorâmica esféri
 
 * Uma taxa de proporção de 2.
 Você pode substituir a configuração padrão de taxa de proporção de 2 em CRXDE Lite no seguinte local:
-   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
+  `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
 * Marcado com as palavras-chave `equirectangular`ou `spherical`e `panorama`ou `spherical` e `panoramic`. Consulte [Uso de tags](/help/sites-authoring/tags.md).
 
