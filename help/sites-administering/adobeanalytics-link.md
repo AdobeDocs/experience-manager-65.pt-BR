@@ -1,18 +1,14 @@
 ---
 title: Configuração do rastreamento de links para o Adobe Analytics
-seo-title: Configuring Link Tracking for Adobe Analytics
 description: Saiba como configurar o rastreamento de links para o SiteCatalyst.
-seo-description: Learn about configuring link tracking for SiteCatalyst.
-uuid: b6d5bd1c-f91a-4d38-9e9e-dc2bcb271dae
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
 exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
-source-git-commit: 5e94a0cdb363e95ce398ea4ed0bce4a6aba9e7ce
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1615'
 ht-degree: 1%
 
 ---
@@ -24,7 +20,7 @@ Quando os usuários clicam em links nas páginas do seu site, você pode captura
 
 ## Configuração do rastreamento de links para uma estrutura do Adobe Analytics {#configuring-link-tracking-for-an-adobe-analytics-framework}
 
-1. Usar **Navegação**, ir via **Implantação**, **Cloud Services** para o **Adobe Analytics** seção.
+1. Usar **Navegação**, ir via **Implantação**, **Cloud Service** para o **Adobe Analytics** seção.
 
 1. Usar **Exibir configurações**, abra a estrutura necessária do Adobe Analytics.
 1. Expanda a **Configuração de rastreamento de link** e configure conforme necessário (esta página fornece mais detalhes):
@@ -93,7 +89,7 @@ Define filtros para corresponder aos URLs de links internos. Quando o link é di
 * **Deixar sequência de consulta**
 Inclui parâmetros de URL ao avaliar correspondências com filtros internos e externos.
 
-  Permite incluir parâmetros de URL ao avaliar URLs de destino de link em relação a filtros externos e internos.
+  Ative se quiser incluir parâmetros de URL ao avaliar URLs de destino de link em relação a filtros externos e internos.
 
 As propriedades de rastreamento de link externo são implementadas como código no `analytics.sitecatalyst.js` arquivo gerado para uma página. O código de exemplo a seguir é gerado para uma página associada a uma estrutura que ativou o rastreamento de links externos com a seguinte configuração:
 
@@ -215,7 +211,7 @@ Este exemplo ilustra como o mapeamento funciona no contexto do rastreamento e do
 1. Desmarcar **Deixar sequência de consulta**.
 1. Use o seguinte valor para o **Filtros externos** para identificá-la como um URL externo:
 
-   `‘yahoo.com’`
+   `'yahoo.com'`
 
 1. Adicione o seguinte valor ao **Vincular eventos de rastreamento** campo:
 
@@ -345,12 +341,12 @@ Use o procedimento a seguir para configurar o rastreamento de links para um **Te
 1. (Opcional) Para rastrear dados de variáveis com o clique em links, adicione variáveis do Adobe Analytics no **Incluir variáveis do Adobe Analytics** campo. Use um dos seguintes formatos:
 
    * *`<Variable-name>`*: *`<Dynamic Value>`*
-   * *`<Variable-name>`*: *`‘CONSTANT'`*
+   * *`<Variable-name>`*: *`'CONSTANT'`*
 
    Os exemplos a seguir ilustram cada formato:
 
    * `eVar10:pagedata.title`
-   * `prop1: ‘Aubergine'`
+   * `prop1: 'Aubergine'`
 
    Separe vários valores com uma vírgula.
 

@@ -7,9 +7,9 @@ feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '5739'
+source-wordcount: '5736'
 ht-degree: 6%
 
 ---
@@ -428,7 +428,7 @@ Você pode fazer o seguinte com os ativos pesquisados em [!DNL Experience Manage
 
 Classifique os resultados da pesquisa para descobrir os ativos necessários com mais rapidez. Você pode classificar os resultados da pesquisa na exibição em lista e somente ao selecionar **[[!UICONTROL Arquivos]](#searchui)** do **[!UICONTROL Filtros]** painel. [!DNL Assets]O usa a classificação do lado do servidor para classificar rapidamente todos os ativos (independente da quantidade) em uma pasta ou nos resultados de uma consulta de pesquisa. A classificação do lado do servidor fornece resultados mais rápidos e precisos do que a classificação do lado do cliente.
 
-Na exibição em lista, você pode classificar os resultados da pesquisa da mesma maneira que classifica os ativos em qualquer pasta. A classificação funciona nessas colunas — Nome, Título, Status, Dimension, Tamanho, Classificação, Uso, (Data) Criada, (Data) Modificada, (Data) Publicada, Fluxo de trabalho e Com Check-out.
+Na exibição em lista, você pode classificar os resultados da pesquisa da mesma maneira que classifica os ativos em qualquer pasta. A classificação funciona nessas colunas — Nome, Título, Status, Dimension, Tamanho, Classificação, Uso, Criado, Modificado, Publicado, Fluxo de trabalho e Com check-out.
 
 Para obter as limitações da funcionalidade de classificação, consulte [limitações](#limitations).
 

@@ -1,19 +1,15 @@
 ---
 title: Suporte a script para formulários HTML5
-seo-title: Scripting support for HTML5 forms
 description: JavaScript, propriedades FormCalc e outros métodos compatíveis com o HTML5 Forms.
-seo-description: JavaScript, FormCalc properties, and other methods that are supported in HTML5 Forms.
-uuid: 697d5ec4-c818-41e4-b813-883c01b7ff3a
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '3887'
+source-wordcount: '3896'
 ht-degree: 7%
 
 ---
@@ -36,7 +32,7 @@ As propriedades JavaScript, FormCalc e os métodos compatíveis com formulários
    <td>Especifica o conteúdo do campo antes de ele ser alterado em resposta às ações de um usuário. Esse valor pode ser recuperado, de modo semelhante a um recurso de desfazer.</td>
    <td><p>Não funciona para caixas suspensas e de listagem. <code>PrevText </code>não funciona corretamente nos seguintes casos:</p>
     <ul>
-     <li>Ao digitar algumas chaves de caracteres especiais (por exemplo, $, (,), &amp;, @ e mais) em campos Numéricos no iPad e </li>
+     <li>Ao digitar algumas chaves de caracteres especiais (por exemplo, $ ou , ou &amp; ou @ e mais) em campos Numéricos no iPad, e </li>
      <li>Para o campo Date (quando a data é inserida por meio do calendário).<br /> </li>
     </ul> <p>Não há suporte para a configuração de valor por meio do script.</p> </td>
   </tr>
@@ -52,7 +48,7 @@ As propriedades JavaScript, FormCalc e os métodos compatíveis com formulários
     <ul>
      <li>Na seleção e substituição de textos</li>
      <li>Sobre exclusão, cópia e colagem de textos.</li>
-     <li>Ao digitar algumas chaves de caracteres especiais (por exemplo, $, (, ), &amp;, @ e mais) em campos Numéricos<br /> </li>
+     <li>Ao digitar algumas chaves de caracteres especiais (por exemplo, $ ou , ou &amp; ou @ e mais) em campos Numéricos<br /> </li>
      <li>Ao usar a combinação shift+alfanumeric. </li>
      <li>Sobre o uso de campos de data/hora.</li>
     </ul>
@@ -67,7 +63,7 @@ As propriedades JavaScript, FormCalc e os métodos compatíveis com formulários
     <ul>
      <li>Na seleção e substituição de textos</li>
      <li>Sobre exclusão, cópia e colagem de textos.</li>
-     <li>Ao digitar algumas chaves de caracteres especiais (por exemplo, $, (,), &amp;, @ e mais) em campos Numéricos<br /> </li>
+     <li>Ao digitar algumas chaves de caracteres especiais (por exemplo, $ ou , ou &amp; ou @ e mais) em campos Numéricos<br /> </li>
      <li>Ao usar a combinação shift+alfanumeric. </li>
      <li>Sobre o uso de campos de data/hora.</li>
     </ul> <p>Não há suporte para a configuração de valor por meio do script.</p> </td>

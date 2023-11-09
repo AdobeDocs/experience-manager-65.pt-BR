@@ -1,17 +1,13 @@
 ---
 title: Preparar e enviar a comunicação interativa usando a interface do usuário do agente
-seo-title: Prepare and send Interactive Communication using the Agent UI
 description: A interface do usuário do agente permite que os agentes preparem e enviem a comunicação interativa para o processo posterior. O agente faz as modificações necessárias conforme permitido e envia a comunicação interativa para um processo posterior, como email ou impressão.
-seo-description: Prepare and send Interactive Communication using the Agent UI
-uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '2020'
+source-wordcount: '2021'
 ht-degree: 0%
 
 ---
@@ -69,7 +65,7 @@ Na guia Conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
 
    Na guia Conteúdo ou Dados, tocando em Realçar módulos selecionados no conteúdo ( ![highlightselectedmodulesincontentcr](assets/highlightselectedmodulesincontentccr.png)) na parte superior esquerda da visualização, você pode desativar ou ativar a funcionalidade para acessar o fragmento do documento quando o texto, parágrafo ou campo de dados relevante for tocado/selecionado na visualização.
 
-   Os fragmentos que têm permissão para serem editados pelo agente ao criar a Comunicação interativa têm a opção Editar conteúdo selecionado ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)) ícone. Toque no ícone Editar conteúdo selecionado para iniciar o fragmento no modo de edição e fazer alterações nele. Use as seguintes opções para formatar e gerenciar texto:
+   Os fragmentos que podem ser editados pelo agente ao criar a comunicação interativa têm a opção Editar conteúdo selecionado ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)) ícone. Toque no ícone Editar conteúdo selecionado para iniciar o fragmento no modo de edição e fazer alterações nele. Use as seguintes opções para formatar e gerenciar texto:
 
    * [Opções de formatação](#formattingtext)
 
@@ -169,7 +165,7 @@ A interface do usuário do agente tem suporte integrado para 210 caracteres espe
 
 * Inserir linha em branco: insere uma nova linha em branco.
 * Seleção (ícone de olho): Inclui\exclui fragmento de documento da Comunicação interativa.
-* Ignorar marcadores/numerações: permite ignorar marcadores/numeração no fragmento do documento de lista.
+* Ignorar marcadores/numerações: ative se quiser ignorar marcadores/numeração no fragmento do documento de lista.
 * Valores não preenchidos (informações): indica o número de variáveis não preenchidas no fragmento do documento.
 
 ## Salvar as comunicações interativas como rascunho {#save-as-draft}
@@ -188,7 +184,7 @@ Por padrão, o recurso Salvar como rascunho não está ativado. Execute as segui
 
    Para obter exemplos de implementação de SPI, consulte [Exemplo de implementação de SPI ccrDocumentInstance](#sample-ccrDocumentInstance-spi).
 1. Abertura `http://<hostname>:<port>/ system/console/bundles` e toque em **[!UICONTROL Instalar/Atualizar]** para fazer upload do pacote OSGi. Verifique se o status do pacote carregado é exibido como **Ativo**. Reinicie o servidor se o status do pacote não for exibido como **Ativo**.
-1. Ir para `https://'[server]:[port]'/system/console/configMgr`.
+1. Acesse `https://'[server]:[port]'/system/console/configMgr`.
 1. Toque **[!UICONTROL Criar configuração de correspondência]**.
 1. Selecionar **[!UICONTROL Habilitar Salvar Usando CCRDocumentInstanceService]** e toque em **[!UICONTROL Salvar]**.
 
