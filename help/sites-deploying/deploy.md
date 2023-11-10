@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e4e2e8b58c0283182b2fbd4262a4ef9b607dac26
 workflow-type: tm+mt
-source-wordcount: '1765'
+source-wordcount: '1803'
 ht-degree: 3%
 
 ---
@@ -73,7 +73,7 @@ Com base nessa base, o AEM também oferece vários recursos no nível de aplicat
 * **Sites**
 * **Aplicativos móveis**
 * **Publicações digitais**
-* **Forms**
+* **Formulários e documentos**
 * **Ativos digitais**
 * **Communities**
 * **Comércio online**
@@ -81,6 +81,10 @@ Com base nessa base, o AEM também oferece vários recursos no nível de aplicat
 Por fim, os clientes podem usar esses componentes básicos de infraestrutura e nível de aplicativo para criar soluções personalizadas, criando aplicativos próprios.
 
 O servidor AEM é **Baseado em Java** e é executado na maioria dos sistemas operacionais compatíveis com essa plataforma. Toda interação do cliente com o AEM é feita por meio de uma **navegador da web**.
+
+>[!NOTE]
+>
+>O recurso Adaptive Forms, disponível no AEM 6.5 QuickStart, foi projetado apenas para fins de exploração e avaliação. Para o uso em produção, é essencial obter uma licença válida para o AEM Forms, pois a funcionalidade Adaptive Forms requer uma licença adequada.
 
 ### Cenários de implantação típicos {#typical-deployment-scenarios}
 

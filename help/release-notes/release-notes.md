@@ -2,9 +2,9 @@
 title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: e3a3511a5854432b9c01748f7f5ffaf9182180f8
+source-git-commit: e4e2e8b58c0283182b2fbd4262a4ef9b607dac26
 workflow-type: tm+mt
-source-wordcount: '3392'
+source-wordcount: '3429'
 ht-degree: 1%
 
 ---
@@ -282,6 +282,10 @@ Para conhecer as plataformas certificadas para trabalhar com esta versão, consu
 ### Instalar o Service Pack do [!DNL Experience Manager] Forms{#install-aem-forms-add-on-package}
 
 Para obter instruções sobre como instalar o pacote de serviços no Experience Manager Forms, consulte [Instruções de instalação do Experience Manager Forms Service Pack](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
+
+>[!NOTE]
+>
+>O recurso Adaptive Forms, disponível no AEM 6.5 QuickStart, foi projetado apenas para fins de exploração e avaliação. Para o uso em produção, é essencial obter uma licença válida para o AEM Forms, pois a funcionalidade Adaptive Forms requer uma licença adequada.
 
 ### Instalar pacote de índice do GraphQL para fragmentos de conteúdo do Experience Manager{#install-aem-graphql-index-add-on-package}
 
