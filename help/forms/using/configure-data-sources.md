@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: d39b4b1d921fc93a4871b74469953f2dfc5c470b
 workflow-type: tm+mt
-source-wordcount: '2111'
+source-wordcount: '2112'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 A Integração de dados do AEM Forms permite configurar e conectar-se a diferentes fontes de dados. Os seguintes tipos são prontos para uso. No entanto, com pouca personalização, também é possível integrar outras fontes de dados.
 
-* Bancos de dados relacionais - MySQL, Microsoft SQL Server, IBM DB2, Oracle RDBMS e Sybase
+* Bancos de dados relacionais - MySQL, Microsoft SQL Server, IBM DB2, Oracle RDBMS, postgreSQL e Sybase
 * Perfil de usuário AEM
 * Serviços Web RESTful
 * Serviços da Web com base em SOAP
