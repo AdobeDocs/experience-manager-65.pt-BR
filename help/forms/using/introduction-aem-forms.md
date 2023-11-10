@@ -11,9 +11,9 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: e4e2e8b58c0283182b2fbd4262a4ef9b607dac26
+source-git-commit: 6f45b0f8dad44e66570f6436a560060cbed56161
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '952'
 ht-degree: 11%
 
 ---
@@ -36,6 +36,10 @@ O AEM Forms combina criação, gerenciamento e publicação de formulários, jun
 Frequentemente em grandes empresas, os formulários são criados uma vez e reutilizados, por meio de uma cópia enviada para um sistema de gerenciamento de conteúdo. Manter um grande banco de dados de formulários atualizado e torná-los detectáveis pode ser um desafio considerável. O AEM fornece um portal de formulários personalizável que garante que os clientes encontrem e acessem os formulários de que precisam, tanto na web quanto em canais móveis.
 
 O AEM Forms fornece ferramentas de gerenciamento de formulários que permitem não apenas gerenciar formulários adaptáveis, mas também formulários XFA, PDF forms e ativos relacionados. Para obter mais informações, consulte [Introdução ao gerenciamento de formulários](../../forms/using/introduction-managing-forms.md).
+
+>[!NOTE]
+>
+>O recurso do AEM Forms, como o Adaptive Forms, disponível em [QuickStart do AEM 6.5](/help/sites-deploying/deploy.md), são apenas para fins de exploração e avaliação. Para uso em produção, é essencial obter uma licença válida para o AEM Forms.
 
 ![Recursos de formulários AEM](do-not-localize/4th-draft.gif)
 
@@ -124,6 +128,3 @@ Documentos personalizados, como recibos, kits de boas-vindas e demonstrativos, p
 
 Fluxo de trabalho de comunicação personalizado simplificado
 
->[!NOTE]
->
->O recurso Adaptive Forms, disponível no AEM 6.5 QuickStart, foi projetado apenas para fins de exploração e avaliação. Para o uso em produção, é essencial obter uma licença válida para o AEM Forms, pois a funcionalidade Adaptive Forms requer uma licença adequada.
