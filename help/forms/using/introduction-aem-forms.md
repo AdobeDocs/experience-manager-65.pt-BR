@@ -11,9 +11,9 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: 6f45b0f8dad44e66570f6436a560060cbed56161
+source-git-commit: 41ef1b05e4082bb50b93ff6511542ed56a77497c
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '953'
 ht-degree: 11%
 
 ---
@@ -39,7 +39,8 @@ O AEM Forms fornece ferramentas de gerenciamento de formulários que permitem n�
 
 >[!NOTE]
 >
->O recurso do AEM Forms, como o Adaptive Forms, disponível em [QuickStart do AEM 6.5](/help/sites-deploying/deploy.md), são apenas para fins de exploração e avaliação. Para uso em produção, é essencial obter uma licença válida para o AEM Forms.
+>O recurso do AEM Forms, como o Adaptive Forms, disponível em [QuickStart do AEM 6.5](/help/sites-deploying/deploy.md), destinam-se apenas a fins de exploração e avaliação. Para uso em produção, é essencial obter uma licença válida para o AEM Forms.
+
 
 ![Recursos de formulários AEM](do-not-localize/4th-draft.gif)
 
