@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
 workflow-type: tm+mt
-source-wordcount: '2707'
+source-wordcount: '2709'
 ht-degree: 1%
 
 ---
@@ -944,4 +944,4 @@ A pasta local agora está sincronizada com o repositório. A sincronização é 
 
 >[!NOTE]
 >
->O recurso de Sincronização VLT só oferece suporte a arquivos e pastas simples, mas detecta arquivos serializados especiais do Vault (.content.xml, dialog.xml etc.) e os ignora silenciosamente. Assim, é possível usar a sincronização do Vault em uma finalização do Vault padrão.
+>O recurso de Sincronização VLT só oferece suporte a arquivos e pastas simples, mas detecta arquivos serializados especiais do Vault (.content.xml, dialog.xml e assim por diante) e os ignora silenciosamente. Assim, é possível usar a sincronização do Vault em uma finalização do Vault padrão.

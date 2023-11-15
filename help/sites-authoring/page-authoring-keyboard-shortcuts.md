@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 68%
+source-wordcount: '221'
+ht-degree: 63%
 
 ---
 
@@ -27,7 +27,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
 
 | Local | Atalho | Descrição |
 |---|---|---|
-| Qualquer modo de Editar janela | `Ctrl-Shift-m` | Alternar entre a **Visualização** e o [modo](/help/sites-authoring/author-environment-tools.md#page-modes)</a> selecionado atualmente (por exemplo, **Editar**, **Layout** etc.)* |
+| Qualquer modo de Editar janela | `Ctrl-Shift-m` | Alternar entre **Visualizar** e os selecionados no momento [modo](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (por exemplo, **Editar**, **Layout** e assim por diante) |
 | Modo de **Edição** | `Ctrl-z` | [Desfazer a última alteração](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Refazer a última alteração](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Selecionar parágrafos múltiplos |

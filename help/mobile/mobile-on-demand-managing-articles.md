@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: ea6c8aa3-f86e-4878-8550-fe1662f10696
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '681'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ O workflow para editar um artigo:
 
 ### Visualização e edição dos metadados em um artigo {#viewing-and-editing-the-metadata-within-an-article}
 
-Conteúdo como artigos, banners etc. têm várias propriedades, como títulos, descrições e imagens. Esta ação é usada para exibir e modificar essas propriedades. Como opção, essas alterações podem ser carregadas no Mobile On-Demand ao salvar.
+Conteúdo como artigos, banners e assim por diante têm várias propriedades, como títulos, descrições e imagens. Esta ação é usada para exibir e modificar essas propriedades. Como opção, essas alterações podem ser carregadas no Mobile On-Demand ao salvar.
 
 O workflow geral para exibir/editar um artigo:
 
