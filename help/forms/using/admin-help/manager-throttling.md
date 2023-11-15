@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 1f765de2-1362-4318-9302-c5036e6fa7d6
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '1021'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Você pode configurar a limitação para o Work Manager, de modo que os itens de
  <tbody>
   <tr>
    <td><code> adobe.work-manager.queue-refill-interval</code></td>
-   <td><p>Especifica o intervalo de tempo, em milissegundos, que o Work Manager utiliza ao verificar novos itens em sua fila.</p><p>O valor dessa opção é um número inteiro. O valor padrão é <code>1000</code> milissegundos (1 segundo). </p><p>Se o volume de invocações assíncronas for baixo, você poderá aumentar esse valor. Por exemplo, você pode aumentá-lo para algo entre 2000 e 5000 (2 a 5 segundos). </p><p>Se o volume de invocações assíncronas for alto, o valor padrão deverá ser suficiente, mas você poderá usar um valor menor, se necessário. Diminuir muito esse valor (por exemplo, abaixo de 50, o que resulta em uma frequência de pesquisa de 20 vezes por segundo) causa uma sobrecarga substancial no sistema.</p></td>
+   <td><p>Especifica o intervalo de tempo, em milissegundos, que o Work Manager utiliza ao verificar novos itens em sua fila.</p><p>O valor dessa opção é um número inteiro. O valor padrão é <code>1000</code> milissegundos (1 segundo). </p><p>Se o volume de invocações assíncronas for baixo, você poderá aumentar esse valor. Por exemplo, você pode aumentá-lo para algo entre 2000 e 5000 (2-5 segundos). </p><p>Se o volume de invocações assíncronas for alto, o valor padrão deverá ser suficiente, mas você poderá usar um valor menor, se necessário. Diminuir muito esse valor (por exemplo, abaixo de 50, o que resulta em uma frequência de pesquisa de 20 vezes por segundo) causa uma sobrecarga substancial no sistema.</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.debug-mode-enabled</code></td>

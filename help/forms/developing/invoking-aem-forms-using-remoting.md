@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '4593'
 ht-degree: 0%
@@ -311,7 +311,7 @@ Você habilita a autenticação personalizada no console de administração alte
 >
 Na versão anterior do AEM Forms, você enviou credenciais para um destino chamando o `RemoteObject.setCredentials` método. A variável `setCredentials` O método de não passou as credenciais para o servidor até a primeira tentativa do componente de se conectar ao servidor. Portanto, se o componente emitiu um evento de falha, você não poderia ter certeza se a falha aconteceu devido a um erro de autenticação ou por outro motivo. A variável `ChannelSet.login` se conecta ao servidor quando você o chama, para que você possa lidar com um problema de autenticação imediatamente. Embora você possa continuar usando o `setCredentials` , é recomendável usar o método `ChannelSet.login` método.
 
-Como vários destinos podem usar os mesmos canais e o objeto ChannelSet correspondente, fazer logon em um destino conecta o usuário a qualquer outro destino que use o mesmo canal ou canais. Se dois componentes aplicarem credenciais diferentes ao mesmo objeto ChannelSet, as últimas credenciais aplicadas serão usadas. Se vários componentes usarem o mesmo objeto ChannelSet autenticado, chamando o `logout` O método do registra todos os componentes fora dos destinos.
+Como vários destinos podem usar os mesmos canais e o objeto ChannelSet correspondente, fazer logon em um destino acessa o usuário em qualquer outro destino que use o mesmo canal ou canais. Se dois componentes aplicarem credenciais diferentes ao mesmo objeto ChannelSet, as últimas credenciais aplicadas serão usadas. Se vários componentes usarem o mesmo objeto ChannelSet autenticado, chamando o `logout` O método do registra todos os componentes fora dos destinos.
 
 O exemplo a seguir usa o `ChannelSet.login` e `ChannelSet.logout` métodos com um controle RemoteObject. Este aplicativo executa as seguintes ações:
 

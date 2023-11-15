@@ -11,7 +11,7 @@ topic-tags: best-practices
 discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
 docset: aem65
 exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Recursos para agregar informações sobre o visitante e usá-las para vários pr
 
 ## Geral {#general}
 
-Nos últimos anos, a Adobe atualizou todas as soluções da Adobe Experience Cloud com uma interface unificada. Os usuários nas soluções Experience Cloud desfrutam de uma experiência consistente com padrões comuns sobre como usar e operar os aplicativos. Com cada versão, a Adobe refinou sua interface de usuário com base no feedback dos clientes que trabalham nas várias soluções.
+Nos últimos anos, a Adobe atualizou todas as soluções da Adobe Experience Cloud com uma interface unificada. Os usuários nas soluções Experience Cloud desfrutam de uma experiência consistente com padrões comuns sobre como usar e operar os aplicativos. Com cada versão, o Adobe refinou sua interface do usuário com base no feedback dos clientes que trabalham nas várias soluções.
 
 A interface de usuário original do Adobe Experience Manager (anteriormente conhecida como CQ5), introduzida em 2008 e usada por clientes que executam as versões 5.0 a 5.6.1, está presente no AEM 6.5. Isso garante que os clientes possam atualizar para o 6.5 e se beneficiar de uma plataforma atualizada com novos recursos, usando a mesma interface do usuário.
 

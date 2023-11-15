@@ -1,17 +1,14 @@
 ---
 title: Solução de problemas de índices Oak
-seo-title: Troubleshooting Oak Indexes
 description: Saiba como identificar se a indexação está lenta, encontrar a causa e resolver o problema.
-uuid: 6567ddae-128c-4302-b7e8-8befa66b1f43
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: ea70758f-6726-4634-bfb4-a957187baef0
 exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1473'
+source-wordcount: '1474'
 ht-degree: 1%
 
 ---
@@ -22,7 +19,7 @@ ht-degree: 1%
 
 O processo de reindexação interna do AEM coleta dados do repositório e os armazena em índices Oak para oferecer suporte à consulta eficiente do conteúdo. Em circunstâncias excepcionais, o processo pode ficar lento ou até travado. Esta página atua como um guia de solução de problemas para ajudar a identificar se a indexação está lenta, encontrar a causa e resolver o problema.
 
-É importante distinguir entre a reindexação, que leva um tempo inadequadamente longo, e a reindexação, que leva um longo tempo, pois está indexando grandes quantidades de conteúdo. Por exemplo, o tempo necessário para indexar o conteúdo é dimensionado com a quantidade de conteúdo, portanto, repositórios de produção grandes demoram mais para reindexar do que repositórios de desenvolvimento pequenos.
+É importante distinguir entre a reindexação, que leva um tempo inadequadamente longo, e a reindexação, que leva um tempo longo, pois está indexando grandes quantidades de conteúdo. Por exemplo, o tempo necessário para indexar o conteúdo é dimensionado com a quantidade de conteúdo, portanto, repositórios de produção grandes demoram mais para reindexar do que repositórios de desenvolvimento pequenos.
 
 Consulte a [Práticas recomendadas em consultas e indexação](/help/sites-deploying/best-practices-for-queries-and-indexing.md) para obter informações adicionais sobre quando e como reindexar o conteúdo.
 

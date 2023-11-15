@@ -6,10 +6,10 @@ role: User
 feature: Asset Management,Asset Distribution
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '884'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -66,7 +66,7 @@ Para permitir o download de ativos do seu DAM, ao usar algo como o Asset Share C
 
 1. Criar uma pasta com uma convenção de nomenclatura direcionada ao modo de execução de publicação (`config.publish`): `/apps/<your-app-name>/config.publish`. Para definir propriedades de configuração para um modo de execução, consulte [Modos de execução](/help/sites-deploying/configure-runmodes.md#defining-configuration-properties-for-a-run-mode).
 1. Na pasta de configuração, crie um arquivo do tipo `nt:file` nomeado `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
-1. Preencher `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` com o seguinte. Define um tamanho máximo (em bytes) para o download como o valor de `asset.download.prezip.maxcontentsize`. O exemplo abaixo configura o tamanho máximo do download do ZIP para não exceder 100 kB.
+1. Preencher `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` com o seguinte. Define um tamanho máximo (em bytes) para o download como o valor de `asset.download.prezip.maxcontentsize`. O exemplo abaixo configura o tamanho máximo do download do ZIP para não exceder 100 kb.
 
    ```conf
    enabled=B"true"
@@ -89,4 +89,3 @@ A variável `Asset Download Servlet` pode ser desativado em um [!DNL Experience 
 >* [Baixar ativos protegidos DRM](drm.md).
 >* [Baixe ativos usando o aplicativo de desktop Experience Manager no Win ou no Mac desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets).
 >* [Baixe ativos usando o Link de ativos do Adobe nos aplicativos compatíveis da Adobe Creative Cloud](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html).
-

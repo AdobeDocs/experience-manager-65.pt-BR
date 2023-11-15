@@ -8,9 +8,9 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: 0dea2b3e-fd7c-4811-a04a-6852ffc1e6d6
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2395'
+source-wordcount: '2396'
 ht-degree: 0%
 
 ---
@@ -135,7 +135,7 @@ Revise os Requisitos técnicos para o AEM 6.5 e certifique-se de que seu hardwar
 
 #### Considerações sobre a reestruturação de conteúdo {#content-restructuring-considerations}
 
-O AEM introduziu alterações na estrutura do repositório que ajudarão a facilitar as atualizações. As alterações envolvem mover o conteúdo da pasta /etc para pastas, incluindo /libs, /apps e /content, com base no Adobe ou em um cliente possuir o conteúdo, limitando assim as chances de substituir o conteúdo durante os lançamentos. A reestruturação do repositório foi feita de maneira que não deve exigir alterações de código no momento da atualização da versão 6.5, embora seja recomendável analisar os detalhes em [Reestruturação do repositório no AEM](/help/sites-deploying/repository-restructuring.md) ao planejar uma atualização.
+O AEM introduziu alterações na estrutura do repositório que ajudarão a facilitar as atualizações. As alterações envolvem mover o conteúdo da pasta /etc para pastas, incluindo /libs, /apps e /content, com base no Adobe ou em um cliente possuir o conteúdo, limitando assim as chances de substituir o conteúdo durante os lançamentos. A reestruturação do repositório foi realizada de forma a não exigir alterações no código no momento da atualização do 6.5, embora seja recomendável analisar os detalhes em [Reestruturação do repositório no AEM](/help/sites-deploying/repository-restructuring.md) ao planejar uma atualização.
 
 ### Avaliando a complexidade da atualização {#assessing-upgrade-complexity}
 

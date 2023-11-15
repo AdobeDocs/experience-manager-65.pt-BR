@@ -7,7 +7,7 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '2853'
 ht-degree: 2%
@@ -36,7 +36,7 @@ A maneira padrão de incluir uma biblioteca do lado do cliente (ou seja, um arqu
 
 Embora essa abordagem funcione no AEM, ela pode levar a problemas quando as páginas e seus componentes se tornam complexos. Nesses casos, há o perigo de que várias cópias da mesma biblioteca JS possam ser incluídas na saída de HTML final. Para evitar isso e permitir a organização lógica de bibliotecas do lado do cliente, o AEM usa **pastas de biblioteca do lado do cliente**.
 
-Uma pasta de biblioteca do lado do cliente é um nó de repositório do tipo `cq:ClientLibraryFolder`. Sua definição está em [Notação CND](https://jackrabbit.apache.org/node-type-notation.html) é
+Uma pasta de biblioteca do lado do cliente é um nó de repositório do tipo `cq:ClientLibraryFolder`. A sua definição no [Notação CND](https://jackrabbit.apache.org/node-type-notation.html) é
 
 ```shell
 [cq:ClientLibraryFolder] > sling:Folder

@@ -8,9 +8,9 @@ topic-tags: content
 content-type: reference
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '3568'
+source-wordcount: '3574'
 ht-degree: 2%
 
 ---
@@ -382,7 +382,7 @@ Essa validação determina se o pacote que está sendo instalado contém um arqu
 
 Por exemplo, dada uma sobreposição existente em `/apps/sling/servlet/errorhandler/404.jsp`, um pacote que contém `/libs/sling/servlet/errorhandler/404.jsp`, de modo que altere o arquivo existente em `/libs/sling/servlet/errorhandler/404.jsp`.
 
-**Como é relatado**
+**Como é exportado**
 
 Essas sobreposições são descritas no Log de atividades do Gerenciador de pacotes.
 

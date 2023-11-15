@@ -5,7 +5,7 @@ contentOwner: AG
 role: Architect, Admin
 feature: Developer Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 0%
@@ -73,7 +73,7 @@ O cenário de exemplo inclui um farm de publicação com cinco servidores, um ar
 
 O dispatcher compartilha sua conexão de 100 Mbps com duas entidades, o mundo externo e o [!DNL Experience Manager] implantação. Para operações simultâneas de upload e download, você deve dividir esse número por dois. O armazenamento externo conectado usa uma conexão separada.
 
-A variável [!DNL Experience Manager] O compartilha sua conexão de 1 Gbps com vários serviços. Do ponto de vista da topologia de rede, é equivalente ao compartilhamento de um único canal com diferentes serviços.
+A variável [!DNL Experience Manager] A implantação do compartilha sua conexão de 1 Gbps com vários serviços. Do ponto de vista da topologia de rede, é equivalente ao compartilhamento de um único canal com diferentes serviços.
 
 Examinando a rede do dispositivo cliente para o [!DNL Experience Manager] , o menor ponto de bloqueio parece ser o controle do firewall corporativo de 10 Mbit. Você pode usar esses valores na calculadora de dimensionamento na [Guia de dimensionamento de ativos](assets-sizing-guide.md) para determinar a experiência do usuário.
 

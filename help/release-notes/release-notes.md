@@ -2,9 +2,9 @@
 title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 7c5d45788583cce3403b8beca0c122a9ddf1ca49
+source-git-commit: 746f34d394a072b133ca161c04585520c7ba6716
 workflow-type: tm+mt
-source-wordcount: '3613'
+source-wordcount: '3556'
 ht-degree: 2%
 
 ---
@@ -22,14 +22,14 @@ ht-degree: 2%
 
 | Produto | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
-| Versão | 6.5.19.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Versão | 6.5.18.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Tipo | Versão do Service Pack |
-| Data | Quinta-feira, 23 de novembro de 2023 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Data | Quinta-feira, 24 de agosto de 2023 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | URL de download | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.18.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
-## O que está incluído em [!DNL Experience Manager] 6.5.19.0 {#what-is-included-in-aem-6519}
+## O que está incluído em [!DNL Experience Manager] 6.5.18.0 {#what-is-included-in-aem-6519}
 
-[!DNL Experience Manager] O 6.5.19.0 inclui novos recursos, importantes melhorias solicitadas por clientes, correções de erros e melhorias de desempenho, estabilidade e segurança que foram lançadas desde a disponibilização inicial do 6.5 em abril de 2019. [Instalar este pacote de serviços](#install) em [!DNL Experience Manager] 6.5.
+[!DNL Experience Manager] O 6.5.18.0 inclui novos recursos, importantes melhorias solicitadas por clientes, correções de erros e melhorias de desempenho, estabilidade e segurança que foram lançadas desde a disponibilização inicial do 6.5 em abril de 2019. [Instalar este pacote de serviços](#install) em [!DNL Experience Manager] 6.5.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -61,44 +61,44 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
-## Correção de problemas no Service Pack 19 {#fixed-issues}
+## Correção de problemas no Service Pack 18 {#fixed-issues}
 
 ### [!DNL Sites]{#sites-6519}
 
 
 #### Acessibilidade{#sites-accessibility-6519}
 
-* Em uma página do AEM Sites, ao ampliar em 200% a página, os links **[!UICONTROL Cópia de idioma]** e **[!UICONTROL Relatório CSV]** no painel Referências desaparecem. (SITES-11011) NORMAL
+* Em uma página do AEM Sites, ao ampliar em 200% a página, os links **[!UICONTROL Cópia de idioma]** e **[!UICONTROL Relatório CSV]** no painel Referências desaparecem. (SITES-11011)
 
 #### Interface do usuário do administrador{#sites-adminui-6519}
 
-* Canal do AEM Screens **[!UICONTROL Visualizar]** A funcionalidade do não funciona ou é exibida no Painel. (SITES-15730) CRÍTICO
-* Durante uma operação de movimentação de página, se a interface do usuário não puder exibir as referências, mas indicar que elas são automaticamente republicadas, elas serão *não* republicado. (SITES-16435) PRINCIPAL
-* No AEM 6.5 com Service Pack 16 ou 17, quando estiver na exibição em lista de sites com a coluna &quot;Fluxo de trabalho&quot; ativada, você não poderá classificar a lista com base nos itens dessa coluna. Não ocorre classificação. (SITES-15385) PRINCIPAL
-* Para um modelo de página de redirecionamento, o campo de redirecionamento se tornou obrigatório. No entanto, a validação do campo obrigatório não é aplicada nem funciona nesses dois cenários: quando uma página é criada sem um valor de redirecionamento obrigatório, o não pode criar uma página de redirecionamento. A validação não funciona ao navegar usando atalhos de teclado e quando o campo é marcado como inválido, ela não continua. (SITES-15903) NORMAL
-* Alguns **Links de entrada** não estavam sendo incluídos na contagem exibida no **Referências** painel. Por exemplo, o painel estava sendo exibido **Links de entrada (6)** mas na verdade havia nove links recebidos. (SITES-14816) NORMAL
+* Canal do AEM Screens **[!UICONTROL Visualizar]** A funcionalidade do não funciona ou é exibida no Painel. (SITES-15730)
+* Durante uma operação de movimentação de página, se a interface do usuário não puder exibir as referências, mas indicar que elas são automaticamente republicadas, elas serão *não* republicado. (SITES-16435)
+* No AEM 6.5 com Service Pack 16 ou 17, quando estiver na exibição em lista de sites com a coluna &quot;Fluxo de trabalho&quot; ativada, você não poderá classificar a lista com base nos itens dessa coluna. Não ocorre classificação. (SITES-15385)
+* Para um modelo de página de redirecionamento, o campo de redirecionamento se tornou obrigatório. No entanto, a validação do campo obrigatório não é aplicada nem funciona nesses dois cenários: quando uma página é criada sem um valor de redirecionamento obrigatório, o não pode criar uma página de redirecionamento. A validação não funciona ao navegar usando atalhos de teclado e quando o campo é marcado como inválido, ela não continua. (SITES-15903)
+* Alguns **Links de entrada** não estavam sendo incluídos na contagem exibida no **Referências** painel. Por exemplo, o painel estava sendo exibido **Links de entrada (6)** mas na verdade havia nove links recebidos. (SITES-14816)
 
 #### IU Clássica{#sites-classicui-6519}
 
-* Depois de instalar o hotfix no SITES-15827, os títulos da caixa de diálogo que tinham espaço em branco entre as palavras eram substituídos por `" "`. Quebras de linha também foram removidas. (SITES-16089) PRINCIPAL
-* Os títulos da caixa de diálogo codificados agora resultam em uma codificação dupla do título. (SITES-15841) NORMAL
-* A atualização de servidores AEM do service pack 6.5.16 para 6.5.17 resultou em uma codificação dupla dos títulos da caixa de diálogo da interface clássica. (SITES-15634) NORMAL
+* Depois de instalar o hotfix no SITES-15827, os títulos da caixa de diálogo que tinham espaço em branco entre as palavras eram substituídos por `" "`. Quebras de linha também foram removidas. (SITES-16089)
+* Os títulos da caixa de diálogo codificados agora resultam em uma codificação dupla do título. (SITES-15841)
+* A atualização de servidores AEM do service pack 6.5.16 para 6.5.17 resultou em uma codificação dupla dos títulos da caixa de diálogo da interface clássica. (SITES-15634)
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6519}
 
-* Uma mensagem de erro interno do servidor é exibida no Editor de fragmento de conteúdo. (SITES-13550) CRÍTICO
-* A atualização do `org.json` biblioteca por meio do NPR-41291 causou conversões de erros de dados no `DefaultDataTypeConverter` do `cfm-impl` pacote. A conversão do tipo de dados deve ser mais flexível. (SITES-16473) NORMAL
-* Ao receber a mensagem pop-up de erro, &quot;Esta versão do fragmento de conteúdo não pode ser comparada com a versão atual devido ao conteúdo incompatível&quot;. Os fragmentos de conteúdo devem ser comparáveis, mas não são. (SITES-16317) NORMAL
+* Uma mensagem de erro interno do servidor é exibida no Editor de fragmento de conteúdo. (SITES-13550)
+* A atualização do `org.json` biblioteca por meio do NPR-41291 causou conversões de erros de dados no `DefaultDataTypeConverter` do `cfm-impl` pacote. A conversão do tipo de dados deve ser mais flexível. (SITES-16473)
+* Ao receber a mensagem pop-up de erro, &quot;Esta versão do fragmento de conteúdo não pode ser comparada com a versão atual devido ao conteúdo incompatível&quot;. Os fragmentos de conteúdo devem ser comparáveis, mas não são. (SITES-16317)
 * Alteração do URL JS do seletor de ativos de
   `https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js`
 para
-  `https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js` (SITES-16068) NORMAL
-* Adapte o novo esquema de resposta da API de metadados Polaris para a integração CFM-Polaris. (SITES-15166) NORMAL
-* Todos os fragmentos de conteúdo devem ser listados onde o fragmento de conteúdo selecionado é referenciado. Em vez disso, as referências de ativo no painel de referência do fragmento de conteúdo mostram 0 (zero) referências. (SITES-15036) NORMAL
+  `https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js` (SITES-16068)
+* Adapte o novo esquema de resposta da API de metadados Polaris para a integração CFM-Polaris. (SITES-15166)
+* Todos os fragmentos de conteúdo devem ser listados onde o fragmento de conteúdo selecionado é referenciado. Em vez disso, as referências de ativo no painel de referência do fragmento de conteúdo mostram 0 (zero) referências. (SITES-15036)
 
 #### Infraestrutura principal{#sites-core-backend-6519}
 
-* Melhorar `StyleImpl`. (SITES-15164) NORMAL
+* Melhorar `StyleImpl`. (SITES-15164)
 
 <!--#### Core Components{#sites-core-components-6519}
 
@@ -106,7 +106,7 @@ para
 
 #### Integração do Campaign{#sites-campaign-integration-6519}
 
-* No componente de assinatura (`/apps/fpl/components/campaign/signature`), o link Externalizer não estava funcionando. O domínio não estava sendo anexado à fonte da imagem se o comentário HTML acima da tag da imagem fosse removido. Esse problema foi encontrado somente com o componente de assinatura no ambiente de produção, não no ambiente de preparo. (SITES-16120) NORMAL
+* No componente de assinatura (`/apps/fpl/components/campaign/signature`), o link Externalizer não estava funcionando. O domínio não estava sendo anexado à fonte da imagem se o comentário HTML acima da tag da imagem fosse removido. Esse problema foi encontrado somente com o componente de assinatura no ambiente de produção, não no ambiente de preparo. (SITES-16120)
 
 <!--#### Experience Fragments{#sites-experiencefragments-6519}
 
@@ -114,54 +114,53 @@ para
 
 #### Componentes de base (herdados){#sites-foundation-components-legacy-6519}
 
-* O componente de Pesquisa do Sites do Adobe Experience Manager (AEM) interrompe a interface do usuário. (SITES-15087) NORMAL
+* O componente de Pesquisa do Sites do Adobe Experience Manager (AEM) interrompe a interface do usuário. (SITES-15087)
 
 #### Editor de consultas GraphQL{#sites-graphql-query-editor-6519}
 
-* A interface do usuário do Editor do GraphQL não permite percorrer todas as consultas persistentes quando há um número alto de consultas (por exemplo, mais de 25). (SITES-16008) PRINCIPAL
-* O Editor do GraphQL não está salvando o status de publicação de consultas persistentes. O botão Cancelar publicação é exibido no Editor do GraphQL, mas o ícone que indica que a consulta persistente foi publicada não é exibido. Atualizar a página mostra que a consulta persistente nem mesmo foi publicada. (SITES-15858) PRINCIPAL
+* A interface do usuário do Editor do GraphQL não permite percorrer todas as consultas persistentes quando há um número alto de consultas (por exemplo, mais de 25). (SITES-16008)
+* O Editor do GraphQL não está salvando o status de publicação de consultas persistentes. O botão Cancelar publicação é exibido no Editor do GraphQL, mas o ícone que indica que a consulta persistente foi publicada não é exibido. Atualizar a página mostra que a consulta persistente nem mesmo foi publicada. (SITES-15858)
 
 #### Lançamentos{#sites-launches-6519}
 
-* As alterações no repositório não são salvas devido a `Oak0001` entra em conflito quando várias páginas estão sendo editadas ou o conteúdo está sendo criado. É normal executar uma nova tentativa em tal evento, mas isso não ocorre. (SITES-14840) PRINCIPAL
+* As alterações no repositório não são salvas devido a `Oak0001` entra em conflito quando várias páginas estão sendo editadas ou o conteúdo está sendo criado. É normal executar uma nova tentativa em tal evento, mas isso não ocorre. (SITES-14840)
 
 #### MSM - Live Copies{#sites-msm-live-copies-6519}
 
-* O botão Implantação do MSM não funciona na interface gráfica do usuário de toque. (SITES-16991) PRINCIPAL
-* A referência de link não é atualizada no Fragmento de experiência ao criar uma live copy ou implantar um Fragmento de experiência. (SITES-15460) NORMAL
+* O botão Implantação do MSM não funciona na interface gráfica do usuário de toque. (SITES-16991)
+* A referência de link não é atualizada no Fragmento de experiência ao criar uma live copy ou implantar um Fragmento de experiência. (SITES-15460)
 
 #### Editor de página{#sites-pageeditor-6519}
 
-* A seleção de vários tipos de arquivo de documento no filtro de tipo de ativo não funciona no console de páginas. Nenhum resultado é encontrado mesmo se os resultados de um tipo de arquivo específico estiverem disponíveis. Como resultado, os autores não conseguem filtrar vários documentos. Eles devem usar vários tipos de documentos e precisam filtrá-los um de cada vez. (SITES-14047) PRINCIPAL
-* Depois de atualizar uma instância do AEM 6.5.17 e do AEM 6.5.18, de dentro do Editor de páginas, se você selecionar **[!UICONTROL Publicar página]**, você será redirecionado para um URL que não existe. O usuário deve ser redirecionado para o Assistente de publicação. (SITES-15856) NORMAL
-* (SITES-15704) NORMAL
-* Cópia redundante da área de transferência AEM durante uma colagem da área de transferência do sistema operacional. (SITES-15704) NORMAL
-* No Assets, seleção **[!UICONTROL Documentos]**, depois em **[!UICONTROL Filtertype]**, selecionando **[!UICONTROL Microsoft® Word]** ou **[!UICONTROL Microsoft® Excel]** O não mostra resultados mesmo se houver arquivos de ambos os tipos. (SITES-14837) NORMAL
+* A seleção de vários tipos de arquivo de documento no filtro de tipo de ativo não funciona no console de páginas. Nenhum resultado é encontrado mesmo se os resultados de um tipo de arquivo específico estiverem disponíveis. Como resultado, os autores não conseguem filtrar vários documentos. Eles devem usar vários tipos de documentos e precisam filtrá-los um de cada vez. (SITES-14047)
+* Depois de atualizar uma instância do AEM 6.5.17 e do AEM 6.5.18, de dentro do Editor de páginas, se você selecionar **[!UICONTROL Publicar página]**, você será redirecionado para um URL que não existe. O usuário deve ser redirecionado para o Assistente de publicação. (SITES-15856)
+* Cópia redundante da área de transferência AEM durante uma colagem da área de transferência do sistema operacional. (SITES-15704)
+* No Assets, seleção **[!UICONTROL Documentos]**, depois em **[!UICONTROL Filtertype]**, selecionando **[!UICONTROL Microsoft® Word]** ou **[!UICONTROL Microsoft® Excel]** O não mostra resultados mesmo se houver arquivos de ambos os tipos. (SITES-14837)
 
 ### [!DNL Assets]{#assets-6519}
 
-* Não foi possível diferenciar os ativos de publicação no Experience Manager ou Brand Portal. [NPR-41320]
-* Ao criar ou salvar uma pasta pública, três grupos são criados em um painel de administração. [ASSETS-26700]
-* No painel de pesquisa, ao marcar caixas de seleção e desmarcar qualquer uma delas, todas as caixas de seleção serão desmarcadas. [ASSETS-26377]
+* Ao criar ou salvar uma pasta pública, três grupos são criados em um painel de administração. (ASSETS-26700)
+* Não foi possível diferenciar os ativos de publicação no Experience Manager ou Brand Portal. (NPR-41320)
+* No painel de pesquisa, ao marcar caixas de seleção e desmarcar qualquer uma delas, todas as caixas de seleção serão desmarcadas. (ASSETS-26377)
 
 #### [!DNL Dynamic Media]{#assets-dm-6519}
 
-* Depois que um ativo é carregado para AEM, a variável `update_asset` fluxo de trabalho é acionado. O fluxo de trabalho nunca é concluído. Ao examinar as instâncias de fluxo de trabalho, o fluxo de trabalho é concluído até a etapa de carregamento do produto. A próxima etapa é o upload em lote do scene7. O usuário pode ver que o ativo está no Scene7 no aplicativo Dynamic Media Classic. (ASSETS-30443) CRÍTICO
-* Um Servlet personalizado (endpoint da API) está retornando um nome de arquivo Dynamic Media (Scene7) incorreto. Isso ocorre quando um ativo é excluído e substituído por um ativo com o mesmo nome. O servlet personalizado retorna o nome de arquivo antigo do Dynamic Media (Scene7), enquanto uma chamada de API &quot;jcr&quot; retorna o nome de arquivo correto. (ASSETS-29476) PRINCIPAL
-* Mesmo depois que a Sincronização está desativada no nível da Pasta, os Logs mostram o acionador de &quot;Scene7 ReplicateOnModifyListener&quot;. A variável `ReplicateOnModifyListener/Worker` O deve ignorar o processamento de ativos de pastas e fragmentos de conteúdo que não sejam da Dynamic Media. (ASSETS-26705) PRINCIPAL
-* As pessoas com pouca visão serão afetadas se o Foco não estiver visível nos elementos suspensos (Somente conteúdo, Exibir, Mais opções) nos modos de alto contraste em preto-e-branco. (ASSETS-25759) NORMAL
-* As pessoas com pouca visão serão afetadas se a taxa de contraste de luminosidade do texto em uma página for menor que 4.5:1. (ASSETS-25756) NORMAL
-* Os leitores de tela não estão narrando a mensagem pop-up exibida após o envio dos dados. (ASSETS-25755) NORMAL
-* Os leitores de tela não estão reconhecendo marcos na página (Dynamic Media; criando um perfil de codificação de vídeo), quando navegados usando a tecla de atalho de ponto de referência/região `D/R`. (ASSETS-25752) NORMAL
-* Os leitores de tela não estão reconhecendo vários pontos de referência na página (Dynamic Media; criando vídeo interativo) quando navegam usando a tecla de atalho de ponto de referência/região `D/R`. (ASSETS-25750) NORMAL
-* Os leitores de tela (NVDA/JAWS/Narrador) não estão reconhecendo os pontos de referência no **Editar ativo** página ao navegar usando as teclas de atalho `D/R`. (ASSETS-25744) NORMAL
-* O usuário recebe uma mensagem de trabalho assíncrono vazia/falsa, mas o ativo conectado foi publicado com êxito. (ASSETS-29342) TRIVIAL
+* Depois que um ativo é carregado para AEM, a variável `update_asset` fluxo de trabalho é acionado. O fluxo de trabalho nunca é concluído. Ao examinar as instâncias de fluxo de trabalho, o fluxo de trabalho é concluído até a etapa de carregamento do produto. A próxima etapa é o upload em lote do scene7. O usuário pode ver que o ativo está no Scene7 no aplicativo Dynamic Media Classic. (ASSETS-30443)
+* Um Servlet personalizado (endpoint da API) está retornando um nome de arquivo Dynamic Media (Scene7) incorreto. Isso ocorre quando um ativo é excluído e substituído por um ativo com o mesmo nome. O servlet personalizado retorna o nome de arquivo antigo do Dynamic Media (Scene7), enquanto uma chamada de API &quot;jcr&quot; retorna o nome de arquivo correto. (ASSETS-29476)
+* Mesmo depois que a Sincronização está desativada no nível da Pasta, os Logs mostram o acionador de &quot;Scene7 ReplicateOnModifyListener&quot;. A variável `ReplicateOnModifyListener/Worker` O deve ignorar o processamento de ativos de pastas e fragmentos de conteúdo que não sejam da Dynamic Media. (ASSETS-26705)
+* As pessoas com pouca visão serão afetadas se o Foco não estiver visível nos elementos suspensos (Somente conteúdo, Exibir, Mais opções) nos modos de alto contraste em preto-e-branco. (ASSETS-25759)
+* As pessoas com pouca visão serão afetadas se a taxa de contraste de luminosidade do texto em uma página for menor que 4.5:1. (ASSETS-25756)
+* Os leitores de tela não estão narrando a mensagem pop-up exibida após o envio dos dados. (ASSETS-25755)
+* Os leitores de tela não estão reconhecendo marcos na página (Dynamic Media; criando um perfil de codificação de vídeo), quando navegados usando a tecla de atalho de ponto de referência/região `D/R`. (ASSETS-25752)
+* Os leitores de tela não estão reconhecendo vários pontos de referência na página (Dynamic Media; criando vídeo interativo) quando navegam usando a tecla de atalho de ponto de referência/região `D/R`. (ASSETS-25750)
+* Os leitores de tela (NVDA/JAWS/Narrador) não estão reconhecendo os pontos de referência no **Editar ativo** página ao navegar usando as teclas de atalho `D/R`. (ASSETS-25744)
+* O usuário recebe uma mensagem de trabalho assíncrono vazia/falsa, mas o ativo conectado foi publicado com êxito. (ASSETS-29342)
 
 ### [!DNL Forms]{#forms-6519}
 
 Correções na [!DNL Experience Manager] Os Forms são entregues por meio de um pacote complementar separado uma semana após o agendamento [!DNL Experience Manager] Data de lançamento do Service Pack. Nesse caso, a versão do pacote complementar do AEM 6.5.19.0 Forms está programada para quinta-feira, 30 de novembro de 2023. Uma lista de correções e aprimoramentos do Forms seria adicionada a esta seção após a versão.
 
-* Adicionar uma lista de controle de acesso para `fd-cloudservice` para ler ou atualizar as configurações Microsoft® em `cloudconfigs/microsoftoffice`. (FORMS-11142) NORMAL
+* Adicionar uma lista de controle de acesso para `fd-cloudservice` para ler ou atualizar as configurações Microsoft® em `cloudconfigs/microsoftoffice`. (FORMS-11142)
 
 <!--LEFT BULLET LIST HERE IN CASE OF REUSE BY FORMS IN THE FUTURE 
 * **Document Services**
@@ -179,13 +178,13 @@ Correções na [!DNL Experience Manager] Os Forms são entregues por meio de um 
 
 ### Foundation{#foundation-6519}
 
-* Criar uma cópia de idioma no nível da raiz de idioma não ajusta caminhos na página. No caso em que a cópia de idioma foi criada, não para a raiz de idioma, mas para as páginas sob ela, o caminho foi alterado corretamente. (NPR-41364) PRINCIPAL
-* A dica de ferramenta &quot;Apresentação em Data Relativa&quot; só pode ser fechada pressionando Escape (ESC) no teclado. A dica de ferramenta deve ser fechada quando o usuário selecionar qualquer parte da interface. (NPR-41394) NORMAL
-* String não localizada `Something went wrong while adding the private key.` ao adicionar o arquivo de chave privada incorreto no **Editar Usuário** > **Armazenamento de chaves**. (NPR-41366) NORMAL
-* Os ícones são necessários para o Microsoft® SharePoint e o Microsoft® One Drive no ambiente do AEM 6.5. (NPR-41354) NORMAL
-* &quot;Incompatibilidade de UserId/Password&quot; deslocalizada. sequência de caracteres em **Segurança** > **Usuário** > **Criar** caixa de diálogo. (NPR-41245) NORMAL
-* O código Popover e os manipuladores de eventos são carregados duas vezes, quebrando as interfaces de usuário baseadas no Coral3 criadas pelo usuário. (NPR-41171) NORMAL
-* O cancelamento da seleção não funciona corretamente depois de usar &quot;Selecionar tudo&quot; no console do AEM Sites. (NPR-41304) PEQUENO
+* Criar uma cópia de idioma no nível da raiz de idioma não ajusta caminhos na página. No caso em que a cópia de idioma foi criada, não para a raiz de idioma, mas para as páginas sob ela, o caminho foi alterado corretamente. (NPR-41364)
+* A dica de ferramenta &quot;Apresentação em Data Relativa&quot; só pode ser fechada pressionando Escape (ESC) no teclado. A dica de ferramenta deve ser fechada quando o usuário selecionar qualquer parte da interface. (NPR-41394)
+* String não localizada `Something went wrong while adding the private key.` ao adicionar o arquivo de chave privada incorreto no **Editar Usuário** > **Armazenamento de chaves**. (NPR-41366)
+* Os ícones são necessários para o Microsoft® SharePoint e o Microsoft® One Drive no ambiente do AEM 6.5. (NPR-41354)
+* &quot;Incompatibilidade de UserId/Password&quot; deslocalizada. sequência de caracteres em **Segurança** > **Usuário** > **Criar** caixa de diálogo. (NPR-41245)
+* O código Popover e os manipuladores de eventos são carregados duas vezes, quebrando as interfaces de usuário baseadas no Coral3 criadas pelo usuário. (NPR-41171)
+* O cancelamento da seleção não funciona corretamente depois de usar &quot;Selecionar tudo&quot; no console do AEM Sites. (NPR-41304)
 
 <!--#### Content distribution{#foundation-content-distribution-6519}
 
@@ -193,18 +192,18 @@ Correções na [!DNL Experience Manager] Os Forms são entregues por meio de um 
 
 #### Integrações{#integrations-6519}
 
-* Os links de SMS em uma campanha de email do AEM não são gravados corretamente; eles contêm um elemento de âncora HTML. (NPR-41211) PRINCIPAL
-* O texto usado na tela de configuração da conta não deve usar o novo tipo de credencial. (NPR-41210) NORMAL
-* Mover o programador de importação de relatórios do Analytics de `ManagedPollConfig` para sling jobs. Quando duas estruturas de análise diferentes foram anexadas com conjuntos de relatórios diferentes a dois sites diferentes, `ManagedPollConfig` pesquisa apenas um deles. (NPR-41209) NORMAL
-* Quando o valor é redefinido para o padrão, o botão de período selecionado anteriormente permanece ativado. No painel de insight de conteúdo do AEM, por padrão, o período de tempo é definido na semana e mostra insights de conteúdo como dados semanais. Agora, se o usuário selecionar outras opções de intervalo de tempo, como hora, dia, mês e ano, os dados serão alterados de acordo com o valor selecionado. No entanto, se os valores forem redefinidos, por padrão, o intervalo de tempo visível é a semana, mas ainda a opção de intervalo de tempo selecionado anteriormente será selecionada. (NPR-41246) SECUNDÁRIO
+* Os links de SMS em uma campanha de email do AEM não são gravados corretamente; eles contêm um elemento de âncora HTML. (NPR-41211)
+* O texto usado na tela de configuração da conta não deve usar o novo tipo de credencial. (NPR-41210)
+* Mover o programador de importação de relatórios do Analytics de `ManagedPollConfig` para sling jobs. Quando duas estruturas de análise diferentes foram anexadas com conjuntos de relatórios diferentes a dois sites diferentes, `ManagedPollConfig` pesquisa apenas um deles. (NPR-41209)
+* Quando o valor é redefinido para o padrão, o botão de período selecionado anteriormente permanece ativado. No painel de insight de conteúdo do AEM, por padrão, o período de tempo é definido na semana e mostra insights de conteúdo como dados semanais. Agora, se o usuário selecionar outras opções de intervalo de tempo, como hora, dia, mês e ano, os dados serão alterados de acordo com o valor selecionado. No entanto, se os valores forem redefinidos, por padrão, o intervalo de tempo visível é a semana, mas ainda a opção de intervalo de tempo selecionado anteriormente será selecionada. (NPR-41246)
 
 #### Oak{#oak-6519}
 
-* Utilitário de backport para limitar a taxa de gravações para AEM caso a indexação assíncrona esteja atrasada. (NPR-40985) PRINCIPAL
+* Utilitário de backport para limitar a taxa de gravações para AEM caso a indexação assíncrona esteja atrasada. (NPR-40985)
 
 #### Platform{#foundation-platform-6519}
 
-* Consultas do QueryBuilder com colchetes são traduzidas incorretamente para xpath . (NPR-41298) NORMAL
+* Consultas do QueryBuilder com colchetes são traduzidas incorretamente para xpath . (NPR-41298)
 
 <!--#### Replication{#foundation-replication-6519}
 
@@ -216,7 +215,7 @@ Correções na [!DNL Experience Manager] Os Forms são entregues por meio de um 
 
 #### Projetos de tradução{#foundation-translation-6519}
 
-* Ao criar a cópia de idioma da página &quot;A&quot;, ele deve criar automaticamente as cópias de idioma das páginas, fragmentos de experiência, fragmentos de conteúdo e ativos referenciados. Além disso, a cópia de idioma recém-criada da página &quot;A&quot; no novo caminho deve ter suas referências atualizadas para as respectivas cópias de idioma recém-criadas das páginas, Fragmentos de experiência, Fragmentos de conteúdo e Ativos. (NPR-41076) NORMAL
+* Ao criar a cópia de idioma da página &quot;A&quot;, ele deve criar automaticamente as cópias de idioma das páginas, fragmentos de experiência, fragmentos de conteúdo e ativos referenciados. Além disso, a cópia de idioma recém-criada da página &quot;A&quot; no novo caminho deve ter suas referências atualizadas para as respectivas cópias de idioma recém-criadas das páginas, Fragmentos de experiência, Fragmentos de conteúdo e Ativos. (NPR-41076)
 
 <!--#### User interface{#foundation-ui-6519}
 
@@ -228,22 +227,22 @@ Correções na [!DNL Experience Manager] Os Forms são entregues por meio de um 
 
 #### Fluxo de trabalho{#foundation-workflow-6519}
 
-* Não é possível concluir uma tarefa na Caixa de entrada. Somente um valor &quot;indefinido&quot; é observado no menu suspenso ao tentar concluir a tarefa e selecionar uma ação. Isso significa que os usuários não podem aplicar o service pack AEM 6.5.18. (NPR-41402) PRINCIPAL
-* Não é possível concluir tarefas na Caixa de entrada. Não há valor (apenas &quot;indefinido&quot;) na lista suspensa ao tentar concluir a tarefa para arquivos zip, relatórios de ativos, mover (sucesso ou falha) ou expiração de ativos. (NPR-41305) PRINCIPAL
-* Quando um usuário seleciona **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > instâncias, seleciona o fluxo de trabalho em execução e selecione **[!UICONTROL Exibir carga]**, isso resulta em uma página de erro 500. (NPR-41325) NORMAL
+* Não é possível concluir uma tarefa na Caixa de entrada. Somente um valor &quot;indefinido&quot; é observado no menu suspenso ao tentar concluir a tarefa e selecionar uma ação. Isso significa que os usuários não podem aplicar o service pack AEM 6.5.18. (NPR-41402)
+* Não é possível concluir tarefas na Caixa de entrada. Não há valor (apenas &quot;indefinido&quot;) na lista suspensa ao tentar concluir a tarefa para arquivos zip, relatórios de ativos, mover (sucesso ou falha) ou expiração de ativos. (NPR-41305)
+* Quando um usuário seleciona **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > instâncias, seleciona o fluxo de trabalho em execução e selecione **[!UICONTROL Exibir carga]**, isso resulta em uma página de erro 500. (NPR-41325)
 
 
 ## Instalar [!DNL Experience Manager] 6.5.18.0{#install}
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
-* [!DNL Experience Manager] O 6.5.19.0 exige [!DNL Experience Manager] 6.5. Ver [documentação de atualização](/help/sites-deploying/upgrade.md) para obter instruções detalhadas. <!-- UPDATE FOR EACH NEW RELEASE -->
+* [!DNL Experience Manager] O 6.5.18.0 exige [!DNL Experience Manager] 6.5. Ver [documentação de atualização](/help/sites-deploying/upgrade.md) para obter instruções detalhadas. <!-- UPDATE FOR EACH NEW RELEASE -->
 * O download do pacote de serviços está disponível no Adobe [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.18.0.zip).
-* Em uma implantação com MongoDB e várias instâncias, instale [!DNL Experience Manager] 6.5.19.0 em uma das instâncias do Autor usando o Gerenciador de pacotes.<!-- UPDATE FOR EACH NEW RELEASE -->
+* Em uma implantação com MongoDB e várias instâncias, instale [!DNL Experience Manager] 6.5.18.0 em uma das instâncias do Autor usando o Gerenciador de pacotes.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
 >
-> O Adobe não recomenda que você remova ou desinstale o [!DNL Experience Manager] 6.5.19.0 pacote. Dessa forma, antes de instalar o pacote, você deve criar um backup do `crx-repository` caso precise revertê-la. <!-- UPDATE FOR EACH NEW RELEASE -->
+> O Adobe não recomenda que você remova ou desinstale o [!DNL Experience Manager] 6.5.18.0 pacote. Dessa forma, antes de instalar o pacote, você deve criar um backup do `crx-repository` caso precise revertê-la. <!-- UPDATE FOR EACH NEW RELEASE -->
 <!-- For instructions to install Service Pack for Experience Manager Forms, see [Experience Manager Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). -->
 
 
@@ -267,20 +266,20 @@ Correções na [!DNL Experience Manager] Os Forms são entregues por meio de um 
 
 **Instalação automática**
 
-Há dois métodos diferentes que você pode usar para instalar automaticamente o [!DNL Experience Manager] 6.5.19.0<!-- UPDATE FOR EACH NEW RELEASE -->
+Há dois métodos diferentes que você pode usar para instalar automaticamente o [!DNL Experience Manager] 6.5.18.0<!-- UPDATE FOR EACH NEW RELEASE -->
 
 * Coloque o pacote em `../crx-quickstart/install` pasta quando o servidor estiver disponível online. O pacote é instalado automaticamente.
 * Use o [API HTTP do Gerenciador de pacotes](/help/sites-administering/package-manager.md#package-share). Uso `cmd=install&recursive=true` para que os pacotes aninhados sejam instalados.
 
 >[!NOTE]
 >
->O Experience Manager 6.5.19.0 não suporta a instalação do Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
+>O Experience Manager 6.5.18.0 não suporta a instalação do Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 **Validar a instalação**
 
 Para conhecer as plataformas certificadas para trabalhar com esta versão, consulte a [requisitos técnicos](/help/sites-deploying/technical-requirements.md).
 
-1. A página de informações do produto (`/system/console/productinfo`) exibe a string da versão atualizada `Adobe Experience Manager (6.5.19.0)` em [!UICONTROL Produtos instalados]. <!-- UPDATE FOR EACH NEW RELEASE -->
+1. A página de informações do produto (`/system/console/productinfo`) exibe a string da versão atualizada `Adobe Experience Manager (6.5.18.0)` em [!UICONTROL Produtos instalados]. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. Todos os pacotes OSGi são **[!UICONTROL ATIVO]** ou **[!UICONTROL FRAGMENTO]** no console OSGi (Use o console da Web: `/system/console/bundles`).
 
@@ -310,7 +309,7 @@ A falha na instalação deste pacote pode resultar em consultas lentas ou com fa
 
 ### UberJar{#uber-jar}
 
-O UberJar para [!DNL Experience Manager] O 6.5.19.0 está disponível na [Repositório central Maven](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.18/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+O UberJar para [!DNL Experience Manager] O 6.5.18.0 está disponível na [Repositório central Maven](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.18/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 Para usar o UberJar em um projeto Maven, consulte [como usar o UberJar](/help/sites-developing/ht-projects-maven.md) e inclua a seguinte dependência no POM do projeto: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
@@ -318,7 +317,7 @@ Para usar o UberJar em um projeto Maven, consulte [como usar o UberJar](/help/si
 <dependency>
      <groupId>com.adobe.aem</groupId>
      <artifactId>uber-jar</artifactId>
-     <version>6.5.19</version>
+     <version>6.5.18</version>
      <scope>provided</scope>
 </dependency>
 ```
@@ -339,7 +338,7 @@ Consulte [Recursos obsoletos e removidos](/help/release-notes/deprecated-removed
 To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
 `<designModelPath>/jcr:content.generate.json`. -->
 
-* **A publicação de páginas não funciona no Editor de páginas após a atualização para o Service Pack 18 (6.5.19.0)**
+* **A publicação de páginas não funciona no Editor de páginas após a atualização para o Service Pack 18 (6.5.18.0)**
 
   <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> Depois de atualizar uma instância de AEM 6.5.0.0—6.5.17.0 para AEM 6.5.19.0, ao clicar em **Publicar página** no Editor de páginas, você é redirecionado para um URL que não existe.
 
@@ -479,10 +478,10 @@ Para resolver o problema, localize o `<AEM_Forms_Installation_dir>\jboss\bin\sta
 
 ## Pacotes OSGi e pacotes de conteúdo incluídos{#osgi-bundles-and-content-packages-included}
 
-Os seguintes documentos de texto listam os pacotes OSGi e os Pacotes de conteúdo incluídos em [!DNL Experience Manager] 6.5.19.0 <!-- UPDATE FOR EACH NEW RELEASE -->
+Os seguintes documentos de texto listam os pacotes OSGi e os Pacotes de conteúdo incluídos em [!DNL Experience Manager] 6.5.18.0 <!-- UPDATE FOR EACH NEW RELEASE -->
 
-* [Lista de pacotes OSGi incluídos no Experience Manager 6.5.19.0](/help/release-notes/assets/65180_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [Lista de pacotes de conteúdo incluídos no Experience Manager 6.5.19.0](/help/release-notes/assets/65180_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Lista de pacotes OSGi incluídos no Experience Manager 6.5.18.0](/help/release-notes/assets/65180_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Lista de pacotes de conteúdo incluídos no Experience Manager 6.5.18.0](/help/release-notes/assets/65180_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Sites restritos{#restricted-sites}
 

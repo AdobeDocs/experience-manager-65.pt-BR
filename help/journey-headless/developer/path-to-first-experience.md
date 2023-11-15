@@ -2,10 +2,10 @@
 title: Caminho para sua primeira experiência usando o AEM Headless
 description: Nesta parte da jornada de desenvolvedor do AEM Headless, você entenderá as etapas para implementar sua primeira experiência headless no AEM, incluindo considerações de planejamento e práticas recomendadas para facilitar ao máximo o seu percurso.
 exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1988'
-ht-degree: 93%
+source-wordcount: '1990'
+ht-degree: 92%
 
 ---
 
@@ -104,7 +104,7 @@ Um projeto headless não é bem-sucedido apenas devido à tecnologia implementad
 * Se você tiver restrições de acesso, tente alinhar seu modelo de conteúdo aos requisitos de acesso.
 * Quando você tem requisitos de acesso, eles devem orientar sua hierarquia de conteúdo. Agrupe os conteúdos que são editados pelo mesmo grupo de pessoas.
 * Agrupe os conteúdos semelhantes em uma pasta.
-   * É mais provável que um autor de conteúdo copie e cole um conteúdo já existente para criar novo conteúdo. Portanto, realizar esse processo na mesma pasta o torna mais eficiente.
+   * É mais provável que um autor de conteúdo copie e cole o conteúdo existente para criar um novo conteúdo. Portanto, realizar esse processo na mesma pasta o torna mais eficiente.
    * O AEM possibilita que os modelos permitidos sejam definidos por pasta, para que o botão **Criar novo** só mostre os modelos compatíveis com esse local.
 * A criação de novos fragmentos de conteúdo no editor de fragmento de conteúdo em linha pode ser simplificada se a pasta raiz estiver definida no modelo. Então o profissional não precisa escolher um local, apenas fornecer um nome, para iniciar a edição da nova referência.
 

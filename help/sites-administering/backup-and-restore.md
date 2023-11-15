@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '2282'
 ht-degree: 0%
@@ -217,7 +217,7 @@ O backup on-line utiliza o seguinte algoritmo:
 
      Um arquivo vazio chamado `backupInProgress.txt` é criado no diretório de destino quando o backup é iniciado. Este arquivo é excluído quando o backup é concluído.
 
-1. Os arquivos são copiados do diretório de origem para o diretório de destino (ou diretório temporário ao criar um arquivo zip). O armazenamento de segmentos é copiado antes do armazenamento de dados para evitar a corrupção do repositório. Os dados de índice e cache são omitidos ao criar o backup. Como resultado, dados de `crx-quickstart/repository/cache` e `crx-quickstart/repository/index` não está incluído no backup. O indicador da barra de progresso do processo está entre 0% - 70% ao criar um arquivo zip, ou 0% - 100% se nenhum arquivo zip for criado.
+1. Os arquivos são copiados do diretório de origem para o diretório de destino (ou diretório temporário ao criar um arquivo zip). O armazenamento de segmentos é copiado antes do armazenamento de dados para evitar a corrupção do repositório. Os dados de índice e cache são omitidos ao criar o backup. Como resultado, dados de `crx-quickstart/repository/cache` e `crx-quickstart/repository/index` não está incluído no backup. O indicador da barra de progresso do processo está entre 0% e 70% ao criar um arquivo zip, ou 0% e 100% se nenhum arquivo zip for criado.
 
 1. Se o backup estiver sendo feito em um diretório pré-existente, os arquivos &quot;antigos&quot; no diretório de destino serão excluídos. Arquivos antigos são arquivos que não existem no diretório de origem.
 

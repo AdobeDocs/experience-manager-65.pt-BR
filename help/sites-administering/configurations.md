@@ -2,9 +2,9 @@
 title: Configurações e o navegador de configuração
 description: Entenda as configurações do AEM e como elas gerenciam as configurações do espaço de trabalho no AEM.
 exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1483'
 ht-degree: 6%
 
 ---
@@ -157,7 +157,7 @@ Agora vamos observar o conteúdo JCR correspondente:
 
 Neste exemplo, você pode assumir uma pasta DAM específica do WKND aqui e uma configuração correspondente. Iniciando nessa pasta `/content/dam/wknd`, você pode ver que há uma propriedade de sequência chamada `cq:conf` que faz referência à configuração que deve ser aplicada à subárvore. A propriedade é definida no campo `jcr:content` de uma pasta ou página de ativos. Esses `conf` Os links são explícitos, portanto, é fácil segui-los apenas observando o conteúdo no CRXDE.
 
-Pulando para dentro `/conf`, você poderá seguir a referência e ver que há uma `/conf/wknd` nó. Esta é uma configuração. Sua pesquisa é transparente para o código do aplicativo. O código de exemplo nunca tem uma referência dedicada a ele, ele está oculto atrás do `Conf` objeto. A configuração que se aplica é controlada por meio do conteúdo JCR.
+Pulando para dentro `/conf`, você poderá seguir a referência e ver que há uma `/conf/wknd` nó. Esta é uma configuração. Sua pesquisa é transparente para o código do aplicativo. O código de exemplo nunca tem uma referência dedicada a ele, ele está oculto atrás da variável `Conf` objeto. A configuração que se aplica é controlada por meio do conteúdo JCR.
 
 Você pode ver que a configuração contém uma variável com nome fixo `settings` nó que contém os itens reais, incluindo o `dam/imageserver` que você precisa neste caso. Esse item pode ser considerado um &quot;documento de configurações&quot; e é representado por um `cq:Page` incluindo um `jcr:content` retenção do conteúdo real.
 

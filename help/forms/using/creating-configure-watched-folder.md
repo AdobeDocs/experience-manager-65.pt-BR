@@ -1,17 +1,13 @@
 ---
 title: Criar ou configurar uma pasta monitorada
-seo-title: Create or Configure a watched folder
 description: Saiba como criar ou excluir uma pasta monitorada ou modificar as propriedades de uma pasta monitorada existente.
-seo-description: Learn how to create or delete a watched folder, or modify the properties of an existing watched folder.
-uuid: 659d4d8c-99b8-40dd-b884-bfee4d476fe1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 0ce7b338-6686-49b3-b58b-e7ab6b670708
 exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1820'
+source-wordcount: '1819'
 ht-degree: 0%
 
 ---
@@ -95,7 +91,7 @@ Execute as seguintes etapas para criar uma pasta monitorada:
       * %m = minuto
       * %s = segundo
       * %l = milissegundo
-      * %R = número aleatório (entre 0 e 9)
+      * %R = número aleatório (entre 0-9)
       * %P = id do processo ou da tarefa
       * Por exemplo, se for 8 PM em 17 de julho de 2009 e você especificar C:/Test/WF0/failure/%Y/%M/%D/%H/, a pasta resultante será C:/Test/WF0/failure/2009/07/17/20.
       * Se o caminho não for absoluto, mas relativo, a pasta será criada dentro da pasta monitorada. O valor padrão é result/%Y/%M/%D/, que é a pasta Result dentro da pasta monitorada. Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).

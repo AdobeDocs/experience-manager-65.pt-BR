@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '7174'
+source-wordcount: '7173'
 ht-degree: 0%
 
 ---
@@ -192,7 +192,7 @@ Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrõe
 * %m = minuto
 * %s = segundo
 * %l = milissegundo
-* %R = número aleatório (entre 0 e 9)
+* %R = número aleatório (entre 0-9)
 * %P = id do processo ou da tarefa
 
 Por exemplo, se forem 20h em 17 de julho de 2009 e você especificar `C:/Test/WF0/failure/%Y/%M/%D/%H/`, a pasta de resultados é `C:/Test/WF0/failure/2009/07/17/20`.

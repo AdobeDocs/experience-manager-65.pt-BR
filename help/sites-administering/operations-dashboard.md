@@ -1,20 +1,16 @@
 ---
 title: Painel de operações
-seo-title: Operations Dashboard
 description: Saiba como usar o Painel de operações no Adobe Experience Manager.
-seo-description: Learn how to use the Operations Dashboard.
-uuid: ef24813f-a7a8-4b26-a496-6f2a0d9efef6
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '6057'
+source-wordcount: '6061'
 ht-degree: 2%
 
 ---
@@ -230,7 +226,7 @@ A função de uma Verificação de integridade composta é agregar várias Verif
      <li>retorna o status Crítico se pelo menos uma faixa de indexação estiver falhando</li>
      <li>verifica a <code>lastIndexedTime</code> para todas as faixas de indexação e:
       <ul>
-       <li>retorna o status Crítico se for há mais de 2 horas </li>
+       <li>retorna o status Crítico se houver mais de 2 horas atrás </li>
        <li>retorna o status de Aviso se estiver entre 2 horas e 45 minutos atrás </li>
        <li>retorna o status OK se houver menos de 45 minutos atrás </li>
       </ul> </li>

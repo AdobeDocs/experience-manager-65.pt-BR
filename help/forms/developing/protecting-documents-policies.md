@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '15464'
+source-wordcount: '15462'
 ht-degree: 0%
 
 ---
@@ -1333,7 +1333,7 @@ A tabela a seguir lista os pares de chaves e valores necessários ao criar uma m
   <tr>
    <td><p><code>WaterBackCmd:ROTATION</code></p></td>
    <td><p>Especifica a rotação da marca d'água. O valor padrão é 0 graus.</p></td>
-   <td><p>Um valor entre 0 e 359.</p></td>
+   <td><p>Um valor entre 0-359.</p></td>
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:SCALE</code></p></td>

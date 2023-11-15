@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: personalization
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '5383'
-ht-degree: 86%
+source-wordcount: '5374'
+ht-degree: 85%
 
 ---
 
@@ -38,7 +38,7 @@ As atividades e experiências que você vê no modo de Direcionamento refletem a
 
 >[!NOTE]
 >
->Quando você cria uma campanha no Adobe Target, ele atribui uma propriedade chamada `thirdPartyId` a cada campanha. Quando você exclui a campanha no Adobe Target, o thirdPartyId não é excluído. Não é possível reutilizar o `thirdPartyId` para campanhas de tipos diferentes (AB, XT) e ele não pode ser removido manualmente. Para evitar esse problema, dê a cada campanha um nome exclusivo. Por isso, nomes de campanhas não podem ser reutilizados em diferentes tipos de campanha.
+>Quando você cria uma campanha no Adobe Target, ele atribui uma propriedade chamada `thirdPartyId` a cada campanha. Quando você exclui a campanha no Adobe Target, o thirdPartyId não é excluído. Não é possível reutilizar o `thirdPartyId` para campanhas de tipos diferentes (AB, XT) e ele não pode ser removido manualmente. Para evitar esse problema, dê a cada campanha um nome exclusivo. Nomes de campanha não podem ser reutilizados em diferentes tipos de campanha.
 >
 >Se você usar o mesmo nome no mesmo tipo de campanha, a campanha existente será substituída.
 >
@@ -79,7 +79,7 @@ Para adicionar uma atividade:
 
    >[!NOTE]
    >
-   >É recomendado [criar marcas por meio do console de atividades](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
+   >O Adobe recomenda que você [criar marcas por meio do console de atividades](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
    >
    >
    >Se você criar uma marca de qualquer outra maneira, faça com que o nó `/campaigns/<brand>/master` exista ou ocorrerá um erro ao tentar criar uma atividade.
@@ -140,7 +140,7 @@ Após [iniciar o processo de direcionamento](/help/sites-authoring/content-targe
 
 >[!CAUTION]
 >
->Tenha cuidado ao desativar o direcionamento para um componente que já está direcionado na instância de criação. A respectiva atividade será automaticamente excluída da instância de publicação também.
+>Tenha cuidado ao desativar o direcionamento para um componente que já está direcionado na instância de criação. A respectiva atividade também é excluída automaticamente da instância de publicação.
 
 >[!NOTE]
 >
@@ -406,7 +406,7 @@ Defina um público usando um segmento. A configuração da nuvem para a página 
 
 Para obter informações sobre mecanismos de direcionamento, consulte [Mecanismo de direcionamento](/help/sites-authoring/personalization.md#targeting-engine).
 
-Um público-alvo não deve ser usado por mais de uma experiência. Um símbolo de aviso é exibido ao lado de uma experiência quando ela é mapeada para um público-alvo que já está mapeado para outra experiência.
+Não use um público-alvo com mais de uma experiência. Um símbolo de aviso é exibido ao lado de uma experiência quando ela é mapeada para um público-alvo que já está mapeado para outra experiência.
 
 ![Símbolo de aviso quando mapeado para um público-alvo que está mapeado para outra experiência](do-not-localize/chlimage_1-6.png)
 

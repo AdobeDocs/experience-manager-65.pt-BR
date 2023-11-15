@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: f37f239f-065b-44f8-acb1-93485b713b49
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 0%
@@ -27,7 +27,7 @@ As páginas do aplicativo devem estar localizadas abaixo de /content/mobileapps 
 
 ![chlimage_1-52](assets/chlimage_1-52.png)
 
-Por convenção do AEM, a primeira página do aplicativo deve ser um redirecionamento para uma das crianças que servem como idioma padrão do aplicativo (&quot;en&quot; nos casos de Geometrixx e Starter Kit). A página de local de nível superior normalmente herda do componente &quot;página inicial&quot; da base (/libs/mobileapps/components/splash-page) que cuida da inicialização necessária para oferecer suporte à instalação de atualizações de sincronização de conteúdo ao ar livre (o código contentInit pode ser encontrado em /etc/clientlibs/mobile/content-sync/js/contentInit.js).
+Por convenção do AEM, a primeira página do aplicativo deve ser um redirecionamento para um de seus filhos que serve como idioma padrão do aplicativo (&quot;en&quot; nos casos de Geometrixx e Starter Kit). A página de local de nível superior normalmente herda do componente &quot;página inicial&quot; da base (/libs/mobileapps/components/splash-page) que cuida da inicialização necessária para oferecer suporte à instalação de atualizações de sincronização de conteúdo ao ar livre (o código contentInit pode ser encontrado em /etc/clientlibs/mobile/content-sync/js/contentInit.js).
 
 ## Modelos e componentes {#templates-and-components}
 
@@ -45,7 +45,7 @@ Nas bibliotecas de clientes, há algumas opções disponíveis para o desenvolve
 
 Se o código do lado do cliente puder ser usado sozinho e não estiver relacionado a um componente específico do aplicativo (o que significa que ele pode ser reutilizado em outros aplicativos), o Adobe recomenda armazená-lo em /etc/clientlibs/&lt;brand name=&quot;&quot;>/&lt;lib name=&quot;&quot;>. Por outro lado, se clientlib for específico para um único aplicativo, você poderá aninhá-lo como filho do nó de design do seu aplicativo; /etc/designs/phonegap/&lt;brand name=&quot;&quot;>/&lt;app name=&quot;&quot;>/clientlibs. Não use a categoria desta clientlib com outras bibliotecas; em vez disso, incorpore outras bibliotecas conforme necessário. Seguir esse padrão evita que o desenvolvedor tenha que adicionar novas configurações de sincronização de conteúdo sempre que uma biblioteca do cliente for adicionada ao aplicativo. Em vez disso, basta atualizar a propriedade &quot;embeds&quot; da clientlib de design do aplicativo. Por exemplo, verifique o nó de configuração da sincronização de conteúdo Geometrixx clientlibs-all em /content/phonegap/geometrixx-outdoors/en/jcr:content/page-app/app-config/clientlibs-all.
 
-Se o código do lado do cliente estiver totalmente acoplado a um componente específico, coloque-o em uma biblioteca do cliente aninhada abaixo do local do componente em /apps/ e incorpore sua categoria à clientlib &quot;design&quot; do aplicativo.
+Se o código do lado do cliente estiver totalmente acoplado a um componente específico, coloque-o em uma biblioteca do cliente aninhada abaixo do local do componente em /apps/ e incorpore a categoria à clientlib &quot;design&quot; do aplicativo.
 
 ## Configuração do PhoneGap {#phonegap-configuration}
 

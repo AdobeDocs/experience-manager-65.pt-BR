@@ -2,9 +2,9 @@
 title: Saiba mais sobre as noções básicas de criação
 description: Saiba mais sobre os conceitos e os mecanismos de criação de conteúdo para seu CMS headless usando Fragmentos de conteúdo.
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1689'
+source-wordcount: '1691'
 ht-degree: 76%
 
 ---
@@ -108,7 +108,7 @@ Uma caixa de diálogo é aberta, onde você pode inserir os detalhes e confirmar
 
 #### Uso de caminhos e tags para limitar os Modelos de fragmentos de conteúdo disponíveis na pasta {#tags-paths-for-models-in-folder}
 
-Esta seção é um pouco mais avançada. Na verdade, você não precisa se estiver apenas começando e tentando coisas, mas isso é mais útil quando há muitos fragmentos. Portanto, é bom saber sobre o - mesmo que você ainda não o use.
+Esta seção é um pouco mais avançada. Na verdade, você não precisa se estiver apenas começando e tentando coisas, mas isso é mais útil quando há muitos fragmentos. Por isso é bom saber sobre ela mesmo que ainda não a utilize.
 
 Seu Arquiteto de conteúdo terá criado todos os Modelos de fragmentos de conteúdo necessários para seu projeto atual e talvez alguns outros projetos também. Para ajudar a simplificar as coisas para você mesmo e para outros autores, você pode limitar a lista de modelos disponíveis para uma pasta específica.
 
@@ -199,7 +199,7 @@ Os Modelos de fragmentos de conteúdo são essenciais para os Fragmentos de cont
 
 * **Conteúdo associado**
 
-  Esta é bastante óbvia, já que é uma guia no editor.
+  Este é bastante óbvio, pois é uma guia no editor.
 
   Fragmentos de conteúdo foram disponibilizados no AEM há algumas versões. Originalmente, eles eram disponibilizados para uso “tradicional” durante a criação de páginas....e ainda são usados nesse contexto. Isso pode envolver a associação de ativos (por exemplo, imagens) que, embora não incorporados ao fragmento, precisam estar disponíveis para o autor ao criar uma página.
 

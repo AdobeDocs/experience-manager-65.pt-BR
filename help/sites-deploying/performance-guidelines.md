@@ -11,9 +11,9 @@ topic-tags: configuring
 discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2913'
+source-wordcount: '2914'
 ht-degree: 6%
 
 ---
@@ -57,7 +57,7 @@ Ilustradas abaixo estão as opções de implantação disponíveis para AEM (rol
    <td><p>Propriedade</p> </td>
    <td><p>Apache</p> </td>
    <td><p>Edge</p> </td>
-   <td><p>Destino</p> </td>
+   <td><p>Planejado</p> </td>
   </tr>
   <tr>
    <td><p>Assets</p> </td>
@@ -302,7 +302,7 @@ No AEM, os dados binários podem ser armazenados independentemente dos nós de c
 
 >[!NOTE]
 >
->A Adobe recomenda que o TarMK seja a tecnologia de persistência padrão usada pelos clientes para as instâncias Autor e Publicar do AEM.
+>A Adobe recomenda que o TarMK seja a tecnologia de persistência padrão usada pelos clientes para as instâncias AEM Author e Publish.
 
 >[!CAUTION]
 >
@@ -318,19 +318,19 @@ Para obter mais detalhes sobre as opções de configuração disponíveis, consu
 
 >[!NOTE]
 >
->A Adobe recomenda escolher a opção de implantar o AEM no Azure ou no Amazon Web Services (AWS) usando o Adobe Managed Services. Os clientes se beneficiam de uma equipe que tem a experiência e as habilidades de implantação e operação do AEM nesses ambientes de computação em nuvem. Consulte [documentação adicional sobre o Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
+>O Adobe recomenda a escolha da opção de implantação do AEM no Azure ou no Amazon Web Services (AWS) usando o Adobe Managed Services. Os clientes se beneficiam de uma equipe que tem a experiência e as habilidades de implantação e operação do AEM nesses ambientes de computação em nuvem. Consulte [documentação adicional sobre o Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 >
 >Para obter recomendações sobre como implantar o AEM no Azure ou no AWS, fora do Adobe Managed Services, o Adobe recomenda trabalhar diretamente com o provedor de nuvem. Ou trabalhe com um dos parceiros da Adobe que oferecem suporte à implantação do AEM no ambiente de nuvem de sua escolha. O provedor ou parceiro de nuvem selecionado é responsável pelas especificações de dimensionamento, design e implementação da arquitetura à qual dá suporte para atender aos seus requisitos específicos de desempenho, carga, escalabilidade e segurança.
->Consulte também a [requisitos técnicos](/help/sites-deploying/technical-requirements.md#supported-platforms) página.
 >
->
->
+>>Consulte também a [requisitos técnicos](/help/sites-deploying/technical-requirements.md#supported-platforms) página.
+
 ### Pesquisar {#search-features}
 
 Listados nesta seção estão os provedores de índice personalizados usados com AEM. Para saber mais sobre indexação, consulte [Consultas e indexação do Oak](/help/sites-deploying/queries-and-indexing.md).
 
 >[!NOTE]
-Para a maioria das implantações, o Adobe recomenda usar o Índice Lucene. Use o Solr somente para escalabilidade em implantações especializadas e complexas.
+>
+>Para a maioria das implantações, o Adobe recomenda usar o Índice Lucene. Use o Solr somente para escalabilidade em implantações especializadas e complexas.
 
 ![chlimage_1-4](assets/chlimage_1-4a.png)
 
@@ -368,7 +368,8 @@ Para obter mais detalhes sobre o desenvolvimento do AEM, leia [Desenvolvimento -
 ### Cenários de benchmark {#benchmark-scenarios}
 
 >[!NOTE]
-Todos os testes de benchmark exibidos nesta página foram executados em ambiente de laboratório.
+>
+>Todos os testes de benchmark exibidos nesta página foram executados em ambiente de laboratório.
 
 Os cenários de teste detalhados abaixo são usados para as seções de benchmark dos capítulos TarMK, MongoMk e TarMK vs. MongoMk. Para ver qual cenário foi usado para um teste de benchmark específico, leia o campo Cenário na seção [Especificações técnicas](/help/sites-deploying/performance-guidelines.md#tarmk-performance-benchmark) tabela.
 
@@ -405,7 +406,8 @@ Para obter mais informações sobre TarMK, consulte [Cenários de implantação]
 ### Diretrizes de arquitetura mínima da TarMK {#tarmk-minimum-architecture-guidelines}
 
 >[!NOTE]
-As diretrizes de arquitetura mínimas apresentadas abaixo são para ambientes de produção e sites de alto tráfego. Essas diretrizes são **não** o [especificações mínimas](/help/sites-deploying/technical-requirements.md#prerequisites) para executar o AEM.
+>
+>As diretrizes de arquitetura mínimas apresentadas abaixo são para ambientes de produção e sites de alto tráfego. Essas diretrizes são **não** o [especificações mínimas](/help/sites-deploying/technical-requirements.md#prerequisites) para executar o AEM.
 
 Para estabelecer um bom desempenho ao usar TarMK, você deve começar com a seguinte arquitetura:
 
@@ -416,7 +418,8 @@ Para estabelecer um bom desempenho ao usar TarMK, você deve começar com a segu
 Ilustradas abaixo estão as diretrizes de arquitetura para sites AEM e AEM Assets.
 
 >[!NOTE]
-A replicação sem binários deve ser ativada **LIGADO** se o armazenamento de dados do arquivo for compartilhado.
+>
+>A replicação sem binários deve ser ativada **LIGADO** se o armazenamento de dados do arquivo for compartilhado.
 
 **Diretrizes de arquitetura Tar para o AEM Sites**
 
@@ -459,7 +462,7 @@ Para um bom desempenho, você deve seguir as diretrizes de configuração aprese
   <tr>
    <td>Configuração do índice Lucene</td>
    <td><p><code>CopyOnRead</code></p> <p><code>CopyOnWrite</code></p> <p><code>Prefetch Index Files</code></p> </td>
-   <td><p>Ativado</p> <p>Ativado</p> <p>Ativado</p> </td>
+   <td><p>Habilitado</p> <p>Habilitado</p> <p>Habilitado</p> </td>
    <td>Para obter mais informações sobre os parâmetros disponíveis, consulte <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html">esta página</a>.</td>
   </tr>
   <tr>
@@ -489,7 +492,7 @@ Para um bom desempenho, você deve seguir as diretrizes de configuração aprese
 
 Os testes de referência foram realizados nas seguintes especificações:
 
-|  | **Nó do autor** |
+| | **Nó do autor** |
 |---|---|
 | Servidor | Hardware sem sistema operacional (HP) |
 | Sistema Operacional | Red Hat® Linux® |
@@ -506,7 +509,8 @@ Os testes de referência foram realizados nas seguintes especificações:
 #### Resultados do Benchmark de Desempenho {#performance-benchmark-results}
 
 >[!NOTE]
-Os números apresentados abaixo foram normalizados para 1 como a linha de base e não são os números de rendimento reais.
+>
+>Os números apresentados abaixo foram normalizados para 1 como a linha de base e não são os números de rendimento reais.
 
 ![chlimage_1-7](assets/chlimage_1-7a.png) ![chlimage_1-8](assets/chlimage_1-8a.png)
 
@@ -526,10 +530,12 @@ Para estabelecer um bom desempenho ao usar o MongoMK, você deve começar pela s
 * Dois Dispatchers
 
 >[!NOTE]
-Em ambientes de produção, o MongoDB é sempre usado como um conjunto de réplicas com um primário e dois secundários. As leituras e gravações vão para o principal e as leituras para o secundário. Se o armazenamento não estiver disponível, um dos secundários pode ser substituído por um árbitro, mas os conjuntos de réplicas do MongoDB sempre devem ser compostos de um número ímpar de instâncias.
+>
+>Em ambientes de produção, o MongoDB é sempre usado como um conjunto de réplicas com um primário e dois secundários. As leituras e gravações vão para o principal e as leituras para o secundário. Se o armazenamento não estiver disponível, um dos secundários pode ser substituído por um árbitro, mas os conjuntos de réplicas do MongoDB sempre devem ser compostos de um número ímpar de instâncias.
 
 >[!NOTE]
-A replicação sem binários deve ser ativada **LIGADO** se o armazenamento de dados do arquivo for compartilhado.
+>
+>A replicação sem binários deve ser ativada **LIGADO** se o armazenamento de dados do arquivo for compartilhado.
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
 
@@ -566,7 +572,7 @@ Para um bom desempenho, você deve seguir as diretrizes de configuração aprese
   <tr>
    <td>Configuração do índice Lucene</td>
    <td><p><code>CopyOnRead</code></p> <p><code>CopyOnWrite</code></p> <p><code>Prefetch Index Files</code></p> </td>
-   <td><p>Ativado</p> <p>Ativado</p> <p>Ativado</p> </td>
+   <td><p>Habilitado</p> <p>Habilitado</p> <p>Habilitado</p> </td>
    <td>Para obter mais detalhes sobre parâmetros disponíveis, consulte <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html">esta página</a>.</td>
   </tr>
   <tr>
@@ -596,7 +602,7 @@ Para um bom desempenho, você deve seguir as diretrizes de configuração aprese
 
 Os testes de referência foram realizados nas seguintes especificações:
 
-|  | **Nó Autor** | **Nó MongoDB** |
+| | **Nó Autor** | **Nó MongoDB** |
 |---|---|---|
 | Servidor | Hardware sem sistema operacional (HP) | Hardware sem sistema operacional (HP) |
 | Sistema Operacional | Red Hat® Linux® | Red Hat® Linux® |
@@ -613,7 +619,8 @@ Os testes de referência foram realizados nas seguintes especificações:
 ### Resultados do Benchmark de Desempenho {#performance-benchmark-results-1}
 
 >[!NOTE]
-Os números apresentados abaixo foram normalizados para 1 como a linha de base e não são os números de rendimento reais.
+>
+>Os números apresentados abaixo foram normalizados para 1 como a linha de base e não são os números de rendimento reais.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png) ![chlimage_1-11](assets/chlimage_1-11a.png)
 
@@ -646,7 +653,8 @@ Para mais detalhes sobre TarMK vs MongoMK, consulte [Implantações recomendadas
 ### Referenciais TarMK vs MongoMK {#tarmk-vs-mongomk-benchmarks}
 
 >[!NOTE]
-Os números apresentados abaixo foram normalizados para 1 como a linha de base e não são números de taxa de transferência reais.
+>
+>Os números apresentados abaixo foram normalizados para 1 como a linha de base e não são números de taxa de transferência reais.
 
 ### Especificações técnicas do cenário 1 {#scenario-technical-specifications}
 
@@ -734,7 +742,8 @@ Os números apresentados abaixo foram normalizados para 1 como a linha de base e
 ### Especificações técnicas do cenário 2 {#scenario-technical-specifications-1}
 
 >[!NOTE]
-Para habilitar o mesmo número de Autores com MongoDB que com um sistema TarMK, você precisa de um cluster com dois nós AEM. Um cluster MongoDB de quatro nós pode lidar com 1,8 vez o número de autores do que uma instância TarMK. Um cluster MongoDB de oito nós pode lidar com 2,3 vezes o número de autores do que uma instância TarMK.
+>
+>Para habilitar o mesmo número de Autores com MongoDB que com um sistema TarMK, você precisa de um cluster com dois nós AEM. Um cluster MongoDB de quatro nós pode lidar com 1,8 vez o número de autores do que uma instância TarMK. Um cluster MongoDB de oito nós pode lidar com 2,3 vezes o número de autores do que uma instância TarMK.
 
 <table>
  <tbody>

@@ -7,9 +7,9 @@ role: User
 feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2202'
+source-wordcount: '2204'
 ht-degree: 15%
 
 ---
@@ -222,7 +222,7 @@ Ao baixar uma coleção, toda a hierarquia de ativos dentro dela é baixada, inc
 
 ## Criar coleções aninhadas {#creating-nested-collections}
 
-Você pode adicionar uma coleção a outra coleção, criando assim uma coleção aninhada.
+Você pode adicionar uma coleção a outra coleção para criar uma coleção aninhada.
 
 1. No console Coleções, selecione a coleção ou o grupo de coleções desejado e clique em **[!UICONTROL Para a coleção]** na barra de ferramentas.
 

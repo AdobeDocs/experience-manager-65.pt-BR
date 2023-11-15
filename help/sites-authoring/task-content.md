@@ -1,18 +1,14 @@
 ---
 title: Trabalhar com tarefas
-seo-title: Working with Tasks
 description: As tarefas representam itens de trabalho a serem realizados no conteúdo e são usadas nos projetos para determinar a percentagem de conclusão das tarefas atuais
-seo-description: Tasks represent items of work to be done on content and are used in projects to determine the level of completeness of current tasks
-uuid: df4efb3f-8298-4159-acfe-305ba6b46791
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
-discoiquuid: 1b79d373-73f4-4228-b309-79e74d191f3e
 exl-id: a0719745-8d67-44bc-92ba-9ab07f31f8d2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '594'
 ht-degree: 41%
 
 ---

@@ -2,9 +2,9 @@
 title: Como executar o aplicativo headless
 description: Nesta parte da Jornada de desenvolvedores sem periféricos do AEM, saiba como implantar um aplicativo sem periféricos em tempo real.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1874'
 ht-degree: 50%
 
 ---

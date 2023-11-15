@@ -4,9 +4,9 @@ description: Saiba mais sobre as opções disponíveis ao instalar uma instânci
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1617'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Finalmente, se você estiver executando uma instância atualizada do AEM 6.3, ve
 Por padrão, a pasta `crx-quickstart/install` é observado para arquivos.
 Esta pasta não existe, mas pode ser criada no tempo de execução.
 
-Se um pacote, uma configuração ou um pacote de conteúdo for colocado nesse diretório, ele será selecionado e instalado automaticamente. Se for removido, é desinstalado.
+Se um pacote, uma configuração ou um pacote de conteúdo for colocado nesse diretório, ele será selecionado e instalado automaticamente. Se for removido, ele é desinstalado.
 É outra maneira de colocar pacotes, pacotes de conteúdo ou configurações no repositório.
 
 Isso é especialmente interessante para vários casos de uso:

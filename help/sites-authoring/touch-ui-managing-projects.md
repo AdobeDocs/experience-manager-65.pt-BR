@@ -1,18 +1,14 @@
 ---
 title: Gerenciamento de projetos
-seo-title: Managing Projects
 description: O console de Projetos permite organizar o projeto, agrupando os recursos em uma única entidade que pode ser acessada e gerenciada no próprio console
-seo-description: Projects lets you organize your project by grouping resources into one entity which can be acessed and managed intheProjects console
-uuid: ac937582-181f-429b-9404-3c71d1241495
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
-discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '981'
 ht-degree: 22%
 
 ---
@@ -135,7 +131,7 @@ Agora você pode criar projetos dentro da pasta. É possível criar várias past
 
 ### Desativação de projetos {#making-projects-inactive-or-active}
 
-Você pode marcar um projeto como inativo se ele for concluído, mas ainda assim deseja manter as informações sobre ele. [Os projetos inativos agora são exibidos](#viewing-active-inactive-projects) por padrão, no campo **Projetos** console.
+Você pode marcar um projeto como inativo se ele for concluído, mas ainda assim manter as informações sobre ele. [Os projetos inativos agora são exibidos](#viewing-active-inactive-projects) por padrão, no campo **Projetos** console.
 
 Para tornar um projeto inativo, siga estas etapas.
 

@@ -1,14 +1,12 @@
 ---
 title: Exemplos de tipos de módulo da interface do usuário do ContextHub
-seo-title: Sample ContextHub UI Module Types
-description: O ContextHub fornece vários módulos de interface do usuário de amostra que você pode usar em suas soluções
-seo-description: ContextHub provides several sample UI modules that you can use in your solutions
+description: O ContextHub fornece vários módulos de interface do usuário de amostra que você pode usar em suas soluções.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: df28180f-7af4-437d-8e91-bfd305f73113
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 0%
@@ -57,7 +55,7 @@ Configure o módulo da interface contexthub.base usando um objeto JavaScript no 
    * título: o texto a ser exibido para este item
    * image: (opcional) um URL para uma imagem que deve ser exibida à esquerda
    * ícone: (opcional) uma classe de ícone CUI que deve ser exibida à esquerda; ignorado se uma imagem for especificada
-   * selecionado: (opcional) um valor booleano que especifica se esse item deve ser exibido como selecionado (true=seleted). Por padrão, os itens selecionados aparecem usando uma fonte em negrito. Use um `listType` para configurar outras aparências (veja abaixo).
+   * selecionado: (opcional) um valor booleano que especifica se esse item deve ser exibido como selecionado (true=seleted). Por padrão, os itens selecionados são exibidos usando uma fonte em negrito. Use um `listType` para configurar outras aparências (veja abaixo).
 
 * **listType:** O estilo a ser usado para itens de lista de pop-over. Use um dos seguintes valores:
 

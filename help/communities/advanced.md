@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1068'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ O padrão é definido como ADICIONAR verbo para componentes de QnA e fórum.
   O valor padrão é de 216.000 horas (~24 anos).
 
 * **Pontuação da taxa de crescimento**
-Isso especifica a pontuação entre 0 e o intervalo de pontuação, além do qual o crescimento diminui para limitar o número de especialistas.
+Isso especifica a pontuação entre o intervalo de pontuação 0, além do qual o crescimento diminui para limitar o número de especialistas.
 
   O valor padrão é 50.
 

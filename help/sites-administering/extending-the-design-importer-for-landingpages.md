@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '3493'
+source-wordcount: '3495'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Estas são as etapas lógicas para fazer o importador de design reconhecer seu c
 
 1. Criar um TagHandler
 
-   * Um manipulador de tags é um POJO que lida com tags HTML de um tipo específico. O &quot;tipo&quot; de tags HTML que seu TagHandler pode manipular é definido por meio da propriedade OSGi &quot;tagpattern.name&quot; de TagHandlerFactory. Essa propriedade OSGi é essencialmente um regex que deve corresponder à tag html de entrada que você deseja manipular. Todas as tags aninhadas seriam lançadas ao manipulador de tags para manipulação. Por exemplo, se você se registrar para uma div que contém uma variável &lt;p> tag, a variável &lt;p> Tag também seria lançado para o seu TagHandler e depende de você como deseja cuidar dele.
+   * Um manipulador de tags é um POJO que lida com tags HTML de um tipo específico. O &quot;tipo&quot; de tags HTML que seu TagHandler pode manipular é definido por meio da propriedade OSGi &quot;tagpattern.name&quot; de TagHandlerFactory. Essa propriedade OSGi é essencialmente um regex que deve corresponder à tag html de entrada que você deseja manipular. Todas as tags aninhadas seriam lançadas ao manipulador de tags para manipulação. Por exemplo, se você se registrar para uma div que contém uma variável &lt;p> tag, a variável &lt;p> Tag também seria lançado para o seu TagHandler e depende de você como você deseja cuidar dele.
    * A interface do manipulador de tags é semelhante a uma interface do manipulador de conteúdo SAX. Ele recebe eventos SAX para cada tag html. Como provedor de manipulador de tags, é necessário implementar determinados métodos de ciclo de vida que são chamados automaticamente pela estrutura do importador de design.
 
 1. Crie o TagHandlerFactory correspondente.
