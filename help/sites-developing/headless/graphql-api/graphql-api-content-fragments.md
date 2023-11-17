@@ -3,10 +3,10 @@ title: API GraphQL do AEM para uso com Fragmentos de conteúdo
 description: Saiba como usar Fragmentos de conteúdo no Adobe Experience Manager (AEM) com a API do AEM GraphQL para entrega de conteúdo headless.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 5bfd8216c9d3540ac6d795d434dab5afb7bce309
 workflow-type: tm+mt
-source-wordcount: '4774'
-ht-degree: 55%
+source-wordcount: '4848'
+ht-degree: 54%
 
 ---
 
@@ -715,7 +715,28 @@ Para habilitar o armazenamento em cache de consultas persistentes, defina a vari
 
 >[!NOTE]
 >
->Para estar em conformidade com [Requisitos do Dispatcher para documentos que podem ser armazenados em cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), o Dispatcher adiciona o sufixo `.json` para todos os URLS de consulta persistentes, para que o resultado possa ser armazenado em cache.
+>Quando o armazenamento em cache do Dispatcher está ativado para consultas persistentes usando `Define CACHE_GRAPHQL_PERSISTED_QUERIES` um `ETag` é adicionado à resposta pelo Dispatcher.
+>
+>Por padrão, a variável `ETag` O cabeçalho do está configurado com a seguinte diretiva:
+>
+>```
+>FileETag MTime Size 
+>```
+>
+>No entanto, essa configuração pode causar problemas quando usada nas respostas de consultas persistentes, pois não leva em conta pequenas alterações na resposta.
+>
+>Para atingir objetivos `ETag` cálculos em *cada* resposta que é exclusiva do `FileETag Digest` deve ser usada na configuração do dispatcher:
+>
+>```xml
+><Directory />    
+>   ...    
+>   FileETag Digest
+></Directory> 
+>```
+
+>[!NOTE]
+>
+>Para estar em conformidade com [Requisitos do Dispatcher para documentos que podem ser armazenados em cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), o Dispatcher adiciona o sufixo `.json` a todos os URLs de consulta persistentes, para que o resultado possa ser armazenado em cache.
 >
 >Esse sufixo é adicionado por uma regra de regravação, depois que o cache de consultas persistentes é ativado.
 
