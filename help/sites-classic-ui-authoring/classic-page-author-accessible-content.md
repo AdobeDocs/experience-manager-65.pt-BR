@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
-source-wordcount: '9152'
-ht-degree: 61%
+source-wordcount: '9151'
+ht-degree: 60%
 
 ---
 
@@ -606,7 +606,7 @@ Se a cor for usada como uma indicação para fornecer as informações, você de
 * Contraste (mínimo): a apresentação visual de texto e imagens de texto tem uma relação de contraste de pelo menos 4.5:1, exceto nos seguintes casos:
 
    * Texto grande: os textos e imagens de texto em grande escala têm uma relação de contraste de pelo menos 3:1.
-   * Incidental: o texto ou as imagens de texto que fazem parte de um componente de interface de usuário inativo, que são meramente decorativos, e não estão visíveis para ninguém ou que são parte de uma imagem que inclui outro conteúdo visual significativo, não têm requisito de contraste.
+   * Incidental: o texto ou as imagens de texto que fazem parte de um componente de interface de usuário inativo que são meramente decorativos ou não estão visíveis para ninguém, ou que são parte de uma imagem que contém outro conteúdo visual significativo, não têm requisito de contraste.
    * Logotipos: o texto que faz parte de um logotipo ou marca comercial não tem requisito de contraste.
 
 #### Propósito - Contraste (Mínimo) (1.4.3)       {#purpose-contrast-minimum}

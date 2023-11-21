@@ -2,9 +2,9 @@
 title: Otimização de consultas de GraphQL
 description: Saiba como otimizar suas consultas do GraphQL ao filtrar, paginar e classificar os fragmentos de conteúdo no Adobe Experience Manager as a Cloud Service para entrega de conteúdo headless.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
-source-wordcount: '1964'
+source-wordcount: '1965'
 ht-degree: 58%
 
 ---
@@ -316,7 +316,7 @@ Há várias outras situações em que uma expressão de filtro não pode ser ava
 
 ### Minimizar aninhamento de fragmento de conteúdo {#minimize-content-fragment-nesting}
 
-O aninhamento de fragmentos de conteúdo é uma ótima maneira de modelar estruturas de conteúdo personalizadas. Você pode até ter um fragmento com um fragmento aninhado, que tenha um fragmento aninhado, que tenha... e assim por diante.
+O aninhamento de fragmentos de conteúdo é uma ótima maneira de modelar estruturas de conteúdo personalizadas. Você pode até ter um fragmento com um fragmento aninhado que tenha um fragmento aninhado, que tenha... e assim por diante.
 
 No entanto, criar uma estrutura com muitos níveis pode aumentar os tempos de processamento de uma consulta do GraphQL, pois o GraphQL precisa percorrer toda a hierarquia de todos os fragmentos de conteúdo aninhados.
 

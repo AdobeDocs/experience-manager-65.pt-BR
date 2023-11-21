@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
 source-wordcount: '10791'
 ht-degree: 1%
@@ -1235,7 +1235,7 @@ Após especificar o tipo de conector, você pode recuperar informações sobre o
 
 Recupere informações do conector de ponto de extremidade usando a API Java:
 
-1. Incluir arquivos de projeto. .
+1. Incluir arquivos de projeto.
 
    Inclua arquivos JAR do cliente, como adobe-livecycle-client.jar, no caminho de classe do projeto Java.
 

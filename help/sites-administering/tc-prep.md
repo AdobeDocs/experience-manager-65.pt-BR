@@ -4,10 +4,10 @@ description: Saiba como preparar conteúdo para tradução no Adobe Experience M
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 81978733-89a6-4436-bcf1-4bde962ed54f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 61%
+source-wordcount: '684'
+ht-degree: 58%
 
 ---
 
@@ -29,7 +29,7 @@ O exemplo de site de demonstração do Geometrixx inclui várias ramificações 
              |- zh
 ```
 
-Cada ramificação de idioma de um site é chamada de cópia de idioma. A página raiz de uma cópia de idioma, conhecida como raiz de idioma, identifica o idioma do conteúdo na cópia de idioma. Por exemplo, `/content/geometrixx/fr` é a raiz de idioma para a cópia em francês. As cópias de idioma devem usar uma [raiz de idioma configurada corretamente](/help/sites-administering/tc-prep.md#creating-a-language-root) para que o idioma correto seja escolhido quando as traduções de um site de origem forem executadas.
+Cada ramificação de idioma de um site é chamada de cópia de idioma. A página raiz de uma cópia de idioma, conhecida como raiz de idioma, identifica o idioma do conteúdo na cópia de idioma. Por exemplo, `/content/geometrixx/fr` é a raiz de idioma para a cópia em francês. As cópias de idioma devem usar um [raiz de idioma configurada corretamente](/help/sites-administering/tc-prep.md#creating-a-language-root) para que o idioma correto seja escolhido quando as traduções de um site de origem forem executadas.
 
 A cópia de idioma para a qual você criou originalmente o conteúdo do site é o idioma principal. O idioma principal é a fonte, que é traduzida para outros idiomas.
 

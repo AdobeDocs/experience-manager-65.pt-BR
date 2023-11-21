@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
 source-wordcount: '18956'
 ht-degree: 0%
@@ -1806,7 +1806,7 @@ Crie vários arquivos de PDF usando a API de saída (Java):
 
 1. Incluir arquivos de projeto&quot;
 
-   Inclua arquivos JAR do cliente, como adobe-output-client.jar, no caminho de classe do projeto Java. .
+   Inclua arquivos JAR do cliente, como adobe-output-client.jar, no caminho de classe do projeto Java.
 
 1. Criar um objeto do Cliente de saída
 

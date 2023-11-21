@@ -1,17 +1,12 @@
 ---
 title: "Tutorial: Criar um formulário adaptável"
-seo-title: Create an adaptive form
 description: Saiba como criar, fazer layout e pré-visualizar um formulário adaptável. Além disso, aprenda a configurar ações de envio.
-seo-description: Learn to create, layout, and preview an adaptive form. Also, learn to configure submit actions.
-page-status-flag: de-activated
-uuid: 0010d274-a683-499e-9fa6-ce355d7898a0
-discoiquuid: 55c08940-8c25-4938-8e49-25bce20aaf22
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
-source-wordcount: '1380'
-ht-degree: 3%
+source-wordcount: '1384'
+ht-degree: 8%
 
 ---
 
@@ -45,13 +40,13 @@ No final do artigo, você terá um formulário semelhante ao seguinte:\
 1. Uma opção para **[!UICONTROL Adicionar propriedades]** é exibida. A variável **[!UICONTROL Título]** e **[!UICONTROL Nome]** os campos são obrigatórios:
 
    * **Título:** Especificar `Add new or update shipping address` no **[!UICONTROL Título]** campo. O campo de título especifica o nome de exibição do formulário. O título ajuda a identificar o formulário no AEM [!DNL Forms] interface do usuário.
-   * **Nome:** Especificar `shipping-address-add-update-form` no **[!UICONTROL Nome]** campo. O campo Nome especifica o nome do formulário. Um nó com o nome especificado é criado no repositório. Quando você começa a digitar um título, o valor do campo de nome é gerado automaticamente. Você pode alterar o valor sugerido. O campo de nome pode incluir apenas caracteres alfanuméricos, hifens e sublinhados. Todas as entradas inválidas são substituídas por um hífen.
+   * **Nome:** Especificar `shipping-address-add-update-form` no **[!UICONTROL Nome]** campo. O campo Nome especifica o nome do formulário. Um nó com o nome especificado será criado no repositório. Ao começar a digitar um título, o valor do campo de nome é gerado automaticamente. É possível alterar o valor sugerido. O campo de nome pode incluir apenas caracteres alfanuméricos, hifens e sublinhados. Todas as entradas inválidas são substituídas por um hífen.
 
-1. Toque **[!UICONTROL Criar]**. Um formulário adaptável é criado e uma caixa de diálogo para abrir o formulário para edição é exibida. Toque **[!UICONTROL Abertura]** para abrir o formulário recém-criado em uma nova guia. O formulário é aberto para edição. Ele também exibe a barra lateral para personalizar o formulário recém-criado de acordo com as necessidades.
+1. Toque em **[!UICONTROL Criar]**. Um formulário adaptável é criado e uma caixa de diálogo para abrir o formulário para edição é exibida. Toque **[!UICONTROL Abertura]** para abrir o formulário recém-criado em uma nova guia. O formulário é aberto para edição. Também exibirá a barra lateral para personalizar o formulário recém-criado de acordo com as necessidades.
 
    Para obter informações sobre a interface de criação de formulários adaptáveis e os componentes disponíveis, consulte [Introdução à criação de formulários adaptáveis](/help/forms/using/creating-adaptive-form.md).
 
-   ![formulário-adaptável-recém-criado](assets/newly-created-adaptive-form.png)
+   ![Um formulário adaptável recém-criado.](assets/newly-created-adaptive-form.png)
 
 ## Etapa 2: adicionar cabeçalho e rodapé {#step-add-header-and-footer}
 
