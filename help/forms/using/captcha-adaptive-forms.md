@@ -7,10 +7,10 @@ topic-tags: adaptive_forms, author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: f2d8fd17787e756e9ee5a8fc6eaea726de6b66ba
 workflow-type: tm+mt
-source-wordcount: '1992'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -303,11 +303,12 @@ Você pode chamar o servlet personalizado que inclui `ValidateCAPTCHA` API usand
 
 Da mesma forma, você pode usar o editor de regras para incluir um método personalizado para validar CAPTCHA em um Formulário adaptável.
 
-### Adicionar serviços personalizados de CAPTCHA {#add-custom-captcha-service}
+<!--
+### Add custom CAPTCHA services {#add-custom-captcha-service}
 
-[!DNL Experience Manager Forms] O fornece o reCAPTCHA como o serviço CAPTCHA. No entanto, é possível adicionar um serviço personalizado para exibir na **[!UICONTROL Serviço CAPTCHA]** lista suspensa.
+[!DNL Experience Manager Forms] provides reCAPTCHA as the CAPTCHA service. However, you can add a custom service to display in the **[!UICONTROL CAPTCHA Service]** drop-down list.  
 
-Este é um exemplo de implementação da interface para adicionar outro serviço CAPTCHA ao formulário adaptável:
+The following is a sample implementation of the interface to add additional CAPTCHA service to your Adaptive Form:
 
 ```javascript
 package com.adobe.aemds.guide.service;
@@ -337,6 +338,6 @@ public interface GuideCaptchaValidator {
 }
 ```
 
-`captchaPropertyNodePath` Refere-se ao caminho do recurso do componente CAPTCHA no repositório Sling. Use essa propriedade para incluir detalhes específicos do componente CAPTCHA. Por exemplo, `captchaPropertyNodePath` inclui informações para a configuração de nuvem do reCAPTCHA configurada no componente CAPTCHA. As informações de configuração da nuvem fornecem **[!UICONTROL Chave do site]** e **[!UICONTROL Chave secreta]** configurações para implementar o serviço reCAPTCHA.
+`captchaPropertyNodePath` Refers to the resource path of the CAPTCHA component in the Sling repository. Use this property to include details specific to the CAPTCHA component. For example, `captchaPropertyNodePath` includes information for the reCAPTCHA cloud configuration configured on the CAPTCHA component. The cloud configuration information provides **[!UICONTROL Site Key]** and **[!UICONTROL Secret Key]** settings for implementing the reCAPTCHA service.
 
-`userResponseToken` Consulte a seção `g_reCAPTCHA_response` que é gerado após resolver um CAPTCHA em um formulário.
+`userResponseToken` Refers to the `g_reCAPTCHA_response` that gets generated after solving a CAPTCHA in a form. -->
