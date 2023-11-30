@@ -2,10 +2,11 @@
 title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: c78d5f1d94ffb92a1e034b0ccb6131ac811d708f
+exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
+source-git-commit: 8d06457241919095fd9802f69df426a1cc6851da
 workflow-type: tm+mt
-source-wordcount: '3530'
-ht-degree: 2%
+source-wordcount: '3675'
+ht-degree: 3%
 
 ---
 
@@ -22,14 +23,14 @@ ht-degree: 2%
 
 | Produto | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
-| Versão | 6.5.18.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Versão | 6.5.19.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Tipo | Versão do Service Pack |
-| Data | Quinta-feira, 24 de agosto de 2023 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| URL de download | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.18.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Data | Quinta-feira, 30 de novembro de 2023 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| URL de download | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.19.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
-## O que está incluído em [!DNL Experience Manager] 6.5.18.0 {#what-is-included-in-aem-6519}
+## O que está incluído em [!DNL Experience Manager] 6.5.19.0 {#what-is-included-in-aem-6519}
 
-[!DNL Experience Manager] O 6.5.18.0 inclui novos recursos, importantes melhorias solicitadas por clientes, correções de erros e melhorias de desempenho, estabilidade e segurança que foram lançadas desde a disponibilização inicial do 6.5 em abril de 2019. [Instalar este pacote de serviços](#install) em [!DNL Experience Manager] 6.5.
+[!DNL Experience Manager] O 6.5.19.0 inclui novos recursos, importantes melhorias solicitadas por clientes, correções de erros e melhorias de desempenho, estabilidade e segurança que foram lançadas desde a disponibilização inicial do 6.5 em abril de 2019. [Instalar este pacote de serviços](#install) em [!DNL Experience Manager] 6.5.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -53,7 +54,7 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 
 * Para localizar rapidamente um projeto na exibição em Lista, onde você pode ter muitos projetos em seu sistema, o Adobe agora é compatível com a classificação do lado do servidor. Os nós de projeto são classificados no backend com base na coluna selecionada pelo usuário antes de renderizá-los na interface. (NPR-41027)
 
-* O AEM 6.5.18.0 é compatível com MongoDB 5.0 para 6.0.
+* O AEM 6.5.19.0 é compatível com MongoDB 5.0 para 6.0.
 
 **Recurso obsoleto**
 
@@ -61,10 +62,9 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
-## Correção de problemas no Service Pack 18 {#fixed-issues}
+## Correção de problemas no Service Pack 19 {#fixed-issues}
 
 ### [!DNL Sites]{#sites-6519}
-
 
 #### Acessibilidade{#sites-accessibility-6519}
 
@@ -99,6 +99,7 @@ para
 #### Infraestrutura principal{#sites-core-backend-6519}
 
 * Melhorar `StyleImpl`. (SITES-15164)
+* Melhore a ramificação release/650 do pipeline do WCM para poder executar testes de integração para seus módulos. (SITES-12938)
 
 <!--#### Core Components{#sites-core-components-6519}
 
@@ -132,8 +133,9 @@ para
 
 #### Editor de página{#sites-pageeditor-6519}
 
+* Em Forms > Temas, se você tiver aberto um tema no editor de temas, feito algumas alterações e salvo e, em seguida, clicar em Visualizar, um ícone de carregamento ficará visível, mas a visualização real não carregará. (SITES-17164)
 * A seleção de vários tipos de arquivo de documento no filtro de tipo de ativo não funciona no console de páginas. Nenhum resultado é encontrado mesmo se os resultados de um tipo de arquivo específico estiverem disponíveis. Como resultado, os autores não conseguem filtrar vários documentos. Eles devem usar vários tipos de documentos e precisam filtrá-los um de cada vez. (SITES-14047)
-* Depois de atualizar uma instância do AEM 6.5.17 e do AEM 6.5.18, de dentro do Editor de páginas, se você selecionar **[!UICONTROL Publicar página]**, você será redirecionado para um URL que não existe. O usuário deve ser redirecionado para o Assistente de publicação. (SITES-15856)
+* Depois de atualizar uma instância do AEM 6.5.17 e do AEM 6.5.18, de dentro do Editor de páginas, se você selecionou **[!UICONTROL Publicar página]**, você será redirecionado para um URL que não existe. O usuário deve ser redirecionado para o Assistente de publicação. (SITES-15856)
 * Cópia redundante da área de transferência AEM durante uma colagem da área de transferência do sistema operacional. (SITES-15704)
 * No Assets, seleção **[!UICONTROL Documentos]**, depois em **[!UICONTROL Filtertype]**, selecionando **[!UICONTROL Microsoft® Word]** ou **[!UICONTROL Microsoft® Excel]** O não mostra resultados mesmo se houver arquivos de ambos os tipos. (SITES-14837)
 
@@ -145,7 +147,7 @@ para
 
 #### [!DNL Dynamic Media]{#assets-dm-6519}
 
-* Depois que um ativo é carregado para AEM, a variável `update_asset` fluxo de trabalho é acionado. O fluxo de trabalho nunca é concluído. Ao examinar as instâncias de fluxo de trabalho, o fluxo de trabalho é concluído até a etapa de carregamento do produto. A próxima etapa é o upload em lote do scene7. O usuário pode ver que o ativo está no Scene7 no aplicativo Dynamic Media Classic. (ASSETS-30443)
+* Depois que um ativo é carregado para AEM, a variável `update_asset` fluxo de trabalho é acionado. O fluxo de trabalho nunca é concluído. Ao examinar as instâncias de fluxo de trabalho, o fluxo de trabalho é concluído até a etapa de carregamento do produto. A próxima etapa é o upload em lote do Scene7. O usuário pode ver que o ativo está no Scene7 no aplicativo Dynamic Media Classic. (ASSETS-30443)
 * Um Servlet personalizado (endpoint da API) está retornando um nome de arquivo Dynamic Media (Scene7) incorreto. Isso ocorre quando um ativo é excluído e substituído por um ativo com o mesmo nome. O servlet personalizado retorna o nome de arquivo antigo do Dynamic Media (Scene7), enquanto uma chamada de API &quot;jcr&quot; retorna o nome de arquivo correto. (ASSETS-29476)
 * Mesmo depois que a Sincronização está desativada no nível da Pasta, os Logs mostram o acionador de &quot;Scene7 ReplicateOnModifyListener&quot;. A variável `ReplicateOnModifyListener/Worker` O deve ignorar o processamento de ativos de pastas e fragmentos de conteúdo que não sejam da Dynamic Media. (ASSETS-26705)
 * As pessoas com pouca visão serão afetadas se o Foco não estiver visível nos elementos suspensos (Somente conteúdo, Exibir, Mais opções) nos modos de alto contraste em preto-e-branco. (ASSETS-25759)
@@ -227,22 +229,21 @@ Correções na [!DNL Experience Manager] Os Forms são entregues por meio de um 
 
 #### Fluxo de trabalho{#foundation-workflow-6519}
 
-* Não é possível concluir uma tarefa na Caixa de entrada. Somente um valor &quot;indefinido&quot; é observado no menu suspenso ao tentar concluir a tarefa e selecionar uma ação. Isso significa que os usuários não podem aplicar o service pack AEM 6.5.18. (NPR-41402)
+* Não é possível concluir uma tarefa na Caixa de entrada. Somente um valor &quot;indefinido&quot; é observado no menu suspenso ao tentar concluir a tarefa e selecionar uma ação. Isso significa que os usuários não podem aplicar o service pack AEM 6.5.18. (NPR-41402 e NPR-41473)
 * Não é possível concluir tarefas na Caixa de entrada. Não há valor (apenas &quot;indefinido&quot;) na lista suspensa ao tentar concluir a tarefa para arquivos zip, relatórios de ativos, mover (sucesso ou falha) ou expiração de ativos. (NPR-41305)
 * Quando um usuário seleciona **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > instâncias, seleciona o fluxo de trabalho em execução e selecione **[!UICONTROL Exibir carga]**, isso resulta em uma página de erro 500. (NPR-41325)
 
-
-## Instalar [!DNL Experience Manager] 6.5.18.0{#install}
+## Instalar [!DNL Experience Manager] 6.5.19.0{#install}
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
-* [!DNL Experience Manager] O 6.5.18.0 exige [!DNL Experience Manager] 6.5. Ver [documentação de atualização](/help/sites-deploying/upgrade.md) para obter instruções detalhadas. <!-- UPDATE FOR EACH NEW RELEASE -->
-* O download do pacote de serviços está disponível no Adobe [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.18.0.zip).
-* Em uma implantação com MongoDB e várias instâncias, instale [!DNL Experience Manager] 6.5.18.0 em uma das instâncias do Autor usando o Gerenciador de pacotes.<!-- UPDATE FOR EACH NEW RELEASE -->
+* [!DNL Experience Manager] O 6.5.19.0 exige [!DNL Experience Manager] 6.5. Ver [documentação de atualização](/help/sites-deploying/upgrade.md) para obter instruções detalhadas. <!-- UPDATE FOR EACH NEW RELEASE -->
+* O download do pacote de serviços está disponível no Adobe [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.19.0.zip).
+* Em uma implantação com MongoDB e várias instâncias, instale [!DNL Experience Manager] 6.5.19.0 em uma das instâncias do Autor usando o Gerenciador de pacotes.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
 >
-> O Adobe não recomenda que você remova ou desinstale o [!DNL Experience Manager] 6.5.18.0 pacote. Dessa forma, antes de instalar o pacote, você deve criar um backup do `crx-repository` caso precise revertê-la. <!-- UPDATE FOR EACH NEW RELEASE -->
+> O Adobe não recomenda que você remova ou desinstale o [!DNL Experience Manager] 6.5.19.0 pacote. Dessa forma, antes de instalar o pacote, você deve criar um backup do `crx-repository` caso precise revertê-la. <!-- UPDATE FOR EACH NEW RELEASE -->
 <!-- For instructions to install Service Pack for Experience Manager Forms, see [Experience Manager Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). -->
 
 
@@ -252,7 +253,7 @@ Correções na [!DNL Experience Manager] Os Forms são entregues por meio de um 
 
 1. Antes de instalar o, faça um instantâneo ou um novo backup de seu [!DNL Experience Manager] instância.
 
-1. Baixe o pacote de serviços de [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.18.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. Baixe o pacote de serviços de [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.19.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. Abra o Gerenciador de pacotes e selecione **[!UICONTROL Fazer upload do pacote]** para carregar o pacote. Para saber mais, consulte [Gerenciador de pacotes](/help/sites-administering/package-manager.md).
 
@@ -266,24 +267,24 @@ Correções na [!DNL Experience Manager] Os Forms são entregues por meio de um 
 
 **Instalação automática**
 
-Há dois métodos diferentes que você pode usar para instalar automaticamente o [!DNL Experience Manager] 6.5.18.0<!-- UPDATE FOR EACH NEW RELEASE -->
+Há dois métodos diferentes que você pode usar para instalar automaticamente o [!DNL Experience Manager] 6.5.19.0<!-- UPDATE FOR EACH NEW RELEASE -->
 
 * Coloque o pacote em `../crx-quickstart/install` pasta quando o servidor estiver disponível online. O pacote é instalado automaticamente.
 * Use o [API HTTP do Gerenciador de pacotes](/help/sites-administering/package-manager.md#package-share). Uso `cmd=install&recursive=true` para que os pacotes aninhados sejam instalados.
 
 >[!NOTE]
 >
->O Experience Manager 6.5.18.0 não suporta a instalação do Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
+>O Experience Manager 6.5.19.0 não suporta a instalação do Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 **Validar a instalação**
 
 Para conhecer as plataformas certificadas para trabalhar com esta versão, consulte a [requisitos técnicos](/help/sites-deploying/technical-requirements.md).
 
-1. A página de informações do produto (`/system/console/productinfo`) exibe a string da versão atualizada `Adobe Experience Manager (6.5.18.0)` em [!UICONTROL Produtos instalados]. <!-- UPDATE FOR EACH NEW RELEASE -->
+1. A página de informações do produto (`/system/console/productinfo`) exibe a string da versão atualizada `Adobe Experience Manager (6.5.19.0)` em [!UICONTROL Produtos instalados]. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. Todos os pacotes OSGi são **[!UICONTROL ATIVO]** ou **[!UICONTROL FRAGMENTO]** no console OSGi (Use o console da Web: `/system/console/bundles`).
 
-1. O pacote OSGi `org.apache.jackrabbit.oak-core` O é versão 1.22.16 ou posterior (Use o Console da Web: `/system/console/bundles`). <!-- NPR-41010 for 6.5.18.0 --> <!-- OAK Oak oak VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
+1. O pacote OSGi `org.apache.jackrabbit.oak-core` O é versão 1.22.17 ou posterior (Use o Console da Web: `/system/console/bundles`). <!-- NPR-41292 for 6.5.19.0 --> <!-- OAK Oak oak VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
 
 ### Instalar o Service Pack do [!DNL Experience Manager] Forms{#install-aem-forms-add-on-package}
 
@@ -291,7 +292,7 @@ Para obter instruções sobre como instalar o pacote de serviços no Experience 
 
 >[!NOTE]
 >
->O recurso Adaptive Forms, disponível em [QuickStart do AEM 6.5](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=pt-BR)O, foi projetado apenas para fins de exploração e avaliação. Para o uso em produção, é essencial obter uma licença válida para o AEM Forms, pois a funcionalidade Adaptive Forms requer uma licença adequada.
+>O recurso de formulários adaptáveis, disponível no [Início rápido do AEM 6.5](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=pt-BR), foi projetado apenas para fins de exploração e avaliação. Para usá-lo na produção, é essencial obter uma licença válida para o AEM Forms, pois a funcionalidade de formulários adaptáveis requer uma licença adequada.
 
 ### Instalar pacote de índice do GraphQL para fragmentos de conteúdo do Experience Manager{#install-aem-graphql-index-add-on-package}
 
@@ -307,7 +308,7 @@ A falha na instalação deste pacote pode resultar em consultas lentas ou com fa
 
 ### UberJar{#uber-jar}
 
-O UberJar para [!DNL Experience Manager] O 6.5.18.0 está disponível na [Repositório central Maven](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.18/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+O UberJar para [!DNL Experience Manager] O 6.5.19.0 está disponível na [Repositório central Maven](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.19/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 Para usar o UberJar em um projeto Maven, consulte [como usar o UberJar](/help/sites-developing/ht-projects-maven.md) e inclua a seguinte dependência no POM do projeto: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
@@ -315,7 +316,7 @@ Para usar o UberJar em um projeto Maven, consulte [como usar o UberJar](/help/si
 <dependency>
      <groupId>com.adobe.aem</groupId>
      <artifactId>uber-jar</artifactId>
-     <version>6.5.18</version>
+     <version>6.5.19</version>
      <scope>provided</scope>
 </dependency>
 ```
@@ -330,25 +331,22 @@ Consulte [Recursos obsoletos e removidos](/help/release-notes/deprecated-removed
 
 ## Problemas conhecidos{#known-issues}
 
-<!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST.
- -->
-<!-- REMOVED AS PER CQDOC-20022, JANUARY 23, 2023 * If you install [!DNL Experience Manager] 6.5 Service Pack 10 or a previous service pack on [!DNL Experience Manager] 6.5, the runtime copy of your assets custom workflow model (created in `/var/workflow/models/dam`) is deleted.
-To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
-`<designModelPath>/jcr:content.generate.json`. -->
+<!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST.-->
 
-* **A publicação de páginas não funciona no Editor de páginas após a atualização para o Service Pack 18 (6.5.18.0)**
+<!-- * **Page publishing not working in Page Editor after upgrading to Service Pack 18 (6.5.18.0)** -->
 
-  <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> Depois de atualizar uma instância de AEM 6.5.0.0—6.5.17.0 para AEM 6.5.19.0, ao clicar em **Publicar página** no Editor de páginas, você é redirecionado para um URL que não existe.
+<!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0 -->
+<!-- After you upgrade an instance of AEM 6.5.0.0&mdash;6.5.17.0 to AEM 6.5.19.0, when you click **Publish Page** inside the Page Editor, you are redirected to a URL that does not exist.
 
-  Para contornar esse problema, siga um destes procedimentos:
+  To work around this issue, do one of the following:
 
-   * Remova a seguinte propriedade &quot;path&quot;.
+  * Remove the following "path" property.
 
-     `/libs/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/publish/granite:data`
+       `/libs/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/publish/granite:data`
 
-   * Cole o URL correto diretamente no navegador.
+  * Paste the correct URL directly into the browser.
 
-     `http://localhost:4504/editor.html/libs/wcm/core/content/sites/publishpagewizard.html?item=/content/we-retail/language-masters/en/about-us.html`
+       `http://localhost:4504/editor.html/libs/wcm/core/content/sites/publishpagewizard.html?item=/content/we-retail/language-masters/en/about-us.html` -->
 
 
 
@@ -458,6 +456,24 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 * Após instalar o instalador completo do AEM Service Pack 6.5.19.0, a implantação do EAR falha no JEE usando o JBoss® Turnkey.
 Para resolver o problema, localize o `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` arquivo e atualização `Adobe_Adobe_JAVA_HOME` para `Adobe_JAVA_HOME` para todas as ocorrências antes de executar o gerenciador de configurações. (CQDOC-20803)
 
+#### Instalar o fragmento do servlet (AEM Service Pack 6.5.14.0 ou anterior)
+
+* Se você estiver atualizando para o AEM Service Pack 6.5.15.0 ou qualquer versão superior e sua instância AEM estiver operando no Tomcat 8.5.88, é obrigatório instalar o fragmento de servlet *antes* você continua com a instalação do Service Pack 6.5.15.0 ou de qualquer versão posterior.
+* É obrigatório instalar o fragmento de servlet para todos os servidores de aplicações, exceto aqueles executados no JBoss® EAP 7.4.0.
+
+**Para instalar o fragmento de servlet:**
+
+1. Baixe o fragmento do servlet de [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar).
+1. Inicie o servidor de aplicativos.
+1. Aguarde os registros estabilizarem e verifique o estado do pacote.
+1. Abra os Pacotes de console da Web. O URL padrão é `http://[Server]:[Port]/system/console/bundles`.
+1. Selecionar **[!UICONTROL Instalar]** ou **[!UICONTROL Atualizar]**.
+1. Selecionar o fragmento baixado
+   `org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar`
+1. Selecionar **[!UICONTROL Instalar]** ou **[!UICONTROL Atualizar]**.
+1. Aguarde o servidor de aplicativos estabilizar.
+1. Interrompa o servidor de aplicativos.
+
 #### Adaptive Forms
 
 * Quando um Formulário adaptável é publicado, todas as suas dependências, incluindo políticas, são republicadas, mesmo que nenhuma modificação tenha sido feita nelas. (FORMS-10454)
@@ -472,10 +488,10 @@ Para resolver o problema, localize o `<AEM_Forms_Installation_dir>\jboss\bin\sta
 
 ## Pacotes OSGi e pacotes de conteúdo incluídos{#osgi-bundles-and-content-packages-included}
 
-Os seguintes documentos de texto listam os pacotes OSGi e os Pacotes de conteúdo incluídos em [!DNL Experience Manager] 6.5.18.0 <!-- UPDATE FOR EACH NEW RELEASE -->
+Os seguintes documentos de texto listam os pacotes OSGi e os Pacotes de conteúdo incluídos em [!DNL Experience Manager] 6.5.19.0 <!-- UPDATE FOR EACH NEW RELEASE -->
 
-* [Lista de pacotes OSGi incluídos no Experience Manager 6.5.18.0](/help/release-notes/assets/65180_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [Lista de pacotes de conteúdo incluídos no Experience Manager 6.5.18.0](/help/release-notes/assets/65180_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Lista de pacotes OSGi incluídos no Experience Manager 6.5.19.0](/help/release-notes/assets/65190_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Lista de pacotes de conteúdo incluídos no Experience Manager 6.5.19.0](/help/release-notes/assets/65190_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Sites restritos{#restricted-sites}
 

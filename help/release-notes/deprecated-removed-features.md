@@ -2,9 +2,9 @@
 title: Recursos obsoletos e removidos na versão Adobe Experience Manager 6.5.
 description: Notas de versão específicas para recursos obsoletos e removidos do Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: bbd18486a77d7b46454aacff23147b38860bd895
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1741'
 ht-degree: 12%
 
 ---
@@ -31,6 +31,7 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
 
 | Área | Destaque | Substituição | Versão (SP) |
 |---|---|---|---|
+| Sites | A variável **Configuração de sondagem gerenciada por Adobe AEM** serviço: `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | A variável **Importador de Sling de relatório do Adobe AEM Analytics** serviço. Consulte Conectar ao Adobe Analytics e Criar Frameworks - [Configuração do intervalo de importação](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
 | Screens | AtiveMQ no AEM. O AtiveMQ foi usado para comunicação entre duas instâncias de publicação do AEM. | A Adobe recomenda que os clientes usem o balanceador de carga. |  |
 | [!DNL Sites] | Propriedades dos Fragmentos de experiência para **Status da rede social**. |   | 6.5.11.0 |
 | [!DNL Sites] | Modelos de fragmentos de conteúdo, para criar fragmentos de conteúdo simples. | [Fragmentos de conteúdo estruturado com base em modelo](/help/assets/content-fragments/content-fragments-models.md) agora. | 6.5.11.0 |

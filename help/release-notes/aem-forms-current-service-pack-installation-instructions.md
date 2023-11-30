@@ -2,7 +2,7 @@
 title: Instruções de instalação de patch do AEM Forms para o AEM Forms
 description: Instruções de instalação do pacote de serviços do AEM Forms para ambientes OSGi e JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 41ef1b05e4082bb50b93ff6511542ed56a77497c
+source-git-commit: 74b4346c77a884878fb8409a773ef7651fb6348c
 workflow-type: tm+mt
 source-wordcount: '1771'
 ht-degree: 10%
@@ -35,7 +35,7 @@ O Adobe Experience Manager (AEM) Forms Service Pack inclui recursos novos e atua
 >
 > * O Adobe lança um instalador completo a cada sexto service pack. O AEM 6.5 Forms Service Pack 18 (6.5.18.0) é o instalador completo mais recente do JEE. O instalador completo oferece suporte a novas plataformas, enquanto o instalador regular de pacotes de serviços inclui novos recursos, correção de erros e melhorias gerais. Se você estiver executando uma nova instalação ou planejando usar o software mais recente para o seu Forms AEM 6.5 no ambiente JEE, o Adobe recomenda usar o instalador completo do 6.5.18.0 Forms no JEE, lançado em 31 de agosto de 2023, em vez do instalador do 6.5 Forms AEM Forms, lançado em 08 de abril de 2019, ou o Instalador do AEM, lançado em 03 de março de 2022, com o AEM 6.5.18.18.12. Depois de usar o instalador completo, instale o pacote de serviços mais recente.
 > 
-> * O recurso do AEM Forms, como o Adaptive Forms, disponível em [QuickStart do AEM 6.5](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=pt-BR), destinam-se apenas a fins de exploração e avaliação. Para uso em produção, é essencial obter uma licença válida para o AEM Forms.
+> * O recurso do AEM Forms, como o Adaptive Forms, disponível em [QuickStart do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=pt-BR), destinam-se apenas a fins de exploração e avaliação. Para uso em produção, é essencial obter uma licença válida para o AEM Forms.
 
 
 
