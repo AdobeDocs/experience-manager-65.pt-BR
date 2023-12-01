@@ -5,7 +5,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '4725'
 ht-degree: 0%
@@ -257,7 +257,7 @@ Um documento de registro (DoR) é uma versão de PDF nivelada de um formulário 
    * **Esquema XSD**: use o modelo XFA associado que usa o mesmo esquema XML usado pelo formulário adaptável.
    * **Nenhum**: Use o DoR gerado automaticamente.
 
-* Configure o cabeçalho, o rodapé, as imagens, a cor, a fonte e assim por diante, diretamente da guia Documento de registro do editor de formulário adaptável.
+* Configure cabeçalho, rodapé, imagens, cor, fonte e assim por diante, diretamente da guia Documento de registro do editor de formulário adaptável.
 * Uso `DoRService` para gerar o DoR de forma programática.
 * Excluir campos ocultos do DoR.
 * Uso `afAcceptLang` parâmetro de solicitação para exibir o DoR em outro local.

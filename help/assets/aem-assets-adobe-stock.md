@@ -6,9 +6,9 @@ feature: Search, Adobe Stock
 role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '2481'
+source-wordcount: '2483'
 ht-degree: 7%
 
 ---
@@ -207,7 +207,7 @@ Para configurar a conta IMS:
 
 Para configurar o [!DNL Adobe Stock] serviços na nuvem:
 
-1. No [!DNL Experience Manager] interface do usuário, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
+1. No [!DNL Experience Manager] interface do usuário, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Stock]**.
 
 1. No [!DNL Adobe Stock Configurations] clique em **[!UICONTROL Criar]**.
 
@@ -264,7 +264,7 @@ Você pode criar um grupo de usuários ou atribuir permissões a um grupo de usu
 
    ![permissões de usuário](assets/aem-stock-user-permissions.png)
 
-1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**. Selecione o [!DNL Adobe Stock] configuração da nuvem e clique em **[!UICONTROL Propriedades]**.
+1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Stock]**. Selecione o [!DNL Adobe Stock] configuração da nuvem e clique em **[!UICONTROL Propriedades]**.
 
 1. Adicione o grupo de usuários recém-criado à [!DNL Adobe Stock] configuração. Clique em **[!UICONTROL Salvar e fechar]**.
 
@@ -323,7 +323,7 @@ A tabela a seguir explica como as permissões do usuário funcionam ao acessar o
 
 Com esse recurso, as organizações podem permitir que seus usuários trabalhem usando [!DNL Adobe Stock] ativos no [!DNL Experience Manager Assets]. De dentro do [!DNL Experience Manager] usuário, os usuários podem pesquisar [!DNL Adobe Stock] ativos e licenciar os ativos necessários.
 
-Uma vez [!DNL Adobe Stock] o ativo é licenciado no [!DNL Experience Manager], ele pode ser usado e gerenciado como um ativo comum. Entrada [!DNL Experience Manager], os usuários podem pesquisar e visualizar os ativos, copiar e publicar os ativos, compartilhar os ativos no [!DNL Brand Portal]; acesse e use os ativos via [!DNL Experience Manager] aplicativo de desktop; e assim por diante.
+Uma vez [!DNL Adobe Stock] o ativo é licenciado no [!DNL Experience Manager], ele pode ser usado e gerenciado como um ativo comum. Entrada [!DNL Experience Manager], os usuários podem pesquisar e visualizar os ativos, copiar e publicar os ativos, compartilhar os ativos no [!DNL Brand Portal]; acesse e use os ativos por meio de [!DNL Experience Manager] aplicativo de desktop e assim por diante.
 
 ![Pesquisar por [!DNL Adobe Stock] ativos e filtrar os resultados do seu [!DNL Adobe Experience Manager] espaço de trabalho](assets/adobe-stock-search-results-workspace.png)
 
@@ -390,7 +390,6 @@ Os usuários podem ver as propriedades de ativos licenciados e não licenciados.
 >* [Tutorial em vídeo sobre como usar o [!DNL Adobe Stock] ativos com [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
 >* [[!DNL Adobe Stock] ajuda do plano empresarial](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
 >* [[!DNL Adobe Stock] Perguntas frequentes](https://helpx.adobe.com/stock/faq.html)
-
 
 
 <!--old content

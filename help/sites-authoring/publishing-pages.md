@@ -2,9 +2,9 @@
 title: Publicação de páginas de conteúdo
 description: Saiba como publicar páginas de conteúdo no Adobe Experience Manager 6.5.
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1660'
 ht-degree: 70%
 
 ---
@@ -60,7 +60,7 @@ Se você estiver editando uma página, ela poderá ser publicada diretamente do 
    * A página será publicada diretamente se não existirem referências a serem publicadas.
    * Caso a página tenha referências que precisam ser publicadas, elas serão listadas no **Assistente de publicação,** onde é possível:
 
-      * Especifique qual dos ativos/tags, etc., você deseja publicar junto com a página. Em seguida, use **Publish** para concluir o processo.
+      * Especifique quais dos ativos ou tags você deseja publicar junto com a página e, em seguida, use **Publish** para concluir o processo.
 
       * Usar a opção **Cancelar** para suspender a ação.
 

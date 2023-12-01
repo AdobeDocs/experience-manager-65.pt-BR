@@ -4,7 +4,7 @@ description: Entenda como o editor de Fragmento de conteúdo usa a sintaxe de Ma
 feature: Content Fragments
 role: User
 exl-id: e4340828-fe16-4edf-94c9-b0b145740e74
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 88%
@@ -31,7 +31,7 @@ Você pode definir:
 
 ## Notação de cabeçalho {#heading-notation}
 
-Para criar um cabeçalho, coloque uma hashtag (#) na frente dele. Uma hashtag (#) é usada para a tag H1, duas hashtags (##) para a tag H2 e assim por diante. Você pode usar até 6 hashtags. Por exemplo:
+Para criar um cabeçalho, coloque uma hashtag (#) na frente dele. Uma hashtag (#) é usada para uma H1, duas hashtags (##) para uma H2 e assim por diante. Você pode usar até 6 hashtags. Por exemplo:
 
     `## This is an H2`
 

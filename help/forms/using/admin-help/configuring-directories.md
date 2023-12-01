@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1f15f028-aa81-478e-97eb-f83a4dc0418c
 exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '3226'
 ht-degree: 0%
@@ -130,7 +130,7 @@ Embora o DN de base seja uma configuração obrigatória no console de administr
 
 **ID de login:** (Obrigatório) Atributo de esquema para a ID de logon do usuário
 
-**Sobrenome** (Obrigatório) Atributo de esquema para o sobrenome do usuário
+**Sobrenome** (Obrigatório) Atributo de esquema do sobrenome do usuário
 
 **Nome:** (Obrigatório) Atributo de esquema para o nome do usuário
 
@@ -188,7 +188,7 @@ Embora o DN de base seja uma configuração obrigatória no console de administr
 
 **Identificador exclusivo do membro:** Identificador exclusivo de um usuário ou grupo que é membro do grupo selecionado. Esse valor depende do servidor de diretório. O valor é objectSID para AD2003, nsuniqueID para Sun One e guid para eDirectory.
 
-Se o DN do Membro for especificado com um atributo não DN, o Gerenciamento de Usuários utilizará o Identificador Exclusivo do Membro para consultar o LDAP a fim de coletar o DN do usuário, pois ele corresponde a um valor de identificador exclusivo.
+Se o DN de Membro for especificado com um atributo não DN, o Gerenciamento de Usuários utilizará o Identificador Exclusivo de Membro para consultar o LDAP e coletar o DN do usuário, pois ele corresponde a um valor de identificador exclusivo.
 
 Se o DN for especificado como um identificador exclusivo, não será necessário configurar o Identificador Exclusivo do Membro.
 

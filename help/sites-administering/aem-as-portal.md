@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '6087'
 ht-degree: 0%
@@ -106,7 +106,7 @@ O portlet pode ser configurado com as seguintes preferências:
  <tbody>
   <tr>
    <td>startPath</td>
-   <td><p>Esse é o caminho inicial do portlet: ele define o conteúdo que é exibido inicialmente.</p> <p><strong>Importante</strong>: se o portlet estiver configurado para se conectar às instâncias de autor e publicação do AEM que estejam em execução em um caminho de contexto diferente de<strong> /</strong>, é necessário ativar a força <strong>CQUrlInfo</strong> na configuração do Gerenciador de biblioteca HTML dessas instâncias AEM (por exemplo, através do Felix Webconsole) ou a edição não funcionará e a caixa de diálogo de preferências não será exibida.</p> </td>
+   <td><p>Esse é o caminho inicial do portlet: ele define o conteúdo que é exibido inicialmente.</p> <p><strong>Importante</strong>: se o portlet estiver configurado para se conectar às instâncias de autor e publicação do AEM que estejam em execução em um caminho de contexto diferente do<strong> /</strong>, é necessário ativar a força <strong>CQUrlInfo</strong> na configuração do Gerenciador de biblioteca HTML dessas instâncias AEM (por exemplo, através do Felix Webconsole) ou a edição não funcionará e a caixa de diálogo de preferências não será exibida.</p> </td>
   </tr>
   <tr>
    <td>htmlSelector</td>
@@ -501,7 +501,7 @@ No HTML, é possível usar os seguintes espaços reservados, que são substituí
 
 | String de espaço reservado | Descrição |
 |---|---|
-| {name} | Nome do botão, por exemplo, ** autor, voltar, atualizar** e assim por diante. |
+| {name} | O nome do botão, por exemplo,**autor, voltar, atualizar** e assim por diante. |
 | {id} | ID CSS do botão. |
 | {url} | URL do destino do botão. |
 | {text} | Etiqueta do botão. |
@@ -762,7 +762,7 @@ Para configurar o portlet:
 
    >[!NOTE]
    >
-   >Se o portlet estiver configurado para se conectar às instâncias de autor e publicação do AEM que estiverem em execução em um caminho de contexto diferente de** /**, será necessário habilitar a opção force **CQUrlInfo** na configuração do Gerenciador de biblioteca HTML dessas instâncias AEM (por exemplo, através do Felix Webconsole) ou a edição não funcionará e a caixa de diálogo de preferências não será exibida.
+   >Se o portlet estiver configurado para se conectar às instâncias de autor e publicação do AEM que estão sendo executadas em um caminho de contexto diferente do **/**, é necessário ativar a força **CQUrlInfo** na configuração do Gerenciador de biblioteca HTML dessas instâncias AEM (por exemplo, através do Felix Webconsole) ou a edição não funcionará e a caixa de diálogo de preferências não será exibida.
 
 1. Salve as alterações de configuração no servidor de aplicativos.
 

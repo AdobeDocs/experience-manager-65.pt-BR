@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '4143'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Para renderizar um formulário como HTML, o design do formulário deve ser salvo
 
 ## páginas HTML {#html-pages}
 
-Quando um design de formulário é renderizado como um formulário HTML, cada subformulário de segundo nível é renderizado como uma página de HTML (painel). É possível exibir a hierarquia de um subformulário no Designer. Os subformulários secundários que pertencem ao subformulário raiz (o nome padrão de um subformulário raiz é form1) são os subformulários do painel. O exemplo a seguir mostra os subformulários de um design de formulário.
+Quando um design de formulário é renderizado como um formulário HTML, cada subformulário de segundo nível é renderizado como uma página de HTML (painel). Você pode exibir a hierarquia de um subformulário no Designer. Os subformulários secundários que pertencem ao subformulário raiz (o nome padrão de um subformulário raiz é form1) são os subformulários do painel. O exemplo a seguir mostra os subformulários de um design de formulário.
 
 ```java
      form1
@@ -83,9 +83,9 @@ Você deve mover-se explicitamente de painel a painel usando o `xfa.host.pageUp`
 
 Um autor de formulário especifica se um script é executado no servidor ou no cliente. O serviço Forms cria um ambiente de processamento de eventos distribuído para a execução de inteligência de formulários que pode ser distribuído entre o cliente e o servidor usando o `runAt` atributo. Para obter informações sobre esse atributo ou a criação de scripts em designs de formulário, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_pt)
 
-O serviço Forms pode executar scripts enquanto o formulário está sendo renderizado. Como resultado, você pode preencher previamente um formulário com dados se conectando a um banco de dados ou a serviços da Web que podem não estar disponíveis no cliente. Também é possível definir as funções de um botão `Click` evento a ser executado no servidor para que o cliente arredonde os dados de viagem para o servidor. Isso permite que o cliente execute scripts que podem exigir recursos de servidor, como um banco de dados empresarial, enquanto um usuário interage com um formulário. Para formulários HTML, os scripts formcalc podem ser executados somente no servidor. Como resultado, você deve marcar esses scripts para serem executados em `server` ou `both`.
+O serviço Forms pode executar scripts enquanto o formulário está sendo renderizado. Como resultado, você pode preencher previamente um formulário com dados se conectando a um banco de dados ou a serviços da Web que podem não estar disponíveis no cliente. Também é possível definir as configurações de um botão `Click` evento a ser executado no servidor para que o cliente arredonde os dados de viagem para o servidor. Isso permite que o cliente execute scripts que podem exigir recursos de servidor, como um banco de dados empresarial, enquanto um usuário interage com um formulário. Para formulários HTML, os scripts formcalc podem ser executados somente no servidor. Como resultado, você deve marcar esses scripts para serem executados em `server` ou `both`.
 
-É possível criar formulários que se movem entre páginas (painéis) chamando `xfa.host.pageUp` e `xfa.host.pageDown` métodos. Esse script é colocado no `Click` e o evento `runAt` atributo está definido como `Both`. O motivo escolhido `Both` é para que o Adobe Reader ou o Acrobat (para formulários renderizados como PDF) possam alterar páginas sem acessar o servidor e o HTML forms possa alterar páginas ao arredondar os dados para o servidor. Ou seja, um formulário é enviado para o serviço Forms e um formulário é renderizado como HTML com a nova página exibida.
+É possível criar formulários que se movem entre páginas (painéis) chamando `xfa.host.pageUp` e `xfa.host.pageDown` métodos. Esse script é colocado em um `Click` e o evento `runAt` atributo está definido como `Both`. O motivo escolhido `Both` é para que o Adobe Reader ou o Acrobat (para formulários renderizados como PDF) possam alterar páginas sem acessar o servidor e o HTML forms possa alterar páginas ao arredondar os dados para o servidor. Ou seja, um formulário é enviado para o serviço Forms e um formulário é renderizado como HTML com a nova página exibida.
 
 É recomendável não atribuir às variáveis de script e aos campos de formulário os mesmos nomes, como item. Alguns navegadores da Web, como o Internet Explorer, podem não inicializar uma variável com o mesmo nome de um campo de formulário que resulta na ocorrência de um erro de script. É uma boa prática fornecer nomes diferentes para campos de formulário e variáveis de script.
 
@@ -156,9 +156,9 @@ Um navegador da Web compatível apenas com o HTML 4.0 não pode oferecer suporte
 
 ## Manutenção das alterações na apresentação {#maintaining-presentation-changes}
 
-À medida que você se move entre páginas HTML (painéis), somente o estado dos dados é mantido. Configurações como cor de fundo ou configurações de campo obrigatório não são mantidas (se forem diferentes das configurações iniciais). Para manter o estado de apresentação, você deve criar campos (geralmente ocultos) que representem o estado de apresentação dos campos. Se você adicionar um script a um campo de `Calculate` caso altere a apresentação com base em valores de campo ocultos, você poderá preservar o estado de apresentação conforme avança e volta entre páginas HTML (painéis).
+À medida que você se move entre páginas HTML (painéis), somente o estado dos dados é mantido. Configurações como cor de fundo ou configurações de campo obrigatório não são mantidas (se forem diferentes das configurações iniciais). Para manter o estado de apresentação, você deve criar campos (geralmente ocultos) que representem o estado de apresentação dos campos. Se você adicionar um script a um campo do `Calculate` caso altere a apresentação com base em valores de campo ocultos, você poderá preservar o estado de apresentação conforme avança e volta entre páginas HTML (painéis).
 
-O script a seguir mantém o `fillColor` de um campo com base no valor de `hiddenField`. Suponha que este script esteja em um campo `Calculate` evento.
+O script a seguir mantém o `fillColor` de um campo com base no valor de `hiddenField`. Suponha que esse script esteja em um campo `Calculate` evento.
 
 ```java
      If (hiddenField.rawValue == 1)
@@ -302,7 +302,7 @@ Renderize um formulário HTML usando a API do Forms (Java):
 
 1. Gravar o fluxo de dados do formulário no navegador Web cliente
 
-   * Criar um `com.adobe.idp.Document` ao invocar o `FormsResult` object&#39;s `getOutputContent` método.
+   * Criar um `com.adobe.idp.Document` ao invocar o `FormsResult` do objeto `getOutputContent` método.
    * Obter o tipo de conteúdo do `com.adobe.idp.Document` ao invocar seu `getContentType` método.
    * Defina o `javax.servlet.http.HttpServletResponse` tipo de conteúdo do objeto chamando seu `setContentType` e transmitindo o tipo de conteúdo do `com.adobe.idp.Document` objeto.
    * Criar um `javax.servlet.ServletOutputStream` objeto usado para gravar o fluxo de dados de formulário no navegador da web cliente, chamando o `javax.servlet.http.HttpServletResponse` do objeto `getOutputStream` método.

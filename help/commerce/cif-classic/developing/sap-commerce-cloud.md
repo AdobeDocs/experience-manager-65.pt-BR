@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '2287'
+source-wordcount: '2288'
 ht-degree: 0%
 
 ---
@@ -405,7 +405,7 @@ public class AxisFilter implements VariantFilter {
 
 * O carrinho de compras é de propriedade da `CommerceSession:`
 
-   * A variável `CommerceSession` executa adicionar/remover/etc.
+   * A variável `CommerceSession` executa adicionar ou remover, e assim por diante.
    * A variável `CommerceSession` também realiza os vários cálculos no carrinho. &quot;
 
 * Embora não esteja diretamente relacionado ao carrinho, a variável `CommerceSession` também deve fornecer informações sobre preços de catálogo (já que possui preços)
