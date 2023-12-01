@@ -3,9 +3,9 @@ title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 8d06457241919095fd9802f69df426a1cc6851da
+source-git-commit: f8f82ad5805095f331432471b614225f761e645c
 workflow-type: tm+mt
-source-wordcount: '3675'
+source-wordcount: '3530'
 ht-degree: 3%
 
 ---
@@ -38,23 +38,12 @@ ht-degree: 3%
 
 * _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
+**Principais recursos e melhorias**
+
 Alguns dos principais recursos e aprimoramentos desta versão incluem:
 
-**Principais recursos**
-
-* Assets, Dynamic Media - [Suporte a faixas de várias legendas e áudio para vídeos no Dynamic Media](/help/assets/video.md#about-msma)—Agora é possível adicionar facilmente várias legendas e faixas de áudio a um vídeo principal. Esse recurso significa que os vídeos estão acessíveis em um público-alvo global. Você pode personalizar um único vídeo principal publicado para um público-alvo global em vários idiomas e seguir as diretrizes de acessibilidade para diferentes regiões geográficas. Os autores também podem gerenciar as legendas e faixas de áudio em uma única guia na interface do usuário do.
-
-* Ativos - Nos resultados da Pesquisa, agora é possível navegar até o local da pasta que contém um ativo para permitir que você execute várias tarefas de gerenciamento de ativos. (ASSETS-23182)
-
-**Principais aprimoramentos**
-
-* O Seletor de polaris de sites em fragmentos de conteúdo melhorou o desempenho. (SITES-14092)
-
 * Ativação do usuário do Editor de páginas do Sites/Componente de imagem para fazer referência a ativos do Cloud Service remoto de Ativos. (SITES-13448, SITES-13433)
-
-* Para localizar rapidamente um projeto na exibição em Lista, onde você pode ter muitos projetos em seu sistema, o Adobe agora é compatível com a classificação do lado do servidor. Os nós de projeto são classificados no backend com base na coluna selecionada pelo usuário antes de renderizá-los na interface. (NPR-41027)
-
-* O AEM 6.5.19.0 é compatível com MongoDB 5.0 para 6.0.
+* O AEM agora é compatível com a classificação do lado do servidor para agilizar a navegação do projeto na exibição em lista. Os nós de projeto são classificados com base na coluna selecionada pelo usuário antes de aparecer na interface.
 
 **Recurso obsoleto**
 
@@ -292,7 +281,7 @@ Para obter instruções sobre como instalar o pacote de serviços no Experience 
 
 >[!NOTE]
 >
->O recurso de formulários adaptáveis, disponível no [Início rápido do AEM 6.5](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=pt-BR), foi projetado apenas para fins de exploração e avaliação. Para usá-lo na produção, é essencial obter uma licença válida para o AEM Forms, pois a funcionalidade de formulários adaptáveis requer uma licença adequada.
+>O recurso de formulários adaptáveis, disponível no [Início rápido do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=pt-BR), foi projetado apenas para fins de exploração e avaliação. Para usá-lo na produção, é essencial obter uma licença válida para o AEM Forms, pois a funcionalidade de formulários adaptáveis requer uma licença adequada.
 
 ### Instalar pacote de índice do GraphQL para fragmentos de conteúdo do Experience Manager{#install-aem-graphql-index-add-on-package}
 
@@ -458,7 +447,7 @@ Para resolver o problema, localize o `<AEM_Forms_Installation_dir>\jboss\bin\sta
 
 #### Instalar o fragmento do servlet (AEM Service Pack 6.5.14.0 ou anterior)
 
-* Se você estiver atualizando para o AEM Service Pack 6.5.15.0 ou qualquer versão superior e sua instância AEM estiver operando no Tomcat 8.5.88, é obrigatório instalar o fragmento de servlet *antes* você continua com a instalação do Service Pack 6.5.15.0 ou de qualquer versão posterior.
+* Se você estiver atualizando para o AEM Service Pack 6.5.15.0 ou superior e sua instância AEM estiver operando no Tomcat 8.5.88, é obrigatório instalar o fragmento de servlet *antes* você continua com a instalação do Service Pack 6.5.15.0 ou superior.
 * É obrigatório instalar o fragmento de servlet para todos os servidores de aplicações, exceto aqueles executados no JBoss® EAP 7.4.0.
 
 **Para instalar o fragmento de servlet:**
@@ -484,7 +473,7 @@ Para resolver o problema, localize o `<AEM_Forms_Installation_dir>\jboss\bin\sta
 
 #### Comunicações interativas
 
-* Depois de atualizar para o AEM Service Pack 18, não é possível abrir a Comunicação interativa com imagens grandes em linha no modo de Edição. (FORMS-10578) Para resolver o problema, baixe e instale o [hotfix do 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+* Depois de atualizar para o AEM Service Pack 18, não é possível abrir a Comunicação interativa com imagens grandes em linha no modo de Edição. (FORMS-10578) Para resolver o problema, instale o [hotfix do 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 
 ## Pacotes OSGi e pacotes de conteúdo incluídos{#osgi-bundles-and-content-packages-included}
 
