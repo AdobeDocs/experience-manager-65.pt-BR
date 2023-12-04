@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
 exl-id: 10ea7d2e-6e44-4d5c-a2b2-63c73b18f172
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1563'
-ht-degree: 3%
+source-wordcount: '1482'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +47,7 @@ Para começar a usar o conector, faça o seguinte:
 * Baixe o arquivo de distribuição do pacote de conectores da Distribuição de software.
 * Copiar um válido *license.properties* para o diretório que contém a variável *cq-quickstart-6.4.0.jar* arquivo.
 
-* Clique duas vezes/toque no arquivo .jar para iniciar o AEM ou inicie-o a partir da linha de comando.
+* Clique duas vezes no arquivo .jar para iniciar o AEM ou inicie-o a partir da linha de comando.
 * Instale o pacote de conectores a partir do Gerenciador de pacotes.
 * Configure as opções de conector.
 
@@ -97,12 +97,12 @@ Para instalar o pacote de conteúdo do conector.
 
 1. Abra um tíquete de Suporte Adobe para solicitar o pacote de recursos do conector.
 1. Baixe o pacote quando ele estiver disponível e abra o Gerenciador de pacotes para sua instância do AEM.
-1. Toque/clique **Instalar** na página de descrição do pacote.
-1. No **Instalar pacote** , toque/clique **Instalar**.
+1. Clique em **Instalar** na página de descrição do pacote.
+1. No **Instalar pacote** clique em **Instalar**.
 
    **Nota**: Verifique se você está conectado como administrador.
 
-1. Quando o pacote estiver instalado, toque/clique **Fechar**.
+1. Quando o pacote estiver instalado, clique em **Fechar**.
 
 ## Configuração do conector do SharePoint {#configuring-sharepoint-connector}
 
@@ -118,7 +118,7 @@ Para definir o URL do servidor do SharePoint e as opções avançadas, execute e
 1. Procure por **Conector Day JCR para Microsoft Sharepoint** pacote.
 1. Edite os valores de configuração.
 1. Defina o URL do servidor do SharePoint como o valor de **Espaços de trabalho**.
-1. Toque/clique **Salvar**.
+1. Clique em **Salvar**.
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
 
@@ -204,7 +204,7 @@ O Conector JCR do AEM para Microsoft SharePoint 2010 e Microsoft SharePoint 2013
 
 Ir para: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 
-1. Clique em OSGI -> Configuração
+1. Clique em OSGI > Configuração
 1. Pesquisar &quot;Conector Day JCR para Microsoft Sharepoint&quot;
 1. Clique em &quot;Editar os valores de configuração&quot;
 1. Defina o valor de ‘Sharepoint Connection Fatory’ como ‘com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory’

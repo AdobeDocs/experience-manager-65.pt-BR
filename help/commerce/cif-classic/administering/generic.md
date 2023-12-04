@@ -6,9 +6,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2929'
+source-wordcount: '2907'
 ht-degree: 2%
 
 ---
@@ -107,7 +107,7 @@ Antes de criar produtos, defina uma [scaffold](/help/sites-authoring/scaffolding
 
 1. Especifique:
 
-   * **Armazenar nome**
+   * **Nome do armazenamento**
 
      Os produtos são importados para:
 
@@ -194,7 +194,7 @@ Antes de criar produtos, defina uma [scaffold](/help/sites-authoring/scaffolding
 
    ![console de produtos com referências abertas](/help/sites-administering/assets/chlimage_1-88.png)
 
-1. Clique/toque no tipo de referência (por exemplo, Páginas de produto) para expandir a lista.
+1. Clique no tipo de referência (por exemplo, Páginas de produto) para expandir a lista.
 1. Selecione uma referência específica para poder mostrar as opções:
 
    * Navegar até a página do produto
@@ -430,7 +430,7 @@ Você pode configurar a aparência da caixa de diálogo ao clicar no ponto de ac
 
    ![ícone de configuração](/help/sites-administering/assets/chlimage_1-96.png)
 
-1. Rolar para baixo. Existe uma **ADICIONAR AO CARRINHO** guia.
+1. Role para baixo. Existe uma **ADICIONAR AO CARRINHO** guia.
 
    ![adicionar à guia carrinho](/help/sites-administering/assets/chlimage_1-97.png)
 
@@ -463,13 +463,13 @@ Para gerar um catálogo:
    ![assistente de criação de catálogo](/help/sites-administering/assets/chlimage_1-99.png)
 
 1. Navegue até o Blueprint do catálogo necessário.
-1. Selecione o **Selecionar** e toque/clique no Blueprint do catálogo necessário.
+1. Selecione o **Selecionar** e clique no Blueprint do catálogo necessário.
 1. Selecione **Próximo**.
 
    ![assistente de propriedades do catálogo](/help/sites-administering/assets/chlimage_1-100.png)
 
 1. Digite a **Título** e uma **Nome**.
-1. Selecione o botão **Criar.** O catálogo é criado e uma caixa de diálogo é aberta.
+1. Selecione o **Criar** botão. O catálogo é criado e uma caixa de diálogo é aberta.
 
    ![caixa de diálogo criado no catálogo](/help/sites-administering/assets/chlimage_1-101.png)
 
@@ -524,7 +524,7 @@ Para implantar um catálogo:
 
    ![implantação](/help/sites-administering/do-not-localize/chlimage_1-24.png)
 
-1. No assistente, defina a implantação conforme necessário e toque/clique **Alterações de implantação**.
+1. No assistente, defina a implantação conforme necessário e clique em **Alterações de implantação**.
 1. Uma caixa de diálogo é aberta. Selecionar **Concluído** quando o processo for concluído.
 
 #### Implantação de um catálogo - Interface clássica {#rolling-out-a-catalog-classic-ui}
@@ -549,7 +549,7 @@ Para implantar um catálogo:
 
    ![Ícone Importar blueprints](/help/sites-administering/do-not-localize/chlimage_1-13.png)
 
-1. No assistente, selecione a Origem conforme necessário e toque/clique **Próxima**.
+1. No assistente, selecione a Origem conforme necessário e clique em **Próxima**.
 
    ![assistente de blueprint](/help/sites-administering/assets/chlimage_1-102.png)
 

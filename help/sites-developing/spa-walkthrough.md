@@ -4,10 +4,10 @@ description: Este artigo apresenta os conceitos de um SPA e aborda o uso de um S
 topic-tags: spa
 content-type: reference
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1950'
-ht-degree: 67%
+source-wordcount: '1945'
+ht-degree: 64%
 
 ---
 
@@ -125,7 +125,7 @@ Quando um SPA AEM é criado para usar o Editor de SPA, o autor de conteúdo não
 
    ![Etapa 5](assets/spa-walkthrough-step-5.png)
 
-Outras operações de criação são permitidas, como arrastar e soltar componentes adicionais na página, reorganizar componentes e modificar o layout, assim como acontece em qualquer outro aplicativo do que não seja um SPA.
+Ferramentas de criação adicionais, como arrastar e soltar componentes adicionais na página, reorganizar componentes e modificar o layout, são compatíveis como em qualquer aplicativo não-SPA.
 
 >[!NOTE]
 >

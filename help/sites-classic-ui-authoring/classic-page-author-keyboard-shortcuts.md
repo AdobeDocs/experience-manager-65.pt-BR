@@ -1,17 +1,15 @@
 ---
 title: Atalhos de teclado ao editar páginas
 description: Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplicáveis ao editar páginas, outros para o uso de consoles.
-uuid: a1753e0b-5701-426c-b974-2e8b8d81a30d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 exl-id: 1c761aa7-a72f-46f0-8717-0b6e0d1cff55
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 18%
+source-wordcount: '307'
+ht-degree: 14%
 
 ---
 
@@ -53,12 +51,12 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
   <tr>
    <td> </td>
    <td><strong><code>Shift-Click</code></strong></td>
-   <td>Selecionar parágrafos múltiplos.</td>
+   <td>Selecione vários parágrafos.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-Click</code></strong></td>
-   <td>Selecionar parágrafos múltiplos.</td>
+   <td>Selecione vários parágrafos.</td>
   </tr>
   <tr>
    <td> </td>

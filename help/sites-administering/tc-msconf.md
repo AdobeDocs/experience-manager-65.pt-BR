@@ -4,10 +4,10 @@ description: Saiba como conectar o AEM ao Microsoft Translator pronto para uso p
 feature: Language Copy
 role: Admin
 exl-id: ca575a30-fc3e-4f38-9aa7-dbecbc089f87
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 100%
+source-wordcount: '452'
+ht-degree: 80%
 
 ---
 
@@ -30,9 +30,9 @@ Após criar a configuração, é necessário [ativá-la](#activating-the-transla
 
 O procedimento a seguir cria uma configuração do Microsoft Translator.
 
-1. No [painel de navegação,](/help/sites-authoring/basic-handling.md#first-steps) clique ou toque em **Ferramentas** -> **Serviços em nuvem** -> **Serviços de tradução em nuvem**.
+1. No [painel de navegação,](/help/sites-authoring/basic-handling.md#first-steps) click **Ferramentas** > **Cloud Service** > **Cloud Service de tradução**.
 1. Navegue até o local em que deseja criar a configuração. Normalmente, isso fica na raiz do site ou pode ser uma configuração global padrão.
-1. Toque ou clique no botão **Criar**.
+1. Clique em **Criar** botão.
 1. Defina sua configuração.
    1. Selecione **Microsoft Translator** no menu suspenso.
    1. Digite um título para sua configuração. O título identifica a configuração no console do Cloud Services bem como nas listas suspensas de propriedades da página.
@@ -45,26 +45,26 @@ O procedimento a seguir cria uma configuração do Microsoft Translator.
 
    ![Editar configuração de tradução](assets/edit-translation-config.png)
 
-1. Toque ou clique em **Conectar** para verificar a conexão.
-1. Toque ou clique em **Salvar e fechar**.
+1. Clique em **Conectar** para verificar a conexão.
+1. Clique em **Salvar e fechar**.
 
 ## Atualização da configuração da licença de avaliação do Microsoft Translator {#upgrading-the-microsoft-translator-trial-license-configuration}
 
 As páginas de configuração do Microsoft Translation fornecem um link para o site da Microsoft, onde é possível obter uma assinatura de conta adequada para sistemas de produção.
 
-1. No [painel de navegação,](/help/sites-authoring/basic-handling.md#first-steps) toque ou clique em **Ferramentas** -> **Serviços em nuvem** -> **Serviços de tradução em nuvem**.
-1. Toque ou clique na configuração existente do Microsoft Translator.
-1. Toque ou clique em **Editar**.
-1. Na janela **Editar configuração**, toque ou clique em **Atualizar assinatura**. Uma página web da Microsoft, com mais detalhes sobre o serviço, é aberta.
+1. No [painel de navegação,](/help/sites-authoring/basic-handling.md#first-steps) click **Ferramentas** > **Cloud Service** > **Cloud Service de tradução**.
+1. Clique na configuração existente do Microsoft Translator.
+1. Clique em **Editar**.
+1. No **Editar configuração** clique em **Atualizar Assinatura**. Uma página web da Microsoft, com mais detalhes sobre o serviço, é aberta.
 
 ## Personalizar o mecanismo do Microsoft Translator {#customizing-your-microsoft-translator-engine}
 
 As páginas de configuração do Microsoft Translation fornecem um link para o site da Microsoft, onde é possível personalizar o mecanismo do Microsoft Translator.
 
-1. No [painel de navegação,](/help/sites-authoring/basic-handling.md#first-steps) toque ou clique em **Ferramentas** -> **Serviços em nuvem** -> **Serviços de tradução em nuvem**.
-1. Toque ou clique na configuração existente do Microsoft Translator.
-1. Toque ou clique em **Editar**.
-1. Na janela **Editar configuração**, toque ou clique em **Personalizar tradutor**. Use a página da web da Microsoft que é aberta para personalizar o serviço.
+1. No [painel de navegação,](/help/sites-authoring/basic-handling.md#first-steps) click **Ferramentas** > **Cloud Service** > **Cloud Service de tradução**.
+1. Clique na configuração existente do Microsoft Translator.
+1. Clique em **Editar**.
+1. No **Editar configuração** clique em **Personalizar tradutor**. Use a página da web da Microsoft que é aberta para personalizar o serviço.
 
 ## Ativar as configurações do serviço de tradução {#activating-the-translator-service-configurations}
 

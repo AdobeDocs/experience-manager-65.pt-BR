@@ -5,10 +5,10 @@ contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1835'
-ht-degree: 2%
+source-wordcount: '1764'
+ht-degree: 1%
 
 ---
 
@@ -182,7 +182,7 @@ Para quebrar a posição do link, coloque o cursor em qualquer lugar dentro do t
 
 ![Barra de ferramentas Âncoras](do-not-localize/cq55_rte_anchor.png)
 
-Uma âncora pode ser criada em qualquer lugar dentro do texto posicionando o cursor ou selecionando algum texto. Em seguida, clique no link **Âncora** ícone para abrir o diálogo.
+Uma âncora pode ser criada em qualquer lugar dentro do texto posicionando o cursor ou selecionando algum texto. Em seguida, clique no link **Âncora** ícone para abrir a caixa de diálogo.
 
 Insira o nome da âncora e clique em **OK** para salvar.
 

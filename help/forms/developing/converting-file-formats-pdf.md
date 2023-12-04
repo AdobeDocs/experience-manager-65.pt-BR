@@ -1,19 +1,15 @@
 ---
 title: Conversão entre formatos de arquivo e PDF
-seo-title: Converting Between File Formats and PDF
 description: Use o serviço Generate PDF para converter formatos de arquivo nativos em PDF. O serviço de geração de PDF também converte PDF para outros formatos de arquivo e otimiza o tamanho dos documentos PDF.
-seo-description: Use the Generate PDF service to convert native file formats to PDF. Generate PDF service also converts PDF to other file formats and optimizes the size of PDF documents.
-uuid: f72ad603-c996-4d48-9bfc-bed7bf776af6
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '7847'
+source-wordcount: '7812'
 ht-degree: 0%
 
 ---
@@ -544,7 +540,7 @@ Converta um documento PDF em um arquivo RTF usando a API Generate PDF (serviço 
    * A `BLOB` objeto que representa o arquivo PDF a ser convertido.
    * Uma cadeia de caracteres que contém o nome do caminho do arquivo a ser convertido.
    * A `java.lang.String` objeto que especifica a localização do arquivo.
-   * Um objeto string que especifica o tipo de arquivo de destino para a conversão. Especifique `RTF`.
+   * Um objeto string que especifica o tipo de arquivo de destino para a conversão. Especificar `RTF`.
    * Uma opção `BLOB` objeto que contém configurações a serem aplicadas durante a geração do documento PDF.
    * Um parâmetro de saída do tipo `BLOB` que é preenchido pelo `ExportPDF2` método. A variável `ExportPDF2` O método preenche este objeto com o documento convertido. (Este valor de parâmetro é necessário somente para a invocação do serviço Web).
 
@@ -634,7 +630,7 @@ Esta tabela lista o tipo de informação usada na impressão de formatos de arqu
   <tr>
    <td><p>Instruções adicionais da caixa de diálogo específica do aplicativo </p></td>
    <td><p>Especifica sobreposições e adições às instruções da caixa de diálogo específica do aplicativo. A seção apresenta um exemplo dessas informações. </p><p>O arquivo que contém essas informações é appmon.<i>"[appname]"</i>.adição.<i>"[local]"</i>.xml. Um exemplo é appmon.adding.en_US.xml.</p></td>
-   <td><p>Arquivos desse tipo podem ser criados e modificados usando um aplicativo de edição XML. (Consulte <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Criando ou modificando um arquivo XML de diálogo adicional para um aplicativo nativo</a>.) </p><p><strong>Importante</strong>: Você deve criar instruções adicionais da caixa de diálogo específica do aplicativo para cada aplicativo nativo ao qual o servidor dará suporte. </p></td>
+   <td><p>Arquivos desse tipo podem ser criados e modificados usando um aplicativo de edição XML. (Consulte <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Criando ou modificando um arquivo XML de diálogo adicional para um aplicativo nativo</a>.) </p><p><strong>Importante</strong>: crie instruções adicionais da caixa de diálogo específica do aplicativo para cada aplicativo nativo que seu servidor suportará. </p></td>
   </tr>
  </tbody>
 </table>
@@ -673,7 +669,7 @@ O propósito do serviço Gerar PDF para arquivos XML de script é direcionar um 
 
 As etapas em um arquivo XML de script são executadas em ordem, sem nenhuma oportunidade de ramificação. O único teste condicional compatível é para tempo limite/nova tentativa, o que faz com que um script seja encerrado se uma etapa não for concluída com êxito em um período específico e após um número específico de tentativas.
 
-Além das etapas serem sequenciais, as instruções em uma etapa também são executadas em ordem. Você deve garantir que as etapas e instruções reflitam a ordem em que um usuário executaria essas mesmas etapas.
+Além das etapas serem sequenciais, as instruções em uma etapa também são executadas em ordem. Verifique se as etapas e instruções refletem a ordem em que um usuário executaria essas mesmas etapas.
 
 Cada etapa em um arquivo XML de script identifica o elemento da janela que deve aparecer se as instruções da etapa forem executadas com êxito. Se uma caixa de diálogo inesperada for exibida durante a execução de uma etapa de script, o serviço Gerar PDF pesquisará os arquivos XML da caixa de diálogo, conforme descrito na próxima seção.
 
@@ -796,7 +792,7 @@ Você pode usar expressões regulares em especificações de legenda. O serviço
 
 #### Ordenação dos elementos window e windowList {#ordering-the-window-and-windowlist-elements}
 
-Você deve fazer pedidos `window` e `windowList` elementos da seguinte forma:
+Pedido `window` e `windowList` elementos da seguinte forma:
 
 * Quando vários `window` Os elementos do são exibidos como filhos em uma `windowList` ou `dialog` elemento, ordene esses `window` elementos em ordem decrescente, com os comprimentos das `caption` nomes que indicam a posição na ordem.
 * Quando vários `windowList` os elementos aparecem em uma `window` elemento, ordene esses `windowList` elementos em ordem decrescente, com os comprimentos das `caption` atributos do primeiro `indexes/`elemento que indica a posição na ordem.
@@ -864,7 +860,7 @@ O nome do arquivo XML de diálogo adicional deve usar o formato `appmon.[applica
 >
 Nenhum dos aplicativos genéricos especificados no arquivo de configuração native2pdfconfig.xml tem um arquivo XML primário de diálogo. A seção [Adição ou modificação de suporte para um formato de arquivo nativo](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) descreve essas especificações.
 
-Você deve fazer pedidos `windowList` elementos que aparecem como filhos em uma `window` elemento. (Consulte [Ordenação dos elementos window e windowList](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements).)
+Pedido `windowList` elementos que aparecem como filhos em uma `window` elemento. (Consulte [Ordenação dos elementos window e windowList](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements).)
 
 ### Modificando o arquivo XML da caixa de diálogo geral {#modifying-the-general-dialog-xml-file}
 
@@ -1062,7 +1058,7 @@ Este exemplo especifica como o serviço Gerar PDF deve interagir com o Bloco de 
         </expectedWindow>
     </step>
 
-    <!-- In this step, we acquire the Print dialog and click on the 'Preferences' button and the expected window in this case is the dialog with the caption '"Printing Preferences' -->
+    <!-- In this step, we acquire the Print dialog and click the 'Preferences' button and the expected window in this case is the dialog with the caption '"Printing Preferences' -->
     <step>
         <acquiredWindow>
             <window caption="Print">
@@ -1080,7 +1076,7 @@ Este exemplo especifica como o serviço Gerar PDF deve interagir com o Bloco de 
         </expectedWindow>
     </step>
 
-    <!-- In this step, we acquire the dialog "Printing Preferences' and select the combo box which is the 10th child of window with caption '"Adobe PDF Settings' and select the first index. (Note: All indeces start with 0.) Besides this we uncheck the box which  has the caption '"View Adobe PDF results' and we click on the button OK. The expectation is that 'Printing Preferences' dialog disappears. -->
+    <!-- In this step, we acquire the dialog "Printing Preferences' and select the combo box which is the 10th child of window with caption '"Adobe PDF Settings' and select the first index. (Note: All indeces start with 0.) Besides this we uncheck the box which has the caption '"View Adobe PDF results' and we click the button OK. The expectation is that 'Printing Preferences' dialog disappears. -->
     <step>
         <acquiredWindow>
             <window caption="Printing Preferences">
@@ -1104,7 +1100,7 @@ Este exemplo especifica como o serviço Gerar PDF deve interagir com o Bloco de 
         </expectedWindow>
     </step>
 
-    <!-- In this step, we acquire the 'Print' dialog and click on the Print button. The expectation is that the dialog with caption 'Print' disappears. In this case we use the regular expression '^Print$' for specifying the caption given there could be multiple dialogs with caption that includes the word Print. -->
+    <!-- In this step, we acquire the 'Print' dialog and click the Print button. The expectation is that the dialog with caption 'Print' disappears. In this case we use the regular expression '^Print$' for specifying the caption given there could be multiple dialogs with caption that includes the word Print. -->
     <step>
         <acquiredWindow>
             <window caption="Print">
@@ -1123,7 +1119,7 @@ Este exemplo especifica como o serviço Gerar PDF deve interagir com o Bloco de 
             <window caption="Save PDF File As"/>
         </expectedWindow>
     </step>
-    <!-- Finally in this step, we acquire the dialog with caption "Save PDF File As" and in the Edit widget type the destination path for the output PDF file and click on the Save button. The expectation is that the dialog disappears-->
+    <!-- Finally in this step, we acquire the dialog with caption "Save PDF File As" and in the Edit widget type the destination path for the output PDF file and click the Save button. The expectation is that the dialog disappears-->
     <step>
         <acquiredWindow>
             <window caption="Save PDF File As">

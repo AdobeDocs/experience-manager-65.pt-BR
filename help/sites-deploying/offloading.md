@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2359'
+source-wordcount: '2316'
 ht-degree: 1%
 
 ---
@@ -153,7 +153,7 @@ Use o Console da Web ou um nó sling:OsgiConfig para configurar as seguintes pro
    <td>Nome do descritor de repositório</td>
    <td>leaderElectionRepositoryDescriptor</td>
    <td> </td>
-   <td>&lt;sem valor&gt;</td>
+   <td>&lt;no value&gt;</td>
   </tr>
  </tbody>
 </table>
@@ -229,7 +229,7 @@ Use o Console da Web ou um `sling:OsgiConfig` para configurar as seguintes propr
 
 ## Criação De Agentes De Replicação Para Descarregamento {#creating-replication-agents-for-offloading}
 
-A estrutura de descarregamento usa replicação para transportar recursos entre o autor e o trabalhador. A estrutura de descarga cria agentes de replicação automaticamente quando as instâncias se associam à topologia. Os agentes são criados com valores padrão. Você deve alterar manualmente a senha que os agentes usam para autenticação.
+A estrutura de descarregamento usa replicação para transportar recursos entre o autor e o trabalhador. A estrutura de descarga cria agentes de replicação automaticamente quando as instâncias se associam à topologia. Os agentes são criados com valores padrão. Altere manualmente a senha que os agentes usam para autenticação.
 
 >[!CAUTION]
 >

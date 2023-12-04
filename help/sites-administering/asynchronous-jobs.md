@@ -2,10 +2,10 @@
 title: Trabalhos assíncronos
 description: O Adobe Experience Manager otimiza o desempenho ao concluir de modo assíncrono algumas tarefas que consomem muitos recursos.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 91%
+source-wordcount: '791'
+ht-degree: 84%
 
 ---
 
@@ -21,7 +21,7 @@ Essas operações incluem:
 * Busca de ativos acima do limite definido a partir de uma implantação remota do Experience Manager
 * Implantação de Live Copy
 
-Você pode visualizar o status de trabalhos assíncronos no painel **[!UICONTROL Status de trabalhos assíncronos]** em **Navegação global** -> **Ferramentas** -> **Operações** -> **Trabalhos**.
+Você pode visualizar o status de trabalhos assíncronos na **[!UICONTROL Status do trabalho assíncrono]** painel em **Navegação global** > **Ferramentas** > **Operações** > **Tarefas**.
 
 >[!NOTE]
 >

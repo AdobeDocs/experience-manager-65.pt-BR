@@ -11,10 +11,10 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2567'
-ht-degree: 15%
+source-wordcount: '2306'
+ht-degree: 12%
 
 ---
 
@@ -490,7 +490,7 @@ AEM Você personalizou seu primeiro componente CIF! Baixe o [arquivos de soluç�
 
 ## Desafio extra {#bonus-challenge}
 
-Revise a funcionalidade do **Novo** Selo que já foi implementado no Teaser do produto. Tente adicionar uma caixa de seleção extra para que os autores controlem quando a **Eco Friendly** o selo deve ser exibido. Você deve atualizar a caixa de diálogo do componente em `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
+Revise a funcionalidade do **Novo** Selo que já foi implementado no Teaser do produto. Tente adicionar uma caixa de seleção extra para que os autores controlem quando a **Eco Friendly** o selo deve ser exibido. Atualizar a caixa de diálogo do componente em `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
 
 ![Novo desafio de implementação de medalha](../assets/customize-cif-components/new-badge-implementation-challenge.png)
 

@@ -8,9 +8,9 @@ content-type: reference
 pagetitle: Query Builder API
 tagskeywords: querybuilder
 exl-id: b2288442-d055-4966-8057-8b7b7b6bff28
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2285'
+source-wordcount: '2033'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ A API REST fornece acesso aos mesmos recursos por meio do HTTP, com respostas se
 
 Essas amostras são fornecidas na notação de estilo das propriedades do Java™. Para usá-los com a API Java™, use um Java™ `HashMap` como na amostra de API a seguir.
 
-Para o `QueryBuilder` JSON Servlet, cada exemplo inclui um link para a instalação do CQ local (no local padrão, `http://localhost:4502`). Você deve fazer logon na instância do CQ antes de usar esses links.
+Para o `QueryBuilder` JSON Servlet, cada exemplo inclui um link para a instalação do CQ local (no local padrão, `http://localhost:4502`). Faça logon na instância do CQ antes de usar esses links.
 
 >[!CAUTION]
 >
@@ -289,7 +289,7 @@ property.3_value=bar
 
 Por padrão, o Servlet JSON do QueryBuilder retorna um conjunto padrão de propriedades para cada nó no resultado da pesquisa (por exemplo, caminho, nome e título). Para obter controle sobre quais propriedades são retornadas, você pode executar um dos seguintes procedimentos:
 
-Especifique
+Especificar
 
 ```
 p.hits=full

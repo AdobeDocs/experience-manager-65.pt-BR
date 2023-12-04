@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1772'
-ht-degree: 72%
+source-wordcount: '1745'
+ht-degree: 61%
 
 ---
 
@@ -48,11 +48,11 @@ A variável **Editor de segmentos** O permite modificar facilmente um segmento. 
 
 Usando o navegador de componentes, você pode adicionar contêineres **AND** e **OR** para definir a lógica do segmento e, em seguida, adicionar componentes adicionais para comparar propriedades e valores ou scripts de referência e outros segmentos para definir os critérios de seleção (consulte [Criar um novo segmento](#creating-a-new-segment)) para definir o cenário exato para selecionar o segmento.
 
-Quando a declaração inteira for avaliada como verdadeira, o segmento será resolvido. Se houver vários segmentos aplicáveis, a variável **Aumentar** também é usado. Consulte [Criar um novo segmento](#creating-a-new-segment)[ para obter detalhes sobre o fator de reforço.](/help/sites-administering/campaign-segmentation.md#boost-factor)
+Quando a declaração inteira for avaliada como verdadeira, o segmento será resolvido. Se houver vários segmentos aplicáveis, a variável **Aumentar** também é usado. Consulte [Criar um novo segmento](#creating-a-new-segment) para obter detalhes sobre a [fator de reforço.](/help/sites-administering/campaign-segmentation.md#boost-factor)
 
 >[!CAUTION]
 >
->O editor de segmentos não verifica se há referências circulares. Por exemplo, o segmento A faz referência a outro segmento B, que por sua vez faz referência ao segmento A. Você deve garantir que seus segmentos não contenham referências circulares.
+>O editor de segmentos não verifica se há referências circulares. Por exemplo, o segmento A faz referência a outro segmento B, que por sua vez faz referência ao segmento A. Verifique se seus segmentos não contêm referências circulares.
 
 ### Contêineres {#containers}
 
@@ -62,7 +62,7 @@ Os seguintes contêineres estão disponíveis prontamente e permitem agrupar com
  <tbody>
   <tr>
    <td>Contêiner AND<br /> </td>
-   <td>O operador AND boolean<br /> </td>
+   <td>O operador AND booleano<br /> </td>
   </tr>
   <tr>
    <td>Contêiner OR<br /> </td>
@@ -133,11 +133,11 @@ Para definir seu novo segmento:
 
 1. Depois de [acessar os segmentos](/help/sites-administering/segmentation.md#accessing-segments), [navegue até a pasta](#organizing-segments) onde deseja criar o segmento.
 
-1. clique ou toque no botão Criar e selecione **Criar segmento do ContextHub**.
+1. clique no botão Create e selecione **Criar segmento do ContextHub**.
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. No **Novo segmento do ContextHub**, insira um título para o segmento e um valor de reforço, se necessário, e toque ou clique **Criar**.
+1. No **Novo segmento do ContextHub**, insira um título para o segmento e um valor de reforço, se necessário, e clique em **Criar**.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
@@ -147,7 +147,7 @@ Para definir seu novo segmento:
    * Valor máximo: `1000000`
 
 1. Arraste uma comparação ou referência para o editor de segmentos e ela aparecerá no contêiner AND padrão.
-1. Clique duas vezes em ou toque na opção de configuração da nova referência ou segmento para editar os parâmetros específicos. Neste exemplo, estamos testando para pessoas em San Jose.
+1. Clique duas vezes na opção de configuração da nova referência ou segmento para editar os parâmetros específicos. Neste exemplo, estamos testando para pessoas em San Jose.
 
    ![screen_shot_2012-02-02at103135am](assets/screen_shot_2012-02-02at103135ama.png)
 
@@ -233,7 +233,7 @@ Se você tiver muitos segmentos, eles podem se tornar difíceis de gerenciar com
 
 ### Criar uma nova pasta {#create-folder}
 
-1. Após [acessar os segmentos](#accessing-segments), clique ou toque no botão **Criar** e selecione **Pasta**.
+1. Depois [acesso aos segmentos](#accessing-segments), clique no link **Criar** e selecione **Pasta**.
 
    ![Adicionar pasta](assets/contexthub-create-segment.png)
 
@@ -245,24 +245,24 @@ Se você tiver muitos segmentos, eles podem se tornar difíceis de gerenciar com
 
    ![Criar pasta](assets/contexthub-create-folder.png)
 
-1. Toque ou clique em **Criar**.
+1. Clique em **Criar**.
 
    ![Confirmar pasta](assets/contexthub-confirm-folder.png)
 
 1. A pasta aparecerá na lista de segmentos.
    * A forma como você classifica as colunas afetará onde a nova pasta aparece na lista.
-   * Toque ou clique nos cabeçalhos da coluna para ajustar sua classificação.
+   * Você pode clicar nos cabeçalhos da coluna para ajustar sua classificação.
      ![A nova pasta](assets/contexthub-folder.png)
 
 ### Modificar pastas existentes {#modify-folders}
 
-1. Após [acessar os segmentos](#accessing-segments), clique ou toque na pasta que deseja modificar para selecioná-la.
+1. Depois [acesso aos segmentos](#accessing-segments), clique na pasta que deseja modificar para selecioná-la.
 
    ![Selecionar pasta](assets/contexthub-select-folder.png)
 
-1. Toque ou clique em **Renomear**, na barra de ferramentas, para renomear a pasta.
+1. Clique em **Renomear** na barra de ferramentas para renomear a pasta.
 
-1. Forneça um novo **Título da pasta** e toque ou clique em **Salvar**.
+1. Forneça um novo **Título da pasta** e clique em **Salvar**.
 
    ![Renomear pasta](assets/contexthub-rename-folder.png)
 
@@ -272,25 +272,25 @@ Se você tiver muitos segmentos, eles podem se tornar difíceis de gerenciar com
 
 ### Excluir uma pasta
 
-1. Após [acessar os segmentos](#accessing-segments), clique ou toque na pasta que deseja modificar para selecioná-la.
+1. Depois [acesso aos segmentos](#accessing-segments), clique na pasta que deseja modificar para selecioná-la.
 
    ![Selecionar pasta](assets/contexthub-select-folder.png)
 
-1. Toque ou clique em **Excluir**, na barra de ferramentas, para excluir a pasta.
+1. Clique em **Excluir** na barra de ferramentas para excluir a pasta.
 
 1. Uma caixa de diálogo apresenta uma lista de pastas selecionadas para exclusão.
 
    ![Confirmar exclusão](assets/contexthub-confirm-segment-delete.png)
 
-   * Toque ou clique em **Excluir** para confirmar.
-   * Toque ou clique em **Cancelar** para suspender.
+   * Clique em **Excluir** para confirmar.
+   * Clique em **Cancelar** para suspender.
 
 1. Se qualquer uma das pastas selecionadas contiver subpastas ou segmentos, sua exclusão deverá ser confirmada.
 
    ![Confirmar exclusão de filhos](assets/contexthub-confirm-segment-child-delete.png)
 
-   * Toque ou clique em **Forçar exclusão** para confirmar.
-   * Toque ou clique em **Cancelar** para suspender.
+   * Clique em **Forçar Exclusão** para confirmar.
+   * Clique em **Cancelar** para suspender.
 
 >[!NOTE]
 >

@@ -11,10 +11,10 @@ topic-tags: personalization
 discoiquuid: ef2321a3-cd51-4298-8782-e1a2ca721868
 docset: aem65
 exl-id: f510ca08-977d-45d5-86af-c4b7634b01ba
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1999'
-ht-degree: 88%
+source-wordcount: '1937'
+ht-degree: 75%
 
 ---
 
@@ -54,7 +54,7 @@ As atividades são exibidas com um rótulo descrevendo que tipo de atividade foi
 
 >[!CAUTION]
 >
->Você deve proteger o nó de configurações de atividade **cq:ActivitySettings** na instância de publicação para que ele fique inacessível aos usuários normais. O nó de configurações de atividade só deve estar acessível ao serviço que lida com a sincronização de atividades com o Adobe Target.
+>Proteja o nó de configurações de atividade **cq:ActivitySettings** na instância de publicação para que não possa ser acessado por usuários normais. O nó de configurações de atividade só deve estar acessível ao serviço que lida com a sincronização de atividades com o Adobe Target.
 >
 >Consulte [Pré-requisitos para integração com o Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) para obter informações detalhadas.
 
@@ -64,14 +64,14 @@ Crie uma marca para a qual deseja gerenciar atividades de marketing.
 
 Ao criar uma marca usando o console Atividades, ela também aparece no [console Ofertas](/help/sites-authoring/offerlib.md), onde é possível criar ofertas para as experiências das suas atividades.
 
-1. No console Navegação, clique ou toque em **Personalização**. Clique ou toque em **Atividades**.
+1. No console Navegação, clique em **Personalização**. Clique em **Atividades**.
 
    ![screen_shot_2018-03-21at151821](assets/screen_shot_2018-03-21at151821.png)
 
-1. No console Atividades, clique ou toque em **Criar**, depois em **Criar Marca**.
-1. Selecione o modelo de marca e clique ou toque em **Próximo**.
+1. No console Atividades, clique em **Criar** depois **Criar marca**.
+1. Selecione o modelo da marca e clique em **Próxima**.
 1. Digite um título para a marca conforme desejar que ele seja exibido nos consoles Atividades e Ofertas. Também é possível digitar ou selecionar uma ou mais tags para associar à marca.
-1. Clique ou toque em **Criar**. Sua marca aparecerá no console Atividades.
+1. Clique em **Criar**. Sua marca aparecerá no console Atividades.
 
 ## Adicionar/Editar uma atividade usando o console Atividades {#adding-editing-an-activity-using-the-activities-console}
 
@@ -97,8 +97,8 @@ Adicione uma atividade ou edite uma atividade já existente para concentrar seus
 
 Para adicionar uma atividade:
 
-1. Clique ou toque na marca para a qual você está criando a atividade, clique ou toque **Criar** e depois **Criar atividade**. Se estiver editando, selecione a atividade e clique ou toque em **Editar**.
-1. Forneça as seguintes informações e clique ou toque em **Próximo**:
+1. Clique na marca para a qual você está criando a atividade e clique em **Criar** e depois **Criar atividade**. Se estiver editando, selecione a atividade e clique em **Editar**.
+1. Forneça as seguintes informações e clique em **Próxima**:
 
    * Um nome para a atividade.
    * O mecanismo de direcionamento a ser usado. O ContextHub (AEM) é selecionado por padrão. Se precisar usar o Adobe Target, crie a atividade no editor de conteúdo direcionado.
@@ -106,35 +106,35 @@ Para adicionar uma atividade:
    * (Opcional) O objetivo ou uma descrição da atividade.
    * Selecione o Tipo de atividade.
 
-1. Adicione uma ou mais experiências à atividade. Clique ou toque em **Adicionar experiência**.
+1. Adicione uma ou mais experiências à atividade. Clique em **Adicionar experiência**.
 1. Se estiver usando o direcionamento do AEM ou o direcionamento de experiência do Adobe Target:
 
-   1. Clique ou toque em **Selecionar público-alvo **e selecione o segmento ao qual a sua experiência está direcionado.
-   1. Clique ou toque em **Adicionar experiência**, digite um nome e clique ou toque em **OK**.
+   1. Clique em **Selecionar público-alvo **e selecione o segmento ao qual a sua experiência está direcionado.
+   1. Clique em **Adicionar experiência**, digite um nome e clique em **OK**.
 
-   1. Clique ou toque em **Próximo**.
+   1. Clique em **Avançar**.
 
    Se estiver usando o teste A/B do Adobe Target:
 
-   1. Clique ou toque no lápis na caixa públicos-alvo para selecionar um público-alvo.
-   1. Clique ou toque em **Adicionar experiência**, digite um nome e clique ou toque em **OK**.
+   1. Clique no lápis na caixa Públicos-alvo para selecionar um público-alvo.
+   1. Clique em **Adicionar experiência**, digite um nome e clique em **OK**.
 
    1. Insira a porcentagem de tráfego que exibirá cada experiência.
-   1. Clique ou toque em **Próximo**.
+   1. Clique em **Avançar**.
 
 1. Para especificar quando a atividade será iniciada, use o menu suspenso **Início** para selecionar um dos seguintes valores:
 
    * **Quando ativada**: a atividade começa quando a página que contém o conteúdo direcionado é ativada.
-   * **Data e hora especificadas**: uma hora específica. Ao selecionar essa opção, clique ou toque no ícone de calendário, selecione uma data e especifique a hora para iniciar a atividade.
+   * **Data e hora especificadas**: uma hora específica. Ao selecionar essa opção, clique no ícone de calendário, selecione uma data e especifique a hora para iniciar a atividade.
 
 1. Para especificar quando a atividade se encerra, use o menu suspenso Término para selecionar um dos seguintes valores:
 
    * **Quando desativada**: a atividade termina quando a página que contém o conteúdo direcionado é desativada.
-   * **Data e hora especificadas**: uma hora específica. Ao selecionar essa opção, clique ou toque no ícone de calendário, selecione uma data e especifique a hora para finalizar a atividade.
+   * **Data e hora especificadas**: uma hora específica. Ao selecionar essa opção, clique no ícone de calendário, selecione uma data e especifique a hora para encerrar a atividade.
 
 1. Para especificar uma prioridade para a atividade, use o controle deslizante para selecionar **Baixa**, **Normal** ou **Alta**.
-1. Se estiver usando o Adobe Target como mecanismo de direcionamento, selecione o que deseja medir com essa atividade. Consulte [Configuração da atividade e definição de objetivos](/help/sites-authoring/content-targeting-touch.md) para obter mais informações sobre as métricas de sucesso disponíveis. É necessário selecionar pelo menos uma meta.
-1. Clique ou toque em **Salvar**.
+1. Se estiver usando o Adobe Target como mecanismo de direcionamento, selecione o que deseja medir com essa atividade. Consulte [Configuração da atividade e definição de objetivos](/help/sites-authoring/content-targeting-touch.md) para obter mais informações sobre as métricas de sucesso disponíveis. Selecione pelo menos uma meta.
+1. Clique em **Salvar**.
 
    >[!NOTE]
    >
@@ -150,12 +150,12 @@ Para adicionar uma atividade:
 
 Para publicar ou desfazer a publicação de atividades:
 
-1. Clique ou toque na marca e na área que contém a atividade que deseja publicar ou desfazer a publicação.
-1. Toque ou clique no ícone ao lado da atividade ou atividades que deseja publicar ou desfazer a publicação.
+1. Clique na marca e na área que contém a atividade que você deseja publicar ou desfazer a publicação.
+1. Clique no ícone ao lado da atividade ou atividades que deseja publicar ou desfazer a publicação.
 
    ![screen-shot_2019-03-05at123846](assets/screen-shot_2019-03-05at123846.png)
 
-1. Para publicar, toque ou clique em **Publicar**. Para desfazer a publicação, toque ou clique **Desfazer a publicação**. Sua atividade ou atividades serão publicadas ou desfarão a publicação, e o status é alterado no console Atividades (pode ser necessário atualizar a página).
+1. Para publicar, clique em **Publish**. Para desfazer a publicação, clique em **Cancelar publicação**. Sua atividade ou atividades serão publicadas ou desfarão a publicação, e o status é alterado no console Atividades (pode ser necessário atualizar a página).
 
 ## Atividades em instâncias de Autor e de Publicação {#activities-on-author-and-publish-instances}
 
@@ -170,13 +170,13 @@ Quando uma atividade que usa o mecanismo direcionado do Adobe Target é ativada,
 
 Para visualizar o desempenho da atividade e converter experiências vencedoras:
 
-1. Em **Personalização**, clique ou toque em **Atividades** para navegar até o console **Atividades**.
-1. Clique ou toque na marca cujas atividades você deseja ver.
-1. Selecione a atividade e clique ou toque em **Propriedades da exibição**, clique na guia **Relatórios** e selecione a atividade na qual deseja exibir o desempenho/converter experiências vencedoras. Os dados de desempenho são exibidos.
+1. Entrada **Personalização**, clique em **Atividades** para navegar até o **Atividades** console.
+1. Clique na marca cujas atividades você deseja ver.
+1. Selecione a atividade e clique em **Propriedades da exibição** e clique no link **Relatórios** e selecione a atividade na qual deseja exibir o desempenho/converter experiências vencedoras. Os dados de desempenho são exibidos.
 
    ![chlimage_1-115](assets/chlimage_1-115.png)
 
-1. Clique ou toque no link **Selecionar vencedor** para promover esta como a experiência padrão.
+1. Clique em **Selecionar vencedor** link para promover essa experiência como a experiência padrão.
 
    A conversão do vencedor faz o seguinte:
 
@@ -187,7 +187,7 @@ Para visualizar o desempenho da atividade e converter experiências vencedoras:
 
    Uma experiência vencedora é a aquela que os relatórios indicam que gerou um aumento maior, com base no índice de conversão.
 
-1. Clique ou toque em **Sim** para confirmar que deseja converter o vencedor, desabilitando a experiência atual e a substituindo pelo conteúdo da experiência vencedora.
+1. Clique em **Sim** para confirmar que deseja converter o vencedor, desative a experiência atual e substitua-a pelo conteúdo da experiência vencedora.
 
 ## Sincronização de atividades com o Adobe Target {#synchronizing-activities-with-adobe-target}
 

@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2223'
+source-wordcount: '2194'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,7 @@ Agora que você criou o esqueleto básico para sua experiência, é necessário 
    * [Conecte a página de teaser aos segmentos de visitantes.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#applyingasegmenttoyourteaser)
    * [Criar um ponto de contato para o teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (adicione seu teaser a uma página de conteúdo).
 
-* [informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters):
+* [Informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters):
 
    * [Adicionar conteúdo ao informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
    * [Personalize o informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)

@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1283'
-ht-degree: 3%
+source-wordcount: '1275'
+ht-degree: 2%
 
 ---
 
@@ -63,7 +63,7 @@ Com esses mecanismos de grade responsivos, você pode:
 
 >[!NOTE]
 >
->Em uma instalação pronta para uso, o layout responsivo foi configurado para o [Site de referência do We.Retail](/help/sites-developing/we-retail.md). Você ainda deve [ativar o componente de Contêiner de layout](#enable-the-layout-container-component-for-page) para outras páginas.
+>Em uma instalação pronta para uso, o layout responsivo foi configurado para o [Site de referência do We.Retail](/help/sites-developing/we-retail.md). [Ativar o componente de Contêiner de layout](#enable-the-layout-container-component-for-page) para outras páginas.
 
 ## Configurar o emulador responsivo {#configuring-the-responsive-emulator}
 
@@ -141,7 +141,7 @@ Eles podem ser definidos usando CRXDE Lite ou XML.
    * Nome: `<descriptive name>`
    * Tipo: `nt:unstructured`
    * Título: `String` * `<descriptive title seen in Emulator>`*
-   * Largura: `Decimal` * `<value of breakpoint>`*
+   * Largura `Decimal` * `<value of breakpoint>`*
 
 #### Configurar pontos de interrupção usando XML {#configuring-breakpoints-using-xml}
 
@@ -279,7 +279,7 @@ Essas tarefas permitem que os autores arrastem instâncias do **Contêiner de la
 
 Para permitir que os autores adicionem outras grades responsivas às páginas de conteúdo, é necessário ativar o componente Contêiner de layout para a página. Você pode fazer isso usando:
 
-* **Ambiente de criação**
+* **Ambiente do autor**
 
   Uso [Modo de design](/help/sites-authoring/default-components-designmode.md) para ativar o **Contêiner de camada** para uma página.
 
@@ -291,7 +291,7 @@ Para permitir que os autores adicionem outras grades responsivas às páginas de
 
 Você pode configurar o número de colunas disponíveis para cada instância específica do container de layout:
 
-1. **Ambiente de criação**
+1. **Ambiente do autor**
 
    Você pode configurar o número de colunas disponíveis para cada instância específica do container de layout.
 

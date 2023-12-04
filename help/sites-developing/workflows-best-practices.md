@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1925'
 ht-degree: 1%
 
 ---
@@ -297,7 +297,7 @@ Ao criar um modelo de fluxo de trabalho, você tem a opção de ativar o avanço
 
 Você pode definir [estágios do fluxo de trabalho](/help/sites-developing/workflows.md#workflow-stages), em seguida, atribua tarefas/etapas a um estágio específico do fluxo de trabalho.
 
-Essas informações são usadas para exibir o progresso de um workflow quando você clica no [**Informações do fluxo de trabalho** de um item de trabalho da **Caixa de entrada**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions). Os modelos de fluxo de trabalho existentes podem ser editados para adicionar estágios.
+Essas informações são usadas para exibir o progresso de um workflow quando você clica no ícone [**Informações do fluxo de trabalho** de um item de trabalho da **Caixa de entrada**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions). Os modelos de fluxo de trabalho existentes podem ser editados para adicionar estágios.
 
 ### Etapa do processo de ativação da página {#activate-page-process-step}
 

@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
 exl-id: 78673609-8cbc-4b4b-953e-56c31ea1b4ea
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 30%
+source-wordcount: '362'
+ht-degree: 24%
 
 ---
 
@@ -23,7 +23,7 @@ A variável [ContextHub](/help/sites-developing/contexthub.md) A barra de ferram
 
 A barra de ferramentas consiste em uma série de modos de interface que contêm um ou mais módulos de interface.
 
-* Os modos da interface são ícones exibidos no lado esquerdo da barra de ferramentas. Ao clicar ou tocar em um ícone, a barra de ferramentas revela os módulos de interface do usuário que ele contém.
+* Os modos da interface são ícones exibidos no lado esquerdo da barra de ferramentas. Ao clicar em um ícone, a barra de ferramentas revela os módulos de interface do usuário que ela contém.
 * Os módulos de interface exibem dados de um ou mais armazenamentos do ContextHub. Alguns módulos de interface também permitem manipular dados de armazenamento.
 
 O ContextHub instala vários modos de interface e módulos de interface do usuário. Seu administrador pode ter [ContextHub configurado](/help/sites-developing/ch-configuring.md) para exibir diferentes.
@@ -36,11 +36,11 @@ A barra de ferramentas do ContextHub está disponível no modo Visualização. A
 
 ![screen_shot_2018-03-23at093730](assets/screen_shot_2018-03-23at093730.png)
 
-1. Com a página aberta para edição, clique ou toque em Visualizar na barra de ferramentas.
+1. Com a página aberta para edição, clique em Visualizar na barra de ferramentas.
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
-1. Para exibir a barra de ferramentas, clique ou toque no ícone ContextHub.
+1. Para exibir a barra de ferramentas, clique no ícone do ContextHub.
 
    ![Context Hub](do-not-localize/screen_shot_2018-03-23at093621.png)
 
@@ -66,6 +66,6 @@ A sobreposição pop-up de um módulo pode incluir elementos de formulário que 
 
 ### Modo de tela inteira {#fullscreen-mode}
 
-As sobreposições de pop-up podem incluir um ícone no qual você clica ou toca para expandir o conteúdo do pop-up para cobrir toda a janela ou tela do navegador.
+As sobreposições de pop-up podem incluir um ícone no qual você clica para expandir o conteúdo de pop-up para cobrir toda a janela ou tela do navegador.
 
 ![Tela cheia](do-not-localize/chlimage_1-18.png)

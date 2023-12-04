@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4963'
-ht-degree: 1%
+source-wordcount: '4830'
+ht-degree: 0%
 
 ---
 
@@ -602,7 +602,7 @@ Somente leitura.
 * Argumentos: nenhum
 * Valor retornado: nenhum
 
-**joinCluster** Adiciona este repositório a um cluster como um nó controlado pelo cluster mestre. Você deve fornecer um nome de usuário e senha para fins de autenticação. A conexão usa autenticação básica. As credenciais de segurança são codificadas na base 64 antes de serem enviadas ao servidor.
+**joinCluster** Adiciona este repositório a um cluster como um nó controlado pelo cluster mestre. Forneça um nome de usuário e senha para fins de autenticação. A conexão usa autenticação básica. As credenciais de segurança são codificadas na base 64 antes de serem enviadas ao servidor.
 
 * Argumentos:
 
@@ -707,7 +707,7 @@ Somente leitura.
 
 **Ativado** Um valor booleano que indica se o agente está ativado:
 
-* `true`: Habilitado.
+* `true`: Ativado.
 * `false`: Desativado.
 
 **FilaBloqueada** Um valor booleano que indica se a fila existe e está bloqueada:
@@ -777,8 +777,8 @@ Fornece estatísticas sobre solicitações HTTP para que você possa monitorar o
 
 **instalado** Um valor booleano que indica se o pacote está instalado:
 
-* `true`: Instalado.
-* `false`: Não instalado.
+* `true`: instalado.
+* `false`: não instalado.
 
 **installedBy** A ID do último usuário que instalou o pacote.
 

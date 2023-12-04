@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 role: Developer
 exl-id: 2b938410-f51b-420b-b5d4-2ed13ec29c5a
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2558'
+source-wordcount: '2519'
 ht-degree: 0%
 
 ---
@@ -152,7 +152,7 @@ Para montar um PDF que contenha novos marcadores, você deve fazer referência a
 
 **Adicionar o documento PDF e o documento XML do marcador a uma coleção de Mapas**
 
-Você deve adicionar o documento PDF ao qual os marcadores são adicionados e o documento XML do marcador à coleção Map. Portanto, o objeto de coleção Map contém dois elementos: um documento PDF e o documento XML de marcador.
+Adicione o documento PDF ao qual os marcadores são adicionados e o documento XML do marcador à coleção Map. Portanto, o objeto de coleção Map contém dois elementos: um documento PDF e o documento XML de marcador.
 
 **Definir opções de tempo de execução**
 
@@ -164,7 +164,7 @@ Para montar um documento PDF que contenha novos marcadores, use o `invokeDDX` op
 
 **Salve o documento PDF que contém marcadores**
 
-Você deve extrair os resultados do objeto de mapa retornado e salvar o documento PDF correspondente. (Consulte &quot;Extrair os resultados&quot; em [Montagem programática de documentos do PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+Extraia os resultados do objeto de mapa retornado e salve o documento PDF correspondente. (Consulte &quot;Extrair os resultados&quot; em [Montagem programática de documentos do PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 **Consulte também**
 

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2067'
-ht-degree: 12%
+source-wordcount: '2037'
+ht-degree: 9%
 
 ---
 
@@ -287,7 +287,7 @@ Você pode configurar o OAuth para vários provedores de email, conforme descrit
 Primeiro, configure o Serviço de e-mail:
 
 1. Abra o console da Web do AEM acessando `http://serveraddress:serverport/system/console/configMgr`
-1. Procure por e clique em **Serviço de email Day CQ**
+1. Procure e clique em **Serviço de email Day CQ**
 1. Adicione as seguintes configurações:
    * Nome do host do servidor SMTP: `smtp.gmail.com`
    * Porta do servidor SMTP: `25` ou `587`, dependendo dos requisitos
@@ -297,7 +297,7 @@ Primeiro, configure o Serviço de e-mail:
 Em seguida, configure o provedor SMTP OAuth seguindo o procedimento abaixo:
 
 1. Abra o console da Web do AEM acessando `http://serveraddress:serverport/system/console/configMgr`
-1. Procure por e clique em **Provedor OAuth2 SMTP do CQ Mailer**
+1. Procure e clique em **Provedor OAuth2 SMTP do CQ Mailer**
 1. Preencha as informações necessárias da seguinte maneira:
    * URL de autorização: `https://accounts.google.com/o/oauth2/auth`
    * URL do token: `https://accounts.google.com/o/oauth2/token`
@@ -336,7 +336,7 @@ Por fim, confirme a configuração ao:
 ### Microsoft Outlook {#microsoft-outlook}
 
 1. Acesse [https://portal.azure.com/](https://portal.azure.com/) e faça logon.
-1. Pesquise por **Azure Active Directory** na barra de pesquisa e clique no resultado. Como alternativa, você pode navegar diretamente para [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+1. Digite **Azure Active Directory** na barra de pesquisa e clique no resultado. Como alternativa, você pode navegar diretamente para [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. Clique em **Registro do aplicativo** - **Novo registro**
 
    ![O novo botão de registro ao configurar o Microsoft Outlook](assets/oauth-outlook1.png)
@@ -354,7 +354,7 @@ Por fim, confirme a configuração ao:
    * `http://localhost:4503/services/mailer/oauth2/token`
 1. Repita o procedimento acima para cada instância de publicação
 1. Defina as configurações de acordo com seus requisitos
-1. Em seguida, vá em **Certificados e segredos**, clique em **Novo segredo de cliente** e siga as etapas na tela para criar um segredo. Anote este segredo para uso posterior
+1. Em seguida, acesse **Certificados e segredos**, clique em **Novo segredo do cliente** e siga as etapas na tela para criar um segredo. Anote este segredo para uso posterior
 1. Pressione **Visão geral** no painel esquerdo e copie os valores de **ID do aplicativo (cliente)** e **ID do diretório (locatário)** para uso posterior
 
 Para recapitular, você deve ter as seguintes informações para configurar o OAuth2 para o serviço Mailer no lado do AEM:
@@ -378,7 +378,7 @@ Em seguida, integre suas configurações do OAuth2 com o AEM:
    * Porta do servidor SMTP: `25` ou `587` dependendo dos requisitos
    * Marque as caixas de seleção para **SMPT usa StarTLS** e **SMTP requer StarTLS**
    * Marcar **Fluxo OAuth** e clique em **Salvar**.
-1. Procure por e clique em **Provedor OAuth2 SMTP do CQ Mailer**
+1. Procure e clique em **Provedor OAuth2 SMTP do CQ Mailer**
 1. Preencha as informações necessárias da seguinte maneira:
    * Preencha o URL de autorização, URL do token e URL do token de atualização construindo-os conforme descrito em [no final deste procedimento](#microsoft-outlook)
    * ID do cliente e Segredo do cliente: configure esses campos com os valores que você recuperou, conforme descrito acima.

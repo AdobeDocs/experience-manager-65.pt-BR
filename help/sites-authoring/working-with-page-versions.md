@@ -2,10 +2,10 @@
 title: Trabalhar com versões de páginas de conteúdo
 description: Criar, comparar e restaurar versões de uma página no Adobe Experience Manager.
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1501'
-ht-degree: 65%
+source-wordcount: '1510'
+ht-degree: 63%
 
 ---
 
@@ -16,7 +16,7 @@ O controle de versão cria um “instantâneo” de uma página em um momento es
 * Criar uma versão de uma página.
 * Restaurar uma página para uma versão anterior; por exemplo:
    * para desfazer uma alteração feita na página.
-* Comparar a versão atual da página com uma versão anterior:
+* Comparar a versão atual de uma página com uma versão anterior:
    * para destacar diferenças no texto e nas imagens.
 
 ## Criar uma nova versão   {#creating-a-new-version}
@@ -31,7 +31,7 @@ O controle de versão cria um “instantâneo” de uma página em um momento es
 1. Navegue para mostrar a página para a qual você deseja criar uma versão.
 1. Selecione a página no [modo de seleção](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Abra o **Linha do tempo** coluna.
-1. Clique/toque na ponta da seta ao lado do campo de comentário para revelar as opções:
+1. Clique na ponta da seta no campo de comentário para revelar as opções:
 
    ![Linha do tempo - Salvar como versão](assets/screen-shot_2019-03-05at112335.png)
 
@@ -210,7 +210,7 @@ O Timewarp é um [modo](/help/sites-authoring/author-environment-tools.md#page-m
 
    ![Selecionar Timewarp na seleção de modo](assets/wwpv-01.png)
 
-1. Na caixa de diálogo, defina uma data e hora de destino e clique ou toque em **Definir data**. Se você não selecionar uma hora, a hora atual será usada como padrão.
+1. Na caixa de diálogo, defina uma data e hora de destino e clique em **Definir data**. Se você não selecionar uma hora, a hora atual será usada como padrão.
 
    ![Definir data](assets/wwpv-02.png)
 

@@ -8,9 +8,9 @@ content-type: reference
 feature: Content Fragments
 role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '984'
 ht-degree: 0%
 
 ---
@@ -56,12 +56,12 @@ Se o fragmento de conteúdo incluir uma coleção, os ativos na coleção serão
 
 Para poder traduzir fragmentos de conteúdo que incluem mídia mista, edite primeiro a estrutura de tradução padrão para permitir a tradução de ativos e coleções em linha associados a fragmentos de conteúdo.
 
-1. Clique/toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas > Implantação > Cloud Service]**.
-1. Localizar **[!UICONTROL Integração da tradução]** em **[!UICONTROL Adobe Marketing Cloud]** e clicar/tocar **[!UICONTROL Exibir configurações]**.
+1. Clique no logotipo do AEM e navegue até **[!UICONTROL Ferramentas > Implantação > Cloud Service]**.
+1. Localizar **[!UICONTROL Integração da tradução]** em **[!UICONTROL Adobe Marketing Cloud]** e clique em **[!UICONTROL Exibir configurações]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)
 
-1. Na lista de configurações disponíveis, clique/toque em **[!UICONTROL Configuração padrão (configuração da integração de tradução)]** para abrir o **[!UICONTROL Configuração padrão]** página.
+1. Na lista de configurações disponíveis, clique em **[!UICONTROL Configuração padrão (configuração da integração de tradução)]** para abrir o **[!UICONTROL Configuração padrão]** página.
 
    ![chlimage_1-445](assets/chlimage_1-445.png)
 
@@ -69,7 +69,7 @@ Para poder traduzir fragmentos de conteúdo que incluem mídia mista, edite prim
 
    ![chlimage_1-446](assets/chlimage_1-446.png)
 
-1. Navegue até a **[!UICONTROL Assets]** e escolha **[!UICONTROL Ativos de mídia integrados e coleções associadas]** do **[!UICONTROL Traduzir ativos do fragmento de conteúdo]** lista. Clique/toque **[!UICONTROL OK]** para salvar as alterações.
+1. Navegue até a **[!UICONTROL Assets]** e escolha **[!UICONTROL Ativos de mídia integrados e coleções associadas]** do **[!UICONTROL Traduzir ativos do fragmento de conteúdo]** lista. Clique em **[!UICONTROL OK]** para salvar as alterações.
 
    ![chlimage_1-447](assets/chlimage_1-447.png)
 
@@ -77,7 +77,7 @@ Para poder traduzir fragmentos de conteúdo que incluem mídia mista, edite prim
 
    ![chlimage_1-448](assets/chlimage_1-448.png)
 
-1. Clique/toque no **[!UICONTROL Inserir ativo]** ícone.
+1. Clique em **[!UICONTROL Inserir ativo]** ícone.
 
    ![chlimage_1-449](assets/chlimage_1-449.png)
 
@@ -85,28 +85,28 @@ Para poder traduzir fragmentos de conteúdo que incluem mídia mista, edite prim
 
    ![inserir ativo no fragmento de conteúdo](assets/column-view.png)
 
-1. Clique/toque no **[!UICONTROL Conteúdo associado]** ícone.
+1. Clique em **[!UICONTROL Conteúdo associado]** ícone.
 
    ![chlimage_1-451](assets/chlimage_1-451.png)
 
-1. Clique/toque **[!UICONTROL Conteúdo associado]**.
+1. Clique em **[!UICONTROL Conteúdo associado]**.
 
    ![chlimage_1-452](assets/chlimage_1-452.png)
 
-1. Selecione uma coleção e inclua-a no fragmento de conteúdo. Clique/toque **[!UICONTROL Salvar]**.
+1. Selecione uma coleção e inclua-a no fragmento de conteúdo. Clique em **[!UICONTROL Salvar]**.
 
    ![chlimage_1-453](assets/chlimage_1-453.png)
 
-1. Selecione o fragmento de conteúdo e clique/toque no **[!UICONTROL GlobalNav]** ícone.
+1. Selecione o fragmento de conteúdo e clique no botão **[!UICONTROL GlobalNav]** ícone.
 1. Selecionar **[!UICONTROL Referências]** no menu para exibir a variável **[!UICONTROL Referências]** painel.
 
    ![chlimage_1-454](assets/chlimage_1-454.png)
 
-1. Clique/toque **[!UICONTROL Cópias de idioma]** em **[!UICONTROL Cópias]** para exibir as cópias de idioma.
+1. Clique em **[!UICONTROL Cópias de idioma]** em **[!UICONTROL Cópias]** para exibir as cópias de idioma.
 
    ![chlimage_1-455](assets/chlimage_1-455.png)
 
-1. Clique/toque **[!UICONTROL Criar e traduzir]** na parte inferior do painel para exibir as **[!UICONTROL Criar e traduzir]** diálogo.
+1. Clique em **[!UICONTROL Criar e traduzir]** na parte inferior do painel para exibir as **[!UICONTROL Criar e traduzir]** diálogo.
 
    ![chlimage_1-456](assets/chlimage_1-456.png)
 
@@ -118,7 +118,7 @@ Para poder traduzir fragmentos de conteúdo que incluem mídia mista, edite prim
 
    ![chlimage_1-458](assets/chlimage_1-458.png)
 
-1. Especifique o título do projeto na variável **[!UICONTROL Título do projeto]** e clique/toque em **Criar**.
+1. Especifique o título do projeto na variável **[!UICONTROL Título do projeto]** e clique em **Criar**.
 
    ![chlimage_1-459](assets/chlimage_1-459.png)
 
@@ -126,7 +126,7 @@ Para poder traduzir fragmentos de conteúdo que incluem mídia mista, edite prim
 
    ![chlimage_1-460](assets/chlimage_1-460.png)
 
-1. Clique/toque no bloco do projeto para abrir a página de detalhes do projeto.
+1. Clique no bloco do projeto para abrir a página de detalhes do projeto.
 
    ![chlimage_1-461](assets/chlimage_1-461.png)
 
@@ -139,7 +139,7 @@ Para poder traduzir fragmentos de conteúdo que incluem mídia mista, edite prim
 
    ![chlimage_1-463](assets/chlimage_1-463.png)
 
-1. Clique/toque no fragmento de conteúdo para verificar o caminho dos ativos associados traduzidos.
+1. Clique no fragmento de conteúdo para verificar o caminho dos ativos associados traduzidos.
 
    ![chlimage_1-464](assets/chlimage_1-464.png)
 

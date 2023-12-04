@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3219'
-ht-degree: 6%
+source-wordcount: '3186'
+ht-degree: 4%
 
 ---
 
@@ -72,7 +72,7 @@ Ao criar um modelo editável, você:
    * A estrutura permite definir os componentes e o conteúdo para o modelo.
    * Os componentes definidos na estrutura do modelo não podem ser movidos em uma página resultante nem excluídos de qualquer página resultante.
 
-      * Se você estiver criando um modelo em uma pasta personalizada fora da `We.Retail` conteúdo de amostra, você pode escolher Componentes de base ou usar [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=pt-BR).
+      * Se você estiver criando um modelo em uma pasta personalizada fora da `We.Retail` conteúdo de amostra, você pode escolher Componentes de base ou usar [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=en).
 
    * Se desejar que os autores de página possam adicionar e remover componentes, adicione um sistema de parágrafo ao modelo.
    * Os componentes podem ser desbloqueados e bloqueados novamente para permitir que você defina o conteúdo inicial.
@@ -104,8 +104,8 @@ Ao criar um modelo editável, você:
 
    **Layout**
 
-   * É possível definir o layout do modelo para um intervalo de dispositivos.
-   * O Layout responsivo para modelos funciona como na criação de página.
+   * Você pode definir o layout do modelo para um intervalo de dispositivos.
+   * O Layout responsivo para modelos funciona como na criação de página.
 
    Para obter detalhes sobre como um autor de modelo define o layout do modelo, consulte [Criação de modelos de página](/help/sites-authoring/templates.md#editing-a-template-layout-template-author).
 
@@ -216,7 +216,7 @@ Para criar uma pasta, faça o seguinte:
 
 ### Usar o navegador de configuração {#using-the-configuration-browser}
 
-1. Ir para **Navegação global** -> **Ferramentas** > **Navegador de configuração**.
+1. Ir para **Navegação global** > **Ferramentas** > **Navegador de configuração**.
 
    As pastas existentes são listadas à esquerda, incluindo a **global** pasta.
 

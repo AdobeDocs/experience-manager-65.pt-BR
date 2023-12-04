@@ -4,16 +4,16 @@ description: Saiba como configurar a estrutura de integração de tradução no 
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1571'
-ht-degree: 48%
+source-wordcount: '1497'
+ht-degree: 41%
 
 ---
 
 # Configuração da estrutura de integração de tradução{#configuring-the-translation-integration-framework}
 
-A estrutura de integração de tradução integra-se aos serviços de tradução de terceiros para orquestrar a tradução de conteúdo do AEM.
+A estrutura de integração de tradução integra-se aos serviços de tradução de terceiros para orquestrar a tradução de conteúdo AEM.
 
 * Conectar ao provedor de serviços de tradução.
 * Criar uma configuração da estrutura de integração de tradução.
@@ -23,7 +23,7 @@ Para obter uma visão geral dos recursos de tradução de conteúdo do AEM, cons
 
 ## Conexão com um provedor de serviços de tradução {#connecting-to-a-translation-service-provider}
 
-Crie uma configuração de nuvem que conecte o AEM ao seu provedor de serviços de tradução. O AEM inclui a capacidade de conectar-se ao Microsoft Translator por padrão.
+Crie uma configuração de nuvem que conecte o AEM ao seu provedor de serviços de tradução. O AEM inclui a capacidade de se conectar ao Microsoft Translator por padrão.
 Os seguintes fornecedores de tradução fornecem uma implementação da nova API para os Projetos de tradução. Links para saber mais sobre a integração:
 
 * [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (Adobe Exchange Premier Partner)
@@ -60,7 +60,7 @@ Crie uma configuração de estrutura de integração de tradução para especifi
 
 * Qual provedor de serviços de tradução usar.
 * Se deve ser realizada tradução humana ou automática.
-* Se outro conteúdo associado a uma página ou ativo, como tags, será ou não traduzido.
+* Se outros conteúdos associados a uma página ou ativo, como tags, deverão ser traduzidos.
 
 Após criar uma configuração de estrutura, associe a configuração de nuvem às páginas que deseja traduzir de acordo com a configuração. Quando o processo de tradução é iniciado, o fluxo de trabalho de tradução continua de acordo com a configuração de estrutura associada.
 
@@ -149,7 +149,7 @@ As propriedades de ativos controlam como configurar ativos. Para obter mais info
    <td><p>Selecione o tipo de tradução que a estrutura executa para os ativos:</p>
     <ul>
      <li>Tradução automática: o provedor de tradução executa a tradução imediatamente usando a tradução automática.</li>
-     <li>Tradução humana: o conteúdo é enviado automaticamente ao provedor de tradução para ser traduzido manualmente. </li>
+     <li>Tradução humana: o conteúdo é enviado automaticamente para o provedor de tradução para ser traduzido manualmente. </li>
      <li>Não traduzir: os ativos não são enviados para tradução.</li>
     </ul> </td>
   </tr>
@@ -180,14 +180,14 @@ As propriedades de ativos controlam como configurar ativos. Para obter mais info
  </tbody>
 </table>
 
-1. Na barra lateral, clique ou toque em Ferramentas > Operações > Nuvem > Cloud Service.
+1. Na barra lateral, clique em Ferramentas > Operações > Nuvem > Cloud Service.
 1. Na área Integração de tradução, se alguma configuração foi criada, determina qual link aparece:
 
-   * Se nenhuma configuração tiver sido criada, clique ou toque em Configurar agora.
-   * Se já existirem configurações, clique ou toque em Mostrar configurações e, em seguida, clique ou toque no link + que aparece ao lado de Configurações disponíveis.
+   * Se nenhuma configuração tiver sido criada, clique em Configurar agora.
+   * Se já existirem configurações, clique em Mostrar configurações e, em seguida, clique no link + que aparece ao lado de Configurações disponíveis.
 
-1. Digite um nome para a configuração e clique ou toque em Criar.
-1. Configure as propriedades na guia Sites, Comunidades e Ativos e clique ou toque em OK.
+1. Digite um nome para a configuração e clique em Criar.
+1. Configure as propriedades na guia Sites, Comunidades e Ativos e clique em OK.
 
 ## Configuração de páginas para tradução {#configuring-pages-for-translation}
 
@@ -208,16 +208,16 @@ Além disso, para qualquer comunidade [Componentes SCF](/help/communities/scf.md
 
 Associe uma página ao provedor de tradução que você está usando para traduzir a página e suas páginas descendentes.
 
-1. No console do Sites, selecione a página que deseja configurar e clique ou toque em Propriedades de exibição.
-1. Clique ou toque em Editar e depois clique ou toque na guia Cloud Service.
-1. Clique ou toque em Adicionar configuração > Integração de tradução.
-1. Selecione o provedor de tradução a ser usado e clique ou toque em Concluído.
+1. No console do Sites, selecione a página que deseja configurar e clique em Propriedades de exibição.
+1. Clique em Editar e depois clique na guia Cloud Service.
+1. Clique em Adicionar configuração > Integração de tradução.
+1. Selecione o provedor de tradução a ser usado e clique em Concluído.
 
 ### Associar páginas a uma estrutura de integração de tradução {#associating-pages-with-a-translation-integration-framework}
 
 Associe uma página à estrutura de integração de tradução que define como você deseja executar a tradução da página e de suas páginas descendentes.
 
-1. No console do Sites, selecione a página que deseja configurar e clique ou toque em Propriedades de exibição.
-1. Clique ou toque em Editar e depois clique ou toque na guia Cloud Service.
-1. Clique ou toque em Adicionar configuração > Integração de tradução.
-1. Selecione a estrutura de integração de tradução a ser usada e clique ou toque em Concluído.
+1. No console do Sites, selecione a página que deseja configurar e clique em Propriedades de exibição.
+1. Clique em Editar e depois clique na guia Cloud Service.
+1. Clique em Adicionar configuração > Integração de tradução.
+1. Selecione a estrutura de integração de tradução a ser usada e clique em Concluído.

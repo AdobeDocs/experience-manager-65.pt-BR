@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 2%
+source-wordcount: '1248'
+ht-degree: 1%
 
 ---
 
@@ -122,7 +122,7 @@ Para ver os detalhes do seu perfil, clique em **Meu perfil** no canto superior d
 É possível adicionar campos à definição do perfil. Por exemplo, para adicionar um campo &quot;Cor favorita&quot; ao perfil do Geometrixx:
 
 1. No console Sites, navegue até Geometrixx Outdoors Site > Inglês > Usuário > Meu perfil.
-1. Clique duas vezes na guia **Meu perfil** para abri-la para edição.
+1. Clique duas vezes no ícone **Meu perfil** para abri-la para edição.
 1. No **Componentes** guia do sidekick expanda a **Formulário** seção.
 1. Arraste um **Lista suspensa** do sidekick para o formulário, logo abaixo do **Sobre mim** campo.
 1. Clique duas vezes no ícone **Lista suspensa** para abrir a caixa de diálogo de configuração e inserir:

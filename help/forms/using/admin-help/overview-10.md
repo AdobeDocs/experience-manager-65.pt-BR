@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2d6f90bb-62f7-4805-9250-1b913fe7d2b3
 exl-id: da1224e4-566a-402f-9d8b-27fda5f3101b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '126'
+source-wordcount: '124'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ Nas páginas do Workspace no console de administração, é possível executar a
 
 >[!NOTE]
 >
->Você deve usar os métodos de navegação no console de administração. Não use os botões Voltar, Avançar ou Atualizar no navegador da Web. O uso desses botões pode causar problemas de captura e exibição de dados.
+>Use os métodos de navegação no console de administração. Não use os botões Voltar, Avançar ou Atualizar no navegador da Web. O uso desses botões pode causar problemas de captura e exibição de dados.

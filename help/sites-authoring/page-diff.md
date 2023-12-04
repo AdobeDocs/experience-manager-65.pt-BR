@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 85%
+source-wordcount: '569'
+ht-degree: 80%
 
 ---
 
@@ -68,7 +68,7 @@ O recurso diferencial detecta alterações no nível do componente e do HTML. Os
 
 ### Tela cheia e ao sair   {#fullscreen-and-exiting}
 
-Para focar em um conteúdo específico, você pode clicar no ícone de tela cheia para qualquer “lado” do diferencial lado a lado, ampliando o conteúdo até o tamanho da janela do navegador.
+Para se concentrar em um conteúdo específico, você pode clicar no ícone de tela inteira para qualquer &quot;lado&quot; da comparação lado a lado, ampliando o conteúdo até o tamanho da janela do navegador.
 
 ![Ícone do modo de tela cheia](do-not-localize/chlimage_1-18.png)
 

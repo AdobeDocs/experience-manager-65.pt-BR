@@ -7,10 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2227'
-ht-degree: 50%
+source-wordcount: '2246'
+ht-degree: 47%
 
 ---
 
@@ -95,7 +95,7 @@ A aparência e o manuseio real dependem do tipo de dispositivo que você está u
    * Filtrar componentes por nome.
    * Limitar a exibição para um grupo específico usando a seleção suspensa.
 
-  Para obter uma descrição mais detalhada do componente, clique ou toque no ícone de informações ao lado do componente no navegador **Componentes** (se disponível). Por exemplo, para o **Contêiner de layout**:
+  Para obter uma descrição mais detalhada do componente, clique no ícone de informações ao lado do componente na **Componentes** navegador (se disponível). Por exemplo, para o **Contêiner de layout**:
 
   ![ateat-06](assets/ateat-06.png)
 
@@ -243,8 +243,8 @@ Selecione o tipo de referência apropriado para obter mais informações. Em det
 * [Referências às páginas de produto](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (disponível no console Commerce-Products)
 * [Lançamentos](/help/sites-authoring/launches.md) O fornece acesso a inicializações relacionadas.
 * As [Live Copies](/help/sites-administering/msm.md) exibem os caminhos de todas as live copies que são baseadas no recurso selecionado.
-* [](/help/sites-administering/msm-best-practices.md)Blueprint fornece detalhes e várias ações.
-* [](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel)Cópias de idiomas fornecem detalhes e várias ações.
+* [Blueprint](/help/sites-administering/msm-best-practices.md) O fornece detalhes e várias ações.
+* [Cópias de idiomas](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel) O fornece detalhes e várias ações.
 
 Por exemplo, você pode corrigir uma referência quebrada em um componente Referência:
 
@@ -332,7 +332,7 @@ Agora, os campos de caminho têm funcionalidade antecipada e de preenchimento au
 
 Clicar no botão **Abrir caixa de diálogo** no campo de caminho abre a caixa de diálogo [navegador de caminho](/help/sites-authoring/author-environment-tools.md#path-browser) para permitir opções mais detalhadas de seleção.
 
-![Abrir caixa de diálogo da Seleção](do-not-localize/screen_shot_2018-03-22at154427.png)
+![Abrir caixa de diálogo da seleção](do-not-localize/screen_shot_2018-03-22at154427.png)
 
 Como alternativa, comece a digitar no campo de caminho e o AEM oferece caminhos correspondentes à medida que você digita.
 
@@ -344,7 +344,7 @@ O navegador de caminho é organizado da mesma maneira que a [exibição de colun
 
 ![screen_shot_2018-03-22at154521](assets/screen_shot_2018-03-22at154521.png)
 
-* Após selecionar um recurso, o botão **Selecionar** no canto superior direito da caixa de diálogo se torna ativo. Clique ou toque para confirmar a seleção ou **Cancelar** para suspender.
+* Após selecionar um recurso, o botão **Selecionar** no canto superior direito da caixa de diálogo se torna ativo. Clique em para confirmar a seleção ou **Cancelar** para suspender.
 * Se o contexto permite a seleção de vários recursos, selecionar um recurso também ativa o botão **Selecionar**, mas, além disso, adiciona uma contagem do número de recursos selecionados no canto superior direito da janela. Clique em **X** ao lado do número para desmarcar tudo.
 * Ao navegar pela árvore, sua localização é refletida na navegação estrutural na parte superior da caixa de diálogo. Essas navegações estruturais também podem ser usadas para saltar rapidamente dentro da hierarquia de recursos.
 * A qualquer momento, você pode usar o campo de pesquisa na parte superior da caixa de diálogo. Clique no **X** no campo de pesquisa para limpar a pesquisa.

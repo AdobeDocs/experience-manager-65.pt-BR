@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: b2778086-8280-4306-bf3a-f6ec2a0e04df
 exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 1%
+source-wordcount: '1028'
+ht-degree: 0%
 
 ---
 
@@ -101,7 +101,7 @@ Mova o conteúdo do aplicativo móvel para o sistema de arquivos.
    >
    >O cache armazena atualizações de conteúdo para aplicativos instalados. A limpeza do cache anula todas as atualizações em cache.
 
-1. Na barra de ferramentas, clique ou toque no ícone Baixar ativos da CLI.
+1. Na barra de ferramentas, clique no ícone Baixar ativos da CLI.
 
    ![Ícone Download de ativos CLI indicado pelo símbolo de tablet sobreposto.](do-not-localize/chlimage_1-1.png)
 
@@ -128,12 +128,12 @@ Use a CLI do PhoneGap para compilar e instalar o aplicativo. Para obter informa�
 
 Use o serviço de nuvem PhoneGap para criar seu aplicativo. Para executar esse procedimento, primeiro você deve criar uma configuração de PhoneGap Build.
 
-### Conectando ao PhoneGap Build {#connecting-to-phonegap-build}
+### Conexão com o PhoneGap Build {#connecting-to-phonegap-build}
 
 Crie uma configuração de PhoneGap Build para poder usar os serviços de PhoneGap Build no AEM. Forneça o nome de usuário e a senha da conta do PhoneGap Build que será usada para criar seus aplicativos para dispositivos móveis.
 
 1. Abra a página Ferramentas. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html)).
-1. Na área Operações do CQ, clique em Cloud Services.
+1. Na área Operações do CQ, clique em Cloud Service.
 1. Clique no link Configurar agora para o PhoneGap Build.
 
    ![chlimage_1-17](assets/chlimage_1-17.png)

@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '8184'
+source-wordcount: '8133'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Para executar programaticamente uma operação de Serviço de criptografia, voc�
 
 **Obter um documento PDF para criptografar**
 
-Você deve obter um documento PDF não criptografado para criptografar o documento com uma senha. Se você tentar proteger um documento PDF que já está criptografado, causará uma exceção.
+Obtenha um documento PDF não criptografado para criptografar o documento com uma senha. Se você tentar proteger um documento PDF que já está criptografado, causará uma exceção.
 
 **Definir opções de tempo de execução de criptografia**
 
@@ -289,7 +289,7 @@ Para executar programaticamente uma operação de Serviço de criptografia, voc�
 
 **Obter um documento PDF para criptografar**
 
-Você deve obter um documento PDF não criptografado para criptografá-lo. Se você tentar proteger um documento PDF que já está criptografado, uma exceção será lançada.
+Obter um documento PDF não criptografado para criptografar. Se você tentar proteger um documento PDF que já está criptografado, uma exceção será lançada.
 
 **Fazer referência ao certificado**
 
@@ -499,7 +499,7 @@ Para executar programaticamente uma operação de Serviço de criptografia, voc�
 
 **Obter o documento PDF criptografado**
 
-Você deve obter um documento PDF criptografado para remover a criptografia baseada em certificado. Se você tentar remover a criptografia de um documento PDF que não está criptografado, uma exceção será lançada. Da mesma forma, se você tentar remover a criptografia baseada em certificado de um documento criptografado por senha, será lançada uma exceção.
+Obtenha um documento PDF criptografado para remover a criptografia baseada em certificado. Se você tentar remover a criptografia de um documento PDF que não está criptografado, uma exceção será lançada. Da mesma forma, se você tentar remover a criptografia baseada em certificado de um documento criptografado por senha, será lançada uma exceção.
 
 **Remover criptografia**
 
@@ -660,7 +660,7 @@ Para executar programaticamente uma operação de Serviço de criptografia, voc�
 
 **Obter o documento PDF criptografado**
 
-Você deve obter um documento PDF criptografado para remover a criptografia baseada em senha. Se você tentar remover a criptografia de um documento PDF que não está criptografado, uma exceção será lançada.
+Obtenha um documento de PDF criptografado para remover a criptografia baseada em senha. Se você tentar remover a criptografia de um documento PDF que não está criptografado, uma exceção será lançada.
 
 **Remover a senha**
 
@@ -807,7 +807,7 @@ Para executar programaticamente uma operação de Serviço de criptografia, voc�
 
 **Obter o documento PDF criptografado**
 
-Você deve obter um documento PDF criptografado para desbloqueá-lo. Se você tentar desbloquear um documento PDF que não está criptografado, uma exceção será lançada.
+Obtenha um documento PDF criptografado para desbloqueá-lo. Se você tentar desbloquear um documento PDF que não está criptografado, uma exceção será lançada.
 
 **Desbloquear o documento**
 
@@ -984,7 +984,7 @@ Para executar programaticamente uma operação de Serviço de criptografia, voc�
 
 **Obter o documento PDF criptografado**
 
-Você deve obter um documento PDF para determinar o tipo de criptografia que o está protegendo.
+Obtenha um documento PDF para determinar o tipo de criptografia que está protegendo-o.
 
 **Determine o tipo de criptografia**
 

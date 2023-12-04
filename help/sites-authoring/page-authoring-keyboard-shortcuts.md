@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
-source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 63%
+source-wordcount: '220'
+ht-degree: 52%
 
 ---
 
@@ -41,7 +41,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
 
 >[!NOTE]
 >
->&amp;ast; Uma vez que o usuário começa a interagir com a página no Modo de visualização, a variável `Ctrl-Shift-m` o atalho não está mais disponível. O usuário deve clicar na barra superior do editor ou voltar para o modo Edição para que o atalho fique disponível novamente.
+>&amp;ast; Uma vez que o usuário começa a interagir com a página no Modo de visualização, a variável `Ctrl-Shift-m` o atalho não está mais disponível. O usuário deve clicar na barra superior do editor ou voltar para o modo Editar para que o atalho fique disponível novamente.
 
 Vários atalhos de teclado também estão disponíveis para os usuários de desktop ao usar os [consoles](/help/sites-authoring/keyboard-shortcuts.md).
 

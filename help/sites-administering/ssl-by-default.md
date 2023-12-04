@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 docset: aem65
 exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Em um esforço para melhorar continuamente a segurança do AEM, o Adobe introduz
 
 ## Habilitar SSL/TLS por padrão {#enabling-ssl-tls-by-default}
 
-Você pode começar a configurar SSL/TLS por padrão clicando na mensagem relevante da Caixa de entrada na tela inicial do AEM. Para acessar a Caixa de entrada, pressione o ícone de sino no canto superior direito da tela. Clique em **Exibir todos**. Isso exibirá uma lista de todos os alertas ordenados em uma exibição de lista.
+Você pode começar a configurar SSL/TLS por padrão clicando na mensagem relevante da Caixa de entrada na tela inicial do AEM. Para acessar a Caixa de entrada, pressione o ícone de sino no canto superior direito da tela. Em seguida, clique em **Exibir todos**. Isso exibirá uma lista de todos os alertas ordenados em uma exibição de lista.
 
 Na lista, selecione e abra a variável **Configurar HTTPS** alerta:
 

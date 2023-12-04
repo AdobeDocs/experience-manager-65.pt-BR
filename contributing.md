@@ -1,8 +1,8 @@
 ---
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 62%
+source-wordcount: '505'
+ht-degree: 52%
 
 ---
 # Contribuição na documentação do Adobe Experience Manager
@@ -30,19 +30,19 @@ O método de escolha depende do quanto você se sente confortável em editar a d
 
 >[!NOTE]
 >
->As contribuições enviadas estão cobertas pelos [Termos de uso da Adobe](https://www.adobe.com/br/legal/terms.html).
+>As contribuições enviadas estão cobertas pela [termos de uso do Adobe](https://www.adobe.com/br/legal/terms.html).
 
 ### Criação de um tópico {#create-an-issue}
 
 Você tem uma sugestão, uma observação sobre os documentos atuais ou alguma dúvida relacionada à maneira como algo está descrito? Em seguida, crie um problema. Tópicos são excelentes se você tiver alguma contribuição, mas não se sente confortável em editar os documentos ou criar um pull request.
 
-Com os tópicos, você pode descrever facilmente sua ideia para aprimorar os documentos, e um membro da equipe do AEM Docs pode revisá-la. Basta clicar no link **registrar um tópico** na parte superior do painel de navegação direito em qualquer página para criar um tópico.
+Com os tópicos, você pode descrever facilmente sua ideia para aprimorar os documentos, e um membro da equipe do AEM Docs pode revisá-la. Basta clicar no link **Registrar um problema** Um link na parte superior do painel de navegação direito em qualquer página para criar um problema.
 
 ### Criação de um pull request {#create-a-pull-request}
 
 Se você vir um problema e souber exatamente como corrigi-lo, considere a criação de um pull request. Com os pull requests, é possível fazer edições na documentação, que depois são revisadas e incluídas por um membro da equipe do AEM Docs. Basta clicar no link **Editar esta página** clique em um link na parte superior do painel de navegação direito em qualquer página para fazer as alterações sugeridas e criar o pull request.
 
-Todos os pull requests devem estar acompanhados de um [contrato de licença de colaborador ou CLA assinado](https://opensource.adobe.com/cla.html). Isso dá à Adobe a permissão de redistribuir suas contribuições como parte do projeto. É necessário enviar somente um CLA da Adobe por vez. Se já tiver enviado anteriormente, você pode prosseguir.
+Todos os pull requests devem estar acompanhados de um [Contrato de licença de colaborador ou CLA](https://opensource.adobe.com/cla.html). Isso dá à Adobe a permissão de redistribuir suas contribuições como parte do projeto. É necessário enviar somente um CLA da Adobe por vez. Se já tiver enviado anteriormente, você pode prosseguir.
 
 ### Vídeo de introdução rápido
 

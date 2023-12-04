@@ -7,10 +7,10 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2582'
-ht-degree: 2%
+source-wordcount: '2444'
+ht-degree: 0%
 
 ---
 
@@ -181,7 +181,7 @@ A nova configuração de implantação está então disponível ao definir confi
 1. CRXDE Lite aberto; por exemplo:
    [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
-1. Vá até :
+1. Navegue até :
    `/apps/msm/<your-project>/rolloutconfigs`
 
    >[!NOTE]
@@ -191,7 +191,7 @@ A nova configuração de implantação está então disponível ao definir confi
 
    >[!NOTE]
    >
-   >Você não deve alterar nada no `/libs` caminho.
+   >Não altere nada no `/libs` caminho.
    >Isso ocorre porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode ser substituído ao aplicar um hotfix ou pacote de recursos).
    >O método recomendado para configuração e outras alterações é:
    >
@@ -653,7 +653,7 @@ Ao criar uma propriedade de página personalizada, talvez seja necessário consi
 
 Por exemplo, se duas novas propriedades de página estiverem sendo adicionadas:
 
-* Email de contato:
+* E-mail de contato:
 
    * Não é necessário implantar esta propriedade, pois ela será diferente em cada país (ou marca e assim por diante).
 
@@ -663,7 +663,7 @@ Por exemplo, se duas novas propriedades de página estiverem sendo adicionadas:
 
 Em seguida, é necessário garantir que:
 
-* Email de contato:
+* E-mail de contato:
 
 * É excluído das propriedades implementadas; consulte [Excluir propriedades e tipos de nó da sincronização](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization).
 

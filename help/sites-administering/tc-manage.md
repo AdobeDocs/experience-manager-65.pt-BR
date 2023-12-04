@@ -2,10 +2,10 @@
 title: Gerenciamento de projetos de tradução
 description: Saiba como gerenciar projetos de tradução no Adobe Experience Manager.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3578'
-ht-degree: 52%
+source-wordcount: '3504'
+ht-degree: 39%
 
 ---
 
@@ -80,12 +80,12 @@ Depois de traduzir, é possível [revisar a tradução](#reviewing-and-promoting
 
    Por exemplo, para traduzir as páginas em inglês do Site de demonstração do Geometrixx, selecione Site de demonstração do Geometrixx > Inglês.
 
-1. Na barra de ferramentas, clique ou toque em Referências.
+1. Na barra de ferramentas, clique em Referências.
 
    ![chlimage_1-241](assets/chlimage_1-241.png)
 
 1. Selecione Cópias de idioma e, em seguida, selecione as cópias de idioma para as quais você está traduzindo as páginas de origem.
-1. Clique ou toque em Criar e traduzir e configure o trabalho de tradução:
+1. Clique em Criar e traduzir e configure o trabalho de tradução:
 
    * Use a lista suspensa Idiomas para selecionar uma cópia de idioma para a qual deseja traduzir. Selecione idiomas adicionais, conforme necessário. Os idiomas exibidos na lista correspondem às [raízes de idioma que você criou](/help/sites-administering/tc-prep.md#creating-a-language-root).
    * Para traduzir a página selecionada e todas as páginas secundárias, selecione Selecionar todas as subpáginas. Para traduzir apenas a página selecionada, desmarque a opção.
@@ -94,7 +94,7 @@ Depois de traduzir, é possível [revisar a tradução](#reviewing-and-promoting
 
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
-1. Clique ou toque em Criar.
+1. Clique em Criar.
 
 ### Criar projetos de tradução para uma cópia de idioma existente {#create-translation-projects-for-an-existing-language-copy}
 
@@ -102,12 +102,12 @@ Depois de traduzir, é possível [revisar a tradução](#reviewing-and-promoting
 
    Por exemplo, para traduzir as páginas em inglês do Site de demonstração do Geometrixx, selecione Site de demonstração do Geometrixx > Inglês.
 
-1. Na barra de ferramentas, clique ou toque em Referências.
+1. Na barra de ferramentas, clique em Referências.
 
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
 1. Selecione Cópias de idioma e, em seguida, selecione as cópias de idioma para as quais você está traduzindo as páginas de origem.
-1. Clique ou toque em Atualizar cópias de idioma e configure o trabalho de tradução:
+1. Clique em Atualizar cópias de idioma e configure o trabalho de tradução:
 
    * Para traduzir a página selecionada e todas as páginas secundárias, selecione Selecionar todas as subpáginas. Para traduzir apenas a página selecionada, desmarque a opção.
    * Em Projeto, selecione Criar novo projeto de tradução.
@@ -115,7 +115,7 @@ Depois de traduzir, é possível [revisar a tradução](#reviewing-and-promoting
 
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
-1. Clique ou toque em Iniciar.
+1. Clique em Start.
 
 ## Adicionar páginas a um projeto de tradução {#adding-pages-to-a-translation-project}
 
@@ -129,7 +129,7 @@ Assim como ao criar um projeto, ao adicionar páginas, cópias das páginas são
 
    Por exemplo, para traduzir as páginas em inglês do Site de demonstração do Geometrixx, selecione Site de demonstração do Geometrixx > Inglês.
 
-1. Na barra de ferramentas, clique ou toque em Referências.
+1. Na barra de ferramentas, clique em Referências.
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
@@ -137,7 +137,7 @@ Assim como ao criar um projeto, ao adicionar páginas, cópias das páginas são
 
    ![chlimage_1-35](assets/chlimage_1-35.jpeg)
 
-1. Clique ou toque em Atualizar cópias de idioma e configure as propriedades:
+1. Clique em Atualizar cópias de idioma e configure as propriedades:
 
    * Para traduzir a página selecionada e todas as páginas secundárias, selecione Selecionar todas as subpáginas. Para traduzir apenas a página selecionada, desmarque a opção.
    * Em Projeto, selecione Adicionar a um projeto de tradução existente.
@@ -149,21 +149,21 @@ Assim como ao criar um projeto, ao adicionar páginas, cópias das páginas são
 
    ![chlimage_1-36](assets/chlimage_1-36.jpeg)
 
-1. Clique ou toque em Iniciar.
+1. Clique em Start.
 
 ## Adicionar páginas/ativos a um trabalho de tradução {#adding-pages-assets-to-a-translation-job}
 
 Você pode adicionar páginas, ativos, tags ou dicionários i18n à Tarefa de tradução do seu projeto de tradução. Para adicionar páginas ou ativos:
 
-1. Na parte inferior do bloco Tarefa de tradução do seu projeto, clique ou toque nas reticências.
+1. Na parte inferior do bloco Tarefa de tradução do seu projeto, clique nas reticências.
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
-1. Clique ou toque em Adicionar e Páginas/Ativos.
+1. Clique em Adicionar e em Páginas/Ativos.
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-1. Selecione o item na extremidade superior da ramificação que deseja adicionar e clique ou toque no ícone de marca de seleção. É possível selecionar várias vezes.
+1. Selecione o item na extremidade superior da ramificação que deseja adicionar e clique no ícone de marca de seleção. É possível selecionar várias vezes.
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
@@ -177,15 +177,15 @@ Suas páginas e/ou ativos são adicionados ao seu trabalho de tradução.
 
 Você pode adicionar páginas, ativos, tags ou dicionários i18n à Tarefa de tradução do seu projeto de tradução. Para adicionar um dicionário i18n:
 
-1. Na parte inferior do bloco Tarefa de tradução do seu projeto, clique ou toque nas reticências.
+1. Na parte inferior do bloco Tarefa de tradução do seu projeto, clique nas reticências.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. Clique ou toque em Adicionar e dicionário-I18N.
+1. Clique em Adicionar e dicionário-I18N.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Selecione o dicionário que deseja adicionar e clique ou toque no botão Adicionar.
+1. Selecione o dicionário que deseja adicionar e clique no botão Adicionar.
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
@@ -201,15 +201,15 @@ Seu dicionário agora está em seu trabalho de tradução.
 
 Você pode adicionar páginas, ativos, tags ou dicionários i18n à Tarefa de tradução do seu projeto de tradução. Para adicionar tags:
 
-1. Na parte inferior do bloco Tarefa de tradução do seu projeto, clique ou toque nas reticências.
+1. Na parte inferior do bloco Tarefa de tradução do seu projeto, clique nas reticências.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
-1. Clique ou toque em Adicionar e, em seguida, em Tags.
+1. Clique em Adicionar e, em seguida, em Tags.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Selecione as tags que deseja adicionar e clique ou toque no ícone de marca de seleção. É possível selecionar várias vezes.
+1. Selecione as tags que deseja adicionar e clique no ícone de marca de seleção. É possível selecionar várias vezes.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
@@ -250,12 +250,12 @@ A tabela a seguir descreve cada status que um trabalho ou um item no trabalho po
 | Tradução em andamento | Para uma tarefa, a tradução de um ou mais arquivos ainda não foi concluída. Para um item na tarefa, o item está sendo traduzido. |
 | Traduzido | Para uma tarefa, a tradução de todos os arquivos está concluída. Para um item na tarefa, o item é traduzido. |
 | Pronto para revisão | O item na tarefa é traduzido e o arquivo foi importado para o AEM. |
-| Concluir | O proprietário do projeto indicou que o contrato de tradução está concluído. |
+| Concluído | O proprietário do projeto indicou que o contrato de tradução está concluído. |
 | Cancelar | Indica que o fornecedor de tradução deve parar de trabalhar em um trabalho de tradução. |
 | Atualização de erro | Ocorreu um erro ao transferir arquivos entre o AEM e o serviço de tradução. |
 | Estado desconhecido | Ocorreu um erro desconhecido. |
 
-Para ver o status de cada arquivo no trabalho, clique ou toque nas reticências na parte inferior do bloco.
+Para ver o status de cada arquivo no trabalho, clique nas reticências na parte inferior do bloco.
 
 ## Definir a data de vencimento dos trabalhos de tradução {#setting-the-due-date-of-translation-jobs}
 
@@ -268,7 +268,7 @@ A configuração da data de vencimento funciona corretamente somente quando o fo
 
 O procedimento a seguir define a data de vencimento de um projeto.
 
-1. Clique ou toque nas reticências na parte inferior do bloco Resumo da tradução.
+1. Clique nas reticências na parte inferior do bloco Resumo da tradução.
 
    ![chlimage_1-260](assets/chlimage_1-260.png)
 
@@ -276,15 +276,15 @@ O procedimento a seguir define a data de vencimento de um projeto.
 
    ![chlimage_1-261](assets/chlimage_1-261.png)
 
-1. Clique ou toque em Concluído.
+1. Clique em Concluído.
 
 O procedimento a seguir define a data de vencimento de um trabalho de tradução.
 
-1. No bloco Tarefa de tradução, clique ou toque no menu de comandos e, em seguida, em Data de vencimento.
+1. No bloco Tarefa de tradução, clique no menu de comandos e, em seguida, clique em Data de vencimento.
 
    ![chlimage_1-262](assets/chlimage_1-262.png)
 
-1. Na caixa de diálogo, clique ou toque no ícone de calendário e, em seguida, selecione a data e a hora a serem usadas como a data de vencimento e clique em Salvar.
+1. Na caixa de diálogo, clique no ícone de calendário e selecione a data e a hora a serem usadas como a data de vencimento e, em seguida, clique em Salvar.
 
    ![chlimage_1-263](assets/chlimage_1-263.png)
 
@@ -303,11 +303,11 @@ Ao determinar o escopo de um trabalho de tradução, o status do trabalho é `Sc
 O escopo funciona corretamente somente quando o fornecedor de tradução que você está usando aceita esse recurso.
 
 1. No console de Projetos, abra o projeto de tradução.
-1. No bloco Tarefa de tradução, clique ou toque no menu de comandos e, em seguida, em Solicitar escopo.
+1. No bloco Tarefa de tradução, clique no menu de comandos e, em seguida, clique em Solicitar escopo.
 
    ![chlimage_1-264](assets/chlimage_1-264.png)
 
-1. Quando o status do trabalho for alterado para SCOPE_COMPLETED, no bloco Trabalho de tradução, clique ou toque no menu de comandos e, em seguida, clique ou toque em Mostrar escopo.
+1. Quando o status da tarefa for alterado para SCOPE_COMPLETED, no bloco Tarefa de tradução, clique no menu de comandos e, em seguida, clique em Mostrar escopo.
 
 ## Iniciar um trabalho de tradução {#starting-a-translation-job}
 
@@ -318,19 +318,19 @@ Depois de iniciar o trabalho de tradução, o bloco Tarefa de tradução mostra 
 ![chlimage_1-265](assets/chlimage_1-265.png)
 
 1. No console de Projetos, abra o projeto de tradução.
-1. No bloco Tarefa de tradução, clique ou toque no menu de comandos e, em seguida, em Iniciar.
+1. No bloco Tarefa de tradução, clique no menu de comandos e em Iniciar.
 
    ![chlimage_1-266](assets/chlimage_1-266.png)
 
-1. Na caixa de diálogo Ação que confirma o início da tradução, clique ou toque em Fechar.
+1. Na caixa de diálogo Ação que confirma o início da tradução, clique em Fechar.
 
 ## Cancelar um trabalho de tradução {#canceling-a-translation-job}
 
 Cancele um trabalho de tradução para interromper o processo e impedir que o fornecedor realize mais traduções. Você pode cancelar um trabalho quando ele tiver a `Committed For Translation` ou `Translation In Progress` status.
 
 1. No console de Projetos, abra o projeto de tradução.
-1. No bloco Tarefa de tradução, clique ou toque no menu de comandos e, em seguida, em Cancelar.
-1. Na caixa de diálogo Ação que confirma o cancelamento da tradução, clique ou toque em OK.
+1. No bloco Tarefa de tradução, clique no menu de comandos e em Cancelar.
+1. Na caixa de diálogo Ação que confirma o cancelamento da tradução, clique em OK.
 
 ## Aceitar/Rejeitar Fluxo de Trabalho {#accept-reject-workflow}
 
@@ -350,18 +350,18 @@ Quando o conteúdo for traduzido para uma cópia de idioma existente, revise as 
 
 ![chlimage_1-269](assets/chlimage_1-269.png)
 
-1. Selecione a página no idioma principal, clique ou toque em Referências e, em seguida, em Cópias de idioma.
-1. Clique ou toque na cópia do idioma a ser revisado.
+1. Selecione a página no idioma principal, clique em Referências e, em seguida, clique em Cópias de idioma.
+1. Clique na cópia de idioma a ser revisada.
 
    ![chlimage_1-270](assets/chlimage_1-270.png)
 
-1. Clique ou toque em Inicialização para revelar os comandos relacionados à inicialização.
+1. Clique em Launch para revelar os comandos relacionados à inicialização.
 
    ![chlimage_1-271](assets/chlimage_1-271.png)
 
 1. Para abrir a cópia de inicialização da página com o objetivo de revisar e editar o conteúdo, clique em Abrir página.
 1. Para promover a cópia de inicialização após ter revisado o conteúdo e feito as alterações necessárias, clique em Promover.
-1. Na página Promover inicialização, especifique quais páginas serão promovidas e clique ou toque em Promover.
+1. Na página Promover inicialização, especifique quais páginas serão promovidas e clique em Promover.
 
 ## Comparação de cópias de idioma {#comparing-language-copies}
 
@@ -386,29 +386,29 @@ Após concluir o job, ele terá o status Concluído.
 
 ![chlimage_1-272](assets/chlimage_1-272.png)
 
-Arquive um trabalho de tradução depois que ele estiver concluído e você não precisar mais ver os detalhes de status. Ao arquivar o trabalho, o bloco Tarefa de tradução é removido do projeto.
+Arquive um trabalho de tradução depois que ele estiver concluído e você não precisar mais ver os detalhes de status do trabalho. Ao arquivar o trabalho, o bloco Tarefa de tradução é removido do projeto.
 
 ## Criar a estrutura de uma cópia de idioma {#creating-the-structure-of-a-language-copy}
 
 Preencha sua cópia de idioma para que ela tenha conteúdo do idioma principal que você está traduzindo. Antes de preencher a cópia de idioma, é necessário ter [criado a raiz de idioma](/help/sites-administering/tc-prep.md#creating-a-language-root) da cópia do idioma.
 
 1. Use o console Sites para selecionar a raiz do idioma principal que você está usando como a origem. Por exemplo, para traduzir as páginas em inglês do Site de demonstração do Geometrixx, selecione Conteúdo > Site de demonstração do Geometrixx > Inglês.
-1. Na barra de ferramentas, clique ou toque em Referências.
+1. Na barra de ferramentas, clique em Referências.
 
    ![chlimage_1-273](assets/chlimage_1-273.png)
 
-1. Selecionar Cópias de idioma, e em seguida, selecione as cópias de idioma que você deseja preencher.
+1. Selecione Cópias de idioma e, em seguida, selecione as cópias de idioma que deseja preencher.
 
    ![chlimage_1-38](assets/chlimage_1-38.jpeg)
 
-1. Clique ou toque em Atualizar cópias de idioma para revelar as ferramentas de tradução e configurar as propriedades:
+1. Clique em Atualizar cópias de idioma para revelar as ferramentas de tradução e configurar as propriedades:
 
    * Selecione a opção Selecionar todas as subpáginas.
-   * Para Projeto, selecione Criar apenas estrutura.
+   * Para Projeto, selecione Criar somente estrutura.
 
    ![chlimage_1-39](assets/chlimage_1-39.jpeg)
 
-1. Clique ou toque em Iniciar.
+1. Clique em Start.
 
 ## Mover ou renomear uma página de origem {#move-source}
 
@@ -442,24 +442,24 @@ Ao criar manualmente um projeto de tradução, você deve fornecer valores para 
 * **Idioma de destino:** O idioma para o qual o conteúdo está sendo traduzido.
 * **Método de tradução:** Selecione Tradução humana para indicar que a tradução deve ser executada manualmente.
 
-1. Na barra de ferramentas do console Projetos, clique ou toque em Criar.
-1. Selecione o modelo Projeto de tradução e clique ou toque em Próximo.
+1. Na barra de ferramentas do console Projetos, clique em Criar.
+1. Selecione o modelo Projeto de tradução e clique em Próximo.
 1. Insira valores para as propriedades Básicas.
-1. Clique ou toque em Avançado e forneça valores para as propriedades relacionadas à tradução.
-1. Clique ou toque em Criar. Na caixa de confirmação, clique ou toque em Concluído para retornar ao console de Projetos, ou em Abrir projeto para abrir e começar a gerenciar o projeto.
+1. Clique em Avançado e forneça valores para as propriedades relacionadas à tradução.
+1. Clique em Criar. Na caixa de confirmação, clique em Concluído para retornar ao console de Projetos ou clique em Abrir projeto para abrir e começar a gerenciar o projeto.
 
 ## Exportar um trabalho de tradução {#exporting-a-translation-job}
 
 É possível baixar o conteúdo de um trabalho de tradução, por exemplo, para enviar a um provedor de tradução que não esteja integrado ao AEM por meio de um conector ou para revisar o conteúdo.
 
-1. No menu suspenso do bloco Tarefa de tradução, clique ou toque em Exportar.
-1. Na caixa de diálogo Exportar, clique ou toque em Baixar arquivo exportado e, se necessário, use a caixa de diálogo do navegador da Web para salvar o arquivo.
-1. Na caixa de diálogo Exportar, clique ou toque em Fechar.
+1. No menu suspenso do bloco Tarefa de tradução, clique em Exportar.
+1. Na caixa de diálogo Exportar, clique em Baixar arquivo exportado e, se necessário, use a caixa de diálogo do navegador da Web para salvar o arquivo.
+1. Na caixa de diálogo Exportar, clique em Fechar.
 
 ## Importar um trabalho de tradução {#importing-a-translation-job}
 
 Você pode importar conteúdo traduzido para AEM, por exemplo, quando seu provedor de tradução o envia para você porque não está integrado ao AEM por meio de um conector.
 
-1. No menu suspenso do bloco Tarefa de tradução, clique ou toque em Importar.
+1. No menu suspenso do bloco Tarefa de tradução, clique em Importar.
 1. Use a caixa de diálogo do navegador da web para selecionar o arquivo a ser importado.
-1. Na caixa de diálogo Importar, clique ou toque em Fechar.
+1. Na caixa de diálogo Importar, clique em Fechar.

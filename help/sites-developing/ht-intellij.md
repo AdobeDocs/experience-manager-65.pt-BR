@@ -8,9 +8,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
 exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Para isso, siga as instruções em [Como trabalhar com JSPs](/help/sites-develop
 1. Abra o **Importar** caixa de diálogo no IntelliJ IDEA por
 
    * seleção **Importar projeto** na tela de boas-vindas, se você ainda não tiver um projeto aberto
-   * seleção **Arquivo -> Importar projeto** no menu principal
+   * seleção **Arquivo > Importar projeto** no menu principal
 
 1. Na caixa de diálogo Importar, selecione o arquivo POM do projeto.
 
@@ -86,7 +86,7 @@ As etapas a seguir são necessárias para depurar JSPs com o IntelliJ IDEA
 
 O IntelliJ IDEA deve entender onde encontrar os JSPs para depuração. Porque IDEA não pode interpretar o `content-package-maven-plugin` configurações, ele deve ser configurado manualmente.
 
-1. Ir para **Arquivo -> Estrutura de projeto**
+1. Ir para **Arquivo > Estrutura de projeto**
 1. Selecione o **Conteúdo** módulo
 1. Clique em **+** acima da lista de módulos e selecione **Web**
 1. Como o Diretório de Recursos da Web, selecione o `content/src/main/content/jcr_root subdirectory` do seu projeto, conforme mostrado na captura de tela abaixo.
@@ -104,7 +104,7 @@ O IntelliJ IDEA deve entender onde encontrar os JSPs para depuração. Porque ID
 
 #### Configurar um perfil de depuração {#configure-a-debug-profile}
 
-1. Ir para **Executar -> Editar configurações**
+1. Ir para **Executar > Editar configurações**
 1. Clique em **+** e selecione **Remoto JSR45**
 1. Na caixa de diálogo de configuração, selecione **Configurar** ao lado de **Servidor de aplicativos** e configurar um servidor genérico
 1. Defina a página inicial com um URL apropriado se desejar abrir um navegador ao iniciar a depuração
@@ -141,7 +141,7 @@ CQ_JVM_OPTS="$CQ_JVM_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,su
 
 Agora você está configurado para depurar os JSPs no AEM.
 
-1. Selecionar **Executar -> Depurar -> Seu Perfil De Depuração**
+1. Selecionar **Executar > Depurar > Seu Perfil De Depuração**
 1. Definir pontos de interrupção no código do componente
 1. Acessar uma página no seu navegador
 

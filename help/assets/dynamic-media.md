@@ -10,10 +10,10 @@ discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Collaboration,Asset Management
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 8%
+source-wordcount: '418'
+ht-degree: 7%
 
 ---
 
@@ -82,7 +82,7 @@ Os ativos habilitados para Dynamic Media incluem `pyramid.tiffs`.
 
 ### Exibições de ativos alteradas {#asset-views-change}
 
-Com o Dynamic Media ativado, é possível ampliar e reduzir clicando no `+` e `-` botões. Você também pode clicar/tocar para aplicar zoom em determinada área. Reverter leva à versão original e você pode tornar a imagem em tela cheia clicando nas setas diagonais. Dynamic Media habilitado tem esta aparência:
+Com o Dynamic Media ativado, é possível ampliar e reduzir clicando no `+` e `-` botões. Você também pode clicar em para aplicar zoom em determinada área. Reverter leva à versão original e você pode tornar a imagem em tela cheia clicando nas setas diagonais. Dynamic Media habilitado tem esta aparência:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

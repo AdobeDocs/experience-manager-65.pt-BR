@@ -7,10 +7,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 8%
+source-wordcount: '723'
+ht-degree: 6%
 
 ---
 
@@ -41,7 +41,7 @@ Não se esqueça de limitar a inclusão do `cq.authoring.pagemodel.messaging` ca
 
 O tipo de dados de comunicação é definido como um elemento HTML dentro do componente Página AEM usando o `data-cq-datatype` atributo. Quando o tipo de dados de comunicação é definido como JSON, as solicitações do GET atingem os pontos de extremidade do Modelo Sling de um componente. Depois que uma atualização ocorre no editor de páginas, a representação JSON do componente atualizado é enviada para a biblioteca do Modelo de página. A biblioteca Modelo de página avisa o SPA sobre atualizações.
 
-**Componente de página SPA -`body.html`**
+**Componente de página do SPA -`body.html`**
 
 ```
 <div id="page"></div>
@@ -49,7 +49,7 @@ O tipo de dados de comunicação é definido como um elemento HTML dentro do com
 
 Além de ser uma boa prática para não atrasar a geração de DOM, a estrutura SPA requer que os scripts sejam adicionados ao final do corpo.
 
-**Componente de página SPA -`customfooterlibs.html`**
+**Componente de página do SPA -`customfooterlibs.html`**
 
 ```
 <sly data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}"></sly>
@@ -60,7 +60,7 @@ Além de ser uma boa prática para não atrasar a geração de DOM, a estrutura 
 
 As propriedades do meta recursos que descrevem o conteúdo SPA:
 
-**Componente de página SPA -`customheaderlibs.html`**
+**Componente de página do SPA -`customheaderlibs.html`**
 
 ```
 <meta property="cq:datatype" data-sly-test="${wcmmode.edit || wcmmode.preview}" content="JSON"/>

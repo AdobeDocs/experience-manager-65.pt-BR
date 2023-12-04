@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1519'
-ht-degree: 82%
+source-wordcount: '1521'
+ht-degree: 73%
 
 ---
 
@@ -44,7 +44,7 @@ Quando um item de trabalho é atribuído a você (por exemplo, **Aprovar conteú
    * O número de fluxos de trabalho aos quais a página está sujeita. É possível:
 
       * use as setas para a esquerda/direita para navegar pelas informações de status dos vários workflows.
-      * clique/toque no número em si para abrir uma lista suspensa de todos os fluxos de trabalho aplicáveis e selecione o fluxo de trabalho que deseja exibir na barra de status.
+      * clique no número real para abrir uma lista suspensa de todos os workflows aplicáveis e selecione o workflow que deseja exibir na barra de status.
 
   ![wf-59](assets/wf-59.png)
 
@@ -55,7 +55,7 @@ Quando um item de trabalho é atribuído a você (por exemplo, **Aprovar conteú
   >
   >As ações são exibidas quando o usuário atual está diretamente envolvido na etapa atual do fluxo de trabalho.
 
-* Quando a **Linha do tempo** é aberta para o recurso, a etapa do fluxo de trabalho é exibida. Ao clicar/tocar no banner do alerta, as ações disponíveis também serão exibidas:
+* Quando a **Linha do tempo** é aberta para o recurso, a etapa do fluxo de trabalho é exibida. Ao clicar no banner do alerta, as ações disponíveis também serão mostradas:
 
   ![screen-shot_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
 
@@ -80,7 +80,7 @@ Nesta ação, você pode indicar:
 Use o procedimento a seguir para concluir o item de trabalho:
 
 1. Abra a **[Caixa de entrada do AEM](/help/sites-authoring/inbox.md)**.
-1. Selecione o item do fluxo do trabalho no qual deseja executar a ação (toque/clique na miniatura).
+1. Selecione o item do fluxo de trabalho que deseja executar a ação (clique na miniatura).
 1. Selecione **Concluído** na barra de ferramentas.
 1. A variável **Item de trabalho concluído** é aberta. Selecione o **Próxima etapa** no seletor suspenso e adicione um **Comentário** se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
@@ -102,7 +102,7 @@ Também é possível usar a linha do tempo para concluir e avançar uma etapa:
 
    ![screen-shot_2019-03-05at120744](assets/screen-shot_2019-03-05at120744.png)
 
-1. Clique/toque no banner do alerta para mostrar as ações disponíveis. Selecionar **Avançar**:
+1. Clique no banner de alerta para mostrar as ações disponíveis. Selecionar **Avançar**:
 
    ![screen-shot_2019-03-05at120453-1](assets/screen-shot_2019-03-05at120453-1.png)
 
@@ -139,7 +139,7 @@ Nesta ação, você pode indicar:
 Use o procedimento a seguir para delegar um item de trabalho:
 
 1. Abra a **[Caixa de entrada do AEM](/help/sites-authoring/inbox.md)**.
-1. Selecione o item do fluxo do trabalho no qual deseja executar a ação (toque/clique na miniatura).
+1. Selecione o item do fluxo de trabalho que deseja executar a ação (clique na miniatura).
 1. Selecione **Delegar** na barra de ferramentas.
 1. A caixa de diálogo se abre. Especifique a **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário** se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
@@ -158,7 +158,7 @@ Use o procedimento a seguir para delegar um item de trabalho:
 Também é possível usar a linha do tempo para delegar e/ou atribuir uma etapa:
 
 1. Selecione a página desejada e abra a **Linha do tempo** (ou abra a **Linha do tempo** e selecione a página).
-1. Clique/toque no banner do alerta para mostrar as ações disponíveis. Selecionar **Alterar responsável**:
+1. Clique no banner de alerta para mostrar as ações disponíveis. Selecionar **Alterar responsável**:
 
    ![screen-shot_2019-03-05at120453-2](assets/screen-shot_2019-03-05at120453-2.png)
 
@@ -189,7 +189,7 @@ Nesta ação, você pode indicar:
 Use o procedimento a seguir para retroceder:
 
 1. Abra a **[Caixa de entrada do AEM](/help/sites-authoring/inbox.md)**.
-1. Selecione o item do fluxo do trabalho no qual deseja executar a ação (toque/clique na miniatura).
+1. Selecione o item do fluxo de trabalho que deseja executar a ação (clique na miniatura).
 1. Selecione **Retroceder** para abrir a caixa de diálogo.
 
 1. Especifique a **Etapa anterior** e adicionar um **Comentário** se necessário.
@@ -209,7 +209,7 @@ Use o procedimento a seguir para retroceder:
 Também é possível usar a linha do tempo para retroceder para uma etapa anterior:
 
 1. Selecione a página desejada e abra a **Linha do tempo** (ou abra a **Linha do tempo** e selecione a página).
-1. Clique/toque no banner do alerta para mostrar as ações disponíveis. Selecione **Reverter**:
+1. Clique no banner de alerta para mostrar as ações disponíveis. Selecione **Reverter**:
 
    ![screen-shot_2019-03-05at121131](assets/screen-shot_2019-03-05at121131.png)
 
@@ -251,7 +251,7 @@ Você pode abrir os detalhes do item de trabalho nos seguintes locais:
 Para abrir um item do fluxo de trabalho e exibir os detalhes:
 
 1. Abra a **[Caixa de entrada do AEM](/help/sites-authoring/inbox.md)**.
-1. Selecione o item do fluxo do trabalho no qual deseja executar a ação (toque/clique na miniatura).
+1. Selecione o item do fluxo de trabalho que deseja executar a ação (clique na miniatura).
 1. Selecione **Abrir** para abrir as guias de informações.
 
 1. Se necessário, selecione a ação apropriada, forneça os detalhes e confirme com **OK** (ou **Cancelar**).
@@ -274,7 +274,7 @@ Para abrir um item do fluxo de trabalho e exibir os detalhes:
 Para exibir o conteúdo e os recursos da instância de fluxo de trabalho:
 
 1. Abra a **[Caixa de entrada do AEM](/help/sites-authoring/inbox.md)**.
-1. Selecione o item do fluxo do trabalho no qual deseja executar a ação (toque/clique na miniatura).
+1. Selecione o item do fluxo de trabalho que deseja executar a ação (clique na miniatura).
 1. Selecione **Exibir carga** na barra de ferramentas para abrir a caixa de diálogo.
 
    Como um pacote de fluxo de trabalho é simplesmente uma coleção de setas para os caminhos no repositório, é possível adicionar/remover/modificar as entradas aqui para ajustar o que é referenciado pelo pacote de fluxo de trabalho. Use o componente **Definição de recurso** para adicionar novas entradas.

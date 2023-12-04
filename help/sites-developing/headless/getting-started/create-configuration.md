@@ -2,10 +2,10 @@
 title: Criação de um guia de início rápido do headless de configuração
 description: Crie uma configuração como um primeiro passo para começar a usar o headless no AEM 6.5.
 exl-id: f1df97a1-164f-4ed4-bb63-34caf35ae27c
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 67%
+ht-degree: 65%
 
 ---
 
@@ -27,7 +27,7 @@ No contexto do gerenciamento de conteúdo headless no AEM, considere uma configu
 
 Um administrador só precisaria criar uma configuração uma vez ou, muito raramente, quando um novo espaço de trabalho fosse necessário para organizar seus modelos de conteúdo. Para os propósitos deste guia de introdução, precisamos criar apenas uma configuração.
 
-1. Faça logon no AEM e, no menu principal, selecione **Ferramentas -> Geral -> Navegador de configuração**.
+1. Faça logon no AEM e, no menu principal, selecione **Ferramentas > Geral > Navegador de configuração**.
 1. Forneça um **Título** para sua configuração.
    * Um nome será gerado automaticamente com base no título e ajustado de acordo com [Convenções de nomenclatura do AEM.](/help/sites-developing/naming-conventions.md). Ele se tornará o nome do nó no repositório.
 1. Verifique as seguintes opções:
@@ -36,7 +36,7 @@ Um administrador só precisaria criar uma configuração uma vez ou, muito raram
 
    ![Criar configuração](assets/create-configuration.png)
 
-1. Toque ou clique em **Criar**
+1. Clique em **Criar**
 
 Você pode criar várias configurações, se necessário. As configurações também podem ser aninhadas.
 

@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '7687'
+source-wordcount: '7640'
 ht-degree: 0%
 
 ---
@@ -186,7 +186,7 @@ Se você especificar o caminho de uma pasta, por exemplo, anexos, todos os arqui
 
 **Salve o documento de registro gerado usando as opções abaixo:** Especifique o local para manter um documento de arquivo de registro. Você pode optar por substituir a pasta de carga útil, colocar o documento de registro em um local no diretório da carga útil ou armazenar o documento de registro em uma variável do tipo de dados Documento.
 
-**Localidade**: especifique o idioma do documento de registro. Selecionar **Literal** para selecionar o local em uma lista suspensa ou selecione **Variável** para recuperar o local do valor armazenado em uma variável do tipo de dados string. Você deve definir o código do local ao armazenar o valor do local em uma variável. Por exemplo, especifique **pt_BR** para inglês e **fr_FR** para o francês.
+**Localidade**: especifique o idioma do documento de registro. Selecionar **Literal** para selecionar o local em uma lista suspensa ou selecione **Variável** para recuperar o local do valor armazenado em uma variável do tipo de dados string. Defina o código do local ao armazenar o valor do local em uma variável. Por exemplo, especifique **pt_BR** para inglês e **fr_FR** para o francês.
 
 ## Chamar etapa do serviço de modelo de dados de formulário {#invoke-form-data-model-service-step}
 
@@ -215,7 +215,7 @@ Para explicar entradas para campos da etapa, a seguinte tabela de banco de dados
    <td>1</td> 
   </tr> 
   <tr> 
-   <td>Endereço de email<br /> </td> 
+   <td>Endereço de e-mail<br /> </td> 
    <td>srose@we.info</td> 
   </tr> 
  </tbody> 
@@ -279,7 +279,7 @@ A etapa Assinar documento permite usar o Adobe Sign para assinar documentos. A e
 
 * **Nome do Contrato:** Especifique o título do contrato. O nome do contrato torna-se parte do assunto e do corpo do texto do email enviado aos recipients. Você pode armazenar o nome em uma variável do tipo de dados String ou selecionar **Literal** para adicionar o nome manualmente.
 
-* **Localidade:** Especifique o idioma para as opções de email e verificação. Você pode armazenar o local em uma variável do tipo de dados String ou selecionar **Literal** para escolher o local na lista de opções disponíveis. Você deve definir o código do local ao armazenar o valor do local em uma variável. Por exemplo, especifique **pt_BR** para inglês e **fr_FR** para o francês.
+* **Localidade:** Especifique o idioma para as opções de email e verificação. Você pode armazenar o local em uma variável do tipo de dados String ou selecionar **Literal** para escolher o local na lista de opções disponíveis. Defina o código do local ao armazenar o valor do local em uma variável. Por exemplo, especifique **pt_BR** para inglês e **fr_FR** para o francês.
 
 * **Configuração da nuvem do Adobe Sign**: escolha uma configuração de nuvem do Adobe Sign. Se não tiver configurado o Adobe Sign para o AEM Forms, consulte [Integrar o Adobe Sign com o AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 

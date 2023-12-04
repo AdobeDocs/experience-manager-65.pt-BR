@@ -7,10 +7,10 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2451'
-ht-degree: 2%
+source-wordcount: '2462'
+ht-degree: 3%
 
 ---
 
@@ -97,7 +97,7 @@ Selecionar **Editar** irá:
 
 ### Adicionar uma etapa a um modelo {#adding-a-step-to-a-model}
 
-Você deve adicionar etapas ao modelo para representar a atividade a ser executada - cada etapa executa uma atividade específica. Uma seleção de componentes da etapa está disponível em uma instância padrão do AEM.
+Adicione etapas ao modelo para representar a atividade a ser executada - cada etapa executa uma atividade específica. Uma seleção de componentes da etapa está disponível em uma instância padrão do AEM.
 
 Ao editar um modelo, as etapas disponíveis aparecem nos vários grupos da **Navegador de etapas**. Por exemplo:
 
@@ -144,7 +144,7 @@ Você pode **Configurar** e personalizar o comportamento de uma etapa do fluxo d
 
 1. Para abrir o **Propriedades da etapa** para uma etapa:
 
-   * Clique/toque na * etapa * no modelo de fluxo de trabalho e selecione **Configurar** na barra de ferramentas do componente.
+   * Clique na etapa * * do modelo de fluxo de trabalho e selecione **Configurar** na barra de ferramentas do componente.
 
    * Clique duas vezes na etapa.
 
@@ -243,14 +243,14 @@ Para definir **Estágios** para o seu workflow:
 
    Um estágio pode ser atribuído a mais de uma etapa. Por exemplo:
 
-   | **Etapa** | **Fase** |
+   | **Etapa** | **Estágio** |
    |---|---|
    | Etapa 1 | Criar |
    | Etapa 2 | Criar |
    | Etapa 3 | Análise |
    | Etapa 4 | Aprovar |
    | Etapa 5 | Aprovar |
-   | Etapa 6 | Concluir |
+   | Etapa 6 | Concluído |
 
 1. Confirmar as alterações com **Sincronizar** (barra de ferramentas do editor) para gerar o modelo de tempo de execução.
 
@@ -330,7 +330,7 @@ Para ilustrar algumas das possibilidades de criação de um workflow, o exemplo 
 
    * **Início do fluxo**
    * `Step 1`
-   * **Final do fluxo**
+   * **Fim do fluxo**
 
 1. Excluir `Step 1` (pois é o tipo de etapa errado para este exemplo):
 

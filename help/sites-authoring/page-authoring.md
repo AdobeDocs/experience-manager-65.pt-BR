@@ -2,7 +2,7 @@
 title: Criação de páginas de conteúdo no AEM
 description: As tarefas envolvidas na criação de uma página de conteúdo no Adobe Experience Manager 6.5.
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -41,7 +41,7 @@ No lado esquerdo de uma página editável, um navegador deslizante pode ser aber
 No lado esquerdo de uma página editável, um navegador deslizante pode ser aberto; daqui, os ativos podem ser arrastados para a página; por exemplo, para posicionar ativos ou criar links para outras páginas.
 
 * **Component Toolbar**
-Um clique/toque duplo único ou lento revelará a barra de ferramentas apropriada (única para a barra de ferramentas de edição local e, em seguida, lenta dupla para a barra de ferramentas completa).
+Um clique duplo único ou lento revelará a barra de ferramentas apropriada (única para a barra de ferramentas de edição local e, em seguida, lenta dupla para a barra de ferramentas completa).
 
 * **[Layout responsivo](/help/sites-authoring/responsive-layout.md)**
 Isso fornece um sistema de parágrafo que permite posicionar componentes em uma grade responsiva.

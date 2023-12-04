@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f34058c3-384a-4b73-a386-5bc9125acbf8
 feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2168'
+source-wordcount: '2167'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Você também pode exibir mais detalhes, descritos abaixo, sobre um documento es
 
 >[!NOTE]
 >
->Você deve usar o link Nome da política na página Detalhes do documento para acessar políticas geradas automaticamente no Microsoft Outlook para destinatários de um documento anexado a uma mensagem de email. Essas políticas não aparecem na página de políticas.
+>Use o link Nome da política na página Detalhes do documento para acessar políticas geradas automaticamente no Microsoft Outlook para destinatários de um documento anexado a uma mensagem de email. Essas políticas não aparecem na página de políticas.
 
 **Nome do documento:** O nome do documento selecionado.
 
@@ -52,7 +52,7 @@ Você também pode exibir mais detalhes, descritos abaixo, sobre um documento es
 
 **Editor:** Nome do usuário que anexou a política ao documento.
 
-**Nome da política:** O nome da política usada para proteger o documento. Você pode clicar no nome para abrir a política. Você deve usar esse link para acessar políticas geradas pelo Acrobat para destinatários de um documento anexado a uma mensagem de email no Outlook. Essas políticas não aparecem na página Políticas.
+**Nome da política:** O nome da política usada para proteger o documento. Você pode clicar no nome para abrir a política. Use este link para acessar as políticas geradas pelo Acrobat para destinatários de um documento anexado a uma mensagem de email no Outlook. Essas políticas não aparecem na página Políticas.
 
 **Tipo de política:** O tipo de política aplicado ao documento.
 

@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: b8c7a20a-7694-4a49-b66a-060720f17dad
 exl-id: 1e0821f5-627f-4262-ba76-62303890e112
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2205'
-ht-degree: 3%
+source-wordcount: '2148'
+ht-degree: 2%
 
 ---
 
@@ -58,7 +58,7 @@ Se desejar, a instância do autor poderá usar as bibliotecas de produção. Há
 
 Quando o AEM hospeda as bibliotecas Tag Management, você pode usar o serviço de gancho de implantação do Dynamic Tag Management AEM para enviar automaticamente as atualizações da biblioteca para o. As atualizações de biblioteca são enviadas quando alterações são feitas nas bibliotecas, como quando as propriedades da Web do Dynamic Tag Management são editadas.
 
-Para usar o gancho de implantação, o Dynamic Tag Management deve ser capaz de se conectar à instância AEM que hospeda as bibliotecas. Você deve [ativar acesso ao AEM](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) para os servidores do Dynamic Tag Management.
+Para usar o gancho de implantação, o Dynamic Tag Management deve ser capaz de se conectar à instância AEM que hospeda as bibliotecas. [Ativar acesso ao AEM](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) para os servidores do Dynamic Tag Management.
 
 Em algumas circunstâncias, o AEM pode estar inacessível, como quando o AEM está atrás de um firewall. Nesses casos, você pode usar a opção de importador de buscas do AEM para recuperar as bibliotecas periodicamente. Uma expressão de trabalho cron determina a programação de downloads da biblioteca.
 

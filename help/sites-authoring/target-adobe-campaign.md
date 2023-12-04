@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 exl-id: fc6fccba-41c5-4c13-aac0-b4ef67767abe
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '801'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Depois de criar segmentos, uma marca, uma campanha e uma experiência, você pod
 
 Para criar um informativo com conteúdo direcionado:
 
-1. Crie um boletim informativo com conteúdo direcionado: abaixo de Campanhas de email, clique ou toque em Geometrixx Outdoors **Criar** > **Página** e selecione um dos modelos do Adobe Campaign Mail.
+1. Crie um boletim informativo com conteúdo direcionado: abaixo de Campanhas por email no Geometrixx Outdoors, clique em **Criar** > **Página** e selecione um dos modelos do Adobe Campaign Mail.
 
    ![chlimage_1-188](assets/chlimage_1-188.png)
 
@@ -86,7 +86,7 @@ Para criar um informativo com conteúdo direcionado:
 
    >[!NOTE]
    >
-   >Por padrão, as amostras de email incluídas com o AEM usam o Adobe Campaign como mecanismo de direcionamento. Para boletins informativos personalizados, talvez seja necessário selecionar o Adobe Campaign como mecanismo de direcionamento. Ao direcionar, toque ou clique em + na barra de ferramentas, insira um título para a nova atividade e selecione **Adobe Campaign** como mecanismo de direcionamento.
+   >Por padrão, as amostras de email incluídas com o AEM usam o Adobe Campaign como mecanismo de direcionamento. Para boletins informativos personalizados, talvez seja necessário selecionar o Adobe Campaign como mecanismo de direcionamento. Ao direcionar, clique em + na barra de ferramentas, insira um título para a nova atividade e selecione **Adobe Campaign** como mecanismo de direcionamento.
 
 1. Clique em **Padrão** e, em seguida, o componente Texto e personalização adicionado e você vê o Alvo com uma seta. Clique no ícone para direcionar esse componente.
 

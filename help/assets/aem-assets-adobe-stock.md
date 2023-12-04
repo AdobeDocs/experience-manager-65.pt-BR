@@ -6,10 +6,10 @@ feature: Search, Adobe Stock
 role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 hide: true
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2483'
-ht-degree: 7%
+source-wordcount: '2446'
+ht-degree: 3%
 
 ---
 
@@ -327,7 +327,7 @@ Uma vez [!DNL Adobe Stock] o ativo é licenciado no [!DNL Experience Manager], e
 
 ![Pesquisar por [!DNL Adobe Stock] ativos e filtrar os resultados do seu [!DNL Adobe Experience Manager] espaço de trabalho](assets/adobe-stock-search-results-workspace.png)
 
-**A.**[!DNL Adobe Stock] Pesquise ativos semelhantes aos ativos cuja ID do é fornecida. **B.** Pesquise ativos que correspondem à seleção de forma ou orientação. **C.** Procure um dos tipos de ativos mais compatíveis **D.** Abra ou recolha o painel Filtros **E.** Licencie e salve o ativo selecionado no [!DNL Experience Manager]**F.**[!DNL Experience Manager] Salve o ativo no com a marca d&#39;água **G.**[!DNL Adobe Stock] Explore os ativos no site do que são semelhantes ao ativo selecionado **H.**[!DNL Adobe Stock] Exiba os ativos selecionados no site do **I.** Número de ativos selecionados dos resultados de pesquisa **J.** Alterne entre a exibição Cartão e a exibição em Lista
+**A.** Pesquisar ativos semelhantes aos ativos cujos [!DNL Adobe Stock] A ID é fornecida. **B.** Pesquise ativos que correspondem à seleção de forma ou orientação. **C** Procure por um ou mais tipos de ativos compatíveis **D.** Abrir ou recolher o painel de filtros **E** Licenciar e salvar o ativo selecionado no [!DNL Experience Manager] **F** Salvar o ativo no [!DNL Experience Manager] com marca d&#39;água **G.** Explorar ativos no [!DNL Adobe Stock] site que são semelhantes ao ativo selecionado **H.** Exibir os ativos selecionados em [!DNL Adobe Stock] site **I.** Número de ativos selecionados nos resultados da pesquisa **J.** Alternar entre exibição de Cartão e exibição de Lista
 
 ### Localizar ativos {#find-assets}
 

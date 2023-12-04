@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2073'
-ht-degree: 12%
+source-wordcount: '2072'
+ht-degree: 7%
 
 ---
 
@@ -26,7 +26,7 @@ Você pode [configurar os formulários de pesquisa](#configuring-your-search-for
 
    * **Geral**
 
-      * **Formulários de pesquisa**
+      * **Pesquisar no Forms**
 
 Ao acessar esse console pela primeira vez, você pode ver que todas as configurações têm um símbolo de cadeado. Isso indica que a configuração apropriada é a configuração padrão (pronta para uso) e não pode ser excluída. Após personalizar a configuração, o bloqueio desaparecerá, a menos que você [excluir sua configuração personalizada](#deleting-a-configuration-to-reinstate-the-default). Nesse caso, o padrão (e o indicador de cadeado) é restabelecido.
 
@@ -56,7 +56,7 @@ As configurações padrão disponíveis são:
 
   Essa configuração define as opções disponíveis ao pesquisar parágrafos no navegador de ativos (ao editar uma página).
 
-* **Editor de páginas (Pesquisa de produto):**
+* **Editor de páginas (Pesquisa de produtos):**
 
   Essa configuração define as opções disponíveis ao pesquisar produtos no navegador de ativos (ao editar uma página).
 
@@ -68,11 +68,11 @@ As configurações padrão disponíveis são:
 
   Essa configuração define as opções de pesquisa disponíveis para o usuário ao usar o painel de pesquisa do console Sites.
 
-* **Editor de página (Pesquisa de vídeos):**
+* **Editor de páginas (Pesquisa de vídeos):**
 
   Essa configuração define as opções disponíveis ao pesquisar vídeos no navegador de ativos (ao editar uma página).
 
-* **Trilho de pesquisa do administrador de ativos:**
+* **Painel de pesquisa do administrador de ativos:**
 
   Essa configuração define as opções de pesquisa disponíveis para o usuário ao usar o console de Ativos.
 
@@ -130,7 +130,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
     <ul>
      <li>Rótulo do campo</li>
      <li>Espaço reservado</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Profundidade da propriedade</li>
      <li>Descrição</li>
     </ul> </td>
@@ -141,7 +141,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Rótulo do campo</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Descrição</li>
     </ul> </td>
   </tr>
@@ -152,7 +152,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
     <ul>
      <li>Rótulo do campo</li>
      <li>Espaço reservado</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Texto do intervalo (de)*</li>
      <li>Texto do intervalo (até)*</li>
      <li>Descrição</li>
@@ -164,7 +164,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Rótulo do campo</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Descrição</li>
     </ul> </td>
   </tr>
@@ -174,7 +174,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Rótulo do campo</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Caminho de opção</li>
      <li>Descrição</li>
     </ul> </td>
@@ -196,19 +196,19 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
     <ul>
      <li>Rótulo do campo</li>
      <li>Caminho JSON</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Única seleção</li>
      <li>Caminho de opção</li>
      <li>Descrição</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Opções Propriedade </td>
+   <td>Propriedade de opções </td>
    <td>Pesquise em uma propriedade da opção.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Caminho do nó de opções<br /> </li>
      <li>Única seleção</li>
      <li>Descrição</li>
@@ -246,7 +246,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Rótulo do campo</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Descrição</li>
     </ul> </td>
   </tr>
@@ -266,7 +266,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Rótulo do campo</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Caminho de opção</li>
      <li>Descrição</li>
     </ul> </td>
@@ -277,7 +277,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Rótulo do campo</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Caminho de opção</li>
      <li>Descrição</li>
     </ul> </td>
@@ -288,7 +288,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Rótulo do campo</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Data relativa</li>
      <li>Descrição</li>
     </ul> </td>
@@ -299,7 +299,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Rótulo do campo</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Descrição</li>
     </ul> </td>
   </tr>
@@ -309,7 +309,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Rótulo do campo</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Caminho de opção</li>
      <li>Descrição</li>
     </ul> </td>
@@ -320,7 +320,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Espaço reservado</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Descrição</li>
     </ul> </td>
   </tr>
@@ -506,7 +506,7 @@ O exemplo a seguir (para pesquisar de acordo com o modelo usado para criar uma p
 
 1. Abra o **Pesquisar no Forms** e selecione a configuração que deseja atualizar. Por exemplo, **Trilho de pesquisa do administrador de sites**.
 
-   Clique/toque no ícone **Editar formulários de pesquisa** ícone.
+   Em seguida, clique no link **Editar formulários de pesquisa** ícone.
 
 1. Dependendo da configuração, adicione uma **Opções** ou **Propriedade de opções** à configuração.
 1. Atualize os campos, especialmente:

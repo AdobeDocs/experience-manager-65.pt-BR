@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: fb1abaa0-9c02-4f20-aa7c-073def067452
 exl-id: c65a24e6-3041-4774-aeed-8e188ea19b78
-source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 1%
+source-wordcount: '655'
+ht-degree: 0%
 
 ---
 
@@ -68,7 +68,7 @@ O fluxo de trabalho para importar um novo artigo
 
 >[!CAUTION]
 >
->Você deve associar uma conexão do Mobile On-Demand primeiro.
+>Associe uma conexão do Mobile On-Demand primeiro.
 
 ## Edição de um banner {#editing-a-banner}
 

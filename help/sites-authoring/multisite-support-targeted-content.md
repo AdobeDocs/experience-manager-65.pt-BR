@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
 exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2855'
-ht-degree: 89%
+source-wordcount: '2837'
+ht-degree: 82%
 
 ---
 
@@ -157,18 +157,18 @@ As áreas podem abranger atividades e ofertas. Depois de criar uma área em qual
 
 >[!NOTE]
 >
->A área padrão chamada Área mestre é recolhida por padrão ao tocar ou clicar no nome de uma marca **até** criar outra área. Em seguida, ao selecionar uma marca no console **Atividade** ou **Ofertas**, você verá o console **Área**.
+>A área padrão chamada Área mestre é recolhida por padrão ao clicar no nome de uma marca **até** você cria outra área. Em seguida, ao selecionar uma marca no console **Atividade** ou **Ofertas**, você verá o console **Área**.
 
 Para criar uma área:
 
 1. Navegue até **Personalização** > **Atividades** ou **Ofertas** e, em seguida, acesse sua marca.
-1. Toque ou clique em **Criar área**.
+1. Clique em **Criar área**.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
 1. Clique no ícone de **Área** e clique em **Próximo**.
 1. No campo **Título**, insira um nome para a nova área. Também é possível selecione tags.
-1. Toque ou clique em **Criar**.
+1. Clique em **Criar**.
 
    O AEM redireciona para a janela da marca, a qual lista todas as áreas criadas. Se houver outra área além da Área principal, você poderá criar áreas diretamente no console Marca.
 
@@ -181,7 +181,7 @@ Você cria uma área como uma live copy para herdar o conteúdo direcionado nas 
 Para criar uma área como uma live copy:
 
 1. Navegue até **Personalização** > **Atividades** ou **ofertas** e, em seguida, acesse sua marca.
-1. Toque ou clique em **Criar área como Live Copy**.
+1. Clique em **Criar área como Live Copy**.
 
    ![chlimage_1-279](assets/chlimage_1-279.png)
 
@@ -203,7 +203,7 @@ Para criar uma área como uma live copy:
    >
    >Quando uma página é implantada em uma Live Copy e a área configurada para a página Blueprint também é o Blueprint da área configurada para a Live copy da Página, a ação dinâmica **personalizationContentRollout** aciona uma subRollout síncrona, que faz parte da **Configuração de implantação padrão**.
 
-1. Toque ou clique em **Criar**.
+1. Clique em **Criar**.
 
    O AEM redireciona para a janela da marca, a qual lista todas as áreas criadas. Se houver outra área além da Área Principal, você poderá criar áreas diretamente na janela da marca.
 
@@ -222,13 +222,13 @@ Ao vincular, somente as atividades, experiências e ofertas da área selecionada
 Para vincular um site a uma área:
 
 1. Navegue até o site (ou página) que deseja vincular a uma área.
-1. Selecione o site ou página e toque ou clique em **Propriedades da exibição**.
-1. Toque ou clique na guia **Personalização.**
+1. Selecione o site ou a página e clique em **Propriedades da exibição**.
+1. Clique em **Personalização** guia.
 1. No menu **Marca**, selecione a marca à qual deseja vincular sua área. Após selecionar a marca, as áreas disponíveis estarão no menu **Referência da área**.
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
 
-1. Selecione a área no menu suspenso **Referência da área** e toque ou clique em **Salvar**.
+1. Selecione a área na **Referência da área** e clique em **Salvar**.
 
    ![chlimage_1-284](assets/chlimage_1-284.png)
 
@@ -252,8 +252,8 @@ Uma atividade que está herdando de outro site é marcada em verde ao lado do no
 
 Para suspender ou desconectar a herança do conteúdo direcionado em uma atividade:
 
-1. Navegue até a página em que deseja desconectar ou suspender a herança e toque ou clique em **Direcionamento** no menu suspenso do modo.
-1. Se a página estiver vinculada a uma área que seja uma live copy, o status da herança será exibido. Toque ou clique em **Iniciar o direcionamento**.
+1. Navegue até a página em que deseja desanexar ou suspender a herança e clique em **Direcionamento** no menu suspenso do modo.
+1. Se a página estiver vinculada a uma área que seja uma live copy, o status da herança será exibido. Clique em **Iniciar o direcionamento**.
 1. Para suspender uma atividade, siga um destes procedimentos:
 
    1. Selecione um elemento da atividade, como o público-alvo. O AEM exibe automaticamente uma caixa de confirmação Suspender Live Copy. (É possível suspender a live copy tocando ou clicando em qualquer elemento no processo de direcionamento).
@@ -261,7 +261,7 @@ Para suspender ou desconectar a herança do conteúdo direcionado em uma ativida
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Toque ou clique em **Suspender** para suspender a atividade. Atividades suspensas são marcadas em vermelho.
+1. Clique em **Suspender** para suspender a atividade. Atividades suspensas são marcadas em vermelho.
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
@@ -269,10 +269,10 @@ Para suspender ou desconectar a herança do conteúdo direcionado em uma ativida
 
 Para interromper a herança do conteúdo direcionado em uma atividade:
 
-1. Navegue até a página na qual deseja desconectar a live copy do principal e toque ou clique em **Direcionamento** no menu suspenso do modo.
-1. Se a página estiver vinculada a uma área que seja uma live copy, o status da herança será exibido. Toque ou clique em **Iniciar o direcionamento**.
+1. Navegue até a página onde deseja desanexar a live copy da página principal e clique em **Direcionamento** no menu suspenso do modo.
+1. Se a página estiver vinculada a uma área que seja uma live copy, o status da herança será exibido. Clique em **Iniciar o direcionamento**.
 1. Selecione **Desanexar Live Copy** no menu suspenso na barra de ferramentas. O AEM confirma que você deseja desanexar a live copy.
-1. Toque ou clique **Desconectar** para desconectar a live copy da atividade. Após a desconexão, o menu suspenso relativo à herança não será mais exibido. A atividade agora passará a ser uma atividade local.
+1. Clique em **Desanexar** para desanexar a live copy da atividade. Após a desconexão, o menu suspenso relativo à herança não será mais exibido. A atividade agora passará a ser uma atividade local.
 
    ![chlimage_1-287](assets/chlimage_1-287.png)
 
@@ -282,13 +282,13 @@ Caso tenha suspendido a herança do conteúdo direcionado em uma atividade, é p
 
 Para restaurar a herança do conteúdo direcionado em uma atividade:
 
-1. Navegue até a página em que deseja restaurar a herança e toque ou clique em **Direcionamento** no menu suspenso de modo.
-1. Toque ou clique em **Iniciar o direcionamento**.
+1. Navegue até a página em que deseja restaurar a herança e clique em **Direcionamento** no menu suspenso do modo.
+1. Clique em **Iniciar o direcionamento**.
 1. Selecione **Retomar Live Copy** no menu suspenso da barra de ferramentas.
 
    ![chlimage_1-288](assets/chlimage_1-288.png)
 
-1. Toque ou clique **Retomar** para confirmar se deseja retomar a herança da live copy. Quaisquer modificações feitas na atividade atual serão perdidas se você retomar a herança.
+1. Clique em **Retomar** para confirmar se deseja retomar a herança da live copy. Quaisquer modificações feitas na atividade atual serão perdidas se você retomar a herança.
 
 ## Excluindo áreas {#deleting-areas}
 
@@ -297,5 +297,5 @@ Ao excluir uma área, todas as atividades nessa área são excluídas. O AEM avi
 Para excluir uma área:
 
 1. Navegue até **Personalização** > **Atividades** ou **Ofertas** e, em seguida, acesse sua marca.
-1. Toque ou clique no ícone próximo à área que deseja excluir.
-1. Toque ou clique em **Excluir** e confirme que deseja excluir a área.
+1. Clique no ícone ao lado da área que deseja excluir.
+1. Clique em **Excluir** e confirme se deseja excluir a área.

@@ -7,10 +7,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2051'
-ht-degree: 6%
+source-wordcount: '2037'
+ht-degree: 5%
 
 ---
 
@@ -204,7 +204,7 @@ A arquitetura geral do AEM, incluindo ambientes de desenvolvimento, criação e 
    1. Quando o aplicativo SPA é executado, o JSON é solicitado, permitindo que o aplicativo crie o DOM da página, incluindo o `cq-data` atributos.
    1. Este `cq-data` Os atributos permitem que o editor carregue informações adicionais da página para que saiba quais configurações de edição estão disponíveis para os componentes.
 
-* **AEM Publish**
+* **Publicação no AEM**
 
   É aqui que o conteúdo criado e as bibliotecas compiladas, incluindo artefatos de aplicativos SPA, clientlibs e componentes, são publicados para consumo público.
 

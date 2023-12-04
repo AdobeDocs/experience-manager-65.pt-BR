@@ -10,10 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 41%
+ht-degree: 32%
 
 ---
 
@@ -33,14 +33,14 @@ As seguintes ferramentas administrativas estão disponíveis para gerenciar site
 
 ## Sites multinacionais e multilíngues {#multinational-and-multilingual-sites}
 
-É possível criar conteúdo para sites multinacionais e multilíngues com eficiência usando o gerenciador de vários sites e o fluxo de trabalho de tradução. Crie um site principal em um idioma para um país específico e, em seguida, use esse conteúdo como base para os outros sites, usando a tradução quando necessário:
+Você pode criar conteúdo para sites multinacionais e multilíngues com eficiência usando o gerenciador de vários sites e o fluxo de trabalho de tradução. Crie um site principal em um idioma para um país específico e, em seguida, use esse conteúdo como base para os outros sites, usando a tradução quando necessário:
 
 * [Traduzir](/help/sites-administering/translation.md) o site principal em diferentes idiomas.
 
 * Use o [Gerenciador de vários sites](/help/sites-administering/msm.md) para:
 
    * Reutilizar o conteúdo do site principal e as traduções para criar sites para outros países e culturas.
-   * Limite o uso do gerenciador de vários sites para conteúdo em um único idioma, por exemplo, mestre em inglês -> ramificações de idioma inglês em sites de países, mestre em francês -> ramificações de idioma francês em sites de países.
+   * Limite o uso do gerenciador de vários sites para conteúdo em um único idioma, por exemplo, inglês principal > ramificações de idioma inglês em sites de países, francês principal > ramificações de idioma francês em sites de países.
    * Quando necessário, desconecte elementos das live copies para adicionar detalhes de localização.
 
 O diagrama a seguir ilustra como os principais conceitos se cruzam (mas não mostra todos os níveis/elementos envolvidos):

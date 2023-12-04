@@ -3,10 +3,10 @@ title: Configurar os plug-ins do Editor de Rich Text
 description: Saiba como configurar os plug-ins do Editor de Rich Text do Adobe Experience Manager para ativar funcionalidades individuais.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4395'
-ht-degree: 4%
+source-wordcount: '4391'
+ht-degree: 2%
 
 ---
 
@@ -353,8 +353,8 @@ Se o plug-in não for configurado ainda mais, os seguintes formatos padrão ser�
 >
 * Parágrafo ( `<p>`)
 * Cabeçalho 1 ( `<h1>`)
-* Cabeçalho 2 ( `<h2>`)
-* Cabeçalho 3 ( `<h3>`)
+* Rubrica 2 ( `<h2>`)
+* Rubrica 3 ( `<h3>`)
 >
 
 >[!CAUTION]
@@ -587,7 +587,7 @@ Uma instalação padrão do AEM inclui os dicionários para inglês americano (`
 >
 O verificador ortográfico RTE está disponível sob demanda. Ele não é executado automaticamente quando você começa a digitar o texto. Para executar o verificador ortográfico, clique em [!UICONTROL Verificador ortográfico] na barra de ferramentas. O RTE verifica a ortografia das palavras e destaca as palavras com erro de ortografia.
 >
-Se você incorporar qualquer alteração sugerida pelo verificador ortográfico, o estado do texto será alterado e as palavras com erro de ortografia não serão mais destacadas. Para executar o verificador ortográfico, toque/clique no botão Verificador ortográfico novamente.
+Se você incorporar qualquer alteração sugerida pelo verificador ortográfico, o estado do texto será alterado e as palavras com erro de ortografia não serão mais destacadas. Para executar o verificador ortográfico, clique novamente no botão Verificador ortográfico.
 
 ## Configurar o tamanho do histórico das ações desfazer e refazer {#undohistory}
 

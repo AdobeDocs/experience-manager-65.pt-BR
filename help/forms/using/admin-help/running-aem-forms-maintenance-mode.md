@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 94047c12-ba3d-457a-954f-e035c7cc3ecd
 exl-id: 6f5ce18b-26b4-4c31-b48a-43ccbb3912f6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 5%
+source-wordcount: '256'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +28,7 @@ Evite chamar processos enquanto o servidor estiver no modo de manutenção. Isso
 
 **Colocar formulários AEM no modo de manutenção**
 
-1. Em um navegador da web, digite:
+1. Em um navegador da Web, digite:
 
    `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=[administrator username]&password=[password]`
 
@@ -36,11 +36,11 @@ Evite chamar processos enquanto o servidor estiver no modo de manutenção. Isso
 
    >[!NOTE]
    >
-   >Se você desligar o servidor enquanto ele estiver no modo de manutenção, ele ainda estará no modo de manutenção quando for reiniciado. Você deve desativar o modo de manutenção quando terminar suas tarefas de manutenção.
+   >Se você desligar o servidor enquanto ele estiver no modo de manutenção, ele ainda estará no modo de manutenção quando for reiniciado. Desative o modo de manutenção quando terminar suas tarefas de manutenção.
 
 **Verifique se o AEM Forms está em execução no modo de manutenção**
 
-1. Em um navegador da web, digite:
+1. Em um navegador da Web, digite:
 
    `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=[administrator username]&password=[password]`
 
@@ -48,7 +48,7 @@ Evite chamar processos enquanto o servidor estiver no modo de manutenção. Isso
 
 **Desativar modo de manutenção**
 
-1. Em um navegador da web, digite:
+1. Em um navegador da Web, digite:
 
    `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=[administrator username]&password=[password]`
 

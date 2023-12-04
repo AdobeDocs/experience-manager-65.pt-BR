@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 85%
+source-wordcount: '1293'
+ht-degree: 81%
 
 ---
 
@@ -80,7 +80,7 @@ Se você desejar usar o Sistema de estilos em seus próprios componentes, faça 
 
    ![Sistema de estilos do autor](assets/style-system-author.png)
 
-1. Toque ou clique no botão **Estilos** na barra de ferramentas do componente **Lista** para abrir o menu de estilos e alterar a aparência do componente.
+1. Clique em **Estilos** na barra de ferramentas do **Lista** para abrir o menu estilo e alterar a aparência do componente.
 
    ![Seleção de estilos](assets/style-system-author2.png)
 
@@ -90,7 +90,7 @@ Se você desejar usar o Sistema de estilos em seus próprios componentes, faça 
 
 ### Como autor de modelo  {#as-a-template-author}
 
-1. Ao editar a página inicial mestre em inglês do WKND em `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edite o modelo da página em **Informações da página -> Editar modelo**.
+1. Ao editar a página inicial principal no idioma inglês da WKND em `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edite o modelo da página pelo **Informações da página > Editar modelo**.
 
    ![Editar modelo](assets/style-system-edit-template.png)
 

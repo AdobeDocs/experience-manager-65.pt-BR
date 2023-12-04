@@ -9,10 +9,10 @@ topic-tags: components, testing
 discoiquuid: 938100ad-94f9-408a-819d-72657dc115f7
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 1%
+source-wordcount: '759'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +47,7 @@ Ao usar testes automatizados no AEM, os seguintes termos são importantes para e
 
 Abra o Console de testes para ver os Conjuntos de testes registrados. O painel Testes contém uma lista de conjuntos de testes e seus casos de teste.
 
-Navegue até o console Ferramentas via **Navegação global -> Ferramentas > Operações -> Teste**.
+Navegue até o console Ferramentas via **Navegação global > Ferramentas > Operações > Teste**.
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -69,7 +69,7 @@ Um ícone &quot;X&quot; indica um teste com falha:
 
 Para executar um conjunto de teste:
 
-1. No painel Testes, clique ou toque no nome do Caso de teste que deseja executar para expandir os detalhes das ações.
+1. No painel Testes, clique no nome do Caso de teste que deseja executar para expandir os detalhes das ações.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -91,7 +91,7 @@ Os Conjuntos de testes são executados sequencialmente na ordem em que aparecem 
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-1. No painel Testes, toque ou clique em **Executar todos os testes** ou o botão **Executar testes** abaixo do título do Conjunto de testes que você deseja executar.
+1. No painel Testes, clique no botão **Executar todos os testes** ou o botão **Executar testes** abaixo do título do Conjunto de testes que você deseja executar.
 
    ![Imagem do botão Executar todos os testes e do botão Executar testes, indicada por um ponteiro voltado para a direita dentro de um círculo.](do-not-localize/chlimage_1-5.png)
 

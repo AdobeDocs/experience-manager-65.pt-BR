@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 46d6bde0-8645-4cff-b79c-8e1615ba4ed4
 docset: aem65
 exl-id: 3f6aa06e-b5fd-4ab0-9ecc-14250cb3f55e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1028'
 ht-degree: 9%
 
 ---
@@ -152,7 +152,7 @@ No **Sites** guia, é possível ativar as páginas individuais. Quando você tiv
 
    ![screen_shot_2012-02-08at125033pm](assets/screen_shot_2012-02-08at125033pm.png)
 
-1. No **Replicação** clique em **Ativar árvore**.
+1. No **Replicação** , clique em **Ativar árvore**.
 
    A janela a seguir ( `https://localhost:4502/etc/replication/treeactivation.html`) será exibida.
 

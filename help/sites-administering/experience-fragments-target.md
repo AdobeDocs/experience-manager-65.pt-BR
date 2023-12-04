@@ -7,10 +7,10 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1539'
-ht-degree: 43%
+source-wordcount: '1513'
+ht-degree: 41%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 43%
 >* **Domínios externalizadores** agora pode ser selecionado.
 >  **Nota:** Os domínios do externalizador são relevantes somente para o conteúdo do fragmento de experiência que é enviado ao Target, e não para metadados como Exibir conteúdo da oferta.
 >
->6.5.2.0:
+>6.5.2.0
 >
 >* Os fragmentos de experiência podem ser exportados para:
 >
@@ -152,19 +152,19 @@ Para exportar um fragmento de experiência do AEM para o Target (depois de espec
    >
    >Ele deve ser uma variação web do fragmento de experiência.
 
-1. Toque/clique em **Exportar para o Adobe Target**.
+1. Clique em **Exportar para o Adobe Target**.
 
    >[!NOTE]
    >
    >Se o fragmento de experiência já tiver sido exportado, selecione **Atualizar no Adobe Target**.
 
-1. Toque/clique em **Exportar sem publicar** ou em **Publicar**, conforme necessário.
+1. Clique em **Exportar sem publicar** ou **Publish** conforme necessário.
 
    >[!NOTE]
    >
    >Selecionar **Publish** O publica o fragmento de experiência imediatamente e o envia para o Target.
 
-1. Toque ou clique em **OK** na caixa de diálogo de confirmação.
+1. Clique em **OK** no diálogo de confirmação.
 
    Seu fragmento de experiência agora deve estar no Target.
 

@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2199'
-ht-degree: 30%
+source-wordcount: '2122'
+ht-degree: 28%
 
 ---
 
@@ -27,7 +27,7 @@ A variável [Assistente de aceitação](/help/sites-administering/opt-in.md) que
 
 Você também pode configurar o Adobe Target para usar o Adobe Target como fonte de relatórios ao direcionar conteúdo definindo a Configuração do Analytics Cloud A4T.
 
-Para localizar a configuração da nuvem e a estrutura, acesse **Cloud Service** via **Ferramentas** > **Implantação** > **Nuvem**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html)) Abaixo do Adobe Target, clique ou toque em **Exibir configurações**.
+Para localizar a configuração da nuvem e a estrutura, acesse **Cloud Service** via **Ferramentas** > **Implantação** > **Nuvem**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html)) Abaixo do Adobe Target, clique em **Exibir configurações**.
 
 ### Propriedades de Configuração do Alvo Provisionado {#provisioned-target-configuration-properties}
 
@@ -90,7 +90,7 @@ Para fazer isso, você especifica com qual configuração de nuvem do A4T deve s
    >1. Navegue até **Ferramentas** > **Geral** > **CRXDE Lite**.
    1. Navegue até a [Caixa de diálogo Configuração do A4T Analytics](#a4t-analytics-config-dialog) (veja abaixo)
    1. Definir a propriedade **disable** para **false**.
-   1. Toque ou clique **Salvar tudo**.
+   1. Clique em **Salvar tudo**.
 
 #### Caixa de diálogo Configuração do A4T Analytics {#a4t-analytics-config-dialog}
 
@@ -108,7 +108,7 @@ Integrar manualmente ao Adobe Target em vez de usar o assistente de aceitação.
 
 >[!NOTE]
 >
-O arquivo da biblioteca do Target, [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), é uma nova biblioteca de implementação do Adobe Target, projetada para implementações típicas da Web e aplicativos de página única. A Adobe recomenda usar a AT.js como a biblioteca de cliente, em vez da mbox.js.
+O arquivo da Biblioteca do Target, [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/)O, é uma nova biblioteca de implementação do Adobe Target, projetada para implementações típicas da Web e aplicativos de página única. A Adobe recomenda usar a AT.js como a biblioteca de cliente, em vez da mbox.js.
 >
 A AT.js oferece várias melhorias em relação à biblioteca mbox.js:
 >
@@ -153,7 +153,7 @@ Use o procedimento a seguir para criar uma configuração da nuvem do Target no 
    1. Navegue até **Ferramentas** > **Geral** > **CRXDE Lite**.
    1. Navegue até **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
    1. Definir a propriedade **disable** para **false**.
-   1. Toque ou clique **Salvar tudo**.
+   1. Clique em **Salvar tudo**.
 
 1. Na caixa de diálogo, forneça valores para essas propriedades.
 
@@ -180,7 +180,7 @@ Use o procedimento a seguir para criar uma configuração da nuvem do Target no 
    >
    Se você ***já*** tiver criado componentes direcionados e alterar essa configuração, suas alterações não afetarão esses componentes. Altere esses componentes diretamente.
 
-1. Clique em **Conectar-se ao Target** para inicializar a conexão com o Target. Se a conexão for bem-sucedida, a mensagem **Conexão bem-sucedida** será exibida. Clique em **OK** na mensagem e, em seguida, em **OK** na caixa de diálogo.
+1. Clique em **Conectar ao Target** para inicializar a conexão com o Target. Se a conexão for bem-sucedida, a mensagem **Conexão bem-sucedida** será exibida. Clique em **OK** na mensagem e, em seguida, em **OK** na caixa de diálogo.
 
    Se não conseguir se conectar ao Target, consulte a seção [solução de problemas](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems).
 
@@ -199,7 +199,7 @@ Você pode criar várias estruturas para uma única configuração do Target. V�
 
    ![Componentes da estrutura](assets/chlimage_1-162.png)
 
-1. Arraste o componente Contexto do cliente que representa os dados que você deseja usar para mapear até a zona de destino. Como alternativa, arraste o componente de **Armazenamento do ContextHub** para a estrutura.
+1. Arraste o componente Contexto do cliente que representa os dados que você deseja usar para mapear até a zona de destino. Como alternativa, arraste o **Loja ContextHub** componente ao quadro.
 
    >[!NOTE]
    >
@@ -243,8 +243,8 @@ Quando você associa uma página à estrutura, as páginas secundárias herdam a
 1. No **Sites** console, navegue até o site que deseja configurar.
 1. Usar um dos [ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions) ou [modo de seleção](/help/sites-authoring/basic-handling.md), selecione **Propriedades da exibição.**
 1. Selecione a guia **Cloud Services**.
-1. Toque/clique em **Editar**.
-1. Toque/clique **Adicionar configuração** em **Configurações do Cloud Service** e selecione **Adobe Target**.
+1. Clique em **Editar**.
+1. Clique em **Adicionar configuração** em **Configurações do Cloud Service** e selecione **Adobe Target**.
 
    ![Adicionar configuração](assets/chlimage_1-165.png)
 
@@ -254,7 +254,7 @@ Quando você associa uma página à estrutura, as páginas secundárias herdam a
    >
    Certifique-se de selecionar as opções **estrutura** que você criou e não a configuração da nuvem do Target na qual ela foi criada.
 
-1. Toque/clique **Concluído**.
+1. Clique em **Concluído**.
 1. Ative a página raiz do site para replicá-la no servidor de publicação. (Consulte [Como Publicar Páginas](/help/sites-authoring/publishing-pages.md).)
 
    >[!NOTE]

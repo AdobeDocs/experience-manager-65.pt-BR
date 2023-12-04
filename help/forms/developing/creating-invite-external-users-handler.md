@@ -3,9 +3,9 @@ title: Criando um Manipulador de Usuários Externos para Convidar
 description: Saiba como criar um Manipulador de usuários externos para convite. Ele permite que o serviço Rights Management convide usuários externos para se tornarem usuários Rights Management.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1126'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Para configurar seu ambiente de desenvolvimento, você deve criar um projeto Jav
 
 O Rights Management SPI exige o `edc-server-spi.jar` arquivo a ser definido no caminho de classe do projeto. Se você não fizer referência a esse arquivo JAR, não poderá usar o SPI do Rights Management no projeto Java. Esse arquivo JAR é instalado com o SDK do AEM Forms no `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi` pasta.
 
-Além de adicionar a variável `edc-server-spi.jar` ao caminho de classe do seu projeto, você também deve adicionar os arquivos JAR necessários para usar a API do serviço Rights Management. Esses arquivos são necessários para usar a API do Serviço Rights Management no Manipulador de usuários externos do convite.
+Além de adicionar a variável `edc-server-spi.jar` ao caminho de classe do seu projeto, você também deve adicionar os arquivos JAR necessários para usar a API do serviço de Rights Management. Esses arquivos são necessários para usar a API do Serviço Rights Management no Manipulador de usuários externos do convite.
 
 ## Definição da implementação do manipulador de convidar usuários externos {#define-invite-external-users-handler}
 
@@ -170,7 +170,7 @@ public class InviteExternalUsersSample implements InvitedUserProvider
 
 ## Definição do arquivo XML do componente para o manipulador de autorização {#define-component-xml-authorization-handler}
 
-Você deve definir um arquivo XML do componente para implantar o componente do manipulador de usuários externos do convite. Existe um arquivo XML componente para cada componente e ele fornece metadados sobre o componente.
+Refinar um arquivo XML do componente para implantar o componente do manipulador de usuários externos do convite. Existe um arquivo XML componente para cada componente e ele fornece metadados sobre o componente.
 
 As seguintes `component.xml` arquivo é usado para o manipulador convidar usuários externos. Observe que o nome do serviço é `InviteExternalUsersSample` e a operação que este serviço expõe é nomeada `invitedUser`. O parâmetro de entrada é um `java.util.List` e o valor de saída é uma matriz de `com.adobe.edc.server.spi.esrp.InvitedUserProviderResult` instâncias.
 
@@ -203,19 +203,19 @@ As seguintes `component.xml` arquivo é usado para o manipulador convidar usuár
 
 ## Empacotamento do manipulador de usuários externos do convite {#packaging-invite-external-users-handler}
 
-Para implantar o manipulador convidar usuários externos para o AEM Forms, você deve empacotar o projeto Java em um arquivo JAR. Você deve garantir que os arquivos JAR externos dos quais depende a lógica de negócios do manipulador de usuários externos do convite, como a `edc-server-spi.jar` e `adobe-rightsmanagement-client.jar` Os arquivos também estão incluídos no arquivo JAR. Além disso, o componente XML file deve estar presente. A variável `component.xml` O arquivo JAR e os arquivos JAR externos devem estar localizados na raiz do arquivo JAR.
+Para implantar o manipulador convidar usuários externos para o AEM Forms, você deve empacotar o projeto Java em um arquivo JAR. Verifique se os arquivos JAR externos dos quais depende a lógica de negócios do manipulador de usuários externos do convite, como a `edc-server-spi.jar` e `adobe-rightsmanagement-client.jar` Os arquivos também estão incluídos no arquivo JAR. Além disso, o componente XML file deve estar presente. A variável `component.xml` O arquivo JAR e os arquivos JAR externos devem estar localizados na raiz do arquivo JAR.
 
 >[!NOTE]
 >
 >Na ilustração abaixo, uma `BootstrapImpl` é exibida. Esta seção não discute como criar um `BootstrapImpl` classe.
 
-A ilustração a seguir mostra o conteúdo do projeto Java que é empacotado no arquivo JAR do manipulador do usuário externo do convite.
+A ilustração a seguir mostra o conteúdo do projeto Java que é empacotado no arquivo JAR do manipulador de usuários externos do convite.
 
 ![Convidar usuários](assets/ci_ci_InviteUsers.png)
 
 A. Arquivos JAR externos necessários para o componente B. Arquivo JAVA
 
-Você deve criar um pacote do manipulador convidar usuários externos em um arquivo JAR. No diagrama anterior, observe que os arquivos .JAVA estão listados. Uma vez empacotado em um arquivo JAR, os arquivos .CLASS correspondentes também devem ser especificados. Sem os arquivos .CLASS, o manipulador de autorização não funciona.
+Empacote o manipulador convidar usuários externos em um arquivo JAR. No diagrama anterior, observe que os arquivos .JAVA estão listados. Uma vez empacotado em um arquivo JAR, os arquivos .CLASS correspondentes também devem ser especificados. Sem os arquivos .CLASS, o manipulador de autorização não funciona.
 
 >[!NOTE]
 >

@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4143'
+source-wordcount: '4102'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ Você deve mover-se explicitamente de painel a painel usando o `xfa.host.pageUp`
 
 ## Execução de scripts {#running-scripts}
 
-Um autor de formulário especifica se um script é executado no servidor ou no cliente. O serviço Forms cria um ambiente de processamento de eventos distribuído para a execução de inteligência de formulários que pode ser distribuído entre o cliente e o servidor usando o `runAt` atributo. Para obter informações sobre esse atributo ou a criação de scripts em designs de formulário, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_pt)
+Um autor de formulário especifica se um script é executado no servidor ou no cliente. O serviço Forms cria um ambiente de processamento de eventos distribuído para a execução de inteligência de formulários que pode ser distribuído entre o cliente e o servidor usando o `runAt` atributo. Para obter informações sobre esse atributo ou a criação de scripts em designs de formulário, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
 
 O serviço Forms pode executar scripts enquanto o formulário está sendo renderizado. Como resultado, você pode preencher previamente um formulário com dados se conectando a um banco de dados ou a serviços da Web que podem não estar disponíveis no cliente. Também é possível definir as configurações de um botão `Click` evento a ser executado no servidor para que o cliente arredonde os dados de viagem para o servidor. Isso permite que o cliente execute scripts que podem exigir recursos de servidor, como um banco de dados empresarial, enquanto um usuário interage com um formulário. Para formulários HTML, os scripts formcalc podem ser executados somente no servidor. Como resultado, você deve marcar esses scripts para serem executados em `server` ou `both`.
 
@@ -123,11 +123,11 @@ var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature
 
 Ao criar designs de formulário para renderizar como HTML, você deve restringir seu script ao subconjunto XFA para scripts na linguagem JavaScript.
 
-Os scripts executados no cliente ou no servidor devem ser gravados no subconjunto XFA. Os scripts executados no servidor podem usar o modelo de script XFA completo e também usar FormCalc. Para obter informações sobre o uso do JavaScript, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_pt).
+Os scripts executados no cliente ou no servidor devem ser gravados no subconjunto XFA. Os scripts executados no servidor podem usar o modelo de script XFA completo e também usar FormCalc. Para obter informações sobre o uso do JavaScript, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 Ao executar scripts no cliente, somente o painel atual que está sendo exibido pode usar script; por exemplo, você não pode criar scripts para campos que estão no painel A quando o painel B é exibido. Ao executar scripts no servidor, todos os painéis podem ser acessados.
 
-Você também deve ter cuidado ao usar expressões de modelo de objeto de script (SOM) em scripts executados no cliente. Somente um subconjunto simplificado de expressões SOM é suportado por scripts executados no cliente.
+Tenha cuidado ao usar expressões de modelo de objeto de script (SOM) em scripts executados no cliente. Somente um subconjunto simplificado de expressões SOM é suportado por scripts executados no cliente.
 
 ## Tempo do evento {#event-timing}
 
@@ -140,11 +140,11 @@ A Forms exibida em um navegador da Web (em vez de Adobe Reader ou Acrobat) está
 * Se o teste nulo produzir um erro e você sair de um campo sem especificar um valor, uma caixa de mensagem será exibida e você será reposicionado no campo depois de clicar em OK.
 * Se um teste nulo produzir um aviso e você sair de um campo sem especificar um valor, você será solicitado a clicar em OK ou em Cancelar, fornecendo a opção de continuar sem especificar um valor ou retornar ao campo para inserir um valor.
 
-Para obter mais informações sobre um teste nulo, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_pt).
+Para obter mais informações sobre um teste nulo, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 ## Botões de formulário {#form-buttons}
 
-Clicar em um botão enviar envia dados de formulário para o serviço Forms e representa o fim do processamento de formulário. A variável `preSubmit` evento pode ser definido para execução no cliente ou servidor. A variável `preSubmit` O evento será executado antes do envio do formulário se ele estiver configurado para ser executado no cliente. Caso contrário, a variável `preSubmit` evento é executado no servidor durante o envio do formulário. Para obter mais informações sobre o `preSubmit` evento, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_pt).
+Clicar em um botão enviar envia dados de formulário para o serviço Forms e representa o fim do processamento de formulário. A variável `preSubmit` evento pode ser definido para execução no cliente ou servidor. A variável `preSubmit` O evento será executado antes do envio do formulário se ele estiver configurado para ser executado no cliente. Caso contrário, a variável `preSubmit` evento é executado no servidor durante o envio do formulário. Para obter mais informações sobre o `preSubmit` evento, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 Se um botão não tiver script do lado do cliente associado a ele, os dados serão enviados ao servidor, os cálculos serão executados no servidor e o formulário HTML será gerado novamente. Se um botão contiver um script do lado do cliente, os dados não serão enviados para o servidor e o script do lado do cliente será executado no navegador da Web.
 
@@ -236,7 +236,7 @@ Se você renderizar um formulário AHTML, é recomendável não adicionar uma ba
 
 **Renderizar um formulário HTML**
 
-Para renderizar um formulário HTML, você deve especificar um design de formulário criado no Designer e salvo como um arquivo XDP. Você também deve selecionar um tipo de transformação de HTML. Por exemplo, você pode especificar o tipo de transformação de HTML que renderiza um HTML dinâmico para o Internet Explorer 5.0 ou posterior.
+Para renderizar um formulário HTML, especifique um design de formulário que foi criado no Designer e salvo como um arquivo XDP. Selecione um tipo de transformação HTML. Por exemplo, você pode especificar o tipo de transformação de HTML que renderiza um HTML dinâmico para o Internet Explorer 5.0 ou posterior.
 
 A renderização de um formulário HTML também requer valores, como valores de URI, que são necessários para renderizar outros tipos de formulário.
 

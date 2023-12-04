@@ -11,9 +11,9 @@ topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 feature: Configuring
 exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
-source-git-commit: b8027a8564f2dce408e7cd5b01f3b86c703c9e3a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1319'
 ht-degree: 3%
 
 ---
@@ -35,7 +35,7 @@ A configuração do MSSL para replicação envolve a execução das seguintes et
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-Você deve determinar qual conta de usuário está executando a replicação. Ao instalar o certificado de autor confiável na instância de publicação, o certificado é associado a essa conta de usuário.
+Determine qual conta de usuário está executando a replicação. Ao instalar o certificado de autor confiável na instância de publicação, o certificado é associado a essa conta de usuário.
 
 ## Obtendo ou Criando Credenciais para MSSL {#obtaining-or-creating-credentials-for-mssl}
 
@@ -120,7 +120,7 @@ Gere uma chave privada e um certificado no formato pkcs#12. Uso [openSSL](https:
    | Opção | Autor | Publicação |
    |---|---|---|
    | -signkey | author.key | publish.key |
-   | -em | author_request.csr | publish_request.csr |
+   | -in | author_request.csr | publish_request.csr |
    | -out | author.cer | publish.cer |
 
 1. Para adicionar sua chave privada e o certificado assinado a um arquivo pkcs#12, digite o seguinte comando, usando os valores de opção da tabela abaixo:
@@ -133,7 +133,7 @@ Gere uma chave privada e um certificado no formato pkcs#12. Uso [openSSL](https:
    |---|---|---|
    | -inkey | author.key | publish.key |
    | -out | author.pfx | publish.pfx |
-   | -em | author.cer | publish.cer |
+   | -in | author.cer | publish.cer |
    | -name | autor | publicação |
 
 ## Instalar a chave privada e o TrustStore no Author {#install-the-private-key-and-truststore-on-author}
@@ -148,7 +148,7 @@ Para executar o procedimento a seguir, você deve estar conectado como administr
 ### Instalar a chave privada do autor {#install-the-author-private-key}
 
 1. Abra a página Gerenciamento de usuários da instância do autor. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
-1. Para abrir as propriedades da conta de usuário, clique ou toque no nome de usuário.
+1. Para abrir as propriedades da conta de usuário, clique no nome do usuário.
 1. Se o link Criar KeyStore aparecer na área Configurações da conta, clique no link. Configure uma senha e clique em OK.
 1. Na área Configurações da conta, clique em Gerenciar armazenamento de chaves.
 
@@ -167,7 +167,7 @@ Para executar o procedimento a seguir, você deve estar conectado como administr
 ### Instalar o Publicar certificado {#install-the-publish-certificate}
 
 1. Abra a página Gerenciamento de usuários da instância do autor. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
-1. Para abrir as propriedades da conta de usuário, clique ou toque no nome de usuário.
+1. Para abrir as propriedades da conta de usuário, clique no nome do usuário.
 1. Se o link Criar TrustStore aparecer na área Configurações da conta, clique no link, crie uma senha para o TrustStore e clique em OK.
 1. Na área Configurações da conta, clique em Gerenciar TrustStore.
 1. Clique em Adicionar certificado do arquivo CER.
@@ -191,7 +191,7 @@ Para executar o procedimento a seguir, você deve estar conectado como administr
 ### Instalar a chave privada de publicação {#install-the-publish-private-key}
 
 1. Abra a página Gerenciamento de usuários da instância de publicação. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
-1. Para abrir as propriedades da conta de usuário, clique ou toque no nome de usuário.
+1. Para abrir as propriedades da conta de usuário, clique no nome do usuário.
 1. Se o link Criar KeyStore aparecer na área Configurações da conta, clique no link. Configure uma senha e clique em OK.
 1. Na área Configurações da conta, clique em Gerenciar armazenamento de chaves.
 1. Clique em Adicionar chave de privacidade do arquivo da chave de armazenamento.

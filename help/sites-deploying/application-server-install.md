@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1168'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ Antes de uma implantação, leia o [Descrição geral](#general-description) aci
 
 * Permitir a passagem de Cabeçalhos de Autenticação Básicos:
 
-   * Uma maneira de permitir que o AEM autentique um usuário é desabilitar a segurança administrativa global do servidor WebSphere®, para fazer isso: vá para Segurança -> Segurança global e desmarque a caixa de seleção Habilitar segurança administrativa, salve e reinicie o servidor.
+   * Uma maneira de permitir que o AEM autentique um usuário é desabilitar a segurança administrativa global do servidor WebSphere®. Para fazer isso: vá para Security > Global Security e desmarque a caixa de seleção Enable administrative security, salve e reinicie o servidor.
 
 * set `"JAVA_OPTS= -Xmx2048m"`
 * Se você deseja instalar o AEM usando raiz de contexto = /, altere a raiz de contexto do Default web application existente.

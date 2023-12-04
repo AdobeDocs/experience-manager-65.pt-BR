@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1788'
-ht-degree: 2%
+source-wordcount: '1726'
+ht-degree: 0%
 
 ---
 
@@ -28,10 +28,10 @@ There are two options to disable ContextHub:
 
 * Edit the ContextHub's configuration and check the option **Disable ContextHub**
 
-    1. In the rail click or tap **Tools &gt; Sites &gt; ContextHub**
-    1. Click or tap the appropriate **Configuration Container**
-    1. Select the **ContextHub Configuration** and click or tap **Edit Selected Element**
-    1. Click or tap **Disable ContextHub** and click or tap **Save**
+    1. In the rail click **Tools &gt; Sites &gt; ContextHub**
+    1. Click the appropriate **Configuration Container**
+    1. Select the **ContextHub Configuration** and click **Edit Selected Element**
+    1. Click **Disable ContextHub** and click **Save**
 
 or
 -->
@@ -74,10 +74,10 @@ Os ícones são referências do [Biblioteca de ícones da Coral UI](https://help
 
 Adicione um modo de interface do usuário para agrupar módulos do ContextHub relacionados. Ao criar o modo de interface do usuário, forneça o título e o ícone que aparecem na barra de ferramentas do ContextHub.
 
-1. No painel Experience Manager, clique ou toque em Ferramentas > Sites > Context Hub.
-1. Clique ou toque no Contêiner de configuração padrão.
-1. Clique ou toque em Configuração do Context Hub.
-1. Clique ou toque no botão Criar e, em seguida, clique ou toque em Modo da interface do usuário do Context Hub.
+1. No painel Experience Manager, clique em Ferramentas > Sites > Context Hub.
+1. Clique no Contêiner de configuração padrão.
+1. Clique em Configuração do Context Hub.
+1. Clique no botão Criar e, em seguida, clique em Modo da interface do usuário do Context Hub.
 
    ![chlimage_1-320](assets/chlimage_1-320.png)
 
@@ -87,7 +87,7 @@ Adicione um modo de interface do usuário para agrupar módulos do ContextHub re
    * Ícone Mode: o seletor para o [Ícone da Coral UI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) para usar, por exemplo, `coral-Icon--user`
    * Ativado: selecione para mostrar o modo de interface na barra de ferramentas do ContextHub
 
-1. Clique ou toque em Salvar.
+1. Clique em Salvar.
 
 ### Adição de um módulo de interface {#adding-a-ui-module}
 
@@ -108,11 +108,11 @@ As propriedades do módulo de interface do usuário incluem uma configuração d
 | [contexthub.tagcloud](/help/sites-developing/ch-samplemodules.md#contexthub-tagcloud-ui-module-type) | Exibe estatísticas sobre tags de página | tagcloud |
 | [granite.profile](/help/sites-developing/ch-samplemodules.md#granite-profile-ui-module-type) | Exibe as informações de perfil do usuário atual, incluindo authorizableID, displayName e familyName. Você pode alterar o valor de displayName e familyName. | perfil |
 
-1. No painel Experience Manager, clique ou toque em Ferramentas > Sites > ContextHub.
-1. Clique ou toque no Contêiner de configuração ao qual você deseja adicionar um módulo de interface.
+1. No painel Experience Manager, clique em Ferramentas > Sites > ContextHub.
+1. Clique no Contêiner de configuração ao qual você deseja adicionar um módulo de interface.
 1. Clique ou digite a Configuração do ContextHub à qual você deseja adicionar o módulo de interface do usuário.
-1. Clique ou toque no modo de interface do usuário ao qual você está adicionando o módulo de interface do usuário.
-1. Clique ou toque no botão Criar e, em seguida, clique ou toque em Módulo de interface do usuário do ContextHub (genérico).
+1. Clique no modo da interface do usuário ao qual você está adicionando o módulo da interface do usuário.
+1. Clique no botão Criar e em Módulo de interface do usuário do ContextHub (genérico).
 
    ![chlimage_1-321](assets/chlimage_1-321.png)
 
@@ -123,7 +123,7 @@ As propriedades do módulo de interface do usuário incluem uma configuração d
    * Ativado: selecione para mostrar o módulo de interface do usuário na barra de ferramentas do ContextHub
 
 1. (Opcional) Para substituir a configuração de armazenamento padrão, insira um objeto JSON para configurar o Módulo de interface do usuário.
-1. Clique ou toque em Salvar.
+1. Clique em Salvar.
 
 ## Criação de um armazenamento do ContextHub {#creating-a-contexthub-store}
 
@@ -151,14 +151,14 @@ O AEM fornece as seguintes amostras de candidatos de armazenamento nas quais voc
 | [contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) | Armazena informações sobre o cliente, como informações do dispositivo, tipo de navegador e orientação da janela |
 | [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) | Armazena tags de página e contagens de tags |
 
-1. No painel Experience Manager, clique ou toque em Ferramentas > Sites > ContextHub.
-1. Clique ou toque no container de configuração padrão.
-1. Clique ou toque em Configuração do Contexthub
-1. Para adicionar uma loja, clique ou toque no ícone Criar e, em seguida, clique ou toque em Configuração da loja do ContexHub.
+1. No painel Experience Manager, clique em Ferramentas > Sites > ContextHub.
+1. Clique no container de configuração padrão.
+1. Clique em Configuração do Contexthub
+1. Para adicionar um armazenamento, clique no ícone Create e em ContexHub Store Configuration.
 
    ![chlimage_1-322](assets/chlimage_1-322.png)
 
-1. Forneça valores para as propriedades de configuração básica e clique ou toque em Próximo:
+1. Forneça valores para as propriedades de configuração básica e clique em Próximo:
 
    * **Título da configuração:** O título que identifica o armazenamento
    * **Tipo de armazenamento:** O valor da propriedade storeType do candidato do armazenamento no qual basear o armazenamento
@@ -166,7 +166,7 @@ O AEM fornece as seguintes amostras de candidatos de armazenamento nas quais voc
    * **Ativado:** Selecionar para habilitar o armazenamento
 
 1. (Opcional) Para substituir a configuração de armazenamento padrão, insira um objeto JSON na caixa Configuração detalhada (JSON).
-1. Clique ou toque em Salvar.
+1. Clique em Salvar.
 
 ## Exemplo: usando um serviço JSONP  {#example-using-a-jsonp-service}
 
@@ -241,10 +241,10 @@ Um modo de depuração para o ContextHub pode ser ativado para permitir a soluç
 
 Edite a configuração do ContextHub e marque a opção **Depurar**
 
-1. No painel, clique ou toque **Ferramentas > Sites > ContextHub**
-1. Clique ou toque no padrão **Contêiner de configuração**
-1. Selecione o **Configuração do ContextHub** e clique ou toque em **Editar elemento selecionado**
-1. Clique ou toque **Depurar** e clique ou toque em **Salvar**
+1. No painel, clique em **Ferramentas > Sites > ContextHub**
+1. Clique no padrão **Contêiner de configuração**
+1. Selecione o **Configuração do ContextHub** e clique em **Editar elemento selecionado**
+1. Clique em **Depurar** e clique em **Salvar**
 
 ### Via CRXDE {#via-crxde}
 

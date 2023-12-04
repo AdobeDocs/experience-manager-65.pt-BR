@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 15%
+ht-degree: 0%
 
 ---
 
@@ -41,7 +41,7 @@ O conjunto padrão de Cloud Services pode ser estendido com tipos de Cloud Servi
    * **Nome**: templates
    * **Tipo**: `sling:Folder`
 
-1. Clique com o botão direito do mouse em `/apps/acs/analytics/components`. Selecionar **Criar...** seguido por **Criar componente...** A caixa de diálogo que é aberta permite especificar:
+1. Clique com o botão direito do mouse `/apps/acs/analytics/components`. Selecionar **Criar...** seguido por **Criar componente...** A caixa de diálogo que é aberta permite especificar:
 
    * **Rótulo**: `googleanalyticspage`
    * **Título**: `Google Analytics Page`
@@ -50,7 +50,7 @@ O conjunto padrão de Cloud Services pode ser estendido com tipos de Cloud Servi
 
 1. Clique em **Próxima** duas vezes e especificar:
 
-   * **Primários permitidos:** `acs/analytics/templates/googleanalytics`
+   * **Pais permitidos:** `acs/analytics/templates/googleanalytics`
 
    Clique em **Próxima** duas vezes e clique **OK**.
 
@@ -203,7 +203,7 @@ O conjunto padrão de Cloud Services pode ser estendido com tipos de Cloud Servi
 
 1. Navegue até a página Serviço recém-criada ( `http://localhost:4502/etc/cloudservices/googleanalytics.html`) e clique no link **+** para criar uma configuração:
 
-   * **Configuração primária**: `/etc/cloudservices/googleanalytics`
+   * **Configuração principal**: `/etc/cloudservices/googleanalytics`
    * **Título:**  `My First GA Config`
 
    Escolher **Configuração do Google Analytics** e clique em **Criar**.

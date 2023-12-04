@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 4%
+source-wordcount: '951'
+ht-degree: 1%
 
 ---
 
@@ -69,7 +69,7 @@ Escolhendo um **Usuários** ou **Grupos** no console Ferramentas abre o console 
 
      É a identificação exclusiva da conta de usuário. É obrigatório e não pode conter espaços.
 
-   * **Endereço de email**
+   * **Endereço de e-mail**
    * **Senha**
 
      Uma senha é obrigatória.
@@ -91,7 +91,7 @@ Escolhendo um **Usuários** ou **Grupos** no console Ferramentas abre o console 
    * **Título**
    * **Sexo**
    * **Sobre**
-   * **Configurações de conta**
+   * **Configurações da conta**
 
       * **Status**
 Você pode sinalizar a conta como **ativo** ou **inativo**.
@@ -222,7 +222,7 @@ Você pode sinalizar a conta como **ativo** ou **inativo**.
 
 1. A variável **Editar configurações de grupo** formulário será aberto.
 
-   A ID do grupo será a mesma do original, mas com o prefixo `Copy of`. Você deve editar isso, pois a ID não pode conter espaços. Todos os outros detalhes serão os mesmos do original.
+   A ID do grupo será a mesma do original, mas com o prefixo `Copy of`. Edite essa ID porque ela não pode conter espaços. Todos os outros detalhes são os mesmos do original.
 
    Agora você pode editar e salvar os detalhes como na [Adicionar um novo grupo](#adding-a-new-group).
 

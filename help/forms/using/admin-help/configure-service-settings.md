@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '10692'
+source-wordcount: '10702'
 ht-degree: 0%
 
 ---
@@ -147,7 +147,7 @@ As configurações a seguir estão disponíveis para o serviço Distiller.
 
 É possível criar novas configurações por meio da interface do usuário do PDF Generator.
 
-**Configurações de segurança:** Configurações de segurança pré-configuradas que são aplicadas a documentos de PDF gerados. O valor padrão é Sem segurança. Você deve criar as configurações de segurança usando o PDF Generator e depois inserir a configuração aqui.
+**Configurações de segurança:** Configurações de segurança pré-configuradas que são aplicadas a documentos de PDF gerados. O valor padrão é Sem segurança. Crie configurações de segurança usando o PDF Generator e insira a configuração aqui.
 
 **Tamanho do Pool:** O tamanho inicial do pool. Quando o serviço Distiller é implantado, esse número é usado para determinar o número de instâncias de implementação de serviço criadas e alocadas para o pool livre aguardando solicitações de chamada. O contêiner de serviço pode então responder imediatamente às solicitações de chamada sem ter que primeiro inicializar uma instância de serviço.
 
@@ -332,7 +332,7 @@ O valor macKeySeed é a semente do gerador de números aleatórios usado para ge
 
 Altere o valor macKeySeed quando precisar atualizar os URLs seguros. Atualizar os URLs seguros depende da sua política de segurança e é semelhante à política de atualização para alterar a senha raiz mestre do servidor. O macSeedValue é análogo à senha mestre para os URLs seguros, porque é usado para gerar um novo número aleatório exclusivo para uso na geração e recuperação de URL seguros.
 
-Você deve reiniciar o cluster porque o macSeedValue é somente leitura na inicialização do sistema. Todos os nós precisam reiniciar para ler o valor, porque eles o usam independentemente para inicializar seus números aleatórios internos com o valor de seed.
+Reinicie o cluster porque o macSeedValue é somente leitura na inicialização do sistema. Todos os nós precisam reiniciar para ler o valor, porque eles o usam independentemente para inicializar seus números aleatórios internos com o valor de seed.
 
 ## Configurações do serviço JDBC {#jdbc-service-settings}
 

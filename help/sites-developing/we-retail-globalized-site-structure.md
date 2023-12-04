@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: e1de20b0-6d7a-4bda-b62f-c2808fd0af28
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ O We.Retail foi criado com uma estrutura de site globalizada que oferece um idio
 
 ## Experimentando {#trying-it-out}
 
-1. Abra o console Sites em **Navegação global -> Sites**.
+1. Abra o console Sites em **Navegação global > Sites**.
 1. Alterne para a exibição de coluna (se ainda não estiver ativa) e selecione We.Retail. Observe o exemplo de estrutura de país com Suíça, Estados Unidos, França e assim por diante, ao lado do Idioma principal.
 
    ![chlimage_1-87](assets/chlimage_1-87a.png)
@@ -46,7 +46,7 @@ O We.Retail foi criado com uma estrutura de site globalizada que oferece um idio
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
-1. Um projeto é criado para cada tradução de idioma. Exiba em **Navegação -> Projetos**.
+1. Um projeto é criado para cada tradução de idioma. Exiba em **Navegação > Projetos**.
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 

@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: d4c2b2f0-613a-409d-b39b-8e37fdb96eea
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1455'
+source-wordcount: '1447'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Antes de executar programaticamente uma operação da API do cliente de serviço
 
 **Definir opções de tempo de execução de direitos de uso**
 
-Defina as opções de tempo de execução de direitos de uso para renderizar um formulário habilitado para direitos. Você também deve especificar o alias da credencial usada para aplicar direitos de uso a um formulário. Depois de especificar o valor do alias, especifique cada direito de uso a ser aplicado ao formulário.
+Defina as opções de tempo de execução de direitos de uso para renderizar um formulário habilitado para direitos. Especifique o alias da credencial usada para aplicar direitos de uso a um formulário. Depois de especificar o valor do alias, especifique cada direito de uso a ser aplicado ao formulário.
 
 **Renderizar um formulário habilitado para direitos**
 
@@ -124,7 +124,7 @@ Renderize um formulário habilitado para direitos usando a API do Forms (Java):
 
 1. Gravar o fluxo de dados do formulário no navegador Web cliente
 
-   * Criar um `com.adobe.idp.Document` ao invocar o `FormsResult` object&#39;s `getOutputContent` método.
+   * Criar um `com.adobe.idp.Document` ao invocar o `FormsResult` do objeto `getOutputContent` método.
    * Obter o tipo de conteúdo do `com.adobe.idp.Document` ao invocar seu `getContentType` método.
    * Defina o `javax.servlet.http.HttpServletResponse` tipo de conteúdo do objeto chamando seu `setContentType` e transmitindo o tipo de conteúdo do `com.adobe.idp.Document` objeto.
    * Criar um `javax.servlet.ServletOutputStream` objeto usado para gravar o fluxo de dados de formulário no navegador da web cliente, chamando o `javax.servlet.http.HttpServletResponse` do objeto `getOutputStream` método.

@@ -11,9 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 feature: Mobile Forms
 exl-id: 7330c03f-7102-43c0-aac6-825cce8a113d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '811'
 ht-degree: 0%
 
 ---
@@ -107,9 +107,9 @@ Verifique os seguintes parâmetros:
 ### Problema: erro inesperado encontrado {#problem-unexpected-error-encountered}
 
 1. No URL do formulário, adicione um parâmetro de consulta debugClientLibs e defina seu valor como true (Por exemplo: https://&lt;server>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;some path=&quot;&quot;>&amp;modelo=&lt;name of=&quot;&quot; xdp=&quot;&quot; file=&quot;&quot;>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
-1. No navegador do desktop, como o chrome, acesse Ferramentas do desenvolvedor -> Console.
+1. No navegador do desktop, como o chrome, acesse Ferramentas do desenvolvedor > Console.
 1. Abra os logs para identificar o tipo de erro. Para obter informações detalhadas sobre logs, consulte [registros para formulários HTML5](/help/forms/using/enable-logs.md).
-1. Acesse Ferramentas do desenvolvedor -> Console. Use o rastreamento de pilha para localizar o código que está causando o erro. Depurar o erro para resolver o problema.
+1. Acesse Ferramentas do desenvolvedor > Console. Use o rastreamento de pilha para localizar o código que está causando o erro. Depurar o erro para resolver o problema.
 
    >[!NOTE]
    >
@@ -124,7 +124,7 @@ Verifique os seguintes parâmetros:
 
 ## Problema: as mensagens de erro localizadas não são exibidas {#problem-localized-error-messages-do-not-display}
 
-1. Renderizar o formulário com parâmetro de consulta adicional **debugClientLibs=true** no navegador do desktop, acesse Ferramentas do desenvolvedor -> Recursos e verifique o arquivo I18N.css.
+1. Renderizar o formulário com parâmetro de consulta adicional **debugClientLibs=true** no navegador do desktop, acesse Ferramentas do desenvolvedor > Recursos e verifique o arquivo I18N.css.
 1. Se o arquivo não estiver disponível, faça logon no CRX DE em https://&lt;server>:&lt;port>/crx/de.
 1. Na hierarquia de pastas à esquerda, navegue até /libs/fd/xfaforms/clientlibs/I18N e verifique se os seguintes arquivos e pastas existem:
 
@@ -181,6 +181,6 @@ Verifique os seguintes parâmetros:
  </tbody>
 </table>
 
-1. No navegador do desktop, acesse Ferramentas do desenvolvedor -> Recursos.
+1. No navegador do desktop, acesse Ferramentas do desenvolvedor > Recursos.
 
    Verifique no lado esquerdo em Quadros se essa imagem é exibida.

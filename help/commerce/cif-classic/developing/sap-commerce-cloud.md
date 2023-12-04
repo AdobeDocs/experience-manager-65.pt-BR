@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2288'
+source-wordcount: '2303'
 ht-degree: 0%
 
 ---
@@ -562,7 +562,7 @@ A integração é fornecida entre o AEM e vários sistemas de comércio eletrôn
 
 Um front-end AEM pode ser posicionado na frente de uma implementação hybris existente. Além disso, um mecanismo hybris pode ser adicionado a uma instalação existente do AEM. Para fazer isso, os sistemas devem ser capazes de lidar com os usuários existentes em ambos os sistemas:
 
-* AEM -> hibris
+* AEM > hibris
 
    * Ao fazer logon no hybris, se o usuário AEM não existir:
 
@@ -571,7 +571,7 @@ Um front-end AEM pode ser posicionado na frente de uma implementação hybris ex
 
    * Consulte: `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
 
-* hybris -> AEM
+* hybris > AEM
 
    * Ao fazer logon no AEM, se o sistema reconhecer o usuário:
 

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 22%
+source-wordcount: '964'
+ht-degree: 18%
 
 ---
 
@@ -34,16 +34,16 @@ A maneira mais fácil de fazer isso é dar a **projetos-usuários** acesso de le
 
 Siga estas etapas para criar um projeto.
 
-1. No **Projetos** toque ou clique em **Criar** para abrir o **Criar projeto** assistente.
-1. Selecione um modelo e clique em **Próximo**. Você pode saber mais sobre os modelos de projeto padrão [aqui.](/help/sites-authoring/projects.md#project-templates)
+1. No **Projetos** , clique em **Criar** para abrir o **Criar projeto** assistente.
+1. Selecione um modelo e clique em **Próxima**. Você pode saber mais sobre os modelos de projeto padrão [aqui.](/help/sites-authoring/projects.md#project-templates)
 
    ![Assistente Criar projeto](assets/create-project-wizard.png)
 
-1. Defina o **Título** e **Descrição** e adicionar um **Miniatura** imagem, se necessário. Também é possível adicionar ou excluir usuários, bem como sua associação com um grupo.
+1. Defina o **Título** e **Descrição** e adicionar um **Miniatura** imagem, se necessário. Também é possível adicionar ou excluir usuários e a qual grupo eles pertencem.
 
    ![Etapa de propriedades do assistente](assets/create-project-wizard-properties.png)
 
-1. Toque/clique em **Criar**. Você é solicitado(a) a confirmar se deseja abrir o novo projeto ou retornar ao console.
+1. Clique em **Criar**. Você é solicitado(a) a confirmar se deseja abrir o novo projeto ou retornar ao console.
 
 O procedimento para criar um projeto é o mesmo para todos os modelos de projeto. A diferença entre os tipos de projetos refere-se aos projetos [funções de usuário](/help/sites-authoring/projects.md) e [fluxos de trabalho.](/help/sites-authoring/projects-with-workflows.md)
 
@@ -54,11 +54,11 @@ Os projetos permitem agrupar recursos em uma entidade para gerenciá-los como um
 Para associar recursos ao projeto:
 
 1. Abra o projeto no console **Projetos**.
-1. Toque/clique em **Adicionar bloco** e selecione o bloco que deseja vincular ao seu projeto. É possível selecionar vários tipos de mosaicos.
+1. Clique em **Adicionar mosaico** e selecione o bloco que deseja vincular ao projeto. É possível selecionar vários tipos de mosaicos.
 
    ![Adicionar mosaico](assets/project-add-tile.png)
 
-1. Toque/clique em **Criar**. O recurso é vinculado ao seu projeto e a partir de agora é possível acessá-lo do próprio projeto.
+1. Clique em **Criar**. O recurso é vinculado ao seu projeto e a partir de agora é possível acessá-lo do próprio projeto.
 
 ### Adicionar itens a um bloco {#adding-items-to-a-tile}
 
@@ -72,7 +72,7 @@ Para adicionar itens a um bloco:
 
    ![Divisa em mosaico](assets/project-tile-create-task.png)
 
-1. Adicione o item ao bloco da mesma maneira que você faria ao criar um bloco. Os blocos do projeto estão descritos [aqui.](/help/sites-authoring/projects.md#project-tiles)
+1. Adicione o item ao bloco da mesma maneira que você faria ao criar um bloco. Os mosaicos do projeto estão descritos [aqui.](/help/sites-authoring/projects.md#project-tiles)
 
 ## Exibindo Informações do Projeto {#viewing-project-info}
 
@@ -84,7 +84,7 @@ Você pode querer ver quais itens estão incluídos no bloco atual, ou modificar
 
 Para abrir um bloco e visualizar ou modificar itens:
 
-1. Toque ou clique no ícone de reticências, na parte inferior direita do bloco.
+1. Clique no ícone de reticências na parte inferior direita do bloco.
 
    ![Mosaico de tarefas](assets/project-tile-tasks.png)
 
@@ -96,7 +96,7 @@ Para abrir um bloco e visualizar ou modificar itens:
 
 A linha do tempo do projeto fornece informações sobre quando os ativos do projeto foram usados pela última vez. Para exibir a linha do tempo do projeto, siga estas etapas.
 
-1. No **Projetos** clique ou toque em **Linha do tempo** no seletor de painéis na parte superior esquerda do console.
+1. No **Projetos** , clique em **Linha do tempo** no seletor de painéis na parte superior esquerda do console.
    ![Seleção do modo de linha do tempo](assets/projects-timeline-rail.png)
 2. No console, selecione o projeto para o qual deseja exibir sua linha do tempo.
    ![Exibição da linha do tempo do projeto](assets/project-timeline-view.png)
@@ -119,7 +119,7 @@ Há várias opções disponíveis para ajudar a organizar seus projetos para man
 
 Você pode criar pastas na variável **Projetos** console para agrupar e organizar projetos semelhantes.
 
-1. No **Projetos** toque ou clique no console **Criar** e depois **Criar pasta**.
+1. No **Projetos** clique no console **Criar** e depois **Criar pasta**.
 
    ![Criar pasta](assets/project-create-folder.png)
 
@@ -141,7 +141,7 @@ Para tornar um projeto inativo, siga estas etapas.
 
    ![Seletor de status de projeto na janela de propriedades](assets/project-status.png)
 
-1. Toque ou clique **Salvar e fechar** para salvar as alterações.
+1. Clique em **Salvar e fechar** para salvar as alterações.
 
 ### Exclusão de projetos {#deleting-a-project}
 
@@ -149,13 +149,13 @@ Siga estas etapas para excluir um projeto.
 
 1. Navegue até o nível superior da **Projetos** console.
 1. Selecionar o projeto no console.
-1. Toque ou clique **Excluir** na barra de ferramentas.
+1. Clique em **Excluir** na barra de ferramentas.
 1. O AEM pode remover/modificar dados de projetos associados após a exclusão do projeto. Selecione quais opções são necessárias no **Excluir Projeto** diálogo.
    * Remover os grupos e as funções do projeto
    * Excluir a pasta de ativos do projeto
    * Encerrar fluxos de trabalho do projeto
 
    ![Opções de exclusão de projeto](assets/project-delete-options.png)
-1. Toque ou clique **Excluir** para excluir o projeto com as opções selecionadas.
+1. Clique em **Excluir** para excluir o projeto com as opções selecionadas.
 
 Para saber mais sobre grupos criados automaticamente por projetos, consulte [Criação automática de grupo](/help/sites-authoring/projects.md#auto-group-creation) para obter detalhes.

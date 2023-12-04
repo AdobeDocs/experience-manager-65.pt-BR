@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 91%
+source-wordcount: '647'
+ht-degree: 82%
 
 ---
 
@@ -103,7 +103,7 @@ Você pode especificar detalhes:
 
    >[!NOTE]
    >
-   >A opção **Manter pacote de fluxo de trabalho** estará disponível quando o fluxo de trabalho for configurado para Suporte a vários recursos e vários recursos foram selecionados.[](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)
+   >A variável **Manter pacote de fluxo de trabalho** estiver disponível quando o fluxo de trabalho tiver sido configurado para [Suporte a vários recursos](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) e vários recursos foram selecionados.
 
    Quando terminar, use **Próximo** para prosseguir.
 
@@ -111,7 +111,7 @@ Você pode especificar detalhes:
 
 1. Na etapa **Escopo**, você pode selecionar:
 
-   * **Adicione conteúdo** para abrir o [navegador de caminhos](/help/sites-authoring/author-environment-tools.md#path-browser) e selecionar recursos adicionais. Quando estiver no navegador, clique/toque em **Selecionar** para adicionar o conteúdo à instância do fluxo de trabalho.
+   * **Adicionar conteúdo** para abrir o [navegador de caminho](/help/sites-authoring/author-environment-tools.md#path-browser) e selecione recursos adicionais; quando estiver no navegador, clique em **Selecionar** para adicionar o conteúdo à instância do workflow.
 
    * Um recurso existente para ver ações adicionais:
 

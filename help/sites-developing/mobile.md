@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3787'
+source-wordcount: '3720'
 ht-degree: 0%
 
 ---
@@ -91,12 +91,12 @@ A variável **Site de demonstração móvel do We.Retail** usa os seguintes comp
   </tr>
   <tr>
    <td>mobileiimage</td>
-   <td>Móvel</td>
+   <td>Mobile</td>
    <td>- com base no componente de base da imagem<br /> - renderiza uma imagem se o dispositivo for capaz<br /> </td>
   </tr>
   <tr>
    <td>mobilelist</td>
-   <td>Móvel</td>
+   <td>Mobile</td>
    <td>- com base no componente de base da lista<br /> - listitem_teaser.jsp renderiza uma imagem se o dispositivo for compatível<br /> </td>
   </tr>
   <tr>
@@ -106,12 +106,12 @@ A variável **Site de demonstração móvel do We.Retail** usa os seguintes comp
   </tr>
   <tr>
    <td>mobilereference</td>
-   <td>Móvel</td>
+   <td>Mobile</td>
    <td><p>- semelhante ao componente de base de referência</p> <p>- mapeia um componente textimage para um mobiletextimage e um componente de imagem para um mobiletextimage</p> </td>
   </tr>
   <tr>
    <td>mobiletextimage</td>
-   <td>Móvel</td>
+   <td>Mobile</td>
    <td>- com base no componente textimage foundation<br /> - renderiza uma imagem se o dispositivo for capaz</td>
   </tr>
   <tr>
@@ -146,10 +146,9 @@ A estrutura móvel AEM permite desenvolver componentes sensíveis ao dispositivo
 
 * Verificar se o grupo de dispositivos dá suporte a imagens
   `if (deviceGroup.hasCapability(DeviceCapability.CAPABILITY_IMAGES)) {`
-...
-OU
+.. OU
   `if MobileUtil.hasCapability(request, DeviceCapability.CAPABILITY_IMAGES) {`
-...
+..
 
 >[!NOTE]
 >
@@ -186,7 +185,7 @@ Os grupos de dispositivos móveis fornecem segmentação de dispositivos móveis
 
 Os grupos de dispositivos são definidos como páginas de conteúdo abaixo `/etc/mobile/devices` e use o **Grupo de dispositivos móveis** modelo. O modelo de grupo de dispositivos serve como um modelo de configuração para definições de grupo de dispositivos na forma de páginas de conteúdo. Suas principais características são:
 
-* Local: `/libs/wcm/mobile/templates/devicegroup`
+* Localização: `/libs/wcm/mobile/templates/devicegroup`
 * Caminho permitido: `/etc/mobile/groups/*`
 * Componente de Página: `wcm/mobile/components/devicegroup`
 
@@ -577,7 +576,7 @@ A variável **Estatísticas** agora está disponível.
 
 ### Cache de página de suporte para links &quot;enviar link para um amigo&quot; {#supporting-page-caching-for-send-link-to-a-friend-links}
 
-As páginas móveis são armazenadas em cache no Dispatcher, pois as páginas renderizadas para um grupo de dispositivos são diferenciadas no URL da página pelo seletor de grupo de dispositivos, por exemplo, `/content/mobilepage.touch.html`. Uma solicitação para uma página móvel sem um seletor nunca é armazenada em cache, como nesse caso, a detecção de dispositivo opera e finalmente redireciona para o grupo de dispositivos correspondente (ou &quot;nomatch&quot; por sinal). Uma página móvel renderizada com um seletor de grupo de dispositivos é processada pelo reescritor de links, que reescreve todos os links dentro da página para também conter o seletor de grupo de dispositivos, impedindo a repetição da detecção de dispositivos para cada clique em uma página já qualificada.
+As páginas móveis são armazenadas em cache no Dispatcher, pois as páginas renderizadas para um grupo de dispositivos são diferenciadas no URL da página pelo seletor de grupo de dispositivos, por exemplo, `/content/mobilepage.touch.html`. Uma solicitação para uma página móvel sem um seletor nunca é armazenada em cache, como nesse caso, a detecção de dispositivo opera e finalmente redireciona para o grupo de dispositivos correspondente (ou &quot;nomatch&quot; por sinal). Uma página móvel renderizada com um seletor de grupo de dispositivos é processada pelo reescritor de links, que reescreve todos os links dentro da página para também conter o seletor de grupo de dispositivos, impedindo a repetição da detecção de dispositivos para cada clique de uma página já qualificada.
 
 Portanto, você pode encontrar o seguinte cenário:
 

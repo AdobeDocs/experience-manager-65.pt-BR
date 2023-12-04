@@ -10,10 +10,10 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '5939'
-ht-degree: 1%
+source-wordcount: '5793'
+ht-degree: 0%
 
 ---
 
@@ -63,7 +63,7 @@ Geralmente, um backup completo é feito em intervalos regulares (por exemplo, di
 >
 >Para obter mais informações sobre desempenho de backup, leia a [Desempenho de backup](/help/sites-deploying/configuring-performance.md#backup-performance) seção.
 
-### Backup da instalação do software {#backing-up-your-software-installation}
+### Fazendo backup da instalação do software {#backing-up-your-software-installation}
 
 Após a instalação ou alterações significativas na configuração, crie uma backup da instalação do software.
 
@@ -292,7 +292,7 @@ Em determinadas circunstâncias, talvez você queira criar um arquivo de log per
 
    * Nome: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
 
-     Onde `<identifier>` é substituído por grátis texto que você (deve) inserir para identificar a instância (não é possível omitir essas informações).
+     Onde `<identifier>` é substituído por texto livre que você (deve) inserir para identificar a instância (não é possível omitir essas informações).
 
      Por exemplo, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
@@ -433,7 +433,7 @@ Em determinadas circunstâncias, talvez você queira criar um arquivo de log per
    >para indicar quando um novo arquivo será criado (e o arquivo existente será renomeado de acordo com o padrão de nome).
    >
    >* Um limite de tamanho pode ser especificado com um número. Se nenhum indicador de tamanho for fornecido, ele será considerado como o número de bytes, ou você poderá adicionar um dos indicadores de tamanho: `KB`, `MB`ou `GB` (maiúsculas e minúsculas ignoradas).
-   >* Um cronograma de hora/data pode ser especificado como um `java.util.SimpleDateFormat` padrão. Ela define a período depois da qual o arquivo é girado. Além disso, o sufixo anexado ao arquivo girado (para identificação).
+   >* Um cronograma de hora/data pode ser especificado como um `java.util.SimpleDateFormat` padrão. Ele define o período após o qual o arquivo é girado. Além disso, o sufixo anexado ao arquivo girado (para identificação).
    >
    >O padrão é &#39;.&#39;dd/MM/aaaa (para rotação diária de log).
    >
@@ -483,7 +483,7 @@ Essas entradas contêm as mesmas informações que são exibidas ao editar uma p
 
 #### Registros de auditoria OSGi no console da Web {#osgi-audit-records-from-the-web-console}
 
-Os eventos OSGi também geram registros de auditoria que podem ser vistos do **Status da configuração** guia -> **Arquivos de log** no console da Web do AEM:
+Os eventos OSGi também geram registros de auditoria que podem ser vistos do **Status da configuração** guia > **Arquivos de log** no console da Web do AEM:
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 
@@ -923,7 +923,7 @@ O comando da ferramenta `jconsole` está disponível com o JDK.
 
    Agora é possível selecionar outras opções.
 
-### Monitoramento de desempenho usando (J)VisualVM {#monitoring-performance-using-j-visualvm}
+### Monitoramento do desempenho usando (J)VisualVM {#monitoring-performance-using-j-visualvm}
 
 Para o JDK 6-8, o comando da ferramenta `visualvm` está disponível. Depois de instalar um JDK, você pode fazer o seguinte:
 
@@ -989,7 +989,7 @@ Para ver o número total de ativações de página desde a instalação do servi
 
 * **Caminho** `/`
 
-* **Consulta** `//element(*, cq:AuditEvent)[@cq:type='Activate']`
+* **Query** `//element(*, cq:AuditEvent)[@cq:type='Activate']`
 
 Em seguida, calcule o número de dias decorridos desde a instalação para calcular a média.
 
@@ -1001,7 +1001,7 @@ Para ver o número de páginas atualmente no servidor, use uma consulta de repos
 
 * **Caminho** `/`
 
-* **Consulta** `//element(*, cq:Page)`
+* **Query** `//element(*, cq:Page)`
 
 #### Se você usa o MSM, qual é o número médio de implantações por mês? {#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month}
 
@@ -1011,7 +1011,7 @@ Para determinar o número total de implantações desde a instalação, use uma 
 
 * **Caminho** `/`
 
-* **Consulta** `//element(*, cq:AuditEvent)[@cq:type='PageRolledOut']`
+* **Query** `//element(*, cq:AuditEvent)[@cq:type='PageRolledOut']`
 
 Calcule o número de meses decorridos desde a instalação para calcular a média.
 
@@ -1023,7 +1023,7 @@ Para determinar o número total de Live Copies feitas desde a instalação, use 
 
 * **Caminho** `/`
 
-* **Consulta** `//element(*, cq:LiveSyncConfig)`
+* **Query** `//element(*, cq:LiveSyncConfig)`
 
 Use novamente o número de meses decorridos desde a instalação para calcular a média.
 
@@ -1033,11 +1033,11 @@ Para ver quantos ativos DAM você mantém atualmente, use uma consulta de reposi
 
 * **Tipo** `XPath`
 * **Caminho** `/`
-* **Consulta** `/jcr:root/content/dam//element(*, dam:Asset)`
+* **Query** `/jcr:root/content/dam//element(*, dam:Asset)`
 
 #### Qual é o tamanho médio dos ativos? {#what-is-the-average-size-of-the-assets}
 
-Para determinar o tamanho total do `/var/dam` pasta:
+Para determinar o tamanho total da `/var/dam` pasta:
 
 1. Use WebDAV para mapear o repositório para o sistema de arquivos local.
 
@@ -1056,7 +1056,7 @@ Para ver o número de modelos atualmente no servidor, use uma consulta de reposi
 
 * **Tipo** `XPath`
 * **Caminho** `/`
-* **Consulta** `//element(*, cq:Template)`
+* **Query** `//element(*, cq:Template)`
 
 #### Quantos componentes são usados atualmente? {#how-many-components-are-currently-used}
 
@@ -1064,7 +1064,7 @@ Para ver o número de componentes atualmente no servidor, use uma consulta de re
 
 * **Tipo** `XPath`
 * **Caminho** `/`
-* **Consulta** `//element(*, cq:Component)`
+* **Query** `//element(*, cq:Component)`
 
 #### Quantas solicitações por hora você tem no sistema do autor no horário de pico? {#how-many-requests-per-hour-do-you-have-on-the-author-system-at-peak-time}
 
@@ -1098,9 +1098,9 @@ Veja a seguir uma lista de sugestões sobre o que verificar se você começa a e
 >
 Consulte também os seguintes artigos para obter mais informações:
 >
-* [Despejos de encadeamento](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=pt-BR)
-* [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=pt-BR)
-* [Analisar usando o profiler integrado](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=pt-BR)
+* [Despejos de encadeamento](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=en)
+* [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
+* [Analisar usando o profiler integrado](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=en)
 * [Analisar processos lentos e bloqueados](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
@@ -1125,7 +1125,7 @@ Nesses casos, verifique:
 * As configurações da JVM usadas para [iniciar AEM](/help/sites-deploying/deploy.md#getting-started)
 * Base de conhecimento:
 
-   * [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=pt-BR)
+   * [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
 
 ### E/S de disco {#disk-i-o}
 
@@ -1134,7 +1134,7 @@ Se o sistema estiver ficando sem espaço em disco ou se você notar hash no disc
 * Se você tiver desativado a coleção de informações de depuração, ela poderá ser configurada em vários locais, incluindo os seguintes:
 
    * [Manipulador de script JSP do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
-   * [Manipulador JavaScript Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
+   * [Manipulador de JavaScript do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
    * [Configuração de log do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
    * [Gerenciador de biblioteca HTML CQ](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
    * [Filtrar de depuração WCM CQ](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
@@ -1143,7 +1143,7 @@ Se o sistema estiver ficando sem espaço em disco ou se você notar hash no disc
 * Configuração e configuração [Versão limpeza](/help/sites-deploying/version-purging.md)
 * Base de conhecimento:
 
-   * [Muitos Arquivos Abertos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=pt-BR)
+   * [Muitos Arquivos Abertos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=en)
    * [O registro em log consome muito espaço em disco](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### Degradação regular do desempenho {#regular-performance-degradation}

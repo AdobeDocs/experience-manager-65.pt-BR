@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: fa6e0246-6bd2-4ffb-b54c-15eda605f213
 exl-id: d2a962b6-16be-4866-a856-5064f81c9610
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '993'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Ao navegar na área de trabalho do AEM Forms usando um teclado, a navegação es
 * A Ajuda da área de trabalho do AEM Forms é aberta em uma janela separada do navegador. Depois de exibir a Ajuda, o foco retorna à janela do navegador que contém o espaço de trabalho do AEM Forms. O menu Ajuda permanece focalizado quando o foco retorna.
 * Ao abrir um formulário para iniciar um processo ou concluir uma tarefa, o foco permanece com o elemento existente e não é alterado para o formulário. Use tab para mover o foco para o formulário e navegue por ele. A ordem de tabulação no formulário depende do tipo e do design do formulário.
 
-   Para PDF forms, ao passar por tabulação até o final do formulário ou enviá-lo, o foco do cursor salta para a barra de endereço do navegador. Você deve navegar pelos menus novamente (mas não pelo formulário inteiro) para acessar os botões de ação do formulário, como Salvar como rascunho e Concluído. Se o formulário ainda estiver aberto, você também poderá passar pelos botões e voltar ao formulário.
+  Para PDF forms, ao passar por tabulação até o final do formulário ou enviá-lo, o foco do cursor salta para a barra de endereço do navegador. Siga os menus novamente (mas não o formulário inteiro) para acessar os botões de ação do formulário, como Salvar como rascunho e Concluído. Se o formulário ainda estiver aberto, você também poderá passar pelos botões e voltar ao formulário.
 
 ## Gerenciamento de preferências {#managing-preferences}
 

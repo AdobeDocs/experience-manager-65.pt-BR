@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 role: Developer
 exl-id: ff087084-fb1c-43a4-ae54-cc77eb862493
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3501'
+source-wordcount: '3478'
 ht-degree: 0%
 
 ---
@@ -212,7 +212,7 @@ Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver 
 
 **Criar uma fonte de dados XML na memória**
 
-Você pode usar `org.w3c.dom` para criar uma fonte de dados XML na memória para preencher previamente um formulário com um layout fluível. Você deve colocar os dados em uma fonte de dados XML que esteja em conformidade com o formulário. Para obter informações sobre a relação entre um formulário com um layout fluível e a fonte de dados XML, consulte [Entender subgrupos de dados](#understanding-data-subgroups).
+Você pode usar `org.w3c.dom` para criar uma fonte de dados XML na memória para preencher previamente um formulário com um layout fluível. Insira os dados em uma fonte de dados XML que esteja em conformidade com o formulário. Para obter informações sobre a relação entre um formulário com um layout fluível e a fonte de dados XML, consulte [Entender subgrupos de dados](#understanding-data-subgroups).
 
 **Converter a fonte de dados XML**
 
@@ -248,7 +248,7 @@ Para preencher previamente um formulário com um layout fluível usando a API do
 
 1. Criar uma fonte de dados XML na memória
 
-   * Criar um Java `DocumentBuilderFactory` ao chamar o `DocumentBuilderFactory` class&quot; `newInstance` método.
+   * Criar um Java `DocumentBuilderFactory` ao chamar o `DocumentBuilderFactory` class&#39; `newInstance` método.
    * Criar um Java `DocumentBuilder` ao chamar o `DocumentBuilderFactory` do objeto `newDocumentBuilder` método.
    * Chame o `DocumentBuilder` do objeto `newDocument` método para instanciar um `org.w3c.dom.Document` objeto.
    * Crie o elemento raiz da fonte de dados XML chamando o `org.w3c.dom.Document` do objeto `createElement` método. Isso cria uma `Element` objeto que representa o elemento raiz. Transmita um valor de string que represente o nome do elemento para a variável `createElement` método. Converter o valor de retorno em `Element`. Em seguida, anexe o elemento raiz ao documento chamando o `Document` do objeto `appendChild` e transmita o objeto de elemento raiz como um argumento. As linhas de código a seguir mostram essa lógica de aplicação:
@@ -259,7 +259,7 @@ Para preencher previamente um formulário com um layout fluível usando a API do
 
      ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
-   * Crie um elemento filho que pertença ao elemento de cabeçalho chamando o `Document` do objeto `createElement` e passe um valor de string que represente o nome do elemento. Converter o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu `appendChild` e transmita o `Document` do objeto `createTextNode` como um argumento. Especifique um valor de string que apareça como o valor do elemento filho. Por fim, anexe o elemento filho ao elemento de cabeçalho chamando o do elemento de cabeçalho `appendChild` e transmita o objeto de elemento filho como um argumento. As linhas de código a seguir mostram essa lógica de aplicação:
+   * Crie um elemento filho que pertença ao elemento de cabeçalho chamando o `Document` do objeto `createElement` e passe um valor de string que represente o nome do elemento. Converter o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu `appendChild` e transmita o `Document` do objeto `createTextNode` como um argumento. Especifique um valor de string que apareça como o valor do elemento filho. Finalmente, anexe o elemento filho ao elemento de cabeçalho chamando o do elemento de cabeçalho `appendChild` e transmita o objeto de elemento filho como um argumento. As linhas de código a seguir mostram essa lógica de aplicação:
 
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
@@ -269,7 +269,7 @@ Para preencher previamente um formulário com um layout fluível usando a API do
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
-   * Crie um elemento filho que pertença ao elemento de detalhes chamando o `Document` do objeto `createElement` e passe um valor de string que represente o nome do elemento. Converter o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu `appendChild` e transmita o `Document` do objeto `createTextNode` como um argumento. Especifique um valor de string que apareça como o valor do elemento filho. Por fim, anexe o elemento filho ao elemento de detalhe chamando o do elemento de detalhe `appendChild` e transmita o objeto de elemento filho como um argumento. As linhas de código a seguir mostram essa lógica de aplicação:
+   * Crie um elemento filho que pertença ao elemento de detalhes chamando o `Document` do objeto `createElement` e passe um valor de string que represente o nome do elemento. Converter o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu `appendChild` e transmita o `Document` do objeto `createTextNode` como um argumento. Especifique um valor de string que apareça como o valor do elemento filho. Por fim, anexe o elemento filho ao elemento de detalhes, chamando a função do elemento de detalhes `appendChild` e transmita o objeto de elemento filho como um argumento. As linhas de código a seguir mostram essa lógica de aplicação:
 
      ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
@@ -301,7 +301,7 @@ Para preencher previamente um formulário com um layout fluível usando a API do
    A variável `renderPDFForm` o método retorna um `FormsResult` objeto que contém um fluxo de dados de formulário que deve ser gravado no navegador da web do cliente.
 
    * Criar um `javax.servlet.ServletOutputStream` objeto usado para enviar um fluxo de dados de formulário para o navegador da web cliente.
-   * Criar um `com.adobe.idp.Document` ao invocar o `FormsResult` object&#39;s `getOutputContent` método.
+   * Criar um `com.adobe.idp.Document` ao invocar o `FormsResult` do objeto `getOutputContent` método.
    * Criar um `java.io.InputStream` ao invocar o `com.adobe.idp.Document` do objeto `getInputStream` método.
    * Crie uma matriz de bytes para preenchê-la com o fluxo de dados de formulário, chamando o `InputStream` do objeto `read` e transmitindo a matriz de bytes como um argumento.
    * Chame o `javax.servlet.ServletOutputStream` do objeto `write` para enviar o fluxo de dados de formulário para o navegador web cliente. Passe a matriz de bytes para o `write` método.
@@ -325,7 +325,7 @@ Para preencher previamente um formulário com um layout fluível usando a API do
 
 1. Criar uma fonte de dados XML na memória
 
-   * Criar um Java `DocumentBuilderFactory` ao chamar o `DocumentBuilderFactory` class&quot; `newInstance` método.
+   * Criar um Java `DocumentBuilderFactory` ao chamar o `DocumentBuilderFactory` class&#39; `newInstance` método.
    * Criar um Java `DocumentBuilder` ao chamar o `DocumentBuilderFactory` do objeto `newDocumentBuilder` método.
    * Chame o `DocumentBuilder` do objeto `newDocument` método para instanciar um `org.w3c.dom.Document` objeto.
    * Crie o elemento raiz da fonte de dados XML chamando o `org.w3c.dom.Document` do objeto `createElement` método. Isso cria uma `Element` objeto que representa o elemento raiz. Transmita um valor de string que represente o nome do elemento para a variável `createElement` método. Converter o valor de retorno em `Element`. Em seguida, anexe o elemento raiz ao documento chamando o `Document` do objeto `appendChild` e transmita o objeto de elemento raiz como um argumento. As linhas de código a seguir mostram essa lógica de aplicação:
@@ -336,7 +336,7 @@ Para preencher previamente um formulário com um layout fluível usando a API do
 
      ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
-   * Crie um elemento filho que pertença ao elemento de cabeçalho chamando o `Document` do objeto `createElement` e passe um valor de string que represente o nome do elemento. Converter o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu `appendChild` e transmita o `Document` do objeto `createTextNode` como um argumento. Especifique um valor de string que apareça como o valor do elemento filho. Por fim, anexe o elemento filho ao elemento de cabeçalho chamando o do elemento de cabeçalho `appendChild` e transmita o objeto de elemento filho como um argumento. As linhas de código a seguir mostram essa lógica de aplicação:
+   * Crie um elemento filho que pertença ao elemento de cabeçalho chamando o `Document` do objeto `createElement` e passe um valor de string que represente o nome do elemento. Converter o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu `appendChild` e transmita o `Document` do objeto `createTextNode` como um argumento. Especifique um valor de string que apareça como o valor do elemento filho. Finalmente, anexe o elemento filho ao elemento de cabeçalho chamando o do elemento de cabeçalho `appendChild` e transmita o objeto de elemento filho como um argumento. As linhas de código a seguir mostram essa lógica de aplicação:
 
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
@@ -345,7 +345,7 @@ Para preencher previamente um formulário com um layout fluível usando a API do
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
-   * Crie um elemento filho que pertença ao elemento de detalhes chamando o `Document` do objeto `createElement` e passe um valor de string que represente o nome do elemento. Converter o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu `appendChild` e transmita o `Document` do objeto `createTextNode` como um argumento. Especifique um valor de string que apareça como o valor do elemento filho. Por fim, anexe o elemento filho ao elemento de detalhe chamando o do elemento de detalhe `appendChild` e transmita o objeto de elemento filho como um argumento. As linhas de código a seguir mostram essa lógica de aplicação:
+   * Crie um elemento filho que pertença ao elemento de detalhes chamando o `Document` do objeto `createElement` e passe um valor de string que represente o nome do elemento. Converter o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu `appendChild` e transmita o `Document` do objeto `createTextNode` como um argumento. Especifique um valor de string que apareça como o valor do elemento filho. Por fim, anexe o elemento filho ao elemento de detalhes, chamando a função do elemento de detalhes `appendChild` e transmita o objeto de elemento filho como um argumento. As linhas de código a seguir mostram essa lógica de aplicação:
 
      ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 

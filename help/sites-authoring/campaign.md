@@ -1,19 +1,19 @@
 ---
-title: Trabalho com o Adobe Campaign Classic e Adobe Campaign Standard
+title: Trabalhar com o Adobe Campaign Classic e o Adobe Campaign Standard
 description: Você pode criar conteúdo de email no AEM e processá-lo em emails do Adobe Campaign
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2749'
+source-wordcount: '2770'
 ht-degree: 0%
 
 ---
 
-# Trabalho com o Adobe Campaign Classic e Adobe Campaign Standard{#working-with-adobe-campaign-classic-and-adobe-campaign-standard}
+# Trabalhar com o Adobe Campaign Classic e o Adobe Campaign Standard{#working-with-adobe-campaign-classic-and-adobe-campaign-standard}
 
 Você pode criar conteúdo de email no AEM e processá-lo em emails do Adobe Campaign. Para fazer isso, você deve:
 
@@ -102,7 +102,7 @@ No boletim informativo/email em criação, talvez não seja possível selecionar
 
    ![chlimage_1-19](assets/chlimage_1-19a.png)
 
-1. Selecionar **Serviços em nuvem** e clique em **+** para adicionar uma configuração. Selecione qualquer configuração visível (não importa qual). Clique ou toque no **+** faça logon para adicionar outra configuração e selecione **Adobe Campaign**.
+1. Selecionar **Serviços em nuvem** e clique em **+** para adicionar uma configuração. Selecione qualquer configuração visível (não importa qual). Clique em **+** faça logon para adicionar outra configuração e selecione **Adobe Campaign**.
 
    >[!NOTE]
    >
@@ -201,7 +201,7 @@ Você pode visualizar como o informativo será exibido e visualizar a personaliz
 
    ![chlimage_1-29](assets/chlimage_1-29a.png)
 
-1. Você pode visualizar os dados de seed provenientes do Adobe Campaign associados ao perfil selecionado no momento. Para fazer isso, clique/toque no módulo Adobe Campaign na barra ContextHub. Isso abre uma caixa de diálogo exibindo todos os dados de seed do perfil atual. Novamente, os dados se adaptam ao alternar para um perfil diferente.
+1. Você pode visualizar os dados de seed provenientes do Adobe Campaign associados ao perfil selecionado no momento. Para fazer isso, clique no módulo Adobe Campaign na barra do ContextHub. Isso abre uma caixa de diálogo exibindo todos os dados de seed do perfil atual. Novamente, os dados se adaptam ao alternar para um perfil diferente.
 
    ![chlimage_1-30](assets/chlimage_1-30a.png)
 

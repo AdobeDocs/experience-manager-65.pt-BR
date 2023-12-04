@@ -4,10 +4,10 @@ description: Saiba como preparar conteúdo para tradução no Adobe Experience M
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 81978733-89a6-4436-bcf1-4bde962ed54f
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 58%
+source-wordcount: '669'
+ht-degree: 44%
 
 ---
 
@@ -47,7 +47,7 @@ Crie uma raiz de idioma como a página raiz de uma cópia de idioma que identifi
 
 Para criar a raiz do idioma, crie uma página e use um código de idioma ISO como o valor da propriedade Nome. O código de idioma deve estar em um dos seguintes formatos:
 
-* `<language-code>`O código de idioma compatível é um código de duas letras, conforme definido pela ISO-639-1, como por exemplo, `en`.
+* `<language-code>`O código de idioma compatível é um código de duas letras, conforme definido pela ISO-639-1, por exemplo, `en`.
 
 * `<language-code>_<country-code>` ou `<language-code>-<country-code>`O código do país compatível é um código de duas letras em minúsculas ou maiúsculas, conforme definido pela norma ISO 3166, por exemplo, `en_US`, `en_us`, `en_GB`, `en-gb`.
 
@@ -56,20 +56,20 @@ Para criar a raiz do idioma, crie uma página e use um código de idioma ISO com
 O procedimento a seguir usa a interface otimizada para toque para criar uma cópia de idioma de um site. Para obter instruções que usam a interface clássica, consulte [Criação de uma raiz de idioma usando a interface clássica](/help/sites-administering/tc-lroot-classic.md).
 
 1. Navegue até Sites.
-1. Clique ou toque no site para o qual deseja criar uma cópia de idioma.
+1. Clique no site para o qual deseja criar uma cópia de idioma.
 
-   Por exemplo, para criar uma cópia de idioma do site Geometrixx Outdoors, clique ou toque em Geometrixx Outdoors Site.
+   Por exemplo, para criar uma cópia de idioma do site Geometrixx Outdoors, clique em Geometrixx Outdoors.
 
-1. Clique ou toque em Criar e em Criar página.
+1. Clique em Criar e em Criar página.
 
    ![chlimage_1-21](assets/chlimage_1-21a.png)
 
-1. Selecione o modelo de página e clique ou toque em Próximo.
-1. No campo Nome, digite o código do país no formato de `<language-code>` ou `<language-code>_<country-code>`, como por exemplo, `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Digite um título para a página.
+1. Selecione o modelo de página e clique em Next.
+1. No campo Nome, digite o código do país no formato de `<language-code>` ou `<language-code>_<country-code>`, por exemplo, `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Digite um título para a página.
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 
-1. Clique ou toque em Criar. Na caixa de diálogo de confirmação, clique ou toque em **Concluído** para retornar ao console de Sites ou **Abrir** para abrir a cópia de idioma.
+1. Clique em Criar. Na caixa de diálogo de confirmação, clique em **Concluído** para retornar ao console Sites ou **Abertura** para abrir a cópia de idioma.
 
 ## Ver o status das raízes de idioma {#seeing-the-status-of-language-roots}
 
@@ -79,8 +79,8 @@ A interface otimizada para toque fornece um painel de Referências que mostra um
 
 O procedimento a seguir usa a interface otimizada para toque para abrir o painel Referências de uma página.
 
-1. No console Sites, selecione uma página do site e clique ou toque em **Referências**.
+1. No console Sites, selecione uma página do site e clique em **Referências**.
 
    ![chlimage_1-24](assets/chlimage_1-24a.png)
 
-1. No painel de referências, clique ou toque em **Cópias de idioma**. O painel Cópias de idioma mostra as cópias de idioma do site.
+1. No painel de referências, clique em **Cópias de idioma**. O painel Cópias de idioma mostra as cópias de idioma do site.

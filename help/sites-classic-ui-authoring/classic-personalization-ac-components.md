@@ -7,10 +7,10 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: eeff89c1-41b3-403d-b4bf-c79b09b24d4a
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2529'
-ht-degree: 5%
+source-wordcount: '2548'
+ht-degree: 4%
 
 ---
 
@@ -107,7 +107,7 @@ Define a altura e a largura da imagem.
 
 >[!NOTE]
 >
->Você deve inserir informações no **Texto Alternativo** no campo **Avançado** ou a imagem não pode ser salva e você verá a seguinte mensagem de erro:
+>Insira as informações no **Texto Alternativo** no campo **Avançado** ou a imagem não pode ser salva e você verá a seguinte mensagem de erro:
 >
 >`Validation failed. Verify the values of the marked fields.`
 >
@@ -138,7 +138,7 @@ Adicione quaisquer parâmetros de URL adicionais. Clique em Adicionar item para 
 
 >[!NOTE]
 >
->Você deve inserir informações no **Tipo de link** no campo **Informações de URL** ou o componente não pode ser salvo e você verá a seguinte mensagem de erro:
+>Insira as informações no **Tipo de link** no campo **Informações de URL** ou o componente não pode ser salvo e você verá a seguinte mensagem de erro:
 >
 >`Validation failed. Verify the values of the marked fields.`
 >
@@ -247,7 +247,7 @@ A tabela a seguir descreve os componentes que estão disponíveis para exibir e 
   <tr>
    <td><p>Caixa de seleção (Campanha)</p> </td>
    <td><p>booleano</p> </td>
-   <td><p>Não contato mais longo (por qualquer canal)</p> </td>
+   <td><p>Não entrar mais em contato (por qualquer canal)</p> </td>
   </tr>
   <tr>
    <td><p>Campo de dados (Campanha)</p> <p>Campo de data/HTML 5 (Campanha)</p> </td>

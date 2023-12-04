@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1515'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Se o banco de dados estiver sendo executado em um modo de log, conforme descrito
 
 ## Fazer backup do banco de dados, do repositório GDS, do repositório AEM e dos diretórios raiz do armazenamento de conteúdo {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
 
-Você deve colocar o AEM Forms no modo backup seguro (instantâneo) ou no modo backup contínuo (cobertura contínua). Antes de configurar o AEM Forms para inserir um dos modos de backup, verifique o seguinte:
+Coloque o AEM Forms no modo de backup seguro (instantâneo) ou no modo de backup contínuo (cobertura contínua). Antes de configurar o AEM Forms para inserir um dos modos de backup, verifique o seguinte:
 
 * Verifique a versão do sistema e registre os patches ou atualizações que foram aplicados desde a execução do último backup completo de imagem do sistema.
 * Se você estiver usando backups em modo de rolagem ou de snapshot, certifique-se de que seu banco de dados esteja configurado com as definições de log corretas para permitir backups do banco de dados com o sistema em funcionamento. (Consulte [banco de dados do AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).)

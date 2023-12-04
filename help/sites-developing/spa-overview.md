@@ -7,10 +7,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1652'
-ht-degree: 86%
+source-wordcount: '1644'
+ht-degree: 84%
 
 ---
 
@@ -51,7 +51,7 @@ Se o componente Página de SPA herda do componente principal da página, há dua
 * Ou adicione as categorias utilizando o `customfooterlibs.html`.
 
 Para cada recurso no modelo exportado, o SPA mapeia um componente real que faz a
-renderização. O modelo, representado como JSON, é renderizado utilizando os mapeamentos de componente em um container.
+renderização. O modelo, representado como JSON, é renderizado usando os mapeamentos de componente em um contêiner.
 ![screen_shot_2018-08-20at144152](assets/screen_shot_2018-08-20at144152.png)
 
 >[!CAUTION]
@@ -79,7 +79,7 @@ Você pode entender o fluxo da interação entre o SPA e o AEM pensando no edito
 
 Lembrando os elementos principais do editor de SPA, o fluxo de trabalho de alto nível da edição de um SPA no AEM é exibido ao autor da seguinte maneira.
 
-![untitled1](assets/untitled1.gif)
+![sem título1](assets/untitled1.gif)
 
 1. Editor de SPA é carregado.
 1. O SPA é carregado em um quadro separado.
@@ -172,7 +172,7 @@ Estruturas de SPA adicionais podem ser implementadas para funcionar com o SDK do
 
 ### Uso de vários seletores {#multiple-selectors}
 
-Seletores personalizados adicionais podem ser definidos e usados como parte de um SPA desenvolvido para o SDK de SPA do AEM. No entanto, esse suporte exige que o seletor `model` seja o primeiro seletor e a extensão seja `.json`[, conforme exigido pelo exportador JSON.](json-exporter-components.md#multiple-selectors)
+Seletores personalizados adicionais podem ser definidos e usados como parte de um SPA desenvolvido para o SDK de SPA do AEM. No entanto, este apoio exige que a `model` ser o primeiro seletor e a extensão ser `.json` as [exigido pelo Exportador JSON.](json-exporter-components.md#multiple-selectors)
 
 ### Requisitos do editor de texto {#text-editor-requirements}
 

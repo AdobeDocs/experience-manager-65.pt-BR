@@ -11,10 +11,10 @@ topic-tags: personalization
 discoiquuid: 81102d77-e856-4c85-b932-f22de8ca6462
 docset: aem65
 exl-id: 34293432-cfdc-466b-96bd-2c43b566a420
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 93%
+source-wordcount: '834'
+ht-degree: 73%
 
 ---
 
@@ -33,21 +33,21 @@ Crie uma marca à qual suas ofertas serão associadas. Abra uma marca no console
 
 Ao criar uma marca usando o console Ofertas, ela também aparece no [Console Atividades](/help/sites-authoring/activitylib.md) onde é possível adicionar e administrar as atividades da marca.
 
-1. No console Navegação, clique ou toque em **Personalização** > **Ofertas**.
+1. No console Navegação, clique em **Personalização** > **Ofertas**.
 
    ![screen-shot_2019-03-05at124139-1](assets/screen-shot_2019-03-05at124139-1.png)
 
-1. Clique ou toque em **Criar** e depois em **Criar** **marca**.
-1. Selecione o modelo da marca e toque ou clique em **Próximo**.
+1. Clique em **Criar** e depois **Criar** **Marca**.
+1. Selecione o modelo da marca e clique em **Próxima**.
 1. Digite um título para a marca conforme você queira que ele seja exibido nos consoles de Ofertas e Atividades. Também é possível digitar ou selecionar uma ou mais tags para associar à marca.
-1. Clique ou toque em **Criar**.
+1. Clique em **Criar**.
 
 ## Adição de uma pasta a uma biblioteca de ofertas {#add-a-folder-to-an-offer-library}
 
 Adicione uma pasta à biblioteca de ofertas de uma marca para organizar e armazenar ofertas. É possível criar uma pasta abaixo da marca ou abaixo de outras pastas.
 
 1. No console de Ofertas, abra o local em que deseja criar a pasta. Por exemplo, abra a marca para criar uma pasta de nível superior ou abra outra pasta na biblioteca.
-1. Clique ou toque em **Criar** > **Criar pasta ou oferta**.
+1. Clique em **Criar** > **Criar pasta ou oferta**.
 
    ![screen-shot_2019-03-05at124557](assets/screen-shot_2019-03-05at124557.png)
 
@@ -56,7 +56,7 @@ Adicione uma pasta à biblioteca de ofertas de uma marca para organizar e armaze
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
-1. Clique ou toque em **Criar**.
+1. Clique em **Criar**.
 
 ## Adição de uma oferta a uma biblioteca de ofertas {#add-an-offer-to-an-offer-library}
 
@@ -65,13 +65,13 @@ Adicione uma oferta à biblioteca de ofertas de uma marca para que ela possa ser
 Após criar a oferta, você pode abri-la para criar o conteúdo.
 
 1. No console Ofertas, abra o local em que deseja criar a oferta. Por exemplo, abra a marca para criar uma oferta de nível superior ou abra uma pasta na biblioteca.
-1. Clique ou toque em **Criar** > **Criar pasta ou oferta**.
+1. Clique em **Criar** > **Criar pasta ou oferta**.
 
    ![screen-shot_2019-03-05at124557-1](assets/screen-shot_2019-03-05at124557-1.png)
 
-1. Selecione o modelo de **página de oferta** e clique ou toque em **Próximo**.
-1. Digite um título para a oferta, também é possível selecionar ou digitar uma ou mais tags para associar à oferta, em seguida, clique ou toque em **Criar**.
-1. Na caixa de diálogo de confirmação, para abrir a oferta para edição, clique ou toque em **Abrir página**.
+1. Selecione o **Página de oferta** e clique em **Próxima**.
+1. Digite um título para a oferta e, opcionalmente, selecione ou digite uma ou mais tags para associar à oferta e clique em **Criar**.
+1. Na caixa de diálogo de confirmação, para abrir a oferta para edição, clique em **Abrir página**.
 
 ## Edição de uma oferta {#editing-an-offer}
 
@@ -79,7 +79,7 @@ Abra uma oferta e edite o conteúdo conforme deseja que ele seja exibido nas exp
 
 É possível abrir uma oferta a partir de uma pasta em uma biblioteca de ofertas ou a partir dos resultados da pesquisa. Também é possível abrir uma oferta a partir de uma experiência que a usa.
 
-1. No console Ofertas, toque ou clique no ícone ao lado da oferta e clique ou toque em **Editar**.
+1. No console Ofertas, clique no ícone ao lado da oferta e clique em **Editar**.
 1. Adicione componentes à oferta e edite seu conteúdo como de costume.
 
 ## Exclusão de uma oferta {#deleting-an-offer}
@@ -88,15 +88,15 @@ Exclua uma oferta quando ela não for mais necessária. Ao tentar excluir uma of
 
 É possível excluir uma oferta ao visualizar o conteúdo da pasta em uma biblioteca de ofertas ou em resultados de pesquisa.
 
-1. No console Ofertas, toque ou clique no ícone ao lado da oferta e clique ou toque em **Excluir**.
+1. No console Ofertas, clique no ícone ao lado da oferta e clique em **Excluir**.
 
-   Selecione a oferta e clique ou toque em **Excluir**.
+   Selecione a oferta e clique em **Excluir**.
 
-1. Na caixa de diálogo que será exibida, clique ou toque em **Excluir** para confirmar a exclusão.
+1. Na caixa de diálogo exibida, clique em **Excluir** para confirmar a exclusão.
 1. Se a oferta for usada em uma ou mais experiências, uma caixa de diálogo será exibida para indicar que a oferta é referenciada:
 
-   * Para excluir a oferta e removê-la das experiências, clique ou toque **Forçar exclusão**.
-   * Para manter a oferta, clique ou toque em **Cancelar**.
+   * Para excluir a oferta e removê-la das experiências, clique em **Forçar Exclusão**.
+   * Para manter a oferta, clique em **Cancelar**.
 
 ## Pesquisando Ofertas {#searching-for-offers}
 
@@ -108,5 +108,5 @@ Os critérios de pesquisa atuais aparecem ao lado dos resultados da pesquisa. Vo
 
 Para pesquisar ofertas:
 
-1. Na parte superior do console Ofertas, clique ou toque no ícone de lupa. Por padrão, a pesquisa é limitada a ofertas.
+1. Na parte superior do console Ofertas, clique no ícone de lupa. Por padrão, a pesquisa é limitada a ofertas.
 1. Digite sua palavra-chave para pesquisar por ofertas. Selecione uma nos resultados.

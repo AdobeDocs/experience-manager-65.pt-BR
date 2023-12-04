@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: personalization
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '5374'
-ht-degree: 85%
+source-wordcount: '5284'
+ht-degree: 71%
 
 ---
 
@@ -38,7 +38,7 @@ As atividades e experiências que você vê no modo de Direcionamento refletem a
 
 >[!NOTE]
 >
->Quando você cria uma campanha no Adobe Target, ele atribui uma propriedade chamada `thirdPartyId` a cada campanha. Quando você exclui a campanha no Adobe Target, o thirdPartyId não é excluído. Não é possível reutilizar o `thirdPartyId` para campanhas de tipos diferentes (AB, XT) e ele não pode ser removido manualmente. Para evitar esse problema, dê a cada campanha um nome exclusivo. Nomes de campanha não podem ser reutilizados em diferentes tipos de campanha.
+>Quando você cria uma campanha no Adobe Target, ele atribui uma propriedade chamada `thirdPartyId`para cada campanha. Quando você exclui a campanha no Adobe Target, o thirdPartyId não é excluído. Não é possível reutilizar o `thirdPartyId` para campanhas de tipos diferentes (AB, XT) e ele não pode ser removido manualmente. Para evitar esse problema, dê a cada campanha um nome exclusivo. Nomes de campanha não podem ser reutilizados em diferentes tipos de campanha.
 >
 >Se você usar o mesmo nome no mesmo tipo de campanha, a campanha existente será substituída.
 >
@@ -55,11 +55,11 @@ Alterne para o modo de direcionamento para acessar as ferramentas de criação d
 Para alternar para o modo de direcionamento:
 
 1. Abra a página para a qual deseja criar conteúdo direcionado.
-1. Na barra de ferramentas, na parte superior da página, clique ou toque no menu suspenso de modo para revelar os tipos disponíveis.
+1. Na barra de ferramentas na parte superior da página, clique no menu suspenso de modo para revelar os tipos disponíveis.
 
    ![chlimage_1-9](assets/chlimage_1-9.png)
 
-1. Clique ou toque em **Direcionamento**. As opções de direcionamento são exibidas na parte superior da página.
+1. Clique em **Direcionamento**. As opções de direcionamento são exibidas na parte superior da página.
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
@@ -84,7 +84,7 @@ Para adicionar uma atividade:
    >
    >Se você criar uma marca de qualquer outra maneira, faça com que o nó `/campaigns/<brand>/master` exista ou ocorrerá um erro ao tentar criar uma atividade.
 
-1. Clique ou toque em + ao lado do menu suspenso **Atividade**.
+1. Clique em + ao lado de **Atividade** menu suspenso.
 1. Digite um nome para a atividade.
 
    >[!NOTE]
@@ -93,7 +93,7 @@ Para adicionar uma atividade:
 
 1. No menu suspenso do mecanismo de **Direcionamento**, selecione o mecanismo direcionamento.
 
-   * Se você selecionar **ContextHub AEM**, os campos restantes estarão esmaecidos e indisponíveis. Clique ou toque em **Criar**.
+   * Se você selecionar **ContextHub AEM**, os campos restantes estarão esmaecidos e indisponíveis. Clique em **Criar**.
 
    * Se você selecionar **Adobe Target**, você pode selecionar uma configuração (por padrão, é a configuração fornecida ao [configurou a conta](/help/sites-administering/opt-in.md)) e Tipo de atividade.
 
@@ -122,13 +122,13 @@ Para adicionar uma atividade:
 
 1. No menu suspenso **Marca**, selecione a marca que contém a atividade em que você está trabalhando.
 1. No menu suspenso **Atividade**, selecione a atividade para a qual você está criando conteúdo direcionado.
-1. Para exibir os controles que o orientam no processo de direcionamento, clique ou toque em **Iniciar o direcionamento**.
+1. Para revelar os controles que orientam você pelo processo de direcionamento, clique em **Iniciar o direcionamento**.
 
    ![chlimage_1-11](assets/chlimage_1-11.png)
 
    >[!NOTE]
    >
-   >Para alterar a atividade com a qual você está trabalhando, clique ou toque em **Voltar**.
+   >Para alterar a atividade com a qual você está trabalhando, clique em **Voltar**.
 
 ## Criar: criação das experiências {#create-authoring-the-experiences}
 
@@ -180,14 +180,14 @@ Usando a etapa Criar [do processo de direcionamento](/help/sites-authoring/conte
 
 Para adicionar uma experiência:
 
-1. Para adicionar uma experiência, clique ou toque em **+** **Adicionar direcionamento de experiência**, que aparece abaixo das experiências existentes no painel **Públicos**.
-1. Selecione o público-alvo. Por padrão, esse será o nome da experiência. Você pode digitar outro nome, se desejar. Clique ou toque em **OK**.
+1. Para adicionar uma experiência, clique em **+** **Adicionar direcionamento de experiência** que aparece abaixo das experiências existentes na **Públicos-alvo** painel.
+1. Selecione o público-alvo. Por padrão, esse será o nome da experiência. Você pode digitar outro nome, se desejar. Clique em **OK**.
 
 #### Remoção de experiências usando o modo de direcionamento {#removing-experiences-using-targeting-mode}
 
 Para excluir uma experiência:
 
-1. Clique ou toque na seta ao lado do nome da experiência.
+1. Clique na seta ao lado do nome da experiência.
 
    ![chlimage_1-17](assets/chlimage_1-17.png)
 
@@ -197,15 +197,15 @@ Para excluir uma experiência:
 
 Para renomear experiências usando o modo de direcionamento:
 
-1. Clique ou toque na seta ao lado do nome da experiência.
+1. Clique na seta ao lado do nome da experiência.
 1. Clique em **Renomear experiência** e digite o novo nome.
-1. Clique ou toque em outro local na tela para salvar as alterações.
+1. Clique em outro lugar na tela para salvar as alterações.
 
 #### Edição de públicos-alvo usando o modo de direcionamento {#editing-audiences-using-targeting-mode}
 
 Para editar os públicos-alvo usando o modo de direcionamento:
 
-1. Clique ou toque na seta ao lado do nome da experiência.
+1. Clique na seta ao lado do nome da experiência.
 1. Clique em **Editar público** e selecione um novo público.
 1. Clique em **OK**.
 
@@ -213,7 +213,7 @@ Para editar os públicos-alvo usando o modo de direcionamento:
 
 Para copiar experiências usando o modo de direcionamento:
 
-1. Clique ou toque na seta ao lado do nome da experiência.
+1. Clique na seta ao lado do nome da experiência.
 1. Clique em **Duplicar** e escolha o público.
 1. Renomeie a experiência, se desejar, e clique em **OK**.
 
@@ -243,11 +243,11 @@ Após direcionar um componente, somente ele poderá ser usado na oferta. Não é
 
 Execute o seguinte procedimento depois de [iniciar o processo de direcionamento](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings).
 
-1. Clique ou toque no componente que deseja direcionar. A barra de ferramentas do componente aparece, semelhante ao exemplo a seguir.
+1. Clique no componente para direcionar. A barra de ferramentas do componente aparece, semelhante ao exemplo a seguir.
 
    ![chlimage_1-18](assets/chlimage_1-18.png)
 
-1. Clique ou toque no ícone de Direcionamento.
+1. Clique no ícone Target.
 
    ![Target](do-not-localize/chlimage_1.png)
 
@@ -281,10 +281,10 @@ Quando você adiciona um componente ao componente de direcionamento, ele fornece
 
 Você pode adicionar um componente de direcionamento à página no modo de edição ou de direcionamento. Você pode adicionar componentes ao componente de direcionamento somente no modo de direcionamento. O componente de direcionamento pertence ao grupo de componentes de personalização.
 
-Se estiver editando o conteúdo direcionado, clique ou toque em **Iniciar o direcionamento** antes de fazer isso.
+Se estiver editando o conteúdo direcionado, você deve clicar em **Iniciar o direcionamento** antes que você possa fazer isso.
 
 1. Arraste o componente de direcionamento até a página onde deseja que a oferta apareça.
-1. Por padrão, nenhuma ID de localização está definida. Clique ou toque na engrenagem de configuração para definir o local.
+1. Por padrão, nenhuma ID de localização está definida. Clique no botão de configuração cog wheel para definir o local.
 
    >[!NOTE]
    >
@@ -309,15 +309,15 @@ Gere uma oferta criando o conteúdo de um componente direcionado no modo de dire
 Se decidir que a oferta pode ser usada para outras experiências, poderá criar uma oferta personalizada e [adicioná-la à biblioteca](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library). Para obter informações sobre como usar o console Ofertas para criar uma oferta reutilizável, consulte [Adicionar uma oferta a uma biblioteca de ofertas](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library).
 
 1. Selecione a experiência à qual você está adicionando a oferta.
-1. Para exibir o menu de componentes, clique ou toque no componente direcionado ao qual você está adicionando a oferta.
+1. Para exibir o menu de componentes, clique no componente de destino ao qual você está adicionando a oferta.
 
    ![chlimage_1-21](assets/chlimage_1-21.png)
 
-1. Clique ou toque no ícone +.
+1. Clique no ícone +.
 
    O conteúdo da oferta padrão é usado como a oferta da experiência atual.
 
-1. Clique ou toque na oferta para exibir o menu de ofertas e, em seguida, clique ou toque no ícone de edição.
+1. Clique na oferta para exibir o menu de ofertas e clique no ícone de edição.
 
    ![Menu Oferta](do-not-localize/chlimage_1-2.png)
 
@@ -330,25 +330,25 @@ Adicione uma oferta da [biblioteca de ofertas](/help/sites-authoring/offerlib.md
 Não é possível adicionar ofertas de biblioteca à experiência padrão.
 
 1. Selecione a experiência à qual você está adicionando a oferta.
-1. Para exibir o menu de componentes, clique ou toque no componente direcionado ao qual você está adicionando a oferta.
+1. Para exibir o menu de componentes, clique no componente de destino ao qual você está adicionando a oferta.
 
    ![chlimage_1-22](assets/chlimage_1-22.png)
 
-1. Clique ou toque no ícone de pasta.
+1. Clique no ícone de pasta.
 
    ![Ícone de pasta](do-not-localize/chlimage_1-3.png)
 
-1. Selecione a oferta da biblioteca e clique ou toque no ícone de marca de seleção.
+1. Selecione a oferta da biblioteca e clique no ícone de marca de seleção.
 
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
    O seletor de ofertas permite procurar ou filtrar ofertas. Ao procurar ou filtrar, você também pode classificar as ofertas e alterar a forma como as visualiza. O número no canto superior direito indica quantas ofertas estão disponíveis na biblioteca atual.
 
-   * Clique ou toque em **Procurar** para navegar para outra pasta. O painel de navegação é aberto e você clica na seta para mostrar o detalhamento das pastas. Clique ou toque novamente em **Procurar** para fechar o painel de navegação.
+   * Clique em **Procurar** para navegar para outra pasta. O painel de navegação é aberto e você clica na seta para mostrar o detalhamento das pastas. Clique em **Procurar** novamente para fechar o painel de navegação.
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 
-   * Clique ou toque em **Filtro** para filtrar as ofertas por palavras-chave ou tags. Digite as palavras-chave e selecione as tags no menu suspenso. Clique ou toque novamente em **Filtrar** para fechar o painel de filtros.
+   * Clique em **Filtro** para filtrar as ofertas por palavras-chave ou tags. Digite as palavras-chave e selecione as tags no menu suspenso. Clique em **Filtro** novamente para fechar o painel de filtragem.
 
    ![chlimage_1-25](assets/chlimage_1-25.png)
 
@@ -356,7 +356,7 @@ Não é possível adicionar ofertas de biblioteca à experiência padrão.
 
    ![chlimage_1-26](assets/chlimage_1-26.png)
 
-   Clique ou toque no ícone ao lado de **Exibir como** para exibir as ofertas como mosaicos ou como uma lista.
+   Clique no ícone ao lado de **Exibir como** para exibir ofertas como blocos ou como uma lista.
 
    ![chlimage_1-27](assets/chlimage_1-27.png)
 
@@ -367,18 +367,18 @@ Adicione uma oferta personalizada à [biblioteca de ofertas](/help/sites-authori
 Para obter informações sobre como usar o console Ofertas para criar uma oferta reutilizável, consulte [Adicionar uma oferta a uma biblioteca de ofertas](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library).
 
 1. Selecione a experiência para exibir a oferta personalizada.
-1. Clique ou toque na oferta personalizada para exibir o menu de ofertas e, em seguida, clique ou toque no ícone **Salvar oferta na biblioteca de ofertas**.
+1. Clique na oferta personalizada para exibir o menu de ofertas e clique na guia **Salvar oferta na biblioteca de ofertas** ícone.
 
    ![Salvar oferta na biblioteca de ofertas](do-not-localize/chlimage_1-4.png)
 
-1. Digite um nome para a oferta e selecione a biblioteca na qual deseja adicioná-la; em seguida, clique ou toque no ícone de marca de seleção.
+1. Digite um nome para a oferta, selecione a biblioteca à qual está adicionando a oferta e clique no ícone de marca de seleção.
 
 #### Converter uma oferta de biblioteca em uma biblioteca personalizada {#converting-a-library-offer-to-a-custom-library}
 
 Converta uma oferta da biblioteca em uma oferta personalizada para alterar a oferta da experiência atual sem alterar a de outras experiências.
 
 1. Selecione a experiência para exibir a oferta da biblioteca.
-1. Clique ou toque na oferta da biblioteca para exibir o menu de ofertas e, em seguida, clique ou toque no ícone Converter para oferta em linha.
+1. Clique na oferta da biblioteca para revelar o menu de ofertas e clique no ícone Converter em oferta em linha.
 
    ![Converter para oferta inline](do-not-localize/chlimage_1-5.png)
 
@@ -396,7 +396,7 @@ Abra uma oferta de biblioteca de uma experiência no modo de direcionamento para
 
 A etapa Direcionar do [processo de direcionamento](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) envolve mapear públicos-alvo para as experiências com as quais você trabalhou na etapa Criar. A página Direcionar mostra os públicos-alvo que são direcionados por cada experiência. Você pode especificar ou alterar o público-alvo de cada experiência. Se você estiver usando o Adobe Target, também poderá criar testes A/B que permitem direcionar a porcentagem do tráfego de um público-alvo para uma experiência específica.
 
-### Se estiver usando o direcionamento do AEM ou o Adobe Target (direcionamento de experiência) ... {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
+### Se estiver usando o direcionamento por AEM ou o Adobe Target (direcionamento de experiência)... {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
 Os públicos são exibidos no lado esquerdo do diagrama de mapeamento e as experiências, no lado direito.
 
@@ -414,11 +414,11 @@ Não use um público-alvo com mais de uma experiência. Um símbolo de aviso é 
 
 Use o procedimento a seguir para associar uma experiência a um público-alvo ao usar o direcionamento do AEM (ou direcionamento de experiência do Adobe Target):
 
-1. Clique ou toque na seta suspensa ao lado na caixa de público-alvo mapeada para a experiência.
-1. (Opcional) Clique ou toque em **Editar** e digite uma palavra-chave para pesquisar pelo segmento desejado.
-1. Na lista de públicos, selecione o público e clique ou toque em **OK**.
+1. Clique na seta suspensa ao lado na caixa de público-alvo que está mapeada para a experiência.
+1. (Opcional) Clique em **Editar** e digite uma palavra-chave para pesquisar pelo segmento desejado.
+1. Na lista de públicos, selecione o público e clique em **OK**.
 
-### Se estiver usando o Teste A/B (Adobe Target) .. {#if-you-are-using-a-b-testing-adobe-target}
+### Se estiver usando o Teste A/B (Adobe Target) ... {#if-you-are-using-a-b-testing-adobe-target}
 
 Se tiver uma atividade de teste A/B, os públicos-alvo estarão à esquerda, a porcentagem de visualização de cada experiência estará no meio e as experiências estarão à direita.
 
@@ -428,9 +428,9 @@ Se tiver uma atividade de teste A/B, os públicos-alvo estarão à esquerda, a p
 
 ### Associação de públicos-alvo e porcentagens de tráfego com teste A/B {#associating-audiences-and-traffic-percentages-with-a-b-testing}
 
-1. Clique ou toque na caixa suspensa ao lado do público-alvo mapeado para a experiência.
+1. Clique na caixa suspensa ao lado do público-alvo mapeado para a experiência.
 1. (Opcional) Clique em **Editar** e digite uma palavra-chave para pesquisar pelo segmento desejado.
-1. Clique ou toque em **OK.**
+1. Clique em **OK.**
 1. Insira porcentagens para configurar como o tráfego de público-alvo será roteado para cada experiência. O número total precisa ser igual a 100.
 1. (Opcional) Edite o nome da experiência clicando no menu suspenso ao lado do nome da experiência.
 
@@ -438,7 +438,7 @@ Se tiver uma atividade de teste A/B, os públicos-alvo estarão à esquerda, a p
 
 A etapa Metas e configurações do [processo de direcionamento](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) envolve a configuração do comportamento da atividade da marca. Especifique quando a atividade começa e termina e sua prioridade. Além disso, você também acompanha metas. Especificamente, você pode decidir o que deseja medir com suas atividades.
 
-As Métricas de Meta só estarão disponíveis se você usar o Adobe Target como seu mecanismo de direcionamento. É necessário ter, pelo menos, uma métrica de meta. Se o Adobe Analytics estiver configurado e você tiver uma configuração de nuvem A4T do Analytics, será possível selecionar se deseja que a fonte de relatórios seja o Adobe Target ou o Adobe Analytics.
+As Métricas de Meta só estarão disponíveis se você usar o Adobe Target como seu mecanismo de direcionamento. Defina pelo menos uma métrica de meta. Se o Adobe Analytics estiver configurado e você tiver uma configuração de nuvem A4T do Analytics, será possível selecionar se deseja que a fonte de relatórios seja o Adobe Target ou o Adobe Analytics.
 
 As métricas de meta são medidas apenas para a campanha publicada.
 
@@ -536,12 +536,12 @@ Para definir as configurações se estiver usando o direcionamento do AEM:
 1. Para especificar quando a atividade será iniciada, use o menu suspenso **Início** para selecionar um dos seguintes valores:
 
    * **Quando ativada**: a atividade começa quando a página que contém o conteúdo direcionado é ativada.
-   * **Data e hora especificadas**: uma hora específica. Ao selecionar essa opção, clique ou toque no ícone de calendário, selecione uma data e especifique a hora para iniciar a atividade.
+   * **Data e hora especificadas**: uma hora específica. Ao selecionar essa opção, clique no ícone de calendário, selecione uma data e especifique a hora para iniciar a atividade.
 
 1. Para especificar quando a atividade se encerra, use o menu suspenso **Término** para selecionar um dos seguintes valores:
 
    * **Quando desativada**: a atividade termina quando a página que contém o conteúdo direcionado é desativada.
-   * **Data e hora especificadas**: uma hora específica. Ao selecionar essa opção, clique ou toque no ícone de calendário, selecione uma data e especifique a hora para finalizar a atividade.
+   * **Data e hora especificadas**: uma hora específica. Ao selecionar essa opção, clique no ícone de calendário, selecione uma data e especifique a hora para encerrar a atividade.
 
 1. Para especificar uma prioridade para a atividade, use o controle deslizante para selecionar **Baixa**, **Normal** ou **Alta**.
 
@@ -552,12 +552,12 @@ Para definir metas e configurações se estiver usando o Adobe Target:
 1. Para especificar quando a atividade será iniciada, use o menu suspenso **Início** para selecionar um dos seguintes valores:
 
    * **Quando ativada**: a atividade começa quando a página que contém o conteúdo direcionado é ativada.
-   * **Data e hora especificadas**: uma hora específica. Ao selecionar essa opção, clique ou toque no ícone de calendário, selecione uma data e especifique a hora para iniciar a atividade.
+   * **Data e hora especificadas**: uma hora específica. Ao selecionar essa opção, clique no ícone de calendário, selecione uma data e especifique a hora para iniciar a atividade.
 
 1. Para especificar quando a atividade se encerra, use o menu suspenso **Término** para selecionar um dos seguintes valores:
 
    * **Quando desativada**: a atividade termina quando a página que contém o conteúdo direcionado é desativada.
-   * **Data e hora especificadas**: uma hora específica. Ao selecionar essa opção, clique ou toque no ícone de calendário, selecione uma data e especifique a hora para finalizar a atividade.
+   * **Data e hora especificadas**: uma hora específica. Ao selecionar essa opção, clique no ícone de calendário, selecione uma data e especifique a hora para encerrar a atividade.
 
 1. Para especificar uma prioridade para a atividade, use o controle deslizante para selecionar **Baixa**, **Normal** ou **Alta**.
 1. Se você tiver configurado o Adobe Analytics com sua conta da Adobe Target, verá a **Fonte dos relatórios** menu suspenso. Selecione **Adobe Target** ou **Adobe Analytics** como a fonte.
@@ -592,10 +592,10 @@ Para definir metas e configurações se estiver usando o Adobe Target:
    >
    É possível remover metas adicionais clicando ou tocando nos três pontos e clicando ou tocando em **Excluir**. O AEM exige que você tenha pelo menos uma meta definida.
 
-1. Se quiser ter mais controle sobre como as métricas de sucesso são contadas, clique ou toque em **Configurações avançadas** para acessá-las.
+1. Se quiser ter mais controle sobre como as métricas de sucesso são contadas, clique em **Configurações avançadas** para acessá-las.
 1. Clique em **Salvar**.
 
-Após a configuração, é possível [visualizar o desempenho de suas atividades](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test) que usam o Adobe Target (direcionamento de experiência ou de teste A/B). Além disso, com o direcionamento de teste A/B, é possível [converter os vencedores.](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test)
+Após a configuração, é possível [visualizar o desempenho de suas atividades](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test) que usam o Adobe Target (direcionamento de experiência ou de teste A/B). Além disso, com o direcionamento de teste A/B, é possível [converta os vencedores.](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test)
 
 ## Simulação de uma Experiência {#simulating-an-experience}
 
@@ -620,12 +620,12 @@ Para simular a experiência do visitante, use as seguintes ferramentas:
 * A simulação da atividade no modo Direcionamento: a página exibe as ofertas para o usuário que está selecionado no Context Hub. É possível editar as ofertas direcionadas ao usuário.
 * Modo de visualização: use o Context Hub para selecionar os usuários e locais que atendem aos critérios dos segmentos nos quais suas experiências se baseiam. Quando suas seleções do Context Hub são alteradas, o conteúdo direcionado é alterado de acordo.
 
-1. Para alternar para o modo de Visualização, clique ou toque em **Visualização** na barra de ferramentas.
-1. Na barra de ferramentas, clique ou toque no ícone do Context Hub.
+1. Para alternar para o modo de Visualização, clique em na barra de ferramentas **Visualizar**.
+1. Na barra de ferramentas, clique no ícone do Context Hub.
 
    ![Context Hub](do-not-localize/chlimage_1-7.png)
 
-1. Use o Context Hub para alterar as propriedades do contexto. Por exemplo, clique ou toque na propriedade Persona para selecionar um usuário diferente.
+1. Use o Context Hub para alterar as propriedades do contexto. Por exemplo, clique na propriedade Persona para selecionar um usuário diferente.
 
    ![chlimage_1-36](assets/chlimage_1-36.png)
 
@@ -637,7 +637,7 @@ Para simular a experiência do visitante, use as seguintes ferramentas:
 
 É possível personalizar o componente do Target acessando as opções do componente de uma das duas formas a seguir:
 
-1. Depois de direcionar o componente, no componente de Direcionamento, clique ou toque no componente e no ícone de configurações (cog).
+1. Depois de direcionar o componente, no componente de Direcionamento, clique no componente e, em seguida, no ícone de configurações (cog).
 
    ![Menu do componente de Direcionamento](do-not-localize/chlimage_1-8.png)
 
@@ -645,7 +645,7 @@ Para simular a experiência do visitante, use as seguintes ferramentas:
 
    ![chlimage_1-37](assets/chlimage_1-37.png)
 
-1. Como alternativa, para acessar essas configurações no modo de tela cheia, na janela de opções do componente de Direcionamento, clique ou toque no ícone de tela cheia.
+1. Como alternativa, para acessar essas configurações no modo de tela cheia, na janela de opções do componente de Direcionamento, clique no ícone de tela cheia.
 
    ![Janela de opções do componente de Direcionamento](do-not-localize/chlimage_1-9.png)
 
@@ -663,7 +663,7 @@ Para simular a experiência do visitante, use as seguintes ferramentas:
   </tr>
   <tr>
    <td><strong>Local</strong></td>
-   <td><p>O local é uma sequência de caracteres que dá um nome ao local do conteúdo direcionado e conecta ofertas a lugares (ou locais ou componentes) na página onde essas ofertas devem ser colocadas.</p> <p>Este campo é um valor genérico.</p> <p>Se você adicionar uma oferta a um componente, ela se lembrará da ID de localização. Quando a página é executada, o mecanismo avalia os segmentos do usuário e, com base nisso, decide as experiências das campanhas ativas que devem ser exibidas. Em seguida, verifica as IDs de localização na página e tenta corresponder as ofertas com essas IDs.</p> </td>
+   <td><p>O local é uma cadeia de caracteres que dá um nome ao local do conteúdo direcionado e conecta ofertas a locais (ou locais ou componentes) na página onde essas ofertas devem ser colocadas.</p> <p>Este campo é um valor genérico.</p> <p>Se você adicionar uma oferta a um componente, ela se lembrará da ID de localização. Quando a página é executada, o mecanismo avalia os segmentos do usuário e, com base nisso, decide as experiências das campanhas ativas que devem ser exibidas. Em seguida, verifica as IDs de localização na página e tenta corresponder as ofertas com essas IDs.</p> </td>
   </tr>
   <tr>
    <td><strong>Mecanismo</strong></td>
@@ -684,7 +684,7 @@ Se você selecionar Adobe Target como mecanismo:
   </tr>
   <tr>
    <td><strong>Destinação exata</strong></td>
-   <td><p>Habilitar o direcionamento preciso informa ao componente para esperar que os dados do contexto do cliente ou do hub de contexto estejam disponíveis antes de enviar a solicitação para o Adobe Target. Pode aumentar o tempo de carregamento. Ao criar, o direcionamento preciso está sempre ativado.</p> <p>Se você selecionar a variável <strong>Direcionamento preciso</strong> , a mbox executará uma <code>mboxDefine</code> primeiro e um <code>mboxUpdate</code> posteriormente, resultando em uma solicitação de Ajax quando os dados estiverem disponíveis.</p> <p>Se você não selecionar a opção <strong>Direcionamento preciso</strong> , a mbox executará uma <code>mboxCreate</code> resultando em uma solicitação síncrona imediatamente (nesse caso, nem todos os dados de contexto podem estar disponíveis).</p> <p><strong>Nota:</strong> Ativar ou desativar o direcionamento preciso em um componente específico não afeta as configurações definidas globalmente. Sempre é possível substituir as configurações globais selecionando Direcionamento preciso no componente.</p> </td>
+   <td><p>Habilitar o direcionamento preciso informa ao componente para esperar que os dados do contexto do cliente ou do hub de contexto estejam disponíveis antes de enviar a solicitação para o Adobe Target. Pode aumentar o tempo de carregamento. Para a criação, o direcionamento preciso é sempre ativado.</p> <p>Se você selecionar a variável <strong>Direcionamento preciso</strong> , a mbox executará uma <code>mboxDefine</code> primeiro e um <code>mboxUpdate</code> posteriormente, resultando em uma solicitação de Ajax quando os dados estiverem disponíveis.</p> <p>Se você não selecionar a opção <strong>Direcionamento preciso</strong> , a mbox executará uma <code>mboxCreate</code> resultando em uma solicitação síncrona imediatamente (nesse caso, nem todos os dados de contexto podem estar disponíveis).</p> <p><strong>Nota:</strong> Ativar ou desativar o direcionamento preciso em um componente específico não afeta as configurações definidas globalmente. Sempre é possível substituir as configurações globais selecionando Direcionamento preciso no componente.</p> </td>
   </tr>
   <tr>
    <td><strong>Incluir segmentos resolvidos</strong></td>
@@ -696,11 +696,11 @@ Se você selecionar Adobe Target como mecanismo:
   </tr>
   <tr>
    <td><strong>Parâmetros de contexto</strong></td>
-   <td>Clique ou toque <strong>Adicionar campo</strong> para configurar parâmetros de contexto adicionais (mesma opção disponível na estrutura do Target). Os parâmetros de contexto adicionados ao componente se aplicam <i>somente</i> ao componente e não a outro componente, como ocorre ao adicionar parâmetros de contexto diretamente à estrutura.</td>
+   <td>Clique em <strong>Adicionar campo</strong> para configurar parâmetros de contexto adicionais (mesma opção disponível na estrutura do Target). Os parâmetros de contexto adicionados ao componente se aplicam <i>somente</i> ao componente e não a outro componente, como ocorre ao adicionar parâmetros de contexto diretamente à estrutura.</td>
   </tr>
   <tr>
    <td><strong>Parâmetros estáticos</strong></td>
-   <td>Clique ou toque <strong>Adicionar campo</strong> para configurar parâmetros estáticos adicionais (mesma opção disponível na estrutura do Target). Os parâmetros estáticos adicionados ao componente se aplicam <i>somente</i> ao componente e não a outro componente, como ocorre ao adicionar parâmetros estáticos diretamente à estrutura. Os parâmetros estáticos não provêm do contexto (contexto do cliente do content hub).</td>
+   <td>Clique em <strong>Adicionar campo</strong> para configurar parâmetros estáticos adicionais (mesma opção disponível na estrutura do Target). Os parâmetros estáticos adicionados ao componente se aplicam <i>somente</i> ao componente e não a outro componente, como ocorre ao adicionar parâmetros estáticos diretamente à estrutura. Os parâmetros estáticos não provêm do contexto (contexto do cliente do content hub).</td>
   </tr>
  </tbody>
 </table>

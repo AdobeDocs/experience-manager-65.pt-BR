@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3495'
+source-wordcount: '3443'
 ht-degree: 0%
 
 ---
@@ -58,10 +58,10 @@ Folha de características da página de destino
 
 Este é um exemplo de layout do zip:
 
-* /index.html -> arquivo HTML da página de aterrissagem
-* /css -> para adicionar ao clientlib de CSS
-* /img -> todas as imagens e ativos
-* /js -> para adicionar ao clientlib JS
+* /index.html > arquivo HTML da página de aterrissagem
+* /css > para adicionar ao clientlib CSS
+* /img > todas as imagens e ativos
+* /js > para adicionar ao clientlib JS
 
 O layout é baseado no layout de práticas recomendadas do HTML5 Boilerplate. Leia mais em [https://html5boilerplate.com/](https://html5boilerplate.com/)
 
@@ -156,7 +156,7 @@ Incluindo a marcação acima no HTML, o faz o seguinte:
 
 Para adicionar um texto com uma lista:
 
-* 1st
+* 1º
 * 2nd
 
 que podem ser editadas no editor de RTE:

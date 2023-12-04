@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 0f3aaa0a-ccfb-4162-97a6-ee5485595d28
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1530'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ Para exportar usuários do AEM como clientes potenciais do Salesforce:
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
-1. Selecione o usuário do AEM que deseja criar como lead como **Carga** para este workflow (início -> usuários). Certifique-se de selecionar o nó de perfil do usuário, pois ele contém informações como **givenName**, e  **familyName**, que são mapeados para clientes em potencial do Salesforce **Nome** e **Sobrenome** campos.
+1. Selecione o usuário do AEM que deseja criar como lead como **Carga** para este workflow (início > usuários). Certifique-se de selecionar o nó de perfil do usuário, pois ele contém informações como **givenName**, e  **familyName**, que são mapeados para clientes em potencial do Salesforce **Nome** e **Sobrenome** campos.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
@@ -127,7 +127,7 @@ Se necessário, configure o workflow de exportação do Salesforce.com para corr
 
 Para configurar o workflow de exportação do Salesforce.com:
 
-1. Vá até `http://localhost:4502/cf#/etc/workflow/models/salesforce-com-export.html.`
+1. Navegue até `http://localhost:4502/cf#/etc/workflow/models/salesforce-com-export.html.`
 
    ![chlimage_1-16](assets/chlimage_1-16.jpeg)
 

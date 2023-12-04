@@ -4,10 +4,10 @@ description: Entenda como as variações podem tornar o conteúdo headless no AE
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2388'
-ht-degree: 61%
+source-wordcount: '2309'
+ht-degree: 59%
 
 ---
 
@@ -75,7 +75,7 @@ Por exemplo:
 
 ### Editor de tela cheia {#full-screen-editor}
 
-Ao editar um campo de texto multilinha, você pode abrir o editor de tela cheia; toque ou clique no texto e selecione o seguinte ícone de ação:
+Ao editar um campo de texto multilinha, você pode abrir o editor de tela cheia; clique no texto real e selecione o seguinte ícone de ação:
 
 ![ícone do editor de tela cheia](assets/cfm-variations-03.png)
 

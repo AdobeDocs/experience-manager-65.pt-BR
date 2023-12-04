@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 90cd8ba5-4f47-4074-bc54-6a7bb8afe256
 exl-id: 12cc2027-ae94-40c3-a7d1-553469426114
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Você precisa arquivar o projeto Xcode para o aplicativo AEM Forms para criar o 
 
    Clique em **[!UICONTROL Concluído]**.
 
-1. Navegue até Provisionamento -> Distribuição e crie um Novo perfil usando a ID do aplicativo configurada na etapa 3.
+1. Navegue até Provisionamento>Distribuição e crie um Novo perfil usando a ID do aplicativo configurada na etapa 3.
 1. Baixe e adicione o perfil de provisionamento ao Xcode e ao iPad.
 1. Faça logon no computador Mac que tem o Xcode e o SDK do iOS instalado e configurado.
 1. Abra o `AEM Forms.xcodeproj` projeto no Xcode.

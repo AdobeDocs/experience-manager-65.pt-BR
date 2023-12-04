@@ -2,10 +2,10 @@
 title: Configurar regras de tradução
 description: Saiba como definir regras de tradução para identificar o conteúdo a ser traduzido.
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 70%
+source-wordcount: '847'
+ht-degree: 68%
 
 ---
 
@@ -56,25 +56,25 @@ As regras de tradução são projetadas para lidar com tais cenários. No entant
 
 Existe um console de **Configuração de tradução** disponível para configurar regras de tradução. Para acessá-lo:
 
-1. Navegue até **Ferramentas** -> **Geral**.
-1. Toque ou clique em **Configuração de tradução**.
+1. Navegue até **Ferramentas** > **Geral**.
+1. Clique em **Configuração de tradução**.
 
 No **Configuração de tradução** Há várias opções disponíveis para suas regras de tradução. Aqui destacamos as etapas mais necessárias e típicas de uma configuração básica de localização headless.
 
-1. Toque ou clique **Adicionar contexto**, que permite adicionar um caminho. Esse é o caminho do conteúdo que deve ser afetado pela regra.
+1. Clique em **Adicionar contexto**, que permite adicionar um caminho. Esse é o caminho do conteúdo que deve ser afetado pela regra.
    ![Adicionar contexto](assets/add-translation-context.png)
-1. Use o navegador de caminho para selecionar o caminho necessário e toque ou clique no botão **Confirmar** para salvar. Lembre-se, os fragmentos de conteúdo, que possuem conteúdo headless, geralmente estão localizados em `/content/dam/<your-project>`.
+1. Use o navegador de caminho para selecionar o caminho necessário e clique no **Confirmar o** botão para salvar. Lembre-se, os fragmentos de conteúdo, que possuem conteúdo headless, geralmente estão localizados em `/content/dam/<your-project>`.
    ![Selecione o caminho](assets/select-context.png)
 1. O AEM salva a configuração.
-1. Selecione o contexto criado e toque ou clique **Editar**. Isso abre o **editor de regras de tradução** para configurar as propriedades.
+1. Selecione o contexto criado e clique em **Editar**. Isso abre o **editor de regras de tradução** para configurar as propriedades.
    ![Editor de regras de tradução](assets/translation-rules-editor.png)
 1. Por padrão, todas as configurações são herdadas do caminho principal, neste caso: `/content/dam`. Desmarque a opção **Herdar de`/content/dam`** para adicionar outros campos à configuração.
 1. Depois de desmarcar a opção, na seção **Geral** da lista, adicione os nomes das propriedades do(s) modelo(s) de fragmento de conteúdo que você [anteriormente identificou como campos que devem ser traduzidos.](getting-started.md#content-models)
    1. Insira o nome da propriedade no campo **Nova propriedade**.
    1. As opções **Traduzir** e **Herdar** são marcadas automaticamente.
-   1. Toque ou clique em **Adicionar**.
+   1. Clique em **Adicionar**.
    1. Repita essas etapas para todos os campos que devem ser traduzidos.
-   1. Toque ou clique em **Salvar**.
+   1. Clique em **Salvar**.
       ![Adicionar propriedade](assets/add-property.png)
 
 Agora, você configurou as regras de tradução.

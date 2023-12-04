@@ -2,10 +2,10 @@
 title: Notas de versão gerais do [!DNL Adobe Experience Manager] 6.5
 description: "[!DNL Adobe Experience Manager] 6.5 notas descrevendo as informações da versão, as novidades, como instalar e as listas de alterações detalhadas."
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4676'
-ht-degree: 5%
+source-wordcount: '4484'
+ht-degree: 2%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 | Produto | [!DNL Adobe Experience Manager] |
 |---|---|
-| Versão | 6.5 |
+| Versão | 6,5 |
 | Tipo | Versão Principal |
 | Data de disponibilidade geral | 8 de abril de 2019 |
 | Atualizações recomendadas | Consulte [Atualizações recentes do AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=pt-BR). |
@@ -428,7 +428,7 @@ O AEM 6.5 Forms traz vários novos recursos e melhorias. Os destaques incluem:
 
 Consulte a [Resumo dos novos recursos e melhorias no AEM 6.5 Forms](/help/forms/using/whats-new.md) para obter informações sobre recursos novos e aprimorados e recursos de documentação.
 
-### Usar o desenvolvimento com foco no cliente {#leverage-customer-focused-development}
+### Usar o desenvolvimento com foco no cliente {#use-customer-focused-development}
 
 A Adobe está usando um modelo de desenvolvimento focado no cliente que permite que os clientes contribuam para todos os estágios do processo de desenvolvimento, durante a especificação, o desenvolvimento e o teste. Nossos agradecimentos vão para todos os clientes e parceiros que contribuíram neste processo.
 
@@ -540,7 +540,7 @@ Para resolver esse erro:
 
 1. Pare a instância do AEM. Ir para `<aem_server_path_on_server>crx-quickstart\conf` e abra o `sling.properties` arquivo. O Adobe recomenda fazer um backup desse arquivo.
 
-1. Pesquisar `org.osgi.framework.bootdelegation=`. Adicionar `jdk.internal.reflect,jdk.internal.reflect.*` propriedades para exibir o resultado como.
+1. Pesquisar por `org.osgi.framework.bootdelegation=`. Adicionar `jdk.internal.reflect,jdk.internal.reflect.*` propriedades para exibir o resultado como.
 
 ```java
 org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.internal.reflect.*

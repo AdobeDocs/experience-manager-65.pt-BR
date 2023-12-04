@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: cf25c9a8-0555-4c67-8aa5-55984fd8d301
 exl-id: f14cc5fd-aeab-4619-b926-b6f1df7e50e5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Crie uma configuração de nuvem do BrightEdge para que o AEM possa se conectar 
 
 Ao criar a configuração, especifique um título. O título deve ser descritivo para que as pessoas possam correlacionar a configuração com a conta do BrightEdge. Quando um autor ou administrador de página associa uma página da Web à conta do BrightEdge, esse título é apresentado em uma lista suspensa.
 
-1. No painel, clique em Ferramentas > Operações > Nuvem > Cloud Services.
+1. No painel, clique em Ferramentas > Operações > Nuvem > Cloud Service.
 1. Clique no link exibido na seção Otimizador de conteúdo BrightEdge. Se uma configuração do BrightEdge foi criada, determina o texto do link:
 
    * Configurar agora: esse link aparece quando nenhuma configuração foi criada.
@@ -39,7 +39,7 @@ Ao criar a configuração, especifique um título. O título deve ser descritivo
 
 Modifique o nome de usuário e a senha de uma configuração do BrightEdge quando necessário. As modificações afetam todas as páginas que usam a configuração.
 
-1. No painel, clique em Ferramentas > Operações > Nuvem > Cloud Services.
+1. No painel, clique em Ferramentas > Operações > Nuvem > Cloud Service.
 1. Na seção Otimizador de conteúdo BrightEdge, clique em Mostrar configurações.
 
    ![chlimage_1-5](assets/chlimage_1-5a.png)
@@ -54,7 +54,7 @@ Associe páginas a uma configuração do BrightEdge para enviar dados de página
 1. Abra o console Sites clássico. ([http://localhost:4502/siteadmin#/content](http://localhost:4502/siteadmin#/content))
 1. Na árvore Sites, selecione a pasta ou página que contém a página que você deseja associar à configuração do BrightEdge.
 1. Na lista de páginas, clique com o botão direito do mouse na página que deseja configurar e clique em Propriedades.
-1. Na guia Cloud Services, clique no botão Adicionar serviço e, na caixa de diálogo Cloud Services, selecione Otimizador de conteúdo BrightEdge e clique em OK.
+1. Na guia Cloud Service, clique no botão Adicionar serviço e, na caixa de diálogo Cloud Service, selecione Otimizador de conteúdo BrightEdge e clique em OK.
 1. Na lista Otimizador de conteúdo BrightEdge, selecione a configuração do BrightEdge a ser associada à página e clique em OK.
 
    ![chlimage_1-6](assets/chlimage_1-6a.png)
@@ -64,7 +64,7 @@ Associe páginas a uma configuração do BrightEdge para enviar dados de página
 Ative uma configuração do BrightEdge para replicá-la na instância de publicação e ativar as páginas publicadas para interagir com o serviço BrightEdge.
 
 1. No painel, clique em Sites e navegue até a página associada à configuração do BrightEdge e selecione-a.
-1. Clique ou toque no ícone Publicar e, em seguida, clique ou toque em Publicar.
+1. Clique no ícone Publicar e em Publicar.
 
    ![chlimage_1-7](assets/chlimage_1-7a.png)
 

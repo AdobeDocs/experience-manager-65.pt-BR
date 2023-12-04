@@ -2,7 +2,7 @@
 title: Registrando-se como usuário
 seo-title: Registering as a User
 description: Saiba como você pode usar documentos protegidos por política recebidos de um usuário de segurança de documentos, mesmo que você seja externo à organização do usuário.
-seo-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user’s organization.
+seo-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user's organization.
 uuid: 4648b358-f545-434f-a3b2-2937e961dc64
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
@@ -10,16 +10,16 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
 feature: Document Security
 exl-id: 320d8fa4-e200-4993-b018-a9718cddc5c1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 6%
+source-wordcount: '695'
+ht-degree: 3%
 
 ---
 
 # Registrando-se como usuário {#registering-as-a-user}
 
-Você pode usar documentos protegidos por política que recebe de um usuário de segurança de documentos, mesmo se for externo à organização do usuário. Para usar um documento protegido por política, você deve se registrar na segurança de documentos. Se você não tiver sido convidado anteriormente para o registro, a segurança de documentos iniciará o processo de registro quando estes eventos ocorrerem:
+Você pode usar documentos protegidos por política recebidos de um usuário de segurança de documentos, mesmo se for externo à organização do usuário. Para usar um documento protegido por política, você deve se registrar na segurança de documentos. Se você não tiver sido convidado anteriormente para o registro, a segurança de documentos iniciará o processo de registro quando estes eventos ocorrerem:
 
 * Um usuário de segurança de documentos que deseja enviar a você um documento protegido por política o adiciona a uma política.
 * Um administrador de segurança de documentos cria uma conta para você.
@@ -43,11 +43,11 @@ Se você for um usuário convidado e receber uma mensagem de registro por email 
 1. Abra o email de registro de segurança de documentos. O URL que a mensagem contém é um link para a página Registro de usuários externos na segurança de documentos.
 1. Clique no URL ou copie-o e cole-o no navegador. A página Registro de Usuários Externos é exibida.
 1. Digite seu nome, número de telefone, endereço, empresa e senha nas caixas apropriadas e digite novamente sua senha na caixa Confirmar senha. Sua senha pode ser qualquer combinação de oito caracteres.
-1. Clique em Salvar. Uma mensagem de agradecimento é exibida informando para verificar se há uma mensagem de email de ativação no seu email. Agora você precisa ativar sua conta para concluir o processo de registro.
+1. Clique em Salvar. Uma mensagem de agradecimento é exibida informando para verificar se há uma mensagem de email de ativação no seu email. Agora ative sua conta para concluir o processo de registro.
 
 ## Ativar a conta de usuário convidado {#activate-your-invited-user-account}
 
-Após se registrar, a segurança de documentos envia um email de ativação. Você deve ativar sua conta usando o URL na mensagem. Você pode fazer logon na segurança de documentos para usar documentos protegidos por política aos quais você tem acesso. Dependendo dos recursos ativados pelo administrador para usuários externos, talvez você tenha permissão para criar políticas, aplicar políticas a documentos e adicionar outros usuários externos às suas políticas.
+Após se registrar, a segurança de documentos envia um email de ativação. Ative sua conta usando o URL na mensagem. Você pode fazer logon na segurança de documentos para usar documentos protegidos por política aos quais você tem acesso. Dependendo dos recursos ativados pelo administrador para usuários externos, talvez você tenha permissão para criar políticas, aplicar políticas a documentos e adicionar outros usuários externos às suas políticas.
 
 Sua conta permanece ativa até que o administrador a desative ou exclua.
 

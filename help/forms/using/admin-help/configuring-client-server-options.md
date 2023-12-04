@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '10221'
+source-wordcount: '10266'
 ht-degree: 0%
 
 ---
@@ -730,7 +730,7 @@ Você pode fazer as seguintes alterações usando o arquivo de configuração:
 
 >[!NOTE]
 >
->A importação do arquivo de configuração reconfigura seu sistema com base nas informações do arquivo. As exceções são a configuração de marca d&#39;água dinâmica e informações de eventos personalizados, que não são salvas com o arquivo de configuração exportado. Você deve configurar essas informações manualmente no novo sistema. Somente um administrador de sistema ou um consultor de serviços profissionais familiarizado com a segurança de documentos e XML deve modificar o conteúdo de um arquivo de configuração, por exemplo, para redefinir uma configuração corrompida ou ajustar parâmetros para um cenário de implantação corporativa específico.
+>A importação do arquivo de configuração reconfigura seu sistema com base nas informações do arquivo. As exceções são a configuração de marca d&#39;água dinâmica e informações de eventos personalizados, que não são salvas com o arquivo de configuração exportado. Configure essas informações manualmente no novo sistema. Somente um administrador de sistema ou um consultor de serviços profissionais familiarizado com a segurança de documentos e XML deve modificar o conteúdo de um arquivo de configuração, por exemplo, para redefinir uma configuração corrompida ou ajustar parâmetros para um cenário de implantação corporativa específico.
 
 **Exportar um arquivo de configuração**
 

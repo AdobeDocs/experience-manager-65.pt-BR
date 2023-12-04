@@ -2,10 +2,10 @@
 title: Configurações e o navegador de configuração
 description: Entenda as configurações do AEM e como elas gerenciam as configurações do espaço de trabalho no AEM.
 exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1483'
-ht-degree: 6%
+source-wordcount: '1472'
+ht-degree: 4%
 
 ---
 
@@ -68,22 +68,22 @@ O Navegador de configuração permite que um administrador crie, gerencie e conf
 
 É simples criar uma configuração no AEM usando o Navegador de configuração.
 
-1. Faça logon no AEM as a Cloud Service e, no menu principal, selecione **Ferramentas** -> **Geral** -> **Navegador de configuração**.
-1. Toque ou clique em **Criar**.
+1. Faça logon no AEM as a Cloud Service e, no menu principal, selecione **Ferramentas** > **Geral** > **Navegador de configuração**.
+1. Clique em **Criar**.
 1. Forneça um **Título** e um **Nome** para sua configuração.
 
    ![Criar configuração](assets/configuration-create.png)
 
    * O **Título** deve ser descritivo.
    * O **Nome** se tornará o nome do nó no repositório.
-      * Ele será gerado automaticamente com base no título e ajustado conforme as [convenções de nomenclatura do AEM.](/help/sites-developing/naming-conventions.md)
+      * Ele é gerado automaticamente com base no título e ajustado de acordo com [Convenções de nomenclatura do AEM.](/help/sites-developing/naming-conventions.md)
       * Ele pode ser ajustado, se necessário.
 1. Verifique o tipo de configurações que deseja permitir.
    * [Configurações da nuvem](/help/sites-administering/configurations.md)
    * [Segmentos do Context Hub](/help/sites-administering/segmentation.md)
    * [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
    * [Modelos editáveis](/help/sites-authoring/templates.md)
-1. Toque ou clique em **Criar**.
+1. Clique em **Criar**.
 
 >[!TIP]
 >
@@ -93,8 +93,8 @@ O Navegador de configuração permite que um administrador crie, gerencie e conf
 
 Se você pensar nas configurações como espaços de trabalho, os direitos de acesso poderão ser definidos nessas configurações para impor quem pode ou não acessar esses espaços de trabalho.
 
-1. Faça logon no AEM as a Cloud Service e, no menu principal, selecione **Ferramentas** -> **Geral** -> **Navegador de configuração**.
-1. Selecione a configuração que deseja modificar e toque ou clique **Propriedades** na barra de ferramentas.
+1. Faça logon no AEM as a Cloud Service e, no menu principal, selecione **Ferramentas** > **Geral** > **Navegador de configuração**.
+1. Selecione a configuração que deseja modificar e clique em **Propriedades** na barra de ferramentas.
 1. Selecione os recursos adicionais que deseja adicionar à configuração.
 
    >[!NOTE]

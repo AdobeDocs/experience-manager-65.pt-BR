@@ -3,10 +3,10 @@ title: Configure o Editor de Rich Text para criar conteúdo no Adobe Experience 
 description: Saiba como configurar o Editor de rich text do Adobe Experience Manager para criar conteúdo no Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2921'
-ht-degree: 1%
+source-wordcount: '2883'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +56,7 @@ Os autores podem criar e editar conteúdo textual no Experience Manager usando o
 
 ### Edição em linha {#inline-editing}
 
-Quando aberto (com um toque duplo/clique lento), o conteúdo pode ser editado dentro da página. Uma barra de ferramentas compacta com opções muito básicas é apresentada.
+Quando aberto (com um clique duplo lento), o conteúdo pode ser editado dentro da página. Uma barra de ferramentas compacta com opções muito básicas é apresentada.
 
 ![Edição em linha com a barra de ferramentas básica na interface habilitada para toque](assets/chlimage_1-36.png)
 
@@ -64,7 +64,7 @@ Quando aberto (com um toque duplo/clique lento), o conteúdo pode ser editado de
 
 Na interface clássica, um clique duplo lento no componente permite a edição em linha e um contorno laranja destaca o conteúdo. Se o Localizador de conteúdo estiver aberto, uma barra de ferramentas com as opções de formatação de RTE disponíveis será exibida na parte superior da janela. Se o Localizador de conteúdo não estiver aberto, as opções de formatação não serão exibidas e você poderá fazer somente edições básicas de texto.
 
-### Edição em de tela cheia {#full-screen-editing}
+### Edição em tela cheia {#full-screen-editing}
 
 Os componentes de Experience Manager podem ser abertos na visualização de tela cheia, que oculta o conteúdo da página e ocupa a tela disponível. Considere a edição em tela cheia como uma versão detalhada da edição em linha, pois ela oferece a maioria das opções de edição. Ele pode ser aberto clicando em ![rte_fullscreen](assets/rte_fullscreen.png), na barra de ferramentas compacta, ao usar o modo de edição em linha.
 

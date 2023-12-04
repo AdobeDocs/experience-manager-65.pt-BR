@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2675'
 ht-degree: 0%
 
 ---
@@ -107,16 +107,16 @@ Após criar um aplicativo para dispositivos móveis, você pode alterar as propr
 
 #### Alterar o título, a descrição e o ícone {#change-the-title-description-and-icon}
 
-1. No painel, clique ou toque em Aplicativos.
+1. No painel, clique em Aplicativos.
 1. Selecione o aplicativo a ser configurado e clique no ícone Propriedades da página de exibição.
 
    ![O ícone Exibir propriedades da página indicado pela letra I dentro de um círculo.](do-not-localize/chlimage_1-8.png)
 
-1. Para alterar os valores de propriedade, clique ou toque no ícone Editar.
+1. Para alterar os valores de propriedade, clique no ícone Editar.
 
    ![O ícone Edit indicado por um lápis.](do-not-localize/chlimage_1-9.png)
 
-1. Configure as propriedades Básicas e Avançadas e clique ou toque no ícone Concluído.
+1. Configure as propriedades Básicas e Avançadas e clique no ícone Concluído.
 
    ![O ícone Concluído indicado por um símbolo de marca de seleção.](do-not-localize/chlimage_1-10.png)
 
@@ -127,11 +127,11 @@ Após criar um aplicativo para dispositivos móveis, você pode alterar as propr
 
    ![O ícone Exibir Propriedades do Aplicativo indicado pela letra I dentro de um círculo.](do-not-localize/chlimage_1-11.png)
 
-1. Para alterar os valores de propriedade, clique ou toque no ícone Editar.
+1. Para alterar os valores de propriedade, clique no ícone Editar.
 
    ![O ícone Edit indicado por um lápis.](do-not-localize/chlimage_1-12.png)
 
-1. Configure as propriedades nas guias Básico, Avançado, Criar e Analytics e clique ou toque no ícone Concluído.
+1. Configure as propriedades nas guias Básico, Avançado, Criar e Analytics e clique no ícone Concluído.
 
    ![O ícone Concluído indicado por um símbolo de marca de seleção.](do-not-localize/chlimage_1-13.png)
 
@@ -139,8 +139,8 @@ Após criar um aplicativo para dispositivos móveis, você pode alterar as propr
 
 Depois de criar o aplicativo móvel, adicione o conteúdo que é usado como a interface do usuário do aplicativo.
 
-1. No painel, clique ou toque em Aplicativos.
-1. Clique ou toque no aplicativo e, em seguida, em inglês.
+1. No painel, clique em Aplicativos.
+1. Clique no aplicativo e depois em inglês.
 1. Edite a Home page ou adicione páginas secundárias conforme necessário.
 
 ### Mover conteúdo para aplicativos móveis {#moving-content-to-mobile-applications}
@@ -160,8 +160,8 @@ A Sincronização de conteúdo também rastreia quando as atualizações ocorrem
 
 Execute o procedimento a seguir na instância em que deseja atualizar o cache. Por exemplo, se o aplicativo solicitar atualizações da instância de publicação, execute o procedimento na instância de publicação.
 
-1. No painel, clique ou toque em Aplicativos e, em seguida, clique ou toque no aplicativo.
-1. Selecione a página inicial e clique ou toque no ícone Atualizar cache.
+1. No painel, clique em Aplicativos e, em seguida, clique em seu aplicativo.
+1. Selecione a página inicial e, em seguida, clique no ícone Atualizar cache.
 
    ![O ícone Atualizar cache indicado por um barrell listrado com um símbolo de reciclagem sobre ele.](do-not-localize/chlimage_1-14.png)
 
@@ -307,7 +307,7 @@ Especifique como a lista de páginas é gerada:
 
 O componente Carrossel de deslizamento fornece os seguintes valores para a propriedade Uso da lista de construção. A caixa de diálogo de edição é alterada de acordo com o valor selecionado:
 
-**Páginas secundárias**
+**Páginas filhas**
 
 O componente lista todas as páginas secundárias de uma página específica. Após selecionar esse valor, selecione a página na guia Páginas secundárias ou não especifique nenhum valor para listar as secundárias da página atual.
 

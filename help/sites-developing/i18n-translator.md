@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2319'
+source-wordcount: '2320'
 ht-degree: 0%
 
 ---
@@ -210,7 +210,7 @@ Depois de adicionar a sequência de caracteres em inglês a um dicionário, voc�
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
-   * Clique duas vezes na guia **String** ou **Comentário** campos da cadeia de caracteres necessária para abrir a **Editar string** , edite as traduções conforme necessário e clique em **OK** para fechar a caixa de diálogo:
+   * Clique duas vezes no ícone **String** ou **Comentário** campos da cadeia de caracteres necessária para abrir a **Editar string** , edite as traduções conforme necessário e clique em **OK** para fechar a caixa de diálogo:
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 

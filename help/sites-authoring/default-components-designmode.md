@@ -2,9 +2,9 @@
 title: Configuração de componentes padrão no modo de design
 description: Configuração de componentes do Adobe Experience Manager no modo de design.
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '905'
 ht-degree: 10%
 
 ---
@@ -56,11 +56,11 @@ Para ativar ou desativar um componente:
 
    ![screen_shot_2018-03-22at103113](assets/screen_shot_2018-03-22at103113.png)
 
-1. Toque ou clique em um componente. O componente terá uma borda azul quando selecionado.
+1. Clique em um componente. Quando selecionado, o componente tem uma borda azul.
 
    ![screen_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
 
-1. Clique ou toque no **Pai** ícone.
+1. Clique em **Pai** ícone.
 
    ![Pai](do-not-localize/screen_shot_2018-03-22at103204.png)
 
@@ -109,7 +109,7 @@ Para ativar ou desativar um componente:
 
    ![screen_shot_2018-03-22at103113-1](assets/screen_shot_2018-03-22at103113-1.png)
 
-1. Toque ou clique em um componente com uma borda azul. Neste exemplo, um componente de imagem herói é selecionado.
+1. Clique em um componente com uma borda azul. Neste exemplo, um componente de imagem herói é selecionado.
 
    ![screen_shot_2018-03-22at103434](assets/screen_shot_2018-03-22at103434.png)
 
@@ -153,4 +153,4 @@ Para ativar ou desativar um componente:
 
    ![Mover](do-not-localize/screen_shot_2018-03-22at103816.png)
 
-1. Clique ou toque no **Concluído** ícone para salvar e fechar o diálogo.
+1. Clique em **Concluído** ícone para salvar e fechar o diálogo.

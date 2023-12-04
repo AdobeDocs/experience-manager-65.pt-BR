@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 5%
+source-wordcount: '407'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 5%
 
 Devido à possibilidade de valores diferentes, as propriedades de página não são ativadas para edição em massa como padrão. Eles devem ser explicitamente permitidos (ativados). Ao definir as propriedades de página para que estejam disponíveis para edição de itens em massa, você precisa considerar certas implicações, como:
 
-* Determinados campos normalmente são exclusivos; por exemplo, um título de página. Você deve decidir se é significativo ativar esses campos para edição de itens em massa, quando um valor será aplicado.
+* Determinados campos normalmente são exclusivos; por exemplo, um título de página. Decida se é significativo ativar esses campos para edição de itens em massa, quando um valor será aplicado.
 * Determinados campos podem ter vários valores - isso precisa de representação significativa ao renderizar.
 
   Por exemplo, uma caixa de seleção indicando &quot;Pronto para publicação&quot;. Isso pode ter vários valores antes da edição em massa (por exemplo, pronto, em revisão, em andamento).

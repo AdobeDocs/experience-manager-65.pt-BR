@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1884'
+source-wordcount: '1890'
 ht-degree: 0%
 
 ---
@@ -109,12 +109,12 @@ Se você precisar executar a coleta de lixo do armazenamento de dados fora desse
 
 Antes de executar a coleta de lixo do armazenamento de dados, você deve verificar se nenhum backup está em execução no momento.
 
-1. Abra o Painel de operações em **Navegação** -> **Ferramentas** -> **Operações** -> **Manutenção**.
-1. Clique ou toque no **Janela de manutenção semanal**.
+1. Abra o Painel de operações em **Navegação** > **Ferramentas** > **Operações** > **Manutenção**.
+1. Clique em **Janela de manutenção semanal**.
 
    ![chlimage_1-64](assets/chlimage_1-64.png)
 
-1. Selecione o **Coleta de lixo do armazenamento de dados** tarefa e, em seguida, clique ou toque no **Executar** ícone.
+1. Selecione o **Coleta de lixo do armazenamento de dados** tarefa e, em seguida, clique na guia **Executar** ícone.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 

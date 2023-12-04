@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1185'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ Além disso, talvez também seja necessário selecionar o modelo do Adobe Campai
 
    >[!NOTE]
    >
-   >Toque/clique **OK** ou **Aplicar** depois de adicionar o cloud service. Isso habilita a **Adobe Campaign** para funcionar corretamente.
+   >Certifique-se de clicar em **OK** ou **Aplicar** depois de adicionar o cloud service. Isso habilita a **Adobe Campaign** para funcionar corretamente.
 
 1. Se quiser aplicar um template do delivery de email específico (do Adobe Campaign), diferente do padrão **email** modelo, selecione **Propriedades da página** novamente. No **Adobe Campaign** insira o nome interno do template de delivery de email na instância relacionada do Adobe Campaign.
 

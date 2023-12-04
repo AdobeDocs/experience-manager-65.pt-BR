@@ -2,10 +2,10 @@
 title: Publicação de páginas de conteúdo
 description: Saiba como publicar páginas de conteúdo no Adobe Experience Manager 6.5.
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 70%
+source-wordcount: '1673'
+ht-degree: 65%
 
 ---
 
@@ -95,7 +95,7 @@ A **Publicação rápida** serve para casos simples e publica as páginas seleci
 
 Para publicar uma página com a Publicação rápida:
 
-1. Selecione as páginas no console de sites e clique no botão **Publicação rápida**.
+1. Selecione as páginas no console de sites e clique no link **Publicação rápida** botão.
 
    ![pp-02](assets/pp-02.png)
 
@@ -111,11 +111,11 @@ Para publicar uma página com a Publicação rápida:
 
 #### Gerenciar publicação    {#manage-publication}
 
-**Gerenciar Publicação** oferece mais opções do que a Publicação Rápida, permitindo a inclusão de páginas secundárias, a personalização das referências e o início de quaisquer fluxos de trabalho aplicáveis, além de oferecer a opção de publicar em uma data posterior.
+**Gerenciar publicação** O oferece mais opções do que a Publicação rápida, permitindo a inclusão de páginas secundárias, a personalização das referências e o início de qualquer fluxo de trabalho aplicável, além de oferecer a opção de publicação em uma data posterior.
 
 Para publicar ou desfazer a publicação de uma página usando Gerenciar publicação:
 
-1. Selecione as páginas no console Sites e clique no botão **Gerenciar publicação**.
+1. Selecione as páginas no console de sites e clique no link **Gerenciar publicação** botão.
 
    ![pp-02-1](assets/pp-02-1.png)
 
@@ -215,7 +215,7 @@ Ao editar uma página, se quiser desfazer a publicação, selecione **Desfazer a
 
 Da mesma forma que você [usa a opção Gerenciar publicação para publicar](/help/sites-authoring/publishing-pages.md#manage-publication), também pode usá-la para desfazer a publicação.
 
-1. Selecione as páginas no console Sites e clique no botão **Gerenciar publicação**.
+1. Selecione as páginas no console de sites e clique no link **Gerenciar publicação** botão.
 1. O assistente para **Gerenciar publicação** é iniciado. Na primeira etapa, **Opções**, selecione **Desfazer a publicação** em vez da opção padrão **Publicar**.
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
@@ -240,7 +240,7 @@ Quando você tiver inserido ou atualizado um número considerável de páginas d
 
 1. No **Incluir filhos** desmarque as opções:
 
-   * Incluir somente tarefas derivadas imediatas
+   * Incluir somente filhos imediatos
    * Incluir somente páginas já publicadas
 
    Essas opções são selecionadas por padrão e, portanto, você deve se lembrar de desmarcá-las. Clique em **Adicionar** para confirmar e adicionar o conteúdo à publicação/desfazer publicação.

@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 90e36522-3af1-4a8a-b044-1c828c52974e
 description: Produtor do catálogo
 exl-id: 76a46c62-d47d-4970-8a3a-d56015639548
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -41,28 +41,28 @@ Como parte do processo de integração, configure a variável **Ativo de atualiz
 
 O Catalog Producer usa os dados de gerenciamento de informações do produto (PIM) para mapear propriedades do produto com as propriedades XML exibidas no modelo. Para criar um catálogo, execute estas etapas:
 
-1. Na interface do Assets, toque/clique no **Logotipo do AEM**, e vá para **Ativos > Catálogos**.
-1. No **Catálogos** toque/clique **Criar** na barra de ferramentas e selecione **Catálogo** da lista.
+1. Na interface do Assets, clique na guia **Logotipo do AEM**, e vá para **Ativos > Catálogos**.
+1. No **Catálogos** clique em **Criar** na barra de ferramentas e selecione **Catálogo** da lista.
 1. No **Criar catálogo** insira um nome e uma descrição (opcional) para o catálogo e especifique tags, se houver. Você também pode adicionar uma imagem em miniatura para o catálogo.
 
    ![create_catalog](assets/create_catalog.png)
 
-1. Toque/clique **Salvar**. Uma caixa de diálogo de confirmação notifica que o catálogo foi criado. Toque/clique **Concluído** para fechar o diálogo.
-1. Para abrir o catálogo criado, toque/clique no **Catálogos** página.
+1. Clique em **Salvar**. Uma caixa de diálogo de confirmação notifica que o catálogo foi criado. Clique em **Concluído** para fechar o diálogo.
+1. Para abrir o catálogo criado, clique nele no link **Catálogos** página.
 
    >[!NOTE]
    >
-   >Para abrir o catálogo, também é possível tocar/clicar **Abertura** na caixa de diálogo de confirmação mencionada na etapa anterior.
+   >Para abrir o catálogo, você também pode clicar em **Abertura** na caixa de diálogo de confirmação mencionada na etapa anterior.
 
-1. Para adicionar páginas ao catálogo, toque/clique **Criar** na barra de ferramentas e escolha a opção **Nova página** opção.
-1. No assistente, selecione um modelo de InDesign para sua página. Em seguida, toque/clique **Próxima**.
+1. Para adicionar páginas ao catálogo, clique em **Criar** na barra de ferramentas e escolha a opção **Nova página** opção.
+1. No assistente, selecione um modelo de InDesign para sua página. Em seguida, clique em **Próxima**.
 1. Especifique um nome para a página e uma descrição opcional. Especifique as tags, se houver.
-1. Toque/clique no **Criar** na barra de ferramentas. Em seguida, toque/clique **Abertura** da caixa de diálogo. As propriedades do produto são exibidas no painel esquerdo. As propriedades predefinidas para o modelo de InDesign são exibidas no painel direito.
+1. Clique em **Criar** na barra de ferramentas. Em seguida, clique em **Abertura** da caixa de diálogo. As propriedades do produto são exibidas no painel esquerdo. As propriedades predefinidas para o modelo de InDesign são exibidas no painel direito.
 1. No painel esquerdo, arraste as propriedades do produto para as propriedades do modelo de InDesign e crie um mapeamento entre elas.
 
-   Para visualizar como a página aparece em tempo real, toque/clique no **Visualizar** no painel direito.
+   Para visualizar como a página aparece em tempo real, clique no link **Visualizar** no painel direito.
 
-1. Para criar mais páginas, repita as etapas de 6 a 9. Para criar páginas semelhantes para outros produtos, selecione a página e toque/clique no **Criar páginas semelhantes** ícone na barra de ferramentas.
+1. Para criar mais páginas, repita as etapas de 6 a 9. Para criar páginas semelhantes para outros produtos, selecione a página e clique no link **Criar páginas semelhantes** ícone na barra de ferramentas.
 
    ![create_similar_pages](assets/create_similar_pages.png)
 
@@ -70,30 +70,30 @@ O Catalog Producer usa os dados de gerenciamento de informações do produto (PI
    >
    >Você só pode criar páginas semelhantes para produtos com estrutura semelhante.
 
-   Toque/clique no ícone Adicionar, selecione produtos no seletor de produtos e toque/clique **Selecionar** na barra de ferramentas.
+   Clique no ícone Adicionar, selecione produtos no seletor de produtos e clique em **Selecionar** na barra de ferramentas.
 
    ![select_product](assets/select_product.png)
 
-1. Na barra de ferramentas, clique/toque em **Criar**. Toque/clique **Concluído** para fechar o diálogo. Páginas semelhantes são incluídas no catálogo.
-1. Para adicionar qualquer arquivo de InDesign existente ao catálogo, toque/clique **Criar** na barra de ferramentas e escolha o **Adicionar à página existente** opção.
-1. Selecione o arquivo de InDesign e toque/clique **Adicionar** na barra de ferramentas. Em seguida, toque/clique **OK** para fechar o diálogo.
+1. Na barra de ferramentas, clique em **Criar**. Clique em **Concluído** para fechar o diálogo. Páginas semelhantes são incluídas no catálogo.
+1. Para adicionar qualquer arquivo de InDesign existente ao catálogo, clique em **Criar** na barra de ferramentas e escolha o **Adicionar à página existente** opção.
+1. Selecione o arquivo de InDesign e clique em **Adicionar** na barra de ferramentas. Em seguida, clique em **OK** para fechar o diálogo.
 
    Se os metadados dos produtos que você faz referência nas páginas do catálogo forem alterados, as alterações não serão refletidas automaticamente nas páginas do catálogo. Um banner rotulado **Obsoleto** é exibido nas imagens do produto nas páginas do catálogo de referência, indicando que os metadados dos produtos referenciados não estão atualizados.
 
    ![chlimage_1-117](assets/chlimage_1-117a.png)
 
-   Para garantir que as imagens do produto reflitam as alterações mais recentes nos metadados, selecione a página no console Catálogo e clique/toque em **Atualizar página** ícone na barra de ferramentas.
+   Para garantir que as imagens do produto reflitam as alterações de metadados mais recentes, selecione a página no console Catálogo e clique no **Atualizar página** ícone na barra de ferramentas.
 
    ![chlimage_1-118](assets/chlimage_1-118a.png)
 
    >[!NOTE]
    >
-   >Para alterar os metadados de um produto referenciado, navegue até o console Produtos (**Logotipo do AEM** > **Commerce** > **Produtos**) e selecione o produto. Em seguida, clique/toque no **Propriedades da exibição** ícone na barra de ferramentas e edite os metadados na página Propriedades do ativo.
+   >Para alterar os metadados de um produto referenciado, navegue até o console Produtos (**Logotipo do AEM** > **Commerce** > **Produtos**) e selecione o produto. Em seguida, clique no link **Propriedades da exibição** ícone na barra de ferramentas e edite os metadados na página Propriedades do ativo.
 
-1. Para reorganizar as páginas no catálogo, toque/clique no **Criar** na barra de ferramentas e escolha **Mesclar** no menu. No assistente, o carrossel na parte superior permite reorganizar as páginas arrastando-as. Também é possível remover páginas.
+1. Para reorganizar as páginas no catálogo, clique no link **Criar** na barra de ferramentas e escolha **Mesclar** no menu. No assistente, o carrossel na parte superior permite reorganizar as páginas arrastando-as. Também é possível remover páginas.
 
-1. Toque/clique **Próxima**. Para adicionar um arquivo de InDesign existente como uma página de capa, toque/clique **Procurar** ao lado da variável **Escolha uma página de capa** e especifique o caminho para o modelo de folha de rosto.
-1. Toque/clique **Salvar** e toque/clique **Concluído** para fechar o diálogo de confirmação.
+1. Clique em **Avançar**. Para adicionar um arquivo de InDesign existente como uma página de capa, clique em **Procurar** ao lado da variável **Escolha uma página de capa** e especifique o caminho para o modelo de folha de rosto.
+1. Clique em **Salvar** e clique em **Concluído** para fechar o diálogo de confirmação.
 Ao selecionar a variável **Concluído** , uma caixa de diálogo será aberta para selecionar se deseja a representação de .pdf.
    ![exportar para pdf](assets/CatalogPDF.png)
 Se a opção Acrobat(PDF) estiver selecionada, uma representação de pdf será criada em  **/jcr:content/renditions** além da representação do indesign. Você pode baixar todas as representações marcando a caixa de seleção &quot;Representações&quot; na caixa de diálogo de download.
@@ -102,4 +102,4 @@ Se a opção Acrobat(PDF) estiver selecionada, uma representação de pdf será 
 
    ![chlimage_1-119](assets/chlimage_1-119a.png)
 
-   Revise as páginas no catálogo na visualização. Toque/clique **Fechar** para fechar a visualização.
+   Revise as páginas no catálogo na visualização. Clique em **Fechar** para fechar a visualização.

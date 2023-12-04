@@ -2,10 +2,10 @@
 title: Criação de modelos de fragmento de conteúdo - Guia de início rápido do Headless
 description: Defina a estrutura do conteúdo que você cria e veicula usando os recursos headless do Adobe Experience Manager (AEM) por meio dos modelos de fragmento de conteúdo.
 exl-id: 653e35c9-7b6a-49ae-b55d-af2ec40e257d
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 55%
+source-wordcount: '478'
+ht-degree: 51%
 
 ---
 
@@ -23,15 +23,15 @@ Os Modelos de fragmento de conteúdo definem a estrutura dos dados e do conteúd
 
 Um arquiteto de informações executaria essas tarefas apenas esporadicamente, à medida que novos modelos se tornassem necessários. Para os propósitos deste guia de introdução, você está criando apenas um modelo.
 
-1. Faça logon no AEM e, no menu principal, selecione **Ferramentas -> Ativos -> Modelos de fragmento de conteúdo**.
-1. Toque ou clique na pasta que foi criada com sua configuração.
+1. Faça logon no AEM e, no menu principal, selecione **Ferramentas > Ativos > Modelos de fragmento de conteúdo**.
+1. Clique na pasta que foi criada com sua configuração.
 
    ![A pasta de modelos](assets/models-folder.png)
-1. Toque ou clique em **Criar**.
+1. Clique em **Criar**.
 1. Forneça um **Título do modelo**, **Tags**, e **Descrição**. Também é possível marcar/desmarcar a opção **Ativar modelo** para controlar se o modelo é habilitado imediatamente após a criação.
 
    ![Criar um modelo](assets/models-create.png)
-1. Na janela de confirmação, toque ou clique em **Abrir** para configurar o modelo.
+1. Na janela de confirmação, clique em **Abertura** para configurar seu modelo.
 
    ![Janela de confirmação](assets/models-confirmation.png)
 1. Usando o **Editor de modelos de fragmentos de conteúdo**, crie o modelo de fragmento de conteúdo arrastando e soltando campos da coluna **Tipos de dados**.
@@ -41,14 +41,14 @@ Um arquiteto de informações executaria essas tarefas apenas esporadicamente, �
 1. Depois de colocar um campo, você deve configurar suas propriedades. O editor alterna automaticamente para a variável **Propriedades** para o campo adicionado, onde é possível fornecer os campos obrigatórios.
 
    ![Configurar propriedades](assets/models-configure-properties.png)
-1. Quando terminar de criar o modelo, toque ou clique em **Salvar**.
+1. Quando terminar de criar o modelo, clique em **Salvar**.
 
 1. O modo do modelo recém-criado depende da opção **Habilitar modelo** ter sido selecionada ao criar o modelo:
    * selecionado - o novo modelo já está **Ativado**
    * não selecionada - o novo modelo será criado em modo de **Rascunho**
 
 1. Se ainda não estiver, o modelo deve ser **habilitado** para ser usado.
-   1. Selecione o modelo criado e toque ou clique **Ativar**.
+   1. Selecione o modelo criado e clique em **Ativar**.
 
       ![Habilitação do modelo](assets/models-enable.png)
    1. Confirme a habilitação do modelo tocando ou clicando em **Habilitar** na caixa de diálogo de confirmação.

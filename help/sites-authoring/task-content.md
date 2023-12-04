@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 exl-id: a0719745-8d67-44bc-92ba-9ab07f31f8d2
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '586'
 ht-degree: 41%
 
 ---
@@ -52,7 +52,7 @@ Clique no botão de reticências no canto inferior direito do bloco tarefas para
 
 #### Detalhes da tarefa {#task-details}
 
-Para obter mais informações sobre uma tarefa específica, na caixa de entrada, toque ou clique na tarefa para selecioná-la e, em seguida, toque ou clique **Abertura** na barra de ferramentas.
+Para obter mais informações sobre uma tarefa específica, na caixa de entrada, clique na tarefa para selecioná-la e clique em **Abertura** na barra de ferramentas.
 
 ![Detalhes da tarefa](assets/project-task-detail.png)
 
@@ -70,12 +70,12 @@ Para obter mais informações sobre uma tarefa específica, na caixa de entrada,
 Para adicionar uma tarefa:
 
 1. No projeto, localize o **Tarefas** bloco
-1. Toque ou clique na divisa para baixo na parte superior direita do bloco e selecione **Criar tarefa**.
+1. Clique na divisa para baixo na parte superior direita do bloco e selecione **Criar tarefa**.
 1. No **Adicionar tarefa** , forneça os detalhes da tarefa, como prioridade, destinatário e data de vencimento.
 
    ![Adicionar uma tarefa](assets/project-add-task.png)
 
-1. Toque ou clique **Enviar**.
+1. Clique em **Enviar**.
 
 ## Trabalhando com tarefas na caixa de entrada {#working-with-tasks-in-the-inbox}
 

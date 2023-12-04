@@ -4,10 +4,10 @@ description: O teste Dia difícil simula a carga diária de cerca de 1000 autore
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1822'
-ht-degree: 2%
+source-wordcount: '1824'
+ht-degree: 1%
 
 ---
 
@@ -70,7 +70,7 @@ Na tabela abaixo, você pode encontrar os parâmetros de ajuda relevantes.
    <td><strong>Exemplo</strong></td>
   </tr>
   <tr>
-   <td>--ajuda</td>
+   <td>— help</td>
    <td>Imprime informações globais, por exemplo: as ações disponíveis, conjuntos predefinidos, modos de execução e parâmetros globais.</td>
    <td> </td>
   </tr>
@@ -238,7 +238,7 @@ tests:
   - add : CreatePageTreeTest
 ```
 
-Os testes existentes em um determinado conjunto também podem ser reconfigurados usando o `config`* *parâmetro. Você também deve especificar o nome do conjunto e o nome real do teste (não o nome da Classe de Teste). Você pode encontrar o nome do teste na variável `name` propriedade da classe de teste. Para obter mais detalhes sobre como encontrar propriedades de teste, leia a [Alterando propriedades de teste](/help/sites-developing/tough-day.md#changing-the-test-properties) seção.
+Os testes existentes em um determinado conjunto também podem ser reconfigurados usando o `config`* *parâmetro. Especifique também o nome do conjunto e o nome real do teste (não o nome da Classe de Teste). Você pode encontrar o nome do teste na variável `name` propriedade da classe de teste. Para obter mais detalhes sobre como encontrar propriedades de teste, leia a [Alterando propriedades de teste](/help/sites-developing/tough-day.md#changing-the-test-properties) seção.
 
 No exemplo abaixo, o título de ativo padrão para o `CreatePageTreeTest` (nomeado como `UploadAsset`) foi alterado para &quot;NewAsset&quot;.
 
@@ -260,7 +260,7 @@ tests:
       title : NewAsset
 ```
 
-Além disso, também é possível remover testes de conjuntos ou editores predefinidos da configuração padrão usando o `exclude` parâmetro. Você também deve especificar o nome do conjunto e o nome real do teste (não o Test C `lass` nome). Você pode encontrar o nome do teste na variável `name` propriedade da classe de teste. No exemplo abaixo, a variável `CreatePageTreeTest` (nomeado como `UploadAsset`) é removido do conjunto de dias úteis.
+Além disso, também é possível remover testes de conjuntos ou editores predefinidos da configuração padrão usando o `exclude` parâmetro. Especifique também o nome do conjunto e o nome real do teste (não o Test C `lass` nome). Você pode encontrar o nome do teste na variável `name` propriedade da classe de teste. No exemplo abaixo, a variável `CreatePageTreeTest` (nomeado como `UploadAsset`) é removido do conjunto de dias úteis.
 
 Usando parâmetros de linha de comando:
 
@@ -353,14 +353,14 @@ Atualmente, o Dia difícil 2 relata nove métricas de teste que você pode avali
 | Carimbo de data e hora | Carimbo de data e hora da última execução de teste concluída. |
 | Aprovado | Número de execuções com êxito. |
 | Falhou | Número de execuções com falha. |
-| Mín&#42; | Menor duração de execução de teste. |
-| Max&#42; | Maior duração de execução de teste. |
+| Min&#42; | Menor duração de execução de teste. |
+| Máx&#42; | Maior duração de execução de teste. |
 | Mediana&#42; | Duração média computada de todas as execuções de teste. |
 | Média&#42; | Duração média computada de todas as execuções de teste. |
 | StdDev&#42; | O desvio padrão. |
 | 90p&#42; | 90 por cento. |
 | 99p&#42; | 99 por cento. |
-| 99.9p&#42; | 99,9 por cento. |
+| 99,9p&#42; | 99,9 por cento. |
 | Taxa de transferência real&#42; | Número de execuções dividido pelo tempo de execução decorrido. |
 
 Essas métricas são escritas com a ajuda de editores que podem ser adicionadas com o `add` (de forma semelhante à adição de testes). Atualmente, há duas opções:

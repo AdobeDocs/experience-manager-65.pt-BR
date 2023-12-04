@@ -8,10 +8,10 @@ content-type: reference
 pagetitle: Configuring Email
 role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 3%
+source-wordcount: '796'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +41,7 @@ O serviço de email padrão é necessário para notificações e assinaturas.
 
 Isso se baseia na documentação do [Configuração da notificação por e-mail](../../help/sites-administering/notification.md), mas com uma diferença de que o campo `"From" address` é *não* necessário e deve ser deixado em branco.
 
-Por exemplo (preenchido com valores somente para fins ilustrativos),:
+Por exemplo, (preenchido com valores somente para fins ilustrativos):
 
 ![email-config](assets/email-config.png)
 
@@ -187,7 +187,7 @@ Para que o email seja trazido para o repositório, é necessário configurar um 
   *(Obrigatório)* Defina como `/content/usergenerated/mailFolder/postEmails`
 ao navegar até o `postEmails`e selecione **OK**.
 
-* **[!UICONTROL Ativar o intervalo em segundo]**
+* **[!UICONTROL Intervalo de atualização em segundos]**
 
   *(Opcional)* O servidor de email configurado para o serviço de email padrão pode ter requisitos relacionados ao valor do intervalo de atualização. Por exemplo, o Gmail pode exigir um intervalo de `300`.
 

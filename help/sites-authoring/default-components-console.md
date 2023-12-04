@@ -2,10 +2,10 @@
 title: Console de componentes
 description: O console Componentes permite navegar em todos os componentes definidos para a instância e visualizar as principais informações de cada componente.
 exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 51%
+ht-degree: 43%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 51%
 
 O console Componentes permite navegar em todos os componentes definidos para a instância e visualizar as principais informações de cada componente.
 
-Ele pode ser acessado em **Ferramentas ->** **Geral ->** **Componentes**. No console, as visualizações em Cartão e Lista estão disponíveis. Como não há estrutura em árvore para componentes, a exibição em coluna não está disponível.
+Ele pode ser acessado de **Ferramentas >** **Geral >** **Componentes**. No console, as visualizações em Cartão e Lista estão disponíveis. Como não há estrutura em árvore para componentes, a exibição em coluna não está disponível.
 
 ![screen-shot_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
 
@@ -29,7 +29,7 @@ Com o ícone **Apenas conteúdo** (na parte superior esquerda), você pode abrir
 
 ### Detalhes do componente {#component-details}
 
-Para exibir detalhes sobre um componente específico, toque/clique no recurso desejado. Três guias fornecem:
+Para exibir detalhes sobre um componente específico, clique no recurso desejado. Três guias fornecem:
 
 * **Propriedades**
 
@@ -64,6 +64,6 @@ Para exibir detalhes sobre um componente específico, toque/clique no recurso de
 
 * **Documentação**
 
-  Se o desenvolvedor tiver fornecido [documentação do componente](/help/sites-developing/developing-components.md#documenting-your-component), ele aparecerá no **Documentação** guia. Se não houver documentação disponível, a guia **Documentação** não será exibida.
+  Se o desenvolvedor tiver fornecido [documentação do componente](/help/sites-developing/developing-components.md#documenting-your-component), ele aparecerá no **Documentação** guia. Se não houver documentação disponível, a variável **Documentação** não será exibida.
 
   ![Documentação](assets/chlimage_1-171.png)

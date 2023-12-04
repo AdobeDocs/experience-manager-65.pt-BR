@@ -2,9 +2,9 @@
 title: Perguntas frequentes sobre AEM
 description: Use essas Perguntas frequentes para entender, configurar e solucionar problemas ou fluxos de trabalho comuns no AEM.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1011'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Se o usuário, que faz upload dos arquivos de filme, não tiver permissões de e
 
 #### Quais são as configurações padrão para configurações OOTB ao criar Cópia de idioma? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
-Ao criar uma cópia de idioma por meio da interface para toque (**Referências** -> **Atualizar cópia de idioma**), uma nova pasta do DAM será criada no novo idioma e os ativos serão referenciados a partir daí.
+Ao criar uma cópia de idioma por meio da interface para toque (**Referências** > **Atualizar cópia de idioma**), uma nova pasta do DAM será criada no novo idioma e os ativos serão referenciados a partir daí.
 
 Essa é a configuração padrão para configurações OOTB. Você pode definir **Traduzir ativos da página** = **Não traduzir** em Configurações de tradução.
 Para AEM 6.4, **Ferramentas** > **Cloud Service** > **Serviços de tradução em nuvem**.

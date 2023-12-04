@@ -12,10 +12,10 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2694'
-ht-degree: 36%
+source-wordcount: '2672'
+ht-degree: 26%
 
 ---
 
@@ -52,7 +52,7 @@ Cada configuração de implantação usa um acionador de implantação que ocasi
 
 ### Configurações de implantação instaladas {#installed-rollout-configurations}
 
-A tabela a seguir lista as configurações de implantação instaladas com AEM. A tabela inclui as ações de acionador e de sincronização de cada configuração de implementação. Se as ações de configuração de implantação instaladas não atenderem aos seus requisitos, você poderá [criar uma configuração de implantação](#creating-a-rollout-configuration).
+A tabela a seguir lista as configurações de implantação instaladas com AEM. A tabela inclui as ações de acionador e de sincronização de cada configuração de implantação. Se as ações de configuração de implantação instaladas não atenderem aos seus requisitos, você poderá [criar uma configuração de implantação](#creating-a-rollout-configuration).
 
 <table>
  <tbody>
@@ -118,7 +118,7 @@ A tabela a seguir lista as configurações de implantação instaladas com AEM. 
   </tr>
   <tr>
    <td>Configuração de implantação do catálogo herdado (5.6.0)</td>
-   <td>Obsoleto.  Use a API Catalog Generator em vez do MSM para implementações de catálogos.</td>
+   <td>Obsoleto. Use o Catalog Generator em vez do MSM para implantações de catálogos.</td>
    <td>Na implantação</td>
    <td>editProperties</td>
   </tr>
@@ -138,17 +138,17 @@ A tabela a seguir lista as ações de sincronização instaladas com o AEM. Se a
   </tr>
   <tr>
    <td>contentCopy</td>
-   <td>Quando os nós da origem não existem na live copy, o copia os nós para a live copy. <a href="#excluding-properties-and-node-types-from-synchronization">Configure o serviço de Ação de cópia de conteúdo MSM CQ</a> para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. <br /> </td>
+   <td>Quando os nós da origem não existem na live copy, o copia os nós para a live copy. <a href="#excluding-properties-and-node-types-from-synchronization">Configurar o serviço de ação de cópia de conteúdo MSM CQ</a> para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. <br /> </td>
    <td> </td>
   </tr>
   <tr>
    <td>contentDelete</td>
-   <td><p>Exclui nós da live copy que não existem na origem. <a href="#excluding-properties-and-node-types-from-synchronization">Configure o serviço de Ação de exclusão de conteúdo MSM CQ</a> para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. </p> </td>
+   <td><p>Exclui nós da live copy que não existem na origem. <a href="#excluding-properties-and-node-types-from-synchronization">Configurar o serviço de ação de exclusão de conteúdo MSM CQ</a> para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. </p> </td>
    <td> </td>
   </tr>
   <tr>
    <td>contentUpdate</td>
-   <td>Atualiza o conteúdo da live copy com as alterações da origem. <a href="#excluding-properties-and-node-types-from-synchronization">Configure o serviço de Ação de atualização de conteúdo MSM CQ</a> para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. <br /> </td>
+   <td>Atualiza o conteúdo da live copy com as alterações da origem. <a href="#excluding-properties-and-node-types-from-synchronization">Configurar o serviço de ação de atualização de conteúdo MSM CQ</a> para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. <br /> </td>
    <td> </td>
   </tr>
   <tr>
@@ -156,7 +156,7 @@ A tabela a seguir lista as ações de sincronização instaladas com o AEM. Se a
    <td><p>Edita propriedades da live copy. A propriedade editMap determina quais propriedades são editadas e seus valores. O valor da propriedade editMap deve usar o seguinte formato:</p> <p><code>[property_name_1]#[current_value]#</code>[new_value],<br /> <code>[property_name_2]#[current_value]#</code>[new_value],<br /> ... ,<br /> <code>[property_name_n]#[current_value]#</code>[novo_valor]</p> <p>A variável <code>current_value</code> e <code>new_value</code> itens são expressões regulares. <br /> </p> <p>Por exemplo, considere o seguinte valor para editMap:</p> <p><code>sling:resourceType#/</code>(contentpage|homepage)#/<br /> mobilecontentpage,<br /> cq:template#/contentpage#/mobilecontentpage</p> <p>Esse valor edita as propriedades dos nós de live copy da seguinte maneira:</p>
     <ul>
      <li>A variável <code>sling:resourceType</code> propriedades que estão definidas como <code>contentpage</code> ou para <code>homepage</code> estão definidos como <code>mobilecontentpage.</code></li>
-     <li>As propriedades <code>cq:template</code> definidas como <code>contentpage</code> são definidas como <code>mobilecontentpage.</code></li>
+     <li>A variável <code>cq:template</code> propriedades definidas como <code>contentpage</code> estão definidos como <code>mobilecontentpage.</code></li>
     </ul> </td>
    <td><p> </p> <p>editMap: (String) identifica a propriedade, o valor atual e o novo valor. Consulte a Descrição para obter informações.<br /> </p> </td>
   </tr>
@@ -172,7 +172,7 @@ A tabela a seguir lista as ações de sincronização instaladas com o AEM. Se a
   </tr>
   <tr>
    <td>referencesUpdate</td>
-   <td><p>Na live copy, essa ação de sincronização atualiza referências como links.<br /> Ela procura caminhos nas páginas de live copy que apontam para um recurso dentro do blueprint. Quando encontrado, ele atualiza o caminho para apontar para o recurso relacionado dentro da live copy (em vez do blueprint). As referências que têm destinos fora do blueprint não são alteradas.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configure o serviço de Ação de atualização de referências MSM CQ</a> para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. </p> </td>
+   <td><p>Na live copy, essa ação de sincronização atualiza referências como links.<br /> Ela procura caminhos nas páginas de live copy que apontam para um recurso dentro do blueprint. Quando encontrado, ele atualiza o caminho para apontar para o recurso relacionado dentro da live copy (em vez do blueprint). As referências que têm destinos fora do blueprint não são alteradas.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configurar o serviço de Ação de atualização de referências MSM CQ</a> para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. </p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -226,7 +226,7 @@ A tabela a seguir lista as ações de sincronização instaladas com o AEM. Se a
   </tr>
   <tr>
    <td>AçãoDeMovimentaçãoDePágina</td>
-   <td><p>A PageMoveAction se aplica quando uma página foi movida no blueprint.</p> <p>A ação copia, em vez de mover, a página da Live Copy (relacionada) do local anterior à movimentação para o local posterior.</p> <p>PageMoveAction não altera a página da Live Copy no local antes de mover. Portanto, para configurações de implantação consecutivas, ela tem o status de um LiveRelationship sem blueprint.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configure o serviço de Ação de movimentação de página MSM CQ</a> para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. </p> <p>Essa ação deve ser a única ação de sincronização incluída em uma configuração de implementação.</p> </td>
+   <td><p>A PageMoveAction se aplica quando uma página foi movida no blueprint.</p> <p>A ação copia, em vez de mover, a página da Live Copy (relacionada) do local anterior à movimentação para o local posterior.</p> <p>PageMoveAction não altera a página da Live Copy no local antes de mover. Portanto, para configurações de implantação consecutivas, ela tem o status de um LiveRelationship sem blueprint.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configurar o serviço de ação de movimentação de página MSM CQ</a> para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. </p> <p>Essa ação deve ser a única ação de sincronização incluída em uma configuração de implementação.</p> </td>
    <td><p>prop_referenceUpdate: (booleano) defina como verdadeiro para atualizar referências. O padrão é verdadeiro.</p> <p> </p> </td>
   </tr>
   <tr>
@@ -291,7 +291,7 @@ A tabela a seguir descreve as propriedades que você pode configurar:
   </tr>
   <tr>
    <td><p>Nodetypes Excluídos</p> <p>cq.wcm.msm.action.excludednodetypes</p> </td>
-   <td>Uma expressão regular que corresponde aos nomes dos tipos de nó que serão excluídos da ação de sincronização.</td>
+   <td>Uma expressão regular que corresponde aos tipos de nó que serão excluídos da ação de sincronização.</td>
   </tr>
   <tr>
    <td><p>Itens de parágrafo excluídos</p> <p>cq.wcm.msm.action.excludedparagraphitems</p> </td>
@@ -322,7 +322,7 @@ Várias propriedades e tipos de nó são excluídos por padrão. Eles são defin
 
 Por padrão, as propriedades que correspondem às seguintes expressões regulares são excluídas (ou seja, não são atualizadas) na implantação:
 
-![Ação de atualização de conteúdo do MSM CQ](assets/chlimage_1.png)
+![Ação de atualização de conteúdo MSM CQ](assets/chlimage_1.png)
 
 É possível alterar as expressões definindo a lista de exclusões conforme necessário.
 
@@ -394,7 +394,7 @@ Você também pode definir as configurações de implantação para uma página 
 
    ![Configurações de implantação selecionadas](assets/chlimage_1-2.png)
 
-1. Clique ou toque em **Salvar**.
+1. Clique em **Salvar**.
 
 ### Definir a configuração de implantação de uma página do blueprint {#setting-the-rollout-configuration-for-a-blueprint-page}
 
@@ -417,7 +417,7 @@ o PID do serviço é `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
 Configure o serviço usando a variável [Console da Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou um [nó do repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 
-* No console da web, o nome da propriedade a ser configurada é Configuração de implantação padrão.
+* No console da Web, o nome da propriedade a ser configurada é Configuração de implantação padrão.
 * Ao usar um nó de repositório, o nome da propriedade a ser configurada é `liverelationshipmgr.relationsconfig.default`.
 
 Defina esse valor de propriedade como o caminho da configuração de implementação a ser usada como padrão do sistema. O valor padrão é `/libs/msm/wcm/rolloutconfigs/default`, que é a **Configuração de implantação padrão**.

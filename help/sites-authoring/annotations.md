@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 40%
+source-wordcount: '632'
+ht-degree: 33%
 
 ---
 
@@ -65,15 +65,15 @@ O modo Anotar permite criar, editar, mover ou excluir anotações do seu conteú
 
    >[!NOTE]
    >
-   >Para sair do modo de Anotação, toque/clique no ícone Anotar (símbolo x) à direita da barra de ferramentas superior.
+   >Para sair do modo de Anotação, clique no ícone Anotar (símbolo x) à direita da barra de ferramentas superior.
 
-1. Clique/toque no ícone Adicionar anotação (símbolo de mais à esquerda da barra de ferramentas) para começar a adicionar as anotações.
+1. Clique no ícone Adicionar anotação (símbolo de mais à esquerda da barra de ferramentas) para começar a adicionar anotações.
 
    >[!NOTE]
    >
-   >Para parar de adicionar anotações (e voltar à exibição), toque/clique no ícone Cancelar (símbolo x em um círculo branco) à esquerda da barra de ferramentas superior.
+   >Para interromper a adição de anotações (e voltar à exibição), clique no ícone Cancelar (símbolo x em um círculo branco) à esquerda da barra de ferramentas superior.
 
-1. Clique/toque no componente desejado (os componentes que podem ser anotados serão destacados com uma borda azul) para adicionar a anotação e abrir a caixa de diálogo:
+1. Clique no componente desejado (os componentes que podem ser anotados serão destacados com uma borda azul) para adicionar a anotação e abrir a caixa de diálogo:
 
    ![screen_shot_2018-03-22at110606](assets/screen_shot_2018-03-22at110606.png)
 
@@ -84,7 +84,7 @@ O modo Anotar permite criar, editar, mover ou excluir anotações do seu conteú
 
      O cursor se transformará em um fio cruzado ao criar um rascunho. Você pode desenhar várias linhas distintas. A linha de rascunho reflete a cor da anotação e pode ser uma seta, círculo ou forma oval.
 
-     ![Croqui](do-not-localize/screen_shot_2018-03-22at110640.png)
+     ![Sketch](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * Escolher/alterar a cor:
 
@@ -100,17 +100,17 @@ O modo Anotar permite criar, editar, mover ou excluir anotações do seu conteú
 
 1. Depois que terminar de editar uma anotação específica, você pode:
 
-   * Clicar/tocar em um marcador de texto para abrir a anotação. Depois de aberta, você pode exibir o texto completo, fazer alterações ou excluir a anotação.
+   * Clique em um marcador de texto para abrir a anotação. Depois de aberta, você pode exibir o texto completo, fazer alterações ou excluir a anotação.
 
       * Os rascunhos não podem ser excluídos independentemente da anotação.
 
    * Reposicionar o marcador de texto.
-   * Clicar/tocar em uma linha de rascunho para selecionar esse rascunho e arrastá-lo para a posição desejada.
+   * Clique em uma linha de rascunho para selecionar esse rascunho e arrastá-lo para a posição desejada.
    * Mover ou copiar um componente
 
       * As anotações relacionadas e seus rascunhos também serão movidos ou copiados e sua posição em relação ao parágrafo permanecerá a mesma.
 
-1. Para sair do modo Anotação e voltar ao modo usado anteriormente, toque/clique no ícone Anotar (símbolo x) à direita da barra de ferramentas superior.
+1. Para sair do modo Anotação e voltar ao modo usado anteriormente, clique no ícone Anotar (símbolo x) à direita da barra de ferramentas superior.
 
 >[!NOTE]
 >

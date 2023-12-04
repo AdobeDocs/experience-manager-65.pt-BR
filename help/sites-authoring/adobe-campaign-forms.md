@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: d53ef3e2-14ca-4444-b563-be67be15c040
 exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1281'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Esta seção só detalha links específicos para o Adobe Campaign. Para obter ma
    * **Adobe Campaign: cancelar a assinatura dos serviços**: permite cancelar as subscrições de um recipient no Adobe Campaign.
 
 1. Você deve ter um **Chave primária criptografada** em cada formulário. Esse componente define qual parâmetro de URL é usado para aceitar a chave primária criptografada de um perfil do Adobe Campaign. Em Componentes, selecione Adobe Campaign para que somente os componentes fiquem visíveis.
-1. Arraste o componente **Chave primária criptografada** ao formulário (em qualquer lugar) e clique ou toque no **Configuração** ícone. No **Adobe Campaign** especifique qualquer nome para o parâmetro de URL. Clique ou toque na marca de seleção para salvar as alterações.
+1. Arraste o componente **Chave primária criptografada** ao formulário (em qualquer lugar) e clique no link **Configuração** ícone. No **Adobe Campaign** especifique qualquer nome para o parâmetro de URL. Clique na marca de seleção para salvar as alterações.
 
    Os links gerados para este formulário precisam usar este parâmetro de URL e atribuir a ele a chave primária criptografada de um perfil do Adobe Campaign. A chave primária criptografada deve ser corretamente codificada no URL (porcentagem).
 

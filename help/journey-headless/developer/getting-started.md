@@ -2,10 +2,10 @@
 title: Introdução ao AEM Headless
 description: Nesta parte da Jornada do desenvolvedor headless do AEM, saiba mais sobre pré-requisitos do AEM headless.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3032'
-ht-degree: 92%
+source-wordcount: '2998'
+ht-degree: 91%
 
 ---
 
@@ -78,7 +78,7 @@ Fragmentos de conteúdo contêm conteúdo estruturado e podem ser entregues no f
 
 Para modificar o conteúdo de forma headless, o AEM oferece duas APIs robustas.
 
-* A API GraphQL permite criar solicitações para acessar e fornecer Fragmentos de conteúdo.
+* A API do GraphQL permite criar solicitações para acessar e entregar Fragmentos de conteúdo.
 * A API REST do Assets permite criar e modificar fragmentos de conteúdo (e outros ativos).
 
 Você aprenderá sobre essas APIs e como usá-las em uma parte posterior da jornada headless do AEM. Ou consulte a [recursos adicionais](#additional-resources) abaixo para obter a documentação adicional.
@@ -240,7 +240,7 @@ Para uma [implementação headless típica usando o AEM,](#level-1) o desenvolve
 
 Para que qualquer projeto seja um sucesso, o desempenho deve ser considerado antes que qualquer conteúdo seja criado.
 
-Você deve entender suas expectativas de usuários/visitantes e projetar para isso. Defina objetivos de nível de serviço (SLOs) e os meça para entender se você atende às expectativas de seus usuários.
+Compreenda suas expectativas de usuários/visitantes e o design para eles. Defina objetivos de nível de serviço (SLOs) e os meça para entender se você atende às expectativas de seus usuários.
 
 #### Padrões de tráfego {#traffic-patterns}
 

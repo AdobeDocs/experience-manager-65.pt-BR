@@ -1,5 +1,5 @@
 ---
-title: Use o Connected Assets para compartilhar ativos do DAM no [!DNL Sites]
+title: Usar ativos conectados para compartilhar ativos DAM no [!DNL Sites]
 description: Usar ativos disponíveis remotamente [!DNL Adobe Experience Manager Assets] implantação ao criar suas páginas da Web em outro [!DNL Adobe Experience Manager Sites] implantação.
 contentOwner: AK
 mini-toc-levels: 2
@@ -7,14 +7,14 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3949'
-ht-degree: 17%
+source-wordcount: '3908'
+ht-degree: 15%
 
 ---
 
-# Use o Connected Assets para compartilhar ativos do DAM no [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
+# Usar ativos conectados para compartilhar ativos DAM no [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -103,7 +103,7 @@ Para configurar ativos conectados e locais [!DNL Sites] conectividade, siga esta
    1. A **[!UICONTROL Título]** da configuração.
    1. **[!UICONTROL URL do DAM remoto]** é o URL do [!DNL Assets] localização no formato `https://[assets_servername]:[port]`.
    1. Credenciais de um distribuidor do DAM (usuário técnico).
-   1. No **[!UICONTROL Ponto de montagem]** insira o local [!DNL Experience Manager] caminho onde [!DNL Experience Manager] O busca os ativos. Por exemplo, pasta `remoteassets`. Os ativos buscados no DAM são armazenados nesta pasta na [!DNL Sites] implantação.
+   1. No **[!UICONTROL Ponto de montagem]** insira o local [!DNL Experience Manager] caminho onde [!DNL Experience Manager] O busca os ativos. Por exemplo, `remoteassets` pasta. Os ativos buscados no DAM são armazenados nesta pasta na [!DNL Sites] implantação.
    1. **[!UICONTROL URL de sites locais]** é o local do [!DNL Sites] implantação. [!DNL Assets] A implantação do usa esse valor para manter referências aos ativos digitais buscados por este [!DNL Sites] implantação.
    1. Credenciais de [!DNL Sites] usuário técnico.
    1. O valor de **[!UICONTROL Limite binário original da otimização de transferência]** o campo especifica se os ativos originais (incluindo as representações) são transferidos de forma síncrona ou não. Ativos com tamanho de arquivo menor podem ser buscados prontamente, enquanto ativos com tamanho de arquivo relativamente maior são melhor sincronizados de forma assíncrona. O valor depende dos recursos da rede.
@@ -131,7 +131,7 @@ Para configurar ativos conectados e locais [!DNL Sites] conectividade, siga esta
 
    >[!NOTE]
    >
-   >Todas as representações disponíveis na implantação remota do são buscadas, quando os autores buscam um ativo. Se você quiser criar mais representações de um ativo buscado, pule esta etapa de configuração. A variável [!UICONTROL Ativo de atualização DAM] o fluxo de trabalho é acionado e cria mais representações. Essas representações estão disponíveis somente no local [!DNL Sites] e não na implantação remota do DAM.
+   >Todas as representações disponíveis na implantação remota são buscadas, quando os autores buscam um ativo. Se você quiser criar mais representações de um ativo buscado, pule esta etapa de configuração. A variável [!UICONTROL Ativo de atualização DAM] o fluxo de trabalho é acionado e cria mais representações. Essas representações estão disponíveis somente no local [!DNL Sites] e não na implantação remota do DAM.
 
 1. Adicione o [!DNL Sites] como uma origem permitida na configuração do CORS no [!DNL Assets] implantação. Para obter mais informações, consulte [compreender o CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html).
 
@@ -174,7 +174,7 @@ No modo remoto [!DNL Assets] implantação, em [!UICONTROL Modo de sincronizaç�
 
 1. Ativar [[!DNL Dynamic Media] suporte no Componente principal de imagem](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Esse recurso habilita o padrão [Componente de imagem](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html) para exibir [!DNL Dynamic Media] imagens quando [!DNL Dynamic Media] as imagens são usadas por autores em páginas da web no local [!DNL Sites] implantação.
 
-## Use ativos remotos {#use-remote-assets}
+## Usar ativos remotos {#use-remote-assets}
 
 Os autores do site usam o Localizador de conteúdo para se conectar à implantação do DAM. Os autores podem procurar, buscar e arrastar os ativos remotos em um componente. Para autenticar no DAM remoto, mantenha acessíveis as credenciais fornecidas pelo administrador (se houver).
 
@@ -319,7 +319,7 @@ Sim, após configurar o Connected Assets, você pode executar as operações atu
 
 ### Permissões e gerenciamento de ativos {#permissions-and-managing-assets}
 
-* Os ativos locais são cópias somente leitura. [!DNL Experience Manager]Os componentes do fazem edições não destrutivas nos ativos. Nenhuma outra edição é permitida.
+* Os ativos locais são cópias somente leitura. [!DNL Experience Manager] os componentes fazem edições não destrutivas nos ativos. Nenhuma outra edição é permitida.
 * Os ativos buscados localmente estão disponíveis apenas para fins de criação. Os fluxos de trabalho de atualização de ativos não podem ser aplicados e os metadados não podem ser editados.
 * Somente as imagens e os formatos de documento listados são compatíveis. [!DNL Content Fragments] e [!DNL Experience Fragments] não são compatíveis.
 * [!DNL Experience Manager] O não busca os esquemas de metadados. Isso significa que todos os metadados buscados podem não ser exibidos. Se o schema for atualizado separadamente no [!DNL Sites] implantação, todas as propriedades de metadados serão exibidas.
@@ -339,7 +339,7 @@ Sim, após configurar o Connected Assets, você pode executar as operações atu
 
 * Os usuários podem pesquisar ativos remotos e arrastá-los na página local durante a criação. Nenhuma outra funcionalidade é suportada.
 * A operação de busca expira após 5 segundos. Os autores podem ter problemas ao buscar ativos, digamos se houver problemas de rede. Os autores podem tentar novamente, arrastando o ativo remoto de [!UICONTROL Localizador de conteúdo] para [!UICONTROL Editor de páginas].
-* Edições simples que não são destrutivas e a edição compatível por meio do componente `Image` do podem ser realizadas nos ativos buscados. Os ativos são somente leitura.
+* Edições simples que não são destrutivas e a edição compatível por meio do `Image` componente, pode ser feito em ativos buscados. Os ativos são somente leitura.
 * O único método para buscar novamente o ativo é arrastá-lo em uma página. Não há suporte para API ou outros métodos para buscar novamente um ativo e atualizá-lo.
 * Se os ativos forem desativados do DAM, continuarão em uso em [!DNL Sites] páginas.
 * As entradas de referência remota de um ativo são buscadas de forma assíncrona. As referências e a contagem total não são em tempo real, e pode haver alguma diferença se um autor do Sites usar o ativo enquanto um usuário do DAM estiver visualizando a referência. Os usuários do DAM podem atualizar a página e tentar novamente em alguns minutos para obter a contagem total.

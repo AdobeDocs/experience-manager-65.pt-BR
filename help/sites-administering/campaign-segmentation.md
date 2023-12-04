@@ -7,10 +7,10 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1129'
-ht-degree: 13%
+source-wordcount: '1128'
+ht-degree: 7%
 
 ---
 
@@ -50,11 +50,11 @@ Os seguintes contêineres lógicos estão disponíveis prontamente e permitem co
  <tbody>
   <tr>
    <td> E Contêiner<br /> </td>
-   <td> O operador AND boolean.<br /> </td>
+   <td> O operador AND booleano.<br /> </td>
   </tr>
   <tr>
-   <td> Recipiente OR<br /> </td>
-   <td> O operador OR boolean.</td>
+   <td> Contêiner OR<br /> </td>
+   <td> O operador OR booleano.</td>
   </tr>
  </tbody>
 </table>
@@ -66,11 +66,11 @@ As seguintes características de segmento estão disponíveis prontas para uso; 
 <table>
  <tbody>
   <tr>
-   <td> Intervalo de IP<br /> </td>
+   <td> Intervalo IP<br /> </td>
    <td>Define um intervalo de endereços IP que o visitante pode ter.<br /> </td>
   </tr>
   <tr>
-   <td> Visita à página<br /> </td>
+   <td> Acessos à página<br /> </td>
    <td>Com que frequência a página foi solicitada. <br /> </td>
   </tr>
   <tr>
@@ -110,7 +110,7 @@ Quando a declaração inteira for avaliada como verdadeira, esse segmento será 
 
 >[!CAUTION]
 >
->O editor de segmentos não verifica se há referências circulares. Por exemplo, o segmento A faz referência a outro segmento B, que por sua vez faz referência ao segmento A. Você deve garantir que seus segmentos não contenham referências circulares.
+>O editor de segmentos não verifica se há referências circulares. Por exemplo, o segmento A faz referência a outro segmento B, que por sua vez faz referência ao segmento A. Verifique se seus segmentos não contêm referências circulares.
 
 >[!NOTE]
 >

@@ -7,10 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1831'
-ht-degree: 18%
+source-wordcount: '1829'
+ht-degree: 16%
 
 ---
 
@@ -104,7 +104,7 @@ Para criar um componente arrastando um dos tipos de ativos acima:
 
 1. Certifique-se de que a página está no modo de [**edição**](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes).
 1. Abra o [Localizador de conteúdo](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
-1. Arraste o ativo desejado para a posição desejada. O [placeholder do componente](#componentplaceholder) mostra onde o componente será posicionado.
+1. Arraste o ativo desejado para a posição desejada. A variável [espaço reservado do componente](#componentplaceholder) mostra onde o componente será posicionado.
 
    Um componente, apropriado para o tipo de ativo, será criado no local necessário; ele conterá o ativo selecionado.
 
@@ -301,4 +301,4 @@ Os campos de formulário que os componentes de formulário renderizam não devem
 
 >[!NOTE]
 >
->Permissões especiais são necessárias para desfazer e refazer as alterações nos arquivos e imagens. Além disso, o histórico de desfazer para alterações em arquivos e imagens dura pelo menos algumas horas. Além desse período, no entanto, a ação de desfazer as alterações não é garantida. Seu administrador pode fornecer permissões e alterar o tempo padrão de dez horas.
+>Permissões especiais são necessárias para desfazer e refazer alterações em arquivos e imagens. Além disso, o histórico de desfazer para alterações em arquivos e imagens dura pelo menos algumas horas. Além desse período, no entanto, a ação de desfazer as alterações não é garantida. Seu administrador pode fornecer permissões e alterar o tempo padrão de dez horas.

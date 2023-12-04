@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 30813c44-51ac-4e6e-8ee6-4e8baacb1ff9
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '528'
 ht-degree: 7%
 
 ---
@@ -34,10 +34,10 @@ O código do cliente identifica a conta de cliente do Adobe Target ao chamar o s
 
 O teste e o target [agente de replicação](/help/sites-deploying/replication.md) deve ser ativado na instância do autor. Observe que esse agente de replicação não estará ativado por padrão se você tiver usado o [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) modo de execução para instalação do AEM. Para obter mais informações sobre como proteger seu ambiente de produção, consulte [Lista de verificação de segurança](/help/sites-administering/security-checklist.md).
 
-1. Na página inicial do AEM, clique ou toque em **Ferramentas** > **Implantação** > **Replicação**.
-1. Clique ou toque **Agentes Sobre O Autor**.
-1. Clique ou toque no **Teste e Target (teste e target)** e, em seguida, clique ou toque em **Editar**.
-1. Selecione a opção Ativado e clique ou toque em **OK**.
+1. Na página inicial do AEM, clique em **Ferramentas** > **Implantação** > **Replicação**.
+1. Clique em **Agentes Sobre O Autor**.
+1. Clique em **Teste e Target (teste e target)** e, em seguida, clique em **Editar**.
+1. Selecione a opção Ativado e clique em **OK**.
 
    >[!NOTE]
    >
@@ -47,7 +47,7 @@ O teste e o target [agente de replicação](/help/sites-deploying/replication.md
 
 ## Protegendo o nó de configurações da atividade {#securing-the-activity-settings-node}
 
-Você deve proteger o nó de configurações de atividade **cq:ActivitySettings** na instância de publicação para que ele fique inacessível aos usuários normais. O nó de configurações de atividade só deve estar acessível ao serviço que lida com a sincronização de atividades com o Adobe Target.
+Proteja o nó de configurações de atividade **cq:ActivitySettings** na instância de publicação para que não possa ser acessado por usuários normais. O nó de configurações de atividade só deve estar acessível ao serviço que lida com a sincronização de atividades com o Adobe Target.
 
 A variável **cq:ActivitySettings** O nó está disponível no CRXDE lite em `/content/campaigns/*nameofbrand*`* *no nó activities jcr:content;* *por exemplo, `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Esse nó só é criado depois de direcionar um componente.
 

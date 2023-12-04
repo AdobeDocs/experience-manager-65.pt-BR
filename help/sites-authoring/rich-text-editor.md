@@ -1,11 +1,11 @@
 ---
 title: Uso do Editor de rich text para criar conteúdo
-description: Uso do Editor de rich text para criar conteúdo no Adobe Experience Manager 6.5.
+description: Uso do editor de rich text para criar conteúdo no Adobe Experience Manager 6.5.
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 46%
+source-wordcount: '264'
+ht-degree: 32%
 
 ---
 
@@ -19,11 +19,11 @@ O Editor de Rich Text (RTE) é um elemento básico fundamental para inserir cont
 
 ## Edição no local {#in-place-editing}
 
-Selecionar um componente baseado em texto com um único toque ou clique revelará a [barra de ferramentas de componentes](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) como com qualquer componente.
+Selecionar um componente baseado em texto com um único clique revelará a [barra de ferramentas do componente](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) como com qualquer componente.
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-Tocar/clicar novamente ou selecionar inicialmente o componente com um toque duplo/clique lento abre a edição no local, que tem sua própria barra de ferramentas. Aqui você pode editar o conteúdo e fazer alterações básicas na formatação.
+Tocar/clicar novamente ou selecionar inicialmente o componente com um clique duplo lento abre a edição no local, que tem sua própria barra de ferramentas. Aqui você pode editar o conteúdo e fazer alterações básicas na formatação.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 

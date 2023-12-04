@@ -5,10 +5,10 @@ topic-tags: site-features
 content-type: reference
 feature: Language Copy
 exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 27%
+source-wordcount: '669'
+ht-degree: 26%
 
 ---
 
@@ -20,7 +20,7 @@ Esta página apresenta melhorias e refinamentos incrementais nos recursos de ger
 
 Foram adicionadas opções para melhorar a produtividade, trabalhando com projetos de tradução, como promover e excluir automaticamente inicializações de tradução e agendar a execução recorrente de um projeto de tradução.
 
-1. No seu projeto de tradução, clique ou toque nas reticências na parte inferior da **Resumo da tradução** bloco.
+1. No seu projeto de tradução, clique nas reticências na parte inferior da **Resumo da tradução** bloco.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
@@ -40,7 +40,7 @@ Foram adicionadas opções para melhorar a produtividade, trabalhando com projet
 
 É possível configurar vários idiomas de destino em um projeto de tradução para reduzir o número total de projetos de tradução criados.
 
-1. No seu projeto de tradução, clique ou toque nos pontos na parte inferior da **Resumo da tradução** bloco.
+1. No seu projeto de tradução, clique nos pontos na parte inferior da **Resumo da tradução** bloco.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
@@ -110,11 +110,11 @@ Uma propriedade agora pode ser selecionada na exibição de lista dos sites que 
 
    ![screen_shot_2018-04-23at130646](assets/screen_shot_2018-04-23at130646.jpg)
 
-1. Clique ou toque **Configurações de exibição**.
+1. Clique em **Configurações de exibição**.
 
    ![screen_shot_2018-04-23at130844](assets/screen_shot_2018-04-23at130844.jpg)
 
-1. Marcar **Traduzido** caixa de seleção em **Tradução** e toque/clique **Atualizar**.
+1. Marcar **Traduzido** caixa de seleção em **Tradução** e clique em **Atualizar**.
 
    ![screen_shot_2018-04-23at130955](assets/screen_shot_2018-04-23at130955.jpg)
 

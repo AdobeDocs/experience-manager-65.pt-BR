@@ -7,10 +7,10 @@ role: User,Admin
 feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 hide: true
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3616'
-ht-degree: 9%
+source-wordcount: '3595'
+ht-degree: 8%
 
 ---
 
@@ -47,7 +47,7 @@ Para exibir uma lista de formulários ou modelos, em [!DNL Experience Manager] i
 
 | Modelos | | Descrição |
 |---|---|---|
-| [!UICONTROL default] | | O formulário básico de esquema de metadados para ativos. |
+| [!UICONTROL padrão] | | O formulário básico de esquema de metadados para ativos. |
 | | Os seguintes formulários secundários herdam as propriedades da [!UICONTROL padrão] formulário: | |
 | | <ul><li>[!UICONTROL dm_video]</li></ul> | Formulário de esquema para vídeos do Dynamic Media. |
 | | <ul><li>[!UICONTROL imagem]</li></ul> | Formulário de esquema para imagens com o tipo MIME, como `image/jpeg` e `image/png`. <br> A variável [!UICONTROL imagem] O formulário tem os seguintes modelos de formulário filho: <ul><li> [!UICONTROL jpeg]: formulário de esquema para ativos com subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: formulário do esquema para os ativos com TIFF de subtipo.</li></ul> |
@@ -92,18 +92,18 @@ A variável **[!UICONTROL Formulário de criação]** A guia lista itens de form
 | -------------------------------- | ----------------------------------------------------------------------------------- |
 | [!UICONTROL Cabeçalho da seção] | Adicione um cabeçalho de seção para obter uma lista de componentes comuns. |
 | [!UICONTROL Texto em linha única] | Adicione uma propriedade de texto de linha única. Ele é armazenado como uma string. |
-| [!UICONTROL Texto multivalor] | Adiciona uma propriedade de texto multivalor. Ele é armazenado como uma matriz de sequência. |
+| [!UICONTROL Texto multivalor] | Adicione uma propriedade de texto de vários valores. Ele é armazenado como uma matriz de sequência. |
 | [!UICONTROL Número] | Adiciona um componente de número. |
 | [!UICONTROL Data] | Adiciona um componente de data. |
 | [!UICONTROL Lista suspensa] | Adiciona uma lista suspensa. |
-| [!UICONTROL Tags padrão] | Adicionar uma tag. |
+| [!UICONTROL Tags padrão] | Adicione uma tag. |
 | [!UICONTROL Tags inteligentes] | Adicione para aumentar os recursos de pesquisa inserindo tags de metadados automaticamente. |
 | [!UICONTROL Campo oculto] | Adicione um campo oculto. Ele é enviado como um parâmetro POST quando o ativo é salvo. |
 | [!UICONTROL Ativo referenciado por] | Adicione este componente para visualizar a lista de ativos referenciados pelo ativo. |
-| [!UICONTROL Fazer referência ao ativo] | Adicionar para exibir uma lista de ativos que fazem referência ao ativo. |
+| [!UICONTROL Referência de ativo] | Adicionar para exibir uma lista de ativos que fazem referência ao ativo. |
 | [!UICONTROL Referências de produtos] | Adicionar para mostrar a lista de produtos vinculados ao ativo. |
 | [!UICONTROL Classificação do ativo] | Adicionar para exibir opções de classificação do ativo. |
-| [!UICONTROL Metadados do contexto] | Adicione para controlar a exibição de outras guias de metadados na página de propriedades dos ativos. |
+| [!UICONTROL Metadados contextuais] | Adicione para controlar a exibição de outras guias de metadados na página de propriedades dos ativos. |
 
 #### Editar o componente de metadados {#edit-the-metadata-component}
 

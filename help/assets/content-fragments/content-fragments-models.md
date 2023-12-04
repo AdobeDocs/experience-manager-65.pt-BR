@@ -4,10 +4,10 @@ description: Saiba como os modelos de fragmento de conteúdo servem como base pa
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
-source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2305'
-ht-degree: 67%
+source-wordcount: '2310'
+ht-degree: 66%
 
 ---
 
@@ -18,8 +18,8 @@ Os modelos de fragmento de conteúdo no AEM definem a estrutura do conteúdo par
 Para usar modelos de fragmento de conteúdo, é possível:
 
 1. [Ativar a funcionalidade de modelo de fragmento de conteúdo para sua instância](/help/assets/content-fragments/content-fragments-configuration-browser.md).
-1. [Criar](#creating-a-content-fragment-model) e [configurar](#defining-your-content-fragment-model) os modelos de fragmento de conteúdo.
-1. [Ativar os Modelos de fragmento de conteúdo](#enabling-disabling-a-content-fragment-model) para uso ao criar Fragmentos de conteúdo.
+1. [Criar](#creating-a-content-fragment-model), e [configurar](#defining-your-content-fragment-model), seus modelos de fragmento de conteúdo.
+1. [Ativar os modelos de fragmento de conteúdo](#enabling-disabling-a-content-fragment-model) para uso ao criar fragmentos de conteúdo.
 1. [Autorizar os modelos de fragmento de conteúdo nas pastas de ativos necessárias](#allowing-content-fragment-models-assets-folder) ao configurar as **Políticas**.
 
 ## Criação de um modelo de fragmento de conteúdo {#creating-a-content-fragment-model}
@@ -86,7 +86,7 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 
 1. **Para remover um campo**
 
-   Selecione o campo desejado e clique/toque no ícone da lixeira. Você receberá uma solicitação para confirmar a ação.
+   Selecione o campo desejado e clique no ícone da lixeira. Você receberá uma solicitação para confirmar a ação.
 
    ![remover](assets/cfm-models-06.png)
 

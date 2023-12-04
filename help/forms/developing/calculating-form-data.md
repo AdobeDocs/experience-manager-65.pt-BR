@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1876'
-ht-degree: 1%
+source-wordcount: '1858'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 O serviço Forms pode calcular os valores que um usuário insere em um formulário e exibir os resultados. Para calcular dados de formulário, você deve executar duas tarefas. Primeiro, crie um script de design de formulário que calcula os dados de formulário. Um design de formulário é compatível com três tipos de scripts. Um tipo de script é executado no cliente, outro é executado no servidor e o terceiro é executado no servidor e no cliente. O tipo de script discutido neste tópico é executado no servidor. Os cálculos do lado do servidor são compatíveis com as transformações de HTML, PDF e Guia de forma (obsoleto).
 
-Como parte do processo de design do formulário, você pode usar cálculos e scripts para fornecer uma experiência do usuário mais avançada. Cálculos e scripts podem ser adicionados à maioria dos campos e objetos de formulário. Você deve criar um script de design de formulário para executar operações de cálculo nos dados que um usuário insere em um formulário interativo.
+Como parte do processo de design do formulário, você pode usar cálculos e scripts para fornecer uma experiência do usuário mais avançada. Cálculos e scripts podem ser adicionados à maioria dos campos e objetos de formulário. Crie um script de design de formulário para executar operações de cálculo nos dados que um usuário insere em um formulário interativo.
 
 O usuário insere valores no formulário e clica no botão Calculate para exibir os resultados. O processo a seguir descreve um aplicativo de exemplo que permite ao usuário calcular dados:
 
@@ -86,7 +86,7 @@ Neste design de formulário, o botão Calcular é um botão de comando e o scrip
 
 >[!NOTE]
 >
->Para obter informações sobre como criar um script de design de formulário, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_pt).
+>Para obter informações sobre como criar um script de design de formulário, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 >[!NOTE]
 >

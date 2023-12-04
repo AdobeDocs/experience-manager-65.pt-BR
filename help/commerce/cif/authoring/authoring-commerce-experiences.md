@@ -2,10 +2,10 @@
 title: Criação de experiências de comércio
 description: O complemento CIF estende a criação do Adobe Experience Manager com recursos específicos de comércio.
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '713'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -85,7 +85,7 @@ Se o Editor universal reconhecer produtos 1:n em uma página, o painel lateral m
 
 O modo Timewarp no editor permite que os autores visualizem e naveguem em uma experiência de AEM com dados de catálogo de produtos preparados com base na data do Timewarp.
 
-![Timewarp  ](/help/commerce/cif/assets/authoring/timewarp.png)
+![Timewarp](/help/commerce/cif/assets/authoring/timewarp.png)
 
 Os componentes mostrarão um indicador visual se a data usada for preparada.
 

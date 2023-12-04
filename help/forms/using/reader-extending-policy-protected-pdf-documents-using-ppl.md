@@ -11,16 +11,16 @@ topic-tags: document_services
 discoiquuid: 83ca522e-d16e-4196-9aa7-84f85de8dee2
 feature: Document Security
 exl-id: fe5d83e8-5e36-4146-a20a-dab2213055e2
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '783'
 ht-degree: 0%
 
 ---
 
 # Reader estendendo documentos PDF protegidos por política usando a Biblioteca de proteção portátil {#reader-extending-policy-protected-pdf-documents-using-portable-protection-library}
 
-Você deve estar familiarizado com os conceitos de segurança de documentos, extensão do leitor e linguagem de programação Java para ler e estender os documentos PDF protegidos por política de segurança de documentos.
+Familiarize-se com os conceitos de segurança de documentos, extensão do leitor e linguagem de programação Java para ler e estender os documentos de PDF protegidos por política de segurança de documentos.
 
 Você pode usar a segurança de documentos para restringir o acesso de documentos específicos do PDF somente a usuários autorizados. Você também pode determinar como um destinatário pode usar um documento protegido. Por exemplo, você pode especificar se os destinatários podem imprimir, copiar ou editar o texto de um documento protegido por política de segurança de documentos. Para saber mais sobre a segurança de documentos, consulte [sobre a segurança de documentos](/help/forms/using/admin-help/document-security.md).
 

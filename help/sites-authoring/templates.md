@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4834'
-ht-degree: 77%
+source-wordcount: '4825'
+ht-degree: 71%
 
 ---
 
@@ -51,7 +51,7 @@ Para obter informações detalhadas sobre como os modelos editáveis funcionam e
 
 É importante considerar os seguintes pontos antes de iniciar:
 
-* A criação de um modelo requer colaboração. Por esse motivo, a [Função](#roles) é indicada para cada tarefa.
+* A criação de um modelo requer colaboração. Por esta razão, a [Função](#roles) é indicado para cada tarefa.
 
 * Dependendo de como sua instância está configurada, o AEM agora fornece [dois tipos básicos de modelo](/help/sites-authoring/templates.md#editable-and-static-templates). Isso não afeta a maneira como você [usar um modelo para criar uma página](#using-a-template-to-create-a-page), mas afeta o tipo de modelo que você pode criar e como uma página se relaciona com seu modelo.
 
@@ -151,7 +151,7 @@ Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos esp
 
 ### Criação de um novo modelo - Autor do modelo {#creating-a-new-template-template-author}
 
-1. Abra o **console Modelos** (em **Ferramentas ->** **Geral**) para navegar até a pasta necessária.
+1. Abra o **Console de modelos** (via **Ferramentas >** **Geral**) e navegue até a pasta desejada.
 
    >[!NOTE]
    >
@@ -173,7 +173,7 @@ Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos esp
    * **Nome do modelo**
    * **Descrição**
 
-1. Selecione **Criar**. Uma confirmação será exibida, selecione **Abrir**[](#editingatemplate) para começar a editar o modelo ou **Concluído** para retornar ao console do modelo.
+1. Selecione **Criar**. Uma confirmação for exibida, selecione **Abertura** para iniciar [editar o modelo](#editingatemplate) ou **Concluído** para retornar ao console modelo.
 
    >[!NOTE]
    >
@@ -221,14 +221,14 @@ Para definir a miniatura do modelo:
 1. Edite as propriedades do modelo.
 1. Escolha se deseja fazer upload de uma miniatura ou gerá-la a partir do conteúdo do modelo.
 
-   * Se desejar fazer o upload de uma miniatura, clique ou toque em **Fazer upload de imagem**
-   * Se quiser gerar uma miniatura, clique ou toque em **Gerar visualização**
+   * Para carregar uma miniatura, clique em **Fazer upload de imagem**
+   * Para gerar uma miniatura, clique em **Gerar visualização**
 
 1. Para ambos os métodos, uma pré-visualização da miniatura será exibida.
 
-   Se não for satisfatória, clique ou toque em **Limpar** para fazer o upload de outra imagem ou gerar novamente a miniatura.
+   Se não for satisfatório, clique em **Limpar** para carregar outra imagem ou gerar novamente a miniatura.
 
-1. Quando estiver satisfeito com a miniatura, clique ou toque em **Salvar e Fechar**.
+1. Quando estiver satisfeito com a miniatura, clique em **Salvar e fechar**.
 
 ### Ativar e permitir um modelo - Autor do modelo   {#enabling-and-allowing-a-template-template-author}
 
@@ -463,13 +463,13 @@ Entrada **Estrutura** modo do editor de modelos:
 
   Por exemplo, para um componente de imagem, as larguras permitidas podem ser definidas juntamente com a ativação de carregamento lento.
 
-  Se uma configuração permitir várias configurações, clique ou toque no botão **Adicionar** para adicionar outra configuração.
+  Se uma configuração permitir várias configurações, clique no link **Adicionar** para adicionar outra configuração.
 
   ![chlimage_1-141](assets/chlimage_1-141.png)
 
-  Para remover uma configuração, clique ou toque no botão **Excluir** localizado à direita da configuração.
+  Para remover uma configuração, clique no link **Excluir** localizado à direita da configuração.
 
-  Para remover uma configuração, clique ou toque no botão** Excluir**.
+  Para remover uma configuração, clique no botão ** Excluir **.
 
   ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -487,7 +487,7 @@ Entrada **Estrutura** modo do editor de modelos:
 
   >[!NOTE]
   >
-  >[As políticas de conteúdo para componentes que implementam o editor de rich text](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) só podem ser definidas para opções disponibilizadas pelo RTE, por meio das configurações da interface. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[Políticas de conteúdo para componentes que implementam o editor de rich text](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) O só pode ser definido para opções disponibilizadas pelo RTE por meio das configurações da interface do usuário. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Política e propriedades (contêiner de layout)**
 
@@ -529,9 +529,9 @@ Entrada **Estrutura** modo do editor de modelos:
 
   Na guia **Componentes padrão**, você define quais componentes são associados automaticamente a determinados tipos de mídia para que, quando um autor arrastar um ativo do navegador de ativos, o AEM saiba com qual componente associá-lo. Observe que somente os componentes com zonas para soltar estão disponíveis para essa configuração.
 
-  Clique ou toque em **Adicionar mapeamento** para adicionar um componente totalmente novo com mapeamento de tipo MIME.
+  Clique em **Adicionar mapeamento** para adicionar um componente totalmente novo e mapeamento de tipo MIME.
 
-  Selecione um componente na lista e clique ou toque em **Adicionar tipo** para adicionar outro tipo MIME a um componente já mapeado. Clique no ícone **Excluir** para remover a um tipo MIME.
+  Selecione um componente na lista e clique em **Adicionar tipo** para adicionar outro tipo MIME a um componente já mapeado. Clique no ícone **Excluir** para remover a um tipo MIME.
 
   ![chlimage_1-145](assets/chlimage_1-145.png)
 

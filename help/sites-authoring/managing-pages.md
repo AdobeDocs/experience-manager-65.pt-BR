@@ -2,10 +2,10 @@
 title: Criação e organização de páginas com AEM
 description: Saiba como criar e gerenciar páginas com o Adobe Experience Manager.
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2412'
-ht-degree: 70%
+source-wordcount: '2417'
+ht-degree: 64%
 
 ---
 
@@ -189,7 +189,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, an
 
 1. A partir do primeiro estágio do assistente, você pode:
 
-   * Selecionar o modelo que deseja usar para criar a nova página, em seguida, clicar/tocar em **Próximo** para prosseguir.
+   * Selecione o modelo que deseja usar para criar a nova página e clique em **Próxima** para continuar.
 
    * **Cancelar** para suspender o processo.
 
@@ -197,7 +197,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, an
 
 1. A partir do último estágio do assistente, você pode:
 
-   * Usar as três guias para inserir as [propriedades de página](/help/sites-authoring/editing-page-properties.md) que deseja atribuir à nova página, em seguida, clicar/tocar em **Criar** para realmente criar a página.
+   * Use as três guias para inserir a variável [propriedades da página](/help/sites-authoring/editing-page-properties.md) que deseja atribuir à nova página, em seguida, clique em **Criar** para realmente criar a página.
 
    * Use **Voltar** para retornar à seleção do modelo.
 
@@ -322,7 +322,7 @@ O AEM oferece a funcionalidade de atualizar todos os links internos que se refer
 
 1. No estágio **Renomear** do assistente, é possível:
 
-   * Especifique o nome que deseja para a página após movê-la, em seguida, clique/toque em **Próximo** para prosseguir.
+   * Especifique o nome que deseja para a página após movê-la, depois clique em **Próxima** para continuar.
 
    * **Cancelar** para suspender o processo.
 
@@ -383,7 +383,7 @@ As ações de movimentação de página são sempre processadas de forma assínc
 
   ![Mover página assíncrona](assets/asynchronous-page-move.png)
 
-O status de trabalhos assíncronos pode ser verificado no painel [**Status de trabalhos assíncronos** ](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) em **Navegação global** -> **Ferramentas** -> **Operações** -> **Trabalhos**
+O status de trabalhos assíncronos pode ser verificado no campo [**Status de trabalhos assíncronos** painel](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) em **Navegação global** > **Ferramentas** > **Operações** > **Tarefas**
 
 >[!NOTE]
 >
@@ -410,7 +410,7 @@ O status de trabalhos assíncronos pode ser verificado no painel [**Status de tr
    * Clique em **Excluir** para confirmar a ação:
 
       * Se a página não tiver referências, ela será excluída.
-      * Caso a página tenha referências, uma caixa de mensagem vai informá-lo de que **Uma ou mais páginas são mencionadas.** Você pode selecionar **Forçar exclusão** ou **Cancelar**.
+      * Se a página tiver referências, uma caixa de mensagem informará que **Uma ou mais páginas são mencionadas.** É possível selecionar **Forçar Exclusão** ou **Cancelar**.
 
 >[!NOTE]
 >
