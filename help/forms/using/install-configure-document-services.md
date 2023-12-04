@@ -4,10 +4,10 @@ description: Instale os serviços de documento do AEM Forms para criar, montar, 
 topic-tags: installing
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 03ed3606e89d87bf2f95b56a1eeb6b7dc4bec13a
 workflow-type: tm+mt
-source-wordcount: '5512'
-ht-degree: 2%
+source-wordcount: '5521'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +42,7 @@ A AEM Forms fornece um conjunto de serviços OSGi para realizar diferentes opera
 
   O serviço de assinatura acessa certificados e credenciais armazenados no armazenamento de confiança. Para obter mais informações, consulte [Serviço de assinatura](/help/forms/using/aem-document-services-programmatically.md).
 
-O AEM Forms é uma plataforma corporativa poderosa e os serviços de documentos são apenas um dos recursos do AEM Forms. Para obter a lista completa dos recursos, consulte [Introdução ao AEM Forms](/help/forms/using/introduction-aem-forms.md).
+O AEM Forms é uma plataforma corporativa avançada e os serviços de documentos são apenas um dos recursos do AEM Forms. Para obter a lista completa dos recursos, consulte [Introdução ao AEM Forms](/help/forms/using/introduction-aem-forms.md).
 
 ## Topologia de implantação {#deployment-topology}
 
@@ -315,7 +315,7 @@ Você pode permitir que um usuário não administrador use o serviço PDF Genera
 
    1. A Microsoft® recomenda fazer backup do registro antes de modificá-lo. Para obter etapas detalhadas, consulte [Como fazer backup e restaurar o registro no Windows](https://support.microsoft.com/en-us/help/322756).
    1. Abra o editor de Registro do Microsoft® Windows. Para abrir o editor de registro, vá para Iniciar > Executar, digite regedit e clique em OK.
-   1. Vá até `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. Verifique se o valor de EnableLUA está definido como 0 (zero).
+   1. Navegue até `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. Verifique se o valor de EnableLUA está definido como 0 (zero).
    1. Garantir valor de **EnableLUA** é definido como 0 (zero). Se o valor não for 0, altere o valor para 0. Feche o editor de Registro.
 
 1. Reinicie o computador.
@@ -370,7 +370,7 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
    1. Selecionar **[!UICONTROL Forms]** do **[!UICONTROL Solução]** lista suspensa.
    2. Selecione a versão e o tipo do pacote. Você também pode usar a variável **[!UICONTROL Pesquisar downloads]** para filtrar os resultados.
 1. Toque no nome do pacote aplicável ao seu sistema operacional e selecione **[!UICONTROL Aceitar termos do EULA]** e toque em **[!UICONTROL Baixar]**.
-1. Abra [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) e clique em **[!UICONTROL Fazer upload de pacote]** para fazer upload do pacote.
+1. Abertura [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  e clique em **[!UICONTROL Fazer upload do pacote]** para carregar o pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
    Também é possível baixar o pacote por meio do link direto listado no [Versões do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) artigo.
@@ -591,7 +591,7 @@ A variável [Ferramenta de disponibilidade do sistema](#srt-configuration) verif
    >
    * Se a Ferramenta de preparação do sistema relatar que o arquivo pdfgen.api não está disponível na pasta de plug-ins do Acrobat, copie o arquivo pdfgen.api da `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` diretório para o `[Acrobat_root]\Acrobat\plug_ins` diretório.
 
-1. Vá até `[Path_of_reports_folder]`. Abra o arquivo SystemReadinessTool.html. Verifique o relatório e corrija os problemas mencionados.
+1. Navegue até `[Path_of_reports_folder]`. Abra o arquivo SystemReadinessTool.html. Verifique o relatório e corrija os problemas mencionados.
 
 ### Configuração de opções para a ferramenta SRT {#srt-configuration}
 
@@ -668,6 +668,10 @@ Antes de executar as verificações a seguir, verifique se [Ferramenta de prepar
 * Se houver problemas na instalação do OpenOffice, verifique se [Bibliotecas de 32 bits](#extrarequirements) necessários para a instalação do OpenOffice estão disponíveis.
 
 +++
+
++++O Microsoft Office 2019 não está em execução no Microsoft Windows Server 2019
+
+* Certifique-se de que você não tem nenhuma conexão remota ativa com o servidor AEM.
 
 +++problemas de conversão de HTML para PDF
 
@@ -787,8 +791,23 @@ Quando o usuário tenta converter arquivos do Word ou Excel em PDF no Microsoft 
 
 *Mensagem de erro do conversor primário: ALC-PDG-015-003-O sistema não pode abrir o arquivo de entrada. Envie seu arquivo novamente ou contate o administrador do sistema.*
 
-Para resolver o problema, consulte [Não é possível converter arquivo do Word ou Excel em PDF no Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
+Para resolver os problemas, consulte [Não é possível converter arquivo do Word ou Excel em PDF no Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
 
++++ Não é possível converter arquivos do Excel em PDF no Windows Server 2019
+
+Ao converter o Microsoft Excel 2019 para PDF no Microsoft Windows Server 2019, você deve garantir o seguinte:
+
+* Ao usar o serviço PDF Generator, o computador com Windows não deve ter nenhuma conexão remota ativa com o servidor AEM (sessão RDP do Windows).
+* A impressora padrão deve ser definida como Adobe PDF.
+
+>[!NOTE]
+* Para o Apple macOS e o Ubuntu OS, não é necessário definir as configurações acima.
+
++++ Não é possível converter arquivos XPS em PDF
+
+Para resolver o problema, [criar uma chave de registro específica para o recurso no Windows](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html).
+
++++
 
 ## Próximas etapas {#next-steps}
 
