@@ -4,9 +4,9 @@ description: Instale os serviços de documento do AEM Forms para criar, montar, 
 topic-tags: installing
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 03ed3606e89d87bf2f95b56a1eeb6b7dc4bec13a
+source-git-commit: 2ad9cea10bcd152f4d2d874553bdbd3133dbe847
 workflow-type: tm+mt
-source-wordcount: '5521'
+source-wordcount: '5499'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ A AEM Forms fornece um conjunto de serviços OSGi para realizar diferentes opera
 
   O serviço de assinatura acessa certificados e credenciais armazenados no armazenamento de confiança. Para obter mais informações, consulte [Serviço de assinatura](/help/forms/using/aem-document-services-programmatically.md).
 
-O AEM Forms é uma plataforma corporativa avançada e os serviços de documentos são apenas um dos recursos do AEM Forms. Para obter a lista completa dos recursos, consulte [Introdução ao AEM Forms](/help/forms/using/introduction-aem-forms.md).
+O AEM Forms é uma plataforma corporativa poderosa e os serviços de documentos são apenas um dos recursos do AEM Forms. Para obter a lista completa dos recursos, consulte [Introdução ao AEM Forms](/help/forms/using/introduction-aem-forms.md).
 
 ## Topologia de implantação {#deployment-topology}
 
@@ -669,10 +669,6 @@ Antes de executar as verificações a seguir, verifique se [Ferramenta de prepar
 
 +++
 
-+++O Microsoft Office 2019 não está em execução no Microsoft Windows Server 2019
-
-* Certifique-se de que você não tem nenhuma conexão remota ativa com o servidor AEM.
-
 +++problemas de conversão de HTML para PDF
 
 * Verifique se os diretórios de fontes foram adicionados na interface de configuração do PDF Generator.
@@ -791,7 +787,9 @@ Quando o usuário tenta converter arquivos do Word ou Excel em PDF no Microsoft 
 
 *Mensagem de erro do conversor primário: ALC-PDG-015-003-O sistema não pode abrir o arquivo de entrada. Envie seu arquivo novamente ou contate o administrador do sistema.*
 
-Para resolver os problemas, consulte [Não é possível converter arquivo do Word ou Excel em PDF no Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
+Para resolver o problema, consulte [Não é possível converter arquivo do Word ou Excel em PDF no Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
+
++++
 
 +++ Não é possível converter arquivos do Excel em PDF no Windows Server 2019
 
@@ -800,14 +798,17 @@ Ao converter o Microsoft Excel 2019 para PDF no Microsoft Windows Server 2019, v
 * Ao usar o serviço PDF Generator, o computador com Windows não deve ter nenhuma conexão remota ativa com o servidor AEM (sessão RDP do Windows).
 * A impressora padrão deve ser definida como Adobe PDF.
 
->[!NOTE]
-* Para o Apple macOS e o Ubuntu OS, não é necessário definir as configurações acima.
+  >[!NOTE]
+  * Para o Apple macOS e o Ubuntu OS, não é necessário definir as configurações acima.
+
++++
 
 +++ Não é possível converter arquivos XPS em PDF
 
 Para resolver o problema, [criar uma chave de registro específica para o recurso no Windows](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html).
 
 +++
+
 
 ## Próximas etapas {#next-steps}
 
