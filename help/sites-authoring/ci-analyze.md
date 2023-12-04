@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: 57cd61d5-78f2-4f8c-99ee-75e100c052ef
 docset: aem65
 exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Abra o [Content Insight](/help/sites-authoring/content-insights.md) página para
 Use o procedimento a seguir para ver o Analytics e o Recommendations de uma página:
 
 1. Navegue até a página que deseja analisar.
-1. Na barra de ferramentas, clique ou toque em **Analytics e Recommendations**.
+1. Na barra de ferramentas, clique em **Analytics e Recommendations**.
 
    >[!NOTE]
    >
@@ -52,9 +52,9 @@ Altere o período de geração de relatório da página Content Insight para foc
 
 Para alterar o período de geração de relatório de uma página de Content Insight:
 
-1. Se o período de tempo não for exibido na parte superior da página, clique ou toque no ícone Alternar período de tempo.
+1. Se o período de tempo não for exibido na parte superior da página, clique no ícone Alternar período de tempo.
 
-   ![Alternar período de tempo](do-not-localize/chlimage_1-22.png)
+   ![Alternar intervalo de tempo](do-not-localize/chlimage_1-22.png)
 
 1. Para alterar a data de início do período do relatório, arraste o círculo que aparece no lado esquerdo da área sombreada para a data de início desejada.
 
@@ -70,11 +70,11 @@ Alterar o tempo que cada ponto de dados passa em um relatório. Por exemplo, qua
 
 A granularidade afeta os relatórios que plotam dados em relação ao tempo, como os relatórios Exibições e Média de páginas em minutos. A granularidade também afeta a escala do período.
 
-1. Se o controle de granularidade não for exibido, clique ou toque no ícone Alternar granularidade.
+1. Se o controle de granularidade não for exibido, clique no ícone Alternar granularidade.
 
    ![chlimage_1-128](assets/chlimage_1-128.png)
 
-1. Clique ou toque na granularidade desejada. Depois de selecionado, o relatório é atualizado automaticamente para refletir a granularidade.
+1. Clique na granularidade desejada. Depois de selecionado, o relatório é atualizado automaticamente para refletir a granularidade.
 
 ### Atribuição de tarefas para SEO Recommendations {#assigning-tasks-for-seo-recommendations}
 
@@ -90,7 +90,7 @@ Quando criada, a tarefa aparece na lista Tarefas do usuário. Para obter informa
 
 Use o procedimento a seguir para criar uma tarefa para uma recomendação da SEO.
 
-1. Clique ou toque no ícone de informações da recomendação da SEO.
+1. Clique no ícone de informações da recomendação da SEO.
 
    ![Ícone de informação](do-not-localize/chlimage_1-23.png)
 
@@ -98,7 +98,7 @@ Use o procedimento a seguir para criar uma tarefa para uma recomendação da SEO
 
    ![chlimage_1-131](assets/chlimage_1-131.png)
 
-1. Preencha os campos de formulário exibidos e toque em Criar:
+1. Preencha os campos de formulário exibidos e selecione Criar:
 
    * Projeto: Selecione o projeto no qual criar a tarefa.
    * Nome: o nome que identifica a tarefa. O nome padrão é o título da recomendação da SEO.
@@ -109,4 +109,4 @@ Use o procedimento a seguir para criar uma tarefa para uma recomendação da SEO
 
    **Nota:** A tarefa criada também inclui o caminho para a página à qual a recomendação de SEO se aplica.
 
-1. Clique ou toque em Concluído para fechar a mensagem Tarefa criada.
+1. Clique em Concluído para fechar a mensagem Tarefa criada.

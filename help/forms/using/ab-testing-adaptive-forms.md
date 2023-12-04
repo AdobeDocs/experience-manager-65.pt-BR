@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 docset: aem65
 exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 2%
+source-wordcount: '1558'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +50,7 @@ Se você estiver configurando um target pela primeira vez, clique em **Configure
 1. Especifique os detalhes da conta do Target, como código do cliente, email e senha.
 1. Selecionar **Rest** na lista suspensa Tipo de API.
 
-1. Clique em **Conectar-se ao Adobe Target** para que você possa inicializar a conexão com o Target. Se a conexão for bem-sucedida, a mensagem Conexão bem-sucedida será exibida. Clique em **OK** na mensagem e, em seguida, em **OK** na caixa de diálogo. A conta do Target está configurada.
+1. Clique em **Conectar-se ao Adobe Target** para que você possa inicializar a conexão com o Target. Se a conexão for bem-sucedida, a mensagem Conexão bem-sucedida será exibida. Clique em **OK** na mensagem e depois **OK** na caixa de diálogo. A conta do Target está configurada.
 
 1. Crie uma estrutura do Target conforme descrito em [Adicionar uma estrutura](/help/sites-administering/target.md).
 
@@ -84,9 +84,9 @@ Além do servidor JBoss®, você pode adicionar o argumento -Dabtesting.enabled=
 
 O AEM permite criar um público-alvo e usá-lo para um teste A/B. O público-alvo que você cria no AEM está disponível no AEM Forms. Para criar públicos-alvo no AEM, faça o seguinte:
 
-1. Na instância de criação, toque em **Adobe Experience Manager** > **Personalização** > **Públicos-alvo**.
+1. Na instância de criação, selecione **Adobe Experience Manager** > **Personalização** > **Públicos-alvo**.
 
-1. Na página Públicos-alvo, toque em **Criar público-alvo > Criar público-alvo**.
+1. Na página Públicos-alvo, selecione **Criar público-alvo > Criar público-alvo**.
 1. Na caixa de diálogo Configuração do Adobe Target, selecione uma configuração do Target e clique em **Ok**.
 1. Na página Criar novo público-alvo, crie regras. As regras permitem categorizar o público-alvo. Por exemplo, você deseja categorizar públicos com base no sistema operacional. Seu público-alvo A vem do Windows e o público-alvo B vem do Linux®.
 

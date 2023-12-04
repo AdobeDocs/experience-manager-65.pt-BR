@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: ad71b423-02e1-4476-9c7c-f832cea6b0a6
 docset: aem65
 exl-id: f3f013a7-a399-4178-a901-d4a8c65ddbd3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
@@ -32,11 +32,11 @@ A funcionalidade rascunhos é ativada imediatamente. Quando um usuário clica em
 Execute as seguintes etapas para adicionar e configurar um componente Rascunhos e Envios:
 
 1. Arraste e solte a variável **Rascunhos e envios** componente na categoria Serviços de documento no navegador de componentes na sua página.
-1. Toque no componente e em ![settings_icon](assets/settings_icon.png) para abrir a caixa de diálogo Editar do componente.
+1. Selecione o componente e selecione ![settings_icon](assets/settings_icon.png) para abrir a caixa de diálogo Editar do componente.
 
    ![Rascunhos e componente de envio](assets/drafts-submissions-edit.png)
 
-1. Na caixa de diálogo Editar, especifique os detalhes a seguir e toque em **Concluído** para salvar as configurações.
+1. Na caixa de diálogo Editar, especifique os seguintes detalhes e selecione **Concluído** para salvar as configurações.
 
 <table>
  <tbody>

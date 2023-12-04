@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 5cb3ee55-f411-4692-84f7-89bf6ade729d
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%
@@ -30,8 +30,8 @@ Para aplicar um layout personalizado a um campo, faça o seguinte:
 
 ### Personalizar o layout de um único campo {#customize-layout-of-a-single-field}
 
-1. Abra o formulário no **Estilo** modo. Para abrir o formulário no modo de estilo, na barra de ferramentas da página, toque em ![tela suspensa](assets/canvas-drop-down.png) > **Estilo**.
-1. Na barra lateral, em **Objetos de formulário**, selecione o campo e toque no botão editar ![botão editar](assets/edit-button.png).
+1. Abra o formulário no **Estilo** modo. Para abrir o formulário no modo de estilo, selecione na barra de ferramentas da página ![tela suspensa](assets/canvas-drop-down.png) > **Estilo**.
+1. Na barra lateral, em **Objetos de formulário**, selecione o campo e selecione o botão editar ![botão editar](assets/edit-button.png).
 1. Selecione o estado do campo que deseja personalizar e especifique o estilo desse estado.
 
    ![Especificação do estilo em linha de um campo](assets/edit-error-state.png)
@@ -43,7 +43,7 @@ Com o AEM Forms, agora é possível criar um tema e aplicá-lo ao formulário. O
 Crie um tema usando o Editor de temas para personalizar o layout de todos os campos no formulário. Depois de criar um tema, execute as seguintes etapas para aplicá-lo a um formulário:
 
 1. Abra o formulário no modo de edição.
-1. No modo de edição, selecione um componente e toque em ![nível de campo](assets/field-level.png) > **Contêiner de formulário adaptável** e toque em ![cmppr](assets/cmppr.png).
+1. No modo de edição, selecione um componente e selecione ![nível de campo](assets/field-level.png) > **Contêiner de formulário adaptável** e selecione ![cmppr](assets/cmppr.png).
 1. Na barra lateral, em Tema do formulário adaptável, selecione o tema criado usando o Editor de temas.
 
 ## Criar um layout de campo personalizado {#create-a-custom-field-layout}

@@ -10,9 +10,9 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '4181'
+source-wordcount: '4159'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Para adicionar objetos e serviços de modelo de dados:
 
 1. Faça logon na instância de autor do AEM, navegue até **[!UICONTROL Forms > Integrações de dados]** e abra o modelo de dados de formulário no qual deseja adicionar objetos de modelo de dados.
 1. No painel Fontes de dados, expanda as fontes de dados para visualizar os objetos e serviços do modelo de dados disponíveis.
-1. Selecione os objetos e serviços do modelo de dados que deseja adicionar ao modelo de dados do formulário e toque em **[!UICONTROL Adicionar selecionado]**.
+1. Selecione os objetos de modelo de dados e serviços que deseja adicionar ao modelo de dados de formulário e selecione **[!UICONTROL Adicionar selecionado]**.
 
    ![seleted-objects](assets/selected-objects.png)
 
@@ -80,7 +80,7 @@ Para adicionar objetos e serviços de modelo de dados:
    >
    >Além dos serviços e dos objetos de modelo de dados, o documento de metadados do serviço OData inclui propriedades de navegação que definem a associação entre dois objetos de modelo de dados. Para obter mais informações, consulte [Trabalhar com propriedades de navegação de serviços OData](#work-with-navigation-properties-of-odata-services).
 
-1. Toque **[!UICONTROL Salvar]** para salvar o objeto de modelo de formulário.
+1. Selecionar **[!UICONTROL Salvar]** para salvar o objeto de modelo de formulário.
 
    >[!NOTE]
    >
@@ -95,8 +95,8 @@ Embora seja possível adicionar objetos de modelo de dados a partir de fontes de
 Para criar um objeto de modelo de dados sem origens de dados:
 
 1. Faça logon na instância de autor do AEM, navegue até **[!UICONTROL Forms > Integrações de dados]** e abra o modelo de dados de formulário no qual deseja criar um objeto ou entidade de modelo de dados.
-1. Toque **[!UICONTROL Criar entidade]**.
-1. Na caixa de diálogo Criar modelo de dados, especifique um nome para o objeto de modelo de dados e toque em **[!UICONTROL Adicionar]**. Um objeto de modelo de dados é adicionado ao modelo de dados de formulário. O objeto de modelo de dados recém-adicionado não está vinculado a uma fonte de dados e não tem propriedades conforme mostrado na imagem a seguir.
+1. Selecionar **[!UICONTROL Criar entidade]**.
+1. Na caixa de diálogo Criar modelo de dados, especifique um nome para o objeto de modelo de dados e selecione **[!UICONTROL Adicionar]**. Um objeto de modelo de dados é adicionado ao modelo de dados de formulário. O objeto de modelo de dados recém-adicionado não está vinculado a uma fonte de dados e não tem propriedades conforme mostrado na imagem a seguir.
 
    ![nova entidade](assets/new-entity.png)
 
@@ -108,14 +108,14 @@ O editor do modelo de dados de formulário permite criar propriedades secundári
 
 Para criar uma propriedade secundária:
 
-1. Em um modelo de dados de formulário, selecione um objeto de modelo de dados e toque em **[!UICONTROL Criar propriedade secundária]**.
+1. Em um modelo de dados de formulário, selecione um objeto de modelo de dados e **[!UICONTROL Criar propriedade secundária]**.
 1. No **[!UICONTROL Criar propriedade secundária]** especifique um nome e um tipo de dados para a propriedade na caixa de diálogo **[!UICONTROL Nome]** e **[!UICONTROL Tipo]** campos, respectivamente. Opcionalmente, você pode especificar um título e uma descrição para a propriedade.
 1. Ative Calculado se a propriedade for uma propriedade calculada. O valor de uma propriedade calculada é avaliado com base em uma regra ou expressão. Para obter mais informações, consulte [Editar propriedades](#edit-properties).
 1. Se o objeto de modelo de dados estiver vinculado a uma fonte de dados, a propriedade secundária adicionada será automaticamente vinculada à propriedade do objeto de modelo de dados pai com o mesmo nome e tipo de dados.
 
-   Para vincular manualmente uma propriedade secundária a uma propriedade de objeto de modelo de dados, toque no ícone procurar ao lado da **[!UICONTROL Referência de vinculação]** campo. A variável **[!UICONTROL Selecionar objeto]** lista todas as propriedades do objeto de modelo de dados pai. Selecione uma propriedade para vincular e toque no ícone de marca de verificação. Observe que você só pode selecionar uma propriedade com o mesmo tipo de dados que a propriedade secundária.
+   Para vincular manualmente uma propriedade secundária a uma propriedade de objeto de modelo de dados, selecione o ícone de procura ao lado da variável **[!UICONTROL Referência de vinculação]** campo. A variável **[!UICONTROL Selecionar objeto]** lista todas as propriedades do objeto de modelo de dados pai. Selecione uma propriedade para vincular e selecione o ícone de marca de verificação. Observe que você só pode selecionar uma propriedade com o mesmo tipo de dados que a propriedade secundária.
 
-1. Toque **[!UICONTROL Concluído]** para salvar a propriedade secundária e toque em **[!UICONTROL Salvar]** para salvar o modelo de dados do formulário. A propriedade secundária agora é adicionada ao objeto de modelo de dados.
+1. Selecionar **[!UICONTROL Concluído]** para salvar a propriedade-filho e selecionar **[!UICONTROL Salvar]** para salvar o modelo de dados do formulário. A propriedade secundária agora é adicionada ao objeto de modelo de dados.
 
 Depois de criar objetos e propriedades do modelo de dados, você pode continuar a criar formulários adaptáveis e comunicações interativas com base no modelo de dados de formulário. Posteriormente, quando as fontes de dados estiverem disponíveis e configuradas, você poderá vincular o modelo de dados de formulário às fontes de dados. A vinculação será atualizada automaticamente nos formulários adaptáveis associados e nas comunicações interativas. Para obter mais informações sobre como criar formulários adaptáveis e comunicações interativas usando o modelo de dados de formulário, consulte [Usar modelo de dados de formulário](/help/forms/using/using-form-data-model.md).
 
@@ -124,13 +124,13 @@ Depois de criar objetos e propriedades do modelo de dados, você pode continuar 
 Quando as fontes de dados que você deseja integrar ao modelo de dados de formulário estiverem disponíveis, você poderá adicioná-las ao modelo de dados de formulário conforme descrito em [Atualizar fontes de dados](/help/forms/using/create-form-data-models.md#update). Em seguida, faça o seguinte para vincular os objetos e propriedades do modelo de dados desvinculados:
 
 1. No modelo de dados de formulário, selecione a fonte de dados não vinculada que deseja vincular a uma fonte de dados.
-1. Toque **[!UICONTROL Editar propriedades]**.
-1. No **[!UICONTROL Editar propriedades]** painel, toque no ícone procurar ao lado da guia **[!UICONTROL Vinculação]** campo. Ele abre o **[!UICONTROL Selecionar objeto]** caixa de diálogo que lista fontes de dados adicionadas ao modelo de dados do formulário.
+1. Selecione **[!UICONTROL Editar propriedades]**.
+1. No **[!UICONTROL Editar propriedades]** selecione o ícone procurar ao lado da guia **[!UICONTROL Vinculação]** campo. Ele abre o **[!UICONTROL Selecionar objeto]** caixa de diálogo que lista fontes de dados adicionadas ao modelo de dados do formulário.
 
    ![select-object](assets/select-object.png)
 
-1. Expanda a árvore de fontes de dados, selecione um objeto de modelo de dados para vincular e toque no ícone de marca de verificação.
-1. Toque **[!UICONTROL Concluído]** para salvar as propriedades e toque em **[!UICONTROL Salvar]** para salvar o modelo de dados do formulário. O objeto de modelo de dados agora está vinculado a uma fonte de dados. Observe que o objeto de modelo de dados não está mais marcado como Desligado.
+1. Expanda a árvore de fontes de dados, selecione um objeto de modelo de dados para vincular e selecione o ícone de marca de verificação.
+1. Selecionar **[!UICONTROL Concluído]** para salvar as propriedades e selecione **[!UICONTROL Salvar]** para salvar o modelo de dados do formulário. O objeto de modelo de dados agora está vinculado a uma fonte de dados. Observe que o objeto de modelo de dados não está mais marcado como Desligado.
 
    ![objeto-modelo-vinculado](assets/bound-model-object.png)
 
@@ -138,7 +138,7 @@ Quando as fontes de dados que você deseja integrar ao modelo de dados de formul
 
 Para ler e gravar dados de um objeto de modelo de dados, faça o seguinte para configurar serviços de leitura e gravação:
 
-1. Marque a caixa de seleção na parte superior de um objeto de modelo de dados para selecioná-lo e toque em **[!UICONTROL Editar propriedades]**.
+1. Marque a caixa de seleção na parte superior de um objeto de modelo de dados para selecioná-lo e **[!UICONTROL Editar propriedades]**.
 
    ![edit-properties](assets/edit-properties.png)
 
@@ -167,8 +167,8 @@ Para ler e gravar dados de um objeto de modelo de dados, faça o seguinte para c
 
    Serviços de leitura e gravação configurados para a fonte de dados do funcionário
 
-1. Toque ![aem_6_3_edit](assets/aem_6_3_edit.png) para que o argumento do serviço de leitura [vincular o argumento a um atributo de perfil de usuário, atributo de solicitação ou valor literal](#bindargument) e especifique o valor de vinculação.
-1. Toque **[!UICONTROL Concluído]** para salvar o argumento, **[!UICONTROL Concluído]** para salvar as propriedades e **[!UICONTROL Salvar]** para salvar o modelo de dados do formulário.
+1. Selecionar ![aem_6_3_edit](assets/aem_6_3_edit.png) para que o argumento do serviço de leitura [vincular o argumento a um atributo de perfil de usuário, atributo de solicitação ou valor literal](#bindargument) e especifique o valor de vinculação.
+1. Selecionar **[!UICONTROL Concluído]** para salvar o argumento, **[!UICONTROL Concluído]** para salvar as propriedades e **[!UICONTROL Salvar]** para salvar o modelo de dados do formulário.
 
 ### Associar argumentos do serviço de leitura {#bindargument}
 
@@ -190,7 +190,7 @@ O nome do atributo especificado na variável **[!UICONTROL Valor do vínculo]** 
 
 `https://[server-name]:[port]/crx/de/index.jsp#/home/users/`
 
-![Perfil de usuário](assets/binding_crxde_user_profile_new.png)
+![Perfil do usuário](assets/binding_crxde_user_profile_new.png)
 
 Neste exemplo, especifique `profile.empid` no **[!UICONTROL Valor do vínculo]** campo para o `grios` usuário.
 
@@ -242,11 +242,11 @@ Ao adicionar objetos de modelo de dados associados em uma fonte de dados a um mo
 
 >[!NOTE]
 >
->As associações predefinidas em uma fonte de dados JDBC não são retidas no modelo de dados de formulário. Você deve criá-los manualmente.
+>As associações predefinidas em uma fonte de dados JDBC não são retidas no modelo de dados de formulário. Crie-os manualmente.
 
 Para adicionar uma associação:
 
-1. Marque a caixa de seleção na parte superior de um objeto de modelo de dados para selecioná-lo e toque em **[!UICONTROL Adicionar associação]**. A caixa de diálogo Adicionar associação é aberta.
+1. Marque a caixa de seleção na parte superior de um objeto de modelo de dados para selecioná-lo e **[!UICONTROL Adicionar associação]**. A caixa de diálogo Adicionar associação é aberta.
 
    ![adicionar-associação](assets/add-association.png)
 
@@ -279,16 +279,16 @@ Para adicionar uma associação:
 
    Argumento e vinculação atualizados
 
-   Toque **[!UICONTROL Concluído]** para salvar o argumento.
+   Selecionar **[!UICONTROL Concluído]** para salvar o argumento.
 
-1. Toque **[!UICONTROL Concluído]** para salvar a associação e **[!UICONTROL Salvar]** para salvar o modelo de dados do formulário.
+1. Selecionar **[!UICONTROL Concluído]** para salvar a associação e **[!UICONTROL Salvar]** para salvar o modelo de dados do formulário.
 1. Repita as etapas para criar mais associações conforme necessário.
 
 >[!NOTE]
 >
 >A associação adicionada aparece na caixa de objeto de modelo de dados com o título especificado e uma linha que conecta os objetos de modelo de dados associados.
 >
->É possível editar uma associação marcando a caixa de seleção e tocando **[!UICONTROL Editar associação]**.
+>É possível editar uma associação marcando a caixa de seleção correspondente e selecionando **[!UICONTROL Editar associação]**.
 
 ![associação adicionada](assets/added-association.png)
 
@@ -299,7 +299,7 @@ Para adicionar uma associação:
 Para editar propriedades:
 
 1. Marque a caixa de seleção ao lado de um objeto de modelo de dados, uma propriedade ou um serviço no modelo de dados de formulário.
-1. Toque **[!UICONTROL Editar propriedades]**. A variável **[!UICONTROL Editar propriedades]** painel do objeto de modelo, propriedade ou serviço selecionado é aberto.
+1. Selecionar **[!UICONTROL Editar propriedades]**. A variável **[!UICONTROL Editar propriedades]** painel do objeto de modelo, propriedade ou serviço selecionado é aberto.
 
    * **Objeto de modelo de dados**: especifique os serviços de leitura e gravação e edite os argumentos.
    * **Propriedade**: especifique o tipo, subtipo e formato da propriedade. Você também pode especificar se a propriedade selecionada é a chave primária para o objeto de modelo de dados.
@@ -309,7 +309,7 @@ Para editar propriedades:
 
    Caixa de diálogo Editar Propriedades de um serviço get
 
-1. Toque **[!UICONTROL Concluído]** para salvar as propriedades e **[!UICONTROL Salvar]** para salvar o modelo de dados do formulário.
+1. Selecionar **[!UICONTROL Concluído]** para salvar as propriedades e **[!UICONTROL Salvar]** para salvar o modelo de dados do formulário.
 
 ### Criar propriedades computadas {#computed}
 
@@ -318,7 +318,7 @@ Uma propriedade calculada é aquela cujo valor é calculado com base em uma regr
 Por exemplo, você pode criar uma propriedade calculada **FullName** cujo valor é resultado da concatenação do valor existente **Nome** e **Sobrenome** propriedades. Para fazer isso:
 
 1. Criar uma propriedade com o nome `FullName` cujo tipo de dados é String.
-1. Ativar **[!UICONTROL Calculado]** e toque em **[!UICONTROL Concluído]** para criar a propriedade.
+1. Ativar **[!UICONTROL Calculado]** e selecione **[!UICONTROL Concluído]** para criar a propriedade.
 
    ![calculado](assets/computed.png)
 
@@ -326,18 +326,18 @@ Por exemplo, você pode criar uma propriedade calculada **FullName** cujo valor 
 
    ![computed-prop](assets/computed-prop.png)
 
-1. Selecione a propriedade FullName e toque em **[!UICONTROL Editar regra]**. Uma janela do editor de regras é aberta.
-1. Na janela do editor de regras, toque em **[!UICONTROL Criar]**. A **[!UICONTROL Definir valor]** a janela regra é aberta.
+1. Selecione a propriedade FullName e selecione **[!UICONTROL Editar regra]**. Uma janela do editor de regras é aberta.
+1. Na janela do editor de regras, selecione **[!UICONTROL Criar]**. A **[!UICONTROL Definir valor]** a janela regra é aberta.
 
    No menu suspenso Selecionar opção, selecione **[!UICONTROL Expressão matemática]**. Outras opções disponíveis são **[!UICONTROL Objeto do modelo de dados de formulário]** e **[!UICONTROL String]**.
 
 1. Na expressão matemática, selecione **[!UICONTROL Nome]** e **[!UICONTROL Sobrenome]** no primeiro e no segundo objetos, respectivamente. Selecionar **[!UICONTROL mais]** como operador.
 
-   Toque **[!UICONTROL Concluído]** e toque em **[!UICONTROL Fechar]** para fechar a janela do editor de regras. A regra é semelhante ao seguinte.
+   Selecionar **[!UICONTROL Concluído]** e selecione **[!UICONTROL Fechar]** para fechar a janela do editor de regras. A regra é semelhante ao seguinte.
 
    ![regra](assets/rule.png)
 
-1. No modelo de dados do formulário, toque em **[!UICONTROL Salvar]**. A propriedade computada está configurada.
+1. No modelo de dados do formulário, selecione **[!UICONTROL Salvar]**. A propriedade computada está configurada.
 
 ## Trabalhar com propriedades de navegação de serviços OData {#work-with-navigation-properties-of-odata-services}
 
@@ -399,11 +399,11 @@ O editor do modelo de dados de formulário permite gerar dados de amostra para t
 
 Faça o seguinte para gerar e editar dados de amostra:
 
-1. Abra um modelo de dados de formulário e toque em **[!UICONTROL Editar dados de amostra]**. Ele gera e exibe os dados de amostra na janela Editar dados de amostra.
+1. Abra um modelo de dados de formulário e selecione **[!UICONTROL Editar dados de amostra]**. Ele gera e exibe os dados de amostra na janela Editar dados de amostra.
 
    ![Gerar dados de amostra](assets/form_data_model_generate_sample_data_new.png)
 
-1. Entrada **[!UICONTROL Editar dados de amostra]** editar dados, conforme necessário, e toque em **[!UICONTROL Salvar]**.
+1. Entrada **[!UICONTROL Editar dados de amostra]** editar dados, conforme necessário, e selecione **[!UICONTROL Salvar]**.
 
 Em seguida, você pode usar os dados de amostra para preencher e testar previamente as comunicações interativas com base no modelo de dados de formulário. Para obter mais informações, consulte [Usar modelo de dados de formulário](/help/forms/using/using-form-data-model.md).
 
@@ -411,7 +411,7 @@ Em seguida, você pode usar os dados de amostra para preencher e testar previame
 
 O modelo de dados de formulário está configurado, mas antes de colocá-lo em uso, você pode testar se os objetos e serviços do modelo de dados configurado estão funcionando como esperado. Para testar objetos e serviços do modelo de dados:
 
-1. Selecione um objeto de modelo de dados ou um serviço no modelo de dados de formulário e toque em **[!UICONTROL Testar objeto de modelo]** ou **[!UICONTROL Testar serviço]**, respectivamente.
+1. Selecione um objeto de modelo de dados ou um serviço no modelo de dados de formulário e **[!UICONTROL Testar objeto de modelo]** ou **[!UICONTROL Testar serviço]**, respectivamente.
 
    A janela Testar modelo de dados do formulário é aberta.
 
@@ -419,9 +419,9 @@ O modelo de dados de formulário está configurado, mas antes de colocá-lo em u
 
 1. Na janela Testar modelo de dados do formulário, selecione o serviço ou objeto de modelo de dados a ser testado no painel Entrada.
 
-1. Especifique um valor de argumento no código de teste e toque em **[!UICONTROL Teste]**. Um teste bem-sucedido retorna a saída no painel Saída.
+1. Especifique um valor de argumento no código de teste e selecione **[!UICONTROL Teste]**. Um teste bem-sucedido retorna a saída no painel Saída.
 
-   ![Resultados de teste](assets/test_results_form_data_model_new.png)
+   ![Resultados do teste](assets/test_results_form_data_model_new.png)
 
 Da mesma forma, você pode testar outros objetos e serviços do modelo de dados de formulário.
 
@@ -433,7 +433,7 @@ O sinalizador pode ser definido como qualquer um dos seguintes valores:
 
 * **COMPLETO**: o FDM executa a validação com base em todas as restrições
 * **DESLIGADO**: Nenhuma validação
-* **BÁSICO**: o FDM executa a validação com base nas restrições &quot;obrigatórias&quot; e &quot;anuláveis&quot;
+* **BÁSICO**: o FDM executa a validação com base nas restrições &quot;obrigatório&quot; e &quot;anulável&quot;
 
 Se nenhum valor for definido para a variável `ValidationOptions`sinalizador, **BÁSICO** a validação é executada nos dados de entrada.
 

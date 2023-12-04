@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 docset: aem65
 exl-id: d19cba33-0646-40d4-b4a3-b28d6db4a1f3
-source-git-commit: 60924e7ee204e43a2ff833fbc394beca8db9c9d9
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Ao iniciar seu aplicativo Adobe Experience Manager (AEM) Forms, você deve prime
 
 ## Para iniciar o aplicativo {#to-start-the-app}
 
-1. Toque no ícone do aplicativo AEM Forms no dispositivo móvel.
+1. Selecione o ícone do aplicativo AEM Forms no seu dispositivo móvel.
 1. Para fazer logon no aplicativo, digite um nome de usuário, senha e URL do AEM Forms Server.
 
    >[!NOTE]

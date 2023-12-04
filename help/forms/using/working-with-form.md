@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 exl-id: adff5339-e026-4924-a401-f249f37fc6e6
-source-git-commit: eb71119474f03a969a721c792b6f1ac330f9dbf3
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
@@ -26,9 +26,9 @@ Para sincronizar o formulário no aplicativo AEM Forms:
 
 1. Na instância do autor, selecione um formulário e clique em **Propriedades da exibição**.
 1. Na página de propriedades, clique em **Avançado.**
-1. Em Avançado, habilite a opção: **Sincronizar com o aplicativo AEM Forms** e toque em **Salvar**.
+1. Em Avançado, habilite a opção: **Sincronizar com o aplicativo AEM Forms** e selecione **Salvar**.
 
-Para sincronizar vários formulários, na instância do autor, selecione vários formulários no gerenciador de formulários e toque em **Sincronizar com o aplicativo AEM Forms**. Quando o formulário é publicado, o aplicativo AEM Forms pode se conectar ao servidor de publicação e buscar os formulários.
+Para sincronizar vários formulários, na instância do autor, selecione vários formulários no gerenciador de formulários e **Sincronizar com o aplicativo AEM Forms**. Quando o formulário é publicado, o aplicativo AEM Forms pode se conectar ao servidor de publicação e buscar os formulários.
 
 Se o aplicativo Android AFA (AEM Form Application, Aplicativo de formulário) não for sincronizado, execute as seguintes etapas para corrigir o problema de sincronização:
 
@@ -51,5 +51,5 @@ Se o aplicativo Android AFA (AEM Form Application, Aplicativo de formulário) n�
 
 **Para abrir e atualizar um formulário**
 
-1. Para abrir um formulário, toque no **[!UICONTROL Formulário]** na tela inicial.
+1. Para abrir um formulário, selecione a variável **[!UICONTROL Formulário]** na tela inicial.
 1. Você pode atualizar os campos do formulário, adicionar anexos, salvar como rascunho e enviá-lo.

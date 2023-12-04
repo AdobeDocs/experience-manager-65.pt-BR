@@ -11,9 +11,9 @@ topic-tags: forms-app
 discoiquuid: 393e4332-a2cc-42c8-a18f-3035addbcfaa
 docset: aem65
 exl-id: 6bb1d6df-b322-4112-bc25-6300877ee146
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -30,16 +30,16 @@ Quando você está online com o servidor do AEM Forms, por padrão, seu aplicati
 
 **Para sincronizar o aplicativo manualmente**
 
-Toque no botão Sincronizar ![sync-app](assets/sync-app.png) no canto inferior direito da tela inicial.
+Selecione o botão Sincronizar ![sync-app](assets/sync-app.png) no canto inferior direito da tela inicial.
 
 **Para alterar a frequência de sincronização**
 
-1. Para acessar a tela Configuração, toque no botão de menu no canto superior esquerdo da tela inicial e toque em **Configurações**.
-1. Na tela Configurações, toque na guia Geral.
+1. Para acessar a tela Configuração, selecione o botão de menu no canto superior esquerdo da tela inicial e selecione **Configurações**.
+1. Na tela Settings, selecione a guia General.
 
    ![Configuração de frequência de sincronização na janela Configurações gerais](assets/gen-settings-2.png)
 
-1. Na opção Sincronizar frequência, toque no valor à direita de Sincronizar frequência.
+1. Na opção Sync frequency, selecione o valor à direita de Sync frequency.
 1. Na lista suspensa, selecione a nova frequência de sincronização.
 
 ### Especificações técnicas {#technical-specifications}

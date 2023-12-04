@@ -12,10 +12,10 @@ discoiquuid: acb61d37-cd22-422e-bbf3-a2979b13ad41
 docset: aem65
 feature: Interactive Communication
 exl-id: 09eeade6-e16d-4159-b26a-803c7201097a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 7%
+source-wordcount: '610'
+ht-degree: 6%
 
 ---
 
@@ -36,7 +36,7 @@ As propriedades de configuração incluem:
 
 ## Configuração de fragmentos do documento {#document-fragments-configuration}
 
-Toque **Configuração de fragmentos do documento** no **Configuração do console da Web do Adobe Experience Manager** para exibir as propriedades de configuração dos fragmentos de documento.
+Selecionar **Configuração de fragmentos do documento** no **Configuração do console da Web do Adobe Experience Manager** para exibir as propriedades de configuração dos fragmentos de documento.
 
 <table>
  <tbody> 
@@ -62,19 +62,19 @@ Toque **Configuração de fragmentos do documento** no **Configuração do conso
   <tr> 
    <td>Recuo</td> 
    <td>A largura da unidade única de recuo aplicada ao texto nos fragmentos do documento da lista.</td> 
-   <td>12.7mm</td> 
+   <td>12,7 mm</td> 
    <td>Número</td> 
   </tr> 
   <tr> 
    <td>Largura mínima de números romanos</td> 
    <td>Largura mínima a ser aplicada ao campo de marcador ou número ao usar números romanos em fragmentos de documentos de lista. </td> 
-   <td>12.7mm</td> 
+   <td>12,7 mm</td> 
    <td>Número</td> 
   </tr> 
   <tr> 
    <td>Largura mínima do número</td> 
    <td>Largura mínima a ser aplicada ao campo de marcador ou número ao usar listas numeradas separadas de números romanos em fragmentos de documentos de lista.</td> 
-   <td>8.0mm</td> 
+   <td>8,0 mm</td> 
    <td>Número</td> 
   </tr> 
  </tbody> 
@@ -82,7 +82,7 @@ Toque **Configuração de fragmentos do documento** no **Configuração do conso
 
 ## Criar configuração de correspondência {#create-correspondence-configuration}
 
-Toque **Criar configuração de correspondência** no **Configuração do console da Web do Adobe Experience Manager** para exibir as propriedades de configuração da IU do Agente.
+Selecionar **Criar configuração de correspondência** no **Configuração do console da Web do Adobe Experience Manager** para exibir as propriedades de configuração da IU do Agente.
 
 <table>
  <tbody> 
@@ -115,7 +115,7 @@ Toque **Criar configuração de correspondência** no **Configuração do consol
 
 ## Configuração do canal da Web do formulário adaptável e da comunicação interativa {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Toque **Configuração do canal da Web do formulário adaptável e da comunicação interativa** no **Configuração do console da Web do Adobe Experience Manager** para exibir as propriedades de configuração do canal da Web Forms adaptável e Comunicações interativas. A tabela a seguir descreve as propriedades relacionadas às Comunicações Interativas:
+Selecionar **Configuração do canal da Web do formulário adaptável e da comunicação interativa** no **Configuração do console da Web do Adobe Experience Manager** para exibir as propriedades de configuração do canal da Web Forms adaptável e Comunicações interativas. A tabela a seguir descreve as propriedades relacionadas às Comunicações Interativas:
 
 | Propriedade | Descrição | Padrão | Valores aceitáveis |
 |---|---|---|---|
@@ -125,7 +125,7 @@ Toque **Configuração do canal da Web do formulário adaptável e da comunicaç
 
 ## Configuração do tema do canal da Web do formulário adaptável e da comunicação interativa {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-Toque **Configuração do tema do canal da Web do formulário adaptável e da comunicação interativa** no **Configuração do console da Web do Adobe Experience Manager** para exibir as propriedades de configuração dos temas de canal da Web do Adaptive Forms e das Comunicações interativas.
+Selecionar **Configuração do tema do canal da Web do formulário adaptável e da comunicação interativa** no **Configuração do console da Web do Adobe Experience Manager** para exibir as propriedades de configuração dos temas de canal da Web do Adaptive Forms e das Comunicações interativas.
 
 <table>
  <tbody> 

@@ -9,16 +9,16 @@ topic-tags: author
 discoiquuid: d519ac4e-6d29-4a69-874e-792acabe87ff
 feature: Adaptive Forms
 exl-id: 948b2c12-895d-49e3-a943-d8fe87174fc4
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 1%
+source-wordcount: '736'
+ht-degree: 0%
 
 ---
 
 # Salvar automaticamente um formulário adaptável {#auto-save-an-adaptive-form}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 Você pode configurar um formulário adaptável para começar a salvar automaticamente o conteúdo com base em um evento ou um intervalo de tempo predefinido. Por padrão, o conteúdo de um formulário adaptável é salvo em uma ação do usuário, como ao pressionar o botão Salvar. A opção de salvamento automático é útil em:
 
@@ -31,7 +31,7 @@ Você pode configurar um formulário adaptável para começar a salvar automatic
 
 Para um formulário adaptável, a opção de salvamento automático não é ativada imediatamente. Você pode ativar a opção de salvamento automático na **Salvamento automático** nas propriedades de um formulário adaptável. A variável **Salvamento automático** também fornece várias outras opções de configuração. Execute as seguintes etapas para ativar e configurar a opção de salvamento automático para um formulário adaptável:
 
-1. Para acessar a seção de salvamento automático nas propriedades, selecione um componente e toque em ![nível de campo](assets/field-level.png) > **[!UICONTROL Contêiner de formulário adaptável]** e toque em ![cmppr](assets/cmppr.png).
+1. Para acessar a seção de salvamento automático nas propriedades, selecione um componente e ![nível de campo](assets/field-level.png) > **[!UICONTROL Contêiner de formulário adaptável]** e selecione ![cmppr](assets/cmppr.png).
 1. No **[!UICONTROL Salvamento automático]** seção, **[!UICONTROL Ativar]** a opção salvar automaticamente.
 1. No **[!UICONTROL Evento de formulário adaptável]** especifique 1 ou TRUE para começar a salvar o formulário automaticamente quando o formulário for carregado no navegador. Você também pode especificar uma expressão condicional para um evento, que, quando acionado e retornar true, inicia o salvamento do conteúdo do formulário.
 1. Especifique o Acionador. O salvamento automático é acionado com base na sua configuração. As opções são:
@@ -87,6 +87,6 @@ Você pode implementar um evento personalizado para acionar a funcionalidade de 
 
 1. Abra o formulário adaptável no modo de autor.
 
-1. No modo de edição, selecione um componente e toque em ![nível de campo](assets/field-level.png) > **[!UICONTROL Contêiner de formulário adaptável]** e toque em ![cmppr](assets/cmppr.png).
+1. No modo de edição, selecione um componente e selecione ![nível de campo](assets/field-level.png) > **[!UICONTROL Contêiner de formulário adaptável]** e selecione ![cmppr](assets/cmppr.png).
 1. Nas propriedades, abra **[!UICONTROL Básico]** seção. No **[!UICONTROL Categoria da biblioteca cliente]** , digite o valor da propriedade category definida ao criar as pastas da biblioteca do cliente.
 1. Abra a seção Salvamento automático. No **[!UICONTROL Salvamento automático após o evento]** especifique um evento personalizado já definido na biblioteca do cliente. Clique em **[!UICONTROL OK]**.

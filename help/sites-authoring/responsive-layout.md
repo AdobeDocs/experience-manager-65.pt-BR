@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 63%
+source-wordcount: '1798'
+ht-degree: 59%
 
 ---
 
@@ -115,12 +115,12 @@ Por exemplo, ao selecionar o dispositivo **iPhone 6 Plus** (definido com uma lar
 
    * **Selecionar dispositivo** - defina um dispositivo específico para emular de uma lista (consulte a próxima etapa para obter detalhes)
 
-     ![Selecionar o dispositivo](do-not-localize/screen_shot_2018-03-23at084743.png)
+     ![Selecionar dispositivo](do-not-localize/screen_shot_2018-03-23at084743.png)
 
 1. Para selecionar um dispositivo específico para emular, você pode:
 
    * Usar o ícone Selecionar dispositivo e escolher um na lista suspensa.
-   * Toque/clique no indicador do dispositivo na barra de ferramentas do emulador.
+   * Clique no indicador do dispositivo na barra de ferramentas do emulador.
 
    ![screen_shot_2018-03-23at084818](assets/screen_shot_2018-03-23at084818.png)
 
@@ -164,7 +164,7 @@ Assim como em outros componentes, você pode selecionar e executar ações (reco
 >
 >Visto que um container de layout é um sistema de parágrafo, a exclusão do componente excluirá a grade de layout e todos os componentes (e seu conteúdo) inclusos no container.
 
-1. Se você passar o mouse sobre ou tocar no espaço reservado da grade, o menu de ação será exibido.
+1. Se você passar o mouse sobre ou selecionar o espaço reservado da grade, o menu de ação será exibido.
 
    ![screen_shot_2018-03-23at085357](assets/screen_shot_2018-03-23at085357.png)
 
@@ -201,7 +201,7 @@ O modo **Layout** pode ser iniciado de duas maneiras.
    * Selecione o modo **Layout** da mesma maneira que você alternaria para o modo de **Edição** ou o modo de **Segmentação**.
    * O modo **Layout** permanece persistente e você não sai do modo **Layout** até que você selecione outro modo por meio do seletor de modo.
 
-* Ao [editar um componente individual.](/help/sites-authoring/editing-content.md#edit-component-layout)
+* Quando [editar um componente individual.](/help/sites-authoring/editing-content.md#edit-component-layout)
 
    * Ao usar a opção **Layout** no menu de ação rápida do componente, é possível alternar para o modo **Layout**.
    * O modo **Layout** persiste ao editar o componente e reverte para o modo **Editar** assim que o foco muda para outro componente.
@@ -216,13 +216,13 @@ Quando estiver no modo de layout, você poderá executar várias ações em uma 
   >
   >As proporções e as taxas são mantidas quando os componentes como **Imagens** são redimensionados.
 
-* Clique/toque em um componente de conteúdo, a barra de ferramentas permite:
+* Clique em um componente de conteúdo, a barra de ferramentas permite:
 
    * **Pai**
 
      Permite selecionar o componente do contêiner de layout inteiro para executar uma ação em tudo.
 
-   * **Flutuar até a nova linha**
+   * **Flutuar para a nova linha**
 
      O componente será movido para uma nova linha, dependendo do espaço disponível na grade.
 
@@ -232,7 +232,7 @@ Quando estiver no modo de layout, você poderá executar várias ações em uma 
 
   ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
-* No modo **Layout**, você pode tocar/clicar em **Arrastar componentes aqui** para selecionar o componente inteiro. Isso mostrará a barra de ferramentas para esse modo.
+* Entrada **Layout** você pode clicar no botão **Arraste os componentes para cá** para selecionar o componente inteiro. Isso mostrará a barra de ferramentas para esse modo.
 
   A barra de ferramentas terá opções diferentes dependendo do estado do componente de layout e dos componentes que pertencem a ele. Por exemplo:
 
@@ -244,7 +244,7 @@ Quando estiver no modo de layout, você poderá executar várias ações em uma 
 
      ![Mostrar componentes ocultos](do-not-localize/screen_shot_2018-03-23at091007.png)
 
-   * **Reverter layout do ponto de interrupção** - reverte para o layout padrão. Ou seja, nenhum layout personalizado será imposto.
+   * **Reverter layout do ponto de interrupção**: reverte para o layout padrão. Isso significa que nenhum layout personalizado será imposto.
 
      ![Inverter layout do ponto de interrupção](do-not-localize/screen_shot_2018-03-23at091013.png)
 

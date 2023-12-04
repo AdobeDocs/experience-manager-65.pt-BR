@@ -10,9 +10,9 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 feature: Adaptive Forms
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '6919'
+source-wordcount: '6940'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 O recurso do editor de regras no Adobe Experience Manager Forms permite que usuários e desenvolvedores de negócios de formulários gravem regras em objetos de formulário adaptáveis. Essas regras definem as ações a serem acionadas nos objetos de formulário com base nas condições predefinidas, entradas do usuário e ações do usuário no formulário. Isso ajuda a simplificar ainda mais a experiência de preenchimento de formulário, garantindo precisão e velocidade.
 
-O editor de regras fornece uma interface de usuário intuitiva e simplificada para escrever regras. O editor de regras oferece um editor visual para todos os usuários. Além disso, apenas para usuários avançados em formulários, regra editor fornece um editor de código para gravar regras e scripts.
+O editor de regras fornece uma interface de usuário intuitiva e simplificada para escrever regras. O editor de regras oferece um editor visual para todos os usuários. Além disso, somente para usuários avançados de formulários, o editor de regras fornece um editor de código para escrever regras e scripts.
 <!-- Some of the key actions that you can perform on adaptive form objects using rules are:
 
 * Show or hide an object
@@ -41,7 +41,7 @@ O editor de regras fornece uma interface de usuário intuitiva e simplificada pa
 * Invoke a form data model service and perform an operation
 * Set property of an object -->
 
-A regra editor substitui os recursos do script em AEM Forms 6.1 e versões anteriores. No entanto, seus scripts existentes são preservados no novo regra editor. Para obter mais informações sobre como trabalhar com scripts existentes no editor de regras, consulte [Impacto do editor de regras nos scripts existentes](#impact-of-rule-editor-on-existing-scripts).
+O Editor de regras substitui os recursos de script no AEM 6.1 Forms e em versões anteriores. No entanto, os scripts existentes são preservados no novo editor de regras. Para obter mais informações sobre como trabalhar com scripts existentes no editor de regras, consulte [Impacto do editor de regras nos scripts existentes](#impact-of-rule-editor-on-existing-scripts).
 
 Os usuários adicionados ao grupo forms-power-users podem criar novos scripts e editar os existentes. Os usuários no grupo formulários-usuários podem usar os scripts, mas não criar ou editar scripts.
 
@@ -73,13 +73,13 @@ Embora seja possível obter a maioria dos casos de uso usando qualquer construç
 
 * Uma regra prática comum ao criar uma regra é pensar nela no contexto do objeto no qual você está escrevendo uma regra. Considere que deseja ocultar ou mostrar o campo B com base no valor especificado por um usuário no campo A. Nesse caso, você está avaliando uma condição no campo A e, com base no valor retornado, aciona uma ação no campo B.
 
-  Portanto, se estiver gravando uma regra no campo B (o objeto no qual você está avaliando uma condição), use a construção de condição-ação ou o tipo de regra When. Da mesma forma, use a construção action-condition ou o tipo de regra Mostrar ou Ocultar no campo A.
+  Portanto, se estiver escrevendo um regra no campo B (o objeto sobre o qual você está avaliando uma condição), use a construção de ação de condição ou o tipo Quando regra. Da mesma forma, use a construção de condição de ação ou Exibir ou oculte regra tipo no campo A.
 
 * Às vezes, você precisa executar várias ações com base em uma condição. Nesses casos, é recomendável usar a construção condição-ação. Nesta construção, você pode avaliar uma condição uma vez e especificar várias instruções de ação.
 
   Por exemplo, para ocultar os campos B, C e D com base na condição que verifica o valor especificado por um usuário no campo A, grave uma regra com construção de condição-ação ou Quando tipo de regra no campo A e especifique ações para controlar a visibilidade dos campos B, C e D. Caso contrário, você precisará de três regras separadas nos campos B, C e D, em que cada regra verifica a condição e mostra ou oculta o respectivo campo. Neste exemplo, é mais eficiente escrever o tipo de regra Quando em um objeto do que Mostrar ou Ocultar em três objetos.
 
-* Para acionar uma ação com base em várias condições, é recomendável usar a construção action-condition. Por exemplo, para mostrar e ocultar o campo A avaliando as condições nos campos B, C e D, use Mostrar ou Ocultar tipo de regra no campo A.
+* Para acionar uma ação com base em várias condições, é recomendável usar a construção action-condition. Por exemplo, para mostrar e ocultar campo A avaliando as condições nos campos B, C e D, use Exibir ou Ocultar regra tipo no campo A.
 * Use a construção de condição-ação ou condição de ação se a regra contiver uma ação para uma condição.
 * Se uma regra verificar uma condição e executar uma ação imediatamente ao fornecer um valor em um campo ou ao sair de um campo, é recomendável gravar uma regra com construção de condição-ação ou o tipo de regra Quando no campo em que a condição é avaliada.
 * A condição na regra Quando é avaliada quando um usuário altera o valor do objeto no qual a regra Quando é aplicada. No entanto, se você quiser que a ação seja acionada quando o valor for alterado no lado do servidor, como no caso de preenchimento prévio do valor, é recomendável gravar uma regra When que aciona a ação quando o campo é inicializado.
@@ -95,7 +95,7 @@ O editor de regras fornece os seguintes operadores lógicos e eventos com os qua
 * **Termina com**
 * **Contém**
 * **Está vazio**
-* **Não está vazio**
+* **Não Está Vazio**
 * **Selecionou:** Retorna verdadeiro quando o usuário seleciona uma opção específica para uma caixa de seleção, botão de opção suspenso.
 * **Inicializado (evento):** Retorna verdadeiro quando um objeto de formulário é renderizado no navegador.
 * **Foi alterado (evento):** Retorna verdadeiro quando o usuário altera o valor inserido ou a opção selecionada para um objeto de formulário.
@@ -106,9 +106,9 @@ O editor de regras fornece um conjunto de tipos de regras predefinidos que você
 
 ### Quando {#whenruletype}
 
-A variável **Quando** o tipo de regra segue a variável **condição-ação-ação alternativa** regra construir, ou às vezes, apenas a variável **condição-ação** construir. Nesse tipo de regra, primeiro você especifica uma condição para avaliação seguida de uma ação a ser acionada se a condição estiver atendida ( `True`). Ao usar o tipo Quando regra, você pode usar vários operadores AND e OR para criar [expressões](#nestedexpressions) aninhadas.
+A variável **Quando** o tipo de regra segue a variável **condição-ação-ação alternativa** regra construir, ou às vezes, apenas a variável **condição-ação** construir. Nesse tipo de regra, primeiro especifique uma condição para avaliação seguida por uma ação para acionar se a condição for atendida ( `True`). Ao usar o tipo de regra Quando, é possível usar vários operadores E e OU para criar [expressões aninhadas](#nestedexpressions).
 
-Ao usar o tipo Quando regra, é possível avaliar uma condição em um objeto de formulário e executar ações em um ou mais objetos.
+Usando o tipo de regra Quando, é possível avaliar uma condição em um objeto de formulário e executar ações em um ou mais objetos.
 
 Em palavras simples, um típico de Quando regra está estruturado da seguinte maneira:
 
@@ -130,7 +130,7 @@ Por exemplo, uma lista tem quatro opções: Vermelho, Azul, Verde e Amarelo. Ao 
 
 ![multivaluefcdisplaysoptions](assets/multivaluefcdisplaysoptions.png)
 
-Ao escrever um relatório Quando regra, você pode acionar a ação Limpar Valor de ações. Limpar Valor de ação limpa o valor do objeto especificado. Ter a opção Limpar Valor como opção na declaração Quando permite criar condições complexas com vários campos.
+Ao escrever uma regra Quando, é possível acionar a ação Limpar valor de. Limpar valor da ação limpa o valor do objeto especificado. Ter o valor claro de como uma opção na instrução When permite criar condições complexas com vários campos.
 
 ![clearvalueof](assets/clearvalueof.png)
 
@@ -169,7 +169,7 @@ A variável **[!UICONTROL Definir propriedade]** o tipo de regra permite definir
 
 Ela permite definir regras para adicionar caixas de seleção dinamicamente ao formulário adaptável. Você pode usar uma função personalizada, um objeto de formulário ou uma propriedade de objeto para definir uma regra.
 
-![Definir Propriedade](assets/set_property_rule_new.png)
+![Definir propriedade](assets/set_property_rule_new.png)
 
 Para definir uma regra com base em uma função personalizada, selecione **Saída da função** na lista suspensa e arraste e solte uma função personalizada do **Funções** guia. Se a ação de condição for atendida, o número de caixas de seleção definidas na função personalizada será adicionado ao formulário adaptável.
 
@@ -203,7 +203,7 @@ A figura a seguir mostra um exemplo de adição dinâmica de caixas de seleção
 
 A variável **[!UICONTROL Definir valor de]** o tipo de regra permite definir o valor de um objeto de formulário dependendo se a condição especificada é atendida ou não. O valor pode ser definido como um valor de outro objeto, uma string literal, um valor derivado de uma expressão matemática ou de uma função, um valor de uma propriedade de outro objeto ou a saída de um serviço de modelo de dados de formulário. Da mesma forma, você pode verificar uma condição em um componente, string, propriedade ou valores derivados de uma função ou expressão matemática.
 
-O tipo de regra Definir valor de não está disponível para todos os objetos de formulário, como painéis e botões da barra de ferramentas. Um Conjunto padrão Valor De regra tem a seguinte estrutura:
+O tipo de regra Definir valor de não está disponível para todos os objetos de formulário, como painéis e botões da barra de ferramentas. Uma regra padrão Definir valor de tem a seguinte estrutura:
 
 
 
@@ -229,7 +229,7 @@ Exemplo de regra Definir valor usando o serviço de modelo de dados de formulár
 
 >[!NOTE]
 >
->Além disso, você pode usar Definir Valor de regra para preencher todos os valores em um componente lista suspenso da saída de um serviço de modelo de dados de formulário ou de um serviço da Web. No entanto, verifique se o argumento de saída escolhido é de um tipo de matriz. Todos os valores retornados em uma matriz ficam disponíveis na lista suspensa especificada.
+>Além disso, você pode usar Definir valor da regra para preencher todos os valores em um componente de lista suspensa a partir da saída de um serviço de modelo de dados de formulário ou um serviço Web. No entanto, verifique se o argumento de saída escolhido é de um tipo de matriz. Todos os valores retornados em uma matriz ficam disponíveis na lista suspensa especificada.
 
 ### Mostrar {#show}
 
@@ -271,7 +271,7 @@ Uma regra típica de Ocultar está estruturada da seguinte maneira:
 
 
 
-### Ativar {#enable}
+### Habilitar {#enable}
 
 A variável **Ativar** o tipo de regra permite ativar ou desativar um objeto de formulário com base no fato de uma condição ser atendida ou não. O tipo de regra Ativar também aciona a ação Desativar caso a condição não seja atendida ou retornada `False`.
 
@@ -353,13 +353,13 @@ O Editor de regras fornece uma interface de usuário abrangente, mas simples, pa
 Para iniciar a interface do usuário do editor de regras:
 
 1. Abra um formulário adaptável no modo de criação.
-1. Toque no objeto de formulário para o qual deseja escrever uma regra e, na Barra de ferramentas de componentes, toque em ![edit-rules](assets/edit-rules.png). A interface do usuário do editor de regras é exibida.
+1. Selecione o objeto de formulário para o qual deseja gravar uma regra e, na Barra de ferramentas do componente, selecione ![edit-rules](assets/edit-rules.png). A interface do usuário do editor de regras é exibida.
 
    ![create-rules](assets/create-rules.png)
 
    Todas as regras existentes nos objetos de formulário selecionados são listadas nessa exibição. Para obter informações sobre como gerenciar regras existentes, consulte [Gerenciar regras](#manage-rules).
 
-1. Toque **[!UICONTROL Criar]** para escrever uma nova regra. O editor visual da interface do usuário do editor de regras é aberto por padrão quando você inicia o editor de regras pela primeira vez.
+1. Selecionar **[!UICONTROL Criar]** para escrever uma nova regra. O editor visual da interface do usuário do editor de regras é aberto por padrão quando você inicia o editor de regras pela primeira vez.
 
    ![Interface do Editor de regras](assets/rule-editor-ui.png)
 
@@ -373,19 +373,19 @@ Exibe o título do objeto de formulário adaptável pelo qual você iniciou o ed
 
 O painel à esquerda na interface do editor de regras inclui duas guias: **[!UICONTROL Objetos do Forms]** e **[!UICONTROL Funções]**.
 
-A guia Objetos de formulário mostra uma exibição hierárquica de todos os objetos contidos no formulário adaptável. Ele exibe o título e o tipo dos objetos. Ao escrever uma regra, você pode arrastar e soltar objetos de formulário no editor de regras. Ao criar ou editar uma regra ao arrastar e soltar um objeto ou função em um espaço reservado, o espaço reservado assume automaticamente o tipo de valor apropriado.
+A guia Objetos de formulário mostra uma exibição hierárquica de todos os objetos contidos no formulário adaptável. Ele exibe o título e o tipo dos objetos. Ao escrever uma regra, você pode arrastar e soltar objetos de formulário no editor de regras. Ao criar ou editar uma regra ao arrastar e soltar um objeto ou função em um espaço reservado, o espaço reservado automaticamente assume o tipo de valor apropriado.
 
-Os objetos de formulário com uma ou mais regras válidas aplicadas são marcados com um ponto verde. Se qualquer uma das regras aplicadas a um objeto de formulário for inválido, o objeto de formulário será marcado com um ponto amarelo.
+Os objetos de formulário que têm uma ou mais regras válidas aplicadas são marcados com um ponto verde. Se alguma das regras aplicadas a um objeto de formulário for inválida, o objeto de formulário será marcado com um ponto amarelo.
 
 As Funções guia incluem um conjunto de funções integradas, como Soma de, Mín, Máx. de, Média, Número e Formulário validado. Você pode usar essas funções para calcular valores em painéis e linhas de tabela repetíveis e usá-los em declarações de ação e condição ao escrever regras. No entanto, também é possível criar [funções personalizadas](#custom-functions) .
 
-![A guia Funções](assets/functions.png)
+![As funções guia](assets/functions.png)
 
 >[!NOTE]
 >
 >Você pode executar a pesquisa de texto em nomes de objetos e funções e títulos nas guias Objetos e Funções do Forms.
 
-Na árvore esquerda dos objetos de formulário, toque nos objetos de formulário para exibir as regras aplicadas a cada um deles. Você não só pode navegar pelas regras dos vários objetos de formulário, como também pode copiar e colar regras entre os objetos de formulário. Para obter mais informações, consulte [Copiar e colar regras](#copy-paste-rules).
+Na árvore esquerda dos objetos de formulário, você pode selecionar os objetos de formulário para exibir as regras aplicadas a cada um dos objetos. Você não só pode navegar pelas regras dos vários objetos de formulário, como também pode copiar e colar regras entre os objetos de formulário. Para obter mais informações, consulte [Copiar e colar regras](#copy-paste-rules).
 
 ### C. Alternância entre objetos e funções de formulário {#c-form-objects-and-functions-toggle-br}
 
@@ -436,15 +436,15 @@ Execute as seguintes etapas para escrever regras:
 
 1. Primeiro, escreva a regra para controlar a visibilidade do campo Salário do Cônjuge com base na opção que o usuário seleciona para o botão de opção Estado Civil.
 
-   Abra o formulário de solicitação de empréstimo no modo de criação. Toque no **Estado civil** componente e toque em ![edit-rules](assets/edit-rules.png). Em seguida, toque em **[!UICONTROL Criar]** para iniciar o editor de regras.
+   Abra o formulário de solicitação de empréstimo no modo de criação. Selecione o **Estado civil** e selecione ![edit-rules](assets/edit-rules.png). Em seguida, selecione **[!UICONTROL Criar]** para iniciar o editor de regras.
 
    ![write-rules-visual-editor-1](assets/write-rules-visual-editor-1.png)
 
    Ao iniciar o editor de regras, a regra Quando é selecionada por padrão. Além disso, o objeto de formulário (nesse caso, Estado civil) de onde você iniciou o editor de regras é especificado na instrução When.
 
-   Embora não seja possível alterar ou modificar o objeto selecionado, você poderá usar o menu suspenso de regras, como mostrado abaixo, para selecionar outro tipo de regra. Se quiser criar uma regra em outro objeto, toque em Cancelar para sair do editor de regras e iniciá-lo novamente a partir do objeto de formulário desejado.
+   Embora não seja possível alterar ou modificar o objeto selecionado, você poderá usar o menu suspenso de regras, como mostrado abaixo, para selecionar outro tipo de regra. Se quiser criar uma regra em outro objeto, selecione Cancelar para sair do editor de regras e iniciá-lo novamente a partir do objeto de formulário desejado.
 
-1. Toque **[!UICONTROL Selecionar Estado]** e selecione **[!UICONTROL é igual a]**. A variável **[!UICONTROL Insira uma string]** é exibido.
+1. Selecionar **[!UICONTROL Selecionar Estado]** e selecione **[!UICONTROL é igual a]**. A variável **[!UICONTROL Insira uma string]** é exibido.
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2.png)
 
@@ -462,7 +462,7 @@ Execute as seguintes etapas para escrever regras:
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
 
-1. Arraste e solte a **Salário do Cônjuge** da guia Objetos de formulário no **Soltar objeto ou selecionar aqui** campo. Como alternativa, toque no **Soltar objeto ou selecionar aqui** e selecione o **Salário do Cônjuge** no menu pop-up, que lista todos os objetos de formulário no formulário.
+1. Arraste e solte a **Salário do Cônjuge** da guia Objetos de formulário no **Soltar objeto ou selecionar aqui** campo. Como alternativa, selecione o **Soltar objeto ou selecionar aqui** e selecione o **Salário do Cônjuge** no menu pop-up, que lista todos os objetos de formulário no formulário.
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6.png)
 
@@ -470,7 +470,7 @@ Execute as seguintes etapas para escrever regras:
 
    ![write-rules-visual-editor-7](assets/write-rules-visual-editor-7.png)
 
-   Toque **Concluído** para salvar a regra.
+   Selecionar **Concluído** para salvar a regra.
 
 1. Repita as etapas de 1 a 5 para definir outra regra para ocultar o campo Salário do Cônjuge se o estado civil for Simples. A regra é exibida da seguinte maneira no editor de regras.
 
@@ -484,13 +484,13 @@ Execute as seguintes etapas para escrever regras:
 
 1. Em seguida, escreva uma regra para calcular o valor de qualificação de empréstimo, que é 50% do salário total, e exiba-o no campo Elegibilidade do empréstimo. Para isso, crie **Definir valor de** regras no campo Elegibilidade do empréstimo.
 
-   No modo de criação, toque no **[!UICONTROL Elegibilidade do empréstimo]** e toque em ![edit-rules](assets/edit-rules.png). Em seguida, toque em **[!UICONTROL Criar]** para iniciar o editor de regras.
+   No modo de criação, selecione a **[!UICONTROL Elegibilidade do empréstimo]** e selecione ![edit-rules](assets/edit-rules.png). Em seguida, selecione **[!UICONTROL Criar]** para iniciar o editor de regras.
 
 1. Selecionar **[!UICONTROL Definir Valor De]** regra no menu suspenso de regras.
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
-1. Toque **[!UICONTROL Selecionar opção]** e selecione **[!UICONTROL Expressão matemática]**. Um campo para escrever expressão matemática é aberto.
+1. Selecionar **[!UICONTROL Selecionar opção]** e selecione **[!UICONTROL Expressão matemática]**. Um campo para escrever expressão matemática é aberto.
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
@@ -504,7 +504,7 @@ Execute as seguintes etapas para escrever regras:
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
-1. Em seguida, toque na área realçada ao redor do campo de expressão e toque em **Estender expressão**.
+1. Em seguida, selecione na área destacada ao redor do campo de expressão e selecione **Estender expressão**.
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13.png)
 
@@ -518,7 +518,7 @@ Execute as seguintes etapas para escrever regras:
 
    Em seguida, crie uma condição, que quando retorna True, a expressão é executada.
 
-1. Toque **Adicionar Condição** para adicionar uma instrução When.
+1. Selecionar **Adicionar Condição** para adicionar uma instrução When.
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15.png)
 
@@ -532,7 +532,7 @@ Execute as seguintes etapas para escrever regras:
 
    A regra finalmente aparece da seguinte maneira no editor de regras.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
 
-   Toque **Concluído** para salvar a regra.
+   Selecionar **Concluído** para salvar a regra.
 
 1. Repita as etapas 7 a 12 para definir outra regra para calcular a elegibilidade do empréstimo se o estado civil for Simples. A regra é exibida da seguinte maneira no editor de regras.
 
@@ -659,15 +659,15 @@ Execute as etapas a seguir para criar uma biblioteca do cliente e adicioná-la a
 Depois de ter adicionado a biblioteca do cliente ao repositório CRX, use-a no formulário adaptável. Ela permite usar sua função personalizada como uma regra em seu formulário. Execute as seguintes etapas para adicionar a biblioteca do cliente no formulário adaptável.
 
 1. Abra o formulário no modo de edição.
-Para abrir um formulário no modo de edição, selecione um formulário e toque em **Abertura**.
-1. No modo de edição, selecione um componente e toque em ![nível de campo](assets/field-level.png) > **Contêiner de formulário adaptável** e toque em ![cmppr](assets/cmppr.png).
+Para abrir um formulário no modo de edição, selecione um formulário e **Abertura**.
+1. No modo de edição, selecione um componente e selecione ![nível de campo](assets/field-level.png) > **Contêiner de formulário adaptável** e selecione ![cmppr](assets/cmppr.png).
 1. Na barra lateral, em Nome da biblioteca do cliente, adicione a biblioteca do cliente. ( `customfunction` no exemplo.)
 
    ![Adição da biblioteca de cliente de função personalizada](assets/clientlib.png)
 
-1. Selecione a caixa numérica de entrada e toque em ![edit-rules](assets/edit-rules.png) para abrir o editor de regras.
-1. Toque **Criar regra**. Usando as opções mostradas abaixo, crie uma regra para salvar o valor quadrado da entrada no campo Output do formulário.
-   [![Utilização de funções personalizadas para criar uma regra](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)Toque **Concluído**. Sua função personalizada é adicionada.
+1. Selecione a caixa numérica de entrada e selecione ![edit-rules](assets/edit-rules.png) para abrir o editor de regras.
+1. Selecionar **Criar regra**. Usando as opções mostradas abaixo, crie uma regra para salvar o valor quadrado da entrada no campo Output do formulário.
+   [![Utilização de funções personalizadas para criar uma regra](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)Selecionar **Concluído**. Sua função personalizada é adicionada.
 
 #### Tipos suportados de declaração de função {#function-declaration-supported-types}
 
@@ -734,22 +734,22 @@ var c = {
 
 ## Gerenciar regras {#manage-rules}
 
-Todas as regras existentes em um objeto de formulário são listadas ao tocar no objeto e tocar ![edit-rules1](assets/edit-rules1.png). É possível exibir o título e uma pré-visualização do resumo da regra. Além disso, a interface do permite expandir e exibir o resumo completo da regra, alterar a ordem das regras, editar regras e excluir regras.
+Todas as regras existentes em um objeto de formulário são listadas ao selecionar o objeto e selecionar ![edit-rules1](assets/edit-rules1.png). É possível exibir o título e uma pré-visualização do resumo da regra. Além disso, a interface do permite expandir e exibir o resumo completo da regra, alterar a ordem das regras, editar regras e excluir regras.
 
 ![list-rules](assets/list-rules.png)
 
 Você pode executar as seguintes ações nas regras:
 
-* **Expandir/Recolher**: A coluna Conteúdo na lista de regras exibe o conteúdo da regra. Se todo o conteúdo da regra não estiver visível na exibição padrão, toque em ![expand-rule-content](assets/expand-rule-content.png) para expandi-la.
+* **Expandir/Recolher**: A coluna Conteúdo na lista de regras exibe o conteúdo da regra. Se o conteúdo inteiro da regra não estiver visível na exibição padrão, selecione ![expand-rule-content](assets/expand-rule-content.png) para expandi-la.
 
 * **Reordenar**: qualquer nova regra criada é empilhada na parte inferior da lista de regras. As regras são executadas de cima para baixo. A regra na parte superior é executada primeiro, seguida por outras regras do mesmo tipo. Por exemplo, se você tiver as regras When, Show, Enable e When na primeira, segunda, terceira e quarta posições acima, respectivamente, a regra When na parte superior será executada primeiro, seguida pela regra When na quarta posição. Em seguida, as regras Show e Enable serão executadas.
 É possível alterar a ordem de uma regra tocando ![sort-rules](assets/sort-rules.png) contra ele ou arraste-o e solte-o na ordem desejada na lista.
 
-* **Editar**: para editar uma regra, marque a caixa de seleção ao lado do título da regra. São exibidas opções adicionais para editar e excluir a regra. Toque **Editar** para abrir a regra selecionada no editor de regras no modo visual ou editor de códigos, dependendo do modo usado para criar a regra.
+* **Editar**: para editar uma regra, marque a caixa de seleção ao lado do título da regra. São exibidas opções adicionais para editar e excluir a regra. Selecionar **Editar** para abrir a regra selecionada no editor de regras no modo visual ou editor de códigos, dependendo do modo usado para criar a regra.
 
-* **Excluir**: para excluir uma regra, selecione-a e toque em **Excluir**.
+* **Excluir**: para excluir uma regra, selecione a regra e **Excluir**.
 
-* **Ativar/desativar**: talvez seja necessário suspender temporariamente o uso de uma regra. Você pode selecionar uma ou mais regras e tocar em Desativar na barra de ferramentas Ações para desativá-las. Se uma regra estiver desativada, ela não será executada no tempo de execução. Para habilitar uma regra que esteja desabilitada, selecione-a e toque em Habilitar na barra de ferramentas de ações. A coluna de status da regra exibe se a regra está ativada ou desativada.
+* **Ativar/desativar**: talvez seja necessário suspender temporariamente o uso de uma regra. É possível selecionar uma ou mais regras e selecionar Desativar na barra de ferramentas Ações para desativá-las. Se uma regra estiver desativada, ela não será executada no tempo de execução. Para habilitar uma regra que esteja desabilitada, você pode selecioná-la e selecionar Habilitar na barra de ferramentas de ações. A coluna de status da regra exibe se a regra está ativada ou desativada.
 
 ![disablerule](assets/disablerule.png)
 
@@ -759,23 +759,23 @@ Você pode executar as seguintes ações nas regras:
 
 Para copiar e colar regras, faça o seguinte:
 
-1. Toque no objeto de formulário do qual deseja copiar uma regra e, na barra de ferramentas do componente, toque em ![editrule](assets/editrule.png). A interface do usuário do editor de regras é exibida com o objeto de formulário selecionado e as regras existentes são exibidas.
+1. Selecione o objeto de formulário do qual deseja copiar uma regra e, na barra de ferramentas do componente, selecione ![editrule](assets/editrule.png). A interface do usuário do editor de regras é exibida com o objeto de formulário selecionado e as regras existentes são exibidas.
 
    ![copyrule](assets/copyrule.png)
 
    Para obter informações sobre como gerenciar regras existentes, consulte [Gerenciar regras](#manage-rules).
 
-1. Marque a caixa de seleção ao lado do título da regra. São exibidas opções adicionais para gerenciar a regra. Toque em **Copiar**.
+1. Marque a caixa de seleção ao lado do título da regra. São exibidas opções adicionais para gerenciar a regra. Selecionar **Copiar**.
 
    ![copyrule2](assets/copyrule2.png)
 
-1. Selecione outro objeto de formulário no qual deseja colar a regra e toque **Colar**. Além disso, você pode editar a regra para alterá-la.
+1. Selecione outro objeto de formulário no qual deseja colar a regra e selecione **Colar**. Além disso, você pode editar a regra para alterá-la.
 
    >[!NOTE]
    >
    >Você só poderá colar uma regra em outro objeto de formulário se esse objeto der suporte ao evento da regra copiada. Por exemplo, um botão oferece suporte ao evento click. É possível colar uma regra com um evento de clique em um botão, mas não em uma caixa de seleção.
 
-1. Toque **Concluído** para salvar a regra.
+1. Selecionar **Concluído** para salvar a regra.
 
 ## Expressões aninhadas {#nestedexpressions}
 
@@ -785,7 +785,7 @@ Veja a seguir um exemplo de uma regra aninhada que exibe uma mensagem ao usuári
 
 ![expressão complexa](assets/complexexpression.png)
 
-Também é possível arrastar e soltar condições em uma regra para editá-la. Toque e passe o mouse sobre a alça ( ![identificador](assets/handle.png)) antes de uma condição. Depois que o ponteiro se transformar no símbolo da mão, como mostrado abaixo, arraste e solte a condição em qualquer lugar dentro da regra. A estrutura da regra muda.
+Também é possível arrastar e soltar condições em uma regra para editá-la. Selecione e passe o mouse sobre a alça ( ![identificador](assets/handle.png)) antes de uma condição. Depois que o ponteiro se transformar no símbolo da mão, como mostrado abaixo, arraste e solte a condição em qualquer lugar dentro da regra. A estrutura da regra muda.
 
 ![arrastar e soltar](assets/drag-and-drop.png)
 
@@ -841,21 +841,21 @@ Invocar o serviço de modelo de dados de formulário usando a regra de formulár
 
 Em um formulário de solicitação de empréstimo, você deseja registrar se o candidato ao empréstimo é um cliente existente ou não. Com base nas informações fornecidas pelo usuário, o campo ID do cliente deve mostrar ou ocultar. Além disso, é possível definir o foco no campo ID do cliente se o usuário for um cliente existente. O formulário de pedido de empréstimo tem os seguintes componentes:
 
-* Um botão de opção, **Você já é cliente do Geometrixx?**, que fornece as opções Sim e Não. O valor de Sim é **0** e Não é **1**.
+* Um botão de rádio, **você é um cliente Geometrixx existente?**, que fornece opções Sim e Não. O valor para Sim é **0** e Não é **1**.
 
-* Um campo de texto, **ID de cliente do Geometrixx**, para especificar a ID do cliente.
+* Um campo **de texto Geometrixx ID** do cliente para especificar a ID do cliente.
 
-Quando você escreve uma regra Quando no botão de opção para implementar esse comportamento, a regra é exibida da seguinte maneira no editor visual de regras.  ![when-rule-example](assets/when-rule-example.png)
+Ao escrever um relatório Quando regra no rádio botão para implementar esse comportamento, a regra aparece da seguinte maneira no visual regra editor.  ![exemplo de quando regra](assets/when-rule-example.png)
 
-Regra no editor visual
+Regra no visual editor
 
-Na regra de exemplo, a instrução na seção When é a condição, que quando retorna True, executa as ações especificadas na seção Then.
+No exemplo regra, a declaração na seção Quando é a condição, que quando retorna True, executa as ações especificadas na seção Then.
 
-A regra é exibida da seguinte maneira no editor de código.
+A regra é exibida da seguinte maneira na editor de código.
 
-![when-rule-example-code](assets/when-rule-example-code.png)
+![quando o código de exemplo regra](assets/when-rule-example-code.png)
 
-Regra no editor de código
+Regra no código editor
 
 ### Uso de uma saída de função em uma regra {#using-a-function-output-in-a-rule}
 

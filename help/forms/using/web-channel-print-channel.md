@@ -10,7 +10,7 @@ discoiquuid: 96d2b1cc-3252-4cc7-8b06-a897cbef8599
 docset: aem65
 feature: Interactive Communication
 exl-id: cd7dbdac-dc76-4a1f-b850-0a9f47ae08de
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '696'
 ht-degree: 0%
@@ -35,9 +35,9 @@ Para carregar o modelo, você precisa ser membro do grupo de usuários de formul
 
 1. Selecionar **[!UICONTROL Forms]** > **[!UICONTROL Forms e documentos]**.
 
-1. Toque **[!UICONTROL Criar]** > **[!UICONTROL Upload de arquivo]**.
+1. Selecionar **[!UICONTROL Criar]** > **[!UICONTROL Upload de arquivo]**.
 
-   Navegue e selecione o modelo de canal de impressão (XDP) apropriado e toque em **[!UICONTROL Abertura]**.
+   Navegue e selecione o modelo de canal de impressão (XDP) apropriado e selecione **[!UICONTROL Abertura]**.
 
 ## Canal da Web {#web-channel}
 
@@ -51,23 +51,23 @@ Para criar um modelo de canal da Web, conclua as seguintes etapas:
 
 1. Crie uma pasta Modelo para manter os modelos da Web de Comunicação interativa, caso ainda não tenha um. Para obter mais informações, consulte Pastas de modelo em [Modelos de página - Editável](/help/sites-developing/page-templates-editable.md).
 
-   1. Toque **[!UICONTROL Ferramentas]** ![ferramentas](assets/tools.png) > **[!UICONTROL Navegador de configuração]**.
+   1. Selecionar **[!UICONTROL Ferramentas]** ![ferramentas](assets/tools.png) > **[!UICONTROL Navegador de configuração]**.
       * Consulte a [Navegador de configuração](/help/sites-administering/configurations.md) para obter mais informações.
-   1. Na página Navegador de configuração, toque em **[!UICONTROL Criar]**.
-   1. Na caixa de diálogo Criar configuração, especifique um título para a pasta e marque **[!UICONTROL Modelos editáveis]** e toque em **[!UICONTROL Criar]**.
+   1. Na página Navegador de configuração, selecione **[!UICONTROL Criar]**.
+   1. Na caixa de diálogo Criar configuração, especifique um título para a pasta e marque **[!UICONTROL Modelos editáveis]** e selecione **[!UICONTROL Criar]**.
 
       A Pasta é criada e listada na página Navegador de configuração.
 
 1. Navegue até a pasta de modelo apropriada e crie um modelo da Web.
 
    1. Navegue até a pasta de modelo apropriada selecionando **[!UICONTROL Ferramentas]** > **[!UICONTROL Modelos]** > **`[Folder]`**.
-   1. Toque **[!UICONTROL Criar]**.
-   1. Selecionar **[!UICONTROL Comunicação interativa - Canal da Web]** e toque em **[!UICONTROL Próxima]**.
-   1. Insira um título e uma descrição para o modelo e toque em **[!UICONTROL Criar]**.
+   1. Selecione **[!UICONTROL Criar]**.
+   1. Selecionar **[!UICONTROL Comunicação interativa - Canal da Web]** e selecione **[!UICONTROL Próxima]**.
+   1. Insira um título e uma descrição para o modelo e selecione **[!UICONTROL Criar]**.
 
       O modelo é criado e uma caixa de diálogo é exibida.
 
-   1. Toque **[!UICONTROL Abertura]** para abrir o modelo criado no Editor de modelo.
+   1. Selecionar **[!UICONTROL Abertura]** para abrir o modelo criado no Editor de modelo.
 
       O Editor de modelo é exibido.
 
@@ -77,13 +77,13 @@ Para criar um modelo de canal da Web, conclua as seguintes etapas:
 
 1. Para permitir o uso desse modelo para a criação de Comunicações interativas, habilite o modelo.
 
-   1. Toque **[!UICONTROL Ferramentas]** ![ferramentas](assets/tools.png) > **[!UICONTROL Modelos]**.
-   1. Navegue até o modelo apropriado, selecione-o e toque em **[!UICONTROL Ativar]** e na mensagem de alerta, toque em **[!UICONTROL Ativar]**.
+   1. Selecionar **[!UICONTROL Ferramentas]** ![ferramentas](assets/tools.png) > **[!UICONTROL Modelos]**.
+   1. Navegue até o modelo apropriado, selecione-o e selecione **[!UICONTROL Ativar]** e na mensagem de alerta, selecione **[!UICONTROL Ativar]**.
 
       O modelo é ativado e seu status é exibido como Enabled. Agora você pode prosseguir para a criação de uma Comunicação interativa, onde é possível usar o modelo de canal da Web recém-criado.
 
-### Imprimir canal como principal para canal da Web {#print-channel-as-master-for-web-channel}
+### Canal de impressão como mestre para canal da Web {#print-channel-as-master-for-web-channel}
 
-Ao criar uma comunicação interativa, os autores podem selecionar essa opção para criar o canal da Web em sincronia com o canal de impressão. Usar o canal de impressão como principal para o canal da Web garante que o conteúdo, a herança e a vinculação de dados do canal da Web sejam derivados do canal de impressão, e as alterações feitas no canal de impressão podem ser refletidas no canal da Web. Os autores da Comunicação interativa podem, no entanto, interromper a herança de componentes específicos no canal da Web, conforme necessário.
+Ao criar uma comunicação interativa, os autores podem selecionar essa opção para criar o canal da Web em sincronia com o canal de impressão. Usar o canal de impressão como mestre para o canal da Web garante que o conteúdo, a herança e a vinculação de dados do canal da Web sejam derivados do canal de impressão, e as alterações feitas no canal de impressão podem ser refletidas no canal da Web. Os autores da Comunicação interativa podem, no entanto, interromper a herança de componentes específicos no canal da Web, conforme necessário.
 
-![Imprimir canal como principal](assets/create_ic_print_master_new.png) ![Canal da Web com canal de impressão principal](assets/create_ic_print_master_web_new.png)
+![Imprimir canal como mestre](assets/create_ic_print_master_new.png) ![Canal da Web com canal de impressão como mestre](assets/create_ic_print_master_web_new.png)

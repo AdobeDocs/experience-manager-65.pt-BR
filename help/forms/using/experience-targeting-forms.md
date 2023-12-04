@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 discoiquuid: 6cf54a08-d429-4a58-8429-a1cb784448d1
 exl-id: fdc91054-3f7e-4cbf-bdfa-7d7a621747f1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
@@ -30,26 +30,26 @@ Configure o Adobe Target no AEM para usá-lo com formulários adaptáveis e comu
 
 ## Criação de uma atividade do Target {#creating-a-target-activity}
 
-1. Toque **Adobe Experience Manager > Personalização > Atividades**.
+1. Selecionar **Adobe Experience Manager > Personalização > Atividades**.
 
    `https://<hostname>:<port>/libs/cq/personalization/touch-ui/content/v2/activities.html`
 
-1. Na página Atividades, toque em **Criar > Criar marca**.
+1. Na página Atividades, selecione **Criar > Criar marca**.
 1. Você deverá escolher um modelo e inserir as propriedades.
 
-   Selecione um modelo e toque em **Próximo.** Insira o título da marca na seção Propriedades e toque em **Criar.**
+   Selecione um modelo, selecione **Próximo.** Insira o título da marca na seção Propriedades e selecione **Criar.**
 Sua marca agora está listada na página Atividades.
 
-1. Toque na sua marca na página Atividades.
-1. Na Área Principal da sua marca, toque em **Criar** > **Criar atividade**.
+1. Selecione sua marca na página Atividades.
+1. Na Área principal da sua marca, selecione **Criar** > **Criar atividade**.
 
    Ao criar uma atividade, especifique seus detalhes, o público-alvo e as configurações.
 
-   A seção Detalhes inclui nome, mecanismo de direcionamento e objetivo. Ao selecionar o Adobe Target como mecanismo de direcionamento, você ativa a opção Configuração da nuvem do Target. Escolha a configuração da nuvem do Target, escolha o Tipo de atividade, forneça o objetivo da atividade e toque em **Próxima**. A comunicação interativa suporta somente o tipo de atividade de direcionamento de experiência.
+   A seção Detalhes inclui nome, mecanismo de direcionamento e objetivo. Ao selecionar o Adobe Target como mecanismo de direcionamento, você ativa a opção Configuração da nuvem do Target. Escolha a configuração da nuvem do Target, o tipo de atividade, forneça o objetivo da atividade e selecione **Próxima**. A comunicação interativa suporta somente o tipo de atividade de direcionamento de experiência.
 
-   A seção Target permite adicionar a experiência de público-alvo e nomeá-la. Clique em **Adicionar experiência** para habilitar o **Selecionar público-alvo** e **Nomear experiência** opções. Toque **Selecionar público-alvo** para ver uma lista de públicos-alvo e sua origem. Selecione um público-alvo na lista Nome do público-alvo. Toque **Adicionar experiência** para nomear a experiência e toque em **Próxima**.
+   A seção Target permite adicionar a experiência de público-alvo e nomeá-la. Clique em **Adicionar experiência** para habilitar o **Selecionar público-alvo** e **Nomear experiência** opções. Selecionar **Selecionar público-alvo** para ver uma lista de públicos-alvo e sua origem. Selecione um público-alvo na lista Nome do público-alvo. Selecionar **Adicionar experiência** para nomear a experiência e selecione **Próxima**.
 
-   A seção Metas e configurações permite agendar e priorizar sua atividade. Defina a data de início, a data de término e a prioridade da atividade, a métrica de meta, a métrica adicional e toque em **Salvar**.
+   A seção Metas e configurações permite agendar e priorizar sua atividade. Defina a data de início, a data de término e a prioridade da atividade, a métrica de meta, a métrica adicional e selecione **Salvar**.
 
    A atividade agora está listada na página da sua marca.
 
@@ -73,12 +73,12 @@ Sua marca agora está listada na página Atividades.
 
 1. Para habilitar a estrutura de destino para formulários adaptáveis, navegue até o formulário ou a comunicação interativa e abra-a no modo de edição.
 
-   Para abrir um formulário ou comunicação interativa no modo de edição, toque em **Selecionar** e toque em **Abertura**.
+   Para abrir um formulário ou comunicação interativa no modo de edição, selecione **Selecionar** e selecione **Abertura**.
 
-   Como alternativa, quatro botões são exibidos quando você move o ponteiro sobre o formulário ou o ícone de comunicação interativa sem selecioná-lo. Você pode tocar no **Editar** que aparece, para abrir o formulário no modo de edição.
+   Como alternativa, quatro botões são exibidos quando você move o ponteiro sobre o formulário ou o ícone de comunicação interativa sem selecioná-lo. É possível selecionar a variável **Editar** que aparece, para abrir o formulário no modo de edição.
 
-1. Na barra de ferramentas da página, toque em **Informações da página** ![theme-options](assets/theme-options.png) > **Abrir propriedades**.
-1. Na guia General, escolha uma configuração para o **Adobe Target** campo. Toque **Salvar e fechar**.
+1. Na barra de ferramentas da página, selecione **Informações da página** ![theme-options](assets/theme-options.png) > **Abrir propriedades**.
+1. Na guia General, escolha uma configuração para o **Adobe Target** campo. Selecionar **Salvar e fechar**.
 
 ## Aplicação da atividade criada a uma imagem de formulário adaptável ou a uma imagem de comunicação interativa {#applying-created-activity-to-an-adaptive-form-image-or-an-interactive-communication-image}
 
@@ -91,11 +91,11 @@ Sua marca agora está listada na página Atividades.
    >O AEM Forms oferece suporte somente para direcionamento de componentes de imagem. Verifique se o painel que hospeda o componente de imagem não contém nenhum outro componente e se o número de colunas do painel está definido como 1.
 
 1. Alternar de **Editar** para **Direcionamento** modo. A opção para alternar modos está próxima ao canto superior direito.
-1. Selecione um **MARCA**, selecione **ATIVIDADE** e toque em **Iniciar o direcionamento**. A variável **Públicos-alvo** é exibido no lado direito do editor.
+1. Selecione um **MARCA**, selecione **ATIVIDADE** e selecione **Iniciar o direcionamento**. A variável **Públicos-alvo** é exibido no lado direito do editor.
 
    ![menu de direcionamento](assets/targeting-menu.png)
 
-1. Selecione um público-alvo na **Públicos-alvo** e toque na imagem para direcionar. Um menu é exibido. No menu, toque em **Target**. Toque na imagem e toque em **Configurar**. Na janela de propriedades, selecione a imagem a ser exibida para o público-alvo selecionado. Repita a etapa para todos os públicos-alvo. O direcionamento da experiência é habilitado para a imagem na comunicação interativa ou no formulário adaptável.
+1. Selecione um público-alvo na **Públicos-alvo** e selecione a imagem a ser direcionada. Um menu é exibido. No menu, selecione **Target**. Selecione a imagem e **Configurar**. Na janela de propriedades, selecione a imagem a ser exibida para o público-alvo selecionado. Repita a etapa para todos os públicos-alvo. O direcionamento da experiência é habilitado para a imagem na comunicação interativa ou no formulário adaptável.
 
 ## Verifique se a atividade criada é sincronizada com o servidor do Target {#check-if-the-created-activity-syncs-with-the-target-server}
 

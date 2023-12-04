@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-source-git-commit: d0768679182567cc7cd618adaa78b6518f902f7c
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1861'
-ht-degree: 5%
+source-wordcount: '1844'
+ht-degree: 4%
 
 ---
 
@@ -649,7 +649,7 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
    <td>
     <ul>
      <li>Caixa numérica</li>
-     <li>Escalonador numérico<br /> </li>
+     <li>Escalonador Numérico<br /> </li>
      <li>Seletor de data</li>
     </ul> </td>
   </tr>
@@ -736,7 +736,7 @@ Para permitir que todo o Forms adaptável baseado em esquema JSON gere dados com
 
 1. Acesse o console da Web do Experience Manager em `https://server:host/system/console/configMgr`.
 1. Localizar **[!UICONTROL Configuração do canal da Web de comunicação adaptável e interativa]**.
-1. Toque para abrir a configuração no modo de edição.
+1. Selecione para abrir a configuração no modo de edição.
 1. Selecione o **[!UICONTROL Gerar dados compatíveis com o esquema]** caixa de seleção
 1. Salve as configurações.
 

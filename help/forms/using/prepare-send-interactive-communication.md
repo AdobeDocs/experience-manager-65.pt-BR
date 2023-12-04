@@ -5,9 +5,9 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2021'
+source-wordcount: '2010'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Ao preparar a Comunicação interativa usando a interface do agente, o agente ge
 ## Preparar a comunicação interativa usando a interface do usuário do agente {#prepare-interactive-communication-using-the-agent-ui}
 
 1. Selecionar **[!UICONTROL Forms]** > **[!UICONTROL Forms e documentos]**.
-1. Selecione a comunicação interativa apropriada e toque em **[!UICONTROL Abrir IU do agente]**.
+1. Selecione a comunicação interativa apropriada e selecione **[!UICONTROL Abrir IU do agente]**.
 
    >[!NOTE]
    >
@@ -47,7 +47,7 @@ Ao preparar a Comunicação interativa usando a interface do agente, o agente ge
 
 1. Na guia Dados, insira os dados de variáveis, propriedades do modelo de dados de formulário e campos do modelo de impressão (XDP), conforme necessário. Preencha todos os campos obrigatórios marcados com um asterisco (&amp;ast;) para habilitar o **Enviar** botão.
 
-   Toque em um valor de campo de dados na visualização de Comunicação interativa para realçar o campo de dados correspondente na guia Dados ou vice-versa.
+   Selecione um valor de campo de dados na visualização de Comunicação interativa para realçar o campo de dados correspondente na guia Dados ou vice-versa.
 
 ### Gerenciar conteúdo {#manage-content}
 
@@ -57,7 +57,7 @@ Na guia Conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
 
    ![agentuicontenttab](assets/agentuicontenttab.png)
 
-1. Edite os fragmentos do documento, conforme necessário, na guia Conteúdo. Para focalizar o fragmento relevante na hierarquia de conteúdo, você pode tocar na linha ou no parágrafo relevante na pré-visualização da Comunicação interativa ou tocar no fragmento diretamente na hierarquia de conteúdo.
+1. Edite os fragmentos do documento, conforme necessário, na guia Conteúdo. Para focalizar o fragmento relevante na hierarquia de conteúdo, você pode selecionar a linha ou o parágrafo relevante na pré-visualização da Comunicação interativa ou selecionar o fragmento diretamente na hierarquia de conteúdo.
 
    Por exemplo, o fragmento do documento com a linha &quot;Faça um pagamento online agora ...&quot; é selecionado na pré-visualização no gráfico abaixo e o mesmo fragmento do documento foi selecionado na guia Conteúdo.
 
@@ -65,7 +65,7 @@ Na guia Conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
 
    Na guia Conteúdo ou Dados, tocando em Realçar módulos selecionados no conteúdo ( ![highlightselectedmodulesincontentcr](assets/highlightselectedmodulesincontentccr.png)) na parte superior esquerda da visualização, você pode desativar ou ativar a funcionalidade para acessar o fragmento do documento quando o texto, parágrafo ou campo de dados relevante for tocado/selecionado na visualização.
 
-   Os fragmentos que podem ser editados pelo agente ao criar a comunicação interativa têm a opção Editar conteúdo selecionado ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)) ícone. Toque no ícone Editar conteúdo selecionado para iniciar o fragmento no modo de edição e fazer alterações nele. Use as seguintes opções para formatar e gerenciar texto:
+   Os fragmentos que podem ser editados pelo agente ao criar a comunicação interativa têm a opção Editar conteúdo selecionado ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)) ícone. Selecione o ícone Editar conteúdo selecionado para iniciar o fragmento no modo de edição e fazer alterações nele. Use as seguintes opções para formatar e gerenciar texto:
 
    * [Opções de formatação](#formattingtext)
 
@@ -89,11 +89,11 @@ Na guia Conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
 
 1. Selecionar **[!UICONTROL Anexo]**. A interface do usuário do agente exibe os anexos disponíveis conforme configurados ao criar a Comunicação interativa.
 
-   Você pode optar por não enviar um anexo juntamente com a Comunicação interativa tocando no ícone de exibição e tocar na cruz no anexo para excluí-lo (se o agente tiver permissão para excluir ou ocultar o anexo) da Comunicação interativa. Para os anexos especificados como obrigatórios ao criar a Comunicação interativa, os ícones Exibir e Excluir são desativados.
+   Você pode optar por não enviar um anexo juntamente com a Comunicação interativa tocando no ícone de exibição e pode selecionar a cruz no anexo para excluí-lo (se o agente tiver permissão para excluir ou ocultar o anexo) da Comunicação interativa. Para os anexos especificados como obrigatórios ao criar a Comunicação interativa, os ícones Exibir e Excluir são desativados.
 
    ![attachmentsagentui](assets/attachmentsagentui.png)
 
-1. Toque em Acesso à biblioteca ( ![libraryaccess](assets/libraryaccess.png)) para acessar a Biblioteca de conteúdo e inserir ativos DAM como anexos.
+1. Selecione o Acesso à biblioteca ( ![libraryaccess](assets/libraryaccess.png)) para acessar a Biblioteca de conteúdo e inserir ativos DAM como anexos.
 
    >[!NOTE]
    >
@@ -102,7 +102,7 @@ Na guia Conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
 1. Se a ordem dos anexos não tiver sido bloqueada durante a criação da Comunicação interativa, você poderá reordenar os anexos selecionando um anexo e tocando nas setas para baixo e para cima.
 1. Use a Visualização da Web e a Visualização de impressão para ver se as duas saídas estão de acordo com sua necessidade.
 
-   Se você achar as visualizações satisfatórias, toque em **[!UICONTROL Enviar]** para enviar a Comunicação interativa a um processo de publicação. Ou, para fazer alterações, saia da visualização para voltar para a criação de alterações.
+   Se você achar as visualizações satisfatórias, selecione **[!UICONTROL Enviar]** para enviar a Comunicação interativa a um processo de publicação. Ou, para fazer alterações, saia da visualização para voltar para a criação de alterações.
 
 ## Formatação de texto {#formattingtext}
 
@@ -122,7 +122,7 @@ Barra de ferramentas Lista
 
 ### Realçar/Enfatizar partes do texto {#highlightemphasize}
 
-Para destacar\enfatizar partes do texto em um fragmento editável, selecione o texto e toque em Realçar cor.
+Para destacar\enfatizar partes do texto em um fragmento editável, selecione o texto e selecione Realçar cor.
 
 ![highlighttextagentui](assets/highlighttextagentui.png)
 
@@ -183,22 +183,22 @@ Por padrão, o recurso Salvar como rascunho não está ativado. Execute as segui
    A SPI permite salvar a versão de rascunho da Comunicação interativa no banco de dados com uma ID de rascunho como o identificador exclusivo. Essas instruções pressupõem que você tenha conhecimento prévio sobre como criar um pacote OSGi usando um projeto Maven.
 
    Para obter exemplos de implementação de SPI, consulte [Exemplo de implementação de SPI ccrDocumentInstance](#sample-ccrDocumentInstance-spi).
-1. Abertura `http://<hostname>:<port>/ system/console/bundles` e toque em **[!UICONTROL Instalar/Atualizar]** para fazer upload do pacote OSGi. Verifique se o status do pacote carregado é exibido como **Ativo**. Reinicie o servidor se o status do pacote não for exibido como **Ativo**.
+1. Abertura `http://<hostname>:<port>/ system/console/bundles` e selecione **[!UICONTROL Instalar/Atualizar]** para fazer upload do pacote OSGi. Verifique se o status do pacote carregado é exibido como **Ativo**. Reinicie o servidor se o status do pacote não for exibido como **Ativo**.
 1. Acesse `https://'[server]:[port]'/system/console/configMgr`.
-1. Toque **[!UICONTROL Criar configuração de correspondência]**.
-1. Selecionar **[!UICONTROL Habilitar Salvar Usando CCRDocumentInstanceService]** e toque em **[!UICONTROL Salvar]**.
+1. Selecionar **[!UICONTROL Criar configuração de correspondência]**.
+1. Selecionar **[!UICONTROL Habilitar Salvar Usando CCRDocumentInstanceService]** e selecione **[!UICONTROL Salvar]**.
 
 ### Salvar uma comunicação interativa como rascunho {#save-as-draft-agent-ui}
 
 Execute as seguintes etapas para salvar uma Comunicação interativa como rascunho:
 
-1. Selecione uma Comunicação interativa no Forms Manager e toque em **[!UICONTROL Abrir IU do agente]**.
+1. Selecione uma comunicação interativa no Forms Manager e selecione **[!UICONTROL Abrir IU do agente]**.
 
-1. Faça as alterações apropriadas na interface do usuário do agente e toque em **[!UICONTROL Salvar como rascunho]**.
+1. Faça as alterações apropriadas na interface do usuário do agente e selecione **[!UICONTROL Salvar como rascunho]**.
 
-1. Especifique o nome do Rascunho nas **[!UICONTROL Nome]** e toque em **[!UICONTROL Concluído]**.
+1. Especifique o nome do Rascunho nas **[!UICONTROL Nome]** e selecione **[!UICONTROL Concluído]**.
 
-Depois de salvar a Comunicação interativa como rascunho, toque em **[!UICONTROL Salvar alterações]** para salvar quaisquer alterações adicionais no rascunho.
+Depois de salvar a Comunicação interativa como um rascunho, selecione **[!UICONTROL Salvar alterações]** para salvar quaisquer alterações adicionais no rascunho.
 
 ### Recuperar o rascunho de uma comunicação interativa {#retrieve-draft}
 

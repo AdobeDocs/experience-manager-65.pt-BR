@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 docset: aem65
 exl-id: 82282e2d-63a1-47e9-b2ec-f50a4bd32bd3
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Adicionar anexos em formulários sincronizados com o servidor do AEM Forms Workflow (AEM Forms no JEE) {#adding-annotations}
 
-O aplicativo AEM Forms permite anexar imagens, anotações com script e notas de texto ao seu formulário sincronizado com o servidor do AEM Forms JEE. Se o formulário for carregado de um servidor do AEM Forms Workflow, os anexos serão adicionados ao formulário. Você pode tocar no botão de anexo ![anexos-aplicativo](assets/attachments-app.png) para ver todos os anexos em um formulário juntos. A notificação em vermelho especifica o número de anexos no formulário. Se não houver anexos no formulário, você não poderá ver o botão vermelho de notificações. Se não houver anexos no formulário, ao tocar no botão anexos ![anexar](assets/attch.png), você tem opções para anexar fotos ou rabiscos.
+O aplicativo AEM Forms permite anexar imagens, anotações com script e notas de texto ao seu formulário sincronizado com o servidor do AEM Forms JEE. Se o formulário for carregado de um servidor do AEM Forms Workflow, os anexos serão adicionados ao formulário. Você pode selecionar o botão de anexo ![anexos-aplicativo](assets/attachments-app.png) para ver todos os anexos em um formulário juntos. A notificação em vermelho especifica o número de anexos no formulário. Se não houver anexos no formulário, você não poderá ver o botão vermelho de notificações. Se não houver anexos no formulário, ao selecionar o botão de anexos ![anexar](assets/attch.png), você tem opções para anexar fotos ou rabiscos.
 
 As opções são:
 
@@ -34,7 +34,7 @@ As opções são:
 
 ### A tela Attachments {#the-attachments-screen}
 
-Para ver todos os anexos em um local, toque em ![anexos-aplicativo](assets/attachments-app.png). Você pode adicionar, renomear e excluir anexos aqui.
+Para ver todos os anexos em um local, selecione ![anexos-aplicativo](assets/attachments-app.png). Você pode adicionar, renomear e excluir anexos aqui.
 
 ![Todos os anexos em um local](assets/attachments-screen.png)
 
@@ -44,26 +44,26 @@ Você pode usar o **+** botão na tela Anexos para anexar outra imagem, rabisco 
 
 Você pode usar a câmera do dispositivo móvel ou as imagens salvas no dispositivo para anexar uma imagem no formulário.
 
-1. Toque no botão de anexo ![anexar](assets/attch.png) na parte inferior da janela.
-1. Toque **Galeria** ou **Câmera** no pop-up exibido.
+1. Selecionar o botão de anexo ![anexar](assets/attch.png) na parte inferior da janela.
+1. Selecionar **Galeria** ou **Câmera** no pop-up exibido.
 1. Com base na opção selecionada, execute o seguinte procedimento:
 
    1. Se você selecionar **Câmera**.
 
-      Tire uma foto. Em seguida, toque no **Uso** ![use-pic](assets/use-pic.png) botão.
+      Tire uma foto. Em seguida, selecione o **Uso** ![use-pic](assets/use-pic.png) botão.
 
-      Ou toque no **Refazer** ![retomar](assets/retake.png) botão para tirar a fotografia novamente.
+      Ou selecione a variável **Refazer** ![retomar](assets/retake.png) botão para tirar a fotografia novamente.
 
    1. Se você selecionar **Galeria**.
 
-      O navegador de imagens do dispositivo aparece. No navegador de imagens do dispositivo, toque na imagem que deseja anexar.
+      O navegador de imagens do dispositivo aparece. No navegador de imagens do dispositivo, selecione a imagem que deseja anexar.
 
 ### Adição de uma observação {#adding-a-note}
 
 A variável **Notas** permite adicionar rabiscos à mão livre e anexos de texto ao formulário.
 
-1. Toque no botão de anexo ![anexar](assets/attch.png) na parte inferior da janela.
-1. Toque **Notas** no pop-up exibido.
+1. Selecionar o botão de anexo ![anexar](assets/attch.png) na parte inferior da janela.
+1. Selecionar **Notas** no pop-up exibido.
 1. Na interface do usuário do Notes que é iniciada, capture um rabisco à mão livre.
 
    ![Interface de rabisco](assets/scribble-ui.png)

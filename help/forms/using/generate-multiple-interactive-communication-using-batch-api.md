@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2206'
+source-wordcount: '2136'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ Para criar a comunicação interativa a partir de registros salvos em um arquivo
 
 1. Criar um [Pasta monitorada](/help/forms/using/creating-configure-watched-folder.md) e configurá-lo para usar a API em lote:
    1. Faça logon na instância de autor do AEM Forms.
-   1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configurar a pasta monitorada]**. Toque **[!UICONTROL Novo]**.
+   1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configurar a pasta monitorada]**. Selecionar **[!UICONTROL Novo]**.
    1. Especifique a **[!UICONTROL Nome]** e físico **[!UICONTROL Caminho]** da pasta. Por exemplo, `c:\batchprocessing`.
    1. Selecione o **[!UICONTROL Serviço]** opção no **[!UICONTROL Processar arquivo usando]** campo.
    1. Selecione o **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InterativeCommunicationBatchServiceImpl]** serviço no **[!UICONTROL Nome do serviço]** campo.
@@ -97,7 +97,7 @@ Para criar a comunicação interativa a partir de registros salvos em um arquivo
       | batchType | String | Defina o valor como PRINT, WEB ou WEB_AND_PRINT. O valor padrão é WEB_AND_PRINT. |
       | localidade | String | Especifique a localidade da comunicação interativa de saída. O serviço pronto para uso não usa a opção de local, mas você pode criar um serviço personalizado para gerar comunicações interativas localizadas. O valor padrão é en_US |
 
-   1. Toque **[!UICONTROL Criar]** A pasta monitorada é criada.
+   1. Selecionar **[!UICONTROL Criar]** A pasta monitorada é criada.
 1. Usar a pasta monitorada para gerar comunicação interativa:
    1. Abra a Pasta monitorada. Navegue até a pasta de entrada.
    1. Crie uma pasta na pasta de entrada e coloque o arquivo JSON na pasta recém-criada.
@@ -113,9 +113,9 @@ Você combina dados (registros) salvos em uma fonte de dados externa com um mode
 
 1. Configure o Modelo de dados de formulário do modelo:
    1. Abra o Modelo de dados de formulário associado ao modelo de comunicação interativa.
-   1. Selecione o OBJETO DE MODELO DE NÍVEL SUPERIOR e toque em Editar propriedades.
+   1. Selecione o OBJETO DE MODELO DE NÍVEL SUPERIOR e selecione Editar propriedades.
    1. Selecione a busca ou obtenção do serviço no campo Serviço de leitura no painel Editar propriedades.
-   1. Toque no ícone de lápis do argumento do serviço de leitura para vincular o argumento a um Atributo de solicitação e especificar o valor da vinculação. Ele vincula o argumento service ao atributo de vinculação especificado ou ao valor literal, que é transmitido ao serviço como um argumento para buscar detalhes associados ao valor especificado da fonte de dados.
+   1. Selecione o ícone de lápis para o argumento do serviço de leitura para vincular o argumento a um Atributo de solicitação e especifique o valor da vinculação. Ele vincula o argumento service ao atributo de vinculação especificado ou ao valor literal, que é transmitido ao serviço como um argumento para buscar detalhes associados ao valor especificado da fonte de dados.
 
       <br>
         Neste exemplo, o argumento id pega o valor do atributo id do perfil do usuário e o passa como um argumento para o serviço de leitura. Ele lerá e retornará valores de propriedades associadas do objeto de modelo de dados do funcionário para a id especificada. Portanto, se você especificar 00250 no campo id do formulário, o serviço de leitura lerá os detalhes do funcionário com a ID de funcionário 00250.
@@ -143,7 +143,7 @@ Você combina dados (registros) salvos em uma fonte de dados externa com um mode
 
 1. Criar um [Pasta monitorada](/help/forms/using/creating-configure-watched-folder.md) e configurá-lo para usar o serviço de API em lote:
    1. Faça logon na instância de autor do AEM Forms.
-   1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configurar a pasta monitorada]**. Toque **[!UICONTROL Novo]**.
+   1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configurar a pasta monitorada]**. Selecionar **[!UICONTROL Novo]**.
    1. Especifique a **[!UICONTROL Nome]** e físico **[!UICONTROL Caminho]** da pasta. Por exemplo, `c:\batchprocessing`.
    1. Selecione o **[!UICONTROL Serviço]** opção no **[!UICONTROL Processar arquivo usando]** campo.
    1. Selecione o **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InterativeCommunicationBatchServiceImpl]** serviço no **[!UICONTROL Nome do serviço]** campo.
@@ -159,7 +159,7 @@ Você combina dados (registros) salvos em uma fonte de dados externa com um mode
       | batchType | String | Defina o valor como PRINT, WEB ou WEB_AND_PRINT. O valor padrão é WEB_AND_PRINT. |
       | localidade | String | Especifique a localidade da comunicação interativa de saída. O serviço pronto para uso não usa a opção de local, mas você pode criar um serviço personalizado para gerar comunicações interativas localizadas. O valor padrão é en_US. |
 
-   1. Toque **[!UICONTROL Criar]** A pasta monitorada é criada.
+   1. Selecionar **[!UICONTROL Criar]** A pasta monitorada é criada.
 1. Usar a pasta monitorada para gerar comunicação interativa:
    1. Abra a Pasta monitorada. Navegue até a pasta de entrada.
    1. Crie uma pasta na pasta de entrada. Coloque o arquivo JSON criado na Etapa 2 na pasta recém-criada.

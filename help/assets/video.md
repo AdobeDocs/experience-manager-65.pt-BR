@@ -10,10 +10,10 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 0738f53564cb2e2607d739d97bdd1bb2fc64ac6e
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '11310'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -109,7 +109,7 @@ Saiba mais sobre [Práticas recomendadas para organizar ativos digitais para usa
    * Se você estiver usando um sistema de gerenciamento de conteúdo da Web de terceiros, é possível vincular ou incorporar vídeos às suas páginas da Web.
 
       * Integrar vídeo usando o URL:
-        [Vincular URLs ao seu aplicativo web](linking-urls-to-yourwebapplication.md).
+        [Vincular URLs ao aplicativo da Web](linking-urls-to-yourwebapplication.md).
 
       * Integrar vídeo usando o código integrado em uma página da Web:
         [Incorporar o visualizador de vídeo em uma página da Web](embed-code.md).
@@ -229,7 +229,7 @@ A tabela a seguir descreve o dispositivo, o navegador e o método de reproduçã
   </tr>
   <tr>
    <td>Desktop</td>
-   <td>Chrome</td>
+   <td>Cromo</td>
    <td>Transmissão da taxa de bits adaptável DASH* ou HLS.</td>
   </tr>
   <tr>
@@ -238,32 +238,32 @@ A tabela a seguir descreve o dispositivo, o navegador e o método de reproduçã
    <td>Transmissão da taxa de bits adaptável HLS.</td>
   </tr>
   <tr>
-   <td>Móvel</td>
+   <td>Mobile</td>
    <td>Chrome (Android™ 6 ou anterior)</td>
    <td>Download progressivo.</td>
   </tr>
   <tr>
-   <td>Móvel</td>
+   <td>Mobile</td>
    <td>Chrome (Android™ 7 ou posterior)</td>
    <td>Transmissão da taxa de bits adaptável DASH* ou HLS.</td>
   </tr>
   <tr>
-   <td>Móvel</td>
+   <td>Mobile</td>
    <td>Android™ (navegador padrão)</td>
    <td>Download progressivo.</td>
   </tr>
   <tr>
-   <td>Móvel</td>
+   <td>Mobile</td>
    <td>Safari (iOS)</td>
    <td>Transmissão da taxa de bits adaptável HLS.</td>
   </tr>
   <tr>
-   <td>Móvel</td>
+   <td>Mobile</td>
    <td>Chrome (iOS)</td>
    <td>Transmissão da taxa de bits adaptável HLS.</td>
   </tr>
   <tr>
-   <td>Móvel</td>
+   <td>Mobile</td>
    <td>BlackBerry®</td>
    <td>Transmissão da taxa de bits adaptável DASH* ou HLS./td&gt;
   </tr>
@@ -329,10 +329,10 @@ A tabela a seguir descreve como os resultados da fórmula são convertidos em op
 
 | Resultado da fórmula | Taxa de proporção |
 |--- |--- |
-| 1.33 | 4:3 |
-| 0.75 | 3:4 |
-| 1.78 | 16:9 |
-| 0.56 | 9:16 |
+| 1,33 | 4:3 |
+| 0,75 | 3:4 |
+| 1,78 | 16:9 |
+| 0,56 | 9:16 |
 
 Por exemplo, um vídeo com largura de 1440 x altura de 1080 tem uma taxa de proporção de 1440/1080 ou 1,33. Nesse caso, você escolhe uma predefinição de codificação de vídeo com uma proporção 4:3 para codificar o arquivo de vídeo.
 
@@ -374,8 +374,8 @@ Resolução e taxa de dados são dois fatores vinculados integralmente que deter
 
 | Resolução | Pixels por quadro |
 |--- |--- |
-| 320 x 240 | 76,800 |
-| 640 x 480 | 307,200 |
+| 320 x 240 | 76.800 |
+| 640 x 480 | 307.200 |
 
 O arquivo de 640 x 480 tem quatro vezes mais pixels por quadro. Para obter a mesma taxa de dados para essas duas resoluções de exemplo, aplique quatro vezes a compactação ao arquivo 640 x 480, o que pode reduzir a qualidade do vídeo. Portanto, uma taxa de dados de vídeo de 250 Kbps produz uma visualização de alta qualidade com resolução de 320 x 240, mas não com resolução de 640 x 480.
 
@@ -415,7 +415,7 @@ Por exemplo, suponha que a origem de vídeo seja 1920 x 1080. Na tabela a seguir
 
 | Tipo de vídeo | Largura x altura | Proporção de largura | Taxa de altura |
 |--- |--- |--- |--- |
-| Origem | 1920x1080 | 1 | 1 |
+| Origem | 1920 x 1080 | 1 | 1 |
 | Codificado | 960 x 540 | 2 | 2 |
 | Codificado | 640 x 360 | 3 | 3 |
 | Codificado | 480 x 270 | 4 | 4 |
@@ -496,7 +496,7 @@ Os Relatórios de vídeo exibem várias métricas agregadas em um período espec
 
 Uma tabela de todos *publicado* os vídeos também são listados para que você possa rastrear os vídeos mais visualizados do seu site com base no total de inícios de vídeo.
 
-Ao tocar em um nome de vídeo na lista, ele mostra o relatório de retenção de público-alvo (drop-off) do vídeo no formato de um gráfico de linhas. O gráfico exibe o número de visualizações em um determinado momento durante a reprodução do vídeo. Ao reproduzir o vídeo, a barra vertical é rastreada em sincronização com o indicador de tempo no reprodutor. Quedas nos dados do gráfico de linhas indicam onde o público-alvo cai de desinteresse.
+Ao selecionar um nome de vídeo na lista, ele mostra o relatório de retenção de público-alvo (drop-off) do vídeo no formato de um gráfico de linhas. O gráfico exibe o número de visualizações em um determinado momento durante a reprodução do vídeo. Ao reproduzir o vídeo, a barra vertical é rastreada em sincronização com o indicador de tempo no reprodutor. Quedas nos dados do gráfico de linhas indicam onde o público-alvo cai de desinteresse.
 
 Se o vídeo foi codificado fora do Adobe Experience Manager Dynamic Media, o gráfico de retenção de público-alvo (drop-off) e os dados de Porcentagem de reprodução na tabela não estarão disponíveis.
 
@@ -508,22 +508,22 @@ Consulte também [Configurar o Dynamic Media Cloud Service](/help/assets/config-
 
 Por padrão, na primeira vez que você insere Relatórios de vídeo, o relatório exibe os dados de vídeo começando no primeiro dia do mês atual e termina com a data do mês atual. No entanto, é possível substituir o intervalo de datas padrão especificando seu próprio intervalo de datas. Na próxima vez que você inserir Relatórios de vídeo, o intervalo de datas especificado será usado.
 
-Para que os relatórios de vídeo funcionem corretamente, uma ID do conjunto de relatórios é criada automaticamente quando o Dynamic Media Cloud Service é configurado. Ao mesmo tempo, a ID do conjunto de relatórios é enviada para o servidor de publicação para que fique disponível para o recurso Copiar URL ao visualizar ativos. No entanto, essa funcionalidade exige que o servidor de publicação já esteja configurado. Se o servidor de publicação não estiver configurado, ainda será possível publicar para ver o relatório de vídeo. No entanto, retorne à Configuração da nuvem do Dynamic Media e toque em **[!UICONTROL OK]**.
+Para que os relatórios de vídeo funcionem corretamente, uma ID do conjunto de relatórios é criada automaticamente quando o Dynamic Media Cloud Service é configurado. Ao mesmo tempo, a ID do conjunto de relatórios é enviada para o servidor de publicação para que fique disponível para o recurso Copiar URL ao visualizar ativos. No entanto, essa funcionalidade exige que o servidor de publicação já esteja configurado. Se o servidor de publicação não estiver configurado, ainda será possível publicar para ver o relatório de vídeo. No entanto, retorne à Configuração da nuvem do Dynamic Media e selecione **[!UICONTROL OK]**.
 
 **Para exibir relatórios de vídeo:**
 
-1. No canto superior esquerdo do Experience Manager, toque no logotipo do Experience Manager e, no painel à esquerda, toque em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Assets]** > **[!UICONTROL Relatórios de vídeo]**.
+1. No canto superior esquerdo do Experience Manager, selecione o logotipo do Experience Manager e, no painel à esquerda, selecione **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Assets]** > **[!UICONTROL Relatórios de vídeo]**.
 1. Na página Relatórios de vídeo, siga um destes procedimentos:
 
-   * Próximo ao canto superior direito, toque no **Atualizar relatório de vídeo** ícone.
+   * Próximo ao canto superior direito, selecione a **Atualizar relatório de vídeo** ícone.
 Use Atualizar somente se a data final do relatório for o dia atual. Isso garante que você veja o rastreamento de vídeo que ocorreu desde a última vez que executou o relatório.
 
-   * Próximo ao canto superior direito, toque no **Seletor de data** ícone.
-Especifique o intervalo de datas inicial e final para o qual deseja dados de vídeo e toque em **[!UICONTROL Executar relatório]**.
+   * Próximo ao canto superior direito, selecione a **Seletor de data** ícone.
+Especifique o intervalo de datas inicial e final para o qual deseja dados de vídeo e selecione **[!UICONTROL Executar relatório]**.
 
    A caixa de grupo Métricas Principais identifica várias medidas agregadas para todas *publicado* vídeos em seu site.
 
-1. Na tabela que lista os vídeos mais publicados, toque em um nome de vídeo para reproduzir o vídeo e também veja o relatório de retenção de público-alvo (drop-off) do vídeo.
+1. Na tabela que lista os principais vídeos publicados, selecione um nome de vídeo para reproduzir o vídeo e também veja o relatório de retenção de público-alvo (drop-off) do vídeo.
 
 ### Visualize relatórios de vídeo com base em um visualizador de vídeo criado usando o SDK do visualizador do Dynamic Media HTML5 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
@@ -542,7 +542,7 @@ Use o [Manual de referência do Adobe Dynamic Media Viewers](https://experiencel
 
    A variável `config2` permite o rastreamento em Visualizadores HTML5. Também é uma predefinição específica da empresa que contém as informações de configuração para relatórios de vídeo e configurações do Adobe Analytics para clientes específicos.
 
-   O valor correto do parâmetro config2 é encontrado tanto no **[!UICONTROL Código incorporado]** quanto na função de cópia **[!UICONTROL URL]**. No URL do comando de cópia **[!UICONTROL URL]**, procure pelo parâmetro `&config2=<value>`. O valor é quase sempre `companypreset`, mas em algumas instâncias também pode ser `companypreset-1`, `companypreset-2` e assim por diante.
+   O valor correto do parâmetro config2 é encontrado em ambos **[!UICONTROL Código de inserção]** e na cópia **[!UICONTROL URL]** função. No URL da cópia **[!UICONTROL URL]** , o parâmetro a ser procurado é `&config2=<value>` . O valor é quase sempre `companypreset`, mas em algumas instâncias também pode ser `companypreset-1`, `companypreset-2` e assim por diante.
 
 1. Em seu código de visualizador de vídeo personalizado, adicione o AppMeasurementBridge .jsp à página do visualizador fazendo o seguinte:
 
@@ -901,13 +901,13 @@ Consulte [Veicular conteúdo estático (não imagem)](https://experienceleague.a
 
 1. Siga uma das seguintes opções:
 
-   * Para obter uma experiência de visualizador de vídeo pop-up, toque em **[!UICONTROL URL]**. Na caixa de diálogo URL, selecione e copie o URL para a Área de transferência e, em seguida, cole o URL em um editor de texto simples. Anexe o URL copiado do vídeo com a seguinte sintaxe:
+   * Para obter uma experiência de visualizador de vídeo pop-up, selecione **[!UICONTROL URL]**. Na caixa de diálogo URL, selecione e copie o URL para a Área de transferência e, em seguida, cole o URL em um editor de texto simples. Anexe o URL copiado do vídeo com a seguinte sintaxe:
 
      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
      Observe que `,1` no final do caminho da legenda. Imediatamente após a `.vtt` extensão de nome de arquivo no caminho, você pode, opcionalmente, ativar (ativar) ou desativar (desativar) o botão de legendas ocultas na barra do reprodutor de vídeo, definindo como `,1` ou `,0`, respectivamente.
 
-   * Para obter uma experiência de visualizador de vídeo incorporado, toque em **[!UICONTROL Código de inserção]**. Na caixa de diálogo Incorporar código, selecione e copie o código incorporado na Área de transferência e, em seguida, cole o código em um editor de texto simples. Anexe o código incorporado copiado com a seguinte sintaxe:
+   * Para obter uma experiência de visualizador de vídeo incorporado, selecione **[!UICONTROL Código de inserção]**. Na caixa de diálogo Incorporar código, selecione e copie o código incorporado na Área de transferência e, em seguida, cole o código em um editor de texto simples. Anexe o código incorporado copiado com a seguinte sintaxe:
 
      `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
@@ -971,8 +971,8 @@ Consulte [WebVTT: o formato de faixas de texto de vídeo da Web](https://w3c.git
        <td>
        <ol>
        <li>Navegue até a <i>publicado </i>ativo de vídeo que você deseja associar ao arquivo de capítulo carregado. Lembre-se de que os URLs só estão disponíveis para cópia <i>depois</i> que você <i>publicou</i> os ativos pela primeira vez. Consulte <a href="/help/assets/publishing-dynamicmedia-assets.md">Publicação de ativos.</a></li>
-       <li>No menu suspenso, clique ou toque em <strong>Visualizadores</strong>.</li>
-       <li>No painel à esquerda, toque ou clique no nome da predefinição do visualizador de vídeo. Uma visualização do vídeo é aberta em uma página separada.</li>
+       <li>No menu suspenso, clique em <strong>Visualizadores</strong>.</li>
+       <li>No painel à esquerda, clique no nome da predefinição do visualizador de vídeo. Uma visualização do vídeo é aberta em uma página separada.</li>
        <li>No painel esquerdo, na parte inferior, clique em <strong>URL</strong>.</li>
        <li>Na caixa de diálogo URL, selecione e copie o URL para a Área de transferência e, em seguida, cole o URL em um editor de texto simples.</li>
        <li>Anexe o URL copiado do vídeo com a seguinte sintaxe para que você possa associá-lo ao URL copiado para o arquivo de capítulo:<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
@@ -983,8 +983,8 @@ Consulte [WebVTT: o formato de faixas de texto de vídeo da Web](https://w3c.git
        <td>
        <ol>
        <li>Navegue até a <i>publicado </i>ativo de vídeo que você deseja associar ao arquivo de capítulo carregado. Lembre-se de que os URLs só estão disponíveis para cópia <i>depois</i> que você <i>publicou</i> os ativos pela primeira vez. Consulte <a href="/help/assets/publishing-dynamicmedia-assets.md">Publicação de ativos.</a></li>
-       <li>No menu suspenso, clique ou toque em <strong>Visualizadores</strong>.</li>
-       <li>No painel à esquerda, toque ou clique no nome da predefinição do visualizador de vídeo. Uma visualização do vídeo é aberta em uma página separada.</li>
+       <li>No menu suspenso, clique em <strong>Visualizadores</strong>.</li>
+       <li>No painel à esquerda, clique no nome da predefinição do visualizador de vídeo. Uma visualização do vídeo é aberta em uma página separada.</li>
        <li>No painel esquerdo, na parte inferior, clique em <strong>Incorporar</strong>.</li>
        <li>Na caixa de diálogo Incorporar código, selecione e copie o código inteiro para a Área de transferência e, em seguida, cole-o em um editor de texto simples.</li>
        <li>Anexe o código incorporado do vídeo com a seguinte sintaxe para que você possa associá-lo ao URL copiado para o arquivo de capítulo:<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li>
@@ -1021,25 +1021,25 @@ Essas etapas se aplicam apenas ao Dynamic Media executado no modo &quot;Dynamicm
    * [Seus vídeos foram carregados para a pasta](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
 1. Navegue até um ativo de vídeo carregado cuja imagem em miniatura você deseja alterar.
-1. No modo de seleção de ativos, **[!UICONTROL Exibição de lista]** ou **[!UICONTROL Exibição de cartão]**, toque no ativo de vídeo.
-1. Na barra de ferramentas, toque no **[!UICONTROL Propriedades]** ícone (um círculo com um &quot;i&quot;).
-1. Na página Propriedades do vídeo, toque em **[!UICONTROL Alterar miniatura]**.
+1. No modo de seleção de ativos, **[!UICONTROL Exibição de lista]** ou **[!UICONTROL Exibição de cartão]**, selecione o ativo de vídeo.
+1. Na barra de ferramentas, selecione o **[!UICONTROL Propriedades]** ícone (um círculo com um &quot;i&quot;).
+1. Na página Propriedades do vídeo, selecione **[!UICONTROL Alterar miniatura]**.
 1. Na página Alterar miniatura, siga um destes procedimentos:
 
    * Para usar um quadro do vídeo como a nova miniatura:
 
-      * Na barra de ferramentas, toque em **[!UICONTROL Selecionar quadro a partir do vídeo]**.
-      * Toque no botão Reproduzir e, em seguida, toque no botão Pausar no quadro que deseja capturar como a nova miniatura do vídeo.
+      * Na barra de ferramentas, selecione **[!UICONTROL Selecionar quadro a partir do vídeo]**.
+      * Selecione o botão Reproduzir e, em seguida, o botão Pausar no quadro que você deseja capturar como a nova miniatura do vídeo.
 
    * Para usar um ativo de imagem como a nova miniatura:
 
-      * Na barra de ferramentas, toque em **[!UICONTROL Selecionar miniatura dos ativos]**.
-      * Toque **[!UICONTROL Selecionar miniatura]**.
+      * Na barra de ferramentas, selecione **[!UICONTROL Selecionar miniatura dos ativos]**.
+      * Selecionar **[!UICONTROL Selecionar miniatura]**.
       * Navegue até um ativo de imagem carregado e publicado anteriormente que você deseja usar. O ativo é redimensionado automaticamente para servir como uma imagem em miniatura do vídeo.
-      * Selecione o ativo de imagem e toque em **[!UICONTROL Selecionar]**.
+      * Selecione o ativo de imagem e **[!UICONTROL Selecionar]**.
 
-1. Na página Alterar miniatura, toque em **[!UICONTROL Salvar alteração]**.
-1. Na página Propriedades do vídeo, no canto superior direito, toque em **[!UICONTROL Salvar e fechar]**.
+1. Na página Alterar miniatura, selecione **[!UICONTROL Salvar alteração]**.
+1. Na página Propriedades do vídeo, no canto superior direito, selecione **[!UICONTROL Salvar e fechar]**.
 
 ## Sobre miniaturas de vídeo no Dynamic Media - Modo híbrido {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
 
@@ -1060,15 +1060,15 @@ Essas etapas se aplicam apenas ao Dynamic Media executado no modo Híbrido.
 **Para adicionar uma miniatura de vídeo:**
 
 1. Navegue até um ativo de vídeo carregado ao qual deseja adicionar uma miniatura de vídeo.
-1. No modo de seleção de ativos, na Exibição em lista ou na Exibição de cartão, toque no ativo de vídeo.
-1. Na barra de ferramentas, toque no **[!UICONTROL Propriedades da exibição]** ícone (um círculo com um &quot;i&quot;).
-1. Na página Propriedades do vídeo, toque em **[!UICONTROL Alterar miniatura]**.
-1. Na página Alterar miniatura, na barra de ferramentas, toque em **[!UICONTROL Selecionar quadro]**.
+1. No modo de seleção de ativos, na Exibição em lista ou na Exibição de cartão, selecione o ativo de vídeo.
+1. Na barra de ferramentas, selecione o **[!UICONTROL Propriedades da exibição]** ícone (um círculo com um &quot;i&quot;).
+1. Na página Propriedades do vídeo, selecione **[!UICONTROL Alterar miniatura]**.
+1. Na página Alterar miniatura, na barra de ferramentas, selecione **[!UICONTROL Selecionar quadro]**.
 
    O Dynamic Media gera uma série de imagens em miniatura do vídeo com base no intervalo de tempo padrão ou no intervalo de tempo personalizado.
 
 1. Visualize as imagens em miniatura geradas e selecione aquela que deseja adicionar ao vídeo.
-1. Toque **[!UICONTROL Salvar alteração]**.
+1. Selecionar **[!UICONTROL Salvar alteração]**.
 
    A imagem em miniatura do vídeo é atualizada para usar a miniatura selecionada. Se decidir alterar a imagem em miniatura posteriormente, você poderá retornar ao **[!UICONTROL Alterar miniatura]** e selecione uma nova.
 
@@ -1084,21 +1084,21 @@ Consulte [Adicionar uma miniatura de vídeo](#adding-a-video-thumbnail).
 
 **Para configurar o intervalo de tempo padrão em que as miniaturas de vídeo são geradas:**
 
-1. No Experience Manager, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL CRXDE Lite]**.
+1. No Experience Manager, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL CRXDE Lite]**.
 
 1. Na página CRXDE Lite, no painel de diretórios à esquerda, navegue até `o etc/dam/imageserver/configuration/jcr:content/settings.`
 
-   se o painel diretório não estiver visível, toque no ícone >> à esquerda da guia Início.
+   se o painel diretório não estiver visível, selecione o ícone >> à esquerda da guia Início.
 
-1. No painel inferior direito, na guia Propriedades, toque duas vezes `thumbnailtime`.
+1. No painel inferior direito, na guia Propriedades, selecione `thumbnailtime`.
 1. No **[!UICONTROL Editar tempo de miniatura]** use os campos de texto para inserir valores de intervalo como porcentagens.
 
-   * Toque no ícone de sinal de mais (+) se desejar adicionar um ou mais campos de valor de intervalo. Se necessário, role até a parte inferior da caixa de diálogo para ver o ícone.
-   * Toque no ícone do sinal de menos (-) à direita de um campo de valor de intervalo se desejar excluí-lo da lista.
-   * Toque no ícone de seta para cima e no ícone de seta para baixo se desejar reordenar os valores do intervalo.
+   * Selecione o ícone de sinal de mais (+) se desejar adicionar um ou mais campos de valor de intervalo. Se necessário, role até a parte inferior da caixa de diálogo para ver o ícone.
+   * Selecione o ícone de sinal de menos (-) à direita de um campo de valor de intervalo se desejar excluí-lo da lista.
+   * Selecione o ícone de seta para cima e o ícone de seta para baixo se desejar reordenar os valores do intervalo.
 
-1. Toque **[!UICONTROL OK]** e retorne à guia Propriedades.
-1. Próximo ao canto superior esquerdo da página de CRXDE Lite, toque em **[!UICONTROL Salvar tudo]**, em seguida, toque no ícone Voltar ao início no canto superior esquerdo para retornar para Experience Manager.
+1. Selecionar **[!UICONTROL OK]** e retorne à guia Propriedades.
+1. Próximo ao canto superior esquerdo da página CRXDE Lite, selecione **[!UICONTROL Salvar tudo]**, em seguida, selecione o ícone Voltar ao início no canto superior esquerdo para retornar ao Experience Manager.
 
    Consulte [Adicionar uma miniatura de vídeo](#adding-a-video-thumbnail).
 
@@ -1109,12 +1109,12 @@ Essas etapas se aplicam apenas ao Dynamic Media executado no modo Híbrido.
 **Para adicionar uma miniatura de vídeo personalizada:**
 
 1. Navegue até um ativo de vídeo carregado ao qual deseja adicionar uma miniatura de vídeo personalizada.
-1. No modo de seleção de ativos, na Exibição em lista ou na Exibição de cartão, toque no ativo de vídeo.
-1. Na barra de ferramentas, toque no **[!UICONTROL Propriedades da exibição]** ícone (um círculo com um &quot;i&quot;).
-1. Na página Propriedades do vídeo, toque em **[!UICONTROL Alterar miniatura]**.
-1. Na página Alterar miniatura, na barra de ferramentas, toque em **[!UICONTROL Carregar nova miniatura]**.
-1. Navegue até uma imagem de miniatura que deseja usar, selecione-a e toque em **[!UICONTROL Abertura]** para começar a carregar a imagem no Experience Manager. Após o upload, publique a imagem.
-1. Depois de carregar e publicar a imagem com êxito, na página Alterar miniatura, toque em **[!UICONTROL Salvar alterações]**.
+1. No modo de seleção de ativos, na Exibição em lista ou na Exibição de cartão, selecione o ativo de vídeo.
+1. Na barra de ferramentas, selecione o **[!UICONTROL Propriedades da exibição]** ícone (um círculo com um &quot;i&quot;).
+1. Na página Propriedades do vídeo, selecione **[!UICONTROL Alterar miniatura]**.
+1. Na página Alterar miniatura, na barra de ferramentas, selecione **[!UICONTROL Carregar nova miniatura]**.
+1. Navegue até uma imagem em miniatura que você deseja usar, selecione-a e, em seguida, **[!UICONTROL Abertura]** para começar a carregar a imagem no Experience Manager. Após o upload, publique a imagem.
+1. Depois de carregar e publicar a imagem com sucesso, na página Alterar miniatura, selecione **[!UICONTROL Salvar alterações]**.
 
    A miniatura personalizada é adicionada ao vídeo.
 

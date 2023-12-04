@@ -11,7 +11,7 @@ discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
 role: Admin
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Você pode fazer upload dos tipos de ativos compatíveis individualmente ou como
 
 1. Faça logon na interface do usuário do AEM Forms acessando `https://'[server]:[port]'/aem/forms.html`.
 1. Navegue até a pasta na qual deseja fazer upload do formulário ou até a pasta que contém os formulários.
-1. Na barra de ferramentas Ações, toque em **Criar > Upload de arquivo**.
+1. Na barra de ferramentas de ações, selecione **Criar > Upload de arquivo**.
 
    ![Opção Arquivos do armazenamento local em Criar](assets/step.png)
 

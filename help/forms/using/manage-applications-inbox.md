@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 3%
+source-wordcount: '1067'
+ht-degree: 2%
 
 ---
 
@@ -34,8 +34,8 @@ Em resumo, a Caixa de entrada permite criar um aplicativo e gerenciar tarefas at
 ## Criar aplicativo {#create-application}
 
 1. Acesse a Caixa de entrada do AEM em https://&#39;[server]:[porta]&quot;/aem/inbox.
-1. Na interface da Caixa de entrada, toque em **[!UICONTROL Criar > Aplicativo]**. A página Selecionar Aplicativo é exibida.
-1. Selecione um aplicativo e clique em **[!UICONTROL Criar]**. O formulário adaptável associado ao aplicativo é aberto. Preencha as informações no formulário adaptável e toque em **[!UICONTROL Enviar]**. Ele inicia o fluxo de trabalho associado e cria uma tarefa na Caixa de entrada do destinatário.
+1. Na interface da Caixa de entrada, selecione **[!UICONTROL Criar > Aplicativo]**. A página Selecionar Aplicativo é exibida.
+1. Selecione um aplicativo e clique em **[!UICONTROL Criar]**. O formulário adaptável associado ao aplicativo é aberto. Preencha as informações no formulário adaptável e selecione **[!UICONTROL Enviar]**. Ele inicia o fluxo de trabalho associado e cria uma tarefa na Caixa de entrada do destinatário.
 
 ## Gerencie tarefas {#manage-tasks}
 
@@ -45,17 +45,17 @@ Quando um fluxo de trabalho do Forms é acionado e você é um destinatário ou 
 
 As tarefas atribuídas a um grupo aparecem na Caixa de Entrada de todos os membros do grupo. Qualquer membro do grupo pode reivindicar essa tarefa ou delegá-la a outro membro do grupo. Para fazer isso:
 
-1. Toque para selecionar a miniatura da tarefa. As opções para abrir ou delegar a tarefa são exibidas na parte superior.
+1. Selecione para selecionar a miniatura da tarefa. As opções para abrir ou delegar a tarefa são exibidas na parte superior.
 
    ![select-task](assets/select-task.png)
 
 1. Siga uma das seguintes opções:
 
-   * Para delegar a tarefa, toque em **[!UICONTROL Delegar]**. A Caixa De Diálogo Delegar Item É Aberta. Selecione um usuário, opcionalmente adicione um comentário e toque em **[!UICONTROL OK]**.
+   * Para delegar a tarefa, selecione **[!UICONTROL Delegar]**. A Caixa De Diálogo Delegar Item É Aberta. Selecione um usuário, opcionalmente adicione um comentário e selecione **[!UICONTROL OK]**.
 
    ![delegar](assets/delegate.png)
 
-   * Para reivindicar a tarefa, toque em **[!UICONTROL Abertura]**. A caixa de diálogo Atribuir a si mesmo é aberta. Toque **[!UICONTROL Continuar]** para reivindicar a tarefa. A tarefa solicitada aparece com você como o destinatário em sua Caixa de entrada.
+   * Para reivindicar a tarefa, selecione **[!UICONTROL Abertura]**. A caixa de diálogo Atribuir a si mesmo é aberta. Selecionar **[!UICONTROL Continuar]** para reivindicar a tarefa. A tarefa solicitada aparece com você como o destinatário em sua Caixa de entrada.
 
    ![declaração](assets/claim.png)
 
@@ -63,8 +63,8 @@ As tarefas atribuídas a um grupo aparecem na Caixa de Entrada de todos os membr
 
 Ao abrir uma tarefa, você pode exibir os detalhes da tarefa e executar as ações disponíveis. As ações disponíveis para uma tarefa são definidas na etapa Atribuir tarefa do fluxo de trabalho associado do Forms.
 
-1. Toque para selecionar a miniatura da tarefa. As opções para abrir ou delegar a tarefa selecionada aparecem na parte superior.
-1. Toque **Abertura** para exibir detalhes da tarefa. A visualização detalhada da tarefa é aberta. Nesta exibição, é possível exibir detalhes da tarefa e trabalhar nela.
+1. Selecione para selecionar a miniatura da tarefa. As opções para abrir ou delegar a tarefa selecionada aparecem na parte superior.
+1. Selecionar **Abertura** para exibir detalhes da tarefa. A visualização detalhada da tarefa é aberta. Nesta exibição, é possível exibir detalhes da tarefa e trabalhar nela.
 
    >[!NOTE]
    >
@@ -91,7 +91,7 @@ A guia Form na área de conteúdo principal exibe o formulário enviado e os ane
 
 A guia Detalhes do fluxo de trabalho na parte superior mostra o progresso da tarefa em vários estágios no fluxo de trabalho. Ela mostra os estágios concluídos, atuais e pendentes da tarefa. Os estágios de um fluxo de trabalho são definidos no [Atribuir etapa de tarefa](/help/sites-developing/workflows-step-ref.md) do fluxo de trabalho associado.
 
-Além disso, a guia exibe o histórico da tarefa para cada estágio concluído no workflow. Você pode tocar em **[!UICONTROL Exibir detalhes]** para que um estágio concluído saiba detalhes sobre esse estágio. Ele exibe comentários, anexos de formulário e tarefa, status, datas de início e término e assim por diante, sobre a tarefa.
+Além disso, a guia exibe o histórico da tarefa para cada estágio concluído no workflow. É possível selecionar **[!UICONTROL Exibir detalhes]** para que um estágio concluído saiba detalhes sobre esse estágio. Ele exibe comentários, anexos de formulário e tarefa, status, datas de início e término e assim por diante, sobre a tarefa.
 
 ![workflow-details](assets/workflow-details.png)
 
@@ -105,12 +105,12 @@ A barra de ferramentas Ações mostra todas as opções disponíveis para a tare
 
 A Caixa de entrada do AEM exibe somente tarefas ativas. Tarefas concluídas não aparecem na lista. No entanto, você pode usar os filtros da Caixa de entrada para filtrar tarefas com base em vários parâmetros, como tipo de tarefa, status e datas de início e término. Para exibir tarefas concluídas:
 
-1. Na Caixa de entrada do AEM, toque em ![ativar/desativar painel lateral1](assets/toggle-side-panel1.png) para abrir o seletor de filtros.
-1. Toque **[!UICONTROL Status da tarefa]** e selecione **[!UICONTROL Concluído]**. Todas as tarefas concluídas são exibidas.
+1. Na Caixa de entrada AEM, selecione ![ativar/desativar painel lateral1](assets/toggle-side-panel1.png) para abrir o seletor de filtros.
+1. Selecionar **[!UICONTROL Status da tarefa]** e selecione **[!UICONTROL Concluído]**. Todas as tarefas concluídas são exibidas.
 
-   ![filter](assets/filter.png)
+   ![filtro](assets/filter.png)
 
-1. Toque para selecionar uma tarefa e clique em **[!UICONTROL Abertura]**.
+1. Selecione uma tarefa e clique em **[!UICONTROL Abertura]**.
 
 A tarefa é aberta para exibir o documento ou o formulário adaptável associado à tarefa. Para formulários adaptáveis, a tarefa exibe o formulário adaptável somente leitura ou seu documento de registro de PDF, conforme configurado na guia Formulário/Documento do [Etapa do fluxo de trabalho Atribuir tarefa](/help/sites-developing/workflows-step-ref.md).
 
@@ -118,7 +118,7 @@ A seção de detalhes da tarefa exibe informações como ação tomada, status d
 
 ![completed-task](assets/completed-task.png)
 
-A variável **[!UICONTROL Detalhes do fluxo de trabalho]** mostra cada etapa do fluxo de trabalho. Toque **[!UICONTROL Exibir detalhes]** para obter uma etapa para informações detalhadas.
+A variável **[!UICONTROL Detalhes do fluxo de trabalho]** mostra cada etapa do fluxo de trabalho. Selecionar **[!UICONTROL Exibir detalhes]** para obter uma etapa para informações detalhadas.
 
 ![completed-task-workflow](assets/completed-task-workflow.png)
 

@@ -6,10 +6,10 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 11cbf865-c8e2-4833-b0b8-a3cb5e42f5cd
-source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 1%
+source-wordcount: '361'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ Você pode usar o modo Layout para definir o número de colunas ao qual o compon
 
 Para especificar as propriedades de um componente separador:
 
-1. Selecione um componente separador e toque em ![cmppr](assets/cmppr.png). As propriedades são abertas na barra lateral.
+1. Selecione um componente separador e selecione ![cmppr](assets/cmppr.png). As propriedades são abertas na barra lateral.
 1. Clique em uma guia na seção Propriedades CSS em linha para especificar propriedades CSS. Por exemplo: a. Na guia Campo, clique em **Adicionar item**. Uma linha com dois campos é adicionada.
 1. No primeiro campo à esquerda, especifique uma propriedade CSS3 que deseja aplicar. Por exemplo, **borda**. Você também pode selecionar uma propriedade clicando no botão de seta para baixo. A lista suspensa não é exaustiva e você pode especificar qualquer nome de propriedade CSS3 compatível nesse campo.
 1. No campo adjacente, especifique um valor válido para a propriedade CSS3 especificada. Por exemplo, **3 px preto sólido**.

@@ -9,9 +9,9 @@ topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3979'
+source-wordcount: '3982'
 ht-degree: 2%
 
 ---
@@ -195,7 +195,7 @@ Esta tabela fornece algumas diretrizes que você pode usar para classificar suas
   </tr> 
   <tr> 
    <td><p>Baixa complexidade</p> </td> 
-   <td><p>Baixa. O layout tem poucos campos de formulário (&lt;15).</p> <p>Normalmente, uma página<span class="acrolinxCursorMarker"></span>.</p> </td> 
+   <td><p>Baixo. O layout tem poucos campos de formulário (&lt;15).</p> <p>Normalmente, uma página<span class="acrolinxCursorMarker"></span>.</p> </td> 
    <td><p>8</p> </td> 
    <td><p>1</p> </td> 
    <td><p>Habilidades de designer médias.</p> </td> 
@@ -245,11 +245,11 @@ Você precisa do seguinte em vigor primeiro para criar uma correspondência:
 
    ![create-letter](assets/create-letter.png)
 
-1. Selecione um layout tocando nele e toque em **Próxima**.
+1. Selecione um layout tocando nele e selecione **Próxima**.
 
    ![Selecione o layout para criar uma carta](assets/selectlayout.png)
 
-1. Insira as propriedades para a correspondência e toque em **Salvar:**
+1. Insira as propriedades para a correspondência e selecione **Salvar:**
 
    * **Título (opcional):** Insira o título da carta. O título não precisa ser exclusivo e pode ter caracteres especiais e caracteres que não estejam em inglês.
    * **Nome:** O nome exclusivo da carta. Não podem existir duas letras com o mesmo nome em nenhum estado. No campo Nome, você pode inserir apenas caracteres, números e hifens do idioma inglês. O campo Nome é preenchido automaticamente com base no campo Título. Os caracteres especiais, espaços, números e caracteres que não estão em inglês inseridos no campo Título são substituídos por hifens no campo Nome. Embora o valor no campo Título seja copiado automaticamente para o Nome, você pode editar o valor.
@@ -260,21 +260,21 @@ Você precisa do seguinte em vigor primeiro para criar uma correspondência:
 
    ![Propriedades de correspondência](assets/createcorrespondenceproperties.png)
 
-1. O sistema exibe a mensagem: &quot;Letter created successfully&quot; (Carta criada com êxito). (na mensagem de alerta) Toque em **Abertura** para configurar os módulos de dados e fragmentos de layout neles. Ou toque **Concluído** para voltar à página anterior.
+1. O sistema exibe a mensagem: &quot;Letter created successfully&quot; (Carta criada com êxito). (na mensagem de alerta) Selecione **Abertura** para configurar os módulos de dados e fragmentos de layout neles. Ou selecione **Concluído** para voltar à página anterior.
 
    ![Mensagem de alerta: carta criada com êxito](assets/createcorrespondencecreated.png)
 
-   **Próxima**: ao tocar em **Abertura** No entanto, o Gerenciamento de correspondências exibe uma representação do layout com todos os componentes no layout (XDP) listado. Continue inserindo o [Módulos de dados e fragmentos de layout e sua configuração](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
+   **Próxima**: Ao selecionar **Abertura** No entanto, o Gerenciamento de correspondências exibe uma representação do layout com todos os componentes no layout (XDP) listado. Continue inserindo o [Módulos de dados e fragmentos de layout e sua configuração](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
 
 ### Insira módulos de dados e fragmentos de layout em uma correspondência e configure-os {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 
-Ao criar uma correspondência, ao tocar em Abrir, o Gerenciamento de correspondências exibe uma representação do layout com todas as áreas de subformulários/destino no layout (XDP) listadas. Em cada uma das áreas de destino, você pode optar por inserir um Módulo de dados ou um Fragmento de layout (e, em seguida, módulos de dados no fragmento de layout).
+Quando depois de criar uma correspondência, você seleciona Abrir, o Gerenciamento de correspondências exibe uma representação do layout com todas as áreas de subformulários/destino no layout (XDP) listadas. Em cada uma das áreas de destino, você pode optar por inserir um Módulo de dados ou um Fragmento de layout (e, em seguida, módulos de dados no fragmento de layout).
 
 >[!NOTE]
 >
->Você também pode optar por tocar no ícone Editar de uma correspondência na página Cartas para Inserir módulos de dados e fragmentos de layout em uma correspondência e configurá-los.
+>Você também pode optar por selecionar o ícone Editar de uma correspondência na página Cartas para Inserir módulos de dados e fragmentos de layout em uma correspondência e configurá-los.
 
-1. Toque **Inserir** para cada um dos subformulários e selecione Módulos de dados ou um Fragmento de layout a ser inserido em cada um dos subformulários.
+1. Selecionar **Inserir** para cada um dos subformulários e selecione Módulos de dados ou um Fragmento de layout a ser inserido em cada um dos subformulários.
 
    ![Inserir módulos de dados e fragmentos de layout](assets/insertdmandlf.png)
 
@@ -283,7 +283,7 @@ Ao criar uma correspondência, ao tocar em Abrir, o Gerenciamento de correspond�
    ![nestedlf](assets/nestedlf.png)
 
 1. Se você inserir um fragmento de layout, o nome do fragmento de layout aparecerá no subformulário. E de acordo com o fragmento selecionado, subformulários aninhados aparecem no subformulário.
-1. Depois que os Módulos de dados escolhidos forem inseridos no layout, você poderá tocar no modo de configuração e definir o seguinte depois de tocar no ícone Editar de cada um dos módulos:
+1. Depois que os módulos de dados escolhidos forem inseridos no layout, você poderá selecionar o modo de configuração e definir o seguinte depois de tocar no ícone Editar para cada um dos módulos:
 
    1. **Editável**: quando essa opção é selecionada, o conteúdo pode ser editado na interface do usuário Criar correspondência. Marcar o conteúdo como editável somente se ele exigir que o usuário empresarial (como um Ajustador de solicitações) o modifique.
    1. **Obrigatório**: quando essa opção é selecionada, o conteúdo é necessário na interface do usuário Criar correspondência.
@@ -294,20 +294,20 @@ Ao criar uma correspondência, ao tocar em Abrir, o Gerenciamento de correspond�
 
    ![Módulos de dados e fragmentos de layout inseridos](assets/insertdmandlf2.png)
 
-1. Para editar um módulo, toque no ícone Editar ao lado dele. Após editar os módulos, toque em **Salvar**.
+1. Para editar um módulo, selecione o ícone Edit ao lado dele. Após editar os módulos, selecione **Salvar**.
 
    Nesta página, você também pode fazer o seguinte para os subformulários:
 
-   1. **Permitir texto livre**: Se a opção Permitir texto livre estiver ativada, o usuário poderá adicionar texto incorporado em cartas na exibição CCR. Na exibição CCR, uma ação &#39;T&#39; é ativada para as áreas de destino com a opção Permitir texto livre ativada, e quando o usuário toca nela, solicita o nome e a descrição do texto e, ao tocar em ok, ele abre esse texto no modo de edição, onde o usuário pode adicionar texto. Portanto, isso funciona como outros módulos de texto
+   1. **Permitir texto livre**: Se a opção Permitir texto livre estiver ativada, o usuário poderá adicionar texto incorporado em cartas na exibição CCR. Na exibição CCR, uma ação &#39;T&#39; é ativada para as áreas de destino que têm a opção Permitir texto livre ativada e, quando o usuário a seleciona, ela solicita o nome e a descrição do texto e, ao tocar em ok, abre esse texto no modo de edição, onde o usuário pode adicionar texto. Portanto, isso funciona como outros módulos de texto
    1. **Bloquear ordem**: bloqueia a ordem dos subformulários na correspondência. O autor não tem permissão para reordenar os subformulários/componentes ao criar a correspondência.
 
    Nesta página, você também pode fazer o seguinte para cada um dos ativos nos subformulários:
 
    1. **Alterar a ordem dos ativos**: arraste e solte um ativo que contém o ícone reordenar de um ativo ( ![arrastar e soltar](assets/dragndrop.png)).
-   1. **Excluir ativos**: Toque no ícone Excluir ao lado de um ativo para excluí-lo.
-   1. **Visualizar ativos**: Toque no ícone Mostrar visualização ( ![showpreview](assets/showpreview.png)) ao lado de um ativo.
+   1. **Excluir ativos**: selecione o ícone Excluir ao lado de um ativo para excluí-lo.
+   1. **Visualizar ativos**: Selecione o ícone Mostrar visualização ( ![showpreview](assets/showpreview.png)) ao lado de um ativo.
 
-1. Toque **Próxima**.
+1. Selecione **Próximo**.
 1. A página Dados detalha como os campos de dados e as variáveis são usados no modelo. Os dados podem ser vinculados a fontes de dados, como um dicionário de dados ou uma entrada do usuário. Cada campo define propriedades a partir das quais o dicionário de dados mapeia os dados ou qual legenda é exibida para os campos de entrada do usuário.
 
    Vínculo:
@@ -337,19 +337,19 @@ Ao criar uma correspondência, ao tocar em Abrir, o Gerenciamento de correspond�
 
    ![vinculações](assets/linkages.png)
 
-1. Depois de especificar a vinculação, toque em **Próxima**. O Gerenciamento de correspondência exibe a tela Anexos.
+1. Depois de especificar a vinculação, selecione **Próxima**. O Gerenciamento de correspondência exibe a tela Anexos.
 
 ### Configurar os anexos {#set-up-the-attachments}
 
 1. Selecionar **Adicionar ativo**.
-1. Na tela Selecionar ativo, toque nos ativos a serem anexados com a letra e toque em **Concluído**. Primeiro, é necessário carregar os ativos no Assets. É recomendável anexar somente documentos do PDF e do Microsoft Office, mas também imagens. Para obter mais informações sobre como fazer upload de ativos no DAM, consulte [Fazendo upload de ativos](/help/assets/manage-assets.md).
-1. Para bloquear a ordem dos ativos na lista de modo que o Ajuste de Reivindicações não possa alterar a ordem, toque em **Bloquear ordem**. Se você não selecionar esta opção, o Ajuste de Reivindicações poderá alterar a ordem dos itens da lista.
+1. Na tela Selecionar ativo, selecione os ativos a serem anexados à carta e selecione **Concluído**. Primeiro, é necessário carregar os ativos no Assets. É recomendável anexar somente documentos do PDF e do Microsoft Office, mas também imagens. Para obter mais informações sobre como fazer upload de ativos no DAM, consulte [Fazendo upload de ativos](/help/assets/manage-assets.md).
+1. Para bloquear a ordem dos ativos na lista de forma que o Ajuste de Reivindicações não possa alterar a ordem, selecione **Bloquear ordem**. Se você não selecionar esta opção, o Ajuste de Reivindicações poderá alterar a ordem dos itens da lista.
 1. Para alterar a ordem dos ativos, arraste e solte um ativo mantendo o ícone reordenar para um ativo ( ![arrastar e soltar](assets/dragndrop.png)).
-1. Toque **Editar** na frente de um anexo e especifique um anexo como Obrigatório se não quiser que o autor o exclua. Especifique um anexo como Selecionado se quiser que ele seja pré-selecionado na interface CCR.
+1. Selecionar **Editar** na frente de um anexo e especifique um anexo como Obrigatório se não quiser que o autor o exclua. Especifique um anexo como Selecionado se quiser que ele seja pré-selecionado na interface CCR.
 1. Selecionar **Acesso à biblioteca** para conceder acesso à biblioteca. Se o Acesso à biblioteca estiver ativado, o Ajustador de solicitações poderá acessar a biblioteca de conteúdo ao criar uma correspondência e inserir anexos.
 1. Selecionar **Configuração de anexos** e especifique o número máximo de anexos.
 
-1. Toque **Salvar**. Sua correspondência é criada e listada na página Cartas.
+1. Selecionar **Salvar**. Sua correspondência é criada e listada na página Cartas.
 
 Depois que um modelo de correspondência é criado no Gerenciamento de correspondências, o usuário final/agente/ajustador de reclamações pode abrir a correspondência na interface do usuário do CCR e criá-la inserindo dados, configurando conteúdo e gerenciando anexos. Para obter mais informações, consulte [Criar correspondência](/help/forms/using/create-correspondence.md).
 
@@ -423,7 +423,7 @@ Os seguintes valores na tabela
    <td>Sim</td> 
    <td>Sim<br /> </td> 
    <td>N/A</td> 
-   <td>N/A<br /> </td> 
+   <td>N/D<br /> </td> 
   </tr> 
   <tr> 
    <td><strong>richtext</strong></td> 
@@ -463,7 +463,7 @@ Os seguintes valores na tabela
    <td>Sim</td> 
    <td>Não</td> 
    <td>N/A</td> 
-   <td>N/A<br /> </td> 
+   <td>N/D<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -473,7 +473,7 @@ Os seguintes valores na tabela
 Você pode usar um modelo de correspondência existente para criar rapidamente um modelo de correspondência com propriedades, conteúdo e ativos herdados semelhantes, como fragmentos de documento e dicionário de dados. Para fazer isso, copie e cole uma carta.
 
 1. Na página Cartas, selecione uma ou mais letras. A interface do usuário do exibe o ícone Copiar.
-1. Toque em Copiar. A interface exibe o ícone Colar. Você também pode optar por entrar em uma pasta antes de colar. Pastas diferentes podem conter ativos com os mesmos nomes. Para obter mais informações sobre pastas, consulte [Pastas e organização de ativos](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
-1. Toque em Colar. A caixa de diálogo Colar é exibida. Se você estiver copiando e colando as letras no mesmo local, o sistema atribuirá automaticamente nomes e títulos às novas cópias de letras, mas você poderá editar os títulos e nomes das letras.
+1. Selecione Copiar. A interface exibe o ícone Colar. Você também pode optar por entrar em uma pasta antes de colar. Pastas diferentes podem conter ativos com os mesmos nomes. Para obter mais informações sobre pastas, consulte [Pastas e organização de ativos](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
+1. Selecione Colar. A caixa de diálogo Colar é exibida. Se você estiver copiando e colando as letras no mesmo local, o sistema atribuirá automaticamente nomes e títulos às novas cópias de letras, mas você poderá editar os títulos e nomes das letras.
 1. Se necessário, edite o Título e o Nome com os quais deseja salvar a cópia da carta.
-1. Toque em Colar. A cópia da carta é criada. Agora você pode fazer as alterações necessárias na carta recém-criada.
+1. Selecione Colar. A cópia da carta é criada. Agora você pode fazer as alterações necessárias na carta recém-criada.

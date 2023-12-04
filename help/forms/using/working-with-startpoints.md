@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 docset: aem65
 exl-id: d5970f90-2899-43a5-a3a0-61a2c844d919
-source-git-commit: 60924e7ee204e43a2ff833fbc394beca8db9c9d9
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Para iniciar um processo no aplicativo Forms do Adobe Experience Manager (AEM), 
 1. Para exibir os pontos iniciais disponíveis no aplicativo AEM Forms, acesse [Tela inicial](../../forms/using/home-screen.md).
 1. No **[!UICONTROL Início]** por padrão, a variável **[!UICONTROL Todos os Forms]** é exibida.
 
-   O ponto inicial está associado a um formulário. Toque no ponto de partida associado ao formulário na lista para abri-lo.
+   O ponto inicial está associado a um formulário. Selecione o ponto inicial associado ao formulário na lista para abri-lo.
 
    O formulário associado ao ponto inicial é aberto.
 
@@ -38,7 +38,7 @@ Para iniciar um processo no aplicativo Forms do Adobe Experience Manager (AEM), 
 
    É possível adicionar anotações a essa tarefa usando o [anexo](../../forms/using/add-attachments.md) botão.
 
-1. Depois de preencher o formulário, toque no **[!UICONTROL Enviar]** botão.
+1. Depois de preencher o formulário, selecione o **[!UICONTROL Enviar]** botão.
 
 Se o aplicativo estiver offline, o formulário e seus dados serão salvos na pasta Caixa de saída.
 

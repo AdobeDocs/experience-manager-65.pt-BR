@@ -7,10 +7,10 @@ topic-tags: interactive-communications
 docset: aem65
 feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1308'
-ht-degree: 14%
+source-wordcount: '1318'
+ht-degree: 10%
 
 ---
 
@@ -53,7 +53,7 @@ No navegador de conteúdo, é possível ver a hierarquia de objetos do documento
 
 * **Navegador de propriedades**
 
-  Permite editar as propriedades de um componente. As propriedades mudam de acordo com o componente. Por exemplo, para ver as propriedades do contêiner de documento: selecione um componente e toque em ![nível de campo](assets/field-level.png) > **Contêiner de documentos** e toque em ![cmppr](assets/cmppr.png).
+  Permite editar as propriedades de um componente. As propriedades mudam de acordo com o componente. Por exemplo, para ver as propriedades do container do documento: selecione um componente e, em seguida, ![nível de campo](assets/field-level.png) > **Contêiner de documentos** e selecione ![cmppr](assets/cmppr.png).
 
 * **Navegador de ativos**
 Segrega diferentes tipos de conteúdo, como fragmentos de layout, imagens, documentos, páginas e vídeos. O autor pode arrastar e soltar ativos na Comunicação interativa.
@@ -82,14 +82,14 @@ O Navegador de fontes de dados exibe as fontes de dados disponíveis no modelo d
 
 Os principais pontos ao trabalhar com componentes de comunicação interativa são os seguintes:
 
-* Cada componente tem propriedades associadas que controlam sua aparência e funcionalidade. Para configurar as propriedades de um componente, toque no componente e ![cmppr](assets/cmppr.png) para abrir as propriedades do componente no navegador Propriedades.
-* Um componente é identificado com seu nome de elemento. Ao tocar em ![cmppr](assets/cmppr.png), você pode alterar o nome do componente alterando o valor do campo Nome do elemento no navegador de propriedades. O campo Nome do elemento aceita somente letras, números, hifens (-) e sublinhados (_). Outros caracteres especiais não são permitidos e o nome do elemento deve começar com uma letra.
+* Cada componente tem propriedades associadas que controlam sua aparência e funcionalidade. Para configurar as propriedades de um componente, selecione o componente e ![cmppr](assets/cmppr.png) para abrir as propriedades do componente no navegador Propriedades.
+* Um componente é identificado com seu nome de elemento. Ao selecionar ![cmppr](assets/cmppr.png), você pode alterar o nome do componente alterando o valor do campo Nome do elemento no navegador de propriedades. O campo Nome do elemento aceita somente letras, números, hifens (-) e sublinhados (_). Outros caracteres especiais não são permitidos e o nome do elemento deve começar com uma letra.
 * Você pode modificar a propriedade Title de um componente de Comunicação interativa em linha no editor sem abrir o navegador Propriedades, desde que o título esteja visível na Comunicação interativa. Para fazer isso:
 
-   1. Toque para selecionar um componente que tenha uma propriedade Título e cuja propriedade Ocultar título esteja desativada.
-   1. Toque ![aem_6_3_edit](assets/aem_6_3_edit.png) para tornar o título editável.
+   1. Selecione para selecionar um componente que tenha uma propriedade Title e cuja propriedade Hide title esteja desativada.
+   1. Selecionar ![aem_6_3_edit](assets/aem_6_3_edit.png) para tornar o título editável.
 
-   1. Modifique o título e toque na tecla Return ou em qualquer lugar fora do componente para salvar as alterações. Toque na tecla Esc para descartar as alterações.
+   1. Modifique o título e selecione a tecla Return ou selecione qualquer lugar fora do componente para salvar as alterações. Selecione a tecla Esc para descartar as alterações.
 
 ## Barra de ferramentas Componente {#component-toolbar}
 
@@ -97,9 +97,9 @@ Os principais pontos ao trabalhar com componentes de comunicação interativa s�
 
 Ao selecionar um componente, você vê uma barra de ferramentas que permite trabalhar com ele. Há opções para recortar, colar, mover e especificar as propriedades dos componentes. As opções são:
 
-A.**Configurar**: ao tocar em **Configurar**, as propriedades do componente ficam visíveis na barra lateral.
+A.**Configurar**: Ao selecionar **Configurar**, as propriedades do componente ficam visíveis na barra lateral.
 
-B.**Editar regras**: Quando você toca em Editar regras, o Editor de regras é exibido no qual você pode editar e criar regras para o componente selecionado. No Editor de regras, você também pode selecionar outros objetos de formulário (componentes) e editar/criar regras para esses objetos de formulário.
+B.**Editar regras**: Quando você seleciona Editar regras, o Editor de regras é exibido no qual você pode editar e criar regras para o componente selecionado. No Editor de regras, você também pode selecionar outros objetos de formulário (componentes) e editar/criar regras para esses objetos de formulário.
 
 C **Copiar**: você pode usar a opção de cópia para copiar um componente e colá-lo em outros locais na Comunicação interativa.
 
@@ -113,7 +113,7 @@ G. **Colar**: permite colar o componente recortado ou copiado usando as opções
 
 H. **Grupo**: permite selecionar vários componentes se você deseja cortar, copiar ou colar mais de um componente.
 
-I. **Página principal**: permite selecionar a página principal de um componente.
+I. **Pai**: permite selecionar o primário de um componente.
 
 J. **Exibir expressão SOM:** Permite exibir o [Expressão SOM](../../forms/using/using-som-expressions-adaptive-forms.md) para o componente.
 
@@ -129,10 +129,10 @@ Além disso, a **Substituir** A opção na barra de ferramentas permite substitu
 
 A barra de ferramentas Página na parte superior fornece opções que permitem visualizar a Comunicação interativa e alterar suas propriedades. Você pode visualizar a comunicação interativa ao criá-la e fazer as alterações apropriadas. Na barra de ferramentas da página, você observa:
 
-* Alternar painel lateral![ alternar-painel-lateral](assets/toggle-side-panel.png): Permite exibir ou ocultar a Barra Lateral.
+* Ativar/desativar painel lateral ![ativar/desativar painel lateral](assets/toggle-side-panel.png): permite mostrar ou ocultar a Barra lateral.
 * Informações da página ![pageinformationad](assets/pageinformationad.png): permite a exibição das propriedades da página.
 * Emulador ![régua](assets/ruler.png): permite emular a aparência da sua comunicação interativa para diferentes tamanhos de exibição, como tablets e telefones.
-* Editar: permite selecionar outros modos, como: Editar, Estilo, Desenvolvedor e Design.
+* Editar: permite selecionar outros modos, como Editar, Estilo, Desenvolvedor e Design.
 
    * Editar: permite editar as propriedades da Comunicação interativa e seus componentes. Por exemplo, adicionar um componente, soltar uma imagem e especificar campos obrigatórios.
    * Estilo: permite estilizar a aparência dos componentes da sua Comunicação interativa. Por exemplo, no modo de estilo, é possível selecionar um painel e especificar a cor do plano de fundo.

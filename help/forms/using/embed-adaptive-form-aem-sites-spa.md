@@ -10,16 +10,16 @@ discoiquuid: a74ed6c1-3006-4baf-bd77-ad4045e23c22
 docset: aem65
 feature: Adaptive Forms
 exl-id: b549f176-409a-4d81-8c2b-73d0dd0c6649
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1107'
 ht-degree: 0%
 
 ---
 
 # Incorpore um formulário adaptável ou a Comunicação interativa no aplicativo de página única do AEM Sites{#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-single-page-application}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 ## Visão geral {#overview}
 
@@ -59,7 +59,7 @@ Para incorporar um formulário adaptável ou a Comunicação interativa usando o
 1. Abra a página de sites do AEM, no modo de edição, na qual você deseja incorporar um formulário adaptável ou a Comunicação interativa.
 1. Insira o **Forma de AEM para SPA** na página usando uma das seguintes opções:
 
-   * Toque no contêiner de layout na página Sites e toque em **+** e selecione o **Forma de AEM para SPA** componente.
+   * Selecione o contêiner de layout na página Sites e selecione **+** e selecione o **Forma de AEM para SPA** componente.
 
    * No painel Navegador de componentes, arraste e solte a **Forma de AEM para SPA** componente na página.
    * Procure um formulário adaptável ou Comunicação interativa no navegador de Ativos e arraste-o e solte-o na página Sites. Ele incorpora o formulário em um contêiner de componente AEM Forms for SPA.
@@ -68,7 +68,7 @@ Para incorporar um formulário adaptável ou a Comunicação interativa usando o
    >
    >A renderização de vários componentes do Contêiner do AEM Forms SPA em uma página não é suportada. Você pode ter vários Containers AEM Forms SPA em uma página, mas apenas um componente é renderizado de cada vez. Para evitar discrepâncias, verifique se apenas um componente está visível em uma página.
 
-1. Toque no componente de Contêiner de SPA do AEM Forms incorporado na página Sites e toque em ![settings_icon](assets/settings_icon.png) na barra de ações. A variável **Editar contêiner do AEM Forms SPA** será aberta.
+1. Selecione o componente de Contêiner de SPA do AEM Forms incorporado na página Sites e selecione ![settings_icon](assets/settings_icon.png) na barra de ações. A variável **Editar contêiner do AEM Forms SPA** será aberta.
 1. No **Editar contêiner do AEM Forms** especifique o seguinte:
 
    * **Tipo de ativo:** Selecione o tipo de ativo a ser incorporado. As opções são **Formulário adaptável** e **Comunicação interativa**
@@ -78,7 +78,7 @@ Para incorporar um formulário adaptável ou a Comunicação interativa usando o
 
    * **Tema**: selecione um tema que define o estilo dos componentes do seu formulário adaptável ou da Comunicação interativa. O estilo inclui propriedades de aparência, como estilo da fonte, cor do plano de fundo, dimensões e alinhamento.
 
-1. Toque ![done_icon](assets/done_icon.png) para salvar as configurações. O formulário adaptável ou a Comunicação interativa agora está incorporado na página.
+1. Selecionar ![done_icon](assets/done_icon.png) para salvar as configurações. O formulário adaptável ou a Comunicação interativa agora está incorporado na página.
 
 ## Publicar formulário adaptável incorporado e comunicação interativa {#publish-embedded-adaptive-form-and-interactive-communication}
 
@@ -86,7 +86,7 @@ Considere os seguintes cenários para publicar um ativo incorporado (formulário
 
 * Se você estiver publicando a página do AEM Sites pela primeira vez e ela incluir um formulário adaptável incorporado ou a Comunicação interativa, publique a página Sites e o ativo incorporado.
 * Se você modificou somente o formulário adaptável incorporado ou a Comunicação interativa em uma página do Sites publicada, publique o ativo original e as alterações refletirão na página do Sites publicada. A página Sites publicada inclui uma referência ao ativo e não requer a republicação da página.
-* Se você modificou a página Sites e o formulário adaptável incorporado ou a Comunicação interativa, publique novamente a página Sites e o ativo incorporado.
+* Se você modificou a página Sites e o formulário adaptável incorporado ou a Comunicação interativa, republique a página Sites e o ativo incorporado.
 
 ## Modificar o formulário adaptável incorporado e a comunicação interativa {#modify-embedded-adaptive-form-and-interactive-communication}
 
@@ -95,7 +95,7 @@ A página de sites do AEM mantém uma referência ao formulário adaptável e à
 Para modificar qualquer configuração ou propriedade do formulário adaptável incorporado e da Comunicação interativa, execute um dos procedimentos a seguir.
 
 * Abra o formulário original em formulários adaptáveis ou Comunicação interativa nos respectivos editores e modifique-os.
-* Toque no formulário adaptável ou na Comunicação interativa na página Sites no modo de edição e toque em **Editar em uma nova janela**. O formulário original é aberto no modo de edição.
+* Selecione o formulário adaptável ou a Comunicação interativa na página Sites no modo de edição e selecione **Editar em uma nova janela**. O formulário original é aberto no modo de edição.
 
 ## Considerações e práticas recomendadas {#considerations-and-best-practices}
 

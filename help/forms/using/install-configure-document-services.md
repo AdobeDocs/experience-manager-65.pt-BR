@@ -4,7 +4,7 @@ description: Instale os serviços de documento do AEM Forms para criar, montar, 
 topic-tags: installing
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 2ad9cea10bcd152f4d2d874553bdbd3133dbe847
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '5499'
 ht-degree: 1%
@@ -365,11 +365,11 @@ Copie a fonte Unicode para qualquer um dos seguintes diretórios, conforme aprop
 O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote contém os Serviços de documento da AEM Forms e outros recursos do AEM Forms. Execute as seguintes etapas para instalar o pacote:
 
 1. Abra a [Distribuição de softwares](https://experience.adobe.com/downloads). Você precisa de uma Adobe ID para fazer logon na Distribuição de softwares.
-1. Clique em **[!UICONTROL Adobe Experience Manager]** disponível no menu de cabeçalho.
+1. Selecionar **[!UICONTROL Adobe Experience Manager]** disponível no menu de cabeçalho.
 1. No **[!UICONTROL Filtros]** seção:
    1. Selecionar **[!UICONTROL Forms]** do **[!UICONTROL Solução]** lista suspensa.
    2. Selecione a versão e o tipo do pacote. Você também pode usar a variável **[!UICONTROL Pesquisar downloads]** para filtrar os resultados.
-1. Toque no nome do pacote aplicável ao seu sistema operacional e selecione **[!UICONTROL Aceitar termos do EULA]** e toque em **[!UICONTROL Baixar]**.
+1. Selecione o nome do pacote aplicável ao seu sistema operacional e **[!UICONTROL Aceitar termos do EULA]** e selecione **[!UICONTROL Baixar]**.
 1. Abertura [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  e clique em **[!UICONTROL Fazer upload do pacote]** para carregar o pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
@@ -491,7 +491,7 @@ Usando o Gerenciamento de Armazenamento Confiável, você pode importar, editar 
 
 1. Faça logon na instância do AEM Forms como administrador.
 1. Ir para  **[!UICONTROL Ferramentas]** >  **[!UICONTROL Segurança]** >  **[!UICONTROL Armazenamento de confiança]**.
-1. Clique em  **[!UICONTROL Criar TrustStore]**. Defina a senha e toque **[!UICONTROL Salvar]**.
+1. Clique em  **[!UICONTROL Criar TrustStore]**. Defina a senha e selecione **[!UICONTROL Salvar]**.
 
 ### Configurar certificados para extensão Reader e serviço de criptografia {#set-up-certificates-for-reader-extension-and-encryption-service}
 

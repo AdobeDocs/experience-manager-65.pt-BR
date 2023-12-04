@@ -12,10 +12,10 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '4520'
-ht-degree: 9%
+source-wordcount: '4422'
+ht-degree: 7%
 
 ---
 
@@ -348,13 +348,13 @@ A tabela a seguir identifica os gestos do visualizador móvel compatíveis com d
    <td><p>Panelas</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Selecione</strong></p> </td>
+   <td><p><strong>Selecionar</strong></p> </td>
    <td><p>Mostra a janela de imagem suspensa</p> </td>
    <td><p>Mostra ou oculta a interface do usuário</p> </td>
    <td><p>Mostra ou oculta a interface do usuário</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Toque duas vezes</strong></p> </td>
+   <td><p><strong>Seleção dupla</strong></p> </td>
    <td><p>Não se aplica</p> </td>
    <td><p>Aumenta ou redefine</p> </td>
    <td><p>Aumenta ou redefine</p> </td>
@@ -555,7 +555,7 @@ Ao criar predefinições do visualizador de banner do Carousel, a alteração do
 
 | | **Descrição** | **Ações** |
 |---|---|---|
-| **[!UICONTROL Ícone de ponto de acesso]** | Alterar o ícone usado para ponto de acesso | Para alterar a imagem do ícone do ponto de acesso, na **[!UICONTROL Aparência]** guia, em **[!UICONTROL Componente selecionado]**, selecione **[!UICONTROL ImageMapEffect]**. Em **[!UICONTROL Ícone]**, selecione **[!UICONTROL Plano de fundo]** e, no campo **[!UICONTROL Imagem]**, navegue até a imagem de plano de fundo desejada. |
+| **[!UICONTROL Ícone de ponto de acesso]** | Alterar o ícone usado para ponto de acesso | Para alterar a imagem do ícone do ponto de acesso, na **[!UICONTROL Aparência]** guia, em **[!UICONTROL Componente selecionado]**, selecione **[!UICONTROL ImageMapEffect]**. Em **[!UICONTROL Ícone]**, selecione **[!UICONTROL Histórico]** e no **[!UICONTROL Imagem]** campo navegue até a imagem de fundo desejada. |
 
 ## Ativar ou desativar predefinições do visualizador {#activating-or-deactivating-viewer-presets}
 

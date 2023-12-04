@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '6163'
+source-wordcount: '6130'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ A seguir estão os pré-requisitos para criar uma Comunicação interativa:
 ## Criar a comunicação interativa {#createic}
 
 1. Faça logon na instância de autor do AEM e acesse **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documentos]**.
-1. Toque **[!UICONTROL Criar]** e selecione **[!UICONTROL Comunicação interativa]**. Criar comunicação interativa é exibida.
+1. Selecionar **[!UICONTROL Criar]** e selecione **[!UICONTROL Comunicação interativa]**. Criar comunicação interativa é exibida.
 
    ![create-interative-communication](assets/create-interactive-communication.png)
 
@@ -51,7 +51,7 @@ A seguir estão os pré-requisitos para criar uma Comunicação interativa:
    * **[!UICONTROL Data de publicação:]** Insira a data para publicar a Comunicação interativa.
    * **[!UICONTROL Data de cancelamento da publicação]**: insira a data para desfazer a publicação da Comunicação interativa.
 
-1. Toque **[!UICONTROL Próxima]**. A tela para especificar os detalhes do canal da Web e de impressão é exibida.
+1. Selecionar **[!UICONTROL Próxima]**. A tela para especificar os detalhes do canal da Web e de impressão é exibida.
 1. Insira o seguinte:
 
    * **[!UICONTROL Imprimir]**: selecione essa opção para gerar o canal de impressão da Comunicação interativa.
@@ -60,7 +60,7 @@ A seguir estão os pré-requisitos para criar uma Comunicação interativa:
    * **[!UICONTROL Modelo da Web de comunicação interativa]**: procure e selecione o modelo da Web.
    * **[!UICONTROL Tema]** e **[!UICONTROL Selecionar tema]**: procure e selecione o tema para criar o estilo do canal da Web da Comunicação interativa. Para obter mais informações, consulte [Temas no AEM Forms](/help/forms/using/themes.md).
 
-   * **[!UICONTROL Usar impressão como principal no canal da Web]**: selecione essa opção para criar o canal da Web em sincronia com o canal de impressão. Usar o canal de impressão como mestre para o canal da Web garante que o conteúdo e a vinculação de dados do canal da Web sejam derivados do canal de impressão, e as alterações feitas no canal de impressão são refletidas no canal da Web ao tocar em Sincronizar. Os autores podem, no entanto, interromper a herança de componentes específicos no canal da Web, conforme necessário. Para obter mais informações, consulte [Sincronizar canal da Web com canal de impressão](../../forms/using/create-interactive-communication.md#synchronize).
+   * **[!UICONTROL Usar impressão como principal no canal da Web]**: selecione essa opção para criar o canal da Web em sincronia com o canal de impressão. Usar o canal de impressão como mestre para o canal da Web garante que o conteúdo e a vinculação de dados do canal da Web sejam derivados do canal de impressão, e as alterações feitas no canal de impressão sejam refletidas no canal da Web ao selecionar Sincronizar. Os autores podem, no entanto, interromper a herança de componentes específicos no canal da Web, conforme necessário. Para obter mais informações, consulte [Sincronizar canal da Web com canal de impressão](../../forms/using/create-interactive-communication.md#synchronize).
 Se você selecionar a variável **[!UICONTROL Usar impressão como principal no canal da Web]** , é possível selecionar qualquer um dos seguintes modos para gerar um canal da Web:
 
       * **[!UICONTROL Layout automático]**: selecione esse modo para gerar automaticamente espaços reservados, conteúdo e vinculação de dados para o canal da Web a partir do canal de impressão.
@@ -68,7 +68,7 @@ Se você selecionar a variável **[!UICONTROL Usar impressão como principal no 
 
    Para obter mais informações sobre canal de impressão e canal da Web, consulte [Canal de impressão e canal da Web](/help/forms/using/web-channel-print-channel.md).
 
-1. Toque em **[!UICONTROL Criar]**. A comunicação interativa é criada e uma caixa de alerta é exibida. Toque **[!UICONTROL Editar]** para começar a criar o conteúdo da comunicação interativa, conforme explicado em [Adicionar conteúdo usando a interface do usuário de criação da Comunicação interativa](#step2). Como alternativa, toque em **[!UICONTROL Concluído]** e escolha editar a Comunicação interativa posteriormente.
+1. Selecione **[!UICONTROL Criar]**. A comunicação interativa é criada e uma caixa de alerta é exibida. Selecionar **[!UICONTROL Editar]** para começar a criar o conteúdo da comunicação interativa, conforme explicado em [Adicionar conteúdo usando a interface do usuário de criação da Comunicação interativa](#step2). Como alternativa, você pode selecionar **[!UICONTROL Concluído]** e escolha editar a Comunicação interativa posteriormente.
 
 ## Adicionar conteúdo à comunicação interativa {#step2}
 
@@ -76,7 +76,7 @@ Depois de criar uma Comunicação interativa, você pode usar a interface de cri
 
 Para obter mais informações sobre a interface de criação da Comunicação interativa, consulte [Introdução à criação de comunicação interativa](/help/forms/using/introduction-interactive-communication-authoring.md).
 
-1. A interface de criação da Comunicação interativa é iniciada ao tocar em Editar, conforme mencionado na [Criar comunicação interativa](#createic). Como alternativa, você pode navegar para um ativo de Comunicação interativa existente no AEM, selecioná-lo e tocar **[!UICONTROL Editar]** para iniciar a interface de criação de Comunicação interativa.
+1. A interface de criação da Comunicação interativa é iniciada quando você seleciona Editar, conforme mencionado na [Criar comunicação interativa](#createic). Como alternativa, é possível navegar até um ativo de Comunicação interativa existente no AEM, selecioná-lo e selecionar **[!UICONTROL Editar]** para iniciar a interface de criação de Comunicação interativa.
 
    Por padrão, o canal de impressão da Comunicação interativa é exibido, a menos que a Comunicação interativa seja somente para canal da Web. O canal de impressão da comunicação interativa exibe as áreas de destino, conforme disponível no modelo de canal XDP/impressão selecionado. Nesses campos e áreas de destino, é possível adicionar componentes ou ativos.
 
@@ -141,9 +141,9 @@ Além disso, ao passar o mouse sobre esses elementos, uma dica de ferramenta é 
 
 ![Variável não vinculada](assets/df_unbound_variable_new.png)
 
-Toque no fragmento do documento e toque em ![configure_icon](assets/configure_icon.png) (Configurar) e toque em **[!UICONTROL Propriedades]** da comunicação interativa. A variável **[!UICONTROL Objetos de modelo de dados e variáveis]** A seção lista as variáveis, incluindo as variáveis ocultas e os objetos de modelo de dados usados nos fragmentos do documento. Use o ![editar](assets/edit.svg) (Editar) ícone ao lado de cada objeto ou variável de modelo de dados para editar as propriedades.
+Selecione o fragmento do documento e selecione ![configure_icon](assets/configure_icon.png) (Configurar) e selecione **[!UICONTROL Propriedades]** da comunicação interativa. A variável **[!UICONTROL Objetos de modelo de dados e variáveis]** A seção lista as variáveis, incluindo as variáveis ocultas e os objetos de modelo de dados usados nos fragmentos do documento. Use o ![editar](assets/edit.svg) (Editar) ícone ao lado de cada objeto ou variável de modelo de dados para editar as propriedades.
 
-1. Para configurar a vinculação de variáveis, toque em uma variável e selecione ![configure_icon](assets/configure_icon.png) (Configurar) e, em seguida, defina as propriedades de vínculo no painel Propriedades na barra lateral.
+1. Para configurar a vinculação de variáveis, selecione uma variável e ![configure_icon](assets/configure_icon.png) (Configurar) e, em seguida, defina as propriedades de vínculo no painel Propriedades na barra lateral.
 
    * **Nenhum**: o agente preencherá o valor da variável.
    * **Fragmento de texto**: se essa opção for selecionada, você poderá procurar e selecionar um fragmento de documento de texto cujo conteúdo seja renderizado no campo. Somente os fragmentos do documento de texto podem ser vinculados a variáveis que não têm variáveis no.
@@ -183,9 +183,9 @@ Toque no fragmento do documento e toque em ![configure_icon](assets/configure_ic
 
    ![webchannelassets](assets/webchannelassets.png)
 
-   Toque no fragmento do documento e toque em ![configure_icon](assets/configure_icon.png) (Configurar) e toque em **[!UICONTROL Propriedades]** da comunicação interativa. A variável **[!UICONTROL Objetos de modelo de dados e variáveis]** A seção lista as variáveis, incluindo as variáveis ocultas e os objetos de modelo de dados usados nos fragmentos do documento. Use o ![editar](assets/edit.svg) (Editar) ícone ao lado de cada objeto ou variável de modelo de dados para editar as propriedades. Além disso, para fragmentos de documentos que foram [gerado automaticamente](#synchronize) no canal da Web por meio do canal de impressão, use o ![cancelinheritance](assets/cancelinheritance.png) Ícone (Cancelar herança) ao lado de cada objeto e variável do modelo de dados para [cancelar herança](#cancelinheritance) e poder editá-los.
+   Selecione o fragmento do documento e selecione ![configure_icon](assets/configure_icon.png) (Configurar) e selecione **[!UICONTROL Propriedades]** da comunicação interativa. A variável **[!UICONTROL Objetos de modelo de dados e variáveis]** A seção lista as variáveis, incluindo as variáveis ocultas e os objetos de modelo de dados usados nos fragmentos do documento. Use o ![editar](assets/edit.svg) (Editar) ícone ao lado de cada objeto ou variável de modelo de dados para editar as propriedades. Além disso, para fragmentos de documentos que foram [gerado automaticamente](#synchronize) no canal da Web por meio do canal de impressão, use o ![cancelinheritance](assets/cancelinheritance.png) Ícone (Cancelar herança) ao lado de cada objeto e variável do modelo de dados para [cancelar herança](#cancelinheritance) e poder editá-los.
 
-1. Para adicionar outros componentes no canal Web, com o canal Web selecionado, toque em **[!UICONTROL Componentes]**. Arraste e solte componentes no canal da Web da sua Comunicação interativa, conforme necessário, e prossiga para configurá-los.
+1. Para adicionar outros componentes no canal da Web, com o canal da Web selecionado, selecione **[!UICONTROL Componentes]**. Arraste e solte componentes no canal da Web da sua Comunicação interativa, conforme necessário, e prossiga para configurá-los.
 
    | Componentes | Funcionalidade |
    |---|---|
@@ -207,7 +207,7 @@ Toque no fragmento do documento e toque em ![configure_icon](assets/configure_ic
 
 Você pode usar o **Opção Visualizar** para avaliar a aparência da comunicação interativa. O canal da Web de Comunicação interativa também fornece uma opção para Emular a experiência de uma Comunicação interativa para vários dispositivos. Por exemplo, iPhone, iPad e Desktop. Você pode usar ambos **Visualizar** e **Emulador** ![régua](assets/ruler.png) opções em conjunto umas com as outras para visualizar as saídas da web para dispositivos de diferentes tamanhos de tela. Os dados de amostra na visualização são preenchidos a partir do modelo de dados de formulários especificado.
 
-1. Selecione o canal (impressão ou Web) para visualizar e toque em visualizar. A Comunicação interativa é exibida.
+1. Selecione o canal (impressão ou Web) que deseja visualizar e selecione a visualização. A Comunicação interativa é exibida.
 
    >[!NOTE]
    >
@@ -225,7 +225,7 @@ Além disso, você pode [Preparar e enviar a comunicação interativa usando a i
 
 No canal de impressão, é possível configurar os anexos e o acesso à biblioteca para permitir que o agente gerencie anexos na interface do usuário do agente para a Comunicação interativa:
 
-1. No canal Imprimir, realce o Contêiner de documentos e toque em **Propriedades**.
+1. No canal Imprimir, realce o Contêiner de documentos e selecione **Propriedades**.
 
    ![documentcontainerproperties](assets/documentcontainerproperties.png)
 
@@ -238,14 +238,14 @@ No canal de impressão, é possível configurar os anexos e o acesso à bibliote
    * **[!UICONTROL Permitir acesso à biblioteca]**: selecione para ativar o acesso à biblioteca para o agente na interface do usuário do Agente. Se ativado, o agente pode adicionar arquivos da biblioteca enquanto prepara a comunicação interativa.
    * **[!UICONTROL Permitir Reorganização Dos Anexos]**: selecione para permitir que o Agente reordene os anexos com a Comunicação interativa.
    * **[!UICONTROL Número Máximo De Anexos Permitidos]**: especifique o número máximo de anexos permitidos com a Comunicação interativa.
-   * **[!UICONTROL Arquivos a serem anexados]**: Toque **[!UICONTROL Adicionar]** e navegue para selecionar arquivos a serem anexados e especifique o seguinte:
+   * **[!UICONTROL Arquivos a serem anexados]**: Selecionar **[!UICONTROL Adicionar]** e navegue para selecionar arquivos a serem anexados e especifique o seguinte:
 
       * **[!UICONTROL Anexar Este Arquivo Ao Documento Por Padrão]**: Você poderá alterar essa opção se apenas o anexo não for Obrigatório.
       * **[!UICONTROL Obrigatório:]** O agente não poderá remover o anexo na interface do usuário do agente.
 
    ![arquivos anexados](assets/attachfiles.png)
 
-1. Toque **[!UICONTROL Concluído]**.
+1. Selecionar **[!UICONTROL Concluído]**.
 
 ### Propriedades do campo XDP/Layout {#xdplayoutfieldproperties}
 
@@ -274,13 +274,13 @@ No canal de impressão, é possível configurar os anexos e o acesso à bibliote
    * **[!UICONTROL Obrigatório]**: selecione para tornar o campo obrigatório para o Agente. Essa configuração não será aplicável se o Tipo de vínculo for Fragmento de texto.
    * **[!UICONTROL Permitir várias linhas]**: selecione este campo para permitir várias linhas de texto como entrada no campo. Essa configuração não será aplicável se o Tipo de vínculo for Fragmento de texto.
 
-1. Toque ![done_icon](assets/done_icon.png).
+1. Selecionar ![done_icon](assets/done_icon.png).
 
 ### Padrões de exibição de dados {#datadisplaypatterns}
 
 A interface de criação permite definir padrões de exibição de dados para campos, variáveis e elementos de modelo de dados de formulário disponíveis ao criar uma Comunicação interativa para canais de impressão e da Web.
 
-Para configurar o padrão de exibição de dados, toque no elemento, selecione ![configure_icon](assets/configure_icon.png) (Configurar) e definir o padrão de exibição no **[!UICONTROL Propriedades]** painel na barra lateral. Selecione qualquer opção predefinida no **[!UICONTROL Tipo]** para exibir o padrão associado ao tipo selecionado. Selecionar **[!UICONTROL Personalizado]** do **[!UICONTROL Tipo]** para definir um padrão que não esteja disponível na lista. Edição de valores no **[!UICONTROL Padrão]** automaticamente modifica o tipo para **[!UICONTROL Personalizado]**.
+Para configurar o padrão de exibição de dados, selecione o elemento e ![configure_icon](assets/configure_icon.png) (Configurar) e definir o padrão de exibição no **[!UICONTROL Propriedades]** painel na barra lateral. Selecione qualquer opção predefinida no **[!UICONTROL Tipo]** para exibir o padrão associado ao tipo selecionado. Selecionar **[!UICONTROL Personalizado]** do **[!UICONTROL Tipo]** para definir um padrão que não esteja disponível na lista. Edição de valores no **[!UICONTROL Padrão]** automaticamente modifica o tipo para **[!UICONTROL Personalizado]**.
 
 Para aplicar o padrão de exibição, o número de caracteres ou dígitos definido no campo Padrão deve corresponder ou exceder os caracteres ou dígitos definidos no valor para campos, variáveis e elementos do modelo de dados de formulário. Para obter mais informações, consulte [exemplo](../../forms/using/create-interactive-communication.md#greaternumberofdigits).
 
@@ -308,7 +308,7 @@ Além disso, se o padrão de exibição especificado estiver incorreto ou não p
 
 ## Aplicar regras a componentes de Comunicação interativa {#rules}
 
-Para condicionar componentes ou conteúdo na comunicação interativa, toque no componente/parte do conteúdo e selecione ![createruleicon](assets/createruleicon.png) (Criar regra) para iniciar o Editor de regras.
+Para condicionar componentes ou conteúdo na comunicação interativa, selecione o componente/parte do conteúdo e selecione ![createruleicon](assets/createruleicon.png) (Criar regra) para iniciar o Editor de regras.
 
 Para obter mais informações, consulte:
 
@@ -332,7 +332,7 @@ Você pode adicionar tabelas dinâmicas na Comunicação interativa usando fragm
 
 1. Especifique a associação de dados para cada uma das células da tabela. Para criar uma linha repetível, insira as propriedades do modelo de dados de formulário na linha que pertence a uma propriedade de coleção comum.
 
-   1. Toque em uma célula na tabela e selecione ![configure_icon](assets/configure_icon.png) (Configurar).
+   1. Selecione uma célula na tabela e selecione ![configure_icon](assets/configure_icon.png) (Configurar).
 
       A caixa de diálogo Propriedades é exibida na barra lateral.
 
@@ -352,7 +352,7 @@ Você pode adicionar tabelas dinâmicas na Comunicação interativa usando fragm
 
       * **[!UICONTROL Editável pelo agente]**: selecione para permitir que o agente edite o valor no campo na interface do usuário do agente.
 
-   1. Toque ![done_icon](assets/done_icon.png).
+   1. Selecionar ![done_icon](assets/done_icon.png).
 
 1. Visualize a comunicação interativa para ver a tabela renderizada com os dados.
 
@@ -360,20 +360,20 @@ Você pode adicionar tabelas dinâmicas na Comunicação interativa usando fragm
 
 ### Tabelas somente de canal da Web {#webchanneltables}
 
-Toque no painel raiz no modelo da Web e toque em **+** para adicionar um **Tabela** componente para a comunicação interativa. Uma tabela com duas linhas é inserida na comunicação interativa. A primeira linha da tabela representa o cabeçalho Tabela.
+Selecione o painel raiz no modelo da Web e selecione **+** para adicionar um **Tabela** componente para a comunicação interativa. Uma tabela com duas linhas é inserida na comunicação interativa. A primeira linha da tabela representa o cabeçalho Tabela.
 
 #### Adicionar linhas e colunas à tabela {#addrowscolumnstable}
 
 **Para adicionar ou excluir colunas:**
 
-1. Toque na caixa de texto padrão na linha de cabeçalho da tabela para exibir a barra de ferramentas do componente.
+1. Selecione a caixa de texto padrão na linha de cabeçalho da tabela para exibir a barra de ferramentas do componente.
 1. Selecionar **Adicionar coluna** ou **Excluir coluna** para adicionar ou excluir colunas da tabela respectivamente.
 
 ![component_toolbar_table1](assets/component_toolbar_table1.png)
 
 **Para adicionar ou excluir linhas:**
 
-1. Toque em qualquer uma das linhas da tabela para visualizar a barra de ferramentas do componente. Você também pode selecionar a linha da tabela usando o navegador Conteúdo no sidekick da Comunicação interativa.
+1. Selecione qualquer uma das linhas da tabela para exibir a barra de ferramentas do componente. Você também pode selecionar a linha da tabela usando o navegador Conteúdo no sidekick da Comunicação interativa.
 1. Selecionar **Adicionar linha** ou **Excluir linha** para adicionar ou excluir linhas de tabela respectivamente. Use o **Mover para cima** e **Mover para baixo** opções disponíveis na barra de ferramentas para reorganizar linhas na tabela.
 
 ![Component Toolbar](assets/component_toolbar_table_row_new.png)
@@ -382,23 +382,23 @@ Toque no painel raiz no modelo da Web e toque em **+** para adicionar um **Tabel
 
 #### Adicionar ou editar texto em células de tabela {#addedittexttable}
 
-1. Selecione a caixa de texto padrão na célula da tabela e toque em ![editar](assets/edit.png) (Editar).
-1. Digite o texto na célula da tabela e toque em ![done_icon](assets/done_icon.png) para salvá-lo.
+1. Selecione a caixa de texto padrão na célula da tabela e selecione ![editar](assets/edit.png) (Editar).
+1. Digite o texto na célula da tabela e selecione ![done_icon](assets/done_icon.png) para salvá-lo.
 
 #### Criar vínculo entre células de tabela e elementos de objeto de modelo de dados {#createbindingtablecells}
 
-1. Selecione a caixa de texto padrão na linha de tabela e toque em ![editar](assets/edit.png) (Editar).
-1. Toque na lista suspensa Objetos do modelo de dados e selecione a propriedade.
-1. Toque para salvar e criar uma ligação entre a célula da tabela e a propriedade do objeto de modelo de dados.
+1. Selecione a caixa de texto padrão na linha de tabela e selecione ![editar](assets/edit.png) (Editar).
+1. Selecione a lista suspensa Objetos do modelo de dados e selecione a propriedade.
+1. Selecione para salvar e criar uma associação entre a célula da tabela e a propriedade do objeto de modelo de dados.
 
 ![Criar associação de dados](assets/create_data_binding_table_new.png)
 
 #### Criar um hiperlink para o texto na célula da tabela {#createhyperlinktable}
 
-1. Selecione a caixa de texto padrão na célula da tabela e toque em ![editar](assets/edit.svg) (Editar).
-1. Selecione o texto na célula da tabela e toque no ícone Hiperlink.
+1. Selecione a caixa de texto padrão na célula da tabela e selecione ![editar](assets/edit.svg) (Editar).
+1. Selecione o texto na célula da tabela e selecione o ícone Hiperlink.
 1. Especifique o URL no **Caminho** campo.
-1. Toque ![done_icon](assets/done_icon.png) para salvar as propriedades do hiperlink.
+1. Selecionar ![done_icon](assets/done_icon.png) para salvar as propriedades do hiperlink.
 
 ![Criar hiperlink](assets/create_hyperlink_table_new.png)
 
@@ -422,9 +422,9 @@ A classificação pode ser aplicada a tabelas e colunas que contêm:
 
 Para ativar a classificação:
 
-1. Selecione a tabela e toque em ![configure_icon](assets/configure_icon.png) (Configurar). Também é possível selecionar a tabela usando o **Conteúdo** no sidekick da Comunicação interativa.
+1. Selecione a tabela e selecione ![configure_icon](assets/configure_icon.png) (Configurar). Também é possível selecionar a tabela usando o **Conteúdo** no sidekick da Comunicação interativa.
 1. Selecionar **Habilitar Classificação.**
-1. Toque ![done_icon](assets/done_icon.png) para salvar as propriedades da tabela. Os ícones de classificação, setas para cima e para baixo, nos cabeçalhos das colunas, representam que a classificação foi ativada.
+1. Selecionar ![done_icon](assets/done_icon.png) para salvar as propriedades da tabela. Os ícones de classificação, setas para cima e para baixo, nos cabeçalhos das colunas, representam que a classificação foi ativada.
 
    ![Ativar classificação](assets/enable_sorting_new-1.png)
 
@@ -454,7 +454,7 @@ Use o **Propriedades** página para:
 Para acessar o **Propriedades** página:
 
 1. Faça logon na instância de autor do AEM e acesse **Adobe Experience Manager** > **Forms** > **Forms e documentos**.
-1. Selecione a Comunicação interativa e toque em **Propriedades**.
+1. Selecione a Comunicação interativa e selecione **Propriedades**.
 1. Selecione o **Geral** para editar a **Título** e **Descrição** campos.
 
 ### Adicionar ou excluir o canal da Web {#add-or-delete-the-web-channel}
@@ -464,18 +464,18 @@ Execute as seguintes etapas para adicionar o canal da Web para uma Comunicação
 1. No **Propriedades** selecione a **Canais** guia.
 1. Selecione o **Web** e selecione um template para o canal da Web.
 1. Selecionar **Usar impressão como principal no canal da Web** para habilitar a sincronização entre o canal da Web e o canal de impressão.
-1. Toque **Salvar e fechar** para salvar as alterações.
+1. Selecionar **Salvar e fechar** para salvar as alterações.
 
-   Da mesma forma, você pode tocar no **Web** caixa de seleção na **Canais** para excluir o canal da Web da Comunicação interativa.
+   Da mesma forma, é possível selecionar a variável **Web** caixa de seleção na **Canais** para excluir o canal da Web da Comunicação interativa.
 
 ## Adicionar o componente de Botão ao canal da Web {#add-button-component-to-the-web-channel}
 
-Você pode adicionar um botão como um componente ao canal da Web da Comunicação interativa. Definir regras usando o [editor de regras](../../forms/using/rule-editor.md) para navegar até outras Comunicações interativas, formulários adaptáveis, outros ativos, como imagens ou fragmentos de documentos, ou um URL externo ao tocar no botão.
+Você pode adicionar um botão como um componente ao canal da Web da Comunicação interativa. Definir regras usando o [editor de regras](../../forms/using/rule-editor.md) para poder navegar até outras Comunicações interativas, formulários adaptáveis, outros ativos, como imagens ou fragmentos de documentos, ou um URL externo na seleção do botão.
 
 Para adicionar um botão e definir regras nele:
 
-1. Toque no painel raiz no modelo da Web e toque em **+** para adicionar o **Botão** componente para a comunicação interativa.
-1. Toque no componente de botão e toque em ![edit-rules](assets/edit-rules.png) para definir regras ao tocar no botão.
+1. Selecione o painel raiz no modelo da Web e selecione **+** para adicionar o **Botão** componente para a comunicação interativa.
+1. Selecione o componente de botão e selecione ![edit-rules](assets/edit-rules.png) para definir regras na seleção do botão.
 1. No **Quando** , selecione **clicado** no estado da lista suspensa do botão.
 1. No **Depois** seção:
 
@@ -483,11 +483,11 @@ Para adicionar um botão e definir regras nele:
 
    1. Especifique o URL da comunicação interativa, do formulário adaptável, de um ativo ou de uma página da Web. Por exemplo, especifique o URL no seguinte formato para navegar para outra Comunicação interativa: https://&lt;server-name>:&lt;port>/editor.html/content/forms/af/&lt;interactive communication=&quot;&quot; name=&quot;&quot;>/channels/&lt;channel name=&quot;&quot; print=&quot;&quot; or=&quot;&quot; web=&quot;&quot;>.html
    1. Especifique a opção para abrir o ativo na mesma guia, nova guia ou nova janela.
-   1. Toque **Concluído** e toque em **Fechar** para salvar a regra.
+   1. Selecionar **Concluído** e selecione **Fechar** para salvar a regra.
 
    Da mesma forma, você pode selecionar outras opções disponíveis na lista suspensa tipo de ação, como Chamar serviço e Enviar formulário. Para obter mais informações, consulte [editor de regras](../../forms/using/rule-editor.md).
 
-1. Pré-visualize a Comunicação interativa e toque no botão para visualizar a Comunicação interativa, o formulário adaptável, um ativo ou uma página da Web especificada na etapa 4(b).
+1. Pré-visualize a Comunicação interativa e selecione o botão para exibir a Comunicação interativa, o formulário adaptável, um ativo ou uma página da Web especificada na etapa 4(b).
 
 ## Adicionar componente Painel ao canal da Web {#add-panel-component-to-the-web-channel}
 
@@ -497,19 +497,19 @@ Execute as seguintes etapas para adicionar um componente Painel ao canal Web:
 
 1. Insira o **Painel** no canal da web usando uma das seguintes opções:
 
-   * Toque em um componente, toque em **+** e selecione o **Painel** componente.
+   * Selecione um componente, selecione **+** e selecione o **Painel** componente.
 
    * No **Componente** painel do navegador, arraste e solte a **Painel** componente na comunicação interativa.
 
-   * Toque no **Painel** no **Conteúdo** painel do navegador e toque em **Adicionar painel secundário**. Selecionar o **Adicionar painel secundário** exibe a variável **Adicionar painel secundário** caixa de diálogo. Insira o título, uma descrição opcional e um nome para o componente Painel.
+   * Selecione o **Painel** no **Conteúdo** painel do navegador e selecione **Adicionar painel secundário**. Selecionar o **Adicionar painel secundário** exibe a variável **Adicionar painel secundário** caixa de diálogo. Insira o título, uma descrição opcional e um nome para o componente Painel.
 
-1. Toque no painel da **Conteúdo** navegador para executar ações adicionais no painel, como configurar, editar regras, copiar, excluir e inserir o componente.
+1. Selecione o painel na **Conteúdo** navegador para executar ações adicionais no painel, como configurar, editar regras, copiar, excluir e inserir o componente.
 
    Também é possível arrastar e soltar um painel dentro da **Conteúdo** navegador para refletir a alteração na estrutura da Comunicação interativa no painel direito.
 
 ## Sincronização do canal da Web com o canal de impressão {#synchronize}
 
-Quando você seleciona Imprimir como Mestre para Canal da Web ao criar uma Comunicação interativa, o canal da Web é criado em sincronia com o canal de impressão e o conteúdo e a vinculação de dados do canal da Web são derivados do canal de impressão, e as alterações feitas no canal de impressão podem ser refletidas no canal da Web quando você toca em Sincronizar.
+Quando você seleciona Imprimir como Mestre para Canal da Web ao criar uma Comunicação interativa, o canal da Web é criado em sincronia com o canal de impressão e o conteúdo e a vinculação de dados do canal da Web são derivados do canal de impressão, e as alterações feitas no canal de impressão podem ser refletidas no canal da Web ao selecionar Sincronizar.
 
 No entanto, os autores podem interromper a herança dos componentes no canal da Web, conforme necessário.
 
@@ -540,13 +540,13 @@ Navegue até **Fontes de dados** > **Conteúdo principal** para visualizar os el
 
 No canal da Web, os componentes são incorporados nas áreas de destino.
 
-Passe o mouse sobre a área ou variável de destino relevante no canal da Web e selecione ![cancelinheritance](assets/cancelinheritance.png) (Cancelar herança) e, na caixa de diálogo Cancelar herança, toque em **[!UICONTROL Sim]**.
+Passe o mouse sobre a área ou variável de destino relevante no canal da Web e selecione ![cancelinheritance](assets/cancelinheritance.png) (Cancelar herança) e, na caixa de diálogo Cancelar herança, selecione **[!UICONTROL Sim]**.
 
 A herança dos componentes na área de destino é cancelada e agora você pode editá-los conforme necessário.
 
 ### Habilitar herança novamente {#re-enable-inheritance}
 
-No canal da Web, se você tiver cancelado a herança de um componente, será possível reativá-lo. Para reativar a herança, passe o mouse sobre o limite da área de destino relevante, que inclui o componente, e toque em ![reenableinheritance](assets/reenableinheritance.png).
+No canal da Web, se você tiver cancelado a herança de um componente, será possível reativá-lo. Para reativar a herança, passe o mouse sobre o limite da área de destino relevante, que inclui o componente, e selecione ![reenableinheritance](assets/reenableinheritance.png).
 
 A caixa de diálogo Reverter herança é exibida.
 
@@ -554,17 +554,17 @@ A caixa de diálogo Reverter herança é exibida.
 
 Se necessário, selecione **[!UICONTROL Sincronizar A Página Após Reverter A Herança]**. Selecione esta opção para sincronizar toda a comunicação interativa. Se você não selecionar essa opção, somente a área de destino relevante será sincronizada ao restaurar a herança.
 
-Toque **[!UICONTROL Sim]**.
+Selecionar **[!UICONTROL Sim]**.
 
 ### Sincronizar {#synchronize-1}
 
 Se você estiver usando a opção Imprimir como Principal do Canal da Web e alterar o canal Imprimir, será possível sincronizar o conteúdo para trazer as alterações recém-feitas para o canal da Web.
 
-1. Para sincronizar o canal da Web com o canal de impressão, alterne para o canal da Web e toque no ícone More options.
+1. Para sincronizar o canal da Web com o canal de impressão, alterne para o canal da Web e selecione o ícone More options.
 
    ![Opções de sincronização automática](assets/auto_sync_options_new.png)
 
-1. Toque em uma das opções a seguir:
+1. Selecione uma das opções a seguir:
 
    * **[!UICONTROL Sincronizar com impressão]**: sincroniza o conteúdo somente para as áreas de destino nas quais a herança não foi cancelada.
    * **[!UICONTROL Redefinir]**: sincroniza o conteúdo do canal da Web com o canal de impressão e descarta todas as alterações feitas no canal da Web.
@@ -575,7 +575,7 @@ Depois de ter o conteúdo gerado automaticamente no canal da Web usando a opçã
 
 ![Component Toolbar](assets/component_toolbar_inherited_web_new.png)
 
-Toque no componente para exibir as seguintes opções:
+Selecione o componente para exibir as seguintes opções:
 
 * **Copiar:** Copie um componente e cole-o em outros locais na Comunicação interativa.
 * **Recortar:** Mova um componente de um local para outro na Comunicação interativa.
@@ -593,8 +593,8 @@ Toque no componente para exibir as seguintes opções:
 
 A interface de criação do canal da Web facilita o agrupamento de componentes em um painel para que seja possível executar operações nesses componentes simultaneamente. A variável **Conteúdo** A guia lista os componentes agrupados como elementos secundários do painel na árvore de conteúdo.
 
-1. Toque em um componente e selecione o Grupo ( ![grupo](assets/group.jpg)).
-1. Selecione vários componentes e toque em **Agrupar objetos no Painel**.
+1. Selecione um componente e selecione o Grupo ( ![grupo](assets/group.jpg)).
+1. Selecione vários componentes e selecione **Agrupar objetos no Painel**.
 
    ![Agrupar objetos](assets/component_toolbar_group_objects_new.png)
 

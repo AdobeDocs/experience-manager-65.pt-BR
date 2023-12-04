@@ -3,17 +3,17 @@ title: Como conectar e enviar dados do formulário adaptável para o Microsoft&r
 description: Um guia passo a passo para conectar e enviar dados do Formulário adaptável para o Microsoft&reg; Power Automate.
 keywords: Forms Microsoft Power Automate adaptável, enviar dados do Forms adaptável para o Microsoft Power Automate
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: e19a7e617bdabb678bd804cab3fea228ce19acfa
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1196'
-ht-degree: 4%
+source-wordcount: '1179'
+ht-degree: 2%
 
 ---
 
 
 # Conectar e enviar dados do formulário adaptável para o Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
 
-Você pode configurar um Formulário adaptável para executar um fluxo da nuvem do Microsoft® Power Automate no envio. O formulário adaptável configurado envia dados capturados, anexos e documentos de registro para processamento no fluxo da nuvem do Power Automate. Ele ajuda você a criar uma experiência personalizada de captura de dados, aproveitando o poder do Microsoft® Power Automate para criar lógicas de negócios sobre dados capturados e automatizar os fluxos de trabalho do cliente. Estes são alguns exemplos do que você pode fazer após integrar um formulário adaptável ao Microsoft® Power Automate:
+Você pode configurar um Formulário adaptável para executar um fluxo da nuvem do Microsoft® Power Automate no envio. O formulário adaptável configurado envia dados capturados, anexos e documentos de registro para processamento no fluxo da nuvem do Power Automate. Ele ajuda você a criar uma experiência personalizada de captura de dados, aproveitando o poder do Microsoft® Power Automate para criar lógicas comerciais sobre dados capturados e automatizar os fluxos de trabalho do cliente. Estes são alguns exemplos do que você pode fazer após integrar um formulário adaptável ao Microsoft® Power Automate:
 
 * Usar dados adaptáveis do Forms em processos de negócios do Power Automate
 * Use o Power Automate para enviar dados capturados para mais de 500 fontes de dados ou qualquer API disponível publicamente
@@ -78,20 +78,20 @@ Execute as seguintes ações para conectar sua instância do AEM Forms Author ao
 ### Criar configuração de nuvem do Microsoft® Power Automate Dataverse {#microsoft-power-automate-dataverse-cloud-configuration}
 
 1. Na instância do autor do AEM Forms, navegue até **[!UICONTROL Ferramentas]** ![martelo](assets/hammer.png) > **[!UICONTROL Geral]** > **[!UICONTROL Navegador de configuração]**.
-1. No **[!UICONTROL Navegador de configuração]** página, toque em **[!UICONTROL Criar]**.
-1. No **[!UICONTROL Criar configuração]** , especifique um **[!UICONTROL Título]** para a configuração, ative **[!UICONTROL Configurações da nuvem]** e toque em **[!UICONTROL Criar]**. Ele cria um contêiner de configuração para armazenar Cloud Service. Verifique se o nome da pasta não contém nenhum espaço.
+1. No **[!UICONTROL Navegador de configuração]** selecione **[!UICONTROL Criar]**.
+1. No **[!UICONTROL Criar configuração]** , especifique um **[!UICONTROL Título]** para a configuração, ative **[!UICONTROL Configurações da nuvem]** e selecione **[!UICONTROL Criar]**. Ele cria um contêiner de configuração para armazenar Cloud Service. Verifique se o nome da pasta não contém nenhum espaço.
 1. Navegue até **[!UICONTROL Ferramentas]** ![martelo](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® Power Automate Dataverse]** e abra o container de configuração criado na etapa anterior.
 
    >[!NOTE]
    >
    Ao criar um Formulário adaptável, especifique o nome do contêiner na **[!UICONTROL Contêiner de configuração]** campo.
 
-1. Na página de configuração, toque em **[!UICONTROL Criar]** para criar [!DNL Microsoft®® Power Automate Flow Service] configuração no AEM Forms.
+1. Na página de configuração, selecione **[!UICONTROL Criar]** para criar [!DNL Microsoft®® Power Automate Flow Service] configuração no AEM Forms.
 1. No **[!UICONTROL Configurar o serviço Dataverse para o Microsoft® Power Automate]** página, especifique a **[!UICONTROL ID do cliente]** (também conhecido como ID do aplicativo), **[!UICONTROL Segredo do cliente]**, **[!UICONTROL URL do OAuth]** e **[!UICONTROL URL de ambiente dinâmico]**. Use a ID do cliente, o segredo do cliente, o URL do OAuth e o URL do ambiente dinâmico do [Aplicativo do Ative Diretory do Microsoft® Azure](#ms-power-automate-application) você criou na seção anterior. Use a opção Endpoints na interface do usuário do aplicativo do Microsoft® Azure Ative Diretory para encontrar o URL do OAuth
 
    ![Use a opção Endpoints na interface do usuário do aplicativo Microsoft Power Automate para localizar o URL do OAuth](assets/endpoints.png)
 
-1. Toque **[!UICONTROL Conectar]** . Se solicitado, faça logon em sua conta do Microsoft® Azure. Toque **[!UICONTROL Salvar]**.
+1. Selecionar **[!UICONTROL Conectar]** . Se solicitado, faça logon em sua conta do Microsoft® Azure. Selecione **[!UICONTROL Salvar]**.
 
 ### Criar configuração de nuvem do serviço de fluxo do Microsoft® Power Automate {#create-microsoft-power-automate-flow-cloud-configuration}
 
@@ -100,15 +100,15 @@ Execute as seguintes ações para conectar sua instância do AEM Forms Author ao
    >[!NOTE]
    >
    Ao criar um Formulário adaptável, especifique o nome do contêiner na **[!UICONTROL Contêiner de configuração]** campo.
-1. Na página de configuração, toque em **[!UICONTROL Criar]** para criar [!DNL Microsoft®® Power Automate Flow Service] configuração no AEM Forms.
-1. No **[!UICONTROL Configurar Dataverse para o Microsoft® Power Automate]** página, especifique a **[!UICONTROL ID do cliente]** (também conhecido como ID do aplicativo), **[!UICONTROL Segredo do cliente]**, **[!UICONTROL URL do OAuth]** e **[!UICONTROL URL de ambiente dinâmico]**. Use a ID do cliente, o Segredo do cliente, o URL do OAuth e a ID de ambiente do Dynamics. Use a opção Endpoints na interface do usuário do aplicativo do Microsoft® Azure Ative Diretory para localizar o URL do OAuth. Abra o [Meus fluxos](https://us.flow.microsoft.com) vincular e tocar em Meus fluxos usar a ID listada no URL como ID de ambiente do Dynamics.
-1. Toque **[!UICONTROL Conectar]**. Se solicitado, faça logon em sua conta do Microsoft® Azure. Toque **[!UICONTROL Salvar]**.
+1. Na página de configuração, selecione **[!UICONTROL Criar]** para criar [!DNL Microsoft®® Power Automate Flow Service] configuração no AEM Forms.
+1. No **[!UICONTROL Configurar Dataverse para o Microsoft® Power Automate]** página, especifique a **[!UICONTROL ID do cliente]** (também conhecido como ID do aplicativo), **[!UICONTROL Segredo do cliente]**, **[!UICONTROL URL do OAuth]** e **[!UICONTROL URL de ambiente dinâmico]**. Use a ID do cliente, o Segredo do cliente, o URL do OAuth e a ID de ambiente do Dynamics. Use a opção Endpoints na interface do usuário do aplicativo do Microsoft® Azure Ative Diretory para localizar o URL do OAuth. Abra o [Meus fluxos](https://us.flow.microsoft.com) e selecione Meus fluxos use a ID listada em URL como ID de ambiente do Dynamics.
+1. Selecionar **[!UICONTROL Conectar]**. Se solicitado, faça logon em sua conta do Microsoft® Azure. Selecione **[!UICONTROL Salvar]**.
 
 ### Publicar as configurações de nuvem do Microsoft® Power Automate Dataverse e do Microsoft® Power Automate Flow Service {#publish-microsoft-power-automate-dataverse-cloud-configuration}
 
 1. Navegue até **[!UICONTROL Ferramentas]** ![martelo](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® Power Automate Dataverse]** e abra o contêiner de configuração criado no anterior [Criar configuração de nuvem do Microsoft® Power Automate Dataverse](#microsoft-power-automate-dataverse-cloud-configuration) seção.
-1. Selecione o `dataverse` configuração e toque em **[!UICONTROL Publish]**.
-1. Na página Publicar, selecione **[!UICONTROL Todas as configurações]** e toque em **[!UICONTROL Publish]**. Publique as configurações de nuvem do Power Automate Dataverse e do Power Automate Flow Service.
+1. Selecione o `dataverse` e selecione **[!UICONTROL Publish]**.
+1. Na página Publicar, selecione **[!UICONTROL Todas as configurações]** e selecione **[!UICONTROL Publish]**. Publique as configurações de nuvem do Power Automate Dataverse e do Power Automate Flow Service.
 
 Sua instância do AEM Forms Author agora está conectada ao Microsoft® Power Automate. Agora é possível enviar dados do Adaptive Forms para um fluxo do Power Automate.
 
@@ -117,7 +117,7 @@ Sua instância do AEM Forms Author agora está conectada ao Microsoft® Power Au
 Depois que você [Conecte sua instância de autor do AEM Forms com o Microsoft® Power Automate](#connect-forms-server-with-power-automate), execute a seguinte ação para configurar o formulário adaptável para enviar os dados capturados para um fluxo do Microsoft® no envio do formulário.
 
 1. Faça logon na instância do Autor, selecione o Formulário adaptável e clique em **[!UICONTROL Propriedades]**.
-1. No Contêiner de configuração, procure e selecione o contêiner criado na seção [Criar configuração de nuvem do Microsoft® Power Automate Dataverse](#microsoft-power-automate-dataverse-cloud-configuration)e toque em **[!UICONTROL Salvar e fechar]**.
+1. No Contêiner de configuração, procure e selecione o contêiner criado na seção [Criar configuração de nuvem do Microsoft® Power Automate Dataverse](#microsoft-power-automate-dataverse-cloud-configuration)e selecione **[!UICONTROL Salvar e fechar]**.
 1. Abra o Formulário adaptável para edição e navegue até **[!UICONTROL Envio]** seção das propriedades do Contêiner de formulário adaptável.
 1. No contêiner de propriedades, para **[!UICONTROL Ações de envio]** selecione o **[!UICONTROL Chamar um fluxo do Power Automate]** opção. Uma lista de fluxos disponíveis do Power Automate fica disponível no **[!UICONTROL Fluxo do Power Automate]** opção. Selecione o fluxo necessário e os dados do Adaptive Forms serão enviados a ele no envio.
 

@@ -7,10 +7,10 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2987'
-ht-degree: 47%
+source-wordcount: '2963'
+ht-degree: 41%
 
 ---
 
@@ -21,14 +21,14 @@ ht-degree: 47%
 >* Esta página foi projetada para fornecer uma visão geral do manuseio básico ao usar o ambiente de autor do Adobe Experience Manager (AEM). Usa o console **Sites** como base.
 >
 >* Algumas funcionalidades podem ou não estar disponíveis dependendo do console. Informações específicas sobre os consoles individuais e suas funcionalidades relacionadas são abordadas com mais detalhes em outras páginas.
->* Os atalhos de teclado estão disponíveis em todo o AEM, principalmente ao [usar páginas de console](/help/sites-authoring/keyboard-shortcuts.md) e [de edição](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+>* Atalhos de teclado estão disponíveis em todo o AEM. Em especial, quando [uso de consoles](/help/sites-authoring/keyboard-shortcuts.md) e [editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 >
 
 ## Introdução {#getting-started}
 
 ### Uma interface de usuário habilitada para toque {#a-touch-enabled-ui}
 
-A interface de usuário do AEM foi habilitada para toque. Uma interface habilitada para toque permite que você use toques para interagir com o software por meio de gestos, como tocar, tocar e segurar e deslizar o dedo. Isso contrasta com o modo como uma interface de desktop tradicional opera com ações do mouse, como clicar, clicar duas vezes, clicar com o botão direito do mouse e passar o mouse.
+A interface de usuário do AEM foi habilitada para toque. Uma interface habilitada para toque permite que você use toques para interagir com o software por meio de gestos como selecionar, tocar e segurar e deslizar o dedo. Isso contrasta com o modo como uma interface de desktop tradicional opera com ações do mouse, como clicar, clicar duas vezes, clicar com o botão direito do mouse e passar o mouse.
 
 Como a interface do usuário do AEM é habilitada para toque, você pode usar os gestos de toque nos dispositivos de toque (por exemplo, dispositivos móveis ou tablets) e as ações do mouse em um dispositivo de desktop tradicional.
 
@@ -40,23 +40,23 @@ Logo após o logon, você acessa o [painel de Navegação](#navigation-panel). S
 
 >[!NOTE]
 >
->Para obter uma boa compreensão do uso básico do AEM, este documento se baseia no console de **Sites.**
+>Para obter uma boa compreensão do uso básico do AEM, este documento se baseia no **Sites** console.
 >
->Para começar, clique ou toque em **Sites**.
+>Para começar, clique em **Sites**.
 
 ### Navegação do produto   {#product-navigation}
 
-Sempre que um usuário acessa um console pela primeira vez, um tutorial de navegação de produto é iniciado. Clique ou toque para obter uma boa visão geral do manuseio básico do AEM.
+Sempre que um usuário acessa um console pela primeira vez, um tutorial de navegação de produto é iniciado. Clique aqui para obter uma boa visão geral do manuseio básico do AEM.
 
-![Navegação do produto  ](assets/bh-02.png)
+![Navegação do produto](assets/bh-02.png)
 
-Clique ou toque em **Avançar** para avançar para a próxima página da visão geral. Clique ou toque **Fechar** ou clique ou toque fora da caixa de diálogo de visão geral para fechar.
+Clique em **Próxima** para avançar para a próxima página da visão geral. Clique em **Fechar** ou clique fora da caixa de diálogo de visão geral para fechar.
 
 A visão geral será reiniciada na próxima vez que você acessar um console a menos que visualize todos os slides ou marque a opção **Não mostrar esta mensagem novamente**.
 
 ## Navegação global {#global-navigation}
 
-É possível navegar entre os consoles usando o painel de navegação global. Ele acionado como uma lista suspensa de tela cheia ao clicar ou tocar no link do Adobe Experience Manager na parte superior esquerda da tela.
+É possível navegar entre os consoles usando o painel de navegação global. É acionado como uma lista suspensa de tela cheia ao clicar no link do Adobe Experience Manager na parte superior esquerda da tela.
 
 Você pode fechar o painel de navegação global clicando ou tocando em **Fechar** para retornar ao seu local anterior.
 
@@ -279,7 +279,7 @@ A forma como você [seleciona um recurso](/help/sites-authoring/basic-handling.m
 
 Devido às restrições de espaço em algumas janelas, a barra de ferramentas pode tornar-se rapidamente maior do que o espaço disponível. Quando isso acontecer, opções adicionais serão exibidas. Ao clicar ou tocar nas reticências (os três pontos ou **..**) abre um seletor suspenso com todas as ações restantes. Por exemplo, após selecionar uma página no console **Sites**:
 
-![Barra de ferramentas de Ações](assets/bh-12.png)
+![Barra de ferramentas Ações](assets/bh-12.png)
 
 >[!NOTE]
 >
@@ -316,7 +316,7 @@ Selecionar um recurso específico depende de uma combinação da exibição e do
  <tbody>
   <tr>
    <td> </td>
-   <td>Selecione</td>
+   <td>Selecionar</td>
    <td>Cancelar seleção</td>
   </tr>
   <tr>
@@ -324,12 +324,12 @@ Selecionar um recurso específico depende de uma combinação da exibição e do
    <td>
     <ul>
      <li>Área de trabalho:<br /> Clique na miniatura</li>
-     <li>Dispositivos móveis:<br /> Toque na miniatura</li>
+     <li>Dispositivos móveis:<br /> Selecione a miniatura</li>
     </ul> </td>
    <td>
     <ul>
      <li>Área de trabalho:<br /> Clique na miniatura</li>
-     <li>Dispositivos móveis:<br /> Toque na miniatura</li>
+     <li>Dispositivos móveis:<br /> Selecione a miniatura</li>
     </ul> </td>
   </tr>
   <tr>
@@ -337,12 +337,12 @@ Selecionar um recurso específico depende de uma combinação da exibição e do
    <td>
     <ul>
      <li>Área de trabalho:<br /> Passe o mouse sobre ele e use a ação rápida da marca de seleção</li>
-     <li>Dispositivos móveis:<br /> Toque e segure o cartão</li>
+     <li>Dispositivos móveis:<br /> Selecionar e manter o cartão pressionado</li>
     </ul> </td>
    <td>
     <ul>
      <li>Área de trabalho:<br /> Clique no cartão</li>
-     <li>Dispositivos móveis:<br /> Toque no cartão</li>
+     <li>Dispositivos móveis:<br /> Selecione o cartão</li>
     </ul> </td>
   </tr>
   <tr>
@@ -350,12 +350,12 @@ Selecionar um recurso específico depende de uma combinação da exibição e do
    <td>
     <ul>
      <li>Área de trabalho:<br /> Clique na miniatura</li>
-     <li>Dispositivos móveis:<br /> Toque na miniatura</li>
+     <li>Dispositivos móveis:<br /> Selecione a miniatura</li>
     </ul> </td>
    <td>
     <ul>
      <li>Área de trabalho:<br /> Clique na miniatura</li>
-     <li>Dispositivos móveis:<br /> Toque na miniatura</li>
+     <li>Dispositivos móveis:<br /> Selecione a miniatura</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -410,7 +410,7 @@ Selecionar um recurso na coluna mais à esquerda exibe os recursos secundários 
      ![Exibição de coluna](assets/bh-17.png)
 
    * Os secundários do recurso clicado/tocado são exibidos na coluna à direita do recurso clicado/tocado.
-   * Se você tocar ou clicar em um nome de recurso que não tenha filhos, seus detalhes serão exibidos na coluna final.
+   * Se você clicar em um nome de recurso que não tenha filhos, seus detalhes serão exibidos na coluna final.
 
 * Tocar ou clicar na miniatura seleciona o recurso.
 
@@ -437,9 +437,9 @@ Selecionar um recurso na coluna mais à esquerda exibe os recursos secundários 
 
    * Uma representação visual do conteúdo da página.
    * O título da página.
-   * Datas importantes (como a última edição/publicação).
+   * Datas importantes (como a última edição e publicação).
    * A página está bloqueada, oculta ou faz parte de uma live copy.
-   * Se for o caso, quando for necessário tomar medidas como parte de um fluxo de trabalho.
+   * Se apropriado, quando é necessário tomar medidas como parte de um fluxo de trabalho.
 
       * Marcadores que indicam ações necessárias podem estar relacionados a itens em sua [caixa de entrada](/help/sites-authoring/inbox.md).
 
@@ -462,12 +462,12 @@ Selecionar um recurso na coluna mais à esquerda exibe os recursos secundários 
 
    * Quando todos os itens da lista forem selecionados, essa caixa de seleção aparecerá marcada.
 
-      * Para desmarcar tudo, clique ou toque na caixa de seleção.
+      * Para desmarcar tudo, clique na caixa de seleção.
 
    * Quando apenas alguns itens são selecionados, ela aparece com um sinal de menos.
 
-      * Para selecionar tudo, clique ou toque na caixa de seleção.
-      * Para desmarcar tudo, clique ou toque novamente na caixa de seleção.
+      * Para selecionar tudo, clique na caixa de seleção.
+      * Para desmarcar tudo, clique novamente na caixa de seleção.
 
 * Selecione as colunas a serem mostradas usando o **Configurações de exibição** localizada abaixo do botão Exibições. As seguintes colunas estão disponíveis para exibição:
 
@@ -493,7 +493,7 @@ Selecionar um recurso na coluna mais à esquerda exibe os recursos secundários 
 
   ![Pedido de alteração](assets/bh-22.png)
 
-  Clique ou toque na barra de seleção vertical e arraste o item até uma nova posição na lista.
+  Clique na barra de seleção vertical e arraste o item para uma nova posição na lista.
 
   ![Pedido de alteração - Arrastar](assets/bh-23.png)
 
@@ -509,7 +509,7 @@ O **Seletor de painéis** está disponível no canto superior esquerdo da janela
 
 ![Seletor de painéis](assets/bh-25.png)
 
-Por exemplo, no Sites, é possível selecionar somente conteúdo (padrão), árvore de conteúdo, linha de tempo, referências ou o painel lateral de filtro.
+Por exemplo, no Sites, é possível selecionar somente conteúdo (padrão), árvore de conteúdo, linha do tempo, referências ou o painel lateral de filtro.
 
 Se somente conteúdo for selecionado, apenas o ícone do painel será exibido. Se qualquer outra opção for selecionada, o nome da opção aparecerá ao lado do ícone do painel.
 
@@ -537,7 +537,7 @@ A linha do tempo pode ser usada para exibir e/ou iniciar eventos que ocorreram n
 
 A coluna de linha do tempo permite:
 
-* [Exibir vários eventos relacionados a um item selecionado.](#timelineviewevents)
+* [Exibir vários eventos](#timelineviewevents) relacionado a um item selecionado.
 
    * Os tipos de eventos podem ser selecionados na lista suspensa:
 
@@ -552,7 +552,7 @@ A coluna de linha do tempo permite:
 
       * e Mostrar tudo
 
-* [Adicionar/exibir comentários sobre o item selecionado. ](#timelineaddingandviewingcomments) A caixa **Comentário** é exibida na parte inferior da lista de eventos. Digitar um comentário e Retornar registra o comentário. É exibido quando **Comentários** ou **Mostrar tudo** é selecionado.
+* [Adicionar/exibir comentários](#timelineaddingandviewingcomments) sobre o item selecionado. A caixa **Comentário** é exibida na parte inferior da lista de eventos. Digitar um comentário e Retornar registra o comentário. É exibido quando **Comentários** ou **Mostrar tudo** é selecionado.
 
 * Os consoles específicos têm funcionalidade adicional. Por exemplo, no console Sites, é possível fazer o seguinte:
 

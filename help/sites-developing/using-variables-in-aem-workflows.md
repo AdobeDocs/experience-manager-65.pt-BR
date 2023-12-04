@@ -8,9 +8,9 @@ content-type: reference
 discoiquuid: bbb9936e-ecd2-44b3-b4ae-dd62a3160641
 docset: aem65
 exl-id: c8aeceec-860c-49ee-b681-d7107e52020d
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2096'
+source-wordcount: '1941'
 ht-degree: 0%
 
 ---
@@ -49,8 +49,8 @@ Para obter outros tipos de dados complexos disponíveis em fluxos de trabalho do
 Para criar uma variável,
 
 1. Em uma instância do AEM, navegue até Ferramentas > Fluxo de trabalho > Modelos.
-1. Toque **[!UICONTROL Criar]** e especifique o título e um nome opcional para o modelo de workflow. Selecione o modelo e toque em **[!UICONTROL Editar]**.
-1. Toque no ícone de variáveis disponível no sidekick do modelo de fluxo de trabalho e toque em **[!UICONTROL Adicionar variável]**.
+1. Selecionar **[!UICONTROL Criar]** e especifique o título e um nome opcional para o modelo de workflow. Selecione o modelo e selecione **[!UICONTROL Editar]**.
+1. Selecione o ícone de variáveis disponível no sidekick do modelo de fluxo de trabalho e selecione **[!UICONTROL Adicionar variável]**.
 
    ![Adicionar variável](assets/variables_add_variable_new.png)
 
@@ -62,7 +62,7 @@ Para criar uma variável,
    * Modelo de dados de formulário - especifique um caminho de Modelo de dados de formulário.
    * ArrayList - Especifique um subtipo para a coleção.
 
-1. Especifique uma descrição opcional para a variável e toque em ![Ícone Salvar indicado por uma marca de seleção em uma caixa.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) para salvar as alterações. A variável é exibida na lista disponível no painel esquerdo.
+1. Especifique uma descrição opcional para a variável e selecione ![Ícone Salvar indicado por uma marca de seleção em uma caixa.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) para salvar as alterações. A variável é exibida na lista disponível no painel esquerdo.
 
 Ao criar variáveis, considere as seguintes práticas:
 
@@ -91,11 +91,11 @@ Você também pode atualizar elementos específicos de uma variável do tipo JSO
 
 Para adicionar o mapeamento entre variáveis, faça o seguinte:
 
-1. Na página de edição do fluxo de trabalho, toque no ícone Etapas disponível no sidekick do modelo de fluxo de trabalho.
-1. Arraste e solte a variável **Definir variável** etapa para o editor de workflow, toque na etapa e selecione ![Ícone de configuração indicado por uma chave inglesa.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configurar o).
+1. Na página de edição do workflow, selecione o ícone Etapas disponível no sidekick do modelo de workflow.
+1. Arraste e solte a variável **Definir variável** etapa para o editor de fluxo de trabalho, selecione a etapa e selecione ![Ícone de configuração indicado por uma chave inglesa.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configurar).
 1. Na caixa de diálogo Definir variável, selecione **[!UICONTROL Mapeamento]** > **[!UICONTROL Adicionar mapeamento]**.
 1. No **Mapear variável** , selecione a variável para armazenar dados, selecione o modo de mapeamento e especifique um valor para armazenar na variável. Os modos de mapeamento variam de acordo com o tipo de variável.
-1. Mapeie mais variáveis para poder fazer uma expressão significativa. Toque ![Ícone Salvar indicado por uma marca de seleção em uma caixa.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) para salvar as alterações.
+1. Mapeie mais variáveis para poder fazer uma expressão significativa. Selecionar ![Ícone Salvar indicado por uma marca de seleção em uma caixa.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) para salvar as alterações.
 
 ### Exemplo 1: consultar uma variável XML para definir o valor de uma variável de string {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -164,7 +164,7 @@ Neste exemplo, antes de definir a expressão de roteamento, use [exemplo 2](/hel
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
-Da mesma forma, selecione um caminho de script externo ou especifique o script ECMA para expressões de roteamento para avaliar a ramificação ativa. Toque **[!UICONTROL Renomear ramificação]** para especificar um nome alternativo para a ramificação.
+Da mesma forma, selecione um caminho de script externo ou especifique o script ECMA para expressões de roteamento para avaliar a ramificação ativa. Selecionar **[!UICONTROL Renomear ramificação]** para especificar um nome alternativo para a ramificação.
 
 Para obter mais exemplos, consulte [Criar um modelo de fluxo de trabalho](/help/forms/using/aem-forms-workflow.md#create-a-workflow-model).
 
@@ -249,9 +249,9 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ## Editar uma variável {#edit-a-variable}
 
-1. Na página Editar fluxo de trabalho, toque no ícone Variáveis disponível no sidekick do modelo de fluxo de trabalho. A seção Variáveis, no painel esquerdo, exibe todas as variáveis existentes.
-1. Toque no ![Ícone de edição indicado por um lápis.](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Editar) ícone ao lado do nome da variável que você deseja editar.
-1. Edite as informações da variável e toque ![Ícone Salvar indicado por uma marca de seleção.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) para salvar as alterações. Não é possível editar o **[!UICONTROL Nome]** e **[!UICONTROL Tipo]** para uma variável.
+1. Na página Editar workflow, selecione o ícone Variáveis disponível no sidekick do modelo de workflow. A seção Variáveis, no painel esquerdo, exibe todas as variáveis existentes.
+1. Selecione o ![Ícone de edição indicado por um lápis.](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Editar) ícone ao lado do nome da variável que você deseja editar.
+1. Edite as informações da variável e selecione ![Ícone Salvar indicado por uma marca de seleção.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) para salvar as alterações. Não é possível editar o **[!UICONTROL Nome]** e **[!UICONTROL Tipo]** para uma variável.
 
 ## Excluir uma variável {#delete-a-variable}
 
@@ -259,6 +259,6 @@ Antes de excluir a variável, remova todas as referências da variável do fluxo
 
 Para excluir uma variável,
 
-1. Na página Editar fluxo de trabalho, toque no ícone Variáveis disponível no sidekick do modelo de fluxo de trabalho. A seção Variáveis, no painel esquerdo, exibe todas as variáveis existentes.
-1. Toque no ícone Excluir ao lado do nome da variável que você deseja excluir.
-1. Toque ![Ícone Concluído indicado por um símbolo de marca de seleção.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) para confirmar e excluir a variável.
+1. Na página Editar workflow, selecione o ícone Variáveis disponível no sidekick do modelo de workflow. A seção Variáveis, no painel esquerdo, exibe todas as variáveis existentes.
+1. Selecione o ícone Excluir ao lado do nome da variável que você deseja excluir.
+1. Selecionar ![Ícone Concluído indicado por um símbolo de marca de seleção.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) para confirmar e excluir a variável.

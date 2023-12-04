@@ -11,9 +11,9 @@ discoiquuid: 8fff78cb-9ef9-426e-8b30-d70b4f26887f
 docset: aem65
 feature: Forms Portal
 exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1661'
+source-wordcount: '1666'
 ht-degree: 2%
 
 ---
@@ -58,13 +58,13 @@ Componente de Pesquisa e Lister em uma página com layout de Grade
 
 O painel Lista é uma área na qual os formulários são listados. O componente de Pesquisa e Lister fornece várias opções de configuração que você pode usar para controlar a exibição de formulários no painel Lista.
 
-Para configurar o painel Lista, toque no componente Pesquisa e Lister e toque em ![settings_icon](assets/settings_icon.png). A variável **[!UICONTROL Editar componente]** será aberta.
+Para configurar o painel Lista, selecione o componente Pesquisa e Lister e selecione ![settings_icon](assets/settings_icon.png). A variável **[!UICONTROL Editar componente]** será aberta.
 
 ![Painel Lista no modo de edição](assets/edit-list.png)
 
 Painel Lista no modo de edição
 
-A variável **Editar** A caixa de diálogo inclui várias guias que fornecem opções de configuração descritas na tabela abaixo. Toque **OK** para salvar a configuração, quando concluído.
+A variável **Editar** A caixa de diálogo inclui várias guias que fornecem opções de configuração descritas na tabela abaixo. Selecionar **OK** para salvar a configuração, quando concluído.
 
 <table>
  <tbody>
@@ -177,7 +177,7 @@ O componente de Predicado de data, quando adicionado, permite a pesquisa nos for
 
 Para configurar o componente de Predicado de data:
 
-1. Toque no componente e em ![settings_icon](assets/settings_icon.png). A caixa de diálogo Editar é aberta.
+1. Selecione o componente e selecione ![settings_icon](assets/settings_icon.png). A caixa de diálogo Editar é aberta.
 1. Especifique o seguinte:
 
    * **Tipo:** A única opção disponível é **Última data de modificação**
@@ -188,7 +188,7 @@ Para configurar o componente de Predicado de data:
    * **Rótulo de data final:** Rótulo ou legenda para o campo de data final
    * **Ocultar:** Para aplicar o filtro de data padrão para listar formulários
 
-1. Toque **OK**
+1. Selecionar **OK**
 
 #### Predicado de texto completo {#full-text-predicate}
 
@@ -196,9 +196,9 @@ O componente Predicado de texto completo implementa a pesquisa de texto completo
 
 Para configurar o componente Predicado de texto completo:
 
-1. Toque no componente e em ![settings_icon](assets/settings_icon.png). A caixa de diálogo Editar é aberta.
+1. Selecione o componente e selecione ![settings_icon](assets/settings_icon.png). A caixa de diálogo Editar é aberta.
 1. Especifique o título no campo **Título principal** campo.
-1. Toque **Ok**
+1. Selecionar **Ok**
 
 #### Predicado de propriedades {#properties-predicate}
 
@@ -206,15 +206,15 @@ O componente Predicado de propriedades implementa a pesquisa de formulários com
 
 Para configurar o componente Predicado de propriedades:
 
-1. Toque no componente e em ![settings_icon](assets/settings_icon.png). A caixa de diálogo Editar é aberta.
+1. Selecione o componente e selecione ![settings_icon](assets/settings_icon.png). A caixa de diálogo Editar é aberta.
 1. Na guia General, especifique o rótulo de pesquisa. O valor padrão é **Propriedades**
 
-1. Na guia Opções, toque em **Adicionar item.**
+1. Na guia Opções, selecione **Adicionar item.**
 1. Selecione uma propriedade na lista suspensa e especifique um rótulo de pesquisa para ela no campo abaixo da lista suspensa.
 1. Repita a etapa 4 para adicionar mais propriedades. Você também pode especificar um valor de filtro padrão para listar formulários com base nos critérios especificados e ocultar a propriedade para pesquisa por usuários finais. Marque a caixa de seleção Ocultar de uma propriedade e especifique o valor do filtro padrão.
 Por exemplo, se você deseja exibir formulários que contêm &quot;Viagem&quot; em seus títulos, selecione Ocultar ao lado da propriedade Título. Além disso, especifique Viagem na caixa de texto de valor do filtro padrão.
 
-1. Toque **OK**
+1. Selecionar **OK**
 
 #### Predicado de tags {#tags-predicate}
 
@@ -222,10 +222,10 @@ O componente Predicado de tags implementa a pesquisa de formulários com base em
 
 Para configurar o componente Predicado de tags:
 
-1. Toque no componente e em ![settings_icon](assets/settings_icon.png). A caixa de diálogo Editar é aberta.
-1. Toque no botão de seta para baixo ao lado do campo Tags.
+1. Selecione o componente e selecione ![settings_icon](assets/settings_icon.png). A caixa de diálogo Editar é aberta.
+1. Selecione o botão de seta para baixo ao lado do campo Tags.
 1. Selecione as tags apropriadas
-1. Toque **OK**
+1. Selecionar **OK**
 
 As tags selecionadas aparecem no painel Pesquisar junto com as caixas de seleção para seleção. Agora os usuários podem restringir sua pesquisa com base nas tags.
 

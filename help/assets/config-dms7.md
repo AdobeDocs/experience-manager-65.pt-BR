@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '6489'
+source-wordcount: '6508'
 ht-degree: 3%
 
 ---
@@ -224,11 +224,11 @@ Quando você executa o Dynamic Media - Scene7 mode no AEM, ele é encaminhado no
 
 1. No Experience Manager, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
 
-   ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
+   ![08/02/2019: 16/13/14](assets/2019-08-02_16-13-14.png)
 
 1. Uma nova guia do navegador é aberta na guia **[!UICONTROL Configuração do console da Web do Adobe Experience Manager]** página.
 
-   ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
+   ![08/02/2019: 16/17/29](assets/2019-08-02_16-17-29.png)
 
 1. Na página, role até o nome *Adobe CQ Scene7 PlatformServer*.
 
@@ -388,7 +388,7 @@ Consulte [Fazendo upload de ativos](/help/assets/manage-assets.md#uploading-asse
 
    * Clique duas vezes no ícone **[!UICONTROL habilitado]** campo. Por padrão, todos os tipos MIME do ativo são ativados (definidos como **[!UICONTROL true]**), o que significa que os ativos são sincronizados com o Dynamic Media para processamento. Se desejar excluir esse tipo de mime do ativo de ser processado, altere essa configuração para **[!UICONTROL false]**.
 
-   * Toque duas vezes **[!UICONTROL jobParam]** para abrir o campo de texto associado. Consulte [Tipos de Mime suportados](/help/assets/assets-formats.md#supported-mime-types) para obter uma lista de valores de parâmetros de processamento permitidos que você pode usar para um determinado tipo mime.
+   * Seleção dupla **[!UICONTROL jobParam]** para abrir o campo de texto associado. Consulte [Tipos de Mime suportados](/help/assets/assets-formats.md#supported-mime-types) para obter uma lista de valores de parâmetros de processamento permitidos que você pode usar para um determinado tipo mime.
 
 1. Siga uma das seguintes opções:
 
@@ -405,25 +405,25 @@ Você pode adicionar tipos MIME personalizados para formatos não compatíveis c
 
 1. No Experience Manager, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
 
-   ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
+   ![08/02/2019: 16/13/14](assets/2019-08-02_16-13-14.png)
 
 1. Uma nova guia do navegador é aberta na guia **[!UICONTROL Configuração do console da Web do Adobe Experience Manager]** página.
 
-   ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
+   ![08/02/2019: 16/17/29](assets/2019-08-02_16-17-29.png)
 
 1. Na página, role para baixo até o nome *Adobe CQ Scene7 Asset MIME type Service*, como visto na seguinte captura de tela. À direita do nome, selecione a variável **[!UICONTROL Editar os valores de configuração]** (lápis).
 
-   ![2019-08-02_16-44-56](assets/2019-08-02_16-44-56.png)
+   ![08/02/2019: 16/44/56](assets/2019-08-02_16-44-56.png)
 
 1. No **Serviço de tipo MIME do ativo do Adobe CQ Scene7** selecione qualquer ícone de sinal de mais &lt;+>. O local na tabela onde você seleciona o sinal de adição para adicionar o novo tipo MIME é trivial.
 
-   ![2019-08-02_16-27-27](assets/2019-08-02_16-27-27.png)
+   ![27/08/2019](assets/2019-08-02_16-27-27.png)
 
 1. Tipo `DWG=image/vnd.dwg` no campo de texto vazio que você acabou de adicionar.
 
    O exemplo `DWG=image/vnd.dwg` é somente para fins de demonstração. O tipo MIME adicionado aqui pode ser qualquer outro formato não suportado.
 
-   ![2019-08-02_16-36-36](assets/2019-08-02_16-36-36.png)
+   ![08/02/2019: 16/36/36](assets/2019-08-02_16-36-36.png)
 
 1. No canto inferior direito da página, selecione **[!UICONTROL Salvar]**.
 
@@ -432,7 +432,7 @@ Você pode adicionar tipos MIME personalizados para formatos não compatíveis c
 1. Retorne à guia do navegador que tem o console de Experience Manager aberto.
 1. No Experience Manager, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL CRXDE Lite]**.
 
-   ![2019-08-02_16-55-41](assets/2019-08-02_16-55-41.png)
+   ![08-02_16-55-41-2019](assets/2019-08-02_16-55-41.png)
 
 1. No painel à esquerda, navegue até o seguinte:
 
@@ -442,10 +442,10 @@ Você pode adicionar tipos MIME personalizados para formatos não compatíveis c
 
    ![crxdelite_cqdoc-14627](assets/crxdelite_cqdoc-14627.png)
 
-1. Com o tipo MIME `image_vnd.dwg` ainda selecionado, no **[!UICONTROL Propriedades]** , na guia **[!UICONTROL habilitado]** linha, abaixo de **[!UICONTROL Valor]** cabeçalho da coluna, toque duas vezes no valor para abrir a **[!UICONTROL Valor]** lista suspensa.
+1. Com o tipo MIME `image_vnd.dwg` ainda selecionado, no **[!UICONTROL Propriedades]** , na guia **[!UICONTROL habilitado]** linha, abaixo de **[!UICONTROL Valor]** cabeçalho da coluna, selecione duas vezes o valor para abrir a variável **[!UICONTROL Valor]** lista suspensa.
 1. Tipo `false` no campo (ou selecione **[!UICONTROL false]** na lista suspensa).
 
-   ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)
+   ![08/02/2019: 16/60/30](assets/2019-08-02_16-60-30.png)
 
 1. Próximo ao canto superior esquerdo da página CRXDE Lite, selecione **[!UICONTROL Salvar tudo]**.
 
@@ -698,7 +698,7 @@ A configuração Conexão de upload do Scene7 sincroniza ativos do Experience Ma
 
 **Para atualizar a conexão de upload do Dynamic Media Classic:**
 
-1. Vá até `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
+1. Navegue até `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. No **[!UICONTROL Número de conexões]** e/ou o campo **[!UICONTROL Tempo limite do trabalho ativo]** altere o número conforme desejado.
 
    A variável **[!UICONTROL Número de conexões]** a configuração controla o número máximo de conexões HTTP permitidas para o upload do Experience Manager para o Dynamic Media; normalmente, o valor predefinido de dez conexões é suficiente.

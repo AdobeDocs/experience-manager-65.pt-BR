@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: 574de3d5-69ba-4e2f-a8ab-c59f357e4386
 docset: aem65
 exl-id: bca4044a-18a9-4b97-92de-eff1e9a840f9
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 0%
@@ -43,7 +43,7 @@ A ação Enviar email permite que um autor envie emails automaticamente para um 
 
 1. Abra um formulário adaptável no **[!UICONTROL editar]** modo.
 
-1. No **[!UICONTROL Conteúdo]** , toque em **[!UICONTROL Contêiner de formulário]** e toque em ![configurar](assets/configure-icon.svg) para exibir as propriedades do formulário adaptável.
+1. No **[!UICONTROL Conteúdo]** selecione **[!UICONTROL Contêiner de formulário]** e selecione ![configurar](assets/configure-icon.svg) para exibir as propriedades do formulário adaptável.
 
 1. No **[!UICONTROL Envio]** , selecione **[!UICONTROL Enviar e-mail]** do **[!UICONTROL Ação de envio]** lista suspensa.
 

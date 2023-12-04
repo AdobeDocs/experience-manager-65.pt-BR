@@ -10,10 +10,10 @@ discoiquuid: 2c971da0-5bd5-40d1-820d-4efc2a44b49d
 docset: aem65
 feature: Adaptive Forms
 exl-id: 5ca850e3-30f0-4384-b615-356dc3c2ad0d
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 1%
+source-wordcount: '740'
+ht-degree: 0%
 
 ---
 
@@ -34,8 +34,8 @@ Considere outro exemplo de um formulário que captura a ID de email e o número 
 Execute as seguintes etapas para adicionar um elemento aos metadados:
 
 1. Abra o formulário adaptável no modo de edição.\
-   Para abrir o formulário no modo de edição, no gerenciador de formulários, selecione o formulário e toque em **Abertura**.
-1. No modo de edição, selecione um componente, toque em ![nível de campo](assets/field-level.png) > **Contêiner de formulário adaptável** e toque em ![cmppr](assets/cmppr.png).
+   Para abrir o formulário no modo de edição, no gerenciador de formulários, selecione o formulário e **Abertura**.
+1. No modo de edição, selecione um componente, selecione ![nível de campo](assets/field-level.png) > **Contêiner de formulário adaptável** e selecione ![cmppr](assets/cmppr.png).
 1. Na barra lateral, clique em **Metadados**.
 1. Na seção Metadados, clique em **Adicionar**.
 1. Use o campo Value da guia Metadata para adicionar scripts. Os scripts que você adiciona coletam dados de elementos no formulário e calculam valores que são alimentados para os metadados.

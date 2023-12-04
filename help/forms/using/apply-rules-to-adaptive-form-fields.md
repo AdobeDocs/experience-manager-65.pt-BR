@@ -8,9 +8,9 @@ uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
 exl-id: 0202ca65-21ef-4477-b704-7b52314a7d7b
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1115'
 ht-degree: 0%
 
 ---
@@ -45,12 +45,12 @@ A cada cliente é atribuído um número exclusivo de ID do cliente, que ajuda a 
 
    [http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
 
-1. Toque no **[!UICONTROL ID do cliente]** e toque no **[!UICONTROL Editar regras]** ícone. A janela Editor de regras é aberta.
-1. Toque no **[!UICONTROL + Criar]** ícone para adicionar uma regra. Ele abre o Editor visual.
+1. Selecione o **[!UICONTROL ID do cliente]** e selecione o **[!UICONTROL Editar regras]** ícone. A janela Editor de regras é aberta.
+1. Selecione o **[!UICONTROL + Criar]** ícone para adicionar uma regra. Ele abre o Editor visual.
 
    No Editor visual, a variável **[!UICONTROL QUANDO]** é selecionada por padrão. Além disso, o objeto de formulário (nesse caso, **[!UICONTROL ID do cliente]**) de onde você iniciou o editor de regras é especificado no **[!UICONTROL QUANDO]** declaração.
 
-1. Toque no **[!UICONTROL Selecionar Estado]** e selecione **[!UICONTROL foi alterado]**.
+1. Selecione o **[!UICONTROL Selecionar Estado]** e selecione **[!UICONTROL foi alterado]**.
 
    ![quando customeridischanged](assets/whencustomeridischanged.png)
 
@@ -64,7 +64,7 @@ A cada cliente é atribuído um número exclusivo de ID do cliente, que ajuda a 
 
    ![dropobjectstooutputfield-retrievedata](assets/dropobjectstooutputfield-retrievedata.png)
 
-   Toque **[!UICONTROL Concluído]** para salvar a regra. Na janela do editor de regras, toque em **[!UICONTROL Fechar]**.
+   Selecionar **[!UICONTROL Concluído]** para salvar a regra. Na janela do editor de regras, selecione **[!UICONTROL Fechar]**.
 
 1. Visualize o formulário adaptável. Insira um ID na variável **[!UICONTROL ID do cliente]** campo. O formulário agora pode recuperar detalhes do cliente do banco de dados.
 
@@ -74,8 +74,8 @@ A cada cliente é atribuído um número exclusivo de ID do cliente, que ajuda a 
 
 Depois que os detalhes do cliente forem recuperados do banco de dados, você poderá atualizar o endereço de entrega, o estado e o CEP. O procedimento abaixo chama um serviço de Modelo de dados de formulário para atualizar as informações do cliente para o banco de dados:
 
-1. Selecione o **[!UICONTROL Enviar]** e toque no **[!UICONTROL Editar regras]** ícone. A janela Editor de regras é aberta.
-1. Selecione o **[!UICONTROL Enviar - Clique]** e toque na guia **[!UICONTROL Editar]** ícone. As opções para editar a regra Enviar são exibidas.
+1. Selecione o **[!UICONTROL Enviar]** e selecione o **[!UICONTROL Editar regras]** ícone. A janela Editor de regras é aberta.
+1. Selecione o **[!UICONTROL Enviar - Clique]** e selecione o **[!UICONTROL Editar]** ícone. As opções para editar a regra Enviar são exibidas.
 
    ![submit-rule](assets/submit-rule.png)
 
@@ -83,7 +83,7 @@ Depois que os detalhes do cliente forem recuperados do banco de dados, você pod
 
    ![enviar-é-clicado](assets/submit-is-clicked.png)
 
-1. No **[!UICONTROL ENTÃO]** , toque na guia **[!UICONTROL + Adicionar instrução]** opção. Selecionar **[!UICONTROL Chamar serviço]** do **[!UICONTROL Selecionar ação]** menu suspenso.
+1. No **[!UICONTROL ENTÃO]** selecione a opção **[!UICONTROL + Adicionar instrução]** opção. Selecionar **[!UICONTROL Chamar serviço]** do **[!UICONTROL Selecionar ação]** menu suspenso.
 1. Selecione o **[!UICONTROL Atualizar endereço de entrega]** serviço do **[!UICONTROL Selecionar]** menu suspenso.
 
    ![update-shipping-address](assets/update-shipping-address.png)
@@ -97,7 +97,7 @@ Depois que os detalhes do cliente forem recuperados do banco de dados, você pod
    >Não arraste e solte a variável **[!UICONTROL Nome]** e **[!UICONTROL ID do cliente]** para o tablename.property correspondente (por exemplo, customerdetails.name). Ajuda a evitar a atualização do nome e da ID do cliente por engano.
 
 1. Arraste e solte a variável **[!UICONTROL ID do cliente]** do campo [!UICONTROL Objetos de formulário] para o campo id na **[!UICONTROL ENTRADA]** caixa. Os campos sem um nome de tabela prefixado (por exemplo, customerdetails neste caso de uso) servem como parâmetro de pesquisa para o serviço de atualização. A variável **[!UICONTROL id]** neste caso de uso identifica exclusivamente um registro na variável  **customerdetails**  tabela.
-1. Toque **[!UICONTROL Concluído]** para salvar a regra. Na janela do editor de regras, toque em **[!UICONTROL Fechar]**.
+1. Selecionar **[!UICONTROL Concluído]** para salvar a regra. Na janela do editor de regras, selecione **[!UICONTROL Fechar]**.
 1. Visualize o formulário adaptável. Recupere os detalhes de um cliente, atualize o endereço de entrega e envie o formulário. Ao recuperar os detalhes do mesmo cliente novamente, o endereço de entrega atualizado é exibido.
 
 ## Etapa 3: (seção de bônus) usar o editor de código do para executar validações e exibir mensagens de erro {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}
@@ -108,12 +108,12 @@ Os formulários adaptáveis fornecem vários componentes com validações integr
 
 O procedimento a seguir mostra como criar uma regra para exibir uma mensagem de erro se a ID do cliente inserida no formulário não existir no banco de dados. A regra também traz o foco para e redefine o **[!UICONTROL ID do cliente]** campo. A regra usa [a API dataIntegrationUtils do serviço de modelo de dados de formulário](/help/forms/using/invoke-form-data-model-services.md) para verificar se a ID do cliente existe no banco de dados.
 
-1. Toque no **[!UICONTROL ID do cliente]** e toque no `Edit Rules` ícone. A variável [!UICONTROL Editor de regras] é aberta.
-1. Toque no **[!UICONTROL + Criar]** ícone para adicionar uma regra. Ele abre o Editor visual.
+1. Selecione o **[!UICONTROL ID do cliente]** e selecione o `Edit Rules` ícone. A variável [!UICONTROL Editor de regras] é aberta.
+1. Selecione o **[!UICONTROL + Criar]** ícone para adicionar uma regra. Ele abre o Editor visual.
 
    No Editor visual, a variável **[!UICONTROL QUANDO]** é selecionada por padrão. Além disso, o objeto de formulário (nesse caso, **[!UICONTROL ID do cliente]**) de onde você iniciou o editor de regras é especificado no **[!UICONTROL QUANDO]** declaração.
 
-1. Toque no **[!UICONTROL Selecionar Estado]** e selecione **[!UICONTROL foi alterado]**.
+1. Selecione o **[!UICONTROL Selecionar Estado]** e selecione **[!UICONTROL foi alterado]**.
 
    ![quando customeridischanged](assets/whencustomeridischanged.png)
 

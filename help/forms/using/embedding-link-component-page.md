@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: 9d63152d-41ca-4c7c-bb20-af16c7bdec13
 docset: aem65
 exl-id: eb45adf2-d0f3-4de6-92ac-fb146953e989
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '408'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ O componente Link permite que os autores do portal de formulários criem um link
 
 Execute as seguintes etapas para adicionar um componente Link à página:
 
-1. Arraste o **Link** componente na página. Selecione o componente e toque em ![cmppr](assets/cmppr.png). A caixa de diálogo Editar componente de link se abre.
+1. Arraste o **Link** componente na página. Selecione o componente e selecione ![cmppr](assets/cmppr.png). A caixa de diálogo Editar componente de link se abre.
 
    ![edit-link-component](assets/edit-link-component.png)
 
@@ -48,9 +48,9 @@ Execute as seguintes etapas para adicionar um componente Link à página:
    * **Perfil do HTML**: Perfil para renderizar o formulário como HTML.
    * **Perfil do PDF**: Perfil para renderizar o formulário como documento PDF.
 
-1. Abra a guia **Avançado.** Você pode especificar os parâmetros adicionais no formato de par de valor-chave. Quando o link for clicado, esses parâmetros adicionais serão transmitidos junto com o formulário.
+1. Abra o **Avançado** guia. Você pode especificar os parâmetros adicionais no formato de par de valor-chave. Quando o link for clicado, esses parâmetros adicionais serão transmitidos junto com o formulário.
 
-   Toque **Concluído** para salvar a configuração.
+   Selecionar **Concluído** para salvar a configuração.
 
 ## Práticas recomendadas para usar o componente Link {#best-practices-for-using-link-component-br}
 

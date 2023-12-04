@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 9950288c-b5a2-4945-afad-be9ce2abc8e9
 exl-id: b4a23b2e-ab18-402c-8dfa-2533ee692912
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Você pode [atualizar o formulário](/help/forms/using/working-with-form.md), [a
 Para ativar o recurso Salvar como rascunho para formulários salvos no portal de formulários, consulte [Salvamento de um formulário HTML 5 como rascunho](/help/forms/using/saving-html5-form-draft.md).
 Para configurar o envio de formulários adaptáveis, consulte [Rascunhos e componentes de envios](/help/forms/using/draft-submission-component.md). (Não válido para formulários sincronizados com o servidor AEM Forms JEE.)
 
-Para criar um rascunho, abra o formulário e toque no **Salvar como rascunho** ![salvar como rascunho](assets/save-as-draft.png). Forneça o nome do rascunho e toque em **Salvar**. O rascunho é salvo na pasta Rascunhos e sincronizado com o servidor. Ele é salvo na pasta Caixa de saída se o aplicativo estiver offline.
+Para criar um rascunho, abra o formulário e selecione a **Salvar como rascunho** ![salvar como rascunho](assets/save-as-draft.png). Forneça o nome do rascunho e selecione **Salvar**. O rascunho é salvo na pasta Rascunhos e sincronizado com o servidor. Ele é salvo na pasta Caixa de saída se o aplicativo estiver offline.
 
 Se você atualizar o formulário correspondente posteriormente, as alterações serão refletidas imediatamente. Ao sincronizar o aplicativo do AEM Forms com o servidor do AEM Forms, o rascunho é carregado no servidor do AEM Forms. Além disso, o rascunho é movido da Caixa de saída para a pasta Tarefas ou Rascunhos. Um ícone de edição é exibido ao lado dele.
 
@@ -43,5 +43,5 @@ Execute as seguintes etapas para deletar um rascunho:
 
 1. No aplicativo AEM Forms, navegue até **Forms.**
 1. Selecionar **Rascunhos** no menu suspenso ao lado de Pesquisar.
-1. Um formulário com o ícone de edição ![edit-draft-app](assets/edit-draft-app.png) indica um rascunho. Toque nas reticências horizontais ao lado do rascunho.
-1. Nas opções que aparecem ao tocar nas reticências horizontais, toque em **Excluir rascunho**.
+1. Um formulário com o ícone de edição ![edit-draft-app](assets/edit-draft-app.png) indica um rascunho. Selecione as reticências horizontais ao lado do rascunho.
+1. Nas opções exibidas ao selecionar as reticências horizontais, selecione **Excluir rascunho**.

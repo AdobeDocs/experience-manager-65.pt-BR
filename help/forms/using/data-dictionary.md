@@ -10,10 +10,10 @@ discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
 docset: aem65
 feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3840'
-ht-degree: 1%
+source-wordcount: '3842'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ Um dicionário de dados é uma representação independente de metadados que des
 
 O dicionário de dados é composto de elementos de três tipos: Simples, Composto e Elementos de coleção. DDEs simples são elementos primitivos, como sequências, números, datas e valores booleanos que armazenam informações como o nome de uma cidade. Um DDE composto contém outros DDEs, que podem ser do tipo primitivo, composto ou coleção. Por exemplo, um endereço, que consiste em um endereço de rua, cidade, província, país e código postal. Uma coleção é uma lista de DDEs simples ou compostos semelhantes. Por exemplo, um cliente com vários locais ou endereços de cobrança e entrega diferentes.
 
-O Gerenciamento de correspondência usa os dados específicos do back-end, cliente ou destinatário armazenados de acordo com a estrutura do dicionário de dados para criar correspondência destinada a clientes diferentes. Por exemplo, um documento pode ser criado com nomes amigáveis, como &quot;Prezado(a) {Nome}&quot;,&quot;Sr. {Sobrenome}&quot;.
+O Gerenciamento de correspondência usa os dados específicos do back-end, cliente ou destinatário armazenados de acordo com a estrutura do dicionário de dados para criar correspondência destinada a clientes diferentes. Por exemplo, um documento pode ser criado com nomes amigáveis, como &quot;Prezado(a) {Nome}&quot;,&quot;Sr. {Last Name}&quot;.
 
 Normalmente, os usuários empresariais não exigem conhecimento de representações de metadados, como XSD (esquema XML) e classes Java. No entanto, geralmente exigem acesso a essas estruturas de dados e atributos para criar soluções.
 
@@ -51,7 +51,7 @@ Você usa o Editor de dicionário de dados para criar um dicionário de dados ou
 >Para várias correspondências que exigem elementos semelhantes, é possível criar um dicionário de dados comum. No entanto, um grande dicionário de dados com um grande número de elementos pode causar problemas de desempenho ao usar o dicionário de dados e carregar os elementos, como em cartas e fragmentos de documentos. Se você tiver problemas de desempenho, tente criar dicionários de dados separados para cartas diferentes.
 
 1. Selecionar **Forms** > **Dicionários de dados**.
-1. Toque **Criar dicionário de dados**.
+1. Selecionar **Criar dicionário de dados**.
 1. Na tela Propriedades, adicione o seguinte:
 
    * **Título:** (Opcional) Insira o título do dicionário de dados. O título não precisa ser exclusivo e pode ter caracteres especiais e caracteres que não estejam em inglês. Cartas e outros fragmentos de documentos são referenciados com seu título (quando disponível), como em miniaturas e propriedades de ativos. Os dicionários de dados são referenciados com seus nomes e não títulos.
@@ -59,11 +59,11 @@ Você usa o Editor de dicionário de dados para criar um dicionário de dados ou
 
    * **Descrição**: (Opcional) Descrição do dicionário de dados.
    * **Tags:** (Opcional) Para criar uma tag personalizada, insira o valor no campo de texto e pressione Enter. Você pode ver sua tag abaixo do campo de texto das tags. Quando você salva esse texto, as tags recém-adicionadas também são criadas.
-   * **Propriedades estendidas**: (Opcional) Toque em **Adicionar campo** para especificar atributos de metadados para o seu dicionário de dados. Na coluna Nome da propriedade, digite um nome de propriedade exclusivo. Na coluna Valor, insira um valor para associar à propriedade.
+   * **Propriedades estendidas**: (Opcional) Selecione **Adicionar campo** para especificar atributos de metadados para o seu dicionário de dados. Na coluna Nome da propriedade, digite um nome de propriedade exclusivo. Na coluna Valor, insira um valor para associar à propriedade.
 
    ![Propriedades do dicionário de dados especificadas em alemão](do-not-localize/1_ddproperties.png)
 
-1. (Opcional) Para fazer upload de uma definição de esquema XSD para o seu dicionário de dados, no painel Estrutura do dicionário de dados, toque em **Fazer upload do esquema XML**. Navegue até o arquivo XSD, selecione-o e toque em **Abertura**. Um dicionário de dados é criado com base no esquema XML carregado. Você precisa ajustar os nomes de exibição e as descrições dos elementos no dicionário de dados. Para fazer isso, selecione os nomes dos elementos tocando neles e edite suas descrições, nomes de exibição e outros detalhes nos campos no painel direito.
+1. (Opcional) Para fazer upload de uma definição de esquema XSD para o seu dicionário de dados, no painel Estrutura do dicionário de dados, selecione **Fazer upload do esquema XML**. Navegue até o arquivo XSD, selecione-o e **Abertura**. Um dicionário de dados é criado com base no esquema XML carregado. Você precisa ajustar os nomes de exibição e as descrições dos elementos no dicionário de dados. Para fazer isso, selecione os nomes dos elementos tocando neles e edite suas descrições, nomes de exibição e outros detalhes nos campos no painel direito.
 
    Para obter mais informações sobre Elementos de DD Calculados, consulte [Elementos do dicionário de dados computados](#computedddelements).
 
@@ -71,10 +71,10 @@ Você usa o Editor de dicionário de dados para criar um dicionário de dados ou
    >
    >Você pode ignorar o upload do arquivo de esquema e criar seu dicionário de dados do zero usando a interface do usuário do. Para fazer isso, pule esta etapa e continue com as próximas etapas.
 
-1. Toque **Próxima**.
+1. Selecione **Próximo**.
 1. Na tela Adicionar propriedades, adicione os elementos ao dicionário de dados. Também é possível adicionar/excluir elementos e editar seus detalhes se você tiver carregado um esquema para obter uma estrutura básica do dicionário de dados.
 
-   Você pode tocar nos três pontos no lado direito de um elemento e adicionar um elemento à estrutura do dicionário de dados.
+   Você pode selecionar os três pontos no lado direito de um elemento e adicionar um elemento à estrutura do dicionário de dados.
 
    ![1_2_createanelement](assets/1_2_createanelement.png)
 
@@ -98,7 +98,7 @@ Você usa o Editor de dicionário de dados para criar um dicionário de dados ou
 
    ![2_addddpropertiesbasic](assets/2_addddpropertiesbasic.png)
 
-1. (Opcional) Depois de selecionar um elemento, na guia Avançado você pode adicionar propriedades (atributos). Você também pode tocar em **Adicionar campo** e estenda as propriedades de um elemento DD.
+1. (Opcional) Depois de selecionar um elemento, na guia Avançado você pode adicionar propriedades (atributos). Também é possível selecionar **Adicionar campo** e estenda as propriedades de um elemento DD.
 
    ![3_addddpropertiesadvanced](assets/3_addddpropertiesadvanced.png)
 
@@ -111,17 +111,17 @@ Você usa o Editor de dicionário de dados para criar um dicionário de dados ou
    >A exclusão de um elemento composto/de coleção com nós filhos também exclui seus nós filhos.
 
 1. (Opcional) Selecione um elemento no painel Estrutura do dicionário de dados e no painel Lista de campos e variáveis. Altere ou adicione atributos necessários associados ao elemento.
-1. Toque **Salvar**.
+1. Selecione **Salvar**.
 
 ### Criar cópias de um ou mais dicionários de dados {#create-copies-of-one-or-more-data-dictionary}
 
 Para criar rapidamente um ou mais dicionários de dados com propriedades e elementos semelhantes aos dicionários de dados existentes, você pode copiá-los e colá-los.
 
 1. Na lista de dicionários de dados, selecione os dicionários de dados apropriados. A interface do usuário do exibe o ícone Copiar.
-1. Toque em Copiar. A interface exibe o ícone Colar.
-1. Toque em Colar. A caixa de diálogo Colar é exibida. O sistema atribui automaticamente nomes e títulos aos novos dicionários de dados.
+1. Selecione Copiar. A interface exibe o ícone Colar.
+1. Selecione Colar. A caixa de diálogo Colar é exibida. O sistema atribui automaticamente nomes e títulos aos novos dicionários de dados.
 1. Se necessário, edite o Título e o Nome com os quais deseja salvar a cópia do dicionário de dados.
-1. Toque em Colar. A cópia do dicionário de dados é criada. Agora você pode fazer as alterações necessárias no dicionário de dados recém-criado.
+1. Selecione Colar. A cópia do dicionário de dados é criada. Agora você pode fazer as alterações necessárias no dicionário de dados recém-criado.
 
 ## Consulte os fragmentos ou documentos do documento que se referem a um elemento do Dicionário de dados {#see-the-document-fragments-or-documents-that-refer-to-a-data-dictionary-element}
 
@@ -129,32 +129,32 @@ Ao editar ou exibir um dicionário de dados, você pode ver quais elementos do d
 
 1. Siga um destes procedimentos para editar o dicionário de dados:
 
-   * Passe o mouse sobre um dicionário de dados e toque em Editar.
-   * Selecione um dicionário de dados e toque em Editar no cabeçalho.
-   * Passe o mouse sobre um dicionário de dados e toque em Selecionar. Em seguida, toque em Editar no cabeçalho.
+   * Passe o mouse sobre um dicionário de dados e selecione Editar.
+   * Selecione um dicionário de dados e, em seguida, selecione Editar no cabeçalho.
+   * Passe o mouse sobre um dicionário de dados e selecione Selecionar. Em seguida, selecione Editar no cabeçalho.
 
-   Ou toque em um dicionário de dados para visualizá-lo.
+   Ou selecione em um dicionário de dados para visualizá-lo.
 
-1. No dicionário de dados, toque em um elemento simples para selecioná-lo. Elementos compostos e de coleção não têm referências.
+1. No dicionário de dados, selecione um elemento simples para selecioná-lo. Elementos compostos e de coleção não têm referências.
 
    Juntamente com as propriedades Básicas e Avançadas do elemento, o Conteúdo Emprestado também é exibido.
 
-1. Toque em Conteúdo Emprestado.
+1. Selecione Conteúdo Emprestado.
 
    A guia Conteúdo Emprestado é exibida com o seguinte: Textos, Condições, Cartas e Comunicações interativas. Cada um desses cabeçalhos também exibe o número de referências ao elemento selecionado.
 
-1. Toque em um cabeçalho para ver o nome dos ativos que se referem ao elemento.
+1. Selecione um cabeçalho para ver o nome dos ativos que se referem ao elemento.
 
    ![lentcontent](assets/lentcontent.png)
 
-1. Para exibir o conteúdo emprestado de outro elemento, toque no elemento.
-1. Para exibir um ativo que se refere ao elemento, toque no nome. O navegador exibe o ativo, a carta ou a Comunicação interativa.
+1. Para exibir o conteúdo concedido de outro elemento, selecione o elemento.
+1. Para exibir um ativo que se refere ao elemento, selecione no nome. O navegador exibe o ativo, a carta ou a Comunicação interativa.
 
 ## Trabalho com dados de teste {#working-with-test-data}
 
-1. Na página Dicionários de dados, toque em **Selecionar**.
-1. Toque em um dicionário de dados para o qual deseja baixar dados de teste e toque em **Baixar dados de amostra XML**.
-1. Toque **OK** na mensagem de alerta. Um arquivo XML é baixado.
+1. Na página Dicionários de dados, selecione **Selecionar**.
+1. Selecione um dicionário de dados para o qual deseja baixar dados de teste e selecione **Baixar dados de amostra XML**.
+1. Selecionar **OK** na mensagem de alerta. Um arquivo XML é baixado.
 1. Abra o arquivo XML com o Bloco de notas ou outro editor XML. O arquivo XML tem a mesma estrutura que o dicionário de dados e as strings de espaço reservado nos elementos. Substitua as cadeias de caracteres de espaço reservado pelos dados com os quais deseja testar uma letra.
 
    ```xml
@@ -200,7 +200,7 @@ Ao editar ou exibir um dicionário de dados, você pode ver quais elementos do d
 
 1. Depois de fazer as entradas de dados, você pode usar esse arquivo XML ao visualizar uma correspondência com dados de teste.
 
-   Você pode adicionar esses dados de teste com DD (selecione DD e toque em Fazer upload de dados de teste e fazer upload deste arquivo xml). Assim, depois disso, quando você visualiza a correspondência normalmente (não personalizada), esses dados XML são usados na correspondência. Você também pode tocar em Personalizado e depois fazer upload desse XML.
+   Você pode adicionar esses dados de teste com DD (selecione DD e selecione Fazer upload de dados de teste e fazer upload deste arquivo xml). Assim, depois disso, quando você visualiza a correspondência normalmente (não personalizada), esses dados XML são usados na correspondência. Você também pode selecionar Personalizado e fazer upload desse XML.
 
 ## Amostras {#samples}
 
@@ -413,9 +413,9 @@ A exportação de um XSD requer um mapeamento de dados específico, que é detal
 
 Depois de criar um dicionário de dados, você pode baixá-lo como um arquivo de dados de amostra XML para fazer entradas de texto nele.
 
-1. Na página Dicionários de dados, toque em **Selecionar** e toque em um dicionário de dados para selecioná-lo.
+1. Na página Dicionários de dados, selecione **Selecionar** e, em seguida, selecione um dicionário de dados para selecioná-lo.
 1. Selecionar **Baixar dados de amostra XML**.
-1. Toque **OK** na mensagem de alerta.
+1. Selecionar **OK** na mensagem de alerta.
 
    O Gerenciamento de correspondências cria um arquivo XML com base na estrutura do dicionário de dados selecionado e faz o download desse arquivo para seu computador com o nome &lt;data-dictionary-name>-Dados de amostra. Agora é possível editar esse arquivo em um editor de texto ou XML para fazer entradas de dados enquanto [criação de uma carta](../../forms/using/create-letter.md).
 
@@ -425,9 +425,9 @@ Quando quiser enviar a mesma carta em idiomas diferentes para os clientes, você
 
 ### Localizar dicionário de dados {#localize-data-dictionary}
 
-1. Na página Dicionários de dados, toque em **Selecionar** e toque em um dicionário de dados para selecioná-lo.
-1. Toque **Baixar dados de localização**.
-1. Toque **OK** no alerta. O Gerenciamento de correspondências baixa um arquivo zip para seu computador com o nome DataDictionary-&lt;ddname>.zip.
+1. Na página Dicionários de dados, selecione **Selecionar** e, em seguida, selecione um dicionário de dados para selecioná-lo.
+1. Selecionar **Baixar dados de localização**.
+1. Selecionar **OK** no alerta. O Gerenciamento de correspondências baixa um arquivo zip para seu computador com o nome DataDictionary-&lt;ddname>.zip.
 1. O arquivo Zip contém um arquivo .properties. Esse arquivo define o dicionário de dados baixado. O conteúdo do arquivo de propriedade é semelhante ao seguinte:
 
    ```ini
@@ -528,8 +528,8 @@ O exemplo a seguir mostra um schema simples.
 
 | **Elemento do dicionário de dados** | **Vínculo XML padrão** |
 |---|---|
-| idade | /idade |
-| preço | /preço |
+| idade | /age |
+| preço | /price |
 
 ### Mapeamento de elementos compostos {#mapping-composite-elements}
 

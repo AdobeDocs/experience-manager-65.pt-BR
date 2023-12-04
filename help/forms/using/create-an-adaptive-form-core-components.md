@@ -10,10 +10,10 @@ topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
 exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1794'
-ht-degree: 23%
+source-wordcount: '1743'
+ht-degree: 20%
 
 ---
 
@@ -64,9 +64,9 @@ Você precisará do seguinte para criar um formulário adaptável:
 
 1. Faça logon no local [Instância de autor AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=en#author-and-publish-installs).
 
-1. Insira suas credenciais na página de logon do Experience Manager. Após fazer logon, e no canto superior esquerdo, toque em **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Formulários e documentos]**.
+1. Insira suas credenciais na página de logon do Experience Manager. Depois de fazer logon, no canto superior esquerdo, selecione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documentos]**.
 
-1. Toque **[!UICONTROL Criar]**  > **[!UICONTROL Criar Forms adaptável]**.
+1. Selecionar **[!UICONTROL Criar]**  > **[!UICONTROL Criar Forms adaptável]**.
 
 1. Selecione um modelo dos Componentes principais adaptáveis do Forms e clique em **[!UICONTROL Próxima]**.
 
@@ -78,10 +78,10 @@ Você precisará do seguinte para criar um formulário adaptável:
    * **[!UICONTROL Biblioteca de temas do cliente]:** Especifica o tema para um Formulário adaptável. Por padrão, a variável `adaptiveform.theme.canvas3` o tema está selecionado. Você também pode escolher um tema diferente do **[!UICONTROL Biblioteca de temas do cliente]** menu suspenso.
    * **[!UICONTROL Contêiner de configuração:]**  Define um local onde os arquivos de configuração do Adaptive Forms são armazenados. Esses arquivos de configuração contêm configurações e propriedades relacionadas ao comportamento e à aparência do Forms adaptável.
    * **[!UICONTROL Tags:]** Especifica tags para identificar exclusivamente o Formulário adaptável. A ajuda das tags na pesquisa do formulário. Para criar tags, digite os novos nomes das tags na caixa **[!UICONTROL Tags]** caixa.
-1. Toque em **[!UICONTROL Criar]**. Um formulário adaptável é criado e uma caixa de diálogo para abrir o formulário para edição é exibida.
+1. Selecione **[!UICONTROL Criar]**. Um formulário adaptável é criado e uma caixa de diálogo para abrir o formulário para edição é exibida.
 
 
-1. Toque **[!UICONTROL Editar]** para abrir o formulário recém-criado em uma nova guia. O formulário é aberto para edição e exibe o conteúdo disponível no template. Ele também exibe a barra lateral para personalizar o formulário recém-criado.
+1. Selecionar **[!UICONTROL Editar]** para abrir o formulário recém-criado em uma nova guia. O formulário é aberto para edição e exibe o conteúdo disponível no template. Ele também exibe a barra lateral para personalizar o formulário recém-criado.
 
 
 ## Usar os Componentes principais adaptáveis do Forms para criar seu formulário
@@ -164,17 +164,17 @@ Você pode usar o serviço de preenchimento do modelo de dados de formulário pa
 1. Clique nas propriedades do Container do guia ![Propriedades do guia](/help/forms/using/assets/configure-icon.svg) ícone. A caixa de diálogo Contêiner de formulário adaptável é aberta.
 1. Clique nas propriedades do Contêiner de formulário adaptável ![Propriedades do contêiner de formulário adaptável](/help/forms/using/assets/configure-icon.svg) ícone. A caixa de diálogo Contêiner de formulário adaptável para configurar os Modelos de dados é aberta.
    ![Clique no ícone de chave inglesa para abrir a caixa de diálogo Contêiner do formulário adaptável para configurar uma página de redirecionamento ou mensagem de agradecimento](/help/forms/using/assets/adaptive-forms-container-prefill-service.png)
-1. Selecionar um modelo de dados do formulário. Abra o **[!UICONTROL Básico]** guia. No serviço de preenchimento, selecione **[!UICONTROL Serviço de preenchimento do modelo de dados de formulário]**.
+1. Selecione um modelo de dados de formulário. Abra o **[!UICONTROL Básico]** guia. No serviço de preenchimento, selecione **[!UICONTROL Serviço de preenchimento do modelo de dados de formulário]**.
 1. Clique em **[!UICONTROL Concluído]**. O formulário adaptável agora está configurado para usar o Preenchimento prévio do modelo de dados de formulário. Agora você pode, use o [editor de regras](rule-editor.md) para criar regras para preencher previamente os campos do formulário.
 
 <!--
 ## Edit Form Model properties of an Adaptive Form {#edit-form-model}
 
-1. Select the Adaptive Form and tap ![Page information](/help/forms/using/assets/configure-icon.svg) > **[!UICONTROL Open Properties]**. The Form Properties page opens. 
+1. Select the Adaptive Form and select ![Page information](/help/forms/using/assets/configure-icon.svg) > **[!UICONTROL Open Properties]**. The Form Properties page opens. 
 
 1. Go to the **[!UICONTROL Form Model]** tab and choose a form model. If the Adaptive Form is without a form model, you have the freedom to choose either a JSON schema or a form data model. On the other hand, if the Adaptive Form is already based on a form model, you have the option to switch to another form model of the same type. For instance, if the form is using a JSON schema, you can easily switch to another JSON schema, and similarly if the form is using a Form Data Model, you can switch to another Form Data Model. 
 
-1. Tap **[!UICONTROL Save]** to save the properties.
+1. Select **[!UICONTROL Save]** to save the properties.
 -->
 
 ## O que vem a seguir

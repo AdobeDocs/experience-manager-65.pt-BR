@@ -11,10 +11,10 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 feature: Adaptive Forms
 exl-id: 54a76d5c-d19b-4026-b71c-7b9e862874bc
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2416'
-ht-degree: 2%
+source-wordcount: '2357'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 2%
 | AEM 6.5 | Este artigo |
 
 
-O AEM Forms fornece manipuladores de sucesso e erro prontos para uso para envios de formulários. Ele também fornece recursos para personalizar funções do manipulador de erros. Por exemplo, você pode acionar um fluxo de trabalho personalizado no back-end para códigos de erro específicos ou informar ao cliente que o serviço está inativo. Os manipuladores são funções do lado do cliente executadas com base na resposta do servidor. Quando um serviço externo é chamado usando APIs, os dados são transmitidos ao servidor para validação, o que retorna uma resposta ao cliente com informações sobre o evento bem-sucedido ou com erro para o envio. As informações são passadas como parâmetros para o manipulador relevante para executar a função. Um manipulador de erros ajuda a gerenciar e exibir erros ou problemas de validação encontrados.
+O AEM Forms fornece manipuladores de sucesso e erro prontos para uso para envios de formulários. Ele também fornece recursos para personalizar funções do manipulador de erros. Por exemplo, você pode chamar um fluxo de trabalho personalizado no backend para códigos de erro específicos ou informar ao cliente que o serviço está inativo. Os manipuladores são funções do lado do cliente executadas com base na resposta do servidor. Quando um serviço externo é chamado usando APIs, os dados são transmitidos ao servidor para validação, o que retorna uma resposta ao cliente com informações sobre o evento bem-sucedido ou com erro para o envio. As informações são passadas como parâmetros para o manipulador relevante para executar a função. Um manipulador de erros ajuda a gerenciar e exibir erros ou problemas de validação encontrados.
 
 ![fluxo de trabalho do manipulador de erros para entender como adicionar um manipulador de erros personalizado em formulários](/help/forms/using/assets/error-handler-workflow.png)
 
@@ -206,8 +206,8 @@ Usando o Editor de regras, você pode:
 Um manipulador de erros padrão é compatível com a exibição de mensagens de erro em campos se a resposta do erro estiver no esquema padrão ou na falha de validação do lado do servidor.
 Para entender como usar um manipulador de erros padrão usando o [Serviço de chamada do editor de regras](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) , confira um exemplo de um Formulário adaptável simples com dois campos, **ID do animal de estimação** e **Nome do animal de estimação** e use um manipulador de erros padrão no **ID do animal de estimação** para verificar vários erros retornados pelo endpoint REST configurado para chamar um serviço externo, por exemplo, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. Para adicionar um manipulador de erros padrão usando a ação Chamar serviço do Editor de regras, execute as seguintes etapas:
 
-1. Abra um formulário adaptável no modo de criação, selecione um componente de formulário e toque em **[!UICONTROL Editor de regras]** para abrir o editor de regras.
-1. Toque em **[!UICONTROL Criar]**.
+1. Abra um formulário adaptável no modo de criação, selecione um componente de formulário e **[!UICONTROL Editor de regras]** para abrir o editor de regras.
+1. Selecione **[!UICONTROL Criar]**.
 1. Crie uma condição no **Quando** seção da regra. Por exemplo, **Quando[Nome do campo de ID do animal de estimação]** foi alterado. Selecione é alterado de **Selecionar Estado** lista suspensa.
 1. No **Depois** , selecione **[!UICONTROL Chamar serviço]** do **Selecionar ação** lista suspensa.
 1. Selecione um **Pós-serviço** e as vinculações de dados correspondentes do **Entrada** seção. Por exemplo, para validar **ID do animal de estimação**, selecione um **Pós-serviço** as **GET /pet/{petId}** e selecione **ID do animal de estimação** no **Entrada** seção.
@@ -310,8 +310,8 @@ Nesse caso, o nome da biblioteca do cliente é fornecido como `customfunctionsde
 
 Para usar um manipulador de erros personalizado usando o **[!UICONTROL Serviço de chamada do editor de regras]** ação:
 
-1. Abra um formulário adaptável no modo de criação, selecione um componente de formulário e toque em **[!UICONTROL Editor de regras]** para abrir o editor de regras.
-1. Toque em **[!UICONTROL Criar]**.
+1. Abra um formulário adaptável no modo de criação, selecione um componente de formulário e **[!UICONTROL Editor de regras]** para abrir o editor de regras.
+1. Selecione **[!UICONTROL Criar]**.
 1. Crie uma condição no **Quando** seção da regra. Por exemplo, Quando **[Nome do campo de ID do animal de estimação]** for alterado, selecione **foi alterado** do **Selecionar Estado** lista suspensa.
 1. No **Depois** , selecione **[!UICONTROL Chamar serviço]** do **Selecionar ação** lista suspensa.
 1. Selecione um **Pós-serviço** e as vinculações de dados correspondentes do **Entrada** seção. Por exemplo, para validar **ID do animal de estimação**, selecione um **Pós-serviço** as **GET /pet/{petId}** e selecione **ID do animal de estimação** no **Entrada** seção.
@@ -339,7 +339,7 @@ If the server validation error message does not display in the standard format, 
 
 Before adding custom handler, you must configure the adaptive form for asynchronous submission. Execute the following steps:
 
-1. In adaptive form authoring mode, select the Form Container object and tap ![adaptive form properties](assets/configure_icon.png) to open its properties.
+1. In adaptive form authoring mode, select the Form Container object and select ![adaptive form properties](assets/configure_icon.png) to open its properties.
 1. In the **[!UICONTROL Submission]** properties section, enable **[!UICONTROL Use asynchronous submission]**.
 1. Select **[!UICONTROL Revalidate on server]** to validate the input field values on server before submission.
 1. Select the Submit Action:
@@ -349,7 +349,7 @@ Before adding custom handler, you must configure the adaptive form for asynchron
 
     ![adaptive form submission properties](assets/af_submission_properties.png)
 
-1. Tap ![Save](assets/save_icon.png) to save the properties.
+1. Select ![Save](assets/save_icon.png) to save the properties.
 
 ### Add custom error handler on Adaptive Form submission {#add-custom-error-handler-af-submission}
 
@@ -357,10 +357,10 @@ AEM Forms provides out-of-the-box success and error handlers for form submission
 
 Execute the following steps to add custom error handler on Adaptive Form submission:
 
-1. Open an Adaptive Form in authoring mode, select any form object, and tap  to open the rule editor.
-1. Select **[!UICONTROL Form]** in the Form Objects tree and tap **[!UICONTROL Create]**.
+1. Open an Adaptive Form in authoring mode, select any form object, and select  to open the rule editor.
+1. Select **[!UICONTROL Form]** in the Form Objects tree and select **[!UICONTROL Create]**.
 1. Select **[!UICONTROL Error in Submission]** from the Event drop-down list.
-1. Write a rule to convert custom error structure to the standard error structure and tap **[!UICONTROL Done]** to save the rule.
+1. Write a rule to convert custom error structure to the standard error structure and select **[!UICONTROL Done]** to save the rule.
 
 The following is a sample code to convert a custom error structure to the standard error structure:
 

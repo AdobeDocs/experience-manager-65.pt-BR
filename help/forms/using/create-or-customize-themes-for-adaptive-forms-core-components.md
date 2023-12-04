@@ -7,10 +7,10 @@ topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
 exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1971'
-ht-degree: 6%
+source-wordcount: '1933'
+ht-degree: 5%
 
 ---
 
@@ -73,7 +73,7 @@ A personalização de um tema refere-se ao processo de modificação e personali
 
 * Instale a versão mais recente do [Apache Maven.](https://maven.apache.org/download.cgi) O Apache Maven é uma ferramenta de automação de build comumente usada para projetos Java™. A instalação da versão mais recente garante que você tenha as dependências necessárias para a personalização de temas.
 
-* Saiba como criar um [biblioteca do cliente no Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=pt-BR). O AEM fornece bibliotecas de clientes, que permitem armazenar o código do lado do cliente no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser entregue ao cliente.
+* Saiba como criar um [biblioteca do cliente no Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html). O AEM fornece bibliotecas de clientes, que permitem armazenar o código do lado do cliente no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser entregue ao cliente.
 
 * Instale um editor de texto simples. Por exemplo, Microsoft® Visual Studio Code. O uso de um editor de texto simples, como o Microsoft® Visual Studio Code, fornece um ambiente amigável para a edição e modificação de arquivos de tema.
 
@@ -233,7 +233,7 @@ To apply and test the customized theme with an Adaptive Form:
 
 1. Log in to your AEM Forms author instance. 
 
-1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
+1. Select **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
 1. Click **Create** > **Adaptive Forms**. The wizard for creating Adaptive Form opens.
 
@@ -247,7 +247,7 @@ An Adaptive Form with the selected theme is created.
 
 1. Log in to your AEM Forms author instance. 
 
-1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
+1. Select **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
 1. Select an Adaptive Form and click Properties. 
 
@@ -283,7 +283,7 @@ Após a instalação do pacote, o tema fica disponível para seleção.
 As etapas para aplicar um tema a um Formulário adaptável são:
 
 1. Faça logon na instância de autor local do AEM.
-1. Insira suas credenciais na página de logon do Experience Manager. Toque **Adobe Experience Manager** > **Forms** > **Forms e documentos**.
+1. Insira suas credenciais na página de logon do Experience Manager. Selecionar **Adobe Experience Manager** > **Forms** > **Forms e documentos**.
 1. Clique em **Criar** > **Forms adaptável**.
 1. Selecione um modelo dos Componentes principais adaptáveis do Forms e clique em **Próxima**. A variável **Adicionar propriedades** aparece
 1. Especifique a **Nome** para o seu Formulário adaptável.
@@ -302,8 +302,8 @@ Os temas do formulário adaptável são usados como parte de um modelo de formul
 
 Para remover temas não utilizados ou indesejados:
 
-1. Faça logon na Instância do autor do . 
-1. Abrir `http://[Publish Server URL]:[PORT]/crx/de/index.jsp`
+1. Faça logon na instância do Author.
+1. Abertura `http://[Publish Server URL]:[PORT]/crx/de/index.jsp`
 1. Vá até `apps/[AEM Archetype Project Folder]/clientlibs/[yourtheme]`.
 1. Exclua a pasta de tema e salve as alterações.
 

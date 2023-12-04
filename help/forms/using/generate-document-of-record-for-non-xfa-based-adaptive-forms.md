@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3544'
-ht-degree: 3%
+source-wordcount: '3533'
+ht-degree: 2%
 
 ---
 
@@ -266,7 +266,7 @@ Execute as seguintes etapas para configurar um documento de registro para formul
 
 1. Na instância do autor AEM, clique em **Forms > Forms e documentos.**
 1. Selecione um formulário e clique em **Propriedades da exibição**.
-1. Na janela Propriedades, toque em **Modelo de formulário**.
+1. Na janela Propriedades, selecione **Modelo de formulário**.
 Você também pode selecionar um modelo de formulário ao criar um formulário.
 
    >[!NOTE]
@@ -302,8 +302,8 @@ Ao gerar um documento de registro, você pode alterar as informações de marca 
 
 Para localizar as informações de marca inseridas na guia Documento de registro, é necessário garantir que o local do navegador esteja definido adequadamente. Para personalizar as informações de marca do documento de registro, conclua as seguintes etapas:
 
-1. Selecione um painel (painel raiz) no documento de registro e toque em ![configurar](assets/configure.png).
-1. Toque ![dortab](/help/forms/using/assets/dortab.png). A guia Documento de registro é exibida.
+1. Selecione um painel (painel raiz) no documento de registro e selecione ![configurar](assets/configure.png).
+1. Selecionar ![dortab](/help/forms/using/assets/dortab.png). A guia Documento de registro é exibida.
 1. Selecione o modelo padrão ou um modelo personalizado para renderizar o documento de registro. Se você selecionar o modelo padrão, uma visualização em miniatura do documento de registro será exibida abaixo do menu suspenso Modelo.
 
    ![brandingtemplate](/help/forms/using/assets/brandingtemplate.png)
@@ -316,7 +316,7 @@ Para localizar as informações de marca inseridas na guia Documento de registro
    * **Título do formulário**
    * **Texto do cabeçalho**
    * **Rótulo do aviso**
-   * **Aviso**
+   * **Isenção de responsabilidade**
    * **Texto do aviso**
    * **Cor de realce**: A cor na qual o texto do cabeçalho e as linhas separadoras são renderizados no PDF do documento ou do registro
    * **Família da fonte**: Família de fontes do texto no documento de PDF de registro
@@ -328,7 +328,7 @@ Para localizar as informações de marca inseridas na guia Documento de registro
 
    Se o modelo XDP personalizado selecionado incluir várias páginas mestras, as propriedades dessas páginas aparecerão no **[!UICONTROL conteúdo]** seção do **[!UICONTROL Documento do registro]** guia.
 
-   ![Página principal  Propriedades](assets/master-page-properties.png)
+   ![Propriedades da página principal](assets/master-page-properties.png)
 
    As propriedades da página principal incluem Imagem de logotipo, Texto do cabeçalho, Título do formulário, Rótulo do aviso e Texto do aviso. Você pode aplicar propriedades de formulário adaptável ou modelo XDP ao documento de registro. Por padrão, o AEM Forms aplica as propriedades do modelo ao Documento de registro. Você também pode definir valores personalizados para as propriedades da página-mestre. Para obter informações sobre como aplicar várias páginas-mestre em um documento de registro, consulte [Aplicar várias páginas-mestre a um documento de registro](#apply-multiple-master-pages-dor).
 
@@ -348,7 +348,7 @@ Para localizar as informações de marca inseridas na guia Documento de registro
    </proto>
    ```
 
-1. Para salvar as alterações de marca, toque em Concluído.
+1. Para salvar as alterações de marca, selecione Concluído.
 
 ## Layouts de tabela e coluna para painéis no documento de registro {#table-and-column-layouts-for-panels-in-document-of-record}
 
@@ -409,12 +409,12 @@ Você pode aplicar quebras de página em um Documento de registro usando vários
 
 Para aplicar uma quebra de página a um documento de registro:
 
-1. Toque no painel e selecione ![Configurar](/help/forms/using/assets/configure.png)
+1. Selecione o painel e selecione ![Configurar](/help/forms/using/assets/configure.png)
 1. Expandir **[!UICONTROL Documento do registro]** para exibir as propriedades.
 
-1. No **[!UICONTROL Paginação]** seção, toque em ![Pasta](/help/forms/using/assets/folder-icon.png) no **[!UICONTROL Local]** campo.
-1. Toque **[!UICONTROL Parte superior da próxima página]** e toque em **[!UICONTROL Selecionar]**. Você também pode tocar em **[!UICONTROL Início da página]**, selecione a página mestra e toque em **[!UICONTROL Selecionar]** para aplicar a quebra de página.
-1. Toque em ![Salvar](/help/forms/using/assets/save_icon.png) para salvar as propriedades.
+1. No **[!UICONTROL Paginação]** , selecione ![Pasta](/help/forms/using/assets/folder-icon.png) no **[!UICONTROL Local]** campo.
+1. Selecionar **[!UICONTROL Parte superior da próxima página]** e selecione **[!UICONTROL Selecionar]**. Também é possível selecionar **[!UICONTROL Início da página]**, selecione a página-mestre e selecione **[!UICONTROL Selecionar]** para aplicar a quebra de página.
+1. Selecionar ![Salvar](/help/forms/using/assets/save_icon.png) para salvar as propriedades.
 
 O painel selecionado é movido para a próxima página.
 
@@ -428,13 +428,13 @@ Este é um exemplo de como aplicar várias páginas-mestre a um Documento de reg
 
 Para aplicar as propriedades da segunda página-mestre a um painel e as propriedades da terceira página-mestre aos painéis seguintes, execute as seguintes etapas:
 
-1. Toque no painel para aplicar a segunda página-mestre e selecione ![Configurar](assets/cmppr.png).
-1. No **[!UICONTROL Paginação]** seção, toque em ![Pasta](/help/forms/using/assets/folder-icon.png) no **[!UICONTROL Local]** campo.
-1. Toque **[!UICONTROL Na página]**, selecione a segunda página-mestre e toque em **[!UICONTROL Selecionar]**.
+1. Selecione o painel para aplicar a segunda página-mestre e selecione ![Configurar](assets/cmppr.png).
+1. No **[!UICONTROL Paginação]** , selecione ![Pasta](/help/forms/using/assets/folder-icon.png) no **[!UICONTROL Local]** campo.
+1. Selecionar **[!UICONTROL Na página]**, selecione a segunda página-mestre e selecione **[!UICONTROL Selecionar]**.
 O AEM Forms aplica a segunda página-mestre ao painel e a todos os painéis subsequentes no formulário adaptável.
-1. No **[!UICONTROL Paginação]** seção, toque em ![Pasta](/help/forms/using/assets/folder-icon.png) no **[!UICONTROL Depois]** campo.
-1. Toque **[!UICONTROL Ir para página]**, selecione a terceira página-mestre e toque em **[!UICONTROL Selecionar]**.
-1. Toque em ![Salvar](/help/forms/using/assets/save_icon.png) para salvar as propriedades.
+1. No **[!UICONTROL Paginação]** , selecione ![Pasta](/help/forms/using/assets/folder-icon.png) no **[!UICONTROL Depois]** campo.
+1. Selecionar **[!UICONTROL Ir para página]**, selecione a terceira página-mestre e selecione **[!UICONTROL Selecionar]**.
+1. Selecionar ![Salvar](/help/forms/using/assets/save_icon.png) para salvar as propriedades.
 O AEM Forms aplica a terceira página-mestre ao painel e a todos os painéis subsequentes no formulário adaptável.
 
 

@@ -5,10 +5,10 @@ topic-tags: installing
 docset: aem65
 role: Admin
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1611'
-ht-degree: 5%
+source-wordcount: '1590'
+ht-degree: 2%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 ## Introdução {#introduction}
 
-As empresas coletam e processam dados de vários formulários, sistemas back-end e outras fontes de dados. O processamento de dados envolve procedimentos de revisão e aprovação, tarefas repetitivas e arquivamento de dados. Por exemplo, revisar um formulário e convertê-lo em um documento PDF. Quando feitas manualmente, as tarefas repetitivas podem levar muito tempo e vários recursos.
+As empresas coletam e processam dados de vários formulários, sistemas de back-end e outras fontes de dados. O processamento de dados envolve procedimentos de revisão e aprovação, tarefas repetitivas e arquivamento de dados. Por exemplo, revisar um formulário e convertê-lo em documento PDF. Quando feitas manualmente, as tarefas repetitivas podem levar muito tempo e vários recursos.
 
 Você pode usar [fluxo de Trabalho centradas Forms no OSGi](../../forms/using/aem-forms-workflow.md) para build workflows baseados em formulários adaptáveis. Essas workflows podem ajudá-lo a automatizar workflows de revisão e aprovação, processo empresarial workflows e outras tarefas repetitivas. Esses workflows também ajudam a processar documentos (criar, montar, distribuir e arquivar documentos PDF, adicionar assinaturas digitais para limitar o acesso a documentos, formulários com códigos de barras e muito mais) e usar Adobe Sign fluxo de Trabalho de assinatura com formulários e documentos.
 
@@ -99,13 +99,13 @@ Antes de começar a instalar e configurar o fluxo de trabalho centrado no Forms 
 O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote contém fluxo de trabalho centrado no Forms no OSGi e outros recursos. Execute as seguintes etapas para instalar o pacote complementar:
 
 1. Abra a [Distribuição de softwares](https://experience.adobe.com/downloads). Você precisa de uma Adobe ID para fazer logon na Distribuição de softwares.
-1. Clique em **[!UICONTROL Adobe Experience Manager]** disponível no menu de cabeçalho.
+1. Selecionar **[!UICONTROL Adobe Experience Manager]** disponível no menu de cabeçalho.
 1. No **[!UICONTROL Filtros]** seção:
    1. Selecionar **[!UICONTROL Forms]** do **[!UICONTROL Solução]** lista suspensa.
    2. Selecione a versão e o tipo do pacote. Você também pode usar a variável **[!UICONTROL Pesquisar downloads]** para filtrar os resultados.
-1. Toque no nome do pacote aplicável ao seu sistema operacional e selecione **[!UICONTROL Aceitar termos do EULA]** e toque em **[!UICONTROL Baixar]**.
-1. Abra [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) e clique em **[!UICONTROL Fazer upload de pacote]** para fazer upload do pacote.
-1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
+1. Selecione o nome do pacote aplicável ao seu sistema operacional e **[!UICONTROL Aceitar termos do EULA]** e selecione **[!UICONTROL Baixar]**.
+1. Abertura [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  e clique em **[!UICONTROL Fazer upload do pacote]** para carregar o pacote.
+1. Selecione o pacote e clique **[!UICONTROL em Instalar]**.
 
    Você também pode baixar o pacote por meio do link direto listado no [artigo de lançamentos](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) de AEM Forms.
 

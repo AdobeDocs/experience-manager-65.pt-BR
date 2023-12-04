@@ -11,7 +11,7 @@ discoiquuid: 9b06c394-8e26-429c-b78f-22afa271aeb3
 docset: aem65
 feature: Correspondence Management
 exl-id: 91ee4422-99c1-4907-a507-5968c6984f28
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 0%
@@ -116,10 +116,10 @@ As instâncias de cartas salvas podem ser manipuladas ainda mais, como a recuper
 
 Na interface do usuário do CCR, conclua as seguintes etapas para associar um pós-processo a uma correspondência:
 
-1. Passe o mouse sobre uma letra e toque **Propriedades da exibição**.
+1. Passe o mouse sobre uma carta e selecione **Propriedades da exibição**.
 1. Selecione **Editar**.
 1. Nas Propriedades básicas, usando o menu suspenso Pós-processo, selecione o pós-processo a ser associado à correspondência. Tanto o AEM quanto os processos de post relacionados ao Forms estão listados no menu suspenso.
-1. Toque **Salvar**.
+1. Selecione **Salvar**.
 1. Depois de configurar a correspondência com o pós-processamento, publique a correspondência e, opcionalmente, na instância de publicação, especifique o URL de processamento no serviço de Configurações do AEM DS. Isso garante que o pós-processo seja executado na instância de processamento.
 
 ## Recarregar uma instância de carta de rascunho  {#reloaddraft}

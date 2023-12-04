@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: 7fdb9fab-6bae-49b8-86b6-66138a2a6cd3
 docset: aem65
 exl-id: 3e74cda2-ba3e-4ee9-b7d0-76a804232199
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
@@ -31,8 +31,8 @@ Na guia General, altere as configurações de download de anexos, modo offline, 
 
 **Acesse a guia Geral na tela Configurações**
 
-1. Para acessar a tela Configuração, toque no botão Menu no canto superior esquerdo da tela inicial e, em seguida, toque em **Configurações**.
-1. Na tela Configurações, toque na guia Geral.
+1. Para ir até a tela Configuração, selecione o botão Menu no canto superior esquerdo da tela inicial e clique em Selecionar **Configurações**.
+1. Na tela Settings, selecione a guia General.
 
    ![Configurações gerais no aplicativo AEM Forms](assets/gen-settings-1.png)
 
@@ -59,7 +59,7 @@ Opções disponíveis:
 
 * **Frequência de salvamento automático**: Para definir a frequência com que seus [o aplicativo móvel salva dados de formulário](../../forms/using/autosave-data-app.md) localmente.
 * **Frequência de sincronização**: Para definir a frequência com que seus [o aplicativo móvel está sincronizado](../../forms/using/sync-app.md) com o servidor do AEM Forms no modo online.
-   **Limpar dados locais**: limpe o banco de dados, incluindo as configurações e os dados locais para todos os usuários e o armazenamento de arquivos do dispositivo.
+  **Limpar dados locais**: limpe o banco de dados, incluindo as configurações e os dados locais para todos os usuários e o armazenamento de arquivos do dispositivo.
 
 >[!NOTE]
 >

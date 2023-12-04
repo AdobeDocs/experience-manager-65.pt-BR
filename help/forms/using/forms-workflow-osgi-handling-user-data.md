@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 role: Admin
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
-source-git-commit: fb9363a39ffc9d3929a31a3a19a124b806607ef4
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '986'
 ht-degree: 0%
 
 ---
@@ -139,7 +139,7 @@ Você deve ser um administrador do AEM para excluir dados do usuário das instâ
 
    1. Ir para `https://'[server]:[port]'/aem/start.html` e faça logon com credenciais de administrador.
    1. Navegue até **[!UICONTROL Ferramentas > Fluxo de trabalho > Instâncias]**.
-   1. Selecione instâncias de fluxo de trabalho relevantes para o usuário e toque em **[!UICONTROL Encerrar]** para encerrar instâncias em execução.
+   1. Selecione instâncias de fluxo de trabalho relevantes para o usuário e selecione **[!UICONTROL Encerrar]** para encerrar instâncias em execução.
 
       Para obter mais informações sobre como trabalhar com instâncias de fluxo de trabalho, consulte [Administração de instâncias de fluxo de trabalho](/help/sites-administering/workflows-administering.md).
 

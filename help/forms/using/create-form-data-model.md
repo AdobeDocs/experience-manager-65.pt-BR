@@ -5,9 +5,9 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1491'
 ht-degree: 1%
 
 ---
@@ -56,14 +56,14 @@ Faça o seguinte para configurar suas [!DNL MySQL] banco de dados:
    1. Baixe [!DNL MySQL] o pacote JDBC Driver OSGi em `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`. <!-- This URL is an insecure link but using https is not possible -->
    1. Fazer logon no AEM [!DNL Forms] Instância do autor como administrador e acesse pacotes de console da Web AEM. O URL padrão é [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
-   1. Toque **[!UICONTROL Instalar/Atualizar]**. Um [!UICONTROL Carregar/instalar pacotes] será exibida.
+   1. Selecionar **[!UICONTROL Instalar/Atualizar]**. Um [!UICONTROL Carregar/instalar pacotes] será exibida.
 
-   1. Toque **[!UICONTROL Escolher arquivo]** para procurar e selecionar a variável [!DNL MySQL] Pacote OSGi do driver JDBC. Selecionar **[!UICONTROL Iniciar pacote]** e **[!UICONTROL Atualizar pacotes]** e toque em **[!UICONTROL Instalar ou atualizar]**. Certifique-se de que o [!DNL Oracle Corporation's] Driver [!DNL MySQL] JDBC esteja ativo. O motorista está instalado.
+   1. Selecionar **[!UICONTROL Escolher arquivo]** para procurar e selecionar a variável [!DNL MySQL] Pacote OSGi do driver JDBC. Selecionar **[!UICONTROL Iniciar pacote]** e **[!UICONTROL Atualizar pacotes]** e selecione **[!UICONTROL Instalar ou atualizar]**. Certifique-se de que o [!DNL Oracle Corporation's] Driver [!DNL MySQL] JDBC esteja ativo. O motorista está instalado.
 
 1. Configure [!DNL MySQL] o banco de dados como um fonte de dados:
 
    1. Acesse AEM console da Web no [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-   1. Localize **a configuração do DataSource** com conexão Apache Sling. Toque para abrir a configuração no modo de edição.
+   1. Localize **a configuração do DataSource** com conexão Apache Sling. Selecione para abrir a configuração no modo de edição.
    1. Na caixa de diálogo de configuração, especifique os seguintes detalhes:
 
       * **Nome da fonte de dados:** Você pode especificar qualquer nome. Por exemplo, especifique **WeRetailMySQL**.
@@ -87,7 +87,7 @@ Faça o seguinte para configurar suas [!DNL MySQL] banco de dados:
       * **Consulta de validação:** Especifique uma consulta SQL SELECT para validar as conexões do pool. A consulta deve retornar pelo menos uma linha. Por exemplo, **selecionar &#42; dos detalhes do cliente**.
       * **Isolamento de transação**: Defina o valor como **READ_COMMITTED**.
 
-        Deixar outras propriedades com o padrão [valores](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) e toque em **[!UICONTROL Salvar]**.
+        Deixar outras propriedades com o padrão [valores](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) e selecione **[!UICONTROL Salvar]**.
 
         Uma configuração semelhante à seguinte é criada.
 
@@ -100,9 +100,9 @@ AEM [!DNL Forms] O oferece uma interface intuitiva para [criar um modelo de dado
 Faça o seguinte para criar o modelo de dados de formulário:
 
 1. Na instância do autor AEM, navegue até **[!UICONTROL Forms]** > **[!UICONTROL Integrações de dados]**.
-1. Toque **[!UICONTROL Criar]** > **[!UICONTROL Modelo de dados do formulário]**.
-1. Na caixa de diálogo Criar modelo de dados de formulário, especifique uma **name** para o modelo de dados do formulário. Por exemplo, **customer-shipping-billing-details**. Toque **[!UICONTROL Próxima]**.
-1. A tela selecionar fonte de dados lista todas as fontes de dados configuradas. Selecionar **WeRetailMySQL** fonte de dados e toque em **[!UICONTROL Criar]**.
+1. Selecionar **[!UICONTROL Criar]** > **[!UICONTROL Modelo de dados do formulário]**.
+1. Na caixa de diálogo Criar modelo de dados de formulário, especifique uma **name** para o modelo de dados do formulário. Por exemplo, **customer-shipping-billing-details**. Selecione **[!UICONTROL Próximo]**.
+1. A tela selecionar fonte de dados lista todas as fontes de dados configuradas. Selecionar **WeRetailMySQL** fonte de dados e selecione **[!UICONTROL Criar]**.
 
    ![data-source-selection](assets/data-source-selection.png)
 
@@ -140,7 +140,7 @@ Faça o seguinte para configurar o modelo de dados de formulário:
       * obter
       * atualizar
 
-   Toque **Adicionar selecionado** para adicionar objetos de modelo de dados e serviços selecionados ao modelo de dados de formulário.
+   Selecionar **Adicionar selecionado** para adicionar objetos de modelo de dados e serviços selecionados ao modelo de dados de formulário.
 
    ![Esquema do WeRetail](assets/weretail_schema_new.png)
 
@@ -150,8 +150,8 @@ Faça o seguinte para configurar o modelo de dados de formulário:
 
 1. Configure serviços de leitura e gravação para o objeto de modelo de dados.
 
-   1. Selecione o **customerdetails** objeto de modelo de dados e toque em **[!UICONTROL Editar propriedades]**.
-   1. Selecionar **[!UICONTROL obter]** no menu suspenso Serviço de leitura. A variável **id** O argumento, que é a chave primária no objeto de modelo de dados customerdetails, é adicionado automaticamente. Toque ![aem_6_3_edit](assets/aem_6_3_edit.png) e configure o argumento da seguinte maneira.
+   1. Selecione o **customerdetails** objeto de modelo de dados e selecione **[!UICONTROL Editar propriedades]**.
+   1. Selecionar **[!UICONTROL obter]** no menu suspenso Serviço de leitura. A variável **id** O argumento, que é a chave primária no objeto de modelo de dados customerdetails, é adicionado automaticamente. Selecionar ![aem_6_3_edit](assets/aem_6_3_edit.png) e configure o argumento da seguinte maneira.
 
       ![read-default](assets/read-default.png)
 
@@ -163,7 +163,7 @@ Faça o seguinte para configurar o modelo de dados de formulário:
 
       ![id-arg](assets/id-arg.png)
 
-   1. Toque **[!UICONTROL Concluído]** para salvar as propriedades de objetos de modelo de dados. Em seguida, toque **[!UICONTROL Salvar]** para salvar o modelo de dados do formulário.
+   1. Selecione **[!UICONTROL Concluído]** para salvar as propriedades de objetos de modelo de dados. Em seguida, selecione **[!UICONTROL Salvar]** para salvar o modelo de dados do formulário.
 
       A variável **[!UICONTROL obter]** e **[!UICONTROL atualizar]** serviços são adicionados como serviços padrão para o objeto de modelo de dados.
 
@@ -171,7 +171,7 @@ Faça o seguinte para configurar o modelo de dados de formulário:
 
 1. Vá para a **[!UICONTROL Serviços]** guia e configurar **[!UICONTROL obter]** e **[!UICONTROL atualizar]** serviços.
 
-   1. Selecione o **[!UICONTROL obter]** serviço e toque em **[!UICONTROL Editar propriedades]**. A caixa de diálogo de propriedades é aberta.
+   1. Selecione o **[!UICONTROL obter]** e selecione **[!UICONTROL Editar propriedades]**. A caixa de diálogo de propriedades é aberta.
    1. Especifique o seguinte na caixa de diálogo Editar Propriedades:
 
       * **** Título: especifique o título do serviço. Por exemplo: Recuperar endereço de envio.
@@ -186,11 +186,11 @@ Faça o seguinte para configurar o modelo de dados de formulário:
       * **Retornar matriz**: Desative a variável **Retornar matriz** opção.
       * **Argumentos**: selecione o argumento chamado **ID**.
 
-      Toque **[!UICONTROL Concluído]**. O serviço para recuperar os detalhes do cliente do banco de dados MySQL está configurado.
+      Selecionar **[!UICONTROL Concluído]**. O serviço para recuperar os detalhes do cliente do banco de dados MySQL está configurado.
 
       ![delivery-address-retrieval](assets/shiiping-address-retrieval.png)
 
-   1. Selecione o **[!UICONTROL atualizar]** serviço e toque em **[!UICONTROL Editar propriedades]**. A caixa de diálogo de propriedades é aberta.
+   1. Selecione o **[!UICONTROL atualizar]** e selecione **[!UICONTROL Editar propriedades]**. A caixa de diálogo de propriedades é aberta.
 
    1. Especifique o seguinte no [!UICONTROL Editar propriedades] diálogo:
 
@@ -207,7 +207,7 @@ Faça o seguinte para configurar o modelo de dados de formulário:
 
       * **Argumentos**: selecione o nome do argumento **ID** e **customerdetails**.
 
-      Toque **[!UICONTROL Concluído]**. A variável **[!UICONTROL atualizar]** serviço para atualizar os detalhes do cliente na [!DNL MySQL] banco de dados está configurado.
+      Selecionar **[!UICONTROL Concluído]**. A variável **[!UICONTROL atualizar]** serviço para atualizar os detalhes do cliente na [!DNL MySQL] banco de dados está configurado.
 
       ![shiping-address-update](assets/shiiping-address-update.png)
 
@@ -219,9 +219,9 @@ Você pode testar o objeto de modelo de dados e os serviços para verificar se o
 
 Faça o seguinte para executar o teste:
 
-1. Vá para a **[!UICONTROL Modelo]** , selecione a **customerdetails** modelo de dados e toque em **[!UICONTROL Testar objeto de modelo]**.
+1. Vá para a **[!UICONTROL Modelo]** , selecione a **customerdetails** objeto de modelo de dados e selecione **[!UICONTROL Testar objeto de modelo]**.
 1. No [!UICONTROL Modelo de teste/serviço] selecione **[!UICONTROL Ler objeto de modelo]** do **[!UICONTROL Selecionar modelo/serviço]** menu suspenso.
-1. No **customerdetails** especifique um valor para a variável **id** argumento que existe na variável [!DNL MySQL] banco de dados e toque **[!UICONTROL Teste]**.
+1. No **customerdetails** especifique um valor para a variável **id** argumento que existe na variável [!DNL MySQL] banco de dados e selecione **[!UICONTROL Teste]**.
 
    Os detalhes do cliente associados à ID especificada são obtidos e exibidos no **[!UICONTROL Output]** conforme mostrado abaixo.
 

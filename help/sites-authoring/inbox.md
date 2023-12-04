@@ -2,10 +2,10 @@
 title: Sua Caixa de entrada para gerenciar tarefas
 description: Gerenciamento de tarefas com a caixa de entrada no Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 41%
+source-wordcount: '1155'
+ht-degree: 39%
 
 ---
 
@@ -65,7 +65,7 @@ O AEM pronto para uso vem pré-carregado com quatro tarefas atribuídas ao grupo
 
 Para abrir a caixa de entrada de notificação do AEM:
 
-1. Clique/toque no indicador na barra de ferramentas.
+1. Clique no indicador na barra de ferramentas.
 
 1. Selecione **Exibir todos**. A variável **Caixa de entrada AEM** é aberto. A caixa de entrada mostra itens de fluxos de trabalho, projetos e tarefas.
 1. A exibição padrão é [Exibição em lista](#inbox-list-view), mas você também pode alternar para [Exibição de calendário](#inbox-calendar-view). Isso é feito com o seletor de visualização (barra de ferramentas, parte superior direita).
@@ -138,8 +138,8 @@ A opção Admin Control está visível somente para os membros da `administrator
 
 * **Personalização da coluna**: personalize uma caixa de entrada AEM para alterar o título padrão de uma coluna, reordenar a posição de uma coluna e exibir colunas adicionais com base nos dados de um fluxo de trabalho.
    * **Adicionar coluna**: selecione uma coluna para adicionar à Caixa de entrada AEM.
-   * **Editar Coluna**: Passe o mouse sobre o título da coluna e toque em ![editar](assets/edit.svg) ícone para inserir um nome de exibição de coluna.
-   * **Excluir coluna**: Toque no ![excluir](assets/delete_updated.svg) ícone para excluir a coluna da Caixa de entrada AEM.
+   * **Editar Coluna**: Passe o mouse sobre o título da coluna e selecione ![editar](assets/edit.svg) ícone para inserir um nome de exibição de coluna.
+   * **Excluir coluna**: selecione a variável ![excluir](assets/delete_updated.svg) ícone para excluir a coluna da Caixa de entrada AEM.
    * **Mover Coluna**: arraste o ![mover](assets/move_updated.svg) ícone para mover uma coluna para uma nova posição na Caixa de entrada AEM.
 
   ![admin-control](assets/admin-control-column-customize.png)
@@ -152,7 +152,7 @@ A opção Admin Control está visível somente para os membros da `administrator
 
 * **Navegação do usuário**
    * **Ocultar opções de navegação:** Selecione essa opção para ocultar as opções de navegação disponíveis no cabeçalho. As opções de navegação incluem links para outras soluções, o link Ajuda e as opções de criação disponíveis ao tocar no logotipo ou texto do Adobe Experience Manager.
-* **Salvar:** Toque/clique nesta opção para salvar as configurações.
+* **Salvar:** Clique nessa opção para salvar as configurações.
 
 ## Realizar ação em um item {#taking-action-on-an-item}
 
@@ -167,7 +167,7 @@ A opção Admin Control está visível somente para os membros da `administrator
 
    As ações são apropriadas ao item e incluem:
 
-   * **Concluir** ação; por exemplo, uma tarefa ou item de fluxo de trabalho.
+   * **Concluído** ação; por exemplo, uma tarefa ou item de workflow.
    * **Reatribuir**/**Delegar** um item.
    * **Abertura** um item; dependendo do tipo de item, essa ação pode:
 
@@ -175,9 +175,9 @@ A opção Admin Control está visível somente para os membros da `administrator
       * abrir um painel ou assistente apropriado para executar outras ações
       * abrir documentação relacionada
 
-   * **Recuar** para uma etapa anterior.
+   * **Retroceder** para uma etapa anterior.
    * Visualizar a carga de um fluxo de trabalho.
-   * Criar um projeto a partir do item.
+   * Crie um projeto a partir do item.
 
    >[!NOTE]
    >

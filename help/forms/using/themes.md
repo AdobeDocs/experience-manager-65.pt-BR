@@ -7,10 +7,10 @@ content-strategy: max-2018
 docset: aem65
 feature: Adaptive Forms
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '6106'
-ht-degree: 2%
+source-wordcount: '6084'
+ht-degree: 1%
 
 ---
 
@@ -365,13 +365,13 @@ Quando você seleciona um componente na Tela, vê a barra de ferramentas do comp
 * **Widget de caixa numérica**: permite que você selecione o componente para personalizar sua aparência na barra lateral.
 * **Widget de campo**: permite selecionar o componente genérico para o estilo. Neste exemplo, todos os componentes de entrada de texto (caixa de texto/caixa numérica/depurador numérico/entrada de data) são selecionados para estilo.
 
-* ![nível de campo](assets/field-level.png): permite alternar para componente genérico para estilização. Se você selecionar caixa numérica e tocar nesse ícone, o componente de campo será selecionado. Se você selecionar componente de campo e tocar neste ícone, o painel será selecionado. Se você continuar tocando nesse ícone para seleção, acabará selecionando o layout para estilo.
+* ![nível de campo](assets/field-level.png): permite alternar para componente genérico para estilização. Se você selecionar caixa numérica e selecionar este ícone, o componente de campo será selecionado. Se você selecionar componente de campo e selecionar este ícone, painel será selecionado. Se você continuar tocando nesse ícone para seleção, acabará selecionando o layout para estilo.
 
 >[!NOTE]
 >
 >As opções disponíveis na barra de ferramentas do componente variam de acordo com o componente selecionado.
 
-![Barra de ferramentas Componente](assets/overlay.png)
+![Barra de ferramentas do componente](assets/overlay.png)
 
 Barra de ferramentas do componente na caixa numérica na Tela
 
@@ -590,7 +590,7 @@ Para copiar um tema, execute as seguintes etapas:
 
 1. Na instância de criação, navegue até **Adobe Experience Manager > Forms > Temas**.
 1. Abra a pasta Biblioteca de temas.
-1. Na pasta Biblioteca de temas, passe o mouse sobre o tema predefinido correspondente e toque em **Copiar**.
+1. Na pasta Biblioteca de temas, passe o mouse sobre o tema predefinido correspondente e selecione **Copiar**.
 1. Cole o tema copiado fora da pasta Biblioteca de Temas.
 1. Personalizar o tema copiado.
 

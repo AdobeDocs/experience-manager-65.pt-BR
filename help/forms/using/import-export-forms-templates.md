@@ -11,7 +11,7 @@ discoiquuid: 69210727-dde3-495a-87b7-2e8173e6b664
 docset: aem65
 role: Admin
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '2509'
 ht-degree: 0%
@@ -40,9 +40,9 @@ Para esses tipos de ativos, você deve usar o Gerenciador de pacotes AEM para cr
 Para baixar os ativos do Forms e do Documents:
 
 1. Faça logon na instância do AEM Forms.
-1. Toque em Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) ícone > navegação ![bússola](assets/compass.png) icon> Forms > Forms e documentos.
-1. Selecione os ativos de formulários e toque no **Baixar** ícone.
-1. Em Baixar ativo(s), escolha uma das seguintes opções e toque em **Baixar**.
+1. Selecionar Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) ícone > navegação ![bússola](assets/compass.png) icon> Forms > Forms e documentos.
+1. Selecione os ativos de formulários e selecione o **Baixar** ícone.
+1. Em Baixar ativos, escolha uma das seguintes opções e selecione **Baixar**.
 
    * **Baixar como Pacote CRX:** Use a opção para baixar e mover todos os ativos selecionados e as dependências relacionadas de uma instância do AEM Forms para outra. Ele baixa todos os ativos e pastas como pacote crx. Todos os ativos de formulário, incluindo os formulários criados no AEM (formulários adaptáveis, comunicações interativas e fragmentos de formulário adaptáveis), conjuntos de formulários, modelos de formulário, documentos PDF e recursos (XSDs, XFS, imagens) podem ser baixados como pacotes na interface do usuário do AEM Forms.
 A vantagem de baixar ativos como pacote é que ele também baixa ativos que foram usados pelo ativo selecionado para download. Por exemplo, se você tiver um formulário adaptável que usa um modelo de formulário, XSD e uma imagem. Ao selecionar esse formulário adaptável e baixá-lo como pacote, o pacote baixado também contém o modelo de formulário, o XSD e a imagem. Todas as propriedades de metadados (incluindo propriedades personalizadas) associadas ao ativo também são baixadas.
@@ -63,11 +63,11 @@ Para fazer upload de ativos do Forms e do Documents:
 >[!VIDEO](https://vimeo.com/)
 
 1. Faça logon na instância do AEM Forms.
-1. Toque em Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) ícone > navegação ![bússola](assets/compass.png) icon> Forms> Forms e documentos.
-1. Toque **Criar** >**Upload de arquivo**. Uma caixa de diálogo Carregar formulários ou pacote é exibida.
-1. Na caixa de diálogo, navegue e selecione o pacote ou o arquivo a ser importado. Você também pode selecionar o documento PDF, XSDs, imagens, folhas de estilos e formulários XDP. Toque **Abertura**. A pasta ou o nome de arquivo selecionado não deve incluir caracteres especiais.
+1. Selecionar Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) ícone > navegação ![bússola](assets/compass.png) icon> Forms> Forms e documentos.
+1. Selecionar **Criar** >**Upload de arquivo**. Uma caixa de diálogo Carregar formulários ou pacote é exibida.
+1. Na caixa de diálogo, navegue e selecione o pacote ou o arquivo a ser importado. Você também pode selecionar o documento PDF, XSDs, imagens, folhas de estilos e formulários XDP. Selecionar **Abertura**. A pasta ou o nome de arquivo selecionado não deve incluir caracteres especiais.
 
-   Na caixa de diálogo, verifique os detalhes dos ativos que estão sendo carregados e toque em **Carregar**.
+   Na caixa de diálogo, verifique os detalhes dos ativos que estão sendo carregados e selecione **Carregar**.
 
    Caso você carregue um ativo de formulários existente, o ativo é atualizado.
 
@@ -86,8 +86,8 @@ Com o AEM Forms, você pode criar, baixar ou fazer upload de temas. Um tema é c
 Para baixar um tema:
 
 1. Faça logon na instância do AEM Forms.
-1. Toque em Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) ícone > navegação ![bússola](assets/compass.png) ícone> Forms> Temas.
-1. Selecione o tema e toque em **Baixar**. O tema é baixado como um arquivo (arquivo .zip).
+1. Selecionar Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) ícone > navegação ![bússola](assets/compass.png) ícone> Forms> Temas.
+1. Selecione o tema e selecione **Baixar**. O tema é baixado como um arquivo (arquivo .zip).
 
 ### Carregamento de um tema {#uploading-a-theme}
 
@@ -101,7 +101,7 @@ Para fazer upload de um tema:
 O tema carregado está disponível na página de temas.
 
 1. Faça logon na instância do AEM Forms.
-1. Toque em Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) ícone > navegação ![bússola](assets/compass.png) ícone> Forms> Temas.
+1. Selecionar Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) ícone > navegação ![bússola](assets/compass.png) ícone> Forms> Temas.
 1. click **Criar** > **Upload de arquivo**. No prompt File Upload (Upload de arquivo), procure e selecione um pacote de temas no computador e clique em **Carregar**. O tema é carregado.
 
 ## Importar e exportar ativos no Gerenciamento de correspondência {#import-and-export-assets-in-correspondence-management}
@@ -110,15 +110,15 @@ Para compartilhar ativos, como dicionários de dados, cartas e fragmentos de doc
 
 ### Exportar fragmentos de documento, cartas e/ou dicionários de dados {#export-document-fragments-letters-and-or-data-dictionaries}
 
-1. Nas páginas de cartas, fragmentos de documento ou dicionário de dados, toque e selecione os ativos que deseja exportar para um único pacote e toque em Fila para download. Os ativos são alinhados para exportação.
+1. Nas páginas de cartas, fragmentos de documentos ou dicionários de dados, selecione e selecione os ativos que deseja exportar para um único pacote e selecione Fila para download. Os ativos são alinhados para exportação.
 1. Conforme necessário, repita a etapa acima para adicionar letras, fragmentos de documento e dicionários de dados.
-1. Toque **Baixar**.
+1. Selecionar **Baixar**.
 1. O Gerenciamento de correspondências exibe a caixa de diálogo Baixar ativo(s) com uma lista de ativos na lista de exportação.
 
    ![exportar](assets/export.png)
 
-1. Para exibir as dependências exportadas, toque em Resolver. Ou pule para a próxima etapa. Mesmo se você não tocar em resolver, as dependências ainda serão exportadas.
-1. Para baixar o arquivo .cmp, toque em **OK**.
+1. Para exibir as dependências exportadas, selecione Resolver. Ou pule para a próxima etapa. Mesmo que você não selecione resolver, as dependências ainda serão exportadas.
+1. Para baixar o arquivo .cmp, selecione **OK**.
 1. O Gerenciamento de correspondência baixa um arquivo .cmp para o computador.
 
    O arquivo .cmp inclui os ativos exportados. Você pode compartilhar o arquivo .cmp com outras pessoas. Outros usuários podem importar o arquivo .cmp em um servidor diferente para obter todos os ativos no novo servidor.
@@ -132,9 +132,9 @@ Por exemplo, se o Gerenciamento de correspondências tiver uma correspondência 
 Para baixar todos os ativos do Gerenciamento de correspondências e dependências relacionadas como um pacote, siga estas etapas:
 
 1. Faça logon no servidor do AEM Forms como um usuário de formulários.
-1. Toque **Adobe Experience Manager** na barra Navegação global.
-1. Toque em Ferramentas ( ![ferramentas](assets/tools.png)) e toque em **Forms**.
-1. Toque **Exportar ativos do gerenciamento de correspondência**.
+1. Selecionar **Adobe Experience Manager** na barra Navegação global.
+1. Selecionar ferramentas ( ![ferramentas](assets/tools.png)) e selecione **Forms**.
+1. Selecionar **Exportar ativos do gerenciamento de correspondência**.
 
    ![publish-cmp-assets-1](assets/publish-cmp-assets-1.png)
 
@@ -142,7 +142,7 @@ Para baixar todos os ativos do Gerenciamento de correspondências e dependência
 
    ![export-last-run-details](assets/export-last-run-details.png)
 
-1. Toque **Exportar** e, na mensagem de confirmação, toque em **OK**.
+1. Selecionar **Exportar** e, na mensagem de confirmação, selecione **OK**.
 
    Após a conclusão de um processo em lote, os detalhes da última execução e o link para baixar o pacote são atualizados. Isso inclui informações como o logon do Administrador e se a execução do lote foi bem-sucedida ou falhou. Os ativos são exportados para um pacote e o link Baixar pacote exportado é exibido.
 
@@ -150,7 +150,7 @@ Para baixar todos os ativos do Gerenciamento de correspondências e dependência
    >
    >O processo Exportar todos os ativos não pode ser cancelado depois de iniciado. Além disso, enquanto a operação exportar tudo estiver em andamento, não crie, exclua, modifique ou publique quaisquer ativos ou inicie o processo Publicar todos os ativos.
 
-1. Toque no **Baixar pacote exportado** link para baixar o arquivo de pacote.
+1. Selecione o **Baixar pacote exportado** link para baixar o arquivo de pacote.
 
    Para adicionar os ativos do pacote a outra instância do Gerenciamento de correspondências, [importar o pacote para uma instância do AEM Forms](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
 
@@ -162,8 +162,8 @@ Você pode importar ativos exportados para um arquivo .cmp. Um arquivo .cmp pode
 >
 >Ao importar ativos antigos do Gerenciamento de correspondências para migração, faça logon usando uma conta de Administrador. Para obter mais informações sobre como Migrar ativos antigos do Gerenciamento de correspondências, consulte [Migrar ativos do Gerenciamento de correspondência para formulários AEM 6.1](/help/forms/using/migration-utility.md).
 
-1. Na página Dicionário de dados, cartas ou fragmentos do documento, toque em **Criar > Upload de arquivo** e selecione o arquivo .cmp.
-1. O Gerenciamento de correspondência exibe a caixa de diálogo Importar ativos com a lista de ativos que são importados. Toque **Importar**.
+1. Na página do dicionário de dados, cartas ou fragmentos de documento, selecione **Criar > Upload de arquivo** e selecione o arquivo .cmp.
+1. O Gerenciamento de correspondência exibe a caixa de diálogo Importar ativos com a lista de ativos que são importados. Selecionar **Importar**.
 
    Após importar os ativos, as seguintes propriedades dos ativos são atualizadas, enquanto as outras propriedades permanecem as mesmas:
 
@@ -183,7 +183,7 @@ Você pode usar o gerenciador de pacotes AEM para exportar aplicativos de workfl
 1. Especifique o nome, a versão e o grupo do pacote. Clique em **[!UICONTROL OK]**.
 1. Clique em **[!UICONTROL Editar]** e abra o **[!UICONTROL Filtros]** guia. Clique em **[!UICONTROL Adicionar filtro]**. Especifique o caminho do aplicativo de workflow. Por exemplo, /etc/fd/dashboard/startpoints/homemortgage. Clique em **[!UICONTROL Adicionar regra]**.
 
-1. Abra a guia **[!UICONTROL Avançado.]** Selecionar **[!UICONTROL Mesclar]** ou **[!UICONTROL Substituir]** no campo Tratamento de ACL. Clique em **[!UICONTROL Salvar]**.
+1. Abra o **[!UICONTROL Avançado]** guia. Selecionar **[!UICONTROL Mesclar]** ou **[!UICONTROL Substituir]** no campo Tratamento de ACL. Clique em **[!UICONTROL Salvar]**.
 1. Clique em **[!UICONTROL Build]** para criar o pacote.
 
    Depois que o pacote for criado, é possível baixá-lo e importá-lo para o outro servidor. O aplicativo de workflow aparece no servidor onde o pacote é carregado.
@@ -198,11 +198,11 @@ A interface do usuário do AEM Forms usa pastas para organizar ativos. Essas pas
 
 Para criar uma pasta, conclua as seguintes etapas:
 
-### Crie uma pasta  {#create-a-folder}
+### Criar uma pasta {#create-a-folder}
 
 1. Faça logon na interface do usuário do AEM Forms em `https://<server>:<port>/aem/forms.html`.
 1. Navegue até o local em que deseja criar uma pasta.
-1. Toque em Criar > Pasta.
+1. Selecione Criar > Pasta.
 1. Insira os seguintes detalhes:
 
    * **Título:** Nome de exibição da pasta
@@ -216,7 +216,7 @@ Para criar uma pasta, conclua as seguintes etapas:
 
    Se existir uma pasta com o nome especificado, o envio falha com um erro. Você pode exibir a mensagem de erro passando o cursor do mouse sobre ele ![aem6forms_error_alert](assets/aem6forms_error_alert.png) ícone que aparece ao lado do campo de nome.
 
-   Toque na pasta recém-criada para entrar na pasta e criar ativos ou pastas dentro dela. Além disso, você pode selecionar uma pasta e optar por colocá-la na fila para download, excluí-la ou editar seu nome.
+   Você pode selecionar a pasta recém-criada para entrar na pasta e criar ativos ou pastas dentro dela. Além disso, você pode selecionar uma pasta e optar por colocá-la na fila para download, excluí-la ou editar seu nome.
 
    ![editdeletedownloadafolder](assets/editdeletedownloadafolder.png)
 
@@ -227,19 +227,19 @@ Você pode usar ativos e cartas existentes para criar rapidamente ativos e carta
 Conclua as seguintes etapas para criar cópias de ativos e cartas:
 
 1. Na página Ativos ou Cartas relevante, selecione um ou mais ativos/cartas. A interface do usuário do exibe o ícone Copiar.
-1. Toque em Copiar. A interface exibe o ícone Colar. Você também pode escolher ir/navegar dentro de uma pasta antes de colar. Pastas diferentes podem conter ativos com os mesmos nomes. Para obter mais informações sobre pastas, consulte [Pastas e organização de ativos](#folders-and-organizing-assets).
-1. Toque em Colar. A caixa de diálogo Colar é exibida. O sistema gera automaticamente nomes e títulos para as novas cópias de ativos/cartas, mas você pode editar os títulos e nomes dos ativos/cartas.
+1. Selecione Copiar. A interface exibe o ícone Colar. Você também pode escolher ir/navegar dentro de uma pasta antes de colar. Pastas diferentes podem conter ativos com os mesmos nomes. Para obter mais informações sobre pastas, consulte [Pastas e organização de ativos](#folders-and-organizing-assets).
+1. Selecione Colar. A caixa de diálogo Colar é exibida. O sistema gera automaticamente nomes e títulos para as novas cópias de ativos/cartas, mas você pode editar os títulos e nomes dos ativos/cartas.
 
    Se você estiver copiando e colando os ativos/cartas no mesmo local, um sufixo &quot;-CopyXX&quot; será adicionado ao nome existente do ativo/carta. Se não houver título para o ativo/carta copiado, o campo de título gerado automaticamente permanecerá em branco.
 
 1. Se necessário, edite o Título e o Nome com os quais deseja salvar a cópia do ativo/carta.
-1. Toque em Colar. Novas cópias dos ativos copiados são criadas.
+1. Selecione Colar. Novas cópias dos ativos copiados são criadas.
 
 ## Pesquisar {#search-forms}
 
-A interface do usuário do AEM Forms permite pesquisar seu conteúdo. Usando a barra superior, você pode tocar em Pesquisar **[A]** para pesquisar o conteúdo de recursos como ativos e documentos.
+A interface do usuário do AEM Forms permite pesquisar seu conteúdo. Usando a barra superior, você pode selecionar Pesquisar **[A]** para pesquisar o conteúdo de recursos como ativos e documentos.
 
-Quando você pesquisa por ativos, o AEM Forms exibe o painel lateral. Você também pode tocar em ![assets-browser-content-only](assets/assets-browser-content-only.png) > Filtro **[B]** para chamar o painel lateral. Usando os vários filtros no painel lateral, é possível restringir a pesquisa. O painel lateral também permite salvar as pesquisas.
+Quando você pesquisa por ativos, o AEM Forms exibe o painel lateral. Também é possível selecionar ![assets-browser-content-only](assets/assets-browser-content-only.png) > Filtro **[B]** para chamar o painel lateral. Usando os vários filtros no painel lateral, é possível restringir a pesquisa. O painel lateral também permite salvar as pesquisas.
 
 ![search_topbar](assets/search_topbar.png)
 

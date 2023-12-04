@@ -5,9 +5,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1819'
+source-wordcount: '1829'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,9 @@ Antes de configurar uma pasta monitorada, verifique o seguinte:
 
 Execute as seguintes etapas para criar uma pasta monitorada:
 
-1. Toque **Adobe Experience Manager** no canto superior esquerdo da tela.
-1. Toque **Ferramentas** > **Forms** > **Configurar a pasta monitorada.** Uma lista de pastas monitoradas já configuradas é exibida.
-1. Toque **Novo**. Uma lista de campos necessários para criar a pasta monitorada é exibida:
+1. Selecionar **Adobe Experience Manager** no canto superior esquerdo da tela.
+1. Selecionar **Ferramentas** > **Forms** > **Configurar a pasta monitorada.** Uma lista de pastas monitoradas já configuradas é exibida.
+1. Selecionar **Novo**. Uma lista de campos necessários para criar a pasta monitorada é exibida:
 
    * **Nome**: identifica a pasta monitorada. Use somente caracteres alfanuméricos para o nome.
    * **Caminho**: especifica o local da pasta monitorada. Em um ambiente clusterizado, essa configuração deve apontar para uma pasta de rede compartilhada acessível a cada usuário que executa o AEM em diferentes nós de um cluster.
@@ -59,7 +59,7 @@ Execute as seguintes etapas para criar uma pasta monitorada:
 
    * **Padrão do arquivo de saída**: especifique uma lista de padrões delimitada por ponto e vírgula (;) que uma pasta monitorada usa para determinar o nome e o local dos arquivos e pastas de saída. Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
 
-1. Toque **Avançado**. A guia Advanced contém mais campos. A maioria desses campos contém um valor padrão.
+1. Selecionar **Avançado**. A guia Advanced contém mais campos. A maioria desses campos contém um valor padrão.
 
    * **Filtro do mapeador de carga útil:** Quando você cria uma pasta monitorada, ela cria uma estrutura de pastas dentro da pasta que está sendo monitorada. A estrutura de pastas tem pastas de preparo, resultado, preservação, entrada e falha. A estrutura de pastas pode servir como carga de entrada para o fluxo de trabalho e aceitar a saída de um fluxo de trabalho. Ele também pode listar pontos de falha, se houver. A estrutura de uma carga é diferente da estrutura de uma pasta monitorada. Você pode gravar scripts personalizados para mapear a estrutura de uma pasta monitorada para a carga útil. Esse script é chamado de filtro de mapeador de carga útil. Duas implementações prontas para uso do mapeador de carga estão disponíveis. Se você não tiver [uma implementação personalizada](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), use uma das implementações prontas para uso:
 
@@ -113,7 +113,7 @@ Execute as seguintes etapas para criar uma pasta monitorada:
 
 Além de alterar o nome da pasta monitorada, você pode modificar todas as propriedades de uma pasta monitorada existente. Execute as seguintes etapas para modificar propriedades de uma pasta monitorada existente:
 
-1. Toque no **Adobe Experience Manager** no canto superior esquerdo da tela.
-1. Toque **Ferramentas** > **Forms** > **Configurar a pasta monitorada.** Uma lista de pastas monitoradas já configuradas é exibida.
-1. No lado esquerdo da tela Pasta monitorada, selecione a pasta monitorada e toque em **Editar.** Uma lista de campos necessários para criar a pasta monitorada é exibida. Os campos listados na variável **Básico** As guias são obrigatórias. A guia Advanced contém mais campos. A maioria desses campos contém um valor padrão. Você pode modificar essas propriedades de acordo com seus requisitos.
-1. Depois de modificar as propriedades, toque em **Atualizar**. As propriedades modificadas são salvas.
+1. Selecione o **Adobe Experience Manager** no canto superior esquerdo da tela.
+1. Selecionar **Ferramentas** > **Forms** > **Configurar a pasta monitorada.** Uma lista de pastas monitoradas já configuradas é exibida.
+1. No lado esquerdo da tela Pasta monitorada, selecione a pasta monitorada e selecione **Editar.** Uma lista de campos necessários para criar a pasta monitorada é exibida. Os campos listados na variável **Básico** As guias são obrigatórias. A guia Advanced contém mais campos. A maioria desses campos contém um valor padrão. Você pode modificar essas propriedades de acordo com seus requisitos.
+1. Depois de modificar as propriedades, selecione **Atualizar**. As propriedades modificadas são salvas.

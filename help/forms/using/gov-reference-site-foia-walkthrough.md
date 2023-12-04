@@ -4,9 +4,9 @@ description: Consulte a apresentação do site de referência We.Gov para entend
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 57b5ce89-6b01-4087-a485-6d9696f06378
-source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '842'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ De acordo com a Lei de Liberdade de Informação, Sarah solicita uma cópia dos 
 
 ### Veja você mesmo {#see-it-yourself}
 
-No navegador, abra `https://<hostname>:<PublishPort>/wegov`. No site We.Gov, toque em Aplicativos > Todos os aplicativos. Na página Todos os aplicativos, toque em Aplicar em Aplicativo para solicitação FOIA.
+No navegador, abra `https://<hostname>:<PublishPort>/wegov`. No site We.Gov, selecione Aplicativos > Todos os aplicativos. Na página Todos os aplicativos, selecione Aplicar em Aplicativo para solicitação FOIA.
 
 ## Sarah inicia seu pedido de informações sob a Foia {#sarah-starts-her-application-for-information-under-foia}
 
@@ -54,7 +54,7 @@ Cliques de Sarah **Aplicar** e na página Formulário de solicitação da Lei de
 
 Solicitando cópia dos registros de casos da Administração para Crianças e Famílias para os anos fiscais de 2013 a 2016
 
-A qualquer momento, Sarah pode tocar **Salvar** para salvar um rascunho do formulário e voltar mais tarde para preenchê-lo e enviá-lo. Sarah envia o formulário.
+A qualquer momento, Sarah pode selecionar **Salvar** para salvar um rascunho do formulário e voltar mais tarde para preenchê-lo e enviá-lo. Sarah envia o formulário.
 
 >[!NOTE]
 >

@@ -11,9 +11,9 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1975'
+source-wordcount: '2004'
 ht-degree: 8%
 
 ---
@@ -149,9 +149,9 @@ Consulte também [Limitações do Dynamic Media](/help/assets/limitations.md).
 
    * Próximo ao canto superior esquerdo da página Editor de conjunto de rotação, selecione **[!UICONTROL Adicionar ativo]**.
 
-   * Próximo ao meio da página Editor do grupo de rotação, selecione **[!UICONTROL Toque para abrir o Seletor de ativos]**.
+   * Próximo ao meio da página Editor do grupo de rotação, selecione **[!UICONTROL Selecione para abrir o Seletor de ativos]**.
 
-   Toque para selecionar os ativos que deseja incluir no Spin Set. Os ativos selecionados têm um ícone de marca de seleção sobre eles. Quando terminar, próximo ao canto superior direito da página, selecione **[!UICONTROL Selecionar]**.
+   Selecione para selecionar os ativos que deseja incluir no Spin Set. Os ativos selecionados têm um ícone de marca de seleção sobre eles. Quando terminar, próximo ao canto superior direito da página, selecione **[!UICONTROL Selecionar]**.
 
    Com o Seletor de ativos, procure por ativos ao digitar uma palavra-chave e tocar em **[!UICONTROL Retornar]**. Aplique filtros para refinar os resultados da pesquisa. Filtre por caminho, coleção, tipo de arquivo e tag. Selecione o filtro e, em seguida, selecione a variável **[!UICONTROL Filtro]** na barra de ferramentas. Altere a exibição ao tocar no ícone Exibir e selecionar **[!UICONTROL Exibição em coluna]**, **[!UICONTROL Exibição de cartão]** ou **[!UICONTROL Exibição em lista]**.
 
@@ -173,7 +173,7 @@ Consulte também [Limitações do Dynamic Media](/help/assets/limitations.md).
 
    * Para aplicar uma predefinição, próximo ao canto superior direito da página, selecione **[!UICONTROL Predefinição]**, em seguida, selecione uma predefinição para aplicar a todos os ativos de uma só vez.
 
-1. Selecione **[!UICONTROL Salvar]**. O conjunto de rotação recém-criado aparece na pasta em que você o criou.
+1. Selecionar **[!UICONTROL Salvar]**. O conjunto de rotação recém-criado aparece na pasta em que você o criou.
 
 ## Exibir um grupo de rotação {#viewing-spin-sets}
 

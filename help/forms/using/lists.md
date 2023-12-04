@@ -8,9 +8,9 @@ discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '6911'
+source-wordcount: '6904'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ A Solução de gerenciamento de correspondência é compatível com dois tipos d
 ### Criar texto {#create-text}
 
 1. Selecionar **Forms** > **Fragmentos do documento**.
-1. Toque **Criar** > **Texto** Ou selecione um ativo de texto e toque em **Editar**.
+1. Selecionar **Criar** > **Texto** Ou selecione um ativo de texto e **Editar**.
 1. Especifique as seguintes informações para o texto:
 
    * **Título: (opcional)** Insira o título do ativo de texto. Os títulos não precisam ser exclusivos e podem ter caracteres especiais e caracteres que não estejam em inglês. Os textos são referenciados por seus títulos (quando disponíveis), como em miniaturas e propriedades de ativos.
@@ -51,7 +51,7 @@ A Solução de gerenciamento de correspondência é compatível com dois tipos d
    * **Dicionário de dados**: Opcionalmente, selecione o dicionário de dados para mapear. Esse atributo permite adicionar referências aos elementos do dicionário de dados no ativo de texto.
    * **Tags**: Opcionalmente, para criar uma tag personalizada, insira o valor no campo de texto e pressione Enter. Você pode ver sua tag abaixo do campo de texto das tags. Quando você salva esse texto, as tags recém-adicionadas também são criadas.
 
-1. Toque **Próxima**. O Gerenciamento de correspondência exibe a página Editor, onde você pode adicionar parágrafos de texto e elementos de dados ao texto.
+1. Selecionar **Próxima**. O Gerenciamento de correspondência exibe a página Editor, onde você pode adicionar parágrafos de texto e elementos de dados ao texto.
 
    O verificador ortográfico padrão do navegador verifica a ortografia no editor de texto. Para gerenciar a verificação ortográfica e gramatical, você pode editar as configurações do verificador ortográfico do navegador ou instalar plug-ins/complementos do navegador para verificar a ortografia e a gramática.
 
@@ -63,7 +63,7 @@ A Solução de gerenciamento de correspondência é compatível com dois tipos d
 
    * **Link**: Inserir [hipertexto](#insert-hyperlink) no texto.
    * **Repetir**: A repetição imprime o elemento de coleção no Dicionário de dados usando um delimitador.
-   * **Condição**: Toque para inserir uma condição. Inserir texto com base na condição. Se a condição for verdadeira, o texto será visível na letra; caso contrário, não será.
+   * **Condição**: selecione para inserir uma condição. Inserir texto com base na condição. Se a condição for verdadeira, o texto será visível na letra; caso contrário, não será.
    * **Adicionar descrição**: adiciona uma anotação a um pedaço de texto. Esses metadados são visíveis para o Autor, mas não são parte da carta criada.
    * **Quebra de página**: se você definir o atributo de quebra de página de um módulo de texto como false, o módulo de texto não será quebrado entre páginas.
 
@@ -106,13 +106,13 @@ A Solução de gerenciamento de correspondência é compatível com dois tipos d
 
    O Gerenciamento de correspondências incorporou suporte para 210 caracteres especiais. O administrador pode [adicionar suporte para mais caracteres especiais/personalizados por personalização](/help/forms/using/custom-special-characters.md).
 
-1. Para destacar\enfatizar partes do texto em um módulo incorporado editável, selecione o texto e toque em Realçar cor.
+1. Para destacar\enfatizar partes do texto em um módulo incorporado editável, selecione o texto e selecione Realçar cor.
 
    ![textbackgroundcolorplied](assets/textbackgroundcolorapplied.png)
 
-   Você pode tocar diretamente em uma cor básica `**[A]**` presente na paleta Cores básicas ou toque em **Selecionar** depois de usar o controle deslizante `**[B]**` para escolher o tom apropriado da cor.
+   É possível selecionar diretamente uma cor básica `**[A]**` presente na paleta Cores básicas ou selecione **Selecionar** depois de usar o controle deslizante `**[B]**` para escolher o tom apropriado da cor.
 
-   Como opção, você também pode ir para a guia Avançado para selecionar o Matiz, a Luminosidade e a Saturação apropriados `**[C]**` para criar a cor precisa e, em seguida, toque em Selecionar `**[D]**` para aplicar a cor para realçar o texto.
+   Como opção, você também pode ir para a guia Avançado para selecionar o Matiz, a Luminosidade e a Saturação apropriados `**[C]**` para criar a cor precisa e, em seguida, selecione Selecionar `**[D]**` para aplicar a cor para realçar o texto.
 
    ![textbackgroundcolor-1](assets/textbackgroundcolor-1.png)
 
@@ -120,8 +120,8 @@ A Solução de gerenciamento de correspondência é compatível com dois tipos d
 
    Para:
 
-   * Adicione um elemento do dicionário de dados no texto, selecione um elemento de dados na lista e toque em Inserir ( ![inserir](assets/insert.png)). Se você selecionar Protegido, o elemento do dicionário de dados será somente leitura e aparecerá no editor de correspondências, mas não na interface do usuário Criar correspondência ou no Criador de correspondência.
-   * Adicione um elemento de espaço reservado no texto, no painel Elementos de dados, toque em Criar novo, insira os detalhes do novo Elemento de dados e toque em Criar para adicionar o novo elemento à lista. O novo espaço reservado pode ser inserido no texto da mesma forma que o elemento do dicionário de dados. Para editar um espaço reservado, selecione-o e toque em Editar.
+   * Adicione um elemento do dicionário de dados ao texto, selecione um elemento de dados na lista e selecione Inserir ( ![inserir](assets/insert.png)). Se você selecionar Protegido, o elemento do dicionário de dados será somente leitura e aparecerá no editor de correspondências, mas não na interface do usuário Criar correspondência ou no Criador de correspondência.
+   * Adicione um elemento de espaço reservado no texto, no painel Elementos de dados, selecione Criar novo, insira os detalhes do novo Elemento de dados e selecione Criar para adicionar o novo elemento à lista. O novo espaço reservado pode ser inserido no texto da mesma forma que o elemento do dicionário de dados. Para editar um espaço reservado, selecione-o e escolha Editar.
 
    ![Elementos de espaço reservado](assets/placeholder_elements_in_xmldata.png)
 
@@ -134,7 +134,7 @@ A Solução de gerenciamento de correspondência é compatível com dois tipos d
    Você também pode usar o símbolo @ para pesquisar e adicionar elementos de dicionário de dados e espaço reservado ao editor de texto. Coloque o cursor onde deseja inserir o elemento. Digite @ seguido pela sequência de pesquisa. O editor de texto executa a operação de pesquisa em todos os elementos de dicionário de dados e espaço reservado disponíveis no fragmento do documento de texto. A operação de pesquisa recupera e exibe os elementos que contêm a string de pesquisa como uma lista suspensa. Navegue pelos resultados da pesquisa e clique no elemento que deseja inserir no local do cursor. Pressione Esc para ocultar os resultados da pesquisa.
 
 1. Você pode usar condições em linha e repetir para tornar sua carta altamente contextual e bem estruturada. Para obter mais informações sobre condição em linha e repetição, consulte [Condições em linha e repetir em letras](/help/forms/using/cm-inline-condition.md).
-1. Toque **Salvar**.
+1. Selecione **Salvar**.
 
 #### Inserir hiperlink em um texto {#insert-hyperlink}
 
@@ -142,9 +142,9 @@ Execute as seguintes etapas para criar um hiperlink em um ativo de texto:
 
 1. Selecione o texto ou o objeto de modelo de dados no editor de texto.
 
-2. Toque **[!UICONTROL Link]**. Toque **[!UICONTROL Texto Alternativo]** para remover o nome ou texto do objeto de modelo de dados existente.
+2. Selecionar **[!UICONTROL Link]**. Selecionar **[!UICONTROL Texto Alternativo]** para remover o nome ou texto do objeto de modelo de dados existente.
 
-3. Especifique o URL e toque em ![Salvar](assets/save_icon.svg).
+3. Especifique o URL e selecione ![Salvar](assets/save_icon.svg).
 
 ![Criar hiperlink no ativo de texto](assets/text-create-hyperlink.png)
 
@@ -158,7 +158,7 @@ O recurso Localizar e substituir permite procurar (e substituir) qualquer cadeia
 
 1. Abra o módulo de texto no editor de texto.
 
-1. Toque em Localizar e substituir.
+1. Selecione Localizar e substituir.
 1. Insira o texto a ser pesquisado na caixa de texto Localizar e pressione Localizar. O texto de pesquisa é destacado no módulo de texto.
 1. Para procurar a próxima instância do texto, pressione Localizar novamente.
 
@@ -185,7 +185,7 @@ O recurso Localizar e substituir permite procurar (e substituir) qualquer cadeia
 #### Para pesquisar e substituir texto em um módulo de texto {#to-search-and-replace-text-in-a-text-module}
 
 1. Abra o módulo de texto no editor de texto.
-1. Toque em Localizar e substituir.
+1. Selecione Localizar e substituir.
 1. Digite o texto a ser pesquisado na caixa de texto Localizar e o texto a ser substituído pelo texto localizado e pressione Substituir.
 1. Se o texto de pesquisa for encontrado, ele será substituído pelo texto Substituir.
 
@@ -241,23 +241,23 @@ Uma lista é um grupo de conteúdo relacionado que pode ser usado em um modelo d
    * **Nome:** O nome exclusivo da lista. Não pode haver dois ativos (texto, condição ou lista) em nenhum estado com o mesmo nome. No campo Nome, você pode inserir apenas caracteres, números e hifens do idioma inglês. O campo Nome é preenchido automaticamente com o valor no campo Título. Os caracteres especiais, espaços, números e caracteres que não estão em inglês inseridos no campo Título são substituídos por hifens no campo Nome. Embora o valor no campo Título seja copiado automaticamente para o Nome, você pode editar o valor.
    * **Descrição (opcional)**: digite uma descrição do ativo.
    * **Dicionário de dados (opcional)**: Opcionalmente, selecione o dicionário de dados ao qual deseja se conectar. Somente ativos que usam o mesmo dicionário de dados que a lista, ou ativos que não têm um dicionário de dados atribuído, podem ser adicionados à lista. Atribuir um dicionário de dados a uma lista facilita que a pessoa que cria um modelo de correspondência encontre a lista apropriada.
-   * **Tags (opcional)**: selecione as tags a serem aplicadas. Você também pode digitar o nome de uma nova tag e criá-la. (A nova tag é criada ao tocar em **Salvar**.)
+   * **Tags (opcional)**: selecione as tags a serem aplicadas. Você também pode digitar o nome de uma nova tag e criá-la. (A nova tag é criada ao selecionar **Salvar**.)
 
-1. Toque **Próxima**.
-1. Toque **Adicionar ativo**.
-1. Para adicionar ativos à lista, selecione-os na página Selecionar ativos e toque em **Concluído**.
+1. Selecione **Próximo**.
+1. Selecionar **Adicionar ativo**.
+1. Para adicionar ativos à lista, selecione-os na página Selecionar ativos e selecione **Concluído**.
 
    ![Selecionar ativos para adicionar à lista](assets/selectassets.png)
 
 1. Os ativos são adicionados à página Itens de lista.
-Para alterar a ordem dos ativos na lista, toque e segure o ícone de setas ( ![arrastar e soltar](assets/dragndrop.png) ) e arrastar e soltar. Quando o usuário abre um modelo de correspondência na interface do usuário Criar correspondência, o conteúdo é montado na ordem definida aqui.
+Para alterar a ordem dos ativos na lista, selecione e mantenha pressionado o ícone de setas ( ![arrastar e soltar](assets/dragndrop.png) ) e arrastar e soltar. Quando o usuário abre um modelo de correspondência na interface do usuário Criar correspondência, o conteúdo é montado na ordem definida aqui.
 
    ![Reordenar e configurar ativos em uma lista](assets/listitems.png)
 
 1. Você pode selecionar as seguintes opções para especificar como a lista se comporta na interface do usuário do CCR:
 
-   * **Acesso à biblioteca**: para ativar o acesso à biblioteca para adicionar ativos, toque em Acesso à biblioteca. Quando o Acesso à biblioteca está ativado, o ajustador de declarações pode adicionar mais conteúdo à lista. Caso contrário, o Ajustador de Declarações estará limitado ao conteúdo definido para a lista.
-   * **Bloquear ordem**: para bloquear a ordem dos ativos na lista de modo que o Ajuste de Declarações não possa alterar a ordem, toque em Bloquear ordem. Se você não selecionar esta opção, o Ajuste de Reivindicações poderá alterar a ordem dos itens da lista.
+   * **Acesso à biblioteca**: para ativar o acesso à biblioteca para adicionar ativos, selecione Acesso à biblioteca. Quando o Acesso à biblioteca está ativado, o ajustador de declarações pode adicionar mais conteúdo à lista. Caso contrário, o Ajustador de Declarações estará limitado ao conteúdo definido para a lista.
+   * **Bloquear ordem**: para bloquear a ordem dos ativos na lista de modo que o Ajuste de Reivindicações não possa alterar a ordem, selecione Bloquear Ordem. Se você não selecionar esta opção, o Ajuste de Reivindicações poderá alterar a ordem dos itens da lista.
 
    * **Adicionar marcadores**: use essa opção para aplicar um estilo de marcador ou numeração ao módulo. Você pode usar um estilo de lista pré-criado ou um personalizado. Você também pode especificar o texto a ser exibido antes e depois de cada um dos itens da lista.
    * **Quebra de página**: selecione esta opção ( ![interrupção](assets/break.png)) para adicionar uma quebra de página entre o conteúdo da lista. Quando esta opção não está selecionada ( ![nobreak](assets/nobreak.png)), se o conteúdo da lista estiver estourando para a próxima página, a lista inteira será deslocada para a próxima página em vez de quebrar na página entre a lista.
@@ -275,7 +275,7 @@ Para alterar a ordem dos ativos na lista, toque e segure o ícone de setas ( ![a
    * **Ignorar estilo de lista:** Se a opção &#39;Numeração composta&#39; estiver desmarcada, a opção &#39;Ignorar estilo de lista&#39; será ativada. Essa seleção ignora o próprio estilo da Lista aninhada e a numeração continua a partir da Lista externa. Portanto, os módulos da lista aninhada são tratados como parte da própria lista externa, desconsiderando quaisquer estilos especificados na Lista aninhada. Se a opção Ignorar estilo de lista estiver desmarcada em uma Lista aninhada, os módulos que fazem parte dessa Lista aninhada terão seu próprio estilo de numeração.
    * **Manter com o próximo:** Define a quebra de página dos ativos contidos em uma lista. Se você definir a propriedade Manter com o próximo de um ativo de uma lista como **Ligado**, esse ativo e o próximo ativo permanecem na mesma página. Isso implica que o conteúdo do ativo selecionado e do próximo ativo não quebrarão entre páginas.
 
-1. Toque **Salvar**.
+1. Selecione **Salvar**.
 
 ### Práticas recomendadas/dicas e truques {#best-practices-tips-and-tricks}
 
@@ -313,25 +313,25 @@ O Editor de condições permite especificar uma condição padrão. Se o valor d
    * **Nome:** O nome exclusivo da condição. Não pode haver dois ativos (texto, condição ou lista) em nenhum estado com o mesmo nome. No campo Nome, você pode inserir apenas caracteres, números e hifens do idioma inglês. O campo Nome é preenchido automaticamente com base no campo Título. Os caracteres especiais, espaços, números e caracteres que não estão em inglês inseridos no campo Título são substituídos por hifens no campo Nome. Embora o valor no campo Título seja copiado automaticamente para o Nome, você pode editar o valor.
    * **Descrição (opcional)** Digite uma descrição da condição.
    * **Dicionário de dados (opcional)**: Opcionalmente, selecione o dicionário de dados ao qual deseja se conectar. Somente os ativos que usam o mesmo dicionário de dados que a condição ou os ativos que não têm um dicionário de dados atribuído podem ser adicionados à lista. Atribuir um dicionário de dados a uma lista facilita para a pessoa que está criando um modelo de correspondência encontrar a condição apropriada.
-   * **Tags (opcional)**: como opção, selecione as tags a serem aplicadas. Você também pode digitar o nome de uma nova tag e criá-la. (A nova tag é criada ao tocar em **Salvar**.)
+   * **Tags (opcional)**: como opção, selecione as tags a serem aplicadas. Você também pode digitar o nome de uma nova tag e criá-la. (A nova tag é criada ao selecionar **Salvar**.)
 
-1. Toque **Próxima**.
-1. Toque **Adicionar ativo**.
-1. Para adicionar um ativo à Condição, selecione-o na página Selecionar ativos e toque em **Concluído**. Os ativos são adicionados ao painel Expressão.
+1. Selecione **Próximo**.
+1. Selecionar **Adicionar ativo**.
+1. Para adicionar um ativo à Condição, selecione-o na página Selecionar ativos e selecione **Concluído**. Os ativos são adicionados ao painel Expressão.
 1. Você pode selecionar as seguintes opções para especificar como a condição se comporta no tempo de execução:
 
    * **Desativar a avaliação de resultados múltiplos\Ativar a avaliação de resultados múltiplos**: quando essa opção está ativada (aparece como &quot;Ativar várias...&quot;), todas as condições são avaliadas e o resultado é a soma de todas as condições verdadeiras. Se essa opção estiver desativada (aparecer como &quot;Desativar várias...&quot;), então somente a primeira condição que for considerada verdadeira será avaliada e se tornará a saída da condição.
    * **Quebra de página**: selecione esta opção ( ![interrupção](assets/break.png)) para adicionar uma quebra de página entre os módulos das condições. Quando esta opção não está selecionada ( ![nobreak](assets/nobreak.png)), se uma condição estiver transbordando para a próxima página, a condição inteira será deslocada para a próxima página em vez de quebrar na página entre a condição.
 
-1. Para alterar a ordem dos ativos na condição, toque e segure o ícone de setas ( ![arrastar e soltar](assets/dragndrop.png) ) e arrastar e soltar. Quando o usuário abre um modelo de correspondência na interface do usuário Criar correspondência, o conteúdo é montado na ordem definida aqui.
-1. Toque **Excluir** para excluir a linha. Se você tocar em Excluir na linha padrão, apenas as informações do ativo serão apagadas.
-1. Toque **Copiar** para duplicar uma linha.
-1. Toque **Editar** para alterar o ativo ou editar a expressão.
+1. Para alterar a ordem dos ativos na condição, selecione e mantenha pressionado o ícone de setas ( ![arrastar e soltar](assets/dragndrop.png) ) e arrastar e soltar. Quando o usuário abre um modelo de correspondência na interface do usuário Criar correspondência, o conteúdo é montado na ordem definida aqui.
+1. Selecionar **Excluir** para excluir a linha. Se você selecionar Excluir na linha padrão, apenas as informações do ativo serão apagadas.
+1. Selecionar **Copiar** para duplicar uma linha.
+1. Selecionar **Editar** para alterar o ativo ou editar a expressão.
 
    Além disso:
 
-   * Para atualizar o ativo, toque no ícone de pasta na coluna Ativo.
-   * Para abrir o Construtor de expressões para inserir uma expressão, toque no ícone de pasta na coluna Expressão. Para obter mais informações sobre o Construtor de expressões, consulte [Construtor de expressões](/help/forms/using/expression-builder.md).
+   * Para atualizar o ativo, selecione o ícone de pasta na coluna Ativo.
+   * Para abrir o Construtor de expressões para inserir uma expressão, selecione o ícone de pasta na coluna Expression. Para obter mais informações sobre o Construtor de expressões, consulte [Construtor de expressões](/help/forms/using/expression-builder.md).
 
 ### Práticas recomendadas/dicas e truques {#best-practices-tips-and-tricks-1}
 
@@ -388,14 +388,14 @@ Considere os seguintes pontos ao criar tabelas:
    * cabeçalho e rodapé da coluna adicional
    * proporção de largura para cada coluna
 
-Você pode aninhar fragmentos em uma letra. Isso implica que você pode adicionar um fragmento em um fragmento. A solução de Gerenciamento de correspondência aceita até quatro níveis de aninhamento em uma correspondência: **Carta**->**Fragmento**->**Fragmento**->**Fragmento**->**Fragmento.**
+Você pode aninhar fragmentos em uma letra. Isso implica que você pode adicionar um fragmento em um fragmento. A solução de Gerenciamento de correspondência aceita até quatro níveis de aninhamento em uma correspondência: **Carta *>*Fragmento *>*Fragmento *>*Fragmento *>*Fragmento.**
 
 Para obter um exemplo detalhado do uso de tabelas estáticas e dinâmicas em fragmentos de layout, consulte [Exemplo com arquivos de amostra: uso de tabelas estáticas e dinâmicas em uma correspondência de](#examplewithsamplefiles).
 
 ### Criação de um fragmento de layout {#creating-a-layout-fragment}
 
 1. Selecionar **Criar** > **Fragmento do layout**.
-1. O Gerenciamento de correspondência exibe os XDPs disponíveis. Selecione o XDP no qual deseja basear o fragmento de layout e toque em **Próxima**.
+1. O Gerenciamento de correspondência exibe os XDPs disponíveis. Selecione o XDP no qual deseja basear o fragmento de layout e selecione **Próxima**.
 1. Especifique as seguintes informações para o layout:
 
    * **Título (opcional):** Insira o título do fragmento de layout. O título não precisa ser exclusivo e pode ter caracteres especiais e caracteres que não estejam em inglês. Os fragmentos de layout são referenciados por seus títulos (quando disponíveis), como em miniaturas e propriedades de ativos.
@@ -403,7 +403,7 @@ Para obter um exemplo detalhado do uso de tabelas estáticas e dinâmicas em fra
    * **Descrição (opcional)**: descrição exibida na lista da interface do usuário Gerenciar ativos.
    * **Tags (opcional)**: como opção, selecione as tags a serem aplicadas à condição. Você também pode digitar o nome de uma nova tag e criá-la.
 
-1. Toque no **Tabela** e especifique as seguintes informações para o layout:
+1. Selecione o **Tabela** e especifique as seguintes informações para o layout:
 
    * **Configuração para**: selecione a tabela que está sendo configurada. Como um sufixo para o nome da tabela na lista suspensa é (Estático) se a tabela for estática, ou (Dinâmico) se a tabela for dinâmica. As tabelas estáticas contêm um número fixo de linhas. As tabelas estáticas podem conter áreas de destino e campos. Esses campos e área de destino não podem ser vinculados a DDEs repetitivos. Os dados vinculados às células da tabela determinam o número de linhas das tabelas dinâmicas.
 
@@ -419,7 +419,7 @@ Para obter um exemplo detalhado do uso de tabelas estáticas e dinâmicas em fra
 
    Para obter um exemplo detalhado do uso de tabelas estáticas e dinâmicas em fragmentos de layout, consulte [Exemplo com arquivos de amostra: uso de tabelas estáticas e dinâmicas em uma correspondência de](#examplewithsamplefiles).
 
-1. Toque **Salvar**.
+1. Selecione **Salvar**.
 
 ### Fazer upload de um XDP para o Gerenciamento de correspondência {#upload-an-xdp-to-correspondence-management}
 
@@ -433,7 +433,7 @@ Ao criar áreas de destino no Designer, é útil definir a associação padrão 
 
 Para definir a vinculação padrão:
 
-1. No Designer, toque em **Ferramentas** > **Opções** > **Associações de Dados** > **Vinculação de subformulário**.
+1. No Designer, selecione **Ferramentas** > **Opções** > **Associações de Dados** > **Vinculação de subformulário**.
 
 1. Na lista Associação padrão para novos subformulários, selecione **Sem associação de dados**.
 
@@ -548,7 +548,7 @@ Para obter mais informações sobre criação de layouts, consulte [Ajuda do Des
 Para criar rapidamente um fragmento de documento com propriedades e conteúdo semelhantes a um fragmento de documento existente, você pode copiá-lo e colá-lo.
 
 1. Na lista de fragmentos de documento, selecione um ou mais fragmentos de documento. A interface do usuário do exibe o ícone Copiar.
-1. Toque em Copiar. A interface exibe o ícone Colar. Você também pode optar por entrar em uma pasta antes de colar. Pastas diferentes podem conter ativos com os mesmos nomes. Para obter mais informações sobre pastas, consulte [Pastas e organização de ativos](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
-1. Toque em Colar. A caixa de diálogo Colar é exibida. Se você estiver copiando e colando os fragmentos de documento no mesmo local, o sistema atribuirá automaticamente nomes e um título às novas cópias de letras, mas você poderá editar os títulos e nomes das letras.
+1. Selecione Copiar. A interface exibe o ícone Colar. Você também pode optar por entrar em uma pasta antes de colar. Pastas diferentes podem conter ativos com os mesmos nomes. Para obter mais informações sobre pastas, consulte [Pastas e organização de ativos](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
+1. Selecione Colar. A caixa de diálogo Colar é exibida. Se você estiver copiando e colando os fragmentos de documento no mesmo local, o sistema atribuirá automaticamente nomes e um título às novas cópias de letras, mas você poderá editar os títulos e nomes das letras.
 1. Se necessário, edite o Título e o Nome com os quais deseja salvar a cópia do fragmento do documento.
-1. Toque em Colar. A cópia do fragmento do documento é criada.
+1. Selecione Colar. A cópia do fragmento do documento é criada.

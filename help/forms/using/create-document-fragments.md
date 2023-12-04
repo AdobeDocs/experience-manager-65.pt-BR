@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Interactive Communication
 exl-id: 81429735-cd52-4621-8dc2-10dd89df3052
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1674'
-ht-degree: 2%
+source-wordcount: '1653'
+ht-degree: 3%
 
 ---
 
@@ -68,16 +68,16 @@ Para criar variáveis para campos com a interface do usuário do agente como fon
 
    1. Selecionar **Modelo de dados do formulário** do **Modelo de dados** seção.
 
-   1. Selecionar **FDM_Create_First_IC** como o modelo de dados do formulário e toque em **Selecionar**.
+   1. Selecionar **FDM_Create_First_IC** como o modelo de dados do formulário e selecione **Selecionar**.
 
-   1. Toque **Próxima**.
+   1. Selecione **Próximo**.
 
-1. Selecione o **Variáveis** no painel esquerdo e toque em **Criar**.
+1. Selecione o **Variáveis** no painel esquerdo e selecione **Criar**.
 1. No **Criar variável** seção:
 
    1. Enter **Invoicenumber** como o nome da variável.
    1. Selecionar **String** como o tipo.
-   1. Toque em **Criar**.
+   1. Selecione **Criar**.
 
    ![Criar variável do tipo String](assets/variable_create_string_new.png)
 
@@ -132,16 +132,16 @@ Para criar variáveis para campos com a interface do usuário do agente como fon
 
    1. Selecionar **Modelo de dados do formulário** do **Modelo de dados** seção.
 
-   1. Selecionar **FDM_Create_First_IC** como o modelo de dados do formulário e toque em **Selecionar**.
+   1. Selecionar **FDM_Create_First_IC** como o modelo de dados do formulário e selecione **Selecionar**.
 
-   1. Toque **Próxima**.
+   1. Selecione **Próximo**.
 
-1. Selecione o **Variáveis** no painel esquerdo e toque em **Criar**.
+1. Selecione o **Variáveis** no painel esquerdo e selecione **Criar**.
 1. No **Criar variável** seção:
 
    1. Enter **Placesupply** como o nome da variável.
    1. Selecionar **String** como o tipo.
-   1. Toque em **Criar**.
+   1. Selecione **Criar**.
 
    Repita as etapas 4 e 5 para criar as seguintes variáveis:
 
@@ -195,16 +195,16 @@ Para criar variáveis para campos com a interface do usuário do agente como fon
 
    1. Selecionar **Modelo de dados do formulário** do **Modelo de dados** seção.
 
-   1. Selecionar **FDM_Create_First_IC** como o modelo de dados do formulário e toque em **Selecionar**.
+   1. Selecionar **FDM_Create_First_IC** como o modelo de dados do formulário e selecione **Selecionar**.
 
-   1. Toque **Próxima**.
+   1. Selecione **Próximo**.
 
-1. Selecione o **Variáveis** no painel esquerdo e toque em **Criar**.
+1. Selecione o **Variáveis** no painel esquerdo e selecione **Criar**.
 1. No **Criar variável** seção:
 
    1. Enter **Saldo anterior** como o nome da variável.
    1. Selecionar **Número** como tipo.
-   1. Toque em **Criar**.
+   1. Selecione **Criar**.
 
    Repita as etapas 4 e 5 para criar as seguintes variáveis:
 
@@ -262,9 +262,9 @@ Para criar texto estático e usar elementos de modelo de dados de formulário no
 
    1. Selecionar **Modelo de dados do formulário** do **Modelo de dados** seção.
 
-   1. Selecionar **FDM_Create_First_IC** como o modelo de dados do formulário e toque em **Selecionar**.
+   1. Selecionar **FDM_Create_First_IC** como o modelo de dados do formulário e selecione **Selecionar**.
 
-   1. Toque **Próxima**.
+   1. Selecione **Próximo**.
 
 1. Crie texto estático para os seguintes campos usando o painel direito:
 
@@ -293,7 +293,7 @@ Para criar texto estático e usar elementos de modelo de dados de formulário no
 
    ![Resumo de Encargos](assets/summary_charges_static_fdm_new.png)
 
-1. Selecione o texto no campo **Encargos de Serviços de Valor Agregado** linha e toque **Criar regra** para criar uma condição com base na qual a linha é exibida na Comunicação Interativa:
+1. Selecione o texto no campo **Encargos de Serviços de Valor Agregado** linha e selecione **Criar regra** para criar uma condição com base na qual a linha é exibida na Comunicação Interativa:
 1. No **Criar regra** janela pop-up:
 
    1. Selecionar **Variáveis e modelos de dados** e depois **faturas** > **encargos de chamada**.

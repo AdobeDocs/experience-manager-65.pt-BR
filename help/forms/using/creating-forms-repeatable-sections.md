@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
 feature: Adaptive Forms
 exl-id: f2abae0a-f7fd-4a39-bd8c-03492ce06fe9
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1139'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Você pode usar um dos seguintes métodos para criar painéis repetíveis:
 
 ## Usando o Instance Manager por meio de scripts  {#using-instance-manager-via-scripts-nbsp}
 
-1. No modo de edição, selecione um painel e toque em ![cmppr](assets/cmppr.png). Na barra lateral, em Propriedades, ative **Tornar o painel repetível**. Especifique valores para o **[!UICONTROL Máximo]** e **[!UICONTROL Mínimo]** campos.
+1. No modo de edição, selecione um painel e, em seguida, ![cmppr](assets/cmppr.png). Na barra lateral, em Propriedades, ative **Tornar o painel repetível**. Especifique valores para o **[!UICONTROL Máximo]** e **[!UICONTROL Mínimo]** campos.
 
    O campo Máximo especifica o número máximo de vezes que um painel pode aparecer na página. Você pode especificar -1 no campo Contagem máxima para permitir que o painel apareça por um número infinito de vezes.
 
@@ -40,7 +40,7 @@ Você pode usar um dos seguintes métodos para criar painéis repetíveis:
 
 1. O pai do painel, que deve ser repetido, deve conter os botões adicionar e excluir para gerenciar ocorrências dos painéis repetíveis. Execute as seguintes etapas para inserir botões no pai e ativar scripts nos botões:
 
-   1. Na barra lateral, arraste e solte um componente de botão no pai do painel. Selecione o componente e toque em ![edit-rules](assets/edit-rules.png). As regras do botão são abertas no editor de regras.
+   1. Na barra lateral, arraste e solte um componente de botão no pai do painel. Selecione o componente e selecione ![edit-rules](assets/edit-rules.png). As regras do botão são abertas no editor de regras.
    1. Na janela Editor de regras, clique em **Criar**.
 
       Selecionar **Editor visual** na linha Objetos de formulário e Funções.
@@ -100,8 +100,8 @@ Você pode usar um dos seguintes métodos para criar painéis repetíveis:
 
 Um painel tem várias opções de layout. A opção Layout para design do acordian tem suporte imediato para painéis repetíveis. Execute as seguintes etapas para o painel repetível com a opção Layout para design do acordian:
 
-1. No pai do painel a ser repetido, toque em ![cmppr](assets/cmppr.png). Você pode ver as propriedades na barra lateral. No **Layout** selecione **Acordeão**.
-1. Em um painel a ser repetido, toque em ![cmppr](assets/cmppr.png). Você pode ver as propriedades do painel na barra lateral. Ativar o **Tornar o painel repetível** e especifique o valor para a variável **Máximo** e **Mínimo** campos.
+1. No pai do painel a ser repetido, selecione ![cmppr](assets/cmppr.png). Você pode ver as propriedades na barra lateral. No **Layout** selecione **Acordeão**.
+1. Em um painel, que deve ser repetido, selecione ![cmppr](assets/cmppr.png). Você pode ver as propriedades do painel na barra lateral. Ativar o **Tornar o painel repetível** e especifique o valor para a variável **Máximo** e **Mínimo** campos.
 
    Agora, você pode usar o sinal de mais (+) e excluir ( ![delete-panel](assets/delete-panel.png)) para adicionar e remover os painéis.
 

@@ -11,9 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '4031'
+source-wordcount: '4024'
 ht-degree: 0%
 
 ---
@@ -186,7 +186,7 @@ Você pode ter permissão para adicionar, atualizar, excluir ou salvar quaisquer
 
 ### Salve seu trabalho sem concluir a tarefa {#save-your-work-without-completing-the-task}
 
-1. Em qualquer guia, toque em **Salvar**.
+1. Em qualquer guia, selecione **Salvar**.
 
    A caixa de diálogo Salvar como rascunho será exibida. O nome padrão do rascunho é o nome da tarefa do modelo de tarefa.
 
@@ -199,7 +199,7 @@ Você pode ter permissão para adicionar, atualizar, excluir ou salvar quaisquer
    >
    >Para obter mais informações, consulte Salvar rascunho periodicamente em [Gerenciamento de preferências](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
-1. Na caixa de diálogo Salvar como rascunho, especifique um nome exclusivo para a tarefa e toque em **OK**.
+1. No diálogo Salvar como rascunho, especifique um nome exclusivo para a tarefa e selecione **OK**.
 
    ![saveasdraftdialog_name](assets/saveasdraftdialog_name.png)
 

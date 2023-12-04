@@ -8,10 +8,10 @@ topic-tags: forms-app
 discoiquuid: c71c2a17-54f9-4c95-a90a-3c89d6d45721
 docset: aem65
 exl-id: ae7340c8-38cc-4b2b-ba17-22011471fd7d
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 5%
+source-wordcount: '896'
+ht-degree: 2%
 
 ---
 
@@ -22,12 +22,12 @@ O AEM Forms fornece o código-fonte completo do aplicativo AEM Forms. A origem c
 Para obter a origem do aplicativo AEM Forms, execute as seguintes etapas:
 
 1. Abra a [Distribuição de softwares](https://experience.adobe.com/downloads). Você precisa de uma Adobe ID para fazer logon na Distribuição de softwares.
-1. Clique em **[!UICONTROL Adobe Experience Manager]** disponível no menu de cabeçalho.
+1. Selecionar **[!UICONTROL Adobe Experience Manager]** disponível no menu de cabeçalho.
 1. No **[!UICONTROL Filtros]** seção:
    1. Selecionar **[!UICONTROL Forms]** do **[!UICONTROL Solução]** lista suspensa.
    2. Selecione a versão e o tipo do pacote. Você também pode usar a variável **[!UICONTROL Pesquisar downloads]** para filtrar os resultados.
-1. Toque no nome do pacote aplicável ao seu sistema operacional e selecione **[!UICONTROL Aceitar termos do EULA]** e toque em **[!UICONTROL Baixar]**.
-1. Abra [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) e clique em **[!UICONTROL Fazer upload de pacote]** para fazer upload do pacote.
+1. Selecione o nome do pacote aplicável ao seu sistema operacional e **[!UICONTROL Aceitar termos do EULA]** e selecione **[!UICONTROL Baixar]**.
+1. Abertura [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  e clique em **[!UICONTROL Fazer upload do pacote]** para carregar o pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
 1. Para baixar o arquivo de código-fonte, abra `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` no navegador.\
@@ -107,8 +107,6 @@ Execute as seguintes etapas para criar e implantar o aplicativo AEM Forms.
    1. Pasta de dependências
    1. Arquivo do PowerShell (extensão .ps1)
 
-
-
 ## Implantação de um aplicativo usando o Windows PowerShell {#deploying-an-app-using-windows-powershell}
 
 Há duas maneiras de instalar o aplicativo em um dispositivo Windows.
@@ -138,7 +136,7 @@ Para implantar o aplicativo:
 
 1. Em seu dispositivo, execute `gpedit.msc`.
 1. Navegue até **Configuração do computador > Modelos administrativos > Componente do Windows > Implantação do pacote de aplicativos**.
-1. Clique com o botão direito do mouse em **Permitir que todos os aplicativos confiáveis sejam instalados**.
+1. Clique com o botão direito do mouse **Permitir que todos os aplicativos confiáveis sejam instalados**.
 1. Clique em **Editar** e selecione **Ativado**.
 
 1. Clique em **OK**.

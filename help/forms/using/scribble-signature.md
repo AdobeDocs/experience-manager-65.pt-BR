@@ -12,9 +12,9 @@ discoiquuid: ecd7f538-9c24-48e7-8450-596851e99cff
 docset: aem65
 feature: Designer
 exl-id: 2025182f-195b-40d0-aee7-67669f55b964
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
@@ -73,6 +73,7 @@ Depois que um campo Rabiscar de assinatura é adicionado ao formulário e render
 Clicar no ícone de localização geográfica ao criar o rabisco faz com que as informações de localização geográfica e hora sejam incorporadas ao campo.
 
 >[!NOTE]
+>
 No iPad, por padrão, a incorporação de informações de geolocalização é obrigatória.
 
 No iPad, o ícone de geolocalização não é exibido por padrão e as informações de geolocalização são incorporadas automaticamente ao clicar **OK**.
@@ -96,11 +97,11 @@ Tocar ou clicar no campo Rabiscar abre a caixa de diálogo no modo somente leitu
 
 ### Selecionar o tamanho da Caneta {#selecting-pen-size}
 
-Clique em **Pincéis** ícone para exibir uma lista de tamanhos de caneta disponíveis. Clique ou toque em um tamanho de caneta para usar a caneta correspondente.
+Clique em **Pincéis** ícone para exibir uma lista de tamanhos de caneta disponíveis. Clique no tamanho da caneta para usar a caneta correspondente.
 
 ### Excluir assinaturas do formulário {#delete-signatures-from-the-form}
 
 Para excluir as assinaturas do formulário:
 
-* (Dispositivos móveis) Pressione o campo de assinatura e, na caixa de diálogo de confirmação, toque em **Sim**.
+* (Dispositivos móveis) Pressione o campo de assinatura e, na caixa de diálogo de confirmação, selecione **Sim**.
 * (Desktop) Passe o mouse sobre o campo de assinatura, clique no botão **Cancelar** e, na caixa de diálogo de confirmação, clique em **Sim**.

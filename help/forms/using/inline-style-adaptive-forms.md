@@ -10,16 +10,16 @@ discoiquuid: 21dec713-c76d-408b-baea-fc585377b429
 docset: aem65
 feature: Adaptive Forms
 exl-id: 67cfecb8-c31d-4192-904d-7bfaa1a31ea5
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 5%
+source-wordcount: '592'
+ht-degree: 4%
 
 ---
 
 # Estilo em linha de componentes de formulário adaptáveis {#inline-styling-of-adaptive-form-components}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -32,8 +32,8 @@ Você pode definir a aparência geral e o estilo de um formulário adaptável es
 
 Para adicionar estilos em linha a um componente:
 
-1. Abra o formulário no editor de formulários e altere o modo para o modo de estilo. Para alterar o modo para o modo de estilo, na barra de ferramentas da página, toque em ![tela suspensa](assets/canvas-drop-down.png) > **Estilo**.
-1. Selecione um componente na página e toque no botão editar ![botão editar](assets/edit-button.png). As propriedades de estilo são abertas na barra lateral.
+1. Abra o formulário no editor de formulários e altere o modo para o modo de estilo. Para alterar o modo para o modo de estilo, na barra de ferramentas da página, selecione ![tela suspensa](assets/canvas-drop-down.png) > **Estilo**.
+1. Selecione um componente na página e clique no botão editar ![botão editar](assets/edit-button.png). As propriedades de estilo são abertas na barra lateral.
 
    Você também pode selecionar componentes da árvore de hierarquia de formulários na barra lateral. A árvore de hierarquia de formulários está disponível como Objetos de formulário na barra lateral.
 
@@ -51,7 +51,7 @@ Para adicionar estilos em linha a um componente:
    * Avançado (permite escrever CSS personalizado para o componente)
 
 1. Da mesma forma, é possível aplicar estilos a outras partes de um componente, como Widget, Legenda e Ajuda.
-1. Toque **Concluído** para confirmar as alterações ou **Cancelar** para descartar as alterações.
+1. Selecionar **Concluído** para confirmar as alterações ou **Cancelar** para descartar as alterações.
 
 ## Exemplo: estilos em linha para um componente de campo {#example-inline-styles-for-a-field-component}
 

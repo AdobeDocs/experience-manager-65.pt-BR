@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: 4d318908-c724-4582-a82b-6e9b1c55705b
 feature: Forms Portal
 exl-id: 572194b7-063b-4c38-af43-aba78e9c51c6
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 2%
+source-wordcount: '332'
+ht-degree: 5%
 
 ---
 
@@ -30,15 +30,15 @@ Pronto para uso, os componentes do portal de formulários não estão disponíve
 
 1. Para as páginas que usam um modelo estático, execute as seguintes etapas:
 
-   1. No cabeçalho da página, toque em ![tela suspensa](assets/canvas-drop-down.png) > **Design** para abrir a página no modo Design.
-   1. Toque em qualquer componente (com uma borda azul) e toque em ![nível de campo](assets/field-level.png) para selecionar o sistema de parágrafo que contém o componente atual.
-   1. No sistema de parágrafos, toque em ![settings_icon](assets/settings_icon.png) para abrir a caixa de diálogo Editar para o sistema de parágrafos.
-   1. Na lista de **[!UICONTROL Componentes permitidos]**, ativar caixas de seleção para **[!UICONTROL Serviços de documento]** e **[!UICONTROL Predicados de serviços de documento]** componentes. Toque **[!UICONTROL OK]**.
+   1. No cabeçalho da página, selecione ![tela suspensa](assets/canvas-drop-down.png) > **Design** para abrir a página no modo Design.
+   1. Selecione qualquer componente (com uma borda azul) e selecione ![nível de campo](assets/field-level.png) para selecionar o sistema de parágrafo que contém o componente atual.
+   1. No sistema de parágrafos, selecione ![settings_icon](assets/settings_icon.png) para abrir a caixa de diálogo Editar para o sistema de parágrafos.
+   1. Na lista de **[!UICONTROL Componentes permitidos]**, ativar caixas de seleção para **[!UICONTROL Serviços de documento]** e **[!UICONTROL Predicados de serviços de documento]** componentes. Selecionar **[!UICONTROL OK]**.
 
 1. Para as páginas que usam um modelo dinâmico, execute as seguintes etapas:
 
-   1. No cabeçalho da página, toque em ![propriedades](assets/properties.png) > **Editar modelo** para abrir o modelo da página.
-   1. Toque **Contêiner de layout** e toque em ![GerenciamentoDeFeeds](/help/forms/using/assets/feedmanagement.png). No **Componentes permitidos** , ative a opção **Predicados de serviços de documento e serviços de documento** opções e toque em ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. No cabeçalho da página, selecione ![propriedades](assets/properties.png) > **Editar modelo** para abrir o modelo da página.
+   1. Selecionar **Contêiner de layout** e selecione ![GerenciamentoDeFeeds](/help/forms/using/assets/feedmanagement.png). No **Componentes permitidos** , ative a opção **Predicados de serviços de documento e serviços de documento** e selecione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 >[!NOTE]
 >

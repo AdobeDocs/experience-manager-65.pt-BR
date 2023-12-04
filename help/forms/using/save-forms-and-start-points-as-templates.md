@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: e0df2f85-664a-47b3-a8c5-e986b975d421
 exl-id: b97175fd-cc3d-457a-af11-1f8c83192eb7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -24,14 +24,14 @@ ht-degree: 0%
 Execute as seguintes etapas para criar um template:
 
 1. Abra um formulário e selecione ou preencha os campos que têm valores quase idênticos toda vez que você o usa. É possível incluir um anexo com o modelo que você normalmente adiciona ao preencher o formulário.
-1. Toque no **Salvar como modelo** ![save_as_template](assets/save_as_template.png)ícone. Uma caixa de diálogo para especificar o nome do modelo é exibida.
-1. Especifique o nome do modelo e toque em **Salvar**. O modelo aparece na pasta de modelo.
+1. Selecione o **Salvar como modelo** ![save_as_template](assets/save_as_template.png)ícone. Uma caixa de diálogo para especificar o nome do modelo é exibida.
+1. Especifique o nome do modelo e selecione **Salvar**. O modelo aparece na pasta de modelo.
 
-   Se existir um modelo com o mesmo nome, será exibida uma caixa de diálogo para confirmar a substituição do modelo existente. Para substituir o modelo existente pelo novo modelo, toque em **Continuar** ou para salvar o modelo com um nome diferente, toque em **Cancelar**.
+   Se existir um modelo com o mesmo nome, será exibida uma caixa de diálogo para confirmar a substituição do modelo existente. Para substituir o modelo existente pelo novo modelo, selecione **Continuar** ou para salvar o modelo com um nome diferente, selecione **Cancelar**.
 
 Agora, você pode abrir o modelo salvo. Toda vez que um modelo é aberto, um novo formulário ou tarefa é criada, e o formulário exibe os dados e opções salvos. Com modelos, é possível editar os dados pré-preenchidos, adicionar um anexo, salvar como rascunho, enviar a tarefa ou criar outro modelo usando-a. Os modelos são específicos para dispositivos móveis e não são sincronizados com o servidor do Adobe Experience Manager Forms.
 
-Você também pode excluir um modelo se ele não for mais necessário. Para excluir um modelo, navegue até a pasta modelos, toque nas reticências e toque em **Excluir modelo**.
+Você também pode excluir um modelo se ele não for mais necessário. Para excluir um modelo, navegue até a pasta de modelos, selecione as reticências e selecione **Excluir modelo**.
 
 >[!NOTE]
 >

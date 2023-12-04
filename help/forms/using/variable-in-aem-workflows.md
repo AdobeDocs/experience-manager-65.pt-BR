@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2080'
 ht-degree: 1%
 
 ---
@@ -56,8 +56,8 @@ Você precisa [Pacote complementar do AEM Forms](https://helpx.adobe.com/aem-for
 Execute as seguintes etapas para criar uma variável:
 
 1. Em uma instância do AEM, navegue até Ferramentas ![Ferramentas](/help/forms/using/assets/hammer.png) > Workflow > Modelos.
-1. Toque **[!UICONTROL Criar]** e especifique o título e um nome opcional para o modelo de workflow. Selecione o modelo e toque em **[!UICONTROL Editar]**.
-1. Toque no ícone de variáveis disponível no sidekick do modelo de fluxo de trabalho e toque em **[!UICONTROL Adicionar variável]**.
+1. Selecionar **[!UICONTROL Criar]** e especifique o título e um nome opcional para o modelo de workflow. Selecione o modelo e selecione **[!UICONTROL Editar]**.
+1. Selecione o ícone de variáveis disponível no sidekick do modelo de fluxo de trabalho e selecione **[!UICONTROL Adicionar variável]**.
 
    ![Adicionar variável](assets/variables_add_variable_new.png)
 
@@ -69,7 +69,7 @@ Execute as seguintes etapas para criar uma variável:
    * Modelo de dados de formulário - especifique um caminho de Modelo de dados de formulário.
    * ArrayList - Especifique um subtipo para a coleção.
 
-1. Especifique uma descrição opcional para a variável e toque em ![done_icon](assets/done_icon.png) para salvar as alterações. A variável é exibida na lista disponível no painel esquerdo.
+1. Especifique uma descrição opcional para a variável e selecione ![done_icon](assets/done_icon.png) para salvar as alterações. A variável é exibida na lista disponível no painel esquerdo.
 
 Ao criar variáveis, considere as seguintes práticas:
 
@@ -102,11 +102,11 @@ Você também pode atualizar elementos específicos de uma variável do tipo JSO
 
 Execute as seguintes etapas para adicionar o mapeamento entre variáveis:
 
-1. Na página de edição do fluxo de trabalho, toque no ícone Etapas disponível no sidekick do modelo de fluxo de trabalho.
-1. Arraste e solte a variável **Definir variável** etapa para o editor de workflow, toque na etapa e selecione ![configure_icon](assets/configure_icon.png) (Configurar).
+1. Na página de edição do workflow, selecione o ícone Etapas disponível no sidekick do modelo de workflow.
+1. Arraste e solte a variável **Definir variável** etapa para o editor de workflow, selecione a etapa e selecione ![configure_icon](assets/configure_icon.png) (Configurar).
 1. Na caixa de diálogo Definir variável, selecione **[!UICONTROL Mapeamento]** > **[!UICONTROL Adicionar mapeamento]**.
 1. No **Mapear variável** , selecione a variável para armazenar dados, selecione o modo de mapeamento e especifique um valor para armazenar na variável. Os modos de mapeamento variam de acordo com o tipo de variável.
-1. Mapeie mais variáveis para criar uma expressão significativa. Toque ![done_icon](assets/done_icon.png) para salvar as alterações.
+1. Mapeie mais variáveis para criar uma expressão significativa. Selecionar ![done_icon](assets/done_icon.png) para salvar as alterações.
 
 ### Exemplo 1: consultar uma variável XML para definir o valor de uma variável de string {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -175,7 +175,7 @@ Neste exemplo, antes de definir a expressão de roteamento, use [exemplo 2](../.
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
-Da mesma forma, selecione um caminho de script externo ou especifique o script ECMA para expressões de roteamento para avaliar a ramificação ativa. Toque **[!UICONTROL Renomear ramificação]** para especificar um nome alternativo para a ramificação.
+Da mesma forma, selecione um caminho de script externo ou especifique o script ECMA para expressões de roteamento para avaliar a ramificação ativa. Selecionar **[!UICONTROL Renomear ramificação]** para especificar um nome alternativo para a ramificação.
 
 Para obter mais exemplos, consulte [Criar um modelo de fluxo de trabalho](../../forms/using/aem-forms-workflow.md#create-a-workflow-model).
 
@@ -287,9 +287,9 @@ Os dados processados usando o Forms Workflow podem conter dados confidenciais do
 
 ## Editar uma variável {#edit-a-variable}
 
-1. Na página Editar fluxo de trabalho, toque no ícone Variáveis disponível no sidekick do modelo de fluxo de trabalho. A seção Variáveis, no painel esquerdo, exibe todas as variáveis existentes.
-1. Toque no ![editar](assets/edit.png) (Editar) ícone ao lado do nome da variável que você deseja editar.
-1. Edite as informações da variável e toque ![done_icon](assets/done_icon.png) para salvar as alterações. Não é possível editar o **[!UICONTROL Nome]** e **[!UICONTROL Tipo]** para uma variável.
+1. Na página Editar workflow, selecione o ícone Variáveis disponível no sidekick do modelo de workflow. A seção Variáveis, no painel esquerdo, exibe todas as variáveis existentes.
+1. Selecione o ![editar](assets/edit.png) (Editar) ícone ao lado do nome da variável que você deseja editar.
+1. Edite as informações da variável e selecione ![done_icon](assets/done_icon.png) para salvar as alterações. Não é possível editar o **[!UICONTROL Nome]** e **[!UICONTROL Tipo]** para uma variável.
 
 ## Excluir uma variável {#delete-a-variable}
 
@@ -297,9 +297,9 @@ Antes de excluir a variável, remova todas as referências da variável do fluxo
 
 Execute as seguintes etapas para excluir uma variável:
 
-1. Na página Editar fluxo de trabalho, toque no ícone Variáveis disponível no sidekick do modelo de fluxo de trabalho. A seção Variáveis, no painel esquerdo, exibe todas as variáveis existentes.
-1. Toque no ícone Excluir ao lado do nome da variável que você deseja excluir.
-1. Toque ![done_icon](assets/done_icon.png) para confirmar e excluir a variável.
+1. Na página Editar workflow, selecione o ícone Variáveis disponível no sidekick do modelo de workflow. A seção Variáveis, no painel esquerdo, exibe todas as variáveis existentes.
+1. Selecione o ícone Excluir ao lado do nome da variável que você deseja excluir.
+1. Selecionar ![done_icon](assets/done_icon.png) para confirmar e excluir a variável.
 
 ## Referências {#references}
 

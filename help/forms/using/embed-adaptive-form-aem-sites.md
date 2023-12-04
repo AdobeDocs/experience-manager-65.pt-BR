@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author, interactive-communications
 feature: Adaptive Forms
 exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1150'
 ht-degree: 1%
 
 ---
@@ -56,7 +56,7 @@ Para incorporar um formulário adaptável ou a comunicação interativa usando o
    >
    >Não há suporte para vários componentes do AEM Forms Container em uma página.
 
-1. Toque no componente de Contêiner do AEM Forms incorporado na página Sites e toque em ![settings_icon](assets/settings_icon.png) na barra de ações. A variável **[!UICONTROL Editar contêiner do AEM Forms]** será aberta.
+1. Selecione o componente de Contêiner do AEM Forms incorporado na página Sites e selecione ![settings_icon](assets/settings_icon.png) na barra de ações. A variável **[!UICONTROL Editar contêiner do AEM Forms]** será aberta.
 1. Na caixa de diálogo Editar contêiner do AEM Forms, especifique o seguinte.
 
    * **Tipo de ativo:** Selecione o tipo de ativo a ser incorporado. As opções são o formulário adaptável e a comunicação interativa
@@ -88,7 +88,7 @@ A página de sites do AEM mantém uma referência ao formulário adaptável e à
 Para modificar qualquer configuração ou propriedade do formulário adaptável incorporado e da comunicação interativa, execute um dos procedimentos a seguir.
 
 * Abra o formulário original em formulários adaptáveis ou comunicação interativa nos respectivos editores e modifique-os.
-* Toque no formulário adaptável ou na comunicação interativa na página do site no modo de edição e toque em **[!UICONTROL Editar em uma nova janela]**. O formulário original é aberto no modo de edição que você pode modificar.
+* Selecione o formulário adaptável ou a comunicação interativa na página do site no modo de edição e selecione **[!UICONTROL Editar em uma nova janela]**. O formulário original é aberto no modo de edição que você pode modificar.
 
 >[!NOTE]
 >

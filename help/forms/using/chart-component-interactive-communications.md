@@ -11,10 +11,10 @@ discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 feature: Interactive Communication
 exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2608'
-ht-degree: 2%
+source-wordcount: '2621'
+ht-degree: 1%
 
 ---
 
@@ -28,13 +28,13 @@ Ao criar uma Comunicação interativa, você pode adicionar gráficos para repre
 
 Execute as seguintes etapas para adicionar e configurar um gráfico em uma comunicação interativa:
 
-1. Toque **Componentes** da comunicação interativa.
+1. Selecionar **Componentes** da comunicação interativa.
 1. Arraste e solte a **Gráfico** componente a um dos seguintes componentes:
 
    * Canal de impressão: área de destino ou campo de imagem
    * Canal da Web: painel ou área de direcionamento
 
-1. Toque no componente de gráfico no editor de comunicação interativa e selecione **[!UICONTROL Configurar (]** ![configure_icon](assets/configure_icon.png)) na barra de ferramentas Componente.
+1. Selecione o componente do gráfico no editor de comunicação interativa e selecione **[!UICONTROL Configurar (]** ![configure_icon](assets/configure_icon.png)) na barra de ferramentas Componente.
 
    As Propriedades do Gráfico são exibidas no painel esquerdo.
 
@@ -47,13 +47,13 @@ Execute as seguintes etapas para adicionar e configurar um gráfico em uma comun
    Propriedades básicas de um gráfico de tipo de linha no canal da Web
 
 1. Configure o [propriedades do gráfico](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties) com base no tipo de canal.
-1. (Somente canal de impressão) Na caixa **[!UICONTROL Configurações do agente]**, especifique se é obrigatório que o agente use esse gráfico. Se i **[!UICONTROL É Obrigatório Que O Agente Use Este Gráfico]** não estiver selecionada, o agente poderá tocar no ícone de olho do gráfico na caixa **[!UICONTROL Conteúdo]** guia da Interface do usuário do agente para mostrar ou ocultar o gráfico.
+1. (Somente canal de impressão) Na caixa **[!UICONTROL Configurações do agente]**, especifique se é obrigatório que o agente use esse gráfico. Se i **[!UICONTROL É Obrigatório Que O Agente Use Este Gráfico]** não estiver selecionada, o agente poderá selecionar o ícone de olho para o gráfico no **[!UICONTROL Conteúdo]** guia da Interface do usuário do agente para mostrar ou ocultar o gráfico.
 
    ![chart_agentproperties](assets/chart_agentproperties.png)
 
-1. Toque ![done_icon](assets/done_icon.png) para salvar as propriedades do gráfico.
+1. Selecionar ![done_icon](assets/done_icon.png) para salvar as propriedades do gráfico.
 
-   Toque **[!UICONTROL Visualizar]** para exibir a aparência e os dados associados ao gráfico. Toque **[!UICONTROL Editar]** para reconfigurar as propriedades do gráfico.
+   Selecionar **[!UICONTROL Visualizar]** para exibir a aparência e os dados associados ao gráfico. Selecionar **[!UICONTROL Editar]** para reconfigurar as propriedades do gráfico.
 
 ## Configurar propriedades do gráfico {#configure-chart-properties}
 
@@ -64,7 +64,7 @@ Configure as seguintes propriedades ao criar gráficos para canais de impressão
   <tr>
    <td>Texto</td>
    <td>Descrição</td>
-   <td>Tipo de canal</td>
+   <td>Tipo de Canal</td>
   </tr>
   <tr>
    <td>Nome</td>
@@ -169,7 +169,7 @@ Configure as seguintes propriedades ao criar gráficos para canais de impressão
      <li><strong>Ponto de referência &gt; Tipo de vínculo: </strong>Disponível para gráficos de Quadrante a<strong> </strong>especifique o tipo de ligação para o ponto de referência. Use texto estático ou a propriedade do objeto de modelo de dados para definir o valor do ponto de referência.</li>
      <li><strong>Ponto de referência &gt; Eixo X: </strong>Disponível para gráficos de Quadrante se você selecionar <span class="uicontrol">Estático</code> na lista suspensa Tipo de vinculação para especificar o valor do eixo X para o ponto de referência.</li>
      <li><strong>Ponto de referência &gt; eixo Y: </strong>Disponível para gráficos de Quadrante se você selecionar <span class="uicontrol">Estático</code> na lista suspensa Tipo de vinculação para especificar o valor do eixo Y para o ponto de referência.</li>
-     <li><strong>Ponto de referência &gt; Objeto de modelo de dados da série: </strong>Disponível para gráficos de várias séries de Quadrantes, se você selecionar <span class="uicontrol">Objeto de modelo de dados</code> na lista suspensa Tipo de vínculo. Defina a propriedade do objeto de modelo de dados de formulário para identificar o conjunto do ponto de referência. </li>
+     <li><strong>Ponto de referência &gt; Objeto de modelo de dados da série: </strong>Disponível para gráficos de várias séries de Quadrantes, se você selecionar <span class="uicontrol">Objeto de modelo de dados</code> na lista suspensa Tipo de vínculo. Defina a propriedade do objeto de modelo de dados de formulário para identificar a série do ponto de referência. </li>
      <li><strong>Ponto de referência &gt; Valor do objeto de modelo de dados da série: </strong>Disponível para gráficos de várias séries de Quadrantes, se você selecionar <span class="uicontrol">Objeto de modelo de dados</code> na lista suspensa Tipo de vínculo. Use a propriedade do objeto de modelo de dados de formulário para a série e o valor definido neste campo para identificar a série do ponto de referência.</li>
      <li><strong>Ponto de referência &gt; Objeto de modelo de dados do ponto de referência: </strong>Disponível para gráficos de Quadrante se você selecionar <span class="uicontrol">Objeto de modelo de dados</code> na lista suspensa Tipo de vínculo. Defina uma propriedade do objeto de modelo de dados de formulário que seja semelhante às propriedades representadas no eixo X e no eixo Y. Além disso, para várias séries, defina uma propriedade do objeto de modelo de dados que seja uma entidade secundária da propriedade do objeto de modelo de dados definida para a série.</li>
      <li><strong>Ponto de referência &gt; Valor do objeto de modelo de dados do ponto de referência: </strong>Disponível para gráficos de Quadrante se você selecionar <span class="uicontrol">Objeto de modelo de dados</code> na lista suspensa Tipo de vínculo. Use a propriedade do objeto de modelo de dados de formulário para o ponto de referência e o valor definido neste campo para identificar o ponto de referência do gráfico.<br /> <strong>Rótulos do quadrante &gt; Parte superior esquerda:</strong> Disponível para gráficos de Quadrante para especificar o nome do quadrante superior esquerdo.</li>

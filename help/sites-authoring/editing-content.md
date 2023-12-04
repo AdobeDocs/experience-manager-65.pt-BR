@@ -7,10 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3016'
-ht-degree: 48%
+source-wordcount: '3015'
+ht-degree: 46%
 
 ---
 
@@ -191,7 +191,7 @@ Isso é válido para os seguintes tipos de ativos (alguns dependem do sistema de
   </tr>
   <tr>
    <td>Fragmento de conteúdo</td>
-   <td>Fragmento de conteúdo<br /> </td>
+   <td>Fragmento do conteúdo<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -204,7 +204,7 @@ Para criar um componente arrastando um dos tipos de ativos acima:
 
 1. Certifique-se de que a página está no modo de [**edição**](/help/sites-authoring/author-environment-tools.md#page-modes).
 1. Abra o [navegador de ativos](/help/sites-authoring/author-environment-tools.md#assets-browser).
-1. Arraste o ativo desejado para a posição desejada. O [espaço reservado do componente](#component-placeholder) mostra onde o componente está posicionado.
+1. Arraste o ativo desejado para a posição desejada. A variável [espaço reservado do componente](#component-placeholder) mostra onde o componente está posicionado.
 
    Um componente, apropriado para o tipo de ativo, será criado nesse local e conterá o ativo selecionado.
 
@@ -368,7 +368,7 @@ Por exemplo, o componente de **Texto:**
 
 Para mover um componente de parágrafo:
 
-1. Selecione o parágrafo a ser movido com o toque e segure ou com o clique e segure.
+1. Selecione o parágrafo a ser movido com select-and-hold ou click-and-hold.
 1. Arraste o parágrafo para o novo local. AEM indicará onde o parágrafo pode ser colocado. Solte-o no local desejado.
 
    ![movimentação do componente de parágrafo](assets/screen_shot_2018-03-22at121821.png)
@@ -387,9 +387,9 @@ Em vez de alternar repetidamente de editar para [modo de layout](/help/sites-aut
 
    ![Modo de edição no formulário](assets/screen_shot_2018-03-22at133756.png)
 
-   Clique ou toque no **Layout** para poder ajustar o layout do componente.
+   Clique em **Layout** para poder ajustar o layout do componente.
 
-   ![Barra de ferramentas Componente](do-not-localize/chlimage_1-21.png)
+   ![Barra de ferramentas do componente](do-not-localize/chlimage_1-21.png)
 
 1. Depois que a ação Layout for selecionada:
 

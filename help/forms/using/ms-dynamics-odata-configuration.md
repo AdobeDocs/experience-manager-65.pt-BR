@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Form Data Model
 exl-id: 90cc9452-e107-4e57-80a3-f44f0bde132e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1207'
 ht-degree: 1%
 
 ---
@@ -117,8 +117,8 @@ Faça o seguinte para registrar um cliente OAuth em um computador do Ative Diret
 
 A variável **CLOUD SERVICE OData do MS Dynamics (Serviço OData)** A configuração do vem com a configuração OData padrão. Para configurá-lo para se conectar com o serviço Microsoft Dynamics, faça o seguinte.
 
-1. Navegue até **[!UICONTROL Ferramentas > Cloud Service > Fontes de dados]** e toque no `global` pasta de configuração.
-1. Selecionar **CLOUD SERVICE OData do MS Dynamics (Serviço OData)** configuração e toque em **[!UICONTROL Propriedades]**. A caixa de diálogo de propriedade de configuração do Cloud Service é aberta.
+1. Navegue até **[!UICONTROL Ferramentas > Cloud Service > Fontes de dados]** e selecione a variável `global` pasta de configuração.
+1. Selecionar **CLOUD SERVICE OData do MS Dynamics (Serviço OData)** e selecione **[!UICONTROL Propriedades]**. A caixa de diálogo de propriedade de configuração do Cloud Service é aberta.
 
    No **Configurações de autenticação** guia:
 

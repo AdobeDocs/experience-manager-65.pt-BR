@@ -1,17 +1,13 @@
 ---
 title: Criação e adição de modelos e componentes
-seo-title: Creating and Adding Templates and Components
 description: Siga esta página para saber mais sobre como criar e adicionar modelos e componentes ao seu aplicativo. A página usa o aplicativo Geometrixx Unlimited como o aplicativo que contém um modelo de aplicativo de amostra e modelos de página.
-seo-description: Follow this page to learn about creating and adding templates and components to your app. The page uses Geometrixx Unlimited App as the app that contains a sample app template and page templates.
-uuid: 3a93017c-8094-413f-a01c-9b72025a2b20
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1151'
 ht-degree: 0%
 
 ---
@@ -45,7 +41,7 @@ Ao criar um aplicativo com base no modelo de outro aplicativo, você obterá um 
 Etapas para criar um aplicativo com base em um modelo de aplicativo:
 
 1. Navegue até o catálogo de aplicativos do AEM Mobile: *&lt;server-url>/aem/apps.html/content/mobileapps*
-1. Selecionar **Criar** —> **Aplicativo** conforme mostrado abaixo
+1. Selecionar **Criar** -> **Aplicativo** conforme mostrado abaixo
 
 Depois de criar um aplicativo usando esse modelo, você pode adicionar artigos, banners e coleções ao aplicativo. Para visitar novamente, criar artigos, banners e coleções, consulte [Ações de gerenciamento de conteúdo](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
@@ -145,7 +141,7 @@ Depois que o componente já tiver sido incluído em uma página AEM, juntamente 
 **Para editar um componente existente:**
 
 1. Escolha essa página e verifique se você está em **Editar** e selecione o componente
-1. Toque no ícone de chave inglesa para configurar o componente
+1. Selecione a chave inglesa para configurar o componente
 
 >[!NOTE]
 >

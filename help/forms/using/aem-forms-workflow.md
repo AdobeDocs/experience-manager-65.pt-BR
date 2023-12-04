@@ -5,10 +5,10 @@ topic-tags: publish, document_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3679'
-ht-degree: 2%
+source-wordcount: '3667'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +36,7 @@ O diagrama a seguir representa um procedimento completo para criar, executar e m
 
 ![introduction-to-aem-forms-workflow](assets/introduction-to-aem-forms-workflow.jpg)
 
-## Antes de você iniciar {#before-you-start}
+## Antes de começar {#before-you-start}
 
 * Um fluxo de trabalho é uma representação de um processo de negócios real. Mantenha o processo de negócios real e a lista dos participantes do processo de negócios prontos. Além disso, mantenha o material de apoio (formulários adaptáveis, documentos PDF e muito mais) pronto antes de começar a criar um fluxo de trabalho.
 * Um fluxo de trabalho pode ter vários estágios. Esses estágios são exibidos na Caixa de entrada do AEM e ajudam a relatar o progresso do fluxo de trabalho. Divida o processo de negócios em estágios lógicos.
@@ -65,8 +65,8 @@ O exemplo cria um modelo de fluxo de trabalho para uma solicitação de hipoteca
 
 1. Abra o console Modelos de fluxo de trabalho. O URL padrão é `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Selecionar **Criar**, depois **Criar modelo**. A caixa de diálogo Adicionar modelo de fluxo de trabalho é exibida.
-1. Insira o **Título** e **Nome** (opcional). Por exemplo, uma solicitação de hipoteca. Toque **Concluído**.
-1. Selecione o modelo de workflow recém-criado e toque em **Editar**. Agora é possível adicionar etapas do fluxo de trabalho para criar uma lógica de negócios. Ao criar um modelo de fluxo de trabalho pela primeira vez, ele contém:
+1. Insira o **Título** e **Nome** (opcional). Por exemplo, uma solicitação de hipoteca. Selecionar **Concluído**.
+1. Selecione o modelo de workflow recém-criado e **Editar**. Agora é possível adicionar etapas do fluxo de trabalho para criar uma lógica de negócios. Ao criar um modelo de fluxo de trabalho pela primeira vez, ele contém:
 
    * As etapas: Início do fluxo e Fim do fluxo. Essas etapas representam o início e o fim do workflow. Essas etapas são obrigatórias e não podem ser editadas ou removidas.
    * Um exemplo de etapa do participante chamada Etapa 1. Esta etapa é configurada para atribuir um item de trabalho ao usuário administrador. Remova esta etapa.
@@ -79,7 +79,7 @@ O exemplo cria um modelo de fluxo de trabalho para uma solicitação de hipoteca
 
 1. Criar estágios de fluxo de trabalho. Um fluxo de trabalho pode ter vários estágios. Esses estágios são exibidos na Caixa de entrada do AEM e relatam o progresso do fluxo de trabalho.
 
-   Para definir um estágio, toque no ![info-circle](assets/info-circle.png) ícone para abrir as propriedades do modelo de fluxo de trabalho, abra o **Estágios** , adicione estágios para o modelo de fluxo de trabalho e toque em **Salvar e fechar**. Para o exemplo de aplicativo de hipoteca, crie estágios: solicitação de empréstimo, status da solicitação de empréstimo, documentos a serem assinados e documento de empréstimo assinado.
+   Para definir um estágio, selecione a variável ![info-circle](assets/info-circle.png) ícone para abrir as propriedades do modelo de fluxo de trabalho, abra o **Estágios** , adicione estágios para o modelo de fluxo de trabalho e selecione **Salvar e fechar**. Para o exemplo de aplicativo de hipoteca, crie estágios: solicitação de empréstimo, status da solicitação de empréstimo, documentos a serem assinados e documento de empréstimo assinado.
 
 1. Arraste e solte a variável **Atribuir tarefa** avança o navegador para o modelo de fluxo de trabalho. Faça dela a primeira etapa do modelo.
 
@@ -214,7 +214,7 @@ O aplicativo AEM Forms é sincronizado com um servidor do AEM Forms e permite al
 Um administrador (um membro do grupo de administradores de fd) pode configurar uma pasta de rede para executar um fluxo de trabalho pré-configurado quando um usuário coloca um arquivo (como um arquivo de PDF) na pasta. Após a conclusão do workflow, ele pode salvar o arquivo de resultado em uma pasta de saída especificada. Essa pasta é conhecida como [Pasta monitorada](../../forms/using/watched-folder-in-aem-forms.md). Execute o seguinte procedimento para configurar uma pasta monitorada para iniciar um workflow:
 
 1. Na instância do autor do AEM, acesse ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Configurar a pasta monitorada]**. Uma lista de pastas monitoradas já configuradas é exibida.
-1. Toque **[!UICONTROL Novo]**. Uma lista de campos é exibida. Especifique um valor para os seguintes campos a fim de configurar uma Pasta monitorada para um fluxo de trabalho:
+1. Selecionar **[!UICONTROL Novo]**. Uma lista de campos é exibida. Especifique um valor para os seguintes campos a fim de configurar uma Pasta monitorada para um fluxo de trabalho:
 
 <table>
  <tbody>
@@ -245,7 +245,7 @@ Um administrador (um membro do grupo de administradores de fd) pode configurar u
  </tbody>
 </table>
 
-1. Toque **Avançado**. Especifique um valor para o seguinte campo e toque em **Criar**. A Pasta monitorada está configurada para iniciar um fluxo de trabalho. Agora, sempre que um arquivo for colocado no diretório de entrada da Pasta monitorada, o fluxo de trabalho especificado será acionado.
+1. Selecionar **Avançado**. Especifique um valor para o seguinte campo e toque em **Criar**. A Pasta monitorada está configurada para iniciar um fluxo de trabalho. Agora, sempre que um arquivo for colocado no diretório de entrada da Pasta monitorada, o fluxo de trabalho especificado será acionado.
 
    | Texto | Descrição |
    |---|---|
@@ -269,7 +269,7 @@ Você pode usar as etapas Atribuir tarefa e Enviar email dos fluxos de trabalho 
 
 ### Limpar instâncias de fluxo de trabalho {#purge-workflow-instances}
 
-Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do motor de workflow. Portanto, você pode remover regularmente do repositório as instâncias de fluxo de trabalho concluídas ou em execução. Para obter informações detalhadas, consulte [Limpeza regular de instâncias de fluxo de trabalho](/help/sites-administering/workflows-administering.md#regular) remoção de instâncias de fluxo de trabalho.
+Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do mecanismo de fluxo de trabalho, para que você possa remover regularmente do repositório as instâncias de fluxo de trabalho concluídas ou em execução. Para obter informações detalhadas, consulte [Limpeza regular de instâncias de fluxo de trabalho](/help/sites-administering/workflows-administering.md#regular) remoção de instâncias de fluxo de trabalho.
 
 ## Parametrizar dados sigilosos para variáveis de fluxo de trabalho e armazená-los em armazenamentos de dados externos {#externalize-wf-variables}
 

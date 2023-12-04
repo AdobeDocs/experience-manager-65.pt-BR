@@ -4,10 +4,10 @@ description: Instale, configure e personalize um pacote de demonstração do AEM
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '4603'
-ht-degree: 3%
+source-wordcount: '4501'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ Este pacote foi criado para **Autor do AEM Forms 6.4 OSGI**, foi testado e, port
 | VERSÃO DO AEM | VERSÃO DO PACOTE DO AEM FORMS | STATUS |
 |---|---|---|
 | 6.4 | 5.0.86 | **Compatível** |
-| 6.5 | 6.0.80 | **Compatível** |
+| 6,5 | 6.0.80 | **Compatível** |
 | 6.5.3 | 6.0.122 | **Compatível** |
 
 Este pacote contém a configuração de nuvem compatível com as seguintes versões de plataforma:
@@ -79,12 +79,12 @@ Esta seção contém informações sobre a instalação do pacote de demonstraç
 ### Da Distribuição de software {#from-software-distribution}
 
 1. Abra a [Distribuição de softwares](https://experience.adobe.com/downloads). Você precisa de uma Adobe ID para fazer logon na Distribuição de softwares.
-1. Clique em **[!UICONTROL Adobe Experience Manager]** disponível no menu de cabeçalho.
+1. Selecionar **[!UICONTROL Adobe Experience Manager]** disponível no menu de cabeçalho.
 1. No **[!UICONTROL Filtros]** seção:
    1. Selecionar **[!UICONTROL Forms]** do **[!UICONTROL Solução]** lista suspensa.
    2. Selecione a versão e o tipo do pacote. Você também pode usar a variável **[!UICONTROL Pesquisar downloads]** para filtrar os resultados.
-1. Toque no **we-gov-forms.pkg.all-&lt;version>.zip** nome do pacote, selecione **[!UICONTROL Aceitar termos do EULA]** e toque em **[!UICONTROL Baixar]**.
-1. Abra [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) e clique em **[!UICONTROL Fazer upload de pacote]** para fazer upload do pacote.
+1. Selecione o **we-gov-forms.pkg.all-&lt;version>.zip** nome do pacote, selecione **[!UICONTROL Aceitar termos do EULA]** e selecione **[!UICONTROL Baixar]**.
+1. Abertura [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  e clique em **[!UICONTROL Fazer upload do pacote]** para carregar o pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
    ![pacote we gov forms](assets/wegov_forms_package.jpg)
@@ -379,7 +379,7 @@ Para localizar as credenciais de usuário de uma conta do Adobe Analytics, execu
 1. Navegue até a guia Administrador e selecione o item Gerenciamento de usuários (Herdado)
    ![Relatórios](assets/aftia-reports.jpg)
 1. Selecione o **Usuários** guia.
-   ![Gerenciamento de usuários](assets/aftia-user-management.jpg)
+   ![User Management](assets/aftia-user-management.jpg)
 1. Selecione o usuário desejado na lista de usuários.
 1. Role para a parte inferior da página e as informações de autenticação dos usuários serão exibidas na parte inferior da página.
    ![Gerenciar acesso](assets/aftia-admin-user-access.jpg)

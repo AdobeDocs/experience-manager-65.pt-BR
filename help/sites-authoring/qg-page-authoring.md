@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1553'
-ht-degree: 73%
+source-wordcount: '1540'
+ht-degree: 61%
 
 ---
 
@@ -71,7 +71,7 @@ Há vários aspectos para localizar uma página. Você pode navegar e/ou pesquis
 
 1. Abra o **Sites** console (usando o **Sites** opção no [Navegação global](/help/sites-authoring/basic-handling.md#global-navigation)) - é acionado (lista suspensa) ao selecionar o link do Adobe Experience Manager (parte superior esquerda).
 
-1. Navegue para baixo na árvore, tocando/clicando na página apropriada. A forma como os recursos da página são apresentados depende da exibição usada ([Cartão, Lista ou Coluna](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)):
+1. Navegue para baixo na árvore, tocando/clicando na página apropriada. A forma como os recursos da página são representados depende da exibição usada - [Cartão, Lista ou Coluna](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
 
    ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
@@ -102,17 +102,17 @@ Como selecionar uma página depende da exibição usada no console:
 
 1. Exibição de coluna:
 
-   * Toque/clique na miniatura do recurso desejado - a miniatura será sobreposta com uma marca de verificação para mostrar que a opção foi selecionada.
+   * Clique na miniatura do recurso desejado - a miniatura será sobreposta com uma marca de verificação para mostrar que a opção foi selecionada.
 
 1. Exibição de lista:
 
-   * Toque/clique na miniatura do recurso desejado - a miniatura será sobreposta com uma marca de verificação para mostrar que a opção foi selecionada.
+   * Clique na miniatura do recurso desejado - a miniatura será sobreposta com uma marca de verificação para mostrar que a opção foi selecionada.
 
 1. Exibição de cartão:
 
    * Entrar no modo de seleção por [selecionar o recurso desejado](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) com:
 
-      * Dispositivo móvel: toque e segure
+      * Dispositivo móvel: selecionar e manter
       * Desktop: o [ação rápida](/help/sites-authoring/basic-handling.md#quick-actions) - ícone de marca de verificação:
 
    ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
@@ -158,24 +158,24 @@ As [ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions) est
 
    * [Editar o conteúdo de um componente existente](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) na página:
 
-      * Abra a barra de ferramentas do componente com um toque ou clique. Use o ícone de **Editar** (lápis) para abrir a caixa de diálogo.
-      * Abra o editor local do componente clicando e segurando ou com um clique duplo e lento. As ações disponíveis serão exibidas (para alguns componentes, será uma seleção limitada).
+      * Abra a barra de ferramentas do componente com um clique. Use o ícone de **Editar** (lápis) para abrir a caixa de diálogo.
+      * Abra o editor no local do componente com select-and-hold ou com um clique duplo lento. As ações disponíveis serão exibidas (para alguns componentes, será uma seleção limitada).
       * Para ver todas as ações disponíveis, entre no modo de tela cheia utilizando:
 
      ![Modo de tela cheia](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [Configurar as propriedades de um componente existente](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
-      * Abra a barra de ferramentas do componente com um toque ou clique. Use o ícone de **Configurar** (chave inglesa) para abrir a caixa de diálogo.
+      * Abra a barra de ferramentas do componente com um clique. Use o ícone de **Configurar** (chave inglesa) para abrir a caixa de diálogo.
 
    * [Mover um componente](/help/sites-authoring/editing-content.md#moving-a-component):
 
       * Arrastando o componente desejado para o novo local.
-      * Abra a barra de ferramentas do componente com um toque ou clique. Use os ícones **Cortar** e **Colar** conforme necessário.
+      * Abra a barra de ferramentas do componente com um clique. Use o **Recortar** depois **Colar** ícones, quando necessário.
 
    * [Copiar (e Colar)](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) um componente:
 
-      * Abra a barra de ferramentas do componente com um toque ou clique. Use os ícones **Copiar** e **Colar** conforme necessário.
+      * Abra a barra de ferramentas do componente com um clique. Use o **Copiar** depois **Colar** ícones, conforme necessário.
 
    >[!NOTE]
    >
@@ -183,7 +183,7 @@ As [ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions) est
 
    * [Excluir](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) um componente:
 
-      * Abra a barra de ferramentas do componente com um toque ou clique, em seguida, use o ícone **Excluir**.
+      * Abra a barra de ferramentas do componente com um clique, em seguida, use o **Excluir** ícone.
 
    * [Adicionar anotações](/help/sites-authoring/annotations.md#annotations) à página:
 
@@ -305,7 +305,7 @@ Por exemplo, o ícone de bloqueio tem a seguinte aparência:
 
    ![screen-shot_2019-03-05at114412](assets/screen-shot_2019-03-05at114412.png)
 
-1. Toque/clique no tipo de referência necessário para mostrar mais detalhes e (quando apropriado) executar outras ações.
+1. Clique no tipo de referência necessário para mostrar mais detalhes e (quando apropriado) executar outras ações.
 
 ### Criar uma versão da sua página   {#creating-a-version-of-your-page}
 
@@ -315,7 +315,7 @@ Para criar uma [versão](/help/sites-authoring/working-with-page-versions.md) da
 
    ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
-1. Toque/clique na seta para cima na parte inferior direita da coluna Linha do tempo para exibir os botões extras; incluindo **Salvar como versão**.
+1. Clique na seta para cima na parte inferior direita da coluna Linha do tempo para exibir os botões extras; incluindo **Salvar como versão**.
 
    ![screen-shot_2019-03-05at114600](assets/screen-shot_2019-03-05at114600.png)
 
@@ -331,7 +331,7 @@ O mesmo mecanismo básico é usado ao restaurar e/ou comparar as versões da sua
 
    Se uma versão da sua página já foi salva, ela será listada na Linha do tempo.
 
-1. Toque/clique na versão que deseja restaurar - isso revelará botões de ação adicionais:
+1. Clique na versão que deseja restaurar - isso revelará botões de ação adicionais:
 
    * **Reverter para essa versão**
 

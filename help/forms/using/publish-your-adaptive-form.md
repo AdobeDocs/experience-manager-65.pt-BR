@@ -10,10 +10,10 @@ discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
 docset: aem65
 feature: Adaptive Forms
 exl-id: c039faec-f832-43d5-8a86-22afa3bef2a4
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 1%
+source-wordcount: '886'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +31,7 @@ Você tem os seguintes métodos para publicar um formulário adaptável:
 * [Incorporar o formulário adaptável em uma página do AEM Sites](#embed-the-adaptive-form-in-an-aem-sites-page)
 * [Incorpore o formulário adaptável em uma página externa da Web (uma página da Web não AEM hospedada fora do AEM)](../../forms/using/publish-your-adaptive-form.md)
 
-## Antes de você iniciar {#before-you-start}
+## Antes de começar {#before-you-start}
 
 * **[Configurar uma instância de publicação do AEM Forms](https://helpx.adobe.com/br/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**: a instância de publicação é uma instância pública do AEM [!DNL Forms] execução no modo de publicação. Em um ambiente de produção, a instância de publicação está fora do firewall da organização.
 * **[Configurar replicação e replicação reversa](https://helpx.adobe.com/experience-manager/6-3/help/sites-deploying/replication.html)**: a replicação copia o conteúdo da instância do autor para uma instância de publicação e retorna a entrada do usuário (por exemplo, entrada de formulário) da instância de publicação para a instância do autor.
@@ -42,7 +42,7 @@ Quando o formulário adaptável é publicado como uma página AEM, a página da 
 
 1. Fazer logon no AEM [!DNL Forms] instância do autor e localize o formulário adaptável delivery-address-add-update-form no AEM [!DNL Forms] IU.
    `https://localhost:4502/aem/forms.html/content/dam/formsanddocuments`
-1. Selecione o formulário adaptável delivery-address-add-update-form e toque em **[!UICONTROL Publish]**. Uma caixa de diálogo contendo ativos relacionados ao formulário adaptável é exibida. Toque **[!UICONTROL Publish]**. O formulário adaptável é publicado e uma caixa de diálogo de sucesso é exibida.
+1. Selecione o formulário adaptável delivery-address-add-update-form e selecione **[!UICONTROL Publish]**. Uma caixa de diálogo contendo ativos relacionados ao formulário adaptável é exibida. Selecionar **[!UICONTROL Publish]**. O formulário adaptável é publicado e uma caixa de diálogo de sucesso é exibida.
 1. Abra o formulário na instância de publicação. O formulário está disponível para o usuário final preencher e enviar.
    `https://localhost:4503/content/forms/af/shipping-address-add-update-form.html`
 
@@ -58,11 +58,11 @@ AEM [!DNL Forms] fornecer um componente, AEM [!DNL Forms] Contêiner, para incor
 
    O site We.Retail é enviado com AEM. Se você não tiver o site We.Retail instalado, consulte [Implementação de referência do We.Retail](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/we-retail.html) instalar o site.
 
-1. Toque ![propriedades](assets/properties.png) informações da página e selecione o **[!UICONTROL Editar modelo]** opção na página do site We.Retail recém-criada. O modelo da página é aberto em uma nova guia do navegador.
-1. Toque dentro do **[!UICONTROL contêiner de layout]** caixa e toque em ![gerenciamento de feeds](assets/feedmanagement.png). No **[!UICONTROL Componentes permitidos]** , expanda a **[!UICONTROL Geral]** selecione a opção **[!UICONTROL Formulário AEM]** e toque em ![save_icon](assets/save_icon.svg). O AEM [!DNL Forms] O componente de container é ativado para a página.
+1. Selecionar ![propriedades](assets/properties.png) informações da página e selecione o **[!UICONTROL Editar modelo]** opção na página do site We.Retail recém-criada. O modelo da página é aberto em uma nova guia do navegador.
+1. Selecione dentro do **[!UICONTROL contêiner de layout]** e selecione ![gerenciamento de feeds](assets/feedmanagement.png). No **[!UICONTROL Componentes permitidos]** , expanda a **[!UICONTROL Geral]** selecione a opção **[!UICONTROL Formulário AEM]** e selecione ![save_icon](assets/save_icon.svg). O AEM [!DNL Forms] O componente de container é ativado para a página.
 
-1. Abra a guia do navegador que contém AEM [!DNL Sites] página aberta na etapa 1. Toque no **[!UICONTROL Arraste os componentes para cá]** caixa e toque em **+.** No **[!UICONTROL Inserir novo componente]** caixa, toque em **[!UICONTROL Formulário AEM]**. A variável **[!UICONTROL Contêiner do AEM Forms]** componente é adicionado à página.
-1. Toque no **[!UICONTROL Contêiner AEM Forms]** componente e toque em ![configure-icon](assets/configure-icon.svg). Uma caixa de diálogo com propriedades do AEM [!DNL Forms] O contêiner é exibido. No **[!UICONTROL Caminho do ativo]** e selecione o formulário adaptável delivery-address-add-update-form. Toque ![save_icon](assets/save_icon.svg). O formulário adaptável é incorporado na página.
+1. Abra a guia do navegador que contém AEM [!DNL Sites] página aberta na etapa 1. Selecione o **[!UICONTROL Arraste os componentes para cá]** e selecione **+.** No **[!UICONTROL Inserir novo componente]** , selecione **[!UICONTROL Formulário AEM]**. A variável **[!UICONTROL Contêiner do AEM Forms]** componente é adicionado à página.
+1. Selecione o **[!UICONTROL Contêiner AEM Forms]** e selecione ![configure-icon](assets/configure-icon.svg). Uma caixa de diálogo com propriedades do AEM [!DNL Forms] O contêiner é exibido. No **[!UICONTROL Caminho do ativo]** e selecione o formulário adaptável delivery-address-add-update-form. Selecionar ![save_icon](assets/save_icon.svg). O formulário adaptável é incorporado na página.
 1. Publicar o formulário adaptável e [!DNL Sites] página. Estes são alguns pontos a serem considerados:
 
    * Se você publicar o AEM [!DNL Sites] página pela primeira vez e incluir um formulário incorporado, publique o [!DNL Sites] e o formulário incorporado.

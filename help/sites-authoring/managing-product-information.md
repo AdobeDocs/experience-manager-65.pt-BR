@@ -10,9 +10,9 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
 exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2989'
+source-wordcount: '2887'
 ht-degree: 2%
 
 ---
@@ -39,11 +39,11 @@ O Creative Project fornece vários modelos de projeto para atender a diversos re
 
 ## Criar um projeto de sessão fotográfica do produto {#create-a-product-photo-shoot-project}
 
-1. No **Projetos** toque ou clique em **Criar** e escolha **Criar projeto** da lista.
+1. No **Projetos** , clique em **Criar** e escolha **Criar projeto** da lista.
 
    ![Botão Criar projeto](assets/chlimage_1-132a.png)
 
-1. No **Criar projeto** selecione a **Projeto de sessão de fotos do produto** modelo e toque ou clique **Próxima**.
+1. No **Criar projeto** selecione a **Projeto de sessão de fotos do produto** e clique em **Próxima**.
 
    ![Assistente de projeto](assets/chlimage_1-133a.png)
 
@@ -51,12 +51,12 @@ O Creative Project fornece vários modelos de projeto para atender a diversos re
 
    ![Detalhes do projeto](assets/chlimage_1-134a.png)
 
-1. Toque ou clique em **Criar**. Uma mensagem de confirmação notifica que o projeto foi criado.
-1. Toque ou clique **Concluído** para retornar ao **Projetos** console. Como alternativa, toque ou clique **Abertura** para exibir os ativos no projeto.
+1. Clique em **Criar**. Uma mensagem de confirmação notifica que o projeto foi criado.
+1. Clique em **Concluído** para retornar ao **Projetos** console. Como alternativa, clique em **Abertura** para exibir os ativos no projeto.
 
 ## Iniciando o trabalho em um projeto de sessão fotográfica do produto {#starting-work-in-a-product-photo-shoot-project}
 
-Para iniciar uma solicitação de sessão de fotos, toque ou clique em um projeto e, em seguida, toque ou clique **Adicionar trabalho** na página detalhes do projeto para iniciar um fluxo de trabalho.
+Para iniciar uma solicitação de sessão de fotos, clique em um projeto e em **Adicionar trabalho** na página detalhes do projeto para iniciar um fluxo de trabalho.
 
 ![Adicionar trabalho](assets/chlimage_1-135a.png)
 
@@ -111,7 +111,7 @@ O cartão de tarefas fornece os seguintes detalhes:
 
 ![Cartão Tarefas](assets/chlimage_1-136a.png)
 
-A lista de tarefas fornece informações detalhadas sobre a tarefa de fluxo de trabalho ativa no momento para o projeto. Para exibir a lista, toque ou clique no cartão de tarefa. A lista de tarefas também exibe metadados como data de início, data de vencimento, destinatário, prioridade e status da tarefa.
+A lista de tarefas fornece informações detalhadas sobre a tarefa de fluxo de trabalho ativa no momento para o projeto. Para exibir a lista, clique no cartão de tarefa. A lista de tarefas também exibe metadados como data de início, data de vencimento, destinatário, prioridade e status da tarefa.
 
 ![Lista de tarefas](assets/chlimage_1-137a.png)
 
@@ -121,8 +121,8 @@ Esta tarefa envolve atribuir etapas de fluxo de trabalho aos usuários com base 
 
 Para configurar o **Sessão fotográfica do produto** workflow:
 
-1. Navegue até **Ferramentas** > **Fluxos de trabalho** e, em seguida, toque no **Modelos** bloco para abrir o **Modelos de fluxo de trabalho** página.
-1. Selecione o **Sessão fotográfica do produto** e toque no botão **Editar** ícone na barra de ferramentas para abri-lo no modo de edição.
+1. Navegue até **Ferramentas** > **Fluxos de trabalho** e selecione a variável **Modelos** bloco para abrir o **Modelos de fluxo de trabalho** página.
+1. Selecione o **Sessão fotográfica do produto** e selecione a variável **Editar** ícone na barra de ferramentas para abri-lo no modo de edição.
 
    ![Modelo da sessão fotográfica do produto](assets/chlimage_1-138a.png)
 
@@ -130,7 +130,7 @@ Para configurar o **Sessão fotográfica do produto** workflow:
 
    ![Editar modelo](assets/project-photo-shoot-workflow-model.png)
 
-1. Toque ou clique no **Tarefa** para configurar o seguinte:
+1. Clique em **Tarefa** para configurar o seguinte:
 
    * Nome da tarefa
    * Usuário padrão (função) que recebe a tarefa
@@ -148,17 +148,17 @@ Execute as mesmas etapas para configurar as tarefas no **Fluxo de trabalho da se
 
 Esta seção descreve como integrar o gerenciamento de informações do produto ao seu projeto criativo.
 
-1. Navegue até um projeto de sessão fotográfica do produto e toque ou clique no **Adicionar trabalho** no ícone **Fluxos de trabalho** cartão.
+1. Navegue até um projeto de sessão fotográfica do produto e clique na guia **Adicionar trabalho** no ícone **Fluxos de trabalho** cartão.
 1. Selecione o **Sessão fotográfica do produto (integração com o Commerce)** cartão de workflow para iniciar o **Sessão fotográfica do produto (integração com o Commerce)** fluxo de trabalho. Se as informações do produto não estiverem disponíveis em `/etc/commerce`, selecione o **Sessão fotográfica do produto** e inicie o **Sessão fotográfica do produto** fluxo de trabalho.
 
    ![Assistente de fluxo de trabalho](assets/chlimage_1-140a.png)
 
-1. Toque ou clique **Próxima** para iniciar o workflow no projeto.
+1. Clique em **Próxima** para iniciar o workflow no projeto.
 1. Insira os detalhes do workflow na próxima página.
 
    ![Detalhes do fluxo de trabalho](assets/chlimage_1-141a.png)
 
-1. Toque ou clique **Enviar** para iniciar o fluxo de trabalho de sessão fotográfica. A página de detalhes do projeto de sessão fotográfica é exibida.
+1. Clique em **Enviar** para iniciar o fluxo de trabalho de sessão fotográfica. A página de detalhes do projeto de sessão fotográfica é exibida.
 
    ![Página do projeto com novo fluxo de trabalho](assets/chlimage_1-142a.png)
 
@@ -170,15 +170,15 @@ O fluxo de trabalho de sessão fotográfica inclui várias tarefas. Cada tarefa 
 
 A variável **Criar lista de captura** a tarefa permite que o proprietário do projeto selecione produtos para os quais as imagens são necessárias. Com base na opção selecionada pelo usuário, é gerado um arquivo CSV que contém informações básicas do produto.
 
-1. Na pasta do projeto, toque ou clique no botão de reticências na parte inferior direita do [Cartão de tarefas](#tracking-project-progress) para exibir o item da tarefa no fluxo de trabalho.
+1. Na pasta do projeto, clique no botão de reticências na parte inferior direita do [Cartão de tarefas](#tracking-project-progress) para exibir o item da tarefa no fluxo de trabalho.
 
    ![Cartão Tarefas](assets/chlimage_1-143a.png)
 
-1. Selecione o **Criar lista de captura** tarefa e toque/clique no botão **Abertura** ícone na barra de ferramentas.
+1. Selecione o **Criar lista de captura** e, em seguida, clique no botão **Abertura** ícone na barra de ferramentas.
 
    ![Abrindo tarefa da lista de captura](assets/chlimage_1-144a.png)
 
-1. Revise os detalhes da tarefa e toque/clique no **Criar lista de captura** botão.
+1. Revise os detalhes da tarefa e clique no botão **Criar lista de captura** botão.
 
    ![Detalhes da tarefa da lista de captura](assets/chlimage_1-145a.png)
 
@@ -186,23 +186,23 @@ A variável **Criar lista de captura** a tarefa permite que o proprietário do p
 
    ![Seleção de produtos](assets/chlimage_1-146a.png)
 
-1. Toque ou clique no **Adicionar à lista de captura** botão para criar um arquivo CSV que contenha uma lista de todos esses produtos. Uma mensagem confirma que a lista de captura foi criada para os produtos selecionados. Clique em **Fechar** para concluir o workflow.
+1. Clique em **Adicionar à lista de captura** botão para criar um arquivo CSV que contenha uma lista de todos esses produtos. Uma mensagem confirma que a lista de captura foi criada para os produtos selecionados. Clique em **Fechar** para concluir o workflow.
 
-1. Depois de criar uma lista de captura, a variável **Exibir lista de captura** é exibido. Para adicionar mais produtos à lista de captura, toque ou clique **Adicionar à lista de captura**. Nesse caso, os dados são anexados à lista de captura criada inicialmente.
+1. Depois de criar uma lista de captura, a variável **Exibir lista de captura** é exibido. Para adicionar mais produtos à lista de captura, clique em **Adicionar à lista de captura**. Nesse caso, os dados são anexados à lista de captura criada inicialmente.
 
    ![Adicionar à lista de captura](assets/chlimage_1-147a.png)
 
-1. Toque ou clique **Exibir lista de captura** para exibir a nova lista de captura.
+1. Clique em **Exibir lista de captura** para exibir a nova lista de captura.
 
    ![Exibir lista de captura](assets/chlimage_1-148a.png)
 
-   Para editar os dados existentes ou adicionar novos dados, toque/clique **Editar** na barra de ferramentas. Somente o **Produto **e **Descrição** Os campos são editáveis.
+   Para editar os dados existentes ou adicionar novos dados, clique em **Editar** na barra de ferramentas. Somente o **Produto **e **Descrição** Os campos são editáveis.
 
    ![Editar lista de captura](assets/chlimage_1-149a.png)
 
-   Depois de atualizar o arquivo, toque ou clique em **Salvar** na barra de ferramentas para salvar o arquivo.
+   Depois de atualizar o arquivo, clique em **Salvar** na barra de ferramentas para salvar o arquivo.
 
-1. Depois de adicionar os produtos, toque ou clique no **Concluído** no ícone **Criar lista de captura** página de detalhes da tarefa para marcar a tarefa como concluída. Você pode adicionar um comentário opcional.
+1. Depois de adicionar os produtos, clique no link **Concluído** no ícone **Criar lista de captura** página de detalhes da tarefa para marcar a tarefa como concluída. Você pode adicionar um comentário opcional.
 
 A conclusão da tarefa introduz as seguintes alterações no projeto:
 
@@ -220,23 +220,23 @@ A lista de produtos ou o arquivo CSV podem conter campos, como **Categoria, Prod
 
 Um produto pode pertencer a uma categoria específica. A categoria do produto pode ser listada no CSV abaixo de **Categoria** coluna. A variável **Produto** contém o nome do produto. No **Descrição** insira a descrição do produto ou as instruções para o fotógrafo.
 
-1. Na pasta do projeto, toque ou clique no botão de reticências na parte inferior direita do [Cartão de tarefas](#tracking-project-progress) para exibir a lista de tarefas no workflow.
-1. Selecione o **Carregar lista de captura** tarefa e toque ou clique no botão **Abertura** ícone na barra de ferramentas.
+1. Na pasta do projeto, clique no botão de reticências na parte inferior direita do [Cartão de tarefas](#tracking-project-progress) para exibir a lista de tarefas no workflow.
+1. Selecione o **Carregar lista de captura** e, em seguida, clique no botão **Abertura** ícone na barra de ferramentas.
 
    ![Carregar lista de captura](assets/chlimage_1-150a.png)
 
-1. Revise os detalhes da tarefa e toque ou clique no **Carregar lista de captura** botão.
+1. Revise os detalhes da tarefa e clique no botão **Carregar lista de captura** botão.
 
    ![Carregando lista de captura](assets/chlimage_1-151a.png)
 
-1. Toque ou clique no **Carregar lista de captura** botão para carregar o arquivo CSV. O fluxo de trabalho reconhece esse arquivo como uma origem a ser usada para extrair dados do produto para a próxima tarefa.
+1. Clique em **Carregar lista de captura** botão para carregar o arquivo CSV. O fluxo de trabalho reconhece esse arquivo como uma origem a ser usada para extrair dados do produto para a próxima tarefa.
 1. Carregue um arquivo CSV contendo informações do produto no formato apropriado. A variável **Visualizar ativos carregados** aparece sob o cartão depois que o arquivo CSV é carregado.
 
    ![Carregar informações do produto](assets/chlimage_1-152a.png)
 
    Clique em **Concluído** ícone para concluir a tarefa.
 
-1. Toque/clique no **Concluído** ícone para concluir a tarefa.
+1. Clique em **Concluído** ícone para concluir a tarefa.
 
 ### Carregar tarefa de sessão fotográfica {#upload-photo-shoot-task}
 
@@ -246,24 +246,24 @@ O nome das imagens a serem carregadas deve começar com `<ProductId_>` onde `Pro
 
 Você pode fazer upload das imagens diretamente ou fazer upload de um arquivo ZIP que contenha as imagens. Com base em seus nomes, as imagens são colocadas dentro das respectivas pastas de produtos dentro da pasta de sessão fotográfica.
 
-1. Na pasta do projeto, toque ou clique no botão de reticências na parte inferior direita do [Cartão de Tarefa](#tracking-project-progress) para exibir o item da tarefa no fluxo de trabalho.
-1. Selecione o **Carregar sessão fotográfica** tarefa e toque ou clique no botão **Abertura** ícone na barra de ferramentas.
+1. Na pasta do projeto, clique no botão de reticências na parte inferior direita do [Cartão de Tarefa](#tracking-project-progress) para exibir o item da tarefa no fluxo de trabalho.
+1. Selecione o **Carregar sessão fotográfica** e, em seguida, clique no botão **Abertura** ícone na barra de ferramentas.
 
    ![Carregar sessão fotográfica](assets/chlimage_1-153a.png)
 
-1. Toque ou clique **Carregar sessão fotográfica** e carregue as imagens da sessão fotográfica.
-1. Toque ou clique no **Concluído** ícone na barra de ferramentas para concluir a tarefa.
+1. Clique em **Carregar sessão fotográfica** e carregue as imagens da sessão fotográfica.
+1. Clique em **Concluído** ícone na barra de ferramentas para concluir a tarefa.
 
 ### Retocar tarefa de sessão fotográfica {#retouch-photo-shoot-task}
 
 Se você tiver direitos de edição, execute o **Retocar a sessão fotográfica** tarefa para editar as imagens carregadas na pasta de sessão fotográfica.
 
-1. Na pasta do projeto, toque ou clique no botão de reticências na parte inferior direita da [Cartão de Tarefa](#tracking-project-progress) para exibir o item da tarefa no fluxo de trabalho.
-1. Selecione o **Retocar a sessão fotográfica** tarefa e toque/clique no botão **Abertura** ícone na barra de ferramentas.
+1. Na pasta do projeto, clique no botão de reticências na parte inferior direita do [Cartão de Tarefa](#tracking-project-progress) para exibir o item da tarefa no fluxo de trabalho.
+1. Selecione o **Retocar a sessão fotográfica** e, em seguida, clique no botão **Abertura** ícone na barra de ferramentas.
 
    ![Retocar sessão fotográfica](assets/chlimage_1-154a.png)
 
-1. Toque ou clique no **Visualizar ativos carregados** no **Retocar a sessão fotográfica** para navegar pelas imagens carregadas.
+1. Clique em **Visualizar ativos carregados** no **Retocar a sessão fotográfica** para navegar pelas imagens carregadas.
 
    ![Exibir ativos carregados](assets/chlimage_1-155a.png)
 
@@ -271,32 +271,32 @@ Se você tiver direitos de edição, execute o **Retocar a sessão fotográfica*
 
    ![Editar ativo](assets/chlimage_1-156a.png)
 
-1. Toque ou clique no **Concluído** ícone na barra de ferramentas para concluir a tarefa.
+1. Clique em **Concluído** ícone na barra de ferramentas para concluir a tarefa.
 
 ### Revisar e Aprovar Tarefa {#review-and-approve-task}
 
 Nesta tarefa, você analisa as imagens de sessão fotográfica carregadas por um fotógrafo e marca as imagens como aprovadas para uso.
 
-1. Na pasta do projeto, toque ou clique no botão de reticências na parte inferior direita do [Cartão de Tarefa](#tracking-project-progress) para exibir o item da tarefa no fluxo de trabalho.
-1. Selecione o **Revisar e aprovar** tarefa e toque ou clique no botão **Abertura** ícone na barra de ferramentas.
+1. Na pasta do projeto, clique no botão de reticências na parte inferior direita do [Cartão de Tarefa](#tracking-project-progress) para exibir o item da tarefa no fluxo de trabalho.
+1. Selecione o **Revisar e aprovar** e, em seguida, clique no botão **Abertura** ícone na barra de ferramentas.
 
    ![Revisar e aprovar](assets/chlimage_1-157a.png)
 
-1. No **Revisar e aprovar** atribua a tarefa de revisão a uma função e toque ou clique em **Revisão** para começar a revisar as imagens do produto carregadas.
+1. No **Revisar e aprovar** atribua a tarefa de revisão a uma função e clique em **Revisão** para começar a revisar as imagens do produto carregadas.
 
    ![Começar a revisar ativos](assets/chlimage_1-158a.png)
 
-1. Selecione uma imagem de produto e toque ou clique no **Aprovar** ícone na barra de ferramentas para marcá-la como aprovada. Depois de aprovar uma imagem, um banner aprovado é exibido sobre ela.
+1. Selecione uma imagem de produto e clique no link **Aprovar** ícone na barra de ferramentas para marcá-la como aprovada. Depois de aprovar uma imagem, um banner aprovado é exibido sobre ela.
 
    ![Aprovar uma imagem](assets/chlimage_1-159a.png)
 
-1. Toque ou clique **Concluído**. As imagens aprovadas são vinculadas aos ativos vazios que foram criados.
+1. Clique em **Concluído**. As imagens aprovadas são vinculadas aos ativos vazios que foram criados.
 
 Você pode excluir alguns produtos sem nenhuma imagem. Mais tarde, você pode revisitar a tarefa e marcá-la como concluída.
 
 Você pode navegar até os ativos do projeto usando a interface do usuário do Assets e verificar as imagens aprovadas.
 
-Toque ou clique no próximo nível para exibir os produtos de acordo com a hierarquia de dados do produto.
+Clique no próximo nível para exibir os produtos de acordo com a hierarquia de dados do produto.
 
 O Creative Project associa ativos aprovados ao produto referenciado. Os metadados do ativo são atualizados com a referência do produto e as informações básicas no **Dados do produto** em propriedades do ativo, elas são exibidas na seção Metadados do ativo AEM.
 
@@ -308,8 +308,8 @@ O Creative Project associa ativos aprovados ao produto referenciado. Os metadado
 
 Essa tarefa move os ativos aprovados para a pasta pronta para produção para disponibilizá-los para uso.
 
-1. Na pasta do projeto, toque ou clique no botão de reticências na parte inferior direita do [Cartão de Tarefa](#tracking-project-progress) para exibir o item da tarefa no fluxo de trabalho.
-1. Selecione o **Mover para produção** tarefa e toque ou clique no botão **Abertura** ícone na barra de ferramentas.
+1. Na pasta do projeto, clique no botão de reticências na parte inferior direita do [Cartão de Tarefa](#tracking-project-progress) para exibir o item da tarefa no fluxo de trabalho.
+1. Selecione o **Mover para produção** e, em seguida, clique no botão **Abertura** ícone na barra de ferramentas.
 
    ![Mover para produção](assets/chlimage_1-160a.png)
 
@@ -321,22 +321,22 @@ Essa tarefa move os ativos aprovados para a pasta pronta para produção para di
 
    ![Mover para caminho](assets/chlimage_1-162a.png)
 
-1. Toque ou clique **Mover para produção**. Feche a mensagem de confirmação. Os ativos são movidos para o caminho mencionado e um conjunto de rotação é criado automaticamente para os ativos aprovados para cada produto com base na hierarquia de pastas.
+1. Clique em **Mover para produção**. Feche a mensagem de confirmação. Os ativos são movidos para o caminho mencionado e um conjunto de rotação é criado automaticamente para os ativos aprovados para cada produto com base na hierarquia de pastas.
 
-1. Toque/clique no **Concluído** ícone na barra de ferramentas. O fluxo de trabalho é concluído quando a última etapa é marcada como concluída.
+1. Clique em **Concluído** ícone na barra de ferramentas. O fluxo de trabalho é concluído quando a última etapa é marcada como concluída.
 
 ## Exibição de metadados de ativos DAM {#viewing-dam-asset-metadata}
 
-Após a aprovação, os ativos são vinculados aos produtos correspondentes. A variável [Página Propriedades](/help/assets/manage-assets.md#editing-properties) dos ativos aprovados agora tem um limite **Dados do produto** (informações vinculadas do produto). Essa guia exibe os detalhes do produto, o número SKU e outros detalhes relacionados ao produto que vinculam o ativo. Toque ou clique no **Editar** ícone para atualizar uma propriedade de ativo. As informações relacionadas ao produto permanecem somente leitura.
+Após a aprovação, os ativos são vinculados aos produtos correspondentes. A variável [Página Propriedades](/help/assets/manage-assets.md#editing-properties) dos ativos aprovados agora tem um limite **Dados do produto** (informações vinculadas do produto). Essa guia exibe os detalhes do produto, o número SKU e outros detalhes relacionados ao produto que vinculam o ativo. Clique em **Editar** ícone para atualizar uma propriedade de ativo. As informações relacionadas ao produto permanecem somente leitura.
 
-Toque ou clique no link exibido para navegar até a respectiva página de detalhes do produto no console do produto ao qual o ativo está associado.
+Clique no link exibido para navegar até a respectiva página de detalhes do produto no console do produto ao qual o ativo está associado.
 
 ## Personalizar os fluxos de trabalho da sessão fotográfica do projeto {#customizing-the-project-photo-shoot-workflows}
 
 É possível personalizar o **Sessão fotográfica do projeto** fluxos de trabalho com base em seus requisitos. Essa é uma tarefa opcional com base em funções que você executa para definir o valor de uma variável no projeto. Posteriormente, você pode usar o valor configurado para chegar a uma decisão.
 
-1. Clique ou toque no logotipo do AEM e navegue até **Ferramentas** > **Fluxo de trabalho** > **Modelos** para abrir o **Modelos de fluxo de trabalho** página.
-1. Selecione o **Sessão fotográfica do produto (integração com o Commerce)** fluxo de trabalho ou o **Sessão fotográfica do produto** e clique ou toque em **Editar** na barra de ferramentas para abrir o workflow no modo de edição.
+1. Clique no logotipo do AEM e navegue até **Ferramentas** > **Fluxo de trabalho** > **Modelos** para abrir o **Modelos de fluxo de trabalho** página.
+1. Selecione o **Sessão fotográfica do produto (integração com o Commerce)** fluxo de trabalho ou o **Sessão fotográfica do produto** e clique em **Editar** na barra de ferramentas para abrir o workflow no modo de edição.
 1. Abra o painel lateral e localize o **Criar função baseada na tarefa do projeto** e arraste-a para o workflow.
 
    ![Criar tarefa de projeto baseada em função](assets/project-model-role-based.png)
@@ -346,17 +346,17 @@ Toque ou clique no link exibido para navegar até a respectiva página de detalh
 
    ![Configurar etapa de fluxo de trabalho](assets/project-task-step.png)
 
-1. No **Roteamento** especifique as ações da tarefa. Para adicionar várias ações, toque ou clique no **Adicionar item** link.
+1. No **Roteamento** especifique as ações da tarefa. Para adicionar várias ações, clique no botão **Adicionar item** link.
 
    ![Guia Roteamento](assets/project-task-step-routing.png)
 
 1. Depois de adicionar as opções, clique em **OK** para adicionar as alterações à etapa.
 
-1. De volta ao **Modelo de fluxo de trabalho** toque ou clique na janela **Sincronizar** para salvar as alterações de todo o fluxo de trabalho. Tocar ou clicar **OK** para a etapa não salva as alterações no fluxo de trabalho. Para salvar as alterações no fluxo de trabalho, toque ou clique **Sincronizar**.
+1. De volta ao **Modelo de fluxo de trabalho** clique na janela **Sincronizar** para salvar as alterações de todo o fluxo de trabalho. Tocar ou clicar **OK** para a etapa não salva as alterações no fluxo de trabalho. Para salvar as alterações no fluxo de trabalho, clique em **Sincronizar**.
 
 1. Abra o painel lateral e localize o **Etapa Ir para** e arraste-o para o workflow.
 
-1. Abra o **Ir para** e toque ou clique no botão **Processo** guia.
+1. Abra o **Ir para** e clique no botão **Processo** guia.
 
 1. Selecione o **Etapa do Target** vá para e especifique que a variável **Expressão de roteamento** é script ECMA. Em seguida, forneça o seguinte código no **Script** campo:
 
@@ -386,9 +386,9 @@ Toque ou clique no link exibido para navegar até a respectiva página de detalh
 
    ![Script Ir para](assets/project-workflow-goto.png)
 
-1. Toque ou clique **OK**.
+1. Clique em **OK**.
 
-1. Toque ou clique **Sincronizar** para salvar o workflow.
+1. Clique em **Sincronizar** para salvar o workflow.
 
 Uma nova tarefa agora aparece depois que o [Mover para a tarefa Produção](#move-to-production-task) está concluído e atribuído ao proprietário.
 

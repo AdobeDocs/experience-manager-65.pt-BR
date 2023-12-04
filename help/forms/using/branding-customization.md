@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: f6440a36-719a-4f89-b7db-1af918a3469a
 exl-id: 9333705b-9944-4a74-a30f-7d9ec85fd824
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 2%
+source-wordcount: '890'
+ht-degree: 1%
 
 ---
 
@@ -128,7 +128,7 @@ Execute as seguintes etapas para personalizar o ícone do aplicativo padrão e a
 
 A página de logon do aplicativo AEM Forms tem logotipo e imagens de fundo. O logotipo está localizado acima da caixa de diálogo de logon e a imagem de fundo está localizada abaixo da caixa de diálogo de logon. Execute as seguintes etapas para personalizar a imagem padrão na página de logon:
 
-**Antes de você iniciar**
+**Antes de começar**
 
 Verifique se você tem as seguintes imagens:
 
@@ -181,9 +181,9 @@ Verifique se você tem as seguintes imagens:
 
 ## Personalização do logotipo no menu do aplicativo {#customizing_images_on_the_login_page-1}
 
-Depois de fazer logon no aplicativo AEM Forms e tocar no botão de menu, você pode ver o logotipo acima do menu. Execute as seguintes etapas para personalizar o logotipo padrão:
+Depois de fazer logon no aplicativo AEM Forms e selecionar o botão de menu, você pode ver o logotipo acima do menu. Execute as seguintes etapas para personalizar o logotipo padrão:
 
-**Antes de você iniciar**
+**Antes de começar**
 
 Verifique se você tem a seguinte imagem:
 

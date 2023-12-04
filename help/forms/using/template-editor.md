@@ -7,9 +7,9 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2040'
+source-wordcount: '2029'
 ht-degree: 1%
 
 ---
@@ -37,19 +37,19 @@ Por exemplo, você deseja que todos os autores de formulários tenham determinad
 
 É possível acessar o editor de modelos no menu Ferramentas navegando até **Adobe Experience Manager > Ferramentas > Modelos**. Aqui, os modelos são organizados em pastas ativadas para modelos editáveis. O AEM fornece uma pasta global para organizar modelos. No entanto, não está ativado por padrão. Você pode solicitar que o administrador ative a pasta global ou crie uma pasta para modelos. Para obter mais informações sobre como criar pastas, consulte [Pastas de Modelos](/help/sites-developing/page-templates-editable.md).
 
-Depois de tocar para abrir uma pasta, você verá um botão Criar que permite criar um modelo para formulários adaptáveis.
+Depois de optar por abrir uma pasta, você verá um botão Criar que permite criar um modelo para formulários adaptáveis.
 
 ### Criação de um modelo {#create-template}
 
 Após criar uma pasta, abra-a e execute as seguintes etapas para criar um template:
 
-1. No console Modelo, toque em **Criar** dentro da pasta que você criou.
-1. Na seção Escolher um tipo de modelo, selecione **Modelo de formulário adaptável** e toque em **Próxima**.
+1. No console Modelo, selecione **Criar** dentro da pasta que você criou.
+1. Na seção Escolher um tipo de modelo, selecione **Modelo de formulário adaptável** e selecione **Próxima**.
 
-1. Na seção Detalhes do modelo, forneça um Título do modelo e toque em **Criar**.
+1. Na seção Detalhes do Modelo, forneça um Título de Modelo e selecione **Criar**.
 Você pode fornecer uma descrição e uma miniatura que poderá ver quando selecionar o modelo criado no momento da criação do formulário.
 
-1. Toque **Concluído** para retornar ao console ou toque em **Abertura** para abrir o modelo no editor.
+1. Selecionar **Concluído** para retornar ao console ou selecione **Abertura** para abrir o modelo no editor.
 
 ### Interface do editor de modelos {#template-editor-ui}
 
@@ -113,7 +113,7 @@ Por exemplo, você adiciona o componente de cabeçalho no modelo. Ao selecionar 
 
 Quando a opção Conteúdo inicial estiver selecionada, o Contêiner de formulário adaptável do modelo será aberto como um formulário adaptável para edição. Assim como a criação de um formulário adaptável, você pode especificar configurações iniciais, como selecionar um tema e enviar ações.
 
-Os autores de formulários o usam como base para criar um formulário. A estrutura do fluxo de conteúdo é especificada na camada Conteúdo inicial do modelo. Para alternar para a edição do conteúdo inicial do modelo de formulário, antes de Visualizar na barra de ferramentas da página, toque em ![tela suspensa](assets/canvas-drop-down.png) **> Conteúdo inicial**.
+Os autores de formulários o usam como base para criar um formulário. A estrutura do fluxo de conteúdo é especificada na camada Conteúdo inicial do modelo. Para alternar para a edição do conteúdo inicial do modelo de formulário, antes de Visualizar na barra de ferramentas da página, selecione ![tela suspensa](assets/canvas-drop-down.png) **> Conteúdo inicial**.
 ![Camada de conteúdo inicial no Editor de modelo](assets/initial-content-layer.png)
 
 Camada de conteúdo inicial no Editor de modelos mostrando o Contêiner de formulário adaptável selecionado para especificar propriedades.
@@ -144,7 +144,7 @@ Altere a camada de Estrutura para Conteúdo inicial e comece a adicionar conteú
 * Você pode arrastar e soltar o componente Painel do navegador de componentes na barra lateral.
 * É possível adicionar um painel filho de `guideRootPanel` na barra de ferramentas do componente.
 
-Para criar as guias Informações gerais e Informações profissionais, adicione dois painéis no painel secundário do `guideRootPanel`. Selecione os painéis e toque em ![cmppr](assets/cmppr.png) para abrir as propriedades na barra lateral. Alterar os nomes dos elementos como `general-info` e `professional-info`e títulos como Informações gerais e Informações profissionais, respectivamente. Na barra lateral, toque em conteúdo para abrir o navegador de conteúdo. Na guia Objetos de formulário, selecione `guideRootPanel`. No editor, o guideRootPanel é selecionado. Toque ![cmppr](assets/cmppr.png) na barra de ferramentas do componente para abrir suas propriedades. No campo Layout do painel, selecione **Guias na parte superior** e toque em **Concluído**. A estrutura do modelo com guias é aplicada.
+Para criar as guias Informações gerais e Informações profissionais, adicione dois painéis no painel secundário do `guideRootPanel`. Selecione os painéis e selecione ![cmppr](assets/cmppr.png) para abrir as propriedades na barra lateral. Alterar os nomes dos elementos como `general-info` e `professional-info`e títulos como Informações gerais e Informações profissionais, respectivamente. Na barra lateral, selecione conteúdo para abrir o navegador de conteúdo. Na guia Objetos de formulário, selecione `guideRootPanel`. No editor, o guideRootPanel é selecionado. Selecionar ![cmppr](assets/cmppr.png) na barra de ferramentas do componente para abrir suas propriedades. No campo Layout do painel, selecione **Guias na parte superior** e selecione **Concluído**. A estrutura do modelo com guias é aplicada.
 
 #### Adição de conteúdo em guias {#adding-content-in-tabs}
 
@@ -165,7 +165,7 @@ Ao criar um modelo, ele é adicionado como um rascunho. Habilite o modelo para u
 1. Navegue até **Adobe Experience Manager > Ferramentas > Modelos** e abra a pasta na qual você criou o template.
 
 1. O modelo criado está marcado como Rascunho.
-1. Selecione o modelo e toque em **Ativar** na barra de ferramentas.
+1. Selecione o modelo e selecione **Ativar** na barra de ferramentas.
 Ao criar um formulário adaptável, você pode ver o modelo listado quando é solicitado a escolher um modelo.
 
 ## Importação ou exportação de um template {#importing-or-exporting-a-template}

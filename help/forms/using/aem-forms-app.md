@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 exl-id: 171754a2-1ba5-42dc-b6d2-3d730807cc31
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2448'
-ht-degree: 2%
+source-wordcount: '2410'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ O código-fonte do aplicativo AEM Forms está disponível para os clientes por m
 
 O aplicativo AEM Forms é compatível com dispositivos iOS, Android e Windows. Você pode instalar o aplicativo AEM Forms para Android do Google Play, iOS do App Store e Windows da Windows Store.
 
-    [ ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
+    [![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
     
     [![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
     
@@ -58,9 +58,9 @@ Para sincronizar o formulário no aplicativo AEM Forms:
 1. Na instância do autor, selecione um formulário e clique em **[!UICONTROL Propriedades da exibição]**.
 
 1. Na página de propriedades, clique em **[!UICONTROL Avançado]**.
-1. Em Avançado, habilite a opção: **[!UICONTROL Sincronizar com o aplicativo AEM Forms]** e toque em **[!UICONTROL Salvar]**.
+1. Em Avançado, habilite a opção: **[!UICONTROL Sincronizar com o aplicativo AEM Forms]** e selecione **[!UICONTROL Salvar]**.
 
-Quando o formulário é publicado, o aplicativo é sincronizado com o servidor e busca o formulário. Para sincronizar vários formulários, na instância do autor, selecione vários formulários no gerenciador de formulários e toque em **[!UICONTROL Sincronizar com o aplicativo AEM Forms]**.
+Quando o formulário é publicado, o aplicativo é sincronizado com o servidor e busca o formulário. Para sincronizar vários formulários, na instância do autor, selecione vários formulários no gerenciador de formulários e **[!UICONTROL Sincronizar com o aplicativo AEM Forms]**.
 
 ## Suporte a dispositivo móvel {#mobile-device-support}
 
@@ -183,12 +183,12 @@ O código-fonte do aplicativo AEM Forms pode ser extraído do `adobe-lc-mobilewo
 Para obter a origem do aplicativo AEM Forms, execute as seguintes etapas:
 
 1. Abra a [Distribuição de softwares](https://experience.adobe.com/downloads). Você precisa de uma Adobe ID para fazer logon na Distribuição de softwares.
-1. Clique em **[!UICONTROL Adobe Experience Manager]** disponível no menu de cabeçalho.
+1. Selecionar **[!UICONTROL Adobe Experience Manager]** disponível no menu de cabeçalho.
 1. No **[!UICONTROL Filtros]** seção:
    1. Selecionar **[!UICONTROL Forms]** do **[!UICONTROL Solução]** lista suspensa.
    2. Selecione a versão e o tipo do pacote. Você também pode usar a variável **[!UICONTROL Pesquisar downloads]** para filtrar os resultados.
-1. Toque no nome do pacote aplicável ao seu sistema operacional e selecione **[!UICONTROL Aceitar termos do EULA]** e toque em **[!UICONTROL Baixar]**.
-1. Abra [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) e clique em **[!UICONTROL Fazer upload de pacote]** para fazer upload do pacote.
+1. Selecione o nome do pacote aplicável ao seu sistema operacional e **[!UICONTROL Aceitar termos do EULA]** e selecione **[!UICONTROL Baixar]**.
+1. Abertura [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  e clique em **[!UICONTROL Fazer upload do pacote]** para carregar o pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
 **Para iOS**:

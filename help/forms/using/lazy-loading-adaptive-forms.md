@@ -6,9 +6,9 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1070'
 ht-degree: 3%
 
 ---
@@ -52,8 +52,8 @@ O Forms inclui alguns campos e seções que não se aplicam a todos os usuários
 Execute as seguintes etapas para habilitar o carregamento lento em um fragmento de formulário adaptável:
 
 1. Abra o formulário adaptável no modo de criação que contém o fragmento que você deseja ativar para carregamento lento.
-1. Selecione o fragmento de formulário adaptável e toque em ![cmppr](assets/cmppr.png).
-1. Na barra lateral, ative **[!UICONTROL Carregar fragmento preguiçosamente]** e toque em **Concluído**.
+1. Selecione o fragmento de formulário adaptável e selecione ![cmppr](assets/cmppr.png).
+1. Na barra lateral, ative **[!UICONTROL Carregar fragmento preguiçosamente]** e selecione **Concluído**.
 
    ![Ativar carregamento lento para o fragmento de formulário adaptável](assets/lazy-loading-fragment.png)
 
@@ -62,7 +62,7 @@ Execute as seguintes etapas para habilitar o carregamento lento em um fragmento 
 Você pode marcar os valores de objetos no fragmento carregado lentamente como globais para que eles fiquem disponíveis para uso em scripts quando o fragmento que o contém não for carregado. Faça o seguinte:
 
 1. Abra o fragmento de formulário adaptável no modo de criação.
-1. Toque no campo cujo valor deseja marcar como global e toque em ![cmppr](assets/cmppr.png).
+1. Selecione o campo cujo valor você deseja marcar como global e selecione ![cmppr](assets/cmppr.png).
 1. Na barra lateral, ative **Usar valor durante carregamento lento**.
 
    ![Campo de carregamento lento na barra lateral](assets/enable-lazy-loading.png)

@@ -6,9 +6,9 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3849'
+source-wordcount: '3832'
 ht-degree: 0%
 
 ---
@@ -23,14 +23,14 @@ Depois de um [o modelo de carta é criado no Gerenciamento de correspondência](
 
 Selecione a correspondência a ser visualizada usando as seguintes etapas:
 
-1. Na página Cartas, toque em **Selecionar**.
+1. Na página Cartas, selecione **Selecionar**.
 1. Selecione a letra apropriada tocando nela.
 
    ![Selecionar carta](assets/1_selectletter.png)
 
    Selecionar carta
 
-1. Para uma carta baseada no Dicionário de Dados, selecione **Visualizar** > **Visualizar**. Ou, para uma correspondência não baseada em dicionário de dados, selecione **Visualizar**. Você também pode passar o mouse sobre uma correspondência (sem selecioná-la) e tocar no ícone Visualização de correspondência para visualizá-la.
+1. Para uma carta baseada no Dicionário de Dados, selecione **Visualizar** > **Visualizar**. Ou, para uma correspondência não baseada em dicionário de dados, selecione **Visualizar**. Você também pode passar o mouse sobre uma correspondência (sem selecioná-la) e selecionar o ícone Visualização de correspondência para visualizá-la.
 
    >[!NOTE]
    >
@@ -63,7 +63,7 @@ Na guia Dados, preencha os campos de layout e espaços reservados disponíveis.
 
 1. Insira os dados e as variáveis de conteúdo nos campos, conforme necessário. Preencha todos os campos obrigatórios marcados com um asterisco (&#42;) para habilitar o **Enviar** botão.
 
-   Toque em um valor de campo de dados na pré-visualização da letra HTML para realçar o campo de dados correspondente na guia Data.
+   Selecione um valor de campo de dados na pré-visualização da carta de HTML para realçar o campo de dados correspondente na guia Data.
 
    ![Inserir dados na carta](assets/2_enterdata.png) ![2_1_enterdata](assets/2_1_enterdata.png)
 
@@ -75,7 +75,7 @@ Na guia content, gerencie o conteúdo, como fragmentos de documentos e variávei
 
    ![Guia Conteúdo - destacar módulo no conteúdo](assets/3_content.png)
 
-1. Edite os módulos de conteúdo, conforme necessário, na guia Content. Para focalizar o módulo de conteúdo relevante na hierarquia de conteúdo, você pode tocar na linha ou no parágrafo relevante na pré-visualização de correspondências ou tocar no módulo de conteúdo diretamente na hierarquia de conteúdo.
+1. Edite os módulos de conteúdo, conforme necessário, na guia Content. Para focalizar o módulo de conteúdo relevante na hierarquia de conteúdo, você pode selecionar a linha ou o parágrafo relevante na pré-visualização de correspondências ou selecionar o módulo de conteúdo diretamente na hierarquia de conteúdo.
 
    Por exemplo, a linha &quot;Analisamos... &quot; é selecionada no gráfico abaixo e o módulo de conteúdo relevante é selecionado na guia Conteúdo.
 
@@ -86,8 +86,8 @@ Na guia content, gerencie o conteúdo, como fragmentos de documentos e variávei
    Para obter mais informações sobre as ações disponíveis para vários módulos na interface do usuário Criar correspondência, consulte [Ações e informações disponíveis na interface de usuário Criar correspondência](#actions-and-info-available-in-the-create-correspondence-content-tab).
 
 1. Para localizar módulos de conteúdo, use o campo Localizar. Insira o nome completo ou parcial ou o título do módulo de conteúdo para pesquisá-lo na correspondência.
-1. Toque no ícone Exibição ( ![exibição](assets/display.png)) na frente de uma lista, texto, condição ou área de público alvo para mostrá-lo ou ocultá-lo na correspondência.
-1. Para editar um módulo de texto incorporado ou editável, toque no **Editar** ícone ( ![edittextmodule](assets/edittextmodule.png)) ou clique duas vezes no módulo de texto relevante na pré-visualização de correspondências.
+1. Selecione o ícone Exibir ( ![exibição](assets/display.png)) na frente de uma lista, texto, condição ou área de público alvo para mostrá-lo ou ocultá-lo na correspondência.
+1. Para editar um módulo de texto incorporado ou editável, selecione o **Editar** ícone ( ![edittextmodule](assets/edittextmodule.png)) ou clique duas vezes no módulo de texto relevante na pré-visualização de correspondências.
 
    O sistema exibe um editor de texto para editar e formatar o texto.
 
@@ -131,22 +131,22 @@ Na guia content, gerencie o conteúdo, como fragmentos de documentos e variávei
 
    O Gerenciamento de correspondências incorporou suporte para 210 caracteres especiais. O administrador pode [adicionar suporte para mais caracteres especiais/personalizados por personalização](../../forms/using/custom-special-characters.md).
 
-1. Para destacar\enfatizar partes do texto em um módulo incorporado editável, selecione o texto e toque em Realçar cor.
+1. Para destacar\enfatizar partes do texto em um módulo incorporado editável, selecione o texto e selecione Realçar cor.
 
    ![letterbackgroundcolor](assets/letterbackgroundcolor.png)
 
-   Você pode tocar diretamente em uma cor básica `**[A]**` presente na paleta Cores básicas ou toque em **Selecionar** depois de usar o controle deslizante `**[B]**` para escolher o tom apropriado da cor.
+   É possível selecionar diretamente uma cor básica `**[A]**` presente na paleta Cores básicas ou selecione **Selecionar** depois de usar o controle deslizante `**[B]**` para escolher o tom apropriado da cor.
 
-   Como opção, você também pode ir para a guia Avançado para selecionar o Matiz, a Luminosidade e a Saturação apropriados `**[C]**` para criar a cor precisa e, em seguida, toque em Selecionar `**[D]**` para aplicar a cor para realçar o texto.
+   Como opção, você também pode ir para a guia Avançado para selecionar o Matiz, a Luminosidade e a Saturação apropriados `**[C]**` para criar a cor precisa e, em seguida, selecione Selecionar `**[D]**` para aplicar a cor para realçar o texto.
 
    ![textbackgroundcolor](assets/textbackgroundcolor.png)
 
-1. Faça as alterações apropriadas no conteúdo e formato e toque em **Salvar**. Toque em ( ![editnextmoduleccr](assets/editnextmoduleccr.png)) para mover entre módulos de texto editáveis ou toque em **Salvar e Avançar** para salvar as alterações e mover para o próximo módulo de texto editável.
-1. O sistema também exibe as variáveis não preenchidas para cada ramificação. Quando não há variáveis não preenchidas, as variáveis não preenchidas são mostradas como 0. Se houver uma variável não preenchida, você pode tocar em uma ramificação para expandi-la e localizar a variável não preenchida. Use a barra de ferramentas Conteúdo para Excluir o conteúdo, aumentar/diminuir o recuo do conteúdo e inserir quebras de página antes/depois do conteúdo.
+1. Faça as alterações apropriadas no conteúdo e formato e selecione **Salvar**. Selecionar ( ![editnextmoduleccr](assets/editnextmoduleccr.png)) para mover-se entre módulos de texto editáveis ou selecione **Salvar e Avançar** para salvar as alterações e mover para o próximo módulo de texto editável.
+1. O sistema também exibe as variáveis não preenchidas para cada ramificação. Quando não há variáveis não preenchidas, as variáveis não preenchidas são mostradas como 0. Se houver uma variável não preenchida, é possível selecionar uma ramificação para expandi-la e localizar a variável não preenchida. Use a barra de ferramentas Conteúdo para Excluir o conteúdo, aumentar/diminuir o recuo do conteúdo e inserir quebras de página antes/depois do conteúdo.
 
    Você pode inserir quebras de página acima e abaixo dos módulos de dados mesmo quando eles fazem parte de listas e condições.
 
-1. Toque em Abrir/Fechar variável de conteúdo ( ![opfind entvariables](assets/opencontentvariables.png)) para abrir as variáveis de conteúdo e preenchê-las adequadamente.
+1. Selecionar abrir/fechar conteúdo variável ( ![opfind entvariables](assets/opencontentvariables.png)) para abrir as variáveis de conteúdo e preenchê-las adequadamente.
 1. Depois de preencher corretamente a variável não preenchida, a contagem da variável não preenchida é definida como 0.
 
    Na interface do usuário Criar correspondência, a contagem de variáveis não preenchidas é exibida em cada nível da hierarquia de qualquer módulo que contenha pelo menos uma variável. Se um módulo contiver variáveis não preenchidas, a contagem será exibida no nível da variável, módulo, área de destino e modelo de correspondência.
@@ -204,8 +204,8 @@ Na guia content, gerencie o conteúdo, como fragmentos de documentos e variávei
 ### Gerenciar anexos {#manage-attachments}
 
 1. Selecionar **Anexos**. O Gerenciamento de correspondências exibe os anexos disponíveis, conforme configurado durante a criação do modelo de correspondência.
-1. Você pode optar por não enviar um anexo junto com a carta tocando no ícone de exibição e pode tocar na cruz no anexo para excluí-lo da carta. Para os anexos especificados, ao criar um modelo de correspondência, como Obrigatório, os ícones Exibir e Excluir ficam desativados.
-1. Toque em Acesso à biblioteca ( ![libraryaccess](assets/libraryaccess.png)) para acessar a Biblioteca de conteúdo e inserir ativos DAM como anexos.
+1. Você pode optar por não enviar um anexo junto com a carta tocando no ícone de exibição e pode selecionar a cruz no anexo para excluí-lo da carta. Para os anexos especificados, ao criar um modelo de correspondência, como Obrigatório, os ícones Exibir e Excluir ficam desativados.
+1. Selecione o Acesso à biblioteca ( ![libraryaccess](assets/libraryaccess.png)) para acessar a Biblioteca de conteúdo e inserir ativos DAM como anexos.
 
    >[!NOTE]
    >
@@ -219,13 +219,13 @@ Na guia content, gerencie o conteúdo, como fragmentos de documentos e variávei
 
 Você pode fazer alterações no layout e no conteúdo para garantir que a correspondência tenha a aparência desejada e enviá-la para os vários processos de publicação.
 
-1. Para destacar todo o conteúdo editável na carta, toque em **Realçar Seções Editáveis**.
+1. Para destacar todo o conteúdo editável na carta, selecione **Realçar Seções Editáveis**.
 
    O conteúdo editável da carta é realçado com o plano de fundo cinza.
 
    ![Realçar conteúdo editável](assets/4_highlightmoduleincontent-1.png)
 
-1. Edite os módulos de conteúdo, conforme necessário, na guia Content. Para focalizar o módulo de conteúdo relevante na hierarquia de conteúdo, você pode tocar na linha ou no parágrafo relevante na pré-visualização de correspondências ou tocar no módulo de conteúdo diretamente na hierarquia de conteúdo.
+1. Edite os módulos de conteúdo, conforme necessário, na guia Content. Para focalizar o módulo de conteúdo relevante na hierarquia de conteúdo, você pode selecionar a linha ou o parágrafo relevante na pré-visualização de correspondências ou selecionar o módulo de conteúdo diretamente na hierarquia de conteúdo.
 
    Por exemplo, a linha &quot;To allow us to access...&quot; é selecionada no gráfico abaixo e o módulo de conteúdo correspondente é selecionado na guia Content.
 
@@ -233,7 +233,7 @@ Você pode fazer alterações no layout e no conteúdo para garantir que a corre
 
    Para obter mais informações sobre as ações disponíveis para vários módulos na interface do usuário Criar correspondência, consulte [Ações e informações disponíveis na interface de usuário Criar correspondência](#actions-and-info-available-in-the-create-correspondence-content-tab).
 
-1. Para adicionar uma quebra de página à correspondência, toque em onde deseja inserir uma quebra de página e selecione Quebra de página antes ou Quebra de página depois ( ![pagebreakbefore after](assets/pagebreakbeforeafter.png)).
+1. Para adicionar uma quebra de página à correspondência, selecione onde deseja inserir uma quebra de página e selecione Quebra de página antes ou Quebra de página depois ( ![pagebreakbefore after](assets/pagebreakbeforeafter.png)).
 
    Um espaço reservado para quebra de página explícita é inserido na correspondência. Para ver como uma quebra de página explícita afeta a correspondência, consulte a pré-visualização de PDF nivelado.
 
@@ -243,13 +243,13 @@ Você pode fazer alterações no layout e no conteúdo para garantir que a corre
 
    ![Quebra de página explícita](assets/8_pagebreak.png)
 
-1. Para salvar a carta como rascunho, na qual você pode continuar trabalhando posteriormente, toque em Salvar como rascunho. Para usar essa opção, sua carta precisa ser [publicado](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Para obter mais informações, consulte Instância de rascunho em [Salvar rascunhos e enviar instâncias de carta](#savingdrafts).
+1. Para salvar a carta como rascunho, na qual você poderá continuar trabalhando posteriormente, selecione Salvar como rascunho. Para usar essa opção, sua carta precisa ser [publicado](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Para obter mais informações, consulte Instância de rascunho em [Salvar rascunhos e enviar instâncias de carta](#savingdrafts).
 
    ![saveasdraft](assets/saveasdraft.png)
 
-   A caixa de diálogo Nome da carta de rascunho é exibida com a ID da instância da carta. Você pode, opcionalmente, editar essa ID. Anote a ID da carta e toque em **Concluído**. Posteriormente, você pode usar essa ID para [recarregar o rascunho de carta](submit-letter-topostprocess.md#reloaddraft).
+   A caixa de diálogo Nome da carta de rascunho é exibida com a ID da instância da carta. Você pode, opcionalmente, editar essa ID. Anote a ID da carta e selecione **Concluído**. Posteriormente, você pode usar essa ID para [recarregar o rascunho de carta](submit-letter-topostprocess.md#reloaddraft).
 
-1. Para visualizar a carta como um PDF nivelado com o layout exato e as quebras de página como ela será enviada, toque em ( ![pré-visualização](assets/preview.png)) Visualizar.
+1. Para visualizar a correspondência como um PDF nivelado com o layout exato e as quebras de página como ela será enviada, selecione ( ![pré-visualização](assets/preview.png)) Visualizar.
 
    A letra aparece como um PDF achatado. O PDF achatado é a representação exata da letra, pois será enviada com as fontes, quebras e layout corretos da letra.
 
@@ -257,13 +257,13 @@ Você pode fazer alterações no layout e no conteúdo para garantir que a corre
    >
    >Se você estiver usando o Mozilla Firefox e o tipo de representação HTML, para visualizar a letra como PDF nivelado, certifique-se de usar o plug-in do navegador nativo e não o plug-in do Acrobat. Para selecionar o plug-in do navegador nativo, vá para as configurações do Mozilla Firefox e, para o tipo de conteúdo PDF, selecione Visualizar no Firefox.
 
-1. Se você achar que a visualização de PDF nivelado é satisfatória, toque em **Enviar** para enviar a carta. Ou, para alterar a letra, toque em **Sair da visualização** para voltar para a visualização Criar interface de correspondência da carta para fazer alterações nela. Ao tocar em Enviar, se a configuração Gerenciar instância de carta estiver habilitada na instância de Publicação, a instância de carta de envio será gerada.
+1. Se a visualização do PDF nivelado for satisfatória, selecione **Enviar** para enviar a carta. Ou, para alterar a letra, selecione **Sair da visualização** para voltar para a visualização Criar interface de correspondência da carta para fazer alterações nela. Quando você seleciona Enviar, se a configuração Gerenciar instância de carta estiver ativada na instância de Publicação, a instância de carta de envio é gerada.
 
    Para obter mais informações, consulte Instância de rascunho em Salvar rascunhos e enviar instâncias de cartas.
 
    Você também pode salvar a carta como rascunho para alterá-la posteriormente.
 
-   Depois de fazer as alterações necessárias, você pode enviar a correspondência da pré-visualização do HTML5 ou tocar em Visualizar novamente para revisar a saída de PDF nivelado.
+   Depois de fazer as alterações necessárias, você pode enviar a correspondência da pré-visualização do HTML5 ou selecionar Visualizar novamente para revisar a saída do PDF nivelado.
 
    Para obter informações sobre as diferenças entre os formulários HTML5 e PDF forms, consulte [Diferenciação de recursos entre formulários HTML e PDF forms](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
@@ -307,7 +307,7 @@ Para ativar o recurso Salvar como rascunho, substitua o URL existente em [!UICON
 
 1. Clique em Salvar.
 
-![Instância de publicação](/help/forms/using/assets/correspondencemanagement.png)
+![Publicar instância](/help/forms/using/assets/correspondencemanagement.png)
 
 Quando a opção para salvar as ocorrências de cartas está ativada, você tem a opção para selecionar onde salvar as ocorrências de cartas. Há duas opções para salvar as instâncias de carta: Salvar local ou Salvar remoto.
 
@@ -354,10 +354,10 @@ A seguir estão os benefícios e a funcionalidade disponíveis na pré-visualiza
 
 **Benefícios do formulário para publicação de conteúdo para dispositivos móveis/visualização de HTML**
 
-* **Toque em um valor de campo de dados para realçar o campo de dados correspondente**: na interface do usuário Criar correspondência, toque em um valor de campo de dados na correspondência para realçar o campo de dados correspondente na guia Dados. Para obter mais informações, consulte [Inserir dados](#enterdata).
+* **Selecione um valor de campo de dados para destacar o campo de dados correspondente**: na interface do usuário Criar correspondência, é possível selecionar um valor de campo de dados na correspondência para destacar o campo de dados correspondente na guia Dados. Para obter mais informações, consulte [Inserir dados](#enterdata).
 
 * **Suporte ao navegador**: Os navegadores removem gradualmente o suporte para NPAPI, o que afeta a pré-visualização de PDF da correspondência. A visualização da carta nos formulários HTML/móveis não é afetada por isso.
-* **Realçar conteúdo editável em uma correspondência**: na interface do usuário Criar correspondência, toque em Realçar conteúdo editável para realçar todo o conteúdo editável na letra em cinza. Para obter mais informações, consulte [Gerenciar conteúdo](#managecontent).
+* **Realçar conteúdo editável em uma correspondência**: na interface do usuário Criar correspondência, você pode selecionar Realçar conteúdo editável para realçar todo o conteúdo editável na correspondência em cinza. Para obter mais informações, consulte [Gerenciar conteúdo](#managecontent).
 
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`  **Benefícios da visualização do PDF**

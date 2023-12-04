@@ -2,10 +2,10 @@
 title: Saiba mais sobre o desenvolvimento headless do CMS
 description: Nesta parte da Jornada de desenvolvedores headless do AEM, saiba mais sobre a tecnologia headless e por que usá-la.
 exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1611'
-ht-degree: 86%
+source-wordcount: '1601'
+ht-degree: 82%
 
 ---
 
@@ -68,7 +68,7 @@ Omitir a interface simplifica o CMS ao remover a complexidade. Isso também alte
 
 ## Dissociação {#decoupling}
 
-A entrega headless é possível ao expor um conjunto de APIs (Application Programming Interfaces, interfaces de programação de aplicativos) robustas e flexíveis que todas as suas experiências podem aproveitar. A API atua como um idioma comum entre os serviços, vinculando-os no nível de conteúdo por meio de uma entrega de conteúdo padronizada, mas proporcionando flexibilidade para implementar suas próprias soluções.
+A entrega headless é possível expondo um conjunto de interfaces de programação de aplicativo (APIs) robustas e flexíveis que todas as suas experiências podem selecionar. A API atua como um idioma comum entre os serviços, vinculando-os no nível de conteúdo por meio de uma entrega de conteúdo padronizada, mas proporcionando flexibilidade para implementar suas próprias soluções.
 
 Headless é um exemplo de dissociação do conteúdo de sua apresentação. Ou, em um sentido mais genérico, significa dissociar o front-end do back-end na sua pilha de serviço. Em uma configuração headless, o sistema de apresentação (a interface) é dissociado do gerenciamento de conteúdo (o tail). Os dois só interagem por meio de chamadas de API.
 
@@ -120,7 +120,7 @@ Obrigado por começar a sua jornada headless do AEM. Agora que leu este document
 * Entender por que e quando o headless é necessário.
 * Possuir um conhecimento de alto nível sobre o uso dos conceitos headless e como eles se relacionam.
 
-Aplicar esse conhecimento e prosseguir com a jornada headless do AEM revisando o documento [Introdução ao AEM Headless ](getting-started.md), onde você aprenderá a configurar as ferramentas necessárias e descobrirá como o AEM aborda a entrega de conteúdo headless e quais são os pré-requisitos.
+Aproveite esse conhecimento e continue sua jornada AEM headless revisando o documento a seguir [Introdução ao AEM Headless](getting-started.md) onde você aprenderá a configurar as ferramentas necessárias e como começar a pensar sobre como o AEM se aproxima da entrega de conteúdo headless e seus pré-requisitos.
 
 ## Recursos adicionais {#additional-resources}
 

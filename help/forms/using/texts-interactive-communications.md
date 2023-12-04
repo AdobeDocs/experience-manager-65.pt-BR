@@ -10,9 +10,9 @@ discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 feature: Interactive Communication
 exl-id: b8e84c5d-2ec8-4575-9eed-6b37b04e5d66
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2475'
+source-wordcount: '2474'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ O fragmento do documento de texto na Comunicação interativa é compatível com
 
    * **[!UICONTROL Tags]**: Opcionalmente, para criar uma tag personalizada, insira o valor no campo de texto e pressione Enter. Quando você salva esse texto, as tags recém-adicionadas são criadas.
 
-1. Toque **[!UICONTROL Próxima]**.
+1. Selecione **[!UICONTROL Próximo]**.
 
    Criar texto é exibida. Se você tiver optado por criar um texto baseado no modelo de dados de formulário, as propriedades desse modelo serão exibidas no painel esquerdo.
 
@@ -68,7 +68,7 @@ O fragmento do documento de texto na Comunicação interativa é compatível com
    >
    >Você pode adicionar elementos do Modelo de dados de formulário, elementos do Dicionário de dados e variáveis usando o símbolo @ no editor de texto. Quando você insere uma string precedida por @ no editor de texto, todos os elementos do modelo de dados, os elementos do dicionário de dados e as variáveis são pesquisados, e os elementos ou as variáveis que contêm a string pesquisada são exibidos. É possível navegar pelos resultados da pesquisa e selecionar um elemento ou variável. Se não houver resultado correspondente, a variável *Nenhum resultado correspondente encontrado* será exibida.
 
-1. Toque **[!UICONTROL Salvar]**.
+1. Selecione **[!UICONTROL Salvar]**.
 
    O texto é criado. Agora é possível continuar usando o texto como um bloco de construção ao criar uma Comunicação interativa.
 
@@ -78,9 +78,9 @@ Você pode editar um fragmento de documento de texto existente usando as etapas 
 
 1. Selecionar **[!UICONTROL Forms]** > **[!UICONTROL Fragmentos do documento]**.
 1. Navegue até um fragmento de documento de texto e selecione-o.
-1. Toque **[!UICONTROL Editar]**.
+1. Selecione **[!UICONTROL Editar]**.
 1. Faça as alterações necessárias. Para obter mais informações sobre opções em texto, consulte [Criar texto](#createtext).
-1. Toque **[!UICONTROL Salvar]** e toque em **[!UICONTROL Fechar]**.
+1. Selecionar **[!UICONTROL Salvar]** e selecione **[!UICONTROL Fechar]**.
 
 ## Personalização de um fragmento de documento de texto usando propriedades do modelo de dados de formulário {#formdatamodel}
 
@@ -90,11 +90,11 @@ Se você tiver especificado um modelo de dados de formulário ao criar um texto,
 
 ![insertfdmelementtext](assets/insertfdmelementtext.png)
 
-* Para inserir uma propriedade de modelo de dados de formulário no texto, coloque o cursor onde deseja inserir a propriedade e selecione o **[A]** no painel esquerdo, tocando nela e tocando em **[!UICONTROL [B] Adicionar selecionado]**. Você também pode dar um toque duplo na propriedade para inseri-la na **[C]** posição do cursor. As propriedades do modelo de dados de formulário são realçadas em uma cor de plano de fundo acastanhada.
+* Para inserir uma propriedade de modelo de dados de formulário no texto, coloque o cursor onde deseja inserir a propriedade e selecione o **[A]** no painel esquerdo tocando nela e selecione **[!UICONTROL [B] Adicionar selecionado]**. Você também pode simplesmente selecionar duas vezes a propriedade para inseri-la na **[C]** posição do cursor. As propriedades do modelo de dados de formulário são realçadas em uma cor de plano de fundo acastanhada.
 
 Como alternativa, você pode pesquisar e adicionar a propriedade do modelo de dados de formulário usando o símbolo @ no editor de texto. Coloque o cursor onde deseja inserir a propriedade. Digite @ seguido pela sequência de pesquisa. A operação de pesquisa é executada em todas as propriedades e variáveis do modelo de dados de formulário disponíveis no fragmento do documento. As propriedades ou variáveis que contêm a string de pesquisa são recuperadas e exibidas como uma lista suspensa. Navegue pelos resultados da pesquisa e clique na propriedade que você deseja inserir no local do cursor. Pressione Esc para ocultar os resultados da pesquisa.
 
-* Para permitir que os agentes editem o valor de uma propriedade de modelo de dados de formulário na interface do usuário do agente enquanto [Preparar e enviar a comunicação interativa](/help/forms/using/prepare-send-interactive-communication.md) usando a interface do usuário do agente, toque na guia **[D]** bloquear ícone para essa propriedade e garantir que ela esteja em um estado desbloqueado. O estado padrão da propriedade é bloqueado e um agente não pode editar a propriedade na interface do usuário do agente.
+* Para permitir que os agentes editem o valor de uma propriedade de modelo de dados de formulário na interface do usuário do agente enquanto [Preparar e enviar a comunicação interativa](/help/forms/using/prepare-send-interactive-communication.md) usando a IU do agente, selecione a variável **[D]** bloquear ícone para essa propriedade e garantir que ela esteja em um estado desbloqueado. O estado padrão da propriedade é bloqueado e um agente não pode editar a propriedade na interface do usuário do agente.
 
 Você também pode usar as propriedades do modelo de dados de formulário para criar regras para exibir ou ocultar partes do conteúdo. Para obter mais informações, consulte [Criar regras em texto](#rules).
 
@@ -112,28 +112,28 @@ Ao criar ou editar um fragmento de documento de texto, é possível criar e inse
 
 ### Criar variáveis {#createvariables}
 
-1. No painel esquerdo, toque em **[!UICONTROL Variáveis]**.
+1. No painel esquerdo, selecione **[!UICONTROL Variáveis]**.
 
    O painel Variáveis é exibido.
 
    ![variablespane](assets/variablespane.png)
 
-1. Toque em **[!UICONTROL Criar]**.
+1. Selecione **[!UICONTROL Criar]**.
 
    Criar variáveis é exibido.
 
-1. Insira as seguintes informações e toque em **[!UICONTROL Criar]**:
+1. Insira as seguintes informações e selecione **[!UICONTROL Criar]**:
 
    * **[!UICONTROL Nome]** : Nome da variável.
    * **[!UICONTROL Descrição]** : Opcionalmente, insira uma descrição sobre a variável.
    * **[!UICONTROL Tipo]** : selecione um tipo da variável: String, Number, Boolean ou Date.
    * **[!UICONTROL Permitir Somente Valores Específicos]** : para variáveis de string e número, você pode garantir que o agente escolha entre um conjunto específico de valores para um espaço reservado na interface do usuário do agente. Para especificar o conjunto de valores, selecione essa opção e especifique valores separados por vírgula que sejam permitidos na **[!UICONTROL Valores]** campo.
 
-1. Toque em **[!UICONTROL Criar]**.
+1. Selecione **[!UICONTROL Criar]**.
 
    A variável é criada e listada no painel Variáveis.
 
-1. Para inserir uma variável no texto, coloque o cursor no local apropriado, selecione a variável e toque em **[!UICONTROL Adicionar selecionado]**.
+1. Para inserir uma variável no texto, coloque o cursor no local apropriado, selecione a variável e **[!UICONTROL Adicionar selecionado]**.
 
    ![variável inserida](assets/variableinserted.png)
 
@@ -141,7 +141,7 @@ Ao criar ou editar um fragmento de documento de texto, é possível criar e inse
 
    Como alternativa, você pode pesquisar e adicionar variáveis usando o símbolo @ no editor de texto. Coloque o cursor onde deseja inserir a variável. Digite @ seguido pela sequência de pesquisa. A operação de pesquisa é executada em todas as propriedades e variáveis do modelo de dados de formulário disponíveis no fragmento do documento. As propriedades e variáveis que contêm a string de pesquisa são recuperadas e exibidas como uma lista suspensa. Navegue pelos resultados da pesquisa e clique na variável que deseja inserir no local do cursor. Pressione Esc para ocultar os resultados da pesquisa.
 
-1. Toque **[!UICONTROL Salvar]**.
+1. Selecione **[!UICONTROL Salvar]**.
 
 ## Criar regras em texto {#rules}
 
@@ -160,7 +160,7 @@ Ao usar o editor de regras em um texto, é possível criar regras para exibir ou
 
    ![selectcontentapplyrule](assets/selectcontentapplyrule.png)
 
-1. Toque **[!UICONTROL Criar regra]**.
+1. Selecionar **[!UICONTROL Criar regra]**.
 
    A caixa de diálogo Criar regra é exibida. Além de sequência, número, expressão matemática e data, os itens a seguir também estão disponíveis no Editor de regras para criar instruções das regras:
 
@@ -185,11 +185,11 @@ Ao usar o editor de regras em um texto, é possível criar regras para exibir ou
 
    Regra para exibir o texto selecionado se o local do destinatário for EUA de acordo com os dados de origem do FDM
 
-   * Ao criar ou editar uma regra, você também pode tocar em ![icon_resize](assets/icon_resize.png) (Redimensionar) para expandir a caixa de diálogo Criar regra/Editar regra. A caixa de diálogo expandida em janela cheia permite arrastar e soltar propriedades e variáveis do modelo de dados de formulário para criar regras. Toque em Redimensionar novamente para voltar à caixa de diálogo Criar regra.
+   * Ao criar ou editar uma regra, você também pode selecionar ![icon_resize](assets/icon_resize.png) (Redimensionar) para expandir a caixa de diálogo Criar regra/Editar regra. A caixa de diálogo expandida em janela cheia permite arrastar e soltar propriedades e variáveis do modelo de dados de formulário para criar regras. Selecione Redimensionar novamente para voltar à caixa de diálogo Criar regra.
    * Você também pode criar várias condições em uma regra.
    * Você também pode criar regras de sobreposição, em que uma regra é aplicada a uma parte de um conteúdo que já tem uma regra aplicada.
 
-1. Toque **[!UICONTROL Concluído]**.
+1. Selecionar **[!UICONTROL Concluído]**.
 
    A regra é aplicada. O texto ou conteúdo ao qual a regra é aplicada é realçado em verde. Quando você passa o mouse sobre a alça esquerda do destaque, a regra aplicada é exibida.
 
@@ -219,13 +219,13 @@ Barra de ferramentas Listagem
 
 ### Realçar/Enfatizar partes do texto {#highlight}
 
-Para destacar\enfatizar partes do texto em um fragmento de documento editável, selecione o texto e toque em Realçar cor.
+Para destacar\enfatizar partes do texto em um fragmento de documento editável, selecione o texto e selecione Realçar cor.
 
 ![textbackgroundcolorplied-1](assets/textbackgroundcolorapplied-1.png)
 
-Você pode tocar diretamente em uma cor básica `**[A]**` presente na paleta Cores básicas ou toque em **Selecionar** depois de usar o controle deslizante `**[B]**` para escolher o tom apropriado da cor.
+É possível selecionar diretamente uma cor básica `**[A]**` presente na paleta Cores básicas ou selecione **Selecionar** depois de usar o controle deslizante `**[B]**` para escolher o tom apropriado da cor.
 
-Como opção, você também pode ir para a guia Avançado para selecionar o Matiz, a Luminosidade e a Saturação apropriados `**[C]**` para criar a cor precisa e, em seguida, toque em Selecionar `**[D]**` para aplicar a cor para realçar o texto.
+Como opção, você também pode ir para a guia Avançado para selecionar o Matiz, a Luminosidade e a Saturação apropriados `**[C]**` para criar a cor precisa e, em seguida, selecione Selecionar `**[D]**` para aplicar a cor para realçar o texto.
 
 ![textbackgroundcolor-2](assets/textbackgroundcolor-2.png)
 
@@ -264,15 +264,15 @@ Ao trabalhar com fragmentos de documento de texto contendo uma grande quantidade
 O recurso Localizar e substituir permite procurar (e substituir) qualquer cadeia de caracteres de texto em um fragmento de documento de texto. O recurso também inclui uma pesquisa avançada de expressão regular.
 
 1. Abrir um fragmento de documento de texto para [edição](#edittext).
-1. Toque **[!UICONTROL Localizar e substituir]**.
+1. Selecionar **[!UICONTROL Localizar e substituir]**.
 
-1. Insira o texto a ser pesquisado na **[!UICONTROL Localizar]** e o novo texto (texto de substituição) na caixa de texto **[!UICONTROL Substituir]** caixa de texto e toque **[!UICONTROL Substituir]**.
+1. Insira o texto a ser pesquisado na **[!UICONTROL Localizar]** e o novo texto (texto de substituição) na caixa de texto **[!UICONTROL Substituir]** caixa de texto e selecione **[!UICONTROL Substituir]**.
 
 1. Se o texto pesquisado for encontrado, ele será substituído pelo texto de substituição.
 
-   * Se outra instância do texto de pesquisa for encontrada, essa instância será realçada no fragmento do documento de texto. Se você tocar em **[!UICONTROL Substituir]** novamente, a instância destacada é substituída e o cursor avança, se uma terceira instância for encontrada.
+   * Se outra instância do texto de pesquisa for encontrada, essa instância será realçada no fragmento do documento de texto. Se você selecionar **[!UICONTROL Substituir]** novamente, a instância destacada é substituída e o cursor avança, se uma terceira instância for encontrada.
    * Se outra instância não for encontrada, a caixa de diálogo Localizar e substituir exibirá uma mensagem: Fim do módulo atingido.
 
-   Você também pode tocar em Substituir tudo para substituir todas as correspondências de uma só vez.
+   Você também pode selecionar Substituir todas para substituir todas as correspondências de uma só vez.
 
-   Localizar e substituir também inclui uma pesquisa poderosa de expressão regular. Para usar regex em sua pesquisa, selecione **[!UICONTROL Reg ex]** e toque em **[!UICONTROL Localizar]** ou **[!UICONTROL Substituir]**.
+   Localizar e substituir também inclui uma pesquisa poderosa de expressão regular. Para usar regex em sua pesquisa, selecione **[!UICONTROL Reg ex]** e selecione **[!UICONTROL Localizar]** ou **[!UICONTROL Substituir]**.

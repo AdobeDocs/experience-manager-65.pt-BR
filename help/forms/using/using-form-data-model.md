@@ -10,9 +10,9 @@ discoiquuid: 87f5f9f5-2d03-4565-830e-eacc3757e542
 docset: aem65
 feature: Form Data Model
 exl-id: 9a73a643-7ad4-49aa-a971-08d52679158d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1268'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ Você pode criar [formulários adaptáveis](../../forms/using/creating-adaptive-
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. Toque para expandir **[!UICONTROL Selecionar modelo de dados do formulário]**. Todos os modelos de dados de formulário disponíveis estão listados.
+1. Selecionar para expandir **[!UICONTROL Selecionar modelo de dados do formulário]**. Todos os modelos de dados de formulário disponíveis estão listados.
 
    Selecione um do modelo de dados.
 
@@ -93,19 +93,19 @@ Para obter mais informações, consulte:
 
 ## Visualizar com dados de amostra {#preview-ic}
 
-O editor do modelo de dados de formulário permite gerar e editar dados de amostra para objetos de modelo de dados no modelo de dados de formulário. Você pode usar esses dados para pré-visualizar e testar comunicações interativas e formulários adaptáveis. Você deve gerar os dados de amostra antes de visualizar como descrito em [Trabalhar com o modelo de dados de formulário](../../forms/using/work-with-form-data-model.md#sample).
+O editor do modelo de dados de formulário permite gerar e editar dados de amostra para objetos de modelo de dados no modelo de dados de formulário. Você pode usar esses dados para pré-visualizar e testar comunicações interativas e formulários adaptáveis. Gere os dados de amostra antes de visualizar conforme descrito em [Trabalhar com o modelo de dados de formulário](../../forms/using/work-with-form-data-model.md#sample).
 
 Para visualizar uma comunicação interativa com dados de modelo de dados de formulário de amostra:
 
 1. Na instância do autor AEM, navegue até **[!UICONTROL Forms > Forms e documentos]**.
-1. Selecione uma comunicação interativa e toque em **[!UICONTROL Visualizar]** na barra de ferramentas para selecionar **[!UICONTROL Canal da Web]**, **[!UICONTROL Canal de impressão]** ou **[!UICONTROL Ambos os canais]** para visualizar a comunicação interativa.
-1. Na visualização [*channel*] , certifique-se de que **[!UICONTROL Testar dados do modelo de dados do formulário]** está selecionado e toque em **[!UICONTROL Visualizar]**.
+1. Selecione uma comunicação interativa e selecione **[!UICONTROL Visualizar]** na barra de ferramentas para selecionar **[!UICONTROL Canal da Web]**, **[!UICONTROL Canal de impressão]** ou **[!UICONTROL Ambos os canais]** para visualizar a comunicação interativa.
+1. Na visualização [*channel*] , certifique-se de que **[!UICONTROL Testar dados do modelo de dados do formulário]** está selecionado e selecione **[!UICONTROL Visualizar]**.
 
 A comunicação interativa é aberta com dados de amostra pré-preenchidos.
 
 ![visualização da web](assets/web-preview.png)
 
-Da mesma forma, para visualizar um formulário adaptável com dados de amostra, abra o formulário adaptável no modo de autor e toque em **[!UICONTROL Visualizar]**.
+Da mesma forma, para visualizar um formulário adaptável com dados de amostra, abra o formulário adaptável no modo de autor e selecione **[!UICONTROL Visualizar]**.
 
 ## Preencher previamente usando o serviço de modelo de dados de formulário {#prefill}
 
@@ -135,10 +135,10 @@ Você também pode enviar anexos de formulário para uma fonte de dados usando a
 
 1. Adicione um objeto de modelo de dados que inclua uma propriedade binária ao modelo de dados de formulário.
 1. No formulário adaptável, arraste e solte a **[!UICONTROL Anexo de arquivo]** componente do navegador Componentes no formulário adaptável.
-1. Toque para selecionar o componente adicionado e toque em ![settings_icon](assets/settings_icon.png) para abrir o navegador Propriedades do componente.
-1. No campo Referência de vinculação, toque em ![foldersearch_18](assets/foldersearch_18.png) e navegue para selecionar a propriedade binária adicionada no modelo de dados de formulário. Configure outras propriedades, conforme apropriado.
+1. Selecione para selecionar o componente adicionado e ![settings_icon](assets/settings_icon.png) para abrir o navegador Propriedades do componente.
+1. No campo Referência de vinculação, selecione ![foldersearch_18](assets/foldersearch_18.png) e navegue para selecionar a propriedade binária adicionada no modelo de dados de formulário. Configure outras propriedades, conforme apropriado.
 
-   Toque ![botão de seleção](assets/check-button.png) para salvar as propriedades. O campo de anexo agora está associado à propriedade binária do modelo de dados de formulário.
+   Selecionar ![botão de seleção](assets/check-button.png) para salvar as propriedades. O campo de anexo agora está associado à propriedade binária do modelo de dados de formulário.
 
 1. Na seção Envio das propriedades do Contêiner de formulário adaptável, ative **[!UICONTROL Enviar anexos do formulário]**. Ele envia o anexo no campo de propriedade binária para a fonte de dados no envio do formulário.
 

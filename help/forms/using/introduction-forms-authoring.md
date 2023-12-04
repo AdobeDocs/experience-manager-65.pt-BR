@@ -11,10 +11,10 @@ discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3154'
-ht-degree: 56%
+source-wordcount: '3141'
+ht-degree: 54%
 
 ---
 
@@ -96,7 +96,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
 
   Permite editar as propriedades de um componente. As propriedades mudam de acordo com um componente. Para ver as propriedades do contêiner de formulário adaptável:
 
-  Selecione um componente e toque em ![nível de campo](assets/field-level.png) > **[!UICONTROL Contêiner de formulário adaptável]** e toque em ![cmppr](assets/cmppr.png).
+  Selecione um componente e ![nível de campo](assets/field-level.png) > **[!UICONTROL Contêiner de formulário adaptável]** e selecione ![cmppr](assets/cmppr.png).
 
 * **Navegador de ativos**
 
@@ -122,7 +122,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
   </tr>
   <tr>
    <td>Captcha</td>
-   <td>Adiciona a validação CAPTCHA usando o serviço Google reCAPTCHA. Para obter detalhes, consulte <a href="../../forms/using/captcha-adaptive-forms.md" target="_blank">Uso de CAPTCHA em formulários adaptáveis</a>.</td>
+   <td>Adiciona a validação CAPTCHA usando o serviço reCAPTCHA do Google. Para obter detalhes, consulte <a href="../../forms/using/captcha-adaptive-forms.md" target="_blank">Uso de CAPTCHA em formulários adaptáveis</a>.</td>
   </tr>
   <tr>
    <td>Gráfico</td>
@@ -158,7 +158,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
   </tr>
   <tr>
    <td>Anexo de arquivo</td>
-   <td><p>Adiciona um botão que permite aos usuários navegar e anexar documentos compatíveis a um formulário. Você pode anexar vários arquivos a um componente de anexo de arquivo. Você também pode especificar o **[!UICONTROL Tamanho Máximo do Arquivo]** e **[!UICONTROL Tipos de Arquivos Suportados]** para os anexos no navegador de propriedades do componente. </p> <p><strong> Observação: </strong><ul> <li> O componente não oferece suporte à anexação de arquivos com nomes de arquivo que comecem com caracteres (.), contendo os caracteres \ / : * ? " &lt; &gt; | ; % $ ou contendo nomes de arquivo especiais reservados para o sistema operacional Windows, como nul, prn, con, lpt ou com. </li> <li> Para anexar vários arquivos a um componente de anexo de arquivo aberto no navegador Apple Safari, selecione e anexe arquivos um por um. Não é possível selecionar e anexar vários arquivos de uma só vez.</li> <li>O componente de Anexo de arquivo é compatível com um conjunto predefinido de formatos de arquivo em formulários adaptáveis habilitados para o Adobe Sign. Para obter mais informações, consulte <a href="https://helpx.adobe.com/br/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Formatos de arquivo compatíveis</a>. </li></ul></p> </td>
+   <td><p>Adiciona um botão que permite aos usuários navegar e anexar documentos de suporte a um formulário. Você pode anexar vários arquivos a um componente de anexo de arquivo. Você também pode especificar o **[!UICONTROL Tamanho Máximo do Arquivo]** e **[!UICONTROL Tipos de Arquivos Suportados]** para os anexos no navegador de propriedades do componente. </p> <p><strong> Observação: </strong><ul> <li> O componente não oferece suporte à anexação de arquivos com nomes de arquivo que comecem com caracteres (.), contendo os caracteres \ / : * ? " &lt; &gt; | ; % $ ou contendo nomes de arquivo especiais reservados para o sistema operacional Windows, como nul, prn, con, lpt ou com. </li> <li> Para anexar vários arquivos a um componente de anexo de arquivo aberto no navegador Apple Safari, selecione e anexe arquivos um por um. Não é possível selecionar e anexar vários arquivos de uma só vez.</li> <li>O componente de Anexo de arquivo é compatível com um conjunto predefinido de formatos de arquivo em formulários adaptáveis habilitados para o Adobe Sign. Para obter mais informações, consulte <a href="https://helpx.adobe.com/br/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Formatos de arquivo compatíveis</a>. </li></ul></p> </td>
   </tr>
   <tr>
    <td>Listagem de Anexo de arquivo</td>
@@ -281,16 +281,16 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
 
 Algumas práticas recomendadas e pontos principais a serem lembrados ao trabalhar com componentes de formulário adaptáveis são os seguintes:
 
-* Cada componente tem propriedades associadas que controlam sua aparência e funcionalidade. Para configurar as propriedades de um componente, toque no componente e ![cmppr](assets/cmppr.png) para abrir as propriedades do componente no navegador Propriedades.
-* Um componente é identificado com seu nome de elemento. Ao tocar em ![cmppr](assets/cmppr.png), é possível alterar o nome do componente alterando o **[!UICONTROL Nome do elemento]** no navegador de propriedades. O campo Nome do elemento aceita somente letras, números, hifens (-) e sublinhados (_). Outros caracteres especiais não são permitidos e o nome do elemento deve começar com uma letra.
+* Cada componente tem propriedades associadas que controlam sua aparência e funcionalidade. Para configurar as propriedades de um componente, selecione o componente e ![cmppr](assets/cmppr.png) para abrir as propriedades do componente no navegador Propriedades.
+* Um componente é identificado com seu nome de elemento. Ao selecionar ![cmppr](assets/cmppr.png), é possível alterar o nome do componente alterando o **[!UICONTROL Nome do elemento]** no navegador de propriedades. O campo Nome do elemento aceita somente letras, números, hifens (-) e sublinhados (_). Outros caracteres especiais não são permitidos e o nome do elemento deve começar com uma letra.
 
 * Você pode modificar a propriedade Título de um componente de formulário adaptável em linha no editor de formulários sem abrir o navegador Propriedades, desde que o título esteja visível no formulário. Para fazer isso:
 
-   1. Toque para selecionar um componente que tenha uma **[!UICONTROL Título]** propriedade e cuja **[!UICONTROL Ocultar título]** propriedade está desativada.
+   1. Selecione para selecionar um componente que tenha um **[!UICONTROL Título]** propriedade e cuja **[!UICONTROL Ocultar título]** propriedade está desativada.
 
-   1. Toque ![aem_6_3_edit](assets/aem_6_3_edit.png) para tornar o título editável.
+   1. Selecionar ![aem_6_3_edit](assets/aem_6_3_edit.png) para tornar o título editável.
 
-   1. Modifique o título e toque na tecla Return ou em qualquer lugar fora do componente para salvar as alterações. Toque na tecla Esc para descartar as alterações.
+   1. Modifique o título e selecione a tecla Return ou selecione qualquer lugar fora do componente para salvar as alterações. Selecione a tecla Esc para descartar as alterações.
 
 * Alguns componentes de formulário adaptáveis, como Email e Telefone, incluem padrões de validação prontos para uso. No entanto, você pode especificar a validação personalizada atualizando o **[!UICONTROL Padrão de validação]** sob a opção Padrões nas propriedades do componente. Consulte descrições de componentes na tabela acima para obter mais informações sobre validações padrão.
 
@@ -304,7 +304,7 @@ Algumas práticas recomendadas e pontos principais a serem lembrados ao trabalha
 * O componente de anexo de Arquivo, por padrão, permite que um usuário anexe apenas um arquivo. No entanto, você pode configurar as propriedades do componente para suportar vários anexos. Além disso, se um usuário anexar vários arquivos com o mesmo nome de arquivo, os anexos poderão causar alguns problemas. Portanto, é recomendável associar um identificador exclusivo para cada anexo enviado no envio do formulário. Para fazer isso:
 
    1. No servidor do AEM Forms, navegue até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
-   1. Localizar e tocar **[!UICONTROL Serviço de configuração adaptável do Forms]**.
+   1. Localizar e selecionar **[!UICONTROL Serviço de configuração adaptável do Forms]**.
    1. Na caixa de diálogo Serviço de configuração do Forms adaptável, ative **[!UICONTROL Tornar Nomes de Arquivos Exclusivos]**. Por padrão, está desativado.
 
 * Para permitir que os usuários anexem um PDF usando o navegador Safari, verifique se **application/pdf** é adicionado à propriedade Tipos de arquivo suportados do componente de anexo de arquivo. Os formulários adaptáveis criados com a versão anterior do AEM Forms podem conter **.pdf** em vez de **application/pdf** na propriedade Tipos de arquivos suportados.
@@ -345,7 +345,7 @@ A barra de ferramentas da página na parte superior fornece opções que permite
 
 Ao selecionar um componente, você visualiza uma barra de ferramentas que permite trabalhar nele. Há opções para recortar, colar, mover e especificar as propriedades dos componentes. As opções são:
 
-A.**Configurar**: ao tocar em **[!UICONTROL Configurar]**, as propriedades do componente ficam visíveis na barra lateral. A configuração dessas propriedades permite personalizar a experiência de captura de dados. Você pode alterar o nome do elemento do componente, especificar o texto do rótulo no campo Título do componente. O nome do elemento permite capturar valores inseridos pelos usuários usando o componente. Nas propriedades do componente, especifique o comportamento do componente e gerencie a entrada do usuário. Configure as propriedades na barra lateral para capturar os dados do usuário e usá-los para processamento adicional. As propriedades para o contêiner de formulário adaptável permitem especificar as bibliotecas do cliente, os Layouts, os Temas, as configurações do Documento de registro, as configurações de salvamento, as configurações de envio e as configurações de metadados.
+A.**Configurar**: Ao selecionar **[!UICONTROL Configurar]**, as propriedades do componente ficam visíveis na barra lateral. A configuração dessas propriedades permite personalizar a experiência de captura de dados. Você pode alterar o nome do elemento do componente, especificar o texto do rótulo no campo Título do componente. O nome do elemento permite capturar valores inseridos pelos usuários usando o componente. Nas propriedades do componente, especifique o comportamento do componente e gerencie a entrada do usuário. Configure as propriedades na barra lateral para capturar os dados do usuário e usá-los para processamento adicional. As propriedades para o contêiner de formulário adaptável permitem especificar as bibliotecas do cliente, os Layouts, os Temas, as configurações do Documento de registro, as configurações de salvamento, as configurações de envio e as configurações de metadados.
 
 B.**Copiar**: você pode usar a opção de copiar para copiar um componente e colá-lo em outros lugares do formulário. Quando você cola um componente, o componente colado obtém um novo nome de elemento, mas retém as propriedades do componente copiado.
 
@@ -363,7 +363,7 @@ H. **Grupo**: permite selecionar vários componentes se você deseja cortar, cop
 
 I. **Página principal**: permite selecionar a página principal de um componente. Por exemplo, um campo de texto está em uma subseção, que fica em uma seção. A seção reside no painel raiz da guia, e o contêiner de formulário adaptável é o pai de um painel raiz da guia. Para um componente, você pode observar todas as opções com a hierarquia classificada de baixo para cima.
 
-Por exemplo, se você tocar em **[!UICONTROL Página principal]** numa caixa de texto, é possível ver:
+Por exemplo, se você selecionar **[!UICONTROL Pai]** para uma caixa de texto, você pode ver:
 
 * Subseção
 * Seção

@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Correspondence Management
 exl-id: 9e1b0067-c7dc-4bbb-a209-d674592be858
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2170'
+source-wordcount: '2171'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Depois de analisar o layout necessário para criar a Comunicação interativa, �
 
 Execute as seguintes etapas para usar o subformulário em um modelo XDP:
 
-1. Abra o Forms Designer e selecione **Arquivo** > **Novo** > **Usar um formulário em branco**, toque em **Próxima** e toque em **Concluir** para abrir o formulário para criação de modelo.
+1. Abra o Forms Designer e selecione **Arquivo** > **Novo** > **Usar um formulário em branco**, selecione **Próxima** e selecione **Concluir** para abrir o formulário para criação de modelo.
 
    Certifique-se de que o **Biblioteca de objetos** e **Objeto** opções são selecionadas no **Janela** menu.
 
@@ -90,7 +90,7 @@ Execute as seguintes etapas para usar o subformulário em um modelo XDP:
    1. Navegue até o local onde o arquivo será salvo e especifique um nome para o modelo XDP.
    1. Selecionar **.xdp** do **Salvar como tipo** lista suspensa.
 
-   1. Toque **Salvar**.
+   1. Selecione **Salvar**.
 
 ### Usar o componente Campo de imagem em um modelo XDP {#use-image-field-component-in-an-xdp-template}
 
@@ -124,9 +124,9 @@ Execute as seguintes etapas para usar o componente Tabela no modelo XDP usando o
 
    1. Especifique o número de linhas e colunas da tabela.
    1. Selecione o **Incluir linha de cabeçalho na tabela** para incluir uma linha para o cabeçalho da tabela.
-   1. Toque **OK**.
+   1. Selecionar **OK**.
 
-1. Toque **+** no painel esquerdo ao lado do nome da tabela, clique com o botão direito do mouse nos nomes das células incluídas no cabeçalho e em outras linhas e selecione **Renomear objeto** para renomear as células da tabela.
+1. Selecionar **+** no painel esquerdo ao lado do nome da tabela, clique com o botão direito do mouse nos nomes das células incluídas no cabeçalho e em outras linhas e selecione **Renomear objeto** para renomear as células da tabela.
 1. Clique nos campos de texto do cabeçalho da tabela na **Modo Design** e renomeie-as.
 1. Arraste e solte a variável **Campo de texto** componente do **Biblioteca de objetos** para cada célula da tabela no **Modo Design**. Execute esta etapa para poder vincular células de tabela aos objetos de modelo de dados de formulário ao criar a Comunicação interativa.
 
@@ -141,15 +141,15 @@ Execute as seguintes etapas para usar o componente Tabela no modelo XDP usando o
    1. Navegue até o local onde o arquivo será salvo e especifique o nome do modelo XDP.
    1. Selecionar **.xdp** do **Salvar como tipo** lista suspensa.
 
-   1. Toque **Salvar**.
+   1. Selecione **Salvar**.
 
 ### Fazer upload do modelo XDP para o servidor do AEM Forms {#uploadxdptemplate}
 
 Depois de criar um modelo XDP usando o Forms Designer, você deve carregá-lo no servidor do AEM Forms para que o modelo esteja disponível para uso ao criar a Comunicação interativa.
 
 1. Selecionar **Forms** > **Forms e documentos**.
-1. Toque **Criar** > **Upload de arquivo**.
-1. Navegue até o local do modelo XDP no sistema de arquivos local e toque em **Abertura** para importar o modelo XDP para o servidor do AEM Forms.
+1. Selecionar **Criar** > **Upload de arquivo**.
+1. Navegue até o local do modelo XDP no sistema de arquivos local e selecione **Abertura** para importar o modelo XDP para o servidor do AEM Forms.
 
 ## Uso do schema {#using-schema}
 

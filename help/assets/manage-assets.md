@@ -7,9 +7,9 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '10067'
+source-wordcount: '10038'
 ht-degree: 3%
 
 ---
@@ -102,7 +102,7 @@ Para configurar a tarefa de limpeza para os trabalhos de upload de partes não c
 
 >[!CAUTION]
 >
->O upload de partes é acionado quando o valor padrão é 500 MB e o tamanho da parte é 50 MB. Se você editar [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html?lang=pt-BR) e defina o `timeout configuration` Para menos tempo do que o necessário para um ativo carregar, você encontra uma situação de tempo limite de sessão enquanto o upload do ativo está em andamento. Portanto, altere o `chunkUploadMinFileSize` e `chunksize` para que cada solicitação de segmento atualize a sessão.
+>O upload de partes é acionado quando o valor padrão é 500 MB e o tamanho da parte é 50 MB. Se você editar [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html) e defina o `timeout configuration` Para menos tempo do que o necessário para um ativo carregar, você encontra uma situação de tempo limite de sessão enquanto o upload do ativo está em andamento. Portanto, altere o `chunkUploadMinFileSize` e `chunksize` para que cada solicitação de segmento atualize a sessão.
 >
 >Considerando o tempo limite de expiração de credencial, a latência, a largura de banda e os uploads simultâneos esperados, o valor mais alto que permite garantir que o seguinte seja escolhido:
 >
@@ -318,7 +318,7 @@ Para transcodificar um arquivo de vídeo escolhendo entre várias predefiniçõe
 | Vídeo adaptável | | Uma única predefinição de codificação que funciona com qualquer taxa de proporção para criar vídeos, para serem enviados a dispositivos móveis, tablets e computadores de mesa. Os vídeos de origem carregados codificados com essa predefinição são definidos com uma altura fixa. No entanto, a largura é dimensionada automaticamente para preservar a proporção do vídeo. <br>A prática recomendada é usar a codificação do Adaptive Video. |
 | Predefinições de codificação única | Predefinições de codificação de classificação | Selecionar **[!UICONTROL Nome]** ou **[!UICONTROL Tamanho]** para classificar as predefinições de codificação listadas em Área de trabalho, Dispositivo móvel e Tablet por nome ou por tamanho de resolução. |
 | | Desktop | Crie um arquivo MP4 para proporcionar uma experiência de vídeo contínua ou progressiva a computadores desktop. Selecione uma ou mais taxas de proporção com o tamanho da resolução e a taxa de dados de destino desejados. |
-| | Móvel | Crie um arquivo MP4 para entrega em dispositivos móveis iPhone ou Android™. Selecione uma ou mais taxas de proporção com o tamanho da resolução e a taxa de dados de destino desejados. |
+| | Mobile | Crie um arquivo MP4 para entrega em dispositivos móveis iPhone ou Android™. Selecione uma ou mais taxas de proporção com o tamanho da resolução e a taxa de dados de destino desejados. |
 | | Tablet | Crie um arquivo MP4 para entrega em dispositivos tablet iPad ou Android™. Selecione uma ou mais taxas de proporção com o tamanho da resolução e a taxa de dados de destino desejados. |
 
 #### Definir predefinições de conjunto de lotes no upload {#setting-batch-set-presets-at-upload}
@@ -655,7 +655,7 @@ Para pesquisas simples, avançadas e personalizadas para descobrir e usar os ati
 
 Os ícones de ação rápida estão disponíveis para um único ativo de cada vez. Dependendo do dispositivo, execute as seguintes ações para exibir os ícones de ação rápida:
 
-* Dispositivos de toque: toque e segure. Por exemplo, em uma iPad, é possível tocar e segurar um ativo para que as ações rápidas sejam exibidas.
+* Dispositivos de toque: toque e segure. Por exemplo, em uma iPad, é possível selecionar e manter um ativo para que as ações rápidas sejam exibidas.
 * Dispositivos sem toque: passe o ponteiro do mouse. Por exemplo, em um dispositivo de desktop, a barra de ação rápida é exibida se você passar o ponteiro do mouse sobre a miniatura do ativo.
 
 ### Navegar e selecionar ativos {#navigating-and-selecting-assets}
