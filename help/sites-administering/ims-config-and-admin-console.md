@@ -7,10 +7,10 @@ topic-tags: Security
 content-type: reference
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8c0c2d89fca7a5ba1a834108ae54fed524b3cbab
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 11%
+source-wordcount: '1604'
+ht-degree: 6%
 
 ---
 
@@ -19,10 +19,6 @@ ht-degree: 11%
 >[!NOTE]
 >
 >Esse recurso está disponível somente para clientes do Adobe Managed Services.
-
->[!NOTE]
->
->Atualmente, o Adobe Experience Manager (AEM) não oferece suporte à atribuição de grupos a perfis. Em vez disso, os usuários devem ser adicionados individualmente.
 
 ## Introdução {#introduction}
 
@@ -54,7 +50,7 @@ O fluxo de logon do usuário é mostrado abaixo. O usuário será redirecionado 
 
 A integração do cliente ao [!DNL Admin Console] O é um pré-requisito para o uso do Adobe IMS para autenticação AEM.
 
-Como primeira etapa, os clientes devem ter uma Organização provisionada no Adobe IMS. Os clientes do Adobe Enterprise são representados como Organizações IMS no [Adobe [!DNL Admin Console]](https://helpx.adobe.com/br/enterprise/using/admin-console.html).
+Como primeira etapa, os clientes devem ter uma Organização provisionada no Adobe IMS. Os clientes do Adobe Enterprise são representados como Organizações do IMS na [Adobe [!DNL Admin Console]](https://helpx.adobe.com/br/enterprise/using/admin-console.html).
 
 Os clientes do AEM Managed Services já devem ter uma organização provisionada e, como parte do provisionamento do IMS, as instâncias do cliente serão disponibilizadas no [!DNL Admin Console] para gerenciar direitos e acesso do usuário.
 
