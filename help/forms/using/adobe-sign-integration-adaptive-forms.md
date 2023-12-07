@@ -7,9 +7,9 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: ab40115c373cc06a7600494288b2670deb914e1a
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '2071'
 ht-degree: 1%
 
 ---
@@ -57,34 +57,44 @@ Depois que os pré-requisitos estiverem em vigor, execute as seguintes etapas pa
 
    >[!NOTE]
    >
-   >Você pode executar as etapas 1 a 4 para criar um contêiner de configuração e criar um [!DNL Adobe Sign] no contêiner ou use o existente `global` pasta em **Ferramentas** ![martelo](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. Se você criar a configuração no novo container de configuração, certifique-se de especificar o nome do container no **[!UICONTROL Contêiner de configuração]** ao criar um formulário adaptável.
+   >Você pode executar as etapas 1 a 4 para criar um contêiner de configuração e criar um [!DNL Adobe Sign] no contêiner ou use o existente `global` pasta em **Ferramentas** ![martelo](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. Se você criar a configuração no novo container de configuração, certifique-se de especificar o nome do container no **[!UICONTROL Contêiner de configuração]** ao criar um Formulário adaptável.
 
    >[!NOTE]
    >
    Verifique se o URL da página de configuração do Cloud Service começa com **HTTPS**. Caso contrário, [ativar SSL](/help/sites-administering/ssl-by-default.md) para AEM [!DNL Forms] servidor.
 
-1. Na página de configuração, selecione **[!UICONTROL Criar]** para criar [!DNL Adobe Sign] configuração no AEM [!DNL Forms].
-1. No **[!UICONTROL Geral]** guia do **[!UICONTROL Criar configuração do Adobe Sign]** página, especifique um **[!UICONTROL Nome]** para a configuração e selecione **[!UICONTROL Próxima]**. Opcionalmente, é possível especificar um título e procurar para selecionar uma miniatura para a configuração.
 
-1. Copie o URL na janela atual do navegador para um bloco de notas. É necessário configurar [!DNL Adobe Sign] aplicativo com AEM[!DNL Forms].
+1. Na página de configuração, toque em **[!UICONTROL Criar]** para criar [!DNL Adobe Sign] configuração no AEM [!DNL Forms].
+1. No **[!UICONTROL Geral]** guia do **[!UICONTROL Criar configuração do Adobe Sign]** página, especifique um **[!UICONTROL Nome]** para a configuração e toque em **[!UICONTROL Próxima]**. Opcionalmente, é possível especificar um título e procurar para selecionar uma miniatura para a configuração.
+1. Agora é possível **[!UICONTROL Selecionar solução]** para selecionar [!DNL Adobe Acrobat Sign].
 
-1. No **[!UICONTROL Configurações]** , a guia **[!UICONTROL URL do OAuth]** contém o URL padrão. O formato do URL é:
+   ![Adobe Acrobat Sign Solutions](/help/forms/using/assets/adobe-sign-solution.png)
 
-   `https://<shard>/public/oAuth/v2`
+1. Copie o URL na janela atual do navegador para um bloco de notas e remova a parte /`ui#/aem` do URL. O URL modificado é então necessário para configurar o [!DNL Adobe Acrobat Sign] aplicativo com [!DNL AEM Forms], em uma etapa posterior. Toque [!UICONTROL Próxima].
 
-   Por exemplo:
-   `https://secure.na1.echosign.com/public/oauth/v2`
+1. No **[!UICONTROL Configurações]** guia,
+   * o **[!UICONTROL URL do OAuth]** contém o URL padrão que inclui o fragmento de banco de dados do Adobe Sign. O formato do URL é:
+
+     `https://<shard>/public/oauth/v2`
+
+     Por exemplo:
+     `https://secure.na1.echosign.com/public/oauth/v2`
+
+   * o **[!UICONTROL URL do token de acesso]** contém o URL padrão que inclui o fragmento de banco de dados do Adobe Sign. O formato do URL é:
+
+     `https://<shard>/oauth/v2/token`
+
+     Por exemplo:
+     `https://api.na1.echosign.com/oauth/v2/token`
 
    em que:
 
-   **na1** refere-se ao fragmento de banco de dados padrão. Você pode modificar o valor do fragmento de banco de dados. Certifique-se de que o [!DNL  Adobe Sign] As configurações de nuvem apontam para a variável [corrigir fragmento](https://helpx.adobe.com/sign/using/identify-account-shard.html).
-
-   Se você criar outro [!DNL Adobe Sign] para um recurso ou componente do Adobe Experience Manager, verifique se todas as [!DNL Adobe Sign] As configurações de nuvem apontam para o mesmo fragmento.
+   **na1** refere-se ao fragmento de banco de dados padrão. Você pode modificar o valor do fragmento de banco de dados. Certifique-se de que o [!DNL  Adobe Acrobat Sign] As configurações de nuvem apontam para a variável [corrigir fragmento](https://helpx.adobe.com/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
-   Mantenha a **Criar configuração do Adobe Sign** página aberta. Não feche. Você pode recuperar **ID do cliente** e **Segredo do cliente** após definir as configurações de OAuth para o [!DNL Adobe Sign] conforme descrito nas próximas etapas.
-
+   * Mantenha a **Criar configuração do Adobe Acrobat Sign** página aberta. Não feche. Você pode recuperar **ID do cliente** e **Segredo do cliente** após definir as configurações de OAuth para o [!DNL Adobe Acrobat Sign] conforme descrito nas próximas etapas.
+   * Depois de fazer logon na conta da Adobe Sign, navegue até **[!UICONTROL API do Acrobat Sign]** > **[!UICONTROL Informações da API]** > **[!UICONTROL Documentação de Métodos da API REST]** > **[!UICONTROL Token de acesso OAuth]** para acessar informações relacionadas ao URL do OAuth e ao URL do token de acesso do Adobe Sign.
 
 1. Defina as configurações de OAuth para o [!DNL Adobe Sign] aplicativo:
 
@@ -104,22 +114,23 @@ Depois que os pré-requisitos estiverem em vigor, execute as seguintes etapas pa
 
    ![Configuração do OAuth](assets/oauthconfig_new.png)
 
-1. Volte para o **[!UICONTROL Criar configuração do Adobe Sign]** página. No **[!UICONTROL Configurações]** , a guia **[!UICONTROL URL do OAuth]** menciona o URL padrão. O formato do URL é:
+<!--
+1. Go back to the **[!UICONTROL Create Adobe Sign Configuration]** page. In the **[!UICONTROL Settings]** tab, the **[!UICONTROL OAuth URL]** field mentions the  default URL. The format of the URL is:
 
    `https://<shard>/public/oAuth/v2`
 
-   Por exemplo:
+   For example: 
    `https://secure.na1.echosign.com/public/oauth/v2`
 
-   em que:
+   where:
 
-   **na1** refere-se ao fragmento de banco de dados padrão.
+   **na1** refers to the default database shard.
 
-   Você pode modificar o valor do fragmento de banco de dados. Reinicie o servidor para poder usar o novo valor para o fragmento de banco de dados.
+   You can modify the value for the database shard. Restart the server to be able to use the new value for the database shard.
 
    >[!NOTE]
    >
-   Certifique-se de que as configurações da instância do autor e de publicação apontem para o mesmo fragmento. Se você criar várias configurações do Adobe Sign para uma organização, verifique se todas as configurações utilizam o mesmo fragmento.
+   >Ensure that your author and publish instance configurations point to the same shard. If you create multiple Adobe Sign configurations for an organization, ensure all the configurations utilize the same shard. -->
 
 1. Volte para o **[!UICONTROL Criar configuração do Adobe Sign]** página. No **[!UICONTROL Configurações]** especifique a **ID do cliente** (também conhecido como ID do aplicativo) e **Segredo do cliente**. Use o [ID do cliente e segredo do cliente do aplicativo Adobe Sign](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) criado para o AEM Forms.
 
@@ -127,8 +138,9 @@ Depois que os pré-requisitos estiverem em vigor, execute as seguintes etapas pa
 
 1. Selecionar **[!UICONTROL Conectar-se ao Adobe Sign]**. Quando as credenciais forem solicitadas, forneça o nome de usuário e a senha da conta usada ao criar [!DNL Adobe Sign] aplicação.
 
-1. Selecionar **[!UICONTROL Criar]** para criar o [!DNL Adobe Sign] configuração.
+   ![Êxito na configuração da nuvem do Adobe Acrobat Sign](assets/adobe-sign-cloud-configuration-success.png)
 
+1. Toque **[!UICONTROL Criar]** para criar o [!DNL Adobe Sign] configuração.
 1. Abra o console da Web AEM. O URL é `https://'[server]:[port]'/system/console/configMgr`
 1. Abertura **[!UICONTROL Serviço de configuração comum do Forms].**
 1. No **[!UICONTROL Permitir]** campo, **selecionar** Todos os usuários - Todos os usuários, anônimos ou conectados, podem visualizar anexos, verificar e assinar formulários e clicar em **[!UICONTROL Salvar].** A instância do autor está configurada para usar [!DNL Adobe Sign].
@@ -136,6 +148,10 @@ Depois que os pré-requisitos estiverem em vigor, execute as seguintes etapas pa
 1. Uso [replicação](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html) para criar configurações idênticas nas instâncias de publicação correspondentes.
 
 Agora, [!DNL Adobe Sign] é integrado ao AEM [!DNL Forms] e pronto para uso em formulários adaptáveis. Para [usar o serviço Adobe Sign em um formulário adaptável](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form), especifique o container de configuração criado acima nas propriedades do formulário adaptável.
+
+>[!NOTE]
+>
+Para configurar a sandbox da Adobe Sign, você pode seguir as mesmas etapas de configuração descritas em [Adobe Sign](#adobe-sign).
 
 ## Conectar o AEM Forms com o Adobe Acrobat Sign Solutions para o governo {#adobe-acrobat-sign-for-government}
 
@@ -205,7 +221,28 @@ O representante gera e compartilha credenciais com você. Na próxima seção, u
 
 1. No **[!UICONTROL E-mail]** especifique o endereço de email associado à sua conta do Adobe Acrobat Sign Solutions for Government.
 
-1. A variável **[!UICONTROL URL do OAuth]** campo especifica o fragmento de banco de dados do Adobe Sign. O campo contém o URL padrão. Não altere o URL.
+1. No **[!UICONTROL Configurações]** guia,
+   * o **[!UICONTROL URL do OAuth]** contém o URL padrão que inclui o fragmento de banco de dados do Adobe Sign. O formato do URL é:
+
+     `https://<shard>/api/gateway/adobesignauthservice/api/v1/authorize`
+
+     Por exemplo:
+     `https://secure.na1.adobesign.us/api/gateway/adobesignauthservice/api/v1/authorize`
+
+   * o **[!UICONTROL URL do token de acesso]** contém o URL padrão que inclui o fragmento de banco de dados do Adobe Sign. O formato do URL é:
+
+     `https://<shard>/api/gateway/adobesignauthservice/api/v1/token`
+
+     Por exemplo:
+     `https://secure.na1.adobesign.us/api/gateway/adobesignauthservice/api/v1/token`
+
+   em que:
+
+   **na1** refere-se ao fragmento de banco de dados padrão. Você pode modificar o valor do fragmento de banco de dados. Certifique-se de que o [!DNL  Adobe Acrobat Sign] As configurações de nuvem apontam para a variável [corrigir fragmento](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+
+   >[!NOTE]
+   >
+   * Depois de fazer logon na conta da Adobe Sign, navegue até **[!UICONTROL API do Acrobat Sign]** > **[!UICONTROL Informações da API]** > **[!UICONTROL Documentação de Métodos da API REST]** > **[!UICONTROL Token de acesso OAuth]** para acessar informações relacionadas ao URL do Adobe Sign oAuth e ao URL do token de acesso.
 
 1. Usar as credenciais compartilhadas pela Adobe Acrobat Sign para o representante de soluções do governo ([Membro da equipe do Adobe Professional Services]) na seção anterior como [**[!UICONTROL ID do cliente]** e **[!UICONTROL Segredo do cliente]**].
 

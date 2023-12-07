@@ -5,9 +5,9 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 4158315c28412bb9498c7d49d21b3f4d72681fc6
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1533'
 ht-degree: 1%
 
 ---
@@ -236,3 +236,8 @@ Faça o seguinte para executar o teste:
    Agora, se você testar o serviço do modelo de leitura novamente para a id 7107215, ele buscará e exibirá os detalhes do cliente atualizados, como mostrado abaixo.
 
    ![atualizado para leitura](assets/read-updated.png)
+
+
+>[!NOTE]
+>
+> Você pode criar e usar a configuração da Lista do SharePoint usando o Modelo de dados de formulário em um Formulário adaptável para salvar dados ou o Documento de registro gerado em uma Lista do SharePoint. Consulte [Conectar um formulário adaptável à lista Microsoft® SharePoint](/help/forms/using/configuring-submit-actions.md#create-a-sharepoint-list-configuration), para obter etapas detalhadas.
