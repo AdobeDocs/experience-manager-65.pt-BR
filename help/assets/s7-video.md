@@ -1,19 +1,17 @@
 ---
 title: Vídeo
-description: Saiba mais sobre o gerenciamento centralizado de ativos de vídeo do Adobe Experience Manager Assets, onde você pode fazer upload de vídeos para codificação automática no Dynamic Media Classic e acessar vídeos do Dynamic Media Classic diretamente do Experience Manager Assets. A integração de vídeo do Dynamic Media Classic estende o alcance do vídeo otimizado para todas as telas.
-uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
+description: Saiba mais sobre a Adobe Experience Manager Assets de gerenciamento centralizado de ativos de vídeo, onde você pode fazer upload de vídeos para codificação automática no Dynamic Media Classic e acessar vídeos do Dynamic Media Classic diretamente da Experience Manager Assets. A integração de vídeo do Dynamic Media Classic estende o alcance do vídeo otimizado para todas as telas.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
-discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 role: User, Admin
 mini-toc-levels: 3
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Video
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1559'
+source-wordcount: '1551'
 ht-degree: 1%
 
 ---

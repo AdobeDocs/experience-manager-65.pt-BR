@@ -1,22 +1,18 @@
 ---
 title: Publicar coleções no Brand Portal
-seo-title: Publish collections to Brand Portal
 description: Saiba como publicar e desfazer a publicação de coleções no Brand Portal.
-seo-description: Learn how to publish and unpublish collections to Brand Portal.
-uuid: 7de58548-4cfa-4a94-bac7-9e914dee9042
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: brand-portal
 content-type: reference
-discoiquuid: 90e3fd0e-9bc3-4aff-8c7b-7408f5b940e8
 docset: aem65
 feature: Brand Portal
 role: User
 exl-id: 8f426012-d9ec-418e-8ab6-78e4aeff7538
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 36%
+source-wordcount: '321'
+ht-degree: 30%
 
 ---
 
@@ -28,14 +24,14 @@ Se você fizer modificações subsequentes na coleção original no AEM Assets, 
 
 >[!NOTE]
 >
->Os fragmentos de conteúdo não podem ser publicados no Brand Portal. Portanto, se selecionar fragmentos de conteúdo no AEM Author, **Publicar no Brand Portal** ação não disponível.
+>Os fragmentos de conteúdo não podem ser publicados no Brand Portal. Portanto, se selecionar fragmentos de conteúdo no autor do AEM, **Publicar no Brand Portal** ação não disponível.
 >
->Se as coleções que contêm fragmentos de conteúdo forem publicadas do Autor do AEM para o Brand Portal, todo o conteúdo da pasta, exceto fragmentos de conteúdo, será replicado para a interface do Brand Portal.
+>Se as coleções que contêm fragmentos de conteúdo forem publicadas do AEM Author para o Brand Portal, todo o conteúdo da pasta, exceto fragmentos de conteúdo, será replicado para a interface do Brand Portal.
 
 ## Publicar uma coleção no Brand Portal {#publish-a-collection-to-brand-portal}
 
 1. Na interface do usuário do AEM Assets, clique no logotipo do AEM.
-1. Na página **Navegação**, acesse **Ativos > Coleções**.
+1. De **Navegação** página, vá para **Ativos > Coleções**.
 1. No console Coleções, selecione a coleção que deseja publicar no Brand Portal.
 
    ![select_collection](assets/select_collection.png)

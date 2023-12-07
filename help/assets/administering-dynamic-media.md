@@ -1,16 +1,14 @@
 ---
 title: Configuração do Dynamic Media
 description: Para configurar o Dynamic Media, você deve configurar o Dynamic Media e gerenciar predefinições de imagens e visualizadores.
-uuid: bcd1f9ab-4201-4222-9e4a-ba82b3c7cd6c
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 role: User, Admin
 exl-id: 85fa0414-354e-4530-81f9-a5659bb7f2fd
 feature: Configuration
-source-git-commit: 8353e6fcc76dd63a0816babbe593f474abbc4508
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '255'
 ht-degree: 1%
 
 ---
@@ -43,6 +41,5 @@ Consulte também os seguintes tópicos:
 >**Se você estiver atualizando:**
 >
 >* Depois de ativar e executar o Experience Manager, qualquer ativo que você fizer upload terá o Dynamic Media ativado automaticamente (a menos que ele tenha sido explicitamente desativado pelo administrador do sistema). Se você estiver em uma instância atualizada do Experience Manager e for novo no Dynamic Media, deverá reprocessar seus ativos para ativá-los para Dynamic Media.
-
 
 

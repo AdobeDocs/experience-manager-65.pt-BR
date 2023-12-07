@@ -1,19 +1,17 @@
 ---
 title: Vídeo 360/VR
 description: Saiba como trabalhar com 360 e Vídeo de realidade virtual (VR) no Dynamic Media.
-uuid: c21bf2c0-7acc-401f-857e-0186de86e7a1
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: aac3c850-ae84-4bff-80de-d370e150f675
 docset: aem65
 feature: 360 VR Video
 role: User, Admin
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: c0a60ec39e35fa8113ce9e1795561709b9c7e289
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1143'
 ht-degree: 0%
 
 ---
@@ -63,11 +61,13 @@ Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit
 
       * 1080p - 1920 x 1080, conhecido como resolução Full HD ou FHD ou
       * 2160p - 3840 x 2160, conhecido como 4k, UHD ou resolução de alta definição Ultra. Essa grande resolução de tela é mais frequentemente encontrada em televisores premium e monitores de computador. A resolução de 2160p é frequentemente chamada de &quot;4k&quot; porque a largura é próxima a 4000 pixels. Em outras palavras, oferece quatro vezes mais pixels do que 1080p.
+
    * [Criar um perfil de vídeo adaptável personalizado](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) com representações de maior qualidade. Por exemplo, crie um Perfil de vídeo adaptável que contenha as três configurações a seguir:
 
       * width=auto; height=720; bitrate=2500 kbps
       * width=auto; height=1080; bitrate=5000 kbps
       * width=auto; height=1440; bitrate=6600 kbps
+
    * Processe conteúdo de 360 vídeos em uma pasta dedicada exclusivamente a 360 ativos de vídeo.
 
    Essa abordagem exige mais da rede e da CPU do usuário final.
@@ -124,7 +124,8 @@ Consulte [Adicionar ativos do Dynamic Media a páginas](/help/assets/adding-dyna
 
    * Na lista Visualizadores, selecione **[!UICONTROL Video360VR]**.
 
-      O vídeo de realidade virtual (VR) é um conteúdo de vídeo imersivo que é acessado usando fones de ouvido de realidade virtual. Assim como em vídeos comuns, você cria vídeos de RV no início, quando um vídeo está sendo gravado ou capturado usando câmeras de vídeo de 360 graus.
+     O vídeo de realidade virtual (VR) é um conteúdo de vídeo imersivo que é acessado usando fones de ouvido de realidade virtual. Assim como em vídeos comuns, você cria vídeos de RV no início, quando um vídeo está sendo gravado ou capturado usando câmeras de vídeo de 360 graus.
+
    ![Imagem de um close-up da estação espacial internacional flutuando no espaço com a Terra e o Sol parcialmente visíveis ao fundo](assets/6_5_360video-preview-video360vr.png)
    *Captura de tela do vídeo 360 VR.*
 

@@ -1,20 +1,18 @@
 ---
 title: Instalar o pacote de recursos 18912 para migração de ativos em massa
 description: O Feature Pack 18912 permite assimilar ativos em massa por meio do FTP ou migrar ativos do Dynamic Media Classic para o Dynamic Media no Adobe Experience Manager. Este pacote de recursos opcional está disponível no suporte para Adobe.
-uuid: 45c2f5f8-4368-4d7b-a43e-fe96cfb272fd
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
-discoiquuid: 5d5eebe4-46c9-4028-9354-c5f27944fcdc
 docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 53ea2cf7-d633-4ab9-a869-ce76eb1c01e5
-source-git-commit: fc148a5f5e0fcaac2980dc73004fa92ac3b91fb3
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 2%
+source-wordcount: '407'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +30,7 @@ O Feature Pack 18912 permite assimilar ativos em massa diretamente no modo Dynam
 
 Antes de instalar o pacote de recursos, crie um usuário de serviço e forneça essas informações ao suporte do Adobe.
 
-Consulte também [Configurar o Dynamic Media - Modo Scene7](/help/assets/config-dms7.md).
+Consulte também [Configurar o modo Dynamic Media - Scene7](/help/assets/config-dms7.md).
 
 **Para instalar o pacote de recursos 18912 para migração de ativos em massa:**
 

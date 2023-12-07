@@ -1,22 +1,18 @@
 ---
 title: Publicar pastas no Brand Portal
-seo-title: Publish folders to Brand Portal
 description: Saiba como publicar e desfazer a publicação de pastas no Brand Portal.
-seo-description: Learn how to publish and unpublish folders to Brand Portal.
-uuid: 350beb85-c0fb-4a1c-8597-c03592c02d3d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: brand-portal
 content-type: reference
-discoiquuid: 39b8cf9b-afec-4c9a-8a5d-7fc87e643f26
 docset: aem65
 feature: Brand Portal
 role: User
 exl-id: 92a156f0-ce2a-4c83-bd57-0c29efbf784f
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 38%
+source-wordcount: '565'
+ht-degree: 34%
 
 ---
 
@@ -43,6 +39,7 @@ Se fizer modificações subsequentes no ativo ou pasta original no AEM Assets, a
    * Na barra de ferramentas, selecione **Publicação rápida**. Em seguida, no menu, selecione **Publicar no Brand Portal**.
 
    * Na barra de ferramentas, selecione **Gerenciar publicação**.
+
    1. De **Ação** selecionar **Publicar no Brand Portal**, de **Agendamento** selecionar **Agora** e clique em **Próximo.**
    1. Confirme sua seleção no **Escopo** e clique em **Publicar no Brand Portal**.
 
@@ -63,15 +60,13 @@ Se fizer modificações subsequentes no ativo ou pasta original no AEM Assets, a
 
       ![manageschedulepub](assets/manageschedulepub.png)
 
-
-
 ## Cancelar publicação de pastas do Brand Portal {#unpublish-folders-from-brand-portal}
 
-Você pode remover qualquer pasta de ativos publicada no Brand Portal ao cancelar a publicação da instância do autor do AEM. Após cancelar a publicação da pasta original, a cópia não estará mais disponível para os usuários do Brand Portal.
+É possível remover qualquer pasta de ativos publicada no Brand Portal ao cancelar a publicação da instância do autor do AEM. Após cancelar a publicação da pasta original, a cópia não estará mais disponível para os usuários do Brand Portal.
 
 Você tem a opção de cancelar a publicação de pastas do Brand Portal rapidamente ou agendá-la para uma data e hora posteriores. Para cancelar a publicação de pastas de ativos do Brand Portal:
 
-1. Na interface do AEM Assets na instância do AEM Author, selecione a pasta da qual deseja cancelar a publicação.
+1. Na interface do AEM Assets na instância AEM Author, selecione a pasta da qual deseja cancelar a publicação.
 
    ![publish2bp-1](assets/publish2bp.png)
 
@@ -95,10 +90,9 @@ Você tem a opção de cancelar a publicação de pastas do Brand Portal rapidam
    1. De **Ação** selecionar **Cancelar publicação no Brand Portal**, e de **Agendamento** selecionar **Mais tarde**.
    1. Selecione uma **Data de ativação** e especifique a hora. Clique em **Avançar**.
    1. Confirme a seleção no **Escopo** e clique em **Avançar**.
-   1. Especifique um **Título de fluxo de trabalho** em **Fluxos de trabalho**. Clique em **Cancelar publicação mais tarde.**
+   1. Especifique um **Título de fluxo de trabalho** em **Fluxos de trabalho**. Clique em **Desfazer a publicação mais tarde.**
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
-
 
 >[!NOTE]
 >

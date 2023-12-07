@@ -1,20 +1,16 @@
 ---
 title: ASRP - Provedor de recurso de armazenamento de Adobe
-seo-title: ASRP - Adobe Storage Resource Provider
 description: Configurar o AEM Communities para usar um banco de dados relacional como seu armazenamento comum
-seo-description: Set up AEM Communities to use a relational database as its common store
-uuid: abe47ad9-9f72-4dad-a5e9-6d621a9722d4
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 role: Admin
 exl-id: 6430ed96-5d96-41b6-866f-90b34ff84f7a
-source-git-commit: 42feafa381c129117dae5345255702f0b0951a17
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '792'
 ht-degree: 1%
 
 ---
@@ -46,7 +42,7 @@ O consumidor e as chaves secretas são compartilhados em todos os conjuntos de r
 
 A variável [Console de configuração de armazenamento](/help/communities/srp-config.md) permite a seleção da configuração de armazenamento padrão, que identifica qual implementação de SRP usar.
 
-**Na instância do autor do AEM:**
+**Na instância do autor AEM:**
 
 * Na navegação global, navegue até **[!UICONTROL Ferramentas > Comunidades > Configuração de armazenamento]** e selecione **[!UICONTROL Provedor de recurso de armazenamento Adobe (ASRP, Storage Resource Provider)]**.
 
@@ -69,7 +65,7 @@ Depois de enviar a configuração, teste a conexão:
 
 * Selecionar **Testar configuração**.
 
-   Para cada instância de criação e publicação, teste a conexão com o data center pelo console Configuração de armazenamento.
+  Para cada instância de criação e publicação, teste a conexão com o data center pelo console Configuração de armazenamento.
 
 * Verifique se os URLs do site para dados de perfil podem ser roteados do data center pelo [externalização de links](#externalize-links).
 
@@ -95,7 +91,7 @@ O ASRP deve ser identificado como o armazenamento comum em todas as instâncias 
 
 Para disponibilizar a configuração idêntica no ambiente de publicação:
 
-Na instância do autor do AEM:
+Na instância do autor AEM:
 
 * Navegue do menu principal para **[!UICONTROL Ferramentas]** > **[!UICONTROL Implantação]** > **[!UICONTROL Replicação]**
 * Selecionar **Ativar árvore**

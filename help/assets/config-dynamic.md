@@ -2,21 +2,19 @@
 title: Configurar o Dynamic Media - modo híbrido
 description: Saiba como configurar o Dynamic Media - modo híbrido.
 mini-toc-levels: 3
-uuid: 39ad7d83-d310-4baf-9d85-5532c2f201f3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '7791'
-ht-degree: 2%
+source-wordcount: '7684'
+ht-degree: 1%
 
 ---
 
@@ -80,7 +78,7 @@ Você pode optar por implementar o Dynamic Media somente para criação de image
   </tr>
   <tr>
    <td>Entregar SOMENTE imagens em produção</td>
-   <td>As imagens são entregues por meio de servidores nos data centers mundiais da Adobe e, em seguida, armazenadas em cache por um CDN para desempenho escalável e alcance global.</td>
+   <td>As imagens são entregues por meio de servidores em data centers mundiais Adobe e, em seguida, armazenadas em cache por um CDN para desempenho escalável e alcance global.</td>
    <td>
     <ol>
      <li>No Experience Manager <strong>autor</strong> nó, <a href="#enabling-dynamic-media">ativar o Dynamic Media</a>.</li>
@@ -121,7 +119,7 @@ Você pode optar por implementar o Dynamic Media somente para criação de image
   </tr>
   <tr>
    <td>Entregar imagens e vídeo na produção</td>
-   <td><p>Os vídeos são entregues e armazenados em cache por um CDN para desempenho escalável e alcance global. Imagens e imagens de pôster de vídeo são entregues por meio de servidores nos data centers mundiais da Adobe e, em seguida, armazenadas em cache por um CDN para desempenho escalável e alcance global.</p> <p>Consulte as seções anteriores para configurar imagem ou vídeo na pré-produção. </p> </td>
+   <td><p>Os vídeos são entregues e armazenados em cache por um CDN para desempenho escalável e alcance global. Imagens e imagens de pôster de vídeo são entregues por meio de servidores em data centers mundiais Adobe e, em seguida, armazenadas em cache por um CDN para desempenho escalável e alcance global.</p> <p>Consulte as seções anteriores para configurar imagem ou vídeo na pré-produção. </p> </td>
    <td>
     <ol>
      <li>No Experience Manager <strong>autor</strong> nó, <a href="#enabling-dynamic-media">ativar o Dynamic Media</a>.</li>
@@ -618,7 +616,7 @@ Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONT
 
 ### Solucionar problemas de configuração de relatórios de vídeo {#troubleshooting-the-video-reporting-configuration}
 
-* Durante a instalação, às vezes, as conexões com o servidor de API do Analytics atingem o tempo limite. A instalação repete a conexão 20 vezes, mas ainda falha. Quando essa situação ocorre, o arquivo de log registra vários erros. Pesquisar `SiteCatalystReportService`.
+* Durante a instalação, às vezes, as conexões com o servidor de API do Analytics atingem o tempo limite. A instalação repete a conexão 20 vezes, mas ainda falha. Quando essa situação ocorre, o arquivo de log registra vários erros. Pesquisar por `SiteCatalystReportService`.
 * Não instalar o pacote de predefinição do Analytics primeiro pode causar a criação de um novo conjunto de relatórios.
 * A atualização do Experience Manager 6.3 para o Experience Manager 6.4 ou Experience Manager 6.4.1 e, em seguida, a configuração do Dynamic Media (Pré 6.3) ainda cria um conjunto de relatórios. Este problema é conhecido e programado para ser corrigido para o Experience Manager 6.4.2.
 
@@ -668,7 +666,7 @@ No entanto, nas implantações do Dynamic Media, como os ativos são entregues p
 Além de replicar os ativos, os seguintes não ativos também são replicados:
 
 * Configuração de entrega do Dynamic Media: `/conf/global/settings/dam/dm/imageserver/jcr:content`
-* Predefinições de imagem: `/conf/global/settings/dam/dm/presets/macros`
+* Predefinições da imagem: `/conf/global/settings/dam/dm/presets/macros`
 * Predefinições do visualizador: `/conf/global/settings/dam/dm/presets/viewer`
 
 Os filtros fornecem uma maneira de *excluir* ativos sejam replicados para o nó de publicação do Experience Manager.
@@ -1041,12 +1039,12 @@ Os seguintes perfis de cores estão instalados:
    <td>RGB CIE</td>
   </tr>
   <tr>
-   <td>CoatedFogra27</td>
+   <td>FograRevestida27</td>
    <td>CMYK</td>
    <td>FOGRA27 revestida (ISO 12647-2:2004)</td>
   </tr>
   <tr>
-   <td>CoatedFogra39</td>
+   <td>FograRevestida39</td>
    <td>CMYK</td>
    <td>FOGRA39 revestida (ISO 12647-2:2004)</td>
   </tr>
@@ -1101,7 +1099,7 @@ Os seguintes perfis de cores estão instalados:
    <td>Revestimento Para Web No Japão (Anúncio)</td>
   </tr>
   <tr>
-   <td>NewsprintSNAP2007</td>
+   <td>Papel de jornalSNAP2007</td>
    <td>CMYK</td>
    <td>Papel de jornal dos EUA (SNAP 2007)</td>
   </tr>
@@ -1126,7 +1124,7 @@ Os seguintes perfis de cores estão instalados:
    <td>Photoshop 4 Padrão CMYK</td>
   </tr>
   <tr>
-   <td>PS5Default</td>
+   <td>PS5Padrão</td>
    <td>CMYK</td>
    <td>CMYK padrão do Photoshop 5</td>
   </tr>
@@ -1151,7 +1149,7 @@ Os seguintes perfis de cores estão instalados:
    <td>sRGB IEC61966-2.1</td>
   </tr>
   <tr>
-   <td>UncoatedFogra29</td>
+   <td>Fogra29 não revestida</td>
    <td>CMYK</td>
    <td>FOGRA29 não revestida (ISO 12647-2:2004)</td>
   </tr>

@@ -1,20 +1,16 @@
 ---
 title: Renderização do Forms por valor
-seo-title: Rendering Forms By Value
 description: Use a API do Forms (Java) para renderizar um formulário por valor usando a API do Java e a API do serviço da Web.
-seo-description: Use the Forms API (Java) to render a form by value using the Java API and Web Service API.
-uuid: b932cc54-662f-40ae-94e0-20ac82845f3b
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 role: Developer
 exl-id: a3a6a06d-ec90-4147-a5f0-e776a086ee12
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1822'
 ht-degree: 0%
 
 ---
@@ -133,7 +129,7 @@ Renderize um formulário por valor usando a API do Forms (Java):
 
 1. Gravar o fluxo de dados do formulário no navegador Web cliente
 
-   * Criar um `com.adobe.idp.Document` ao invocar o `FormsResult` object&#39;s `getOutputContent` método.
+   * Criar um `com.adobe.idp.Document` ao invocar o `FormsResult` do objeto `getOutputContent` método.
    * Obter o tipo de conteúdo do `com.adobe.idp.Document` ao invocar seu `getContentType` método.
    * Defina o `javax.servlet.http.HttpServletResponse` tipo de conteúdo do objeto chamando seu `setContentType` e transmitindo o tipo de conteúdo do `com.adobe.idp.Document` objeto.
    * Criar um `javax.servlet.ServletOutputStream` objeto usado para gravar o fluxo de dados de formulário no navegador da web cliente, chamando o `javax.servlet.http.HttpServletResponse` do objeto `getOutputStream` método.
@@ -169,7 +165,7 @@ Renderize um formulário por valor usando a API do Forms (serviço Web):
 
    * Criar um `java.io.FileInputStream` usando seu construtor. Transmita um valor de string que especifique o local do arquivo XDP.
    * Criar um `BLOB` usando seu construtor. A variável `BLOB` objeto é usado para armazenar um documento PDF que é criptografado com uma senha.
-   * Crie uma matriz de bytes que armazene o conteúdo da variável `java.io.FileInputStream` objeto. Você pode determinar o tamanho da matriz de bytes obtendo o `java.io.FileInputStream` o tamanho do objeto usando seu `available` método.
+   * Crie uma matriz de bytes que armazene o conteúdo da variável `java.io.FileInputStream` objeto. Você pode determinar o tamanho da matriz de bytes obtendo o `java.io.FileInputStream` tamanho do objeto usando seu `available` método.
    * Preencha a matriz de bytes com dados de fluxo invocando o `java.io.FileInputStream` do objeto `read` e transmitindo a matriz de bytes.
    * Preencha o `BLOB` ao invocar seu `setBinaryData` e transmitindo a matriz de bytes.
 

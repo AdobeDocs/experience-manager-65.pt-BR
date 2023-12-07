@@ -1,18 +1,16 @@
 ---
 title: Práticas recomendadas para otimização da qualidade de imagens no Dynamic Media
 description: Conheça as práticas recomendadas para otimização da qualidade de imagem no Dynamic Media
-uuid: b73f0918-c723-4a0d-a63f-4242223c2d47
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: Asset Management
 role: User, Admin
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
-source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1497'
 ht-degree: 4%
 
 ---
@@ -64,20 +62,19 @@ Há dois métodos de nitidez de imagem que podem ser usados:
       * **[!UICONTROL *quantidade *]**(0-5, intensidade do efeito.)
       * **[!UICONTROL *raio *]**(0-250, largura das &quot;linhas de nitidez&quot; desenhadas ao redor do objeto com nitidez, medida em pixels.)
 
-      Lembre-se de que o raio e a quantidade dos parâmetros funcionam uns contra os outros. A redução do raio pode ser compensada pelo aumento da quantidade. O raio permite um controle mais fino, pois um valor mais baixo aplica nitidez apenas aos pixels da borda, enquanto um valor mais alto aplica nitidez a uma faixa mais ampla de pixels.
+     Lembre-se de que o raio e a quantidade dos parâmetros funcionam uns contra os outros. A redução do raio pode ser compensada pelo aumento da quantidade. O raio permite um controle mais fino, pois um valor mais baixo aplica nitidez apenas aos pixels da borda, enquanto um valor mais alto aplica nitidez a uma faixa mais ampla de pixels.
 
       * **[!UICONTROL *limite *]**(0-255, sensibilidade do efeito.)
 
-             Esse parâmetro determina como deve ser a diferença dos pixels com nitidez em relação à área ao redor antes de serem considerados pixels de borda e o filtro ajuste a nitidez deles. O parâmetro **[!UICONTROL limite]** ajuda a evitar áreas de nitidez excessiva com cores semelhantes, como tons de pele. Por exemplo, um valor limite de 12 ignora pequenas variações no brilho do tom da pele para evitar a adição de &quot;ruído&quot;, enquanto ainda adiciona o contraste da borda a áreas de alto contraste, como onde as pálpebras tocam a pele.
-         
-         Para obter mais informações sobre como você define esses três parâmetros, incluindo as práticas recomendadas para usar com o filtro, consulte os seguintes recursos:
+            Esse parâmetro determina como deve ser a diferença dos pixels com nitidez em relação à área ao redor antes de serem considerados pixels de borda e o filtro ajuste a nitidez deles. O parâmetro **[!UICONTROL limite]** ajuda a evitar áreas de nitidez excessiva com cores semelhantes, como tons de pele. Por exemplo, um valor limite de 12 ignora pequenas variações no brilho do tom da pele para evitar a adição de &quot;ruído&quot;, enquanto ainda adiciona o contraste da borda a áreas de alto contraste, como onde as pálpebras tocam a pele.
+        
+        Para obter mais informações sobre como você define esses três parâmetros, incluindo as práticas recomendadas para usar com o filtro, consulte os seguintes recursos:
 
-         Experience Manager Tópico da Ajuda sobre Nitidez de uma imagem.
+        Experience Manager Tópico da Ajuda sobre Nitidez de uma imagem.
 
-         White paper de práticas recomendadas [Nitidez de imagens no Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
+        White paper de práticas recomendadas [Nitidez de imagens no Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
 
       * Experience Manager também permite controlar um quarto parâmetro: monocromático (0,1). Esse parâmetro determina se a máscara de nitidez é aplicada separadamente a cada componente de cor usando o valor 0 ou ao brilho/intensidade da imagem usando o valor 1.
-
 
 Como prática recomendada, comece com o parâmetro Tirar nitidez do raio da máscara. As configurações de raio com as quais você pode começar são as seguintes:
 

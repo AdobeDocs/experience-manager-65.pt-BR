@@ -1,19 +1,17 @@
 ---
 title: Incorpore o Vídeo do Dynamic Media, o Visualizador de imagens ou o Visualizador dimensional em uma página da Web
 description: Saiba como incorporar vídeos, imagens ou imagens 3D do Dynamic Media em uma página da Web
-uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 feature: Viewers
 role: User, Admin
 exl-id: 203ea349-ef4c-421c-b4b6-76ee9d46ec34
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 21%
+source-wordcount: '383'
+ht-degree: 20%
 
 ---
 
@@ -49,7 +47,7 @@ Consulte [Entregar imagens otimizadas para um site responsivo](responsive-site.m
 
    Consulte [Publicar predefinições da imagem](managing-image-presets.md#publishing-image-presets).
 
-1. No painel à esquerda, selecione o menu suspenso e selecione **[!UICONTROL Visualizadores]**.
+1. No painel à esquerda, selecione o menu suspenso e **[!UICONTROL Visualizadores]**.
 1. No painel à esquerda, selecione um nome de predefinição do visualizador. A predefinição do visualizador é aplicada ao ativo.
 1. Selecionar **[!UICONTROL Incorporar]**.
 1. No **[!UICONTROL Código de inserção]** , copie o código inteiro para a área de transferência e selecione **[!UICONTROL Fechar]**.
