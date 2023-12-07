@@ -1,19 +1,15 @@
 ---
 title: Trabalhar com o repositório do AEM Forms
-seo-title: Working with AEM Forms Repository
 description: Gerencie o repositório do AEM Forms para criar recursos de pastas, gravação, lista, leitura, atualização e pesquisa usando a API Java e a API de serviço da Web. Além disso, saiba como criar relações de recursos, bloquear e excluir recursos.
-seo-description: Manage AEM Forms repository to create folders, write, list, read, update resources, and search resources using the Java API and Web Service API. In addition, learn how to create resource relationships, lock and delete resources.
-uuid: 6ead49f9-ca0d-4ee4-86a6-0a9ced6ec4f8
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '9095'
+source-wordcount: '9036'
 ht-degree: 0%
 
 ---
@@ -153,7 +149,7 @@ Crie uma pasta usando a API de serviço do Repositório (Java):
 
    Defina a descrição da pasta usando o `setDescription` e passe no seguinte parâmetro:
 
-   * A `String` que descreve a coleção de recursos. Neste exemplo, `"test Folder"` é usada `.`
+   * A `String` que descreve a coleção de recursos. Neste exemplo, `"test Folder"` é usado `.`
 
 1. Gravar a pasta no repositório
 

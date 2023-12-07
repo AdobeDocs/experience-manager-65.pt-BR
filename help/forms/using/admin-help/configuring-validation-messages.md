@@ -1,19 +1,15 @@
 ---
 title: Configurar mensagens de validação
-seo-title: Configuring validation messages
 description: Saiba como especificar como as mensagens de validação são exibidas e sua localização relativa ao formulário retornado no navegador da Web.
-seo-description: Learn how to specify how validation messages are displayed and their location relative to the form returned in the web browser.
-uuid: f6bff4fa-f90f-4135-ae40-7ab3d3613122
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 5f2f8129-e45e-4f3f-ae30-c09330d0e152
 exl-id: 14314383-5228-4904-98c1-586f48a1142c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 2%
+source-wordcount: '352'
+ht-degree: 1%
 
 ---
 

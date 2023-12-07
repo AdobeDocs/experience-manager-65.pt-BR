@@ -1,19 +1,15 @@
 ---
 title: Funções remotas no Construtor de expressões
-seo-title: Expression Builder
 description: O Construtor de expressões no Gerenciamento de correspondências permite criar expressões e funções remotas.
-seo-description: Expression Builder in Correspondence Management lets you create expressions and remote functions.
-uuid: 6afb84c0-ad03-4bb1-a154-d46cc47650ae
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 68e3071e-7ce6-4bdc-8561-14bcaeae2b6c
 docset: aem65
 feature: Correspondence Management
 exl-id: b41af9fe-c698-44b3-9ac6-97d42cdc02d4
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '783'
 ht-degree: 1%
 
 ---
@@ -26,7 +22,7 @@ Usando o Construtor de expressões, você pode criar expressões ou condições 
 
 O Construtor de expressões usa internamente bibliotecas JSP EL, de modo que a expressão adere à sintaxe JSPEL. Para obter mais informações, consulte [Expressões de exemplo](#exampleexpressions).
 
-![Builder de expressões](assets/expressionbuilder.png)
+![Construtor de expressões](assets/expressionbuilder.png)
 
 ### Operadores {#operators}
 
@@ -37,7 +33,7 @@ Os operadores disponíveis para uso em expressões estão disponíveis na barra 
 Estes são alguns exemplos de JSP EL usados com frequência que você pode usar na solução de Gerenciamento de correspondência:
 
 * Para adicionar dois números: ${number1 + number2}
-* Para concatenar duas sequências de caracteres: ${str1} ${str2}
+* Para concatenar duas strings: ${str1} ${str2}
 * Para comparar dois números: ${age &lt; 18}
 
 Você pode encontrar mais informações na [Especificação JSP EL](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). O gerenciador de expressões do lado do cliente não suporta determinadas variáveis e funções na especificação JSP EL, especificamente:
@@ -118,7 +114,6 @@ Você pode criar um pacote personalizado para exportar suas próprias funções 
    * java.util.Calendar
    * java.util.Date
    * java.util.List
-
 
 1. Defina a implementação da interface, configure-a como um serviço OSGI e defina as seguintes propriedades de serviço:
 

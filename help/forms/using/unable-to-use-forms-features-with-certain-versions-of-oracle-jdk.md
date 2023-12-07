@@ -1,13 +1,11 @@
 ---
 title: Não é possível usar o Experience Manager Forms com determinadas versões do JDK do Oracle
-seo-title: Unable to use Experience Manager Forms with certain versions of Oracle JDK
 description: Não é possível usar o Experience Manager Forms com determinadas versões do JDK do Oracle
-seo-description: Unable to use Experience Manager Forms with certain versions of Oracle JDK
 exl-id: 6a8a7cb7-77d6-4bfc-82f3-82d0fddfc10a
-source-git-commit: 0142b46d087d34707b09a1f172910c8b287b839d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 4%
+source-wordcount: '160'
+ht-degree: 1%
 
 ---
 

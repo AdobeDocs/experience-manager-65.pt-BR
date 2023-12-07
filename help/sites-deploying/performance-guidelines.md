@@ -1,20 +1,16 @@
 ---
 title: Diretrizes de desempenho
-seo-title: Performance Guidelines
 description: Este artigo fornece diretrizes gerais sobre como otimizar o desempenho da sua implementação do AEM.
-seo-description: This article provides general guidelines on how to optimize the performance of your AEM deployment.
-uuid: 38cf8044-9ff9-48df-a843-43f74b0c0133
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
-discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2914'
-ht-degree: 6%
+source-wordcount: '2935'
+ht-degree: 4%
 
 ---
 
@@ -98,11 +94,11 @@ Ilustradas abaixo estão as opções de implantação disponíveis para AEM (rol
    <td><p>MongoDB</p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
-   <td><p>Chrome</p> </td>
+   <td><p>Cromo</p> </td>
    <td><p>Social</p> </td>
   </tr>
   <tr>
-   <td><p>Móvel</p> </td>
+   <td><p>Mobile</p> </td>
    <td><p>Cluster do autor</p> </td>
    <td><p>IBM® AIX®</p> </td>
    <td><p>JBoss®</p> </td>
@@ -155,7 +151,7 @@ Ilustradas abaixo estão as opções de implantação disponíveis para AEM (rol
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
-   <td><p>Móvel</p> </td>
+   <td><p>Mobile</p> </td>
   </tr>
   <tr>
    <td><p>Brand Portal</p> </td>
@@ -242,7 +238,7 @@ Ilustradas abaixo estão as opções de implantação disponíveis para AEM (rol
    <td><p> </p> </td>
   </tr>
   <tr>
-   <td><p>Aplicativo de desktop do  </p> </td>
+   <td><p>aplicativo de desktop</p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
@@ -431,7 +427,7 @@ Ilustradas abaixo estão as diretrizes de arquitetura para sites AEM e AEM Asset
 
 ### Diretriz de configurações TarMK {#tarmk-settings-guideline}
 
-Para um bom desempenho, você deve seguir as diretrizes de configuração apresentadas abaixo. Para obter instruções sobre como alterar as configurações, [ver esta página](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR).
+Para um bom desempenho, você deve seguir as diretrizes de configuração apresentadas abaixo. Para obter instruções sobre como alterar as configurações, [ver esta página](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
 
 <table>
  <tbody>
@@ -541,7 +537,7 @@ Para estabelecer um bom desempenho ao usar o MongoMK, você deve começar pela s
 
 ### Diretrizes de configurações do MongoMK {#mongomk-settings-guidelines}
 
-Para um bom desempenho, você deve seguir as diretrizes de configuração apresentadas abaixo. Para obter instruções sobre como alterar as configurações, [ver esta página](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR).
+Para um bom desempenho, você deve seguir as diretrizes de configuração apresentadas abaixo. Para obter instruções sobre como alterar as configurações, [ver esta página](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
 
 <table>
  <tbody>

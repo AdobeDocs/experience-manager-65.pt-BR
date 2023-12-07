@@ -1,18 +1,14 @@
 ---
 title: Iniciando e interrompendo o WebLogic Server
-seo-title: Starting and stopping WebLogic Server
 description: Vários procedimentos exigem que você inicie ou interrompa a instância do WebLogic Server em que deseja implantar módulos de formulários AEM. Este documento descreve como iniciar e parar o WebLogic Server.
-seo-description: Several procedures require you to start or stop the instance of WebLogic Server where you want to deploy AEM forms modules. This document describes how to start and stop the WebLogic Server.
-uuid: 957787fe-4cea-4ecd-b49a-c33023c5c309
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: c908d064-6596-473a-b218-22a2496c83f7
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 1%
+source-wordcount: '603'
+ht-degree: 0%
 
 ---
 

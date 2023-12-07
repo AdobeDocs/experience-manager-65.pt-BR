@@ -1,18 +1,14 @@
 ---
 title: Noções básicas para configuração de formulários
-seo-title: Basics of configuring forms
 description: Saiba mais sobre os vários serviços de formulários que ajudam você a criar aplicativos interativos de captura de dados.
-seo-description: Learn about the various forms services that help you create interactive data capture applications.
-uuid: f495c170-2d17-45b0-b09d-22cce101131e
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: e87c7379-28ed-4fda-aef1-970d2b54f30d
 exl-id: 169f3d94-ac00-41c7-853e-ecf0dbee559f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '197'
 ht-degree: 0%
 
 ---

@@ -1,19 +1,15 @@
 ---
 title: Gerenciar usuários e grupos de usuários
-seo-title: Managing Users and User Groups
 description: Os usuários do AEM Communities podem se registrar e editar seus perfis
-seo-description: Users of AEM Communities can self-register and edit their profiles
-uuid: aeba424e-ea7e-4da5-b94f-ea8af4caa7d2
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1912'
+source-wordcount: '1910'
 ht-degree: 0%
 
 ---
@@ -52,7 +48,7 @@ Quando um novo site da comunidade é criado, novos grupos de usuários são cria
 
 Os nomes dos grupos são gerados a partir do nome dado ao site durante [criação de site da comunidade](sites-console.md#step13asitetemplate). As IDs exclusivas evitam conflitos de nomes para sites de comunidades com nomes semelhantes e grupos de comunidades no mesmo servidor.
 
-Por exemplo, se o nome do site fosse &quot;*engajar*&quot; para um site chamado &quot;We.Retail Engage&quot;, um dos grupos de usuários criados seria:
+Por exemplo, se o nome do site fosse &quot;*engajar*&quot; para um site intitulado &quot; Envolver&quot;, um dos grupos de usuários criados seria:
 
 * Comunidade *Envolver* Membros
 

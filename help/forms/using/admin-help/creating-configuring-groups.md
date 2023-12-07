@@ -1,18 +1,14 @@
 ---
 title: Criação e configuração de grupos
-seo-title: Creating and configuring groups
 description: Saiba como criar grupos manual ou dinamicamente, editar um grupo, exibir detalhes sobre um grupo ou excluir um grupo.
-seo-description: Learn how to create groups manually or dynamically, edit a group, view details about a group, or delete a group.
-uuid: 8532d72b-270a-4fcf-b7a5-56fca979a5fe
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 2058b501-65ce-4ad3-8e1b-b2eab896f70f
 exl-id: 72edd8d1-8573-4942-8ced-1a100af58d78
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1576'
 ht-degree: 0%
 
 ---
@@ -77,7 +73,7 @@ Um grupo dinâmico contém apenas usuários. Ela não pode conter outros grupos.
    * Para habilitar a sincronização automática diariamente, digite a hora no formato de 24 horas na caixa Ocorre diariamente em. Quando você salva as configurações, esse valor é convertido em uma expressão cron, que é exibida na caixa abaixo.
    * Para agendar a sincronização em um dia específico da semana ou mês, ou em um mês específico, selecione digite a expressão cron apropriada na caixa. O valor padrão é `0 00 4 ? * *`(o que significa verificar às 4 da manhã todos os dias).
 
-      O uso da expressão cron é baseado no sistema de agendamento de tarefas de código aberto Quartz, versão 1.4.0.
+     O uso da expressão cron é baseado no sistema de agendamento de tarefas de código aberto Quartz, versão 1.4.0.
 
 1. Clique em Salvar.
 

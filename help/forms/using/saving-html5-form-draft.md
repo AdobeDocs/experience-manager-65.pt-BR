@@ -1,16 +1,12 @@
 ---
 title: Salvamento de um formulário HTML 5 como rascunho
-seo-title: Saving an HTML5 form as a draft
 description: Salve um formulário HTML5 como rascunho e retome o preenchimento do formulário em um estágio posterior.
-seo-description: Save an HTML5 form as a draft and resume filling the form at a later stage.
-uuid: 70cd5f6f-f125-470c-8cee-ee14d2127713
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
 feature: Mobile Forms
 exl-id: a9879445-d626-4279-8a95-a9009294b483
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 5%

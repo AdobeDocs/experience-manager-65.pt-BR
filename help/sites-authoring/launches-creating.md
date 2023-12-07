@@ -1,18 +1,16 @@
 ---
 title: Criar lançamentos
 description: É possível criar um lançamento para permitir a atualização de uma nova versão de páginas da Web para ativação futura.
-uuid: c1a32710-8189-4a2e-bf2f-428ab30d48c8
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1039'
-ht-degree: 82%
+ht-degree: 81%
 
 ---
 
@@ -87,7 +85,7 @@ Como opção, especifique a **Data de inicialização** (e a hora) para definir 
    * **usar um novo modelo para substituir a página**: consulte [Criar inicialização com um novo modelo](#create-launch-with-new-template) para obter mais detalhes.
    * **Herdar dados online da página de origem:** selecione essa opção para atualizar automaticamente o conteúdo das páginas de inicialização quando as páginas de origem forem alteradas. Essa opção faz isso transformando a inicialização em uma [live copy](/help/sites-administering/msm.md).
 
-     Por padrão, esta opção é selecionada.
+     Por padrão, essa opção está selecionada.
 
    * **Data da inicialização**: a data e a hora em que a cópia de inicialização deve ser ativada (dependendo do sinalizador de **Pronto para produção**; consulte [Inicializações - a ordem dos eventos](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
@@ -97,7 +95,7 @@ Como opção, especifique a **Data de inicialização** (e a hora) para definir 
 
    Se você retornar ao console (com **Concluído**) será possível ver (e acessar) seu lançamento por meio de:
 
-   * o [**** console Lançamentos](/help/sites-authoring/launches.md#the-launches-console)
+   * o [**Lançamentos** console](/help/sites-authoring/launches.md#the-launches-console)
    * o [**Referências** no **Sites** console](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 
 ### Criar inicialização com um novo modelo {#create-launch-with-new-template}

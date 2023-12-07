@@ -1,16 +1,12 @@
 ---
 title: Gerenciar aplicativos e tarefas do Forms na Caixa de entrada AEM
-seo-title: Manage Forms applications and tasks in AEM Inbox
 description: A Caixa de entrada AEM permite iniciar fluxos de trabalho centrados no Forms por meio do envio de aplicativos e do gerenciamento de tarefas.
-seo-description: AEM Inbox lets you launch Forms-centric workflows through submitting applications and manage tasks.
-uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 2%

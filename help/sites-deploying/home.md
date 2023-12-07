@@ -1,12 +1,11 @@
 ---
 title: Guia do usuário para implantação do AEM 6.5
-seo-title: AEM 6.5 Deploying User Guide
-description: Saiba mais sobre a instalação e implantação do Adobe Experience Manager 6.5 e sua arquitetura, incluindo a implantação do Adobe Managed Services na nuvem.
+description: Saiba mais sobre a instalação e implantação do Adobe Experience Manager 6.5 e sua arquitetura, incluindo a implantação da nuvem do Adobe Managed Services.
 exl-id: 4a82008c-af69-414e-bd98-c7f683a74905
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 25%
+source-wordcount: '297'
+ht-degree: 15%
 
 ---
 
@@ -36,7 +35,7 @@ Este guia aborda todas as tarefas de implantação do AEM, como instalação e i
 | [Guia de implementação do usuário](/help/sites-deploying/home.md) | Este guia mostra as noções básicas do AEM. |
 | [Guia do usuário para desenvolvimento](/help/sites-developing/home.md) | Saiba como criar sua instância de AEM. |
 | [Guia do usuário de gerenciamento](/help/managing/home.md) | Este guia descreve como gerenciar um projeto AEM com sucesso. |
-| [Guia do usuário do Commerce](/help/commerce/home.md) | Saiba mais sobre a Commerce Integration Framework no AEM. |
+| [Guia do usuário do Commerce](/help/commerce/home.md) | Saiba mais sobre o Commerce integration framework no AEM. |
 | [Guia do usuário do Mobile](/help/mobile/home.md) | Este guia descreve como criar e gerenciar conteúdo para aplicativos móveis. |
 
 ## Principais recursos do AEM

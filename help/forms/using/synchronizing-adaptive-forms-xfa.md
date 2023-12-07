@@ -1,16 +1,14 @@
 ---
 title: Sincronização do Adaptive Forms com modelos de formulário XFA
 description: Saiba como sincronizar formulários com arquivos XFA/XDP. Ele reutiliza campos de formulários sincronizados com alterações feitas aos campos correspondentes nos arquivos XFA/XDP.
-uuid: 92818132-1ae0-4576-84f2-ece485a34457
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: dac4539b-804d-4420-9170-68000ebb2638
 docset: aem65
 feature: Adaptive Forms
 exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1231'
+source-wordcount: '1225'
 ht-degree: 0%
 
 ---

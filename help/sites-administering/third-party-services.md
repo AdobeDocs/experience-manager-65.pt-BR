@@ -1,16 +1,12 @@
 ---
 title: Integração com serviços de terceiros
-seo-title: Integrating with Third-Party Services
 description: Saiba como integrar o AEM a serviços de terceiros.
-seo-description: Learn how to integrate AEM with third party services.
-uuid: bfafd00b-46bc-4af2-b3e8-874afb1ed697
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: e0d6478a-4420-46a6-96fe-082a30ee82f0
 exl-id: 50b70e47-a801-4f0a-be92-4427c4b2cad1
-source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 6%
@@ -58,9 +54,9 @@ As soluções de marketing por email da ExactTarget permitem que empresas de tod
 
 Para obter informações sobre como integrar seu site AEM e ExactTarget, consulte [Configurar ExactTarget](/help/sites-administering/exacttarget.md).
 
-## Integração com o Facebook e o Twitter {#integrating-with-facebook-and-twitter}
+## Integração com o Facebook e Twitter {#integrating-with-facebook-and-twitter}
 
-O facebook e o Twitter são serviços populares de redes sociais. A integração do AEM com o Facebook e o Twitter permite que as organizações forneçam uma opção de logon do Facebook ou do Twitter em propriedades digitais próprias e, em seguida, personalizem a experiência do usuário com base nas informações do perfil. Os profissionais de marketing também podem combinar informações de perfil com dados de fontes adicionais, como um sistema de gerenciamento de relacionamento com o cliente ou um perfil de site, para criar uma visualização unificada do cliente.
+O facebook e o Twitter são serviços populares de redes sociais. A integração do AEM com o Facebook e o Twitter permite que as organizações forneçam uma opção de logon no Facebook ou no Twitter em propriedades digitais próprias e, em seguida, personalizem a experiência do usuário com base nas informações do perfil. Os profissionais de marketing também podem combinar informações de perfil com dados de fontes adicionais, como um sistema de gerenciamento de relacionamento com o cliente ou um perfil de site, para criar uma visualização unificada do cliente.
 
 Consulte [Logon no Social](/help/communities/social-login.md) para obter mais informações.
 

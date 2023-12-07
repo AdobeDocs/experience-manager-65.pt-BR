@@ -1,20 +1,16 @@
 ---
 title: Atualização do Forms de pesquisa personalizada
-seo-title: Upgrading Custom Search Forms
 description: Este artigo detalha os ajustes necessários após uma atualização para que os formulários de pesquisa personalizados funcionem.
-seo-description: This article details the adjustments that are required after an upgrade in order for the custom search forms to function.
-uuid: 35b8fbb9-5951-4e1c-bf04-4471a55b9cb0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
-discoiquuid: a08cee9c-e981-4483-8bdc-e6353977f854
 feature: Upgrading
 exl-id: 797bbdf9-917a-4537-a5f9-bf2682db968b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1681'
-ht-degree: 3%
+source-wordcount: '1797'
+ht-degree: 2%
 
 ---
 

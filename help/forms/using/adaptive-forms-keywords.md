@@ -1,24 +1,20 @@
 ---
 title: Palavras-chave de formulários adaptáveis
-seo-title: Adaptive forms keywords
 description: Não é possível usar essas palavras reservadas como identificadores em formulários adaptáveis.
-seo-description: You cannnot use these reserved words as identifiers in your adaptive forms.
-uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 feature: Adaptive Forms
 exl-id: 6ef5bd8c-7e7b-4501-a1be-d34fc0dbde84
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 6%
+source-wordcount: '253'
+ht-degree: 4%
 
 ---
 
 # Palavras-chave de formulários adaptáveis {#adaptive-forms-keywords}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 As palavras-chave dos formulários adaptáveis são identificadores predefinidos e reservados que têm significado especial para formulários adaptáveis. Não é possível usar essas palavras-chave como identificadores em formulários adaptáveis. A tabela a seguir lista todas as palavras-chave que são identificadores reservados para formulários adaptáveis.
 

@@ -1,19 +1,15 @@
 ---
 title: Alteração da fonte na interface
-seo-title: Changing the font on the interface
 description: Como alterar as fontes na interface do usuário de forma seletiva.
-seo-description: How to change the fonts on the user interface selectively.
-uuid: 421fdd24-441a-4092-8c52-f3ed3d5d5671
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 9fcb80b4-cbc2-48a5-afd1-4f3bc50bc503
 docset: aem65
 exl-id: 226f70f0-8eb4-4724-b496-5801dc6b436f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '272'
 ht-degree: 1%
 
 ---

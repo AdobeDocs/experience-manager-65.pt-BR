@@ -1,16 +1,14 @@
 ---
 title: Solução de problemas da integração do Adobe Campaign Classic
 description: Saiba como solucionar problemas com a integração do Adobe Campaign Classic.
-uuid: 835ac2c3-ef2f-4963-9047-aeda3647b114
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: b1d45f01-78de-423c-8f6b-5cb7067c3a2f
 exl-id: 317bab41-3504-4e46-9ddc-72e291a34e06
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '802'
 ht-degree: 0%
 
 ---
@@ -79,7 +77,7 @@ Use a seguinte solução alternativa no servidor do Adobe Campaign Classic.
 1. Abrir arquivo `$CAMPAIGN_HOME/datakit/nms/fra/js/amcIntegration.js`
 1. Modificar linha 467 do método `amcGetSeedMetaData`
 1. Alterar `label : [inclView.@label](mailto:inclView.@label)` para `label : String([inclView.@label](mailto:inclView.@label))`
-1. Salvar.
+1. Salve.
 1. Reinicie o servidor.
 
 ## Se o Adobe Campaign Classic exibir um erro ao clicar no botão Sincronizar {#if-adobe-campaign-displays-an-error-when-clicking-the-synchronize-button}
@@ -124,7 +122,7 @@ Ao tentar sincronizar o conteúdo no delivery do Adobe Campaign Classic, o AEM r
 
 * Adobe Campaign hospedado usando https para comunicação com o AEM Author
 * Proxy reverso encerrando SSL
-* Instância do autor no local do AEM
+* Instância de autor no local do AEM
 
 Para resolver esse problema, faça o seguinte:
 

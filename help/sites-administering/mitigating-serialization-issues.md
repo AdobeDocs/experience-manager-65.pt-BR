@@ -1,18 +1,14 @@
 ---
 title: Redução de problemas de serialização no AEM
-seo-title: Mitigating serialization issues in AEM
 description: Saiba como atenuar problemas de serialização no AEM.
-seo-description: Learn how to mitigate serialization issues in AEM.
-uuid: c3989dc6-c728-40fd-bc47-f8427ed71a49
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: f3781d9a-421a-446e-8b49-40744b9ef58e
 exl-id: 01e9ab67-15e2-4bc4-9b8f-0c84bcd56862
-source-git-commit: 614c4c88f3f09feb5a400ade9f45f634ac4fbcd5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -68,7 +64,7 @@ O agente NotSoSerial não está incluído na distribuição padrão do AEM para 
 
 ## Configurar o agente {#configuring-the-agent}
 
-A configuração padrão é adequada para a maioria das instalações. Essa configuração inclui uma incluir na lista de bloqueios lista de permissões de classes vulneráveis de execução remota conhecida e um grupo de pacotes de em que a desserialização de dados confiáveis é segura.
+A configuração padrão é adequada para a maioria das instalações. Essa configuração inclui uma incluir na lista de bloqueios inclui na lista de permissões de classes vulneráveis de execução remota conhecida e um grupo de pacotes de em que a desserialização de dados confiáveis é segura.
 
 A configuração do firewall é dinâmica e pode ser alterada a qualquer momento por:
 
@@ -76,9 +72,10 @@ A configuração do firewall é dinâmica e pode ser alterada a qualquer momento
 1. Pesquisando e clicando em **Configuração do firewall de desserialização.**
 
    >[!NOTE]
+   >
    Você também pode acessar a página de configuração diretamente acessando o URL em:
+   >
    * `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
-
 
 Essa configuração contém os registros incluir na lista de permissões, incluir na lista de bloqueios e desserializar.
 
@@ -109,6 +106,7 @@ Após acessar o URL, uma lista de verificações de integridade relacionadas ao 
 Para obter mais informações sobre solução de problemas com o agente, consulte [Tratamento De Erros Com O Carregamento Do Agente Dinâmico](#handling-errors-with-dynamic-agent-loading) abaixo.
 
 >[!NOTE]
+>
 Se você adicionar `org.apache.commons.collections.functors` ao incluir na lista de permissões, a verificação de integridade sempre falha.
 
 ## Manipular erros com o carregamento dinâmico do agente {#handling-errors-with-dynamic-agent-loading}
@@ -124,9 +122,11 @@ Para carregar o agente manualmente, faça o seguinte:
    ```
 
    >[!NOTE]
+   >
    Exige que você use a opção -nofork CQ/AEM também, juntamente com as configurações de memória JVM apropriadas, pois o agente não está ativado em uma JVM bifurcada.
 
    >[!NOTE]
+   >
    A distribuição de Adobe do jar do agente NotSoSerial pode ser encontrada no `crx-quickstart/opt/notsoserial/` pasta da sua instalação do AEM.
 
 1. Interrompa e reinicie a JVM;

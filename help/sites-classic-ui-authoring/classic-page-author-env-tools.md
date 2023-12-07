@@ -1,18 +1,16 @@
 ---
 title: Criação - o ambiente e as ferramentas
 description: O console Sites permite gerenciar e navegar no site. Usando dois painéis, a estrutura do site pode ser expandida e as ações podem ser executadas nos elementos necessários.
-uuid: 0a9ce725-042a-4697-81fe-ac86cbab0398
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 6%
+source-wordcount: '892'
+ht-degree: 5%
 
 ---
 
@@ -98,7 +96,7 @@ Essa guia lista todos os produtos. Depois de criar um parágrafo apropriado (por
 
 ![chlimage_1-114](assets/chlimage_1-114.png)
 
-### Encontrando páginas {#finding-pages}
+### Encontrar páginas {#finding-pages}
 
 Esta guia mostra todas as páginas. Clique duas vezes em qualquer página para abri-la para edição.
 
@@ -188,7 +186,7 @@ O console do site também [fornece informações sobre o status atual da página
 
 Ao editar uma página com a interface clássica, existem vários modos que podem ser acessados usando os ícones na parte inferior do sidekick:
 
-![Modos de página  ](do-not-localize/chlimage_1-12.png)
+![Modos de página](do-not-localize/chlimage_1-12.png)
 
 A linha de ícones na parte inferior do Sidekick é usada para alternar os modos de trabalho com as páginas:
 
@@ -206,7 +204,7 @@ Nesse modo, é possível editar o design da página configurando os componentes 
 >Outras opções também estão disponíveis:
 >
 >* [Andaime](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
->* [ClientContext](/help/sites-administering/client-context.md)
+>* [Client Context](/help/sites-administering/client-context.md)
 >* Sites - abre o console Sites.
 >* Recarregar - atualizará a página.
 

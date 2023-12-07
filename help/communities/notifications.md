@@ -1,21 +1,17 @@
 ---
 title: Notificações das comunidades
-seo-title: Communities Notifications
 description: O AEM Communities tem notificações que exibem eventos de interesse para o membro da comunidade conectado
-seo-description: AEM Communities has notifications that display events of interest to the signed-in community member
-uuid: 2f5ea4b5-7308-414e-a3f8-2e8aa76b1ef4
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: ab9088b7-a691-4153-ac82-1e8c0a19ed5d
 docset: aem65
 role: Admin
 exl-id: cadb62c9-210d-4204-8abc-d0cf70960392
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '609'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -94,17 +90,17 @@ Ao selecionar o link Definições de Notificação na página Notificações, é
 
 O canal da Web está sempre habilitado.
 
-![notifications14](assets/notifications1.png)
+![notificações14](assets/notifications1.png)
 
 O canal de email, que depende da [configuração de email](/help/communities/email.md), fornece as mesmas configurações do canal Web.
 
 O canal de email está desativado por padrão.
 
-![notifications2](assets/notifications2.png)
+![notificações2](assets/notifications2.png)
 
 Ela pode ser ativada por um membro, mas ainda depende do email estar configurado.
 
-![notifications3](assets/notifications3.png)
+![notificações3](assets/notifications3.png)
 
 ## Visualizar notificações {#viewing-notifications}
 
@@ -114,13 +110,13 @@ A [o assistente criou o site da comunidade](/help/communities/sites-console.md) 
 
 Ao visitar o site publicado, selecione o `Notifications` exibirá todas as notificações do membro.
 
-![notifications4](assets/notifications4.png)
+![notificações4](assets/notifications4.png)
 
 ### Notificações por email {#email-notifications}
 
 Quando o canal de email está ativado, o membro recebe um email que contém um link para o conteúdo na Web.
 
-![notifications5](assets/notifications5.png)
+![notificações5](assets/notifications5.png)
 
 ## Personalizar notificações por email {#customize-email-notifications}
 

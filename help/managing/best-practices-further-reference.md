@@ -1,16 +1,12 @@
 ---
 title: Lista de verificação - Referência adicional
-seo-title: The Checklist - Further Reference
 description: Saiba mais sobre detalhes que detalham e/ou aumentam os documentos e princípios cobertos pela Lista de verificação de gerenciamento de projetos - práticas recomendadas.
-seo-description: Learn about further details that elaborate on and/or augment the documents and principles covered by the Managing Projects - Best Practices Checklist.
-uuid: 58a8b4ab-e447-4a12-b9e9-4cd3db11e06a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
 content-type: reference
-discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '3699'
 ht-degree: 1%
@@ -71,7 +67,7 @@ Como acontece com qualquer projeto, é fundamental estabelecer regras básicas o
 
 * **Funções**
 
-   As funções devem ser claramente definidas e comunicadas a todos os envolvidos no projeto. Além disso, é aconselhável destacar:
+  As funções devem ser claramente definidas e comunicadas a todos os envolvidos no projeto. Além disso, é aconselhável destacar:
 
    * Tomadores de decisão
    * Pontos de contato
@@ -82,7 +78,7 @@ Como acontece com qualquer projeto, é fundamental estabelecer regras básicas o
 
 * **Envolvimento**
 
-   Ao envolver as partes interessadas o mais rapidamente possível, pode incentivá-las a *partes interessadas* no projeto. Fazer isso aumenta o compromisso deles com o sucesso.
+  Ao envolver as partes interessadas o mais rapidamente possível, pode incentivá-las a *partes interessadas* no projeto. Fazer isso aumenta o compromisso deles com o sucesso.
 
    * No lado do cliente, essa função inclui os autores que trabalham com o sistema diariamente
    * Em sua própria equipe de projeto, esse envolvimento também inclui as pessoas responsáveis pela garantia de qualidade. Quanto mais eles entenderem as necessidades do cliente, melhor poderão planejar os testes.
@@ -93,20 +89,20 @@ Como acontece com qualquer projeto, é fundamental estabelecer regras básicas o
 
 * **Processos**
 
-   Os processos definidos dependem do seu projeto individual. Novamente, tente manter esses processos simples, considerando:
+  Os processos definidos dependem do seu projeto individual. Novamente, tente manter esses processos simples, considerando:
 
    * Definição de processos (e caminhos de comunicação) para interagir com terceiros; por exemplo, agências de design e fornecedores de software de terceiros, entre outros.
    * Geralmente, o cliente tem seus próprios procedimentos e ferramentas de gerenciamento e geração de relatórios de projetos.
 
 * **Ferramentas de rastreamento**
 
-   Há muitas ferramentas disponíveis para rastrear informações sobre bugs, tarefas e outros aspectos do seu projeto - consulte [Visão geral de ferramentas em potencial](#overview-of-potential-tools) para obter mais detalhes.
+  Há muitas ferramentas disponíveis para rastrear informações sobre bugs, tarefas e outros aspectos do seu projeto - consulte [Visão geral de ferramentas em potencial](#overview-of-potential-tools) para obter mais detalhes.
 
    * O ponto principal a ser observado aqui é manter apenas uma cópia das informações e compartilhá-las (e, portanto, o acesso à ferramenta que está sendo usada). Esse fluxo de trabalho facilita a manutenção e ajuda a evitar discrepâncias.
 
 * **Escopo**
 
-   Definir claramente o que deve ser abrangido pelo projeto a vários níveis:
+  Definir claramente o que deve ser abrangido pelo projeto a vários níveis:
 
    * as versões individuais (se um processo de versão iterativa for usado e independentemente de serem entregues aos clientes ou à equipe interna de teste).
    * o projeto AEM.
@@ -115,7 +111,7 @@ Como acontece com qualquer projeto, é fundamental estabelecer regras básicas o
 
 * **Relatório**
 
-   Defina claramente quais informações você deseja reportar, em que formato, com que frequência e para quem.
+  Defina claramente quais informações você deseja reportar, em que formato, com que frequência e para quem.
 
 * **Terminologia**
 
@@ -137,7 +133,7 @@ As organizações usam Indicadores-chave de desempenho (KPIs) para avaliar seu s
 
 Esses indicadores podem ser:
 
-* Negócios:
+* Empresas:
 
    * Usado para medir os principais objetivos de negócios.
    * É importante escolher KPIs apropriados para seus negócios/cenários com definições claras do que são, como são medidos, como são usados e por quem.
@@ -240,16 +236,16 @@ Destinos diferentes em ambientes de autor e publicação
 
 Os tempos de resposta almejados são diferentes nos ambientes de criação e publicação, refletindo o público-alvo:
 
-* **Ambiente de criação**
+* **Ambiente do autor**
 
-   Esse ambiente é usado pelos autores que inserem e atualizam conteúdo, portanto, ele deve:
+  Esse ambiente é usado pelos autores que inserem e atualizam conteúdo, portanto, ele deve:
 
    * Atender a alguns usuários que geram um alto número de solicitações ao atualizar páginas de conteúdo e os elementos individuais nessas páginas
    * seja o mais rápido possível para maximizar a produtividade e colocar seu conteúdo em seu site
 
 * **Ambiente de publicação**
 
-   Esse ambiente contém conteúdo que você disponibiliza para os usuários:
+  Esse ambiente contém conteúdo que você disponibiliza para os usuários:
 
    * a velocidade ainda é vital, mas geralmente é mais lenta do que um ambiente de criação
    * mecanismos adicionais de melhoria do desempenho são frequentemente aplicados:
@@ -285,13 +281,13 @@ Há vários mecanismos que você pode usar para monitorar os tempos de resposta:
 
 * **Monitoramento dos tempos de resposta com o request.log do AEM**
 
-   Um bom ponto de partida para a análise de desempenho é o registro de solicitações. Entre outras informações, você pode ver os tempos de resposta de solicitações individuais. Consulte [Otimização do desempenho](/help/sites-deploying/configuring-performance.md) para obter mais detalhes.
+  Um bom ponto de partida para a análise de desempenho é o registro de solicitações. Entre outras informações, você pode ver os tempos de resposta de solicitações individuais. Consulte [Otimização do desempenho](/help/sites-deploying/configuring-performance.md) para obter mais detalhes.
 
 * **Monitoramento dos tempos de resposta com comentários de HTML**
 
-   Os comentários de HTML podem ser usados para incluir informações de tempo de resposta na fonte de cada página:
+  Os comentários de HTML podem ser usados para incluir informações de tempo de resposta na fonte de cada página:
 
-   `</body> </html>v <-- Page took 58 milliseconds to be rendered by the server --> Response times for search requests`
+  `</body> </html>v <-- Page took 58 milliseconds to be rendered by the server --> Response times for search requests`
 
 #### Solicitações de pesquisa {#search-requests}
 
@@ -317,11 +313,11 @@ Essas solicitações de pesquisa devem ser planejadas e integradas desde o iníc
 
 * **Monitoramento dos tempos de resposta de pesquisa com o request.log do AEM**
 
-   Novamente, o request.log pode ser usado para monitorar os tempos de resposta para solicitações de pesquisa; consulte [Otimização do desempenho](/help/sites-deploying/configuring-performance.md) para obter mais detalhes.
+  Novamente, o request.log pode ser usado para monitorar os tempos de resposta para solicitações de pesquisa; consulte [Otimização do desempenho](/help/sites-deploying/configuring-performance.md) para obter mais detalhes.
 
 * **Mecanismos programados para medir os tempos de resposta de pesquisa**
 
-   Para personalizar as informações coletadas sobre as solicitações de pesquisa e seu desempenho, é recomendável incluir a coleta de informações no código-fonte do projeto; consulte [Otimização do desempenho](/help/sites-deploying/configuring-performance.md) para obter mais detalhes.
+  Para personalizar as informações coletadas sobre as solicitações de pesquisa e seu desempenho, é recomendável incluir a coleta de informações no código-fonte do projeto; consulte [Otimização do desempenho](/help/sites-deploying/configuring-performance.md) para obter mais detalhes.
 
 ### Simultaneidade {#concurrency}
 
@@ -329,7 +325,7 @@ Disponibilize o site para alguns usuários e visitantes nos ambientes do autor e
 
 As metas para o número de usuários simultâneos dependem do tipo de ambiente:
 
-* **Ambiente de criação**
+* **Ambiente do autor**
 
    * Normalmente, o número de usuários simultâneos pode ser estimado com precisão. Você pode saber quantos autores você tem no total, embora (provavelmente) nem todos estejam ativos ao mesmo tempo.
 
@@ -353,15 +349,15 @@ Antes de discutir as métricas relacionadas, forneça uma definição rápida do
 
 * **Capacidade e volume**
 
-   | O que/onde | Capacidade | Volume |
-   |---|---|---|
-   | Client | Potência computacional do computador do usuário. | Complexidade do layout da página. |
-   | Rede | Largura de banda de rede. | Tamanho da página (código, imagens e assim por diante). |
-   | Cache do Dispatcher | Memória do servidor Web (memória principal e disco rígido). | Servidor da Web (memória principal e disco rígido). Número e tamanho das páginas em cache. |
-   | Cache de saída | Memória do servidor AEM (memória principal e disco rígido). | Número e tamanho das páginas no cache de saída, o número de dependências por página. O cache do Dispatcher reduz esse volume. |
-   | Servidor Web | Potência computacional do servidor Web. | Número de solicitações. O armazenamento em cache diminui esse volume. |
-   | Modelo | Potência computacional do servidor Web. | Complexidade dos modelos. |
-   | Repositório | Desempenho do repositório. | Número de páginas carregadas do repositório. |
+  | O que/onde | Capacidade | Volume |
+  |---|---|---|
+  | Cliente | Potência computacional do computador do usuário. | Complexidade do layout da página. |
+  | Rede | Largura de banda de rede. | Tamanho da página (código, imagens e assim por diante). |
+  | Cache do Dispatcher | Memória do servidor Web (memória principal e disco rígido). | Servidor da Web (memória principal e disco rígido). Número e tamanho das páginas em cache. |
+  | Cache de saída | Memória do servidor AEM (memória principal e disco rígido). | Número e tamanho das páginas no cache de saída, o número de dependências por página. O cache do Dispatcher reduz esse volume. |
+  | Servidor Web | Potência computacional do servidor Web. | Número de solicitações. O armazenamento em cache diminui esse volume. |
+  | Modelo | Potência computacional do servidor Web. | Complexidade dos modelos. |
+  | Repositório | Desempenho do repositório. | Número de páginas carregadas do repositório. |
 
 ### Outras métricas {#other-metrics}
 
@@ -387,7 +383,6 @@ A variável [Lista de verificação de segurança](/help/sites-administering/sec
 >* É destinado a ser uma visão geral abstrata; consulte a [Lista de verificação do projeto](/help/managing/best-practices.md) para fases/etapas/tarefas específicas.
 >* Qualquer escala de tempo é teórica.
 >
-
 
 Para uma nova implementação de um projeto AEM padrão, considere tarefas como:
 
@@ -423,12 +418,12 @@ Alguns pontos a observar para cada categoria são:
       * O primeiro sprint resulta na primeira implantação em seu ambiente de teste.
       * Cada sprint tem um resultado executável.
       * Cada sprint recebe uma aprovação do cliente (mínimo de teste estruturado com feedback).
+
    * Planeje a eventualidade de uma atualização da versão disponível do AEM durante o projeto.
    * Planejar testes e otimização durante sprints.
    * Plano para as fases de estabilização e otimização.
    * Criar um log de itens a serem planejados para outras versões.
    * Planeje a participação do parceiro e a entrega.
-
 
 * **Infraestrutura**
 
@@ -438,12 +433,14 @@ Alguns pontos a observar para cada categoria são:
       * Definir metas de desempenho (ou seja, definir claramente as expectativas).
       * Definir a arquitetura de hardware e infraestrutura, incluindo dimensionamento.
       * Defina a implantação.
+
    * Use várias iterações; para o primeiro sprint e a configuração inicial, prepare:
 
       * Ambiente de desenvolvimento.
       * Processo de desenvolvimento.
       * Ambiente de teste.
       * Processo de implantação (incluindo gerenciamento de configuração).
+
    * Planejar vários testes de carga.
    * Planejar testes e otimização durante sprints.
    * Planejar uma fase de estabilização e otimização.
@@ -451,8 +448,6 @@ Alguns pontos a observar para cada categoria são:
    * Use usuários nomeados e funções definidas o mais cedo possível.
    * Plano de treinamento (por exemplo, treinamento de administrador).
    * Planejar a transferência para operações.
-
-
 
 * **Conteúdo**
 
@@ -575,7 +570,7 @@ Além disso, as seguintes seções são de especial interesse:
 * [Requisitos técnicos](/help/sites-deploying/technical-requirements.md)
 * [Monitoramento e manutenção de sua instância](/help/sites-deploying/monitoring-and-maintaining.md)
 
-### Práticas recomendadas     {#best-practices}
+### Práticas recomendadas {#best-practices}
 
 O Adobe fornece práticas recomendadas adicionais para todas as fases e públicos-alvo:
 

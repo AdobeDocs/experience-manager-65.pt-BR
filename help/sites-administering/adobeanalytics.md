@@ -1,20 +1,16 @@
 ---
 title: Integração ao Adobe Analytics
-seo-title: Integrating with Adobe Analytics
 description: Saiba como integrar o Adobe Experience Manager (AEM) ao Adobe Analytics.
-seo-description: Learn how to integrate Adobe Experience Manager (AEM) with Adobe Analytics.
-uuid: d8548263-6ac5-45fb-8c70-52ecd4161bbb
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 444c522e-2f33-4f41-846c-8d317e799659
 docset: aem65
 exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 72%
+source-wordcount: '282'
+ht-degree: 58%
 
 ---
 
@@ -44,7 +40,7 @@ As seguintes páginas ajudam a configurar a integração:
 * [Configuração do rastreamento de links para o Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
 * [Mapeamento de dados do componente com propriedades do Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md)
 * [Configuração do rastreamento de vídeo para o Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
-* [Classificações do Adobe](/help/sites-administering/adobeanalytics-classifications.md)
+* [Classificações de Adobe](/help/sites-administering/adobeanalytics-classifications.md)
 
 Você também pode usar a variável [Assistente de aceitação](/help/sites-administering/opt-in.md) para realizar facilmente a integração.
 
@@ -56,7 +52,7 @@ Você também pode usar a variável [Assistente de aceitação](/help/sites-admi
 
 Consulte:
 
-* [Estender a integração do Adobe Analytics](/help/sites-developing/extending-analytics.md) para obter informações sobre o desenvolvimento de componentes que coletam dados do usuário e personalização da estrutura do Adobe Analytics.
+* [Estender a integração do Adobe Analytics](/help/sites-developing/extending-analytics.md) para obter informações sobre como desenvolver componentes que coletam dados do usuário e personalizar a estrutura do Adobe Analytics.
 * O artigo da base de conhecimento, [Integração do Adobe Analytics - solução de problemas](https://helpx.adobe.com/br/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), para obter informações sobre como solucionar problemas de integração com o Adobe Analytics.
 
 >[!NOTE]

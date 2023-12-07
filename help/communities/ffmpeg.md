@@ -1,19 +1,15 @@
 ---
 title: FFmpeg para comunidades
-seo-title: FFmpeg for Communities
 description: Como instalar e configurar o FFmpeg para Comunidades
-seo-description: How to install and configure FFmpeg for Communities
-uuid: ef2f821c-70e9-4889-a8d7-a93b10a1d428
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 role: Admin
 exl-id: dbe28334-3b38-4362-b4f8-e0630e634503
-source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '251'
 ht-degree: 1%
 
 ---
@@ -54,14 +50,14 @@ Para modificar a variável [!UICONTROL Ativo de atualização DAM] e, neste exem
 * Localizar **[!UICONTROL Ativo de atualização DAM]**.
 * Clique duas vezes para abrir o fluxo de trabalho para edição na interface clássica.
 
-   Local resultante: [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
+  Local resultante: [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
 * Clique duas vezes no ícone **[!UICONTROL Transcodificação FFmpeg]** etapa para acessar a caixa de diálogo Propriedades da etapa.
 * No **[!UICONTROL Processo]** guia:
 
    * **[!UICONTROL Argumentos]**: limpe todas as entradas para desativar a transcodificação. Valores padrão: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
 
-   ![configure-ffmpeg](assets/configure-ffmpeg.png)
+  ![configure-ffmpeg](assets/configure-ffmpeg.png)
 
 * Selecionar **[!UICONTROL OK]** para fechar o `Step Properties` diálogo.
 

@@ -1,18 +1,14 @@
 ---
 title: "Tutorial: Criar o primeiro formulário adaptável"
-seo-title: "Tutorial: Create your first adaptive form"
 description: Saiba como criar formulários empresariais, interativos e responsivos.
-seo-description: Learn to create business class, interactive, and responsive forms.
-uuid: ee351a3f-ea6a-4b4c-8045-4948ad51b7c1
 topic-tags: introduction
-discoiquuid: 1142bcd4-e3a7-41ce-a710-132ae6c21dbe
 docset: aem65
 feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 11%
+source-wordcount: '905'
+ht-degree: 6%
 
 ---
 

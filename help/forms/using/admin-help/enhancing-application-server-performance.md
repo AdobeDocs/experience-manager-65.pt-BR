@@ -1,18 +1,14 @@
 ---
 title: Aprimoramento do desempenho do servidor de aplicativos
-seo-title: Enhancing application server performance
 description: Este documento descreve as configurações opcionais que você pode definir para melhorar o desempenho do servidor de aplicativos de formulários AEM.
-seo-description: This document describes optional settings that you can configure to improve the performance of your AEM forms application server.
-uuid: 88d2f96a-3b59-410d-8160-20581d27acad
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
 exl-id: 6e2f3d4c-2ead-45b3-98e7-32cacc7e2985
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1870'
 ht-degree: 0%
 
 ---
@@ -67,21 +63,21 @@ Quando o administrador do servidor de aplicativos determina as configurações c
 1. Na árvore de navegação, clique em Recursos > JDBC > Provedores JDBC. No painel direito, clique na origem de dados criada, Provedor de Driver DB2 Universal JDBC ou LiveCycle - db2 - IDP_DS.
 1. Em Propriedades adicionais, clique em Fontes de dados e selecione IDP_DS.
 1. Na próxima tela, em Propriedades Adicionais, clique em Propriedades do Pool de Conexões e insira um valor nas caixas Máximo de Conexões e Mínimo de Conexões.
-1. Clique em OK ou em Aplicar e, em seguida, clique em Salvar diretamente na configuração Principal.
+1. Clique em OK ou em Aplicar e, em seguida, clique em Salvar diretamente na configuração principal.
 
 ### Definir configurações do pool de conexões para o WebSphere for Oracle {#configure-connection-pool-settings-for-websphere-for-oracle}
 
 1. Na árvore de navegação, clique em Recursos > JDBC > Provedores JDBC. No painel direito, clique na fonte de dados do Driver JDBC do Oracle que você criou.
 1. Em Propriedades adicionais, clique em Fontes de dados e selecione IDP_DS.
 1. Na próxima tela, em Propriedades Adicionais, clique em Propriedades do Pool de Conexões e insira um valor nas caixas Máximo de Conexões e Mínimo de Conexões.
-1. Clique em OK ou em Aplicar e, em seguida, clique em Salvar diretamente na configuração Principal.
+1. Clique em OK ou em Aplicar e, em seguida, clique em Salvar diretamente na configuração principal.
 
 ### Definir configurações do pool de conexões para o WebSphere for SqlServer {#configure-connection-pool-settings-for-websphere-for-sqlserver}
 
 1. Na árvore de navegação, clique em Recursos > JDBC > Provedores JDBC e, no painel direito, clique na fonte de dados do Driver JDBC Definido pelo Usuário que você criou.
 1. Em Propriedades adicionais, clique em Fontes de dados e selecione IDP_DS.
 1. Na próxima tela, em Propriedades Adicionais, clique em Propriedades do Pool de Conexões e insira um valor na caixa Máximo de Conexões e na caixa Mínimo de Conexões:
-1. Clique em OK ou em Aplicar e, em seguida, clique em Salvar diretamente na configuração Principal.
+1. Clique em OK ou em Aplicar e, em seguida, clique em Salvar diretamente na configuração principal.
 
 ## Otimização de documentos em linha e impacto na memória JVM {#optimizing-inline-documents-and-impact-on-jvm-memory}
 

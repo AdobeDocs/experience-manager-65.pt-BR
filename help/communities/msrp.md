@@ -1,20 +1,16 @@
 ---
 title: MSRP - Provedor de Recurso de Armazenamento MongoDB
-seo-title: MSRP - MongoDB Storage Resource Provider
 description: Configurar o AEM Communities para usar um banco de dados relacional como seu armazenamento comum
-seo-description: Set up AEM Communities to use a relational database as its common store
-uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 role: Admin
 exl-id: 799d5ae1-caac-4c92-8835-696ad25de553
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1190'
-ht-degree: 1%
+source-wordcount: '1142'
+ht-degree: 0%
 
 ---
 
@@ -80,7 +76,7 @@ Na criação, para acessar o console Configuração de armazenamento:
 
 * **[!UICONTROL SolrConfiguration]**
 
-   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Host do Zookeeper**
+   * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) Host**
 
      Ao executar em [Modo SolrCloud](solr.md#solrcloud-mode) com um ZooKeeper externo, defina esse valor como o `HOST:PORT` para o ZooKeeper, como *my.server.com:2181*
 
@@ -98,7 +94,7 @@ Deixe em branco se estiver executando no modo SolrCloud.
 O nome da coleção Solr.
         *Padrão*: coleção1
 
-* Selecione **[!UICONTROL Enviar]**
+* Selecionar **[!UICONTROL Enviar]**
 
 >[!NOTE]
 >
@@ -150,7 +146,7 @@ Para disponibilizar a configuração idêntica no ambiente de publicação, faç
 
 * Navegue do menu principal para **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Replicação]**.
 * Selecionar **[!UICONTROL Ativar árvore]**
-* **[!UICONTROL Caminho de início]**:
+* **[!UICONTROL Caminho inicial]**:
    * Navegue até `/etc/socialconfig/srpc/`
 * Selecionar **[!UICONTROL Ativar]**
 

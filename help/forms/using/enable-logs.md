@@ -1,21 +1,17 @@
 ---
 title: Habilitar registro para formulários HTML5
-seo-title: Enable logging for HTML5 forms
 description: O utilitário logger habilita o registro em log de um formulário e ajuda a depurar problemas relacionados ao formulário.
-seo-description: The logger utility enables logging for a form and helps you debug form-related issues.
-uuid: 322306ba-8ad7-463d-8a9d-4cea5a0c4b55
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
 feature: Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 6%
+source-wordcount: '629'
+ht-degree: 4%
 
 ---
 
@@ -107,7 +103,7 @@ A configuração de log é composta do nível de log e da categoria do log.
   </tr>
   <tr>
    <td>4</td>
-   <td>INFO<br type="_moz" /> </td>
+   <td>INFORMAÇÕES<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>5</td>
@@ -183,7 +179,7 @@ Se você usar o Configuration Manager para ativar o registro em log, serão gera
 1. Procure por e clique em **Configurações do Forms Mobile**.
 1. Na caixa de texto Opções de Depuração, insira as configurações de log conforme descrito na seção anterior, por exemplo, **2-a4-b5-c6**
 
-   ![Configuração de formulários](assets/forms_configuration.png)
+   ![Configuração do Forms](assets/forms_configuration.png)
 
    Configuração de formulários
 

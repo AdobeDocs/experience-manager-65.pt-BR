@@ -1,14 +1,12 @@
 ---
 title: Introdução ao Adobe Experience Manager Mobile
 description: Esta página serve como uma página de aterrissagem do Adobe Experience Manager Mobile. Siga esta página como ponto de partida para que você possa saber mais sobre as três diferentes maneiras de criar aplicativos.
-uuid: a5398216-f9bb-4009-a9f8-a4f0135db67c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: introduction
 content-type: reference
-discoiquuid: 724e09c2-3df3-4080-a0d4-ee2ede483791
 exl-id: a2bc9a50-6455-4703-8829-964fab313e96
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%

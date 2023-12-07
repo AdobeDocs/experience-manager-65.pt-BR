@@ -1,16 +1,12 @@
 ---
 title: Gerenciar processos
-seo-title: Managing Processes
 description: A página Lista de processos mostra os processos que um usuário iniciou ou que foram iniciados automaticamente. Saiba mais sobre como gerenciar os processos.
-seo-description: The Process List page shows the processes that a user has initiated or that were started automatically. Learn more about managing the processes.
-uuid: 4cd17400-681a-4e40-996c-7dda57ce449a
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 37e702c2-8716-4360-a3eb-d9877b28cc86
 exl-id: 21a2317d-3542-4ccb-98db-3cedf20c89ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1631'
 ht-degree: 0%

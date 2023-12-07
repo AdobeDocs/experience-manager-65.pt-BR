@@ -1,20 +1,16 @@
 ---
 title: Elementos de armazenamento no AEM 6.5
-seo-title: Storage Elements in AEM 6.5
 description: Saiba mais sobre as implementações de armazenamento de nós disponíveis no AEM 6.5 e como fazer a manutenção do repositório.
-seo-description: Learn about the node storage implementations available in AEM 6.5 and how to maintain the repository.
-uuid: 3b018830-c42e-48e0-9b6f-cd230b02d914
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 0aa2c22f-32bb-4e50-8328-63ed73c0f19e
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/microkernels-in-aem-6-0
 exl-id: 52437eb5-f9fb-4945-9950-5a1562fe878d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 2%
+source-wordcount: '706'
+ht-degree: 0%
 
 ---
 
@@ -120,7 +116,7 @@ O Red Hat® Linux® usa um algoritmo de gerenciamento de memória chamado THP (T
 >Consulte os seguintes recursos:
 >
 >* Para obter mais informações sobre páginas grandes transparentes no Red Hat® Linux®, consulte esta [artigo](https://access.redhat.com/solutions/46111).
-* Para obter dicas de ajuste do Linux®, consulte esta [artigo](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR).
+* Para obter dicas de ajuste do Linux®, consulte esta [artigo](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
 >
 
 ## Manutenção do repositório {#maintaining-the-repository}

@@ -1,18 +1,15 @@
 ---
 title: Árvore de desempenho
-seo-title: Performance Tree
 description: Saiba mais sobre as etapas a serem seguidas para solucionar problemas de desempenho no AEM.
-uuid: ab0624f7-6b39-4255-89e0-54c74b54cd98
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1178'
-ht-degree: 8%
+source-wordcount: '1088'
+ht-degree: 9%
 
 ---
 
@@ -161,7 +158,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (Dispatche
     <ol>
      <li><a href="/help/sites-deploying/monitoring-and-maintaining.md#out-of-memory">Sem memória</a></li>
      <li><a href="/help/sites-deploying/troubleshooting.md">Meu aplicativo lança erros de falta de memória</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=pt-BR">Analisar problemas de memória.</a><br /> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en">Analisar problemas de memória.</a><br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -197,7 +194,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (Dispatche
      <li><a href="/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing">Processamento de fluxo de trabalho simultâneo</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow">Configurar a Fila para um Fluxo de Trabalho Específico</a></li>
      <li><a href="/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances">Limpeza regular de instâncias de fluxo de trabalho</a></li>
-     <li><a href="/help/sites-developing/workflows.md#transient-workflows">Workflows transitórios</a><br /> </li>
+     <li><a href="/help/sites-developing/workflows.md#transient-workflows">Fluxos de trabalho transitórios</a><br /> </li>
     </ul> <p> </p> </td>
   </tr>
   <tr>
@@ -240,7 +237,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (Dispatche
    <td>Tornar solicitações armazenáveis em cache</td>
    <td>
     <ol>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR">Configuração geral do Dispatcher</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en">Configuração geral do Dispatcher</a></li>
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache">Configuração do cache do Dispatcher</a></li>
     </ol> <p>Como melhorar a taxa de cache; tornar as solicitações compatíveis com cache (Práticas recomendadas do Dispatcher)</p> <p>Além disso, considere as configurações abaixo para otimizar as configurações de cache<br /> </p>
     <ol>

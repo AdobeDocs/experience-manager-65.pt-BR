@@ -1,18 +1,14 @@
 ---
 title: Visão geral do serviço de saída
-seo-title: Overview of output service
 description: Output permite mesclar dados de formulário XML com um design de formulário criado no Designer para criar um fluxo de saída de documento em vários formatos.
-seo-description: Output lets you merge XML form data with a form design created in Designer to create a document output stream in various formats.
-uuid: 7890b0a6-bae5-4ad5-ae41-503b988ba3da
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 5a96f5ea-6fe3-44b1-b314-14097b9e9c01
 exl-id: e99b72d0-fbd5-4150-a225-1a91ad4c5867
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---

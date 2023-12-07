@@ -1,13 +1,11 @@
 ---
 title: Perguntas frequentes do Adaptive Forms, formulários HTML5 e AEM Forms
-seo-title: Frequently asked questions (FAQ) for Adaptive Forms, HTML5 forms, and AEM Forms
 description: Perguntas frequentes sobre layout, suporte a scripts e escopo do Adaptive Forms, formulários HTML5 e AEM Forms.
-seo-description: Frequently Asked Questions (FAQ) about layout, scripting support, and scope of Adaptive Forms, HTML5 forms, and AEM Forms.
 docset: aem65
 exl-id: 19a6e431-de66-4d5c-924f-f9c1a195390c
-source-git-commit: 2e9b9c40f54aa54a946e4320341ed4a760c56fd1
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '98'
 ht-degree: 0%
 
 ---

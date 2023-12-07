@@ -1,17 +1,15 @@
 ---
 title: Práticas recomendadas para testes de desempenho
 description: Saiba mais sobre as estratégias e metodologias gerais usadas para testes de desempenho e algumas das ferramentas disponíveis para ajudar no processo.
-uuid: ab8720d6-b864-4d00-9e07-2e1699cfe7db
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: 18f843ed3ffb719d168b67826baaffd926ffd2dd
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1831'
-ht-degree: 1%
+source-wordcount: '1790'
+ht-degree: 0%
 
 ---
 
@@ -119,7 +117,7 @@ A variável **ComprimentoMáxFilaObservação** A seção mostra o número de ev
 1. Coloque-o na pasta /crx-quickstart/install.
 
 >[!NOTE]
->Consulte [AEM 6.x | Dicas para ajustar o desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR)
+>Consulte [AEM 6.x | Dicas para ajustar o desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
 
 A configuração padrão é 10.000, mas a maioria das implantações deve elevá-la para 20.000 ou 50.000.
 
@@ -147,7 +145,7 @@ Após a execução dos testes de desempenho na instância do autor, todos os pro
 * Verifique se há erros ou avisos no log de erros. Para obter mais informações, consulte [Logs](/help/sites-deploying/configure-logging.md).
 * Monitore recursos de hardware do sistema, como utilização de memória e CPU, E/S de disco ou E/S de rede. Esses recursos geralmente são as causas dos gargalos de desempenho.
 * Otimize a arquitetura das páginas e como elas são endereçadas para minimizar o uso de parâmetros de URL para permitir o máximo de armazenamento em cache possível.
-* Siga as [Otimização do desempenho](/help/sites-deploying/configuring-performance.md) e [Dicas para melhorar o desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR) documentação.
+* Siga as [Otimização do desempenho](/help/sites-deploying/configuring-performance.md) e [Dicas para melhorar o desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en) documentação.
 
 * Se houver problemas com a edição de determinadas páginas ou componentes em instâncias de autor, use o Modo de desenvolvedor da interface para toque para inspecionar a página em questão. Isso fornece um detalhamento de cada área de conteúdo na página e seu tempo de carregamento.
 * Reduza todos os JS e CSS no site. Veja isto [publicação do blog](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).

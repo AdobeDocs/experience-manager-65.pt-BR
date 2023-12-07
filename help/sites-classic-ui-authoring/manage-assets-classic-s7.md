@@ -1,17 +1,15 @@
 ---
 title: Adicionar recursos do Dynamic Media Classic (Scene7) à sua página
 description: O Adobe Dynamic Media Classic (Scene7) é uma solução hospedada para gerenciar, aprimorar, publicar e fornecer ativos de mídia avançada para exibições e impressão na Web, em dispositivos móveis, por email e conectados à Internet.
-uuid: dc463e2d-a452-490e-88af-f79bdaa3b089
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
-discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3532'
+source-wordcount: '3545'
 ht-degree: 0%
 
 ---
@@ -147,7 +145,7 @@ Depois que eles forem disponibilizados no modo Design, será possível adicionar
 >
 >Se você estiver criando e desenvolvendo visualizadores S7 personalizados e estiver usando o Localizador de conteúdo, será necessário adicionar explicitamente o `allowfullscreen` parâmetro.
 
-### Aviso de fim de vida útil de visualizadores Flash {#flash-viewers-end-of-life-notice}
+### Aviso de fim de vida útil de visualizadores do Flash {#flash-viewers-end-of-life-notice}
 
 A partir de 31 de janeiro de 2017, o Adobe Dynamic Media Classic (Scene7) encerrou oficialmente o suporte para a plataforma de visualizador de Flashes.
 

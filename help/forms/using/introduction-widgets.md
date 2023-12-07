@@ -1,17 +1,13 @@
 ---
 title: Estrutura de aparência para formulários adaptáveis e HTML5
-seo-title: Appearance framework for adaptive and HTML5 forms
 description: O Mobile Forms renderiza Modelos de formulário como formulários HTML5. Esses formulários usam os arquivos jQuery, Backbone.js e Underscore.js para a aparência e para ativar os scripts.
-seo-description: Mobile Forms render Form Templates as HTML5 forms. These forms use jQuery, Backbone.js and Underscore.js files for the appearance and to enable scripting.
-uuid: 183b8d71-44fc-47bf-8cb2-1cf920ffd23a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 exl-id: 3458471a-9815-463e-8044-68631073863c
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1152'
 ht-degree: 2%
 
 ---
@@ -183,7 +179,7 @@ Todos os widgets personalizados devem estar em conformidade com as especificaç�
    <th>Descrição</th>
   </tr>
   <tr>
-   <td>valor<br /> </td>
+   <td>value<br /> </td>
    <td>Matriz de valores selecionados.<br /> </td>
   </tr>
   <tr>
@@ -247,7 +243,7 @@ Todos os widgets personalizados devem estar em conformidade com as especificaç�
    <th>Descrição</th>
   </tr>
   <tr>
-   <td>values</td>
+   <td>valores</td>
    <td><p>Matriz de valores (ligada/desligada/neutra).</p> <p>É uma matriz de valores para os diferentes estados do checkButton. values[0] é o valor quando o estado é ON, values[1] é o valor quando o estado é OFF,<br /> values[2] é o valor quando o estado é NEUTRAL. O comprimento da matriz de valores é igual ao valor da opção de estado.<br /> </p> </td>
   </tr>
   <tr>

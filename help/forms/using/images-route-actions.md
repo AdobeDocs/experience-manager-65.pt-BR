@@ -1,18 +1,14 @@
 ---
 title: Personalizar imagens usadas nas ações de roteiro
-seo-title: Customize images used in route actions
 description: Como personalizar as imagens usadas nas ações de rota no espaço de trabalho do LiveCycle AEM Forms.
-seo-description: How-to customize the images used in route actions in LiveCycle AEM Forms workspace.
-uuid: 42608376-587e-4b57-a9d5-8f9ebd981426
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 exl-id: 687c6569-7189-4039-9c7a-bc29658a7756
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 2%
+source-wordcount: '290'
+ht-degree: 0%
 
 ---
 

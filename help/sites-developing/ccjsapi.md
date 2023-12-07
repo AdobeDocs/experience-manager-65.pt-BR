@@ -1,19 +1,15 @@
 ---
 title: API JavaScript do Client Context
-seo-title: Client Context JavaScript API
 description: Saiba mais sobre a API do JavaScript para o Contexto do cliente no Adobe Experience Manager.
-seo-description: The JavaScript API for Client Context
-uuid: be58998c-f23e-4768-8394-1f1ad3994c4c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: a6e5810b-dac5-4137-93cf-5d8d53cacc49
 feature: Context Hub
 exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3157'
+source-wordcount: '3106'
 ht-degree: 2%
 
 ---
@@ -204,7 +200,7 @@ O nome do armazenamento. Use o `getInstance` para recuperar esse valor.
 
 Consulte também CQ_Analytics.SessionStore para ver os métodos herdados.
 
-#### limpar() {#clear}
+#### clear() {#clear}
 
 Remove os dados do repositório de sessão e remove todas as propriedades de inicialização.
 
@@ -613,7 +609,7 @@ Use loadInitProperties para preencher os dados do armazenamento de sessão com o
 
 Nenhum valor retornado.
 
-#### limpar() {#clear-1}
+#### clear() {#clear-1}
 
 Remove todas as propriedades de dados do armazenamento.
 
@@ -747,7 +743,7 @@ Remove uma propriedade do armazenamento de sessão. Aciona o `update` evento ap�
 
 Nenhum valor retornado.
 
-#### redefinir() {#reset}
+#### reset() {#reset}
 
 Restaura os valores iniciais do armazenamento de dados. A implementação padrão simplesmente remove todos os dados. Aciona o `update` evento após a conclusão.
 

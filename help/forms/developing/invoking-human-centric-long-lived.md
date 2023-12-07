@@ -1,19 +1,15 @@
 ---
 title: Chamar processos de longa vida centrados no ser humano
-seo-title: Invoking Human-Centric Long-Lived Processes
 description: Invoque programaticamente processos de longa vida centrados no ser humano criados no Workbench usando um aplicativo cliente Java baseado na Web que usa a API de chamada, um aplicativo ASP.NET que usa serviços Web e um aplicativo cliente criado com o Flex que usa comunicação remota.
-seo-description: Programmatically invoke human-centric long-lived processes created in Workbench using a Java web-based client application that uses the Invocation API, an ASP.NET application that uses web services, and a client application built with Flex that uses Remoting.
-uuid: 42269d41-a90f-4ea1-aeb9-d61337bcfa54
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
-discoiquuid: 18a320b4-dce6-4c50-8864-644b0b2d6644
 role: Developer
 exl-id: c9ebad8b-b631-492d-99a3-094e892b2ddb
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3695'
+source-wordcount: '3674'
 ht-degree: 0%
 
 ---
@@ -545,7 +541,7 @@ A tabela a seguir lista os controles que fazem parte desse aplicativo ASP.NET.
    <td><p>Especifica o valor do empréstimo.</p></td>
   </tr>
   <tr>
-   <td><p>Button1</p></td>
+   <td><p>Botão1</p></td>
    <td><p>Representa o botão Submeter Requisição.</p></td>
   </tr>
   <tr>

@@ -1,24 +1,20 @@
 ---
 title: Reutilizar formulários adaptáveis
-seo-title: Reusing adaptive forms
 description: É possível reutilizar um formulário adaptável existente para criar novos formulários adaptáveis.
-seo-description: You can reuse an existing adaptive form to create new adaptive forms.
-uuid: f1d0fb70-e255-4dd9-8e6d-fd65eaf2e81a
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: ef564750-f107-41cb-887e-fc6d22b7d32e
 feature: Adaptive Forms
 exl-id: d8ee4e82-3137-430e-aa47-b00191f2729c
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '593'
 ht-degree: 2%
 
 ---
 
 # Reutilizar formulários adaptáveis {#reusing-adaptive-forms}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -75,6 +71,6 @@ O conteúdo de um formulário adaptável colado pode ser alterado usando as segu
 
    É possível alterar o XFA/XSD usado em formulários adaptáveis. Para saber como esses formulários adaptáveis podem ser alterados, consulte [Gerenciamento de metadados de formulário](/help/forms/using/manage-form-metadata.md)
 
-1. **Publicar novamente:**
+1. **Republicar:**
 
    O ativo colado é diferente do copiado. Você pode publicá-lo como um novo ativo para disponibilizá-lo para os usuários finais. Para saber como publicar um ativo, consulte [Publicar e desfazer a publicação de formulários](/help/forms/using/publishing-unpublishing-forms.md)

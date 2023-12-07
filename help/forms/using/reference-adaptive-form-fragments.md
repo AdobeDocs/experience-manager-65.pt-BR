@@ -1,18 +1,14 @@
 ---
 title: Referenciar fragmentos de formulário adaptáveis
-seo-title: Reference adaptive form fragments
 description: O AEM Forms fornece fragmentos de formulário adaptáveis que você pode usar como ativos para criar um formulário rapidamente.
-seo-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly.
-uuid: 85401274-6691-4726-8b70-b93fd46de053
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 docset: aem65
 exl-id: 933c164e-7c39-4d2e-834b-53a3c2b4ec90
-source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 3%
+source-wordcount: '381'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +16,7 @@ ht-degree: 3%
 
 [Fragmento de formulário adaptável](../../forms/using/adaptive-form-fragments.md) é um grupo de campos ou um painel que contém um grupo de campos que você pode usar ao criar um formulário. Ele permite criar um formulário de maneira fácil e rápida. Você pode arrastar e soltar um fragmento de formulário adaptável em um formulário usando o navegador de ativos na barra lateral e editá-lo no editor de formulários.
 
-Para autores de formulários adaptáveis, os fragmentos de referência são fornecidos na [Pacote complementar do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR). Inclui os seguintes fragmentos:
+Para autores de formulários adaptáveis, os fragmentos de referência são fornecidos na [Pacote complementar do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Inclui os seguintes fragmentos:
 
 * Endereço
 * Informações de contato
@@ -60,7 +56,7 @@ Inclui campos para capturar número de telefone e endereço de email.
 ## Informações de cartão de crédito {#credit-card-information}
 
 Inclui campos para registrar informações de cartão de crédito que podem ser usadas para processar pagamentos.
-[ ![Fragmento de informações do cartão de crédito](assets/cc-info.png)](assets/cc-info-1.png)
+[![Fragmento de informações do cartão de crédito](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## Emprego Atual {#current-employment}
 

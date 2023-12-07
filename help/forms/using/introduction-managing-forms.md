@@ -1,18 +1,14 @@
 ---
 title: Introdução ao gerenciamento de formulários
-seo-title: Introduction to managing forms
 description: O AEM Forms fornece ferramentas para gerenciar o Adaptive Forms e ativos relacionados. Este artigo apresenta os principais recursos de gerenciamento de formulários e elementos da interface do usuário.
-seo-description: AEM Forms provides tools to manage Adaptive Forms and related assets. This article introduces you to the key forms management capabilities and user interface elements.
-uuid: 2275a0b6-b31e-4d8e-8154-ccdfff3705aa
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager, introduction
-discoiquuid: c0e4c9bb-e12a-4f9a-a8fa-1a8ad41d3995
 docset: aem65
 exl-id: 3e063456-7f96-483d-86a3-6a414746db8a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1566'
 ht-degree: 1%
 
 ---
@@ -38,7 +34,7 @@ Juntamente com as opções para criar formulários, documentos e ativos relacion
 * Fragmentos do documento
 * Dicionários de dados
 
-   ![Console do AEM Forms](assets/aem_forms_console_new.png)
+  ![Console do AEM Forms](assets/aem_forms_console_new.png)
 
 ### Formulários e documentos  {#forms-documents}
 
@@ -59,9 +55,9 @@ O botão criar é o ponto de partida do processo de criação ou upload do AEM [
    * **Pasta geral:** Essas pastas são usadas para ativos criados no AEM [!DNL Forms] interface do usuário. Essas pastas não têm uma estrutura de pastas rígida. É possível renomear, criar subpastas e armazenar formulários adaptáveis, Comunicações interativas, fragmentos de formulários adaptáveis, Modelos de formulário (XDPs), PDF forms, Documentos e ativos relacionados nessas pastas.
    * **pasta Forms Workflow:** As pastas de fluxo de trabalho do Forms são criadas quando os processos do Workbench (arquivos de LiveCycles) são migrados e sincronizados com o AEM [!DNL Forms] interface do usuário. Não é permitido renomear, criar uma subpasta, criar uma Comunicação interativa, um fragmento de formulário adaptável ou uma Comunicação interativa. Também não é permitido excluir uma pasta de versão ou criar e carregar um formulário adaptável, um fragmento de formulário adaptável ou uma Comunicação interativa em paralelo à pasta de versão.
 
-   ![pastas](assets/folders.png)
+  ![pastas](assets/folders.png)
 
-   **A.** Pasta geral **B.** pasta Forms Workflow
+  **A.** Pasta geral **B.** pasta Forms Workflow
 
 O painel Forms e Documento também fornece opções para:
 
@@ -97,9 +93,9 @@ O painel de ferramentas do AEM contém ferramentas para vários componentes. Par
 * **Configurar a pasta monitorada:** Um administrador pode configurar uma pasta de rede, conhecida como pasta monitorada, para que, quando um usuário colocar um arquivo (como um arquivo de PDF) na pasta monitorada, uma operação pré-configurada seja iniciada e manipule o arquivo. Para obter informações detalhadas, consulte [Criar e configurar uma pasta monitorada](/help/forms/using/creating-configure-watched-folder.md).
 * **Configurar o serviço off-line do aplicativo Forms:** O AEM [!DNL Forms] o serviço off-line do aplicativo armazena em cache os caminhos ou URLs dos recursos usados em um formulário. O armazenamento em cache de caminhos ou URLs dos recursos usados em um formulário melhora o desempenho do lado do servidor. Para configurar o componente offline do lado do servidor do aplicativo AEM Forms, consulte [Trabalhar no modo offline](/help/forms/using/work-offline-mode.md).
 
-   ![Ferramentas do AEM Forms](assets/aem_forms_tools_new.png)
+  ![Ferramentas do AEM Forms](assets/aem_forms_tools_new.png)
 
-* **Configurar o gerador de PDF:** Um administrador pode configurar o AEM [!DNL Forms] Configurações do Gerador de PDF, adicionar contas de usuário e configuração de importação ou exportação para o Gerador de PDF.
+* **Configurar PDF Generator:** Um administrador pode configurar o AEM [!DNL Forms] configurações de PDF Generator, adicionar contas de usuário e importar ou exportar a configuração para o PDF Generator.
 * **Publicar ativos do gerenciamento de correspondência:** AEM [!DNL Forms] O permite publicar todas as cartas, fragmentos de documento, dicionários de dados e dependências relacionadas de uma instância do autor de uma só vez. Os ativos publicados incluem todos os ativos do Gerenciamento de correspondências e dependências relacionadas. Para obter informações detalhadas, consulte [Publicar e desfazer a publicação de formulários e documentos](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
 * **Exportar ativos do gerenciamento de correspondência:** Você pode baixar todos os ativos do Gerenciamento de correspondências e dependências relacionadas como um pacote de um AEM [!DNL Forms] instância. Para obter etapas detalhadas, consulte [Importação e exportação de ativos para o AEM Forms](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
 
@@ -122,6 +118,6 @@ O painel de ferramentas do AEM contém ferramentas para vários componentes. Par
 
 * **Barra de ferramentas Ações**: ao selecionar um ativo, a barra de ferramentas Ações aparece acima da lista de ativos. Ele contém todas as ferramentas de gerenciamento para o ativo selecionado. Você pode passar o mouse sobre um ícone de ferramenta para visualizar a dica de ferramenta que descreve sua funcionalidade
 
-   ![Barra de ferramentas de ações para um formulário adaptável](assets/action_toolbar_new.png)
+  ![Barra de ferramentas de ações para um formulário adaptável](assets/action_toolbar_new.png)
 
-   Barra de ferramentas de ações para um formulário adaptável
+  Barra de ferramentas de ações para um formulário adaptável

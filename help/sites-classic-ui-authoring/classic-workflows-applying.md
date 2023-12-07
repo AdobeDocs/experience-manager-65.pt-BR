@@ -1,17 +1,15 @@
 ---
 title: Aplicação de fluxos de trabalho a páginas
 description: Os fluxos de trabalho podem ser iniciados no console Sites ou, ao editar uma página, no Sidekick.
-uuid: 55f6f1d7-da54-4732-b9ff-b7479622db51
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 22712b73-90f2-4329-b32f-dbb7ce802d1d
 exl-id: d8b604c5-a6da-47c4-9422-b519e224c7ca
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 11%
+source-wordcount: '249'
+ht-degree: 15%
 
 ---
 
@@ -21,7 +19,7 @@ Ao aplicar o fluxo de trabalho, especifique as seguintes informações:
 
 * O fluxo de trabalho a ser aplicado.
 
-   É possível aplicar qualquer fluxo de trabalho (ao qual você tenha acesso, conforme atribuído pelo administrador do AEM).
+  É possível aplicar qualquer fluxo de trabalho (ao qual você tenha acesso, conforme atribuído pelo administrador do AEM).
 * Opcionalmente:
 
    * Um comentário que fornece informações sobre por que você iniciou o fluxo de trabalho.
@@ -46,7 +44,7 @@ A variável **Status** na **Sites** console indica se um fluxo de trabalho foi a
 1. Na lista da página, selecione a página e clique em Fluxo de trabalho.
 1. Na caixa de diálogo Iniciar fluxo de trabalho, selecione o fluxo de trabalho a ser aplicado. Opcionalmente, insira um comentário e um título. Em seguida, clique em Start.
 
-### Iniciar um fluxo de trabalho usando o Sidekick {#starting-a-workflow-using-sidekick}
+### Iniciar um fluxo de trabalho usando Sidekick {#starting-a-workflow-using-sidekick}
 
 1. Abra o console Sites.
 1. Abra a página desejada.

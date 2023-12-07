@@ -1,19 +1,15 @@
 ---
 title: Visão geral dos componentes
-seo-title: Components
 description: Os componentes são unidades modulares que realizam funcionalidades específicas para apresentar conteúdo em seu site
-seo-description: Components are modular units which realize specific functionality to present your content on your website
-uuid: fb39aeb8-8f43-4091-8083-ebfab89e6e63
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
 exl-id: 9e30c969-2692-4380-943a-b022ee900ce8
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 52%
+source-wordcount: '570'
+ht-degree: 44%
 
 ---
 
@@ -31,7 +27,7 @@ Esta página fornece uma visão geral dos componentes do Adobe Experience Manage
 * Pode ser executado em qualquer lugar dentro de qualquer sistema AEM. Eles também podem ser limitados para execução em componentes específicos.
 * Têm uma interface de usuário padronizada.
 * Têm um comportamento de edição que pode ser configurado.
-* Usam caixas de diálogo que são criadas usando subelementos com base nos componentes da interface do Granite
+* Use caixas de diálogo que são criadas usando subelementos com base nos componentes da interface do Granite
 * São desenvolvidos usando [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR) (recomendado) ou JSP.
 * Podem ser desenvolvidos para criar componentes personalizados que estendem a funcionalidade padrão.
 
@@ -40,7 +36,7 @@ Como os componentes são modulares, você pode:
 * Desenvolver um novo componente na instância local.
 * Implantá-los no ambiente de teste.
 * Implantá-los no ambiente de criação ativo, onde eles permitem que autores e/ou administradores adicionem e configurem conteúdo.
-* Implantá-los em ambientes de publicação ativos, onde eles são usados para renderizar conteúdo para os visitantes do site. Determinados componentes, por exemplo, para Comunidades, também aceitam a entrada dos usuários.
+* Implante-o em seu(s) ambiente(s) de publicação ativo(s), onde eles são usados para renderizar conteúdo para os visitantes do seu site. Determinados componentes, por exemplo, para Comunidades, também aceitam a entrada dos usuários.
 
 Cada componente do AEM:
 
@@ -52,7 +48,7 @@ Cada componente do AEM:
 
 O AEM vem com uma variedade de [componentes prontos para uso](/help/sites-authoring/default-components.md) que oferecem funcionalidade abrangente, incluindo:
 
-* Sistema de parágrafos ( `parsys`)
+* Sistema de parágrafo ( `parsys`)
 * Página ( `responsivegrid` - somente interface habilitada para toque)
 * Texto
 * Imagem, com texto de acompanhamento

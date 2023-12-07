@@ -1,20 +1,16 @@
 ---
 title: Conexão com o Adobe Analytics e criação de estruturas
-seo-title: Connecting to Adobe Analytics and Creating Frameworks
 description: Saiba mais sobre como conectar o AEM ao SiteCatalyst e criar estruturas.
-seo-description: Learn about connecting AEM to SiteCatalyst and creating frameworks.
-uuid: 3820dd24-4193-42ea-aef2-4669ebfeaa9d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
-source-git-commit: bbd18486a77d7b46454aacff23147b38860bd895
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 7%
+source-wordcount: '1484'
+ht-degree: 1%
 
 ---
 
@@ -149,7 +145,7 @@ Comece abrindo o painel. Pressione a seta para baixo ao lado de **Servidores**:
 
 ![server_001](assets/server_001.png)
 
-* **Servidor de controle**
+* **Servidor de rastreamento**
 
    * contém o URL usado para enviar chamadas do Adobe Analytics
 
@@ -157,7 +153,7 @@ Comece abrindo o painel. Pressione a seta para baixo ao lado de **Servidores**:
       * `d1` - corresponde ao data center para o qual as informações são enviadas (seja `d1`, `d2`ou `d3`)
       * `sc.omtrdc.net` - nome do domínio
 
-* **Servidor de rastreamento protegido**
+* **Servidor de rastreamento seguro**
 
    * Tem os mesmos segmentos que o servidor de rastreamento
    * Usado para enviar dados de páginas seguras (`https://`)

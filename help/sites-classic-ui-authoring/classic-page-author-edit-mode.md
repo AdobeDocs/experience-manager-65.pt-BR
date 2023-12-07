@@ -1,20 +1,16 @@
 ---
 title: Componentes para criação de página
-seo-title: Components for Page Authoring
 description: Os componentes estão disponíveis ao editar uma página na guia Componentes do sidekick e no seletor Inserir novo componente (ao clicar duas vezes na área Arrastar componentes ou ativos aqui).
-seo-description: The components are available when editing a page from the Components tab of the sidekick and the Insert New Component selector (when you double-click in the Drag components or assets here area).
-uuid: c353073d-d4d1-4529-b8bd-d0ca302cc9a0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 9aa0521f-f321-42e9-b022-7ff968a36212
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '6026'
-ht-degree: 8%
+source-wordcount: '5991'
+ht-degree: 3%
 
 ---
 
@@ -159,12 +155,12 @@ Há várias maneiras de criar uma lista de páginas - Páginas secundárias, Lis
 Independentemente do método escolhido, as páginas incluídas na lista devem ter, cada uma, uma imagem associada à página. Essa imagem é exibida no Carrossel. Se não houver imagem para uma página nas Propriedades da página, você deve associar uma imagem à página antes de começar. Caso contrário, o Carrossel exibe uma página em branco. Consulte [Editar propriedades da página](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 Dependendo do item escolhido, um novo painel será exibido:
 
-      * **Opções de páginas filho**
+      * **Opções de páginas secundárias**
 
          * **Página principal**
 Especifique um caminho manualmente ou usando o seletor. Deixe em branco para utilizar a página atual como principal.
 
-      * **Opções de lista fixa**
+      * **Opções para a lista fixa**
 
          * **Páginas**
 Selecione uma lista de páginas. Uso `+` para adicionar mais entradas e os botões de seta para cima/baixo para ajustar a ordem.
@@ -266,7 +262,7 @@ O componente de integração de aplicativos externos (**Externo**) permite incor
      https://en.wikipedia.org/wiki/Main_Page
      ```
 
-   * **Enviar parâmetros**
+   * **Envio de parâmetros**
 
      Marque a caixa para que os parâmetros sejam passados para o aplicativo quando necessário.
 
@@ -288,7 +284,7 @@ O componente de Flash permite carregar um filme de Flash. Você pode arrastar um
 
 * **Flash**
 
-   * **Filme em flash**
+   * **Flash filme**
 
      O arquivo de filme flash. Arraste um ativo do localizador de conteúdo ou clique em para abrir uma janela de navegação.
 
@@ -366,7 +362,7 @@ Quando uma imagem é carregada, você pode configurar o seguinte:
 
   O título da imagem.
 
-* **Alternar texto**
+* **Texto Alternativo**
 
   Um texto alternativo a ser usado ao criar conteúdo acessível.
 
@@ -398,17 +394,17 @@ O componente Lista permite configurar critérios de pesquisa para exibir uma lis
 
 * **Lista**
 
-   * **Criar uso da lista**
+   * **Criar lista usando**
 
      Aqui você especifica onde a lista recupera o conteúdo. Há vários métodos:
 
    * Dependendo do item escolhido, um novo painel será exibido:
 
-      * **Opções de páginas filho**
+      * **Opções de páginas secundárias**
 
          * **Filhos de** (Página principal) Especifique um caminho manualmente ou usando o seletor. Deixe em branco para utilizar a página atual como principal.
 
-      * **Opções de lista fixa**
+      * **Opções para a lista fixa**
 
          * **Páginas**
 
@@ -416,7 +412,7 @@ O componente Lista permite configurar critérios de pesquisa para exibir uma lis
 
       * **Opções de pesquisa**
 
-         * **Começa em**
+         * **Iniciar em**
 
            Insira um caminho inicial manualmente ou usando o seletor.
 
@@ -426,7 +422,7 @@ O componente Lista permite configurar critérios de pesquisa para exibir uma lis
 
       * **Opções de pesquisa avançada**
 
-         * **Notação do predicativo do Querybuilder**
+         * **Notação de predicativo do Querybuilder**
 
            Você pode inserir uma consulta de pesquisa usando a notação de predicado do Querybuilder. Por exemplo, você pode digitar &quot;fulltext=Marketing&quot; para que todas as páginas com &quot;Marketing&quot; em seu conteúdo sejam exibidas no Carrossel.
 
@@ -448,7 +444,7 @@ O componente Lista permite configurar critérios de pesquisa para exibir uma lis
 
      Especifique o número máximo de itens que deseja exibir na lista.
 
-   * **Habilitar feed**
+   * **Ativar feed**
 
      Indica se um feed RSS deve ser ativado para a lista.
 
@@ -508,7 +504,7 @@ Você pode configurar:
 
      Especifique a página (produto) para a qual o status do pedido deve ser exibido.
 
-   * **Tipo / Tamanho**
+   * **Tipo/tamanho**
 
      Selecione a partir da seleção fornecida.
 
@@ -572,7 +568,7 @@ Você pode configurar:
 
      Se não houver resultados, o texto inserido aqui será exibido.
 
-   * **Verificar a ortografia do texto**
+   * **Texto de verificação ortográfica**
 
      Se alguém inserir um termo semelhante, este texto será exibido antes do termo.
 Por exemplo, se você digitar `Geometrixxe`, o sistema exibe &quot;Você quis dizer? Geometrixx&quot;.
@@ -735,11 +731,11 @@ Você pode configurar:
 
      O título do bloco. É mostrado por mouseover.
 
-   * **Alternar texto**
+   * **Texto Alternativo**
 
      Texto alternativo a ser mostrado se a imagem não puder ser exibida. Se deixado em branco, o título será usado.
 
-   * **Vincular para**
+   * **Vincular a**
 
      Especifique um caminho de destino.
 
@@ -772,7 +768,7 @@ Você pode configurar o seguinte:
 
   O URI se o título for para operar como um link.
 
-* **Tipo / Tamanho**
+* **Tipo/tamanho**
 
   Selecione Pequeno ou Grande na lista suspensa. O pequeno é gerado como uma imagem. Grande é gerado como texto.
 
@@ -909,7 +905,7 @@ Este campo é obrigatório e deve conter apenas os seguintes caracteres:
 
      Permite fornecer informações adicionais ao usuário, se necessário. No formulário, essa descrição é mostrada abaixo do campo, em uma fonte menor do que o título.
 
-   * **Exibir / Ocultar**
+   * **Mostrar/Ocultar**
 
      Determina quando o campo está visível.
 
@@ -981,15 +977,15 @@ Esse componente necessário define o início de um novo formulário em uma pági
 
       * **Solicitação de conta**
       * **Criar conteúdo**
-      * **Criar cliente em potencial**
-      * **Criar e atualizar a conta**
+      * **Criar lead**
+      * **Criar e atualizar conta**
       * **Serviço de e-mail: Criar assinante e adicionar à lista**
-      * **Servio de e-mail: enviar e-mail de resposta automática**
-      * **Serviço de e-mail: cancelar a inscrição do usuário da lista**
+      * **Serviço de e-mail: enviar e-mail de resposta automática**
+      * **Serviço de e-mail: cancelar inscrição do usuário na lista**
       * **Editar comunidade**
       * **Editar recursos**
       * **Editar recursos controlados pelo fluxo de trabalho**
-      * **Email**
+      * **E-mail**
       * **Detalhes do pedido feito**
       * **Atualização do perfil**
       * **Redefinir senha**
@@ -999,9 +995,9 @@ Esse componente necessário define o início de um novo formulário em uma pági
         O tipo de ação padrão.
 
       * **Armazenar conteúdo com uploads**
-      * **Enviar Ordem**
+      * **Enviar pedido**
       * **Cancelar assinatura do assinante**
-      * **Atualizar a ordem**
+      * **Atualizar pedido**
 
    * **Identificador de formulário**
 
@@ -1013,7 +1009,7 @@ Esse componente necessário define o início de um novo formulário em uma pági
 Este campo é opcional e especifica o caminho para um nó no repositório. Quando esse nó tem propriedades que correspondem aos nomes dos campos, os campos apropriados no formulário são pré-carregados com o valor dessas propriedades. Se não houver correspondência, o campo conterá o valor padrão.
 Usar **Carregar caminho** você pode pré-carregar o formulário com valores nos campos obrigatórios. Consulte [Pré-carregando Valores de Formulário](/help/sites-developing/developing-forms.md#preloading-form-values).
 
-   * **Validação do cliente**
+   * **Validação de cliente**
 
      Indica se a validação do cliente é necessária para este formulário (validação do servidor) *sempre* ocorre.). A validação é obtida com o **Forms Captcha** componente.
 
@@ -1029,7 +1025,7 @@ Usar **Carregar caminho** você pode pré-carregar o formulário com valores nos
 
         `/apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
 
-   * **Configurações de ação**
+   * **Configuração de ação**
 
      As opções disponíveis em **Configuração de ação** depende do selecionado **Tipo de ação**:
 
@@ -1061,12 +1057,12 @@ A página usada ao criar uma conta.
 
          * **Exibir seletor**
 
-      * **Criar cliente em potencial**
+      * **Criar lead**
 
          * **O cliente em potencial será adicionado a esta lista**
 Especifique a lista de clientes potenciais necessária.
 
-      * **Criar e atualizar a conta**
+      * **Criar e atualizar conta**
 
          * **Grupo inicial**
 
@@ -1080,11 +1076,11 @@ Especifique a lista de clientes potenciais necessária.
 
            O caminho (relativo) para onde a nova conta é criada e armazenada.
 
-         * **Exibir dados...**
+         * **Exibir Dados...**
 
            Selecione o botão para que você possa acessar as informações sobre os resultados do formulário no Editor de itens em massa. Aqui, é possível exportar as informações para um `.tsv` arquivo (separado por tabulação) (para uso, por exemplo, em uma planilha do Excel).
 
-      * **Email**
+      * **E-mail**
 
          * **De**
 
@@ -1098,7 +1094,7 @@ Especifique a lista de clientes potenciais necessária.
 
            Insira um ou mais endereços de email CC.
 
-         * **BCC**
+         * **CCO**
 
            Insira um ou mais endereços de email CCO.
 
@@ -1108,7 +1104,7 @@ Especifique a lista de clientes potenciais necessária.
 
       * **Redefinir senha**
 
-         * **Alterar página de senha**
+         * **Página Alterar Senha**
 
            A página usada ao alterar a senha.
 
@@ -1119,7 +1115,7 @@ Especifique a lista de clientes potenciais necessária.
            O caminho de conteúdo para qualquer conteúdo que o formulário despeja. Digite um caminho que termine com uma barra `/`. A barra significa que, para cada porta de formulário, um novo nó é criado no local determinado; por exemplo:
            `/forms/feedback/`
 
-         * **Exibir dados...**
+         * **Exibir Dados...**
 
            Selecione o botão para que você possa acessar as informações sobre os resultados do formulário no Editor de itens em massa. Aqui, você pode exportar as informações para um arquivo .tsv (separado por tabulação) (para uso, por exemplo, em uma planilha do Excel).
 
@@ -1129,7 +1125,7 @@ Especifique a lista de clientes potenciais necessária.
 
       * **Cancelar assinatura do assinante**
 
-         * **O cliente em potencial será excluído da lista**
+         * **O cliente em potencial será excluído desta lista**
 
            Especifique a lista de clientes potenciais necessária.
 
@@ -1139,7 +1135,7 @@ Marca o fim do formulário. Você pode configurar o seguinte:
 
 * **Fim do formulário**
 
-   * **Mostrar botão enviar**
+   * **Mostrar botão Enviar**
 
      Indica se um botão Enviar deve ser mostrado ou não.
 

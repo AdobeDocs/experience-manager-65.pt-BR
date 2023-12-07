@@ -1,25 +1,21 @@
 ---
 title: Experimentar modelos editáveis no We.Retail
-seo-title: Trying out Editable Templates in We.Retail
 description: Saiba como experimentar Modelos editáveis no Adobe Experience Manager usando o We.Retail.
-seo-description: null
-uuid: 0d4b97cb-efcc-4312-a783-eae3ecd6f889
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 10%
+source-wordcount: '467'
+ht-degree: 0%
 
 ---
 
 # Experimentar modelos editáveis no We.Retail{#trying-out-editable-templates-in-we-retail}
 
-Com os modelos editáveis, criar e manter modelos não é mais uma tarefa somente para desenvolvedores. Um tipo de usuário avançado, chamado de autor de modelo, agora pode criar modelos. Os desenvolvedores ainda são necessários para configurar o ambiente, criar bibliotecas de clientes e criar os componentes a serem usados, mas uma vez que essas noções básicas estejam em vigor, o autor do modelo terá a flexibilidade de criar e configurar modelos sem um projeto de desenvolvimento.
+Com os modelos editáveis, criar e manter modelos não é mais uma tarefa somente para desenvolvedores. Um tipo de usuário avançado, chamado de autor de modelo, agora pode criar modelos. Os desenvolvedores ainda são necessários para configurar o ambiente, criar bibliotecas de clientes e criar os componentes a serem usados, mas quando essas noções básicas estiverem em vigor, o autor do modelo terá a flexibilidade de criar e configurar modelos sem um projeto de desenvolvimento.
 
 Todas as páginas no We.Retail são baseadas em modelos editáveis, permitindo que não desenvolvedores adaptem e personalizem os modelos.
 

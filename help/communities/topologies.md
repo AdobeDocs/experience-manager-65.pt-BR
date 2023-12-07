@@ -1,18 +1,14 @@
 ---
 title: Topologias recomendadas para comunidades
-seo-title: Recommended Topologies for Communities
 description: Como abordar o manuseio de conteúdo gerado pelo usuário (UGC)
-seo-description: How to approach the handling of user-generated content (UGC)
-uuid: 4bc1c423-0ba9-4f2e-b11c-4d6824f45641
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
 exl-id: b6658330-d862-44e3-aac0-824fb91cd087
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '548'
 ht-degree: 1%
 
 ---
@@ -40,6 +36,7 @@ A exigência de um armazenamento comum resulta nas seguintes topologias recomend
 >Para o AEM Communities, [O UGC nunca é replicado](working-with-srp.md#ugc-never-replicated).
 >
 >Quando a implantação não incluir uma [armazenamento comum](working-with-srp.md), o UGC será visível somente na instância de publicação ou autor do AEM em que foi inserido.
+>
 
 >[!NOTE]
 >
@@ -88,26 +85,26 @@ Quando a topologia é um farm de publicação, os tópicos relevantes de import�
 
 Para ambientes não relacionados à produção, [JSRP](jsrp.md) O oferece simplicidade para configurar um ambiente de desenvolvimento com uma instância de autor e uma instância de publicação.
 
-Se escolher [ASRP](asrp.md), [DSRP](dsrp.md) ou [MSRP](msrp.md) para produção, também é possível configurar um ambiente de desenvolvimento semelhante usando o armazenamento Adobe on-demand ou MongoDB. Para ver um exemplo, consulte [Como configurar o MongoDB para demonstração](demo-mongo.md).
+Se escolher [ASRP](asrp.md), [DSRP](dsrp.md) ou [MSRP](msrp.md) para produção, também é possível configurar um ambiente de desenvolvimento semelhante usando o armazenamento Adobe on-demand ou o MongoDB. Para ver um exemplo, consulte [Como configurar o MongoDB para demonstração](demo-mongo.md).
 
 ## Referências {#references}
 
 * [Sincronização de usuário](sync.md)
 
-   Discute a sincronização dos dados do usuário entre as instâncias do farm de publicação.
+  Discute a sincronização dos dados do usuário entre as instâncias do farm de publicação.
 
 * [Gerenciar usuários e grupos de usuários](users.md)
 
-   Discute as funções dos usuários e grupos de usuários nos ambientes do autor e de publicação.
+  Discute as funções dos usuários e grupos de usuários nos ambientes do autor e de publicação.
 
 * UGC [armazenamento comum](working-with-srp.md)
 
-   Descreve o armazenamento do conteúdo da comunidade separado do conteúdo do site.
+  Descreve o armazenamento do conteúdo da comunidade separado do conteúdo do site.
 
 * [Armazenamentos de nós e armazenamentos de dados](../../help/sites-deploying/data-store-config.md)
 
-   Basicamente, o conteúdo do site é armazenado em um armazenamento de nó. Para Ativos, um armazenamento de dados pode ser configurado para armazenar dados binários. Para Communities, um armazenamento comum deve ser configurado para selecionar o SRP.
+  Basicamente, o conteúdo do site é armazenado em um armazenamento de nó. Para Ativos, um armazenamento de dados pode ser configurado para armazenar dados binários. Para Communities, um armazenamento comum deve ser configurado para selecionar o SRP.
 
 * [Elementos de armazenamento](../../help/sites-deploying/storage-elements-in-aem-6.md)
 
-   Descreve as implementações de armazenamento de dois nós: Tar e MongoDB.
+  Descreve as implementações de armazenamento de dois nós: Tar e MongoDB.

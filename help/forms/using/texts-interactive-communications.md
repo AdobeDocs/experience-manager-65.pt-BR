@@ -1,16 +1,12 @@
 ---
 title: Textos em comunicações interativas
-seo-title: Text in Interactive Communications
 description: Criação e edição de fragmentos de documento de texto a serem usados em Comunicações interativas - o texto é um dos quatro tipos de fragmentos de documento usados para criar Comunicações interativas. Os outros três são condições, listas e fragmentos de layout.
-seo-description: Creating and editing text document fragments to be used in Interactive Communications
-uuid: fdac3dd8-c6d0-418e-b969-fc791b7bd509
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 feature: Interactive Communication
 exl-id: b8e84c5d-2ec8-4575-9eed-6b37b04e5d66
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 0%
@@ -94,7 +90,7 @@ Se você tiver especificado um modelo de dados de formulário ao criar um texto,
 
 Como alternativa, você pode pesquisar e adicionar a propriedade do modelo de dados de formulário usando o símbolo @ no editor de texto. Coloque o cursor onde deseja inserir a propriedade. Digite @ seguido pela sequência de pesquisa. A operação de pesquisa é executada em todas as propriedades e variáveis do modelo de dados de formulário disponíveis no fragmento do documento. As propriedades ou variáveis que contêm a string de pesquisa são recuperadas e exibidas como uma lista suspensa. Navegue pelos resultados da pesquisa e clique na propriedade que você deseja inserir no local do cursor. Pressione Esc para ocultar os resultados da pesquisa.
 
-* Para permitir que os agentes editem o valor de uma propriedade de modelo de dados de formulário na interface do usuário do agente enquanto [Preparar e enviar a comunicação interativa](/help/forms/using/prepare-send-interactive-communication.md) usando a IU do agente, selecione a variável **[D]** bloquear ícone para essa propriedade e garantir que ela esteja em um estado desbloqueado. O estado padrão da propriedade é bloqueado e um agente não pode editar a propriedade na interface do usuário do agente.
+* Para permitir que os agentes editem o valor de uma propriedade do modelo de dados de formulário na interface do usuário do agente enquanto [Preparar e enviar a comunicação interativa](/help/forms/using/prepare-send-interactive-communication.md) usando a IU do agente, selecione a variável **[D]** bloquear ícone para essa propriedade e garantir que ela esteja em um estado desbloqueado. O estado padrão da propriedade é bloqueado e um agente não pode editar a propriedade na interface do usuário do agente.
 
 Você também pode usar as propriedades do modelo de dados de formulário para criar regras para exibir ou ocultar partes do conteúdo. Para obter mais informações, consulte [Criar regras em texto](#rules).
 

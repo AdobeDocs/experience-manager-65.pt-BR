@@ -1,18 +1,14 @@
 ---
 title: Implementação da nomenclatura de página do lado do servidor para o Analytics
-seo-title: Implementing Server-Side Page Naming for Analytics
 description: O Adobe Analytics usa a propriedade s.pageName para identificar páginas de maneira exclusiva e associar os dados coletados para as páginas
-seo-description: Adobe Analytics uses the s.pageName property to uniquely identify pages and to associate the data that is collected for the pages
-uuid: 37b92099-0cce-4b2d-b55c-928f636dbd7e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: be2aa297-5b78-4b1d-8ff1-e6a585a177dd
 exl-id: 17a4e4dc-804e-44a9-9942-c37dbfc8016f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -60,7 +56,7 @@ Para manter um histórico completo dos dados de análise de uma página, é nece
 
 Para garantir a continuidade dos relatórios, o valor `s.pageName` deve ter as seguintes características:
 
-* Único.
+* Exclusivo.
 * Estável.
 * Legível.
 

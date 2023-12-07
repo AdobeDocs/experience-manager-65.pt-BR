@@ -1,17 +1,15 @@
 ---
 title: Convenções de nomenclatura de nós no Repositório de conteúdo Java
 description: Os nós no repositório estão sujeitos às convenções de nomenclatura do Repositório de conteúdo Java
-uuid: 0515c5c5-3e93-4710-983f-c08c146467fc
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
 exl-id: 01c6bb29-1d2d-4a45-b291-0e8d97c01a08
-source-git-commit: 8cfc42dc8fdf4dc0bfd3f002385f100c81b15993
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 7%
+source-wordcount: '284'
+ht-degree: 2%
 
 ---
 
@@ -46,7 +44,7 @@ Essas convenções de nomenclatura são implementadas em vários níveis:
 
 ### Gerenciador de páginas {#page-manager}
 
-[PageManager](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) O fornece métodos para operações no nível da página, com base em [JCRUtil](#jcr-utilities).
+[PageManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) O fornece métodos para operações no nível da página, com base em [JCRUtil](#jcr-utilities).
 
 ### Interface do usuário padrão {#standard-ui}
 

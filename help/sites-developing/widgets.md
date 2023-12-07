@@ -1,17 +1,15 @@
 ---
 title: Uso e extensão de widgets (interface de usuário clássica)
 description: A interface baseada na Web do Adobe Experience Manager usa AJAX e outras tecnologias modernas de navegador para permitir a edição e a formatação WYSIWYG de conteúdo por autores diretamente na página da Web
-uuid: eb3da415-cbef-4766-a28e-837e238a4156
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 7b234f1f-4470-4de1-a3c3-ab19e5e001ad
 docset: aem65
 exl-id: 56a9591c-cd78-42e8-a5d7-6b48581d6af6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '4925'
+source-wordcount: '4896'
 ht-degree: 0%
 
 ---
@@ -195,7 +193,7 @@ Para usar a caixa de diálogo Painel único:
 A variável **Vários painéis** tem a mesma exibição que a caixa de diálogo **Completo** caixa de diálogo, mas é criada de forma diferente. Suas características são:
 
 * É definido por um nó (tipo de nó = `cq:Dialog`, xtype = ` [tabpanel](/help/sites-developing/xtypes.md#tabpanel)`).
-* Exibe três guias (tipo de nó = `cq:Panel`).
+* Exibe três guias (nó tipo = `cq:Panel`).
 * Cada guia tem dois campos de texto (nó tipo = `cq:Widget`, xtype = ` [textfield](/help/sites-developing/xtypes.md#textfield)`).
 * É definido pelo nó:
   `/apps/extjstraining/components/dialogbasics/multipanel`
@@ -487,7 +485,7 @@ O plug-in RTE:
 Para usar o **Plug-in do Editor de Rich Text (RTE)** caixa de diálogo baseada em:
 
 1. Substituir a caixa de diálogo do **Widgets personalizados** componente com o **Plug-in do Editor de Rich Text (RTE)** caixa de diálogo baseada em: siga as etapas descritas para o [Exemplo 2: caixa de diálogo Painel único](#example-single-panel-dialog)
-1. Editar o componente.
+1. Edite o componente.
 1. Clique no último ícone à direita (aquele com quatro setas). Insira um caminho e clique em **OK**: O caminho é exibido entre colchetes ([ ]).
 1. Clique em **OK** então você fecha o Editor de Rich Text.
 
@@ -497,7 +495,7 @@ A **caixa de diálogo com base em plug-in** da editor Rich Text (RTE) é exibida
 
 >[!NOTE]
 >
->Este exemplo mostra apenas como implementar o lado do cliente parte da lógica: os espaços reservados (*[texto]*) devem então ser analisados no lado do servidor explicitamente (por exemplo, no JSP do componente).
+>Este exemplo mostra apenas como implementar a parte do lado do cliente da lógica: os espaços reservados (*[texto]*) devem ser analisadas explicitamente no lado do servidor (por exemplo, no componente JSP).
 
 ### Visão geral da árvore {#tree-overview}
 

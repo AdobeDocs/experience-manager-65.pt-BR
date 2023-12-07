@@ -1,13 +1,11 @@
 ---
 title: Guia do Adobe Experience Manager 6.5 Forms
-seo-title: AEM 6.5 Forms Guide
 description: Use este guia AEM 6.5 para criar, gerenciar, publicar e atualizar formulários digitais. Encontre ajuda para instalá-los, atualizá-los e configurá-los e saiba mais sobre como criar formulários adaptáveis.
-seo-description: Covers all AEM Forms tasks, including how to create, manage, publish, and update digital forms.
 exl-id: e66383b0-ae58-4cfe-8f1b-28b4e124fd06
-source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 30%
+source-wordcount: '318'
+ht-degree: 22%
 
 ---
 
@@ -43,7 +41,7 @@ Use este guia AEM 6.5 para criar, gerenciar, publicar e atualizar formulários d
 | [Guia de implementação do usuário](/help/sites-deploying/home.md) | Este guia mostra as noções básicas do AEM. |
 | [Guia do usuário para desenvolvimento](/help/sites-developing/home.md) | Saiba como criar sua instância de AEM. |
 | [Guia do usuário de gerenciamento](/help/managing/home.md) | Este guia descreve como gerenciar um projeto AEM com sucesso. |
-| [Guia do usuário do Commerce](/help/commerce/home.md) | Saiba mais sobre a Commerce Integration Framework no AEM. |
+| [Guia do usuário do Commerce](/help/commerce/home.md) | Saiba mais sobre o Commerce integration framework no AEM. |
 | [Guia do usuário do Mobile](/help/mobile/home.md) | Este guia descreve como criar e gerenciar conteúdo para aplicativos móveis. |
 
 ## Principais recursos do AEM

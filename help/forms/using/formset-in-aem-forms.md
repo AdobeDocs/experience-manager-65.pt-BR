@@ -1,19 +1,15 @@
 ---
 title: Formulário definido no AEM Forms
-seo-title: Form set in AEM Forms
 description: Este artigo apresenta o conjunto de formulários e explica como criar conjuntos de formulários unindo formulários HTML5. Este artigo também explica como preencher previamente dados xml em um conjunto de formulários e como usar conjuntos de formulários no gerenciamento de processos.
-seo-description: This article introduces form set and explains how to create form sets by stitching together HTML5 forms. This article also explains how you can prefill xml data to a form set and how you can use form sets in process management.
-uuid: a1a2f267-26a9-4f45-bcfc-dbdedad95973
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 80e3eec4-95e0-4731-a0e5-a617e9bcb069
 docset: aem65
 feature: Mobile Forms
 exl-id: 039afdf3-013b-41b2-8821-664d28617f61
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2813'
+source-wordcount: '2804'
 ht-degree: 0%
 
 ---
@@ -169,15 +165,15 @@ O arquivo XML de preenchimento prévio é especificado usando o parâmetro dataR
 
 Por exemplo, você tem três formulários (formulário1, formulário2 e formulário3), no conjunto de formulários com a seguinte estrutura:
 
-form1
+formulário1
 
 campo formulário1campo
 
-form2
+formulário2
 
 campo formulário2campo
 
-form3
+formulário3
 
 campo formulário3campo
 

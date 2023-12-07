@@ -1,13 +1,12 @@
 ---
 title: Adobe Experience Manager Mobile - Disponibilidade do GDPR
 description: Saiba mais sobre como o Adobe Experience Manager está pronto para ajudá-lo com suas obrigações de conformidade com o GDPR.
-uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 1%
+source-wordcount: '683'
+ht-degree: 0%
 
 ---
 

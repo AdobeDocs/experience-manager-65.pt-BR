@@ -1,17 +1,15 @@
 ---
 title: Edição de propriedades da página
 description: As propriedades de uma página podem variar dependendo da natureza da página. Por exemplo, algumas páginas podem estar conectadas a uma live copy, enquanto outras não, e as informações da live copy estarão disponíveis conforme apropriado.
-uuid: 63d37d1b-52da-489d-b02b-e8b3d17571d1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '760'
-ht-degree: 27%
+ht-degree: 20%
 
 ---
 
@@ -33,7 +31,7 @@ As propriedades são distribuídas por várias guias:
 
 * **Tags**
 
-  Aqui você pode adicionar ou remover as tags da página, atualizando a lista na caixa de seleção:
+  Aqui você pode adicionar ou remover tags da página, atualizando a lista na caixa de seleção:
 
    * Após selecionar uma tag, ela é listada abaixo da caixa de seleção. Você pode remover uma tag dessa lista usando o ícone “x”.
    * Uma tag totalmente nova pode ser inserida digitando o nome em uma caixa de seleção vazia.
@@ -51,7 +49,7 @@ As propriedades são distribuídas por várias guias:
 
   Um título a ser usado na página.
 
-* **Titulo da navegação**
+* **Título de navegação**
 
   Você pode especificar um título separado para usar na navegação (por exemplo, se desejar algo mais conciso). Se estiver vazio, a variável **Título** é usada.
 
@@ -63,7 +61,7 @@ As propriedades são distribuídas por várias guias:
 
   A descrição da página, a finalidade dela ou qualquer outro detalhe que desejar adicionar.
 
-* **Em tempo**
+* **No Prazo**
 
   A data e a hora em que a página publicada será ativada. Quando publicada, essa página será mantida inativa até o horário especificado.
 
@@ -88,7 +86,7 @@ As propriedades são distribuídas por várias guias:
   >* deve ser exclusivo, portanto, certifique-se de que o valor ainda não esteja sendo usado por outra página.
   >* não são compatíveis com padrões regex.
 
-* **Redirecionar URL do Vanity**
+* **Redirecionar URL personalizado**
 
   Indica se você deseja que a página use a URL personalizada.
 
@@ -118,7 +116,7 @@ As propriedades são distribuídas por várias guias:
 
   A página a ser usada para logon.
 
-* **Grupos aceitos**
+* **Grupos Admitidos**
 
   Grupos qualificados para fazer logon no CUG.
 
@@ -136,7 +134,7 @@ As propriedades são distribuídas por várias guias:
 
   Mostra a imagem em miniatura da página. É possível:
 
-   * **Gerar pré-visualização**
+   * **Gerar visualização**
 
      Gera uma visualização da página para usar como miniatura.
 

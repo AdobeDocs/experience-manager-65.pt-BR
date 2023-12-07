@@ -1,25 +1,21 @@
 ---
 title: Preencher previamente campos de formulário adaptável
-seo-title: Prefill adaptive form fields
 description: Use dados existentes para preencher previamente os campos de um formulário adaptável.
-seo-description: With adaptive forms, you users can prefill basic information in a form by logging in with their social profiles. This article describes how you can accomplish this.
-uuid: 574de83a-7b5b-4a1f-ad37-b9717e5c14f1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 feature: Adaptive Forms
 exl-id: 29cbc330-7b3d-457e-ba4a-7ce6091f3836
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2248'
+source-wordcount: '2203'
 ht-degree: 0%
 
 ---
 
 # Preencher previamente campos de formulário adaptável{#prefill-adaptive-form-fields}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -336,7 +332,7 @@ Você pode gravar uma sequência XML ou JSON simples contendo todos os seus dado
 
 Por exemplo, quando você deseja um design específico para a página com um tipo específico de cabeçalho. Para isso, você pode escrever o seu próprio `header.jsp`, que você pode incluir no componente de página e definir a `data` atributo.
 
-Outro bom exemplo é um caso de uso em que você deseja preencher previamente os dados de logon por meio de contas sociais como Facebook, Twitter ou LinkedIn. Nesse caso, é possível incluir um JSP simples em `header.jsp`, que busca dados da conta de usuário e define o parâmetro de dados.
+Outro bom exemplo é um caso de uso em que você deseja preencher previamente os dados ao fazer logon por meio de contas sociais como Facebook, Twitter ou LinkedIn. Nesse caso, é possível incluir um JSP simples em `header.jsp`, que busca dados da conta de usuário e define o parâmetro de dados.
 
 prefill-page component.zip
 
@@ -345,7 +341,7 @@ Amostra de prefill.jsp no componente Página
 
 ## Serviço de preenchimento prévio personalizado do AEM Forms {#aem-forms-custom-prefill-service}
 
-Você pode usar o serviço de preenchimento prévio personalizado para os cenários, onde lê constantemente os dados de uma fonte predefinida. O serviço de preenchimento prévio lê os dados de fontes de dados definidas e preenche os campos do formulário adaptável com o conteúdo do arquivo de dados de preenchimento prévio. Também ajuda a associar permanentemente os dados pré-preenchidos a um formulário adaptável.
+Você pode usar o serviço de preenchimento prévio personalizado para os cenários, em que lê constantemente os dados de uma fonte predefinida. O serviço de preenchimento prévio lê os dados de fontes de dados definidas e preenche os campos do formulário adaptável com o conteúdo do arquivo de dados de preenchimento prévio. Também ajuda a associar permanentemente os dados pré-preenchidos a um formulário adaptável.
 
 ### Criar e executar um serviço de preenchimento prévio {#create-and-run-a-prefill-service}
 

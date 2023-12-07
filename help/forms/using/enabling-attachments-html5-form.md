@@ -1,18 +1,14 @@
 ---
 title: Ativação de anexos para um formulário HTML5
-seo-title: Enabling attachments for an HTML5 form
 description: Por padrão, o suporte de anexo para formulários HTML5 está desativado.
-seo-description: By default, the attachment support for HTML5 forms is disabled.
-uuid: 2c62ac3e-4b27-46c7-a61d-a805fb5d26fb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 feature: Mobile Forms
 exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
-source-git-commit: 6e2a0f053a1f6989524e9ae2b1dcb001b0397ac6
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '339'
 ht-degree: 1%
 
 ---

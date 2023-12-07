@@ -1,17 +1,13 @@
 ---
 title: Modificação das configurações de conversão da exportação de PDF
-seo-title: Modifying the PDF Export conversion settings
 description: Saiba como modificar as configurações de conversão da Exportação de PDF.
-seo-description: Learn how to modify the PDF Export conversion settings.
-uuid: 7bade010-f422-4a76-a876-705e3cf346e6
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 982f7b7e-9ba9-437f-a337-76c355b328ac
 feature: PDF Generator
 exl-id: 48a5d992-4681-41a8-8d1d-4da6767134c2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 0%
@@ -24,7 +20,7 @@ Use o procedimento abaixo para modificar as configurações de conversão para e
 
 >[!NOTE]
 >
->Depois de modificar a configuração Salvar como para um formato de arquivo, ela será aplicada a todas as conversões do mesmo tipo quando elas forem exportadas do Gerador de PDF.
+>Depois de modificar a configuração Salvar como para um formato de arquivo, ela se aplicará a todas as conversões do mesmo tipo quando forem exportadas do PDF Generator.
 
 1. Com o arquivo PDF aberto no Acrobat, selecione Arquivo > Salvar como.
 1. Na lista Salvar como tipo, selecione o formato apropriado.

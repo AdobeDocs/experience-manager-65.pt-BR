@@ -1,25 +1,23 @@
 ---
 title: Práticas recomendadas para desenvolvedores do AEM
-description: As equipes de engenharia e consultoria da Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores do AEM.
-uuid: f962c31f-8140-482f-b189-16376e23bfed
+description: As equipes de engenharia e consultoria da Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores de AEM.
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 13%
+source-wordcount: '445'
+ht-degree: 3%
 
 ---
 
-# Práticas recomendadas    {#best-practices}
+# Práticas recomendadas{#best-practices}
 
 ## Práticas recomendadas para desenvolvedores - Introdução {#best-practices-for-developers-getting-started}
 
-As equipes de engenharia e consultoria da Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores do AEM. os desenvolvedores do Adobe seguem essas práticas recomendadas ao desenvolverem atualizações de produtos AEM principais e código do cliente para implementações de clientes.
+As equipes de engenharia e consultoria da Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores de AEM. os desenvolvedores do Adobe seguem essas práticas recomendadas ao desenvolverem atualizações de produtos AEM principais e código do cliente para implementações de clientes.
 
 Antes de iniciar o projeto de desenvolvimento do AEM, revise primeiro essas práticas recomendadas:
 

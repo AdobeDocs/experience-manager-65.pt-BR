@@ -1,19 +1,15 @@
 ---
 title: Desenvolvimento e extensão de workflows
-seo-title: Developing and Extending Workflows
 description: O AEM fornece várias ferramentas e recursos para criar modelos de fluxo de trabalho, desenvolver etapas de fluxo de trabalho e interagir programaticamente com fluxos de trabalho
-seo-description: AEM provides several tools and resources for creating workflow models, developing workflow steps, and for programmatically interacting with workflows
-uuid: 5a857589-3b13-4519-bda2-b1dab6005550
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 8954e3df-3afa-4d53-a7e1-255f3b8f499f
 exl-id: 041b1767-8b6c-4887-a70d-abc96a116976
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1473'
-ht-degree: 4%
+source-wordcount: '1460'
+ht-degree: 3%
 
 ---
 
@@ -45,7 +41,6 @@ Os principais aspectos são abordados abaixo, enquanto as seguintes páginas abo
 >* Consulte a [Faça o webinário de especialistas em AEM sobre fluxos de trabalho](https://communities.adobeconnect.com/p5s33iburd54/).
 >* Alterações nos locais das informações consulte [Reestruturação do repositório no AEM 6.5](/help/sites-deploying/repository-restructuring.md) e [Práticas recomendadas de workflow - Locais](/help/sites-developing/workflows-best-practices.md#locations).
 >
-
 
 ## Modelo {#model}
 
@@ -126,15 +121,15 @@ Há vários tipos de fluxo de trabalho, conforme indicado no console Modelos de 
 
 * **Padrão**
 
-   Esses tipos são os workflows prontos para uso incluídos em uma instância padrão do AEM.
+  Esses tipos são os workflows prontos para uso incluídos em uma instância padrão do AEM.
 
 * Fluxos de trabalho personalizados (nenhum indicador no console)
 
-   Esses workflows foram criados como novos ou a partir de workflows prontos para uso que foram sobrepostos com personalizações.
+  Esses workflows foram criados como novos ou a partir de workflows prontos para uso que foram sobrepostos com personalizações.
 
-* **Legado**
+* **Herdados**
 
-   Fluxos de trabalho criados em uma versão anterior do AEM. Esses workflows podem ser retidos durante uma atualização ou exportados como um pacote de workflow da versão anterior e, em seguida, importados para a nova versão.
+  Fluxos de trabalho criados em uma versão anterior do AEM. Esses workflows podem ser retidos durante uma atualização ou exportados como um pacote de workflow da versão anterior e, em seguida, importados para a nova versão.
 
 ### Workflows transitórios {#transient-workflows}
 
@@ -159,7 +154,6 @@ Foram introduzidos fluxos de trabalho transitórios para carregar muitos ativos,
 >* O workflow insere um **E dividir**. Nesses casos, o histórico do tempo de execução é necessário para a confirmação do status.
 >* Quando o fluxo de trabalho temporário entra em uma etapa do participante, ele muda o modo, no tempo de execução, para não transitório. Como a tarefa está sendo passada para uma pessoa, o histórico deve ser mantido.
 >
-
 
 >[!CAUTION]
 >
@@ -202,8 +196,8 @@ Por exemplo, para um fluxo de trabalho com seis etapas e quatro estágios:
    | Etapa 2 | Criar |
    | Etapa 3 | Análise |
    | Etapa 4 | Aprovar |
-   | Etapa 5 | Concluir |
-   | Etapa 6 | Concluir |
+   | Etapa 5 | Concluído |
+   | Etapa 6 | Concluído |
 
 1. Quando o fluxo de trabalho é executado, o usuário pode visualizar o progresso de acordo com os Nomes dos estágios (em vez dos nomes das etapas). O progresso do workflow é exibido no campo [Guia INFORMAÇÕES DO FLUXO DE TRABALHO da janela de detalhes da tarefa do item do fluxo de trabalho](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions) listado na [Caixa de entrada](/help/sites-authoring/inbox.md).
 

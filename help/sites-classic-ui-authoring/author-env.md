@@ -1,19 +1,15 @@
 ---
 title: Trabalhar com o ambiente de autor
-seo-title: Working with the Author Environment
 description: O ambiente de criação permite executar tarefas relacionadas à criação (incluindo a criação de páginas e o gerenciamento de ativos) e à administração das tarefas necessárias ao gerar e manter o conteúdo em seu site.
-seo-description: The author environment lets you perform tasks related to authoring (including page authoring and managing assets) and administering tasks you need when generating and maintaining the content on your website.
-uuid: ebeaa2c3-05b0-4108-8e84-69b9ba48cfbe
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 8c747892-c5ba-4288-b5e7-75fd40d92f5c
 exl-id: 4486c503-21e6-493a-8994-b0f8cd34c85a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 1%
+source-wordcount: '252'
+ht-degree: 0%
 
 ---
 
@@ -48,7 +44,7 @@ Para isso, são fornecidas duas interfaces gráficas de usuário, que podem ser 
    * Ele foi projetado para uso em dispositivos de toque e desktop (otimizado para toque). A aparência é a mesma em todos os dispositivos, embora [visualização e seleção de recursos](/help/sites-authoring/basic-handling.md) difere levemente (toques versus cliques).
    * Consulte a [Documentação de criação padrão](/help/sites-authoring/author.md) para obter mais detalhes sobre como criar usando a interface baseada em toque. A documentação a seguir se concentra na interface clássica.
 
-   * Desktop:
+   * Área de trabalho:
 
    ![chlimage_1-150](assets/chlimage_1-150.png)
 

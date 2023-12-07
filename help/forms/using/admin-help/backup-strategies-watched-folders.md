@@ -1,19 +1,15 @@
 ---
 title: Estratégias de backup para pastas monitoradas
-seo-title: Backup strategies for watched folders
 description: Este documento descreve como as pastas monitoradas são afetadas por diferentes cenários de backup e recuperação, as limitações e os resultados desses cenários e como minimizar a perda de dados.
-seo-description: This document describes how watched folders are affected by different backup and recovery scenarios, the limitations and outcomes of these scenarios, and how to minimize data loss.
-uuid: c61997b8-6c36-4bd9-90e5-411841a6c176
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
 exl-id: 0d36160a-29fa-4cc4-a0ff-fc681d3e040e
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 2%
+source-wordcount: '1080'
+ht-degree: 0%
 
 ---
 
@@ -62,20 +58,20 @@ A tabela a seguir descreve a manipulação de cinco arquivos de amostra (file1, 
    <td><p>arquivo1, arquivo2, arquivo3, arquivo4</p></td>
    <td><p>arquivo2, arquivo3, arquivo4</p></td>
    <td><p>arquivo3, arquivo4</p></td>
-   <td><p>file4</p></td>
+   <td><p>arquivo4</p></td>
    <td><p>vazio</p></td>
-   <td><p>file5</p></td>
+   <td><p>arquivo5</p></td>
    <td><p>vazio</p></td>
   </tr>
   <tr>
    <td><p>Fase</p></td>
    <td><p>vazio</p></td>
-   <td><p>file1</p></td>
-   <td><p>file2</p></td>
-   <td><p>file3</p></td>
-   <td><p>file4</p></td>
+   <td><p>arquivo1</p></td>
+   <td><p>arquivo2</p></td>
+   <td><p>arquivo3</p></td>
+   <td><p>arquivo4</p></td>
    <td><p>vazio</p></td>
-   <td><p>file5</p></td>
+   <td><p>arquivo5</p></td>
   </tr>
   <tr>
    <td><p>Saída</p></td>
@@ -101,7 +97,7 @@ A tabela a seguir descreve a manipulação de cinco arquivos de amostra (file1, 
    <td><p>Preservar</p></td>
    <td><p>vazio</p></td>
    <td><p>vazio</p></td>
-   <td><p>file1 </p></td>
+   <td><p>arquivo1 </p></td>
    <td><p>arquivo1, arquivo2 </p></td>
    <td><p>arquivo1, arquivo2 </p></td>
    <td><p>arquivo1, arquivo2, arquivo4 </p></td>

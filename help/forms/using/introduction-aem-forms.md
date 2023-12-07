@@ -1,20 +1,16 @@
 ---
 title: Introdução ao AEM Forms
-seo-title: Introduction to AEM Forms
 description: Com o Adobe Experience Manager Forms, os usuários empresariais podem integrar formulários envolventes, responsivos e adaptáveis em sites da Web e móveis, simplificando o processo de inscrição digital e aumentando as taxas de conversão do cliente.
-seo-description: With Adobe Experience Manager Forms, business users can integrate engaging, responsive, and adaptive forms into web and mobile sites, simplifying the digital enrollment process and increasing customer conversion rates.
-uuid: a6564997-4227-4d5d-b27d-47a55a386238
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction
-discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: f8f82ad5805095f331432471b614225f761e645c
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 15%
+source-wordcount: '952'
+ht-degree: 12%
 
 ---
 
@@ -33,7 +29,7 @@ O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar
 
 O AEM Forms combina criação, gerenciamento e publicação de formulários, juntamente com recursos de gerenciamento de correspondência, segurança de documentos e análise integrada para criar experiências envolventes de ponta a ponta. Projetado para funcionar em canais móveis e da Web, o AEM Forms pode ser integrado com eficiência aos seus processos de negócios, reduzindo processos e erros de papel e, ao mesmo tempo, melhorando a eficiência.
 
-Frequentemente em grandes empresas, os formulários são criados uma vez e reutilizados, por meio de uma cópia enviada para um sistema de gerenciamento de conteúdo. Manter um grande banco de dados de formulários atualizado e torná-los detectáveis pode ser um desafio considerável. O AEM fornece um portal de formulários personalizável que garante que os clientes encontrem e acessem os formulários de que precisam, tanto na web quanto em canais móveis.
+Frequentemente em grandes empresas, os formulários são criados uma vez e reutilizados, por meio de uma cópia enviada para um sistema de gerenciamento de conteúdo. Manter um grande banco de dados de formulários atualizado e torná-los detectáveis pode ser um desafio considerável. O AEM fornece um Forms Portal personalizável que garante que os clientes encontrem e acessem os formulários de que precisam, tanto na Web quanto em canais móveis.
 
 O AEM Forms fornece ferramentas de gerenciamento de formulários que permitem não apenas gerenciar formulários adaptáveis, mas também formulários XFA, PDF forms e ativos relacionados. Para obter mais informações, consulte [Introdução ao gerenciamento de formulários](../../forms/using/introduction-managing-forms.md).
 

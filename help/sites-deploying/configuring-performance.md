@@ -1,18 +1,16 @@
 ---
 title: Otimização do desempenho
 description: Saiba como configurar certos aspectos do AEM para otimizar o desempenho.
-uuid: a4d9fde4-a4c7-4ee5-99b6-29b0ee7dc35b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
-discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '6503'
-ht-degree: 12%
+source-wordcount: '6469'
+ht-degree: 11%
 
 ---
 
@@ -24,7 +22,7 @@ ht-degree: 12%
 >
 >Para obter mais informações sobre como solucionar e corrigir problemas de desempenho, consulte também [Árvore de desempenho](/help/sites-deploying/performance-tree.md).
 >
->Além disso, você pode revisar um artigo da Base de conhecimento sobre [Dicas para ajustar o desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR).
+>Além disso, você pode revisar um artigo da Base de conhecimento sobre [Dicas para ajustar o desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
 
 Um problema importante é o tempo que o site leva para responder às solicitações do visitante. Embora esse valor varie para cada solicitação, um valor de target médio pode ser definido. Quando esse valor puder ser obtido e mantido, ele poderá ser usado para monitorar o desempenho do site e indicar o desenvolvimento de possíveis problemas.
 
@@ -41,7 +39,7 @@ Esse ambiente contém conteúdo que você disponibiliza para os usuários. Aqui,
 >[!NOTE]
 >
 >* Após configurar o para otimização de desempenho, siga os procedimentos em [Dia difícil](/help/sites-developing/tough-day.md) para testar o ambiente sob carga pesada.
->* Consulte também [Dicas para melhorar o desempenho.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR)
+>* Consulte também [Dicas para melhorar o desempenho.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
 
 ## Metodologia de otimização de desempenho {#performance-optimization-methodology}
 
@@ -126,7 +124,7 @@ A forma como um repositório de conteúdo é estruturado também pode afetar o d
 
 Seus melhores amigos durante um exercício normal de otimização de desempenho são:
 
-* O `request.log`
+* A variável `request.log`
 * Tempo baseado em componentes
 * Um profiler Java™.
 
@@ -203,7 +201,7 @@ Certos aspectos do AEM (e/ou do repositório subjacente) podem ser configurados 
 
 >[!NOTE]
 >
->Consulte [Otimização do desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR).
+>Consulte [Otimização do desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
 
 ### Indexação de pesquisa {#search-indexing}
 
@@ -478,7 +476,7 @@ Após a conclusão de todos os testes, relatar o seguinte:
 
 ## Otimização do desempenho ao usar o Dispatcher {#optimizing-performance-when-using-the-dispatcher}
 
-A variável [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) é a ferramenta de Adobe e/ou balanceamento de carga. Ao usar o Dispatcher, considere otimizar seu site para o desempenho do cache.
+A variável [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) é a ferramenta de Adobe e/ou balanceamento de carga. Ao usar o Dispatcher, considere otimizar seu site para o desempenho do cache.
 
 >[!NOTE]
 >

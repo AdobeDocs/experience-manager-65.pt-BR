@@ -1,19 +1,15 @@
 ---
 title: Gravação da ação enviar personalizada para formulários adaptáveis
-seo-title: Writing custom Submit action for adaptive forms
 description: O AEM Forms permite criar a ação Enviar personalizada para formulários adaptáveis. Este artigo descreve o procedimento para adicionar uma ação enviar personalizada para formulários adaptáveis.
-seo-description: AEM Forms lets you create custom Submit action for Adaptive forms. This article describes the procedure to add custom Submit action for Adaptive forms.
-uuid: fd8e1dac-b997-4e86-aaf6-3507edcb3070
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 2a2e1156-4a54-4b0a-981c-d527fe22a27e
 docset: aem65
 exl-id: 7c3d0dac-4e19-4eb3-a43d-909d526acd55
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1639'
-ht-degree: 2%
+source-wordcount: '1540'
+ht-degree: 1%
 
 ---
 
@@ -96,7 +92,7 @@ Se a ação não fornecer um caminho de encaminhamento, o servlet Submit redirec
 
 Uma ação Enviar é uma sling:Folder que inclui o seguinte:
 
-* **addfields.jsp**: esse script fornece os campos de ação que são adicionados ao arquivo HTML durante a representação. Use esse script para adicionar os parâmetros de entrada ocultos necessários durante o envio no script post.POST.jsp.
+* **addfields.jsp**: esse script fornece os campos de ação que são adicionados ao arquivo de HTML durante a representação. Use esse script para adicionar os parâmetros de entrada ocultos necessários durante o envio no script post.POST.jsp.
 * **dialog.xml**: Esse script é semelhante à caixa de diálogo Componente CQ. Ela fornece informações de configuração que o autor personaliza. Os campos são exibidos na guia Enviar ações na caixa de diálogo Editar formulário adaptável ao selecionar a ação Enviar.
 * **post.POST.jsp**: O servlet Submit chama esse script com os dados enviados e os dados adicionais nas seções anteriores. Qualquer menção de executar uma ação nesta página implica executar o script post.POST.jsp. Para registrar a ação Enviar com os formulários adaptáveis a serem exibidos na caixa de diálogo Editar formulário adaptável, adicione essas propriedades ao sling:Folder:
 
@@ -107,7 +103,7 @@ Uma ação Enviar é uma sling:Folder que inclui o seguinte:
 
 ## Criar uma ação enviar personalizada {#creating-a-custom-submit-action}
 
-Execute as seguintes etapas para criar uma ação enviar personalizada que salve os dados no repositório CRX e envie um email a você. O formulário adaptável contém o conteúdo de armazenamento da ação Enviar OOTB (desaprovado) que salva os dados no repositório CRX. Além disso, o CQ fornece uma [E-mail](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) API que pode ser usada para enviar emails. Antes de usar a API de e-mail, [configurar](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR&amp;wcmmode=disabled) o serviço Day CQ Mail através do console do sistema. Você pode reutilizar a ação Armazenar conteúdo (obsoleto) para armazenar os dados no repositório. A ação Armazenar conteúdo (desaprovado) está disponível no local /libs/fd/af/components/guidesubmittype/store no repositório CRX.
+Execute as seguintes etapas para criar uma ação enviar personalizada que salve os dados no repositório CRX e envie um email a você. O formulário adaptável contém o conteúdo de armazenamento da ação Enviar OOTB (desaprovado) que salva os dados no repositório CRX. Além disso, o CQ fornece uma [E-mail](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) API que pode ser usada para enviar emails. Antes de usar a API de e-mail, [configurar](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&amp;wcmmode=disabled) o serviço Day CQ Mail através do console do sistema. Você pode reutilizar a ação Armazenar conteúdo (obsoleto) para armazenar os dados no repositório. A ação Armazenar conteúdo (desaprovado) está disponível no local /libs/fd/af/components/guidesubmittype/store no repositório CRX.
 
 1. Faça logon no CRXDE Lite no URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Crie um nó com a propriedade sling:Folder e o nome store_and_mail na pasta /apps/custom_submit_action. Crie a pasta custom_submit_action se ela ainda não existir.
 

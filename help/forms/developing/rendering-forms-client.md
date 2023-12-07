@@ -1,20 +1,16 @@
 ---
 title: Renderização do Forms no cliente
-seo-title: Rendering Forms at the Client
 description: Otimizar a entrega de conteúdo PDF e melhorar a capacidade do serviço Forms de lidar com a carga da rede usando o recurso de renderização do cliente do Acrobat ou Adobe Reader
-seo-description: Optimize the delivery of PDF content and improve the Forms service’s ability to handle network load by using the client-side rendering capability of Acrobat or Adobe Reader
-uuid: 09bcc23d-28b0-473a-87f1-bc17e87620f4
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 08d36e9f-cafc-478e-9781-8fc29ac6262e
 role: Developer
 exl-id: e485980d-f200-46b7-9284-c9996003aa47
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1694'
+source-wordcount: '1690'
 ht-degree: 0%
 
 ---
@@ -27,7 +23,7 @@ ht-degree: 0%
 
 Você pode otimizar a entrega de conteúdo de PDF e melhorar a capacidade do serviço Forms de lidar com a carga da rede usando o recurso de renderização do cliente do Acrobat ou Adobe Reader. Esse processo é conhecido como renderização de um formulário no cliente. Para renderizar um formulário no cliente, o dispositivo cliente (normalmente um navegador da Web) deve usar o Acrobat 7.0, Adobe Reader 7.0 ou posterior.
 
-As alterações em um formulário resultante da execução do script do lado do servidor não são refletidas em um formulário renderizado no cliente, a menos que o subformulário raiz contenha a variável `restoreState` atributo definido como `auto`. Para obter mais informações sobre este atributo, consulte [Forms Designer.](https://www.adobe.com/go/learn_aemforms_designer_63_pt)
+As alterações em um formulário resultante da execução do script do lado do servidor não são refletidas em um formulário renderizado no cliente, a menos que o subformulário raiz contenha a variável `restoreState` atributo definido como `auto`. Para obter mais informações sobre este atributo, consulte [Forms Designer.](https://www.adobe.com/go/learn_aemforms_designer_63)
 
 >[!NOTE]
 >

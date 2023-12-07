@@ -1,19 +1,15 @@
 ---
 title: Personalização do console de boas-vindas (interface clássica)
-seo-title: Customizing the Welcome Console (Classic UI)
 description: O console de Boas-vindas fornece uma lista de links para os vários consoles e funcionalidades dentro do AEM
-seo-description: The Welcome console provides a list of links to the various consoles and functionality within AEM
-uuid: 4ef20cef-2d7a-417d-b36b-ed4fa56cd511
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 2e408acb-3802-4837-8619-688cfc3abfa7
 exl-id: 9e171b62-8efb-4143-a202-ba6555658d4b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 8%
+source-wordcount: '449'
+ht-degree: 6%
 
 ---
 
@@ -64,7 +60,7 @@ Por exemplo:
 
 * Para restringir o acesso a **Ferramentas**, remover acesso de leitura de
 
-   `/libs/wcm/core/content/misc`
+  `/libs/wcm/core/content/misc`
 
 Consulte a [Seção Segurança](/help/sites-administering/security.md) para obter mais informações sobre como definir as permissões desejadas.
 
@@ -153,7 +149,7 @@ Há três seções (espaçadas levemente afastadas) fornecidas por padrão:
    <td><code>/libs/cq/core/content/welcome/features/config</code></td>
   </tr>
   <tr>
-   <td> Dumping de status do Console da Web<br /> </td>
+   <td> Despejo de Status do Console da Web<br /> </td>
    <td><code>/libs/cq/core/content/welcome/features/statusdump</code></td>
   </tr>
  </tbody>
@@ -165,25 +161,25 @@ Há três seções (espaçadas levemente afastadas) fornecidas por padrão:
 
 * Recursos - remover acesso a:
 
-   `/libs/cq/core/content/welcome/resources/<link-target>`
+  `/libs/cq/core/content/welcome/resources/<link-target>`
 
 * Documentação - remover acesso a:
 
-   `/libs/cq/core/content/welcome/docs/<link-target>`
+  `/libs/cq/core/content/welcome/docs/<link-target>`
 
 * Recursos - remover acesso a:
 
-   `/libs/cq/core/content/welcome/features/<link-target>`
+  `/libs/cq/core/content/welcome/features/<link-target>`
 
 Por exemplo:
 
 * Para remover o link para **Relatórios**, remover acesso de leitura de
 
-   `/libs/cq/core/content/welcome/resources/reports`
+  `/libs/cq/core/content/welcome/resources/reports`
 
 * Para remover o link para **Pacotes**, remover acesso de leitura de
 
-   `/libs/cq/core/content/welcome/features/packages`
+  `/libs/cq/core/content/welcome/features/packages`
 
 Consulte a [Seção Segurança](/help/sites-administering/security.md) para obter mais informações sobre como definir as permissões desejadas.
 
@@ -199,7 +195,6 @@ Entrada `/libs/cq/core/components/welcome/welcome.jsp` é feita uso de [ConsoleU
 >
 >* `select * from cq:Console`
 >
-
 
 Quando um usuário ou grupo não tem permissão de leitura em um nó com o mixin `cq:Console`, esse nó não será recuperado pelo `ConsoleUtil` pesquisa, portanto, não está listado no console.
 

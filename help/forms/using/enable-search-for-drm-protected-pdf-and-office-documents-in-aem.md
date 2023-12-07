@@ -1,20 +1,16 @@
 ---
 title: Permitir que o AEM pesquise documentos protegidos por segurança de documentos no PDF e no Microsoft Office
-seo-title: Enable AEM to search document security protected PDF and Microsoft Office documents
 description: Saiba como habilitar a pesquisa nativa de AEM para executar a pesquisa de texto completo em documentos PDF protegidos por DRM.
-seo-description: Learn how to enable native AEM search to perform full-text search on DRM protected PDF documents.
-uuid: dba882f8-bad4-4122-a0df-03cf087afb23
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 7eebef08-83b9-4b56-90ec-35ab3b0c27e8
 noindex: true
 feature: Document Security
 exl-id: 91cbd1f1-d53d-455b-8d2c-6918b521db81
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 1%
+source-wordcount: '639'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +20,7 @@ O Adobe Experience Manager fornece uma interface para pesquisar e localizar vár
 
 Execute as seguintes etapas para permitir que o AEM pesquise documentos protegidos do PDF e do Microsoft Office:
 
-## Antes de você iniciar {#before-you-start}
+## Antes de começar {#before-you-start}
 
 * Instale e configure a Segurança de documentos do AEM Forms.
 * Adicione o pacote sun.util.calendar ao incluo na lista de permissões do **Configuração do firewall de desserialização.** A configuração está listada em `https://'[server]:[port]'/system/console/configMgr`.

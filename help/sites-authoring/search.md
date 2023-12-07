@@ -1,18 +1,16 @@
 ---
 title: Pesquisa abrangente
 description: Encontre seu conteúdo mais rapidamente com a pesquisa abrangente.
-uuid: 21605b96-b467-4d01-9a64-9d0648d539f1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 64%
+source-wordcount: '517'
+ht-degree: 57%
 
 ---
 
@@ -32,9 +30,9 @@ A pesquisa está disponível na barra de ferramentas superior:
 
 Com o painel de pesquisa, você pode:
 
-* Pesquise por uma palavra-chave, um caminho ou uma tag específica.
+* Procure por uma palavra-chave, um caminho ou uma tag específica.
 * Filtre de acordo com os critérios específicos dos recursos, como datas modificadas, status da página, tamanho do arquivo e assim por diante.
-* Defina e use uma [pesquisa salva](#saved-searches) - com base nos critérios acima.
+* Definir e usar um [pesquisa salva](#saved-searches) - com base nos critérios acima referidos.
 
 >[!NOTE]
 >

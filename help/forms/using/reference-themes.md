@@ -1,24 +1,20 @@
 ---
 title: Temas de referência
-seo-title: Reference Themes
 description: O AEM Forms fornece temas de formulários adaptáveis que você pode obter da Distribuição de software e usar para criar um estilo de formulário.
-seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
-uuid: 3c6bd309-aa5a-4953-91ed-25ed5ba5671a
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: a69d3787-8149-4bca-835d-aeecfb11702b
 docset: aem65
 exl-id: f6c24894-c322-4c44-b001-8978954d6e53
-source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 1%
+source-wordcount: '525'
+ht-degree: 0%
 
 ---
 
 # Temas de referência{#reference-themes}
 
-[Temas](../../forms/using/themes.md) As permitem criar estilos de formulários sem um conhecimento profundo de CSS. Além do tema padrão, você pode obter os seguintes temas instalando o [Pacote complementar do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR):
+[Temas](../../forms/using/themes.md) As permitem criar estilos de formulários sem um conhecimento profundo de CSS. Além do tema padrão, você pode obter os seguintes temas instalando o [Pacote complementar do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en):
 
 * Berilo
 * Exec

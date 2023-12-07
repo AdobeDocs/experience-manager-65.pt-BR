@@ -1,20 +1,16 @@
 ---
 title: Configurações do OSGi
-seo-title: OSGi Configuration Settings
 description: Este artigo detalha as definições de configuração do OSGi (listadas de acordo com o pacote) que são relevantes para a implementação do projeto. A lista serve de orientação e não é exaustiva.
-seo-description: This article details the OSGi configuration settings (listed according to bundle) that are relevant to project implementation. The list acts as a guideline and it is not exhaustive.
-uuid: 192d3287-ec99-403b-bab0-45721e4e3abd
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3429'
+source-wordcount: '3360'
 ht-degree: 0%
 
 ---
@@ -39,7 +35,7 @@ As seguintes configurações de OSGi (listadas de acordo com o pacote) são rele
 
 >[!NOTE]
 >
->A ferramenta de comparação da configuração do OSGi, parte da [Ferramentas AEM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html?lang=pt-BR), pode ser usado para listar as configurações OSGi padrão.
+>A ferramenta de comparação da configuração do OSGi, parte da [Ferramentas AEM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html?lang=en), pode ser usado para listar as configurações OSGi padrão.
 
 >[!NOTE]
 >
@@ -254,7 +250,7 @@ Ao criar uma configuração, não altere a configuração de fábrica. Em vez di
 **Day CQ Antispam** Configure o serviço antisspam (Akismet) usado. Esse recurso exige que você registre o seguinte:
 
 * **Provedor**
-* **Chave da API**
+* **Chave de API**
 * **URL registrado**
 
 **Gerenciador de biblioteca de HTML do Adobe Granite** Configure para controlar o manuseio de bibliotecas de clientes (css ou js) incluindo, por exemplo, como a estrutura subjacente é vista.
@@ -275,7 +271,7 @@ Ao criar uma configuração, não altere a configuração de fábrica. Em vez di
 
 >[!CAUTION]
 >
->Ao alterar a configuração de **Minify** ou **Gzip**, exclua o conteúdo do cache clientlibs. Consulte [Artigo da knowledge base](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=pt-BR) para obter detalhes.
+>Ao alterar a configuração de **Minify** ou **Gzip**, exclua o conteúdo do cache clientlibs. Consulte [Artigo da knowledge base](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en) para obter detalhes.
 
 >[!NOTE]
 >
@@ -356,7 +352,7 @@ Os nomes dos parâmetros de solicitação que podem fornecer a ID do usuário.
 Para usuários selecionados, o nome de usuário extraído da solicitação HTTP pode ser substituído por outro no objeto de credenciais. O mapeamento é definido aqui. Se o nome do usuário `admin` for exibido em ambos os lados do mapa, o mapeamento será ignorado. O caractere &quot;=&quot; deve ser escapado com um &quot;\&quot; à esquerda.
 
 * **Formato**
-Indica o formato em que a ID de usuário é fornecida. Utilização:
+Indica o formato em que a ID de usuário é fornecida. Uso:
 
    * `Basic` se a ID do usuário estiver codificada no formato de Autenticação Básica HTTP
    * `AsIs` se a ID do usuário for fornecida em texto sem formatação ou qualquer valor de expressão regular aplicada, deverá ser usado como está ou qualquer expressão regular

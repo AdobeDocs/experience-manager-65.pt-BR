@@ -1,19 +1,15 @@
 ---
 title: Configuração de Desfazer para Edição de Página
-seo-title: Configuring Undo for Page Editing
 description: Saiba como configurar o suporte a Desfazer para edição de página no AEM.
-seo-description: Learn how to configure Undo support for page editing in AEM.
-uuid: e5a49587-a2a6-41d5-b449-f7a8f7e4cee6
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 3cc7efc5-bcb2-41c9-b78b-308f6b7a298e
 exl-id: 2cf3ac3f-ee17-480d-a32a-c57631502693
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -63,7 +59,7 @@ A seguir estão as propriedades conforme exibidas no console da Web, seguidas pe
   >
   >Por padrão, somente os administradores podem acessar a variável `/var/undo` nó. Os autores podem executar operações de desfazer e refazer em conteúdo binário somente após receberem permissões para acessar os dados de desfazer binários.
 
-* **Mín. validade**
+* **Versão mín. validade**
 ( `cq.wcm.undo.validity`)
 
    * **Descrição**: A quantidade mínima de tempo em que os dados binários do undo são armazenados, em horas. Após esse período, os dados binários ficam disponíveis para exclusão, a fim de conservar o espaço em disco.

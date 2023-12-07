@@ -1,16 +1,12 @@
 ---
 title: Edição e conversão de domínios existentes
-seo-title: Editing and converting existing domains
 description: Saiba como alterar as configurações para domínios existentes na página Gerenciamento de domínio. Converta um domínio enterprise existente em um domínio híbrido ou vice-versa.
-seo-description: Learn how to change the settings for existing domains from the Domain Management page. Convert an existing enterprise domain to a hybrid domain or conversely.
-uuid: 4cc9547e-b4ec-4588-b1cf-18720f06149a
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 44dec184-3ef7-4ba6-a87f-ad171d3cb188
 exl-id: 34ac5f8b-f209-4f99-ad71-4df6f2c88c1e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 0%

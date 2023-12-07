@@ -1,19 +1,15 @@
 ---
 title: Preparando o AEM Forms para backup
-seo-title: Preparing AEM Forms for Backup
 description: Saiba como usar o serviço de Backup e restauração para entrar e sair do modo de Backup do servidor do AEM Forms usando a API do Java e a API do serviço da Web.
-seo-description: Learn how to use the Backup and Restore service to enter and leave the Backup mode for AEM Forms server using the Java API and the Web Service API.
-uuid: b8ef2bed-62e2-4000-b55a-30d2fc398a5f
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 role: Developer
 exl-id: aeab003d-ba64-4760-9c56-44638501e9ff
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2519'
+source-wordcount: '2484'
 ht-degree: 0%
 
 ---

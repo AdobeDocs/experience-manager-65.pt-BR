@@ -1,28 +1,26 @@
 ---
 title: Promoção de inicializações
-description: É necessário promover as páginas de inicialização para mover o conteúdo de volta para a origem (produção) antes de publicar. Quando uma página de inicialização é promovida, a página correspondente das páginas de origem é substituída pelo conteúdo da página promovida.
-uuid: 91f1c6ac-8c4e-4459-aaab-feaa32befc45
+description: É necessário promover as páginas de lançamento para mover o conteúdo de volta para a origem (produção) antes de publicar. Quando uma página de inicialização é promovida, a página correspondente das páginas de origem é substituída pelo conteúdo da página promovida.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 8d38c6f7-8fea-4d27-992d-03b604b9541f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 3013adc3-bec6-4ecc-aefd-f8df2b86dfef
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 3%
+source-wordcount: '315'
+ht-degree: 56%
 
 ---
 
 # Promoção de inicializações{#promoting-launches}
 
-É necessário promover as páginas de inicialização para mover o conteúdo de volta para a origem (produção) antes de publicar. Quando uma página de inicialização é promovida, a página correspondente das páginas de origem é substituída pelo conteúdo da página promovida. As seguintes opções estão disponíveis ao promover uma página de inicialização:
+É necessário promover as páginas de lançamento para mover o conteúdo de volta para a origem (produção) antes de publicar. Quando uma página de lançamento é promovida, a página de origem correspondente é substituída pelo conteúdo da página promovida. As seguintes opções estão disponíveis ao promover uma página de lançamento:
 
-* Se deve promover somente a página atual ou toda a inicialização.
-* Se as páginas secundárias da página atual devem ser promovidas.
-* Se deve promover a inicialização completa ou somente as páginas que foram alteradas.
+* Promover somente a página atual ou todo o lançamento.
+* Promover as páginas secundárias da página atual.
+* Promover o lançamento completo ou somente as páginas alteradas.
 
 ## Promover páginas de lançamento {#promoting-launch-pages}
 
@@ -40,14 +38,14 @@ Para promover páginas, execute as seguintes etapas ao editar a página de inici
 
 ## Processamento de Páginas promovidas usando o fluxo de trabalho do AEM {#processing-promoted-pages-using-aem-workflow}
 
-Usar modelos de fluxo de trabalho para executar o processamento em massa das páginas de inicializações promovidas:
+Use modelos de fluxo de trabalho para executar o processamento em massa das páginas de lançamento promovidas:
 
 1. Crie um pacote de fluxo de trabalho.
-1. Quando os autores promovem as páginas do Launch, eles as armazenam no pacote de fluxo de trabalho.
-1. Inicie um modelo de fluxo de trabalho usando o pacote como a carga.
+1. Quando autores(as) promovem as páginas de lançamento, elas são armazenadas no pacote de fluxo de trabalho.
+1. Inicie um modelo de fluxo de trabalho usando o pacote como o conteúdo.
 
 Para iniciar um fluxo de trabalho automaticamente quando as páginas forem promovidas, [configurar um inicializador de fluxo de trabalho](/help/sites-administering/workflows-starting.md#workflows-launchers) para o nó do pacote.
 
-Por exemplo, você pode gerar automaticamente solicitações de ativação de página quando os autores promovem páginas de Lançamentos. Configure um iniciador de fluxo de trabalho para iniciar o fluxo de trabalho Ativação de solicitação quando o nó do pacote for modificado.
+Por exemplo, você pode gerar solicitações de ativação de página automaticamente quando autores(as) promoverem páginas de lançamento. Configure um iniciador de fluxo de trabalho para iniciar o fluxo de trabalho Solicitar ativação quando o nó do pacote for modificado.
 
 ![chlimage_1-136](assets/chlimage_1-136.png)

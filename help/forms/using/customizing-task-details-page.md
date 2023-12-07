@@ -1,15 +1,11 @@
 ---
 title: Personalizando a página de detalhes da tarefa
-seo-title: Customizing the task details page
 description: Como personalizar a página de detalhes da tarefa no espaço de trabalho do AEM Forms para modificar as informações padrão exibidas sobre uma tarefa.
-seo-description: How-to customize the task details page in AEM Forms workspace to modify the default information displayed about a task.
-uuid: d85fae55-8e66-4595-8560-5485622b6841
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 16e57cf6-aaa1-406d-a6ad-71ec60b15386
 exl-id: 48c24442-22d2-4d1a-9462-0aba78340281
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 0%
@@ -28,9 +24,9 @@ Você pode adicionar as seguintes informações à página de detalhes da tarefa
 Para personalizar a página de detalhes da tarefa:
 
 1. Seguir [Etapas genéricas para personalização do espaço de trabalho do AEM Forms.](/help/forms/using/generic-steps-html-workspace-customization.md)
-1. Para mostrar mais informações, adicione os pares de valores chave correspondentes à `translation.json` arquivo em `todo`bloquear > `details`bloquear > `app`bloquear > [ `required`bloco].
+1. Para mostrar mais informações, adicione os pares de valores chave correspondentes à `translation.json` arquivo em `todo`bloquear > `details`bloquear > `app`bloquear > [`required`bloco].
 
-   A variável [ `required`bloco] refere-se aos blocos disponíveis, como o bloco de tarefas para informações sobre tarefas, o bloco de processos para informações sobre processos e o bloco de tarefas pendentes atual para informações sobre tarefas pendentes.
+   A variável [`required`bloco] refere-se aos blocos disponíveis, como o bloco de tarefas para informações sobre tarefas, o bloco de processos para informações sobre processos e o bloco de tarefas pendentes atual para informações sobre tarefas pendentes.
 
    Por exemplo, para adicionar informações sobre Seleção de Rota Necessária na página de detalhes da tarefa, você pode adicionar o seguinte par de valores-chave no bloco de tarefas:
 

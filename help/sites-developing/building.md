@@ -1,19 +1,15 @@
 ---
 title: Criação de tags em um aplicativo AEM
-seo-title: Building Tagging into an AEM Application
 description: Trabalhar programaticamente com tags ou estender tags em um aplicativo AEM personalizado
-seo-description: Programmatically work with tags or extending tags within a custom AEM application
-uuid: 0549552e-0d51-4162-b418-babf4ceee046
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
 feature: Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
-source-git-commit: 325af649564d93beedfc762a8f5beacec47b1641
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '849'
 ht-degree: 0%
 
 ---

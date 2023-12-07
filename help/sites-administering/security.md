@@ -1,18 +1,16 @@
 ---
 title: Administração e segurança do usuário
 description: Saiba mais sobre a administração e a segurança de usuários no AEM.
-uuid: 4512c0bf-71bf-4f64-99f6-f4fa5a61d572
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '5401'
+source-wordcount: '5398'
 ht-degree: 1%
 
 ---
@@ -372,7 +370,7 @@ A tabela a seguir descreve as práticas recomendadas ao trabalhar com permissõe
 | *Usar grupos* | Evite atribuir direitos de acesso a cada usuário. Há várias razões para este conselho:<ul><li>Você tem muito mais usuários do que grupos, portanto, os grupos simplificam a estrutura.</li><li>Os grupos ajudam a fornecer uma visão geral de todas as contas.</li> <li>A herança é mais simples com grupos.</li><li>Os usuários vêm e vão. Os grupos são de longo prazo.</li></ul> |
 | *Ser positivo* | Sempre use as instruções Allow para especificar os direitos do grupo (sempre que possível). Evite usar uma instrução Deny. Os grupos são avaliados em ordem, e a ordem pode ser definida de forma diferente por usuário. Em outras palavras: você pode ter pouco controle sobre a ordem em que as instruções são implementadas e avaliadas. Se você usar somente as instruções Allow, a ordem não será importante. |
 | *Mantenha a simplicidade* | Investir algum tempo e pensamento ao configurar uma nova instalação vale a pena. A aplicação de uma estrutura clara simplifica a manutenção e a administração contínuas, garantindo que tanto seus colegas atuais quanto os futuros sucessores possam entender facilmente o que é implementado. |
-| *Testar* | Use uma instalação de teste para praticar e garantir que você entenda os relacionamentos entre os vários usuários e grupos. |
+| *Teste* | Use uma instalação de teste para praticar e garantir que você entenda os relacionamentos entre os vários usuários e grupos. |
 | *Usuários/grupos padrão* | Sempre atualize os Usuários e grupos padrão imediatamente após a instalação para ajudar a evitar problemas de segurança. |
 
 ## Gerenciar usuários e grupos {#managing-users-and-groups}

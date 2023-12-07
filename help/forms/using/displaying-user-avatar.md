@@ -1,18 +1,14 @@
 ---
 title: Exibir o avatar do usuário
-seo-title: Displaying the user avatar
 description: Como personalizar o espaço de trabalho do AEM Forms para exibir a imagem de um usuário conectado.
-seo-description: How to customize the AEM Forms workspace to display the image of a logged-in user.
-uuid: 2961dc93-f0d0-4842-80f1-3c239a20e348
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: aec03ea5-17a6-4775-92cb-2ad361895fdf
 exl-id: ee0708b0-b630-4a2b-84b6-3c0b92dd7777
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---
@@ -25,7 +21,7 @@ O avatar do usuário conectado é exibido no canto superior direito do espaço d
 >
 >A proporção suportada das imagens do usuário é de 1:1.
 
-1. Crie um DSC, usando os detalhes mencionados na próxima etapa. Para obter mais informações, consulte o tópico &quot;Desenvolvimento de componentes para o AEM Forms&quot; no [Programação com o AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guia.
+1. Crie um DSC, usando os detalhes mencionados na próxima etapa. Para obter mais informações, consulte o tópico &quot;Desenvolvimento de componentes para o AEM Forms&quot; em [Programação com o AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guia.
 1. No DSC, defina um novo SPI que exponha os métodos getCurrentUserImageUrl e getUserImageUrl para obter um URL de imagem para um usuário do AEM Forms. Este é um exemplo de trecho de código Java™:
 
    ```java

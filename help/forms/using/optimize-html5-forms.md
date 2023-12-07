@@ -1,18 +1,14 @@
 ---
 title: Otimização de formulários HTML5
-seo-title: Optimizing HTML5 forms
 description: Você pode otimizar o tamanho de saída dos formulários HTML5.
-seo-description: You can optimize the output size of the HTML5 forms.
-uuid: 959f0b6a-9e4d-478a-afa8-4c39011fdf7a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 feature: Mobile Forms
 exl-id: 14309ebd-8d00-4ca5-b4ab-44d80d97d066
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
@@ -29,7 +25,7 @@ Este artigo descreve as etapas necessárias para habilitar a compactação para 
 
 Obtenha o software Apache Web Server aplicável ao seu sistema operacional:
 
-* Para Windows, baixe o servidor Web Apache do site Projeto do Apache HTTP Server.
+* Para Windows, baixe o servidor Web Apache do site do Projeto Apache HTTP Server.
 * Para Solaris 64 bits, baixe o servidor Web Apache do site Sunfreeware para Solaris.
 * Para Linux, o servidor Web Apache é pré-instalado em um sistema Linux.
 
@@ -63,7 +59,6 @@ O Apache pode se comunicar com o JBoss usando HTTP ou o protocolo AJP.
    >* Acesso: *https://&lt;server>:&lt;port>/system/console/configMgr*
    * Editar a configuração do Filtro referenciador do Apache Sling
    * Em Permitir hosts, adicione a entrada para o servidor proxy
-
 
 1. Ative a compactação.
 

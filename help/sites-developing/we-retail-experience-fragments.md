@@ -1,19 +1,15 @@
 ---
 title: Experimentar fragmentos de experiência no We.Retail
-seo-title: Trying out Experience Fragments in We.Retail
 description: Saiba como experimentar Fragmentos de experiência no Adobe Experience Manager usando o We.Retail.
-seo-description: Trying out Experience Fragments in We.Retail
-uuid: 43a6df77-9dd3-4316-b749-0ef059370f7d
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: fe44a941-a09b-4421-b766-1d433291f2cc
 exl-id: e17ff611-122a-4d17-97af-071d0234dd16
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '242'
-ht-degree: 21%
+ht-degree: 18%
 
 ---
 
@@ -38,7 +34,7 @@ Isso é compatível com o caso de uso do sistema de gerenciamento de conteúdo (
 
 ## Onde criar fragmentos de experiência no We.Retail {#where-to-create-experience-fragments-in-we-retail}
 
-Selecione **Fragmentos de experiência** na Navegação global. Aqui você configura, [criar](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) e [editar](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment) seus Fragmentos de experiência e qualquer [variações](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation).
+Selecionar **Fragmentos de experiência** da Navegação global. Aqui você configura, [criar](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) e [editar](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment) seus Fragmentos de experiência e qualquer [variações](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation).
 
 ## Onde usar fragmentos de experiência no We.Retail {#where-to-use-experience-fragments-in-we-retail}
 

@@ -1,13 +1,11 @@
 ---
 title: Guia do usuário de criação da interface clássica do AEM 6.5
-seo-title: AEM 6.5 Classic UI Authoring User Guide
 description: Este guia aborda os conceitos de criação no AEM na interface clássica do usuário.
-seo-description: Covers the concepts of authoring in AEM in the classic UI.
 exl-id: 4ce591f1-a361-473a-b07d-a618f5c57f58
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 27%
+source-wordcount: '280'
+ht-degree: 16%
 
 ---
 
@@ -37,7 +35,7 @@ Este guia aborda os conceitos de criação no AEM na interface clássica do usu�
 | [Guia de implementação do usuário](/help/sites-deploying/home.md) | Este guia mostra as noções básicas do AEM. |
 | [Guia do usuário para desenvolvimento](/help/sites-developing/home.md) | Saiba como criar sua instância de AEM. |
 | [Guia do usuário de gerenciamento](/help/managing/home.md) | Este guia descreve como gerenciar um projeto AEM com sucesso. |
-| [Guia do usuário do Commerce](/help/commerce/home.md) | Saiba mais sobre a Commerce Integration Framework no AEM. |
+| [Guia do usuário do Commerce](/help/commerce/home.md) | Saiba mais sobre o Commerce integration framework no AEM. |
 | [Guia do usuário do Mobile](/help/mobile/home.md) | Este guia descreve como criar e gerenciar conteúdo para aplicativos móveis. |
 
 ## Principais recursos do AEM

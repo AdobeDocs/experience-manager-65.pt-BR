@@ -1,13 +1,11 @@
 ---
 title: Guia do usuário de gerenciamento do AEM 6.5
-seo-title: AEM 6.5 Managing User Guide
 description: Descubra como gerenciar um projeto de AEM com sucesso, com o suporte de recursos importantes e uma coleção abrangente de guias do usuário do AEM 6.5.
-seo-description: Covers how to manage an AEM project successfully
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 29%
+source-wordcount: '292'
+ht-degree: 18%
 
 ---
 
@@ -37,7 +35,7 @@ Descubra como gerenciar um projeto de AEM com sucesso, com o suporte de recursos
 | [Guia de implementação do usuário](/help/sites-deploying/home.md) | Este guia mostra as noções básicas do AEM. |
 | [Guia do usuário para desenvolvimento](/help/sites-developing/home.md) | Saiba como criar sua instância de AEM. |
 | [Guia do usuário de gerenciamento](/help/managing/home.md) | Este guia descreve como gerenciar um projeto AEM com sucesso. |
-| [Guia do usuário do Commerce](/help/commerce/home.md) | Saiba mais sobre a Commerce Integration Framework no AEM. |
+| [Guia do usuário do Commerce](/help/commerce/home.md) | Saiba mais sobre o Commerce integration framework no AEM. |
 | [Guia do usuário do Mobile](/help/mobile/home.md) | Este guia descreve como criar e gerenciar conteúdo para aplicativos móveis. |
 
 ## Principais recursos do AEM

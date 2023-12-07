@@ -1,18 +1,16 @@
 ---
 title: Solução de problemas do Adobe Experience Manager
 description: Saiba como solucionar alguns problemas que podem surgir com o Adobe Experience Manager.
-uuid: 72379531-915c-45d0-ba70-42b212665272
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 6346cd93-1ca3-4510-9c31-a74c41017ddb
 docset: aem65
 exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 4%
+source-wordcount: '536'
+ht-degree: 2%
 
 ---
 
@@ -100,7 +98,7 @@ O despejo de thread é uma lista de todas as threads do Java™ que estão ativa
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Consulte a [Como fazer despejos de thread de uma JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=pt-BR) documentação para obter mais informações
+Consulte a [Como fazer despejos de thread de uma JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=en) documentação para obter mais informações
 
 ### Verificando sessões JCR não fechadas {#checking-for-unclosed-jcr-sessions}
 

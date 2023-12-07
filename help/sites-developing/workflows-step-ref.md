@@ -1,19 +1,15 @@
 ---
 title: Referência da Etapa do fluxo de trabalho
-seo-title: Workflow Step Reference
 description: Consulte esta referência de etapa para fluxos de trabalho no Adobe Experience Manager.
-seo-description: null
-uuid: 88bf6997-73a1-4639-82aa-5dff08d3ef86
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: e3afffd0-d90c-4bd0-b814-f7aeac6ceb6d
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3250'
+source-wordcount: '3229'
 ht-degree: 2%
 
 ---
@@ -55,11 +51,11 @@ Uma descrição da etapa.
   O período após o qual a etapa &quot;expira&quot;.
 Você pode selecionar entre: **Desligado**, **Imediato**, **1h**, **6h**, **12h**, **24h**.
 
-* **Tempo limite do Handler**
+* **Manipulador de tempo limite**
 
   O manipulador que controla o fluxo de trabalho quando a etapa expira. Por exemplo, `Auto Advancer`
 
-* **Handler avançado**
+* **Avanço do manipulador**
 
   Selecione essa opção para avançar automaticamente o fluxo de trabalho para a próxima etapa após a execução. Se não for selecionada, o script de implementação deverá lidar com o avanço do fluxo de trabalho.
 
@@ -67,7 +63,7 @@ Você pode selecionar entre: **Desligado**, **Imediato**, **1h**, **6h**, **12h*
 
 As seguintes propriedades estão disponíveis para muitos componentes de etapa do fluxo de trabalho, no **Usuário/Grupo** da caixa de diálogo de propriedades:
 
-* **Notificar usuário via e-mail**
+* **Notificar usuário por e-mail**
 
    * Você pode notificar os participantes enviando um email quando o fluxo de trabalho atingir a etapa.
    * Se ativado, um email é enviado para o usuário definido pela propriedade **Usuário/Grupo**, ou para cada membro do grupo, se um grupo estiver definido.

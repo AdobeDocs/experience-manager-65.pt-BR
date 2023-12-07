@@ -1,18 +1,14 @@
 ---
 title: Uso de expressões SOM em formulários adaptáveis
-seo-title: Using SOM expressions in adaptive forms
 description: Saiba como extrair expressões SOM de um painel de um formulário adaptável.
-seo-description: Learn how to extract SOM expressions of a panel of an adaptive form.
-uuid: c5d55aff-fb69-4a1c-96ea-fb3f9322cbb0
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 13f00bb2-561f-4d64-8829-292c663abeab
 docset: aem65
 feature: Adaptive Forms
 exl-id: 6a158e18-b7d0-45fb-b4fc-4770e66982b4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---

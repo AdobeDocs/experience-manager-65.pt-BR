@@ -1,18 +1,14 @@
 ---
 title: Relatórios predefinidos em relatórios de processo
-seo-title: Pre-defined reports in Process Reporting
 description: Consultar dados de processo do AEM Forms no JEE para criar relatórios sobre processos de longa execução, duração do processo e volume do fluxo de trabalho
-seo-description: Query for AEM Forms on JEE process data to create reports on long running processes, Process duration, and Workflow volume
-uuid: 704a8886-90ea-4793-a3fc-f998f878c928
 content-type: reference
 topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 3d93375e-ec37-4445-96ea-d315676787b4
 docset: aem65
 exl-id: 34e55676-6332-4616-aecc-bcc8cc1e8a29
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---

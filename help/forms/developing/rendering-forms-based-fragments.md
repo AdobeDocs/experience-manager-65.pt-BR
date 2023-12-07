@@ -1,20 +1,16 @@
 ---
 title: Renderização do Forms com base em fragmentos
-seo-title: Rendering Forms Based on Fragments
 description: Use o serviço Forms para renderizar formulários com base em fragmentos criados usando o Designer.
-seo-description: Use the Forms service to render forms that are based on fragments created using Designer.
-uuid: 9c9a730d-f970-41f8-afed-4e6b6d3d393d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
 role: Developer
 exl-id: febf5350-3fc5-48c0-8bc5-198daff15936
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2189'
 ht-degree: 0%
 
 ---
@@ -27,7 +23,7 @@ ht-degree: 0%
 
 O serviço Forms pode renderizar formulários com base em fragmentos criados usando o Designer. A *fragmento* é uma parte reutilizável de um formulário e é salva como um arquivo XDP separado que pode ser inserido em vários designs de formulário. Por exemplo, um fragmento pode incluir um bloco de endereço ou texto legal.
 
-O uso de fragmentos simplifica e acelera a criação e a manutenção de um grande número de formulários. Ao criar um formulário, você insere uma referência ao fragmento necessário e o fragmento aparece no formulário. A referência do fragmento contém um subformulário que aponta para o arquivo XDP físico. Para obter informações sobre como criar designs de formulário com base em fragmentos, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_pt)
+O uso de fragmentos simplifica e acelera a criação e a manutenção de um grande número de formulários. Ao criar um formulário, você insere uma referência ao fragmento necessário e o fragmento aparece no formulário. A referência do fragmento contém um subformulário que aponta para o arquivo XDP físico. Para obter informações sobre como criar designs de formulário com base em fragmentos, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
 
 Um fragmento pode incluir vários subformulários que são envolvidos em um conjunto de subformulários de escolha. Os conjuntos de subformulários de escolha controlam a exibição de subformulários com base no fluxo de dados de uma conexão de dados. Use declarações condicionais para determinar qual subformulário do conjunto aparece no formulário entregue. Por exemplo, cada subformulário em um conjunto pode incluir informações de uma localização geográfica específica, e o subformulário exibido pode ser determinado com base na localização do usuário.
 

@@ -1,18 +1,14 @@
 ---
 title: Configuração da autenticação baseada em certificado
-seo-title: Configuring certificate-based authentication
 description: Importe um certificado de Autoridade de Certificação (CA) para o Armazenamento Confiável e crie um mapeamento de certificado para autenticação baseada em certificado.
-seo-description: Import a Certificate Authority (CA) certificate into the Trust Store and create a certificate mapping for certificate-based authentication.
-uuid: 9802a969-6d29-4b80-a4ed-06eb6e66e046
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: d958ae65-3008-4d68-9e11-4346e149827f
 exl-id: 9cbea8c8-4d42-446b-b98d-c090709624d7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -66,21 +62,22 @@ Quando você testa um certificado, o Gerenciamento de usuários faz upload das v
 
    * Para extrair &quot;Alex Pink&quot; de &quot;Alex Pink (Autenticação)&quot;
 
-      **Regex:** (.&amp;ast;) \(Autenticação\)
+     **Regex:** (.&amp;ast;) \(Autenticação\)
 
    * Para extrair &quot;Alex Pink&quot; de &quot;Alex (Autenticação) Pink&quot;
 
-      **Regex:** (.&amp;ast;)\(Autenticação\) (.&amp;ast;)
+     **Regex:** (.&amp;ast;)\(Autenticação\) (.&amp;ast;)
 
    * Para extrair &quot;Pink Alex&quot; de &quot;Alex (Autenticação) Pink&quot;
 
-      **Regex:** (.&amp;ast;)\(Autenticação\) (.&amp;ast;)
+     **Regex:** (.&amp;ast;)\(Autenticação\) (.&amp;ast;)
 
-      Ordem personalizada: $2 $1 (retorna o segundo grupo, concatenado com o primeiro grupo, capturado por caractere de espaço em branco)
+     Ordem personalizada: $2 $1 (retorna o segundo grupo, concatenado com o primeiro grupo, capturado por caractere de espaço em branco)
 
    * Para extrair &quot;apink@sampleorg.com&quot; de &quot;smtp:apink@sampleorg.com&quot;
 
-      **Regex:** smtp:(.&amp;ast;)
+     **Regex:** smtp:(.&amp;ast;)
+
    Para obter detalhes sobre o uso de expressões regulares, consulte [Tutorial Java sobre expressões regulares](https://java.sun.com/docs/books/tutorial/essential/regex/).
 
 1. Na lista Para domínio, selecione o domínio do usuário.

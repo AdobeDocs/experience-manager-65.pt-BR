@@ -1,16 +1,14 @@
 ---
 title: Solução de problemas de instalação com o AEM
 description: Este artigo aborda alguns dos problemas de instalação que você pode encontrar com o AEM.
-uuid: 2ca898c3-b074-4ccd-a383-b92f226e6c14
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
@@ -57,7 +55,7 @@ Para solucionar problemas, faça o seguinte:
 * Experimente um menu de contexto (geralmente clique com o botão direito do mouse) no WCM Quickstart do AEM e selecione &quot;Abrir com...&quot;
 * Verifique se Java™ ou Sun Java™ está listado e tente executar o AEM WCM com ele. Se você tiver várias versões do Java™ instaladas, selecione a compatível.
 
-   Se você tiver êxito nesta etapa e seu sistema operacional oferecer uma opção para sempre usar o programa selecionado para executar os arquivos .jar, selecione-o. Clicar duas vezes deve funcionar a partir de agora.
+  Se você tiver êxito nesta etapa e seu sistema operacional oferecer uma opção para sempre usar o programa selecionado para executar os arquivos .jar, selecione-o. Clicar duas vezes deve funcionar a partir de agora.
 
 * Às vezes, reinstalar a versão compatível do Java™ ajuda a restaurar a associação correta.
 * Você sempre pode executar o CRX usando a linha de comando ou scripts de iniciar/parar, conforme descrito anteriormente neste documento.
@@ -66,7 +64,7 @@ Para solucionar problemas, faça o seguinte:
 
 >[!NOTE]
 >
->Consulte também [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=pt-BR).
+>Consulte também [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en).
 
 
 O próprio CRX tem pouco espaço de memória. Se o aplicativo em execução no CRX tiver requisitos de memória maiores ou solicitar operações com muita memória (por exemplo, transações grandes), a instância da JVM em que o CRX é executado deverá ser iniciada com configurações de memória apropriadas.

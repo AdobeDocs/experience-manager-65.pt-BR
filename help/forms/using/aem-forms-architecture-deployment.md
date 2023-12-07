@@ -1,19 +1,15 @@
 ---
 title: Arquitetura e topologias de implantação do AEM Forms
-seo-title: Architecture and deployment topologies for AEM Forms
 description: Detalhes da arquitetura do AEM Forms e topologias recomendadas para clientes e clientes AEM novos e existentes que estão atualizando do LiveCycle ES4 para o AEM Forms.
-seo-description: Architecture details for AEM Forms and recommended topologies for new and existing AEM customers and customers upgrading from LiveCycle ES4 to AEM Forms.
-uuid: 90baa57a-4785-4b49-844c-a44717d3c12d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
-discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
 role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2469'
 ht-degree: 0%
 
 ---
@@ -29,7 +25,7 @@ ht-degree: 0%
 
 O AEM Forms é um aplicativo implantado no AEM como um pacote de AEM. O pacote é conhecido como pacote complementar do AEM Forms. O pacote complementar do AEM Forms contém serviços (provedores de API), que são implantados no contêiner OSGi AEM, e servlets ou JSPs (fornecendo funcionalidade de front-end e REST API) gerenciados pela estrutura Sling do AEM. O diagrama a seguir descreve essa configuração:
 
-Arquitetura do ![](assets/architecture.png)
+![Arquitetura do](assets/architecture.png)
 
 A arquitetura do AEM Forms inclui os seguintes componentes:
 

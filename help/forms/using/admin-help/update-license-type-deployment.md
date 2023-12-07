@@ -1,16 +1,12 @@
 ---
 title: Atualizar o tipo de licença para a implantação
-seo-title: Update the license type for the deployment
 description: Atualize o tipo de licença para a implantação usando a página Alterar licença no console de administração.
-seo-description: Update the license type for the deployment by using the Change License page in administration console.
-uuid: 0152635e-2c00-4944-b9b6-64b368589a91
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_jee
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: e4f31377-ccc9-4986-a3bf-ef2e83d12448
 exl-id: 6b975aa1-9270-4098-9af5-c5cc67cb7b5d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%

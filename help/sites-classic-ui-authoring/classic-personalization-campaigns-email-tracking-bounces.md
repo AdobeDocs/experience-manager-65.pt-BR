@@ -1,18 +1,14 @@
 ---
 title: Rastreamento de emails devolvidos
-seo-title: Tracking Bounced Emails
 description: Quando você envia um informativo para muitos usuários, geralmente há alguns endereços de email inválidos na lista. O envio de informativos para esses endereços será rejeitado. O AEM pode gerenciar essas rejeições e pode interromper o envio de informativos para esses endereços depois que o contador de rejeições configurado é excedido.
-seo-description: When you send a newsletter to many users, there are usually some invalid emails addresses in the list. Sending newsletters to those addresses bounce back. AEM is capable of managing those bounces and can stop sending newsletters to those addresses after the configured bounce counter is exceeded.
-uuid: 749959f2-e6f8-465f-9675-132464c65f11
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
 exl-id: 6cda0a68-0df9-44e7-ae4f-9951411af6dd
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '678'
 ht-degree: 0%
 
 ---

@@ -1,17 +1,13 @@
 ---
 title: Amostra para integrar o componente de rascunhos e envios ao banco de dados
-seo-title: Sample for integrating drafts & submissions component with database
 description: Implementação de referência de dados personalizados e serviços de metadados para integrar o componente de rascunhos e envios a um banco de dados.
-seo-description: Reference implementation of customized data and metadata services to integrate drafts and submissions component with a database.
-uuid: ccdb900e-2c2e-4ed3-8a88-5c97aa0092a1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1472'
 ht-degree: 1%
 
 ---
@@ -29,7 +25,6 @@ A amostra, discutida neste documento, é uma implementação de referência de d
 >* Os exemplos e as configurações explicadas neste documento são de acordo com o MySQL 5.6.24 e você deve substituí-los apropriadamente pelo seu sistema de banco de dados.
 >* Verifique se você instalou a versão mais recente do pacote complementar do AEM Forms. Para obter a lista de pacotes disponíveis, consulte [Versões do AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) artigo.
 >* O pacote de amostra funciona somente com ações de envio do Adaptive Forms.
-
 
 ## Definir e configurar a amostra {#set-up-and-configure-the-sample}
 
@@ -81,6 +76,7 @@ página em https://[*host*]:[*porta*]/system/console/configMgr
    Para fornecer um nome diferente para a tabela de dados:
 
    * Na Configuração do console da Web, localize e clique em Implementação de amostra do Forms Portal Data Service. Você pode alterar os valores da fonte de dados e o nome da tabela de dados.
+
    >[!NOTE]
    >
    >Se você alterar os nomes das tabelas, forneça-os na configuração do Portal de formulários.
@@ -163,7 +159,6 @@ página em https://[*host*]:[*porta*]/system/console/configMgr
 >
 >* O driver JDBC para MySQL não é fornecido com a amostra. Certifique-se de que você o provisionou e forneça as informações necessárias para configurar o pool de conexões JDBC.
 >* Aponte suas instâncias de autor e publicação para usar o mesmo banco de dados. O valor do campo URI da conexão JDBC deve ser o mesmo para todas as instâncias do autor e de publicação.
-
 
 1. Deixe as outras configurações como estão e clique em **[!UICONTROL Salvar]**.
 

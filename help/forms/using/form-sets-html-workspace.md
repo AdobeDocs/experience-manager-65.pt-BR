@@ -1,20 +1,16 @@
 ---
 title: Trabalhar com conjuntos de formulários no espaço de trabalho do AEM Forms
-seo-title: Working with Formsets in AEM Forms workspace
 description: Um conjunto de formulários é uma coleção de formulários HTML5 agrupados e apresentados como um único conjunto de formulários para os usuários finais. Saiba como trabalhar com conjuntos de formulários no espaço de trabalho do AEM Forms.
-seo-description: A formset is a collection of HTML5 forms grouped and presented as a single set of forms to end users. Learn how you can work with formsets in AEM Forms workspace.
-uuid: 1a5f3ce8-1d6a-497e-90d0-49765e40cf3b
 contentOwner: vishgupt
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: f550b747-2def-4317-9ef7-dc6c1e7bb404
 docset: aem65
 exl-id: 76a8f93f-eb8a-4e68-8626-efa6dc67668f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 2%
+source-wordcount: '344'
+ht-degree: 1%
 
 ---
 

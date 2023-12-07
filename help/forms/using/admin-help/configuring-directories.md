@@ -1,18 +1,14 @@
 ---
 title: Configurando diretórios
-seo-title: Configuring directories
 description: Saiba como adicionar, editar e excluir diretórios e configurar o gerenciamento de usuários para usar a exibição de lista virtual.
-seo-description: Learn how to add, edit and delete directories and configure user management to use virtual list view.
-uuid: 0bf1a8a7-c917-4248-9937-d24e31c5ba17
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 1f15f028-aa81-478e-97eb-f83a4dc0418c
 exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3226'
+source-wordcount: '3229'
 ht-degree: 0%
 
 ---
@@ -104,7 +100,7 @@ Ao adicionar um diretório a um domínio, especifique as configurações de dire
 >
 >Clique em Testar para verificar se uma conexão pode ser estabelecida com o servidor LDAP. Para determinar a causa raiz de qualquer falha, revise a exceção no arquivo de log do Servidor de Aplicativos.
 
-### Configurações de usuário {#user-settings}
+### Configurações do usuário {#user-settings}
 
 **Identificador exclusivo:** (Obrigatório) Um atributo exclusivo e constante usado para identificar usuários. Use um atributo que não seja DN como identificador exclusivo porque o DN de um usuário poderá ser alterado se ele for movido para outra parte da organização. Esta configuração depende do servidor de diretório. O valor é objectGUID para o Ative Diretory 2003, nsuniqueID para o Sun™ One e guid para o eDirectory.
 

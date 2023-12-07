@@ -1,18 +1,14 @@
 ---
 title: Modelos de carta de referência
-seo-title: Reference letter templates
 description: A AEM Forms fornece modelos de layout de correspondência do Gerenciamento de correspondências que você pode usar para criar cartas rapidamente.
-seo-description: AEM Forms provides Correspondence Management letter layout templates that you can use to create letters quickly.
-uuid: 3b2312d9-daa0-435b-976f-4969b54c5056
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: correspondence-management
-discoiquuid: afeb9f4d-3feb-4a0e-8884-e3ec1309b33b
 exl-id: 40d127b5-1ce6-41fb-ac4c-2bf7ae79da82
-source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 2%
+source-wordcount: '453'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +16,7 @@ ht-degree: 2%
 
 No Gerenciamento de correspondências, um modelo de correspondência contém campos de formulário típicos, recursos de layout como cabeçalho e rodapé e &quot;áreas de destino&quot; vazias para a inserção de conteúdo.
 
-O Gerenciamento de correspondência fornece modelos de correspondência na [Pacote complementar do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR). Você pode personalizar os modelos no Designer de acordo com suas necessidades comerciais e de marca. O pacote inclui os seguintes templates:
+O Gerenciamento de correspondência fornece modelos de correspondência na [Pacote complementar do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Você pode personalizar os modelos no Designer de acordo com suas necessidades comerciais e de marca. O pacote inclui os seguintes templates:
 
 * Clássico
 * Simples clássico

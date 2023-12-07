@@ -1,23 +1,21 @@
 ---
 title: Participar de fluxos de trabalho
-description: Os fluxos de trabalho normalmente incluem etapas que exigem que uma pessoa execute uma atividade em uma página ou ativo. O fluxo de trabalho seleciona um usuário ou grupo para executar a atividade e lhe atribui um item de trabalho.
-uuid: 04dcc8f2-dc11-430f-b0ae-47ef2cb069a2
+description: Os fluxos de trabalho normalmente incluem etapas que exigem que uma pessoa execute uma atividade em uma página ou ativo. O fluxo de trabalho seleciona um usuário ou grupo para executar a atividade e atribui um item de trabalho a essa pessoa ou grupo.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
 exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 52%
+source-wordcount: '541'
+ht-degree: 39%
 
 ---
 
 # Participar de fluxos de trabalho{#participating-in-workflows}
 
-Os fluxos de trabalho normalmente incluem etapas que exigem que uma pessoa execute uma atividade em uma página ou ativo. O fluxo de trabalho seleciona um usuário ou grupo para executar a atividade e lhe atribui um item de trabalho.
+Os fluxos de trabalho normalmente incluem etapas que exigem que uma pessoa execute uma atividade em uma página ou ativo. O fluxo de trabalho seleciona um usuário ou grupo para executar a atividade e atribui um item de trabalho a essa pessoa ou grupo.
 
 ## Processando seus itens de trabalho {#processing-your-work-items}
 
@@ -81,7 +79,7 @@ Use o procedimento a seguir para delegar um item de trabalho.
 
 ### Realização de um retrocesso em uma etapa do participante {#performing-step-back-on-a-participant-step}
 
-Use o procedimento a seguir para retroceder.
+Use o procedimento a seguir para voltar.
 
 1. Clique no botão Retroceder na barra de navegação superior.
 1. Na caixa de diálogo resultante, selecione a Etapa anterior; ou seja, a etapa a ser executada em seguida, mesmo que seja uma etapa que ocorra anteriormente no fluxo de trabalho. Uma lista suspensa mostra todos os destinos apropriados.

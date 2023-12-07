@@ -1,21 +1,17 @@
 ---
 title: Funções da comunidade
-seo-title: Community Functions
 description: Saiba como acessar o console de Funções da comunidade
-seo-description: Learn how to access the Community Functions console
-uuid: d3d70134-f318-4709-a673-b01a3467d980
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 role: Admin
 exl-id: 2395c895-c611-43ac-abb6-c2bc4b4a41f4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2220'
-ht-degree: 6%
+source-wordcount: '2215'
+ht-degree: 2%
 
 ---
 
@@ -110,7 +106,7 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
   Se selecionado, o blog permitirá que apenas membros privilegiados criem artigos, permitindo a seleção de um [grupo de membros privilegiados](/help/communities/users.md#privileged-members-group). Se não for selecionada, todos os membros da comunidade poderão criar. O padrão está desmarcado.
 
-* **Permitir carregamento de arquivos**
+* **Permitir carregamentos de arquivo**
 
   Se selecionado, o blog incluirá a capacidade de os membros fazerem upload de arquivos. O padrão está selecionado.
 
@@ -118,7 +114,7 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
   Se não for selecionada, o blog permitirá respostas (comentários) a um artigo, mas respostas a comentários não serão permitidas. O padrão está selecionado.
 
-* **Ativar conteúdo em destaque**
+* **Permitir conteúdo em destaque**
 
   Se selecionado, o blog é identificado como [conteúdo em destaque](/help/communities/featured.md). O padrão está selecionado.
 
@@ -140,7 +136,7 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
   Se selecionado, o blog permitirá que apenas membros privilegiados criem artigos, permitindo a seleção de um [grupo de membros privilegiados](/help/communities/users.md#privileged-members-group). Se não for selecionada, todos os membros da comunidade poderão criar. O padrão está desmarcado.
 
-* **Permitir carregamento de arquivos**
+* **Permitir carregamentos de arquivo**
 
   Se selecionado, o blog incluirá a capacidade de os membros fazerem upload de arquivos. O padrão está selecionado.
 
@@ -148,7 +144,7 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
   Se não for selecionada, o blog permitirá respostas (comentários) a um artigo, mas respostas a comentários não serão permitidas. O padrão está selecionado.
 
-* **Ativar conteúdo em destaque**
+* **Permitir conteúdo em destaque**
 
   Se selecionado, seu conteúdo é identificado como [conteúdo em destaque](/help/communities/featured.md). O padrão está selecionado.
 
@@ -186,7 +182,7 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
   Se selecionado, o fórum só permitirá que membros privilegiados publiquem tópicos, permitindo a seleção de um [grupo de membros privilegiados](/help/communities/users.md#privileged-members-group). Se não for selecionada, todos os membros da comunidade poderão publicar. O padrão está desmarcado.
 
-* **Permitir carregamento de arquivos**
+* **Permitir carregamentos de arquivo**
 
   Se selecionado, o fórum incluirá a capacidade de os membros fazerem upload de arquivos. O padrão está selecionado.
 
@@ -194,7 +190,7 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
   Se não for selecionada, o fórum permitirá comentários sobre um tópico, mas as respostas a esses comentários não serão permitidas. O padrão está selecionado.
 
-* **Ativar conteúdo em destaque**
+* **Permitir conteúdo em destaque**
 
   Se selecionado, o conteúdo do componente é identificado como [conteúdo em destaque](/help/communities/featured.md). O padrão está selecionado.
 
@@ -228,7 +224,7 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
   Se selecionado, o fórum só permitirá que membros privilegiados publiquem tópicos, permitindo a seleção de um [grupo de segurança de membros privilegiados](/help/communities/users.md#privileged-members-group). Se não for selecionada, todos os membros da comunidade poderão publicar. O padrão está desmarcado.
 
-* **Permitir a publicação da criação**
+* **Permitir publicação da criação**
 
   Se essa opção for selecionada, os membros autorizados da comunidade poderão criar um grupo no ambiente de publicação. Se desmarcado, novos grupos (subcomunidades) só poderão ser criados no ambiente de criação do console Grupos de sites de comunidades.
 O padrão está selecionado.
@@ -247,7 +243,7 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta, especific
 
   Se selecionado, o fórum só permitirá que membros privilegiados publiquem tópicos, permitindo a seleção de um [grupo de segurança de membros privilegiados](/help/communities/users.md#privileged-members-group). Se não for selecionada, todos os membros da comunidade poderão publicar. O padrão está desmarcado.
 
-* **Permitir carregamento de arquivos**
+* **Permitir carregamentos de arquivo**
 
   Se selecionada, a ideia inclui a capacidade de os membros fazerem upload de arquivos. O padrão está selecionado.
 
@@ -255,7 +251,7 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta, especific
 
   Se não for selecionada, a ideia permitirá respostas (comentários) a um tópico, mas respostas a comentários não serão permitidas. O padrão está selecionado.
 
-* **Ativar conteúdo em destaque**
+* **Permitir conteúdo em destaque**
 
   Se selecionado, seu conteúdo é identificado como [conteúdo em destaque](/help/communities/featured.md). O padrão está selecionado.
 
@@ -281,7 +277,7 @@ O padrão está desmarcado.
   Se selecionada, uma coluna para o nome da medalha é incluída no quadro de classificação.
 O padrão está desmarcado.
 
-* **Exibir avatar**
+* **Exibir Avatar**
 
   Se selecionada, a imagem do avatar do membro será incluída no quadro de classificação, ao lado do link de nome para o perfil do membro.
 O padrão está desmarcado.
@@ -310,7 +306,7 @@ Quando adicionada a um modelo, a configuração permite a restrição a membros 
 
   Se selecionado, o fórum QnA só permitirá que membros privilegiados postem perguntas, permitindo a seleção de um [grupo de membros privilegiados](/help/communities/users.md#privileged-members-group). Se não for selecionada, todos os membros da comunidade poderão publicar. O padrão está desmarcado.
 
-* **Permitir carregamento de arquivos**
+* **Permitir carregamentos de arquivo**
 
   Se selecionado, o fórum QnA incluirá a capacidade de os membros fazerem upload de arquivos. O padrão está selecionado.
 
@@ -318,7 +314,7 @@ Quando adicionada a um modelo, a configuração permite a restrição a membros 
 
   Se não for selecionada, o fórum QnA permitirá comentários (respostas) para uma pergunta publicada, mas as respostas às respostas não serão permitidas. O padrão está selecionado.
 
-* **Ativar conteúdo em destaque**
+* **Permitir conteúdo em destaque**
 
   Se selecionado, seu conteúdo é identificado como [conteúdo em destaque](/help/communities/featured.md). O padrão está selecionado.
 
