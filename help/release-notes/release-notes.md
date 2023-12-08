@@ -3,9 +3,9 @@ title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: 1c3df6ea88f1dfbab5d9df2dcd4907e72829287a
 workflow-type: tm+mt
-source-wordcount: '4233'
+source-wordcount: '4232'
 ht-degree: 1%
 
 ---
@@ -61,6 +61,8 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 * **[Conectar um Forms adaptável com a lista Microsoft® SharePoint](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: o AEM Forms fornece uma integração OOTB para enviar dados de formulários diretamente para a Lista do SharePoint, permitindo que você use os recursos de Listas do SharePoint. Você pode configurar a Lista de SharePoint do Microsoft como uma fonte de dados para um Modelo de dados de formulário e usar a ação de envio Enviar usando Modelo de dados de formulário para conectar um Formulário adaptável à Lista de SharePoint.
 
 * **[Suporte para configurar propriedades do documento de registro para fragmentos de formulário adaptável](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)**: Agora é possível personalizar facilmente os fragmentos do Formulário adaptável e seus campos no editor de Formulário adaptável.
+
+* **XMLFM de 64 bits**: a iteração de 64 bits do XMLFM apresenta desempenho aprimorado, escalabilidade e gerenciamento refinado de memória. É o primeiro serviço nativo de 64 bits implantado no lado do servidor. Ao utilizar sua capacidade inerente de acessar recursos de memória significativamente maiores em comparação ao seu equivalente de 32 bits, o XMLFM de 64 bits capacita o manuseio ininterrupto de cargas de trabalho de renderização maiores. Esse marco não só representa um salto no desempenho, como também introduz aprimoramentos importantes na estrutura de serviço nativa no servidor do AEM Forms. Essa atualização possibilita que o servidor do AEM Forms ofereça suporte a qualquer serviço nativo de 64 bits.
 
 
 **Recurso obsoleto**
@@ -469,23 +471,27 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 #### Instalação
 
 * Na plataforma JBoss® 7.1.4, quando o usuário instala o Experience Manager 6.5.16.0 ou o service pack posterior, `adobe-livecycle-jboss.ear` falha na implantação. (CQ-4351522, CQDOC-20159)
-* Depois de atualizar para o ambiente do instalador completo do AEM Forms 6.5.18.0 JBoss® Turnkey no Windows Server 2022, ao compilar o código do aplicativo cliente de saída usando o Java™ 11, o seguinte erro de compilação pode ocorrer:
 
+<!-- 
+* After upgrading to AEM Forms 6.5.18.0 JBoss&reg; Turnkey full installer environment on Windows Server 2022, when compiling Output client application code using Java&trade; 11, the following compilation error may occur:
+  
   ```
   error: error reading [AEM_Forms_Installation_dir]\sdk\client-libs\common\adobe-output-client.jar; java.net.URISyntaxException: 
   Illegal character in path at index 70: file:/[AEM_Forms_Installation_dir]/sdk/client-libs/common/${clover.jar.name} 1 error
+  
   ```
+  
+  To resolve the issue, perform the following steps:
+    1. Navigate to `[AEM_Forms_Installation_dir]\sdk\client-libs\common\` and unzip `adobe-output-client.jar` to extract the `Manifest.mf` file.
+    1. Update the `Manifest.mf` file by removing the entry `${clover.jar.name}` from the class-path attribute. 
 
-  Para resolver o problema, execute as seguintes etapas:
-   1. Navegue até `[AEM_Forms_Installation_dir]\sdk\client-libs\common\` e descompactar `adobe-output-client.jar` para extrair o `Manifest.mf` arquivo.
-   1. Atualize o `Manifest.mf` arquivo removendo a entrada `${clover.jar.name}` do atributo class-path.
+        >[!NOTE]
+        >
+        > You can also use an in-place editing tool, for example, 7-zip, to update the `Manifest.mf` file.  
 
-      >[!NOTE]
-      >
-      > Também é possível usar uma ferramenta de edição no local, por exemplo, 7-zip, para atualizar a `Manifest.mf` arquivo.
+    1. Save the updated the `Manifest.mf` in the `adobe-output-client.jar` archive. 
+    1. Save the modified `adobe-output-client.jar` file and rerun the setup. (CQDOC-20878) -->
 
-   1. Salve o atualizado o `Manifest.mf` no `adobe-output-client.jar` arquivo.
-   1. Salvar os modificados `adobe-output-client.jar` e execute novamente a configuração. (CQDOC-20878)
 * Após instalar o instalador completo do AEM Service Pack 6.5.19.0, a implantação do EAR falha no JEE usando o JBoss® Turnkey.
 Para resolver o problema, localize o `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` arquivo e atualização `Adobe_Adobe_JAVA_HOME` para `Adobe_JAVA_HOME` para todas as ocorrências antes de executar o gerenciador de configurações. (CQDOC-20803)
 
