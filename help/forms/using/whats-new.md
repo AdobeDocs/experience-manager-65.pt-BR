@@ -1,146 +1,194 @@
 ---
 title: Resumo dos novos recursos | AEM 6.5 Forms
-description: Recursos e melhorias mais recentes em formulários e documentos da solução de gerenciamento de experiência digital mais avançada do mundo.
+description: Recursos e melhorias mais recentes em formulários e documentos AEM, a solução de gerenciamento de experiência digital mais avançada do mundo.
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '1241'
-ht-degree: 2%
+source-wordcount: '546'
+ht-degree: 1%
 
 ---
 
 # Resumo dos novos recursos | AEM 6.5 Forms{#new-features-summary-aem-forms}
 
-## Relatórios de transação {#transaction-reports}
-
-| Versão | Link do artigo |
+| Produto | Adobe Experience Manager 6.5 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/latest-innovations.html) |
-| AEM 6.5 | Este artigo |
+| Versão | 6.5.19.0 |
+| Tipo | Versão do Service Pack |
+| Data | sábado, 8 de dezembro de 2023 |
+
+## O que está incluído no Adobe Experience Manager 6.5 Forms Service Pack 19 (6.5.19.0)
+
+O Experience Manager 6.5.19.0 inclui novos recursos, importantes melhorias solicitadas por clientes, correções de bugs e melhorias de desempenho, estabilidade e segurança que foram lançadas desde a disponibilidade inicial do 6.5 em abril de 2019. [Instalar este pacote de serviços](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html) no Experience Manager 6.5.
+
+### Novos recursos
+
+#### Novos componentes principais do formulário adaptável
+
+Guias verticais, Termos e condições e Caixa de seleção são adicionados para aprimorar a escalabilidade dos formulários.
+
+* **[Componente da caixa de seleção](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: o Forms adaptável baseado em Componentes principais agora pode incluir um componente de caixa de seleção. Permite que os usuários façam escolhas binárias, selecionando ou desmarcando uma opção específica. Normalmente, ela aparece como uma pequena caixa que pode ser clicada ou tocada para alternar entre dois estados: marcado e desmarcado. A caixa de seleção é um elemento de formulário comum usado para apresentar uma opção sim/não ou verdadeira/falsa.
+
+* **[Componente dos Termos e condições](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: o Forms adaptável baseado em Componentes principais agora pode incluir um componente de Termos e condições. Ele permite que os autores de formulários introduzam uma seção específica no formulário em que os usuários recebem os termos, condições ou contratos legais associados ao uso de um serviço, produto ou plataforma. Esse componente foi projetado para informar os usuários sobre as regras, regulamentos e obrigações aos quais eles estão concordando ao enviar o formulário.
+
+  ![Guias verticais, Termos e condições e componentes Caixa de seleção](/help/forms/using/assets/forms-components.png)
+
+* **[Componente de guias verticais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: o Forms adaptável baseado em Componentes principais agora pode organizar o conteúdo do formulário em uma lista vertical de guias, fornecendo um layout estruturado e navegável. O uso de guias verticais em um formulário pode aprimorar a experiência geral do usuário simplificando a navegação e melhorando a organização do conteúdo do formulário, especialmente em situações em que um formulário contém várias seções ou informações complexas.
+
+#### Versão de 64 bits do AEM Forms Designer
+
+A variável [Versão de 64 bits do AEM Forms Designer](/help/forms/using/installing-configuring-designer.md) O oferece desempenho, escalabilidade e gerenciamento de memória aprimorados para potencializar a experiência de criação de formulários. Com a arquitetura de 64 bits, você pode executar projetos ainda maiores e mais complexos com facilidade, garantindo fluxos de trabalho de design ininterruptos e eficiência otimizada. Aumente os recursos de design de formulário e abrace o futuro do AEM Forms Designer com esta versão de última geração.
+
+#### Conectar um Forms adaptável com a lista Microsoft® SharePoint
+
+A AEM Forms fornece uma integração OOTB para [enviar dados de formulários diretamente para a Lista do SharePoint](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)), permitindo usar os recursos de Listas do SharePoint. Você pode configurar a Lista de SharePoint Microsoft® como uma fonte de dados para um Modelo de dados de formulário e usar a ação de envio Enviar usando Modelo de dados de formulário para conectar um Formulário adaptável à Lista de SharePoint.
+
+#### Suporte para configurar propriedades do documento de registro para fragmentos de formulário adaptável
+
+Agora é possível [personalizar os fragmentos de formulário adaptável e seus campos no editor de formulário adaptável](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
 
-Relatórios de transação permitem capturar e rastrear o número de formulários enviados, documentos processados e documentos renderizados. O objetivo por trás do rastreamento dessas transações é tomar uma decisão informada sobre o uso do produto e reequilibrar os investimentos em hardware e software. Alguns exemplos de transações incluem:
+## Correções de erros
 
-* Envio de um formulário adaptável, um formulário HTML5 ou um conjunto de formulários
-* Representação de uma versão impressa ou da Web de uma comunicação interativa
-* Conversão de um documento de um formato de arquivo para outro
+A versão também inclui correções para mais de 20 problemas relatados pelo cliente. Para obter uma lista detalhada das correções incluídas no service pack, consulte [notas de versão](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=en#forms-6519)
 
-Para obter informações sobre como configurar e usar relatórios de transações, consulte [Visão Geral dos Relatórios de Transação](../../forms/using/transaction-reports-overview.md).
 
-![Um exemplo de relatório de transação](assets/surface_transaction_reporting.png)
+## Instalação do pacote de serviços
 
-## Comunicações interativas {#interactive-communications}
+O service pack traz novos recursos e correções de bugs para o AEM Forms no JEE e AEM Forms no OSGi. As instruções de instalação têm alterações em relação aos service packs anteriores. Para obter instruções de instalação, consulte [instruções de instalação do pacote de serviços do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en).
 
-**Definir padrões de exibição de dados**
 
-Os autores de comunicações interativas agora podem definir [padrões de exibição de dados](create-interactive-communication.md#datadisplaypatterns) para campos, variáveis e elementos do modelo de dados de formulário. Por exemplo, formatos de data, moeda ou telefone.
 
-**Usar novos tipos de gráficos**
 
-Agora você pode adicionar [Gráficos de quadrante e gráficos com várias séries](../../forms/using/chart-component-interactive-communications.md) para Comunicações interativas.
 
-**Classificar colunas em uma tabela**
 
-Agora você pode [classificar colunas de uma tabela](../../forms/using/create-interactive-communication.md#sortcolumns) na comunicação interativa. Você pode vincular e classificar colunas da tabela com texto estático ou objetos de modelo de dados.
+<!-- 
+## Transaction Reports {#transaction-reports}
 
-**Usar novos componentes em um canal da Web**
 
-Agora é possível adicionar os componentes Botão e Separador ao canal da Web. Para obter mais informações, consulte [Adicionar o componente de Botão ao canal da Web](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel) e [Componente separador no canal da Web](../../forms/using/create-interactive-communication.md#separatorcomponent).
 
-**Modo de layout para redimensionar componentes**
+Transaction reports lets you capture and track the number of submitted forms, processed documents, and rendered documents. The objective behind tracking these transactions is to make an informed decision about the product usage and rebalancing investments in hardware and software. Some examples of transactions include:
 
-Agora você pode alternar para [Modo de layout](../../forms/using/resize-using-layout-mode.md) para redimensionar componentes no canal da Web usando uma interface WYSIWYG.
+* Submission of an Adaptive Form, an HTML5 Form, or a Form Set
+* Rendition of a print or a web version of an interactive communication
+* Conversion of a document from one file format to another
 
-**Melhorias de usabilidade**
+For information about configuring and using transaction reports, see [Transaction Reports Overview](../../forms/using/transaction-reports-overview.md).
 
-Os autores de comunicações interativas agora podem utilizar várias operações fáceis de usar ao criar correspondências. A lista de operações inclui:
+![A sample transaction report](assets/surface_transaction_reporting.png)
 
-* [Executar ações desfazer e refazer em canais de impressão e da Web](../../forms/using/create-interactive-communication.md#undoredoactions)
-* [Adicionar variáveis em um fragmento de documento usando o símbolo @](../../forms/using/texts-interactive-communications.md#searchvariables)
-* [Adicionar elementos do modelo de dados em um fragmento de documento usando o símbolo @](../../forms/using/texts-interactive-communications.md#searchdatamodelproperties)
-* [Excluir ou adicionar um canal da Web a uma Comunicação interativa existente](../../forms/using/create-interactive-communication.md#edit-interactive-communication-properties)
-* [Vincular elementos de fonte de dados a campos e variáveis usando ações de arrastar e soltar](../../forms/using/create-interactive-communication.md#binddatasourceelements)
-* [Realçar campos e variáveis desvinculados ao criar a Comunicação interativa](../../forms/using/create-interactive-communication.md#distinguishunboundfields)
-* [Executar ações adicionais, como copiar, agrupar ou mais, em componentes herdados em um canal da Web](../../forms/using/create-interactive-communication.md#componenttoolbar)
+## Interactive Communications {#interactive-communications}
 
-**Melhorias no processo de sincronização**
+**Define data display patterns**
 
-Há várias melhorias no layout de canal da Web gerado automaticamente usando o canal de impressão.
+Interactive Communication authors can now define [data display patterns](create-interactive-communication.md#datadisplaypatterns) for fields, variables, and form data model elements. For example, date, currency, or phone formats.
 
-![Gráficos de comunicações interativas](assets/interactive-communication-charts.png)
+**Use new types of charts**
+
+You can now add [Quadrant charts and charts with multiple series](../../forms/using/chart-component-interactive-communications.md) to Interactive Communications.
+
+**Sort columns in a table**
+
+You can now [sort columns of a table](../../forms/using/create-interactive-communication.md#sortcolumns) in the Interactive Communication. You can bind and sort table columns with static text or data model objects.
+
+**Use new components in a web channel**
+
+You can now add Button and Separator components to the web channel. For more information, see [Add Button component to the web channel](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel) and [Separator component in web channel](../../forms/using/create-interactive-communication.md#separatorcomponent).
+
+**Layout mode to resize components**
+
+You can now switch to [Layout mode](../../forms/using/resize-using-layout-mode.md) to resize components in the Web channel using a WYSIWYG interface.
+
+**Usability improvements**
+
+Interactive Communication authors can now utilize various easy-to-use operations while creating correspondences. The list of operations includes:
+
+* [Perform undo-redo actions in print and web channels](../../forms/using/create-interactive-communication.md#undoredoactions)
+* [Add variables in a document fragment using @ symbol](../../forms/using/texts-interactive-communications.md#searchvariables)
+* [Add data model elements in a document fragment using @ symbol](../../forms/using/texts-interactive-communications.md#searchdatamodelproperties)
+* [Delete or add a web channel to an existing Interactive Communication](../../forms/using/create-interactive-communication.md#edit-interactive-communication-properties)
+* [Bind data source elements with fields and variables using drag-and-drop actions](../../forms/using/create-interactive-communication.md#binddatasourceelements)
+* [Highlight unbound fields and variables while authoring Interactive Communication](../../forms/using/create-interactive-communication.md#distinguishunboundfields)
+* [Perform additional actions such as copy, group, or more on inherited components in a web channel](../../forms/using/create-interactive-communication.md#componenttoolbar)
+
+**Improvements in sync process**
+
+There are several improvements in the Web channel layout auto-generated using the Print channel.
+
+![Interactive Communications Charts](assets/interactive-communication-charts.png)
 
 ## Adaptive Forms {#adaptive-forms}
 
-### Usar assinaturas digitais baseadas em nuvem do Adobe Sign no Adaptive Forms {#use-adobe-sign-s-cloud-based-digital-signatures-in-adaptive-forms}
+### Use Adobe Sign's cloud-based digital signatures in Adaptive Forms {#use-adobe-sign-s-cloud-based-digital-signatures-in-adaptive-forms}
 
-[Assinaturas digitais baseadas em nuvem](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) As assinaturas remotas são uma nova geração de assinaturas digitais que funcionam em computadores de mesa, dispositivos móveis e na Web — e atendem aos mais altos níveis de conformidade e garantia para autenticação de signatário. Agora você pode [assinar um Formulário adaptável](../../forms/using/working-with-adobe-sign.md) com assinaturas digitais baseadas em nuvem.
+[Cloud-based digital signatures](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) or remote signatures are a new generation of digital signatures that work across desktop, mobile, and the web — and meet the highest levels of compliance and assurance for signer authentication. You can now [sign an Adaptive Form](../../forms/using/working-with-adobe-sign.md) with Cloud-based digital signatures.
 
-#### Incorpore um formulário adaptável ou a comunicação interativa nos aplicativos de página única do AEM Sites {#embed-an-adaptive-form-or-interactive-communcation-in-aem-sites-single-page-applications}
+#### Embed an Adaptive Form or Interactive Communication in AEM Sites Single Page Applications {#embed-an-adaptive-form-or-interactive-communcation-in-aem-sites-single-page-applications}
 
-O AEM Forms permite [incorporar facilmente um Formulário adaptável](../../forms/using/embed-adaptive-form-aem-sites-spa.md) ou Comunicação interativa em um aplicativo de página única (SPA) do AEM Sites. O formulário adaptável incorporado e a comunicação interativa são totalmente funcionais e os usuários podem preencher e enviar o formulário sem sair da página. Ele ajuda o usuário a permanecer no contexto de outros elementos na página da Web e interagir simultaneamente com o formulário adaptável ou a Comunicação interativa.
+AEM Forms lets you [seamlessly embed an Adaptive Form](../../forms/using/embed-adaptive-form-aem-sites-spa.md) or Interactive Communication in an AEM Sites single page application (SPA). The embedded Adaptive Form and Interactive Communication is fully functional and users can fill and submit the form without leaving the page. It helps user remain in context of other elements on the web page and simultaneously interact with the adaptive form or Interactive Communication.
 
-#### Classificar colunas de tabelas do Formulário adaptável {#sort-columns-of-adaptive-form-tables}
+#### Sort columns of Adaptive Form tables {#sort-columns-of-adaptive-form-tables}
 
-Você pode [classificar qualquer coluna de uma tabela de Formulário adaptável](../../forms/using/adaptive-forms-tables.md#sortcolumnstable) em ordem crescente ou decrescente. Você pode aplicar a classificação a colunas de tabela com texto estático, propriedades do objeto de modelo de dados ou uma combinação de texto estático e propriedades do objeto de modelo de dados.
+You can [sort any column of an Adaptive Form table](../../forms/using/adaptive-forms-tables.md#sortcolumnstable) in an ascending or descending order. You can apply sorting to table columns with static text, data model object properties, or a combination of static text and data model object properties.
 
-#### Restringir a disponibilidade de modelos do Adaptive Forms a caminhos específicos {#restrict-the-availability-of-adaptive-forms-templates-to-specific-paths}
+#### Restrict the availability of Adaptive Forms templates to specific paths {#restrict-the-availability-of-adaptive-forms-templates-to-specific-paths}
 
-Formulários adaptáveis adicionaram suporte para a propriedade cq:allowedPaths. A propriedade [restringe a disponibilidade dos modelos do Adaptive Forms a caminhos específicos](creating-adaptive-form.md#adaptive-form-templates).
+Adaptive forms has added support for the cq:allowedPaths property. The property [restricts availability of Adaptive Forms templates to specific paths](creating-adaptive-form.md#adaptive-form-templates).
 
-#### Adicionar caixas de seleção ao Formulário adaptável dinamicamente {#add-check-boxes-to-the-adaptive-form-dynamically}
+#### Add check boxes to the Adaptive Form dynamically {#add-check-boxes-to-the-adaptive-form-dynamically}
 
-Agora você pode definir regras para [adicionar caixas de seleção ao Formulário adaptável dinamicamente](../../forms/using/rule-editor.md#setpropertyrule) com base na função personalizada, um objeto de formulário ou uma propriedade de objeto.
+You can now define rules to [add checkboxes to the Adaptive Form dynamically](../../forms/using/rule-editor.md#setpropertyrule) based on custom function, a form object, or an object property.
 
-## Fluxos de trabalho do AEM {#aem-workflows}
+## AEM Workflows {#aem-workflows}
 
-### Usar variáveis em fluxos de trabalho do AEM {#use-variables-in-aem-workflows}
+### Use variables in AEM Workflows {#use-variables-in-aem-workflows}
 
-As variáveis permitem que as etapas do fluxo de trabalho retenham e transmitam metadados pelas etapas do fluxo de trabalho no tempo de execução. É possível criar diferentes tipos de variáveis para armazenar diferentes tipos de dados. Por exemplo, números inteiros, sequências, documentos ou instâncias de modelo de dados de formulário. Normalmente, você usa uma variável ou uma coleção de variáveis quando precisa tomar uma decisão com base no valor que ela contém ou armazenar informações necessárias posteriormente em um processo.
+Variables enable workflow steps to hold and pass metadata across workflow steps at runtime. You can create different types of variables for storing different types of data. For example, integers, strings, documents, or form data model instances. Typically, you use a variable or a collection of variables when you need to make a decision based on the value that it holds or to store information that you need later in a process.
 
-As variáveis são uma extensão de [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) disponível na versão anterior. Ajuda a economizar tempo gasto no desenvolvimento do código ECMAScript personalizado usado para recuperar e atualizar valores de metadados. Você continua usando a interface MetaDataMap e o código ECMAScript para manipular metadados. Alguns benefícios do uso de variáveis no MetaDataMap e no ECMAScript são:
+Variables are an extension of [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) interface available in the previous version. It helps save time spent in developing custom ECMAScript code used to retrieve and update metadata values. You continue using MetaDataMap interface and ECMAScript code to manipulate metadata. Some benefits of using variables over MetaDataMap and ECMAScript are:
 
-* Armazenar, atualizar e usar dinamicamente os valores armazenados em uma variável em todo o fluxo de trabalho, sem depender do código personalizado
-* Recuperar e atualizar valores diretamente para um modelo de dados de formulário e arquivo de dados (XML/JSON ) de um formulário enviado
-* Armazenar documentos completos em uma variável para executar o processamento de documentos
+* Dynamically store, update, and use values stored in a variable across the workflow without relying on custom code
+* Retrieve and update values directly to a form data model and data file (XML/JSON ) of a submitted form
+* Store complete documents in a variable to perform document processing
 
-As etapas Ir para, OU Divisão e todas as etapas de fluxo de trabalho do AEM Forms são compatíveis com variáveis. Você pode usar a interface do MetaDataMap para acessar variáveis em etapas de fluxo de trabalho que não têm suporte nativo para variáveis. Para obter mais informações, consulte [Variáveis em fluxos de trabalho do AEM](../../forms/using/variable-in-aem-workflows.md).
+The Go To step, OR Split step, and all AEM Forms workflow steps support variables. You can use MetaDataMap interface to access variables in workflow steps that do not have a native support for variables. For more information, see [Variables in AEM Workflows](../../forms/using/variable-in-aem-workflows.md).
 
-![Configuração de uma variável para em um workflow](assets/variable.png)
+![Setting a variable for in a workflow](assets/variable.png)
 
-#### Usar um fluxo de trabalho com um Forms adaptável diferente  {#use-a-workflow-with-different-adaptive-forms}
+#### Use a workflow with different Adaptive Forms  {#use-a-workflow-with-different-adaptive-forms}
 
-Você pode [especificar um Formulário adaptável para a tarefa atribuir](../../forms/using/aem-forms-workflow-step-reference.md#assign-task-step) e documento de etapa de registro de fluxos de trabalho centrados em formulário no tempo de execução. Ela permite que um fluxo de trabalho funcione com Forms adaptável diferente. É possível decidir o método para selecionar um Formulário adaptável ao criar o fluxo de trabalho. O formulário adaptável pode estar localizado em um caminho absoluto, enviado como carga para o fluxo de trabalho ou disponível em um caminho calculado usando uma variável.
+You can [specify an Adaptive Form for the assign task](../../forms/using/aem-forms-workflow-step-reference.md#assign-task-step) and document of record step of form-centric workflows on the runtime. It allows a workflow to work with different Adaptive Forms. You can decide the method to select an Adaptive Form while designing the workflow. The Adaptive Form can be located at an absolute path, submitted as payload to the workflow, or available at a path calculated using a variable.
 
-#### Usar recursos de log aprimorados de etapas de fluxo de trabalho centradas em formulários {#use-enhanced-logging-capabilities-of-forms-centric-workflow-steps}
+#### Use enhanced logging capabilities of forms-centric workflow steps {#use-enhanced-logging-capabilities-of-forms-centric-workflow-steps}
 
-Os recursos de registro das etapas de fluxo de trabalho centradas em formulários são padronizados. Agora, todas as etapas de fluxo de trabalho centradas em formulários produzem logs padronizados semelhantes. Isso ajuda a melhorar a velocidade de depuração.
+Logging capabilities of forms-centric workflow steps are standardized. Now, all form-centric workflow steps produce similarly standardized logs. It helps improve debugging speed.
 
-## Integração de dados {#data-integration}
+## Data Integration {#data-integration}
 
-Agora você pode:
+You can now:
 
-* [Validar dados de entrada](../../forms/using/work-with-form-data-model.md#automated-validation-of-input-data) com base em uma lista de restrições. Isso ajuda a garantir que somente dados válidos sejam enviados para a fonte de dados.
-* [Substituir ponto de extremidade padrão](../../forms/using/configure-data-sources.md#configure-soap-web-services) definida em um arquivo WSDL (Web Services Description Language).
+* [Validate input data](../../forms/using/work-with-form-data-model.md#automated-validation-of-input-data) based on a list of constraints. It helps ensure that only valid data is submitted to data source.
+* [Override default endpoint](../../forms/using/configure-data-sources.md#configure-soap-web-services) defined in a WSDL (Web Services Description Language) file.
 
-* [Substituir padrão](../../forms/using/configure-data-sources.md#configure-restful-web-services) [esquema, host e caminho base](../../forms/using/configure-data-sources.md#configure-restful-web-services) definido no arquivo de definição do Swagger.
+* [Override default](../../forms/using/configure-data-sources.md#configure-restful-web-services) [scheme, host, and base path](../../forms/using/configure-data-sources.md#configure-restful-web-services) defined in Swagger definition file.
 
-## Atualizações de plataforma e segurança {#platform-and-security-updates}
+## Platform and Security updates {#platform-and-security-updates}
 
-### Principais atualizações da plataforma {#major-platform-updates}
+### Major platform updates {#major-platform-updates}
 
-O AEM Forms pode ser configurado usando qualquer combinação de sistemas operacionais, servidores de aplicativos, bancos de dados, drivers de banco de dados, JDK, servidores LDAP e servidores de e-mail compatíveis. A seguir estão as principais alterações [plataformas compatíveis](../../forms/using/aem-forms-jee-supported-platforms.md):
+AEM Forms can be set up using any combination of supported operating systems, application servers, databases, database drivers, JDK, LDAP servers, and email servers. The following are the major changes in [supported platforms](../../forms/using/aem-forms-jee-supported-platforms.md):
 
 <table>
  <tbody>
   <tr>
-   <td>Componente</td>
-   <td>Suporte removido</td>
+   <td>Component</td>
+   <td>Support Removed</td>
   </tr>
   <tr>
-   <td>Sistemas operacionais</td>
+   <td>Operating systems</td>
    <td>
     <ul>
      <li>Microsoft Windows Server 2012 R2</li>
@@ -149,50 +197,50 @@ O AEM Forms pode ser configurado usando qualquer combinação de sistemas operac
     </ul> </td>
   </tr>
   <tr>
-   <td>Servidores de aplicativos<br /> </td>
+   <td>Application servers<br /> </td>
    <td>
     <ul>
-    <li>Perfil do WebSphere Liberty</li>
+    <li>WebSphere Liberty profile</li>
     <li>Oracle WebLogic</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Bancos de dados</td>
+   <td>Databases</td>
    <td>
     <ul>
      <li>IBM DB2 <br /> </li>
-     <li>RAC do oracle</li>
+     <li>Oracle RAC</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Servidores LDAP</td>
+   <td>LDAP servers</td>
    <td>
     <ul>
-     <li>Microsoft Ative Diretory 2012</li>
+     <li>Microsoft Active Directory 2012</li>
      <li>Novell eDirectory 8.8.7 </li>
      <li>IBM Lotus Domino 8.5.0 </li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Servidores de email</td>
+   <td>Email servers</td>
    <td>
     <ul>
      <li>IBM Lotus Domino 8.5.0 </li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Conectores</td>
+   <td>Connectors</td>
    <td>
     <ul>
-     <li>Conector do Microsoft Sharepoint 2013</li>
-     <li>Conector do EMC Documentum 7.0</li>
+     <li>Connector for Microsoft Sharepoint 2013</li>
+     <li>Connector for EMC Documentum 7.0</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>aplicativo AEM Forms<br /> </td>
+   <td>AEM Forms app<br /> </td>
    <td>
     <ul>
-     <li>Suporte ao Windows 8.1</li>
+     <li>Windows 8.1 support</li>
     </ul> </td>
   </tr>
   <tr>
@@ -205,17 +253,19 @@ O AEM Forms pode ser configurado usando qualquer combinação de sistemas operac
  </tbody>
 </table>
 
-&#42; Entre em contato com o Suporte do Adobe para obter informações sobre como migrar para uma plataforma diferente
+&#42; Contact Adobe Support for information on migrating to a different platform
 
-#### Novas interfaces do usuário baseadas em HTML5 {#new-html-based-uis}
+#### New HTML5-based UIs {#new-html-based-uis}
 
-De acordo com o fim da vida útil planejado do Flash Player de Adobe e a direção geral da migração de conteúdo baseado em Flash para padrões abertos, o 6.5 Forms substituiu a interface baseada em Flash do Health Monitor, Process Management, Reader Extension e Category Management UI do AEM Forms HTML no Console de administração do JEE pela interface baseada em AEM5.
+In line with planned EOL of Adobe Flash Player and overall direction of migrating Flash-based content to open standards, AEM 6.5 Forms has replaced Flash-based UI of Health Monitor, Process Management, Reader Extension, and Category Management UI of AEM Forms on JEE Administration Console with HTML5-based UI.
 
-#### Melhorias de segurança {#security-improvements}
+#### Security improvements {#security-improvements}
 
-* A interface do usuário do console de administração do AEM 6.5 Forms no JEE agora é baseada no Apache Struts 2.5.
-* O AEM 6.5 Forms agora usa jQuery para 3.2.1 e jQuery UI 1.12.1. Consulte [documentação de atualização](/help/forms/home.md) para o impacto da alteração.
+* AEM 6.5 Forms on JEE administration console UI is now based on Apache Struts 2.5.
+* AEM 6.5 Forms now uses jQuery to 3.2.1 and jQuery UI 1.12.1. See, [upgrade documentation](/help/forms/home.md) for the impact of the change.
 
-#### Melhorias de acessibilidade {#accessibility-improvements}
+#### Accessibility improvements {#accessibility-improvements}
 
-O AEM 6.5 Forms melhorou a acessibilidade do AEM Forms Workspace.
+AEM 6.5 Forms has improved accessibility of AEM Forms Workspace. 
+!-->
+

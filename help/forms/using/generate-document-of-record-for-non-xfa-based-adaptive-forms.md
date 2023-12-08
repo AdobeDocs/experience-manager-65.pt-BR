@@ -7,14 +7,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '3533'
+source-wordcount: '3583'
 ht-degree: 2%
 
 ---
 
-# Gerar documento de registro para formulários adaptáveis{#generate-document-of-record-for-adaptive-forms}
+# Gerar documento de registro para formulários adaptáveis ou fragmentos de formulário adaptáveis {#generate-document-of-record-for-adaptive-forms}
 
 <span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 Depois de enviar um formulário, seus clientes geralmente querem manter um registro, em formato impresso ou de documento, das informações que preencheram no formulário para referência futura. Isso é chamado de documento de registro.
 
-Este artigo explica como gerar um documento de registro para formulários adaptáveis.
+Este artigo explica como gerar um documento de registro para o Forms adaptável ou fragmento do Formulário adaptável.
 
 >[!NOTE]
 >
@@ -68,6 +68,8 @@ O documento de registro gerado automaticamente tem as seguintes vantagens:
 Para gerar um documento de registro para formulários adaptáveis, você precisa dos seguintes componentes:
 
 **Formulário adaptável** Formulário adaptável para o qual você deseja gerar um documento de registro.
+
+**Fragmento de formulário adaptável** Fragmento de formulário adaptável para o qual você deseja gerar um documento de registro.
 
 **Modelo base (recomendado)** Modelo XFA (arquivo XDP) criado no AEM Designer. O modelo base é usado para especificar informações de estilo e identidade visual para o documento de modelo de registro.
 
@@ -273,7 +275,7 @@ Você também pode selecionar um modelo de formulário ao criar um formulário.
    >
    >Na guia Modelo de formulário, selecione **Esquema** ou **Nenhum** do **Selecionar de** menu suspenso. **[!UICONTROL O documento de registro não é compatível com formulários baseados em XFA ou adaptáveis com o Modelo de formulário como modelo de formulário.]**
 
-1. Na seção Document of Record Template Configuration da guia Form Model, selecione uma das seguintes opções.
+1. Na seção Document of Record Template Configuration da guia Form Model, selecione uma das seguintes opções:
 
    **Nenhum** Selecione essa opção se não quiser configurar o documento de registro para o formulário.
 
@@ -396,6 +398,10 @@ O documento de configurações de registro de um componente está disponível em
    * **[!UICONTROL Estouro]** > **[!UICONTROL Ir para a área de conteúdo]** > Nome da área de conteúdo: começa a preencher a área de conteúdo especificada.
    * **[!UICONTROL Estouro]** > **[!UICONTROL Ir para página]** > Nome da página: começa a preencher a página especificada.
 
+  >[!NOTE]
+  >
+  > A propriedade de paginação não está disponível para fragmentos de formulário adaptáveis.
+
 Para obter informações sobre como aplicar quebras de página e aplicar várias páginas-mestre em um documento de registro, consulte [Aplicar quebra de página em um documento de registro](#apply-page-breaks-in-dor) e [Aplicar várias páginas-mestre a um documento de registro](#apply-multiple-master-pages-dor).
 
 **Configurações do nível de formulário**
@@ -437,6 +443,9 @@ O AEM Forms aplica a segunda página-mestre ao painel e a todos os painéis subs
 1. Selecionar ![Salvar](/help/forms/using/assets/save_icon.png) para salvar as propriedades.
 O AEM Forms aplica a terceira página-mestre ao painel e a todos os painéis subsequentes no formulário adaptável.
 
+>[!NOTE]
+>
+> Não é possível aplicar várias páginas-mestre a um documento de registro para um fragmento de formulário adaptável.
 
 ## Considerações principais ao trabalhar com documento de registro {#key-considerations-when-working-with-document-of-record}
 

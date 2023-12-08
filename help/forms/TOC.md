@@ -9,9 +9,9 @@ breadcrumb-title: Guia do Forms
 user-guide-description: Crie, gerencie, publique e atualize formulários digitais.
 role: User
 feature: Forms Service
-source-git-commit: cf5da092fabbc7834108dc54d65eb97e160984ce
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '3752'
+source-wordcount: '3762'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 + [Guia do Forms do AEM 6.5](home.md)
 + Notas de versão {#release-notes-new-features}
    + [Notas de versão](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=pt-BR)
-   + [Resumo dos novos recursos](using/whats-new.md)
+   + [Novidades](/help/forms/using/whats-new.md)
    + [Perguntas frequentes](/help/forms/using/frequently-asked-questions-faq.md)
    + [Recursos obsoletos](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html)
 + Introdução {#getting-started}
@@ -699,11 +699,13 @@ ht-degree: 3%
    + [Não foi possível restaurar o repositório CRX](/help/forms/using/restore-crx-repository.md)
    + [Erros de serviço indisponível após a instalação do pacote de serviços AEM 6.5.15.0](/help/forms/using/aem-service-pack-installation-solution.md)
    + [Problema de instalação do pacote de serviços do AEM Forms JEE 6.5.15.0 no ambiente JBoss Linux](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
+   + [Execução de vários serviços mesmo que o AEM Forms não tenha iniciado completamente](/help/forms/using/executing-multiple-services-even-aem-forms-has-not-started.md)
+   + [Não é possível usar os serviços de Saída, Forms ou DoR (Documento de Registro)](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
 + Documentação herdada {#legacy-documentation}
    + [Usar o serviço de script de execução no AEM Forms no JEE Workbench para criar dados XML](developing/building-xml.md)
    + [Compactação e descompactação de arquivos usando um AEM Forms no DSC personalizado JEE](developing/compressing-decompressing-custom-dsc.md)
    + [Configuração e solução de problemas de um cluster de servidores AEM Forms no JEE](developing/configure-server-cluster.md)
    + [Gerar e trabalhar com hashes em PDF forms dinâmicos](developing/hashing-forms.md)
    + [Transmitindo credenciais usando cabeçalhos de Segurança WS](developing/passing-credentials.md)
-   + [Não é possível usar os serviços de Saída, Forms ou DoR (Documento de Registro)](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
+
 

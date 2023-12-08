@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 1630805be43ce9bb52a8fe1bbe50b2b934d4922c
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '3984'
 ht-degree: 0%
 
 ---
@@ -242,12 +242,12 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java™ para ser ex
    <td><p><strong>Definições de patch compatíveis</strong></p> </td>
   </tr>
   <tr>
-   <td>Oracle WebLogic Server 12.2.1 (12c R2) (obsoleto)</td>
+   <td>Oracle WebLogic Server 12.2.1 (12c R2) (obsoleto) <sup>[9]</sup></td>
    <td>A: Suportado</td>
    <td>Service pack e atualizações críticas</td>
   </tr>
   <tr>
-   <td>Oracle WebLogic Server 14c </td>
+   <td>Oracle WebLogic Server 14c <sup>[9]</sup></td>
    <td>A: Suportado</td>
    <td>Service pack e atualizações críticas</td>
   </tr>
@@ -355,6 +355,9 @@ Considere as exceções a seguir ao escolher uma plataforma para configurar o AE
 1. O AEM Forms no JEE não é compatível com o servidor de aplicativos WebSphere® no CentOS.
 1. O AEM Forms no JEE não suporta o controle de acesso baseado em função (RBAC) JBoss®.
 1. O AEM Forms no JEE suporta o SDK Java™ SE 11 (64 bits) do Oracle para servidor de aplicativos somente JBoss® EAP 7.4.
+1. As versões do JDK posteriores à 1.8.0_281 não são compatíveis com o servidor WebLogic. (FORMS-8498)
+1. [!DNL Microsoft® Windows Server 2019] não suporta [!DNL MySQL 5.7] e [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] O não oferece suporte a instalações por chave na mão para o [!DNL Experience Manager Forms 6.5.10.0 and later]. (CQDOC-18312)
+
 
 Além disso, considere os seguintes pontos ao escolher o software para Adobe AEM Forms em implantações JEE:
 
@@ -407,7 +410,7 @@ Além disso, considere os seguintes pontos ao escolher o software para Adobe AEM
   </tr>
   <tr>
    <td>EMC Documentum®</td>
-   <td>7.3</td>
+   <td>7,3</td>
   </tr>
   <tr>
    <td>IBM® FileNet</td>
@@ -419,7 +422,7 @@ Além disso, considere os seguintes pontos ao escolher o software para Adobe AEM
   </tr>
   <tr>
    <td> Cliente do gerenciador de conteúdo IBM® (obsoleto)</td>
-   <td>8.5 </td>
+   <td>8,5 </td>
   </tr>
    <td>Microsoft® Sharepoint </td>
    <td>2019<br /> </td>
