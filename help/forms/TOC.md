@@ -9,10 +9,10 @@ breadcrumb-title: Guia do Forms
 user-guide-description: Crie, gerencie, publique e atualize formulários digitais.
 role: User
 feature: Forms Service
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: cf5da092fabbc7834108dc54d65eb97e160984ce
 workflow-type: tm+mt
-source-wordcount: '3911'
-ht-degree: 4%
+source-wordcount: '3752'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 4%
    + [Notas de versão](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=pt-BR)
    + [Resumo dos novos recursos](using/whats-new.md)
    + [Perguntas frequentes](/help/forms/using/frequently-asked-questions-faq.md)
-   + [Recursos obsoletos](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html?lang=pt-BR)
+   + [Recursos obsoletos](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html)
 + Introdução {#getting-started}
    + [Introdução ao AEM Forms](using/introduction-aem-forms.md)
    + [Introdução à criação de formulários adaptáveis](using/introduction-forms-authoring.md)
@@ -115,7 +115,7 @@ ht-degree: 4%
       + [Fluxos de trabalho centrados no Forms no OSGi](using/forms-workflow-osgi-handling-user-data.md)
       + [Gerenciamento de usuários do Forms](using/user-management-handling-user-data.md)
       + [Fluxos de trabalho do Forms JEE](using/forms-workflow-jee-handling-user-data.md)
-      + [Portal do Forms](using/forms-portal-handling-user-data.md)
+      + [Portal Forms](using/forms-portal-handling-user-data.md)
       + [Gerenciamento de correspondência](using/correspondence-management-handling-user-data.md)
       + [Integração com o Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
       + [Segurança de documentos](/help/forms/using/document-security-handling-user-data.md)
@@ -358,7 +358,7 @@ ht-degree: 4%
    + [Criar ou configurar uma pasta monitorada](using/creating-configure-watched-folder.md)
    + [Usar modelos de email personalizados em uma etapa Atribuir tarefa](using/use-custom-email-template-assign-task-step.md)
    + [Usar metadados em uma notificação por email](using/use-metadata-in-email-notifications.md)
-+ Portal do Forms {#use-forms-portal}
++ Portal Forms {#use-forms-portal}
    + [Personalização de modelos para componentes do portal de formulários](using/customizing-templates-forms-portal-components.md)
    + [Habilitar componentes do portal de formulários](using/enabling-forms-portal-components.md)
    + [Criação de uma página do portal de formulários](using/creating-form-portal-page.md)
@@ -579,7 +579,7 @@ ht-degree: 4%
    + Serviço de informação do sistema {#system-information-service}
       + [Configurar o serviço de informação do sistema](/help/forms/using/admin-help/set-system-information-service.md)
       + [APIs de serviço de informações do sistema](/help/forms/using/admin-help/system-information-service-apis.md)
-+ Relatório de processo {#process-reporting}
++ Relatório do processo {#process-reporting}
    + [Introdução ao Process Reporting](/help/forms/using/process-reporting/introduction-process-reporting.md)
    + [Introdução aos Relatórios de processos](/help/forms/using/process-reporting/install-start-process-reporting.md)
    + [Como Funciona o Relatório de Processo](/help/forms/using/process-reporting/process-reporting-architecture.md)
@@ -589,7 +589,7 @@ ht-degree: 4%
    + [Resolução de Problemas no Relatório do Processo](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Referência do desenvolvedor {#developer-reference}
    + [Noções básicas do desenvolvedor](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
-   + [Linguagem de modelo HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR)
+   + [Linguagem de modelo do HTML](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR)
    + [Plug-in AEM para depurar formulários adaptáveis](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [Referência da API Java do AEM Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)
    + [Referência da API Java do AEM Forms no JEE](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)
@@ -705,4 +705,5 @@ ht-degree: 4%
    + [Configuração e solução de problemas de um cluster de servidores AEM Forms no JEE](developing/configure-server-cluster.md)
    + [Gerar e trabalhar com hashes em PDF forms dinâmicos](developing/hashing-forms.md)
    + [Transmitindo credenciais usando cabeçalhos de Segurança WS](developing/passing-credentials.md)
+   + [Não é possível usar os serviços de Saída, Forms ou DoR (Documento de Registro)](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
 

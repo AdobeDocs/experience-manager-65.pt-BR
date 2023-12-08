@@ -2,10 +2,10 @@
 title: Instruções de instalação de patch do AEM Forms para o AEM Forms
 description: Instruções de instalação do pacote de serviços do AEM Forms para ambientes OSGi e JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 74b4346c77a884878fb8409a773ef7651fb6348c
+source-git-commit: cf5da092fabbc7834108dc54d65eb97e160984ce
 workflow-type: tm+mt
-source-wordcount: '1771'
-ht-degree: 10%
+source-wordcount: '1711'
+ht-degree: 6%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 10%
 
 | Produto | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| Versão | 6.5.18.0 |
+| Versão | 6.5.19.0 |
 | Tipo | Versão do Service Pack |
-| Data | 31 de agosto de 2023 |
+| Data | 7 de dezembro de 2023 |
 | URL de download | [Versões mais recentes do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
 >[!NOTE]
@@ -26,25 +26,32 @@ ht-degree: 10%
 
 ## O que está incluído no Experience Manager Forms 6.5
 
-O Adobe Experience Manager (AEM) Forms Service Pack inclui recursos novos e atualizados, como aprimoramentos solicitados pelo cliente, desempenho, estabilidade e aprimoramentos de segurança. Service packs de lançamento do AEM Forms em intervalos regulares para fornecer os recursos e as melhorias mais recentes. Dependendo da pilha, escolha um dos seguintes caminhos para baixar e instalar o service pack em seu ambiente:
+O Adobe Experience Manager (AEM) Forms Service Pack inclui recursos novos e atualizados, como aprimoramentos solicitados pelo cliente, desempenho, estabilidade e aprimoramentos de segurança. Service packs de lançamento do AEM Forms em intervalos regulares para fornecer os recursos e as melhorias mais recentes. Dependendo do seu conjunto de tecnologias, escolha um dos seguintes caminhos para baixar e instalar o service pack em seu ambiente:
 
 * [Baixar e instalar o Service Pack em um formulário AEM no ambiente JEE](#download-and-install-for-jee-service-pack)
 * [Baixar e instalar o Service Pack em um formulário AEM em um ambiente OSGi](#download-and-install-for-osgi-service-pack)
 
 >[!NOTE]
 >
-> * O Adobe lança um instalador completo a cada sexto service pack. O AEM 6.5 Forms Service Pack 18 (6.5.18.0) é o instalador completo mais recente do JEE. O instalador completo oferece suporte a novas plataformas, enquanto o instalador regular de pacotes de serviços inclui novos recursos, correção de erros e melhorias gerais. Se você estiver executando uma nova instalação ou planejando usar o software mais recente para o seu Forms AEM 6.5 no ambiente JEE, o Adobe recomenda usar o instalador completo do 6.5.18.0 Forms no JEE, lançado em 31 de agosto de 2023, em vez do instalador do 6.5 Forms AEM Forms, lançado em 08 de abril de 2019, ou o Instalador do AEM, lançado em 03 de março de 2022, com o AEM 6.5.18.18.12. Depois de usar o instalador completo, instale o pacote de serviços mais recente.
-> 
+> * O Adobe lança um instalador completo a cada sexto service pack. O AEM 6.5 Forms Service Pack 18 (6.5.18.0) é o instalador completo mais recente do JEE. O instalador completo oferece suporte a novas plataformas, enquanto o instalador regular de pacotes de serviços inclui novos recursos, correção de erros e melhorias gerais. Se você estiver executando uma nova instalação ou planejando usar o software mais recente para o seu Forms AEM 6.5 no ambiente JEE, o Adobe recomenda usar o instalador completo do 6.5.18.0 Forms on JEE, lançado em 31 de agosto de 2023, em vez do instalador do Forms AEM Forms 6.5, lançado em 08 de abril de 2019, ou o Instalador do AEM, lançado em 03 de março de 2022, com o AEM 6.5.18.00.0. Depois de usar o instalador completo, instale o pacote de serviços mais recente.
 > * O recurso do AEM Forms, como o Adaptive Forms, disponível em [QuickStart do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=pt-BR), destinam-se apenas a fins de exploração e avaliação. Para uso em produção, é essencial obter uma licença válida para o AEM Forms.
 
+<!--
 
+## Prerequisites {#prerequisites}
 
+From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available in 64-bit only, therefore you require the latest [Microsoft Visual C++ Redistributable (2015-2022) 64-bit](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) to be installed on Windows Server prior to JEE or OSGi installation.
+
+>[!NOTE]
+> This prerequisite is required in addition to the already existing Microsoft Visual C++ Redistributable 32-bit.
+
+-->
 
 ## Baixar e instalar o Service Pack em um formulário AEM no ambiente JEE {#download-and-install-for-jee-service-pack}
 
 ![Instalação do JEE](/help/forms/using/assets/jeeinstallation.png)
 
-+++1. Faça backup do ambiente existente:
++++1. Faça backup do seu ambiente existente
 
 1. Faça backup do seu [Repositório CRX, esquema de banco de dados e GDS (Global Document Storage, armazenamento global de documentos)](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html).
 1. Faça backup do &lt;*AEM_forms_root*>/implantar pasta.
@@ -55,12 +62,22 @@ O Adobe Experience Manager (AEM) Forms Service Pack inclui recursos novos e atua
 
 +++
 
-+++2.Faça o download do software necessário:
++++2. Baixar o software necessário
 
 * [AEM Forms no Service Pack do JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
-* [AEM Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=pt-BR)
+* [Pacote de serviços do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=pt-BR)
 * [Pacote complementar do Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 * [Servlet de fragmento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
+
++++
+
++++ 3. Instalar pacotes redistribuíveis do Microsoft Visual C++
+
+* Baixe e instale o [Versão de 64 bits dos pacotes redistribuíveis do Microsoft Visual C++ para Visual Studio 2015, 2017, 2019 e 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) no computador em que o AEM 6.5 Forms está instalado.
+
+>[!NOTE]
+>
+> Instale o Redistribuível, mesmo que uma versão anterior esteja instalada, para garantir a disponibilidade da versão mais recente.
 
 +++
 
@@ -91,7 +108,7 @@ Navegue até o diretório apropriado e, em um shell e digite `./aem65_cfp_instal
 
    * Desmarque a opção **Iniciar o Gerenciador de Configurações** antes de clicar em **[!UICONTROL Concluído]**. Executar **Gerenciador de configurações** usando o **ConfigurationManager.bat** arquivo em `[aem-forms root]\configurationManager\bin`.
 
-   * Ou desmarque a opção **Iniciar o Gerenciador de Configurações** antes de clicar em **[!UICONTROL Concluído]**. Antes de executar **Gerenciador de configurações** usar **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, navegue até *`<AEMForms_Install_Dir>\configurationManager\bin`* direcionar e substituir [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) e [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) arquivos.
+   * Ou desmarque a opção **Iniciar o Gerenciador de Configurações** antes de clicar em **[!UICONTROL Concluído]**. Antes de executar **Gerenciador de configurações** usar **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, navegue até *`<AEMForms_Install_Dir>\configurationManager\bin`* e substitua o **ConfigurationManager.lax** e **ConfigurationManager_IPV6.lax** com o mais recente [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) e [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) arquivos.
 
      >[!NOTE]
      >
@@ -137,7 +154,7 @@ Para baixar e instalar o fragmento de servlet:
 
 +++
 
-+++5. Instale o AEM Service Pack
++++5. Instalar o pacote de serviços AEM
 
 1. Reinicie a instância antes da instalação se ela estiver no modo de atualização (quando a instância tiver sido atualizada de uma versão anterior). O Adobe recomenda uma reinicialização se o tempo de atividade atual de uma instância for alto.
 1. Antes de instalar o, faça um instantâneo ou um novo backup de seu [!DNL Experience Manager] instância.
@@ -152,7 +169,7 @@ Há dois métodos diferentes que você pode usar para instalar automaticamente o
 * Coloque o pacote em `../crx-quickstart/install` pasta quando o servidor estiver disponível online.
 O pacote é instalado automaticamente.
 
-* Use o [API HTTP do Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR). Uso  `cmd=install&recursive=true` para que os pacotes aninhados sejam instalados.
+* Use o [API HTTP do Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html). Uso  `cmd=install&recursive=true` para que os pacotes aninhados sejam instalados.
 
   >[!NOTE]
   >
@@ -164,7 +181,7 @@ O pacote é instalado automaticamente.
 
    1. A página de informações do produto (`/system/console/productinfo`) exibe a string da versão atualizada `Adobe Experience Manager (spversion)` em [!UICONTROL Produtos instalados].<!-- UPDATE FOR EACH NEW RELEASE -->
    1. Todos os pacotes OSGi são **[!UICONTROL ATIVO]** ou **[!UICONTROL FRAGMENTO]** no console OSGi (Use o console da Web: `/system/console/bundles`).
-   1. O pacote OSGi `org.apache.jackrabbit.oak-core` é versão 1.22.14 ou posterior (Use o WebConsole: `/system/console/     bundles`).
+   1. O pacote OSGi `org.apache.jackrabbit.oak-core` é versão 1.22.14 ou posterior (Use o WebConsole: `/system/console/bundles`).
 
 +++
 
@@ -182,7 +199,7 @@ O pacote é instalado automaticamente.
 ![Etapas de instalação do OSGi](/help/forms/using/assets/osgiinstallation.png)
 
 
-+++1. Faça backup do ambiente existente:
++++1. Faça backup do seu ambiente existente
 
 1. Faça backup do seu [Esquema de banco de dados e repositório CRX](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html).
 
@@ -192,14 +209,25 @@ Se você instalar o AEM Forms service pack para banco de dados relacional, é ob
 
 +++
 
-+++2.Faça o download do software necessário:
++++2. Baixar o software necessário
 
-* [AEM Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=pt-BR)
+* [Pacote de serviços do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=pt-BR)
 * [Pacote complementar do Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 
 +++
 
-+++3. Instale o AEM Service Pack
++++ 3. Instalar pacotes redistribuíveis do Microsoft Visual C++
+
+* Baixe e instale o [Versão de 64 bits dos pacotes redistribuíveis do Microsoft Visual C++ para Visual Studio 2015, 2017, 2019 e 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) no computador em que o AEM 6.5 Forms está instalado.
+
+>[!NOTE]
+>
+>
+Instale o Redistribuível, mesmo que uma versão anterior esteja instalada, para garantir a disponibilidade da versão mais recente.
+
++++
+
++++4. Instalar o pacote de serviços AEM
 
 1. Reinicie a instância antes da instalação se ela estiver no modo de atualização (quando a instância tiver sido atualizada de uma versão anterior). O Adobe recomenda uma reinicialização se o tempo de atividade atual de uma instância for alto.
 1. Antes de instalar o, faça um instantâneo ou um novo backup de seu [!DNL Experience Manager] instância.
@@ -212,7 +240,7 @@ Se você instalar o AEM Forms service pack para banco de dados relacional, é ob
 Há dois métodos diferentes que você pode usar para instalar automaticamente o [!DNL Experience Manager] pacote de serviços.<!--  UPDATE FOR EACH NEW RELEASE -->
 
 * Coloque o pacote em `../crx-quickstart/install` pasta quando o servidor estiver disponível online. O pacote é instalado automaticamente.
-* Use o [API HTTP do Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR). Uso `cmd=install&recursive=true` para que os pacotes aninhados sejam instalados.
+* Use o [API HTTP do Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html). Uso `cmd=install&recursive=true` para que os pacotes aninhados sejam instalados.
 
   >[!NOTE]
   >
@@ -230,7 +258,7 @@ Há dois métodos diferentes que você pode usar para instalar automaticamente o
 
 +++
 
-+++4. Instalar o pacote complementar do AEM Experience Manager Forms
++++4. Instalar pacote complementar do Adobe Experience Manager Forms (AEM)
 
 1. Verifique se você instalou o [!DNL Experience Manager] pacote de serviços.
 1. Baixe o pacote complementar do Forms correspondente listado em [Versões do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) para seu sistema operacional.
