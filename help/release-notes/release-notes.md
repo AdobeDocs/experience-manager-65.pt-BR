@@ -3,9 +3,9 @@ title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
+source-git-commit: d3f18320ca8a9a100e1aa6344a1c9424d0ff03ca
 workflow-type: tm+mt
-source-wordcount: '4232'
+source-wordcount: '4225'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 * **Novos componentes principais do formulário adaptável**: guias verticais, Termos e condições e Caixa de seleção são adicionados para aprimorar a escalabilidade dos formulários.
    * **[Componente da caixa de seleção](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: o Forms adaptável baseado em Componentes principais agora pode incluir um componente de caixa de seleção. Permite que os usuários façam escolhas binárias, selecionando ou desmarcando uma opção específica. Normalmente, ela aparece como uma pequena caixa que pode ser clicada ou tocada para alternar entre dois estados: marcado e desmarcado. A caixa de seleção é um elemento de formulário comum usado para apresentar uma opção sim/não ou verdadeira/falsa.
 
-   * **[Componente dos Termos e condições](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: o Forms adaptável baseado em Componentes principais agora pode incluir um componente de Termos e condições. Ele permite que os autores de formulários introduzam uma seção específica no formulário em que os usuários recebem os termos, condições ou contratos legais associados ao uso de um serviço, produto ou plataforma. Esse componente foi projetado para informar os usuários sobre as regras, regulamentos e obrigações aos quais eles estão concordando ao enviar o formulário.
+   * **[Componente dos Termos e condições](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: o Forms adaptável baseado em Componentes principais agora pode incluir um componente de Termos e condições. Ela permite que os autores do Forms introduzam uma seção específica no formulário em que os usuários recebem os termos, condições ou contratos legais associados ao uso de um serviço, produto ou plataforma. Esse componente foi projetado para informar os usuários sobre as regras, regulamentos e obrigações aos quais eles estão concordando ao enviar o formulário.
 
      ![Guias verticais, Termos e condições e componentes Caixa de seleção](/help/forms/using/assets/forms-components.png)
 
@@ -58,11 +58,11 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 
 * **[Versão de 64 bits do AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)**: A versão de 64 bits do AEM Forms Designer oferece desempenho, escalabilidade e gerenciamento de memória aprimorados para potencializar a experiência de criação de formulários. Com a arquitetura de 64 bits, você pode executar projetos ainda maiores e mais complexos com facilidade, garantindo fluxos de trabalho de design ininterruptos e eficiência otimizada. Aumente os recursos de design de formulário e abrace o futuro do AEM Forms Designer com esta versão de última geração.
 
-* **[Conectar um Forms adaptável com a lista Microsoft® SharePoint](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: o AEM Forms fornece uma integração OOTB para enviar dados de formulários diretamente para a Lista do SharePoint, permitindo que você use os recursos de Listas do SharePoint. Você pode configurar a Lista de SharePoint do Microsoft como uma fonte de dados para um Modelo de dados de formulário e usar a ação de envio Enviar usando Modelo de dados de formulário para conectar um Formulário adaptável à Lista de SharePoint.
+* **[Conectar um Forms adaptável com a lista Microsoft® SharePoint](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: o AEM Forms fornece uma integração OOTB para enviar dados de formulários diretamente para a Lista do SharePoint, permitindo que você use os recursos de Listas do SharePoint. Você pode configurar a Lista de SharePoint Microsoft® como uma fonte de dados para um Modelo de dados de formulário e usar a ação de envio Enviar usando Modelo de dados de formulário para conectar um Formulário adaptável à Lista de SharePoint.
 
 * **[Suporte para configurar propriedades do documento de registro para fragmentos de formulário adaptável](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)**: Agora é possível personalizar facilmente os fragmentos do Formulário adaptável e seus campos no editor de Formulário adaptável.
 
-* **XMLFM de 64 bits**: a iteração de 64 bits do XMLFM apresenta desempenho aprimorado, escalabilidade e gerenciamento refinado de memória. É o primeiro serviço nativo de 64 bits implantado no lado do servidor. Ao utilizar sua capacidade inerente de acessar recursos de memória significativamente maiores em comparação ao seu equivalente de 32 bits, o XMLFM de 64 bits capacita o manuseio ininterrupto de cargas de trabalho de renderização maiores. Esse marco não só representa um salto no desempenho, como também introduz aprimoramentos importantes na estrutura de serviço nativa no servidor do AEM Forms. Essa atualização possibilita que o servidor do AEM Forms ofereça suporte a qualquer serviço nativo de 64 bits.
+* **XMLFM de 64 bits**: a iteração de 64 bits do XMLFM apresenta desempenho aprimorado, escalabilidade e gerenciamento refinado de memória. É o primeiro serviço nativo de 64 bits implantado no lado do servidor. Ao utilizar sua capacidade inerente de acessar recursos de memória maiores em comparação ao seu equivalente de 32 bits, o XMLFM de 64 bits capacita o manuseio ininterrupto de cargas de trabalho de renderização maiores. Esse marco não só representa um salto no desempenho, como também introduz aprimoramentos importantes na estrutura de serviço nativa no AEM Forms Server. Essa atualização possibilita ao AEM Forms Server oferecer suporte ininterrupto a qualquer serviço nativo de 64 bits.
 
 **Recurso obsoleto**
 
@@ -190,17 +190,17 @@ para
 
 * Quando um usuário adiciona uma barra de ferramentas ao Formulário adaptável, o Rótulo do contêiner de formulário mostra um comportamento irregular, pois não altera para o idioma preferencial que o Autor selecionou para o Forms. (FORMS-11371)
 * No AEM Forms Workspace, o campo suspenso seleciona a primeira opção por padrão na interface do usuário. (FORMS-11346)
-* A configuração de idioma no AEM não terá nenhum efeito se você usar localidades com cinco caracteres e o separador decimal não for renderizado corretamente na letra. (FORMS-11344)
+* A configuração de idioma no AEM não será afetada se você usar localidades com cinco caracteres e o separador decimal não for renderizado corretamente na letra. (FORMS-11344)
 * Quando um usuário gera a saída XML usando o processo do Workbench, ela falha em alguns dos arquivos. (FORMS-11314)
 * Quando um usuário gera a pré-visualização do Documento de registro (DOR) em idiomas diferentes do inglês, ele não funciona. (FORMS-11106)
-* Quando um usuário converte alguns arquivos de imagem com PDFG em uma instância OSGI baseada no Linux com JDK11, ele não converte. (FORMS-11105)
+* Quando um usuário converte alguns arquivos de imagem com PDFG em uma instância OSGI baseada no Linux® com JDK11, ele não converte. (FORMS-11105)
 * Quando o usuário instala o complemento AEM Forms, ele quebra o painel da árvore de conteúdo no AEM Sites. (FORMS-10912)
 * Quando um usuário copia datas usando o leitor de tela NVDA do componente Seletor de datas, ele não lê corretamente. (FORMS-10805) 
 * No editor de regras do Forms, o usuário não pode definir o valor do botão de opção/caixa de seleção quando o tipo de valor de dados é Booleano. (FORMS-10713)
 * Quando um usuário adiciona itens adicionados em um Formulário adaptável, ele é adicionado em ordem inversa a uma lista suspensa. (FORMS-10456)
 * Quando uma lista suspensa é limpa usando o editor de regras, o primeiro valor fornecido ainda aparece mesmo que o valor tenha sido limpo. (FORMS-9963) 
 * Os usuários não podem acessar o Título do formulário usando leitores de tela como o NVDA. (FORMS-8815) 
-* Os usuários não podem acessar o Subtítulo em um Formulário usando leitores de tela, como o NVDA. (FORMS-8814) 
+* Os usuários não podem acessar `Sub Title` em um Formulário usando leitores de tela como o NVDA. (FORMS-8814) 
 * Na fonte da página do formulário html, o atributo da chave de acesso está vazio e não funciona. (FORMS-5753) 
 * Na caixa de diálogo Sobre o Workspace, o texto &quot;Adobe Experience Manager - Forms&quot; é apresentado como texto. (FORMS-5748)
 
@@ -518,7 +518,7 @@ Para resolver o problema, localize o `<AEM_Forms_Installation_dir>\jboss\bin\sta
 * Quando um usuário opta por configurar um campo pela primeira vez em um formulário adaptável, a opção para salvar uma configuração não é exibida no Navegador de propriedades. Selecionar para configurar algum outro campo do Formulário adaptável no mesmo editor resolve o problema.
 * Quando os usuários executam a ação de envio, o envio falha com um erro:
   ` javax.servlet.ServletException: java.lang.NoSuchMethodError`
-Para resolver o problema, [recompile os scripts do Sling, como JSP, Java e Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+Para resolver o problema, [recompile os scripts do Sling, como JSP, Java™ e Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
 
 
 ## Pacotes OSGi e pacotes de conteúdo incluídos{#osgi-bundles-and-content-packages-included}
