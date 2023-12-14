@@ -6,9 +6,9 @@ role: User
 feature: Asset Management
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
 hide: true
-source-git-commit: 8a9ab052f649b1ee74b5b418ecbe2ebe70dddc26
+source-git-commit: 0d30d42e606f1abcf20869c40ca87a78d496e2e7
 workflow-type: tm+mt
-source-wordcount: '5467'
+source-wordcount: '5466'
 ht-degree: 7%
 
 ---
@@ -114,7 +114,7 @@ A Google altera periodicamente a interface do usuário. Dessa forma, as etapas p
 
 Para definir as configurações da Google Cloud:
 
-1. [Criar uma conta do Google](https://accounts.google.com/lifecycle/flows/signup?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp&amp;dsh=S1828858835%3A1702491860449385&amp;theme=glif).
+1. Crie uma conta do Google.
 
    Se você já tiver uma conta do Google, pule para a próxima etapa.
 
