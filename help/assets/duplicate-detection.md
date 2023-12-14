@@ -5,9 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Management,Asset Reports
 exl-id: a403d60e-2193-4835-8f37-4a40f2d01819
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+hide: true
+source-git-commit: 477c62b857ab98d8617c7bd8ba226019d42d330d
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '165'
 ht-degree: 0%
 
 ---
@@ -29,4 +30,4 @@ O recurso de detecção de duplicidade agora está habilitado em [!DNL Assets]. 
 >[!MORELIKETHIS]
 >
 >* [Ativos duplicados no repositório existente (um tutorial de um membro da comunidade)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
-
+>* [Detectar ativos duplicados no AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/detect-duplicate-assets.html)
