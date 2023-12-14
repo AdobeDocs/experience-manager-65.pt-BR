@@ -3,9 +3,9 @@ title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: d3f18320ca8a9a100e1aa6344a1c9424d0ff03ca
+source-git-commit: 2118cecd8e66e41a1ce1c859cf62b1f18f7cb891
 workflow-type: tm+mt
-source-wordcount: '4225'
+source-wordcount: '4270'
 ht-degree: 1%
 
 ---
@@ -212,7 +212,8 @@ para
 * Uma lista não é exibida corretamente nas tags na Adobe Acrobat Reader ou no Adobe Acrobat DC. (LC-3921306)
 * Os níveis de cabeçalho atribuídos corretamente no Forms Designer são alterados aleatoriamente para uma `<P>` no Adobe Acrobat. (LC-3921305) 
 * Em uma tabela, a ID de qualquer objeto não pode ser modificada depois de atribuída. (LC-3921134) 
-* Se as células mescladas estiverem na tabela, nenhuma GUI estará disponível para definir o span (linha e coluna) e o escopo em uma tabela complexa no AEM Forms Designer. (LC-3919532) 
+* Se as células mescladas estiverem na tabela, nenhuma GUI estará disponível para definir o span (linha e coluna) e o escopo em uma tabela complexa no AEM Forms Designer. (LC-3919532)
+  <!--* After applying AEM Service Pack 6.5.15.0 patch installer, notice generation fails intermittently  . (LC-3921530)-->
 
 ### Foundation{#foundation-6519}
 
@@ -517,8 +518,9 @@ Para resolver o problema, localize o `<AEM_Forms_Installation_dir>\jboss\bin\sta
 * Quando um Formulário adaptável é publicado, todas as suas dependências, incluindo políticas, são republicadas, mesmo que nenhuma modificação tenha sido feita nelas. (FORMS-10454)
 * Quando um usuário opta por configurar um campo pela primeira vez em um formulário adaptável, a opção para salvar uma configuração não é exibida no Navegador de propriedades. Selecionar para configurar algum outro campo do Formulário adaptável no mesmo editor resolve o problema.
 * Quando os usuários executam a ação de envio, o envio falha com um erro:
-  ` javax.servlet.ServletException: java.lang.NoSuchMethodError`
-Para resolver o problema, [recompile os scripts do Sling, como JSP, Java™ e Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+  `javax.servlet.ServletException: java.lang.NoSuchMethodError`
+Para resolver o problema, [recompile os scripts do Sling, como JSP, Java e Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+* Quando um usuário tenta selecionar uma fonte para seus documentos PDF no Adminui no caminho Início > Serviços > PDF Generator > Configurações do Adobe PDF, a lista de fontes mostra vazio. O usuário não pode adicionar fontes às listas &quot;Sempre incorporar&quot; e &quot;Nunca incorporar&quot;. (FORMS-12095)
 
 
 ## Pacotes OSGi e pacotes de conteúdo incluídos{#osgi-bundles-and-content-packages-included}
