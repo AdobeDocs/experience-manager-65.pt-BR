@@ -3,9 +3,9 @@ title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 287717e39ff58396de6d63a89e2b3d8fef4e6888
+source-git-commit: 8fc35ac465240cafdce5346f2f7e9ba15c8d1fef
 workflow-type: tm+mt
-source-wordcount: '4288'
+source-wordcount: '4333'
 ht-degree: 1%
 
 ---
@@ -522,7 +522,13 @@ Para resolver o problema, localize o `<AEM_Forms_Installation_dir>\jboss\bin\sta
   `javax.servlet.ServletException: java.lang.NoSuchMethodError`
 Para resolver o problema, [recompile os scripts do Sling, como JSP, Java™ e Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
 * Após instalar o AEM Service Pack 6.5.14.0 e posteriores, os usuários não podem selecionar uma fonte na interface do usuário do JEE Admin para documentos do PDF ao navegar até `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, pois a lista de fontes aparece vazia. (FORMS-12095)
-  <!--The font enumeration fails due to the missing Ps2Pdf service file.-->
+
+#### AEM Forms no JEE
+
+* Vulnerabilidades críticas de segurança foram relatadas para Struts 2 RCE, uma estrutura de aplicativo Web popular e de código aberto para o desenvolvimento de aplicativos Web Java EE. O Adobe lançou [AEM 6.5 Service Pack 19.1 (6.5.19.1)](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md) para lidar com a vulnerabilidade no AEM Forms no JEE.
+
+
+<!--The font enumeration fails due to the missing Ps2Pdf service file.-->
 
 ## Pacotes OSGi e pacotes de conteúdo incluídos{#osgi-bundles-and-content-packages-included}
 
