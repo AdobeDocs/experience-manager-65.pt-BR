@@ -1,20 +1,20 @@
 ---
-title: Reduzindo vulnerabilidades de RCE do Struts 2 para Experience Manager Forms no JEE
-description: Reduzindo vulnerabilidades de RCE do Struts 2 para Experience Manager Forms no JEE
+title: Reduzindo vulnerabilidades do Struts 2 para Experience Manager Forms no JEE
+description: Reduzindo vulnerabilidades do Struts 2 para Experience Manager Forms no JEE
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
-source-git-commit: 531eed9bb6d7792a6da0104b533a505738a64786
+source-git-commit: 5f5fcc10927d62cdfaeb0770c34052ceda02b2e8
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '479'
 ht-degree: 1%
 
 ---
 
 
-# Reduzindo vulnerabilidades de RCE do Struts 2 para Experience Manager Forms {#mitigatin-struts2-rce-vulnerabilities-for-aem-forms}
+# Reduzindo vulnerabilidades do Struts 2 para Experience Manager Forms {#mitigatin-struts2-rce-vulnerabilities-for-aem-forms}
 
 ## Problema
 
@@ -46,20 +46,22 @@ Você pode usar as etapas de mitigação manual para resolver o problema no Serv
    * patch-archive.bat
    * patch-archive.sh
 1. Abra a janela do terminal e navegue até a pasta que contém os arquivos extraídos.
-1. Use a ferramenta de patch manual para pesquisar, listar e substituir todos os arquivos jar struts2. Para pesquisar e substituir o arquivo jar struts2-core-2.5.30 e struts2-core.jar:
+1. Use a ferramenta de patch manual para pesquisar, listar e substituir todos os arquivos jar struts2. A ferramenta requer conectividade com a Internet, pois baixa dependências no tempo de execução. Portanto, antes de executar a ferramenta, verifique se você está conectado à Internet.
+
+Para pesquisar e substituir o arquivo jar struts2-core-2.5.30 e struts2-core.jar:
 
 
 >[!BEGINTABS]
 
 >[!TAB Windows]
 
-1. Execute o comando a seguir para listar todos os arquivos jar struts2. Antes de executar o comando, substitua o caminho no comando acima pelo caminho do servidor AEM Form:
+1. Execute o comando a seguir para listar todos os arquivos jar struts2. Antes de executar o comando, substitua o caminho no comando pelo caminho do servidor do AEM Forms:
 
    ```
    patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
    ```
 
-1. Execute os seguintes comandos na ordem listada para substituição recursiva no local. Antes de executar o comando. Substitua o caminho no comando acima pelo caminho do seu servidor de formulários AEM e o `struts2-core-2.5.33.jar` arquivo.
+1. Execute os seguintes comandos na ordem listada para substituição recursiva no local. Antes de executar o comando. Substitua o caminho no comando pelo caminho do servidor do AEM Forms e o `struts2-core-2.5.33.jar` arquivo.
 
 
    ```
@@ -74,13 +76,13 @@ Você pode usar as etapas de mitigação manual para resolver o problema no Serv
 
 >[!TAB Linux]
 
-1. Execute o comando a seguir para listar todos os arquivos jar struts2. Antes de executar o comando, substitua o caminho no comando acima pelo caminho do servidor AEM Form:
+1. Execute o comando a seguir para listar todos os arquivos jar struts2. Antes de executar o comando, substitua o caminho no comando pelo caminho do servidor do AEM Forms:
 
    ```
    patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
    ```
 
-1. Execute os seguintes comandos na ordem listada para substituição recursiva no local. Antes de executar o comando Substitua o caminho no comando acima pelo caminho do seu servidor de formulários AEM e o `struts2-core-2.5.33.jar` arquivo.
+1. Execute os seguintes comandos na ordem listada para substituição recursiva no local. Antes de executar o comando, substitua o caminho no comando pelo caminho do servidor do AEM Forms e o `struts2-core-2.5.33.jar` arquivo.
 
    ```
    patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace \temp\struts2-core-2.5.33.jar
