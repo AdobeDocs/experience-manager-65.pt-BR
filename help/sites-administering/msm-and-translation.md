@@ -1,19 +1,19 @@
 ---
-title: Administração do site
-description: Saiba como gerenciar sites multilíngues usando o Adobe Experience Manager.
+title: Gerenciador de vários sites e tradução
+description: Saiba como reutilizar o conteúdo em todo o projeto e gerenciar sites multilíngues no Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 4a4f464d4140cbb3882b57786b9003a89b7a9a43
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 32%
+source-wordcount: '365'
+ht-degree: 33%
 
 ---
 
-# Administração do site{#website-administration}
+# Gerenciador de vários sites e tradução {#msm-and-translation}
 
 As seguintes ferramentas administrativas estão disponíveis para gerenciar sites e páginas:
 
