@@ -5,9 +5,10 @@ contentOwner: anujkapo
 content-type: reference
 keywords: Adicionar um manipulador de erros personalizado, adicionar um manipulador de erros padrão, adicionar um manipulador de erros no formulário, usar o serviço de chamada do editor de regras para adicionar um manipulador de erros personalizado, configurar o editor de regras para adicionar um manipulador de erros personalizado, adicionar manipulador de erros personalizado usando o editor de regras
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
-feature: Adaptive Forms
+discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
+feature: Adaptive Forms, Foundation Components
 exl-id: 54a76d5c-d19b-4026-b71c-7b9e862874bc
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '2357'
 ht-degree: 1%

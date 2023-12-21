@@ -7,11 +7,12 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
+feature: Adaptive Forms, Core Components
 exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '1743'
-ht-degree: 20%
+ht-degree: 24%
 
 ---
 
@@ -121,7 +122,7 @@ No envio de um formulário, você pode redirecionar o usuário para outra págin
 
 ## Configurar um esquema ou modelo de dados de formulário para um formulário adaptável {#configure-schema-or-data-model-for-form}
 
-Você pode usar o Modelo de dados de formulário para conectar um formulário a uma Fonte de dados para enviar e receber dados com base nas ações do usuário. Você também pode conectar um formulário a um esquema JSON para receber os dados enviados em um formato predefinido. Com base no requisito, conecte seu formulário a um esquema JSON ou modelo de dados de formulário:
+Você pode usar o modelo de dados do formulário e conectar um formulário a uma fonte de dados para enviar e receber dados com base nas ações do usuário. Também é possível conectar um formulário a um esquema JSON para receber os dados enviados em um formato predefinido. De acordo com os requisitos, conecte o formulário a um esquema JSON ou modelo de dados do formulário:
 
 * [Crie um esquema JSON e faça upload para o seu ambiente](/help/forms/using/adaptive-form-json-schema-form-model.md)
 * [Criar um modelo de dados de formulário](/help/forms/using/create-form-data-models.md)

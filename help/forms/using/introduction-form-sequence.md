@@ -5,12 +5,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 1333c6cb-15cc-429b-a13e-5d23afdee69a
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 30%
+source-wordcount: '575'
+ht-degree: 26%
 
 ---
 
@@ -47,7 +47,7 @@ Considere um caso de uso em que você precisa criar uma sequência para etapas d
       * Serviços de assinatura eletrônica da Adobe Document Cloud
       * Assinatura escrita
 
-   * **Confirmação**: contém o componente **Resumo** que exibe uma mensagem confirmando o envio do formulário depois que um usuário o assina e atinge a etapa de Confirmação (Resumo) da sequência. Os autores podem configurar o texto do componente Resumo: mostrar uma mensagem de agradecimento, mostrar um link para o PDF gerado e assim por diante.
+   * **Confirmação**: contém o componente **Resumo** que exibe uma mensagem confirmando o envio do formulário depois que um usuário o assina e atinge a etapa de Confirmação (Resumo) da sequência. Os autores podem configurar o texto do componente Resumo, mostrar uma mensagem de agradecimento, mostrar um link para o PDF gerado e assim por diante.
 
 1. Selecione o layout do painel raiz como **[!UICONTROL Assistente]**.
 1. Complete as etapas restantes para criar o modelo de formulário. Consulte [Criação de um modelo de formulário adaptável personalizado](../../forms/using/custom-adaptive-forms-templates.md).

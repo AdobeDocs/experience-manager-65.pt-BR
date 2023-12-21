@@ -5,12 +5,12 @@ contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-feature: Mobile Forms
+feature: HTML5 Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: 524475c8f9dbd02bae30ecd558a376505fbe0aed
 workflow-type: tm+mt
-source-wordcount: '3896'
-ht-degree: 7%
+source-wordcount: '3916'
+ht-degree: 5%
 
 ---
 
@@ -323,7 +323,7 @@ As propriedades JavaScript, FormCalc e os métodos compatíveis com formulários
    <td>Nenhum</td>
   </tr>
   <tr>
-   <td>caption</td>
+   <td>legenda</td>
    <td>O objeto de legenda descreve um rótulo descritivo associado a um objeto de design de formulário.<br /> </td>
    <td>Nenhum</td>
   </tr>
@@ -513,7 +513,7 @@ As propriedades JavaScript, FormCalc e os métodos compatíveis com formulários
    <td>Não é permitido definir o nome usando scripts no HTML.</td>
   </tr>
   <tr>
-   <td>parent</td>
+   <td>pai</td>
    <td>Obtém o pai deste nó.</td>
    <td>Nenhum</td>
   </tr>
@@ -716,7 +716,7 @@ As propriedades JavaScript, FormCalc e os métodos compatíveis com formulários
    <td> </td>
   </tr>
   <tr>
-   <td>caption</td>
+   <td>legenda</td>
    <td>O objeto de legenda descreve um rótulo descritivo associado a um objeto de design de formulário.</td>
    <td> </td>
   </tr>
@@ -944,7 +944,7 @@ As propriedades JavaScript, FormCalc e os métodos compatíveis com formulários
    <td>Nenhum</td>
   </tr>
   <tr>
-   <td>caption</td>
+   <td>legenda</td>
    <td>O objeto de legenda descreve um rótulo descritivo associado a um objeto de design de formulário.<br /> </td>
    <td>Nenhum</td>
   </tr>
@@ -1152,7 +1152,7 @@ FormCalc é uma linguagem específica do XFA para criar lógica centrada no form
    <td>enquanto (i lt 5) do i = i + 1 endwhile</td>
   </tr>
   <tr>
-   <td> para </td>
+   <td>para</td>
    <td><br type="_moz" /> </td>
    <td>para i = 100 para 1 <br /> do s = s + i endfor</td>
   </tr>
@@ -1175,14 +1175,14 @@ FormCalc é uma linguagem específica do XFA para criar lógica centrada no form
 
    1. Abs()
    1. Avg()
-   1. Célula()
-   1. Contagem()
-   1. Piso()
+   1. Ceil()
+   1. Count()
+   1. Floor()
    1. Max()
-   1. Mín()
+   1. Min()
    1. Mod()
-   1. Arrendondar()
-   1. Soma()
+   1. Round()
+   1. Sum()
 
 1. **Funções científicas**
 
@@ -1192,9 +1192,9 @@ FormCalc é uma linguagem específica do XFA para criar lógica centrada no form
    1. Atan2()
    1. Cos()
    1. Sin()
-   1. Bronze()
+   1. Tan()
    1. Exp()
-   1. Registro()
+   1. Log()
    1. Pow()
    1. Sqrt()
    1. Deg2Rad()
@@ -1212,27 +1212,27 @@ FormCalc é uma linguagem específica do XFA para criar lógica centrada no form
    1. Ppmt()
    1. Pv()
    1. Rate()
-   1. Termo()
+   1. Term()
 
 1. **Funções lógicas**
 
    1. Choose()
    1. If()
    1. Oneof()
-   1. Dentro()
+   1. Within()
 
 1. **Funções de string**
 
-   1. Em()
+   1. At()
    1. Concat()
-   1. Esquerda()
+   1. Left()
    1. Len()
    1. Lower()
    1. Ltrim()
-   1. Substituir()
-   1. Direita()
+   1. Replace()
+   1. Right()
    1. Rtrim()
-   1. Espaço()
+   1. Space()
    1. Stuff()
    1. Substr()
    1. Upper()
@@ -1240,7 +1240,7 @@ FormCalc é uma linguagem específica do XFA para criar lógica centrada no form
 
 1. **Data e hora**
 
-   1. Data()
+   1. Date()
    1. num2date()
    1. DateFmt()
 
@@ -1342,7 +1342,7 @@ Os seguintes eventos XFA do lado do cliente são compatíveis:
 * Validar
 * Calcular
 * Clique em
-* Insira
+* Enter
 * Sair
 * Alterar
 * ValidationState

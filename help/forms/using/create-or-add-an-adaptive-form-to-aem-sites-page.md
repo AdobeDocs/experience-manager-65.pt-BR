@@ -2,11 +2,11 @@
 title: Criar ou adicionar um formulário adaptável à página do AEM Sites
 description: Descubra como criar ou adicionar facilmente um formulário adaptável à sua página do AEM Sites. Conheça as técnicas passo a passo e as práticas recomendadas para integrar formulários dinâmicos e personalizáveis ao seu site, otimizando suas experiências digitais para obter o máximo impacto.
 Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: dcf023a1-8735-48cb-b3ea-d17357eeedaf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
 workflow-type: tm+mt
-source-wordcount: '2901'
+source-wordcount: '2881'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ Você pode aproveitar ao máximo esse recurso utilizando as seguintes opções:
 * Ao criar ou adicionar um formulário usando o componente de incorporação do formulário adaptável, os formulários são submetidos a tradução e localização usando o fluxo de tradução do AEM Forms. Nesse caso, um único formulário é mantido e referenciado em todas as cópias de idioma das páginas do Sites. O componente de Formulário incorporado adaptável não fornece acesso a vários recursos de páginas do AEM Sites, como o, controle de versão, direcionamento, tradução e gerenciador de vários sites.
 
 
-## Antes de você iniciar {#before-you-start}
+## Antes de começar {#before-you-start}
 
 +++  Ativar os Componentes principais adaptáveis do Forms para o seu ambiente
 
@@ -200,12 +200,12 @@ Uma ação enviar permite escolher o destino dos dados capturados por meio de um
 
 ## Configurar um esquema ou modelo de dados de formulário para um formulário {#configure-schema-or-data-model-for-form}
 
-Você pode usar o Modelo de dados de formulário para conectar um formulário a uma Fonte de dados para enviar e receber dados com base nas ações do usuário. Você também pode conectar um formulário a um esquema JSON para receber os dados enviados em um formato predefinido.
+Você pode usar o modelo de dados do formulário e conectar um formulário a uma fonte de dados para enviar e receber dados com base nas ações do usuário. Você também pode conectar um formulário a um esquema JSON para receber os dados enviados em um formato predefinido.
 
 Antes de conectar um formulário a um esquema ou modelo de dados de formulário
 
 * [Crie um esquema JSON e faça upload para o seu ambiente](adaptive-form-json-schema-form-model.md)
-* [Criar um modelo de dados de formulário](create-form-data-models.md)
+* [Criar um modelo de dados do formulário](create-form-data-models.md)
 
 Para configurar um Esquema JSON ou um Modelo de dados de formulário para seu formulário:
 
@@ -235,7 +235,7 @@ Você pode usar o serviço de Preenchimento do modelo de dados de formulário pa
 1. Abra a Árvore de conteúdo e selecione a **[!UICONTROL Contêiner adaptável do Forms]** que hospeda o formulário adaptável. Uma página do AEM Sites pode hospedar vários Forms adaptáveis. Portanto, selecione cuidadosamente o Contêiner adaptável correto do Forms.
 1. Clique nas propriedades do Contêiner de formulário adaptável ![Propriedades do contêiner de formulário adaptável](/help/forms/using/assets/configure-icon.svg) ícone. A caixa de diálogo Contêiner de formulário adaptável para configurar os Modelos de dados é aberta.
    ![Preencher o editor de página do serviço fdm aem sites](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
-1. Selecionar um modelo de dados do formulário. Abra o **[!UICONTROL Básico]** guia. No serviço de preenchimento, selecione **[!UICONTROL Serviço de Preenchimento de Rascunho do Portal do Forms]**.
+1. Selecione um modelo de dados de formulário. Abra o **[!UICONTROL Básico]** guia. No serviço de preenchimento, selecione **[!UICONTROL Serviço de Preenchimento de Rascunho do Portal do Forms]**.
 1. Clique em **[!UICONTROL Concluído]**.
 
 ## Redirecionar o usuário para um novo usuário no envio do formulário ou mostrar uma mensagem de agradecimento
