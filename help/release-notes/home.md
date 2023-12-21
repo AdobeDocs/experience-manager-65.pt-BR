@@ -2,10 +2,10 @@
 title: Notas de versão do Adobe Experience Manager 6.5
 description: As Notas de versão do AEM abrangem informações importantes sobre a versão mais recente do AEM, incluindo novidades, plataformas compatíveis, recursos obsoletos e removidos e problemas conhecidos.
 exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 43%
+source-wordcount: '257'
+ht-degree: 35%
 
 ---
 
@@ -27,7 +27,6 @@ As Notas de versão do AEM abrangem informações importantes sobre a versão ma
 |--- |---|
 | [Guia do usuário do Assets](/help/assets/home.md) | Crie, gerencie, entregue e otimize ativos digitais. |
 | [Guia do usuário do Forms](/help/forms/home.md) | Este guia descreve como criar, gerenciar, publicar e atualizar formulários digitais. |
-| [Guia do usuário do Communities](/help/communities/home.md) | Crie experiências online, como fóruns, grupos de usuários, recursos de aprendizado e outros recursos sociais. |
 | [Guia de administração](/help/sites-administering/home.md) | Entender como administrar AEM |
 | [Guia de criação](/help/sites-authoring/home.md) | Este guia explica os conceitos de criação no AEM. |
 | [Guia de criação da interface clássica](/help/sites-classic-ui-authoring/home.md) | Este guia explica os conceitos de criação no AEM na interface clássica do usuário. |
@@ -36,7 +35,6 @@ As Notas de versão do AEM abrangem informações importantes sobre a versão ma
 | [Guia do usuário para desenvolvimento](/help/sites-developing/home.md) | Saiba como criar sua instância de AEM. |
 | [Guia do usuário de gerenciamento](/help/managing/home.md) | Este guia descreve como gerenciar um projeto AEM com sucesso. |
 | [Guia do usuário do Commerce](/help/commerce/home.md) | Saiba mais sobre o Commerce integration framework no AEM. |
-| [Guia do usuário do Mobile](/help/mobile/home.md) | Este guia descreve como criar e gerenciar conteúdo para aplicativos móveis. |
 
 ## Principais recursos do AEM
 

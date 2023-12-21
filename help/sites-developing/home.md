@@ -2,10 +2,10 @@
 title: Guia do usuário para desenvolvimento no AEM 6.5
 description: Saiba como criar sua instância de AEM. Saiba mais sobre a plataforma e os componentes e encontre informações sobre ferramentas de desenvolvimento e personalização.
 exl-id: 4413f5e8-7e52-4ea7-8be3-5717b780a6e2
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 18%
+source-wordcount: '262'
+ht-degree: 15%
 
 ---
 
@@ -27,7 +27,6 @@ Saiba como criar sua instância de AEM. Saiba mais sobre a plataforma e os compo
 | [Notas de versão](/help/release-notes/home.md) | Fornece informações importantes sobre a versão mais recente do AEM, incluindo novidades, plataformas compatíveis, recursos obsoletos e removidos e problemas conhecidos. |
 | [Guia do usuário do Assets](/help/assets/home.md) | Saiba como criar, gerenciar, entregar e otimizar ativos digitais. |
 | [Guia do usuário do Forms](/help/forms/home.md) | Este guia descreve como criar, gerenciar, publicar e atualizar formulários digitais. |
-| [Guia do usuário do Communities](/help/communities/home.md) | Crie experiências online, como fóruns, grupos de usuários, recursos de aprendizado e outros recursos sociais. |
 | [Guia de administração](/help/sites-administering/home.md) | Entender como administrar AEM |
 | [Guia de criação](/help/sites-authoring/home.md) | Este guia explica os conceitos de criação no AEM. |
 | [Guia de criação da interface clássica](/help/sites-classic-ui-authoring/home.md) | Este guia explica os conceitos de criação no AEM na interface clássica do usuário. |
@@ -36,7 +35,6 @@ Saiba como criar sua instância de AEM. Saiba mais sobre a plataforma e os compo
 | [Guia do usuário para desenvolvimento](/help/sites-developing/home.md) | Saiba como criar sua instância de AEM. |
 | [Guia do usuário de gerenciamento](/help/managing/home.md) | Este guia descreve como gerenciar um projeto AEM com sucesso. |
 | [Guia do usuário do Commerce](/help/commerce/home.md) | Saiba mais sobre o Commerce integration framework no AEM. |
-| [Guia do usuário do Mobile](/help/mobile/home.md) | Este guia descreve como criar e gerenciar conteúdo para aplicativos móveis. |
 
 ## Principais recursos do AEM
 

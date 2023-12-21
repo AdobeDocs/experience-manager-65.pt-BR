@@ -2,10 +2,10 @@
 title: AEM Content and Commerce
 description: Entenda como usar e administrar o AEM Content and Commerce (Conteúdo e Comércio do), com nossos artigos úteis sobre integrações e como começar a usar o AEM Storefront.
 exl-id: b5b074e7-6da7-49ed-9cdb-f7c37d08e08c
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 29%
+source-wordcount: '259'
+ht-degree: 13%
 
 ---
 
@@ -16,8 +16,9 @@ Entenda como usar e administrar o AEM Content and Commerce (Conteúdo e Comérci
 >[!NOTE]
 >
 >Para Conteúdo e Comércio de AEM com AEM as a Cloud Service, consulte [Comércio e conteúdo AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=pt-BR).
+>
 
-## Principais artigos do Commerce {#key-articles}
+## Artigos-chave sobre comércio {#key-articles}
 
 * [Introdução ao comércio de AEM](/help/commerce/cif/introduction.md)
 * [Introdução](/help/commerce/cif/getting-started.md)
@@ -29,7 +30,6 @@ Entenda como usar e administrar o AEM Content and Commerce (Conteúdo e Comérci
 | [Notas de versão](/help/release-notes/home.md) | Fornece informações importantes sobre a versão mais recente do AEM, incluindo novidades, plataformas compatíveis, recursos obsoletos e removidos e problemas conhecidos. |
 | [Guia do usuário do Assets](/help/assets/home.md) | Saiba como criar, gerenciar, entregar e otimizar ativos digitais. |
 | [Guia do usuário do Forms](/help/forms/home.md) | Este guia descreve como criar, gerenciar, publicar e atualizar formulários digitais. |
-| [Guia do usuário do Communities](/help/communities/home.md) | Crie experiências online, como fóruns, grupos de usuários, recursos de aprendizado e outros recursos sociais. |
 | [Guia de administração](/help/sites-administering/home.md) | Entender como administrar AEM |
 | [Guia de criação](/help/sites-authoring/home.md) | Este guia explica os conceitos de criação no AEM. |
 | [Guia de criação da interface clássica](/help/sites-classic-ui-authoring/home.md) | Este guia explica os conceitos de criação no AEM na interface clássica do usuário. |
@@ -37,7 +37,6 @@ Entenda como usar e administrar o AEM Content and Commerce (Conteúdo e Comérci
 | [Guia de implementação do usuário](/help/sites-deploying/home.md) | Este guia mostra as noções básicas do AEM. |
 | [Guia do usuário para desenvolvimento](/help/sites-developing/home.md) | Saiba como criar sua instância de AEM. |
 | [Guia do usuário de gerenciamento](/help/managing/home.md) | Este guia descreve como gerenciar um projeto AEM com sucesso. |
-| [Guia do usuário do Mobile](/help/mobile/home.md) | Este guia descreve como criar e gerenciar conteúdo para aplicativos móveis. |
 
 ## Principais recursos do AEM
 

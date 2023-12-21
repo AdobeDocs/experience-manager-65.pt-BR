@@ -7,10 +7,11 @@ breadcrumb-title: Guia do Communities
 user-guide-description: Crie experiências online, como fóruns, grupos de usuários, recursos de aprendizado e outros recursos sociais.
 feature: Communities
 role: User
-source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
+hide: true
+source-git-commit: e0db340b4fd4e4f7fe7ed623fb2ee9f1b789e39e
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 10%
+source-wordcount: '423'
+ht-degree: 11%
 
 ---
 
@@ -21,7 +22,6 @@ ht-degree: 10%
 + Introdução ao AEM Communities {#introduction}
    + [Sites de comunidades](administer-landing.md)
    + [Visão geral do AEM Communities](overview.md)
-   + [Notas de versão do AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/communities-release-notes.html)
    + [Introdução ao AEM Communities](getting-started.md)
    + [Configuração inicial](setup.md)
    + [Criar um novo site da comunidade](create-site.md)
@@ -34,7 +34,6 @@ ht-degree: 10%
    + [Configuração do Dispatcher para comunidades](dispatcher.md)
 + Administração {#administer}
    + [Serviço de gerenciamento de usuários e UGC no AEM Communities](user-ugc-management-service.md)
-   + [Sites de comunidades](https://experienceleague.adobe.com/docs/experience-manager-65/communities/introduction/administer-landing.html)
    + [Consoles das comunidades](consoles.md)
    + [Configuração do Analytics para recursos das comunidades](analytics.md)
    + [Configuração de mensagens](messaging.md)
@@ -153,4 +152,3 @@ ht-degree: 10%
    + [Tendências da atividade](trends.md)
    + [Uso da Social Tag Cloud](tagcloud.md)
    + [Usando a votação](voting.md)
-   + [Criar uma página de exemplo](https://experienceleague.adobe.com/docs/experience-manager-65/communities/develop/create-sample-page.html)

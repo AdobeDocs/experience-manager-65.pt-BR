@@ -2,10 +2,10 @@
 title: Guia de introdução do Headless
 description: Com este guia rápido de introdução, conheça os recursos headless avançados do Adobe Experience Manager (AEM) 6.5, como modelos de conteúdo, fragmentos de conteúdo e a API do GraphQL.
 exl-id: 55ebd893-b3cc-47c5-ad84-46df984197fb
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 487136be68e04fd74affe43790587b37d4c3d3ef
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 42%
+ht-degree: 39%
 
 ---
 
@@ -23,7 +23,7 @@ Os Guias de introdução headless apresentam um caminho simples para criar, gere
 >
 >Este guia de introdução presume que você tenha conhecimento sobre a tecnologia headless e do AEM.
 >
->Se você é novo no AEM ou no headless, consulte a [Jornadas de documentação do Headless](/help/journey-headless/home.md) para obter uma introdução completa sobre headless e como AEM oferece suporte a ele.
+>Se você é novo no AEM ou no headless, consulte a [Jornadas de documentação do Headless](/help/journey-headless/overview.md) para obter uma introdução completa sobre headless e como AEM oferece suporte a ele.
 
 ## Público {#audience}
 

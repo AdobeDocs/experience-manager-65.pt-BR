@@ -5,10 +5,10 @@ user-guide-title: Guia do Assets
 feature: Asset Management
 role: User, Architect, Admin
 exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 24%
+source-wordcount: '250'
+ht-degree: 11%
 
 ---
 
@@ -28,7 +28,6 @@ Crie, gerencie, processe e distribua ativos digitais no Experience Manager. Esse
 |--- |---|
 | [Notas de versão](/help/release-notes/home.md) | Fornece informações importantes sobre a versão mais recente, incluindo novidades, plataformas compatíveis, recursos obsoletos e removidos e problemas conhecidos |
 | [Guia do usuário do Forms](/help/forms/home.md) | Este guia descreve como criar, gerenciar, publicar e atualizar formulários digitais. |
-| [Guia do usuário do Communities](/help/communities/home.md) | Crie experiências online, como fóruns, grupos de usuários, recursos de aprendizado e outros recursos sociais. |
 | [Guia de administração](/help/sites-administering/home.md) | Entenda como administrar o Adobe Experience Manager. |
 | [Guia de criação](/help/sites-authoring/home.md) | Este guia explica os conceitos de criação no Experience Manager. |
 | [Guia de criação da interface clássica](/help/sites-classic-ui-authoring/home.md) | Este guia explica os conceitos de criação em Experience Manager na interface clássica do usuário. |
@@ -36,9 +35,7 @@ Crie, gerencie, processe e distribua ativos digitais no Experience Manager. Esse
 | [Guia de implementação do usuário](/help/sites-deploying/home.md) | Este guia mostra as noções básicas do Experience Manager. |
 | [Guia do usuário para desenvolvimento](/help/sites-developing/home.md) | Saiba como criar sua implantação de Experience Manager. |
 | [Guia do usuário de gerenciamento](/help/managing/home.md) | Este guia descreve como gerenciar um projeto Experience Manager com sucesso. |
-| [Guia do usuário do Commerce](/help/commerce/home.md) | Saiba mais sobre a Commerce Integration Framework no Experience Manager. |
-| [Guia do usuário do Mobile](/help/mobile/home.md) | Este guia descreve como criar e gerenciar conteúdo para aplicativos móveis. |
-
+| [Guia do usuário do Commerce](/help/commerce/home.md) | Saiba mais sobre o Commerce integration framework no Experience Manager. |
 
 ## Chave [!DNL Experience Manager] recursos
 
