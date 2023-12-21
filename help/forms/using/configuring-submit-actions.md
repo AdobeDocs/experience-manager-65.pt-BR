@@ -6,9 +6,9 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 9f88eeb6770c59f7a52db30f19f3a1a78cbc401b
+source-git-commit: 23dd80f0555ddec1ca422b13fbf0d45acf5ab6a8
 workflow-type: tm+mt
-source-wordcount: '2581'
+source-wordcount: '2580'
 ht-degree: 1%
 
 ---
@@ -169,14 +169,14 @@ Após uma configuração bem-sucedida, use o [Chamar um fluxo do Microsoft® Pow
 
 ## Enviar para a Lista Microsoft® SharePoint{#submit-to-sharedrive}
 
-A variável **[!UICONTROL Enviar para o SharePoint]** A ação enviar conecta um formulário adaptável com um armazenamento Microsoft® SharePoint. É possível enviar o arquivo de dados de formulário, os anexos ou o Documento de Registro para o Armazenamento do Microsoft® Sharepoint conectado.
+A variável **[!UICONTROL Enviar para o SharePoint]** a ação enviar conecta um formulário adaptável com um Microsoft® SharePoint Storage. É possível enviar o arquivo de dados de formulário, os anexos ou o Documento de Registro para o Armazenamento do Microsoft® Sharepoint conectado.
 
 ### Conectar um formulário adaptável à lista Microsoft® SharePoint {#connect-af-sharepoint-list}
 
-Para usar o [!UICONTROL Enviar para a lista do SharePoint] Enviar ação em um formulário adaptável:
+Para conectar um formulário adaptável à lista Microsoft® SharePoint:
 
 1. [Criar uma configuração de lista do SharePoint](#create-sharepoint-list-configuration): ele conecta o AEM Forms ao seu Armazenamento de lista do Microsoft® Sharepoint.
-1. [Usar o Enviar usando o Modelo de dados de formulário em um Formulário adaptável](#use-submit-using-fdm): ele conecta seu formulário adaptável ao Microsoft® SharePoint configurado.
+1. [Use o **Enviar usando modelo de dados do formulário** enviar ação em um Formulário adaptável](#use-submit-using-fdm): envia seus dados de Formulário adaptável para o Microsoft® SharePoint configurado.
 
 #### Criar uma configuração de lista do SharePoint {#create-sharepoint-list-configuration}
 
