@@ -1,11 +1,11 @@
 ---
 title: Registrar uma transação para implementações personalizadas
-description: Usar a API TransactionRecorder para registrar ações que não são contabilizadas como transações automaticamente
+description: Use a API TransactionRecorder para registrar ações que não são contabilizadas como transações automaticamente.
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
-exl-id: a1d97b15-14a6-4c3d-bdd3-6366f7acdfc8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+feature: Transaction Reports
+source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 0%

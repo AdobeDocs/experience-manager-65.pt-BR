@@ -5,11 +5,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 docset: aem65
-exl-id: edaf12be-473f-4175-b4e0-549b41159a55
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+feature: Document Services
+source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
 workflow-type: tm+mt
-source-wordcount: '1022'
-ht-degree: 1%
+source-wordcount: '1003'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +28,7 @@ O serviço Forms com código de barras é compatível com o seguinte **bidimensi
 O serviço também oferece suporte ao seguinte **unidimensional** simbologias fornecidas como documentos de TIFF ou PDF digitalizados:
 
 * Codabar
-* Code128
+* Código128
 * Código 3 de 9
 * EAN13
 * EAN8
@@ -91,7 +91,7 @@ O serviço Forms com código de barras retorna o seguinte documento XML após de
 
 ### Fluxos de trabalho que usam formulários com código de barras {#workflows-that-use-barcoded-forms}
 
-Os autores de formulários criam formulários interativos com códigos de barras usando o Designer. (Consulte [Ajuda do Designer](https://www.adobe.com/go/learn_aemforms_designer_63_pt).) Quando um usuário preenche um formulário com código de barras usando o Adobe Reader ou o Acrobat, o código de barras é atualizado automaticamente para codificar os dados do formulário.
+Os autores de formulários criam formulários interativos com códigos de barras usando o Designer. (Consulte [Ajuda do Designer](https://www.adobe.com/go/learn_aemforms_designer_63).) Quando um usuário preenche um formulário com código de barras usando o Adobe Reader ou o Acrobat, o código de barras é atualizado automaticamente para codificar os dados do formulário.
 
 O serviço Forms com código de barras é útil para converter dados existentes em papel em formato eletrônico. Por exemplo, quando um formulário com código de barras é preenchido e impresso, a cópia impressa pode ser digitalizada e usada como entrada para o serviço Forms com código de barras.
 
@@ -124,7 +124,7 @@ Além disso, considere as seguintes limitações ao usar o serviço Forms com c�
 * O serviço oferece suporte total a AcroForms e formulários estáticos que contêm códigos de barras 2D salvos usando o Adobe Reader ou o Acrobat. No entanto, para códigos de barras 1D, nivele o formulário ou forneça-o como PDF ou documento TIFF digitalizado.
 * Os formulários XFA dinâmicos não são totalmente compatíveis. Para decodificar corretamente códigos de barras 1D e 2D em um formulário dinâmico, nivele o formulário ou forneça-o como um documento PDF ou TIFF digitalizado.
 
-Além disso, o serviço pode decodificar qualquer código de barras que use a simbologia compatível se as limitações acima forem observadas. Para obter mais informações sobre como criar formulários com código de barras interativos, consulte [Ajuda do Designer](https://www.adobe.com/go/learn_aemforms_designer_63_pt).
+Além disso, o serviço pode decodificar qualquer código de barras que use a simbologia compatível se as limitações acima forem observadas. Para obter mais informações sobre como criar formulários com código de barras interativos, consulte [Ajuda do Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 ## Configurar propriedades do serviço   {#configureproperties}
 
