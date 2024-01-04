@@ -2,10 +2,10 @@
 title: Recursos obsoletos e removidos na versão Adobe Experience Manager 6.5.
 description: Notas de versão específicas para recursos obsoletos e removidos do Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: bbd18486a77d7b46454aacff23147b38860bd895
+source-git-commit: b0ba4e0c91d3c40acf5bf7336ba2af0c8c01cd32
 workflow-type: tm+mt
-source-wordcount: '1741'
-ht-degree: 12%
+source-wordcount: '1720'
+ht-degree: 10%
 
 ---
 
@@ -42,7 +42,7 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
 | Gerenciador dinâmico de tags (DTM) | A integração com o DTM está obsoleta. | Alterne para usar o Adobe Experience Platform Launch como um gerenciador de tags. |   |
 | Adobe Target | Com a adição da capacidade de o AEM se conectar ao serviço da Adobe Target usando o [!DNL Adobe I/O] com base na API do Adobe Target Standard (API Rest) no AEM 6.5, o modo da API do Target Classic (XML) está obsoleto. | Reconfigure a integração para [usar a nova API](/help/sites-administering/target.md). |  |
 | Adobe Target | Usar o `mbox.js` A integração baseada em no Adobe Target no AEM está obsoleta. | Alternar para uso `at.js` 1.x |  |
-| Commerce | [DESCANSO CIF](https://github.com/adobe/commerce-cif-api) O foi fornecido em 2018 como um conjunto de microsserviços para permitir integrações entre AEM e mecanismos de comércio. Depois que a Adobe adquiriu a Adobe Commerce (anteriormente Magento) em meados de 2018, a Adobe decidiu mudar sua abordagem por dois motivos. O Commerce tem seu próprio conjunto de APIs do Commerce (REST e GraphQL) e não é uma boa prática manter dois conjuntos de APIs. As tendências de mercado indicaram que os clientes estavam migrando para o GraphQL, porque essa é uma maneira mais eficiente de consultar dados. Em 2019, o Adobe lançou o novo Commerce integration framework usando as APIs GraphQL do Commerce como fonte da verdade. A Adobe não planeja fazer nenhum investimento adicional no CIF REST. Os clientes são aconselhados a usar a solução de substituição. | Para integrações AEM-Commerce, alterne para [Arquétipo CIF do AEM](https://github.com/adobe/aem-cif-project-archetype) e [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components). Consulte Integração entre AEM e Adobe Commerce [uso da Commerce Integration Framework](/help/commerce/cif/integrating/magento.md). O suporte para integrações de terceiros (que não sejam do Commerce) com a nova abordagem está no roteiro do Adobe. |  |
+| Commerce | [DESCANSO CIF](https://github.com/adobe/commerce-cif-api) O foi fornecido em 2018 como um conjunto de microsserviços para permitir integrações entre AEM e mecanismos de comércio. Depois que a Adobe adquiriu a Adobe Commerce (anteriormente Magento) em meados de 2018, a Adobe decidiu mudar sua abordagem por dois motivos. O Commerce tem seu próprio conjunto de APIs do Commerce (REST e GraphQL) e não é uma boa prática manter dois conjuntos de APIs. As tendências de mercado indicaram que os clientes estavam migrando para o GraphQL, porque essa é uma maneira mais eficiente de consultar dados. Em 2019, o Adobe lançou o novo Commerce integration framework usando as APIs GraphQL do Commerce como fonte da verdade. A Adobe não planeja fazer nenhum investimento adicional no CIF REST. Os clientes são aconselhados a usar a solução de substituição. | Para integrações AEM-Commerce, alterne para [Arquétipo CIF do AEM](https://github.com/adobe/aem-cif-project-archetype) e [AEM Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components). Consulte Integração entre AEM e Adobe Commerce [uso do Commerce integration framework](/help/commerce/cif/integrating/magento.md). O suporte para integrações de terceiros (que não sejam do Commerce) com a nova abordagem está no roteiro do Adobe. |  |
 | Componentes (AEM Sites) | O Adobe não planeja fazer melhorias adicionais na maioria dos Componentes de base armazenados no `/libs/foundation/components`. Procure o `cq:deprecated` e `cq:deprecatedReason` propriedade na pasta de componentes. O AEM 6.5 tem os Componentes de base incluídos, e os clientes que estão atualizando de versões anteriores podem continuar usando-os como estão. Além disso, os Componentes de base são compatíveis, embora tenham se tornado obsoletos. | A Adobe recomenda usar os Componentes principais para projetos futuros. Os sites existentes podem permanecer como estão ou usar o [AEM Modernizar conjunto de ferramentas](https://github.com/adobe/aem-modernize-tools) para refatorar o site para usar os Componentes principais. |  |
 | Componentes (AEM Sites) | Componentes do importador de design `/libs/wcm/designimporter/components` foram marcados como obsoletos a partir da versão 6.5. A Adobe não planeja fazer melhorias adicionais nessa implementação do importador de design. | O Adobe planeja fornecer uma implementação alternativa do caso de uso em versões futuras. |  |
 | Foundation | Estrutura de descarregamento do Granite. A Adobe não planeja fazer mais melhorias na estrutura de descarregamento introduzida no CQ 5.6.1 para externalizar o processamento de ativos. | O Adobe está trabalhando em uma estrutura de descarregamento nativa em nuvem de próxima geração. |  |
@@ -56,7 +56,6 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
 | Desenvolvedores | Editor de diálogo da interface clássica no CRXDE Lite. O Adobe não planeja aprimorar ainda mais o Editor de diálogo da interface clássica fornecido como parte da distribuição (Quickstart) | Nenhuma substituição disponível. |  |
 | Forms | A integração do AEM Forms com o AEM Mobile está obsoleta. | Não há Substituição disponível. |  | Desenvolvedores | Editor de diálogo da interface clássica no CRXDE Lite. O Adobe não planeja aprimorar ainda mais o Editor de diálogo da interface clássica fornecido como parte da distribuição (Quickstart) | Nenhuma substituição disponível. |  |
 | Desenvolvedores | Biblioteca cliente Lodash/underscore. O Adobe não planeja fazer manutenção e atualização adicionais da biblioteca do cliente Lodash/underscore fornecida como parte da distribuição (Início rápido). | A Adobe recomenda que os clientes que ainda exigem Lodash/underline para seu código o adicionem à base de código do projeto. |  |
-| Screens | O Adobe não planeja manter e atualizar o pacote com.adobe.cq.screens.mq.activemq e as configurações relacionadas usadas para a configuração 2Publishers. | A Adobe recomenda que os clientes que ainda exigem o 2A configuração de editores pode usar a abordagem de balanceador de carga. |  |
 
 ## Recursos removidos {#removed-features}
 
@@ -64,7 +63,7 @@ Esta seção lista os recursos e funcionalidades removidos do AEM 6.5. As versõ
 
 | Área | Destaque | Substituição | Versão (SP) |
 |--- |--- |--- |--- |
-| Integração com o [!DNL Experience Cloud] | Você pode sincronizar seus ativos com o [!DNL Experience Cloud] usando uma configuração via [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] anteriormente era chamado de [!DNL Adobe Experience Cloud]. | Se você tiver dúvidas, [entre em contato com o Suporte ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;lang=pt-BR#support). |  |
+| Integração com [!DNL Experience Cloud] | Você pode sincronizar seus ativos com o [!DNL Experience Cloud] usando uma configuração via [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] anteriormente era chamado de [!DNL Adobe Experience Cloud]. | Se você tiver dúvidas, [entre em contato com o Suporte ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;lang=pt-BR#support). |  |
 | Activity Map do Analytics | A versão do Activity Map que está incluída no AEM. | Devido a alterações de segurança na API do Adobe Analytics, não é mais possível usar a versão do Activity Map incluída no AEM. Use o [Plug-in do ActivityMap fornecido pela Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=pt-BR). |  |
 | Integrações | A integração do ExactTarget foi removida da distribuição padrão (Quickstart) e não está mais disponível. | Sem substituição. |  |
 | Integrações | A integração da API da força do Salesforce foi removida da distribuição padrão (Início rápido) e agora é um pacote extra do qual instalar [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html). | O recurso ainda está disponível. |
@@ -77,6 +76,7 @@ Esta seção lista os recursos e funcionalidades removidos do AEM 6.5. As versõ
 | Desenvolvedores | Remover `customJavaScriptPath` no HTML Client Library Manager. | Sem substituição |  |
 | [!DNL Assets] | O recurso de descarregamento de ativos é removido em [!DNL Adobe Experience Manager] 6.5. | Nenhuma substituição disponível. |  |
 | Cache | `system/console/slingjsp` é removido e não está mais disponível no AEM 6.5. | As classes e o cache Slightly são armazenados no pacote Apache Sling Commons FileSystem ClassLoader. Você pode verificar o número do pacote no Console da Web AEM e remover a pasta de cache diretamente do sistema de arquivos (`crx-quickstart/launchpad/felix/bundle<ID>`). |  |
+| Screens | O Adobe não planeja manter e atualizar o pacote com.adobe.cq.screens.mq.activemq e as configurações relacionadas. | Nenhuma substituição disponível. |  |
 
 <!-- ## Pre-announcement for next release {#pre-announcement-for-next-release}
 
