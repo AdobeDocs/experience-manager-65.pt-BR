@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 3adf2b03ac4e227af2b33099c24ec177b8ea7e1b
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1227'
 ht-degree: 0%
 
 ---
@@ -73,13 +73,26 @@ Use as opções de comando do Java™ para definir as configurações de memóri
 
 Especifique a opção de configuração de memória ao iniciar o WCM do AEM a partir da linha de comando. Os scripts de inicialização/parada do WCM do AEM ou os scripts personalizados para gerenciar a inicialização do WCM do AEM também podem ser modificados para definir as configurações de memória necessárias.
 
-Se você já tiver definido o tamanho do heap como 512 MB, convém analisar mais detalhadamente o problema de memória criando um despejo de heap:
+Se você já tiver definido o tamanho do heap como 512 MB, convém analisar mais detalhadamente o problema de memória criando um despejo de heap.
 
 Para criar automaticamente um despejo de heap ao ficar sem memória, use o seguinte comando:
 
 java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
-Este método gera um arquivo de despejo de heap (**java_...hprof**) sempre que o processo ficar sem memória. O processo pode continuar a ser executado após a geração do despejo de heap. Normalmente, um arquivo de despejo de heap é suficiente para analisar o problema.
+Este método gera um arquivo de despejo de heap (**java_...hprof**) sempre que o processo ficar sem memória. O processo pode continuar a ser executado após a geração do despejo de heap.
+
+Geralmente, três arquivos de despejo de heap, coletados durante um período, são necessários para analisar o problema:
+
+* Antes que ocorra uma falha
+* Durante a falha 1
+* Durante a falha 2
+* *Idealmente, também seria bom coletar informações após o evento ser resolvido*
+
+Eles podem ser comparados para ver as alterações e como os objetos estão usando a memória.
+
+>[!NOTE]
+>
+>Se você coletar regularmente essas informações ou se tiver experiência na leitura de despejos de heap, um arquivo de despejo de heap pode ser suficiente para analisar o problema.
 
 ### A tela de boas-vindas do AEM não é exibida no navegador após clicar duas vezes no AEM Quickstart {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
 
