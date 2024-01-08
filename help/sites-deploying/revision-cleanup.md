@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '5811'
+source-wordcount: '5752'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Cada atualização no repositório cria uma revisão de conteúdo. Como resultad
 
 Com o AEM 6.3 e superior, uma versão online dessa funcionalidade chamada Limpeza de revisão online foi introduzida. Comparada à Limpeza de revisão offline, em que a instância de AEM precisa ser desligada, a Limpeza de revisão online pode ser executada enquanto a instância de AEM está online. A Limpeza de revisão online está ativada por padrão e é a maneira recomendada de executar uma limpeza de revisão.
 
-**Nota**: [Assista ao vídeo](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=en) para obter uma introdução e como usar a Limpeza de revisão online.
+**Nota**: [Assista ao vídeo](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html) para obter uma introdução e como usar a Limpeza de revisão online.
 
 O processo de limpeza de revisão consiste em três fases: **estimativa**, **compactação**, e **limpar**. A estimativa determina se a próxima fase (compactação) será executada ou não com base na quantidade de lixo que pode ser coletada. Durante a fase de compactação, os segmentos e arquivos tar são regravados, eliminando qualquer conteúdo não utilizado. A fase de limpeza remove os segmentos antigos, incluindo qualquer lixo que eles possam conter. O modo offline geralmente pode recuperar mais espaço porque o modo online deve considerar o conjunto de trabalho AEM, que impede que segmentos adicionais sejam coletados.
 
@@ -210,7 +210,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>Com que frequência a Limpeza de revisão online deve ser executada?</strong></td>
-   <td>Uma vez ao dia. Essa é a configuração padrão no Painel de operações.</td>
+   <td>Uma vez por dia. Essa é a configuração padrão no Painel de operações.</td>
    <td> </td>
   </tr>
   <tr>

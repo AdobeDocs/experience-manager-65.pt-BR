@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1790'
 ht-degree: 0%
@@ -72,7 +72,7 @@ A variável [Monitorando o desempenho](/help/sites-deploying/monitoring-and-main
 
 **Modo de desenvolvedor na interface para toque**
 
-Um dos novos recursos na interface de toque do AEM 6 é o Modo de desenvolvedor. Da mesma forma que os autores podem alternar entre os modos de edição e pré-visualização, os desenvolvedores podem alternar para o modo de desenvolvedor na interface do autor. Isso permite que você veja o tempo de renderização de cada um dos componentes na página e veja os rastreamentos de pilha de quaisquer erros. Para obter mais informações sobre o modo de desenvolvedor, consulte esta [Apresentação do CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=en).
+Um dos novos recursos na interface de toque do AEM 6 é o Modo de desenvolvedor. Da mesma forma que os autores podem alternar entre os modos de edição e pré-visualização, os desenvolvedores podem alternar para o modo de desenvolvedor na interface do autor. Isso permite que você veja o tempo de renderização de cada um dos componentes na página e veja os rastreamentos de pilha de quaisquer erros. Para obter mais informações sobre o modo de desenvolvedor, consulte esta [Apresentação do CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
 
 **Usar o rlog.jar para ler os logs de solicitação**
 
@@ -117,7 +117,7 @@ A variável **ComprimentoMáxFilaObservação** A seção mostra o número de ev
 1. Coloque-o na pasta /crx-quickstart/install.
 
 >[!NOTE]
->Consulte [AEM 6.x | Dicas para ajustar o desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
+>Consulte [AEM 6.x | Dicas para ajustar o desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR)
 
 A configuração padrão é 10.000, mas a maioria das implantações deve elevá-la para 20.000 ou 50.000.
 
@@ -145,7 +145,7 @@ Após a execução dos testes de desempenho na instância do autor, todos os pro
 * Verifique se há erros ou avisos no log de erros. Para obter mais informações, consulte [Logs](/help/sites-deploying/configure-logging.md).
 * Monitore recursos de hardware do sistema, como utilização de memória e CPU, E/S de disco ou E/S de rede. Esses recursos geralmente são as causas dos gargalos de desempenho.
 * Otimize a arquitetura das páginas e como elas são endereçadas para minimizar o uso de parâmetros de URL para permitir o máximo de armazenamento em cache possível.
-* Siga as [Otimização do desempenho](/help/sites-deploying/configuring-performance.md) e [Dicas para melhorar o desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en) documentação.
+* Siga as [Otimização do desempenho](/help/sites-deploying/configuring-performance.md) e [Dicas para melhorar o desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR) documentação.
 
 * Se houver problemas com a edição de determinadas páginas ou componentes em instâncias de autor, use o Modo de desenvolvedor da interface para toque para inspecionar a página em questão. Isso fornece um detalhamento de cada área de conteúdo na página e seu tempo de carregamento.
 * Reduza todos os JS e CSS no site. Veja isto [publicação do blog](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).

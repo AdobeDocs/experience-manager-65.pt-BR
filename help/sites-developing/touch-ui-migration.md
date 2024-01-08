@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: introduction
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 5%
+source-wordcount: '630'
+ht-degree: 3%
 
 ---
 
@@ -148,7 +148,7 @@ Para obter informações completas sobre o desenvolvimento do AEM, consulte a co
 * [Documentação da interface de usuário do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [AEM 6.5 Sites Tutorials e vídeos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 * [Introdução ao desenvolvimento do AEM Sites - Tutorial de WKND](/help/sites-developing/getting-started.md)
-* [Gems AEM](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=en)
+* [Gems AEM](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html)
 * [Ferramentas de Modernização do AEM](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]

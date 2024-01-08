@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: e9ea9df4-a355-41fc-a102-01a5d7ca2629
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '68'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -21,6 +21,6 @@ Os tópicos a seguir descrevem como realizar tarefas específicas de implantaç�
 * [Como Usar o Visualizador de Log](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
 * [Como limpar fluxos de trabalho e o registro de auditoria](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)
 
-* [Dicas para ajustar o desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
+* [Dicas para ajustar o desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR)
 * [Como remover recursos da tela de boas-vindas](/help/sites-developing/customizing-the-welcome-console.md)
 * [Como desativar o recurso Rastreador de localização](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html)

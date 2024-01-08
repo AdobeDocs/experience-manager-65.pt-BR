@@ -2,22 +2,22 @@
 title: Notas de versão de 2019 de conteúdo e comércio de AEM
 description: Notas de versão de 2019 do Adobe Experience Manager Content and Commerce.
 exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 10%
+source-wordcount: '946'
+ht-degree: 5%
 
 ---
 
-# Visão geral da versão do GitHub da estrutura de integração do comércio
+# Visão geral da versão do GitHub do Commerce integration framework
 
 ## Data de lançamento: novembro de 2019
 
 | GitHub | Versão | Notas de versão detalhadas |
 |:-------|:-----:|---------------------:|
 | Conector CIF | 0.7.1 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principais da CIF | 0.6.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
-| Arquétipo da CIF | 0.6.2 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| Componentes principais do CIF | 0.6.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
+| Arquétipo CIF | 0.6.2 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novidades {#what-is-new-november}
 
@@ -35,21 +35,21 @@ ht-degree: 10%
 
 * Os componentes baseados no React estão disponíveis como um pacote npm. Isso permite que os desenvolvedores usem o pacote de Componentes do React como uma dependência para um novo projeto do React, permitindo a personalização de componentes existentes ou o desenvolvimento de novos componentes baseados no React.
 
-* A personalização de query do GraphQL é simplificada. Isso permite que os desenvolvedores personalizem os componentes principais da CIF com menos código.
+* A personalização de query do GraphQL é simplificada. Isso permite que os desenvolvedores personalizem os componentes principais do CIF com menos código.
 
 ## Data de lançamento: outubro de 2019
 
 | GitHub | Versão | Notas de versão detalhadas |
 |:-------|:-----:|---------------------:|
 | Conector CIF | 0.6.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principais da CIF | 0.5.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
-| Arquétipo da CIF | 0.5.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| Componentes principais do CIF | 0.5.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
+| Arquétipo CIF | 0.5.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novidades {#what-is-new-october}
 
 * Modelos totalmente autoráveis para a página de detalhes do produto e a página da lista de produtos. Os autores agora podem criar modelos e arrastar e soltar componentes de lista de produtos e detalhes do produto nesses modelos. Além de adicionar outros componentes, os autores agora podem alterar o layout desses modelos também, dando a eles liberdade ilimitada para criar experiências surpreendentes que combinam conteúdo de marketing e comércio.
 
-* Todos os componentes principais do CIF compatíveis com autoria foram aprimorados para oferecer suporte [Sistema de Estilos AEM](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en). Estilos de exemplo foram fornecidos para o componente da lista de produtos.
+* Todos os componentes principais do CIF compatíveis com autoria foram aprimorados para oferecer suporte [Sistema de Estilos AEM](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html). Estilos de exemplo foram fornecidos para o componente da lista de produtos.
 
 * Componentes do lado do cliente baseados no React para gerenciamento de conta. Esta versão oferece suporte às seguintes funcionalidades: Fazer logon, Esqueceu a senha e Criar uma conta.
 
@@ -64,8 +64,8 @@ ht-degree: 10%
 | GitHub | Versão | Notas de versão detalhadas |
 |:-------|:-----:|---------------------:|
 | Conector CIF | 0.5.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principais da CIF | 0.4.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
-| Arquétipo da CIF | 0.4.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| Componentes principais do CIF | 0.4.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
+| Arquétipo CIF | 0.4.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novidades {#what-is-new-september}
 
@@ -86,8 +86,8 @@ ht-degree: 10%
 | GitHub | Versão | Notas de versão detalhadas |
 |:-------|:-----:|---------------------:|
 | Conector CIF | 0.4.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principais da CIF | 0.3.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
-| Arquétipo da CIF | 0.3.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| Componentes principais do CIF | 0.3.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
+| Arquétipo CIF | 0.3.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novidades {#what-is-new-august}
 
@@ -95,7 +95,7 @@ ht-degree: 10%
 
 * Componentes de CIF dissociados do estilo CSS específico do &quot;Venia&quot; para permitir que os desenvolvedores apliquem o estilo CSS de sua escolha.
 
-* Recurso de várias lojas/sites para permitir o uso dos Componentes principais da CIF em várias estruturas de site de AEM e permitir que a implementação de cliente GraphQL subjacente se conecte a diferentes visualizações de loja/loja da Adobe Commerce.
+* Recurso de várias lojas/sites para permitir o uso dos Componentes principais do CIF em várias estruturas de site do AEM e permitir que a implementação de cliente GraphQL subjacente se conecte a diferentes visualizações de loja/loja da Adobe Commerce.
 
 * O armazenamento em cache do GraphQL é ativado para determinadas consultas do GraphQL via HTTP GET para reduzir o tempo de resposta.
 
@@ -114,8 +114,8 @@ ht-degree: 10%
 | GitHub | Versão | Notas de versão detalhadas |
 |:-------|:-----:|---------------------:|
 | Conector CIF | 0.3.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principais da CIF | 0.2.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
-| Arquétipo da CIF | 0.2.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| Componentes principais do CIF | 0.2.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
+| Arquétipo CIF | 0.2.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novidades {#what-is-new-july}
 
@@ -140,13 +140,13 @@ ht-degree: 10%
 | GitHub | Versão | Notas de versão detalhadas |
 |:-------|:-----:|---------------------:|
 | Conector CIF | 0.2.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principais da CIF | 0.1.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
+| Componentes principais do CIF | 0.1.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
 
 ### Novidades {#what-is-new-june}
 
 * Loja B2C AEM com estilo móvel Venia CSS, página de aterrissagem, navegação dinâmica do catálogo por páginas de produto e categoria, página de pesquisa de produto e recursos de carrinho de compras para iniciar e acelerar projetos de comércio.
 
-* Conector da CIF e ferramentas de criação (Console do produto, Seletor de produto e Seletor de categoria) para permitir que os autores criem experiências de AEM com conteúdo comercial.
+* Conector CIF e ferramentas de criação (Console do produto, Seletor de produto e Seletor de categoria) para permitir que os autores criem experiências no AEM com conteúdo comercial.
 
 * Primeira versão dos componentes principais do CIF compatível com o Adobe Commerce 2.3.1:
    * Detalhes do produto

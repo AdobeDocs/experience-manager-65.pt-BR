@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '5793'
 ht-degree: 0%
@@ -1096,9 +1096,9 @@ Veja a seguir uma lista de sugestões sobre o que verificar se você começa a e
 >
 Consulte também os seguintes artigos para obter mais informações:
 >
-* [Despejos de encadeamento](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=en)
-* [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
-* [Analisar usando o profiler integrado](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=en)
+* [Despejos de encadeamento](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+* [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+* [Analisar usando o profiler integrado](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
 * [Analisar processos lentos e bloqueados](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
@@ -1123,7 +1123,7 @@ Nesses casos, verifique:
 * As configurações da JVM usadas para [iniciar AEM](/help/sites-deploying/deploy.md#getting-started)
 * Base de conhecimento:
 
-   * [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
+   * [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
 
 ### E/S de disco {#disk-i-o}
 
@@ -1141,7 +1141,7 @@ Se o sistema estiver ficando sem espaço em disco ou se você notar hash no disc
 * Configuração e configuração [Versão limpeza](/help/sites-deploying/version-purging.md)
 * Base de conhecimento:
 
-   * [Muitos Arquivos Abertos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=en)
+   * [Muitos Arquivos Abertos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
    * [O registro em log consome muito espaço em disco](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### Degradação regular do desempenho {#regular-performance-degradation}

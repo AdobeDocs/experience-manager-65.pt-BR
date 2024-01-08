@@ -7,10 +7,10 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '2798'
-ht-degree: 1%
+source-wordcount: '2846'
+ht-degree: 0%
 
 ---
 
@@ -205,7 +205,7 @@ A eficiência do cache é fundamental para a velocidade do site. A tabela a segu
 | 95% | 690 | 25 |
 | 90% | 520 | 18 |
 | 60% | 220 | 8 |
-| 0% | 100 | 3.5 |
+| 0% | 100 | 3,5 |
 
 >[!CAUTION]
 >

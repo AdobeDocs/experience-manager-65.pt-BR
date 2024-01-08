@@ -2,7 +2,7 @@
 title: Consultas persistentes de GraphQL
 description: Saiba como criar consultas persistentes do GraphQL no Adobe Experience Manager para otimizar o desempenho. As consultas persistentes podem ser solicitadas por aplicativos clientes usando o método HTTP GET e a resposta pode ser armazenada em cache nas camadas do Dispatcher e do CDN, melhorando, em última análise, o desempenho dos aplicativos clientes.
 exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 85%
@@ -262,7 +262,7 @@ Observe que `%3B` é a codificação UTF-8 para `;` e `%3D` é a codificação p
 
 ## Armazenamento em cache de consultas persistentes {#caching-persisted-queries}
 
-Consultas persistentes são recomendadas, pois elas podem ser armazenadas em cache nas camadas do [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) e da Rede de entrega de conteúdo (CDN), melhorando o desempenho do aplicativo do cliente solicitante.
+Consultas persistentes são recomendadas, pois elas podem ser armazenadas em cache nas camadas do [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) e da Rede de entrega de conteúdo (CDN), melhorando o desempenho do aplicativo do cliente solicitante.
 
 Por padrão, o AEM invalidará o cache com base em uma definição de Time To Live (TTL). Esses TTLs podem ser definidos pelos seguintes parâmetros. Estes parâmetros podem ser acessados por vários meios, com variações nos nomes de acordo com o mecanismo usado:
 

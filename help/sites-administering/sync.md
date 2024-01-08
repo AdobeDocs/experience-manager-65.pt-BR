@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '2502'
-ht-degree: 5%
+source-wordcount: '2434'
+ht-degree: 1%
 
 ---
 
@@ -314,7 +314,7 @@ Subcaminhos ignorados durante a sincronização. Nada nesses subcaminhos é sinc
 Nós padrão a ignorar:
 
    * .tokens
-   * system
+   * sistema
 
 * **Pastas Distribuídas**
 A maioria das sling:Folders é ignorada porque a sincronização não é necessária. As poucas exceções estão listadas aqui.
@@ -506,9 +506,9 @@ O usuário autorizado deve ter explicitamente os seguintes privilégios e restri
 
 | **caminho** | **jcr:all** | **representante:glob** |
 |---|---|---|
-| /home | X | &#42;/atividades/&#42; |
-| /home/users | X | &#42;/atividades/&#42; |
-| /home/groups | X | &#42;/atividades/&#42; |
+| /home | X | &#42;/activities/&#42; |
+| /home/users | X | &#42;/activities/&#42; |
+| /home/groups | X | &#42;/activities/&#42; |
 
 Como membro do `administrators` usuário autorizado deve ter os seguintes privilégios em todas as instâncias de Publicação:
 

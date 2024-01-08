@@ -7,9 +7,9 @@ topic-tags: components
 content-type: reference
 docset: aem65
 exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '683'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ Isso ajuda um desenvolvedor a:
 >Consulte:
 >
 >* Artigo da knowledge base, [Solução de problemas da interface de toque AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), para obter mais dicas e ferramentas.
->* Sessão AEM Gems sobre [Modo de desenvolvedor do AEM 6.0](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=en).
+>* Sessão AEM Gems sobre [Modo de desenvolvedor do AEM 6.0](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html).
 >
 
 ## Abrindo o Modo de Desenvolvedor {#opening-developer-mode}

@@ -2,10 +2,10 @@
 title: Criação
 description: Conceitos de criação e publicação no Adobe Experience Manager 6.5.
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 35%
+source-wordcount: '547'
+ht-degree: 28%
 
 ---
 
@@ -31,7 +31,7 @@ No ambiente de criação, a funcionalidade do AEM é disponibilizada por meio de
 
 ### Ambiente de criação {#author-environment}
 
-O autor trabalha no que é conhecido como **ambiente do autor**. Isso oferece uma interface fácil de usar (interface gráfica do usuário (GUI ou UI)) para criar o conteúdo. Ela está localizada atrás do firewall de uma empresa que fornece proteção total e requer que o autor faça logon, usando uma conta que recebeu os direitos de acesso apropriados.
+Autores(as) trabalham no que é conhecido como **ambiente de criação**. Isso fornece uma interface fácil de usar (interface gráfica do usuário (GUI ou UI)) para criar o conteúdo. Ela está localizada atrás do firewall de uma empresa que fornece proteção total e requer que o autor faça logon, usando uma conta que recebeu os direitos de acesso apropriados.
 
 >[!NOTE]
 >
@@ -81,4 +81,4 @@ Quando o site AEM é um [site da comunidade](/help/communities/overview.md), ou 
 
 #### Dispatcher {#dispatcher}
 
-Para otimizar o desempenho para os visitantes do seu site, o **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) implementa o balanceamento de carga e o armazenamento em cache.**
+Para otimizar o desempenho para os visitantes do seu site, a variável **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR)** O implementa o balanceamento de carga e o cache.

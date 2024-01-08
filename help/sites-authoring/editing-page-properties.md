@@ -2,10 +2,10 @@
 title: Edição de propriedades da página de conteúdo
 description: Defina as propriedades necessárias para uma página no Adobe Experience Manager.
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1871'
-ht-degree: 42%
+source-wordcount: '1855'
+ht-degree: 41%
 
 ---
 
@@ -56,7 +56,7 @@ As propriedades são distribuídas por várias guias.
 
   Um título a ser usado na página. Normalmente é usado pelos componentes de título. Se estiver vazio, a variável **Título** é usada.
 
-* **Titulo da navegação**
+* **Título de navegação**
 
   Você pode especificar um título separado para usar na navegação (por exemplo, se desejar algo mais conciso). Se estiver vazio, a variável **Título** é usada.
 
@@ -68,7 +68,7 @@ As propriedades são distribuídas por várias guias.
 
   A descrição da página, a finalidade dela ou qualquer outro detalhe que desejar adicionar.
 
-* **Em tempo**
+* **No Prazo**
 
   A data e a hora em que a página publicada é ativada. Quando publicada, essa página permanece inativa até o horário especificado.
 
@@ -97,7 +97,7 @@ As propriedades são distribuídas por várias guias.
 
   Configure o Dispatcher para ativar o acesso a URLs personalizados. Consulte [Ativação do acesso a URLs personalizados](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) para obter mais detalhes.
 
-* **Redirecionar URL do Vanity**
+* **Redirecionar URL personalizado**
 
   Indica se você deseja que a página use a URL personalizada.
 
@@ -167,7 +167,7 @@ As propriedades são distribuídas por várias guias.
 
 Mostra a imagem em miniatura da página. É possível:
 
-* **Gerar pré-visualização**
+* **Gerar visualização**
 
   Gere uma visualização da página que você deseja usar como miniatura.
 
@@ -187,7 +187,7 @@ Mostra a imagem em miniatura da página. É possível:
 
 * **Compartilhamento em rede social**
 
-  Define as opções de compartilhamento disponíveis na página. Expõe as opções que estão disponíveis para o [Compartilhamento do componente principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html?lang=en).
+  Define as opções de compartilhamento disponíveis na página. Expõe as opções que estão disponíveis para o [Compartilhamento do componente principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html).
 
    * **Ativar compartilhamento de usuários para o Facebook**
    * **Ativar compartilhamento de usuários para o Pinterest**

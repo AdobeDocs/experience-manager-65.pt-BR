@@ -3,7 +3,7 @@ title: Configure o Editor de Rich Text para criar conteúdo no Adobe Experience 
 description: Saiba como configurar o Editor de rich text do Adobe Experience Manager para criar conteúdo no Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '2883'
 ht-degree: 0%
@@ -180,7 +180,7 @@ Para obter configurações detalhadas dos plug-ins do RTE, consulte [como ativar
 
 >[!NOTE]
 >
->A variável [Componente de texto dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=en#the-text-component-and-the-rich-text-editor) O permite que os editores de modelo configurem muitos plug-ins de RTE em uma GUI como políticas de conteúdo, eliminando a necessidade de configuração técnica. As políticas de conteúdo podem funcionar com as configurações da interface do usuário de RTE conforme descrito neste documento.
+>A variável [Componente de texto dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) O permite que os editores de modelo configurem muitos plug-ins de RTE em uma GUI como políticas de conteúdo, eliminando a necessidade de configuração técnica. As políticas de conteúdo podem funcionar com as configurações da interface do usuário de RTE conforme descrito neste documento.
 >
 >Para obter mais informações, consulte [Configurações da interface do usuário do RTE e políticas de conteúdo](/help/sites-administering/rich-text-editor.md) seção deste documento e [Criação de modelos de página](/help/sites-authoring/templates.md) e a variável [Documentação do desenvolvedor dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
@@ -258,7 +258,7 @@ As opções disponíveis no fluxo de RTE downstream das configurações da inter
 * Se a configuração da interface do usuário do RTE tiver sido removida ou não tiver habilitado um item, a política de conteúdo não poderá configurá-lo.
 * Um autor tem acesso somente a essas funcionalidades, conforme disponibilizado pelas configurações da interface do usuário e pelas políticas de conteúdo.
 
-Como exemplo, você pode ver a variável [Documentação do componente principal de Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=en#the-text-component-and-the-rich-text-editor).
+Como exemplo, você pode ver a variável [Documentação do componente principal de Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html#the-text-component-and-the-rich-text-editor).
 
 ## Personalizar o mapeamento entre ícones e comandos da barra de ferramentas {#iconstoolbar}
 

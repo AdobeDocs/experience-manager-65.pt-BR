@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '2959'
 ht-degree: 0%
@@ -108,11 +108,11 @@ A Adobe recomenda definir páginas de manipulador de erros personalizadas, espec
 
 >[!NOTE]
 >
->Consulte [Como posso criar scripts personalizados ou manipuladores de erros](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html?lang=en) para obter mais detalhes.
+>Consulte [Como posso criar scripts personalizados ou manipuladores de erros](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html) para obter mais detalhes.
 
 ### Lista de verificação de segurança completa do Dispatcher {#complete-dispatcher-security-checklist}
 
-O AEM Dispatcher é uma parte essencial de sua infraestrutura. A Adobe recomenda que você conclua o [Lista de verificação de segurança do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en).
+O AEM Dispatcher é uma parte essencial de sua infraestrutura. A Adobe recomenda que você conclua o [Lista de verificação de segurança do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html).
 
 >[!CAUTION]
 >

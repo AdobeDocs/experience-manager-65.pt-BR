@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3251'
 ht-degree: 0%
@@ -444,7 +444,7 @@ Com o AEM, um ambiente de produção geralmente consiste em dois tipos diferente
 
 ## O Dispatcher {#the-dispatcher}
 
-O Dispatcher é uma ferramenta de Adobe para armazenamento em cache e/ou balanceamento de carga. Mais informações podem ser encontradas em [o Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en).
+O Dispatcher é uma ferramenta de Adobe para armazenamento em cache e/ou balanceamento de carga. Mais informações podem ser encontradas em [o Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR).
 
 ## FileVault (sistema de revisão de origem) {#filevault-source-revision-system}
 

@@ -8,10 +8,10 @@ topic-tags: configuring
 docset: aem65
 feature: Configuring
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '3389'
-ht-degree: 4%
+source-wordcount: '3363'
+ht-degree: 1%
 
 ---
 
@@ -69,7 +69,7 @@ Para seguir este exemplo e usar os agentes de replicação padrão, [instalar AE
 
 >[!NOTE]
 >
->Habilitado por padrão :
+>Habilitado por padrão:
 >
 >* Agentes sobre Autor : Agente padrão (publicação)
 >
@@ -105,7 +105,7 @@ Os seguintes agentes estão disponíveis em uma instalação padrão do AEM:
 * [Agente padrão](#replication-author-to-publish)
 Usado para replicar de Autor para Publicação.
 
-* Limpeza do Dispatcher Usada para gerenciar o cache do Dispatcher. Consulte [Invalidação do cache do Dispatcher no ambiente de criação](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-the-authoring-environment) e [Invalidação do cache do Dispatcher de uma instância de publicação](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-a-publishing-instance) para obter mais informações.
+* Limpeza do Dispatcher Usada para gerenciar o cache do Dispatcher. Consulte [Invalidação do cache do Dispatcher no ambiente de criação](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) e [Invalidação do cache do Dispatcher de uma instância de publicação](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) para obter mais informações.
 
 * [Replicação reversa](#reverse-replication-publish-to-author)
 Usado para replicação de Publicar para Autor. A replicação reversa não é usada para recursos das Comunidades, como fóruns, blogs e comentários. Ela é efetivamente desativada, pois a caixa de saída não está ativada. O uso da replicação reversa exigiria uma configuração personalizada.
@@ -128,7 +128,7 @@ Ao configurar um agente de replicação no console Ferramentas, quatro guias est
 
   Uma descrição da finalidade deste agente de replicação.
 
-* **Habilitado**
+* **Ativado**
 
   Indica se o agente de replicação está ativado.
 
@@ -182,11 +182,11 @@ Ao configurar um agente de replicação no console Ferramentas, quatro guias est
 
   Padrão: `Info`
 
-* **Use para replicação reversa**
+* **Usar para replicação reversa**
 
   Indica se esse agente é usado para replicação reversa; retorna a entrada do usuário do ambiente Publicar para autor.
 
-* **Atualização do alias**
+* **Atualização de alias**
 
   Selecionar essa opção permite solicitações de invalidação de alias ou caminho personalizado para o Dispatcher. Consulte também [Configuração de um agente de limpeza do Dispatcher](/help/sites-deploying/replication.md#configuring-a-dispatcher-flush-agent).
 
@@ -203,7 +203,7 @@ Ao configurar um agente de replicação no console Ferramentas, quatro guias est
 
   O protocolo especificado aqui (HTTP ou HTTPS) determina o método de transporte.
 
-  Para agentes de limpeza do Dispatcher, a propriedade do URI é usada somente se você usar entradas de hosts virtuais baseadas em caminho para diferenciar entre farms. Use esse campo para direcionar o farm a ser invalidado. Por exemplo, o farm nº 1 tem um host virtual de `www.mysite.com/path1/*`, e o farm nº 2 tem um host virtual de `www.mysite.com/path2/*`. Você pode usar um URL de `/path1/invalidate.cache` para direcionar o primeiro farm, e `/path2/invalidate.cache` para direcionar o segundo farm.
+  Para agentes de limpeza do Dispatcher, a propriedade do URI é usada somente se você usar entradas de hosts virtuais baseadas em caminho para diferenciar entre farms. Use esse campo para direcionar o farm a ser invalidado. Por exemplo, o farm nº 1 tem um host virtual de `www.mysite.com/path1/*`, e o farm nº 2 tem um host virtual de `www.mysite.com/path2/*`. Você pode usar um URL de `/path1/invalidate.cache` para direcionar o primeiro farm e `/path2/invalidate.cache` para direcionar o segundo farm.
 
 * **Usuário**
 
@@ -237,7 +237,7 @@ As seguintes configurações só serão necessárias se um proxy for necessário
 
   Nome do host do proxy usado para transporte.
 
-* **Porta de proxy**
+* **Porta do proxy**
 
   Porta do proxy.
 
@@ -271,7 +271,7 @@ As seguintes configurações só serão necessárias se um proxy for necessário
 
   Para um agente de limpeza do Dispatcher, isso é quase sempre GET e não deve ser alterado (POST seria outro valor possível).
 
-* **Cabeçalhos de HTTP**
+* **Cabeçalhos HTTP**
 
   Eles são usados para agentes de limpeza do Dispatcher e especificam elementos que devem ser removidos.
 
@@ -322,7 +322,7 @@ Essas configurações são usadas para definir acionadores para replicação aut
 
   Aqui, uma replicação por esse agente é acionada automaticamente quando uma página é modificada. Usado para agentes de limpeza do Dispatcher, mas também para replicação reversa.
 
-* **Durante roll-out**
+* **Ao Distribuir**
 
   Se marcado, o agente replicará automaticamente qualquer conteúdo marcado para distribuição quando for modificado.
 
@@ -334,7 +334,7 @@ Essas configurações são usadas para definir acionadores para replicação aut
 
   Se marcado, as cadeias do agente serão replicadas sempre que os eventos de replicação forem recebidos.
 
-* **Sem atualização de status**
+* **Nenhuma atualização de status**
 
   Quando marcado, o agente não força uma atualização do status de replicação.
 
@@ -352,7 +352,7 @@ Na guia Ferramentas do ambiente Autor, é possível configurar agentes de replic
 
 >[!NOTE]
 >
->Quando um Dispatcher lida com solicitações HTTP para instâncias de Autor ou Publicação, a solicitação HTTP do agente de replicação deve incluir o cabeçalho PATH. Além do procedimento a seguir, você deve adicionar o cabeçalho PATH à lista Dispatcher de cabeçalhos de clientes. Consulte [/clientheaders (Cabeçalhos do cliente)](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders).
+>Quando um Dispatcher lida com solicitações HTTP para instâncias de Autor ou Publicação, a solicitação HTTP do agente de replicação deve incluir o cabeçalho PATH. Além do procedimento a seguir, você deve adicionar o cabeçalho PATH à lista Dispatcher de cabeçalhos de clientes. Consulte [/clientheaders (Cabeçalhos do cliente)](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
 >
 
 1. Acesse o **Ferramentas** no AEM.
@@ -477,7 +477,7 @@ Os agentes padrão estão incluídos na instalação. No entanto, uma determinad
       * Insira a conta de usuário específica do site usada para replicação.
       * Você pode configurar outros parâmetros conforme necessário.
 
-   Para agentes de limpeza do Dispatcher, a propriedade do URI é usada somente se você usar entradas de hosts virtuais baseadas em caminho para diferenciar entre farms. Use esse campo para direcionar o farm a ser invalidado. Por exemplo, o farm nº 1 tem um host virtual de `www.mysite.com/path1/*`, e o farm nº 2 tem um host virtual de `www.mysite.com/path2/*`. Você pode usar um URL de `/path1/invalidate.cache` para direcionar o primeiro farm, e `/path2/invalidate.cache` para direcionar o segundo farm.
+   Para agentes de limpeza do Dispatcher, a propriedade do URI é usada somente se você usar entradas de hosts virtuais baseadas em caminho para diferenciar entre farms. Use esse campo para direcionar o farm a ser invalidado. Por exemplo, o farm nº 1 tem um host virtual de `www.mysite.com/path1/*`, e o farm nº 2 tem um host virtual de `www.mysite.com/path2/*`. Você pode usar um URL de `/path1/invalidate.cache` para direcionar o primeiro farm e `/path2/invalidate.cache` para direcionar o segundo farm.
 
    >[!NOTE]
    >
@@ -563,7 +563,7 @@ O Editor desempacota todos os itens, salva-os e relata ao Autor.
 
 ### Configuração da replicação em lote {#configuring-batch-replication}
 
-1. Acesse `http://serveraddress:serverport/siteadmin`
+1. Ir para `http://serveraddress:serverport/siteadmin`
 1. Pressione a **[!UICONTROL Ferramentas]** ícone no lado superior da tela
 1. No painel de navegação esquerdo, vá para **[!UICONTROL Replicação - Agentes no autor]** e clique duas vezes em **[!UICONTROL Agente padrão]**.
    * Você também pode acessar o agente de replicação de publicação padrão acessando diretamente `http://serveraddress:serverport/etc/replication/agents.author/publish.html`

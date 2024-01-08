@@ -3,7 +3,7 @@ title: Requisitos técnicos
 description: Uma lista das plataformas de cliente e servidor compatíveis com o Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 6f2b16a51d4ad0f5c199ff41e8abe150c27ecc01
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3624'
 ht-degree: 0%
@@ -231,7 +231,7 @@ Se estiver instalando o AEM Forms 6.5, certifique-se de ter instalado o seguinte
 
 O Adobe Experience Manager é compatível com a execução em uma máquina virtual em ambientes de computação em nuvem. Esses ambientes incluem o Microsoft® Azure e o Amazon Web Services (AWS), executados em conformidade com os requisitos técnicos listados nesta página e de acordo com os termos de suporte padrão do Adobe.
 
-Para um ambiente nativo em nuvem, analise a oferta mais recente da linha de produtos AEM: Adobe Experience Manager as a Cloud Service. Consulte [Documentação do Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=en) para obter detalhes.
+Para um ambiente nativo em nuvem, analise a oferta mais recente da linha de produtos AEM: Adobe Experience Manager as a Cloud Service. Consulte [Documentação do Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR) para obter detalhes.
 
 O Adobe também oferece o Adobe Managed Services para implantar o AEM no Azure ou no AWS. O Adobe Managed Services fornece aos especialistas experiência e habilidades de implantação e operação do AEM nesses ambientes de computação em nuvem. Consulte [documentação adicional sobre o Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
@@ -241,7 +241,7 @@ Para obter recomendações sobre como implantar o AEM no Azure ou no AWS, fora d
 
 ### Plataformas do Dispatcher (servidores da Web) {#dispatcher-platforms-web-servers}
 
-O Dispatcher é o componente de balanceamento de carga e cache. [Baixe a versão mais recente do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=en). O Experience Manager 6.5 exige a versão 4.3.2 ou superior do Dispatcher.
+O Dispatcher é o componente de balanceamento de carga e cache. [Baixe a versão mais recente do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). O Experience Manager 6.5 exige a versão 4.3.2 ou superior do Dispatcher.
 
 Os seguintes servidores da Web são compatíveis para uso com o Dispatcher versão 4.3.2:
 

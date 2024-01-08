@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 041b1767-8b6c-4887-a70d-abc96a116976
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1460'
 ht-degree: 3%
@@ -203,7 +203,7 @@ Por exemplo, para um fluxo de trabalho com seis etapas e quatro estágios:
 
 ### Workflows e Forms {#workflows-and-forms}
 
-Normalmente, os fluxos de trabalho são usados para processar envios de formulários no AEM. Pode ser com o [componentes de formulário dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=en) disponível em uma instância padrão do AEM ou com o [Solução da AEM Forms](/help/forms/using/aem-forms-workflow.md).
+Normalmente, os fluxos de trabalho são usados para processar envios de formulários no AEM. Pode ser com o [componentes de formulário dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) disponível em uma instância padrão do AEM ou com o [Solução da AEM Forms](/help/forms/using/aem-forms-workflow.md).
 
 Ao criar um formulário, o envio dele pode ser facilmente associado a um modelo de fluxo de trabalho. Por exemplo, para armazenar o conteúdo em um local específico do repositório ou notificar um usuário sobre o envio do formulário e seu conteúdo.
 

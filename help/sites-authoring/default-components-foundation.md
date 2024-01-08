@@ -2,10 +2,10 @@
 title: Componentes de base
 description: Saiba mais sobre os Componentes de base no Adobe Experience Manager 6.5.
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '7204'
-ht-degree: 9%
+source-wordcount: '6872'
+ht-degree: 3%
 
 ---
 
@@ -98,7 +98,7 @@ Quando a imagem é uma imagem JPEG, o tamanho da janela de visualização també
 * Médio (0,82)
 * Alta (1,00)
 
-| **Intervalo de largura da janela de visualização (pixels)** | **Largura da imagem (pixels)** | **Qualidade JPEG** | **Tipo de dispositivo direcionado** |
+| **Intervalo de largura da janela de visualização (pixels)** | **Largura da imagem (pixels)** | **Qualidade do JPEG** | **Tipo de dispositivo direcionado** |
 |---|---|---|---|
 | largura &lt;= 319 | 320 | baixa |  |
 | largura = 320 | 320 | médio | Celular (retrato) |
@@ -178,12 +178,12 @@ Há várias maneiras de criar uma lista de páginas - Páginas secundárias, Lis
 Independentemente do método escolhido, as páginas incluídas na lista devem ter, cada uma, uma imagem associada à página. Essa imagem é exibida no Carrossel. Se não houver imagem para uma determinada página nas Propriedades da página, você deve associar uma imagem à página antes de começar. Caso não tenha, o Carrossel exibe uma página em branco. Consulte [Editar propriedades da página](/help/sites-authoring/editing-page-properties.md).
 Dependendo do item escolhido, um novo painel será exibido:
 
-      * **Opções de páginas filho**
+      * **Opções de páginas secundárias**
 
          * **Página principal**
 Especifique um caminho manualmente ou usando o seletor. Deixe em branco para utilizar a página atual como principal.
 
-      * **Opções de lista fixa**
+      * **Opções para a lista fixa**
 
          * **Páginas**
 Selecione uma lista de páginas. Uso `+` para adicionar mais entradas e os botões de seta para cima/baixo para ajustar a ordem.
@@ -210,7 +210,7 @@ Opcional. O número máximo de itens que você deseja usar no Carrossel.
 
 >[!NOTE]
 >
->Você pode criar um componente de carrossel personalizado para o Adobe Experience Manager que exibe ativos digitais no DAM do AEM. Consulte [Criação de componentes personalizados do carrossel para o Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en).
+>Você pode criar um componente de carrossel personalizado para o Adobe Experience Manager que exibe ativos digitais no DAM do AEM. Consulte [Criação de componentes personalizados do carrossel para o Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR).
 
 ### Gráfico {#chart}
 
@@ -245,7 +245,7 @@ A seguir, há um exemplo de dados de gráfico seguido pelo gráfico de Barras re
 
 >[!NOTE]
 >
->Você pode criar um controle de gráfico AEM personalizado que exiba dados no JCR AEM. Para obter informações, consulte [Exibição de Dados do Adobe Experience Manager em um Gráfico](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en).
+>Você pode criar um controle de gráfico AEM personalizado que exiba dados no JCR AEM. Para obter informações, consulte [Exibição de Dados do Adobe Experience Manager em um Gráfico](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR).
 
 ### Fragmento de conteúdo {#content-fragment}
 
@@ -327,7 +327,7 @@ O componente de Flash permite carregar um filme de Flash. Você pode arrastar um
 
 * **Flash**
 
-   * **Filme em flash**
+   * **Flash filme**
 
      O arquivo de filme flash. Arraste um ativo do localizador de conteúdo ou clique em para abrir uma janela de navegação.
 
@@ -419,7 +419,7 @@ Quando uma imagem é carregada, você pode configurar o seguinte:
 
   O título da imagem.
 
-* **Alternar texto**
+* **Texto Alternativo**
 
   Um texto alternativo a ser usado ao criar conteúdo acessível.
 
@@ -463,19 +463,19 @@ O componente Lista permite configurar critérios de pesquisa para exibir uma lis
 
 * **Lista**
 
-   * **Criar uso da lista**
+   * **Criar lista usando**
 
      Aqui você especifica onde a lista recupera o conteúdo. Há vários métodos:
 
    * Dependendo do item escolhido, um novo painel será exibido:
 
-      * **Opções de páginas filho**
+      * **Opções de páginas secundárias**
 
          * **Filhos de** (Página principal)
 
            Especifique um caminho manualmente ou usando o seletor. Deixe em branco para utilizar a página atual como principal.
 
-      * **Opções de lista fixa**
+      * **Opções para a lista fixa**
 
          * **Páginas**
 
@@ -493,7 +493,7 @@ O componente Lista permite configurar critérios de pesquisa para exibir uma lis
 
       * **Opções de pesquisa avançada**
 
-         * **Notação do predicativo do Querybuilder**
+         * **Notação de predicativo do Querybuilder**
 
            Você pode inserir uma consulta de pesquisa usando a notação de predicado do Querybuilder. Por exemplo, você pode digitar &quot;fulltext=Marketing&quot; para que todas as páginas com &quot;Marketing&quot; em seu conteúdo sejam exibidas no Carrossel.
 
@@ -515,7 +515,7 @@ O componente Lista permite configurar critérios de pesquisa para exibir uma lis
 
      Especifique o número máximo de itens que deseja exibir na lista.
 
-   * **Habilitar feed**
+   * **Ativar feed**
 
      Indica se um feed RSS deve ser ativado para a lista.
 
@@ -587,7 +587,7 @@ Você pode configurar:
 
      Especifique a página (produto) para a qual o status do pedido deve ser exibido.
 
-   * **Tipo / Tamanho**
+   * **Tipo/tamanho**
 
      Selecione a partir da seleção fornecida.
 
@@ -659,7 +659,7 @@ Você pode configurar:
 
      Se não houver resultados, o texto inserido aqui será exibido.
 
-   * **Verificar a ortografia do texto**
+   * **Texto de verificação ortográfica**
 
      Se alguém inserir um termo semelhante, este texto será exibido antes do termo.
 Por exemplo, se você digitar `Geometrixxe`, o sistema exibe &quot;Você quis dizer? Geometrixx&quot;.
@@ -791,7 +791,7 @@ Ao configurar o componente do Tag Cloud, você pode especificar:
 
   Selecione a página que será referenciada.
 
-* **Não há links nas tags**
+* **Nenhum link nas tags**
 
   Se as tags exibidas devem agir como links.
 
@@ -854,11 +854,11 @@ Você pode configurar:
 
      O título do bloco, mostrado por mouseover.
 
-   * **Alternar texto**
+   * **Texto Alternativo**
 
      Texto alternativo a ser mostrado se a imagem não puder ser exibida. Se deixado em branco, o título será usado.
 
-   * **Vincular para**
+   * **Vincular a**
 
      Especifique um caminho de destino.
 
@@ -878,7 +878,7 @@ O exemplo a seguir mostra um componente de Imagem de texto que exibe a imagem al
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. O Adobe recomenda o uso de [Componente principal do título](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=en) em vez disso.
+>Este componente de base está obsoleto. O Adobe recomenda o uso de [Componente principal do título](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) em vez disso.
 
 O componente de título pode:
 
@@ -895,7 +895,7 @@ Você pode configurar:
 
   O URI se o título for para operar como um link.
 
-* **Tipo / Tamanho**
+* **Tipo/tamanho**
 
   Selecione Pequeno ou Grande na lista suspensa. O pequeno é gerado como uma imagem. Grande é gerado como texto.
 
@@ -1043,7 +1043,7 @@ Este campo é obrigatório e deve conter apenas os seguintes caracteres:
 
      Permite fornecer informações adicionais ao usuário, se necessário. No formulário, ele é mostrado abaixo do campo, em uma fonte menor do que o título.
 
-   * **Exibir / Ocultar**
+   * **Mostrar/Ocultar**
 
      Determina quando o campo está visível.
 
@@ -1122,15 +1122,15 @@ Uma seleção de tipos de ação está incluída em uma instalação padrão do 
 
       * **Solicitação de conta**
       * **Criar conteúdo**
-      * **Criar cliente em potencial**
-      * **Criar e atualizar a conta**
+      * **Criar lead**
+      * **Criar e atualizar conta**
       * **Serviço de e-mail: Criar assinante e adicionar à lista**
-      * **Servio de e-mail: enviar e-mail de resposta automática**
-      * **Serviço de e-mail: cancelar a inscrição do usuário da lista**
+      * **Serviço de e-mail: enviar e-mail de resposta automática**
+      * **Serviço de e-mail: cancelar inscrição do usuário na lista**
       * **Editar comunidade**
       * **Editar recursos**
       * **Editar recursos controlados pelo fluxo de trabalho**
-      * **Email**
+      * **E-mail**
       * **Detalhes do pedido feito**
       * **Atualização do perfil**
       * **Redefinir senha**
@@ -1140,9 +1140,9 @@ Uma seleção de tipos de ação está incluída em uma instalação padrão do 
         O tipo de ação padrão.
 
       * **Armazenar conteúdo com uploads**
-      * **Enviar Ordem**
+      * **Enviar pedido**
       * **Cancelar assinatura do assinante**
-      * **Atualizar a ordem**
+      * **Atualizar pedido**
 
    * **Identificador de formulário**
 
@@ -1156,7 +1156,7 @@ Uma seleção de tipos de ação está incluída em uma instalação padrão do 
 
      Usar **Carregar caminho** você pode pré-carregar o formulário com valores nos campos obrigatórios. Consulte [Pré-carregando Valores de Formulário](/help/sites-developing/developing-forms.md#preloading-form-values).
 
-   * **Validação do cliente**
+   * **Validação de cliente**
 
      Indica se a validação do cliente é necessária para este formulário (validação do servidor) *sempre* ocorre). A validação do cliente pode ser obtida com o **Forms Captcha** componente.
 
@@ -1172,13 +1172,13 @@ Uma seleção de tipos de ação está incluída em uma instalação padrão do 
 
         `/apps/<*myApp*>/form/<*myValidation*>/formservervalidation.jsp`
 
-   * **Configurações de ação**
+   * **Configuração de ação**
 
      As opções disponíveis em **Configuração de ação** depende do selecionado **Tipo de ação**:
 
       * **Solicitação de conta**
 
-         * **Criar a página de conta**
+         * **Criar página de conta**
 
            A página usada ao criar uma conta.
 
@@ -1208,13 +1208,13 @@ Uma seleção de tipos de ação está incluída em uma instalação padrão do 
 
          * **Exibir seletor**
 
-      * **Criar cliente em potencial**
+      * **Criar lead**
 
          * **O cliente em potencial foi adicionado a esta lista**
 
            Especifique a lista de clientes potenciais necessária.
 
-      * **Criar e atualizar a conta**
+      * **Criar e atualizar conta**
 
          * **Grupo inicial**
 
@@ -1228,11 +1228,11 @@ Uma seleção de tipos de ação está incluída em uma instalação padrão do 
 
            O caminho (relativo) para onde a nova conta é criada e armazenada.
 
-         * **Exibir dados...**
+         * **Exibir Dados...**
 
            Selecionar esse botão acessa as informações sobre os resultados do formulário no Editor de itens em massa. Aqui, é possível exportar as informações para um `.tsv` arquivo (separado por tabulação) (para uso, por exemplo, em uma planilha do Excel).
 
-      * **Email**
+      * **E-mail**
 
          * **De**
 
@@ -1246,7 +1246,7 @@ Uma seleção de tipos de ação está incluída em uma instalação padrão do 
 
            Insira um ou mais endereços de email CC.
 
-         * **BCC**
+         * **CCO**
 
            Insira um ou mais endereços de email CCO.
 
@@ -1256,7 +1256,7 @@ Uma seleção de tipos de ação está incluída em uma instalação padrão do 
 
       * **Redefinir senha**
 
-         * **Alterar página de senha**
+         * **Página Alterar Senha**
 
            A página usada ao alterar a senha.
 
@@ -1267,7 +1267,7 @@ Uma seleção de tipos de ação está incluída em uma instalação padrão do 
            O caminho de conteúdo para qualquer conteúdo que o formulário despeja. Digite um caminho que termine com uma barra `/`. A barra significa que, para cada porta de formulário, um novo nó é criado no local determinado; por exemplo:
            `/forms/feedback/`
 
-         * **Exibir dados...**
+         * **Exibir Dados...**
 
            Clique nesse botão para poder acessar as informações sobre os resultados do formulário no Editor de itens em massa. Aqui, é possível exportar as informações para um arquivo .tsv (separado por tabulação) (para uso em uma planilha do Excel, por exemplo).
 
@@ -1287,7 +1287,7 @@ Marca o fim do formulário. Você pode configurar o seguinte:
 
 * **Fim do formulário**
 
-   * **Mostrar botão enviar**
+   * **Mostrar botão Enviar**
 
      Indica se um botão Enviar deve ser mostrado ou não.
 

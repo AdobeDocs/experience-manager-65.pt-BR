@@ -7,10 +7,10 @@ topic-tags: managing-checklist, introduction
 content-type: reference
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '3238'
-ht-degree: 1%
+source-wordcount: '3214'
+ht-degree: 0%
 
 ---
 
@@ -185,7 +185,7 @@ O planejamento do desenvolvimento é fundamental para garantir que seu projeto s
 
    * Processos para cada ambiente; por exemplo, requisitos de implantação e manutenção
    * Atividades de manutenção (Datastore GC, otimização de TarPM e assim por diante)
-   * [](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR)Armazenamento em cache do Dispatcher
+   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) armazenamento em cache
    * [Geração de cluster](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) Publish/Authorshare
    * Desempenho para o lado do cliente (minificação JS, concat, sprites css, número total de solicitações http e outros)
 

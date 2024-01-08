@@ -2,10 +2,10 @@
 title: Como executar o aplicativo headless
 description: Nesta parte da Jornada de desenvolvedores sem periféricos do AEM, saiba como implantar um aplicativo sem periféricos em tempo real.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1874'
-ht-degree: 50%
+source-wordcount: '1803'
+ht-degree: 51%
 
 ---
 
@@ -94,7 +94,7 @@ O ambiente de desenvolvimento local é composto por três áreas principais:
 
 Depois que o ambiente de desenvolvimento local for configurado, você poderá simular o fornecimento de conteúdo para o aplicativo React implantando um servidor de nó estático localmente.
 
-Para obter uma visão mais detalhada da configuração de um ambiente de desenvolvimento local e todas as dependências necessárias para a pré-visualização de conteúdo, consulte [Documentação de implantação de produção](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html?lang=en).
+Para obter uma visão mais detalhada da configuração de um ambiente de desenvolvimento local e todas as dependências necessárias para a pré-visualização de conteúdo, consulte [Documentação de implantação de produção](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html).
 
 ## Preparar seu aplicativo AEM Headless para ativação {#prepare-your-aem-headless-application-for-golive}
 
@@ -141,7 +141,7 @@ Implantar para produção pode depender se você tem um *tradicional* Instância
 
 ## Implantar para produção usando Maven {#deploy-to-production-maven}
 
-Para um *tradicional* (não AMS) usando Maven, consulte a seção [Tutorial do WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=en#build) para obter uma visão geral.
+Para um *tradicional* (não AMS) usando Maven, consulte a seção [Tutorial do WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html#build) para obter uma visão geral.
 
 ## Implantar para produção usando o Cloud Manager {#deploy-to-production-cloud-manager}
 
@@ -214,11 +214,11 @@ Se esse tipo de flexibilidade for algo que você precisa para seu projeto, conti
 
 ## Recursos adicionais {#additional-resources}
 
-* [Guia de desenvolvimento do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html?lang=en)
+* [Guia de desenvolvimento do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html)
 
-* [Tutorial do WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en)
+* [Tutorial do WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)
 
-* [Cloud Manager para AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=pt-BR)
+* [Cloud Manager para AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/introduction.html?lang=pt-BR)
 
 * Cache da CDN
 

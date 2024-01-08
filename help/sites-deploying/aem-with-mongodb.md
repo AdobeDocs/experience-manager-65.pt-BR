@@ -7,7 +7,7 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '6184'
 ht-degree: 0%
@@ -592,7 +592,7 @@ Como o Dispatcher não tem estado, ele pode ser dimensionado horizontalmente com
 
 A execução do AEM sem um Dispatcher requer que a terminação SSL e o balanceamento de carga sejam executados por outro aplicativo. Isso é necessário porque as sessões devem ter afinidade com a instância do AEM em que são criadas, um conceito conhecido como conexões aderentes. O motivo é garantir que as atualizações do conteúdo exibam latência mínima.
 
-Verifique a [Documentação do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) para obter mais informações sobre como configurá-lo.
+Verifique a [Documentação do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) para obter mais informações sobre como configurá-lo.
 
 ### Configuração adicional {#additional-configuration}
 

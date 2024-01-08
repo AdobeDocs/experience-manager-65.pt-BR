@@ -7,7 +7,7 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3186'
 ht-degree: 4%
@@ -46,7 +46,7 @@ Este documento supõe que você já esteja familiarizado com a criação e ediç
 >[!NOTE]
 >
 >O tutorial a seguir também pode ser interessante para configurar um modelo de página editável em um novo projeto:
->[Introdução ao AEM Sites Parte 2 - Criação de uma página base e um modelo](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=en)
+>[Introdução ao AEM Sites Parte 2 - Criação de uma página base e um modelo](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html)
 
 ## Criação de um novo modelo {#creating-a-new-template}
 
@@ -70,7 +70,7 @@ Ao criar um modelo editável, você:
    * A estrutura permite definir os componentes e o conteúdo para o modelo.
    * Os componentes definidos na estrutura do modelo não podem ser movidos em uma página resultante nem excluídos de qualquer página resultante.
 
-      * Se você estiver criando um modelo em uma pasta personalizada fora da `We.Retail` conteúdo de amostra, você pode escolher Componentes de base ou usar [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=en).
+      * Se você estiver criando um modelo em uma pasta personalizada fora da `We.Retail` conteúdo de amostra, você pode escolher Componentes de base ou usar [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html).
 
    * Se desejar que os autores de página possam adicionar e remover componentes, adicione um sistema de parágrafo ao modelo.
    * Os componentes podem ser desbloqueados e bloqueados novamente para permitir que você defina o conteúdo inicial.

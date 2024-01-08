@@ -2,9 +2,9 @@
 title: Armazenamento em cache e desempenho
 description: Saiba mais sobre as diferentes configurações disponíveis para habilitar o GraphQL e o armazenamento em cache de conteúdo para otimizar o desempenho da sua implementação comercial.
 exl-id: ecce64bf-5960-4ddb-b6e3-dad401038c11
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '818'
 ht-degree: 60%
 
 ---
@@ -51,7 +51,7 @@ O armazenamento em cache de páginas ou fragmentos do AEM no [AEM Dispatcher](ht
 
 Além do CIF puro de conteúdo gerenciado por AEM, uma página pode exibir dados comerciais que são buscados dinamicamente no Adobe Commerce via GraphQL. Embora a estrutura da página em si nunca mude, o conteúdo comercial pode mudar se alguns dados do produto (como nome ou preço) forem alterados no Adobe Commerce.
 
-Para garantir que as páginas do CIF possam ser armazenadas em cache por um período limitado no AEM Dispatcher, recomendamos o uso de [Invalidação de cache com base no tempo](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-time-based-cache-invalidation-enablettl) (também conhecido como armazenamento em cache com base em TTL) ao armazenar páginas do CIF no AEM Dispatcher. Esse recurso pode ser configurado no AEM com o uso do pacote adicional [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/).
+Para garantir que as páginas do CIF possam ser armazenadas em cache por um período limitado no AEM Dispatcher, recomendamos o uso de [Invalidação de cache com base no tempo](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (também conhecido como armazenamento em cache com base em TTL) ao armazenar páginas do CIF no AEM Dispatcher. Esse recurso pode ser configurado no AEM com o uso do pacote adicional [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/).
 
 Com o armazenamento em cache com base em TTL, o desenvolvedor normalmente define uma ou várias durações de armazenamento em cache para determinadas páginas do AEM. Isso garante que as páginas CIF sejam armazenadas em cache somente no AEM Dispatcher pela duração configurada e que o conteúdo seja atualizado com frequência.
 

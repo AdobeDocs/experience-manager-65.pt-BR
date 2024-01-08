@@ -2,10 +2,10 @@
 title: Guia do Adobe Experience Manager 6.5 Communities
 description: Crie experiências online, como fóruns, grupos de usuários, recursos de aprendizagem e outros recursos sociais. Navegue por este guia que explica como implantar, administrar, desenvolver e criar comunidades.
 exl-id: 63040353-d34c-4306-9e7a-584ba48d8ad5
-source-git-commit: 7c691e275208287250f3540158a5e9948097b277
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -39,10 +39,10 @@ Crie experiências online, como fóruns, grupos de usuários, recursos de aprend
 ## Principais recursos do AEM
 
 * [Tutoriais do AEM](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
-* [Guia do usuário do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en)
+* [Guia do usuário do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR)
 * [Guia do usuário do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR)
 * [Guia do usuário dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=pt-BR)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/introduction.html?lang=pt-BR)
 * [Disponibilidade do GDPR](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/#home)
 * [Fórum da comunidade AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=pt)

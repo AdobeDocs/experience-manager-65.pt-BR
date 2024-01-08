@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1484'
 ht-degree: 1%
@@ -48,7 +48,7 @@ Antes de continuar, verifique se suas credenciais permitem fazer logon no Adobe 
 
 ### Configuração do AEM para usar seus data centers da Adobe Analytics {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Adobe Analytics [data centers](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=en) colete, processe e armazene dados associados ao seu conjunto de relatórios do Adobe Analytics. Configure o AEM para usar o data center que hospeda o conjunto de relatórios do Adobe Analytics. O data center é mencionado em seu contrato. Entre em contato com um administrador em sua organização para obter essas informações.
+Adobe Analytics [data centers](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html) colete, processe e armazene dados associados ao seu conjunto de relatórios do Adobe Analytics. Configure o AEM para usar o data center que hospeda o conjunto de relatórios do Adobe Analytics. O data center é mencionado em seu contrato. Entre em contato com um administrador em sua organização para obter essas informações.
 
 Se necessário, use o seguinte para ser direcionado ao data center correto: `https://api.omniture.com/`.
 

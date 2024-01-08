@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1712'
-ht-degree: 2%
+source-wordcount: '1659'
+ht-degree: 0%
 
 ---
 
@@ -108,7 +108,7 @@ As etapas necessárias são:
 1. Use o console da Web para instalar e iniciar o pacote:
 
    * Por exemplo, https://localhost:4502/system/console/bundles
-   * Selecione **`Install/Update`**
+   * Selecionar **`Install/Update`**
    * Procurar... para selecionar o pacote extraído do arquivo ZIP baixado
    * Verifique se *Driver JDBC da Oracle Corporation para MySQLcom.mysql.jdbc* está ativo, caso contrário, inicie-o (ou verifique os logs)
 
@@ -116,7 +116,7 @@ As etapas necessárias são:
    * Por exemplo, https://localhost:4502/system/console/configMgr
    * Localizar `Day Commons JDBC Connections Pool` configuração
    * Selecione para abrir
-   * Selecione `Save`
+   * Selecionar `Save`
 
 1. Repita as etapas 3 e 4 em todas as instâncias de autor e publicação
 
@@ -202,7 +202,7 @@ Para todas as outras instâncias de publicação (secundárias) em um farm de pu
 * Localize o `AEM Communities Publisher Configuration`
 * Selecione o ícone de edição
 * Desmarque a opção **Editor primário** caixa
-* Selecione **Salvar**
+* Selecionar **Salvar**
 
 ### Agentes de replicação no autor {#replication-agents-on-author}
 
@@ -258,7 +258,7 @@ Para habilitar o serviço de túnel:
 * Localize o `AEM Communities Publish Tunnel Service`
 * Selecione o ícone de edição
 * Verifique a **habilitar** caixa
-* Selecione **Salvar**
+* Selecionar **Salvar**
 
   ![tunnel-service](assets/tunnel-service.png)
 
@@ -309,9 +309,9 @@ Com o material principal armazenado no repositório, a maneira de replicar a cha
 Usar [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Navegue até [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de)
-* Selecione `/etc/key`
+* Selecionar `/etc/key`
 * Abertura `Replication` guia
-* Selecione `Replicate`
+* Selecionar `Replicate`
 
 * [Atualizar o pacote de criptografia do Granite](#refresh-the-granite-crypto-bundle)
 
@@ -359,7 +359,7 @@ Em particular, tenha cuidado para usar o nome correto do servidor, não `localho
 Se estiver usando um Dispatcher, consulte:
 
 * AEM [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) documentação
-* [Instalação do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en)
+* [Instalação do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)
 * [Configuração do Dispatcher para comunidades](/help/communities/dispatcher.md)
 * [Problemas conhecidos](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

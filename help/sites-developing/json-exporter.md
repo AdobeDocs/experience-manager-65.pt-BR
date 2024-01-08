@@ -1,15 +1,15 @@
 ---
 title: Exportador JSON para serviços de conteúdo
-description: Os Serviços de conteúdo do AEM foram criados para generalizar a descrição e a entrega de conteúdo de e para o AEM para além do foco em páginas da Web. Eles realizam a entrega de conteúdo para canais que não são páginas da Web tradicionais do AEM, usando métodos padronizados que podem ser consumidos por qualquer cliente.
+description: Os Serviços de conteúdo AEM são projetados para generalizar a descrição e a entrega de conteúdo de/para AEM além de um foco em páginas da Web. Eles fornecem a entrega de conteúdo para canais que não são páginas da Web tradicionais do AEM, usando métodos padronizados que podem ser consumidos por qualquer cliente.
 contentOwner: User
 content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 exl-id: 647395c0-f392-427d-a998-e9ddf722b9f9
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 36%
+source-wordcount: '411'
+ht-degree: 23%
 
 ---
 
@@ -81,7 +81,7 @@ Consulte também:
 
    * [API HTTP de ativos](/help/assets/mac-api-assets.md)
 
-* Modelos sling:
+* Modelos Sling:
 
    * [Modelos Sling - Associando uma classe de modelo a um tipo de recurso desde 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 
@@ -99,4 +99,4 @@ Para obter mais detalhes, consulte:
 * [Criação com fragmentos de conteúdo](/help/sites-authoring/content-fragments.md)
 * [Ativação de exportação em JSON para um componente](/help/sites-developing/json-exporter-components.md)
 
-* [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e a variável [Componente Fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)
+* [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e a variável [Componente Fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=pt-BR)

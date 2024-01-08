@@ -7,7 +7,7 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 2%
@@ -98,7 +98,7 @@ O despejo de thread é uma lista de todas as threads do Java™ que estão ativa
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Consulte a [Como fazer despejos de thread de uma JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=en) documentação para obter mais informações
+Consulte a [Como fazer despejos de thread de uma JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html) documentação para obter mais informações
 
 ### Verificando sessões JCR não fechadas {#checking-for-unclosed-jcr-sessions}
 

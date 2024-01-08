@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 pagetitle: Components for Content Fragments
 exl-id: f2edd9b2-f231-42f3-a25e-428cd1d96c2a
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 5%
+source-wordcount: '932'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ Consulte a [API de gerenciamento de fragmento de conteúdo — lado do cliente](
 
 >[!CAUTION]
 >
->A variável [Componente principal do fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en) O agora é recomendado. Consulte [Desenvolvimento dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=pt-BR) para obter mais detalhes.
+>A variável [Componente principal do fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=pt-BR) O agora é recomendado. Consulte [Desenvolvimento dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) para obter mais detalhes.
 >
 >Esta seção detalha o componente original entregue para uso com fragmentos de conteúdo (**Fragmento do conteúdo** no **Geral** grupo).
 
@@ -37,7 +37,7 @@ Consulte a [API de gerenciamento de fragmento de conteúdo — lado do cliente](
 >
 >Consulte também [Fragmentos de conteúdo configuram componentes para renderização](/help/sites-developing/content-fragments-config-components-rendering.md) para obter mais informações.
 
-Os fragmentos de conteúdo do Adobe Experience Manager (AEM) são [criados e gerenciados como ativos independentes da página](/help/assets/content-fragments/content-fragments.md). Eles permitem criar conteúdo não vinculado a canais, juntamente com variações (podem ser específicas de cada canal). [Em seguida, é possível usar estes fragmentos e suas variações ao criar suas páginas de conteúdo](/help/sites-authoring/content-fragments.md). Também é possível usar um ativo de fragmento de conteúdo existente ao [arrastar do navegador de ativos para a página](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (assim como para outros componentes baseados em ativos, como a Imagem do componente básico). O componente Fragmento de conteúdo pronto para uso exibe apenas um [element](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) do fragmento de conteúdo referenciado. Usando a caixa de diálogo de componentes, é possível definir o [elemento, variação e intervalo de parágrafos do fragmento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) que deseja exibir na página.
+Os fragmentos de conteúdo do Adobe Experience Manager (AEM) são [criados e gerenciados como ativos independentes da página](/help/assets/content-fragments/content-fragments.md). Eles permitem criar conteúdo não vinculado a canais, juntamente com variações (podem ser específicas de cada canal). [Em seguida, é possível usar esses fragmentos e suas variações ao criar suas páginas de conteúdo](/help/sites-authoring/content-fragments.md). Também é possível usar um ativo de fragmento de conteúdo existente ao [arrastar do navegador de ativos para a página](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (assim como para outros componentes baseados em ativos, como a Imagem do componente básico). O componente Fragmento de conteúdo pronto para uso exibe apenas um [element](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) do fragmento de conteúdo referenciado. Usando a caixa de diálogo de componentes, é possível definir o [elemento, variação e intervalo de parágrafos do fragmento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) que deseja exibir na página.
 
 >[!NOTE]
 >
