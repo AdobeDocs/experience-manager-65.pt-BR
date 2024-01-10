@@ -3,9 +3,9 @@ title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 2c5791e972deef5fe81768d10ad53acaf946332a
 workflow-type: tm+mt
-source-wordcount: '4333'
+source-wordcount: '4308'
 ht-degree: 1%
 
 ---
@@ -64,9 +64,6 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 
 * **XMLFM de 64 bits**: a iteração de 64 bits do XMLFM apresenta desempenho aprimorado, escalabilidade e gerenciamento refinado de memória. É o primeiro serviço nativo de 64 bits implantado no lado do servidor. Ao utilizar sua capacidade inerente de acessar recursos de memória maiores em comparação ao seu equivalente de 32 bits, o XMLFM de 64 bits capacita o manuseio ininterrupto de cargas de trabalho de renderização maiores. Esse marco não só representa um salto no desempenho, como também introduz aprimoramentos importantes na estrutura de serviço nativa no AEM Forms Server. Essa atualização possibilita ao AEM Forms Server oferecer suporte ininterrupto a qualquer serviço nativo de 64 bits.
 
-**Recurso obsoleto**
-
-* O AtiveMQ no AEM está obsoleto. O AtiveMQ foi usado para comunicação entre duas instâncias de publicação do AEM. A Adobe recomenda que os clientes agora usem um balanceador de carga.
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
