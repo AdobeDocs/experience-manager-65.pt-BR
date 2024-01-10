@@ -1,13 +1,13 @@
 ---
-title: Configurar o [!DNL Workfront for Experience Manager enhanced connector]
-description: Configurar o [!DNL Workfront for Experience Manager enhanced connector]
+title: Configurar [!DNL Workfront for Experience Manager enhanced connector]
+description: Configurar [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 2cf980f643e1896ecd581fec44f963d7eb44766d
 workflow-type: tm+mt
-source-wordcount: '1723'
+source-wordcount: '1698'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Um usuário com acesso de administrador no [!DNL Adobe Experience Manager] confi
 >
 >* O Adobe pode lançar atualizações para [!DNL Adobe Workfront] e [!DNL Adobe Experience Manager] que tornam esse conector redundante; se isso ocorrer, pode ser necessário que os clientes façam a transição do uso desse conector.
 >
->* O Adobe suporta o conector aprimorado versões 1.7.4 e superiores. As versões anteriores de pré-lançamento e personalizadas não são compatíveis. Para verificar a versão aprimorada do conector, navegue até a `digital.hoodoo` grupo disponível no painel esquerdo no [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR).
+>* O Adobe suporta o conector aprimorado versões 1.7.4 e superiores. As versões anteriores de pré-lançamento e personalizadas não são compatíveis. Para verificar a versão aprimorada do conector, navegue até a `digital.hoodoo` grupo disponível no painel esquerdo no [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en).
 >
 >* Consulte [Exame de certificação de parceiros para o conector aprimorado do Workfront for Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Para obter informações sobre o exame, consulte [Guia do exame](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
@@ -60,6 +60,7 @@ Para se inscrever nos eventos, siga estas etapas:
 1. Acesse a guia Pastas vinculadas do projeto nos serviços em nuvem.
 1. Caminho principal da pasta vinculada: selecione uma pasta no DAM onde deseja criar as pastas vinculadas. Se deixado em branco, o padrão será /content/dam. Verifique se o esquema de metadados das Ferramentas do Workfront e o esquema de metadados da pasta vinculada do Workfront foram aplicados à pasta selecionada.
 1. Estrutura de pasta vinculada: insira valores separados por vírgula. Cada valor deve ser `DE:<some-project-custom-form-field>`, Portfolio, Programa, Ano, Nome ou algum &quot;Valor de string literal&quot; (este último com aspas). No momento, está definido como Portfolio, Program, Year, DE:Project Type, Name.
+1. Configurar permissões: Adicionar `jcr:all permissions` permissões para `/conf/workfront-tools/settings/cloudconfigs` para `wf-workfront-users` grupo.
 1. Criar título de pasta vinculado no Workfront usando a caixa de seleção de nomes de estrutura de pastas deve ser marcada se o título da pasta no Workfront deve incluir todas as pastas na estrutura. Caso contrário, será o título da última pasta.
 1. Sub-folders multifield permite especificar uma lista de pastas que devem ser criadas como uma pasta filho da pasta vinculada.
 1. Status do projeto: selecione o status do projeto para criar a pasta vinculada.
