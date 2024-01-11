@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+source-git-commit: 4b5b3ac41034bd4cc0f359b35cac0515b76ca64e
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 8%
+source-wordcount: '727'
+ht-degree: 7%
 
 ---
 
@@ -27,12 +27,12 @@ Embora ele ilustre um vertical de varejo, a forma como o site é configurado pod
 
 Como implementação de referência padrão do AEM, o We.Retail apresenta alguns dos recursos mais eficientes do AEM.
 
-| **Destaque** | **Descrição** | **Interessado?** |
+| **Recurso** | **Descrição** | **Interessado?** |
 |---|---|---|
 | [Estrutura do site globalizada](/help/sites-administering/tc-bp.md) | O We.Retail inclui matrizes de idioma que são copiadas em tempo real para sites específicos de cada país. | [Experimente!](/help/sites-developing/we-retail-globalized-site-structure.md) |
 | [Layout responsivo](/help/sites-authoring/responsive-layout.md) | Todas as páginas apresentam um layout responsivo para adaptar dinamicamente à tela e ao tamanho do dispositivo. | [Experimente!](/help/sites-developing/we-retail-responsive-layout.md) |
 | [Modelos editáveis](/help/sites-developing/page-templates-editable.md) | Todas as páginas são baseadas em modelos editáveis, permitindo que não desenvolvedores adaptem e personalizem os modelos. | [Experimente!](/help/sites-developing/we-retail-editable-templates.md) |
-| [Linguagem de modelo HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR) | Todos os componentes são baseados em HTL |  |
+| [Linguagem de modelo do HTML](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR) | Todos os componentes são baseados em HTL |  |
 | [Recursos de comércio eletrônico](/help/commerce/cif-classic/developing/ecommerce.md) | Apresenta um catálogo de produtos |  |
 | [Sites de comunidades](/help/communities/overview.md) | Permitir que visitantes participem de discussões da comunidade, leiam blogs e muito mais |  |
 | [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) | Todos os componentes são baseados nos novos componentes principais e são mais utilizáveis e configuráveis pelo usuário, prontos para uso | [Experimente!](/help/sites-developing/we-retail-core-components.md) |
@@ -49,7 +49,7 @@ O We.Retail é fornecido como conteúdo de amostra de AEM. Para usar o, basta [c
 
 >[!CAUTION]
 >
->O We.Retail é baseado na tecnologia AEM mais recente e, portanto, não é compatível [criação da interface clássica](/help/sites-classic-ui-authoring/home.md).
+>O We.Retail é baseado na tecnologia AEM mais recente e, portanto, não é compatível [criação da interface clássica](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md).
 
 ### Versão mais recente {#latest-version}
 
@@ -75,7 +75,7 @@ A tabela a seguir fornece uma visão geral dos principais recursos disponíveis 
 * **Disponível** significa que exemplos do recurso são encontrados no conteúdo de amostra.
 * **Não disponível** significa que exemplos do recurso não estão disponíveis no conteúdo de amostra, mas não significa que o recurso em si não esteja.
 
-| **Destaque** | **We.Retail** | **Geometrixx** |
+| **Recurso** | **We.Retail** | **Geometrixx** |
 |---|---|---|
 | Estrutura do site globalizada | Idiomas principais copiados para sites específicos do país | Não disponível |
 | Fragmentos de conteúdo | Disponível | Não disponível |
@@ -85,7 +85,7 @@ A tabela a seguir fornece uma visão geral dos principais recursos disponíveis 
 | HTL | Todos os componentes | Limitado |
 | Direcionar | Para todas as páginas | Somente Geometrixx Outdoors |
 | Screens | Disponível | Não disponível |
-| Móvel | Não disponível | Disponível |
+| Mobile | Não disponível | Disponível |
 | Manuscritos | Não disponível | Disponível |
 | Visualizador do carrossel, downloads e componentes de gráfico | Não disponível | Disponível |
 | Controle de coluna | Substituído pelo contêiner de layout | Disponível |

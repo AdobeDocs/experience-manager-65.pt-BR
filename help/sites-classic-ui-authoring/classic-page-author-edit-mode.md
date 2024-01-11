@@ -7,7 +7,7 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '5991'
 ht-degree: 3%
@@ -835,7 +835,7 @@ Os componentes de formulário são usados para criar formulários para os visita
 
 >[!NOTE]
 >
->Consulte [Ajuda do AEM Forms](/help/forms/home.md) para obter informações sobre o AEM Forms.
+>Consulte [Ajuda do AEM Forms](/help/forms/using/introduction-aem-forms.md) para obter informações sobre o AEM Forms.
 
 Os Forms são criados a partir de vários componentes diferentes:
 

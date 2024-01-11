@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Use a documentação do Adobe Experience Manager 6.5 para saber como funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5
-source-git-commit: 241e39ae402744ac200cfd9220245b080aec33af
+source-git-commit: 4be8b14ca9af543cec89c85ec5750f2065033406
 workflow-type: tm+mt
-source-wordcount: '7328'
+source-wordcount: '7297'
 ht-degree: 20%
 
 ---
@@ -17,8 +17,7 @@ ht-degree: 20%
 # Documentação do Adobe Experience Manager 6.5 {#content}
 
 + Notas de versão {#release-notes}
-   + [Notas de versão do AEM 6.5](/help/release-notes/home.md)
-   + [Notas de versão atuais](/help/release-notes/release-notes.md)
+   + [Notas de versão](/help/release-notes/release-notes.md)
    + Notas de versão anteriores {#service-pack}
       + [6.5.18](/help/release-notes/previous/6.5.18.md)
       + [6.5.17](/help/release-notes/previous/6.5.17.md)
@@ -74,7 +73,6 @@ ht-degree: 20%
    + [Suporte a cookie Same Site](/help/sites-administering/same-site-cookie-support.md)
 + Sites {#sites}
    + Criação {#authoring}
-      + [Visão geral do Guia do usuário de criação](/help/sites-authoring/home.md)
       + Tarefas, ferramentas e conceitos essenciais para a criação de AEM {#essentials}
          + [Primeiras etapas para autores](/help/sites-authoring/first-steps.md)
          + [Criação de página](/help/sites-authoring/page-authoring.md)
@@ -270,7 +268,6 @@ ht-degree: 20%
          + [Gerenciamento de conteúdo para o Screens](/help/sites-administering/content-management-screens.md)
          + [Acesso ao WebDAV](/help/sites-administering/webdav-access.md)
    + Criação da interface clássica {#classic-ui}
-      + [Visão geral do Guia de criação da interface clássica](/help/sites-classic-ui-authoring/home.md)
       + Introdução à criação da interface clássica {#introduction}
          + [Primeiras etapas para autores](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)
          + [Criação na interface clássica](/help/sites-classic-ui-authoring/classicui.md)
@@ -340,7 +337,6 @@ ht-degree: 20%
          + [Trabalhar com o Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
          + [Convenções de nomenclatura para testes de ativos](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
 + Assets {#assets}
-   + [[!DNL Assets] guia do usuário](/help/assets/home.md)
    + [Sobre o DAM](/help/assets/assets.md)
    + [Práticas recomendadas para ativos](/help/assets/best-practices-for-assets.md)
    + [Acessibilidade no  [!DNL Assets]](/help/assets/accessibility.md)
@@ -504,7 +500,6 @@ ht-degree: 20%
       + [Instalar o [!DNL enhanced connector] para o [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Configurar o [!DNL enhanced connector] para o [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
 + Forms {#forms}
-   + [Guia do Forms do AEM 6.5](/help/forms/home.md)
    + Notas de versão {#release-notes-new-features}
       + [Novidades](/help/forms/using/whats-new.md)
       + [Perguntas frequentes](/help/forms/using/frequently-asked-questions-faq.md)
@@ -1192,9 +1187,8 @@ ht-degree: 20%
       + [Gerar e trabalhar com hashes em PDF forms dinâmicos](/help/forms/developing/hashing-forms.md)
       + [Transmitindo credenciais usando cabeçalhos de Segurança WS](/help/forms/developing/passing-credentials.md)
 + Content and Commerce {#commerce}
-   + [AEM Content and Commerce](/help/commerce/home.md)
-   + [Alterações importantes no conteúdo e comércio do AEM](/help/commerce/cif/changes.md)
    + [Introdução e visão geral](/help/commerce/cif/introduction.md)
+   + [Alterações importantes no conteúdo e comércio do AEM](/help/commerce/cif/changes.md)
    + Integrações {#integrations}
       + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
       + [Solução comercial de terceiros](/help/commerce/cif/integrating/third-party.md)
@@ -1276,7 +1270,6 @@ ht-degree: 20%
    + [O que é uma jornada de documentação?](/help/journey-documentation/home.md)
 + Implementação {#implementing}
    + Desenvolvimento {#developing}
-      + [Visão geral do Guia do usuário para desenvolvimento](/help/sites-developing/home.md)
       + Introdução para desenvolvedores {#introduction}
          + [Introdução ao desenvolvimento do AEM Sites - Tutorial de WKND](/help/sites-developing/getting-started.md)
          + [Conceitos principais de AEM](/help/sites-developing/the-basics.md)
@@ -1529,7 +1522,6 @@ ht-degree: 20%
          + [Criação de sites para dispositivos móveis](/help/sites-developing/mobile.md)
          + [Emuladores](/help/sites-developing/emulators.md)
    + Implantação {#deploying}
-      + [Guia de implementação do usuário](/help/sites-deploying/home.md)
       + Introdução à plataforma AEM {#introduction}
          + [Introdução à plataforma AEM](/help/sites-deploying/platform.md)
          + [Requisitos técnicos](/help/sites-deploying/technical-requirements.md)

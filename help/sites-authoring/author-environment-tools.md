@@ -7,7 +7,7 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '2246'
 ht-degree: 47%
@@ -103,7 +103,7 @@ A aparência e o manuseio real dependem do tipo de dispositivo que você está u
 
 ## Navegador de ativos {#assets-browser}
 
-O navegador de ativos mostra todos os [ativos](/help/assets/home.md) disponíveis para uso direto em sua página atual.
+O navegador de ativos mostra todos os [ativos](/help/assets/assets.md) disponíveis para uso direto em sua página atual.
 
 O navegador de ativos é uma guia dentro do painel lateral juntamente com o [componentes procurar](/help/sites-authoring/author-environment-tools.md#components-browser)r e [árvore de conteúdo](/help/sites-authoring/author-environment-tools.md#content-tree). Para abrir ou fechar o painel lateral, use o ícone na parte superior esquerda da barra de ferramentas:
 

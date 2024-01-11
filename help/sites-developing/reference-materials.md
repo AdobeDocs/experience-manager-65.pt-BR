@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 docset: aem65
 exl-id: 8d8a7237-8e87-4730-be90-2a18144fc65a
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 3%
@@ -39,7 +39,7 @@ APIs de entrega de AEM e gerenciamento de conteúdo:
 
    * [Exportador JSON](/help/sites-developing/json-exporter.md)
    * [Ativação de exportação em JSON para um componente](/help/sites-developing/json-exporter-components.md)
-   * Consulte a [seção Componentes no Guia do usuário para desenvolvimento](/help/sites-developing/home.md) para obter mais informações
+   * Consulte a [seção Componentes no Guia do usuário para desenvolvimento](/help/sites-developing/getting-started.md) para obter mais informações
 
 * **Assets**: a API HTTP do Assets permite operações CRUD (create-read-update-delete) em ativos, incluindo binários, metadados, representações e comentários. Consulte [API HTTP do AEM Assets](/help/assets/mac-api-assets.md)
 

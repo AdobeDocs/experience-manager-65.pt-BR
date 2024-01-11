@@ -2,7 +2,7 @@
 title: Criação de páginas de conteúdo no AEM
 description: As tarefas envolvidas na criação de uma página de conteúdo no Adobe Experience Manager 6.5.
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Os itens a seguir fornecem dois tipos de visão geral para a criação com AEM:
 
 >[!NOTE]
 >
->Esta seção aborda as tarefas envolvidas na criação de uma página de conteúdo. Há muitos recursos adicionais estreitamente relacionados à criação de páginas, abordados em outras seções do [Guia de criação](/help/sites-authoring/home.md).
+>Esta seção aborda as tarefas envolvidas na criação de uma página de conteúdo. Há muitos recursos adicionais estreitamente relacionados à criação de páginas, abordados em outras seções do [Guia de criação](/help/sites-authoring/first-steps.md).
 
 ## Visão geral rápida dos recursos usados para a criação de páginas {#quick-overview-of-features-used-for-authoring-pages}
 

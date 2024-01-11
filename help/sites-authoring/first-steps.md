@@ -1,18 +1,19 @@
 ---
 title: Primeiros passos para autores ao criar conteúdo no AEM
-description: Uma visão geral das principais tarefas que você usa ao criar conteúdo com o Adobe Experience Manager (AEM).
+description: Explore os principais conceitos de criação e conteúdo no AEM 6.5. Você também encontrará informações sobre o uso de tags, modelos e outros recursos da página.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '413'
 ht-degree: 6%
 
 ---
+
 
 # Primeiras etapas para autores{#first-steps-for-authors}
 

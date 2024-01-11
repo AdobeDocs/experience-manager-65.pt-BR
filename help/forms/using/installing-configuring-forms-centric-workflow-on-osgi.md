@@ -5,7 +5,7 @@ topic-tags: installing
 docset: aem65
 role: Admin
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '1590'
 ht-degree: 2%
@@ -28,7 +28,7 @@ O AEM Forms é uma plataforma poderosa de nível empresarial. O fluxo de trabalh
 >
 >Com um fluxo de trabalho centrado na Forms no OSGi, você pode criar e implantar rapidamente fluxos de trabalho para várias tarefas na pilha do OSGi, sem precisar instalar o recurso completo de Gerenciamento de processos na pilha do JEE. Consulte uma [comparação](capabilities-osgi-jee-workflows.md) dos fluxos de trabalho de AEM centrados na Forms no OSGi e no Gerenciamento de processos no JEE para saber a diferença e as semelhanças nos recursos.
 >
->Após a comparação, se você optar por instalar o recurso Gerenciamento de processos na pilha do JEE, consulte [Instalar ou atualizar o AEM Forms no JEE](/help/forms/home.md) para obter informações detalhadas sobre a instalação e configuração da pilha JEE e os recursos de Gerenciamento de processos.
+>Após a comparação, se você optar por instalar o recurso Gerenciamento de processos na pilha do JEE, consulte [Instalar ou atualizar o AEM Forms no JEE](/help/forms/using/introduction-aem-forms.md) para obter informações detalhadas sobre a instalação e configuração da pilha JEE e os recursos de Gerenciamento de processos.
 
 ## Topologia de implantação {#deployment-topology}
 

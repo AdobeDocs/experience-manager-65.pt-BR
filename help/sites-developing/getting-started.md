@@ -1,18 +1,19 @@
 ---
 title: Introdução ao desenvolvimento do AEM Sites - Tutorial de WKND
-description: Novo no desenvolvimento no AEM? Precisa revisar as práticas recomendadas? Este é o lugar para começar. A meta deste tutorial de várias partes é ensinar a um desenvolvedor novo no AEM como implementar um site no AEM usando os padrões e tecnologias mais recentes.
+description: Saiba como criar sua instância de AEM. Saiba mais sobre a plataforma e os componentes e encontre informações sobre ferramentas de desenvolvimento e personalização.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
 docset: aem65
 exl-id: 8314d7fe-0a46-453d-9592-f1bcd8c8f10a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 81%
+source-wordcount: '211'
+ht-degree: 69%
 
 ---
+
 
 # Introdução ao desenvolvimento do AEM Sites - Tutorial de WKND{#getting-started-developing-aem-sites-wknd-tutorial}
 
