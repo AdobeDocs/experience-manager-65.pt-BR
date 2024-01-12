@@ -1,6 +1,6 @@
 ---
 title: Primeiros passos para autores ao criar conteúdo no AEM
-description: Explore os principais conceitos de criação e conteúdo no AEM 6.5. Você também encontrará informações sobre o uso de tags, modelos e outros recursos da página.
+description: Explore os principais conceitos de criação de conteúdo no AEM 6.5. Você também encontrará informações sobre o uso de tags, modelos e outros recursos da página.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -10,7 +10,7 @@ exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
 source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 6%
+ht-degree: 12%
 
 ---
 
