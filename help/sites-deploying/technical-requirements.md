@@ -3,10 +3,10 @@ title: Requisitos técnicos
 description: Uma lista das plataformas de cliente e servidor compatíveis com o Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: fbf056b6b7dcbfcaa27744672c45a87316c5f761
 workflow-type: tm+mt
-source-wordcount: '3624'
-ht-degree: 0%
+source-wordcount: '3642'
+ht-degree: 1%
 
 ---
 
@@ -112,12 +112,14 @@ Existem várias opções para implantar o repositório do Adobe Experience Manag
 | **Platform** | **Descrição** | **Nível de suporte** |
 |---|---|---|
 | **Sistema de arquivos com arquivos TAR** `[1]` | Repositório | A: Suportado |
-| **Sistema de arquivos com armazenamento de dados** `[1]` | Binários | R: Suportado |
+| **Sistema de arquivos com armazenamento de dados** `[1]` | Binários | A: Suportado |
 | Armazenar binários em arquivos TAR no sistema de arquivos `[1]` | Binários | Z: Não suportado para produção |
 | Amazon S3 | Binários | A: Suportado |
 | Armazenamento Microsoft® Azure Blob | Binários | A: Suportado |
-| MongoDB Enterprise 4.4 | Repositório | A: Suportado `[2, 3, 4]` |
-| MongoDB Enterprise 4.2 | Repositório | A: Suportado `[2, 3, 4]` |
+| MongoDB Enterprise 6.0 | Repositório | A: Suportado `[3, 4]` |
+| MongoDB Enterprise 5.0 | Repositório | A: Suportado `[3, 4]` |
+| MongoDB Enterprise 4.4 | Repositório | A: Suportado `[2, 3, 4, 7]` |
+| MongoDB Enterprise 4.2 | Repositório | A: Suportado `[2, 3, 4, 7]` |
 | MongoDB Enterprise 4.0 | Repositório | Z: Não suportado |
 | MongoDB Enterprise 3.6 | Repositório | Z: Não suportado |
 | MongoDB Enterprise 3.4 | Repositório | Z: Não suportado |
@@ -132,9 +134,10 @@ Existem várias opções para implantar o repositório do Adobe Experience Manag
 1. A fragmentação de MongoDB não é compatível com o AEM.
 1. O WiredTiger do Mecanismo de Armazenamento MongoDB é compatível somente.
 1. Compatível com clientes de atualização do AEM Forms. Não suportado para novas instalações.
-1. Somente AEM Forms aplicável:
+1. Aplicável somente ao AEM Forms:
    * Remoção do suporte ao Oracle Database 12c e adição do suporte ao Oracle Database 19c.
    * Remoção do suporte ao Microsoft® SQL Server 2016 e adição de suporte ao Microsoft® SQL Server 2019.
+1. Não compatível com o AEM Forms.
 
 >[!NOTE]
 >
@@ -152,17 +155,17 @@ Caso deseje executar o Author e o Publish no MongoDB, duas licenças separadas d
 >
 O Atendimento ao cliente do Adobe auxilia na qualificação de problemas relacionados ao uso do MongoDB com AEM.
 >
-Para obter mais informações, consulte [Página do MongoDB para Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
+Para obter mais informações, consulte o [MongoDB para Adobe Experience Manager página](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 
 >[!NOTE]
 >
-Os bancos de dados relacionais compatíveis listados acima são softwares de terceiros e não estão incluídos no pacote de licenciamento do AEM.
+Os bancos de dados relacionais compatíveis, conforme listado acima, são softwares de terceiros e não são incluídos no pacote de licenciamento AEM.
 >
-Para executar AEM 6.5 com um banco de dados relacional compatível, é necessário um contrato de suporte separado com um fornecedor de banco de dados. Adobe Systems atendimento ao cliente ajuda a qualificar problemas relacionados ao uso de bancos de dados relacionais com o AEM 6.5.
+Para executar o AEM 6.5 com um banco de dados relacional compatível, é necessário um contrato de suporte separado com um fornecedor de banco de dados. O Atendimento ao cliente do Adobe auxilia na qualificação de problemas relacionados ao uso de bancos de dados relacionais com AEM 6.5.
 >
-**A maioria dos bancos de dados relacionais é atualmente suportada no Nível R no AEM 6.5, que vem com critérios de suporte e uma programa de suporte, conforme indicado na descrição do Nível-R acima.**
+**A maioria dos bancos de dados relacionais são suportados atualmente no Nível-R no AEM 6.5, que vem com critérios de suporte e um programa de suporte, conforme declarado na descrição do Nível-R acima.**
 
-### Mecanismos de Servlet / Servidores de aplicativo {#servlet-engines-application-servers}
+### Mecanismos de Servlet / Servidores de Aplicativos {#servlet-engines-application-servers}
 
 O Adobe Experience Manager pode ser executado como um servidor independente (o arquivo JAR de início rápido) ou como um aplicativo da Web em um servidor de aplicativos de terceiros (o arquivo WAR).
 
@@ -170,7 +173,7 @@ A versão mínima da API de Servlet necessária é a 3.1
 
 | Platform | Nível de compatibilidade |
 |---|---|
-| **Mecanismo Servlet integrado Quickstart (Jetty 9.4)** | R: Suportado |
+| **Mecanismo Servlet integrado Quickstart (Jetty 9.4)** | A: Suportado |
 | Oracle WebLogic Server 12.2 (12cR2) | Z: Não suportado |
 | Entrega contínua do IBM® WebSphere® Application Server (LibertyProfile) com Web Profile 7.0 e IBM® JRE 1.8 | R: Suporte restrito para novos contratos `[2]` |
 | IBM® WebSphere® Application Server 9.0 e IBM® JRE 1.8 | R: Suporte restrito para novos contratos `[1]` `[2]` |
@@ -212,9 +215,9 @@ O Adobe Experience Manager funciona com as seguintes plataformas de servidor par
    * libxcb.x86_64 (1.13-1.el7)
    * libXau.x86_64 (1.0.8-2.1.el7)
 
-1. As implantações de produção do Microsoft® Windows são compatíveis com clientes que atualizam para a versão 6.5 e para uso sem produção. Novo implantações estão solicitação para AEM Sites e Assets.
-1. AEM Forms são compatíveis com o Microsoft® Window Server sem as restrições de nível de suporte R.
-1. AEM Forms remoção do suporte ao Microsoft® Windows Server 2016.
+1. As implantações de produção do Microsoft® Windows são suportadas para clientes que estão atualizando para a versão 6.5 e para uso fora da produção. Novas implantações são feitas sob solicitação para o AEM Sites e o Assets.
+1. O AEM Forms é suportado no Microsoft® Windows Server sem as restrições do nível de suporte R.
+1. A AEM Forms removeu o suporte ao Microsoft® Windows Server 2016.
 
 >[!NOTE]
 >
@@ -227,7 +230,7 @@ Se estiver instalando o AEM Forms 6.5, certifique-se de ter instalado o seguinte
 * Microsoft® Visual C++ 2019(VC14.28 ou superior) redistribuível
 
 
-### Ambientes virtuais e de computação em nuvem {#virtual-cloud-computing-environments}
+### Ambientes de computação virtual e em nuvem {#virtual-cloud-computing-environments}
 
 O Adobe Experience Manager é compatível com a execução em uma máquina virtual em ambientes de computação em nuvem. Esses ambientes incluem o Microsoft® Azure e o Amazon Web Services (AWS), executados em conformidade com os requisitos técnicos listados nesta página e de acordo com os termos de suporte padrão do Adobe.
 
@@ -248,19 +251,19 @@ Os seguintes servidores da Web são compatíveis para uso com o Dispatcher vers�
 | Platform | Nível de compatibilidade |
 |---|---|
 | **Apache httpd 2.4.x** `[1,2]` | A: Suportado |
-| Microsoft® IIS 10 (Servidor de Informações da Internet) | A: Suportado |
+| Microsoft® IIS 10 (Servidor de Informações da Internet) | R: Suportado |
 | Microsoft® IIS 8.5 (Servidor de Informações da Internet) | Z: Não suportado |
 
-1. Os servidores web criados com base no código-fonte httpd do Apache têm tanto suporte quanto a versão do httpd na qual se baseia. Em caso de dúvida, solicite Adobe Systems confirmação do nível de suporte relacionado ao respectivo produto de servidor. Os seguintes casos:
+1. Os servidores web criados com base no código-fonte httpd do Apache têm tanto suporte quanto a versão do httpd na qual se baseia. Em caso de dúvida, peça ao Adobe a confirmação do nível de suporte relacionado ao respectivo produto de servidor. Os seguintes casos:
 
    1. O servidor HTTP foi criado usando apenas distribuições de origem oficiais do Apache, ou
    1. O servidor HTTP foi entregue como parte do sistema operacional no qual está sendo executado. Exemplos: IBM® HTTP Server, Oracle HTTP Server
 
-1. Dispatcher não está disponível para o Apache 2.4.x para sistemas operacionais Windows.
+1. O Dispatcher não está disponível para o Apache 2.4.x para sistemas operacionais Windows.
 
-## Plataformas do cliente suportadas {#supported-client-platforms}
+## Plataformas de cliente compatíveis {#supported-client-platforms}
 
-### Navegadores compatíveis com a criação da interface do usuário {#supported-browsers-for-authoring-user-interface}
+### Navegadores compatíveis com a interface de criação de usuário {#supported-browsers-for-authoring-user-interface}
 
 A interface do usuário do Adobe Experience Manager funciona com as seguintes plataformas de cliente. Todos os navegadores são testados com o conjunto padrão de plug-ins e complementos.
 
@@ -297,12 +300,12 @@ O Mozilla Firefox, o Google Chrome e o Microsoft® Edge lançam atualizações a
   <tr>
    <td>Mozilla Firefox (Evergreen)</td>
    <td>A: Suportado</td>
-   <td>A: Suportado</td>
+   <td>R: Suportado</td>
   </tr>
   <tr>
    <td>Mozilla Firefox último ESR [1]</td>
-   <td>R: Suportado</td>
-   <td>R: Suportado</td>
+   <td>A: Suportado</td>
+   <td>A: Suportado</td>
   </tr>
   <tr>
    <td>Apple Safari no macOS (Evergreen)</td>
@@ -340,7 +343,7 @@ Geralmente, o suporte a navegadores para sites renderizados pelo AEM Sites depen
 
 Ao conectar com o Microsoft® Windows 7+ a uma instância AEM que não é protegida por SSL, a autenticação básica em uma rede não segura deve ser ativada no Windows. Ela requer uma alteração no Registro do Windows do WebClient:
 
-1. Localize a subchave do Registro:
+1. Localize a sub-tecla do registro:
 
    * HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters
 
@@ -352,7 +355,7 @@ Esta seção fornece notas especiais e informações mais detalhadas sobre a exe
 
 ### IPv4 e IPv6 {#ipv-and-ipv}
 
-Todos os elementos do Adobe Experience Manager (Instância, Dispatcher) podem ser instalados em redes IPv4 e IPv6.
+Todos os elementos de Adobe Experience Manager (Instância, Dispatcher) podem ser instalados nas redes IPv4 e IPv6.
 
 A operação é perfeita, pois nenhuma configuração especial é necessária. Você especifica um endereço IP usando o formato apropriado ao seu tipo de rede, se necessário.
 
@@ -364,11 +367,11 @@ Quando um endereço IP deve ser especificado, você pode selecionar (conforme ne
 
 * Um nome de servidor. Por exemplo, `https://www.yourserver.com:4502`
 
-* O caso padrão é interpretado para instalações de `localhost` rede IPv4 e IPv6. Por exemplo, `https://localhost:4502`
+* O caso padrão de `localhost` é interpretado para instalações de rede IPv4 e IPv6. Por exemplo, `https://localhost:4502`
 
-### Requisitos do complemento AEM Mídia dinâmica {#requirements-for-aem-dynamic-media-add-on}
+### Requisitos para o complemento AEM Dynamic Media {#requirements-for-aem-dynamic-media-add-on}
 
-AEM Mídia dinâmica desabilitadas por padrão. Consulte aqui para [ativar o Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
+O AEM Dynamic Media está desativado por padrão. Consulte aqui para [ativar o Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
 Com o Dynamic Media habilitado, os seguintes requisitos técnicos adicionais se aplicam.
 
@@ -406,11 +409,11 @@ Se o local for definido de modo que LC_CTYPE não seja igual a `en_US.UTF-8`, im
 
 >[!NOTE]
 >
-**Arquitetura NUMA:** Os sistemas com processadores AMD64 e Intel® EM64T são normalmente configurados como plataformas de arquitetura de memória não uniforme (NUMA). Ou seja, o kernel constrói vários nós de memória no momento da inicialização em vez de construir um único nó de memória.
+**Arquitetura NUMA:** sistemas com processadores AMD64 e Intel® EM64T são normalmente configurados como plataformas de arquitetura de memória não uniforme (NUMA). Ou seja, o kernel constrói vários nós de memória no momento da inicialização, em vez de construir uma única memória nó.
 >
-As múltiplas nó construção podem resultar em exaustão de memória em um ou mais nós antes que outros nós se esgotem. Quando a exaustão de memória acontece, o kernel pode decidir matar processos (por exemplo, o Servidor Imagem ou Platform Servidor) mesmo que haja memória disponível.
+As múltiplas nó construção podem resultar em exaustão de memória em um ou mais nós antes que outros nós se esgotem. Quando ocorre esgotamento da memória, o kernel pode decidir eliminar processos (por exemplo, o Servidor de imagens ou o Servidor da plataforma) mesmo que haja memória disponível.
 >
-Portanto, Adobe Systems recomenda que, se você estiver executando esse sistema, desative o NUMA usando a opção **numa=off** boot para evitar que o kernel mate esses processos.
+Portanto, a Adobe recomenda que, se você estiver executando um sistema desse tipo, desative o NUMA usando o **numa=off** opção de inicialização para evitar que o kernel mate esses processos.
 
 >[!NOTE]
 >
@@ -421,15 +424,15 @@ Portanto, Adobe Systems recomenda que, se você estiver executando esse sistema,
 #### Windows {#windows}
 
 * Microsoft® Windows Server 2016
-* Espaço de troca igual a pelo menos o dobro da quantidade de memória física (RAM)
+* Trocar espaço igual a pelo menos o dobro da quantidade de memória física (RAM)
 
 Para usar o Dynamic Media no Windows, instale o Microsoft® Visual Studio 2010, 2013 e 2015 redistribuível para x64 e x86.
 
 Para Windows x64:
 
-* Obtenha o Microsoft® Visual Studio 2010 redistribuível em [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
-* Obtenha o Microsoft® Visual Studio 2013 redistribuível em [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
-* Obtenha o Microsoft® Visual Studio 2015 redistribuível em [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
+* Faça com que o Microsoft® Visual Studio 2010 fique redistribuível a [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
+* Faça com que o Microsoft® Visual Studio 2013 fique redistribuível a [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
+* Receba a redistribuição do Microsoft® Visual Studio 2015 à [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
 
 Para Windows x86:
 
@@ -450,14 +453,14 @@ Para Windows x86:
  <tbody>
   <tr>
    <th><p><strong>Produto</strong></p> </th>
-   <th><p><strong>Formatos suportados para conversão em PDF</strong></p> </th>
+   <th><p><strong>Formatos compatíveis para conversão em PDF</strong></p> </th>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Faixa clássica do Acrobat 2020</a> versão mais recente</td>
    <td>XPS, formatos de imagem (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF e DWF</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Faixa clássica do Acrobat 2017</a> versão mais recente (obsoleto)</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat versão mais recente do classic faixa</a> de 2017 (obsoleta)</td>
    <td>XPS, formatos de imagem (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF e DWF</td>
   </tr>
   <tr>
@@ -520,10 +523,10 @@ Além disso,
 ### Requisitos para o AEM Forms Designer {#requirements-for-aem-forms-designer}
 
 * Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server ou Microsoft® Windows® 10
-* 1 GHz ou mais rápido com suporte para PAE, NX e SSE2.
+* Processador 1 GHz ou mais rápido com suporte para PAE, NX e SSE2.
 * 1 GB de RAM para 32 bits ou 2 GB de RAM para SO de 64 bits
-* 16 GB de espaço em disco para 32 ou 20 GB de espaço em disco para SO de 64 bits
-* Memória gráfica - 128 MB de GPU (recomenda-se 256 MB)
+* Espaço em disco de 16 GB para espaço em disco de 32 ou 20 GB para sistema operacional de 64 bits
+* Memória gráfica - 128 MB de GPU (recomendado de 256 MB)
 * 2,35 GB de espaço disponível em disco rígido
 * Resolução do monitor de 1024 X 768 pixels ou superior
 * Aceleração de hardware de vídeo (opcional)
@@ -534,7 +537,7 @@ Além disso,
 
 ### Requisitos para write-back de metadados do AEM Assets XMP {#requirements-for-aem-assets-xmp-metadata-write-back}
 
-O write-back de XMP é compatível e habilitado para as seguintes plataformas e formatos de arquivo:
+XMP write-back é compatível e ativado para as seguintes plataformas e formatos de arquivo:
 
 * **Sistemas operacionais:**
 
@@ -547,4 +550,4 @@ O write-back de XMP é compatível e habilitado para as seguintes plataformas e 
 
 ### Requisitos para a AEM Assets processar ativos com muitos metadados no Linux® {#assetsonlinux}
 
-O processo XMPFilesProcessor requer a biblioteca GLIBC_2.14 para funcionar. Use um kernel Linux® que contenha GLIBC_2.14, por exemplo, kernel Linux® versão 3.1.x. Ele melhora o desempenho do processamento de ativos que contêm uma grande quantidade de metadados, como arquivos PSD. O uso de uma versão anterior do GLIBC leva a erros em logs que começam com `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+O processo XMPFilesProcessor exige que o biblioteca GLIBC_2.14 funcione. Use um kernel do Linux® que contém GLIBC_2.14, por exemplo, o kernel do Linux® versão 3.1.x. Melhora o desempenho do processamento de ativos que contêm uma grande quantidade de metadados, curtir arquivos PSD. A utilização de uma versão anterior do GLIBC resulta em erros em logs que começam com `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
