@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 783824ece92c12476505d695b961d782d7d70cb9
 workflow-type: tm+mt
-source-wordcount: '5793'
+source-wordcount: '5792'
 ht-degree: 0%
 
 ---
@@ -203,7 +203,7 @@ O WCM do AEM registra logs detalhados. Depois de descompactar e iniciar o Quicks
 
 Rotação de arquivos de registro refere-se ao processo que limita o crescimento do arquivo criando um arquivo periodicamente. No AEM, um arquivo de log chamado `error.log` é girado uma vez por dia de acordo com as regras fornecidas:
 
-* A variável `error.log` o arquivo é renomeado de acordo com o padrão {original_filename} `.yyyy-MM-dd`. Por exemplo, em 11 de julho de 2010, o arquivo de log atual será renomeado `error.log-2010-07-10`, depois um novo `error.og` é criado.
+* A variável `error.log` o arquivo é renomeado de acordo com o padrão `{original_filename}.yyyy-MM-dd`. Por exemplo, em 11 de julho de 2010, o arquivo de log atual será renomeado `error.log-2010-07-10`, depois um novo `error.log` é criado.
 
 * Os arquivos de registro anteriores não são excluídos, portanto, é sua responsabilidade limpar arquivos de registro antigos periodicamente para limitar o uso do disco.
 
@@ -435,7 +435,7 @@ Em determinadas circunstâncias, talvez você queira criar um arquivo de log per
    >
    >O padrão é &#39;.&#39;dd/MM/aaaa (para rotação diária de log).
    >
-   >Por exemplo, à meia-noite de 20 de janeiro de 2010 (ou quando ocorre a primeira mensagem de log após essa data), .. /logs/error.log foi renomeado para .. /logs/error.log.2010-01-20. O registro para 21 de janeiro é resultado de (novo e vazio). /logs/error.log até que seja rolado na próxima alteração do dia.
+   >Por exemplo, à meia-noite de 20 de janeiro de 2010 (ou quando ocorre a primeira mensagem de log após essa data), .. /logs/error.log é renomeado para .. /logs/error.log.2010-01-20. O registro para 21 de janeiro é resultado de (novo e vazio). /logs/error.log até que seja sobrescrito na próxima alteração do dia.
    >
    >| `'.'yyyy-MM` | Rotação no início de cada mês |
    >|---|---|

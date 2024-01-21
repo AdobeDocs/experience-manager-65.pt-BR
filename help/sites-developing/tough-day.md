@@ -4,9 +4,9 @@ description: O teste Dia difícil simula a carga diária de cerca de 1000 autore
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 61c7955c5370b5341d097dc36d08b2b92b89517b
 workflow-type: tm+mt
-source-wordcount: '1824'
+source-wordcount: '1826'
 ht-degree: 1%
 
 ---
@@ -400,7 +400,7 @@ O Dia Difícil 2 cria uma pasta de logs no mesmo diretório em que você executo
 * **toughday.log**: contém mensagens relacionadas ao estado do aplicativo, informações de depuração e mensagens globais.
 * **dia difícil_&lt;testname>.log**: mensagens relacionadas ao teste especificado.
 
-Os logs não são substituídos, as execuções subsequentes anexam mensagens aos logs existentes. Os logs têm vários níveis. Para obter mais informações, consulte a ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
+Os logs não são substituídos, as execuções subsequentes anexam mensagens aos logs existentes. Os logs têm vários níveis. Para obter mais informações, consulte a [parâmetro loglevel.](#global-parameters).
 
 <!--
 #### Example Usage {#example-usage}
