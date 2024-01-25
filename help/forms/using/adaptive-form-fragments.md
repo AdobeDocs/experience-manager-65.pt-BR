@@ -7,9 +7,9 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 0924ae98f03f09d5e8784bbd5e7af131b1edd544
 workflow-type: tm+mt
-source-wordcount: '2359'
+source-wordcount: '2380'
 ht-degree: 1%
 
 ---
@@ -21,11 +21,15 @@ ht-degree: 1%
 | AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html) |
 | AEM 6.5 | Este artigo |
 
-<span class="preview"> Adobe Systems recomenda o uso da captura [de dados moderna e extensível dos componentes](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) principais para [criar novos Forms](/help/forms/using/create-an-adaptive-form-core-components.md) adaptativos ou [adicionar Forms adaptáveis a páginas](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) AEM Sites. Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 Embora cada formulário seja projetado para um propósito específico, há alguns segmentos comuns na maioria dos formulários, como o de fornecer detalhes pessoais, como nome e endereço, detalhes da família, detalhes de renda etc. Os desenvolvedores de formulários são necessários para criar esses segmentos comuns sempre que um novo formulário for criado.
 
-Formulários adaptáveis fornecem um mecanismo conveniente para criar segmentos de formulários, como um painel ou um grupo de campos, somente uma vez e reutilizá-los em formulários adaptáveis. Esses segmentos reutilizáveis e independentes são chamados de fragmentos de formulário adaptáveis.
+Os formulários adaptativos fornecem um mecanismo conveniente para criar formulários segmento curtir um painel ou uma grupo de campos apenas uma vez e reutilizá-los através de formulários adaptáveis. Esses segmentos reutilizáveis e independentes são chamados de Fragmentos de formulário adaptável.
+
+>[!NOTE]
+>
+> Você pode personalizar facilmente suas experiência de fragmento para usuários com a [caixa de diálogo Configurar e a caixa de diálogo Design do componente](https://experienceleague.corp.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html) Fragmento de formulário.
 
 ## Criar um fragmento {#create-a-fragment}
 
@@ -33,8 +37,8 @@ Formulários adaptáveis fornecem um mecanismo conveniente para criar segmentos 
 
 ### Criar fragmento do zero {#create-fragment-from-scratch}
 
-1. Faça logon no instância de autor do AEM Forms em https://[*hostname*]:[*porta*]/aem/forms.html.
-1. Clique **Criar > fragmento** de formulário adaptável.
+1. Faça logon na instância de autor do AEM Forms em https://[*hostname*]:[*porta*]/aem/forms.html.
+1. Clique em **Criar > Fragmento de formulário adaptável**.
 1. Especifique título, nome, descrição e tags para o fragmento.
 
    >[!NOTE]
@@ -112,9 +116,9 @@ Se você escolher **/** como a raiz do modelo de fragmento, a árvore XSD comple
 
 1. Clique em **OK**.
 
-   O painel é salvo no local especificado ou padrão no repositório. No formulário adaptável, o painel é substituído por um instantâneo do fragmento. Como mostrado abaixo, o painel Informações gerais e seus painéis secundários, Informações pessoais e Endereço, são salvos como um fragmento.
+   O painel é salvo na localidade especificada ou padrão no repositório. No formulário adaptável, o painel é substituído por um instantâneo do fragmento. Como mostrado abaixo, o painel Informações gerais e seus painéis secundários, Informações pessoais e Endereço, são salvos como um fragmento.
 
-   Para editar o fragmento, clique **[!UICONTROL Editar Ativo]** na barra de ferramentas do painel. O fragmento é aberto em uma nova guia ou janela no modo de edição.
+   Para editar o fragmento, clique em **[!UICONTROL Editar ativo]** na barra de ferramentas do painel. O fragmento é aberto em uma nova guia ou janela no modo de edição.
 
    ![Edição de fragmento](assets/edit-fragment.png)
 
@@ -122,14 +126,14 @@ Se você escolher **/** como a raiz do modelo de fragmento, a árvore XSD comple
 
 ### Configurar a aparência do fragmento {#configure-fragment-appearance}
 
-Qualquer fragmento inserido em formulários adaptáveis é exibido como uma imagem de espaço reservado. O espaço reservado exibe títulos de até dez painéis secundários no fragmento. Você pode configurar o AEM Forms para mostrar o fragmento completo em vez da imagem de espaço reservado.
+Qualquer fragmento inserido nos formulários adaptáveis aparece como uma imagem de espaço reservado. O espaço reservado exibe títulos de até dez painéis secundários no fragmento. É possível configurar AEM Forms para mostrar o fragmento completo em vez da imagem de espaço reservado.
 
 Execute as etapas a seguir para mostrar fragmentos completos nos formulários:
 
 1. Vá para AEM página de configuração do console da Web em https:[*host*]:[*porta*]/system/console/configMgr.
 
 1. Search e clique **[!UICONTROL em Adaptive Form e Interactive Communication Web Channel Configuration]** para abri-lo no modo de edição.
-1. Desative **[!UICONTROL Ativar Espaço reservado no lugar da caixa de seleção Fragmento]** para mostrar fragmentos completos em vez da imagem de espaço reservado.
+1. Desativar **[!UICONTROL Ativar espaço reservado no lugar do fragmento]** para mostrar fragmentos completos em vez da imagem de espaço reservado.
 
 ### Inserir um fragmento em um formulário adaptável {#insert-a-fragment-in-an-adaptive-form}
 
@@ -222,18 +226,18 @@ Ao criar um fragmento de formulário adaptável usando um modelo de formulário 
   </tr>
   <tr>
    <td><p>Visualização</p> </td>
-   <td><p>Fornece opções para visualizar o fragmento como um HTML ou uma visualização personalizada mesclando dados de um arquivo XML com o fragmento. Para obter mais informações, consulte <a href="/help/forms/using/previewing-forms.md" target="_blank">Pré-visualização de um formulário</a>.<br /> <br /> </p> </td>
+   <td><p>Fornece opções para visualizar o fragmento como um HTML ou uma visualização personalizada mesclando dados de um arquivo XML com o fragmento. Para obter mais informações, consulte <a href="/help/forms/using/previewing-forms.md" target="_blank">Visualizar um formulário</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Iniciar revisão/Gerenciar revisão</p> </td>
-   <td><p>Permite iniciar e gerenciar uma revisão do fragmento selecionado. Para obter mais informações, consulte <a href="../../forms/using/create-reviews-forms.md" target="_blank">Criação e gerenciamento de análises</a>.<br /> <br /> </p> </td>
+   <td><p>Permite iniciar e gerenciar uma revisão do fragmento selecionado. Para obter mais informações, consulte <a href="../../forms/using/create-reviews-forms.md" target="_blank">Criar e gerenciar revisões</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Criar dicionário</p> </td>
    <td><p>Gera um dicionário para localizar o fragmento selecionado. Para obter mais informações, consulte <a href="/help/forms/using/lazy-loading-adaptive-forms.md" target="_blank">Localização de formulários adaptáveis</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Publicar/Desfazer publicação</p> </td>
+   <td><p>Publish / Cancelar publicação</p> </td>
    <td><p>Publica/cancela a publicação do fragmento selecionado.<br /> <br /> </p> </td>
   </tr>
   <tr>
@@ -245,11 +249,11 @@ Ao criar um fragmento de formulário adaptável usando um modelo de formulário 
 
 ## Localização do formulário adaptável contendo fragmentos {#localizing-adaptive-form-containing-fragments}
 
-Para traduzir um formulário adaptável que contenha fragmentos de formulário adaptável, é necessário traduzir o fragmento e o formulário separadamente. A ideia é traduzir um fragmento uma vez e reutilizá-lo em vários formulários adaptáveis.
+Para localizar um formulário adaptável que contenha fragmentos de formulário adaptáveis, é necessário localizar o fragmento e o formulário separadamente. A ideia é localizar um fragmento uma vez e reutilizá-lo em vários formulários adaptáveis.
 
 >[!NOTE]
 >
->As teclas localização no fragmento não aparecerão no arquivo XLIFF para um formulário adaptável.
+>As chaves de localização no fragmento não aparecerão no arquivo XLIFF para um formulário adaptável.
 
 ## Pontos principais a serem lembrados ao trabalhar com fragmentos {#key-points-to-remember-when-working-with-fragments}
 
@@ -260,11 +264,11 @@ Para traduzir um formulário adaptável que contenha fragmentos de formulário a
 * Os fragmentos de formulário adaptáveis estão disponíveis para uso por meio da guia Fragmentos de formulário adaptáveis no localizador de conteúdo de AEM.
 * Qualquer expressão, script ou estilo em um fragmento de formulário adaptável independente é retido quando inserido por referência ou incorporado em um formulário adaptável.
 * Não é possível editar um fragmento de formulário adaptável, que é inserido por referência, de dentro de um formulário adaptável. Para editar, edite o fragmento de formulário adaptável independente ou incorpore o fragmento no formulário adaptável.
-* Ao publicar um formulário adaptável, você precisa publicar os fragmentos de formulário adaptáveis independentes inseridos por referência no formulário adaptável.
-* Ao republicar um fragmento de formulário adaptável atualizado, as alterações são refletidas nas instâncias publicadas do formulário adaptável no qual o fragmento é usado.
+* Ao publicar um formulário adaptável, é necessário publicar os fragmentos de formulário adaptável independente inseridos pela referência no formulário adaptável.
+* Quando você republica um fragmento de formulário adaptável atualizado, as alterações refletem nas instâncias publicadas do formulário adaptável em que o fragmento é usado.
 * O formulário adaptável contendo o componente Verificar não é compatível com usuários anônimos. Além disso, não é repromendado para usar o componente Verificar em um fragmento de formulário adaptável.
 * (**Somente** Mac) Para garantir que os fragmentos de formulário funcionalidade funciona perfeitamente em todos os cenários, adicione a seguinte entrada ao arquivo /private/etc/hosts:
-  `127.0.0.1 <Host machine>`**Máquina de host**: a máquina Apple Mac na qual o AEM Forms é implantado.
+  `127.0.0.1 <Host machine>` **Máquina host**: a máquina do Apple Mac na qual o AEM Forms é implantado.
 
 ## Fragmentos de referência {#reference-fragments}
 
