@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Use a documentação do Adobe Experience Manager 6.5 para saber como funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5
-source-git-commit: 4be8b14ca9af543cec89c85ec5750f2065033406
+source-git-commit: d232bfdad7b8413eb015f6fe5dd3442cebf1001d
 workflow-type: tm+mt
-source-wordcount: '7297'
+source-wordcount: '7312'
 ht-degree: 20%
 
 ---
@@ -1180,6 +1180,7 @@ ht-degree: 20%
       + [Processamento de documentos mesmo se o servidor do AEM Forms não estiver totalmente ativo e em execução](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [Não é possível usar os serviços de Saída, Forms ou DoR (Documento de Registro)](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [Reduzindo vulnerabilidades de RCE do Struts 2 para Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
+      + [Falha ao fazer backup do banco de dados durante a atualização para o service pack do AEM Forms. 6.5.12.0](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6.5.12.0.md)
    + Documentação herdada {#legacy-documentation}
       + [Usar o serviço de script de execução no AEM Forms no JEE Workbench para criar dados XML](/help/forms/developing/building-xml.md)
       + [Compactação e descompactação de arquivos usando um AEM Forms no DSC personalizado JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)
