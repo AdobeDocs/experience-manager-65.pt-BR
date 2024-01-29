@@ -2,9 +2,9 @@
 title: Hotfixes para o AEM Forms
 description: Fornece informações sobre como baixar e instalar um hotfix do AEM Forms.
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
-source-git-commit: 4c47fc5d03732d206c9eb18feb6e44018e936472
+source-git-commit: 4685a4babbec07dc09fe19c9264b4141b9989fbb
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '320'
 ht-degree: 1%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 1%
 # Hotfixes do Adobe Experience Manager Forms{#aem-form-hotfix}
 
 Este artigo lista as correções críticas implementadas para resolver problemas conhecidos, melhorar a estabilidade do sistema e aprimorar o desempenho geral do AEM Forms.
+
+>[!NOTE]
+>
+> Os hotfixes foram projetados para serem cumulativos, abrangendo todas as correções anteriores. Ao aplicar a correção mais recente a uma versão do, ele não apenas aborda o problema mais recente, mas também incorpora todas as correções de erros e aprimoramentos anteriores.
 
 ## Hotfixes para o Adaptive Forms {#hotfix-for-adaptive-forms}
 
@@ -21,6 +25,34 @@ Este artigo lista as correções críticas implementadas para resolver problemas
     <td><strong>Data</strong></td>
     <td><strong>Link de download de Hotfix (link de Distribuição de software AEM)</strong></td>
     <td><strong>Problemas corrigidos</strong></td>
+  </tr>
+  <tr>
+    <td>terça-feira, 29 de janeiro de 2024</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fforms-foundation-qs-content-4.0.170-FORMS-12692-B0001.zip">Hotfix do AEM Service Pack 6.5.19.0 para Windows no servidor JEE</a> </li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li>No AEM Forms no servidor JEE, o Forms HTML5 que usa o caminho de contexto não é renderizado. (FORMS-12485).</li>
+    </ul>
+    </td>    
+  </tr>
+  <tr>
+    <td>terça-feira, 29 de janeiro de 2024</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fadobe-aemfd-win-pkg-6.0.1016-004.zip">Hotfix do AEM Service Pack 6.5.18.0 para Microsoft Windows</a> </li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fadobe-aemfd-linux-pkg-6.0.1016-004.zip">Hotfix do AEM Service Pack 6.5.18.0 para Linux</a></li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fadobe-aemfd-osx-pkg-6.0.1016-004.zip">Hotfix do AEM Service Pack 6.5.18.0 para Apple macOS</a></li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li> O componente de Assinatura Rabiscada OOTB não é renderizado para uma visualização em um formulário adaptável. (FORMS-12073).</li>
+    </ul>
+    </td>    
    </tr>
    <tr>
     <td>terça-feira, 20 de novembro de 2023</td>
@@ -38,9 +70,9 @@ Este artigo lista as correções críticas implementadas para resolver problemas
     <li>A comunicação interativa com imagens grandes em linha falha ao abrir no modo de edição. (FORMS-10578)</li>
     </ul>
     </td>    
-    </tr>
-    <tbody>
-     </table>
+  </tr>
+  <tbody>
+</table>
 
 ## Baixar e instalar um Hotfix {#download-install-hotfix}
 
