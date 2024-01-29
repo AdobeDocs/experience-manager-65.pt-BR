@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 05f54e451c72b0a1690ba4a2ca50db87711a8094
 workflow-type: tm+mt
-source-wordcount: '3583'
+source-wordcount: '3608'
 ht-degree: 2%
 
 ---
@@ -29,6 +29,11 @@ ht-degree: 2%
 Depois de enviar um formulário, seus clientes geralmente querem manter um registro, em formato impresso ou de documento, das informações que preencheram no formulário para referência futura. Isso é chamado de documento de registro.
 
 Este artigo explica como gerar um documento de registro para o Forms adaptável ou fragmento do Formulário adaptável.
+
+>[!NOTE]
+>
+> O suporte para personalizar os fragmentos de formulário adaptável e seus campos no editor de formulário adaptável foi introduzido com o AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+
 
 >[!NOTE]
 >
