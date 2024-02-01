@@ -1,14 +1,14 @@
 ---
-title: Falha ao fazer backup do banco de dados anterior no AEM Forms 6.5.12.0.
+title: Falha ao fazer backup do banco de dados durante a atualização para 6.5.12.0 para MySQL.
 description: Quando um usuário atualiza para o Experience Manager 6.5.12.0 e clica em "Atualizar MySQL", o gerenciador de configurações falha ao fazer backup do banco de dados Experience Manager Forms anterior.
-source-git-commit: d232bfdad7b8413eb015f6fe5dd3442cebf1001d
+source-git-commit: bf974331157e21b28c0daa5b878ac927ce5a2304
 workflow-type: tm+mt
-source-wordcount: '98'
-ht-degree: 1%
+source-wordcount: '106'
+ht-degree: 0%
 
 ---
 
-# Problema (#issue)
+# Falha ao fazer backup do banco de dados durante o upgrade para 6.5.12.0 para MySQL (#issue)
 
 Quando um usuário atualiza para o Experience Manager 6.5.12.0 e clica em &quot;Atualizar MySQL&quot;, o gerenciador de configurações falha ao fazer backup do banco de dados Experience Manager Forms anterior. Ele mostra o erro:
 
