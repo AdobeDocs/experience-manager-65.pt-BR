@@ -4,9 +4,9 @@ description: Use gráficos em um formulário adaptável para tornar seu formulá
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
-source-git-commit: 5c117d25a381b2cb85c2bf0715866dd5ad93572c
+source-git-commit: 53a6914792bb15773c8f91a2bb6295ab69b3b1bf
 workflow-type: tm+mt
-source-wordcount: '2001'
+source-wordcount: '2005'
 ht-degree: 0%
 
 ---
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ![Hero_Image](assets/charts_hero_image.jpg)
 
-Um gráfico é uma representação visual de dados. Ele permite condensar grandes quantidades de informações em um formato visual e fácil de entender, permitindo que você visualize, interprete e analise melhor dados complexos.
-O pacote complementar do AEM Forms fornece um componente de gráfico pronto para uso. Você pode usar nos formulários e documentos adaptáveis para representação visual de dados bidimensionais em painéis e tabelas repetíveis. O componente de Gráfico permite adicionar e configurar os seguintes tipos de gráficos:
+Um gráfico é uma representação visual de dados. Ele permite condensar grandes quantidades de informações em um formato visual fácil de entender, permitindo que você visualize, interprete e analise melhor dados complexos.
+O pacote complementar do AEM Forms fornece um componente de gráfico pronto para uso. Você pode usar em formulários e documentos adaptáveis para representação visual de dados bidimensionais no **painéis repetíveis** e **tabelas**. O componente de Gráfico permite adicionar e configurar os seguintes tipos de gráficos:
 
 1. Pizza
 1. Coluna
@@ -41,7 +41,7 @@ Por padrão, o componente Gráfico está disponível na barra lateral do AEM. Vo
 > 
 > Antes de configurar o gráfico, certifique-se de que o painel ou a linha da tabela para a qual você está configurando o gráfico esteja definida como repetível. Você pode especificar contagens mínimas e máximas para o painel ou linha de tabela repetível na guia Configurações de repetição da caixa de diálogo Editar componente.
 
-Para configurar o gráfico, clique com o botão direito do mouse no componente Gráfico e clique em Editar para abrir a caixa de diálogo Editar gráfico. A caixa de diálogo inclui guias Título e texto, Configuração, Opções avançadas e Estilo, que permitem configurar o gráfico.
+Para configurar o gráfico, clique no componente Gráfico e clique em ![Configurações](cmppr1.png) para abrir a caixa de diálogo Editar Gráfico. A caixa de diálogo inclui guias Título e texto, Configuração, Opções avançadas e Estilo, que permitem configurar o gráfico.
 
 ### Básico {#basic}
 
@@ -51,7 +51,7 @@ Na guia Básico, é possível configurar as seguintes propriedades:
 
 * **Nome do elemento**: um identificador para o elemento de gráfico na estrutura de conteúdo JCR. Não é visível no gráfico, mas ajuda ao fazer referência ao elemento de outros componentes, scripts e expressões SOM.
 * **Tipo de gráfico**: especifica o tipo de gráfico que você deseja gerar. As opções disponíveis são Pizza, Rosca, Barra, Coluna, Linha, Linha e Ponto, Ponto e Área. No exemplo, o tipo de gráfico é Coluna.
-* **Repetição De Nome De Linha Para A Fonte De Dados**: especifica o nome do elemento da linha de tabela ou do painel repetível de onde os dados serão originados. No exemplo, statementDetails é o nome do elemento da linha repetível na tabela Detalhes da instrução.
+* **Repetição de nome de linha ou nome de painel para a fonte de dados**: especifica o nome do elemento da linha de tabela ou do painel repetível de onde os dados serão originados. No exemplo, statementDetails é o nome do elemento da linha repetível na tabela Detalhes da instrução.
 * **Eixo X > Título**: especifica o título para o eixo X. No exemplo, o título do eixo X é Categoria.
 * **Eixo X > Campo**: especifica o nome do elemento do campo (ou uma célula em uma tabela) a ser plotado no eixo X. No exemplo, categorias são configuradas no eixo X. O nome do elemento da célula da tabela na coluna Category da tabela de exemplo é category.
 * **Eixo X > Usar função**: especifica a função estatística a ser usada para calcular os valores no eixo X. No exemplo, a opção selecionada é None. Para obter mais informações sobre funções, consulte Usar funções no gráfico.
@@ -78,7 +78,7 @@ Para fazer isso, é necessário plotar categorias no eixo X e, no eixo Y, plotar
 
 ![Detalhes do demonstrativo](assets/statement-details.png)
 
-O demonstrativo de cartão de crédito usado neste exemplo é um documento adaptável e a seção de detalhes do demonstrativo é uma tabela, que tem a seguinte aparência no modo de criação.
+O demonstrativo de cartão de crédito usado neste exemplo é um documento de formulário adaptável e a seção de detalhes do demonstrativo é uma tabela, que tem a seguinte aparência no modo de criação.
 
 ![Criação de detalhes do demonstrativo](assets/statement-details-authoring.png)
 
@@ -87,7 +87,7 @@ Vamos considerar os seguintes requisitos e condições para gerar o gráfico:
 * O gráfico exibe a despesa total em cada categoria na tabela Detalhes do Demonstrativo.
 * O tipo de gráfico é Coluna, embora você possa escolher qualquer outro tipo de gráfico, conforme apropriado.
 * A linha Tabela na tabela Detalhes da Instrução pode ser repetida. Você pode configurá-lo no campo Configurações de repetição das propriedades da linha da tabela.
-* O nome do elemento para a linha é statementDetails. Você pode configurá-lo nas propriedades da Linha da tabela.
+* O nome do elemento da linha é Detalhes do Demonstrativo. Você pode configurá-lo nas propriedades da Linha da tabela.
 * O nome do elemento da célula da tabela na coluna Category é category. Você pode especificá-lo em linha. Selecione a célula e toque no botão editar.
 * O nome do elemento da célula da tabela na coluna Valor é valor. Além disso, a célula da tabela na coluna Valor é uma caixa numérica.
 * Com a configuração especificada, o gráfico de Coluna no exemplo será exibido da seguinte maneira: Cada cor representa uma categoria e itens de linha individuais ou valores de uma categoria são somados no gráfico.
@@ -108,7 +108,7 @@ Para alternar para o modo de estilo, na barra de ferramentas da página, **toque
 
 ## Usar funções no gráfico {#use-functions}
 
-Você pode configurar um gráfico para usar funções estatísticas para calcular valores a partir dos dados de origem para plotar no gráfico. Embora o componente de Gráfico venha com algumas funções integradas, você pode gravar suas próprias funções e disponibilizá-las para uso na configuração do gráfico.
+Você pode configurar um gráfico para usar funções estatísticas para calcular valores a partir dos dados de origem para plotar no gráfico. Embora o componente de Gráfico tenha algumas funções integradas, você pode gravar suas próprias funções e disponibilizá-las para uso na configuração do gráfico.
 
 >[!NOTE]
 >
@@ -129,7 +129,7 @@ As seguintes funções estão disponíveis por padrão com o componente de Gráf
 
 ### Funções personalizadas {#custom-functions}
 
-Além de usar as funções padrão em gráficos, você pode escrever funções personalizadas em JavaScript e disponibilizá-las na lista de funções no componente Gráfico.
+Além de usar as funções padrão em gráficos, você pode escrever [funções personalizadas](/help/forms/using/rule-editor.md#custom-functions-in-rule-editor-custom-functions) no JavaScript e disponibilizá-las na lista de funções no componente Gráfico.
 
 Uma função assume uma matriz ou valores e um nome de categoria como entradas e retorna um valor. Por exemplo:
 
