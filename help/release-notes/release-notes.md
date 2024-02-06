@@ -3,9 +3,9 @@ title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 040170454345df352ed259806193c41c23bf953d
+source-git-commit: 5ab1fd033af0d6d5595fe41de003455ab9ba28a6
 workflow-type: tm+mt
-source-wordcount: '4415'
+source-wordcount: '4417'
 ht-degree: 1%
 
 ---
@@ -553,7 +553,7 @@ Para resolver o problema, localize o `<AEM_Forms_Installation_dir>\jboss\bin\sta
 Para resolver o problema, [recompile os scripts do Sling, como JSP, Java™ e Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html#resolution). (FORMS-8542)
 * Após instalar o AEM Service Pack 6.5.14.0 e posteriores, os usuários não podem selecionar uma fonte na interface do usuário do JEE Admin para documentos do PDF ao navegar até `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, pois a lista de fontes aparece vazia. (FORMS-12095)
 <!-- When a form is signed using the OOTB Scribble Signature component, it appears in the image dialogue but does not preview and appears blank when you click on it. (FORMS-12073). A hotfix is available for this issue. To download and install the hotfix, see [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md) -->
-* No AEM Forms no JEE, o Forms HTML5 que usa o caminho de contexto não é renderizado. (FORMS-12485). Uma correção está disponível para esse problema. Para baixar e instalar o hotfix, consulte [Hotfixes do Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md).
+* No AEM Forms no JEE, o Forms HTML5 que usa o caminho de contexto não é renderizado. (FORMS-12485, FORMS-12691). Uma correção está disponível para esse problema. Para baixar e instalar o hotfix, consulte [Hotfixes do Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md).
 
 #### AEM Forms no JEE
 
