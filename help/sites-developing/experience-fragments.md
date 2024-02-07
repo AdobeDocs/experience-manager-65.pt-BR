@@ -7,10 +7,10 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: a9d59e00efe8f0c2cbfca51901c441a2d65b70f2
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 1%
+source-wordcount: '1781'
+ht-degree: 0%
 
 ---
 
@@ -127,7 +127,7 @@ Isso permite que os usuários criem fragmentos de experiência em /content/exper
 
 A única configuração adicional é garantir que os componentes estejam [permitido no modelo, isso é obtido com a Política de conteúdo](/help/sites-developing/page-templates-editable.md#content-policies).
 
-## O provedor de regravação do link do fragmento de experiência - HTML {#the-experience-fragment-link-rewriter-provider-html}
+## O provedor de reescrita de link do fragmento de experiência - HTML {#the-experience-fragment-link-rewriter-provider-html}
 
 No AEM, é possível criar Fragmentos de experiência. Um fragmento de experiência:
 
@@ -182,7 +182,7 @@ Nesses casos de uso, o AEM fornece a interface do provedor de reescrita de links
 
 >[!NOTE]
 >
->Essa interface foi introduzida em [AEM 6.5 SP1 (6.5.1.0)](/help/release-notes/previous/6.5.1.md).
+>Essa interface foi introduzida em [AEM 6.5 SP1 (6.5.1.0)](/help/release-notes/previous/6-5-1.md).
 
 Para casos mais complicados, não abrangidos pelo [padrão](#default-link-rewriting), o AEM oferece a interface do provedor Link Rewriter. Este é um `ConsumerType` que pode ser implementada nos seus pacotes, como um serviço. Ele ignora as modificações que o AEM executa nos links internos de uma oferta de HTML, conforme renderizado a partir de um Fragmento de experiência. Essa interface permite personalizar o processo de reescrita de links de HTML internos para alinhar-se às suas necessidades comerciais.
 
