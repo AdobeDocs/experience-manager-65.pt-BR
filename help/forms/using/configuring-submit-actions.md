@@ -6,10 +6,10 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 05f54e451c72b0a1690ba4a2ca50db87711a8094
+source-git-commit: 6dbec0f41396c2b41d5324c4ecf6f1f33b1d0780
 workflow-type: tm+mt
 source-wordcount: '2597'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -140,7 +140,7 @@ Para obter mais informações sobre o Portal do Forms e enviar ações, consulte
 
 A variável **[!UICONTROL Chamar um fluxo de trabalho de AEM]** A ação enviar associa um formulário adaptável a um [Fluxo de trabalho do AEM](/help/sites-developing/workflows-models.md). Quando um formulário é enviado, o fluxo de trabalho associado é iniciado automaticamente na instância do Autor. É possível salvar o arquivo de dados, os anexos e o Documento de registro na pasta relativa ou na carga útil do fluxo de trabalho ou em uma variável. Se o workflow estiver marcado para armazenamento de dados externo, a opção variable estará disponível e não a opção payload. É possível selecionar na lista de variáveis disponíveis para o modelo de fluxo de trabalho. Se o workflow estiver marcado para armazenamento de dados externo em um estágio posterior e não no momento da criação do workflow, verifique se as configurações de variável necessárias estão em vigor.
 
-Antes de usar o **Chamar um fluxo de trabalho de AEM** ação enviar, [definir as configurações do Experience Manager DS](../../forms/using/configuring-the-processing-server-url-.md). Para obter informações sobre como criar um workflow para AEM, consulte [Workflows centrados em formulários no OSGi](../../forms/using/aem-forms-workflow.md).
+Antes de usar o **Chamar um fluxo de trabalho de AEM** ação enviar, [definir as configurações do Experience Manager DS](../../forms/using/configuring-the-processing-server-url.md). Para obter informações sobre como criar um workflow para AEM, consulte [Workflows centrados em formulários no OSGi](../../forms/using/aem-forms-workflow.md).
 
 A ação enviar coloca o seguinte no local da carga útil do fluxo de trabalho. No entanto, observe que somente a opção Variável será exibida se o modelo de fluxo de trabalho estiver marcado para armazenamento de dados externo, e não a opção de carga útil.
 
@@ -263,7 +263,7 @@ A validação do lado do servidor valida o modelo de formulário. É recomendáv
 
 Suporte a funções personalizadas em expressões de validação
 
-O autor pode configurar a biblioteca JavaScript personalizada por formulário adaptável. Na biblioteca, mantenha somente as funções reutilizáveis, que têm dependência em bibliotecas de terceiros jquery e underscore.js.
+O autor pode configurar a biblioteca JavaScript personalizada por formulário adaptável. Na biblioteca, mantenha somente as funções reutilizáveis, que dependem de bibliotecas de terceiros de jquery e underscore.js.
 
 ## Tratamento de erros na ação de envio {#error-handling-on-submit-action}
 
