@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 667125e9f7f9f5c9fa438e1d55c0a059ceae64c3
+source-git-commit: 8ca683a973998e7b5d6a2f87210aaf324a5419ee
 workflow-type: tm+mt
-source-wordcount: '3984'
+source-wordcount: '4019'
 ht-degree: 0%
 
 ---
@@ -92,11 +92,11 @@ a Adobe recomenda essas configurações e fornece suporte total ou restrito como
 >Com o lançamento da versão 6.5, os componentes da infraestrutura com menor uso entre os clientes do Adobe não serão mais suportados, como demonstrado a seguir:
 >
 >- banco de dados IBM® DB2®
-- Sistemas operacionais IBM® AIX® e Sun Solaris™
+>- Sistemas operacionais IBM® AIX® e Sun Solaris™
 >
-Para novas instalações, quando viável, é recomendável implantar o AEM Forms na pilha OSGi moderna para usar as inovações mais recentes em torno do Adaptive Forms responsivo para comunicações móveis, comunicações interativas de vários canais e integrações de dados de back-end usando o Modelo de dados de formulário.
+>Para novas instalações, quando viável, é recomendável implantar o AEM Forms na pilha OSGi moderna para usar as inovações mais recentes em torno do Adaptive Forms responsivo para comunicações móveis, comunicações interativas de vários canais e integrações de dados de back-end usando o Modelo de dados de formulário.
 >
-O Adobe reconhece que os usuários existentes devem continuar a implantar o AEM Forms na pilha do JEE. Nesses casos, o Adobe exige a implantação do AEM Forms JEE em uma infraestrutura compatível, conforme descrito nesta documentação. Se você estiver atualizando para o AEM 6.5 Forms e estiver usando uma plataforma não compatível na versão anterior do AEM Forms, entre em contato com o Suporte da Adobe para obter ajuda sobre como atualizar para uma plataforma compatível.
+>O Adobe reconhece que os usuários existentes devem continuar a implantar o AEM Forms na pilha do JEE. Nesses casos, o Adobe exige a implantação do AEM Forms JEE em uma infraestrutura compatível, conforme descrito nesta documentação. Se você estiver atualizando para o AEM 6.5 Forms e estiver usando uma plataforma não compatível na versão anterior do AEM Forms, entre em contato com o Suporte da Adobe para obter ajuda sobre como atualizar para uma plataforma compatível.
 
 ### Máquinas virtuais Java™ (JVM) {#java-virtual-machines-jvm}
 
@@ -144,8 +144,8 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java™ para ser ex
 
 >[!NOTE]
 >
-- Rastreie os Boletins de segurança do fornecedor Java™ para garantir a segurança dos ambientes de produção e instalar as atualizações mais recentes do Java™.
-- O AEM Forms no JEE é compatível apenas com JVMs de 64 bits em ambientes de produção.
+>- Rastreie os Boletins de segurança do fornecedor Java™ para garantir a segurança dos ambientes de produção e instalar as atualizações mais recentes do Java™.
+>- O AEM Forms no JEE é compatível apenas com JVMs de 64 bits em ambientes de produção.
 
 ### Bancos de dados e persistência CRX {#databases-and-crx-persistence}
 
@@ -271,7 +271,7 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java™ para ser ex
 
 >[!NOTE]
 >
-Os clusters do IBM® WebSphere® só são suportados nas edições de Implantação de rede.
+>Os clusters do IBM® WebSphere® só são suportados nas edições de Implantação de rede.
 
 ### Sistemas operacionais de servidor {#server-operating-systems}
 
@@ -479,21 +479,21 @@ O aplicativo AEM Forms agora é compatível com o Apache Cordova. A seguir estã
 
 >[!NOTE]
 >
-O PDF Generator suporta apenas versões em inglês, francês, alemão e japonês dos sistemas operacionais e aplicativos suportados.
+>O PDF Generator suporta apenas versões em inglês, francês, alemão e japonês dos sistemas operacionais e aplicativos suportados.
 >
-Além disso:
+>Além disso:
 >
-- O PDF Generator suporta apenas a versão comercial de 32 bits do Microsoft® Office Professional Plus e outros softwares necessários para a conversão.
-- PDF Generator não suporta Microsoft® Office 365.
-- As conversões de PDF Generator para OpenOffice são suportadas apenas no Windows e no Linux®.
-- Os recursos PDF, Optimize PDF e Export PDF de OCR são suportados apenas no Windows.
-- Uma versão do Acrobat é fornecida com o AEM Forms para ativar a funcionalidade PDF Generator. A versão agrupada só deve ser acessada programaticamente com o AEM Forms, durante o prazo da licença do AEM Forms, para uso com o AEM Forms PDF Generator. Para obter mais informações, consulte a Descrição do produto AEM Forms de acordo com a implantação ([No local](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
-- O serviço PDF Generator não suporta Microsoft® Windows 10.
--PDF Generator falha ao converter arquivos usando o Microsoft® Visio 2019. Você pode continuar a usar o Microsoft® Visio 2016 para converter arquivos .VSD e .VSDX.
-- Falha do PDF Generator ao converter arquivos usando o Microsoft® Project 2019. Você pode continuar a usar o Microsoft® Project 2016 para converter arquivos .MPP.
-- Falha do PDF Generator ao converter arquivos usando o Microsoft® Visio 2019.
-- Falha do PDF Generator ao converter arquivos usando o Microsoft® Project 2019.
->
+>- O PDF Generator suporta apenas a versão comercial de 32 bits do Microsoft® Office Professional Plus e outros softwares necessários para a conversão.
+>- PDF Generator não suporta Microsoft® Office 365.
+>- As conversões de PDF Generator para OpenOffice são suportadas apenas no Windows e no Linux®.
+>- Os recursos PDF, Optimize PDF e Export PDF de OCR são suportados apenas no Windows.
+>- Uma versão do Acrobat é fornecida com o AEM Forms para ativar a funcionalidade PDF Generator. A versão agrupada só deve ser acessada programaticamente com o AEM Forms, durante o prazo da licença do AEM Forms, para uso com o AEM Forms PDF Generator. Para obter mais informações, consulte a Descrição do produto AEM Forms de acordo com a implantação ([No local](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+>- O serviço PDF Generator não suporta Microsoft® Windows 10.
+>-PDF Generator falha ao converter arquivos usando o Microsoft® Visio 2019. Você pode continuar a usar o Microsoft® Visio 2016 para converter arquivos .VSD e .VSDX.
+>- Falha do PDF Generator ao converter arquivos usando o Microsoft® Project 2019. Você pode continuar a usar o Microsoft® Project 2016 para converter arquivos .MPP.
+>- Falha do PDF Generator ao converter arquivos usando o Microsoft® Visio 2019.
+>- Falha do PDF Generator ao converter arquivos usando o Microsoft® Project 2019.
+>- Se a instalação do Microsoft® Office se tornar desativada ou não licenciada devido a qualquer motivo, como por exemplo, um VL_KMS não conseguir estabelecer comunicação por um período, as conversões podem falhar até que a instalação seja reativada ou relicenciada.
 
 ### Exceções ao suporte de acessibilidade {#exceptions-to-accessibility-support}
 
@@ -607,7 +607,7 @@ Para requisitos adicionais, consulte:
 
 >[!NOTE]
 >
-A família de produtos Acrobat DC apresenta duas faixas para Acrobat e Reader, que são produtos diferentes: &quot;Classic&quot; e &quot;Continuous&quot;. Para obter detalhes e uma comparação das duas faixas, consulte [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
+>A família de produtos Acrobat DC apresenta duas faixas para Acrobat e Reader, que são produtos diferentes: &quot;Classic&quot; e &quot;Continuous&quot;. Para obter detalhes e uma comparação das duas faixas, consulte [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
 
 ### Navegadores {#browsers}
 
@@ -650,13 +650,13 @@ A família de produtos Acrobat DC apresenta duas faixas para Acrobat e Reader, q
 
 >[!NOTE]
 >
-Algumas exceções relacionadas ao navegador para desktops são as seguintes:
+>Algumas exceções relacionadas ao navegador para desktops são as seguintes:
 >
-- O Safari é compatível somente com Macintosh OS X.
-- O Espaço de trabalho é compatível com o Safari 5.1 no Macintosh OS X 10.6 e 10.7 com Acrobat DC ou versões posteriores. Para obter mais informações sobre a compatibilidade do Safari 5.1 com o Adobe Reader, Acrobat, consulte [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
-- O Console de administração não é compatível com o Safari.
-- O Gerenciamento de correspondência não é compatível com o Windows® Internet Explorer 9.0 para formulários AEM 6.1.
-- O Forms Portal oferece suporte ao software de leitor de tela JAWS 14.0 no Internet Explorer 11 para acessibilidade.
+>- O Safari é compatível somente com Macintosh OS X.
+>- O Espaço de trabalho é compatível com o Safari 5.1 no Macintosh OS X 10.6 e 10.7 com Acrobat DC ou versões posteriores. Para obter mais informações sobre a compatibilidade do Safari 5.1 com o Adobe Reader, Acrobat, consulte [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
+>- O Console de administração não é compatível com o Safari.
+>- O Gerenciamento de correspondência não é compatível com o Windows® Internet Explorer 9.0 para formulários AEM 6.1.
+>- O Forms Portal oferece suporte ao software de leitor de tela JAWS 14.0 no Internet Explorer 11 para acessibilidade.
 
 #### Clientes móveis {#mobile-clients}
 
@@ -687,7 +687,7 @@ Algumas exceções relacionadas ao navegador para desktops são as seguintes:
 
 >[!NOTE]
 >
-- O Forms Portal é compatível com o Safari somente no iPad.
+>- O Forms Portal é compatível com o Safari somente no iPad.
 
 ### aplicativo AEM Forms {#aem-forms-workspace-app}
 
@@ -900,7 +900,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 >[!NOTE]
 >
-As plataformas obsoletas continuarão a receber suporte até a próxima versão completa do instalador ou até que o suporte de fornecedores terceirizados para a plataforma chegue ao fim da vida útil, o que ocorrer primeiro.
+> As plataformas obsoletas continuarão a receber suporte até a próxima versão completa do instalador ou até que o suporte de fornecedores terceirizados para a plataforma chegue ao fim da vida útil, o que ocorrer primeiro.
 
 <!-- 
 - Oct 10, 2021
