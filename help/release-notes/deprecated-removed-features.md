@@ -2,9 +2,9 @@
 title: Recursos obsoletos e removidos na versão Adobe Experience Manager 6.5.
 description: Notas de versão específicas para recursos obsoletos e removidos do Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 3443d331815ffb462890282a49e658693f157af0
 workflow-type: tm+mt
-source-wordcount: '1689'
+source-wordcount: '1715'
 ht-degree: 10%
 
 ---
@@ -31,8 +31,10 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
 
 | Área | Destaque | Substituição | Versão (SP) |
 |---|---|---|---|
+|   |   |   |   |
 | Sites | A variável **Configuração de sondagem gerenciada por Adobe AEM** serviço: `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | A variável **Importador de Sling de relatório do Adobe AEM Analytics** serviço. Consulte Conectar ao Adobe Analytics e Criar Frameworks - [Configuração do intervalo de importação](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
-| [!DNL Sites] | Propriedades dos Fragmentos de experiência para **Status da rede social**. |   | 6.5.11.0 |
+| Screens | AtiveMQ no Adobe Experience Manager (AEM). O AtiveMQ foi usado para comunicação entre duas instâncias de publicação do AEM. | A Adobe recomenda que os clientes agora usem um balanceador de carga. | 6.5.18.0 |
+| Propriedades dos Fragmentos de experiência para **Status da rede social**. |   | 6.5.11.0 |
 | [!DNL Sites] | Modelos de fragmentos de conteúdo, para criar fragmentos de conteúdo simples. | [Fragmentos de conteúdo estruturado com base em modelo](/help/assets/content-fragments/content-fragments-models.md) agora. | 6.5.11.0 |
 | integração de Creative Cloud | O compartilhamento de pasta AEM para Creative Cloud foi introduzido no AEM 6.2. Ele fornece uma maneira de fornecer aos usuários criativos acesso a ativos do AEM, para que eles possam abri-los no [!DNL Creative Cloud] aplicativos e carregar novos arquivos ou salvar alterações no AEM. Um novo recurso lançado no aplicativo Creative Cloud, o Adobe Asset Link, fornece uma melhor experiência de usuário e acesso mais eficiente a ativos do AEM diretamente do Photoshop, do InDesign e do Illustrator. O Adobe não pretende fazer mais melhorias na integração entre AEM e Compartilhamento de pastas Creative Cloud. Embora o recurso esteja incluído no AEM, os clientes são aconselhados a usar soluções de substituição. | Os clientes são aconselhados a alternar para novos recursos de integração de Creative Cloud, incluindo o aplicativo de desktop Adobe Asset Link ou AEM. |  |
 | Assets | `AssetDownloadServlet` O está desativado por padrão para as instâncias de publicação. Para obter mais detalhes, consulte [Lista de verificação de segurança do AEM](/help/sites-administering/security-checklist.md). | Configuração descrita em [Lista de verificação de segurança do AEM](/help/sites-administering/security-checklist.md). |  |
