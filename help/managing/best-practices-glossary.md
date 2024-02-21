@@ -7,9 +7,9 @@ topic-tags: managing-checklist
 content-type: reference
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
-source-wordcount: '6922'
+source-wordcount: '6926'
 ht-degree: 0%
 
 ---
@@ -1131,7 +1131,7 @@ Equipe interna que precisa de treinamento para administrar a solução.
 
 ### Equipe selecionada para treinamento de autor e usuário final {#staff-selected-for-author-and-end-user-training}
 
-Equipe interna que precisa de treinamento para criar a solução.
+Equipe interna que precisa de treinamento para ser autora da solução.
 
 ### Partes interessadas {#stakeholders}
 

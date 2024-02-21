@@ -4,9 +4,9 @@ description: O teste Dia difícil simula a carga diária de cerca de 1000 autore
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 61c7955c5370b5341d097dc36d08b2b92b89517b
+source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
 workflow-type: tm+mt
-source-wordcount: '1826'
+source-wordcount: '1825'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 
 >[!NOTE]
 >
-O Dia Difícil 2 não tem uma etapa de limpeza. Como resultado, é recomendável executar o Dia de resistência 2 em uma instância de preparo clonada e não na instância de produção principal. A instância de preparo deve ser descartada após os testes.
+>O Dia Difícil 2 não tem uma etapa de limpeza. Como resultado, é recomendável executar o Dia de resistência 2 em uma instância de preparo clonada e não na instância de produção principal. A instância de preparo deve ser descartada após os testes.
 >
 
 ### Obtendo ajuda {#getting-help}
@@ -330,7 +330,7 @@ ou
 
 >[!NOTE]
 >
-Devido a execuções paralelas, o número real de execuções de teste não será exatamente a quantidade configurada no `count` parâmetro. Espere um desvio proporcional ao número de threads em execução (controlado pelo `concurrency parameter`).
+>Devido a execuções paralelas, o número real de execuções de teste não será exatamente a quantidade configurada no `count` parâmetro. Espere um desvio proporcional ao número de threads em execução (controlado pelo `concurrency parameter`).
 
 ### Execução de prática {#dry-run}
 

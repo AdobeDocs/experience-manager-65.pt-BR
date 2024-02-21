@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
-source-wordcount: '3443'
+source-wordcount: '3442'
 ht-degree: 0%
 
 ---
@@ -485,7 +485,7 @@ A tabela abaixo descreve brevemente as propriedades:
  <tbody>
   <tr>
    <td><strong>Componente</strong></td>
-   <td><strong>Nome da Propriedade</strong></td>
+   <td><strong>Nome de propriedade</strong></td>
    <td><strong>Descrição da propriedade </strong></td>
   </tr>
   <tr>
@@ -563,7 +563,7 @@ Depois que a landing page é importada, os arquivos (imagens, css, js e assim po
 
 `/etc/designs/default/canvas/content/campaigns/<name of brand>/<name of campaign>/<name of landing page>`
 
-Suponha que a landing page seja criada sob a campanha We.Retail e o nome da landing page seja **myBlankLandingPage** em seguida, o local onde os arquivos Zip são armazenados é o seguinte:
+Suponha que a landing page seja criada na campanha `We.Retail` e o nome da landing page for **myBlankLandingPage** em seguida, o local onde os arquivos Zip são armazenados é o seguinte:
 
 `/etc/designs/default/canvas/content/campaigns/geometrixx/myBlankLandingPage`
 

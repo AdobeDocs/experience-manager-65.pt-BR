@@ -7,9 +7,9 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
 workflow-type: tm+mt
-source-wordcount: '2846'
+source-wordcount: '2835'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ A taxa de transferência máxima para esse cenário de operação de mix foi enc
 >
 >A taxa de transferência não distingue entre tipos de transação em um perfil de carga. A abordagem usada para medir o throughput garante que uma proporção fixa de cada tipo de transação seja incluída na carga de trabalho.
 
-Os dois testes acima destacam claramente que o throughput varia de acordo com o tipo de operação. Use as atividades em seu ambiente como base para dimensionar seu sistema. Você obterá uma melhor taxa de transferência com ações menos intensivas, como modificar (o que também é mais comum).
+Os dois testes acima destacam claramente que o throughput varia de acordo com o tipo de operação. Use as atividades em seu ambiente como base para dimensionar seu sistema. Você obtém melhor throughput com ações menos intensivas, como modificar (o que também é mais comum).
 
 ### Armazenamento em cache {#caching}
 
@@ -147,13 +147,13 @@ No ambiente de criação, a eficiência do armazenamento em cache normalmente é
 
 No ambiente de criação, o número de autores que trabalham em paralelo e a carga que suas interações adicionam ao sistema são os principais fatores limitantes. Portanto, a Adobe recomenda dimensionar o sistema com base na taxa de transferência compartilhada de dados.
 
-Para esses cenários, o Adobe executa testes de referência de desempenho em um cluster de dois nós sem compartilhamento de instâncias de autor.
+Para esses cenários, o Adobe executou testes de referência em um cluster de dois nós sem compartilhamento de instâncias de autor.
 
 * **Teste de referência 1a**
 Com um cluster sem compartilhamento ativo-ativo de 2 instâncias de autor, calcule a taxa de transferência máxima com um perfil de carga em que os usuários executam um exercício de criação de página simples sobre uma carga base de 300 páginas existentes, todas de natureza semelhante.
 
    * **Resultado**
-A taxa de transferência máxima para um exercício de criação de página simples, como o acima, (considerada como uma transação) refere-se a transações de 2016/hora. Isso é um aumento de aproximadamente 16% quando comparado a uma instância de autor independente para o mesmo teste de benchmark.
+A taxa de transferência máxima para um exercício de criação de página simples, como acima considerado como uma transação, corresponde a transações de 2016/hora. Isso é um aumento de aproximadamente 16% quando comparado a uma instância de autor independente para o mesmo teste de benchmark.
 
 * **Teste de referência 2b**
 Com um cluster sem compartilhamento ativo-ativo de 2 instâncias de autor, calcule a taxa de transferência máxima quando o perfil de carregamento tiver uma combinação de criação de página nova (10%), modificação de uma página existente (80%) e criação e modificação de uma página em sucessão (10%). A complexidade da página permanece a mesma do perfil do teste de benchmark 1. A modificação básica da página é feita adicionando uma imagem e modificando o conteúdo do texto. Novamente, o exercício foi executado sobre uma carga básica de 300 páginas de complexidade, a mesma definida no teste de benchmark 1.
@@ -179,7 +179,7 @@ Consulte também [Paralelização](/help/managing/hardware-sizing-guidelines.md#
 
 ### Recommendations de hardware {#hardware-recommendations}
 
-Normalmente, você pode usar o mesmo hardware para o ambiente de criação que é recomendado para o ambiente de publicação. Normalmente, o tráfego do site é muito menor nos sistemas de criação, mas a eficiência do cache também é menor. No entanto, o fator fundamental aqui é o número de autores trabalhando em paralelo, juntamente com o tipo de ações que estão sendo feitas no sistema. Em geral, o agrupamento de AEM (do ambiente do autor) é mais eficaz no dimensionamento de operações de leitura; em outras palavras, um cluster de AEM é bem dimensionado com autores que estão executando operações básicas de edição.
+Normalmente, você pode usar o mesmo hardware para o ambiente de criação que é recomendado para o ambiente de publicação. Normalmente, o tráfego do site é menor nos sistemas de criação, mas a eficiência do cache também é menor. No entanto, o fator fundamental aqui é o número de autores trabalhando em paralelo, juntamente com o tipo de ações que estão sendo feitas no sistema. Em geral, o agrupamento de AEM (do ambiente do autor) é mais eficaz no dimensionamento de operações de leitura; em outras palavras, um cluster de AEM é bem dimensionado com autores que estão executando operações básicas de edição.
 
 Os testes de benchmark no Adobe foram executados com o sistema operacional Red Hat® 5.5, em uma plataforma de hardware Hewlett-Packard ProLiant DL380 G5, com a seguinte configuração:
 
@@ -215,7 +215,7 @@ A relação de cache é a porcentagem de páginas que o Dispatcher pode retornar
 
 ### Complexidade de modelos e aplicativos {#complexity-of-templates-and-applications}
 
-Se você usar modelos complexos, o AEM precisará de mais tempo para renderizar uma página. As páginas retiradas do cache não são afetadas por isso, mas o tamanho da página ainda é relevante ao considerar o tempo de resposta geral. A renderização de uma página complexa pode facilmente levar dez vezes mais tempo do que a renderização de uma página simples.
+Se você usa modelos complexos, o AEM precisa de mais tempo para renderizar uma página. As páginas retiradas do cache não são afetadas por isso, mas o tamanho da página ainda é relevante ao considerar o tempo de resposta geral. A renderização de uma página complexa pode facilmente levar dez vezes mais tempo do que a renderização de uma página simples.
 
 ### Fórmula {#formula}
 
@@ -281,7 +281,7 @@ Se você tem um site mais complexo, você também precisa de servidores Web mais
 
 ## Cálculos adicionais específicos de caso de uso {#additional-use-case-specific-calculations}
 
-Além do cálculo de uma aplicação web padrão, talvez seja necessário considerar fatores específicos para os seguintes casos de uso. Os valores calculados devem ser adicionados ao cálculo padrão.
+Além do cálculo de um aplicativo web padrão, considere fatores específicos para os seguintes casos de uso. Os valores calculados devem ser adicionados ao cálculo padrão.
 
 ### Considerações específicas de ativos {#assets-specific-considerations}
 
@@ -291,13 +291,13 @@ Aloque pelo menos 16 GB de heap e configure o [!UICONTROL Ativo de atualização
 
 >[!NOTE]
 >
->Um throughput mais alto de imagens significa que os recursos de computação precisam acompanhar o ritmo da E/S do sistema e vice-versa. Por exemplo, se os workflows forem iniciados pela importação de imagens, o upload de muitas imagens via WebDAV poderá causar um backlog de workflows.
+Um throughput mais alto de imagens significa que os recursos de computação devem ser capazes de acompanhar o I/O do sistema e vice-versa. Por exemplo, se os workflows forem iniciados pela importação de imagens, o upload de muitas imagens via WebDAV poderá causar um backlog de workflows.
 >
->O uso de discos separados para TarPM, armazenamento de dados e índice de pesquisa pode ajudar a otimizar o comportamento de I/O do sistema (no entanto, geralmente faz sentido manter o índice de pesquisa localmente).
+O uso de discos separados para TarPM, armazenamento de dados e índice de pesquisa pode ajudar a otimizar o comportamento de I/O do sistema (no entanto, geralmente faz sentido manter o índice de pesquisa localmente).
 
 >[!NOTE]
 >
->Consulte também a [Guia de desempenho de ativos](/help/sites-deploying/assets-performance-sizing.md).
+Consulte também a [Guia de desempenho de ativos](/help/sites-deploying/assets-performance-sizing.md).
 
 ### Gerenciador de vários sites {#multi-site-manager}
 

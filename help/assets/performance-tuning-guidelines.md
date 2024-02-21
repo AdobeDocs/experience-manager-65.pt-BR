@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
-source-wordcount: '2739'
+source-wordcount: '2728'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Defina os seguintes parâmetros JVM:
 * `-Doak.queryLimitInMemory`=500000
 * `-Doak.queryLimitReads`=100000
 * `-Dupdate.limit`=250000
-* `-Doak.fastQuerySize`=verdadeiro
+* `-Doak.fastQuerySize`=true
 
 ## Armazenamento de dados e configuração de memória {#data-store-and-memory-configuration}
 
@@ -212,7 +212,7 @@ Além disso, defina o caminho da pasta temporária do ImageMagick no `configure.
 >
 >O ImageMagick `policy.xml` e `configure.xml` os arquivos estão disponíveis em `/usr/lib64/ImageMagick-&#42;/config/` em vez de `/etc/ImageMagick/`.Consulte [Documentação do ImageMagick](https://www.imagemagick.org/script/resources.php) para localização dos arquivos de configuração.
 
-Se você estiver usando [!DNL Experience Manager] no Adobe Managed Services (AMS), entre em contato com o Suporte ao cliente do Adobe se planejar processar muitos arquivos PSD ou PSB grandes. Trabalhe com o representante do Suporte ao cliente da Adobe para implementar essas práticas recomendadas para a implantação do AMS e escolher as melhores ferramentas e modelos possíveis para os formatos proprietários do Adobe. [!DNL Experience Manager]O pode não processar arquivos PSB de resolução muito alta com mais de 30.000 x 23.000 pixels. 
+Se você estiver usando [!DNL Experience Manager] no Adobe Managed Services (AMS), entre em contato com o Suporte ao cliente do Adobe se planejar processar muitos arquivos PSD ou PSB grandes. Trabalhe com o representante do Suporte ao cliente da Adobe para implementar essas práticas recomendadas para a implantação do AMS e escolher as melhores ferramentas e modelos possíveis para os formatos proprietários do Adobe. [!DNL Experience Manager] O não pode processar arquivos PSB de resolução muito alta com mais de 30.000 x 23.000 pixels.
 
 ### Writeback XMP {#xmp-writeback}
 

@@ -1,12 +1,12 @@
 ---
 title: Ações de Criação e Configuração de Aplicativo
-description: A criação de um aplicativo geralmente é o primeiro passo para criar e gerenciar conteúdo AEM Mobile On-Demand. Siga esta página para saber mais.
+description: A criação de um aplicativo geralmente é o primeiro passo para criar e gerenciar conteúdo AEM Mobile On-Demand. Siga esta página se quiser saber mais.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: dbe81ead-dfaa-4af0-9b66-a14917a1bcc7
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Criação de um aplicativo sob demanda {#creating-an-on-demand-application}
 
-A criação de um aplicativo geralmente é o primeiro passo para a criação e o gerenciamento de conteúdo AEM Mobile On-Demand e geralmente é realizada no nível do Administrador do AEM. Ele representa um shell de conteúdo, visualizável em dispositivos móveis, pronto para exibir o conteúdo criado pelo autor, como artigos, imagens, coleções e assim por diante.
+A criação de um aplicativo geralmente é o primeiro passo para a criação e o gerenciamento de conteúdo AEM Mobile On-Demand e geralmente é realizada no nível do Administrador do AEM. Ele representa um shell de conteúdo, visualizável em dispositivos móveis, pronto para exibir conteúdo criado pelo autor, como artigos, imagens e coleções.
 
 Os detalhes do aplicativo podem ser exibidos no Painel ou no AEM Mobile Control Center.
 
@@ -50,7 +50,7 @@ Os detalhes do aplicativo podem ser exibidos no Painel ou no AEM Mobile Control 
 
 ## Utilização de modelos de aplicativo {#using-app-templates}
 
-Os modelos de aplicativo oferecem uma maneira fácil de usar os designs existentes criados pelos desenvolvedores, usados para a criação de novos aplicativos no AEM.
+Os modelos de aplicativo fornecem uma maneira fácil de usar os designs existentes criados pelos desenvolvedores, usados para a criação de novos aplicativos no AEM.
 
 O que é um modelo de aplicativo? Pense nisso como uma coleção de modelos de página e componentes que representam uma linha de base ou base de um aplicativo.
 Ao criar um aplicativo com base no modelo de outro aplicativo, você obtém um aplicativo que tem um ponto de partida representativo do aplicativo no qual foi criado.
