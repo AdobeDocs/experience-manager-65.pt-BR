@@ -2,9 +2,9 @@
 title: Perguntas frequentes sobre AEM
 description: Use essas Perguntas frequentes para entender, configurar e solucionar problemas ou fluxos de trabalho comuns no AEM.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 1a7805f063daf6f3dd07a2ff2d182e58fe7e63b8
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
@@ -25,12 +25,6 @@ Com o modo sem binários ativado, os pacotes de conteúdo distribuídos contêm 
 
 Para habilitar a distribuição sem binários, implante com um armazenamento de blob compartilhado.
 Verifique a `useBinaryReferences` na configuração do OSGI com o PID de fábrica ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* que seu agente está usando.
-
-#### Como posso personalizar as mensagens de erro ao navegar pela hierarquia de páginas no console de sites AEM? {#how-can-i-customize-the-error-messages-while-navigating-page-hierarchy-in-aem-sites-console}
-
-Verifique o painel Rede (do navegador Chrome), onde uma configuração pessoal (JS) não foi minificada.
-
-Exibir o `Initiator` para determinar qual foi o iniciador de uma solicitação. Ele fornece os arquivos e os números de linha de onde as chamadas AJAX são feitas. Posteriormente, você poderá rastrear a função de tratamento de erros e alterar a mensagem de erro de acordo com sua exigência.
 
 #### Como ativar permissões ao criar uma Cópia de idioma para autores de conteúdo no AEM? {#how-to-enable-permissions-while-creating-language-copy-for-content-authors-in-aem}
 
