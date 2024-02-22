@@ -2,7 +2,7 @@
 title: Recursos obsoletos e removidos na versão Adobe Experience Manager 6.5.
 description: Notas de versão específicas para recursos obsoletos e removidos do Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 3443d331815ffb462890282a49e658693f157af0
+source-git-commit: a9b8980a5e6f0488f10c408cd18b83f3ff225058
 workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 10%
@@ -55,7 +55,8 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
 | Desenvolvedores | `Granite.Sling.js` biblioteca do cliente. O Adobe não planeja aprimorar ainda mais a biblioteca do cliente Granite.Sling.js fornecida como parte da distribuição (Início rápido). | A Adobe recomenda que os clientes que dependem da capacidade da biblioteca refatorem seu código para não usá-lo mais. |  |
 | Desenvolvedores | Utilização da interface do usuário do para compactar/minificar bibliotecas de clientes JavaScript. O Adobe não planeja atualizar ainda mais a biblioteca YUI. Até o AEM 6.4, a YUI era padrão para minificar o JavaScript com a opção de alternar para o Google Closure Compiler (GCC). A partir do AEM 6.5, o GCC é o padrão. | A Adobe recomenda que os clientes que atualizam para AEM 6.5 mudem para GCC para implementação |  |
 | Desenvolvedores | Editor de diálogo da interface clássica no CRXDE Lite. O Adobe não planeja aprimorar ainda mais o Editor de diálogo da interface clássica fornecido como parte da distribuição (Quickstart) | Nenhuma substituição disponível. |  |
-| Forms | A integração do AEM Forms com o AEM Mobile está obsoleta. | Não há Substituição disponível. |  | Desenvolvedores | Editor de diálogo da interface clássica no CRXDE Lite. O Adobe não planeja aprimorar ainda mais o Editor de diálogo da interface clássica fornecido como parte da distribuição (Quickstart) | Nenhuma substituição disponível. |  |
+| Forms | A integração do AEM Forms com o AEM Mobile está obsoleta. | Não há Substituição disponível. |
+| Desenvolvedores | Editor de diálogo da interface clássica no CRXDE Lite. O Adobe não planeja aprimorar ainda mais o Editor de diálogo da interface clássica fornecido como parte da distribuição (Quickstart) | Nenhuma substituição disponível. |  |
 | Desenvolvedores | Biblioteca cliente Lodash/underscore. O Adobe não planeja fazer manutenção e atualização adicionais da biblioteca do cliente Lodash/underscore fornecida como parte da distribuição (Início rápido). | A Adobe recomenda que os clientes que ainda exigem Lodash/underline para seu código o adicionem à base de código do projeto. |  |
 
 ## Recursos removidos {#removed-features}

@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 exl-id: 1e839845-fb5c-4200-8ec5-6ff744a96943
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
+source-git-commit: fd30e16274b6d5f971120f4e360fc9d65ae21bec
 workflow-type: tm+mt
-source-wordcount: '2642'
-ht-degree: 23%
+source-wordcount: '2665'
+ht-degree: 19%
 
 ---
 
 # Reutilizar conteúdo: gerenciador de vários sites e Live Copy{#reusing-content-multi-site-manager-and-live-copy}
 
-O Gerenciador de vários sites (MSM) permite que você use o mesmo conteúdo de site em vários locais. O MSM usa a funcionalidade de Live Copy para alcançar isso:
+O Gerenciador de vários sites (MSM) permite que você use o mesmo conteúdo de site em vários locais. O MSM usa a funcionalidade de Live Copy para fazer isso:
 
 * Com o MSM é possível:
 
@@ -151,6 +151,10 @@ O MSM é diretamente acessível por meio da interface usando várias opções do
 
 >[!NOTE]
 >
+>O MSM pode ser usado com páginas e [Fragmentos de experiência](/help/sites-authoring/experience-fragments.md) já que esses fragmentos fazem parte de uma experiência (página).
+
+>[!NOTE]
+>
 >Alguns aspectos da funcionalidade do MSM são usados em vários outros recursos do Adobe Experience Manager (AEM) (por exemplo, Inicializações, Catálogo); nesses casos, a live copy é gerenciada por esse recurso.
 
 ### Termos usados {#terms-used}
@@ -171,7 +175,7 @@ Como introdução, a tabela a seguir fornece uma visão geral dos principais ter
   </tr>
   <tr>
    <td><strong>Live Copy</strong></td>
-   <td>A cópia (do original) mantida pelas ações de sincronização, conforme definido pelas configurações de implantação. </td>
+   <td>A cópia (da origem) mantida pelas ações de sincronização, conforme definido pelas configurações de implantação. </td>
    <td> </td>
   </tr>
   <tr>
@@ -180,7 +184,7 @@ Como introdução, a tabela a seguir fornece uma visão geral dos principais ter
    <td> </td>
   </tr>
   <tr>
-   <td><strong>Relacionamento dinâmico</strong><br /> </td>
+   <td><strong>Relacionamento ao vivo</strong><br /> </td>
    <td>Definição efetiva da herança para um determinado recurso; as conexões entre a origem e as live copies.<br /> </td>
    <td>Garante que as alterações na origem possam ser sincronizadas com a live copy.</td>
   </tr>
@@ -281,7 +285,7 @@ No exemplo anterior, `/content/we-retail/language-masters/en` é o site principa
 
 >[!NOTE]
 >
-Os diagramas e descrições nesta seção representam instantâneos de possíveis live copies. Eles não são abrangentes, mas fornecem uma visão geral e destacam características específicas.
+>Os diagramas e descrições nesta seção representam instantâneos de possíveis live copies. Eles não são abrangentes, mas fornecem uma visão geral e destacam características específicas.
 
 Inicialmente, ao criar uma live copy, as páginas de origem selecionadas são refletidas em uma base de um por um na live copy. Depois disso, novos recursos (páginas e/ou parágrafos) também podem ser criados diretamente na live copy. Portanto, é útil estar ciente dessas variações e de como elas afetam a sincronização. As possíveis composições incluem:
 
@@ -323,7 +327,7 @@ Quando você (ou um processo) cria um [página em uma live copy existente](#live
 
 >[!NOTE]
 >
-Se você mover/renomear uma página na ramificação da live copy, ela será tratada (internamente) como uma live copy aninhada para permitir que o AEM rastreie os relacionamentos.
+>Se você mover/renomear uma página na ramificação da live copy, ela será tratada (internamente) como uma live copy aninhada para permitir que o AEM rastreie os relacionamentos.
 
 #### Live Copies empilhadas {#stacked-live-copies}
 
@@ -360,7 +364,7 @@ Uma implantação é a ação central do MSM que sincroniza as Live Copies com a
 * A [configuração de implantação](#rollout-configurations) pode ser definida para que [eventos](/help/sites-administering/msm-sync.md#rollout-triggers) específicos ocasionem uma implantação automaticamente.
 * Ao criar uma página do blueprint, você pode usar o [Implantação](/help/sites-administering/msm-livecopy.md#rolling-out-a-blueprint) comando para enviar alterações para a live copy.
 
-  **O comando Implantação** está disponível em uma página de blueprint referenciada em uma configuração de blueprint.
+  **A implantação** está disponível em uma página de blueprint referenciada em uma configuração de blueprint.
 
   ![Implantação](assets/chlimage_1-370.png)
 
@@ -374,7 +378,7 @@ Uma implantação é a ação central do MSM que sincroniza as Live Copies com a
 
 Uma configuração de implantação define quando e como uma live copy é sincronizada com o conteúdo original. Uma configuração de implantação consiste em um acionador e uma ou mais ações de sincronização:
 
-* **Acionar**
+* **Acionador**
 
   Um acionador é um evento que ocasiona a sincronização da ação dinâmica, como a ativação de uma página de origem. O MSM define os acionadores que você pode usar.
 
@@ -384,7 +388,7 @@ Uma configuração de implantação define quando e como uma live copy é sincro
 
   >[!NOTE]
   >
-  É possível criar ações personalizadas para sua instância usando a API do Java™.
+  >É possível criar ações personalizadas para sua instância usando a API do Java™.
 
 As configurações de implantação podem ser reutilizadas, de modo que mais de uma live copy pode usar a mesma configuração. Várias [configurações de implantação](/help/sites-administering/msm-sync.md#installed-rollout-configurations) estão inclusas em uma instalação padrão.
 
@@ -406,13 +410,13 @@ Também é possível [desanexar uma live copy](/help/sites-administering/msm-liv
 
 >[!CAUTION]
 >
-A ação Desconectar é permanente e irreversível.
+>A ação Desconectar é permanente e irreversível.
 
 Desanexar remove permanentemente o relacionamento dinâmico entre uma live copy e sua página de blueprint. Todas as propriedades relevantes ao MSM são removidas da live copy e as páginas da live copy se tornam uma cópia independente.
 
 >[!NOTE]
 >
-Consulte [Desconectar uma Live Copy](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy) para obter detalhes completos, incluindo o impacto relacionado em páginas secundárias e principais.
+>Consulte [Desconectar uma Live Copy](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy) para obter detalhes completos, incluindo o impacto relacionado em páginas secundárias e principais.
 
 ## Etapas padrão para usar o MSM {#standard-steps-for-using-msm}
 
