@@ -2,9 +2,9 @@
 title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 2ffb77762af1969f3c93e7dd33cb3de9349375f8
+source-git-commit: f48e77068f286ff107bb2511660bf540fea32474
 workflow-type: tm+mt
-source-wordcount: '2889'
+source-wordcount: '2888'
 ht-degree: 2%
 
 ---
@@ -67,7 +67,7 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6520}
 
-* As pastas de configuração aninhadas não eram mais suportadas e as pastas de modelo de fragmento de conteúdo não eram mais visíveis após a atualização para AEM 6.5.18 ou AEM 6.5.19. (SITES-18110) PRINCIPAL
+* As pastas de configuração aninhadas não eram mais suportadas e as pastas de modelo de fragmento de conteúdo não eram mais visíveis após a atualização para AEM 6.5.18 ou AEM 6.5.19. (SITES-18110)
 * Algumas subpastas não conseguem selecionar modelos de fragmento de conteúdo herdados. Ele deve aceitar pastas sem ter um `jcr:content` mesmo que as pastas do DAM criadas por meio da interface do usuário tenham esse nó. (SITES-17943)
 
 #### [!DNL Content Fragments] - API do GraphQL {#sites-graphql-api-6520}
@@ -156,13 +156,7 @@ Correções na [!DNL Experience Manager] Os Forms são entregues por meio de um 
 
 * text -->
 
-#### [!DNL Forms Designer]{#forms-designer-6520}
-
-* text
-
-<!-- ### Foundation{#foundation-6520}
-
-* text -->
+### Foundation {#foundation-6520}
 
 #### Communities {#communities-6520}
 
@@ -181,17 +175,9 @@ Correções na [!DNL Experience Manager] Os Forms são entregues por meio de um 
 * O rótulo &quot;close&quot; de Aria não está localizado em **[!UICONTROL Assets]** > **[!UICONTROL Arquivos]**, selecione uma pasta e, na barra de ferramentas, selecione **[!UICONTROL Propriedades]** > **[!UICONTROL Permissões]** guia > nome do membro. (NPR-41705)
 * Há uma dica de ferramenta truncada para o **[!UICONTROL Senha da chave de armazenamento]** na página Configuração do SSL das localidades ENG, FRA, KOR, DEU e PTB. (NPR-41367)
 
-<!-- #### Oak{#oak-6520}
-
-* text -->
-
 #### Platform{#foundation-platform-6520}
 
 * Problema na integração do Campaign com o AEM causado pelo servlet /api não retornar o esquema correto no json href. O motivo era porque o AEM não estava recebendo o cabeçalho X-Forward-Proto, o que forçou a solicitação a responder com um esquema HTTP em vez de HTTPS. Dessa forma, a capacidade de alternar a seleção do esquema com base em uma configuração OSGI deve ser adicionada. (GRANITE-48454)
-
-<!-- #### Replication{#foundation-replication-6520}
-
-* text -->
 
 #### Sling{#foundation-sling-6520}
 
