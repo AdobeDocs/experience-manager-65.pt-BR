@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 05f54e451c72b0a1690ba4a2ca50db87711a8094
+source-git-commit: 22235790b2bfefaa1a3bf71f888f8eb343d9e1b7
 workflow-type: tm+mt
-source-wordcount: '3608'
-ht-degree: 2%
+source-wordcount: '4257'
+ht-degree: 1%
 
 ---
 
@@ -460,3 +460,57 @@ Lembre-se das seguintes considerações e limitações ao trabalhar em um docume
 * Fragmentos de documento em um formulário adaptável não aparecem no documento de registro. No entanto, os fragmentos de formulário adaptáveis são compatíveis.
 * Não há suporte para a associação de conteúdo no documento de registro gerado para o formulário adaptável baseado em esquema XML.
 * A versão localizada do documento de registro é criada sob demanda para um local quando o usuário solicita a renderização do documento de registro. A localização do documento de registro ocorre juntamente com a localização do formulário adaptável. Para obter mais informações sobre a localização do documento de registro e formulários adaptáveis, consulte [Uso do fluxo de trabalho de tradução do AEM para localizar formulários adaptáveis e documentos de registro](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
+
+## Usar um arquivo XCI personalizado
+
+Um arquivo XCI ajuda a definir várias propriedades de um documento. <!-- Forms as a Cloud Service has a master XCI file.--> Você pode usar um arquivo XCI personalizado para substituir uma ou mais propriedades padrão especificadas no arquivo XCI existente. Por exemplo, você pode optar por incorporar uma fonte em um documento ou ativar a propriedade marcada para todos os documentos. A tabela a seguir especifica as opções de XCI:
+
+| Opção XCI | Descrição |
+|--- |--- |
+| config/present/pdf/creator | Identifica o criador do documento usando a entrada Criador no dicionário de Informações do Documento. Para obter informações sobre este dicionário, consulte [Guia de referência do PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
+| config/present/pdf/producer | Identifica o produtor do documento usando a entrada Produtor no dicionário de Informações do documento. Para obter informações sobre este dicionário, consulte [Guia de referência do PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
+| config/present/layout | Controla se a saída é um painel único ou paginada. |
+| config/present/pdf/compression/level | Especifica o grau de compactação a ser usado ao gerar um documento PDF. |
+| config/present/pdf/fontInfo/embed | Controla a incorporação de fontes no documento de saída. |
+| config/present/pdf/scriptModel | Controla se informações específicas de XFA são incluídas no documento PDF de saída. |
+| config/present/common/data/adjustData | Controla se o aplicativo XFA ajusta os dados após a mesclagem. |
+| config/present/pdf/renderPolicy | Controla se a geração do conteúdo da página é feita no servidor ou adiada para o cliente. |
+| configuração/presente/comum/local | Especifica a localidade padrão usada no documento de saída. |
+| config/present/destination | Quando contido por um elemento presente, especifica o formato de saída. Quando contido por um elemento openAction, especifica a ação a ser executada ao abrir o documento em um cliente interativo. |
+| config/present/output/type | Especifica o tipo de compactação a ser aplicado a um arquivo ou o tipo de saída a ser produzido. |
+| config/present/common/temp/uri | Especifica o URI do formulário. |
+| config/present/common/template/base | Fornece um local base para URIs no design do formulário. Quando este elemento estiver ausente ou vazio, o local do design do formulário será usado como base. |
+| config/present/common/log/to | Controla o local onde os dados de log ou de saída são gravados. |
+| config/present/output/to | Controla o local onde os dados de log ou de saída são gravados. |
+| config/present/script/currentPage | Especifica a página inicial quando o documento é aberto. |
+| config/present/script/exclude | Informa o Forms as a Cloud Service sobre quais eventos ignorar. |
+| config/present/pdf/linearized | Controla se o documento de PDF de saída está linearizado. |
+| config/present/script/runScripts | Controla qual conjunto de scripts o Forms as a Cloud Service executa. |
+| config/present/pdf/tagged | Controla a inclusão de tags no documento de PDF de saída. As tags, no contexto de PDF, são informações adicionais incluídas em um documento para expor a estrutura lógica do documento. As tags auxiliam na acessibilidade e na reformatação. Por exemplo, um número de página pode ser marcado como um artefato para que um leitor de tela não o enuncie no meio do texto. Embora as tags tornem um documento mais útil, elas também aumentam o tamanho do documento e o tempo de processamento para criá-lo. |
+| config/present/pdf/fontInfo/alwaysEmbed | Especifica uma fonte que está incorporada no documento de saída. |
+| config/present/pdf/fontInfo/neverEmbed | Especifica uma fonte que nunca deve ser incorporada ao documento de saída. |
+| config/present/pdf/pdfa/part | Especifica o número da versão da especificação de PDF/A com a qual o documento está em conformidade. |
+| config/present/pdf/pdfa/amd | Especifica o nível de alteração da especificação PDF/A. |
+| config/present/pdf/pdfa/conformance | Especifica o nível de conformidade com a especificação PDF/A. |
+| config/present/pdf/version | Especifica a versão do documento PDF a ser gerada |
+| config/present/pdf/version/map | Especifica as fontes de fallback do documento |
+
+
+<!--
+
+### Use a custom XCI file in your AEM Forms environment
+
+  1. Add the custom XCI file to your development project.
+  1. Specify the following inline property:(/help/implementing/deploying/configuring-osgi.md)
+  1. Deploy the project to your AEM Forms environment. <!--Cloud Service environment
+  
+-->
+
+### Usar um arquivo XCI personalizado no ambiente de desenvolvimento do Forms local
+
+1. Carregue o arquivo XCI no ambiente de desenvolvimento local.
+1. Abertura <!--Cloud Service SDK--> gerenciador de configurações. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
+1. Localize e abra o **[!UICONTROL Canal da Web de comunicação interativa e Forms adaptável]** configuração.
+1. Especifique o caminho do arquivo XCI e clique em **[!UICONTROL Salvar]**.
+
+
