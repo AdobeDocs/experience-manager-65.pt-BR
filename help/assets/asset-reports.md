@@ -6,10 +6,10 @@ role: User, Admin
 feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 93d0a38d13223a8580f54786bc4ffe149efe99f1
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 10%
+source-wordcount: '1155'
+ht-degree: 8%
 
 ---
 
@@ -43,12 +43,12 @@ Para gerar relatórios, faça o seguinte:
 
 [!DNL Experience Manager Assets] O gera os seguintes relatórios padrão para você:
 
-* Upload
+* Fazer upload
 * Download
 * Expiração
 * Modificação
 * Publicação
-* [!DNL Brand Portal] publicação
+* [!DNL Brand Portal] publicar
 * Uso do disco
 * Arquivos
 * Compartilhamento de link
@@ -96,7 +96,7 @@ Para gerar relatórios, faça o seguinte:
 
    ![Página de detalhes do relatório Arquivos](assets/files_report.png)
 
-   O relatório **[!UICONTROL Compartilhamento de links]** exibe URLs de ativos que são compartilhados com usuários externos a partir do [!DNL Assets]. Inclui IDs de email do usuário que compartilhou os ativos, IDs de email de usuários com os quais os ativos são compartilhados, data de compartilhamento e data de expiração do link. As colunas não são personalizáveis.
+   A variável **[!UICONTROL Compartilhamento de link]** O relatório de exibe URLs de ativos que são compartilhados com usuários externos a partir do [!DNL Assets]. Inclui IDs de email do usuário que compartilhou os ativos, IDs de email de usuários com os quais os ativos são compartilhados, data de compartilhamento e data de expiração do link. As colunas não são personalizáveis.
 
    A variável **[!UICONTROL Compartilhamento de link]** relatório, não inclui opções para subpastas e representações porque apenas publica os URLs compartilhados que aparecem em `/var/dam/share`.
 
@@ -115,7 +115,8 @@ Para gerar relatórios, faça o seguinte:
 1. Clique em **[!UICONTROL Criar]** na barra de ferramentas. Uma mensagem notifica que a geração de relatório foi iniciada.
 1. No [!UICONTROL Relatórios de ativos] página, o status de geração de relatório é baseado no estado atual do trabalho de relatório, por exemplo, [!UICONTROL Sucesso], [!UICONTROL Failed], [!UICONTROL Em fila]ou [!UICONTROL Agendado]. O mesmo status aparece na caixa de entrada de notificações.Para exibir a página do relatório, clique no link do relatório. Como alternativa, selecione o relatório e clique em **[!UICONTROL Exibir]** na barra de ferramentas.
 
-   ![Um relatório gerado](assets/report_page.png)
+   <!--![A generated report](assets/report_page.png)-->
+   [Status do relatório](assets/report-status.JPG)
 
    Clique em **[!UICONTROL Baixar]** na barra de ferramentas para baixar o relatório no formato CSV.
 
@@ -123,12 +124,12 @@ Para gerar relatórios, faça o seguinte:
 
 Você pode adicionar colunas personalizadas aos seguintes relatórios para exibir mais dados de acordo com seus requisitos personalizados:
 
-* Upload
+* Fazer upload
 * Download
 * Expiração
 * Modificação
 * Publicação
-* [!DNL Brand Portal] publicação
+* [!DNL Brand Portal] publicar
 * Arquivos
 
 Para adicionar colunas personalizadas a esses relatórios, siga estas etapas:
