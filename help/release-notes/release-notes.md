@@ -2,9 +2,9 @@
 title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: f48e77068f286ff107bb2511660bf540fea32474
+source-git-commit: 210299acf9f853a19bd513c84c1678e44ba81729
 workflow-type: tm+mt
-source-wordcount: '2888'
+source-wordcount: '2456'
 ht-degree: 2%
 
 ---
@@ -399,13 +399,17 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 
 ### Problemas conhecidos do AEM Forms
 
-#### Plataformas compatíveis
+Problemas conhecidos no [!DNL Experience Manager] Os Forms são entregues por meio de um pacote complementar separado uma semana após o agendamento [!DNL Experience Manager] Data de lançamento do Service Pack. Nesse caso, a versão do pacote complementar do AEM 6.5.20.0 Forms está programada para quinta-feira, 29 de fevereiro de 2024. Uma lista de problemas conhecidos para formulários foi adicionada a esta seção após a versão.
 
-* O JDK 11.0.20 não é compatível com a instalação do AEM Forms no instalador do JEE. Somente o JDK 11.0.19 ou versões anteriores são compatíveis com a instalação do AEM Forms no instalador do JEE. (FORMS-10659)
+<!--
 
-#### Instalação
+#### Supported platforms 
 
-* Na plataforma JBoss® 7.1.4, quando o usuário instala o Experience Manager 6.5.16.0 ou o service pack posterior, `adobe-livecycle-jboss.ear` falha na implantação. (CQ-4351522, CQDOC-20159)
+* JDK 11.0.20 is not supported to install AEM Forms on JEE Installer. Only JDK 11.0.19 or earlier versions are supported to install AEM Forms on JEE Installer. (FORMS-10659)
+
+#### Installation 
+
+* On JBoss&reg; 7.1.4 platform, when user installs Experience Manager 6.5.16.0 or later service pack, `adobe-livecycle-jboss.ear` deployment fails. (CQ-4351522, CQDOC-20159)
 
 <!-- 
 * After upgrading to AEM Forms 6.5.18.0 JBoss&reg; Turnkey full installer environment on Windows Server 2022, when compiling Output client application code using Java&trade; 11, the following compilation error may occur:
@@ -425,47 +429,45 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
         > You can also use an in-place editing tool, for example, 7-zip, to update the `Manifest.mf` file.  
 
     1. Save the updated the `Manifest.mf` in the `adobe-output-client.jar` archive. 
-    1. Save the modified `adobe-output-client.jar` file and rerun the setup. (CQDOC-20878) -->
+    1. Save the modified `adobe-output-client.jar` file and rerun the setup. (CQDOC-20878) 
 
-* Após instalar o instalador completo do AEM Service Pack 6.5.20.0, a implantação do EAR falha no JEE usando o JBoss® Turnkey. <!-- UPDATE FOR EACH NEW RELEASE -->
+* After installing AEM Service Pack 6.5.20.0 full installer, the EAR deployment fails on JEE using JBoss&reg; Turnkey. UPDATE FOR EACH NEW RELEASE To resolve the issue, locate the AEM_Forms_Installation_dir\jboss\bin\standalone.bat file and update `Adobe_Adobe_JAVA_HOME` to `Adobe_JAVA_HOME` for all occurrences before running the configuration manager. (CQDOC-20803).
 
-Para resolver o problema, localize o `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` arquivo e atualização `Adobe_Adobe_JAVA_HOME` para `Adobe_JAVA_HOME` para todas as ocorrências antes de executar o gerenciador de configurações. (CQDOC-20803)
+#### Install the servlet fragment (AEM Service Pack 6.5.14.0 or earlier)
 
-#### Instalar o fragmento do servlet (AEM Service Pack 6.5.14.0 ou anterior)
+* If you are upgrading to AEM Service Pack 6.5.15.0 or higher, and your AEM instance is operating on Tomcat 8.5.88, it is mandatory that you install the servlet fragment. Do this install *before* you proceed with the installation of Service Pack 6.5.15.0 or higher.
+* It is mandatory that you install the servlet fragment for all application servers except those running on JBoss&reg; EAP 7.4.0.
 
-* Se você estiver atualizando para o AEM Service Pack 6.5.15.0 ou superior e sua instância AEM estiver operando no Tomcat 8.5.88, é obrigatório instalar o fragmento de servlet. Fazer esta instalação *antes* você continua com a instalação do Service Pack 6.5.15.0 ou superior.
-* É obrigatório instalar o fragmento de servlet para todos os servidores de aplicações, exceto aqueles executados no JBoss® EAP 7.4.0.
+**To install the servlet fragment:**
 
-**Para instalar o fragmento de servlet:**
-
-1. Baixe o fragmento do servlet de [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar).
-1. Inicie o servidor de aplicativos.
-1. Aguarde os registros estabilizarem e verifique o estado do pacote.
-1. Abra os Pacotes de console da Web. O URL padrão é `http://[Server]:[Port]/system/console/bundles`.
-1. Selecionar **[!UICONTROL Instalar]** ou **[!UICONTROL Atualizar]**.
-1. Selecionar o fragmento baixado
-   `org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar`
-1. Selecionar **[!UICONTROL Instalar]** ou **[!UICONTROL Atualizar]**.
-1. Aguarde o servidor de aplicativos estabilizar.
-1. Interrompa o servidor de aplicativos.
+1. Download the servlet fragment from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar).
+1. Start the application server. 
+1. Wait for the logs to stabilize and check the bundle state.
+1. Open Web Console Bundles. The default URL is `http://[Server]:[Port]/system/console/bundles`.
+1. Select **[!UICONTROL Install]** or **[!UICONTROL Update]**. 
+1. Select the downloaded fragment 
+`org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar` 
+1. Select **[!UICONTROL Install]** or **[!UICONTROL Update]**. 
+1. Wait for the application server to stabilize.
+1. Stop the application server.
 
 #### Adaptive Forms
 
-* Quando um Formulário adaptável é publicado, todas as suas dependências, incluindo políticas, são republicadas, mesmo que nenhuma modificação tenha sido feita nelas. (FORMS-10454)
-* Quando um usuário opta por configurar um campo pela primeira vez em um formulário adaptável, a opção para salvar uma configuração não é exibida no Navegador de propriedades. Selecionar para configurar algum outro campo do Formulário adaptável no mesmo editor resolve o problema.
-* Quando os usuários executam a ação de envio, o envio falha com um erro:
-  `javax.servlet.ServletException: java.lang.NoSuchMethodError`
-Para resolver o problema, [recompile os scripts do Sling, como JSP, Java™ e Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html#resolution). (FORMS-8542)
-* Após instalar o AEM Service Pack 6.5.14.0 e posteriores, os usuários não podem selecionar uma fonte na interface do usuário do JEE Admin para documentos do PDF ao navegar até `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, pois a lista de fontes aparece vazia. (FORMS-12095)
-<!-- When a form is signed using the OOTB Scribble Signature component, it appears in the image dialogue but does not preview and appears blank when you click on it. (FORMS-12073). A hotfix is available for this issue. To download and install the hotfix, see [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md) -->
-* No AEM Forms no JEE, o Forms HTML5 que usa o caminho de contexto não é renderizado. (FORMS-12485, FORMS-12691). Uma correção está disponível para esse problema. Para baixar e instalar o hotfix, consulte [Hotfixes do Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md).
-* O Forms adaptável permite usar funções personalizadas com o ECMAScript versão 5 ou anterior. Quando uma função personalizada usa o ECMAScript versão 6 ou posterior, como &quot;let&quot;, &quot;const&quot; ou funções de seta, o editor de regras pode não abrir corretamente.
+* When an Adaptive Form is published, all its dependencies, including policies, get republished, even if no modifications have been made to them. (FORMS-10454)
+* When a user selects to configure a field for the first time in an adaptive form, the option to save a configuration does not display in Properties Browser. Selecting to configure some other field of the Adaptive Form in the same editor resolves the issue. 
+* When users perform the submit action, the submission fails with an error: 
+`javax.servlet.ServletException: java.lang.NoSuchMethodError`
+To resolve the issue, [recompile the Sling scripts such as JSP, Java&trade;, and Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html#resolution). (FORMS-8542)
+* After installing AEM Service Pack 6.5.14.0 and onwards, users are unable to select a font from the JEE Admin UI for PDF documents when navigating to `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, as the font list appears empty. (FORMS-12095)
+ When a form is signed using the OOTB Scribble Signature component, it appears in the image dialogue but does not preview and appears blank when you click on it. (FORMS-12073). A hotfix is available for this issue. To download and install the hotfix, see [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md) 
+* On AEM Forms on JEE, the HTML5 Forms that use the context path, fail to render. (FORMS-12485, FORMS-12691). A hotfix is available for this issue. To download and install the hotfix, see [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md).
+* Adaptive Forms let you use custom functions with ECMAScript version 5 or earlier. When a custom function uses ECMAScript version 6 or later, like 'let', 'const', or arrow functions, the rule editor might not open properly.
 
-#### AEM Forms no JEE
+#### AEM Forms on JEE 
 
-* Vulnerabilidades críticas de segurança foram relatadas para Struts 2 RCE, uma estrutura de aplicativo Web popular e de código aberto para o desenvolvimento de aplicativos Web Java™ EE. O Adobe lançou [AEM 6.5 Service Pack 19.1 (6.5.19.1)](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md) para lidar com a vulnerabilidade no AEM Forms no JEE.
+* Critical security vulnerabilities have been reported for Struts 2 RCE, a popular and open-source web application framework for developing Java&trade; EE web applications. Adobe has released [AEM 6.5 Service Pack 19.1 (6.5.19.1)](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md) to address the vulnerability in AEM Forms on JEE. 
 
-<!--The font enumeration fails due to the missing Ps2Pdf service file.-->
+The font enumeration fails due to the missing Ps2Pdf service file.-->
 
 ## Pacotes OSGi e pacotes de conteúdo incluídos{#osgi-bundles-and-content-packages-included}
 
