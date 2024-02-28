@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '7812'
+source-wordcount: '7848'
 ht-degree: 0%
 
 ---
@@ -36,13 +36,13 @@ O serviço Generate PDF usa aplicativos nativos para converter os formatos de ar
 
 >[!NOTE]
 >
-O serviço Generate PDF não oferece suporte às versões de 64 bits do OpenOffice.
+>O serviço Generate PDF não oferece suporte às versões de 64 bits do OpenOffice.
 
 * Adobe Photoshop® CS2 para converter PSD (somente Windows)
 
 >[!NOTE]
 >
-O Photoshop CS3 e o CS4 não têm suporte porque não são compatíveis com o Windows Server 2003 ou o Windows Server 2008.
+>O Photoshop CS3 e o CS4 não têm suporte porque não são compatíveis com o Windows Server 2003 ou o Windows Server 2008.
 
 * Adobe FrameMaker® 7.2 e 8 para converter FM (somente Windows)
 * Adobe PageMaker® 7.0 para converter PMD, PM6, P65 e PM (somente para Windows)
@@ -82,7 +82,7 @@ Você pode realizar essas tarefas usando o serviço Gerar PDF:
 
 >[!NOTE]
 >
-Para obter mais informações sobre o serviço Gerar PDF, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o serviço Gerar PDF, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Convertendo documentos do Word em documentos do PDF {#converting-word-documents-to-pdf-documents}
 
@@ -90,11 +90,11 @@ Esta seção descreve como você pode usar a API Gerar PDF para converter progra
 
 >[!NOTE]
 >
-Para obter mais informações sobre formatos de arquivo adicionais, consulte [Adição de suporte para formatos de arquivo nativos adicionais](converting-file-formats-pdf.md#adding-support-for-additional-native-file-formats).
+>Para obter mais informações sobre formatos de arquivo adicionais, consulte [Adição de suporte para formatos de arquivo nativos adicionais](converting-file-formats-pdf.md#adding-support-for-additional-native-file-formats).
 
 >[!NOTE]
 >
-Para obter mais informações sobre o serviço Gerar PDF, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o serviço Gerar PDF, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary-of-steps}
 
@@ -202,7 +202,7 @@ Converta um documento do Microsoft Word em um documento PDF usando a API de gera
 
    >[!NOTE]
    >
-   Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
+   >Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
 
 1. Crie um cliente Generate PDF.
 
@@ -260,7 +260,7 @@ Esta seção descreve como você pode usar a API Gerar PDF para converter progra
 
 >[!NOTE]
 >
-Para obter mais informações sobre o serviço Gerar PDF, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o serviço Gerar PDF, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-1}
 
@@ -359,7 +359,7 @@ Converta conteúdo de HTML em um documento de PDF usando a API de geração de P
 
    >[!NOTE]
    >
-   Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
+   >Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
 
 1. Crie um cliente Generate PDF.
 
@@ -410,7 +410,7 @@ Esta seção descreve como você pode usar a API de Java Generate PDF e a API de
 
 >[!NOTE]
 >
-Para obter mais informações sobre o serviço Gerar PDF, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o serviço Gerar PDF, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-2}
 
@@ -510,7 +510,7 @@ Converta um documento PDF em um arquivo RTF usando a API Generate PDF (serviço 
 
    >[!NOTE]
    >
-   Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
+   >Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
 
 1. Crie um cliente Generate PDf.
 
@@ -845,7 +845,7 @@ Se você criar um script para um aplicativo nativo que não era suportado anteri
 
 >[!NOTE]
 >
-Neste contexto, entende-se por &quot;complemento&quot; o conteúdo da `appmon.[applicationname].addition.[locale].xml` arquivo. Esse arquivo especifica substituições e adições ao arquivo XML da caixa de diálogo.
+>Neste contexto, entende-se por &quot;complemento&quot; o conteúdo da `appmon.[applicationname].addition.[locale].xml` arquivo. Esse arquivo especifica substituições e adições ao arquivo XML da caixa de diálogo.
 
 Também é possível modificar o arquivo XML da caixa de diálogo adicional para um aplicativo nativo com estas finalidades:
 
@@ -858,7 +858,7 @@ O nome do arquivo XML de diálogo adicional deve usar o formato `appmon.[applica
 
 >[!NOTE]
 >
-Nenhum dos aplicativos genéricos especificados no arquivo de configuração native2pdfconfig.xml tem um arquivo XML primário de diálogo. A seção [Adição ou modificação de suporte para um formato de arquivo nativo](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) descreve essas especificações.
+>Nenhum dos aplicativos genéricos especificados no arquivo de configuração native2pdfconfig.xml tem um arquivo XML primário de diálogo. A seção [Adição ou modificação de suporte para um formato de arquivo nativo](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) descreve essas especificações.
 
 Pedido `windowList` elementos que aparecem como filhos em uma `window` elemento. (Consulte [Ordenação dos elementos window e windowList](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements).)
 
@@ -878,7 +878,7 @@ Este procedimento explica como atualizar o arquivo de configuração do serviço
 
 >[!NOTE]
 >
-O nome do aplicativo é especificado como o valor do `GenericApp` do elemento `name` atributo. Esse valor deve corresponder exatamente ao nome especificado no script desenvolvido para esse aplicativo. Do mesmo modo, a `GenericApp` do elemento `displayName` atributo deve corresponder exatamente ao do script correspondente `expectedWindow` legenda da janela. Essa equivalência é avaliada após resolver quaisquer expressões regulares que apareçam na variável `displayName` ou `caption` atributos.
+>O nome do aplicativo é especificado como o valor do `GenericApp` do elemento `name` atributo. Esse valor deve corresponder exatamente ao nome especificado no script desenvolvido para esse aplicativo. Do mesmo modo, a `GenericApp` do elemento `displayName` atributo deve corresponder exatamente ao do script correspondente `expectedWindow` legenda da janela. Essa equivalência é avaliada após resolver quaisquer expressões regulares que apareçam na variável `displayName` ou `caption` atributos.
 
 Neste exemplo, os dados de configuração padrão fornecidos com o serviço Gerar PDF foram modificados para especificar que o Notepad (não o Microsoft Word) deve ser usado para processar arquivos com a extensão de nome de arquivo .txt. Antes dessa modificação, o Microsoft Word era especificado como o aplicativo nativo que deveria processar esses arquivos.
 
@@ -910,6 +910,10 @@ Neste exemplo, os dados de configuração padrão fornecidos com o serviço Gera
 Crie uma variável de ambiente que especifique o local do executável do aplicativo nativo. A variável deve usar o formato `[applicationname]_PATH`, onde *applicationname* deve corresponder exatamente ao nome do aplicativo usado no arquivo de configuração XML e no script, e onde o caminho contém o caminho para o executável em aspas duplas. Um exemplo de uma variável de ambiente é `Photoshop_PATH`.
 
 Depois de criar a nova variável de ambiente, você deve reiniciar o servidor no qual o serviço Gerar PDF está implantado.
+
+>[!NOTE]
+>
+> É recomendável usar o comando &#39;Ctrl + C&#39; para reiniciar o servidor do SDK. Reiniciar o servidor do SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
 **Criar uma variável do sistema no ambiente Windows XP**
 

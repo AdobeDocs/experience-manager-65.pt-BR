@@ -5,9 +5,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1472'
+source-wordcount: '1506'
 ht-degree: 1%
 
 ---
@@ -309,6 +309,10 @@ Execute as seguintes etapas, em todas as instâncias de autor e publicação, pa
 1. Clique em **[!UICONTROL Escolher arquivo]** e navegue para selecionar o arquivo mysql-connector-java-5.1.39-bin.jar. Além disso, **[!UICONTROL Iniciar pacote]** e **[!UICONTROL Atualizar pacotes]** caixas de seleção.
 1. Clique em **[!UICONTROL Instalar ou atualizar]**. Após a conclusão, reinicie o servidor.
 1. (*Somente Windows*) Desative o firewall do sistema para o seu sistema operacional.
+
+>[!NOTE]
+>
+> É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
 ## Exemplo de código para o serviço de dados e metadados do portal de formulários {#sample-code-for-forms-portal-data-and-metadata-service}
 

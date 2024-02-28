@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: a054b60a-5e89-4c98-87bc-35669988d160
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,10 @@ Ao instalar o pacote, se você encontrar um erro `javax.jcr.nodetype.ConstraintV
 1. Acesse o Gerenciador de pacotes. O URL padrão é `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
 1. Pesquise e instale o `adobe-lc-workspace-pkg-[version].zip` pacote.
 1. Reinicie o servidor de aplicativos.
+
+>[!NOTE]
+>
+> É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
 ## Registro de espaço de trabalho do AEM Forms {#aem-forms-workspace-nbsp-logging}
 

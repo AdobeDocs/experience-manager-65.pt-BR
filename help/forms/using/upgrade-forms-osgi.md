@@ -7,9 +7,9 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 exl-id: 1e39455e-f588-42a2-91f5-daefcfed82a0
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '980'
 ht-degree: 1%
 
 ---
@@ -57,6 +57,10 @@ Faça o seguinte para atualizar do AEM 6.3 Forms ou do AEM 6.4 Forms AEM para o 
       >Após a instalação do pacote, você será solicitado a reiniciar a instância do AEM. **Não pare imediatamente o servidor.** Antes de interromper o servidor do AEM Forms, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no &lt;crx-repository>/error.log e o log é estável. Observe também que alguns pacotes podem permanecer no estado instalado. Você pode ignorar com segurança o estado desses pacotes.
 
 1. Reinicie a instância do AEM.
+
+   >[!NOTE]
+   >
+   É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
 1. Executar atividades de pós-instalação.
 

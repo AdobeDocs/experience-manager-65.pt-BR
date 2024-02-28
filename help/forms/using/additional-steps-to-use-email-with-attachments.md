@@ -2,9 +2,9 @@
 title: Etapas adicionais para obter e-mails com anexos
 description: Saiba como corrigir o erro quando não é possível recuperar emails com anexos do AEM Forms em plataformas JEE.
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: 553aef43342a709dd8e645279999a71b9e0185f0
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -48,3 +48,7 @@ O usuário não pode executar operações como Enviar PDF por email ou Incluir a
    * `sling.bootdelegation.activation=javax.activation.*`
 
 1. Restart **JBoss®**.
+
+>[!NOTE]
+>
+> É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.

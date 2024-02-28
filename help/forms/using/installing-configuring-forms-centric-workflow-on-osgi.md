@@ -5,9 +5,9 @@ topic-tags: installing
 docset: aem65
 role: Admin
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1624'
 ht-degree: 2%
 
 ---
@@ -110,15 +110,20 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
    Você também pode baixar o pacote por meio do link direto listado no [artigo de lançamentos](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) de AEM Forms.
 
 1. Depois que o pacote for instalado, você será solicitado a reiniciar a AEM instância. **Não reinicie imediatamente o servidor.** Antes de parar o servidor AEM Forms, aguarde até que as mensagens SERVICEEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no [AEM-Installation-Directory]/crx-quickstart/logs/error.arquivo de log e o log é estável.
-1. Repita as etapas 1 a 7 em todas as instâncias do Autor e Publish.
 
-## configurações de instalação Post {#post-installation-configurations}
+   >[!NOTE]
+   >
+   > Recomenda-se usar o comando &#39;Ctrl + C&#39; para reiniciar o SDK. Reiniciar o SDK AEM usando métodos alternativos, por exemplo, interromper processos Java, pode cliente potencial inconsistências nos AEM desenvolvimento ambiente.
+
+1. Repita as etapas de 1 a 7 em todas as instâncias de Autor e Publicação.
+
+## Configurações pós-instalação {#post-installation-configurations}
 
 O AEM Forms tem algumas configurações obrigatórias e opcionais. As configurações obrigatórias incluem a configuração de bibliotecas BouncyCastle e o agente de serialização. As configurações opcionais incluem a configuração do dispatcher e do Adobe Target.
 
 ### Configurações obrigatórias pós-instalação {#mandatory-post-installation-configurations}
 
-#### Configurar bibliotecas RSA e BouncyCastle  {#configure-rsa-and-bouncycastle-libraries}
+#### Configurar RSA e BouncyCastle bibliotecas  {#configure-rsa-and-bouncycastle-libraries}
 
 Execute as seguintes etapas em todas as instâncias Autor e Publicar para inicializar, delegar as bibliotecas:
 

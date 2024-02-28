@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1882'
 ht-degree: 1%
 
 ---
@@ -118,6 +118,11 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
 
    Também é possível baixar o pacote por meio do link direto listado no [Versões do AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) artigo.
 1. Após a instalação do pacote, você será solicitado a reiniciar a instância do AEM. **Não reinicie o servidor imediatamente.** Antes de interromper o servidor do AEM Forms, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` e o log é estável.
+
+   >[!NOTE]
+   >
+   > É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
+
 1. Repita as etapas de 1 a 7 em todas as instâncias de Autor e Publicação.
 
 ### (Somente para Windows) Instalação automática de redistribuíveis do Visual Studio {#automatic-installation-visual-studio-redistributables}

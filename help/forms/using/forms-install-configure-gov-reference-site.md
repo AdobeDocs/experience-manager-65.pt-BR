@@ -4,9 +4,9 @@ description: Instale, configure e personalize um pacote de demonstração do AEM
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '4501'
+source-wordcount: '4535'
 ht-degree: 1%
 
 ---
@@ -245,7 +245,7 @@ Esta seção contém detalhes e instruções sobre a configuração do MS® Dyna
    1. **Configurações de autenticação** (consulte [Definições de configuração da nuvem do MS® Dynamics](../../forms/using/forms-install-configure-gov-reference-site.md#dynamicsconfig) para coletar essas informações):
 
       1. ID do cliente - também chamada de ID da aplicação
-      1. Client Secret
+      1. Senha do cliente
       1. URL do OAuth - por exemplo, [https://login.microsoftonline.com/common/oauth2/authorize](https://login.microsoftonline.com/common/oauth2/authorize)
       1. URL do token de atualização - por exemplo, [https://login.windows.net/common/oauth2/token](https://login.windows.net/common/oauth2/token)
       1. URL do token de acesso - por exemplo, [https://login.windows.net/common/oauth2/token](https://login.windows.net/common/oauth2/token)
@@ -289,7 +289,7 @@ As etapas detalhadas nesta seção estão incluídas para ajudá-lo a localizar 
 
 Depois que a configuração da nuvem for concluída, talvez você queira testar o modelo de dados do formulário.
 
-1. Vá até
+1. Navegue até
 
    *https://&lt;aemserver>:&lt;port>/aem/forms.html/content/dam/formsanddocuments-fdm/we-gov*
 
@@ -313,6 +313,10 @@ Depois que a configuração da nuvem for concluída, talvez você queira testar 
    >[!NOTE]
    >
    Foi relatado que uma reinicialização do Servidor AEM era necessária para que a Fonte de Dados se vinculasse com êxito ao FDM.
+
+   >[!NOTE]
+   >
+   É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
 #### Teste do modelo de dados do Forms (Derby) {#test-fdm-derby}
 
@@ -448,7 +452,7 @@ Os dados do AEM Forms Analytics estão disponíveis offline ou sem uma configura
 >
 Os dados do AEM Forms Analytics estão disponíveis offline ou sem uma configuração do Adobe Analytics Cloud se o `we-gov-forms.ui.analytics-<version>.zip` o pacote está instalado, mas os dados do AEM Sites exigem uma configuração de nuvem ativa.
 
-1. Vá até
+1. Navegue até
 
    *https://&lt;aemserver>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 

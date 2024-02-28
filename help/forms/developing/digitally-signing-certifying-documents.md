@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '16882'
+source-wordcount: '16917'
 ht-degree: 0%
 
 ---
@@ -594,6 +594,10 @@ Você pode adicionar o seguinte valor de configuração no arquivo cknfastrc, lo
 ```
 
 Depois de adicionar esse valor de configuração ao arquivo cknfastrc, a nova credencial pode ser usada sem reiniciar o servidor de aplicativos J2EE.
+
+    >[!NOTE]
+    >
+    > É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
 **Assinatura não confiável**
 

@@ -6,9 +6,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 feature: Document Services
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+exl-id: 62adca19-8ed0-48b3-b7eb-9dbc3d8f96c6
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '684'
 ht-degree: 0%
 
 ---
@@ -50,6 +51,10 @@ Por padrão, o serviço DocAssurance não está habilitado. Execute as seguintes
 
 1. Salve e feche o arquivo sling.properties.
 1. Reinicie a instância do AEM.
+
+>[!NOTE]
+>
+> É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
 <!--
 

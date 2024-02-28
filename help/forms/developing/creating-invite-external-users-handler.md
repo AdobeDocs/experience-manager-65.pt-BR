@@ -3,9 +3,9 @@ title: Criando um Manipulador de Usuários Externos para Convidar
 description: Saiba como criar um Manipulador de usuários externos para convite. Ele permite que o serviço Rights Management convide usuários externos para se tornarem usuários Rights Management.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
@@ -233,6 +233,11 @@ Para adicionar usuários externos a convidar usando o console de administração
 
 1. Implante o arquivo JAR do manipulador de usuários externos do convite usando o Workbench.
 1. Reinicie o servidor de aplicativos.
+
+   >[!NOTE]
+   >
+   > É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
+
 1. Faça logon no console de administração.
 1. Clique em **[!UICONTROL Serviços]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Configuração]** > Convidado **[!UICONTROL Registro do usuário]**.
 1. Habilite o registro de usuários convidados marcando a **[!UICONTROL Habilitar registro de usuário convidado]** caixa. Em **[!UICONTROL Usar sistema de registro incorporado]**, clique em **[!UICONTROL Não]**. Salve suas configurações.

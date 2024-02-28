@@ -2,10 +2,10 @@
 title: Instruções de instalação de patch do AEM Forms para o AEM Forms
 description: Instruções de instalação do pacote de serviços do AEM Forms para ambientes OSGi e JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 531eed9bb6d7792a6da0104b533a505738a64786
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 6%
+source-wordcount: '1748'
+ht-degree: 5%
 
 ---
 
@@ -128,7 +128,8 @@ Navegue até o diretório apropriado e, em um shell e digite `./aem65_cfp_instal
 
 >[!NOTE]
 >
-> Depois de instalar o AEM Forms no service pack JEE, é necessário remover o pacote complementar do Forms de `crx-repository\install` antes de reiniciar o appserver. Baixe o pacote complementar mais recente do Forms na [Portal de distribuição de software](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+>* Depois de instalar o AEM Forms no service pack JEE, é necessário remover o pacote complementar do Forms de `crx-repository\install` antes de reiniciar o appserver. Baixe o pacote complementar mais recente do Forms na [Portal de distribuição de software](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+>* É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
 +++
 
@@ -173,7 +174,7 @@ O pacote é instalado automaticamente.
 
   >[!NOTE]
   >
-  o service pack do Experience Manager não suporta a instalação do Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
+  >o service pack do Experience Manager não suporta a instalação do Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
 
   **Validar a instalação**
 
@@ -205,7 +206,7 @@ O pacote é instalado automaticamente.
 
 >[!NOTE]
 >
-Se você instalar o AEM Forms service pack para banco de dados relacional, é obrigatório fazer backup de DB_schema.
+> Se você instalar o AEM Forms service pack para banco de dados relacional, é obrigatório fazer backup de DB_schema.
 
 +++
 
@@ -223,7 +224,7 @@ Se você instalar o AEM Forms service pack para banco de dados relacional, é ob
 >[!NOTE]
 >
 >
-Instale o Redistribuível, mesmo que uma versão anterior esteja instalada, para garantir a disponibilidade da versão mais recente.
+> Instale o Redistribuível, mesmo que uma versão anterior esteja instalada, para garantir a disponibilidade da versão mais recente.
 
 +++
 
@@ -244,7 +245,7 @@ Há dois métodos diferentes que você pode usar para instalar automaticamente o
 
   >[!NOTE]
   >
-  o service pack do Experience Manager não suporta a instalação do Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
+  >o service pack do Experience Manager não suporta a instalação do Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
 
   **Validar a instalação**
 

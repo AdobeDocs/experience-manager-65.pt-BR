@@ -5,9 +5,9 @@ topic-tags: installing
 docset: aem65
 role: Admin
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1383'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ Antes de começar a instalar e configurar a comunicação interativa e os recurs
 
    * **Publish**: uma instância do AEM que veicula o conteúdo publicado para o público pela Internet ou por uma rede interna.
 
-* Requisitos de memória são atendidos. AEM Forms pacote complementar exige:
+* Os requisitos de memória são atendidos. AEM Forms pacote complementar exige:
 
    * 15 GB de espaço temporário para instalações do Microsoft® Windows.
    * 6 GB de espaço temporário para instalações baseadas em UNIX.
@@ -63,7 +63,7 @@ Antes de começar a instalar e configurar a comunicação interativa e os recurs
   </tr>
   <tr>
    <td>libSM</td>
-   <td>Zlib</td>
+   <td>zlib</td>
    <td>libICE</td>
    <td>libuuid</td>
   </tr>
@@ -98,6 +98,11 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
    Você também pode baixar o pacote por meio do link direto listado no [artigo de lançamentos](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) de AEM Forms.
 
 1. Depois que o pacote for instalado, você será solicitado a reiniciar a AEM instância. **Não reinicie imediatamente o servidor.** Antes de interromper o AEM Forms Server, aguarde até que as mensagens SERVICEEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no [AEM-Installation-Directory]/crx-quickstart/logs/error.arquivo de log e o log é estável.
+
+   >[!NOTE]
+   >
+   > É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
+
 1. Repita as etapas de 1 a 7 em todas as instâncias de Autor e Publicação.
 
 ## Configurações pós-instalação {#post-installation-configurations}
@@ -139,7 +144,7 @@ Execute as seguintes etapas em todas as instâncias Autor e Publicar para adicio
 
 A comunicação interativa é a abordagem padrão e recomendada para criar comunicações com o cliente no AEM 6.5 Forms. Se você tiver atualizado ou migrado de uma versão anterior do e planeja continuar usando as cartas (Gerenciamento de correspondência), instale o [Pacote de compatibilidade do AEMFD](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en).
 
-O pacote de compatibilidade do AEMFD permite usar os seguintes ativos do AEM 6.4 Forms, AEM 6.3 Forms e AEM 6.2 Forms AEM no 6.5 Forms:
+O pacote de Compatibilidade AEMFD permite usar as seguintes ativos de AEM Forms 6.4, AEM 6.3 Forms e AEM Forms 6.2 no Forms 6.5 da AEM:
 
 * Fragmentos do documento
 * Cartas
@@ -176,7 +181,7 @@ Você pode ativar a comunicação SSL para o Modelo de dados de formulário. Par
 
 ## Próximas etapas {#next-steps}
 
-Você configurou um ambiente para usar a comunicação interativa e os recursos de gestão de correspondência. Agora, as etapas para usar o recurso são:
+Você configurou um ambiente para usar recursos de gerenciamento de comunicação interativa e correspondência. Agora, as etapas para usar o recurso são:
 
 * [Visão geral do gerenciamento de correspondência](/help/forms/using/interactive-communications-overview.md)
 

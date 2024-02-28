@@ -8,10 +8,10 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 2%
+source-wordcount: '355'
+ht-degree: 1%
 
 ---
 
@@ -42,6 +42,10 @@ Certifique-se de que [Pacote de compatibilidade do AEM](https://helpx.adobe.com/
 
 1. Depois que os registros estiverem estabilizados, reinicie o servidor.
 1. Use o utilitário de migração para tornar seus ativos compatíveis com o 6.5.
+
+   >[!NOTE]
+   >
+   > É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
    Para obter mais informações, consulte [utilitário de migração](../../forms/using/migration-utility.md).
 

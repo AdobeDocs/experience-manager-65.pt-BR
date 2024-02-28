@@ -6,9 +6,9 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '7662'
+source-wordcount: '7608'
 ht-degree: 1%
 
 ---
@@ -464,6 +464,10 @@ Você pode permitir que um usuário não administrador use o PDF Generator. Norm
 1. Defina o valor da variável como TRUE.
 
 1. Reinicie a instância do AEM Forms.
+
+>[!NOTE]
+>
+> É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
 ## Configuração do AEM Forms no JEE para acesso fora da empresa {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 

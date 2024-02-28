@@ -8,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 docset: aem65
 feature: Document Security
 exl-id: 7cf17fb6-021a-473e-bc3b-27c317953002
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -84,3 +84,7 @@ Você pode usar um dos seguintes métodos para estabelecer a conexão segura:
 1. Crie uma pasta no Gerenciador de ativos digitais do AEM e faça upload dos documentos PDF protegidos por política para a pasta recém-criada.
 
    Agora, você pode pesquisar os documentos protegidos por política usando a pesquisa por AEM.
+
+   >[!NOTE]
+   >
+   > É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.

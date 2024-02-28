@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 noindex: true
 feature: Document Security
 exl-id: 91cbd1f1-d53d-455b-8d2c-6918b521db81
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
@@ -60,6 +60,10 @@ Uma conexão segura permite o fluxo contínuo de informações entre o AEM Forms
    * **Nome do serviço**: adicione o RightsManagementService à lista de serviços especificados.
 
    Clique em **Salvar**. O AEM está habilitado para pesquisar documentos protegidos pelo PDF e pelo Microsoft Office
+
+   >[!NOTE]
+   >
+   > É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
 ## Indexar um exemplo de PDF protegido por política ou documento do Microsoft Office {#index-a-sample-policy-protected-pdf-or-microsoft-office-document}
 
