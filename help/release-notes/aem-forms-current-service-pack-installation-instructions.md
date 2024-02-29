@@ -2,7 +2,7 @@
 title: Instruções de instalação de patch do AEM Forms para o AEM Forms
 description: Instruções de instalação do pacote de serviços do AEM Forms para ambientes OSGi e JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 181d5ffcefcf55aa75cfaf29c42dbd8d8d665398
+source-git-commit: fbdeaeca3fa05181682f94e8f71bd9bb6605762a
 workflow-type: tm+mt
 source-wordcount: '1752'
 ht-degree: 5%
@@ -261,7 +261,7 @@ Há dois métodos diferentes que você pode usar para instalar automaticamente o
 
 +++
 
-+++4. Instalar pacote complementar do Adobe Experience Manager Forms (AEM)
++++5. Instalar pacote complementar do Adobe Experience Manager Forms (AEM)
 
 1. Verifique se você instalou o [!DNL Experience Manager] pacote de serviços.
 1. Baixe o pacote complementar do Forms correspondente listado em [Versões do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) para seu sistema operacional.
