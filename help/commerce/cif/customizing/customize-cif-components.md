@@ -11,10 +11,10 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9677c3f08c139518e38d576d6008343fcc07e810
 workflow-type: tm+mt
-source-wordcount: '2306'
-ht-degree: 12%
+source-wordcount: '2302'
+ht-degree: 11%
 
 ---
 
@@ -34,19 +34,19 @@ A marca Venia começou recentemente a fabricar alguns produtos usando materiais 
 
 ## Pré-requisitos {#prerequisites}
 
-Um ambiente de desenvolvimento local é necessário para concluir este tutorial. Isso inclui uma instância do AEM em execução que está configurada e conectada a uma instância do Adobe Commerce. Revise os requisitos e as etapas para [configurar um desenvolvimento local com AEM](../develop.md). Para seguir o tutorial completamente, você precisa de permissões para adicionar [Atributos a um produto](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) no Adobe Commerce.
+Um ambiente de desenvolvimento local é necessário para concluir este tutorial. Isso inclui uma instância do AEM em execução que está configurada e conectada a uma instância do Adobe Commerce. Revise os requisitos e as etapas para [configurar um desenvolvimento local com AEM](../develop.md). Para seguir o tutorial completamente, você precisa de permissão para adicionar [Atributos a um produto](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) no Adobe Commerce.
 
-Você também precisa do GraphQL IDE, como [GraphiQL](https://github.com/graphql/graphiql) ou uma extensão de navegador para executar as amostras de código e os tutoriais. Se você instalar uma extensão de navegador, verifique se ela é capaz de definir cabeçalhos de solicitação. No Google Chrome, [Cliente Altair GraphQL](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) O é uma extensão que pode fazer o trabalho.
+Você também precisa do GraphQL IDE, como [GraphiQL](https://github.com/graphql/graphiql) ou uma extensão de navegador para executar as amostras de código e os tutoriais. Se você instalar uma extensão de navegador, verifique se ela é capaz de definir cabeçalhos de solicitação. No Google Chrome, _Cliente Altair GraphQL_ O é uma extensão que pode fazer o trabalho.
 
 ## Clonar o projeto Venia {#clone-venia-project}
 
-Você clonará o [Projeto Venia](https://github.com/adobe/aem-cif-guides-venia) e substitua os estilos padrão.
+Você clona o [Projeto Venia](https://github.com/adobe/aem-cif-guides-venia) e substitua os estilos padrão.
 
 >[!NOTE]
 >
 >**Você pode usar um projeto existente** (baseado no Arquétipo de projeto AEM com CIF incluído) e pule esta seção.
 
-1. Execute o seguinte comando git para clonar o projeto:
+1. Execute o seguinte comando do Git para clonar o projeto:
 
    ```shell
    $ git clone git@github.com:adobe/aem-cif-guides-venia.git
@@ -59,7 +59,7 @@ Você clonará o [Projeto Venia](https://github.com/adobe/aem-cif-guides-venia) 
    $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
-1. Adicione as configurações OSGi necessárias para conectar a instância do AEM a uma instância do Adobe Commerce ou adicione as configurações ao projeto recém-criado.
+1. Adicione as configurações OSGi necessárias para conectar a instância do AEM a uma instância do Adobe Commerce ou adicionar as configurações ao projeto recém-criado.
 
 1. Nesse ponto, você deve ter uma versão funcional de uma loja conectada a uma instância do Adobe Commerce. Navegue até a `US` > `Home` página em: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
@@ -91,7 +91,7 @@ O Teaser do produto é apresentado em todo este tutorial. Como primeira etapa, a
 
 ## Adicionar um atributo personalizado no Adobe Commerce {#add-custom-attribute}
 
-Os produtos e os dados do produto exibidos no AEM são armazenados no Adobe Commerce. Em seguida, adicione um novo atributo para **Eco Friendly** como parte do conjunto de atributos do produto usando a interface do Adobe Commerce.
+Os produtos e os dados do produto exibidos no AEM são armazenados no Adobe Commerce. Em seguida, adicione um atributo para **Eco Friendly** como parte do conjunto de atributos do produto usando a interface do Adobe Commerce.
 
 >[!TIP]
 >
@@ -139,7 +139,7 @@ Os produtos e os dados do produto exibidos no AEM são armazenados no Adobe Comm
 
 Antes de pular para o código AEM, é útil explorar a [Adobe Commerce GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) usando um GraphQL IDE. A integração do Adobe Commerce com o AEM é feita principalmente por meio de uma série de queries do GraphQL. Entender e modificar as consultas do GraphQL é uma das principais maneiras de estender os Componentes principais do CIF.
 
-Em seguida, use um GraphQL IDE para verificar se o `eco_friendly` O atributo foi adicionado ao conjunto de atributos do produto. As capturas de tela deste tutorial estão usando o [Cliente Altair GraphQL](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja).
+Em seguida, use um GraphQL IDE para verificar se o `eco_friendly` O atributo foi adicionado ao conjunto de atributos do produto. Capturas de tela neste tutorial estão usando a extensão do Google Chrome _Cliente Altair GraphQL_.
 
 1. Abra o GraphQL IDE e insira o URL `http://<server>/graphql` na barra de URL do IDE ou na extensão.
 2. Adicione o seguinte [consulta de produtos](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) onde `YOUR_SKU` é o **SKU** do produto utilizado no exercício anterior:
@@ -178,7 +178,7 @@ Em seguida, use um GraphQL IDE para verificar se o `eco_friendly` O atributo foi
 
    ![Exemplo de resposta do GraphQL](../assets/customize-cif-components/sample-graphql-query.png)
 
-O valor de **Sim** é um número inteiro de **1**. Isso será útil ao escrever a consulta do GraphQL em Java™.
+O valor de **Sim** é um número inteiro de **1**. Isso é útil ao escrever a consulta do GraphQL em Java™.
 
 >[!TIP]
 >
@@ -186,7 +186,7 @@ O valor de **Sim** é um número inteiro de **1**. Isso será útil ao escrever 
 
 ## Atualizar o Modelo do Sling para o Teaser do produto {#updating-sling-model-product-teaser}
 
-Em seguida, você estenderá a lógica de negócios do Teaser do produto implementando um Modelo do Sling. [Modelos Sling](https://sling.apache.org/documentation/bundles/models.html), são objetos POJO (Plain Old Java™ Objects) orientados por anotações que implementam qualquer lógica de negócios exigida pelo componente. Os Modelos do Sling são usados com os scripts HTL como parte do componente. Você seguirá o [padrão de delegação para Modelos do Sling](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) para estender partes do modelo existente do Teaser do produto.
+Em seguida, estenda a lógica de negócios do Teaser do produto implementando um Modelo do Sling. [Modelos Sling](https://sling.apache.org/documentation/bundles/models.html) são objetos POJO (Plain Old Java™ Objects) orientados por anotações que implementam qualquer lógica de negócios exigida pelo componente. Os Modelos do Sling são usados com os scripts HTL como parte do componente. Siga as [padrão de delegação para Modelos do Sling](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) para estender partes do modelo existente do Teaser do produto.
 
 Os Modelos do Sling são implementados como Java™ e podem ser encontrados no **core** módulo do projeto gerado.
 
@@ -200,7 +200,7 @@ Uso [o IDE de sua escolha](https://experienceleague.adobe.com/docs/experience-ma
 
    Já foi adicionado um novo método chamado `isShowBadge()` para exibir um selo se o produto for considerado &quot;Novo&quot;.
 
-1. Adicione um novo método `isEcoFriendly()` à interface:
+1. Adicionar um método `isEcoFriendly()` à interface:
 
    ```java
    @ProviderType
@@ -291,7 +291,7 @@ Este é um novo método para encapsular a lógica para indicar se o produto tem 
    >
    >A variável `createdAt()` foi implementado como parte do [Interface do produto](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java). A maioria dos atributos de esquema encontrados com frequência foram implementados, portanto, use `addCustomSimpleField` somente para atributos verdadeiramente personalizados.
 
-1. Adicione um agente de log para ajudar a depurar o código Java™:
+1. Adicione um agente de log para que ele possa ajudá-lo a depurar o código Java™:
 
    ```java
    import org.slf4j.Logger;
@@ -326,17 +326,17 @@ Este é um novo método para encapsular a lógica para indicar se o produto tem 
 
    No método acima, a variável `productRetriever` é usado para buscar o produto e a variável `getAsInteger()` é usado para obter o valor do `eco_friendly` atributo. Com base nas consultas do GraphQL executadas anteriormente, você sabe que o valor esperado quando a variável `eco_friendly` atributo está definido como &quot;**Sim**&quot; é na verdade um número inteiro de **1**.
 
-   Agora que o Modelo Sling foi atualizado, a marcação do Componente precisa ser atualizada para realmente exibir um indicador de **Eco Friendly** com base no Modelo Sling.
+   Agora que o modelo Sling foi atualizado, atualize a marcação do componente para exibir um indicador de **Eco Friendly** com base no Modelo Sling.
 
 ## Personalização da marcação do Teaser do produto {#customize-markup-product-teaser}
 
 Uma extensão comum de componentes do AEM é modificar a marcação gerada pelo componente. Essa modificação é feita substituindo o [script HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR) que o componente usa para renderizar sua marcação. A Linguagem de modelo de HTML (HTL) é uma linguagem de modelo leve que os componentes AEM usam para renderizar dinamicamente a marcação com base no conteúdo criado, permitindo que os componentes sejam reutilizados. O Teaser do produto, por exemplo, pode ser reutilizado várias vezes para exibir produtos diferentes.
 
-Nesse caso, renderize um banner sobre o teaser para indicar que o produto é &quot;Eco Friendly&quot; com base em um atributo personalizado. O padrão de design para [personalizar a marcação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) de um componente é, na verdade, padrão para todos os componentes do AEM, não apenas para os Componentes principais da CIF do AEM.
+Nesse caso, renderize um banner sobre o teaser para indicar que o produto é &quot;Eco Friendly&quot; com base em um atributo personalizado. O padrão de design para [personalização da marcação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) de um componente é padrão para todos os componentes AEM AEM, não apenas para os componentes principais do CIF.
 
 >[!NOTE]
 >
->Se você personalizar um componente usando os seletores de produto e categoria de CIF, como este Teaser do produto ou o componente da página CIF, inclua o necessário `cif.shell.picker` clientlib para as caixas de diálogo do componente. Consulte [Uso do seletor de categoria e produto para CIF](use-cif-pickers.md) para obter detalhes.
+>Se você personalizar um componente usando os seletores de produto e categoria de CIF como este Teaser do produto ou o componente da página CIF, inclua o necessário `cif.shell.picker` clientlib para as caixas de diálogo do componente. Consulte [Uso do seletor de categoria e produto para CIF](use-cif-pickers.md) para obter detalhes.
 
 1. No IDE, navegue e expanda a janela `ui.apps` e expandir a hierarquia de pastas para: `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` e inspecionar o `.content.xml` arquivo.
 
@@ -369,7 +369,7 @@ Nesse caso, renderize um banner sobre o teaser para indicar que o produto é &qu
 
    Observe que o Modelo Sling para `MyProductTeaser` é usada e atribuída à `product` variável.
 
-1. Modificar `productteaser.html` para chamar o `isEcoFriendly` método aplicado no exercício anterior:
+1. Editar `productteaser.html` para que ele chame o `isEcoFriendly` método aplicado no exercício anterior:
 
    ```html
    ...
