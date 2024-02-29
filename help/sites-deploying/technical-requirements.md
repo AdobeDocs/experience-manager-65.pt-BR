@@ -3,9 +3,9 @@ title: Requisitos técnicos
 description: Uma lista das plataformas de cliente e servidor compatíveis com o Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: d5e7f0301259fdc12b507f9568befcc34ebe9408
+source-git-commit: 52969d5ab0975871c872195ab13649fb815cead8
 workflow-type: tm+mt
-source-wordcount: '3644'
+source-wordcount: '3650'
 ht-degree: 1%
 
 ---
@@ -456,7 +456,7 @@ Para Windows x86:
    <th><p><strong>Formatos compatíveis para conversão em PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Faixa clássica do Acrobat 2020</a> versão mais recente</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">classic Acrobat 2020 faixa</a> versão mais recente</td>
    <td>XPS, formatos de imagem (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF e DWF</td>
   </tr>
   <tr>
@@ -529,13 +529,15 @@ Para Windows x86:
 * Memória gráfica - 128 MB de GPU (recomendado de 256 MB)
 * 2,35 GB de espaço disponível em disco rígido
 * Resolução do monitor de 1024 X 768 pixels ou superior
-* Aceleração de hardware de vídeo (opcional)
+* aceleração de hardware Vídeo (opcional)
 * Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC
 * Privilégios administrativos para instalar o Designer
 * Microsoft Visual C++ 2019 (VC 14.28 ou superior) tempo de execução de 32 bits para AEM Forms Designer de 32 bits
 * Microsoft Visual C++ 2019 (VC 14.28 ou superior) Runtime de 64 bits para AEM Forms Designer de 64 bits (para pilha OSGI e JEE)
 
-### Requisitos para write-back de metadados do AEM Assets XMP {#requirements-for-aem-assets-xmp-metadata-write-back}
+[Instalar e configurar o AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)
+
+### Requisitos para Ativos AEM XMP metadados write-back {#requirements-for-aem-assets-xmp-metadata-write-back}
 
 XMP write-back é compatível e ativado para as seguintes plataformas e formatos de arquivo:
 
@@ -548,6 +550,6 @@ XMP write-back é compatível e ativado para as seguintes plataformas e formatos
 
 * **Formatos de arquivo**: JPEG, PNG, TIFF, PDF, INDD, AI e EPS.
 
-### Requisitos para a AEM Assets processar ativos com muitos metadados no Linux® {#assetsonlinux}
+### Requisitos para Ativos AEM processar ativos com metadados no Linux® {#assetsonlinux}
 
-O processo XMPFilesProcessor exige que o biblioteca GLIBC_2.14 funcione. Use um kernel do Linux® que contém GLIBC_2.14, por exemplo, o kernel do Linux® versão 3.1.x. Melhora o desempenho do processamento de ativos que contêm uma grande quantidade de metadados, curtir arquivos PSD. A utilização de uma versão anterior do GLIBC resulta em erros em logs que começam com `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+O processo XMPFilesProcessor exige que o biblioteca GLIBC_2.14 funcione. Use um kernel Linux® que contenha GLIBC_2.14, por exemplo, kernel Linux® versão 3.1.x. Ele melhora o desempenho do processamento de ativos que contêm uma grande quantidade de metadados, como arquivos PSD. O uso de uma versão anterior do GLIBC leva a erros em logs que começam com `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.

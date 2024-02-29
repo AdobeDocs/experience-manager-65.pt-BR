@@ -2,9 +2,9 @@
 title: Instruções de instalação de patch do AEM Forms para o AEM Forms
 description: Instruções de instalação do pacote de serviços do AEM Forms para ambientes OSGi e JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+source-git-commit: 181d5ffcefcf55aa75cfaf29c42dbd8d8d665398
 workflow-type: tm+mt
-source-wordcount: '1748'
+source-wordcount: '1752'
 ht-degree: 5%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 5%
 
 | Produto | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| Versão | 6.5.19.0 (OSGi), 6.5.19.1 (JEE) |
+| Versão | 6.5.20.0 |
 | Tipo | Versão do Service Pack |
-| Data | 8 de dezembro de 2023 |
+| Data | 29 de fevereiro de 2024 |
 | URL de download | [Versões mais recentes do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
 >[!NOTE]
@@ -49,7 +49,8 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 ## Baixar e instalar o Service Pack em um formulário AEM no ambiente JEE {#download-and-install-for-jee-service-pack}
 
-![Instalação do JEE](/help/forms/using/assets/jeeinstallation.png)
+<!--
+![JEE Installation](/help/forms/using/assets/jeeinstallation.png) -->
 
 +++1. Faça backup do seu ambiente existente
 
@@ -71,7 +72,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++ 3. Instalar pacotes redistribuíveis do Microsoft Visual C++
++++3. Instalar pacotes redistribuíveis do Microsoft Visual C++
 
 * Baixe e instale o [Versão de 64 bits dos pacotes redistribuíveis do Microsoft Visual C++ para Visual Studio 2015, 2017, 2019 e 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) no computador em que o AEM 6.5 Forms está instalado.
 
@@ -81,7 +82,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++3. Instalar o AEM Forms no service pack JEE:
++++4. Instalar o AEM Forms no service pack JEE:
 
 1. Interrompa o servidor de aplicativos.
 1. Extraia o **Arquivo do instalador do AEM Forms no JEE Service Pack** no disco rígido:
@@ -108,7 +109,7 @@ Navegue até o diretório apropriado e, em um shell e digite `./aem65_cfp_instal
 
    * Desmarque a opção **Iniciar o Gerenciador de Configurações** antes de clicar em **[!UICONTROL Concluído]**. Executar **Gerenciador de configurações** usando o **ConfigurationManager.bat** arquivo em `[aem-forms root]\configurationManager\bin`.
 
-   * Ou desmarque a opção **Iniciar o Gerenciador de Configurações** antes de clicar em **[!UICONTROL Concluído]**. Antes de executar **Gerenciador de configurações** usar **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, navegue até *`<AEMForms_Install_Dir>\configurationManager\bin`* e substitua o **ConfigurationManager.lax** e **ConfigurationManager_IPV6.lax** com o mais recente [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) e [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) arquivos.
+   * Ou desmarque a opção **Iniciar o Gerenciador de Configurações** antes de clicar em **[!UICONTROL Concluído]**. Antes de executar **Gerenciador de configurações** usar **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, navegue até *`<AEMForms_Install_Dir>\configurationManager\bin`* e substitua o **ConfigurationManager.lax** e **ConfigurationManager_IPV6.lax** com o mais recente [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) e [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) arquivos, Pesquisar e substituir **axis-1.4.1.1.jar** com **axis-1.4.1.2.jar** nesses dois arquivos.
 
      >[!NOTE]
      >
@@ -133,7 +134,7 @@ Navegue até o diretório apropriado e, em um shell e digite `./aem65_cfp_instal
 
 +++
 
-+++4. Instalar o fragmento do servlet (AEM Service Pack 6.5.14.0 ou anterior)
++++5. Instalar o fragmento do servlet (AEM Service Pack 6.5.14.0 ou anterior)
 
 >[!NOTE]
 >
@@ -145,17 +146,17 @@ Para baixar e instalar o fragmento de servlet:
 
 1. Se você não tiver baixado o fragmento, baixe-o de [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar).
 
-1. Inicie o servidor de aplicativos, aguarde os logs estabilizarem e verifique o estado do pacote.
+2. Inicie o servidor de aplicativos, aguarde os logs estabilizarem e verifique o estado do pacote.
 
-1. Abra os Pacotes de console da Web. O URL padrão é `http://[Server]:[Port]/system/console/bundles`.
+3. Abra os Pacotes de console da Web. O URL padrão é `http://[Server]:[Port]/system/console/bundles`.
 
-1. Clique em Instalar/Atualizar. Escolha o fragmento baixado, `org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar`. Clique em **Instalar** ou **Atualizar**. Aguarde o servidor de aplicativos estabilizar
+4. Clique em Instalar/Atualizar. Escolha o fragmento baixado, `org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar`. Clique em **Instalar** ou **Atualizar**. Aguarde o servidor de aplicativos estabilizar
 
-1. Interrompa o servidor de aplicativos.
+5. Interrompa o servidor de aplicativos.
 
 +++
 
-+++5. Instalar o pacote de serviços AEM
++++6. Instalar o pacote de serviços AEM
 
 1. Reinicie a instância antes da instalação se ela estiver no modo de atualização (quando a instância tiver sido atualizada de uma versão anterior). O Adobe recomenda uma reinicialização se o tempo de atividade atual de uma instância for alto.
 1. Antes de instalar o, faça um instantâneo ou um novo backup de seu [!DNL Experience Manager] instância.
@@ -186,7 +187,7 @@ O pacote é instalado automaticamente.
 
 +++
 
-+++6. Instalar o pacote complementar do AEM Experience Manager Forms
++++7. Instalar o pacote complementar do AEM Experience Manager Forms
 
 1. Verifique se você instalou o [!DNL Experience Manager] pacote de serviços.
 1. Baixe o pacote complementar do Forms correspondente listado em [Versões do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) para seu sistema operacional.
@@ -197,8 +198,9 @@ O pacote é instalado automaticamente.
 
 ## Baixar e instalar o Service Pack em um formulário AEM em um ambiente OSGi {#download-and-install-for-osgi-service-pack}
 
-![Etapas de instalação do OSGi](/help/forms/using/assets/osgiinstallation.png)
 
+<!-- ![OSGi Installation Steps](/help/forms/using/assets/osgiinstallation.png)
+-->
 
 +++1. Faça backup do seu ambiente existente
 

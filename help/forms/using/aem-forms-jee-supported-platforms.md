@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 6c17822e5d5fcd6af63bc695a057c1eeff50f03a
+source-git-commit: 8ffe992e4b243d2a3548d214e8ac44fb5df6483c
 workflow-type: tm+mt
-source-wordcount: '4023'
+source-wordcount: '4052'
 ht-degree: 0%
 
 ---
@@ -361,6 +361,7 @@ Considere as exceções a seguir ao escolher uma plataforma para configurar o AE
 1. O AEM Forms no JEE não suporta o controle de acesso baseado em função (RBAC) JBoss®.
 1. O AEM Forms no JEE suporta o SDK Java™ SE 11 (64 bits) do Oracle para servidor de aplicativos somente JBoss® EAP 7.4.
 1. As versões do JDK posteriores à 1.8.0_281 não são compatíveis com o servidor WebLogic. (FORMS-8498)
+1. O JDK 11.0.20 não é compatível com a instalação do AEM Forms no instalador do JEE. Somente o JDK 11.0.19 ou versões anteriores são compatíveis com a instalação do AEM Forms no instalador do JEE.
 
 <!-- 
 1. [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312) 
