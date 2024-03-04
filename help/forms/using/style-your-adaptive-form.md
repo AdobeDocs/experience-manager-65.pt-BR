@@ -4,10 +4,10 @@ description: Saiba como criar um tema personalizado, estilizar componentes indiv
 topic-tags: introduction
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: a361c194c238f0f2c999abfd77ca85e7697cb7bf
 workflow-type: tm+mt
-source-wordcount: '1982'
-ht-degree: 8%
+source-wordcount: '2038'
+ht-degree: 7%
 
 ---
 
@@ -130,9 +130,9 @@ O cabeçalho e o rodapé fornecem uma aparência consistente e distinta para um 
 
    | Propriedade | Valor |
    |---|---|
-   | Família da fonte | Arial® |
-   | Cor da fonte | FFFFFF |
-   | Tamanho da fonte | 54 px |
+   | Família de Fontes | Arial® |
+   | Cor da Fonte | FFFFFF |
+   | Tamanho da Fonte | 54 px |
 
 1. Selecione o [!UICONTROL cabeçalho] widget e selecione **[!UICONTROL Cabeçalho]**. As opções para estilizar o widget Cabeçalho são exibidas à esquerda. Expanda a **[!UICONTROL Dimension e Posição]** , defina o **[!UICONTROL Altura]** para `120px`e selecione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Expanda a **[!UICONTROL Histórico]** do widget cabeçalho, defina o **[!UICONTROL Cor do plano de fundo]** para `F6921E.`
@@ -186,7 +186,7 @@ O cabeçalho e o rodapé fornecem uma aparência consistente e distinta para um 
      </tr> 
      <tr> 
       <td>Borda</td> 
-      <td>Cor da borda</td> 
+      <td>Cor da Borda</td> 
       <td>A7A9AC</td> 
      </tr> 
      <tr> 
@@ -202,17 +202,17 @@ O cabeçalho e o rodapé fornecem uma aparência consistente e distinta para um 
      </tr> 
      <tr> 
       <td>Texto</td> 
-      <td>Família da fonte</td> 
+      <td>Família de Fontes</td> 
       <td>Arial®</td> 
      </tr> 
      <tr> 
       <td>Texto</td> 
-      <td>Cor da fonte</td> 
+      <td>Cor da Fonte</td> 
       <td>939598<br /> </td> 
      </tr> 
      <tr> 
       <td>Texto</td> 
-      <td>Tamanho da fonte</td> 
+      <td>Tamanho da Fonte</td> 
       <td>18 px</td> 
      </tr> 
      <tr> 
@@ -250,12 +250,12 @@ O cabeçalho e o rodapé fornecem uma aparência consistente e distinta para um 
      </tr> 
      <tr> 
       <td>Segundo plano</td> 
-      <td>Cor do plano de fundo</td> 
+      <td>Cor do Plano de Fundo</td> 
       <td>F6921E</td> 
      </tr> 
      <tr> 
       <td>Borda<br /> </td> 
-      <td>Cor da borda</td> 
+      <td>Cor da Borda</td> 
       <td>F6921E</td> 
      </tr> 
      <tr> 
@@ -271,17 +271,17 @@ O cabeçalho e o rodapé fornecem uma aparência consistente e distinta para um 
      </tr> 
      <tr> 
       <td>Texto<br /> </td> 
-      <td>Família da fonte</td> 
+      <td>Família de Fontes</td> 
       <td>Arial®</td> 
      </tr> 
      <tr> 
       <td>Texto</td> 
-      <td>Cor da fonte</td> 
+      <td>Cor da Fonte</td> 
       <td>FFFFFF</td> 
      </tr> 
      <tr> 
       <td>Texto</td> 
-      <td>Tamanho da fonte</td> 
+      <td>Tamanho da Fonte</td> 
       <td>18 px</td> 
      </tr> 
     </tbody> 
@@ -304,7 +304,7 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
 
    | Propriedade | Valor |
    |---|---|
-   | Flutuante | Esquerda |
+   | Flutuante | À esquerda |
    | Largura | 10% |
 
 1. Selecione o **[!UICONTROL Prova de endereço aprovada pelo governo]** e selecione a opção ![aem_6_3_edit](assets/aem_6_3_edit.png)ícone. Defina as seguintes propriedades:
@@ -319,7 +319,7 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
      <tr> 
       <td>Dimensões e Posição</td> 
       <td>Flutuante</td> 
-      <td>Esquerda</td> 
+      <td>À esquerda</td> 
      </tr> 
      <tr> 
       <td>Dimensões e Posição</td> 
@@ -350,7 +350,7 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
      </tr> 
      <tr> 
       <td>Segundo plano</td> 
-      <td>Cor do plano de fundo</td> 
+      <td>Cor do Plano de Fundo</td> 
       <td>FFFFFF</td> 
      </tr> 
      <tr> 
@@ -365,7 +365,7 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
      </tr> 
      <tr> 
       <td>Borda</td> 
-      <td>Cor da borda</td> 
+      <td>Cor da Borda</td> 
       <td>A7A9AC</td> 
      </tr> 
      <tr> 
@@ -375,17 +375,17 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
      </tr> 
      <tr> 
       <td>Texto</td> 
-      <td>Família da fonte</td> 
+      <td>Família de Fontes</td> 
       <td>Arial®</td> 
      </tr> 
      <tr> 
       <td>Texto</td> 
-      <td>Cor da fonte</td> 
+      <td>Cor da Fonte</td> 
       <td>BCBEC0</td> 
      </tr> 
      <tr> 
       <td>Texto</td> 
-      <td>Tamanho da fonte</td> 
+      <td>Tamanho da Fonte</td> 
       <td>18 px</td> 
      </tr> 
      <tr> 
@@ -409,7 +409,7 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
      <tr> 
       <td>Dimension e Posição</td> 
       <td>Flutuante</td> 
-      <td>Direita</td> 
+      <td>Direito</td> 
      </tr> 
      <tr> 
       <td>Dimension e Posição</td> 
@@ -424,12 +424,12 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
      </tr> 
      <tr> 
       <td>Segundo plano</td> 
-      <td>Cor do plano de fundo</td> 
+      <td>Cor do Plano de Fundo</td> 
       <td>F6921E</td> 
      </tr> 
      <tr> 
       <td>Borda</td> 
-      <td>Cor da borda</td> 
+      <td>Cor da Borda</td> 
       <td>F6921E</td> 
      </tr> 
     </tbody> 
@@ -442,16 +442,77 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
 É possível usar várias fontes para criar um formulário adaptável. Todos os dispositivos nos quais o formulário adaptável é exibido podem não ter as fontes usadas para criar o formulário adaptável. Você pode usar um serviço de fontes da Web para fornecer as fontes necessárias ao dispositivo de destino.
 
 [!DNL Adobe Fonts] O é um serviço do Web Fonts. Você pode configurar e usar o serviço com formulários adaptáveis. Para usar [!DNL Adobe Fonts] em um formulário adaptável:
+1. Navegue pelo [biblioteca de fontes Adobe](https://fonts.adobe.com/) e escolha fonte para estilizar o formulário.
+<!--
+>[!NOTE]
+>
+>![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).-->
 
 >[!NOTE]
 >
->![typekit para adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] agora é chamado de Adobe Fonts e está incluído na Creative Cloud e em outras assinaturas. [Saiba mais](https://fonts.adobe.com/).
+> É possível adicionar tags ou filtros para refinar a lista de fontes.
 
-1. Criar um [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com) , crie um kit, adicione a fonte Myriad Pro ao kit, publique o kit e obtenha a ID do kit. É necessário usar [!DNL Adobe Fonts] (Web Fonts) em um formulário adaptável.
-1. No AEM [!DNL Forms] Servidor, navegue até ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Ferramentas]** ![martelo](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. Agora, abra uma pasta de configuração. Se uma configuração já estiver disponível, clique no link **[!UICONTROL Criar]** botão para criar uma instância.
+1. Clique no botão &lt;/> para adicionar a família a um projeto da Web, caso encontre uma fonte que goste.
 
-   Na caixa de diálogo Criar configuração, especifique uma **Título** para a configuração e clique em **[!UICONTROL Criar]**. Você é redirecionado para a página de configuração. No [!UICONTROL Editar componente] que for exibida, forneça a **ID do kit** e clique em **[!UICONTROL OK]**.
+   ![select-font-from-font-library](assets/select-font-from-font-library.png)
 
-1. Configure seu tema para usar a variável [!DNL Adobe Fonts] configuração. Na instância do autor, abra **[!UICONTROL Tema Global]** no editor de temas. No editor de temas, acesse **[!UICONTROL Opções de tema]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configurar]**. No **[!UICONTROL Configuração do Adobe Fonts]** selecione o kit e clique em **[!UICONTROL Salvar]**.
+   A tela de diálogo Adicionar fontes a um projeto da Web é exibida.
 
-   As fontes adicionadas à variável **[!UICONTROL Adobe Fonts]** estão disponíveis para seleção no **[!UICONTROL Texto]** de todos os componentes.
+   >[!NOTE]
+   >
+   > Você só poderá adicionar fontes ao projeto da Web se elas tiverem o botão &lt;/> disponível.
+
+2. Dê um nome ao projeto da Web.
+3. Marque as caixas de seleção para selecionar os pesos e estilos de fonte que deseja incluir.
+
+   ![adicionar uma biblioteca de fontes](assets/add-a-font-window.png)
+
+4. Selecionar **Clique em** para criar o projeto.
+5. Copie o código incorporado e o URL da tela.
+   ![código incorporado e URL](assets/font-add-url.png)
+
+6. Clique em **Concluído** para fechar a janela do projeto web.
+7. Faça logon na instância do AEM e acesse o URL `http://server:port/crx/de/index.jsp#`
+8. Criar uma estrutura de pastas no CRXDE, por exemplo `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`.
+9. Vá para o recém-criado `clientlibs` e adicione a `allowProxy` e `categories` propriedades.
+10. Navegue até `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` e crie uma pasta css.
+11. Vá para a pasta CSS criada e crie um arquivo. Por exemplo, criar um arquivo como `fonts.css` e cole o código incorporado junto com o URL.
+   ![Estrutura de pastas](/help/forms/using/assets/fonts-add-in-crxde.png)
+12. Salve as alterações.
+
+>[!NOTE]
+>
+> Para usar as fontes personalizadas adicionadas em um Formulário adaptável, verifique se o nome da biblioteca do cliente na **[!UICONTROL Categoria da biblioteca cliente]** alinha-se ao nome especificado na opção categories da pasta clientlib.
+
+As fontes incluídas agora podem ser acessadas no Formulário adaptável por meio da seguinte biblioteca de cliente de fontes personalizadas.
+
+
+<!--
+Create Adobe Fonts Configuration
+
+1. To create a API Token, go to **login** > **API Token** > **Make me a new API token**.
+
+   ![API token](/help/forms/using/assets/fonts-api-token.png)
+
+2. Once, you click **Make me a new API token**, a new token is generated. 
+3. Copy the generated token for future use.
+4. Now login to your AEM  author instance. On the author instance, go to **[!UICONTROL Tools]**>**[!UICONTROL Cloud Services]**> **[!UICONTROL Adobe Fonts]**.
+5. Select the configuration container and click **Create**. **[UICONTROL Create Adobe Fonts Configuration]** screen appears.
+    ![API token](/help/forms/using/adobe-font-configuration-screen.png)
+
+6. Spceify the name and paste the API token in the **[!UICONTROL Kit ID]** textbox.
+7. Click **Create**.
+
+
+
+The fonts added to the **[!UICONTROL Adobe Fonts]** are available for selection in the **[!UICONTROL Text]** accordion of all the components.
+1. In the theme editor, navigate to **[!UICONTROL Theme Options]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configure]**. 
+2. In the **[!UICONTROL Adobe Fonts Configuration]** field, select the kit, and click **[!UICONTROL Save]**.
+
+
+1. Create an [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com) account, create a kit, add font Myriad Pro to the kit, publish the kit, and obtain the Kit ID. It is required to use [!DNL Adobe Fonts] (Web Fonts) in an adaptive form. 
+1. In the AEM [!DNL Forms] Server, navigate to ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. Now, open a configuration folder. If a configuration is already available, click the **[!UICONTROL Create]** button to create an instance.
+
+   On the Create Configuration dialog, specify a **Title** for the configuration, and click **[!UICONTROL Create]**. You are redirected to the configuration page. In the [!UICONTROL Edit Component] dialog that appears, provide your **Kit ID** and click **[!UICONTROL OK]**. -->
+
+
