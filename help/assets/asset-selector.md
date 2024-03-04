@@ -4,9 +4,8 @@ description: Saiba como usar o seletor de ativos para pesquisar, filtrar, navega
 contentOwner: Adobe
 feature: Asset Management,Metadata,Search
 role: User
-exl-id: 4b518ac0-5b8b-4d61-ac31-269aa1f5abe4
 hide: true
-source-git-commit: 477c62b857ab98d8617c7bd8ba226019d42d330d
+source-git-commit: 27eb8a53a198efd2cb059a2884b3b5ed60730806
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 1%
@@ -39,7 +38,7 @@ Você pode passar os seguintes parâmetros de solicitação em um URL para inici
 | modo | único, múltiplo | `http://localhost:4502/aem/assetpicker.html`<br>`?mode=multiple` <br> `http://localhost:4502/aem/assetpicker.html`<br>`?mode=single` | No modo múltiplo, é possível selecionar vários ativos simultaneamente usando o seletor de ativos. |
 | caixa de diálogo | verdadeiro, falso | `http://localhost:4502/aem/assetpicker.html`<br>`?dialog=true` | Use esses parâmetros para abrir o seletor de ativos como uma caixa de diálogo do Granite. Essa opção só é aplicável quando você inicia o seletor de ativos por meio do Campo de caminho do Granite e o configura como URL do pickerSrc. |
 | raiz | `<folder_path>` | `http://localhost:4502/aem/`<br>`assetpicker.html?assettype=images`<br>`&root=/content/dam/we-retail/en/activities` | Use essa opção para especificar a pasta raiz do seletor de ativos. Nesse caso, o seletor de ativos permite selecionar somente ativos secundários (diretos/indiretos) na pasta raiz. |
-| viewmode | pesquisar |  | Para iniciar o seletor de ativos no modo de pesquisa, com parâmetros assettype e mimetype. |
+| viewmode | pesquisa |  | Para iniciar o seletor de ativos no modo de pesquisa, com parâmetros assettype e mimetype. |
 | tipo de ativo (S) | imagens, documentos, multimídia, arquivos | <ul><li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives`</li> | Use essa opção para filtrar tipos de ativos com base no valor transmitido. |
 | mimetype | tipo(s) mime (`/jcr:content/metadata/dc:format`) de um ativo (curinga também é compatível) | <ul><li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=image/png`</li>  <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&?mimetype=*png`</li>  <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=*presentation`</li>  <li>`http://localhost:4502/aem/assetpicker?viewmode=search&mimetype=*presentation&mimetype=*png`</li></ul> | Use-a para filtrar ativos com base nos tipos MIME |
 
