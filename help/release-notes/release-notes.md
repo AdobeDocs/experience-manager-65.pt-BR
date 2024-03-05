@@ -2,9 +2,9 @@
 title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 015c36cad1e7da98888609622cf2150842d40c66
+source-git-commit: 7b920927fe400c05f6c7a744d4cb7366db0cae86
 workflow-type: tm+mt
-source-wordcount: '3485'
+source-wordcount: '3486'
 ht-degree: 2%
 
 ---
@@ -470,11 +470,11 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 
    1. Baixe o hotfix para seu sistema operacional:
 
-   * [Hotfix do Microsoft Windows](/help/release-notes/assets/Hotfix-windows.zip)
-   * [Hotfix para Linux](/help/release-notes/assets/Hotfix-Linux.zip)
-   * [Hotfix do Apple macOS](/help/release-notes/assets/Hotfix-osx.zip)
+      * [Hotfix do Microsoft Windows](/help/release-notes/assets/Hotfix-windows.zip)
+      * [Hotfix para Linux](/help/release-notes/assets/Hotfix-Linux.zip)
+      * [Hotfix do Apple macOS](/help/release-notes/assets/Hotfix-osx.zip)
 
-   1. Faça upload e instale o pacote (.zip) por meio do Gerenciador de pacotes.
+   1. Carregue e instale o pacote (.zip) por meio do [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=en#accessing).
 
 * O serviço de preenchimento prévio falha com uma exceção de ponteiro nulo nas Comunicações interativas. (CQDOC-21355)
 
