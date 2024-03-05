@@ -1,7 +1,7 @@
 ---
 title: A geração de PDF não imprime um grande número de PDF com o WorkBench
 description: Quando um cliente gera um grande número de PDF por meio de serviços implementados pelo WorkBench, ocorre uma falha no serviço de impressão.
-source-git-commit: 9cdf22918f08fe505c3efd0ce43235e3442165d5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Outros fatores que devem ser considerados ao projetar o modelo de formulário pa
 
 Como somos limitados pela memória máxima do processo, a memória consumida pelo processo não depende apenas do tamanho do arquivo de dados. Ela está muito intimamente ligada ao design do formulário e, até certo ponto, à quantidade real de dados que estão sendo mesclados no formulário.
 
-Se o formulário tiver muitos nós pequenos com dados pequenos, o processo consumirá mais memória (e, portanto, sairá da memória mais rápido) do que um formulário que tenha menos nós (mesmo) com grandes dados.
+Se o formulário tiver muitos nós pequenos com dados pequenos, o processo consumirá mais memória (e, portanto, ficará sem memória mais rápido) do que um formulário que tenha menos nós (mesmo) com dados grandes.
 
 Leia o [Apêndice abaixo](#appendix) para obter mais informações, onde os resultados dos testes são baseados no formulário Imprimir (PDF não marcado). O uso de requisitos de memória de processo de PDF marcado aumenta. Também depende do número de campos no formulário - aproximadamente, o requisito de memória do processo seria um pouco mais de 1,5 vez de PDF não marcado.
 

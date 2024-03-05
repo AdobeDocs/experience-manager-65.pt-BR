@@ -2,7 +2,7 @@
 title: Hotfixes para o AEM Forms
 description: Fornece informações sobre como baixar e instalar um hotfix do AEM Forms.
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
-source-git-commit: 5ab1fd033af0d6d5595fe41de003455ab9ba28a6
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 1%
@@ -50,7 +50,7 @@ Este artigo lista as correções críticas implementadas para resolver problemas
      </td>
     <td>
     <ul>
-    <li> O componente de Assinatura Rabiscada OOTB não é renderizado para uma visualização em um formulário adaptável. (FORMS-12073).</li>
+    <li> O componente de Assinatura escritas pronto para uso não é renderizado para uma visualização em um formulário adaptável. (FORMS-12073).</li>
     </ul>
     </td>    
    </tr>
