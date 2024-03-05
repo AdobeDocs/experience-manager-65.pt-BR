@@ -2,9 +2,9 @@
 title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 5f95281130f0f2cac6d115b59b828946c2f70d33
+source-git-commit: 015c36cad1e7da98888609622cf2150842d40c66
 workflow-type: tm+mt
-source-wordcount: '3462'
+source-wordcount: '3485'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
    * Curva elíptica ECDSA P384 com algoritmo de compilação SHA384
    * Curva elíptica ECDSA P512 com algoritmo de compilação SHA512
 * **Compatibilidade perfeita com o Windows 11 para Forms Designer**: o AEM Forms Designer agora é compatível com o Windows 11, garantindo instalação e operação ininterruptas. Os usuários podem atualizar com confiança para o Windows 11 sem o incômodo de reinstalar o Forms Designer ou se preocupar com problemas de compatibilidade, garantindo um fluxo de trabalho ininterrupto.
-* **Acessibilidade aprimorada com a função personalizada &quot;Legenda&quot; no AEM Forms Designer**: o AEM Forms Designer agora inclui uma função de acessibilidade personalizada chamada &quot;Legenda&quot; para criar XDPs com elementos de legenda personalizados. Esse recurso melhora a acessibilidade ao permitir que os usuários integrem legendas personalizadas em seus designs de documento para melhorar a inclusão e a experiência do usuário.
+* **Acessibilidade aprimorada com a função personalizada &quot;Legenda&quot; no AEM Forms Designer**: o AEM Forms Designer agora inclui uma função de acessibilidade personalizada chamada &quot;Legenda&quot;, permitindo que os usuários criem XDPs com elementos de legenda personalizados. Esse recurso melhora a acessibilidade ao permitir que os usuários integrem legendas personalizadas em seus designs de documento para que possam melhorar a inclusão e a experiência do usuário.
 
 <!-- ### [!DNL Forms]
 
@@ -466,8 +466,15 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 
   `Unable to compile class for JSP: An error occurred at line: 162 in the jsp file: /libs/granite/ui/components/coral/foundation/anchorbutton/anchorbutton.jsp The method transformLinkInUriIfExternal(String) is undefined for the type ComponentHelper`
 
-  O pode entrar em contato com o suporte do Adobe para obter assistência na resolução do problema.
+  Para resolver o problema:
 
+   1. Baixe o hotfix para seu sistema operacional:
+
+   * [Hotfix do Microsoft Windows](/help/release-notes/assets/Hotfix-windows.zip)
+   * [Hotfix para Linux](/help/release-notes/assets/Hotfix-Linux.zip)
+   * [Hotfix do Apple macOS](/help/release-notes/assets/Hotfix-osx.zip)
+
+   1. Faça upload e instale o pacote (.zip) por meio do Gerenciador de pacotes.
 
 * O serviço de preenchimento prévio falha com uma exceção de ponteiro nulo nas Comunicações interativas. (CQDOC-21355)
 
