@@ -1,9 +1,9 @@
 ---
 title: Descontinuação de credenciais JWT no console do Adobe Developer
 description: Saiba mais sobre o impacto da descontinuação de credenciais JWT no Console do Adobe Developer no AEM
-source-git-commit: 18bee77ab6fcb2d635d389f929c1dd8e2bc25de5
+source-git-commit: 72974d27fecbd9c242f66e203b02463c22b93108
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,6 @@ Este artigo fornece contexto adicional sobre como os clientes do AEM 6.5 devem l
 O principal argumento neste momento é que os recursos de AEM ainda não oferecem suporte às novas credenciais de servidor para servidor do OAuth. O suporte será fornecido em breve — até meados de abril de 2024, por meio de um pacote de compatibilidade especial para instalação do AEM 6.5, se você estiver executando o Service Pack 20 ou inferior mais recente (o Service Pack 21 e superior o incluirá automaticamente). Você pode ter recebido um email com instruções para migrar suas credenciais do JWT, mas tenha certeza de que pode e deve adiar a migração das credenciais até que o AEM ofereça suporte ao novo tipo de credencial servidor para servidor OAuth.
 
 As seções abaixo listam os cenários em que os clientes devem (ou, em alguns casos, não) substituir suas credenciais da Conta de serviço (JWT) por credenciais de Servidor para Servidor OAuth, uma vez que o AEM ofereça suporte a eles em meados de abril. [Saiba como](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) para substituir as credenciais no futuro.
-
->[!NOTE]
->
->A variável [**AEM** Console do desenvolvedor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#crxde-lite-and-developer-console) (observe o **AEM** no nome, que o distingue da variável **Adobe** Developer Console) fornece um utilitário para gerar [Tokens JWT](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) usado para APIs de servidor para servidor. Essas credenciais não foram substituídas e podem continuar sendo usadas.
-
 
 ## Integração do AEM a outras soluções da Adobe {#integrating-aem-with-other-adobe-solutions}
 
