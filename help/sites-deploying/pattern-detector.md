@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 feature: Upgrading
 exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '500'
 ht-degree: 1%
 
 ---
@@ -210,7 +210,7 @@ Com a saída:
 
 ## Escopo da detecção {#scope}
 
-Atualmente, o Detector de padrões permite verificar:
+Atualmente, o Detector de padrões permite verificar o seguinte:
 
 * Incompatibilidade de exportações e importações de pacotes OSGi
 * Sobreutilizações de tipos e supertipos de recursos do Sling (com sobreposições de conteúdo de caminho de pesquisa)

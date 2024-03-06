@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Developer Tools,Renditions
 exl-id: 7652663a-11ba-4a78-9a9f-221d514fe992
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Se você é um [!DNL Adobe Experience Manager Assets] usuário, o Lightbox é cr
 
    >[!NOTE]
    >
-   >Embora o Lightbox se pareça a uma coleção, não é possível executar todas as ações normalmente executadas nas coleções. Por exemplo, você não pode excluir, compartilhar ou visualizar configurações de um Lightbox. Além disso, não é possível adicioná-lo a outras coleções. No entanto, você pode editar os ativos dentro de uma lightbox.
+   >Embora o Lightbox se pareça a uma coleção, não é possível executar todas as ações normalmente executadas nas coleções. Por exemplo, não é possível excluir, compartilhar ou exibir configurações de um Lightbox. Além disso, não é possível adicioná-lo a outras coleções. No entanto, você pode editar os ativos dentro de uma lightbox.
 
 ## Remover ativos da Lightbox {#removing-assets-from-lightbox}
 

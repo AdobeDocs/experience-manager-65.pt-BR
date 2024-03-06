@@ -2,10 +2,10 @@
 title: Saiba mais sobre as noções básicas de criação
 description: Saiba mais sobre os conceitos e os mecanismos de criação de conteúdo para seu CMS headless usando Fragmentos de conteúdo.
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1691'
-ht-degree: 76%
+source-wordcount: '1694'
+ht-degree: 73%
 
 ---
 
@@ -98,7 +98,7 @@ A menos que tenha pouquíssimos Fragmentos de conteúdo, você vai querer organi
 
 #### Criação de pastas {#creating-folder}
 
-Você pode fazer isso criando uma série de pastas na seção **Arquivos** do console Ativos. Selecione a opção **Criar** (parte superior direita), seguido por **Pasta**:
+Você pode fazer isso criando uma série de pastas no **Arquivos** seção do console Assets. Selecione a opção **Criar** (parte superior direita), seguido por **Pasta**:
 
 ![Opção Criar pasta](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -126,7 +126,7 @@ Em seguida, navegue por essas pastas para criar e editar os Fragmentos de conte�
 
 Por segurança...
 
-Você provavelmente receberá uma pasta inicial em que poderá criar suas pastas. Isso ocorre porque alguns detalhes de configuração devem ser aplicados (geralmente por um Desenvolvedor ou Administrador do Sistema) à pasta raiz. Isso provavelmente não lhe interessará, mas, se necessário, você poderá verificar a **Configuração** nos **Serviços na nuvem** da pasta **Propriedades**:
+Você provavelmente receberá uma pasta inicial em que poderá criar suas pastas. Isso ocorre porque alguns detalhes de configuração devem ser aplicados (geralmente por um Desenvolvedor ou Administrador do Sistema) à pasta raiz. Isso provavelmente não é de seu interesse, mas se necessário, você pode verificar o **Configuração** no **Cloud Service** da pasta **Propriedades**:
 
 ![Criar propriedades de pasta - Configuração](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 

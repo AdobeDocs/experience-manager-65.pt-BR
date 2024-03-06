@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 970e0a97d531d4cbae76119960972e54ef65dda0
 workflow-type: tm+mt
-source-wordcount: '2348'
-ht-degree: 3%
+source-wordcount: '2313'
+ht-degree: 2%
 
 ---
 
@@ -315,7 +315,7 @@ Permite que os resultados sejam classificados. Se a ordenação por várias prop
 
   O nome da propriedade do JCR é indicado por um @ à esquerda, por exemplo, `@jcr:lastModified` ou `@jcr:content/jcr:title`, ou outro predicado na consulta, por exemplo, `2_property`, no qual classificar.
 
-* **classificar**
+* **sort**
 
   Direção de classificação, &quot; `desc`&quot; para decrescente ou &quot; `asc`&quot; para crescente (padrão).
 
@@ -359,7 +359,7 @@ Oferece suporte à extração de facetas. Fornece intervalos para cada valor de 
 
   O caminho relativo para a propriedade, por exemplo, `jcr:title`.
 
-* **valor**
+* **value**
 
   Valor para verificar a propriedade; segue o tipo de propriedade JCR para conversões de string.
 
@@ -571,9 +571,9 @@ Não oferece suporte à extração de facetas.
 
   Para pesquisar apenas um determinado título de tag localizado (por exemplo, `de`).
 
-* **todas**
+* **all**
 
-  (bool) Pesquisar texto completo da tag inteira, ou seja, todos os títulos, descrições e assim por diante (tem precedência sobre &quot;l&quot; `ang`&quot;).
+  (bool) Pesquisa o texto completo da tag, ou seja, todos os títulos, descrições e assim por diante. Tem prioridade sobre &quot;l&quot; `ang`&quot;.
 
 ### tipo {#type}
 
@@ -583,6 +583,6 @@ Oferece suporte à extração de facetas. Fornece intervalos para cada tipo excl
 
 #### Propriedades {#Properties-2}
 
-* **tipo**
+* **type**
 
   Tipo de nó ou nome de mixin a ser pesquisado, por exemplo, `cq:Page`.

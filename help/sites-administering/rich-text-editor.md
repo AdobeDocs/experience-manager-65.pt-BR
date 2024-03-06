@@ -3,9 +3,9 @@ title: Configure o Editor de Rich Text para criar conteúdo no Adobe Experience 
 description: Saiba como configurar o Editor de rich text do Adobe Experience Manager para criar conteúdo no Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '2883'
+source-wordcount: '2887'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Os autores podem criar e editar conteúdo textual no Experience Manager usando o
 
 | Modo de edição | Área de edição | Recursos recomendados para serem habilitados | Interface de toque | IU Clássica |
 |--- |--- |--- |--- |--- |
-| Inline | Edição no local para edições secundárias rápidas; Formatar sem abrir uma caixa de diálogo | Recursos mínimos de RTE | Y | Y |
+| Em linha | Edição no local para edições secundárias rápidas; Formatar sem abrir uma caixa de diálogo | Recursos mínimos de RTE | Y | Y |
 | Tela cheia do RTE | Abrange a página inteira | Todos os recursos de RTE necessários | Y | N |
 | Caixa de diálogo | Caixa de diálogo na parte superior do conteúdo da página, mas não cobre a página inteira | Todos os recursos de RTE necessários na interface clássica; habilite os recursos na interface de toque com precisão | Y | Y |
 | Tela cheia do diálogo | Igual ao modo de tela cheia; contém campos da caixa de diálogo junto com o RTE | Todos os recursos de RTE necessários | Y | N |
@@ -133,7 +133,7 @@ A variável [modo de edição do RTE (e a interface do usuário)](#editingmodes)
 
 | Modo de edição | Localização da interface para toque | Local para a interface clássica |
 |---|---|---|
-| Inline | `cq:editConfig/cq:inplaceEditing` | `cq:editConfig/cq:inplaceEditing` |
+| Em linha | `cq:editConfig/cq:inplaceEditing` | `cq:editConfig/cq:inplaceEditing` |
 | Tela cheia | `cq:editConfig/cq:inplaceEditing` | Não aplicável |
 | Caixa de diálogo | `cq:dialog` | `dialog` |
 | Caixa de diálogo de tela cheia | `cq:dialog` | Não aplicável |
@@ -255,7 +255,7 @@ Os administradores podem controlar as opções de RTE usando políticas de conte
 As opções disponíveis no fluxo de RTE downstream das configurações da interface do usuário para as políticas de conteúdo.
 
 * As configurações da interface do usuário definem quais opções estão disponíveis para as políticas de conteúdo.
-* Se a configuração da interface do usuário do RTE tiver sido removida ou não tiver habilitado um item, a política de conteúdo não poderá configurá-lo.
+* Se a configuração da interface do usuário do RTE tiver sido removida ou não ativar um item, a política de conteúdo não poderá configurá-lo.
 * Um autor tem acesso somente a essas funcionalidades, conforme disponibilizado pelas configurações da interface do usuário e pelas políticas de conteúdo.
 
 Como exemplo, você pode ver a variável [Documentação do componente principal de Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html#the-text-component-and-the-rich-text-editor).

@@ -1,8 +1,8 @@
 ---
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 52%
+source-wordcount: '506'
+ht-degree: 47%
 
 ---
 # Contribuição na documentação do Adobe Experience Manager
@@ -34,7 +34,7 @@ O método de escolha depende do quanto você se sente confortável em editar a d
 
 ### Criação de um tópico {#create-an-issue}
 
-Você tem uma sugestão, uma observação sobre os documentos atuais ou alguma dúvida relacionada à maneira como algo está descrito? Em seguida, crie um problema. Tópicos são excelentes se você tiver alguma contribuição, mas não se sente confortável em editar os documentos ou criar um pull request.
+Você tem uma sugestão, uma observação sobre os documentos atuais ou alguma dúvida relacionada à maneira como algo está descrito? Em seguida, crie um problema. Tópicos são excelentes se você tiver algo a contribuir, mas não se sente confortável em editar os documentos ou criar um pull request.
 
 Com os tópicos, você pode descrever facilmente sua ideia para aprimorar os documentos, e um membro da equipe do AEM Docs pode revisá-la. Basta clicar no link **Registrar um problema** Um link na parte superior do painel de navegação direito em qualquer página para criar um problema.
 

@@ -7,9 +7,9 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '6184'
+source-wordcount: '6185'
 ht-degree: 0%
 
 ---
@@ -543,7 +543,7 @@ A saída do segundo teste deve ser consideravelmente maior do que o primeiro, in
 
 >[!NOTE]
 >
-Ao executar os testes, verifique as estatísticas de uso de E/S das máquinas virtuais em questão no sistema de monitoramento do sistema operacional. Se eles indicarem valores inferiores a 100% para leituras de E/S, pode haver um problema com sua máquina virtual.
+>Ao executar os testes, verifique as estatísticas de uso de E/S das máquinas virtuais em questão no sistema de monitoramento do sistema operacional. Se eles indicarem valores inferiores a 100% para leituras de E/S, pode haver um problema com sua máquina virtual.
 
 **Testar o desempenho de gravação da instância MongoDB primária**
 
@@ -654,7 +654,7 @@ A CSP permite o ajuste fino das políticas. No entanto, em um aplicativo complex
 
 >[!NOTE]
 >
-Para obter mais informações sobre como isso funciona, consulte [Página OWASP sobre Política de segurança de conteúdo](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
+>Para obter mais informações sobre como isso funciona, consulte [Página OWASP sobre Política de segurança de conteúdo](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
 
 ### Dimensionamento {#sizing}
 
@@ -678,4 +678,4 @@ Se o AEM estiver sendo executado em uma implantação do gerenciador de persist�
 
 >[!NOTE]
 >
-Consulte a [Documentação do MongoDB](https://docs.mongodb.com/manual/reference/limits/) para que você possa se familiarizar com as limitações e limites conhecidos do MongoDB.
+>Consulte a [Documentação do MongoDB](https://docs.mongodb.com/manual/reference/limits/) para que você possa se familiarizar com as limitações e limites conhecidos do MongoDB.

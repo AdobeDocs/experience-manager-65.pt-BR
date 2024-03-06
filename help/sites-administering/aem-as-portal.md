@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 970e0a97d531d4cbae76119960972e54ef65dda0
 workflow-type: tm+mt
-source-wordcount: '6076'
+source-wordcount: '6074'
 ht-degree: 0%
 
 ---
@@ -612,7 +612,7 @@ Ao implementar esse serviço, defina as **classificação.serviço** propriedade
 | **Nome** | **Descrição** | **Comportamento padrão** |
 |---|---|---|
 | Autenticador | Fornece as informações de autenticação para AEM | Usa um usuário técnico configurável para criar e publicar. Ou SSO pode ser usado. |
-| HTMLRewriter | Substitui links, imagens, etc | Substitui links AEM para links de portal, pode ser estendido por um UrlMapper e um TextMapper |
+| HTMLRewriter | Substitui links e imagens | Substitui links AEM para links de portal, pode ser estendido por um UrlMapper e um TextMapper |
 | HttpClientService | Gerencia todas as conexões http | Implementação padrão |
 | LocaleHandler | Gerencia as informações de local | Substitui um link para o conteúdo em relação ao local. |
 | LocaleDetector | Detecta a localidade do usuário. | Usa o local fornecido pelo portal. |

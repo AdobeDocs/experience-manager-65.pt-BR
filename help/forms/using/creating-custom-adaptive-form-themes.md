@@ -5,9 +5,9 @@ content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Você cria um **modelo adaptável** e aplique o tema ao modelo. Você pode usar 
 
    **Menos arquivos de variáveis**: esses são os arquivos em que você define ou substitui as variáveis usadas na definição de estilos CSS.
 
-   Os formulários adaptáveis fornecem variáveis OOTB definidas no seguinte `.less` arquivos:
+   Os formulários adaptáveis fornecem variáveis prontas para uso definidas no seguinte `.less` arquivos:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
@@ -107,7 +107,7 @@ Você cria um **modelo adaptável** e aplique o tema ao modelo. Você pode usar 
 
    **Menos arquivos mixin:** Você pode definir as funções que aceitam variáveis como argumentos. A saída dessas funções são os estilos resultantes. Use esses mixins em diferentes estilos para evitar a repetição de estilos CSS.
 
-   Os formulários adaptáveis fornecem mixins OOTB definidos em:
+   Os formulários adaptáveis fornecem mixins prontos para uso definidos em:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/adaptiveforms-mixins.less`
 

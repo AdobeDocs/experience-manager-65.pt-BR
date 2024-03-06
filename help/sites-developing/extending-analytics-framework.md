@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1609'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Ao usar o código JavaScript personalizado para personalizar a estrutura, você 
 
 ## Configuração das propriedades do Adobe Analytics {#configuring-adobe-analytics-properties}
 
-Há várias variáveis predefinidas no Adobe Analytics que podem ser configuradas em uma estrutura. A variável **charset**, **cookieLifetime**, **currencyCode** e **trackInlineStats** as variáveis são incluídas no **Configurações gerais do Analytics** por padrão.
+Há várias variáveis predefinidas no Adobe Analytics que podem ser configuradas em uma estrutura. A variável **charset**, **cookieLifetime**, **currencyCode**, e **trackInlineStats** as variáveis são incluídas no **Configurações gerais do Analytics** por padrão.
 
 ![aa-22](assets/aa-22.png)
 
@@ -105,7 +105,7 @@ Use o procedimento a seguir para adicionar variáveis à lista:
 
 >[!CAUTION]
 >
->Algumas das variáveis nesta lista são **obrigatório** para que as chamadas do Adobe Analytics funcionem corretamente, (por exemplo, **currencyCode**, **charSet**)
+>Algumas das variáveis nesta lista são **obrigatório** para que as chamadas do Adobe Analytics funcionem corretamente (por exemplo, **currencyCode**, **charSet**).
 >
 >Portanto, mesmo que sejam removidos da própria estrutura, eles ainda serão anexados com um valor padrão quando a chamada do Adobe Analytics for feita.
 

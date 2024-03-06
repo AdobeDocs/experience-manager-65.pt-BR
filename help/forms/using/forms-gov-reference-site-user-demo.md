@@ -4,9 +4,9 @@ description: Use usuários e grupos fictícios para executar tarefas do AEM Form
 contentOwner: anujkapo
 docset: aem65
 exl-id: 288d5459-bc69-4328-b6c9-4b4960bf4977
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2475'
+source-wordcount: '2478'
 ht-degree: 1%
 
 ---
@@ -211,7 +211,7 @@ Aya precisa revisar alguns documentos em casa antes de concluir a solicitação 
 
 1. Preencha os campos Basic information (Informações básicas). Os campos e menus suspensos são os seguintes:
 
-   1. Informações básicas
+   1. Informações Básicas
 
       1. Nome
       1. Sobrenome
@@ -506,7 +506,7 @@ George aprova a inscrição de Aya e, graças a um fluxo de trabalho automatizad
 
 ### Relatórios do Adobe Analytics Forms (Camila) {#camila-reviews-forms-reporting-we-gov-adobe-analytics}
 
-1. Vá até
+1. Navegue até
 
    *https://&lt;aemserver>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 

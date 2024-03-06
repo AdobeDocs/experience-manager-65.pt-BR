@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3720'
+source-wordcount: '3722'
 ht-degree: 0%
 
 ---
@@ -355,7 +355,7 @@ O AEM oferece suporte à detecção do lado do cliente do dispositivo com base e
 
 >[!NOTE]
 >
-Para obter mais informações sobre a integração da Biblioteca do cliente, consulte [Uso de bibliotecas de HTML do lado do cliente](/help/sites-developing/clientlibs.md).
+>Para obter mais informações sobre a integração da Biblioteca do cliente, consulte [Uso de bibliotecas de HTML do lado do cliente](/help/sites-developing/clientlibs.md).
 
 ### Fornecer links alternativos {#providing-alternate-links}
 
@@ -374,7 +374,7 @@ Quando o valor de `cq:variantDomain` propriedade de um `cq:siteVariant` não est
 
 >[!NOTE]
 >
-Ao trabalhar com AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
+>Ao trabalhar com AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
 
 ### Definindo um URL específico do Grupo de dispositivos {#defining-a-device-group-specific-url}
 
@@ -384,7 +384,7 @@ O BrowserMap é projetado de forma que as definições de Grupos de Dispositivos
 
 >[!NOTE]
 >
-Para obter mais detalhes, consulte [Mapa de navegador personalizado](#creatingacustomisedbrowsermap).
+>Para obter mais detalhes, consulte [Mapa de navegador personalizado](#creatingacustomisedbrowsermap).
 
 ### Definição de URLs com base em seletor {#defining-selector-based-urls}
 
@@ -410,7 +410,7 @@ Além disso, é necessário chamar manualmente a variável `BrowserMap.forwardRe
 
 >[!NOTE]
 >
-Para obter mais informações sobre a integração da Biblioteca do cliente, consulte [Uso de bibliotecas de HTML do lado do cliente](/help/sites-developing/clientlibs.md).
+>Para obter mais informações sobre a integração da Biblioteca do cliente, consulte [Uso de bibliotecas de HTML do lado do cliente](/help/sites-developing/clientlibs.md).
 
 Depois de criar o seu personalizado `BrowserMap` biblioteca cliente, o Adobe sugere a seguinte abordagem:
 
@@ -496,7 +496,7 @@ Depois de criar o seu personalizado `BrowserMap` biblioteca cliente, o Adobe sug
 
 ### Excluir O Mapa De Navegador De Determinadas Páginas {#excluding-browsermap-from-certain-pages}
 
-Se você quiser excluir a biblioteca do Mapa de navegador de algumas de suas páginas, onde não é necessária a detecção do cliente, poderá adicionar um atributo de solicitação:
+Se você quiser excluir a biblioteca do Mapa de navegador de algumas de suas páginas nas quais não é necessária a detecção do cliente, poderá adicionar um atributo de solicitação:
 
 ```xml
 <%
@@ -520,7 +520,7 @@ Você pode forçar o dispositivo de qualquer solicitação a testar uma versão 
 
 >[!NOTE]
 >
-A variável `wcmmode` está definido como `disabled` para simular o comportamento de uma instância de publicação.
+>A variável `wcmmode` está definido como `disabled` para simular o comportamento de uma instância de publicação.
 
 O valor do dispositivo de substituição é armazenado em um cookie para que você possa navegar no site sem adicionar o `device` parâmetro para cada `URL`.
 
@@ -528,7 +528,7 @@ Como consequência, você precisa chamar o mesmo `URL` com o `device` definir co
 
 >[!NOTE]
 >
-BrowserMap armazena o valor do dispositivo de substituição em um cookie chamado `BMAP_device`. A exclusão desse cookie garante que o CQ fornecerá a versão apropriada do site de acordo com seu dispositivo atual (por exemplo, desktop ou celular).
+>BrowserMap armazena o valor do dispositivo de substituição em um cookie chamado `BMAP_device`. A exclusão desse cookie garante que o CQ fornecerá a versão apropriada do site de acordo com seu dispositivo atual (por exemplo, desktop ou celular).
 
 ## Processamento de solicitação móvel {#mobile-request-processing}
 
@@ -564,7 +564,7 @@ A variável **Estatísticas** tem a seguinte aparência:
 
 >[!NOTE]
 >
-A variável **Estatísticas** é criada na primeira vez que um dispositivo móvel acessa o AEM e é detectado. Antes disso, não está disponível.
+>A variável **Estatísticas** é criada na primeira vez que um dispositivo móvel acessa o AEM e é detectado. Antes disso, não está disponível.
 
 Se você precisar gerar uma entrada nas estatísticas, proceda da seguinte maneira:
 

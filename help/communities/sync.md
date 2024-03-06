@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '2471'
-ht-degree: 2%
+source-wordcount: '2403'
+ht-degree: 0%
 
 ---
 
@@ -267,7 +267,7 @@ Em cada instância de publicação do AEM:
 
    `system`
 
-   `rep:cache` (como usamos sessões adesivas, não precisamos sincronizar esse nó com editores diferentes).
+   `rep:cache` (como as sessões adesivas são usadas, não é necessário sincronizar esse nó com editores diferentes).
 
    ![user-sync-listner](assets/user-sync-listner.png)
 
@@ -275,7 +275,7 @@ Em cada instância de publicação do AEM:
 
 A instância do autor AEM usa a Sling ID para identificar de onde os dados estão vindo e para quais editores ela precisa (ou não) enviar o pacote de volta.
 
-Verifique se todos os editores em um farm de publicação têm uma ID do Sling exclusiva. Se a ID do Sling for a mesma para várias instâncias de publicação em um farm de publicação, a sincronização do usuário falhará. Como o autor não saberá de onde buscar o pacote e onde instalá-lo.
+Verifique se todos os editores em um farm de publicação têm uma ID do Sling exclusiva. Se a ID do Sling for a mesma para várias instâncias de publicação em um farm de publicação, a sincronização do usuário falhará. Como o autor não sabe de onde buscar o pacote e onde instalá-lo.
 
 Para garantir um Sling ID exclusivo de editores no farm de publicação, em cada instância de publicação:
 

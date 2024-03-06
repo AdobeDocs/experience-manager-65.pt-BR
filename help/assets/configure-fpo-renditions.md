@@ -6,9 +6,9 @@ role: Admin
 feature: Renditions
 exl-id: 1e4ddd73-a31c-4ddd-94eb-1dac6a4835b3
 hide: true
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1063'
 ht-degree: 1%
 
 ---
@@ -105,7 +105,7 @@ Para usar o fluxo de trabalho Experience Manager para gerar a representação FP
 
 1. Selecione o modelo e clique em **[!UICONTROL Editar]**. Clique em **[!UICONTROL Informações da página]** > **[!UICONTROL Abrir propriedades]** e selecione **[!UICONTROL Fluxo de trabalho transitório]**. Isso melhora a escalabilidade e o desempenho.
 
-1. Clique em ******[!UICONTROL Salvar e fechar]**.
+1. Clique em **[!UICONTROL Salvar]** e **[!UICONTROL Fechar]**.
 
 1. Clique em **[!UICONTROL Ativar/desativar painel lateral]** no canto superior esquerdo e procure pela etapa de miniatura do processo.
 

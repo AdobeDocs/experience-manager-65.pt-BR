@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
 source-wordcount: '1696'
 ht-degree: 2%
@@ -44,7 +44,7 @@ A personalização pode ser:
 
 #### Explícito {#explicit}
 
-* Personalização: permite que o usuário faça seleções a partir de uma seleção de fontes de conteúdo.
+* Personalização: o usuário faz seleções a partir de uma seleção de fontes de conteúdo.
 
 #### Implícito {#implicit}
 
@@ -161,7 +161,7 @@ Vários componentes são fornecidos com AEM para personalização. Alguns permit
 | URL principal do perfil | Permite a entrada de um URL. |
 | Propriedade de perfil de texto geral | Propriedades do perfil. |
 | Fazer logon | Permite enviar um nome de usuário e senha ao fazer login. |
-| Sair | Indica o usuário que está logado no momento e fornece um link para desconectar. |
+| Fazer logoff | Indica o usuário que está logado no momento e fornece um link para desconectar. |
 | Nuvem de tags | Uma nuvem de tags para mostrar uma seleção de tags apresentada graficamente em seu site |
 | Teaser | Um conteúdo (geralmente uma imagem) exibido em uma página principal para &quot;provocar&quot; os usuários para acessarem o conteúdo subjacente. |
 

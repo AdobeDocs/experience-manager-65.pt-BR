@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3089'
-ht-degree: 4%
+source-wordcount: '3084'
+ht-degree: 0%
 
 ---
 
@@ -186,7 +186,7 @@ Desmarcar para um *privado* site da comunidade. O padrão está marcado.
 Se a opção estiver desmarcada, somente os membros conectados poderão acessar o site.
 Desmarcar para um *privado* site da comunidade. O padrão está marcado.
 
-* **Ativar mensagens**
+* **Permitir mensagens**
 
   Se marcados, os membros poderão enviar mensagens entre si e para o grupo no site da comunidade.
 Se desmarcada, as mensagens não estão configuradas para a comunidade.
@@ -262,14 +262,14 @@ A configuração global para moderar conteúdo gerado pelo usuário (UGC) é con
 
 ![site-analytics](assets/site-analytics.png)
 
-* **Habilitar Analytics**
+* **Ativar o Analytics**
 
   Disponível somente quando o Adobe Analytics tiver sido [configurado](/help/communities/analytics.md) para recursos das Comunidades.
 O padrão está desmarcado. Quando marcado, um menu de seleção adicional é exibido:
 
 ![site-analytics-enable](assets/site-analytics-enable.png)
 
-* **Referências de estrutura da configuração da nuvem**
+* **Referência de estrutura da configuração da nuvem**
 
   No menu suspenso, selecione a estrutura de serviço do Analytics Cloud configurada para este site da comunidade.
   `Communities` é o exemplo de estrutura de [Configuração do Analytics para recursos das comunidades](/help/communities/analytics.md#aem-analytics-framework-configuration) documentação.
@@ -284,7 +284,7 @@ O padrão está desmarcado. Quando marcado, um menu de seleção adicional é ex
 
 ![permitir tradução automática](assets/allow-machine-translation.png)
 
-* **Habilitar a Tradução automática para os idiomas selecionados**
+* **Habilitar a Tradução Automática para os idiomas selecionados**
 
   Os idiomas habilitados para tradução automática assumem o padrão da configuração do sistema especificada pelo [configuração da integração de tradução](/help/communities/translate-ugc.md#translation-integration-configuration). Essas configurações padrão podem ser substituídas para este site, excluindo os padrões e/ou selecionando outros idiomas no menu suspenso.
 
@@ -302,7 +302,7 @@ O padrão está desmarcado. Quando marcado, um menu de seleção adicional é ex
 
 * **Selecione as opções de tradução para seu site da comunidade**
 
-   * **Traduzir a página inteira**
+   * **Traduzir página inteira**
 
      Se selecionado, todo o UGC em uma página será traduzido para o idioma base da página.
 
@@ -313,7 +313,7 @@ O padrão está desmarcado. Quando marcado, um menu de seleção adicional é ex
      Se selecionada, uma opção de tradução é exibida ao lado de cada postagem, permitindo que postagens individuais sejam traduzidas para o idioma base da página.
 O padrão é *selecionado*.
 
-* **Selecionar as opções de persistência**
+* **Selecionar opções de persistência**
 
    * **Traduzir as contribuições a pedido do usuário e continuar posteriormente**
 Se selecionado, o conteúdo não é traduzido até que uma solicitação seja feita. Depois de traduzida, a tradução é armazenada no repositório.

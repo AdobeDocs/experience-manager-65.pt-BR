@@ -7,9 +7,9 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
-source-git-commit: ea90b8a180426461b9c4a77d4eb91cf86081e9bc
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '2380'
+source-wordcount: '2372'
 ht-degree: 1%
 
 ---
@@ -18,12 +18,12 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=pt-BR) |
 | AEM 6.5 | Este artigo |
 
 <span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
-Embora cada formulário seja projetado para um propósito específico, há alguns segmentos comuns na maioria dos formulários, como o de fornecer detalhes pessoais, como nome e endereço, detalhes da família, detalhes de renda etc. Os desenvolvedores de formulários são necessários para criar esses segmentos comuns sempre que um novo formulário for criado.
+Embora cada formulário seja projetado para um propósito específico, há alguns segmentos comuns na maioria dos formulários, como o de fornecer detalhes pessoais, como nome e endereço, detalhes da família e detalhes de renda. Os desenvolvedores de formulários são necessários para criar esses segmentos comuns sempre que um novo formulário for criado.
 
 Os formulários adaptativos fornecem um mecanismo conveniente para criar formulários segmento curtir um painel ou uma grupo de campos apenas uma vez e reutilizá-los através de formulários adaptáveis. Esses segmentos reutilizáveis e independentes são chamados de Fragmentos de formulário adaptável.
 
@@ -43,7 +43,7 @@ Os formulários adaptativos fornecem um mecanismo conveniente para criar formul�
 
    >[!NOTE]
    >
-   >Certifique-se de especificar um nome exclusivo para o fragmento. Se já existir outro fragmento com o mesmo nome, o fragmento não será criado.
+   >Certifique-se de especificar um nome exclusivo para o fragmento. Se existir outro fragmento com o mesmo nome, o fragmento não será criado.
 
 1. Clique para abrir a **Modelo de formulário** e na guia **Selecionar de** selecione um dos seguintes modelos para o fragmento:
 
@@ -91,7 +91,7 @@ Além disso, se você selecionou um esquema XML ou modelo de formulário XDP com
    * **Nome**: Nome do fragmento. O valor padrão é o nome do elemento do painel. É um campo obrigatório.
      >[!NOTE]
      >
-     >Certifique-se de especificar um nome exclusivo para o fragmento. Se já existir outro fragmento com o mesmo nome, o fragmento não será criado.
+     >Certifique-se de especificar um nome exclusivo para o fragmento. Se existir outro fragmento com o mesmo nome, o fragmento não será criado.
 
    * **Título**: Título do fragmento. O valor padrão é o título do painel.
 
@@ -99,11 +99,11 @@ Além disso, se você selecionou um esquema XML ou modelo de formulário XDP com
 
    * **Tags**: marca os metadados do fragmento.
 
-   * **Caminho de destino**: Caminho do repositório onde o fragmento será salvo. Se você não especificar um caminho, um nó com o mesmo nome do fragmento será criado ao lado do nó que contém o formulário adaptável. O fragmento é salvo neste nó.
+   * **Caminho de destino**: Caminho do repositório onde o fragmento é salvo. Se você não especificar um caminho, um nó com o mesmo nome do fragmento será criado ao lado do nó que contém o formulário adaptável. O fragmento é salvo neste nó.
 
    * **Modelo de formulário**: Dependendo do modelo de formulário para o formulário adaptável, esse campo exibe a variável **Esquema XML**, **Modelo de formulário** ou **Nenhum**. É um campo não editável.
 
-   * **Raiz do modelo de fragmento**: aparece somente em formulários adaptáveis baseados em XSD. Especifica a raiz do modelo de fragmento. Você pode escolher **/** ou o tipo complexo XSD no menu suspenso. Observe que você só poderá reutilizar o fragmento em outro formulário adaptável se selecionar o tipo complexo como a raiz do modelo de fragmento.
+   * **Raiz do modelo de fragmento**: aparece somente em formulários adaptáveis baseados em XSD. Especifica a raiz do modelo de fragmento. Você pode escolher **/** ou o tipo complexo XSD no menu suspenso. Você só poderá reutilizar o fragmento em outro formulário adaptável se selecionar o tipo complexo como a raiz do modelo de fragmento.
 Se você escolher **/** como a raiz do modelo de fragmento, a árvore XSD completa da raiz fica visível na guia modelo de dados de formulário adaptável. Para uma raiz de modelo de fragmento de tipo complexo, somente os descendentes do tipo complexo selecionado ficam visíveis na guia modelo de dados de formulário adaptável. Se você criar um fragmento e escolher um tipo complexo como o **Raiz do modelo de fragmento**, você pode usá-lo sempre que esse tipo complexo for usado, no mesmo formulário ou em vários formulários.
 
    * **XSD Ref**: aparece somente em formulários adaptáveis baseados em XSD. Ela exibe a localização do esquema XML.
@@ -128,11 +128,11 @@ Se você escolher **/** como a raiz do modelo de fragmento, a árvore XSD comple
 
 Qualquer fragmento inserido nos formulários adaptáveis aparece como uma imagem de espaço reservado. O espaço reservado exibe títulos de até dez painéis secundários no fragmento. É possível configurar AEM Forms para mostrar o fragmento completo em vez da imagem de espaço reservado.
 
-Execute as etapas a seguir para mostrar fragmentos completos nos formulários:
+Execute as etapas a seguir para poder mostrar fragmentos completos nos formulários:
 
 1. Vá para AEM página de configuração do console da Web em https:[*host*]:[*porta*]/system/console/configMgr.
 
-1. Search e clique **[!UICONTROL em Adaptive Form e Interactive Communication Web Channel Configuration]** para abri-lo no modo de edição.
+1. Search e selecione **[!UICONTROL Formulário adaptável e Configuração do canal da Web de comunicação]** interativa para abri-lo no modo de edição.
 1. Desativar **[!UICONTROL Ativar espaço reservado no lugar do fragmento]** para mostrar fragmentos completos em vez da imagem de espaço reservado.
 
 ### Inserir um fragmento em um formulário adaptável {#insert-a-fragment-in-an-adaptive-form}
@@ -172,7 +172,7 @@ Você pode optar por incorporar um fragmento de formulário adaptável em um for
 
 ### Gerar documento de registro para fragmento de formulário adaptável {#generate-DOR-for-fragments}
 
-Documento de registro (DOR) ajuda a manter as informações dos formulários no formato de impressão ou documento. Dessa forma, você poderá rastrear as informações sobre seus clientes a qualquer momento posteriormente e também poderá usar o Documento de registro para arquivar formulários e conteúdo juntos no Formato PDF. [Saiba como gerar documentos de registro para fragmentos de formulário adaptável](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+Documento de registro (DOR) ajuda a manter as informações dos formulários no formato de impressão ou documento. Dessa forma, você poderá rastrear informações sobre seus clientes a qualquer momento posteriormente e também poderá usar o Documento de registro para arquivar formulários e conteúdo juntos no Formato PDF. [Saiba como gerar documentos de registro para fragmentos de formulário adaptável](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
 ### Uso de um fragmento de formulário várias vezes em um Formulário adaptável {#using-form-fragment-mutiple-times-in-af}
 
@@ -249,24 +249,24 @@ Ao criar um fragmento de formulário adaptável usando um modelo de formulário 
 
 ## Localização do formulário adaptável contendo fragmentos {#localizing-adaptive-form-containing-fragments}
 
-Para localizar um formulário adaptável que contenha fragmentos de formulário adaptáveis, é necessário localizar o fragmento e o formulário separadamente. A ideia é localizar um fragmento uma vez e reutilizá-lo em vários formulários adaptáveis.
+Para localizar um formulário adaptável que contenha fragmentos de formulário adaptáveis, você deve localizar o fragmento e o formulário separadamente. A ideia é localizar um fragmento uma vez e reutilizá-lo em vários formulários adaptáveis.
 
 >[!NOTE]
 >
->As chaves de localização no fragmento não aparecerão no arquivo XLIFF para um formulário adaptável.
+>As chaves de localização no fragmento não aparecem no arquivo XLIFF para um formulário adaptável.
 
 ## Pontos principais a serem lembrados ao trabalhar com fragmentos {#key-points-to-remember-when-working-with-fragments}
 
 * Certifique-se de que o nome do fragmento seja exclusivo. O fragmento não é criado se houver um fragmento existente com o mesmo nome.
 * Em um formulário adaptável baseado em XDP, se você salvar um painel como fragmento que inclui outro fragmento XDP, o fragmento resultante será vinculado automaticamente ao fragmento XDP secundário. Se houver um formulário adaptável baseado em XSD, o fragmento resultante será vinculado à raiz do esquema.
-* Ao criar um fragmento de formulário adaptável, um nó de fragmento é criado, o que é semelhante ao nó guideContainer de um formulário adaptável, no CRXDe Lite.
+* Ao criar um fragmento de formulário adaptável, um nó de fragmento é criado, o que é semelhante ao nó guideContainer de um formulário adaptável, no CRXDE Lite.
 * Um fragmento em um formulário adaptável que usa um modelo de dados de formulário diferente não é compatível. Por exemplo, um fragmento baseado em XDP não é compatível em um formulário adaptável baseado em XSD e vice-versa.
 * Os fragmentos de formulário adaptáveis estão disponíveis para uso por meio da guia Fragmentos de formulário adaptáveis no localizador de conteúdo de AEM.
 * Qualquer expressão, script ou estilo em um fragmento de formulário adaptável independente é retido quando inserido por referência ou incorporado em um formulário adaptável.
 * Não é possível editar um fragmento de formulário adaptável, que é inserido por referência, de dentro de um formulário adaptável. Para editar, edite o fragmento de formulário adaptável independente ou incorpore o fragmento no formulário adaptável.
 * Ao publicar um formulário adaptável, é necessário publicar os fragmentos de formulário adaptável independente inseridos pela referência no formulário adaptável.
 * Quando você republica um fragmento de formulário adaptável atualizado, as alterações refletem nas instâncias publicadas do formulário adaptável em que o fragmento é usado.
-* O formulário adaptável contendo o componente Verificar não é compatível com usuários anônimos. Além disso, não é repromendado para usar o componente Verificar em um fragmento de formulário adaptável.
+* O formulário adaptável contendo o componente Verificar não é compatível com usuários anônimos. Além disso, não é recomendável usar o componente Verificar em um fragmento de formulário adaptável.
 * (**Somente** Mac) Para garantir que os fragmentos de formulário funcionalidade funciona perfeitamente em todos os cenários, adicione a seguinte entrada ao arquivo /private/etc/hosts:
   `127.0.0.1 <Host machine>` **Máquina host**: a máquina do Apple Mac na qual o AEM Forms é implantado.
 

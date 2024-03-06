@@ -7,10 +7,10 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 2%
+source-wordcount: '690'
+ht-degree: 0%
 
 ---
 
@@ -26,8 +26,8 @@ A variável `categories` o valor da propriedade fornecido a esta biblioteca do c
 
 1. Clique com o botão direito do mouse `an-scf-sandbox` e selecione `Create Node`
 
-   * Nome : `clientlibs`
-   * Tipo : `cq:ClientLibraryFolder`
+   * Nome: `clientlibs`
+   * Tipo: `cq:ClientLibraryFolder`
 
 1. Clique em **OK**
 
@@ -81,8 +81,8 @@ Se estiver usando apenas um recurso em uma página, você pode incluir a clientl
 
 Nesse caso, incluindo todos eles e, portanto, os clientlibs SCF mais básicos que são os clientlibs do autor são preferidos:
 
-* Nome : **`embed`**
-* Tipo : **`String`**
+* Nome: **`embed`**
+* Tipo: **`String`**
 * Clique em **`Multi`**
 * Valor: **`cq.social.scf`**
 
@@ -123,7 +123,7 @@ A instrução include pertence a `head` seção do `html` script. O padrão **`f
 1. Usar **CRXDE Lite**, selecione **`/libs/foundation/components/page/headlibs.jsp`**
 
 1. Clique com o botão direito e selecione **Copiar** (ou selecione Copiar na barra de ferramentas)
-1. Selecione **`/apps/an-scf-sandbox/components/playpage`**
+1. Selecionar **`/apps/an-scf-sandbox/components/playpage`**
 1. Clique com o botão direito e selecione **Colar** (ou selecione Colar na barra de ferramentas)
 1. Clique duas vezes **`headlibs.jsp`** para que você possa abri-lo
 1. Acrescentar a seguinte linha ao final do arquivo
@@ -151,7 +151,7 @@ Carregue seu site no navegador e veja se o plano de fundo não é um tom de azul
 
 Neste ponto, existe uma sandbox minimalista. Pode valer a pena salvar como um pacote para que, durante a reprodução, se o repositório for corrompido e você desejar recomeçar, possa desativar o servidor. Em seguida, renomeie ou exclua a pasta crx-quickstart/, ative o servidor, carregue e instale este pacote salvo e não precise repetir as etapas mais básicas.
 
-Este pacote existe no [Criar uma página de exemplo](/help/communities/create-sample-page.md) tutorial para quem não pode esperar para saltar em e começar a jogar!...
+Este pacote existe no [Criar uma página de exemplo](/help/communities/create-sample-page.md) tutorial para aqueles que não podem esperar para começar a jogar.
 
 Para criar um pacote:
 

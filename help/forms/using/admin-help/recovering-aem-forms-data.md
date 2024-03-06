@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -112,7 +112,7 @@ Se o GDS for restaurado para um local diferente do local original, execute o scr
 
 >[!NOTE]
 >
->Se você habilitou o armazenamento de documentos no banco de dados, não é necessário alterar o local do GDS.
+>Se você tiver ativado o armazenamento de documentos no banco de dados, não será necessário alterar o local do GDS.
 
 >[!NOTE]
 >

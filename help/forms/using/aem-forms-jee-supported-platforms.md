@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 3fe9b3d4cf6ddf7d64dbece7d62d7f18dfa183f2
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4054'
+source-wordcount: '4057'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Este documento lista as plataformas de cliente e servidor compatíveis com o AEM
 
 #### Instalador completo
 
-- **Suporte de atualização para instaladores completos**: Um instalador completo é lançado com cada 6ª versão do Service Pack do AEM. Por exemplo, havia um instalador completo lançado com as versões 6.5.12.0 e 6.5.18.0 do SP. O AEM Forms permite atualizações diretas exclusivamente dos dois últimos instaladores completos. Por exemplo, o AEM Forms facilita atualizações diretas para a versão 6.5.18.0 somente dos dois últimos instaladores completos, ou seja, as versões 6.5.12.0 e 6.5.6.0. Se precisar fazer upgrade de um upgrade anterior, você pode usar um upgrade multi-hop para primeiro acessar uma versão completa do instalador com suporte e, em seguida, a versão mais recente.
+- **Suporte de atualização para instaladores completos**: Um instalador completo é lançado a cada sexta versão do Service Pack do AEM. Por exemplo, havia um instalador completo lançado com as versões 6.5.12.0 e 6.5.18.0 do SP. O AEM Forms permite atualizações diretas exclusivamente dos dois últimos instaladores completos. Por exemplo, o AEM Forms facilita atualizações diretas para a versão 6.5.18.0 somente dos dois últimos instaladores completos, ou seja, as versões 6.5.12.0 e 6.5.6.0. Se precisar fazer upgrade de um upgrade anterior, você pode usar um upgrade multi-hop para primeiro acessar uma versão completa do instalador com suporte e, em seguida, a versão mais recente.
 
 - **Substituição e remoção**: o suporte à plataforma é atualizado com cada versão completa do instalador. Qualquer software marcado como obsoleto na matriz de plataforma durante uma versão completa do instalador tem direito a ser removido da matriz de plataforma suportada em uma versão subsequente do instalador completo, indicando o fim do suporte para o software.
 
@@ -354,8 +354,8 @@ Considere as exceções a seguir ao escolher uma plataforma para configurar o AE
 
 1. O AEM Forms no JEE não é compatível com o IBM® WebSphere® com MySQL.
 1. O AEM Forms no JEE não é compatível com o JBoss® no SUSE® Linux® Enterprise Server 12. Somente o IBM® WebSphere® é suportado no SUSE® Linux® Enterprise Server 12.
-1. O AEM Forms no JEE não suporta nenhum JDK com JBoss® além do Oracle Java™ SE.
-1. O AEM Forms no JEE não suporta nenhum JDK com IBM® WebSphere® diferente do IBM® JDK.
+1. O AEM Forms no JEE não suporta qualquer JDK com JBoss® além do Oracle Java™ SE.
+1. O AEM Forms no JEE não suporta qualquer JDK com IBM® WebSphere® diferente do IBM® JDK.
 1. O repositório CRX oferece suporte à persistência do tipo TarMK, MongoDB e bancos de dados relacionais (RDBMK). Você não pode ter dois sistemas de banco de dados diferentes entre o servidor de aplicativos e o repositório CRX. No entanto, em um ambiente AEM Forms no JEE, é possível usar o MongoMK com repositório CRX e um banco de dados relacional compatível com o servidor de aplicativos.
 1. O AEM Forms no JEE não é compatível com o servidor de aplicativos WebSphere® no CentOS.
 1. O AEM Forms no JEE não suporta o controle de acesso baseado em função (RBAC) JBoss®.
@@ -375,7 +375,7 @@ Além disso, considere os seguintes pontos ao escolher o software para Adobe AEM
 - AEM Forms em plataformas de suporte JEE de acordo com o suporte fornecido por fornecedores terceirizados. Algumas combinações podem não ser permitidas por fornecedores de terceiros. Por exemplo, muitos fornecedores não certificaram seus servidores de aplicativos com o Oracle. Como resultado, o AEM Forms no JEE também não é compatível com essas combinações. Para garantir que você escolha as versões de software compatíveis, verifique também a matriz de suporte para outros fornecedores.
 - O AEM Forms no JEE não é compatível com TarMK Cold Standby.
 - O AEM Forms no JEE não é compatível com clustering vertical.
-- O AEM Forms no JEE não é compatível com o banco de dados MySQL em um ambiente clusterizado.
+- O AEM Forms no JEE não oferece suporte ao banco de dados MySQL em um ambiente clusterizado.
 - Para obter a lista de plataformas removidas ou atualizadas, consulte [Resumo dos novos recursos do AEM 6.5 Forms](../../forms/using/whats-new.md) documento.
 
 ### Servidores LDAP (opcional) {#ldap-servers-optional}

@@ -7,9 +7,9 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '6940'
+source-wordcount: '6944'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Embora seja possível obter a maioria dos casos de uso usando qualquer construç
 * Para acionar uma ação com base em várias condições, é recomendável usar a construção action-condition. Por exemplo, para mostrar e ocultar campo A avaliando as condições nos campos B, C e D, use Exibir ou Ocultar regra tipo no campo A.
 * Use a construção de condição-ação ou condição de ação se a regra contiver uma ação para uma condição.
 * Se uma regra verificar uma condição e executar uma ação imediatamente ao fornecer um valor em um campo ou ao sair de um campo, é recomendável gravar uma regra com construção de condição-ação ou o tipo de regra Quando no campo em que a condição é avaliada.
-* A condição na regra Quando é avaliada quando um usuário altera o valor do objeto no qual a regra Quando é aplicada. No entanto, se você quiser que a ação seja acionada quando o valor for alterado no lado do servidor, como no caso de preenchimento prévio do valor, é recomendável gravar uma regra When que aciona a ação quando o campo é inicializado.
+* A condição na regra Quando é avaliada quando um usuário altera o valor do objeto no qual a regra Quando é aplicada. No entanto, se você quiser que a ação seja acionada quando o valor for alterado no lado do servidor, como no preenchimento prévio do valor, é recomendável gravar uma regra When que aciona a ação quando o campo é inicializado.
 * Ao escrever regras para objetos de menus suspensos, botões de opção ou caixas de seleção, as opções ou os valores desses objetos de formulário no formulário são preenchidos previamente no editor de regras.
 
 ## Tipos de operadores e eventos disponíveis no editor de regras {#available-operator-types-and-events-in-rule-editor}
@@ -268,7 +268,7 @@ Uma regra típica de Ocultar está estruturada da seguinte maneira:
 
 
 
-### Habilitar {#enable}
+### Ativar {#enable}
 
 A variável **Ativar** o tipo de regra permite ativar ou desativar um objeto de formulário com base no fato de uma condição ser atendida ou não. O tipo de regra Ativar também aciona a ação Desativar caso a condição não seja atendida ou retornada `False`.
 
@@ -739,7 +739,7 @@ Você pode executar as seguintes ações nas regras:
 
 * **Expandir/Recolher**: A coluna Conteúdo na lista de regras exibe o conteúdo da regra. Se o conteúdo inteiro da regra não estiver visível na exibição padrão, selecione ![expand-rule-content](assets/expand-rule-content.png) para expandi-la.
 
-* **Reordenar**: qualquer nova regra criada é empilhada na parte inferior da lista de regras. As regras são executadas de cima para baixo. A regra na parte superior é executada primeiro, seguida por outras regras do mesmo tipo. Por exemplo, se você tiver as regras When, Show, Enable e When na primeira, segunda, terceira e quarta posições acima, respectivamente, a regra When na parte superior será executada primeiro, seguida pela regra When na quarta posição. Em seguida, as regras Show e Enable serão executadas.
+* **Reordenar**: qualquer nova regra criada é empilhada na parte inferior da lista de regras. As regras são executadas de cima para baixo. A regra na parte superior é executada primeiro, seguida por outras regras do mesmo tipo. Por exemplo, se você tiver regras When, Show, Enable e When na primeira, segunda, terceira e quarta posições a partir da parte superior, respectivamente, a regra When na parte superior será executada primeiro, seguida pela regra When na quarta posição. Em seguida, as regras Show e Enable serão executadas.
 É possível alterar a ordem de uma regra tocando ![sort-rules](assets/sort-rules.png) contra ele ou arraste-o e solte-o na ordem desejada na lista.
 
 * **Editar**: para editar uma regra, marque a caixa de seleção ao lado do título da regra. São exibidas opções adicionais para editar e excluir a regra. Selecionar **Editar** para abrir a regra selecionada no editor de regras no modo visual ou editor de códigos, dependendo do modo usado para criar a regra.

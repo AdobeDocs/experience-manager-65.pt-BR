@@ -2,10 +2,10 @@
 title: Projetos
 description: Os projetos permitem agrupar recursos em uma entidade cujo ambiente comum e compartilhado facilita o gerenciamento de projetos.
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 34%
+source-wordcount: '1360'
+ht-degree: 26%
 
 ---
 
@@ -78,7 +78,7 @@ Clique em **Criar** para adicionar um novo projeto.
 
 Os projetos são compostos de diferentes tipos de informações que você deseja gerenciar em conjunto. Essas informações são representadas por diferentes **Ladrilhos**.
 
-É possível ter os seguintes blocos associados ao seu projeto.
+Você pode ter os seguintes mosaicos associados ao seu projeto.
 
 * [Assets](#assets)
 * [Coleções de ativos](#asset-collections)
@@ -177,7 +177,7 @@ Você pode iniciar fluxos de trabalho para seu projeto. Se algum workflow estive
 
 Dependendo do projeto criado, há fluxos de trabalho diferentes disponíveis.
 
-Eles são descritas em [Trabalho com fluxos de trabalho de projeto.](/help/sites-authoring/projects-with-workflows.md)
+Elas são descritas em [Trabalhar com fluxos de trabalho de projeto.](/help/sites-authoring/projects-with-workflows.md)
 
 ### Lançamentos {#launches}
 
@@ -223,7 +223,7 @@ Para projetos criativos, também são fornecidas funções adicionais, como fot�
 
 Ao criar o projeto e adicionar usuários às várias funções, os grupos associados ao projeto são criados automaticamente para gerenciar as permissões associadas.
 
-Por exemplo, um projeto chamado Myproject teria três grupos: **Proprietários do Myproject**, **Editores do Myproject**, **Observadores do Myproject**.
+Por exemplo, um projeto chamado Myproject teria três grupos **Proprietários do Myproject**, **Editores do Myproject**, **Observadores do Myproject**.
 
 Se o projeto for excluído, esses grupos só serão excluídos se você selecionar a opção apropriada [ao excluir o projeto.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Um administrador também pode excluir manualmente os grupos em **Ferramentas** > **Segurança** > **Grupos**.
 

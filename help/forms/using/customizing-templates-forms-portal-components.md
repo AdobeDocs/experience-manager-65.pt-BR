@@ -7,9 +7,9 @@ topic-tags: customization
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1250'
+source-wordcount: '1246'
 ht-degree: 0%
 
 ---
@@ -82,19 +82,19 @@ Este é um exemplo de implementação de um modelo personalizado em que o Forms 
 
 Um modelo personalizado para qualquer componente do Forms Portal inclui entradas repetíveis e não repetíveis. As entradas repetíveis são entidades básicas para listagem. Exemplos de entradas repetíveis são Pesquisa e Listagem, Rascunhos e envios e Componentes de link.
 
-O Forms Portal fornece uma sintaxe para que os marcadores de posição exibam metadados personalizados/OOTB. Os espaços reservados são preenchidos após a exibição dos resultados de formulários, rascunhos ou envios.
+O Forms Portal fornece uma sintaxe para que os marcadores de posição exibam metadados personalizados/prontos para uso. Os espaços reservados são preenchidos após a exibição dos resultados de formulários, rascunhos ou envios.
 
 Para incluir uma entrada repetível, configure o valor do atributo **dados repetíveis** para **true**.
 
 *No exemplo discutido, dois elementos Div estão presentes na parte superior do modelo personalizado. O primeiro, com a classe CSS &quot;__FP_boxes-container&quot;, funciona como um elemento de contêiner para os formulários listados. O segundo, com a classe CSS &quot;__FP_boxes&quot;, é um modelo para as entidades básicas, neste caso um Formulário. A variável **dados repetíveis**o atributo presente no elemento Div tem o valor **true**.*
 
-Cada espaço reservado tem um conjunto exclusivo de metadados OOTB. Para exibir metadados personalizados em um local específico no formulário, adicione o **${metadata_prop} propriedade** no lugar.
+Cada espaço reservado tem um conjunto exclusivo de metadados prontos para uso. Para exibir metadados personalizados em um local específico no formulário, adicione o **${metadata_prop} propriedade** no lugar.
 
 *No exemplo, a propriedade de metadados é usada em várias instâncias. Por exemplo, é usado em **descrição**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**, e **caminho**do modo prescrito.*
 
 ## Metadados prontos para uso {#out-of-the-box-metadata}
 
-Vários componentes do Forms Portal fornecem conjuntos exclusivos de metadados OOTB que você pode usar para listagem.
+Vários componentes do Forms Portal fornecem conjuntos exclusivos de metadados prontos para uso que você pode usar para listagem.
 
 ### Componente de pesquisa e listagem {#search-amp-lister-component}
 
@@ -123,7 +123,7 @@ Por exemplo, para o cabeçalho &quot;Título&quot; na exibição de grade, o val
 
 1. **Uso das propriedades de configuração**: o componente de Pesquisa e Lister tem várias configurações que você pode usar na interface do usuário. Por exemplo, para exibir o texto de Dica de ferramenta do HTML salvo por meio da caixa de diálogo de edição, use o `${config-htmlLinkText}` atributo. **Da mesma forma, para o texto da dica de ferramenta PDF, use o** `${config-pdfLinkText}` atributo.
 
-### Vincular componente {#link-component}
+### Componente de link {#link-component}
 
 * **Título:** Título do formulário
 * **formUrl**: URL para renderizar o formulário como HTML
@@ -146,7 +146,7 @@ Por exemplo, para o cabeçalho &quot;Título&quot; na exibição de grade, o val
 * **Hoje**: Data de criação do rascunho ou envio em DD:MM:formato AAAA.
 * **TimeNow**: Hora de criação do rascunho ou envio em HH:MM:SS formato de 24 horas
 
-*Observação:*
+*Nota:*
 
 1. Para a opção de exclusão na seção Rascunhos, no componente Rascunhos e envios, nomeie a classe CSS &quot;__FP_deleteDraft&quot;. Além disso, inclua o atributo &quot;draftID&quot; com o valor **${draftID}**, que é a id de rascunho do rascunho correspondente.
 
@@ -169,7 +169,7 @@ Por exemplo, para o cabeçalho &quot;Título&quot; na exibição de grade, o val
 ## Dicas, truques e problemas conhecidos {#tips-tricks-and-known-issues}
 
 1. Não use aspas simples (&#39;) em nenhum modelo personalizado.
-1. Para metadados personalizados, armazene essa propriedade no **jcr:content/metadata** somente nó. Se você o armazenar em qualquer outro lugar, o Forms Portal não poderá exibir os metadados.
+1. Para metadados personalizados, armazene essa propriedade no **jcr:content/metadata** somente nó. Se você armazená-lo em qualquer outro lugar, o Forms Portal não poderá exibir os metadados.
 1. Certifique-se de que o nome de qualquer metadado personalizado ou metadado existente não inclua dois pontos ( : ). Caso isso ocorra, não será possível exibi-lo na interface do usuário do.
 1. **dados repetíveis** não tem significado para uma **Link** componente. A Adobe recomenda que você evite usar essa propriedade no modelo para um componente Link.
 

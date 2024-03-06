@@ -2,10 +2,10 @@
 title: Como atualizar seu conteúdo por meio das APIs do AEM Assets
 description: Nesta parte da jornada do desenvolvedor headless do AEM, saiba como usar a API REST para acessar e atualizar o conteúdo dos seus fragmentos de conteúdo.
 exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 86%
+source-wordcount: '1029'
+ht-degree: 85%
 
 ---
 
@@ -43,7 +43,7 @@ Então, por que é necessária outra API?
 
 A API HTTP do Assets permite **Ler** seu conteúdo, mas também permite **Criar**, **Atualizar** e **Excluir** conteúdo - ações que não são possíveis com a API do GraphQL.
 
-A API REST de ativos está disponível em cada instalação pronta para uso de versões recentes do Adobe Experience Manager 
+A API REST do Assets está disponível em cada instalação pronta para uso de uma versão recente do Adobe Experience Manager.
 
 ## API HTTP de ativos {#assets-http-api}
 
@@ -313,7 +313,7 @@ Agora que concluiu esta parte da jornada de desenvolvedores headless do AEM, voc
 * Have experience with sample code and know how the API works in practice.
 -->
 
-<!-- The "How to put it all together" page isn't going to be published until the first public release of the Headless SDK. Temporarily commenting out the reference below. -->
+<!-- The "How to put it all together" page is not going to be published until the first public release of the Headless SDK. Temporarily commenting out the reference below. -->
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 

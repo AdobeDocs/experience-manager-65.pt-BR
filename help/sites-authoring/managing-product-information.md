@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2887'
+source-wordcount: '2888'
 ht-degree: 2%
 
 ---
@@ -145,7 +145,7 @@ Execute as mesmas etapas para configurar as tarefas no **Fluxo de trabalho da se
 Esta seção descreve como integrar o gerenciamento de informações do produto ao seu projeto criativo.
 
 1. Navegue até um projeto de sessão fotográfica do produto e clique na guia **Adicionar trabalho** no ícone **Fluxos de trabalho** cartão.
-1. Selecione o **Sessão fotográfica do produto (integração com o Commerce)** cartão de workflow para iniciar o **Sessão fotográfica do produto (integração com o Commerce)** fluxo de trabalho. Se as informações do produto não estiverem disponíveis em `/etc/commerce`, selecione o **Sessão fotográfica do produto** e inicie o **Sessão fotográfica do produto** fluxo de trabalho.
+1. Selecione o **Sessão fotográfica do produto (integração com o Commerce)** cartão de workflow para iniciar o **Sessão fotográfica do produto (integração com o Commerce)** fluxo de trabalho. Se a informação sobre o produto não estiver disponível no `/etc/commerce`, selecione o **Sessão fotográfica do produto** e inicie o **Sessão fotográfica do produto** fluxo de trabalho.
 
    ![Assistente de fluxo de trabalho](assets/chlimage_1-140a.png)
 

@@ -7,9 +7,9 @@ topic-tags: Configuration
 docset: aem65
 role: Admin
 exl-id: 22926757-9cdb-4f8a-9bd9-16ddbc3f954a
-source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Adicionar configuração a seguir em `APACHE_HOME/conf/httpd.conf` arquivo de co
    <Location /content/xfaforms>
        <IfModule mod_deflate.c>
            SetOutputFilter DEFLATE
-           #Don't compress
+           #Do not compress
            SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
            SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|bz2|sit|rar)$ no-gzip dont-vary
            #Dealing with proxy servers
@@ -123,7 +123,7 @@ Adicionar configuração a seguir em `APACHE_HOME/conf/httpd.conf` arquivo de co
    <Location /content/forms/af>
        <IfModule mod_deflate.c>
            SetOutputFilter DEFLATE
-           #Don't compress
+           #Do not compress
            SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
            SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|bz2|sit|rar)$ no-gzip dont-vary
            #Dealing with proxy servers
@@ -167,7 +167,7 @@ Para melhorar o desempenho, você pode direcionar o software antivírus para exc
 
 >[!NOTE]
 >
-* Se você estiver usando um local diferente para GDS e diretório temporário, abra a interface do usuário do administrador em `https://'[server]:[port]'/adminui`, navegue até **Início > Configurações > Configurações do sistema principal > Configurações principais** para confirmar o local em uso.
+>* Se você estiver usando um local diferente para GDS e diretório temporário, abra a interface do usuário do administrador em `https://'[server]:[port]'/adminui`, navegue até **Início > Configurações > Configurações do sistema principal > Configurações principais** para confirmar o local em uso.
 >
 * Se o servidor do AEM Forms funcionar lentamente mesmo após a exclusão dos diretórios sugeridos, exclua também o arquivo executável Java™ (java.exe).
 >

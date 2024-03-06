@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3227'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ As seguintes propriedades estão disponíveis para muitos componentes de etapa d
 
 * **Notificar usuário por e-mail**
 
-   * Você pode notificar os participantes enviando um email quando o fluxo de trabalho atingir a etapa.
+   * Notifique os participantes enviando um email quando o fluxo de trabalho atingir a etapa.
    * Se ativado, um email é enviado para o usuário definido pela propriedade **Usuário/Grupo**, ou para cada membro do grupo, se um grupo estiver definido.
 
 * **Usuário/Grupo**
@@ -106,7 +106,7 @@ Esse contêiner pode permitir que você reutilize modelos de fluxo de trabalho p
 
 Para configurar a etapa, edite e use as seguintes guias:
 
-* [Comum](#step-properties-common-tab)
+* [Valores comuns de](#step-properties-common-tab)
 * **Container**
 
    * **Sub-fluxo de trabalho**: selecione o workflow a ser iniciado.
@@ -124,7 +124,7 @@ A variável **Etapa Ir para** permite implementar estruturas avançadas de rotea
 
 Para configurar a etapa, edite e use as seguintes guias:
 
-* [Comum](#step-properties-common-tab)
+* [Valores comuns de](#step-properties-common-tab)
 * **Processo**
 
    * **Etapa do Target**: selecione a etapa a ser executada após avaliar a condição da expressão de roteamento.
@@ -235,7 +235,7 @@ Embora não esteja diretamente relacionada, a autorização do usuário deve ser
 
 Para configurar a etapa, edite e use as seguintes guias:
 
-* [Comum](#step-properties-common-tab)
+* [Valores comuns de](#step-properties-common-tab)
 * [Usuário/Grupo](#step-properties-user-group-tab)
 
 >[!NOTE]
@@ -262,7 +262,7 @@ Para configurar a etapa, especifique o grupo ou usuário ao qual atribuir o item
 
 Para configurar a etapa, edite e use as seguintes guias:
 
-* [Comum](#step-properties-common-tab)
+* [Valores comuns de](#step-properties-common-tab)
 * [Usuário/Grupo](#step-properties-user-group-tab)
 * **Caixa de diálogo**
 
@@ -379,7 +379,7 @@ Para configurar a etapa, selecione um **Seletor de participantes** que identific
 
 Para configurar a etapa, edite e use as seguintes guias:
 
-* [Comum](#step-properties-common-tab)
+* [Valores comuns de](#step-properties-common-tab)
 * **Seletor de participantes**
 
    * **Seletor de participantes**: O nome do [seletor de participantes que você cria](#developingtheparticipantchooser).
@@ -507,7 +507,7 @@ Para configurar a etapa, especifique o grupo ou usuário ao qual atribuir o item
 
 Para configurar a etapa, edite e use as seguintes guias:
 
-* [Comum](#step-properties-common-tab)
+* [Valores comuns de](#step-properties-common-tab)
 * [Usuário/Grupo](#step-properties-user-group-tab)
 * **Formulário**
 
@@ -547,7 +547,7 @@ A variável **Seletor de participante aleatório** etapa é um seletor de partic
 
 Para configurar a etapa, edite e use as seguintes guias:
 
-* [Comum](#step-properties-common-tab)
+* [Valores comuns de](#step-properties-common-tab)
 * **Argumentos**
 
    * **Participantes**: especifica a lista de usuários disponíveis para seleção. Para adicionar um usuário à lista, clique em **Adicionar item** e digite o caminho inicial do nó do usuário ou a ID do usuário. A ordem dos usuários não afeta a probabilidade de receber um item de trabalho.
@@ -561,7 +561,7 @@ A variável **Seletor do participante iniciador do fluxo de trabalho** a etapa �
 
 Para configurar a etapa, edite usando as seguintes guias:
 
-* [Comum](#step-properties-common-tab)
+* [Valores comuns de](#step-properties-common-tab)
 
 ## Etapa do processo {#process-step}
 
@@ -573,7 +573,7 @@ A **Etapa do processo** O executa um ECMAScript ou chama um serviço OSGi para e
 
 Para configurar a etapa, edite e use as seguintes guias:
 
-* [Comum](#step-properties-common-tab)
+* [Valores comuns de](#step-properties-common-tab)
 * **Processo**
 
    * **Processo**: a implementação do processo a ser executada. Use o menu suspenso para selecionar o serviço ECMAScript ou OSGi. Para obter informações sobre:
@@ -595,7 +595,7 @@ A etapa Definir variável permite definir o valor de uma variável e a ordem na 
 
 Para configurar a etapa, edite e use as seguintes guias:
 
-* [Comum](/help/sites-developing/workflows-step-ref.md#step-properties-common-tab)
+* [Valores comuns de](/help/sites-developing/workflows-step-ref.md#step-properties-common-tab)
 * **Mapeamento**
 
    * **Selecionar variável:** Use essa opção para selecionar uma variável e definir seu valor.

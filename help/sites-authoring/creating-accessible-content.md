@@ -2,10 +2,10 @@
 title: Criação de conteúdo acessível para o Adobe Experience Manager (Conformidade com o WCAG 2.1)
 description: Usar o AEM para ajudar a tornar o conteúdo da Web acessível e utilizável por pessoas com deficiência
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '13806'
-ht-degree: 84%
+source-wordcount: '13636'
+ht-degree: 83%
 
 ---
 
@@ -96,7 +96,7 @@ Tipos específicos de conteúdo não textual que necessitam de alternativas em t
 
 * Fotos ilustrativas: são imagens de pessoas, objetos ou lugares. É importante pensar na função da foto na página e descrever o conteúdo da imagem, já que a tecnologia de assistência anunciará o tipo de elemento (por exemplo, `graphic` ou `image`); pode aumentar a clareza usar `screenshot` ou `illustration` nas descrições de texto alternativo, mas isso depende do contexto. A consistência é um fator importante. Uma decisão deve ser tomada pela equipe de criação, e isso deve ser aplicado à inteira experiência do usuário.
 * Ícones: são pequenos pictogramas (gráficos) que transmitem informações específicas. Eles devem ser usados de forma consistente em uma página e um site. Todas as instâncias do ícone em uma página ou um site devem ter a mesma alternativa em texto curta e sucinta, a menos que isso resulte em duplicação desnecessária do texto adjacente.
-* Tabelas e gráficos: geralmente representam dados numéricos. Dessa forma, uma opção para fornecer uma alternativa em texto pode ser incluir um breve resumo das principais tendências indicadas na tabela ou gráfico. Se necessário, também forneça uma descrição de texto mais detalhada usando o campo **Descrição** na guia **Avançada** das propriedades de imagem. Além disso, é possível fornecer os dados de origem em forma de tabela em outro lugar da página ou site.
+* Tabelas e gráficos: geralmente representam dados numéricos. Portanto, uma opção para fornecer uma alternativa em texto pode ser incluir um breve resumo das principais tendências mostradas no gráfico. Se necessário, forneça também uma descrição mais detalhada no texto usando o **Descrição** no campo **Avançado** guia de propriedades da imagem. Além disso, é possível fornecer os dados de origem em forma de tabela em outro lugar da página ou site.
 * Mapas, diagramas, fluxogramas: para gráficos que fornecem dados espaciais (por exemplo, para permitir a descrição das relações entre objetos ou um processo), verifique se a mensagem principal é fornecida em formato de texto e se essa informação sobre o texto está posicionada perto de cada ponto de dados associado. Para mapas, fornecer um equivalente de texto completo provavelmente não será prático, mas se o mapa for fornecido como uma maneira de ajudar as pessoas a encontrar o caminho para um determinado local, o texto alternativo da imagem do mapa poderá indicar brevemente a informação *Mapa de X* e, em seguida, fornecer instruções para acessar esse local no texto de outro lugar da página ou por meio do campo **Descrição** na guia **Avançado** do componente **Imagem**.
 * CAPTCHAs: Um CAPTCHA é um *Teste de Turing público completamente automatizado para diferenciação entre computadores e humanos*. É uma verificação de segurança usada em páginas da Web para distinguir os humanos de softwares mal-intencionados, mas que pode causar barreiras de acessibilidade. São imagens que exigem que os usuários descrevam o que eles veem para passar em um teste de segurança. Fornecer uma alternativa em texto para a imagem não é possível. Em vez disso, considere usar soluções não gráficas alternativas. O W3C fornece algumas sugestões, como:
    * Enigmas de lógica
@@ -147,7 +147,7 @@ Fornecer essas informações em um formato diferente, como texto (ou áudio para
 #### Como cumprir - Apenas áudio e apenas vídeo (pré-gravado) (1.2.1) {#how-to-meet-audio-only-and-video-only-prerecorded}
 
 * Se o conteúdo for um áudio pré-gravado sem vídeo (como um podcast):
-   * Forneça um link imediatamente antes ou depois do conteúdo para obter uma transcrição do texto do conteúdo de áudio. A transcrição deve ser uma página de HTML com um equivalente em texto de todo o conteúdo falado e não-falado importante, além de uma indicação de quem está falando, uma descrição do cenário, expressões vocais e uma descrição de qualquer outro áudio significativo.
+   * Forneça um link imediatamente antes ou depois do conteúdo para obter uma transcrição do texto do conteúdo de áudio. A transcrição deve ser uma página HTML com uma versão em texto equivalente de todo o conteúdo falado, bem como de um conteúdo não falado que seja importante, além de incluir uma indicação de quem está falando, uma descrição do cenário, expressões vocais e uma descrição de qualquer outro áudio relevante.
 * Se o conteúdo for uma animação ou vídeo pré-gravado sem áudio:
    * Forneça um link imediatamente antes ou depois do conteúdo para uma descrição de texto equivalente das informações fornecidas no vídeo
    * Ou uma descrição de áudio equivalente em um formato de áudio usado com frequência, como MP3.
@@ -331,7 +331,7 @@ O AEM facilita a criação de um conteúdo da web semanticamente significativo u
 
   >[!NOTE]
   >
-  >Por padrão, esses elementos e atributos não estão diretamente disponíveis, embora o administrador do sistema possa adicionar o suporte para esses valores na caixa de diálogo **Propriedades da tabela** (consulte [Adicionar suporte para outros elementos e atributos de HTML](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes).
+  >Por padrão, esses elementos e atributos não estão diretamente disponíveis, embora o administrador do sistema possa adicionar o suporte para esses valores no **Propriedades da tabela** (consulte [Adição de suporte para elementos e atributos de HTML adicionais](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes).
 
   Para abrir a caixa de diálogo **Tabela** onde é possível selecionar a guia **Propriedades da tabela**:
 
@@ -838,7 +838,7 @@ Acima de tudo, verifique se a finalidade de um link está claramente descrita no
    * Texto: aulas à noite para o segundo trimestre de 2010 - mais informações.
    * Motivo: ajustando ligeiramente o texto e a posição do elemento de link, o texto do link pode ser melhorado:
 
-Os links devem ser redigidos de forma consistente ao longo das páginas, principalmente em barras de navegação. Por exemplo, se um link para uma página específica for chamado de **Publicações** em uma página, use esse termo nas outras páginas para garantir a consistência.
+Os links devem ser redigidos de forma consistente ao longo das páginas, especialmente em barras de navegação. Por exemplo, se um link para uma página específica for nomeado como **Publicações** em uma página, use esse texto em outras páginas para garantir a consistência.
 
 No momento da escrita, há algumas questões relacionadas ao uso de atributos de título para garantir que links semelhantes apresentados em uma página forneçam informações exclusivas sobre o destino (por exemplo, “leia mais” geralmente se refere a vários destinos diferentes):
 
@@ -848,7 +848,7 @@ No momento da escrita, há algumas questões relacionadas ao uso de atributos de
 
 Portanto, embora o atributo de título possa ser usado para fornecer contexto adicional a um link, esteja ciente de suas limitações e não o use como alternativa para um texto de link apropriado.
 
-Sempre que um link for constituído por uma imagem, certifique-se de que o texto alternativo da imagem descreva o destino do link. Por exemplo, se uma imagem de uma estante de livros for definida como um link para as publicações de uma pessoa, o texto alternativo deverá informar **Publicações de John Smith**, e não **Estante de livros**.
+Quando o link for composto de uma imagem, verifique se o texto alternativo para a imagem descreve o destino do link. Por exemplo, se uma imagem de uma estante de livros for definida como um link para as publicações de uma pessoa, o texto alternativo deverá informar **Publicações de John Smith** e não **Estante**.
 
 De maneira alternativa, se a âncora do link contiver um texto que descreva a finalidade do link, além do elemento de imagem (e, portanto, o texto apareça junto com a imagem), use um atributo alternativo vazio para a imagem:
 
@@ -1255,7 +1255,7 @@ O propósito deste Critério de sucesso é ajudar os usuários portadores de def
 
 Os usuários portadores de deficiências podem ter mais probabilidade de cometer erros. As pessoas com deficiências de leitura podem transpor números e letras, e aquelas com deficiências motoras podem apertar as teclas por engano. Fornecer a capacidade de reverter ações permite que os usuários corrijam um erro que pode resultar em consequências graves. Fornecer a capacidade de revisar e corrigir informações dá ao usuário a oportunidade de detectar um erro antes de tomar uma ação que tenha consequências graves.
 
-Os dados controláveis pelo usuário são dados visualizáveis pelo usuário que ele pode alterar e/ou excluir por meio de uma ação intencional. Os exemplos de usuários que controlam esses dados seriam a atualização do número de telefone e do endereço da conta do usuário ou a exclusão de um registro de faturas anteriores de um site. Eles não se referem a coisas como registros da Internet e dados de monitoramento de mecanismos de busca com os quais o usuário não pode visualizar ou interagir diretamente.
+Os dados controláveis pelo usuário são dados visualizáveis pelo usuário que ele pode alterar e/ou excluir por meio de uma ação intencional. Os exemplos de usuários que controlam esses dados seriam a atualização do número de telefone e do endereço da conta do usuário ou a exclusão de um registro de faturas anteriores de um site. Ele não se refere a coisas como registros da Internet e dados de monitoramento de mecanismo de pesquisa com os quais o usuário não pode visualizar ou interagir diretamente.
 
 #### Como cumprir - Prevenção de erros (legal, financeiro, dados) (3.3.4) {#how-to-meet-error-prevention-legal-financial-data}
 

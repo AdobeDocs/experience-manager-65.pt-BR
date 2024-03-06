@@ -5,9 +5,9 @@ topic-tags: introduction
 docset: aem65
 feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '913'
 ht-degree: 6%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 6%
 
 Você está procurando um **experiência de formulários** que simplifica a inscrição, aumenta o engajamento e reduz o tempo de retorno, **formulários adaptáveis** O é o ajuste perfeito para você. Os formulários adaptáveis fornecem uma experiência em formulários móveis, de automação e compatíveis com a análise. Você pode criar facilmente formulários responsivos e interativos por natureza, usar processos automatizados para reduzir tarefas administrativas e repetitivas e usar a análise de dados para melhorar e personalizar a experiência que os clientes têm com seus formulários.
 
-Este tutorial fornece uma estrutura completa para criar um formulário adaptável. O tutorial é organizado em um caso de uso e em vários guias. Cada guia ajuda você a conhecer e adicionar novos recursos ao formulário adaptável criado neste tutorial. Você tem um formulário adaptável de trabalho depois de cada guia. O guia para criar um formulário adaptável está disponível. Os guias subsequentes estarão disponíveis em breve. Ao final deste tutorial, você será capaz de:
+Este tutorial fornece uma estrutura completa para criar um formulário adaptável. O tutorial é organizado em um caso de uso e em vários guias. Cada guia ajuda você a conhecer e adicionar novos recursos ao formulário adaptável criado neste tutorial. Você tem um formulário adaptável de trabalho depois de cada guia. O guia para criar um formulário adaptável está disponível. Guias subsequentes serão lançados em breve. No final deste tutorial, você poderá fazer o seguinte:
 
 * Crie um formulário adaptável e um modelo de dados de formulário.
 * Estilize o formulário adaptável.
@@ -43,7 +43,7 @@ O site é executado no Adobe Experience Manager (AEM) e usa AEM [!DNL Forms] par
 
 ### Pré-requisitos {#prerequisite}
 
-* Configurar um [Instância de autor AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html#author-and-publish-installs)
+* Configurar um [Instância de autor AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
 * Instalar [Complemento do AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) na instância do autor.
 * Obter o driver de banco de dados JDBC (arquivo JAR) do provedor de banco de dados. Os exemplos no tutorial são baseados em [!DNL MySQL] banco de dados e uso [!DNL Oracle's] [Driver de banco de dados JDBC MySQL](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
@@ -59,10 +59,10 @@ Os formulários adaptáveis são de nova geração, envolventes, responsivos, di
 
 Metas:
 
-* Criar um formulário adaptável que permita ao cliente adicionar um endereço de entrega
-* Campos de layout de um formulário adaptável para exibir e aceitar informações de um cliente
-* Criar ação de envio para enviar um email com conteúdo de formulário
-* Pré-visualizar e enviar um formulário adaptável
+* Crie um formulário adaptável que permita a um cliente adicionar um endereço de entrega.
+* Campos de layout de um formulário adaptável para exibir e aceitar informações de um cliente.
+* Crie uma ação de envio para enviar um email com conteúdo de formulário.
+* Pré-visualize e envie um formulário adaptável.
 
 [![Consulte o guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-adaptive-form.md)
 
@@ -74,11 +74,11 @@ Um modelo de dados de formulário permite conectar um formulário adaptável a f
 
 Metas:
 
-* Configurar a instância do banco de dados do site ([!DNL MySQL] banco de dados) como fontes de dados
-* Crie o modelo de dados de formulário usando [!DNL MySQL] banco de dados como fonte de dados
-* Adicionar objetos de modelo de dados ao modelo de dados de formulário
-* Configurar serviços de leitura e gravação para o modelo de dados de formulário
-* Testar o modelo de dados do formulário e os serviços configurados com dados de teste
+* Configurar a instância do banco de dados do site ([!DNL MySQL] banco de dados) como uma fonte de dados.
+* Crie o modelo de dados de formulário usando [!DNL MySQL] como uma fonte de dados.
+* Adicione objetos de modelo de dados para poder formar o modelo de dados.
+* Configure os serviços de leitura e gravação para o modelo de dados de formulário.
+* Testar o modelo de dados do formulário e os serviços configurados com dados de teste.
 
 [![Consulte o guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-form-data-model.md)
 
@@ -86,12 +86,12 @@ Metas:
 
 ![07-aplicar-regras-ao-formulário-adaptável_pequeno](assets/07-apply-rules-to-adaptive-form_small.png)
 
-Os formulários adaptáveis fornecem um editor para gravar regras em objetos de formulário adaptáveis. Essas regras definem as ações a serem acionadas nos objetos de formulário com base nas condições predefinidas, entradas do usuário e ações do usuário no formulário. Ele ajuda a garantir a precisão e acelera a experiência de preenchimento de formulários.
+Os formulários adaptáveis fornecem um editor para gravar regras em objetos de formulário adaptáveis. Essas regras definem as ações a serem acionadas nos objetos de formulário com base nas condições predefinidas, entradas do usuário e ações do usuário no formulário. Isso ajuda a garantir a precisão e acelera a experiência de preenchimento de formulários.
 
 Metas:
 
-* Criar e aplicar regras a campos de formulário adaptáveis
-* Usar regras para acionar serviços de modelo de dados de formulário para atualizar dados para o banco de dados
+* Crie e aplique regras a campos de formulário adaptáveis.
+* Use regras para acionar serviços de modelo de dados de formulário para atualizar os dados para o banco de dados.
 
 [![Consulte o guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
@@ -103,9 +103,9 @@ Os formulários adaptáveis fornecem temas e uma [editor](../../forms/using/them
 
 Metas:
 
-* Aplicar um tema pronto para uso a um formulário adaptável
-* Criar um tema para formulário adaptável usando o editor de temas
-* Usar fontes da Web em um tema personalizado
+* Aplique um tema pronto para uso a um formulário adaptável.
+* Crie um tema para formulário adaptável usando o editor de temas.
+* Use Web Fonts em um tema personalizado.
 
 [![Consulte o guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
@@ -117,8 +117,8 @@ Metas:
 
 Metas:
 
-* Publicar o formulário adaptável como uma página AEM
-* Incorporar o formulário adaptável em um AEM [!DNL Sites] Página
-* Incorpore o formulário adaptável em uma página externa da Web (uma página da Web não AEM hospedada fora do AEM)
+* Publique o formulário adaptável como uma página AEM.
+* Incorporar o formulário adaptável em um AEM [!DNL Sites] Página.
+* Incorpore o formulário adaptável em uma página da Web externa (uma página da Web não AEM hospedada fora do AEM).
 
 [![Consulte o guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)

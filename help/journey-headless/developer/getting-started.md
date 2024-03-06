@@ -2,9 +2,9 @@
 title: Introdução ao AEM Headless
 description: Nesta parte da Jornada do desenvolvedor headless do AEM, saiba mais sobre pré-requisitos do AEM headless.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2998'
+source-wordcount: '2999'
 ht-degree: 91%
 
 ---
@@ -206,7 +206,7 @@ Os nomes dos Fragmentos de conteúdo devem ser descritivos para os autores de co
 
 Consulte a seção [recursos adicionais](#additional-resources) para obter documentação adicional sobre convenções de nomenclatura da página do AEM.
 
-##### Não estenda o aninhamento de conteúdo {#content-nesting}
+##### Não estender o aninhamento de conteúdo em excesso {#content-nesting}
 
 [Fragmentos de conteúdo](#content-fragments) são usados no AEM para criar conteúdo headless. O AEM aceita até dez níveis de aninhamento de conteúdo para Fragmentos de conteúdo. No entanto, é importante ter em mente que o AEM deve resolver iterativamente cada referência definida no Fragmento de conteúdo principal e verificar se há referências filho em todos os irmãos. Essas operações podem aumentar rapidamente e se tornar uma preocupação de desempenho.
 
@@ -258,7 +258,7 @@ Para entender tráfego e os padrões de tráfego, comece reunindo o que você sa
 Frequentemente, diferentes seções de experiências têm frequências diferentes de atualizações de conteúdo. Entender isso é importante para poder ajustar as configurações de CDN e cache. Isso também é importante para o [Arquitetos de conteúdo](#content-architects) conforme criam modelos para representar seu conteúdo. Considere:
 
 * Alguns tipos de conteúdo devem expirar após um determinado período?
-* Há elementos que são específicos do usuário e, portanto, não podem ser armazenados em cache?
+* Existem elementos específicos do usuário e, portanto, não podem ser armazenados em cache?
 
 ## O que vem a seguir {#what-is-next}
 

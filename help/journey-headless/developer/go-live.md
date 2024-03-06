@@ -2,7 +2,7 @@
 title: Como executar o aplicativo headless
 description: Nesta parte da Jornada de desenvolvedores sem periféricos do AEM, saiba como implantar um aplicativo sem periféricos em tempo real.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 51%
@@ -149,7 +149,7 @@ Se você for um cliente do AMS usando o Cloud Manager, depois de verificar se tu
 
 Depois que as atualizações forem carregadas no Cloud Manager, implante-as no AEM usando [Pipeline de CI/CD do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html).
 
-<!-- Can't find a parallel link -->
+<!-- Cannot find a parallel link -->
 <!--
 You can start deploying your code by using the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
 -->

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 65b2029e-03c9-4df4-8579-2b15dbee1035
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '617'
 ht-degree: 0%
 
 ---
@@ -64,4 +64,4 @@ O Menino Scout tem uma regra: &quot;Deixe-o melhor do que você encontrou.&quot;
 
 ### Evitar a implementação de recursos YAGNI {#avoid-implementing-yagni-features}
 
-Os recursos do YAGNI (You Are&#39;t Gonna Need It) são itens que são implementados quando esperamos que precisemos de algo no futuro, mesmo que não precisemos disso agora. Idealmente, devemos implementar a coisa mais simples que funcionará hoje e usar a refatoração contínua para garantir que a arquitetura do sistema evolua com os requisitos ao longo do tempo. Isso nos permite focar no que é importante e evitar o aumento excessivo de código e a deformação de recursos.
+Os recursos do YAGNI (You Are Not Gonna Need It) são itens que são implementados quando esperamos que precisemos de algo no futuro, mesmo que não precisemos disso agora. Idealmente, devemos implementar a coisa mais simples que funcionará hoje e usar a refatoração contínua para garantir que a arquitetura do sistema evolua com os requisitos ao longo do tempo. Isso nos permite focar no que é importante e evitar o aumento excessivo de código e a deformação de recursos.

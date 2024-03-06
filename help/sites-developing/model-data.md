@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1775'
 ht-degree: 0%
@@ -164,7 +164,7 @@ Vamos supor que eu permita &quot;referências&quot; de um documento (a) para out
 
 Portanto, eu modelaria essas referências como &quot;referências fracas&quot; (no JCR v1.0, isso essencialmente se resume a propriedades de string que contêm o uuid do nó de destino) ou simplesmente usaria um caminho. Às vezes, o caminho é mais significativo para começar.
 
-Eu acho que há casos de uso em que um sistema realmente não pode funcionar se uma referência está pendente, mas eu simplesmente não posso chegar a um bom &quot;real&quot;, mas simples exemplo da minha experiência direta.
+Eu acho que há casos de uso em que um sistema realmente não pode funcionar se uma referência é pendente, mas eu simplesmente não posso vir com um bom &quot;real&quot;, mas exemplo simples da minha experiência direta.
 
 ### Regra #6: Arquivos são arquivos. {#rule-files-are-files}
 
@@ -214,7 +214,7 @@ Portanto, apenas porque você gostaria de poder fazer referência a um nó do ti
 
 #### Exemplo {#example-7}
 
-Utilização:
+Uso:
 
 ```xml
 /content/myblog/posts/iphone_shipping/attachments/front.jpg

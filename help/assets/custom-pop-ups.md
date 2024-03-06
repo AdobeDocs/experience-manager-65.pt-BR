@@ -1,6 +1,6 @@
 ---
 title: Criar pop-ups personalizados usando o Quickview
-description: O Quickview padrão é usado em experiências de comércio eletrônico, nas quais um pop-up é exibido com as informações do produto para impulsionar uma compra. Você pode acionar a exibição do conteúdo personalizado nos pop-ups.
+description: O Quickview padrão é usado em experiências de comércio eletrônico pelas quais um pop-up é exibido com as informações do produto para impulsionar uma compra. Você pode acionar a exibição do conteúdo personalizado nos pop-ups.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -8,16 +8,16 @@ content-type: reference
 feature: Viewers
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '932'
 ht-degree: 2%
 
 ---
 
 # Criar pop-ups personalizados usando o Quickview {#using-quickviews-to-create-custom-pop-ups}
 
-O Quickview padrão é usado em experiências de comércio eletrônico, nas quais um pop-up é exibido com as informações do produto para impulsionar uma compra. No entanto, é possível acionar a exibição do conteúdo personalizado nas janelas pop-up. Dependendo do visualizador, essa funcionalidade permite que os usuários selecionem em um ponto de acesso, uma imagem em miniatura ou um mapa de imagem para ver informações ou conteúdo relacionado.
+O Quickview padrão é usado em experiências de comércio eletrônico pelas quais um pop-up é exibido com as informações do produto para impulsionar uma compra. No entanto, é possível acionar a exibição do conteúdo personalizado nas janelas pop-up. Dependendo do visualizador, essa funcionalidade permite que os usuários selecionem em um ponto de acesso, uma imagem em miniatura ou um mapa de imagem para ver informações ou conteúdo relacionado.
 
 A exibição rápida é compatível com os seguintes visualizadores no Dynamic Media:
 
@@ -163,7 +163,7 @@ O manipulador também requer uma chamada de função para que o Quickview funcio
      Com as variáveis do Quickview mapeadas e a chamada de função estabelecida, o console do navegador grava o valor da variável no console do navegador usando a função de exemplo fornecida.
 
 1. Agora você pode usar uma função para chamar um pop-up simples no Quickview. O exemplo a seguir usa um `DIV` para um pop-up.
-1. Estilo do pop-up `DIV` da seguinte forma. Adicione seu próprio estilo adicional, conforme desejado.
+1. Estilo do pop-up `DIV` da seguinte forma. Adicione seus próprios estilos adicionais conforme desejado.
 
    ```xml
    <style type="text/css">

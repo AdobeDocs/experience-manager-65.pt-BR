@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 52%
@@ -30,7 +30,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
 |  | `Ctrl-y` | [Refazer a última alteração](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Selecionar parágrafos múltiplos |
 |  | `Ctrl-c` | Copiar parágrafos selecionados |
-|  | `Ctrl-x` | Recortar parágrafos selecionados (os parágrafos recortados não desaparecerão na interface do usuário até que sejam colados) |
+|  | `Ctrl-x` | Recortar parágrafos selecionados (os parágrafos recortados não desaparecem na interface do usuário até que sejam colados) |
 |  | `Ctrl-v` | Colar parágrafos recortados ou copiados anteriormente |
 |  | `Ctrl-Backspace` | Excluir parágrafos selecionados |
 | **Modo de Edição** - Rich Text Editor | `Ctrl-b` | Negrito |
@@ -45,7 +45,7 @@ Vários atalhos de teclado também estão disponíveis para os usuários de desk
 
 >[!NOTE]
 >
->Os atalhos de teclado do editor ficam sempre ativos, independentemente se os [atalhos do console tenham sido desativados](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
+Os atalhos de teclado do editor ficam sempre ativos, independentemente se os [atalhos do console tenham sido desativados](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
 
 ## Teclas modificadoras específicas do sistema operacional {#os-specific-modifier-keys}
 

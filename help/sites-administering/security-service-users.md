@@ -7,9 +7,9 @@ topic-tags: Security
 content-type: reference
 exl-id: ccd8577b-3bbf-40ba-9696-474545f07b84
 feature: Security
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1737'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 A principal maneira de obter uma sessão administrativa ou um resolvedor de recursos no AEM era usando o `SlingRepository.loginAdministrative()` e `ResourceResolverFactory.getAdministrativeResourceResolver()` métodos fornecidos pelo Sling.
 
-No entanto, nenhum desses métodos foi projetado em torno do [princípio do privilégio mínimo](https://en.wikipedia.org/wiki/Principle_of_least_privilege) e tornar muito fácil para um desenvolvedor não planejar uma estrutura adequada e os respectivos Níveis de controle de acesso (ACLs) para o conteúdo antecipadamente. Se uma vulnerabilidade estiver presente em um serviço desse tipo, ela geralmente leva a escaladas de privilégio para o `admin` mesmo se o código em si não precisasse de privilégios administrativos para funcionar.
+No entanto, nenhum desses métodos foi projetado em torno do [princípio do privilégio mínimo](https://en.wikipedia.org/wiki/Principle_of_least_privilege). Isso facilita muito para um desenvolvedor não planejar uma estrutura adequada e os respectivos Níveis de controle de acesso (ACLs) para o conteúdo antecipadamente. Se uma vulnerabilidade estiver presente em um serviço desse tipo, ela geralmente leva a escaladas de privilégio para o `admin` mesmo se o código em si não precisasse de privilégios administrativos para funcionar.
 
 ## Como eliminar as sessões de administrador {#how-to-phase-out-admin-sessions}
 
 ### Prioridade 0: o recurso está ativo/necessário/abandonado? {#priority-is-the-feature-active-needed-derelict}
 
-Pode haver casos em que a sessão de administrador não seja usada ou o recurso seja totalmente desativado. Se esse for o caso com sua implementação, remova o recurso completamente ou ajuste-o com [Código NOP](https://en.wikipedia.org/wiki/NOP).
+Pode haver casos em que a sessão de administrador não seja usada ou o recurso seja totalmente desativado. Em caso afirmativo, na implementação, remova o recurso completamente ou ajuste-o com [Código NOP](https://en.wikipedia.org/wiki/NOP).
 
 ### Prioridade 1: Usar A Sessão De Solicitação {#priority-use-the-request-session}
 
@@ -57,7 +57,7 @@ Além disso, verifique se os novos recursos desenvolvidos seguem estes princípi
    * O gerenciamento do controle de acesso deve parecer natural
    * O controle de acesso deve ser aplicado pelo repositório, não pelo aplicativo
 
-* **Usar tipos de nós**
+* **Usar tipos de nó**
 
    * Restringir o conjunto de propriedades que podem ser definidas
 
@@ -80,7 +80,7 @@ Se você aplicar o controle de acesso ao reestruturar o conteúdo ou quando o fi
 
 ## Usuários e Mapeamentos do Serviço {#service-users-and-mappings}
 
-Se o procedimento acima falhar, o Sling 7 oferecerá um serviço de Mapeamento de usuários do serviço, que permite configurar um mapeamento de pacote para usuário e dois métodos de API correspondentes:
+Se falhar, o Sling 7 oferecerá um serviço de Mapeamento de usuários do serviço, que permite configurar um mapeamento de pacote para usuário e dois métodos de API correspondentes:
 
 * [`SlingRepository.loginService()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)
 * [`ResourceResolverFactory.getServiceResourceResolver()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)
@@ -99,7 +99,7 @@ Os métodos retornam um resolvedor de sessão/recurso com os privilégios soment
 
 ### Substituição da sessão de administrador por um usuário de serviço {#replacing-the-admin-session-with-a-service-user}
 
-Um usuário de serviço é um usuário JCR sem senha definida e com um conjunto mínimo de privilégios necessários para executar uma tarefa específica. Não ter uma senha definida significa que não será possível fazer logon com um usuário de serviço.
+Um usuário de serviço é um usuário JCR sem senha definida e com um conjunto mínimo de privilégios necessários para executar uma tarefa específica. Não ter senha definida significa que não é possível fazer logon com um usuário de serviço.
 
 Uma maneira de descontinuar uma sessão administrativa é substituí-la por sessões de usuário de serviço. Ele também pode ser substituído por vários usuários de subserviço, se necessário.
 
@@ -116,7 +116,7 @@ Para substituir a sessão de administrador por um usuário de serviço, execute 
 
 ## Criação de um usuário de serviço {#creating-a-new-service-user}
 
-Depois de verificar que nenhum usuário na lista de usuários do serviço AEM se aplica ao seu caso de uso e que os problemas de RTC correspondentes foram aprovados, você pode adicionar o novo usuário ao conteúdo padrão.
+Depois de verificar que nenhum usuário na lista de usuários do serviço AEM se aplica ao seu caso de uso e que os problemas de RTC correspondentes foram aprovados, adicione o novo usuário ao conteúdo padrão.
 
 A abordagem recomendada é criar um usuário de serviço para usar o explorador do repositório em *https://&lt;server>:&lt;port>/crx/explorer/index.jsp*
 
@@ -136,7 +136,7 @@ Você pode criar usuários de serviço ao:
 
    >[!NOTE]
    >
-   >Não há tipos de mixin associados a usuários de serviço. Isso significa que não haverá políticas de controle de acesso para usuários do sistema.
+   >Não há tipos de mixin associados a usuários de serviço. Isso significa que não há políticas de controle de acesso para usuários do sistema.
 
 Ao adicionar o .content.xml correspondente ao conteúdo do pacote, verifique se você definiu o `rep:authorizableId` e que o tipo primário é `rep:SystemUser`. Deve ter esta aparência:
 
@@ -196,10 +196,10 @@ Para adicionar um mapeamento de seu serviço aos Usuários do sistema correspond
 
 Chamadas para `loginAdministrative()` aparecem frequentemente junto com sessões compartilhadas. Essas sessões são adquiridas na ativação do serviço e só são desconectadas após a interrupção do serviço. Embora essa seja uma prática comum, ela gera dois problemas:
 
-* **Segurança:** Essas sessões administrativas são usadas para armazenar em cache e retornar recursos ou outros objetos vinculados à sessão compartilhada. Mais tarde na pilha de chamadas, esses objetos podem ser adaptados a sessões ou resolvedores de recursos com privilégios elevados e, muitas vezes, não está claro para o chamador que é uma sessão de administrador com a qual estão operando.
+* **Segurança:** Essas sessões administrativas são usadas para armazenar em cache e retornar recursos ou outros objetos vinculados à sessão compartilhada. Mais tarde na pilha de chamadas, esses objetos poderiam ser adaptados a sessões ou resolvedores de recursos com privilégios elevados. Geralmente, não está claro para o chamador que essa é uma sessão de administrador com a qual ele está operando.
 * **Desempenho:** No Oak, as sessões compartilhadas podem causar problemas de desempenho e não é recomendável usá-las.
 
-A solução mais óbvia para o risco de segurança é simplesmente substituir o `loginAdministrative()` chamar com um `loginService()` um para um usuário com privilégios restritos. No entanto, isso não terá impacto em nenhuma possível degradação do desempenho. Uma possibilidade de mitigar isso é envolver todas as informações solicitadas em um objeto que não esteja associado à sessão. Em seguida, crie (ou destrua) a sessão sob demanda.
+A solução mais óbvia para o risco de segurança é simplesmente substituir o `loginAdministrative()` chamar com um `loginService()` um para um usuário com privilégios restritos. No entanto, isso não tem impacto em nenhuma possível degradação do desempenho. Uma possibilidade de mitigar isso é envolver todas as informações solicitadas em um objeto que não esteja associado à sessão. Em seguida, crie (ou destrua) a sessão sob demanda.
 
 A abordagem recomendada é refatorar a API do serviço para dar ao chamador controle sobre a criação/destruição da sessão.
 

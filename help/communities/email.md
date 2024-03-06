@@ -8,7 +8,7 @@ content-type: reference
 pagetitle: Configuring Email
 role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 0%
@@ -41,7 +41,7 @@ O serviço de email padrão é necessário para notificações e assinaturas.
 
 Isso se baseia na documentação do [Configuração da notificação por e-mail](../../help/sites-administering/notification.md), mas com uma diferença de que o campo `"From" address` é *não* necessário e deve ser deixado em branco.
 
-Por exemplo, (preenchido com valores somente para fins ilustrativos):
+Por exemplo (preenchido com valores somente para fins ilustrativos):
 
 ![email-config](assets/email-config.png)
 

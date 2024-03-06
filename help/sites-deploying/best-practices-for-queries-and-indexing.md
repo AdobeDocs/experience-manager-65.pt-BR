@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '4598'
-ht-degree: 7%
+source-wordcount: '4518'
+ht-degree: 5%
 
 ---
 
@@ -33,7 +33,7 @@ Além disso, ao projetar uma taxonomia, é importante considerar se a ordenaçã
 
 ### Consultas em componentes {#queries-in-components}
 
-Como as consultas podem ser uma das operações mais exigentes realizadas em um sistema AEM, é recomendável evitá-las em seus componentes. A execução de várias consultas cada vez que uma página é renderizada pode prejudicar o desempenho do sistema. Há duas estratégias que podem ser usadas para evitar a execução de consultas ao renderizar componentes: **nós de passagem** e **resultados de busca prévia**.
+Como as consultas podem ser uma das operações mais exigentes realizadas em um sistema AEM, é recomendável evitá-las em seus componentes. A execução de várias consultas cada vez que uma página é renderizada pode prejudicar o desempenho do sistema. Há duas estratégias que podem ser usadas para evitar a execução de consultas ao renderizar componentes: **nós de passagem** e **resultados da busca prévia**.
 
 #### Nós de passagem {#traversing-nodes}
 
@@ -211,7 +211,7 @@ Ao remover um índice em uma instância do MongoDB, o custo da exclusão é prop
 
 ### A Folha de características de consulta JCR {#jcrquerycheatsheet}
 
-Para auxiliar na criação de consultas JCR e definições de índice eficientes, a [Folha de características de consulta JCR](assets/JCR_query_cheatsheet-v1.1.pdf) está disponível para download e uso como referência durante o desenvolvimento. Ela contém exemplos de consulta para o QueryBuilder, XPath e SQL-2, e abrange vários cenários que se comportam de maneira diferente em termos de desempenho de consulta. Ela também fornece recomendações sobre como criar ou personalizar índices do Oak. O conteúdo desta Folha de características se aplica ao AEM 6.5 e ao AEM as a Cloud Service.
+Para auxiliar na criação de consultas JCR e definições de índice eficientes, a [Folha de características de consulta JCR](assets/JCR_query_cheatsheet-v1.1.pdf) O está disponível para download e uso como referência durante o desenvolvimento. Ela contém exemplos de consulta para o QueryBuilder, XPath e SQL-2, e abrange vários cenários que se comportam de maneira diferente em termos de desempenho de consulta. Ela também fornece recomendações sobre como criar ou personalizar índices do Oak. O conteúdo desta Folha de características se aplica ao AEM 6.5 e ao AEM as a Cloud Service.
 
 ## Reindexação {#re-indexing}
 
@@ -453,9 +453,9 @@ Em operação normal do AEM, por exemplo, fazer upload de ativos por meio da int
 
 *Execute a Etapa 1(a-b) durante uma janela de manutenção/período de pouco uso, pois o Armazenamento de nós é percorrido durante essa operação, o que pode incorrer em carga significativa no sistema.*
 
-1a. Executar `oak-run.jar --generate` para criar uma lista de nós que terão o texto pré-extraído.
+1-A. Executar `oak-run.jar --generate` para criar uma lista de nós que terão o texto pré-extraído.
 
-1b. A lista de nós (1a) é armazenada no sistema de arquivos como um arquivo CSV
+1-B. A lista de nós (1a) é armazenada no sistema de arquivos como um arquivo CSV
 
 Todo o armazenamento de nós é percorrido (conforme especificado pelos caminhos no comando oak-run) todas as vezes `--generate` é executado e uma **novo** Arquivo CSV criado. O arquivo CSV é **não** reutilizado entre execuções discretas do processo de pré-extração de texto (Etapas 1 - 2).
 
@@ -463,9 +463,9 @@ Todo o armazenamento de nós é percorrido (conforme especificado pelos caminhos
 
 *A etapa 2(a-c) pode ser executada durante a operação normal do AEM se ele interagir somente com o Armazenamento de dados.*
 
-2a. Executar `oak-run.jar --tika` para pré-extrair o texto para os nós binários enumerados no arquivo CSV gerado em (1b)
+2-A. Executar `oak-run.jar --tika` para pré-extrair o texto para os nós binários enumerados no arquivo CSV gerado em (1b)
 
-2b. O processo iniciado no (2a) acessa os nós binários definidos no CSV no Armazenamento de dados diretamente e extrai o texto.
+2-B. O processo iniciado no (2a) acessa os nós binários definidos no CSV no Armazenamento de dados diretamente e extrai o texto.
 
 2-C. O texto extraído é armazenado no sistema de arquivos em um formato assimilável pelo processo de reindexação do Oak (3a)
 
@@ -477,6 +477,6 @@ O texto pré-extraído pode ser adicionado de forma incremental ao ao longo do t
 
 *Execute a reindexação (Etapas 3a-b) durante um período de manutenção/baixo uso, pois o Armazenamento de nós é percorrido durante essa operação, o que pode incorrer em carga significativa no sistema.*
 
-3a. [Reindexar](#how-to-re-index) de índices Lucene é invocado no AEM.
+3-A. [Reindexar](#how-to-re-index) de índices Lucene é invocado no AEM.
 
-3b. A configuração OSGi Apache Jackrabbit Oak DataStore PreExtractingTextProvider (configurada para apontar para o texto extraído por meio de um caminho de sistema de arquivos) instrui o Oak para o texto completo de origem dos arquivos extraídos, e evita atingir diretamente e processar os dados armazenados no repositório.
+3-B. A configuração OSGi Apache Jackrabbit Oak DataStore PreExtractingTextProvider (configurada para apontar para o texto extraído por meio de um caminho de sistema de arquivos) instrui o Oak para o texto completo de origem dos arquivos extraídos, e evita atingir diretamente e processar os dados armazenados no repositório.

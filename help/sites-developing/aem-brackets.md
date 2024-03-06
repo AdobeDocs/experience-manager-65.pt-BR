@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 1%
+source-wordcount: '913'
+ht-degree: 0%
 
 ---
 
@@ -83,7 +83,7 @@ Para sincronizar seu conteúdo de e para uma instância de desenvolvimento AEM, 
 
 ![chlimage_1-55](assets/chlimage_1-55a.png)
 
-As Configurações do projeto permitem definir:
+As Configurações do projeto permitem definir o seguinte:
 
 1. O URL do servidor (por exemplo, `http://localhost:4502`)
 1. Tolerar servidores que não tenham um certificado HTTPS válido (manter desmarcado, a menos que necessário)

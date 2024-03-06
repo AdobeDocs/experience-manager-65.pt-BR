@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 35b50573-0be8-469d-a1ac-f51b9aaa5fef
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 0%
@@ -121,7 +121,7 @@ O modelo personalizado tem o mesmo estilo do modelo padrão, pois o modelo faz r
 
 1. Renomear o componente copiado para `enrollmentpage`.
 
-1. **(Somente se você já tiver uma página de conteúdo)** Execute as seguintes etapas (a-d), se você tiver uma `contentpage`para o seu site. Se você não tiver um `contentpage`para o seu site, você pode deixar o `resourceSuperType`para apontar para a página de base OOTB.
+1. **(Somente se você já tiver uma página de conteúdo)** Execute as seguintes etapas (a-d), se você tiver uma `contentpage`para o seu site. Se você não tiver um `contentpage`para o seu site, você pode deixar o `resourceSuperType`para apontar para a página base pronta para uso.
 
    1. Para o `enrollmentpage` nó, defina o valor da propriedade `sling:resourceSuperType` para mycompany/components/page/contentpage. A variável `contentpage` é o componente da página base do site. Outros componentes da página podem estendê-la. Remover arquivos de script em `enrollmentpage`, exceto `head.jsp`, `content.jsp`, e `library.jsp`. A variável `sling:resourceSuperType` componente, que é `contentpage` nesse caso, inclui todos esses scripts. Os cabeçalhos, incluindo a barra de navegação e o rodapé, são herdados da `contentpage` componente.
 

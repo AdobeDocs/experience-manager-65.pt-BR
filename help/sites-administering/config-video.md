@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 9c97f99e-d6ef-4817-8b2a-201ab22f2b38
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 1%
+source-wordcount: '479'
+ht-degree: 0%
 
 ---
 
 # Configurar o componente de Vídeo {#configure-the-video-component}
 
-A variável [Componente de vídeo](/help/sites-authoring/default-components-foundation.md#video) O permite colocar um ativo de vídeo predefinido e pronto para uso (OOTB) em sua página.
+A variável [Componente de vídeo](/help/sites-authoring/default-components-foundation.md#video) O permite inserir um ativo de vídeo predefinido e pronto para uso na página.
 
 Para que ocorra a transcodificação adequada, um administrador instala o FFmpeg separadamente. Consulte [Instale o FFmpeg e configure o AEM](#install-ffmpeg). Os administradores também [Configurar perfis de vídeo](#configure-video-profiles) para uso com elementos HTML5.
 
@@ -81,4 +81,4 @@ Para **configurar AEM**, siga estas etapas:
 
 >[!NOTE]
 >
->As alterações nos modelos de fluxo de trabalho padrão prontos para uso (OOTB) não são preservadas ao atualizar a instância do AEM. A Adobe recomenda copiar os modelos de fluxo de trabalho modificados antes de editá-los. Por exemplo, copie a OOTB [!UICONTROL Ativo de atualização DAM] antes de editar a etapa de Transcodificação do FFmpeg no [!UICONTROL Ativo de atualização DAM] para escolher nomes de perfil de vídeo existentes antes da atualização. Em seguida, é possível sobrepor o `/apps` para permitir que o AEM recupere as alterações personalizadas no modelo OOTB.
+>As alterações nos modelos de fluxo de trabalho predefinidos não são preservadas ao atualizar a instância do AEM. A Adobe recomenda copiar os modelos de fluxo de trabalho modificados antes de editá-los. Por exemplo, copie o pacote pronto para uso [!UICONTROL Ativo de atualização DAM] antes de editar a etapa de Transcodificação do FFmpeg no [!UICONTROL Ativo de atualização DAM] para escolher nomes de perfil de vídeo existentes antes da atualização. Em seguida, é possível sobrepor o `/apps` para permitir que o AEM recupere as alterações personalizadas no modelo predefinido.

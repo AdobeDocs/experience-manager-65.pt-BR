@@ -5,9 +5,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
-source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1502'
 ht-degree: 1%
 
 ---
@@ -230,7 +230,7 @@ página em https://[*host*]:[*porta*]/system/console/configMgr
    `key` varchar(255) NOT NULL,
    `id` varchar(60) NOT NULL,
    PRIMARY KEY (`id`,`key`),
-   CONSTRAINT ‘additionalmetadatatable_fk’ FOREIGN KEY (`id`) REFERENCES `metadata` (`id`) ON DELETE CASCADE
+   CONSTRAINT 'additionalmetadatatable_fk' FOREIGN KEY (`id`) REFERENCES `metadata` (`id`) ON DELETE CASCADE
    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
@@ -397,7 +397,7 @@ Execute as seguintes etapas para criar [uma biblioteca do cliente](/help/sites-d
 
    >[!NOTE]
    >
-   >O script é para o componente de dispositivo de anexo pronto para uso (OOTB). Se você personalizou o widget de anexo OOTB, altere o script acima para incorporar as respectivas alterações.
+   >O script é para o componente de widget de anexo pronto para uso. Se você personalizou o widget de anexo pronto para uso, altere o script acima para incorporar as respectivas alterações.
 
 1. Adicione a seguinte propriedade à pasta criada na etapa 2 e clique em **[!UICONTROL Salvar tudo]**.
 

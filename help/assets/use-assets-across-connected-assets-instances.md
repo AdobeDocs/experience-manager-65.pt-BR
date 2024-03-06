@@ -7,9 +7,9 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 hide: true
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3908'
+source-wordcount: '3909'
 ht-degree: 15%
 
 ---
@@ -350,7 +350,7 @@ Para solucionar erros comuns, siga estas etapas:
 
 * Se não conseguir pesquisar ativos remotos no [!UICONTROL Localizador de conteúdo], em seguida, verifique se as funções e permissões necessárias estão em vigor.
 
-* Um ativo buscado no DAM remoto não pode ser publicado em uma página da Web por um ou mais motivos. Ele não existe no servidor remoto, a falta de permissões apropriadas para buscá-lo ou a falha de rede podem ser os motivos. Verifique se o ativo não foi removido do DAM remoto. Verifique se as permissões apropriadas estão em vigor e se os pré-requisitos foram atendidos. Tente adicionar o ativo novamente à página e publique-o novamente. Verifique a [lista de trabalhos assíncronos](/help/sites-administering/asynchronous-jobs.md) quanto a erros na busca de ativos.
+* Um ativo buscado no DAM remoto não pode ser publicado em uma página da Web por um ou mais motivos. Ele não existe no servidor remoto, a falta de permissões apropriadas para buscá-lo ou uma falha de rede podem ser os motivos. Verifique se o ativo não foi removido do DAM remoto. Verifique se as permissões apropriadas estão em vigor e se os pré-requisitos foram atendidos. Tente adicionar o ativo novamente à página e publique-o novamente. Verifique a [lista de trabalhos assíncronos](/help/sites-administering/asynchronous-jobs.md) quanto a erros na busca de ativos.
 
 * Se não conseguir acessar a implantação remota do DAM a partir do local [!DNL Sites] garantir que os cookies entre sites sejam permitidos e [suporte a cookie no mesmo site](/help/sites-administering/same-site-cookie-support.md) está configurado. Se os cookies entre sites estiverem bloqueados, as implantações do [!DNL Experience Manager] não pode autenticar. Por exemplo, [!DNL Google Chrome] no modo Incógnito pode bloquear cookies de terceiros. Para permitir cookies no [!DNL Chrome] navegador, clique no ícone &quot;olho&quot; na barra de endereços e navegue até **Site não funciona** > **Bloqueado**, selecione o URL do DAM remoto e permita o cookie de token de logon. Como alternativa, consulte [como ativar cookies de terceiros](https://support.google.com/chrome/answer/95647).
 

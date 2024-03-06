@@ -7,10 +7,10 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: aed9247c-eb81-470c-9fa4-a98c3df2dcaa
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2773'
-ht-degree: 1%
+source-wordcount: '2672'
+ht-degree: 0%
 
 ---
 
@@ -122,10 +122,10 @@ A variável [Aplicativo e provedor Adobe Granite OAuth](#adobe-granite-oauth-app
 
    >[!NOTE]
    >
-   >Os grupos podem ser adicionados ou removidos a qualquer momento. Mas as associações de usuários existentes não serão afetadas. A associação automática se aplica somente a novos usuários que estão sendo criados após a atualização desse campo. Para os sites em que os usuários anônimos estão desativados, opte por adicionar usuários ao grupo de membros da comunidade correspondente destinado ao site fechado da comunidade.
+   >Os grupos podem ser adicionados ou removidos a qualquer momento. Mas as associações de usuários existentes não são afetadas. A associação automática se aplica somente a novos usuários que estão sendo criados após a atualização desse campo. Para os sites em que os usuários anônimos estão desativados, opte por adicionar usuários ao grupo de membros da comunidade correspondente destinado ao site fechado da comunidade.
 
    * Selecionar **[!UICONTROL SALVE]**.
-   * **[!UICONTROL Publicação]**.
+   * **[!UICONTROL Publish]**.
 
 O resultado é um [Aplicativo e provedor Adobe Granite OAuth](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) instância que não requer mais modificações, a menos que seja adicionado um escopo adicional (permissões). O escopo padrão são as permissões padrão para logon no Facebook. Se desejar escopo adicional, é necessário editar a configuração OSGI diretamente. Se houver modificações feitas diretamente pelo sistema/console, evite editar as configurações do Cloud Service na interface para toque, evitando substituições.
 
@@ -281,13 +281,13 @@ A variável [Aplicativo e provedor Adobe Granite OAuth](#adobe-granite-oauth-app
 
      Deixe desmarcado.
 
-   * **[!UICONTROL Adicionar aos Grupos de usuários]**
+   * **[!UICONTROL Adicionar a grupos de usuários]**
 
      Selecione Adicionar grupo de usuários para escolher um ou mais [grupos de membros](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) para o site da comunidade ao qual os usuários serão adicionados.
 
    >[!NOTE]
    >
-   >Os grupos podem ser adicionados ou removidos a qualquer momento. Mas as associações de usuários existentes não serão afetadas. A associação automática se aplica somente a novos usuários que estão sendo criados após a atualização desse campo. Para os sites em que os usuários anônimos estão desativados, adicione usuários ao grupo de membros da comunidade correspondente destinado ao site da comunidade fechado.
+   >Os grupos podem ser adicionados ou removidos a qualquer momento. Mas as associações de usuários existentes não são afetadas. A associação automática se aplica somente a novos usuários que estão sendo criados após a atualização desse campo. Para os sites em que os usuários anônimos estão desativados, adicione usuários ao grupo de membros da comunidade correspondente destinado ao site da comunidade fechado.
    >
 
 1. Selecionar **[!UICONTROL SALVE]** e **[!UICONTROL Publish]**.
@@ -419,7 +419,7 @@ Para localizar a instância criada para um aplicativo Facebook ou Twitter:
 
      (*Obrigatório*) A ID do aplicativo fornecida quando o serviço em nuvem foi criado.
 
-   * **[!UICONTROL Client Secret]**
+   * **[!UICONTROL Segredo do cliente]**
 
      (*Obrigatório*) A senha do aplicativo fornecida quando o serviço em nuvem foi criado.
 
@@ -464,7 +464,7 @@ Em uma instância de autor, conectado com privilégios administrativos:
    * No nó `/oak:index`
    * Selecionar nó `ntBaseLucene`
    * Selecionar **[!UICONTROL Copiar]**
-   * Selecione `/oak:index`
+   * Selecionar `/oak:index`
    * Selecionar **[!UICONTROL Colar]**
    * Renomear cópia de ntBaseLucene para `ntBaseLucene-oauth`
 

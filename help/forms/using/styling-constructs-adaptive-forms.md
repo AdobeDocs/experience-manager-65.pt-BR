@@ -6,9 +6,9 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2348'
+source-wordcount: '2352'
 ht-degree: 3%
 
 ---
@@ -44,10 +44,10 @@ Com base na inicialização, o seguinte conjunto de propriedades CSS define o te
 
 * Cor do plano de fundo
 * Borda (tipo, cor, espessura)
-* Cor da fonte
+* Cor da Fonte
 * Preenchimento
 * Margem
-* Tamanho da fonte
+* Tamanho da Fonte
 * AlturaDaLinha
 
 Atualmente, as variáveis LESS são definidas apenas para essas propriedades dos vários elementos em um formulário adaptável.
@@ -269,7 +269,7 @@ Dependendo do tipo, os widgets também incluem classes. Geralmente, os widgets i
   </tr>
   <tr>
    <td><p><code>widget-height</code></p> </td>
-   <td>Altura do widget (Não funciona para a caixa de seleção e o botão de opção)</td>
+   <td>Altura do widget (não funciona para a caixa de seleção e o botão de opção)</td>
   </tr>
   <tr>
    <td><p><code>checkbutton-height</code></p> </td>

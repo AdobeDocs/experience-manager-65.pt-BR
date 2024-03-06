@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3212'
+source-wordcount: '3156'
 ht-degree: 0%
 
 ---
@@ -169,7 +169,7 @@ Siga estas etapas para configurar o Amazon SNS para notificações por push:
    <table>
     <tbody>
      <tr>
-     <td><p> </p> <p>{</p> <p> "Version": "10-17-2012",</p> <p> "Declaração": [</p> <p> {</p> <p> "Ação": [</p> <p> "mobileanalytics:PutEvents",</p> <p> "cognito-sync:*",</p> <p> "SNS:CreatePlatformEndpoint",</p> <p> "SNS:Assinar"</p> <p> ],</p> <p> "Effect": "Allow",</p> <p> "Recurso": [</p> <p> "*"</p> <p> ]</p> <p> }</p> <p> ]</p> <p>}</p> <p> </p> </td>
+     <td><p> </p> <p>{</p> <p> "Version": "10-17-2012",</p> <p> "Declaração": [</p> <p> {</p> <p> "Ação": [</p> <p> "mobileanalytics:PutEvents",</p> <p> "cognito-sync:*",</p> <p> "SNS:CreatePlatformEndpoint",</p> <p> "SNS:Assinar"</p> <p> ],</p> <p> "Effect": "Allow",</p> <p> "Resource": [</p> <p> "*"</p> <p> ]</p> <p> }</p> <p> ]</p> <p>}</p> <p> </p> </td>
      </tr>
     </tbody>
     </table>
@@ -289,7 +289,7 @@ Para criar uma notificação e enviá-la, siga estas etapas.
 1. Enviar a notificação
 
    * No painel Aplicativos, localize o bloco Notificações por push.
-   * Selecione a notificação ou clique no botão de detalhes na parte inferior direita ( ). . .), para mostrar a lista de notificações. Essa lista também indica se uma notificação está pronta para ser enviada, se já foi enviada ou se ocorreu um erro durante o envio.
+   * Selecione a notificação ou clique no botão de detalhes na parte inferior direita (. . .), para mostrar a lista de notificações. Essa lista também indica se uma notificação está pronta para ser enviada, se já foi enviada ou se ocorreu um erro durante o envio.
    * Marque a caixa de seleção de uma notificação (apenas) e clique no botão &quot;Enviar notificação&quot; acima da lista. Você tem uma chance de &quot;Cancelar&quot; ou &quot;Enviar&quot; a notificação na caixa de diálogo exibida.
 
 1. Tratamento dos resultados

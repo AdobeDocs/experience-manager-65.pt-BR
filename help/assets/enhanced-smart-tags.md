@@ -6,9 +6,9 @@ feature: Smart Tags, Search
 role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1559'
 ht-degree: 1%
 
 ---
@@ -99,7 +99,6 @@ Adicione os ativos a uma pasta e aplique as tags a cada ativo da página de prop
 >1. O treinamento é um processo irrevogável. A Adobe recomenda que você revise as tags no conjunto de ativos preparado bem antes de treinar o Serviço de conteúdo inteligente nas tags.
 >1. Antes de treinar para uma tag, consulte [Diretrizes de treinamento do Serviço de conteúdo inteligente](/help/assets/config-smart-tagging.md#training-the-smart-content-service).
 >1. Ao treinar o Serviço de conteúdo inteligente pela primeira vez, a Adobe recomenda que você o treine em pelo menos duas tags distintas.
-
 
 ## Compreender [!DNL Experience Manager] resultados da pesquisa com tags inteligentes {#understandsearch}
 

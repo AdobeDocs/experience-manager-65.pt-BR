@@ -1,7 +1,6 @@
 ---
 title: Instalação e configuração do Designer
 description: O Designer está disponível como um instalador independente e também é fornecido com o Workbench. Saiba como instalar o Designer independente.
-uuid: c5b779d1-cb6a-48f4-87d6-48464753e516
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: designer
@@ -10,9 +9,9 @@ docset: aem65
 role: Admin
 feature: Forms Designer
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
-source-git-commit: 05f54e451c72b0a1690ba4a2ca50db87711a8094
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -50,7 +49,7 @@ O Designer está disponível como um instalador independente e também é fornec
 
    >[!NOTE]
    > 
-   >* O Forms Designer de 32 bits está programado para ser descontinuado com a versão AEM 6.5 Forms Service Packs 20 (6.5.20.0). A Adobe recomenda atualizar para o Forms Designer de 64 bits.
+   >* O Forms Designer de 32 bits está programado para ser descontinuado com a versão AEM 6.5 Forms Service Packs 20 (6.5.20.0). A Adobe recomenda que você atualize para o Forms Designer de 64 bits.
    >* O Forms Designer de 64 bits está disponível somente para AEM 6.5 Forms Service Packs 19 (6.5.19.0) ou versões posteriores.
    >* O Adobe Experience Manager 6.5 Forms Service Pack 15 (6.5.15.0) em diante versão Forms Designer também inclui a versão Service Pack. Por exemplo, para o Service Pack 15, o número da versão é 6.5.15.20221112.1.0. Neste exemplo, a 6.5.15 é a versão do service pack.
 

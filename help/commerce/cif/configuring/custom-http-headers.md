@@ -2,10 +2,10 @@
 title: Cabeçalhos HTTP personalizados
 description: Saiba como configurar cabeçalhos HTTP personalizados no Adobe Experience Manager Commerce.
 exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 5%
+source-wordcount: '267'
+ht-degree: 3%
 
 ---
 
@@ -34,7 +34,7 @@ Os componentes que usam a configuração do Cloud Service acima enviam esses cab
 
 ## Restrições {#restrictions}
 
-Embora o serviço permita a definição de qualquer nome de cabeçalho, incluindo os padrão, eles não estarão disponíveis para configuração. Em outras palavras, não é possível substituir os cabeçalhos HTTP padrão usando esse recurso. Uma lista de nomes de cabeçalho restritos pode ser encontrada [aqui](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers). Além desses, há mais dois cabeçalhos que não podem ser usados:
+Embora o serviço permita que qualquer nome de cabeçalho seja definido, incluindo os padrão, eles não estão disponíveis para configuração. Em outras palavras, não é possível substituir os cabeçalhos HTTP padrão usando esse recurso. Uma lista de nomes de cabeçalho restritos pode ser encontrada [aqui](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Além desses, há mais dois cabeçalhos que não podem ser usados:
 
 * &quot;Loja&quot; - usado pelo CIF para identificar a loja da Adobe Commerce
 * &quot;Versão de visualização&quot; - usado pelo CIF para recuperar produtos preparados

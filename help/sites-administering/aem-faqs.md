@@ -2,7 +2,7 @@
 title: Perguntas frequentes sobre AEM
 description: Use essas Perguntas frequentes para entender, configurar e solucionar problemas ou fluxos de trabalho comuns no AEM.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 1a7805f063daf6f3dd07a2ff2d182e58fe7e63b8
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '936'
 ht-degree: 0%
@@ -80,11 +80,11 @@ Consulte [Entendendo os motivos para atualizar o AEM](https://helpx.adobe.com/ex
 
 Se o usuário, que faz upload dos arquivos de filme, não tiver permissões de exclusão no nó do ativo, os nós do bloco de exclusão falharão e o upload será reiniciado.
 
-#### Quais são as configurações padrão para configurações OOTB ao criar Cópia de idioma? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
+#### Quais são as configurações padrão para configurações prontas para uso ao criar uma Cópia de idioma? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
 Ao criar uma cópia de idioma por meio da interface para toque (**Referências** > **Atualizar cópia de idioma**), uma nova pasta do DAM será criada no novo idioma e os ativos serão referenciados a partir daí.
 
-Essa é a configuração padrão para configurações OOTB. Você pode definir **Traduzir ativos da página** = **Não traduzir** em Configurações de tradução.
+Essa é a configuração padrão para configurações iniciais. Você pode definir **Traduzir ativos da página** = **Não traduzir** em Configurações de tradução.
 Para AEM 6.4, **Ferramentas** > **Cloud Service** > **Serviços de tradução em nuvem**.
 
 #### Como desativar um componente AEM que causa crescimento exponencial do AEM SegmentStore (AEM 6.3.1.1)? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}

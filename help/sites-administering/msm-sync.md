@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '2672'
-ht-degree: 26%
+ht-degree: 25%
 
 ---
 
@@ -60,7 +60,7 @@ A tabela a seguir lista as configurações de implantação instaladas com AEM. 
   </tr>
   <tr>
    <td>Configuração de implantação padrão</td>
-   <td>A configuração de implementação padrão que permite que o processo de implementação comece com estímulos de implementação e executa as ações: criar, atualizar, excluir conteúdo e ordenar os nós filhos.</td>
+   <td>A configuração de implantação padrão que permite iniciar o processo de implantação com estímulos de implantação e executa as ações: criar, atualizar, excluir conteúdo e ordenar os nós filhos.</td>
    <td>Na implantação</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> productUpdate<br /> orderChildren</td>
   </tr>
@@ -108,7 +108,7 @@ A tabela a seguir lista as configurações de implantação instaladas com AEM. 
   </tr>
   <tr>
    <td>Configuração de implantação da DPS Publications</td>
-   <td>Configuração de implantação da publicação do DPS que permite iniciar o processo de implantação com o acionador de implantação e excluir as propriedades de ligação do FolioProducer na implantação inicial</td>
+   <td>Configuração de implantação da publicação do DPS, que permite iniciar o processo de implantação no acionador de implantação e excluir as propriedades de ligação do FolioProducer na implantação inicial</td>
    <td>Na implantação</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> orderChildren<br /> dpsMetadataFilter</td>
   </tr>

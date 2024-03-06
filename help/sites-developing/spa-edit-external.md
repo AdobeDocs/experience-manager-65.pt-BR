@@ -2,10 +2,10 @@
 title: Edição de um SPA externo no Adobe Experience Manager
 description: Este documento descreve as etapas recomendadas para fazer upload de um SPA independente em uma instância do Adobe Experience Manager, adicionar seções editáveis de conteúdo e ativar a criação.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2432'
-ht-degree: 1%
+source-wordcount: '2391'
+ht-degree: 0%
 
 ---
 
@@ -153,7 +153,7 @@ A variável `initializationAsync` pode, opcionalmente, aceitar uma `options` obj
 
 Depois que os componentes autoráveis do React são criados, eles podem ser usados em todo o aplicativo.
 
-Vamos ver um exemplo de página na qual o texto do projeto WKND SPA precisa ser adicionado. Neste exemplo, você deseja exibir o texto &quot;Olá, mundo!&quot; ligado `/content/wknd-spa-react/us/en/home.html`.
+Vamos ver um exemplo de página na qual o texto do projeto WKND SPA precisa ser adicionado. Neste exemplo, você deseja exibir o texto &quot;Olá, mundo!&quot; em `/content/wknd-spa-react/us/en/home.html`.
 
 1. Determine o caminho do nó a ser exibido.
 
@@ -360,7 +360,7 @@ Para habilitar a edição no AEM para este exemplo SPA, as seguintes etapas são
 
 ## Limitações da estrutura {#framework-limitations}
 
-O componente RemotePage espera que a implementação forneça um manifesto de ativo como o [encontrado aqui](https://github.com/shellscape/webpack-manifest-plugin). No entanto, o componente RemotePage só foi testado para funcionar com a estrutura React (e o Next.js por meio do componente remote-page-next) e, portanto, não oferece suporte ao carregamento remoto de aplicativos de outras estruturas, como o Angular.
+O componente RemotePage espera que a implementação forneça um manifesto de ativo como o [encontrado aqui](https://github.com/shellscape/webpack-manifest-plugin). O componente RemotePage, no entanto, só foi testado para funcionar com a estrutura React (e Next.js por meio do componente remote-page-next) e, portanto, não oferece suporte ao carregamento remoto de aplicativos de outras estruturas, como o Angular.
 
 ## Recursos adicionais {#additional-resources}
 
@@ -368,7 +368,7 @@ O material de referência a seguir pode ser útil para entender o SPA no context
 
 * [O Arquétipo do Projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)
 * [O projeto SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=pt-BR)
-* [Introdução a SPAs no AEM usando o React](spa-getting-started-react.md)
+* [Introdução ao SPA no AEM usando o React](spa-getting-started-react.md)
 * [Materiais de referência de SPA (referências de API)](spa-reference-materials.md)
 * [Blueprint SPA e PageModelManager](spa-blueprint.md#pagemodelmanager)
 * [Roteamento de modelo SPA](spa-routing.md)

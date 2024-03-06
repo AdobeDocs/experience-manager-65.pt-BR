@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 exl-id: d91a00d1-12fa-4c84-a426-49413f61c126
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -35,15 +35,15 @@ Se você não tiver uma conta no momento, acesse `https://build.phonegap.com` e 
 
 Depois de verificar se a conta do PhoneGap Build está ativa, navegue até o Console de Gerenciamento da Nuvem AEM, especificamente o [Cloud Service do PhoneGap Build](http://localhost:4502/etc/cloudservices/phonegap-build.html) http://localhost:4502/etc/cloudservices/phonegap-build.html).
 
-Use o **Gerenciar Cloud Services** mosaico para definir uma nova configuração do cloud service.
+Use o **Gerenciar Cloud Service** mosaico para definir uma nova configuração do cloud service.
 
-### Utilização do bloco Gerenciar Cloud Services {#using-manage-cloud-services-tile}
+### Utilização do bloco Gerenciar Cloud Service {#using-manage-cloud-services-tile}
 
-Antes de começar a criar seu aplicativo usando **PhoneGap Build** bloco, você deve configurar os serviços em nuvem, usando o **Gerenciar Cloud Services** no painel do AEM Mobile.
+Antes de começar a criar seu aplicativo usando **PhoneGap Build** bloco, você deve configurar os serviços em nuvem, usando o **Gerenciar Cloud Service** no painel do AEM Mobile.
 
 Para configurar os serviços em nuvem para seu aplicativo, siga as etapas abaixo:
 
-1. Clique no canto superior direito da **Gerenciar Cloud Services** bloco.
+1. Clique no canto superior direito da **Gerenciar Cloud Service** bloco.
 
    ![chlimage_1-61](assets/chlimage_1-61.png)
 
@@ -55,7 +55,7 @@ Para configurar os serviços em nuvem para seu aplicativo, siga as etapas abaixo
 
 1. Insira suas credenciais para criar uma configuração na nuvem.
 
-   Depois de verificar, clique em **Enviar**. Essa configuração de nuvem definida agora é exibida na variável **Gerenciar Cloud Services** bloco.
+   Depois de verificar, clique em **Enviar**. Essa configuração de nuvem definida agora é exibida na variável **Gerenciar Cloud Service** bloco.
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
 

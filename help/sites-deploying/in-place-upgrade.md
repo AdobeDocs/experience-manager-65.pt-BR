@@ -4,9 +4,9 @@ description: Saiba como executar uma atualização no local para o AEM 6.5.
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1214'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ Onde `<<YOUR_PROFILE>>` e `<<ADDITIONAL_FLAGS>>` são substituídos pelo perfil 
  </tbody>
 </table>
 
-**Em que:**
+**Onde:**
 
 * `mongo-host` é o IP do servidor MongoDB (por exemplo, 127.0.0.1)
 
@@ -129,7 +129,7 @@ Enquanto `FileDataStore` O é o novo padrão para instalações do AEM 6.3. Não
 
 Pule esta seção se estiver atualizando do 6.3. Embora os perfis do crx2oak fornecidos devam atender às necessidades da maioria dos clientes, há momentos em que parâmetros adicionais serão necessários. Se ocorrer um erro durante a migração, é possível que existam aspectos do ambiente que exigem a oferta de opções de configuração adicionais. Em caso afirmativo, você provavelmente encontrará o seguinte erro:
 
-**Os pontos de verificação não serão copiados porque nenhum armazenamento de dados externo foi especificado. Isso resultará na reindexação completa do repositório na primeira inicialização. Use —skip-checkpoints para forçar a migração ou consulte https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration para obter mais informações.**
+**Os pontos de verificação não são copiados porque nenhum armazenamento de dados externo foi especificado. Isso resultará na reindexação completa do repositório na primeira inicialização. Use —skip-checkpoints para forçar a migração ou consulte https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration para obter mais informações.**
 
 Por algum motivo, o processo de migração precisa acessar binários no armazenamento de dados e não pode encontrá-los. Para especificar a configuração do armazenamento de dados, inclua os seguintes sinalizadores na `<<ADDITIONAL_FLAGS>>` parte do comando de migração:
 
@@ -175,7 +175,7 @@ Observe que iniciar o AEM a partir do script de inicialização não iniciará a
    ps -ef | grep java
    ```
 
-1. Procure o processo de AEM. Será algo parecido com:
+1. Procure o processo de AEM. Será semelhante a:
 
    ```shell
    /usr/bin/java -server -Xmx1024m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.5.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties

@@ -5,9 +5,9 @@ contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '6161'
+source-wordcount: '6163'
 ht-degree: 0%
 
 ---
@@ -293,7 +293,7 @@ Selecionar **Transparência** para definir as configurações de transparência 
 >
 >A resolução de gradiente e malha geralmente deve ser definida para 150-300 ppi, pois a qualidade dos gradientes, sombras projetadas e difusões não melhora com resoluções mais altas, mas o tempo de impressão e o tamanho do arquivo aumentam.
 
-**Converter todo o texto em contornos** Converte todos os objetos de texto (tipo de ponto, tipo de área e tipo de caminho) em contornos e descarta todas as informações de glifo de tipo em páginas que contêm transparência. Essa opção garante que a largura do texto permaneça consistente durante o nivelamento. Observe que ativar essa opção fará com que fontes pequenas apareçam um pouco mais espessas quando visualizadas no Acrobat ou impressas em impressoras de desktop de baixa resolução. Isso não afeta a qualidade do tipo impresso em impressoras ou fotocompositoras de alta resolução.
+**Converter todo o texto em contornos** Converte todos os objetos de texto (tipo de ponto, tipo de área e tipo de caminho) em contornos e descarta todas as informações de glifo de tipo em páginas que contêm transparência. Essa opção garante que a largura do texto permaneça consistente durante o nivelamento. Observe que ativar essa opção fará com que fontes pequenas apareçam um pouco mais espessas quando visualizadas no Acrobat ou impressas em impressoras de desktop de baixa resolução. A qualidade do tipo impresso em impressoras ou fotocompositoras de alta resolução não é afetada.
 
 **Converter todos os traçados em contornos** Converte todos os traçados em caminhos simples preenchidos em páginas que contêm transparência. Essa opção garante que a largura dos traçados permaneça consistente durante o nivelamento. Observe que ativar essa opção faz com que os traçados finos pareçam um pouco mais espessos e pode degradar o desempenho do nivelamento.
 

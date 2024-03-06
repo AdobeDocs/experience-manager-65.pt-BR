@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
 exl-id: ff041ef0-e566-4373-818e-76680ff668d8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1769'
 ht-degree: 2%
 
 ---
@@ -76,7 +76,7 @@ Para acessar o console de Marcação:
 
 Para criar um namespace, selecione a variável **`Create Namespace`** ícone.
 
-O namespace é, em si, uma tag e não precisa conter nenhuma subtag. No entanto, para continuar criando uma taxonomia, [criar subtags](#creating-tags), que por sua vez podem ser tags de folha ou tags de container.
+O namespace é em si uma tag e não contém nenhuma subtag. No entanto, para continuar criando uma taxonomia, [criar subtags](#creating-tags), que por sua vez podem ser tags de folha ou tags de container.
 
 ![chlimage_1-183](assets/chlimage_1-183a.png) ![creating_tags_andnamespaces](assets/creating_tags_andnamespacesa.png)
 

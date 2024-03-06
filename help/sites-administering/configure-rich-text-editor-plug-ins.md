@@ -3,7 +3,7 @@ title: Configurar os plug-ins do Editor de Rich Text
 description: Saiba como configurar os plug-ins do Editor de Rich Text do Adobe Experience Manager para ativar funcionalidades individuais.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '4391'
 ht-degree: 2%
@@ -327,7 +327,7 @@ Qualquer texto criado no RTE é colocado em uma tag de bloco, sendo o padrão `<
 
 >[!NOTE]
 >
->Se uma tag de bloco, por exemplo, uma tag &lt;hr> não pode ser atribuído a um parágrafo. Não é um caso de uso válido para um plug-in paraformat.
+>Se uma tag de bloco, por exemplo, uma tag &lt;hr> tag, não puder ser atribuído a um parágrafo, não for um caso de uso válido para um plug-in paraformat.
 
 Quando o plug-in Formatos de parágrafo é ativado pela primeira vez, nenhum Formato de parágrafo padrão está disponível. A lista pop-up está vazia. Para fornecer aos autores os Formatos de parágrafo, faça o seguinte:
 

@@ -6,9 +6,9 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 6dbec0f41396c2b41d5324c4ecf6f1f33b1d0780
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '2597'
+source-wordcount: '2593'
 ht-degree: 2%
 
 ---
@@ -235,7 +235,7 @@ O recurso de revalidação do lado do servidor também permite executar as valid
 
 ### O que validar no servidor? {#what-to-validate-on-server-br}
 
-Todas as validações de campo prontas para uso (OOTB) de um formulário adaptável que são executadas novamente no servidor são:
+Todas as validações de campo prontas para uso de um formulário adaptável que são executadas novamente no servidor são:
 
 * Obrigatório
 * Cláusula de Imagem de Validação

@@ -2,9 +2,9 @@
 title: Componentes de base
 description: Saiba mais sobre os Componentes de base no Adobe Experience Manager 6.5.
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '6872'
+source-wordcount: '6873'
 ht-degree: 3%
 
 ---
@@ -175,7 +175,7 @@ Aqui você especifica como o carrossel opera:
 
    * **Criar lista usando**
 Há várias maneiras de criar uma lista de páginas - Páginas secundárias, Lista fixa, Pesquisa ou Pesquisa avançada (todas descritas abaixo).
-Independentemente do método escolhido, as páginas incluídas na lista devem ter, cada uma, uma imagem associada à página. Essa imagem é exibida no Carrossel. Se não houver imagem para uma determinada página nas Propriedades da página, você deve associar uma imagem à página antes de começar. Caso não tenha, o Carrossel exibe uma página em branco. Consulte [Editar propriedades da página](/help/sites-authoring/editing-page-properties.md).
+Independentemente do método escolhido, as páginas incluídas na lista devem ter, cada uma, uma imagem associada à página. Essa imagem é exibida no Carrossel. Se não houver imagem para uma determinada página nas Propriedades da página, você deve associar uma imagem à página antes de começar. Caso contrário, o Carrossel exibe uma página em branco. Consulte [Editar propriedades da página](/help/sites-authoring/editing-page-properties.md).
 Dependendo do item escolhido, um novo painel será exibido:
 
       * **Opções de páginas secundárias**

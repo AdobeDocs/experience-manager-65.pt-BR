@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4102'
+source-wordcount: '4104'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Você pode chamar scripts personalizados antes de enviar um formulário. Esse re
 
 Primeiro, defina uma função de retorno de chamada que seja chamada antes de enviar o formulário, em que o nome da função é `_user_onsubmit`. Pressupõe-se que a função não lançará nenhuma exceção, ou, se o fizer, a exceção será ignorada. É recomendável colocar a função JavaScript na seção head do html; no entanto, você pode declará-la em qualquer lugar antes do fim das tags de script que incluem `xfasubset.js`.
 
-Quando formserver renderiza um XDP que contém uma lista suspensa, além de criar a lista suspensa, ele também cria dois campos de texto ocultos. Esses campos de texto armazenam os dados da lista suspensa (um armazena o nome de exibição das opções e outro armazena o valor das opções). Portanto, sempre que um usuário enviar o formulário, todos os dados da lista suspensa serão enviados. Supondo que você não queira enviar tantos dados sempre, você pode escrever um script personalizado para desativá-los. Por exemplo: o nome da lista suspensa é `drpOrderedByStateProv` e ele é colocado no cabeçalho do subformulário. O nome do elemento de entrada de HTML será `header[0].drpOrderedByStateProv[0]`. O nome dos campos ocultos que armazenam e enviam os dados da lista suspensa tem os seguintes nomes: `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
+Quando formserver renderiza um XDP que contém uma lista suspensa, além de criar a lista suspensa, ele também cria dois campos de texto ocultos. Esses campos de texto armazenam os dados da lista suspensa (um armazena o nome de exibição das opções e outro armazena o valor das opções). Portanto, sempre que um usuário enviar o formulário, todos os dados da lista suspensa serão enviados. Supondo que você não deseje enviar tantos dados sempre, você pode gravar um script personalizado para desativá-los. Por exemplo: o nome da lista suspensa é `drpOrderedByStateProv` e ele é colocado no cabeçalho do subformulário. O nome do elemento de entrada de HTML será `header[0].drpOrderedByStateProv[0]`. O nome dos campos ocultos que armazenam e enviam os dados da lista suspensa tem os seguintes nomes: `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
 
 Você pode desativar esses elementos de entrada da seguinte maneira se não quiser publicar os dados. `var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature function _user_onsubmit() { var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]"); elems[0].disabled = true; elems = document.getElementsByName("header[0].drpOrderedByStateProv_VALUEITEMS_[0]"); elems[0].disabled = true; }`
 

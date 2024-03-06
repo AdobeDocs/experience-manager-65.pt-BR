@@ -7,9 +7,9 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1644'
+source-wordcount: '1646'
 ht-degree: 84%
 
 ---
@@ -39,7 +39,7 @@ Para obter mais detalhes sobre SPAs no AEM, consulte os seguintes documentos:
 
 ## Design {#design}
 
-O componente de página para um SPA não fornece os elementos HTML de seus componentes filho por meio do arquivo JSP ou HTL. Esta operação é delegada na estrutura de SPA. A representação de componentes ou modelos filhos é buscada como uma estrutura de dados JSON do JCR. Os componentes do SPA são adicionados à página de acordo com essa estrutura. Esse comportamento diferencia a composição do corpo inicial do componente de página de contrapartes não SPA.
+O componente de página para um SPA não fornece os elementos HTML de seus componentes secundários por meio do arquivo JSP ou HTL. Esta operação é delegada na estrutura de SPA. A representação de componentes ou modelos filhos é buscada como uma estrutura de dados JSON do JCR. Os componentes do SPA são adicionados à página de acordo com essa estrutura. Esse comportamento diferencia a composição do corpo inicial do componente de página de contrapartes não SPA.
 
 ### Gerenciamento do modelo de página {#page-model-management}
 
@@ -71,7 +71,7 @@ Você pode entender o fluxo da interação entre o SPA e o AEM pensando no edito
 * A comunicação entre o editor de páginas e o SPA é feita utilizando JSON em vez de HTML.
 * O editor de páginas fornece a versão mais recente do modelo de página para o SPA por meio do iframe e da API de mensagens.
 * O gerenciador de modelo de página notifica o editor de que está pronto para edição e passa o modelo de página como uma estrutura JSON.
-* O editor não altera ou nem acessa a estrutura DOM da página que está sendo criada, em vez de fornecer o modelo de página mais recente.
+* O editor não altera nem mesmo acessa a estrutura DOM da página que está sendo criada, mas fornece o modelo de página mais recente.
 
 ![screen_shot_2018-08-20at144324](assets/screen_shot_2018-08-20at144324.png)
 

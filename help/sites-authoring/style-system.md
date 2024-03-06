@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1293'
-ht-degree: 81%
+source-wordcount: '1297'
+ht-degree: 83%
 
 ---
 
@@ -29,7 +29,7 @@ O Sistema de estilos fornece uma solução unificada para os requisitos do autor
 * Autores(as) de modelos podem definir classes de estilo na política de conteúdo dos componentes.
 * Os autores de conteúdo podem então selecionar essas classes em uma lista suspensa ao editar o componente em uma página para aplicar os estilos correspondentes.
 
-A classe de estilo é então inserida no elemento wrapper de decoração do componente para que o desenvolvedor do componente não precise se preocupar com a manipulação de estilos, além de fornecer suas regras de CSS.
+A classe de estilo é então inserida no elemento de wrapper de decoração do componente para que o(a) desenvolvedor(a) do componente não precise se preocupar em manipular os estilos além de fornecer suas regras CSS.
 
 ## Visão geral {#overview}
 
@@ -126,9 +126,9 @@ Com o componente configurado, os estilos configurados pelos autores da página s
 
 ### Habilitar a guia Estilos na caixa de diálogo Editar {#enable-styles-tab-edit}
 
-A partir do AEM versão 6.5.3.0, uma guia Estilos opcional na caixa de diálogo Editar agora está disponível. Diferentemente da guia da caixa de diálogo Design, a guia na caixa de diálogo Editar não é essencial para o funcionamento do Sistema de estilos, mas é uma interface alternativa opcional para um autor de conteúdo definir estilos.
+A partir do AEM versão 6.5.3.0, uma guia Estilos opcional na caixa de diálogo Editar agora está disponível. Diferentemente da guia Design, a guia Editar não é essencial para o funcionamento do sistema de estilos, mas é uma interface alternativa e opcional para um autor de conteúdo definir estilos.
 
-A guia da caixa de diálogo Editar pode ser incluída de maneira semelhante na guia da caixa de diálogo Design:
+A guia Editar pode ser incluída de maneira semelhante na guia Design:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`

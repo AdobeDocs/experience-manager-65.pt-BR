@@ -7,10 +7,10 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4907'
-ht-degree: 1%
+source-wordcount: '4843'
+ht-degree: 0%
 
 ---
 
@@ -175,7 +175,7 @@ A definição de um componente pode ser dividida da seguinte forma:
 
    * `jcr:title` - Título do componente; por exemplo, usado como um rótulo quando o componente é listado no navegador de componentes ou sidekick.
    * `jcr:description` - Descrição do componente; pode ser usado como dica do mouse sobre o navegador de componentes ou sidekick.
-   * IU Clássica:
+   * Interface clássica:
 
       * `icon.png` - Ícone para este componente.
       * `thumbnail.png` - Imagem mostrada se esse componente estiver listado no sistema de parágrafos.
@@ -196,7 +196,7 @@ A definição de um componente pode ser dividida da seguinte forma:
       * `cq:dialog` ( `nt:unstructured`) - Caixa de diálogo para esse componente. Define a interface que permite ao usuário configurar o componente e/ou editar conteúdo.
       * `cq:design_dialog` ( `nt:unstructured`) - Edição de design para este componente
 
-   * IU Clássica:
+   * Interface clássica:
 
       * `dialog` ( `cq:Dialog`) - Caixa de diálogo para esse componente. Define a interface que permite ao usuário configurar o componente ou editar o conteúdo, ou ambos.
       * `design_dialog` ( `cq:Dialog`) - Edição de design para este componente.
@@ -409,7 +409,7 @@ Os nós filhos de interesse específico incluem:
 * Interface habilitada para toque:
    * `cq:dialog` ( `nt:unstructured`) - define a caixa de diálogo para editar o conteúdo desse componente
    * `cq:design_dialog` ( `nt:unstructured`) - especifica as opções de edição de design para este componente
-* IU Clássica:
+* Interface clássica:
    * `dialog` ( `cq:Dialog`) - define a caixa de diálogo para editar o conteúdo desse componente (específico da interface clássica)
    * `design_dialog` ( `cq:Dialog`) - especifica as opções de edição de design para este componente
    * `icon.png` - arquivo gráfico a ser usado como um ícone para o componente no Sidekick
@@ -602,7 +602,7 @@ Há muitas configurações existentes no repositório. Você pode pesquisar faci
 
 ### Marcadores de posição do componente {#component-placeholders}
 
-Os componentes sempre devem renderizar algum HTML que esteja visível para o autor, mesmo quando o componente não tiver conteúdo. Caso contrário, ela poderá desaparecer visualmente da interface do editor, tornando-se tecnicamente presente, mas invisível na página e no editor. Nesse caso, os autores não poderão selecionar e interagir com o componente vazio.
+Os componentes sempre devem renderizar algum HTML que esteja visível para o autor, mesmo quando o componente não tiver conteúdo. Caso contrário, ela poderá desaparecer visualmente da interface do editor, tornando-se tecnicamente presente, mas invisível na página e no editor. Nesse caso, os autores não podem selecionar e interagir com o componente vazio.
 
 Por esse motivo, os componentes devem renderizar um espaço reservado, desde que não renderizem nenhuma saída visível quando a página for renderizada no editor de páginas (quando o modo WCM for `edit` ou `preview`).
 A marcação de HTML típica de um espaço reservado é a seguinte:
@@ -642,7 +642,7 @@ A variável `cq:actions` propriedade ( `String array`) define uma ou várias aç
 <table>
  <tbody>
   <tr>
-   <td><strong>Valor da propriedade</strong></td>
+   <td><strong>Valor de propriedade</strong></td>
    <td><strong>Descrição</strong></td>
   </tr>
   <tr>
@@ -701,7 +701,7 @@ A variável `cq:layout` propriedade ( `String`) define como o componente pode se
 <table>
  <tbody>
   <tr>
-   <td><strong>Valor da propriedade</strong></td>
+   <td><strong>Valor de propriedade</strong></td>
    <td><strong>Descrição</strong></td>
   </tr>
   <tr>
@@ -740,7 +740,7 @@ O componente pode ser vinculado a uma caixa de diálogo de edição. A variável
 <table>
  <tbody>
   <tr>
-   <td><strong>Valor da propriedade</strong></td>
+   <td><strong>Valor de propriedade</strong></td>
    <td><strong>Descrição</strong></td>
   </tr>
   <tr>
@@ -749,7 +749,7 @@ O componente pode ser vinculado a uma caixa de diálogo de edição. A variável
   </tr>
   <tr>
    <td><code>inline</code></td>
-   <td>(Valor padrão). A caixa de diálogo é ancorada sobre o componente.<br /> </td>
+   <td>(valor padrão). A caixa de diálogo é ancorada sobre o componente.<br /> </td>
   </tr>
   <tr>
    <td><code>auto</code></td>
@@ -822,8 +822,8 @@ O nó do tipo `cq:DropTargetConfig` deve ter as seguintes propriedades:
 <table>
  <tbody>
   <tr>
-   <td><strong>Nome da Propriedade</strong></td>
-   <td><strong>Valor da propriedade<br /> </strong></td>
+   <td><strong>Nome de propriedade</strong></td>
+   <td><strong>Valor de propriedade<br /> </strong></td>
   </tr>
   <tr>
    <td><code>accept</code></td>
@@ -904,8 +904,8 @@ A variável `cq:inplaceEditing` nó (tipo de nó `cq:InplaceEditingConfig`) defi
 <table>
  <tbody>
   <tr>
-   <td><strong>Nome da Propriedade</strong></td>
-   <td><strong>Valor da propriedade<br /> </strong></td>
+   <td><strong>Nome de propriedade</strong></td>
+   <td><strong>Valor de propriedade<br /> </strong></td>
   </tr>
   <tr>
    <td><code>active</code></td>
@@ -943,8 +943,8 @@ A variável `cq:listeners` nó (tipo de nó `cq:EditListenersConfig`) define o q
 <table>
  <tbody>
   <tr>
-   <td><strong>Nome da Propriedade</strong></td>
-   <td><strong>Valor da propriedade<br /> </strong></td>
+   <td><strong>Nome de propriedade</strong></td>
+   <td><strong>Valor de propriedade<br /> </strong></td>
    <td><p><strong>Valor padrão</strong></p> <p>(Somente interface clássica)</p> </td>
   </tr>
   <tr>

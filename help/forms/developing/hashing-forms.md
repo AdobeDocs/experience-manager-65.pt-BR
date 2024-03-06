@@ -2,9 +2,9 @@
 title: Como gerar e trabalhar com hashes em PDF forms dinâmicos?
 description: Gerar e trabalhar com hashes em PDF forms dinâmicos.
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1189'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Início
 
-Quando quiser ocultar uma senha no formulário PDF e não quiser que ela fique em texto não criptografado dentro do código-fonte ou em qualquer outro lugar no documento PDF, saber como gerar e trabalhar com hashes MD4, MD5, SHA-1 e SHA-256 é fundamental.
+Quando quiser ocultar uma senha no formulário PDF e não quiser que ela fique em texto não criptografado dentro do código-fonte ou em qualquer outro lugar no documento PDF, é importante saber como gerar e trabalhar com hashes MD4, MD5, SHA-1 e SHA-256.
 
 A ideia é ofuscar a senha gerando um hash exclusivo e armazenando esse hash no documento PDF. Esse hash exclusivo pode ser gerado por diferentes funções de hash e, neste artigo, é mostrado como gerá-los dentro do formulário PDF e como trabalhar com eles.
 
@@ -75,7 +75,7 @@ Os arquivos de exemplo deste artigo incluem dois PDF forms. A primeira amostra p
 
 Siga as etapas abaixo para experimentar a primeira amostra:
 
-1. Depois de baixar e descompactar os arquivos de amostra, abra hashing_forms_sample1.pdf com o AEM Forms no JEE Designer. Como alternativa, você pode usar o Adobe Reader ou o Adobe Acrobat Professional para abrir e exibir a amostra, mas não será possível ver o código-fonte.
+1. Depois de baixar e descompactar os arquivos de amostra, abra hashing_forms_sample1.pdf com o AEM Forms no JEE Designer. Como alternativa, você pode usar o Adobe Reader ou o Adobe Acrobat Professional para abrir e exibir a amostra, mas não é possível ver o código-fonte.
 1. No campo de texto rotulado [!UICONTROL limpar texto] digite uma senha ou qualquer outra mensagem que você deseja que seja transformada em hash.
 1. Clique em um dos quatro botões para gerar o hash MD4, MD5, SHA-1 ou SHA-256. Dependendo do botão pressionado, uma das quatro funções de hash que produzem saída hexadecimal é chamada e a cadeia de caracteres ou mensagem é transformada em hash.
 
@@ -89,7 +89,7 @@ A segunda amostra demonstra como os hashes são comparados em segundo plano, sem
 
 Siga as etapas abaixo para experimentar a segunda amostra:
 
-1. Abertura `hashing_forms_sample2.pdf` com o AEM Forms no JEE Designer. Como alternativa, você pode usar o Adobe Reader ou o Adobe Acrobat Professional para abrir e exibir a amostra, mas não será possível ver o código-fonte.
+1. Abertura `hashing_forms_sample2.pdf` com o AEM Forms no JEE Designer. Como alternativa, você pode usar o Adobe Reader ou o Adobe Acrobat Professional para abrir e exibir a amostra, mas não é possível ver o código-fonte.
 1. Escolha um dos dois campos de senha [!UICONTROL Senha MAN] ou [!UICONTROL Senha WOMAN] e digite as senhas:
    1. A senha do homem é `bob`
    1. A senha da mulher é `alice`

@@ -3,9 +3,9 @@ title: "Tutorial: Criar um formulário adaptável"
 description: Saiba como criar, fazer layout e pré-visualizar um formulário adaptável. Além disso, aprenda a configurar ações de envio.
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1314'
 ht-degree: 8%
 
 ---
@@ -57,7 +57,7 @@ AEM [!DNL Forms] O fornece muitos componentes para exibir informações em um fo
 
 1. Selecione Imagem. A barra de ferramentas é exibida. Selecionar ![cmppr](assets/cmppr.png). O navegador de propriedades é aberto à esquerda da tela. **[!UICONTROL Procurar]** e carregue a imagem do logotipo. Selecionar ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). A imagem aparece no cabeçalho.
 
-   Você pode selecionar Obter arquivo para baixar o logotipo usado neste artigo, se você não tiver um.
+   É possível selecionar Get file para baixar o logotipo usado neste artigo, caso não tenha um.
 
 [Obter arquivo](assets/logo.png)
 
@@ -169,7 +169,7 @@ Usando as etapas a seguir, você pode configurar a ação de envio de email e a 
    | De | `donotreply@weretail.com` |
    | Para | `${customer_Email}` |
    | Assunto | Confirmação: você adicionou o endereço de entrega no site We.Retail. |
-   | Modelo do e-mail | Oi `${customer_Name}`, O seguinte endereço é adicionado como o endereço de entrega da sua conta: <br>`${customer_Name}`, `${customer_Shipping_Address}`, `${customer_State}`, `${customer_ZIPCode}`<br> Atenciosamente, We.Retail |
+   | Modelo de e-mail | Oi `${customer_Name}`, O seguinte endereço é adicionado como o endereço de entrega da sua conta: <br>`${customer_Name}`, `${customer_Shipping_Address}`, `${customer_State}`, `${customer_ZIPCode}`<br> Atenciosamente, We.Retail |
    | Incluir anexos | Habilitado |
 
    Seu formulário está pronto. Agora, você pode visualizar o formulário e testar a funcionalidade. Se você usou o nome mencionado no tutorial e acessou o formulário na máquina que executa o AEM [!DNL Forms] , então o formulário estará disponível em [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).

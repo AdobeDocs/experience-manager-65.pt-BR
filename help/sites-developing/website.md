@@ -7,10 +7,10 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4941'
-ht-degree: 2%
+source-wordcount: '4920'
+ht-degree: 1%
 
 ---
 
@@ -925,8 +925,8 @@ Crie a caixa de diálogo para configurar o componente de logotipo no modo Design
    |---|---|---|
    | fileNameParameter | String | ./imageName |
    | fileReferenceParameter | String | ./imageReference |
-   | name | String | ./imagem |
-   | título | String | Imagem |
+   | name | String | ./image |
+   | cargo | String | Imagem |
    | xtype | String | html5smartimage |
 
    ![chlimage_1-47](assets/chlimage_1-47.png)
@@ -968,7 +968,7 @@ public class img_GET extends AbstractImageServlet {
 
     protected Layer createLayer(ImageContext c)
             throws RepositoryException, IOException {
-        /* don't create the layer yet. handle everything later */
+        /* do not create the layer yet. handle everything later */
         return null;
     }
 
@@ -1147,7 +1147,7 @@ Crie um componente que exiba uma imagem no sistema de parágrafos. Para economiz
 
 Esta seção descreve como criar o script de imagem.
 
-1. Abrir `/apps/mywebsite/components/image/` `image.jsp`
+1. Abertura `/apps/mywebsite/components/image/` `image.jsp`
 1. Substitua o código existente pelo seguinte código e salve as alterações:
 
    ```xml
@@ -1286,7 +1286,7 @@ Quando terminar, sua caixa de entrada de pesquisa deverá ter a seguinte aparên
 1. Copie os nós a seguir e cole-os no nó apps/mywebsite/components/search:
 
    * `/libs/foundation/components/search/dialog`
-   * `` `/libs/foundation/components/search/i18n`
+   * &quot; `/libs/foundation/components/search/i18n`
 
    * `/libs/foundation/components/search/icon.png`
 

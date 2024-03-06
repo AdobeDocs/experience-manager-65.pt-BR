@@ -5,16 +5,16 @@ contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: abd3fbb5abb339d5b019fd2d7cf325404fb079e8
 workflow-type: tm+mt
-source-wordcount: '2717'
-ht-degree: 9%
+source-wordcount: '2665'
+ht-degree: 7%
 
 ---
 
 # Entender os conceitos de metadados {#why-we-need-metadata}
 
-Metadados são dados sobre dados. A este respeito, os dados se referem ao seu ativo digital, digamos uma imagem. Os metadados são essenciais para um gerenciamento eficiente de ativos.
+Metadados são dados sobre dados. A este respeito, os dados se referem ao seu ativo digital, digamos uma imagem. Os metadados são essenciais para o gerenciamento eficiente de ativos.
 
 Os metadados são a coleção de todos os dados disponíveis para um ativo, mas que não estão necessariamente contidos nessa imagem. Alguns exemplos de metadados são:
 
@@ -134,7 +134,7 @@ Os metadados específicos do aplicativo incluem metadados técnicos e descritivo
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
 * MAIS - [Sistema Universal de Licenciamento de Imagem](https://www.useplus.com).
-* PRISM - [Requisitos de publicação para metadados padrão do setor](https://www.idealliance.org/prism-metadata).
+* PRISM - [Requisitos de publicação para metadados padrão do setor](https://www.w3.org/submissions/2020/SUBM-prism-20200910/Image_Guide.pdf).
 * PRL - Idioma de direitos PRISM.
 * PUR - Direitos de Uso do PRISM.
 * `xmpPlus` - Integração do PLUS com o XMP.
@@ -149,7 +149,7 @@ Os metadados específicos do aplicativo incluem metadados técnicos e descritivo
 ### Metadados específicos de impressão {#print-specific-metadata}
 
 * PDF e PDF/X - Adobe PDF e aplicativos de terceiros.
-* PRISM - [Requisitos de publicação para metadados padrão do setor](https://www.idealliance.org/prism-metadata).
+* PRISM - [Requisitos de publicação para metadados padrão do setor](https://www.w3.org/submissions/2020/SUBM-prism-20200910/Image_Guide.pdf).
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - Metadados de XMP para texto paginado.
 
@@ -183,9 +183,9 @@ Além do DCMES, existem outros elementos de metadados criados pela Iniciativa pr
 | editor | A pessoa ou empresa responsável por disponibilizar o ativo. |
 | relação | Um ativo relacionado. |
 | direitos | Informações sobre quem tem os direitos a este ativo. |
-| source | Um ativo relacionado do qual o ativo é derivado. |
+| origem | Um ativo relacionado do qual o ativo é derivado. |
 | assunto | O tópico do ativo. |
-| título | Um nome para o ativo. |
+| cargo | Um nome para o ativo. |
 | tipo | A natureza ou gênero do ativo. |
 
 ### IPTC {#iptc}

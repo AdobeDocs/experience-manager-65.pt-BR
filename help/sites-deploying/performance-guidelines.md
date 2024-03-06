@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2935'
+source-wordcount: '2939'
 ht-degree: 4%
 
 ---
@@ -348,7 +348,7 @@ Desenvolver para o AEM visando **desempenho e escalabilidade**. Estas são as pr
 **NÃO**
 
 * Não use APIs JCR diretamente, se você puder
-* Não altere /libs, use sobreposições
+* Não altere /libs, mas use sobreposições
 * Não usar consultas sempre que possível
 * Não use Ligações Sling para obter serviços OSGi no código Java™, mas use:
 
@@ -470,13 +470,13 @@ Para um bom desempenho, você deve seguir as diretrizes de configuração aprese
   <tr>
    <td>Fluxo de trabalho do Ativo de atualização DAM</td>
    <td><code>Transient Workflow</code></td>
-   <td>verificado</td>
+   <td>marcado</td>
    <td>Esse fluxo de trabalho controla a atualização de ativos.</td>
   </tr>
   <tr>
    <td>Writeback de metadados DAM</td>
    <td><code>Transient Workflow</code></td>
-   <td>verificado</td>
+   <td>marcado</td>
    <td>Esse fluxo de trabalho gerencia o write-back do XMP para o binário original e define a última data modificada em JCR.</td>
   </tr>
  </tbody>
