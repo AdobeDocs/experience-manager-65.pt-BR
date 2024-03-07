@@ -2,9 +2,10 @@
 title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: f00d2c88ba6727f8f8597fefeb467b612b23dea3
+exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
+source-git-commit: 39261357c17ef565a39ebc441aed356d69b4d8f9
 workflow-type: tm+mt
-source-wordcount: '3524'
+source-wordcount: '3560'
 ht-degree: 2%
 
 ---
@@ -478,6 +479,7 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
    1. Reinicie o servidor AEM e verifique o status de ativação de todos os pacotes assim que o processo de reinicialização for concluído. É possível monitorar o status dos pacotes acessando: `https://server:host/system/console/bundles`. Verifique se todos os pacotes estão ativos antes de continuar com outras tarefas.
 
 * O serviço de preenchimento prévio falha com uma exceção de ponteiro nulo nas Comunicações interativas. (CQDOC-21355)
+* O Forms adaptável permite usar funções personalizadas com o ECMAScript versão 5 ou anterior. Quando uma função personalizada usa o ECMAScript versão 6 ou posterior, como &quot;let&quot;, &quot;const&quot; ou funções de seta, o editor de regras pode não abrir corretamente.
 
 <!--Known issues in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of known issues for forms is added to this section post the release.-->
 
