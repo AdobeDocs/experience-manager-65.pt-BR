@@ -7,9 +7,9 @@ topic-tags: customization
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1242'
 ht-degree: 0%
 
 ---
@@ -143,8 +143,8 @@ Por exemplo, para o cabeçalho &quot;Título&quot; na exibição de grade, o val
 * **diffTime**: Diferença entre a hora atual e a última ação de salvamento do rascunho. Como alternativa, a diferença entre a hora atual e a última ação enviada para o envio.
 * **iconClass**: classe CSS usada para exibir a primeira letra do rascunho/envio. O Forms Portal inclui as seguintes classes, que fornecem vários planos de fundo coloridos.
 * **proprietário**: usuário que criou o rascunho/envio.
-* **Hoje**: Data de criação do rascunho ou envio em DD:MM:formato AAAA.
-* **TimeNow**: Hora de criação do rascunho ou envio em HH:MM:SS formato de 24 horas
+* **Hoje**: Data de criação do rascunho ou envio no `DD:MM:YYYY` formato.
+* **TimeNow**: Hora de criação do rascunho ou envio no `HH:MM:SS` Formato de 24 horas
 
 *Nota:*
 

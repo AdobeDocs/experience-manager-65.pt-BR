@@ -7,10 +7,10 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 1%
+source-wordcount: '1160'
+ht-degree: 0%
 
 ---
 
@@ -85,11 +85,11 @@ Para usar o Editor de itens em massa para editar vários itens simultaneamente:
    <td>Marque esta caixa de seleção para poder ler as propriedades na <code>jcr:content</code> subnó dos resultados da pesquisa, se existir. Use somente para páginas. Os nomes de propriedades recebem o prefixo <code>"jcr:content/"</code></td>
   </tr>
   <tr>
-   <td>Propriedades / Colunas</td>
+   <td>Propriedades/Colunas</td>
    <td>Marque as caixas de seleção das propriedades que você deseja que o Editor de itens em massa retorne. As propriedades selecionadas são os cabeçalhos de coluna no painel de resultados. Por padrão, o caminho do nó é exibido nos resultados.</td>
   </tr>
   <tr>
-   <td>Propriedades / Colunas personalizadas</td>
+   <td>Propriedades/Colunas personalizadas</td>
    <td>Insira quaisquer outras propriedades que não estejam listadas no <strong>Propriedades/Colunas</strong> campo. Essas propriedades personalizadas são exibidas no painel de resultados. É possível adicionar várias propriedades usando uma vírgula para separá-las. <i>Nota:</i> Se você adicionar uma propriedade personalizada que ainda não existe, o AEM WCM exibe uma célula vazia. Quando você modifica a célula vazia e a salva, a propriedade é adicionada ao nó. A propriedade recém-criada deve respeitar as restrições do tipo de nó e os namespaces de propriedade.</td>
   </tr>
  </tbody>
@@ -119,7 +119,8 @@ Para o exemplo acima, todas as páginas que atendem aos seus critérios de pesqu
 * **caminho:** pesquisar somente nós abaixo deste caminho. Se você especificar mais de um termo com um prefixo de caminho, somente o último será considerado.
 * **tipo:** retorna somente nós do tipo de nó fornecido. Isso inclui os tipos primário e mixin. Você pode especificar vários tipos de nó separados por vírgula. O GQL retorna nós que sejam de qualquer um dos tipos especificados.
 * **pedido:** ordenar o resultado pelas propriedades fornecidas. Você pode especificar vários nomes de propriedades separados por vírgulas. Para ordenar o resultado em ordem decrescente, basta adicionar um prefixo ao nome da propriedade com um sinal de menos. Por exemplo, order:-name. Usar um sinal de mais retorna o resultado em ordem crescente, que também é o padrão.
-* **limite:** limita o número de resultados usando um intervalo. Por exemplo, limit:10..20 O intervalo é baseado em zero, start é inclusivo e end é exclusivo. Você também pode especificar um intervalo aberto:limit:10. ou limite:..20 Se os pontos forem omitidos e somente um valor for especificado, o GQL retornará no máximo esse número de resultados. Por exemplo, limit:10 (retorna os primeiros dez resultados).
+* **limite:** limita o número de resultados usando um intervalo. Por exemplo, limit:10..20 O intervalo é baseado em zero, start é inclusivo e end é exclusivo. Você também pode especificar uma abertura `interval:limit:10..` ou `limit:..20`
+Se os pontos forem omitidos e somente um valor for especificado, o GQL retornará no máximo esse número de resultados. Por exemplo, `limit:10` (retorna os primeiros dez resultados).
 
 ### Exportar conteúdo {#exporting-content}
 

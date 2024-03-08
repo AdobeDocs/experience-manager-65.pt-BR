@@ -7,7 +7,7 @@ content-strategy: max-2018
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
 source-wordcount: '6084'
 ht-degree: 1%
@@ -178,7 +178,7 @@ Lista de metapropriedades de um tema (encontrada na página de propriedades de u
      <li>O caminho do repositório definido pelo usuário em '/etc' onde as clientlibs correspondentes a este tema são armazenadas.</li>
      <li>Valor padrão - "/etc/clientlibs/fd/themes" + caminho relativo do ativo do tema.</li>
      <li>Se o local não existir, a hierarquia de pastas será gerada automaticamente.</li>
-     <li>Quando esse valor é alterado, a estrutura do nó clientlib é movida para o novo local inserido.<br /> <em><strong>Nota:</strong> Se você alterar o local padrão das bibliotecas de clientes, no repositório CRXDE, atribua <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code>para <code>forms-users</code> e <code>crx:replicate</code>, <code>jcr:read </code>para <code>fd-service</code> no novo local. Também anexe outra ACL adicionando <code>deny jcr:addChildNodes</code> para <code>forms-user</code></em></li>
+     <li>Quando esse valor é alterado, a estrutura do nó clientlib é movida para o novo local inserido.<br /> <em><strong>Nota:</strong> Se você alterar o local padrão das bibliotecas de clientes, no repositório CRXDE, atribua <code>crx:replicate</code>, <code>rep:write</code>, <code>rep:glob:*</code>, <code>rep:itemNames::</code> <code>js.txt</code>, <code>jcr:read</code> para <code>forms-users</code> e <code>crx:replicate</code>, <code>jcr:read</code> para <code>fd-service</code> no novo local. Também anexe outra ACL adicionando <code>deny jcr:addChildNodes</code> para <code>forms-user</code></em></li>
     </ul> </td>
   </tr>
   <tr>
@@ -254,7 +254,7 @@ Os painéis prontos para uso incluem:
 * Guias na esquerda
 * Guias na parte superior
 * Acordeão
-* Receptivo
+* Responsivo
 * Assistente
 * Layout para dispositivo móvel
 

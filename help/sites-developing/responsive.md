@@ -7,9 +7,9 @@ topic-tags: mobile-web
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '5375'
+source-wordcount: '5293'
 ht-degree: 0%
 
 ---
@@ -200,7 +200,7 @@ Por exemplo, para criar um ` [sling:OsgiConfig](/help/sites-deploying/configurin
 
   O - `*alias*` o sufixo é necessário porque o serviço MobileEmulatorProvider é um serviço de fábrica. Use qualquer alias que seja exclusivo para esta fábrica.
 
-* jcr:primaryType: `sling:OsgiConfig`
+* `jcr:primaryType`: `sling:OsgiConfig`
 
 Adicione a seguinte propriedade do nó:
 
@@ -465,7 +465,7 @@ O valor inteiro indica sem dimensionamento.
 Os seguintes valores de qualidade do JPEG são suportados:
 
 * BAIXA
-* MÉDIO
+* MÉDIA
 * ALTA
 
 Os valores numéricos são 0,4, 0,82 e 1,0, respectivamente.

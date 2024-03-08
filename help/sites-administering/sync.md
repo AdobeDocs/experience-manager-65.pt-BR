@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '2434'
+source-wordcount: '2433'
 ht-degree: 1%
 
 ---
@@ -140,7 +140,7 @@ O usuário autorizado é usado na etapa 3 para configurar a distribuição do Sl
    * **Principal**: *pesquisar usuário criado para sincronização de usuários*
    * **Tipo**: `Allow`
    * **Privilégios**: `jcr:all`
-   * **Restrições** rep:glob: `*/activities/*`
+   * **Restrições** `rep:glob`: `*/activities/*`
    * selecionar **OK**
 
 * selecionar **Salvar tudo**

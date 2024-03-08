@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 7c3d0dac-4e19-4eb3-a43d-909d526acd55
-source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1542'
 ht-degree: 1%
 
 ---
@@ -94,7 +94,7 @@ Uma ação Enviar é uma sling:Folder que inclui o seguinte:
 
 * **addfields.jsp**: esse script fornece os campos de ação que são adicionados ao arquivo de HTML durante a representação. Use esse script para adicionar os parâmetros de entrada ocultos necessários durante o envio no script post.POST.jsp.
 * **dialog.xml**: Esse script é semelhante à caixa de diálogo Componente CQ. Ela fornece informações de configuração que o autor personaliza. Os campos são exibidos na guia Enviar ações na caixa de diálogo Editar formulário adaptável ao selecionar a ação Enviar.
-* **post.POST.jsp**: O servlet Submit chama esse script com os dados enviados e os dados adicionais nas seções anteriores. Qualquer menção de executar uma ação nesta página implica executar o script post.POST.jsp. Para registrar a ação Enviar com os formulários adaptáveis a serem exibidos na caixa de diálogo Editar formulário adaptável, adicione essas propriedades ao sling:Folder:
+* **post.POST.jsp**: O servlet Submit chama esse script com os dados enviados e os dados adicionais nas seções anteriores. Qualquer menção de executar uma ação nesta página implica executar o script post.POST.jsp. Para registrar a ação Enviar com os formulários adaptáveis a serem exibidos na caixa de diálogo Editar formulário adaptável, adicione essas propriedades à `sling:Folder`:
 
    * **guideComponentType** do tipo String e valor **fd/af/components/guidesubmittype**
    * **guideDataModel** do tipo String que especifica o tipo de formulário adaptável ao qual a ação Enviar se aplica. **xfa** é compatível com formulários adaptáveis baseados em XFA enquanto **xsd** O é compatível com formulários adaptáveis baseados em XSD. **básico** O é compatível com formulários adaptáveis que não usam XDP ou XSD. Para exibir a ação em vários tipos de formulários adaptáveis, adicione as cadeias de caracteres correspondentes. Separe cada string por vírgula. Por exemplo, para tornar uma ação visível em formulários adaptáveis baseados em XFA e XSD, especifique os valores **xfa** e **xsd** respectivamente.

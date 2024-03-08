@@ -8,10 +8,10 @@ topic-tags: deploying
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '3032'
-ht-degree: 2%
+source-wordcount: '3034'
+ht-degree: 0%
 
 ---
 
@@ -168,7 +168,7 @@ Caracteres especiais, como *&quot;-&quot;* não são indexados.
 
 A lista de documentos está classificada. Isso é útil ao consultar.
 
-<b>Localizando</b>
+<b>Pesquisa</b>
 
 Veja abaixo um exemplo de query. Observe que todos os caracteres especiais (como *&#39;*) foram substituídas por um espaço:
 
@@ -222,7 +222,7 @@ Dê o exemplo de consulta a seguir:
 select * from [nt:base] where [alias] = '/admin'
 ```
 
-Para definir um Índice de propriedades Lucene para a consulta acima, adicione a seguinte definição criando um nó em **carvalho:index:**
+Para definir um Índice de propriedades Lucene para a consulta acima, adicione a seguinte definição criando um nó em **`oak:index`:**
 
 * **Nome:** `LucenePropertyIndex`
 * **Tipo:** `oak:QueryIndexDefinition`
@@ -235,7 +235,7 @@ Depois que o nó for criado, adicione as seguintes propriedades:
   lucene (of type String)
   ```
 
-* **async:**
+* **assíncrono:**
 
   ```xml
   async (of type String)
@@ -320,7 +320,7 @@ Considere essa estrutura de nó como um exemplo:
 
       * **Nome:** `tokenizer`
 
-         * **Nome da Propriedade:** `name`
+         * **Nome da propriedade:** `name`
 
             * **Tipo:** `String`
             * **Valor:** `Standard`

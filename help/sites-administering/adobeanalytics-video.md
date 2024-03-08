@@ -7,10 +7,10 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1745'
-ht-degree: 2%
+source-wordcount: '1754'
+ht-degree: 0%
 
 ---
 
@@ -117,7 +117,7 @@ A tabela a seguir descreve as variáveis de CQ padrão fornecidas para o método
   </tr>
   <tr>
    <td>eventdata.a.media.segment </td>
-   <td>Contém informações sobre o segmento que foi visualizado, por exemplo, 2:O:4-8 </td>
+   <td>Contém informações sobre o segmento que foi visualizado, por exemplo, <code>2:O:4-8</code> </td>
   </tr>
  </tbody>
 </table>
@@ -199,7 +199,7 @@ Os exemplos de dados de rastreamento do Adobe Analytics a seguir se aplicam ao r
   </tr>
   <tr>
    <td>eventdata.a.contentType </td>
-   <td>eVar3</td>
+   <td>EVAR 3</td>
   </tr>
   <tr>
    <td>eventdata.a.media.name </td>
@@ -207,7 +207,7 @@ Os exemplos de dados de rastreamento do Adobe Analytics a seguir se aplicam ao r
   </tr>
   <tr>
    <td>eventdata.a.media.segment </td>
-   <td>eVar2</td>
+   <td>EVAR 2</td>
   </tr>
  </tbody>
 </table>
@@ -317,7 +317,7 @@ Este método é semelhante ao método de Marcos com a diferença de que os marco
 
    **Exemplos de chamadas** Para o Adobe Analytics usar o exemplo fornecido, deve ter esta aparência quando visualizado com o DigitalPulse Debugger:
 
-   ![lmilestones1](assets/lmilestones1.png)
+   ![marcos1](assets/lmilestones1.png)
 
    *A variável **pev3**enviada na chamada contém as seguintes informações:*
 
