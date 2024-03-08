@@ -7,9 +7,9 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: bd3c3c2f833e4d7e763e7726c5c75597523605d7
 workflow-type: tm+mt
-source-wordcount: '1891'
+source-wordcount: '1892'
 ht-degree: 0%
 
 ---
@@ -161,7 +161,7 @@ A Janela de manutenção semanal integrada, disponível por meio da [Painel de o
 >
 >O motivo para não executá-lo simultaneamente é para que os arquivos antigos (e não utilizados) do armazenamento de dados também sejam submetidos a backup, de modo que, se for necessário reverter para uma revisão antiga, os binários ainda estejam lá no backup.
 
-Se você não quiser executar a coleta de lixo do armazenamento de dados com a Janela de manutenção semanal no Painel de operações, ela também poderá ser automatizada usando os clientes HTTP wget ou curl. Este é um exemplo de como automatizar o backup usando o curl:
+Se você não quiser executar a coleta de lixo do armazenamento de dados com a Janela de manutenção semanal no Painel de operações, ela também poderá ser automatizada usando os clientes HTTP wget ou curl. Este é um exemplo de como automatizar a coleta de lixo usando o curl:
 
 >[!CAUTION]
 >
