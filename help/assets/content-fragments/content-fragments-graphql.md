@@ -4,10 +4,10 @@ description: Saiba como usar fragmentos de conteúdo AEM com o GraphQL para entr
 feature: Content Fragments
 role: User
 exl-id: 2debd678-2d73-41f2-b33c-c29d661f6a6b
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 80%
+source-wordcount: '669'
+ht-degree: 74%
 
 ---
 
@@ -32,7 +32,7 @@ Com o Adobe Experience Manager (AEM), você pode usar Fragmentos de conteúdo, j
 
 Um sistema de gerenciamento de conteúdo (CMS) headless é:
 
-* “*Um sistema de gerenciamento de conteúdo headless, ou CMS headless, é um sistema de gerenciamento de conteúdo (CMS) de back-end criado desde o início como um repositório de conteúdo que torna o conteúdo acessível por meio de uma API para exibição em qualquer dispositivo“.*
+* &quot;*Um sistema de gerenciamento de conteúdo headless, ou CMS headless, é um sistema de gerenciamento de conteúdo (CMS) de back-end criado desde o início como um repositório de conteúdo que torna o conteúdo acessível por meio de uma API para exibição em qualquer dispositivo.*
 
   Consulte a [Wikipédia](https://en.wikipedia.org/wiki/Headless_content_management_system).
 

@@ -1,15 +1,15 @@
 ---
 title: Introdução ao Java&trade; API QuickStart
-description: Saiba como as operações do AEM Forms podem ser executadas usando a API altamente tipada do AEM Forms Java&trade; habilitada com conexão SOAP.
+description: Saiba como as operações do AEM Forms podem ser executadas usando a API altamente tipada do AEM Forms Java&trade; habilitada com a conexão SOAP.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, development-tools
 role: Developer
 exl-id: 1d4062ef-fb24-4527-b899-896ce757beda
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ O Adobe AEM Forms API Quick Start pode ajudá-lo a acelerar seus esforços para 
 
 As operações do AEM Forms podem ser executadas usando a API altamente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
-O Quick Start da API do Java™ altamente digitado fornece uma lista de arquivos JAR necessários para executar a aplicação Java™. A maioria das inicializações rápidas do Java™ é de aplicativos de console executados no `main`. No entanto, o Quick Start da API do Forms Java™ altamente digitado é implementado como um servlet Java™ que é executado em uma aplicação Web.
+O Quick Start da API altamente digitado do Java™ fornece uma lista de arquivos JAR necessários para executar a aplicação Java™. A maioria das inicializações rápidas do Java™ é de aplicativos de console executados no `main`. No entanto, o Quick Start da API do Forms Java™ altamente digitado é implementado como um servlet Java™ que é executado em uma aplicação Web.
 
 A listagem de arquivos JAR está em uma seção de comentários no início do Início rápido. Por exemplo, o comentário a seguir está em um Início rápido de saída e é uma lista de arquivos JAR típica encontrada em cada Início rápido do Java™.
 
@@ -85,4 +85,4 @@ Início mais rápido em *Programação com o AEM Forms no JEE* chame um serviço
 
 >[!NOTE]
 >
-A maioria dos serviços Web de início rápido é escrita em C# e usa o .NET framework. No entanto, é possível criar uma lógica de aplicativo cliente que possa chamar serviços da AEM Forms em qualquer ambiente de desenvolvimento compatível com os padrões SOAP. (Consulte [Chamar o AEM Forms usando serviços da Web](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
+>A maioria dos serviços Web de início rápido é escrita em C# e usa o .NET framework. No entanto, é possível criar uma lógica de aplicativo cliente que possa chamar serviços da AEM Forms em qualquer ambiente de desenvolvimento compatível com os padrões SOAP. (Consulte [Chamar o AEM Forms usando serviços da Web](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)

@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '6061'
+source-wordcount: '5868'
 ht-degree: 2%
 
 ---
@@ -137,7 +137,7 @@ A criação de uma verificação de integridade individual envolve duas etapas: 
 
 A função de uma Verificação de integridade composta é agregar várias Verificações de integridade individuais que compartilham um conjunto de recursos comuns. Por exemplo, a Verificação de integridade do composto de segurança agrupa todas as verificações de integridade individuais que executam verificações relacionadas à segurança. A primeira etapa para criar uma verificação composta é adicionar uma configuração OSGI. Para que seja exibido no Painel de operações, um novo nó de configuração deve ser adicionado da mesma forma que uma verificação simples.
 
-1. Vá para o Gerenciador de configuração da Web no Console OSGI. Acesso `https://serveraddress:port/system/console/configMgr`
+1. Vá para o Gerenciador de configuração da Web no Console OSGI. Access `https://serveraddress:port/system/console/configMgr`
 1. Procure a entrada chamada **Verificação de integridade do Apache Sling Composite**. Depois de localizá-la, observe que há duas configurações já disponíveis: uma para as Verificações de sistema e outra para as Verificações de segurança.
 1. Crie uma configuração pressionando o botão &quot;+&quot; no lado direito da configuração. Uma nova janela é exibida, conforme mostrado abaixo:
 
@@ -199,7 +199,7 @@ A função de uma Verificação de integridade composta é agregar várias Verif
    <td><p>O Comprimento da fila de observação repete todos os Ouvintes de eventos e Observadores de segundo plano; compara seus <code>queueSize </code>aos seus <code>maxQueueSize</code> e:</p>
     <ul>
      <li>retorna o status Crítico se a variável <code>queueSize</code> o valor excede o <code>maxQueueSize</code> valor (isto é, quando os eventos seriam descartados)</li>
-     <li>retorna Avisar se a variável <code>queueSize</code> o valor está acima de <code>maxQueueSize * WARN_THRESHOLD</code> (o valor padrão é 0,75) </li>
+     <li>retorna um Aviso se a variável <code>queueSize</code> o valor está acima de <code>maxQueueSize * WARN_THRESHOLD</code> (o valor padrão é 0,75) </li>
     </ul> <p>O comprimento máximo de cada fila vem de configurações separadas (Oak e AEM) e não pode ser configurado nesta verificação de integridade. O MBean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -223,12 +223,12 @@ A função de uma Verificação de integridade composta é agregar várias Verif
    <td>Índices assíncronos</td>
    <td><p>A verificação de Índices assíncronos:</p>
     <ul>
-     <li>retorna o status Crítico se pelo menos uma faixa de indexação estiver falhando</li>
+     <li>retorna um status Crítico se pelo menos uma via de indexação estiver falhando</li>
      <li>verifica a <code>lastIndexedTime</code> para todas as faixas de indexação e:
       <ul>
-       <li>retorna o status Crítico se houver mais de 2 horas atrás </li>
-       <li>retorna o status de Aviso se estiver entre 2 horas e 45 minutos atrás </li>
-       <li>retorna o status OK se houver menos de 45 minutos atrás </li>
+       <li>retorna um status Crítico se houver mais de 2 horas atrás </li>
+       <li>retorna um status de Aviso se estiver entre 2 horas e 45 minutos atrás </li>
+       <li>retorna um status OK se houver menos de 45 minutos atrás </li>
       </ul> </li>
      <li>se nenhuma dessas condições for atendida, retornará o status OK</li>
     </ul> <p>Os limites de status Crítico e Aviso são configuráveis. O Mbean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthCheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Nota: </strong>Esta verificação de integridade está disponível com AEM 6.4 e foi revertida para AEM 6.3.0.1.</p> </td>
@@ -264,7 +264,7 @@ A função de uma Verificação de integridade composta é agregar várias Verif
      <code>maxNumQueueJobs</code> limite e:
     </div>
     <ul>
-     <li>retorna Crítico se for maior que <code>maxNumQueueJobs</code> estão na fila</li>
+     <li>retorna uma Critical se for maior que <code>maxNumQueueJobs</code> estão na fila</li>
      <li>retorna Crítico se houver jobs ativos de longa duração com mais de 1 hora</li>
      <li>retorna Crítico se houver jobs enfileirados e a última hora do job concluído tiver mais de 1 hora</li>
     </ul> <p>Somente o parâmetro de número máximo de tarefas em fila é configurável e tem o valor padrão de 1000.</p> <p>O MBean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingJobs%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=slingJobs,type=HealthCheck</a>.</p> </td>
@@ -274,7 +274,7 @@ A função de uma Verificação de integridade composta é agregar várias Verif
    <td><p>Esta verificação analisa a <code>granite.request.metrics.timer</code> <a href="http://localhost:4502/system/console/slingmetrics" target="_blank">Métrica Sling </a>e:</p>
     <ul>
      <li>retorna Crítico se o valor do percentil 75 estiver acima do limite crítico (o valor padrão é 500 milissegundos)</li>
-     <li>retorna Avisar se o valor do percentil 75 estiver acima do limite de aviso (o valor padrão é 200 milissegundos)</li>
+     <li>retorna um Aviso se o valor do percentil 75 estiver acima do limite de aviso (o valor padrão é 200 milissegundos)</li>
     </ul> <p>O MBean para esta verificação de integridade é<em> </em><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DrequestsStatus%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -282,10 +282,10 @@ A função de uma Verificação de integridade composta é agregar várias Verif
    <td><p>Essa verificação retorna o status Aviso se houver erros no log.</p> <p>O MBean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlogErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=logErrorHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
-   <td>Espaço em disco</td>
+   <td>Espaço de disco</td>
    <td><p>A verificação do Espaço em disco examina o <code>FileStoreStats</code> MBean, recupera o tamanho do Armazenamento de nós e a quantidade de espaço em disco utilizável na partição do Armazenamento de nós e:</p>
     <ul>
-     <li>retorna Avisar se a relação entre o espaço de uso em disco e o tamanho do repositório for menor que o limite de aviso (o valor default é 10)</li>
+     <li>retorna um Aviso se a relação entre o espaço de uso em disco e o tamanho do repositório for menor que o limite de aviso (o valor default é 10)</li>
      <li>retorna Crítico se a relação entre o espaço de uso em disco e o tamanho do repositório for menor que o limite crítico (o valor default é 2)</li>
     </ul> <p>Ambos os limites são configuráveis. A verificação só funciona em instâncias com um Repositório de segmentos.</p> <p>O MBean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DDiskSpaceHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=DiskSpaceHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
@@ -309,15 +309,15 @@ A função de uma Verificação de integridade composta é agregar várias Verif
    <td>Verificação de Code Cache</td>
    <td><p>Uma verificação de integridade que verifica várias condições JVM que podem acionar um bug de CodeCache presente no Java™ 7:</p>
     <ul>
-     <li>retorna Avisar se a instância estiver em execução no Java™ 7, com a limpeza do Code Cache ativada</li>
-     <li>retorna Avisar se a instância estiver em execução no Java™ 7 e o tamanho do Cache de código reservado for menor que um limite mínimo (o valor padrão é 90 MB)</li>
+     <li>retorna um Aviso se a instância estiver em execução no Java™ 7, com a limpeza do Code Cache ativada</li>
+     <li>retorna um Aviso se a instância estiver em execução no Java™ 7 e o tamanho do Cache de código reservado for menor que um limite mínimo (o valor padrão é 90 MB)</li>
     </ul> <p>A variável <code>minimum.code.cache.size</code> o limite é configurável. Para obter mais informações sobre o bug, consulte <a href="https://bugs.java.com/bugdatabase/"> e pesquise na ID de bug 8012547</a>.</p> <p>O MBean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Recurso Buscar erros de caminho</td>
    <td><p>Verifica se há recursos no caminho <code>/apps/foundation/components/primary</code> e:</p>
     <ul>
-     <li>retorna Avisar se houver nós filhos em <code>/apps/foundation/components/primary</code></li>
+     <li>retorna um Aviso se houver nós filhos em <code>/apps/foundation/components/primary</code></li>
     </ul> <p>O MBean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DresourceSearchPathErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=resourceSearchPathErrorHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
  </tbody>
@@ -852,7 +852,7 @@ Você também pode baixar um `JSON` arquivo resumindo as informações do painel
      <li>Contagens de workflow - número de workflows em um determinado status (se houver):
       <ul>
        <li>em execução</li>
-       <li>Falha</li>
+       <li>com falha</li>
        <li>suspenso</li>
        <li>abortado</li>
       </ul> </li>
@@ -867,7 +867,7 @@ Você também pode baixar um `JSON` arquivo resumindo as informações do painel
    <td>Sling Jobs</td>
    <td><p>Contagens de trabalhos do Sling - número de trabalhos em um determinado status (se houver):</p>
     <ul>
-     <li>Falha</li>
+     <li>com falha</li>
      <li>na fila</li>
      <li>cancelado</li>
      <li>ativo</li>

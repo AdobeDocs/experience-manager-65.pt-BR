@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ As operações do AEM Forms podem ser executadas usando a API altamente tipada d
 
 >[!NOTE]
 >
-Não é possível trabalhar com endpoints usando um serviço da Web.
+>Não é possível trabalhar com endpoints usando um serviço da Web.
 
 ## QuickStart: adicionando um endpoint EJB usando a API Java™ {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
 
@@ -251,7 +251,7 @@ O exemplo de código Java™ a seguir adiciona um terminal Pasta monitorada a um
 
 >[!NOTE]
 >
-Inclua o arquivo WatchedFolderEndpointConfigConstants.java no projeto para que você possa compilar e executar o início rápido a seguir. (Consulte [Arquivo constante de valores de configuração da pasta monitorada](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
+>Inclua o arquivo WatchedFolderEndpointConfigConstants.java no projeto para que você possa compilar e executar o início rápido a seguir. (Consulte [Arquivo constante de valores de configuração da pasta monitorada](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
 
 ```java
  /*
@@ -386,7 +386,7 @@ O exemplo de código Java™ a seguir adiciona um terminal de email a um serviç
 
 >[!NOTE]
 >
-Inclua o arquivo EmailEndpointConfigConstants.java no projeto para que você possa compilar e executar o início rápido a seguir. (Consulte [Arquivo de constante de valores de configuração de email](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
+>Inclua o arquivo EmailEndpointConfigConstants.java no projeto para que você possa compilar e executar o início rápido a seguir. (Consulte [Arquivo de constante de valores de configuração de email](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
 
 ```java
  /*

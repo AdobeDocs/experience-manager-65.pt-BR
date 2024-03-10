@@ -1,8 +1,8 @@
 ---
-source-git-commit: 2a97935a81cf9c0a1a832dd27b62d388805863e0
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 78%
+source-wordcount: '424'
+ht-degree: 69%
 
 ---
 # Código de conduta da Adobe

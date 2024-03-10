@@ -2,10 +2,10 @@
 title: Acesso e entrega de Fragmentos de conteúdo - Guia de início rápido do Headless
 description: Saiba como usar a API REST do AEM Assets para gerenciar fragmentos de conteúdo e a API do GraphQL para entrega headless do conteúdo do fragmento de conteúdo.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '555'
-ht-degree: 47%
+ht-degree: 40%
 
 ---
 
@@ -17,7 +17,7 @@ Saiba como usar a API REST do AEM Assets para gerenciar fragmentos de conteúdo 
 
 [Agora que criou alguns fragmentos de conteúdo,](create-content-fragment.md) você pode usar as APIs do AEM para entregá-los de forma headless.
 
-* A [API GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) permite criar solicitações para acessar e fornecer Fragmentos de conteúdo.
+* [A API do GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) O permite criar solicitações para acessar e entregar Fragmentos de conteúdo.
    * Para usar isso, [Os endpoints do devem ser definidos e ativados no AEM](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)e, se necessário, [Interface GraphiQL instalada](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface).
 * [A API REST do Assets](/help/assets/assets-api-content-fragments.md) permite criar e modificar fragmentos de conteúdo (e outros ativos).
 
@@ -25,12 +25,12 @@ O restante deste guia terá como foco o acesso ao GraphQL e a entrega de Fragmen
 
 ## Como fornecer um fragmento de conteúdo usando o GraphQL {#how-to-deliver-a-content-fragment}
 
-Os arquitetos da informação devem projetar consultas para seus endpoints de canal para fornecer conteúdo. Essas consultas só devem ser consideradas uma vez por endpoint por modelo. Para os propósitos deste guia de introdução, só é necessário criar um.
+Os arquitetos da informação devem projetar consultas para seus endpoints de canal para fornecer conteúdo. Essas consultas só devem ser consideradas uma vez por endpoint por modelo. Para os propósitos deste guia de introdução, você deve criar apenas um.
 
 1. Faça logon no AEM e acesse o [Interface GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md):
    * Por exemplo: `http://<host>:<port>/aem/graphiql.html`.
 
-1. O GraphiQL é um editor de consultas no navegador para GraphQL. Você pode usá-lo para criar consultas para recuperar Fragmentos de conteúdo e entregá-los de forma headless como JSON.
+1. O GraphiQL é um editor de consultas no navegador para o GraphQL. Você pode usá-lo para criar consultas para recuperar Fragmentos de conteúdo e entregá-los de forma headless como JSON.
    * O painel esquerdo permite criar a consulta.
    * O painel direito exibe os resultados.
    * O Editor de consultas tem recursos de autocompletar código e teclas de atalho para executar a consulta com facilidade.

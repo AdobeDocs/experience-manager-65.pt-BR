@@ -5,7 +5,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Execute as seguintes etapas para criar uma pasta monitorada:
 
    >[!NOTE]
    >
-   >Se você selecionou **Serviço** para o **Processar arquivos usando** , o valor do campo Service Name(inputProcessorType) deve ser entre parênteses. Por exemplo, (foo=bar).
+   >Se você selecionou **Serviço** para o **Processar arquivos usando** , o valor do campo Service Name(inputProcessorType) deve ser entre parênteses. Por exemplo (foo=bar).
 
    ```java
    @Component(metatype = true, immediate = true, label = "WF Test Service", description = "WF Test Service")

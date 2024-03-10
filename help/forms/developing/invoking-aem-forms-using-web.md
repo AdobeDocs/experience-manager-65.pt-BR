@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '9887'
+source-wordcount: '9814'
 ht-degree: 0%
 
 ---
@@ -1098,7 +1098,7 @@ Você pode chamar um serviço Forms usando DIME. Considere o `MyApplication/Encr
 
    * Um valor de string que especifica um valor de GUID. Você pode obter um valor de GUID chamando o `System.Guid.NewGuid.ToString` método.
    * Um valor de string que especifica o tipo de conteúdo. Como esse processo requer um documento PDF, especifique `application/pdf`.
-   * A `TypeFormat` valor de enumeração. Especifique `TypeFormat.MediaType`.
+   * A `TypeFormat` valor de enumeração. Especificar `TypeFormat.MediaType`.
    * Um valor de string que especifica o local do documento PDF a ser transmitido para o processo AEM Forms.
 
 1. Criar um `BLOB` usando seu construtor.
@@ -1518,7 +1518,7 @@ A lista a seguir especifica tipos de dados que não podem ser compartilhados ent
 * `Roles`
 * `BLOB`
 
-Para evitar esse problema, é recomendável qualificar totalmente os tipos de dados. Por exemplo, considere um aplicativo .NET que faça referência ao serviço Forms e ao serviço Signature usando uma referência de serviço. Ambas as referências de serviço conterão um `BLOB` classe. Para usar uma `BLOB` instância, qualifique totalmente o `BLOB` quando você o declara. Essa abordagem é mostrada no código de exemplo a seguir. Para obter informações sobre esse exemplo de código, consulte [Assinatura digital do Forms interativo](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-interactive-forms).
+Para evitar esse problema, é recomendável qualificar totalmente os tipos de dados. Por exemplo, considere um aplicativo .NET que faça referência ao serviço Forms e ao serviço Signature usando uma referência de serviço. Ambas as referências de serviço conterão um `BLOB` classe. Para usar uma `BLOB` qualifique totalmente a `BLOB` quando você o declara. Essa abordagem é mostrada no código de exemplo a seguir. Para obter informações sobre esse exemplo de código, consulte [Assinatura digital do Forms interativo](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-interactive-forms).
 
 O código C# a seguir assina um formulário interativo que é renderizado pelo serviço do Forms. O aplicativo cliente tem duas referências de serviço. A variável `BLOB` a instância associada ao serviço Forms pertence ao `SignInteractiveForm.ServiceReference2` namespace. Do mesmo modo, a `BLOB` a instância associada ao serviço de Assinatura pertence ao `SignInteractiveForm.ServiceReference1` namespace. O formulário interativo assinado é salvo como um arquivo de PDF chamado *LoanXFASigned.pdf*.
 
@@ -1553,7 +1553,7 @@ O código C# a seguir assina um formulário interativo que é renderizado pelo s
                 try
                 {
                     //Because BLOB objects are used in both service references
-                    //it is necessary to fully-qualify the BLOB objects
+                    //it is necessary to fully qualify the BLOB objects
  
                     //Retrieve the form -- invoke the Forms service
                     SignInteractiveForm.ServiceReference2.BLOB formData = GetForm();

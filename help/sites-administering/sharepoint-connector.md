@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 10ea7d2e-6e44-4d5c-a2b2-63c73b18f172
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 0%
@@ -203,7 +203,7 @@ Ir para: [http://localhost:4502/system/console/bundles](http://localhost:4502/sy
 1. Clique em OSGI > Configuração
 1. Pesquisar &quot;Conector Day JCR para Microsoft Sharepoint&quot;
 1. Clique em &quot;Editar os valores de configuração&quot;
-1. Defina o valor de ‘Sharepoint Connection Fatory’ como ‘com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory’
+1. Defina o valor de &#39;Sharepoint Connection Fatory&#39; como &#39;com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory&#39;
 1. Clique em **Salvar**.
 
 **Configurando Autenticação Básica (Windows)**
@@ -235,7 +235,7 @@ Para adicionar o usuário no grupo de administradores:
 
 1. Vá para Administração de grupo.
 1. Clique no nó &quot;a&quot;.
-1. Clique em ‘administradores’.
+1. Clique em &quot;administradores&quot;.
 1. Digite a ID do usuário criada acima na caixa de texto antes de **Procurar** botão.
 1. Clique no símbolo de marca de seleção Verde para adicionar o usuário ao grupo de administradores.
 

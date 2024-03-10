@@ -7,9 +7,9 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
-source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '2835'
+source-wordcount: '2833'
 ht-degree: 0%
 
 ---
@@ -125,7 +125,7 @@ Para fins de benchmark, o Adobe desenvolveu alguns testes de benchmark para inst
 Calcule a taxa de transferência máxima de um perfil de carga em que os usuários executam um exercício simples de criação de página sobre uma carga básica de 300 páginas existentes, todas de natureza semelhante. As etapas envolvidas eram fazer logon no site, criar uma página com um SWF e Imagem/Texto, adicionar uma nuvem de tags e ativar a página.
 
    * **Resultado**
-A taxa de transferência máxima para um exercício de criação de página simples, como o acima (considerado como uma transação), foi de 1730 transações/hora.
+A taxa de transferência máxima para um exercício de criação de página simples, como o acima—considerada como uma transação—é de 1730 transações/hora.
 
 * **Teste de referência 2**
 Calcule a taxa de transferência máxima quando o perfil de carga tiver uma combinação de criação de página nova (10%), modificação de uma página existente (80%) e criação e modificação de uma página em sucessão (10%). A complexidade das páginas permanece a mesma do perfil do teste de benchmark 1. A modificação básica da página é feita adicionando uma imagem e modificando o conteúdo do texto. Novamente, o exercício foi executado sobre uma carga básica de 300 páginas com a mesma complexidade, conforme definido no teste de benchmark 1.
@@ -153,7 +153,7 @@ Para esses cenários, o Adobe executou testes de referência em um cluster de do
 Com um cluster sem compartilhamento ativo-ativo de 2 instâncias de autor, calcule a taxa de transferência máxima com um perfil de carga em que os usuários executam um exercício de criação de página simples sobre uma carga base de 300 páginas existentes, todas de natureza semelhante.
 
    * **Resultado**
-A taxa de transferência máxima para um exercício de criação de página simples, como acima considerado como uma transação, corresponde a transações de 2016/hora. Isso é um aumento de aproximadamente 16% quando comparado a uma instância de autor independente para o mesmo teste de benchmark.
+A taxa de transferência máxima para um exercício simples de criação de página, como o acima—considerada como uma transação—é de 2016 transações/hora. Isso é um aumento de aproximadamente 16% quando comparado a uma instância de autor independente para o mesmo teste de benchmark.
 
 * **Teste de referência 2b**
 Com um cluster sem compartilhamento ativo-ativo de 2 instâncias de autor, calcule a taxa de transferência máxima quando o perfil de carregamento tiver uma combinação de criação de página nova (10%), modificação de uma página existente (80%) e criação e modificação de uma página em sucessão (10%). A complexidade da página permanece a mesma do perfil do teste de benchmark 1. A modificação básica da página é feita adicionando uma imagem e modificando o conteúdo do texto. Novamente, o exercício foi executado sobre uma carga básica de 300 páginas de complexidade, a mesma definida no teste de benchmark 1.

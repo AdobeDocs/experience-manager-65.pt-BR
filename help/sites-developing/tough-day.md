@@ -4,7 +4,7 @@ description: O teste Dia difícil simula a carga diária de cerca de 1000 autore
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '1825'
 ht-degree: 1%
@@ -130,7 +130,7 @@ Você pode encontrar os parâmetros relevantes na lista abaixo:
 | `--port=<Val>` | A porta do host. | 4502 |  |
 | `--user=<Val>` | O nome de usuário da instância. | admin |  |
 | `--password=<Val>` | Senha do usuário especificado. | admin |  |
-| `--duration=<Val>` | A duração dos testes. Pode ser expresso em (**s**)segundos, (**m**)minutos, (**h**)horas e (**d** Dias. | 1d |  |
+| `--duration=<Val>` | A duração dos testes. Pode ser expresso em **s** segundos, **m** minutos, **h** o nosso e **d** dias. | 1d |  |
 | `--timeout=<Val>` | Por quanto tempo um teste será executado antes de ser interrompido e marcado como reprovado. Expressa em segundos. | 180 |  |
 | `--suite=<Val>` | O valor pode ser um ou uma lista (separada por vírgulas) de conjuntos de testes predefinidos. | toughday |  |
 | `--configfile=<Val>` | O arquivo de configuração yaml de destino. |  |  |

@@ -6,10 +6,10 @@ role: User
 feature: Asset Management,Asset Distribution
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
 hide: true
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 4%
+source-wordcount: '857'
+ht-degree: 2%
 
 ---
 
@@ -50,7 +50,7 @@ OLD content of the above NOTE, changed wrt CQDOC-18661.
    | **[!UICONTROL Criar uma pasta separada para cada ativo]** | Selecione essa opção para incluir cada ativo baixado, inclusive ativos em pastas secundárias aninhadas na pasta principal do ativo, em uma pasta no computador local. Quando essa opção não está selecionada, por padrão, a hierarquia de pastas é ignorada e todos os ativos são baixados para uma pasta no computador local. |
    | **[!UICONTROL Email]** | Uma notificação por email é enviada ao usuário. Os modelos padrão de email estão disponíveis nos seguintes locais:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Os modelos que você personaliza durante a implantação estão disponíveis nos seguintes locais: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Você pode armazenar modelos personalizados específicos do locatário nos seguintes locais:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Ativo(s)]** | Selecione essa opção para baixar o ativo em sua forma original sem representações.<br>A opção sub-ativos está disponível se o ativo original tiver sub-ativos. |
-   | **[!UICONTROL Representações]** | Uma representação é a representação binária de um ativo. Os ativos têm uma representação principal - a do arquivo carregado. Eles podem ter qualquer número de representações. <br> Com essa opção, é possível selecionar as representações que deseja baixar. As representações disponíveis dependem do ativo selecionado. A opção estará disponível se o ativo tiver representações. |
+   | **[!UICONTROL Representação(ões)]** | Uma representação é a representação binária de um ativo. Os ativos têm uma representação principal - a do arquivo carregado. Eles podem ter qualquer número de representações. <br> Com essa opção, é possível selecionar as representações que deseja baixar. As representações disponíveis dependem do ativo selecionado. A opção estará disponível se o ativo tiver representações. |
    | **[!UICONTROL Cortes inteligentes]** | Selecione essa opção para baixar todas as representações de corte inteligente do ativo selecionado no AEM. Um arquivo zip com as representações de Recorte inteligente é criado e baixado no computador local. |
    | **[!UICONTROL Representação(ões) dinâmica(s)]** | Selecione essa opção para gerar uma série de representações alternativas em tempo real. Ao selecionar essa opção, você também seleciona as representações que deseja criar dinamicamente, selecionando entre as [Predefinição de imagem](image-presets.md) lista. <br>Além disso, você pode selecionar o tamanho e a unidade de medida, o formato, o espaço de cor, a resolução e qualquer modificador de imagem opcional, como inverter a imagem. A opção só estará disponível se você [!DNL Dynamic Media] ativado. |
 

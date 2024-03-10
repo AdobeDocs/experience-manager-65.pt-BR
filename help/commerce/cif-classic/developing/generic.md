@@ -3,9 +3,9 @@ title: Desenvolvimento (genérico)
 description: A estrutura de integração inclui uma camada de integração com uma API, permitindo a criação de componentes de AEM para recursos de comércio eletrônico.
 contentOwner: Guillaume Carlino
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1846'
+source-wordcount: '1856'
 ht-degree: 0%
 
 ---

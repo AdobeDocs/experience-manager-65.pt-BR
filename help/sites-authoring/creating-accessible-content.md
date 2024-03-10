@@ -2,10 +2,10 @@
 title: Criação de conteúdo acessível para o Adobe Experience Manager (Conformidade com o WCAG 2.1)
 description: Usar o AEM para ajudar a tornar o conteúdo da Web acessível e utilizável por pessoas com deficiência
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '13636'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -693,8 +693,13 @@ Siga as orientações em [Como cumprir o Critério de sucesso 2.2.1](https://www
 * Critério de Sucesso 2.2.2
 * Nível A
 * Pausar, Interromper, Ocultar: para mover, piscar, deslocar ou atualizar automaticamente as informações, as seguintes opções são verdadeiras:
-   * Mover, piscar, deslocar: para qualquer movimento, modo intermitente ou deslocamento que (a) é iniciado automaticamente, (b) dura mais de cinco segundos e (c) seja apresentado em paralelo com outro conteúdo, existe um mecanismo para o usuário pausar, interromper ou ocultar, a menos que o movimento, o modo intermitente ou o deslocamento seja parte fundamental de uma atividade;
-   * Atualização automática: para qualquer informação de atualização automática que (a) seja iniciada automaticamente e (b) seja apresentada em paralelo a outro conteúdo, há um mecanismo para o usuário pausar, parar ou ocultar a informação ou controlar a frequência da atualização, a menos que a atualização automática faça parte de uma atividade em que é essencial.
+   * Movimentação, intermitência ou rolagem: para qualquer informação de movimentação, intermitência ou rolagem que
+      * a) Inicia automaticamente;
+      * b) Tenha uma duração superior a cinco segundos e
+      * C) For apresentado em paralelo com outros conteúdos, existir um mecanismo para o utilizador os pausar, parar ou ocultar, a menos que o movimento, a intermitência ou a deslocação façam parte de uma atividade em que são essenciais;
+   * Atualização automática: para qualquer informação de atualização automática que
+      * a) Inicia automaticamente; e
+      * (b) é apresentado em paralelo com outros conteúdos, existe um mecanismo para o usuário pausar, parar ou ocultar ou controlar a frequência da atualização, a menos que a atualização automática faça parte de uma atividade em que é essencial.
 
 Os pontos para observar são:
 

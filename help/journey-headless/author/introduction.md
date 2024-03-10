@@ -2,10 +2,10 @@
 title: Criação para headless com Adobe Experience Manager
 description: Uma introdução aos recursos headless avançados e flexíveis do Adobe Experience Manager e como criar conteúdo para seu projeto.
 exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 88%
+source-wordcount: '649'
+ht-degree: 85%
 
 ---
 
@@ -30,7 +30,7 @@ Headless é um termo usado para descrever sistemas que efetivamente desconectam 
 
 Tradicionalmente, você gerenciaria seu conteúdo em um CMS, o qual também seria responsável pela renderização desse conteúdo em suas páginas da web.
 
-Agora, utilizar o método headless significa que o conjunto de conteúdo pode ser gerenciado no CMS e, em seguida, acessado por um ou mais aplicativos (independentes).
+Agora, headless significa que seu conjunto de conteúdo pode ser gerenciado no CMS e depois acessado por um ou mais aplicativos (independentes).
 
 Isso significa que seu conteúdo pode ser entregue a qualquer dispositivo, em uma grande variedade de formatos. Isso torna todo o processo muito mais flexível e também significa que você não precisa se preocupar com layout e formatação.
 

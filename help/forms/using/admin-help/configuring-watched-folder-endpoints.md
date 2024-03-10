@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '7173'
+source-wordcount: '7192'
 ht-degree: 0%
 
 ---
@@ -239,8 +239,8 @@ A saída da pasta monitorada pode ser um único documento, uma lista de document
 
 Os administradores podem especificar o tipo de arquivo que pode chamar um serviço. Vários padrões de arquivo podem ser estabelecidos para cada pasta monitorada. Um padrão de arquivo pode ser uma das seguintes propriedades de arquivo:
 
-* Arquivos com extensões de nome de arquivo específicas; por exemplo, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf,;
-* Arquivos com nomes específicos; por exemplo, dados.&amp;ast;
+* Arquivos com extensões de nome de arquivo específicas. Por exemplo, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf
+* Arquivos com nomes específicos. Por exemplo, dados.&amp;ast;
 * Arquivos com expressões compostas no nome e na extensão, como nestes exemplos:
 
    * Dados[0-9][0-9][0-9].[dD][aA]&#39;porta&#39;

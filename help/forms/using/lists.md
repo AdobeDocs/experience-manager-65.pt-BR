@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '6904'
+source-wordcount: '6905'
 ht-degree: 0%
 
 ---
@@ -207,7 +207,7 @@ O recurso Localizar e substituir permite procurar (e substituir) qualquer cadeia
 
 ## Lista {#list}
 
-Uma lista é um grupo de fragmentos de documento, incluindo texto, (outras) listas, condições e imagens. A ordem dos elementos da lista pode ser fixa ou editável. Ao criar uma correspondência, você pode usar alguns ou todos os elementos da lista para replicar um padrão reutilizável de elementos. As listas se comportam basicamente como alvos que podem ser aninhados dentro de outros alvos.
+Uma lista é um grupo de fragmentos de documento, incluindo texto ou (outras) listas, condições e imagens. A ordem dos elementos da lista pode ser fixa ou editável. Ao criar uma correspondência, você pode usar alguns ou todos os elementos da lista para replicar um padrão reutilizável de elementos. As listas se comportam basicamente como alvos que podem ser aninhados dentro de outros alvos.
 
 ### Listas de implementação {#implementing-lists}
 

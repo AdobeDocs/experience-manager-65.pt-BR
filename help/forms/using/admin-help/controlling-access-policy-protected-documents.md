@@ -7,7 +7,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '2167'
 ht-degree: 0%
@@ -94,7 +94,7 @@ Quando você revoga ou restaura privilégios de acesso a documentos, a alteraç�
 
 * Se o documento estiver online e fechado, a alteração terá efeito na próxima vez que o destinatário sincronizar com a segurança de documentos, abrindo um documento protegido por política.
 * Se o documento estiver online e aberto, a alteração será aplicada quando o destinatário fechar o documento.
-* Se o documento estiver offline (em uso sem uma conexão com a Internet, como em um laptop), a alteração terá efeito na próxima vez que o destinatário sincronizar com a segurança do documento.
+* Se o documento estiver offline, ou seja, em uso sem uma conexão com a Internet, como em um laptop, a alteração terá efeito na próxima vez que o destinatário sincronizar com a segurança do documento.
 
 **Revogar acesso a um documento protegido por política**
 
