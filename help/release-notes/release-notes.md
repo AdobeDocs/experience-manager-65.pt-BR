@@ -3,9 +3,9 @@ title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 4889c3c36ec86b1c9527cd2bc5eb77984e278342
+source-git-commit: 31ad82fca920efcb1c5f4b56673928754a2d1763
 workflow-type: tm+mt
-source-wordcount: '3694'
+source-wordcount: '3640'
 ht-degree: 1%
 
 ---
@@ -469,10 +469,11 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 * Falha ao carregar o editor de Revisar e corrigir (RnC) do serviço automated forms conversion. Você pode instalar o [AEM 6.5 Form Service Pack 20 (6.5.20.0) mais recente](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) para resolver o problema. (FORMS-13491)
 * Depois de atualizar do AEM 6.5 Forms Service Pack 18 (6.5.18.0) ou do AEM 6.5 Forms AEM Service Pack 19 (6.5.19.0) para o 6.5 Forms Service Pack 20 (6.5.20.0), os usuários encontram um erro de compilação de JSP. Eles não podem abrir ou criar formulários adaptáveis e estão encontrando erros com outras interfaces AEM, como o editor de páginas, a interface do usuário do AEM Forms e o editor de fluxo de trabalho do AEM. Você pode instalar o [AEM 6.5 Form Service Pack 20 (6.5.20.0) mais recente](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) para resolver o problema. (FORMS-13492)
 
-Os clientes podem instalar o AEM 6.5 Forms Service Pack mais recente para resolver os problemas acima.  Estes são os links diretos para os sistemas operacionais compatíveis:
-* [AEM 6.5 Forms Service Pack 20 para Apple macOS](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-OSX-PKG-6.0.1192.zip)
-* [AEM 6.5 Forms Service Pack 20 para Microsoft Windows](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-WIN-PKG-6.0.1192.zip)
-* [AEM 6.5 Forms Service Pack 20 para Linux](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-LINUX-PKG-6.0.1192.zip)
+<!--Customers can install the  latest AEM 6.5 Forms Service Pack to resolve the aforementioned issues.  Here are the direct links for the supported operating systems:
+* [AEM 6.5 Forms Service Pack 20 for Apple macOS](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-OSX-PKG-6.0.1192.zip)
+* [AEM 6.5 Forms Service Pack 20 for Microsoft Windows](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-WIN-PKG-6.0.1192.zip)
+* [AEM 6.5 Forms Service Pack 20 for Linux](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-LINUX-PKG-6.0.1192.zip)
+-->
 
 <!--Known issues in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of known issues for forms is added to this section post the release.-->
 
