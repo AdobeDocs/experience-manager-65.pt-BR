@@ -3,10 +3,10 @@ title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 39261357c17ef565a39ebc441aed356d69b4d8f9
+source-git-commit: a0ad6c5d61a971c5210f7d6dd7ef85e5effab44a
 workflow-type: tm+mt
-source-wordcount: '3560'
-ht-degree: 2%
+source-wordcount: '3765'
+ht-degree: 1%
 
 ---
 
@@ -469,17 +469,24 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
   Para resolver o problema:
 
    1. Baixe o hotfix para seu sistema operacional:
-
       * [Hotfix do Microsoft Windows](/help/release-notes/assets/Hotfix-windows.zip)
       * [Hotfix para Linux](/help/release-notes/assets/Hotfix-Linux.zip)
       * [Hotfix do Apple macOS](/help/release-notes/assets/Hotfix-osx.zip)
 
    1. Carregue e instale o pacote (.zip) por meio do [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=en#accessing).
-
    1. Reinicie o servidor AEM e verifique o status de ativação de todos os pacotes assim que o processo de reinicialização for concluído. É possível monitorar o status dos pacotes acessando: `https://server:host/system/console/bundles`. Verifique se todos os pacotes estão ativos antes de continuar com outras tarefas.
 
 * O serviço de preenchimento prévio falha com uma exceção de ponteiro nulo nas Comunicações interativas. (CQDOC-21355)
 * O Forms adaptável permite usar funções personalizadas com o ECMAScript versão 5 ou anterior. Quando uma função personalizada usa o ECMAScript versão 6 ou posterior, como &quot;let&quot;, &quot;const&quot; ou funções de seta, o editor de regras pode não abrir corretamente.
+* Os usuários não podem criar uma carta de gerenciamento de correspondência. Quando um usuário cria uma correspondência, um erro com a descrição &quot;Objeto&quot; é exibido e a correspondência não é criada. As miniaturas dos layouts também não são carregadas na tela de criação da carta. (FORMS-13496)
+* O serviço de comunicações interativas cria o documento PDF, mas os dados do usuário não são preenchidos automaticamente nos campos de formulário. O serviço de preenchimento prévio não está funcionando como esperado. (FORMS-13413, FORMS-13493)
+* Falha ao carregar o editor de Revisar e corrigir (RnC) do serviço automated forms conversion. (FORMS-13491)
+* Depois de atualizar do AEM 6.5 Forms Service Pack 18 (6.5.18.0) ou do AEM 6.5 Forms AEM Service Pack 19 (6.5.19.0) para o 6.5 Forms Service Pack 20 (6.5.20.0), os usuários encontram um erro de compilação de JSP. Eles não podem abrir ou criar formulários adaptáveis e estão encontrando erros com outras interfaces AEM, como o editor de páginas, a interface do usuário do AEM Forms e o editor de fluxo de trabalho do AEM. (FORMS-13492)
+
+Os clientes podem instalar o AEM 6.5 Forms Service Pack mais recente para resolver os problemas acima.  Estes são os links diretos para os sistemas operacionais compatíveis:
+* [AEM 6.5 Forms Service Pack 20 para Apple macOS](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-OSX-PKG-6.0.1192.zip)
+* [AEM 6.5 Forms Service Pack 20 para Microsoft Windows](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-WIN-PKG-6.0.1192.zip)
+* [AEM 6.5 Forms Service Pack 20 para Linux](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-LINUX-PKG-6.0.1192.zip)
 
 <!--Known issues in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of known issues for forms is added to this section post the release.-->
 
