@@ -1,18 +1,19 @@
 ---
-title: APIs de relatórios de transação faturáveis
+title: APIs faturáveis de relatórios de transação
 description: Lista de todas as APIs contabilizadas como transações
 topic-tags: forms-manager
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Transaction Reports
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+exl-id: e92f1b59-79ef-40fa-af9a-7380cd701a75
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '1719'
+source-wordcount: '1739'
 ht-degree: 7%
 
 ---
 
-# APIs de relatórios de transação faturáveis{#transaction-reports-billable-apis}
+# APIs faturáveis de relatórios de transação para o AEM Forms no OSGi {#transaction-reports-billable-apis}
 
 O AEM Forms fornece várias APIs para enviar formulários, processar documentos e renderizar documentos. Algumas APIs são contabilizadas como transações e outras são livres para uso. Este documento fornece uma lista de todas as APIs que são contabilizadas como transações em um relatório de transações. Estes são alguns cenários comuns em que uma API faturável é usada:
 
@@ -500,6 +501,6 @@ Ações como enviar um Formulário PDF, usar a interface do usuário do agente p
 
 ## Artigos relacionados {#related-articles}
 
-* [Visão Geral dos Relatórios de Transação](../../forms/using/transaction-reports-overview.md)
-* [Visualização e noções básicas de relatórios de transações](../../forms/using/viewing-and-understanding-transaction-reports.md)
-* [Registrar uma transação para implementações personalizadas](/help/forms/using/record-transaction-custom-implementation.md)
+* [Visão geral dos relatórios de transação para o AEM Forms no OSGi](../../forms/using/transaction-reports-overview.md)
+* [Visualização e noções básicas de relatórios de transação para o AEM Forms no OSGi](../../forms/using/viewing-and-understanding-transaction-reports.md)
+* [Registrar uma transação para implementações personalizadas do AEM Forms no OSGi](/help/forms/using/record-transaction-custom-implementation.md)

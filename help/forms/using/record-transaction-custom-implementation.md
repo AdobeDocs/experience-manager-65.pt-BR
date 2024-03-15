@@ -5,14 +5,15 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 feature: Transaction Reports
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+exl-id: b0c4f72a-e65f-453a-af66-5d9f98a9d6df
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
 
-# Registrar uma transação para implementações personalizadas {#record-a-transaction-for-custom-implementations}
+# Registrar uma transação para implementações personalizadas do AEM Forms no OSGi {#record-a-transaction-for-custom-implementations}
 
 Usar a API TransactionRecorder para registrar ações que não são contabilizadas como transações automaticamente
 
@@ -88,6 +89,6 @@ $.ajax({
 
 ## Artigos relacionados {#related-articles}
 
-* [Visão Geral dos Relatórios de Transação](/help/forms/using/transaction-reports-overview.md)
-* [Visualização e noções básicas de relatórios de transações](/help/forms/using/viewing-and-understanding-transaction-reports.md)
-* [APIs de relatórios de transação faturáveis](/help/forms/using/transaction-reports-billable-apis.md)
+* [Visão geral dos relatórios de transação para o AEM Forms no OSGi](/help/forms/using/transaction-reports-overview.md)
+* [Visualização e noções básicas de relatórios de transação para o AEM Forms no OSGi](/help/forms/using/viewing-and-understanding-transaction-reports.md)
+* [APIs faturáveis de relatórios de transação para o AEM Forms no OSGi](/help/forms/using/transaction-reports-billable-apis.md)

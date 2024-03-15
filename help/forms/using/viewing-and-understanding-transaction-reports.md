@@ -6,14 +6,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Transaction Reports
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---
 
-# Exibição e Noções Básicas dos Relatórios de Transação{#viewing-and-understanding-transaction-reports}
+# Visualização e noções básicas dos relatórios de transação do AEM Forms no OSGi{#viewing-and-understanding-transaction-reports}
 
 Relatórios de transação permitem capturar e rastrear o número de formulários enviados, documentos processados e documentos renderizados. O objetivo por trás do rastreamento dessas transações é tomar uma decisão informada sobre o uso do produto e reequilibrar os investimentos em hardware e software. Para obter mais informações, consulte [Visão Geral dos Relatórios de Transação do AEM Forms](../../forms/using/transaction-reports-overview.md).
 
@@ -88,6 +88,6 @@ O relatório de transações coloca todas as informações exibidas no relatóri
 
 ## Artigos relacionados {#related-articles}
 
-* [Visão Geral dos Relatórios de Transação](../../forms/using/transaction-reports-overview.md)
-* [APIs de relatórios de transação faturáveis](../../forms/using/transaction-reports-billable-apis.md)
-* [Registrar uma transação para implementações personalizadas](/help/forms/using/record-transaction-custom-implementation.md)
+* [Visão geral dos relatórios de transação para o AEM Forms no OSGi](../../forms/using/transaction-reports-overview.md)
+* [APIs faturáveis de relatórios de transação para o AEM Forms no OSGi](../../forms/using/transaction-reports-billable-apis.md)
+* [Registrar uma transação para implementações personalizadas do AEM Forms no OSGi](/help/forms/using/record-transaction-custom-implementation.md)
