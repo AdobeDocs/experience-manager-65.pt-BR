@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: 7f150219bce3036c0e330b7349e679fdf19797d1
 workflow-type: tm+mt
-source-wordcount: '4057'
+source-wordcount: '4011'
 ht-degree: 0%
 
 ---
@@ -490,11 +490,12 @@ O aplicativo AEM Forms agora é compatível com o Apache Cordova. A seguir estã
 >- Os recursos PDF, Optimize PDF e Export PDF de OCR são suportados apenas no Windows.
 >- Uma versão do Acrobat é fornecida com o AEM Forms para ativar a funcionalidade PDF Generator. A versão agrupada só deve ser acessada programaticamente com o AEM Forms, durante o prazo da licença do AEM Forms, para uso com o AEM Forms PDF Generator. Para obter mais informações, consulte a Descrição do produto AEM Forms de acordo com a implantação ([No local](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 >- O serviço PDF Generator não suporta Microsoft® Windows 10.
->-PDF Generator falha ao converter arquivos usando o Microsoft® Visio 2019. Você pode continuar a usar o Microsoft® Visio 2016 para converter arquivos .VSD e .VSDX.
->- Falha do PDF Generator ao converter arquivos usando o Microsoft® Project 2019. Você pode continuar a usar o Microsoft® Project 2016 para converter arquivos .MPP.
 >- Falha do PDF Generator ao converter arquivos usando o Microsoft® Visio 2019.
 >- Falha do PDF Generator ao converter arquivos usando o Microsoft® Project 2019.
 >- Se uma instalação do Microsoft® Office for desativada ou não for licenciada por qualquer motivo, como uma instalação com licença de volume que não consegue localizar um host KMS em um período especificado, as conversões podem falhar até que a instalação seja relicenciada e reativada.
+
+<!-- Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
+>- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.-->
 
 ### Exceções ao suporte de acessibilidade {#exceptions-to-accessibility-support}
 
