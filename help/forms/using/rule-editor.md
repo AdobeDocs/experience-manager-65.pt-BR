@@ -8,9 +8,9 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: af30cfed8f039207c0363d1ace5ac2b2a1cf84ba
 workflow-type: tm+mt
-source-wordcount: '6944'
+source-wordcount: '6607'
 ht-degree: 0%
 
 ---
@@ -73,11 +73,11 @@ Embora seja possível obter a maioria dos casos de uso usando qualquer construç
 
   Portanto, se estiver escrevendo um regra no campo B (o objeto sobre o qual você está avaliando uma condição), use a construção de ação de condição ou o tipo Quando regra. Da mesma forma, use a construção de condição de ação ou Exibir ou oculte regra tipo no campo A.
 
-* Às vezes, você precisa executar várias ações com base em uma condição. Nesses casos, é recomendável usar a construção condição-ação. Nesta construção, você pode avaliar uma condição uma vez e especificar várias instruções de ação.
+* Às vezes, você precisa executar várias ações com base em uma condição. Nesses casos, recomenda-se usar a construção de ação condicional. Nesta construção, você pode avaliar uma condição uma vez e especificar várias declarações de ação.
 
-  Por exemplo, para ocultar os campos B, C e D com base na condição que verifica o valor especificado por um usuário no campo A, grave uma regra com construção de condição-ação ou Quando tipo de regra no campo A e especifique ações para controlar a visibilidade dos campos B, C e D. Caso contrário, você precisará de três regras separadas nos campos B, C e D, em que cada regra verifica a condição e mostra ou oculta o respectivo campo. Neste exemplo, é mais eficiente escrever o tipo de regra Quando em um objeto do que Mostrar ou Ocultar em três objetos.
+  Por exemplo, para ocultar campos B, C e D com base na condição que verifica o valor que uma usuário especifica no campo A, escreva uma regra com construção de ação de condição ou Quando regra tipo no campo A e especifique ações para controlar a visibilidade dos campos B, C e D. Caso contrário, você precisa de três regras separadas nos campos B,  C e D, onde cada regra verifica a condição e mostra ou oculta o respectivo campo. Neste exemplo, é mais eficiente escrever o tipo Quando regra em um objeto em vez de Exibir ou Ocultar regra tipo em três objetos.
 
-* Para acionar uma ação com base em várias condições, é recomendável usar a construção action-condition. Por exemplo, para mostrar e ocultar campo A avaliando as condições nos campos B, C e D, use Exibir ou Ocultar regra tipo no campo A.
+* Para acionar uma ação baseada em várias condições, recomenda-se usar a construção de condições de ação. Por exemplo, para mostrar e ocultar campo A avaliando as condições nos campos B, C e D, use Exibir ou Ocultar regra tipo no campo A.
 * Use a construção de condição-ação ou condição de ação se a regra contiver uma ação para uma condição.
 * Se uma regra verificar uma condição e executar uma ação imediatamente ao fornecer um valor em um campo ou ao sair de um campo, é recomendável gravar uma regra com construção de condição-ação ou o tipo de regra Quando no campo em que a condição é avaliada.
 * A condição na regra Quando é avaliada quando um usuário altera o valor do objeto no qual a regra Quando é aplicada. No entanto, se você quiser que a ação seja acionada quando o valor for alterado no lado do servidor, como no preenchimento prévio do valor, é recomendável gravar uma regra When que aciona a ação quando o campo é inicializado.
@@ -108,7 +108,7 @@ A variável **Quando** o tipo de regra segue a variável **condição-ação-aç
 
 Usando o tipo de regra Quando, é possível avaliar uma condição em um objeto de formulário e executar ações em um ou mais objetos.
 
-Em palavras simples, um típico de Quando regra está estruturado da seguinte maneira:
+Em palavras simples, uma regra When típica é estruturada da seguinte maneira:
 
 `When on Object A:`
 
@@ -207,11 +207,7 @@ O tipo de regra Definir valor de não está disponível para todos os objetos de
 
 Defina o valor do Objeto A como:
 
-(sequência de caracteres ABC) OU
-(objeto propriedade X do objeto C) OU
-(valor de uma função) OU
-(valor de uma expressão matemática) OU
-(valor de saída de um serviço de modelo de dados ou de um serviço da Web);
+(cadeia de caracteres ABC) OR (propriedade do objeto X do objeto C) OR (valor de uma função) OR (valor de uma expressão matemática) OR (valor de saída de um serviço de modelo de dados ou serviço Web);
 
 Quando (opcional):
 
@@ -641,35 +637,36 @@ Sintaxe: `@this currentComponent`
 >
 >Comentários antes da função personalizada são usados para resumo. O resumo pode ser estendido para várias linhas até que uma tag seja encontrada. Limite o tamanho a um único para obter uma descrição concisa no construtor de regras.
 
-**Adição de uma função personalizada**
+<!--
+**Adding a custom function**
 
-Por exemplo, você deseja adicionar uma função personalizada que calcula a área de um quadrado. O comprimento do lado é a entrada do usuário na função personalizada, que é aceita usando uma caixa numérica no formulário. A saída calculada é exibida em outra caixa numérica no formulário. Para adicionar uma função personalizada, primeiro crie uma biblioteca do cliente e, em seguida, adicione-a ao repositório CRX.
+For example, you want to add a custom function which calculates area of a square. Side length is the user input to the custom function, which is accepted using a numeric box in your form. The calculated output is displayed in another numeric box in your form. To add a custom function, you have to first create a client library, and then add it to the CRX repository.
 
-Execute as etapas a seguir para criar uma biblioteca do cliente e adicioná-la ao repositório CRX.
+Perform the following steps to create a client library and add it in the CRX repository.
 
-1. Crie uma biblioteca do cliente. Para obter mais informações, consulte [Uso de bibliotecas do lado do cliente](/help/sites-developing/clientlibs.md).
-1. No CRXDE, adicione uma propriedade `categories`com valor de tipo de string como `customfunction` para o `clientlib` pasta.
+1. Create a client library. For more information, see [Using Client-Side Libraries](/help/sites-developing/clientlibs.md).
+2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
    >
-   >`customfunction`é uma categoria de exemplo. Você pode escolher qualquer nome para a categoria que criar na `clientlib`pasta.
+   >`customfunction`is an example category. You can choose any name for the category you create in the `clientlib`folder.
 
-Depois de ter adicionado a biblioteca do cliente ao repositório CRX, use-a no formulário adaptável. Ela permite usar sua função personalizada como uma regra em seu formulário. Execute as seguintes etapas para adicionar a biblioteca do cliente no formulário adaptável.
+After you have added your client library in the CRX repository, use it in your adaptive form. It lets you use your custom function as a rule in your form. Perform the following steps to add the client library in your adaptive form.
 
-1. Abra o formulário no modo de edição.
-Para abrir um formulário no modo de edição, selecione um formulário e **Abertura**.
-1. No modo de edição, selecione um componente e selecione ![nível de campo](assets/field-level.png) > **Contêiner de formulário adaptável** e selecione ![cmppr](assets/cmppr.png).
-1. Na barra lateral, em Nome da biblioteca do cliente, adicione a biblioteca do cliente. ( `customfunction` no exemplo.)
+1. Open your form in edit mode.
+   To open a form in edit mode, select a form and select **Open**.
+1. In the edit mode, select a component, then select ![field-level](assets/field-level.png) &gt; **Adaptive Form Container**, and then select ![cmppr](assets/cmppr.png).
+1. In the sidebar, under Name of Client Library, add your client library. ( `customfunction` in the example.)
 
-   ![Adição da biblioteca de cliente de função personalizada](assets/clientlib.png)
+   ![Adding the custom function client library](assets/clientlib.png)
 
-1. Selecione a caixa numérica de entrada e selecione ![edit-rules](assets/edit-rules.png) para abrir o editor de regras.
-1. Selecionar **Criar regra**. Usando as opções mostradas abaixo, crie uma regra para salvar o valor quadrado da entrada no campo Output do formulário.
-   [![Utilização de funções personalizadas para criar uma regra](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)Selecionar **Concluído**. Sua função personalizada é adicionada.
+1. Select the input numeric box, and select ![edit-rules](assets/edit-rules.png) to open the rule editor.
+1. Select **Create Rule**. Using options shown below, create a rule to save the squared value of the input in the Output field of your form.
+   [ ![Using custom functions to create a rule](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)Select **Done**. Your custom function is added.
 
-#### Tipos suportados de declaração de função {#function-declaration-supported-types}
+#### Function declaration supported types {#function-declaration-supported-types}
 
-**Declaração de função**
+**Function Statement**
 
 ```javascript
 function area(len) {
@@ -677,9 +674,9 @@ function area(len) {
 }
 ```
 
-Esta função é incluída sem `jsdoc` comentários.
+This function is included without `jsdoc` comments.
 
-**Expressão de função**
+**Function Expression**
 
 ```javascript
 var area;
@@ -690,7 +687,7 @@ area = function(len) {
 };
 ```
 
-**Expressão e instrução de função**
+**Function Expression and Statement**
 
 ```javascript
 var b={};
@@ -700,7 +697,7 @@ b.area = function(len) {
 }
 ```
 
-**Declaração de função como variável**
+**Function Declaration as Variable**
 
 ```javascript
 /** */
@@ -711,9 +708,9 @@ var x1,
     x2 =5, x3 =true;
 ```
 
-Limitação: a função personalizada escolhe somente a primeira declaração de função da lista de variáveis, se estiver junto. Você pode usar a expressão de função para cada função declarada.
+Limitation: custom function picks only the first function declaration from the variable list, if together. You can use function expression for every function declared.
 
-**Declaração de função como objeto**
+**Function Declaration as Object**
 
 ```javascript
 var c = {
@@ -728,7 +725,10 @@ var c = {
 
 >[!NOTE]
 >
->Certifique-se de usar `jsdoc` para cada função personalizada. Embora `jsdoc`os comentários são incentivados, inclua um vazio `jsdoc`comentário para marcar sua função como função personalizada. Ela permite o tratamento padrão da função personalizada.
+>Ensure that you use `jsdoc` for every custom function. Although `jsdoc`comments are encouraged, include an empty `jsdoc`comment to mark your function as custom function. It enables default handling of your custom function.
+-->
+
+Também é possível usar funções personalizadas no editor de regras. Para obter instruções sobre como criar funções personalizadas, consulte o artigo [Funções personalizadas no Adaptive Forms](/help/forms/using/create-and-use-custom-functions.md).
 
 ## Gerenciar regras {#manage-rules}
 
@@ -839,21 +839,21 @@ Invocar o serviço de modelo de dados de formulário usando a regra de formulár
 
 Em um formulário de solicitação de empréstimo, você deseja registrar se o candidato ao empréstimo é um cliente existente ou não. Com base nas informações fornecidas pelo usuário, o campo ID do cliente deve mostrar ou ocultar. Além disso, é possível definir o foco no campo ID do cliente se o usuário for um cliente existente. O formulário de pedido de empréstimo tem os seguintes componentes:
 
-* Um botão de rádio, **você é um cliente Geometrixx existente?**, que fornece opções Sim e Não. O valor para Sim é **0** e Não é **1**.
+* Um botão de opção, **Você já é cliente do Geometrixx?**, que fornece as opções Sim e Não. O valor de Sim é **0** e Não é **1**.
 
-* Um campo **de texto Geometrixx ID** do cliente para especificar a ID do cliente.
+* Um campo de texto, **ID de cliente do Geometrixx**, para especificar a ID do cliente.
 
-Ao escrever um relatório Quando regra no rádio botão para implementar esse comportamento, a regra aparece da seguinte maneira no visual regra editor.  ![exemplo de quando regra](assets/when-rule-example.png)
+Quando você escreve uma regra Quando no botão de opção para implementar esse comportamento, a regra é exibida da seguinte maneira no editor visual de regras.  ![when-rule-example](assets/when-rule-example.png)
 
-Regra no visual editor
+Regra no editor visual
 
-No exemplo regra, a declaração na seção Quando é a condição, que quando retorna True, executa as ações especificadas na seção Then.
+Na regra de exemplo, a instrução na seção When é a condição, que quando retorna True, executa as ações especificadas na seção Then.
 
-A regra é exibida da seguinte maneira na editor de código.
+A regra é exibida da seguinte maneira no editor de código.
 
-![quando o código de exemplo regra](assets/when-rule-example-code.png)
+![when-rule-example-code](assets/when-rule-example-code.png)
 
-Regra no código editor
+Regra no editor de código
 
 ### Uso de uma saída de função em uma regra {#using-a-function-output-in-a-rule}
 
@@ -885,10 +885,10 @@ No form ordem de compra explicado no exemplo anterior, você deseja impedir que 
 
 ![example-validate](assets/example-validate.png)
 
-Regra no editor visual
+Regra no visual editor
 
-A regra é exibida da seguinte maneira no editor de código.
+A regra é exibida da seguinte maneira na editor de código.
 
-![example-validate-code](assets/example-validate-code.png)
+![exemplo de código validado](assets/example-validate-code.png)
 
-Regra no editor de código
+Regra no código editor

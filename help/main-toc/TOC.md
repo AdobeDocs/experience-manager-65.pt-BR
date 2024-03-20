@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Use a documentação do Adobe Experience Manager 6.5 para saber como funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5
-source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
+source-git-commit: 52aa367a8d7ebff2f2e1355274ffe357979cac85
 workflow-type: tm+mt
-source-wordcount: '7397'
+source-wordcount: '7406'
 ht-degree: 20%
 
 ---
@@ -619,6 +619,7 @@ ht-degree: 20%
       + [Criar um formulário adaptável baseado nos Componentes principais](/help/forms/using/create-an-adaptive-form-core-components.md)
       + [Criar e usar fragmentos adaptáveis do Forms em um formulário adaptável](/help/forms/using/adaptive-form-fragment-core-components.md)
       + [Criar temas para Forms adaptável com base em Componentes principais](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
+      + [Criar e usar função personalizada em um Formulário adaptável](/help/forms/using/create-and-use-custom-functions.md)
       + [Criar e usar manipulador de erros personalizado para Componentes principais com base no Adaptive Forms](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
    + Forms adaptável - Criação básica {#adaptive-forms-basic-authoring}
       + [Práticas recomendadas para trabalhar com formulários adaptáveis](/help/forms/using/adaptive-forms-best-practices.md)
