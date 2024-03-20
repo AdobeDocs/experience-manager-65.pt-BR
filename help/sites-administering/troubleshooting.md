@@ -7,7 +7,8 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: ab4fc41f-e0e9-4577-aab2-f0b4298f9a59
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 3%
@@ -55,7 +56,7 @@ Os níveis de log são os seguintes:
 |---|---|---|
 | 1 | Erro | Falha na ação. A instalação continua, mas uma parte do CRX não foi instalada corretamente e não funcionará. |
 | 2 | Aviso | A ação foi bem-sucedida, mas encontrou problemas. O CRX pode ou não funcionar corretamente. |
-| 3 | Info | A ação foi bem-sucedida. |
+| 3 | Informações | A ação foi bem-sucedida. |
 
 ## Opção detalhada usada para solução de problemas {#verbose-option-used-for-troubleshooting}
 

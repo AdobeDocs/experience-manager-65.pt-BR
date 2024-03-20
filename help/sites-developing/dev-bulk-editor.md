@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1832'
-ht-degree: 2%
+source-wordcount: '1833'
+ht-degree: 1%
 
 ---
 
@@ -514,7 +515,7 @@ No exemplo anterior, a coluna de seleção contém apenas caixas de seleção co
 
 **Posição forçada**
 
-Os metadados de posição forçada forcedPosition permitem especificar onde a coluna é colocada na grade: 0 é o primeiro lugar e &lt;number of=&quot;&quot; columns=&quot;&quot;>-1 é a última posição. Qualquer outro valor será ignorado.
+Os metadados de posição forçada forcedPosition permitem especificar onde a coluna é colocada na grade: 0 é o primeiro lugar e &lt;number of=&quot;&quot; columns=&quot;&quot;>-1 é a última posição. Qualquer outro valor é ignorado.
 
 No exemplo anterior, a coluna de seleção é a primeira coluna como forcedPosition=&quot;0&quot;.
 

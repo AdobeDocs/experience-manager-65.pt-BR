@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 9092977b-b558-42a3-8092-4615fbc0a08e
-source-git-commit: c67aaef1bbda80f355f8a6f23eac4d9e471fd510
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 57%
+source-wordcount: '553'
+ht-degree: 49%
 
 ---
 
@@ -48,7 +49,7 @@ Ao discutir segmentação, a seguinte terminologia é usada:
 * Interesse no seu site; incluindo páginas visitadas e produtos comprados.
 * Interesse no site de referência; incluindo termos de pesquisa usados ou anúncios clicados.
 * Interesse em outros sites, determinado com o uso de ferramentas como o Spyjax.
-* Fidelidade do visitante; duração da visita, frequência de visitas.
+* Fidelização do visitante; duração da visita, frequência de visitas.
 
 **Características demográficas** - São características da população selecionadas, incluindo:
 

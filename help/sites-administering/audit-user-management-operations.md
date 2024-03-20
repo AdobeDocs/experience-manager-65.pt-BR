@@ -8,10 +8,11 @@ content-type: reference
 docset: aem65
 exl-id: 7a4406c9-2f98-4bf8-b32c-1ec1e7ff36f0
 feature: Operations
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 2%
+source-wordcount: '295'
+ht-degree: 1%
 
 ---
 
@@ -44,7 +45,7 @@ Para redirecionar a saída de registro para um arquivo de registro separado, cri
 
    Para inserir ambos os registradores na variável **Logger** , você deve inserir o nome do primeiro e, em seguida, criar outro campo pressionando o botão &quot;+&quot; e inserindo o nome do segundo agente de log.
 
-## Saída de exemplo {#example-output}
+## Exemplo de saída {#example-output}
 
 Se configurada corretamente, a saída deverá ter esta aparência:
 

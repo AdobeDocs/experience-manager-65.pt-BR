@@ -7,10 +7,11 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
-source-git-commit: 27e5c7fea4e90873bf80f976e179b5af0088f550
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 82%
+ht-degree: 76%
 
 ---
 
@@ -41,7 +42,7 @@ Ao projetar a estrutura de conteúdo para um site e o esquema de metadados para 
 
 No ambiente de criação, os autores podem aplicar tags acessando as propriedades da página e digitando uma ou mais tags no campo **Tags/Palavras-chave**.
 
-Para aplicar [tags predefinidas](/help/sites-administering/tags.md), no **Propriedades da página** janela use o **Tags** e o campo **Selecionar tags** janela. A guia **Tags padrão** é o namespace padrão, o que significa que não há `namespace-string:` prefixado à taxonomia.
+Para aplicar [tags predefinidas](/help/sites-administering/tags.md), no **Propriedades da página** janela use o **Tags** e o campo **Selecionar tags** janela. A variável **Tags padrão** tab é o namespace padrão, o que significa que não há `namespace-string:` prefixado à taxonomia.
 
 ![Janela Selecionar tags; use o botão X para desmarcar as tags selecionadas no momento](assets/chlimage_1-41.png)
 

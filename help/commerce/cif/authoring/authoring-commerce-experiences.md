@@ -2,7 +2,8 @@
 title: Criação de experiências de comércio
 description: O complemento CIF estende a criação do Adobe Experience Manager com recursos específicos de comércio.
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 0%

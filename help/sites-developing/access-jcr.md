@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: fe946b9a-b29e-4aa5-b973-e2a652417a55
-source-git-commit: ff9d054d0b08f5f98f5edb63975a0dbc8370d42f
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
@@ -23,11 +24,11 @@ Você pode modificar programaticamente nós e propriedades localizados no reposi
 
 >[!NOTE]
 >
-Para usar a API JCR, adicione o `jackrabbit-standalone-2.4.0.jar` para o caminho de classe do seu aplicativo Java™. Você pode obter esse arquivo JAR da página da Web da API JCR em [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
+>Para usar a API JCR, adicione o `jackrabbit-standalone-2.4.0.jar` para o caminho de classe do seu aplicativo Java™. Você pode obter esse arquivo JAR da página da Web da API JCR em [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
-Para saber como consultar o JCR do Adobe CQ usando a API de consulta JCR, consulte [Consulta de dados do Adobe Experience Manager usando a API JCR](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html).
+>Para saber como consultar o JCR do Adobe CQ usando a API de consulta JCR, consulte [Consulta de dados do Adobe Experience Manager usando a API JCR](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html).
 
 ## Criar uma instância do Repositório {#create-a-repository-instance}
 

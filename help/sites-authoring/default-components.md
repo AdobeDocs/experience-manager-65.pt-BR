@@ -2,10 +2,11 @@
 title: Componentes padrão
 description: O Adobe Experience Manager vem com vários componentes prontos para uso que fornecem funcionalidade abrangente para os autores de sites.
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 37%
+source-wordcount: '420'
+ht-degree: 34%
 
 ---
 
@@ -32,7 +33,7 @@ Você pode selecionar um componente e arrastá-lo até o local desejado na pági
 
 * [Editar conteúdo - Modo de tela cheia](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
-Para obter mais informações sobre como adicionar componentes a uma página, consulte [Edição de conteúdo de página](/help/sites-authoring/editing-content.md).
+Para obter mais informações sobre como adicionar componentes a uma página, consulte [Editar conteúdo da página](/help/sites-authoring/editing-content.md).
 Os componentes são classificados de acordo com várias categorias chamadas grupos de componentes. Exemplos desses grupos de componentes incluem:
 
 * **We.Retail**: inclui os componentes principais intermediados por proxy para uso com a [Implementação de referência do We.Retail](/help/sites-developing/we-retail.md).

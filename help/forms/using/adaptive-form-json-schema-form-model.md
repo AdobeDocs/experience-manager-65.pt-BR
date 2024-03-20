@@ -5,7 +5,8 @@ role: User, Developer
 level: Beginner, Intermediate
 feature: Adaptive Forms, Foundation Components
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1844'
 ht-degree: 4%
@@ -455,7 +456,7 @@ Você deve ser um membro do [grupo forms-power-user](forms-groups-privileges-tas
    <td> </td>
   </tr>
   <tr>
-   <td>Alternar</td>
+   <td>Interruptor</td>
    <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>

@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 7%
+source-wordcount: '1161'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 7%
 >* Esta página foi projetada para fornecer uma visão geral do manuseio básico ao usar o ambiente de autor do Adobe Experience Manager (AEM). Usa o console **Sites** como base.
 >
 >* Algumas funcionalidades não estão disponíveis em todos os consoles e funcionalidades adicionais estão disponíveis em alguns consoles. Informações específicas sobre os consoles individuais e suas funcionalidades relacionadas são abordadas com mais detalhes em outras páginas.
->* Os atalhos de teclado estão disponíveis em todo o AEM, principalmente ao [usar páginas de console](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) e [de edição](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+>* Atalhos de teclado estão disponíveis em todo o AEM. Em especial, quando [uso de consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) e [editar páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
 
 ## A tela de boas-vindas {#the-welcome-screen}
@@ -129,7 +130,7 @@ A variável **Sites** o console lista suas páginas de conteúdo em uma estrutur
 >
 >Defina o valor da propriedade:
 >`treeAutoExpandMax`
->ligado:
+>em:
 >`/apps/wcm/core/content/siteadmin`
 >
 >Ou globalmente no tema:
@@ -215,7 +216,7 @@ As cores ao lado das páginas no **Publicado** e **Modificado** as colunas indic
 |---|---|---|
 | Publicado | Verde | Publicação bem-sucedida. O conteúdo é publicado. |
 | Publicado | Amarelo | A publicação está pendente. A confirmação da publicação ainda não foi recebida pelo sistema. |
-| Publicado | Vermelho | Falha ao publicar. Não há conexão com a instância de publicação. Isso também pode significar que o conteúdo foi desativado. |
+| Publicado | Vermelho | Falha na publicação. Não há conexão com a instância de publicação. Isso também pode significar que o conteúdo foi desativado. |
 | Publicado | *blank* | Esta página nunca foi publicada. |
 | Modificado | Azul | A página foi modificada desde a última publicação. |
 | Modificado | *blank* | Esta página nunca foi modificada ou não foi modificada desde a última publicação. |

@@ -10,7 +10,8 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '6508'
 ht-degree: 3%
@@ -121,7 +122,7 @@ Consulte [Instalar o pacote de recursos 18912 para migração de ativos em massa
    * **[!UICONTROL Empresa]** - o nome da conta do Dynamic Media.
      >[!IMPORTANT]
      >
-     Somente uma configuração Dynamic Media no Cloud Service é suportada em uma instância de Experience Manager; não adicione mais de uma configuração. Várias configurações do Dynamic Media em uma instância do Experience Manager são _não_ suportado ou recomendado pelo Adobe.
+     >Somente uma configuração Dynamic Media no Cloud Service é suportada em uma instância de Experience Manager; não adicione mais de uma configuração. Várias configurações do Dynamic Media em uma instância do Experience Manager são _não_ suportado ou recomendado pelo Adobe.
 
      <!-- CQDOC-19579 and CQDOC-19612 -->
 
@@ -152,9 +153,9 @@ Para marcar uma pasta selecionada para sincronização com o Dynamic Media, sele
 
    >[!NOTE]
    >
-   Não há suporte para o controle de versão no modo Dynamic Media - Scene7. Além disso, a ativação atrasada se aplica somente se **[!UICONTROL Publicar ativos]** na página Editar configuração do Dynamic Media estiver definida como **[!UICONTROL Na ativação]** e, em seguida, somente até a primeira vez que o ativo for ativado.
+   >Não há suporte para o controle de versão no modo Dynamic Media - Scene7. Além disso, a ativação atrasada se aplica somente se **[!UICONTROL Publicar ativos]** na página Editar configuração do Dynamic Media estiver definida como **[!UICONTROL Na ativação]** e, em seguida, somente até a primeira vez que o ativo for ativado.
    >
-   Depois que um ativo é ativado, todas as atualizações são publicadas imediatamente no Delivery S7.
+   >Depois que um ativo é ativado, todas as atualizações são publicadas imediatamente no Delivery S7.
 
 1. Selecione **[!UICONTROL Salvar]**.
 1. Para visualizar com segurança o conteúdo do Dynamic Media antes de ele ser publicado, o Autor do Experience Manager usa a validação baseada em token e, portanto, o Autor do Experience Manager visualiza o conteúdo do Dynamic Media por padrão. No entanto, você pode &quot;incluir na lista de permissões&quot; mais IPs para fornecer aos usuários acesso à visualização segura do conteúdo. Para configurar essa ação no Experience Manager, consulte [Configurar o Dynamic Media Publish Setup para o Servidor de imagens - Guia Segurança](/help/assets/dm-publish-settings.md#security-tab).
@@ -255,7 +256,7 @@ Se você pretende usar esse recurso, esteja ciente dos seguintes pré-requisitos
 
   >[!NOTE]
   >
-  Configure o armazenamento do Azure Blob com uma chave de acesso e uma chave secreta porque esse grande recurso de upload não é compatível com o AzureSas na configuração de armazenamento do Blob.
+  >Configure o armazenamento do Azure Blob com uma chave de acesso e uma chave secreta porque esse grande recurso de upload não é compatível com o AzureSas na configuração de armazenamento do Blob.
 
 * Oak [Download do Acesso Binário Direto](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) está ativado (Oak&#39;s *Upload de Acesso Binário Direto* não é obrigatório).
 
@@ -361,7 +362,7 @@ Consulte [Configurar predefinições da imagem](/help/assets/managing-image-pres
 
 >[!NOTE]
 >
-Por padrão, o sistema mostra 15 execuções ao selecionar **[!UICONTROL Representações]** e 15 predefinições do visualizador ao selecionar **[!UICONTROL Visualizadores]** na exibição de Detalhes do ativo. Você pode aumentar esse limite. Consulte [Aumentar o número de predefinições de imagens exibidas](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) ou [Aumentar o número de predefinições do visualizador exibidas](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+>Por padrão, o sistema mostra 15 execuções ao selecionar **[!UICONTROL Representações]** e 15 predefinições do visualizador ao selecionar **[!UICONTROL Visualizadores]** na exibição de Detalhes do ativo. Você pode aumentar esse limite. Consulte [Aumentar o número de predefinições de imagens exibidas](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) ou [Aumentar o número de predefinições do visualizador exibidas](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 #### Editar tipos MIME para formatos compatíveis {#editing-mime-types-for-supported-formats}
 
@@ -480,7 +481,7 @@ Dois elementos estão disponíveis para definição: Correspondência e Nome de 
 
    >[!NOTE]
    >
-   Os campos de formulário desativados não executam nenhuma validação de que suas expressões regulares estão corretas. Você vê os resultados da expressão regular que está criando para cada elemento após a linha Resultado. A expressão regular completa é visível na parte inferior da página.
+   >Os campos de formulário desativados não executam nenhuma validação de que suas expressões regulares estão corretas. Você vê os resultados da expressão regular que está criando para cada elemento após a linha Resultado. A expressão regular completa é visível na parte inferior da página.
 
 1. Expanda cada elemento conforme necessário e insira as convenções de nomenclatura que deseja usar.
 1. Conforme necessário, execute um dos procedimentos a seguir:
@@ -602,7 +603,7 @@ Quando o Conjunto de rotação é carregado e publicado, você ativaria o nome d
 
    >[!NOTE]
    >
-   Se a combinação de expressões regulares de linha e coluna não puder determinar a posição do ativo na matriz do conjunto de rotação multidimensional, o ativo não será adicionado ao conjunto. Um erro também é registrado.
+   >Se a combinação de expressões regulares de linha e coluna não puder determinar a posição do ativo na matriz do conjunto de rotação multidimensional, o ativo não será adicionado ao conjunto. Um erro também é registrado.
 
 1. Em Definir convenção de nomeação e criação, especifique o sufixo ou prefixo para o nome base definido na Convenção de nomeação de ativos.
 
@@ -658,7 +659,7 @@ A fila de Fluxo de trabalho de trânsito do Granite é usada para o **[!UICONTRO
 
    >[!NOTE]
    >
-   Uma pesquisa de texto é necessária em vez de um URL direto, pois o PID OSGi é gerado dinamicamente.
+   >Uma pesquisa de texto é necessária em vez de um URL direto, pois o PID OSGi é gerado dinamicamente.
 
 1. No **[!UICONTROL Máximo de Trabalhos Paralelos]** altere o número para o valor desejado.
 
@@ -682,7 +683,7 @@ A fila de Fluxo de trabalho do Granite é usada para fluxos de trabalho não tra
 
    >[!NOTE]
    >
-   Uma pesquisa de texto é necessária em vez de um URL direto, pois o PID OSGi é gerado dinamicamente.
+   >Uma pesquisa de texto é necessária em vez de um URL direto, pois o PID OSGi é gerado dinamicamente.
 
 1. No **[!UICONTROL Máximo de Trabalhos Paralelos]** altere o número para o valor desejado.
 
@@ -730,7 +731,7 @@ Se você usa o Dynamic Media para criação de imagens, vídeo ou ambos, é poss
 
 >[!NOTE]
 >
-Os filtros se aplicam aos tipos MIME e não podem ser específicos de caminho.
+>Os filtros se aplicam aos tipos MIME e não podem ser específicos de caminho.
 
 #### Personalizar filtros de ativos para replicação {#customizing-asset-filters-for-replication}
 

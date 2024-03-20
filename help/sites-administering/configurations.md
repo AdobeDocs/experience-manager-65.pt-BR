@@ -2,7 +2,8 @@
 title: Configurações e o navegador de configuração
 description: Entenda as configurações do AEM e como elas gerenciam as configurações do espaço de trabalho no AEM.
 exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 4%
@@ -33,7 +34,7 @@ O administrador e os autores do AEM podem considerar as configurações como esp
 
 Configurações podem ser criadas para vários recursos diferentes dentro do AEM.
 
-* [Configurações da nuvem](/help/sites-administering/configurations.md)
+* [Configurações na nuvem](/help/sites-administering/configurations.md)
 * [Segmentos do Context Hub](/help/sites-administering/segmentation.md)
 * [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
 * [Modelos editáveis](/help/sites-authoring/templates.md)
@@ -79,7 +80,7 @@ O Navegador de configuração permite que um administrador crie, gerencie e conf
       * Ele é gerado automaticamente com base no título e ajustado de acordo com [Convenções de nomenclatura do AEM.](/help/sites-developing/naming-conventions.md)
       * Ele pode ser ajustado, se necessário.
 1. Verifique o tipo de configurações que deseja permitir.
-   * [Configurações da nuvem](/help/sites-administering/configurations.md)
+   * [Configurações na nuvem](/help/sites-administering/configurations.md)
    * [Segmentos do Context Hub](/help/sites-administering/segmentation.md)
    * [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
    * [Modelos editáveis](/help/sites-authoring/templates.md)

@@ -7,9 +7,10 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: b934ac41-78b9-497f-ba95-b05ef1e5660e
-source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1601'
 ht-degree: 1%
 
 ---
@@ -142,9 +143,9 @@ O AEM vem com vários modelos padrão disponíveis imediatamente. Às vezes, voc
 
 Por exemplo, o AEM vem com vários modelos, incluindo uma página de conteúdo e uma página inicial.
 
-| **Título** | **Componente** | **Local** | **Propósito** |
+| **Título** | **Componente** | **Local** | **Finalidade** |
 |---|---|---|---|
-| Página Inicial | homepage | geometrixx | O modelo da página inicial do Geometrixx. |
+| Página inicial | homepage | geometrixx | O modelo da página inicial do Geometrixx. |
 | Página de conteúdo | contentpage | geometrixx | O modelo da página de conteúdo do Geometrixx. |
 
 #### Exibição de Modelos Padrão {#displaying-default-templates}

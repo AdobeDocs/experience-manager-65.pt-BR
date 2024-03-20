@@ -7,10 +7,11 @@ role: User
 feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2204'
-ht-degree: 15%
+source-wordcount: '2183'
+ht-degree: 14%
 
 ---
 
@@ -105,7 +106,7 @@ Para criar uma coleção inteligente, siga as etapas:
 
 1. Clique em **[!UICONTROL Salvar]** para criar a coleção inteligente e feche a caixa de mensagem para concluir o processo.
 
-   A nova coleção inteligente também é adicionada à lista **[!UICONTROL Pesquisas salvas.]**
+   A nova coleção inteligente também é adicionada à **[!UICONTROL Pesquisas salvas]** lista.
 
    ![collection_listing](assets/collection_listing.png)
 

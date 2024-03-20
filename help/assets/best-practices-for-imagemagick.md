@@ -5,10 +5,11 @@ contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools
 exl-id: 6c149d31-1e64-4d29-a32a-58bd69e9fa98
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 1%
+source-wordcount: '680'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +23,7 @@ Para processar arquivos grandes usando o ImageMagick, considere os requisitos de
 
 >[!NOTE]
 >
->Se você estiver usando [!DNL Experience Manager] em [!DNL Adobe Managed Services] (AMS), entre em contato com o Suporte ao cliente do Adobe se você planejar processar muitos arquivos PSD ou PSB de alta resolução. [!DNL Experience Manager]O pode não processar arquivos PSB de resolução muito alta com mais de 30.000 x 23.000 pixels. 
+>Se você estiver usando [!DNL Experience Manager] em [!DNL Adobe Managed Services] (AMS), entre em contato com o Suporte ao cliente do Adobe se você planejar processar muitos arquivos PSD ou PSB de alta resolução. [!DNL Experience Manager] O não pode processar arquivos PSB de resolução muito alta com mais de 30.000 x 23.000 pixels.
 
 ## Instalar o ImageMagick {#installing-imagemagick}
 

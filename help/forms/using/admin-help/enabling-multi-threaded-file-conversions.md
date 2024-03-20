@@ -7,9 +7,10 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: PDF Generator
 exl-id: 402c1fd4-c6c8-494e-b452-b56a91c4a397
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '884'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ Por padrão, o PDF Generator pode converter apenas um documento OpenOffice, Micr
 
 >[!NOTE]
 >
-As conversões de arquivos de várias operações não são suportadas com o Microsoft® Excel, Microsoft® Visio, Microsoft® Project ou Microsoft® Publisher.
+>As conversões de arquivos de várias operações não são suportadas com o Microsoft® Excel, Microsoft® Visio, Microsoft® Project ou Microsoft® Publisher.
 
 Cada instância do OpenOffice ou do PDFMaker é iniciada usando uma conta de usuário separada. Cada conta de usuário adicionada deve ser um usuário válido com privilégios administrativos no computador do Forms Server. Em um ambiente clusterizado, o mesmo conjunto de usuários deve ser válido para todos os nós do cluster.
 
@@ -67,7 +68,7 @@ Se você estiver executando o OpenOffice, o Microsoft® Word ou o Microsoft® Po
 
    >[!NOTE]
    >
-   Verifique se você atribuiu as funções de usuário do sistema e usuário PDFG a &#39;usuário1&#39; e &#39;usuário2&#39; . Para atribuir uma função PDFG a um usuário, consulte [Adicionar uma conta de usuário](enabling-multi-threaded-file-conversions.md#add-a-user-account)
+   >Verifique se você atribuiu as funções de usuário do sistema e usuário PDFG a &#39;usuário1&#39; e &#39;usuário2&#39; . Para atribuir uma função PDFG a um usuário, consulte [Adicionar uma conta de usuário](enabling-multi-threaded-file-conversions.md#add-a-user-account)
 
 1. Além disso, no arquivo /etc/sudoers, localize e comente esta linha adicionando um sinal numérico (#) no início da linha:
 
@@ -88,7 +89,7 @@ Se você estiver executando o OpenOffice, o Microsoft® Word ou o Microsoft® Po
 
 >[!NOTE]
 >
-O OpenOffice deve ser instalado em um local de diretório que todos os usuários de PDFG possam acessar. Você pode verificar isso fazendo logon como usuário PDFG e verificando se é possível iniciar o OpenOffice sem problemas.
+>O OpenOffice deve ser instalado em um local de diretório que todos os usuários de PDFG possam acessar. Você pode verificar isso fazendo logon como usuário PDFG e verificando se é possível iniciar o OpenOffice sem problemas.
 
 ### Adicionar uma conta de usuário {#add-a-user-account}
 
@@ -97,7 +98,7 @@ O OpenOffice deve ser instalado em um local de diretório que todos os usuários
 
    >[!NOTE]
    >
-   Se você estiver configurando usuários para OpenOffice, o número de instâncias do OpenOffice não poderá ser maior que o número de contas de usuário especificadas nesta etapa.
+   >Se você estiver configurando usuários para OpenOffice, o número de instâncias do OpenOffice não poderá ser maior que o número de contas de usuário especificadas nesta etapa.
 
 1. Reinicie o servidor do Forms.
 

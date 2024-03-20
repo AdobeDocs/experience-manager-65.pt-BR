@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1615'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -165,7 +166,7 @@ Este exemplo ilustra como o mapeamento funciona no contexto do rastreamento e do
   <tr>
    <td>pagedata.title</td>
    <td>EVar Personalizado 1 (eVar 1)</td>
-   <td>eVar1</td>
+   <td>EVAR 1</td>
   </tr>
   <tr>
    <td>eventdata.events.pageView</td>
@@ -187,12 +188,12 @@ Este exemplo ilustra como o mapeamento funciona no contexto do rastreamento e do
   <tr>
    <td>eventdata.keyword</td>
    <td>EVar personalizado 2 (eVar 2)</td>
-   <td>eVar2</td>
+   <td>EVAR 2</td>
   </tr>
   <tr>
    <td>eventdata.results</td>
    <td>EVar Personalizado 3 (eVar 3)</td>
-   <td>eVar3</td>
+   <td>EVAR 3</td>
   </tr>
   <tr>
    <td>eventdata.events.search</td>

@@ -1,5 +1,5 @@
 ---
-title: Perfis de imagem do Dynamic Media
+title: Perfis de imagem Dynamic Media
 description: Crie Perfis de imagem que contenham configurações para Tirar nitidez da máscara e Recorte inteligente ou Amostra inteligente, ou ambos, e aplique o perfil a uma pasta de ativos de imagem.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,14 +8,15 @@ content-type: reference
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '3033'
-ht-degree: 6%
+source-wordcount: '3048'
+ht-degree: 4%
 
 ---
 
-# Perfis de imagem do Dynamic Media {#image-profiles}
+# Perfis de imagem Dynamic Media {#image-profiles}
 
 Ao fazer upload de imagens, você pode cortar automaticamente a imagem após o upload aplicando um Perfil de imagem à pasta.
 
@@ -77,7 +78,7 @@ Entrada **[!UICONTROL Tirar nitidez da máscara]**, você tem as seguintes opç�
 | Opção | Descrição |
 | --- | --- |
 | Quantidade | Controla a quantidade de contraste aplicada aos pixels de borda. O padrão é 1,75. Para imagens de alta resolução, é possível aumentá-las para até 5. Pense na Quantidade como uma medida da intensidade do filtro. O intervalo é de 0 a 5. |
-| Raio | Determina o número de pixels em torno dos pixels de borda que afetam a nitidez. Para imagens de alta resolução, insira de 1 a 2. Um valor baixo aplica nitidez apenas aos pixels de borda; um valor alto aplica nitidez a uma faixa mais ampla de pixels. O valor correto depende da imagem. O valor padrão é 0,2. O intervalo é de 0 a 250. |
+| Raio | Determina o número de pixels em torno dos pixels da borda que afetam a nitidez. Para imagens de alta resolução, insira de 1 a 2. Um valor baixo aplica nitidez apenas aos pixels da borda; um valor alto aplica nitidez a uma faixa mais ampla de pixels. O valor correto depende do tamanho da imagem. O valor padrão é 0,2. O intervalo é de 0 a 250. |
 | Limite | Determina o intervalo de contraste que deve ser ignorado quando o filtro Tirar nitidez da máscara é aplicado. Em outras palavras, essa opção determina o quão diferentes os pixels com nitidez devem ser da área ao redor antes de serem considerados pixels de borda e de serem nitidez. Para evitar a introdução de ruídos, experimente valores entre 0 e 255. |
 
 A nitidez é descrita em [Nitidez de imagens](/help/assets/assets/sharpening_images.pdf).
@@ -102,7 +103,7 @@ Consulte também [Práticas recomendadas para organizar ativos digitais para usa
 
    ![cortar](assets/crop.png)
 
-1. Selecione **[!UICONTROL Salvar]**. O perfil recém-criado aparece na lista de perfis disponíveis.
+1. Selecionar **[!UICONTROL Salvar]**. O perfil recém-criado aparece na lista de perfis disponíveis.
 
 ## Editar ou excluir perfis de imagem do Dynamic Media {#editing-or-deleting-image-profiles}
 

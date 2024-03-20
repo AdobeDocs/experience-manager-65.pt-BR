@@ -2,9 +2,10 @@
 title: Adicionar o ContextHub a páginas e acessar lojas
 description: Adicione o ContextHub às suas páginas para ativar os recursos do ContextHub e para vincular às bibliotecas de JavaScript do ContextHub
 exl-id: ae745af9-b49f-46b9-ab48-2fd256e9a681
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---

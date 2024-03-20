@@ -1,18 +1,19 @@
 ---
-title: Gerenciamento de usuários do Forms | Manipulação de dados do usuário
+title: Gerenciamento de usuários do Forms | Manuseio de dados do usuário
 description: Saiba como o componente de Gerenciamento de usuários do AEM Forms JEE permite criar, autorizar e gerenciar usuários que precisam de acesso ao AEM Forms.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
 exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '904'
 ht-degree: 0%
 
 ---
 
-# Gerenciamento de usuários do Forms | Manipulação de dados do usuário {#forms-user-management-handling-user-data}
+# Gerenciamento de usuários do Forms | Manuseio de dados do usuário {#forms-user-management-handling-user-data}
 
 O gerenciamento de usuários é um componente do AEM Forms JEE que permite criar, gerenciar e autorizar usuários do AEM Forms a acessar o AEM Forms. O gerenciamento de usuários usa domínios como diretórios para obter informações do usuário. Os seguintes tipos de domínio são compatíveis:
 
@@ -111,13 +112,13 @@ Execute os seguintes comandos de banco de dados para que você possa exportar da
 >
 >Os comandos a seguir usam nomes de tabelas de bancos de dados em My SQL e bancos de dados IBM® DB2®. Ao executar esses comandos em bancos de dados Oracle e MS® SQL, substitua os seguintes nomes de tabela nos comandos:
 >
-* Substituir `EdcPrincipalLocalAccountEntity` com `EdcPrincipalLocalAccount`
+>* Substituir `EdcPrincipalLocalAccountEntity` com `EdcPrincipalLocalAccount`
 >
-* Substituir `EdcPrincipalEmailAliasEntity` com `EdcPrincipalEmailAliasEn`
+>* Substituir `EdcPrincipalEmailAliasEntity` com `EdcPrincipalEmailAliasEn`
 >
-* Substituir `EdcPrincipalMappingEntity` com `EdcPrincipalMappingEntit`
+>* Substituir `EdcPrincipalMappingEntity` com `EdcPrincipalMappingEntit`
 >
-* Substituir `EdcPrincipalGrpCtmntEntity` com `EdcPrincipalGrpCtmntEnti`
+>* Substituir `EdcPrincipalGrpCtmntEntity` com `EdcPrincipalGrpCtmntEnti`
 >
 
 ```sql

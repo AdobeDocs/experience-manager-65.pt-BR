@@ -7,7 +7,8 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
-source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3227'
 ht-degree: 2%
@@ -75,7 +76,7 @@ As seguintes propriedades estão disponíveis para muitos componentes de etapa d
    * Se você atribuir a etapa a um grupo inteiro, quando o fluxo de trabalho atingir essa etapa, todos os usuários nesse grupo terão a ação em seus **Caixa de entrada do fluxo de trabalho**.
    * Consulte [Participar de fluxos de trabalho](/help/sites-authoring/workflows-participating.md) para obter mais informações.
 
-## E dividir {#and-split}
+## Divisão E {#and-split}
 
 A variável **E dividir** cria uma divisão no fluxo de trabalho, depois da qual ambas as ramificações ficam ativas. Adicione etapas do fluxo de trabalho a cada ramificação, conforme necessário. Essa etapa permite introduzir vários caminhos de processamento no fluxo de trabalho. Por exemplo, é possível permitir que determinadas etapas de revisão ocorram em paralelo, economizando tempo.
 

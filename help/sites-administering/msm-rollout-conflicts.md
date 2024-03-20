@@ -7,10 +7,11 @@ topic-tags: site-features
 content-type: reference
 feature: Multi Site Manager
 exl-id: e145e79a-c363-4a33-b9f9-99502ed20563
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 22%
+ht-degree: 18%
 
 ---
 
@@ -82,7 +83,7 @@ Isso é feito usando o [Configuração OSGi](/help/sites-deploying/configuring-o
 
   Definido como verdadeiro se o gerenciador de implantação deve lidar com conflitos de uma página criada na live copy com um nome que existe no blueprint.
 
-O AEM tem [comportamentos predefinidos quando o gerenciamento de conflitos foi desativado](#behavior-when-conflict-handling-deactivated).
+O AEM [comportamento predefinido quando o gerenciamento de conflitos foi desativado](#behavior-when-conflict-handling-deactivated).
 
 ## Manipuladores de conflito {#conflict-handlers}
 
@@ -94,7 +95,7 @@ O AEM fornece:
 
    * `ResourceNameRolloutConflictHandler`
 
-* A possibilidade de implementar um [manipulador personalizado](#customized-handlers).
+* A possibilidade de aplicar uma [manipulador personalizado](#customized-handlers).
 * O mecanismo de classificação de serviço que permite definir a prioridade de cada manipulador individual. O serviço com a classificação mais alta é usado.
 
 ### Manipulador de conflito padrão {#default-conflict-handler}

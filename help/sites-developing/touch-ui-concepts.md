@@ -7,9 +7,10 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: f13ac6c2-16ab-422d-9005-ab0b49172271
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2167'
+source-wordcount: '2147'
 ht-degree: 0%
 
 ---
@@ -209,7 +210,7 @@ Os componentes de base podem ser encontrados em:
 
 Esta biblioteca contém um componente de interface do usuário do Granite para cada elemento Coral. Um componente é orientado por conteúdo e sua configuração fica no repositório. Isso permite compor um aplicativo de interface do usuário do Granite sem gravar a marcação HTML manualmente.
 
-Propósito:
+Finalidade:
 
 * Modelo de componente para elementos de HTML
 * Composição do componente
@@ -260,7 +261,7 @@ A variável [Componentes de administração da interface do Granite](https://dev
 * Trilho (esqueleto)
 * Painel de pesquisa
 
-Propósito:
+Finalidade:
 
 * Aparência unificada para aplicativos de administração
 * RAD para aplicativos de administração
@@ -313,7 +314,7 @@ No nível mais básico, um elemento HTML é uma tag HTML com um nome de classe d
 
 O CSS é usado para fornecer a aparência real. Para facilitar a personalização da aparência (por exemplo, no caso de marcas), os valores de estilo reais são declarados como variáveis, que são expandidas pelo [MENOS](https://lesscss.org/) pré-processador durante o tempo de execução.
 
-Propósito:
+Finalidade:
 
 * Fornecer elementos básicos da interface do usuário com aparência comum
 * Fornecer o sistema de grade padrão
@@ -380,7 +381,7 @@ O mesmo conceito é usado para implementar a validação de formulários. Para u
 >
 >A validação do formulário nativo HTML5 deve ser usada sempre que possível e/ou expandida.
 
-Propósito:
+Finalidade:
 
 * Fornecer comportamento dinâmico para elementos de HTML
 * Não é possível fornecer layouts personalizados com CSS puro
@@ -434,7 +435,7 @@ Um widget combina um ou mais elementos básicos com um plug-in JavaScript para f
 
 Um widget pode acionar e ouvir eventos personalizados para cooperar com outros widgets na página. Alguns widgets são widgets nativos do jQuery que usam os elementos HTML Coral.
 
-Propósito:
+Finalidade:
 
 * Implementar elementos de interface do usuário de nível superior que exibam comportamento complexo
 * Acionamento e manuseio de eventos
@@ -488,7 +489,7 @@ Isso inclui a manipulação de XSS e o barramento de evento.
 
 Embora os plug-ins e widgets do elemento HTML possam depender da funcionalidade fornecida pela biblioteca de utilitários, esta não pode ter nenhuma dependência rígida em relação aos elementos nem aos próprios widgets.
 
-Propósito:
+Finalidade:
 
 * Fornecer funcionalidade comum
 * Implementação do barramento de evento

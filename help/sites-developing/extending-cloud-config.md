@@ -1,19 +1,20 @@
 ---
-title: Configurações do Cloud Service
+title: Configurações do serviço de nuvem
 description: É possível estender as instâncias existentes para criar suas próprias configurações
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 20a19ee5-7113-4aca-934a-a42c415a8d93
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '552'
 ht-degree: 3%
 
 ---
 
-# Configurações do Cloud Service{#cloud-service-configurations}
+# Configurações do serviço de nuvem{#cloud-service-configurations}
 
 As configurações são projetadas para fornecer a lógica e a estrutura para armazenar configurações de serviço.
 
@@ -104,7 +105,7 @@ Depois de definir o modelo e o componente, é possível adicionar a configuraç�
 
 `/etc/cloudservices/<service-name>`
 
-### Modelo de conteúdo {#content-model}
+### Modelo do conteúdo {#content-model}
 
 O modelo de conteúdo é armazenado como `cq:Page` em:
 
@@ -137,7 +138,7 @@ Para obter a documentação de referência sobre a API, consulte [com.day.cq.wcm
 
 ### Integração com o AEM {#aem-integration}
 
-Os serviços disponíveis estão listados na **Cloud Services** guia do **Propriedades da página** caixa de diálogo (de qualquer página que herde de `foundation/components/page` ou `wcm/mobile/components/page`).
+Os serviços disponíveis estão listados na **Cloud Service** guia do **Propriedades da página** caixa de diálogo (de qualquer página que herde de `foundation/components/page` ou `wcm/mobile/components/page`).
 
 A guia também fornece:
 

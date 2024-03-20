@@ -7,7 +7,8 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4713'
 ht-degree: 0%
@@ -106,7 +107,7 @@ Quando você edita políticas, estas restrições se aplicam:
 
    >[!NOTE]
    >
-   É possível criar um nome de política que contenha caracteres estendidos; no entanto, quando uma comparação é feita entre duas strings, caracteres acentuados e não acentuados, como &quot;e&quot; e &quot;é&quot;, são considerados iguais. Quando alguém cria uma política, é feita uma comparação para verificar se existe uma política com o mesmo nome. A comparação não pode distinguir entre nomes que são iguais, exceto para caracteres acentuados. Pressupõe-se que a política já esteja adicionada ao banco de dados e a nova não esteja adicionada.
+   >É possível criar um nome de política que contenha caracteres estendidos; no entanto, quando uma comparação é feita entre duas strings, caracteres acentuados e não acentuados, como &quot;e&quot; e &quot;é&quot;, são considerados iguais. Quando alguém cria uma política, é feita uma comparação para verificar se existe uma política com o mesmo nome. A comparação não pode distinguir entre nomes que são iguais, exceto para caracteres acentuados. Pressupõe-se que a política já esteja adicionada ao banco de dados e a nova não esteja adicionada.
 
 1. Adicione usuários e grupos à política e defina as permissões apropriadas. (Consulte [Usuários e grupos](creating-policies.md#users-and-groups).)
 1. Em Configurações gerais, selecione as opções apropriadas. (Consulte [Configurações gerais](creating-policies.md#general-settings).)
@@ -126,7 +127,7 @@ Na área Usuários e grupos, especifique os usuários que têm acesso a document
 
 >[!NOTE]
 >
-O editor do documento é o usuário que protege o documento com a política. Esse usuário é sempre incluído por padrão em uma política, com direitos de acesso totais, incluindo recursos de revogação e troca de políticas. No entanto, os administradores podem alterar os direitos de acesso do editor do documento para políticas compartilhadas. Por exemplo, o administrador pode restringir o editor de documentos de revogar o acesso aos documentos ou alternar a política.
+>O editor do documento é o usuário que protege o documento com a política. Esse usuário é sempre incluído por padrão em uma política, com direitos de acesso totais, incluindo recursos de revogação e troca de políticas. No entanto, os administradores podem alterar os direitos de acesso do editor do documento para políticas compartilhadas. Por exemplo, o administrador pode restringir o editor de documentos de revogar o acesso aos documentos ou alternar a política.
 
 **Adicionar usuário ou grupo:** Para adicionar um usuário ou grupo de usuários, clique em Adicionar usuário ou grupo e, em seguida, clique em Pesquisa avançada para encontrar usuários ou grupos. Os usuários incluem os usuários internos da organização e os usuários convidados que se registraram com segurança de documentos. Quando você seleciona essa opção, a página Adicionar Usuário ou Grupo é exibida:
 
@@ -138,7 +139,7 @@ O editor do documento é o usuário que protege o documento com a política. Ess
 
 >[!NOTE]
 >
-Se você inserir um nome de usuário convidado ou endereço de email correto e nenhum resultado for retornado, o usuário pode ainda não ter se registrado ou a conta pode ser excluída. Você pode tentar adicionar o usuário como um tipo de usuário convidado ou entrar em contato com o administrador.
+>Se você inserir um nome de usuário convidado ou endereço de email correto e nenhum resultado for retornado, o usuário pode ainda não ter se registrado ou a conta pode ser excluída. Você pode tentar adicionar o usuário como um tipo de usuário convidado ou entrar em contato com o administrador.
 
 **Convidar novo usuário:** Para adicionar um usuário convidado, clique em Convidar novo usuário, digite o endereço de email do usuário na caixa exibida e clique em Convidar. Essa opção só estará disponível se tiver sido habilitada pelo administrador. Quando você adiciona novos usuários convidados a uma política, a segurança de documentos envia um email de convite de registro se os usuários ainda não tiverem sido convidados a se registrar. Os usuários devem usar o link no email para criar uma conta e, em seguida, devem ativar a conta.
 
@@ -148,7 +149,7 @@ Após o registro, os usuários convidados podem usar documentos protegidos por p
 
 >[!NOTE]
 >
-Para permitir acesso anônimo a um documento protegido por política que não o possua no momento, remova a política existente e aplique uma política que permita acesso anônimo. Se você alternar ou alterar a política existente, os usuários ainda deverão fazer logon para acessar o documento.
+>Para permitir acesso anônimo a um documento protegido por política que não o possua no momento, remova a política existente e aplique uma política que permita acesso anônimo. Se você alternar ou alterar a política existente, os usuários ainda deverão fazer logon para acessar o documento.
 
 #### Especificar as permissões de documento para usuários e grupos {#specify-the-document-permissions-for-users-and-groups}
 
@@ -212,13 +213,13 @@ A área Configurações gerais contém as seguintes configurações:
 
 >[!NOTE]
 >
-As datas de validade são baseadas no fuso horário do sistema de segurança de documentos, não no fuso horário do computador local.
+>As datas de validade são baseadas no fuso horário do sistema de segurança de documentos, não no fuso horário do computador local.
 
 **Auditoria:** Ative ou desative a auditoria dos eventos associados a um documento protegido por política. Por exemplo, a segurança de documentos pode registrar eventos como tentativas de abrir um documento. Os eventos auditados são exibidos na lista da página Eventos. Se você não selecionar essa opção, a segurança de documentos não registrará eventos para documentos associados à política.
 
 >[!NOTE]
 >
-O administrador também deve habilitar a auditoria do servidor na página de configuração Auditoria e Configurações de Privacidade para que o recurso de auditoria funcione.
+>O administrador também deve habilitar a auditoria do servidor na página de configuração Auditoria e Configurações de Privacidade para que o recurso de auditoria funcione.
 
 **Rastreamento de uso estendido:** Ative ou desative o Rastreamento de uso estendido. A segurança de documentos oferece suporte ao rastreamento de eventos de usuário associados a várias operações executadas em um arquivo PDF. O objeto de segurança do documento pode ser acessado usando um Java Script. Um clique de botão, um arquivo multimídia que está sendo reproduzido ou o salvamento de um arquivo são alguns exemplos de eventos que são acionados a partir de um PDF protegido por política. Usando o objeto de segurança de documentos, você também pode recuperar informações do usuário. O rastreamento de eventos pode ser ativado no servidor de segurança de documentos em nível global ou em nível de política.
 
@@ -228,7 +229,7 @@ O administrador também deve habilitar a auditoria do servidor na página de con
 
 Selecione os provedores de autenticação externa se você já tiver configurado algum. Os provedores disponíveis estão listados.
 
-### Configurações de autenticação {#authentication-settings}
+### Configurações da autenticação {#authentication-settings}
 
 Você pode substituir as configurações de autenticação configuradas no servidor e especificar as opções de autenticação relevantes para esta política. Selecione Substituir configurações de autenticação global e, em seguida, selecione as opções de autenticação relevantes para esta política. As seguintes opções de autenticação estão disponíveis:
 
@@ -244,7 +245,7 @@ Se você estiver substituindo as configurações de autenticação global, poder
 
 >[!NOTE]
 >
-A autenticação estendida é compatível com o Apple Mac OS X com o Adobe Acrobat versão 11.0.6 e superior.
+>A autenticação estendida é compatível com o Apple Mac OS X com o Adobe Acrobat versão 11.0.6 e superior.
 
 ### Configurações avançadas {#advanced-settings}
 
@@ -258,7 +259,7 @@ Se você estiver editando uma política e o administrador tiver deletado uma mar
 
 >[!NOTE]
 >
-Para políticas que fornecem acesso anônimo ao usuário, o nome do usuário e o identificador de um usuário anônimo não são exibidos como uma marca d&#39;água mesmo se você selecionar esse tipo de marca d&#39;água.
+>Para políticas que fornecem acesso anônimo ao usuário, o nome do usuário e o identificador de um usuário anônimo não são exibidos como uma marca d&#39;água mesmo se você selecionar esse tipo de marca d&#39;água.
 
 **Use apenas plug-ins certificados do Acrobat para PDF:** Quando selecionada para uma política, essa opção especifica que o Acrobat 8.0 e posterior deve ser executado no modo certificado ao abrir documentos protegidos com a política. Quando o Acrobat é executado no modo certificado, ele não carrega plug-ins de terceiros.
 
@@ -296,7 +297,7 @@ Um X vermelho é exibido ao lado de uma política desativada.
 
 >[!NOTE]
 >
-Os administradores não podem desativar políticas pessoais e os usuários não podem ativar e desativar suas próprias políticas.
+>Os administradores não podem desativar políticas pessoais e os usuários não podem ativar e desativar suas próprias políticas.
 
 1. Na página Segurança de documentos, clique em Políticas e, em seguida, clique na guia Conjuntos de políticas.
 1. Clique no nome do conjunto de políticas apropriado e clique na guia Políticas.
@@ -322,7 +323,7 @@ Você pode exibir informações mais detalhadas sobre uma política que aparece 
 
 >[!NOTE]
 >
-As políticas geradas automaticamente pelo Acrobat para os destinatários de documentos anexados a mensagens de email no Microsoft Outlook não aparecem na lista de políticas. Você pode exibir essas políticas somente abrindo a página Detalhes do documento do documento associado.
+>As políticas geradas automaticamente pelo Acrobat para os destinatários de documentos anexados a mensagens de email no Microsoft Outlook não aparecem na lista de políticas. Você pode exibir essas políticas somente abrindo a página Detalhes do documento do documento associado.
 
 1. Na página Segurança de documentos, clique em Políticas e, em seguida, clique na guia Minhas políticas.
 1. Preencha as informações de pesquisa para poder pesquisar por políticas pessoais.
@@ -375,7 +376,7 @@ Usuários externos podem copiar políticas somente se o administrador habilitar 
 
    >[!NOTE]
    >
-   É possível criar um nome de política que contenha caracteres estendidos; no entanto, quando uma comparação é feita entre duas strings, caracteres acentuados e não acentuados, como &quot;e&quot; e &quot;é&quot;, são considerados iguais. Quando alguém cria uma política, é feita uma comparação para verificar se existe uma política com o mesmo nome. A comparação não pode distinguir entre nomes que são iguais, exceto para caracteres acentuados. Pressupõe-se que a política já esteja adicionada ao banco de dados e a nova não esteja adicionada.
+   >É possível criar um nome de política que contenha caracteres estendidos; no entanto, quando uma comparação é feita entre duas strings, caracteres acentuados e não acentuados, como &quot;e&quot; e &quot;é&quot;, são considerados iguais. Quando alguém cria uma política, é feita uma comparação para verificar se existe uma política com o mesmo nome. A comparação não pode distinguir entre nomes que são iguais, exceto para caracteres acentuados. Pressupõe-se que a política já esteja adicionada ao banco de dados e a nova não esteja adicionada.
 
 1. Clique em OK.
 
@@ -392,7 +393,7 @@ Os usuários convidados só poderão excluir políticas se o administrador habil
 
 >[!NOTE]
 >
-Use o aplicativo cliente para remover políticas de documentos. (Consulte a Ajuda do Acrobat ou a Ajuda das extensões adequadas do Acrobat Reader DC.)
+>Use o aplicativo cliente para remover políticas de documentos. (Consulte a Ajuda do Acrobat ou a Ajuda das extensões adequadas do Acrobat Reader DC.)
 
 ## Classificar a lista de políticas {#sort-the-policy-list}
 

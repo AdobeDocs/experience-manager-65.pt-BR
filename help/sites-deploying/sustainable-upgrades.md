@@ -8,9 +8,10 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: b777fdca-e7a5-427a-9e86-688dd7cac636
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
@@ -59,7 +60,7 @@ Para tornar mais seguro e fácil para os clientes compreenderem quais as áreas 
 
 >[!NOTE]
 >
-Essas políticas só são aplicadas contra mecanismos baseados em caminho de pesquisa Sling. Outras áreas de **/libs** como uma biblioteca do lado do cliente pode ser marcada como `Internal`, mas ainda pode ser usado com a inclusão padrão clientlib. É importante que um cliente continue a respeitar a classificação Interna nesses casos.
+>Essas políticas só são aplicadas contra mecanismos baseados em caminho de pesquisa Sling. Outras áreas de **/libs** como uma biblioteca do lado do cliente pode ser marcada como `Internal`, mas ainda pode ser usado com a inclusão padrão clientlib. É importante que um cliente continue a respeitar a classificação Interna nesses casos.
 
 #### Indicadores de tipo de conteúdo do CRXDE Lite {#crxde-lite-content-type-indicators}
 
@@ -81,9 +82,9 @@ Os mixins aplicados no CRXDE Lite mostram nós de conteúdo e árvores marcados 
 
 >[!NOTE]
 >
-A partir do AEM 6.5, o Adobe recomenda o uso do Detector de padrões para detectar violações de acesso ao conteúdo. Os relatórios do detector de padrões são mais detalhados, detectam mais problemas e reduzem a probabilidade de falsos positivos.
+>A partir do AEM 6.5, o Adobe recomenda o uso do Detector de padrões para detectar violações de acesso ao conteúdo. Os relatórios do detector de padrões são mais detalhados, detectam mais problemas e reduzem a probabilidade de falsos positivos.
 >
-Para obter mais informações, consulte [Avaliando a complexidade da atualização com o Detector de padrões](/help/sites-deploying/pattern-detector.md).
+>Para obter mais informações, consulte [Avaliando a complexidade da atualização com o Detector de padrões](/help/sites-deploying/pattern-detector.md).
 
 O AEM 6.5 é enviado com uma verificação de integridade para alertar os clientes se o conteúdo sobreposto ou referenciado for usado de forma inconsistente com a classificação do conteúdo.
 

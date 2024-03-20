@@ -7,10 +7,11 @@ activity: setup
 audience: administrator
 feature: Commerce Integration Framework
 exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 14%
+source-wordcount: '369'
+ht-degree: 15%
 
 ---
 
@@ -26,7 +27,7 @@ Os recursos de Gerenciamento de vários sites do AEM para Live Copy e Language C
 
 A configuração recomendada é usar uma relação 1:1 entre o site do AEM e a exibição da loja da Adobe Commerce.
 
-Para conectar um site de AEM e os Componentes principais da CIF do AEM a uma visualização de loja dedicada, siga as etapas abaixo:
+Para conectar um site de AEM AEM e os componentes principais de CIF também a uma visualização de loja dedicada, siga as etapas abaixo:
 
 ## Configuração {#configuration}
 

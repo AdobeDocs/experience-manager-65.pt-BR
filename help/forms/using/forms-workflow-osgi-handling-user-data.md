@@ -1,18 +1,19 @@
 ---
-title: Fluxos de trabalho centrados no Forms no OSGi | Manipulação de dados do usuário
-description: Fluxos de trabalho centrados no Forms no OSGi | Manipulação de dados do usuário
+title: Fluxos de trabalho centrados no Forms no OSGi | Manuseio de dados do usuário
+description: Fluxos de trabalho centrados no Forms no OSGi | Manuseio de dados do usuário
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 0%
 
 ---
 
-# Fluxos de trabalho centrados no Forms no OSGi | Manipulação de dados do usuário {#forms-centric-workflows-on-osgi-handling-user-data}
+# Fluxos de trabalho centrados no Forms no OSGi | Manuseio de dados do usuário {#forms-centric-workflows-on-osgi-handling-user-data}
 
 Os fluxos de trabalho de AEM centrados na Forms permitem que você automatize processos de negócios reais centrados na Forms. Os fluxos de trabalho consistem em uma série de etapas executadas em uma ordem especificada no modelo de fluxo de trabalho associado. Cada etapa executa uma ação específica, como atribuir uma tarefa a um usuário ou enviar uma mensagem de email. Os workflows podem interagir com ativos no repositório, contas de usuário e serviços. Portanto, os workflows podem coordenar atividades complicadas que envolvem qualquer aspecto do Experience Manager.
 
@@ -49,7 +50,7 @@ Os locais de repositório padrão onde a carga, os rascunhos e o histórico de u
    <td>/etc/workflow/instances/[server_id]/[date]/[workflow-instance]/</td>
   </tr>
   <tr>
-   <td><strong>Carga</strong></td>
+   <td><strong>Carga útil</strong></td>
    <td>/var/fd/dashboard/payload/[server_id]/[date]/<br /> [payload-id]/</td>
    <td>/etc/fd/dashboard/payload/[server_id]/[date]/<br /> [payload-id]/</td>
   </tr>
@@ -59,7 +60,7 @@ Os locais de repositório padrão onde a carga, os rascunhos e o histórico de u
    <td>/etc/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow-instance]/draft/[workitem]/</td>
   </tr>
   <tr>
-   <td><strong>História</strong></td>
+   <td><strong>Histórico</strong></td>
    <td>/var/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow_instance]/history/</td>
    <td>/etc/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow_instance]/history/</td>
   </tr>

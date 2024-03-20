@@ -3,10 +3,11 @@ title: Configurar o RTE para vários editores no local.
 description: Crie vários editores no local no Adobe Experience Manager ao configurar o Editor de Rich Text.
 contentOwner: AG
 exl-id: 03030317-8b7d-408a-bdfd-619824d7260c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 2%
+source-wordcount: '437'
+ht-degree: 0%
 
 ---
 
@@ -108,7 +109,7 @@ A configuração de vários editores de rich text é um pouco diferente, pois é
 >
 >Não nomeie o nó de configuração do RTE como `config`. Caso contrário, as configurações de RTE estarão disponíveis somente para os administradores e não para os usuários do grupo `content-author`.
 
-## Exemplos de código {#code-samples}
+## Amostras de código {#code-samples}
 
 Você pode encontrar o código desta página em [projeto aem-authoring-hybrideditors no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors). Você pode baixar o projeto completo como [um arquivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip).
 
@@ -119,4 +120,3 @@ Para obter informações gerais sobre como adicionar um editor no local, consult
 >[!MORELIKETHIS]
 >
 >* [Configurar editor de rich text no Experience Manager](/help/sites-administering/rich-text-editor.md).
-

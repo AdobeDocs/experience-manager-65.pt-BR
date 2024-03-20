@@ -7,9 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '5393'
+source-wordcount: '5333'
 ht-degree: 0%
 
 ---
@@ -825,7 +826,7 @@ O URL fornecido para o `com.adobe.idp.Document` objeto é sempre lido no lado em
      Document doc = new Document(new java.net.URL("file:c:/temp/input.pdf"));
 ```
 
-O arquivo c:/temp/input.pdf deve estar localizado no computador cliente (não no computador do servidor). O computador cliente é onde o URL é lido e onde o `com.adobe.idp.Document` objeto foi criado.
+O arquivo c:/temp/input.pdf deve estar localizado no computador cliente (não no computador servidor). O computador cliente é onde o URL é lido e onde o `com.adobe.idp.Document` objeto foi criado.
 
 **Criar um documento baseado em conteúdo acessíveis a partir de uma URL**
 

@@ -7,7 +7,8 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4830'
 ht-degree: 0%
@@ -104,7 +105,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
    * Iniciador
    * InstanceId
    * ModelId
-   * Carga
+   * Carga útil
    * IniciarComentário
    * WorkflowTitle
 
@@ -122,7 +123,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
    * Iniciador
    * InstanceId
    * ModelId
-   * Carga
+   * Carga útil
    * IniciarComentário
    * WorkflowTitle
 
@@ -141,7 +142,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
    * Iniciador
    * InstanceId
    * ModelId
-   * Carga
+   * Carga útil
    * IniciarComentário
    * WorkflowTitle
 
@@ -206,7 +207,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
    * Iniciador
    * InstanceId
    * ModelId
-   * Carga
+   * Carga útil
    * IniciarComentário
    * WorkflowTitle
 

@@ -1,7 +1,9 @@
 ---
 title: Falha ao fazer backup do banco de dados durante a atualização para 6.5.12.0 para MySQL.
 description: Quando um usuário atualiza para o Experience Manager 6.5.12.0 e clica em "Atualizar MySQL", o gerenciador de configurações falha ao fazer backup do banco de dados Experience Manager Forms anterior.
-source-git-commit: a9d59e00efe8f0c2cbfca51901c441a2d65b70f2
+exl-id: 1af000fa-439b-4ffd-8b5a-3ba45f0c524c
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 0%

@@ -2,7 +2,8 @@
 title: Acesso e entrega de Fragmentos de conteúdo - Guia de início rápido do Headless
 description: Saiba como usar a API REST do AEM Assets para gerenciar fragmentos de conteúdo e a API do GraphQL para entrega headless do conteúdo do fragmento de conteúdo.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
-source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 40%

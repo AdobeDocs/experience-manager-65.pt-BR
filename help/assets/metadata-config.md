@@ -6,10 +6,11 @@ role: User, Admin
 feature: Metadata
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 5%
+source-wordcount: '1978'
+ht-degree: 3%
 
 ---
 
@@ -185,12 +186,12 @@ A variável **[!UICONTROL Formulário de criação]** A guia lista os itens de f
 | Nome do componente | Descrição |
 |---|---|
 | [!UICONTROL Cabeçalho da seção] | Adicione um cabeçalho de seção para obter uma lista de componentes comuns. |
-| [!UICONTROL Texto em linha única] | Adiciona uma propriedade de texto em linha única. Ele é armazenado como uma string. |
-| [!UICONTROL Texto multivalor] | Adiciona uma propriedade de texto multivalor. Ele é armazenado como uma matriz de sequência. |
+| [!UICONTROL Texto em linha única] | Adicione uma propriedade de texto de linha única. Ele é armazenado como uma string. |
+| [!UICONTROL Texto multivalor] | Adicione uma propriedade de texto de vários valores. Ele é armazenado como uma matriz de sequência. |
 | [!UICONTROL Número] | Adiciona um componente de número. |
 | [!UICONTROL Data] | Adiciona um componente de data. |
 | [!UICONTROL Lista suspensa] | Adiciona uma lista suspensa. |
-| [!UICONTROL Tags padrão] | Adicionar uma tag. |
+| [!UICONTROL Tags padrão] | Adicione uma tag. |
 | [!UICONTROL Campo oculto] | Adicione um campo oculto. Ele é enviado como um parâmetro POST quando o ativo é salvo. |
 
 #### Edição de itens de formulário {#editing-form-items}

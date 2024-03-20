@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: 01e9ab67-15e2-4bc4-9b8f-0c84bcd56862
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '904'
 ht-degree: 0%
@@ -73,9 +74,9 @@ A configuração do firewall é dinâmica e pode ser alterada a qualquer momento
 
    >[!NOTE]
    >
-   Você também pode acessar a página de configuração diretamente acessando o URL em:
+   >Você também pode acessar a página de configuração diretamente acessando o URL em:
    >
-   * `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
+   >* `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
 
 Essa configuração contém os registros incluir na lista de permissões, incluir na lista de bloqueios e desserializar.
 
@@ -107,7 +108,7 @@ Para obter mais informações sobre solução de problemas com o agente, consult
 
 >[!NOTE]
 >
-Se você adicionar `org.apache.commons.collections.functors` ao incluir na lista de permissões, a verificação de integridade sempre falha.
+>Se você adicionar `org.apache.commons.collections.functors` ao incluir na lista de permissões, a verificação de integridade sempre falha.
 
 ## Manipular erros com o carregamento dinâmico do agente {#handling-errors-with-dynamic-agent-loading}
 
@@ -123,11 +124,11 @@ Para carregar o agente manualmente, faça o seguinte:
 
    >[!NOTE]
    >
-   Exige que você use a opção -nofork CQ/AEM também, juntamente com as configurações de memória JVM apropriadas, pois o agente não está ativado em uma JVM bifurcada.
+   >Exige que você use a opção -nofork CQ/AEM também, juntamente com as configurações de memória JVM apropriadas, pois o agente não está ativado em uma JVM bifurcada.
 
    >[!NOTE]
    >
-   A distribuição de Adobe do jar do agente NotSoSerial pode ser encontrada no `crx-quickstart/opt/notsoserial/` pasta da sua instalação do AEM.
+   >A distribuição de Adobe do jar do agente NotSoSerial pode ser encontrada no `crx-quickstart/opt/notsoserial/` pasta da sua instalação do AEM.
 
 1. Interrompa e reinicie a JVM;
 

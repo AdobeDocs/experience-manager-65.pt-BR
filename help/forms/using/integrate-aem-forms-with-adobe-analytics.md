@@ -3,7 +3,8 @@ title: Como integrar o AEM Forms com o Adobe Analytics?
 description: O AEM Forms integra-se ao Adobe Analytics para capturar e rastrear métricas de desempenho para seus formulários publicados.
 docset: aem65
 exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1762'
 ht-degree: 0%

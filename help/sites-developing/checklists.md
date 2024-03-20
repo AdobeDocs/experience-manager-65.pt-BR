@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 exl-id: 16c5f9aa-024d-4d8a-ba08-22b073289cfd
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '156'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 3%
 
 A lista de verificação a seguir destaca alguns dos principais problemas: leia as outras seções relacionadas a Testes para obter detalhes completos.
 
-| Verificar | Resposta | Ação | Proprietário | O prazo é |
+| Verificar | Resposta | Ação | Proprietário | Vencimento |
 |---|---|---|---|---|
 | Foi criado um mecanismo de apresentação de relatórios claro e regular? |  |  |  |  |
 | Os principais participantes (da equipe de testes) estão envolvidos nas reuniões de status? |  |  |  |  |

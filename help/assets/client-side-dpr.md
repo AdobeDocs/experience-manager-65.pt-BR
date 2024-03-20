@@ -3,9 +3,11 @@ title: Usar Imagem inteligente com proporção de pixels do dispositivo no lado 
 description: Saiba como usar a proporção de pixels do dispositivo no lado do cliente com a Imagem inteligente no Adobe Experience Manager as a Cloud Service com o Dynamic Media.
 role: Admin,User
 exl-id: e38f522a-242a-4ea9-a866-d8d129950831
-source-git-commit: c8682118f15132063073df5cdc2b576b6e62a0c8
+solution: Experience Manager, Experience Manager Assets
+feature: Smart Imaging
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -70,4 +72,3 @@ Os seguintes arquivos JavaScript no download são fornecidos a você somente com
 >[!MORELIKETHIS]
 >
 >* [Imagem inteligente](/help/assets/imaging-faq.md)
-

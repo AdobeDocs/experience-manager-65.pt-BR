@@ -1,13 +1,14 @@
 ---
 title: Atualizar fragmentos de conteúdo para a filtragem otimizada de GraphQL
-description: Saiba como atualizar os fragmentos de conteúdo para uma filtragem otimizada de GraphQL no Adobe Experience Manager para entrega de conteúdo headless.
-source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
+description: Saiba como atualizar os fragmentos de conteúdo para uma filtragem otimizada do GraphQL no Adobe Experience Manager para entrega de conteúdo headless.
+exl-id: d78ec052-c091-49ca-9f36-a3d24eb9edd5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 42%
+source-wordcount: '255'
+ht-degree: 37%
 
 ---
-
 
 # Atualizar fragmentos de conteúdo para a filtragem otimizada de GraphQL {#updating-content-fragments-for-optimized-graphql-filtering}
 
@@ -47,7 +48,7 @@ Para executar o procedimento, siga as etapas abaixo:
 
 ## Limitações {#limitations}
 
-Esteja ciente das seguintes limitações:
+Observe as seguintes limitações:
 
 * A otimização do desempenho dos filtros de GraphQL só será possível após uma atualização completa de todos os fragmentos de conteúdo (indicada pela presença da propriedade `cfGlobalVersion` no nó `/content/dam` do JCR)
 

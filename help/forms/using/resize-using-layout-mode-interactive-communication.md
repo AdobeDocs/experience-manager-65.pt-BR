@@ -3,7 +3,8 @@ title: Use o modo de layout para redimensionar componentes para a comunicação 
 description: Definir a posição dos componentes usando a grade responsiva disponível no modo Layout
 feature: Interactive Communication
 exl-id: 9534fcb2-4260-4dd0-9f7e-779b10fd3a22
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%

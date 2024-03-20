@@ -4,10 +4,11 @@ description: Saiba como identificar o conteúdo que precisa ser traduzido no Ado
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 66%
+source-wordcount: '1158'
+ht-degree: 60%
 
 ---
 
@@ -101,8 +102,8 @@ Use a sintaxe de regra a seguir para incluir ativos incorporados ou referenciado
 
 Cada elemento `assetNode` tem as seguintes características:
 
-* Um atributo `resourceType` que é igual ao caminho que é resolvido para o componente.
-* Um atributo `assetReferenceAttribute` que é igual ao nome da propriedade que armazena o binário do ativo (para ativos incorporados) ou o caminho para o ativo referenciado.
+* Um `resourceType` atributo que é igual ao caminho que é resolvido para o componente.
+* Um `assetReferenceAttribute` atributo que é igual ao nome da propriedade que armazena o binário do ativo (para ativos incorporados) ou o caminho para o ativo referenciado.
 
 O exemplo a seguir extrai imagens do componente de Imagem básico:
 

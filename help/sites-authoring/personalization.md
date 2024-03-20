@@ -2,10 +2,11 @@
 title: Personalização e direcionamento de conteúdo
 description: Saiba como o Adobe Experience Manager 6.5 pode criar conteúdo personalizado.
 exl-id: be34760a-875b-419d-9fa4-2359b314a3b7
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 40%
+source-wordcount: '526'
+ht-degree: 36%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 40%
 
 O AEM fornece uma estrutura de ferramentas para a criação de conteúdo direcionado e a apresentação de experiências personalizadas.
 
-## Modo Direcionar {#targeting-mode}
+## Modo de direcionamento {#targeting-mode}
 
 [Crie conteúdo direcionado usando o modo Direcionar do AEM. ](/help/sites-authoring/content-targeting-touch.md) O modo de direcionamento e o componente do Target fornecem ferramentas para criar conteúdo para as experiências das suas atividades de marketing.
 

@@ -1,19 +1,20 @@
 ---
-title: Integração com o Adobe Sign | Manipulação de dados do usuário
+title: Integração com o Adobe Sign | Manuseio de dados do usuário
 description: Saiba mais sobre a integração do AEM Forms com o Adobe Sign para assinaturas eletrônicas em formulários adaptáveis. Ele oferece suporte a várias opções de assinatura para vários workflows.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Acrobat Sign
 role: Admin
 exl-id: b43ed9b7-b1ef-4878-ae3b-643b558eed7b
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
 
-# Integração com o Adobe Sign | Manipulação de dados do usuário {#integration-with-adobe-sign-handling-user-data}
+# Integração com o Adobe Sign | Manuseio de dados do usuário {#integration-with-adobe-sign-handling-user-data}
 
 [!DNL AEM Forms] integra-se com[!DNL  Adobe Sign] permitir workflows de assinatura eletrônica em formulários adaptáveis para processar formulários ou contratos para workflows jurídicos, de vendas, de folha de pagamento e de gerenciamento de recursos humanos. Ele permite assinar formulários com um único usuário e vários usuários, fluxos de trabalho de assinatura sequenciais e simultâneas, assinar formulários como um usuário anônimo ou conectado e várias maneiras de autenticar usuários.
 
@@ -31,4 +32,4 @@ Os dados do usuário são coletados no contrato, mas não são salvos em nenhuma
 
 [!DNL Adobe Sign] O oferece uma aplicação web que permite pesquisar contratos pelos participantes e, se necessário, excluí-los. Para obter mais informações, consulte [Adobe Sign - Recurso: Excluir informações do usuário](https://helpx.adobe.com/sign/help/adobesign_gdpr_user_deletion.html).
 
-Os dados de contratos para formulários adaptáveis configurados para usar a ação de envio do Forms Portal também são salvos no armazenamento de dados do Forms Portal. Para acessar e excluir dados do armazenamento de dados do Forms Portal, consulte [Portal Forms | Manipulação de dados do usuário](/help/forms/using/forms-portal-handling-user-data.md).
+Os dados de contratos para formulários adaptáveis configurados para usar a ação de envio do Forms Portal também são salvos no armazenamento de dados do Forms Portal. Para acessar e excluir dados do armazenamento de dados do Forms Portal, consulte [Portal Forms | Manuseio de dados do usuário](/help/forms/using/forms-portal-handling-user-data.md).

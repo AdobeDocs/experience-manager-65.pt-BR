@@ -4,7 +4,9 @@ description: Use gráficos em um formulário adaptável para tornar seu formulá
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
-source-git-commit: 53a6914792bb15773c8f91a2bb6295ab69b3b1bf
+exl-id: 973d5ddb-cbcc-454d-859f-144442828a1a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2005'
 ht-degree: 0%
@@ -190,5 +192,3 @@ Considere que você configurou um gráfico de Coluna. No entanto, você também 
 1. Clique em Concluído para salvar a regra.
 
 Agora é possível selecionar um tipo de gráfico na lista suspensa e clicar em atualizar para redesenhar o gráfico.
-
-

@@ -8,7 +8,8 @@ topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 feature: HTML5 Forms
 exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
-source-git-commit: 524475c8f9dbd02bae30ecd558a376505fbe0aed
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 Os formulários HTML5 são compatíveis com a cláusula de Imagem XFA para valor de exibição e valor formatado para símbolos de data, texto e numéricos. As seguintes expressões de cláusula Picture são suportadas:
 
-* category(locale){picture-clause} | categoria(localidade){picture-clause} | categoria(localidade){picture-clause}
+* category(locale){picture-clause} | category(locale){picture-clause} | category(locale){picture-clause}
 * category.subcategory{}
 
 >[!NOTE]
@@ -56,7 +57,7 @@ Expressão suportada para a cláusula Date Picture:
    <td>Dia do mês com dois dígitos (01-31) preenchidos com zero.<br /> </td>
   </tr>
   <tr>
-   <td>M</td>
+   <td>S</td>
    <td>Mês do ano com 1 ou 2 dígitos (1-12).<br /> </td>
   </tr>
   <tr>

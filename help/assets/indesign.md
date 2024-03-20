@@ -5,10 +5,11 @@ contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1589'
-ht-degree: 4%
+source-wordcount: '1555'
+ht-degree: 2%
 
 ---
 
@@ -120,7 +121,7 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 
 >[!CAUTION]
 >
->Não altere a biblioteca ExtendScript. Essa biblioteca fornece a funcionalidade HTTP necessária para se comunicar com o Sling. Essa configuração especifica a biblioteca a ser enviada para a [!DNL InDesign Server] para uso nesse local.
+>Não altere a biblioteca do ExtendScript. Essa biblioteca fornece a funcionalidade HTTP necessária para se comunicar com o Sling. Essa configuração especifica a biblioteca a ser enviada para a [!DNL InDesign Server] para uso nesse local.
 
 A variável `ThumbnailExport.jsx` O script executado pela etapa do fluxo de trabalho Extração de mídia gera uma representação em miniatura no formato JPG. Essa representação é usada pela etapa do fluxo de trabalho Processar miniaturas para gerar as representações estáticas exigidas pelo [!DNL Experience Manager].
 
@@ -134,7 +135,7 @@ Para personalizar, edite a guia **[!UICONTROL Argumentos]** da etapa **[!UICONTR
 
 ![chlimage_1-96](assets/chlimage_1-289.png)
 
-* **Manipulador de extração de página**: Na lista pop-up, selecione o manipulador que deseja usar. Um manipulador de extração opera em uma representação específica, escolhida por um `RenditionPicker` relacionado (consulte a `ExtractionHandler` API). Em um padrão [!DNL Experience Manager] instalação o seguinte está disponível:
+* **Manipulador de extração de página**: Na lista pop-up, selecione o manipulador que deseja usar. Um manipulador de extração opera em uma representação específica, escolhida por um `RenditionPicker` (consulte a `ExtractionHandler` API). Em um padrão [!DNL Experience Manager] instalação o seguinte está disponível:
    * Identificador de extração de exportação IDML: opera no `IDML` renderização gerada na etapa MediaExtract.
 
 * **Nome da página**: especifique o nome que deseja atribuir à página resultante. Se deixado em branco, o nome é &quot;página&quot; (ou um derivado se &quot;página&quot; já existir).
@@ -191,7 +192,7 @@ Para configurar o número de jobs de IDS paralelos:
 
 1. Selecione a fila de processamento de IDS em `Apache Sling Job Queue Configuration`.
 
-1. Definir:
+1. Defina:
 
    * **Tipo** - `Parallel`
    * **Máximo de Trabalhos Paralelos** - `<*x*>` (conforme calculado acima)

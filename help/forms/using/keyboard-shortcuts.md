@@ -6,7 +6,8 @@ content-type: reference
 topic-tags: author, correspondence-management
 feature: Adaptive Forms, Foundation Components
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
-source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 1%
@@ -46,10 +47,10 @@ Este artigo lista os atalhos de teclado que podem ser usados com o Editor de for
 
 >[!NOTE]
 >
->Seleção múltipla em um dispositivo de desktop:
+Seleção múltipla em um dispositivo de desktop:
 >
->* Windows: pressione Ctrl e clique nos componentes necessários.
->* macOS: Command + clique nos componentes necessários.
+* Windows: pressione Ctrl e clique nos componentes necessários.
+* macOS: Command + clique nos componentes necessários.
 >
 
 ## Editor de temas  {#themeeditor}
@@ -64,7 +65,7 @@ Este artigo lista os atalhos de teclado que podem ser usados com o Editor de for
 
 >[!NOTE]
 >
->Os atalhos marcados com um &#39;&amp;ast;&#39; funcionam com as teclas Ctrl e Command no macOS.
+Os atalhos marcados com um &#39;&amp;ast;&#39; funcionam com as teclas Ctrl e Command no macOS.
 
 ## Navegador de conteúdo  {#contentbrowser}
 
@@ -173,12 +174,12 @@ Esta seção lista vários teclados e atalhos de acessibilidade que você pode u
   </tr>
   <tr>
    <td><p>Mover o cursor para o final da página</p> </td> 
-   <td><p>Página abaixo</p> </td> 
+   <td><p>Página para baixo</p> </td> 
    <td>Fn+Seta para Baixo</td> 
   </tr>
   <tr>
    <td><p>Mover o cursor para o início da página</p> </td> 
-   <td><p>Página acima</p> </td> 
+   <td><p>Página para cima</p> </td> 
    <td>Fn+Seta para Cima</td> 
   </tr>
   <tr>

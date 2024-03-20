@@ -7,10 +7,11 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 1%
+source-wordcount: '1767'
+ht-degree: 0%
 
 ---
 
@@ -141,7 +142,7 @@ Para personalizar um informativo e simular como ele será:
 >
 >Por padrão, o valor do parâmetro é `localhost:4502` a operação e não pode ser concluída se a porta da instância em execução for alterada.
 
-Alternar entre clientes de e-mail comuns para ver a forma como o informativo será exibido para seus clientes em potencial. Por padrão, o informativo é aberto sem nenhum dos clientes de e-mail selecionados.
+Alternar entre clientes de e-mail comuns para ver como o informativo será exibido para seus clientes em potencial. Por padrão, o informativo é aberto sem nenhum dos clientes de e-mail selecionados.
 
 Atualmente, você pode exibir informativos nos seguintes clientes de e-mail:
 

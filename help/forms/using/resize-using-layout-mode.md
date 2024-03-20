@@ -3,7 +3,8 @@ title: Use o modo Layout para redimensionar componentes para formulários adapt�
 description: Definir a posição dos componentes usando a grade responsiva disponível no modo Layout
 feature: Adaptive Forms, Foundation Components
 exl-id: 5cf76cb1-c92c-4aed-9945-37494fef2d29
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 1%

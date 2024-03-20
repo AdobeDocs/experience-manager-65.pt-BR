@@ -9,7 +9,8 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2004'
 ht-degree: 8%
@@ -80,7 +81,7 @@ Para começar a usar rapidamente os Conjuntos de rotação, siga estas etapas:
 
 1. [Vincular URLs ao aplicativo da Web](/help/assets/linking-urls-to-yourwebapplication.md) ou [Incorporar o visualizador de vídeo ou imagem](/help/assets/embed-code.md).
 
-   O Adobe Experience Manager Assets cria chamadas de URL para conjuntos de rotação e as ativa após a publicação dos conjuntos de rotação. É possível copiar esses URLs ao visualizar ativos. Como alternativa, você pode incorporá-los ao seu site.
+   O Adobe Experience Manager Assets cria chamadas de URL para Conjuntos de rotação e as ativa após a publicação dos conjuntos de rotação. É possível copiar esses URLs ao visualizar ativos. Como alternativa, você pode incorporá-los ao seu site.
 
    Selecione o Conjunto de rotação e, no menu suspenso do painel à esquerda, selecione **[!UICONTROL Visualizadores]**.
 

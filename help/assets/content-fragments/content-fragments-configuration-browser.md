@@ -1,17 +1,18 @@
 ---
-title: Fragmentos de conteúdo — Navegador de configuração
+title: Fragmentos de conteúdo - Navegador de configuração
 description: Saiba como ativar determinadas funcionalidades do fragmento de conteúdo no Navegador de configuração para usar os recursos avançados de entrega headless do Adobe Experience Manager.
 feature: Content Fragments
 role: User
 exl-id: a9990b0c-56c7-4e61-bae9-98e19a7f364e
-source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '272'
-ht-degree: 41%
+ht-degree: 45%
 
 ---
 
-# Fragmentos de conteúdo — Navegador de configuração{#content-fragments-configuration-browser}
+# Fragmentos de conteúdo - Navegador de configuração{#content-fragments-configuration-browser}
 
 Saiba como ativar determinadas funcionalidades do fragmento de conteúdo no Navegador de configuração para usar os eficientes recursos de entrega headless do Adobe Experience Manager (AEM).
 
@@ -29,7 +30,7 @@ Antes de usar fragmentos de conteúdo, use o **Navegador de configuração** par
 >* o **Criar** A opção não estará disponível para criar modelos.
 >* você não pode [selecione a configuração do Sites para criar o ponto de extremidade relacionado](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint).
 
-Para ativar a funcionalidade de fragmento de conteúdo, você deve fazer o seguinte:
+Para habilitar a funcionalidade dos fragmentos de conteúdo, você deve fazer o seguinte:
 
 * Ativar o uso da funcionalidade de fragmento de conteúdo por meio do navegador de configuração
 * Aplicar a configuração à sua pasta de ativos

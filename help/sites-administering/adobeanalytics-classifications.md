@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 0e675ce8-ba3b-481d-949e-0c85c97054d2
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 5%
@@ -94,7 +95,7 @@ Na implementação padrão SAINTDefaultTransformer, os recursos secundários da 
 
 | **Chave** | **Produto** | **Preço** | **Tamanho** | **Cor** | **Cor^Código** |
 |---|---|---|---|---|---|
-| 1 | Nome do meu produto | 120,90 | M | black | 101 |
+| 1 | Nome do meu produto | 120,90 | S | black | 101 |
 
 As propriedades incluem o seguinte:
 

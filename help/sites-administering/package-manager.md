@@ -8,7 +8,8 @@ topic-tags: content
 content-type: reference
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3565'
 ht-degree: 1%
@@ -79,7 +80,7 @@ Clicar em um nome de pacote expande a entrada na Lista de pacotes para mostrar m
 Há várias ações que podem ser executadas em um pacote por meio dos botões da barra de ferramentas disponíveis quando os detalhes do pacote são expandidos.
 
 * [Editar](#edit-package)
-* [Criar](#building-a-package)
+* [Build](#building-a-package)
 * [Reinstalar](#reinstalling-packages)
 * [Download](#downloading-packages-to-your-file-system)
 * [Compartilhar](#share)

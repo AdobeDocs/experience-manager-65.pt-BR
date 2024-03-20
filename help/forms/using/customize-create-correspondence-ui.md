@@ -7,10 +7,11 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 1%
+source-wordcount: '1099'
+ht-degree: 0%
 
 ---
 
@@ -63,7 +64,7 @@ Use as etapas a seguir para criar a estrutura de pastas necessária no `/apps` f
 
       **Caminho:** `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
 
-      **Local de sobreposição:** `/apps/`
+      **Local da sobreposição:** `/apps/`
 
       **Corresponder Tipos de Nó:** Marcado
 
@@ -112,7 +113,7 @@ Faça upload do seu arquivo de logotipo personalizado para o CRX. As regras de H
 
 Use as seguintes etapas para fazer upload do arquivo de logotipo personalizado para o CRX:
 
-1. Acesse `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessário, efetue login como Administrador.
+1. Ir para `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessário, efetue login como Administrador.
 1. No CRXDE, clique com o botão direito do mouse no **imgs** no seguinte caminho e selecione **Criar > Criar arquivo**:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
@@ -155,7 +156,7 @@ A imagem de logotipo personalizada requer que uma folha de estilos adicional sej
 
 Use as etapas a seguir para criar a folha de estilos para renderizar o logotipo com a interface do usuário:
 
-1. Acesse `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessário, efetue login como Administrador.
+1. Ir para `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessário, efetue login como Administrador.
 1. Crie um arquivo chamado customcss.css (você não pode usar um nome de arquivo diferente) no seguinte local:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css/`

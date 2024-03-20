@@ -7,7 +7,8 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 16%
@@ -34,7 +35,7 @@ Várias guias e ícones estão disponíveis, incluindo:
 
 * Componentes
 * Página
-* Info
+* Informações
 * Versões
 * Fluxo de trabalho
 * Modos
@@ -219,7 +220,7 @@ Há dois ícones na borda inferior do sidekick que são importantes para visuali
 
   ![Barra com AEM como o título e um ícone de modo de edição à direita do título indicado por um símbolo de seta para baixo.](do-not-localize/chlimage_1-8.png)
 
-## Localizar e Substituir {#find-replace}
+## Localizar e substituir {#find-replace}
 
 Para edições em maior escala da mesma frase, um **[Localizar e substituir](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** A opção de menu permite pesquisar e substituir várias instâncias de uma cadeia de caracteres em uma seção do site.
 

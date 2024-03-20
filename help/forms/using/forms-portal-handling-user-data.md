@@ -1,19 +1,20 @@
 ---
-title: Portal Forms | Manipulação de dados do usuário
+title: Portal Forms | Manuseio de dados do usuário
 description: Saiba mais sobre como gerenciar dados do usuário, como acesso, exclusão e armazenamento de dados no AEM Forms Portal.
 contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
 exl-id: 791524a4-a8bb-4632-a68d-e96864e139a9
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 0%
 
 ---
 
-# Portal Forms | Manipulação de dados do usuário {#forms-portal-handling-user-data}
+# Portal Forms | Manuseio de dados do usuário {#forms-portal-handling-user-data}
 
 [!DNL AEM Forms] O portal fornece componentes que você pode usar para listar formulários adaptáveis, formulários HTML5 e outros ativos do Forms no [!DNL AEM Sites] página. Além disso, você pode configurá-lo para exibir rascunhos e formulários adaptáveis enviados, bem como formulários HTML5 para um usuário conectado. Para obter mais informações sobre o Forms Portal, consulte [Introdução à publicação de formulários em um portal](/help/forms/using/introduction-publishing-forms.md).
 

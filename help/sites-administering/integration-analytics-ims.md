@@ -2,10 +2,11 @@
 title: Integração com o Adobe Analytics usando IMS
 description: Saiba mais sobre a integração do AEM com o Adobe Analytics usando o IMS
 exl-id: 2833a6df-ef32-48ab-8395-0f26816f8443
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1068'
-ht-degree: 54%
+source-wordcount: '1042'
+ht-degree: 50%
 
 ---
 
@@ -133,7 +134,7 @@ Agora atribua os privilégios necessários à integração:
 
 ## Detalhes armazenados para o projeto de integração do Adobe Developer Console {#details-stored-for-the-ims-integration-project}
 
-No de Projetos do Adobe Developer Console, é possível ver uma lista de todos os projetos de integração:
+No console Projetos Adobe Developer é possível ver uma lista de todos os projetos de integração:
 
 * [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
@@ -217,7 +218,7 @@ A configuração agora pode ser referenciada para um Cloud Service usar a API do
 
 1. Para inicializar a conexão com o Adobe Analytics, clique em **Conectar-se ao Analytics**.
 
-   Se a conexão for bem-sucedida, a mensagem **Conexão bem-sucedida** será exibida.
+   Se a conexão for bem-sucedida, a mensagem **Conexão bem-sucedida** é exibido.
 
 1. Selecionar **OK** na mensagem.
 

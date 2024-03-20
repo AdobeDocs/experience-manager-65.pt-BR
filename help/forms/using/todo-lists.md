@@ -7,7 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4024'
 ht-degree: 0%
@@ -162,7 +163,7 @@ Você pode ter permissão para adicionar, atualizar, excluir ou salvar quaisquer
    >
    >Você também pode adicionar comentários juntamente com seus anexos.
 
-1. Clique em **Carregar**. O arquivo é anexado ao formulário.
+1. Clique em **Fazer upload**. O arquivo é anexado ao formulário.
 
 **Exibir um anexo**
 

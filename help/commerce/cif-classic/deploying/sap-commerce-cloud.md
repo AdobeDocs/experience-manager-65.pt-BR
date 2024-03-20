@@ -5,10 +5,11 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: ecbd0097-c407-4581-bab2-4729a71df4a3
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 2%
+source-wordcount: '712'
+ht-degree: 1%
 
 ---
 
@@ -45,7 +46,7 @@ A extensão hybris da Estrutura de integração de comércio eletrônico foi atu
 >
 >* Oferece suporte às versões 18.11 e posteriores.
 >* Você precisa do Java™ 7 para executar o [hybris 5 server.](https://www.sap.com/products/crm.html)
-* O complemento hybris, a variável [Acelerador Telco](https://www.sap.com/products/crm.html), não é compatível com a extensão AEM.
+>* O complemento hybris, a variável [Acelerador Telco](https://www.sap.com/products/crm.html), não é compatível com a extensão AEM.
 >
 
 ### Pacotes necessários para comércio eletrônico com hybris {#packages-needed-for-ecommerce-with-hybris}
@@ -91,11 +92,11 @@ Para instalar uma configuração completa (usando o catálogo de demonstração,
 
 >[!CAUTION]
 >
-O uso do servidor hybris requer uma licença hybris separada.
+>O uso do servidor hybris requer uma licença hybris separada.
 
 >[!NOTE]
 >
-Para desenvolvedores, [Documentação da API](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) O também está disponível para download.
+>Para desenvolvedores, [Documentação da API](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) O também está disponível para download.
 
 ### Baixe e crie seu servidor hybris {#download-and-build-your-hybris-server}
 
@@ -103,17 +104,17 @@ As etapas neste procedimento baixam e criam o servidor hybris. Também faz as co
 
 >[!CAUTION]
 >
-As versões do Hybris anteriores à 5.5.1 não são compatíveis.
+>As versões do Hybris anteriores à 5.5.1 não são compatíveis.
 
 >[!NOTE]
 >
-Para concluir isso, é necessário [Groovy](https://groovy-lang.org/) instalado no sistema.
+>Para concluir isso, é necessário [Groovy](https://groovy-lang.org/) instalado no sistema.
 
 1. Baixe o **hybris Commerce Suite** distribuição do site de download do hybris.
 
    >[!CAUTION]
    >
-   Você precisa de uma conta (do hybris) para acessar isso.
+   >Você precisa de uma conta (do hybris) para acessar isso.
 
 1. Descompacte o arquivo de distribuição no local desejado (referido como &lt;hybris-root-directory>).
 1. Na linha de comando, execute o seguinte:
@@ -127,11 +128,11 @@ Para concluir isso, é necessário [Groovy](https://groovy-lang.org/) instalado 
 
    >[!NOTE]
    >
-   Ao executar:
+   >Ao executar:
    >
-   `ant clean all`
+   >`ant clean all`
    >
-   Pressione `Return` quando necessário.
+   >Pressione `Return` quando necessário.
 
 1. Baixe os arquivos a seguir para a pasta raiz da distribuição hybris extraída,
 
@@ -144,7 +145,7 @@ Para concluir isso, é necessário [Groovy](https://groovy-lang.org/) instalado 
 
    >[!NOTE]
    >
-   Para o hybris 5.6.0 e versões posteriores, use o seguinte setup.groovy.
+   >Para o hybris 5.6.0 e versões posteriores, use o seguinte setup.groovy.
 
    5.6.0 e posterior
 
@@ -165,7 +166,7 @@ Para concluir isso, é necessário [Groovy](https://groovy-lang.org/) instalado 
 
    >[!NOTE]
    >
-   Dependendo do sistema, várias dessas etapas podem levar vários minutos para serem concluídas.
+   >Dependendo do sistema, várias dessas etapas podem levar vários minutos para serem concluídas.
 
 1. Em seu navegador, navegue até o **console de administração hybris** em:
 
@@ -177,7 +178,7 @@ Para concluir isso, é necessário [Groovy](https://groovy-lang.org/) instalado 
 
    >[!NOTE]
    >
-   Dependendo do sistema, isso pode levar vários minutos para ser concluído.
+   >Dependendo do sistema, isso pode levar vários minutos para ser concluído.
 
 ### Configurar a loja de Geometrixx Outdoors {#setup-the-geometrixx-outdoors-store}
 

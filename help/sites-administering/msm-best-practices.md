@@ -4,10 +4,11 @@ description: Descubra as práticas recomendadas compiladas pelas equipes de enge
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1604'
-ht-degree: 40%
+source-wordcount: '1599'
+ht-degree: 34%
 
 ---
 
@@ -136,7 +137,7 @@ As modificações na estrutura de conteúdo em um blueprint/árvore de origem s�
 >
 >Isso funcionará somente com o [No acionador de implantação](/help/sites-administering/msm-sync.md#rollout-triggers).
 
-* Crie uma configuração de implantação personalizada:
+* Criar uma configuração de implantação personalizada:
 
    * Essa nova configuração deve incluir a ação:
 
@@ -171,7 +172,7 @@ As configurações de implantação do MSM são altamente personalizáveis. A au
 
 Ao usar o [acionador de implantação](/help/sites-administering/msm-sync.md#rollout-triggers) `onModify`, você deve considerar que:
 
-* A automatização de implantações com `onModify` acionadores pode ter um impacto negativo no desempenho da criação, pois ela aciona implantações após cada modificação de página.**
+* A automatização de implantações com `onModify` podem ter um impacto negativo no desempenho da criação, pois acionam implantações após *a cada* modificação da página.
 
 * O resultado da implantação pode diferir do esperado, uma vez que:
 

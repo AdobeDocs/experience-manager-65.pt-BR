@@ -4,10 +4,11 @@ description: Saiba como os modelos de fragmento de conteúdo servem como base pa
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2310'
-ht-degree: 66%
+ht-degree: 65%
 
 ---
 
@@ -76,9 +77,9 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 
         >[!CAUTION]
         >
-        >Ao atualizar manualmente a propriedade **Nome da propriedade** para um tipo de dados, os nomes devem conter somente caracteres latinos (A-Z, a-z), dígitos numéricos (0-9) e o underline (&quot;_&quot;) como caractere especial.
+        Ao atualizar manualmente a propriedade **Nome da propriedade** para um tipo de dados, os nomes devem conter somente caracteres latinos (A-Z, a-z), dígitos numéricos (0-9) e o underline (&quot;_&quot;) como caractere especial.
         >
-        >Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
+        Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
 
      Por exemplo:
 
@@ -134,7 +135,7 @@ No editor de fragmentos, cada instância aparece como uma guia.
 
      >[!NOTE]
      >
-     >Esse tipo de dados é usado apenas para formatação e é ignorado pelo esquema GraphQL do AEM.
+     Esse tipo de dados é usado apenas para formatação e é ignorado pelo esquema GraphQL do AEM.
 
 ## Propriedades {#properties}
 
@@ -147,7 +148,7 @@ Muitas propriedades são autoexplicativas. Para certas propriedades, os detalhes
 
   >[!CAUTION]
   >
-  >Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
+  Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
 
 * **Renderizar como**
 As várias opções para realizar/renderizar o campo em um fragmento. Geralmente, isso lhe permite definir se o autor verá uma única instância do campo, ou se poderá criar várias instâncias.
@@ -177,11 +178,11 @@ O conteúdo (para o campo específico) deve ser exclusivo em todos os fragmentos
 
   >[!NOTE]
   >
-  >A exclusividade é assegurada por raiz de idioma.
+  A exclusividade é assegurada por raiz de idioma.
 
   >[!NOTE]
   >
-  >As variações podem ter o mesmo valor *exclusivo* como variações do mesmo fragmento, mas não o mesmo valor usado em qualquer variação de outros fragmentos.
+  As variações podem ter o mesmo valor *exclusivo* como variações do mesmo fragmento, mas não o mesmo valor usado em qualquer variação de outros fragmentos.
 
 * Consulte **[Referência de conteúdo](#content-reference)** para obter mais detalhes sobre esse tipo de dados específico e suas propriedades.
 
@@ -224,18 +225,16 @@ Os fragmentos de conteúdo podem formar conteúdo aninhado, usando um dos seguin
 
      >[!NOTE]
      >
-     >Este método reveste-se de especial interesse [Entrega de conteúdo headless usando fragmentos de conteúdo com o GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+     Este método reveste-se de especial interesse [Entrega de conteúdo headless usando fragmentos de conteúdo com o GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
    * Ele pode ser configurado para uma referência ou várias referências (no fragmento resultante).
 
 >[!NOTE]
 >
->O AEM tem proteção de recorrência para:
+O AEM tem proteção de recorrência para:
 >
->* Referências do conteúdo
->  Isso impede que o usuário adicione uma referência ao fragmento atual. Isso pode resultar em uma caixa de diálogo vazia do seletor de referência de fragmento.
+* Referências de conteúdo Isso impede que o usuário adicione uma referência ao fragmento atual. Isso pode resultar em uma caixa de diálogo vazia do seletor de referência de fragmento.
 >
->* Referências de fragmento no GraphQL
->  Se você criar uma consulta profunda que retorna vários Fragmentos de conteúdo referenciados entre si, ela retornará um valor nulo na primeira ocorrência.
+* Referências de fragmento no GraphQL Se você criar uma consulta profunda que retorna vários Fragmentos de conteúdo referenciados entre si, ela retornará um valor nulo na primeira ocorrência.
 
 ### Referência de conteúdo {#content-reference}
 
@@ -277,7 +276,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->Este aspecto é particularmente [Entrega de conteúdo headless usando fragmentos de conteúdo com o GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+Este aspecto é particularmente [Entrega de conteúdo headless usando fragmentos de conteúdo com o GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
 Além das propriedades padrão, você pode definir:
 
@@ -303,9 +302,9 @@ Especifica um caminho raiz para qualquer fragmento referenciado.
 
 >[!NOTE]
 >
->Um mecanismo de proteção contra recorrências está em vigor. Ele proíbe que o usuário selecione o fragmento de conteúdo atual na referência do fragmento. Isso pode resultar em uma caixa de diálogo vazia do seletor de referência de fragmento.
+Um mecanismo de proteção contra recorrências está em vigor. Ele proíbe que o usuário selecione o fragmento de conteúdo atual na referência do fragmento. Isso pode resultar em uma caixa de diálogo vazia do seletor de referência de fragmento.
 >
->Também há uma proteção de recorrência para referências de fragmento em GraphQL. Se você criar uma consulta profunda em dois Fragmentos de conteúdo que fazem referência um ao outro, ela retornará um valor nulo.
+Também há uma proteção de recorrência para referências de fragmento em GraphQL. Se você criar uma consulta profunda em dois Fragmentos de conteúdo que fazem referência um ao outro, ela retornará um valor nulo.
 
 ## Ativar ou desativar um Modelo de fragmento de conteúdo {#enabling-disabling-a-content-fragment-model}
 
@@ -354,7 +353,7 @@ Para implementar a governança de conteúdo, você pode configurar **Políticas*
 
 >[!NOTE]
 >
->O mecanismo é semelhante ao de [permitir modelos de página](/help/sites-authoring/templates.md#allowing-a-template-author) para uma página e suas derivadas nas suas propriedades avançadas.
+O mecanismo é semelhante ao de [permitir modelos de página](/help/sites-authoring/templates.md#allowing-a-template-author) para uma página e suas derivadas nas suas propriedades avançadas.
 
 Para configurar as **políticas** para **modelos de fragmento de conteúdo permitidos**:
 
@@ -389,7 +388,7 @@ Os modelos de fragmento de conteúdo permitidos para uma pasta são resolvidos d
 
 >[!CAUTION]
 >
->A exclusão de um modelo de fragmento de conteúdo pode afetar fragmentos dependentes.
+A exclusão de um modelo de fragmento de conteúdo pode afetar fragmentos dependentes.
 
 Para excluir um modelo de fragmento de conteúdo:
 
@@ -400,7 +399,7 @@ Para excluir um modelo de fragmento de conteúdo:
 
    >[!NOTE]
    >
-   >Se o modelo for referenciado, um aviso será exibido. Tome as medidas apropriadas.
+   Se o modelo for referenciado, um aviso será exibido. Tome as medidas apropriadas.
 
 ## Publicação de um Modelo de fragmento de conteúdo {#publishing-a-content-fragment-model}
 
@@ -416,7 +415,7 @@ O status publicado é indicado no console.
 
    >[!NOTE]
    >
-   >Se você publicar um fragmento de conteúdo cujo modelo ainda não tenha sido publicado, uma lista de seleção indicará isso e o modelo será publicado junto com o fragmento.
+   Se você publicar um fragmento de conteúdo cujo modelo ainda não tenha sido publicado, uma lista de seleção indicará isso e o modelo será publicado junto com o fragmento.
 
 ## Desfazer a publicação de um modelo de fragmento de conteúdo {#unpublishing-a-content-fragment-model}
 

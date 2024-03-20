@@ -7,10 +7,11 @@ content-type: reference
 docset: aem65
 exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
 feature: Security
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '3101'
-ht-degree: 1%
+source-wordcount: '3073'
+ht-degree: 0%
 
 ---
 
@@ -235,13 +236,13 @@ Você deve estar conectado ao espaço de trabalho apropriado e, em seguida, aces
 
 * Você pode adicionar novas propriedades definindo um nome, tipo e valor. Clique em Salvar (símbolo de marca de verificação verde) para cada nova propriedade.
 
-**Associação de Grupo**
+**Associação de grupo**
 
 Isso exibe todos os grupos aos quais a conta pertence. A coluna Herdado indica associação que foi herdada como resultado da associação de outro grupo.
 
 Clicar em uma GroupID (quando disponível) abre a variável [Administração de grupo](#group-administration) para esse grupo.
 
-**Personificadores**
+**Representantes**
 
 Com a funcionalidade Representar, um usuário pode trabalhar em nome de outro usuário.
 
@@ -355,7 +356,7 @@ Você deve estar conectado ao espaço de trabalho apropriado e, em seguida, aces
 
   Você pode adicionar usuários ou outros grupos como membros deste grupo.
 
-**Associação de Grupo**
+**Associação de grupo**
 
 Isso exibe todos os grupos aos quais a conta de grupo atual pertence. A coluna Herdado indica associação que foi herdada como resultado da associação de outro grupo.
 

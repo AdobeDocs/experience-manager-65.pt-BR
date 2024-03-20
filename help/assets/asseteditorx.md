@@ -5,10 +5,11 @@ contentOwner: AG
 role: User, Admin
 feature: Developer Tools
 exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 13%
+source-wordcount: '653'
+ht-degree: 12%
 
 ---
 
@@ -196,7 +197,7 @@ Este exemplo descreve como criar um componente que mostra e exibe os metadados d
    </div>
    ```
 
-1. Para disponibilizar o componente, é necessário editá-lo. Para tornar um componente editável, no CRXDE Lite, adicione um nó `cq:editConfig` do tipo primário `cq:EditConfig`. Para que possa remover parágrafos, adicione uma propriedade de vários valores `cq:actions` com um único valor `DELETE`.
+1. Para disponibilizar o componente, é necessário editá-lo. Para tornar um componente editável, no CRXDE Lite, adicione um nó `cq:editConfig` do tipo primário `cq:EditConfig`. Para que possa remover parágrafos, adicione uma propriedade de vários valores `cq:actions` com um único valor de `DELETE`.
 
 1. Navegue até o navegador e, na página de exemplo (por exemplo, `asseteditor.html`) alternar para o modo de design e ativar o novo componente para o sistema de parágrafos.
 

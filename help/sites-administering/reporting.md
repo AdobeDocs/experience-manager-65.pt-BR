@@ -7,10 +7,11 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2777'
-ht-degree: 4%
+source-wordcount: '2782'
+ht-degree: 3%
 
 ---
 
@@ -164,7 +165,7 @@ Quando a coleta de dados começar, é possível selecionar:
 
   Você pode selecionar datas de e até para os dados do relatório a serem mostrados.
 
-* **Intervalo**
+* **Interval**
 
   Mês, Semana, Dia, Hora podem ser selecionados para a escala e agregação do relatório.
 
@@ -247,7 +248,7 @@ Este é um local onde o período para coleta de snapshots para [Dados histórico
 
 * **Processamento de relatório**
 
-   * **atualização automática de dados**
+   * **atualizar dados automaticamente**
 
      Os dados do relatório são atualizados toda vez que você atualiza a definição do relatório.
 
@@ -345,19 +346,19 @@ Para gerar o relatório, você pode especificar o seguinte:
 
   Padrão: `24`
 
-* **máx. Resultados**
+* **máx Resultados**
 
   Número máximo de linhas de saída.
 
   Padrão: `50`
 
-* **máx. Solicitações**
+* **máx Solicitações**
 
   Número máximo de solicitações a serem analisadas.
 
   Padrão: `-1` (todos)
 
-* **Endereço de e-mail**
+* **Endereço de email**
 
   Enviar resultados para um endereço de email.
 
@@ -491,7 +492,7 @@ Isso fornece uma visão geral concisa, fornecendo informações sobre as instân
 * Duração
 * Iniciador
 * Modelo
-* Carga
+* Carga útil
 * Iniciado
 * Status
 
@@ -546,11 +547,11 @@ Em uma instalação padrão do AEM, as seguintes permissões são predefinidas p
 
   `user administrators` - ler e gravar
 
-* **Relatório de atividades de página**
+* **Relatório de atividades da página**
 
   `contributors` - ler e gravar
 
-* **Relatório do componente**
+* **Relatório de componente**
 
   `contributors` - ler e gravar
 

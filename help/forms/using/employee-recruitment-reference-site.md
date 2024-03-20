@@ -4,9 +4,10 @@ description: O site de referência do AEM Forms mostra como as organizações po
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: bdfc0a20-1e98-47f9-a1d1-5af5b3ef15db
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1417'
 ht-degree: 0%
 
 ---
@@ -41,7 +42,7 @@ Esses workflows são criados no AEM e podem ser encontrados em:
 
 #### Financiamos o fluxo de trabalho de recrutamento de funcionários {#we-finance-employee-recruiting-workflow}
 
-A seguir está o modelo de fluxo de trabalho Recrutamento de Funcionário das Finanças seguido neste documento.
+A seguir está o modelo do fluxo de trabalho Recrutamento de Funcionário das Finanças seguido neste documento.
 
 ![we-finance-employee-recruiting-workflow](assets/we-finance-employee-recruiting-workflow.png)
 
@@ -178,11 +179,11 @@ Sarah Rose recebe um e-mail notificando que informações adicionais são necess
 
 Sarah clica no link Fornecer detalhes no email. Um formulário é exibido. Sarah preenche os detalhes necessários de educação e emprego, conforme solicitado por John Doe e clica em Enviar.
 
-![additionalinformation1](assets/additionalinformation1.png)
+![informaçõesadicionais1](assets/additionalinformation1.png)
 
 Sarah abre o formulário de informações adicionais clicando no link no email
 
-![additionalinformation2](assets/additionalinformation2.png)
+![informaçõesadicionais2](assets/additionalinformation2.png)
 
 Sarah preenche as informações adicionais solicitadas por John Doe e clica em Enviar
 

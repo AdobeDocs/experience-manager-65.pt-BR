@@ -7,7 +7,8 @@ topic-tags: configuring, Security
 content-type: reference
 feature: Configuring
 exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -80,19 +81,20 @@ Para configurar o SSO para uma instância AEM, configure o [Manipulador de auten
 >
 >Se você também estiver usando a variável [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) com o Microsoft® Internet Information Server (IIS), será necessária uma configuração adicional em:
 >
-* `disp_iis.ini`
-* IIS
+>* `disp_iis.ini`
+>* IIS
 >
-Entrada `disp_iis.ini` set: (consulte [instalação do Dispatcher com o Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) para obter detalhes completos)
+>Entrada `disp_iis.ini` definir:
+>(consulte [instalação do Dispatcher com o Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) para obter detalhes completos)
 >
-* `servervariables=1` (encaminha variáveis do servidor IIS como cabeçalhos de solicitação para a instância remota)
-* `replaceauthorization=1` (substitui qualquer cabeçalho chamado &quot;Autorização&quot;, diferente de &quot;Básica&quot;, por seu equivalente &quot;Básica&quot;)
+>* `servervariables=1` (encaminha variáveis do servidor IIS como cabeçalhos de solicitação para a instância remota)
+>* `replaceauthorization=1` (substitui qualquer cabeçalho chamado &quot;Autorização&quot;, diferente de &quot;Básica&quot;, por seu equivalente &quot;Básica&quot;)
 >
-No IIS:
+>No IIS:
 >
-* disable **Acesso anônimo**
+>* disable **Acesso anônimo**
 >
-* habilitar **Autenticação integrada do Windows**
+>* habilitar **Autenticação integrada do Windows**
 >
 
 Você pode ver qual manipulador de autenticação está sendo aplicado a qualquer seção da árvore de conteúdo usando o **Autenticador** opção do Felix Console; por exemplo:
@@ -151,7 +153,7 @@ Ou você pode usar o seguinte comando curl para enviar a `TestHeader` cabeçalho
 
 >[!NOTE]
 >
-Ao usar o parâmetro de solicitação em um navegador, você só verá parte do HTML - sem CSS. Isso ocorre porque todas as solicitações do HTML são feitas sem o parâmetro de solicitação.
+>Ao usar o parâmetro de solicitação em um navegador, você só verá parte do HTML - sem CSS. Isso ocorre porque todas as solicitações do HTML são feitas sem o parâmetro de solicitação.
 
 ## Remoção de links de saída do AEM {#removing-aem-sign-out-links}
 

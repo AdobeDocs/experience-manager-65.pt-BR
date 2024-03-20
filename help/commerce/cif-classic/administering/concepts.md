@@ -3,10 +3,11 @@ title: Conceitos
 description: Saiba mais sobre os conceitos gerais de comércio eletrônico com o Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '4481'
-ht-degree: 1%
+source-wordcount: '4439'
+ht-degree: 0%
 
 ---
 
@@ -254,7 +255,7 @@ Os atributos individuais mantidos sobre cada produto podem depender do mecanismo
 
   Tags usadas para agrupar produtos relacionados.
 
-* **Categoria do ativo padrão**
+* **Categoria de ativo padrão**
 
   Uma categoria padrão para ativos.
 
@@ -747,7 +748,7 @@ Várias informações são armazenadas, que podem incluir:
 
   O número de referência do pedido.
 
-* **Instalado**
+* **Colocado**
 
   A data em que o pedido foi feito.
 
@@ -791,7 +792,7 @@ Várias informações são armazenadas, que podem incluir:
 
   O status do pagamento.
 
-* **Endereço de envio**
+* **Endereço de entrega**
 
   O endereço para o qual as mercadorias devem ser enviadas.
 
@@ -799,7 +800,7 @@ Várias informações são armazenadas, que podem incluir:
 
   O método de envio; por exemplo, terra, mar ou ar.
 
-* **Número de rastreamento**
+* **Número de Acompanhamento**
 
   Qualquer número de rastreamento usado pela empresa de remessa.
 

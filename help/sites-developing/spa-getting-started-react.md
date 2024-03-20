@@ -7,7 +7,8 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 552649e7-6054-4ae8-b570-5ba7230e6f19
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 4%
@@ -108,7 +109,7 @@ module.exports = {
 };
 ```
 
-### Criação {#building}
+### Compilação {#building}
 
 Criar realmente os usos do aplicativo [Webpack](https://webpack.js.org/) para tradução, além do aem-clientlib-generator para criação automática da biblioteca do cliente. Portanto, o comando build será semelhante a:
 
@@ -275,7 +276,7 @@ Para obter mais informações, consulte a [Documento do blueprint do SPA](/help/
 
 ## Próximas etapas {#next-steps}
 
-Para obter um guia passo a passo sobre como criar seu próprio SPA, consulte o [Introdução ao editor SPA AEM - Tutorial de eventos do WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=pt-BR).
+Para obter um guia passo a passo sobre como criar seu próprio SPA, consulte o [Introdução ao editor SPA AEM - Tutorial de eventos do WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html?lang=pt-BR).
 
 Para obter mais informações sobre como se organizar para desenvolver SPA para AEM, consulte o artigo [Desenvolvimento de AEM para SPA](/help/sites-developing/spa-architecture.md).
 

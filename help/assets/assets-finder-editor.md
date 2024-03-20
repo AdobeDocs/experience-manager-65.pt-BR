@@ -5,9 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Developer Tools,Asset Management
 exl-id: 53e310a9-c511-447a-91bd-8c5b2760dc03
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2110'
+source-wordcount: '2088'
 ht-degree: 1%
 
 ---
@@ -380,7 +381,7 @@ As seguintes ações estão disponíveis:
 | [!UICONTROL Lightbox] | Salva ativos em uma &quot;lightbox&quot;, onde é possível executar outras ações neles. Isso é útil ao trabalhar com ativos em várias páginas. |
 | [!UICONTROL Bloqueio] | Permite que os usuários bloqueiem um ativo. Essa funcionalidade não está habilitada por padrão e deve ser habilitada na lista de componentes. |
 | [!UICONTROL Referências] | Clique nessa opção para mostrar em quais páginas o ativo está sendo usado. |
-| [!UICONTROL Versões] | Permite criar e restaurar versões de um ativo. |
+| [!UICONTROL Controle de versão] | Permite criar e restaurar versões de um ativo. |
 
 1. Arraste a ação apropriada para a **Ações** na página. Ele cria uma opção usada para executar a ação arrastada na página.
 

@@ -6,7 +6,8 @@ role: Admin, Developer
 feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
 hide: true
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2411'
 ht-degree: 15%
@@ -164,19 +165,19 @@ Semelhante à maneira como você adiciona um predicado de Propriedade ou um pred
 
 | Nome do predicado | Descrição | Propriedades |
 |---|---|---|
-| [!UICONTROL Texto completo] | Pesquisar predicado para executar uma pesquisa de texto completo em um nó de ativo inteiro. Ele é mapeado com o operador jcr:contains. Você pode especificar um caminho relativo se quiser executar uma pesquisa de texto completo em uma parte específica do nó do ativo. | <ul><li>Etiqueta</li><li>Espaço reservado</li><li>Nome da propriedade</li><li>Descrição</li></ul> |
+| [!UICONTROL Texto completo] | Pesquisar predicado para executar uma pesquisa de texto completo em um nó de ativo inteiro. Ele é mapeado com o operador jcr:contains. Você pode especificar um caminho relativo se quiser executar uma pesquisa de texto completo em uma parte específica do nó do ativo. | <ul><li>Rótulo</li><li>Espaço reservado</li><li>Nome da propriedade</li><li>Descrição</li></ul> |
 | [!UICONTROL Navegador de caminhos] | Pesquisar predicado para pesquisar ativos em pastas e subpastas em um caminho raiz pré-configurado | <ul><li>Espaço reservado</li><li>Caminho raiz</li><li>Descrição</li></ul> |
-| [!UICONTROL Caminho] | Use-a para filtrar os resultados no local. Você pode especificar caminhos diferentes como opções. | <ul><li>Etiqueta</li><li>Caminho</li><li>Descrição</li></ul> |
-| [!UICONTROL Publicar status] | Pesquisar predicado para pesquisar ativos com base no status de publicação | <ul><li>Etiqueta</li><li>Nome da propriedade</li><li>Descrição</li></ul> |
-| [!UICONTROL Data relativa] | Predicado de pesquisa para pesquisar ativos com base na data relativa de sua criação. Por exemplo, você pode configurar opções, como 2 meses atrás, 3 semanas atrás e assim por diante. | <ul><li>Etiqueta</li><li>Nome da propriedade</li><li>Data relativa</li></ul> |
-| [!UICONTROL Intervalo] | Pesquisar predicado para pesquisar ativos dentro de um intervalo especificado. No painel Pesquisar, é possível especificar valores mínimos e máximos para o intervalo. | <ul><li>Etiqueta</li><li>Nome da propriedade</li><li>Descrição</li></ul> |
-| [!UICONTROL Intervalo de datas] | Pesquisar predicado para pesquisar ativos criados em um intervalo especificado para uma propriedade de data. No painel Pesquisar, é possível especificar datas de Início e Término usando seletores de datas. | <ul><li>Etiqueta</li><li>Espaço reservado</li><li>Nome da propriedade</li><li>Intervalo de texto (de)</li><li>Intervalo de texto (até)</li><li>Descrição</li></ul> |
-| [!UICONTROL Data] | Pesquisar predicado para uma pesquisa com base em controle deslizante de ativos com base em uma propriedade de data. | <ul><li>Etiqueta</li><li>Nome da propriedade</li><li>Descrição</li></ul> |
-| [!UICONTROL Tamanho do arquivo] | Pesquisar predicado para pesquisar ativos com base em seu tamanho. É um predicado baseado em controle deslizante no qual você seleciona as opções de controle deslizante de um nó configurável. As opções padrão são definidas em /libs/dam/options/predicates/filesize no repositório CRXDE. O tamanho do arquivo é fornecido em bytes. | <ul><li>Etiqueta</li><li>Nome da propriedade</li><li>Caminho</li><li>Descrição</li></ul> |
+| [!UICONTROL Caminho] | Use-a para filtrar os resultados no local. Você pode especificar caminhos diferentes como opções. | <ul><li>Rótulo</li><li>Caminho</li><li>Descrição</li></ul> |
+| [!UICONTROL Publicar status] | Pesquisar predicado para pesquisar ativos com base no status de publicação | <ul><li>Rótulo</li><li>Nome da propriedade</li><li>Descrição</li></ul> |
+| [!UICONTROL Data relativa] | Predicado de pesquisa para pesquisar ativos com base na data relativa de sua criação. Por exemplo, você pode configurar opções, como 2 meses atrás, 3 semanas atrás e assim por diante. | <ul><li>Rótulo</li><li>Nome da propriedade</li><li>Data relativa</li></ul> |
+| [!UICONTROL Intervalo] | Pesquisar predicado para pesquisar ativos dentro de um intervalo especificado. No painel Pesquisar, é possível especificar valores mínimos e máximos para o intervalo. | <ul><li>Rótulo</li><li>Nome da propriedade</li><li>Descrição</li></ul> |
+| [!UICONTROL Intervalo de datas] | Pesquisar predicado para pesquisar ativos criados em um intervalo especificado para uma propriedade de data. No painel Pesquisar, é possível especificar datas de Início e Término usando seletores de datas. | <ul><li>Rótulo</li><li>Espaço reservado</li><li>Nome da propriedade</li><li>Intervalo de texto (de)</li><li>Intervalo de texto (até)</li><li>Descrição</li></ul> |
+| [!UICONTROL Data] | Pesquisar predicado para uma pesquisa com base em controle deslizante de ativos com base em uma propriedade de data. | <ul><li>Rótulo</li><li>Nome da propriedade</li><li>Descrição</li></ul> |
+| [!UICONTROL Tamanho do arquivo] | Pesquisar predicado para pesquisar ativos com base em seu tamanho. É um predicado baseado em controle deslizante no qual você seleciona as opções de controle deslizante de um nó configurável. As opções padrão são definidas em /libs/dam/options/predicates/filesize no repositório CRXDE. O tamanho do arquivo é fornecido em bytes. | <ul><li>Rótulo</li><li>Nome da propriedade</li><li>Caminho</li><li>Descrição</li></ul> |
 | [!UICONTROL Última modificação do ativo] | Pesquisar predicado para pesquisar ativos modificados recentemente | <ul><li>Nome da propriedade</li><li>Valor da propriedade</li><li>Descrição</li></ul> |
-| [!UICONTROL Publicar status] | Pesquisar predicado para pesquisar ativos com base no status de publicação | <ul><li>Etiqueta</li><li>Nome da propriedade</li><li>Descrição</li></ul> |
-| [!UICONTROL Classificação] | Pesquisar predicado para pesquisar ativos com base em sua classificação média | <ul><li>Etiqueta</li><li>Nome da propriedade</li><li>Caminho de opção</li><li>Descrição</li></ul> |
-| [!UICONTROL Status de expiração] | Pesquisar predicado para pesquisar ativos com base no status de expiração | <ul><li>Etiqueta</li><li>Nome da propriedade</li><li>Descrição</li></ul> |
+| [!UICONTROL Publicar status] | Pesquisar predicado para pesquisar ativos com base no status de publicação | <ul><li>Rótulo</li><li>Nome da propriedade</li><li>Descrição</li></ul> |
+| [!UICONTROL Classificação] | Pesquisar predicado para pesquisar ativos com base em sua classificação média | <ul><li>Rótulo</li><li>Nome da propriedade</li><li>Caminho de opção</li><li>Descrição</li></ul> |
+| [!UICONTROL Status de expiração] | Pesquisar predicado para pesquisar ativos com base no status de expiração | <ul><li>Rótulo</li><li>Nome da propriedade</li><li>Descrição</li></ul> |
 | [!UICONTROL Oculto] | Pesquisar predicado que define uma propriedade de campo oculta para pesquisar ativos | <ul><li>Nome da propriedade</li><li>Valor da propriedade</li><li>Descrição</li></ul> |
 
 ## Redefinir aspectos de pesquisa padrão {#restoring-default-search-facets}

@@ -6,10 +6,11 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '3549'
-ht-degree: 2%
+source-wordcount: '3476'
+ht-degree: 1%
 
 ---
 
@@ -236,7 +237,7 @@ Você pode usar o arquivo de configuração com as opções detalhadas abaixo.
 | --- | --- | --- | --- |
 | accessKey | ID da Chave de Acesso para o usuário do IAM com acesso ao bucket. | | Sim, quando as funções IAM não estiverem sendo usadas. |
 | secretKey | Chave de acesso secreta para o usuário do IAM com acesso ao bucket. | | Sim, quando as funções IAM não estiverem sendo usadas. |
-| cacheSize | O tamanho (em bytes) do cache local. | 64GB | Não. |
+| cacheSize | O tamanho (em bytes) do cache local. | 64 GB | Não. |
 | connectionTimeout | Defina o tempo de espera (em milissegundos) antes de atingir o tempo limite ao estabelecer uma conexão inicialmente. | 10000 | Não. |
 | maxCachedBinarySize | Os binários com tamanho menor ou igual a esse valor (em bytes) são armazenados no cache de memória. | 17408 (17 KB) | Não. |
 | maxConnections | Defina o número máximo de conexões HTTP abertas permitidas. | 50 | Não. |

@@ -3,7 +3,8 @@ title: "Tutorial: Criar um formulário adaptável"
 description: Saiba como criar, fazer layout e pré-visualizar um formulário adaptável. Além disso, aprenda a configurar ações de envio.
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1314'
 ht-degree: 8%

@@ -7,9 +7,10 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1854'
 ht-degree: 1%
 
 ---
@@ -166,7 +167,7 @@ Depois de fazer cada alteração no lado do servidor, reinicie o pacote de bloco
 >
 >Talvez seja necessário limpar o cache do navegador.
 
-1. Acesse `https://[host]:'port'/system/console/bundles`. Se necessário, efetue login como Administrador.
+1. Ir para `https://[host]:'port'/system/console/bundles`. Se necessário, efetue login como Administrador.
 
 1. Localize o pacote de blocos de construção do Adobe Asset Composer. Reinicie o pacote: clique em Stop e em Start.
 
@@ -188,7 +189,7 @@ Manipular a ação/botão ao clicar na ação/botão inclui lógica para:
 * Ativar/desativar a ação recém-adicionada: feito substituindo a função actionEnabled().
 * Manuseio real da ação quando o usuário clica no botão: feito substituindo a implementação da função handleAction().
 
-1. Acesse `https://'[server]:[port]'/[ContextPath]/crx/de`. Se necessário, efetue login como Administrador.
+1. Ir para `https://'[server]:[port]'/[ContextPath]/crx/de`. Se necessário, efetue login como Administrador.
 
 1. Na pasta de aplicativos, crie uma pasta chamada `js` na ramificação /apps do CRX com estrutura semelhante à seguinte pasta:
 

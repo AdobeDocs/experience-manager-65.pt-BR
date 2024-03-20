@@ -7,10 +7,11 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 9abdaa6d-79ee-448e-a23f-d216433591f8
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 16%
+source-wordcount: '228'
+ht-degree: 14%
 
 ---
 
@@ -34,7 +35,7 @@ A funcionalidade do [Representar como](/help/sites-administering/security.md#imp
 O idioma a ser usado para a interface do usuário do ambiente de criação. Selecione o idioma apropriado na lista.
 
 * **Gerenciamento de janelas**
-Selecione um dos seguintes:
+Selecione:
 
    * Várias páginas do Windows (padrão) são abertas em uma nova janela.
    * Páginas de janela única são abertas na janela atual.

@@ -8,9 +8,10 @@ content-type: reference
 role: User, Admin,Developer
 exl-id: b0ac587b-8592-4d37-9ce0-98a0859c367f
 feature: Configuration,Rulesets
-source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '714'
 ht-degree: 0%
 
 ---
@@ -22,18 +23,18 @@ ht-degree: 0%
 * Adição de um sufixo de tipo MIME. Muitos serviços e sites exigem sufixos de imagem, como adicionar `.jpg` para um URL.
 * Criar um caminho de pasta para o URL para fins de SEO (Otimização do mecanismo de pesquisa).
 
-   Consulte [Como o Adobe Dynamic Media Classic oferece suporte ao SEO](/help/assets/assets/s7_seo.pdf).
+  Consulte [Como o Adobe Dynamic Media Classic oferece suporte ao SEO](/help/assets/assets/s7_seo.pdf).
 
 * Adicionar metadados ao URL para fins de SEO (Otimização do mecanismo de pesquisa).
 
-   Consulte [Como o Adobe Dynamic Media Classic oferece suporte ao SEO](/help/assets/assets/s7_seo.pdf).
+  Consulte [Como o Adobe Dynamic Media Classic oferece suporte ao SEO](/help/assets/assets/s7_seo.pdf).
 
 * Definir a disposição do conteúdo para acionar um download.
 * Simplifique os URLs de modelo do Servidor de imagens para personalização. Por exemplo, turn `rgb{XX,YY,ZZ}` no formato pronto para RTF `\redXX\greenYY\blueZZ`
 
 * Solicitar que determinados caracteres sejam codificados, como `$`, `{`, e `}`e determinados caracteres a serem decodificados para ImageServer. Por exemplo, o Facebook não funciona bem com URLs que contêm caracteres especiais.
 
-   Consulte [Remover caracteres especiais de URLs](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
+  Consulte [Remover caracteres especiais de URLs](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
 No contexto do Dynamic Media, os sites que usam um sistema baseado em XML para gerenciar informações de ativos podem fazer upload de arquivos XML para o Dynamic Media. Você pode designar um desses arquivos como o arquivo de conjunto de regras de pré-processamento para servir o ativo do Dynamic Media. Esse arquivo reestrutura o formato de protocolo de URL padrão para atender à lógica de negócios dos sistemas que estão sendo integrados com o Dynamic Media. Especifique um arquivo XML para servir como o caminho do arquivo de definições do conjunto de regras.
 

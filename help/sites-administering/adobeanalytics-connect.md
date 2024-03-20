@@ -7,7 +7,8 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1484'
 ht-degree: 1%
@@ -57,7 +58,7 @@ Se sua empresa exigir a coleta ou a recuperação de dados de um data center esp
 | Centro de dados | URL |
 |---|---|
 | Londres | `https://api3.omniture.com/` |
-| Cingapura | `https://api4.omniture.com/` |
+| Singapura | `https://api4.omniture.com/` |
 | Oregon | `https://api5.omniture.com/` |
 
 Use o [Console da Web para configurar o pacote OSGi](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) **Cliente HTTP do Adobe AEM Analytics**. Adicione o **URL do centro de dados** para o data center que hospeda um conjunto de relatórios para o qual suas páginas AEM coletam dados.

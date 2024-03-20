@@ -6,10 +6,11 @@ feature: Asset Management
 role: Admin
 exl-id: edccf23c-087e-4253-babb-dd4c6610517d
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 8%
+source-wordcount: '179'
+ht-degree: 7%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 8%
 
 [!DNL Adobe Experience Manager Assets] O permite automatizar fluxos de trabalho de tradução em ativos (incluindo binários, metadados e tags) para gerar ativos em outros idiomas para uso em projetos multilíngues.
 
-Para automatizar fluxos de trabalho de tradução, você integra provedores de serviços de tradução com [!DNL Experience Manager] e criar projetos para traduzir ativos em vários idiomas. [!DNL Experience Manager]O permite workflows de tradução humana e de máquina.
+Para automatizar fluxos de trabalho de tradução, você integra provedores de serviços de tradução com [!DNL Experience Manager] e criar projetos para traduzir ativos em vários idiomas. [!DNL Experience Manager] O oferece suporte a fluxos de trabalho de tradução humana e automática.
 
 Tradução humana: os ativos traduzidos são retornados e importados para o [!DNL Experience Manager]. Quando seu provedor de tradução é integrado ao [!DNL Experience Manager], os ativos são automaticamente enviados entre [!DNL Experience Manager] e o provedor de tradução.
 

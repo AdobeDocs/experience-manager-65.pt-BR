@@ -8,7 +8,8 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 783824ece92c12476505d695b961d782d7d70cb9
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5792'
 ht-degree: 0%
@@ -275,7 +276,7 @@ Os níveis de log são os seguintes:
 |---|---|---|
 | 1 | Erro | Falha na ação. A instalação continua, mas uma parte do WCM do AEM não foi instalada corretamente e não funciona. |
 | 2 | Aviso | A ação foi bem-sucedida, mas encontrou problemas. O WCM do AEM pode ou não funcionar corretamente. |
-| 3 | Info | A ação foi bem-sucedida. |
+| 3 | Informações | A ação foi bem-sucedida. |
 
 ### Criar um arquivo de log personalizado {#create-a-custom-log-file}
 
@@ -1094,12 +1095,12 @@ Veja a seguir uma lista de sugestões sobre o que verificar se você começa a e
 
 >[!NOTE]
 >
-Consulte também os seguintes artigos para obter mais informações:
+>Consulte também os seguintes artigos para obter mais informações:
 >
-* [Despejos de encadeamento](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
-* [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
-* [Analisar usando o profiler integrado](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
-* [Analisar processos lentos e bloqueados](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+>* [Despejos de encadeamento](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+>* [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+>* [Analisar usando o profiler integrado](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
+>* [Analisar processos lentos e bloqueados](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
 ### CPU em 100% {#cpu-at}
@@ -1192,6 +1193,6 @@ Você pode ver quanta memória está sendo usada, quais algoritmos de GC estão 
 
 >[!NOTE]
 >
-Para a VM do Oracle, também há informações em:
+>Para a VM do Oracle, também há informações em:
 >
-[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)
+>[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)

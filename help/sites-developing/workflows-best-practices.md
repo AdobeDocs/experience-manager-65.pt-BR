@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 1%
@@ -283,7 +284,7 @@ Um exemplo disso seria um fluxo de trabalho que implementa um processo de negóc
 
 Outro exemplo seria um fluxo de trabalho que processa vários nós, cria um pacote de fluxo de trabalho e ativa esse pacote. Em vez de criar o pacote e iniciar um fluxo de trabalho separado com o pacote como a carga, você pode alterar a carga do fluxo de trabalho na etapa que cria o pacote e chamar a etapa para ativar o pacote no mesmo modelo de fluxo de trabalho.
 
-### Handler avançado {#handler-advance}
+### Avanço do manipulador {#handler-advance}
 
 Ao criar um modelo de fluxo de trabalho, você tem a opção de ativar o avanço do manipulador nas etapas do fluxo de trabalho. Como alternativa, você pode adicionar o código à etapa do fluxo de trabalho para determinar qual etapa deve ser executada em seguida e, em seguida, executá-la.
 

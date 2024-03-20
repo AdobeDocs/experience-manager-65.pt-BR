@@ -6,10 +6,11 @@ content-type: reference
 topic-tags: repo_restructuring
 feature: Upgrading
 exl-id: 4e736924-74ea-431a-be19-1c4ff022f464
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 4%
+source-wordcount: '383'
+ht-degree: 3%
 
 ---
 
@@ -45,7 +46,7 @@ Conforme descrito no pai [Reestruturação do repositório no Adobe Experience M
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td>N/A<br /> </td>
+   <td>N/D<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -95,7 +96,7 @@ Conforme descrito no pai [Reestruturação do repositório no Adobe Experience M
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td>N/A<br /> </td>
+   <td>N/D<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -118,7 +119,7 @@ Conforme descrito no pai [Reestruturação do repositório no Adobe Experience M
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td>N/A<br /> </td>
+   <td>N/D<br /> </td>
   </tr>
  </tbody>
 </table>

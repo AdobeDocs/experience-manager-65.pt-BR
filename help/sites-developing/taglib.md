@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2460'
+source-wordcount: '2452'
 ht-degree: 0%
 
 ---
@@ -468,7 +469,7 @@ Ela tem os seguintes atributos:
 
 * nome do parâmetro a ser adicionado
 
-**valor**
+**value**
 
 * valor do parâmetro a ser adicionado
 
@@ -518,7 +519,7 @@ Ela tem os seguintes atributos:
 
 * Um booleano que define se a saída deve ser liberada antes da inclusão do destino.
 
-**resource**
+**recurso**
 
 * O objeto de recurso a ser incluído no processamento da solicitação atual. O recurso ou o caminho deve ser especificado. Se ambos forem especificados, o recurso terá prioridade.
 
@@ -595,7 +596,7 @@ A variável `<sling:defineObjects>` A tag do expõe os seguintes objetos de scri
 
 * Um objeto SlingScriptHelper, que contém métodos de conveniência para scripts, principalmente sling.include(&#39;/some/other/resource&#39;) para incluir as respostas de outros recursos dentro dessa resposta (por exemplo, incorporação de trechos de cabeçalho html) e sling.getService(foo.bar.Service.class) para recuperar serviços OSGi disponíveis em Sling (notação de classe dependendo da linguagem de script).
 
-**resource**
+**recurso**
 
 * o objeto de Recurso atual a ser manipulado, dependendo do URL da solicitação. É o mesmo que slingRequest.getResource().
 

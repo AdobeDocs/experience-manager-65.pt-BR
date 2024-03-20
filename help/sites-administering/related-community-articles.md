@@ -1,19 +1,20 @@
 ---
-title: Artigos relacionados da comunidade
+title: Artigos da comunidade relacionados
 description: Encontre uma lista de artigos gerados pela comunidade sobre integrações do Experience Cloud com o Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: ebf6d4ef-20ba-487b-b301-52de8936628f
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 6%
+source-wordcount: '79'
+ht-degree: 0%
 
 ---
 
-# Artigos relacionados da comunidade{#related-community-articles}
+# Artigos da comunidade relacionados{#related-community-articles}
 
 A Comunidade Adobe Experience Manager (AEM) gerou uma série de artigos relacionados às integrações Experience Cloud com o AEM.
 

@@ -9,9 +9,10 @@ docset: aem65
 role: User, Admin
 feature: Scene7 Mode,Hybrid Mode
 exl-id: 07f0803c-4ec4-4745-8214-63370e9d0282
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '527'
 ht-degree: 2%
 
 ---
@@ -43,7 +44,7 @@ Considere apenas começar do zero com uma nova instância provisionada do Dynami
 |---|---|---|
 | 1 | Clonar a instância do autor Dynamic Media-Hybrid. | Mantenha sua instância existente do Dynamic Media-Hybrid Author para fins de fallback até que as etapas restantes desse processo de migração sejam concluídas com êxito. |
 | 2 | Iniciar instância do autor clonada no modo Dynamic Media-Scene7. |  |
-| 3 | No Adobe Experience Manager Cloud Services, configure o Dynamic Media com credenciais do Dynamic Media-Scene7. | O Adobe deve aprovar o provisionamento Dynamic Media-Scene7. Dessa forma, você tem ambientes simultâneos Dynamic MediaM-Hybrid e Dynamic Media-Scene7 compatíveis com o Adobe, mas somente por um tempo limitado. |
+| 3 | No Adobe Experience Manager Cloud Service, configure o Dynamic Media com credenciais do Dynamic Media-Scene7. | O Adobe deve aprovar o provisionamento Dynamic Media-Scene7. Dessa forma, você tem ambientes simultâneos Dynamic MediaM-Hybrid e Dynamic Media-Scene7 compatíveis com o Adobe, mas somente por um tempo limitado. |
 | 4 | Crie um pacote de migração para assimilar ativos conforme necessário.<br>Exclua os PTIFFs locais que foram criados durante a assimilação inicial no Dynamic Media Hybrid. | Se todos os ativos estiverem disponíveis atualmente na instância Dynamic Media-Hybrid, um clone do que já os incluirá todos. Portanto, nenhum pacote é necessário. |
 | 5 | Execute o fluxo de trabalho de atualização de ativos para sincronizar ativos ao Dynamic Media Cloud Service. | A Adobe recomenda que você execute o fluxo de trabalho de atualização em lotes para permitir a compactação. |
 | 6 | Migrar predefinições de visualizador, imagem e vídeo. |  |

@@ -8,10 +8,11 @@ content-type: reference
 role: User, Admin
 feature: CDN Cache
 exl-id: 23d3c274-0736-49f7-8d44-a56a55cfd06d
-source-git-commit: b61157b0e9afa49ef72150ae0c1703a959d154be
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1349'
-ht-degree: 2%
+source-wordcount: '1372'
+ht-degree: 1%
 
 ---
 
@@ -50,7 +51,6 @@ Os ativos do Dynamic Media são armazenados em cache pela CDN (Content Delivery 
    >O Modelo de invalidação da CDN pode salvar texto de até 2500 caracteres.
 
 1. No canto superior direito da **[!UICONTROL Modelo de invalidação da CDN]** selecione **[!UICONTROL Salvar]** e selecione **[!UICONTROL OK]**.<br>
-
    *Parte 2 de 2: Definição de opções de invalidação de CDN*
    <br>
 

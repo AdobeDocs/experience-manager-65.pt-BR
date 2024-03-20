@@ -6,9 +6,10 @@ content-type: reference
 topic-tags: repo_restructuring
 feature: Upgrading
 exl-id: b4531792-06dd-4545-9dbb-57224be20dc7
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1464'
 ht-degree: 1%
 
 ---
@@ -143,7 +144,7 @@ Conforme descrito no pai [Reestruturação do repositório no AEM 6.5](/help/sit
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td>N/A<br /> </td>
+   <td>N/D<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -308,7 +309,7 @@ Conforme descrito no pai [Reestruturação do repositório no AEM 6.5](/help/sit
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td>N/A<br /> </td>
+   <td>N/D<br /> </td>
   </tr>
  </tbody>
 </table>

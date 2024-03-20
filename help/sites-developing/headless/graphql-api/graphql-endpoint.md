@@ -2,10 +2,11 @@
 title: Gerenciar endpoints de GraphQL no AEM
 description: Saiba como gerenciar endpoints do GraphQL no Adobe Experience Manager para entrega de conteúdo headless.
 exl-id: a59a5e50-0787-4c1c-a83d-bb3eac1479a8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '510'
-ht-degree: 93%
+ht-degree: 91%
 
 ---
 
@@ -69,7 +70,7 @@ Para habilitar o endpoint correspondente:
    >
    >O seguinte aviso é mostrado na caixa de diálogo:
    >
-   >* *Os endpoints de GraphQL podem causar problemas de segurança e desempenho de dados se não forem gerenciados com cuidado. Defina as permissões apropriadas após criar um endpoint.*
+   >* *Os endpoints do GraphQL podem apresentar problemas de desempenho e de segurança de dados se não forem gerenciados com cuidado. Defina as permissões apropriadas após criar um ponto de extremidade.*
 
 1. Confirme com **Criar**.
 1. A caixa de diálogo **Próximas etapas** fornecerá um link direto até o console de Segurança, para que você possa garantir que o endpoint recém-criado tenha as permissões adequadas.

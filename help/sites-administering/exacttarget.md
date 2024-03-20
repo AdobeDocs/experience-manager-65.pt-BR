@@ -7,9 +7,10 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 4183fe78-5055-4b77-8a54-55666e86a04e
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '460'
 ht-degree: 0%
 
 ---
@@ -31,9 +32,9 @@ As configurações do ExactTarget podem ser adicionadas por meio do Cloud Servic
 
 ### Configuração do ExactTarget por meio dos serviços em nuvem {#configuring-exacttarget-via-cloudservices}
 
-Para criar uma configuração ExactTarget em Cloud Services:
+Para criar uma configuração ExactTarget em Cloud Service:
 
-1. Na página de boas-vindas, clique em **Cloud Services**. (Ou acesse diretamente em `https://<hostname>:<port>/etc/cloudservices.html`.)
+1. Na página de boas-vindas, clique em **Cloud Service**. (Ou acesse diretamente em `https://<hostname>:<port>/etc/cloudservices.html`.)
 1. Clique em **ExactTarget** e depois **Configurar**. A janela de configuração ExactTarget é aberta.
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
@@ -62,7 +63,7 @@ Para criar uma configuração ExactTarget em Cloud Services:
 Para criar uma configuração ExactTarget em Ferramentas:
 
 1. Na página de boas-vindas, clique em **Ferramentas**. Ou navegue até lá diretamente `https://<hostname>:<port>/misadmin#/etc`.
-1. Selecionar **Ferramentas**, depois **Configurações do Cloud Services,** depois **ExactTarget**.
+1. Selecionar **Ferramentas**, depois **Configurações do Cloud Service,** depois **ExactTarget**.
 1. Clique em **Novo** para abrir a janela **Criar página**.
 
    ![chlimage_1-34](assets/chlimage_1-3.jpeg)
@@ -74,5 +75,5 @@ Para criar uma configuração ExactTarget em Ferramentas:
 
 Para adicionar várias configurações:
 
-1. Na página de boas-vindas, clique em **Cloud Services** e clique em **ExactTarget**. Clique em **Exibir configurações** que é exibido se uma ou mais configurações ExactTarget estiverem disponíveis. Todas as configurações disponíveis são listadas.
+1. Na página de boas-vindas, clique em **Cloud Service** e clique em **ExactTarget**. Clique em **Exibir configurações** que é exibido se uma ou mais configurações ExactTarget estiverem disponíveis. Todas as configurações disponíveis são listadas.
 1. Clique em **+** faça logon ao lado de Configurações disponíveis. Isso abre o **Criar configurações** janela. Siga o procedimento de configuração anterior para criar uma configuração.

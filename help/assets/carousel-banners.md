@@ -9,9 +9,10 @@ docset: aem65
 feature: Carousel Banners
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '4722'
+source-wordcount: '4680'
 ht-degree: 2%
 
 ---
@@ -50,7 +51,7 @@ Para começar a usar rapidamente os banners do carrossel:
 
 1. [Identificar variáveis de ponto de acesso e mapa de imagem](#identifying-hotspot-and-image-map-variables) (somente para clientes que usam Experience Manager Assets + Dynamic Media)
 
-   Comece identificando variáveis dinâmicas usadas pela implementação existente do Quickview para que você possa inserir hotspots e dados de mapa de imagem corretamente durante o processo de criação do banner de carrossel no Adobe Experience Manager Assets.
+   Comece identificando variáveis dinâmicas usadas pela implementação existente do Quickview para que você possa inserir hotspots e dados de mapa de imagem corretamente durante o processo de criação do banner do carrossel no Adobe Experience Manager Assets.
 
    >[!NOTE]
    >
@@ -257,11 +258,11 @@ Consulte [(Opcional) Visualizar banners do carrossel](#optional-previewing-carou
 >
 >Quando você adiciona pontos de acesso a uma imagem em um [Imagem interativa](/help/assets/interactive-images.md) Para um banner de carrossel, as informações do ponto de acesso são armazenadas no mesmo local de metadados. Esse local é relativo ao local da imagem, independentemente de ser uma Imagem interativa ou um banner de carrossel. Essa funcionalidade significa que você pode reutilizar facilmente a mesma imagem, juntamente com seus dados de ponto de acesso definidos, em qualquer visualizador.
 >
-No entanto, esteja ciente de que os banners do carrossel são compatíveis com mapas de imagem em imagens que também podem conter pontos de acesso; uma Imagem interativa não é compatível. Lembre-se dessa regra se você pretende criar uma Imagem interativa ou um banner de carrossel que use a mesma imagem. Considere a criação de Imagens interativas e banners do carrossel usando cópias separadas da mesma imagem.
+>No entanto, esteja ciente de que os banners do carrossel são compatíveis com mapas de imagem em imagens que também podem conter pontos de acesso; uma Imagem interativa não é compatível. Lembre-se dessa regra se você pretende criar uma Imagem interativa ou um banner de carrossel que use a mesma imagem. Considere a criação de Imagens interativas e banners do carrossel usando cópias separadas da mesma imagem.
 
 >[!NOTE]
 >
-Se você estiver editando imagens interativas com pontos de acesso e recortar a imagem, os pontos de acesso serão removidos.
+>Se você estiver editando imagens interativas com pontos de acesso e recortar a imagem, os pontos de acesso serão removidos.
 
 Consulte também [Adicionar mapas de imagem](/help/assets/image-maps.md).
 
@@ -299,7 +300,7 @@ Consulte também [Adicionar mapas de imagem](/help/assets/image-maps.md).
       * Se você for um cliente do Experience Manager Sites, selecione o ícone Seletor de sites (pasta) para navegar até um URL.
         >[!NOTE]
         >
-        O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do Experience Manager Sites.
+        >O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do Experience Manager Sites.
 
       * Se você for um cliente independente, no campo de texto HREF, especifique o caminho completo do URL para uma página da Web vinculada.
 
@@ -316,9 +317,9 @@ Consulte [Fragmentos de experiência](/help/sites-authoring/experience-fragments
 
         >[!NOTE]
         >
-        As ferramentas de compartilhamento de redes sociais no banner do carrossel não são compatíveis quando você incorpora o visualizador em um Fragmento de experiência.
+        >As ferramentas de compartilhamento de redes sociais no banner do carrossel não são compatíveis quando você incorpora o visualizador em um Fragmento de experiência.
         >
-        Para contornar esse problema, crie predefinições do visualizador que não tenham ferramentas de compartilhamento de redes sociais. Essas predefinições do visualizador permitem incorporá-lo com sucesso aos Fragmentos de experiência.
+        >Para contornar esse problema, crie predefinições do visualizador que não tenham ferramentas de compartilhamento de redes sociais. Essas predefinições do visualizador permitem incorporá-lo com sucesso aos Fragmentos de experiência.
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
@@ -335,7 +336,7 @@ Consulte [Fragmentos de experiência](/help/sites-authoring/experience-fragments
 
 >[!NOTE]
 >
-Os usuários não administrativos devem ser adicionados ao **[!UICONTROL dam-users]** para criar ou editar banners do carrossel. Se tiver problemas para criar ou editar o, consulte o administrador do sistema que pode adicioná-lo ao **[!UICONTROL dam-users]** grupo.
+>Os usuários não administrativos devem ser adicionados ao **[!UICONTROL dam-users]** para criar ou editar banners do carrossel. Se tiver problemas para criar ou editar o, consulte o administrador do sistema que pode adicioná-lo ao **[!UICONTROL dam-users]** grupo.
 
 É possível executar várias tarefas de edição em Conjuntos de carrosséis, como as seguintes:
 
@@ -368,7 +369,7 @@ Os usuários não administrativos devem ser adicionados ao **[!UICONTROL dam-use
 
    >[!NOTE]
    >
-   Se você estiver editando imagens interativas com pontos de acesso e recortar a imagem, os pontos de acesso serão removidos.
+   >Se você estiver editando imagens interativas com pontos de acesso e recortar a imagem, os pontos de acesso serão removidos.
    >
    >
 
@@ -391,7 +392,7 @@ Você pode visualizar banners do carrossel no Editor do carrossel (método prefe
 
    ![experience_fragment-carouselbanner-viewdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. Selecione **[!UICONTROL Visualizar]**.
+1. Selecionar **[!UICONTROL Visualizar]**.
 1. Selecione os pontos de acesso ou mapas de imagem na imagem para testar as ações associadas a eles.
 
 **Para visualizar banners do carrossel na lista Visualizadores:**
@@ -407,9 +408,9 @@ Publique o carrossel para usá-lo. A publicação de um Conjunto de carrossel at
 
 >[!NOTE]
 >
-Se você usar uma imagem interativa existente com pontos de acesso para o banner do carrossel, será necessário publicar a imagem interativa separadamente após publicar o banner do carrossel.
+>Se você usar uma imagem interativa existente com pontos de acesso para o banner do carrossel, será necessário publicar a imagem interativa separadamente após publicar o banner do carrossel.
 >
-Além disso, se você modificar uma imagem interativa publicada pré-existente que esteja usando em um banner do carrossel, será necessário publicar a imagem interativa antes que essas alterações sejam refletidas no banner do carrossel.
+>Além disso, se você modificar uma imagem interativa publicada pré-existente que esteja usando em um banner do carrossel, será necessário publicar a imagem interativa antes que essas alterações sejam refletidas no banner do carrossel.
 
 Consulte [Publicar ativos do Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md) para obter informações sobre como publicar banners do carrossel.
 
@@ -419,7 +420,7 @@ Depois de carregar as imagens do banner para criar um carrossel, adicionar ponto
 
 >[!NOTE]
 >
-Se você for um cliente do Experience Manager Sites, poderá adicionar o banner do carrossel diretamente à sua página arrastando o componente de Mídia interativa para sua página. Consulte [Adicionar ativos do Dynamic Media a páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
+>Se você for um cliente do Experience Manager Sites, poderá adicionar o banner do carrossel diretamente à sua página arrastando o componente de Mídia interativa para sua página. Consulte [Adicionar ativos do Dynamic Media a páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 No entanto, se você for um cliente independente do Experience Manager Assets, poderá adicionar manualmente o banner do carrossel à landing page do seu site, conforme descrito nesta seção.
 
@@ -433,7 +434,7 @@ O código incorporado copiado é responsivo, portanto, deve se ajustar automatic
 
 >[!NOTE]
 >
-Essa etapa se aplica somente se você for um cliente independente do Experience Manager Assets.
+>Essa etapa se aplica somente se você for um cliente independente do Experience Manager Assets.
 
 A última etapa deste processo é integrar o banner do carrossel a uma implementação do Quickview existente no seu site. Cada implementação do Quickview é única e é necessária uma abordagem específica que envolva a assistência de um profissional de TI de front-end.
 

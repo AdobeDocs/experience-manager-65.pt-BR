@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2072'
 ht-degree: 7%
@@ -184,8 +185,8 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>Um filtro na propriedade e no valor, não visível para o usuário.</td>
    <td>
     <ul>
-     <li>Nome da Propriedade</li>
-     <li>Valor da propriedade</li>
+     <li>Nome de propriedade</li>
+     <li>Valor de propriedade</li>
      <li>Descrição</li>
     </ul> </td>
   </tr>
@@ -197,7 +198,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
      <li>Rótulo do campo</li>
      <li>Caminho JSON</li>
      <li>Nome da propriedade*</li>
-     <li>Única seleção</li>
+     <li>Seleção única</li>
      <li>Caminho de opção</li>
      <li>Descrição</li>
     </ul> </td>
@@ -210,7 +211,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
      <li>Rótulo do campo</li>
      <li>Nome da propriedade*</li>
      <li>Caminho do nó de opções<br /> </li>
-     <li>Única seleção</li>
+     <li>Seleção única</li>
      <li>Descrição</li>
     </ul> </td>
   </tr>
@@ -238,7 +239,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   <tr>
    <td>Propriedade </td>
    <td>Pesquisar em uma propriedade especificada.</td>
-   <td>nenhuma</td>
+   <td>nenhum</td>
   </tr>
   <tr>
    <td>Publicar status </td>
@@ -256,7 +257,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Rótulo do campo</li>
-     <li>Nome da Propriedade</li>
+     <li>Nome de propriedade</li>
      <li>Descrição</li>
     </ul> </td>
   </tr>

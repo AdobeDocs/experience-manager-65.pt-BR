@@ -9,10 +9,11 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 55cc7c57-87a0-4bfb-b226-36d01d36849a
-source-git-commit: 9c548dbc0157607adda5ed76cab8ef970588e1e9
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2498'
-ht-degree: 4%
+source-wordcount: '2506'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 4%
 Configuração **[!UICONTROL Configurações gerais do Dynamic Media]** está disponível somente se:
 
 * Você está executando o Dynamic Media no modo Scene7. Consulte [Ativar o Dynamic Media no modo Scene7](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
-* Você tem um *existente* **[!UICONTROL Configuração do Dynamic Media]** (em **[!UICONTROL Cloud Services]**) no Adobe Experience Manager 6.5.11 ou superior. Consulte [Criar uma configuração do Dynamic Media no Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
+* Você tem um *existente* **[!UICONTROL Configuração do Dynamic Media]** (em **[!UICONTROL Cloud Service]**) no Adobe Experience Manager 6.5.11 ou superior. Consulte [Criar uma configuração do Dynamic Media no Cloud Service](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
 * Você é um administrador de sistema do Experience Manager com privilégios de administrador.
 
 As Configurações gerais do Dynamic Media devem ser usadas por desenvolvedores e programadores experientes de sites. O Adobe Dynamic Media recomenda que os usuários que alteram essas configurações de publicação estejam familiarizados com o Dynamic Media no Adobe Experience Manager e com a tecnologia básica de geração de imagens.
@@ -68,24 +69,24 @@ Na criação da conta, o Adobe Dynamic Media fornece automaticamente os servidor
 
 * **[!UICONTROL Substituir imagens]**
 
-   O Adobe Dynamic Media não permite que dois arquivos tenham o mesmo nome. A ID do Adobe Dynamic Media de cada item (o nome da imagem menos a extensão do nome do arquivo) deve ser exclusiva. Por causa dessa regra, **[!UICONTROL Carregar no aplicativo]** tem uma substituição. O efeito exato dessa opção depende da opção &#39;Substituir imagens&#39; especificada que você escolheu. Essas opções especificam como as imagens de substituição são carregadas: se elas substituem as imagens originais ou se tornam imagens duplicadas. Imagens duplicadas são renomeadas com um `-1`. Por exemplo, `chair.tif` foi renomeado `chair-1.tif`. Essas opções afetam as imagens carregadas em uma pasta diferente da original ou as imagens com uma extensão de nome de arquivo diferente da original, como JPG, TIF ou PNG.
+  O Adobe Dynamic Media não permite que dois arquivos tenham o mesmo nome. A ID do Adobe Dynamic Media de cada item (o nome da imagem menos a extensão do nome do arquivo) deve ser exclusiva. Por causa dessa regra, **[!UICONTROL Carregar no aplicativo]** tem uma substituição. O efeito exato dessa opção depende da opção &#39;Substituir imagens&#39; especificada que você escolheu. Essas opções especificam como as imagens de substituição são carregadas: se elas substituem as imagens originais ou se tornam imagens duplicadas. Imagens duplicadas são renomeadas com um `-1`. Por exemplo, `chair.tif` foi renomeado `chair-1.tif`. Essas opções afetam as imagens carregadas em uma pasta diferente da original ou as imagens com uma extensão de nome de arquivo diferente da original, como JPG, TIF ou PNG.
 
-   >[!NOTE]
-   >
-   >Para manter a consistência com o Experience Manager, selecione a opção Substituir imagens **[!UICONTROL Substituir na pasta atual, mesmo nome base/extensão]**.
+  >[!NOTE]
+  >
+  >Para manter a consistência com o Experience Manager, selecione a opção Substituir imagens **[!UICONTROL Substituir na pasta atual, mesmo nome base/extensão]**.
 
-   | opção Substituir imagens | Descrição |
-   | --- | --- |
-   | **[!UICONTROL Substituir na pasta atual, mesmo nome base/extensão]** | *Padrão* somente para novas contas do Dynamic Media.<br>Essa opção é a regra mais rígida para substituição. Ela requer que você faça upload da imagem de substituição para a mesma pasta da original e que a imagem de substituição tenha a mesma extensão de nome de arquivo da original. Se esses requisitos não forem atendidos, uma duplicata será criada.<br>*Para manter a consistência com o Experience Manager, selecione esta opção*. |
-   | **[!UICONTROL Substituir na pasta atual, mesmo nome base independentemente da extensão]** | Requer que você faça upload da imagem de substituição para a mesma pasta da original, no entanto, a extensão do nome do arquivo pode ser diferente da original. Por exemplo, chair.tif substitui chair.jpg. |
-   | **[!UICONTROL Substituir em qualquer pasta, mesmo nome/extensão do ativo base]** | Exige que a imagem de substituição tenha a mesma extensão de nome de arquivo que a imagem original (por exemplo, chair.jpg deve substituir chair.jpg, não chair.tif). Entretanto, é possível fazer upload da imagem de substituição em uma pasta diferente da original. A imagem atualizada está na nova pasta; o arquivo não pode mais ser encontrado em seu local original. |
-   | **[!UICONTROL Substituir em qualquer pasta, mesmo nome de ativo base independentemente da extensão]** | Essa opção é a regra de substituição mais inclusiva. É possível fazer upload de uma imagem de substituição para uma pasta diferente da original, fazer upload de um arquivo com uma extensão de nome de arquivo diferente e substituir o arquivo original. Se o arquivo original estiver em uma pasta diferente, a imagem de substituição ficará localizada na nova pasta para a qual foi carregada. |
+  | opção Substituir imagens | Descrição |
+  | --- | --- |
+  | **[!UICONTROL Substituir na pasta atual, mesmo nome base/extensão]** | *Padrão* somente para novas contas do Dynamic Media.<br>Essa opção é a regra mais rígida para substituição. Ela requer que você faça upload da imagem de substituição para a mesma pasta da original e que a imagem de substituição tenha a mesma extensão de nome de arquivo da original. Se esses requisitos não forem atendidos, uma duplicata será criada.<br>*Para manter a consistência com o Experience Manager, selecione esta opção*. |
+  | **[!UICONTROL Substituir na pasta atual, mesmo nome base independentemente da extensão]** | Requer que você faça upload da imagem de substituição para a mesma pasta da original, no entanto, a extensão do nome do arquivo pode ser diferente da original. Por exemplo, chair.tif substitui chair.jpg. |
+  | **[!UICONTROL Substituir em qualquer pasta, mesmo nome/extensão do ativo base]** | Exige que a imagem de substituição tenha a mesma extensão de nome de arquivo que a imagem original (por exemplo, chair.jpg deve substituir chair.jpg, não chair.tif). Entretanto, é possível fazer upload da imagem de substituição em uma pasta diferente da original. A imagem atualizada está na nova pasta; o arquivo não pode mais ser encontrado em seu local original. |
+  | **[!UICONTROL Substituir em qualquer pasta, mesmo nome de ativo base independentemente da extensão]** | Essa opção é a regra de substituição mais inclusiva. É possível fazer upload de uma imagem de substituição para uma pasta diferente da original, fazer upload de um arquivo com uma extensão de nome de arquivo diferente e substituir o arquivo original. Se o arquivo original estiver em uma pasta diferente, a imagem de substituição ficará localizada na nova pasta para a qual foi carregada. |
 
 * **[!UICONTROL Preservar corte]**
 
-   Controla a preservação de qualquer definição de corte manual existente.
+  Controla a preservação de qualquer definição de corte manual existente.
 
-   Consulte também `preserveCrop` in [UploadPostJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html) e [TrabalhoReprocessAssets](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html), ambos no Guia de referência de visualizadores do Dynamic Media.
+  Consulte também `preserveCrop` in [UploadPostJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html) e [TrabalhoReprocessAssets](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html), ambos no Guia de referência de visualizadores do Dynamic Media.
 
 ## Opções de upload padrão {#default-upload-options}
 
@@ -116,7 +117,7 @@ Ao fazer upload de arquivos de imagem PostScript (EPS), você pode formatá-los 
 | --- | --- |
 | **[!UICONTROL Processando]** | Escolha Rasterizar para converter gráficos vetoriais no arquivo para o formato de bitmap. |
 | **[!UICONTROL Manter plano de fundo transparente em imagens renderizadas]** | Preserva a transparência de fundo do arquivo. |
-| **[!UICONTROL Resolução(pixel/polegada)]** | Determina a configuração de resolução. Essa configuração determina quantos pixels são exibidos por polegada no arquivo. |
+| **[!UICONTROL Resolução (pixel/polegada)]** | Determina a configuração de resolução. Essa configuração determina quantos pixels são exibidos por polegada no arquivo. |
 | **[!UICONTROL Espaço de cor]** | · **[!UICONTROL Detectar automaticamente]** - Mantém o espaço de cores do arquivo.<br>· **[!UICONTROL Forçar como RGB]** - Converte para o espaço de cores do RGB.<br>· **[!UICONTROL Forçar como CMYK]** - Converte para o espaço de cores CMYK.<br>· **[!UICONTROL Forçar como escala de cinza]** - Converte para o espaço de cores Tons de cinza. |
 
 ### Guia Photoshop {#photoshop-tab}
@@ -139,8 +140,8 @@ Ao fazer upload de arquivos de imagem PostScript (EPS), você pode formatá-los 
 | opção PDF | Descrição |
 | --- | --- |
 | **[!UICONTROL Processando]** | · **[!UICONTROL Nenhum]** - O processamento do PDF não está concluído.<br>· **[!UICONTROL Miniatura]** - Extrai cada página no arquivo PDF e converte-a em uma imagem em miniatura.<br> · **[!UICONTROL Rasterizar]** - Extrai as páginas no arquivo PDF e converte gráficos vetoriais em imagens bitmap. Para criar um eCatalog, escolha essa opção. |
-| **[!UICONTROL Extrair]** | · **[!UICONTROL Nenhum]** - Nenhuma palavra de pesquisa ou link é extraído do PDF.<br>· **[!UICONTROL Pesquisar palavras]** - Extrai as palavras de pesquisa do arquivo PDF para que o arquivo possa ser pesquisado por palavra-chave em um eCatalog Viewer.<br>· **[!UICONTROL Links]** - Extrai links dos arquivos PDF e os converte em Mapas de imagem que são usados em um eCatalog Viewer.<br>· **[!UICONTROL Pesquisar palavras e links]** - Extrai palavras de pesquisa e links para uso em um visualizador de eCatalog. |
-| **[!UICONTROL Resolução(pixel/polegada)]** | Determina a configuração de resolução. Essa configuração determina quantos pixels são exibidos por polegada no arquivo PDF. O padrão é 150. |
+| **[!UICONTROL Extract]** | · **[!UICONTROL Nenhum]** - Nenhuma palavra de pesquisa ou link é extraído do PDF.<br>· **[!UICONTROL Pesquisar palavras]** - Extrai as palavras de pesquisa do arquivo PDF para que o arquivo possa ser pesquisado por palavra-chave em um eCatalog Viewer.<br>· **[!UICONTROL Links]** - Extrai links dos arquivos PDF e os converte em Mapas de imagem que são usados em um eCatalog Viewer.<br>· **[!UICONTROL Pesquisar palavras e links]** - Extrai palavras de pesquisa e links para uso em um visualizador de eCatalog. |
+| **[!UICONTROL Resolução (pixel/polegada)]** | Determina a configuração de resolução. Essa configuração determina quantos pixels são exibidos por polegada no arquivo PDF. O padrão é 150. |
 | **[!UICONTROL Espaço de cor]** | · **[!UICONTROL Detectar automaticamente]** - Mantém o espaço de cores do arquivo PDF.<br>· **[!UICONTROL Forçar como RGB]** - Converte para o espaço de cores do RGB.<br>· **[!UICONTROL Forçar como CMYK]** - Converte para o espaço de cores CMYK.<br>· **[!UICONTROL Forçar como escala de cinza]** - Converte para o espaço de cores Tons de cinza. |
 
 ### Guia Illustrator {#illustrator-tab}
@@ -156,5 +157,5 @@ Ao fazer upload de arquivos de imagem do Illustrator (AI), você pode formatá-l
 | --- | --- |
 | **[!UICONTROL Processando]** | Escolha Rasterizar para converter gráficos vetoriais no arquivo para o formato de bitmap. |
 | **[!UICONTROL Manter plano de fundo transparente em imagens renderizadas]** | Preserva a transparência de fundo do arquivo. |
-| **[!UICONTROL Resolução(pixel/polegada)]** | Determina a configuração de resolução. Essa configuração determina quantos pixels são exibidos por polegada no arquivo. |
+| **[!UICONTROL Resolução (pixel/polegada)]** | Determina a configuração de resolução. Essa configuração determina quantos pixels são exibidos por polegada no arquivo. |
 | **[!UICONTROL Espaço de cor]** | · **[!UICONTROL Detectar automaticamente]** - Mantém o espaço de cores do arquivo.<br>· **[!UICONTROL Forçar como RGB]** - Converte para o espaço de cores do RGB.<br>· **[!UICONTROL Forçar como CMYK]** - Converte para o espaço de cores CMYK.<br>· **[!UICONTROL Forçar como escala de cinza]** - Converte para o espaço de cores Tons de cinza. |

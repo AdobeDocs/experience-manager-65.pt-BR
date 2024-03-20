@@ -7,10 +7,11 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 3%
+source-wordcount: '1333'
+ht-degree: 2%
 
 ---
 
@@ -129,7 +130,7 @@ Para personalizar o Gerenciamento de correspondência para permitir que seus usu
         <td>Baixar PDF simples (ou qualquer outro rótulo)<br /> <br /> O comando que aparece na interface da Lista de ativos</td>
         </tr>
         <tr>
-        <td>título</td>
+        <td>cargo</td>
         <td>String</td>
         <td>Baixar um PDF simples da letra selecionada (ou qualquer outro rótulo/texto alternativo)<br /> <br /> O título é o texto alternativo que o Gerenciamento de correspondência exibe quando o usuário passa o mouse sobre o comando personalizado.</td>
         </tr>

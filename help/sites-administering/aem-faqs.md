@@ -2,7 +2,8 @@
 title: Perguntas frequentes sobre AEM
 description: Use essas Perguntas frequentes para entender, configurar e solucionar problemas ou fluxos de trabalho comuns no AEM.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '936'
 ht-degree: 0%

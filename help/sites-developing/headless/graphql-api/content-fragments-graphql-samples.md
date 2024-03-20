@@ -3,10 +3,12 @@ title: Saiba como usar o GraphQL com AEM - Exemplos de conteúdo e consultas
 description: Saiba como usar o GraphQL com AEM para fornecer conteúdo em headless, explorando exemplos de conteúdo e consultas.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
-source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
+solution: Experience Manager, Experience Manager Sites
+role: Developer
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1586'
-ht-degree: 71%
+source-wordcount: '1588'
+ht-degree: 83%
 
 ---
 
@@ -21,7 +23,6 @@ Saiba como usar o GraphQL com AEM para fornecer conteúdo em headless, explorand
 >* [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
 >* [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
 >* [API GraphQL do AEM para uso com Fragmentos de conteúdo](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
-
 
 Para começar a usar consultas do GraphQL e saber como elas funcionam com Fragmentos de conteúdo AEM, seria de ajuda ver alguns exemplos práticos.
 
@@ -38,7 +39,7 @@ Veja esses exemplos de consultas para obter ilustrações de como criar consulta
 
 >[!NOTE]
 >
->Dependendo da sua instância, você pode acessar diretamente a variável [Interface GraphiQL incluída com a API AEM GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface) para enviar e testar consultas.
+>Dependendo do caso, você pode acessar diretamente a [interface GraphiQL incluída na API GraphQL do AEM](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface) para enviar e testar consultas.
 >
 >Por exemplo: `http://localhost:4502/content/graphiql.html`
 
@@ -152,7 +153,7 @@ Para recuperar todas as informações sobre todas as cidades, você pode usar a 
 }
 ```
 
-Quando executado, o sistema expande automaticamente a consulta para incluir todos os campos:
+Quando executada, o sistema expande automaticamente a consulta para incluir todos os campos:
 
 ```graphql
 {
@@ -356,14 +357,14 @@ Se você criar uma variação chamada &quot;Centro de Berlim&quot; (`berlin_cent
 }
 ```
 
-### Exemplo de consulta - Nomes de todas as cidades Marcado como Quebras de cidade {#sample-names-all-cities-tagged-city-breaks}
+### Exemplo de consulta - Nomes de todas as cidades marcadas como Quebras de cidade {#sample-names-all-cities-tagged-city-breaks}
 
 Se você:
 
-* criar várias tags, chamadas `Tourism` : `Business`, `City Break`, `Holiday`
-* e atribuir essas tags à variação Principal de vários `City` instâncias
+* criar várias tags chamadas `Tourism` : `Business`, `City Break`, `Holiday`
+* e atribuir essas tags à variação principal de vários `City` instâncias
 
-Em seguida, você pode usar uma consulta para retornar detalhes do `name` e `tags`de todas as entradas marcadas como Quebras de cidade na variável `city`esquema.
+É possível usar uma consulta para retornar detalhes de `name` e `tags` de todas as entradas marcadas como Cidades para passeio no esquema de `city`.
 
 **Exemplo de consulta**
 
@@ -1149,10 +1150,10 @@ query {
 Esses exemplos de consultas são baseadas no projeto WKND. Ele tem o seguinte:
 
 * Modelos de fragmentos de conteúdo disponíveis em:
-   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+  `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
 * Fragmentos de conteúdo (e outro conteúdo) disponíveis em:
-   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
 >[!NOTE]
 >
@@ -1293,7 +1294,7 @@ Este exemplo de consulta interroga:
 }
 ```
 
-### Exemplo de consulta para um Fragmento de conteúdo aninhado - tipo de modelo único {#sample-wknd-nested-fragment-single-model}
+### Exemplo de consulta para um Fragmento de conteúdo aninhado - tipo de modelo único{#sample-wknd-nested-fragment-single-model}
 
 Esta consulta interroga:
 
@@ -1321,18 +1322,18 @@ Esta consulta interroga:
 }
 ```
 
-### Exemplo de consulta para um Fragmento de conteúdo aninhado - tipo de modelo múltiplo {#sample-wknd-nested-fragment-multiple-model}
+### Exemplo de consulta para um Fragmento de conteúdo aninhado - tipo de modelo múltiplo{#sample-wknd-nested-fragment-multiple-model}
 
 #### Tipo de modelo referenciado único
 
 Esta consulta interroga:
 
 * por vários Fragmentos de conteúdo do tipo `bookmark`
-   * com Referências de fragmentos a outros fragmentos do tipo de modelo específico `Article`
+   * com referências de fragmentos a outros fragmentos dos tipos de modelo específicos `Article`
 
 >[!NOTE]
 >
->O campo `fragments` tem o tipo de dados `fragment-reference`, com o modelo `Article` selecionado. Entrega da consulta `fragments` como uma matriz de `[Article]`.
+>O campo `fragments` tem o tipo de dados `fragment-reference`, com o modelo `Article` selecionado. A consulta fornece `fragments` como uma matriz de `[Article]`.
 
 ```graphql
 {
@@ -1356,7 +1357,7 @@ Esta consulta interroga:
 
 >[!NOTE]
 >
->O campo `fragments` tem o tipo de dados `fragment-reference`, com os modelos `Article` e `Adventure` selecionados. Entrega da consulta `fragments` como uma matriz de `[AllFragmentModels]`, que é desreferenciado com o tipo de união.
+>O campo `fragments` tem o tipo de dados `fragment-reference`, com os modelos `Article` e `Adventure` selecionados. A consulta entrega `fragments` como uma matriz de `[AllFragmentModels]`, que é desreferenciada com o tipo de união.
 
 ```graphql
 {
@@ -1377,7 +1378,7 @@ Esta consulta interroga:
 }
 ```
 
-### Exemplo de consulta para um Fragmento de conteúdo de um modelo específico com Referências de conteúdo {#sample-wknd-fragment-specific-model-content-reference}
+### Exemplo de consulta para um Fragmento de conteúdo de um modelo específico com Referências de conteúdo{#sample-wknd-fragment-specific-model-content-reference}
 
 Há duas opções desta consulta:
 
@@ -1427,7 +1428,7 @@ A consulta a seguir retorna todas as referências de conteúdo usando `_referenc
 
 #### Exemplo de consulta para vários Fragmentos de conteúdo com anexos {#sample-wknd-multiple-fragments-attachments}
 
-A consulta a seguir retorna todas as `attachments` - um campo específico (subgrupo) de tipo `content-reference`:
+A consulta a seguir retorna todos os `attachments` - um campo específico (subgrupo) do tipo `content-reference`:
 
 >[!NOTE]
 >
@@ -1561,11 +1562,11 @@ Esta consulta interroga:
 }
 ```
 
-### Exemplo de consulta para vários Fragmentos de conteúdo e suas Variações de um determinado modelo {#sample-wknd-multiple-fragment-variations-given-model}
+### Exemplo de consulta para vários fragmentos de conteúdo e suas variações em um determinado modelo {#sample-wknd-multiple-fragment-variations-given-model}
 
 Esta consulta interroga:
 
-* por Fragmentos de conteúdo do tipo `article` e todas as variações
+* fragmentos de conteúdo do tipo `article` e todas as variações
 
 **Exemplo de consulta**
 
@@ -1592,7 +1593,7 @@ query {
 
 Esta consulta interroga:
 
-* por Fragmentos de conteúdo do tipo `article` com uma ou mais variações com a tag `WKND : Activity / Hiking`
+* fragmentos de conteúdo do tipo `article` com uma ou mais variações que possuem a tag `WKND : Activity / Hiking`
 
 **Exemplo de consulta**
 
@@ -1666,7 +1667,7 @@ Os campos básicos que definem a empresa são:
 
 | Nome do campo | Tipo de dados | Referência |
 |--- |--- |--- |
-| Nome da empresa | Texto em linha única |  |
+| Nome da empresa | Texto em linha única | |
 | CEO | Referência do fragmento (único) | [Pessoa](#model-person) |
 | Empregados | Referência do fragmento (vários campos) | [Pessoa](#model-person) |
 
@@ -1676,8 +1677,8 @@ Os campos que definem uma pessoa, que também pode ser um funcionário:
 
 | Nome do campo | Tipo de dados | Referência |
 |--- |--- |--- |
-| Nome | Texto em linha única |  |
-| Nome | Texto em linha única |  |
+| Nome | Texto em linha única | |
+| Nome | Texto em linha única | |
 | Prêmios | Referência do fragmento (vários campos) | [Prêmio](#model-award) |
 
 #### Prêmio {#model-award}
@@ -1686,8 +1687,8 @@ Os campos que definem um prêmio são:
 
 | Nome do campo | Tipo de dados | Referência |
 |--- |--- |--- |
-| Atalho/ID | Texto em linha única |  |
-| Título | Texto em linha única |  |
+| Atalho/ID | Texto em linha única | |
+| Título | Texto em linha única | |
 
 #### Cidade {#model-city}
 
@@ -1695,10 +1696,10 @@ Os campos para definir uma cidade são:
 
 | Nome do campo | Tipo de dados | Referência |
 |--- |--- |--- |
-| Nome | Texto em linha única |  |
-| País | Texto em linha única |  |
-| População | Número |  |
-| Categorias | Tags |  |
+| Nome | Texto em linha única | |
+| País | Texto em linha única | |
+| População | Número | |
+| Categorias | Tags | |
 
 ### Exemplos de Fragmentos de conteúdo {#sample-content-fragments}
 
@@ -1716,7 +1717,7 @@ Os fragmentos a seguir são usados para o modelo apropriado.
 
 | Nome | Nome | Prêmios |
 |--- |--- |--- |
-| Lincoln |  Abe |  |
+| Lincoln |  Abe | |
 | Smith | Adam |   |
 | Slade |  Cutter |  Gameblitz<br>Gamestar |
 | Marsh |  Duke |   |   |

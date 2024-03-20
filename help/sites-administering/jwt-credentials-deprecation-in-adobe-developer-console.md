@@ -1,13 +1,14 @@
 ---
 title: Descontinuação de credenciais JWT no console do Adobe Developer
 description: Saiba mais sobre o impacto da descontinuação de credenciais JWT no Console do Adobe Developer no AEM
-source-git-commit: 72974d27fecbd9c242f66e203b02463c22b93108
+exl-id: f19a92de-ba6a-4f6d-9e12-60ad1bad2e74
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
 
 ---
-
 
 # Descontinuação de credenciais JWT no console do Adobe Developer {#jwt-credentials-deprecation-in-adobe-developer-console}
 

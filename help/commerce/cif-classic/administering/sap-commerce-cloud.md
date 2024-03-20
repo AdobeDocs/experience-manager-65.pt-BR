@@ -5,9 +5,10 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1574'
 ht-degree: 1%
 
 ---
@@ -38,7 +39,7 @@ Após a instalação, é possível configurar sua instância:
 1. **Abrir editor** para o **Exemplo de configuração Solr para clothescatalog**.
 
 1. Em **Versões do catálogo** use **Adicionar versão do catálogo** para adicionar `outdoors-Staged` e `outdoors-Online` à lista.
-1. **Salve a configuração.**
+1. **Salvar** a configuração.
 1. Abertura **Tipos de item SOLR** para adicionar **Classificações SOLR** para `ClothesVariantProduct`:
 
    * relevância (&quot;Relevância&quot;, pontuação)
@@ -83,7 +84,7 @@ Após a instalação, é possível configurar sua instância:
 
    ![chlimage_1-39](/help/sites-administering/assets/chlimage_1-39a.png)
 
-1. **Salve as alterações.**
+1. **Salvar** as alterações.
 1. Novamente de **Tipos de item SOLR**, ajuste a `price` faceta de acordo com as seguintes capturas de tela. Assim como com `category`, clique duas vezes em `price` para abrir o **Propriedade indexada** guia:
 
    ![chlimage_1-40](/help/sites-administering/assets/chlimage_1-40a.png)
@@ -92,7 +93,7 @@ Após a instalação, é possível configurar sua instância:
 
    ![chlimage_1-41](/help/sites-administering/assets/chlimage_1-41a.png)
 
-1. **Salve as alterações.**
+1. **Salvar** as alterações.
 1. Abertura **Sistema**, **Pesquisa de facetas**, depois **Assistente de operação do indexador**. Inicie um cronjob:
 
    * **Operação do indexador**: `full`
@@ -374,7 +375,7 @@ Para remover um ou mais produtos do catálogo:
 
    * Abrir a página [http://localhost:9001/productcockpit](http://localhost:9001/productcockpit)
    * Selecionar o catálogo `Outdoors Staged`
-   * Pesquisar `Cajamara`
+   * Pesquisar por `Cajamara`
    * Selecione este produto e altere o status de aprovação para `unapproved`
 
 1. Execute outra atualização incremental (consulte [Importação do catálogo](#catalog-import)). O log lista o produto excluído.

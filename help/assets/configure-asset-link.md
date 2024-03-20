@@ -5,16 +5,17 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
 exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '3148'
-ht-degree: 1%
+source-wordcount: '3060'
+ht-degree: 0%
 
 ---
 
 # Configurar Experience Manager Assets para Adobe Asset Link {#adobe-asset-link}
 
-[Adobe Asset Link (AAL)](https://www.adobe.com/br/creativecloud/business/enterprise/adobe-asset-link.html) O simplifica a colaboração entre profissionais de criação e marketing no processo de criação de conteúdo. Ele conecta o Adobe Experience Manager Assets aos aplicativos de desktop Creative Cloud Adobe InDesign, Adobe Photoshop e Adobe Illustrator. O painel Adobe Asset Link permite que os criadores acessem e modifiquem o conteúdo armazenado no AEM Assets sem sair dos aplicativos de criação mais conhecidos.
+[Adobe Asset Link (AAL)](https://www.adobe.com/br/creativecloud/business/enterprise/adobe-asset-link.html) O simplifica a colaboração entre profissionais de criação e marketing no processo de criação de conteúdo. Ele conecta o Adobe Experience Manager Assets com aplicativos de desktop Creative Cloud Adobe InDesign, Adobe Photoshop e Adobe Illustrator. O painel Adobe Asset Link permite que os criadores acessem e modifiquem o conteúdo armazenado no AEM Assets sem sair dos aplicativos de criação mais conhecidos.
 
 Para configurar o Experience Manager Assets para ser usado com o Asset Link, implemente as seguintes tarefas. Use a conta do administrador de Experience Manager para fazer a configuração:
 
@@ -48,7 +49,7 @@ O Adobe recomenda a instalação [adobe-asset-link-config](https://experience.ad
 
 1. Para abrir o Gerenciador de pacotes, na interface da Web do Experience Manager, acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Implantação]** > **[!UICONTROL Compartilhamento de pacotes]**. Instalar `adobe-asset-link-config` pacote.
 
-1. Acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**. Localizar **[!UICONTROL Provedor de IMS Adobe Granite OAuth]** e clique em para editá-la.
+1. Access **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**. Localizar **[!UICONTROL Provedor de IMS Adobe Granite OAuth]** e clique em para editá-la.
 
    Defina as propriedades a seguir e salve as alterações.
 

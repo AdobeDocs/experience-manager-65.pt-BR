@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 exl-id: d2ebfca5-19f9-4fa5-b142-b978f46a912f
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 3%
+source-wordcount: '1635'
+ht-degree: 2%
 
 ---
 
@@ -65,7 +66,6 @@ O componente Dynamic Media é inteligente — dependendo se você adiciona uma i
 >* Você tem [Dynamic Media habilitado](/help/assets/config-dynamic.md). O Dynamic Media está desativado por padrão.
 >* A imagem tem um arquivo TIFF de pirâmide. As imagens importadas antes da ativação do Dynamic Media não têm um arquivo TIFF em pirâmide.
 >
-
 
 #### Ao trabalhar com imagens {#when-working-with-images}
 

@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1892'
-ht-degree: 17%
+source-wordcount: '1895'
+ht-degree: 16%
 
 ---
 
@@ -284,7 +285,7 @@ Para mover ou renomear uma página:
 
      Isso pode ser selecionado/desmarcado para cada página de referência individual.
 
-   * **Publicar novamente**
+   * **Republicar**
 
      Republicar a página de referência; novamente, isso pode ser selecionado para cada página individual.
 

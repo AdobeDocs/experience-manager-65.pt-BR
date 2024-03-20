@@ -6,10 +6,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: b0786b52-879e-4a24-9cc9-bd9dcb2473cc
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 1%
+source-wordcount: '1220'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +38,7 @@ Para habilitar o SSL, o WebSphere precisa acessar uma conta de usuário no regis
 
    >[!NOTE]
    >
-   >(Linux e Solaris) Para que o registro de segurança do SO local do WebSphere Application Server funcione, um arquivo de senha de sombra deve existir. O arquivo de senha sombra geralmente é nomeado **/etc/shadow** e é baseado no arquivo /etc/passwd. Se a sombra senha arquivo não existir, ocorrerá um erro após ativar a segurança global e configurar o registro de usuário como sistema operacional local.
+   >(Linux e Solaris) Para que o registro de segurança do sistema operacional local do WebSphere Application Server funcione, um arquivo de senha sombra deve existir. O arquivo de senha sombra geralmente é nomeado **/etc/shadow** e é baseado no arquivo /etc/passwd. Se a sombra senha arquivo não existir, ocorrerá um erro após ativar a segurança global e configurar o registro de usuário como sistema operacional local.
 
 1. Abra o arquivo de grupo do diretório /etc em um editor de texto.
 1. Adicione a usuário criada na etapa 2 à `root` grupo.

@@ -2,7 +2,8 @@
 title: Criação de modelos de fragmento de conteúdo - Guia de início rápido do Headless
 description: Defina a estrutura do conteúdo que você cria e veicula usando os recursos headless do Adobe Experience Manager (AEM) por meio dos modelos de fragmento de conteúdo.
 exl-id: 653e35c9-7b6a-49ae-b55d-af2ec40e257d
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 51%

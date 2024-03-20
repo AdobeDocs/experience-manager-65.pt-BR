@@ -3,13 +3,14 @@ title: "[!DNL Assets] API HTTP."
 description: Criar, ler, atualizar, excluir, gerenciar ativos digitais usando a API HTTP no [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Developer
-feature: APIs,Assets HTTP API,Developer Tools
+feature: Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1743'
-ht-degree: 2%
+source-wordcount: '1775'
+ht-degree: 1%
 
 ---
 
@@ -106,7 +107,7 @@ A variável [!DNL Assets] A API HTTP inclui os seguintes recursos:
 
 **Pré-requisitos**
 
-* Acesso `https://[aem_server]:[port]/system/console/configMgr`.
+* Access `https://[aem_server]:[port]/system/console/configMgr`.
 * Navegue até **[!UICONTROL Filtro CSRF do Adobe Granite]**.
 * Verifique se a propriedade **[!UICONTROL Métodos de filtro]** inclui: `POST`, `PUT`, `DELETE`.
 
@@ -124,7 +125,7 @@ Recupera uma representação Sirene de uma pasta existente e de suas entidades f
 
 **Resposta**: a classe da entidade retornada é um ativo ou uma pasta. As propriedades das entidades contidas são um subconjunto do conjunto completo de propriedades de cada entidade. Para obter uma representação completa da entidade, os clientes devem recuperar o conteúdo do URL apontado pelo link com um `rel` de `self`.
 
-## Crie uma pasta  {#create-a-folder}
+## Criar uma pasta {#create-a-folder}
 
 Cria um novo `sling`: `OrderedFolder` no caminho fornecido. Se um `*` é fornecido em vez de um nome de nó, o servlet usa o nome do parâmetro como nome do nó. Aceita como dados de solicitação é uma representação Sirene da nova pasta ou um conjunto de pares de nome-valor, codificados como `application/www-form-urlencoded` ou `multipart`/ `form`- `data`, útil para criar uma pasta diretamente de um formulário HTML. Além disso, as propriedades da pasta podem ser especificadas como parâmetros de consulta de URL.
 
@@ -132,7 +133,7 @@ Uma chamada de API falha com um `500` código de resposta se o nó principal do 
 
 **Parâmetros**: `name` é o nome da pasta.
 
-**Solicitar**
+**Solicitação**
 
 * `POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"jcr:title":"My Folder"}}'`
 * `POST /api/assets/* -F"name=myfolder" -F"jcr:title=My Folder"`
@@ -150,7 +151,7 @@ Coloque o arquivo fornecido no caminho fornecido para criar um ativo no reposit�
 
 **Parâmetros**: Os parâmetros são `name` para o nome do ativo e `file` para a referência do arquivo.
 
-**Solicitar**
+**Solicitação**
 
 * `POST /api/assets/myFolder/myAsset.png -H"Content-Type: image/png" --data-binary "@myPicture.png"`
 * `POST /api/assets/myFolder/* -F"name=myAsset.png" -F"file=@myPicture.png"`
@@ -215,7 +216,7 @@ Criar uma representação de ativo para um ativo. Se o nome do parâmetro de sol
 
 **Parâmetros**: Os parâmetros são `name` para o nome da representação e `file` como uma referência de arquivo.
 
-**Solicitar**
+**Solicitação**
 
 * `POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"`
 * `POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"`
@@ -303,7 +304,7 @@ curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.p
 
 Exclui um recurso (-tree) no caminho fornecido.
 
-**Solicitar**
+**Solicitação**
 
 * `DELETE /api/assets/myFolder`
 * `DELETE /api/assets/myFolder/myAsset.png`

@@ -5,10 +5,11 @@ contentOwner: AG
 role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2244'
-ht-degree: 24%
+source-wordcount: '2227'
+ht-degree: 20%
 
 ---
 
@@ -24,12 +25,12 @@ Antes de começar a marcar seus ativos usando os Serviços de conteúdo intelige
 
 Antes de usar o Serviço de conteúdo inteligente, verifique o seguinte:
 
-* [Integração com o Console do desenvolvedor](#integrate-adobe-io).
+* [Integração com o console do Adobe Developer](#integrate-adobe-io).
 * [Treinar o serviço de conteúdo inteligente](#training-the-smart-content-service).
 
 * Instalar o mais recente [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=pt-BR).
 
-## Integração com o Console do desenvolvedor {#integrate-adobe-io}
+## Integração com o console do Adobe Developer {#integrate-adobe-io}
 
 Ao integrar com o Console do Adobe Developer, a variável [!DNL Experience Manager] O servidor do autentica suas credenciais de serviço no gateway do Console do Adobe Developer antes de encaminhar sua solicitação ao Serviço de conteúdo inteligente. Para integrar o, é necessário ter uma conta do Adobe ID com privilégios de administrador para a organização e uma licença do Serviço de conteúdo inteligente adquirida e ativada para a organização.
 
@@ -149,7 +150,7 @@ Para configurar a integração, use os valores de [!UICONTROL ID DA CONTA TÉCNI
    | [!UICONTROL Chave da API] | [!UICONTROL ID DO CLIENTE] |
    | [!UICONTROL ID da conta técnica] | [!UICONTROL ID DA CONTA TÉCNICA] |
    | [!UICONTROL ID da organização] | [!UICONTROL ID DA ORGANIZAÇÃO] |
-   | [!UICONTROL Client Secret] | [!UICONTROL SEGREDO DO CLIENTE] |
+   | [!UICONTROL Segredo do cliente] | [!UICONTROL SEGREDO DO CLIENTE] |
 
 ### Validar a configuração {#validate-the-configuration}
 
@@ -177,7 +178,7 @@ Os resultados da validação são exibidos no mesmo diálogo.
 
    ![Etapa para adicionar ativo de tag inteligente após a etapa de miniatura do processo no fluxo de trabalho Ativo de atualização DAM](assets/smart-tag-in-dam-update-asset-workflow.png)
 
-   *Figura: etapa para adicionar ativo de tag inteligente após a etapa de miniatura do processo no fluxo de trabalho Ativo de atualização DAM*
+   *Figura: etapa para adicionar ativo de tag inteligente após a etapa de miniatura do processo no [!UICONTROL Ativo de atualização DAM] fluxo de trabalho.*
 
 1. Abra a etapa no modo de edição. Em **[!UICONTROL Configurações avançadas]**, verifique se a opção **[!UICONTROL Avanço do manipulador]** está selecionada.
 

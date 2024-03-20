@@ -7,10 +7,11 @@ topic-tags: development-tools
 content-type: reference
 docset: aem65
 exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2119'
-ht-degree: 2%
+source-wordcount: '2118'
+ht-degree: 1%
 
 ---
 
@@ -85,7 +86,7 @@ O CRXDE Lite oferece a seguinte funcionalidade:
   </tr>
   <tr>
    <td>Guia Console<br /> </td>
-   <td><p><strong>Logs do servidor</strong>:</p> <p>Exibe mensagens de logs. Você pode configurar o nível de log, limpar o console, fixar na posição de rolagem selecionada e ativar ou desativar a exibição de mensagens.<br /> </p> <p><strong>Controle da versão</strong>:</p> <p>Exibe mensagens de controle de versão.<br /> </p> </td>
+   <td><p><strong>Logs do servidor</strong>:</p> <p>Exibe mensagens de logs. Você pode configurar o nível de log, limpar o console, fixar na posição de rolagem selecionada e ativar ou desativar a exibição de mensagens.<br /> </p> <p><strong>Controle de versão</strong>:</p> <p>Exibe mensagens de controle de versão.<br /> </p> </td>
   </tr>
   <tr>
    <td>Guia Criar informações<br /> </td>
@@ -97,7 +98,7 @@ O CRXDE Lite oferece a seguinte funcionalidade:
   </tr>
   <tr>
    <td>Salvar Tudo</td>
-   <td><p><strong>Salvar Tudo</strong>:<br /> </p> <p>Salva todas as alterações feitas. Até que você clique em Salvar, as alterações serão temporárias e serão perdidas quando você sair do console.</p> <p><strong>Reverter</strong>:</p> <p>Descarta todas as alterações feitas no nó selecionado desde a última ação de salvamento e, em seguida, recarrega o estado do repositório para o nó selecionado.</p> <p><strong>Reverter tudo</strong>:</p> <p>Descarta todas as alterações feitas em todo o repositório desde a última ação de salvamento, e recarrega o estado do repositório.</p> </td>
+   <td><p><strong>Salvar tudo</strong>:<br /> </p> <p>Salva todas as alterações feitas. Até que você clique em Salvar, as alterações serão temporárias e serão perdidas quando você sair do console.</p> <p><strong>Reverter</strong>:</p> <p>Descarta todas as alterações feitas no nó selecionado desde a última ação de salvamento e, em seguida, recarrega o estado do repositório para o nó selecionado.</p> <p><strong>Reverter tudo</strong>:</p> <p>Descarta todas as alterações feitas em todo o repositório desde a última ação de salvamento, e recarrega o estado do repositório.</p> </td>
   </tr>
   <tr>
    <td>Criar ...<br /> </td>
@@ -120,7 +121,7 @@ O CRXDE Lite oferece a seguinte funcionalidade:
    <td>Move o nó selecionado para o nó definido na caixa de diálogo.</td>
   </tr>
   <tr>
-   <td>Renomear ...<br /> </td>
+   <td>Renomear...<br /> </td>
    <td>Renomeia o nó selecionado.<br /> </td>
   </tr>
   <tr>
@@ -158,7 +159,7 @@ Para criar um template com CRXDE Lite:
 
 1. Insira o **Rótulo**, **Título**, **Descrição**, **Tipo de recurso**, e **Classificação** do modelo. Clique em **Avançar**.
 
-1. Esta etapa é opcional: defina a **Caminhos permitidos**. Clique em **Avançar**
+1. Esta etapa é opcional: defina a **Caminhos permitidos**. Clique em **Próxima**
 
 1. Esta etapa é opcional: defina a **Pais permitidos**. Clique em **Avançar**.
 

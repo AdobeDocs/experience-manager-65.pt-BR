@@ -3,13 +3,14 @@ title: Como conectar e enviar dados do formulário adaptável para o Microsoft&r
 description: Um guia passo a passo para conectar e enviar dados do Formulário adaptável para o Microsoft&reg; Power Automate.
 keywords: Forms Microsoft Power Automate adaptável, enviar dados do Forms adaptável para o Microsoft Power Automate
 feature: Adaptive Forms, Foundation Components
-source-git-commit: 27eb8a53a198efd2cb059a2884b3b5ed60730806
+exl-id: 3fd26ddb-d247-462f-a0f6-8af6166516c1
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 2%
 
 ---
-
 
 # Conectar e enviar dados do formulário adaptável para o Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
 
@@ -192,4 +193,3 @@ Depois que você [Conecte sua instância de autor do AEM Forms com o Microsoft®
 * [Criação de um Formulário adaptável](create-an-adaptive-form-core-components.md)
 * [Configurar uma ação de envio](configuring-submit-actions.md)
 * [Conector Adobe Experience Manager para Microsoft® Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
-

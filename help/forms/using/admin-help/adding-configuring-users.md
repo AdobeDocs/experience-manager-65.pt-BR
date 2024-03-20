@@ -4,9 +4,10 @@ description: As configurações de Gerenciamento de usuários no console de admi
 contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1733'
+source-wordcount: '1727'
 ht-degree: 0%
 
 ---
@@ -36,7 +37,7 @@ Ao criar usuários, você pode adicioná-los a grupos e atribuir funções a ele
    >
    >Se encontrar algum problema de logon com o usuário, consulte [O usuário do AEM Forms no JEE não consegue fazer logon no AEM Forms no OSGi](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html).
 
-## Configurações de usuário {#user-settings}
+## Configurações do usuário {#user-settings}
 
 Especifique as configurações a seguir ao criar ou editar um usuário.
 

@@ -7,9 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '18956'
+source-wordcount: '18860'
 ht-degree: 0%
 
 ---
@@ -383,7 +384,7 @@ Crie um documento PDF usando a API de saída (serviço Web):
 
 Você pode usar o Serviço de saída para criar um documento PDF/A. Como PDF/A é um formato de arquivamento para preservação de longo prazo do conteúdo do documento, todas as fontes são incorporadas e o arquivo é descompactado. Como resultado, um documento PDF/A geralmente é maior do que um documento PDF padrão. Além disso, um documento PDF/A não contém conteúdo de áudio e vídeo. Como outras tarefas do Serviço de saída, você fornece um design de formulário e dados para mesclar com um design de formulário para criar um documento PDF/A.
 
-A especificação PDF/A-1 consiste em dois níveis de conformidade, a saber, a e b. A principal diferença entre os dois está relacionada ao suporte de estrutura lógica (acessibilidade), que não é necessário para o nível de conformidade b. Independentemente do nível de conformidade, o PDF/A-1 determina que todas as fontes sejam incorporadas no documento PDF/A gerado.
+A especificação PDF/A-1 consiste em dois níveis de conformidade, a saber, a e b. A principal diferença entre os dois é em relação ao suporte de estrutura lógica (acessibilidade), que não é necessário para o nível de conformidade b. Independentemente do nível de conformidade, o PDF/A-1 determina que todas as fontes sejam incorporadas no documento PDF/A gerado.
 
 Embora PDF/A seja o padrão para o arquivamento de documentos de PDF, não é obrigatório que PDF/A seja usado para arquivamento se um documento de PDF padrão atender às necessidades da sua empresa. O objetivo do padrão PDF/A é estabelecer um arquivo PDF que possa ser armazenado por um longo período e atender aos requisitos de preservação de documentos. Por exemplo, um URL não pode ser incorporado em um PDF/A porque, com o tempo, o URL pode se tornar inválido.
 
@@ -1433,15 +1434,15 @@ Para recuperar um documento para impressão, use o `generatePrintedOutput` méto
    <td><p>Cria um fluxo de saída xdc padrão ou personalizado dpl203.xdc.</p></td>
   </tr>
   <tr>
-   <td><p>DPL 300 DPI </p></td>
+   <td><p>DPL300DPI </p></td>
    <td><p>Cria um fluxo de saída DPL 300 DPI.</p></td>
   </tr>
   <tr>
-   <td><p>DPL 406 DPI </p></td>
+   <td><p>DPL406DPI </p></td>
    <td><p>Cria um fluxo de saída DPL 400 DPI.</p></td>
   </tr>
   <tr>
-   <td><p>DPL 600 DPI </p></td>
+   <td><p>DPL600DPI </p></td>
    <td><p>Cria um fluxo de saída DPL 600 DPI.</p></td>
   </tr>
   <tr>
@@ -1457,11 +1458,11 @@ Para recuperar um documento para impressão, use o `generatePrintedOutput` méto
    <td><p>Cria um fluxo de saída IPL personalizado.</p></td>
   </tr>
   <tr>
-   <td><p>IPL 300 DPI </p></td>
+   <td><p>IPL300DPI </p></td>
    <td><p>Cria um fluxo de saída IPL 300 DPI.</p></td>
   </tr>
   <tr>
-   <td><p>IPL 400 DPI </p></td>
+   <td><p>IPL400DPI </p></td>
    <td><p>Cria um fluxo de saída IPL 400 DPI.</p></td>
   </tr>
   <tr>
@@ -1477,11 +1478,11 @@ Para recuperar um documento para impressão, use o `generatePrintedOutput` méto
    <td><p>Cria um fluxo de saída TPCL personalizado.</p></td>
   </tr>
   <tr>
-   <td><p>TPCL 305 DPI </p></td>
+   <td><p>TPCL305DPI </p></td>
    <td><p>Cria um fluxo de saída TPCL 305 DPI.</p></td>
   </tr>
   <tr>
-   <td><p>TPCL 600 DPI </p></td>
+   <td><p>TPCL600DPI </p></td>
    <td><p>Cria um fluxo de saída TPCL 600 DPI.</p></td>
   </tr>
   <tr>
@@ -1489,7 +1490,7 @@ Para recuperar um documento para impressão, use o `generatePrintedOutput` méto
    <td><p>Cria um fluxo de saída ZPL 203 DPI.</p></td>
   </tr>
   <tr>
-   <td><p>ZPL 300 DPI </p></td>
+   <td><p>ZPL300DPI </p></td>
    <td><p>Cria um fluxo de saída ZPL 300 DPI.</p></td>
   </tr>
  </tbody>

@@ -5,10 +5,11 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 1%
+source-wordcount: '631'
+ht-degree: 0%
 
 ---
 
@@ -54,7 +55,7 @@ Execute essas etapas para ativar o Assets Insights por meio do DTM.
    >* Dependendo de onde o Rastreador de páginas do Assets Insights estiver hospedado (por exemplo, Experience Manager, CDN e assim por diante), a origem da origem do script pode exigir alterações.
    >* Para o Rastreador de páginas hospedado no Experience Manager, a origem deve apontar para uma instância de publicação usando o nome de host da instância do Dispatcher.
 
-1. Acesso `https://dtm.adobe.com`. Clique em **[!UICONTROL Visão geral]** na propriedade da web e clique em **[!UICONTROL Adicionar ferramenta]** ou abra uma Ferramenta Adobe Analytics existente. Ao criar a ferramenta, é possível definir **[!UICONTROL Método de configuração]** para **[!UICONTROL Automático]**.
+1. Access `https://dtm.adobe.com`. Clique em **[!UICONTROL Visão geral]** na propriedade da web e clique em **[!UICONTROL Adicionar ferramenta]** ou abra uma Ferramenta Adobe Analytics existente. Ao criar a ferramenta, é possível definir **[!UICONTROL Método de configuração]** para **[!UICONTROL Automático]**.
 
    ![Adicionar a ferramenta Adobe Analytics](assets/Add-Adobe-Analytics-Tool.png)
 

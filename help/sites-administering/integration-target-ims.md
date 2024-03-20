@@ -2,10 +2,11 @@
 title: Integração com o Adobe Target usando IMS
 description: Saiba mais sobre a integração do AEM com o Adobe Target usando IMS.
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1556'
-ht-degree: 42%
+source-wordcount: '1533'
+ht-degree: 39%
 
 ---
 
@@ -89,7 +90,7 @@ Para criar um projeto com o Adobe Target que o AEM possa usar, abra o Adobe Deve
 
 1. Selecione **Adicionar ao projeto** e, em seguida, **API**:
 
-   ![Console do desenvolvedor da Adobe](assets/integration-target-io-10.png)
+   ![Console do Adobe Developer](assets/integration-target-io-10.png)
 
 1. Selecione **Adobe Target** e, em seguida, **Próximo**:
 
@@ -259,7 +260,7 @@ A configuração agora pode ser referenciada para um Cloud Service usar a API do
 
 1. Clique em **Conectar ao Target** para inicializar a conexão com o Adobe Target.
 
-   Se a conexão for bem-sucedida, a mensagem **Conexão bem-sucedida** será exibida.
+   Se a conexão for bem-sucedida, a mensagem **Conexão bem-sucedida** é exibido.
 
 1. Selecionar **OK** na mensagem, seguido por **OK** na caixa de diálogo para que você possa confirmar a configuração.
 

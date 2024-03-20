@@ -8,7 +8,8 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3547'
 ht-degree: 0%
@@ -210,7 +211,7 @@ Se você já tiver o recurso Smart Imaging habilitado com o WebP, mas quiser out
 
 **Para criar um caso de suporte para habilitar a Imagem inteligente na sua conta:**
 
-1. [Use o Admin Console para iniciar a criação de um novo caso de suporte](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
+1. [Use o Admin Console para iniciar a criação de um novo caso de suporte](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html?lang=pt-BR).
 1. Forneça as seguintes informações no seu caso de suporte:
 
    * Nome do contato principal, email, telefone.

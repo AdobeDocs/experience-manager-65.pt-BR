@@ -6,7 +6,8 @@ role: User, Admin
 feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
-source-git-commit: 93d0a38d13223a8580f54786bc4ffe149efe99f1
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 8%
@@ -43,7 +44,7 @@ Para gerar relatórios, faça o seguinte:
 
 [!DNL Experience Manager Assets] O gera os seguintes relatórios padrão para você:
 
-* Fazer upload
+* Upload
 * Download
 * Expiração
 * Modificação
@@ -124,7 +125,7 @@ Para gerar relatórios, faça o seguinte:
 
 Você pode adicionar colunas personalizadas aos seguintes relatórios para exibir mais dados de acordo com seus requisitos personalizados:
 
-* Fazer upload
+* Upload
 * Download
 * Expiração
 * Modificação

@@ -2,10 +2,11 @@
 title: AEM CIF Classic
 description: Recursos de autoajuda e links de documentação do Adobe Experience Manager CIF Classic.
 exl-id: ae0823b3-d847-42b6-ba92-e4e949da1799
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '54'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -25,5 +26,5 @@ Esta página lista os recursos de autoajuda sobre CIF AEM Classic.
 
 * [Conceitos ](administering/concepts.md)
 * [Administração](administering/generic.md)
-* [Implantação](deploying/ecommerce.md)
+* [Implantar](deploying/ecommerce.md)
 * [Desenvolvimento](developing/ecommerce.md)

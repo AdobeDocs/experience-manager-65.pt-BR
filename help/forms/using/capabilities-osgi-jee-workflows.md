@@ -3,10 +3,11 @@ title: Ações e recursos de fluxos de trabalho do AEM centrados em formulários
 description: Ações e recursos de fluxos de trabalho do AEM centrados em formulários em fluxos de trabalho OSGi e AEM Forms JEE
 contentOwner: khsingh
 exl-id: 505b8988-b2b3-4222-b3cb-9b3c6259fdd2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 23%
+source-wordcount: '933'
+ht-degree: 20%
 
 ---
 
@@ -170,7 +171,7 @@ Os fluxos de trabalho do AEM centrados em formulários no OSGi e os fluxos de tr
   <tr>
    <td>Renderizar tarefa concluída como formulário adaptável ou documento PDF</td>
    <td>Compatível</td>
-   <td>Compatível [4]</td>
+   <td>Suportado [4]</td>
   </tr>
   <tr>
    <td>Integração com o Gerenciamento de correspondência</td>

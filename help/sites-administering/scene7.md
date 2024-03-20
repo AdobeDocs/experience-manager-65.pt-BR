@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5425'
 ht-degree: 0%
@@ -260,7 +261,7 @@ Com a sincronização entre o Experience Manager Assets e o Dynamic Media Classi
    <td>Os conjuntos de mídia mista aparecem no Experience Manager, embora não sejam suportados no Experience Manager.</td>
   </tr>
   <tr>
-   <td>PDF</td>
+   <td>PDFs</td>
    <td>Os PDF gerados de eCatalogs no Dynamic Media Classic são importados para a pasta de destino do CQ.</td>
   </tr>
   <tr>
@@ -377,7 +378,7 @@ Quando um ativo é adicionado ao Experience Manager Assets, ele é automaticamen
 
 >[!NOTE]
 >
-O tamanho máximo de arquivo para upload automático do Experience Manager Assets para o Dynamic Media Classic é 500 MB.
+>O tamanho máximo de arquivo para upload automático do Experience Manager Assets para o Dynamic Media Classic é 500 MB.
 
 **Para fazer upload automático do Experience Manager Assets:**
 
@@ -387,7 +388,7 @@ O tamanho máximo de arquivo para upload automático do Experience Manager Asset
 
    >[!NOTE]
    >
-   Consulte [Configuração do estado (publicado/não publicado) dos ativos enviados para o Dynamic Media Classic](#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) para obter informações sobre como enviar ativos para o Dynamic Media Classic em um estado não publicado.
+   >Consulte [Configuração do estado (publicado/não publicado) dos ativos enviados para o Dynamic Media Classic](#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) para obter informações sobre como enviar ativos para o Dynamic Media Classic em um estado não publicado.
 
    ![screen_shot_2018-03-15at52501pm](assets/screen_shot_2018-03-15at52501pm.jpg)
 
@@ -398,8 +399,8 @@ O tamanho máximo de arquivo para upload automático do Experience Manager Asset
 
    >[!NOTE]
    >
-   * Ao adicionar ativos após a automatização, se não forem colocados na pasta de destino do CQ, eles não serão carregados no Dynamic Media Classic.
-   * O Experience Manager incorpora todos os metadados como XMP antes de carregá-los no Dynamic Media Classic, de modo que todas as propriedades no nó de metadados estejam disponíveis no Dynamic Media Classic XMP como.
+   >* Ao adicionar ativos após a automatização, se não forem colocados na pasta de destino do CQ, eles não serão carregados no Dynamic Media Classic.
+   >* O Experience Manager incorpora todos os metadados como XMP antes de carregá-los no Dynamic Media Classic, de modo que todas as propriedades no nó de metadados estejam disponíveis no Dynamic Media Classic XMP como.
 
 ### Configurar o estado (publicado/não publicado) dos ativos enviados para o Dynamic Media Classic {#configuring-the-state-published-unpublished-of-assets-pushed-to-scene}
 
@@ -424,7 +425,7 @@ Essas etapas são as mesmas que você seguiria para criar qualquer configuraçã
 
 >[!NOTE]
 >
-Se o ambiente de instalação for um sistema operacional UNIX® de 64 bits, consulte [https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) em relação a outras opções de configuração, você deve definir.
+>Se o ambiente de instalação for um sistema operacional UNIX® de 64 bits, consulte [https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) em relação a outras opções de configuração, você deve definir.
 
 #### Limitações conhecidas para enviar ativos no estado não publicado  {#known-limitations-for-pushing-assets-in-unpublished-state}
 
@@ -435,13 +436,13 @@ Se você usar esse recurso, observe as seguintes limitações:
 
 >[!NOTE]
 >
-Se quiser publicar ativos instantaneamente, a prática recomendada é manter **[!UICONTROL Ativar visualização segura]** definir como **[!UICONTROL Imediatamente]** e use o **[!UICONTROL Ativar carregamento automático]** recurso.
+>Se quiser publicar ativos instantaneamente, a prática recomendada é manter **[!UICONTROL Ativar visualização segura]** definir como **[!UICONTROL Imediatamente]** e use o **[!UICONTROL Ativar carregamento automático]** recurso.
 
 ### Definir o estado dos ativos enviados para o Dynamic Media Classic como não publicados {#setting-the-state-of-assets-pushed-to-scene-as-unpublished}
 
 >[!NOTE]
 >
-Se um usuário publicar o ativo no Experience Manager, ele acionará automaticamente o ativo S7 para o ativo de produção/ativo (o ativo não está mais em visualização segura/não publicado).
+>Se um usuário publicar o ativo no Experience Manager, ele acionará automaticamente o ativo S7 para o ativo de produção/ativo (o ativo não está mais em visualização segura/não publicado).
 
 **Para definir o estado dos ativos enviados para o Dynamic Media Classic como não publicados:**
 
@@ -513,7 +514,7 @@ Somente uma configuração do Dynamic Media Classic pode ser marcada como padrã
 
    >[!NOTE]
    >
-   Se houver apenas uma configuração, selecione a variável **[!UICONTROL Configuração padrão]** não tem efeito.
+   >Se houver apenas uma configuração, selecione a variável **[!UICONTROL Configuração padrão]** não tem efeito.
 
 ### Configurar a pasta Ad-hoc {#configuring-the-ad-hoc-folder}
 
@@ -570,11 +571,11 @@ Especificamente, você configura o formato de arquivo aceito por tipo MIME na á
 
    >[!NOTE]
    >
-   Se você estiver fazendo upload de arquivos PSD e quiser processá-los como modelos com extrações de camada, insira o seguinte no campo **[!UICONTROL jobParam]** campo de valor:
+   >Se você estiver fazendo upload de arquivos PSD e quiser processá-los como modelos com extrações de camada, insira o seguinte no campo **[!UICONTROL jobParam]** campo de valor:
    >
-   `process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
+   >`process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
    >
-   Certifique-se de que o arquivo PSD tenha &quot;camadas&quot;. Se for estritamente uma imagem ou uma imagem com máscara, ela será processada como uma imagem, pois não há camadas a serem processadas.
+   >Certifique-se de que o arquivo PSD tenha &quot;camadas&quot;. Se for estritamente uma imagem ou uma imagem com máscara, ela será processada como uma imagem, pois não há camadas a serem processadas.
 
 1. No canto superior esquerdo da página CRXDE Lite, selecione **[!UICONTROL Salvar tudo]**.
 
@@ -616,6 +617,6 @@ Se tiver problemas ao integrar o Experience Manager com o Dynamic Media Classic,
 
 >[!CAUTION]
 >
-A importação de ativos de uma conta existente da empresa Dynamic Media Classic pode demorar muito para ser mostrada no Experience Manager. Certifique-se de designar uma pasta no Dynamic Media Classic que não tenha muitos ativos. Por exemplo, a pasta raiz geralmente tem muitos ativos.
+>A importação de ativos de uma conta existente da empresa Dynamic Media Classic pode demorar muito para ser mostrada no Experience Manager. Certifique-se de designar uma pasta no Dynamic Media Classic que não tenha muitos ativos. Por exemplo, a pasta raiz geralmente tem muitos ativos.
 >
-Se você quiser testar a integração, faça com que a pasta raiz aponte somente para uma subpasta, em vez de para toda a empresa.
+>Se você quiser testar a integração, faça com que a pasta raiz aponte somente para uma subpasta, em vez de para toda a empresa.

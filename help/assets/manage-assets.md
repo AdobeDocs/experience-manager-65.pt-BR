@@ -7,7 +7,8 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '10038'
 ht-degree: 3%
@@ -45,7 +46,7 @@ Os seguintes caracteres (lista separada por espaços de) não são suportados:
 
 Não inclua caracteres especiais nas extensões dos nomes de arquivo do ativo.
 
-## Fazer upload de ativos {#uploading-assets}
+## Upload de ativos {#uploading-assets}
 
 <!-- TBD the following:
 Move this section into a new article. CQDOC-14874 ticket is created for this.

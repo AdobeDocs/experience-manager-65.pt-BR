@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '7143'
+source-wordcount: '7164'
 ht-degree: 0%
 
 ---
@@ -73,7 +74,7 @@ Você pode configurar as seguintes propriedades para uma Pasta monitorada.
 
    * publicação
 
-   * autor,publicação
+   * autor, publicação
 
    * publicar, autor
 

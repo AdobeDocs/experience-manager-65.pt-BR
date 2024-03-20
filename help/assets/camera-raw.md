@@ -5,10 +5,11 @@ contentOwner: AG
 role: Admin
 feature: Developer Tools
 exl-id: 7159a908-4c36-42b4-bbb4-d7fb1be4ee1b
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 1%
+source-wordcount: '340'
+ht-degree: 0%
 
 ---
 
@@ -23,12 +24,12 @@ Você pode ativar o [!DNL Adobe Camera Raw] suporte para processar formatos de a
 Para habilitar [!DNL Camera Raw] suporte no [!DNL Experience Manager Assets], siga estas etapas:
 
 1. Baixe o [[!DNL Camera Raw] pacote](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-cameraraw-pkg-1.4.8.zip) de [!DNL Software Distribution].
-1. Acesso `https://[aem_server]:[port]/workflow`. Abra o **[!UICONTROL Ativo de atualização DAM]** fluxo de trabalho.
+1. Access `https://[aem_server]:[port]/workflow`. Abra o **[!UICONTROL Ativo de atualização DAM]** fluxo de trabalho.
 1. Edite o **[!UICONTROL Miniaturas do processo]** etapa.
 1. Forneça a seguinte configuração no **[!UICONTROL Miniaturas]** guia:
 
    * **[!UICONTROL Miniaturas]**: `140:100:false, 48:48:false, 319:319:false`
-   * **[!UICONTROL Ignorar tipos Mime]**: `skip:image/dng, skip:image/x-raw-(.*)`
+   * **[!UICONTROL Ignorar tipos MIME]**: `skip:image/dng, skip:image/x-raw-(.*)`
 
    ![chlimage_1-128](assets/chlimage_1-334.png)
 

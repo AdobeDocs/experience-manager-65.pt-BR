@@ -4,10 +4,11 @@ description: Saiba como usar o console de Ativos para gerenciar os fragmentos de
 feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1715'
-ht-degree: 77%
+source-wordcount: '1712'
+ht-degree: 75%
 
 ---
 
@@ -299,16 +300,16 @@ Além das opções padrão, a [Linha de tempo](/help/assets/manage-assets.md#tim
 
 >[!NOTE]
 >
-Os comentários são:
+>Os comentários são:
 >
-* Uma funcionalidade padrão para todos os ativos
-* Feitos na Linha de tempo
-* Relacionados ao ativo de fragmento
+>* Uma funcionalidade padrão para todos os ativos
+>* Feitos na Linha de tempo
+>* Relacionados ao ativo de fragmento
 >
-As anotações (para fragmentos de conteúdo) são:
+>As anotações (para fragmentos de conteúdo) são:
 >
-* Inseridas no editor de fragmentos
-* Específicas de um segmento de texto selecionado no fragmento
+>* Inseridas no editor de fragmentos
+>* Específicas de um segmento de texto selecionado no fragmento
 >
 
 Por exemplo:
@@ -339,7 +340,7 @@ Elas serão mostradas lado a lado, onde:
 
 >[!NOTE]
 >
-Não é possível editar o conteúdo do fragmento ao comparar fragmentos.
+>Não é possível editar o conteúdo do fragmento ao comparar fragmentos.
 
 ![comparação](assets/cfm-managing-06.png)
 
@@ -357,9 +358,9 @@ Você pode reverter para uma versão específica do fragmento:
 
 >[!CAUTION]
 >
-Se o fragmento for baseado em um modelo, é preciso certificar-se de que o [modelo foi publicado](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+>Se o fragmento for baseado em um modelo, é preciso certificar-se de que o [modelo foi publicado](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 >
-Se você publicar um fragmento de conteúdo cujo modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado junto com o fragmento.
+>Se você publicar um fragmento de conteúdo cujo modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado junto com o fragmento.
 
 Os fragmentos de conteúdo devem ser publicados para uso no ambiente de publicação. Eles podem ser publicados:
 
@@ -369,7 +370,7 @@ Os fragmentos de conteúdo devem ser publicados para uso no ambiente de publica�
 
 >[!CAUTION]
 >
-Depois que um fragmento tiver sido publicado e/ou referenciado, o AEM exibirá um aviso quando um autor abrir o fragmento para edição novamente. Isso serve para avisar que as alterações no fragmento também afetarão as páginas referenciadas.
+>Depois que um fragmento tiver sido publicado e/ou referenciado, o AEM exibirá um aviso quando um autor abrir o fragmento para edição novamente. Isso serve para avisar que as alterações no fragmento também afetarão as páginas referenciadas.
 
 ## Excluir um fragmento {#deleting-a-fragment}
 
@@ -380,11 +381,11 @@ Para excluir um fragmento:
 
    >[!NOTE]
    >
-   A opção **Excluir** não está disponível como uma ação rápida.
+   >A opção **Excluir** não está disponível como uma ação rápida.
 
 3. Selecione **Excluir** na barra de ferramentas.
 4. Confirme a ação **Excluir**.
 
    >[!CAUTION]
    >
-   Se o fragmento já estiver referenciado em uma página, você verá uma mensagem de aviso e será solicitado a confirmar se deseja continuar com uma **Exclusão forçada**. O fragmento, junto com seu componente do fragmento de conteúdo, será excluído de qualquer página de conteúdo.
+   >Se o fragmento já estiver referenciado em uma página, você verá uma mensagem de aviso e será solicitado a confirmar se deseja continuar com uma **Exclusão forçada**. O fragmento, junto com seu componente do fragmento de conteúdo, será excluído de qualquer página de conteúdo.

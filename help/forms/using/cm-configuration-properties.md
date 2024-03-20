@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: c9c007d0-c545-4738-b11b-4c50986342ee
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '846'
 ht-degree: 3%
 
 ---
@@ -30,19 +31,19 @@ O Gerenciamento de correspondências tem as seguintes propriedades de configura�
   <tr>
    <td><p>Recuo</p> </td>
    <td>Recuo nos módulos<p> </p> </td>
-   <td><p>12.7mm</p> </td>
+   <td><p>12,7 mm</p> </td>
    <td><p>Qualquer número</p> </td>
   </tr>
   <tr>
    <td>Largura mínima do número</td>
    <td>Largura mínima a ser aplicada ao campo de marcador/número ao usar Listas numeradas além dos números romanos</td>
-   <td>8.0mm</td>
+   <td>8,0 mm</td>
    <td>Qualquer número</td>
   </tr>
   <tr>
    <td><p>Largura mínima de números romanos</p> </td>
    <td><p>Largura mínima a ser aplicada ao campo de marcador/número ao usar números romanos</p> </td>
-   <td><p>12.7mm</p> </td>
+   <td><p>12,7 mm</p> </td>
    <td><p>Qualquer número</p> </td>
   </tr>
   <tr>
@@ -157,7 +158,7 @@ O Gerenciamento de correspondências tem as seguintes propriedades de configura�
    <td><p>Formato de Edição de Dados</p> </td>
    <td><p>Editar formato dos dados. Isso é usado ao gravar dados como string ou analisar dados de string</p> </td>
    <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td>--<p> </p> </td>
+   <td>—<p> </p> </td>
   </tr>
   <tr>
    <td><p>Gerenciar instâncias de carta ao publicar</p> </td>
@@ -240,7 +241,7 @@ O Gerenciamento de correspondências tem as seguintes propriedades de configura�
   <tr>
    <td><p>Raiz do usuário do CM</p> </td>
    <td><p>URL da pasta que contém todos os ativos de usuário do Gerenciamento de correspondências</p> </td>
-   <td><p>--</p> </td>
+   <td><p>—</p> </td>
    <td><p>Local de pasta válido</p> </td>
   </tr>
   <tr>

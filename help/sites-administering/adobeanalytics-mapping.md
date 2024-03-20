@@ -7,10 +7,11 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1439'
-ht-degree: 1%
+source-wordcount: '1449'
+ht-degree: 0%
 
 ---
 
@@ -150,7 +151,7 @@ Tomando a imagem acima como exemplo, a variável **Visualização do AEM** tem a
 1. Lado esquerdo: o localizador de conteúdo (cf#) é preenchido pelas variáveis do Adobe Analytics com base nas RSID(s) selecionadas.
 1. Cabeçalhos de guias (**Visualização do AEM** e **Exibição do Analytics**): use-os para alternar entre as duas exibições.
 
-1. **Visualização AEM**:
+1. **Visualização do AEM**:
 
    1. Se a estrutura tiver componentes herdados de seu pai, eles serão listados aqui, juntamente com as variáveis mapeadas para os componentes.
 
@@ -197,9 +198,9 @@ Tomando a imagem acima como exemplo, a variável **Visualização do AEM** tem a
 >
 >Por exemplo, ao lado de `prop3` você pode adicionar:
 >     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
-para enviar o *título* de uma página concatenada com seu *sitesection* usar *:* (dois pontos) e com prefixo *Adobe* as `prop3`
+>para enviar o *título* de uma página concatenada com seu *sitesection* usar *:* (dois pontos) e com prefixo *Adobe* as `prop3`
 >
 
 >[!CAUTION]
 >
-Somente uma variável do CQ pode ser mapeada para uma variável do Adobe Analytics em um determinado momento.
+>Somente uma variável do CQ pode ser mapeada para uma variável do Adobe Analytics em um determinado momento.

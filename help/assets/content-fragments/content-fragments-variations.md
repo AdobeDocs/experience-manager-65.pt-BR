@@ -4,7 +4,8 @@ description: Entenda como as variações podem tornar o conteúdo headless no AE
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2309'
 ht-degree: 59%
@@ -234,14 +235,14 @@ O resumo de texto foi criado para ajudar os usuários a reduzir o comprimento do
 
 >[!CAUTION]
 >
-O inglês está disponível pronto para uso.
+>O inglês está disponível pronto para uso.
 >
-Outros idiomas estão disponíveis como Pacotes de modelo de idioma no Compartilhamento de pacotes:
+>Outros idiomas estão disponíveis como Pacotes de modelo de idioma no Compartilhamento de pacotes:
 >
-* [Francês (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [Alemão (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [Italiano (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [Espanhol (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [Francês (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Alemão (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italiano (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Espanhol (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 1. Selecione o **Principal** ou a variação exigida.
@@ -310,7 +311,7 @@ Anotações:
 
   >[!NOTE]
   >
-  Um seletor suspenso é fornecido se várias anotações tiverem sido aplicadas a um texto.
+  >Um seletor suspenso é fornecido se várias anotações tiverem sido aplicadas a um texto.
 
 * Quando você exclui o texto inteiro ao qual a anotação foi aplicada, a anotação também é excluída.
 
@@ -328,13 +329,13 @@ Eles serão adicionados à sequência de parágrafo do fragmento sem qualquer fo
 
 >[!CAUTION]
 >
-Esses ativos não podem ser movidos ou excluídos em uma página de referência. Isso deve ser feito no editor do fragmento.
+>Esses ativos não podem ser movidos ou excluídos em uma página de referência. Isso deve ser feito no editor do fragmento.
 >
-No entanto, a formatação do ativo (por exemplo, seu tamanho) deve ser feita no [editor de páginas](/help/sites-authoring/content-fragments.md). A representação do ativo no editor de fragmento serve meramente para a criação do fluxo de conteúdo.
+>No entanto, a formatação do ativo (por exemplo, seu tamanho) deve ser feita no [editor de páginas](/help/sites-authoring/content-fragments.md). A representação do ativo no editor de fragmento serve meramente para a criação do fluxo de conteúdo.
 
 >[!NOTE]
 >
-Existem vários métodos de adicionar [imagens](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
+>Existem vários métodos de adicionar [imagens](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
 
 1. Posicione o cursor na posição em que deseja adicionar a imagem.
 1. Use o ícone **Inserir ativo** para abrir a caixa de diálogo de pesquisa.
@@ -352,10 +353,10 @@ Existem vários métodos de adicionar [imagens](/help/assets/content-fragments/c
 
    >[!CAUTION]
    >
-   Se você alterar o formato depois de adicionar como ativo a:
+   >Se você alterar o formato depois de adicionar como ativo a:
    >
-   * **Texto sem formatação**: o ativo é perdido do fragmento.
-   * **Markdown**: o ativo não está visível, mas ainda está aqui ao retornar para **Rich Text**.
+   >* **Texto sem formatação**: o ativo é perdido do fragmento.
+   >* **Markdown**: o ativo não está visível, mas ainda está aqui ao retornar para **Rich Text**.
 
 ### Inserir um fragmento de conteúdo no fragmento {#inserting-content-fragment-into-your-fragment}
 
@@ -365,17 +366,17 @@ Eles serão adicionados como referência no local atual do fragmento.
 
 >[!NOTE]
 >
-Essa opção está disponível quando o **Texto multilinha** é configurado com a opção **Permitir referência de fragmento**.
+>Essa opção está disponível quando o **Texto multilinha** é configurado com a opção **Permitir referência de fragmento**.
 
 >[!CAUTION]
 >
-Esses ativos não podem ser movidos ou excluídos em uma página de referência. Isso deve ser feito no editor do fragmento.
+>Esses ativos não podem ser movidos ou excluídos em uma página de referência. Isso deve ser feito no editor do fragmento.
 >
-No entanto, a formatação do ativo (por exemplo, seu tamanho) deve ser feita no [editor de páginas](/help/sites-authoring/content-fragments.md). A representação do ativo no editor de fragmento serve meramente para a criação do fluxo de conteúdo.
+>No entanto, a formatação do ativo (por exemplo, seu tamanho) deve ser feita no [editor de páginas](/help/sites-authoring/content-fragments.md). A representação do ativo no editor de fragmento serve meramente para a criação do fluxo de conteúdo.
 
 >[!NOTE]
 >
-Existem vários métodos de adicionar [imagens](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
+>Existem vários métodos de adicionar [imagens](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
 
 1. Posicione o cursor na posição em que deseja adicionar o fragmento.
 1. Use o ícone **Inserir fragmento de conteúdo** para abrir a caixa de diálogo de pesquisa.
@@ -393,10 +394,10 @@ Existem vários métodos de adicionar [imagens](/help/assets/content-fragments/c
 
    >[!CAUTION]
    >
-   Se você alterar o formato, depois de adicionar uma referência a outro fragmento, para:
+   >Se você alterar o formato, depois de adicionar uma referência a outro fragmento, para:
    >
-   * **Texto sem formatação**: a referência é perdida do fragmento.
-   * **Markdown**: a referência permanece.
+   >* **Texto sem formatação**: a referência é perdida do fragmento.
+   >* **Markdown**: a referência permanece.
 
 ## Gerenciamento de variações {#managing-variations}
 
@@ -414,11 +415,11 @@ Para criar uma variação:
 
    >[!NOTE]
    >
-   Ao criar uma variação, é sempre o **Principal** que é copiado, não a variação que está aberta.
+   >Ao criar uma variação, é sempre o **Principal** que é copiado, não a variação que está aberta.
 
    >[!NOTE]
    >
-   Ao criar uma variação, todas as **Tags** atualmente atribuído à **Principal** são copiadas para a nova variação.
+   >Ao criar uma variação, todas as **Tags** atualmente atribuído à **Principal** são copiadas para a nova variação.
 
 ### Editar uma variação {#editing-a-variation}
 
@@ -443,7 +444,7 @@ Para renomear uma variação existente:
 
 >[!NOTE]
 >
-Isso só afeta o **Título** da variação.
+>Isso só afeta o **Título** da variação.
 
 ### Excluir uma Variação {#deleting-a-variation}
 
@@ -457,7 +458,7 @@ Para excluir uma variação existente:
 
 >[!NOTE]
 >
-Não é possível excluir o **Principal**.
+>Não é possível excluir o **Principal**.
 
 ### Sincronização com o Principal {#synchronizing-with-master}
 
@@ -467,13 +468,13 @@ Ao editar uma variação, você tem acesso à ação para sincronizar o elemento
 
 >[!CAUTION]
 >
-A sincronização só está disponível para copiar alterações *do **Principal**para a variação*.
+>A sincronização só está disponível para copiar alterações *do **Principal**para a variação*.
 >
-Somente o elemento atual da variação será sincronizado.
+>Somente o elemento atual da variação será sincronizado.
 >
-A sincronização só funciona no tipo de dados **Texto de várias linhas**.
+>A sincronização só funciona no tipo de dados **Texto de várias linhas**.
 >
-A transferência de alterações *de uma variação para o **Principal*** não está disponível como uma opção.
+>A transferência de alterações *de uma variação para o **Principal*** não está disponível como uma opção.
 
 <!-- needs new screenshot for synchronize effect -->
 

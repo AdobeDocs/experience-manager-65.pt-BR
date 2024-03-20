@@ -7,10 +7,11 @@ role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
 hide: true
-source-git-commit: 56632bd6ce9fc90f0bc61f903f84f7ea8bbcd12d
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '3288'
-ht-degree: 10%
+source-wordcount: '3284'
+ht-degree: 9%
 
 ---
 
@@ -189,7 +190,7 @@ Selecione um ativo ou uma pasta de live copy, abra o painel à esquerda e clique
 
 ## Propagar modificações da origem para as live copies {#rolloutsync}
 
-Depois que uma origem é modificada, as alterações podem ser propagadas para as live copies usando uma ação de sincronização ou de implantação. Para entender a diferença entre as duas ações, consulte [glossário](#glossary).
+Depois que uma origem é modificada, as alterações podem ser propagadas para as live copies usando uma ação de sincronização ou de implantação. Para compreender a diferença entre as duas ações, consulte [glossário](#glossary).
 
 ### Ação de implantação {#rollout}
 
@@ -282,7 +283,7 @@ Se você tiver vários ativos em uma pasta de live copy, iniciar ações em cada
 
 1. Selecione uma pasta de origem. Clique em **[!UICONTROL Propriedades]** na barra de ferramentas. Como alternativa, use o atalho de teclado `p`.
 1. Clique em **[!UICONTROL Origem da Live Copy]**. Para abrir o console, clique em **[!UICONTROL Visão geral da Live Copy]**.
-1. Nesse painel, selecione um ativo de live copy de uma pasta live copy. Clique nas ações desejadas na barra de ferramentas. As ações disponíveis são **[!UICONTROL Sincronizar]**, **[!UICONTROL Redefinir]**, **[!UICONTROL Suspender]** e **[!UICONTROL Desanexar]**. É possível iniciar rapidamente essas ações em qualquer ativo em qualquer quantidade de pastas de live copy que estejam em um relacionamento dinâmico com a pasta de origem selecionada.
+1. Nesse painel, selecione um ativo de live copy de uma pasta live copy. Clique nas ações desejadas na barra de ferramentas. As ações disponíveis são **[!UICONTROL Sincronizar]**, **[!UICONTROL Redefinir]**, **[!UICONTROL Suspender]**, e **[!UICONTROL Desanexar]**. É possível iniciar rapidamente essas ações em qualquer ativo em qualquer quantidade de pastas de live copy que estejam em um relacionamento dinâmico com a pasta de origem selecionada.
 
    ![Atualize facilmente muitos ativos em pastas de live copy a partir do console Visão geral da Live Copy](assets/livecopyconsole_update_many_assets.png)
 
@@ -294,7 +295,7 @@ Live copies e origens são ativos ou pastas que podem ser gerenciados, até cert
 
 * Copiar uma live copy cria um ativo de live copy com a mesma origem da primeira live copy.
 * Quando você move uma origem ou sua live copy, o relacionamento dinâmico é mantido.
-* A ação de edição não funciona para ativos de live copy. Se a origem de uma live copy for uma live copy em si, a ação de edição não funcionará para ela.
+* A ação de edição não funciona para ativos de live copy. Se a origem de uma live copy for uma live copy propriamente dita, a ação de edição não funcionará para ela.
 * A ação de check-out não está disponível para ativos de live copy.
 * Para a pasta de origem, a opção para criar tarefas de revisão está disponível.
 * Ao visualizar a lista de ativos na exibição em lista e na exibição em coluna, um ativo ou pasta de live copy exibe uma &quot;live copy&quot; em relação a ele. Ele ajuda a identificar facilmente as live copies em uma pasta.

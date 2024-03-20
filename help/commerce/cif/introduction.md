@@ -3,7 +3,8 @@ title: Introdução e visão geral
 description: Entenda como usar e administrar o AEM Content and Commerce com artigos úteis sobre integrações e como começar a usar o AEM Storefront.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
-source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 88%

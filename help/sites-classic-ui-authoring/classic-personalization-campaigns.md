@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: d1741525-a475-4a76-bd16-55318023495e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 1%
+source-wordcount: '620'
+ht-degree: 0%
 
 ---
 
@@ -59,13 +60,13 @@ O conteúdo focado forma as várias experiências, apresentadas ao visitante no 
 
      Isso permite a integração com o Adobe Target (antigo Test&amp;Target), que fornece aos profissionais de marketing uma ferramenta de otimização para a conversão de sites com os recursos necessários para tornar o conteúdo online mais relevante aos clientes, gerando uma conversão maior. O Adobe Target fornece uma interface intuitiva para projetar e executar testes, criar segmentos de público-alvo e direcionar conteúdo, tudo a partir de um único aplicativo.
 
-* **Touchpoints**
+* **Pontos de contato**
 
   Esses são os pontos de contato entre o visitante e sua campanha. Os pontos de contato são conectados às experiências criadas por você.
 
   Por exemplo, para teasers, é a página de conteúdo na qual o parágrafo de teaser está localizado; para um boletim informativo, é a lista de mala direta.
 
-* **Clientes em potencial**
+* **Clientes potenciais**
 
   As informações que você coletou sobre seus visitantes e como contatá-los formam a base para seus leads. **Nota:** A Adobe não planeja aprimorar ainda mais esse recurso.
 

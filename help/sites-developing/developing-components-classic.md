@@ -7,10 +7,11 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2384'
-ht-degree: 1%
+source-wordcount: '2340'
+ht-degree: 0%
 
 ---
 
@@ -89,7 +90,7 @@ Há três métodos para acessar conteúdo no WCM do AEM:
 
 * Através do `currentPage` objeto introduzido no `global.jsp`:
 
-  A variável `currentPage` é uma instância de uma página (consulte [API AEM](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)). A classe de página fornece alguns métodos para acessar conteúdo.
+  A variável `currentPage` é uma instância de uma página (consulte [API AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)). A classe de página fornece alguns métodos para acessar conteúdo.
 
   Exemplo: `String pageTitle = currentPage.getTitle();`
 
@@ -269,7 +270,7 @@ Para criar o componente, use o componente textimage padrão como uma base e modi
    >A definição da caixa de diálogo depende da interface do usuário:
    >
    >* Interface habilitada para toque: `textimage/cq:dialog`
-   >* IU Clássica: `textimage/dialog`
+   >* Interface clássica: `textimage/dialog`
 
 1. Edite os metadados do componente:
 

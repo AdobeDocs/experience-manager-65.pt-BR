@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2073'
 ht-degree: 1%
@@ -93,7 +94,7 @@ Você pode configurar o perfil de usuário AEM usando a configuração do Conect
 
 >[!NOTE]
 >
->A configuração da pasta de serviços em nuvem é necessária para configurar serviços em nuvem para serviços RESTful, SOAP e OData.
+A configuração da pasta de serviços em nuvem é necessária para configurar serviços em nuvem para serviços RESTful, SOAP e OData.
 
 Todas as configurações do Cloud Service no AEM são consolidadas no `/conf` pasta no repositório AEM. Por padrão, a variável `conf` a pasta contém o `global` pasta onde você pode criar configurações do cloud service. No entanto, é necessário ativá-lo manualmente para configurações de nuvem. Você também pode criar pastas adicionais no `conf` para criar e organizar configurações do cloud service.
 
@@ -191,8 +192,8 @@ Um serviço OData é identificado por sua URL raiz de serviço. Para configurar 
 
 >[!NOTE]
 >
->Suporte ao modelo de dados de formulário [OData versão 4](https://www.odata.org/documentation/).
->Para obter um guia passo a passo para configurar o Microsoft Dynamics 365, online ou no local, consulte [Configuração OData do Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
+Suporte ao modelo de dados de formulário [OData versão 4](https://www.odata.org/documentation/).
+Para obter um guia passo a passo para configurar o Microsoft Dynamics 365, online ou no local, consulte [Configuração OData do Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Ir para **[!UICONTROL Ferramentas > Cloud Service > Fontes de dados]**. Selecione para selecionar a pasta na qual deseja criar uma configuração de nuvem.
 
@@ -206,7 +207,7 @@ Um serviço OData é identificado por sua URL raiz de serviço. Para configurar 
 
    >[!NOTE]
    >
-   >Selecione o tipo de autenticação OAuth 2.0 para se conectar aos serviços do Microsoft Dynamics usando o endpoint OData como a raiz de serviço.
+   Selecione o tipo de autenticação OAuth 2.0 para se conectar aos serviços do Microsoft Dynamics usando o endpoint OData como a raiz de serviço.
 
 1. Selecionar **Criar** para criar a configuração de nuvem para o serviço OData.
 

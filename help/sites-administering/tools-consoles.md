@@ -7,10 +7,11 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '594'
-ht-degree: 30%
+ht-degree: 26%
 
 ---
 
@@ -303,7 +304,7 @@ A variável **Ferramentas** Os consoles fornecem acesso a várias ferramentas es
   </tr>
   <tr>
    <td> </td>
-   <td>Configuração de logon social do Facebook<br /> </td>
+   <td>Configuração de logon social do facebook<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -311,7 +312,7 @@ A variável **Ferramentas** Os consoles fornecem acesso a várias ferramentas es
   </tr>
   <tr>
    <td> </td>
-   <td>Configuração de logon social do Pinterest<br /> </td>
+   <td>Configuração de logon social do pinterest<br /> </td>
   </tr>
   <tr>
    <td>Communities</td>
@@ -373,7 +374,7 @@ A variável **Ferramentas** Os consoles fornecem acesso a várias ferramentas es
    <td>O Client Context representa uma coleção de dados do usuário montada dinamicamente. As configurações padrão e Experience Cloud são mantidas aqui.<br /> </td>
   </tr>
   <tr>
-   <td>Configurações dos serviços em nuvem<br /> </td>
+   <td>Configurações do Cloud Service<br /> </td>
    <td>Contém configurações relacionadas à integração com a Adobe Experience Cloud.</td>
   </tr>
   <tr>
@@ -401,7 +402,7 @@ A variável **Ferramentas** Os consoles fornecem acesso a várias ferramentas es
    <td>Nenhuma funcionalidade ativa relacionada a esta entrada.</td>
   </tr>
   <tr>
-   <td>Envio de formulários</td>
+   <td>Envios de formulários</td>
    <td>A lista de envios de formulário recebidos.</td>
   </tr>
   <tr>
@@ -413,7 +414,7 @@ A variável **Ferramentas** Os consoles fornecem acesso a várias ferramentas es
    <td>Linkchecker externo.</td>
   </tr>
   <tr>
-   <td>Móvel</td>
+   <td>Mobile</td>
    <td>Ajuda a criar sites criados para dispositivos móveis.</td>
   </tr>
   <tr>

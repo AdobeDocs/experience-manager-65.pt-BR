@@ -2,7 +2,8 @@
 title: Gerenciamento de projetos de tradução
 description: Saiba como gerenciar projetos de tradução no Adobe Experience Manager.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 219338b497dae6356a68429e9e8ab02c9cfcc3b4
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3506'
 ht-degree: 39%

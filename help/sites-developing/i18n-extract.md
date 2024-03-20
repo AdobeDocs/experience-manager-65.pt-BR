@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
 exl-id: 4acc5f7f-0bcb-4b5a-8531-52e146cffeae
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 0%
@@ -64,7 +65,7 @@ A parte padrão de uma regra é usada para corresponder aos nomes dos arquivos a
 |---|---|
 | / | Indica um caminho JCR. Portanto, este prefixo corresponde a arquivos abaixo do diretório jcr_root. |
 | &amp;ast; | Indica um arquivo regular no sistema de arquivos. |
-| nenhuma | Nenhum prefixo ou padrão que comece com uma pasta ou nome de arquivo indica um arquivo regular no sistema de arquivos. |
+| nenhum | Nenhum prefixo ou padrão que comece com uma pasta ou nome de arquivo indica um arquivo regular no sistema de arquivos. |
 
 Quando usado dentro de um padrão, o caractere / indica um subdiretório e o caractere &amp;ast; corresponde a todos. A tabela a seguir lista várias regras de exemplo.
 

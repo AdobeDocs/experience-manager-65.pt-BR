@@ -5,10 +5,11 @@ contentOwner: AG
 role: Architect, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1867'
-ht-degree: 14%
+source-wordcount: '1889'
+ht-degree: 13%
 
 ---
 
@@ -30,7 +31,7 @@ Para criar uma cópia de idioma, acione um dos seguintes workflows de cópia de 
 Use o fluxo de trabalho criar e traduzir para gerar cópias de idioma para um idioma específico pela primeira vez. O fluxo de trabalho fornece as seguintes opções:
 
 * Criar somente estrutura.
-* Criar um novo projeto de tradução.
+* Criar um projeto de tradução.
 * Adicionar ao projeto de tradução existente.
 
 ### Criar somente estrutura {#create-structure-only}
@@ -108,7 +109,7 @@ Se você usar essa opção, os ativos a serem traduzidos serão copiados para a 
    >
    >Esse recurso está disponível para ativos e pastas. Quando um ativo é selecionado em vez de uma pasta, a hierarquia inteira de pastas até a raiz de idioma é copiada para criar uma cópia de idioma para o ativo.
 
-### Adicionar ao projeto de tradução existente {#add-to-existing-translation-project}
+### Adicionar ao projeto existente de tradução {#add-to-existing-translation-project}
 
 Se você usar essa opção, o fluxo de trabalho de tradução será executado para os ativos adicionados à pasta de origem após a execução de um fluxo de trabalho de tradução anterior. Somente os ativos adicionados recentemente são copiados para a pasta de destino que contém ativos traduzidos anteriormente. Nenhum novo projeto de tradução é criado nesse caso.
 
@@ -165,7 +166,7 @@ Se você usar essa opção, o fluxo de trabalho de tradução será executado pa
 Execute este fluxo de trabalho para traduzir qualquer conjunto adicional de ativos e incluí-lo em uma cópia de idioma para uma localidade específica. Nesse caso, os ativos traduzidos são adicionados à pasta de destino que já contém ativos traduzidos anteriormente. Dependendo da escolha de opções, um projeto de tradução é criado ou um projeto de tradução existente é atualizado para os novos ativos. O workflow Atualizar cópias de idioma inclui as seguintes opções:
 
 * Criar um novo projeto de tradução
-* Adicionar ao projeto de tradução existente
+* Adicionar ao projeto existente de tradução
 
 ### Criar um novo projeto de tradução {#create-a-new-translation-project-1}
 
@@ -210,7 +211,7 @@ Se você usar essa opção, um projeto de tradução será criado para o conjunt
 
 1. Navegue até a [!DNL Assets] e abra a página Propriedades de cada um dos ativos traduzidos para exibir os metadados traduzidos.
 
-### Adicionar ao projeto de tradução existente {#add-to-existing-translation-project-1}
+### Adicionar ao projeto existente de tradução {#add-to-existing-translation-project-1}
 
 Se você usar essa opção, o conjunto de ativos será adicionado a um projeto de tradução existente para atualizar a cópia de idioma para o local escolhido.
 

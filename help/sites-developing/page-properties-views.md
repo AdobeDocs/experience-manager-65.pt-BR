@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 0%
@@ -68,14 +69,14 @@ Por exemplo, por padrão, a variável [**Criar página** assistente](/help/sites
    >
    >    `/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog`
    >
-   No entanto, você ***deve*** não alterar nada no `/libs` caminho.
+   >No entanto, você ***deve*** não alterar nada no `/libs` caminho.
    >
-   Isso ocorre porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode ser substituído ao aplicar um hotfix ou pacote de recursos).
+   >Isso ocorre porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode ser substituído ao aplicar um hotfix ou pacote de recursos).
    >
-   O método recomendado para configuração e outras alterações é:
+   >O método recomendado para configuração e outras alterações é:
    >
-   1. Recrie o item necessário (ou seja, como ele existe em `/libs`) em `/apps`
-   1. Fazer alterações em `/apps`
+   >1. Recrie o item necessário (ou seja, como ele existe em `/libs`) em `/apps`
+   >1. Fazer alterações em `/apps`
 
 1. Defina o `path` propriedade em `basic` para apontar para a substituição da guia básica (consulte a próxima etapa também). Por exemplo:
 
@@ -99,7 +100,7 @@ Por exemplo, por padrão, a variável [**Criar página** assistente](/help/sites
 
 >[!NOTE]
 >
-Ao configurar propriedades de página para uso com live copies, consulte [Configuração de bloqueios do MSM nas propriedades da página](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) para obter mais detalhes.
+>Ao configurar propriedades de página para uso com live copies, consulte [Configuração de bloqueios do MSM nas propriedades da página](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) para obter mais detalhes.
 
 ## Exemplo de configuração das propriedades da página {#sample-configuration-of-page-properties}
 
