@@ -11,10 +11,10 @@ role: User
 exl-id: 76652a16-cad6-4e95-9e66-41efec452b03
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: cbf8a5ac22049b3372a8282b9c061d7abeacc5dc
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 41%
+source-wordcount: '415'
+ht-degree: 40%
 
 ---
 
@@ -78,3 +78,15 @@ Para agendar a publicação dos ativos no Brand Portal para uma data ou hora pos
 Agora, faça logon no Brand Portal para ver se os ativos publicados estão disponíveis na interface do Brand Portal.
 
 ![bp_landingpage](assets/bp_landingpage.png)
+
+## Exibir arquivo ou pasta publicada no Brand Portal {#view-published-file-folder}
+
+1. Faça logon na interface do Brand Portal para ver os ativos publicados (dependendo da data ou hora agendadas).
+
+   ![bp_landingpage](assets/bp_landingpage.png)
+
+1. Alternar para exibição de lista ![Exibição de lista](assets/list-view.svg) para ver o status de publicação atual do ativo.
+
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+
+![status do relatório gerado](assets/report-status.JPG)
