@@ -3,10 +3,10 @@ title: Fragmentos de experiência
 description: Fragmentos de experiência na criação do Adobe Experience Manager Sites.
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 5d37e4ec23bbbd838f4787622648aad7e1c1905b
 workflow-type: tm+mt
-source-wordcount: '1468'
-ht-degree: 72%
+source-wordcount: '1489'
+ht-degree: 71%
 
 ---
 
@@ -225,6 +225,10 @@ O exemplo de procedimento a seguir ilustra como criar um teaser de um produto:
 
    * **Variação**
    * **Variação como [live-copy](/help/sites-administering/msm.md#live-copies)**.
+
+     >[!NOTE]
+     >
+     >Criar uma variação inicial como Live Copy herdará o título usando a Origem da Live Copy como a Variação principal.
 
 1. Defina as propriedades necessárias:
 
