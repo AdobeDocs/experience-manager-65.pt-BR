@@ -3,9 +3,9 @@ title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 7f150219bce3036c0e330b7349e679fdf19797d1
+source-git-commit: f22f51b4d65abf4cf1f6e04952f873eca5119727
 workflow-type: tm+mt
-source-wordcount: '3688'
+source-wordcount: '3735'
 ht-degree: 1%
 
 ---
@@ -462,6 +462,7 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 
 * A partir do AEM 6.5.15, o mecanismo Rhino JavaScript fornecido pelo ```org.apache.servicemix.bundles.rhino``` tem um novo comportamento de elevação. Scripts que usam o modo estrito (```use strict;```) precisam declarar corretamente as variáveis, caso contrário, elas não serão executadas, gerando um erro de tempo de execução.
 
+* A instalação de conteúdo pronto para uso relacionado à marcação por meio de um pacote de atualização oficial (incluindo Service Packs, Service Packs de Segurança, Extended Feature Packs, Cumulative Feature Packs, patches e outros) redefine a propriedade de idiomas do `/content/cq:tags` para o padrão. Portanto, é necessário adicioná-lo das propriedades antes da instalação.
 
 ### Problemas conhecidos do AEM Forms {#known-issues-aem-forms-6520}
 

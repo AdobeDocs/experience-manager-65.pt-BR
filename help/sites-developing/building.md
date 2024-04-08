@@ -8,9 +8,9 @@ content-type: reference
 feature: Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f22f51b4d65abf4cf1f6e04952f873eca5119727
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '868'
 ht-degree: 0%
 
 ---
@@ -199,4 +199,4 @@ O novo idioma (finlandês) agora está disponível na caixa de diálogo de tag d
 
 >[!CAUTION]
 >
->A instalação de um pacote de serviços redefine a propriedade languages do nó /content/cq:tags para o padrão. Portanto, é necessário adicioná-lo das propriedades antes da instalação.
+>A instalação de conteúdo pronto para uso relacionado à marcação por meio de um pacote de atualização oficial (incluindo Service Packs, Service Packs de Segurança, Extended Feature Packs, Cumulative Feature Packs, patches e outros) redefine a propriedade de idiomas do `/content/cq:tags` para o padrão. Portanto, é necessário adicioná-lo das propriedades antes da instalação.
