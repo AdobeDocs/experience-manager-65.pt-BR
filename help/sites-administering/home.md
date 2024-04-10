@@ -3,7 +3,9 @@ title: Guia do usuário de administração do AEM 6.5
 description: Saiba mais sobre como administrar o AEM 6.5. Esses guias abordam recursos do site, operações de implantação, recursos de segurança, personalização, integração e muito mais.
 exl-id: 299c783a-1495-4c0d-8431-cd7de142a163
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Administering
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 92%
