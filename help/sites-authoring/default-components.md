@@ -3,7 +3,9 @@ title: Componentes padrão
 description: O Adobe Experience Manager vem com vários componentes prontos para uso que fornecem funcionalidade abrangente para os autores de sites.
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 34%
@@ -38,7 +40,7 @@ Os componentes são classificados de acordo com várias categorias chamadas grup
 
 * **We.Retail**: inclui os componentes principais intermediados por proxy para uso com a [Implementação de referência do We.Retail](/help/sites-developing/we-retail.md).
 
-* **Comércio de We.Retail**: inclui componentes comerciais, como carrinhos e grades de produtos
+* **Commerce do We.Retail**: inclui componentes comerciais, como carrinhos e grades de produtos
 
 * **Geral**: inclui o contêiner de layout e o fragmento de experiência
 

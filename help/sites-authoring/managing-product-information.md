@@ -7,7 +7,9 @@ topic-tags: projects
 content-type: reference
 exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '2888'
 ht-degree: 2%
@@ -59,7 +61,7 @@ Para iniciar uma solicitação de sessão de fotos, clique em um projeto e em **
 
 A **Projeto de sessão de fotos do produto** O inclui os seguintes workflows prontos para uso:
 
-* **Fluxo de trabalho da sessão fotográfica do produto (integração com comércio)**: esse fluxo de trabalho usa a integração comercial com o sistema de gerenciamento de informações do produto (PIM) para gerar automaticamente uma lista de captura para os produtos selecionados (hierarquia). Você pode visualizar os dados do produto como parte dos metadados do ativo depois que o fluxo de trabalho for concluído.
+* **Fluxo de trabalho da sessão fotográfica do produto (Integração do Commerce)**: esse fluxo de trabalho usa a integração comercial com o sistema de gerenciamento de informações do produto (PIM) para gerar automaticamente uma lista de captura para os produtos selecionados (hierarquia). Você pode visualizar os dados do produto como parte dos metadados do ativo depois que o fluxo de trabalho for concluído.
 * **Fluxo de trabalho da sessão fotográfica do produto**: esse workflow permite fornecer uma lista de captura em vez de depender da integração comercial. Ele mapeia as imagens carregadas para um arquivo CSV na pasta de ativos do projeto.
 
 Use o **Sessão fotográfica do produto (integração com o Commerce)** fluxo de trabalho para mapear ativos de imagem com os produtos no AEM. Esse fluxo de trabalho usa a integração comercial para vincular as imagens aprovadas aos dados existentes do produto no local `/etc/commerce`.
@@ -139,7 +141,7 @@ Para configurar o **Sessão fotográfica do produto** workflow:
 
 É possível configurar as tarefas adicionais para o **Sessão fotográfica do produto** fluxo de trabalho de maneira semelhante.
 
-Execute as mesmas etapas para configurar as tarefas no **Fluxo de trabalho da sessão fotográfica do produto (integração com comércio)**.
+Execute as mesmas etapas para configurar as tarefas no **Fluxo de trabalho da sessão fotográfica do produto (Integração do Commerce)**.
 
 ## Iniciar um fluxo de trabalho de projeto {#starting-a-project-workflow}
 

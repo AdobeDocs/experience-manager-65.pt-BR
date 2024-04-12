@@ -3,7 +3,9 @@ title: Configurações e o navegador de configuração
 description: Entenda as configurações do AEM e como elas gerenciam as configurações do espaço de trabalho no AEM.
 exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Configuring
+role: Admin
+source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 4%

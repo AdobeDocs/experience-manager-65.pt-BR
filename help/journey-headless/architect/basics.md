@@ -2,7 +2,10 @@
 title: Conheça as noções básicas da modelagem de conteúdo
 description: Conheça as noções básicas da modelagem de conteúdo do seu CMS headless usando fragmentos de conteúdo.
 exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments
+role: Admin, Architect,Data Architect
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 87%

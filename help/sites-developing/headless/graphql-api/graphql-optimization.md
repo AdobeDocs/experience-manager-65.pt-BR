@@ -3,7 +3,9 @@ title: Otimização de consultas de GraphQL
 description: Saiba como otimizar suas consultas do GraphQL ao filtrar, paginar e classificar os fragmentos de conteúdo no Adobe Experience Manager as a Cloud Service para entrega de conteúdo headless.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin,Architect,Data Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 57%
@@ -82,7 +84,7 @@ As consultas do GraphQL e suas respostas JSON podem ser armazenadas em cache se 
 
 Consulte:
 
-* [Uso da CDN no AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
+* [Uso da CDN no AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR#using-dispatcher-with-a-cdn)
 
 #### Definir cabeçalhos de controle de cache HTTP {#set-http-cache-control-headers}
 

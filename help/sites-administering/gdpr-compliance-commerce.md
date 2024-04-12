@@ -4,7 +4,9 @@ description: Saiba mais sobre os procedimentos para lidar com solicitações do 
 contentOwner: carlino
 exl-id: 3a483b9d-627a-41d3-8ac1-66f9c5e89ad5
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Compliance
+role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
@@ -25,13 +27,13 @@ O Regulamento Geral sobre a Proteção de Dados da União Europeia entra em vigo
 
 ![screen_shot_2018-03-22at111606](assets/screen_shot_2018-03-22at111606.jpg)
 
-Com integrações de comércio prontas para uso do Adobe, o AEM é a camada de experiência, consumindo serviços e enviando dados de volta para a plataforma de comércio do cliente, que é executada em um modo headless.
+Com as integrações Commerce prontas para uso do Adobe, o AEM é a camada de experiência, consumindo serviços e enviando dados de volta para a plataforma de comércio do cliente, que é executada em um modo headless.
 
 Para algumas plataformas de comércio, o Adobe armazena informações de perfil ( `/home/users`) e tokens de comércio (para fazer logon na plataforma de comércio) no AEM. Para esses casos de uso, leia [Lidar com solicitações do GDPR para a plataforma AEM](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
 
 ![screen_shot_2018-03-22at111621](assets/screen_shot_2018-03-22at111621.jpg)
 
-## Lidar com solicitações do GDPR para o comércio de AEM {#handling-gdpr-requests-for-aem-commerce}
+## Lidar com solicitações do GDPR para o AEM Commerce {#handling-gdpr-requests-for-aem-commerce}
 
 Para a integração do Commerce Cloud do Salesforce, o AEM Commerce não armazena informações relevantes do GDPR. Encaminhe a solicitação para o [Salesforce Cloud](https://documentation.b2c.commercecloud.salesforce.com/DOC1/index.jsp).
 

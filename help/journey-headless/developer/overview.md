@@ -2,7 +2,10 @@
 title: Jornada do desenvolvedor AEM headless
 description: Documentação de CMS do AEM sem periféricos. Comece aqui uma jornada guiada sobre os recursos headless avançados e flexíveis do AEM, suas capacidades e como usá-las em seu primeiro projeto.
 exl-id: f24fb308-daa7-426f-ba45-37a236b5a500
-source-git-commit: 487136be68e04fd74affe43790587b37d4c3d3ef
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin, Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 69%
