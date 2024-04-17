@@ -7,7 +7,9 @@ topic-tags: authoring
 content-type: reference
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1662'
 ht-degree: 1%
@@ -62,7 +64,7 @@ Se precisar de um fluxo de trabalho ou controle de versão para seus ativos, fa�
 
 Se não precisar de um fluxo de trabalho ou controle de versão para seus ativos, você deve fazer upload dos ativos para a Dynamic Media Classic. O fluxo de trabalho recomendado é o seguinte:
 
-1. No aplicativo de desktop do Dynamic Media Classic, [configurar o upload e a codificação programados do FTP no Dynamic Media Classic (automatizado pelo sistema)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
+1. No aplicativo de desktop do Dynamic Media Classic, [configurar o upload e a codificação programados do FTP no Dynamic Media Classic (automatizado pelo sistema)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=pt-BR#upload-options).
 1. No Experience Manager, acesse os ativos de vídeo no WCM no **[!UICONTROL Dynamic Media Classic]** do Localizador de conteúdo.
 1. Crie com o componente de vídeo do Dynamic Media Classic.
 

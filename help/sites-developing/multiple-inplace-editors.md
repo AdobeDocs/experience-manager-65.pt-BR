@@ -4,7 +4,9 @@ description: Crie vários editores no local no Adobe Experience Manager ao confi
 contentOwner: AG
 exl-id: 03030317-8b7d-408a-bdfd-619824d7260c
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%

@@ -8,7 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Administering
+role: Admin
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '3442'
 ht-degree: 0%
@@ -385,7 +387,7 @@ A inclusão da marcação acima no HTML faz o seguinte:
 * Inicializa o sidekick com componentes padrão. Novos componentes podem ser adicionados à página de aterrissagem arrastando componentes do sidekick para o componente parsys.
 * Dois componentes de título também fazem parte do parsys.
 
-### Planejado {#target}
+### Público-alvo {#target}
 
 O componente de Direcionamento mostra o conteúdo de uma experiência na página. É possível ter muitas experiências criadas em uma campanha e o componente de Direcionamento pode mostrar dinamicamente o conteúdo de diferentes experiências para vários usuários que visitam a página.
 
