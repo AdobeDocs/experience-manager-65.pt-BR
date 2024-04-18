@@ -5,15 +5,21 @@ keywords: Adicionar uma função personalizada, usar uma função personalizada,
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: d1348a964e664cf502f6eded14a1054641ebc740
+exl-id: a328b4a8-e8dd-42a0-b73b-94e76c7692a8
+source-git-commit: 91ab786cd7e0dd75b9ad15058a125605245ec5bb
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 0%
+source-wordcount: '1119'
+ht-degree: 1%
 
 ---
 
 
 # Funções personalizadas no Adaptive Forms (Componentes principais)
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions) |
+| AEM 6.5 | Este artigo |
 
 ## Introdução
 
@@ -266,4 +272,3 @@ Agora, é possível criar uma regra para usar funções personalizadas no editor
 ![Adição da biblioteca de cliente de função personalizada](/help/forms/using//assets/calculateage-customfunction.png)
 
 Agora, vamos entender como configurar e usar uma função personalizada usando o [Serviço Chamar do editor de regras no AEM Forms](/help//forms/using/rule-editor.md).
-

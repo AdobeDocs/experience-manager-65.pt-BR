@@ -9,9 +9,9 @@ discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 feature: HTML5 Forms
 exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 9e1c93a0d55d88c08b67392a9f16bfce2ac62445
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,10 @@ Expressão suportada para a cláusula Date Picture:
   </tr>
  </tbody>
 </table>
+
+>[!NOTE]
+>
+> De acordo com o design, o campo Data no HTML5 Forms não é compatível com o `MM-YYYY` em formato de edição. No entanto, esse formato é compatível com o formato de exibição.
 
 ## Cláusula de Imagem Numérica {#numeric-picture-clause}
 
