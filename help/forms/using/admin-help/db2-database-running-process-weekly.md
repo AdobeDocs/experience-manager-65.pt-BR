@@ -1,31 +1,31 @@
 ---
-title: "Banco de dados DB2: execução semanal de um processo"
-description: Veja como você pode melhorar o desempenho do banco de dados do AEM Forms DB2.
+title: "Banco de dados DB2&reg;: execução semanal de um processo"
+description: Saiba como você pode melhorar o desempenho do seu banco de dados do AEM Forms DB2&reg;.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: ca2cfe35-b602-4ef8-b4e3-af846105d4de
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bf99ad3710638ec823d3b17967e1c750d0405c77
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '148'
 ht-degree: 0%
 
 ---
 
-# Banco de dados DB2: execução semanal de um processo{#db-database-running-a-process-weekly}
+# Banco de dados DB2®: execução semanal de um processo{#db-database-running-a-process-weekly}
 
-Se o banco de dados AEM forms DB2 começar a ser executado lentamente, a execução semanal do seguinte processo pode melhorar seu desempenho:
+Se o seu banco de dados AEM Forms DB2® começar a ser executado lentamente, a execução semanal do seguinte processo pode melhorar seu desempenho:
 
-1. Iniciar o Centro de Controle do DB2:
+1. Iniciar o DB2® Control Center:
 
-   (Windows) Selecione Iniciar > Programas > IBM DB2 > Ferramentas administrativas gerais > Centro de controle.
+   (Windows) Selecione Iniciar > Programas > IBM® DB2® > Ferramentas administrativas gerais > Centro de controle.
 
-   (Linux e UNIX) Em um prompt de comando, digite o `db2jcc` comando.
+   (Linux® e UNIX®) Em um prompt de comando, digite o `db2jcc` comando.
 
-1. Na árvore de objetos do Centro de Controle do DB2, clique em Todos os Bancos de Dados.
-1. Clique no banco de dados criado para formulários AEM e clique na pasta Tabelas.
+1. Na árvore de objetos do DB2® Control Center, clique em Todos os Bancos de Dados.
+1. Clique no banco de dados criado para o AEM Forms e clique na pasta Tabelas.
 1. Selecione todas as tabelas do banco de dados no painel de conteúdo, clique com o botão direito do mouse nelas e selecione Executar estatística.
 1. Vá para Estatísticas > Estatísticas de índice.
 1. Selecione Coletar Estatísticas para Todos os Índices, selecione Coletar Estatísticas para Índices com Estatísticas Detalhadas Estendidas e clique em OK.
