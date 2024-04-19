@@ -5,10 +5,10 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Experience Fragments
 role: User
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: fde290e30335b0785d12ea9b5ab6081b1401d230
 workflow-type: tm+mt
-source-wordcount: '1489'
-ht-degree: 71%
+source-wordcount: '1504'
+ht-degree: 70%
 
 ---
 
@@ -19,7 +19,7 @@ Um Fragmento de experiência é um grupo de um ou mais componentes, incluindo co
 Um fragmento de experiência:
 
 * Faz parte de uma experiência (página).
-* Pode ser usado em várias páginas.
+* Pode ser usado em várias páginas (com base em modelos editáveis).
 * É baseado em um modelo (somente editável) para definir a estrutura e os componentes.
 * Esse modelo é usado para criar a *página raiz* do Fragmento de experiência.
 * É composto de um ou mais componentes, com layout, em um sistema de parágrafos.
@@ -251,6 +251,10 @@ O exemplo de procedimento a seguir ilustra como criar um teaser de um produto:
 Agora você poderá usar seu fragmento de experiência ao criar suas páginas:
 
 1. Abra qualquer página para edição.
+
+   >[!NOTE]
+   >
+   >A página deve ser baseada em um modelo editável.
 
    Por exemplo: [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 
