@@ -10,9 +10,9 @@ feature: Interactive Videos
 role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '5926'
+source-wordcount: '5927'
 ht-degree: 2%
 
 ---
@@ -140,7 +140,7 @@ Durante esse processo, é importante visitar diferentes áreas do site, com dife
 
 No caso mais simples, a única parte variável no URL do Quickview é o SKU do produto. Nesse caso, o valor do SKU do produto é o único dado necessário para adicionar miniaturas a um segmento de tempo no vídeo interativo no Experience Manager.
 
-No entanto, em casos complexos, o URL do Quickview tem diferentes elementos variáveis, além do SKU do produto, como ID de categoria, código de cor e código de tamanho. Nesses casos, cada elemento se torna uma variável separada na definição de dados em miniatura no Experience Manager.
+No entanto, em casos complexos, o URL do Quickview tem vários elementos diferentes, além do SKU do produto, como ID de categoria, código de cor e código de tamanho. Nesses casos, cada elemento se torna uma variável separada na definição de dados em miniatura no Experience Manager.
 
 Considere os seguintes exemplos de URLs do Quickview e as variáveis de miniatura resultantes:
 
@@ -228,7 +228,7 @@ Agora você está pronto para fazer upload de um vídeo e de seus ativos em mini
 
 Ignore essa tarefa e vá para a próxima se pretender usar qualquer um dos tipos de predefinição padrão do visualizador de Vídeo interativo, pronto para uso `Shoppable_Video_dark` ou `Shoppable_Video_light`.
 
-Quando uma miniatura é selecionada no ambiente de criação, uma pré-visualização da caixa de diálogo Visualização rápida é exibida.
+Quando uma miniatura é selecionada no ambiente de criação, é exibida uma pré-visualização da caixa de diálogo Visualização rápida.
 
 ![chlimage_1-21](assets/chlimage_1-127.png)
 
@@ -300,7 +300,7 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Pré-visual
 
      Continue a reproduzir e pausar o vídeo em pontos ao longo da linha do tempo em que deseja adicionar um segmento até chegar ao fim do vídeo.
 
-1. (Opcional) Arraste a barra no **[!UICONTROL Controle Deslizante de Escala da Linha do Tempo]** da esquerda para aumentar ou da direita para diminuir o zoom, para controlar quantos detalhes são vistos dos segmentos adicionados.
+1. (Opcional) Arraste a barra no **[!UICONTROL Controle Deslizante de Escala da Linha do Tempo]** da esquerda para aumentar ou da direita para diminuir o zoom, para que você possa controlar quantos detalhes são vistos dos segmentos adicionados.
 
    ![chlimage_1-22](assets/chlimage_1-128.png)
 
@@ -335,7 +335,7 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Pré-visual
       </tbody>
     </table>
 
-   A linha do tempo do vídeo usa tanto espaço na tela quanto o que é disponibilizado para ele. Dessa forma, ao redimensionar o navegador, os segmentos adicionados mantêm a largura correta.
+   A linha do tempo do vídeo usa tanto espaço na tela quanto o que é disponibilizado para ele. Dessa forma, os segmentos adicionados mantêm a largura correta quando o navegador é redimensionado.
 
    Para ilustrar, as três capturas de tela a seguir estão usando o mesmo vídeo. Observe que a largura de cada segmento muda dependendo da configuração de Escala da linha do tempo.
 
@@ -375,7 +375,7 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Pré-visual
 
    * Para excluir um segmento
 
-     Selecione o último segmento na linha do tempo e, na barra de ferramentas, selecione **[!UICONTROL Excluir segmento]**. Se dois ou mais segmentos forem selecionados, o recurso Excluir segmento ficará desativado.
+     Selecione o último segmento na linha do tempo e, na barra de ferramentas, selecione **[!UICONTROL Excluir segmento]**. Se dois ou mais segmentos forem selecionados, **[!UICONTROL Excluir segmento]** está desativado.
 
      Você só pode excluir o último segmento. Por exemplo, se você deseja excluir todos os segmentos na linha do tempo, sempre é necessário selecionar o último e selecionar **[!UICONTROL Excluir segmento]**.
 
@@ -476,7 +476,7 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Pré-visual
 
    Mesclar dois segmentos de cinco segundos selecionados em um segmento de dez segundos.
 
-   * **[!UICONTROL Dividir segmento]** - É possível dividir um único segmento em dois segmentos com tempo igual. Se houver miniaturas de produtos já atribuídas ao segmento, as miniaturas serão combinadas no segmento esquerdo.
+   * **[!UICONTROL Dividir segmento]** - É possível dividir um único segmento em dois segmentos de tempo iguais. Se houver miniaturas de produtos já atribuídas ao segmento, as miniaturas serão combinadas no segmento esquerdo.
 
      Na linha do tempo, selecione um segmento que deseja dividir pela metade e selecione **[!UICONTROL Dividir segmento]** na barra de ferramentas.
 
@@ -534,7 +534,7 @@ O código incorporado copiado é definido para um ambiente responsivo, de modo q
 >
 >Nesse momento, se você tiver adicionado interatividade somente com páginas da Web com hiperlink, está concluído.
 >
->No entanto, se você adicionou qualquer interatividade para acionar uma Visualização rápida, as miniaturas ao lado do vídeo interativo serão somente para fins de exibição; elas ainda não estão integradas à Visualização rápida existente. Nesse caso, você deve integrar o vídeo interativo ao Quickview existente em seu site.
+>No entanto, se você adicionou qualquer interatividade para acionar uma Visualização rápida, as miniaturas ao lado do vídeo interativo serão somente para fins de exibição; elas ainda não estão integradas à Visualização rápida existente. Nesses casos, você deve integrar o vídeo interativo ao Quickview existente no seu site.
 
 **Exemplo**
 
@@ -569,7 +569,7 @@ Observe que o código incorporado é padrão:
 </script>
 ```
 
-A integração é tão simples quanto remover o código de inserção do vídeo e substituí-lo pelo código de inserção interativo do vídeo do Experience Manager. Você pode ver o resultado no URL a seguir. Embora ele mostre um Vídeo interativo presente na página, ainda não está integrado à exibição rápida existente:
+A integração é tão simples quanto remover o código de inserção do vídeo e substituí-lo pelo código de inserção interativo do vídeo do Experience Manager. Você pode ver os resultados no URL a seguir. Embora ele mostre um Vídeo interativo presente na página, ainda não está integrado à exibição rápida existente:
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
@@ -707,7 +707,7 @@ O site de demonstração está acionando a caixa de diálogo Quickview usando um
 loadQuickView(quickViewUrl);
 ```
 
-Por fim, verifique se a caixa de diálogo Quickview está anexada ao elemento de contêiner do visualizador. O código incorporado padrão fornece exemplos de etapas para obter essa funcionalidade. Para obter uma referência para o elemento de contêiner do visualizador, você pode usar as seguintes linhas de código:
+Por fim, verifique se a caixa de diálogo Quickview está anexada ao elemento de contêiner do visualizador. O código incorporado fornece exemplos de etapas para obter essa funcionalidade. Para obter uma referência para o elemento de contêiner do visualizador, você pode usar as seguintes linhas de código:
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component

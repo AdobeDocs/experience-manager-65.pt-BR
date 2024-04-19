@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1659'
+source-wordcount: '1658'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 **Para o [Recurso de comunidades](/help/communities/overview.md)**
 
-* Se estiver implantando um [publicar farm](/help/sites-deploying/recommended-deploys.md#tarmk-farm), [identificar o editor principal](#primary-publisher)
+* Se estiver implantando um [farm de publicação](/help/sites-deploying/recommended-deploys.md#tarmk-farm), [identificar o editor principal](#primary-publisher)
 
 * [Habilitar o serviço de túnel](#tunnel-service-on-author)
 * [Habilitar logon social](/help/communities/social-login.md#adobe-granite-oauth-authentication-handler)
@@ -84,7 +84,7 @@ O AEM 6.5 Communities GA inclui o pacote Communities. Para saber mais sobre as a
 
 A partir do AEM 6.4, as atualizações das Comunidades são fornecidas como parte do AEM Cumulative Fix Packs e Service Packs.
 
-Para obter as atualizações mais recentes para o AEM 6.5, consulte [Adobe Experience Manager 6.4 Cumulative Fix Packs e Service Packs](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=pt-BR).
+Para obter as atualizações mais recentes para o AEM 6.5, consulte [Adobe Experience Manager 6.4 Cumulative Fix Packs e Service Packs](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates).
 
 ### Histórico da versão {#version-history}
 
@@ -168,7 +168,7 @@ Para obter mais informações, visite [Como trabalhar com pacotes](/help/sites-a
 
 No AEM Communities, um armazenamento comum é usado para armazenar o UGC e geralmente é chamado de [provedor de recursos de armazenamento (SRP)](/help/communities/working-with-srp.md). A implantação recomendada se concentra na escolha de uma opção SRP para o armazenamento comum.
 
-O armazenamento comum suporta a moderação e a análise de UGC no ambiente de publicação, eliminando a necessidade de [replicação](/help/communities/sync.md) do UGC.
+O armazenamento comum aceita a moderação e a análise de UGC no ambiente de publicação, eliminando a necessidade de [replicação](/help/communities/sync.md) do UGC.
 
 * [Armazenamento de conteúdo da comunidade](/help/communities/working-with-srp.md) : apresenta as opções de armazenamento SRP para o AEM Communities
 
@@ -358,8 +358,8 @@ Em particular, tenha cuidado para usar o nome correto do servidor, não `localho
 
 Se estiver usando um Dispatcher, consulte:
 
-* AEM [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) documentação
-* [Instalação do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)
+* AEM [Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates) documentação
+* [Instalação do Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
 * [Configuração do Dispatcher para comunidades](/help/communities/dispatcher.md)
 * [Problemas conhecidos](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

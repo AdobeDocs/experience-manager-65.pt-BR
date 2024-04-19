@@ -10,9 +10,9 @@ feature: Carousel Banners
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4680'
+source-wordcount: '4677'
 ht-degree: 2%
 
 ---
@@ -39,11 +39,11 @@ Neste exemplo, um usuário tocou ou clicou em um mapa de imagem e acessou a jane
 
 ## Veja como os banners do carrossel são criados {#watch-how-carousel-banners-are-created}
 
-Reproduzir uma apresentação sobre [como os banners do carrossel são criados](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)(10 minutos e 33 segundos). Você também aprenderá a visualizar, editar e entregar banners do carrossel.
+Reproduzir uma apresentação sobre [como os banners do carrossel são criados](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)(10 minutos e 33 segundos) Você também aprenderá a visualizar, editar e entregar banners do carrossel.
 
 >[!NOTE]
 >
->Os usuários não administrativos devem ser adicionados ao **[!UICONTROL dam-users]** para criar ou editar banners do carrossel. Se tiver problemas para criar ou editar o, consulte o administrador do sistema que pode adicioná-lo ao **[!UICONTROL dam-users]** grupo.
+>Os usuários não administrativos devem ser adicionados ao **[!UICONTROL `dam-users`]** para criar ou editar banners do carrossel. Se tiver problemas para criar ou editar o, consulte o administrador do sistema que pode adicioná-lo ao **[!UICONTROL `dam-users`]** grupo.
 
 ## Início rápido: banners do Carousel {#quick-start-carousel-banners}
 
@@ -72,7 +72,7 @@ Para começar a usar rapidamente os banners do carrossel:
 
    Em Conjuntos de carrosséis, os usuários navegam por imagens de banner e selecionam pontos de acesso ou mapas de imagem para acessar conteúdo relevante.
 
-   Para criar um Conjunto de carrossel no Assets, selecione **[!UICONTROL Criar]** e selecione **[!UICONTROL Conjuntos de carrossel]**. Adicionar ativos a slides e selecionar **[!UICONTROL Salvar]**. Além disso, edite a aparência e o comportamento do carrossel diretamente no editor.
+   Para criar um Conjunto de carrossel no Assets, selecione **[!UICONTROL Criar]** e selecione **[!UICONTROL Conjuntos de carrossel]**. Adicione ativos a cada slide e selecione **[!UICONTROL Salvar]**. Além disso, edite a aparência e o comportamento do carrossel diretamente no editor.
 
 1. [Adicionar pontos de acesso ou mapas de imagem a um banner de imagem](#adding-hotspots-or-image-maps-to-an-image-banner).
 
@@ -134,7 +134,7 @@ Durante esse processo, é importante visitar diferentes áreas do site, com dife
 
 No caso mais simples, a única parte variável no URL do Quickview é o SKU do produto. Nesse caso, o valor do SKU é a única parte dos dados necessária para adicionar pontos de acesso ou mapas de imagem à imagem do banner.
 
-No entanto, em casos complexos, o URL do Quickview tem diferentes elementos variáveis, além do SKU, como ID de categoria, código de cor e código de tamanho, por exemplo. Nesses casos, cada elemento é uma variável separada na definição de dados de ponto de acesso ou mapa de imagem no recurso de banner do carrossel.
+No entanto, em casos complexos, o URL do Quickview tem vários elementos diferentes, além do SKU, como ID de categoria, código de cor e código de tamanho. Nesses casos, cada elemento é uma variável separada na definição de dados de ponto de acesso ou mapa de imagem no recurso de banner do carrossel.
 
 Considere os seguintes exemplos de URLs do Quickview e seus pontos de acesso ou variáveis de mapa de imagem resultantes:
 
@@ -186,7 +186,7 @@ Para carregar banners de imagem, consulte [Fazer upload de ativos](/help/assets/
 
 >[!NOTE]
 >
->Os usuários não administrativos devem ser adicionados ao **[!UICONTROL dam-users]** para criar ou editar banners do carrossel. Se tiver problemas para criar ou editar o, consulte o administrador do sistema que pode adicioná-lo ao **[!UICONTROL dam-users]** grupo.
+>Os usuários não administrativos devem ser adicionados ao **[!UICONTROL `dam-users`]** para criar ou editar banners do carrossel. Se tiver problemas para criar ou editar o, consulte o administrador do sistema que pode adicioná-lo ao **[!UICONTROL `dam-users`]** grupo.
 
 **Para criar Conjuntos de Carrossel:**
 
@@ -270,14 +270,14 @@ Consulte também [Adicionar mapas de imagem](/help/assets/image-maps.md).
 
 1. No Assets, navegue até o conjunto de carrossel que deseja tornar interativo.
 1. Selecione o conjunto de carrossel e **[!UICONTROL Editar]**. O Editor do visualizador do carrossel é aberto.
-1. Selecione o slide que deseja tornar interativo.
+1. Selecione o slide que você deseja tornar interativo.
 1. Próximo ao canto superior esquerdo da página, selecione **[!UICONTROL Ponto de acesso]** ou **[!UICONTROL Mapa de imagem]**.
 1. Siga um destes procedimentos:
 
    * Para pontos de acesso: na imagem, selecione um local onde deseja que o ponto de acesso apareça.
    * Para mapas de imagem: na imagem, selecione e arraste de cima à esquerda para baixo à direita para criar a área do mapa de imagem. Você pode ajustar o tamanho do mapa de imagem arrastando os cantos.
 
-   Se necessário, arraste o ponto de acesso ou o mapa de imagem para um novo local. Adicione pontos de acesso ou mapas de imagem adicionais conforme necessário.
+   Se necessário, arraste o ponto de acesso ou o mapa de imagem para um novo local. Adicione mais pontos de acesso ou mapas de imagem, conforme necessário.
 
    Para excluir um ponto de acesso ou mapa de imagem, selecione o **[!UICONTROL Ações]** guia. No cabeçalho **[!UICONTROL Mapas e pontos de acesso]**, no menu suspenso **[!UICONTROL Tipo selecionado]**, selecione o nome do ponto de acesso ou mapa de imagem que deseja remover. Selecione o **[!UICONTROL Lixeira]** ícone ao lado do menu, selecione **[!UICONTROL Excluir]**.
 
@@ -336,7 +336,7 @@ Consulte [Fragmentos de experiência](/help/sites-authoring/experience-fragments
 
 >[!NOTE]
 >
->Os usuários não administrativos devem ser adicionados ao **[!UICONTROL dam-users]** para criar ou editar banners do carrossel. Se tiver problemas para criar ou editar o, consulte o administrador do sistema que pode adicioná-lo ao **[!UICONTROL dam-users]** grupo.
+>Os usuários não administrativos devem ser adicionados ao **[!UICONTROL `dam-users`]** para criar ou editar banners do carrossel. Se tiver problemas para criar ou editar o, consulte o administrador do sistema que pode adicioná-lo ao **[!UICONTROL dam-users]** grupo.
 
 É possível executar várias tarefas de edição em Conjuntos de carrosséis, como as seguintes:
 

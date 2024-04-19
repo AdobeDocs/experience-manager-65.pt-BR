@@ -5,10 +5,10 @@ exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 40%
+source-wordcount: '548'
+ht-degree: 41%
 
 ---
 
@@ -28,7 +28,7 @@ O restante deste guia terá como foco o acesso ao GraphQL e a entrega de Fragmen
 
 ## Como fornecer um fragmento de conteúdo usando o GraphQL {#how-to-deliver-a-content-fragment}
 
-Os arquitetos da informação devem projetar consultas para seus endpoints de canal para fornecer conteúdo. Essas consultas só devem ser consideradas uma vez por endpoint por modelo. Para os propósitos deste guia de introdução, você deve criar apenas um.
+Os arquitetos da informação devem projetar consultas para seus endpoints de canal para fornecer conteúdo. Considere essas consultas apenas uma vez por endpoint, por modelo. Para este guia de introdução, crie apenas um.
 
 1. Faça logon no AEM e acesse o [Interface GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md):
    * Por exemplo: `http://<host>:<port>/aem/graphiql.html`.

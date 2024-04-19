@@ -9,9 +9,9 @@ exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -236,17 +236,17 @@ Antes de uma implantação, leia o [Descrição geral](#general-description) aci
 
 * **Implantar a aplicação Web AEM**
 
-   * Baixar arquivo AEM war
-   * Faça as configurações em web.xml, se necessário (veja acima a Descrição geral)
+   * Baixe o arquivo AEM war.
+   * Faça as configurações em web.xml, se necessário (veja acima na Descrição geral).
 
-      * Descompactar arquivo WEB-INF/web.xml
-      * altere o parâmetro sling.run.modes para publish
-      * remova o comentário do parâmetro inicial sling.home e defina este caminho conforme necessário
-      * Recompactar arquivo web.xml
+      * Descompacte o arquivo WEB-INF/web.xml.
+      * Altere o parâmetro sling.run.modes para publish.
+      * Remova o comentário do parâmetro inicial sling.home e defina este caminho conforme necessário.
+      * Recompacte o arquivo web.xml.
 
-   * Renomeie o arquivo AEM war como ROOT.war se quiser implantá-lo como aplicativo Web raiz, renomeie-o para, por exemplo, aemauthor.war se quiser que o aemauthor seja a raiz de contexto
-   * copie-o na pasta webapps do tomcat
-   * aguarde até que o AEM seja instalado
+   * Renomeie o arquivo AEM war como ROOT.war se desejar implantá-lo como aplicativo Web raiz. Renomeie-o para aemauthor.war se desejar que o aemauthor seja a raiz de contexto.
+   * Copie-o na pasta de aplicativos da Web do Tomcat.
+   * Espere até que o AEM seja instalado.
 
 ## Resolução de problemas {#troubleshooting}
 

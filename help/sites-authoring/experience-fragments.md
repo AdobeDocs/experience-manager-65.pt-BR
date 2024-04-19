@@ -5,10 +5,10 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Experience Fragments
 role: User
-source-git-commit: b90b62418edfa9cef36d99de554a340fad07d978
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1509'
-ht-degree: 70%
+source-wordcount: '1505'
+ht-degree: 71%
 
 ---
 
@@ -368,10 +368,10 @@ Usando o seletor `.plain.` no URL, você poderá acessar a representação HTML 
 
 >[!NOTE]
 >
->Embora isso esteja disponível diretamente no navegador, [o principal objetivo é permitir que outros aplicativos (por exemplo, aplicativos Web de terceiros, implementações personalizadas de publicações de conteúdo para dispositivos móveis) acessem o conteúdo do Fragmento de experiência diretamente, usando apenas o URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
+>Embora isso esteja diretamente disponível no navegador, [o objetivo principal é permitir que outros aplicativos (por exemplo, aplicativos da Web de terceiros, implementações móveis personalizadas) acessem o conteúdo do fragmento de experiência diretamente, usando apenas o URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
 
 ## Exportar fragmentos de experiência {#exporting-experience-fragments}
 
-Por padrão, os fragmentos de experiência são entregues no formato HTML. Isso pode ser usado por canais AEM e de terceiros.
+Por padrão, os fragmentos de experiência são entregues no formato HTML. Isso pode ser usado por canais do AEM e de terceiros.
 
 Para exportar para o Adobe Target, também é possível usar o JSON. Consulte [Integração do Target com os Fragmentos de experiência](/help/sites-administering/experience-fragments-target.md) para obter informações completas.

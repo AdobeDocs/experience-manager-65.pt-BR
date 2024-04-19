@@ -10,9 +10,9 @@ exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '3442'
+source-wordcount: '3441'
 ht-degree: 0%
 
 ---
@@ -368,11 +368,11 @@ tag HTML para incluir o componente de link gráfico no zip importado. Aqui, &quo
 
 ### Parsys {#parsys}
 
-O componente parsys do AEM é um componente de contêiner que pode conter outros componentes do AEM. É possível adicionar um componente parsys no HTML importado. Isso permite que o usuário adicione/exclua componentes editáveis do AEM na página de aterrissagem mesmo após sua importação.
+O componente AEM Parsys é um componente de contêiner que pode conter outros componentes AEM. É possível adicionar um componente Parsys no HTML importado. Isso permite que o usuário adicione/exclua componentes editáveis do AEM na página de aterrissagem mesmo após sua importação.
 
 O sistema de parágrafo oferece aos usuários a capacidade de adicionar componentes usando o sidekick.
 
-Marcação HTML para inserir um componente parsys ( `foundation/components/parsys`) no HTML dentro do pacote de design:
+Marcação HTML para inserir um componente Parsys ( `foundation/components/parsys`) no HTML dentro do pacote de design:
 
 ```xml
 <div data-cq-component="parsys">
@@ -383,9 +383,9 @@ Marcação HTML para inserir um componente parsys ( `foundation/components/parsy
 
 A inclusão da marcação acima no HTML faz o seguinte:
 
-* Insere um componente parsys do AEM (foundation/components/parsys) na landing page criada após a importação do pacote de design.
-* Inicializa o sidekick com componentes padrão. Novos componentes podem ser adicionados à página de aterrissagem arrastando componentes do sidekick para o componente parsys.
-* Dois componentes de título também fazem parte do parsys.
+* Insere um componente AEM Parsys (foundation/components/parsys) na landing page criada após a importação do pacote de design.
+* Inicializa o sidekick com componentes padrão. Novos componentes podem ser adicionados à página de aterrissagem arrastando componentes do sidekick para o componente Parsys.
+* Dois componentes do título também fazem parte do Parsys.
 
 ### Público-alvo {#target}
 
@@ -441,7 +441,7 @@ Se nenhuma codificação for especificada no HTML importado, a codificação pad
 
 ### Sobrepondo modelo {#overlaying-template}
 
-O modelo de página de aterrissagem em branco pode ser sobreposto ao criar um em: `/apps/<appName>/designimporter/templates/<templateName>`
+O modelo de página de aterrissagem em branco pode ser sobreposto criando um em: `/apps/<appName>/designimporter/templates/<templateName>`
 
 As etapas para criar um modelo no AEM são explicadas [aqui](/help/sites-developing/templates.md).
 
@@ -543,7 +543,7 @@ Ao importar o pacote de design, você pode encontrar vários erros, descritos ne
 
 ### Inicialização do sidekick com componentes relevantes para a página de aterrissagem {#initialization-of-sidekick-with-landing-page-relevant-components}
 
-Se o pacote de design contiver uma marcação de componente parsys, após a importação, o sidekick começará a mostrar componentes relevantes da página inicial. Você pode arrastar e soltar novos componentes no componente parsys na página de aterrissagem. Você também pode ir para o modo de design e adicionar novos componentes ao sidekick.
+Se o pacote de design contiver uma marcação de componente Parsys, após a importação, o sidekick começará a mostrar componentes relevantes da página inicial. Você pode arrastar e soltar novos componentes no componente Parsys na página de aterrissagem. Você também pode ir para o modo de design e adicionar novos componentes ao sidekick.
 
 ### Mensagens de erro exibidas durante a importação {#error-messages-displayed-during-import}
 

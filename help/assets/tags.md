@@ -11,9 +11,9 @@ feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '6664'
+source-wordcount: '6663'
 ht-degree: 5%
 
 ---
@@ -599,7 +599,7 @@ Para alterar a configuração das Tags de Experience Platform (incluindo Proprie
 
 As tags Experience Platform podem ter vários ambientes de desenvolvimento, um ambiente de preparo e um ambiente de produção. Por padrão, a Configuração em nuvem das tags de Experience Platform no Experience Manager aponta o nó do autor de Experience Manager para o ambiente de preparo das tags de Experience Platform. O nó Publicação do Experience Manager aponta para o ambiente de Produção das Tags do Experience Platform. Essa organização significa que, com as configurações padrão de Experience Manager, é necessário publicar a biblioteca de tags Experience Platform no ambiente de preparo. Isso permite que você o use no autor do Experience Manager. Em seguida, você pode publicá-lo no ambiente de Produção para que ele possa ser usado na publicação do Experience Manager.
 
-Consulte [Ambientes](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) para obter mais informações sobre ambientes de Tags do Experience Platform.
+Consulte [Ambientes](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=pt-BR) para obter mais informações sobre ambientes de Tags do Experience Platform.
 
 A publicação de uma biblioteca envolve estas duas etapas:
 

@@ -10,7 +10,7 @@ exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -106,8 +106,8 @@ Para ser notificado somente para ações na página definida pelo caminho, defin
 
 Se você optou por receber notificações na Caixa de entrada do AEM, a caixa de entrada estará cheia de notificações. Você pode [exibir suas notificações](#viewing-your-notifications), em seguida, selecione as notificações necessárias para:
 
-* Aprove-a clicando em **Aprovar**: o valor no **Ler** a coluna está definida como **true**.
+* Aceite-o clicando em **Aprovar**: o valor no **Ler** a coluna está definida como **true**.
 
-* Exclua-a clicando em **Excluir**.
+* Elimine-o clicando em **Excluir**.
 
 ![chlimage_1-5](assets/chlimage_1-5.jpeg)

@@ -5,7 +5,7 @@ content-type: troubleshooting
 topic-tags: publish
 exl-id: 3c48660e-5e4f-4615-82d4-9f1f285c2a39
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 0%
@@ -30,7 +30,7 @@ O ECMAScript é uma linguagem de script. Ele é usado para aplicativos de script
    * (Caminho para a etapa Atribuir tarefa) `/apps/fd/dashboard/scripts/participantChooser`
    * (Caminho para etapa de Assinatura) `/apps/fd/workflow/scripts/adobesign`
 
-1. Adicione o ECMAScript, que tem a lógica de selecionar dinamicamente um usuário, ao arquivo .ecma. Clique em **[!UICONTROL Salvar tudo]**.
+1. Adicione o ECMAScript, que tem a lógica para selecionar dinamicamente um usuário, ao arquivo .ecma. Clique em **[!UICONTROL Salvar tudo]**.
 
    Para obter exemplos de scripts, consulte [Exemplos de ECMAScripts para selecionar dinamicamente um usuário ou grupo](/help/forms/using/dynamically-select-a-user-or-group-for-aem-workflow.md#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group).
 

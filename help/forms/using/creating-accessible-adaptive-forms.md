@@ -7,16 +7,16 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2099'
 ht-degree: 0%
 
 ---
 
 # Criação de formulários adaptáveis acessíveis{#creating-accessible-adaptive-forms}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve uma abordagem mais antiga para a criação do Forms adaptável usando componentes de base. </span>
 
 ## Introdução {#introduction}
 
@@ -36,7 +36,7 @@ Você precisa de uma ferramenta de acessibilidade, como **Inspetor de Nome e Des
 
 ### Baixar e instalar a ferramenta de teste de acessibilidade
 
-A ferramenta Inspetor de nome e descrição acessíveis (ANDI) ajuda a identificar e corrigir problemas relacionados à conformidade de acessibilidade no conteúdo da Web. É a ferramenta recomendada sob as diretrizes Trusted Tester v5 do Departamento de Segurança Interna. Ele é desenvolvido pelo departamento de Administração de Segurança Social &#x200B; Estados Unidos para verificar a conformidade da Seção 508 do conteúdo da Web. A ferramenta:
+A ferramenta Accessible Name and Description Inspetor (ANDI) ajuda a identificar e corrigir problemas relacionados à conformidade de acessibilidade no conteúdo da Web. É a ferramenta recomendada sob as diretrizes Trusted Tester v5 do Departamento de Segurança Interna. Ele é desenvolvido pelo departamento de Administração de Segurança Social &#x200B; Estados Unidos para verificar a conformidade da Seção 508 do conteúdo da Web. A ferramenta:
 
 * Ajuda a detectar problemas de acessibilidade&#x200B; em uma página da Web
 * Fornece sugestões para melhorar a acessibilidade&#x200B;
@@ -62,7 +62,7 @@ Você deve se concentrar em quatro aspectos principais: navegação pelo teclado
 Aplique o tema acessível pelo Ultramarine ao seu formulário adaptável existente. Para aplicar o tema:
 
 1. Abra o formulário adaptável para edição.
-1. Selecione um componente e selecione o ícone pai. No menu de contexto, selecione **[!UICONTROL Contêiner de formulário adaptável]** e, em seguida, selecione o ícone configurar.
+1. Selecione um componente e selecione o ícone pai. No menu de contexto, selecione **[!UICONTROL Contêiner de formulário adaptável]** e, em seguida, selecione o ícone Configurar.
 1. Selecione o tema acessível por ultramarinos no navegador de propriedades e selecione **[!UICONTROL Salvar]** ícone.
 1. Atualize a janela do navegador. O tema é aplicado ao formulário adaptável.
 
@@ -90,7 +90,7 @@ Depois de aplicar um tema acessível, execute as correções adicionais listadas
 
 1. Defina o texto de acessibilidade personalizado para o componente seletor de datas. Por exemplo, insira sua data de nascimento. Os leitores de tela leem esses textos de acessibilidade personalizados.
 
-1. Use descrição curta em vez de descrição longa para componentes de formulário adaptáveis. Uma descrição longa adiciona o botão de ajuda. Verifique se a área adaptável não tem nenhum botão de ajuda.
+1. Use descrição curta em vez de descrição longa para componentes de formulário adaptáveis. Uma descrição longa adiciona o botão de ajuda. Certifique-se de que o adaptável não tenha nenhum botão Ajuda.
 
 1. Adicione um texto de acessibilidade personalizado a todas as células somente leitura das tabelas. Além disso, desative todas as células somente leitura das tabelas.
 

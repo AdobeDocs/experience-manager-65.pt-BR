@@ -7,9 +7,9 @@ role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2136'
+source-wordcount: '2113'
 ht-degree: 3%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 3%
 
 [!DNL Adobe Experience Manager Assets] O vem com um conjunto de fluxos de trabalho e manipuladores de mídia padrão para processar ativos. Um fluxo de trabalho define as tarefas a serem executadas nos ativos e delega as tarefas específicas aos manipuladores de mídia, por exemplo, geração de miniaturas ou extração de metadados.
 
-Um workflow pode ser configurado para ser executado automaticamente quando um ativo de um tipo MIME específico é carregado. As etapas de processamento são definidas em termos de uma série [!DNL Assets] manipuladores de mídia. [!DNL Experience Manager] fornece alguns [manipuladores integrados,](#default-media-handlers) e outros podem ser [desenvolvido de forma personalizada](#creating-a-new-media-handler) ou definido por meio da delegação do processo a um [ferramenta de linha de comando](#command-line-based-media-handler).
+Um workflow pode ser configurado para ser executado automaticamente quando um ativo de um tipo MIME específico é carregado. As etapas de processamento são definidas em termos de uma série [!DNL Assets] manipuladores de mídia. [!DNL Experience Manager] fornece alguns [manipuladores incorporados](#default-media-handlers), e os extras podem ser [desenvolvido de forma personalizada](#creating-a-new-media-handler) ou definido por meio da delegação do processo a um [ferramenta de linha de comando](#command-line-based-media-handler).
 
-Os manipuladores de mídia são serviços na [!DNL Assets] que executam ações específicas em ativos. Por exemplo, quando um arquivo de áudio MP3 é carregado em [!DNL Experience Manager], um fluxo de trabalho aciona um manipulador MP3 que extrai os metadados e gera uma miniatura. Geralmente, os manipuladores de mídia são usados em combinação com fluxos de trabalho. Os tipos MIME mais comuns são suportados no [!DNL Experience Manager]. Tarefas específicas podem ser executadas em ativos estendendo/criando fluxos de trabalho, estendendo/criando manipuladores de mídia ou desativando/ativando manipuladores de mídia.
+Os manipuladores de mídia são serviços na [!DNL Assets] que executam ações específicas em ativos. Por exemplo, quando um arquivo de áudio MP3 é carregado em [!DNL Experience Manager], um fluxo de trabalho aciona um manipulador MP3 que extrai os metadados e gera uma miniatura. Os manipuladores de mídia são usados com workflows. Os tipos MIME mais comuns são suportados no [!DNL Experience Manager]. Tarefas específicas podem ser executadas em ativos estendendo ou criando fluxos de trabalho, estendendo ou criando manipuladores de mídia ou desativando e ativando manipuladores de mídia.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Os seguintes manipuladores de mídia estão disponíveis no [!DNL Assets] e lida
 | [!UICONTROL ManipuladorTexto] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>application/illustrator</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Importante</b> - Ao fazer upload de um arquivo MP3, é [processado usando uma biblioteca de terceiros](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). A biblioteca calcula um comprimento aproximado não preciso se o MP3 tiver taxa de bits variável (VBR). |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Importante</b> - Um arquivo MP3 carregado é [processado usando uma biblioteca de terceiros](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). A biblioteca calcula um comprimento aproximado não preciso se o MP3 tiver taxa de bits variável (VBR). |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>application/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
@@ -65,9 +65,9 @@ Para exibir os manipuladores de mídia ativos:
 
 ## Usar manipuladores de mídia em fluxos de trabalho para executar tarefas em ativos {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
-Os manipuladores de mídia são serviços que geralmente são usados em combinação com fluxos de trabalho.
+Os manipuladores de mídia são serviços usados com fluxos de trabalho do.
 
-[!DNL Experience Manager] O tem alguns fluxos de trabalho padrão para processar ativos. Para visualizá-las, abra o console Fluxo de trabalho e clique no link **[!UICONTROL Modelos]** guia: os títulos do fluxo de trabalho que começam com [!DNL Assets] são os ativos específicos.
+[!DNL Experience Manager] O tem alguns fluxos de trabalho padrão para processar ativos. Para visualizá-las, abra o console Fluxo de trabalho e clique no link **[!UICONTROL Modelos]** guia: os títulos do fluxo de trabalho que começam com [!DNL Assets] são os específicos dos ativos.
 
 Os workflows existentes podem ser estendidos e novos podem ser criados para processar ativos de acordo com requisitos específicos.
 
@@ -92,7 +92,7 @@ Para suportar um novo tipo de mídia ou executar tarefas específicas em um ativ
 
 A melhor maneira de iniciar uma implementação é herdar de uma implementação abstrata fornecida que cuida da maioria das coisas e fornece um comportamento padrão razoável: o `com.day.cq.dam.core.AbstractAssetHandler` classe.
 
-Esta classe já fornece um descritor de serviço abstrato. Portanto, se você herdar desta classe e usar o maven-sling-plugin, defina o sinalizador de herança como `true`.
+Esta classe já fornece um descritor de serviço abstrato. Portanto, se você herdou desta classe e usou o maven-sling-plugin, certifique-se de definir o sinalizador de herança como `true`.
 
 Implemente os seguintes métodos:
 
@@ -108,14 +108,14 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 
 A interface e as classes incluem:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interface: esta interface descreve o serviço que adiciona suporte para tipos MIME específicos. A adição de um novo tipo MIME requer a implementação dessa interface. A interface contém métodos para importar e exportar os documentos específicos, para criar miniaturas e extrair metadados.
+* `com.day.cq.dam.api.handler.AssetHandler` interface: esta interface descreve o serviço que adiciona suporte para tipos MIME específicos. A adição de um tipo MIME requer a implementação dessa interface. A interface contém métodos para importar e exportar os documentos específicos, para criar miniaturas e extrair metadados.
 * `com.day.cq.dam.core.AbstractAssetHandler` classe: essa classe serve como base para todas as outras implementações do manipulador de ativos e fornece funcionalidades comuns usadas.
 * classe `com.day.cq.dam.core.AbstractSubAssetHandler`:
-   * Essa classe serve como base para todas as outras implementações do manipulador de ativos e fornece a funcionalidade comum usada, além da funcionalidade usada frequentemente na extração de ativos secundários.
+   * Essa classe serve como base para todas as outras implementações do manipulador de ativos e fornece a funcionalidade usada com frequência, além da funcionalidade usada com frequência para a extração de ativos secundários.
    * A melhor maneira de iniciar uma implementação é herdar de uma implementação abstrata fornecida que cuida da maioria das coisas e fornece o comportamento padrão razoável: a classe com.day.cq.dam.core.AbstractAssetHandler.
-   * Esta classe já fornece um descritor de serviço abstrato. Portanto, se você herdar desta classe e usar o maven-sling-plugin, defina o sinalizador de herança como true.
+   * Esta classe já fornece um descritor de serviço abstrato. Portanto, se você herdou desta classe e usou o maven-sling-plugin, certifique-se de definir o sinalizador de herança como true.
 
-Os seguintes métodos precisam ser implementados:
+Os seguintes métodos devem ser implementados:
 
 * `extractMetadata()`: esse método extrai todos os metadados disponíveis.
 * `getThumbnailImage()`: esse método cria uma imagem em miniatura do ativo passado.
@@ -127,13 +127,13 @@ empacotar my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&qu
 
 A interface e as classes incluem:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interface: esta interface descreve o serviço que adiciona suporte para tipos MIME específicos. A adição de um novo tipo MIME requer a implementação dessa interface. A interface contém métodos para importar e exportar os documentos específicos, para criar miniaturas e extrair metadados.
+* `com.day.cq.dam.api.handler.AssetHandler` interface: esta interface descreve o serviço que adiciona suporte para tipos MIME específicos. A adição de um tipo MIME requer a implementação dessa interface. A interface contém métodos para importar e exportar os documentos específicos, para criar miniaturas e extrair metadados.
 * `com.day.cq.dam.core.AbstractAssetHandler` classe: essa classe serve como base para todas as outras implementações do manipulador de ativos e fornece funcionalidades comuns usadas.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` classe: essa classe serve como base para todas as outras implementações do manipulador de ativos e fornece a funcionalidade comum usada, além da funcionalidade comum usada para a extração de ativos secundários.
 
 #### Exemplo: criar um manipulador de texto específico {#example-create-a-specific-text-handler}
 
-Nesta seção, você criará um Manipulador de texto específico que gera miniaturas com uma marca d&#39;água.
+Nesta seção, você cria um Manipulador de texto específico que gera miniaturas com uma marca d&#39;água.
 
 Proceda da seguinte forma:
 
@@ -144,8 +144,8 @@ Depois de executar o procedimento a seguir, ao fazer upload de um arquivo TXT no
 1. No Eclipse, crie `myBundle` [!DNL Maven] projeto:
 
    1. Na barra de menus, clique em **[!UICONTROL Arquivo]** > **[!UICONTROL Novo]** > **[!UICONTROL Outro]**.
-   1. Na caixa de diálogo, expanda a variável [!DNL Maven] , selecione [!DNL Maven] projeto e clique em **[!UICONTROL Próxima]**.
-   1. Marque a caixa Criar um projeto simples e a caixa Usar locais padrão do Workspace e clique em **[!UICONTROL Próxima]**.
+   1. Na caixa de diálogo, expanda a variável [!DNL Maven] , selecione a [!DNL Maven] projeto e clique em **[!UICONTROL Próxima]**.
+   1. Marque a caixa Criar um projeto simples e a caixa Usar local padrão do Workspace e clique em **[!UICONTROL Próxima]**.
    1. Definir um [!DNL Maven] projeto:
 
       * ID do grupo: `com.day.cq5.myhandler`.
@@ -155,10 +155,10 @@ Depois de executar o procedimento a seguir, ao fazer upload de um arquivo TXT no
 
    1. Clique em **[!UICONTROL Concluir]**.
 
-1. Defina o [!DNL Java] compilador para a versão 1.5:
+1. Defina o [!DNL Java™] compilador para a versão 1.5:
 
    1. Clique com o botão direito do mouse no `myBundle` projeto, selecione [!UICONTROL Propriedades].
-   1. Selecionar [!UICONTROL Compilador Java] e defina as seguintes propriedades como 1.5:
+   1. Selecionar [!UICONTROL Compilador Java™] e defina as seguintes propriedades como 1.5:
 
       * Nível de conformidade do compilador
       * Compatibilidade de arquivos .class gerados
@@ -283,16 +283,16 @@ Depois de executar o procedimento a seguir, ao fazer upload de um arquivo TXT no
     </dependencies>
    ```
 
-1. Criar o pacote `com.day.cq5.myhandler` que contém o [!DNL Java] classes em `myBundle/src/main/java`:
+1. Criar o pacote `com.day.cq5.myhandler` que contém o [!DNL Java™] classes em `myBundle/src/main/java`:
 
    1. Em meu pacote, clique com o botão direito do mouse `src/main/java`, selecione Novo e, em seguida, Pacote.
    1. Nomear como `com.day.cq5.myhandler` e clique em Finish.
 
-1. Crie o [!DNL Java] classe `MyHandler`:
+1. Crie o [!DNL Java™] classe `MyHandler`:
 
    1. Entrada [!DNL Eclipse], em `myBundle/src/main/java`, clique com o botão direito do mouse no `com.day.cq5.myhandler` pacote. Selecionar [!UICONTROL Novo], depois [!UICONTROL Classe].
-   1. Na janela de diálogo, nomeie o [!DNL Java] classe `MyHandler` e clique em [!UICONTROL Concluir]. [!DNL Eclipse] cria e abre o arquivo `MyHandler.java`.
-   1. Entrada `MyHandler.java` substitua o código existente pelo seguinte e salve as alterações:
+   1. Na janela de diálogo, nomeie o [!DNL Java™] classe `MyHandler` e clique em [!UICONTROL Concluir]. [!DNL Eclipse] cria e abre o arquivo `MyHandler.java`.
+   1. Entrada `MyHandler.java`, substitua o código existente pelo seguinte e salve as alterações:
 
    ```java
    package com.day.cq5.myhandler;
@@ -434,7 +434,7 @@ Depois de executar o procedimento a seguir, ao fazer upload de um arquivo TXT no
    }
    ```
 
-1. Compilar o [!DNL Java] e crie o pacote:
+1. Compilar o [!DNL Java™] e crie o pacote:
 
    1. Clique com o botão direito do mouse no `myBundle` projeto, selecione **[!UICONTROL Executar como]**, depois **[!UICONTROL Instalação do Maven]**.
    1. O pacote `myBundle-0.0.1-SNAPSHOT.jar` (contendo a classe compilada) é criado em `myBundle/target`.
@@ -443,22 +443,22 @@ Depois de executar o procedimento a seguir, ao fazer upload de um arquivo TXT no
 1. Copiar o pacote `myBundle-0.0.1-SNAPSHOT.jar` e armazená-lo em `/apps/myApp/install` (por exemplo, com WebDAV). O novo manipulador de texto agora está ativo no [!DNL Experience Manager].
 1. No navegador, abra o [!UICONTROL Console de gerenciamento Web Apache Felix]. Selecione o [!UICONTROL Componentes] e desativar o manipulador de texto padrão `com.day.cq.dam.core.impl.handler.TextHandler`.
 
-## Manipulador de mídia baseado na linha de comando {#command-line-based-media-handler}
+## Manipulador de mídia baseado em linha de comando {#command-line-based-media-handler}
 
-[!DNL Experience Manager] permite executar qualquer ferramenta de linha de comando em um fluxo de trabalho para converter ativos (como [!DNL ImageMagick]) e para adicionar a nova representação ao ativo. Você só precisa instalar a ferramenta de linha de comando no disco que hospeda o [!DNL Experience Manager] e para adicionar e configurar uma etapa do processo ao fluxo de trabalho. O processo chamado, chamado `CommandLineProcess`O também permite filtrar de acordo com tipos MIME específicos e criar várias miniaturas com base na nova representação.
+[!DNL Experience Manager] permite executar qualquer ferramenta de linha de comando em um fluxo de trabalho para converter ativos (como [!DNL ImageMagick]) e para adicionar a nova representação ao ativo. Instale somente a ferramenta de linha de comando no disco que hospeda a [!DNL Experience Manager] e para adicionar e configurar uma etapa do processo no fluxo de trabalho. O processo chamado, chamado `CommandLineProcess`O também filtra de acordo com tipos MIME específicos e para criar várias miniaturas com base na nova representação.
 
 As seguintes conversões podem ser executadas e armazenadas automaticamente no [!DNL Assets]:
 
 * Transformação do EPS e da IA usando [ImageMagick](https://www.imagemagick.org/script/index.php) e [Ghostscript](https://www.ghostscript.com/).
 * Transcodificação de vídeo FLV usando [FFmpeg](https://ffmpeg.org/).
 * Codificação de MP3 usando [MANCO](https://lame.sourceforge.io/).
-* Processamento de áudio usando [SOX](https://sox.sourceforge.io/).
+* Processamento de áudio usando [SOX](https://sourceforge.net/projects/sox/).
 
 >[!NOTE]
 >
 >Em sistemas não Windows, a ferramenta FFmpeg retorna um erro ao gerar representações para um ativo de vídeo que tem uma aspa simples (&#39;) em seu nome de arquivo. Se o nome do arquivo de vídeo incluir uma aspa simples, remova-a antes de fazer upload no [!DNL Experience Manager].
 
-A variável `CommandLineProcess` O processo do executa as seguintes operações na ordem em que estão listadas:
+A variável `CommandLineProcess` O processo executa as seguintes operações na ordem listada:
 
 * Filtra o arquivo de acordo com tipos MIME específicos, se especificado.
 * Cria um diretório temporário no disco que hospeda o [!DNL Experience Manager] servidor.
@@ -470,14 +470,14 @@ A variável `CommandLineProcess` O processo do executa as seguintes operações 
 
 ### Um exemplo usando [!DNL ImageMagick] {#an-example-using-imagemagick}
 
-O exemplo a seguir mostra como configurar a etapa do processo da linha de comando para que sempre que um ativo com o GIF ou TIFF do tipo e miMIME for adicionado ao `/content/dam` no [!DNL Experience Manager] uma imagem invertida do original é criada junto com três miniaturas adicionais (140x100, 48x48 e 10x250).
+O exemplo a seguir mostra como configurar a etapa do processo da linha de comando para que sempre que um ativo com o GIF ou TIFF do tipo e miMIME for adicionado ao `/content/dam` no [!DNL Experience Manager] uma imagem invertida do original é criada. Também são criadas mais três miniaturas: 140x100, 48x48 e 10x250.
 
 Para fazer isso, use [!DNL ImageMagick]. [!DNL ImageMagick] O é um software gratuito de linha de comando usado para criar, editar e compor imagens bitmap.
 
 Instalar [!DNL ImageMagick] no disco que hospeda o [!DNL Experience Manager] servidor:
 
 1. Instalar [!DNL ImageMagick]: Consulte [Documentação do ImageMagick](https://www.imagemagick.org/script/download.php).
-1. Configure a ferramenta para executar a conversão na linha de comando.
+1. Configurar a ferramenta para que, uma vez a linha de comando, você possa executar `convert`.
 1. Para verificar se a ferramenta está instalada corretamente, execute o comando a seguir `convert -h` na linha de comando.
 
    Ele exibe uma tela de ajuda com todas as opções possíveis da ferramenta de conversão.
@@ -514,7 +514,7 @@ Por exemplo, se [!DNL ImageMagick] O está instalado no disco que hospeda o [!DN
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-em seguida, quando o fluxo de trabalho é executado, a etapa se aplica somente aos ativos que têm `image/gif` ou `mime:image/tiff` as `mime-types`, cria uma imagem invertida do original, converte-a em JPG e cria três miniaturas com as dimensões: 140x100, 48x48 e 10x250.
+Em seguida, quando o fluxo de trabalho é executado, a etapa se aplica somente aos ativos que têm `image/gif` ou `mime:image/tiff` as `mime-types`. Ele cria uma imagem invertida do original, converte-o em JPG e cria três miniaturas com as dimensões 140x100, 48x48 e 10x250.
 
 Use o seguinte [!UICONTROL Argumentos do processo] para criar as três miniaturas padrão usando [!DNL ImageMagick]:
 

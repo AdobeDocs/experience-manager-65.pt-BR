@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1831'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Um administrador pode configurar uma pasta de rede, conhecida como *pasta monito
 Antes de configurar uma pasta monitorada, verifique o seguinte:
 
 * As pastas monitoradas são um recurso avançado dos formulários AEM. Ele requer o pacote complementar do AEM forms para funcionar. Verifique se o pacote complementar apropriado do AEM Forms está instalado e configurado.
-* Você pode criar a pasta monitorada em um armazenamento local ou compartilhado. Verifique se o usuário do AEM Forms configurado para executar a pasta monitorada tem permissões de leitura e gravação nessa pasta.
+* Você pode criar a pasta monitorada em um armazenamento compartilhado ou em um armazenamento local. Verifique se o usuário do AEM Forms configurado para executar a pasta monitorada tem permissões de leitura e gravação nessa pasta.
 * Você pode usar um Serviço, Fluxo de trabalho ou Script para automatizar uma operação com a pasta monitorada. Verifique se o Serviço, Fluxo de trabalho ou Script correspondente foi criado e está pronto para ser executado. Para obter informações sobre como criar um Serviço, Fluxo de Trabalho e Script, consulte [Vários métodos de processamento de arquivos](/help/forms/using/watched-folder-in-aem-forms.md#various-methods-for-processing-files).
 * Uma pasta monitorada tem várias propriedades, consulte [Propriedades da pasta monitorada](watched-folder-in-aem-forms.md#watchedfolderproperties).
 

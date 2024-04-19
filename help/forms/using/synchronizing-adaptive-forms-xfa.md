@@ -7,9 +7,9 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1226'
 ht-degree: 0%
 
 ---
@@ -46,13 +46,13 @@ O artigo usa um exemplo para demonstrar como sincronizar o formulário adaptáve
 
 Depois de fazer upload do pacote, é possível visualizar esses ativos na interface do usuário do AEM Forms.
 
-Instale o pacote usando o gerenciador de pacotes: `https://<server>:<port>/crx/packmgr/index.jsp`
+Instale o pacote usando o Gerenciador de pacotes: `https://<server>:<port>/crx/packmgr/index.jsp`
 
 O pacote contém os seguintes ativos:
 
 1. `sample-form.xdp`: o modelo de formulário XFA usado como exemplo
 
-1. `sample-xfa-af`: o formulário adaptável com base no arquivo sample-form.xdp. No entanto, esse formulário adaptável não inclui campos. Na próxima etapa, adicionaremos conteúdo a este formulário adaptável.
+1. `sample-xfa-af`: o formulário adaptável com base no arquivo sample-form.xdp. No entanto, esse formulário adaptável não inclui campos. Na próxima etapa, adicione conteúdo a este formulário adaptável.
 
 ### Adicionar conteúdo ao formulário adaptável {#add-content-to-adaptive-form-br}
 
@@ -63,7 +63,7 @@ O pacote contém os seguintes ativos:
 
 >[!NOTE]
 >
->Nas etapas anteriores, substituímos uma propriedade de um campo no arquivo XDP. Portanto, essa propriedade não será sincronizada se a propriedade correspondente no arquivo XDP for modificada posteriormente.
+>Nas etapas anteriores, você substituiu uma propriedade de um campo no arquivo XDP. Portanto, essa propriedade não é sincronizada se a propriedade correspondente no arquivo XDP for editada posteriormente.
 
 ## Detecção de alterações no arquivo XDP {#detecting-changes-in-xdp-file}
 
@@ -133,7 +133,7 @@ O campo que foi excluído também é marcado com um ícone para indicar um erro 
 
 >[!NOTE]
 >
->Os campos no formulário adaptável que têm uma associação incorreta (uma `bindRef` na caixa de diálogo de edição) também são considerados campos excluídos. Se o autor não corrigir esses erros e publicar o formulário adaptável, o campo será tratado como um campo de formulário adaptável normal não vinculado e será incluído na seção não vinculada do arquivo XML de saída.
+>Os campos no formulário adaptável que têm uma associação incorreta (uma `bindRef` na caixa de diálogo de edição) também são considerados campos excluídos. Se o autor não corrigir esses erros e publicar o formulário adaptável, o campo será tratado como um campo de formulário adaptável normal não vinculado e será incluído na seção desvinculada do arquivo XML de saída.
 
 ## Downloads {#downloads}
 

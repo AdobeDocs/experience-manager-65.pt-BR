@@ -1,6 +1,6 @@
 ---
 title: Renderização do Forms como HTML
-description: Use o serviço Forms para renderizar formulários como HTML em resposta a uma solicitação HTTP de um navegador da Web. Você pode usar a API Java e a API de serviço da Web para renderizar formulários como HTML.
+description: Use o serviço Forms para renderizar formulários como HTML em resposta a uma solicitação HTTP de um navegador da Web. Você pode usar a API Java&trade; e a API de serviço da Web para renderizar formulários como HTML.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -9,9 +9,9 @@ topic-tags: operations
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4104'
+source-wordcount: '4099'
 ht-degree: 0%
 
 ---
@@ -64,17 +64,17 @@ Você deve mover-se explicitamente de painel a painel usando o `xfa.host.pageUp`
 >
 >Se você quiser personalizar a aparência do botão HTML Digital Signature em um formulário HTML, altere as seguintes propriedades no arquivo fscdigsig.css (no arquivo adobe-forms-ds.ear > adobe-forms-ds.war):
 
-**.fsc-ds-ssb**: esta folha de estilos é aplicável se houver um campo de sinal em branco.
+**`.fsc-ds-ssb`**: esta folha de estilos é aplicável se houver um campo de sinal em branco.
 
-**.fsc-ds-ssv**: esta folha de estilos será aplicável se houver um campo Valid sign.
+**`.fsc-ds-ssv`**: esta folha de estilos será aplicável se houver um campo Valid sign.
 
-**.fsc-ds-ssc**: esta folha de estilos será aplicável se houver um campo Valid sign, mas os dados tiverem sido alterados.
+**`.fsc-ds-ssc`**: esta folha de estilos será aplicável se houver um campo Valid sign, mas os dados tiverem sido alterados.
 
-**.fsc-ds-ssi**: esta folha de estilos é aplicável se houver um campo de sinal inválido.
+**`.fsc-ds-ssi`**: esta folha de estilos é aplicável se houver um campo de sinal inválido.
 
-**.fsc-ds-popup-bg**: esta propriedade da folha de estilos não está sendo usada.
+**`.fsc-ds-popup-bg`**: esta propriedade da folha de estilos não está sendo usada.
 
-**.fsc-ds-popup-btn**: esta propriedade da folha de estilos não está sendo usada.
+**.`fsc-ds-popup-btn`**: esta propriedade da folha de estilos não está sendo usada.
 
 ## Execução de scripts {#running-scripts}
 

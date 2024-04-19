@@ -10,9 +10,9 @@ feature: Interactive Images
 role: User, Admin
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4130'
+source-wordcount: '4132'
 ht-degree: 1%
 
 ---
@@ -113,7 +113,7 @@ Durante esse processo, é importante visitar diferentes áreas do site, com dife
 
 No caso mais simples, a única parte variável no URL do Quickview é o SKU do produto. Nesse caso, o valor da SKU é a única parte dos dados necessária para adicionar pontos de acesso à imagem do banner.
 
-No entanto, em casos complexos, o URL do Quickview tem diferentes elementos variáveis, além do SKU, como ID de categoria, código de cor e código de tamanho. Nesses casos, cada elemento é uma variável separada na definição de dados do ponto de acesso no recurso de imagem interativa que pode ser comprada no Experience Manager Assets.
+No entanto, em casos complexos, o URL do Quickview tem vários elementos diferentes, além do SKU, como ID de categoria, código de cor e código de tamanho. Nesses casos, cada elemento é uma variável separada na definição de dados do ponto de acesso no recurso de imagem interativa que pode ser comprada no Experience Manager Assets.
 
 Considere os seguintes exemplos de URLs do Quickview e as variáveis de ponto de acesso resultantes:
 
@@ -271,7 +271,7 @@ Consulte [(Opcional) Visualizar imagens interativas](#optional-previewing-intera
 
    1. Próximo ao canto superior esquerdo da página Gerenciamento de pontos de acesso, selecione **[!UICONTROL Ponto de acesso]**.
    1. Na imagem, selecione um local onde deseja que o ponto de acesso apareça. Se necessário, arraste o ponto de conexão para ajustar sua localização.
-   1. Adicione pontos de acesso adicionais, conforme necessário, repetindo as etapas a e b.
+   1. Adicione pontos de acesso extras, conforme necessário, repetindo as etapas a e b.
    1. (Opcional) Para excluir um ponto de acesso, selecione-o na imagem e **[!UICONTROL Excluir]** (ícone de lixeira) no menu **[!UICONTROL Pontos de acesso]** cabeçalho.
 
 1. No campo de texto Nome, digite o nome do ponto de acesso. Esse nome também aparece na lista suspensa Ponto de acesso selecionado.
@@ -375,9 +375,9 @@ A integração é tão simples quanto remover o `IMG` e substituindo-a pelo cód
 
 Para aplicar um &quot;recorte&quot; a uma imagem interativa que pode ser comprada para um ambiente responsivo, você pode incluir o atributo de configuração Imagem interativa `ZoomView.iscommand` ao caminho. O componente `ZoomView` é chamado e `iscommand` é o comando de veiculação de imagens de &quot;recorte&quot; que você aplica.
 
-Consulte [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) atributo de configuração.
+Consulte [ZoomView.iscommand](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand) atributo de configuração.
 
-Consulte [cortar](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) comando de veiculação de imagens.
+Consulte [cortar](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop) comando de veiculação de imagens.
 
 Agora você está pronto para integrar a imagem interativa a uma visualização rápida existente no seu site.
 
