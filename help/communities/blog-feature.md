@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1670'
-ht-degree: 7%
+source-wordcount: '1696'
+ht-degree: 0%
 
 ---
 
@@ -71,7 +74,7 @@ Selecione o colocado `Blog` para que você possa acessar e selecionar o `Configu
 
 No **Configurações** especifique os recursos básicos do blog:
 
-* **Permitir miniatura de anexo**
+* **Permitir miniatura do anexo**
 
   Se marcada, uma miniatura da imagem anexada é criada.
 
@@ -117,7 +120,7 @@ No **Configurações** especifique os recursos básicos do blog:
 
   Define o número de entradas/comentários do blog exibidos por página. O padrão é 10.
 
-* **Moderada**
+* **Moderado**
 
   Se marcados, a postagem de entradas de blog e comentários deve ser aprovada antes de serem exibidos em um site publicado. O padrão é desmarcado.
 
@@ -125,7 +128,7 @@ No **Configurações** especifique os recursos básicos do blog:
 
   Se marcado, o blog será fechado para novas entradas e comentários de blog. O padrão está desmarcado.
 
-* **Editor de rich text**
+* **Editor de Rich Text**
 
   Se marcadas, as entradas de blog e os comentários podem ser inseridos com marcação. O padrão está marcado.
 
@@ -133,7 +136,7 @@ No **Configurações** especifique os recursos básicos do blog:
 
   Se marcados, permitem que os membros adicionem rótulos de tag às suas publicações (consulte **Campo de tag** guia ). O padrão está desmarcado.
 
-* **Permitir carregamento de arquivos**
+* **Permitir carregamentos de arquivo**
 
   Se marcado, permite que anexos de arquivo sejam adicionados a uma entrada de blog ou comentário. O padrão está desmarcado.
 
@@ -141,7 +144,7 @@ No **Configurações** especifique os recursos básicos do blog:
 
   Relevante apenas se `Allow File Uploads` está marcado. Este campo limita o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
 
-* **Tipos de arquivos permitidos**
+* **Tipos de arquivo permitidos**
 
   Relevante apenas se `Allow File Uploads` está marcado. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os tipos de arquivo não especificados não poderão ser carregados. O padrão é nenhum especificado, de modo que todos os tipos de arquivos são permitidos.
 
@@ -161,7 +164,7 @@ No **Configurações** especifique os recursos básicos do blog:
 
   Se marcado, permite que os membros excluam os comentários e as entradas de blog que postaram. O padrão está desmarcado.
 
-* **Permitir monitoramento**
+* **Permitir acompanhamento**
 
   Se marcado, inclui o seguinte recurso para artigos de blog, que permite que membros sejam [notificado](/help/communities/notifications.md) de novos posts. O padrão está desmarcado.
 
@@ -175,15 +178,15 @@ No **Configurações** especifique os recursos básicos do blog:
 
 * **Não receber respostas na página de listagem**
 
-* **Ativar conteúdo em destaque**
+* **Permitir conteúdo em destaque**
 
   Se marcada, a ideia é identificada como [conteúdo em destaque](/help/communities/featured.md). O padrão está desmarcado.
 
-* **Habilitar a menção**
+* **Ativar a menção**
 
   Se ativado, permite que os usuários registrados da comunidade identifiquem outros membros registrados (usando nome, sobrenome, nome de usuário) e marquem-nos usando a sintaxe comum @user-name. Os usuários marcados recebem notificações sobre suas próprias menções.
 
-* **Quantidade máxima de menções**
+* **Max Mentions**
 
   Restringir o número máximo de menções permitidas em uma publicação. O padrão é 10.
 
@@ -255,7 +258,7 @@ No **Configurações da barra lateral do diário** especifique o formato de data
 
   O padrão é &quot;yyyy MMMMM&quot;, que exibiria, por exemplo, &quot;junho de 2015&quot;
 
-* **Visualizar tipo**
+* **Tipo de visualização**
 
   O Título e o tipo das entradas do blog a serem exibidas na barra lateral. A escolha é entre
 

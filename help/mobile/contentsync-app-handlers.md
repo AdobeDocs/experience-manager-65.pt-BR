@@ -6,7 +6,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '1408'
 ht-degree: 0%
@@ -188,7 +191,7 @@ O manipulador mobileappsoffers estende o manipulador mobileappspages e adiciona 
 
 **Etapas para verificar a integridade** Limpar cache
 
-* Limpar cache
+* Limpar o cache
 * Executar o manipulador (cache atualizado)
 * Execute o manipulador novamente (o cache não deve ser atualizado)
 

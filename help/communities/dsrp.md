@@ -7,10 +7,12 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 15b3a594-efde-4702-9233-232ba1c7e5b0
-source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 3%
+source-wordcount: '589'
+ht-degree: 0%
 
 ---
 
@@ -87,7 +89,7 @@ Na criação, para acessar o console Configuração de armazenamento
 
 * **SolrConfiguration**
 
-   * **[](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html)Host do Zookeeper**
+   * **[Zookeeper](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html) Host**
 
      Deixe esse valor em branco se estiver executando o Solr usando o ZooKeeper interno. Senão, ao executar em [Modo SolrCloud](solr.md#solrcloud-mode) com um ZooKeeper externo, defina este valor para o URI do ZooKeeper, como *my.server.com:80*
 
@@ -123,7 +125,7 @@ Para disponibilizar a configuração idêntica no ambiente de publicação:
 
    * Navegue do menu principal para **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Replicação]**
    * Clique duas vezes **[!UICONTROL Ativar árvore]**
-   * **Caminho de início**:
+   * **Caminho inicial**:
 
       * Navegue até `/etc/socialconfig/srpc/`
 

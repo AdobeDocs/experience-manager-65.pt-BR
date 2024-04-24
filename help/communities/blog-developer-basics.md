@@ -7,9 +7,12 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 51f616e8-4aba-47f6-b948-d5147d84bbb6
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '428'
 ht-degree: 2%
 
 ---
@@ -94,7 +97,7 @@ A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](/help/communi
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso**.
 
-Consulte :
+Consulte:
 
 * [Visão geral do provedor de recursos de armazenamento](/help/communities/srp.md) - introdução e visão geral do uso do repositório.
 * [Fundamentos de SRP e UGC](/help/communities/srp-and-ugc.md) - Métodos e exemplos do utilitário SRP.

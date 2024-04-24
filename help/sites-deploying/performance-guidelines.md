@@ -8,7 +8,8 @@ topic-tags: configuring
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '2939'
 ht-degree: 4%
@@ -54,7 +55,7 @@ Ilustradas abaixo estão as opções de implantação disponíveis para AEM (rol
    <td><p>Propriedade</p> </td>
    <td><p>Apache</p> </td>
    <td><p>Edge</p> </td>
-   <td><p>Planejado</p> </td>
+   <td><p>Público-alvo</p> </td>
   </tr>
   <tr>
    <td><p>Assets</p> </td>

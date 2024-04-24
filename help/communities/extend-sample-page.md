@@ -7,9 +7,12 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: d4295a77-b931-4bc8-b3b4-eec42fdcfc56
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -28,7 +31,7 @@ A variável [Guia de componentes da comunidade](/help/communities/components-gui
 
 Observe as três bibliotecas de clientes necessárias para que os Comentários sejam renderizados e funcionem corretamente. Eles devem ser incluídos onde os Comments estendidos são mencionados e a variável [biblioteca cliente de comentários estendidos](/help/communities/extend-create-components.md#create-a-client-library-folder) ( `apps.custom.comments`).
 
-![comments-component1](assets/comments-component1.png)
+![comentários-componente1](assets/comments-component1.png)
 
 ### Adicionar comentários personalizados a uma página {#add-custom-comments-to-a-page}
 

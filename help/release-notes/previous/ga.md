@@ -2,7 +2,10 @@
 title: Notas de versão gerais do [!DNL Adobe Experience Manager] 6.5
 description: "[!DNL Adobe Experience Manager] 6.5 notas descrevendo as informações da versão, as novidades, como instalar e as listas de alterações detalhadas."
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager
+feature: Release Information
+role: User,Admin,Architect,Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '4484'
 ht-degree: 2%
@@ -250,9 +253,9 @@ Para obter mais detalhes sobre as alterações no AEM Screens, consulte as Notas
 * `s_code.js` H.27.5 incluído. A Adobe recomenda que você alterne a implementação para `AppMeasurement.js`
 * `AppMeasurement.js` A v1.8.0 está incluída. O Adobe recomenda usar [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) para provisionar o AppMeasurement.js no site.
 
-#### AEM e comércio {#aem-commerce}
+#### AEM e COMMERCE {#aem-commerce}
 
-As melhorias no Commerce integration framework estão em um ciclo de liberação mais rápido desde o AEM 6.4. [Saiba mais aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html).
+As melhorias no Commerce integration framework estão em um ciclo de liberação mais rápido desde o AEM 6.4. [Saiba mais aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html?lang=pt-BR).
 
 #### Complemento de comunidades {#communities-add-on}
 

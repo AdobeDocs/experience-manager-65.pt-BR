@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: aed2c3f2-1b5e-4065-8cec-433abb738ef5
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 3%
+source-wordcount: '545'
+ht-degree: 2%
 
 ---
 
@@ -33,7 +35,7 @@ No momento em que uma ação é executada para criar um grupo da comunidade, o m
 
 Para acessar o console de modelos de grupo no ambiente de autor do AEM:
 
-* Selecionar **Ferramentas | Comunidades | Modelos de grupo,** da navegação global.
+* Selecionar **Ferramentas | Communities | Modelos de grupo,** da navegação global.
 
 Esse console exibe os modelos a partir dos quais [site da comunidade](/help/communities/sites-console.md) e permite a criação de novos modelos de grupo.
 
@@ -51,7 +53,7 @@ Isso exibe o painel Editor de sites, que contém três subpainéis:
 
 No painel Informações básicas, um nome, uma descrição e se o modelo está ativado ou desativado são configurados:
 
-* **Novo nome do modelo de grupo**
+* **Novo nome do modelo do grupo**
 
   A ID do nome do modelo.
 

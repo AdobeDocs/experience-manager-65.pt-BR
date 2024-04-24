@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 12c0eae5-fd76-4480-a012-25d3312f3570
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 2%
+source-wordcount: '1153'
+ht-degree: 0%
 
 ---
 
@@ -42,7 +45,7 @@ No autor, para entrar no modo de edição, insira `editor.html` ou `cf#` como o 
 
   [https://&lt;server>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
 
-* IU Clássica:
+* Interface clássica:
 
   [https://&lt;server>:&lt;port>/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
 
@@ -58,13 +61,13 @@ No autor, para entrar no modo de edição, insira `editor.html` ou `cf#` como o 
 >
 >Se não estiver familiarizado com o AEM, consulte a documentação em [manuseio básico](../../help/sites-authoring/basic-handling.md).
 
-### Página Inicial {#home-page}
+### Página inicial {#home-page}
 
 O guia fornece uma lista de componentes SCF disponíveis para visualização e protótipo no lado esquerdo da página.
 
 O Guia de componentes conforme visualizado em uma instância do autor no modo Editar:
 
-![community-component1](assets/community-component1.png)
+![componente da comunidade1](assets/community-component1.png)
 
 ## Páginas de componentes {#component-pages}
 
@@ -94,13 +97,13 @@ Ao usar o guia em uma instância do autor, é possível executar a configuraçã
 
 Para o guia Componentes da comunidade, algumas configurações da caixa de diálogo do componente são sobrepostas com a [Incluível](scf.md#add-or-include-a-communities-component) alternar estado. Para alternar entre o uso do recurso existente ou de um recurso incluído dinamicamente, no modo de edição, selecione o componente e o texto incluível e clique duas vezes para abrir a caixa de diálogo de edição:
 
-![community-component3](assets/community-component3.png)
+![componente da comunidade3](assets/community-component3.png)
 
 No **Modelos** guia:
 
-![community-component4](assets/community-component4.png)
+![componente-comunidade4](assets/community-component4.png)
 
-* **Incluir o componente-filho com sling:include**
+* **Incluir o componente filho com sling:include**
 
   Se desmarcado, o Guia de componentes usará o recurso existente no repositório (um nó jcr que é filho de um nó par).
 
@@ -167,9 +170,9 @@ Usando o componente de comentários como exemplo, na instância do autor ou de p
 
 1. Observe que agora há três guias para Modelos, CSS e Dados.
 
-![community-component5](assets/community-component5.png)
+![componente da comunidade5](assets/community-component5.png)
 
-![community-component6](assets/community-component6.png)
+![componente da comunidade6](assets/community-component6.png)
 
 ### Guia Modelos {#templates-tab}
 

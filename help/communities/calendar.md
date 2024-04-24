@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: c9b34b00-525d-4ca3-bd18-11bb7ce66787
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 7%
+source-wordcount: '1158'
+ht-degree: 0%
 
 ---
 
@@ -55,7 +58,7 @@ No **Configurações** especifique se deseja permitir a aplicação de tags às 
 
   Define o número de eventos exibidos por página. O padrão é 10.
 
-* **Moderada**
+* **Moderado**
 
   Se marcados, a postagem de eventos de calendário e comentários deve ser aprovada antes de serem exibidos em um site de publicação. O padrão está desmarcado.
 
@@ -63,7 +66,7 @@ No **Configurações** especifique se deseja permitir a aplicação de tags às 
 
   Se marcado, o calendário será fechado para novas entradas de evento e comentários. O padrão está desmarcado.
 
-* **Editor de rich text**
+* **Editor de Rich Text**
 
   Se marcados, os eventos de calendário e os comentários podem ser inseridos com marcação. O padrão está marcado.
 
@@ -71,11 +74,11 @@ No **Configurações** especifique se deseja permitir a aplicação de tags às 
 
   Se marcado, permite que os membros adicionem rótulos de tag aos eventos publicados (consulte **Campo de tag** guia ). O padrão está marcado.
 
-* **Permitir carregamento de arquivos**
+* **Permitir carregamentos de arquivo**
 
   Se marcado, permite que anexos de arquivo sejam adicionados a um evento de calendário ou comentário. O padrão está marcado.
 
-* **Permitir monitoramento**
+* **Permitir acompanhamento**
 
   Se marcado, permite que os membros sigam os eventos publicados no calendário. O padrão está marcado.
 
@@ -83,7 +86,7 @@ No **Configurações** especifique se deseja permitir a aplicação de tags às 
 
   Relevante apenas se `Allow File Uploads` está marcado. Este campo limita o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
 
-* **Tipos de arquivos permitidos**
+* **Tipos de arquivo permitidos**
 
   Relevante apenas se `Allow File Uploads` está marcado. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo, .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não poderão ser carregados. O padrão é nenhum especificado, de modo que todos os tipos de arquivos são permitidos.
 
@@ -111,11 +114,11 @@ No **Configurações** especifique se deseja permitir a aplicação de tags às 
 
   Mostrar navegações estruturais na página do evento. O padrão está marcado.
 
-* **Filtro do intervalo de datas**
+* **Filtro de intervalo de datas**
 
   Define o número de dias adicionados à data atual para calcular o valor &quot;Para&quot; do filtro de página da listagem de eventos do calendário. O número padrão é 30.
 
-* **Ativar conteúdo em destaque**
+* **Permitir conteúdo em destaque**
 
   Se marcada, a ideia é identificável como [conteúdo em destaque](/help/communities/featured.md). O padrão está desmarcado.
 
@@ -171,7 +174,7 @@ No **Campo de tag** guia, as tags que podem ser aplicadas, se permitido na guia 
 
 No **Tradução** se a tradução estiver ativada para o site da comunidade, a tradução pode ser definida para traduzir toda a thread (evento e comentários) em vez de publicações específicas.
 
-* **Converter tudo**
+* **Traduzir tudo**
 
   Se marcados, o evento e os comentários serão traduzidos para o idioma preferencial do usuário. O padrão está marcado.
 

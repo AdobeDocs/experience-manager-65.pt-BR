@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 9d350935-129a-40d3-89f4-2e6f69676e5e
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 1%
+source-wordcount: '706'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Por fim, os administradores publicam estrategicamente o conteúdo atualizado do 
 
 >[!NOTE]
 >
->**Pré-requisitos**:
+>**Pré-requisito**:
 >
 >Entrada [Implantação e manutenção](/help/sites-deploying/deploy.md), os desenvolvedores se familiarizaram com os componentes e modelos do sistema no Adobe Experience Manager (AEM).
 
@@ -59,7 +62,7 @@ Aqui, *Administradores de AEM* O pode atualizar seus aplicativos de forma rápid
 
 Uma vez *Autores do AEM* adicionou ou modificou conteúdo por meio do Bloco Gerenciar conteúdo, *Administradores de AEM* são capazes de enviar essas alterações para os clientes com uma atualização dos Pacotes de conteúdo.
 
-A ação Pacote de conteúdo permite que o usuário *AEM Author* criar e editar o conteúdo da página enquanto a equipe de desenvolvimento faz alterações no design e na implementação de um aplicativo de host, incluindo navegação, estilo, lógica do lado do servidor, modelos e componentes, e depois envia essas alterações do OTA para os clientes sem precisar reenviar para as várias lojas para distribuição.
+A ação Pacote de conteúdo permite que o usuário *Autor do AEM* criar e editar o conteúdo da página enquanto a equipe de desenvolvimento faz alterações no design e na implementação de um aplicativo de host, incluindo navegação, estilo, lógica do lado do servidor, modelos e componentes, e depois envia essas alterações do OTA para os clientes sem precisar reenviar para as várias lojas para distribuição.
 
 **Para publicar conteúdo novo ou atualizado**
 

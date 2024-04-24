@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 30baebd9-13c5-4fde-a494-85601abc32a5
-source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 6%
+source-wordcount: '983'
+ht-degree: 1%
 
 ---
 
@@ -67,7 +70,7 @@ No **Comentários** especifique como os comentários são inseridos pelos visita
 
   Limita o número de comentários exibidos por página e o número de respostas exibidas. O padrão é 10.
 
-* **Permitir carregamento de arquivos**
+* **Permitir carregamentos de arquivo**
 
   Se marcada, a opção para carregar um arquivo é apresentada com a caixa de entrada de texto. O padrão está desmarcado.
 
@@ -75,15 +78,15 @@ No **Comentários** especifique como os comentários são inseridos pelos visita
 
   Relevante somente se Permitir uploads de arquivo estiver marcado. Esse valor limita o tamanho do arquivo carregado. O limite padrão é de 10 MB.
 
-* **Comprimento máximo da mensagem de**
+* **Comprimento máximo da mensagem**
 
   Número máximo de caracteres que podem ser inseridos na caixa de texto. O padrão é 4.096 caracteres.
 
-* **Tipos de arquivos permitidos**
+* **Tipos de arquivo permitidos**
 
   Relevante somente se Permitir uploads de arquivo estiver marcado. Uma lista separada por vírgulas de extensões de nome de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não serão permitidos. O padrão é nenhum especificado, de modo que todos os tipos de arquivos são permitidos.
 
-* **Editor de rich text**
+* **Editor de Rich Text**
 
   Se marcado, os comentários serão inseridos com marcação. O padrão está desmarcado.
 
@@ -91,7 +94,7 @@ No **Comentários** especifique como os comentários são inseridos pelos visita
 
   Se marcada, a opção para votar para cima ou para baixo é apresentada com a caixa de entrada de texto. O padrão está desmarcado.
 
-* **Permitir monitoramento**
+* **Permitir acompanhamento**
 
   Se marcado, permitir que os membros sigam os comentários. O padrão está desmarcado.
 
@@ -115,7 +118,7 @@ No **Moderação de usuário** especifique como os comentários publicados são 
 
   Se marcado, permite que os moderadores neguem comentários. O padrão está desmarcado.
 
-* **Fechar/Reabrir comentários**
+* **Fechar / Reabrir comentários**
 
   Se marcado, permite que os moderadores fechem e reabram os comentários. O padrão está desmarcado.
 
@@ -161,7 +164,7 @@ No **Tipos de recursos** especifique o resourceType personalizado para novas ins
 
 ![tipo de recurso](assets/resource-type.png)
 
-* **Tipo de recursos de comentários**
+* **Tipo de recurso de comentário**
 
   Navegue até o resourceType de uma extensão `comment` componente (comentário único) em /apps. Por exemplo, `/apps/social/commons/components/hbs/comments/comment`
 

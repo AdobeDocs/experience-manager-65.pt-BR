@@ -7,10 +7,13 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 1%
+source-wordcount: '1195'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ Um visitante anônimo do site vê o seguinte na interface do usuário:
 * Nenhum link de perfil
 * Nenhum link de mensagem
 * Nenhum link de notificações
-* Campo Pesquisa
+* Campo de pesquisa
 * Link de login
 * O banner da marca
 * Links de menu para os componentes incluídos no Modelo de site de referência.
@@ -128,9 +131,9 @@ Criar um grupo de referência:
 1. Selecionar **Novo grupo**
 1. **Guia Configurações**
 
-   * Nome do grupo : `Sports`
-   * Descrição : `A parent group for various sporting groups`.
-   * Nome do URL do grupo : `sports`
+   * Nome do Grupo: `Sports`
+   * Descrição: `A parent group for various sporting groups`.
+   * Nome do URL do Grupo: `sports`
    * Selecionar `Open Group` (permitir a participação de qualquer membro da comunidade ao ingressar)
 
 1. **Guia Modelo**
@@ -208,8 +211,8 @@ Use o botão Voltar do navegador para retornar ao site publicado. A maioria dos 
 
 Depois de fazer logoff, é possível criar um registro de usuário.
 
-* Selecione `Log In`
-* Selecione `Sign up for a new account`
+* Selecionar `Log In`
+* Selecionar `Sign up for a new account`
 
 ![registro](assets/registration.png)
 

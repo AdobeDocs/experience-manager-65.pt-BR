@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 3d72cbdf-5eb4-477d-aa61-035a846f7dcb
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 10%
+source-wordcount: '289'
+ht-degree: 0%
 
 ---
 
@@ -47,8 +50,8 @@ Alguns nós no caminho são pastas e alguns são componentes.
    * **[!UICONTROL Criar]** > **[!UICONTROL Criar componente]**
       * Inserir rótulo: `comments`
       * Insira o título: `Comments`
-      * Inserir descrição: `List of comments without showing avatars`
-      * Super Type: `social/commons/components/comments`
+      * Insira a descrição: `List of comments without showing avatars`
+      * Supertipo: `social/commons/components/comments`
       * Inserir grupo: `Communities`
       * Clique em **[!UICONTROL Próxima]** até **[!UICONTROL OK]**
 1. Selecionar `comments` nó
@@ -57,17 +60,17 @@ Alguns nós no caminho são pastas e alguns são componentes.
 
       * Inserir rótulo: `comment`
       * Insira o título: `Comment`
-      * Inserir descrição: `A comment instance without avatars`
-      * Super Type: `social/commons/components/comments/comment`
+      * Insira a descrição: `A comment instance without avatars`
+      * Supertipo: `social/commons/components/comments/comment`
       * Inserir grupo: `.hidden`
       * Clique em **[!UICONTROL Próxima]** até **[!UICONTROL OK]**
    * Selecionar **[!UICONTROL Salvar tudo]**
 1. Excluir o padrão `comments.jsp`
    * Selecionar nó `/apps/social/commons/components/hbs/comments/comments.jsp`
-   * Selecione **[!UICONTROL Excluir]**
+   * Selecionar **[!UICONTROL Excluir]**
 1. Excluir o comment.jsp padrão
    * selecionar nó `/apps/social/commons/components/hbs/comments/comment/comment.jsp`
-   * Selecione **[!UICONTROL Excluir]**
+   * Selecionar **[!UICONTROL Excluir]**
    * Selecionar **[!UICONTROL Salvar tudo]**
 
 >[!NOTE]

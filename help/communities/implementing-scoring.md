@@ -9,10 +9,12 @@ docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2851'
-ht-degree: 2%
+source-wordcount: '2856'
+ht-degree: 1%
 
 ---
 
@@ -339,7 +341,7 @@ A variável `scoringRules` em uma regra de notificação, o simplesmente restrin
    <td><em>(obrigatório)</em> Uma cadeia de caracteres de vários valores no formato 'número|caminho'
     <ul>
      <li>número = pontuação</li>
-     <li>| = sinal de linha vertical (U+007C)</li>
+     <li>| = caractere de linha vertical (U+007C)</li>
      <li>caminho = caminho completo para o recurso de imagem do selo</li>
     </ul> As cadeias de caracteres devem ser ordenadas de modo que os números aumentem em valor e nenhum espaço em branco deva aparecer entre o número e o caminho.<br /> Exemplo de entrada:<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
   </tr>
@@ -576,9 +578,9 @@ Se o recurso não estiver funcionando como esperado, verifique se os dados foram
    * **Tipo**: `String`
    * Selecionar **Multi**
    * Selecionar **Adicionar**
-   * Insira `/libs/settings/community/badging/rules/forums-badging`
-   * Selecione **+**
-   * Insira `/libs/settings/community/badging/rules/comments-badging`
+   * Enter `/libs/settings/community/badging/rules/forums-badging`
+   * Selecionar **+**
+   * Enter `/libs/settings/community/badging/rules/comments-badging`
    * Selecionar **OK**
 
 * Adicione a propriedade scoringRules:
@@ -587,9 +589,9 @@ Se o recurso não estiver funcionando como esperado, verifique se os dados foram
    * **Tipo**: `String`
    * Selecionar **Multi**
    * Selecionar **Adicionar**
-   * Insira `/libs/settings/community/scoring/rules/forums-scoring`
-   * Selecione **+**
-   * Insira `/libs/settings/community/scoring/rules/comments-scoring`
+   * Enter `/libs/settings/community/scoring/rules/forums-scoring`
+   * Selecionar **+**
+   * Enter `/libs/settings/community/scoring/rules/comments-scoring`
    * Selecionar **OK**
 
 * Selecionar **Salvar tudo**.
@@ -613,7 +615,7 @@ Em seguida, verifique se os componentes do fórum e dos comentários permitem qu
 
 Em seguida, [republicar](/help/communities/sites-console.md#publishing-the-site) site da comunidade.
 
-Finalmente,
+Por último,
 
 * Navegue até o componente na instância de publicação.
 * Faça logon como um membro da comunidade (por exemplo, weston.mccall@dodgit.com / senha).

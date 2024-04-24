@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: d121dc05-7d15-44ba-8d2d-b59d6c6480c8
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '954'
-ht-degree: 5%
+source-wordcount: '952'
+ht-degree: 0%
 
 ---
 
@@ -119,11 +122,11 @@ Quando a herança for cancelada, é possível selecionar o ícone de configuraç
 
   O número especificado é o número máximo de mensagens exibidas por página em um esquema de paginação. Se nenhum número for especificado (deixado em branco), todas as mensagens serão exibidas e não haverá paginação.
 
-* **Padrões de data e hora**
+* **Padrões de carimbo de data e hora**
 
   Forneça padrões de carimbo de data e hora para um ou mais idiomas. O padrão é para en, de, fr, it, es, ja, zh_CN, ko_KR.
 
-* **Exibir o usuário**
+* **Exibir usuário**
 
   Escolha um **`Sender`** ou **`Recipients`** para que você possa determinar se deseja exibir o Remetente ou os Destinatários.
 
@@ -145,7 +148,7 @@ Quando a herança for cancelada, é possível selecionar o ícone de configuraç
 
 ![basic-tab-compose](assets/basic-tab-compose.png)
 
-* **URI de redirecionamento**
+* **URL de redirecionamento**
 
   Digite o URL da página exibida após o envio da mensagem. Por exemplo, `../messaging.html`.
 
@@ -197,6 +200,6 @@ Quando a herança for cancelada, é possível selecionar o ícone de configuraç
 
   Se marcado, indica o uso de uma caixa de texto de Conteúdo personalizada com seu próprio editor de rich text. O padrão não está marcado.
 
-* **Padrões de data e hora**
+* **Padrões de carimbo de data e hora**
 
   Forneça padrões de carimbo de data e hora para um ou mais idiomas. O padrão é para en, de, fr, it, es, ja, zh_CN, ko_KR.

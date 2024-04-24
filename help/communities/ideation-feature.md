@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: e130bab4-524d-4413-ba8b-53d0ed9e8623
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1122'
-ht-degree: 10%
+source-wordcount: '1132'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +59,7 @@ Selecione o colocado `Ideation` para que você possa acessar e selecionar o `Con
 
 No **[!UICONTROL Configurações]** especifique as configurações para ideias e comentários:
 
-* **Permitir miniatura de anexo**
+* **Permitir miniatura do anexo**
 * **Tamanho máximo da miniatura do anexo**
 * **Tamanho mínimo de imagem para a miniatura**
 * **Tamanho máximo da miniatura**
@@ -74,7 +77,7 @@ No **[!UICONTROL Configurações]** especifique as configurações para ideias e
 
   Define o número de ideias/postagens exibidas por página. O padrão é 10.
 
-* **Moderada**
+* **Moderado**
 
   Se marcadas, a postagem de ideias e comentários deve ser aprovada antes que eles possam aparecer em um site de publicação. O padrão está desmarcado.
 
@@ -82,7 +85,7 @@ No **[!UICONTROL Configurações]** especifique as configurações para ideias e
 
   Se marcado, o fórum de ideação será fechado para novas ideias e comentários. O padrão está desmarcado.
 
-* **Editor de rich text**
+* **Editor de Rich Text**
 
   Se marcado, as ideias e os comentários poderão ser inseridos com a marcação. O padrão está desmarcado.
 
@@ -90,7 +93,7 @@ No **[!UICONTROL Configurações]** especifique as configurações para ideias e
 
   Se marcados, permitem que os membros adicionem rótulos de tag às suas publicações (consulte **[!UICONTROL Campo de tag]** guia ). O padrão está desmarcado.
 
-* **Permitir carregamento de arquivos**
+* **Permitir carregamentos de arquivo**
 
   Se marcado, permite que anexos de arquivo sejam adicionados à ideia ou ao comentário. O padrão está desmarcado.
 
@@ -98,7 +101,7 @@ No **[!UICONTROL Configurações]** especifique as configurações para ideias e
 
   Relevante apenas se `Allow File Uploads` está marcado. Este campo limita o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
 
-* **Tipos de arquivos permitidos**
+* **Tipos de arquivo permitidos**
 
   Relevante apenas se `Allow File Uploads` está marcado. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo, .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não poderão ser carregados. O padrão é nenhum especificado, de modo que todos os tipos de arquivos são permitidos.
 
@@ -118,7 +121,7 @@ No **[!UICONTROL Configurações]** especifique as configurações para ideias e
 
   Se marcado, permite que os membros excluam os comentários e ideias que publicaram. O padrão está desmarcado.
 
-* **Permitir monitoramento**
+* **Permitir acompanhamento**
 
   Se marcado, incluir o seguinte recurso para publicações de ideia, o que permite que os membros sejam [notificado](/help/communities/notifications.md) de novos posts. O padrão está desmarcado.
 
@@ -136,12 +139,12 @@ No **[!UICONTROL Configurações]** especifique as configurações para ideias e
 
 * **Não receber respostas na página de listagem**
 
-* **Ativar conteúdo em destaque**
+* **Permitir conteúdo em destaque**
 
   Se marcada, a ideia é identificável como [conteúdo em destaque](/help/communities/featured.md). O padrão está desmarcado.
 
-* **Habilitar a menção**
-* **Quantidade máxima de menções**
+* **Ativar a menção**
+* **Max Mentions**
 * **Padrão de menção da interface do usuário**
 
 #### Guia Moderação de usuário {#user-moderation-tab}
@@ -192,7 +195,7 @@ No **[!UICONTROL Campo de tag]** guia, as tags que podem ser aplicadas, se permi
 
 No **[!UICONTROL Configurações de classificação]** especifique como os comentários publicados são classificados quando exibidos.
 
-* **Ordenar por**
+* **Classificar por**
 
   Verificar todas as seleções de classificação permitidas: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. O padrão é `Newest, Oldest, Last Updated`.
 
@@ -200,7 +203,7 @@ No **[!UICONTROL Configurações de classificação]** especifique como os comen
 
   Selecione uma das opções de classificação marcadas para aparecer como padrão. O padrão é `Newest`.
 
-* **Selecionar as opções de tempo para a classificação do Analytics**
+* **Selecionar opções de tempo para classificação do Analytics**
 
   Selecione um dos `All, Last 24 Hours, Last 7 Days, Last 30 Days`. O padrão é `All`.
 

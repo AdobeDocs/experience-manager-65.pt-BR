@@ -6,7 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 1f60a0d4-a272-45e8-9742-4b706be8502e
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 1%
@@ -39,8 +42,8 @@ O código deste tutorial depende do nome da pasta principal ser o mesmo para o a
 >* Os nomes de nós podem conter espaços, mas quando usados em um URI, o espaço deve ser codificado como &#39;%20&#39; ou &#39;+&#39;.
 >* Os nomes de nó podem conter hifens e sublinhados, mas devem ser codificados quando referenciados como um nome de pacote em um arquivo Java™. Os hifens e sublinhados são escapados com um sublinhado seguido pelo valor Unicode:
 >
-* o hífen se torna &#39;_002d&#39;
-* sublinhado torna-se &#39;_005f&#39;
+>   * o hífen se torna &#39;_002d&#39;
+>   * sublinhado torna-se &#39;_005f&#39;
 
 ## Configurar o Diretório de Aplicativos (/apps) {#setup-the-application-directory-apps}
 

@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: 357e75f8-2c98-4377-afef-016d58505b4d
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 4%
+source-wordcount: '270'
+ht-degree: 3%
 
 ---
 
@@ -25,13 +28,13 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->**Pré-requisitos:**
+>**Pré-requisito:**
 >
 >Antes de trabalhar com o AEM Mobile On-demand Services e seguir as etapas deste guia de introdução, os usuários devem se familiarizar com o [AEM](/help/sites-deploying/deploy.md).
 
 ## Autor do AEM Mobile {#aem-mobile-author}
 
-Um ***AEM Author* (ou *Profissional de marketing*)**O usa modelos e componentes personalizados ou prontos para uso para adicionar e editar páginas, arrastar e soltar componentes e adicionar mídia de todos os tipos no DAM, incluindo imagens, vídeos e fragmentos de texto (fragmentos de conteúdo). O editor de conteúdo integrado do AEM é usado pelo *Autores do AEM* para criar experiências ricas e relevantes no aplicativo, incluindo a integração com o restante da Adobe Experience Cloud.
+Um ***Autor do AEM* (ou *Profissional de marketing*)**O usa modelos e componentes personalizados ou prontos para uso para adicionar e editar páginas, arrastar e soltar componentes e adicionar mídia de todos os tipos no DAM, incluindo imagens, vídeos e fragmentos de texto (fragmentos de conteúdo). O editor de conteúdo integrado do AEM é usado pelo *Autores do AEM* para criar experiências ricas e relevantes no aplicativo, incluindo a integração com o restante da Adobe Experience Cloud.
 
 Um autor de AEM é responsável pelas seguintes tarefas ao criar um aplicativo usando o AEM Mobile On-demand Services.
 
@@ -39,7 +42,7 @@ Um autor de AEM é responsável pelas seguintes tarefas ao criar um aplicativo u
 
 * [Painel de aplicativos do AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md)
 * [Ações de Criação e Configuração de Aplicativo](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md)
-* [Configuração na nuvem](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
+* [Configuração de nuvem](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
 * [Gerenciamento de conteúdo](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
 
 Para saber mais sobre **Serviços de conteúdo**, consulte [Visão geral dos serviços de conteúdo](/help/mobile/develop-content-as-a-service.md) para começar.

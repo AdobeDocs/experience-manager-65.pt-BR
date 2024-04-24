@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 70d7ee0d-2f6d-4f97-a6e2-b02d84a0ca42
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2607'
-ht-degree: 1%
+source-wordcount: '2571'
+ht-degree: 0%
 
 ---
 
@@ -239,12 +242,12 @@ Quando o autor de conteúdo terminar de criar o conteúdo para o aplicativo móv
   </tr>
   <tr>
    <td>includeImages</td>
-   <td>true | falso</td>
+   <td>true | false</td>
    <td>Se verdadeiro, todas as imagens incluídas na oferta serão renderizadas. Se false, as imagens serão ignoradas.</td>
   </tr>
   <tr>
    <td>includeVídeos</td>
-   <td>true | falso</td>
+   <td>true | false</td>
    <td>Se verdadeiro, todos os vídeos incluídos na oferta serão renderizados. Se false, os vídeos são ignorados.</td>
   </tr>
   <tr>
@@ -254,7 +257,7 @@ Quando o autor de conteúdo terminar de criar o conteúdo para o aplicativo móv
   </tr>
   <tr>
    <td>profundo</td>
-   <td>true | falso</td>
+   <td>true | false</td>
    <td>Se verdadeiro, renderiza recursivamente todas as páginas secundárias; se falso, não repete. </td>
   </tr>
   <tr>
@@ -275,7 +278,7 @@ Para ajudar a renderizar conteúdo especificamente para aplicativos móveis, o A
 
 Para cada mbox, um atributo de **cq-targeting** O foi adicionado permitindo que os desenvolvedores de aplicativos gravem código personalizado para consumir e usar da maneira que quiserem. A variável [Aplicativo de referência híbrido do AEM Mobile](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) O tem um exemplo de uma diretiva Angular que usa o atributo cq-targeting. O conceito de substituição de conteúdo, quando e como ele é feito, depende do desenvolvedor de aplicativos móveis. Existe um SDK móvel fornecido por AEM /etc/clientlibs/mobileapps/js/mobileapps.js que fornece uma API para chamar o serviço de Direcionamento Adobe. Cabe ao desenvolvedor do aplicativo especificar quando essa chamada deve ser feita de acordo com o design do aplicativo.
 
-## O que vem a seguir? {#what-s-next}
+## O que está por vir? {#what-s-next}
 
 1. [Iniciar minha experiência com o aplicativo AEM Mobile](/help/mobile/starting-aem-phonegap-app.md)
 1. [Gerenciar o conteúdo do meu aplicativo](/help/mobile/phonegap-manage-app-content.md)

@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 17081710-35e0-4f5b-9485-1f85c065fd70
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 9%
+source-wordcount: '1389'
+ht-degree: 0%
 
 ---
 
@@ -55,7 +58,7 @@ Selecione o colocado `QnA` para que você possa acessar e selecionar o `Configur
 
 No **Configurações** especifique as configurações para tópicos (perguntas) e respostas (respostas):
 
-* **Permitir miniatura de anexo**
+* **Permitir miniatura do anexo**
 
   Se marcada, uma miniatura da imagem anexada é criada.
 
@@ -75,7 +78,7 @@ No **Configurações** especifique as configurações para tópicos (perguntas) 
 
   Define o número de perguntas/postagens exibidas por página. O padrão é 10.
 
-* **Moderada**
+* **Moderado**
 
   Se marcados, a postagem de tópicos e comentários deve ser aprovada antes de serem exibidos em um site de publicação. O padrão está desmarcado.
 
@@ -83,7 +86,7 @@ No **Configurações** especifique as configurações para tópicos (perguntas) 
 
   Se marcado, o fórum será fechado para novas perguntas e comentários. O padrão está desmarcado.
 
-* **Editor de rich text**
+* **Editor de Rich Text**
 
   Se marcados, os tópicos e comentários podem ser inseridos com marcação. O padrão está desmarcado.
 
@@ -91,11 +94,11 @@ No **Configurações** especifique as configurações para tópicos (perguntas) 
 
   Se marcados, permitem que os membros adicionem rótulos de tag às suas publicações (consulte **Campo de tag** guia ). O padrão está desmarcado.
 
-* **Permitir carregamento de arquivos**
+* **Permitir carregamentos de arquivo**
 
   Se marcado, permite que anexos de arquivo sejam adicionados à pergunta ou ao comentário. O padrão está desmarcado.
 
-* **Permitir monitoramento**
+* **Permitir acompanhamento**
 
   Se marcado, inclui o seguinte recurso para publicações do fórum, o que permite que os membros sejam [notificado](/help/communities/notifications.md) de novos posts. O padrão está desmarcado.
 
@@ -111,7 +114,7 @@ No **Configurações** especifique as configurações para tópicos (perguntas) 
 
   Relevante apenas se `Allow File Uploads` está marcado. Este campo limita o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
 
-* **Tipos de arquivos permitidos**
+* **Tipos de arquivo permitidos**
 
   Relevante apenas se `Allow File Uploads` está marcado. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não poderão ser carregados. O padrão é nenhum especificado, de modo que **all** tipos de arquivo são permitidos.
 
@@ -146,15 +149,15 @@ No **Configurações** especifique as configurações para tópicos (perguntas) 
 
   Se marcado, exibir ganho e atribuído [medalhas](/help/communities/implementing-scoring.md) com uma entrada de blog do membro. O padrão está desmarcado.
 
-* **Ativar conteúdo em destaque**
+* **Permitir conteúdo em destaque**
 
   Se marcada, a ideia é identificável como [conteúdo em destaque](/help/communities/featured.md). O padrão está desmarcado.
 
-* **Habilitar a menção**
+* **Ativar a menção**
 
   Se ativado, permite que os usuários registrados da comunidade identifiquem outros membros registrados (usando nome, sobrenome, nome de usuário) e marquem-nos usando a sintaxe comum @user-name. Os usuários marcados recebem notificações sobre suas menções.
 
-* **Quantidade máxima de menções**
+* **Max Mentions**
 
   Restringir o número máximo de menções permitidas em uma publicação. O padrão é 10.
 
@@ -213,7 +216,7 @@ No **Campo de tag** , as tags que podem ser aplicadas, se permitido na guia **Co
 
 No **Configurações de classificação** especifique como os comentários publicados são classificados quando exibidos.
 
-* **Ordenar por**
+* **Classificar por**
 
   Verificar todas as seleções de classificação permitidas: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. O padrão é `Newest, Oldest, Last Updated`.
 
@@ -221,7 +224,7 @@ No **Configurações de classificação** especifique como os comentários publi
 
   Selecione uma das opções de classificação marcadas para aparecer como padrão. O padrão é `Newest`.
 
-* **Selecionar as opções de tempo para a classificação do Analytics**
+* **Selecionar opções de tempo para classificação do Analytics**
 
   Selecione um dos `All, Last 24 Hours, Last 7 Days, Last 30 Days`. O padrão é `All`.
 

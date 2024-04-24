@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: cbf9ce36-53a2-4f4b-a96f-3b05743f6217
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '626'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -28,7 +31,7 @@ Neste exercício, todas as páginas se baseiam em um modelo simples.
 
 1. No painel do explorador do CRXDE Lite:
 
-   * Selecione `/apps/an-scf-sandbox/templates`
+   * Selecionar `/apps/an-scf-sandbox/templates`
    * **[!UICONTROL Criar]** > **[!UICONTROL Criar modelo]**
 
 1. Na caixa de diálogo Criar modelo, digite os seguintes valores e clique em **[!UICONTROL Próxima]**:

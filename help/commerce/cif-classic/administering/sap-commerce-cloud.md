@@ -6,7 +6,9 @@ topic-tags: e-commerce
 content-type: reference
 exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '1574'
 ht-degree: 1%
@@ -103,7 +105,7 @@ Após a instalação, é possível configurar sua instância:
 
 A variável **Versão do catálogo** ( `hybris.catalog.version`) que é importado pode ser configurado para o serviço OSGi:
 
-**Configuração Day CQ Commerce Hybris**
+**Configuração híbrida do Day CQ Commerce**
 ( `com.adobe.cq.commerce.hybris.common.DefaultHybrisConfigurationService`)
 
 **Versão do catálogo** está definido como `Online` ou `Staged` (o padrão).
@@ -159,7 +161,7 @@ Essa estrutura é criada pelo serviço OSGi `DefaultImportHandler` que implement
 
 A estrutura a ser gerada ao importar pode ser configurada para:
 
-&quot;**Manipulador de importação padrão do Day CQ Commerce Hybris**
+&quot;**Manipulador de importação padrão Day CQ Commerce Hybris**
 `(com.adobe.cq.commerce.hybris.importer.DefaultImportHandler`)
 
 Ao trabalhar com AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos. Consulte também o console para obter uma lista completa de parâmetros configuráveis e seus padrões.
@@ -170,7 +172,7 @@ O analisador de resposta pode ser configurado para definir as propriedades e os 
 
 1. Configure o pacote OSGi:
 
-   **Analisador de resposta padrão do Day CQ Commerce Hybris**
+   **Analisador de resposta padrão Day CQ Commerce Hybris**
 (`com.adobe.cq.commerce.hybris.impl.importer.DefaultResponseParser`)
 
    Aqui é possível definir várias opções e atributos necessários para carregar e mapear.
@@ -313,7 +315,7 @@ O catálogo hybris pode ser importado para AEM, usando o importador em lote para
 
 Os parâmetros usados pelo importador podem ser configurados para:
 
-**Importador de catálogo Day CQ Commerce Hybris**
+**Importador do catálogo Day CQ Commerce Hybris**
 ( `com.adobe.cq.commerce.hybris.impl.importer.DefaultHybrisImporter`)
 
 Ao trabalhar com AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos. Consulte também o console para obter uma lista completa de parâmetros configuráveis e seus padrões.
@@ -343,7 +345,7 @@ O caminho onde o catálogo deve ser importado.
 
 Para remover um ou mais produtos do catálogo:
 
-1. [Configurar o para o serviço OSGi](/help/sites-deploying/configuring-osgi.md) **Importador de catálogo Day CQ Commerce Hybris**; consulte também [Configurar o importador de catálogo](#configure-the-catalog-importer).
+1. [Configurar o para o serviço OSGi](/help/sites-deploying/configuring-osgi.md) **Importador do catálogo Day CQ Commerce Hybris**; consulte também [Configurar o importador de catálogo](#configure-the-catalog-importer).
 
    Ative as seguintes propriedades:
 

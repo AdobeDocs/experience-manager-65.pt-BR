@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 2e02db9f-294d-4d4a-92da-3ab1d38416ab
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 5%
+source-wordcount: '591'
+ht-degree: 0%
 
 ---
 
@@ -56,15 +59,15 @@ A exclusão do arquivo JSP criado automaticamente ocorre porque o arquivo HBS pa
       * **Super Type**: *social/commons/components/hbs/comments*
       * **Grupo**: *Personalizado*
 
-   * Selecione **[!UICONTROL Próximo]**
-   * Selecione **[!UICONTROL Próximo]**
-   * Selecione **[!UICONTROL Próximo]**
+   * Selecionar **[!UICONTROL Próxima]**
+   * Selecionar **[!UICONTROL Próxima]**
+   * Selecionar **[!UICONTROL Próxima]**
    * Selecionar **[!UICONTROL OK]**
 
 1. Expanda o nó que foi criado: `/apps/custom/components/comments`
 1. Selecionar **[!UICONTROL Salvar tudo]**
 1. Clique com o botão direito do mouse `comments.jsp`
-1. Selecione **[!UICONTROL Excluir]**
+1. Selecionar **[!UICONTROL Excluir]**
 1. Selecionar **[!UICONTROL Salvar tudo]**
 
 ![create-component](assets/create-component.png)
@@ -86,15 +89,15 @@ A exclusão do arquivo JSP criado automaticamente ocorre porque o arquivo HBS pa
       * **Super Type**: *social/commons/components/hbs/comments/comment*
       * **Grupo**: `*.hidden*`
 
-   * Selecione **[!UICONTROL Próximo]**
-   * Selecione **[!UICONTROL Próximo]**
-   * Selecione **[!UICONTROL Próximo]**
+   * Selecionar **[!UICONTROL Próxima]**
+   * Selecionar **[!UICONTROL Próxima]**
+   * Selecionar **[!UICONTROL Próxima]**
    * Selecionar **[!UICONTROL OK]**
 
 1. Expanda o nó que foi criado: `/apps/custom/components/comments/comment`
 1. Selecionar **[!UICONTROL Salvar tudo]**
 1. Clique com o botão direito do mouse `comment.jsp`
-1. Selecione **[!UICONTROL Excluir]**
+1. Selecionar **[!UICONTROL Excluir]**
 1. Selecionar **[!UICONTROL Salvar tudo]**
 
 ![create-child-component](assets/create-child-component.png)

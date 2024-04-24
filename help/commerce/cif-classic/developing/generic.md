@@ -4,7 +4,9 @@ description: A estrutura de integração inclui uma camada de integração com u
 contentOwner: Guillaume Carlino
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '1856'
 ht-degree: 0%
@@ -49,7 +51,7 @@ A estrutura de comércio eletrônico pode ser usada com qualquer solução de co
 
 * A variável `cq:commerceProvider` A propriedade também é usada para fazer referência à definição apropriada da fábrica de comércio.
 
-   * Por exemplo, uma variável `cq:commerceProvider` propriedade com o valor Geometrixx correlaciona-se à configuração OSGi para **Fábrica de comércio Day CQ para o Geometrixx-Outdoors** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`) - em que o parâmetro `commerceProvider` também tem o valor `geometrixx`.
+   * Por exemplo, uma variável `cq:commerceProvider` propriedade com o valor Geometrixx correlaciona-se à configuração OSGi para **Fábrica Day CQ Commerce para Geometrixx-Outdoors** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`) - em que o parâmetro `commerceProvider` também tem o valor `geometrixx`.
    * Aqui, outras propriedades podem ser configuradas (quando apropriado e disponível).
 
 Em uma instalação padrão com AEM, é necessária uma implementação específica, por exemplo:

@@ -1,20 +1,21 @@
 ---
-title: Introdução ao conteúdo e comércio de AEM
-description: Saiba como implantar um projeto de conteúdo e comércio do AEM.
+title: Introdução ao conteúdo AEM e ao Commerce
+description: Saiba como implantar um projeto de Conteúdo AEM e Commerce.
 topics: Commerce
 feature: Commerce Integration Framework
 exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 2%
 
 ---
 
-# Introdução ao conteúdo e comércio de AEM {#start}
+# Introdução ao conteúdo AEM e ao Commerce {#start}
 
-Para começar a usar o AEM Content and Commerce, é necessário instalar o AEM Content and Commerce Add-On para AEM 6.5.
+Para começar a usar o AEM Content e o Commerce, é necessário instalar o AEM Content and Commerce AEM Add-On para o 6.5.
 
 ## Requisito mínimo de software
 
@@ -22,15 +23,15 @@ Para começar a usar o AEM Content and Commerce, é necessário instalar o AEM C
 
 ## Integração {#onboarding}
 
-A integração de conteúdo e comércio do AEM é um processo de duas etapas:
+A integração do Conteúdo AEM e do Commerce é um processo de duas etapas:
 
-1. Instalar o complemento de conteúdo e comércio do AEM para AEM 6.5
+1. Instale o complemento Conteúdo do AEM e Commerce para AEM 6.5
 
 2. Conectar o AEM à sua solução comercial
 
-### Instalar o complemento de conteúdo e comércio do AEM para AEM 6.5 {#install-add-on}
+### Instale o complemento Conteúdo do AEM e Commerce para AEM 6.5 {#install-add-on}
 
-Baixe e instale o complemento AEM Commerce para AEM 6.5 da [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html) portal.
+Baixe e instale o complemento AEM Commerce para AEM 6.5 do [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html) portal.
 
 Inicie e instale o AEM 6.5 Service Pack necessário. Recomendamos instalar o último service pack disponível.
 
@@ -38,7 +39,7 @@ Inicie e instale o AEM 6.5 Service Pack necessário. Recomendamos instalar o úl
 >
 >Isso será feito pelo CSE para clientes do AEM Managed Service.
 
-### Conectar o AEM ao seu sistema do Commerce {#connect}
+### Conectar o AEM ao seu sistema Commerce {#connect}
 
 O AEM pode ser conectado a qualquer sistema comercial que tenha um terminal GraphQL acessível para AEM. Esses endpoints geralmente estão disponíveis publicamente ou podem ser conectados por VPN privada ou conexões locais, dependendo da configuração individual do projeto.
 
@@ -48,7 +49,7 @@ Projetos gerados pelo [Arquétipo de projeto AEM](https://github.com/adobe/aem-p
 
 Substitua o valor de `url` in `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` com o terminal GraphQL do seu sistema de comércio. Essa configuração pode ser feita por meio do console OSGI ou implantando a configuração OSGI por meio do projeto. Diferentes configurações para sistemas de preparo e produção são compatíveis com o uso de diferentes modos de execução do AEM.
 
-O complemento de conteúdo e comércio do AEM e os componentes principais do CIF usam conexões do lado do servidor e do lado do cliente do AEM. Os Componentes principais do CIF do lado do cliente e as ferramentas de criação do complemento CIF se conectam por padrão ao `/api/graphql`. Isso pode ser ajustado por meio da configuração de Cloud Service CIF, se necessário (veja abaixo).
+O Conteúdo AEM e os Componentes principais do Commerce e do CIF usam conexões do lado do servidor e do lado do cliente do AEM. Os Componentes principais do CIF do lado do cliente e as ferramentas de criação do complemento CIF se conectam por padrão ao `/api/graphql`. Isso pode ser ajustado por meio da configuração de Cloud Service CIF, se necessário (veja abaixo).
 
 O complemento CIF fornece um servlet proxy do GraphQL em `/api/graphql` que podem ser usados opcionalmente para [desenvolvimento local](develop.md). Para implantações de produção, é altamente recomendável configurar um proxy reverso para o endpoint do GraphQL de comércio por meio do AEM Dispatcher ou em outras camadas de rede (como o CDN).
 

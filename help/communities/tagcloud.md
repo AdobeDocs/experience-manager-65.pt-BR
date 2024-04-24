@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 exl-id: 56af5362-78de-4308-8958-63a45e8573cc
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 5%
+ht-degree: 1%
 
 ---
 
@@ -59,11 +62,11 @@ Identifique quais tags UGC serão exibidas. As opções suspensas são:
 
   (Obrigatório se não for `All tags)` O caminho para o UGC de uma página. O padrão é a página atual, se deixada em branco.
 
-* **[!UICONTROL Não há links nas tags]**
+* **[!UICONTROL Nenhum link nas tags]**
 
   Se marcadas, as tags serão exibidas na nuvem de tags como texto simples. Se desmarcada, as tags são exibidas como links ativos que pesquisam em todo o conteúdo ao qual essa tag é aplicada. O padrão está desmarcado e requer o **[!UICONTROL Caminho do resultado da pesquisa]** a definir.
 
-* **[!UICONTROL Pesquisar caminho de resultados]**
+* **[!UICONTROL Caminho do resultado da pesquisa]**
 
   O caminho para uma página na qual um `Search Result` componente foi colocado, configurado para fazer referência a UGC que inclui o caminho UGC especificado pelo **Página** configuração.
 
@@ -81,7 +84,7 @@ Usar o **[!UICONTROL Tags em nuvem do Social (Design)]** especifique como as tag
 
   Por exemplo:
 
-   * Marcado: `Geometrixx Media: Gadgets / Cars`
+   * Verificado: `Geometrixx Media: Gadgets / Cars`
    * Desmarcado: `Cars`
 
   Não há diferença para uma tag simples.

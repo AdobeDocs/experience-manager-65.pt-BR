@@ -4,7 +4,9 @@ description: Saiba mais sobre os conceitos gerais de comércio eletrônico com o
 contentOwner: Guillaume Carlino
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '4439'
 ht-degree: 0%
@@ -128,7 +130,7 @@ O eCommerce AEM é implementado com um mecanismo de eCommerce:
 >
 >  A instalação padrão do AEM contém as noções básicas do [implementação de comércio eletrônico genérico](/help/commerce/cif-classic/administering/generic.md).
 
-### Provedores de comércio {#commerce-providers}
+### Provedores do Commerce {#commerce-providers}
 
 Ao importar dados de um mecanismo de comércio para o site de comércio eletrônico AEM, um provedor de comércio é usado para fornecer dados aos importadores. Um único provedor de comércio pode oferecer suporte a vários importadores.
 
@@ -148,7 +150,7 @@ Embora geralmente um projeto precise desenvolver seu próprio provedor de comér
 >
 >Geometrixx Os importadores usam arquivos CSV; há uma descrição do schema aceito (com propriedades personalizadas permitidas) nos comentários acima de sua implementação.
 
-A variável [ProductServicesManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) mantém (até [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)uma lista das implementações do [ProductImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) e [CatalogBlueprintImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) interfaces. Elas estão listadas no **Importador/Provedor de comércio** campo suspenso do assistente de importador (usando o `commerceProvider` como um nome).
+A variável [ProductServicesManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) mantém (até [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)uma lista das implementações do [ProductImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) e [CatalogBlueprintImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) interfaces. Elas estão listadas no **Importador/Provedor do Commerce** campo suspenso do assistente de importador (usando o `commerceProvider` como um nome).
 
 Quando um importador/provedor de comércio específico estiver disponível na lista suspensa, todos os dados complementares necessários deverão ser definidos (dependendo do tipo de importador) no:
 
@@ -454,7 +456,7 @@ As seções de Catálogo fornecem, por exemplo:
 
 As páginas de produtos fornecem informações abrangentes sobre produtos individuais. Atualizações dinâmicas do também são refletidas; por exemplo, alterações de preço registradas no mecanismo de comércio eletrônico.
 
-As páginas de produto são páginas AEM que usam **Produto** componente; por exemplo, dentro do **Produto do Commerce** modelo:
+As páginas de produto são páginas AEM que usam **Produto** componente; por exemplo, dentro do **Produto Commerce** modelo:
 
 ![ecommerce_nairobirunnersgreen](/help/sites-administering/assets/ecommerce_nairobirunnersgreen.png)
 

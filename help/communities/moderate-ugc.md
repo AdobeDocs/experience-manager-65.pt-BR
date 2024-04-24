@@ -8,9 +8,11 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1519'
 ht-degree: 2%
 
 ---
@@ -70,7 +72,7 @@ As ações que podem ser executadas no conteúdo postado (UGC) variam dependendo
  <tbody>
   <tr>
    <td> </td>
-   <td><strong>Administrador</strong></td>
+   <td><strong>Admin.</strong></td>
    <td><strong>Moderador</strong></td>
    <td><strong>Criador</strong></td>
    <td><strong>Membro</strong></td>

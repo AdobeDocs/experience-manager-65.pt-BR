@@ -1,17 +1,19 @@
 ---
-title: Integração de AEM e comércio de terceiros usando o Commerce integration framework
+title: Integração do AEM e de terceiros com o Commerce usando o Commerce integration framework
 description: Empresas corporativas podem precisar de soluções comerciais adicionais de terceiros para potencializar sua loja. O Commerce integration framework (CIF) pode ser usado em tais cenários de integração para conectar uma solução comercial de terceiros ao Adobe Experience Manager usando a I/O Runtime.
 thumbnail: cif-third-party-architecture.jpg
 exl-id: e99899a4-df86-4108-991a-8b30d303a279
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 1%
 
 ---
 
-# Integração de comércio de terceiros com o AEM usando o Commerce integration framework {#aem-third-party}
+# Integração de AEM e Commerce de terceiros usando o Commerce integration framework {#aem-third-party}
 
 A integração de soluções que não sejam da Adobe Commerce é um cenário comum para o CIF. Soluções de terceiros com diferentes APIs e esquemas são conectadas por meio de uma camada de integração.
 
@@ -57,7 +59,7 @@ Essa camada de integração não será necessária se uma camada de terceiros es
 
 Os conectores são um bom ponto de partida para os projetos. Eles vêm com uma conexão específica à solução comercial e mapeamento de API padrão. Esses conectores são criados por terceiros e não são mantidos pela Adobe. Entre em contato com o respectivo parceiro para obter informações.
 
-* [SAP Commerce](https://github.com/diconium/commerce-cif-graphql-integration-hybris), construído por Diconium
+* [SAP COMMERCE](https://github.com/diconium/commerce-cif-graphql-integration-hybris), construído por Diconium
 * [Ferramentas comerciais](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), construído por Diconium
 
 >[!TIP]

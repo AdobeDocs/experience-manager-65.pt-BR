@@ -7,10 +7,13 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '599'
-ht-degree: 4%
+ht-degree: 1%
 
 ---
 
@@ -43,7 +46,7 @@ Esses consoles são semelhantes ao console Sites de comunidades.
 
 * Selecionar **[!UICONTROL Criar grupo]**
 
-* **Modelo de grupo da comunidade**:
+* **Modelo do grupo da comunidade**:
 
    * **[!UICONTROL Título do grupo da comunidade]**: Artes
    * **[!UICONTROL Descrição do grupo da comunidade]**: um grupo principal para vários grupos de artes
@@ -51,7 +54,7 @@ Esses consoles são semelhantes ao console Sites de comunidades.
    * **[!UICONTROL Idiomas adicionais disponíveis do Grupo da comunidade]**: use o menu suspenso para selecionar os idiomas disponíveis do grupo da comunidade. O menu exibe todos os idiomas nos quais o site pai da comunidade é criado. Os usuários podem selecionar entre esses idiomas para criar grupos em vários locais nesta única etapa. O mesmo grupo é criado em vários idiomas especificados no console Grupos dos respectivos sites de comunidade.
    * **[!UICONTROL Nome do grupo da comunidade]**: artes
    * **[!UICONTROL Modelo]**: menu suspenso para selecionar `Reference Group`
-   * Selecione **[!UICONTROL Próximo]**
+   * Selecionar **[!UICONTROL Próxima]**
 
 ![Grupos de comunidades aninhados](assets/parent-to-nestedgroup.png)
 
@@ -75,7 +78,7 @@ Prossiga pelos outros painéis com estas configurações:
       * **[!UICONTROL Miniatura]**
          * `optional.*`
 
-      * **[!UICONTROL Selecione Próximo]**.
+      * **[!UICONTROL Selecionar próximo]**.
 
 * Selecione **[!UICONTROL Criar]**.
 
@@ -111,7 +114,7 @@ A variável `arts` O grupo também deve conter uma `groups` pasta, mas uma que e
    * Modelo: `Reference Group`
    * Associação: selecione `Required Membership`, um grupo aberto, disponível para membros participarem.
 
-1. **[!UICONTROL História]**
+1. **[!UICONTROL Histórico]**
 
    * Título: `Art History`
    * Nome: `history`

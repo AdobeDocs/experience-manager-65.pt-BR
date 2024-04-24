@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: developing
 exl-id: d66fc1ff-a669-4a2c-b45a-093060facd97
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 2%
+source-wordcount: '405'
+ht-degree: 0%
 
 ---
 
@@ -35,12 +38,12 @@ Na navegação global em uma instância do autor, selecione **[!UICONTROL Ferram
 
 ![create-site-template](assets/create-site-template1.png)
 
-* Selecione `Create button`
+* Selecionar `Create button`
 * INFORMAÇÕES BÁSICAS
 
    * `Name`: modelo de página única
    * `Description`: um modelo que consiste em uma única função Page.
-   * Selecione `Enabled`
+   * Selecionar `Enabled`
 
 ![site-template-editor](assets/site-template-editor.png)
 
@@ -81,17 +84,17 @@ Depois de criar o modelo de site, na navegação global, selecione **[!UICONTROL
 
      ![create-community-site-template](assets/create-community-site-template.png)
 
-* Selecione `Next`
+* Selecionar `Next`
 * Etapa `2 - Design`
 
    * Selecionar qualquer design
 
-* Selecione `Next`
-* Selecione `Next`
+* Selecionar `Next`
+* Selecionar `Next`
 
   (Aceitar todas as configurações padrão)
 
-* Selecione `Create`
+* Selecionar `Create`
 
   ![create-community-site](assets/create-community-site.png)
 

@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 8b4d56d9-ba73-4eda-9773-3daaa9237abe
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 9%
+source-wordcount: '418'
+ht-degree: 2%
 
 ---
 
@@ -58,7 +61,7 @@ No **[!UICONTROL Configurações]** especifique quais informações relacionadas
   Um nome descritivo a ser exibido para o quadro, refletindo as regras selecionadas para exibir selos e pontuações.
 O padrão é `Leaderboard` se nada for inserido.
 
-* **Insígnia**
+* **Medalha**
 
   Se marcada, uma coluna para ícones de selo é incluída no quadro de classificação.
 O padrão está desmarcado.
@@ -85,7 +88,7 @@ No **Regras** , o site da comunidade e suas regras de pontuação e criação de
 
   (Obrigatório) Regra específica que gera as pontuações a serem exibidas.
 
-* **Regra para insígnias**
+* **Regra de insígnia**
 
   (Obrigatório) Regra específica que gera o símbolo a ser exibido.
 
@@ -112,7 +115,7 @@ Configuração do componente de quadro de classificação:
 
    * Local da regra = `/content/sites/<site name>/jcr:content`
    * Regra de pontuação = `/libs/settings/community/scoring/rules/forums-scoring`
-   * Regra para insígnias = `/libs/settings/community/badging/rules//reference-badging`
+   * Regra de insígnia = `/libs/settings/community/badging/rules//reference-badging`
    * Limite de exibição = `10`
 
 ![participantes-quadro de classificação](assets/participants-leaderboard.png)
@@ -135,7 +138,7 @@ Configuração do componente de quadro de classificação:
 
    * Local da regra = `/content/sites/<site name>/jcr:content`
    * Regra de pontuação = `/libs/settings/community/scoring/rules/adv-forums-scoring`
-   * Regra para insígnias = `/libs/settings/community/badging/rules/adv-forums-badging`
+   * Regra de insígnia = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Limite de exibição = `10`
 
 ![especialistas-quadro de classificação](assets/experts-leaderboard.png)

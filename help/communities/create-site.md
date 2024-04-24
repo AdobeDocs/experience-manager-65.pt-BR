@@ -7,10 +7,13 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1578'
-ht-degree: 2%
+source-wordcount: '1556'
+ht-degree: 0%
 
 ---
 
@@ -99,7 +102,7 @@ As tags aplicadas ao conteúdo da comunidade são controladas por meio da seleç
 Encontrar namespaces é fácil usando a pesquisa com digitação antecipada. Por exemplo,
 
 * Tipo `tut`
-* Selecione `Tutorial`
+* Selecionar `Tutorial`
 
 ![marcação](assets/tagging.png)
 
@@ -149,7 +152,7 @@ A variável [Configurações de tradução](/help/communities/sites-console.md#t
 
 ### Etapa 4: Criar site das comunidades {#step-create-communities-site}
 
-Selecione **Criar.**
+Selecionar **Criar.**
 
 ![create-site](assets/create-site2.png)
 

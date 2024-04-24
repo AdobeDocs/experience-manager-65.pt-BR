@@ -7,7 +7,9 @@ content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '2907'
 ht-degree: 2%
@@ -114,7 +116,7 @@ Antes de criar produtos, defina uma [scaffold](/help/sites-authoring/scaffolding
 
      `/etc/commerce/products/<*store name*>/`
 
-   * **Provedor de comércio**
+   * **Provedor do Commerce**
 
      O importador do seu [provedor de comércio](/help/commerce/cif-classic/administering/concepts.md#commerce-providers); por padrão, Geometrixx.
 
@@ -633,7 +635,7 @@ Para alterar as propriedades de um voucher ou promoção, clique duas vezes nele
 
 ### Adicionar vouchers a um Carrinho {#adding-vouchers-to-a-cart}
 
-Para permitir que os usuários adicionem vouchers aos carrinhos, você pode usar o **Vouchers** componente (categoria Comércio). Adicione isso à mesma página de onde o carrinho é exibido (mas isso não é obrigatório). O componente de vouchers é apenas um formulário no qual o usuário pode inserir um código de voucher, é o componente do carrinho de compras que realmente mostra a lista de vouchers aplicados e seu desconto.
+Para permitir que os usuários adicionem vouchers aos carrinhos, você pode usar o **Vouchers** componente (categoria Commerce). Adicione isso à mesma página de onde o carrinho é exibido (mas isso não é obrigatório). O componente de vouchers é apenas um formulário no qual o usuário pode inserir um código de voucher, é o componente do carrinho de compras que realmente mostra a lista de vouchers aplicados e seu desconto.
 
 No site de demonstração (Geometrixx Outdoors - Inglês), você pode ver o formulário de voucher na página do carrinho, sob o carrinho de compras real.
 

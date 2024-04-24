@@ -1,9 +1,11 @@
 ---
-title: Notas de versão de 2024 de conteúdo e comércio de AEM
-description: Notas de versão de 2024 do Adobe Experience Manager Content and Commerce.
+title: Conteúdo do AEM e notas de versão do Commerce 2024
+description: Conteúdo do Adobe Experience Manager e Notas de versão do Commerce 2024.
 exl-id: 372e6a46-72bb-4db4-ad01-534ca723ae58
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 12%

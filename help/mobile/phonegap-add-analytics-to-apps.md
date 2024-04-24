@@ -6,9 +6,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 8d965e94-c368-481d-b000-6e22456c34db
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -115,7 +118,7 @@ Ao instrumentar seu código-fonte com essas chamadas de método, você pode cole
 
 *com.adobe.cq.mobile.mobileservices.impl.service.MobileServicesHttpClientImp* l expõe as seguintes propriedades para conexão com o AMS:
 
-| **Etiqueta** | **Descrição** | **Padrão** |
+| **Rótulo** | **Descrição** | **Padrão** |
 |---|---|---|
 | Endpoint da API | O URL de base das APIs HTTP do Adobe Mobile Services | https://api.omniture.com |
 | Endpoint de configuração | O URL usado para recuperar a Configuração móvel ADB para a ID de conjunto de relatórios fornecida | /ams/1.0/app/config/ |

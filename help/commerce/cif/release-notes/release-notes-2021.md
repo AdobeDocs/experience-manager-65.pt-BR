@@ -1,9 +1,11 @@
 ---
 title: Notas de versão de 2021 do Adobe Experience Manager Content and Commerce
-description: Notas de versão de 2021 do Adobe Experience Manager Content and Commerce.
+description: Conteúdo do Adobe Experience Manager e Notas de versão do Commerce 2021.
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 12%
@@ -142,7 +144,7 @@ Revise os requisitos mínimos do sistema na tabela abaixo para a versão do CIF 
 ### Novidades {#what-is-new-june}
 
 * Novos tipos de dados de referência de produto e categoria de CIF para Fragmentos de conteúdo (Incl. suporte à interface do seletor de produto/categoria)
-* Novo componente principal do fragmento de conteúdo de comércio
+* Novo componente principal do fragmento de conteúdo do Commerce
 * Pesquisa de comércio de texto completo compatível com o back-end AEM
 * Os Componentes principais do Commerce são compatíveis com a coleta de dados do Adobe Commerce Sensei Recs
 * URLs otimizados e compatíveis com SEO para páginas de categoria
@@ -236,7 +238,7 @@ Revise os requisitos mínimos do sistema na tabela abaixo para a versão do CIF 
 
 ### Novidades {#what-is-new-january}
 
-* Gerenciamento da experiência do produto: nova guia de propriedade &quot;Comércio&quot; para Ativos e Fragmentos de experiência. Essa guia permite vincular Ativos e Fragmentos de experiência a produtos e categorias. A guia também mostra dados em tempo real para objetos de comércio vinculados e um link para mostrar detalhes no console do produto.
+* Gerenciamento da experiência do produto: nova guia de propriedade &quot;Commerce&quot; para Ativos e Fragmentos de experiência. Essa guia permite vincular Ativos e Fragmentos de experiência a produtos e categorias. A guia também mostra dados em tempo real para objetos de comércio vinculados e um link para mostrar detalhes no console do produto.
 
 ### O que foi melhorado  {#what-is-improved-january}
 

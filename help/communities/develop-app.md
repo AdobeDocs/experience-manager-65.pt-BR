@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '593'
-ht-degree: 5%
+ht-degree: 2%
 
 ---
 
@@ -25,7 +28,7 @@ O script padrão, criado quando o componente que renderiza o modelo da página d
 
 A primeira etapa é adicionar uma propriedade de supertipo de recurso à variável `/apps/an-scf-sandbox/components/playpage` para que ele herde os scripts e as propriedades do supertipo.
 
-Uso do CRXDE Lite:
+Utilização do CRXDE Lite:
 
 1. Selecionar nó `/apps/an-scf-sandbox/components/playpage`.
 1. Na guia Propriedades, insira uma nova propriedade com os seguintes valores:
@@ -126,7 +129,7 @@ O painel lateral Ativos/Componentes é visto quando o painel lateral é alternad
 
 ![view-page](assets/view-page.png)
 
-* IU Clássica: `http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html`
+* Interface clássica: `http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html`
 
 A seguir, veja como a página de reprodução aparece na interface clássica, incluindo com o localizador de conteúdo (cf):
 
@@ -152,7 +155,7 @@ Além disso, escolha **[!UICONTROL Geral]** componentes como
 * Imagem
 * Tabela
 * Texto
-* Título (Foundation)
+* Título (Fundação)
 
 >[!NOTE]
 >

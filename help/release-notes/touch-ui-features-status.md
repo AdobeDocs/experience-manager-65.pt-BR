@@ -2,9 +2,12 @@
 title: Status do recurso da interface de toque
 description: Notas de versão específicas do [!DNL Adobe Experience Manager] Interface habilitada para toque.
 exl-id: 7b71e8db-e8c6-4470-bc22-db3d4600b7fc
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
+solution: Experience Manager
+feature: Release Information
+role: User,Admin,Architect,Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1076'
 ht-degree: 15%
 
 ---
@@ -43,37 +46,37 @@ Esta é uma lista de recursos do administrador do site da interface clássica (`
 
 | Destaque | Status | Comentar |
 |--- |--- |--- |
-| Navegar pela Hierarquia do Site | Concluir | O AEM 6.4 introduziu um [exibição de árvore de conteúdo](/help/sites-authoring/basic-handling.md#content-tree). |
-| Iniciar fluxo de trabalho | Concluir |  |
-| Criar nova página | Concluir |  |
-| Criar novo site | Concluir |  |
-| Criar novo lançamento | Concluir |  |
-| Criar nova live copy | Concluir |  |
-| Criar pasta | Concluir |  |
-| Mostrar status da publicação | Concluir | A partir do AEM 6.5, o status do fluxo de trabalho será mostrado na exibição de lista. |
-| Pesquisar | Concluir |  |
-| Copiar e colar página (Duplicado) | Concluir |  |
-| Mover páginas | Concluir |  |
-| Publicar páginas | Concluir |  |
-| Publicar páginas sem direitos de replicação | Concluir |  |
-| Publicar mais tarde | Concluir |  |
-| Publicar árvore | Concluir |  |
-| Cancelar publicação de páginas | Concluir |  |
-| Cancelar publicação de páginas sem direitos de replicação | Concluir |  |
-| Desfazer a publicação mais tarde | Concluir |  |
-| Excluir | Concluir |  |
-| Bloquear/Desbloquear | Concluir |  |
-| Visualizar/Editar propriedades | Concluir |  |
-| Definir permissões em páginas | Concluir |  |
-| Histórico de versão | Concluir |  |
-| Restaurar versão | Concluir |  |
+| Navegar pela Hierarquia do Site | Concluído | O AEM 6.4 introduziu um [exibição de árvore de conteúdo](/help/sites-authoring/basic-handling.md#content-tree). |
+| Iniciar fluxo de trabalho | Concluído |  |
+| Criar nova página | Concluído |  |
+| Criar novo site | Concluído |  |
+| Criar novo lançamento | Concluído |  |
+| Criar nova live copy | Concluído |  |
+| Criar pasta | Concluído |  |
+| Mostrar status da publicação | Concluído | A partir do AEM 6.5, o status do fluxo de trabalho será mostrado na exibição de lista. |
+| Pesquisar | Concluído |  |
+| Copiar e colar página (Duplicado) | Concluído |  |
+| Mover páginas | Concluído |  |
+| Publicar páginas | Concluído |  |
+| Publicar páginas sem direitos de replicação | Concluído |  |
+| Publicar mais tarde | Concluído |  |
+| Publicar árvore | Concluído |  |
+| Cancelar publicação de páginas | Concluído |  |
+| Cancelar publicação de páginas sem direitos de replicação | Concluído |  |
+| Desfazer a publicação mais tarde | Concluído |  |
+| Excluir | Concluído |  |
+| Bloquear/Desbloquear | Concluído |  |
+| Visualizar/Editar propriedades | Concluído |  |
+| Definir permissões em páginas | Concluído |  |
+| Histórico da versão | Concluído |  |
+| Restaurar versão | Concluído |  |
 | Restaurar árvore e restaurar páginas excluídas | Ausente | Use a interface clássica. |
-| Mostrar diferença entre a versão antiga e a atual | Concluir |  |
-| Ações de Live Copy (implantação) | Concluir |  |
-| Consulte cópias de idioma | Concluir |  |
+| Mostrar diferença entre a versão antiga e a atual | Concluído |  |
+| Ações de Live Copy (implantação) | Concluído |  |
+| Consulte cópias de idioma | Concluído |  |
 | Localizar e substituir | Ausente | Use a interface clássica. |
 | Caixa de entrada de notificações (eventos JCR) | Ausente | Use a interface clássica. Substituído por uma implementação diferente no futuro. |
-| Referências | Concluir | Exibição de links de página de entrada adicionados ao AEM 6.5. |
+| Referências | Concluído | Exibição de links de página de entrada adicionados ao AEM 6.5. |
 
 ## Status do recurso: editor de páginas {#feature-status-page-editor}
 
@@ -81,27 +84,27 @@ Esta é uma lista de recursos do Editor de páginas da interface clássica (`/cf
 
 | Destaque | Status | Comentar |
 |--- |--- |--- |
-| Editar páginas da Web | Concluir |  |
-| Editar páginas da Web móveis | Concluir |  |
-| Editar conteúdo importado via Importador de design | Concluir |  |
-| Editar Emails | Concluir |  |
-| Editar aplicativos híbridos para dispositivos móveis | Concluir |  |
-| Editar Forms | Concluir |  |
-| Editar ofertas | Concluir |  |
-| Editar modelos de fluxos de trabalho | Concluir |  |
-| Modo: Editar e Visualizar | Concluir |  |
-| Visualização responsiva | Concluir |  |
-| Modo: Editar design | Concluir |  |
-| Modo: Andaime | Concluir |  |
-| Modo: status da Live Copy | Concluir |  |
-| Adicionar anotações | Concluir |  |
-| Editar propriedades | Concluir |  |
-| Página de implantação | Concluir |  |
-| Iniciar e mostrar fluxo de trabalho | Concluir |  |
+| Editar páginas da Web | Concluído |  |
+| Editar páginas da Web móveis | Concluído |  |
+| Editar conteúdo importado via Importador de design | Concluído |  |
+| Editar Emails | Concluído |  |
+| Editar aplicativos híbridos para dispositivos móveis | Concluído |  |
+| Editar Forms | Concluído |  |
+| Editar ofertas | Concluído |  |
+| Editar modelos de fluxos de trabalho | Concluído |  |
+| Modo: Editar e Visualizar | Concluído |  |
+| Visualização responsiva | Concluído |  |
+| Modo: Editar design | Concluído |  |
+| Modo: Andaime | Concluído |  |
+| Modo: status da Live Copy | Concluído |  |
+| Adicionar anotações | Concluído |  |
+| Editar propriedades | Concluído |  |
+| Página de implantação | Concluído |  |
+| Iniciar e mostrar fluxo de trabalho | Concluído |  |
 | Entrega do pacote de fluxo de trabalho | Principalmente | Acessível na interface habilitada para toque. Várias cargas de fluxo de trabalho ainda apresentadas na interface clássica. |
-| Bloquear/desbloquear página | Concluir |  |
-| Publicar página | Concluir |  |
-| Desfazer a publicação da página | Concluir |  |
+| Bloquear/desbloquear página | Concluído |  |
+| Publicar página | Concluído |  |
+| Desfazer a publicação da página | Concluído |  |
 | Página de cópia | Removido | Use o administrador do site para [copiar páginas](/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page). |
 | Mover página | Removido | Use o administrador do site para [mover páginas](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page). |
 | Excluir página | Removido | Use o administrador do site para [excluir páginas](/help/sites-authoring/managing-pages.md#deleting-a-page). |
@@ -111,16 +114,16 @@ Esta é uma lista de recursos do Editor de páginas da interface clássica (`/cf
 | Restaurar versão | Removido | Use o administrador do site para [restaurar versões](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version). |
 | Alternar lançamentos | Removido | Use o administrador do site para [alternar entre inicializações](/help/sites-authoring/launches-promoting.md). |
 | Traduzir página | Removido | Use o administrador do site para [adicionar página a projetos de tradução](/help/sites-administering/tc-manage.md). |
-| Timewarp (escolha a data/hora e navegue pelo site como ele era) | Concluir |  |
-| Definir permissões | Concluir |  |
+| Timewarp (escolha a data/hora e navegue pelo site como ele era) | Concluído |  |
+| Definir permissões | Concluído |  |
 | Interface do usuário do Client Context | Substituído | Use o [ContextHub](/help/sites-authoring/ch-previewing.md) A interface do usuário do vai para frente. |
-| Localizador de conteúdo para os vários tipos de mídia | Concluir |  |
-| Lista de componentes | Concluir |  |
-| Copiar e colar componentes | Concluir |  |
+| Localizador de conteúdo para os vários tipos de mídia | Concluído |  |
+| Lista de componentes | Concluído |  |
+| Copiar e colar componentes | Concluído |  |
 | Lista de componentes na área de transferência | Ausente |  |
-| Desfazer / Refazer | Concluir |  |
-| Arraste o conteúdo para o espaço reservado do componente | Concluir |  |
-| Arraste o conteúdo diretamente para o espaço reservado parsys com a criação automática do componente | Concluir |  |
+| Desfazer / Refazer | Concluído |  |
+| Arraste o conteúdo para o espaço reservado do componente | Concluído |  |
+| Arraste o conteúdo diretamente para o espaço reservado parsys com a criação automática do componente | Concluído |  |
 
 ## Status do recurso: editores de texto, tabela e imagem {#feature-status-text-table-and-image-editors}
 
@@ -128,35 +131,35 @@ Esta é uma lista de recursos que o Texto da interface clássica, a Tabela e o E
 
 | Destaque | Status | Comentar |
 |--- |--- |--- |
-| Editor de rich text | Concluir | Útil no local, na caixa de diálogo e em tela inteira. |
-| Ativar/desativar plug-ins do RTE | Concluir | Isso pode ser feito usando o [Editor de modelo](/help/sites-authoring/templates.md). |
-| Usar RTE para texto sem formatação | Concluir |  |
-| Plug-in RTE: links e âncora | Concluir |  |
-| Plug-in RTE: mapa de caracteres | Concluir |  |
-| Plug-in RTE: Copiar/Colar | Concluir |  |
-| Plug-in RTE: Colar do Microsoft® Word | Concluir |  |
-| Plug-in RTE: localizar e substituir | Concluir |  |
-| Plug-in RTE: Formatos de texto (negrito, ...) | Concluir |  |
-| Plug-in RTE: Sub e sobrescrito | Concluir |  |
-| Plug-in RTE: Justificar | Concluir |  |
-| Plug-in RTE: listas (marcadores/números) | Concluir |  |
-| Plug-in RTE: Formato de parágrafo | Concluir |  |
-| Plug-in RTE: Estilos de texto | Concluir |  |
-| Plug-in RTE: Editor de código-fonte (Editar HTML) | Concluir | Disponível somente na caixa de diálogo e em tela cheia. |
-| Plug-in RTE: verificador ortográfico | Concluir |  |
-| Plug-in do RTE: Tabela (Editor de tabela incorporado) | Concluir |  |
-| Plug-in RTE: Desfazer/Refazer | Concluir |  |
-| Plug-in RTE: permitir imagens integradas | Concluir |  |
-| Editor de tabela | Concluir | Útil no local, na caixa de diálogo e em tela inteira. |
-| Arrastar imagem para a célula da tabela | Concluir | Utilizável em linha |
-| Editor de imagem | Concluir | Útil no local, na caixa de diálogo e em tela inteira. |
-| Ativar/desativar plug-ins do IPE | Concluir | O AEM 6.3 introduziu uma interface no [Editor de modelo](/help/sites-authoring/templates.md). |
-| Plug-in do IPE: Cortar | Concluir |  |
-| Plug-in IPE: Inverter | Concluir |  |
-| Plug-in do IPE: Desfazer/Refazer | Concluir |  |
-| Plug-in do IPE: Mapa de imagem | Concluir |  |
-| Plug-in IPE: Girar | Concluir |  |
-| Plug-in IPE: Zoom | Concluir |  |
+| Editor de rich text | Concluído | Útil no local, na caixa de diálogo e em tela inteira. |
+| Ativar/desativar plug-ins do RTE | Concluído | Isso pode ser feito usando o [Editor de modelo](/help/sites-authoring/templates.md). |
+| Usar RTE para texto sem formatação | Concluído |  |
+| Plug-in RTE: links e âncora | Concluído |  |
+| Plug-in RTE: mapa de caracteres | Concluído |  |
+| Plug-in RTE: Copiar/Colar | Concluído |  |
+| Plug-in RTE: Colar do Microsoft® Word | Concluído |  |
+| Plug-in RTE: localizar e substituir | Concluído |  |
+| Plug-in RTE: Formatos de texto (negrito, ...) | Concluído |  |
+| Plug-in RTE: Sub e sobrescrito | Concluído |  |
+| Plug-in RTE: Justificar | Concluído |  |
+| Plug-in RTE: listas (marcadores/números) | Concluído |  |
+| Plug-in RTE: Formato de parágrafo | Concluído |  |
+| Plug-in RTE: Estilos de texto | Concluído |  |
+| Plug-in RTE: Editor de código-fonte (Editar HTML) | Concluído | Disponível somente na caixa de diálogo e em tela cheia. |
+| Plug-in RTE: verificador ortográfico | Concluído |  |
+| Plug-in do RTE: Tabela (Editor de tabela incorporado) | Concluído |  |
+| Plug-in RTE: Desfazer/Refazer | Concluído |  |
+| Plug-in RTE: permitir imagens integradas | Concluído |  |
+| Editor de tabela | Concluído | Útil no local, na caixa de diálogo e em tela inteira. |
+| Arrastar imagem para a célula da tabela | Concluído | Utilizável em linha |
+| Editor de imagem | Concluído | Útil no local, na caixa de diálogo e em tela inteira. |
+| Ativar/desativar plug-ins do IPE | Concluído | O AEM 6.3 introduziu uma interface no [Editor de modelo](/help/sites-authoring/templates.md). |
+| Plug-in do IPE: Cortar | Concluído |  |
+| Plug-in IPE: Inverter | Concluído |  |
+| Plug-in do IPE: Desfazer/Refazer | Concluído |  |
+| Plug-in do IPE: Mapa de imagem | Concluído |  |
+| Plug-in IPE: Girar | Concluído |  |
+| Plug-in IPE: Zoom | Concluído |  |
 
 ## Status do recurso: Ferramentas {#feature-status-tools}
 
@@ -165,11 +168,11 @@ Esta é uma lista de várias ferramentas que a interface clássica tem e o statu
 | Destaque | Status | Comentar |
 |--- |--- |--- |
 | Gerenciamento de tarefas | Substituído | O 6.0 apresentou Projetos e tarefas. |
-| Caixa de entrada do fluxo de trabalho | Concluir |  |
+| Caixa de entrada do fluxo de trabalho | Concluído |  |
 | Fluxo de trabalho para configuração de modelo de página (`/etc/workflow/wcm/templates.html`) | Ausente | Use a interface clássica. |
-| Interface do administrador de marcação | Concluir |  |
-| Centro de controle do MSM/Blueprint | Concluir |  |
-| Interface do usuário do gerenciador de blueprint | Concluir |  |
+| Interface do administrador de marcação | Concluído |  |
+| Centro de controle do MSM/Blueprint | Concluído |  |
+| Interface do usuário do gerenciador de blueprint | Concluído |  |
 | Interface de implantação da configuração | Ausente | Use a interface clássica. |
 | Interface do usuário de usuários, grupos e permissões | Quase Concluído | Para edição avançada de permissões, use a Interface clássica. |
 | Limpar versões (`/etc/versioning/purge.html`) | Ausente | Use a interface clássica. |

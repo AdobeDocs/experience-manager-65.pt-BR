@@ -7,10 +7,12 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 4%
+source-wordcount: '959'
+ht-degree: 1%
 
 ---
 
@@ -87,7 +89,7 @@ A maioria dos campos são campos opcionais que o membro pode preencher posterior
 Por padrão, a ID é definida como o valor do endereço de email necessário.
 *Depois de criada, a ID não pode ser modificada*.
 
-* **[!UICONTROL Endereço de email]**
+* **[!UICONTROL Endereço de e-mail]**
 
 (*Obrigatório*) O endereço de e-mail do membro.
 O membro pode alterar seu endereço de email ao atualizar seu perfil. Se a ID tiver assumido como padrão o endereço de email, a ID *não* alterar quando o endereço de email for alterado.
@@ -100,7 +102,7 @@ O membro pode alterar seu endereço de email ao atualizar seu perfil. Se a ID ti
 
   (*Obrigatório*) Digite novamente a senha para verificação.
 
-* **[!UICONTROL Adicionar membro aos Sites]**
+* **[!UICONTROL Adicionar membro aos sites]**
 
   (*Opcional*) Selecione dentre os sites da comunidade existentes para adicionar o membro ao grupo de membros do site da comunidade.
 
@@ -108,7 +110,7 @@ O membro pode alterar seu endereço de email ao atualizar seu perfil. Se a ID ti
 
   (*Opcional*) Selecione dentre os grupos membros existentes para adicionar o membro a esse grupo.
 
-* Selecione **[!UICONTROL Salvar]**
+* Selecionar **[!UICONTROL Salvar]**
 
 ### GERAL - Configurações da conta {#general-account-settings}
 
@@ -196,7 +198,7 @@ Os campos obrigatórios para criar um grupo de membros do lado da publicação s
 
   (*Opcional*) Selecione os membros do lado da publicação a serem incluídos como membros iniciais do grupo.
 
-* Selecione **[!UICONTROL Salvar]**
+* Selecionar **[!UICONTROL Salvar]**
 
 ## Administradores autorizados {#authorized-administrators}
 

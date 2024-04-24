@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 2b1a4917-9db6-436a-a5fd-c102fe41fb9d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1219'
-ht-degree: 9%
+source-wordcount: '1233'
+ht-degree: 1%
 
 ---
 
@@ -58,7 +61,7 @@ Selecione o colocado `Forum` para que você possa acessar e selecionar o `Config
 
 No **Configurações** especifique as configurações para tópicos e respostas:
 
-* **Permitir miniatura de anexo**
+* **Permitir miniatura do anexo**
 
   Se marcada, uma miniatura da imagem anexada é criada.
 
@@ -75,7 +78,7 @@ No **Configurações** especifique as configurações para tópicos e respostas:
 
   Define o número de tópicos/postagens exibidos por página. O padrão é 10.
 
-* **Moderada**
+* **Moderado**
 
   Se marcados, a postagem de tópicos e comentários deve ser aprovada antes de serem exibidos em um site de publicação. O padrão está desmarcado.
 
@@ -83,7 +86,7 @@ No **Configurações** especifique as configurações para tópicos e respostas:
 
   Se marcado, o fórum será fechado para novos tópicos e comentários. O padrão está desmarcado.
 
-* **Editor de rich text**
+* **Editor de Rich Text**
 
   Se marcados, os tópicos e comentários podem ser inseridos com marcação. O padrão está desmarcado.
 
@@ -91,11 +94,11 @@ No **Configurações** especifique as configurações para tópicos e respostas:
 
   Se marcados, permitem que os membros adicionem rótulos de tag às suas publicações (consulte **Campo de tag** guia ). O padrão está desmarcado.
 
-* **Permitir carregamento de arquivos**
+* **Permitir carregamentos de arquivo**
 
   Se marcado, permite que anexos de arquivo sejam adicionados ao tópico ou comentário. O padrão está desmarcado.
 
-* **Permitir monitoramento**
+* **Permitir acompanhamento**
 
   Se marcado, inclui o seguinte recurso para publicações do fórum, o que permite que os membros sejam [notificado](/help/communities/notifications.md) de novos posts. O padrão está desmarcado.
 
@@ -103,7 +106,7 @@ No **Configurações** especifique as configurações para tópicos e respostas:
 
   Se marcados, os tópicos do fórum poderão ser fixados no topo da lista de tópicos. O padrão está desmarcado.
 
-* **Ativar conteúdo em destaque**
+* **Permitir conteúdo em destaque**
 
   Se marcada, a ideia é identificável como [conteúdo em destaque](/help/communities/featured.md). O padrão está desmarcado.
 
@@ -115,7 +118,7 @@ No **Configurações** especifique as configurações para tópicos e respostas:
 
   Relevante apenas se `Allow File Uploads` está marcado. Este campo limita o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
 
-* **Tipos de arquivos permitidos**
+* **Tipos de arquivo permitidos**
 
   Relevante apenas se `Allow File Uploads` está marcado. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo, .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não poderão ser carregados. O padrão é nenhum especificado, de modo que todos os tipos de arquivos são permitidos.
 
@@ -154,11 +157,11 @@ Relevante somente se Permitir uploads de arquivo estiver marcado. Número máxim
 
   Se estiver ativado, bloqueia o conteúdo gerado pelo usuário ao editar no Modo Autor.
 
-* **Habilitar a menção**
+* **Ativar a menção**
 
   Se ativado, permite que os usuários registrados da comunidade identifiquem outros membros registrados (usando nome, sobrenome, nome de usuário) e marquem-nos usando a sintaxe comum @user-name. Os usuários marcados recebem notificações sobre suas menções.
 
-* **Quantidade máxima de menções**
+* **Max Mentions**
 
   Restringir o número máximo de menções permitidas em uma publicação. O padrão é 10.
 
@@ -222,7 +225,7 @@ No **Campo de tag** guia, as tags que podem ser aplicadas, se permitido na guia 
 
 No **Tradução** , se a tradução estiver ativada para o site da comunidade, a tradução poderá ser definida para traduzir todo o tópico ou as publicações selecionadas.
 
-* **Converter tudo**
+* **Traduzir tudo**
 
   Se marcado, o thread do fórum será traduzido para o idioma preferencial do usuário. O padrão está desmarcado.
 
@@ -230,7 +233,7 @@ No **Tradução** , se a tradução estiver ativada para o site da comunidade, a
 
 No **Configurações de classificação** especifique como os comentários publicados são classificados quando exibidos.
 
-* **Ordenar por**
+* **Classificar por**
 
   Verificar todas as seleções de classificação permitidas: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. O padrão é `Newest, Oldest, Last Updated`.
 
@@ -238,7 +241,7 @@ No **Configurações de classificação** especifique como os comentários publi
 
   Selecione uma das opções de classificação marcadas para aparecer como padrão. O padrão é `Newest`.
 
-* **Selecionar as opções de tempo para a classificação do Analytics**
+* **Selecionar opções de tempo para classificação do Analytics**
 
   Puxe para baixo para selecionar uma das seguintes opções: `All, Last 24 Hours, Last 7 Days, Last 30 Days`.
 

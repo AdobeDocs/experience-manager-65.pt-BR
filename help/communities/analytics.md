@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2701'
-ht-degree: 4%
+source-wordcount: '2658'
+ht-degree: 0%
 
 ---
 
@@ -66,7 +68,7 @@ Para configurar os recursos do Analytics for Communities, é necessário trabalh
 
   A empresa associada à conta do Adobe Analytics.
 
-* **Nome de usuário**
+* **Nome do usuário**
 
   O nome de usuário de logon do usuário autorizado a gerenciar a conta do Analytics (deve incluir privilégios de Acesso ao serviço da Web).
 
@@ -78,7 +80,7 @@ Para configurar os recursos do Analytics for Communities, é necessário trabalh
 
   A URL do data center do Analytics para a conta.
 
-* **Conjunto de relatórios**
+* **Report Suite**
 
   O nome do conjunto de relatórios do Analytics que será usado.
 
@@ -98,7 +100,7 @@ Ao fazer logon no [Adobe Experience Cloud](https://experienceleague.adobe.com/do
 
    * **`event1`** até **`event7`** habilitado
 
-   * tipo **`Counter`**
+   * type **`Counter`**
 
       * não **`Counter (no subrelations)`**
 
@@ -113,7 +115,7 @@ Ao fazer logon no [Adobe Experience Cloud](https://experienceleague.adobe.com/do
 
    * Console de medição do vídeo principal
 
-      * Selecione `Use Solution Variables`
+      * Selecionar `Use Solution Variables`
       * Selecione Salvar
 
 Se estiver usando um **novo conjunto de relatórios**, um novo conjunto de relatórios pode ter apenas 4 evars e 6 variáveis de evento, enquanto 11 evars e 7 vars de evento são necessários para as Comunidades.
@@ -184,9 +186,9 @@ Por exemplo, insira *comunidades*
 
 * **Modelo**
 
-  Selecione `Adobe Analytics Configuration`
+  Selecionar `Adobe Analytics Configuration`
 
-* Selecione **Criar**
+* Selecionar **Criar**
 
    * Inicia a página de configuração e abre `Analytics Settings` caixa de diálogo
 
@@ -200,7 +202,7 @@ A criação inicial de uma nova configuração do Analytics resulta na exibiçã
 
   A empresa associada à conta do Adobe Analytics.
 
-* **Nome de usuário**
+* **Nome do usuário**
 
   O nome de usuário de logon do usuário autorizado a gerenciar a conta do Analytics.
 
@@ -260,7 +262,7 @@ Por exemplo, insira *comunidades*.
 
 * *Modelo*
 
-  Selecione `Adobe Analytics Framework`.
+  Selecionar `Adobe Analytics Framework`.
 
 * Selecione **Criar**.
 
@@ -407,20 +409,20 @@ Veja a seguir um exemplo de mapeamentos padrão:
   </tr>
   <tr>
    <td><strong> </strong></td>
-   <td><strong>eVar1</strong></td>
-   <td><strong>eVar2</strong></td>
-   <td><strong>eVar3</strong></td>
-   <td><strong>eVar4</strong></td>
-   <td><strong>eVar5</strong></td>
-   <td><strong>eVar6</strong></td>
-   <td><strong>eVar7</strong></td>
-   <td><strong>eVar8</strong></td>
-   <td><strong>eVar9</strong></td>
-   <td><strong>eVar10</strong></td>
+   <td><strong>EVAR 1</strong></td>
+   <td><strong>EVAR 2</strong></td>
+   <td><strong>EVAR 3</strong></td>
+   <td><strong>EVAR 4</strong></td>
+   <td><strong>EVAR 5</strong></td>
+   <td><strong>EVAR 6</strong></td>
+   <td><strong>EVAR 7</strong></td>
+   <td><strong>EVAR 8</strong></td>
+   <td><strong>EVAR 9</strong></td>
+   <td><strong>eVar 10</strong></td>
   </tr>
   <tr>
    <td><strong>event1<br /> Reprodução do recurso</strong></td>
-   <td><em>(a)</em></td>
+   <td><em>a)</em></td>
    <td><em>-</em></td>
    <td><em>-</em></td>
    <td><em>-</em></td>
@@ -433,79 +435,79 @@ Veja a seguir um exemplo de mapeamentos padrão:
   </tr>
   <tr>
    <td><strong>event2<br /> SCFView</strong></td>
-   <td><em>(a)</em></td>
-   <td><em>(b)</em></td>
-   <td><em>(c)</em></td>
-   <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
+   <td><em>a)</em></td>
+   <td><em>b)</em></td>
+   <td><em>c)</em></td>
+   <td><em>d)</em></td>
+   <td><em>e)</em></td>
    <td><em>f)</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>g)</em></td>
+   <td><em>h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>event3<br /> SCFCreate (Pós)</strong></td>
    <td><em>-</em></td>
-   <td><em>(b)</em></td>
-   <td><em>(c)</em></td>
-   <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
+   <td><em>b)</em></td>
+   <td><em>c)</em></td>
+   <td><em>d)</em></td>
+   <td><em>e)</em></td>
    <td><em>f)</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>g)</em></td>
+   <td><em>h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>event4<br /> SCFFollow</strong></td>
    <td><em>-</em></td>
-   <td><em>(b)</em></td>
-   <td><em>(c)</em></td>
-   <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
+   <td><em>b)</em></td>
+   <td><em>c)</em></td>
+   <td><em>d)</em></td>
+   <td><em>e)</em></td>
    <td><em>f)</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>g)</em></td>
+   <td><em>h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>event5<br /> SCFVoteUp</strong></td>
    <td><em>-</em></td>
-   <td><em>(b)</em></td>
-   <td><em>(c)</em></td>
-   <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
+   <td><em>b)</em></td>
+   <td><em>c)</em></td>
+   <td><em>d)</em></td>
+   <td><em>e)</em></td>
    <td><em>f)</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>g)</em></td>
+   <td><em>h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>evento6<br /> SCFVoteDown</strong></td>
    <td><em>-</em></td>
-   <td><em>(b)</em></td>
-   <td><em>(c)</em></td>
-   <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
+   <td><em>b)</em></td>
+   <td><em>c)</em></td>
+   <td><em>d)</em></td>
+   <td><em>e)</em></td>
    <td><em>f)</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>g)</em></td>
+   <td><em>h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>event7<br /> SCFRate</strong></td>
    <td><em>-</em></td>
-   <td><em>(b)</em></td>
-   <td><em>(c)</em></td>
-   <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
+   <td><em>b)</em></td>
+   <td><em>c)</em></td>
+   <td><em>d)</em></td>
+   <td><em>e)</em></td>
    <td><em>f)</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>g)</em></td>
+   <td><em>h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>

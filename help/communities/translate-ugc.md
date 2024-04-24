@@ -7,10 +7,12 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: ac54f06e-1545-44bb-9f8f-970f161ebb72
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1112'
-ht-degree: 1%
+source-wordcount: '1111'
+ht-degree: 0%
 
 ---
 
@@ -90,7 +92,7 @@ Para criar uma Integração de tradução, que integra um conector do Serviço d
 
 ![create-configuration](assets/translation-integration2.png)
 
-* **[!UICONTROL Configuração primária]**
+* **[!UICONTROL Configuração principal]**
 
   (Obrigatório) Normalmente, deixa como padrão. O padrão é `/etc/cloudservices/translation`.
 
@@ -102,7 +104,7 @@ Para criar uma Integração de tradução, que integra um conector do Serviço d
 
   (Opcional) Insira um nome para a configuração. O padrão é um nome de nó com base no Título.
 
-* Selecione **[!UICONTROL Criar]**
+* Selecionar **[!UICONTROL Criar]**
 
 #### Caixa de diálogo de configuração de tradução {#translation-config-dialog}
 

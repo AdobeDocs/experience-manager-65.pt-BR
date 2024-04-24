@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 4a49d14c-e6f0-4791-904e-8f30e47f7cde
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 27%
+ht-degree: 15%
 
 ---
 
@@ -39,7 +42,7 @@ Consulte também a seção [Guia de componentes da comunidade](/help/communities
 >
 >Ler [Noções básicas sobre componentes das comunidades](/help/communities/basics.md) pois contém informações necessárias para a criação com componentes do Communities.
 
-| **Título do componente** | **Destaque** |
+| **Título do componente** | **Recurso** |
 |---|---|
 | Fluxos de atividade | [Fluxos de atividade](/help/communities/activities.md) |
 | Blog | [Blog](/help/communities/blog-feature.md) |
@@ -50,7 +53,7 @@ Consulte também a seção [Guia de componentes da comunidade](/help/communities
 | Lista de membros do grupo da comunidade | [Grupos de comunidades](/help/communities/creating-groups.md) |
 | Compor mensagem | [Mensagens](/help/communities/configure-messaging.md) |
 | Conteúdo incluso | [Conteúdo incluso](/help/communities/featured.md) |
-| Biblioteca de arquivo | [Biblioteca de arquivo](/help/communities/file-library.md) |
+| Biblioteca de arquivo | [Biblioteca de arquivos](/help/communities/file-library.md) |
 | Seguir | [Gráfico social](/help/communities/socialgraph.md) |
 | Seguindo | [Gráfico social](/help/communities/socialgraph.md) |
 | Fórum | [Fórum](/help/communities/forum.md) |
@@ -61,10 +64,10 @@ Consulte também a seção [Guia de componentes da comunidade](/help/communities
 | Lista de mensagens | [Mensagens](/help/communities/configure-messaging.md) |
 | QnA | [Perguntas e respostas](/help/communities/working-with-qna.md) |
 | Busca rápida | [Pesquisar](/help/communities/search.md) |
-| Avaliação | [Avaliação](/help/communities/rating.md) |
+| Avaliação | [Classificação](/help/communities/rating.md) |
 | Perguntas relacionadas | [Perguntas e respostas](/help/communities/working-with-qna.md) |
-| Revisões | [Revisões](/help/communities/reviews.md) |
-| Resumo das análises (exibir) | [Revisões](/help/communities/reviews.md) |
+| Revisões | [Resenhas](/help/communities/reviews.md) |
+| Resumo das análises (exibir) | [Resenhas](/help/communities/reviews.md) |
 | Pesquisar | [Pesquisar](/help/communities/search.md) |
 | Resultado da pesquisa | [Pesquisar](/help/communities/search.md) |
 | Tags em nuvem do Social | [Tags em nuvem do Social](/help/communities/tagcloud.md) |

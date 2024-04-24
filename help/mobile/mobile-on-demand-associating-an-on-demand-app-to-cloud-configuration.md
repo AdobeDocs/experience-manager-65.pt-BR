@@ -1,19 +1,22 @@
 ---
-title: Configuração na nuvem
+title: Configuração de nuvem
 description: Associar um aplicativo sob demanda a uma configuração na nuvem permite que o Adobe Experience Manager (AEM) se comunique diretamente com um projeto hospedado no Mobile On-Demand estabelecendo um link bidirecional. Siga esta página para saber mais.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: 37428543-c310-4712-a4ec-1f482579fb4b
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 2%
 
 ---
 
-# Configuração na nuvem{#cloud-configuration}
+# Configuração de nuvem{#cloud-configuration}
 
 >[!NOTE]
 >

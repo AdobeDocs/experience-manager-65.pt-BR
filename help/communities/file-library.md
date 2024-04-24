@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 9%
+source-wordcount: '741'
+ht-degree: 1%
 
 ---
 
@@ -63,15 +66,15 @@ No **Comentários** especifique se e como os comentários dos arquivos carregado
 
   Esse valor limita o tamanho do arquivo carregado. O limite padrão é 104857600 (10 MB).
 
-* **Comprimento máximo da mensagem de**
+* **Comprimento máximo da mensagem**
 
   Número máximo de caracteres que podem ser inseridos na caixa de texto. O padrão é 4.096 caracteres.
 
-* **Tipos de arquivos permitidos**
+* **Tipos de arquivo permitidos**
 
   Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo, .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os tipos de arquivo não especificados não serão permitidos. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
 
-* **Editor de rich text**
+* **Editor de Rich Text**
 
   Se marcados, os comentários podem ser inseridos com marcação. O padrão está desmarcado.
 
@@ -95,15 +98,15 @@ No **Comentários** especifique se e como os comentários dos arquivos carregado
 
   Se marcado, a capacidade de votar em um arquivo será ativada. O padrão está desmarcado.
 
-* **Permitir monitoramento**
+* **Permitir acompanhamento**
 
   Se marcado, inclui o seguinte recurso para artigos de blog, que permite que membros sejam [notificado](/help/communities/notifications.md) de novos posts. O padrão está desmarcado.
 
-* **Habilitar a menção**
+* **Ativar a menção**
 
   Se ativado, permite que os usuários registrados da comunidade identifiquem outros membros registrados (usando nome, sobrenome, nome de usuário) e marquem-nos usando a sintaxe comum @user-name. Os usuários marcados recebem notificações sobre suas menções.
 
-* **Quantidade máxima de menções**
+* **Max Mentions**
 
   Restringir o número máximo de menções permitidas em uma publicação. O padrão é 10.
 
@@ -131,7 +134,7 @@ No **Moderação de usuário** , configure a moderação de comentários, se os 
 
   Se marcado, permitir que os moderadores de membros confiáveis neguem comentários. O padrão está desmarcado.
 
-* **Fechar/Reabrir comentários**
+* **Fechar / Reabrir comentários**
 
   Se essa opção estiver marcada, permitir que os moderadores de membros confiáveis fechem e reabram comentários. O padrão está desmarcado.
 
@@ -157,7 +160,7 @@ No **Moderação de usuário** , configure a moderação de comentários, se os 
 
 ### Guia Configurações de classificação {#sort-settings-tab}
 
-Ordenar por
+Classificar por
 
 Definir como padrão
 

@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2038'
-ht-degree: 4%
+source-wordcount: '2028'
+ht-degree: 2%
 
 ---
 
@@ -154,14 +156,14 @@ O site limita o UGC referenciado exibido para publicações nos sites da comunid
 
 Tipo de conteúdo limita o UGC referenciado exibido às publicações do tipo de recurso selecionado. Um ou mais dos seguintes tipos podem ser selecionados. Todos os tipos são mostrados se nenhum estiver selecionado.
 
-* **Comentar**
+* **Comentário**
 * **Tópico do fórum**
 * **Resposta do fórum**
-* **Perguntas QnA**
+* **Pergunta QnA**
 * **Resposta QnA**
 * **Artigo do blog**
-* **Comentário do blog**
-* **Evento do calendário**
+* **Comentário no Blog**
+* **Evento de calendário**
 * **Comentário do calendário**
 * **Pasta da biblioteca de arquivos**
 * **Documento da biblioteca de arquivos**
@@ -252,7 +254,7 @@ Para expor os filtros personalizados nos sites da Comunidade existentes:
 
    * Adicionar nova categoria `cq.social.hbs.moderation.v2.`
 
-1. Acesse `/content/we-retail/us/en/community/moderation/shell3/jcr:content/rails/searchWell/items/filters.`
+1. Ir para `/content/we-retail/us/en/community/moderation/shell3/jcr:content/rails/searchWell/items/filters.`
 
    * Definir como novo componente `sling:resourceType = social/moderation/v2/filters.`
 
@@ -323,7 +325,7 @@ Ao trabalhar com uma única publicação, o ícone Permitir é exibido quando a 
 
 #### Negar  {#deny}
 
-![negar ](assets/deny.png)
+![negar](assets/deny.png)
 
 A variável **Negar** a ação de moderação só está disponível para conteúdo moderado e não aparece em conteúdo não moderado, exceto no modo de seleção múltipla.
 

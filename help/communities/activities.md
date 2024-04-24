@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 2b2a5de0-e7c7-4417-a217-4b929bc7dcfb
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '473'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
@@ -67,7 +70,7 @@ No **Atividades do usuário** especifique quais atividades serão exibidas:
 
   Se marcada, a página de atividades inclui uma guia que inclui todas as atividades geradas na comunidade à qual o membro atual tem acesso. O padrão está marcado.
 
-* **Mostrar exibição seguinte**
+* **Exibir exibição seguinte**
 
   Se marcada, a página de atividades incluirá uma guia que filtra as atividades com base naquelas que o membro atual está seguindo. O padrão está marcado.
 

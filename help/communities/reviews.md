@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 4%
+source-wordcount: '1290'
+ht-degree: 0%
 
 ---
 
@@ -81,7 +84,7 @@ No **[!UICONTROL Resenhas]** especifique como as revisões são tratadas.
 
   Se marcada, a revisão será fechada para novas revisões e respostas. O padrão está desmarcado.
 
-* **[!UICONTROL Permitir carregamento de arquivos]**
+* **[!UICONTROL Permitir carregamentos de arquivo]**
 
   Se marcado, permite que os anexos de arquivo sejam carregados para revisão. O padrão está desmarcado.
 
@@ -89,15 +92,15 @@ No **[!UICONTROL Resenhas]** especifique como as revisões são tratadas.
 
   Relevante apenas se **[!UICONTROL Permitir carregamentos de arquivo]** está marcado. Este campo limita o tamanho (em bytes) de um arquivo carregado. O padrão é 10 MB.
 
-* **[!UICONTROL Comprimento máximo da mensagem de]**
+* **[!UICONTROL Comprimento máximo da mensagem]**
 
   Número máximo de caracteres que podem ser inseridos na caixa de texto. O padrão é 4.096 caracteres.
 
-* **[!UICONTROL Tipos de arquivos permitidos]**
+* **[!UICONTROL Tipos de arquivo permitidos]**
 
   Relevante apenas se **[!UICONTROL Permitir carregamentos de arquivo]** está marcado. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo, .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não serão permitidos. O padrão é nenhum especificado, de modo que todos os tipos de arquivos são permitidos.
 
-* **[!UICONTROL Editor de rich text]**
+* **[!UICONTROL Editor de Rich Text]**
 
   Se marcados, os posts podem ser inseridos com marcação. O padrão está desmarcado.
 
@@ -195,7 +198,7 @@ No **[!UICONTROL Tipos de recursos]** especifique o resourceType personalizado p
 
 ![comentários-votação](assets/configure-review7.png)
 
-* **[!UICONTROL Tipo de recursos de comentários]**
+* **[!UICONTROL Tipo de recurso de comentário]**
 
   Navegue até o resourceType de uma extensão `comment`componente (comentário único) em /apps. Por exemplo, `/apps/social/commons/components/hbs/comments/comment`.
 

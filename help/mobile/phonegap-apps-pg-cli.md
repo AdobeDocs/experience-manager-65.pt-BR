@@ -6,9 +6,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -88,9 +91,9 @@ phonegap run ios
 >1. Executar `phonegap create helloWorld`
 >1. Navegue até helloWorld (cd helloWorld)
 >1. Executar `phonegap run android` (ou substitua o Android™ pelo iOS conforme descrito acima).
-1. O emulador é aberto executando o aplicativo PhoneGap recém-criado, informando &quot;Device Ready&quot; (Pronto para dispositivo) se a ponte JavaScript para o nativo estiver operacional.
+>1. O emulador é aberto executando o aplicativo PhoneGap recém-criado, informando &quot;Device Ready&quot; (Pronto para dispositivo) se a ponte JavaScript para o nativo estiver operacional.
 >
-Essa solução de problemas verifica se o ambiente de desenvolvimento da CLI do PhoneGap está sendo executado corretamente.
+>Essa solução de problemas verifica se o ambiente de desenvolvimento da CLI do PhoneGap está sendo executado corretamente.
 
 ## Depurar JavaScript com depuração do Safari e IOS {#debug-javascripts-with-safari-and-ios-debug}
 
@@ -151,7 +154,7 @@ Você pode definir pontos de interrupção em qualquer lugar na sua origem. Quan
 
 >[!NOTE]
 >
-Para ver os valores das variáveis no método atual, passe o mouse.
+>Para ver os valores das variáveis no método atual, passe o mouse.
 
 ## Próximas etapas {#the-next-steps}
 
