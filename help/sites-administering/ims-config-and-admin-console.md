@@ -9,9 +9,9 @@ exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 55bf7104dbd9b9fadf6cb37efa28084fe43393c3
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1603'
 ht-degree: 6%
 
 ---
@@ -127,7 +127,7 @@ Mais informações sobre os novos recursos do grupo podem ser encontradas aqui:
 >
 >A Ferramenta de sincronização de usuários precisa se registrar como uma UMAPI de cliente Adobe I/O usando o procedimento descrito [aqui](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 >
->A documentação do console do Adobe I/O pode ser encontrada [aqui](https://developer.adobe.com/developer-console/docs/guides/).
+>A Documentação do console do Adobe Developer pode ser encontrada [aqui](https://developer.adobe.com/developer-console/docs/guides/).
 >
 >
 >A variável [!DNL User Management] A API usada pela Ferramenta de sincronização de usuários é abordada neste [localização](https://adobe-apiplatform.github.io/umapi-documentation/en/).
