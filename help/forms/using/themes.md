@@ -8,7 +8,8 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '6086'
 ht-degree: 1%
@@ -410,7 +411,7 @@ As opções para personalizar estilos de estado variam para diferentes component
    <td><p>Permite personalizar os estilos de texto no componente do tema.</p> <p>Por exemplo, você deseja alterar a aparência do texto inserido na caixa de texto.</p> <p>Suas opções são família de fontes, peso, cor, tamanho, altura da linha, alinhamento de texto, espaçamento entre letras, recuo de texto, sublinhado, itálico, transformação de texto, alinhamento vertical, linha de base e direção. </p> </td>
   </tr>
   <tr>
-   <td><p>Segundo plano </p> </td>
+   <td><p>Fundo </p> </td>
    <td><p>Permite preencher o plano de fundo do componente com uma imagem ou cor. </p> </td>
   </tr>
   <tr>

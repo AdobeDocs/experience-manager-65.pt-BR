@@ -5,7 +5,8 @@ topic-tags: introduction
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin, User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '2038'
 ht-degree: 7%
@@ -250,7 +251,7 @@ O cabeçalho e o rodapé fornecem uma aparência consistente e distinta para um 
       <td><b>Valor</b></td> 
      </tr> 
      <tr> 
-      <td>Segundo plano</td> 
+      <td>Fundo</td> 
       <td>Cor do Plano de Fundo</td> 
       <td>F6921E</td> 
      </tr> 
@@ -350,7 +351,7 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>Segundo plano</td> 
+      <td>Fundo</td> 
       <td>Cor do Plano de Fundo</td> 
       <td>FFFFFF</td> 
      </tr> 
@@ -424,7 +425,7 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>Segundo plano</td> 
+      <td>Fundo</td> 
       <td>Cor do Plano de Fundo</td> 
       <td>F6921E</td> 
      </tr> 

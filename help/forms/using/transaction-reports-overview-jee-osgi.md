@@ -3,7 +3,9 @@ title: Visão Geral dos Relatórios de Transação AEM Forms.
 description: Mantenha uma contagem de todos os formulários enviados, documentos enviados, comunicação interativa renderizada, Documentos convertidos em um formato para outro e muito mais.
 topic-tags: forms-manager
 feature: Transaction Reports
-source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
+exl-id: 6e5e29ef-eb90-4573-8745-1966a238bc03
+role: Admin, User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%
@@ -33,5 +35,3 @@ Consulte o seguinte para obter instruções abrangentes sobre como ativar transa
 * [Visualização e compreensão de relatórios de transação do AEM Forms no OSGi](/help/forms/using/viewing-and-understanding-transaction-reports.md)
 * [Lista de APIs faturáveis para o AEM Forms no OSGi](/help/forms/using/transaction-reports-billable-apis.md)
 * [Registrar uma transação para implementação personalizada do AEM Forms no OSGi](/help/forms/using/record-transaction-custom-implementation.md)
-
-

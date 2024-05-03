@@ -3,7 +3,8 @@ title: Erros de indisponibilidade de serviço de pacote CRX/página inicial apó
 description: Erros de indisponibilidade de serviço de pacote CRX/página inicial após a instalação do service pack mais recente do 6.5.15.0
 exl-id: dfe015a3-3a24-41c5-aede-8e086851d62b
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 2%

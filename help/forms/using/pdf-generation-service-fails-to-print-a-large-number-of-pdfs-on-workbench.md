@@ -3,7 +3,8 @@ title: A geração de PDF não imprime um grande número de PDF com o WorkBench
 description: Quando um cliente gera um grande número de PDF por meio de serviços implementados pelo WorkBench, ocorre uma falha no serviço de impressão.
 exl-id: f3746b8e-4c38-447a-b5bf-d11fc77556f7
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 0%

@@ -2,10 +2,10 @@
 title: Fortalecimento e proteção de formulários AEM no ambiente OSGi
 description: Saiba mais sobre as recomendações e práticas recomendadas para proteger o AEM Forms no servidor OSGi.
 topic-tags: Security
-role: Admin
+role: Admin,User
 exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '1434'
 ht-degree: 0%

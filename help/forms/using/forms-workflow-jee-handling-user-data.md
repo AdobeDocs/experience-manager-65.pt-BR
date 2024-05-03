@@ -3,10 +3,10 @@ title: Fluxos de trabalho do Forms JEE | Manuseio de dados do usuário
 description: Saiba como usar workflows do AEM Forms JEE para projetar, criar e gerenciar processos comerciais.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-role: Admin
+role: Admin,User
 exl-id: 847fa303-8d1e-4a17-b90d-5f9da5ca2d77
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '1379'
 ht-degree: 0%
