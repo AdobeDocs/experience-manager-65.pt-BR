@@ -6,9 +6,9 @@ exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 685d8016400570170dc02dc2be77651aea6e028c
+source-git-commit: 4f4d5494d4e630e6f16f8a8e6a6a609925a91457
 workflow-type: tm+mt
-source-wordcount: '3783'
+source-wordcount: '3828'
 ht-degree: 1%
 
 ---
@@ -244,6 +244,12 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 * Quando um usuário cria um XDP no AEM Forms Designer, na saída PDF, a tag do Formulário de botão não é aninhada na tag de parágrafo principal (tag p). (LC-3921719)
 
 * Quando um usuário cria um XDP no AEM Forms Designer, na saída PDF quando um usuário navega pelas tags de formulário, o objeto de plano de fundo também é marcado. (LC-3921687)
+
+#### [!DNL Document Services] {#forms-document-services-6520}
+
+* (Somente AEM Forms no JEE) O serviço de PDF Generator não enumera as fontes disponíveis no servidor. Consequentemente, o painel de seleção de fontes na página Configurações do Adobe PDF na interface do administrador do PDFG permanece vazio, impedindo efetivamente a (des)incorporação de fontes escolhidas. (FORMS-12095)
+
+
 
 ### Foundation {#foundation-6520}
 
