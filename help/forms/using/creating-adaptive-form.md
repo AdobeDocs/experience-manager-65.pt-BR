@@ -4,11 +4,10 @@ description: Saiba como criar um formulário adaptável usando o [!DNL Experienc
 role: User, Developer
 level: Beginner
 feature: Adaptive Forms, Foundation Components
-exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: d2be8d93c64ca18352a0e811605c526a8dae488f
 workflow-type: tm+mt
-source-wordcount: '1923'
+source-wordcount: '1984'
 ht-degree: 6%
 
 ---
@@ -210,3 +209,18 @@ Por padrão, a opção de salvamento automático não está habilitada. Você po
    >Para que a opção de salvamento automático funcione para usuários anônimos, certifique-se de configurar o Serviço de configuração comum da Forms para permitir que todos os usuários visualizem, verifiquem e assinem formulários.
    >
    >Para configurar o serviço, vá para Configuração do console da Web do Adobe Experience Manager em `https://'[server]:[port]'system/console/configMgr` e edite o **[!UICONTROL Serviço de configuração comum do Forms]** para escolher o **[!UICONTROL Todos os usuários]** opção no **[!UICONTROL Permitir]** e salve a configuração.
+
+
+## Como renomear um formulário adaptável para AEM? {#rename-an-AEM-Adaptive-Form}
+
+Para renomear um formulário adaptável, execute as seguintes etapas:
+
+1. Selecione um formulário adaptável na interface do usuário do AEM Forms.
+1. Clique no link **Propriedades** localizado no painel superior.
+
+   ![Propriedades](/help/forms/using/assets/rename-form-properties.png)
+
+1. Altere o nome do formulário no campo **Título** conforme mostrado na imagem abaixo.
+1. Clique em **Salvar e fechar**.
+
+   ![Renomear um formulário adaptável de AEM](/help/forms/using/assets/rename-form-title.png)
