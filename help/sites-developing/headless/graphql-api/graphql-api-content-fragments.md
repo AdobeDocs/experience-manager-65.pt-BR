@@ -5,10 +5,10 @@ feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 47aac4b19bfbd29395fb09f3c27c981e7aa908f6
 workflow-type: tm+mt
-source-wordcount: '4796'
-ht-degree: 52%
+source-wordcount: '4984'
+ht-degree: 50%
 
 ---
 
@@ -1047,6 +1047,39 @@ Por exemplo, para conceder acesso a solicitações com o referenciador `my.domai
 >Toda os [esquemas](#schema-generation) de GraphQL (derivados de modelos de fragmento de conteúdo que foram **Habilitados**) são legíveis por meio do endpoint do GraphQL.
 >
 >Essa funcionalidade significa que você deve garantir que não haja dados confidenciais disponíveis, pois eles podem ser vazados dessa maneira. Por exemplo, inclui informações que podem estar presentes como nomes de campo na definição do modelo.
+
+## Limitações {#limitations}
+
+Para se proteger contra possíveis problemas, há limitações padrão impostas às consultas:
+
+* A consulta não pode conter mais de 1 milhão (1024 * 1024) de caracteres
+* A consulta não pode conter mais de 15.000 tokens
+* A consulta não pode conter mais de 200.000 tokens de espaço em branco
+
+Você também precisa estar ciente de:
+
+* Um erro de conflito de campo será retornado quando sua consulta do GraphQL contiver campos com o mesmo nome em dois (ou mais) modelos, e as seguintes condições forem atendidas:
+
+   * Assim, onde:
+
+      * Dois (ou mais modelos) são usados como referências possíveis; quando são definidos como uma referência permitida **Tipo de modelo** na referência do fragmento de conteúdo.
+
+     e:
+
+      * Esses dois modelos têm campos com um nome comum; ou seja, o mesmo nome ocorre em ambos os modelos.
+
+     e
+
+      * Esses campos são de tipos de dados diferentes.
+
+   * Por exemplo:
+
+      * Quando dois (ou mais) fragmentos com modelos diferentes (por exemplo, `M1`, `M2`) são usadas como referências possíveis (Referência de conteúdo ou Referência de fragmento) de outro fragmento; por exemplo, `Fragment1` `MultiField/List`
+      * E esses dois fragmentos com modelos diferentes (`M1`, `M2`) têm campos com o mesmo nome, mas tipos diferentes.
+Para ilustrar:
+         * `M1.Title` as `Text`
+         * `M2.Title` as `Text/MultiField`
+      * Ocorrerá um erro de conflito de campo se a consulta do GraphQL contiver o parâmetro `Title` campo.
 
 ## Autenticação {#authentication}
 

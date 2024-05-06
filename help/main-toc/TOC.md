@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Use a documentação do Adobe Experience Manager 6.5 para saber como funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5
-source-git-commit: 52aa367a8d7ebff2f2e1355274ffe357979cac85
+source-git-commit: d5554718d663515d84878ff94555ac6cadcab891
 workflow-type: tm+mt
-source-wordcount: '7406'
+source-wordcount: '7408'
 ht-degree: 20%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 20%
 + Notas de versão {#release-notes}
    + [Notas de versão](/help/release-notes/release-notes.md)
    + Notas de versão anteriores {#service-pack}
+      + [6.5.20](/help/release-notes/previous/6-5-20.md)
       + [6.5.19](/help/release-notes/previous/6-5-19.md)
       + [6.5.18](/help/release-notes/previous/6-5-18.md)
       + [6.5.17](/help/release-notes/previous/6-5-17.md)
@@ -262,7 +263,7 @@ ht-degree: 20%
          + [Práticas recomendadas do MSM](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/msm-best-practices.html)
          + [AEM Sites - Disponibilidade do GDPR](/help/sites-administering/gdpr-compliance-sites.md)
          + [Lidar com solicitações do GDPR para a Fundação AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html)
-         + [Comércio AEM - Disponibilidade do GDPR](/help/sites-administering/gdpr-compliance-commerce.md)
+         + [AEM Commerce - Disponibilidade do GDPR](/help/sites-administering/gdpr-compliance-commerce.md)
       + Gestão de conteúdo {#contentmanagement}
          + [Gerenciador de pacotes](/help/sites-administering/package-manager.md)
          + [Administração de tags](/help/sites-administering/tags.md)
@@ -1203,7 +1204,7 @@ ht-degree: 20%
       + [Transmitindo credenciais usando cabeçalhos de Segurança WS](/help/forms/developing/passing-credentials.md)
 + Content and Commerce {#commerce}
    + [Introdução e visão geral](/help/commerce/cif/introduction.md)
-   + [Alterações importantes no conteúdo e comércio do AEM](/help/commerce/cif/changes.md)
+   + [Alterações importantes no conteúdo do AEM e no Commerce](/help/commerce/cif/changes.md)
    + Integrações {#integrations}
       + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
       + [Solução comercial de terceiros](/help/commerce/cif/integrating/third-party.md)
@@ -1605,7 +1606,7 @@ ht-degree: 20%
          + [Reestruturação do repositório de ativos no AEM 6.5](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md)
          + [Reestruturação do repositório Dynamic Media no AEM 6.5](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md)
          + [Reestruturação do repositório Forms no AEM 6.5](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)
-         + [Reestruturação do repositório de comércio eletrônico no AEM 6.5](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
+         + [Reestruturação do repositório do E-Commerce no AEM 6.5](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
          + [Reestruturação do repositório para o AEM Communities no 6.5](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md)
       + Práticas recomendadas {#practices}
          + [Implantação de práticas recomendadas](/help/sites-deploying/best-practices.md)
