@@ -5,9 +5,9 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 8672eabadd50dfb5f243a162c205931704d8a6c7
+source-git-commit: 2e5754022fb40409500bb57b3b7576bf8ec9a605
 workflow-type: tm+mt
-source-wordcount: '3769'
+source-wordcount: '3770'
 ht-degree: 1%
 
 ---
@@ -79,8 +79,8 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6520}
 
-* As pastas de configuração aninhadas não eram mais suportadas e as pastas de modelo de fragmento de conteúdo não eram mais visíveis após a atualização para AEM 6.5.18 ou AEM 6.5.19. (SITES-18110)
-* Algumas subpastas não conseguem selecionar modelos de fragmento de conteúdo herdados. Ele deve aceitar pastas sem ter um `jcr:content` mesmo que as pastas do DAM criadas por meio da interface do usuário tenham esse nó. (SITES-17943)
+* As pastas de configuração aninhadas não eram mais compatíveis e as pastas de modelo de Fragmento de conteúdo não eram mais visíveis após a atualização para AEM 6.5.18 ou AEM 6.5.19. (SITES-18110)
+* Algumas subpastas não conseguem coletar de modelos herdados de Fragmento de conteúdo. Ele deve aceitar pastas sem ter um `jcr:content` mesmo que as pastas do DAM criadas por meio da interface do usuário tenham esse nó. (SITES-17943)
 
 #### [!DNL Content Fragments] - API do GraphQL {#sites-graphql-api-6520}
 
@@ -98,7 +98,7 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 #### Infraestrutura principal{#sites-core-backend-6520}
 
 * Quando a Publicação rápida de um fragmento de conteúdo é usada, ela continua sendo carregada e não é publicada. Ou seja, a Publicação rápida não está funcionando para Fragmentos de conteúdo após uma atualização do service pack de AEM 6.5.7 para AEM 6.5.17. Quando o usuário tentava publicar gerenciado, funcionava. No entanto, quando eles tentaram a Publicação rápida, ela não estava sendo publicada. Especificamente, `com.day.cq.wcm.core.impl.reference.ActivationReferenceSearchBuilder` causou a queda do sistema. (SITES-17311)
-* Os fragmentos de conteúdo não são serializáveis com o exportador Jackson: o carregamento da página é interrompido quando há um fragmento de conteúdo referido em uma página (usa o código do exportador Jackson) e qualquer tag adicionada a um fragmento de conteúdo. (SITES-18096)
+* Os fragmentos de conteúdo não são serializáveis com o exportador Jackson: o carregamento da página é interrompido quando há um Fragmento de conteúdo referido em uma página (usa o código do exportador Jackson) e qualquer tag adicionada a um Fragmento de conteúdo. (SITES-18096)
 
 #### Componentes principais{#sites-core-components-6520}
 
@@ -275,7 +275,7 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 
 * Após a implantação do AEM 6.5 Service Pack 18, houve um problema com a guia Filtros no Editor de regras de tradução. Quando um Contexto for selecionado, ao clicar em Editar > Salvar, uma aspa dupla como caractere de HTML será exibida na próxima vez que você abrir o mesmo Contexto. Basicamente, as regras de tradução não eram salvas corretamente. (NPR-41624)
 * Problemas relacionados às traduções do Fragmento do conteúdo, em que as cadeias de caracteres traduzidas estão sendo enviadas de volta do provedor de tradução para o AEM, mas estão travadas no `/content/projects` e não atualizar os Fragmentos de conteúdo. (NPR-41516)
-* Uma mensagem de erro é exibida ao criar uma cópia de idioma. Ele ocorre em uma página que tem um fragmento de conteúdo referenciado em uma propriedade de página, usando modelos de fragmento de conteúdo. (NPR-41441)
+* Uma mensagem de erro é exibida ao criar uma cópia de idioma. Ele ocorre em uma página que tem um Fragmento de conteúdo referenciado em uma propriedade de página, usando modelos de Fragmento de conteúdo. (NPR-41441)
 * Os links nos Fragmentos de experiência não são ajustados para o idioma correto durante a Cópia de idioma. Em vez disso, o Fragmento de experiência aponta para o local principal. (NPR-41343)
 
 #### Interface do usuário{#foundation-ui-6520}
