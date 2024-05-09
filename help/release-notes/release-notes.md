@@ -5,9 +5,10 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 2e5754022fb40409500bb57b3b7576bf8ec9a605
+exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
+source-git-commit: 566230aa14f24c2401d1e77965b542825eeb7fc9
 workflow-type: tm+mt
-source-wordcount: '3770'
+source-wordcount: '3908'
 ht-degree: 1%
 
 ---
@@ -489,6 +490,11 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 
 ### Problemas conhecidos do AEM Forms {#known-issues-aem-forms-6520}
 
+* Em um Formulário adaptável baseado em um XDP com scripts incorporados em caixas de seleção, os scripts não são executados para elementos após essas caixas de seleção. (FORMS-14244)
+* As linhas no widget seletor de datas são truncadas ao percorrer meses no widget pop-up para campos com padrão Editar/Exibir. (FORMS-13620)
+* Os envios de formulários falham ao tentar usar o serviço DOR (Documento de registro) no back-end. A mensagem de erro encontrada é: &quot;Não foi possível concluir a ação enviar porque o recurso de formulário não foi atribuído corretamente.&quot; (FORMS-13798)
+* Quando um Formulário adaptável é enviado de uma instância de publicação do Adobe Experience Manager para um fluxo de trabalho do Adobe Experience Manager, o fluxo de trabalho não salva os anexos. (FORMS-14209)
+* Ao instalar o pacote AEM 6.5 Forms Service Pack 20 (pacote complementar do AEM Forms para SP20), a interface do usuário (UI) do AEM Sites exibe uma significativa degradação do desempenho. (FORMS-13791)
 * O serviço de preenchimento prévio falha com uma exceção de ponteiro nulo nas Comunicações interativas. (CQDOC-21355)
 * O Forms adaptável permite usar funções personalizadas com o ECMAScript versão 5 ou anterior. Quando uma função personalizada usa o ECMAScript versão 6 ou posterior, como &quot;let&quot;, &quot;const&quot; ou funções de seta, o editor de regras pode não abrir corretamente.
 * Os usuários não podem criar uma carta de gerenciamento de correspondência. Quando um usuário cria uma correspondência, um erro com a descrição &quot;`Object Object`&quot; é exibido e a carta não foi criada. As miniaturas dos layouts também não são carregadas na tela de criação da carta. Você pode instalar o [AEM 6.5 Form Service Pack 20 (6.5.20.0) mais recente](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) para resolver o problema. (FORMS-13496)
