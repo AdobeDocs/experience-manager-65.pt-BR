@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 566230aa14f24c2401d1e77965b542825eeb7fc9
+source-git-commit: c165755c19ac64fdd253bff9163f48ddf4732623
 workflow-type: tm+mt
-source-wordcount: '3908'
+source-wordcount: '4046'
 ht-degree: 1%
 
 ---
@@ -530,6 +530,11 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 1. Stop the application server.
 
 -->
+* Em um Formulário adaptável baseado em um XDP com scripts incorporados em caixas de seleção, os scripts não são executados para elementos após essas caixas de seleção. (FORMS-14244)
+* As linhas no widget seletor de datas são truncadas ao percorrer meses no widget pop-up para campos com padrão Editar/Exibir. (FORMS-13620)
+* Os envios de formulários falham ao tentar usar o serviço DOR (Documento de registro) no back-end. A mensagem de erro encontrada é: &quot;Não foi possível concluir a ação enviar porque o recurso de formulário não foi atribuído corretamente.&quot; (FORMS-13798)
+* Quando um Formulário adaptável é enviado de uma instância de publicação do Adobe Experience Manager para um fluxo de trabalho do Adobe Experience Manager, o fluxo de trabalho não salva os anexos. (FORMS-14209)
+* Ao instalar o pacote AEM 6.5 Forms Service Pack 20 (pacote complementar do AEM Forms para SP20), a interface do usuário (UI) do AEM Sites exibe uma significativa degradação do desempenho. (FORMS-13791)
 
 ## Pacotes OSGi e pacotes de conteúdo incluídos{#osgi-bundles-and-content-packages-included}
 
