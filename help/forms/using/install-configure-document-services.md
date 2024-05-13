@@ -3,11 +3,10 @@ title: Instalar e configurar serviços de documento
 description: Instale os serviços de documento do AEM Forms para criar, montar, distribuir, arquivar documentos PDF, adicionar assinaturas digitais para limitar o acesso a documentos e decodificar Forms com código de barras.
 topic-tags: installing
 role: Admin, User, Developer
-exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: acb023caf0a7e64fea9cf5d9198d672ee14c8d88
 workflow-type: tm+mt
-source-wordcount: '5633'
+source-wordcount: '5703'
 ht-degree: 1%
 
 ---
@@ -298,6 +297,10 @@ A conta de usuário usada para iniciar o servidor de aplicativos requer o **Subs
 1. Abra o Editor de Diretiva de Grupo para Microsoft® Windows. Para abrir o Editor de Diretiva de Grupo, clique em **[!UICONTROL Início]**, tipo **gpedit.msc** na caixa Iniciar pesquisa e clique em **[!UICONTROL Editor de Diretiva de Grupo]**.
 1. Navegue até **[!UICONTROL Política do Computador Local]** > **[!UICONTROL Configuração do computador]** > **[!UICONTROL Configurações do Windows]** > **[!UICONTROL Configurações de segurança]** > **[!UICONTROL Políticas Locais]** > **[!UICONTROL Atribuição de direitos do usuário]** e edite o **[!UICONTROL Substituir um token de nível de processo]** e incluir o grupo Administradores.
 1. Adicione o usuário à entrada Substituir um token no nível do processo.
+
+>[!NOTE]
+>
+> Se o servidor AEM estiver sendo executado como um serviço no LSA, a atribuição explícita desse privilégio a um usuário pode não ser necessária, ou seja, se nenhum outro aplicativo/componente estiver instalado além do necessário para o PDFG na VM, não será necessário conceder a nenhuma outra conta o **Substituir um token de nível de processo à direita** e somente contas de serviço de rede e de serviço local devem ter o direito.
 
 ### (Somente para Windows) Habilitar o serviço PDF Generator para não administradores {#enable-the-pdf-generator-service-for-non-administrators}
 
