@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 72edd8d1-8573-4942-8ced-1a100af58d78
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 55421ab730382eb9aa603f898182865649f66349
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1573'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Um grupo dinâmico contém apenas usuários. Ela não pode conter outros grupos.
 
 ### Criar automaticamente grupos dinâmicos com base em domínios de email {#automatically-create-dynamic-groups-based-on-email-domains}
 
-1. No console de administração, clique em Configurações > Gerenciamento de usuários > Configuração > Configurar atributos avançados do sistema.
+1. Clique em Configurações > Gerenciamento de usuários > Configuração > Configurar atributos avançados do sistema.
 1. Em Criação automática de grupo dinâmico, marque a caixa de seleção.
 1. Especifique quando o Gerenciador de usuários verificará se há novos domínios de email. Esse horário deve ser posterior ao horário de sincronização do domínio, pois a criação de grupos dinâmicos é lógica somente se a sincronização do domínio for concluída.
 
