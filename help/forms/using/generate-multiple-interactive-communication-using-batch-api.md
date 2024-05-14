@@ -9,7 +9,7 @@ feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 066528bd9c2d7db9705a9d47ed6ea91a584129cb
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 1%
@@ -119,9 +119,7 @@ Você combina dados (registros) salvos em uma fonte de dados externa com um mode
    1. Selecione a busca ou obtenção do serviço no campo Serviço de leitura no painel Editar propriedades.
    1. Selecione o ícone de lápis para o argumento do serviço de leitura para vincular o argumento a um Atributo de solicitação e especifique o valor da vinculação. Ele vincula o argumento service ao atributo de vinculação especificado ou ao valor literal, que é transmitido ao serviço como um argumento para buscar detalhes associados ao valor especificado da fonte de dados.
 
-      <br>
-        Neste exemplo, o argumento id pega o valor do atributo id do perfil do usuário e o passa como um argumento para o serviço de leitura. Ele lê e retorna valores de propriedades associadas do objeto de modelo de dados do funcionário para a id especificada. Portanto, se você especificar 00250 no campo id do formulário, o serviço de leitura lerá os detalhes do funcionário com a ID de funcionário 00250.
-        <br>
+      Neste exemplo, o argumento id pega o valor do atributo id do perfil do usuário e o passa como um argumento para o serviço de leitura. Ele lê e retorna valores de propriedades associadas do objeto de modelo de dados do funcionário para a id especificada. Portanto, se você especificar 00250 no campo id do formulário, o serviço de leitura lerá os detalhes do funcionário com a ID de funcionário 00250.
 
       ![Configurar atributo de solicitação](assets/request-attribute.png)
 
