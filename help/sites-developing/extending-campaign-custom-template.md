@@ -9,20 +9,27 @@ exl-id: de5c634a-c0d7-4e69-b941-d2fbfe83117d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: ad8f849384e58511de97611d1b26c4fc96022062
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
 
 # Criação de um modelo de página AEM personalizado com componentes de formulário do Adobe Campaign{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-Esta página explica como criar um modelo de página personalizado que usa o [Formulário do Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) Geometrixx examinando o modo como o modelo para atividades no exterior ( `/apps/geometrixx-outdoors/components/page_campaign_profile`) é implementada e aponta para informações importantes que podem ser necessárias ao criar seu próprio modelo personalizado.
+Esta página explica como criar um modelo de página personalizado que usa o [Formulário do Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) Geometrixx examinando o modo como o modelo para atividades no exterior (`/apps/geometrixx-outdoors/components/page_campaign_profile`) é implementada e aponta para informações importantes que podem ser necessárias ao criar seu próprio modelo personalizado.
 
 >[!NOTE]
 >
 >[O email e os exemplos de formulário estão disponíveis somente no Geometrixx](/help/sites-developing/we-retail.md). Baixe o conteúdo de Geometrixx de amostra do Compartilhamento de pacotes.
+
+>[!CAUTION]
+>
+>Os componentes de email do AEM foram descontinuados. Devido à natureza do email, que mescla conteúdo e estilo, os componentes de email fornecidos prontos para uso pelo AEM tornam-se de reutilização limitada para os clientes, devido à necessidade de implementar estilos personalizados em quaisquer componentes que sejam necessários para projetos.
+>
+>Os componentes de email podem ser implementados no nível do projeto, e os componentes de email do AEM obsoletos ilustram como isso pode ser feito. No entanto, não use esses componentes obsoletos em projetos.
+
 
 Para criar um modelo de página do AEM personalizado usando componentes do Adobe Campaign Form, verifique se você tem o seguinte:
 
