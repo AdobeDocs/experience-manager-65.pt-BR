@@ -1,6 +1,6 @@
 ---
 title: Vídeo no Dynamic Media
-description: Saiba como trabalhar com vídeo no Dynamic Media, como práticas recomendadas para codificação de vídeos, adição de vários áudio e várias legendas a vídeos e miniaturas de vídeo.
+description: Saiba como trabalhar com vídeo no Dynamic Media, como práticas recomendadas para codificação de vídeos, adição de várias faixas de áudio e legenda a vídeos e miniaturas de vídeo.
 mini-toc-levels: 3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,9 +11,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a49af471c5fc2f799687173bff6cdcb21505740a
 workflow-type: tm+mt
-source-wordcount: '11187'
+source-wordcount: '11213'
 ht-degree: 1%
 
 ---
@@ -425,7 +425,7 @@ Por exemplo, suponha que a origem de vídeo seja 1920 x 1080. Na tabela a seguir
 
 A Dynamic Media recomenda usar predefinições de codificação de vídeo MP4 H.264. Como os arquivos MP4 usam o codec de vídeo H.264, ele fornece vídeo de alta qualidade, mas em um tamanho de arquivo compactado.
 
-### Habilite o suporte a DASH, legendas múltiplas e faixas de áudio múltiplas na sua conta Dynamic Media {#enable-dash}
+### Habilite o suporte a DASH, várias legendas e trilha de áudio em sua conta do Dynamic Media {#enable-dash}
 
 **Sobre a ativação do DASH na sua conta**
 DASH (Digital Adaptive Streaming over HTTP) é o padrão internacional para streaming de vídeo e é amplamente adotado em diferentes visualizadores de vídeo. Quando o DASH está ativado em sua conta, você tem a opção de escolher entre DASH ou HLS para o streaming de vídeo adaptável. Ou você pode optar por ambos com alternância automática entre players quando **[!UICONTROL automático]** é selecionado como o tipo de reprodução na predefinição do Visualizador.
@@ -444,15 +444,15 @@ A ativação do DASH na sua conta do requer duas etapas:
 * Configurar o Dynamic Media para usar o DASH, o que você mesmo pode fazer facilmente.
 * Configuração do Experience Manager 6.5 para usar o DASH, que é feito por meio de um caso de Suporte ao cliente do Adobe que você cria e envia.
 
-**Sobre como ativar o suporte a faixas de várias legendas e áudio na sua conta**
+**Sobre a ativação do suporte a várias legendas e faixas de áudio na sua conta**
 
-Ao mesmo tempo que cria um caso de suporte para Adobe para ter o DASH ativado na sua conta, você também se beneficia de ter o suporte para faixas de multi-legendas e multi-áudio ativado automaticamente. Após a ativação, todos os vídeos subsequentes que você carregar serão processados com uma nova arquitetura de back-end que inclui suporte para adicionar faixas de várias legendas e áudio aos seus vídeos.
+Ao mesmo tempo que cria um caso de suporte para Adobe para ter o DASH ativado em sua conta, você também se beneficia de ter o suporte para múltiplas legendas e faixas de áudio ativado automaticamente. Após a ativação, todos os vídeos subsequentes carregados serão processados com uma nova arquitetura de back-end que inclui suporte para adicionar várias legendas e faixas de áudio aos vídeos.
 
 >[!IMPORTANT]
 >
->Qualquer vídeo que você tenha carregado *antes* habilitar suporte a faixas de várias legendas e áudio na sua conta do Dynamic Media, [deve ser reprocessado](/help/assets/processing-profiles.md#reprocessing-assets). Esta etapa de reprocessamento de vídeo é necessária para que o recurso de faixa de várias legendas e áudio esteja disponível para eles. Os URLs do vídeo continuam funcionando e sendo reproduzidos como de costume, após o reprocessamento.
+>Qualquer vídeo que você tenha carregado *antes* ativação do suporte a várias legendas e faixas de áudio na sua conta do Dynamic Media, [deve ser reprocessado](/help/assets/processing-profiles.md#reprocessing-assets). Essa etapa de reprocessamento de vídeo é necessária para que o recurso de várias legendas e faixas de áudio esteja disponível para eles. Os URLs do vídeo continuam funcionando e sendo reproduzidos como de costume, após o reprocessamento.
 
-**Para ativar o suporte a DASH, legendas múltiplas e faixas de áudio múltiplo na sua conta do Dynamic Media:**
+**Para ativar o suporte a DASH, várias legendas e várias faixas de áudio na sua conta do Dynamic Media:**
 
 <!-- 1. **Configure Dynamic Media for DASH** - In Dynamic Media on Experience Manager 6.5, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 
@@ -466,12 +466,12 @@ Ao mesmo tempo que cria um caso de suporte para Adobe para ter o DASH ativado na
 
 1. Selecione **[!UICONTROL Salvar]**.
 
-1. Agora [usar o Admin Console para iniciar a criação de um novo caso de suporte](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html?lang=pt-BR).
+1. Agora [usar o Admin Console para iniciar a criação de um novo caso de suporte](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
 1. Para criar um caso de suporte, siga as instruções enquanto garante que você forneça as seguintes informações:
 
    * Nome do contato principal, email, telefone.
    * Nome da sua conta do Dynamic Media.
-   * Especifique se deseja que o DASH, as legendas múltiplas e o suporte para faixas de áudio múltiplo estejam habilitados na sua conta do Dynamic Media, no Experience Manager 6.5.
+   * Especifique se deseja que o DASH, várias legendas e suporte para faixas de áudio múltiplos estejam habilitados em sua conta do Dynamic Media, no Experience Manager 6.5.
 
 1. O Suporte ao cliente do Adobe adiciona você à Lista de espera do cliente com base na ordem em que as solicitações são enviadas.
 1. Quando o Adobe estiver pronto para lidar com sua solicitação, o Suporte ao cliente entrará em contato com você para coordenar e definir uma data limite para ativação.
@@ -479,7 +479,7 @@ Ao mesmo tempo que cria um caso de suporte para Adobe para ter o DASH ativado na
 1. Agora é possível executar um dos seguintes procedimentos:
 
    * Crie seu [predefinição do visualizador de vídeo](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) como de costume.
-   * [Adicionar multi-legendas e faixas de áudio](#add-msma) ao seu vídeo.
+   * [Adicionar várias legendas e faixas de áudio](#add-msma) ao seu vídeo.
 
 ## Exibir relatórios de vídeo {#viewing-video-reports}
 
@@ -593,13 +593,13 @@ Use o [Manual de referência do Adobe Dynamic Media Viewers](https://experiencel
 
 
 
-## Sobre o suporte a faixas de várias legendas e áudio para vídeos no Dynamic Media{#about-msma}
+## Sobre o suporte a várias legendas e faixas de áudio para vídeos no Dynamic Media{#about-msma}
 
-Com o recurso de faixa de várias legendas e áudio no Dynamic Media, é possível adicionar facilmente várias legendas e faixas de áudio a um vídeo principal. Esse recurso significa que os vídeos estão acessíveis em um público-alvo global. Você pode personalizar um único vídeo principal publicado para um público-alvo global em vários idiomas e seguir as diretrizes de acessibilidade para diferentes regiões geográficas. Os autores também podem gerenciar as legendas e faixas de áudio em uma única guia na interface do usuário do.
+Com o recurso de várias legendas e faixas de áudio no Dynamic Media, é possível adicionar facilmente várias legendas e faixas de áudio a um vídeo principal. Esse recurso significa que os vídeos estão acessíveis em um público-alvo global. Você pode personalizar um único vídeo principal publicado para um público-alvo global em vários idiomas e seguir as diretrizes de acessibilidade para diferentes regiões geográficas. Os autores também podem gerenciar as legendas e faixas de áudio em uma única guia na interface do usuário do.
 
 ![A guia Legendas e faixas de áudio no Dynamic Media, juntamente com uma tabela mostrando os arquivos de legenda .VTT carregados e os arquivos de faixa de áudio .MP3 carregados para um vídeo.](assets-dm/msma-subtitle-audiotracks-tab.png)
 
-Alguns dos casos de uso a serem considerados para adicionar múltiplas legendas e faixas de áudio ao seu vídeo principal incluem:
+Alguns casos de uso a serem considerados para adicionar várias legendas e faixas de áudio ao vídeo principal incluem:
 
 | Tipo | Caso de uso |
 |--- |--- |
@@ -609,28 +609,28 @@ Alguns dos casos de uso a serem considerados para adicionar múltiplas legendas 
 |  | Faixas de comentários |
 |  | Áudio descritivo |
 
-Todos [formatos de vídeo compatíveis com o Dynamic Media](/help/assets/assets-formats.md) e todos os visualizadores de vídeo do Dynamic Media, exceto o Dynamic Media *Video_360* visualizador—são suportados para uso com multi-legendas e faixas de áudio multi.
+Todos [formatos de vídeo compatíveis com o Dynamic Media](/help/assets/assets-formats.md) e todos os visualizadores de vídeo do Dynamic Media, exceto o Dynamic Media *Video_360* visualizador—são suportados para uso com múltiplas legendas e faixas de áudio.
 
-O recurso de faixa de várias legendas e áudio está disponível para sua conta Dynamic Media por meio de um botão de alternância de recurso que deve ser ativado pelo Suporte ao cliente Adobe.
+O recurso de múltiplas legendas e faixas de áudio está disponível para sua conta Dynamic Media por meio de um botão de alternância de recurso que deve ser ativado pelo Suporte ao cliente do Adobe.
 
-### Adicionar multi-legendas e faixas de áudio multi ao seu vídeo {#add-msma}
+### Adicionar várias legendas e faixas de áudio ao seu vídeo {#add-msma}
 
-Antes de adicionar faixas de várias legendas e áudio ao vídeo, verifique se você já tem o seguinte no local:
+Antes de adicionar várias legendas e faixas de áudio ao vídeo, verifique se você já tem o seguinte no local:
 
 * O Dynamic Media é configurado em um ambiente AEM.
 * A [O perfil Dynamic Media Video é aplicado à pasta em que os vídeos são assimilados](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
-* [As legendas múltiplas e a faixa de áudio múltiplo estão habilitadas em sua conta do Dynamic Media](#enable-dash).
+* [Várias legendas e faixas de áudio estão habilitadas em sua conta do Dynamic Media](#enable-dash).
 
 Legendas e legendas adicionadas são compatíveis com os formatos WebVTT e Adobe VTT. E os arquivos de trilha de áudio adicionados são suportados com o formato MP3.
 
 >[!IMPORTANT]
 >
->Qualquer vídeo que você tenha carregado *antes* habilitar suporte a faixas de várias legendas e áudio na sua conta do Dynamic Media, [deve ser reprocessado](/help/assets/processing-profiles.md#reprocessing-assets). Esta etapa de reprocessamento de vídeo é necessária para que o recurso de faixa de várias legendas e áudio esteja disponível para eles. Os URLs do vídeo continuam funcionando e sendo reproduzidos como de costume, após o reprocessamento.
+>Qualquer vídeo que você tenha carregado *antes* ativação do suporte a várias legendas e faixas de áudio na sua conta do Dynamic Media, [deve ser reprocessado](/help/assets/processing-profiles.md#reprocessing-assets). Essa etapa de reprocessamento de vídeo é necessária para que o recurso de várias legendas e faixas de áudio esteja disponível para eles. Os URLs do vídeo continuam funcionando e sendo reproduzidos como de costume, após o reprocessamento.
 
-**Para adicionar multi-legendas e faixas de áudio ao seu vídeo:**
+**Para adicionar várias legendas e faixas de áudio ao vídeo:**
 
 1. [Fazer upload do vídeo principal para uma pasta](/help/assets/managing-video-assets.md#upload-and-preview-video-assets) que já tem um perfil de vídeo atribuído a ele.
-1. Navegue até o ativo de vídeo carregado que você deseja adicionar faixas de várias legendas e áudio.
+1. Navegue até o ativo de vídeo carregado que você deseja adicionar várias legendas e faixas de áudio.
 1. No modo de seleção de ativos, na Exibição em lista ou na Exibição de cartão, selecione o ativo de vídeo.
 1. Na barra de ferramentas, selecione o ícone Propriedades (um círculo com um &quot;i&quot;).
    ![Ativo de vídeo selecionado com marca de seleção sobre a imagem em miniatura do vídeo e Propriedades de exibição destacadas na barra de ferramentas.](assets-dm/msma-selectedasset-propertiesbutton.png)*Ativo de vídeo selecionado na exibição de Cartão.*
@@ -840,7 +840,7 @@ A faixa de áudio original extraída de um arquivo primário não pode ser baixa
    | Salvar como | Use o nome de arquivo padrão especificado no campo de texto Salvar como ou especifique seu próprio nome. |
    | Criar uma pasta separada para cada ativo | Crie uma pasta para cada arquivo de legenda ou de faixa de áudio selecionado para download. |
    | Email | Use o programa de email padrão para enviar o arquivo .zip para um endereço de email especificado. |
-   | Assets | Especifica o número de arquivos que você está baixando e o tamanho total combinado de todos os arquivos selecionados. Desmarcar essa opção esmaece (desativa) a **[!UICONTROL Baixar]** botão, impedindo o download de qualquer arquivo. |
+   | Ativos | Especifica o número de arquivos que você está baixando e o tamanho total combinado de todos os arquivos selecionados. Desmarcar essa opção esmaece (desativa) a **[!UICONTROL Baixar]** botão, impedindo o download de qualquer arquivo. |
 1. Selecionar **[!UICONTROL Baixar]**.
 1. Publique o vídeo. Consulte [Publicar ativos](publishing-dynamicmedia-assets.md).
 
@@ -853,7 +853,7 @@ A faixa de áudio original extraída de um arquivo primário não pode ser baixa
 
 >[!IMPORTANT]
 >
->O Adobe recomenda que você [habilitar o recurso de faixa de várias legendas e de vários áudio](#enable-dash) na sua conta do Dynamic Media. Isso permite que você aproveite a arquitetura de back-end mais recente do Dynamic Media e um fluxo de trabalho simplificado para adicionar legendas, legendas e faixas de áudio aos seus vídeos.
+>O Adobe recomenda que você [habilitar o recurso de múltiplas legendas e faixas de áudio](#enable-dash) na sua conta do Dynamic Media. Isso permite que você aproveite a arquitetura de back-end mais recente do Dynamic Media e um fluxo de trabalho simplificado para adicionar legendas, legendas e faixas de áudio aos seus vídeos.
 
 Você pode estender o alcance de seus vídeos para mercados globais adicionando legendas ocultas a vídeos únicos ou a Conjuntos de vídeos adaptados. Ao adicionar legendas ocultas, você evita a necessidade de dublar o áudio ou a necessidade de usar alto-falantes nativos para regravar o áudio para cada idioma diferente. O vídeo é reproduzido no idioma em que foi gravado. Legendas em idiomas estrangeiros aparecem para que pessoas de diferentes idiomas ainda possam entender a parte de áudio.
 

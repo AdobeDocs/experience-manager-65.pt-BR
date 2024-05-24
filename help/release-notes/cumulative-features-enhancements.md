@@ -7,9 +7,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 01fe5b53-2244-445f-a4d0-bd58ea38b611
 solution: Experience Manager
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: a49af471c5fc2f799687173bff6cdcb21505740a
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2335'
 ht-degree: 13%
 
 ---
@@ -46,7 +46,7 @@ Consulte também [Notas de versão mais recentes do Service Pack do Adobe Experi
 
 ## AEM 6.5, Service Pack 18 — 24 de agosto de 2023
 
-* Assets, Dynamic Media - [Suporte a faixas de várias legendas e áudio para vídeos no Dynamic Media](/help/assets/video.md#about-msma)—Agora é possível adicionar facilmente várias legendas e faixas de áudio a um vídeo principal. Esse recurso significa que os vídeos estão acessíveis em um público-alvo global. Você pode personalizar um único vídeo principal publicado para um público-alvo global em vários idiomas e seguir as diretrizes de acessibilidade para diferentes regiões geográficas. Os autores também podem gerenciar as legendas e faixas de áudio em uma única guia na interface do usuário do.
+* Assets, Dynamic Media - [Suporte a várias legendas e faixas de áudio para vídeos no Dynamic Media](/help/assets/video.md#about-msma)—Agora é possível adicionar facilmente várias legendas e faixas de áudio a um vídeo principal. Esse recurso significa que os vídeos estão acessíveis em um público-alvo global. Você pode personalizar um único vídeo principal publicado para um público-alvo global em vários idiomas e seguir as diretrizes de acessibilidade para diferentes regiões geográficas. Os autores também podem gerenciar as legendas e faixas de áudio em uma única guia na interface do usuário do.
 * Ativos - Nos resultados da Pesquisa, agora é possível navegar até o local da pasta que contém um ativo para permitir que você execute várias tarefas de gerenciamento de ativos.
 * O Seletor de polaris de sites em fragmentos de conteúdo melhorou o desempenho.
 * Ativação do usuário do Editor de páginas do Sites/Componente de imagem para fazer referência a ativos do Cloud Service remoto de Ativos.
