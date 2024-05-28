@@ -1,19 +1,11 @@
 ---
 title: Personalizar os Componentes principais da CIF
 description: Saiba como personalizar os Componentes principais do Adobe Experience Manager CIF. O tutorial aborda como estender com segurança um Componente principal CIF para atender aos requisitos específicos da empresa. Saiba como estender uma consulta do GraphQL para retornar um atributo personalizado e exibir o novo atributo em um Componente principal CIF.
-sub-product: Commerce
-topics: Development
-version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
-feature: Commerce Integration Framework
-kt: 4279
-thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
+feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 54f2b7fda39f97c4f8a1d28ac51b7b998bf8e4a1
 workflow-type: tm+mt
 source-wordcount: '2302'
 ht-degree: 11%
@@ -58,7 +50,7 @@ Você clona o [Projeto Venia](https://github.com/adobe/aem-cif-guides-venia) e s
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
    ```
 
 1. Adicione as configurações OSGi necessárias para conectar a instância do AEM a uma instância do Adobe Commerce ou adicionar as configurações ao projeto recém-criado.
@@ -400,7 +392,7 @@ Nesse caso, renderize um banner sobre o teaser para indicar que o produto é &qu
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
    ```
 
 1. Abra uma nova janela do navegador e acesse AEM e a **Console OSGi** > **Status** > **Modelos Sling**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
@@ -479,7 +471,7 @@ Nesse ponto, a lógica de quando exibir a variável **Eco Friendly** o símbolo 
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
    ```
 
 1. Atualize para o **Página inicial Venia** em [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html) onde o Teaser do produto foi adicionado.
