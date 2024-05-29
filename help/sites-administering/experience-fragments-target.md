@@ -10,38 +10,14 @@ exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: dcb55b3b185fe5dccf52377a12556e33d818e410
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1438'
 ht-degree: 41%
 
 ---
 
 # Exportar Fragmentos de experiência para o Adobe Target{#exporting-experience-fragments-to-adobe-target}
-
->[!CAUTION]
->
->Algumas funcionalidades desta página exigem a aplicação do AEM 6.5.3.0 (ou posterior).
->
->6.5.3.0:
->
->* **Domínios externalizadores** agora pode ser selecionado.
->  **Nota:** Os domínios do externalizador são relevantes somente para o conteúdo do fragmento de experiência que é enviado ao Target, e não para metadados como Exibir conteúdo da oferta.
->
->6.5.2.0
->
->* Os fragmentos de experiência podem ser exportados para:
->
->   * o espaço de trabalho padrão.
->   * um espaço de trabalho nomeado, especificado na Configuração na nuvem.
->   * **Nota:** A exportação para espaços de trabalho específicos exige o Adobe Target Premium.
->
->* AEM deve ser [integrado ao Adobe Target usando IMS](/help/sites-administering/integration-target-ims.md).
->
->AEM 6.5.0.0 e 6.5.1.0:
->
->* Os Fragmentos de experiência do AEM são exportados para o espaço de trabalho padrão do Adobe Target.
->* O AEM deve estar integrado ao Adobe Target, de acordo com as instruções na seção [Integração com o Adobe Target](/help/sites-administering/target.md).
 
 Você pode exportar [Fragmentos de experiência](/help/sites-authoring/experience-fragments.md), criado no Adobe Experience Manager (AEM), para o Adobe Target (Target). Eles podem ser usados como ofertas em atividades do Target, para testar e personalizar experiências em escala.
 
@@ -51,7 +27,13 @@ Há três opções de formato disponíveis para exportar um fragmento de experi�
 * JSON: suporte para entrega de conteúdo headless
 * HTML e JSON
 
-Os fragmentos de experiência do AEM podem ser exportados para o espaço de trabalho padrão no Adobe Target ou para espaços de trabalho definidos pelo usuário para o Adobe Target. Isso é feito usando o Console do Adobe Developer, para o qual o AEM deve ser [integrado ao Adobe Target usando IMS](/help/sites-administering/integration-target-ims.md).
+Os fragmentos de experiência do AEM podem ser exportados para o espaço de trabalho padrão no Adobe Target ou para espaços de trabalho definidos pelo usuário para o Adobe Target. Isso é feito usando o Console do Adobe Developer, para o qual o AEM deve ser [integrado ao Adobe Target usando IMS](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+
+>[!NOTE]
+>
+>[Agora as integrações IMS estão configuradas com S2S OAuth](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+>
+>As configurações anteriores foram feitas com [Credenciais JWT que agora estão sujeitas a desativação no console do Adobe Developer](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 >[!NOTE]
 >
@@ -71,14 +53,17 @@ Os fragmentos de experiência do AEM podem ser exportados para o espaço de trab
 
 ## Pré-requisitos {#prerequisites}
 
->[!CAUTION]
->
->Algumas funcionalidades desta página requerem a aplicação do AEM 6.5.3.0.
-
 Várias ações são necessárias:
 
-1. Você precisa [integrar o AEM ao Adobe Target usando IMS](/help/sites-administering/integration-target-ims.md).
-2. Os fragmentos de experiência são exportados da instância do autor do AEM, portanto, [Configurar o Externalizador de links de AEM](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) na instância do autor para garantir que todas as referências do fragmento de experiência sejam externalizadas para entrega na Web.
+1. Você precisa [integrar o AEM ao Adobe Target usando IMS](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+
+   >[!NOTE]
+   >
+   >[As integrações IMS agora estão configuradas com o S2S OAut](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+   >
+   >As configurações anteriores foram feitas com [Credenciais JWT que agora estão sujeitas a desativação no console do Adobe Developer](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
+
+1. Os fragmentos de experiência são exportados da instância do autor do AEM, portanto, [Configurar o Externalizador de links de AEM](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) na instância do autor para garantir que todas as referências do fragmento de experiência sejam externalizadas para entrega na Web.
 
    >[!NOTE]
    >

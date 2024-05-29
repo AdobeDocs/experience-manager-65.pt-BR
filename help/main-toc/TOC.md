@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Use a documentação do Adobe Experience Manager 6.5 para saber como funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5
-source-git-commit: 9bacc16657c83329ff7b02dc8b233908e9deb2e1
+source-git-commit: b274d150ccffb93858de6a3a8f7e05441776d0fb
 workflow-type: tm+mt
-source-wordcount: '7406'
+source-wordcount: '7400'
 ht-degree: 20%
 
 ---
@@ -74,6 +74,7 @@ ht-degree: 20%
    + [Mapeamento personalizado de grupo de usuários no AEM 6.5](/help/sites-administering/cug-mapping.md)
    + [Suporte a cookie Same Site](/help/sites-administering/same-site-cookie-support.md)
    + [Descontinuação de credenciais JWT no console do Adobe Developer](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [Configuração de integrações IMS para AEM](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
 + Sites {#sites}
    + Criação {#authoring}
       + Tarefas, ferramentas e conceitos essenciais para a criação de AEM {#essentials}
@@ -114,7 +115,7 @@ ht-degree: 20%
          + [Content Insight](/help/sites-authoring/content-insights.md)
          + [Criação de conteúdo acessível (Conformidade com o WCAG 2.1)](/help/sites-authoring/creating-accessible-content.md)
          + [Configuração de componentes no modo de design](/help/sites-authoring/default-components-designmode.md)
-         + [Componentes de base](/help/sites-authoring/default-components-foundation.md)
+         + [Componentes de fundação](/help/sites-authoring/default-components-foundation.md)
          + [Andaime](/help/sites-authoring/scaffolding.md)
          + [Visualização de dados de análise de página](/help/sites-authoring/page-analytics-using.md)
       + Projetos {#projects}
@@ -226,7 +227,6 @@ ht-degree: 20%
          + [Configuração do rastreamento de links para o Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
          + [Mapeamento de dados do componente com propriedades do Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md)
          + [Configuração do rastreamento de vídeo para o Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
-         + [Integração com o Adobe Analytics usando IMS](/help/sites-administering/integration-analytics-ims.md)
          + [Perguntas frequentes sobre entrega de conteúdo HTTP2](/help/sites-administering/scene7-http2faq.md)
          + [Solução de problemas da integração do Adobe Campaign](/help/sites-administering/troubleshooting-campaignintegration.md)
          + [Licenças do SharePoint Connector, Avisos de direitos autorais e Isenções de responsabilidade](/help/sites-administering/sharepoint-connector-licenses.md)
@@ -250,7 +250,6 @@ ht-degree: 20%
          + [Integração com a Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md)
          + [Configuração manual da integração com o Adobe Target](/help/sites-administering/target-configuring.md)
          + [Pré-requisitos para integração com o Adobe Target](/help/sites-administering/target-requirements.md)
-         + [Integração com o Adobe Target usando IMS](/help/sites-administering/integration-target-ims.md)
          + [Classificações de Adobe](/help/sites-administering/adobeanalytics-classifications.md)
          + [Integração de soluções](/help/sites-administering/integration.md)
          + [Exportar Fragmentos de experiência para o Adobe Target](/help/sites-administering/experience-fragments-target.md)
@@ -1292,7 +1291,7 @@ ht-degree: 20%
          + [Conceitos principais de AEM](/help/sites-developing/the-basics.md)
          + [Estrutura da interface habilitada para toque por AEM](/help/sites-developing/touch-ui-structure.md)
          + [Conceitos da interface habilitada para toque por AEM](/help/sites-developing/touch-ui-concepts.md)
-         + [Desenvolvimento do AEM - diretrizes e práticas recomendadas](/help/sites-developing/dev-guidelines-bestpractices.md)
+         + [Desenvolvimento do AEM – Diretrizes e práticas recomendadas](/help/sites-developing/dev-guidelines-bestpractices.md)
          + [Uso de bibliotecas do cliente](/help/sites-developing/clientlibs.md)
          + [Desenvolvimento e diff de página](/help/sites-developing/pagediff.md)
          + [Limitações do editor](/help/sites-developing/editor-limitations.md)
