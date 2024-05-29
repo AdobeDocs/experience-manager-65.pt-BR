@@ -7,9 +7,9 @@ role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 45452acf73adc76aacebff9aa0dd42565abbd358
 workflow-type: tm+mt
-source-wordcount: '1559'
+source-wordcount: '1575'
 ht-degree: 1%
 
 ---
@@ -194,3 +194,9 @@ Também é possível atribuir uma classificação mais alta a uma tag para aumen
 * O uso dos Serviços de conteúdo inteligente é limitado a até 2 milhões de imagens marcadas por ano. Todas as imagens duplicadas processadas e marcadas são contadas como imagens marcadas.
 * Se você executar o fluxo de trabalho de marcação a partir da linha do tempo, poderá aplicar tags em no máximo 15 ativos por vez.
 * As Tags inteligentes funcionam somente para formatos de imagem PNG e JPG. Portanto, os ativos compatíveis que têm representações criadas nesses dois formatos são marcados com Tags inteligentes.
+
+>[!MORELIKETHIS]
+>
+>* [Visão geral e como treinar tags inteligentes](enhanced-smart-tags.md)
+>* [Configurar marcação inteligente](config-smart-tagging.md)
+>* [Tutorial em vídeo sobre tags inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
