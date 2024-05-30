@@ -7,9 +7,9 @@ role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 45452acf73adc76aacebff9aa0dd42565abbd358
+source-git-commit: 5aff321eb52c97e076c225b67c35e9c6d3371154
 workflow-type: tm+mt
-source-wordcount: '1575'
+source-wordcount: '1581'
 ht-degree: 1%
 
 ---
@@ -199,4 +199,5 @@ Também é possível atribuir uma classificação mais alta a uma tag para aumen
 >
 >* [Visão geral e como treinar tags inteligentes](enhanced-smart-tags.md)
 >* [Configurar marcação inteligente](config-smart-tagging.md)
+>* [Solução de problemas de tags inteligentes para credenciais do OAuth](config-oauth.md)
 >* [Tutorial em vídeo sobre tags inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
