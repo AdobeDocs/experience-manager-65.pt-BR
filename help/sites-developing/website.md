@@ -10,7 +10,7 @@ exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: ed7183efa57db6d97941e3acc99d126c2fc0f6c5
 workflow-type: tm+mt
 source-wordcount: '4919'
 ht-degree: 1%
@@ -477,7 +477,7 @@ Para incluir topnav no componente de página de conteúdo:
 
 #### Aprimoramento de páginas com legendas {#enhancing-pages-with-subtitles}
 
-O componente Página define as propriedades que permitem fornecer legendas para páginas. Adicione legendas que forneçam informações sobre o conteúdo da página.
+O componente de Página define propriedades que permitem fornecer legendas para páginas. Adicione legendas que forneçam informações sobre o conteúdo da página.
 
 1. No navegador, abra o **Produtos** página.
 1. No Sidekick **Página** clique em **Propriedades da página**.

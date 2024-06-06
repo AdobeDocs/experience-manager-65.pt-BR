@@ -10,16 +10,16 @@ exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: a8203a6bccff821dd6ca3f63c196829379aabe55
 workflow-type: tm+mt
-source-wordcount: '6185'
+source-wordcount: '6192'
 ht-degree: 0%
 
 ---
 
 # Adobe Experience Manager com MongoDB{#aem-with-mongodb}
 
-Este artigo tem como objetivo melhorar o conhecimento sobre tarefas e considerações necessárias para a implantação bem-sucedida do AEM (Adobe Experience Manager) com MongoDB.
+Este artigo tem como objetivo melhorar o conhecimento sobre as tarefas e as considerações necessárias para a implantação bem-sucedida do AEM (Adobe Experience Manager) com o MongoDB.
 
 Para obter mais informações sobre implantação, consulte o [Implantação e manutenção](/help/sites-deploying/deploy.md) seção da documentação.
 
@@ -46,7 +46,7 @@ Abaixo está uma implantação mínima para o AEM no MongoDB. Para simplificar, 
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
 
-Uma implantação mínima requer três `mongod` instâncias configuradas como um conjunto de réplicas. Uma instância é eleita primária e as outras instâncias são secundárias, com a eleição gerenciada por `mongod`. Anexado a cada instância está um disco local. Para que o cluster possa suportar a carga, recomenda-se um throughput mínimo de 12 MB por segundo com mais de 3.000 operações de E/S por segundo (IOPS).
+Uma implantação mínima requer três `mongod` instâncias configuradas como um conjunto de réplicas. Uma instância é eleita primária e as outras instâncias são secundárias, com a eleição gerenciada por `mongod`. Anexado a cada instância está um disco local. Portanto, o cluster pode suportar a carga. Recomenda-se um throughput mínimo de 12 MB por segundo com mais de 3.000 operações de E/S por segundo (IOPS).
 
 Os autores do AEM estão conectados ao `mongod` instâncias, com cada autor AEM se conectando aos três `mongod` instâncias. As gravações são enviadas para o principal e as leituras podem ser lidas de qualquer uma das instâncias. O tráfego é distribuído com base na carga por um Dispatcher para qualquer uma das instâncias de autor ativas do AEM. O armazenamento de dados do Oak é um `FileDataStore`, e o monitoramento do MongoDB é fornecido pelo MMS ou MongoDB Ops Manager, dependendo da localização da implantação. O nível do sistema operacional e o monitoramento de registros são fornecidos por soluções de terceiros, como Splunk ou Ganglia.
 
@@ -62,7 +62,7 @@ Os ambientes virtualizados são suportados desde que haja uma boa comunicação 
 
 Há requisitos específicos que abrangem a capacidade de E/S das instâncias do MongoDB que devem ser gerenciadas pela equipe que gerencia o ambiente virtualizado. Se o projeto usar uma implantação em nuvem, como o Amazon Web Services, as instâncias deverão ser provisionadas com capacidade e consistência de E/S suficientes para dar suporte às instâncias do MongoDB. Caso contrário, os processos do MongoDB e o repositório do Oak serão executados de forma não confiável e irregular.
 
-Nos ambientes virtualizados, o MongoDB requer configurações específicas de E/S e VM para garantir que o mecanismo de armazenamento do MongoDB não seja prejudicado pelas políticas de alocação de recursos da VMWare. Uma implementação bem-sucedida garante que não haja barreiras entre as várias equipes, e todas estão inscritas para fornecer o desempenho necessário.
+Em ambientes virtualizados, o MongoDB requer configurações específicas de E/S e VM para garantir que o mecanismo de armazenamento do MongoDB não seja paralisado pelas políticas de alocação de recursos da VMWare. Uma implementação bem-sucedida garante que não haja barreiras entre as várias equipes, e todas estão inscritas para fornecer o desempenho necessário.
 
 ## Considerações sobre hardware {#hardware-considerations}
 
@@ -113,7 +113,7 @@ Ele requer um agente instalado na instância do MongoDB que se conecta ao servid
 * Um agente de monitoramento que pode monitorar o `mongod` instância,
 * Um agente de backup que pode executar backups programados dos dados.
 
-Embora o uso do Cloud Manager para automação de manutenção de um cluster MongoDB torne muitas das tarefas de rotina mais fáceis, ele não é necessário e nem o está usando para backup. No entanto, ao escolher o Cloud Manager para monitorar, o monitoramento é necessário.
+Embora o uso do Cloud Manager para automação de manutenção de um cluster MongoDB torne muitas das tarefas de rotina mais fáceis, ele não é necessário e nem o está usando para backup. No entanto, ao escolher um Cloud Manager para monitorar, o monitoramento é necessário.
 
 Para obter mais informações sobre o MongoDB Cloud Manager, consulte o [Documentação do MongoDB](https://docs.cloud.mongodb.com/).
 
@@ -125,7 +125,7 @@ O MongoDB Ops Manager é o mesmo software que o MongoDB Cloud Manager. Depois de
 
 É necessário o monitoramento em nível de sistema operacional para executar um cluster AEM MongoDB.
 
-O Ganglia é um bom exemplo de um sistema desse tipo e fornece uma imagem sobre a variedade e os detalhes das informações necessárias, que vão além das métricas básicas de integridade, como CPU, média de carga e espaço livre em disco. Para diagnosticar problemas, são necessárias informações de nível inferior, como níveis de pool de entropia, Espera de E/S da CPU e soquetes no estado FIN_WAIT2.
+O Ganglia é um bom exemplo de um sistema desse tipo e fornece uma imagem da variedade e dos detalhes das informações necessárias, que vão além das métricas básicas de integridade, como CPU, média de carga e espaço livre em disco. Para diagnosticar problemas, são necessárias informações de nível inferior, como níveis de pool de entropia, Espera de E/S da CPU e soquetes no estado FIN_WAIT2.
 
 ### Agregação de Log {#log-aggregation}
 
@@ -188,7 +188,7 @@ Se a implantação armazenar binários no banco de dados, eles farão parte do c
 O tamanho do cache em megabytes. Esse espaço é distribuído entre os vários caches usados no `DocumentNodeStore`. O padrão é 256 MB. No entanto, o desempenho de leitura do Oak se beneficia de um cache maior.
 
 * `blobCacheSize`
-Blobs usados com frequência podem ser armazenados em cache pelo AEM para evitar sua nova busca no armazenamento de dados. Isso tem mais impacto no desempenho, especialmente ao armazenar blobs no banco de dados do MongoDB. Todos os Data Stores baseados em sistema de arquivos se beneficiam do cache de disco no nível do sistema operacional.
+Blobs usados com frequência podem ser armazenados em cache pelo AEM para evitar sua nova busca no armazenamento de dados. Isso tem um impacto maior no desempenho, especialmente ao armazenar blobs no banco de dados do MongoDB. Todos os Data Stores baseados em sistema de arquivos se beneficiam do cache de disco no nível do sistema operacional.
 
 #### Configuração do armazenamento de dados {#data-store-configuration}
 
@@ -233,7 +233,7 @@ Recomenda-se que uma configuração de cache persistente seja ativada para impla
 
 ### Suporte a sistema operacional {#operating-system-support}
 
-O MongoDB 2.6 usa um mecanismo de armazenamento de memória mapeada que é sensível a alguns aspectos do gerenciamento de nível do sistema operacional entre a RAM e o Disco. O desempenho de consulta e leitura da instância do MongoDB depende de evitar ou eliminar operações lentas de E/S, geralmente chamadas de falhas de página. Esses problemas são falhas de página que se aplicam à variável `mongod` em particular. Não confunda com falhas de página no nível do sistema operacional.
+O MongoDB 2.6 usa um mecanismo de armazenamento de memória mapeada que é sensível a alguns aspectos do gerenciamento de nível do sistema operacional entre a RAM e o Disco. O desempenho de consulta e leitura da instância do MongoDB depende de evitar ou eliminar operações lentas de E/S, geralmente chamadas de falhas de página. Esses problemas são falhas de página que se aplicam à variável `mongod` em particular. Não confunda isso com falhas de página no nível do sistema operacional.
 
 Para uma operação rápida, o banco de dados MongoDB deve acessar apenas os dados que já estão na RAM. Os dados que ele deve acessar são compostos de índices e dados. Essa coleção de índices e dados é chamada de conjunto de trabalho. Quando o conjunto de trabalho é maior que a RAM disponível, o MongoDB tem que paginar esses dados no disco, incorrendo em um custo de E/S, removendo outros dados já na memória. Se a remoção fizer com que os dados sejam recarregados do disco, as falhas de página dominarão e o desempenho será prejudicado. Quando o conjunto de trabalho é dinâmico e variável, ocorrem mais falhas de página para dar suporte às operações.
 
@@ -241,7 +241,7 @@ O MongoDB é executado em vários sistemas operacionais, incluindo uma grande va
 
 #### Linux® {#linux}
 
-* Desativar páginas de abraços transparentes e desfragmentar. Consulte [Configurações de páginas enormes transparentes](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/) para obter mais informações.
+* Desative as páginas de abraços transparentes e desfragmente. Consulte [Configurações de páginas enormes transparentes](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/) para obter mais informações.
 * [Ajustar as configurações de leitura antecipada](https://docs.mongodb.com/manual/administration/production-notes/#readahead) nos dispositivos que armazenam os arquivos do banco de dados para que se ajustem ao caso de uso.
 
    * Para o mecanismo de armazenamento MMAPv1, se o seu conjunto de trabalho for maior que a RAM disponível e o padrão de acesso a documentos for aleatório, considere diminuir a leitura antecipada para 32 ou 16. Avalie configurações diferentes para que você possa encontrar um valor ideal que maximize a memória residente e reduza o número de falhas da página.
@@ -307,7 +307,7 @@ Consulte [Registro em log com o WiredTiger](https://docs.mongodb.com/manual/core
 
 >[!NOTE]
 >
->O tamanho mínimo do registro de log para WiredTiger é de 128 bytes. Se um registro de log tiver 128 bytes ou menos, o WiredTiger não compactará esse registro.
+>O tamanho mínimo do registro de log do WiredTiger é 128 bytes. Se um registro de log tiver 128 bytes ou menos, o WiredTiger não compactará esse registro.
 >
 >Você pode desativar o registro em log configurando [storage.journal.enabled](https://docs.mongodb.com/manual/reference/configuration-options/#storage.journal.enabled) como false, o que pode reduzir a sobrecarga de manutenção do journal.
 >
@@ -340,7 +340,7 @@ A partir da versão 3.4, o cache interno do WiredTiger usa, por padrão, o maior
 
 Por padrão, o WiredTiger usa a compactação de bloco Snappy para todas as coleções e a compactação de prefixo para todos os índices. Os padrões de compactação são configuráveis em nível global e também podem ser definidos com base em coleção e índice durante a criação da coleção e do índice.
 
-Diferentes representações são usadas para dados no cache interno do WiredTiger em comparação ao formato no disco:
+Diferentes representações são usadas para dados no cache interno do WiredTiger e no formato em disco:
 
 * Os dados no cache do sistema de arquivos são os mesmos do formato em disco, incluindo os benefícios de qualquer compactação para arquivos de dados. O cache do sistema de arquivos é usado pelo sistema operacional para reduzir a E/S de disco.
 
@@ -392,7 +392,7 @@ Executar somente nos nós. Mongod só é executado nos nós especificados e só 
 Executar somente nas CPUs (núcleos) listadas. Mongod só roda nas CPUs listadas e só usa a memória disponível nessas CPUs.
 
 * `--localalloc`
-Sempre alocar memória no nó atual, mas usar todos os nós nos quais o thread é executado. Se um thread executar a alocação, apenas a memória disponível para essa CPU será usada.
+Sempre alocar memória no nó atual, mas usar todos os nós nos quais o thread é executado. Se um thread executar uma alocação, apenas a memória disponível para essa CPU será usada.
 
 * `--preferred=<node>`
 Prefere alocação a um nó, mas retorna a outros se o nó preferencial estiver cheio. A notação relativa para definir um nó pode ser usada. Além disso, as threads são executadas em todos os nós.
@@ -405,7 +405,7 @@ Devido à natureza intensiva de memória dos bancos de dados, a troca de nível 
 
 #### Sistemas de arquivos remotos {#remote-filesystems}
 
-Os sistemas de arquivos remotos, como o NFS, não são recomendados para arquivos de dados internos do MongoDB (os arquivos de banco de dados de processo mongod) , porque eles apresentam muita latência. Não confunda com o sistema de arquivos compartilhados necessário para o armazenamento do Oak Blob&#39;s (FileDataStore), onde o NFS é recomendado.
+Sistemas de arquivos remotos como NFS não são recomendados para arquivos de dados internos do MongoDB (os arquivos de banco de dados de processo mongod), porque eles apresentam muita latência. Não confunda com o sistema de arquivos compartilhados necessário para o armazenamento do Oak Blob&#39;s (FileDataStore), onde o NFS é recomendado.
 
 #### Leia adiante {#read-ahead}
 
@@ -567,13 +567,13 @@ Se você estiver usando o WMWare ESX para gerenciar e implantar seus ambientes v
 1. Desativar balão de memória
 1. Pré-alocar e reservar memória para as máquinas virtuais que hospedam os bancos de dados do MongoDB
 1. Use o Storage I/O Control para alocar I/O suficiente para o `mongod` processo.
-1. Garantir os recursos de CPU das máquinas que hospedam o MongoDB definindo [Reserva de CPU](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-6C9023B2-3A8F-48EB-8A36-44E3D14958F6.html?hWord=N4IghgNiBc4RB7AxmALgUwAQGEAKBVTAJ3QGcEBXIpMkAXyA)
+1. Garanta os recursos de CPU das máquinas que hospedam o MongoDB definindo [Reserva de CPU](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-6C9023B2-3A8F-48EB-8A36-44E3D14958F6.html?hWord=N4IghgNiBc4RB7AxmALgUwAQGEAKBVTAJ3QGcEBXIpMkAXyA)
 
-1. Considere usar drivers ParaVirtual I/O. Consulte [artigo da base de conhecimento](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=1010398).
+1. Considere usar drivers ParaVirtual I/O. <!-- URL is a 404 See [knowledgebase article](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1010398).-->
 
 ### Amazon Web Services {#amazon-web-services}
 
-Para obter a documentação sobre como configurar o MongoDB com Amazon Web Services, verifique a [Configurar a integração do AWS](https://docs.cloud.mongodb.com/tutorial/configure-aws-settings/) artigo no site do MongoDB.
+Para obter a documentação sobre como configurar o MongoDB com Amazon Web Services, verifique a [Configurar a integração do AWS](https://www.mongodb.com/docs/cloud-manager/tutorial/configure-aws-integration/) artigo no site do MongoDB.
 
 ## Proteção do MongoDB antes da implantação {#securing-mongodb-before-deployment}
 
@@ -595,7 +595,7 @@ Como o Dispatcher não tem estado, ele pode ser dimensionado horizontalmente com
 
 A execução do AEM sem um Dispatcher requer que a terminação SSL e o balanceamento de carga sejam executados por outro aplicativo. Isso é necessário porque as sessões devem ter afinidade com a instância do AEM em que são criadas, um conceito conhecido como conexões aderentes. O motivo é garantir que as atualizações do conteúdo exibam latência mínima.
 
-Verifique a [Documentação do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) para obter mais informações sobre como configurá-lo.
+Verifique a [Documentação do Dispatcher](https://experienceleague.adobe.com/br/docs/experience-manager-dispatcher/using/dispatcher) para obter mais informações sobre como configurá-lo.
 
 ### Configuração adicional {#additional-configuration}
 

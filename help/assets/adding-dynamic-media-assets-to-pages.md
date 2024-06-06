@@ -10,9 +10,9 @@ role: User, Admin
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Components,Publishing
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: ed7183efa57db6d97941e3acc99d126c2fc0f6c5
 workflow-type: tm+mt
-source-wordcount: '3218'
+source-wordcount: '3232'
 ht-degree: 6%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 6%
 
 Para adicionar a funcionalidade Dynamic Media aos ativos que você usa nos sites, é possível adicionar a variável **Dynamic Media**, **Mídia interativa**, **Mídia panorâmica** ou **Mídia de vídeo 360** diretamente na página. Adicione componentes ao entrar no modo Layout e ativar os componentes do Dynamic Media. Em seguida, adicione esses componentes à página e adicionar ativos ao componente. Os componentes do Dynamic Media são inteligentes - eles sabem se você está adicionando uma imagem ou um vídeo e as opções de configuração disponíveis mudam de acordo.
 
-Você adiciona ativos do Dynamic Media diretamente à página se estiver usando o Adobe Experience Manager como o WCM. Se estiver usando um dispositivo de terceiros no WCM, [vincule](/help/assets/linking-urls-to-yourwebapplication.md) ou [incorpore](/help/assets/embed-code.md) os ativos. Para obter um site responsivo de terceiros, consulte [Fornecer imagens otimizadas para um site responsivo](/help/assets/responsive-site.md).
+Você pode adicionar ativos do Dynamic Media diretamente à página se estiver usando o Adobe Experience Manager como o WCM. Se estiver usando um dispositivo de terceiros no WCM, [vincule](/help/assets/linking-urls-to-yourwebapplication.md) ou [incorpore](/help/assets/embed-code.md) os ativos. Para obter um site responsivo de terceiros, consulte [Fornecer imagens otimizadas para um site responsivo](/help/assets/responsive-site.md).
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ Os componentes do Dynamic Media disponíveis incluem o seguinte:
 
 ### Componente do Dynamic Media {#dynamic-media-component}
 
-O componente Dynamic Media é inteligente. Ao adicionar uma imagem ou um vídeo, você tem várias opções. O componente oferece suporte a predefinições de imagens, visualizadores baseados em imagem, como conjuntos de imagens, conjuntos de rotação, conjuntos de mídia mista e vídeo. Além disso, o visualizador é responsivo - o tamanho da tela muda automaticamente com base no tamanho da tela. Todos os visualizadores são visualizadores HTML5.
+O componente Dynamic Media é inteligente. Ao adicionar uma imagem ou um vídeo, você tem várias opções. O componente oferece suporte a Predefinições de imagem, visualizadores baseados em imagem, como conjuntos de imagens, conjuntos de rotação, conjuntos de mídia mista e vídeo. Além disso, o visualizador é responsivo - o tamanho da tela muda automaticamente com base no tamanho da tela. Todos os visualizadores são visualizadores HTML5.
 
 >[!NOTE]
 >
@@ -155,7 +155,7 @@ Edite as seguintes configurações do Dynamic Media selecionando o **[!UICONTROL
 
   Essa opção é a única disponível se você estiver visualizando conjuntos de imagens, conjuntos de rotação ou conjuntos de mídia mista. As predefinições do visualizador exibidas são inteligentes - somente as predefinições relevantes do visualizador são exibidas.
 
-* **[!UICONTROL Modificadores do visualizador]** - Os modificadores do visualizador tomam a forma de um par nome=valor com um delimitador &amp; e permitem alterar os visualizadores conforme descrito no Guia de referência do visualizador. Um exemplo de um modificador de visualizador é `posterimage=img.jpg&caption=text.vtt,1` que define uma imagem diferente para a miniatura do vídeo e associa um arquivo de legenda oculta/subtítulo ao vídeo.
+* **[!UICONTROL Modificadores do visualizador]** - Os modificadores do visualizador tomam a forma de um par nome=valor com um delimitador &amp; e permitem alterar os visualizadores conforme descrito no Guia de referência do visualizador. Um exemplo de um modificador de visualizador é `posterimage=img.jpg&caption=text.vtt,1` que define uma imagem diferente para a miniatura do vídeo e associa um arquivo de legenda oculta ao vídeo.
 
 * **[!UICONTROL Predefinição de imagem]** - Selecione uma predefinição de imagem existente no menu suspenso. Se a predefinição de imagem que você está procurando não estiver visível, será necessário torná-la visível. Consulte Gerenciamento de predefinições de imagem. Não é possível selecionar uma predefinição do visualizador se você estiver usando uma predefinição de imagem e vice-versa.
 
@@ -187,7 +187,7 @@ Edite as seguintes configurações do Dynamic Media selecionando o **[!UICONTROL
 
   Essa opção não estará disponível se você estiver visualizando conjuntos de imagens, conjuntos de rotação ou conjuntos de mídia mista.
 
-* **[!UICONTROL URL, Abrir em]** - É possível definir um ativo para abrir um link. Defina o URL e, em Abrir no, indique se deseja abri-lo na mesma janela ou em uma nova janela.
+* **[!UICONTROL URL, Abrir em]** - É possível definir um ativo para abrir um link. Defina o URL e em **Abrir em** indique se deseja que ele seja aberto na mesma janela ou em uma nova janela.
 
   Essa opção não estará disponível se você estiver visualizando conjuntos de imagens, conjuntos de rotação ou conjuntos de mídia mista.
 
@@ -250,7 +250,7 @@ Edite a seguinte configuração do Dynamic Media selecionando **[!UICONTROL Edit
 
   A variável **[!UICONTROL Otimizar para dispositivos de maior resolução]** A opção só é exibida quando o seguinte é verdadeiro:
 
-   * Em Tipo de predefinição, **[!UICONTROL Corte inteligente]** for selecionada.
+   * Em Tipo de predefinição, a variável **[!UICONTROL Corte inteligente]** for selecionada.
 
   ![configuração da proporção de pixels do dispositivo para corte inteligente](/help/assets/assets-dm/dpr-smartcrop.png)
 
@@ -301,11 +301,11 @@ Você pode editar o seguinte **[!UICONTROL Geral]** configurações selecionando
 
   Você pode editar o seguinte **[!UICONTROL Adicionar ao carrinho]** configurações selecionando **[!UICONTROL Editar]** no componente.
 
-* **[!UICONTROL Mostrar ativo do produto]** - Por padrão, esse valor é selecionado. O ativo do produto mostra uma imagem do produto conforme definido no módulo Commerce. Desmarque a marca de seleção para não mostrar o ativo do produto.
+* **[!UICONTROL Mostrar ativo do produto]** - Por padrão, esse valor é selecionado. O ativo do produto mostra uma imagem do produto conforme definido no módulo Commerce. Desmarque a marca de seleção para que o ativo do produto não seja exibido.
 
-* **[!UICONTROL Mostrar preço do produto]** - Por padrão, esse valor é selecionado. Preço do produto mostra o preço do item conforme definido no módulo Commerce. Desmarque a marca de seleção para não mostrar o preço do produto.
+* **[!UICONTROL Mostrar preço do produto]** - Por padrão, esse valor é selecionado. Preço do produto mostra o preço do item conforme definido no módulo Commerce. Desmarque a marca de seleção para que o preço do produto não seja exibido.
 
-* **[!UICONTROL Mostrar formulário do produto]** - Por padrão, esse valor não está selecionado. O Formulário de produto inclui qualquer variante de produto, como tamanho e cor. Desmarque a marca de seleção para não mostrar as grades de produtos.
+* **[!UICONTROL Mostrar formulário do produto]** - Por padrão, esse valor não está selecionado. O Formulário de produto inclui qualquer variante de produto, como tamanho e cor. Desmarque a marca de seleção para que as grades de produtos não sejam exibidas.
 
 ### Componente de mídia panorâmica {#panoramic-media-component}
 
@@ -333,7 +333,7 @@ Você pode editar as seguintes configurações selecionando **[!UICONTROL Config
 
 * **[!UICONTROL Predefinição do visualizador]** - Selecione um visualizador existente no menu suspenso Predefinição do visualizador.
 
-Se a predefinição do visualizador que você está procurando não estiver visível, verifique se ela foi publicada. Publique as predefinições do visualizador antes de usá-las. Consulte [Gerenciamento de predefinições do visualizador](/help/assets/managing-viewer-presets.md).
+Se a predefinição do visualizador que você estava procurando não estiver visível, verifique se ela foi publicada. Publique as predefinições do visualizador antes de usá-las. Consulte [Gerenciamento de predefinições do visualizador](/help/assets/managing-viewer-presets.md).
 
 ### Componente de mídia de vídeo 360 {#video-media-component}
 
@@ -347,13 +347,13 @@ O visualizador inclui suporte nativo para a entrega de 360 ativos de vídeo. Por
 
 Você pode editar as seguintes configurações selecionando **[!UICONTROL Configurar]** no componente.
 
-* **[!UICONTROL Predefinição do visualizador]** - Selecione um visualizador existente no menu suspenso Predefinição do visualizador. Use o Video360VR para usuários finais que utilizam óculos de realidade virtual. Inclui controles básicos de reprodução de vídeo e recursos de redes sociais. Use Video360_social, que inclui controles básicos de reprodução de vídeo. A renderização de vídeo é feita no modo estéreo. O controle manual do ponto de vista está desativado, mas o controle giroscópico está ativado. Não há recursos de redes sociais.
+* **[!UICONTROL Predefinição do visualizador]** - Selecione um visualizador existente no menu suspenso Predefinição do visualizador. Uso `Video360VR` para usuários finais que usam óculos de realidade virtual. Ele inclui controles básicos de reprodução de vídeo e recursos de redes sociais. Uso `Video360_social` que inclui controles básicos de reprodução de vídeo. A renderização de vídeo é feita no modo estéreo. O controle manual do ponto de vista está desativado, mas o controle giroscópico está ativado. Não há recursos de redes sociais.
 
-Se a predefinição do visualizador que você está procurando não estiver visível, verifique se ela foi publicada. Certifique-se de publicar as predefinições do visualizador antes de usá-las. Consulte [Gerenciamento de predefinições do visualizador](/help/assets/managing-viewer-presets.md).
+Se a predefinição do visualizador que você estava procurando não estiver visível, verifique se ela foi publicada. Certifique-se de publicar as predefinições do visualizador antes de usá-las. Consulte [Gerenciamento de predefinições do visualizador](/help/assets/managing-viewer-presets.md).
 
-### Utilização de HTTP/2 para entrega de ativos do Dynamic Media {#using-http-to-delivery-dynamic-media-assets}
+### Utilização de HTTP/2 para fornecer ativos do Dynamic Media {#using-http-to-delivery-dynamic-media-assets}
 
-HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como navegadores e servidores se comunicam. Ele possibilita a transferência mais rápida de informações e reduz a quantidade necessária de poder de processamento. A entrega de ativos do Dynamic Media agora pode ser por HTTP/2, o que fornece melhores tempos de resposta e carregamento.
+HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como navegadores e servidores se comunicam. Ele possibilita a transferência mais rápida de informações e reduz a quantidade necessária de poder de processamento. A entrega de ativos do Dynamic Media agora pode ser por HTTP/2, que fornece melhores tempos de resposta e carregamento.
 
 Consulte [Entrega de conteúdo HTTP2](/help/assets/http2.md) para obter detalhes completos sobre a introdução ao uso de HTTP/2 com sua conta da Dynamic Media.
 
@@ -362,6 +362,6 @@ Consulte [Entrega de conteúdo HTTP2](/help/assets/http2.md) para obter detalhes
 >* [Usar o reprodutor de vídeo no Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-player-feature-video-use.html)
 >* [Usar vídeo interativo com o Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-interactive-video-feature-video-use.html)
 >* [Entender o visualizador de ativos com o Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/viewers/dynamic-media-viewer-feature-video-understand.html)
->* [Usar miniatura de vídeo personalizada com o Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [Use uma miniatura de vídeo personalizada com o Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-thumbnails-feature-video-use.html)
 >* [Entenda o gerenciamento de cores com o Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-color-management-technical-video-setup.html)
 >* [Utilização da nitidez de imagem com o Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use.html)
