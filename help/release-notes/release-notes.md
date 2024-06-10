@@ -5,9 +5,10 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 6bf2d6409a15be02a247fab84caa743e8542da13
+exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
+source-git-commit: 4035bfae6a525292ca71b182ebed2ac9839426b8
 workflow-type: tm+mt
-source-wordcount: '3032'
+source-wordcount: '3050'
 ht-degree: 2%
 
 ---
@@ -219,6 +220,12 @@ Correções na [!DNL Experience Manager] Os Forms são entregues por meio de um 
 
 * No editor de modelos, a sequência de caracteres de texto *`No video available.`* não está localizado. (SITES-13190)
 * A cadeia de caracteres após ativar ou desativar um usuário não está localizada em **Ferramentas** > **Segurança** > **Usuários** > *any_user_name* > **Ativar** > **OK** e selecione *any_user_name* > **Desativar** > **OK**. (NPR-41737)
+
+#### Oak {#foundation-oak-6521}
+
+* Correção de regressão de desempenho - Evite consultas de intervalo em condições semelhantes. (OAK-9481)
+
+* A nova versão do Oak é a 1.22.20.
 
 #### Platform{#foundation-platform-6521}
 
@@ -484,4 +491,3 @@ Esses sites só estão disponíveis para clientes do. Se você for um cliente do
 >* [[!DNL Experience Manager] página do produto](https://business.adobe.com/br/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Inscrever-se para obter atualizações de produtos de prioridade Adobe](https://www.adobe.com/subscription/priority-product-update.html)
-
