@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 4035bfae6a525292ca71b182ebed2ac9839426b8
+source-git-commit: 004cf5b30fa3bd108a45a8b6322f2ee3d3085ee5
 workflow-type: tm+mt
 source-wordcount: '3050'
 ht-degree: 2%
@@ -224,7 +224,6 @@ Correções na [!DNL Experience Manager] Os Forms são entregues por meio de um 
 #### Oak {#foundation-oak-6521}
 
 * Correção de regressão de desempenho - Evite consultas de intervalo em condições semelhantes. (OAK-9481)
-
 * A nova versão do Oak é a 1.22.20.
 
 #### Platform{#foundation-platform-6521}
