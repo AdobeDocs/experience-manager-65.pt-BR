@@ -1,18 +1,17 @@
 ---
 title: Gerar documento de registro para formulários adaptáveis
-description: Explica como gerar um modelo para um documento de registro (DoR) para formulários adaptáveis.
+description: Explica como gerar documentos de registro (DoR) para formulários adaptáveis.
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
-exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: f8013aeedb79f900158df2291f7f641353bb4c05
 workflow-type: tm+mt
-source-wordcount: '4256'
-ht-degree: 1%
+source-wordcount: '4308'
+ht-degree: 2%
 
 ---
 
@@ -315,47 +314,52 @@ Para localizar as informações de marca inseridas na guia Documento de registro
 1. Selecionar ![dortab](/help/forms/using/assets/dortab.png). A guia Documento de registro é exibida.
 1. Selecione o modelo padrão ou um modelo personalizado para renderizar o documento de registro. Se você selecionar o modelo padrão, uma visualização em miniatura do documento de registro será exibida abaixo do menu suspenso Modelo.
 
-   ![brandingtemplate](/help/forms/using/assets/brandingtemplate.png)
+   ![brandingtemplate](/help/forms/using/assets/brandingtemplateupdate.png)
 
    Se você optar por selecionar um modelo personalizado, procure e selecione um XDP no servidor do AEM Forms. Se quiser usar um modelo que ainda não esteja no servidor do AEM Forms, primeiro faça upload do XDP para o seu servidor do AEM Forms.
 
-1. Se você selecionar um modelo padrão ou personalizado, algumas ou todas as propriedades a seguir serão exibidas na guia Documento de registro. Especifique esses itens adequadamente:
+### Propriedades da página principal (#master-page-properties)
 
-   * **Imagem de logotipo**: Você pode optar por usar a imagem de logotipo do formulário adaptável, escolher um do DAM ou fazer upload de um do seu computador.
-   * **Título do formulário**
-   * **Texto do cabeçalho**
-   * **Rótulo do aviso**
-   * **Isenção de responsabilidade**
-   * **Texto do aviso**
-   * **Cor de realce**: A cor na qual o texto do cabeçalho e as linhas separadoras são renderizados no PDF do documento ou do registro
-   * **Família da fonte**: Família de fontes do texto no documento de PDF de registro
-   * **Para os componentes Caixa de seleção e Botão de opções, mostrar apenas os valores selecionados**
-   * **Separador para vários valores selecionados**
-   * **Incluir objetos de formulário que não estão vinculados ao modelo de dados**
-   * **Excluir campos ocultos do documento de registro**
-   * **Ocultar descrição de painéis**
+Se você selecionar um modelo padrão ou personalizado, algumas ou todas as propriedades de página-mestre a seguir serão exibidas na guia Documento de registro, como mostrado na imagem acima. Especifique esses itens adequadamente:
 
-   Se o modelo XDP personalizado selecionado incluir várias páginas mestras, as propriedades dessas páginas aparecerão no **[!UICONTROL conteúdo]** seção do **[!UICONTROL Documento do registro]** guia.
+* **Imagem de logotipo**: Você pode optar por usar a imagem de logotipo do formulário adaptável, escolher um do DAM ou fazer upload de um do seu computador.
+* **Título do formulário**
+* **Texto do cabeçalho**
+* **Rótulo do aviso**
+* **Isenção de responsabilidade**
+* **Texto do aviso**
 
-   ![Propriedades da página principal](assets/master-page-properties.png)
+  <!--
+    * **Accent Color**: The color in which header text and separator lines are rendered in the document or record PDF
+    * **Font Family**: Font family of the text in the document of record PDF
+    * **For Check Box and Radio Button components, show only the selected values**
+    * **Separator for multiple selected value(s)**
+    * **Include form objects that are not bound to data model**
+    * **Exclude hidden fields from the document of record**
+    * **Hide description of panels**
+    -->
 
-   As propriedades da página principal incluem Imagem de logotipo, Texto do cabeçalho, Título do formulário, Rótulo do aviso e Texto do aviso. Você pode aplicar propriedades de formulário adaptável ou modelo XDP ao documento de registro. Por padrão, o AEM Forms aplica as propriedades do modelo ao Documento de registro. Você também pode definir valores personalizados para as propriedades da página-mestre. Para obter informações sobre como aplicar várias páginas-mestre em um documento de registro, consulte [Aplicar várias páginas-mestre a um documento de registro](#apply-multiple-master-pages-dor).
+  Se o modelo XDP personalizado selecionado incluir várias páginas mestras, as propriedades dessas páginas aparecerão no **[!UICONTROL conteúdo]** seção do **[!UICONTROL Documento do registro]** guia.
 
-   >[!NOTE]
-   >
-   >Se você estiver usando um modelo de formulário adaptável criado com uma versão do Designer anterior à 6.3, para que as propriedades de Cor de ênfase e Família de fontes funcionem, verifique se o seguinte está presente no modelo de formulário adaptável no subformulário raiz:
+  ![Propriedades da página principal](assets/master-page-properties.png)
 
-   ```xml
-   <proto>
-   <font typeface="Arial"/>
-   <fill>
-   <color value="4,166,203"/>
-   </fill>
-   <edge>
-   <color value="4,166,203"/>
-   </edge>
-   </proto>
-   ```
+  As propriedades da página principal incluem Imagem de logotipo, Texto do cabeçalho, Título do formulário, Rótulo do aviso e Texto do aviso. Você pode aplicar propriedades de formulário adaptável ou modelo XDP ao documento de registro. Por padrão, o AEM Forms aplica as propriedades do modelo ao Documento de registro. Você também pode definir valores personalizados para as propriedades da página-mestre. Para obter informações sobre como aplicar várias páginas-mestre em um documento de registro, consulte [Aplicar várias páginas-mestre a um documento de registro](#apply-multiple-master-pages-dor).
+
+  >[!NOTE]
+  >
+  >Se você estiver usando um modelo de formulário adaptável criado com uma versão do Designer anterior à 6.3, para que as propriedades de Cor de ênfase e Família de fontes funcionem, verifique se o seguinte está presente no modelo de formulário adaptável no subformulário raiz:
+
+  ```xml
+  <proto>
+  <font typeface="Arial"/>
+  <fill>
+  <color value="4,166,203"/>
+  </fill>
+  <edge>
+  <color value="4,166,203"/>
+  </edge>
+  </proto>
+  ```
 
 1. Para salvar as alterações de marca, selecione Concluído.
 
@@ -413,8 +417,23 @@ Para obter informações sobre como aplicar quebras de página e aplicar várias
 
 **Configurações do nível de formulário**
 
-* **Incluir campos desatados em DoR:** A configuração da propriedade inclui campos não vinculados do formulário adaptável baseado em esquema no documento de registro. Por padrão, é verdadeiro.
-* **Excluir campos de DoR se ocultos:** Definir a propriedade da qual excluir os campos ocultos [!UICONTROL Documento do registro] no envio do formulário. Quando você habilita [Revalidar no servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), o servidor recalcula os campos ocultos antes de excluir esses campos da [!UICONTROL Documento do registro].
+* **[!UICONTROL BÁSICO]**
+   * **Modelo:** É possível selecionar o modelo Padrão ou Personalizado.
+     ![texto alternativo](image.png)
+   * **Cor de realce:** É possível predefinir a Cor do modelo do [!UICONTROL Documento do registro].
+   * **Família da fonte:** Selecione o Tipo de fonte para a [!UICONTROL Documento do registro] textos.
+   * **Incluir campos desatados em DoR:** A configuração da propriedade inclui campos não vinculados do formulário adaptável baseado em esquema no [!UICONTROL Documento do registro]. Por padrão, é verdadeiro.
+   * **Excluir campos de DoR se ocultos:** Definir a propriedade da qual excluir os campos ocultos [!UICONTROL Documento do registro] no envio do formulário. Quando você habilita [Revalidar no servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), o servidor recalcula os campos ocultos antes de excluir esses campos da [!UICONTROL Documento do registro]
+* **[!UICONTROL PROPRIEDADES DO CAMPO DE FORMULÁRIO]**
+   * Se você marcar a opção **Para os componentes Caixa de seleção e Botão de opções, mostrar somente os valores selecionados**, ele gerará a saída do DoR somente com os valores selecionados.
+   * Você pode selecionar Separador para vários valores selecionados ou escolher qualquer outro tipo de separador.
+   * Alinhamento de opções
+      * Vertical
+      * Horizontal
+      * O mesmo que o formulário adaptável
+     >[!NOTE]
+     > O alinhamento vertical e horizontal é aplicável apenas ao botão de opção e à caixa de seleção
+* **[!UICONTROL PROPRIEDADES DA PÁGINA MESTRA]** Clique para obter mais informações sobre [Propriedades da Página Mestra](#master-page-properties-master-page-properties)
 
 ## Aplicar uma quebra de página em um documento de registro {#apply-page-breaks-in-dor}
 
