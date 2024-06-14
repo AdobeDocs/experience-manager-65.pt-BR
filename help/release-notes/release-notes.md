@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 371d325287c9d3d11d154c3121f001dad3f3b986
+source-git-commit: 1ba2782fcc81e5090dced4eed83a3a4911676f09
 workflow-type: tm+mt
-source-wordcount: '3842'
+source-wordcount: '3819'
 ht-degree: 1%
 
 ---
@@ -49,10 +49,10 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
    * Suporte para implementar condições aninhadas com `When-then-else` funcionalidade.
    * Validar ou redefinir painéis e formulários, incluindo campos.
    * Suporte para recursos modernos do JavaScript, como funções de esquerda e seta (suporte para ES10) nas Funções personalizadas.
-* API AutoTag para acessibilidade de PDF: O AEM Forms no OSGi agora é compatível com a nova API AutoTag para aprimorar o PDF para padrões de acessibilidade, adicionando tags: parágrafos e listas. Isso torna os PDF mais acessíveis para usuários com tecnologia assistiva.
+* API AutoTag para acessibilidade de PDF: O AEM Forms no OSGi agora oferece suporte à nova API AutoTag para aprimorar o PDF para padrões de acessibilidade, adicionando tags: parágrafos e listas. Isso torna os PDF mais acessíveis para usuários com tecnologia assistiva.
 * Suporte a PNG de 16 bits: o serviço PDF Generator ImageToPdf agora oferece suporte à conversão de PNGs com intensidade de cor de 16 bits.
-* Aplicar artefatos a blocos de texto individuais em XDPs: um novo recurso é introduzido no Forms Designer que permite aos usuários definir configurações em blocos de texto individuais em arquivos XDP para controlar os elementos que são tratados como artefatos nos PDF resultantes, como cabeçalhos e rodapés, para torná-los acessíveis para tecnologias assistivas. Os principais recursos incluem marcar blocos de texto como artefatos e incorporar essas configurações nos metadados XDP. O serviço Forms Output aplica essas configurações durante a geração do PDF, garantindo a marcação adequada de PDF/UA.
-* O AEM Forms Designer é certificado com `GB18030:2022` padrão. Com essa certificação, Agora o Forms Designer oferece suporte ao conjunto de caracteres Unicode chinês que permite inserir caracteres chineses em todos os campos e caixas de diálogo editáveis.
+* Aplicar artefatos a blocos de texto individuais em XDPs: o Forms Designer agora permite que os usuários definam configurações em blocos de texto individuais em arquivos XDP. Essa capacidade permite controlar os elementos que são tratados como artefatos nos PDF resultantes. Esses elementos, como cabeçalhos e rodapés, são acessíveis para as tecnologias assistivas. Os principais recursos incluem marcar blocos de texto como artefatos e incorporar essas configurações nos metadados XDP. O serviço Forms Output aplica essas configurações durante a geração do PDF, garantindo a marcação adequada de PDF / UA.
+* O AEM Forms Designer é certificado com `GB18030:2022` padrão. Com essa certificação, agora o Forms Designer oferece suporte ao conjunto de caracteres Unicode chinês que permite inserir caracteres chineses em todos os campos editáveis e caixas de diálogo.
 
 
 ### [!DNL Assets]
@@ -183,15 +183,15 @@ Esta é a lista de correções de acessibilidade incluídas nesta versão:
 #### [!DNL Adaptive Forms] {#forms-6520}
 
 * Quando um Formulário adaptável é enviado de uma instância de publicação do Adobe Experience Manager para um fluxo de trabalho do Adobe Experience Manager, o fluxo de trabalho não salva os anexos. (FORMS-14209)
-* Quando um usuário clica no botão Imprimir em PDF no AEM Forms Service Pack 15 (6.5.15.0) no OSGi, a validação no lado do cliente falha, é evidente pelas mensagens de erro mostradas na janela Console de ferramentas do desenvolvedor. (FORMS-14029)
-* Quando um usuário envia um formulário no AEM 6.5 Forms Service Pack 17 (6.5.17.0) ou no AEM 6.5 Forms AEM Service Pack 18 (6.5.18.0) ou no 6.5 Forms Service Pack 19 (6.5.19.0), a tradução das mensagens de &quot;Obrigado&quot; não funciona corretamente. Embora as mensagens sejam traduzidas corretamente no dicionário. (FORMS-13846)
+* Quando um usuário clica em **Imprimir em PDF** No AEM Forms Service Pack 15 (6.5.15.0) no OSGi, a validação no lado do cliente falha, é evidente pelas mensagens de erro mostradas na janela Developer Tools Console. (FORMS-14029)
+* Quando um usuário envia um formulário no AEM 6.5 Forms Service Pack 17 (6.5.17.0) ou Service Pack 18 (6.5.18.0), Service Pack 19 (6.5.19.0), a tradução das mensagens de &quot;Obrigado&quot; não funciona corretamente. No entanto, as mensagens são traduzidas corretamente no dicionário. (FORMS-13846)
 * Quando um usuário pré-visualiza um formulário com um componente Seletor de data, o campo Seletor de data está desalinhado com os outros campos de formulário. (FORMS-13763)
-* Quando um usuário no ambiente do AEM Forms Service Pack 19 (6.5.19.0) chama a API para formatar números, os números formatados não estão alinhados com as respectivas Localidades e os sinais de moeda não são exibidos corretamente. O problema persiste independentemente do parâmetro Locale definido como &quot;de_DE&quot; ou &quot;en_US&quot;. (FORMS-13759)
+* Quando um usuário no ambiente do AEM Forms Service Pack 19 (6.5.19.0) chama a API para formatar números, os números formatados não estão alinhados com as respectivas localidades. Como resultado, os sinais de moeda não são exibidos corretamente. O problema persiste independentemente do parâmetro Locale definido como &quot;de_DE&quot; ou &quot;en_US&quot;. (FORMS-13759)
 * Quando um usuário no ambiente do AEM Forms Service Pack 19 (6.5.19.0) converte PNGs de 16 bits em PDF usando o serviço PDFG Img2Pdf, ocorre uma falha e não é possível &quot;Usar o serviço de conversão de imagem do Acrobat&quot;. (FORMS-13754)
-* No AEM Forms Service Pack 19 (6.5.19.1), quando um usuário carrega um arquivo JobOptions existente na seção Serviços / PDF Generator / Configurações do Adobe PDF AEM da interface da Web administrativa do forms JEE (adminui), o upload falha e mostra uma mensagem de erro (FORMS-13597):
+* No AEM Forms Service Pack 19 (6.5.19.1), quando um usuário carrega um arquivo JobOptions existente na seção Services / PDF Generator / Adobe PDF AEM Settings do adminui do forms JEE, o upload falha. Ela também mostra a seguinte mensagem de erro (FORMS-13597):
   `"An error has occurred while processing your request. Please use the breadcrumb links to navigate to another page."`
 * Quando um usuário migra do AEM Forms Service Pack 15 (6.5.15.0) para o AEM Forms Service Pack (6.5.17.0) ou o AEM Forms Service Pack (6.5.19.0), a chave FD é duplicada, o que faz com que os formulários não sejam traduzidos corretamente. (FORMS-13461)
-* Quando um usuário coloca dispatchers na frente dos autores compatíveis com a topologia de implantação no AMS, o envio da Tarefa de atribuição trava/falha. (FORMS-8010)
+* Quando um usuário coloca dispatchers na frente dos autores compatíveis com a topologia de implantação no AMS, o envio da Tarefa de atribuição trava ou falha. (FORMS-8010)
 * Correções relacionadas à acessibilidade:
    * Os ícones na página &quot;formulários e documentos&quot; agora estão acessíveis de acordo com o padrão ANDI. (FORMS-13094)
    * Os usuários podem acessar a barra de ferramentas por meio do teclado para salvar ou editar conteúdo na página de edição, a barra de ferramentas é aprimorada de acordo com o padrão ANDI. (FORMS-13102)
@@ -201,11 +201,11 @@ Esta é a lista de correções de acessibilidade incluídas nesta versão:
 * O componente de campo de entrada de data não funciona corretamente no Microsoft Edge no modo de compatibilidade do Internet Explorer. (FORMS-13170)
 * A notificação por email paralisado com anexo falhou ao ser enviada quando a correção para [etapas adicionais para usar e-mail com anexos](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/troubleshooting/additional-steps-to-use-email-with-attachments) é executado no servidor. (FORMS-14227)
 * No AEM Forms Workspace no Service Pack 18 (6.5.18.0), ao comentar em qualquer documento carregado, o arquivo de documento é corrompido. (FORMS-13735)
-* No AEM Forms Service Pack 18 (6.5.18.0) ou no AEM Forms Service Pack 19 (6.5.19.0) ou no AEM Forms Service Pack 20 (6.5.20.0), quando um usuário tenta procurar um Formulário adaptável na guia do ativo do painel lateral (alternando), na interface de edição do, a pesquisa falha. (FORMS-14117)
+* No AEM Forms Service Pack 18 (6.5.18.0), Service Pack 19 (6.5.19.0) ou Service Pack 20 (6.5.20.0), quando um usuário tenta procurar um Formulário adaptável no painel lateral, a pesquisa falha. (FORMS-14117)
 * Quando um usuário edita um formulário criado em alemão e traduzido para inglês, isso resulta em exibições de idioma inconsistentes entre os modos &quot;Visualização&quot; e &quot;Editar&quot;. Isso faz com que os componentes RadioButton e Caixa de seleção sejam exibidos em inglês durante o modo &quot;Editar&quot;, enquanto aparecem corretamente em alemão durante o modo &quot;Visualização&quot;. (FORMS-13910)
 * A ferramenta de processo de limpeza de processos falha com o erro `NoClassDefFoundError: org/omg/CORBA/UserException`. (FORMS-13751)
-* Quando um usuário tenta incorporar um Formulário adaptável (AF) em uma página da Web, externa ou no AEM Sites, usando um contêiner incorporado, o contêiner do guia de formulário adaptável introduz um RÓTULO ARIA com role=&quot;main&quot; para o formulário incorporado. De acordo com as diretrizes ARIA, deve haver apenas um role=&quot;main&quot; por página. Portanto, quando um usuário adiciona outro role=&quot;main&quot; para o conteúdo principal de sua página, ele é sinalizado como um problema de acessibilidade. (FORMS-13538)
-* No AEM Forms Service Pack 19 (6.5.19.0), ao usar o menu suspenso em um formulário adaptável, os menus suspensos com texto de espaço reservado retêm o valor de id=&quot;emptyValue&quot;. Portanto, se um formulário tiver vários componentes suspensos, cada um terá id=&quot;emptyValue&quot;, o que não está correto de acordo com as diretrizes ARIA. (FORMS-13370).
+* Quando um usuário tenta incorporar um Formulário adaptável (AF) em uma página da Web, externa ou no AEM Sites, usando um contêiner incorporado, o contêiner do Guia de formulário adaptável introduz um RÓTULO ARIA. O rótulo tem o role=&quot;main&quot; para o formulário incorporado. De acordo com as diretrizes ARIA, deve haver apenas um role=&quot;main&quot; por página. Portanto, quando um usuário adiciona outro role=&quot;main&quot; para o conteúdo principal de sua página, ele é sinalizado como um problema de acessibilidade. (FORMS-13538)
+* No AEM Forms Service Pack 19 (6.5.19.0), ao usar o menu suspenso em um Formulário adaptável, os menus suspensos com texto de espaço reservado retêm o valor de `id="emptyValue"`. Dessa forma, se um formulário tiver vários componentes suspensos, cada um terá `id="emptyValue"` que não está correto de acordo com as diretrizes ARIA. (FORMS-13370).
 * Quando um usuário recarrega uma comunicação interativa depois que os dados são enviados por XML, ocorre um espaço em branco entre o bloco de texto no PDF gerado. (FORMS-13481)
 * IPH ausente para a tela &quot;Preparar para a etapa de implantação do DSC&quot; ao executar o ConfigurationManager. (FORMS-10699)
 * Quando um usuário adiciona um novo dicionário para traduzir um formulário com dicionários existentes, as traduções antigas são invalidadas. Os seguintes problemas surgem: (FORMS-13576)
@@ -215,12 +215,12 @@ Esta é a lista de correções de acessibilidade incluídas nesta versão:
 #### [!DNL Forms Designer] {#forms-desgner-6520}
 
 * Quando um usuário adiciona uma nova tabela a um formulário existente usando o AEM Forms Designer no ambiente do AEM Forms Service Pack 19 (6.5.19.0), ele trava. (LC-3921978)
-* Quando um usuário renderiza um Formulário adaptável em um ambiente Linux, ocorre um espaço extra entre os componentes do campo. (LC-3921957)
+* Quando um usuário renderiza um formulário adaptável em um ambiente Linux®, ocorre um espaço extra entre os componentes do campo. (LC-3921957)
 * Quando um usuário converte um arquivo XTG no formato PostScript usando o Serviço de saída, ocorre uma falha com o erro:           `(AEM_OUT_001_003:Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE)`. (LC-3921720)
 
   Para resolver o problema: verifique se os dados contêm caracteres especiais como Espaço de largura zero (0x200b). Se sim, use o sinalizador adicionando a tag `<behaviorOverride>patch-LC3921720:1</behaviorOverride>` no arquivo XCI, conforme especificado em [custom_xfa.xci](/help/forms/using/assets/custom_xfa.xci) arquivo.
 
-* Ao usar o AEM Forms Service Pack 18 (6.5.18.0) em um ambiente Linux, o XMLFM trava em CPUs sem suporte à instrução AVX /AVX2 com processadores AMD. (LC-3921718)
+* Ao usar o AEM Forms Service Pack 18 (6.5.18.0) em um ambiente Linux®, o XMLFM trava nas CPUs sem suporte à instrução AVX/AVX2 com processadores AMD®. (LC-3921718)
 * Quando um usuário cria um PDF do XDP usando o serviço de saída do Forms, ele não pode definir &quot;configurações&quot; em &quot;blocos de texto individuais&quot; no XDP para controlar o que é &quot;artefato&quot;. (LC-3921954)
 
 <!--
@@ -300,7 +300,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Tradução{#foundation-translation-6521}
 
-* Um problema com o status de tradução pronto para uso do AEM 6.5.19 não é atualizado conforme esperado para um lançamento. Após importar um arquivo traduzido para um trabalho de tradução associado a uma inicialização do AEM, esperava-se que o status mudasse para `Approved`. Em vez disso, o status mudou para `Ready for Review`, que não é o comportamento esperado. (NPR-41756)
+* Um problema com o status de tradução pronto para uso do AEM 6.5.19 não é atualizado conforme esperado para um lançamento. Após importar um arquivo traduzido para um trabalho de tradução associado a um lançamento do AEM, o status deveria ser `Approved`. Em vez disso, o status se tornou `Ready for Review`, que não é o comportamento esperado. (NPR-41756)
 * Ao criar várias configurações e acessar as configurações de Cloud Service de tradução, nem todos os elementos são exibidos na interface. Somente os primeiros 40 elementos/pastas são exibidos; o carregamento lento é acionado, mas não é necessário adicionar mais conteúdo. (NPR-41829)
 * Caracteres distorcidos ocorrem se houver japonês na página Permissões da interface do usuário de toque. (NPR-41794)
 * O AEM 6.5.14 e 6.5.9 não envia um emoji para tradução. (CQ-4357000)
@@ -505,9 +505,9 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 
 * Os seguintes erros e mensagens de aviso podem ser exibidos durante a instalação do [!DNL Experience Manager] 6.5.x.x:
    * &quot;Quando a integração do Adobe Target é configurada no [!DNL Experience Manager] usar a API do Target Standard (autenticação IMS) e, em seguida, exportar os Fragmentos de experiência para o Target resulta na criação de tipos de oferta errados. Em vez do tipo &quot;Fragmento de experiência&quot;/origem &quot;Adobe Experience Manager&quot;, o Target cria várias ofertas com o tipo &quot;HTML&quot;/origem &quot;Adobe Target Classic&quot;.
-   * `com.adobe.granite.maintenance.impl.TaskScheduler`: nenhuma janela de manutenção encontrada no granite/operations/maintenance.
+   * `com.adobe.granite.maintenance.impl.TaskScheduler`: nenhuma janela de manutenção encontrada em `granite/operations/maintenance`.
    * A validação do lado do servidor do Formulário adaptável falha quando funções agregadas como SUM, MAX e MIN são usadas (CQ-4274424).
-   * `com.adobe.granite.maintenance.impl.TaskScheduler` : nenhuma janela de manutenção encontrada no granite/operations/maintenance.
+   * `com.adobe.granite.maintenance.impl.TaskScheduler` : nenhuma janela de manutenção encontrada em `granite/operations/maintenance`.
    * O ponto de acesso em uma imagem interativa do Dynamic Media não é visível ao visualizar o ativo por meio do visualizador de banner de compra.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Tempo limite atingido ao aguardar a conclusão não registrada da alteração de registro.
 
@@ -527,7 +527,7 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 ### Problemas conhecidos do AEM Forms {#known-issues-aem-forms-6521}
 
 
-* Depois de instalar o AEM Forms JEE Service Pack 21 (6.5.21.0), se você encontrar entradas duplicadas de Geode JARs `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` no `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926).
+* Depois de instalar o AEM Forms JEE Service Pack 21 (6.5.21.0), se você encontrar entradas duplicadas de Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` no `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926).
 
   Execute as seguintes etapas para resolver o problema:
 
