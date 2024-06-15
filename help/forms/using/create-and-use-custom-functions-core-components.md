@@ -4,22 +4,21 @@ description: O AEM Forms é compatível com funções personalizadas que permite
 keywords: Adicionar uma função personalizada, usar uma função personalizada, criar uma função personalizada, usar a função personalizada no editor de regras.
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: e7ad5c0149e428265598c806421131fe74fad350
+source-git-commit: f633fdfda531cc29ce6274e0367708cc4909a0cd
 workflow-type: tm+mt
-source-wordcount: '3394'
+source-wordcount: '3385'
 ht-degree: 0%
 
 ---
 
 # Funções personalizadas nos Componentes principais do Forms adaptável
 
-<span class="preview"> Este artigo contém conteúdo para recursos do programa Early Adoter. Esses recursos de pré-lançamento estão acessíveis somente por meio de nossos [canal de pré-lançamento](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes#forms). Os recursos do programa de pré-lançamento são:
-<!-- * Optional parameter support in Custom Functions-->
+Este artigo descreve como criar funções personalizadas com o componente principal de formulário adaptável mais recente, que tem os recursos mais recentes, como:
 * Recurso de armazenamento em cache para funções personalizadas
 * Suporte a objetos de escopo global e objetos de campo para Funções personalizadas
 * Suporte para recursos modernos do JavaScript, como funções let e arrow (Suporte ES10)
 
-Certifique-se de definir a variável [versão mais recente do formulário](https://github.com/adobe/aem-core-forms-components/tree/release/650) no ambiente Componente principal do AEM Forms para usar os recursos de pré-lançamento em Funções personalizadas. </span>
+Certifique-se de definir a variável [versão mais recente do formulário](https://github.com/adobe/aem-core-forms-components/tree/release/650) no ambiente Componente principal do AEM Forms para usar os recursos mais recentes nas Funções personalizadas. </span>
 
 
 | Versão | Link do artigo |

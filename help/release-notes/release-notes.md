@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 1ba2782fcc81e5090dced4eed83a3a4911676f09
+source-git-commit: e3219d57e069e546b177015e675666a8b927fb49
 workflow-type: tm+mt
-source-wordcount: '3819'
+source-wordcount: '3825'
 ht-degree: 1%
 
 ---
@@ -199,7 +199,7 @@ Esta é a lista de correções de acessibilidade incluídas nesta versão:
 
 * Quando um usuário tenta visualizar um formulário no carregamento da página, ele não é renderizado. (FORMS-13594)
 * O componente de campo de entrada de data não funciona corretamente no Microsoft Edge no modo de compatibilidade do Internet Explorer. (FORMS-13170)
-* A notificação por email paralisado com anexo falhou ao ser enviada quando a correção para [etapas adicionais para usar e-mail com anexos](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/troubleshooting/additional-steps-to-use-email-with-attachments) é executado no servidor. (FORMS-14227)
+* A notificação por email paralisado com anexo falhou ao ser enviada quando a correção para [etapas adicionais para usar o email com anexos](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/troubleshooting/additional-steps-to-use-email-with-attachments) é executado no servidor. (FORMS-14227)
 * No AEM Forms Workspace no Service Pack 18 (6.5.18.0), ao comentar em qualquer documento carregado, o arquivo de documento é corrompido. (FORMS-13735)
 * No AEM Forms Service Pack 18 (6.5.18.0), Service Pack 19 (6.5.19.0) ou Service Pack 20 (6.5.20.0), quando um usuário tenta procurar um Formulário adaptável no painel lateral, a pesquisa falha. (FORMS-14117)
 * Quando um usuário edita um formulário criado em alemão e traduzido para inglês, isso resulta em exibições de idioma inconsistentes entre os modos &quot;Visualização&quot; e &quot;Editar&quot;. Isso faz com que os componentes RadioButton e Caixa de seleção sejam exibidos em inglês durante o modo &quot;Editar&quot;, enquanto aparecem corretamente em alemão durante o modo &quot;Visualização&quot;. (FORMS-13910)
@@ -212,7 +212,7 @@ Esta é a lista de correções de acessibilidade incluídas nesta versão:
    * Alguns campos não preenchem os dados traduzidos.
    * Alguns campos não são traduzidos para o novo idioma, mesmo que os dados sejam salvos no dicionário com êxito.
 
-#### [!DNL Forms Designer] {#forms-desgner-6520}
+#### [!DNL Forms Designer] {#forms-desgner-6521}
 
 * Quando um usuário adiciona uma nova tabela a um formulário existente usando o AEM Forms Designer no ambiente do AEM Forms Service Pack 19 (6.5.19.0), ele trava. (LC-3921978)
 * Quando um usuário renderiza um formulário adaptável em um ambiente Linux®, ocorre um espaço extra entre os componentes do campo. (LC-3921957)
