@@ -10,7 +10,7 @@ feature: HTML5 Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 4637779a38e05b3a88adc644c52e574155cba4b5
 workflow-type: tm+mt
 source-wordcount: '2007'
 ht-degree: 0%
@@ -173,7 +173,6 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo dos fo
    Resposta: os formulários HTML5 não suportam padrões de exibição para campos flutuantes.
 
 1. Qual é o formato do campo Data no HTML5 Forms?
-
 Resposta: O campo Data aceita o formato ISO, AAAA-MM-DD. Se você especificar uma data em algum outro formato, o Campo de data não aceitará a formatação até que o usuário saia do campo.
 
 ### Script {#scripting}

@@ -7,9 +7,9 @@ feature: Adaptive Forms, Foundation Components, Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 4637779a38e05b3a88adc644c52e574155cba4b5
 workflow-type: tm+mt
-source-wordcount: '5504'
+source-wordcount: '5538'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,7 @@ Para obter mais informações, consulte [Como construir projetos AEM usando o Ap
 Depois de configurar o projeto AEM, defina a estratégia de criação e personalização de modelos e componentes de formulários adaptáveis.
 
 * Um modelo de formulário adaptável é uma página AEM especializada que define a estrutura e as informações do cabeçalho-rodapé de um formulário adaptável. Um modelo tem layouts, estilos e estrutura básica pré-configurados para um formulário adaptável. O AEM Forms fornece modelos e componentes prontos para uso que você pode usar para criar formulários adaptáveis. No entanto, você pode criar modelos e componentes personalizados de acordo com seus requisitos. É recomendável coletar os requisitos para modelos e componentes adicionais necessários em seus formulários adaptáveis. Para obter detalhes, consulte [Personalização de formulários e componentes adaptáveis](/help/forms/using/adaptive-forms-best-practices.md#customize-components).
+* É recomendável carregar os pacotes de formulário usando a interface do usuário do Gerenciador de pacotes, em vez da interface do Gerenciador de pacotes do CRX, pois o carregamento de pacotes pelo Gerenciador de pacotes do CRX pode, às vezes, levar a anomalias.
 * O AEM Forms permite criar formulários adaptáveis com base nos seguintes modelos de formulário. Os modelos de formulário atuam como interface para a troca de dados entre um formulário e um sistema AEM e fornecem uma estrutura baseada em XML para o fluxo de dados dentro e fora de um formulário adaptável. Além disso, os modelos de formulário impõem regras e restrições aos formulários adaptáveis na forma de restrições de esquema e XFA.
 
    * **Nenhum**: os formulários adaptáveis criados com essa opção não usam nenhum modelo de formulário. O XML de dados gerado desses formulários tem uma estrutura simples com campos e valores correspondentes.

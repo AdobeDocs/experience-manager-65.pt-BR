@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: e3219d57e069e546b177015e675666a8b927fb49
+source-git-commit: 4637779a38e05b3a88adc644c52e574155cba4b5
 workflow-type: tm+mt
-source-wordcount: '3825'
+source-wordcount: '3907'
 ht-degree: 1%
 
 ---
@@ -41,18 +41,22 @@ ht-degree: 1%
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
+### [!DNL Forms]
+
 Alguns dos principais recursos e aprimoramentos desta versão incluem:
 
-* Uma credencial nova e mais fácil de usar para autenticação de servidor para servidor, substituindo a credencial existente da Conta de serviço (JWT). (NPR-41994)
-
-* Aprimoramentos do Editor de regras no AEM Forms:
+* **Suporte para credenciais do Oauth**: uma credencial nova e mais fácil de usar para autenticação de servidor para servidor, substituindo a credencial existente da Conta de serviço (JWT). (NPR-41994)
+* **Aprimoramentos do Editor de regras no AEM Forms**:
    * Suporte para implementar condições aninhadas com `When-then-else` funcionalidade.
    * Validar ou redefinir painéis e formulários, incluindo campos.
    * Suporte para recursos modernos do JavaScript, como funções de esquerda e seta (suporte para ES10) nas Funções personalizadas.
-* API AutoTag para acessibilidade de PDF: O AEM Forms no OSGi agora oferece suporte à nova API AutoTag para aprimorar o PDF para padrões de acessibilidade, adicionando tags: parágrafos e listas. Isso torna os PDF mais acessíveis para usuários com tecnologia assistiva.
-* Suporte a PNG de 16 bits: o serviço PDF Generator ImageToPdf agora oferece suporte à conversão de PNGs com intensidade de cor de 16 bits.
-* Aplicar artefatos a blocos de texto individuais em XDPs: o Forms Designer agora permite que os usuários definam configurações em blocos de texto individuais em arquivos XDP. Essa capacidade permite controlar os elementos que são tratados como artefatos nos PDF resultantes. Esses elementos, como cabeçalhos e rodapés, são acessíveis para as tecnologias assistivas. Os principais recursos incluem marcar blocos de texto como artefatos e incorporar essas configurações nos metadados XDP. O serviço Forms Output aplica essas configurações durante a geração do PDF, garantindo a marcação adequada de PDF / UA.
-* O AEM Forms Designer é certificado com `GB18030:2022` padrão. Com essa certificação, agora o Forms Designer oferece suporte ao conjunto de caracteres Unicode chinês que permite inserir caracteres chineses em todos os campos editáveis e caixas de diálogo.
+* **API AutoTag para acessibilidade de PDF**: o AEM Forms no OSGi agora oferece suporte à nova API AutoTag para aprimorar o PDF para padrões de acessibilidade, adicionando tags: parágrafos e listas. Isso torna os PDF mais acessíveis para usuários com tecnologia assistiva.
+* **Suporte a PNG de 16 bits**: o serviço PDF Generator ImageToPdf agora oferece suporte à conversão de PNGs com intensidade de cor de 16 bits.
+* **Aplicar artefatos a blocos de texto individuais em XDPs**: o Forms Designer agora permite que os usuários definam configurações em blocos de texto individuais em arquivos XDP. Essa capacidade permite controlar os elementos que são tratados como artefatos nos PDF resultantes. Esses elementos, como cabeçalhos e rodapés, são acessíveis para as tecnologias assistivas. Os principais recursos incluem marcar blocos de texto como artefatos e incorporar essas configurações nos metadados XDP. O serviço Forms Output aplica essas configurações durante a geração do PDF, garantindo a marcação adequada de PDF / UA.
+* **O AEM Forms Designer é certificado com `GB18030:2022` padrão**: Com o `GB18030:2022` certificação, agora o Forms Designer oferece suporte ao conjunto de caracteres Unicode chinês que permite inserir caracteres chineses em todos os campos editáveis e caixas de diálogo.
+* **Suporte para rota WebToPDF no servidor JEE**: O serviço PDF Generator agora oferece suporte à rota WebToPDF para converter arquivos HTML em documentos PDF no JEE, além das rotas Webkit e WebCapture (somente Windows). Embora a rota WebToPDF já esteja disponível no OSGi, ela agora foi estendida para incluir no JEE também. Nas plataformas JEE e OSGi, o serviço PDF Generator suporta as seguintes rotas em diferentes sistemas operacionais:
+   * **Windows**: Webkit, WebCapture, WebToPDF
+   * **Linux**: Webkit, WebToPDF
 
 
 ### [!DNL Assets]
@@ -527,16 +531,15 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 ### Problemas conhecidos do AEM Forms {#known-issues-aem-forms-6521}
 
 
-* Depois de instalar o AEM Forms JEE Service Pack 21 (6.5.21.0), se você encontrar entradas duplicadas de Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` no `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926).
+* Depois de instalar o AEM Forms JEE Service Pack 21 (6.5.21.0), se você encontrar entradas duplicadas de Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` no `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926), execute as seguintes etapas para resolver o problema:
 
-  Execute as seguintes etapas para resolver o problema:
+   1. Pare os localizadores, se eles estiverem em execução.
+   1. Pare o servidor AEM.
+   1. Vá para a `<AEM_Forms_Installation>/lib/caching/lib`.
+   1. Remova todos os arquivos de correção Geode, exceto `geode-*-1.15.1.2.jar`. Confirme se somente o Geode é compatível com `version 1.15.1.2` estão presentes.
+   1. Abra o prompt de comando no modo de administrador.
+   1. Instale o patch Geode usando o `geode-*-1.15.1.2.jar` arquivo.
 
-   1. Pare os localizadores e o servidor na ordem especificada, se estiverem em execução.
-   1. Reinstale o patch executando o instalador de patches no modo administrador (Importante).
-   1. Confirme se somente o Geode é compatível com `version 1.15.1.2` estão presentes.
-
-  >[!NOTE]
-  > Nenhuma ação é necessária se somente os jars de Geode com `version 1.15.1.2` estão presentes.
 
 ## Pacotes OSGi e pacotes de conteúdo incluídos{#osgi-bundles-and-content-packages-included}
 
