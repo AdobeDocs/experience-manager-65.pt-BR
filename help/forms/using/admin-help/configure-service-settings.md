@@ -7,10 +7,11 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Workbench
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 1e978cbece1401a18137ef98a3a9bf6cd666e48f
 workflow-type: tm+mt
-source-wordcount: '10702'
+source-wordcount: '10828'
 ht-degree: 0%
 
 ---
@@ -225,7 +226,7 @@ As configurações a seguir estão disponíveis para o serviço de Criptografia.
 >
 >Usar autenticação simples (nome de usuário e senha) somente quando a conexão estiver protegida por SSL (usando LDAPS).
 
-**Modo de compatibilidade:**
+<!-- **Compatibility Mode:**-->
 
 ## Configurações do serviço FTP {#ftp-service-settings}
 
@@ -253,7 +254,11 @@ As seguintes configurações estão disponíveis para o serviço Gerar PDF.
 
 **Configurações de tipo de arquivo:** O nome da Configuração de Tipo de Arquivo pré-configurada a ser aplicada a um trabalho de conversão, se essas configurações não forem especificadas como parte dos parâmetros de invocação da API. As configurações de tipo de arquivo são definidas no console de administração, clicando em Serviços > PDF Generator > Configurações de tipo de arquivo.
 
-**Usar o Acrobat WebCapture (somente Windows):** Quando esta configuração é verdadeira, o serviço Gerar PDF usa o Acrobat X Pro para todas as conversões de HTML para PDF. Isso pode melhorar a qualidade dos arquivos PDF produzidos a partir do HTML, embora o desempenho possa ser um pouco menor. O valor padrão é false.
+**Usar WebCapture (somente Windows):** Quando esta configuração é verdadeira, o serviço Gerar PDF usa Acrobat para todas as conversões de HTML para PDF. Isso pode melhorar a qualidade dos arquivos PDF produzidos a partir do HTML, embora o desempenho possa ser um pouco menor. O valor padrão é false.
+
+**Conversor primário para conversões de HTML para PDF:** O serviço Gerar PDF fornece várias rotas para converter arquivos HTML em documentos PDF: Webkit, WebCapture (somente Windows) e WebToPDF. Esta configuração permite que o usuário selecione o conversor primário para converter HTML em PDF. Por padrão, o WebToPDF é selecionado.
+
+**Conversor de fallback para conversões de HTML para PDF:** Especifique o conversor para conversões HTML para PDF se o conversor primário falhar. Por padrão, o WebCapture (somente Windows) é selecionado.
 
 **Usar a Conversão de imagem do Acrobat (somente Windows):** Quando esta configuração é verdadeira, o serviço Gerar PDF usa o Acrobat X Pro para todas as conversões de Imagem para PDF. Essa configuração é útil somente se o mecanismo de conversão Java puro padrão não puder converter uma proporção significativa das imagens de entrada com êxito. O valor padrão é false.
 
@@ -267,21 +272,23 @@ As seguintes configurações estão disponíveis para o serviço Gerar PDF.
 
 **Tamanho do Pool de OCR:** O tamanho do pool do PaperCaptureService que o PDF Generator usa para OCR. O valor padrão dessa configuração (recomendada para sistemas com um único processador) é 3, que pode ser aumentado em sistemas com vários processadores. Esta configuração é válida somente em sistemas Windows.
 
+**Número máximo de páginas ImageToPDF na memória para conversões de TIFF:** Essa configuração determina o número máximo de páginas de uma imagem de TIFF que podem permanecer na memória antes de serem liberadas para o disco durante a conversão para PDF. O valor padrão para essa configuração é 500, que pode ser aumentado se mais memória for alocada para o processo do conversor ImageToPDF.
+
 **Família De Fontes De Fallback Para Conversões De HTML Para PDF:** O nome da família de fontes a ser usada nos documentos do PDF quando a fonte usada no HTML original não estiver disponível para o AEM Forms Server. Especifique uma família de fontes se você espera converter páginas de HTML que usam fontes indisponíveis. Por exemplo, as páginas criadas em idiomas regionais podem usar fontes indisponíveis.
 
 **Tentar novamente lógica para conversões nativas** Controla as tentativas de geração de PDF se a primeira tentativa de conversão falhar:
 
-**Nenhuma tentativa**
+* **Nenhuma tentativa**
 
-Não repita a conversão de PDF se a primeira tentativa de conversão falhar
+  Não repita a conversão de PDF se a primeira tentativa de conversão falhar
 
-**Tentar novamente**
+* **Tentar novamente**
 
-Repita a conversão de PDF independentemente de o limite de tempo ter sido atingido. A duração de tempo limite padrão para a primeira tentativa é de 270s.
+  Repita a conversão de PDF independentemente de o limite de tempo ter sido atingido. A duração de tempo limite padrão para a primeira tentativa é de 270s.
 
-**Tentar novamente se o tempo permitir**
+* **Tentar novamente se o tempo permitir**
 
-Repita a conversão de PDF se o tempo consumido para a primeira tentativa de conversão for menor que a duração de tempo limite especificada. Por exemplo, se a duração do tempo limite for 270s e a primeira tentativa tiver consumido 200s, o PDF Generator tentará novamente a conversão. Se a primeira tentativa consumiu 270s, a conversão não será repetida.
+  Repita a conversão de PDF se o tempo consumido para a primeira tentativa de conversão for menor que a duração de tempo limite especificada. Por exemplo, se a duração do tempo limite for 270s e a primeira tentativa tiver consumido 200s, o PDF Generator tentará novamente a conversão. Se a primeira tentativa consumiu 270s, a conversão não será repetida.
 
 ## Configurações de serviço dos Utilitários ES4 {#guides-es4-utilities-service-settings}
 
