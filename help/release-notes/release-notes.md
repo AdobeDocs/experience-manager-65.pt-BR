@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 2513ae7e193bdae3387210b07661b9c7a22b0156
+source-git-commit: e6fa020bac624c53abdebc528b5a0bf0e979b986
 workflow-type: tm+mt
 source-wordcount: '4006'
 ht-degree: 1%
@@ -542,7 +542,7 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 
 * Se um usuário tentar visualizar um rascunho de carta com dados XML salvos, ele fica preso no `Loading` para algumas cartas específicas. (FORMS-14521) Para resolver o problema, execute as seguintes etapas:
    1. Baixe o [hotfix](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fccm-ccr-content-10.0.206.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7C6fb8db1c81c84470d7ff08dc911c1e41%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638544797146701276%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=MhuthPPLjZcWuQsRAtSiwEZ2MljeNrpLumlWo6iolFI%3D&amp;reserved=0) no Portal de distribuição de software.
-   1. Carregue e instale o pacote (.zip) por meio do [Gerenciador de pacotes CRX](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
+   1. Carregue e instale o pacote (.zip) usando o [Gerenciador de pacotes CRX](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
 
 * Depois de atualizar para o AEM Forms Service Pack 6.5.21.0, a variável `PaperCapture` falha do serviço ao executar operações de OCR (Optical Character Recognition, reconhecimento ótico de caracteres) no PDF. O serviço não gera saída na forma de um PDF ou um arquivo de log. Para resolver o problema, consulte a [solução de problemas](/help/forms/using/papercapture-service-resolution.md) artigo. (CQDOC-21680)
 
