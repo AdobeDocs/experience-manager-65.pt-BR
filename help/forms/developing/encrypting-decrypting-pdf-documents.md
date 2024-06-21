@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 29cc7281e34487881ff9334f4cf00f3d013de11b
 workflow-type: tm+mt
 source-wordcount: '8133'
 ht-degree: 0%
@@ -165,6 +165,7 @@ Criptografe um documento PDF com uma senha usando a API de criptografia (Java):
 [Início rápido (modo SOAP): criptografia de um documento PDF usando a API Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
 [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+
 
 [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -377,7 +378,7 @@ Criptografe um documento PDF com um certificado usando a API de criptografia (Ja
 
 [Resumo das etapas](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Início rápido (modo SOAP): criptografar um documento PDF com um certificado usando a API Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
+[Início rápido (modo SOAP): criptografia de um documento PDF com um certificado usando a API Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
 
 [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

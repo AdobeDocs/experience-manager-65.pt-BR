@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: 966c3554-25df-4467-866e-11c43cc15b58
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 1%
@@ -292,7 +292,7 @@ Determine a conformidade PDF/A usando a API Java:
 
 [Trabalhar com documentos PDF/A](pdf-a-documents.md#working-with-pdf-a-documents)
 
-[Início rápido (modo SOAP): determinação da conformidade com PDF/A usando a API Java](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
+[Início rápido (modo SOAP): determinação da conformidade PDF/A usando a API Java](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
 
 [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

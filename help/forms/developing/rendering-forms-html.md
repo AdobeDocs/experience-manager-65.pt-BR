@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '4099'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Para renderizar um formulário como HTML, o design do formulário deve ser salvo
 
 ## páginas HTML {#html-pages}
 
-Quando um design de formulário é renderizado como um formulário HTML, cada subformulário de segundo nível é renderizado como uma página de HTML (painel). Você pode exibir a hierarquia de um subformulário no Designer. Os subformulários secundários que pertencem ao subformulário raiz (o nome padrão de um subformulário raiz é form1) são os subformulários do painel. O exemplo a seguir mostra os subformulários de um design de formulário.
+Quando um design de formulário é renderizado como um formulário HTML, cada subformulário de segundo nível é renderizado como uma página de HTML (painel). Você pode visualizar a hierarquia de um subformulário no Designer. Os subformulários secundários que pertencem ao subformulário raiz (o nome padrão de um subformulário raiz é form1) são os subformulários do painel. O exemplo a seguir mostra os subformulários de um design de formulário.
 
 ```java
      form1

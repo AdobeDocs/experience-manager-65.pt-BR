@@ -7,8 +7,9 @@ topic-tags: publish
 docset: aem65
 exl-id: 240ed4d8-b21b-46eb-80a9-9e8093b77235
 solution: Experience Manager, Experience Manager Forms
+feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 1%
@@ -19,7 +20,7 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=pt-BR) |
 | AEM 6.5 | Este artigo |
 
 
@@ -80,7 +81,7 @@ O Forms Portal permite listar formulários do repositório de formulários na p�
 1. **Configurar o armazenamento para os dados de rascunho e de formulários enviados:** Por padrão, os dados de rascunho e envio são armazenados no repositório do AEM. Em um ambiente de produção, é recomendável não armazenar dados de rascunho ou de formulário enviados no repositório do AEM. [Configurar o componente do Forms Portal para salvar dados em um local seguro](../../forms/using/draft-submission-component.md#customizing-the-storage).
 1. **(Opcional) Personalização dos componentes do Forms Portal:** [Personalizar os modelos de página do Forms Portal](../../forms/using/customizing-templates-forms-portal-components.md) para dar uma aparência distinta aos componentes.
 1. **(Opcional) Adicione metadados personalizados a formulários:** [Adicionar metadados personalizados a formulários](../../forms/using/customizing-templates-forms-portal-components.md) para melhorar a listagem e a experiência de pesquisa.
-1. **Publicar a página do Forms Portal:** A página do Forms Portal agora está pronta. Publique a página.
+1. **Publicar a página do Forms Portal:** A página do Forms Portal agora está pronta. Publish na página.
 
 ## Artigos relacionados {#related-articles}
 

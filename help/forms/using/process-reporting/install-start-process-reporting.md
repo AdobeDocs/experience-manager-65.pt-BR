@@ -7,8 +7,9 @@ topic-tags: process-reporting
 docset: aem65
 exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '1710'
 ht-degree: 0%
@@ -176,7 +177,7 @@ O serviço ProcessDataPublisher importa dados do processo do banco de dados do A
 
 ![processdatapublisherservice-1](assets/processdatapublisherservice-1.png)
 
-**Publicar dados**
+**Dados do Publish**
 
 Habilite essa opção para iniciar a publicação dos dados do processo. A opção está desativada por padrão.
 
@@ -206,7 +207,7 @@ Se um serviço do publicador que adquiriu um bloqueio estiver ocioso pelo númer
 
 `Unit`: `Seconds`
 
-**Publicar dados de**
+**Dados do Publish de**
 
 O ambiente do AEM Forms contém dados do momento em que o ambiente foi configurado.
 

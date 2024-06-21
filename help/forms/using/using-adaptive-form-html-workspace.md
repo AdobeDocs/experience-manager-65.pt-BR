@@ -7,8 +7,9 @@ topic-tags: forms-workspace
 docset: aem65
 exl-id: 15b9ae98-059f-4bf7-bfdd-9cfeb8eb30a4
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Workbench
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 O AEM Forms no JEE fornece a capacidade de usar um formulário adaptável no HTML Workspace.
 
-Como é possível selecionar um XDP durante o design do processo, a capacidade de navegar a partir de um repositório AEM de formulário adaptável existente foi adicionada. O recurso oferece ao Designer de processos a capacidade de configurar um formulário adaptável no Ponto inicial e na Tarefa.
+Como é possível selecionar um XDP durante o design do processo, a capacidade de navegar a partir de um repositório AEM de formulário adaptável existente foi adicionada. O recurso oferece ao Process Designer a capacidade de configurar um formulário adaptável no Ponto inicial e na Tarefa.
 
 ## Experiência de design de processos {#process-design-experience}
 
@@ -43,7 +44,7 @@ O HTML Workspace fornece alguns controles específicos para formulários adaptá
 
 1. Para enviar um formulário adaptável, use o **Enviar** ações de botão ou rota disponíveis, como no Mobile Forms. Qualquer botão Enviar tipo de formulário adaptável fica oculto.
 
-1. **Visibilidade global da barra de ferramentas do formulário adaptável**: se o Process Designer ocultar a barra de ferramentas global/de nível superior, a barra de ferramentas e os botões não aparecerão em formulários adaptáveis.
+1. **Visibilidade global da barra de ferramentas do formulário adaptável**: se Processar Designer ocultar a barra de ferramentas global/de nível superior, a barra de ferramentas e os botões não aparecerão em formulários adaptáveis.
 
 1. **Controles de navegação do Workspace para o Adaptive Forms**: os botões Next/Previous estão disponíveis junto com os botões Save, Submit e Route Action para um formulário adaptável no HTML Workspace. Clique em Botões Avançar/Anterior para navegar pelos painéis de formulários adaptáveis no HTML Workspace. Os botões Próximo/Anterior fornecem navegação profunda, semelhante aos controles de navegação na exibição Móvel de formulários adaptáveis.
 

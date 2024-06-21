@@ -8,7 +8,7 @@ topic-tags: develop
 role: Developer
 exl-id: 703b6798-d40f-4769-96fc-e440090ca983
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
@@ -23,9 +23,9 @@ Os seguintes Quick Starts estão disponíveis para o serviço de Repositório do
 
 [Início rápido (modo SOAP): criação de uma pasta usando a API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
 
-[Início rápido (modo SOAP): gravação de um recurso usando a API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
+[Início rápido (modo SOAP): Gravação de um recurso usando a API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
 
-[Início rápido (modo SOAP): listagem de recursos usando a API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
+[Início rápido (modo SOAP): listar recursos usando a API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
 
 [Início rápido (modo SOAP): Leitura de um recurso usando a API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-reading-a-resource-using-the-java-api)
 
@@ -167,7 +167,7 @@ O exemplo de código Java a seguir cria uma pasta chamada *FormsFolder* no segui
  }
 ```
 
-## Início rápido (modo SOAP): gravação de um recurso usando a API Java {#quick-start-soap-mode-writing-a-resource-using-the-java-api}
+## Início rápido (modo SOAP): Gravação de um recurso usando a API Java {#quick-start-soap-mode-writing-a-resource-using-the-java-api}
 
 O exemplo de código Java a seguir grava um recurso chamado *loan.xdp* no repositório. O recurso é adicionado à variável `/Applications/FormsApplication/1.0/FormsFolder` localização. (Consulte [Recursos de gravação](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
@@ -295,7 +295,7 @@ O exemplo de código Java a seguir grava um recurso chamado *loan.xdp* no reposi
  
 ```
 
-## Início rápido (modo SOAP): listagem de recursos usando a API Java {#quick-start-soap-mode-listing-resources-using-the-java-api}
+## Início rápido (modo SOAP): listar recursos usando a API Java {#quick-start-soap-mode-listing-resources-using-the-java-api}
 
 O exemplo de código Java a seguir lista os recursos que estão em `Applications/FormsApplication/1.0/FormsFolder`. (Consulte [Listando recursos](/help/forms/developing/aem-forms-repository.md#listing-resources).)
 

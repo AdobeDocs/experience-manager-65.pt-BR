@@ -8,14 +8,14 @@ topic-tags: develop
 role: Developer
 exl-id: d61c20a9-27c6-4b57-ab00-dfaa77fe3f75
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
 
 ---
 
-# Início Rápido da API Java do Serviço Gerenciador de Tarefas (SOAP) {#task-manager-service-java-api-quickstart-soap}
+# SOAP (Início Rápido) da API Java do Serviço Gerenciador de Tarefas {#task-manager-service-java-api-quickstart-soap}
 
 Os seguintes Quick Starts estão disponíveis para o serviço Gerenciador de Tarefas.
 

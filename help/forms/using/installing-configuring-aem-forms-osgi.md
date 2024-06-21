@@ -7,7 +7,8 @@ docset: aem65
 role: Admin, User, Developer
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms, OSGI
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1882'
 ht-degree: 1%
@@ -18,7 +19,7 @@ ht-degree: 1%
 
 ## Introdução {#introduction}
 
-O AEM Forms fornece um conjunto de formulários para obter dados do usuário final: formulários adaptáveis, HTML5 Forms e PDF forms. Ele também fornece ferramentas para listar todos os formulários disponíveis em uma página da Web, analisar o uso de formulários e direcionar usuários com base em seus perfis. Esses recursos estão incluídos no pacote complementar do AEM Forms. O pacote complementar é implantado em uma instância de Autor ou Publicação do AEM.
+O AEM Forms fornece um conjunto de formulários para obter dados do usuário final: formulários adaptáveis, HTML5 Forms e PDF forms. Ele também fornece ferramentas para listar todos os formulários disponíveis em uma página da Web, analisar o uso de formulários e direcionar usuários com base em seus perfis. Esses recursos estão incluídos no pacote complementar do AEM Forms. O pacote complementar é implantado em uma instância de Autor ou Publish do AEM.
 
 **Formulários adaptáveis:** Esses formulários alteram a aparência com base no tamanho da tela do dispositivo, são envolventes e interativos por natureza. O Forms adaptável também pode se integrar ao Adobe Analytics, Adobe Sign e Adobe Target. Ela possibilitou fornecer formulários personalizados e experiências orientadas por processos aos usuários com base em sua demografia e outros recursos. Também é possível integrar formulários adaptáveis ao Adobe Sign.
 
@@ -30,7 +31,7 @@ O AEM Forms é uma plataforma poderosa de nível empresarial e a captura de dado
 
 ## Topologia de implantação {#deployment-topology}
 
-O pacote complementar do AEM Forms é um aplicativo implantado no AEM. Você precisa de, no mínimo, um Autor do AEM e uma instância de publicação do AEM para executar os recursos de captura de dados do AEM Forms. Sugere-se a seguinte topologia para executar os recursos de captura de dados do AEM Forms AEM Forms. Para obter informações detalhadas sobre a topologia, consulte [Arquitetura e topologias de implantação do AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+O pacote complementar do AEM Forms é um aplicativo implantado no AEM. Você precisa de, no mínimo, um Autor de AEM e uma instância AEM do Publish para executar os recursos de captura de dados do AEM Forms. Sugere-se a seguinte topologia para executar os recursos de captura de dados do AEM Forms AEM Forms. Para obter informações detalhadas sobre a topologia, consulte [Arquitetura e topologias de implantação do AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
 ![topologia recomendada](assets/recommended-topology.png)
 
@@ -41,7 +42,7 @@ Antes de começar a instalar e configurar o recurso de captura de dados do AEM F
 * A infraestrutura de hardware e software está em vigor. Para obter uma lista detalhada de hardware e software compatíveis, consulte [requisitos técnicos](/help/sites-deploying/technical-requirements.md).
 
 * O caminho de instalação da instância do AEM não contém espaços em branco.
-* Uma instância do AEM está em funcionamento. Para usuários do Windows, instale a instância AEM no modo elevado. Na terminologia do AEM, uma &quot;instância&quot; é uma cópia do AEM em execução em um servidor no modo de criação ou publicação. Você precisa de, pelo menos, dois [Instâncias do AEM (um Autor e uma Publicação)](/help/sites-deploying/deploy.md) para executar os recursos de captura de dados do AEM Forms:
+* Uma instância do AEM está em funcionamento. Para usuários do Windows, instale a instância AEM no modo elevado. Na terminologia do AEM, uma &quot;instância&quot; é uma cópia do AEM em execução em um servidor no modo de criação ou publicação. Você precisa de, pelo menos, dois [Instâncias do AEM (um autor e um Publish)](/help/sites-deploying/deploy.md) para executar os recursos de captura de dados do AEM Forms:
 
    * **Autor**: uma instância do AEM usada para criar, carregar e editar conteúdo e administrar o site. Quando o conteúdo estiver pronto para entrar em funcionamento, ele será replicado para a instância de publicação.
    * **Publish**: uma instância do AEM que veicula o conteúdo publicado para o público pela Internet ou por uma rede interna.
@@ -124,7 +125,7 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
    >
    > É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
-1. Repita as etapas de 1 a 7 em todas as instâncias de Autor e Publicação.
+1. Repita as etapas 1 a 7 em todas as instâncias de Autor e Publish.
 
 ### (Somente para Windows) Instalação automática de redistribuíveis do Visual Studio {#automatic-installation-visual-studio-redistributables}
 
@@ -152,7 +153,7 @@ O AEM Forms tem algumas configurações obrigatórias e opcionais. As configura�
 
 #### Configurar bibliotecas RSA e BouncyCastle  {#configure-rsa-and-bouncycastle-libraries}
 
-Execute as seguintes etapas em todas as instâncias Autor e Publicar para inicializar, delegar as bibliotecas:
+Execute as seguintes etapas em todas as instâncias do Autor e do Publish para inicializar e delegar as bibliotecas:
 
 1. Interrompa a instância subjacente do AEM.
 1. Abra o `[AEM installation directory]\crx-quickstart\conf\sling.properties` arquivo para edição.
@@ -166,7 +167,7 @@ Execute as seguintes etapas em todas as instâncias Autor e Publicar para inicia
    ```
 
 1. Salve e feche o arquivo e inicie a instância do AEM.
-1. Repita as etapas 1 a 4 em todas as instâncias Autor e Publicar.
+1. Repita as etapas 1 a 4 em todas as instâncias de Autor e Publish.
 
 #### Configurar o agente de serialização {#configure-the-serialization-agent}
 
@@ -175,7 +176,7 @@ Execute as seguintes etapas em todas as instâncias Autor e Publicar para adicio
 1. Abra o Gerenciador de configuração do AEM em uma janela do navegador. O URL padrão é `https://'[server]:[port]'/system/console/configMgr`.
 1. Pesquisar por **com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.name** e abra a configuração.
 1. Adicione o **sun.util.calendar** pacote para o **➡ incluir na lista de permissões** campo. Clique em **Salvar**.
-1. Repita as etapas 1 a 3 em todas as instâncias Autor e Publicar.
+1. Repita as etapas 1 a 3 em todas as instâncias de Autor e Publish.
 
 ### Configurações pós-instalação opcionais {#optional-post-installation-configurations}
 

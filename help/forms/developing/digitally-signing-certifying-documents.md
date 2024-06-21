@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '16917'
 ht-degree: 0%
@@ -821,7 +821,7 @@ Para assinar digitalmente um documento PDF usando a API de assinatura (serviço 
 
 Você pode assinar um formulário interativo criado pelo serviço Forms. Por exemplo, considere o seguinte workflow:
 
-* Você mescla um formulário PDF baseado em XFA criado usando o Designer e os dados de formulário em um documento XML usando o serviço Forms. O servidor do Forms renderiza um formulário interativo.
+* Você mescla um formulário PDF baseado em XFA criado usando Designer e dados de formulário em um documento XML usando o serviço Forms. O servidor do Forms renderiza um formulário interativo.
 * Você assina o formulário interativo usando a API do serviço de assinatura.
 
 O resultado é um formulário PDF interativo assinado digitalmente. Ao assinar um formulário de PDF baseado em um formulário XFA, salve o arquivo de PDF como um formulário de PDF Estático de Adobe. Se você tentar assinar um formulário de PDF salvo como um formulário de PDF dinâmico de Adobe, ocorrerá uma exceção. Como você está assinando o formulário retornado pelo serviço Forms, verifique se ele contém um campo de assinatura.

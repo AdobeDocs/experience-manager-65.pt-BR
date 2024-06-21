@@ -8,7 +8,8 @@ docset: aem65
 role: Admin,User
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1967'
 ht-degree: 2%
@@ -113,12 +114,12 @@ Veja a seguir uma extensa lista de propriedades de metadados compatíveis com o 
    <td>Um valor somente leitura que especifica a hora em que o formulário foi publicado pela última vez.</td> 
   </tr> 
   <tr> 
-   <td>Publicar hora de ligar/desligar</td> 
+   <td>Horário ligado/desligado do Publish</td> 
    <td>Todos, exceto o recurso</td> 
    <td><p>Hora em que o formulário está agendado para ser publicado/despublicado automaticamente. O usuário define esse valor ao editar metadados.</p> 
     <ul> 
-     <li>A data de ativação e desativação da publicação deve ser posterior à data atual. </li> 
-     <li>Publicar Fora do Tempo deve estar além de publicar No Tempo. </li> 
+     <li>Os horários de ativação e desativação do Publish devem estar após a data atual. </li> 
+     <li>O Tempo de desativação do Publish deve estar além do tempo de ativação da publicação. </li> 
     </ul> </td> 
   </tr> 
   <tr> 

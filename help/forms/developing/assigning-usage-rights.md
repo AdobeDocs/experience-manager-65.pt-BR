@@ -8,7 +8,8 @@ topic-tags: operations
 role: Developer
 exl-id: 6af148eb-427a-4b54-9c5f-8750736882d8
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,  Document Services, Reader Extensions
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '3897'
 ht-degree: 0%
@@ -145,7 +146,7 @@ Aplique direitos de uso a um documento PDF usando a API de extensões do Acrobat
 
 [Aplicação de direitos de uso a documentos PDF](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
-[Início rápido (modo SOAP):aplicação de direitos de uso usando a API Java](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
+[Início rápido (modo SOAP):Aplicação de direitos de uso usando a API Java](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
 [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

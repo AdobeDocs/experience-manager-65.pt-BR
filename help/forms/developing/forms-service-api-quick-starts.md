@@ -8,7 +8,7 @@ topic-tags: develop
 role: Developer
 exl-id: acb33000-25b3-4471-9df9-b6e039ab2bda
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 0%
@@ -33,23 +33,23 @@ Os seguintes Quick Starts estão disponíveis para o serviço Forms:
 
 [Início rápido (modo SOAP): renderização de um formulário HTML com uma barra de ferramentas personalizada usando o Java](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
-[Início rápido (modo SOAP): lidar com PDF forms enviado como XML usando o Java](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
+[Início rápido (modo SOAP): lidar com PDF forms enviados como XML usando o Java](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
 
-[Início rápido (modo SOAP): lidar com PDF forms enviado como PDF usando o Java](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
+[Início rápido (modo SOAP): lidar com PDF forms enviados como PDF usando o Java](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
 
 [Início rápido (modo SOAP): lidando com formulários de HTML enviados como XML usando o Java](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
 
 [Início rápido (modo SOAP): Criação de documentos PDF com dados XML enviados usando o Java](forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api)
 
-[Início rápido (modo SOAP): pré-preenchimento do Forms com layouts fluíveis usando o Java](forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
+[Início rápido (modo SOAP): preenchimento prévio do Forms com layouts fluíveis usando o Java](forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
 
 [Início rápido (modo SOAP): tratamento de um formulário que contém um script de cálculo usando o Java](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-a-form-containing-a-calculation-script-using-the-java-api)
 
-[Início rápido (modo SOAP): otimizar o desempenho usando o Java](forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
+[Início rápido (modo SOAP): otimização do desempenho usando o Java](forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
 
 [Início rápido (modo SOAP): renderização por valor usando o Java](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
-[Início rápido (modo SOAP): Passar documentos para o serviço Forms usando o Java](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
+[Início rápido (modo SOAP): Passar documentos para o Forms Service usando o Java](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
 A lógica da aplicação que usa a API de serviço do Forms é implementada como servlets Java™. As operações do AEM Forms podem ser executadas usando a API altamente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
@@ -334,7 +334,7 @@ O código de exemplo a seguir renderiza um formulário chamado *Empréstimo.xdp*
  
 ```
 
-## Início rápido (modo SOAP): renderização de um guia (descontinuado) usando a API Java™ {#quick-start-soap-mode-rendering-a-guide-deprecated-using-the-java-api}
+## Início rápido (modo SOAP): renderização de um guia (obsoleto) usando a API Java™ {#quick-start-soap-mode-rendering-a-guide-deprecated-using-the-java-api}
 
 O código de exemplo a seguir renderiza um Guia (obsoleto) chamado *TLALifeClaim.xdp* para um navegador web cliente.
 
@@ -1212,7 +1212,7 @@ O código de exemplo a seguir renderiza um formulário HTML com uma barra de fer
  
 ```
 
-## Início rápido (modo SOAP): lidar com PDF forms enviado como XML usando a API Java™ {#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api}
+## Início rápido (modo SOAP): lidar com PDF forms enviados como XML usando a API Java™ {#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api}
 
 O código de exemplo a seguir lida com um formulário enviado como XML. O valor do tipo de conteúdo passado para o `processFormSubmission` o método é `CONTENT_TYPE=text/xml`. Os valores que correspondem aos campos nomeados `mortgageAmount`, `lastName`, e `firstName` são exibidos. Um método definido pelo usuário chamado `getNodeText` é usado nesta inicialização rápida. Aceita uma `org.w3c.dom.Document` instância e um valor de string que especifica o nome do nó. Esse método retorna um valor de string que representa o valor do nó. (Consulte [Manuseio de Forms enviado](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
@@ -1381,7 +1381,7 @@ O código de exemplo a seguir lida com um formulário enviado como XML. O valor 
 >
 >Ao usar uma `com.adobe.idp.Document` e um `org.w3c.dom.Document` no mesmo aplicativo, qualificar totalmente `org.w3c.dom.Document`.
 
-## Início rápido (modo SOAP): lidar com PDF forms enviado como PDF usando a API Java™ {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
+## Início rápido (modo SOAP): lidar com PDF forms enviados como PDF usando a API Java™ {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
 
 O código de exemplo a seguir lida com um formulário enviado como dados de PDF. O valor do tipo de conteúdo passado para o `processFormSubmission` o método é `CONTENT_TYPE=application/pdf`. O formulário enviado é salvo como um arquivo de PDF chamado *tempPDF.pdf*. Além disso, como o formulário é enviado como PDF, os anexos de arquivo podem ser recuperados. Todos os anexos de arquivo são salvos como arquivos JPEG. (Consulte [Manuseio de Forms enviado](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
@@ -1531,7 +1531,7 @@ O código de exemplo a seguir lida com um formulário enviado como dados de PDF.
  
 ```
 
-## Início rápido (modo SOAP): controle de formulários HTML enviados como XML usando a API Java™ {#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api}
+## Início rápido (modo SOAP): lidando com formulários HTML enviados como XML usando a API Java™ {#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api}
 
 O código de exemplo a seguir lida com um formulário HTML que é enviado como dados XML. O valor do tipo de conteúdo passado para o `processFormSubmission` o método é `CONTENT_TYPE=application/x-www-form-urlencoded`. Os valores que correspondem aos campos nomeados `mortgageAmount`, `lastName`, e `firstName` são exibidos. Um método definido pelo usuário chamado `getNodeText` é usado neste Início rápido. Aceita uma `org.w3c.dom.Document` instância e um valor de string que especifica o nome do nó. Esse método retorna um valor de string que representa o valor do nó. (Consulte [Manuseio de Forms enviado](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
@@ -2621,7 +2621,7 @@ O início rápido do Java™ a seguir renderiza um formulário PDF interativo ba
  }
 ```
 
-## Início rápido (modo SOAP): passar documentos para o serviço Forms usando a API Java™ {#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api}
+## Início rápido (modo SOAP): Passar documentos para o serviço do Forms usando a API Java™ {#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api}
 
 O seguinte Java™ Quick Start recupera o arquivo Loan.xdp do Content Services (desaprovado). Este arquivo XDP está no espaço `/Company Home/Form Designs`. O arquivo XDP é retornado em uma `com.adobe.idp.Document` instância. A variável `com.adobe.idp.Document` é passada para o serviço Forms. O formulário interativo é gravado em um navegador cliente da Web. (Consulte [Passar documentos para o serviço da Forms](/help/forms/developing/passing-documents-forms-service.md).)
 

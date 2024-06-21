@@ -8,20 +8,20 @@ topic-tags: develop
 role: Developer
 exl-id: e861d848-b0b7-4ae9-a56d-c0957ec95730
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%
 
 ---
 
-# Início rápido da API Java do serviço de utilitários do PDF (SOAP) {#pdf-utilities-service-java-apiquick-start-soap}
+# Início rápido da API Java do serviço de utilitários PDF (SOAP) {#pdf-utilities-service-java-apiquick-start-soap}
 
 Os seguintes Quick Starts estão disponíveis para o serviço PDF Utilities.
 
-[Início rápido (modo SOAP): converter um documento PDF em um documento XDP usando a API Java](pdf-utilities-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-an-xdp-document-using-the-java-api)
+[Início rápido (modo SOAP): conversão de um documento PDF em um documento XDP usando a API Java](pdf-utilities-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-an-xdp-document-using-the-java-api)
 
-[Início rápido (modo SOAP): converter um documento XDP em um documento PDF usando a API Java](pdf-utilities-service-java-api.md#quick-start-soap-mode-converting-an-xdp-document-to-a-pdf-document-using-the-java-api)
+[Início rápido (modo SOAP): conversão de um documento XDP em um documento PDF usando a API Java](pdf-utilities-service-java-api.md#quick-start-soap-mode-converting-an-xdp-document-to-a-pdf-document-using-the-java-api)
 
 [Início rápido (modo SOAP): recuperação de propriedades do documento PDF usando a API Java](pdf-utilities-service-java-api.md#quick-start-soap-mode-retrieving-pdf-document-properties-using-the-java-api)
 
@@ -35,7 +35,7 @@ As operações do AEM Forms podem ser executadas usando a API altamente tipada d
 >
 >Os Quick Starts na programação com formulários AEM são baseados no sistema operacional do Forms Server. No entanto, se você estiver usando outro sistema operacional, como o UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicações J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Início rápido (modo SOAP): converter um documento PDF em um documento XDP usando a API Java {#quick-start-soap-mode-converting-a-pdf-document-to-an-xdp-document-using-the-java-api}
+## Início rápido (modo SOAP): conversão de um documento PDF em um documento XDP usando a API Java {#quick-start-soap-mode-converting-a-pdf-document-to-an-xdp-document-using-the-java-api}
 
 O código de exemplo a seguir converte um documento PDF em um documento XDP. (Consulte [Conversão de documentos PDF em documentos XDP](/help/forms/developing/pdf-utilities.md#converting-pdf-documents-into-xdp-documents).
 
@@ -136,7 +136,7 @@ O código de exemplo a seguir converte um documento PDF em um documento XDP. (Co
  
 ```
 
-## Início rápido (modo SOAP): converter um documento XDP em um documento PDF usando a API Java {#quick-start-soap-mode-converting-an-xdp-document-to-a-pdf-document-using-the-java-api}
+## Início rápido (modo SOAP): conversão de um documento XDP em um documento PDF usando a API Java {#quick-start-soap-mode-converting-an-xdp-document-to-a-pdf-document-using-the-java-api}
 
 O código de exemplo a seguir converte um documento XDP em um documento PDF. (Consulte [Conversão de documentos XDP em documentos PDF](/help/forms/developing/pdf-utilities.md#converting-xdp-documents-into-pdf-documents).)
 

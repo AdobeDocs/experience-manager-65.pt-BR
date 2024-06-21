@@ -8,22 +8,22 @@ topic-tags: develop
 role: Developer
 exl-id: 7f622371-0f0f-4789-b2e7-e4b536a21c4d
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 0%
 
 ---
 
-# Início rápido da API Java do Gerenciador de usuários (SOAP) {#user-manager-java-api-quick-start-soap}
+# Início rápido da API Java (SOAP) do Gerenciador de usuários {#user-manager-java-api-quick-start-soap}
 
 O Java API Quick Start (SOAP) está disponível para a API do User Manager.
 
-[Início rápido (modo SOAP): adição de usuários usando a API Java](user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
+[Início rápido (modo SOAP): Adição de usuários usando a API Java](user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
 
 [Início rápido (modo SOAP): exclusão de usuários usando a API Java](user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
 
-[Início rápido (modo SOAP): criação de grupos usando a API Java](user-manager-java-api-quick.md#quick-start-soap-mode-creating-groups-using-the-java-api)
+[Início rápido (modo SOAP): Criação de grupos usando a API Java](user-manager-java-api-quick.md#quick-start-soap-mode-creating-groups-using-the-java-api)
 
 [Início rápido (modo SOAP): gerenciamento de usuários e grupos usando a API Java](user-manager-java-api-quick.md#quick-start-soap-mode-managing-users-and-groups-using-the-java-api)
 
@@ -39,7 +39,7 @@ As operações do AEM Forms podem ser executadas usando a API altamente tipada d
 >
 >Início rápido na programação com formulários AEM são baseados no documento se você estiver usando outro sistema operacional, como Unix, substituir caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicações J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Início rápido (modo SOAP): adição de usuários usando a API Java {#quick-start-soap-mode-adding-users-using-the-java-api}
+## Início rápido (modo SOAP): Adição de usuários usando a API Java {#quick-start-soap-mode-adding-users-using-the-java-api}
 
 O código de exemplo a seguir adiciona um usuário chamado Wendy Blue ao AEM Forms. (Consulte [Adição de usuários](/help/forms/developing/users.md#adding-users).)
 
@@ -629,7 +629,7 @@ O exemplo de código Java a seguir sincroniza usuários usando as APIs de gerenc
  
 ```
 
-## Início rápido (modo SOAP): adição de usuários usando a API Java {#quick_start_soap_mode_adding_users_using_the_java_api-1}
+## Início rápido (modo SOAP): Adição de usuários usando a API Java {#quick_start_soap_mode_adding_users_using_the_java_api-1}
 
 O código de exemplo a seguir adiciona um usuário chamado Wendy Blue ao AEM Forms. (Consulte [Adição de usuários](/help/forms/developing/users.md#adding-users).)
 
@@ -747,7 +747,7 @@ O código de exemplo a seguir adiciona um usuário chamado Wendy Blue ao AEM For
  
 ```
 
-## Início rápido (modo SOAP): criação de grupos usando a API Java {#quick-start-soap-mode-creating-groups-using-the-java-api}
+## Início rápido (modo SOAP): Criação de grupos usando a API Java {#quick-start-soap-mode-creating-groups-using-the-java-api}
 
 O código de exemplo a seguir cria um grupo chamado AdobeGroup para o AEM Forms. (Consulte [Criação de grupos](/help/forms/developing/users.md#creating-groups).)
 
@@ -899,7 +899,7 @@ O código de exemplo a seguir cria um grupo chamado AdobeGroup para o AEM Forms.
  }
 ```
 
-## Início Rápido (modo SOAP) Gerenciamento de Nós de Preferências {#quick-start-soap-mode-managing-preferences-nodes}
+## Início rápido (modo SOAP) Gerenciamento de nós de preferências {#quick-start-soap-mode-managing-preferences-nodes}
 
 Os seguintes modelos de código Java gerenciam os nós de preferências usando as APIs de gerenciamento de usuários. ( Consulte [Gerenciando programaticamente os nós de preferências](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
 

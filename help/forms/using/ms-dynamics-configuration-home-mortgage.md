@@ -5,8 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: develop, Configuration
 exl-id: 2ac37dc5-d88d-4f98-8576-cd2ca6f0ea3a
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
@@ -50,7 +51,7 @@ Antes de começar a instalar e configurar o Dynamics 365, verifique se você tem
    ![seletassetpath](assets/selectassetpath.png)
 
 1. Selecionar **Concluído**.
-1. Publique a página editada.
+1. Publish a página editada.
 
    >[!NOTE]
    >

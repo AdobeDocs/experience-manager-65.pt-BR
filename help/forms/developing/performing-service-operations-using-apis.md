@@ -8,7 +8,8 @@ topic-tags: operations
 role: Developer
 exl-id: 62489194-82ca-44f6-b5be-4411c95f6f80
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms
+source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
@@ -21,6 +22,6 @@ ht-degree: 0%
 
 Antes de começar a desenvolver aplicativos clientes usando as APIs do AEM Forms, a Adobe recomenda que você leia primeiro Invocando o AEM Forms, que descreve as diferentes maneiras de chamar serviços. (Consulte [Contêiner de serviço](/help/forms/developing/service-container.md#service-container).)
 
-Depois de se familiarizar com os diferentes métodos de chamada, você pode aprender a interagir programaticamente com cada serviço. Você pode desenvolver um aplicativo cliente no Adobe Flex®™, em um ambiente de desenvolvimento Java™ ou em um ambiente como o Microsoft® Visual Studio .NET que permita usar o WSDL exposto para consumo em uma pilha SOAP nativa.
+Depois de se familiarizar com os diferentes métodos de chamada, você pode aprender a interagir programaticamente com cada serviço. Você pode desenvolver um aplicativo cliente no Adobe Flex®™, em um ambiente de desenvolvimento Java™ ou em um ambiente como o Microsoft SOAP® Visual Studio .NET que permita usar o WSDL exposto para consumo em uma pilha do nativa.
 
 Cada tópico inclui informações de introdução (incluindo uma seção de resumo da etapa ), apresentações de código e exemplos de código. O resumo das etapas explica as subtarefas necessárias e cada subtarefa é vinculada a uma seção nas apresentações de código. Todos os tópicos têm links para Inícios rápidos, que são exemplos completos de código projetados para ajudar você a começar rapidamente copiando e colando o código no seu projeto.

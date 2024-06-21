@@ -8,7 +8,7 @@ topic-tags: develop
 role: Developer
 exl-id: bee0eebb-c21d-472c-bbdf-28d8c3a5ed4a
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1248'
 ht-degree: 3%
@@ -760,7 +760,7 @@ Um documento PDF não seguro baseado em um arquivo PDF chamado *Loan.pdf* é pas
 
 O exemplo de código Java a seguir chama um processo chamado `MyApplication/EncryptDocument` uso de dados por HTTP. (Consulte [Chamar o AEM Forms usando dados BLOB por HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http).)
 
-Um documento PDF não seguro baseado em um arquivo PDF chamado *Loan.pdf* é transmitido para o processo do AEM Forms usando SOAP sobre HTTP. O arquivo PDF está localizado no seguinte URL: `https://'[server]:[port]'/FormsQS`. O processo retorna um documento PDF criptografado por senha que é salvo como um arquivo PDF chamado *EncryptedDocument.pdf*.
+Um documento PDF não seguro baseado em um arquivo PDF chamado *Loan.pdf* é transmitido para o processo do AEM Forms usando SOAP por HTTP. O arquivo PDF está localizado no seguinte URL: `https://'[server]:[port]'/FormsQS`. O processo retorna um documento PDF criptografado por senha que é salvo como um arquivo PDF chamado *EncryptedDocument.pdf*.
 
 ```java
  /**

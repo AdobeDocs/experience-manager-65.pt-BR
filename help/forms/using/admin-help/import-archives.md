@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archiv
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1438'
 ht-degree: 0%
@@ -42,7 +43,7 @@ Use a guia arquivos para importar e gerenciar LCAs criadas no workbench.
    * Para adicionar um endpoint de Pasta monitorada, clique em Adicionar WatchedFolder. Para obter detalhes sobre as configurações da Pasta monitorada, consulte [Configurações de ponto de extremidade da pasta monitoradas](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
    * Para adicionar um terminal de email, clique em Adicionar email. Para obter detalhes sobre as configurações de email, consulte [Configurações de ponto de extremidade de email](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * Para adicionar um ponto final EJB, clique em Adicionar EJB e especifique um nome e uma descrição para o ponto final.
-   * Para adicionar um ponto de extremidade SOAP, clique em Adicionar SOAP e especifique um nome e uma descrição para o ponto de extremidade.
+   * Para adicionar um endpoint de SOAP, clique em Adicionar SOAP e especifique um nome e uma descrição para o endpoint.
    * Para adicionar um ponto de extremidade Remoting, clique em Adicionar Remoting. Para obter detalhes sobre as configurações de comunicação remota, consulte [Configurações de ponto de extremidade de comunicação remota](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * Para adicionar um endpoint REST, clique em Add REST e especifique um nome e uma descrição para o endpoint. Observe o URL de invocação REST exibido na página Adicionar Ponto de Extremidade REST.
    * Para remover um endpoint, marque a caixa de seleção ao lado dele e clique em Remover.
@@ -109,7 +110,7 @@ Use a guia arquivos para importar e gerenciar LCAs criadas no workbench.
    * Para adicionar um endpoint de Pasta monitorada, clique em Adicionar WatchedFolder. Para obter detalhes sobre as configurações da Pasta monitorada, consulte [Configurações de ponto de extremidade da pasta monitoradas](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
    * Para adicionar um terminal de email, clique em Adicionar email. Para obter detalhes sobre as configurações de email, consulte [Configurações de ponto de extremidade de email](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * Para adicionar um ponto final EJB, clique em Adicionar EJB e especifique um nome e uma descrição para o ponto final.
-   * Para adicionar um ponto de extremidade SOAP, clique em Adicionar SOAP e especifique um nome e uma descrição para o ponto de extremidade.
+   * Para adicionar um endpoint de SOAP, clique em Adicionar SOAP e especifique um nome e uma descrição para o endpoint.
    * Para adicionar um ponto de extremidade Remoting, clique em Adicionar Remoting. Para obter detalhes sobre as configurações de comunicação remota, consulte [Configurações de ponto de extremidade de comunicação remota](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * Para adicionar um endpoint REST, clique em Add REST e especifique um nome e uma descrição para o endpoint. Observe o URL de invocação REST exibido na página Adicionar Ponto de Extremidade REST.
    * Para remover um endpoint, marque a caixa de seleção ao lado dele e clique em Remover.

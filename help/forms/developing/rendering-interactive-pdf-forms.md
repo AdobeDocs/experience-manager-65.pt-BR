@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: d9f32939-c2c0-4531-b15e-f63941c289e3
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2455'
 ht-degree: 0%
@@ -159,7 +159,7 @@ Se você tiver um formulário que contenha um botão Enviar e um botão Calcular
 
 **Anexar arquivos ao formulário**
 
-Você pode anexar arquivos a um formulário. Quando você renderiza um formulário PDF com anexos de arquivo, os usuários podem recuperar os anexos de arquivo no Acrobat usando o painel de anexos de arquivo. Você pode anexar diferentes tipos de arquivo a um formulário, como um arquivo de texto, ou a um arquivo binário, como um arquivo JPG.
+Você pode anexar arquivos a um formulário. Quando você renderiza um formulário PDF com anexos de arquivo, os usuários podem recuperar os anexos de arquivo no Acrobat usando o painel de anexos de arquivo. Você pode anexar diferentes tipos de arquivo a um formulário, como um arquivo de texto, ou a um arquivo binário, como um arquivo JPG/.
 
 >[!NOTE]
 >

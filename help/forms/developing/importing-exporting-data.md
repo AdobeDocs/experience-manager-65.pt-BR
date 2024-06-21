@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2754'
 ht-degree: 0%
@@ -24,12 +24,12 @@ ht-degree: 0%
 O serviço de Integração de dados de formulário pode importar dados para um formulário PDF e exportar dados de um formulário PDF. As operações de importação e exportação suportam dois tipos de PDF forms:
 
 * Um formulário do Acrobat (criado no Acrobat) é um documento PDF que contém campos de formulário.
-* Um formulário XML Adobe (criado no Designer) é um documento PDF que está em conformidade com a XML Adobe XML XML Forms Architecture (XFA).
+* Um formulário XML de Adobe (criado no Designer) é um documento PDF que está em conformidade com a XML Adobe XML XML Forms Architecture (XFA).
 
 Dependendo do tipo de formulário PDF, os dados de formulário podem existir em um dos seguintes formatos:
 
 * Um arquivo XFDF, que é uma versão XML do formato de dados de formulário do Acrobat.
-* Um arquivo XDP, que é um arquivo XML que contém definições de campo de formulário. Ele também pode conter dados de campo de formulário e um arquivo PDF incorporado. Um arquivo XDP gerado pelo Designer só pode ser usado se ele transportar um documento PDF incorporado codificado em base 64.
+* Um arquivo XDP, que é um arquivo XML que contém definições de campo de formulário. Ele também pode conter dados de campo de formulário e um arquivo PDF incorporado. Um arquivo XDP gerado pelo Designer só pode ser usado se ele transportar um documento PDF codificado em base 64 incorporado.
 
 Você pode realizar essas tarefas usando o serviço de Integração de dados de formulário:
 
@@ -44,7 +44,7 @@ Você pode realizar essas tarefas usando o serviço de Integração de dados de 
 
 Você pode importar dados de formulário para PDF forms interativos usando o serviço de Integração de dados de formulário. Um formulário PDF interativo é um documento PDF que contém um ou mais campos para coletar informações de um usuário ou exibir informações personalizadas. O serviço de Integração de dados de formulário não oferece suporte a cálculos, validação ou scripts de formulário.
 
-Para importar dados para um formulário criado no Designer, você deve fazer referência a uma fonte de dados XDP XML válida. Considere o exemplo de formulário de solicitação de hipoteca a seguir.
+Para importar dados para um formulário criado no Designer, você deve fazer referência a uma fonte de dados XML XDP válida. Considere o exemplo de formulário de solicitação de hipoteca a seguir.
 
 ![ie_ie_loanformdata](assets/ie_ie_loanformdata.png)
 
@@ -290,7 +290,7 @@ Antes de importar dados programaticamente para uma API formClient de PDF, você 
 
 **Referência a um formulário de PDF**
 
-Para exportar dados de um formulário PDF, você deve referenciar o formulário PDF que foi criado no Designer ou no Acrobat e que contém dados de formulário. Se tentar exportar dados de um formulário PDF vazio, você obterá um esquema XML vazio.
+Para exportar dados de um formulário PDF, você deve referenciar o formulário PDF que foi criado no Designer ou Acrobat e que contém dados de formulário. Se tentar exportar dados de um formulário PDF vazio, você obterá um esquema XML vazio.
 
 **Exportar dados do formulário PDF**
 

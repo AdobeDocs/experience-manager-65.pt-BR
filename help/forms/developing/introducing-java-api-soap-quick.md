@@ -1,6 +1,6 @@
 ---
 title: Introdução ao Java&trade; API QuickStart
-description: Saiba como as operações do AEM Forms podem ser executadas usando a API altamente tipada do AEM Forms Java&trade; habilitada com a conexão SOAP.
+description: Saiba como as operações do AEM Forms podem ser executadas usando o AEM Forms Java&trade; API altamente tipada habilitada com conexão SOAP.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,7 +8,8 @@ topic-tags: develop, development-tools
 role: Developer
 exl-id: 1d4062ef-fb24-4527-b899-896ce757beda
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms
+source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 0%
@@ -68,17 +69,17 @@ Início mais rápido em *Programação com o AEM Forms no JEE* chame um serviço
 
 [Início rápido (modo SOAP): Passar um documento no Repositório do AEM Forms para o serviço de saída usando a API Java™](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) (chama o serviço de Repositório e Saída)
 
-[Início rápido (modo SOAP): criação de um documento PDF com base em fragmentos usando a API Java™](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api) (invoca o serviço Assembler e Output)
+[Início rápido (modo SOAP): Criação de um documento PDF com base em fragmentos usando a API Java™](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api) (invoca o serviço Assembler e Output)
 
 [Início rápido (modo SOAP): Criação de documentos PDF com dados XML enviados usando a API Java™](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api) (invoca o serviço Forms, Output, e Document Management )
 
-[Início rápido (modo SOAP): passar documentos para o serviço Forms usando a API Java™](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api) (invoca o serviço Forms e Gerenciamento de documentos)
+[Início rápido (modo SOAP): Passar documentos para o serviço do Forms usando a API Java™](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api) (invoca o serviço Forms e Gerenciamento de documentos)
 
-[Início rápido (modo SOAP): assinatura digital de um formulário baseado em XFA usando a API Java™](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api) (invoca o serviço Forms e Signature)
+[Início rápido (modo SOAP): assinando digitalmente um formulário baseado em XFA usando a API Java™](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api) (invoca o serviço Forms e Signature)
 
 [Início rápido (modo SOAP): gerenciamento de funções e permissões usando a API Java™](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api) (invoca o DiretoryManager e o serviço AuthorizationManager )
 
-[Início rápido (modo SOAP): passar documentos para o serviço de saída usando a API Java™](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api) (chame o serviço Output and Document Management)
+[Início rápido (modo SOAP): Passar documentos para o serviço de saída usando a API Java™](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api) (chame o serviço Output and Document Management)
 
 >[!NOTE]
 >

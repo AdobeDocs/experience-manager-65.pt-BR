@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1518'
 ht-degree: 0%
@@ -86,7 +87,7 @@ Antes de reiniciar o Forms Server após uma recuperação, faça o seguinte:
    1. Clique em **Início** para sincronizar ativos do repositório.
 
 1. Em um ambiente em cluster, o nó primário (em relação ao AEM) deve estar ativo antes dos nós secundários.
-1. Certifique-se de que nenhum processo seja iniciado a partir de fontes internas ou externas, como iniciadores de processos da Web, SOAP ou EJB, até que a operação normal do sistema seja validada.
+1. Certifique-se de que nenhum processo seja iniciado a partir de fontes internas ou externas, como os iniciadores de processos da Web, SOAP ou EJB, até que a operação normal do sistema seja validada.
 
 Se o banco de dados principal do AEM Forms for movido ou alterado, consulte os Guias de instalação relevantes ao servidor de aplicativos para obter informações sobre como atualizar as informações de conexão do banco de dados para as fontes de dados do AEM IDP_DS e EDC_DS.
 

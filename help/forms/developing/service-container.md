@@ -8,7 +8,8 @@ topic-tags: coding, development-tools
 role: Developer
 exl-id: 6abf2401-5a87-4f72-9028-74580df5b9de
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms
+source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 **Os exemplos e amostras neste documento são somente para AEM Forms no ambiente JEE.**
 
-Os serviços AEM Forms no container de serviço (incluindo serviços padrão, como o serviço de criptografia, processos de longa e curta duração) podem ser chamados usando vários provedores, como um provedor EJB. Um provedor EJB permite que os serviços AEM Forms sejam chamados por RMI/IIOP. Um provedor de serviços Web expõe serviços como serviços Web (Geração WSDL) usando padrões como SOAP/HTTP e SOAP/JMS.
+Os serviços AEM Forms no container de serviço (incluindo serviços padrão, como o serviço de criptografia, processos de longa e curta duração) podem ser chamados usando vários provedores, como um provedor EJB. Um provedor EJB permite que os serviços AEM Forms sejam chamados por RMI/IIOP. Um provedor de serviços Web expõe os serviços como serviços Web (Geração WSDL) usando padrões como SOAP/HTTP e SOAP/JMS.
 
 A tabela a seguir descreve as diferentes maneiras de chamar programaticamente os serviços da AEM Forms.
 
@@ -41,7 +42,7 @@ A tabela a seguir descreve as diferentes maneiras de chamar programaticamente os
   </tr>
   <tr>
    <td><p>Serviços da Web</p></td>
-   <td><p>O AEM Forms oferece suporte a padrões de serviço da Web, como SOAP/HTTP. Um serviço pode ser exposto como um serviço Web, com o WSDL em conformidade com os padrões de serviço Web definidos pelo W3C.</p><p>Um serviço pode ser chamado de qualquer pilha de serviços da Web, incluindo o .NET Framework e o Sun™ Web Services SDK. (Consulte <a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services">Chamar o AEM Forms usando serviços da Web</a>.)</p></td>
+   <td><p>O AEM Forms é compatível com padrões de serviço da Web, como SOAP/HTTP. Um serviço pode ser exposto como um serviço Web, com o WSDL em conformidade com os padrões de serviço Web definidos pelo W3C.</p><p>Um serviço pode ser chamado de qualquer pilha de serviços da Web, incluindo o .NET Framework e o Sun™ Web Services SDK. (Consulte <a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services">Chamar o AEM Forms usando serviços da Web</a>.)</p></td>
   </tr>
   <tr>
    <td><p>solicitações REST</p></td>

@@ -7,8 +7,9 @@ topic-tags: integrations
 docset: aem65
 exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1558'
 ht-degree: 0%
@@ -61,7 +62,7 @@ Se você estiver configurando um target pela primeira vez, clique em **Configure
 1. Clique em **Configuração do AEM Forms Target**.
 1. Selecione um **Estrutura do Target**.
 1. No **URLs do Target** especifique todos os URLs nos quais os testes A/B são executados. Por exemplo, https://&lt;*hostname*>:&lt;*porta*>/ para AEM Forms Server no OSGi ou https://&lt;*hostname*>:&lt;*porta*>/lc/ para AEM Forms Server no JEE.
-Considere que você deseja configurar um URL de destino para uma instância de publicação e que seus clientes podem acessá-lo usando o nome do host ou o endereço IP. Nesse caso, você deve configurar ambos como URLs do Target, usando o nome do host e o endereço IP. Se você configurar apenas um dos URLs, seu teste A/B não será executado para clientes provenientes do outro URL. Clique em **+** para especificar vários URLs.
+Considere que você deseja configurar um URL do Target para uma instância do Publish e que seus clientes podem acessá-lo usando o nome do host ou o endereço IP. Nesse caso, você deve configurar ambos como URLs do Target, usando o nome do host e o endereço IP. Se você configurar apenas um dos URLs, seu teste A/B não será executado para clientes provenientes do outro URL. Clique em **+** para especificar vários URLs.
 
 1. Clique em **Salvar**.
 

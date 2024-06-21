@@ -1,6 +1,6 @@
 ---
 title: Gerenciando Endpoints Programaticamente
-description: Use o serviço de Registro de Ponto de Extremidade para adicionar pontos de extremidade EJB, adicionar ponto de extremidade SOAP, adicionar pontos de extremidade de Pasta monitorada, adicionar pontos de extremidade de Email, adicionar pontos de extremidade de Comunicação Remota, adicionar pontos de extremidade do Gerenciador de Tarefas, modificar pontos de extremidade, remover pontos de extremidade e recuperar informações do conector do ponto de extremidade.
+description: Use o serviço Endpoint Registry para adicionar endpoints EJB, adicionar endpoint SOAP, adicionar endpoints de Pasta monitorada, adicionar endpoints de email, adicionar endpoints de comunicação remota, adicionar endpoints do Gerenciador de tarefas, modificar endpoints, remover endpoints e recuperar informações do conector de endpoint.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '10800'
 ht-degree: 1%
@@ -32,7 +32,7 @@ O serviço Registro de Ponto de Extremidade fornece a capacidade de gerenciar po
 
 >[!NOTE]
 >
->SOAP, EJB e (obsoleto para formulários AEM no JEE) Os endpoints de comunicação remota são criados automaticamente para cada serviço ativado. Os endpoints SOAP e EJB ativam SOAP e EJB para todas as operações de serviço.
+>SOAP, EJB e (obsoleto para formulários AEM no JEE) endpoints de comunicação remota são criados automaticamente para cada serviço ativado. Os endpoints de SOAP e EJB ativam SOAP e EJB para todas as operações de serviço.
 
 Um endpoint de Comunicação Remota permite que os clientes Flex chamem operações no serviço AEM Forms ao qual o endpoint é adicionado. Um destino do Flex com o mesmo nome do ponto de extremidade é criado, e os clientes do Flex podem criar RemoteObjects que apontem para esse destino para chamar operações no serviço relevante.
 
@@ -43,7 +43,7 @@ Você pode organizar os pontos de extremidade do TaskManager em grupos chamados 
 Você pode realizar essas tarefas usando o serviço Registro de Ponto de Extremidade:
 
 * Adicionar pontos finais EJB. (Consulte [Adicionando pontos finais EJB](programmatically-endpoints.md#adding-ejb-endpoints).)
-* Adicionar pontos de extremidade SOAP. (Consulte [Adicionando pontos de extremidade SOAP](programmatically-endpoints.md#adding-soap-endpoints).)
+* Adicionar pontos de extremidade SOAP. (Consulte [Adicionar pontos de extremidade SOAP](programmatically-endpoints.md#adding-soap-endpoints).)
 * Adicionar endpoints de pasta monitorados (consulte [Adicionar pontos de extremidade da pasta monitorada](programmatically-endpoints.md#adding-watched-folder-endpoints).)
 * Adicionar pontos de extremidade de email. (Consulte [Adicionar pontos de extremidade de email](programmatically-endpoints.md#adding-email-endpoints).)
 * Adicionar pontos de extremidade de Comunicação Remota. (Consulte [Adicionando Pontos de Extremidade de Comunicação Remota](programmatically-endpoints.md#adding-remoting-endpoints).)
@@ -155,26 +155,26 @@ Adicionar um ponto final EJB usando a API Java:
 
 [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Adicionando pontos de extremidade SOAP {#adding-soap-endpoints}
+## Adicionar pontos de extremidade SOAP {#adding-soap-endpoints}
 
-Você pode adicionar programaticamente um endpoint SOAP a um serviço usando a API Java do AEM Forms. Adicionando um ponto de extremidade SOAP, você habilita um aplicativo cliente a chamar o serviço usando o modo SOAP. Ou seja, ao definir as propriedades de conexão necessárias para chamar o AEM Forms, você pode selecionar o modo SOAP.
-
->[!NOTE]
->
->Não é possível adicionar um ponto de extremidade SOAP usando serviços da Web.
+Você pode adicionar programaticamente um endpoint SOAP a um serviço usando a API Java do AEM Forms. Ao adicionar um ponto de extremidade SOAP, você habilita um aplicativo cliente a chamar o serviço usando o modo SOAP. Ou seja, ao definir as propriedades de conexão necessárias para chamar o AEM Forms, é possível selecionar o modo SOAP.
 
 >[!NOTE]
 >
->Normalmente, um ponto de extremidade SOAP é adicionado a um serviço por padrão. No entanto, um ponto de extremidade SOAP pode ser adicionado a um processo que é implantado programaticamente ou quando um ponto de extremidade SOAP foi removido e precisa ser adicionado novamente.
+>Não é possível adicionar um terminal SOAP usando serviços da Web.
+
+>[!NOTE]
+>
+>Normalmente, um endpoint SOAP é adicionado a um serviço por padrão. No entanto, um endpoint SOAP pode ser adicionado a um processo que é implantado de forma programática ou quando um endpoint SOAP é removido e deve ser adicionado novamente.
 
 ### Resumo das etapas {#summary_of_steps-1}
 
-Para adicionar um ponto de extremidade SOAP a um serviço, execute as seguintes tarefas:
+Para adicionar um terminal SOAP a um serviço, execute as seguintes tarefas:
 
 1. Incluir arquivos de projeto.
 1. Criar um `EndpointRegistryClient` objeto.
-1. Definir atributos de ponto de extremidade SOAP.
-1. Crie um ponto de extremidade SOAP.
+1. Defina atributos de ponto de extremidade SOAP.
+1. Criar um terminal SOAP.
 1. Ative o endpoint.
 
 **Incluir arquivos de projeto**
@@ -188,25 +188,25 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do projeto:
 * adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
 * jbossall-client.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
 
-Esses arquivos JAR são necessários para criar um endpoint SOAP. No entanto, você precisará adicionar arquivos JAR se usar o endpoint SOAP para chamar o serviço. Para obter informações sobre arquivos JAR do AEM Forms, consulte [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Esses arquivos JAR são necessários para criar um terminal SOAP. No entanto, você precisará adicionar arquivos JAR se usar o terminal SOAP para chamar o serviço. Para obter informações sobre arquivos JAR do AEM Forms, consulte [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Criar um objeto Cliente EndpointRegistry**
 
-Para adicionar programaticamente um ponto de extremidade SOAP a um serviço, você deve criar um `EndpointRegistryClient` objeto.
+Para adicionar programaticamente um terminal SOAP a um serviço, você deve criar um `EndpointRegistryClient` objeto.
 
 **Definir atributos de ponto de extremidade SOAP**
 
-Para adicionar um ponto de extremidade SOAP a um serviço, especifique os seguintes valores:
+Para adicionar um terminal SOAP a um serviço, especifique os seguintes valores:
 
-* **Valor do identificador do conector**: especifica o tipo de ponto de extremidade a ser criado. Para criar um ponto de extremidade SOAP, especifique `SOAP`.
+* **Valor do identificador do conector**: especifica o tipo de ponto de extremidade a ser criado. Para criar um terminal SOAP, especifique `SOAP`.
 * **Descrição**: especifica a descrição do ponto de extremidade.
 * **Nome**: especifica o nome do ponto de extremidade.
 * **Valor do identificador de serviço**: especifica o serviço ao qual o ponto de extremidade pertence.
-* **Nome da operação**: especifica o nome da operação que é invocada usando o ponto de extremidade. Ao criar um ponto de extremidade SOAP, especifique um caractere curinga ( `*`). No entanto, se você quiser especificar uma operação específica em vez de chamar todas as operações de serviço, especifique o nome da operação em vez de usar o caractere curinga ( `*`).
+* **Nome da operação**: especifica o nome da operação que é invocada usando o ponto de extremidade. Ao criar um terminal SOAP, especifique um caractere curinga ( `*`). No entanto, se você quiser especificar uma operação específica em vez de chamar todas as operações de serviço, especifique o nome da operação em vez de usar o caractere curinga ( `*`).
 
-**Criar um ponto de extremidade SOAP**
+**Criar um terminal SOAP**
 
-Após definir os atributos do ponto de extremidade SOAP, você pode criar um ponto de extremidade SOAP.
+Depois de definir os atributos do endpoint de SOAP, é possível criar um endpoint de SOAP.
 
 **Habilitar o endpoint**
 
@@ -214,15 +214,15 @@ Depois de criar um endpoint, você deve habilitá-lo. Quando o endpoint está ha
 
 **Consulte também**
 
-[Adicionar um endpoint SOAP usando a API Java](programmatically-endpoints.md#add-a-soap-endpoint-using-the-java-api)
+[Adicionar um terminal SOAP usando a API Java](programmatically-endpoints.md#add-a-soap-endpoint-using-the-java-api)
 
 [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Adicionar um endpoint SOAP usando a API Java {#add-a-soap-endpoint-using-the-java-api}
+### Adicionar um terminal SOAP usando a API Java {#add-a-soap-endpoint-using-the-java-api}
 
-Adicionar um ponto de extremidade SOAP a um serviço usando a API Java:
+Adicionar um terminal SOAP a um serviço usando a API Java:
 
 1. Incluir arquivos de projeto.
 
@@ -233,7 +233,7 @@ Adicionar um ponto de extremidade SOAP a um serviço usando a API Java:
    * Criar um `ServiceClientFactory` objeto que contém propriedades de conexão.
    * Criar um `EndpointRegistryClient` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
 
-1. Definir atributos de ponto de extremidade SOAP.
+1. Defina atributos de ponto de extremidade SOAP.
 
    * Criar um `CreateEndpointInfo` usando seu construtor.
    * Especifique o valor do identificador do conector chamando o `CreateEndpointInfo` do objeto `setConnectorId` e transmitindo o valor da string `SOAP`.
@@ -242,7 +242,7 @@ Adicionar um ponto de extremidade SOAP a um serviço usando a API Java:
    * Especifique o serviço ao qual o ponto de extremidade pertence, chamando o `CreateEndpointInfo` do objeto `setServiceId` e transmitindo um valor de string que especifica o nome do serviço.
    * Especifique a operação que é invocada chamando o `CreateEndpointInfo` do objeto `setOperationName` e transmitindo um valor de string que especifica o nome da operação. Para pontos de extremidade SOAP e EJB, especifique um caractere curinga ( `*`), o que implica todas as operações.
 
-1. Crie um ponto de extremidade SOAP.
+1. Criar um terminal SOAP.
 
    Crie o endpoint chamando o `EndpointRegistryClient` do objeto `createEndpoint` e transmitindo o `CreateEndpointInfo` objeto. Este método retorna um valor de `Endpoint` objeto que representa o novo ponto de extremidade SOAP.
 
@@ -1083,7 +1083,7 @@ Modifique um endpoint usando a API Java:
 
 ## Removendo Pontos de Extremidade {#removing-endpoints}
 
-Você pode remover programaticamente um endpoint de um serviço usando a API Java do AEM Forms. Depois que você remove um ponto de extremidade, o serviço não pode ser chamado usando o método de invocação que o ponto de extremidade habilitou. Por exemplo, se você remover um ponto de extremidade SOAP de um serviço, não poderá chamar o serviço usando o modo SOAP.
+Você pode remover programaticamente um endpoint de um serviço usando a API Java do AEM Forms. Depois que você remove um ponto de extremidade, o serviço não pode ser chamado usando o método de invocação que o ponto de extremidade habilitou. Por exemplo, se você remover um terminal SOAP de um serviço, não poderá chamar o serviço usando o modo SOAP.
 
 Para demonstrar como remover um endpoint de um serviço, esta seção remove um endpoint EJB de um serviço chamado *EncryptDocument*.
 

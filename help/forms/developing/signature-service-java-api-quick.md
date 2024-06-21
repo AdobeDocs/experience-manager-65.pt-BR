@@ -8,22 +8,22 @@ topic-tags: develop
 role: Developer
 exl-id: 34069505-a6cf-4540-932b-604f81823178
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '868'
 ht-degree: 0%
 
 ---
 
-# Início Rápido da API Java (SOAP) do Serviço de Assinatura {#signature-service-java-api-quickstart-soap}
+# Início rápido da API Java (SOAP) do serviço de assinatura {#signature-service-java-api-quickstart-soap}
 
-O seguinte Java API Quick Start (SOAP) está disponível para o serviço de assinatura do AEM Forms JEE:
+O seguinte Java API Quick Start (SOAP) está disponível para o serviço de assinatura AEM Forms JEE:
 
 [Início rápido (modo SOAP): adição de um campo de assinatura a um documento PDF usando a API Java](signature-service-java-api-quick.md#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api)
 
 [Início rápido (modo SOAP): recuperação de nomes de campos de assinatura usando a API Java](signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
 
-[Início rápido (modo SOAP): modificação de um campo de assinatura usando a API Java](signature-service-java-api-quick.md#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api)
+[Início rápido (modo SOAP): modificação de um campo de assinatura usando a API do Java](signature-service-java-api-quick.md#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api)
 
 [Início rápido (modo SOAP): assinatura digital de um documento PDF usando a API Java](signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api)
 
@@ -267,7 +267,7 @@ O exemplo de código Java a seguir recupera os nomes dos campos de assinatura em
  }
 ```
 
-## Início rápido (modo SOAP): modificação de um campo de assinatura usando a API Java {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
+## Início rápido (modo SOAP): modificação de um campo de assinatura usando a API do Java {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
 
 O exemplo de código Java a seguir modifica um campo de assinatura chamado SignatureField1, bloqueando todos os campos no formulário quando uma assinatura é aplicada ao campo de assinatura e garantindo que nenhuma alteração seja permitida. Depois que o serviço de Assinatura retorna o documento PDF que contém o campo de assinatura modificado, o documento PDF é salvo como um arquivo PDF chamado LoanSig.pdf. (Este exemplo substitui o arquivo PDF que é passado para o serviço de Assinatura.) (Consulte [Modificação de campos de assinatura](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields).)
 

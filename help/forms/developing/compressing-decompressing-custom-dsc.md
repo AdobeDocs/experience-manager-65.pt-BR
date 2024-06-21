@@ -3,8 +3,9 @@ title: Compactar e descompactar arquivos usando um AEM Forms no JEE Custom DSC
 description: Saiba como compactar e descompactar arquivos usando um AEM Forms no DSC personalizado JEE
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%

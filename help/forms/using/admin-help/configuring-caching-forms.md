@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 6b57d00e-5ba0-41ee-8497-49ecfec5b9ed
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '1611'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 # Configuração de armazenamento em cache para o Forms{#configuring-caching-for-forms}
 
-O serviço Forms pega designs de formulário que foram criados no Designer e os renderiza em vários formatos.
+O serviço do Forms usa designs criados no Designer e os renderiza em vários formatos.
 
 A página Forms no console de administração contém configurações que controlam a forma como o serviço do Forms armazena itens em cache. Você pode ajustar essas configurações para otimizar o desempenho do serviço Forms.
 

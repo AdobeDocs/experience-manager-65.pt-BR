@@ -3,8 +3,9 @@ title: Como usar o serviço de execução de script no AEM Forms no JEE Workbenc
 description: Usar o serviço de script de execução no AEM Forms no JEE Workbench para criar dados XML
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 0%

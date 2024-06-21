@@ -6,7 +6,8 @@ docset: aem65
 role: Admin, User, Developer
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Interactive Communication
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1624'
 ht-degree: 2%
@@ -116,7 +117,7 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
    >
    > Recomenda-se usar o comando &#39;Ctrl + C&#39; para reiniciar o SDK. Reiniciar o SDK AEM usando métodos alternativos, por exemplo, interromper processos Java, pode cliente potencial inconsistências nos AEM desenvolvimento ambiente.
 
-1. Repita as etapas de 1 a 7 em todas as instâncias de Autor e Publicação.
+1. Repita as etapas 1 a 7 em todas as instâncias de Autor e Publish.
 
 ## Configurações pós-instalação {#post-installation-configurations}
 
@@ -126,7 +127,7 @@ O AEM Forms tem algumas configurações obrigatórias e opcionais. As configura�
 
 #### Configurar RSA e BouncyCastle bibliotecas  {#configure-rsa-and-bouncycastle-libraries}
 
-Execute as seguintes etapas em todas as instâncias Autor e Publicar para inicializar, delegar as bibliotecas:
+Execute as seguintes etapas em todas as instâncias do Autor e do Publish para inicializar e delegar as bibliotecas:
 
 1. Interrompa a instância subjacente do AEM.
 1. Abra o [Diretório de instalação do AEM]arquivo \crx-quickstart\conf\sling.properties para edição.
@@ -140,7 +141,7 @@ Execute as seguintes etapas em todas as instâncias Autor e Publicar para inicia
    ```
 
 1. Salve e feche o arquivo e inicie a instância do AEM.
-1. Repita as etapas 1 a 4 em todas as instâncias de Autor e Publicação.
+1. Repita as etapas 1 a 4 em todas as instâncias de Autor e Publish.
 
 #### Configurar o agente de serialização {#configure-the-serialization-agent}
 
@@ -149,7 +150,7 @@ Execute as seguintes etapas em todas as instâncias Autor e Publicar para adicio
 1. Abra o Gerenciador de configuração do AEM em uma janela do navegador. O URL padrão é https://&#39;[server]:[porta]&#39;/system/console/configMgr.
 1. Pesquisar e abrir **Configuração do firewall de desserialização**.
 1. Adicione o **sun.util.calendar** pacote para o **➡ incluir na lista de permissões** campo. Clique em Salvar.
-1. Repita as etapas 1 a 3 em todas as instâncias de Autor e Publicação.
+1. Repita as etapas 1 a 3 em todas as instâncias de Autor e Publish.
 
 ### Configurações pós-instalação opcionais {#optional-post-installation-configurations}
 

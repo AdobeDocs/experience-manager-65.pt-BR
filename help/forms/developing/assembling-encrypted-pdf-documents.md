@@ -9,7 +9,8 @@ topic-tags: operations
 role: Developer
 exl-id: 2caaca74-640a-4257-a81b-3e8b295cd182
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,  Document Services
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1641'
 ht-degree: 0%
@@ -151,7 +152,7 @@ Se apenas um único documento de PDF for passado para o serviço Assembler, o se
 
 **Consulte também**
 
-[Início rápido (modo SOAP): montagem de um documento PDF criptografado usando a API Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
+[Início rápido (modo SOAP): Montagem de um documento PDF criptografado usando a API Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
 
 ## Montar um documento PDF criptografado usando a API de serviço Web {#assemble-an-encrypted-pdf-document-using-the-web-service-api}
 

@@ -7,8 +7,9 @@ topic-tags: forms-manager, introduction
 docset: aem65
 exl-id: 3e063456-7f96-483d-86a3-6a414746db8a
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: Admin, User
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 1%
@@ -98,7 +99,7 @@ O painel de ferramentas do AEM contém ferramentas para vários componentes. Par
   ![Ferramentas do AEM Forms](assets/aem_forms_tools_new.png)
 
 * **Configurar PDF Generator:** Um administrador pode configurar o AEM [!DNL Forms] configurações de PDF Generator, adicionar contas de usuário e importar ou exportar a configuração para o PDF Generator.
-* **Publicar ativos do gerenciamento de correspondência:** AEM [!DNL Forms] O permite publicar todas as cartas, fragmentos de documento, dicionários de dados e dependências relacionadas de uma instância do autor de uma só vez. Os ativos publicados incluem todos os ativos do Gerenciamento de correspondências e dependências relacionadas. Para obter informações detalhadas, consulte [Publicar e desfazer a publicação de formulários e documentos](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
+* **Ativos do gerenciamento de correspondência da Publish:** AEM [!DNL Forms] O permite publicar todas as cartas, fragmentos de documento, dicionários de dados e dependências relacionadas de uma instância do autor de uma só vez. Os ativos publicados incluem todos os ativos do Gerenciamento de correspondências e dependências relacionadas. Para obter informações detalhadas, consulte [Publicar e desfazer a publicação de formulários e documentos](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
 * **Exportar ativos do gerenciamento de correspondência:** Você pode baixar todos os ativos do Gerenciamento de correspondências e dependências relacionadas como um pacote de um AEM [!DNL Forms] instância. Para obter etapas detalhadas, consulte [Importação e exportação de ativos para o AEM Forms](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
 
 ## Elementos comuns da interface do usuário {#commonelements}

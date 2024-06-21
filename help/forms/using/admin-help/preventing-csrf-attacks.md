@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: e17fc114-eba5-4e1b-8e70-ad6af7008018
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Security
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 0%
@@ -32,10 +33,10 @@ Por exemplo, considere um cenário em que você esteja conectado ao console de a
 **Referenciador nulo:** Quando você abre uma nova janela ou guia do navegador, digita um endereço e pressiona Enter, o referenciador é nulo. A solicitação é totalmente nova e não se origina de uma página da Web pai; portanto, não há referenciador para a solicitação. O servidor do Forms pode receber um referenciador nulo de:
 
 * solicitações feitas em endpoints SOAP ou REST do Acrobat
-* qualquer cliente de desktop que faça uma solicitação HTTP em um ponto de extremidade AEM forma SOAP ou REST
+* qualquer cliente de desktop que faça uma solicitação HTTP em um SOAP forma um endpoint AEM ou REST
 * quando uma nova janela do navegador é aberta e o URL de qualquer página de logon de aplicativo web AEM forms é inserido
 
-Permitir um referenciador nulo em pontos de extremidade SOAP e REST. Também permite um referenciador nulo em todas as páginas de logon do URI, como /adminui e /contentspace, e seus recursos mapeados correspondentes. Por exemplo, o servlet mapeado para /contentspace é /contentspace/faces/jsp/login.jsp, que deve ser uma exceção de referenciador nulo. Essa exceção é necessária somente se você habilitar a filtragem de GET para seu aplicativo web. Seus aplicativos podem especificar se devem permitir referenciadores nulos. Consulte &quot;Protegendo contra ataques de falsificação de solicitação entre sites&quot; em [Fortalecimento e segurança para formulários AEM](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).
+Permite um referenciador nulo em pontos de extremidade SOAP e REST. Também permite um referenciador nulo em todas as páginas de logon do URI, como /adminui e /contentspace, e seus recursos mapeados correspondentes. Por exemplo, o servlet mapeado para /contentspace é /contentspace/faces/jsp/login.jsp, que deve ser uma exceção de referenciador nulo. Essa exceção é necessária somente se você habilitar a filtragem de GET para seu aplicativo web. Seus aplicativos podem especificar se devem permitir referenciadores nulos. Consulte &quot;Protegendo contra ataques de falsificação de solicitação entre sites&quot; em [Fortalecimento e segurança para formulários AEM](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).
 
 **Exceção de referenciador permitida:** Exceção de referenciador permitido é uma sublista da lista de referenciadores permitidos, da qual as solicitações são bloqueadas. Permitido As exceções de referência são específicas a um aplicativo web. Se um subconjunto de Referenciadores permitidos não tiver permissão para chamar uma aplicação Web específica, você poderá incluir na lista de bloqueios os referenciadores por meio de Exceções de referenciador permitidas. As Exceções de referenciador permitidas são especificadas no arquivo web.xml do aplicativo. (Consulte &quot;Protegendo contra ataques de falsificação de solicitação entre sites&quot; em Fortalecimento e segurança para formulários AEM na página Ajuda e Tutorials.)
 

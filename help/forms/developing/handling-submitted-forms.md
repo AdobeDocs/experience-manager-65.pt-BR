@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: 419335b2-2aae-4e83-98ff-18e61b7efa9c
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2894'
 ht-degree: 0%
@@ -106,7 +106,7 @@ A tabela a seguir descreve as etapas deste diagrama.
 
 ## Manuseio de dados UTF-16 de URL enviado {#handling-submitted-url-utf-16-data}
 
-Se os dados de formulário forem enviados como dados URL UTF-16, o computador cliente exigirá o Adobe Reader ou Acrobat 8.1 ou posterior. Além disso, se o design do formulário contiver um botão de envio com dados codificados em URL (HTTP Post) e a opção de codificação de dados for UTF-16, o design do formulário deverá ser modificado em um editor de texto como o Notepad. Você pode definir a opção de codificação como `UTF-16LE` ou `UTF-16BE` para o botão enviar. O Designer não fornece essa funcionalidade.
+Se os dados de formulário forem enviados como dados URL UTF-16, o computador cliente exigirá o Adobe Reader ou Acrobat 8.1 ou posterior. Além disso, se o design do formulário contiver um botão de envio com dados codificados em URL (HTTP Post) e a opção de codificação de dados for UTF-16, o design do formulário deverá ser modificado em um editor de texto como o Notepad. Você pode definir a opção de codificação como `UTF-16LE` ou `UTF-16BE` para o botão enviar. A Designer não fornece essa funcionalidade.
 
 >[!NOTE]
 >
@@ -251,11 +251,11 @@ Manipule um formulário enviado usando a API do Forms (Java):
 
 **Consulte também**
 
-[Início rápido (modo SOAP): tratamento de PDF forms enviado como XML usando a API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
+[Início rápido (modo SOAP): lidar com PDF forms enviados como XML usando a API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
 
-[Início rápido (modo SOAP): controle de formulários HTML enviados como XML usando a API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
+[Início rápido (modo SOAP): lidando com formulários HTML enviados como XML usando a API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
 
-[Início rápido (modo SOAP): lidar com PDF forms enviado como PDF usando a API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
+[Início rápido (modo SOAP): lidar com PDF forms enviados como PDF usando a API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
 
 [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

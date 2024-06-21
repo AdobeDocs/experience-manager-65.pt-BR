@@ -3,8 +3,9 @@ title: Etapas adicionais para obter e-mails com anexos
 description: Saiba como corrigir o erro quando não é possível recuperar emails com anexos do AEM Forms em plataformas JEE.
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Troubleshooting
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%

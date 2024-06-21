@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: a3a6a06d-ec90-4147-a5f0-e776a086ee12
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1822'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 **Os exemplos e amostras neste documento são somente para AEM Forms no ambiente JEE.**
 
-Normalmente, um design de formulário criado no Designer é transmitido por referência ao serviço Forms. Os designs de formulário podem ser grandes e, como resultado, é mais eficiente passá-los por referência para evitar a necessidade de empacotar bytes de design de formulário por valor. O serviço Forms também pode armazenar o design do formulário em cache para que, quando armazenado em cache, ele não precise ler o design do formulário continuamente.
+Normalmente, um design de formulário criado no Designer é transmitido por referência ao serviço do Forms. Os designs de formulário podem ser grandes e, como resultado, é mais eficiente passá-los por referência para evitar a necessidade de empacotar bytes de design de formulário por valor. O serviço Forms também pode armazenar o design do formulário em cache para que, quando armazenado em cache, ele não precise ler o design do formulário continuamente.
 
 Se um design de formulário contiver um atributo UUID, ele será armazenado em cache. O valor UUID é exclusivo para todos os designs de formulário e é usado para identificar exclusivamente um formulário. Ao renderizar um formulário por valor, o formulário só deve ser armazenado em cache quando usado repetidamente. No entanto, se o formulário não for usado repetidamente e precisar ser exclusivo, é possível evitar o armazenamento em cache usando as opções de armazenamento em cache definidas com a API do AEM Forms.
 

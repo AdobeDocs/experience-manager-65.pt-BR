@@ -6,7 +6,8 @@ docset: aem65
 role: Admin, User, Developer
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Interactive Communication
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1383'
 ht-degree: 1%
@@ -17,7 +18,7 @@ ht-degree: 1%
 
 ## Introdução {#introduction}
 
-O AEM Form tem a capacidade de centralizar a criação, montagem, gerenciamento e entrega de documentos seguros e interativos, como correspondências comerciais, documentos, declarações, avisos de benefícios, emails de marketing, contas e kits de boas-vindas. Esse recurso é conhecido como comunicação interativa. O recurso está incluído no pacote complementar do AEM Forms. O pacote complementar é implantado em uma instância de Autor ou Publicação do AEM.
+O AEM Form tem a capacidade de centralizar a criação, montagem, gerenciamento e entrega de documentos seguros e interativos, como correspondências comerciais, documentos, declarações, avisos de benefícios, emails de marketing, contas e kits de boas-vindas. Esse recurso é conhecido como comunicação interativa. O recurso está incluído no pacote complementar do AEM Forms. O pacote complementar é implantado em uma instância de Autor ou Publish do AEM.
 
 Você pode usar o recurso de comunicação interativa para produzir comunicação em vários formatos. Por exemplo, web e PDF. É possível integrar a comunicação interativa com o fluxo de trabalho do AEM para processar e entregar a comunicação montada aos clientes no canal de sua escolha. Por exemplo, enviar uma comunicação para o usuário final por email.
 
@@ -31,7 +32,7 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. Você pre
 
 ![topologia recomendada](assets/recommended-topology.png)
 
-As Comunicações interativas do AEM Forms executam interfaces de administrador, criação e usuário do agente nas instâncias de Autor do AEM Forms. As instâncias de Publicação hospedam a versão final das comunicações interativas que estão prontas para consumo pelos usuários finais.
+As Comunicações interativas do AEM Forms executam interfaces de administrador, criação e usuário do agente nas instâncias de Autor do AEM Forms. As instâncias do Publish hospedam a versão final de comunicações interativas prontas para uso pelos usuários finais.
 
 ## Requisitos do sistema {#system-requirements}
 
@@ -70,7 +71,7 @@ Antes de começar a instalar e configurar a comunicação interativa e os recurs
   </tr>
   <tr>
    <td>glibc</td>
-   <td>Libxext</td>
+   <td>libXext</td>
    <td><p>nss-softoken-freebl</p> </td>
    <td>fontconfig</td>
   </tr>
@@ -104,7 +105,7 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
    >
    > É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
-1. Repita as etapas de 1 a 7 em todas as instâncias de Autor e Publicação.
+1. Repita as etapas 1 a 7 em todas as instâncias de Autor e Publish.
 
 ## Configurações pós-instalação {#post-installation-configurations}
 
@@ -114,7 +115,7 @@ O AEM Forms tem algumas configurações obrigatórias e opcionais. As configura�
 
 #### Configurar bibliotecas RSA e BouncyCastle  {#configure-rsa-and-bouncycastle-libraries}
 
-Execute as seguintes etapas em todas as instâncias Autor e Publicar para inicializar, delegar as bibliotecas:
+Execute as seguintes etapas em todas as instâncias do Autor e do Publish para inicializar e delegar as bibliotecas:
 
 1. Interrompa a instância subjacente do AEM.
 1. Abra o [Diretório de instalação do AEM]arquivo \crx-quickstart\conf\sling.properties para edição.
@@ -128,7 +129,7 @@ Execute as seguintes etapas em todas as instâncias Autor e Publicar para inicia
    ```
 
 1. Salve e feche o arquivo e inicie a instância do AEM.
-1. Repita as etapas 1 a 4 em todas as instâncias de Autor e Publicação.
+1. Repita as etapas 1 a 4 em todas as instâncias de Autor e Publish.
 
 #### Configurar o agente de serialização {#configure-the-serialization-agent}
 
@@ -137,7 +138,7 @@ Execute as seguintes etapas em todas as instâncias Autor e Publicar para adicio
 1. Abra o Gerenciador de configuração do AEM em uma janela do navegador. O URL padrão é https://&#39;[server]:[porta]&#39;/system/console/configMgr.
 1. Pesquisar e abrir **Configuração do firewall de desserialização**.
 1. Adicione o **sun.util.calendar** pacote para o **➡ incluir na lista de permissões** campo. Clique em Salvar.
-1. Repita as etapas 1 a 3 em todas as instâncias de Autor e Publicação.
+1. Repita as etapas 1 a 3 em todas as instâncias de Autor e Publish.
 
 ### Configurações pós-instalação opcionais {#optional-post-installation-configurations}
 

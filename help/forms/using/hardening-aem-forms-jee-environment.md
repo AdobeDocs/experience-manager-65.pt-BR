@@ -7,7 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.4
 role: Admin,User
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Security, Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '7608'
 ht-degree: 1%
@@ -264,7 +265,7 @@ O Configuration Manager usou um servlet implantado em seu servidor de aplicativo
 
 **Bloquear acesso remoto ao Armazenamento de Confiança**
 
-O Configuration Manager permite que você carregue uma credencial de extensões do Acrobat Reader DC na loja de confiança do AEM Forms no JEE. Isso significa que o acesso ao Serviço de Credenciais de Armazenamento de Confiança em protocolos remotos (SOAP e EJB) foi habilitado por padrão. Esse acesso não será mais necessário depois que você tiver carregado a credencial de Direitos usando o Configuration Manager ou se decidir usar o Console de Administração posteriormente para gerenciar credenciais.
+O Configuration Manager permite que você carregue uma credencial de extensões do Acrobat Reader DC na loja de confiança do AEM Forms no JEE. Isso significa que o acesso ao Serviço de Credenciais do Armazenamento de Confiança em protocolos remotos (SOAP e EJB) foi habilitado por padrão. Esse acesso não será mais necessário depois que você tiver carregado a credencial de Direitos usando o Configuration Manager ou se decidir usar o Console de Administração posteriormente para gerenciar credenciais.
 
 Você pode desabilitar o acesso remoto a todos os serviços de Armazenamento Confiável seguindo as etapas da seção [Desativar o acesso remoto não essencial aos serviços](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
 
@@ -652,7 +653,7 @@ Determinados URLs são destacados como aplicações Web voltadas para o usuário
   </tr> 
   <tr> 
    <td><p>/DocumentManager/*</p> </td> 
-   <td><p>Upload e download de documentos que devem ser processados ao acessar endpoints remotos, endpoints WSDL SOAP e o SDK Java sobre transporte SOAP ou transporte EJB com documentos HTTP ativados.</p> </td> 
+   <td><p>Upload e download de documentos que devem ser processados ao acessar endpoints remotos, endpoints WSDL de SOAP e o SDK do Java sobre transporte SOAP ou transporte EJB com documentos HTTP ativados.</p> </td> 
    <td><p>Sim</p> </td> 
    <td><p>Sim</p> </td> 
   </tr> 
@@ -835,8 +836,8 @@ Ao configurar uma arquitetura de rede segura conforme descrito na seção anteri
    <td> 
     <ul> 
      <li><p>Aplicativos cliente de serviços Web, como aplicativos .NET</p> </li> 
-     <li><p>Adobe Reader® usa SOAP para AEM Forms em serviços Web JEE</p> </li> 
-     <li><p>Adobe Os aplicativos do Flash® usam SOAP para os serviços Web do Forms Server</p> </li> 
+     <li><p>A Adobe Reader® usa SOAP para os serviços Web do AEM Forms no servidor JEE</p> </li> 
+     <li><p>aplicativos Adobe Flash® usam SOAP para serviços Web do Forms Server</p> </li> 
      <li><p>Chamadas de SDK do AEM Forms no JEE quando usadas no modo SOAP</p> </li> 
      <li><p>Ambiente de design do Workbench</p> </li> 
     </ul> </td> 
@@ -954,7 +955,7 @@ Para obter informações sobre as portas do WebSphere exigidas pelo AEM Forms no
 
 ### Configuração do SSL {#configuring-ssl}
 
-Consultando a arquitetura física descrita na seção [Arquitetura física do AEM Forms no JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), você deve configurar o SSL para todas as conexões que planeja usar. Especificamente, todas as conexões SOAP devem ser conduzidas por SSL para evitar a exposição das credenciais do usuário em uma rede.
+Consultando a arquitetura física descrita na seção [Arquitetura física do AEM Forms no JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), você deve configurar o SSL para todas as conexões que planeja usar. Especificamente, todas as conexões do SOAP devem ser conduzidas por SSL para evitar a exposição das credenciais do usuário em uma rede.
 
 Para obter instruções sobre como configurar SSL em JBoss, WebLogic e WebSphere, consulte &quot;Configuring SSL&quot; no [ajuda administrativa](https://www.adobe.com/go/learn_aemforms_admin_64).
 

@@ -6,7 +6,8 @@ topic-tags: author
 role: Admin, User, Developer
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Workbench, Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '2184'
 ht-degree: 0%
@@ -100,15 +101,15 @@ Os seguintes requisitos são recomendados como o mínimo: Espaço em disco para 
 
 Consulte a lista completa de plataformas compatíveis com o Workbench em [Plataformas compatíveis com AEM Forms](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65).
 
-## Considerações de instalação do Designer {#designer-installation-considerations}
+## Considerações sobre a instalação do Designer {#designer-installation-considerations}
 
 Por padrão, a instalação do Workbench inclui uma versão correspondente somente em inglês do Designer. Se o aplicativo de instalação do Workbench detectar uma versão existente do Designer no computador, a instalação poderá terminar e será necessário remover a versão atual do Designer para continuar.
-A tabela abaixo tem uma lista completa de cenários possíveis de instalação do Designer que podem ser encontrados e as ações que devem ser tomadas ao instalar o Workbench.
+A tabela abaixo tem uma lista completa de cenários possíveis de instalação do Designer que podem ser encontrados e as ações que devem ser executadas ao instalar o Workbench.
 
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Versão do Designer instalada no momento</strong></p> </td>
+   <td><p><strong>Versão do Designer instalada atualmente</strong></p> </td>
    <td><p><strong>Ações necessárias</strong></p> </td>
   </tr>
   <tr>
@@ -172,7 +173,7 @@ Antes de instalar o Workbench, você deve garantir que seu ambiente inclua o sof
 1. Revise as Notas de versão e clique em Concluído.
 1. Os seguintes itens estão instalados no computador:
    * **Workbench**: para executar o Workbench no menu Iniciar, selecione Todos os programas > AEM Forms > Workbench, se você optou por armazenar a pasta de atalho lá. Para obter informações, consulte a <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Uso do Workbench</a> documentação.
-   * **Designer**: Você pode acessar o Designer no Workbench. Para obter informações, consulte o tópico Introdução em <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Ajuda do Designer</a>.
+   * **Designer**: você pode acessar o Designer de dentro do Workbench. Para obter informações, consulte o tópico Introdução em <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Ajuda do Designer</a>.
    * **AEM FORMS SDK**: para obter mais informações sobre o uso do SDK, consulte <a href="https://helpx.adobe.com/pdf/aem-forms/6-3/programming-with-aem-forms.pdf">Programação com o AEM Forms</a>.
 
 ## Atualização de processos {#upgrading-processes}
@@ -229,7 +230,7 @@ Quando o gerador ou a saída de formulários pesquisa ou atualiza entradas no ca
 
 * **Nome do arquivo de modelo**: o local e o nome de arquivo do modelo usado como o identificador exclusivo principal do formulário em cache.
 * **Carimbo de data e hora**: O arquivo de modelo contém um carimbo de data e hora usado para determinar a hora da última atualização do formulário.
-* **UUID do modelo**: O Designer insere em cada modelo um identificador exclusivo (UUID) para o formulário e sua versão. Cada vez que o formulário é atualizado, a UUID incorporada é atualizada. Por exemplo, um modelo XDP pode mostrar o seguinte conteúdo:
+* **UUID do modelo**: o Designer insere em cada modelo um identificador exclusivo (UUID) para o formulário e sua versão. Cada vez que o formulário é atualizado, a UUID incorporada é atualizada. Por exemplo, um modelo XDP pode mostrar o seguinte conteúdo:
 
   `<?xml version="1.0" encoding="UTF-8"?>`
   `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=https://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="https://www.xfa.org/schema/xfa-template/2.6/">`
@@ -261,7 +262,7 @@ As práticas recomendadas a seguir garantem que o cache não cresça infinitamen
 
 ### Desinstalar o Workbench {#uninstalling-workbench}
 
-Use a função Adicionar ou remover programas no Painel de controle do Campaign para iniciar o desinstalador. Os aplicativos Workbench e Designer têm programas de desinstalação separados.
+Use a função Adicionar ou remover programas no Painel de controle do Campaign para iniciar o desinstalador. Os aplicativos do Workbench e do Designer têm programas de desinstalação separados.
 
 ## Configuração do editor XDC do AEM Forms {#configuring-aem-forms-xdc-editor}
 

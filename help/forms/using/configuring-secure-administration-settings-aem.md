@@ -7,7 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.4
 role: Admin,User
 exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Security, Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -24,11 +25,11 @@ Este artigo descreve métodos para reduzir a superfície de ataque geral por mei
 
 ## Desativar o acesso remoto não essencial aos serviços {#disabling-non-essential-remote-access-to-services}
 
-Depois que o AEM Forms no JEE é instalado e configurado, muitos serviços ficam disponíveis para invocação remota em SOAP e Enterprise JavaBeans™ (EJB). O termo remoto, neste caso, se refere a qualquer chamador que tenha acesso de rede às portas SOAP, EJB ou Action Message Format (AMF) do servidor de aplicativos.
+Depois que o AEM Forms no JEE é instalado e configurado, muitos serviços ficam disponíveis para invocação remota sobre SOAP e Enterprise JavaBeans™ (EJB). O termo remoto, neste caso, se refere a qualquer chamador que tenha acesso de rede às portas SOAP, EJB ou Action Message Format (AMF) do servidor de aplicativos.
 
 Embora os serviços do AEM Forms no JEE exijam que credenciais válidas sejam passadas para um chamador autorizado, você deve permitir somente o acesso remoto aos serviços que precisam ser acessíveis remotamente. Para obter acessibilidade limitada, você deve reduzir o conjunto de serviços acessíveis remotamente ao mínimo possível para um sistema em funcionamento e, em seguida, habilitar a invocação remota para os serviços adicionais necessários.
 
-Os serviços do AEM Forms no JEE sempre precisam pelo menos de acesso SOAP. Normalmente, esses serviços são necessários para uso pelo Workbench, mas também incluem serviços chamados pelo aplicativo web do Workspace.
+Os serviços do AEM Forms no JEE sempre precisam pelo menos de acesso ao SOAP. Normalmente, esses serviços são necessários para uso pelo Workbench, mas também incluem serviços chamados pelo aplicativo web do Workspace.
 
 Conclua este procedimento usando a página da Web Aplicativos e Serviços no Console de Administração:
 
@@ -61,7 +62,7 @@ Conclua este procedimento usando a página da Web Aplicativos e Serviços no Con
    * LogonÚnicoWorkspace
    * ApplicationManager
 
-1. Clique em **Próxima** e repita a etapa anterior para endpoints SOAP que não estão na lista acima. Certifique-se de que SOAP esteja listado na coluna Provedor antes de remover os pontos de extremidade.
+1. Clique em **Próxima** e repita a etapa anterior para endpoints do SOAP que não estão na lista acima. Verifique se o SOAP está listado na coluna Provedor antes de remover os pontos de extremidade.
 
 ## Desabilitação de acesso anônimo não essencial a serviços {#disabling-non-essential-anonymous-access-to-services}
 

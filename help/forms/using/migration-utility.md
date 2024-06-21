@@ -10,7 +10,8 @@ docset: aem65
 role: Admin,User
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1736'
 ht-degree: 1%
@@ -58,7 +59,7 @@ Para ativos do Gerenciamento de correspondência:
 * As listas em módulos de texto foram aprimoradas e agora são renderizadas de forma diferente. Pode haver diferenças visuais. A Adobe recomenda que você renderize e veja as letras nas quais está usando listas em módulos de texto.
 * Como os módulos de conteúdo de imagem são convertidos em ativos do DAM e os layouts e fragmentos são adicionados a formulários durante a migração, a propriedade Atualizado por desses módulos muda para administrador.
 * O histórico de versões dos ativos não é migrado e não está disponível após a migração. O histórico de versões subsequentes após a migração é mantido.
-* O estado Pronto para publicar está obsoleto desde o Forms do AEM 6.1, portanto, todos os ativos no estado Pronto para publicar foram alterados para o estado Modificado.
+* O estado Pronto para Publish está obsoleto desde o AEM 6.1 Forms, de modo que todos os ativos no estado Pronto para Publish são alterados para o estado Modificado.
 * Como a interface do usuário é atualizada no AEM Forms 6.3, as etapas para executar as personalizações também são diferentes. Refaça a personalização se estiver migrando de uma versão anterior à 6.3.
 * Os fragmentos de layout são movidos de `/content/apps/cm/layouts/fragmentlayouts/1001` para `/content/apps/cm/modules/fragmentlayouts`. A referência do dicionário de dados no Assets exibe o caminho do dicionário de dados em vez do nome.
 * Os espaços de tabulação usados para alinhamento em módulos de texto devem ser reajustados. Para obter mais informações, consulte [Gerenciamento de correspondência - Uso do espaçamento entre guias para organizar o texto](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html).
@@ -173,9 +174,9 @@ Após executar o utilitário de migração, cuide das seguintes tarefas de manut
 
    1. [Baixe o XFA como um arquivo zip](../../forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p) na interface do usuário do Forms.
    1. Extraia o arquivo.
-   1. Abra o arquivo XFA no Designer mais recente e salve-o. A versão do XFA é atualizada para a mais recente.
+   1. Abra o arquivo XFA na Designer mais recente e salve-o. A versão do XFA é atualizada para a mais recente.
    1. Faça upload do XFA na interface do usuário do Forms.
 
-1. Publicar todos os ativos que foram publicados no sistema anterior antes da migração. O utilitário de migração atualiza os ativos somente na instância do Autor e, para atualizar os ativos nas instâncias de Publicação, você deve publicar os ativos.
+1. Publish todos os ativos publicados no sistema anterior antes da migração. O utilitário de migração atualiza os ativos somente na instância do Autor e, para atualizar os ativos nas instâncias do Publish, você deve publicar os ativos.
 
 1. No AEM Forms 6.4 e 6.5, alguns dos direitos dos grupos de usuários de formulários são alterados. Se você quiser que qualquer um dos seus usuários possa fazer upload de XDPs e do Adaptive Forms contendo scripts ou usar um editor de código, será necessário adicioná-los ao grupo de usuários avançados de formulários. Da mesma forma, os autores de modelo não podem mais usar o editor de código no Editor de regras. Para que os usuários possam usar um editor de código, adicione-os ao grupo af-template-script-writer. Para obter instruções sobre como adicionar usuários a grupos, consulte [Gerenciar usuários e grupos de usuários](/help/communities/users.md).

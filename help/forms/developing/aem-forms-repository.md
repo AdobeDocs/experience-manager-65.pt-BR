@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '9036'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Os seguintes valores mostram alguns exemplos de valores de URI:
 
 >[!NOTE]
 >
->Você pode navegar pelo repositório do AEM Forms usando um navegador da Web. Para navegar no repositório, insira o seguinte URL em um navegador da Web `https://[server name]:[server port]/repository`. Você pode verificar os resultados de início rápido associados à seção Trabalho com o repositório do AEM Forms usando um navegador da Web. Por exemplo, se você adicionar conteúdo ao Repositório do AEM Forms, poderá ver o conteúdo em um navegador da Web. (Consulte [Início rápido (modo SOAP): gravação de um recurso usando a API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api).)
+>Você pode navegar pelo repositório do AEM Forms usando um navegador da Web. Para navegar no repositório, insira o seguinte URL em um navegador da Web `https://[server name]:[server port]/repository`. Você pode verificar os resultados de início rápido associados à seção Trabalho com o repositório do AEM Forms usando um navegador da Web. Por exemplo, se você adicionar conteúdo ao Repositório do AEM Forms, poderá ver o conteúdo em um navegador da Web. (Consulte [Início rápido (modo SOAP): Gravação de um recurso usando a API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api).)
 
 A API do repositório fornece várias operações que você pode usar para armazenar e recuperar informações do repositório. Por exemplo, você pode obter uma lista de recursos ou recuperar recursos específicos armazenados no repositório quando um recurso é necessário como parte do processamento de um aplicativo.
 
@@ -308,7 +308,7 @@ Grave um recurso usando a API de serviço do Repositório (Java):
 
 [Recursos de gravação](aem-forms-repository.md#writing-resources)
 
-[Início rápido (modo SOAP): gravação de um recurso usando a API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
+[Início rápido (modo SOAP): Gravação de um recurso usando a API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
 
 [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -434,7 +434,7 @@ Liste recursos usando a API de serviço do Repositório (Java):
 
 [Listando recursos](aem-forms-repository.md#listing-resources).
 
-[Início rápido (modo SOAP): listagem de recursos usando a API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
+[Início rápido (modo SOAP): listar recursos usando a API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
 
 [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1142,7 +1142,7 @@ Bloqueie recursos usando a API de serviço do Repositório (serviço Web):
 
 ## Exclusão de recursos {#deleting-resources}
 
-Você pode excluir recursos de forma programática de um determinado local no repositório usando a API Java de serviço do repositório (SOAP).
+Você pode excluir recursos de forma programática de um determinado local no repositório usando a API Java (SOAP) do serviço do Repositório.
 
 Quando você exclui um recurso, a exclusão normalmente é permanente, embora, em alguns casos, os repositórios ECM possam armazenar as versões do recurso de acordo com seus mecanismos de histórico. Portanto, ao excluir um recurso, é importante ter certeza de que você nunca precisará dele novamente. Os motivos comuns para excluir um recurso incluem a necessidade de aumentar o espaço disponível no banco de dados. Você pode excluir uma versão de um recurso, mas, se fizer isso, deverá especificar o identificador de recurso, e não seu LID (identificador lógico) ou caminho. Se você excluir uma pasta, tudo nessa pasta, incluindo subpastas e recursos, será excluído automaticamente.
 
@@ -1195,7 +1195,7 @@ Chame o método do serviço de Repositório para excluir o recurso, especificand
 
 [Início Rápido da API de Serviço de Repositório](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
-### Excluir recursos usando a API Java (SOAP) {#delete-resources-using-the-java-api-soap}
+### Excluir recursos usando a API do Java (SOAP) {#delete-resources-using-the-java-api-soap}
 
 Exclua um recurso usando a API do repositório (Java):
 

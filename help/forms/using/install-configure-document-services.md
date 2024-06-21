@@ -3,9 +3,10 @@ title: Instalar e configurar serviços de documento
 description: Instale os serviços de documento do AEM Forms para criar, montar, distribuir, arquivar documentos PDF, adicionar assinaturas digitais para limitar o acesso a documentos e decodificar Forms com código de barras.
 topic-tags: installing
 role: Admin, User, Developer
-solution: Experience Manager, Experience Manager Forms
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 7b0f8222408d43a298fa2036020963721cfbd1f9
+solution: Experience Manager, Experience Manager Forms
+feature: Interactive Communication
+source-git-commit: cf3247e437af7447fd6a6121c6a4e2ef750d06b7
 workflow-type: tm+mt
 source-wordcount: '5660'
 ht-degree: 1%

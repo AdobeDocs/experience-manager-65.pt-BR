@@ -1,5 +1,5 @@
 ---
-title: Converter PDF Service Java&trade; API QuickStart (SOAP)
+title: Converter serviço PDF Java&trade; API QuickStart (SOAP)
 description: Saiba como o serviço Converter PDF converte documentos PDF em PostScript ou arquivos de imagem (JPEG, JPEG 2000, PNG e TIFF).
 contentOwner: admin
 content-type: reference
@@ -8,14 +8,14 @@ topic-tags: develop
 role: Developer
 exl-id: 8974c468-ff2b-431d-96fb-e987698619bc
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
 
 ---
 
-# Converter INÍCIO rápido da API Java™ do serviço de PDF (SOAP) {#convert-pdf-service-java-api-quickstart-soap}
+# Converter início rápido da API Java™ do serviço de PDF (SOAP) {#convert-pdf-service-java-api-quickstart-soap}
 
 Os seguintes Quick Starts estão disponíveis para a API de serviço Converter PDF.
 

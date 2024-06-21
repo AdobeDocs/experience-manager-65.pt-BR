@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 380cab7f-e7f7-4cb7-bd20-ea530a349fac
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
@@ -33,9 +34,9 @@ Os seguintes tipos de endpoints podem ser adicionados aos serviços. Nem todos o
 
 **Comunicação remota:** Permite que um aplicativo criado com o Flex chame o serviço usando a comunicação remota de formulários AEM (obsoleto para formulários AEM). Um ponto de extremidade remoto é criado automaticamente para cada serviço ativado. Um destino do Flex que tem o mesmo nome do endpoint é criado, e os clientes Flex podem criar objetos remotos que apontam para esse destino para chamar operações no serviço relevante.
 
-**SOAP:** Permite que um aplicativo cliente desenvolvido com as APIs de programação de formulários AEM chame o serviço usando o modo SOAP. Um ponto de extremidade SOAP é criado automaticamente para cada serviço ativado.
+**SOAP:** Permite que um aplicativo cliente desenvolvido com as APIs de programação de formulários AEM chame o serviço usando o modo SOAP. Um terminal SOAP é criado automaticamente para cada serviço ativado.
 
-**observação**: *A segurança pode ser removida dos documentos de segurança de documentos quando o endpoint SOAP é usado ao visualizar os documentos no Adobe Acrobat ou no Adobe Reader. Para obter detalhes sobre como desativar pontos de extremidade SOAP em documentos do LCRM, consulte [Desabilitar pontos de extremidade SOAP para documentos de segurança de documentos](/help/forms/using/admin-help/configuring-client-server-options.md#disable-soap-endpoints-for-document-security-documents)*
+**observação**: *A segurança pode ser removida dos documentos de segurança de documentos quando o endpoint SOAP é usado ao visualizar os documentos no Adobe Acrobat ou no Adobe Reader. Para obter detalhes sobre como desativar pontos de extremidade SOAP em seus documentos do LCRM, consulte [Desabilitar pontos de extremidade SOAP para documentos de segurança de documentos](/help/forms/using/admin-help/configuring-client-server-options.md#disable-soap-endpoints-for-document-security-documents)*
 
 **EJB:** Permite que um aplicativo cliente desenvolvido com as APIs de programação de formulários AEM chame o serviço usando o modo Enterprise JavaBeans (EJB). Um terminal EJB é criado automaticamente para cada serviço ativado.
 

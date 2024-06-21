@@ -8,8 +8,9 @@ content-strategy: max-2018
 docset: aem65
 exl-id: f26c4268-7885-4e61-a258-219d98288548
 solution: Experience Manager, Experience Manager Forms
+feature: Correspondence Management
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '1402'
 ht-degree: 0%
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 O AEM Forms permite criar, publicar e desfazer a publicação de formulários facilmente. Para obter mais informações sobre o AEM Forms, consulte [Introdução ao gerenciamento de formulários](../../forms/using/introduction-managing-forms.md).
 
-O servidor do AEM Forms fornece duas instâncias: Autor e Publicar. A instância do autor é utilizada para criar e gerenciar ativos e recursos de formulários. A instância de publicação serve para manter ativos e recursos relacionados disponíveis para usuários finais. É possível importar XDP e PDF forms no modo Autor. Para obter mais informações, consulte [Obtenção de documentos XDP e PDF no AEM Forms](../../forms/using/get-xdp-pdf-documents-aem.md).
+O servidor do AEM Forms fornece duas instâncias: Autor e Publish. A instância do autor é utilizada para criar e gerenciar ativos e recursos de formulários. A instância do Publish serve para manter ativos e recursos relacionados disponíveis para usuários finais. É possível importar XDP e PDF forms no modo Autor. Para obter mais informações, consulte [Obtenção de documentos XDP e PDF no AEM Forms](../../forms/using/get-xdp-pdf-documents-aem.md).
 
 ## Ativos compatíveis   {#supported-assets-nbsp}
 
@@ -59,16 +60,16 @@ O Adaptive Forms pode utilizar algumas configurações, configurações e person
 Um ativo pode ter os seguintes estados:
 
 * **Não publicado:** Um ativo que nunca foi publicado (o estado não publicado é aplicável somente aos ativos do Forms. Os ativos do Gerenciamento de correspondências não têm um estado Não publicado.)
-* **Publicado**: um ativo que foi publicado e está disponível na instância de publicação
+* **Publicado**: um ativo que foi publicado e está disponível na instância do Publish
 * **Modificado**: um ativo que é modificado depois de ser publicado
 
-## Publicar um ativo {#publish-an-asset}
+## Publish e um ativo {#publish-an-asset}
 
 1. Faça logon no servidor do AEM Forms.
 1. Use um dos itens a seguir para selecionar e publicar um ativo.
 
    1. Mova o ponteiro sobre um ativo e selecione **[!UICONTROL Publish]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
-   1. Siga um destes procedimentos e selecione Publicar:
+   1. Siga um destes procedimentos e selecione Publish:
 
       * Se estiver na exibição de cartão, selecione **[!UICONTROL Inserir seleção]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)e selecione o ativo. O ativo está selecionado.
       * Se você estiver na exibição em lista, marque a caixa de seleção de um ativo. O ativo está selecionado.
@@ -79,7 +80,7 @@ Um ativo pode ter os seguintes estados:
       >
       >Não selecione vários ativos. Não é possível publicar vários ativos de uma só vez.
 
-1. Quando o processo de publicação é iniciado, uma caixa de diálogo de confirmação é exibida listando todos os ativos e recursos relacionados. Na caixa de diálogo que contém ativos relacionados, selecione **[!UICONTROL Publish]**. O ativo é publicado e a caixa de diálogo Publicar sucesso de ativos é exibida.
+1. Quando o processo do Publish é iniciado, uma caixa de diálogo de confirmação é exibida listando todos os ativos e recursos relacionados. Na caixa de diálogo que contém ativos relacionados, selecione **[!UICONTROL Publish]**. O ativo é publicado e a caixa de diálogo Publicar sucesso de ativos é exibida.
 
    >[!NOTE]
    >
@@ -91,13 +92,13 @@ Um ativo pode ter os seguintes estados:
 
    >[!NOTE]
    >
-   >Para o Forms Manager, se o usuário não tiver permissão para publicar os ativos listados, a ação Publicar será desativada. Um ativo que requer permissões adicionais é mostrado em vermelho.
+   >Para o Forms Manager, se o usuário não tiver permissão para publicar os ativos listados, a ação do Publish será desativada. Um ativo que requer permissões adicionais é mostrado em vermelho.
 
-   Depois que um ativo é publicado, as propriedades de metadados do ativo são copiadas para a instância de Publicação e o status do ativo é alterado para Publicado. O status dos ativos dependentes publicados também é alterado para Publicado.
+   Depois que um ativo é publicado, as propriedades de metadados do ativo são copiadas para a instância do Publish e o status do ativo é alterado para Publicado. O status dos ativos dependentes publicados também é alterado para Publicado.
 
    Depois de publicar um ativo, você pode usar o Portal do Forms para exibir todos os ativos em uma página da Web. Para obter mais informações, consulte [Introdução à publicação de formulários em um portal](../../forms/using/introduction-publishing-forms.md).
 
-## Publicar todos os ativos do gerenciamento de correspondência {#publish-all-the-correspondence-management-assets}
+## Publish todos os ativos do gerenciamento de correspondência {#publish-all-the-correspondence-management-assets}
 
 O AEM Forms permite publicar todos os ativos do Gerenciamento de correspondência em um servidor de uma só vez. Os ativos publicados incluem todos os ativos do Gerenciamento de correspondências e dependências relacionadas.
 
@@ -106,11 +107,11 @@ Conclua as seguintes etapas para publicar todos os ativos do Gerenciamento de co
 1. Faça logon no servidor do AEM Forms.
 1. Selecionar **Adobe Experience Manager** na barra de navegação global.
 1. Selecionar ![ferramentas](assets/tools.png)e selecione **Forms**.
-1. Selecionar **Publicar ativos do gerenciamento de correspondência**.
+1. Selecionar **Ativos do gerenciamento de correspondência da Publish**.
 
    ![publish-cmp-assets](assets/publish-cmp-assets.png)
 
-   A página Publicar todos os ativos do gerenciamento de correspondência é exibida e mostra as informações sobre a última vez que o processo Publicar ativos do gerenciamento de correspondência foi tentado.
+   A página Todos os ativos do gerenciamento de correspondência da Publish é exibida e mostra as informações sobre a última vez que o processo de ativos do gerenciamento de correspondência da Publish foi tentado.
 
    ![publicar-última-execução-detalhes](assets/publish-last-run-details.png)
 
@@ -120,7 +121,7 @@ Conclua as seguintes etapas para publicar todos os ativos do Gerenciamento de co
 
    >[!NOTE]
    >
-   >O processo de publicação não pode ser cancelado depois de iniciado. Além disso, enquanto a operação Publicar estiver em processo, não crie, exclua, modifique ou publique quaisquer ativos ou inicie a operação Exportar todos os ativos do gerenciamento de correspondência.
+   >O processo do Publish não pode ser cancelado depois de iniciado. Além disso, enquanto a operação do Publish estiver em andamento, não crie, exclua, modifique ou publique quaisquer ativos ou inicie a operação Exportar todos os ativos do gerenciamento de correspondência.
 
 ## Automatizar a publicação e o cancelamento da publicação de Forms e documentos {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
@@ -130,7 +131,7 @@ Siga estas etapas para agendar a data e a hora de publicação e cancelamento da
 
 1. Selecione um ativo e **[!UICONTROL Propriedades da exibição]**. A página Propriedades de metadados é aberta.
 1. Na página Propriedades dos metadados, selecione **[!UICONTROL Avançado]** e selecione **[!UICONTROL Editar]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
-1. No **[!UICONTROL Publicar no Prazo]** e **[!UICONTROL Publicar Fora do Tempo]** selecione a data e a hora.\
+1. No **[!UICONTROL Publish no Prazo]** e **[!UICONTROL Tempo desligado do Publish]** selecione a data e a hora.\
    Selecionar **[!UICONTROL Concluído]** ![aem6forms_check](assets/aem6forms_check.png).
 
 ## Cancelar a publicação de um ativo {#unpublish-an-asset}

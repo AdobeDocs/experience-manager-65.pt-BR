@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '15394'
 ht-degree: 0%
@@ -401,7 +401,7 @@ Modifique uma política existente usando a API de segurança de documentos (Java
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Segurança de documentos, consulte o Início rápido (modo SOAP): modificação de uma política usando a seção API Java.
+Para obter exemplos de código usando o serviço Segurança de documentos, consulte Início rápido (modo SOAP): modificação de uma política usando a seção API do Java.
 
 ### Modificar políticas existentes usando a API do serviço Web {#modify-existing-policies-using-the-web-service-api}
 
@@ -1066,7 +1066,7 @@ Restaure o acesso a um documento revogado usando a API de segurança de document
 
 Para obter exemplos de código usando o serviço Segurança de documentos, consulte os seguintes Quick Starts:
 
-* &quot;Início rápido (modo SOAP): restabelecendo o acesso a um documento revogado usando a API de serviço Web&quot;
+* &quot;Início rápido (modo SOAP): restabelecendo o acesso a um documento revogado usando a API de serviço da Web&quot;
 
 ### Restaurar o acesso a documentos revogados usando a API do serviço da Web {#reinstate-access-to-revoked-documents-using-the-web-service-api}
 
@@ -1567,7 +1567,7 @@ Modifique uma marca d&#39;água usando a API de segurança de documentos (Java):
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Segurança de documentos, consulte o Início rápido (modo SOAP): modificação de uma marca d&#39;água usando a seção API Java.
+Para obter exemplos de código usando o serviço Segurança de documentos, consulte Início rápido (modo SOAP): modificação de uma marca d&#39;água usando a seção API Java.
 
 ### Modificar marcas d&#39;água usando a API do serviço Web {#modify-watermarks-using-the-web-service-api}
 

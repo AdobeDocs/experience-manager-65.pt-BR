@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '18860'
 ht-degree: 0%
@@ -282,7 +282,7 @@ Crie um documento PDF usando a API de saída (Java):
 
 [Início rápido (modo EJB): Criação de um documento PDF usando a API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
 
-[Início rápido (modo SOAP): criação de um documento PDF usando a API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
+[Início rápido (modo SOAP): Criação de um documento PDF usando a API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
 
 [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -629,7 +629,7 @@ Crie um documento PDF/A usando a API de saída (serviço da Web):
 
 ## Passagem de documentos no Content Services (desaprovado) para o Serviço de saída {#passing-documents-located-in-content-services-deprecated-to-the-output-service}
 
-O serviço de Saída renderiza um formulário de PDF não interativo baseado em um design de formulário normalmente salvo como um arquivo XDP e criado no Designer. Você pode passar um `com.adobe.idp.Document` objeto que contém o design de formulário para o serviço de Saída. O Serviço de saída renderiza o design do formulário no `com.adobe.idp.Document` objeto.
+O serviço de Saída renderiza um formulário PDF não interativo baseado em um design de formulário normalmente salvo como um arquivo XDP e criado no Designer. Você pode passar um `com.adobe.idp.Document` objeto que contém o design de formulário para o serviço de Saída. O Serviço de saída renderiza o design do formulário no `com.adobe.idp.Document` objeto.
 
 Uma vantagem de passar um `com.adobe.idp.Document` para o Serviço de saída é que outras operações de serviço do AEM Forms retornam um `com.adobe.idp.Document` instância. Ou seja, você pode obter um `com.adobe.idp.Document` instância de outra operação de serviço e renderizá-la. Por exemplo, suponha que um arquivo XDP esteja armazenado em um nó do Content Services (obsoleto) chamado `/Company Home/Form Designs`, conforme mostrado na ilustração a seguir.
 
@@ -736,7 +736,7 @@ Envie um documento recuperado do Content Services (desaprovado) usando o Serviç
 
 [Início rápido (modo EJB): Passar documentos para o serviço de saída usando a API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
-[Início rápido (modo SOAP): passar documentos para o serviço de saída usando a API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
+[Início rápido (modo SOAP): Passar documentos para o serviço de saída usando a API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
 [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -818,7 +818,7 @@ Envie um documento recuperado do Content Services (desaprovado) usando o Serviç
 
 ## Passar documentos no repositório para o serviço de saída {#passing-documents-located-in-the-repository-to-the-output-service}
 
-O serviço de Saída renderiza um formulário de PDF não interativo baseado em um design de formulário normalmente salvo como um arquivo XDP e criado no Designer. Você pode passar um `com.adobe.idp.Document` objeto que contém o design de formulário para o serviço de Saída. O Serviço de saída renderiza o design do formulário no `com.adobe.idp.Document` objeto.
+O serviço de Saída renderiza um formulário PDF não interativo baseado em um design de formulário normalmente salvo como um arquivo XDP e criado no Designer. Você pode passar um `com.adobe.idp.Document` objeto que contém o design de formulário para o serviço de Saída. O Serviço de saída renderiza o design do formulário no `com.adobe.idp.Document` objeto.
 
 Uma vantagem de passar um `com.adobe.idp.Document` para o Serviço de saída é que outras operações de serviço do AEM Forms retornam um `com.adobe.idp.Document` instância. Ou seja, você pode obter um `com.adobe.idp.Document` instância de outra operação de serviço e renderizá-la. Por exemplo, suponha que um arquivo XDP esteja armazenado no repositório do AEM Forms, conforme mostrado na ilustração a seguir.
 
@@ -1052,7 +1052,7 @@ Crie um documento PDF com base em fragmentos usando a API de serviço de saída 
 
 [Início rápido (modo EJB): Criação de um documento PDF com base em fragmentos usando a API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
-[Início rápido (modo SOAP): criação de um documento PDF com base em fragmentos usando a API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
+[Início rápido (modo SOAP): Criação de um documento PDF com base em fragmentos usando a API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
 [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1272,7 +1272,7 @@ Imprima em um arquivo usando a API de saída (Java):
 
 [Resumo das etapas](creating-document-output-streams.md#summary-of-steps)
 
-[Início rápido (modo SOAP): impressão em um arquivo usando a API do Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-printing-to-a-file-using-the-java-api)
+[Início rápido (modo SOAP): impressão em um arquivo usando a API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-printing-to-a-file-using-the-java-api)
 
 [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

@@ -8,7 +8,8 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin,User
 exl-id: 1e39455e-f588-42a2-91f5-daefcfed82a0
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms, OSGI
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 1%
@@ -101,7 +102,7 @@ Faça o seguinte para atualizar do AEM 6.3 Forms ou do AEM 6.4 Forms AEM para o 
 1. Verifique se o servidor foi atualizado com êxito, se todos os dados também foram migrados com êxito e se ele pode funcionar normalmente.
 
    * **Verifique o status dos pacotes:** Verifique se todos os pacotes estão no estado ativo.
-   * **Verifique a replicação e a replicação inversa:** Publicar, preencher e enviar alguns formulários migrados. Verifique também os dados enviados.
+   * **Verifique a replicação e a replicação inversa:** Publish, preencha e envie alguns formulários migrados. Verifique também os dados enviados.
    * **Verifique o acesso às interfaces de usuário do administrador e do desenvolvedor:** Faça logon na instância do AEM com uma conta de administrador e verifique se você tem acesso aos seguintes URLs:
 
       * `https://'[server]:[port]'/crx/packmgr`

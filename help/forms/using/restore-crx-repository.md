@@ -3,8 +3,9 @@ title: Não foi possível restaurar o repositório CRX corrompido aplicável ao 
 description: Saiba mais sobre como restaurar um repositório CRX corrompido.
 exl-id: 212f61f1-360f-4abe-b874-055ec65454c7
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Troubleshooting
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 1%

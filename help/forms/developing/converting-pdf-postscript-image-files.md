@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: 31730c24-46c3-4111-9391-ccd4342740e9
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2774'
 ht-degree: 0%
@@ -249,9 +249,9 @@ Depois de criar o cliente de serviço e definir as opções de tempo de execuç�
 
 **Recuperar os arquivos de imagem de uma coleção**
 
-Você pode recuperar arquivos de imagem de um objeto de coleção que o serviço Converter PDF retorna. Cada elemento na coleção é um `com.adobe.idp.Document` instância (ou um `BLOB` caso esteja usando serviços da web) que você pode salvar como um arquivo de imagem, como um arquivo JPG.
+Você pode recuperar arquivos de imagem de um objeto de coleção que o serviço Converter PDF retorna. Cada elemento na coleção é um `com.adobe.idp.Document` instância (ou um `BLOB` caso esteja usando serviços da web) que você pode salvar como um arquivo de imagem, como um arquivo JPG de.
 
-O formato do arquivo de imagem depende da variável `ImageConvertFormat` opção de tempo de execução. Ou seja, se você definir a variável `ImageConvertFormat` opção de tempo de execução para `ImageConvertFormat.JPEG`, é possível salvar arquivos de imagem como arquivos JPG.
+O formato do arquivo de imagem depende da variável `ImageConvertFormat` opção de tempo de execução. Ou seja, se você definir a variável `ImageConvertFormat` opção de tempo de execução para `ImageConvertFormat.JPEG`, é possível salvar arquivos de imagem como arquivos de JPG.
 
 **Consulte também**
 

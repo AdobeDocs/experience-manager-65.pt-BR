@@ -8,20 +8,20 @@ topic-tags: develop
 role: Developer
 exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 0%
 
 ---
 
-# Início Rápido da API Java™ do Registro de Ponto de Extremidade (SOAP) {#endpoint-registry-java-api-quickstart-soap}
+# Início rápido da API Java™ do Endpoint Registry (SOAP) {#endpoint-registry-java-api-quickstart-soap}
 
-O Java™ API Quick Start (SOAP) está disponível para o Registro de endpoint.
+O Java™ API Quick Start(SOAP) está disponível para o Registro de endpoint.
 
 [QuickStart: Adicionando um endpoint de EJB usando o Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
 
-[QuickStart: adicionando um endpoint SOAP usando o Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
+[QuickStart: adicionando um terminal SOAP usando o Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
 [QuickStart: adicionando um endpoint de pasta monitorada usando o Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
 
@@ -146,9 +146,9 @@ O exemplo de código Java™ a seguir adiciona um terminal EJB a um serviço cha
  
 ```
 
-## QuickStart: adicionando um endpoint SOAP usando a API Java™ {#quickstart-adding-a-soap-endpoint-using-the-java-api}
+## QuickStart: adicionando um terminal SOAP usando a API Java™ {#quickstart-adding-a-soap-endpoint-using-the-java-api}
 
-O exemplo de código Java™ a seguir adiciona um terminal SOAP a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionando pontos de extremidade SOAP](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
+O seguinte exemplo de código Java™ adiciona um terminal SOAP a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionar pontos de extremidade SOAP](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
 
 ```java
  /*

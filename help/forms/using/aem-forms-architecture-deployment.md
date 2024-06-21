@@ -8,7 +8,8 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms, Foundation Components
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '2469'
 ht-degree: 0%
@@ -38,7 +39,7 @@ A arquitetura do AEM Forms inclui os seguintes componentes:
    * **Front-end de representação e envio de formulários**: uma interface direcionada ao usuário final para uso pelos usuários finais do AEM Forms (por exemplo, cidadãos que acessam um site governamental). Isso fornece funcionalidades de representação de formulário (formulário de exibição em um navegador da Web) e envio.
    * **REST APIs**: JSPs e servlets exportam um subconjunto de serviços de formulários para consumo remoto por clientes baseados em HTTP, como o SDK móvel de formulários.
 
-**AEM Forms no OSGi:** Um ambiente AEM Forms no OSGi é o AEM Author padrão ou AEM Publish com pacote do AEM Forms implantado nele. Você pode executar o AEM Forms no OSGi em um [ambiente de servidor único, farm e configurações em cluster](/help/sites-deploying/recommended-deploys.md). A configuração do cluster está disponível somente para instâncias do Autor AEM.
+**AEM Forms no OSGi:** Um ambiente AEM Forms no OSGi é um AEM Author padrão ou AEM Publish com pacote AEM Forms implantado nele. Você pode executar o AEM Forms no OSGi em um [ambiente de servidor único, farm e configurações em cluster](/help/sites-deploying/recommended-deploys.md). A configuração do cluster está disponível somente para instâncias do Autor AEM.
 
 **AEM Forms no JEE:** O AEM Forms no JEE é um servidor do AEM Forms em execução na pilha do JEE. Ele tem o AEM Author com pacotes complementares do AEM Forms e recursos adicionais do AEM Forms JEE implantados em uma única pilha do JEE em execução em um servidor de aplicativos. Você pode executar o AEM Forms no JEE em configurações de servidor único e em cluster. O AEM Forms no JEE é necessário apenas para executar a segurança de documentos, o gerenciamento de processos e para clientes do LiveCycle que estão atualizando para o AEM Forms. Estes são alguns cenários adicionais para usar o AEM Forms no JEE:
 
@@ -50,7 +51,7 @@ O AEM Forms no JEE também inclui os seguintes serviços de suporte para os comp
 * **Gerenciamento integrado de usuários:** Permite que os usuários do AEM Forms no JEE sejam reconhecidos como formulários AEM em usuários OSGi e ajuda a habilitar o SSO para usuários OSGi e JEE. Isso é necessário para cenários em que o logon único entre formulários AEM no OSGi e o AEM Forms no JEE é necessário (por exemplo, espaço de trabalho HTML).
 * **Hospedagem de ativos:** O AEM Forms no JEE pode fornecer ativos (por exemplo, formulários HTML5) renderizados no AEM Forms no OSGi.
 
-A interface do usuário de criação do AEM Forms não oferece suporte à criação de documentos de registro (DOR), PDF forms e HTML5 Forms. Esses ativos são projetados usando o aplicativo independente Forms Designer e carregados individualmente no AEM Forms Manager. Como alternativa, para o AEM Forms no JEE, os formulários podem ser criados como ativos de aplicativo (no AEM Forms Workbench) e implantados no AEM Forms no servidor JEE.
+A interface do usuário de criação do AEM Forms não oferece suporte à criação de documentos de registro (DOR), PDF forms e HTML5 Forms. Esses ativos são projetados usando o aplicativo Forms Designer independente e carregados individualmente no AEM Forms Manager. Como alternativa, para o AEM Forms no JEE, os formulários podem ser criados como ativos de aplicativo (no AEM Forms Workbench) e implantados no AEM Forms no servidor JEE.
 
 O AEM Forms no OSGi e o AEM Forms no JEE têm recursos de fluxo de trabalho. Você pode criar e implantar rapidamente fluxos de trabalho básicos para várias tarefas nos formulários AEM no OSGi, sem precisar instalar o recurso completo de Gerenciamento de processos do AEM Forms no JEE. Há alguma diferença no [recursos do fluxo de trabalho centrado em formulários no AEM Forms no OSGi e recurso de gerenciamento de processos do AEM Forms no JEE](capabilities-osgi-jee-workflows.md). O desenvolvimento e o gerenciamento de workflows centrados em formulários no AEM Forms no OSGi usam os familiares recursos de Caixa de entrada de AEM Workflow e AEM.
 
@@ -62,10 +63,10 @@ A imagem a seguir exibe várias configurações de servidor do Formulário AEM e
 
 **Autor:** Uma instância do autor é um servidor do AEM Forms executado no modo padrão de execução do autor. Pode ser AEM Forms no JEE ou AEM Forms no ambiente OSGi. Destina-se a usuários internos, designers de formulários e comunicações interativas e desenvolvedores. Ela permite as seguintes funcionalidades:
 
-* **Criação e gerenciamento de formulários e comunicações interativas:** Os designers e desenvolvedores podem criar e editar formulários adaptáveis e comunicações interativas, fazer upload de outros tipos de formulários criados externamente, por exemplo, formulários criados no Adobe Forms Designer, e gerenciar esses ativos usando o console do Forms Manager.
+* **Criação e gerenciamento de formulários e comunicações interativas:** Os designers e desenvolvedores podem criar e editar formulários adaptáveis e comunicações interativas, fazer upload de outros tipos de formulários criados externamente, por exemplo, formulários criados no Adobe Forms Designer e gerenciar esses ativos usando o console do Forms Manager.
 * **Publicação de formulários e comunicações interativas:** Os ativos hospedados em uma instância de autor podem ser publicados em uma instância de publicação para executar operações de tempo de execução. A publicação de ativos usa recursos de replicação do AEM. O Adobe recomenda que um agente de replicação seja configurado em todas as instâncias do autor para enviar manualmente formulários publicados para instâncias de processamento e outro agente de replicação seja configurado nas instâncias de processamento com o *No recebimento* acionador ativado para replicar automaticamente os formulários recebidos para publicar instâncias.
 
-**Publicar:** Uma instância de publicação é um servidor do AEM Forms em execução no modo de execução padrão Publicar. As instâncias de publicação destinam-se aos usuários finais de aplicativos baseados em formulário, por exemplo, usuários que acessam um site público e enviam formulários. Ela permite as seguintes funcionalidades:
+**Publicar:** Uma instância de publicação é um servidor do AEM Forms em execução no modo de execução padrão do Publish. As instâncias do Publish se destinam a usuários finais de aplicativos baseados em formulário, por exemplo, usuários que acessam um site público e enviam formulários. Ela permite as seguintes funcionalidades:
 
 * Renderização e envio do Forms para usuários finais.
 * Transporte de dados brutos de formulário enviados para instâncias de processamento para processamento posterior e armazenamento no sistema de registro final. A implementação padrão fornecida no AEM Forms faz isso usando os recursos de replicação reversa do AEM. Uma implementação alternativa também está disponível para enviar diretamente os dados de formulário para servidores de processamento, em vez de salvá-los localmente primeiro (o último é um pré-requisito para a ativação da replicação reversa). Os clientes que estão preocupados com o armazenamento de dados potencialmente confidenciais em instâncias de publicação podem fazer isso [implementação alternativa](/help/forms/using/configuring-draft-submission-storage.md), já que as instâncias de processamento normalmente ficam em uma zona mais segura.
@@ -73,21 +74,21 @@ A imagem a seguir exibe várias configurações de servidor do Formulário AEM e
 
 **Processando:** Uma instância do AEM Forms em execução no modo Autor sem usuários atribuídos ao grupo de gerenciadores de formulários. Você pode implantar o AEM Forms no JEE ou o AEM Forms no OSGi como uma instância de processamento. Os usuários não são atribuídos para garantir que as atividades de criação e gerenciamento de formulários não sejam executadas na instância de Processamento e ocorram somente na instância de Autor. Uma instância de Processamento permite as seguintes funcionalidades:
 
-* **Processamento de dados de formulário brutos provenientes de uma instância de Publicação:** Isso é feito principalmente em uma instância de Processamento por meio de workflows de AEM que são acionados quando os dados chegam. Os workflows podem usar a etapa Modelo de dados de formulário fornecida pronta para uso para arquivar os dados ou documentos em um armazenamento de dados adequado.
-* **Armazenamento seguro de dados de formulário**: o processamento fornece um repositório por trás do firewall para dados de forma brutos que são isolados dos usuários. Nem os designers de formulário na instância do Autor nem os usuários finais na instância de Publicação podem acessar esse repositório.
+* **Processamento de dados de formulário brutos provenientes de uma instância do Publish:** Isso é feito principalmente em uma instância de Processamento por meio de workflows de AEM que são acionados quando os dados chegam. Os workflows podem usar a etapa Modelo de dados de formulário fornecida pronta para uso para arquivar os dados ou documentos em um armazenamento de dados adequado.
+* **Armazenamento seguro de dados de formulário**: o processamento fornece um repositório por trás do firewall para dados de forma brutos que são isolados dos usuários. Nem os designers de formulário na instância do Autor nem os usuários finais na instância do Publish podem acessar esse repositório.
 
   >[!NOTE]
   >
   >A Adobe recomenda usar um armazenamento de dados de terceiros para salvar os dados processados finais em vez de usar o repositório AEM.
 
-* **Armazenamento e pós-processamento de dados de correspondência provenientes de uma instância de publicação:** Os fluxos de trabalho do AEM executam o pós-processamento opcional das definições de correspondência. Esses workflows podem salvar os dados processados finais em um armazenamento de dados externo adequado.
+* **Armazenamento e pós-processamento de dados de correspondência provenientes de uma instância do Publish:** Os fluxos de trabalho do AEM executam o pós-processamento opcional das definições de correspondência. Esses workflows podem salvar os dados processados finais em um armazenamento de dados externo adequado.
 
 * **Hospedagem do HTML Workspace**: uma instância de processamento hospeda o front-end para o HTML Workspace. O espaço de trabalho do HTML fornece a interface de usuário para atribuição de tarefa/grupo associada a processos de revisão e aprovação.
 
 Uma instância de Processamento é configurada para ser executada no modo de execução do Autor porque:
 
-* Ela permite a replicação reversa de dados de formulário brutos de uma instância de publicação. O manipulador de armazenamento de dados padrão requer o recurso de replicação reversa.
-* Os fluxos de trabalho do AEM, que são o principal meio de processar dados de formulário brutos provenientes de uma instância de publicação, são recomendados para serem executados em um sistema no estilo do autor.
+* Ela permite a replicação reversa de dados de formulário brutos de uma instância do Publish. O manipulador de armazenamento de dados padrão requer o recurso de replicação reversa.
+* Os fluxos de trabalho do AEM, que são o principal meio de processar dados de formulário brutos provenientes de uma instância do Publish, são recomendados para serem executados em um sistema no estilo do autor.
 
 ## Topologias físicas de amostra para o AEM Forms no JEE {#sample-physical-topologies-for-aem-forms-on-jee}
 

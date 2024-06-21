@@ -8,14 +8,14 @@ topic-tags: develop
 role: Developer
 exl-id: 699a7309-a976-480e-886f-2e466a477348
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%
 
 ---
 
-# Início Rápido da API Java do Serviço de Utilitários XMP (SOAP) {#xmp-utilities-service-java-apiquick-start-soap}
+# Início rápido da API Java do serviço de utilitários de XMP (SOAP) {#xmp-utilities-service-java-apiquick-start-soap}
 
 Os seguintes Quick Starts estão disponíveis para o serviço de Utilitários XMP.
 
