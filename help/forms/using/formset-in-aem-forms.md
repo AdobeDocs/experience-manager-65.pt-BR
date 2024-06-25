@@ -5,11 +5,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 docset: aem65
-feature: HTML5 Forms
+feature: HTML5 Forms,Mobile Forms
 exl-id: 039afdf3-013b-41b2-8821-664d28617f61
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2804'
 ht-degree: 0%
@@ -90,7 +90,7 @@ Depois que um conjunto de formulários é criado, você pode executar as seguint
 * Download: é possível baixar o conjunto de formulários com todas as suas dependências.
 * Iniciar/Gerenciar revisão: uma vez criado o conjunto de formulários, você pode configurar sua revisão clicando em Iniciar revisão. Depois que a revisão de um conjunto de formulários for iniciada, a opção Gerenciar revisão será exibida para o usuário. Na tela Gerenciar revisão, você pode atualizar/encerrar a revisão. Para as revisões adicionadas, é possível verificar a revisão e adicionar comentários, se necessário.
 * Excluir: exclui o conjunto completo de formulários. Os formulários no conjunto de formulários excluído permanecem no repositório.
-* Publicar/Desfazer publicação: publica/desfaz a publicação do conjunto de formulários juntamente com todos os formulários que ele contém e os ativos relacionados desses formulários.
+* Publish/Cancelar publicação: publica/cancela a publicação do conjunto de formulários juntamente com todos os formulários que ele contém e os ativos relacionados desses formulários.
 * Pré-visualização: A pré-visualização fornece duas opções: Pré-visualização como HTML (sem dados) e pré-visualização personalizada com dados de amostra.
 * Exibir/editar propriedades: é possível exibir/editar as propriedades de metadados de um conjunto de formulários selecionado.
 
@@ -140,7 +140,7 @@ Uma expressão de elegibilidade pode ser qualquer instrução JavaScript válida
 Além das funções JavaScript padrão, o conjunto de formulários também expõe a API fs.valueOf que fornece acesso ao valor de um campo de um formulário em um conjunto de formulários. Use esta API para acessar o valor de um campo de formulário em um conjunto de formulários. A sintaxe da API é fs.valueOf (formUid, fieldSOM), onde:
 
 * formUid (string): uma ID exclusiva de um formulário no conjunto de formulários. Você pode especificá-lo ao criar o conjunto de formulários na interface do usuário do gerenciador de formulários. Por padrão, é o nome do formulário.
-* fieldSOM (string): uma expressão SOM do campo no formulário especificado por formUid. A expressão SOM ou a expressão Modelo de Objeto de Script é usada para fazer referência a valores, propriedades e métodos em um modelo de objeto de documento (DOM) específico. Você pode exibi-lo no Designer de formulários na guia Scripts enquanto o campo estiver selecionado.
+* fieldSOM (string): uma expressão SOM do campo no formulário especificado por formUid. A expressão SOM ou a expressão Modelo de Objeto de Script é usada para fazer referência a valores, propriedades e métodos em um modelo de objeto de documento (DOM) específico. Você pode exibi-lo no Form Designer na guia Scripts enquanto o campo é selecionado.
 
 >[!NOTE]
 >

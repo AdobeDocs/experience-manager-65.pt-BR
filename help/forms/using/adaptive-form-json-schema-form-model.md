@@ -3,10 +3,10 @@ title: Como criar Forms adaptável usando o esquema JSON?
 description: Saiba como criar formulários adaptáveis usando o esquema JSON como modelo de formulário. Você pode usar esquemas JSON existentes para criar formulários adaptáveis. Saiba mais com uma amostra de um esquema JSON, pré-configure campos na definição do esquema JSON, limite valores aceitáveis para um componente de formulário adaptável e aprenda construções não compatíveis.
 role: User, Developer
 level: Beginner, Intermediate
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1844'
 ht-degree: 4%

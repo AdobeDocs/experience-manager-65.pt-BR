@@ -3,9 +3,9 @@ title: Não é possível usar o Experience Manager Forms com determinadas versõ
 description: Não é possível usar o Experience Manager Forms com determinadas versões do JDK do Oracle
 exl-id: 6a8a7cb7-77d6-4bfc-82f3-82d0fddfc10a
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms, Troubleshooting
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 1%

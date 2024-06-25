@@ -1,6 +1,6 @@
 ---
-title: Java&trade; API QuickStart (SOAP) do serviço Assembler
-description: Saiba como Montar, Desmontar e criar dinamicamente um documento PDF usando o Java&trade; API QuickStart (SOAP) do Serviço de Assembler.
+title: Serviço do Assembler Java&trade; API QuickStart(SOAP)
+description: Saiba como Montar, Desmontar e criar dinamicamente um documento do PDF usando o serviço do Assembler Java&trade; API QuickStart (SOAP).
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,28 +8,29 @@ topic-tags: develop
 role: Developer
 exl-id: 306cd40b-1831-45aa-9f58-3ab1983a68c5
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 0%
 
 ---
 
-# QuickStart (SOAP) da API Java™ do serviço do Assembler {#assembler-service-java-api-quickstart-soap}
+# QuickStart(SOAP) da API Java™ do serviço do Assembler {#assembler-service-java-api-quickstart-soap}
 
 O Java API Quick Start (SOAP) está disponível para o serviço Assembler
 
-[Início rápido (modo SOAP): montagem de um documento PDF usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api)
+[Início rápido (modo SOAP): Montagem de um documento PDF usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api)
 
 [Início rápido (modo SOAP): desmontagem de um documento PDF usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api)
 
-[Início rápido (modo SOAP): montagem de um documento PDF criptografado usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
+[Início rápido (modo SOAP): Montagem de um documento PDF criptografado usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
 
 [Início rápido (modo SOAP): Montagem de um documento PDF com numeração de bits usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
 
-[Início rápido (modo SOAP): montagem de um documento PDF não interativo usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api)
+[Início rápido (modo SOAP): Montagem de um documento PDF não interativo usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api)
 
-[Início rápido (modo SOAP): determinar se um documento é compatível com o PDF/A usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api)
+[Início rápido (modo SOAP): determinar se um documento é compatível com PDF/A usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api)
 
 [Início rápido (modo SOAP): validação de documentos DDX usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api)
 
@@ -37,7 +38,7 @@ O Java API Quick Start (SOAP) está disponível para o serviço Assembler
 
 [Início rápido (modo SOAP): criando dinamicamente um documento DDX usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
 
-[Início rápido (modo SOAP): montagem de Portfolio PDF usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
+[Início rápido (modo SOAP): montagem de Portfolio de PDF usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
 
 [Início rápido (modo SOAP): Montagem de vários fragmentos XDP usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 
@@ -47,7 +48,7 @@ As operações do AEM Forms podem ser executadas usando a API altamente tipada d
 >
 >Os Quick Starts na programação com o AEM Forms são baseados no Forms Server que está sendo implantado no JBoss® Application Server e no sistema operacional Microsoft® Windows. No entanto, se você estiver usando outro sistema operacional, como o UNIX®, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicações J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Início rápido (modo SOAP): montagem de um documento PDF usando a API Java {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
+## Início rápido (modo SOAP): Montagem de um documento PDF usando a API Java {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
 
 O exemplo de código Java a seguir mescla dois documentos de origem de PDF chamados *map.pdf* e *directs.pdf* em um único documento PDF. O nome do documento de PDF único é *AssemblerResultPDF.pdf*. O nome do documento DDX é *shell.xml*. (Consulte [Montagem programática de documentos do PDF](/help/forms/developing/assembling-pdf-documents.md#programmatically-assembling-pdf-documents).)
 
@@ -330,7 +331,7 @@ O exemplo de código Java a seguir desmonta um documento PDF chamado *AssemblerR
  }
 ```
 
-## Início rápido (modo SOAP): montagem de um documento PDF criptografado usando a API Java {#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api}
+## Início rápido (modo SOAP): Montagem de um documento PDF criptografado usando a API Java {#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api}
 
 O exemplo de código Java a seguir monta um documento PDF criptografado por senha. O documento de PDF não seguro é denominado *Loan.pdf*. Observe que o nome do documento DDX é *shell_Encrypt.xml*. O documento PDF criptografado é denominado *AssemblerEncryptedPDF.pdf*. (Consulte [Montagem de Documentos PDF Criptografados](/help/forms/developing/assembling-pdf-documents.md#assembling-encrypted-pdf-documents).)
 
@@ -611,7 +612,7 @@ O exemplo de código Java a seguir monta um documento PDF com identificadores de
  }
 ```
 
-## Início rápido (modo SOAP): montagem de um documento PDF não interativo usando a API Java {#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api}
+## Início rápido (modo SOAP): Montagem de um documento PDF não interativo usando a API Java {#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api}
 
 O exemplo de código Java a seguir monta um documento PDF não interativo. O documento PDF interativo passado para o serviço Assembler é denominado *Loan.pdf*. Observe que o nome do documento DDX é *shell_XFA.xml*. O documento PDF não interativo é salvo como um arquivo PDF chamado *MontarPDFnãoInterativo.pdf*. (Consulte [Montagem de documentos PDF não interativos](/help/forms/developing/assembling-pdf-documents.md#assembling-non-interactive-pdf-documents).)
 
@@ -735,7 +736,7 @@ O exemplo de código Java a seguir monta um documento PDF não interativo. O doc
  
 ```
 
-## Início rápido (modo SOAP): determinar se um documento é compatível com o PDF/A usando a API Java {#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api}
+## Início rápido (modo SOAP): determinar se um documento é compatível com PDF/A usando a API Java {#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api}
 
 O código Java a seguir determina se o documento de PDF de entrada é compatível com PDF/A. O documento de PDF de entrada passado para o serviço do Assembler é denominado *Loan.pdf*. O nome do documento DDX é shell_PDFA.xml. O documento XML retornado do serviço Assembler e especifica se o documento de PDF de entrada é compatível com PDF/A é salvo como um arquivo XML chamado result.xml. Para obter informações sobre o *shell_PDFA.xml* Documento DDX usado neste exemplo de código, consulte [Determinar se os documentos são compatíveis com o PDF/A](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant).
 
@@ -1378,7 +1379,7 @@ public class AssemblePDFWithDynamicDDXSOAP {
 }
 ```
 
-## Início rápido (modo SOAP): montagem de Portfolio PDF usando a API Java {#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api}
+## Início rápido (modo SOAP): montagem de Portfolio de PDF usando a API Java {#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api}
 
 O exemplo de código Java a seguir cria um portfólio de PDF. O portfólio PDF é salvo como um arquivo PDF chamado *AssemblerResultPortfolio.pdf*. (Consulte [Montagem de Portfolio PDF](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-portfolios).)
 

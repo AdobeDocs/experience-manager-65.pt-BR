@@ -1,5 +1,5 @@
 ---
-title: Serviço de criptografia Java&trade; API QuickStart (SOAP)
+title: Serviço de criptografia Java&trade; API QuickStart(SOAP)
 description: Saiba como criptografar, remover a criptografia baseada em senha/certificado, desbloquear e determinar o tipo de criptografia para documentos PDF usando a API Java&trade; no modo SOAP.
 contentOwner: admin
 content-type: reference
@@ -8,7 +8,8 @@ topic-tags: develop
 role: Developer
 exl-id: e8b2aa43-ac27-410d-a809-56bfd1c2fcb1
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
@@ -17,15 +18,15 @@ ht-degree: 0%
 
 # Início rápido da API Java™ (SOAP) do serviço de criptografia {#encryption-service-java-api-quickstart-soap}
 
-[Início rápido (modo SOAP): criptografar um documento PDF usando o Java](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
+[Início rápido (modo SOAP): criptografia de um documento PDF usando o Java](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
-[Início rápido (modo SOAP): remoção da criptografia baseada em senha usando o Java](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
+[Início rápido (modo SOAP): Remoção da criptografia baseada em senha usando o Java](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
 
-[Início rápido (modo SOAP): criptografar um documento PDF com um certificado usando o Java](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
+[Início rápido (modo SOAP): criptografia de um documento PDF com um certificado usando o Java](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
 
 [Início rápido (modo SOAP): remoção da criptografia baseada em certificado usando o Java](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
 
-[Início rápido (modo SOAP): desbloquear um documento de PDF criptografado usando o Java](encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api)
+[Início rápido (modo SOAP): desbloquear um documento PDF criptografado usando o Java](encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api)
 
 [Início rápido (modo SOAP): determinação do tipo de criptografia usando o Java](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
@@ -478,7 +479,7 @@ O exemplo de código Java™ a seguir remove a criptografia baseada em certifica
  }
 ```
 
-## Início rápido (modo SOAP): desbloqueio de um documento de PDF criptografado usando a API Java™ {#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api}
+## Início rápido (modo SOAP): desbloqueio de um documento PDF criptografado usando a API Java™ {#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api}
 
 O seguinte exemplo de código Java™ desbloqueia um documento PDF criptografado por senha chamado *EncryptLoan.pdf*. (Consulte [Desbloquear documentos PDF criptografados](/help/forms/developing/encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents).)
 

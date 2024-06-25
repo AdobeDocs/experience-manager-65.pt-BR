@@ -8,20 +8,21 @@ topic-tags: develop
 role: Developer
 exl-id: 76d855cf-ebfa-487a-b1c8-755e7e45dd73
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 0%
 
 ---
 
-# Início rápido da API Java (SOAP) do serviço de segurança de documentos {#document-security-service-javaapi-quick-start-soap}
+# SOAP (Java API Quick Start, início rápido da API) do serviço de segurança de documentos {#document-security-service-javaapi-quick-start-soap}
 
-O Java API Quick Start (SOAP) está disponível para o serviço Rights Management:
+O Java API Quick Start(SOAP) está disponível para o serviço Rights Management:
 
 [Início rápido (modo SOAP): criação de uma política usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-creating-a-policy-using-the-java-api)
 
-[Início rápido (modo SOAP): Modificação de uma política usando a API Java](#quick-start-soap-mode-modifying-a-policy-using-the-java-api)
+[Início rápido (modo SOAP): modificação de uma política usando a API Java](#quick-start-soap-mode-modifying-a-policy-using-the-java-api)
 
 [Início rápido (modo SOAP): exclusão de uma política usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-deleting-a-policy-using-the-java-api)
 
@@ -39,7 +40,7 @@ O Java API Quick Start (SOAP) está disponível para o serviço Rights Managemen
 
 [Início rápido (modo SOAP): modificação de uma marca d&#39;água usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-modifying-a-watermark-using-the-java-api)
 
-[Início rápido (modo SOAP): procurando eventos usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-searching-for-events-using-the-java-api)
+[Início rápido (modo SOAP): procurar eventos usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-searching-for-events-using-the-java-api)
 
 [Início rápido (modo SOAP): remoção de uma política de um documento do Word usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api)
 
@@ -178,7 +179,7 @@ O exemplo de código Java a seguir cria uma nova política chamada *Permitir có
  
 ```
 
-## Início rápido (modo SOAP): Modificação de uma política usando a API Java {#quick-start-soap-mode-modifying-a-policy-using-the-java-api}
+## Início rápido (modo SOAP): modificação de uma política usando a API Java {#quick-start-soap-mode-modifying-a-policy-using-the-java-api}
 
 O exemplo de código Java a seguir modifica uma política chamada *Permitir cópia* definindo o período de concessão offline para 40 dias. (Consulte [Modificação de Políticas](/help/forms/developing/protecting-documents-policies.md#modifying-policies).)
 
@@ -922,7 +923,7 @@ O exemplo de código Java a seguir restaura o acesso a um documento PDF revogado
  
 ```
 
-## Início rápido (modo SOAP): criação de uma marca d&#39;água do PDF usando a API Java {#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api}
+## Início rápido (modo SOAP): criação de uma marca d&#39;água de PDF usando a API Java {#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api}
 
 O código Java a seguir cria uma nova marca d&#39;água de PDF chamada &#39;Marca d&#39;água de PDF de amostra&#39;. Esta marca d&#39;água contém um único elemento (Consulte [Criação de marcas d&#39;água](/help/forms/developing/protecting-documents-policies.md#creating-watermarks)).
 
@@ -1414,7 +1415,7 @@ O exemplo de código Java a seguir modifica uma marca d&#39;água chamada *Confi
  
 ```
 
-## Início rápido (modo SOAP): procurando eventos usando a API Java {#quick-start-soap-mode-searching-for-events-using-the-java-api}
+## Início rápido (modo SOAP): procurar eventos usando a API Java {#quick-start-soap-mode-searching-for-events-using-the-java-api}
 
 O exemplo de código Java a seguir pesquisa o evento de criação de política.
 
@@ -1867,7 +1868,7 @@ public class CreateAbstractPolicySoap {
 }
 ```
 
-## Início rápido (modo SOAP): Modificação de uma política abstrata usando a API Java {#quick-start-soap-mode-modifying-an-abstract-policy-using-the-java-api}
+## Início rápido (modo SOAP): modificação de uma política abstrata usando a API Java {#quick-start-soap-mode-modifying-an-abstract-policy-using-the-java-api}
 
 O código Java a seguir modifica uma política abstrata chamada AllowCopy. O conjunto de políticas no qual a política é modificada é denominado Conjunto de Políticas Global. Este conjunto de políticas existe por padrão. (Consulte Criação de políticas.)
 

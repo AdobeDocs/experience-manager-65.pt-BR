@@ -3,9 +3,10 @@ title: Como criar um formulário adaptável
 description: Saiba como criar um formulário adaptável usando o [!DNL Experience Manager Forms]. Os formulários adaptáveis são formulários HTML5 responsivos que simplificam a coleta e o processamento de informações. Saiba mais sobre como criar um formulário adaptável com base em um modelo de dados de formulário, modelo de formulário XFA e esquema XML ou JSON.
 role: User, Developer
 level: Beginner
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: d2be8d93c64ca18352a0e811605c526a8dae488f
+exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1984'
 ht-degree: 6%

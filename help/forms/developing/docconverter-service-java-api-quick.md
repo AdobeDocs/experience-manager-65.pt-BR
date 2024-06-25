@@ -8,14 +8,15 @@ topic-tags: develop
 role: Developer
 exl-id: 554b19d6-47c3-4171-b59d-343f1ad935b2
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 0%
 
 ---
 
-# Início rápido da API Java™ do serviço DocConverter (SOAP) {#docconverter-service-java-api-quickstart-soap}
+# Início rápido (SOAP) da API Java™ do serviço DocConverter {#docconverter-service-java-api-quickstart-soap}
 
 O Java™ API Quick Start (SOAP) está disponível para o serviço DocConverter.
 

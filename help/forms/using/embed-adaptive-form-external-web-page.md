@@ -4,11 +4,11 @@ description: Saiba como incorporar um formulário adaptável em uma página exte
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 docset: aem65
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1028'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Você pode [incorporar formulários adaptáveis em uma página do AEM Sites](/he
 
 Execute as seguintes etapas antes de incorporar um formulário adaptável a um site externo
 
-* Publique o formulário adaptável a ser incorporado à instância de publicação do AEM Forms Server.
+* O Publish exibe o formulário adaptável a ser incorporado à instância do Publish do AEM Forms Server.
 * Crie ou identifique uma página da Web em seu site onde você possa hospedar o formulário adaptável. Certifique-se de que a página da Web possa [ler arquivos jQuery de um CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) ou tem uma cópia local do jQuery incorporado. O jQuery é necessário para renderizar um formulário adaptável.
 * Quando o servidor AEM e a página da Web estiverem em domínios diferentes, execute as etapas listadas na seção, [permitir que o AEM Forms forneça formulários adaptáveis a um site entre domínios](#cross-site).
 

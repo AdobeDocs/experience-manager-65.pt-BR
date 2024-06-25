@@ -4,11 +4,11 @@ description: A guia HTML de visualização no LiveCycle Designer pode ser usada 
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-feature: HTML5 Forms
+feature: HTML5 Forms,Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Ao criar um formulário no AEM Forms Designer, além de visualizar a representação em PDF de um formulário, também é possível visualizar uma representação em HTML. Você pode usar o **Visualizar HTML** para visualizar um formulário da forma que apareceria em um navegador.
 
-## Habilitar Visualização de HTML para formulários XDP no Designer {#html-preview-of-forms-in-forms-designer}
+## Ativar a Visualização de HTML para formulários XDP no Designer {#html-preview-of-forms-in-forms-designer}
 
 Para permitir que o Designer gere a pré-visualização de HTML de formulários XDP, execute as seguintes configurações:
 
@@ -105,7 +105,7 @@ A variável [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) est
 
    >[!CAUTION]
    >
-   >Para testar a experiência real do usuário final, visualize seus formulários em navegadores externos (Google Chrome, Microsoft Edge, Mozilla Firefox e muito mais) também. Todo navegador usa um mecanismo separado para renderizar o HTML, de modo que pode haver algumas diferenças na maneira como um formulário é visualizado no Designer e no navegador externo.
+   >Para testar a experiência real do usuário final, visualize seus formulários em navegadores externos (Google Chrome, Microsoft Edge, Mozilla Firefox e muito mais) também. Cada navegador usa um mecanismo separado para renderizar o HTML, de modo que pode haver algumas diferenças na maneira como um formulário é visualizado no Designer e no navegador externo.
 
 ## Para visualizar um formulário usando dados de amostra {#to-preview-a-form-using-sample-data}
 

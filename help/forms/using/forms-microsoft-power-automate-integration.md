@@ -2,11 +2,11 @@
 title: Como conectar e enviar dados do formulário adaptável para o Microsoft&reg; Power Automate?
 description: Um guia passo a passo para conectar e enviar dados do Formulário adaptável para o Microsoft&reg; Power Automate.
 keywords: Forms Microsoft Power Automate adaptável, enviar dados do Forms adaptável para o Microsoft Power Automate
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 3fd26ddb-d247-462f-a0f6-8af6166516c1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 2%
@@ -41,7 +41,7 @@ Execute as seguintes ações para conectar sua instância do AEM Forms Author ao
 1. [Criar uma Microsoft](#ms-power-automate-application)
 1. [Criar Microsoft](#microsoft-power-automate-dataverse-cloud-configuration)
 1. [Criar Microsoft](#create-microsoft-power-automate-flow-cloud-configuration)
-1. [Publicar Microsoft](#publish-microsoft-power-automate-dataverse-cloud-configuration)
+1. [Publish Microsoft](#publish-microsoft-power-automate-dataverse-cloud-configuration)
 
 ### Criar Aplicativo do Ative Diretory do Microsoft® Azure {#ms-power-automate-application}
 
@@ -106,11 +106,11 @@ Execute as seguintes ações para conectar sua instância do AEM Forms Author ao
 1. No **[!UICONTROL Configurar Dataverse para o Microsoft® Power Automate]** página, especifique a **[!UICONTROL ID do cliente]** (também conhecido como ID do aplicativo), **[!UICONTROL Segredo do cliente]**, **[!UICONTROL URL do OAuth]** e **[!UICONTROL URL de ambiente dinâmico]**. Use a ID do cliente, o Segredo do cliente, o URL do OAuth e a ID de ambiente do Dynamics. Use a opção Endpoints na interface do usuário do aplicativo do Microsoft® Azure Ative Diretory para localizar o URL do OAuth. Abra o [Meus fluxos](https://us.flow.microsoft.com) e selecione Meus fluxos use a ID listada em URL como ID de ambiente do Dynamics.
 1. Selecionar **[!UICONTROL Conectar]**. Se solicitado, faça logon em sua conta do Microsoft® Azure. Selecione **[!UICONTROL Salvar]**.
 
-### Publicar as configurações de nuvem do Microsoft® Power Automate Dataverse e do Microsoft® Power Automate Flow Service {#publish-microsoft-power-automate-dataverse-cloud-configuration}
+### Publish Configurações de nuvem do Microsoft® Power Automate Dataverse e do Microsoft® Power Automate Flow Service {#publish-microsoft-power-automate-dataverse-cloud-configuration}
 
 1. Navegue até **[!UICONTROL Ferramentas]** ![martelo](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® Power Automate Dataverse]** e abra o contêiner de configuração criado no anterior [Criar configuração de nuvem do Microsoft® Power Automate Dataverse](#microsoft-power-automate-dataverse-cloud-configuration) seção.
 1. Selecione o `dataverse` e selecione **[!UICONTROL Publish]**.
-1. Na página Publicar, selecione **[!UICONTROL Todas as configurações]** e selecione **[!UICONTROL Publish]**. Publique as configurações de nuvem do Power Automate Dataverse e do Power Automate Flow Service.
+1. Na página do Publish, selecione **[!UICONTROL Todas as configurações]** e selecione **[!UICONTROL Publish]**. Publish: configurações de nuvem do Power Automate Dataverse e do Power Automate Flow Service.
 
 Sua instância do AEM Forms Author agora está conectada ao Microsoft® Power Automate. Agora é possível enviar dados do Adaptive Forms para um fluxo do Power Automate.
 

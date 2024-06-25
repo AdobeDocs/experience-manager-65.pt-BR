@@ -5,7 +5,8 @@ docset: aem65
 exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms
+source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
 source-wordcount: '1762'
 ht-degree: 0%
@@ -178,7 +179,7 @@ Execute as seguintes etapas para criar regras com base na **[!UICONTROL Adobe Ex
    >[!VIDEO](https://video.tv.adobe.com/v/337425)
 
 
-### Fluxos de publicação {#publish-flow}
+### Fluxos Publish {#publish-flow}
 
 Depois de criar os elementos de dados e usá-los nas regras, publique a configuração para coletar dados do formulário no [!DNL Adobe Analytics].
 
@@ -190,11 +191,11 @@ Execute as seguintes etapas para publicar a configuração:
 
 1. Selecionar **[!UICONTROL Adicionar todos os recursos alterados]** e selecione **[!UICONTROL Salvar e criar no desenvolvimento]**.
 
-1. No **[!UICONTROL Desenvolvimento]** , selecione ![Mais opções](/help/forms/using/assets/more-options-icon.svg) e selecione **[!UICONTROL Aprovar e publicar na produção]**.
+1. No **[!UICONTROL Desenvolvimento]** , selecione ![Mais opções](/help/forms/using/assets/more-options-icon.svg) e selecione **[!UICONTROL Aprovar o &amp; Publish para produção]**.
 
 1. Confirme as alterações e o fluxo de publicação será exibido em breve na **[!UICONTROL Publicado]** seção.
 
-![Fluxo de publicação](/help/forms/using/assets/publish-flow.png)
+![Fluxo do Publish](/help/forms/using/assets/publish-flow.png)
 
 ## 2. Configurar o AEM Forms {#configure-aem-forms}
 
@@ -218,7 +219,7 @@ Execute as seguintes etapas para criar uma configuração do Adobe Launch:
 
 1. Selecionar **[!UICONTROL Salvar e fechar]**.
 
-1. Publique a configuração.
+1. Publish da configuração.
 
 ### Ativar [!DNL Adobe Analytics] para um formulário adaptável {#enable-analytics-adaptive-form}
 
@@ -228,7 +229,7 @@ Para usar [!DNL Adobe Launch] em um Formulário adaptável existente:
 1. Selecione o Formulário adaptável e selecione **[!UICONTROL Propriedades]**.
 1. No **[!UICONTROL Básico]** , selecione a [contêiner de configuração](#create-adobe-launch-configuration) usado ao criar a configuração do Adobe Launch.
 1. Selecionar **[!UICONTROL Salvar e fechar]**. O formulário adaptável está ativado para [!DNL Adobe Analytics].
-1. Publique o formulário.
+1. Publish o formulário.
 
 Depois de habilitar [!DNL Adobe Analytics] para um formulário adaptável, é possível [validar](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=en#validate-the-page-view-beacon) se houver um fluxo de evento de dados apropriado entre o AEM Forms e [!DNL Adobe Analytics]. A integração do AEM Forms com o Adobe Analytics está concluída. Agora você pode [configurar e exibir relatórios no Adobe Analytics](#view-reports-adobe-analytics).
 

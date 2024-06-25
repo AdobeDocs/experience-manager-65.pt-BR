@@ -5,11 +5,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 docset: aem65
-feature: HTML5 Forms
+feature: HTML5 Forms,Mobile Forms
 exl-id: 7c8d501f-c953-495e-8bac-1f66fd99c783
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Para obter recursos XFA comuns, consulte as seguintes práticas recomendadas e d
 
 A maioria das etapas para criar um modelo de formulário, como associações de esquema ou escrever lógica de formulário, são as mesmas. No entanto, devido a diferenças inerentes entre a renderização e o mecanismo de script de um cliente thick como o Adobe Reader e formulários baseados em navegador, há algumas recomendações descritas na seção [práticas recomendadas](/help/forms/using/design-accessible-html5-forms.md) artigo. Essas práticas recomendadas ajudam você a criar modelos de formulário para funcionar conforme esperado em ambos os formatos.
 
-### Recursos no AEM Forms Designer para HTML5 Forms {#capabilities-in-aem-forms-designer-for-html-forms}
+### Recursos do AEM Forms Designer para HTML5 Forms {#capabilities-in-aem-forms-designer-for-html-forms}
 
 #### Visualizar HTML {#preview-html}
 
@@ -36,7 +36,7 @@ A guia Visualizar HTML é adicionada no modo Design para que os designers de for
 
 #### Assinatura escrita {#scribble-signature}
 
-O principal público-alvo para formulários HTML5 são os dispositivos de toque. Portanto, um novo controle de assinatura de rabisco é adicionado no AEM Forms Designer. Você pode clicar ou arrastar e soltar o controle de assinatura de rabisco no modelo de formulário e configurá-lo. Ele é renderizado como um campo de rabisco na representação HTML5 e pode ser usado para rabiscar a assinatura em dispositivos de toque. Em computadores desktop, ele pode ser usado como um campo de rabisco usando o controle do mouse. Para obter mais informações sobre como usar esse recurso, consulte [Campo de rabisco XFA](../../forms/using/scribble-signature.md).
+O principal público-alvo para formulários HTML5 são os dispositivos de toque. Portanto, um novo controle de assinatura de rabisco é adicionado ao AEM Forms Designer. Você pode clicar ou arrastar e soltar o controle de assinatura de rabisco no modelo de formulário e configurá-lo. Ele é renderizado como um campo de rabisco na representação HTML5 e pode ser usado para rabiscar a assinatura em dispositivos de toque. Em computadores desktop, ele pode ser usado como um campo de rabisco usando o controle do mouse. Para obter mais informações sobre como usar esse recurso, consulte [Campo de rabisco XFA](../../forms/using/scribble-signature.md).
 
 ![4](assets/4.png)
 

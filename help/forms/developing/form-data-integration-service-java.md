@@ -8,14 +8,15 @@ topic-tags: develop
 role: Developer
 exl-id: a2560c87-ae95-4d65-869a-8cba177a1cd6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 0%
 
 ---
 
-# Início rápido da API Java (SOAP) do serviço de integração de dados de formulário {#form-data-integration-service-javaapi-quick-start-soap}
+# SOAP (Início rápido) da API Java do serviço de integração de dados de formulário {#form-data-integration-service-javaapi-quick-start-soap}
 
 Os seguintes Quick Starts estão disponíveis para o serviço de Integração de dados de formulário.
 

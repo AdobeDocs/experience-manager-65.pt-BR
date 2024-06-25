@@ -4,11 +4,11 @@ description: O Forms permite configurar uma ação de envio para definir como um
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2593'
 ht-degree: 2%
@@ -269,6 +269,6 @@ O autor pode configurar a biblioteca JavaScript personalizada por formulário ad
 
 ## Tratamento de erros na ação de envio {#error-handling-on-submit-action}
 
-Como parte das diretrizes de segurança e proteção do Experience Manager, configure páginas de erro personalizadas como 404.jsp e 500.jsp. Esses manipuladores são chamados quando ao enviar um formulário 404 ou 500 erros são exibidos. Os manipuladores também são chamados quando esses códigos de erro são acionados no nó Publicar.
+Como parte das diretrizes de segurança e proteção do Experience Manager, configure páginas de erro personalizadas como 404.jsp e 500.jsp. Esses manipuladores são chamados quando ao enviar um formulário 404 ou 500 erros são exibidos. Os manipuladores também são chamados quando esses códigos de erro são acionados no nó do Publish.
 
 Para obter mais informações, consulte [Personalizar páginas mostradas pelo Manipulador de erros](/help/sites-developing/customizing-errorhandler-pages.md).

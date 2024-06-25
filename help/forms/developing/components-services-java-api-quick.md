@@ -8,14 +8,15 @@ topic-tags: develop
 role: Developer
 exl-id: fe1198b5-4145-4dcd-ab8a-4015daaf89b7
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
 
 ---
 
-# Início rápido da API Java™ de componentes e serviços (SOAP) {#components-and-services-java-apiquick-start-soap}
+# Componentes e serviços Início rápido da API Java™ (SOAP) {#components-and-services-java-apiquick-start-soap}
 
 O Java™ API Quick Start (SOAP) está disponível para componentes e serviços.
 
@@ -241,7 +242,7 @@ O exemplo de código Java™ a seguir define o contexto de execução Executar c
  
 ```
 
-## Início rápido (modo SOAP): desabilitação da segurança do serviço usando a API Java™ {#quick-start-soap-mode-disabling-service-security-using-the-java-api}
+## Início rápido (modo SOAP): desativação da segurança do serviço usando a API Java™ {#quick-start-soap-mode-disabling-service-security-using-the-java-api}
 
 O exemplo de código Java™ a seguir desativa a segurança do serviço EncryptDocument de exemplo e dos serviços que são chamados dentro desse serviço (os serviços Set Value e Encryption ).
 

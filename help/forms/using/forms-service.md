@@ -4,11 +4,11 @@ description: O artigo descreve o serviço Forms e as tarefas relacionadas ao for
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-feature: Document Services
+feature: Document Services,Forms Service,PDF Generator
 exl-id: 6580fe6f-3cdb-45ec-8ba3-51dc60d1965e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
@@ -43,11 +43,11 @@ Use o `exportData` (Javadoc) operação do serviço Forms para extrair dados XML
 
 ## Importação de dados para o PDF forms {#importing-data-into-pdf-forms}
 
-O serviço Forms também permite mesclar um formulário PDF criado com o AEM Forms Designer ou o `renderPDFForm` operação com dados XML. A variável `importData` (Javadoc) operação do serviço Forms aceita o formulário PDF e os dados XML e retorna um formulário PDF com dados XML.
+O serviço Forms também permite mesclar um formulário PDF criado com o AEM Forms Designer ou com o `renderPDFForm` operação com dados XML. A variável `importData` (Javadoc) operação do serviço Forms aceita o formulário PDF e os dados XML e retorna um formulário PDF com dados XML.
 
 ## Renderização de formulários com base em fragmentos {#rendering-forms-based-on-fragments}
 
-O serviço Forms pode renderizar formulários com base em fragmentos criados usando o AEM Forms Designer. Um fragmento é uma parte reutilizável de um formulário. Ele é salvo como um arquivo XDP separado que pode ser inserido em vários designs de formulário. Por exemplo, um fragmento pode incluir um bloco de endereço ou texto legal.
+O serviço do Forms pode renderizar formulários com base em fragmentos criados usando o AEM Forms Designer. Um fragmento é uma parte reutilizável de um formulário. Ele é salvo como um arquivo XDP separado que pode ser inserido em vários designs de formulário. Por exemplo, um fragmento pode incluir um bloco de endereço ou texto legal.
 
 O uso de fragmentos simplifica e acelera a criação e a manutenção de um grande número de formulários. Ao criar um formulário, insira uma referência ao fragmento necessário para que o fragmento apareça no formulário. A referência do fragmento contém um subformulário que aponta para o arquivo XDP físico.
 
@@ -55,4 +55,4 @@ Estas são as vantagens de usar fragmentos:
 
 * **Reutilização de conteúdo**: é possível reutilizar o conteúdo em vários designs de formulário. Para reutilizar rapidamente partes do mesmo conteúdo em vários formulários, crie um fragmento. Copiar ou recriar o conteúdo leva mais tempo. O uso de fragmentos também garante que as partes usadas com frequência de um design de formulário tenham conteúdo e aparência consistentes em todos os formulários de referência.
 * **Atualizações globais**: é possível fazer alterações globais em vários formulários apenas uma vez em um arquivo. Você pode alterar o conteúdo, os objetos de script, as associações de dados, o layout ou os estilos em um fragmento. Todos os formulários XDP que fazem referência ao fragmento refletem as alterações.
-* **Criação de formulário compartilhado**: é possível compartilhar a criação de formulários entre vários recursos. Desenvolvedores de formulários com experiência em scripts ou outros recursos avançados do AEM Forms Designer podem desenvolver e compartilhar fragmentos que usam scripts e propriedades dinâmicas. Os designers de formulários podem usar os fragmentos para criar formulários. Além disso, eles podem usar os fragmentos para garantir que todas as partes de um formulário tenham uma aparência e funcionalidade consistentes em vários formulários.
+* **Criação de formulário compartilhado**: é possível compartilhar a criação de formulários entre vários recursos. Desenvolvedores de formulários com experiência em script ou outros recursos avançados do AEM Forms Designer podem desenvolver e compartilhar fragmentos que usam script e propriedades dinâmicas. Os designers de formulários podem usar os fragmentos para criar formulários. Além disso, eles podem usar os fragmentos para garantir que todas as partes de um formulário tenham uma aparência e funcionalidade consistentes em vários formulários.

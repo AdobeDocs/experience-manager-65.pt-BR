@@ -8,14 +8,15 @@ topic-tags: develop
 role: Developer
 exl-id: c5bf9184-a837-4033-9962-7b3052498e75
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
-# Início rápido da API Java™ (SOAP) do serviço Distiller {#distiller-service-java-api-quickstart-soap}
+# Início rápido da API Java™ do serviço Distiller (SOAP) {#distiller-service-java-api-quickstart-soap}
 
 O Java™ API Quick Start (SOAP) está disponível para o serviço Distiller®:
 

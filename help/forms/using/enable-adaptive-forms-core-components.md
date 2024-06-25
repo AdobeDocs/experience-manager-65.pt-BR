@@ -6,10 +6,10 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms,Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 3%
@@ -27,7 +27,7 @@ ht-degree: 3%
 
 Habilitar os Componentes principais adaptáveis do Forms permite que você comece a criar, publicar e fornecer [Forms adaptável baseado em componentes principais](create-an-adaptive-form-core-components.md) e [Forms adaptável headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=pt-BR) do seu ambiente AEM 6.5 Forms.
 
-Para ativar os Componentes principais do Adaptive Forms no ambiente AEM 6.5 Forms, configure e implante um [Arquétipo AEM 41 ou posterior](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) projeto baseado em (com as opções de formulários ativadas) em todas as instâncias do Autor e de Publicação.
+Para ativar os Componentes principais do Adaptive Forms no ambiente AEM 6.5 Forms, configure e implante um [Arquétipo AEM 41 ou posterior](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) projeto baseado em (com as opções de formulários ativadas) em todas as instâncias do Autor e do Publish.
 
 Este artigo fornece instruções detalhadas para configurar e implantar o Arquétipo AEM 41 ou posterior com base em seu ambiente AEM 6.5 Forms para ativar os Componentes principais adaptáveis do Forms. Consulte a lista abaixo para obter **AEM 6.5** versões compatíveis para ativar os Componentes principais do Forms:
 
@@ -43,7 +43,7 @@ Antes de ativar os Componentes principais do Adaptive Forms em um ambiente AEM 6
 
 ## Criar e implantar o projeto mais recente baseado no Arquétipo AEM
 
-Para criar um Arquétipo AEM 41 ou [posteriormente](https://github.com/adobe/aem-project-archetype) projeto baseado em e implantá-lo em todas as suas instâncias de Autor e Publicação:
+Para criar um Arquétipo AEM 41 ou [posteriormente](https://github.com/adobe/aem-project-archetype) projeto baseado em e implantá-lo em todas as instâncias do Autor e do Publish:
 
 1. Faça logon no computador, hospedando e executando a instância do Forms AEM 6.5, como administrador.
 1. Abra o prompt de comando ou terminal e execute o seguinte comando para criar um projeto do Arquétipo AEM (com as opções de formulários ativadas):
@@ -134,13 +134,13 @@ Para criar um Arquétipo AEM 41 ou [posteriormente](https://github.com/adobe/aem
 
    Depois que o projeto do Arquétipo AEM é criado com êxito, um pacote AEM é gerado. Você pode encontrar o pacote em [Pasta de projeto do arquétipo AEM]\all\target\[appid].all-[version].zip
 
-1. Use o [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) para implantar o [Pasta de projeto do arquétipo AEM]\all\target\[appid].all-[version]pacote .zip em todas as instâncias Autor e Publicar.
+1. Use o [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) para implantar o [Pasta de projeto do arquétipo AEM]\all\target\[appid].all-[version]pacote .zip em todas as instâncias Author e Publish.
 
 >[!NOTE]
 >
 >
 >
-> * Caso encontre dificuldades ao acessar a caixa de diálogo de logon em uma instância de publicação, para instalar o pacote por meio do Gerenciador de pacotes, tente usar o URL: `http://[Publish Server URL]:[PORT]/system/console` para fazer logon. Isso permite que você acesse a página de logon em uma instância do Publish, permitindo que continue com o processo de instalação.
+> * Caso encontre dificuldades ao acessar a caixa de diálogo de logon em uma instância de publicação, para instalar o pacote por meio do Gerenciador de pacotes, tente usar o URL: `http://[Publish Server URL]:[PORT]/system/console` para fazer logon. Isso permite que você acesse a página de logon em uma instância do Publish, o que permite prosseguir com o processo de instalação.
 > * Não exclua ou descarte o projeto do Arquétipo depois de implantá-lo em seu ambiente. O projeto Arquétipo é necessário para adicionar temas personalizados e novos Componentes principais adaptáveis do Forms ao seu ambiente.
 
 Os Componentes principais são ativados para o seu ambiente. Um modelo de Formulário adaptável e um tema da Tela 3.0 em branco dos Componentes principais são implantados em seu ambiente, permitindo [criar Componentes principais com base no Forms adaptável](create-an-adaptive-form-core-components.md).

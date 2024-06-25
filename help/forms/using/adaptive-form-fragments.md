@@ -3,13 +3,13 @@ title: Fragmentos de formulário adaptável
 description: Formulários adaptáveis fornecem um mecanismo para criar um segmento de formulário, como um painel ou um grupo de campos, como usá-lo em qualquer formulário adaptável. Também é possível salvar um painel existente como fragmento.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2372'
 ht-degree: 1%
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 Embora cada formulário seja projetado para um propósito específico, há alguns segmentos comuns na maioria dos formulários, como o de fornecer detalhes pessoais, como nome e endereço, detalhes da família e detalhes de renda. Os desenvolvedores de formulários são necessários para criar esses segmentos comuns sempre que um novo formulário for criado.
 
-Os formulários adaptativos fornecem um mecanismo conveniente para criar formulários segmento curtir um painel ou uma grupo de campos apenas uma vez e reutilizá-los através de formulários adaptáveis. Esses segmentos reutilizáveis e independentes são chamados de Fragmentos de formulário adaptável.
+Formulários adaptáveis fornecem um mecanismo conveniente para criar segmentos de formulários, como um painel ou um grupo de campos, somente uma vez e reutilizá-los em formulários adaptáveis. Esses segmentos reutilizáveis e independentes são chamados de Fragmentos de formulário adaptável.
 
 >[!NOTE]
 >
@@ -118,7 +118,7 @@ Se você escolher **/** como a raiz do modelo de fragmento, a árvore XSD comple
 
 1. Clique em **OK**.
 
-   O painel é salvo na localidade especificada ou padrão no repositório. No formulário adaptável, o painel é substituído por um instantâneo do fragmento. Como mostrado abaixo, o painel Informações gerais e seus painéis secundários, Informações pessoais e Endereço, são salvos como um fragmento.
+   O painel é salvo na localidade especificada ou padrão no repositório. No formulário adaptável, o painel é substituído por um instantâneo do fragmento. Conforme mostrado abaixo, o painel Informações gerais e seus painéis secundários, Informações pessoais e Endereços são salvos como um fragmento.
 
    Para editar o fragmento, clique em **[!UICONTROL Editar ativo]** na barra de ferramentas do painel. O fragmento é aberto em uma nova guia ou janela no modo de edição.
 

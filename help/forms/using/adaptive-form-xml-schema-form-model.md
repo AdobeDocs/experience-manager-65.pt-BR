@@ -1,12 +1,12 @@
 ---
 title: Como criar Forms adaptável usando o esquema XML?
 description: Saiba como usar o esquema XML como modelo de formulário em um formulário adaptável. Aplique modelos XSD existentes para criar formulários adaptáveis e arraste e solte elementos de esquema do XSD no formulário adaptável. Saiba mais com uma amostra de um esquema XML, adicione propriedades especiais a campos usando o esquema XML e limite valores aceitáveis para um componente de formulário adaptável.
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1121'
 ht-degree: 5%

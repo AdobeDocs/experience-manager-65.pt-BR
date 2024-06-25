@@ -5,11 +5,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 docset: aem65
-feature: Document Services
+feature: Document Services,Reader Extensions, Forms Service,PDF Generator
 exl-id: 4c8a3877-1a3c-410d-ad1f-69c73ba4fcc1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1413'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Um documento pode ser enviado para uma impressora de rede, uma impressora local 
 
 >[!NOTE]
 >
->Um design de formulário normalmente é criado usando o Designer. Para obter informações sobre como criar designs de formulário para o serviço de Saída, consulte a Ajuda do Designer.
+>Um design de formulário é normalmente criado usando o Designer. Para obter informações sobre como criar designs de formulário para o Serviço de saída, consulte a Ajuda do Designer.
 
 Ao usar o Serviço de saída para mesclar dados XML com um design de formulário, o resultado é um documento PDF não interativo. Um documento PDF não interativo não permite que os usuários insiram dados em seus campos. Por outro lado, você pode usar o serviço Forms para criar um formulário PDF interativo que permita aos usuários inserir dados em seus campos.
 

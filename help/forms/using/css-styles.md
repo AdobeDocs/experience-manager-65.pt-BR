@@ -6,11 +6,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
-feature: HTML5 Forms
+feature: HTML5 Forms,Mobile Forms
 exl-id: 8cc90ff7-284e-41cd-bfda-7fa09371e270
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 2%
@@ -226,7 +226,7 @@ Cada campo tem um widget associado que representa o elemento da interface do usu
 
 ## Classes CSS para diferentes elementos Draw {#css-classes-for-different-draw-elements}
 
-É possível inserir elementos de desenho estáticos, como texto e imagens, usando o AEM Forms Designer. Para cada elemento de desenho, uma classe CSS separada é associada a esse elemento. A lista de classes CSS para elementos de desenho está listada abaixo. Cada elemento de desenho tem uma classe de desenho associada a ele.
+Você pode inserir elementos de desenho estáticos, como texto e imagens, usando o AEM Forms Designer. Para cada elemento de desenho, uma classe CSS separada é associada a esse elemento. A lista de classes CSS para elementos de desenho está listada abaixo. Cada elemento de desenho tem uma classe de desenho associada a ele.
 
 | **Tipo de Desenho** | **Classe CSS** |
 |---|---|

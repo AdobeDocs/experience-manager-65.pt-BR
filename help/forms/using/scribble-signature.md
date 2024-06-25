@@ -6,11 +6,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: designer
 docset: aem65
-feature: Forms Designer
+feature: Forms Designer,Designer
 exl-id: 2025182f-195b-40d0-aee7-67669f55b964
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Uso da Assinatura Escrita em formulários HTML5{#using-scribble-signature-in-html-forms}
 
-Os formulários HTML5 são cada vez mais usados em dispositivos de toque, e um requisito comum é o suporte a assinaturas. Escrever (com uma caneta ou um dedo) está se tornando uma maneira aceita de assinar formulários em dispositivos móveis. Os formulários HTML5 e o Forms Designer agora permitem a opção de ter um campo de assinatura de rabisco no formulário. Quando o formulário é renderizado no navegador, é possível assinar esses campos usando uma caneta, um mouse ou um toque.
+Os formulários HTML5 são cada vez mais usados em dispositivos de toque, e um requisito comum é o suporte a assinaturas. Escrever (com uma caneta ou um dedo) está se tornando uma maneira aceita de assinar formulários em dispositivos móveis. Os formulários HTML5 e o Forms Designer agora permitem a opção de ter um campo de assinatura à mão no formulário. Quando o formulário é renderizado no navegador, é possível assinar esses campos usando uma caneta, um mouse ou um toque.
 
 ## Como criar um formulário usando o campo Assinatura Escrita {#how-to-design-a-form-using-scribble-signature-field}
 

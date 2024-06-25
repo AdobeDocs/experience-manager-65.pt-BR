@@ -8,16 +8,17 @@ topic-tags: develop
 role: Developer
 exl-id: 1d2d6d64-f16e-4381-8691-f3c2744481ea
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
 
 ---
 
-# Início Rápido da API Java (SOAP) do Application Manager Service {#application-manager-service-javaapi-quick-start-soap}
+# SOAP (JavaAPI Quick Start, Início Rápido da API Java) do Application Manager Service {#application-manager-service-javaapi-quick-start-soap}
 
-O Java API Quick Start (SOAP) está disponível para o serviço do Application Manager.
+O Java API Quick Start(SOAP) está disponível para o serviço Application Manager.
 
 [Início rápido: implantação de aplicativos usando a API Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
 
@@ -31,7 +32,7 @@ As operações do AEM Forms podem ser executadas usando a API altamente tipada d
 
 >[!NOTE]
 >
->O Início rápido da API Java (SOAP) na programação com formulários AEM é baseado na Forms se você estiver usando outro sistema operacional, como o Unix, substituir caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicações J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>O Quick Start do Java API(SOAP) na programação com formulários AEM é baseado no Forms se você estiver usando outro sistema operacional, como o Unix, substituir caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicações J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Início rápido (modo SOAP): implantação de aplicativos usando a API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
