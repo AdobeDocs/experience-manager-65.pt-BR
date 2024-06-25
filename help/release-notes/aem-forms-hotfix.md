@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: f9e98d7de24d516eab163d42f6c1c3155915856e
+source-git-commit: ad71f1c92bba90000f72319536fffd255fb4db6e
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '673'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ Este artigo lista as correções críticas implementadas para resolver problemas
      </td>
     <td>
     <ul>
-    <li> Depois da atualização para o AEM Forms Service Pack 6.5.21.0, o serviço PaperCapture falha ao executar operações de OCR (Optical Character Recognition, reconhecimento ótico de caracteres) no PDF. Para resolver o problema, consulte a <a href="/help/forms/using/papercapture-service-resolution.md"> solução de problemas</a> artigo.(CQDOC-21680) </li>
+    <li> Depois da atualização para o AEM Forms Service Pack 6.5.21.0, o serviço PaperCapture falha ao executar operações de OCR (Optical Character Recognition, reconhecimento ótico de caracteres) no PDF. Para obter instruções de instalação, consulte o <a href="/help/forms/using/papercapture-service-resolution.md"> solução de problemas</a> artigo.(CQDOC-21680) </li>
     </ul>
     </td>    
   </tr>
@@ -54,7 +54,7 @@ Este artigo lista as correções críticas implementadas para resolver problemas
      </td>
     <td>
     <ul>
-    <li>Cartas de rascunho com dados XML ficam presas no estado de carregamento durante a pré-visualização. Para baixar e instalar a correção, consulte a<a href="#install-hotfix"> Baixar e instalar hotfix para problema de rascunho de carta</a> seção.(FORMS-14521)</li>
+    <li>Cartas de rascunho com dados XML ficam presas no estado de carregamento durante a pré-visualização. Para obter instruções de download e instalação do hotfix, consulte<a href="#install-hotfix"> Baixar e instalar hotfix para problema de rascunho de carta</a> seção.(FORMS-14521)</li>
     </ul>
     </td>    
   </tr>
