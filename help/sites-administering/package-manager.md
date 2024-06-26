@@ -9,9 +9,9 @@ content-type: reference
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: c705667e60ccfbc4612ef3212dbe549e6bea66a9
 workflow-type: tm+mt
-source-wordcount: '3565'
+source-wordcount: '3568'
 ht-degree: 1%
 
 ---
@@ -168,18 +168,22 @@ Os filtros podem incluir zero ou mais regras. Quando nenhuma regra é definida, 
 
 ![Guia Filtros](assets/edit-filter.png)
 
-Ao criar filtros, você pode definir um caminho ou usar uma expressão regular para especificar todos os nós que deseja incluir ou excluir.
+Ao criar regras, você define uma expressão regular (também conhecida como regex, regexp ou expressão racional) para especificar todos os nós que deseja incluir ou excluir.
 
 | Tipo de regra | Descrição |
 |---|---|
-| include | A inclusão de um diretório incluirá esse diretório e todos os arquivos e pastas nele (ou seja, toda a subárvore), mas **não** incluir outros arquivos ou pastas de sob o caminho raiz especificado. |
-| excluir | Excluir um diretório excluirá esse diretório e todos os arquivos e pastas nesse diretório (ou seja, toda a subárvore). |
+| include | Incluir incluirá todos os arquivos e pastas no diretório especificado que correspondam à expressão regular. Incluir **não** incluir outros arquivos ou pastas de sob o caminho raiz especificado. |
+| excluir | Excluir excluirá todos os arquivos e pastas que correspondem à expressão regular. |
 
 Os filtros de pacote são definidos com mais frequência quando você [crie o pacote.](#creating-a-new-package) No entanto, eles também podem ser editados posteriormente, após o que o pacote deve ser recriado para atualizar seu conteúdo com base nas novas definições de filtro.
 
 >[!TIP]
 >
 >Um pacote pode conter várias definições de filtro, para que nós de locais diferentes possam ser facilmente combinados em um pacote.
+
+>[!TIP]
+>
+>Para obter informações de fundo, consulte a [Apache Jackrabbit - Filtro do Workspace](https://jackrabbit.apache.org/filevault/filter.html) documentação.
 
 ### Dependências {#dependencies}
 
