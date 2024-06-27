@@ -10,9 +10,9 @@ exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 84979bbb49d47ec47c898a6747f64048b577c365
 workflow-type: tm+mt
-source-wordcount: '5398'
+source-wordcount: '5409'
 ht-degree: 1%
 
 ---
@@ -96,7 +96,7 @@ As tabelas a seguir listam cada item junto com:
   <tr>
    <td>colaborador</td>
    <td>Grupo</td>
-   <td><p>Privilégios básicos que permitem ao usuário gravar conteúdo (como em funcionalidade apenas).</p> <p>Não aloca nenhum privilégio para a árvore /content. Deve ser alocado para grupos ou usuários individuais.</p> </td>
+   <td><p>Privilégios básicos que permitem ao usuário gravar conteúdo (como em, somente os privilégios necessários para a funcionalidade básica).</p> <p>Não aloca nenhum privilégio para acessar a própria árvore /content. Eles devem ser alocados especificamente para grupos ou usuários individuais.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -196,7 +196,7 @@ As ações podem ser executadas em uma página (recurso). Para cada página na h
   </tr>
   <tr>
    <td>Replicar</td>
-   <td>O usuário pode replicar o conteúdo para outro ambiente (por exemplo, o ambiente de Publicação). O privilégio também é aplicado a qualquer página secundária.</td>
+   <td>O usuário pode replicar o conteúdo para outro ambiente (por exemplo, o ambiente Publish). O privilégio também é aplicado a qualquer página secundária.</td>
   </tr>
  </tbody>
 </table>
@@ -242,7 +242,7 @@ As Listas de controle de acesso são compostas por permissões individuais e sã
 
 As permissões também são aplicadas a qualquer página secundária.
 
-Se uma permissão não for herdada do nó principal, mas tiver pelo menos uma entrada local para ela, os símbolos a seguir serão anexados à caixa de seleção. Uma entrada local é aquela criada na interface do CRX 2.2 (atualmente, ACLs curinga só podem ser criadas no CRX.)
+Se uma permissão não for herdada do nó principal, mas tiver pelo menos uma entrada local para ela, os símbolos a seguir serão anexados à caixa de seleção. Uma entrada local é aquela criada na interface do CRX 2.2 (atualmente, ACLs curingas só podem ser criadas no CRX.)
 
 Para uma ação em um determinado caminho:
 
@@ -293,7 +293,7 @@ Veja a seguir recomendações sobre o gerenciamento de listas de controle de ace
 
   O Adobe recomenda que você trabalhe com Permitir em vez de Negar para ver [Práticas recomendadas](#best-practices).
 
-Antes de modificar qualquer uma das permissões, compreenda como elas funcionam e se relacionam entre si. Consulte a documentação do CRX que ilustra como o WCM do AEM [avalia os direitos de acesso](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated)e exemplos de configuração de listas de controle de acesso.
+Antes de modificar qualquer uma das permissões, compreenda como elas funcionam e se relacionam entre si. Consulte a documentação do CRX que ilustra como AEM WCM [avalia os direitos de acesso](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated)e exemplos de configuração de listas de controle de acesso.
 
 ### Permissões {#permissions}
 
