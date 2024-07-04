@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 8f5b6aee8a48690f1ac2706f25d45e7e9424e219
+source-git-commit: b24a1b225b2d798db26be1533e2e74bf08fdaa5d
 workflow-type: tm+mt
-source-wordcount: '3999'
+source-wordcount: '4070'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 * **API AutoTag para acessibilidade de PDF**: o AEM Forms no OSGi agora oferece suporte à nova API AutoTag para aprimorar o PDF para padrões de acessibilidade, adicionando tags: parágrafos e listas. Isso torna os PDF mais acessíveis para usuários com tecnologia assistiva.
 * **Suporte a PNG de 16 bits**: o serviço PDF Generator ImageToPdf agora oferece suporte à conversão de PNGs com intensidade de cor de 16 bits.
 * **Aplicar artefatos a blocos de texto individuais em XDPs**: o Forms Designer agora permite que os usuários definam configurações em blocos de texto individuais em arquivos XDP. Essa capacidade permite controlar os elementos que são tratados como artefatos nos PDF resultantes. Esses elementos, como cabeçalhos e rodapés, são acessíveis para as tecnologias assistivas. Os principais recursos incluem marcar blocos de texto como artefatos e incorporar essas configurações nos metadados XDP. O serviço Forms Output aplica essas configurações durante a geração do PDF, garantindo a marcação adequada de PDF / UA.
-* **O AEM Forms Designer é certificado com `GB18030:2022` padrão**: Com o `GB18030:2022` certificação, agora o Forms Designer oferece suporte ao conjunto de caracteres Unicode chinês que permite inserir caracteres chineses em todos os campos editáveis e caixas de diálogo.
+* **O AEM Forms Designer é certificado com `GB18030:2022` padrão**: Com o `GB18030:2022` certificação, agora o Forms Designer é compatível com o conjunto de caracteres Unicode chinês que permite inserir caracteres chineses em todos os campos editáveis e caixas de diálogo.
 * **Suporte para rota WebToPDF no servidor JEE**: O serviço PDF Generator agora oferece suporte à rota WebToPDF para converter arquivos HTML em documentos PDF no JEE, além das rotas Webkit e WebCapture (somente Windows). Embora a rota WebToPDF já esteja disponível no OSGi, ela agora foi estendida para incluir no JEE também. Nas plataformas JEE e OSGi, o serviço PDF Generator suporta as seguintes rotas em diferentes sistemas operacionais:
    * **Windows**: Webkit, WebCapture, WebToPDF
    * **Linux**: Webkit, WebToPDF
@@ -152,7 +152,7 @@ Esta é a lista de correções de acessibilidade incluídas nesta versão:
 ### [!DNL Assets]{#assets-6521}
 
 * Se um ativo for publicado no Brand Portal, o status de publicação permanecerá inconsistente. (ASSETS-36807)
-* Os ativos não são excluídos quando você os exclui de uma instância usando uma chamada de API. (ASSETS-35131)
+* Os Assets não são excluídos quando você os exclui de uma instância usando uma chamada de API. (ASSETS-35131)
 * Ao tentar importar metadados, uma variável `question mark (?)` O substitui a inserção de caracteres em qualquer idioma que não seja o inglês.  (ASSETS-35091)
 * Quando `dc:title` for usada com a cadeia de caracteres de tipo de dados, a árvore de conteúdo do Assets não estará funcionando corretamente após a instalação do Service Pack 6.5.19. (ASSETS-34684)
 * Um erro é mostrado se houver qualquer caractere especial no nome de um ativo. (ASSETS-33248)
@@ -161,7 +161,7 @@ Esta é a lista de correções de acessibilidade incluídas nesta versão:
 
 * No AEM 6.5.18, ele não mostra todos os pontos de acesso adicionados a um ativo ao editar os pontos de acesso. No entanto, todos os pontos de acesso funcionam em um ativo publicado, mas não podem ser editados posteriormente, se necessário. (ASSETS-33609)
 * Os arquivos mais recentes do EPS que são carregados não geram miniaturas após o reprocessamento. (ASSETS-32617)
-* Em Ferramentas > Ativos > Configuração de publicação do Dynamic Media > Atributos de solicitação, as entradas `Width(px)` e `Height(px)` são diferentes em espanhol, italiano e português. Eles não estão alinhados entre si nesses locais. (ASSETS-31896)
+* Em Ferramentas > Assets > Configuração do Dynamic Media Publish > Atributos de solicitação, as entradas `Width(px)` e `Height(px)` são diferentes em espanhol, italiano e português. Eles não estão alinhados entre si nesses locais. (ASSETS-31896)
 * A partir de 1 de maio de 2024, o Adobe Dynamic Media encerrou o suporte para o seguinte:
    * SSL (Secure Socket Layer) 2.0
    * SSL 3.0
@@ -186,7 +186,7 @@ Esta é a lista de correções de acessibilidade incluídas nesta versão:
 
 #### [!DNL Adaptive Forms] {#forms-6520}
 
-* Quando um Formulário adaptável é enviado de uma instância de publicação do Adobe Experience Manager para um fluxo de trabalho do Adobe Experience Manager, o fluxo de trabalho não salva os anexos. (FORMS-14209)
+* Quando um Formulário adaptável é enviado de uma instância do Adobe Experience Manager Publish para um Fluxo de trabalho do Adobe Experience Manager, o fluxo de trabalho não salva os anexos. (FORMS-14209)
 * Quando um usuário clica em **Imprimir em PDF** No AEM Forms Service Pack 15 (6.5.15.0) no OSGi, a validação no lado do cliente falha, é evidente pelas mensagens de erro mostradas na janela Developer Tools Console. (FORMS-14029)
 * Quando um usuário envia um formulário no AEM 6.5 Forms Service Pack 17 (6.5.17.0) ou Service Pack 18 (6.5.18.0), Service Pack 19 (6.5.19.0), a tradução das mensagens de &quot;Obrigado&quot; não funciona corretamente. No entanto, as mensagens são traduzidas corretamente no dicionário. (FORMS-13846)
 * Quando um usuário pré-visualiza um formulário com um componente Seletor de data, o campo Seletor de data está desalinhado com os outros campos de formulário. (FORMS-13763)
@@ -204,7 +204,7 @@ Esta é a lista de correções de acessibilidade incluídas nesta versão:
 * Quando um usuário tenta visualizar um formulário no carregamento da página, ele não é renderizado. (FORMS-13594)
 * O componente de campo de entrada de data não funciona corretamente no Microsoft Edge no modo de compatibilidade do Internet Explorer. (FORMS-13170)
 * A notificação por email paralisado com anexo falhou ao ser enviada quando a correção para [etapas adicionais para usar o email com anexos](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/troubleshooting/additional-steps-to-use-email-with-attachments) é executado no servidor. (FORMS-14227)
-* No AEM Forms Workspace no Service Pack 18 (6.5.18.0), ao comentar em qualquer documento carregado, o arquivo de documento é corrompido. (FORMS-13735)
+* No AEM Forms Workspace no Service Pack 18 (6.5.18.0), quando um usuário comenta em qualquer documento carregado, o arquivo de documento é corrompido. (FORMS-13735)
 * No AEM Forms Service Pack 18 (6.5.18.0), Service Pack 19 (6.5.19.0) ou Service Pack 20 (6.5.20.0), quando um usuário tenta procurar um Formulário adaptável no painel lateral, a pesquisa falha. (FORMS-14117)
 * Quando um usuário edita um formulário criado em alemão e traduzido para inglês, isso resulta em exibições de idioma inconsistentes entre os modos &quot;Visualização&quot; e &quot;Editar&quot;. Isso faz com que os componentes RadioButton e Caixa de seleção sejam exibidos em inglês durante o modo &quot;Editar&quot;, enquanto aparecem corretamente em alemão durante o modo &quot;Visualização&quot;. (FORMS-13910)
 * A ferramenta de processo de limpeza de processos falha com o erro `NoClassDefFoundError: org/omg/CORBA/UserException`. (FORMS-13751)
@@ -218,7 +218,7 @@ Esta é a lista de correções de acessibilidade incluídas nesta versão:
 
 #### [!DNL Forms Designer] {#forms-desgner-6521}
 
-* Quando um usuário adiciona uma nova tabela a um formulário existente usando o AEM Forms Designer no ambiente do AEM Forms Service Pack 19 (6.5.19.0), ele trava. (LC-3921978)
+* Quando um usuário adiciona uma nova tabela a um formulário existente usando o AEM Forms Designer no ambiente AEM Forms Service Pack 19 (6.5.19.0), ele trava. (LC-3921978)
 * Quando um usuário renderiza um formulário adaptável em um ambiente Linux®, ocorre um espaço extra entre os componentes do campo. (LC-3921957)
 * Quando um usuário converte um arquivo XTG no formato PostScript usando o Serviço de saída, ocorre uma falha com o erro:           `(AEM_OUT_001_003:Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE)`. (LC-3921720)
 
@@ -508,7 +508,7 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 * Os usuários podem renomear uma pasta em uma hierarquia em [!DNL Assets] e publicar uma pasta aninhada no [!DNL Brand Portal]. No entanto, o título da pasta não é atualizado no [!DNL Brand Portal] até que a pasta raiz seja republicada.
 
 * Os seguintes erros e mensagens de aviso podem ser exibidos durante a instalação do [!DNL Experience Manager] 6.5.x.x:
-   * &quot;Quando a integração do Adobe Target é configurada no [!DNL Experience Manager] usar a API do Target Standard (autenticação IMS) e, em seguida, exportar os Fragmentos de experiência para o Target resulta na criação de tipos de oferta errados. Em vez do tipo &quot;Fragmento de experiência&quot;/origem &quot;Adobe Experience Manager&quot;, o Target cria várias ofertas com o tipo &quot;HTML&quot;/origem &quot;Adobe Target Classic&quot;.
+   * &quot;Quando a integração do Adobe Target é configurada no [!DNL Experience Manager] usar a API do Target Standard (autenticação IMS) e, em seguida, exportar os Fragmentos de experiência para o Target resulta na criação incorreta de tipos de ofertas. Em vez do tipo &quot;Fragmento de experiência&quot;/origem &quot;Adobe Experience Manager&quot;, o Target cria várias ofertas com o tipo &quot;HTML&quot;/origem &quot;Adobe Target Classic&quot;.
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: nenhuma janela de manutenção encontrada em `granite/operations/maintenance`.
    * A validação do lado do servidor do Formulário adaptável falha quando funções agregadas como SUM, MAX e MIN são usadas (CQ-4274424).
    * `com.adobe.granite.maintenance.impl.TaskScheduler` : nenhuma janela de manutenção encontrada em `granite/operations/maintenance`.
@@ -543,6 +543,10 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 * Se um usuário tentar visualizar um rascunho de carta com dados XML salvos, ele fica preso no `Loading` para algumas cartas específicas. Para baixar e instalar a correção, consulte a [Hotfixes do Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artigo. (FORMS-14521)
 
 * Depois de atualizar para o AEM Forms Service Pack 6.5.21.0, a variável `PaperCapture` falha do serviço ao executar operações de OCR (Optical Character Recognition, reconhecimento ótico de caracteres) no PDF. O serviço não gera saída na forma de um PDF ou um arquivo de log. Para baixar e instalar a correção, consulte a [Hotfixes do Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artigo. (CQDOC-21680)
+
+* Quando os usuários atualizam do AEM 6.5 Forms Service Pack 18 (6.5.18.0) ou do AEM 6.5 Forms Service Pack 19 (6.5.19.0) para o 6.5 Forms Service Pack 20 (6.5.20.0) ou 6.5 Forms AEM AEM Forms AEM Service Pack 21 (6.5.21.0), os usuários recebem um erro de compilação JSP, que impede a abertura ou criação de formulários adaptáveis e também causa erros com outras interfaces de rastreamento, como o editor da página, a interface do AEM e o editor da AEM. (FORMS-15256)
+
+
 
 ## Pacotes OSGi e pacotes de conteúdo incluídos{#osgi-bundles-and-content-packages-included}
 
