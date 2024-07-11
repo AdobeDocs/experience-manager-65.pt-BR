@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 4883ed159b945093b8530e6ec2c2217d4f3c2409
+source-git-commit: fb689e86deaabcc4033ed75f615086b630a9a525
 workflow-type: tm+mt
-source-wordcount: '4099'
+source-wordcount: '4332'
 ht-degree: 1%
 
 ---
@@ -46,18 +46,17 @@ ht-degree: 1%
 Alguns dos principais recursos e aprimoramentos desta versão incluem:
 
 * **Suporte para credenciais do Oauth**: uma credencial nova e mais fácil de usar para autenticação de servidor para servidor, substituindo a credencial existente da Conta de serviço (JWT). (NPR-41994)
-* **Aprimoramentos do Editor de regras no AEM Forms**:
+* [Aprimoramentos do Editor de regras no AEM Forms](/help/forms/using/rule-editor-core-components.md):
    * Suporte para implementar condições aninhadas com `When-then-else` funcionalidade.
    * Validar ou redefinir painéis e formulários, incluindo campos.
-   * Suporte para recursos modernos do JavaScript, como funções de esquerda e seta (suporte para ES10) nas Funções personalizadas.
-* **API AutoTag para acessibilidade de PDF**: o AEM Forms no OSGi agora oferece suporte à nova API AutoTag para aprimorar o PDF para padrões de acessibilidade, adicionando tags: parágrafos e listas. Isso torna os PDF mais acessíveis para usuários com tecnologia assistiva.
+   * Suporte para recursos modernos do JavaScript, como funções de seta e esquerda (suporte para ES10) nas Funções personalizadas.
+* [API AutoTag para acessibilidade de PDF](/help/forms/using/aem-document-services-programmatically.md#doc-utility-services-doc-utility-services): o AEM Forms no OSGi agora oferece suporte à nova API AutoTag para aprimorar o PDF para padrões de acessibilidade, adicionando tags: parágrafos e listas. Isso torna os PDF mais acessíveis para usuários com tecnologia assistiva.
 * **Suporte a PNG de 16 bits**: o serviço PDF Generator ImageToPdf agora oferece suporte à conversão de PNGs com intensidade de cor de 16 bits.
 * **Aplicar artefatos a blocos de texto individuais em XDPs**: o Forms Designer agora permite que os usuários definam configurações em blocos de texto individuais em arquivos XDP. Essa capacidade permite controlar os elementos que são tratados como artefatos nos PDF resultantes. Esses elementos, como cabeçalhos e rodapés, são acessíveis para as tecnologias assistivas. Os principais recursos incluem marcar blocos de texto como artefatos e incorporar essas configurações nos metadados XDP. O serviço Forms Output aplica essas configurações durante a geração do PDF, garantindo a marcação adequada de PDF / UA.
 * **O AEM Forms Designer é certificado com `GB18030:2022` padrão**: Com o `GB18030:2022` certificação, agora o Forms Designer é compatível com o conjunto de caracteres Unicode chinês que permite inserir caracteres chineses em todos os campos editáveis e caixas de diálogo.
-* **Suporte para rota WebToPDF no servidor JEE**: O serviço PDF Generator agora oferece suporte à rota WebToPDF para converter arquivos HTML em documentos PDF no JEE, além das rotas Webkit e WebCapture (somente Windows). Embora a rota WebToPDF já esteja disponível no OSGi, ela agora foi estendida para incluir no JEE também. Nas plataformas JEE e OSGi, o serviço PDF Generator suporta as seguintes rotas em diferentes sistemas operacionais:
+* [Suporte para rota WebToPDF no servidor JEE](/help/forms/using/admin-help/configure-service-settings.md#generate-pdf-service-settings-generate-pdf-service-settings) o uso do serviço PDF Generator agora oferece suporte à rota WebToPDF para converter arquivos HTML em documentos PDF no JEE, além das rotas Webkit e WebCapture (somente Windows) existentes. Embora a rota WebToPDF já esteja disponível no OSGi e seja estendida para JEE. Agora, nas plataformas JEE e OSGi, o serviço PDF Generator suporta as seguintes rotas em diferentes sistemas operacionais:
    * **Windows**: Webkit, WebCapture, WebToPDF
-   * **Linux**: Webkit, WebToPDF
-
+   * **Linux®**: Webkit, WebToPDF
 
 ### [!DNL Assets]
 
@@ -515,7 +514,7 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
    * O ponto de acesso em uma imagem interativa do Dynamic Media não é visível ao visualizar o ativo por meio do visualizador de banner de compra.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Tempo limite atingido ao aguardar a conclusão não registrada da alteração de registro.
 
-* A partir do AEM 6.5.15, o mecanismo Rhino JavaScript fornecido pelo ```org.apache.servicemix.bundles.rhino``` tem um novo comportamento de elevação. Scripts que usam o modo estrito (```use strict;```) têm que declarar suas variáveis corretas. Caso contrário, eles não serão executados e acabarão gerando um erro de tempo de execução.
+* A partir do AEM 6.5.15, o motor Rhino JavaScript fornecido pela ```org.apache.servicemix.bundles.rhino``` tem um novo comportamento de elevação. Scripts que usam o modo estrito (```use strict;```) têm que declarar suas variáveis corretas. Caso contrário, eles não serão executados e acabarão gerando um erro de tempo de execução.
 
 * A instalação de marcação relacionada ao conteúdo pronto para uso por meio de um pacote de atualização oficial redefine a propriedade languages do `/content/cq:tags` para o padrão. Essa ação é verdadeira para Service Packs, Service Packs de segurança, Pacotes de recursos estendidos, Pacotes de recursos cumulativos, patches e assim por diante. Portanto, é necessário adicioná-lo das propriedades antes da instalação.
 
@@ -550,6 +549,13 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
    1. Navegue até o diretório `/libs/fd/aemforms/install/` no CRXDE.
    1. Excluir o pacote com o nome `com.adobe.granite.ui.commons-5.10.26.jar`.
    1. Reinicie o servidor AEM.
+
+* Quando um usuário atualiza para o AEM Forms Service Pack 20 (6.5.20.0) no servidor JEE e gera PDF usando serviços de saída, os PDF são renderizados com problemas de acessibilidade. Para baixar e instalar a correção, consulte a [Hotfixes do Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artigo. (LC-3922112)
+* Quando um usuário gera PDF com tags usando o serviço de saída no JEE, ele mostra &quot;Aviso de estrutura inadequada&quot;. Para baixar e instalar a correção, consulte a [Hotfixes do Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artigo. (LC-3922038)
+* Quando um formulário é enviado no AEM Forms JEE, as instâncias de um elemento XML repetido são removidas dos dados. Para baixar e instalar a correção, consulte a [Hotfixes do Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artigo. (LC-3922017)
+* Quando um usuário em um ambiente Linux renderiza um formulário adaptável (no JEE) no HTML, ele não é renderizado corretamente. Para baixar e instalar a correção, consulte a [Hotfixes do Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artigo. (LC-3921957)
+* Quando um usuário converte um arquivo XTG no formato PostScript usando o Serviço de saída no AEM Forms JEE, ocorre uma falha com o erro: `AEM_OUT_001_003: Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE`. Para baixar e instalar a correção, consulte a [Hotfixes do Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artigo. (LC-3921720)
+* Depois de atualizar para o AEM Forms Service Pack 18 (6.5.18.0) no servidor JEE, quando um usuário envia um formulário, ele falha ao renderizar HTML5 ou PDF forms e falhas XMLFM. Para baixar e instalar a correção, consulte a [Hotfixes do Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artigo. (LC-3921718)
 
 ## Pacotes OSGi e pacotes de conteúdo incluídos{#osgi-bundles-and-content-packages-included}
 
